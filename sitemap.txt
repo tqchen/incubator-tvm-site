@@ -1,5 +1,6 @@
 
 https://tvm.apache.org/about
+https://tvm.apache.org/asf
 https://tvm.apache.org/atom.xml
 https://tvm.apache.org/blog
 https://tvm.apache.org/categories
