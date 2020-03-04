@@ -5,8 +5,8 @@
         <description>TVM - </description>
         <link>https://tvm.apache.org</link>
         <atom:link href="https://tvm.apache.org" rel="self" type="application/rss+xml" />
-        <lastBuildDate>Wed, 26 Feb 2020 20:06:51 -0800</lastBuildDate>
-        <pubDate>Wed, 26 Feb 2020 20:06:51 -0800</pubDate>
+        <lastBuildDate>Wed, 04 Mar 2020 10:58:38 -0600</lastBuildDate>
+        <pubDate>Wed, 04 Mar 2020 10:58:38 -0600</pubDate>
         <ttl>60</ttl>
 
 
@@ -109,7 +109,7 @@ relay_graph = torch_tvm.to_relay(mul, inputs)
 </description>
                 <link>https://tvm.apache.org/2019/05/30/pytorch-frontend</link>
                 <guid>https://tvm.apache.org/2019/05/30/pytorch-frontend</guid>
-                <pubDate>Thu, 30 May 2019 00:00:00 -0700</pubDate>
+                <pubDate>Thu, 30 May 2019 00:00:00 -0500</pubDate>
         </item>
 
         <item>
@@ -253,7 +253,7 @@ We show that automatic optimization in TVM makes it easy and flexible to support
 </description>
                 <link>https://tvm.apache.org/2019/04/29/opt-cuda-quantized</link>
                 <guid>https://tvm.apache.org/2019/04/29/opt-cuda-quantized</guid>
-                <pubDate>Mon, 29 Apr 2019 09:00:00 -0700</pubDate>
+                <pubDate>Mon, 29 Apr 2019 11:00:00 -0500</pubDate>
         </item>
 
         <item>
@@ -276,7 +276,7 @@ We show that automatic optimization in TVM makes it easy and flexible to support
 </description>
                 <link>https://tvm.apache.org/2019/03/18/tvm-apache-announcement</link>
                 <guid>https://tvm.apache.org/2019/03/18/tvm-apache-announcement</guid>
-                <pubDate>Mon, 18 Mar 2019 00:00:00 -0700</pubDate>
+                <pubDate>Mon, 18 Mar 2019 00:00:00 -0500</pubDate>
         </item>
 
         <item>
@@ -446,7 +446,7 @@ closure as TVM packed function and invoke the same across programming language b
 </description>
                 <link>https://tvm.apache.org/2019/01/19/Golang</link>
                 <guid>https://tvm.apache.org/2019/01/19/Golang</guid>
-                <pubDate>Sat, 19 Jan 2019 00:00:00 -0800</pubDate>
+                <pubDate>Sat, 19 Jan 2019 00:00:00 -0600</pubDate>
         </item>
 
         <item>
@@ -607,7 +607,7 @@ Note: x86 doesn’t support a vectorized popcount for this microarchitecture, so
 </description>
                 <link>https://tvm.apache.org/2018/12/18/lowprecision-conv</link>
                 <guid>https://tvm.apache.org/2018/12/18/lowprecision-conv</guid>
-                <pubDate>Tue, 18 Dec 2018 00:00:00 -0800</pubDate>
+                <pubDate>Tue, 18 Dec 2018 00:00:00 -0600</pubDate>
         </item>
 
         <item>
@@ -723,7 +723,7 @@ His research interest is in the general domain of ML on shared private data, but
 </description>
                 <link>https://tvm.apache.org/2018/10/09/ml-in-tees</link>
                 <guid>https://tvm.apache.org/2018/10/09/ml-in-tees</guid>
-                <pubDate>Tue, 09 Oct 2018 00:00:00 -0700</pubDate>
+                <pubDate>Tue, 09 Oct 2018 00:00:00 -0500</pubDate>
         </item>
 
         <item>
@@ -1117,7 +1117,7 @@ for inference deployment. TVM just provides such a solution.&lt;/p&gt;
 </description>
                 <link>https://tvm.apache.org/2018/10/03/auto-opt-all</link>
                 <guid>https://tvm.apache.org/2018/10/03/auto-opt-all</guid>
-                <pubDate>Wed, 03 Oct 2018 00:00:00 -0700</pubDate>
+                <pubDate>Wed, 03 Oct 2018 00:00:00 -0500</pubDate>
         </item>
 
         <item>
@@ -1256,7 +1256,7 @@ support, and can be used to implement convenient converters, such as
 </description>
                 <link>https://tvm.apache.org/2018/08/10/DLPack-Bridge</link>
                 <guid>https://tvm.apache.org/2018/08/10/DLPack-Bridge</guid>
-                <pubDate>Fri, 10 Aug 2018 00:00:00 -0700</pubDate>
+                <pubDate>Fri, 10 Aug 2018 00:00:00 -0500</pubDate>
         </item>
 
         <item>
@@ -1398,7 +1398,7 @@ This kind of high-level visibility is essential to system designers who want to 
 </description>
                 <link>https://tvm.apache.org/2018/07/12/vta-release-announcement</link>
                 <guid>https://tvm.apache.org/2018/07/12/vta-release-announcement</guid>
-                <pubDate>Thu, 12 Jul 2018 00:00:00 -0700</pubDate>
+                <pubDate>Thu, 12 Jul 2018 00:00:00 -0500</pubDate>
         </item>
 
         <item>
@@ -1664,7 +1664,7 @@ C = tvm.compute(
 </description>
                 <link>https://tvm.apache.org/2018/03/23/nmt-transformer-optimize</link>
                 <guid>https://tvm.apache.org/2018/03/23/nmt-transformer-optimize</guid>
-                <pubDate>Fri, 23 Mar 2018 00:00:00 -0700</pubDate>
+                <pubDate>Fri, 23 Mar 2018 00:00:00 -0500</pubDate>
         </item>
 
         <item>
@@ -1780,7 +1780,7 @@ optimizations into the TVM stack.&lt;/p&gt;
 </description>
                 <link>https://tvm.apache.org/2018/03/12/webgl</link>
                 <guid>https://tvm.apache.org/2018/03/12/webgl</guid>
-                <pubDate>Mon, 12 Mar 2018 00:00:00 -0700</pubDate>
+                <pubDate>Mon, 12 Mar 2018 00:00:00 -0500</pubDate>
         </item>
 
         <item>
@@ -2354,7 +2354,7 @@ advice and &lt;a href=&quot;https://github.com/yzhliu&quot;&gt;Yizhi Liu&lt;/a&g
 </description>
                 <link>https://tvm.apache.org/2018/01/16/opt-mali-gpu</link>
                 <guid>https://tvm.apache.org/2018/01/16/opt-mali-gpu</guid>
-                <pubDate>Tue, 16 Jan 2018 00:00:00 -0800</pubDate>
+                <pubDate>Tue, 16 Jan 2018 00:00:00 -0600</pubDate>
         </item>
 
         <item>
@@ -2582,7 +2582,7 @@ make jvminstall
 </description>
                 <link>https://tvm.apache.org/2017/11/08/android-rpc-introduction</link>
                 <guid>https://tvm.apache.org/2017/11/08/android-rpc-introduction</guid>
-                <pubDate>Wed, 08 Nov 2017 00:00:00 -0800</pubDate>
+                <pubDate>Wed, 08 Nov 2017 00:00:00 -0600</pubDate>
         </item>
 
         <item>
@@ -2808,7 +2808,7 @@ BB0_6:
 </description>
                 <link>https://tvm.apache.org/2017/10/30/Bringing-AMDGPUs-to-TVM-Stack-and-NNVM-Compiler-with-ROCm</link>
                 <guid>https://tvm.apache.org/2017/10/30/Bringing-AMDGPUs-to-TVM-Stack-and-NNVM-Compiler-with-ROCm</guid>
-                <pubDate>Mon, 30 Oct 2017 00:00:00 -0700</pubDate>
+                <pubDate>Mon, 30 Oct 2017 00:00:00 -0500</pubDate>
         </item>
 
         <item>
@@ -2891,7 +2891,7 @@ We also learns from Halide when implementing the lowering pipeline in TVM.&lt;/l
 </description>
                 <link>https://tvm.apache.org/2017/10/06/nnvm-compiler-announcement</link>
                 <guid>https://tvm.apache.org/2017/10/06/nnvm-compiler-announcement</guid>
-                <pubDate>Fri, 06 Oct 2017 08:30:00 -0700</pubDate>
+                <pubDate>Fri, 06 Oct 2017 10:30:00 -0500</pubDate>
         </item>
 
         <item>
@@ -3449,7 +3449,7 @@ Below is the result with Input = [1, 256, 96, 96], Filter = [256, 1, 3, 3], stri
 
 &lt;h2 id=&quot;show-me-the-code&quot;&gt;Show me the code&lt;/h2&gt;
 &lt;ul&gt;
-  &lt;li&gt;Declare: &lt;a href=&quot;https://github.com/dmlc/tvm/blob/master/topi/python/topi/nn/convolution.py&quot;&gt;https://github.com/dmlc/tvm/blob/master/topi/python/topi/nn/convolution.py&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;Declare: &lt;a href=&quot;https://github.com/dmlc/tvm/blob/master/topi/python/topi/nn/depthwise_conv2d.py&quot;&gt;https://github.com/dmlc/tvm/blob/master/topi/python/topi/nn/depthwise_conv2d.py&lt;/a&gt;&lt;/li&gt;
   &lt;li&gt;Schedule: &lt;a href=&quot;https://github.com/dmlc/tvm/blob/master/topi/python/topi/cuda/depthwise_conv2d.py&quot;&gt;https://github.com/dmlc/tvm/blob/master/topi/python/topi/cuda/depthwise_conv2d.py&lt;/a&gt;&lt;/li&gt;
   &lt;li&gt;Test: &lt;a href=&quot;https://github.com/dmlc/tvm/blob/master/topi/recipe/conv/depthwise_conv2d_test.py&quot;&gt;https://github.com/dmlc/tvm/blob/master/topi/recipe/conv/depthwise_conv2d_test.py&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
@@ -3470,7 +3470,7 @@ He is experiencing a gap year after obtaining a bachelor’s degree in electrica
 </description>
                 <link>https://tvm.apache.org/2017/08/22/Optimize-Deep-Learning-GPU-Operators-with-TVM-A-Depthwise-Convolution-Example</link>
                 <guid>https://tvm.apache.org/2017/08/22/Optimize-Deep-Learning-GPU-Operators-with-TVM-A-Depthwise-Convolution-Example</guid>
-                <pubDate>Tue, 22 Aug 2017 00:00:00 -0700</pubDate>
+                <pubDate>Tue, 22 Aug 2017 00:00:00 -0500</pubDate>
         </item>
 
         <item>
@@ -3598,7 +3598,7 @@ that adopts the standard, such as MXNet, PyTorch, Caffe2 and tiny-dnn.&lt;/li&gt
 </description>
                 <link>https://tvm.apache.org/2017/08/17/tvm-release-announcement</link>
                 <guid>https://tvm.apache.org/2017/08/17/tvm-release-announcement</guid>
-                <pubDate>Thu, 17 Aug 2017 12:00:00 -0700</pubDate>
+                <pubDate>Thu, 17 Aug 2017 14:00:00 -0500</pubDate>
         </item>
 
 
