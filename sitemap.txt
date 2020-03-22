@@ -5,6 +5,7 @@ https://tvm.apache.org/atom.xml
 https://tvm.apache.org/blog
 https://tvm.apache.org/categories
 https://tvm.apache.org/community
+https://tvm.apache.org/download
 https://tvm.apache.org/
 https://tvm.apache.org/rss.xml
 https://tvm.apache.org/sitemap.txt
