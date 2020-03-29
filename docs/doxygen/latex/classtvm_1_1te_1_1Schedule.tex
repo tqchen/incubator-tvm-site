@@ -1,0 +1,315 @@
+\hypertarget{classtvm_1_1te_1_1Schedule}{}\section{tvm\+:\+:te\+:\+:Schedule Class Reference}
+\label{classtvm_1_1te_1_1Schedule}\index{tvm\+::te\+::\+Schedule@{tvm\+::te\+::\+Schedule}}
+
+
+Global schedule container For operations and all the operations they depend on. The schedule per \hyperlink{classtvm_1_1te_1_1Operation}{Operation} is named as stage.  
+
+
+
+
+{\ttfamily \#include $<$schedule.\+h$>$}
+
+
+
+Inheritance diagram for tvm\+:\+:te\+:\+:Schedule\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=181pt]{classtvm_1_1te_1_1Schedule__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for tvm\+:\+:te\+:\+:Schedule\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=181pt]{classtvm_1_1te_1_1Schedule__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+using \hyperlink{classtvm_1_1te_1_1Schedule_afba006836979a74a799189169534189e}{Container\+Type} = \hyperlink{classtvm_1_1te_1_1ScheduleNode}{Schedule\+Node}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classtvm_1_1te_1_1Schedule_a1eb19ccb06835a11edc39ed1410f01af}{Schedule} ()
+\item 
+\hyperlink{classtvm_1_1te_1_1Schedule_a5f6a71ca3b51eb6cc0b65ee029ff9c96}{Schedule} (Object\+Ptr$<$ Object $>$ n)
+\item 
+\hyperlink{classtvm_1_1te_1_1Schedule}{Schedule} \hyperlink{classtvm_1_1te_1_1Schedule_a4991e4eaf1992f45708966c335b92307}{copy} () const 
+\begin{DoxyCompactList}\small\item\em Get a copy of current schedule. \end{DoxyCompactList}\item 
+\hyperlink{classtvm_1_1te_1_1Stage}{Stage} \hyperlink{classtvm_1_1te_1_1Schedule_a3f63b27dcbddd06c550cc1a5a6562717}{operator\mbox{[}$\,$\mbox{]}} (const \hyperlink{classtvm_1_1te_1_1Operation}{Operation} \&op)
+\begin{DoxyCompactList}\small\item\em Get the stage corresponds to the op. \end{DoxyCompactList}\item 
+\hyperlink{classtvm_1_1te_1_1Stage}{Stage} \hyperlink{classtvm_1_1te_1_1Schedule_a2040189df3b89304a12acce3efff04a6}{operator\mbox{[}$\,$\mbox{]}} (const \hyperlink{classtvm_1_1te_1_1Tensor}{Tensor} \&tensor)
+\begin{DoxyCompactList}\small\item\em Short hand for getting the stage of tensor\textquotesingle{}s operation. \end{DoxyCompactList}\item 
+\hyperlink{classtvm_1_1te_1_1Stage}{Stage} \hyperlink{classtvm_1_1te_1_1Schedule_a638e7b946df3b5d2e2cde3acc0201da0}{create\+\_\+group} (const \hyperlink{classtvm_1_1Array}{Array}$<$ \hyperlink{classtvm_1_1te_1_1Tensor}{Tensor} $>$ \&outputs, const \hyperlink{classtvm_1_1Array}{Array}$<$ \hyperlink{classtvm_1_1te_1_1Tensor}{Tensor} $>$ \&inputs, bool include\+\_\+inputs=false)
+\begin{DoxyCompactList}\small\item\em Create a new stage group for all intermediate operations between inputs and outputs. \end{DoxyCompactList}\item 
+\hyperlink{classtvm_1_1te_1_1Tensor}{Tensor} \hyperlink{classtvm_1_1te_1_1Schedule_a38ef95a62faf0c15f132847efa20249b}{cache\+\_\+read} (const \hyperlink{classtvm_1_1te_1_1Tensor}{Tensor} \&tensor, const std\+::string \&scope, const \hyperlink{classtvm_1_1Array}{Array}$<$ \hyperlink{classtvm_1_1te_1_1Operation}{Operation} $>$ \&readers)
+\begin{DoxyCompactList}\small\item\em create a cache read of original tensor for readers. This will mutate the body of the readers. A new stage will be created for the tensor. \end{DoxyCompactList}\item 
+\hyperlink{classtvm_1_1Array}{Array}$<$ \hyperlink{classtvm_1_1te_1_1Tensor}{Tensor} $>$ \hyperlink{classtvm_1_1te_1_1Schedule_ada9825f59ef130a0ab0b3a01ea348d71}{cache\+\_\+write} (const \hyperlink{classtvm_1_1Array}{Array}$<$ \hyperlink{classtvm_1_1te_1_1Tensor}{Tensor} $>$ \&tensor, const std\+::string \&scope)
+\begin{DoxyCompactList}\small\item\em Create a cache write tensor for producing tensor. The the tensor will take over body of original tensor op. \end{DoxyCompactList}\item 
+\hyperlink{classtvm_1_1te_1_1Tensor}{Tensor} \hyperlink{classtvm_1_1te_1_1Schedule_a15582f96d0aaf9a2bd9f2afcad3935d4}{cache\+\_\+write} (const \hyperlink{classtvm_1_1te_1_1Tensor}{Tensor} \&tensor, const std\+::string \&scope)
+\begin{DoxyCompactList}\small\item\em Create a cache write tensor for producing tensor. The the tensor will take over body of original tensor op. \end{DoxyCompactList}\item 
+\hyperlink{classtvm_1_1Array}{Array}$<$ \hyperlink{classtvm_1_1te_1_1Tensor}{Tensor} $>$ \hyperlink{classtvm_1_1te_1_1Schedule_a34ae85add41bbed0140726d024d08862}{rfactor} (const \hyperlink{classtvm_1_1te_1_1Tensor}{Tensor} \&tensor, const \hyperlink{classtvm_1_1tir_1_1IterVar}{Iter\+Var} \&axis, int factor\+\_\+axis=0)
+\begin{DoxyCompactList}\small\item\em Factor a reduction axis in tensor\textquotesingle{}s schedule to be an explicit axis. This will create a new stage that generated the new tensor with axis as the first dimension. The tensor\textquotesingle{}s body will be rewritten as a reduction over the factored tensor. \end{DoxyCompactList}\item 
+\hyperlink{classtvm_1_1te_1_1Schedule}{Schedule} \hyperlink{classtvm_1_1te_1_1Schedule_a3fcdec89d8dec36d7b2586b9b0414dfe}{normalize} ()
+\begin{DoxyCompactList}\small\item\em Normalize the schedule. This is needed before bound inference. Insert necessary \hyperlink{classtvm_1_1te_1_1RebaseNode}{Rebase\+Node} to make sure all leaf\+\_\+iter\+\_\+vars are in form \mbox{[}0, extent) \end{DoxyCompactList}\item 
+const \hyperlink{classtvm_1_1te_1_1ScheduleNode}{Schedule\+Node} $\ast$ \hyperlink{classtvm_1_1te_1_1Schedule_a81883ca270f853eaf92d5f364888b9f4}{operator-\/$>$} () const 
+\begin{DoxyCompactList}\small\item\em access the internal node container \end{DoxyCompactList}\item 
+\hyperlink{classtvm_1_1te_1_1ScheduleNode}{Schedule\+Node} $\ast$ \hyperlink{classtvm_1_1te_1_1Schedule_aa30087792fd6d3b7372d56e7f3947c3f}{operator-\/$>$} ()
+\begin{DoxyCompactList}\small\item\em access the internal node container \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Global schedule container For operations and all the operations they depend on. The schedule per \hyperlink{classtvm_1_1te_1_1Operation}{Operation} is named as stage. 
+
+\subsection{Member Typedef Documentation}
+\index{tvm\+::te\+::\+Schedule@{tvm\+::te\+::\+Schedule}!Container\+Type@{Container\+Type}}
+\index{Container\+Type@{Container\+Type}!tvm\+::te\+::\+Schedule@{tvm\+::te\+::\+Schedule}}
+\subsubsection[{\texorpdfstring{Container\+Type}{ContainerType}}]{\setlength{\rightskip}{0pt plus 5cm}using {\bf tvm\+::te\+::\+Schedule\+::\+Container\+Type} =  {\bf Schedule\+Node}}\hypertarget{classtvm_1_1te_1_1Schedule_afba006836979a74a799189169534189e}{}\label{classtvm_1_1te_1_1Schedule_afba006836979a74a799189169534189e}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\index{tvm\+::te\+::\+Schedule@{tvm\+::te\+::\+Schedule}!Schedule@{Schedule}}
+\index{Schedule@{Schedule}!tvm\+::te\+::\+Schedule@{tvm\+::te\+::\+Schedule}}
+\subsubsection[{\texorpdfstring{Schedule()}{Schedule()}}]{\setlength{\rightskip}{0pt plus 5cm}tvm\+::te\+::\+Schedule\+::\+Schedule (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classtvm_1_1te_1_1Schedule_a1eb19ccb06835a11edc39ed1410f01af}{}\label{classtvm_1_1te_1_1Schedule_a1eb19ccb06835a11edc39ed1410f01af}
+\index{tvm\+::te\+::\+Schedule@{tvm\+::te\+::\+Schedule}!Schedule@{Schedule}}
+\index{Schedule@{Schedule}!tvm\+::te\+::\+Schedule@{tvm\+::te\+::\+Schedule}}
+\subsubsection[{\texorpdfstring{Schedule(\+Object\+Ptr$<$ Object $>$ n)}{Schedule(ObjectPtr< Object > n)}}]{\setlength{\rightskip}{0pt plus 5cm}tvm\+::te\+::\+Schedule\+::\+Schedule (
+\begin{DoxyParamCaption}
+\item[{Object\+Ptr$<$ Object $>$}]{n}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [explicit]}}\hypertarget{classtvm_1_1te_1_1Schedule_a5f6a71ca3b51eb6cc0b65ee029ff9c96}{}\label{classtvm_1_1te_1_1Schedule_a5f6a71ca3b51eb6cc0b65ee029ff9c96}
+
+
+\subsection{Member Function Documentation}
+\index{tvm\+::te\+::\+Schedule@{tvm\+::te\+::\+Schedule}!cache\+\_\+read@{cache\+\_\+read}}
+\index{cache\+\_\+read@{cache\+\_\+read}!tvm\+::te\+::\+Schedule@{tvm\+::te\+::\+Schedule}}
+\subsubsection[{\texorpdfstring{cache\+\_\+read(const Tensor \&tensor, const std\+::string \&scope, const Array$<$ Operation $>$ \&readers)}{cache_read(const Tensor &tensor, const std::string &scope, const Array< Operation > &readers)}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Tensor} tvm\+::te\+::\+Schedule\+::cache\+\_\+read (
+\begin{DoxyParamCaption}
+\item[{const {\bf Tensor} \&}]{tensor, }
+\item[{const std\+::string \&}]{scope, }
+\item[{const {\bf Array}$<$ {\bf Operation} $>$ \&}]{readers}
+\end{DoxyParamCaption}
+)}\hypertarget{classtvm_1_1te_1_1Schedule_a38ef95a62faf0c15f132847efa20249b}{}\label{classtvm_1_1te_1_1Schedule_a38ef95a62faf0c15f132847efa20249b}
+
+
+create a cache read of original tensor for readers. This will mutate the body of the readers. A new stage will be created for the tensor. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em tensor} & The tensor cached. \\
+\hline
+{\em scope} & The scope of the cache. \\
+\hline
+{\em readers} & The readers to redirect to the tensor. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The created tensor. 
+\end{DoxyReturn}
+\index{tvm\+::te\+::\+Schedule@{tvm\+::te\+::\+Schedule}!cache\+\_\+write@{cache\+\_\+write}}
+\index{cache\+\_\+write@{cache\+\_\+write}!tvm\+::te\+::\+Schedule@{tvm\+::te\+::\+Schedule}}
+\subsubsection[{\texorpdfstring{cache\+\_\+write(const Array$<$ Tensor $>$ \&tensor, const std\+::string \&scope)}{cache_write(const Array< Tensor > &tensor, const std::string &scope)}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Array}$<${\bf Tensor}$>$ tvm\+::te\+::\+Schedule\+::cache\+\_\+write (
+\begin{DoxyParamCaption}
+\item[{const {\bf Array}$<$ {\bf Tensor} $>$ \&}]{tensor, }
+\item[{const std\+::string \&}]{scope}
+\end{DoxyParamCaption}
+)}\hypertarget{classtvm_1_1te_1_1Schedule_ada9825f59ef130a0ab0b3a01ea348d71}{}\label{classtvm_1_1te_1_1Schedule_ada9825f59ef130a0ab0b3a01ea348d71}
+
+
+Create a cache write tensor for producing tensor. The the tensor will take over body of original tensor op. 
+
+This function can be used to do data layout transformation. If there is a split/fuse/reorder on the data parallel axis of tensor before cache\+\_\+write is called. The intermediate cache stores the data in the layout as the iteration order of leave axis. The data will be transformed back to the original layout in the original tensor. User can further call compute\+\_\+inline to inline the original layout and keep the data stored in the transformed layout.
+
+
+\begin{DoxyParams}{Parameters}
+{\em tensor} & The tensors to be produced. \\
+\hline
+{\em scope} & The scope of the storage. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The created tensor. 
+\end{DoxyReturn}
+\index{tvm\+::te\+::\+Schedule@{tvm\+::te\+::\+Schedule}!cache\+\_\+write@{cache\+\_\+write}}
+\index{cache\+\_\+write@{cache\+\_\+write}!tvm\+::te\+::\+Schedule@{tvm\+::te\+::\+Schedule}}
+\subsubsection[{\texorpdfstring{cache\+\_\+write(const Tensor \&tensor, const std\+::string \&scope)}{cache_write(const Tensor &tensor, const std::string &scope)}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Tensor} tvm\+::te\+::\+Schedule\+::cache\+\_\+write (
+\begin{DoxyParamCaption}
+\item[{const {\bf Tensor} \&}]{tensor, }
+\item[{const std\+::string \&}]{scope}
+\end{DoxyParamCaption}
+)}\hypertarget{classtvm_1_1te_1_1Schedule_a15582f96d0aaf9a2bd9f2afcad3935d4}{}\label{classtvm_1_1te_1_1Schedule_a15582f96d0aaf9a2bd9f2afcad3935d4}
+
+
+Create a cache write tensor for producing tensor. The the tensor will take over body of original tensor op. 
+
+This function can be used to do data layout transformation. If there is a split/fuse/reorder on the data parallel axis of tensor before cache\+\_\+write is called. The intermediate cache stores the data in the layout as the iteration order of leave axis. The data will be transformed back to the original layout in the original tensor. User can further call compute\+\_\+inline to inline the original layout and keep the data stored in the transformed layout.
+
+
+\begin{DoxyParams}{Parameters}
+{\em tensor} & The tensor to be produced. \\
+\hline
+{\em scope} & The scope of the storage. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The created tensor. 
+\end{DoxyReturn}
+\index{tvm\+::te\+::\+Schedule@{tvm\+::te\+::\+Schedule}!copy@{copy}}
+\index{copy@{copy}!tvm\+::te\+::\+Schedule@{tvm\+::te\+::\+Schedule}}
+\subsubsection[{\texorpdfstring{copy() const }{copy() const }}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Schedule} tvm\+::te\+::\+Schedule\+::copy (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}\hypertarget{classtvm_1_1te_1_1Schedule_a4991e4eaf1992f45708966c335b92307}{}\label{classtvm_1_1te_1_1Schedule_a4991e4eaf1992f45708966c335b92307}
+
+
+Get a copy of current schedule. 
+
+\begin{DoxyReturn}{Returns}
+The copied schedule. 
+\end{DoxyReturn}
+\index{tvm\+::te\+::\+Schedule@{tvm\+::te\+::\+Schedule}!create\+\_\+group@{create\+\_\+group}}
+\index{create\+\_\+group@{create\+\_\+group}!tvm\+::te\+::\+Schedule@{tvm\+::te\+::\+Schedule}}
+\subsubsection[{\texorpdfstring{create\+\_\+group(const Array$<$ Tensor $>$ \&outputs, const Array$<$ Tensor $>$ \&inputs, bool include\+\_\+inputs=false)}{create_group(const Array< Tensor > &outputs, const Array< Tensor > &inputs, bool include_inputs=false)}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Stage} tvm\+::te\+::\+Schedule\+::create\+\_\+group (
+\begin{DoxyParamCaption}
+\item[{const {\bf Array}$<$ {\bf Tensor} $>$ \&}]{outputs, }
+\item[{const {\bf Array}$<$ {\bf Tensor} $>$ \&}]{inputs, }
+\item[{bool}]{include\+\_\+inputs = {\ttfamily false}}
+\end{DoxyParamCaption}
+)}\hypertarget{classtvm_1_1te_1_1Schedule_a638e7b946df3b5d2e2cde3acc0201da0}{}\label{classtvm_1_1te_1_1Schedule_a638e7b946df3b5d2e2cde3acc0201da0}
+
+
+Create a new stage group for all intermediate operations between inputs and outputs. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em outputs} & The output boundary of the group. \\
+\hline
+{\em inputs} & The input boundary of the group. \\
+\hline
+{\em include\+\_\+inputs} & Whether include inputs if they are reachable from outputs. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The new grouped stage. 
+\end{DoxyReturn}
+\index{tvm\+::te\+::\+Schedule@{tvm\+::te\+::\+Schedule}!normalize@{normalize}}
+\index{normalize@{normalize}!tvm\+::te\+::\+Schedule@{tvm\+::te\+::\+Schedule}}
+\subsubsection[{\texorpdfstring{normalize()}{normalize()}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Schedule} tvm\+::te\+::\+Schedule\+::normalize (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{classtvm_1_1te_1_1Schedule_a3fcdec89d8dec36d7b2586b9b0414dfe}{}\label{classtvm_1_1te_1_1Schedule_a3fcdec89d8dec36d7b2586b9b0414dfe}
+
+
+Normalize the schedule. This is needed before bound inference. Insert necessary \hyperlink{classtvm_1_1te_1_1RebaseNode}{Rebase\+Node} to make sure all leaf\+\_\+iter\+\_\+vars are in form \mbox{[}0, extent) 
+
+\begin{DoxyReturn}{Returns}
+A normalized schedule, can be same as current one. 
+\end{DoxyReturn}
+\index{tvm\+::te\+::\+Schedule@{tvm\+::te\+::\+Schedule}!operator-\/$>$@{operator-\/$>$}}
+\index{operator-\/$>$@{operator-\/$>$}!tvm\+::te\+::\+Schedule@{tvm\+::te\+::\+Schedule}}
+\subsubsection[{\texorpdfstring{operator-\/$>$() const }{operator->() const }}]{\setlength{\rightskip}{0pt plus 5cm}const {\bf Schedule\+Node} $\ast$ tvm\+::te\+::\+Schedule\+::operator-\/$>$ (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classtvm_1_1te_1_1Schedule_a81883ca270f853eaf92d5f364888b9f4}{}\label{classtvm_1_1te_1_1Schedule_a81883ca270f853eaf92d5f364888b9f4}
+
+
+access the internal node container 
+
+\begin{DoxyReturn}{Returns}
+the pointer to the internal node container 
+\end{DoxyReturn}
+\index{tvm\+::te\+::\+Schedule@{tvm\+::te\+::\+Schedule}!operator-\/$>$@{operator-\/$>$}}
+\index{operator-\/$>$@{operator-\/$>$}!tvm\+::te\+::\+Schedule@{tvm\+::te\+::\+Schedule}}
+\subsubsection[{\texorpdfstring{operator-\/$>$()}{operator->()}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Schedule\+Node} $\ast$ tvm\+::te\+::\+Schedule\+::operator-\/$>$ (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classtvm_1_1te_1_1Schedule_aa30087792fd6d3b7372d56e7f3947c3f}{}\label{classtvm_1_1te_1_1Schedule_aa30087792fd6d3b7372d56e7f3947c3f}
+
+
+access the internal node container 
+
+\begin{DoxyReturn}{Returns}
+the pointer to the internal node container 
+\end{DoxyReturn}
+\index{tvm\+::te\+::\+Schedule@{tvm\+::te\+::\+Schedule}!operator\mbox{[}$\,$\mbox{]}@{operator[]}}
+\index{operator\mbox{[}$\,$\mbox{]}@{operator[]}!tvm\+::te\+::\+Schedule@{tvm\+::te\+::\+Schedule}}
+\subsubsection[{\texorpdfstring{operator[](const Operation \&op)}{operator[](const Operation &op)}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Stage} tvm\+::te\+::\+Schedule\+::operator\mbox{[}$\,$\mbox{]} (
+\begin{DoxyParamCaption}
+\item[{const {\bf Operation} \&}]{op}
+\end{DoxyParamCaption}
+)}\hypertarget{classtvm_1_1te_1_1Schedule_a3f63b27dcbddd06c550cc1a5a6562717}{}\label{classtvm_1_1te_1_1Schedule_a3f63b27dcbddd06c550cc1a5a6562717}
+
+
+Get the stage corresponds to the op. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em op} & The operation. \\
+\hline
+\end{DoxyParams}
+\index{tvm\+::te\+::\+Schedule@{tvm\+::te\+::\+Schedule}!operator\mbox{[}$\,$\mbox{]}@{operator[]}}
+\index{operator\mbox{[}$\,$\mbox{]}@{operator[]}!tvm\+::te\+::\+Schedule@{tvm\+::te\+::\+Schedule}}
+\subsubsection[{\texorpdfstring{operator[](const Tensor \&tensor)}{operator[](const Tensor &tensor)}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Stage} tvm\+::te\+::\+Schedule\+::operator\mbox{[}$\,$\mbox{]} (
+\begin{DoxyParamCaption}
+\item[{const {\bf Tensor} \&}]{tensor}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classtvm_1_1te_1_1Schedule_a2040189df3b89304a12acce3efff04a6}{}\label{classtvm_1_1te_1_1Schedule_a2040189df3b89304a12acce3efff04a6}
+
+
+Short hand for getting the stage of tensor\textquotesingle{}s operation. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em tensor} & The tensor \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The stage corresponding to the tensor\textquotesingle{}s op 
+\end{DoxyReturn}
+\index{tvm\+::te\+::\+Schedule@{tvm\+::te\+::\+Schedule}!rfactor@{rfactor}}
+\index{rfactor@{rfactor}!tvm\+::te\+::\+Schedule@{tvm\+::te\+::\+Schedule}}
+\subsubsection[{\texorpdfstring{rfactor(const Tensor \&tensor, const Iter\+Var \&axis, int factor\+\_\+axis=0)}{rfactor(const Tensor &tensor, const IterVar &axis, int factor_axis=0)}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Array}$<${\bf Tensor}$>$ tvm\+::te\+::\+Schedule\+::rfactor (
+\begin{DoxyParamCaption}
+\item[{const {\bf Tensor} \&}]{tensor, }
+\item[{const {\bf Iter\+Var} \&}]{axis, }
+\item[{int}]{factor\+\_\+axis = {\ttfamily 0}}
+\end{DoxyParamCaption}
+)}\hypertarget{classtvm_1_1te_1_1Schedule_a34ae85add41bbed0140726d024d08862}{}\label{classtvm_1_1te_1_1Schedule_a34ae85add41bbed0140726d024d08862}
+
+
+Factor a reduction axis in tensor\textquotesingle{}s schedule to be an explicit axis. This will create a new stage that generated the new tensor with axis as the first dimension. The tensor\textquotesingle{}s body will be rewritten as a reduction over the factored tensor. 
+
+P. Suriana, A. Adams and S. Kamil. Parallel associative reductions in halide. C\+GO\textquotesingle{}17
+
+
+\begin{DoxyParams}{Parameters}
+{\em tensor} & The tensor to be factored. \\
+\hline
+{\em axis} & The reduction axis in tensor\textquotesingle{}s schedule to be factored. \\
+\hline
+{\em factor\+\_\+axis} & The position where the new axis is placed. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The created factored tensors. 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+include/tvm/te/\hyperlink{schedule_8h}{schedule.\+h}\end{DoxyCompactItemize}

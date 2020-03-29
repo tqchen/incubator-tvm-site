@@ -1,0 +1,20 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="classtvm_1_1AttrVisitor" kind="class" language="C++" prot="public">
+    <compoundname>tvm::AttrVisitor</compoundname>
+    <includes refid="reflection_8h" local="no">reflection.h</includes>
+    <briefdescription>
+<para>Visitor class for to get the attributesof a AST/IR node. The content is going to be called for each field. </para>    </briefdescription>
+    <detaileddescription>
+<para>Each objects that wants reflection will need to implement a VisitAttrs function and call visitor-&gt;Visit on each of its field. </para>    </detaileddescription>
+    <collaborationgraph>
+      <node id="4013">
+        <label>tvm::AttrVisitor</label>
+        <link refid="classtvm_1_1AttrVisitor"/>
+      </node>
+    </collaborationgraph>
+    <location file="include/tvm/node/reflection.h" line="52" column="1" bodyfile="include/tvm/node/reflection.h" bodystart="52" bodyend="74"/>
+    <listofallmembers>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

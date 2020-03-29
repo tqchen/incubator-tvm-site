@@ -1,0 +1,154 @@
+\hypertarget{classtvm_1_1tir_1_1BijectiveLayout}{}\section{tvm\+:\+:tir\+:\+:Bijective\+Layout Class Reference}
+\label{classtvm_1_1tir_1_1BijectiveLayout}\index{tvm\+::tir\+::\+Bijective\+Layout@{tvm\+::tir\+::\+Bijective\+Layout}}
+
+
+Bijective function mapping for data layout transformation. Given two \hyperlink{classtvm_1_1tir_1_1Layout}{Layout}, \hyperlink{classtvm_1_1tir_1_1BijectiveLayout}{Bijective\+Layout} build and store the mapping rules, provides A\+PI to transform N-\/dimention tensor from the source indices (i0, i1, …, im) to the destination indices (j0, j1, … jm).  
+
+
+
+
+{\ttfamily \#include $<$data\+\_\+layout.\+h$>$}
+
+
+
+Inheritance diagram for tvm\+:\+:tir\+:\+:Bijective\+Layout\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=209pt]{classtvm_1_1tir_1_1BijectiveLayout__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for tvm\+:\+:tir\+:\+:Bijective\+Layout\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=209pt]{classtvm_1_1tir_1_1BijectiveLayout__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+using \hyperlink{classtvm_1_1tir_1_1BijectiveLayout_a0a25c034e42d58d166dc03447369ca8d}{Container\+Type} = \hyperlink{classtvm_1_1tir_1_1BijectiveLayoutNode}{Bijective\+Layout\+Node}
+\begin{DoxyCompactList}\small\item\em specify container node \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classtvm_1_1tir_1_1BijectiveLayout_a7fa4784a55b8a262f6854e5750f1bf61}{Bijective\+Layout} ()=default
+\item 
+\hyperlink{classtvm_1_1tir_1_1BijectiveLayout_a791c28bc770ab7405162b00b06b19944}{Bijective\+Layout} (Object\+Ptr$<$ Object $>$ n)
+\item 
+\hyperlink{classtvm_1_1tir_1_1BijectiveLayout_a39f754ef4c60c084fb1d0379fbc264c6}{Bijective\+Layout} (\hyperlink{classtvm_1_1tir_1_1Layout}{Layout} src\+\_\+layout, \hyperlink{classtvm_1_1tir_1_1Layout}{Layout} dst\+\_\+layout)
+\begin{DoxyCompactList}\small\item\em The constructor. \end{DoxyCompactList}\item 
+\hyperlink{classtvm_1_1Array}{Array}$<$ \hyperlink{classtvm_1_1PrimExpr}{Prim\+Expr} $>$ \hyperlink{classtvm_1_1tir_1_1BijectiveLayout_ae5f2483aedcd3b618840545b834f7d50}{Forward\+Shape} (const \hyperlink{classtvm_1_1Array}{Array}$<$ \hyperlink{classtvm_1_1PrimExpr}{Prim\+Expr} $>$ \&shape) const 
+\item 
+\hyperlink{classtvm_1_1Array}{Array}$<$ \hyperlink{classtvm_1_1PrimExpr}{Prim\+Expr} $>$ \hyperlink{classtvm_1_1tir_1_1BijectiveLayout_a7324c045c1d7293a9d137ab585acb3f2}{Backward\+Shape} (const \hyperlink{classtvm_1_1Array}{Array}$<$ \hyperlink{classtvm_1_1PrimExpr}{Prim\+Expr} $>$ \&dst\+\_\+shape) const 
+\item 
+\hyperlink{classtvm_1_1Array}{Array}$<$ \hyperlink{classtvm_1_1PrimExpr}{Prim\+Expr} $>$ \hyperlink{classtvm_1_1tir_1_1BijectiveLayout_ae4d61fe098d0aa8f6d0a1e9c904e7005}{Forward\+Index} (const \hyperlink{classtvm_1_1Array}{Array}$<$ \hyperlink{classtvm_1_1PrimExpr}{Prim\+Expr} $>$ \&index) const 
+\item 
+\hyperlink{classtvm_1_1Array}{Array}$<$ \hyperlink{classtvm_1_1PrimExpr}{Prim\+Expr} $>$ \hyperlink{classtvm_1_1tir_1_1BijectiveLayout_adc3e54d180453d66e64281c425c880e9}{Backward\+Index} (const \hyperlink{classtvm_1_1Array}{Array}$<$ \hyperlink{classtvm_1_1PrimExpr}{Prim\+Expr} $>$ \&dst\+\_\+index) const 
+\item 
+const \hyperlink{classtvm_1_1tir_1_1BijectiveLayoutNode}{Bijective\+Layout\+Node} $\ast$ \hyperlink{classtvm_1_1tir_1_1BijectiveLayout_ac2efbd7baab4ee14888a30efb6cecbf1}{operator-\/$>$} () const 
+\begin{DoxyCompactList}\small\item\em access the internal node container \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Bijective function mapping for data layout transformation. Given two \hyperlink{classtvm_1_1tir_1_1Layout}{Layout}, \hyperlink{classtvm_1_1tir_1_1BijectiveLayout}{Bijective\+Layout} build and store the mapping rules, provides A\+PI to transform N-\/dimention tensor from the source indices (i0, i1, …, im) to the destination indices (j0, j1, … jm). 
+
+\subsection{Member Typedef Documentation}
+\index{tvm\+::tir\+::\+Bijective\+Layout@{tvm\+::tir\+::\+Bijective\+Layout}!Container\+Type@{Container\+Type}}
+\index{Container\+Type@{Container\+Type}!tvm\+::tir\+::\+Bijective\+Layout@{tvm\+::tir\+::\+Bijective\+Layout}}
+\subsubsection[{\texorpdfstring{Container\+Type}{ContainerType}}]{\setlength{\rightskip}{0pt plus 5cm}using {\bf tvm\+::tir\+::\+Bijective\+Layout\+::\+Container\+Type} =  {\bf Bijective\+Layout\+Node}}\hypertarget{classtvm_1_1tir_1_1BijectiveLayout_a0a25c034e42d58d166dc03447369ca8d}{}\label{classtvm_1_1tir_1_1BijectiveLayout_a0a25c034e42d58d166dc03447369ca8d}
+
+
+specify container node 
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\index{tvm\+::tir\+::\+Bijective\+Layout@{tvm\+::tir\+::\+Bijective\+Layout}!Bijective\+Layout@{Bijective\+Layout}}
+\index{Bijective\+Layout@{Bijective\+Layout}!tvm\+::tir\+::\+Bijective\+Layout@{tvm\+::tir\+::\+Bijective\+Layout}}
+\subsubsection[{\texorpdfstring{Bijective\+Layout()=default}{BijectiveLayout()=default}}]{\setlength{\rightskip}{0pt plus 5cm}tvm\+::tir\+::\+Bijective\+Layout\+::\+Bijective\+Layout (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [default]}}\hypertarget{classtvm_1_1tir_1_1BijectiveLayout_a7fa4784a55b8a262f6854e5750f1bf61}{}\label{classtvm_1_1tir_1_1BijectiveLayout_a7fa4784a55b8a262f6854e5750f1bf61}
+\index{tvm\+::tir\+::\+Bijective\+Layout@{tvm\+::tir\+::\+Bijective\+Layout}!Bijective\+Layout@{Bijective\+Layout}}
+\index{Bijective\+Layout@{Bijective\+Layout}!tvm\+::tir\+::\+Bijective\+Layout@{tvm\+::tir\+::\+Bijective\+Layout}}
+\subsubsection[{\texorpdfstring{Bijective\+Layout(\+Object\+Ptr$<$ Object $>$ n)}{BijectiveLayout(ObjectPtr< Object > n)}}]{\setlength{\rightskip}{0pt plus 5cm}tvm\+::tir\+::\+Bijective\+Layout\+::\+Bijective\+Layout (
+\begin{DoxyParamCaption}
+\item[{Object\+Ptr$<$ Object $>$}]{n}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [explicit]}}\hypertarget{classtvm_1_1tir_1_1BijectiveLayout_a791c28bc770ab7405162b00b06b19944}{}\label{classtvm_1_1tir_1_1BijectiveLayout_a791c28bc770ab7405162b00b06b19944}
+\index{tvm\+::tir\+::\+Bijective\+Layout@{tvm\+::tir\+::\+Bijective\+Layout}!Bijective\+Layout@{Bijective\+Layout}}
+\index{Bijective\+Layout@{Bijective\+Layout}!tvm\+::tir\+::\+Bijective\+Layout@{tvm\+::tir\+::\+Bijective\+Layout}}
+\subsubsection[{\texorpdfstring{Bijective\+Layout(\+Layout src\+\_\+layout, Layout dst\+\_\+layout)}{BijectiveLayout(Layout src_layout, Layout dst_layout)}}]{\setlength{\rightskip}{0pt plus 5cm}tvm\+::tir\+::\+Bijective\+Layout\+::\+Bijective\+Layout (
+\begin{DoxyParamCaption}
+\item[{{\bf Layout}}]{src\+\_\+layout, }
+\item[{{\bf Layout}}]{dst\+\_\+layout}
+\end{DoxyParamCaption}
+)}\hypertarget{classtvm_1_1tir_1_1BijectiveLayout_a39f754ef4c60c084fb1d0379fbc264c6}{}\label{classtvm_1_1tir_1_1BijectiveLayout_a39f754ef4c60c084fb1d0379fbc264c6}
+
+
+The constructor. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em src\+\_\+layout} & The source layout \\
+\hline
+{\em dst\+\_\+layout} & The destination layout \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\index{tvm\+::tir\+::\+Bijective\+Layout@{tvm\+::tir\+::\+Bijective\+Layout}!Backward\+Index@{Backward\+Index}}
+\index{Backward\+Index@{Backward\+Index}!tvm\+::tir\+::\+Bijective\+Layout@{tvm\+::tir\+::\+Bijective\+Layout}}
+\subsubsection[{\texorpdfstring{Backward\+Index(const Array$<$ Prim\+Expr $>$ \&dst\+\_\+index) const }{BackwardIndex(const Array< PrimExpr > &dst_index) const }}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Array}$<${\bf Prim\+Expr}$>$ tvm\+::tir\+::\+Bijective\+Layout\+::\+Backward\+Index (
+\begin{DoxyParamCaption}
+\item[{const {\bf Array}$<$ {\bf Prim\+Expr} $>$ \&}]{dst\+\_\+index}
+\end{DoxyParamCaption}
+) const}\hypertarget{classtvm_1_1tir_1_1BijectiveLayout_adc3e54d180453d66e64281c425c880e9}{}\label{classtvm_1_1tir_1_1BijectiveLayout_adc3e54d180453d66e64281c425c880e9}
+\index{tvm\+::tir\+::\+Bijective\+Layout@{tvm\+::tir\+::\+Bijective\+Layout}!Backward\+Shape@{Backward\+Shape}}
+\index{Backward\+Shape@{Backward\+Shape}!tvm\+::tir\+::\+Bijective\+Layout@{tvm\+::tir\+::\+Bijective\+Layout}}
+\subsubsection[{\texorpdfstring{Backward\+Shape(const Array$<$ Prim\+Expr $>$ \&dst\+\_\+shape) const }{BackwardShape(const Array< PrimExpr > &dst_shape) const }}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Array}$<${\bf Prim\+Expr}$>$ tvm\+::tir\+::\+Bijective\+Layout\+::\+Backward\+Shape (
+\begin{DoxyParamCaption}
+\item[{const {\bf Array}$<$ {\bf Prim\+Expr} $>$ \&}]{dst\+\_\+shape}
+\end{DoxyParamCaption}
+) const}\hypertarget{classtvm_1_1tir_1_1BijectiveLayout_a7324c045c1d7293a9d137ab585acb3f2}{}\label{classtvm_1_1tir_1_1BijectiveLayout_a7324c045c1d7293a9d137ab585acb3f2}
+\index{tvm\+::tir\+::\+Bijective\+Layout@{tvm\+::tir\+::\+Bijective\+Layout}!Forward\+Index@{Forward\+Index}}
+\index{Forward\+Index@{Forward\+Index}!tvm\+::tir\+::\+Bijective\+Layout@{tvm\+::tir\+::\+Bijective\+Layout}}
+\subsubsection[{\texorpdfstring{Forward\+Index(const Array$<$ Prim\+Expr $>$ \&index) const }{ForwardIndex(const Array< PrimExpr > &index) const }}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Array}$<${\bf Prim\+Expr}$>$ tvm\+::tir\+::\+Bijective\+Layout\+::\+Forward\+Index (
+\begin{DoxyParamCaption}
+\item[{const {\bf Array}$<$ {\bf Prim\+Expr} $>$ \&}]{index}
+\end{DoxyParamCaption}
+) const}\hypertarget{classtvm_1_1tir_1_1BijectiveLayout_ae4d61fe098d0aa8f6d0a1e9c904e7005}{}\label{classtvm_1_1tir_1_1BijectiveLayout_ae4d61fe098d0aa8f6d0a1e9c904e7005}
+\index{tvm\+::tir\+::\+Bijective\+Layout@{tvm\+::tir\+::\+Bijective\+Layout}!Forward\+Shape@{Forward\+Shape}}
+\index{Forward\+Shape@{Forward\+Shape}!tvm\+::tir\+::\+Bijective\+Layout@{tvm\+::tir\+::\+Bijective\+Layout}}
+\subsubsection[{\texorpdfstring{Forward\+Shape(const Array$<$ Prim\+Expr $>$ \&shape) const }{ForwardShape(const Array< PrimExpr > &shape) const }}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Array}$<${\bf Prim\+Expr}$>$ tvm\+::tir\+::\+Bijective\+Layout\+::\+Forward\+Shape (
+\begin{DoxyParamCaption}
+\item[{const {\bf Array}$<$ {\bf Prim\+Expr} $>$ \&}]{shape}
+\end{DoxyParamCaption}
+) const}\hypertarget{classtvm_1_1tir_1_1BijectiveLayout_ae5f2483aedcd3b618840545b834f7d50}{}\label{classtvm_1_1tir_1_1BijectiveLayout_ae5f2483aedcd3b618840545b834f7d50}
+\index{tvm\+::tir\+::\+Bijective\+Layout@{tvm\+::tir\+::\+Bijective\+Layout}!operator-\/$>$@{operator-\/$>$}}
+\index{operator-\/$>$@{operator-\/$>$}!tvm\+::tir\+::\+Bijective\+Layout@{tvm\+::tir\+::\+Bijective\+Layout}}
+\subsubsection[{\texorpdfstring{operator-\/$>$() const }{operator->() const }}]{\setlength{\rightskip}{0pt plus 5cm}const {\bf Bijective\+Layout\+Node} $\ast$ tvm\+::tir\+::\+Bijective\+Layout\+::operator-\/$>$ (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classtvm_1_1tir_1_1BijectiveLayout_ac2efbd7baab4ee14888a30efb6cecbf1}{}\label{classtvm_1_1tir_1_1BijectiveLayout_ac2efbd7baab4ee14888a30efb6cecbf1}
+
+
+access the internal node container 
+
+\begin{DoxyReturn}{Returns}
+the pointer to the internal node container 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+include/tvm/tir/\hyperlink{data__layout_8h}{data\+\_\+layout.\+h}\end{DoxyCompactItemize}

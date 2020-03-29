@@ -1,0 +1,513 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="classtvm_1_1tir_1_1StmtFunctor_3_01R_07const_01Stmt_01_6n_00_01Args_8_8_8args_08_4" kind="class" language="C++" prot="public">
+    <compoundname>tvm::tir::StmtFunctor&lt; R(const Stmt &amp;n, Args...args)&gt;</compoundname>
+    <includes refid="stmt__functor_8h" local="no">stmt_functor.h</includes>
+    <templateparamlist>
+      <param>
+        <type>typename R</type>
+      </param>
+      <param>
+        <type>typename...</type>
+        <declname>Args</declname>
+        <defname>Args</defname>
+      </param>
+    </templateparamlist>
+      <sectiondef kind="private-type">
+      <memberdef kind="typedef" id="classtvm_1_1tir_1_1StmtFunctor_3_01R_07const_01Stmt_01_6n_00_01Args_8_8_8args_08_4_1a56b8e348ccb7dc214e0a13dd227a9640" prot="private" static="no">
+        <type><ref refid="classtvm_1_1tir_1_1StmtFunctor" kindref="compound">StmtFunctor</ref>&lt; R(const <ref refid="classtvm_1_1tir_1_1Stmt" kindref="compound">Stmt</ref> &amp;n, Args...args)&gt;</type>
+        <definition>using tvm::tir::StmtFunctor&lt; R(const Stmt &amp;n, Args...args)&gt;::TSelf =  StmtFunctor&lt;R(const Stmt&amp; n, Args... args)&gt;</definition>
+        <argsstring></argsstring>
+        <name>TSelf</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/tir/stmt_functor.h" line="60" column="1" bodyfile="include/tvm/tir/stmt_functor.h" bodystart="60" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="classtvm_1_1tir_1_1StmtFunctor_3_01R_07const_01Stmt_01_6n_00_01Args_8_8_8args_08_4_1a59c7bad9a6477ca69ef7de48de1deb6f" prot="private" static="no">
+        <type><ref refid="classtvm_1_1NodeFunctor" kindref="compound">NodeFunctor</ref>&lt; R(const ObjectRef &amp;n, <ref refid="classtvm_1_1tir_1_1StmtFunctor_3_01R_07const_01Stmt_01_6n_00_01Args_8_8_8args_08_4" kindref="compound">TSelf</ref> *self, Args...args)&gt;</type>
+        <definition>using tvm::tir::StmtFunctor&lt; R(const Stmt &amp;n, Args...args)&gt;::FType =  NodeFunctor&lt;R(const ObjectRef&amp; n, TSelf* self, Args... args)&gt;</definition>
+        <argsstring></argsstring>
+        <name>FType</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/tir/stmt_functor.h" line="61" column="1" bodyfile="include/tvm/tir/stmt_functor.h" bodystart="61" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-type">
+      <memberdef kind="typedef" id="classtvm_1_1tir_1_1StmtFunctor_3_01R_07const_01Stmt_01_6n_00_01Args_8_8_8args_08_4_1ab5c892a2e36985e58d69f7b2ca2e0260" prot="public" static="no">
+        <type>R</type>
+        <definition>using tvm::tir::StmtFunctor&lt; R(const Stmt &amp;n, Args...args)&gt;::result_type =  R</definition>
+        <argsstring></argsstring>
+        <name>result_type</name>
+        <briefdescription>
+<para>the result type of this functor </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/tir/stmt_functor.h" line="65" column="1" bodyfile="include/tvm/tir/stmt_functor.h" bodystart="65" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classtvm_1_1tir_1_1StmtFunctor_3_01R_07const_01Stmt_01_6n_00_01Args_8_8_8args_08_4_1ada86a6f45feefbd47308a5cc5119067e" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type></type>
+        <definition>virtual tvm::tir::StmtFunctor&lt; R(const Stmt &amp;n, Args...args)&gt;::~StmtFunctor</definition>
+        <argsstring>()</argsstring>
+        <name>~StmtFunctor</name>
+        <briefdescription>
+<para>virtual destructor </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/tir/stmt_functor.h" line="67" column="1" bodyfile="include/tvm/tir/stmt_functor.h" bodystart="67" bodyend="67"/>
+      </memberdef>
+      <memberdef kind="function" id="classtvm_1_1tir_1_1StmtFunctor_3_01R_07const_01Stmt_01_6n_00_01Args_8_8_8args_08_4_1abe503254d07c1270000335d02c6f98b4" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>R</type>
+        <definition>R tvm::tir::StmtFunctor&lt; R(const Stmt &amp;n, Args...args)&gt;::operator()</definition>
+        <argsstring>(const Stmt &amp;n, Args...args)</argsstring>
+        <name>operator()</name>
+        <param>
+          <type>const <ref refid="classtvm_1_1tir_1_1Stmt" kindref="compound">Stmt</ref> &amp;</type>
+          <declname>n</declname>
+        </param>
+        <param>
+          <type>Args...</type>
+          <declname>args</declname>
+        </param>
+        <briefdescription>
+<para>Same as call. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>n</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The stmt node. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>args</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Additional arguments. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The result of the call </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/tir/stmt_functor.h" line="74" column="1" bodyfile="include/tvm/tir/stmt_functor.h" bodystart="74" bodyend="76"/>
+      </memberdef>
+      <memberdef kind="function" id="classtvm_1_1tir_1_1StmtFunctor_3_01R_07const_01Stmt_01_6n_00_01Args_8_8_8args_08_4_1a681fd33e837008d7f2534d206bdacca3" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>R</type>
+        <definition>virtual R tvm::tir::StmtFunctor&lt; R(const Stmt &amp;n, Args...args)&gt;::VisitStmt</definition>
+        <argsstring>(const Stmt &amp;n, Args...args)</argsstring>
+        <name>VisitStmt</name>
+        <param>
+          <type>const <ref refid="classtvm_1_1tir_1_1Stmt" kindref="compound">Stmt</ref> &amp;</type>
+          <declname>n</declname>
+        </param>
+        <param>
+          <type>Args...</type>
+          <declname>args</declname>
+        </param>
+        <briefdescription>
+<para>The functor call. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>n</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The stmt node. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>args</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Additional arguments. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The result of the call </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/tir/stmt_functor.h" line="83" column="1" bodyfile="include/tvm/tir/stmt_functor.h" bodystart="83" bodyend="86"/>
+      </memberdef>
+      <memberdef kind="function" id="classtvm_1_1tir_1_1StmtFunctor_3_01R_07const_01Stmt_01_6n_00_01Args_8_8_8args_08_4_1a4ae20a46aa6a7fdeec5f7ae30935b8ca" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>R</type>
+        <definition>virtual R tvm::tir::StmtFunctor&lt; R(const Stmt &amp;n, Args...args)&gt;::VisitStmt_</definition>
+        <argsstring>(const LetStmtNode *op, Args...args)</argsstring>
+        <name>VisitStmt_</name>
+        <param>
+          <type>const <ref refid="classtvm_1_1tir_1_1LetStmtNode" kindref="compound">LetStmtNode</ref> *</type>
+          <declname>op</declname>
+        </param>
+        <param>
+          <type>Args...</type>
+          <declname>args</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/tir/stmt_functor.h" line="88" column="1" bodyfile="include/tvm/tir/stmt_functor.h" bodystart="88" bodyend="88"/>
+      </memberdef>
+      <memberdef kind="function" id="classtvm_1_1tir_1_1StmtFunctor_3_01R_07const_01Stmt_01_6n_00_01Args_8_8_8args_08_4_1a6c7fee50ff8c15f95228d8edff19a39f" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>R</type>
+        <definition>virtual R tvm::tir::StmtFunctor&lt; R(const Stmt &amp;n, Args...args)&gt;::VisitStmt_</definition>
+        <argsstring>(const AttrStmtNode *op, Args...args)</argsstring>
+        <name>VisitStmt_</name>
+        <param>
+          <type>const <ref refid="classtvm_1_1tir_1_1AttrStmtNode" kindref="compound">AttrStmtNode</ref> *</type>
+          <declname>op</declname>
+        </param>
+        <param>
+          <type>Args...</type>
+          <declname>args</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/tir/stmt_functor.h" line="89" column="1" bodyfile="include/tvm/tir/stmt_functor.h" bodystart="89" bodyend="89"/>
+      </memberdef>
+      <memberdef kind="function" id="classtvm_1_1tir_1_1StmtFunctor_3_01R_07const_01Stmt_01_6n_00_01Args_8_8_8args_08_4_1a77331d93b2c3f54b007918bcfb57a941" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>R</type>
+        <definition>virtual R tvm::tir::StmtFunctor&lt; R(const Stmt &amp;n, Args...args)&gt;::VisitStmt_</definition>
+        <argsstring>(const IfThenElseNode *op, Args...args)</argsstring>
+        <name>VisitStmt_</name>
+        <param>
+          <type>const <ref refid="classtvm_1_1tir_1_1IfThenElseNode" kindref="compound">IfThenElseNode</ref> *</type>
+          <declname>op</declname>
+        </param>
+        <param>
+          <type>Args...</type>
+          <declname>args</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/tir/stmt_functor.h" line="90" column="1" bodyfile="include/tvm/tir/stmt_functor.h" bodystart="90" bodyend="90"/>
+      </memberdef>
+      <memberdef kind="function" id="classtvm_1_1tir_1_1StmtFunctor_3_01R_07const_01Stmt_01_6n_00_01Args_8_8_8args_08_4_1a5aac298853219524d70e89b6a8672cf7" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>R</type>
+        <definition>virtual R tvm::tir::StmtFunctor&lt; R(const Stmt &amp;n, Args...args)&gt;::VisitStmt_</definition>
+        <argsstring>(const ForNode *op, Args...args)</argsstring>
+        <name>VisitStmt_</name>
+        <param>
+          <type>const <ref refid="classtvm_1_1tir_1_1ForNode" kindref="compound">ForNode</ref> *</type>
+          <declname>op</declname>
+        </param>
+        <param>
+          <type>Args...</type>
+          <declname>args</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/tir/stmt_functor.h" line="91" column="1" bodyfile="include/tvm/tir/stmt_functor.h" bodystart="91" bodyend="91"/>
+      </memberdef>
+      <memberdef kind="function" id="classtvm_1_1tir_1_1StmtFunctor_3_01R_07const_01Stmt_01_6n_00_01Args_8_8_8args_08_4_1adf37d742ed06eb5e109f1a15e1a826fa" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>R</type>
+        <definition>virtual R tvm::tir::StmtFunctor&lt; R(const Stmt &amp;n, Args...args)&gt;::VisitStmt_</definition>
+        <argsstring>(const AllocateNode *op, Args...args)</argsstring>
+        <name>VisitStmt_</name>
+        <param>
+          <type>const <ref refid="classtvm_1_1tir_1_1AllocateNode" kindref="compound">AllocateNode</ref> *</type>
+          <declname>op</declname>
+        </param>
+        <param>
+          <type>Args...</type>
+          <declname>args</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/tir/stmt_functor.h" line="92" column="1" bodyfile="include/tvm/tir/stmt_functor.h" bodystart="92" bodyend="92"/>
+      </memberdef>
+      <memberdef kind="function" id="classtvm_1_1tir_1_1StmtFunctor_3_01R_07const_01Stmt_01_6n_00_01Args_8_8_8args_08_4_1ae0cc8034e586408c25ffcb7c43684f0f" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>R</type>
+        <definition>virtual R tvm::tir::StmtFunctor&lt; R(const Stmt &amp;n, Args...args)&gt;::VisitStmt_</definition>
+        <argsstring>(const StoreNode *op, Args...args)</argsstring>
+        <name>VisitStmt_</name>
+        <param>
+          <type>const <ref refid="classtvm_1_1tir_1_1StoreNode" kindref="compound">StoreNode</ref> *</type>
+          <declname>op</declname>
+        </param>
+        <param>
+          <type>Args...</type>
+          <declname>args</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/tir/stmt_functor.h" line="93" column="1" bodyfile="include/tvm/tir/stmt_functor.h" bodystart="93" bodyend="93"/>
+      </memberdef>
+      <memberdef kind="function" id="classtvm_1_1tir_1_1StmtFunctor_3_01R_07const_01Stmt_01_6n_00_01Args_8_8_8args_08_4_1a8c1509214a19114bd826e6cc4aaee936" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>R</type>
+        <definition>virtual R tvm::tir::StmtFunctor&lt; R(const Stmt &amp;n, Args...args)&gt;::VisitStmt_</definition>
+        <argsstring>(const FreeNode *op, Args...args)</argsstring>
+        <name>VisitStmt_</name>
+        <param>
+          <type>const <ref refid="classtvm_1_1tir_1_1FreeNode" kindref="compound">FreeNode</ref> *</type>
+          <declname>op</declname>
+        </param>
+        <param>
+          <type>Args...</type>
+          <declname>args</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/tir/stmt_functor.h" line="94" column="1" bodyfile="include/tvm/tir/stmt_functor.h" bodystart="94" bodyend="94"/>
+      </memberdef>
+      <memberdef kind="function" id="classtvm_1_1tir_1_1StmtFunctor_3_01R_07const_01Stmt_01_6n_00_01Args_8_8_8args_08_4_1a38d0dfd90e64c092bb4687310c193f5a" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>R</type>
+        <definition>virtual R tvm::tir::StmtFunctor&lt; R(const Stmt &amp;n, Args...args)&gt;::VisitStmt_</definition>
+        <argsstring>(const AssertStmtNode *op, Args...args)</argsstring>
+        <name>VisitStmt_</name>
+        <param>
+          <type>const <ref refid="classtvm_1_1tir_1_1AssertStmtNode" kindref="compound">AssertStmtNode</ref> *</type>
+          <declname>op</declname>
+        </param>
+        <param>
+          <type>Args...</type>
+          <declname>args</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/tir/stmt_functor.h" line="95" column="1" bodyfile="include/tvm/tir/stmt_functor.h" bodystart="95" bodyend="95"/>
+      </memberdef>
+      <memberdef kind="function" id="classtvm_1_1tir_1_1StmtFunctor_3_01R_07const_01Stmt_01_6n_00_01Args_8_8_8args_08_4_1ab7907012785d8468b36325a86f3d3439" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>R</type>
+        <definition>virtual R tvm::tir::StmtFunctor&lt; R(const Stmt &amp;n, Args...args)&gt;::VisitStmt_</definition>
+        <argsstring>(const ProducerConsumerNode *op, Args...args)</argsstring>
+        <name>VisitStmt_</name>
+        <param>
+          <type>const <ref refid="classtvm_1_1tir_1_1ProducerConsumerNode" kindref="compound">ProducerConsumerNode</ref> *</type>
+          <declname>op</declname>
+        </param>
+        <param>
+          <type>Args...</type>
+          <declname>args</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/tir/stmt_functor.h" line="96" column="1" bodyfile="include/tvm/tir/stmt_functor.h" bodystart="96" bodyend="96"/>
+      </memberdef>
+      <memberdef kind="function" id="classtvm_1_1tir_1_1StmtFunctor_3_01R_07const_01Stmt_01_6n_00_01Args_8_8_8args_08_4_1af79c39839087be7af2b0b7d5ecc546b0" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>R</type>
+        <definition>virtual R tvm::tir::StmtFunctor&lt; R(const Stmt &amp;n, Args...args)&gt;::VisitStmt_</definition>
+        <argsstring>(const ProvideNode *op, Args...args)</argsstring>
+        <name>VisitStmt_</name>
+        <param>
+          <type>const <ref refid="classtvm_1_1tir_1_1ProvideNode" kindref="compound">ProvideNode</ref> *</type>
+          <declname>op</declname>
+        </param>
+        <param>
+          <type>Args...</type>
+          <declname>args</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/tir/stmt_functor.h" line="97" column="1" bodyfile="include/tvm/tir/stmt_functor.h" bodystart="97" bodyend="97"/>
+      </memberdef>
+      <memberdef kind="function" id="classtvm_1_1tir_1_1StmtFunctor_3_01R_07const_01Stmt_01_6n_00_01Args_8_8_8args_08_4_1a7c206781866bf85effcaac1d597e84d2" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>R</type>
+        <definition>virtual R tvm::tir::StmtFunctor&lt; R(const Stmt &amp;n, Args...args)&gt;::VisitStmt_</definition>
+        <argsstring>(const RealizeNode *op, Args...args)</argsstring>
+        <name>VisitStmt_</name>
+        <param>
+          <type>const <ref refid="classtvm_1_1tir_1_1RealizeNode" kindref="compound">RealizeNode</ref> *</type>
+          <declname>op</declname>
+        </param>
+        <param>
+          <type>Args...</type>
+          <declname>args</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/tir/stmt_functor.h" line="98" column="1" bodyfile="include/tvm/tir/stmt_functor.h" bodystart="98" bodyend="98"/>
+      </memberdef>
+      <memberdef kind="function" id="classtvm_1_1tir_1_1StmtFunctor_3_01R_07const_01Stmt_01_6n_00_01Args_8_8_8args_08_4_1aa9f502eaad37f47adb66986a2aed633c" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>R</type>
+        <definition>virtual R tvm::tir::StmtFunctor&lt; R(const Stmt &amp;n, Args...args)&gt;::VisitStmt_</definition>
+        <argsstring>(const PrefetchNode *op, Args...args)</argsstring>
+        <name>VisitStmt_</name>
+        <param>
+          <type>const <ref refid="classtvm_1_1tir_1_1PrefetchNode" kindref="compound">PrefetchNode</ref> *</type>
+          <declname>op</declname>
+        </param>
+        <param>
+          <type>Args...</type>
+          <declname>args</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/tir/stmt_functor.h" line="99" column="1" bodyfile="include/tvm/tir/stmt_functor.h" bodystart="99" bodyend="99"/>
+      </memberdef>
+      <memberdef kind="function" id="classtvm_1_1tir_1_1StmtFunctor_3_01R_07const_01Stmt_01_6n_00_01Args_8_8_8args_08_4_1a0eabde632e5d5fabc3e50b38a0ecded8" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>R</type>
+        <definition>virtual R tvm::tir::StmtFunctor&lt; R(const Stmt &amp;n, Args...args)&gt;::VisitStmt_</definition>
+        <argsstring>(const SeqStmtNode *op, Args...args)</argsstring>
+        <name>VisitStmt_</name>
+        <param>
+          <type>const <ref refid="classtvm_1_1tir_1_1SeqStmtNode" kindref="compound">SeqStmtNode</ref> *</type>
+          <declname>op</declname>
+        </param>
+        <param>
+          <type>Args...</type>
+          <declname>args</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/tir/stmt_functor.h" line="100" column="1" bodyfile="include/tvm/tir/stmt_functor.h" bodystart="100" bodyend="100"/>
+      </memberdef>
+      <memberdef kind="function" id="classtvm_1_1tir_1_1StmtFunctor_3_01R_07const_01Stmt_01_6n_00_01Args_8_8_8args_08_4_1a5632fe5dfbaafffc4578e7beda8c52be" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>R</type>
+        <definition>virtual R tvm::tir::StmtFunctor&lt; R(const Stmt &amp;n, Args...args)&gt;::VisitStmt_</definition>
+        <argsstring>(const EvaluateNode *op, Args...args)</argsstring>
+        <name>VisitStmt_</name>
+        <param>
+          <type>const <ref refid="classtvm_1_1tir_1_1EvaluateNode" kindref="compound">EvaluateNode</ref> *</type>
+          <declname>op</declname>
+        </param>
+        <param>
+          <type>Args...</type>
+          <declname>args</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/tir/stmt_functor.h" line="101" column="1" bodyfile="include/tvm/tir/stmt_functor.h" bodystart="101" bodyend="101"/>
+      </memberdef>
+      <memberdef kind="function" id="classtvm_1_1tir_1_1StmtFunctor_3_01R_07const_01Stmt_01_6n_00_01Args_8_8_8args_08_4_1aeb08feaffc3f8fb6f6c379ccce9bbd45" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>R</type>
+        <definition>virtual R tvm::tir::StmtFunctor&lt; R(const Stmt &amp;n, Args...args)&gt;::VisitStmtDefault_</definition>
+        <argsstring>(const Object *op, Args...)</argsstring>
+        <name>VisitStmtDefault_</name>
+        <param>
+          <type>const Object *</type>
+          <declname>op</declname>
+        </param>
+        <param>
+          <type>Args...</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/tir/stmt_functor.h" line="102" column="1" bodyfile="include/tvm/tir/stmt_functor.h" bodystart="102" bodyend="105"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-static-func">
+      <memberdef kind="function" id="classtvm_1_1tir_1_1StmtFunctor_3_01R_07const_01Stmt_01_6n_00_01Args_8_8_8args_08_4_1ab525ee0c36a3deee89469ab9f5b40fa4" prot="private" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classtvm_1_1NodeFunctor" kindref="compound">FType</ref></type>
+        <definition>static FType tvm::tir::StmtFunctor&lt; R(const Stmt &amp;n, Args...args)&gt;::InitVTable</definition>
+        <argsstring>()</argsstring>
+        <name>InitVTable</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/tir/stmt_functor.h" line="109" column="1" bodyfile="include/tvm/tir/stmt_functor.h" bodystart="109" bodyend="126"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="6988">
+        <label>tvm::tir::StmtFunctor&lt; R(const Stmt &amp;n, Args...args)&gt;</label>
+        <link refid="classtvm_1_1tir_1_1StmtFunctor_3_01R_07const_01Stmt_01_6n_00_01Args_8_8_8args_08_4"/>
+      </node>
+    </collaborationgraph>
+    <location file="include/tvm/tir/stmt_functor.h" line="58" column="1" bodyfile="include/tvm/tir/stmt_functor.h" bodystart="58" bodyend="127"/>
+    <listofallmembers>
+      <member refid="classtvm_1_1tir_1_1StmtFunctor_3_01R_07const_01Stmt_01_6n_00_01Args_8_8_8args_08_4_1a59c7bad9a6477ca69ef7de48de1deb6f" prot="private" virt="non-virtual"><scope>tvm::tir::StmtFunctor&lt; R(const Stmt &amp;n, Args...args)&gt;</scope><name>FType</name></member>
+      <member refid="classtvm_1_1tir_1_1StmtFunctor_3_01R_07const_01Stmt_01_6n_00_01Args_8_8_8args_08_4_1ab525ee0c36a3deee89469ab9f5b40fa4" prot="private" virt="non-virtual"><scope>tvm::tir::StmtFunctor&lt; R(const Stmt &amp;n, Args...args)&gt;</scope><name>InitVTable</name></member>
+      <member refid="classtvm_1_1tir_1_1StmtFunctor_3_01R_07const_01Stmt_01_6n_00_01Args_8_8_8args_08_4_1abe503254d07c1270000335d02c6f98b4" prot="public" virt="non-virtual"><scope>tvm::tir::StmtFunctor&lt; R(const Stmt &amp;n, Args...args)&gt;</scope><name>operator()</name></member>
+      <member refid="classtvm_1_1tir_1_1StmtFunctor_3_01R_07const_01Stmt_01_6n_00_01Args_8_8_8args_08_4_1ab5c892a2e36985e58d69f7b2ca2e0260" prot="public" virt="non-virtual"><scope>tvm::tir::StmtFunctor&lt; R(const Stmt &amp;n, Args...args)&gt;</scope><name>result_type</name></member>
+      <member refid="classtvm_1_1tir_1_1StmtFunctor_3_01R_07const_01Stmt_01_6n_00_01Args_8_8_8args_08_4_1a56b8e348ccb7dc214e0a13dd227a9640" prot="private" virt="non-virtual"><scope>tvm::tir::StmtFunctor&lt; R(const Stmt &amp;n, Args...args)&gt;</scope><name>TSelf</name></member>
+      <member refid="classtvm_1_1tir_1_1StmtFunctor_3_01R_07const_01Stmt_01_6n_00_01Args_8_8_8args_08_4_1a681fd33e837008d7f2534d206bdacca3" prot="public" virt="virtual"><scope>tvm::tir::StmtFunctor&lt; R(const Stmt &amp;n, Args...args)&gt;</scope><name>VisitStmt</name></member>
+      <member refid="classtvm_1_1tir_1_1StmtFunctor_3_01R_07const_01Stmt_01_6n_00_01Args_8_8_8args_08_4_1a4ae20a46aa6a7fdeec5f7ae30935b8ca" prot="public" virt="virtual"><scope>tvm::tir::StmtFunctor&lt; R(const Stmt &amp;n, Args...args)&gt;</scope><name>VisitStmt_</name></member>
+      <member refid="classtvm_1_1tir_1_1StmtFunctor_3_01R_07const_01Stmt_01_6n_00_01Args_8_8_8args_08_4_1a6c7fee50ff8c15f95228d8edff19a39f" prot="public" virt="virtual"><scope>tvm::tir::StmtFunctor&lt; R(const Stmt &amp;n, Args...args)&gt;</scope><name>VisitStmt_</name></member>
+      <member refid="classtvm_1_1tir_1_1StmtFunctor_3_01R_07const_01Stmt_01_6n_00_01Args_8_8_8args_08_4_1a77331d93b2c3f54b007918bcfb57a941" prot="public" virt="virtual"><scope>tvm::tir::StmtFunctor&lt; R(const Stmt &amp;n, Args...args)&gt;</scope><name>VisitStmt_</name></member>
+      <member refid="classtvm_1_1tir_1_1StmtFunctor_3_01R_07const_01Stmt_01_6n_00_01Args_8_8_8args_08_4_1a5aac298853219524d70e89b6a8672cf7" prot="public" virt="virtual"><scope>tvm::tir::StmtFunctor&lt; R(const Stmt &amp;n, Args...args)&gt;</scope><name>VisitStmt_</name></member>
+      <member refid="classtvm_1_1tir_1_1StmtFunctor_3_01R_07const_01Stmt_01_6n_00_01Args_8_8_8args_08_4_1adf37d742ed06eb5e109f1a15e1a826fa" prot="public" virt="virtual"><scope>tvm::tir::StmtFunctor&lt; R(const Stmt &amp;n, Args...args)&gt;</scope><name>VisitStmt_</name></member>
+      <member refid="classtvm_1_1tir_1_1StmtFunctor_3_01R_07const_01Stmt_01_6n_00_01Args_8_8_8args_08_4_1ae0cc8034e586408c25ffcb7c43684f0f" prot="public" virt="virtual"><scope>tvm::tir::StmtFunctor&lt; R(const Stmt &amp;n, Args...args)&gt;</scope><name>VisitStmt_</name></member>
+      <member refid="classtvm_1_1tir_1_1StmtFunctor_3_01R_07const_01Stmt_01_6n_00_01Args_8_8_8args_08_4_1a8c1509214a19114bd826e6cc4aaee936" prot="public" virt="virtual"><scope>tvm::tir::StmtFunctor&lt; R(const Stmt &amp;n, Args...args)&gt;</scope><name>VisitStmt_</name></member>
+      <member refid="classtvm_1_1tir_1_1StmtFunctor_3_01R_07const_01Stmt_01_6n_00_01Args_8_8_8args_08_4_1a38d0dfd90e64c092bb4687310c193f5a" prot="public" virt="virtual"><scope>tvm::tir::StmtFunctor&lt; R(const Stmt &amp;n, Args...args)&gt;</scope><name>VisitStmt_</name></member>
+      <member refid="classtvm_1_1tir_1_1StmtFunctor_3_01R_07const_01Stmt_01_6n_00_01Args_8_8_8args_08_4_1ab7907012785d8468b36325a86f3d3439" prot="public" virt="virtual"><scope>tvm::tir::StmtFunctor&lt; R(const Stmt &amp;n, Args...args)&gt;</scope><name>VisitStmt_</name></member>
+      <member refid="classtvm_1_1tir_1_1StmtFunctor_3_01R_07const_01Stmt_01_6n_00_01Args_8_8_8args_08_4_1af79c39839087be7af2b0b7d5ecc546b0" prot="public" virt="virtual"><scope>tvm::tir::StmtFunctor&lt; R(const Stmt &amp;n, Args...args)&gt;</scope><name>VisitStmt_</name></member>
+      <member refid="classtvm_1_1tir_1_1StmtFunctor_3_01R_07const_01Stmt_01_6n_00_01Args_8_8_8args_08_4_1a7c206781866bf85effcaac1d597e84d2" prot="public" virt="virtual"><scope>tvm::tir::StmtFunctor&lt; R(const Stmt &amp;n, Args...args)&gt;</scope><name>VisitStmt_</name></member>
+      <member refid="classtvm_1_1tir_1_1StmtFunctor_3_01R_07const_01Stmt_01_6n_00_01Args_8_8_8args_08_4_1aa9f502eaad37f47adb66986a2aed633c" prot="public" virt="virtual"><scope>tvm::tir::StmtFunctor&lt; R(const Stmt &amp;n, Args...args)&gt;</scope><name>VisitStmt_</name></member>
+      <member refid="classtvm_1_1tir_1_1StmtFunctor_3_01R_07const_01Stmt_01_6n_00_01Args_8_8_8args_08_4_1a0eabde632e5d5fabc3e50b38a0ecded8" prot="public" virt="virtual"><scope>tvm::tir::StmtFunctor&lt; R(const Stmt &amp;n, Args...args)&gt;</scope><name>VisitStmt_</name></member>
+      <member refid="classtvm_1_1tir_1_1StmtFunctor_3_01R_07const_01Stmt_01_6n_00_01Args_8_8_8args_08_4_1a5632fe5dfbaafffc4578e7beda8c52be" prot="public" virt="virtual"><scope>tvm::tir::StmtFunctor&lt; R(const Stmt &amp;n, Args...args)&gt;</scope><name>VisitStmt_</name></member>
+      <member refid="classtvm_1_1tir_1_1StmtFunctor_3_01R_07const_01Stmt_01_6n_00_01Args_8_8_8args_08_4_1aeb08feaffc3f8fb6f6c379ccce9bbd45" prot="public" virt="virtual"><scope>tvm::tir::StmtFunctor&lt; R(const Stmt &amp;n, Args...args)&gt;</scope><name>VisitStmtDefault_</name></member>
+      <member refid="classtvm_1_1tir_1_1StmtFunctor_3_01R_07const_01Stmt_01_6n_00_01Args_8_8_8args_08_4_1ada86a6f45feefbd47308a5cc5119067e" prot="public" virt="virtual"><scope>tvm::tir::StmtFunctor&lt; R(const Stmt &amp;n, Args...args)&gt;</scope><name>~StmtFunctor</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

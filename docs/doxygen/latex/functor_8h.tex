@@ -1,0 +1,121 @@
+\hypertarget{functor_8h}{}\section{include/tvm/node/functor.h File Reference}
+\label{functor_8h}\index{include/tvm/node/functor.\+h@{include/tvm/node/functor.\+h}}
+
+
+Defines the Functor data structures.  
+
+
+{\ttfamily \#include $<$dmlc/logging.\+h$>$}\\*
+{\ttfamily \#include $<$tvm/runtime/object.\+h$>$}\\*
+{\ttfamily \#include $<$vector$>$}\\*
+{\ttfamily \#include $<$type\+\_\+traits$>$}\\*
+{\ttfamily \#include $<$utility$>$}\\*
+Include dependency graph for functor.\+h\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{functor_8h__incl}
+\end{center}
+\end{figure}
+This graph shows which files directly or indirectly include this file\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{functor_8h__dep__incl}
+\end{center}
+\end{figure}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \hyperlink{classtvm_1_1NodeFunctor}{tvm\+::\+Node\+Functor$<$ F\+Type $>$}
+\begin{DoxyCompactList}\small\item\em A dynamically dispatched functor on the type of the first argument. \end{DoxyCompactList}\item 
+class \hyperlink{classtvm_1_1NodeFunctor_3_01R_07const_01ObjectRef_01_6n_00_01Args_8_8_8_08_4}{tvm\+::\+Node\+Functor$<$ R(const Object\+Ref \&n, Args...)$>$}
+\end{DoxyCompactItemize}
+\subsection*{Namespaces}
+\begin{DoxyCompactItemize}
+\item 
+ \hyperlink{namespacetvm}{tvm}
+\end{DoxyCompactItemize}
+\subsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \hyperlink{functor_8h_a0e447ad7c49540ce24c2d6e2d89f4eba}{T\+V\+M\+\_\+\+R\+E\+G\+\_\+\+F\+U\+N\+C\+\_\+\+V\+A\+R\+\_\+\+D\+EF}(Cls\+Name)~static \hyperlink{object_8h_a744c2fdb7ff7dc43070c1841a5873c84}{T\+V\+M\+\_\+\+A\+T\+T\+R\+I\+B\+U\+T\+E\+\_\+\+U\+N\+U\+S\+ED} auto \& \+\_\+\+\_\+make\+\_\+functor \#\# \+\_\+ \#\# Cls\+Name
+\item 
+\#define \hyperlink{functor_8h_a2a8f992f14c3ef28a35830bb8499d538}{T\+V\+M\+\_\+\+S\+T\+A\+T\+I\+C\+\_\+\+I\+R\+\_\+\+F\+U\+N\+C\+T\+OR}(Cls\+Name,  F\+Field)
+\begin{DoxyCompactList}\small\item\em Useful macro to set Node\+Functor dispatch in a global static field. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Defines the Functor data structures. 
+
+
+
+\subsection{Macro Definition Documentation}
+\index{functor.\+h@{functor.\+h}!T\+V\+M\+\_\+\+R\+E\+G\+\_\+\+F\+U\+N\+C\+\_\+\+V\+A\+R\+\_\+\+D\+EF@{T\+V\+M\+\_\+\+R\+E\+G\+\_\+\+F\+U\+N\+C\+\_\+\+V\+A\+R\+\_\+\+D\+EF}}
+\index{T\+V\+M\+\_\+\+R\+E\+G\+\_\+\+F\+U\+N\+C\+\_\+\+V\+A\+R\+\_\+\+D\+EF@{T\+V\+M\+\_\+\+R\+E\+G\+\_\+\+F\+U\+N\+C\+\_\+\+V\+A\+R\+\_\+\+D\+EF}!functor.\+h@{functor.\+h}}
+\subsubsection[{\texorpdfstring{T\+V\+M\+\_\+\+R\+E\+G\+\_\+\+F\+U\+N\+C\+\_\+\+V\+A\+R\+\_\+\+D\+EF}{TVM_REG_FUNC_VAR_DEF}}]{\setlength{\rightskip}{0pt plus 5cm}\#define T\+V\+M\+\_\+\+R\+E\+G\+\_\+\+F\+U\+N\+C\+\_\+\+V\+A\+R\+\_\+\+D\+EF(
+\begin{DoxyParamCaption}
+\item[{}]{Cls\+Name}
+\end{DoxyParamCaption}
+)~static {\bf T\+V\+M\+\_\+\+A\+T\+T\+R\+I\+B\+U\+T\+E\+\_\+\+U\+N\+U\+S\+ED} auto \& \+\_\+\+\_\+make\+\_\+functor \#\# \+\_\+ \#\# Cls\+Name}\hypertarget{functor_8h_a0e447ad7c49540ce24c2d6e2d89f4eba}{}\label{functor_8h_a0e447ad7c49540ce24c2d6e2d89f4eba}
+\index{functor.\+h@{functor.\+h}!T\+V\+M\+\_\+\+S\+T\+A\+T\+I\+C\+\_\+\+I\+R\+\_\+\+F\+U\+N\+C\+T\+OR@{T\+V\+M\+\_\+\+S\+T\+A\+T\+I\+C\+\_\+\+I\+R\+\_\+\+F\+U\+N\+C\+T\+OR}}
+\index{T\+V\+M\+\_\+\+S\+T\+A\+T\+I\+C\+\_\+\+I\+R\+\_\+\+F\+U\+N\+C\+T\+OR@{T\+V\+M\+\_\+\+S\+T\+A\+T\+I\+C\+\_\+\+I\+R\+\_\+\+F\+U\+N\+C\+T\+OR}!functor.\+h@{functor.\+h}}
+\subsubsection[{\texorpdfstring{T\+V\+M\+\_\+\+S\+T\+A\+T\+I\+C\+\_\+\+I\+R\+\_\+\+F\+U\+N\+C\+T\+OR}{TVM_STATIC_IR_FUNCTOR}}]{\setlength{\rightskip}{0pt plus 5cm}\#define T\+V\+M\+\_\+\+S\+T\+A\+T\+I\+C\+\_\+\+I\+R\+\_\+\+F\+U\+N\+C\+T\+OR(
+\begin{DoxyParamCaption}
+\item[{}]{Cls\+Name, }
+\item[{}]{F\+Field}
+\end{DoxyParamCaption}
+)}\hypertarget{functor_8h_a2a8f992f14c3ef28a35830bb8499d538}{}\label{functor_8h_a2a8f992f14c3ef28a35830bb8499d538}
+{\bfseries Value\+:}
+\begin{DoxyCode}
+\hyperlink{object_8h_a73bf3e57b9d7a6e0dd55d901321d01ed}{TVM\_STR\_CONCAT}(\hyperlink{functor_8h_a0e447ad7c49540ce24c2d6e2d89f4eba}{TVM\_REG\_FUNC\_VAR\_DEF}(ClsName), \_\_COUNTER\_\_)  =      \(\backslash\)
+      ClsName::FField()
+\end{DoxyCode}
+
+
+Useful macro to set Node\+Functor dispatch in a global static field. 
+
+
+\begin{DoxyCode}
+1 // Use NodeFunctor to implement ReprPrinter similar to Visitor Pattern.
+2 // vtable allows easy patch of new Node types, without changing
+3 // interface of ReprPrinter.
+4 
+5 class ReprPrinter \{
+6  public:
+7   std::ostream& stream;
+8   // the dispatch function.
+9   void print(Expr e) \{
+10     const static FType& f = *vtable();
+11     f(e, this);
+12   \}
+13 
+14   using FType = NodeFunctor<void (const ObjectRef&, ReprPrinter* )>;
+15   // function to return global function table
+16   static FType& vtable();
+17 \};
+18 
+19 // in cpp/cc file
+20 ReprPrinter::FType& ReprPrinter::vtable() \{ // NOLINT(*)
+21   static FType inst; return inst;
+22 \}
+23 
+24 TVM\_STATIC\_IR\_FUNCTOR(ReprPrinter, vtable)
+25 .set\_dispatch<Add>([](const ObjectRef& ref, ReprPrinter* p) \{
+26   auto* n = static\_cast<const Add*>(ref.get());
+27   p->print(n->a);
+28   p->stream << '+'
+29   p->print(n->b);
+30 \});
+\end{DoxyCode}
+
+
+
+\begin{DoxyParams}{Parameters}
+{\em Cls\+Name} & The name of the class \\
+\hline
+{\em F\+Field} & The static function that returns a singleton of Node\+Functor. \\
+\hline
+\end{DoxyParams}

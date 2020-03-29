@@ -1,0 +1,266 @@
+\hypertarget{classtvm_1_1relay_1_1ExprFunctor_3_01R_07const_01Expr_01_6n_00_01Args_8_8_8_08_4}{}\section{tvm\+:\+:relay\+:\+:Expr\+Functor$<$ R(const Expr \&n, Args...)$>$ Class Template Reference}
+\label{classtvm_1_1relay_1_1ExprFunctor_3_01R_07const_01Expr_01_6n_00_01Args_8_8_8_08_4}\index{tvm\+::relay\+::\+Expr\+Functor$<$ R(const Expr \&n, Args...)$>$@{tvm\+::relay\+::\+Expr\+Functor$<$ R(const Expr \&n, Args...)$>$}}
+
+
+{\ttfamily \#include $<$expr\+\_\+functor.\+h$>$}
+
+
+
+Collaboration diagram for tvm\+:\+:relay\+:\+:Expr\+Functor$<$ R(const Expr \&n, Args...)$>$\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=234pt]{classtvm_1_1relay_1_1ExprFunctor_3_01R_07const_01Expr_01_6n_00_01Args_8_8_8_08_4__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+using \hyperlink{classtvm_1_1relay_1_1ExprFunctor_3_01R_07const_01Expr_01_6n_00_01Args_8_8_8_08_4_a4558886f7f179396ee11b5fe91927793}{result\+\_\+type} = R
+\begin{DoxyCompactList}\small\item\em the result type of this functor \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual \hyperlink{classtvm_1_1relay_1_1ExprFunctor_3_01R_07const_01Expr_01_6n_00_01Args_8_8_8_08_4_ae79b1dffcf943b65cc439b8a9f4697a2}{$\sim$\+Expr\+Functor} ()
+\begin{DoxyCompactList}\small\item\em virtual destructor \end{DoxyCompactList}\item 
+R \hyperlink{classtvm_1_1relay_1_1ExprFunctor_3_01R_07const_01Expr_01_6n_00_01Args_8_8_8_08_4_a1d1f97a992335d11f080a7c095d60011}{operator()} (const \hyperlink{namespacetvm_1_1relay_a5b84e3790f89bb3fad5c7911eeb99531}{Expr} \&n, Args...\+args)
+\begin{DoxyCompactList}\small\item\em Same as call. \end{DoxyCompactList}\item 
+virtual R \hyperlink{classtvm_1_1relay_1_1ExprFunctor_3_01R_07const_01Expr_01_6n_00_01Args_8_8_8_08_4_aa256ca2ead1de49b1b4b867dde835514}{Visit\+Expr} (const \hyperlink{namespacetvm_1_1relay_a5b84e3790f89bb3fad5c7911eeb99531}{Expr} \&n, Args...\+args)
+\begin{DoxyCompactList}\small\item\em The functor call. \end{DoxyCompactList}\item 
+virtual R \hyperlink{classtvm_1_1relay_1_1ExprFunctor_3_01R_07const_01Expr_01_6n_00_01Args_8_8_8_08_4_a045072329e79fa39647597bf45e064e9}{Visit\+Expr\+\_\+} (const \hyperlink{classtvm_1_1relay_1_1ConstantNode}{Constant\+Node} $\ast$op, Args...\+args)
+\item 
+virtual R \hyperlink{classtvm_1_1relay_1_1ExprFunctor_3_01R_07const_01Expr_01_6n_00_01Args_8_8_8_08_4_a2a377d6f9a5721920cf704b60553e7ea}{Visit\+Expr\+\_\+} (const \hyperlink{classtvm_1_1relay_1_1TupleNode}{Tuple\+Node} $\ast$op, Args...\+args)
+\item 
+virtual R \hyperlink{classtvm_1_1relay_1_1ExprFunctor_3_01R_07const_01Expr_01_6n_00_01Args_8_8_8_08_4_abbc94edb62804de97890effaf22b183a}{Visit\+Expr\+\_\+} (const \hyperlink{classtvm_1_1relay_1_1VarNode}{Var\+Node} $\ast$op, Args...\+args)
+\item 
+virtual R \hyperlink{classtvm_1_1relay_1_1ExprFunctor_3_01R_07const_01Expr_01_6n_00_01Args_8_8_8_08_4_abdf289c25698ddb88156932d6bed6a74}{Visit\+Expr\+\_\+} (const \hyperlink{namespacetvm_1_1relay_afe7144195dbbc914183189444ef6a347}{Global\+Var\+Node} $\ast$op, Args...\+args)
+\item 
+virtual R \hyperlink{classtvm_1_1relay_1_1ExprFunctor_3_01R_07const_01Expr_01_6n_00_01Args_8_8_8_08_4_a09a9c1f906e909919b4cacf4b5659c0c}{Visit\+Expr\+\_\+} (const \hyperlink{classtvm_1_1relay_1_1FunctionNode}{Function\+Node} $\ast$op, Args...\+args)
+\item 
+virtual R \hyperlink{classtvm_1_1relay_1_1ExprFunctor_3_01R_07const_01Expr_01_6n_00_01Args_8_8_8_08_4_a01944342a92438a13418ab39135ef23a}{Visit\+Expr\+\_\+} (const \hyperlink{classtvm_1_1relay_1_1CallNode}{Call\+Node} $\ast$op, Args...\+args)
+\item 
+virtual R \hyperlink{classtvm_1_1relay_1_1ExprFunctor_3_01R_07const_01Expr_01_6n_00_01Args_8_8_8_08_4_a19256b27e03264c09868bd5cdfb93f3f}{Visit\+Expr\+\_\+} (const \hyperlink{classtvm_1_1relay_1_1LetNode}{Let\+Node} $\ast$op, Args...\+args)
+\item 
+virtual R \hyperlink{classtvm_1_1relay_1_1ExprFunctor_3_01R_07const_01Expr_01_6n_00_01Args_8_8_8_08_4_af221c096d7aff8314f914fcb085cf423}{Visit\+Expr\+\_\+} (const \hyperlink{classtvm_1_1relay_1_1IfNode}{If\+Node} $\ast$op, Args...\+args)
+\item 
+virtual R \hyperlink{classtvm_1_1relay_1_1ExprFunctor_3_01R_07const_01Expr_01_6n_00_01Args_8_8_8_08_4_a0e7ea6a2c4ecc8ba4381837e5466e9a1}{Visit\+Expr\+\_\+} (const \hyperlink{namespacetvm_1_1relay_ac9d4f2cf78a48659817a88d890e1d142}{Op\+Node} $\ast$op, Args...\+args)
+\item 
+virtual R \hyperlink{classtvm_1_1relay_1_1ExprFunctor_3_01R_07const_01Expr_01_6n_00_01Args_8_8_8_08_4_a43baf8c1149f7c54d59526aba017f658}{Visit\+Expr\+\_\+} (const \hyperlink{classtvm_1_1relay_1_1TupleGetItemNode}{Tuple\+Get\+Item\+Node} $\ast$op, Args...\+args)
+\item 
+virtual R \hyperlink{classtvm_1_1relay_1_1ExprFunctor_3_01R_07const_01Expr_01_6n_00_01Args_8_8_8_08_4_ac1b7b83be73f45d30d7d20e76212a944}{Visit\+Expr\+\_\+} (const \hyperlink{classtvm_1_1relay_1_1RefCreateNode}{Ref\+Create\+Node} $\ast$op, Args...\+args)
+\item 
+virtual R \hyperlink{classtvm_1_1relay_1_1ExprFunctor_3_01R_07const_01Expr_01_6n_00_01Args_8_8_8_08_4_a36a41b449a6c40291527bb51797b71db}{Visit\+Expr\+\_\+} (const \hyperlink{classtvm_1_1relay_1_1RefReadNode}{Ref\+Read\+Node} $\ast$op, Args...\+args)
+\item 
+virtual R \hyperlink{classtvm_1_1relay_1_1ExprFunctor_3_01R_07const_01Expr_01_6n_00_01Args_8_8_8_08_4_a9f5d2e1833e515dce36d29ef2781cc1f}{Visit\+Expr\+\_\+} (const \hyperlink{classtvm_1_1relay_1_1RefWriteNode}{Ref\+Write\+Node} $\ast$op, Args...\+args)
+\item 
+virtual R \hyperlink{classtvm_1_1relay_1_1ExprFunctor_3_01R_07const_01Expr_01_6n_00_01Args_8_8_8_08_4_a0ee67c9fda21cc04e2b47be9846acb29}{Visit\+Expr\+\_\+} (const \hyperlink{namespacetvm_1_1relay_a6b95f70a9b44cc1c96593201594d1345}{Constructor\+Node} $\ast$op, Args...\+args)
+\item 
+virtual R \hyperlink{classtvm_1_1relay_1_1ExprFunctor_3_01R_07const_01Expr_01_6n_00_01Args_8_8_8_08_4_ae250830a2b91d5763c7c14ce65047bbe}{Visit\+Expr\+\_\+} (const \hyperlink{classtvm_1_1relay_1_1MatchNode}{Match\+Node} $\ast$op, Args...\+args)
+\item 
+virtual R \hyperlink{classtvm_1_1relay_1_1ExprFunctor_3_01R_07const_01Expr_01_6n_00_01Args_8_8_8_08_4_ab35a37c57578e32a8c873cdfe9e31a0f}{Visit\+Expr\+Default\+\_\+} (const Object $\ast$op, Args...)
+\end{DoxyCompactItemize}
+
+
+\subsection{Member Typedef Documentation}
+\index{tvm\+::relay\+::\+Expr\+Functor$<$ R(const Expr \&n, Args...)$>$@{tvm\+::relay\+::\+Expr\+Functor$<$ R(const Expr \&n, Args...)$>$}!result\+\_\+type@{result\+\_\+type}}
+\index{result\+\_\+type@{result\+\_\+type}!tvm\+::relay\+::\+Expr\+Functor$<$ R(const Expr \&n, Args...)$>$@{tvm\+::relay\+::\+Expr\+Functor$<$ R(const Expr \&n, Args...)$>$}}
+\subsubsection[{\texorpdfstring{result\+\_\+type}{result_type}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename R , typename... Args$>$ using {\bf tvm\+::relay\+::\+Expr\+Functor}$<$ R(const {\bf Expr} \&n, Args...)$>$\+::{\bf result\+\_\+type} =  R}\hypertarget{classtvm_1_1relay_1_1ExprFunctor_3_01R_07const_01Expr_01_6n_00_01Args_8_8_8_08_4_a4558886f7f179396ee11b5fe91927793}{}\label{classtvm_1_1relay_1_1ExprFunctor_3_01R_07const_01Expr_01_6n_00_01Args_8_8_8_08_4_a4558886f7f179396ee11b5fe91927793}
+
+
+the result type of this functor 
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\index{tvm\+::relay\+::\+Expr\+Functor$<$ R(const Expr \&n, Args...)$>$@{tvm\+::relay\+::\+Expr\+Functor$<$ R(const Expr \&n, Args...)$>$}!````~Expr\+Functor@{$\sim$\+Expr\+Functor}}
+\index{````~Expr\+Functor@{$\sim$\+Expr\+Functor}!tvm\+::relay\+::\+Expr\+Functor$<$ R(const Expr \&n, Args...)$>$@{tvm\+::relay\+::\+Expr\+Functor$<$ R(const Expr \&n, Args...)$>$}}
+\subsubsection[{\texorpdfstring{$\sim$\+Expr\+Functor()}{~ExprFunctor()}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename R , typename... Args$>$ virtual {\bf tvm\+::relay\+::\+Expr\+Functor}$<$ R(const {\bf Expr} \&n, Args...)$>$\+::$\sim${\bf Expr\+Functor} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}\hypertarget{classtvm_1_1relay_1_1ExprFunctor_3_01R_07const_01Expr_01_6n_00_01Args_8_8_8_08_4_ae79b1dffcf943b65cc439b8a9f4697a2}{}\label{classtvm_1_1relay_1_1ExprFunctor_3_01R_07const_01Expr_01_6n_00_01Args_8_8_8_08_4_ae79b1dffcf943b65cc439b8a9f4697a2}
+
+
+virtual destructor 
+
+
+
+\subsection{Member Function Documentation}
+\index{tvm\+::relay\+::\+Expr\+Functor$<$ R(const Expr \&n, Args...)$>$@{tvm\+::relay\+::\+Expr\+Functor$<$ R(const Expr \&n, Args...)$>$}!operator()@{operator()}}
+\index{operator()@{operator()}!tvm\+::relay\+::\+Expr\+Functor$<$ R(const Expr \&n, Args...)$>$@{tvm\+::relay\+::\+Expr\+Functor$<$ R(const Expr \&n, Args...)$>$}}
+\subsubsection[{\texorpdfstring{operator()(const Expr \&n, Args...\+args)}{operator()(const Expr &n, Args...args)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename R , typename... Args$>$ R {\bf tvm\+::relay\+::\+Expr\+Functor}$<$ R(const {\bf Expr} \&n, Args...)$>$\+::operator() (
+\begin{DoxyParamCaption}
+\item[{const {\bf Expr} \&}]{n, }
+\item[{Args...}]{args}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classtvm_1_1relay_1_1ExprFunctor_3_01R_07const_01Expr_01_6n_00_01Args_8_8_8_08_4_a1d1f97a992335d11f080a7c095d60011}{}\label{classtvm_1_1relay_1_1ExprFunctor_3_01R_07const_01Expr_01_6n_00_01Args_8_8_8_08_4_a1d1f97a992335d11f080a7c095d60011}
+
+
+Same as call. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em n} & The expression node. \\
+\hline
+{\em args} & Additional arguments. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The result of the call 
+\end{DoxyReturn}
+\index{tvm\+::relay\+::\+Expr\+Functor$<$ R(const Expr \&n, Args...)$>$@{tvm\+::relay\+::\+Expr\+Functor$<$ R(const Expr \&n, Args...)$>$}!Visit\+Expr@{Visit\+Expr}}
+\index{Visit\+Expr@{Visit\+Expr}!tvm\+::relay\+::\+Expr\+Functor$<$ R(const Expr \&n, Args...)$>$@{tvm\+::relay\+::\+Expr\+Functor$<$ R(const Expr \&n, Args...)$>$}}
+\subsubsection[{\texorpdfstring{Visit\+Expr(const Expr \&n, Args...\+args)}{VisitExpr(const Expr &n, Args...args)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename R , typename... Args$>$ virtual R {\bf tvm\+::relay\+::\+Expr\+Functor}$<$ R(const {\bf Expr} \&n, Args...)$>$\+::Visit\+Expr (
+\begin{DoxyParamCaption}
+\item[{const {\bf Expr} \&}]{n, }
+\item[{Args...}]{args}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}\hypertarget{classtvm_1_1relay_1_1ExprFunctor_3_01R_07const_01Expr_01_6n_00_01Args_8_8_8_08_4_aa256ca2ead1de49b1b4b867dde835514}{}\label{classtvm_1_1relay_1_1ExprFunctor_3_01R_07const_01Expr_01_6n_00_01Args_8_8_8_08_4_aa256ca2ead1de49b1b4b867dde835514}
+
+
+The functor call. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em n} & The expression node. \\
+\hline
+{\em args} & Additional arguments. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The result of the call 
+\end{DoxyReturn}
+\index{tvm\+::relay\+::\+Expr\+Functor$<$ R(const Expr \&n, Args...)$>$@{tvm\+::relay\+::\+Expr\+Functor$<$ R(const Expr \&n, Args...)$>$}!Visit\+Expr\+\_\+@{Visit\+Expr\+\_\+}}
+\index{Visit\+Expr\+\_\+@{Visit\+Expr\+\_\+}!tvm\+::relay\+::\+Expr\+Functor$<$ R(const Expr \&n, Args...)$>$@{tvm\+::relay\+::\+Expr\+Functor$<$ R(const Expr \&n, Args...)$>$}}
+\subsubsection[{\texorpdfstring{Visit\+Expr\+\_\+(const Constant\+Node $\ast$op, Args...\+args)}{VisitExpr_(const ConstantNode *op, Args...args)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename R , typename... Args$>$ virtual R {\bf tvm\+::relay\+::\+Expr\+Functor}$<$ R(const {\bf Expr} \&n, Args...)$>$\+::Visit\+Expr\+\_\+ (
+\begin{DoxyParamCaption}
+\item[{const {\bf Constant\+Node} $\ast$}]{op, }
+\item[{Args...}]{args}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}\hypertarget{classtvm_1_1relay_1_1ExprFunctor_3_01R_07const_01Expr_01_6n_00_01Args_8_8_8_08_4_a045072329e79fa39647597bf45e064e9}{}\label{classtvm_1_1relay_1_1ExprFunctor_3_01R_07const_01Expr_01_6n_00_01Args_8_8_8_08_4_a045072329e79fa39647597bf45e064e9}
+\index{tvm\+::relay\+::\+Expr\+Functor$<$ R(const Expr \&n, Args...)$>$@{tvm\+::relay\+::\+Expr\+Functor$<$ R(const Expr \&n, Args...)$>$}!Visit\+Expr\+\_\+@{Visit\+Expr\+\_\+}}
+\index{Visit\+Expr\+\_\+@{Visit\+Expr\+\_\+}!tvm\+::relay\+::\+Expr\+Functor$<$ R(const Expr \&n, Args...)$>$@{tvm\+::relay\+::\+Expr\+Functor$<$ R(const Expr \&n, Args...)$>$}}
+\subsubsection[{\texorpdfstring{Visit\+Expr\+\_\+(const Tuple\+Node $\ast$op, Args...\+args)}{VisitExpr_(const TupleNode *op, Args...args)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename R , typename... Args$>$ virtual R {\bf tvm\+::relay\+::\+Expr\+Functor}$<$ R(const {\bf Expr} \&n, Args...)$>$\+::Visit\+Expr\+\_\+ (
+\begin{DoxyParamCaption}
+\item[{const {\bf Tuple\+Node} $\ast$}]{op, }
+\item[{Args...}]{args}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}\hypertarget{classtvm_1_1relay_1_1ExprFunctor_3_01R_07const_01Expr_01_6n_00_01Args_8_8_8_08_4_a2a377d6f9a5721920cf704b60553e7ea}{}\label{classtvm_1_1relay_1_1ExprFunctor_3_01R_07const_01Expr_01_6n_00_01Args_8_8_8_08_4_a2a377d6f9a5721920cf704b60553e7ea}
+\index{tvm\+::relay\+::\+Expr\+Functor$<$ R(const Expr \&n, Args...)$>$@{tvm\+::relay\+::\+Expr\+Functor$<$ R(const Expr \&n, Args...)$>$}!Visit\+Expr\+\_\+@{Visit\+Expr\+\_\+}}
+\index{Visit\+Expr\+\_\+@{Visit\+Expr\+\_\+}!tvm\+::relay\+::\+Expr\+Functor$<$ R(const Expr \&n, Args...)$>$@{tvm\+::relay\+::\+Expr\+Functor$<$ R(const Expr \&n, Args...)$>$}}
+\subsubsection[{\texorpdfstring{Visit\+Expr\+\_\+(const Var\+Node $\ast$op, Args...\+args)}{VisitExpr_(const VarNode *op, Args...args)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename R , typename... Args$>$ virtual R {\bf tvm\+::relay\+::\+Expr\+Functor}$<$ R(const {\bf Expr} \&n, Args...)$>$\+::Visit\+Expr\+\_\+ (
+\begin{DoxyParamCaption}
+\item[{const {\bf Var\+Node} $\ast$}]{op, }
+\item[{Args...}]{args}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}\hypertarget{classtvm_1_1relay_1_1ExprFunctor_3_01R_07const_01Expr_01_6n_00_01Args_8_8_8_08_4_abbc94edb62804de97890effaf22b183a}{}\label{classtvm_1_1relay_1_1ExprFunctor_3_01R_07const_01Expr_01_6n_00_01Args_8_8_8_08_4_abbc94edb62804de97890effaf22b183a}
+\index{tvm\+::relay\+::\+Expr\+Functor$<$ R(const Expr \&n, Args...)$>$@{tvm\+::relay\+::\+Expr\+Functor$<$ R(const Expr \&n, Args...)$>$}!Visit\+Expr\+\_\+@{Visit\+Expr\+\_\+}}
+\index{Visit\+Expr\+\_\+@{Visit\+Expr\+\_\+}!tvm\+::relay\+::\+Expr\+Functor$<$ R(const Expr \&n, Args...)$>$@{tvm\+::relay\+::\+Expr\+Functor$<$ R(const Expr \&n, Args...)$>$}}
+\subsubsection[{\texorpdfstring{Visit\+Expr\+\_\+(const Global\+Var\+Node $\ast$op, Args...\+args)}{VisitExpr_(const GlobalVarNode *op, Args...args)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename R , typename... Args$>$ virtual R {\bf tvm\+::relay\+::\+Expr\+Functor}$<$ R(const {\bf Expr} \&n, Args...)$>$\+::Visit\+Expr\+\_\+ (
+\begin{DoxyParamCaption}
+\item[{const {\bf Global\+Var\+Node} $\ast$}]{op, }
+\item[{Args...}]{args}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}\hypertarget{classtvm_1_1relay_1_1ExprFunctor_3_01R_07const_01Expr_01_6n_00_01Args_8_8_8_08_4_abdf289c25698ddb88156932d6bed6a74}{}\label{classtvm_1_1relay_1_1ExprFunctor_3_01R_07const_01Expr_01_6n_00_01Args_8_8_8_08_4_abdf289c25698ddb88156932d6bed6a74}
+\index{tvm\+::relay\+::\+Expr\+Functor$<$ R(const Expr \&n, Args...)$>$@{tvm\+::relay\+::\+Expr\+Functor$<$ R(const Expr \&n, Args...)$>$}!Visit\+Expr\+\_\+@{Visit\+Expr\+\_\+}}
+\index{Visit\+Expr\+\_\+@{Visit\+Expr\+\_\+}!tvm\+::relay\+::\+Expr\+Functor$<$ R(const Expr \&n, Args...)$>$@{tvm\+::relay\+::\+Expr\+Functor$<$ R(const Expr \&n, Args...)$>$}}
+\subsubsection[{\texorpdfstring{Visit\+Expr\+\_\+(const Function\+Node $\ast$op, Args...\+args)}{VisitExpr_(const FunctionNode *op, Args...args)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename R , typename... Args$>$ virtual R {\bf tvm\+::relay\+::\+Expr\+Functor}$<$ R(const {\bf Expr} \&n, Args...)$>$\+::Visit\+Expr\+\_\+ (
+\begin{DoxyParamCaption}
+\item[{const {\bf Function\+Node} $\ast$}]{op, }
+\item[{Args...}]{args}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}\hypertarget{classtvm_1_1relay_1_1ExprFunctor_3_01R_07const_01Expr_01_6n_00_01Args_8_8_8_08_4_a09a9c1f906e909919b4cacf4b5659c0c}{}\label{classtvm_1_1relay_1_1ExprFunctor_3_01R_07const_01Expr_01_6n_00_01Args_8_8_8_08_4_a09a9c1f906e909919b4cacf4b5659c0c}
+\index{tvm\+::relay\+::\+Expr\+Functor$<$ R(const Expr \&n, Args...)$>$@{tvm\+::relay\+::\+Expr\+Functor$<$ R(const Expr \&n, Args...)$>$}!Visit\+Expr\+\_\+@{Visit\+Expr\+\_\+}}
+\index{Visit\+Expr\+\_\+@{Visit\+Expr\+\_\+}!tvm\+::relay\+::\+Expr\+Functor$<$ R(const Expr \&n, Args...)$>$@{tvm\+::relay\+::\+Expr\+Functor$<$ R(const Expr \&n, Args...)$>$}}
+\subsubsection[{\texorpdfstring{Visit\+Expr\+\_\+(const Call\+Node $\ast$op, Args...\+args)}{VisitExpr_(const CallNode *op, Args...args)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename R , typename... Args$>$ virtual R {\bf tvm\+::relay\+::\+Expr\+Functor}$<$ R(const {\bf Expr} \&n, Args...)$>$\+::Visit\+Expr\+\_\+ (
+\begin{DoxyParamCaption}
+\item[{const {\bf Call\+Node} $\ast$}]{op, }
+\item[{Args...}]{args}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}\hypertarget{classtvm_1_1relay_1_1ExprFunctor_3_01R_07const_01Expr_01_6n_00_01Args_8_8_8_08_4_a01944342a92438a13418ab39135ef23a}{}\label{classtvm_1_1relay_1_1ExprFunctor_3_01R_07const_01Expr_01_6n_00_01Args_8_8_8_08_4_a01944342a92438a13418ab39135ef23a}
+\index{tvm\+::relay\+::\+Expr\+Functor$<$ R(const Expr \&n, Args...)$>$@{tvm\+::relay\+::\+Expr\+Functor$<$ R(const Expr \&n, Args...)$>$}!Visit\+Expr\+\_\+@{Visit\+Expr\+\_\+}}
+\index{Visit\+Expr\+\_\+@{Visit\+Expr\+\_\+}!tvm\+::relay\+::\+Expr\+Functor$<$ R(const Expr \&n, Args...)$>$@{tvm\+::relay\+::\+Expr\+Functor$<$ R(const Expr \&n, Args...)$>$}}
+\subsubsection[{\texorpdfstring{Visit\+Expr\+\_\+(const Let\+Node $\ast$op, Args...\+args)}{VisitExpr_(const LetNode *op, Args...args)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename R , typename... Args$>$ virtual R {\bf tvm\+::relay\+::\+Expr\+Functor}$<$ R(const {\bf Expr} \&n, Args...)$>$\+::Visit\+Expr\+\_\+ (
+\begin{DoxyParamCaption}
+\item[{const {\bf Let\+Node} $\ast$}]{op, }
+\item[{Args...}]{args}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}\hypertarget{classtvm_1_1relay_1_1ExprFunctor_3_01R_07const_01Expr_01_6n_00_01Args_8_8_8_08_4_a19256b27e03264c09868bd5cdfb93f3f}{}\label{classtvm_1_1relay_1_1ExprFunctor_3_01R_07const_01Expr_01_6n_00_01Args_8_8_8_08_4_a19256b27e03264c09868bd5cdfb93f3f}
+\index{tvm\+::relay\+::\+Expr\+Functor$<$ R(const Expr \&n, Args...)$>$@{tvm\+::relay\+::\+Expr\+Functor$<$ R(const Expr \&n, Args...)$>$}!Visit\+Expr\+\_\+@{Visit\+Expr\+\_\+}}
+\index{Visit\+Expr\+\_\+@{Visit\+Expr\+\_\+}!tvm\+::relay\+::\+Expr\+Functor$<$ R(const Expr \&n, Args...)$>$@{tvm\+::relay\+::\+Expr\+Functor$<$ R(const Expr \&n, Args...)$>$}}
+\subsubsection[{\texorpdfstring{Visit\+Expr\+\_\+(const If\+Node $\ast$op, Args...\+args)}{VisitExpr_(const IfNode *op, Args...args)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename R , typename... Args$>$ virtual R {\bf tvm\+::relay\+::\+Expr\+Functor}$<$ R(const {\bf Expr} \&n, Args...)$>$\+::Visit\+Expr\+\_\+ (
+\begin{DoxyParamCaption}
+\item[{const {\bf If\+Node} $\ast$}]{op, }
+\item[{Args...}]{args}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}\hypertarget{classtvm_1_1relay_1_1ExprFunctor_3_01R_07const_01Expr_01_6n_00_01Args_8_8_8_08_4_af221c096d7aff8314f914fcb085cf423}{}\label{classtvm_1_1relay_1_1ExprFunctor_3_01R_07const_01Expr_01_6n_00_01Args_8_8_8_08_4_af221c096d7aff8314f914fcb085cf423}
+\index{tvm\+::relay\+::\+Expr\+Functor$<$ R(const Expr \&n, Args...)$>$@{tvm\+::relay\+::\+Expr\+Functor$<$ R(const Expr \&n, Args...)$>$}!Visit\+Expr\+\_\+@{Visit\+Expr\+\_\+}}
+\index{Visit\+Expr\+\_\+@{Visit\+Expr\+\_\+}!tvm\+::relay\+::\+Expr\+Functor$<$ R(const Expr \&n, Args...)$>$@{tvm\+::relay\+::\+Expr\+Functor$<$ R(const Expr \&n, Args...)$>$}}
+\subsubsection[{\texorpdfstring{Visit\+Expr\+\_\+(const Op\+Node $\ast$op, Args...\+args)}{VisitExpr_(const OpNode *op, Args...args)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename R , typename... Args$>$ virtual R {\bf tvm\+::relay\+::\+Expr\+Functor}$<$ R(const {\bf Expr} \&n, Args...)$>$\+::Visit\+Expr\+\_\+ (
+\begin{DoxyParamCaption}
+\item[{const {\bf Op\+Node} $\ast$}]{op, }
+\item[{Args...}]{args}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}\hypertarget{classtvm_1_1relay_1_1ExprFunctor_3_01R_07const_01Expr_01_6n_00_01Args_8_8_8_08_4_a0e7ea6a2c4ecc8ba4381837e5466e9a1}{}\label{classtvm_1_1relay_1_1ExprFunctor_3_01R_07const_01Expr_01_6n_00_01Args_8_8_8_08_4_a0e7ea6a2c4ecc8ba4381837e5466e9a1}
+\index{tvm\+::relay\+::\+Expr\+Functor$<$ R(const Expr \&n, Args...)$>$@{tvm\+::relay\+::\+Expr\+Functor$<$ R(const Expr \&n, Args...)$>$}!Visit\+Expr\+\_\+@{Visit\+Expr\+\_\+}}
+\index{Visit\+Expr\+\_\+@{Visit\+Expr\+\_\+}!tvm\+::relay\+::\+Expr\+Functor$<$ R(const Expr \&n, Args...)$>$@{tvm\+::relay\+::\+Expr\+Functor$<$ R(const Expr \&n, Args...)$>$}}
+\subsubsection[{\texorpdfstring{Visit\+Expr\+\_\+(const Tuple\+Get\+Item\+Node $\ast$op, Args...\+args)}{VisitExpr_(const TupleGetItemNode *op, Args...args)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename R , typename... Args$>$ virtual R {\bf tvm\+::relay\+::\+Expr\+Functor}$<$ R(const {\bf Expr} \&n, Args...)$>$\+::Visit\+Expr\+\_\+ (
+\begin{DoxyParamCaption}
+\item[{const {\bf Tuple\+Get\+Item\+Node} $\ast$}]{op, }
+\item[{Args...}]{args}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}\hypertarget{classtvm_1_1relay_1_1ExprFunctor_3_01R_07const_01Expr_01_6n_00_01Args_8_8_8_08_4_a43baf8c1149f7c54d59526aba017f658}{}\label{classtvm_1_1relay_1_1ExprFunctor_3_01R_07const_01Expr_01_6n_00_01Args_8_8_8_08_4_a43baf8c1149f7c54d59526aba017f658}
+\index{tvm\+::relay\+::\+Expr\+Functor$<$ R(const Expr \&n, Args...)$>$@{tvm\+::relay\+::\+Expr\+Functor$<$ R(const Expr \&n, Args...)$>$}!Visit\+Expr\+\_\+@{Visit\+Expr\+\_\+}}
+\index{Visit\+Expr\+\_\+@{Visit\+Expr\+\_\+}!tvm\+::relay\+::\+Expr\+Functor$<$ R(const Expr \&n, Args...)$>$@{tvm\+::relay\+::\+Expr\+Functor$<$ R(const Expr \&n, Args...)$>$}}
+\subsubsection[{\texorpdfstring{Visit\+Expr\+\_\+(const Ref\+Create\+Node $\ast$op, Args...\+args)}{VisitExpr_(const RefCreateNode *op, Args...args)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename R , typename... Args$>$ virtual R {\bf tvm\+::relay\+::\+Expr\+Functor}$<$ R(const {\bf Expr} \&n, Args...)$>$\+::Visit\+Expr\+\_\+ (
+\begin{DoxyParamCaption}
+\item[{const {\bf Ref\+Create\+Node} $\ast$}]{op, }
+\item[{Args...}]{args}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}\hypertarget{classtvm_1_1relay_1_1ExprFunctor_3_01R_07const_01Expr_01_6n_00_01Args_8_8_8_08_4_ac1b7b83be73f45d30d7d20e76212a944}{}\label{classtvm_1_1relay_1_1ExprFunctor_3_01R_07const_01Expr_01_6n_00_01Args_8_8_8_08_4_ac1b7b83be73f45d30d7d20e76212a944}
+\index{tvm\+::relay\+::\+Expr\+Functor$<$ R(const Expr \&n, Args...)$>$@{tvm\+::relay\+::\+Expr\+Functor$<$ R(const Expr \&n, Args...)$>$}!Visit\+Expr\+\_\+@{Visit\+Expr\+\_\+}}
+\index{Visit\+Expr\+\_\+@{Visit\+Expr\+\_\+}!tvm\+::relay\+::\+Expr\+Functor$<$ R(const Expr \&n, Args...)$>$@{tvm\+::relay\+::\+Expr\+Functor$<$ R(const Expr \&n, Args...)$>$}}
+\subsubsection[{\texorpdfstring{Visit\+Expr\+\_\+(const Ref\+Read\+Node $\ast$op, Args...\+args)}{VisitExpr_(const RefReadNode *op, Args...args)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename R , typename... Args$>$ virtual R {\bf tvm\+::relay\+::\+Expr\+Functor}$<$ R(const {\bf Expr} \&n, Args...)$>$\+::Visit\+Expr\+\_\+ (
+\begin{DoxyParamCaption}
+\item[{const {\bf Ref\+Read\+Node} $\ast$}]{op, }
+\item[{Args...}]{args}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}\hypertarget{classtvm_1_1relay_1_1ExprFunctor_3_01R_07const_01Expr_01_6n_00_01Args_8_8_8_08_4_a36a41b449a6c40291527bb51797b71db}{}\label{classtvm_1_1relay_1_1ExprFunctor_3_01R_07const_01Expr_01_6n_00_01Args_8_8_8_08_4_a36a41b449a6c40291527bb51797b71db}
+\index{tvm\+::relay\+::\+Expr\+Functor$<$ R(const Expr \&n, Args...)$>$@{tvm\+::relay\+::\+Expr\+Functor$<$ R(const Expr \&n, Args...)$>$}!Visit\+Expr\+\_\+@{Visit\+Expr\+\_\+}}
+\index{Visit\+Expr\+\_\+@{Visit\+Expr\+\_\+}!tvm\+::relay\+::\+Expr\+Functor$<$ R(const Expr \&n, Args...)$>$@{tvm\+::relay\+::\+Expr\+Functor$<$ R(const Expr \&n, Args...)$>$}}
+\subsubsection[{\texorpdfstring{Visit\+Expr\+\_\+(const Ref\+Write\+Node $\ast$op, Args...\+args)}{VisitExpr_(const RefWriteNode *op, Args...args)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename R , typename... Args$>$ virtual R {\bf tvm\+::relay\+::\+Expr\+Functor}$<$ R(const {\bf Expr} \&n, Args...)$>$\+::Visit\+Expr\+\_\+ (
+\begin{DoxyParamCaption}
+\item[{const {\bf Ref\+Write\+Node} $\ast$}]{op, }
+\item[{Args...}]{args}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}\hypertarget{classtvm_1_1relay_1_1ExprFunctor_3_01R_07const_01Expr_01_6n_00_01Args_8_8_8_08_4_a9f5d2e1833e515dce36d29ef2781cc1f}{}\label{classtvm_1_1relay_1_1ExprFunctor_3_01R_07const_01Expr_01_6n_00_01Args_8_8_8_08_4_a9f5d2e1833e515dce36d29ef2781cc1f}
+\index{tvm\+::relay\+::\+Expr\+Functor$<$ R(const Expr \&n, Args...)$>$@{tvm\+::relay\+::\+Expr\+Functor$<$ R(const Expr \&n, Args...)$>$}!Visit\+Expr\+\_\+@{Visit\+Expr\+\_\+}}
+\index{Visit\+Expr\+\_\+@{Visit\+Expr\+\_\+}!tvm\+::relay\+::\+Expr\+Functor$<$ R(const Expr \&n, Args...)$>$@{tvm\+::relay\+::\+Expr\+Functor$<$ R(const Expr \&n, Args...)$>$}}
+\subsubsection[{\texorpdfstring{Visit\+Expr\+\_\+(const Constructor\+Node $\ast$op, Args...\+args)}{VisitExpr_(const ConstructorNode *op, Args...args)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename R , typename... Args$>$ virtual R {\bf tvm\+::relay\+::\+Expr\+Functor}$<$ R(const {\bf Expr} \&n, Args...)$>$\+::Visit\+Expr\+\_\+ (
+\begin{DoxyParamCaption}
+\item[{const {\bf Constructor\+Node} $\ast$}]{op, }
+\item[{Args...}]{args}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}\hypertarget{classtvm_1_1relay_1_1ExprFunctor_3_01R_07const_01Expr_01_6n_00_01Args_8_8_8_08_4_a0ee67c9fda21cc04e2b47be9846acb29}{}\label{classtvm_1_1relay_1_1ExprFunctor_3_01R_07const_01Expr_01_6n_00_01Args_8_8_8_08_4_a0ee67c9fda21cc04e2b47be9846acb29}
+\index{tvm\+::relay\+::\+Expr\+Functor$<$ R(const Expr \&n, Args...)$>$@{tvm\+::relay\+::\+Expr\+Functor$<$ R(const Expr \&n, Args...)$>$}!Visit\+Expr\+\_\+@{Visit\+Expr\+\_\+}}
+\index{Visit\+Expr\+\_\+@{Visit\+Expr\+\_\+}!tvm\+::relay\+::\+Expr\+Functor$<$ R(const Expr \&n, Args...)$>$@{tvm\+::relay\+::\+Expr\+Functor$<$ R(const Expr \&n, Args...)$>$}}
+\subsubsection[{\texorpdfstring{Visit\+Expr\+\_\+(const Match\+Node $\ast$op, Args...\+args)}{VisitExpr_(const MatchNode *op, Args...args)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename R , typename... Args$>$ virtual R {\bf tvm\+::relay\+::\+Expr\+Functor}$<$ R(const {\bf Expr} \&n, Args...)$>$\+::Visit\+Expr\+\_\+ (
+\begin{DoxyParamCaption}
+\item[{const {\bf Match\+Node} $\ast$}]{op, }
+\item[{Args...}]{args}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}\hypertarget{classtvm_1_1relay_1_1ExprFunctor_3_01R_07const_01Expr_01_6n_00_01Args_8_8_8_08_4_ae250830a2b91d5763c7c14ce65047bbe}{}\label{classtvm_1_1relay_1_1ExprFunctor_3_01R_07const_01Expr_01_6n_00_01Args_8_8_8_08_4_ae250830a2b91d5763c7c14ce65047bbe}
+\index{tvm\+::relay\+::\+Expr\+Functor$<$ R(const Expr \&n, Args...)$>$@{tvm\+::relay\+::\+Expr\+Functor$<$ R(const Expr \&n, Args...)$>$}!Visit\+Expr\+Default\+\_\+@{Visit\+Expr\+Default\+\_\+}}
+\index{Visit\+Expr\+Default\+\_\+@{Visit\+Expr\+Default\+\_\+}!tvm\+::relay\+::\+Expr\+Functor$<$ R(const Expr \&n, Args...)$>$@{tvm\+::relay\+::\+Expr\+Functor$<$ R(const Expr \&n, Args...)$>$}}
+\subsubsection[{\texorpdfstring{Visit\+Expr\+Default\+\_\+(const Object $\ast$op, Args...)}{VisitExprDefault_(const Object *op, Args...)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename R , typename... Args$>$ virtual R {\bf tvm\+::relay\+::\+Expr\+Functor}$<$ R(const {\bf Expr} \&n, Args...)$>$\+::Visit\+Expr\+Default\+\_\+ (
+\begin{DoxyParamCaption}
+\item[{const Object $\ast$}]{op, }
+\item[{Args...}]{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}\hypertarget{classtvm_1_1relay_1_1ExprFunctor_3_01R_07const_01Expr_01_6n_00_01Args_8_8_8_08_4_ab35a37c57578e32a8c873cdfe9e31a0f}{}\label{classtvm_1_1relay_1_1ExprFunctor_3_01R_07const_01Expr_01_6n_00_01Args_8_8_8_08_4_ab35a37c57578e32a8c873cdfe9e31a0f}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+include/tvm/relay/\hyperlink{relay_2expr__functor_8h}{expr\+\_\+functor.\+h}\end{DoxyCompactItemize}

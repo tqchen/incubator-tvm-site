@@ -1,0 +1,462 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="device__copy_8h" kind="file" language="C++">
+    <compoundname>device_copy.h</compoundname>
+    <includes refid="ir_2attrs_8h" local="no">tvm/ir/attrs.h</includes>
+    <includes local="no">string</includes>
+    <incdepgraph>
+      <node id="13426">
+        <label>tvm/ir/span.h</label>
+        <link refid="span_8h"/>
+        <childnode refid="13392" relation="include">
+        </childnode>
+        <childnode refid="13402" relation="include">
+        </childnode>
+        <childnode refid="13399" relation="include">
+        </childnode>
+      </node>
+      <node id="13401">
+        <label>atomic</label>
+      </node>
+      <node id="13416">
+        <label>functional</label>
+      </node>
+      <node id="13418">
+        <label>limits</label>
+      </node>
+      <node id="13407">
+        <label>tvm/runtime/module.h</label>
+        <link refid="runtime_2module_8h"/>
+        <childnode refid="13408" relation="include">
+        </childnode>
+        <childnode refid="13394" relation="include">
+        </childnode>
+        <childnode refid="13392" relation="include">
+        </childnode>
+        <childnode refid="13403" relation="include">
+        </childnode>
+        <childnode refid="13409" relation="include">
+        </childnode>
+        <childnode refid="13410" relation="include">
+        </childnode>
+        <childnode refid="13399" relation="include">
+        </childnode>
+        <childnode refid="13411" relation="include">
+        </childnode>
+        <childnode refid="13406" relation="include">
+        </childnode>
+      </node>
+      <node id="13406">
+        <label>tvm/runtime/packed_func.h</label>
+        <link refid="packed__func_8h"/>
+        <childnode refid="13393" relation="include">
+        </childnode>
+        <childnode refid="13394" relation="include">
+        </childnode>
+        <childnode refid="13407" relation="include">
+        </childnode>
+        <childnode refid="13412" relation="include">
+        </childnode>
+        <childnode refid="13415" relation="include">
+        </childnode>
+        <childnode refid="13392" relation="include">
+        </childnode>
+        <childnode refid="13416" relation="include">
+        </childnode>
+        <childnode refid="13417" relation="include">
+        </childnode>
+        <childnode refid="13410" relation="include">
+        </childnode>
+        <childnode refid="13399" relation="include">
+        </childnode>
+        <childnode refid="13418" relation="include">
+        </childnode>
+        <childnode refid="13409" relation="include">
+        </childnode>
+        <childnode refid="13400" relation="include">
+        </childnode>
+        <childnode refid="13398" relation="include">
+        </childnode>
+      </node>
+      <node id="13420">
+        <label>tvm/node/functor.h</label>
+        <link refid="functor_8h"/>
+        <childnode refid="13393" relation="include">
+        </childnode>
+        <childnode refid="13392" relation="include">
+        </childnode>
+        <childnode refid="13410" relation="include">
+        </childnode>
+        <childnode refid="13398" relation="include">
+        </childnode>
+        <childnode refid="13400" relation="include">
+        </childnode>
+      </node>
+      <node id="13392">
+        <label>tvm/runtime/object.h</label>
+        <link refid="object_8h"/>
+        <childnode refid="13393" relation="include">
+        </childnode>
+        <childnode refid="13394" relation="include">
+        </childnode>
+        <childnode refid="13398" relation="include">
+        </childnode>
+        <childnode refid="13399" relation="include">
+        </childnode>
+        <childnode refid="13400" relation="include">
+        </childnode>
+        <childnode refid="13401" relation="include">
+        </childnode>
+      </node>
+      <node id="13396">
+        <label>stdint.h</label>
+      </node>
+      <node id="13412">
+        <label>tvm/runtime/ndarray.h</label>
+        <link refid="ndarray_8h"/>
+        <childnode refid="13394" relation="include">
+        </childnode>
+        <childnode refid="13392" relation="include">
+        </childnode>
+        <childnode refid="13413" relation="include">
+        </childnode>
+        <childnode refid="13401" relation="include">
+        </childnode>
+        <childnode refid="13410" relation="include">
+        </childnode>
+        <childnode refid="13400" relation="include">
+        </childnode>
+      </node>
+      <node id="13423">
+        <label>tvm/node/structural_hash.h</label>
+        <link refid="structural__hash_8h"/>
+        <childnode refid="13415" relation="include">
+        </childnode>
+        <childnode refid="13420" relation="include">
+        </childnode>
+        <childnode refid="13421" relation="include">
+        </childnode>
+        <childnode refid="13399" relation="include">
+        </childnode>
+        <childnode refid="13416" relation="include">
+        </childnode>
+      </node>
+      <node id="13399">
+        <label>string</label>
+      </node>
+      <node id="13390">
+        <label>dmlc/common.h</label>
+      </node>
+      <node id="13424">
+        <label>tvm/node/repr_printer.h</label>
+        <link refid="repr__printer_8h"/>
+        <childnode refid="13420" relation="include">
+        </childnode>
+        <childnode refid="13425" relation="include">
+        </childnode>
+      </node>
+      <node id="13421">
+        <label>tvm/node/container.h</label>
+        <link refid="node_2container_8h"/>
+        <childnode refid="13392" relation="include">
+        </childnode>
+        <childnode refid="13403" relation="include">
+        </childnode>
+        <childnode refid="13406" relation="include">
+        </childnode>
+        <childnode refid="13398" relation="include">
+        </childnode>
+        <childnode refid="13410" relation="include">
+        </childnode>
+        <childnode refid="13422" relation="include">
+        </childnode>
+        <childnode refid="13411" relation="include">
+        </childnode>
+        <childnode refid="13400" relation="include">
+        </childnode>
+        <childnode refid="13399" relation="include">
+        </childnode>
+      </node>
+      <node id="13397">
+        <label>stddef.h</label>
+      </node>
+      <node id="13389">
+        <label>tvm/ir/attrs.h</label>
+        <link refid="ir_2attrs_8h"/>
+        <childnode refid="13390" relation="include">
+        </childnode>
+        <childnode refid="13391" relation="include">
+        </childnode>
+        <childnode refid="13406" relation="include">
+        </childnode>
+        <childnode refid="13411" relation="include">
+        </childnode>
+        <childnode refid="13410" relation="include">
+        </childnode>
+        <childnode refid="13416" relation="include">
+        </childnode>
+        <childnode refid="13398" relation="include">
+        </childnode>
+        <childnode refid="13399" relation="include">
+        </childnode>
+        <childnode refid="13400" relation="include">
+        </childnode>
+      </node>
+      <node id="13391">
+        <label>tvm/ir/expr.h</label>
+        <link refid="ir_2expr_8h"/>
+        <childnode refid="13392" relation="include">
+        </childnode>
+        <childnode refid="13402" relation="include">
+        </childnode>
+        <childnode refid="13421" relation="include">
+        </childnode>
+        <childnode refid="13426" relation="include">
+        </childnode>
+        <childnode refid="13427" relation="include">
+        </childnode>
+        <childnode refid="13399" relation="include">
+        </childnode>
+        <childnode refid="13428" relation="include">
+        </childnode>
+        <childnode refid="13418" relation="include">
+        </childnode>
+        <childnode refid="13398" relation="include">
+        </childnode>
+      </node>
+      <node id="13417">
+        <label>tuple</label>
+      </node>
+      <node id="13393">
+        <label>dmlc/logging.h</label>
+      </node>
+      <node id="13388">
+        <label>include/tvm/relay/attrs/device_copy.h</label>
+        <link refid="device_copy.h"/>
+        <childnode refid="13389" relation="include">
+        </childnode>
+        <childnode refid="13399" relation="include">
+        </childnode>
+      </node>
+      <node id="13410">
+        <label>vector</label>
+      </node>
+      <node id="13419">
+        <label>tvm/node/structural_equal.h</label>
+        <link refid="structural__equal_8h"/>
+        <childnode refid="13415" relation="include">
+        </childnode>
+        <childnode refid="13420" relation="include">
+        </childnode>
+        <childnode refid="13421" relation="include">
+        </childnode>
+        <childnode refid="13399" relation="include">
+        </childnode>
+      </node>
+      <node id="13408">
+        <label>dmlc/io.h</label>
+      </node>
+      <node id="13394">
+        <label>tvm/runtime/c_runtime_api.h</label>
+        <link refid="c__runtime__api_8h"/>
+        <childnode refid="13395" relation="include">
+        </childnode>
+        <childnode refid="13396" relation="include">
+        </childnode>
+        <childnode refid="13397" relation="include">
+        </childnode>
+      </node>
+      <node id="13427">
+        <label>tvm/ir/type.h</label>
+        <link refid="ir_2type_8h"/>
+        <childnode refid="13392" relation="include">
+        </childnode>
+        <childnode refid="13415" relation="include">
+        </childnode>
+        <childnode refid="13402" relation="include">
+        </childnode>
+        <childnode refid="13421" relation="include">
+        </childnode>
+        <childnode refid="13426" relation="include">
+        </childnode>
+        <childnode refid="13399" relation="include">
+        </childnode>
+      </node>
+      <node id="13400">
+        <label>utility</label>
+      </node>
+      <node id="13402">
+        <label>tvm/node/node.h</label>
+        <link refid="node_8h"/>
+        <childnode refid="13394" relation="include">
+        </childnode>
+        <childnode refid="13392" relation="include">
+        </childnode>
+        <childnode refid="13403" relation="include">
+        </childnode>
+        <childnode refid="13405" relation="include">
+        </childnode>
+        <childnode refid="13424" relation="include">
+        </childnode>
+        <childnode refid="13421" relation="include">
+        </childnode>
+        <childnode refid="13419" relation="include">
+        </childnode>
+        <childnode refid="13423" relation="include">
+        </childnode>
+        <childnode refid="13399" relation="include">
+        </childnode>
+        <childnode refid="13410" relation="include">
+        </childnode>
+        <childnode refid="13400" relation="include">
+        </childnode>
+        <childnode refid="13398" relation="include">
+        </childnode>
+      </node>
+      <node id="13414">
+        <label>dmlc/serializer.h</label>
+      </node>
+      <node id="13404">
+        <label>cstdlib</label>
+      </node>
+      <node id="13425">
+        <label>iostream</label>
+      </node>
+      <node id="13413">
+        <label>tvm/runtime/serializer.h</label>
+        <link refid="serializer_8h"/>
+        <childnode refid="13408" relation="include">
+        </childnode>
+        <childnode refid="13414" relation="include">
+        </childnode>
+        <childnode refid="13394" relation="include">
+        </childnode>
+        <childnode refid="13412" relation="include">
+        </childnode>
+      </node>
+      <node id="13411">
+        <label>unordered_map</label>
+      </node>
+      <node id="13405">
+        <label>tvm/node/reflection.h</label>
+        <link refid="reflection_8h"/>
+        <childnode refid="13394" relation="include">
+        </childnode>
+        <childnode refid="13392" relation="include">
+        </childnode>
+        <childnode refid="13403" relation="include">
+        </childnode>
+        <childnode refid="13406" relation="include">
+        </childnode>
+        <childnode refid="13412" relation="include">
+        </childnode>
+        <childnode refid="13415" relation="include">
+        </childnode>
+        <childnode refid="13419" relation="include">
+        </childnode>
+        <childnode refid="13423" relation="include">
+        </childnode>
+        <childnode refid="13410" relation="include">
+        </childnode>
+        <childnode refid="13399" relation="include">
+        </childnode>
+        <childnode refid="13398" relation="include">
+        </childnode>
+      </node>
+      <node id="13403">
+        <label>tvm/runtime/memory.h</label>
+        <link refid="runtime_2memory_8h"/>
+        <childnode refid="13392" relation="include">
+        </childnode>
+        <childnode refid="13404" relation="include">
+        </childnode>
+        <childnode refid="13400" relation="include">
+        </childnode>
+        <childnode refid="13398" relation="include">
+        </childnode>
+      </node>
+      <node id="13415">
+        <label>tvm/runtime/data_type.h</label>
+        <link refid="data__type_8h"/>
+        <childnode refid="13394" relation="include">
+        </childnode>
+        <childnode refid="13393" relation="include">
+        </childnode>
+        <childnode refid="13398" relation="include">
+        </childnode>
+      </node>
+      <node id="13398">
+        <label>type_traits</label>
+      </node>
+      <node id="13428">
+        <label>algorithm</label>
+      </node>
+      <node id="13395">
+        <label>dlpack/dlpack.h</label>
+      </node>
+      <node id="13409">
+        <label>memory</label>
+      </node>
+      <node id="13422">
+        <label>initializer_list</label>
+      </node>
+    </incdepgraph>
+    <innerclass refid="structtvm_1_1relay_1_1DeviceCopyAttrs" prot="public">tvm::relay::DeviceCopyAttrs</innerclass>
+    <innernamespace refid="namespacetvm">tvm</innernamespace>
+    <innernamespace refid="namespacetvm_1_1relay">tvm::relay</innernamespace>
+    <briefdescription>
+<para>Attribute for the device copy operator. </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="2"><highlight class="comment"><sp/>*<sp/>Licensed<sp/>to<sp/>the<sp/>Apache<sp/>Software<sp/>Foundation<sp/>(ASF)<sp/>under<sp/>one</highlight></codeline>
+<codeline lineno="3"><highlight class="comment"><sp/>*<sp/>or<sp/>more<sp/>contributor<sp/>license<sp/>agreements.<sp/><sp/>See<sp/>the<sp/>NOTICE<sp/>file</highlight></codeline>
+<codeline lineno="4"><highlight class="comment"><sp/>*<sp/>distributed<sp/>with<sp/>this<sp/>work<sp/>for<sp/>additional<sp/>information</highlight></codeline>
+<codeline lineno="5"><highlight class="comment"><sp/>*<sp/>regarding<sp/>copyright<sp/>ownership.<sp/><sp/>The<sp/>ASF<sp/>licenses<sp/>this<sp/>file</highlight></codeline>
+<codeline lineno="6"><highlight class="comment"><sp/>*<sp/>to<sp/>you<sp/>under<sp/>the<sp/>Apache<sp/>License,<sp/>Version<sp/>2.0<sp/>(the</highlight></codeline>
+<codeline lineno="7"><highlight class="comment"><sp/>*<sp/>&quot;License&quot;);<sp/>you<sp/>may<sp/>not<sp/>use<sp/>this<sp/>file<sp/>except<sp/>in<sp/>compliance</highlight></codeline>
+<codeline lineno="8"><highlight class="comment"><sp/>*<sp/>with<sp/>the<sp/>License.<sp/><sp/>You<sp/>may<sp/>obtain<sp/>a<sp/>copy<sp/>of<sp/>the<sp/>License<sp/>at</highlight></codeline>
+<codeline lineno="9"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="10"><highlight class="comment"><sp/>*<sp/><sp/><sp/>http://www.apache.org/licenses/LICENSE-2.0</highlight></codeline>
+<codeline lineno="11"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="12"><highlight class="comment"><sp/>*<sp/>Unless<sp/>required<sp/>by<sp/>applicable<sp/>law<sp/>or<sp/>agreed<sp/>to<sp/>in<sp/>writing,</highlight></codeline>
+<codeline lineno="13"><highlight class="comment"><sp/>*<sp/>software<sp/>distributed<sp/>under<sp/>the<sp/>License<sp/>is<sp/>distributed<sp/>on<sp/>an</highlight></codeline>
+<codeline lineno="14"><highlight class="comment"><sp/>*<sp/>&quot;AS<sp/>IS&quot;<sp/>BASIS,<sp/>WITHOUT<sp/>WARRANTIES<sp/>OR<sp/>CONDITIONS<sp/>OF<sp/>ANY</highlight></codeline>
+<codeline lineno="15"><highlight class="comment"><sp/>*<sp/>KIND,<sp/>either<sp/>express<sp/>or<sp/>implied.<sp/><sp/>See<sp/>the<sp/>License<sp/>for<sp/>the</highlight></codeline>
+<codeline lineno="16"><highlight class="comment"><sp/>*<sp/>specific<sp/>language<sp/>governing<sp/>permissions<sp/>and<sp/>limitations</highlight></codeline>
+<codeline lineno="17"><highlight class="comment"><sp/>*<sp/>under<sp/>the<sp/>License.</highlight></codeline>
+<codeline lineno="18"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight></codeline>
+<codeline lineno="24"><highlight class="preprocessor">#ifndef<sp/>TVM_RELAY_ATTRS_DEVICE_COPY_H_</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>TVM_RELAY_ATTRS_DEVICE_COPY_H_</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;<ref refid="ir_2attrs_8h" kindref="compound">tvm/ir/attrs.h</ref>&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="28"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;string&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="29"><highlight class="normal"></highlight></codeline>
+<codeline lineno="30"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal"><ref refid="namespacetvm" kindref="compound">tvm</ref><sp/>{</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal">relay<sp/>{</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"></highlight></codeline>
+<codeline lineno="36" refid="structtvm_1_1relay_1_1DeviceCopyAttrs" refkind="compound"><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structtvm_1_1relay_1_1DeviceCopyAttrs" kindref="compound">DeviceCopyAttrs</ref><sp/>:<sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/><ref refid="classtvm_1_1AttrsNode" kindref="compound">tvm::AttrsNode</ref>&lt;DeviceCopyAttrs&gt;<sp/>{</highlight></codeline>
+<codeline lineno="37" refid="structtvm_1_1relay_1_1DeviceCopyAttrs_1a1d264207360a6f321e1704dfa9d4038a" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="structtvm_1_1relay_1_1DeviceCopyAttrs_1a1d264207360a6f321e1704dfa9d4038a" kindref="member">dst_dev_type</ref>;</highlight></codeline>
+<codeline lineno="38" refid="structtvm_1_1relay_1_1DeviceCopyAttrs_1ab8635461aed46b0f43db3b9c26c45ef0" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="structtvm_1_1relay_1_1DeviceCopyAttrs_1ab8635461aed46b0f43db3b9c26c45ef0" kindref="member">src_dev_type</ref>;</highlight></codeline>
+<codeline lineno="39"><highlight class="normal"></highlight></codeline>
+<codeline lineno="40" refid="structtvm_1_1relay_1_1DeviceCopyAttrs_1a9766873de6db9519897bdd724e997527" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="structtvm_1_1relay_1_1DeviceCopyAttrs_1a9766873de6db9519897bdd724e997527" kindref="member">TVM_DECLARE_ATTRS</ref>(<ref refid="structtvm_1_1relay_1_1DeviceCopyAttrs" kindref="compound">DeviceCopyAttrs</ref>,<sp/></highlight><highlight class="stringliteral">&quot;relay.attrs.DeviceCopyAttrs&quot;</highlight><highlight class="normal">)<sp/>{</highlight></codeline>
+<codeline lineno="41"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="ir_2attrs_8h_1a578da113eb199bad72e26c03ad24832f" kindref="member">TVM_ATTR_FIELD</ref>(src_dev_type)</highlight></codeline>
+<codeline lineno="42"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>.describe(</highlight></codeline>
+<codeline lineno="43"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;The<sp/>virutal<sp/>device/context<sp/>type<sp/>where<sp/>the<sp/>op<sp/>copies<sp/>data<sp/>from.&quot;</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="44"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>.set_default(0);</highlight></codeline>
+<codeline lineno="45"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="ir_2attrs_8h_1a578da113eb199bad72e26c03ad24832f" kindref="member">TVM_ATTR_FIELD</ref>(dst_dev_type)</highlight></codeline>
+<codeline lineno="46"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>.describe(</highlight></codeline>
+<codeline lineno="47"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;The<sp/>virutal<sp/>device/context<sp/>type<sp/>where<sp/>the<sp/>op<sp/>copies<sp/>data<sp/>to.&quot;</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="48"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>.set_default(0);</highlight></codeline>
+<codeline lineno="49"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="50"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="51"><highlight class="normal"></highlight></codeline>
+<codeline lineno="52"><highlight class="normal">}<sp/><sp/></highlight><highlight class="comment">//<sp/>namespace<sp/>relay</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="53"><highlight class="normal">}<sp/><sp/></highlight><highlight class="comment">//<sp/>namespace<sp/>tvm</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="54"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/><sp/>//<sp/>TVM_RELAY_ATTRS_DEVICE_COPY_H_</highlight></codeline>
+    </programlisting>
+    <location file="include/tvm/relay/attrs/device_copy.h"/>
+  </compounddef>
+</doxygen>

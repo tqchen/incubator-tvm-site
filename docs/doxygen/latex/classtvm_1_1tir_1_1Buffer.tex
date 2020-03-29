@@ -1,0 +1,209 @@
+\hypertarget{classtvm_1_1tir_1_1Buffer}{}\section{tvm\+:\+:tir\+:\+:Buffer Class Reference}
+\label{classtvm_1_1tir_1_1Buffer}\index{tvm\+::tir\+::\+Buffer@{tvm\+::tir\+::\+Buffer}}
+
+
+\hyperlink{classtvm_1_1tir_1_1Buffer}{Buffer} is a symbolic n-\/darray structure. It is a composition of primitive symbolic types, used to specify the memory layout of the Tensor used in program input.  
+
+
+
+
+{\ttfamily \#include $<$buffer.\+h$>$}
+
+
+
+Inheritance diagram for tvm\+:\+:tir\+:\+:Buffer\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=191pt]{classtvm_1_1tir_1_1Buffer__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for tvm\+:\+:tir\+:\+:Buffer\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=191pt]{classtvm_1_1tir_1_1Buffer__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+using \hyperlink{classtvm_1_1tir_1_1Buffer_aba3e2da6a30d5495fb89307b8db2926a}{Container\+Type} = \hyperlink{classtvm_1_1tir_1_1BufferNode}{Buffer\+Node}
+\begin{DoxyCompactList}\small\item\em specify container node \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classtvm_1_1tir_1_1Buffer_a0f8d32c4cedbf65f645c22ed9e33fa45}{Buffer} ()
+\item 
+\hyperlink{classtvm_1_1tir_1_1Buffer_ac033e5ebb29588c789152fb01dc99eff}{Buffer} (Object\+Ptr$<$ Object $>$ n)
+\item 
+\hyperlink{classtvm_1_1tir_1_1Buffer}{Buffer} \hyperlink{classtvm_1_1tir_1_1Buffer_a4e76e165819e6acfdd5929480774d8f7}{Make\+Stride\+View} () const 
+\begin{DoxyCompactList}\small\item\em Return a new buffer that is equivalent with current one but always add stride field. \end{DoxyCompactList}\item 
+\hyperlink{classtvm_1_1tir_1_1Buffer}{Buffer} \hyperlink{classtvm_1_1tir_1_1Buffer_a4ca636501d4d64d760b6762fa606f019}{Make\+Slice} (\hyperlink{classtvm_1_1Array}{Array}$<$ \hyperlink{classtvm_1_1PrimExpr}{Prim\+Expr} $>$ begins, \hyperlink{classtvm_1_1Array}{Array}$<$ \hyperlink{classtvm_1_1PrimExpr}{Prim\+Expr} $>$ extents) const 
+\begin{DoxyCompactList}\small\item\em Make a new symbolic buffer representing a slice of the buffer. \end{DoxyCompactList}\item 
+\hyperlink{classtvm_1_1PrimExpr}{Prim\+Expr} \hyperlink{classtvm_1_1tir_1_1Buffer_a746b074c21acb1782fa1079be5337128}{access\+\_\+ptr} (int access\+\_\+mask, \hyperlink{namespacetvm_a41918af1a1dc386388639a9d3ad06c5d}{Data\+Type} ptr\+\_\+type=\hyperlink{classtvm_1_1runtime_1_1DataType_aebad9f7235dd20af649fb5c2113797b8}{Data\+Type\+::\+Handle}(), int content\+\_\+lanes=1, \hyperlink{classtvm_1_1PrimExpr}{Prim\+Expr} offset=\hyperlink{namespacetvm_1_1tir_a4ea566597880d04bd62fbec687e338b5}{make\+\_\+const}(\hyperlink{classtvm_1_1runtime_1_1DataType_ab45f13dd70d982d9f977c79b6f7fac98}{Data\+Type\+::\+Int}(32), 0)) const 
+\begin{DoxyCompactList}\small\item\em Get access ptr to the entire buffer. \end{DoxyCompactList}\item 
+\hyperlink{classtvm_1_1PrimExpr}{Prim\+Expr} \hyperlink{classtvm_1_1tir_1_1Buffer_a0fb4f8f83e61b8c8a6c2d21331dcdd8f}{vload} (\hyperlink{classtvm_1_1Array}{Array}$<$ \hyperlink{classtvm_1_1PrimExpr}{Prim\+Expr} $>$ begin, \hyperlink{namespacetvm_a41918af1a1dc386388639a9d3ad06c5d}{Data\+Type} dtype) const 
+\begin{DoxyCompactList}\small\item\em Create an Expr that does a vector load at begin index. \end{DoxyCompactList}\item 
+\hyperlink{classtvm_1_1tir_1_1Stmt}{Stmt} \hyperlink{classtvm_1_1tir_1_1Buffer_a9ea73d1913c16bcd7c1417a202c05bc3}{vstore} (\hyperlink{classtvm_1_1Array}{Array}$<$ \hyperlink{classtvm_1_1PrimExpr}{Prim\+Expr} $>$ begin, \hyperlink{classtvm_1_1PrimExpr}{Prim\+Expr} value) const 
+\begin{DoxyCompactList}\small\item\em Create a \hyperlink{classtvm_1_1tir_1_1Stmt}{Stmt} that does a vector store at begin index. \end{DoxyCompactList}\item 
+const \hyperlink{classtvm_1_1tir_1_1BufferNode}{Buffer\+Node} $\ast$ \hyperlink{classtvm_1_1tir_1_1Buffer_a5f3eca6b64a0cc6f1be7d50224c217c4}{operator-\/$>$} () const 
+\begin{DoxyCompactList}\small\item\em access the internal node container \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\hyperlink{classtvm_1_1tir_1_1Buffer}{Buffer} is a symbolic n-\/darray structure. It is a composition of primitive symbolic types, used to specify the memory layout of the Tensor used in program input. 
+
+\subsection{Member Typedef Documentation}
+\index{tvm\+::tir\+::\+Buffer@{tvm\+::tir\+::\+Buffer}!Container\+Type@{Container\+Type}}
+\index{Container\+Type@{Container\+Type}!tvm\+::tir\+::\+Buffer@{tvm\+::tir\+::\+Buffer}}
+\subsubsection[{\texorpdfstring{Container\+Type}{ContainerType}}]{\setlength{\rightskip}{0pt plus 5cm}using {\bf tvm\+::tir\+::\+Buffer\+::\+Container\+Type} =  {\bf Buffer\+Node}}\hypertarget{classtvm_1_1tir_1_1Buffer_aba3e2da6a30d5495fb89307b8db2926a}{}\label{classtvm_1_1tir_1_1Buffer_aba3e2da6a30d5495fb89307b8db2926a}
+
+
+specify container node 
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\index{tvm\+::tir\+::\+Buffer@{tvm\+::tir\+::\+Buffer}!Buffer@{Buffer}}
+\index{Buffer@{Buffer}!tvm\+::tir\+::\+Buffer@{tvm\+::tir\+::\+Buffer}}
+\subsubsection[{\texorpdfstring{Buffer()}{Buffer()}}]{\setlength{\rightskip}{0pt plus 5cm}tvm\+::tir\+::\+Buffer\+::\+Buffer (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classtvm_1_1tir_1_1Buffer_a0f8d32c4cedbf65f645c22ed9e33fa45}{}\label{classtvm_1_1tir_1_1Buffer_a0f8d32c4cedbf65f645c22ed9e33fa45}
+\index{tvm\+::tir\+::\+Buffer@{tvm\+::tir\+::\+Buffer}!Buffer@{Buffer}}
+\index{Buffer@{Buffer}!tvm\+::tir\+::\+Buffer@{tvm\+::tir\+::\+Buffer}}
+\subsubsection[{\texorpdfstring{Buffer(\+Object\+Ptr$<$ Object $>$ n)}{Buffer(ObjectPtr< Object > n)}}]{\setlength{\rightskip}{0pt plus 5cm}tvm\+::tir\+::\+Buffer\+::\+Buffer (
+\begin{DoxyParamCaption}
+\item[{Object\+Ptr$<$ Object $>$}]{n}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [explicit]}}\hypertarget{classtvm_1_1tir_1_1Buffer_ac033e5ebb29588c789152fb01dc99eff}{}\label{classtvm_1_1tir_1_1Buffer_ac033e5ebb29588c789152fb01dc99eff}
+
+
+\subsection{Member Function Documentation}
+\index{tvm\+::tir\+::\+Buffer@{tvm\+::tir\+::\+Buffer}!access\+\_\+ptr@{access\+\_\+ptr}}
+\index{access\+\_\+ptr@{access\+\_\+ptr}!tvm\+::tir\+::\+Buffer@{tvm\+::tir\+::\+Buffer}}
+\subsubsection[{\texorpdfstring{access\+\_\+ptr(int access\+\_\+mask, Data\+Type ptr\+\_\+type=\+Data\+Type\+::\+Handle(), int content\+\_\+lanes=1, Prim\+Expr offset=make\+\_\+const(\+Data\+Type\+::\+Int(32), 0)) const }{access_ptr(int access_mask, DataType ptr_type=DataType::Handle(), int content_lanes=1, PrimExpr offset=make_const(DataType::Int(32), 0)) const }}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Prim\+Expr} tvm\+::tir\+::\+Buffer\+::access\+\_\+ptr (
+\begin{DoxyParamCaption}
+\item[{int}]{access\+\_\+mask, }
+\item[{{\bf Data\+Type}}]{ptr\+\_\+type = {\ttfamily {\bf Data\+Type\+::\+Handle}()}, }
+\item[{int}]{content\+\_\+lanes = {\ttfamily 1}, }
+\item[{{\bf Prim\+Expr}}]{offset = {\ttfamily {\bf make\+\_\+const}({\bf Data\+Type\+::\+Int}(32),~0)}}
+\end{DoxyParamCaption}
+) const}\hypertarget{classtvm_1_1tir_1_1Buffer_a746b074c21acb1782fa1079be5337128}{}\label{classtvm_1_1tir_1_1Buffer_a746b074c21acb1782fa1079be5337128}
+
+
+Get access ptr to the entire buffer. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em access\+\_\+mask} & The access mask \\
+\hline
+{\em ptr\+\_\+type} & The type of the pointer. \\
+\hline
+{\em content\+\_\+lanes} & The number of lanes for the (data) type. \\
+\hline
+{\em offset} & The offset of ptr. \\
+\hline
+\end{DoxyParams}
+\index{tvm\+::tir\+::\+Buffer@{tvm\+::tir\+::\+Buffer}!Make\+Slice@{Make\+Slice}}
+\index{Make\+Slice@{Make\+Slice}!tvm\+::tir\+::\+Buffer@{tvm\+::tir\+::\+Buffer}}
+\subsubsection[{\texorpdfstring{Make\+Slice(\+Array$<$ Prim\+Expr $>$ begins, Array$<$ Prim\+Expr $>$ extents) const }{MakeSlice(Array< PrimExpr > begins, Array< PrimExpr > extents) const }}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Buffer} tvm\+::tir\+::\+Buffer\+::\+Make\+Slice (
+\begin{DoxyParamCaption}
+\item[{{\bf Array}$<$ {\bf Prim\+Expr} $>$}]{begins, }
+\item[{{\bf Array}$<$ {\bf Prim\+Expr} $>$}]{extents}
+\end{DoxyParamCaption}
+) const}\hypertarget{classtvm_1_1tir_1_1Buffer_a4ca636501d4d64d760b6762fa606f019}{}\label{classtvm_1_1tir_1_1Buffer_a4ca636501d4d64d760b6762fa606f019}
+
+
+Make a new symbolic buffer representing a slice of the buffer. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em begins} & The beginning position of each dimension. \\
+\hline
+{\em extents} & The extent of each dimension. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyNote}{Note}
+This function will make target buffer as compact as possible. If stride is not needed in the slice, it won\textquotesingle{}t be presented 
+\end{DoxyNote}
+\begin{DoxyReturn}{Returns}
+the result buffer. 
+\end{DoxyReturn}
+\index{tvm\+::tir\+::\+Buffer@{tvm\+::tir\+::\+Buffer}!Make\+Stride\+View@{Make\+Stride\+View}}
+\index{Make\+Stride\+View@{Make\+Stride\+View}!tvm\+::tir\+::\+Buffer@{tvm\+::tir\+::\+Buffer}}
+\subsubsection[{\texorpdfstring{Make\+Stride\+View() const }{MakeStrideView() const }}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Buffer} tvm\+::tir\+::\+Buffer\+::\+Make\+Stride\+View (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}\hypertarget{classtvm_1_1tir_1_1Buffer_a4e76e165819e6acfdd5929480774d8f7}{}\label{classtvm_1_1tir_1_1Buffer_a4e76e165819e6acfdd5929480774d8f7}
+
+
+Return a new buffer that is equivalent with current one but always add stride field. 
+
+\begin{DoxyReturn}{Returns}
+The strided version of the buffer. 
+\end{DoxyReturn}
+\index{tvm\+::tir\+::\+Buffer@{tvm\+::tir\+::\+Buffer}!operator-\/$>$@{operator-\/$>$}}
+\index{operator-\/$>$@{operator-\/$>$}!tvm\+::tir\+::\+Buffer@{tvm\+::tir\+::\+Buffer}}
+\subsubsection[{\texorpdfstring{operator-\/$>$() const }{operator->() const }}]{\setlength{\rightskip}{0pt plus 5cm}const {\bf Buffer\+Node} $\ast$ tvm\+::tir\+::\+Buffer\+::operator-\/$>$ (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classtvm_1_1tir_1_1Buffer_a5f3eca6b64a0cc6f1be7d50224c217c4}{}\label{classtvm_1_1tir_1_1Buffer_a5f3eca6b64a0cc6f1be7d50224c217c4}
+
+
+access the internal node container 
+
+\begin{DoxyReturn}{Returns}
+the pointer to the internal node container 
+\end{DoxyReturn}
+\index{tvm\+::tir\+::\+Buffer@{tvm\+::tir\+::\+Buffer}!vload@{vload}}
+\index{vload@{vload}!tvm\+::tir\+::\+Buffer@{tvm\+::tir\+::\+Buffer}}
+\subsubsection[{\texorpdfstring{vload(\+Array$<$ Prim\+Expr $>$ begin, Data\+Type dtype) const }{vload(Array< PrimExpr > begin, DataType dtype) const }}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Prim\+Expr} tvm\+::tir\+::\+Buffer\+::vload (
+\begin{DoxyParamCaption}
+\item[{{\bf Array}$<$ {\bf Prim\+Expr} $>$}]{begin, }
+\item[{{\bf Data\+Type}}]{dtype}
+\end{DoxyParamCaption}
+) const}\hypertarget{classtvm_1_1tir_1_1Buffer_a0fb4f8f83e61b8c8a6c2d21331dcdd8f}{}\label{classtvm_1_1tir_1_1Buffer_a0fb4f8f83e61b8c8a6c2d21331dcdd8f}
+
+
+Create an Expr that does a vector load at begin index. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em begin} & The beginning index \\
+\hline
+{\em dtype} & The data type to be loaded. \\
+\hline
+\end{DoxyParams}
+\index{tvm\+::tir\+::\+Buffer@{tvm\+::tir\+::\+Buffer}!vstore@{vstore}}
+\index{vstore@{vstore}!tvm\+::tir\+::\+Buffer@{tvm\+::tir\+::\+Buffer}}
+\subsubsection[{\texorpdfstring{vstore(\+Array$<$ Prim\+Expr $>$ begin, Prim\+Expr value) const }{vstore(Array< PrimExpr > begin, PrimExpr value) const }}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Stmt} tvm\+::tir\+::\+Buffer\+::vstore (
+\begin{DoxyParamCaption}
+\item[{{\bf Array}$<$ {\bf Prim\+Expr} $>$}]{begin, }
+\item[{{\bf Prim\+Expr}}]{value}
+\end{DoxyParamCaption}
+) const}\hypertarget{classtvm_1_1tir_1_1Buffer_a9ea73d1913c16bcd7c1417a202c05bc3}{}\label{classtvm_1_1tir_1_1Buffer_a9ea73d1913c16bcd7c1417a202c05bc3}
+
+
+Create a \hyperlink{classtvm_1_1tir_1_1Stmt}{Stmt} that does a vector store at begin index. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em begin} & The beginning index \\
+\hline
+{\em value} & The value to be stored. \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+include/tvm/tir/\hyperlink{buffer_8h}{buffer.\+h}\end{DoxyCompactItemize}

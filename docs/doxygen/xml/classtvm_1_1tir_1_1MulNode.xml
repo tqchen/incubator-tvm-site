@@ -1,0 +1,128 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="classtvm_1_1tir_1_1MulNode" kind="class" language="C++" prot="public">
+    <compoundname>tvm::tir::MulNode</compoundname>
+    <basecompoundref refid="classtvm_1_1tir_1_1BinaryOpNode" prot="public" virt="non-virtual">tvm::tir::BinaryOpNode&lt; MulNode &gt;</basecompoundref>
+    <includes refid="tir_2expr_8h" local="no">expr.h</includes>
+      <sectiondef kind="public-static-attrib">
+      <memberdef kind="variable" id="classtvm_1_1tir_1_1MulNode_1ab8b1b845628226529c395872c18e1b40" prot="public" static="yes" mutable="no">
+        <type>constexpr const char *</type>
+        <definition>constexpr const char* tvm::tir::MulNode::_type_key</definition>
+        <argsstring></argsstring>
+        <name>_type_key</name>
+        <initializer>= &quot;Mul&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/tir/expr.h" line="474" column="1" bodyfile="include/tvm/tir/expr.h" bodystart="474" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>a * b </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="5791">
+        <label>tvm::BaseExprNode</label>
+        <link refid="classtvm_1_1BaseExprNode"/>
+        <childnode refid="5792" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="5792">
+        <label>Object</label>
+      </node>
+      <node id="5788">
+        <label>tvm::tir::MulNode</label>
+        <link refid="classtvm_1_1tir_1_1MulNode"/>
+        <childnode refid="5789" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="5789">
+        <label>tvm::tir::BinaryOpNode&lt; MulNode &gt;</label>
+        <link refid="classtvm_1_1tir_1_1BinaryOpNode"/>
+        <childnode refid="5790" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="5790">
+        <label>tvm::PrimExprNode</label>
+        <link refid="classtvm_1_1PrimExprNode"/>
+        <childnode refid="5791" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="5801">
+        <label>ObjectRef</label>
+      </node>
+      <node id="5796">
+        <label>tvm::BaseExprNode</label>
+        <link refid="classtvm_1_1BaseExprNode"/>
+        <childnode refid="5797" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="5797">
+        <label>Object</label>
+      </node>
+      <node id="5799">
+        <label>tvm::PrimExpr</label>
+        <link refid="classtvm_1_1PrimExpr"/>
+        <childnode refid="5800" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="5798">
+        <label>tvm::runtime::DataType</label>
+        <link refid="classtvm_1_1runtime_1_1DataType"/>
+      </node>
+      <node id="5793">
+        <label>tvm::tir::MulNode</label>
+        <link refid="classtvm_1_1tir_1_1MulNode"/>
+        <childnode refid="5794" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="5800">
+        <label>tvm::BaseExpr</label>
+        <link refid="classtvm_1_1BaseExpr"/>
+        <childnode refid="5801" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="5794">
+        <label>tvm::tir::BinaryOpNode&lt; MulNode &gt;</label>
+        <link refid="classtvm_1_1tir_1_1BinaryOpNode"/>
+        <childnode refid="5795" relation="public-inheritance">
+        </childnode>
+        <childnode refid="5799" relation="usage">
+          <edgelabel>+a</edgelabel>
+          <edgelabel>+b</edgelabel>
+        </childnode>
+      </node>
+      <node id="5795">
+        <label>tvm::PrimExprNode</label>
+        <link refid="classtvm_1_1PrimExprNode"/>
+        <childnode refid="5796" relation="public-inheritance">
+        </childnode>
+        <childnode refid="5798" relation="usage">
+          <edgelabel>+dtype</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="include/tvm/tir/expr.h" line="472" column="1" bodyfile="include/tvm/tir/expr.h" bodystart="472" bodyend="475"/>
+    <listofallmembers>
+      <member refid="classtvm_1_1BaseExprNode_1a905dcf65204e877b6ccb977cf375f2a0" prot="public" virt="non-virtual"><scope>tvm::tir::MulNode</scope><name>_type_has_method_sequal_reduce</name></member>
+      <member refid="classtvm_1_1BaseExprNode_1a13d7d1f1e6f790951caf200cd59c3620" prot="public" virt="non-virtual"><scope>tvm::tir::MulNode</scope><name>_type_has_method_shash_reduce</name></member>
+      <member refid="classtvm_1_1tir_1_1MulNode_1ab8b1b845628226529c395872c18e1b40" prot="public" virt="non-virtual"><scope>tvm::tir::MulNode</scope><name>_type_key</name></member>
+      <member refid="classtvm_1_1tir_1_1BinaryOpNode_1adbbd197d65ab43acfc1ffdfd0f2b75ab" prot="public" virt="non-virtual"><scope>tvm::tir::MulNode</scope><name>a</name></member>
+      <member refid="classtvm_1_1tir_1_1BinaryOpNode_1a2b8c5fdbb2edc200484b7195ad68acf6" prot="public" virt="non-virtual"><scope>tvm::tir::MulNode</scope><name>b</name></member>
+      <member refid="classtvm_1_1PrimExprNode_1a95af9234514ec5f11355db41524be7f9" prot="public" virt="non-virtual"><scope>tvm::tir::MulNode</scope><name>dtype</name></member>
+      <member refid="classtvm_1_1tir_1_1BinaryOpNode_1afb3a9f4de76865880cc9f19ebcc75ea0" prot="public" virt="non-virtual"><scope>tvm::tir::MulNode</scope><name>make</name></member>
+      <member refid="classtvm_1_1tir_1_1BinaryOpNode_1a743b7846b1376cb2d8e4b821d9cb9eaa" prot="public" virt="non-virtual"><scope>tvm::tir::MulNode</scope><name>SEqualReduce</name></member>
+      <member refid="classtvm_1_1tir_1_1BinaryOpNode_1a2fd1d01ff422a1765b27f1da1b7af4ce" prot="public" virt="non-virtual"><scope>tvm::tir::MulNode</scope><name>SHashReduce</name></member>
+      <member refid="classtvm_1_1PrimExprNode_1afcf4654378d65e0200b33e43194d0490" prot="public" virt="non-virtual"><scope>tvm::tir::MulNode</scope><name>TVM_DECLARE_BASE_OBJECT_INFO</name></member>
+      <member refid="classtvm_1_1BaseExprNode_1a831794c879d47c30cdd9cefd4f05d533" prot="public" virt="non-virtual" ambiguityscope="tvm::BaseExprNode::"><scope>tvm::tir::MulNode</scope><name>TVM_DECLARE_BASE_OBJECT_INFO</name></member>
+      <member refid="classtvm_1_1tir_1_1BinaryOpNode_1a5c562cd4eac4b86d0b06f29eb92ef70d" prot="public" virt="non-virtual"><scope>tvm::tir::MulNode</scope><name>TVM_DECLARE_FINAL_OBJECT_INFO</name></member>
+      <member refid="classtvm_1_1tir_1_1BinaryOpNode_1a75e2d8fdc2a5793f34ecb771a6938cc6" prot="public" virt="non-virtual"><scope>tvm::tir::MulNode</scope><name>VisitAttrs</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

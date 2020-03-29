@@ -1,0 +1,53 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="structtvm_1_1detail_1_1ImplSEqualReduce_3_01T_00_01true_01_4" kind="struct" language="C++" prot="public">
+    <compoundname>tvm::detail::ImplSEqualReduce&lt; T, true &gt;</compoundname>
+    <includes refid="reflection_8h" local="no">reflection.h</includes>
+    <templateparamlist>
+      <param>
+        <type>typename T</type>
+      </param>
+    </templateparamlist>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="structtvm_1_1detail_1_1ImplSEqualReduce_3_01T_00_01true_01_4_1a66b671c7505fb3c4d9ff215ac67d3c84" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>static bool tvm::detail::ImplSEqualReduce&lt; T, true &gt;::SEqualReduce</definition>
+        <argsstring>(const T *self, const T *other, SEqualReducer equal)</argsstring>
+        <name>SEqualReduce</name>
+        <param>
+          <type>const T *</type>
+          <declname>self</declname>
+        </param>
+        <param>
+          <type>const T *</type>
+          <declname>other</declname>
+        </param>
+        <param>
+          <type><ref refid="classtvm_1_1SEqualReducer" kindref="compound">SEqualReducer</ref></type>
+          <declname>equal</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/node/reflection.h" line="289" column="1" bodyfile="include/tvm/node/reflection.h" bodystart="289" bodyend="291"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="5331">
+        <label>tvm::detail::ImplSEqualReduce&lt; T, true &gt;</label>
+        <link refid="structtvm_1_1detail_1_1ImplSEqualReduce_3_01T_00_01true_01_4"/>
+      </node>
+    </collaborationgraph>
+    <location file="include/tvm/node/reflection.h" line="288" column="1" bodyfile="include/tvm/node/reflection.h" bodystart="288" bodyend="292"/>
+    <listofallmembers>
+      <member refid="structtvm_1_1detail_1_1ImplSEqualReduce_3_01T_00_01true_01_4_1a66b671c7505fb3c4d9ff215ac67d3c84" prot="public" virt="non-virtual"><scope>tvm::detail::ImplSEqualReduce&lt; T, true &gt;</scope><name>SEqualReduce</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

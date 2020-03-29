@@ -1,0 +1,229 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="classtvm_1_1tir_1_1CastNode" kind="class" language="C++" prot="public">
+    <compoundname>tvm::tir::CastNode</compoundname>
+    <basecompoundref refid="classtvm_1_1PrimExprNode" prot="public" virt="non-virtual">tvm::PrimExprNode</basecompoundref>
+    <includes refid="tir_2expr_8h" local="no">expr.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="classtvm_1_1tir_1_1CastNode_1a6075e57a3e8dd0f751d7997cafb9bce0" prot="public" static="no" mutable="no">
+        <type><ref refid="classtvm_1_1PrimExpr" kindref="compound">PrimExpr</ref></type>
+        <definition>PrimExpr tvm::tir::CastNode::value</definition>
+        <argsstring></argsstring>
+        <name>value</name>
+        <briefdescription>
+<para>Original data type. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/tir/expr.h" line="392" column="1" bodyfile="include/tvm/tir/expr.h" bodystart="392" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-attrib">
+      <memberdef kind="variable" id="classtvm_1_1tir_1_1CastNode_1ad9b8ef8c5a3bb223c4d19503007af162" prot="public" static="yes" mutable="no">
+        <type>constexpr const char *</type>
+        <definition>constexpr const char* tvm::tir::CastNode::_type_key</definition>
+        <argsstring></argsstring>
+        <name>_type_key</name>
+        <initializer>= &quot;Cast&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/tir/expr.h" line="410" column="1" bodyfile="include/tvm/tir/expr.h" bodystart="410" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classtvm_1_1tir_1_1CastNode_1abd6f1cdacb178f35cdcf0800d46dd939" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void tvm::tir::CastNode::VisitAttrs</definition>
+        <argsstring>(AttrVisitor *v)</argsstring>
+        <name>VisitAttrs</name>
+        <param>
+          <type><ref refid="classtvm_1_1AttrVisitor" kindref="compound">AttrVisitor</ref> *</type>
+          <declname>v</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/tir/expr.h" line="394" column="1" bodyfile="include/tvm/tir/expr.h" bodystart="394" bodyend="397"/>
+      </memberdef>
+      <memberdef kind="function" id="classtvm_1_1tir_1_1CastNode_1a94c826d3c645983d77c97bf7b4e839c7" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool tvm::tir::CastNode::SEqualReduce</definition>
+        <argsstring>(const CastNode *other, SEqualReducer equal) const </argsstring>
+        <name>SEqualReduce</name>
+        <param>
+          <type>const <ref refid="classtvm_1_1tir_1_1CastNode" kindref="compound">CastNode</ref> *</type>
+          <declname>other</declname>
+        </param>
+        <param>
+          <type><ref refid="classtvm_1_1SEqualReducer" kindref="compound">SEqualReducer</ref></type>
+          <declname>equal</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/tir/expr.h" line="399" column="1" bodyfile="include/tvm/tir/expr.h" bodystart="399" bodyend="401"/>
+      </memberdef>
+      <memberdef kind="function" id="classtvm_1_1tir_1_1CastNode_1aeb8aa253efdca1c975a3ab3e4443f824" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void tvm::tir::CastNode::SHashReduce</definition>
+        <argsstring>(SHashReducer hash_reduce) const </argsstring>
+        <name>SHashReduce</name>
+        <param>
+          <type><ref refid="classtvm_1_1SHashReducer" kindref="compound">SHashReducer</ref></type>
+          <declname>hash_reduce</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/tir/expr.h" line="403" column="1" bodyfile="include/tvm/tir/expr.h" bodystart="403" bodyend="406"/>
+      </memberdef>
+      <memberdef kind="function" id="classtvm_1_1tir_1_1CastNode_1ac25c688b4d081feffbba2feda042a700" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>tvm::tir::CastNode::TVM_DECLARE_FINAL_OBJECT_INFO</definition>
+        <argsstring>(CastNode, PrimExprNode)</argsstring>
+        <name>TVM_DECLARE_FINAL_OBJECT_INFO</name>
+        <param>
+          <type><ref refid="classtvm_1_1tir_1_1CastNode" kindref="compound">CastNode</ref></type>
+        </param>
+        <param>
+          <type><ref refid="classtvm_1_1PrimExprNode" kindref="compound">PrimExprNode</ref></type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/tir/expr.h" line="411" column="1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="classtvm_1_1tir_1_1CastNode_1a240f630f69e4f41d66b8cfead5f50681" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classtvm_1_1PrimExpr" kindref="compound">PrimExpr</ref></type>
+        <definition>static PrimExpr tvm::tir::CastNode::make</definition>
+        <argsstring>(DataType t, PrimExpr v)</argsstring>
+        <name>make</name>
+        <param>
+          <type><ref refid="namespacetvm_1a41918af1a1dc386388639a9d3ad06c5d" kindref="member">DataType</ref></type>
+          <declname>t</declname>
+        </param>
+        <param>
+          <type><ref refid="classtvm_1_1PrimExpr" kindref="compound">PrimExpr</ref></type>
+          <declname>v</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/tir/expr.h" line="408" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Cast value from one data type to another. </para>    </briefdescription>
+    <detaileddescription>
+<para><simplesect kind="note"><para>The lanes of value should keep fixed. </para></simplesect>
+</para>    </detaileddescription>
+    <inheritancegraph>
+      <node id="4549">
+        <label>tvm::BaseExprNode</label>
+        <link refid="classtvm_1_1BaseExprNode"/>
+        <childnode refid="4550" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="4550">
+        <label>Object</label>
+      </node>
+      <node id="4547">
+        <label>tvm::tir::CastNode</label>
+        <link refid="classtvm_1_1tir_1_1CastNode"/>
+        <childnode refid="4548" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="4548">
+        <label>tvm::PrimExprNode</label>
+        <link refid="classtvm_1_1PrimExprNode"/>
+        <childnode refid="4549" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="4558">
+        <label>ObjectRef</label>
+      </node>
+      <node id="4553">
+        <label>tvm::BaseExprNode</label>
+        <link refid="classtvm_1_1BaseExprNode"/>
+        <childnode refid="4554" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="4554">
+        <label>Object</label>
+      </node>
+      <node id="4551">
+        <label>tvm::tir::CastNode</label>
+        <link refid="classtvm_1_1tir_1_1CastNode"/>
+        <childnode refid="4552" relation="public-inheritance">
+        </childnode>
+        <childnode refid="4556" relation="usage">
+          <edgelabel>+value</edgelabel>
+        </childnode>
+      </node>
+      <node id="4556">
+        <label>tvm::PrimExpr</label>
+        <link refid="classtvm_1_1PrimExpr"/>
+        <childnode refid="4557" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="4555">
+        <label>tvm::runtime::DataType</label>
+        <link refid="classtvm_1_1runtime_1_1DataType"/>
+      </node>
+      <node id="4557">
+        <label>tvm::BaseExpr</label>
+        <link refid="classtvm_1_1BaseExpr"/>
+        <childnode refid="4558" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="4552">
+        <label>tvm::PrimExprNode</label>
+        <link refid="classtvm_1_1PrimExprNode"/>
+        <childnode refid="4553" relation="public-inheritance">
+        </childnode>
+        <childnode refid="4555" relation="usage">
+          <edgelabel>+dtype</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="include/tvm/tir/expr.h" line="389" column="1" bodyfile="include/tvm/tir/expr.h" bodystart="389" bodyend="412"/>
+    <listofallmembers>
+      <member refid="classtvm_1_1BaseExprNode_1a905dcf65204e877b6ccb977cf375f2a0" prot="public" virt="non-virtual"><scope>tvm::tir::CastNode</scope><name>_type_has_method_sequal_reduce</name></member>
+      <member refid="classtvm_1_1BaseExprNode_1a13d7d1f1e6f790951caf200cd59c3620" prot="public" virt="non-virtual"><scope>tvm::tir::CastNode</scope><name>_type_has_method_shash_reduce</name></member>
+      <member refid="classtvm_1_1tir_1_1CastNode_1ad9b8ef8c5a3bb223c4d19503007af162" prot="public" virt="non-virtual"><scope>tvm::tir::CastNode</scope><name>_type_key</name></member>
+      <member refid="classtvm_1_1PrimExprNode_1a95af9234514ec5f11355db41524be7f9" prot="public" virt="non-virtual"><scope>tvm::tir::CastNode</scope><name>dtype</name></member>
+      <member refid="classtvm_1_1tir_1_1CastNode_1a240f630f69e4f41d66b8cfead5f50681" prot="public" virt="non-virtual"><scope>tvm::tir::CastNode</scope><name>make</name></member>
+      <member refid="classtvm_1_1tir_1_1CastNode_1a94c826d3c645983d77c97bf7b4e839c7" prot="public" virt="non-virtual"><scope>tvm::tir::CastNode</scope><name>SEqualReduce</name></member>
+      <member refid="classtvm_1_1tir_1_1CastNode_1aeb8aa253efdca1c975a3ab3e4443f824" prot="public" virt="non-virtual"><scope>tvm::tir::CastNode</scope><name>SHashReduce</name></member>
+      <member refid="classtvm_1_1PrimExprNode_1afcf4654378d65e0200b33e43194d0490" prot="public" virt="non-virtual"><scope>tvm::tir::CastNode</scope><name>TVM_DECLARE_BASE_OBJECT_INFO</name></member>
+      <member refid="classtvm_1_1BaseExprNode_1a831794c879d47c30cdd9cefd4f05d533" prot="public" virt="non-virtual" ambiguityscope="tvm::BaseExprNode::"><scope>tvm::tir::CastNode</scope><name>TVM_DECLARE_BASE_OBJECT_INFO</name></member>
+      <member refid="classtvm_1_1tir_1_1CastNode_1ac25c688b4d081feffbba2feda042a700" prot="public" virt="non-virtual"><scope>tvm::tir::CastNode</scope><name>TVM_DECLARE_FINAL_OBJECT_INFO</name></member>
+      <member refid="classtvm_1_1tir_1_1CastNode_1a6075e57a3e8dd0f751d7997cafb9bce0" prot="public" virt="non-virtual"><scope>tvm::tir::CastNode</scope><name>value</name></member>
+      <member refid="classtvm_1_1tir_1_1CastNode_1abd6f1cdacb178f35cdcf0800d46dd939" prot="public" virt="non-virtual"><scope>tvm::tir::CastNode</scope><name>VisitAttrs</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

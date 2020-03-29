@@ -1,0 +1,628 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="classtvm_1_1te_1_1HybridOpNode" kind="class" language="C++" prot="public">
+    <compoundname>tvm::te::HybridOpNode</compoundname>
+    <basecompoundref refid="classtvm_1_1te_1_1OperationNode" prot="public" virt="non-virtual">tvm::te::OperationNode</basecompoundref>
+    <includes refid="operation_8h" local="no">operation.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="classtvm_1_1te_1_1HybridOpNode_1a45104e4a1d31714b9eac76510d33fda5" prot="public" static="no" mutable="no">
+        <type><ref refid="classtvm_1_1Array" kindref="compound">Array</ref>&lt; <ref refid="classtvm_1_1te_1_1Tensor" kindref="compound">Tensor</ref> &gt;</type>
+        <definition>Array&lt;Tensor&gt; tvm::te::HybridOpNode::inputs</definition>
+        <argsstring></argsstring>
+        <name>inputs</name>
+        <briefdescription>
+<para>The input tensors. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/te/operation.h" line="493" column="1" bodyfile="include/tvm/te/operation.h" bodystart="493" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classtvm_1_1te_1_1HybridOpNode_1a6ff8e6faa8d01063e32a2c124721df29" prot="public" static="no" mutable="no">
+        <type><ref refid="classtvm_1_1Array" kindref="compound">Array</ref>&lt; <ref refid="classtvm_1_1te_1_1Tensor" kindref="compound">Tensor</ref> &gt;</type>
+        <definition>Array&lt;Tensor&gt; tvm::te::HybridOpNode::outputs</definition>
+        <argsstring></argsstring>
+        <name>outputs</name>
+        <briefdescription>
+<para>Symbolic placeholder representation of outputs. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/te/operation.h" line="495" column="1" bodyfile="include/tvm/te/operation.h" bodystart="495" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classtvm_1_1te_1_1HybridOpNode_1ac4fae56982073412415765d9016c3dbd" prot="public" static="no" mutable="no">
+        <type><ref refid="classtvm_1_1Array" kindref="compound">Array</ref>&lt; <ref refid="classtvm_1_1tir_1_1IterVar" kindref="compound">IterVar</ref> &gt;</type>
+        <definition>Array&lt;IterVar&gt; tvm::te::HybridOpNode::axis</definition>
+        <argsstring></argsstring>
+        <name>axis</name>
+        <briefdescription>
+<para>The axis of iterations. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/te/operation.h" line="497" column="1" bodyfile="include/tvm/te/operation.h" bodystart="497" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classtvm_1_1te_1_1HybridOpNode_1a77124ad0787c8325f9ba556acdb62feb" prot="public" static="no" mutable="no">
+        <type><ref refid="classtvm_1_1tir_1_1Stmt" kindref="compound">Stmt</ref></type>
+        <definition>Stmt tvm::te::HybridOpNode::body</definition>
+        <argsstring></argsstring>
+        <name>body</name>
+        <briefdescription>
+<para>the statement that generates the computation. This is slightly different from the body in <ref refid="classtvm_1_1te_1_1ExternOpNode" kindref="compound">ExternOpNode</ref>. All the output tensors keep its own name specified by users in the script. However, when compilation, these tensors will be placed by those actual output tensors. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/te/operation.h" line="503" column="1" bodyfile="include/tvm/te/operation.h" bodystart="503" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-attrib">
+      <memberdef kind="variable" id="classtvm_1_1te_1_1HybridOpNode_1a6c61dae889fbe0d6d69f9f168e9271e9" prot="public" static="yes" mutable="no">
+        <type>constexpr const char *</type>
+        <definition>constexpr const char* tvm::te::HybridOpNode::_type_key</definition>
+        <argsstring></argsstring>
+        <name>_type_key</name>
+        <initializer>= &quot;HybridOp&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/te/operation.h" line="550" column="1" bodyfile="include/tvm/te/operation.h" bodystart="550" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classtvm_1_1te_1_1HybridOpNode_1a27ebcb81f18ef107b2853efcfb035ad8" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>tvm::te::HybridOpNode::HybridOpNode</definition>
+        <argsstring>()</argsstring>
+        <name>HybridOpNode</name>
+        <briefdescription>
+<para>constructor </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/te/operation.h" line="506" column="1" bodyfile="include/tvm/te/operation.h" bodystart="506" bodyend="506"/>
+      </memberdef>
+      <memberdef kind="function" id="classtvm_1_1te_1_1HybridOpNode_1aa0ad4d918a2da7686be57ffacaff971c" prot="public" static="no" const="yes" explicit="no" inline="no" final="yes" virt="virtual">
+        <type>int</type>
+        <definition>int tvm::te::HybridOpNode::num_outputs</definition>
+        <argsstring>() const final</argsstring>
+        <name>num_outputs</name>
+        <reimplements refid="classtvm_1_1tir_1_1FunctionBaseNode_1a86d8a47eb472945b01ab508c1ff94930">num_outputs</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>the number of outputs of this function </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/te/operation.h" line="508" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classtvm_1_1te_1_1HybridOpNode_1ade3fee4bd8fd9a06d27b533cc6e09ca2" prot="public" static="no" const="yes" explicit="no" inline="no" final="yes" virt="virtual">
+        <type><ref refid="classtvm_1_1Array" kindref="compound">Array</ref>&lt; <ref refid="classtvm_1_1tir_1_1IterVar" kindref="compound">IterVar</ref> &gt;</type>
+        <definition>Array&lt;IterVar&gt; tvm::te::HybridOpNode::root_iter_vars</definition>
+        <argsstring>() const final</argsstring>
+        <name>root_iter_vars</name>
+        <reimplements refid="classtvm_1_1te_1_1OperationNode_1a8d15cfe7d0d721da305c1b36e9f5a914">root_iter_vars</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>The list of iteration variable at root </para></simplesect>
+<simplesect kind="note"><para>root_iter_vars decides the shape of the outputs. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/te/operation.h" line="509" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classtvm_1_1te_1_1HybridOpNode_1abb20d82f9d23c18d29b216e2ab836646" prot="public" static="no" const="yes" explicit="no" inline="no" final="yes" virt="virtual">
+        <type><ref refid="namespacetvm_1a41918af1a1dc386388639a9d3ad06c5d" kindref="member">DataType</ref></type>
+        <definition>DataType tvm::te::HybridOpNode::output_dtype</definition>
+        <argsstring>(size_t i) const final</argsstring>
+        <name>output_dtype</name>
+        <reimplements refid="classtvm_1_1te_1_1OperationNode_1a6bcb7f0c177c642d82a5a200d13369f0">output_dtype</reimplements>
+        <param>
+          <type>size_t</type>
+          <declname>i</declname>
+        </param>
+        <briefdescription>
+<para>Get data type. i-th output tensor. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>i</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The output index. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>type of i-th output. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/te/operation.h" line="510" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classtvm_1_1te_1_1HybridOpNode_1ad4a0684999336bce0e8762d0aa15196e" prot="public" static="no" const="yes" explicit="no" inline="no" final="yes" virt="virtual">
+        <type><ref refid="classtvm_1_1Array" kindref="compound">Array</ref>&lt; <ref refid="classtvm_1_1PrimExpr" kindref="compound">PrimExpr</ref> &gt;</type>
+        <definition>Array&lt;PrimExpr&gt; tvm::te::HybridOpNode::output_shape</definition>
+        <argsstring>(size_t i) const final</argsstring>
+        <name>output_shape</name>
+        <reimplements refid="classtvm_1_1te_1_1OperationNode_1a7c4fc476de1543ea65c83e02631bfd09">output_shape</reimplements>
+        <param>
+          <type>size_t</type>
+          <declname>i</declname>
+        </param>
+        <briefdescription>
+<para>Get shape of i-th output tensor. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>i</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The output index. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>shape of i-th output. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/te/operation.h" line="511" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classtvm_1_1te_1_1HybridOpNode_1ab65b2fc27a5574a15ccbfc99849db8a1" prot="public" static="no" const="yes" explicit="no" inline="no" final="yes" virt="virtual">
+        <type><ref refid="classtvm_1_1Array" kindref="compound">Array</ref>&lt; <ref refid="classtvm_1_1te_1_1Tensor" kindref="compound">Tensor</ref> &gt;</type>
+        <definition>Array&lt;Tensor&gt; tvm::te::HybridOpNode::InputTensors</definition>
+        <argsstring>() const final</argsstring>
+        <name>InputTensors</name>
+        <reimplements refid="classtvm_1_1te_1_1OperationNode_1a9675fbb905d62de5b86624388acec4b1">InputTensors</reimplements>
+        <briefdescription>
+<para>List all the input Tensors. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>List of input tensors. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/te/operation.h" line="512" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classtvm_1_1te_1_1HybridOpNode_1ab46e8dcafa08f1733f9f3f8ebd786100" prot="public" static="no" const="yes" explicit="no" inline="no" final="yes" virt="virtual">
+        <type><ref refid="classtvm_1_1te_1_1Operation" kindref="compound">Operation</ref></type>
+        <definition>Operation tvm::te::HybridOpNode::ReplaceInputs</definition>
+        <argsstring>(const Operation &amp;self, const std::unordered_map&lt; Tensor, Tensor &gt; &amp;rmap) const final</argsstring>
+        <name>ReplaceInputs</name>
+        <reimplements refid="classtvm_1_1te_1_1OperationNode_1a9a876a433cfbe32215c3802ef520016e">ReplaceInputs</reimplements>
+        <param>
+          <type>const <ref refid="classtvm_1_1te_1_1Operation" kindref="compound">Operation</ref> &amp;</type>
+          <declname>self</declname>
+        </param>
+        <param>
+          <type>const std::unordered_map&lt; <ref refid="classtvm_1_1te_1_1Tensor" kindref="compound">Tensor</ref>, <ref refid="classtvm_1_1te_1_1Tensor" kindref="compound">Tensor</ref> &gt; &amp;</type>
+          <declname>rmap</declname>
+        </param>
+        <briefdescription>
+<para>Replace the input of the operation by pattern specified by rmap. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>self</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The reference to self. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>rmap</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The replacement map. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>self if nothing is replaced, otherwise return replaced op. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/te/operation.h" line="513" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classtvm_1_1te_1_1HybridOpNode_1aa732ebcde9edbc81fdeb286c72cd84fe" prot="public" static="no" const="yes" explicit="no" inline="no" final="yes" virt="virtual">
+        <type>void</type>
+        <definition>void tvm::te::HybridOpNode::PropBoundToInputs</definition>
+        <argsstring>(const Operation &amp;self, arith::Analyzer *analyzer, const std::unordered_map&lt; const VarNode *, IntSet &gt; &amp;dom_map, std::unordered_map&lt; Tensor, TensorDom &gt; *out_dom_map) const final</argsstring>
+        <name>PropBoundToInputs</name>
+        <reimplements refid="classtvm_1_1te_1_1OperationNode_1a3c32a93264e0d627d8389b703edcaf49">PropBoundToInputs</reimplements>
+        <param>
+          <type>const <ref refid="classtvm_1_1te_1_1Operation" kindref="compound">Operation</ref> &amp;</type>
+          <declname>self</declname>
+        </param>
+        <param>
+          <type><ref refid="classtvm_1_1arith_1_1Analyzer" kindref="compound">arith::Analyzer</ref> *</type>
+          <declname>analyzer</declname>
+        </param>
+        <param>
+          <type>const std::unordered_map&lt; const <ref refid="classtvm_1_1tir_1_1VarNode" kindref="compound">VarNode</ref> *, IntSet &gt; &amp;</type>
+          <declname>dom_map</declname>
+        </param>
+        <param>
+          <type>std::unordered_map&lt; <ref refid="classtvm_1_1te_1_1Tensor" kindref="compound">Tensor</ref>, <ref refid="structtvm_1_1te_1_1TensorDom" kindref="compound">TensorDom</ref> &gt; *</type>
+          <declname>out_dom_map</declname>
+        </param>
+        <briefdescription>
+<para>Propagate the bounds to inputs. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>self</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The reference to self. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>analyzer</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The analyzer to be used in the function. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>dom_map</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the domain map of Variables(corresponds to root_iter_vars) </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>out_dom_map</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The output domain. The function is only asked to fill the bounds for Tensors that is already in the out_dom_map </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/te/operation.h" line="516" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classtvm_1_1te_1_1HybridOpNode_1a2eba0c1f5eacfed42fdb0d6c18123781" prot="public" static="no" const="yes" explicit="no" inline="no" final="yes" virt="virtual">
+        <type>void</type>
+        <definition>void tvm::te::HybridOpNode::GatherBound</definition>
+        <argsstring>(const Operation &amp;self, const std::unordered_map&lt; Tensor, TensorDom &gt; &amp;tensor_dom, std::unordered_map&lt; IterVar, Range &gt; *out_dom_map) const final</argsstring>
+        <name>GatherBound</name>
+        <reimplements refid="classtvm_1_1te_1_1OperationNode_1a278d1f242176ff48cc150532a9172aee">GatherBound</reimplements>
+        <param>
+          <type>const <ref refid="classtvm_1_1te_1_1Operation" kindref="compound">Operation</ref> &amp;</type>
+          <declname>self</declname>
+        </param>
+        <param>
+          <type>const std::unordered_map&lt; <ref refid="classtvm_1_1te_1_1Tensor" kindref="compound">Tensor</ref>, <ref refid="structtvm_1_1te_1_1TensorDom" kindref="compound">TensorDom</ref> &gt; &amp;</type>
+          <declname>tensor_dom</declname>
+        </param>
+        <param>
+          <type>std::unordered_map&lt; <ref refid="classtvm_1_1tir_1_1IterVar" kindref="compound">IterVar</ref>, <ref refid="classtvm_1_1Range" kindref="compound">Range</ref> &gt; *</type>
+          <declname>out_dom_map</declname>
+        </param>
+        <briefdescription>
+<para>Gather the bound from output tensor. Set the range of each root_iter_vars in the op to out_dom_map. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>self</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The reference to self. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>tensor_dom</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Domain map of Tensor-&gt;access set of each dimension. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>out_dom_map</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The output domain map of each IterVar to be setted. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/te/operation.h" line="521" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classtvm_1_1te_1_1HybridOpNode_1ac1c6607a6d13f019792100430a3fa3c7" prot="public" static="no" const="yes" explicit="no" inline="no" final="yes" virt="virtual">
+        <type><ref refid="classtvm_1_1tir_1_1Stmt" kindref="compound">Stmt</ref></type>
+        <definition>Stmt tvm::te::HybridOpNode::BuildRealize</definition>
+        <argsstring>(const Stage &amp;stage, const std::unordered_map&lt; IterVar, Range &gt; &amp;realize_map, const Stmt &amp;body) const final</argsstring>
+        <name>BuildRealize</name>
+        <reimplements refid="classtvm_1_1te_1_1OperationNode_1afc89a6b2f5e35adf79c3587a95ba283a">BuildRealize</reimplements>
+        <param>
+          <type>const <ref refid="classtvm_1_1te_1_1Stage" kindref="compound">Stage</ref> &amp;</type>
+          <declname>stage</declname>
+        </param>
+        <param>
+          <type>const std::unordered_map&lt; <ref refid="classtvm_1_1tir_1_1IterVar" kindref="compound">IterVar</ref>, <ref refid="classtvm_1_1Range" kindref="compound">Range</ref> &gt; &amp;</type>
+          <declname>realize_map</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classtvm_1_1tir_1_1Stmt" kindref="compound">Stmt</ref> &amp;</type>
+          <declname>body</declname>
+        </param>
+        <briefdescription>
+<para>Build the Realize statement that realizes the op&apos;s output tensors. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>stage</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the op&apos;s stage. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>realize_map</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The realization domain map of the operators. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>body</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The body that is going to get </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>A realization statement that wraps body. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/te/operation.h" line="525" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classtvm_1_1te_1_1HybridOpNode_1a81a2e02ba86fad0ce7d31d0838ac46c0" prot="public" static="no" const="yes" explicit="no" inline="no" final="yes" virt="virtual">
+        <type><ref refid="classtvm_1_1tir_1_1Stmt" kindref="compound">Stmt</ref></type>
+        <definition>Stmt tvm::te::HybridOpNode::BuildProvide</definition>
+        <argsstring>(const Stage &amp;stage, const std::unordered_map&lt; IterVar, Range &gt; &amp;dom_map, bool debug_keep_trivial_loop) const final</argsstring>
+        <name>BuildProvide</name>
+        <reimplements refid="classtvm_1_1te_1_1OperationNode_1a0a4a33f450e0e0890f59af9464c9015f">BuildProvide</reimplements>
+        <param>
+          <type>const <ref refid="classtvm_1_1te_1_1Stage" kindref="compound">Stage</ref> &amp;</type>
+          <declname>stage</declname>
+        </param>
+        <param>
+          <type>const std::unordered_map&lt; <ref refid="classtvm_1_1tir_1_1IterVar" kindref="compound">IterVar</ref>, <ref refid="classtvm_1_1Range" kindref="compound">Range</ref> &gt; &amp;</type>
+          <declname>dom_map</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>debug_keep_trivial_loop</declname>
+        </param>
+        <briefdescription>
+<para>Build the statement that provide the output tensors. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>stage</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The schedule stage of the op. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>dom_map</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The domain map of all iteration domains. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>debug_keep_trivial_loop</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Whether keep trivial loops with extent of 1 </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>A statement that add production and wraps consumer. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/te/operation.h" line="529" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classtvm_1_1te_1_1HybridOpNode_1a7d3899d1fae8ae3877e3361704b4d35e" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void tvm::te::HybridOpNode::VisitAttrs</definition>
+        <argsstring>(AttrVisitor *v)</argsstring>
+        <name>VisitAttrs</name>
+        <param>
+          <type><ref refid="classtvm_1_1AttrVisitor" kindref="compound">AttrVisitor</ref> *</type>
+          <declname>v</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/te/operation.h" line="534" column="1" bodyfile="include/tvm/te/operation.h" bodystart="534" bodyend="542"/>
+      </memberdef>
+      <memberdef kind="function" id="classtvm_1_1te_1_1HybridOpNode_1ac03095adaa19bc5c312b85657d33dadb" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>tvm::te::HybridOpNode::TVM_DECLARE_FINAL_OBJECT_INFO</definition>
+        <argsstring>(HybridOpNode, OperationNode)</argsstring>
+        <name>TVM_DECLARE_FINAL_OBJECT_INFO</name>
+        <param>
+          <type><ref refid="classtvm_1_1te_1_1HybridOpNode" kindref="compound">HybridOpNode</ref></type>
+        </param>
+        <param>
+          <type><ref refid="classtvm_1_1te_1_1OperationNode" kindref="compound">OperationNode</ref></type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/te/operation.h" line="551" column="1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="classtvm_1_1te_1_1HybridOpNode_1acdce863c448a5992b6399650d0305701" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classtvm_1_1te_1_1Operation" kindref="compound">Operation</ref></type>
+        <definition>static Operation tvm::te::HybridOpNode::make</definition>
+        <argsstring>(std::string name, std::string tag, Map&lt; std::string, ObjectRef &gt; attrs, Array&lt; Tensor &gt; inputs, Array&lt; Tensor &gt; outputs, Stmt body)</argsstring>
+        <name>make</name>
+        <param>
+          <type>std::string</type>
+          <declname>name</declname>
+        </param>
+        <param>
+          <type>std::string</type>
+          <declname>tag</declname>
+        </param>
+        <param>
+          <type><ref refid="classtvm_1_1Map" kindref="compound">Map</ref>&lt; std::string, ObjectRef &gt;</type>
+          <declname>attrs</declname>
+        </param>
+        <param>
+          <type><ref refid="classtvm_1_1Array" kindref="compound">Array</ref>&lt; <ref refid="classtvm_1_1te_1_1Tensor" kindref="compound">Tensor</ref> &gt;</type>
+          <declname>inputs</declname>
+        </param>
+        <param>
+          <type><ref refid="classtvm_1_1Array" kindref="compound">Array</ref>&lt; <ref refid="classtvm_1_1te_1_1Tensor" kindref="compound">Tensor</ref> &gt;</type>
+          <declname>outputs</declname>
+        </param>
+        <param>
+          <type><ref refid="classtvm_1_1tir_1_1Stmt" kindref="compound">Stmt</ref></type>
+          <declname>body</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/te/operation.h" line="543" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>A computation operator that generated by hybrid script. </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="5279">
+        <label>Object</label>
+      </node>
+      <node id="5277">
+        <label>tvm::te::OperationNode</label>
+        <link refid="classtvm_1_1te_1_1OperationNode"/>
+        <childnode refid="5278" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="5276">
+        <label>tvm::te::HybridOpNode</label>
+        <link refid="classtvm_1_1te_1_1HybridOpNode"/>
+        <childnode refid="5277" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="5278">
+        <label>tvm::tir::FunctionBaseNode</label>
+        <link refid="classtvm_1_1tir_1_1FunctionBaseNode"/>
+        <childnode refid="5279" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="5285">
+        <label>ObjectRef</label>
+      </node>
+      <node id="5288">
+        <label>tvm::Array&lt; tvm::te::Tensor &gt;</label>
+        <link refid="classtvm_1_1Array"/>
+        <childnode refid="5285" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="5284">
+        <label>tvm::Map&lt; std::string, ObjectRef &gt;</label>
+        <childnode refid="5285" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="5286">
+        <label>tvm::Array&lt; tvm::tir::IterVar &gt;</label>
+        <link refid="classtvm_1_1Array"/>
+        <childnode refid="5285" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="5283">
+        <label>Object</label>
+      </node>
+      <node id="5281">
+        <label>tvm::te::OperationNode</label>
+        <link refid="classtvm_1_1te_1_1OperationNode"/>
+        <childnode refid="5282" relation="public-inheritance">
+        </childnode>
+        <childnode refid="5284" relation="usage">
+          <edgelabel>+attrs</edgelabel>
+        </childnode>
+      </node>
+      <node id="5287">
+        <label>tvm::tir::Stmt</label>
+        <link refid="classtvm_1_1tir_1_1Stmt"/>
+        <childnode refid="5285" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="5280">
+        <label>tvm::te::HybridOpNode</label>
+        <link refid="classtvm_1_1te_1_1HybridOpNode"/>
+        <childnode refid="5281" relation="public-inheritance">
+        </childnode>
+        <childnode refid="5286" relation="usage">
+          <edgelabel>+axis</edgelabel>
+        </childnode>
+        <childnode refid="5287" relation="usage">
+          <edgelabel>+body</edgelabel>
+        </childnode>
+        <childnode refid="5288" relation="usage">
+          <edgelabel>+outputs</edgelabel>
+          <edgelabel>+inputs</edgelabel>
+        </childnode>
+      </node>
+      <node id="5282">
+        <label>tvm::tir::FunctionBaseNode</label>
+        <link refid="classtvm_1_1tir_1_1FunctionBaseNode"/>
+        <childnode refid="5283" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="include/tvm/te/operation.h" line="490" column="1" bodyfile="include/tvm/te/operation.h" bodystart="490" bodyend="552"/>
+    <listofallmembers>
+      <member refid="classtvm_1_1te_1_1HybridOpNode_1a6c61dae889fbe0d6d69f9f168e9271e9" prot="public" virt="non-virtual"><scope>tvm::te::HybridOpNode</scope><name>_type_key</name></member>
+      <member refid="classtvm_1_1te_1_1OperationNode_1a009ebd67a59953ec9a587f9724afd538" prot="public" virt="non-virtual"><scope>tvm::te::HybridOpNode</scope><name>attrs</name></member>
+      <member refid="classtvm_1_1te_1_1HybridOpNode_1ac4fae56982073412415765d9016c3dbd" prot="public" virt="non-virtual"><scope>tvm::te::HybridOpNode</scope><name>axis</name></member>
+      <member refid="classtvm_1_1te_1_1HybridOpNode_1a77124ad0787c8325f9ba556acdb62feb" prot="public" virt="non-virtual"><scope>tvm::te::HybridOpNode</scope><name>body</name></member>
+      <member refid="classtvm_1_1te_1_1HybridOpNode_1a81a2e02ba86fad0ce7d31d0838ac46c0" prot="public" virt="virtual"><scope>tvm::te::HybridOpNode</scope><name>BuildProvide</name></member>
+      <member refid="classtvm_1_1te_1_1HybridOpNode_1ac1c6607a6d13f019792100430a3fa3c7" prot="public" virt="virtual"><scope>tvm::te::HybridOpNode</scope><name>BuildRealize</name></member>
+      <member refid="classtvm_1_1te_1_1OperationNode_1a03b4cec709aed13088b1127a5f90c382" prot="public" virt="virtual"><scope>tvm::te::HybridOpNode</scope><name>func_name</name></member>
+      <member refid="classtvm_1_1te_1_1HybridOpNode_1a2eba0c1f5eacfed42fdb0d6c18123781" prot="public" virt="virtual"><scope>tvm::te::HybridOpNode</scope><name>GatherBound</name></member>
+      <member refid="classtvm_1_1te_1_1HybridOpNode_1a27ebcb81f18ef107b2853efcfb035ad8" prot="public" virt="non-virtual"><scope>tvm::te::HybridOpNode</scope><name>HybridOpNode</name></member>
+      <member refid="classtvm_1_1te_1_1HybridOpNode_1a45104e4a1d31714b9eac76510d33fda5" prot="public" virt="non-virtual"><scope>tvm::te::HybridOpNode</scope><name>inputs</name></member>
+      <member refid="classtvm_1_1te_1_1HybridOpNode_1ab65b2fc27a5574a15ccbfc99849db8a1" prot="public" virt="virtual"><scope>tvm::te::HybridOpNode</scope><name>InputTensors</name></member>
+      <member refid="classtvm_1_1te_1_1HybridOpNode_1acdce863c448a5992b6399650d0305701" prot="public" virt="non-virtual"><scope>tvm::te::HybridOpNode</scope><name>make</name></member>
+      <member refid="classtvm_1_1te_1_1OperationNode_1ad2fd6f140257f7b3c311f88374fa74d2" prot="public" virt="non-virtual"><scope>tvm::te::HybridOpNode</scope><name>name</name></member>
+      <member refid="classtvm_1_1te_1_1HybridOpNode_1aa0ad4d918a2da7686be57ffacaff971c" prot="public" virt="virtual"><scope>tvm::te::HybridOpNode</scope><name>num_outputs</name></member>
+      <member refid="classtvm_1_1te_1_1HybridOpNode_1abb20d82f9d23c18d29b216e2ab836646" prot="public" virt="virtual"><scope>tvm::te::HybridOpNode</scope><name>output_dtype</name></member>
+      <member refid="classtvm_1_1te_1_1HybridOpNode_1ad4a0684999336bce0e8762d0aa15196e" prot="public" virt="virtual"><scope>tvm::te::HybridOpNode</scope><name>output_shape</name></member>
+      <member refid="classtvm_1_1te_1_1HybridOpNode_1a6ff8e6faa8d01063e32a2c124721df29" prot="public" virt="non-virtual"><scope>tvm::te::HybridOpNode</scope><name>outputs</name></member>
+      <member refid="classtvm_1_1te_1_1HybridOpNode_1aa732ebcde9edbc81fdeb286c72cd84fe" prot="public" virt="virtual"><scope>tvm::te::HybridOpNode</scope><name>PropBoundToInputs</name></member>
+      <member refid="classtvm_1_1te_1_1HybridOpNode_1ab46e8dcafa08f1733f9f3f8ebd786100" prot="public" virt="virtual"><scope>tvm::te::HybridOpNode</scope><name>ReplaceInputs</name></member>
+      <member refid="classtvm_1_1te_1_1HybridOpNode_1ade3fee4bd8fd9a06d27b533cc6e09ca2" prot="public" virt="virtual"><scope>tvm::te::HybridOpNode</scope><name>root_iter_vars</name></member>
+      <member refid="classtvm_1_1te_1_1OperationNode_1ae6ac4336e7dc2df84f128fc97a6cdb9b" prot="public" virt="non-virtual"><scope>tvm::te::HybridOpNode</scope><name>tag</name></member>
+      <member refid="classtvm_1_1te_1_1OperationNode_1a281dd659ac061a77c5783bd0e42324df" prot="public" virt="non-virtual"><scope>tvm::te::HybridOpNode</scope><name>TVM_DECLARE_BASE_OBJECT_INFO</name></member>
+      <member refid="classtvm_1_1te_1_1HybridOpNode_1ac03095adaa19bc5c312b85657d33dadb" prot="public" virt="non-virtual"><scope>tvm::te::HybridOpNode</scope><name>TVM_DECLARE_FINAL_OBJECT_INFO</name></member>
+      <member refid="classtvm_1_1te_1_1HybridOpNode_1a7d3899d1fae8ae3877e3361704b4d35e" prot="public" virt="non-virtual"><scope>tvm::te::HybridOpNode</scope><name>VisitAttrs</name></member>
+      <member refid="classtvm_1_1tir_1_1FunctionBaseNode_1a03b2f3fdfc5ae82ca081cf988dac22e4" prot="public" virt="virtual"><scope>tvm::te::HybridOpNode</scope><name>~FunctionBaseNode</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

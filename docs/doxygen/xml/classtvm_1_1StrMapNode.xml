@@ -1,0 +1,108 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="classtvm_1_1StrMapNode" kind="class" language="C++" prot="public">
+    <compoundname>tvm::StrMapNode</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">Object</basecompoundref>
+    <includes refid="node_2container_8h" local="no">container.h</includes>
+      <sectiondef kind="public-type">
+      <memberdef kind="typedef" id="classtvm_1_1StrMapNode_1aecbcb8cc7967c9f4734621e7e6959a77" prot="public" static="no">
+        <type>std::unordered_map&lt; std::string, ObjectRef &gt;</type>
+        <definition>using tvm::StrMapNode::ContainerType =  std::unordered_map&lt;std::string, ObjectRef&gt;</definition>
+        <argsstring></argsstring>
+        <name>ContainerType</name>
+        <briefdescription>
+<para>The corresponding conatiner type. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/node/container.h" line="77" column="1" bodyfile="include/tvm/node/container.h" bodystart="77" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="classtvm_1_1StrMapNode_1a2e0d7690f35ec6f99f850724c81e841f" prot="public" static="no" mutable="no">
+        <type><ref refid="classtvm_1_1StrMapNode_1aecbcb8cc7967c9f4734621e7e6959a77" kindref="member">ContainerType</ref></type>
+        <definition>ContainerType tvm::StrMapNode::data</definition>
+        <argsstring></argsstring>
+        <name>data</name>
+        <briefdescription>
+<para>the data content </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/node/container.h" line="80" column="1" bodyfile="include/tvm/node/container.h" bodystart="80" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-attrib">
+      <memberdef kind="variable" id="classtvm_1_1StrMapNode_1accfa1041faca61e5ef9d77bbf3d73acb" prot="public" static="yes" mutable="no">
+        <type>constexpr const char *</type>
+        <definition>constexpr const char* tvm::StrMapNode::_type_key</definition>
+        <argsstring></argsstring>
+        <name>_type_key</name>
+        <initializer>= &quot;StrMap&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/node/container.h" line="82" column="1" bodyfile="include/tvm/node/container.h" bodystart="82" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classtvm_1_1StrMapNode_1a856676bfa3e57e0679cf4a1b010c22e3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>tvm::StrMapNode::TVM_DECLARE_FINAL_OBJECT_INFO</definition>
+        <argsstring>(StrMapNode, Object)</argsstring>
+        <name>TVM_DECLARE_FINAL_OBJECT_INFO</name>
+        <param>
+          <type><ref refid="classtvm_1_1StrMapNode" kindref="compound">StrMapNode</ref></type>
+        </param>
+        <param>
+          <type>Object</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/node/container.h" line="83" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>specialized map node with string as key </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="7064">
+        <label>tvm::StrMapNode</label>
+        <link refid="classtvm_1_1StrMapNode"/>
+        <childnode refid="7065" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="7065">
+        <label>Object</label>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="7066">
+        <label>tvm::StrMapNode</label>
+        <link refid="classtvm_1_1StrMapNode"/>
+        <childnode refid="7067" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="7067">
+        <label>Object</label>
+      </node>
+    </collaborationgraph>
+    <location file="include/tvm/node/container.h" line="74" column="1" bodyfile="include/tvm/node/container.h" bodystart="74" bodyend="84"/>
+    <listofallmembers>
+      <member refid="classtvm_1_1StrMapNode_1accfa1041faca61e5ef9d77bbf3d73acb" prot="public" virt="non-virtual"><scope>tvm::StrMapNode</scope><name>_type_key</name></member>
+      <member refid="classtvm_1_1StrMapNode_1aecbcb8cc7967c9f4734621e7e6959a77" prot="public" virt="non-virtual"><scope>tvm::StrMapNode</scope><name>ContainerType</name></member>
+      <member refid="classtvm_1_1StrMapNode_1a2e0d7690f35ec6f99f850724c81e841f" prot="public" virt="non-virtual"><scope>tvm::StrMapNode</scope><name>data</name></member>
+      <member refid="classtvm_1_1StrMapNode_1a856676bfa3e57e0679cf4a1b010c22e3" prot="public" virt="non-virtual"><scope>tvm::StrMapNode</scope><name>TVM_DECLARE_FINAL_OBJECT_INFO</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

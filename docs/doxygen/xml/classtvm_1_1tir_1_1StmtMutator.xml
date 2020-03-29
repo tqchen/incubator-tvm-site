@@ -1,0 +1,469 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="classtvm_1_1tir_1_1StmtMutator" kind="class" language="C++" prot="public">
+    <compoundname>tvm::tir::StmtMutator</compoundname>
+    <basecompoundref refid="classtvm_1_1tir_1_1StmtFunctor" prot="protected" virt="non-virtual">tvm::tir::StmtFunctor&lt; Stmt(const Stmt &amp;)&gt;</basecompoundref>
+    <derivedcompoundref refid="classtvm_1_1tir_1_1StmtExprMutator" prot="public" virt="non-virtual">tvm::tir::StmtExprMutator</derivedcompoundref>
+    <includes refid="stmt__functor_8h" local="no">stmt_functor.h</includes>
+      <sectiondef kind="protected-attrib">
+      <memberdef kind="variable" id="classtvm_1_1tir_1_1StmtMutator_1a620e6041832441d25ee4f4d65921231f" prot="protected" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool tvm::tir::StmtMutator::allow_copy_on_write_</definition>
+        <argsstring></argsstring>
+        <name>allow_copy_on_write_</name>
+        <initializer>{false}</initializer>
+        <briefdescription>
+<para>Internal state to indicate whether copy on write is enabled. COW is enabled iff all the parents of the node are unique. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/tir/stmt_functor.h" line="197" column="1" bodyfile="include/tvm/tir/stmt_functor.h" bodystart="197" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classtvm_1_1tir_1_1StmtMutator_1a18e378023df3122893ffaf50bb89464e" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classtvm_1_1tir_1_1Stmt" kindref="compound">Stmt</ref></type>
+        <definition>Stmt tvm::tir::StmtMutator::operator()</definition>
+        <argsstring>(Stmt stmt)</argsstring>
+        <name>operator()</name>
+        <param>
+          <type><ref refid="classtvm_1_1tir_1_1Stmt" kindref="compound">Stmt</ref></type>
+          <declname>stmt</declname>
+        </param>
+        <briefdescription>
+<para>Mutate stmt. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>stmt</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The input statement to be mutated. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The result of the call </para></simplesect>
+<simplesect kind="note"><para>It is important that stmt is passed by value. so copy on write can be triggered correctly. do mutator(std::move(stmt)) or when copy elison is triggered. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/tir/stmt_functor.h" line="181" column="1" bodyfile="include/tvm/tir/stmt_functor.h" bodystart="181" bodyend="184"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="protected-func">
+      <memberdef kind="function" id="classtvm_1_1tir_1_1StmtMutator_1a8dfe0e96ba9d3b4cd08e57c20c1eb414" prot="protected" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename TNode</type>
+          </param>
+        </templateparamlist>
+        <type>ObjectPtr&lt; TNode &gt;</type>
+        <definition>ObjectPtr&lt;TNode&gt; tvm::tir::StmtMutator::CopyOnWrite</definition>
+        <argsstring>(const TNode *node)</argsstring>
+        <name>CopyOnWrite</name>
+        <param>
+          <type>const TNode *</type>
+          <declname>node</declname>
+        </param>
+        <briefdescription>
+<para>Perform copy on write on node. </para>        </briefdescription>
+        <detaileddescription>
+<para>If CopyOnWrite is allowed, directly return a strong reference to the node container. Otherwise, return a copy of the node.</para><para><simplesect kind="return"><para>The result object pointer. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/tir/stmt_functor.h" line="208" column="1" bodyfile="include/tvm/tir/stmt_functor.h" bodystart="208" bodyend="217"/>
+      </memberdef>
+      <memberdef kind="function" id="classtvm_1_1tir_1_1StmtMutator_1a4306d1beba05fa1ac582503498a6d7ce" prot="protected" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classtvm_1_1tir_1_1Stmt" kindref="compound">Stmt</ref></type>
+        <definition>Stmt tvm::tir::StmtMutator::VisitStmt</definition>
+        <argsstring>(const Stmt &amp;stmt) override</argsstring>
+        <name>VisitStmt</name>
+        <param>
+          <type>const <ref refid="classtvm_1_1tir_1_1Stmt" kindref="compound">Stmt</ref> &amp;</type>
+          <declname>stmt</declname>
+        </param>
+        <briefdescription>
+<para>Internal mutator that everyone calls. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="note"><para>To override mutate&apos;s behavior, override VisitExpr instead. </para></simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>stmt</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The input stmt. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The mutated results. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/tir/stmt_functor.h" line="224" column="1" bodyfile="include/tvm/tir/stmt_functor.h" bodystart="224" bodyend="233"/>
+      </memberdef>
+      <memberdef kind="function" id="classtvm_1_1tir_1_1StmtMutator_1ad7864f64476c846a8023fdba1188b74e" prot="protected" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type><ref refid="classtvm_1_1PrimExpr" kindref="compound">PrimExpr</ref></type>
+        <definition>virtual PrimExpr tvm::tir::StmtMutator::VisitExpr</definition>
+        <argsstring>(const PrimExpr &amp;e)</argsstring>
+        <name>VisitExpr</name>
+        <reimplementedby refid="classtvm_1_1tir_1_1StmtExprMutator_1afc4dedb17cb5f2057fc8200e6c298fab">VisitExpr</reimplementedby>
+        <param>
+          <type>const <ref refid="classtvm_1_1PrimExpr" kindref="compound">PrimExpr</ref> &amp;</type>
+          <declname>e</declname>
+        </param>
+        <briefdescription>
+<para>Visitor to Exprs, can be overriden to do recursive changes to Exprs. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="note"><para>A common pattern is to call <ref refid="classtvm_1_1tir_1_1ExprMutator" kindref="compound">ExprMutator</ref> here, or have a class sub-class both <ref refid="classtvm_1_1tir_1_1StmtMutator" kindref="compound">StmtMutator</ref> and <ref refid="classtvm_1_1tir_1_1ExprMutator" kindref="compound">ExprMutator</ref> and redirect Mutate to ExprMutator::Mutate(Expr) </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/tir/stmt_functor.h" line="241" column="1" bodyfile="include/tvm/tir/stmt_functor.h" bodystart="241" bodyend="243"/>
+      </memberdef>
+      <memberdef kind="function" id="classtvm_1_1tir_1_1StmtMutator_1ac22f8d85fc78d756b8e11e53eb1bf2df" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classtvm_1_1tir_1_1Stmt" kindref="compound">Stmt</ref></type>
+        <definition>Stmt tvm::tir::StmtMutator::VisitStmt_</definition>
+        <argsstring>(const AttrStmtNode *op) override</argsstring>
+        <name>VisitStmt_</name>
+        <param>
+          <type>const <ref refid="classtvm_1_1tir_1_1AttrStmtNode" kindref="compound">AttrStmtNode</ref> *</type>
+          <declname>op</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/tir/stmt_functor.h" line="245" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classtvm_1_1tir_1_1StmtMutator_1a7bc8fad1381862ce012819bd4762a1b6" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classtvm_1_1tir_1_1Stmt" kindref="compound">Stmt</ref></type>
+        <definition>Stmt tvm::tir::StmtMutator::VisitStmt_</definition>
+        <argsstring>(const IfThenElseNode *op) override</argsstring>
+        <name>VisitStmt_</name>
+        <param>
+          <type>const <ref refid="classtvm_1_1tir_1_1IfThenElseNode" kindref="compound">IfThenElseNode</ref> *</type>
+          <declname>op</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/tir/stmt_functor.h" line="246" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classtvm_1_1tir_1_1StmtMutator_1a51d66e88ec3779c117bab5ba9406091c" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classtvm_1_1tir_1_1Stmt" kindref="compound">Stmt</ref></type>
+        <definition>Stmt tvm::tir::StmtMutator::VisitStmt_</definition>
+        <argsstring>(const LetStmtNode *op) override</argsstring>
+        <name>VisitStmt_</name>
+        <param>
+          <type>const <ref refid="classtvm_1_1tir_1_1LetStmtNode" kindref="compound">LetStmtNode</ref> *</type>
+          <declname>op</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/tir/stmt_functor.h" line="247" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classtvm_1_1tir_1_1StmtMutator_1afad3009a7d05a345ca868a980f58b9ca" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classtvm_1_1tir_1_1Stmt" kindref="compound">Stmt</ref></type>
+        <definition>Stmt tvm::tir::StmtMutator::VisitStmt_</definition>
+        <argsstring>(const ForNode *op) override</argsstring>
+        <name>VisitStmt_</name>
+        <param>
+          <type>const <ref refid="classtvm_1_1tir_1_1ForNode" kindref="compound">ForNode</ref> *</type>
+          <declname>op</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/tir/stmt_functor.h" line="248" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classtvm_1_1tir_1_1StmtMutator_1ab094e88d4bda5882756d136c15db6260" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classtvm_1_1tir_1_1Stmt" kindref="compound">Stmt</ref></type>
+        <definition>Stmt tvm::tir::StmtMutator::VisitStmt_</definition>
+        <argsstring>(const AllocateNode *op) override</argsstring>
+        <name>VisitStmt_</name>
+        <param>
+          <type>const <ref refid="classtvm_1_1tir_1_1AllocateNode" kindref="compound">AllocateNode</ref> *</type>
+          <declname>op</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/tir/stmt_functor.h" line="249" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classtvm_1_1tir_1_1StmtMutator_1a3b116212aaf79bc898f3446a35f7fd3e" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classtvm_1_1tir_1_1Stmt" kindref="compound">Stmt</ref></type>
+        <definition>Stmt tvm::tir::StmtMutator::VisitStmt_</definition>
+        <argsstring>(const StoreNode *op) override</argsstring>
+        <name>VisitStmt_</name>
+        <param>
+          <type>const <ref refid="classtvm_1_1tir_1_1StoreNode" kindref="compound">StoreNode</ref> *</type>
+          <declname>op</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/tir/stmt_functor.h" line="250" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classtvm_1_1tir_1_1StmtMutator_1a0cb470550bb15df90ced3e95961ad3d7" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classtvm_1_1tir_1_1Stmt" kindref="compound">Stmt</ref></type>
+        <definition>Stmt tvm::tir::StmtMutator::VisitStmt_</definition>
+        <argsstring>(const FreeNode *op) override</argsstring>
+        <name>VisitStmt_</name>
+        <param>
+          <type>const <ref refid="classtvm_1_1tir_1_1FreeNode" kindref="compound">FreeNode</ref> *</type>
+          <declname>op</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/tir/stmt_functor.h" line="251" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classtvm_1_1tir_1_1StmtMutator_1aa3a94c8b418881f10d855592b847c2e7" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classtvm_1_1tir_1_1Stmt" kindref="compound">Stmt</ref></type>
+        <definition>Stmt tvm::tir::StmtMutator::VisitStmt_</definition>
+        <argsstring>(const AssertStmtNode *op) override</argsstring>
+        <name>VisitStmt_</name>
+        <param>
+          <type>const <ref refid="classtvm_1_1tir_1_1AssertStmtNode" kindref="compound">AssertStmtNode</ref> *</type>
+          <declname>op</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/tir/stmt_functor.h" line="252" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classtvm_1_1tir_1_1StmtMutator_1a4474981a7a3ff050b0013e7249a99a04" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classtvm_1_1tir_1_1Stmt" kindref="compound">Stmt</ref></type>
+        <definition>Stmt tvm::tir::StmtMutator::VisitStmt_</definition>
+        <argsstring>(const ProducerConsumerNode *op) override</argsstring>
+        <name>VisitStmt_</name>
+        <param>
+          <type>const <ref refid="classtvm_1_1tir_1_1ProducerConsumerNode" kindref="compound">ProducerConsumerNode</ref> *</type>
+          <declname>op</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/tir/stmt_functor.h" line="253" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classtvm_1_1tir_1_1StmtMutator_1abcdd396a82232cb6a1e2031f28be380e" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classtvm_1_1tir_1_1Stmt" kindref="compound">Stmt</ref></type>
+        <definition>Stmt tvm::tir::StmtMutator::VisitStmt_</definition>
+        <argsstring>(const ProvideNode *op) override</argsstring>
+        <name>VisitStmt_</name>
+        <param>
+          <type>const <ref refid="classtvm_1_1tir_1_1ProvideNode" kindref="compound">ProvideNode</ref> *</type>
+          <declname>op</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/tir/stmt_functor.h" line="254" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classtvm_1_1tir_1_1StmtMutator_1a83bc8d9f6cb1137ee1de48164329969c" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classtvm_1_1tir_1_1Stmt" kindref="compound">Stmt</ref></type>
+        <definition>Stmt tvm::tir::StmtMutator::VisitStmt_</definition>
+        <argsstring>(const RealizeNode *op) override</argsstring>
+        <name>VisitStmt_</name>
+        <param>
+          <type>const <ref refid="classtvm_1_1tir_1_1RealizeNode" kindref="compound">RealizeNode</ref> *</type>
+          <declname>op</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/tir/stmt_functor.h" line="255" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classtvm_1_1tir_1_1StmtMutator_1aecd16bf1a6715ea36f6c30e5dc2ceae7" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classtvm_1_1tir_1_1Stmt" kindref="compound">Stmt</ref></type>
+        <definition>Stmt tvm::tir::StmtMutator::VisitStmt_</definition>
+        <argsstring>(const PrefetchNode *op) override</argsstring>
+        <name>VisitStmt_</name>
+        <param>
+          <type>const <ref refid="classtvm_1_1tir_1_1PrefetchNode" kindref="compound">PrefetchNode</ref> *</type>
+          <declname>op</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/tir/stmt_functor.h" line="256" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classtvm_1_1tir_1_1StmtMutator_1a60b18d6d6bfcb692ab4a369465a175a3" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classtvm_1_1tir_1_1Stmt" kindref="compound">Stmt</ref></type>
+        <definition>Stmt tvm::tir::StmtMutator::VisitStmt_</definition>
+        <argsstring>(const SeqStmtNode *op) override</argsstring>
+        <name>VisitStmt_</name>
+        <param>
+          <type>const <ref refid="classtvm_1_1tir_1_1SeqStmtNode" kindref="compound">SeqStmtNode</ref> *</type>
+          <declname>op</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/tir/stmt_functor.h" line="257" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classtvm_1_1tir_1_1StmtMutator_1a2ec423a8f109916abf02ac463308f58a" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classtvm_1_1tir_1_1Stmt" kindref="compound">Stmt</ref></type>
+        <definition>Stmt tvm::tir::StmtMutator::VisitStmt_</definition>
+        <argsstring>(const EvaluateNode *op) override</argsstring>
+        <name>VisitStmt_</name>
+        <param>
+          <type>const <ref refid="classtvm_1_1tir_1_1EvaluateNode" kindref="compound">EvaluateNode</ref> *</type>
+          <declname>op</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/tir/stmt_functor.h" line="258" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classtvm_1_1tir_1_1StmtMutator_1a1e24adea3e49d9381246b376349db51f" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classtvm_1_1tir_1_1Stmt" kindref="compound">Stmt</ref></type>
+        <definition>Stmt tvm::tir::StmtMutator::VisitSeqStmt_</definition>
+        <argsstring>(const SeqStmtNode *op, bool flatten_before_visit, std::function&lt; Stmt(const Stmt &amp;)&gt; fmutate=nullptr)</argsstring>
+        <name>VisitSeqStmt_</name>
+        <param>
+          <type>const <ref refid="classtvm_1_1tir_1_1SeqStmtNode" kindref="compound">SeqStmtNode</ref> *</type>
+          <declname>op</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>flatten_before_visit</declname>
+        </param>
+        <param>
+          <type>std::function&lt; <ref refid="classtvm_1_1tir_1_1Stmt" kindref="compound">Stmt</ref>(const <ref refid="classtvm_1_1tir_1_1Stmt" kindref="compound">Stmt</ref> &amp;)&gt;</type>
+          <declname>fmutate</declname>
+          <defval>nullptr</defval>
+        </param>
+        <briefdescription>
+<para>Alternative advance method for <ref refid="classtvm_1_1tir_1_1SeqStmtNode" kindref="compound">SeqStmtNode</ref>. </para>        </briefdescription>
+        <detaileddescription>
+<para>This function can be called when a child class override <ref refid="classtvm_1_1tir_1_1StmtMutator_1a60b18d6d6bfcb692ab4a369465a175a3" kindref="member">VisitStmt_(const SeqStmtNode*)</ref> to introduce the special behavior to visit</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>op</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The sequence. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>flatten_before_visit</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Whether to flatten the sequence before visit. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>fmutate</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The mutate function, can be nullptr, which defaults to Visit. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The mutated result. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/tir/stmt_functor.h" line="271" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para><ref refid="classtvm_1_1tir_1_1StmtMutator" kindref="compound">StmtMutator</ref> that mutates the statements. </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="6989">
+        <label>tvm::tir::StmtMutator</label>
+        <link refid="classtvm_1_1tir_1_1StmtMutator"/>
+        <childnode refid="6990" relation="protected-inheritance">
+        </childnode>
+      </node>
+      <node id="6991">
+        <label>tvm::tir::StmtExprMutator</label>
+        <link refid="classtvm_1_1tir_1_1StmtExprMutator"/>
+        <childnode refid="6989" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="6990">
+        <label>tvm::tir::StmtFunctor&lt; Stmt(const Stmt &amp;)&gt;</label>
+        <link refid="classtvm_1_1tir_1_1StmtFunctor"/>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="6992">
+        <label>tvm::tir::StmtMutator</label>
+        <link refid="classtvm_1_1tir_1_1StmtMutator"/>
+        <childnode refid="6993" relation="protected-inheritance">
+        </childnode>
+      </node>
+      <node id="6993">
+        <label>tvm::tir::StmtFunctor&lt; Stmt(const Stmt &amp;)&gt;</label>
+        <link refid="classtvm_1_1tir_1_1StmtFunctor"/>
+      </node>
+    </collaborationgraph>
+    <location file="include/tvm/tir/stmt_functor.h" line="171" column="1" bodyfile="include/tvm/tir/stmt_functor.h" bodystart="170" bodyend="276"/>
+    <listofallmembers>
+      <member refid="classtvm_1_1tir_1_1StmtMutator_1a620e6041832441d25ee4f4d65921231f" prot="protected" virt="non-virtual"><scope>tvm::tir::StmtMutator</scope><name>allow_copy_on_write_</name></member>
+      <member refid="classtvm_1_1tir_1_1StmtMutator_1a8dfe0e96ba9d3b4cd08e57c20c1eb414" prot="protected" virt="non-virtual"><scope>tvm::tir::StmtMutator</scope><name>CopyOnWrite</name></member>
+      <member refid="classtvm_1_1tir_1_1StmtMutator_1a18e378023df3122893ffaf50bb89464e" prot="public" virt="non-virtual"><scope>tvm::tir::StmtMutator</scope><name>operator()</name></member>
+      <member refid="classtvm_1_1tir_1_1StmtMutator_1ad7864f64476c846a8023fdba1188b74e" prot="protected" virt="virtual"><scope>tvm::tir::StmtMutator</scope><name>VisitExpr</name></member>
+      <member refid="classtvm_1_1tir_1_1StmtMutator_1a1e24adea3e49d9381246b376349db51f" prot="protected" virt="non-virtual"><scope>tvm::tir::StmtMutator</scope><name>VisitSeqStmt_</name></member>
+      <member refid="classtvm_1_1tir_1_1StmtMutator_1a4306d1beba05fa1ac582503498a6d7ce" prot="protected" virt="non-virtual"><scope>tvm::tir::StmtMutator</scope><name>VisitStmt</name></member>
+      <member refid="classtvm_1_1tir_1_1StmtMutator_1ac22f8d85fc78d756b8e11e53eb1bf2df" prot="protected" virt="non-virtual"><scope>tvm::tir::StmtMutator</scope><name>VisitStmt_</name></member>
+      <member refid="classtvm_1_1tir_1_1StmtMutator_1a7bc8fad1381862ce012819bd4762a1b6" prot="protected" virt="non-virtual"><scope>tvm::tir::StmtMutator</scope><name>VisitStmt_</name></member>
+      <member refid="classtvm_1_1tir_1_1StmtMutator_1a51d66e88ec3779c117bab5ba9406091c" prot="protected" virt="non-virtual"><scope>tvm::tir::StmtMutator</scope><name>VisitStmt_</name></member>
+      <member refid="classtvm_1_1tir_1_1StmtMutator_1afad3009a7d05a345ca868a980f58b9ca" prot="protected" virt="non-virtual"><scope>tvm::tir::StmtMutator</scope><name>VisitStmt_</name></member>
+      <member refid="classtvm_1_1tir_1_1StmtMutator_1ab094e88d4bda5882756d136c15db6260" prot="protected" virt="non-virtual"><scope>tvm::tir::StmtMutator</scope><name>VisitStmt_</name></member>
+      <member refid="classtvm_1_1tir_1_1StmtMutator_1a3b116212aaf79bc898f3446a35f7fd3e" prot="protected" virt="non-virtual"><scope>tvm::tir::StmtMutator</scope><name>VisitStmt_</name></member>
+      <member refid="classtvm_1_1tir_1_1StmtMutator_1a0cb470550bb15df90ced3e95961ad3d7" prot="protected" virt="non-virtual"><scope>tvm::tir::StmtMutator</scope><name>VisitStmt_</name></member>
+      <member refid="classtvm_1_1tir_1_1StmtMutator_1aa3a94c8b418881f10d855592b847c2e7" prot="protected" virt="non-virtual"><scope>tvm::tir::StmtMutator</scope><name>VisitStmt_</name></member>
+      <member refid="classtvm_1_1tir_1_1StmtMutator_1a4474981a7a3ff050b0013e7249a99a04" prot="protected" virt="non-virtual"><scope>tvm::tir::StmtMutator</scope><name>VisitStmt_</name></member>
+      <member refid="classtvm_1_1tir_1_1StmtMutator_1abcdd396a82232cb6a1e2031f28be380e" prot="protected" virt="non-virtual"><scope>tvm::tir::StmtMutator</scope><name>VisitStmt_</name></member>
+      <member refid="classtvm_1_1tir_1_1StmtMutator_1a83bc8d9f6cb1137ee1de48164329969c" prot="protected" virt="non-virtual"><scope>tvm::tir::StmtMutator</scope><name>VisitStmt_</name></member>
+      <member refid="classtvm_1_1tir_1_1StmtMutator_1aecd16bf1a6715ea36f6c30e5dc2ceae7" prot="protected" virt="non-virtual"><scope>tvm::tir::StmtMutator</scope><name>VisitStmt_</name></member>
+      <member refid="classtvm_1_1tir_1_1StmtMutator_1a60b18d6d6bfcb692ab4a369465a175a3" prot="protected" virt="non-virtual"><scope>tvm::tir::StmtMutator</scope><name>VisitStmt_</name></member>
+      <member refid="classtvm_1_1tir_1_1StmtMutator_1a2ec423a8f109916abf02ac463308f58a" prot="protected" virt="non-virtual"><scope>tvm::tir::StmtMutator</scope><name>VisitStmt_</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

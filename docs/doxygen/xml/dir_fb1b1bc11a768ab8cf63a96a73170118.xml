@@ -1,0 +1,12 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="dir_fb1b1bc11a768ab8cf63a96a73170118" kind="dir">
+    <compoundname>include/tvm/support</compoundname>
+    <innerfile refid="with_8h">with.h</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="include/tvm/support/"/>
+  </compounddef>
+</doxygen>

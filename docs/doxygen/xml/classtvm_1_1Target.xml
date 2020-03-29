@@ -1,0 +1,218 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="classtvm_1_1Target" kind="class" language="C++" prot="public">
+    <compoundname>tvm::Target</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">ObjectRef</basecompoundref>
+    <includes refid="target_8h" local="no">target.h</includes>
+      <sectiondef kind="public-type">
+      <memberdef kind="typedef" id="classtvm_1_1Target_1aeb3fa7acc93ba5f47ea49d30d14fbf65" prot="public" static="no">
+        <type><ref refid="classtvm_1_1TargetNode" kindref="compound">TargetNode</ref></type>
+        <definition>using tvm::Target::ContainerType =  TargetNode</definition>
+        <argsstring></argsstring>
+        <name>ContainerType</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/target/target.h" line="119" column="1" bodyfile="include/tvm/target/target.h" bodystart="119" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="friend">
+      <memberdef kind="friend" id="classtvm_1_1Target_1a8bde6eb35df6b3a9f53810e0bc79fdfd" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>friend class</type>
+        <definition>friend class Internal</definition>
+        <argsstring></argsstring>
+        <name>Internal</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/target/target.h" line="123" column="1" bodyfile="include/tvm/target/target.h" bodystart="120" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="friend" id="classtvm_1_1Target_1aba1b161cfd80c2ac8c5ecf65a27e7c56" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>friend class</type>
+        <definition>friend class With&lt; Target &gt;</definition>
+        <argsstring></argsstring>
+        <name>With&lt; Target &gt;</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/target/target.h" line="123" column="1" bodyfile="include/tvm/target/target.h" bodystart="124" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classtvm_1_1Target_1a38e57f96a834847f3c1d3e989c28bde0" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>tvm::Target::Target</definition>
+        <argsstring>()</argsstring>
+        <name>Target</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/target/target.h" line="98" column="1" bodyfile="include/tvm/target/target.h" bodystart="98" bodyend="98"/>
+      </memberdef>
+      <memberdef kind="function" id="classtvm_1_1Target_1a37092add55b8d783bd4384eae6e37c42" prot="public" static="no" const="no" explicit="yes" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>tvm::Target::Target</definition>
+        <argsstring>(ObjectPtr&lt; Object &gt; n)</argsstring>
+        <name>Target</name>
+        <param>
+          <type>ObjectPtr&lt; Object &gt;</type>
+          <declname>n</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/target/target.h" line="99" column="1" bodyfile="include/tvm/target/target.h" bodystart="99" bodyend="99"/>
+      </memberdef>
+      <memberdef kind="function" id="classtvm_1_1Target_1a610d7c40d9652d795f9de161ca42ffb6" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>const <ref refid="classtvm_1_1TargetNode" kindref="compound">TargetNode</ref> *</type>
+        <definition>const TargetNode* tvm::Target::operator-&gt;</definition>
+        <argsstring>() const </argsstring>
+        <name>operator-&gt;</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/target/target.h" line="115" column="1" bodyfile="include/tvm/target/target.h" bodystart="115" bodyend="117"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="classtvm_1_1Target_1a3c78117b29f64fe1c5c60473a9d4daae" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classtvm_1_1Target" kindref="compound">Target</ref></type>
+        <definition>static Target tvm::Target::Create</definition>
+        <argsstring>(const std::string &amp;target_str)</argsstring>
+        <name>Create</name>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>target_str</declname>
+        </param>
+        <briefdescription>
+<para>Create a <ref refid="classtvm_1_1Target" kindref="compound">Target</ref> given a string. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>target_str</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the string to parse </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/target/target.h" line="104" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classtvm_1_1Target_1abed5e5cfb5d36e70ea5eaadef9fb63b2" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classtvm_1_1Target" kindref="compound">tvm::Target</ref></type>
+        <definition>static tvm::Target tvm::Target::Current</definition>
+        <argsstring>(bool allow_not_defined=true)</argsstring>
+        <name>Current</name>
+        <param>
+          <type>bool</type>
+          <declname>allow_not_defined</declname>
+          <defval>true</defval>
+        </param>
+        <briefdescription>
+<para>Get the current target context from thread local storage. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>allow_not_defined</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>If the context stack is empty and this is set to true, an undefined <ref refid="classtvm_1_1Target" kindref="compound">Target</ref> will be returned. Otherwise, an empty context stack will cause a runtime error. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The target that is the current context. The target may not be defined if allow_not_defined is true. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/target/target.h" line="113" column="1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="classtvm_1_1Target_1a2b18f69b06500a3387a9870e73c2828a" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void tvm::Target::EnterWithScope</definition>
+        <argsstring>()</argsstring>
+        <name>EnterWithScope</name>
+        <briefdescription>
+<para>Push a new target context onto the thread local stack. The <ref refid="classtvm_1_1Target" kindref="compound">Target</ref> on top of the stack is used to determine which specialization to use when invoking a <ref refid="classtvm_1_1GenericFunc" kindref="compound">GenericFunc</ref>. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/target/target.h" line="130" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classtvm_1_1Target_1af37e863bce2f6db49ed8742f9c4d2ec2" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void tvm::Target::ExitWithScope</definition>
+        <argsstring>()</argsstring>
+        <name>ExitWithScope</name>
+        <briefdescription>
+<para>Pop a target off the thread local context stack, restoring the previous target as the current context. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/target/target.h" line="135" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Managed reference class to <ref refid="classtvm_1_1TargetNode" kindref="compound">TargetNode</ref>. </para>    </briefdescription>
+    <detaileddescription>
+<para><simplesect kind="see"><para><ref refid="classtvm_1_1TargetNode" kindref="compound">TargetNode</ref> </para></simplesect>
+</para>    </detaileddescription>
+    <inheritancegraph>
+      <node id="7114">
+        <label>ObjectRef</label>
+      </node>
+      <node id="7113">
+        <label>tvm::Target</label>
+        <link refid="classtvm_1_1Target"/>
+        <childnode refid="7114" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="7116">
+        <label>ObjectRef</label>
+      </node>
+      <node id="7115">
+        <label>tvm::Target</label>
+        <link refid="classtvm_1_1Target"/>
+        <childnode refid="7116" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="include/tvm/target/target.h" line="96" column="1" bodyfile="include/tvm/target/target.h" bodystart="96" bodyend="136"/>
+    <listofallmembers>
+      <member refid="classtvm_1_1Target_1aeb3fa7acc93ba5f47ea49d30d14fbf65" prot="public" virt="non-virtual"><scope>tvm::Target</scope><name>ContainerType</name></member>
+      <member refid="classtvm_1_1Target_1a3c78117b29f64fe1c5c60473a9d4daae" prot="public" virt="non-virtual"><scope>tvm::Target</scope><name>Create</name></member>
+      <member refid="classtvm_1_1Target_1abed5e5cfb5d36e70ea5eaadef9fb63b2" prot="public" virt="non-virtual"><scope>tvm::Target</scope><name>Current</name></member>
+      <member refid="classtvm_1_1Target_1a2b18f69b06500a3387a9870e73c2828a" prot="private" virt="non-virtual"><scope>tvm::Target</scope><name>EnterWithScope</name></member>
+      <member refid="classtvm_1_1Target_1af37e863bce2f6db49ed8742f9c4d2ec2" prot="private" virt="non-virtual"><scope>tvm::Target</scope><name>ExitWithScope</name></member>
+      <member refid="classtvm_1_1Target_1a8bde6eb35df6b3a9f53810e0bc79fdfd" prot="private" virt="non-virtual"><scope>tvm::Target</scope><name>Internal</name></member>
+      <member refid="classtvm_1_1Target_1a610d7c40d9652d795f9de161ca42ffb6" prot="public" virt="non-virtual"><scope>tvm::Target</scope><name>operator-&gt;</name></member>
+      <member refid="classtvm_1_1Target_1a38e57f96a834847f3c1d3e989c28bde0" prot="public" virt="non-virtual"><scope>tvm::Target</scope><name>Target</name></member>
+      <member refid="classtvm_1_1Target_1a37092add55b8d783bd4384eae6e37c42" prot="public" virt="non-virtual"><scope>tvm::Target</scope><name>Target</name></member>
+      <member refid="classtvm_1_1Target_1aba1b161cfd80c2ac8c5ecf65a27e7c56" prot="private" virt="non-virtual"><scope>tvm::Target</scope><name>With&lt; Target &gt;</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

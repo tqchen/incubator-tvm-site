@@ -1,0 +1,81 @@
+\hypertarget{structtvm_1_1relay_1_1StructuralHash}{}\section{tvm\+:\+:relay\+:\+:Structural\+Hash Struct Reference}
+\label{structtvm_1_1relay_1_1StructuralHash}\index{tvm\+::relay\+::\+Structural\+Hash@{tvm\+::relay\+::\+Structural\+Hash}}
+
+
+A hashing structure in the style of std\+::hash.  
+
+
+
+
+{\ttfamily \#include $<$analysis.\+h$>$}
+
+
+
+Collaboration diagram for tvm\+:\+:relay\+:\+:Structural\+Hash\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=222pt]{structtvm_1_1relay_1_1StructuralHash__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+size\+\_\+t \hyperlink{structtvm_1_1relay_1_1StructuralHash_a9a5df8e3b2ebcd69388f18beaba2d3f5}{operator()} (const \hyperlink{namespacetvm_1_1relay_a661d95f170bca230773914caeef3fe52}{Type} \&type) const 
+\begin{DoxyCompactList}\small\item\em Hash a Relay type. \end{DoxyCompactList}\item 
+size\+\_\+t \hyperlink{structtvm_1_1relay_1_1StructuralHash_a1789787a993785ce3f3b1bde05bea4ee}{operator()} (const \hyperlink{namespacetvm_1_1relay_a5b84e3790f89bb3fad5c7911eeb99531}{Expr} \&expr) const 
+\begin{DoxyCompactList}\small\item\em Hash a Relay expression. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+A hashing structure in the style of std\+::hash. 
+
+\subsection{Member Function Documentation}
+\index{tvm\+::relay\+::\+Structural\+Hash@{tvm\+::relay\+::\+Structural\+Hash}!operator()@{operator()}}
+\index{operator()@{operator()}!tvm\+::relay\+::\+Structural\+Hash@{tvm\+::relay\+::\+Structural\+Hash}}
+\subsubsection[{\texorpdfstring{operator()(const Type \&type) const }{operator()(const Type &type) const }}]{\setlength{\rightskip}{0pt plus 5cm}size\+\_\+t tvm\+::relay\+::\+Structural\+Hash\+::operator() (
+\begin{DoxyParamCaption}
+\item[{const {\bf Type} \&}]{type}
+\end{DoxyParamCaption}
+) const}\hypertarget{structtvm_1_1relay_1_1StructuralHash_a9a5df8e3b2ebcd69388f18beaba2d3f5}{}\label{structtvm_1_1relay_1_1StructuralHash_a9a5df8e3b2ebcd69388f18beaba2d3f5}
+
+
+Hash a Relay type. 
+
+Implements structural hashing of a Relay type.
+
+
+\begin{DoxyParams}{Parameters}
+{\em type} & the type to hash.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the hash value. 
+\end{DoxyReturn}
+\index{tvm\+::relay\+::\+Structural\+Hash@{tvm\+::relay\+::\+Structural\+Hash}!operator()@{operator()}}
+\index{operator()@{operator()}!tvm\+::relay\+::\+Structural\+Hash@{tvm\+::relay\+::\+Structural\+Hash}}
+\subsubsection[{\texorpdfstring{operator()(const Expr \&expr) const }{operator()(const Expr &expr) const }}]{\setlength{\rightskip}{0pt plus 5cm}size\+\_\+t tvm\+::relay\+::\+Structural\+Hash\+::operator() (
+\begin{DoxyParamCaption}
+\item[{const {\bf Expr} \&}]{expr}
+\end{DoxyParamCaption}
+) const}\hypertarget{structtvm_1_1relay_1_1StructuralHash_a1789787a993785ce3f3b1bde05bea4ee}{}\label{structtvm_1_1relay_1_1StructuralHash_a1789787a993785ce3f3b1bde05bea4ee}
+
+
+Hash a Relay expression. 
+
+Implements structural hashing of a Relay expression.
+
+
+\begin{DoxyParams}{Parameters}
+{\em expr} & the expression to hash.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the hash value. 
+\end{DoxyReturn}
+
+
+The documentation for this struct was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+include/tvm/relay/\hyperlink{analysis_8h}{analysis.\+h}\end{DoxyCompactItemize}

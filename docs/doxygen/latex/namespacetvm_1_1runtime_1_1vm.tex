@@ -1,0 +1,138 @@
+\hypertarget{namespacetvm_1_1runtime_1_1vm}{}\section{tvm\+:\+:runtime\+:\+:vm Namespace Reference}
+\label{namespacetvm_1_1runtime_1_1vm}\index{tvm\+::runtime\+::vm@{tvm\+::runtime\+::vm}}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \hyperlink{classtvm_1_1runtime_1_1vm_1_1Closure}{Closure}
+\begin{DoxyCompactList}\small\item\em reference to closure. \end{DoxyCompactList}\item 
+class \hyperlink{classtvm_1_1runtime_1_1vm_1_1ClosureObj}{Closure\+Obj}
+\begin{DoxyCompactList}\small\item\em An object representing a closure. This object is used by both the Relay VM and interpreter. \end{DoxyCompactList}\item 
+class \hyperlink{classtvm_1_1runtime_1_1vm_1_1Executable}{Executable}
+\begin{DoxyCompactList}\small\item\em The executable emitted by the VM compiler. \end{DoxyCompactList}\item 
+struct \hyperlink{structtvm_1_1runtime_1_1vm_1_1Instruction}{Instruction}
+\begin{DoxyCompactList}\small\item\em A single virtual machine instruction. \end{DoxyCompactList}\item 
+class \hyperlink{classtvm_1_1runtime_1_1vm_1_1VirtualMachine}{Virtual\+Machine}
+\begin{DoxyCompactList}\small\item\em The virtual machine. \end{DoxyCompactList}\item 
+class \hyperlink{classtvm_1_1runtime_1_1vm_1_1VMClosure}{V\+M\+Closure}
+\begin{DoxyCompactList}\small\item\em reference to closure. \end{DoxyCompactList}\item 
+class \hyperlink{classtvm_1_1runtime_1_1vm_1_1VMClosureObj}{V\+M\+Closure\+Obj}
+\begin{DoxyCompactList}\small\item\em An object representing a vm closure. \end{DoxyCompactList}\item 
+struct \hyperlink{structtvm_1_1runtime_1_1vm_1_1VMFrame}{V\+M\+Frame}
+\begin{DoxyCompactList}\small\item\em A representation of a stack frame. \end{DoxyCompactList}\item 
+struct \hyperlink{structtvm_1_1runtime_1_1vm_1_1VMFunction}{V\+M\+Function}
+\begin{DoxyCompactList}\small\item\em A representation of a Relay function in the VM. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+using \hyperlink{namespacetvm_1_1runtime_1_1vm_a3bbbf700719e9dc3dda2bc25210c18ae}{Reg\+Name} = int64\+\_\+t
+\begin{DoxyCompactList}\small\item\em A register name. \end{DoxyCompactList}\item 
+using \hyperlink{namespacetvm_1_1runtime_1_1vm_a3597867d2db714bf760876a23d6b7d3d}{Index} = int64\+\_\+t
+\begin{DoxyCompactList}\small\item\em An alias for the integer type used ubiquitously in the VM. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Enumerations}
+\begin{DoxyCompactItemize}
+\item 
+enum \hyperlink{namespacetvm_1_1runtime_1_1vm_a8d8d95ce8d629c7213f2f595917870ec}{Opcode} \{ \\*
+\hyperlink{namespacetvm_1_1runtime_1_1vm_a8d8d95ce8d629c7213f2f595917870eca6bc362dbf494c61ea117fe3c71ca48a5}{Opcode\+::\+Move} = 0U, 
+\hyperlink{namespacetvm_1_1runtime_1_1vm_a8d8d95ce8d629c7213f2f595917870ecaa4228a09dd66155de8e93a39245768bd}{Opcode\+::\+Ret} = 1U, 
+\hyperlink{namespacetvm_1_1runtime_1_1vm_a8d8d95ce8d629c7213f2f595917870ecab9376e9e3c4d48f5e35a3f355ae1f74a}{Opcode\+::\+Invoke} = 2U, 
+\hyperlink{namespacetvm_1_1runtime_1_1vm_a8d8d95ce8d629c7213f2f595917870eca46990b57941483ce17bb07e3af6da59c}{Opcode\+::\+Invoke\+Closure} = 3U, 
+\\*
+\hyperlink{namespacetvm_1_1runtime_1_1vm_a8d8d95ce8d629c7213f2f595917870eca97ad0208b167666da31720813abe1174}{Opcode\+::\+Invoke\+Packed} = 4U, 
+\hyperlink{namespacetvm_1_1runtime_1_1vm_a8d8d95ce8d629c7213f2f595917870eca2bcae1ed3af462c3c4533a22377a75ea}{Opcode\+::\+Alloc\+Tensor} = 5U, 
+\hyperlink{namespacetvm_1_1runtime_1_1vm_a8d8d95ce8d629c7213f2f595917870ecac8086b44868c71384cfec25bf1f1a6e6}{Opcode\+::\+Alloc\+Tensor\+Reg} = 6U, 
+\hyperlink{namespacetvm_1_1runtime_1_1vm_a8d8d95ce8d629c7213f2f595917870ecaee7bac5c7a1354c4d644508d4d82380e}{Opcode\+::\+Alloc\+A\+DT} = 7U, 
+\\*
+\hyperlink{namespacetvm_1_1runtime_1_1vm_a8d8d95ce8d629c7213f2f595917870eca564a5812fad1ae9a2db0d77614c5d8bc}{Opcode\+::\+Alloc\+Closure} = 8U, 
+\hyperlink{namespacetvm_1_1runtime_1_1vm_a8d8d95ce8d629c7213f2f595917870ecad3e2f43779da90565fa9c24f9175dc04}{Opcode\+::\+Get\+Field} = 9U, 
+\hyperlink{namespacetvm_1_1runtime_1_1vm_a8d8d95ce8d629c7213f2f595917870eca786887572f6ef1c20f2d8177cb2f1639}{Opcode\+::\+If} = 10U, 
+\hyperlink{namespacetvm_1_1runtime_1_1vm_a8d8d95ce8d629c7213f2f595917870eca68b393c7b4c9e1672b7a1a05161390f7}{Opcode\+::\+Load\+Const} = 11U, 
+\\*
+\hyperlink{namespacetvm_1_1runtime_1_1vm_a8d8d95ce8d629c7213f2f595917870ecaae8fae3d74fdc80ef40995c3c6ca152e}{Opcode\+::\+Goto} = 12U, 
+\hyperlink{namespacetvm_1_1runtime_1_1vm_a8d8d95ce8d629c7213f2f595917870ecabbfa589e414211911a8254ba7896b127}{Opcode\+::\+Get\+Tag} = 13U, 
+\hyperlink{namespacetvm_1_1runtime_1_1vm_a8d8d95ce8d629c7213f2f595917870eca9558cee150d88040130f7b86d8d5dc58}{Opcode\+::\+Load\+Consti} = 14U, 
+\hyperlink{namespacetvm_1_1runtime_1_1vm_a8d8d95ce8d629c7213f2f595917870eca882384ec38ce8d9582b57e70861730e4}{Opcode\+::\+Fatal} = 15U, 
+\\*
+\hyperlink{namespacetvm_1_1runtime_1_1vm_a8d8d95ce8d629c7213f2f595917870ecaa15cc1ca91f763a268e85bbc298987d7}{Opcode\+::\+Alloc\+Storage} = 16U
+ \}\begin{DoxyCompactList}\small\item\em An enumeration of Relay\textquotesingle{}s opcodes. \end{DoxyCompactList}
+\end{DoxyCompactItemize}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+constexpr uint64\+\_\+t \hyperlink{namespacetvm_1_1runtime_1_1vm_a29161815faff1b5a221c0dae1c87bb4e}{k\+T\+V\+M\+N\+D\+Array\+List\+Magic} = 0x\+F7\+E58\+D4\+F05049\+C\+B7
+\begin{DoxyCompactList}\small\item\em Magic number for \hyperlink{classtvm_1_1runtime_1_1NDArray}{N\+D\+Array} list file. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Typedef Documentation}
+\index{tvm\+::runtime\+::vm@{tvm\+::runtime\+::vm}!Index@{Index}}
+\index{Index@{Index}!tvm\+::runtime\+::vm@{tvm\+::runtime\+::vm}}
+\subsubsection[{\texorpdfstring{Index}{Index}}]{\setlength{\rightskip}{0pt plus 5cm}using {\bf tvm\+::runtime\+::vm\+::\+Index} = typedef int64\+\_\+t}\hypertarget{namespacetvm_1_1runtime_1_1vm_a3597867d2db714bf760876a23d6b7d3d}{}\label{namespacetvm_1_1runtime_1_1vm_a3597867d2db714bf760876a23d6b7d3d}
+
+
+An alias for the integer type used ubiquitously in the VM. 
+
+\index{tvm\+::runtime\+::vm@{tvm\+::runtime\+::vm}!Reg\+Name@{Reg\+Name}}
+\index{Reg\+Name@{Reg\+Name}!tvm\+::runtime\+::vm@{tvm\+::runtime\+::vm}}
+\subsubsection[{\texorpdfstring{Reg\+Name}{RegName}}]{\setlength{\rightskip}{0pt plus 5cm}using {\bf tvm\+::runtime\+::vm\+::\+Reg\+Name} = typedef int64\+\_\+t}\hypertarget{namespacetvm_1_1runtime_1_1vm_a3bbbf700719e9dc3dda2bc25210c18ae}{}\label{namespacetvm_1_1runtime_1_1vm_a3bbbf700719e9dc3dda2bc25210c18ae}
+
+
+A register name. 
+
+
+
+\subsection{Enumeration Type Documentation}
+\index{tvm\+::runtime\+::vm@{tvm\+::runtime\+::vm}!Opcode@{Opcode}}
+\index{Opcode@{Opcode}!tvm\+::runtime\+::vm@{tvm\+::runtime\+::vm}}
+\subsubsection[{\texorpdfstring{Opcode}{Opcode}}]{\setlength{\rightskip}{0pt plus 5cm}enum {\bf tvm\+::runtime\+::vm\+::\+Opcode}\hspace{0.3cm}{\ttfamily [strong]}}\hypertarget{namespacetvm_1_1runtime_1_1vm_a8d8d95ce8d629c7213f2f595917870ec}{}\label{namespacetvm_1_1runtime_1_1vm_a8d8d95ce8d629c7213f2f595917870ec}
+
+
+An enumeration of Relay\textquotesingle{}s opcodes. 
+
+The opcode is used to implement instruction as a tagged union. \begin{Desc}
+\item[Enumerator]\par
+\begin{description}
+\index{Move@{Move}!tvm\+::runtime\+::vm@{tvm\+::runtime\+::vm}}\index{tvm\+::runtime\+::vm@{tvm\+::runtime\+::vm}!Move@{Move}}\item[{\em 
+Move\hypertarget{namespacetvm_1_1runtime_1_1vm_a8d8d95ce8d629c7213f2f595917870eca6bc362dbf494c61ea117fe3c71ca48a5}{}\label{namespacetvm_1_1runtime_1_1vm_a8d8d95ce8d629c7213f2f595917870eca6bc362dbf494c61ea117fe3c71ca48a5}
+}]\index{Ret@{Ret}!tvm\+::runtime\+::vm@{tvm\+::runtime\+::vm}}\index{tvm\+::runtime\+::vm@{tvm\+::runtime\+::vm}!Ret@{Ret}}\item[{\em 
+Ret\hypertarget{namespacetvm_1_1runtime_1_1vm_a8d8d95ce8d629c7213f2f595917870ecaa4228a09dd66155de8e93a39245768bd}{}\label{namespacetvm_1_1runtime_1_1vm_a8d8d95ce8d629c7213f2f595917870ecaa4228a09dd66155de8e93a39245768bd}
+}]\index{Invoke@{Invoke}!tvm\+::runtime\+::vm@{tvm\+::runtime\+::vm}}\index{tvm\+::runtime\+::vm@{tvm\+::runtime\+::vm}!Invoke@{Invoke}}\item[{\em 
+Invoke\hypertarget{namespacetvm_1_1runtime_1_1vm_a8d8d95ce8d629c7213f2f595917870ecab9376e9e3c4d48f5e35a3f355ae1f74a}{}\label{namespacetvm_1_1runtime_1_1vm_a8d8d95ce8d629c7213f2f595917870ecab9376e9e3c4d48f5e35a3f355ae1f74a}
+}]\index{Invoke\+Closure@{Invoke\+Closure}!tvm\+::runtime\+::vm@{tvm\+::runtime\+::vm}}\index{tvm\+::runtime\+::vm@{tvm\+::runtime\+::vm}!Invoke\+Closure@{Invoke\+Closure}}\item[{\em 
+Invoke\+Closure\hypertarget{namespacetvm_1_1runtime_1_1vm_a8d8d95ce8d629c7213f2f595917870eca46990b57941483ce17bb07e3af6da59c}{}\label{namespacetvm_1_1runtime_1_1vm_a8d8d95ce8d629c7213f2f595917870eca46990b57941483ce17bb07e3af6da59c}
+}]\index{Invoke\+Packed@{Invoke\+Packed}!tvm\+::runtime\+::vm@{tvm\+::runtime\+::vm}}\index{tvm\+::runtime\+::vm@{tvm\+::runtime\+::vm}!Invoke\+Packed@{Invoke\+Packed}}\item[{\em 
+Invoke\+Packed\hypertarget{namespacetvm_1_1runtime_1_1vm_a8d8d95ce8d629c7213f2f595917870eca97ad0208b167666da31720813abe1174}{}\label{namespacetvm_1_1runtime_1_1vm_a8d8d95ce8d629c7213f2f595917870eca97ad0208b167666da31720813abe1174}
+}]\index{Alloc\+Tensor@{Alloc\+Tensor}!tvm\+::runtime\+::vm@{tvm\+::runtime\+::vm}}\index{tvm\+::runtime\+::vm@{tvm\+::runtime\+::vm}!Alloc\+Tensor@{Alloc\+Tensor}}\item[{\em 
+Alloc\+Tensor\hypertarget{namespacetvm_1_1runtime_1_1vm_a8d8d95ce8d629c7213f2f595917870eca2bcae1ed3af462c3c4533a22377a75ea}{}\label{namespacetvm_1_1runtime_1_1vm_a8d8d95ce8d629c7213f2f595917870eca2bcae1ed3af462c3c4533a22377a75ea}
+}]\index{Alloc\+Tensor\+Reg@{Alloc\+Tensor\+Reg}!tvm\+::runtime\+::vm@{tvm\+::runtime\+::vm}}\index{tvm\+::runtime\+::vm@{tvm\+::runtime\+::vm}!Alloc\+Tensor\+Reg@{Alloc\+Tensor\+Reg}}\item[{\em 
+Alloc\+Tensor\+Reg\hypertarget{namespacetvm_1_1runtime_1_1vm_a8d8d95ce8d629c7213f2f595917870ecac8086b44868c71384cfec25bf1f1a6e6}{}\label{namespacetvm_1_1runtime_1_1vm_a8d8d95ce8d629c7213f2f595917870ecac8086b44868c71384cfec25bf1f1a6e6}
+}]\index{Alloc\+A\+DT@{Alloc\+A\+DT}!tvm\+::runtime\+::vm@{tvm\+::runtime\+::vm}}\index{tvm\+::runtime\+::vm@{tvm\+::runtime\+::vm}!Alloc\+A\+DT@{Alloc\+A\+DT}}\item[{\em 
+Alloc\+A\+DT\hypertarget{namespacetvm_1_1runtime_1_1vm_a8d8d95ce8d629c7213f2f595917870ecaee7bac5c7a1354c4d644508d4d82380e}{}\label{namespacetvm_1_1runtime_1_1vm_a8d8d95ce8d629c7213f2f595917870ecaee7bac5c7a1354c4d644508d4d82380e}
+}]\index{Alloc\+Closure@{Alloc\+Closure}!tvm\+::runtime\+::vm@{tvm\+::runtime\+::vm}}\index{tvm\+::runtime\+::vm@{tvm\+::runtime\+::vm}!Alloc\+Closure@{Alloc\+Closure}}\item[{\em 
+Alloc\+Closure\hypertarget{namespacetvm_1_1runtime_1_1vm_a8d8d95ce8d629c7213f2f595917870eca564a5812fad1ae9a2db0d77614c5d8bc}{}\label{namespacetvm_1_1runtime_1_1vm_a8d8d95ce8d629c7213f2f595917870eca564a5812fad1ae9a2db0d77614c5d8bc}
+}]\index{Get\+Field@{Get\+Field}!tvm\+::runtime\+::vm@{tvm\+::runtime\+::vm}}\index{tvm\+::runtime\+::vm@{tvm\+::runtime\+::vm}!Get\+Field@{Get\+Field}}\item[{\em 
+Get\+Field\hypertarget{namespacetvm_1_1runtime_1_1vm_a8d8d95ce8d629c7213f2f595917870ecad3e2f43779da90565fa9c24f9175dc04}{}\label{namespacetvm_1_1runtime_1_1vm_a8d8d95ce8d629c7213f2f595917870ecad3e2f43779da90565fa9c24f9175dc04}
+}]\index{If@{If}!tvm\+::runtime\+::vm@{tvm\+::runtime\+::vm}}\index{tvm\+::runtime\+::vm@{tvm\+::runtime\+::vm}!If@{If}}\item[{\em 
+If\hypertarget{namespacetvm_1_1runtime_1_1vm_a8d8d95ce8d629c7213f2f595917870eca786887572f6ef1c20f2d8177cb2f1639}{}\label{namespacetvm_1_1runtime_1_1vm_a8d8d95ce8d629c7213f2f595917870eca786887572f6ef1c20f2d8177cb2f1639}
+}]\index{Load\+Const@{Load\+Const}!tvm\+::runtime\+::vm@{tvm\+::runtime\+::vm}}\index{tvm\+::runtime\+::vm@{tvm\+::runtime\+::vm}!Load\+Const@{Load\+Const}}\item[{\em 
+Load\+Const\hypertarget{namespacetvm_1_1runtime_1_1vm_a8d8d95ce8d629c7213f2f595917870eca68b393c7b4c9e1672b7a1a05161390f7}{}\label{namespacetvm_1_1runtime_1_1vm_a8d8d95ce8d629c7213f2f595917870eca68b393c7b4c9e1672b7a1a05161390f7}
+}]\index{Goto@{Goto}!tvm\+::runtime\+::vm@{tvm\+::runtime\+::vm}}\index{tvm\+::runtime\+::vm@{tvm\+::runtime\+::vm}!Goto@{Goto}}\item[{\em 
+Goto\hypertarget{namespacetvm_1_1runtime_1_1vm_a8d8d95ce8d629c7213f2f595917870ecaae8fae3d74fdc80ef40995c3c6ca152e}{}\label{namespacetvm_1_1runtime_1_1vm_a8d8d95ce8d629c7213f2f595917870ecaae8fae3d74fdc80ef40995c3c6ca152e}
+}]\index{Get\+Tag@{Get\+Tag}!tvm\+::runtime\+::vm@{tvm\+::runtime\+::vm}}\index{tvm\+::runtime\+::vm@{tvm\+::runtime\+::vm}!Get\+Tag@{Get\+Tag}}\item[{\em 
+Get\+Tag\hypertarget{namespacetvm_1_1runtime_1_1vm_a8d8d95ce8d629c7213f2f595917870ecabbfa589e414211911a8254ba7896b127}{}\label{namespacetvm_1_1runtime_1_1vm_a8d8d95ce8d629c7213f2f595917870ecabbfa589e414211911a8254ba7896b127}
+}]\index{Load\+Consti@{Load\+Consti}!tvm\+::runtime\+::vm@{tvm\+::runtime\+::vm}}\index{tvm\+::runtime\+::vm@{tvm\+::runtime\+::vm}!Load\+Consti@{Load\+Consti}}\item[{\em 
+Load\+Consti\hypertarget{namespacetvm_1_1runtime_1_1vm_a8d8d95ce8d629c7213f2f595917870eca9558cee150d88040130f7b86d8d5dc58}{}\label{namespacetvm_1_1runtime_1_1vm_a8d8d95ce8d629c7213f2f595917870eca9558cee150d88040130f7b86d8d5dc58}
+}]\index{Fatal@{Fatal}!tvm\+::runtime\+::vm@{tvm\+::runtime\+::vm}}\index{tvm\+::runtime\+::vm@{tvm\+::runtime\+::vm}!Fatal@{Fatal}}\item[{\em 
+Fatal\hypertarget{namespacetvm_1_1runtime_1_1vm_a8d8d95ce8d629c7213f2f595917870eca882384ec38ce8d9582b57e70861730e4}{}\label{namespacetvm_1_1runtime_1_1vm_a8d8d95ce8d629c7213f2f595917870eca882384ec38ce8d9582b57e70861730e4}
+}]\index{Alloc\+Storage@{Alloc\+Storage}!tvm\+::runtime\+::vm@{tvm\+::runtime\+::vm}}\index{tvm\+::runtime\+::vm@{tvm\+::runtime\+::vm}!Alloc\+Storage@{Alloc\+Storage}}\item[{\em 
+Alloc\+Storage\hypertarget{namespacetvm_1_1runtime_1_1vm_a8d8d95ce8d629c7213f2f595917870ecaa15cc1ca91f763a268e85bbc298987d7}{}\label{namespacetvm_1_1runtime_1_1vm_a8d8d95ce8d629c7213f2f595917870ecaa15cc1ca91f763a268e85bbc298987d7}
+}]\end{description}
+\end{Desc}
+
+
+\subsection{Variable Documentation}
+\index{tvm\+::runtime\+::vm@{tvm\+::runtime\+::vm}!k\+T\+V\+M\+N\+D\+Array\+List\+Magic@{k\+T\+V\+M\+N\+D\+Array\+List\+Magic}}
+\index{k\+T\+V\+M\+N\+D\+Array\+List\+Magic@{k\+T\+V\+M\+N\+D\+Array\+List\+Magic}!tvm\+::runtime\+::vm@{tvm\+::runtime\+::vm}}
+\subsubsection[{\texorpdfstring{k\+T\+V\+M\+N\+D\+Array\+List\+Magic}{kTVMNDArrayListMagic}}]{\setlength{\rightskip}{0pt plus 5cm}constexpr uint64\+\_\+t tvm\+::runtime\+::vm\+::k\+T\+V\+M\+N\+D\+Array\+List\+Magic = 0x\+F7\+E58\+D4\+F05049\+C\+B7}\hypertarget{namespacetvm_1_1runtime_1_1vm_a29161815faff1b5a221c0dae1c87bb4e}{}\label{namespacetvm_1_1runtime_1_1vm_a29161815faff1b5a221c0dae1c87bb4e}
+
+
+Magic number for \hyperlink{classtvm_1_1runtime_1_1NDArray}{N\+D\+Array} list file. 
+

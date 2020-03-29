@@ -1,0 +1,111 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="namespacetvm_1_1runtime_1_1symbol" kind="namespace" language="C++">
+    <compoundname>tvm::runtime::symbol</compoundname>
+      <sectiondef kind="var">
+      <memberdef kind="variable" id="namespacetvm_1_1runtime_1_1symbol_1aeebcec34a8e6cc24c495710aedea5de9" prot="public" static="no" mutable="no">
+        <type>constexpr const char *</type>
+        <definition>constexpr const char* tvm::runtime::symbol::tvm_module_ctx</definition>
+        <argsstring></argsstring>
+        <name>tvm_module_ctx</name>
+        <initializer>= &quot;__tvm_module_ctx&quot;</initializer>
+        <briefdescription>
+<para>Global variable to store module context. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/runtime/module.h" line="224" column="1" bodyfile="include/tvm/runtime/module.h" bodystart="224" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespacetvm_1_1runtime_1_1symbol_1a316b327224938ffb2a73a9c4432d1da9" prot="public" static="no" mutable="no">
+        <type>constexpr const char *</type>
+        <definition>constexpr const char* tvm::runtime::symbol::tvm_dev_mblob</definition>
+        <argsstring></argsstring>
+        <name>tvm_dev_mblob</name>
+        <initializer>= &quot;__tvm_dev_mblob&quot;</initializer>
+        <briefdescription>
+<para>Global variable to store device module blob. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/runtime/module.h" line="226" column="1" bodyfile="include/tvm/runtime/module.h" bodystart="226" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespacetvm_1_1runtime_1_1symbol_1aba35391edf7c3a25628bf99ed42cdca1" prot="public" static="no" mutable="no">
+        <type>constexpr const char *</type>
+        <definition>constexpr const char* tvm::runtime::symbol::tvm_dev_mblob_nbytes</definition>
+        <argsstring></argsstring>
+        <name>tvm_dev_mblob_nbytes</name>
+        <initializer>= &quot;__tvm_dev_mblob_nbytes&quot;</initializer>
+        <briefdescription>
+<para>Number of bytes of device module blob. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/runtime/module.h" line="228" column="1" bodyfile="include/tvm/runtime/module.h" bodystart="228" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespacetvm_1_1runtime_1_1symbol_1aaad9cf8f51a55b2ec5b19854d692bd21" prot="public" static="no" mutable="no">
+        <type>constexpr const char *</type>
+        <definition>constexpr const char* tvm::runtime::symbol::tvm_set_device</definition>
+        <argsstring></argsstring>
+        <name>tvm_set_device</name>
+        <initializer>= &quot;__tvm_set_device&quot;</initializer>
+        <briefdescription>
+<para>global function to set device </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/runtime/module.h" line="230" column="1" bodyfile="include/tvm/runtime/module.h" bodystart="230" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespacetvm_1_1runtime_1_1symbol_1ac21d436bd65464b49858ba4bc55fb3ec" prot="public" static="no" mutable="no">
+        <type>constexpr const char *</type>
+        <definition>constexpr const char* tvm::runtime::symbol::tvm_global_barrier_state</definition>
+        <argsstring></argsstring>
+        <name>tvm_global_barrier_state</name>
+        <initializer>= &quot;__tvm_global_barrier_state&quot;</initializer>
+        <briefdescription>
+<para>Auxiliary counter to global barrier. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/runtime/module.h" line="232" column="1" bodyfile="include/tvm/runtime/module.h" bodystart="232" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespacetvm_1_1runtime_1_1symbol_1af4a5fe87c6e95d6b082a2be1960efbe5" prot="public" static="no" mutable="no">
+        <type>constexpr const char *</type>
+        <definition>constexpr const char* tvm::runtime::symbol::tvm_prepare_global_barrier</definition>
+        <argsstring></argsstring>
+        <name>tvm_prepare_global_barrier</name>
+        <initializer>= &quot;__tvm_prepare_global_barrier&quot;</initializer>
+        <briefdescription>
+<para>Prepare the global barrier before kernels that uses global barrier. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/runtime/module.h" line="234" column="1" bodyfile="include/tvm/runtime/module.h" bodystart="234" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespacetvm_1_1runtime_1_1symbol_1abfc81fd15b5d8087b956a8cef4152bf4" prot="public" static="no" mutable="no">
+        <type>constexpr const char *</type>
+        <definition>constexpr const char* tvm::runtime::symbol::tvm_module_main</definition>
+        <argsstring></argsstring>
+        <name>tvm_module_main</name>
+        <initializer>= &quot;__tvm_main__&quot;</initializer>
+        <briefdescription>
+<para>Placeholder for the module&apos;s entry function. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/runtime/module.h" line="236" column="1" bodyfile="include/tvm/runtime/module.h" bodystart="236" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>namespace for constant symbols </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="include/tvm/runtime/module.h" line="222" column="1"/>
+  </compounddef>
+</doxygen>

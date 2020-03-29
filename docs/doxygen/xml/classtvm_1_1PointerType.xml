@@ -1,0 +1,101 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="classtvm_1_1PointerType" kind="class" language="C++" prot="public">
+    <compoundname>tvm::PointerType</compoundname>
+    <basecompoundref refid="classtvm_1_1Type" prot="public" virt="non-virtual">tvm::Type</basecompoundref>
+    <includes refid="ir_2type_8h" local="no">type.h</includes>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classtvm_1_1PointerType_1a13d008891daa4ef45a9d22387ad6227f" prot="public" static="no" const="no" explicit="yes" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>tvm::PointerType::PointerType</definition>
+        <argsstring>(Type element_type)</argsstring>
+        <name>PointerType</name>
+        <param>
+          <type><ref refid="classtvm_1_1Type" kindref="compound">Type</ref></type>
+          <declname>element_type</declname>
+        </param>
+        <briefdescription>
+<para><ref refid="classtvm_1_1Constructor" kindref="compound">Constructor</ref>. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>element_type</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The type of the element which the pointer points to. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/ir/type.h" line="187" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classtvm_1_1PointerType_1abd62ac0b63821a91e4ed4946a1c7f941" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>tvm::PointerType::TVM_DEFINE_OBJECT_REF_METHODS</definition>
+        <argsstring>(PointerType, Type, PointerTypeNode)</argsstring>
+        <name>TVM_DEFINE_OBJECT_REF_METHODS</name>
+        <param>
+          <type><ref refid="classtvm_1_1PointerType" kindref="compound">PointerType</ref></type>
+        </param>
+        <param>
+          <type><ref refid="classtvm_1_1Type" kindref="compound">Type</ref></type>
+        </param>
+        <param>
+          <type><ref refid="classtvm_1_1PointerTypeNode" kindref="compound">PointerTypeNode</ref></type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/ir/type.h" line="189" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="6177">
+        <label>ObjectRef</label>
+      </node>
+      <node id="6175">
+        <label>tvm::PointerType</label>
+        <link refid="classtvm_1_1PointerType"/>
+        <childnode refid="6176" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="6176">
+        <label>tvm::Type</label>
+        <link refid="classtvm_1_1Type"/>
+        <childnode refid="6177" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="6180">
+        <label>ObjectRef</label>
+      </node>
+      <node id="6178">
+        <label>tvm::PointerType</label>
+        <link refid="classtvm_1_1PointerType"/>
+        <childnode refid="6179" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="6179">
+        <label>tvm::Type</label>
+        <link refid="classtvm_1_1Type"/>
+        <childnode refid="6180" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="include/tvm/ir/type.h" line="181" column="1" bodyfile="include/tvm/ir/type.h" bodystart="181" bodyend="190"/>
+    <listofallmembers>
+      <member refid="classtvm_1_1PointerType_1a13d008891daa4ef45a9d22387ad6227f" prot="public" virt="non-virtual"><scope>tvm::PointerType</scope><name>PointerType</name></member>
+      <member refid="classtvm_1_1PointerType_1abd62ac0b63821a91e4ed4946a1c7f941" prot="public" virt="non-virtual"><scope>tvm::PointerType</scope><name>TVM_DEFINE_OBJECT_REF_METHODS</name></member>
+      <member refid="classtvm_1_1Type_1a1188605b5afd297c39e614872a608a35" prot="public" virt="non-virtual" ambiguityscope="tvm::Type::"><scope>tvm::PointerType</scope><name>TVM_DEFINE_OBJECT_REF_METHODS</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

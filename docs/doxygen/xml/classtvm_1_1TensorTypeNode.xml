@@ -1,0 +1,237 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="classtvm_1_1TensorTypeNode" kind="class" language="C++" prot="public">
+    <compoundname>tvm::TensorTypeNode</compoundname>
+    <basecompoundref refid="classtvm_1_1BaseTensorTypeNode" prot="public" virt="non-virtual">tvm::BaseTensorTypeNode</basecompoundref>
+    <includes refid="tensor__type_8h" local="no">tensor_type.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="classtvm_1_1TensorTypeNode_1a98fa347833e4504dd6f8056d9863a708" prot="public" static="no" mutable="no">
+        <type><ref refid="classtvm_1_1Array" kindref="compound">Array</ref>&lt; <ref refid="classtvm_1_1PrimExpr" kindref="compound">PrimExpr</ref> &gt;</type>
+        <definition>Array&lt;PrimExpr&gt; tvm::TensorTypeNode::shape</definition>
+        <argsstring></argsstring>
+        <name>shape</name>
+        <briefdescription>
+<para>The shape of the tensor, represented by PrimExpr(tvm::Expr). </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/ir/tensor_type.h" line="66" column="1" bodyfile="include/tvm/ir/tensor_type.h" bodystart="66" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classtvm_1_1TensorTypeNode_1a715d148ed0f0fdc8bf975bb31e210975" prot="public" static="no" mutable="no">
+        <type><ref refid="namespacetvm_1a41918af1a1dc386388639a9d3ad06c5d" kindref="member">DataType</ref></type>
+        <definition>DataType tvm::TensorTypeNode::dtype</definition>
+        <argsstring></argsstring>
+        <name>dtype</name>
+        <briefdescription>
+<para>The content data type. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/ir/tensor_type.h" line="68" column="1" bodyfile="include/tvm/ir/tensor_type.h" bodystart="68" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-attrib">
+      <memberdef kind="variable" id="classtvm_1_1TensorTypeNode_1ae18b22592965b3f847dc387814ff647a" prot="public" static="yes" mutable="no">
+        <type>constexpr const char *</type>
+        <definition>constexpr const char* tvm::TensorTypeNode::_type_key</definition>
+        <argsstring></argsstring>
+        <name>_type_key</name>
+        <initializer>= &quot;relay.TensorType&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/ir/tensor_type.h" line="92" column="1" bodyfile="include/tvm/ir/tensor_type.h" bodystart="92" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classtvm_1_1TensorTypeNode_1a49f67378d6735693e24fb7b61c725132" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void tvm::TensorTypeNode::VisitAttrs</definition>
+        <argsstring>(tvm::AttrVisitor *v)</argsstring>
+        <name>VisitAttrs</name>
+        <param>
+          <type><ref refid="classtvm_1_1AttrVisitor" kindref="compound">tvm::AttrVisitor</ref> *</type>
+          <declname>v</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/ir/tensor_type.h" line="70" column="1" bodyfile="include/tvm/ir/tensor_type.h" bodystart="70" bodyend="74"/>
+      </memberdef>
+      <memberdef kind="function" id="classtvm_1_1TensorTypeNode_1af38f7e3df5a2beaec7190eb037bf89e9" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool tvm::TensorTypeNode::SEqualReduce</definition>
+        <argsstring>(const TensorTypeNode *other, SEqualReducer equal) const </argsstring>
+        <name>SEqualReduce</name>
+        <param>
+          <type>const <ref refid="classtvm_1_1TensorTypeNode" kindref="compound">TensorTypeNode</ref> *</type>
+          <declname>other</declname>
+        </param>
+        <param>
+          <type><ref refid="classtvm_1_1SEqualReducer" kindref="compound">SEqualReducer</ref></type>
+          <declname>equal</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/ir/tensor_type.h" line="76" column="1" bodyfile="include/tvm/ir/tensor_type.h" bodystart="76" bodyend="80"/>
+      </memberdef>
+      <memberdef kind="function" id="classtvm_1_1TensorTypeNode_1ab79c6efa74f976b6a515860b622b485e" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void tvm::TensorTypeNode::SHashReduce</definition>
+        <argsstring>(SHashReducer hash_reduce) const </argsstring>
+        <name>SHashReduce</name>
+        <param>
+          <type><ref refid="classtvm_1_1SHashReducer" kindref="compound">SHashReducer</ref></type>
+          <declname>hash_reduce</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/ir/tensor_type.h" line="82" column="1" bodyfile="include/tvm/ir/tensor_type.h" bodystart="82" bodyend="85"/>
+      </memberdef>
+      <memberdef kind="function" id="classtvm_1_1TensorTypeNode_1ac69ea89085f16b718fe3c4525e1798ba" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classtvm_1_1PrimExpr" kindref="compound">PrimExpr</ref></type>
+        <definition>PrimExpr tvm::TensorTypeNode::Size</definition>
+        <argsstring>() const </argsstring>
+        <name>Size</name>
+        <briefdescription>
+<para>Return product of elements in the shape. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>(d1 * d_2 ... * d_n) if shape is (d_1, d_2, ..., d_n) and 1 if shape size is zero. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/ir/tensor_type.h" line="90" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classtvm_1_1TensorTypeNode_1a96eab1328e646dba6c954b552766c5c4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>tvm::TensorTypeNode::TVM_DECLARE_FINAL_OBJECT_INFO</definition>
+        <argsstring>(TensorTypeNode, BaseTensorTypeNode)</argsstring>
+        <name>TVM_DECLARE_FINAL_OBJECT_INFO</name>
+        <param>
+          <type><ref refid="classtvm_1_1TensorTypeNode" kindref="compound">TensorTypeNode</ref></type>
+        </param>
+        <param>
+          <type><ref refid="classtvm_1_1BaseTensorTypeNode" kindref="compound">BaseTensorTypeNode</ref></type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/ir/tensor_type.h" line="93" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>This is the most commonly used type in relay. <ref refid="classtvm_1_1TensorType" kindref="compound">TensorType</ref> have a fixed dimension, data type. </para>    </briefdescription>
+    <detaileddescription>
+<para>The elements of shape can be either IntImm(constant integer), or any symbolic integer expression. The symbolic integer allows generic shape inference in certain cases. <simplesect kind="see"><para><ref refid="classtvm_1_1TensorType" kindref="compound">TensorType</ref> </para></simplesect>
+</para>    </detaileddescription>
+    <inheritancegraph>
+      <node id="7215">
+        <label>tvm::TypeNode</label>
+        <link refid="classtvm_1_1TypeNode"/>
+        <childnode refid="7216" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="7216">
+        <label>Object</label>
+      </node>
+      <node id="7214">
+        <label>tvm::BaseTensorTypeNode</label>
+        <link refid="classtvm_1_1BaseTensorTypeNode"/>
+        <childnode refid="7215" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="7213">
+        <label>tvm::TensorTypeNode</label>
+        <link refid="classtvm_1_1TensorTypeNode"/>
+        <childnode refid="7214" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="7222">
+        <label>ObjectRef</label>
+      </node>
+      <node id="7221">
+        <label>tvm::Span</label>
+        <link refid="classtvm_1_1Span"/>
+        <childnode refid="7222" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="7219">
+        <label>tvm::TypeNode</label>
+        <link refid="classtvm_1_1TypeNode"/>
+        <childnode refid="7220" relation="public-inheritance">
+        </childnode>
+        <childnode refid="7221" relation="usage">
+          <edgelabel>+span</edgelabel>
+        </childnode>
+      </node>
+      <node id="7220">
+        <label>Object</label>
+      </node>
+      <node id="7218">
+        <label>tvm::BaseTensorTypeNode</label>
+        <link refid="classtvm_1_1BaseTensorTypeNode"/>
+        <childnode refid="7219" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="7224">
+        <label>tvm::runtime::DataType</label>
+        <link refid="classtvm_1_1runtime_1_1DataType"/>
+      </node>
+      <node id="7223">
+        <label>tvm::Array&lt; tvm::PrimExpr &gt;</label>
+        <link refid="classtvm_1_1Array"/>
+        <childnode refid="7222" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="7217">
+        <label>tvm::TensorTypeNode</label>
+        <link refid="classtvm_1_1TensorTypeNode"/>
+        <childnode refid="7218" relation="public-inheritance">
+        </childnode>
+        <childnode refid="7223" relation="usage">
+          <edgelabel>+shape</edgelabel>
+        </childnode>
+        <childnode refid="7224" relation="usage">
+          <edgelabel>+dtype</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="include/tvm/ir/tensor_type.h" line="60" column="1" bodyfile="include/tvm/ir/tensor_type.h" bodystart="60" bodyend="94"/>
+    <listofallmembers>
+      <member refid="classtvm_1_1TypeNode_1ab02f7d165755f57689f986aca467a7e5" prot="public" virt="non-virtual"><scope>tvm::TensorTypeNode</scope><name>_type_has_method_sequal_reduce</name></member>
+      <member refid="classtvm_1_1TypeNode_1a4179c7d7d55d1141cadfd19547fb1344" prot="public" virt="non-virtual"><scope>tvm::TensorTypeNode</scope><name>_type_has_method_shash_reduce</name></member>
+      <member refid="classtvm_1_1TensorTypeNode_1ae18b22592965b3f847dc387814ff647a" prot="public" virt="non-virtual"><scope>tvm::TensorTypeNode</scope><name>_type_key</name></member>
+      <member refid="classtvm_1_1TensorTypeNode_1a715d148ed0f0fdc8bf975bb31e210975" prot="public" virt="non-virtual"><scope>tvm::TensorTypeNode</scope><name>dtype</name></member>
+      <member refid="classtvm_1_1TensorTypeNode_1af38f7e3df5a2beaec7190eb037bf89e9" prot="public" virt="non-virtual"><scope>tvm::TensorTypeNode</scope><name>SEqualReduce</name></member>
+      <member refid="classtvm_1_1TensorTypeNode_1a98fa347833e4504dd6f8056d9863a708" prot="public" virt="non-virtual"><scope>tvm::TensorTypeNode</scope><name>shape</name></member>
+      <member refid="classtvm_1_1TensorTypeNode_1ab79c6efa74f976b6a515860b622b485e" prot="public" virt="non-virtual"><scope>tvm::TensorTypeNode</scope><name>SHashReduce</name></member>
+      <member refid="classtvm_1_1TensorTypeNode_1ac69ea89085f16b718fe3c4525e1798ba" prot="public" virt="non-virtual"><scope>tvm::TensorTypeNode</scope><name>Size</name></member>
+      <member refid="classtvm_1_1TypeNode_1a7b06d502a5162d51bb205691bbb95bb5" prot="public" virt="non-virtual"><scope>tvm::TensorTypeNode</scope><name>span</name></member>
+      <member refid="classtvm_1_1BaseTensorTypeNode_1afc675db92c700532b65fe819b1a37eb5" prot="public" virt="non-virtual"><scope>tvm::TensorTypeNode</scope><name>TVM_DECLARE_BASE_OBJECT_INFO</name></member>
+      <member refid="classtvm_1_1TypeNode_1abadff70e220806f889e81a0ad3bca0da" prot="public" virt="non-virtual" ambiguityscope="tvm::TypeNode::"><scope>tvm::TensorTypeNode</scope><name>TVM_DECLARE_BASE_OBJECT_INFO</name></member>
+      <member refid="classtvm_1_1TensorTypeNode_1a96eab1328e646dba6c954b552766c5c4" prot="public" virt="non-virtual"><scope>tvm::TensorTypeNode</scope><name>TVM_DECLARE_FINAL_OBJECT_INFO</name></member>
+      <member refid="classtvm_1_1TensorTypeNode_1a49f67378d6735693e24fb7b61c725132" prot="public" virt="non-virtual"><scope>tvm::TensorTypeNode</scope><name>VisitAttrs</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

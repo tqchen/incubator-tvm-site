@@ -1,0 +1,450 @@
+\hypertarget{classtvm_1_1runtime_1_1vm_1_1VirtualMachine}{}\section{tvm\+:\+:runtime\+:\+:vm\+:\+:Virtual\+Machine Class Reference}
+\label{classtvm_1_1runtime_1_1vm_1_1VirtualMachine}\index{tvm\+::runtime\+::vm\+::\+Virtual\+Machine@{tvm\+::runtime\+::vm\+::\+Virtual\+Machine}}
+
+
+The virtual machine.  
+
+
+
+
+{\ttfamily \#include $<$vm.\+h$>$}
+
+
+
+Inheritance diagram for tvm\+:\+:runtime\+:\+:vm\+:\+:Virtual\+Machine\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{classtvm_1_1runtime_1_1vm_1_1VirtualMachine__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for tvm\+:\+:runtime\+:\+:vm\+:\+:Virtual\+Machine\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{classtvm_1_1runtime_1_1vm_1_1VirtualMachine__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual \hyperlink{classtvm_1_1runtime_1_1PackedFunc}{Packed\+Func} \hyperlink{classtvm_1_1runtime_1_1vm_1_1VirtualMachine_a8d1e7cdc6412eae8dea9c2c08c7f48ec}{Get\+Function} (const std\+::string \&name, const \hyperlink{classtvm_1_1runtime_1_1ObjectPtr}{Object\+Ptr}$<$ \hyperlink{classtvm_1_1runtime_1_1Object}{Object} $>$ \&sptr\+\_\+to\+\_\+self)
+\begin{DoxyCompactList}\small\item\em Get a \hyperlink{classtvm_1_1runtime_1_1PackedFunc}{Packed\+Func} from module. \end{DoxyCompactList}\item 
+virtual \hyperlink{classtvm_1_1runtime_1_1vm_1_1VirtualMachine_a62dead74c40c1a6ac03aec56918d98c7}{$\sim$\+Virtual\+Machine} ()
+\item 
+const char $\ast$ \hyperlink{classtvm_1_1runtime_1_1vm_1_1VirtualMachine_a00f035566a720dbac56f5dea042fb0ec}{type\+\_\+key} () const final
+\item 
+\hyperlink{classtvm_1_1runtime_1_1vm_1_1VirtualMachine_a6edbbbb71000617f644232de37d53338}{Virtual\+Machine} ()
+\item 
+virtual void \hyperlink{classtvm_1_1runtime_1_1vm_1_1VirtualMachine_aae578b4bd354bdd1ab12e91a65ec6fbf}{Load\+Executable} (const \hyperlink{classtvm_1_1runtime_1_1vm_1_1Executable}{Executable} $\ast$exec)
+\begin{DoxyCompactList}\small\item\em load the executable for the virtual machine. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{classtvm_1_1runtime_1_1vm_1_1VirtualMachine_a05f2bc216da23c035522d5dde356a920}{Push\+Frame} (\hyperlink{namespacetvm_1_1runtime_1_1vm_a3597867d2db714bf760876a23d6b7d3d}{Index} arg\+\_\+count, \hyperlink{namespacetvm_1_1runtime_1_1vm_a3597867d2db714bf760876a23d6b7d3d}{Index} ret\+\_\+pc, const \hyperlink{structtvm_1_1runtime_1_1vm_1_1VMFunction}{V\+M\+Function} \&vm\+\_\+func)
+\begin{DoxyCompactList}\small\item\em Push a call frame on to the call stack. \end{DoxyCompactList}\item 
+\hyperlink{namespacetvm_1_1runtime_1_1vm_a3597867d2db714bf760876a23d6b7d3d}{Index} \hyperlink{classtvm_1_1runtime_1_1vm_1_1VirtualMachine_a5a60fe06f720e26c749a80211f1ee620}{Pop\+Frame} ()
+\begin{DoxyCompactList}\small\item\em Pop a frame off the call stack. \end{DoxyCompactList}\item 
+void \hyperlink{classtvm_1_1runtime_1_1vm_1_1VirtualMachine_a670a5e3f3d9c22bb822efface955bf17}{Write\+Register} (\hyperlink{namespacetvm_1_1runtime_1_1vm_a3bbbf700719e9dc3dda2bc25210c18ae}{Reg\+Name} reg, const \hyperlink{classtvm_1_1runtime_1_1ObjectRef}{Object\+Ref} \&obj)
+\begin{DoxyCompactList}\small\item\em Write to a VM register. \end{DoxyCompactList}\item 
+\hyperlink{classtvm_1_1runtime_1_1ObjectRef}{Object\+Ref} \hyperlink{classtvm_1_1runtime_1_1vm_1_1VirtualMachine_a75220f7f8173d1d43502ab8198a7ebb3}{Read\+Register} (\hyperlink{namespacetvm_1_1runtime_1_1vm_a3bbbf700719e9dc3dda2bc25210c18ae}{Reg\+Name} reg) const 
+\begin{DoxyCompactList}\small\item\em Read a VM register. \end{DoxyCompactList}\item 
+int32\+\_\+t \hyperlink{classtvm_1_1runtime_1_1vm_1_1VirtualMachine_a9ce5f01c75078e6ea312500e20385999}{Load\+Scalar\+Int} (\hyperlink{namespacetvm_1_1runtime_1_1vm_a3bbbf700719e9dc3dda2bc25210c18ae}{Reg\+Name} reg) const 
+\begin{DoxyCompactList}\small\item\em Read a VM register and cast it to int32\+\_\+t. \end{DoxyCompactList}\item 
+\hyperlink{classtvm_1_1runtime_1_1ObjectRef}{Object\+Ref} \hyperlink{classtvm_1_1runtime_1_1vm_1_1VirtualMachine_aa5f4724e2e702ef9d5c34e85dec53b02}{Invoke} (const \hyperlink{structtvm_1_1runtime_1_1vm_1_1VMFunction}{V\+M\+Function} \&func, const std\+::vector$<$ \hyperlink{classtvm_1_1runtime_1_1ObjectRef}{Object\+Ref} $>$ \&args)
+\begin{DoxyCompactList}\small\item\em Invoke a VM function. \end{DoxyCompactList}\item 
+\hyperlink{classtvm_1_1runtime_1_1ObjectRef}{Object\+Ref} \hyperlink{classtvm_1_1runtime_1_1vm_1_1VirtualMachine_a1094291352e07e4c827a88b1167b89ad}{Invoke} (const std\+::string \&name, const std\+::vector$<$ \hyperlink{classtvm_1_1runtime_1_1ObjectRef}{Object\+Ref} $>$ \&args)
+\begin{DoxyCompactList}\small\item\em Invoke a VM function by name. \end{DoxyCompactList}\item 
+virtual void \hyperlink{classtvm_1_1runtime_1_1vm_1_1VirtualMachine_a89bc186467de25e51802e0ce739f436b}{Invoke\+Packed} (\hyperlink{namespacetvm_1_1runtime_1_1vm_a3597867d2db714bf760876a23d6b7d3d}{Index} packed\+\_\+index, const \hyperlink{classtvm_1_1runtime_1_1PackedFunc}{Packed\+Func} \&func, \hyperlink{namespacetvm_1_1runtime_1_1vm_a3597867d2db714bf760876a23d6b7d3d}{Index} arg\+\_\+count, \hyperlink{namespacetvm_1_1runtime_1_1vm_a3597867d2db714bf760876a23d6b7d3d}{Index} output\+\_\+size, const std\+::vector$<$ \hyperlink{classtvm_1_1runtime_1_1ObjectRef}{Object\+Ref} $>$ \&args)
+\begin{DoxyCompactList}\small\item\em Invoke a Packed\+Function. \end{DoxyCompactList}\item 
+void \hyperlink{classtvm_1_1runtime_1_1vm_1_1VirtualMachine_ade6ed373d6af91fe813f6f98f9e59244}{Init} (const std\+::vector$<$ \hyperlink{c__runtime__api_8h_a9363bb701f16ce5bbb381f2a013d25b4}{T\+V\+M\+Context} $>$ \&contexts)
+\begin{DoxyCompactList}\small\item\em Initialize the virtual machine for a set of contexts. \end{DoxyCompactList}\item 
+void \hyperlink{classtvm_1_1runtime_1_1vm_1_1VirtualMachine_ad83dfc94ba5e62875df9e780c750487b}{Run\+Loop} ()
+\begin{DoxyCompactList}\small\item\em Run VM dispatch loop. \end{DoxyCompactList}\item 
+\hyperlink{c__runtime__api_8h_a9363bb701f16ce5bbb381f2a013d25b4}{T\+V\+M\+Context} \hyperlink{classtvm_1_1runtime_1_1vm_1_1VirtualMachine_aa85f2bba2f829a2976a68035151ff590}{Get\+Params\+Context} () const 
+\begin{DoxyCompactList}\small\item\em Get device context for params. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+std\+::vector$<$ \hyperlink{classtvm_1_1runtime_1_1PackedFunc}{Packed\+Func} $>$ \hyperlink{classtvm_1_1runtime_1_1vm_1_1VirtualMachine_ae2e5377a5dbf7335ed8989512457a2f5}{packed\+\_\+funcs\+\_\+}
+\begin{DoxyCompactList}\small\item\em The virtual machine\textquotesingle{}s packed function table. \end{DoxyCompactList}\item 
+std\+::vector$<$ \hyperlink{structtvm_1_1runtime_1_1vm_1_1VMFrame}{V\+M\+Frame} $>$ \hyperlink{classtvm_1_1runtime_1_1vm_1_1VirtualMachine_a4a268dec17fdd0942fe7dce78974783f}{frames\+\_\+}
+\begin{DoxyCompactList}\small\item\em The current stack of call frames. \end{DoxyCompactList}\item 
+\hyperlink{namespacetvm_1_1runtime_1_1vm_a3597867d2db714bf760876a23d6b7d3d}{Index} \hyperlink{classtvm_1_1runtime_1_1vm_1_1VirtualMachine_af9d51023b5d6451dac20d1a146ce5d38}{func\+\_\+index\+\_\+}
+\begin{DoxyCompactList}\small\item\em The fuction table index of the current function. \end{DoxyCompactList}\item 
+const \hyperlink{structtvm_1_1runtime_1_1vm_1_1Instruction}{Instruction} $\ast$ \hyperlink{classtvm_1_1runtime_1_1vm_1_1VirtualMachine_ab220bfa34c9abb2935c3b622d9bc03b2}{code\+\_\+}
+\begin{DoxyCompactList}\small\item\em The current pointer to the code section. \end{DoxyCompactList}\item 
+\hyperlink{namespacetvm_1_1runtime_1_1vm_a3597867d2db714bf760876a23d6b7d3d}{Index} \hyperlink{classtvm_1_1runtime_1_1vm_1_1VirtualMachine_a583f4afb3292882df571a4fdf3cbf947}{pc\+\_\+}
+\begin{DoxyCompactList}\small\item\em The virtual machine PC. \end{DoxyCompactList}\item 
+\hyperlink{classtvm_1_1runtime_1_1ObjectRef}{Object\+Ref} \hyperlink{classtvm_1_1runtime_1_1vm_1_1VirtualMachine_afd0505002da7e7f86f82b2f3325ff127}{return\+\_\+register\+\_\+}
+\begin{DoxyCompactList}\small\item\em The special return register. \end{DoxyCompactList}\item 
+const \hyperlink{classtvm_1_1runtime_1_1vm_1_1Executable}{Executable} $\ast$ \hyperlink{classtvm_1_1runtime_1_1vm_1_1VirtualMachine_ad478992798013d0e3a72d220003c8881}{exec\+\_\+}
+\begin{DoxyCompactList}\small\item\em The executable the VM will operate on. \end{DoxyCompactList}\item 
+std\+::unordered\+\_\+map$<$ std\+::string, std\+::vector$<$ \hyperlink{classtvm_1_1runtime_1_1ObjectRef}{Object\+Ref} $>$ $>$ \hyperlink{classtvm_1_1runtime_1_1vm_1_1VirtualMachine_a7d46e436c01133647cd303719752f456}{inputs\+\_\+}
+\begin{DoxyCompactList}\small\item\em The function name to inputs mapping. \end{DoxyCompactList}\item 
+std\+::vector$<$ \hyperlink{c__runtime__api_8h_a9363bb701f16ce5bbb381f2a013d25b4}{T\+V\+M\+Context} $>$ \hyperlink{classtvm_1_1runtime_1_1vm_1_1VirtualMachine_ae52ecf76ef854f8288ca2baa8f9d01ed}{ctxs\+\_\+}
+\begin{DoxyCompactList}\small\item\em The set of T\+VM contexts the VM is currently executing on. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+The virtual machine. 
+
+The virtual machine contains all the current execution state, as well as the executable.
+
+The goal is to have a single self-\/contained object, enabling one to easily pass around V\+Ms, execute them on multiple threads, or serialize them to disk or over the wire. 
+
+\subsection{Constructor \& Destructor Documentation}
+\index{tvm\+::runtime\+::vm\+::\+Virtual\+Machine@{tvm\+::runtime\+::vm\+::\+Virtual\+Machine}!````~Virtual\+Machine@{$\sim$\+Virtual\+Machine}}
+\index{````~Virtual\+Machine@{$\sim$\+Virtual\+Machine}!tvm\+::runtime\+::vm\+::\+Virtual\+Machine@{tvm\+::runtime\+::vm\+::\+Virtual\+Machine}}
+\subsubsection[{\texorpdfstring{$\sim$\+Virtual\+Machine()}{~VirtualMachine()}}]{\setlength{\rightskip}{0pt plus 5cm}virtual tvm\+::runtime\+::vm\+::\+Virtual\+Machine\+::$\sim$\+Virtual\+Machine (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}\hypertarget{classtvm_1_1runtime_1_1vm_1_1VirtualMachine_a62dead74c40c1a6ac03aec56918d98c7}{}\label{classtvm_1_1runtime_1_1vm_1_1VirtualMachine_a62dead74c40c1a6ac03aec56918d98c7}
+\index{tvm\+::runtime\+::vm\+::\+Virtual\+Machine@{tvm\+::runtime\+::vm\+::\+Virtual\+Machine}!Virtual\+Machine@{Virtual\+Machine}}
+\index{Virtual\+Machine@{Virtual\+Machine}!tvm\+::runtime\+::vm\+::\+Virtual\+Machine@{tvm\+::runtime\+::vm\+::\+Virtual\+Machine}}
+\subsubsection[{\texorpdfstring{Virtual\+Machine()}{VirtualMachine()}}]{\setlength{\rightskip}{0pt plus 5cm}tvm\+::runtime\+::vm\+::\+Virtual\+Machine\+::\+Virtual\+Machine (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classtvm_1_1runtime_1_1vm_1_1VirtualMachine_a6edbbbb71000617f644232de37d53338}{}\label{classtvm_1_1runtime_1_1vm_1_1VirtualMachine_a6edbbbb71000617f644232de37d53338}
+
+
+\subsection{Member Function Documentation}
+\index{tvm\+::runtime\+::vm\+::\+Virtual\+Machine@{tvm\+::runtime\+::vm\+::\+Virtual\+Machine}!Get\+Function@{Get\+Function}}
+\index{Get\+Function@{Get\+Function}!tvm\+::runtime\+::vm\+::\+Virtual\+Machine@{tvm\+::runtime\+::vm\+::\+Virtual\+Machine}}
+\subsubsection[{\texorpdfstring{Get\+Function(const std\+::string \&name, const Object\+Ptr$<$ Object $>$ \&sptr\+\_\+to\+\_\+self)}{GetFunction(const std::string &name, const ObjectPtr< Object > &sptr_to_self)}}]{\setlength{\rightskip}{0pt plus 5cm}virtual {\bf Packed\+Func} tvm\+::runtime\+::vm\+::\+Virtual\+Machine\+::\+Get\+Function (
+\begin{DoxyParamCaption}
+\item[{const std\+::string \&}]{name, }
+\item[{const {\bf Object\+Ptr}$<$ {\bf Object} $>$ \&}]{sptr\+\_\+to\+\_\+self}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\hypertarget{classtvm_1_1runtime_1_1vm_1_1VirtualMachine_a8d1e7cdc6412eae8dea9c2c08c7f48ec}{}\label{classtvm_1_1runtime_1_1vm_1_1VirtualMachine_a8d1e7cdc6412eae8dea9c2c08c7f48ec}
+
+
+Get a \hyperlink{classtvm_1_1runtime_1_1PackedFunc}{Packed\+Func} from module. 
+
+The \hyperlink{classtvm_1_1runtime_1_1PackedFunc}{Packed\+Func} may not be fully initialized, there might still be first time running overhead when executing the function on certain devices. For benchmarking, use prepare to eliminate
+
+
+\begin{DoxyParams}{Parameters}
+{\em name} & the name of the function. \\
+\hline
+{\em sptr\+\_\+to\+\_\+self} & The shared\+\_\+ptr that points to this module node.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Packed\+Func(nullptr) when it is not available.
+\end{DoxyReturn}
+\begin{DoxyNote}{Note}
+The function will always remain valid. If the function needs resource from the module(e.\+g. late linking), it should capture sptr\+\_\+to\+\_\+self. 
+\end{DoxyNote}
+
+
+Implements \hyperlink{classtvm_1_1runtime_1_1ModuleNode_af16bc90e6265eb5492b028308dbb1a25}{tvm\+::runtime\+::\+Module\+Node}.
+
+\index{tvm\+::runtime\+::vm\+::\+Virtual\+Machine@{tvm\+::runtime\+::vm\+::\+Virtual\+Machine}!Get\+Params\+Context@{Get\+Params\+Context}}
+\index{Get\+Params\+Context@{Get\+Params\+Context}!tvm\+::runtime\+::vm\+::\+Virtual\+Machine@{tvm\+::runtime\+::vm\+::\+Virtual\+Machine}}
+\subsubsection[{\texorpdfstring{Get\+Params\+Context() const }{GetParamsContext() const }}]{\setlength{\rightskip}{0pt plus 5cm}{\bf T\+V\+M\+Context} tvm\+::runtime\+::vm\+::\+Virtual\+Machine\+::\+Get\+Params\+Context (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [protected]}}\hypertarget{classtvm_1_1runtime_1_1vm_1_1VirtualMachine_aa85f2bba2f829a2976a68035151ff590}{}\label{classtvm_1_1runtime_1_1vm_1_1VirtualMachine_aa85f2bba2f829a2976a68035151ff590}
+
+
+Get device context for params. 
+
+\index{tvm\+::runtime\+::vm\+::\+Virtual\+Machine@{tvm\+::runtime\+::vm\+::\+Virtual\+Machine}!Init@{Init}}
+\index{Init@{Init}!tvm\+::runtime\+::vm\+::\+Virtual\+Machine@{tvm\+::runtime\+::vm\+::\+Virtual\+Machine}}
+\subsubsection[{\texorpdfstring{Init(const std\+::vector$<$ T\+V\+M\+Context $>$ \&contexts)}{Init(const std::vector< TVMContext > &contexts)}}]{\setlength{\rightskip}{0pt plus 5cm}void tvm\+::runtime\+::vm\+::\+Virtual\+Machine\+::\+Init (
+\begin{DoxyParamCaption}
+\item[{const std\+::vector$<$ {\bf T\+V\+M\+Context} $>$ \&}]{contexts}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}\hypertarget{classtvm_1_1runtime_1_1vm_1_1VirtualMachine_ade6ed373d6af91fe813f6f98f9e59244}{}\label{classtvm_1_1runtime_1_1vm_1_1VirtualMachine_ade6ed373d6af91fe813f6f98f9e59244}
+
+
+Initialize the virtual machine for a set of contexts. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em contexts} & The set of T\+VM contexts. \\
+\hline
+\end{DoxyParams}
+\index{tvm\+::runtime\+::vm\+::\+Virtual\+Machine@{tvm\+::runtime\+::vm\+::\+Virtual\+Machine}!Invoke@{Invoke}}
+\index{Invoke@{Invoke}!tvm\+::runtime\+::vm\+::\+Virtual\+Machine@{tvm\+::runtime\+::vm\+::\+Virtual\+Machine}}
+\subsubsection[{\texorpdfstring{Invoke(const V\+M\+Function \&func, const std\+::vector$<$ Object\+Ref $>$ \&args)}{Invoke(const VMFunction &func, const std::vector< ObjectRef > &args)}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Object\+Ref} tvm\+::runtime\+::vm\+::\+Virtual\+Machine\+::\+Invoke (
+\begin{DoxyParamCaption}
+\item[{const {\bf V\+M\+Function} \&}]{func, }
+\item[{const std\+::vector$<$ {\bf Object\+Ref} $>$ \&}]{args}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}\hypertarget{classtvm_1_1runtime_1_1vm_1_1VirtualMachine_aa5f4724e2e702ef9d5c34e85dec53b02}{}\label{classtvm_1_1runtime_1_1vm_1_1VirtualMachine_aa5f4724e2e702ef9d5c34e85dec53b02}
+
+
+Invoke a VM function. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em func} & The function. \\
+\hline
+{\em args} & The arguments to the function. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The object representing the result. 
+\end{DoxyReturn}
+\index{tvm\+::runtime\+::vm\+::\+Virtual\+Machine@{tvm\+::runtime\+::vm\+::\+Virtual\+Machine}!Invoke@{Invoke}}
+\index{Invoke@{Invoke}!tvm\+::runtime\+::vm\+::\+Virtual\+Machine@{tvm\+::runtime\+::vm\+::\+Virtual\+Machine}}
+\subsubsection[{\texorpdfstring{Invoke(const std\+::string \&name, const std\+::vector$<$ Object\+Ref $>$ \&args)}{Invoke(const std::string &name, const std::vector< ObjectRef > &args)}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Object\+Ref} tvm\+::runtime\+::vm\+::\+Virtual\+Machine\+::\+Invoke (
+\begin{DoxyParamCaption}
+\item[{const std\+::string \&}]{name, }
+\item[{const std\+::vector$<$ {\bf Object\+Ref} $>$ \&}]{args}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}\hypertarget{classtvm_1_1runtime_1_1vm_1_1VirtualMachine_a1094291352e07e4c827a88b1167b89ad}{}\label{classtvm_1_1runtime_1_1vm_1_1VirtualMachine_a1094291352e07e4c827a88b1167b89ad}
+
+
+Invoke a VM function by name. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em name} & The function\textquotesingle{}s name. \\
+\hline
+{\em args} & The arguments to the function. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The object representing the result. 
+\end{DoxyReturn}
+\index{tvm\+::runtime\+::vm\+::\+Virtual\+Machine@{tvm\+::runtime\+::vm\+::\+Virtual\+Machine}!Invoke\+Packed@{Invoke\+Packed}}
+\index{Invoke\+Packed@{Invoke\+Packed}!tvm\+::runtime\+::vm\+::\+Virtual\+Machine@{tvm\+::runtime\+::vm\+::\+Virtual\+Machine}}
+\subsubsection[{\texorpdfstring{Invoke\+Packed(\+Index packed\+\_\+index, const Packed\+Func \&func, Index arg\+\_\+count, Index output\+\_\+size, const std\+::vector$<$ Object\+Ref $>$ \&args)}{InvokePacked(Index packed_index, const PackedFunc &func, Index arg_count, Index output_size, const std::vector< ObjectRef > &args)}}]{\setlength{\rightskip}{0pt plus 5cm}virtual void tvm\+::runtime\+::vm\+::\+Virtual\+Machine\+::\+Invoke\+Packed (
+\begin{DoxyParamCaption}
+\item[{{\bf Index}}]{packed\+\_\+index, }
+\item[{const {\bf Packed\+Func} \&}]{func, }
+\item[{{\bf Index}}]{arg\+\_\+count, }
+\item[{{\bf Index}}]{output\+\_\+size, }
+\item[{const std\+::vector$<$ {\bf Object\+Ref} $>$ \&}]{args}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [virtual]}}\hypertarget{classtvm_1_1runtime_1_1vm_1_1VirtualMachine_a89bc186467de25e51802e0ce739f436b}{}\label{classtvm_1_1runtime_1_1vm_1_1VirtualMachine_a89bc186467de25e51802e0ce739f436b}
+
+
+Invoke a Packed\+Function. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em packed\+\_\+index} & The offset of the Packed\+Function in all functions. \\
+\hline
+{\em func} & The Packed\+Function to be invoked. \\
+\hline
+{\em arg\+\_\+count} & The number of arguments to the Packed\+Function. \\
+\hline
+{\em output\+\_\+size} & The number of outputs of the Packed\+Function. \\
+\hline
+{\em args} & Arguments to the Packed\+Function.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyNote}{Note}
+The return value will be stored in the last output\+\_\+size slots of args. 
+\end{DoxyNote}
+\index{tvm\+::runtime\+::vm\+::\+Virtual\+Machine@{tvm\+::runtime\+::vm\+::\+Virtual\+Machine}!Load\+Executable@{Load\+Executable}}
+\index{Load\+Executable@{Load\+Executable}!tvm\+::runtime\+::vm\+::\+Virtual\+Machine@{tvm\+::runtime\+::vm\+::\+Virtual\+Machine}}
+\subsubsection[{\texorpdfstring{Load\+Executable(const Executable $\ast$exec)}{LoadExecutable(const Executable *exec)}}]{\setlength{\rightskip}{0pt plus 5cm}virtual void tvm\+::runtime\+::vm\+::\+Virtual\+Machine\+::\+Load\+Executable (
+\begin{DoxyParamCaption}
+\item[{const {\bf Executable} $\ast$}]{exec}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\hypertarget{classtvm_1_1runtime_1_1vm_1_1VirtualMachine_aae578b4bd354bdd1ab12e91a65ec6fbf}{}\label{classtvm_1_1runtime_1_1vm_1_1VirtualMachine_aae578b4bd354bdd1ab12e91a65ec6fbf}
+
+
+load the executable for the virtual machine. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em exec} & The executable. \\
+\hline
+\end{DoxyParams}
+\index{tvm\+::runtime\+::vm\+::\+Virtual\+Machine@{tvm\+::runtime\+::vm\+::\+Virtual\+Machine}!Load\+Scalar\+Int@{Load\+Scalar\+Int}}
+\index{Load\+Scalar\+Int@{Load\+Scalar\+Int}!tvm\+::runtime\+::vm\+::\+Virtual\+Machine@{tvm\+::runtime\+::vm\+::\+Virtual\+Machine}}
+\subsubsection[{\texorpdfstring{Load\+Scalar\+Int(\+Reg\+Name reg) const }{LoadScalarInt(RegName reg) const }}]{\setlength{\rightskip}{0pt plus 5cm}int32\+\_\+t tvm\+::runtime\+::vm\+::\+Virtual\+Machine\+::\+Load\+Scalar\+Int (
+\begin{DoxyParamCaption}
+\item[{{\bf Reg\+Name}}]{reg}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [protected]}}\hypertarget{classtvm_1_1runtime_1_1vm_1_1VirtualMachine_a9ce5f01c75078e6ea312500e20385999}{}\label{classtvm_1_1runtime_1_1vm_1_1VirtualMachine_a9ce5f01c75078e6ea312500e20385999}
+
+
+Read a VM register and cast it to int32\+\_\+t. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em reg} & The register to read from. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The read scalar. 
+\end{DoxyReturn}
+\index{tvm\+::runtime\+::vm\+::\+Virtual\+Machine@{tvm\+::runtime\+::vm\+::\+Virtual\+Machine}!Pop\+Frame@{Pop\+Frame}}
+\index{Pop\+Frame@{Pop\+Frame}!tvm\+::runtime\+::vm\+::\+Virtual\+Machine@{tvm\+::runtime\+::vm\+::\+Virtual\+Machine}}
+\subsubsection[{\texorpdfstring{Pop\+Frame()}{PopFrame()}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Index} tvm\+::runtime\+::vm\+::\+Virtual\+Machine\+::\+Pop\+Frame (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}\hypertarget{classtvm_1_1runtime_1_1vm_1_1VirtualMachine_a5a60fe06f720e26c749a80211f1ee620}{}\label{classtvm_1_1runtime_1_1vm_1_1VirtualMachine_a5a60fe06f720e26c749a80211f1ee620}
+
+
+Pop a frame off the call stack. 
+
+\begin{DoxyReturn}{Returns}
+The number of frames left. 
+\end{DoxyReturn}
+\index{tvm\+::runtime\+::vm\+::\+Virtual\+Machine@{tvm\+::runtime\+::vm\+::\+Virtual\+Machine}!Push\+Frame@{Push\+Frame}}
+\index{Push\+Frame@{Push\+Frame}!tvm\+::runtime\+::vm\+::\+Virtual\+Machine@{tvm\+::runtime\+::vm\+::\+Virtual\+Machine}}
+\subsubsection[{\texorpdfstring{Push\+Frame(\+Index arg\+\_\+count, Index ret\+\_\+pc, const V\+M\+Function \&vm\+\_\+func)}{PushFrame(Index arg_count, Index ret_pc, const VMFunction &vm_func)}}]{\setlength{\rightskip}{0pt plus 5cm}void tvm\+::runtime\+::vm\+::\+Virtual\+Machine\+::\+Push\+Frame (
+\begin{DoxyParamCaption}
+\item[{{\bf Index}}]{arg\+\_\+count, }
+\item[{{\bf Index}}]{ret\+\_\+pc, }
+\item[{const {\bf V\+M\+Function} \&}]{vm\+\_\+func}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}\hypertarget{classtvm_1_1runtime_1_1vm_1_1VirtualMachine_a05f2bc216da23c035522d5dde356a920}{}\label{classtvm_1_1runtime_1_1vm_1_1VirtualMachine_a05f2bc216da23c035522d5dde356a920}
+
+
+Push a call frame on to the call stack. 
+
+\index{tvm\+::runtime\+::vm\+::\+Virtual\+Machine@{tvm\+::runtime\+::vm\+::\+Virtual\+Machine}!Read\+Register@{Read\+Register}}
+\index{Read\+Register@{Read\+Register}!tvm\+::runtime\+::vm\+::\+Virtual\+Machine@{tvm\+::runtime\+::vm\+::\+Virtual\+Machine}}
+\subsubsection[{\texorpdfstring{Read\+Register(\+Reg\+Name reg) const }{ReadRegister(RegName reg) const }}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Object\+Ref} tvm\+::runtime\+::vm\+::\+Virtual\+Machine\+::\+Read\+Register (
+\begin{DoxyParamCaption}
+\item[{{\bf Reg\+Name}}]{reg}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [protected]}}\hypertarget{classtvm_1_1runtime_1_1vm_1_1VirtualMachine_a75220f7f8173d1d43502ab8198a7ebb3}{}\label{classtvm_1_1runtime_1_1vm_1_1VirtualMachine_a75220f7f8173d1d43502ab8198a7ebb3}
+
+
+Read a VM register. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em reg} & The register to read from. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The read object. 
+\end{DoxyReturn}
+\index{tvm\+::runtime\+::vm\+::\+Virtual\+Machine@{tvm\+::runtime\+::vm\+::\+Virtual\+Machine}!Run\+Loop@{Run\+Loop}}
+\index{Run\+Loop@{Run\+Loop}!tvm\+::runtime\+::vm\+::\+Virtual\+Machine@{tvm\+::runtime\+::vm\+::\+Virtual\+Machine}}
+\subsubsection[{\texorpdfstring{Run\+Loop()}{RunLoop()}}]{\setlength{\rightskip}{0pt plus 5cm}void tvm\+::runtime\+::vm\+::\+Virtual\+Machine\+::\+Run\+Loop (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}\hypertarget{classtvm_1_1runtime_1_1vm_1_1VirtualMachine_ad83dfc94ba5e62875df9e780c750487b}{}\label{classtvm_1_1runtime_1_1vm_1_1VirtualMachine_ad83dfc94ba5e62875df9e780c750487b}
+
+
+Run VM dispatch loop. 
+
+\index{tvm\+::runtime\+::vm\+::\+Virtual\+Machine@{tvm\+::runtime\+::vm\+::\+Virtual\+Machine}!type\+\_\+key@{type\+\_\+key}}
+\index{type\+\_\+key@{type\+\_\+key}!tvm\+::runtime\+::vm\+::\+Virtual\+Machine@{tvm\+::runtime\+::vm\+::\+Virtual\+Machine}}
+\subsubsection[{\texorpdfstring{type\+\_\+key() const final}{type_key() const final}}]{\setlength{\rightskip}{0pt plus 5cm}const char$\ast$ tvm\+::runtime\+::vm\+::\+Virtual\+Machine\+::type\+\_\+key (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [final]}, {\ttfamily [virtual]}}\hypertarget{classtvm_1_1runtime_1_1vm_1_1VirtualMachine_a00f035566a720dbac56f5dea042fb0ec}{}\label{classtvm_1_1runtime_1_1vm_1_1VirtualMachine_a00f035566a720dbac56f5dea042fb0ec}
+\begin{DoxyReturn}{Returns}
+The per module type key. 
+\end{DoxyReturn}
+\begin{DoxyNote}{Note}
+This key is used to for serializing custom modules. 
+\end{DoxyNote}
+
+
+Implements \hyperlink{classtvm_1_1runtime_1_1ModuleNode_a5834549180e1c668e7126562cea9a557}{tvm\+::runtime\+::\+Module\+Node}.
+
+\index{tvm\+::runtime\+::vm\+::\+Virtual\+Machine@{tvm\+::runtime\+::vm\+::\+Virtual\+Machine}!Write\+Register@{Write\+Register}}
+\index{Write\+Register@{Write\+Register}!tvm\+::runtime\+::vm\+::\+Virtual\+Machine@{tvm\+::runtime\+::vm\+::\+Virtual\+Machine}}
+\subsubsection[{\texorpdfstring{Write\+Register(\+Reg\+Name reg, const Object\+Ref \&obj)}{WriteRegister(RegName reg, const ObjectRef &obj)}}]{\setlength{\rightskip}{0pt plus 5cm}void tvm\+::runtime\+::vm\+::\+Virtual\+Machine\+::\+Write\+Register (
+\begin{DoxyParamCaption}
+\item[{{\bf Reg\+Name}}]{reg, }
+\item[{const {\bf Object\+Ref} \&}]{obj}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [protected]}}\hypertarget{classtvm_1_1runtime_1_1vm_1_1VirtualMachine_a670a5e3f3d9c22bb822efface955bf17}{}\label{classtvm_1_1runtime_1_1vm_1_1VirtualMachine_a670a5e3f3d9c22bb822efface955bf17}
+
+
+Write to a VM register. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em reg} & The register to write to. \\
+\hline
+{\em obj} & The object to write to. \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Data Documentation}
+\index{tvm\+::runtime\+::vm\+::\+Virtual\+Machine@{tvm\+::runtime\+::vm\+::\+Virtual\+Machine}!code\+\_\+@{code\+\_\+}}
+\index{code\+\_\+@{code\+\_\+}!tvm\+::runtime\+::vm\+::\+Virtual\+Machine@{tvm\+::runtime\+::vm\+::\+Virtual\+Machine}}
+\subsubsection[{\texorpdfstring{code\+\_\+}{code_}}]{\setlength{\rightskip}{0pt plus 5cm}const {\bf Instruction}$\ast$ tvm\+::runtime\+::vm\+::\+Virtual\+Machine\+::code\+\_\+\hspace{0.3cm}{\ttfamily [protected]}}\hypertarget{classtvm_1_1runtime_1_1vm_1_1VirtualMachine_ab220bfa34c9abb2935c3b622d9bc03b2}{}\label{classtvm_1_1runtime_1_1vm_1_1VirtualMachine_ab220bfa34c9abb2935c3b622d9bc03b2}
+
+
+The current pointer to the code section. 
+
+\index{tvm\+::runtime\+::vm\+::\+Virtual\+Machine@{tvm\+::runtime\+::vm\+::\+Virtual\+Machine}!ctxs\+\_\+@{ctxs\+\_\+}}
+\index{ctxs\+\_\+@{ctxs\+\_\+}!tvm\+::runtime\+::vm\+::\+Virtual\+Machine@{tvm\+::runtime\+::vm\+::\+Virtual\+Machine}}
+\subsubsection[{\texorpdfstring{ctxs\+\_\+}{ctxs_}}]{\setlength{\rightskip}{0pt plus 5cm}std\+::vector$<${\bf T\+V\+M\+Context}$>$ tvm\+::runtime\+::vm\+::\+Virtual\+Machine\+::ctxs\+\_\+\hspace{0.3cm}{\ttfamily [protected]}}\hypertarget{classtvm_1_1runtime_1_1vm_1_1VirtualMachine_ae52ecf76ef854f8288ca2baa8f9d01ed}{}\label{classtvm_1_1runtime_1_1vm_1_1VirtualMachine_ae52ecf76ef854f8288ca2baa8f9d01ed}
+
+
+The set of T\+VM contexts the VM is currently executing on. 
+
+\index{tvm\+::runtime\+::vm\+::\+Virtual\+Machine@{tvm\+::runtime\+::vm\+::\+Virtual\+Machine}!exec\+\_\+@{exec\+\_\+}}
+\index{exec\+\_\+@{exec\+\_\+}!tvm\+::runtime\+::vm\+::\+Virtual\+Machine@{tvm\+::runtime\+::vm\+::\+Virtual\+Machine}}
+\subsubsection[{\texorpdfstring{exec\+\_\+}{exec_}}]{\setlength{\rightskip}{0pt plus 5cm}const {\bf Executable}$\ast$ tvm\+::runtime\+::vm\+::\+Virtual\+Machine\+::exec\+\_\+\hspace{0.3cm}{\ttfamily [protected]}}\hypertarget{classtvm_1_1runtime_1_1vm_1_1VirtualMachine_ad478992798013d0e3a72d220003c8881}{}\label{classtvm_1_1runtime_1_1vm_1_1VirtualMachine_ad478992798013d0e3a72d220003c8881}
+
+
+The executable the VM will operate on. 
+
+\index{tvm\+::runtime\+::vm\+::\+Virtual\+Machine@{tvm\+::runtime\+::vm\+::\+Virtual\+Machine}!frames\+\_\+@{frames\+\_\+}}
+\index{frames\+\_\+@{frames\+\_\+}!tvm\+::runtime\+::vm\+::\+Virtual\+Machine@{tvm\+::runtime\+::vm\+::\+Virtual\+Machine}}
+\subsubsection[{\texorpdfstring{frames\+\_\+}{frames_}}]{\setlength{\rightskip}{0pt plus 5cm}std\+::vector$<${\bf V\+M\+Frame}$>$ tvm\+::runtime\+::vm\+::\+Virtual\+Machine\+::frames\+\_\+\hspace{0.3cm}{\ttfamily [protected]}}\hypertarget{classtvm_1_1runtime_1_1vm_1_1VirtualMachine_a4a268dec17fdd0942fe7dce78974783f}{}\label{classtvm_1_1runtime_1_1vm_1_1VirtualMachine_a4a268dec17fdd0942fe7dce78974783f}
+
+
+The current stack of call frames. 
+
+\index{tvm\+::runtime\+::vm\+::\+Virtual\+Machine@{tvm\+::runtime\+::vm\+::\+Virtual\+Machine}!func\+\_\+index\+\_\+@{func\+\_\+index\+\_\+}}
+\index{func\+\_\+index\+\_\+@{func\+\_\+index\+\_\+}!tvm\+::runtime\+::vm\+::\+Virtual\+Machine@{tvm\+::runtime\+::vm\+::\+Virtual\+Machine}}
+\subsubsection[{\texorpdfstring{func\+\_\+index\+\_\+}{func_index_}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Index} tvm\+::runtime\+::vm\+::\+Virtual\+Machine\+::func\+\_\+index\+\_\+\hspace{0.3cm}{\ttfamily [protected]}}\hypertarget{classtvm_1_1runtime_1_1vm_1_1VirtualMachine_af9d51023b5d6451dac20d1a146ce5d38}{}\label{classtvm_1_1runtime_1_1vm_1_1VirtualMachine_af9d51023b5d6451dac20d1a146ce5d38}
+
+
+The fuction table index of the current function. 
+
+\index{tvm\+::runtime\+::vm\+::\+Virtual\+Machine@{tvm\+::runtime\+::vm\+::\+Virtual\+Machine}!inputs\+\_\+@{inputs\+\_\+}}
+\index{inputs\+\_\+@{inputs\+\_\+}!tvm\+::runtime\+::vm\+::\+Virtual\+Machine@{tvm\+::runtime\+::vm\+::\+Virtual\+Machine}}
+\subsubsection[{\texorpdfstring{inputs\+\_\+}{inputs_}}]{\setlength{\rightskip}{0pt plus 5cm}std\+::unordered\+\_\+map$<$std\+::string, std\+::vector$<${\bf Object\+Ref}$>$ $>$ tvm\+::runtime\+::vm\+::\+Virtual\+Machine\+::inputs\+\_\+\hspace{0.3cm}{\ttfamily [protected]}}\hypertarget{classtvm_1_1runtime_1_1vm_1_1VirtualMachine_a7d46e436c01133647cd303719752f456}{}\label{classtvm_1_1runtime_1_1vm_1_1VirtualMachine_a7d46e436c01133647cd303719752f456}
+
+
+The function name to inputs mapping. 
+
+\index{tvm\+::runtime\+::vm\+::\+Virtual\+Machine@{tvm\+::runtime\+::vm\+::\+Virtual\+Machine}!packed\+\_\+funcs\+\_\+@{packed\+\_\+funcs\+\_\+}}
+\index{packed\+\_\+funcs\+\_\+@{packed\+\_\+funcs\+\_\+}!tvm\+::runtime\+::vm\+::\+Virtual\+Machine@{tvm\+::runtime\+::vm\+::\+Virtual\+Machine}}
+\subsubsection[{\texorpdfstring{packed\+\_\+funcs\+\_\+}{packed_funcs_}}]{\setlength{\rightskip}{0pt plus 5cm}std\+::vector$<${\bf Packed\+Func}$>$ tvm\+::runtime\+::vm\+::\+Virtual\+Machine\+::packed\+\_\+funcs\+\_\+\hspace{0.3cm}{\ttfamily [protected]}}\hypertarget{classtvm_1_1runtime_1_1vm_1_1VirtualMachine_ae2e5377a5dbf7335ed8989512457a2f5}{}\label{classtvm_1_1runtime_1_1vm_1_1VirtualMachine_ae2e5377a5dbf7335ed8989512457a2f5}
+
+
+The virtual machine\textquotesingle{}s packed function table. 
+
+\index{tvm\+::runtime\+::vm\+::\+Virtual\+Machine@{tvm\+::runtime\+::vm\+::\+Virtual\+Machine}!pc\+\_\+@{pc\+\_\+}}
+\index{pc\+\_\+@{pc\+\_\+}!tvm\+::runtime\+::vm\+::\+Virtual\+Machine@{tvm\+::runtime\+::vm\+::\+Virtual\+Machine}}
+\subsubsection[{\texorpdfstring{pc\+\_\+}{pc_}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Index} tvm\+::runtime\+::vm\+::\+Virtual\+Machine\+::pc\+\_\+\hspace{0.3cm}{\ttfamily [protected]}}\hypertarget{classtvm_1_1runtime_1_1vm_1_1VirtualMachine_a583f4afb3292882df571a4fdf3cbf947}{}\label{classtvm_1_1runtime_1_1vm_1_1VirtualMachine_a583f4afb3292882df571a4fdf3cbf947}
+
+
+The virtual machine PC. 
+
+\index{tvm\+::runtime\+::vm\+::\+Virtual\+Machine@{tvm\+::runtime\+::vm\+::\+Virtual\+Machine}!return\+\_\+register\+\_\+@{return\+\_\+register\+\_\+}}
+\index{return\+\_\+register\+\_\+@{return\+\_\+register\+\_\+}!tvm\+::runtime\+::vm\+::\+Virtual\+Machine@{tvm\+::runtime\+::vm\+::\+Virtual\+Machine}}
+\subsubsection[{\texorpdfstring{return\+\_\+register\+\_\+}{return_register_}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Object\+Ref} tvm\+::runtime\+::vm\+::\+Virtual\+Machine\+::return\+\_\+register\+\_\+\hspace{0.3cm}{\ttfamily [protected]}}\hypertarget{classtvm_1_1runtime_1_1vm_1_1VirtualMachine_afd0505002da7e7f86f82b2f3325ff127}{}\label{classtvm_1_1runtime_1_1vm_1_1VirtualMachine_afd0505002da7e7f86f82b2f3325ff127}
+
+
+The special return register. 
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+include/tvm/runtime/\hyperlink{vm_8h}{vm.\+h}\end{DoxyCompactItemize}

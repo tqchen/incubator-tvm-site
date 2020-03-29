@@ -1,0 +1,218 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="classtvm_1_1relay_1_1RefReadNode" kind="class" language="C++" prot="public">
+    <compoundname>tvm::relay::RefReadNode</compoundname>
+    <basecompoundref refid="classtvm_1_1RelayExprNode" prot="public" virt="non-virtual">tvm::RelayExprNode</basecompoundref>
+    <includes refid="relay_2expr_8h" local="no">expr.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="classtvm_1_1relay_1_1RefReadNode_1ae61d2b27d1102f26f2300aad1ae168a7" prot="public" static="no" mutable="no">
+        <type><ref refid="namespacetvm_1_1relay_1a5b84e3790f89bb3fad5c7911eeb99531" kindref="member">Expr</ref></type>
+        <definition>Expr tvm::relay::RefReadNode::ref</definition>
+        <argsstring></argsstring>
+        <name>ref</name>
+        <briefdescription>
+<para>The Reference Expression. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/relay/expr.h" line="529" column="1" bodyfile="include/tvm/relay/expr.h" bodystart="529" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-attrib">
+      <memberdef kind="variable" id="classtvm_1_1relay_1_1RefReadNode_1a087566f4c5c66ea8ef0025ef28543615" prot="public" static="yes" mutable="no">
+        <type>constexpr const char *</type>
+        <definition>constexpr const char* tvm::relay::RefReadNode::_type_key</definition>
+        <argsstring></argsstring>
+        <name>_type_key</name>
+        <initializer>= &quot;relay.RefRead&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/relay/expr.h" line="547" column="1" bodyfile="include/tvm/relay/expr.h" bodystart="547" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classtvm_1_1relay_1_1RefReadNode_1a70ea5750f981305f04d0c851e0b46970" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void tvm::relay::RefReadNode::VisitAttrs</definition>
+        <argsstring>(tvm::AttrVisitor *v)</argsstring>
+        <name>VisitAttrs</name>
+        <param>
+          <type><ref refid="classtvm_1_1AttrVisitor" kindref="compound">tvm::AttrVisitor</ref> *</type>
+          <declname>v</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/relay/expr.h" line="531" column="1" bodyfile="include/tvm/relay/expr.h" bodystart="531" bodyend="535"/>
+      </memberdef>
+      <memberdef kind="function" id="classtvm_1_1relay_1_1RefReadNode_1a0fabbd159dcfd7ed071f82a679a2cf70" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool tvm::relay::RefReadNode::SEqualReduce</definition>
+        <argsstring>(const RefReadNode *other, SEqualReducer equal) const </argsstring>
+        <name>SEqualReduce</name>
+        <param>
+          <type>const <ref refid="classtvm_1_1relay_1_1RefReadNode" kindref="compound">RefReadNode</ref> *</type>
+          <declname>other</declname>
+        </param>
+        <param>
+          <type><ref refid="classtvm_1_1SEqualReducer" kindref="compound">SEqualReducer</ref></type>
+          <declname>equal</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/relay/expr.h" line="537" column="1" bodyfile="include/tvm/relay/expr.h" bodystart="537" bodyend="540"/>
+      </memberdef>
+      <memberdef kind="function" id="classtvm_1_1relay_1_1RefReadNode_1ac61f084ccf338ca8dfd2b1319f25cc06" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void tvm::relay::RefReadNode::SHashReduce</definition>
+        <argsstring>(SHashReducer hash_reduce) const </argsstring>
+        <name>SHashReduce</name>
+        <param>
+          <type><ref refid="classtvm_1_1SHashReducer" kindref="compound">SHashReducer</ref></type>
+          <declname>hash_reduce</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/relay/expr.h" line="542" column="1" bodyfile="include/tvm/relay/expr.h" bodystart="542" bodyend="545"/>
+      </memberdef>
+      <memberdef kind="function" id="classtvm_1_1relay_1_1RefReadNode_1af8d21104f0e48e955ec8c007918f9fbe" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>tvm::relay::RefReadNode::TVM_DECLARE_FINAL_OBJECT_INFO</definition>
+        <argsstring>(RefReadNode, ExprNode)</argsstring>
+        <name>TVM_DECLARE_FINAL_OBJECT_INFO</name>
+        <param>
+          <type><ref refid="classtvm_1_1relay_1_1RefReadNode" kindref="compound">RefReadNode</ref></type>
+        </param>
+        <param>
+          <type><ref refid="namespacetvm_1_1relay_1a387f18e050d016c52ea6c4781e7cff6c" kindref="member">ExprNode</ref></type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/relay/expr.h" line="548" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="6483">
+        <label>tvm::relay::RefReadNode</label>
+        <link refid="classtvm_1_1relay_1_1RefReadNode"/>
+        <childnode refid="6484" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="6485">
+        <label>tvm::BaseExprNode</label>
+        <link refid="classtvm_1_1BaseExprNode"/>
+        <childnode refid="6486" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="6484">
+        <label>ExprNode</label>
+        <link refid="classtvm_1_1RelayExprNode"/>
+        <childnode refid="6485" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="6486">
+        <label>Object</label>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="6492">
+        <label>ObjectRef</label>
+      </node>
+      <node id="6487">
+        <label>tvm::relay::RefReadNode</label>
+        <link refid="classtvm_1_1relay_1_1RefReadNode"/>
+        <childnode refid="6488" relation="public-inheritance">
+        </childnode>
+        <childnode refid="6494" relation="usage">
+          <edgelabel>+ref</edgelabel>
+        </childnode>
+      </node>
+      <node id="6489">
+        <label>tvm::BaseExprNode</label>
+        <link refid="classtvm_1_1BaseExprNode"/>
+        <childnode refid="6490" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="6488">
+        <label>ExprNode</label>
+        <link refid="classtvm_1_1RelayExprNode"/>
+        <childnode refid="6489" relation="public-inheritance">
+        </childnode>
+        <childnode refid="6491" relation="usage">
+          <edgelabel>+span</edgelabel>
+        </childnode>
+        <childnode refid="6493" relation="usage">
+          <edgelabel>+checked_type_</edgelabel>
+        </childnode>
+      </node>
+      <node id="6491">
+        <label>tvm::Span</label>
+        <link refid="classtvm_1_1Span"/>
+        <childnode refid="6492" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="6490">
+        <label>Object</label>
+      </node>
+      <node id="6494">
+        <label>tvm::RelayExpr</label>
+        <link refid="classtvm_1_1RelayExpr"/>
+        <childnode refid="6495" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="6495">
+        <label>tvm::BaseExpr</label>
+        <link refid="classtvm_1_1BaseExpr"/>
+        <childnode refid="6492" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="6493">
+        <label>tvm::Type</label>
+        <link refid="classtvm_1_1Type"/>
+        <childnode refid="6492" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="include/tvm/relay/expr.h" line="526" column="1" bodyfile="include/tvm/relay/expr.h" bodystart="526" bodyend="549"/>
+    <listofallmembers>
+      <member refid="classtvm_1_1BaseExprNode_1a905dcf65204e877b6ccb977cf375f2a0" prot="public" virt="non-virtual"><scope>tvm::relay::RefReadNode</scope><name>_type_has_method_sequal_reduce</name></member>
+      <member refid="classtvm_1_1BaseExprNode_1a13d7d1f1e6f790951caf200cd59c3620" prot="public" virt="non-virtual"><scope>tvm::relay::RefReadNode</scope><name>_type_has_method_shash_reduce</name></member>
+      <member refid="classtvm_1_1relay_1_1RefReadNode_1a087566f4c5c66ea8ef0025ef28543615" prot="public" virt="non-virtual"><scope>tvm::relay::RefReadNode</scope><name>_type_key</name></member>
+      <member refid="classtvm_1_1RelayExprNode_1a89bfd23e109a842d18240277ffaaa130" prot="public" virt="non-virtual"><scope>tvm::relay::RefReadNode</scope><name>checked_type</name></member>
+      <member refid="classtvm_1_1RelayExprNode_1ae30ca49a8b84288fbc21d5f312f02929" prot="public" virt="non-virtual"><scope>tvm::relay::RefReadNode</scope><name>checked_type_</name></member>
+      <member refid="classtvm_1_1relay_1_1RefReadNode_1ae61d2b27d1102f26f2300aad1ae168a7" prot="public" virt="non-virtual"><scope>tvm::relay::RefReadNode</scope><name>ref</name></member>
+      <member refid="classtvm_1_1relay_1_1RefReadNode_1a0fabbd159dcfd7ed071f82a679a2cf70" prot="public" virt="non-virtual"><scope>tvm::relay::RefReadNode</scope><name>SEqualReduce</name></member>
+      <member refid="classtvm_1_1relay_1_1RefReadNode_1ac61f084ccf338ca8dfd2b1319f25cc06" prot="public" virt="non-virtual"><scope>tvm::relay::RefReadNode</scope><name>SHashReduce</name></member>
+      <member refid="classtvm_1_1RelayExprNode_1a904ae50be0b72eab079bed93829c9563" prot="public" virt="non-virtual"><scope>tvm::relay::RefReadNode</scope><name>span</name></member>
+      <member refid="classtvm_1_1RelayExprNode_1a89eb638258551ea1ae2d0e578335474a" prot="public" virt="non-virtual"><scope>tvm::relay::RefReadNode</scope><name>TVM_DECLARE_BASE_OBJECT_INFO</name></member>
+      <member refid="classtvm_1_1BaseExprNode_1a831794c879d47c30cdd9cefd4f05d533" prot="public" virt="non-virtual" ambiguityscope="tvm::BaseExprNode::"><scope>tvm::relay::RefReadNode</scope><name>TVM_DECLARE_BASE_OBJECT_INFO</name></member>
+      <member refid="classtvm_1_1relay_1_1RefReadNode_1af8d21104f0e48e955ec8c007918f9fbe" prot="public" virt="non-virtual"><scope>tvm::relay::RefReadNode</scope><name>TVM_DECLARE_FINAL_OBJECT_INFO</name></member>
+      <member refid="classtvm_1_1RelayExprNode_1a60c73bac632a728a2a669bb34a1c3008" prot="public" virt="non-virtual"><scope>tvm::relay::RefReadNode</scope><name>type_as</name></member>
+      <member refid="classtvm_1_1relay_1_1RefReadNode_1a70ea5750f981305f04d0c851e0b46970" prot="public" virt="non-virtual"><scope>tvm::relay::RefReadNode</scope><name>VisitAttrs</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,333 @@
+\hypertarget{classtvm_1_1tir_1_1ExprVisitor}{}\section{tvm\+:\+:tir\+:\+:Expr\+Visitor Class Reference}
+\label{classtvm_1_1tir_1_1ExprVisitor}\index{tvm\+::tir\+::\+Expr\+Visitor@{tvm\+::tir\+::\+Expr\+Visitor}}
+
+
+\hyperlink{classtvm_1_1tir_1_1ExprVisitor}{Expr\+Visitor}.  
+
+
+
+
+{\ttfamily \#include $<$expr\+\_\+functor.\+h$>$}
+
+
+
+Inheritance diagram for tvm\+:\+:tir\+:\+:Expr\+Visitor\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=226pt]{classtvm_1_1tir_1_1ExprVisitor__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for tvm\+:\+:tir\+:\+:Expr\+Visitor\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=226pt]{classtvm_1_1tir_1_1ExprVisitor__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{classtvm_1_1tir_1_1ExprVisitor_abf1ea11bdeb9df050bc73155ffb50a8a}{Visit\+Expr\+\_\+} (const \hyperlink{classtvm_1_1tir_1_1VarNode}{Var\+Node} $\ast$op) override
+\item 
+void \hyperlink{classtvm_1_1tir_1_1ExprVisitor_a786dcfcef511795b23359a3c60c74477}{Visit\+Expr\+\_\+} (const \hyperlink{classtvm_1_1tir_1_1SizeVarNode}{Size\+Var\+Node} $\ast$op) override
+\item 
+void \hyperlink{classtvm_1_1tir_1_1ExprVisitor_ace23e526c5e9ca01910d5f3f1511725b}{Visit\+Expr\+\_\+} (const \hyperlink{classtvm_1_1tir_1_1LoadNode}{Load\+Node} $\ast$op) override
+\item 
+void \hyperlink{classtvm_1_1tir_1_1ExprVisitor_a206c594717e000028659b4868308ec0b}{Visit\+Expr\+\_\+} (const \hyperlink{classtvm_1_1tir_1_1LetNode}{Let\+Node} $\ast$op) override
+\item 
+void \hyperlink{classtvm_1_1tir_1_1ExprVisitor_ac2c3101c3ffbd53be46e46e0c0bb20fb}{Visit\+Expr\+\_\+} (const \hyperlink{classtvm_1_1tir_1_1CallNode}{Call\+Node} $\ast$op) override
+\item 
+void \hyperlink{classtvm_1_1tir_1_1ExprVisitor_ac15b2305024fcd9fa750350bb51de349}{Visit\+Expr\+\_\+} (const \hyperlink{classtvm_1_1tir_1_1AddNode}{Add\+Node} $\ast$op) override
+\item 
+void \hyperlink{classtvm_1_1tir_1_1ExprVisitor_a4eb35442748bfdb4872cccc760423efe}{Visit\+Expr\+\_\+} (const \hyperlink{classtvm_1_1tir_1_1SubNode}{Sub\+Node} $\ast$op) override
+\item 
+void \hyperlink{classtvm_1_1tir_1_1ExprVisitor_a3514ac6030929c1eab616bccb0da37ad}{Visit\+Expr\+\_\+} (const \hyperlink{classtvm_1_1tir_1_1MulNode}{Mul\+Node} $\ast$op) override
+\item 
+void \hyperlink{classtvm_1_1tir_1_1ExprVisitor_a3c91bf7900710da018179935ec40e837}{Visit\+Expr\+\_\+} (const \hyperlink{classtvm_1_1tir_1_1DivNode}{Div\+Node} $\ast$op) override
+\item 
+void \hyperlink{classtvm_1_1tir_1_1ExprVisitor_a3a28d6962c00847a9aa392d6092e44be}{Visit\+Expr\+\_\+} (const \hyperlink{classtvm_1_1tir_1_1ModNode}{Mod\+Node} $\ast$op) override
+\item 
+void \hyperlink{classtvm_1_1tir_1_1ExprVisitor_a600ab7a202c9351d0ce5698a0f884453}{Visit\+Expr\+\_\+} (const \hyperlink{classtvm_1_1tir_1_1FloorDivNode}{Floor\+Div\+Node} $\ast$op) override
+\item 
+void \hyperlink{classtvm_1_1tir_1_1ExprVisitor_a001e91c6f7458afcc8f7433c5714dc38}{Visit\+Expr\+\_\+} (const \hyperlink{classtvm_1_1tir_1_1FloorModNode}{Floor\+Mod\+Node} $\ast$op) override
+\item 
+void \hyperlink{classtvm_1_1tir_1_1ExprVisitor_af5c92682a0fc192aa04c486bb8a9c07c}{Visit\+Expr\+\_\+} (const \hyperlink{classtvm_1_1tir_1_1MinNode}{Min\+Node} $\ast$op) override
+\item 
+void \hyperlink{classtvm_1_1tir_1_1ExprVisitor_a84893defaf52042718eadb5e7c4c40bb}{Visit\+Expr\+\_\+} (const \hyperlink{classtvm_1_1tir_1_1MaxNode}{Max\+Node} $\ast$op) override
+\item 
+void \hyperlink{classtvm_1_1tir_1_1ExprVisitor_ab6e54dd3e43497fc0fa6fc02cf04d86a}{Visit\+Expr\+\_\+} (const \hyperlink{classtvm_1_1tir_1_1EQNode}{E\+Q\+Node} $\ast$op) override
+\item 
+void \hyperlink{classtvm_1_1tir_1_1ExprVisitor_a0f5b65f0944eacc6401c8e02cb7ecd63}{Visit\+Expr\+\_\+} (const \hyperlink{classtvm_1_1tir_1_1NENode}{N\+E\+Node} $\ast$op) override
+\item 
+void \hyperlink{classtvm_1_1tir_1_1ExprVisitor_ae8b5c68f5ad28542328676dca89dec5c}{Visit\+Expr\+\_\+} (const \hyperlink{classtvm_1_1tir_1_1LTNode}{L\+T\+Node} $\ast$op) override
+\item 
+void \hyperlink{classtvm_1_1tir_1_1ExprVisitor_a092a9c1077a6b50fd3e7d13643446eb0}{Visit\+Expr\+\_\+} (const \hyperlink{structtvm_1_1tir_1_1LENode}{L\+E\+Node} $\ast$op) override
+\item 
+void \hyperlink{classtvm_1_1tir_1_1ExprVisitor_a80845900e297ba27e9700b4e8b827118}{Visit\+Expr\+\_\+} (const \hyperlink{classtvm_1_1tir_1_1GTNode}{G\+T\+Node} $\ast$op) override
+\item 
+void \hyperlink{classtvm_1_1tir_1_1ExprVisitor_abd7bb2cf89bbd693ba682dc989fb8924}{Visit\+Expr\+\_\+} (const \hyperlink{classtvm_1_1tir_1_1GENode}{G\+E\+Node} $\ast$op) override
+\item 
+void \hyperlink{classtvm_1_1tir_1_1ExprVisitor_ab8beb3f112fe52825a3894a5de47ed4c}{Visit\+Expr\+\_\+} (const \hyperlink{classtvm_1_1tir_1_1AndNode}{And\+Node} $\ast$op) override
+\item 
+void \hyperlink{classtvm_1_1tir_1_1ExprVisitor_a1e06eb2730080b3c5b2bb9450b5df9aa}{Visit\+Expr\+\_\+} (const \hyperlink{classtvm_1_1tir_1_1OrNode}{Or\+Node} $\ast$op) override
+\item 
+void \hyperlink{classtvm_1_1tir_1_1ExprVisitor_ac42b57f542bac6ec73fd05bdf9e77fa0}{Visit\+Expr\+\_\+} (const \hyperlink{classtvm_1_1tir_1_1ReduceNode}{Reduce\+Node} $\ast$op) override
+\item 
+void \hyperlink{classtvm_1_1tir_1_1ExprVisitor_a2bde617452ce9c160cf8bf6f6db89601}{Visit\+Expr\+\_\+} (const \hyperlink{classtvm_1_1tir_1_1CastNode}{Cast\+Node} $\ast$op) override
+\item 
+void \hyperlink{classtvm_1_1tir_1_1ExprVisitor_a893148a9d3d5fa9b76ce653f04d19140}{Visit\+Expr\+\_\+} (const \hyperlink{classtvm_1_1tir_1_1NotNode}{Not\+Node} $\ast$op) override
+\item 
+void \hyperlink{classtvm_1_1tir_1_1ExprVisitor_a4490d95fc014da418769ac27589ea51b}{Visit\+Expr\+\_\+} (const \hyperlink{classtvm_1_1tir_1_1SelectNode}{Select\+Node} $\ast$op) override
+\item 
+void \hyperlink{classtvm_1_1tir_1_1ExprVisitor_a36a25512b8729660c5f3bd7a94085880}{Visit\+Expr\+\_\+} (const \hyperlink{classtvm_1_1tir_1_1RampNode}{Ramp\+Node} $\ast$op) override
+\item 
+void \hyperlink{classtvm_1_1tir_1_1ExprVisitor_a8d6d70c40f607e9e438d7f40d4cb2d68}{Visit\+Expr\+\_\+} (const \hyperlink{classtvm_1_1tir_1_1BroadcastNode}{Broadcast\+Node} $\ast$op) override
+\item 
+void \hyperlink{classtvm_1_1tir_1_1ExprVisitor_ad83b97a96f2efb935182fd0a5e0b6db0}{Visit\+Expr\+\_\+} (const \hyperlink{classtvm_1_1tir_1_1ShuffleNode}{Shuffle\+Node} $\ast$op) override
+\item 
+void \hyperlink{classtvm_1_1tir_1_1ExprVisitor_a375334641aa93fdc9354a0e0dc636284}{Visit\+Expr\+\_\+} (const \hyperlink{namespacetvm_1_1tir_ae8c7db788e840dc1c2ed1f365d5ea829}{Int\+Imm\+Node} $\ast$op) override
+\item 
+void \hyperlink{classtvm_1_1tir_1_1ExprVisitor_a8f990531a61731bc5465577f5c6571d5}{Visit\+Expr\+\_\+} (const \hyperlink{namespacetvm_1_1tir_adb123be81447d2871f4c716ce2d1dc00}{Float\+Imm\+Node} $\ast$op) override
+\item 
+void \hyperlink{classtvm_1_1tir_1_1ExprVisitor_a5ea877b24afb7654fe457c13bcee9620}{Visit\+Expr\+\_\+} (const \hyperlink{classtvm_1_1tir_1_1StringImmNode}{String\+Imm\+Node} $\ast$op) override
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\hyperlink{classtvm_1_1tir_1_1ExprVisitor}{Expr\+Visitor}. 
+
+\subsection{Member Function Documentation}
+\index{tvm\+::tir\+::\+Expr\+Visitor@{tvm\+::tir\+::\+Expr\+Visitor}!Visit\+Expr\+\_\+@{Visit\+Expr\+\_\+}}
+\index{Visit\+Expr\+\_\+@{Visit\+Expr\+\_\+}!tvm\+::tir\+::\+Expr\+Visitor@{tvm\+::tir\+::\+Expr\+Visitor}}
+\subsubsection[{\texorpdfstring{Visit\+Expr\+\_\+(const Var\+Node $\ast$op) override}{VisitExpr_(const VarNode *op) override}}]{\setlength{\rightskip}{0pt plus 5cm}void tvm\+::tir\+::\+Expr\+Visitor\+::\+Visit\+Expr\+\_\+ (
+\begin{DoxyParamCaption}
+\item[{const {\bf Var\+Node} $\ast$}]{op}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [protected]}}\hypertarget{classtvm_1_1tir_1_1ExprVisitor_abf1ea11bdeb9df050bc73155ffb50a8a}{}\label{classtvm_1_1tir_1_1ExprVisitor_abf1ea11bdeb9df050bc73155ffb50a8a}
+\index{tvm\+::tir\+::\+Expr\+Visitor@{tvm\+::tir\+::\+Expr\+Visitor}!Visit\+Expr\+\_\+@{Visit\+Expr\+\_\+}}
+\index{Visit\+Expr\+\_\+@{Visit\+Expr\+\_\+}!tvm\+::tir\+::\+Expr\+Visitor@{tvm\+::tir\+::\+Expr\+Visitor}}
+\subsubsection[{\texorpdfstring{Visit\+Expr\+\_\+(const Size\+Var\+Node $\ast$op) override}{VisitExpr_(const SizeVarNode *op) override}}]{\setlength{\rightskip}{0pt plus 5cm}void tvm\+::tir\+::\+Expr\+Visitor\+::\+Visit\+Expr\+\_\+ (
+\begin{DoxyParamCaption}
+\item[{const {\bf Size\+Var\+Node} $\ast$}]{op}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [protected]}}\hypertarget{classtvm_1_1tir_1_1ExprVisitor_a786dcfcef511795b23359a3c60c74477}{}\label{classtvm_1_1tir_1_1ExprVisitor_a786dcfcef511795b23359a3c60c74477}
+\index{tvm\+::tir\+::\+Expr\+Visitor@{tvm\+::tir\+::\+Expr\+Visitor}!Visit\+Expr\+\_\+@{Visit\+Expr\+\_\+}}
+\index{Visit\+Expr\+\_\+@{Visit\+Expr\+\_\+}!tvm\+::tir\+::\+Expr\+Visitor@{tvm\+::tir\+::\+Expr\+Visitor}}
+\subsubsection[{\texorpdfstring{Visit\+Expr\+\_\+(const Load\+Node $\ast$op) override}{VisitExpr_(const LoadNode *op) override}}]{\setlength{\rightskip}{0pt plus 5cm}void tvm\+::tir\+::\+Expr\+Visitor\+::\+Visit\+Expr\+\_\+ (
+\begin{DoxyParamCaption}
+\item[{const {\bf Load\+Node} $\ast$}]{op}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [protected]}}\hypertarget{classtvm_1_1tir_1_1ExprVisitor_ace23e526c5e9ca01910d5f3f1511725b}{}\label{classtvm_1_1tir_1_1ExprVisitor_ace23e526c5e9ca01910d5f3f1511725b}
+\index{tvm\+::tir\+::\+Expr\+Visitor@{tvm\+::tir\+::\+Expr\+Visitor}!Visit\+Expr\+\_\+@{Visit\+Expr\+\_\+}}
+\index{Visit\+Expr\+\_\+@{Visit\+Expr\+\_\+}!tvm\+::tir\+::\+Expr\+Visitor@{tvm\+::tir\+::\+Expr\+Visitor}}
+\subsubsection[{\texorpdfstring{Visit\+Expr\+\_\+(const Let\+Node $\ast$op) override}{VisitExpr_(const LetNode *op) override}}]{\setlength{\rightskip}{0pt plus 5cm}void tvm\+::tir\+::\+Expr\+Visitor\+::\+Visit\+Expr\+\_\+ (
+\begin{DoxyParamCaption}
+\item[{const {\bf Let\+Node} $\ast$}]{op}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [protected]}}\hypertarget{classtvm_1_1tir_1_1ExprVisitor_a206c594717e000028659b4868308ec0b}{}\label{classtvm_1_1tir_1_1ExprVisitor_a206c594717e000028659b4868308ec0b}
+\index{tvm\+::tir\+::\+Expr\+Visitor@{tvm\+::tir\+::\+Expr\+Visitor}!Visit\+Expr\+\_\+@{Visit\+Expr\+\_\+}}
+\index{Visit\+Expr\+\_\+@{Visit\+Expr\+\_\+}!tvm\+::tir\+::\+Expr\+Visitor@{tvm\+::tir\+::\+Expr\+Visitor}}
+\subsubsection[{\texorpdfstring{Visit\+Expr\+\_\+(const Call\+Node $\ast$op) override}{VisitExpr_(const CallNode *op) override}}]{\setlength{\rightskip}{0pt plus 5cm}void tvm\+::tir\+::\+Expr\+Visitor\+::\+Visit\+Expr\+\_\+ (
+\begin{DoxyParamCaption}
+\item[{const {\bf Call\+Node} $\ast$}]{op}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [protected]}}\hypertarget{classtvm_1_1tir_1_1ExprVisitor_ac2c3101c3ffbd53be46e46e0c0bb20fb}{}\label{classtvm_1_1tir_1_1ExprVisitor_ac2c3101c3ffbd53be46e46e0c0bb20fb}
+\index{tvm\+::tir\+::\+Expr\+Visitor@{tvm\+::tir\+::\+Expr\+Visitor}!Visit\+Expr\+\_\+@{Visit\+Expr\+\_\+}}
+\index{Visit\+Expr\+\_\+@{Visit\+Expr\+\_\+}!tvm\+::tir\+::\+Expr\+Visitor@{tvm\+::tir\+::\+Expr\+Visitor}}
+\subsubsection[{\texorpdfstring{Visit\+Expr\+\_\+(const Add\+Node $\ast$op) override}{VisitExpr_(const AddNode *op) override}}]{\setlength{\rightskip}{0pt plus 5cm}void tvm\+::tir\+::\+Expr\+Visitor\+::\+Visit\+Expr\+\_\+ (
+\begin{DoxyParamCaption}
+\item[{const {\bf Add\+Node} $\ast$}]{op}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [protected]}}\hypertarget{classtvm_1_1tir_1_1ExprVisitor_ac15b2305024fcd9fa750350bb51de349}{}\label{classtvm_1_1tir_1_1ExprVisitor_ac15b2305024fcd9fa750350bb51de349}
+\index{tvm\+::tir\+::\+Expr\+Visitor@{tvm\+::tir\+::\+Expr\+Visitor}!Visit\+Expr\+\_\+@{Visit\+Expr\+\_\+}}
+\index{Visit\+Expr\+\_\+@{Visit\+Expr\+\_\+}!tvm\+::tir\+::\+Expr\+Visitor@{tvm\+::tir\+::\+Expr\+Visitor}}
+\subsubsection[{\texorpdfstring{Visit\+Expr\+\_\+(const Sub\+Node $\ast$op) override}{VisitExpr_(const SubNode *op) override}}]{\setlength{\rightskip}{0pt plus 5cm}void tvm\+::tir\+::\+Expr\+Visitor\+::\+Visit\+Expr\+\_\+ (
+\begin{DoxyParamCaption}
+\item[{const {\bf Sub\+Node} $\ast$}]{op}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [protected]}}\hypertarget{classtvm_1_1tir_1_1ExprVisitor_a4eb35442748bfdb4872cccc760423efe}{}\label{classtvm_1_1tir_1_1ExprVisitor_a4eb35442748bfdb4872cccc760423efe}
+\index{tvm\+::tir\+::\+Expr\+Visitor@{tvm\+::tir\+::\+Expr\+Visitor}!Visit\+Expr\+\_\+@{Visit\+Expr\+\_\+}}
+\index{Visit\+Expr\+\_\+@{Visit\+Expr\+\_\+}!tvm\+::tir\+::\+Expr\+Visitor@{tvm\+::tir\+::\+Expr\+Visitor}}
+\subsubsection[{\texorpdfstring{Visit\+Expr\+\_\+(const Mul\+Node $\ast$op) override}{VisitExpr_(const MulNode *op) override}}]{\setlength{\rightskip}{0pt plus 5cm}void tvm\+::tir\+::\+Expr\+Visitor\+::\+Visit\+Expr\+\_\+ (
+\begin{DoxyParamCaption}
+\item[{const {\bf Mul\+Node} $\ast$}]{op}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [protected]}}\hypertarget{classtvm_1_1tir_1_1ExprVisitor_a3514ac6030929c1eab616bccb0da37ad}{}\label{classtvm_1_1tir_1_1ExprVisitor_a3514ac6030929c1eab616bccb0da37ad}
+\index{tvm\+::tir\+::\+Expr\+Visitor@{tvm\+::tir\+::\+Expr\+Visitor}!Visit\+Expr\+\_\+@{Visit\+Expr\+\_\+}}
+\index{Visit\+Expr\+\_\+@{Visit\+Expr\+\_\+}!tvm\+::tir\+::\+Expr\+Visitor@{tvm\+::tir\+::\+Expr\+Visitor}}
+\subsubsection[{\texorpdfstring{Visit\+Expr\+\_\+(const Div\+Node $\ast$op) override}{VisitExpr_(const DivNode *op) override}}]{\setlength{\rightskip}{0pt plus 5cm}void tvm\+::tir\+::\+Expr\+Visitor\+::\+Visit\+Expr\+\_\+ (
+\begin{DoxyParamCaption}
+\item[{const {\bf Div\+Node} $\ast$}]{op}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [protected]}}\hypertarget{classtvm_1_1tir_1_1ExprVisitor_a3c91bf7900710da018179935ec40e837}{}\label{classtvm_1_1tir_1_1ExprVisitor_a3c91bf7900710da018179935ec40e837}
+\index{tvm\+::tir\+::\+Expr\+Visitor@{tvm\+::tir\+::\+Expr\+Visitor}!Visit\+Expr\+\_\+@{Visit\+Expr\+\_\+}}
+\index{Visit\+Expr\+\_\+@{Visit\+Expr\+\_\+}!tvm\+::tir\+::\+Expr\+Visitor@{tvm\+::tir\+::\+Expr\+Visitor}}
+\subsubsection[{\texorpdfstring{Visit\+Expr\+\_\+(const Mod\+Node $\ast$op) override}{VisitExpr_(const ModNode *op) override}}]{\setlength{\rightskip}{0pt plus 5cm}void tvm\+::tir\+::\+Expr\+Visitor\+::\+Visit\+Expr\+\_\+ (
+\begin{DoxyParamCaption}
+\item[{const {\bf Mod\+Node} $\ast$}]{op}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [protected]}}\hypertarget{classtvm_1_1tir_1_1ExprVisitor_a3a28d6962c00847a9aa392d6092e44be}{}\label{classtvm_1_1tir_1_1ExprVisitor_a3a28d6962c00847a9aa392d6092e44be}
+\index{tvm\+::tir\+::\+Expr\+Visitor@{tvm\+::tir\+::\+Expr\+Visitor}!Visit\+Expr\+\_\+@{Visit\+Expr\+\_\+}}
+\index{Visit\+Expr\+\_\+@{Visit\+Expr\+\_\+}!tvm\+::tir\+::\+Expr\+Visitor@{tvm\+::tir\+::\+Expr\+Visitor}}
+\subsubsection[{\texorpdfstring{Visit\+Expr\+\_\+(const Floor\+Div\+Node $\ast$op) override}{VisitExpr_(const FloorDivNode *op) override}}]{\setlength{\rightskip}{0pt plus 5cm}void tvm\+::tir\+::\+Expr\+Visitor\+::\+Visit\+Expr\+\_\+ (
+\begin{DoxyParamCaption}
+\item[{const {\bf Floor\+Div\+Node} $\ast$}]{op}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [protected]}}\hypertarget{classtvm_1_1tir_1_1ExprVisitor_a600ab7a202c9351d0ce5698a0f884453}{}\label{classtvm_1_1tir_1_1ExprVisitor_a600ab7a202c9351d0ce5698a0f884453}
+\index{tvm\+::tir\+::\+Expr\+Visitor@{tvm\+::tir\+::\+Expr\+Visitor}!Visit\+Expr\+\_\+@{Visit\+Expr\+\_\+}}
+\index{Visit\+Expr\+\_\+@{Visit\+Expr\+\_\+}!tvm\+::tir\+::\+Expr\+Visitor@{tvm\+::tir\+::\+Expr\+Visitor}}
+\subsubsection[{\texorpdfstring{Visit\+Expr\+\_\+(const Floor\+Mod\+Node $\ast$op) override}{VisitExpr_(const FloorModNode *op) override}}]{\setlength{\rightskip}{0pt plus 5cm}void tvm\+::tir\+::\+Expr\+Visitor\+::\+Visit\+Expr\+\_\+ (
+\begin{DoxyParamCaption}
+\item[{const {\bf Floor\+Mod\+Node} $\ast$}]{op}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [protected]}}\hypertarget{classtvm_1_1tir_1_1ExprVisitor_a001e91c6f7458afcc8f7433c5714dc38}{}\label{classtvm_1_1tir_1_1ExprVisitor_a001e91c6f7458afcc8f7433c5714dc38}
+\index{tvm\+::tir\+::\+Expr\+Visitor@{tvm\+::tir\+::\+Expr\+Visitor}!Visit\+Expr\+\_\+@{Visit\+Expr\+\_\+}}
+\index{Visit\+Expr\+\_\+@{Visit\+Expr\+\_\+}!tvm\+::tir\+::\+Expr\+Visitor@{tvm\+::tir\+::\+Expr\+Visitor}}
+\subsubsection[{\texorpdfstring{Visit\+Expr\+\_\+(const Min\+Node $\ast$op) override}{VisitExpr_(const MinNode *op) override}}]{\setlength{\rightskip}{0pt plus 5cm}void tvm\+::tir\+::\+Expr\+Visitor\+::\+Visit\+Expr\+\_\+ (
+\begin{DoxyParamCaption}
+\item[{const {\bf Min\+Node} $\ast$}]{op}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [protected]}}\hypertarget{classtvm_1_1tir_1_1ExprVisitor_af5c92682a0fc192aa04c486bb8a9c07c}{}\label{classtvm_1_1tir_1_1ExprVisitor_af5c92682a0fc192aa04c486bb8a9c07c}
+\index{tvm\+::tir\+::\+Expr\+Visitor@{tvm\+::tir\+::\+Expr\+Visitor}!Visit\+Expr\+\_\+@{Visit\+Expr\+\_\+}}
+\index{Visit\+Expr\+\_\+@{Visit\+Expr\+\_\+}!tvm\+::tir\+::\+Expr\+Visitor@{tvm\+::tir\+::\+Expr\+Visitor}}
+\subsubsection[{\texorpdfstring{Visit\+Expr\+\_\+(const Max\+Node $\ast$op) override}{VisitExpr_(const MaxNode *op) override}}]{\setlength{\rightskip}{0pt plus 5cm}void tvm\+::tir\+::\+Expr\+Visitor\+::\+Visit\+Expr\+\_\+ (
+\begin{DoxyParamCaption}
+\item[{const {\bf Max\+Node} $\ast$}]{op}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [protected]}}\hypertarget{classtvm_1_1tir_1_1ExprVisitor_a84893defaf52042718eadb5e7c4c40bb}{}\label{classtvm_1_1tir_1_1ExprVisitor_a84893defaf52042718eadb5e7c4c40bb}
+\index{tvm\+::tir\+::\+Expr\+Visitor@{tvm\+::tir\+::\+Expr\+Visitor}!Visit\+Expr\+\_\+@{Visit\+Expr\+\_\+}}
+\index{Visit\+Expr\+\_\+@{Visit\+Expr\+\_\+}!tvm\+::tir\+::\+Expr\+Visitor@{tvm\+::tir\+::\+Expr\+Visitor}}
+\subsubsection[{\texorpdfstring{Visit\+Expr\+\_\+(const E\+Q\+Node $\ast$op) override}{VisitExpr_(const EQNode *op) override}}]{\setlength{\rightskip}{0pt plus 5cm}void tvm\+::tir\+::\+Expr\+Visitor\+::\+Visit\+Expr\+\_\+ (
+\begin{DoxyParamCaption}
+\item[{const {\bf E\+Q\+Node} $\ast$}]{op}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [protected]}}\hypertarget{classtvm_1_1tir_1_1ExprVisitor_ab6e54dd3e43497fc0fa6fc02cf04d86a}{}\label{classtvm_1_1tir_1_1ExprVisitor_ab6e54dd3e43497fc0fa6fc02cf04d86a}
+\index{tvm\+::tir\+::\+Expr\+Visitor@{tvm\+::tir\+::\+Expr\+Visitor}!Visit\+Expr\+\_\+@{Visit\+Expr\+\_\+}}
+\index{Visit\+Expr\+\_\+@{Visit\+Expr\+\_\+}!tvm\+::tir\+::\+Expr\+Visitor@{tvm\+::tir\+::\+Expr\+Visitor}}
+\subsubsection[{\texorpdfstring{Visit\+Expr\+\_\+(const N\+E\+Node $\ast$op) override}{VisitExpr_(const NENode *op) override}}]{\setlength{\rightskip}{0pt plus 5cm}void tvm\+::tir\+::\+Expr\+Visitor\+::\+Visit\+Expr\+\_\+ (
+\begin{DoxyParamCaption}
+\item[{const {\bf N\+E\+Node} $\ast$}]{op}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [protected]}}\hypertarget{classtvm_1_1tir_1_1ExprVisitor_a0f5b65f0944eacc6401c8e02cb7ecd63}{}\label{classtvm_1_1tir_1_1ExprVisitor_a0f5b65f0944eacc6401c8e02cb7ecd63}
+\index{tvm\+::tir\+::\+Expr\+Visitor@{tvm\+::tir\+::\+Expr\+Visitor}!Visit\+Expr\+\_\+@{Visit\+Expr\+\_\+}}
+\index{Visit\+Expr\+\_\+@{Visit\+Expr\+\_\+}!tvm\+::tir\+::\+Expr\+Visitor@{tvm\+::tir\+::\+Expr\+Visitor}}
+\subsubsection[{\texorpdfstring{Visit\+Expr\+\_\+(const L\+T\+Node $\ast$op) override}{VisitExpr_(const LTNode *op) override}}]{\setlength{\rightskip}{0pt plus 5cm}void tvm\+::tir\+::\+Expr\+Visitor\+::\+Visit\+Expr\+\_\+ (
+\begin{DoxyParamCaption}
+\item[{const {\bf L\+T\+Node} $\ast$}]{op}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [protected]}}\hypertarget{classtvm_1_1tir_1_1ExprVisitor_ae8b5c68f5ad28542328676dca89dec5c}{}\label{classtvm_1_1tir_1_1ExprVisitor_ae8b5c68f5ad28542328676dca89dec5c}
+\index{tvm\+::tir\+::\+Expr\+Visitor@{tvm\+::tir\+::\+Expr\+Visitor}!Visit\+Expr\+\_\+@{Visit\+Expr\+\_\+}}
+\index{Visit\+Expr\+\_\+@{Visit\+Expr\+\_\+}!tvm\+::tir\+::\+Expr\+Visitor@{tvm\+::tir\+::\+Expr\+Visitor}}
+\subsubsection[{\texorpdfstring{Visit\+Expr\+\_\+(const L\+E\+Node $\ast$op) override}{VisitExpr_(const LENode *op) override}}]{\setlength{\rightskip}{0pt plus 5cm}void tvm\+::tir\+::\+Expr\+Visitor\+::\+Visit\+Expr\+\_\+ (
+\begin{DoxyParamCaption}
+\item[{const {\bf L\+E\+Node} $\ast$}]{op}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [protected]}}\hypertarget{classtvm_1_1tir_1_1ExprVisitor_a092a9c1077a6b50fd3e7d13643446eb0}{}\label{classtvm_1_1tir_1_1ExprVisitor_a092a9c1077a6b50fd3e7d13643446eb0}
+\index{tvm\+::tir\+::\+Expr\+Visitor@{tvm\+::tir\+::\+Expr\+Visitor}!Visit\+Expr\+\_\+@{Visit\+Expr\+\_\+}}
+\index{Visit\+Expr\+\_\+@{Visit\+Expr\+\_\+}!tvm\+::tir\+::\+Expr\+Visitor@{tvm\+::tir\+::\+Expr\+Visitor}}
+\subsubsection[{\texorpdfstring{Visit\+Expr\+\_\+(const G\+T\+Node $\ast$op) override}{VisitExpr_(const GTNode *op) override}}]{\setlength{\rightskip}{0pt plus 5cm}void tvm\+::tir\+::\+Expr\+Visitor\+::\+Visit\+Expr\+\_\+ (
+\begin{DoxyParamCaption}
+\item[{const {\bf G\+T\+Node} $\ast$}]{op}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [protected]}}\hypertarget{classtvm_1_1tir_1_1ExprVisitor_a80845900e297ba27e9700b4e8b827118}{}\label{classtvm_1_1tir_1_1ExprVisitor_a80845900e297ba27e9700b4e8b827118}
+\index{tvm\+::tir\+::\+Expr\+Visitor@{tvm\+::tir\+::\+Expr\+Visitor}!Visit\+Expr\+\_\+@{Visit\+Expr\+\_\+}}
+\index{Visit\+Expr\+\_\+@{Visit\+Expr\+\_\+}!tvm\+::tir\+::\+Expr\+Visitor@{tvm\+::tir\+::\+Expr\+Visitor}}
+\subsubsection[{\texorpdfstring{Visit\+Expr\+\_\+(const G\+E\+Node $\ast$op) override}{VisitExpr_(const GENode *op) override}}]{\setlength{\rightskip}{0pt plus 5cm}void tvm\+::tir\+::\+Expr\+Visitor\+::\+Visit\+Expr\+\_\+ (
+\begin{DoxyParamCaption}
+\item[{const {\bf G\+E\+Node} $\ast$}]{op}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [protected]}}\hypertarget{classtvm_1_1tir_1_1ExprVisitor_abd7bb2cf89bbd693ba682dc989fb8924}{}\label{classtvm_1_1tir_1_1ExprVisitor_abd7bb2cf89bbd693ba682dc989fb8924}
+\index{tvm\+::tir\+::\+Expr\+Visitor@{tvm\+::tir\+::\+Expr\+Visitor}!Visit\+Expr\+\_\+@{Visit\+Expr\+\_\+}}
+\index{Visit\+Expr\+\_\+@{Visit\+Expr\+\_\+}!tvm\+::tir\+::\+Expr\+Visitor@{tvm\+::tir\+::\+Expr\+Visitor}}
+\subsubsection[{\texorpdfstring{Visit\+Expr\+\_\+(const And\+Node $\ast$op) override}{VisitExpr_(const AndNode *op) override}}]{\setlength{\rightskip}{0pt plus 5cm}void tvm\+::tir\+::\+Expr\+Visitor\+::\+Visit\+Expr\+\_\+ (
+\begin{DoxyParamCaption}
+\item[{const {\bf And\+Node} $\ast$}]{op}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [protected]}}\hypertarget{classtvm_1_1tir_1_1ExprVisitor_ab8beb3f112fe52825a3894a5de47ed4c}{}\label{classtvm_1_1tir_1_1ExprVisitor_ab8beb3f112fe52825a3894a5de47ed4c}
+\index{tvm\+::tir\+::\+Expr\+Visitor@{tvm\+::tir\+::\+Expr\+Visitor}!Visit\+Expr\+\_\+@{Visit\+Expr\+\_\+}}
+\index{Visit\+Expr\+\_\+@{Visit\+Expr\+\_\+}!tvm\+::tir\+::\+Expr\+Visitor@{tvm\+::tir\+::\+Expr\+Visitor}}
+\subsubsection[{\texorpdfstring{Visit\+Expr\+\_\+(const Or\+Node $\ast$op) override}{VisitExpr_(const OrNode *op) override}}]{\setlength{\rightskip}{0pt plus 5cm}void tvm\+::tir\+::\+Expr\+Visitor\+::\+Visit\+Expr\+\_\+ (
+\begin{DoxyParamCaption}
+\item[{const {\bf Or\+Node} $\ast$}]{op}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [protected]}}\hypertarget{classtvm_1_1tir_1_1ExprVisitor_a1e06eb2730080b3c5b2bb9450b5df9aa}{}\label{classtvm_1_1tir_1_1ExprVisitor_a1e06eb2730080b3c5b2bb9450b5df9aa}
+\index{tvm\+::tir\+::\+Expr\+Visitor@{tvm\+::tir\+::\+Expr\+Visitor}!Visit\+Expr\+\_\+@{Visit\+Expr\+\_\+}}
+\index{Visit\+Expr\+\_\+@{Visit\+Expr\+\_\+}!tvm\+::tir\+::\+Expr\+Visitor@{tvm\+::tir\+::\+Expr\+Visitor}}
+\subsubsection[{\texorpdfstring{Visit\+Expr\+\_\+(const Reduce\+Node $\ast$op) override}{VisitExpr_(const ReduceNode *op) override}}]{\setlength{\rightskip}{0pt plus 5cm}void tvm\+::tir\+::\+Expr\+Visitor\+::\+Visit\+Expr\+\_\+ (
+\begin{DoxyParamCaption}
+\item[{const {\bf Reduce\+Node} $\ast$}]{op}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [protected]}}\hypertarget{classtvm_1_1tir_1_1ExprVisitor_ac42b57f542bac6ec73fd05bdf9e77fa0}{}\label{classtvm_1_1tir_1_1ExprVisitor_ac42b57f542bac6ec73fd05bdf9e77fa0}
+\index{tvm\+::tir\+::\+Expr\+Visitor@{tvm\+::tir\+::\+Expr\+Visitor}!Visit\+Expr\+\_\+@{Visit\+Expr\+\_\+}}
+\index{Visit\+Expr\+\_\+@{Visit\+Expr\+\_\+}!tvm\+::tir\+::\+Expr\+Visitor@{tvm\+::tir\+::\+Expr\+Visitor}}
+\subsubsection[{\texorpdfstring{Visit\+Expr\+\_\+(const Cast\+Node $\ast$op) override}{VisitExpr_(const CastNode *op) override}}]{\setlength{\rightskip}{0pt plus 5cm}void tvm\+::tir\+::\+Expr\+Visitor\+::\+Visit\+Expr\+\_\+ (
+\begin{DoxyParamCaption}
+\item[{const {\bf Cast\+Node} $\ast$}]{op}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [protected]}}\hypertarget{classtvm_1_1tir_1_1ExprVisitor_a2bde617452ce9c160cf8bf6f6db89601}{}\label{classtvm_1_1tir_1_1ExprVisitor_a2bde617452ce9c160cf8bf6f6db89601}
+\index{tvm\+::tir\+::\+Expr\+Visitor@{tvm\+::tir\+::\+Expr\+Visitor}!Visit\+Expr\+\_\+@{Visit\+Expr\+\_\+}}
+\index{Visit\+Expr\+\_\+@{Visit\+Expr\+\_\+}!tvm\+::tir\+::\+Expr\+Visitor@{tvm\+::tir\+::\+Expr\+Visitor}}
+\subsubsection[{\texorpdfstring{Visit\+Expr\+\_\+(const Not\+Node $\ast$op) override}{VisitExpr_(const NotNode *op) override}}]{\setlength{\rightskip}{0pt plus 5cm}void tvm\+::tir\+::\+Expr\+Visitor\+::\+Visit\+Expr\+\_\+ (
+\begin{DoxyParamCaption}
+\item[{const {\bf Not\+Node} $\ast$}]{op}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [protected]}}\hypertarget{classtvm_1_1tir_1_1ExprVisitor_a893148a9d3d5fa9b76ce653f04d19140}{}\label{classtvm_1_1tir_1_1ExprVisitor_a893148a9d3d5fa9b76ce653f04d19140}
+\index{tvm\+::tir\+::\+Expr\+Visitor@{tvm\+::tir\+::\+Expr\+Visitor}!Visit\+Expr\+\_\+@{Visit\+Expr\+\_\+}}
+\index{Visit\+Expr\+\_\+@{Visit\+Expr\+\_\+}!tvm\+::tir\+::\+Expr\+Visitor@{tvm\+::tir\+::\+Expr\+Visitor}}
+\subsubsection[{\texorpdfstring{Visit\+Expr\+\_\+(const Select\+Node $\ast$op) override}{VisitExpr_(const SelectNode *op) override}}]{\setlength{\rightskip}{0pt plus 5cm}void tvm\+::tir\+::\+Expr\+Visitor\+::\+Visit\+Expr\+\_\+ (
+\begin{DoxyParamCaption}
+\item[{const {\bf Select\+Node} $\ast$}]{op}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [protected]}}\hypertarget{classtvm_1_1tir_1_1ExprVisitor_a4490d95fc014da418769ac27589ea51b}{}\label{classtvm_1_1tir_1_1ExprVisitor_a4490d95fc014da418769ac27589ea51b}
+\index{tvm\+::tir\+::\+Expr\+Visitor@{tvm\+::tir\+::\+Expr\+Visitor}!Visit\+Expr\+\_\+@{Visit\+Expr\+\_\+}}
+\index{Visit\+Expr\+\_\+@{Visit\+Expr\+\_\+}!tvm\+::tir\+::\+Expr\+Visitor@{tvm\+::tir\+::\+Expr\+Visitor}}
+\subsubsection[{\texorpdfstring{Visit\+Expr\+\_\+(const Ramp\+Node $\ast$op) override}{VisitExpr_(const RampNode *op) override}}]{\setlength{\rightskip}{0pt plus 5cm}void tvm\+::tir\+::\+Expr\+Visitor\+::\+Visit\+Expr\+\_\+ (
+\begin{DoxyParamCaption}
+\item[{const {\bf Ramp\+Node} $\ast$}]{op}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [protected]}}\hypertarget{classtvm_1_1tir_1_1ExprVisitor_a36a25512b8729660c5f3bd7a94085880}{}\label{classtvm_1_1tir_1_1ExprVisitor_a36a25512b8729660c5f3bd7a94085880}
+\index{tvm\+::tir\+::\+Expr\+Visitor@{tvm\+::tir\+::\+Expr\+Visitor}!Visit\+Expr\+\_\+@{Visit\+Expr\+\_\+}}
+\index{Visit\+Expr\+\_\+@{Visit\+Expr\+\_\+}!tvm\+::tir\+::\+Expr\+Visitor@{tvm\+::tir\+::\+Expr\+Visitor}}
+\subsubsection[{\texorpdfstring{Visit\+Expr\+\_\+(const Broadcast\+Node $\ast$op) override}{VisitExpr_(const BroadcastNode *op) override}}]{\setlength{\rightskip}{0pt plus 5cm}void tvm\+::tir\+::\+Expr\+Visitor\+::\+Visit\+Expr\+\_\+ (
+\begin{DoxyParamCaption}
+\item[{const {\bf Broadcast\+Node} $\ast$}]{op}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [protected]}}\hypertarget{classtvm_1_1tir_1_1ExprVisitor_a8d6d70c40f607e9e438d7f40d4cb2d68}{}\label{classtvm_1_1tir_1_1ExprVisitor_a8d6d70c40f607e9e438d7f40d4cb2d68}
+\index{tvm\+::tir\+::\+Expr\+Visitor@{tvm\+::tir\+::\+Expr\+Visitor}!Visit\+Expr\+\_\+@{Visit\+Expr\+\_\+}}
+\index{Visit\+Expr\+\_\+@{Visit\+Expr\+\_\+}!tvm\+::tir\+::\+Expr\+Visitor@{tvm\+::tir\+::\+Expr\+Visitor}}
+\subsubsection[{\texorpdfstring{Visit\+Expr\+\_\+(const Shuffle\+Node $\ast$op) override}{VisitExpr_(const ShuffleNode *op) override}}]{\setlength{\rightskip}{0pt plus 5cm}void tvm\+::tir\+::\+Expr\+Visitor\+::\+Visit\+Expr\+\_\+ (
+\begin{DoxyParamCaption}
+\item[{const {\bf Shuffle\+Node} $\ast$}]{op}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [protected]}}\hypertarget{classtvm_1_1tir_1_1ExprVisitor_ad83b97a96f2efb935182fd0a5e0b6db0}{}\label{classtvm_1_1tir_1_1ExprVisitor_ad83b97a96f2efb935182fd0a5e0b6db0}
+\index{tvm\+::tir\+::\+Expr\+Visitor@{tvm\+::tir\+::\+Expr\+Visitor}!Visit\+Expr\+\_\+@{Visit\+Expr\+\_\+}}
+\index{Visit\+Expr\+\_\+@{Visit\+Expr\+\_\+}!tvm\+::tir\+::\+Expr\+Visitor@{tvm\+::tir\+::\+Expr\+Visitor}}
+\subsubsection[{\texorpdfstring{Visit\+Expr\+\_\+(const Int\+Imm\+Node $\ast$op) override}{VisitExpr_(const IntImmNode *op) override}}]{\setlength{\rightskip}{0pt plus 5cm}void tvm\+::tir\+::\+Expr\+Visitor\+::\+Visit\+Expr\+\_\+ (
+\begin{DoxyParamCaption}
+\item[{const {\bf Int\+Imm\+Node} $\ast$}]{op}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [protected]}}\hypertarget{classtvm_1_1tir_1_1ExprVisitor_a375334641aa93fdc9354a0e0dc636284}{}\label{classtvm_1_1tir_1_1ExprVisitor_a375334641aa93fdc9354a0e0dc636284}
+\index{tvm\+::tir\+::\+Expr\+Visitor@{tvm\+::tir\+::\+Expr\+Visitor}!Visit\+Expr\+\_\+@{Visit\+Expr\+\_\+}}
+\index{Visit\+Expr\+\_\+@{Visit\+Expr\+\_\+}!tvm\+::tir\+::\+Expr\+Visitor@{tvm\+::tir\+::\+Expr\+Visitor}}
+\subsubsection[{\texorpdfstring{Visit\+Expr\+\_\+(const Float\+Imm\+Node $\ast$op) override}{VisitExpr_(const FloatImmNode *op) override}}]{\setlength{\rightskip}{0pt plus 5cm}void tvm\+::tir\+::\+Expr\+Visitor\+::\+Visit\+Expr\+\_\+ (
+\begin{DoxyParamCaption}
+\item[{const {\bf Float\+Imm\+Node} $\ast$}]{op}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [protected]}}\hypertarget{classtvm_1_1tir_1_1ExprVisitor_a8f990531a61731bc5465577f5c6571d5}{}\label{classtvm_1_1tir_1_1ExprVisitor_a8f990531a61731bc5465577f5c6571d5}
+\index{tvm\+::tir\+::\+Expr\+Visitor@{tvm\+::tir\+::\+Expr\+Visitor}!Visit\+Expr\+\_\+@{Visit\+Expr\+\_\+}}
+\index{Visit\+Expr\+\_\+@{Visit\+Expr\+\_\+}!tvm\+::tir\+::\+Expr\+Visitor@{tvm\+::tir\+::\+Expr\+Visitor}}
+\subsubsection[{\texorpdfstring{Visit\+Expr\+\_\+(const String\+Imm\+Node $\ast$op) override}{VisitExpr_(const StringImmNode *op) override}}]{\setlength{\rightskip}{0pt plus 5cm}void tvm\+::tir\+::\+Expr\+Visitor\+::\+Visit\+Expr\+\_\+ (
+\begin{DoxyParamCaption}
+\item[{const {\bf String\+Imm\+Node} $\ast$}]{op}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [protected]}}\hypertarget{classtvm_1_1tir_1_1ExprVisitor_a5ea877b24afb7654fe457c13bcee9620}{}\label{classtvm_1_1tir_1_1ExprVisitor_a5ea877b24afb7654fe457c13bcee9620}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+include/tvm/tir/\hyperlink{tir_2expr__functor_8h}{expr\+\_\+functor.\+h}\end{DoxyCompactItemize}

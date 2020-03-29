@@ -1,0 +1,40 @@
+\hypertarget{rocm_2injective_8h}{}\section{topi/include/topi/rocm/injective.h File Reference}
+\label{rocm_2injective_8h}\index{topi/include/topi/rocm/injective.\+h@{topi/include/topi/rocm/injective.\+h}}
+
+
+rocm schedule for injective operations  
+
+
+{\ttfamily \#include $<$topi/tags.\+h$>$}\\*
+{\ttfamily \#include $<$topi/detail/fuse.\+h$>$}\\*
+{\ttfamily \#include $<$tvm/te/operation.\+h$>$}\\*
+{\ttfamily \#include $<$tvm/target/generic\+\_\+func.\+h$>$}\\*
+{\ttfamily \#include \char`\"{}topi/cuda/injective.\+h\char`\"{}}\\*
+Include dependency graph for injective.\+h\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{rocm_2injective_8h__incl}
+\end{center}
+\end{figure}
+\subsection*{Namespaces}
+\begin{DoxyCompactItemize}
+\item 
+ \hyperlink{namespacetopi}{topi}
+\item 
+ \hyperlink{namespacetopi_1_1rocm}{topi\+::rocm}
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classtvm_1_1te_1_1Schedule}{Schedule} \hyperlink{namespacetopi_1_1rocm_a7fc2bb96c7301c539e00ef6d6a4c034c}{topi\+::rocm\+::schedule\+\_\+injective\+\_\+from\+\_\+existing} (\hyperlink{classtvm_1_1te_1_1Schedule}{Schedule} sch, const \hyperlink{classtvm_1_1te_1_1Tensor}{Tensor} \&out)
+\begin{DoxyCompactList}\small\item\em Updates an existing schedule for the given injective ops. \end{DoxyCompactList}\item 
+\hyperlink{classtvm_1_1te_1_1Schedule}{Schedule} \hyperlink{namespacetopi_1_1rocm_accc2eeb3de7b1e472e1415881007720b}{topi\+::rocm\+::schedule\+\_\+injective} (const \hyperlink{classtvm_1_1Target}{Target} \&target, const \hyperlink{classtvm_1_1Array}{Array}$<$ \hyperlink{classtvm_1_1te_1_1Tensor}{Tensor} $>$ \&outs)
+\begin{DoxyCompactList}\small\item\em Create a rocm schedule for the given output tensors. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+rocm schedule for injective operations 
+
+R\+O\+CM schedule for injective operations.

@@ -1,0 +1,425 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="classtvm_1_1te_1_1Schedule" kind="class" language="C++" prot="public">
+    <compoundname>tvm::te::Schedule</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">ObjectRef</basecompoundref>
+    <includes refid="schedule_8h" local="no">schedule.h</includes>
+      <sectiondef kind="public-type">
+      <memberdef kind="typedef" id="classtvm_1_1te_1_1Schedule_1afba006836979a74a799189169534189e" prot="public" static="no">
+        <type><ref refid="classtvm_1_1te_1_1ScheduleNode" kindref="compound">ScheduleNode</ref></type>
+        <definition>using tvm::te::Schedule::ContainerType =  ScheduleNode</definition>
+        <argsstring></argsstring>
+        <name>ContainerType</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/te/schedule.h" line="397" column="1" bodyfile="include/tvm/te/schedule.h" bodystart="397" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classtvm_1_1te_1_1Schedule_1a1eb19ccb06835a11edc39ed1410f01af" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>tvm::te::Schedule::Schedule</definition>
+        <argsstring>()</argsstring>
+        <name>Schedule</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/te/schedule.h" line="283" column="1" bodyfile="include/tvm/te/schedule.h" bodystart="283" bodyend="283"/>
+      </memberdef>
+      <memberdef kind="function" id="classtvm_1_1te_1_1Schedule_1a5f6a71ca3b51eb6cc0b65ee029ff9c96" prot="public" static="no" const="no" explicit="yes" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>tvm::te::Schedule::Schedule</definition>
+        <argsstring>(ObjectPtr&lt; Object &gt; n)</argsstring>
+        <name>Schedule</name>
+        <param>
+          <type>ObjectPtr&lt; Object &gt;</type>
+          <declname>n</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/te/schedule.h" line="284" column="1" bodyfile="include/tvm/te/schedule.h" bodystart="284" bodyend="284"/>
+      </memberdef>
+      <memberdef kind="function" id="classtvm_1_1te_1_1Schedule_1a4991e4eaf1992f45708966c335b92307" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classtvm_1_1te_1_1Schedule" kindref="compound">Schedule</ref></type>
+        <definition>Schedule tvm::te::Schedule::copy</definition>
+        <argsstring>() const </argsstring>
+        <name>copy</name>
+        <briefdescription>
+<para>Get a copy of current schedule. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>The copied schedule. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/te/schedule.h" line="289" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classtvm_1_1te_1_1Schedule_1a3f63b27dcbddd06c550cc1a5a6562717" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classtvm_1_1te_1_1Stage" kindref="compound">Stage</ref></type>
+        <definition>Stage tvm::te::Schedule::operator[]</definition>
+        <argsstring>(const Operation &amp;op)</argsstring>
+        <name>operator[]</name>
+        <param>
+          <type>const <ref refid="classtvm_1_1te_1_1Operation" kindref="compound">Operation</ref> &amp;</type>
+          <declname>op</declname>
+        </param>
+        <briefdescription>
+<para>Get the stage corresponds to the op. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>op</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The operation. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/te/schedule.h" line="294" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classtvm_1_1te_1_1Schedule_1a2040189df3b89304a12acce3efff04a6" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classtvm_1_1te_1_1Stage" kindref="compound">Stage</ref></type>
+        <definition>Stage tvm::te::Schedule::operator[]</definition>
+        <argsstring>(const Tensor &amp;tensor)</argsstring>
+        <name>operator[]</name>
+        <param>
+          <type>const <ref refid="classtvm_1_1te_1_1Tensor" kindref="compound">Tensor</ref> &amp;</type>
+          <declname>tensor</declname>
+        </param>
+        <briefdescription>
+<para>Short hand for getting the stage of tensor&apos;s operation. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>tensor</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The tensor </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The stage corresponding to the tensor&apos;s op </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/te/schedule.h" line="300" column="1" bodyfile="include/tvm/te/schedule.h" bodystart="300" bodyend="302"/>
+      </memberdef>
+      <memberdef kind="function" id="classtvm_1_1te_1_1Schedule_1a638e7b946df3b5d2e2cde3acc0201da0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classtvm_1_1te_1_1Stage" kindref="compound">Stage</ref></type>
+        <definition>Stage tvm::te::Schedule::create_group</definition>
+        <argsstring>(const Array&lt; Tensor &gt; &amp;outputs, const Array&lt; Tensor &gt; &amp;inputs, bool include_inputs=false)</argsstring>
+        <name>create_group</name>
+        <param>
+          <type>const <ref refid="classtvm_1_1Array" kindref="compound">Array</ref>&lt; <ref refid="classtvm_1_1te_1_1Tensor" kindref="compound">Tensor</ref> &gt; &amp;</type>
+          <declname>outputs</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classtvm_1_1Array" kindref="compound">Array</ref>&lt; <ref refid="classtvm_1_1te_1_1Tensor" kindref="compound">Tensor</ref> &gt; &amp;</type>
+          <declname>inputs</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>include_inputs</declname>
+          <defval>false</defval>
+        </param>
+        <briefdescription>
+<para>Create a new stage group for all intermediate operations between inputs and outputs. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>outputs</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The output boundary of the group. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>inputs</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The input boundary of the group. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>include_inputs</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Whether include inputs if they are reachable from outputs. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The new grouped stage. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/te/schedule.h" line="312" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classtvm_1_1te_1_1Schedule_1a38ef95a62faf0c15f132847efa20249b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classtvm_1_1te_1_1Tensor" kindref="compound">Tensor</ref></type>
+        <definition>Tensor tvm::te::Schedule::cache_read</definition>
+        <argsstring>(const Tensor &amp;tensor, const std::string &amp;scope, const Array&lt; Operation &gt; &amp;readers)</argsstring>
+        <name>cache_read</name>
+        <param>
+          <type>const <ref refid="classtvm_1_1te_1_1Tensor" kindref="compound">Tensor</ref> &amp;</type>
+          <declname>tensor</declname>
+        </param>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>scope</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classtvm_1_1Array" kindref="compound">Array</ref>&lt; <ref refid="classtvm_1_1te_1_1Operation" kindref="compound">Operation</ref> &gt; &amp;</type>
+          <declname>readers</declname>
+        </param>
+        <briefdescription>
+<para>create a cache read of original tensor for readers. This will mutate the body of the readers. A new stage will be created for the tensor. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>tensor</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The tensor cached. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>scope</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The scope of the cache. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>readers</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The readers to redirect to the tensor. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The created tensor. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/te/schedule.h" line="324" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classtvm_1_1te_1_1Schedule_1ada9825f59ef130a0ab0b3a01ea348d71" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classtvm_1_1Array" kindref="compound">Array</ref>&lt; <ref refid="classtvm_1_1te_1_1Tensor" kindref="compound">Tensor</ref> &gt;</type>
+        <definition>Array&lt;Tensor&gt; tvm::te::Schedule::cache_write</definition>
+        <argsstring>(const Array&lt; Tensor &gt; &amp;tensor, const std::string &amp;scope)</argsstring>
+        <name>cache_write</name>
+        <param>
+          <type>const <ref refid="classtvm_1_1Array" kindref="compound">Array</ref>&lt; <ref refid="classtvm_1_1te_1_1Tensor" kindref="compound">Tensor</ref> &gt; &amp;</type>
+          <declname>tensor</declname>
+        </param>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>scope</declname>
+        </param>
+        <briefdescription>
+<para>Create a cache write tensor for producing tensor. The the tensor will take over body of original tensor op. </para>        </briefdescription>
+        <detaileddescription>
+<para>This function can be used to do data layout transformation. If there is a split/fuse/reorder on the data parallel axis of tensor before cache_write is called. The intermediate cache stores the data in the layout as the iteration order of leave axis. The data will be transformed back to the original layout in the original tensor. User can further call compute_inline to inline the original layout and keep the data stored in the transformed layout.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>tensor</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The tensors to be produced. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>scope</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The scope of the storage. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The created tensor. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/te/schedule.h" line="343" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classtvm_1_1te_1_1Schedule_1a15582f96d0aaf9a2bd9f2afcad3935d4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classtvm_1_1te_1_1Tensor" kindref="compound">Tensor</ref></type>
+        <definition>Tensor tvm::te::Schedule::cache_write</definition>
+        <argsstring>(const Tensor &amp;tensor, const std::string &amp;scope)</argsstring>
+        <name>cache_write</name>
+        <param>
+          <type>const <ref refid="classtvm_1_1te_1_1Tensor" kindref="compound">Tensor</ref> &amp;</type>
+          <declname>tensor</declname>
+        </param>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>scope</declname>
+        </param>
+        <briefdescription>
+<para>Create a cache write tensor for producing tensor. The the tensor will take over body of original tensor op. </para>        </briefdescription>
+        <detaileddescription>
+<para>This function can be used to do data layout transformation. If there is a split/fuse/reorder on the data parallel axis of tensor before cache_write is called. The intermediate cache stores the data in the layout as the iteration order of leave axis. The data will be transformed back to the original layout in the original tensor. User can further call compute_inline to inline the original layout and keep the data stored in the transformed layout.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>tensor</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The tensor to be produced. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>scope</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The scope of the storage. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The created tensor. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/te/schedule.h" line="360" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classtvm_1_1te_1_1Schedule_1a34ae85add41bbed0140726d024d08862" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classtvm_1_1Array" kindref="compound">Array</ref>&lt; <ref refid="classtvm_1_1te_1_1Tensor" kindref="compound">Tensor</ref> &gt;</type>
+        <definition>Array&lt;Tensor&gt; tvm::te::Schedule::rfactor</definition>
+        <argsstring>(const Tensor &amp;tensor, const IterVar &amp;axis, int factor_axis=0)</argsstring>
+        <name>rfactor</name>
+        <param>
+          <type>const <ref refid="classtvm_1_1te_1_1Tensor" kindref="compound">Tensor</ref> &amp;</type>
+          <declname>tensor</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classtvm_1_1tir_1_1IterVar" kindref="compound">IterVar</ref> &amp;</type>
+          <declname>axis</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>factor_axis</declname>
+          <defval>0</defval>
+        </param>
+        <briefdescription>
+<para>Factor a reduction axis in tensor&apos;s schedule to be an explicit axis. This will create a new stage that generated the new tensor with axis as the first dimension. The tensor&apos;s body will be rewritten as a reduction over the factored tensor. </para>        </briefdescription>
+        <detaileddescription>
+<para>P. Suriana, A. Adams and S. Kamil. Parallel associative reductions in halide. CGO&apos;17</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>tensor</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The tensor to be factored. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>axis</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The reduction axis in tensor&apos;s schedule to be factored. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>factor_axis</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The position where the new axis is placed. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The created factored tensors. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/te/schedule.h" line="374" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classtvm_1_1te_1_1Schedule_1a3fcdec89d8dec36d7b2586b9b0414dfe" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classtvm_1_1te_1_1Schedule" kindref="compound">Schedule</ref></type>
+        <definition>Schedule tvm::te::Schedule::normalize</definition>
+        <argsstring>()</argsstring>
+        <name>normalize</name>
+        <briefdescription>
+<para>Normalize the schedule. This is needed before bound inference. Insert necessary <ref refid="classtvm_1_1te_1_1RebaseNode" kindref="compound">RebaseNode</ref> to make sure all leaf_iter_vars are in form [0, extent) </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>A normalized schedule, can be same as current one. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/te/schedule.h" line="385" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classtvm_1_1te_1_1Schedule_1a81883ca270f853eaf92d5f364888b9f4" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>const <ref refid="classtvm_1_1te_1_1ScheduleNode" kindref="compound">ScheduleNode</ref> *</type>
+        <definition>const ScheduleNode * tvm::te::Schedule::operator-&gt;</definition>
+        <argsstring>() const </argsstring>
+        <name>operator-&gt;</name>
+        <briefdescription>
+<para>access the internal node container </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>the pointer to the internal node container </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/te/schedule.h" line="390" column="1" bodyfile="include/tvm/te/schedule.h" bodystart="802" bodyend="804"/>
+      </memberdef>
+      <memberdef kind="function" id="classtvm_1_1te_1_1Schedule_1aa30087792fd6d3b7372d56e7f3947c3f" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classtvm_1_1te_1_1ScheduleNode" kindref="compound">ScheduleNode</ref> *</type>
+        <definition>ScheduleNode * tvm::te::Schedule::operator-&gt;</definition>
+        <argsstring>()</argsstring>
+        <name>operator-&gt;</name>
+        <briefdescription>
+<para>access the internal node container </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>the pointer to the internal node container </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/te/schedule.h" line="395" column="1" bodyfile="include/tvm/te/schedule.h" bodystart="805" bodyend="807"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Global schedule container For operations and all the operations they depend on. The schedule per <ref refid="classtvm_1_1te_1_1Operation" kindref="compound">Operation</ref> is named as stage. </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="6702">
+        <label>ObjectRef</label>
+      </node>
+      <node id="6701">
+        <label>tvm::te::Schedule</label>
+        <link refid="classtvm_1_1te_1_1Schedule"/>
+        <childnode refid="6702" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="6704">
+        <label>ObjectRef</label>
+      </node>
+      <node id="6703">
+        <label>tvm::te::Schedule</label>
+        <link refid="classtvm_1_1te_1_1Schedule"/>
+        <childnode refid="6704" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="include/tvm/te/schedule.h" line="281" column="1" bodyfile="include/tvm/te/schedule.h" bodystart="281" bodyend="398"/>
+    <listofallmembers>
+      <member refid="classtvm_1_1te_1_1Schedule_1a38ef95a62faf0c15f132847efa20249b" prot="public" virt="non-virtual"><scope>tvm::te::Schedule</scope><name>cache_read</name></member>
+      <member refid="classtvm_1_1te_1_1Schedule_1ada9825f59ef130a0ab0b3a01ea348d71" prot="public" virt="non-virtual"><scope>tvm::te::Schedule</scope><name>cache_write</name></member>
+      <member refid="classtvm_1_1te_1_1Schedule_1a15582f96d0aaf9a2bd9f2afcad3935d4" prot="public" virt="non-virtual"><scope>tvm::te::Schedule</scope><name>cache_write</name></member>
+      <member refid="classtvm_1_1te_1_1Schedule_1afba006836979a74a799189169534189e" prot="public" virt="non-virtual"><scope>tvm::te::Schedule</scope><name>ContainerType</name></member>
+      <member refid="classtvm_1_1te_1_1Schedule_1a4991e4eaf1992f45708966c335b92307" prot="public" virt="non-virtual"><scope>tvm::te::Schedule</scope><name>copy</name></member>
+      <member refid="classtvm_1_1te_1_1Schedule_1a638e7b946df3b5d2e2cde3acc0201da0" prot="public" virt="non-virtual"><scope>tvm::te::Schedule</scope><name>create_group</name></member>
+      <member refid="classtvm_1_1te_1_1Schedule_1a3fcdec89d8dec36d7b2586b9b0414dfe" prot="public" virt="non-virtual"><scope>tvm::te::Schedule</scope><name>normalize</name></member>
+      <member refid="classtvm_1_1te_1_1Schedule_1a81883ca270f853eaf92d5f364888b9f4" prot="public" virt="non-virtual"><scope>tvm::te::Schedule</scope><name>operator-&gt;</name></member>
+      <member refid="classtvm_1_1te_1_1Schedule_1aa30087792fd6d3b7372d56e7f3947c3f" prot="public" virt="non-virtual"><scope>tvm::te::Schedule</scope><name>operator-&gt;</name></member>
+      <member refid="classtvm_1_1te_1_1Schedule_1a3f63b27dcbddd06c550cc1a5a6562717" prot="public" virt="non-virtual"><scope>tvm::te::Schedule</scope><name>operator[]</name></member>
+      <member refid="classtvm_1_1te_1_1Schedule_1a2040189df3b89304a12acce3efff04a6" prot="public" virt="non-virtual"><scope>tvm::te::Schedule</scope><name>operator[]</name></member>
+      <member refid="classtvm_1_1te_1_1Schedule_1a34ae85add41bbed0140726d024d08862" prot="public" virt="non-virtual"><scope>tvm::te::Schedule</scope><name>rfactor</name></member>
+      <member refid="classtvm_1_1te_1_1Schedule_1a1eb19ccb06835a11edc39ed1410f01af" prot="public" virt="non-virtual"><scope>tvm::te::Schedule</scope><name>Schedule</name></member>
+      <member refid="classtvm_1_1te_1_1Schedule_1a5f6a71ca3b51eb6cc0b65ee029ff9c96" prot="public" virt="non-virtual"><scope>tvm::te::Schedule</scope><name>Schedule</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

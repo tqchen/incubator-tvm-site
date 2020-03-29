@@ -1,0 +1,56 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="structtvm_1_1Map_1_1ValueConverter" kind="struct" language="C++" prot="public">
+    <compoundname>tvm::Map::ValueConverter</compoundname>
+    <includes refid="node_2container_8h" local="no">container.h</includes>
+      <sectiondef kind="public-type">
+      <memberdef kind="typedef" id="structtvm_1_1Map_1_1ValueConverter_1afd4a4c5a243014ccfebb48fb18ad8588" prot="public" static="no">
+        <type>std::pair&lt; K, V &gt;</type>
+        <definition>using tvm::Map&lt; K, V, typename, typename &gt;::ValueConverter::ResultType =  std::pair&lt;K, V&gt;</definition>
+        <argsstring></argsstring>
+        <name>ResultType</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/node/container.h" line="531" column="1" bodyfile="include/tvm/node/container.h" bodystart="531" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="structtvm_1_1Map_1_1ValueConverter_1a82c6961ccf2b833396ff8742506bd32a" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="structtvm_1_1Map_1_1ValueConverter_1afd4a4c5a243014ccfebb48fb18ad8588" kindref="member">ResultType</ref></type>
+        <definition>static ResultType tvm::Map&lt; K, V, typename, typename &gt;::ValueConverter::convert</definition>
+        <argsstring>(const std::pair&lt; ObjectRef, ObjectRef &gt; &amp;n)</argsstring>
+        <name>convert</name>
+        <param>
+          <type>const std::pair&lt; ObjectRef, ObjectRef &gt; &amp;</type>
+          <declname>n</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/node/container.h" line="532" column="1" bodyfile="include/tvm/node/container.h" bodystart="532" bodyend="537"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="7524">
+        <label>tvm::Map&lt; K, V, typename, typename &gt;::ValueConverter</label>
+        <link refid="structtvm_1_1Map_1_1ValueConverter"/>
+      </node>
+    </collaborationgraph>
+    <location file="include/tvm/node/container.h" line="530" column="1" bodyfile="include/tvm/node/container.h" bodystart="530" bodyend="538"/>
+    <listofallmembers>
+      <member refid="structtvm_1_1Map_1_1ValueConverter_1a82c6961ccf2b833396ff8742506bd32a" prot="public" virt="non-virtual"><scope>tvm::Map::ValueConverter</scope><name>convert</name></member>
+      <member refid="structtvm_1_1Map_1_1ValueConverter_1afd4a4c5a243014ccfebb48fb18ad8588" prot="public" virt="non-virtual"><scope>tvm::Map::ValueConverter</scope><name>ResultType</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

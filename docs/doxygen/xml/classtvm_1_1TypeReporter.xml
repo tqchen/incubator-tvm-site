@@ -1,0 +1,102 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="classtvm_1_1TypeReporter" kind="class" language="C++" prot="public">
+    <compoundname>tvm::TypeReporter</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">ObjectRef</basecompoundref>
+    <includes refid="type__relation_8h" local="no">type_relation.h</includes>
+      <sectiondef kind="public-type">
+      <memberdef kind="typedef" id="classtvm_1_1TypeReporter_1a976ec250155c399421aad906cfc3eee8" prot="public" static="no">
+        <type><ref refid="classtvm_1_1TypeReporterNode" kindref="compound">TypeReporterNode</ref></type>
+        <definition>using tvm::TypeReporter::ContainerType =  TypeReporterNode</definition>
+        <argsstring></argsstring>
+        <name>ContainerType</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/ir/type_relation.h" line="150" column="1" bodyfile="include/tvm/ir/type_relation.h" bodystart="150" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classtvm_1_1TypeReporter_1a8e7e05a07f9f7ad9bea91f27afac9051" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>tvm::TypeReporter::TypeReporter</definition>
+        <argsstring>()</argsstring>
+        <name>TypeReporter</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/ir/type_relation.h" line="143" column="1" bodyfile="include/tvm/ir/type_relation.h" bodystart="143" bodyend="143"/>
+      </memberdef>
+      <memberdef kind="function" id="classtvm_1_1TypeReporter_1aa3dc38a3c84d324d0b3a9f358460a091" prot="public" static="no" const="no" explicit="yes" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>tvm::TypeReporter::TypeReporter</definition>
+        <argsstring>(ObjectPtr&lt; Object &gt; n)</argsstring>
+        <name>TypeReporter</name>
+        <param>
+          <type>ObjectPtr&lt; Object &gt;</type>
+          <declname>n</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/ir/type_relation.h" line="144" column="1" bodyfile="include/tvm/ir/type_relation.h" bodystart="144" bodyend="145"/>
+      </memberdef>
+      <memberdef kind="function" id="classtvm_1_1TypeReporter_1a23e7a5a55b562af8cfe9bf24297322a4" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classtvm_1_1TypeReporterNode" kindref="compound">TypeReporterNode</ref> *</type>
+        <definition>TypeReporterNode* tvm::TypeReporter::operator-&gt;</definition>
+        <argsstring>() const </argsstring>
+        <name>operator-&gt;</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/ir/type_relation.h" line="146" column="1" bodyfile="include/tvm/ir/type_relation.h" bodystart="146" bodyend="149"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Container class of <ref refid="classtvm_1_1TypeReporter" kindref="compound">TypeReporter</ref>. </para>    </briefdescription>
+    <detaileddescription>
+<para><simplesect kind="see"><para><ref refid="classtvm_1_1TypeReporterNode" kindref="compound">TypeReporterNode</ref> </para></simplesect>
+</para>    </detaileddescription>
+    <inheritancegraph>
+      <node id="7481">
+        <label>tvm::TypeReporter</label>
+        <link refid="classtvm_1_1TypeReporter"/>
+        <childnode refid="7482" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="7482">
+        <label>ObjectRef</label>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="7483">
+        <label>tvm::TypeReporter</label>
+        <link refid="classtvm_1_1TypeReporter"/>
+        <childnode refid="7484" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="7484">
+        <label>ObjectRef</label>
+      </node>
+    </collaborationgraph>
+    <location file="include/tvm/ir/type_relation.h" line="141" column="1" bodyfile="include/tvm/ir/type_relation.h" bodystart="141" bodyend="151"/>
+    <listofallmembers>
+      <member refid="classtvm_1_1TypeReporter_1a976ec250155c399421aad906cfc3eee8" prot="public" virt="non-virtual"><scope>tvm::TypeReporter</scope><name>ContainerType</name></member>
+      <member refid="classtvm_1_1TypeReporter_1a23e7a5a55b562af8cfe9bf24297322a4" prot="public" virt="non-virtual"><scope>tvm::TypeReporter</scope><name>operator-&gt;</name></member>
+      <member refid="classtvm_1_1TypeReporter_1a8e7e05a07f9f7ad9bea91f27afac9051" prot="public" virt="non-virtual"><scope>tvm::TypeReporter</scope><name>TypeReporter</name></member>
+      <member refid="classtvm_1_1TypeReporter_1aa3dc38a3c84d324d0b3a9f358460a091" prot="public" virt="non-virtual"><scope>tvm::TypeReporter</scope><name>TypeReporter</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

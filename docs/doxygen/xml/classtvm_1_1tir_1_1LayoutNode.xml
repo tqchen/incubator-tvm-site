@@ -1,0 +1,156 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="classtvm_1_1tir_1_1LayoutNode" kind="class" language="C++" prot="public">
+    <compoundname>tvm::tir::LayoutNode</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">Object</basecompoundref>
+    <includes refid="data__layout_8h" local="no">data_layout.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="classtvm_1_1tir_1_1LayoutNode_1a7cdbaa55c5e21044c01fd99d46096140" prot="public" static="no" mutable="no">
+        <type>std::string</type>
+        <definition>std::string tvm::tir::LayoutNode::name</definition>
+        <argsstring></argsstring>
+        <name>name</name>
+        <briefdescription>
+<para>string representation of layout, &quot;&quot; for scalar. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/tir/data_layout.h" line="99" column="1" bodyfile="include/tvm/tir/data_layout.h" bodystart="99" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classtvm_1_1tir_1_1LayoutNode_1a4287f43c0ae133205d9803f4fadc3d88" prot="public" static="no" mutable="no">
+        <type><ref refid="classtvm_1_1Array" kindref="compound">Array</ref>&lt; <ref refid="classtvm_1_1tir_1_1IterVar" kindref="compound">tir::IterVar</ref> &gt;</type>
+        <definition>Array&lt;tir::IterVar&gt; tvm::tir::LayoutNode::axes</definition>
+        <argsstring></argsstring>
+        <name>axes</name>
+        <briefdescription>
+<para>specify each axis of the layout, in which the variable name is the name of the axis. The <ref refid="classtvm_1_1tir_1_1IterVar" kindref="compound">IterVar</ref>&apos;s extent indicates the size of the axis, it is a variable for a primal axis, but a constant for a subordinate axis. Empty for scalar&apos;s layout. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/tir/data_layout.h" line="106" column="1" bodyfile="include/tvm/tir/data_layout.h" bodystart="106" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-attrib">
+      <memberdef kind="variable" id="classtvm_1_1tir_1_1LayoutNode_1aaca4fc16e14cb9867cd9f3564b4dd59f" prot="public" static="yes" mutable="no">
+        <type>constexpr const char *</type>
+        <definition>constexpr const char* tvm::tir::LayoutNode::_type_key</definition>
+        <argsstring></argsstring>
+        <name>_type_key</name>
+        <initializer>= &quot;Layout&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/tir/data_layout.h" line="115" column="1" bodyfile="include/tvm/tir/data_layout.h" bodystart="115" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classtvm_1_1tir_1_1LayoutNode_1a2977b7ca9f44e09896696bcdb4b61953" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void tvm::tir::LayoutNode::VisitAttrs</definition>
+        <argsstring>(AttrVisitor *v)</argsstring>
+        <name>VisitAttrs</name>
+        <param>
+          <type><ref refid="classtvm_1_1AttrVisitor" kindref="compound">AttrVisitor</ref> *</type>
+          <declname>v</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/tir/data_layout.h" line="108" column="1" bodyfile="include/tvm/tir/data_layout.h" bodystart="108" bodyend="111"/>
+      </memberdef>
+      <memberdef kind="function" id="classtvm_1_1tir_1_1LayoutNode_1a93ee927641803d612f7f93cc5aa3b6d0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>tvm::tir::LayoutNode::TVM_DECLARE_FINAL_OBJECT_INFO</definition>
+        <argsstring>(LayoutNode, Object)</argsstring>
+        <name>TVM_DECLARE_FINAL_OBJECT_INFO</name>
+        <param>
+          <type><ref refid="classtvm_1_1tir_1_1LayoutNode" kindref="compound">LayoutNode</ref></type>
+        </param>
+        <param>
+          <type>Object</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/tir/data_layout.h" line="116" column="1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="classtvm_1_1tir_1_1LayoutNode_1a8347e996d26d9d7e4988bccf7292b3b5" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classtvm_1_1tir_1_1Layout" kindref="compound">Layout</ref></type>
+        <definition>static Layout tvm::tir::LayoutNode::make</definition>
+        <argsstring>(const std::string &amp;layout)</argsstring>
+        <name>make</name>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>layout</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/tir/data_layout.h" line="113" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="5509">
+        <label>tvm::tir::LayoutNode</label>
+        <link refid="classtvm_1_1tir_1_1LayoutNode"/>
+        <childnode refid="5510" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="5510">
+        <label>Object</label>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="5514">
+        <label>ObjectRef</label>
+      </node>
+      <node id="5511">
+        <label>tvm::tir::LayoutNode</label>
+        <link refid="classtvm_1_1tir_1_1LayoutNode"/>
+        <childnode refid="5512" relation="public-inheritance">
+        </childnode>
+        <childnode refid="5513" relation="usage">
+          <edgelabel>+axes</edgelabel>
+        </childnode>
+      </node>
+      <node id="5512">
+        <label>Object</label>
+      </node>
+      <node id="5513">
+        <label>tvm::Array&lt; tir::tvm::tir::IterVar &gt;</label>
+        <link refid="classtvm_1_1Array"/>
+        <childnode refid="5514" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="include/tvm/tir/data_layout.h" line="96" column="1" bodyfile="include/tvm/tir/data_layout.h" bodystart="96" bodyend="117"/>
+    <listofallmembers>
+      <member refid="classtvm_1_1tir_1_1LayoutNode_1aaca4fc16e14cb9867cd9f3564b4dd59f" prot="public" virt="non-virtual"><scope>tvm::tir::LayoutNode</scope><name>_type_key</name></member>
+      <member refid="classtvm_1_1tir_1_1LayoutNode_1a4287f43c0ae133205d9803f4fadc3d88" prot="public" virt="non-virtual"><scope>tvm::tir::LayoutNode</scope><name>axes</name></member>
+      <member refid="classtvm_1_1tir_1_1LayoutNode_1a8347e996d26d9d7e4988bccf7292b3b5" prot="public" virt="non-virtual"><scope>tvm::tir::LayoutNode</scope><name>make</name></member>
+      <member refid="classtvm_1_1tir_1_1LayoutNode_1a7cdbaa55c5e21044c01fd99d46096140" prot="public" virt="non-virtual"><scope>tvm::tir::LayoutNode</scope><name>name</name></member>
+      <member refid="classtvm_1_1tir_1_1LayoutNode_1a93ee927641803d612f7f93cc5aa3b6d0" prot="public" virt="non-virtual"><scope>tvm::tir::LayoutNode</scope><name>TVM_DECLARE_FINAL_OBJECT_INFO</name></member>
+      <member refid="classtvm_1_1tir_1_1LayoutNode_1a2977b7ca9f44e09896696bcdb4b61953" prot="public" virt="non-virtual"><scope>tvm::tir::LayoutNode</scope><name>VisitAttrs</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

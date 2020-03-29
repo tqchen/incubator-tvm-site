@@ -1,0 +1,57 @@
+\hypertarget{runtime_2memory_8h}{}\section{include/tvm/runtime/memory.h File Reference}
+\label{runtime_2memory_8h}\index{include/tvm/runtime/memory.\+h@{include/tvm/runtime/memory.\+h}}
+
+
+Runtime memory management.  
+
+
+{\ttfamily \#include $<$tvm/runtime/object.\+h$>$}\\*
+{\ttfamily \#include $<$cstdlib$>$}\\*
+{\ttfamily \#include $<$utility$>$}\\*
+{\ttfamily \#include $<$type\+\_\+traits$>$}\\*
+Include dependency graph for memory.\+h\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{runtime_2memory_8h__incl}
+\end{center}
+\end{figure}
+This graph shows which files directly or indirectly include this file\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{runtime_2memory_8h__dep__incl}
+\end{center}
+\end{figure}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \hyperlink{classtvm_1_1runtime_1_1ObjAllocatorBase}{tvm\+::runtime\+::\+Obj\+Allocator\+Base$<$ Derived $>$}
+\begin{DoxyCompactList}\small\item\em Base class of object allocators that implements make. Use curiously recurring template pattern. \end{DoxyCompactList}\item 
+class \hyperlink{classtvm_1_1runtime_1_1SimpleObjAllocator}{tvm\+::runtime\+::\+Simple\+Obj\+Allocator}
+\item 
+class \hyperlink{classtvm_1_1runtime_1_1SimpleObjAllocator_1_1Handler}{tvm\+::runtime\+::\+Simple\+Obj\+Allocator\+::\+Handler$<$ T $>$}
+\item 
+class \hyperlink{classtvm_1_1runtime_1_1SimpleObjAllocator_1_1ArrayHandler}{tvm\+::runtime\+::\+Simple\+Obj\+Allocator\+::\+Array\+Handler$<$ Array\+Type, Elem\+Type $>$}
+\end{DoxyCompactItemize}
+\subsection*{Namespaces}
+\begin{DoxyCompactItemize}
+\item 
+ \hyperlink{namespacetvm}{tvm}
+\item 
+ \hyperlink{namespacetvm_1_1runtime}{tvm\+::runtime}
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\footnotesize template$<$typename T , typename... Args$>$ }\\Object\+Ptr$<$ T $>$ \hyperlink{namespacetvm_1_1runtime_a93466f4543eedc3925c66ed0e7ef2671}{tvm\+::runtime\+::make\+\_\+object} (Args \&\&...args)
+\begin{DoxyCompactList}\small\item\em Allocate an object using default allocator. \end{DoxyCompactList}\item 
+{\footnotesize template$<$typename Array\+Type , typename Elem\+Type , typename... Args$>$ }\\Object\+Ptr$<$ Array\+Type $>$ \hyperlink{namespacetvm_1_1runtime_a144496aaff68cd251b6bc0a7b24ca041}{tvm\+::runtime\+::make\+\_\+inplace\+\_\+array\+\_\+object} (size\+\_\+t num\+\_\+elems, Args \&\&...args)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Runtime memory management. 
+

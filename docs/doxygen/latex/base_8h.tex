@@ -1,0 +1,98 @@
+\hypertarget{base_8h}{}\section{include/tvm/relay/base.h File Reference}
+\label{base_8h}\index{include/tvm/relay/base.\+h@{include/tvm/relay/base.\+h}}
+
+
+Base classes for the Relay IR.  
+
+
+{\ttfamily \#include $<$tvm/ir/span.\+h$>$}\\*
+{\ttfamily \#include $<$tvm/tir/expr.\+h$>$}\\*
+{\ttfamily \#include $<$tvm/node/node.\+h$>$}\\*
+{\ttfamily \#include $<$string$>$}\\*
+{\ttfamily \#include $<$vector$>$}\\*
+Include dependency graph for base.\+h\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{base_8h__incl}
+\end{center}
+\end{figure}
+This graph shows which files directly or indirectly include this file\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{base_8h__dep__incl}
+\end{center}
+\end{figure}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \hyperlink{classtvm_1_1relay_1_1RelayNode}{tvm\+::relay\+::\+Relay\+Node}
+\begin{DoxyCompactList}\small\item\em This is the base node container of all relay structures. \end{DoxyCompactList}\item 
+class \hyperlink{classtvm_1_1relay_1_1IdNode}{tvm\+::relay\+::\+Id\+Node}
+\begin{DoxyCompactList}\small\item\em The unique identifier of variables. \end{DoxyCompactList}\item 
+class \hyperlink{classtvm_1_1relay_1_1Id}{tvm\+::relay\+::\+Id}
+\end{DoxyCompactItemize}
+\subsection*{Namespaces}
+\begin{DoxyCompactItemize}
+\item 
+ \hyperlink{namespacetvm}{tvm}
+\item 
+ \hyperlink{namespacetvm_1_1relay}{tvm\+::relay}
+\begin{DoxyCompactList}\small\item\em Relay\+: a high level functional IR for T\+VM. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \hyperlink{base_8h_aa85debc943daeee5d755b1eab7c9d108}{R\+E\+L\+A\+Y\+\_\+\+D\+E\+B\+UG}(...)
+\item 
+\#define \hyperlink{base_8h_afa058e31494092764d9108d5923b81e7}{R\+E\+L\+A\+Y\+\_\+\+D\+E\+B\+U\+G\+\_\+\+I\+N\+T\+E\+RP}(...)
+\end{DoxyCompactItemize}
+\subsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+using \hyperlink{namespacetvm_1_1relay_ae153a27d81399fd266b8d598227764c4}{tvm\+::relay\+::\+Index\+Expr} = \+::\hyperlink{classtvm_1_1PrimExpr}{tvm\+::\+Prim\+Expr}
+\begin{DoxyCompactList}\small\item\em Symbolic expression for tensor shape. \end{DoxyCompactList}\item 
+using \hyperlink{namespacetvm_1_1relay_a14eacafcb803b0757e48654bb1bac655}{tvm\+::relay\+::\+Source\+Name} = \hyperlink{classtvm_1_1SourceName}{tvm\+::\+Source\+Name}
+\item 
+using \hyperlink{namespacetvm_1_1relay_af40ca6124bc2e88f2323eeb79d326cc0}{tvm\+::relay\+::\+Span} = \hyperlink{classtvm_1_1Span}{tvm\+::\+Span}
+\item 
+using \hyperlink{namespacetvm_1_1relay_a7d0fa6578e97d0d64b08865f94f04827}{tvm\+::relay\+::\+Span\+Node} = \hyperlink{classtvm_1_1SpanNode}{tvm\+::\+Span\+Node}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Base classes for the Relay IR. 
+
+
+
+\subsection{Macro Definition Documentation}
+\index{base.\+h@{base.\+h}!R\+E\+L\+A\+Y\+\_\+\+D\+E\+B\+UG@{R\+E\+L\+A\+Y\+\_\+\+D\+E\+B\+UG}}
+\index{R\+E\+L\+A\+Y\+\_\+\+D\+E\+B\+UG@{R\+E\+L\+A\+Y\+\_\+\+D\+E\+B\+UG}!base.\+h@{base.\+h}}
+\subsubsection[{\texorpdfstring{R\+E\+L\+A\+Y\+\_\+\+D\+E\+B\+UG}{RELAY_DEBUG}}]{\setlength{\rightskip}{0pt plus 5cm}\#define R\+E\+L\+A\+Y\+\_\+\+D\+E\+B\+UG(
+\begin{DoxyParamCaption}
+\item[{}]{...}
+\end{DoxyParamCaption}
+)}\hypertarget{base_8h_aa85debc943daeee5d755b1eab7c9d108}{}\label{base_8h_aa85debc943daeee5d755b1eab7c9d108}
+{\bfseries Value\+:}
+\begin{DoxyCode}
+\{ \textcolor{keyword}{auto} fdebug = runtime::Registry::Get(\textcolor{stringliteral}{"relay.debug"}); \(\backslash\)
+  CHECK(fdebug) << \textcolor{stringliteral}{"Could not find Relay Python debugger function."}; \(\backslash\)
+  (*fdebug)(\textcolor{stringliteral}{"RELAY\_DEBUG"}, \_\_FILE\_\_, \_\_LINE\_\_, \_\_VA\_ARGS\_\_); \(\backslash\)
+\}
+\end{DoxyCode}
+\index{base.\+h@{base.\+h}!R\+E\+L\+A\+Y\+\_\+\+D\+E\+B\+U\+G\+\_\+\+I\+N\+T\+E\+RP@{R\+E\+L\+A\+Y\+\_\+\+D\+E\+B\+U\+G\+\_\+\+I\+N\+T\+E\+RP}}
+\index{R\+E\+L\+A\+Y\+\_\+\+D\+E\+B\+U\+G\+\_\+\+I\+N\+T\+E\+RP@{R\+E\+L\+A\+Y\+\_\+\+D\+E\+B\+U\+G\+\_\+\+I\+N\+T\+E\+RP}!base.\+h@{base.\+h}}
+\subsubsection[{\texorpdfstring{R\+E\+L\+A\+Y\+\_\+\+D\+E\+B\+U\+G\+\_\+\+I\+N\+T\+E\+RP}{RELAY_DEBUG_INTERP}}]{\setlength{\rightskip}{0pt plus 5cm}\#define R\+E\+L\+A\+Y\+\_\+\+D\+E\+B\+U\+G\+\_\+\+I\+N\+T\+E\+RP(
+\begin{DoxyParamCaption}
+\item[{}]{...}
+\end{DoxyParamCaption}
+)}\hypertarget{base_8h_afa058e31494092764d9108d5923b81e7}{}\label{base_8h_afa058e31494092764d9108d5923b81e7}
+{\bfseries Value\+:}
+\begin{DoxyCode}
+\{ \textcolor{keyword}{auto} fdebug = runtime::Registry::Get(\textcolor{stringliteral}{"relay.debug\_interp"}); \(\backslash\)
+  CHECK(fdebug) << \textcolor{stringliteral}{"Could not find Relay Python debugger function."}; \(\backslash\)
+  (*fdebug)(\textcolor{stringliteral}{"RELAY\_DEBUG"}, \_\_FILE\_\_, \_\_LINE\_\_, \_\_VA\_ARGS\_\_); \(\backslash\)
+\}
+\end{DoxyCode}

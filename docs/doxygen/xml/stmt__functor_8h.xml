@@ -1,0 +1,724 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="stmt__functor_8h" kind="file" language="C++">
+    <compoundname>stmt_functor.h</compoundname>
+    <includes refid="functor_8h" local="no">tvm/node/functor.h</includes>
+    <includes refid="tir_2expr_8h" local="no">tvm/tir/expr.h</includes>
+    <includes refid="stmt_8h" local="no">tvm/tir/stmt.h</includes>
+    <includes refid="tir_2expr__functor_8h" local="no">tvm/tir/expr_functor.h</includes>
+    <includes local="no">utility</includes>
+    <incdepgraph>
+      <node id="16440">
+        <label>tvm/ir/span.h</label>
+        <link refid="span_8h"/>
+        <childnode refid="16406" relation="include">
+        </childnode>
+        <childnode refid="16417" relation="include">
+        </childnode>
+        <childnode refid="16412" relation="include">
+        </childnode>
+      </node>
+      <node id="16414">
+        <label>atomic</label>
+      </node>
+      <node id="16430">
+        <label>functional</label>
+      </node>
+      <node id="16432">
+        <label>limits</label>
+      </node>
+      <node id="16422">
+        <label>tvm/runtime/module.h</label>
+        <link refid="runtime_2module_8h"/>
+        <childnode refid="16423" relation="include">
+        </childnode>
+        <childnode refid="16407" relation="include">
+        </childnode>
+        <childnode refid="16406" relation="include">
+        </childnode>
+        <childnode refid="16418" relation="include">
+        </childnode>
+        <childnode refid="16424" relation="include">
+        </childnode>
+        <childnode refid="16415" relation="include">
+        </childnode>
+        <childnode refid="16412" relation="include">
+        </childnode>
+        <childnode refid="16425" relation="include">
+        </childnode>
+        <childnode refid="16421" relation="include">
+        </childnode>
+      </node>
+      <node id="16421">
+        <label>tvm/runtime/packed_func.h</label>
+        <link refid="packed__func_8h"/>
+        <childnode refid="16405" relation="include">
+        </childnode>
+        <childnode refid="16407" relation="include">
+        </childnode>
+        <childnode refid="16422" relation="include">
+        </childnode>
+        <childnode refid="16426" relation="include">
+        </childnode>
+        <childnode refid="16429" relation="include">
+        </childnode>
+        <childnode refid="16406" relation="include">
+        </childnode>
+        <childnode refid="16430" relation="include">
+        </childnode>
+        <childnode refid="16431" relation="include">
+        </childnode>
+        <childnode refid="16415" relation="include">
+        </childnode>
+        <childnode refid="16412" relation="include">
+        </childnode>
+        <childnode refid="16432" relation="include">
+        </childnode>
+        <childnode refid="16424" relation="include">
+        </childnode>
+        <childnode refid="16413" relation="include">
+        </childnode>
+        <childnode refid="16411" relation="include">
+        </childnode>
+      </node>
+      <node id="16404">
+        <label>tvm/node/functor.h</label>
+        <link refid="functor_8h"/>
+        <childnode refid="16405" relation="include">
+        </childnode>
+        <childnode refid="16406" relation="include">
+        </childnode>
+        <childnode refid="16415" relation="include">
+        </childnode>
+        <childnode refid="16411" relation="include">
+        </childnode>
+        <childnode refid="16413" relation="include">
+        </childnode>
+      </node>
+      <node id="16406">
+        <label>tvm/runtime/object.h</label>
+        <link refid="object_8h"/>
+        <childnode refid="16405" relation="include">
+        </childnode>
+        <childnode refid="16407" relation="include">
+        </childnode>
+        <childnode refid="16411" relation="include">
+        </childnode>
+        <childnode refid="16412" relation="include">
+        </childnode>
+        <childnode refid="16413" relation="include">
+        </childnode>
+        <childnode refid="16414" relation="include">
+        </childnode>
+      </node>
+      <node id="16409">
+        <label>stdint.h</label>
+      </node>
+      <node id="16426">
+        <label>tvm/runtime/ndarray.h</label>
+        <link refid="ndarray_8h"/>
+        <childnode refid="16407" relation="include">
+        </childnode>
+        <childnode refid="16406" relation="include">
+        </childnode>
+        <childnode refid="16427" relation="include">
+        </childnode>
+        <childnode refid="16414" relation="include">
+        </childnode>
+        <childnode refid="16415" relation="include">
+        </childnode>
+        <childnode refid="16413" relation="include">
+        </childnode>
+      </node>
+      <node id="16436">
+        <label>tvm/node/structural_hash.h</label>
+        <link refid="structural__hash_8h"/>
+        <childnode refid="16429" relation="include">
+        </childnode>
+        <childnode refid="16404" relation="include">
+        </childnode>
+        <childnode refid="16434" relation="include">
+        </childnode>
+        <childnode refid="16412" relation="include">
+        </childnode>
+        <childnode refid="16430" relation="include">
+        </childnode>
+      </node>
+      <node id="16416">
+        <label>tvm/tir/expr.h</label>
+        <link refid="tir_2expr_8h"/>
+        <childnode refid="16417" relation="include">
+        </childnode>
+        <childnode refid="16434" relation="include">
+        </childnode>
+        <childnode refid="16404" relation="include">
+        </childnode>
+        <childnode refid="16407" relation="include">
+        </childnode>
+        <childnode refid="16429" relation="include">
+        </childnode>
+        <childnode refid="16439" relation="include">
+        </childnode>
+        <childnode refid="16412" relation="include">
+        </childnode>
+        <childnode refid="16442" relation="include">
+        </childnode>
+        <childnode refid="16425" relation="include">
+        </childnode>
+        <childnode refid="16438" relation="include">
+        </childnode>
+        <childnode refid="16432" relation="include">
+        </childnode>
+        <childnode refid="16413" relation="include">
+        </childnode>
+      </node>
+      <node id="16412">
+        <label>string</label>
+      </node>
+      <node id="16437">
+        <label>tvm/node/repr_printer.h</label>
+        <link refid="repr__printer_8h"/>
+        <childnode refid="16404" relation="include">
+        </childnode>
+        <childnode refid="16438" relation="include">
+        </childnode>
+      </node>
+      <node id="16434">
+        <label>tvm/node/container.h</label>
+        <link refid="node_2container_8h"/>
+        <childnode refid="16406" relation="include">
+        </childnode>
+        <childnode refid="16418" relation="include">
+        </childnode>
+        <childnode refid="16421" relation="include">
+        </childnode>
+        <childnode refid="16411" relation="include">
+        </childnode>
+        <childnode refid="16415" relation="include">
+        </childnode>
+        <childnode refid="16435" relation="include">
+        </childnode>
+        <childnode refid="16425" relation="include">
+        </childnode>
+        <childnode refid="16413" relation="include">
+        </childnode>
+        <childnode refid="16412" relation="include">
+        </childnode>
+      </node>
+      <node id="16410">
+        <label>stddef.h</label>
+      </node>
+      <node id="16403">
+        <label>include/tvm/tir/stmt_functor.h</label>
+        <link refid="stmt_functor.h"/>
+        <childnode refid="16404" relation="include">
+        </childnode>
+        <childnode refid="16416" relation="include">
+        </childnode>
+        <childnode refid="16443" relation="include">
+        </childnode>
+        <childnode refid="16444" relation="include">
+        </childnode>
+        <childnode refid="16413" relation="include">
+        </childnode>
+      </node>
+      <node id="16439">
+        <label>tvm/ir/expr.h</label>
+        <link refid="ir_2expr_8h"/>
+        <childnode refid="16406" relation="include">
+        </childnode>
+        <childnode refid="16417" relation="include">
+        </childnode>
+        <childnode refid="16434" relation="include">
+        </childnode>
+        <childnode refid="16440" relation="include">
+        </childnode>
+        <childnode refid="16441" relation="include">
+        </childnode>
+        <childnode refid="16412" relation="include">
+        </childnode>
+        <childnode refid="16442" relation="include">
+        </childnode>
+        <childnode refid="16432" relation="include">
+        </childnode>
+        <childnode refid="16411" relation="include">
+        </childnode>
+      </node>
+      <node id="16431">
+        <label>tuple</label>
+      </node>
+      <node id="16405">
+        <label>dmlc/logging.h</label>
+      </node>
+      <node id="16443">
+        <label>tvm/tir/stmt.h</label>
+        <link refid="stmt_8h"/>
+        <childnode refid="16416" relation="include">
+        </childnode>
+        <childnode refid="16411" relation="include">
+        </childnode>
+        <childnode refid="16412" relation="include">
+        </childnode>
+        <childnode refid="16415" relation="include">
+        </childnode>
+        <childnode refid="16413" relation="include">
+        </childnode>
+      </node>
+      <node id="16415">
+        <label>vector</label>
+      </node>
+      <node id="16433">
+        <label>tvm/node/structural_equal.h</label>
+        <link refid="structural__equal_8h"/>
+        <childnode refid="16429" relation="include">
+        </childnode>
+        <childnode refid="16404" relation="include">
+        </childnode>
+        <childnode refid="16434" relation="include">
+        </childnode>
+        <childnode refid="16412" relation="include">
+        </childnode>
+      </node>
+      <node id="16423">
+        <label>dmlc/io.h</label>
+      </node>
+      <node id="16407">
+        <label>tvm/runtime/c_runtime_api.h</label>
+        <link refid="c__runtime__api_8h"/>
+        <childnode refid="16408" relation="include">
+        </childnode>
+        <childnode refid="16409" relation="include">
+        </childnode>
+        <childnode refid="16410" relation="include">
+        </childnode>
+      </node>
+      <node id="16441">
+        <label>tvm/ir/type.h</label>
+        <link refid="ir_2type_8h"/>
+        <childnode refid="16406" relation="include">
+        </childnode>
+        <childnode refid="16429" relation="include">
+        </childnode>
+        <childnode refid="16417" relation="include">
+        </childnode>
+        <childnode refid="16434" relation="include">
+        </childnode>
+        <childnode refid="16440" relation="include">
+        </childnode>
+        <childnode refid="16412" relation="include">
+        </childnode>
+      </node>
+      <node id="16413">
+        <label>utility</label>
+      </node>
+      <node id="16417">
+        <label>tvm/node/node.h</label>
+        <link refid="node_8h"/>
+        <childnode refid="16407" relation="include">
+        </childnode>
+        <childnode refid="16406" relation="include">
+        </childnode>
+        <childnode refid="16418" relation="include">
+        </childnode>
+        <childnode refid="16420" relation="include">
+        </childnode>
+        <childnode refid="16437" relation="include">
+        </childnode>
+        <childnode refid="16434" relation="include">
+        </childnode>
+        <childnode refid="16433" relation="include">
+        </childnode>
+        <childnode refid="16436" relation="include">
+        </childnode>
+        <childnode refid="16412" relation="include">
+        </childnode>
+        <childnode refid="16415" relation="include">
+        </childnode>
+        <childnode refid="16413" relation="include">
+        </childnode>
+        <childnode refid="16411" relation="include">
+        </childnode>
+      </node>
+      <node id="16428">
+        <label>dmlc/serializer.h</label>
+      </node>
+      <node id="16419">
+        <label>cstdlib</label>
+      </node>
+      <node id="16444">
+        <label>tvm/tir/expr_functor.h</label>
+        <link refid="tir_2expr__functor_8h"/>
+        <childnode refid="16404" relation="include">
+        </childnode>
+        <childnode refid="16416" relation="include">
+        </childnode>
+        <childnode refid="16413" relation="include">
+        </childnode>
+      </node>
+      <node id="16438">
+        <label>iostream</label>
+      </node>
+      <node id="16427">
+        <label>tvm/runtime/serializer.h</label>
+        <link refid="serializer_8h"/>
+        <childnode refid="16423" relation="include">
+        </childnode>
+        <childnode refid="16428" relation="include">
+        </childnode>
+        <childnode refid="16407" relation="include">
+        </childnode>
+        <childnode refid="16426" relation="include">
+        </childnode>
+      </node>
+      <node id="16425">
+        <label>unordered_map</label>
+      </node>
+      <node id="16420">
+        <label>tvm/node/reflection.h</label>
+        <link refid="reflection_8h"/>
+        <childnode refid="16407" relation="include">
+        </childnode>
+        <childnode refid="16406" relation="include">
+        </childnode>
+        <childnode refid="16418" relation="include">
+        </childnode>
+        <childnode refid="16421" relation="include">
+        </childnode>
+        <childnode refid="16426" relation="include">
+        </childnode>
+        <childnode refid="16429" relation="include">
+        </childnode>
+        <childnode refid="16433" relation="include">
+        </childnode>
+        <childnode refid="16436" relation="include">
+        </childnode>
+        <childnode refid="16415" relation="include">
+        </childnode>
+        <childnode refid="16412" relation="include">
+        </childnode>
+        <childnode refid="16411" relation="include">
+        </childnode>
+      </node>
+      <node id="16418">
+        <label>tvm/runtime/memory.h</label>
+        <link refid="runtime_2memory_8h"/>
+        <childnode refid="16406" relation="include">
+        </childnode>
+        <childnode refid="16419" relation="include">
+        </childnode>
+        <childnode refid="16413" relation="include">
+        </childnode>
+        <childnode refid="16411" relation="include">
+        </childnode>
+      </node>
+      <node id="16429">
+        <label>tvm/runtime/data_type.h</label>
+        <link refid="data__type_8h"/>
+        <childnode refid="16407" relation="include">
+        </childnode>
+        <childnode refid="16405" relation="include">
+        </childnode>
+        <childnode refid="16411" relation="include">
+        </childnode>
+      </node>
+      <node id="16411">
+        <label>type_traits</label>
+      </node>
+      <node id="16442">
+        <label>algorithm</label>
+      </node>
+      <node id="16408">
+        <label>dlpack/dlpack.h</label>
+      </node>
+      <node id="16424">
+        <label>memory</label>
+      </node>
+      <node id="16435">
+        <label>initializer_list</label>
+      </node>
+    </incdepgraph>
+    <innerclass refid="classtvm_1_1tir_1_1StmtFunctor" prot="public">tvm::tir::StmtFunctor</innerclass>
+    <innerclass refid="classtvm_1_1tir_1_1StmtFunctor_3_01R_07const_01Stmt_01_6n_00_01Args_8_8_8args_08_4" prot="public">tvm::tir::StmtFunctor&lt; R(const Stmt &amp;n, Args...args)&gt;</innerclass>
+    <innerclass refid="classtvm_1_1tir_1_1StmtVisitor" prot="public">tvm::tir::StmtVisitor</innerclass>
+    <innerclass refid="classtvm_1_1tir_1_1StmtMutator" prot="public">tvm::tir::StmtMutator</innerclass>
+    <innerclass refid="classtvm_1_1tir_1_1StmtExprVisitor" prot="public">tvm::tir::StmtExprVisitor</innerclass>
+    <innerclass refid="classtvm_1_1tir_1_1StmtExprMutator" prot="public">tvm::tir::StmtExprMutator</innerclass>
+    <innernamespace refid="namespacetvm">tvm</innernamespace>
+    <innernamespace refid="namespacetvm_1_1tir">tvm::tir</innernamespace>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="stmt__functor_8h_1ac18c66d877e6a00a4da0d8d7d2b2b6ae" prot="public" static="no">
+        <name>STMT_FUNCTOR_DEFAULT</name>
+        <initializer>{                                      \
+    return VisitStmtDefault_(op, std::forward&lt;Args&gt;(args)...);      \
+  }</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/tir/stmt_functor.h" line="45" column="9" bodyfile="include/tvm/tir/stmt_functor.h" bodystart="45" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="stmt__functor_8h_1a57fa0234da58c69003bb980f5405a279" prot="public" static="no">
+        <name>IR_STMT_FUNCTOR_DISPATCH</name>
+        <param><defname>OP</defname></param>
+        <initializer>vtable.template set_dispatch&lt;OP&gt;(                                     \
+      [](const ObjectRef&amp; n, TSelf* self, Args... args) {               \
+        return self-&gt;VisitStmt_(static_cast&lt;const OP*&gt;(n.get()),        \
+                                std::forward&lt;Args&gt;(args)...);           \
+      });                                                               \</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/tir/stmt_functor.h" line="49" column="9" bodyfile="include/tvm/tir/stmt_functor.h" bodystart="49" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Functors for tir stmts. </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="2"><highlight class="comment"><sp/>*<sp/>Licensed<sp/>to<sp/>the<sp/>Apache<sp/>Software<sp/>Foundation<sp/>(ASF)<sp/>under<sp/>one</highlight></codeline>
+<codeline lineno="3"><highlight class="comment"><sp/>*<sp/>or<sp/>more<sp/>contributor<sp/>license<sp/>agreements.<sp/><sp/>See<sp/>the<sp/>NOTICE<sp/>file</highlight></codeline>
+<codeline lineno="4"><highlight class="comment"><sp/>*<sp/>distributed<sp/>with<sp/>this<sp/>work<sp/>for<sp/>additional<sp/>information</highlight></codeline>
+<codeline lineno="5"><highlight class="comment"><sp/>*<sp/>regarding<sp/>copyright<sp/>ownership.<sp/><sp/>The<sp/>ASF<sp/>licenses<sp/>this<sp/>file</highlight></codeline>
+<codeline lineno="6"><highlight class="comment"><sp/>*<sp/>to<sp/>you<sp/>under<sp/>the<sp/>Apache<sp/>License,<sp/>Version<sp/>2.0<sp/>(the</highlight></codeline>
+<codeline lineno="7"><highlight class="comment"><sp/>*<sp/>&quot;License&quot;);<sp/>you<sp/>may<sp/>not<sp/>use<sp/>this<sp/>file<sp/>except<sp/>in<sp/>compliance</highlight></codeline>
+<codeline lineno="8"><highlight class="comment"><sp/>*<sp/>with<sp/>the<sp/>License.<sp/><sp/>You<sp/>may<sp/>obtain<sp/>a<sp/>copy<sp/>of<sp/>the<sp/>License<sp/>at</highlight></codeline>
+<codeline lineno="9"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="10"><highlight class="comment"><sp/>*<sp/><sp/><sp/>http://www.apache.org/licenses/LICENSE-2.0</highlight></codeline>
+<codeline lineno="11"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="12"><highlight class="comment"><sp/>*<sp/>Unless<sp/>required<sp/>by<sp/>applicable<sp/>law<sp/>or<sp/>agreed<sp/>to<sp/>in<sp/>writing,</highlight></codeline>
+<codeline lineno="13"><highlight class="comment"><sp/>*<sp/>software<sp/>distributed<sp/>under<sp/>the<sp/>License<sp/>is<sp/>distributed<sp/>on<sp/>an</highlight></codeline>
+<codeline lineno="14"><highlight class="comment"><sp/>*<sp/>&quot;AS<sp/>IS&quot;<sp/>BASIS,<sp/>WITHOUT<sp/>WARRANTIES<sp/>OR<sp/>CONDITIONS<sp/>OF<sp/>ANY</highlight></codeline>
+<codeline lineno="15"><highlight class="comment"><sp/>*<sp/>KIND,<sp/>either<sp/>express<sp/>or<sp/>implied.<sp/><sp/>See<sp/>the<sp/>License<sp/>for<sp/>the</highlight></codeline>
+<codeline lineno="16"><highlight class="comment"><sp/>*<sp/>specific<sp/>language<sp/>governing<sp/>permissions<sp/>and<sp/>limitations</highlight></codeline>
+<codeline lineno="17"><highlight class="comment"><sp/>*<sp/>under<sp/>the<sp/>License.</highlight></codeline>
+<codeline lineno="18"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight></codeline>
+<codeline lineno="25"><highlight class="preprocessor">#ifndef<sp/>TVM_TIR_STMT_FUNCTOR_H_</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>TVM_TIR_STMT_FUNCTOR_H_</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight></codeline>
+<codeline lineno="28"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;<ref refid="functor_8h" kindref="compound">tvm/node/functor.h</ref>&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="29"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;<ref refid="tir_2expr_8h" kindref="compound">tvm/tir/expr.h</ref>&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="30"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;<ref refid="stmt_8h" kindref="compound">tvm/tir/stmt.h</ref>&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="31"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;<ref refid="tir_2expr__functor_8h" kindref="compound">tvm/tir/expr_functor.h</ref>&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="32"><highlight class="normal"></highlight></codeline>
+<codeline lineno="33"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;utility&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="34"><highlight class="normal"></highlight></codeline>
+<codeline lineno="35"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal"><ref refid="namespacetvm" kindref="compound">tvm</ref><sp/>{</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal">tir<sp/>{</highlight></codeline>
+<codeline lineno="42"><highlight class="keyword">template</highlight><highlight class="normal">&lt;</highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>FType&gt;</highlight></codeline>
+<codeline lineno="43" refid="classtvm_1_1tir_1_1StmtFunctor" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classtvm_1_1tir_1_1StmtFunctor" kindref="compound">StmtFunctor</ref>;</highlight></codeline>
+<codeline lineno="44"><highlight class="normal"></highlight></codeline>
+<codeline lineno="45" refid="stmt__functor_8h_1ac18c66d877e6a00a4da0d8d7d2b2b6ae" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>STMT_FUNCTOR_DEFAULT<sp/>{<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>\</highlight></codeline>
+<codeline lineno="46"><highlight class="preprocessor"><sp/><sp/><sp/><sp/>return<sp/>VisitStmtDefault_(op,<sp/>std::forward&lt;Args&gt;(args)...);<sp/><sp/><sp/><sp/><sp/><sp/>\</highlight></codeline>
+<codeline lineno="47"><highlight class="preprocessor"><sp/><sp/>}</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="48"><highlight class="normal"></highlight></codeline>
+<codeline lineno="49" refid="stmt__functor_8h_1a57fa0234da58c69003bb980f5405a279" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>IR_STMT_FUNCTOR_DISPATCH(OP)<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>\</highlight></codeline>
+<codeline lineno="50"><highlight class="preprocessor"><sp/><sp/>vtable.template<sp/>set_dispatch&lt;OP&gt;(<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>\</highlight></codeline>
+<codeline lineno="51"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/>[](const<sp/>ObjectRef&amp;<sp/>n,<sp/>TSelf*<sp/>self,<sp/>Args...<sp/>args)<sp/>{<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>\</highlight></codeline>
+<codeline lineno="52"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>return<sp/>self-&gt;VisitStmt_(static_cast&lt;const<sp/>OP*&gt;(n.get()),<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>\</highlight></codeline>
+<codeline lineno="53"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::forward&lt;Args&gt;(args)...);<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>\</highlight></codeline>
+<codeline lineno="54"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/>});<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>\</highlight></codeline>
+<codeline lineno="55"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="56"><highlight class="normal"></highlight></codeline>
+<codeline lineno="57"><highlight class="normal"></highlight><highlight class="keyword">template</highlight><highlight class="normal">&lt;</highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>R,<sp/></highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>...Args&gt;</highlight></codeline>
+<codeline lineno="58" refid="classtvm_1_1tir_1_1StmtFunctor_3_01R_07const_01Stmt_01_6n_00_01Args_8_8_8args_08_4" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classtvm_1_1tir_1_1StmtFunctor" kindref="compound">StmtFunctor</ref>&lt;R(const<sp/><ref refid="classtvm_1_1tir_1_1Stmt" kindref="compound">Stmt</ref>&amp;<sp/>n,<sp/>Args...<sp/>args)&gt;<sp/>{</highlight></codeline>
+<codeline lineno="59"><highlight class="normal"><sp/></highlight><highlight class="keyword">private</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="60"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">using</highlight><highlight class="normal"><sp/><ref refid="classtvm_1_1tir_1_1StmtFunctor_3_01R_07const_01Stmt_01_6n_00_01Args_8_8_8args_08_4" kindref="compound">TSelf</ref><sp/>=<sp/><ref refid="classtvm_1_1tir_1_1StmtFunctor" kindref="compound">StmtFunctor</ref>&lt;R(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classtvm_1_1tir_1_1Stmt" kindref="compound">Stmt</ref>&amp;<sp/>n,<sp/>Args...<sp/>args)&gt;;</highlight></codeline>
+<codeline lineno="61"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">using</highlight><highlight class="normal"><sp/><ref refid="classtvm_1_1NodeFunctor" kindref="compound">FType</ref><sp/>=<sp/><ref refid="classtvm_1_1NodeFunctor" kindref="compound">NodeFunctor</ref>&lt;R(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>ObjectRef&amp;<sp/>n,<sp/><ref refid="classtvm_1_1tir_1_1StmtFunctor_3_01R_07const_01Stmt_01_6n_00_01Args_8_8_8args_08_4" kindref="compound">TSelf</ref>*<sp/></highlight><highlight class="keyword">self</highlight><highlight class="normal">,<sp/>Args...<sp/>args)&gt;;</highlight></codeline>
+<codeline lineno="62"><highlight class="normal"></highlight></codeline>
+<codeline lineno="63"><highlight class="normal"><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="65" refid="classtvm_1_1tir_1_1StmtFunctor_3_01R_07const_01Stmt_01_6n_00_01Args_8_8_8args_08_4_1ab5c892a2e36985e58d69f7b2ca2e0260" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">using</highlight><highlight class="normal"><sp/><ref refid="classtvm_1_1tir_1_1StmtFunctor_3_01R_07const_01Stmt_01_6n_00_01Args_8_8_8args_08_4_1ab5c892a2e36985e58d69f7b2ca2e0260" kindref="member">result_type</ref><sp/>=<sp/>R;</highlight></codeline>
+<codeline lineno="67" refid="classtvm_1_1tir_1_1StmtFunctor_3_01R_07const_01Stmt_01_6n_00_01Args_8_8_8args_08_4_1ada86a6f45feefbd47308a5cc5119067e" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/><ref refid="classtvm_1_1tir_1_1StmtFunctor_3_01R_07const_01Stmt_01_6n_00_01Args_8_8_8args_08_4_1ada86a6f45feefbd47308a5cc5119067e" kindref="member">~StmtFunctor</ref>()<sp/>{}</highlight></codeline>
+<codeline lineno="74" refid="classtvm_1_1tir_1_1StmtFunctor_3_01R_07const_01Stmt_01_6n_00_01Args_8_8_8args_08_4_1abe503254d07c1270000335d02c6f98b4" refkind="member"><highlight class="normal"><sp/><sp/>R<sp/><ref refid="classtvm_1_1tir_1_1StmtFunctor_3_01R_07const_01Stmt_01_6n_00_01Args_8_8_8args_08_4_1abe503254d07c1270000335d02c6f98b4" kindref="member">operator()</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classtvm_1_1tir_1_1Stmt" kindref="compound">Stmt</ref>&amp;<sp/>n,<sp/>Args...<sp/>args)<sp/>{</highlight></codeline>
+<codeline lineno="75"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>VisitStmt(n,<sp/>std::forward&lt;Args&gt;(args)...);</highlight></codeline>
+<codeline lineno="76"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="83" refid="classtvm_1_1tir_1_1StmtFunctor_3_01R_07const_01Stmt_01_6n_00_01Args_8_8_8args_08_4_1a681fd33e837008d7f2534d206bdacca3" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/>R<sp/><ref refid="classtvm_1_1tir_1_1StmtFunctor_3_01R_07const_01Stmt_01_6n_00_01Args_8_8_8args_08_4_1a681fd33e837008d7f2534d206bdacca3" kindref="member">VisitStmt</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classtvm_1_1tir_1_1Stmt" kindref="compound">Stmt</ref>&amp;<sp/>n,<sp/>Args...<sp/>args)<sp/>{</highlight></codeline>
+<codeline lineno="84"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/><ref refid="classtvm_1_1NodeFunctor" kindref="compound">FType</ref><sp/>vtable<sp/>=<sp/>InitVTable();</highlight></codeline>
+<codeline lineno="85"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>vtable(n,<sp/></highlight><highlight class="keyword">this</highlight><highlight class="normal">,<sp/>std::forward&lt;Args&gt;(args)...);</highlight></codeline>
+<codeline lineno="86"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="87"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>Functions<sp/>that<sp/>can<sp/>be<sp/>overriden<sp/>by<sp/>subclass</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="88" refid="classtvm_1_1tir_1_1StmtFunctor_3_01R_07const_01Stmt_01_6n_00_01Args_8_8_8args_08_4_1a4ae20a46aa6a7fdeec5f7ae30935b8ca" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/>R<sp/><ref refid="classtvm_1_1tir_1_1StmtFunctor_3_01R_07const_01Stmt_01_6n_00_01Args_8_8_8args_08_4_1a4ae20a46aa6a7fdeec5f7ae30935b8ca" kindref="member">VisitStmt_</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classtvm_1_1tir_1_1LetStmtNode" kindref="compound">LetStmtNode</ref>*<sp/>op,<sp/>Args...<sp/>args)<sp/><ref refid="stmt__functor_8h_1ac18c66d877e6a00a4da0d8d7d2b2b6ae" kindref="member">STMT_FUNCTOR_DEFAULT</ref>;</highlight></codeline>
+<codeline lineno="89" refid="classtvm_1_1tir_1_1StmtFunctor_3_01R_07const_01Stmt_01_6n_00_01Args_8_8_8args_08_4_1a6c7fee50ff8c15f95228d8edff19a39f" refkind="member"><highlight class="normal"><sp/><sp/>virtual<sp/>R<sp/>VisitStmt_(const<sp/><ref refid="classtvm_1_1tir_1_1AttrStmtNode" kindref="compound">AttrStmtNode</ref>*<sp/>op,<sp/>Args...<sp/>args)<sp/>STMT_FUNCTOR_DEFAULT;</highlight></codeline>
+<codeline lineno="90" refid="classtvm_1_1tir_1_1StmtFunctor_3_01R_07const_01Stmt_01_6n_00_01Args_8_8_8args_08_4_1a77331d93b2c3f54b007918bcfb57a941" refkind="member"><highlight class="normal"><sp/><sp/>virtual<sp/>R<sp/>VisitStmt_(const<sp/><ref refid="classtvm_1_1tir_1_1IfThenElseNode" kindref="compound">IfThenElseNode</ref>*<sp/>op,<sp/>Args...<sp/>args)<sp/>STMT_FUNCTOR_DEFAULT;</highlight></codeline>
+<codeline lineno="91" refid="classtvm_1_1tir_1_1StmtFunctor_3_01R_07const_01Stmt_01_6n_00_01Args_8_8_8args_08_4_1a5aac298853219524d70e89b6a8672cf7" refkind="member"><highlight class="normal"><sp/><sp/>virtual<sp/>R<sp/>VisitStmt_(const<sp/><ref refid="classtvm_1_1tir_1_1ForNode" kindref="compound">ForNode</ref>*<sp/>op,<sp/>Args...<sp/>args)<sp/>STMT_FUNCTOR_DEFAULT;</highlight></codeline>
+<codeline lineno="92" refid="classtvm_1_1tir_1_1StmtFunctor_3_01R_07const_01Stmt_01_6n_00_01Args_8_8_8args_08_4_1adf37d742ed06eb5e109f1a15e1a826fa" refkind="member"><highlight class="normal"><sp/><sp/>virtual<sp/>R<sp/>VisitStmt_(const<sp/><ref refid="classtvm_1_1tir_1_1AllocateNode" kindref="compound">AllocateNode</ref>*<sp/>op,<sp/>Args...<sp/>args)<sp/>STMT_FUNCTOR_DEFAULT;</highlight></codeline>
+<codeline lineno="93" refid="classtvm_1_1tir_1_1StmtFunctor_3_01R_07const_01Stmt_01_6n_00_01Args_8_8_8args_08_4_1ae0cc8034e586408c25ffcb7c43684f0f" refkind="member"><highlight class="normal"><sp/><sp/>virtual<sp/>R<sp/>VisitStmt_(const<sp/><ref refid="classtvm_1_1tir_1_1StoreNode" kindref="compound">StoreNode</ref>*<sp/>op,<sp/>Args...<sp/>args)<sp/>STMT_FUNCTOR_DEFAULT;</highlight></codeline>
+<codeline lineno="94" refid="classtvm_1_1tir_1_1StmtFunctor_3_01R_07const_01Stmt_01_6n_00_01Args_8_8_8args_08_4_1a8c1509214a19114bd826e6cc4aaee936" refkind="member"><highlight class="normal"><sp/><sp/>virtual<sp/>R<sp/>VisitStmt_(const<sp/><ref refid="classtvm_1_1tir_1_1FreeNode" kindref="compound">FreeNode</ref>*<sp/>op,<sp/>Args...<sp/>args)<sp/>STMT_FUNCTOR_DEFAULT;</highlight></codeline>
+<codeline lineno="95" refid="classtvm_1_1tir_1_1StmtFunctor_3_01R_07const_01Stmt_01_6n_00_01Args_8_8_8args_08_4_1a38d0dfd90e64c092bb4687310c193f5a" refkind="member"><highlight class="normal"><sp/><sp/>virtual<sp/>R<sp/>VisitStmt_(const<sp/><ref refid="classtvm_1_1tir_1_1AssertStmtNode" kindref="compound">AssertStmtNode</ref>*<sp/>op,<sp/>Args...<sp/>args)<sp/>STMT_FUNCTOR_DEFAULT;</highlight></codeline>
+<codeline lineno="96" refid="classtvm_1_1tir_1_1StmtFunctor_3_01R_07const_01Stmt_01_6n_00_01Args_8_8_8args_08_4_1ab7907012785d8468b36325a86f3d3439" refkind="member"><highlight class="normal"><sp/><sp/>virtual<sp/>R<sp/>VisitStmt_(const<sp/><ref refid="classtvm_1_1tir_1_1ProducerConsumerNode" kindref="compound">ProducerConsumerNode</ref>*<sp/>op,<sp/>Args...<sp/>args)<sp/>STMT_FUNCTOR_DEFAULT;</highlight></codeline>
+<codeline lineno="97" refid="classtvm_1_1tir_1_1StmtFunctor_3_01R_07const_01Stmt_01_6n_00_01Args_8_8_8args_08_4_1af79c39839087be7af2b0b7d5ecc546b0" refkind="member"><highlight class="normal"><sp/><sp/>virtual<sp/>R<sp/>VisitStmt_(const<sp/><ref refid="classtvm_1_1tir_1_1ProvideNode" kindref="compound">ProvideNode</ref>*<sp/>op,<sp/>Args...<sp/>args)<sp/>STMT_FUNCTOR_DEFAULT;</highlight></codeline>
+<codeline lineno="98" refid="classtvm_1_1tir_1_1StmtFunctor_3_01R_07const_01Stmt_01_6n_00_01Args_8_8_8args_08_4_1a7c206781866bf85effcaac1d597e84d2" refkind="member"><highlight class="normal"><sp/><sp/>virtual<sp/>R<sp/>VisitStmt_(const<sp/><ref refid="classtvm_1_1tir_1_1RealizeNode" kindref="compound">RealizeNode</ref>*<sp/>op,<sp/>Args...<sp/>args)<sp/>STMT_FUNCTOR_DEFAULT;</highlight></codeline>
+<codeline lineno="99" refid="classtvm_1_1tir_1_1StmtFunctor_3_01R_07const_01Stmt_01_6n_00_01Args_8_8_8args_08_4_1aa9f502eaad37f47adb66986a2aed633c" refkind="member"><highlight class="normal"><sp/><sp/>virtual<sp/>R<sp/>VisitStmt_(const<sp/><ref refid="classtvm_1_1tir_1_1PrefetchNode" kindref="compound">PrefetchNode</ref>*<sp/>op,<sp/>Args...<sp/>args)<sp/>STMT_FUNCTOR_DEFAULT;</highlight></codeline>
+<codeline lineno="100" refid="classtvm_1_1tir_1_1StmtFunctor_3_01R_07const_01Stmt_01_6n_00_01Args_8_8_8args_08_4_1a0eabde632e5d5fabc3e50b38a0ecded8" refkind="member"><highlight class="normal"><sp/><sp/>virtual<sp/>R<sp/>VisitStmt_(const<sp/><ref refid="classtvm_1_1tir_1_1SeqStmtNode" kindref="compound">SeqStmtNode</ref>*<sp/>op,<sp/>Args...<sp/>args)<sp/>STMT_FUNCTOR_DEFAULT;</highlight></codeline>
+<codeline lineno="101" refid="classtvm_1_1tir_1_1StmtFunctor_3_01R_07const_01Stmt_01_6n_00_01Args_8_8_8args_08_4_1a5632fe5dfbaafffc4578e7beda8c52be" refkind="member"><highlight class="normal"><sp/><sp/>virtual<sp/>R<sp/>VisitStmt_(const<sp/><ref refid="classtvm_1_1tir_1_1EvaluateNode" kindref="compound">EvaluateNode</ref>*<sp/>op,<sp/>Args...<sp/>args)<sp/>STMT_FUNCTOR_DEFAULT;</highlight></codeline>
+<codeline lineno="102" refid="classtvm_1_1tir_1_1StmtFunctor_3_01R_07const_01Stmt_01_6n_00_01Args_8_8_8args_08_4_1aeb08feaffc3f8fb6f6c379ccce9bbd45" refkind="member"><highlight class="normal"><sp/><sp/>virtual<sp/>R<sp/>VisitStmtDefault_(const<sp/>Object*<sp/>op,<sp/>Args<sp/>...)<sp/>{</highlight></codeline>
+<codeline lineno="103"><highlight class="normal"><sp/><sp/><sp/><sp/>LOG(FATAL)<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;Do<sp/>not<sp/>have<sp/>a<sp/>default<sp/>for<sp/>&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/>op-&gt;GetTypeKey();</highlight></codeline>
+<codeline lineno="104"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>R();</highlight></codeline>
+<codeline lineno="105"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="106"><highlight class="normal"></highlight></codeline>
+<codeline lineno="107"><highlight class="normal"><sp/></highlight><highlight class="keyword">private</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="108"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>initialize<sp/>the<sp/>vtable.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="109"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/><ref refid="classtvm_1_1NodeFunctor" kindref="compound">FType</ref><sp/>InitVTable()<sp/>{</highlight></codeline>
+<codeline lineno="110"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classtvm_1_1NodeFunctor" kindref="compound">FType</ref><sp/>vtable;</highlight></codeline>
+<codeline lineno="111"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="stmt__functor_8h_1a57fa0234da58c69003bb980f5405a279" kindref="member">IR_STMT_FUNCTOR_DISPATCH</ref>(<ref refid="classtvm_1_1tir_1_1LetStmtNode" kindref="compound">LetStmtNode</ref>);</highlight></codeline>
+<codeline lineno="112"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="stmt__functor_8h_1a57fa0234da58c69003bb980f5405a279" kindref="member">IR_STMT_FUNCTOR_DISPATCH</ref>(<ref refid="classtvm_1_1tir_1_1AttrStmtNode" kindref="compound">AttrStmtNode</ref>);</highlight></codeline>
+<codeline lineno="113"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="stmt__functor_8h_1a57fa0234da58c69003bb980f5405a279" kindref="member">IR_STMT_FUNCTOR_DISPATCH</ref>(<ref refid="classtvm_1_1tir_1_1IfThenElseNode" kindref="compound">IfThenElseNode</ref>);</highlight></codeline>
+<codeline lineno="114"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="stmt__functor_8h_1a57fa0234da58c69003bb980f5405a279" kindref="member">IR_STMT_FUNCTOR_DISPATCH</ref>(<ref refid="classtvm_1_1tir_1_1ForNode" kindref="compound">ForNode</ref>);</highlight></codeline>
+<codeline lineno="115"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="stmt__functor_8h_1a57fa0234da58c69003bb980f5405a279" kindref="member">IR_STMT_FUNCTOR_DISPATCH</ref>(<ref refid="classtvm_1_1tir_1_1AllocateNode" kindref="compound">AllocateNode</ref>);</highlight></codeline>
+<codeline lineno="116"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="stmt__functor_8h_1a57fa0234da58c69003bb980f5405a279" kindref="member">IR_STMT_FUNCTOR_DISPATCH</ref>(<ref refid="classtvm_1_1tir_1_1StoreNode" kindref="compound">StoreNode</ref>);</highlight></codeline>
+<codeline lineno="117"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="stmt__functor_8h_1a57fa0234da58c69003bb980f5405a279" kindref="member">IR_STMT_FUNCTOR_DISPATCH</ref>(<ref refid="classtvm_1_1tir_1_1FreeNode" kindref="compound">FreeNode</ref>);</highlight></codeline>
+<codeline lineno="118"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="stmt__functor_8h_1a57fa0234da58c69003bb980f5405a279" kindref="member">IR_STMT_FUNCTOR_DISPATCH</ref>(<ref refid="classtvm_1_1tir_1_1AssertStmtNode" kindref="compound">AssertStmtNode</ref>);</highlight></codeline>
+<codeline lineno="119"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="stmt__functor_8h_1a57fa0234da58c69003bb980f5405a279" kindref="member">IR_STMT_FUNCTOR_DISPATCH</ref>(<ref refid="classtvm_1_1tir_1_1ProducerConsumerNode" kindref="compound">ProducerConsumerNode</ref>);</highlight></codeline>
+<codeline lineno="120"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="stmt__functor_8h_1a57fa0234da58c69003bb980f5405a279" kindref="member">IR_STMT_FUNCTOR_DISPATCH</ref>(<ref refid="classtvm_1_1tir_1_1ProvideNode" kindref="compound">ProvideNode</ref>);</highlight></codeline>
+<codeline lineno="121"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="stmt__functor_8h_1a57fa0234da58c69003bb980f5405a279" kindref="member">IR_STMT_FUNCTOR_DISPATCH</ref>(<ref refid="classtvm_1_1tir_1_1RealizeNode" kindref="compound">RealizeNode</ref>);</highlight></codeline>
+<codeline lineno="122"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="stmt__functor_8h_1a57fa0234da58c69003bb980f5405a279" kindref="member">IR_STMT_FUNCTOR_DISPATCH</ref>(<ref refid="classtvm_1_1tir_1_1PrefetchNode" kindref="compound">PrefetchNode</ref>);</highlight></codeline>
+<codeline lineno="123"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="stmt__functor_8h_1a57fa0234da58c69003bb980f5405a279" kindref="member">IR_STMT_FUNCTOR_DISPATCH</ref>(<ref refid="classtvm_1_1tir_1_1SeqStmtNode" kindref="compound">SeqStmtNode</ref>);</highlight></codeline>
+<codeline lineno="124"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="stmt__functor_8h_1a57fa0234da58c69003bb980f5405a279" kindref="member">IR_STMT_FUNCTOR_DISPATCH</ref>(<ref refid="classtvm_1_1tir_1_1EvaluateNode" kindref="compound">EvaluateNode</ref>);</highlight></codeline>
+<codeline lineno="125"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>vtable;</highlight></codeline>
+<codeline lineno="126"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="127"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="128"><highlight class="normal"></highlight></codeline>
+<codeline lineno="129"><highlight class="normal"></highlight><highlight class="preprocessor">#undef<sp/>IR_STMT_FUNCTOR_DISPATCH</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="130"><highlight class="normal"></highlight><highlight class="preprocessor">#undef<sp/>STMT_FUNCTOR_DEFAULT</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="131"><highlight class="normal"></highlight></codeline>
+<codeline lineno="135" refid="classtvm_1_1tir_1_1StmtVisitor" refkind="compound"><highlight class="keyword">class<sp/></highlight><highlight class="normal">TVM_DLL<sp/><ref refid="classtvm_1_1tir_1_1StmtVisitor" kindref="compound">StmtVisitor</ref><sp/>:</highlight></codeline>
+<codeline lineno="136"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">protected</highlight><highlight class="normal"><sp/><ref refid="classtvm_1_1tir_1_1StmtFunctor" kindref="compound">StmtFunctor</ref>&lt;void(const<sp/>Stmt&amp;)&gt;<sp/>{</highlight></codeline>
+<codeline lineno="137"><highlight class="normal"><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="138"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">using</highlight><highlight class="normal"><sp/>StmtFunctor::operator();</highlight></codeline>
+<codeline lineno="139"><highlight class="normal"></highlight></codeline>
+<codeline lineno="140"><highlight class="normal"><sp/></highlight><highlight class="keyword">protected</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="141"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">using</highlight><highlight class="normal"><sp/>StmtFunctor::VisitStmt;</highlight></codeline>
+<codeline lineno="149" refid="classtvm_1_1tir_1_1StmtVisitor_1a6d35a6081ee7dbc440e5a980f70795c6" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classtvm_1_1tir_1_1StmtVisitor_1a6d35a6081ee7dbc440e5a980f70795c6" kindref="member">VisitExpr</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classtvm_1_1PrimExpr" kindref="compound">PrimExpr</ref>&amp;<sp/>e)<sp/>{}</highlight></codeline>
+<codeline lineno="150"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>statement<sp/>visitor</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="151"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>VisitStmt_(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classtvm_1_1tir_1_1AttrStmtNode" kindref="compound">AttrStmtNode</ref>*<sp/>op)<sp/></highlight><highlight class="keyword">override</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="152"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>VisitStmt_(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classtvm_1_1tir_1_1IfThenElseNode" kindref="compound">IfThenElseNode</ref>*<sp/>op)<sp/></highlight><highlight class="keyword">override</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="153"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>VisitStmt_(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classtvm_1_1tir_1_1LetStmtNode" kindref="compound">LetStmtNode</ref>*<sp/>op)<sp/></highlight><highlight class="keyword">override</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="154"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>VisitStmt_(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classtvm_1_1tir_1_1ForNode" kindref="compound">ForNode</ref>*<sp/>op)<sp/></highlight><highlight class="keyword">override</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="155"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>VisitStmt_(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classtvm_1_1tir_1_1AllocateNode" kindref="compound">AllocateNode</ref>*<sp/>op)<sp/></highlight><highlight class="keyword">override</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="156"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>VisitStmt_(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classtvm_1_1tir_1_1StoreNode" kindref="compound">StoreNode</ref>*<sp/>op)<sp/></highlight><highlight class="keyword">override</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="157"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>VisitStmt_(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classtvm_1_1tir_1_1FreeNode" kindref="compound">FreeNode</ref>*<sp/>op)<sp/></highlight><highlight class="keyword">override</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="158"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>VisitStmt_(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classtvm_1_1tir_1_1AssertStmtNode" kindref="compound">AssertStmtNode</ref>*<sp/>op)<sp/></highlight><highlight class="keyword">override</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="159"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>VisitStmt_(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classtvm_1_1tir_1_1ProducerConsumerNode" kindref="compound">ProducerConsumerNode</ref>*<sp/>op)<sp/></highlight><highlight class="keyword">override</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="160"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>VisitStmt_(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classtvm_1_1tir_1_1ProvideNode" kindref="compound">ProvideNode</ref>*<sp/>op)<sp/></highlight><highlight class="keyword">override</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="161"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>VisitStmt_(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classtvm_1_1tir_1_1RealizeNode" kindref="compound">RealizeNode</ref>*<sp/>op)<sp/></highlight><highlight class="keyword">override</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="162"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>VisitStmt_(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classtvm_1_1tir_1_1PrefetchNode" kindref="compound">PrefetchNode</ref>*<sp/>op)<sp/></highlight><highlight class="keyword">override</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="163"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>VisitStmt_(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classtvm_1_1tir_1_1SeqStmtNode" kindref="compound">SeqStmtNode</ref>*<sp/>op)<sp/></highlight><highlight class="keyword">override</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="164"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>VisitStmt_(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classtvm_1_1tir_1_1EvaluateNode" kindref="compound">EvaluateNode</ref>*<sp/>op)<sp/></highlight><highlight class="keyword">override</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="165"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="166"><highlight class="normal"></highlight></codeline>
+<codeline lineno="170" refid="classtvm_1_1tir_1_1StmtMutator" refkind="compound"><highlight class="keyword">class<sp/></highlight><highlight class="normal">TVM_DLL<sp/><ref refid="classtvm_1_1tir_1_1StmtMutator" kindref="compound">StmtMutator</ref><sp/>:</highlight></codeline>
+<codeline lineno="171"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">protected</highlight><highlight class="normal"><sp/><ref refid="classtvm_1_1tir_1_1StmtFunctor" kindref="compound">StmtFunctor</ref>&lt;Stmt(const<sp/>Stmt&amp;)&gt;<sp/>{</highlight></codeline>
+<codeline lineno="172"><highlight class="normal"><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="181" refid="classtvm_1_1tir_1_1StmtMutator_1a18e378023df3122893ffaf50bb89464e" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="classtvm_1_1tir_1_1Stmt" kindref="compound">Stmt</ref><sp/><ref refid="classtvm_1_1tir_1_1StmtMutator_1a18e378023df3122893ffaf50bb89464e" kindref="member">operator()</ref>(<ref refid="classtvm_1_1tir_1_1Stmt" kindref="compound">Stmt</ref><sp/>stmt)<sp/>{</highlight></codeline>
+<codeline lineno="182"><highlight class="normal"><sp/><sp/><sp/><sp/>allow_copy_on_write_<sp/>=<sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="183"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>VisitStmt(stmt);</highlight></codeline>
+<codeline lineno="184"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="185"><highlight class="normal"></highlight></codeline>
+<codeline lineno="186"><highlight class="normal"><sp/></highlight><highlight class="keyword">protected</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="187"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>We<sp/>perform<sp/>copy<sp/>on<sp/>write<sp/>optimizations<sp/>on<sp/>the<sp/>StmtMutator</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="188"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>so<sp/>that<sp/>an<sp/>unique<sp/>copy<sp/>of<sp/>parent<sp/>can<sp/>be<sp/>mutated<sp/>inplace</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="189"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>when<sp/>some<sp/>of<sp/>its<sp/>children<sp/>changed.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="190"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>We<sp/>only<sp/>do<sp/>such<sp/>optimization<sp/>for<sp/>Stmt<sp/>nests(instead<sp/>of<sp/>Exprs)<sp/>for<sp/>now</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="191"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>as<sp/>Stmt&apos;s<sp/>parent<sp/>state<sp/>is<sp/>more<sp/>likely<sp/>remain<sp/>unchanged<sp/>when<sp/>one<sp/>of</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="192"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>its<sp/>child<sp/>block<sp/>changes.</highlight></codeline>
+<codeline lineno="197" refid="classtvm_1_1tir_1_1StmtMutator_1a620e6041832441d25ee4f4d65921231f" refkind="member"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>allow_copy_on_write_{</highlight><highlight class="keyword">false</highlight><highlight class="normal">};</highlight></codeline>
+<codeline lineno="207"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">template</highlight><highlight class="normal">&lt;</highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>TNode&gt;</highlight></codeline>
+<codeline lineno="208" refid="classtvm_1_1tir_1_1StmtMutator_1a8dfe0e96ba9d3b4cd08e57c20c1eb414" refkind="member"><highlight class="normal"><sp/><sp/>ObjectPtr&lt;TNode&gt;<sp/><ref refid="classtvm_1_1tir_1_1StmtMutator_1a8dfe0e96ba9d3b4cd08e57c20c1eb414" kindref="member">CopyOnWrite</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>TNode*<sp/>node)<sp/>{</highlight></codeline>
+<codeline lineno="209"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(allow_copy_on_write_)<sp/>{</highlight></codeline>
+<codeline lineno="210"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>return<sp/>the<sp/>old<sp/>node.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="211"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>runtime::GetObjectPtr&lt;TNode&gt;(</highlight><highlight class="keyword">const_cast&lt;</highlight><highlight class="normal">TNode*</highlight><highlight class="keyword">&gt;</highlight><highlight class="normal">(node));</highlight></codeline>
+<codeline lineno="212"><highlight class="normal"><sp/><sp/><sp/><sp/>}<sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="213"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Make<sp/>a<sp/>new<sp/>copy<sp/>of<sp/>the<sp/>node.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="214"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>need<sp/>to<sp/>rely<sp/>on<sp/>the<sp/>default<sp/>copy<sp/>constructor</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="215"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>runtime::make_object&lt;TNode&gt;(*node);</highlight></codeline>
+<codeline lineno="216"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="217"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="224" refid="classtvm_1_1tir_1_1StmtMutator_1a4306d1beba05fa1ac582503498a6d7ce" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="classtvm_1_1tir_1_1Stmt" kindref="compound">Stmt</ref><sp/><ref refid="classtvm_1_1tir_1_1StmtMutator_1a4306d1beba05fa1ac582503498a6d7ce" kindref="member">VisitStmt</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classtvm_1_1tir_1_1Stmt" kindref="compound">Stmt</ref>&amp;<sp/>stmt)</highlight><highlight class="keyword"><sp/>override<sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="225"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(allow_copy_on_write_<sp/>&amp;&amp;<sp/>!stmt.unique())<sp/>{</highlight></codeline>
+<codeline lineno="226"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>allow_copy_on_write_<sp/>=<sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="227"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classtvm_1_1tir_1_1Stmt" kindref="compound">Stmt</ref><sp/>ret<sp/>=<sp/>StmtFunctor::VisitStmt(stmt);</highlight></codeline>
+<codeline lineno="228"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>allow_copy_on_write_<sp/>=<sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="229"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>ret;</highlight></codeline>
+<codeline lineno="230"><highlight class="normal"><sp/><sp/><sp/><sp/>}<sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="231"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>StmtFunctor::VisitStmt(stmt);</highlight></codeline>
+<codeline lineno="232"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="233"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="241" refid="classtvm_1_1tir_1_1StmtMutator_1ad7864f64476c846a8023fdba1188b74e" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/><ref refid="classtvm_1_1PrimExpr" kindref="compound">PrimExpr</ref><sp/><ref refid="classtvm_1_1tir_1_1StmtMutator_1ad7864f64476c846a8023fdba1188b74e" kindref="member">VisitExpr</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classtvm_1_1PrimExpr" kindref="compound">PrimExpr</ref>&amp;<sp/>e)<sp/>{</highlight></codeline>
+<codeline lineno="242"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>e;</highlight></codeline>
+<codeline lineno="243"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="244"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>statement<sp/>visitor</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="245"><highlight class="normal"><sp/><sp/><ref refid="classtvm_1_1tir_1_1Stmt" kindref="compound">Stmt</ref><sp/>VisitStmt_(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classtvm_1_1tir_1_1AttrStmtNode" kindref="compound">AttrStmtNode</ref>*<sp/>op)<sp/></highlight><highlight class="keyword">override</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="246"><highlight class="normal"><sp/><sp/><ref refid="classtvm_1_1tir_1_1Stmt" kindref="compound">Stmt</ref><sp/>VisitStmt_(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classtvm_1_1tir_1_1IfThenElseNode" kindref="compound">IfThenElseNode</ref>*<sp/>op)<sp/></highlight><highlight class="keyword">override</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="247"><highlight class="normal"><sp/><sp/><ref refid="classtvm_1_1tir_1_1Stmt" kindref="compound">Stmt</ref><sp/>VisitStmt_(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classtvm_1_1tir_1_1LetStmtNode" kindref="compound">LetStmtNode</ref>*<sp/>op)<sp/></highlight><highlight class="keyword">override</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="248"><highlight class="normal"><sp/><sp/><ref refid="classtvm_1_1tir_1_1Stmt" kindref="compound">Stmt</ref><sp/>VisitStmt_(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classtvm_1_1tir_1_1ForNode" kindref="compound">ForNode</ref>*<sp/>op)<sp/></highlight><highlight class="keyword">override</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="249"><highlight class="normal"><sp/><sp/><ref refid="classtvm_1_1tir_1_1Stmt" kindref="compound">Stmt</ref><sp/>VisitStmt_(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classtvm_1_1tir_1_1AllocateNode" kindref="compound">AllocateNode</ref>*<sp/>op)<sp/></highlight><highlight class="keyword">override</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="250"><highlight class="normal"><sp/><sp/><ref refid="classtvm_1_1tir_1_1Stmt" kindref="compound">Stmt</ref><sp/>VisitStmt_(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classtvm_1_1tir_1_1StoreNode" kindref="compound">StoreNode</ref>*<sp/>op)<sp/></highlight><highlight class="keyword">override</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="251"><highlight class="normal"><sp/><sp/><ref refid="classtvm_1_1tir_1_1Stmt" kindref="compound">Stmt</ref><sp/>VisitStmt_(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classtvm_1_1tir_1_1FreeNode" kindref="compound">FreeNode</ref>*<sp/>op)<sp/></highlight><highlight class="keyword">override</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="252"><highlight class="normal"><sp/><sp/><ref refid="classtvm_1_1tir_1_1Stmt" kindref="compound">Stmt</ref><sp/>VisitStmt_(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classtvm_1_1tir_1_1AssertStmtNode" kindref="compound">AssertStmtNode</ref>*<sp/>op)<sp/></highlight><highlight class="keyword">override</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="253"><highlight class="normal"><sp/><sp/><ref refid="classtvm_1_1tir_1_1Stmt" kindref="compound">Stmt</ref><sp/>VisitStmt_(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classtvm_1_1tir_1_1ProducerConsumerNode" kindref="compound">ProducerConsumerNode</ref>*<sp/>op)<sp/></highlight><highlight class="keyword">override</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="254"><highlight class="normal"><sp/><sp/><ref refid="classtvm_1_1tir_1_1Stmt" kindref="compound">Stmt</ref><sp/>VisitStmt_(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classtvm_1_1tir_1_1ProvideNode" kindref="compound">ProvideNode</ref>*<sp/>op)<sp/></highlight><highlight class="keyword">override</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="255"><highlight class="normal"><sp/><sp/><ref refid="classtvm_1_1tir_1_1Stmt" kindref="compound">Stmt</ref><sp/>VisitStmt_(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classtvm_1_1tir_1_1RealizeNode" kindref="compound">RealizeNode</ref>*<sp/>op)<sp/></highlight><highlight class="keyword">override</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="256"><highlight class="normal"><sp/><sp/><ref refid="classtvm_1_1tir_1_1Stmt" kindref="compound">Stmt</ref><sp/>VisitStmt_(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classtvm_1_1tir_1_1PrefetchNode" kindref="compound">PrefetchNode</ref>*<sp/>op)<sp/></highlight><highlight class="keyword">override</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="257"><highlight class="normal"><sp/><sp/><ref refid="classtvm_1_1tir_1_1Stmt" kindref="compound">Stmt</ref><sp/>VisitStmt_(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classtvm_1_1tir_1_1SeqStmtNode" kindref="compound">SeqStmtNode</ref>*<sp/>op)<sp/></highlight><highlight class="keyword">override</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="258"><highlight class="normal"><sp/><sp/><ref refid="classtvm_1_1tir_1_1Stmt" kindref="compound">Stmt</ref><sp/>VisitStmt_(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classtvm_1_1tir_1_1EvaluateNode" kindref="compound">EvaluateNode</ref>*<sp/>op)<sp/></highlight><highlight class="keyword">override</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="271"><highlight class="normal"><sp/><sp/><ref refid="classtvm_1_1tir_1_1Stmt" kindref="compound">Stmt</ref><sp/>VisitSeqStmt_(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classtvm_1_1tir_1_1SeqStmtNode" kindref="compound">SeqStmtNode</ref>*<sp/>op,</highlight></codeline>
+<codeline lineno="272"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>flatten_before_visit,</highlight></codeline>
+<codeline lineno="273"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::function&lt;<ref refid="classtvm_1_1tir_1_1Stmt" kindref="compound">Stmt</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classtvm_1_1tir_1_1Stmt" kindref="compound">Stmt</ref>&amp;)&gt;<sp/>fmutate<sp/>=<sp/></highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="274"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>internal<sp/>helper.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="275"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal">Internal;</highlight></codeline>
+<codeline lineno="276"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="277"><highlight class="normal"></highlight></codeline>
+<codeline lineno="281" refid="classtvm_1_1tir_1_1StmtExprVisitor" refkind="compound"><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classtvm_1_1tir_1_1StmtExprVisitor" kindref="compound">StmtExprVisitor</ref><sp/>:</highlight></codeline>
+<codeline lineno="282"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/><ref refid="classtvm_1_1tir_1_1StmtVisitor" kindref="compound">StmtVisitor</ref>,</highlight></codeline>
+<codeline lineno="283"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/><ref refid="classtvm_1_1tir_1_1ExprVisitor" kindref="compound">ExprVisitor</ref><sp/>{</highlight></codeline>
+<codeline lineno="284"><highlight class="normal"><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="285"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">using</highlight><highlight class="normal"><sp/>StmtVisitor::operator();</highlight></codeline>
+<codeline lineno="286"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">using</highlight><highlight class="normal"><sp/>ExprVisitor::operator();</highlight></codeline>
+<codeline lineno="287"><highlight class="normal"></highlight></codeline>
+<codeline lineno="288"><highlight class="normal"><sp/></highlight><highlight class="keyword">protected</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="289"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">using</highlight><highlight class="normal"><sp/>StmtVisitor::VisitStmt;</highlight></codeline>
+<codeline lineno="290"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">using</highlight><highlight class="normal"><sp/>ExprVisitor::VisitExpr;</highlight></codeline>
+<codeline lineno="291"><highlight class="normal"></highlight></codeline>
+<codeline lineno="292" refid="classtvm_1_1tir_1_1StmtExprVisitor_1a21d7f30350a7aa02cdc0c1b5ee3ffa23" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classtvm_1_1tir_1_1StmtExprVisitor_1a21d7f30350a7aa02cdc0c1b5ee3ffa23" kindref="member">VisitExpr</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classtvm_1_1PrimExpr" kindref="compound">PrimExpr</ref>&amp;<sp/>e)</highlight><highlight class="keyword"><sp/>override<sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="293"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>ExprVisitor::VisitExpr(e);</highlight></codeline>
+<codeline lineno="294"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="295"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="296"><highlight class="normal"></highlight></codeline>
+<codeline lineno="300" refid="classtvm_1_1tir_1_1StmtExprMutator" refkind="compound"><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classtvm_1_1tir_1_1StmtExprMutator" kindref="compound">StmtExprMutator</ref><sp/>:</highlight></codeline>
+<codeline lineno="301"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/><ref refid="classtvm_1_1tir_1_1StmtMutator" kindref="compound">StmtMutator</ref>,</highlight></codeline>
+<codeline lineno="302"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/><ref refid="classtvm_1_1tir_1_1ExprMutator" kindref="compound">ExprMutator</ref><sp/>{</highlight></codeline>
+<codeline lineno="303"><highlight class="normal"><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="304"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">using</highlight><highlight class="normal"><sp/>StmtMutator::operator();</highlight></codeline>
+<codeline lineno="305"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">using</highlight><highlight class="normal"><sp/>ExprMutator::operator();</highlight></codeline>
+<codeline lineno="306"><highlight class="normal"></highlight></codeline>
+<codeline lineno="307"><highlight class="normal"><sp/></highlight><highlight class="keyword">protected</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="308"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">using</highlight><highlight class="normal"><sp/><ref refid="classtvm_1_1tir_1_1StmtMutator_1ad7864f64476c846a8023fdba1188b74e" kindref="member">StmtMutator::VisitExpr</ref>;</highlight></codeline>
+<codeline lineno="309"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">using</highlight><highlight class="normal"><sp/>ExprMutator::VisitExpr;</highlight></codeline>
+<codeline lineno="310"><highlight class="normal"></highlight></codeline>
+<codeline lineno="311" refid="classtvm_1_1tir_1_1StmtExprMutator_1afc4dedb17cb5f2057fc8200e6c298fab" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="classtvm_1_1PrimExpr" kindref="compound">PrimExpr</ref><sp/><ref refid="classtvm_1_1tir_1_1StmtExprMutator_1afc4dedb17cb5f2057fc8200e6c298fab" kindref="member">VisitExpr</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classtvm_1_1PrimExpr" kindref="compound">PrimExpr</ref>&amp;<sp/>e)</highlight><highlight class="keyword"><sp/>override<sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="312"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>ExprMutator::VisitExpr(e);</highlight></codeline>
+<codeline lineno="313"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="314"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="315"><highlight class="normal"></highlight></codeline>
+<codeline lineno="331"><highlight class="normal">TVM_DLL<sp/><ref refid="classtvm_1_1tir_1_1Stmt" kindref="compound">Stmt</ref><sp/><ref refid="namespacetvm_1_1tir_1a1217dd1b57e84b5901cf755251b9e164" kindref="member">IRTransform</ref>(<ref refid="classtvm_1_1tir_1_1Stmt" kindref="compound">Stmt</ref><sp/>node,</highlight></codeline>
+<codeline lineno="332"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classtvm_1_1runtime_1_1PackedFunc" kindref="compound">runtime::PackedFunc</ref>&amp;<sp/>preorder,</highlight></codeline>
+<codeline lineno="333"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classtvm_1_1runtime_1_1PackedFunc" kindref="compound">runtime::PackedFunc</ref>&amp;<sp/>postorder,</highlight></codeline>
+<codeline lineno="334"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classtvm_1_1Array" kindref="compound">Array&lt;PrimExpr&gt;</ref>&amp;<sp/>only_enable<sp/>=<sp/>{});</highlight></codeline>
+<codeline lineno="335"><highlight class="normal"></highlight></codeline>
+<codeline lineno="342"><highlight class="normal">TVM_DLL<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="namespacetvm_1_1tir_1a4b5067fa233d111c9db9cc402ed599c3" kindref="member">PostOrderVisit</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>ObjectRef&amp;<sp/>node,<sp/>std::function&lt;</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>ObjectRef&amp;)&gt;<sp/>fvisit);</highlight></codeline>
+<codeline lineno="343"><highlight class="normal"></highlight></codeline>
+<codeline lineno="344"><highlight class="normal">}<sp/><sp/></highlight><highlight class="comment">//<sp/>namespace<sp/>tir</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="345"><highlight class="normal">}<sp/><sp/></highlight><highlight class="comment">//<sp/>namespace<sp/>tvm</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="346"><highlight class="normal"></highlight></codeline>
+<codeline lineno="347"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/><sp/>//<sp/>TVM_TIR_STMT_FUNCTOR_H_</highlight></codeline>
+    </programlisting>
+    <location file="include/tvm/tir/stmt_functor.h"/>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,66 @@
+\hypertarget{relay_2function_8h}{}\section{include/tvm/relay/function.h File Reference}
+\label{relay_2function_8h}\index{include/tvm/relay/function.\+h@{include/tvm/relay/function.\+h}}
+
+
+Relay Function.  
+
+
+{\ttfamily \#include $<$tvm/ir/function.\+h$>$}\\*
+{\ttfamily \#include $<$tvm/relay/expr.\+h$>$}\\*
+{\ttfamily \#include $<$string$>$}\\*
+Include dependency graph for function.\+h\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{relay_2function_8h__incl}
+\end{center}
+\end{figure}
+This graph shows which files directly or indirectly include this file\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{relay_2function_8h__dep__incl}
+\end{center}
+\end{figure}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \hyperlink{classtvm_1_1relay_1_1FunctionNode}{tvm\+::relay\+::\+Function\+Node}
+\begin{DoxyCompactList}\small\item\em Relay \hyperlink{classtvm_1_1relay_1_1Function}{Function} container. \end{DoxyCompactList}\item 
+class \hyperlink{classtvm_1_1relay_1_1Function}{tvm\+::relay\+::\+Function}
+\begin{DoxyCompactList}\small\item\em Managed reference to \hyperlink{classtvm_1_1relay_1_1FunctionNode}{Function\+Node}. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Namespaces}
+\begin{DoxyCompactItemize}
+\item 
+ \hyperlink{namespacetvm}{tvm}
+\item 
+ \hyperlink{namespacetvm_1_1relay}{tvm\+::relay}
+\begin{DoxyCompactList}\small\item\em Relay\+: a high level functional IR for T\+VM. \end{DoxyCompactList}\item 
+ \hyperlink{namespacetvm_1_1relay_1_1attr}{tvm\+::relay\+::attr}
+\begin{DoxyCompactList}\small\item\em namespace of the attributes that can be attached to a \hyperlink{classtvm_1_1relay_1_1Function}{relay\+::\+Function}. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+constexpr const char $\ast$ \hyperlink{namespacetvm_1_1relay_1_1attr_ac3c86a7b4b9e64aed0da4b8294278484}{tvm\+::relay\+::attr\+::k\+Primitive} = \char`\"{}Primitive\char`\"{}
+\begin{DoxyCompactList}\small\item\em Mark the function as a primitive function. \end{DoxyCompactList}\item 
+constexpr const char $\ast$ \hyperlink{namespacetvm_1_1relay_1_1attr_a0cc8498ce2c4e0ffd3b2814f65799148}{tvm\+::relay\+::attr\+::k\+Compiler} = \char`\"{}Compiler\char`\"{}
+\begin{DoxyCompactList}\small\item\em Indicate the compiler that should be used for builing this function. When this is unset or set to \char`\"{}default\char`\"{}, the default compilation pipeline will be used. \end{DoxyCompactList}\item 
+constexpr const char $\ast$ \hyperlink{namespacetvm_1_1relay_1_1attr_aef553198f20f8cd26b73cdfa61baec2a}{tvm\+::relay\+::attr\+::k\+Closure} = \char`\"{}Closure\char`\"{}
+\begin{DoxyCompactList}\small\item\em Indicate if the function is a closure. \end{DoxyCompactList}\item 
+constexpr const char $\ast$ \hyperlink{namespacetvm_1_1relay_1_1attr_a3cd72e0efb5bcba623c8af8cf0f5314d}{tvm\+::relay\+::attr\+::k\+Params} = \char`\"{}\+\_\+\+\_\+params\+\_\+\+\_\+\char`\"{}
+\begin{DoxyCompactList}\small\item\em Store a \hyperlink{classtvm_1_1relay_1_1Var}{Var} to parameter/\+Constant mapping on a \hyperlink{classtvm_1_1relay_1_1Function}{Function}. \end{DoxyCompactList}\item 
+constexpr const char $\ast$ \hyperlink{namespacetvm_1_1relay_1_1attr_ae61f67fa7105e9ef262770ccc840cdb4}{tvm\+::relay\+::attr\+::k\+External\+Symbol} = \char`\"{}External\+Symbol\char`\"{}
+\begin{DoxyCompactList}\small\item\em Store the unique external symbol for external compilers. \end{DoxyCompactList}\item 
+constexpr const char $\ast$ \hyperlink{namespacetvm_1_1relay_1_1attr_aed3671df7e12d228b8070806d07f7c62}{tvm\+::relay\+::attr\+::k\+Skip\+Optimization} = \char`\"{}Skip\+Optimization\char`\"{}
+\begin{DoxyCompactList}\small\item\em Mark if the function should be avoided being optimized. \end{DoxyCompactList}\item 
+constexpr const char $\ast$ \hyperlink{namespacetvm_1_1relay_1_1attr_a04f8f1b117293d37651f8c81135802a2}{tvm\+::relay\+::attr\+::k\+Composite} = \char`\"{}Composite\char`\"{}
+\begin{DoxyCompactList}\small\item\em Treat the function as a composite operator. \end{DoxyCompactList}\item 
+constexpr const char $\ast$ \hyperlink{namespacetvm_1_1relay_1_1attr_ad294262b6b1ca1b7bf3924a139f17562}{tvm\+::relay\+::attr\+::k\+Inline} = \char`\"{}Inline\char`\"{}
+\begin{DoxyCompactList}\small\item\em Mark the function to be inlined. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Relay Function. 
+

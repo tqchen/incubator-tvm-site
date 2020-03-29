@@ -1,0 +1,58 @@
+\hypertarget{tir_2function_8h}{}\section{include/tvm/tir/function.h File Reference}
+\label{tir_2function_8h}\index{include/tvm/tir/function.\+h@{include/tvm/tir/function.\+h}}
+
+
+T\+IR Function.  
+
+
+{\ttfamily \#include $<$tvm/ir/function.\+h$>$}\\*
+{\ttfamily \#include $<$tvm/tir/expr.\+h$>$}\\*
+{\ttfamily \#include $<$tvm/tir/buffer.\+h$>$}\\*
+{\ttfamily \#include $<$tvm/tir/stmt.\+h$>$}\\*
+{\ttfamily \#include $<$string$>$}\\*
+Include dependency graph for function.\+h\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{tir_2function_8h__incl}
+\end{center}
+\end{figure}
+This graph shows which files directly or indirectly include this file\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{tir_2function_8h__dep__incl}
+\end{center}
+\end{figure}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \hyperlink{classtvm_1_1tir_1_1PrimFuncNode}{tvm\+::tir\+::\+Prim\+Func\+Node}
+\begin{DoxyCompactList}\small\item\em Primitive functions that contains T\+IR statements. \end{DoxyCompactList}\item 
+class \hyperlink{classtvm_1_1tir_1_1PrimFunc}{tvm\+::tir\+::\+Prim\+Func}
+\begin{DoxyCompactList}\small\item\em Managed reference to \hyperlink{classtvm_1_1tir_1_1PrimFuncNode}{Prim\+Func\+Node}. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Namespaces}
+\begin{DoxyCompactItemize}
+\item 
+ \hyperlink{namespacetvm}{tvm}
+\item 
+ \hyperlink{namespacetvm_1_1tir}{tvm\+::tir}
+\item 
+ \hyperlink{namespacetvm_1_1tir_1_1attr}{tvm\+::tir\+::attr}
+\begin{DoxyCompactList}\small\item\em \hyperlink{classtvm_1_1tir_1_1PrimFunc}{Prim\+Func} specific attribute names. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+constexpr const char $\ast$ \hyperlink{namespacetvm_1_1tir_1_1attr_a4933845b75cf4f08fb66f55fdd94986f}{tvm\+::tir\+::attr\+::k\+Device\+Thread\+Axis} = \char`\"{}tir.\+device\+\_\+thread\+\_\+axis\char`\"{}
+\begin{DoxyCompactList}\small\item\em List of thread \hyperlink{classtvm_1_1tir_1_1IterVar}{Iter\+Var} that a Device\+Launch function corresponds to. \end{DoxyCompactList}\item 
+constexpr const char $\ast$ \hyperlink{namespacetvm_1_1tir_1_1attr_ac74386674da85bc4b4dd1ee28a97ff63}{tvm\+::tir\+::attr\+::k\+No\+Alias} = \char`\"{}tir.\+noalias\char`\"{}
+\begin{DoxyCompactList}\small\item\em Whether to set noalias rule on the function arguments. \end{DoxyCompactList}\item 
+constexpr const char $\ast$ \hyperlink{namespacetvm_1_1tir_1_1attr_a489d0cebd2820025bc3d6c5a9011cdd4}{tvm\+::tir\+::attr\+::k\+Is\+Entry\+Func} = \char`\"{}tir.\+is\+\_\+entry\+\_\+func\char`\"{}
+\begin{DoxyCompactList}\small\item\em Mark the function as the entry function of the final generated runtime module. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+T\+IR Function. 
+

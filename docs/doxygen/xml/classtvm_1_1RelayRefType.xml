@@ -1,0 +1,94 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="classtvm_1_1RelayRefType" kind="class" language="C++" prot="public">
+    <compoundname>tvm::RelayRefType</compoundname>
+    <basecompoundref refid="classtvm_1_1Type" prot="public" virt="non-virtual">tvm::Type</basecompoundref>
+    <includes refid="ir_2type_8h" local="no">type.h</includes>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classtvm_1_1RelayRefType_1a91476d6d6cccf59283b4e024d1e8a663" prot="public" static="no" const="no" explicit="yes" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>tvm::RelayRefType::RelayRefType</definition>
+        <argsstring>(Type value)</argsstring>
+        <name>RelayRefType</name>
+        <param>
+          <type><ref refid="classtvm_1_1Type" kindref="compound">Type</ref></type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/ir/type.h" line="565" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classtvm_1_1RelayRefType_1a689969347ed8a75fa484b9b8b5e2875e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>tvm::RelayRefType::TVM_DEFINE_OBJECT_REF_METHODS</definition>
+        <argsstring>(RelayRefType, Type, RelayRefTypeNode)</argsstring>
+        <name>TVM_DEFINE_OBJECT_REF_METHODS</name>
+        <param>
+          <type><ref refid="classtvm_1_1RelayRefType" kindref="compound">RelayRefType</ref></type>
+        </param>
+        <param>
+          <type><ref refid="classtvm_1_1Type" kindref="compound">Type</ref></type>
+        </param>
+        <param>
+          <type><ref refid="classtvm_1_1RelayRefTypeNode" kindref="compound">RelayRefTypeNode</ref></type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/ir/type.h" line="566" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Managed reference to <ref refid="classtvm_1_1RelayRefTypeNode" kindref="compound">RelayRefTypeNode</ref>. </para>    </briefdescription>
+    <detaileddescription>
+<para><simplesect kind="see"><para><ref refid="classtvm_1_1RelayRefTypeNode" kindref="compound">RelayRefTypeNode</ref>. </para></simplesect>
+</para>    </detaileddescription>
+    <inheritancegraph>
+      <node id="6595">
+        <label>ObjectRef</label>
+      </node>
+      <node id="6593">
+        <label>tvm::RelayRefType</label>
+        <link refid="classtvm_1_1RelayRefType"/>
+        <childnode refid="6594" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="6594">
+        <label>tvm::Type</label>
+        <link refid="classtvm_1_1Type"/>
+        <childnode refid="6595" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="6598">
+        <label>ObjectRef</label>
+      </node>
+      <node id="6596">
+        <label>tvm::RelayRefType</label>
+        <link refid="classtvm_1_1RelayRefType"/>
+        <childnode refid="6597" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="6597">
+        <label>tvm::Type</label>
+        <link refid="classtvm_1_1Type"/>
+        <childnode refid="6598" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="include/tvm/ir/type.h" line="563" column="1" bodyfile="include/tvm/ir/type.h" bodystart="563" bodyend="567"/>
+    <listofallmembers>
+      <member refid="classtvm_1_1RelayRefType_1a91476d6d6cccf59283b4e024d1e8a663" prot="public" virt="non-virtual"><scope>tvm::RelayRefType</scope><name>RelayRefType</name></member>
+      <member refid="classtvm_1_1RelayRefType_1a689969347ed8a75fa484b9b8b5e2875e" prot="public" virt="non-virtual"><scope>tvm::RelayRefType</scope><name>TVM_DEFINE_OBJECT_REF_METHODS</name></member>
+      <member refid="classtvm_1_1Type_1a1188605b5afd297c39e614872a608a35" prot="public" virt="non-virtual" ambiguityscope="tvm::Type::"><scope>tvm::RelayRefType</scope><name>TVM_DEFINE_OBJECT_REF_METHODS</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

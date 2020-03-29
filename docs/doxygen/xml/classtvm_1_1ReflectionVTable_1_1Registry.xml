@@ -1,0 +1,128 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="classtvm_1_1ReflectionVTable_1_1Registry" kind="class" language="C++" prot="public">
+    <compoundname>tvm::ReflectionVTable::Registry</compoundname>
+    <includes refid="reflection_8h" local="no">reflection.h</includes>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classtvm_1_1ReflectionVTable_1_1Registry_1a77314a5a25c530e12a5e305be6320a17" prot="private" static="no" mutable="no">
+        <type><ref refid="classtvm_1_1ReflectionVTable" kindref="compound">ReflectionVTable</ref> *</type>
+        <definition>ReflectionVTable* tvm::ReflectionVTable::Registry::parent_</definition>
+        <argsstring></argsstring>
+        <name>parent_</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/node/reflection.h" line="210" column="1" bodyfile="include/tvm/node/reflection.h" bodystart="210" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classtvm_1_1ReflectionVTable_1_1Registry_1a4a235694e616ff77322a27f2e7ea8000" prot="private" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t tvm::ReflectionVTable::Registry::type_index_</definition>
+        <argsstring></argsstring>
+        <name>type_index_</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/node/reflection.h" line="211" column="1" bodyfile="include/tvm/node/reflection.h" bodystart="211" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classtvm_1_1ReflectionVTable_1_1Registry_1ac8f4637640aa9dffed745303a4cfa827" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>tvm::ReflectionVTable::Registry::Registry</definition>
+        <argsstring>(ReflectionVTable *parent, uint32_t type_index)</argsstring>
+        <name>Registry</name>
+        <param>
+          <type><ref refid="classtvm_1_1ReflectionVTable" kindref="compound">ReflectionVTable</ref> *</type>
+          <declname>parent</declname>
+        </param>
+        <param>
+          <type>uint32_t</type>
+          <declname>type_index</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/node/reflection.h" line="186" column="1" bodyfile="include/tvm/node/reflection.h" bodystart="186" bodyend="187"/>
+      </memberdef>
+      <memberdef kind="function" id="classtvm_1_1ReflectionVTable_1_1Registry_1a33948eae2c61e1c80c637f08b516594a" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classtvm_1_1ReflectionVTable_1_1Registry" kindref="compound">Registry</ref> &amp;</type>
+        <definition>Registry&amp; tvm::ReflectionVTable::Registry::set_creator</definition>
+        <argsstring>(FCreate f)</argsstring>
+        <name>set_creator</name>
+        <param>
+          <type><ref refid="classtvm_1_1ReflectionVTable_1adf61fde4dfac8d1cb59159db6722b335" kindref="member">FCreate</ref></type>
+          <declname>f</declname>
+        </param>
+        <briefdescription>
+<para>Set fcreate function. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>f</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The creator function. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>rference to self. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/node/reflection.h" line="193" column="1" bodyfile="include/tvm/node/reflection.h" bodystart="193" bodyend="197"/>
+      </memberdef>
+      <memberdef kind="function" id="classtvm_1_1ReflectionVTable_1_1Registry_1aaddac64b0405e982a9de37186bb32985" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classtvm_1_1ReflectionVTable_1_1Registry" kindref="compound">Registry</ref> &amp;</type>
+        <definition>Registry&amp; tvm::ReflectionVTable::Registry::set_global_key</definition>
+        <argsstring>(FGlobalKey f)</argsstring>
+        <name>set_global_key</name>
+        <param>
+          <type><ref refid="classtvm_1_1ReflectionVTable_1abe09d73c5ea2c51f5cfa30471b8f89ef" kindref="member">FGlobalKey</ref></type>
+          <declname>f</declname>
+        </param>
+        <briefdescription>
+<para>Set global_key function. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>f</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The creator function. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>rference to self. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/node/reflection.h" line="203" column="1" bodyfile="include/tvm/node/reflection.h" bodystart="203" bodyend="207"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para><ref refid="classtvm_1_1ReflectionVTable_1_1Registry" kindref="compound">Registry</ref> of a reflection table. </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="6527">
+        <label>tvm::ReflectionVTable::Registry</label>
+        <link refid="classtvm_1_1ReflectionVTable_1_1Registry"/>
+      </node>
+    </collaborationgraph>
+    <location file="include/tvm/node/reflection.h" line="184" column="1" bodyfile="include/tvm/node/reflection.h" bodystart="184" bodyend="212"/>
+    <listofallmembers>
+      <member refid="classtvm_1_1ReflectionVTable_1_1Registry_1a77314a5a25c530e12a5e305be6320a17" prot="private" virt="non-virtual"><scope>tvm::ReflectionVTable::Registry</scope><name>parent_</name></member>
+      <member refid="classtvm_1_1ReflectionVTable_1_1Registry_1ac8f4637640aa9dffed745303a4cfa827" prot="public" virt="non-virtual"><scope>tvm::ReflectionVTable::Registry</scope><name>Registry</name></member>
+      <member refid="classtvm_1_1ReflectionVTable_1_1Registry_1a33948eae2c61e1c80c637f08b516594a" prot="public" virt="non-virtual"><scope>tvm::ReflectionVTable::Registry</scope><name>set_creator</name></member>
+      <member refid="classtvm_1_1ReflectionVTable_1_1Registry_1aaddac64b0405e982a9de37186bb32985" prot="public" virt="non-virtual"><scope>tvm::ReflectionVTable::Registry</scope><name>set_global_key</name></member>
+      <member refid="classtvm_1_1ReflectionVTable_1_1Registry_1a4a235694e616ff77322a27f2e7ea8000" prot="private" virt="non-virtual"><scope>tvm::ReflectionVTable::Registry</scope><name>type_index_</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

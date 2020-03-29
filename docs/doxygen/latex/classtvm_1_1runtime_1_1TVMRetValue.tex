@@ -1,0 +1,380 @@
+\hypertarget{classtvm_1_1runtime_1_1TVMRetValue}{}\section{tvm\+:\+:runtime\+:\+:T\+V\+M\+Ret\+Value Class Reference}
+\label{classtvm_1_1runtime_1_1TVMRetValue}\index{tvm\+::runtime\+::\+T\+V\+M\+Ret\+Value@{tvm\+::runtime\+::\+T\+V\+M\+Ret\+Value}}
+
+
+Return Value container, Unlike \hyperlink{classtvm_1_1runtime_1_1TVMArgValue}{T\+V\+M\+Arg\+Value}, which only holds reference and do not delete the underlying container during destruction.  
+
+
+
+
+{\ttfamily \#include $<$packed\+\_\+func.\+h$>$}
+
+
+
+Inheritance diagram for tvm\+:\+:runtime\+:\+:T\+V\+M\+Ret\+Value\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=238pt]{classtvm_1_1runtime_1_1TVMRetValue__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for tvm\+:\+:runtime\+:\+:T\+V\+M\+Ret\+Value\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{classtvm_1_1runtime_1_1TVMRetValue__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classtvm_1_1runtime_1_1TVMRetValue_a77455a8fe7d27b90a01a64f1cd28e9ec}{T\+V\+M\+Ret\+Value} ()
+\begin{DoxyCompactList}\small\item\em default constructor \end{DoxyCompactList}\item 
+\hyperlink{classtvm_1_1runtime_1_1TVMRetValue_ac4a3850c0989e7c2d5cd8e0f096d0997}{T\+V\+M\+Ret\+Value} (\hyperlink{classtvm_1_1runtime_1_1TVMRetValue}{T\+V\+M\+Ret\+Value} \&\&other)
+\begin{DoxyCompactList}\small\item\em move constructor from anoter return value. \end{DoxyCompactList}\item 
+\hyperlink{classtvm_1_1runtime_1_1TVMRetValue_a0eeb2af3fa21cebfdc2bcf04b2fbb1f6}{$\sim$\+T\+V\+M\+Ret\+Value} ()
+\begin{DoxyCompactList}\small\item\em destructor \end{DoxyCompactList}\item 
+\hyperlink{classtvm_1_1runtime_1_1TVMRetValue_ab86bf21f214fca72e73a7f6e20ffab8d}{T\+V\+M\+Ret\+Value} (const \hyperlink{classtvm_1_1runtime_1_1TVMRetValue}{T\+V\+M\+Ret\+Value} \&other)
+\item 
+\hyperlink{classtvm_1_1runtime_1_1TVMRetValue_ac4320260c25f8ab0ff3d5a5795a6efa4}{operator D\+L\+Data\+Type} () const 
+\item 
+\hyperlink{classtvm_1_1runtime_1_1TVMRetValue_ad97cce376415a77a51215c9539732a75}{operator Data\+Type} () const 
+\item 
+\hyperlink{classtvm_1_1runtime_1_1TVMRetValue_a97e114bab413908227041ae324367c6f}{operator Packed\+Func} () const 
+\item 
+{\footnotesize template$<$typename F\+Type $>$ }\\\hyperlink{classtvm_1_1runtime_1_1TVMRetValue_a8aee084bb1fbda132f8bc78353d3fa55}{operator Typed\+Packed\+Func$<$ F\+Type $>$} () const 
+\item 
+\hyperlink{classtvm_1_1runtime_1_1TVMRetValue}{T\+V\+M\+Ret\+Value} \& \hyperlink{classtvm_1_1runtime_1_1TVMRetValue_a4993d4b338c28096b56ed3d0d9ae5170}{operator=} (\hyperlink{classtvm_1_1runtime_1_1TVMRetValue}{T\+V\+M\+Ret\+Value} \&\&other)
+\item 
+\hyperlink{classtvm_1_1runtime_1_1TVMRetValue}{T\+V\+M\+Ret\+Value} \& \hyperlink{classtvm_1_1runtime_1_1TVMRetValue_abf351bdd97209c8fb656b60abce7fccb}{operator=} (double \hyperlink{classtvm_1_1runtime_1_1TVMRetValue_a75696cb65d294217796fbc4f1c22d7f8}{value})
+\item 
+\hyperlink{classtvm_1_1runtime_1_1TVMRetValue}{T\+V\+M\+Ret\+Value} \& \hyperlink{classtvm_1_1runtime_1_1TVMRetValue_a400ab1f50cbbbc1ab24975bf32556d16}{operator=} (std\+::nullptr\+\_\+t \hyperlink{classtvm_1_1runtime_1_1TVMRetValue_a75696cb65d294217796fbc4f1c22d7f8}{value})
+\item 
+\hyperlink{classtvm_1_1runtime_1_1TVMRetValue}{T\+V\+M\+Ret\+Value} \& \hyperlink{classtvm_1_1runtime_1_1TVMRetValue_a7c16ff5c118b1577a9188ca3f3509167}{operator=} (void $\ast$\hyperlink{classtvm_1_1runtime_1_1TVMRetValue_a75696cb65d294217796fbc4f1c22d7f8}{value})
+\item 
+\hyperlink{classtvm_1_1runtime_1_1TVMRetValue}{T\+V\+M\+Ret\+Value} \& \hyperlink{classtvm_1_1runtime_1_1TVMRetValue_ad362b734db5406b02e72476b7f8da779}{operator=} (int64\+\_\+t \hyperlink{classtvm_1_1runtime_1_1TVMRetValue_a75696cb65d294217796fbc4f1c22d7f8}{value})
+\item 
+\hyperlink{classtvm_1_1runtime_1_1TVMRetValue}{T\+V\+M\+Ret\+Value} \& \hyperlink{classtvm_1_1runtime_1_1TVMRetValue_a5d251ed32af617354c8622689a6d6e48}{operator=} (int \hyperlink{classtvm_1_1runtime_1_1TVMRetValue_a75696cb65d294217796fbc4f1c22d7f8}{value})
+\item 
+\hyperlink{classtvm_1_1runtime_1_1TVMRetValue}{T\+V\+M\+Ret\+Value} \& \hyperlink{classtvm_1_1runtime_1_1TVMRetValue_a063b7950d32288a967011949a7a70dc8}{operator=} (\hyperlink{c__runtime__api_8h_a9363bb701f16ce5bbb381f2a013d25b4}{T\+V\+M\+Context} \hyperlink{classtvm_1_1runtime_1_1TVMRetValue_a75696cb65d294217796fbc4f1c22d7f8}{value})
+\item 
+\hyperlink{classtvm_1_1runtime_1_1TVMRetValue}{T\+V\+M\+Ret\+Value} \& \hyperlink{classtvm_1_1runtime_1_1TVMRetValue_a2c8860df3cbdc52104dca8274abfa219}{operator=} (D\+L\+Data\+Type t)
+\item 
+\hyperlink{classtvm_1_1runtime_1_1TVMRetValue}{T\+V\+M\+Ret\+Value} \& \hyperlink{classtvm_1_1runtime_1_1TVMRetValue_addc4ffa96d47397893755d5e7e016084}{operator=} (const \hyperlink{classtvm_1_1runtime_1_1DataType}{Data\+Type} \&other)
+\item 
+\hyperlink{classtvm_1_1runtime_1_1TVMRetValue}{T\+V\+M\+Ret\+Value} \& \hyperlink{classtvm_1_1runtime_1_1TVMRetValue_a510ec87e6718c0e6197e7321ca8774f2}{operator=} (bool \hyperlink{classtvm_1_1runtime_1_1TVMRetValue_a75696cb65d294217796fbc4f1c22d7f8}{value})
+\item 
+\hyperlink{classtvm_1_1runtime_1_1TVMRetValue}{T\+V\+M\+Ret\+Value} \& \hyperlink{classtvm_1_1runtime_1_1TVMRetValue_a952f62623ec147f366363b664d749566}{operator=} (std\+::string \hyperlink{classtvm_1_1runtime_1_1TVMRetValue_a75696cb65d294217796fbc4f1c22d7f8}{value})
+\item 
+\hyperlink{classtvm_1_1runtime_1_1TVMRetValue}{T\+V\+M\+Ret\+Value} \& \hyperlink{classtvm_1_1runtime_1_1TVMRetValue_afd42f6574de11e3b62d40509a94f4f9f}{operator=} (\hyperlink{structTVMByteArray}{T\+V\+M\+Byte\+Array} \hyperlink{classtvm_1_1runtime_1_1TVMRetValue_a75696cb65d294217796fbc4f1c22d7f8}{value})
+\item 
+\hyperlink{classtvm_1_1runtime_1_1TVMRetValue}{T\+V\+M\+Ret\+Value} \& \hyperlink{classtvm_1_1runtime_1_1TVMRetValue_afe5a60e856a30894e795d5230b0a7022}{operator=} (\hyperlink{classtvm_1_1runtime_1_1NDArray}{N\+D\+Array} other)
+\item 
+\hyperlink{classtvm_1_1runtime_1_1TVMRetValue}{T\+V\+M\+Ret\+Value} \& \hyperlink{classtvm_1_1runtime_1_1TVMRetValue_ad5446f5812132852387dca7335989e88}{operator=} (\hyperlink{classtvm_1_1runtime_1_1Module}{Module} m)
+\item 
+\hyperlink{classtvm_1_1runtime_1_1TVMRetValue}{T\+V\+M\+Ret\+Value} \& \hyperlink{classtvm_1_1runtime_1_1TVMRetValue_a4ab194932127e4b1c372e5e58e450721}{operator=} (\hyperlink{classtvm_1_1runtime_1_1PackedFunc}{Packed\+Func} f)
+\item 
+{\footnotesize template$<$typename F\+Type $>$ }\\\hyperlink{classtvm_1_1runtime_1_1TVMRetValue}{T\+V\+M\+Ret\+Value} \& \hyperlink{classtvm_1_1runtime_1_1TVMRetValue_a3eaf85a64828b05e95d57e958089a34d}{operator=} (const \hyperlink{classtvm_1_1runtime_1_1TypedPackedFunc}{Typed\+Packed\+Func}$<$ F\+Type $>$ \&f)
+\item 
+\hyperlink{classtvm_1_1runtime_1_1TVMRetValue}{T\+V\+M\+Ret\+Value} \& \hyperlink{classtvm_1_1runtime_1_1TVMRetValue_ac87c22e4d49e79ce5b36b3aead667fcb}{operator=} (const \hyperlink{classtvm_1_1runtime_1_1TVMRetValue}{T\+V\+M\+Ret\+Value} \&other)
+\item 
+\hyperlink{classtvm_1_1runtime_1_1TVMRetValue}{T\+V\+M\+Ret\+Value} \& \hyperlink{classtvm_1_1runtime_1_1TVMRetValue_aafc5d18f0ac508fdd8a90b5af9bc1eff}{operator=} (const \hyperlink{classtvm_1_1runtime_1_1TVMArgValue}{T\+V\+M\+Arg\+Value} \&other)
+\item 
+void \hyperlink{classtvm_1_1runtime_1_1TVMRetValue_a74ea2767d491c57cb9c71e26ee934344}{Move\+To\+C\+Host} (\hyperlink{unionTVMValue}{T\+V\+M\+Value} $\ast$ret\+\_\+value, int $\ast$ret\+\_\+type\+\_\+code)
+\begin{DoxyCompactList}\small\item\em Move the value back to front-\/end via C A\+PI. This marks the current container as null. The managed resources is moved to front-\/end and the front end should take charge in managing them. \end{DoxyCompactList}\item 
+const \hyperlink{unionTVMValue}{T\+V\+M\+Value} \& \hyperlink{classtvm_1_1runtime_1_1TVMRetValue_a75696cb65d294217796fbc4f1c22d7f8}{value} () const 
+\item 
+{\footnotesize template$<$typename T\+Object\+Ref , typename  = typename std\+::enable\+\_\+if$<$             std\+::is\+\_\+base\+\_\+of$<$\+Object\+Ref, T\+Object\+Ref$>$\+::value$>$\+::type$>$ }\\\hyperlink{classtvm_1_1runtime_1_1TVMRetValue}{T\+V\+M\+Ret\+Value} \& \hyperlink{classtvm_1_1runtime_1_1TVMRetValue_a230363e8e5980248aca5a760e0c3ab3d}{operator=} (T\+Object\+Ref other)
+\item 
+{\footnotesize template$<$typename T , typename  = typename std\+::enable\+\_\+if$<$             std\+::is\+\_\+class$<$\+T$>$\+::value$>$\+::type$>$ }\\\hyperlink{classtvm_1_1runtime_1_1TVMRetValue_a0b9304664e8aa3ffebf46149add6ce03}{operator T} () const 
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \hyperlink{classtvm_1_1runtime_1_1TVMRetValue}{T\+V\+M\+Ret\+Value} \hyperlink{classtvm_1_1runtime_1_1TVMRetValue_a05a3312e4f335513ba0dbaefcd0c5a2c}{Move\+From\+C\+Host} (\hyperlink{unionTVMValue}{T\+V\+M\+Value} \hyperlink{classtvm_1_1runtime_1_1TVMRetValue_a75696cb65d294217796fbc4f1c22d7f8}{value}, int \hyperlink{classtvm_1_1runtime_1_1TVMPODValue___a5a799e4197f227549cd641b0e753f9b8}{type\+\_\+code})
+\begin{DoxyCompactList}\small\item\em Construct a new \hyperlink{classtvm_1_1runtime_1_1TVMRetValue}{T\+V\+M\+Ret\+Value} by moving from return value stored via C A\+PI. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+Return Value container, Unlike \hyperlink{classtvm_1_1runtime_1_1TVMArgValue}{T\+V\+M\+Arg\+Value}, which only holds reference and do not delete the underlying container during destruction. 
+
+\hyperlink{classtvm_1_1runtime_1_1TVMRetValue}{T\+V\+M\+Ret\+Value} holds value and will manage the underlying containers when it stores a complicated data type. 
+
+\subsection{Constructor \& Destructor Documentation}
+\index{tvm\+::runtime\+::\+T\+V\+M\+Ret\+Value@{tvm\+::runtime\+::\+T\+V\+M\+Ret\+Value}!T\+V\+M\+Ret\+Value@{T\+V\+M\+Ret\+Value}}
+\index{T\+V\+M\+Ret\+Value@{T\+V\+M\+Ret\+Value}!tvm\+::runtime\+::\+T\+V\+M\+Ret\+Value@{tvm\+::runtime\+::\+T\+V\+M\+Ret\+Value}}
+\subsubsection[{\texorpdfstring{T\+V\+M\+Ret\+Value()}{TVMRetValue()}}]{\setlength{\rightskip}{0pt plus 5cm}tvm\+::runtime\+::\+T\+V\+M\+Ret\+Value\+::\+T\+V\+M\+Ret\+Value (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classtvm_1_1runtime_1_1TVMRetValue_a77455a8fe7d27b90a01a64f1cd28e9ec}{}\label{classtvm_1_1runtime_1_1TVMRetValue_a77455a8fe7d27b90a01a64f1cd28e9ec}
+
+
+default constructor 
+
+\index{tvm\+::runtime\+::\+T\+V\+M\+Ret\+Value@{tvm\+::runtime\+::\+T\+V\+M\+Ret\+Value}!T\+V\+M\+Ret\+Value@{T\+V\+M\+Ret\+Value}}
+\index{T\+V\+M\+Ret\+Value@{T\+V\+M\+Ret\+Value}!tvm\+::runtime\+::\+T\+V\+M\+Ret\+Value@{tvm\+::runtime\+::\+T\+V\+M\+Ret\+Value}}
+\subsubsection[{\texorpdfstring{T\+V\+M\+Ret\+Value(\+T\+V\+M\+Ret\+Value \&\&other)}{TVMRetValue(TVMRetValue &&other)}}]{\setlength{\rightskip}{0pt plus 5cm}tvm\+::runtime\+::\+T\+V\+M\+Ret\+Value\+::\+T\+V\+M\+Ret\+Value (
+\begin{DoxyParamCaption}
+\item[{{\bf T\+V\+M\+Ret\+Value} \&\&}]{other}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classtvm_1_1runtime_1_1TVMRetValue_ac4a3850c0989e7c2d5cd8e0f096d0997}{}\label{classtvm_1_1runtime_1_1TVMRetValue_ac4a3850c0989e7c2d5cd8e0f096d0997}
+
+
+move constructor from anoter return value. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em other} & The other return value. \\
+\hline
+\end{DoxyParams}
+\index{tvm\+::runtime\+::\+T\+V\+M\+Ret\+Value@{tvm\+::runtime\+::\+T\+V\+M\+Ret\+Value}!````~T\+V\+M\+Ret\+Value@{$\sim$\+T\+V\+M\+Ret\+Value}}
+\index{````~T\+V\+M\+Ret\+Value@{$\sim$\+T\+V\+M\+Ret\+Value}!tvm\+::runtime\+::\+T\+V\+M\+Ret\+Value@{tvm\+::runtime\+::\+T\+V\+M\+Ret\+Value}}
+\subsubsection[{\texorpdfstring{$\sim$\+T\+V\+M\+Ret\+Value()}{~TVMRetValue()}}]{\setlength{\rightskip}{0pt plus 5cm}tvm\+::runtime\+::\+T\+V\+M\+Ret\+Value\+::$\sim$\+T\+V\+M\+Ret\+Value (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classtvm_1_1runtime_1_1TVMRetValue_a0eeb2af3fa21cebfdc2bcf04b2fbb1f6}{}\label{classtvm_1_1runtime_1_1TVMRetValue_a0eeb2af3fa21cebfdc2bcf04b2fbb1f6}
+
+
+destructor 
+
+\index{tvm\+::runtime\+::\+T\+V\+M\+Ret\+Value@{tvm\+::runtime\+::\+T\+V\+M\+Ret\+Value}!T\+V\+M\+Ret\+Value@{T\+V\+M\+Ret\+Value}}
+\index{T\+V\+M\+Ret\+Value@{T\+V\+M\+Ret\+Value}!tvm\+::runtime\+::\+T\+V\+M\+Ret\+Value@{tvm\+::runtime\+::\+T\+V\+M\+Ret\+Value}}
+\subsubsection[{\texorpdfstring{T\+V\+M\+Ret\+Value(const T\+V\+M\+Ret\+Value \&other)}{TVMRetValue(const TVMRetValue &other)}}]{\setlength{\rightskip}{0pt plus 5cm}tvm\+::runtime\+::\+T\+V\+M\+Ret\+Value\+::\+T\+V\+M\+Ret\+Value (
+\begin{DoxyParamCaption}
+\item[{const {\bf T\+V\+M\+Ret\+Value} \&}]{other}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classtvm_1_1runtime_1_1TVMRetValue_ab86bf21f214fca72e73a7f6e20ffab8d}{}\label{classtvm_1_1runtime_1_1TVMRetValue_ab86bf21f214fca72e73a7f6e20ffab8d}
+
+
+\subsection{Member Function Documentation}
+\index{tvm\+::runtime\+::\+T\+V\+M\+Ret\+Value@{tvm\+::runtime\+::\+T\+V\+M\+Ret\+Value}!Move\+From\+C\+Host@{Move\+From\+C\+Host}}
+\index{Move\+From\+C\+Host@{Move\+From\+C\+Host}!tvm\+::runtime\+::\+T\+V\+M\+Ret\+Value@{tvm\+::runtime\+::\+T\+V\+M\+Ret\+Value}}
+\subsubsection[{\texorpdfstring{Move\+From\+C\+Host(\+T\+V\+M\+Value value, int type\+\_\+code)}{MoveFromCHost(TVMValue value, int type_code)}}]{\setlength{\rightskip}{0pt plus 5cm}static {\bf T\+V\+M\+Ret\+Value} tvm\+::runtime\+::\+T\+V\+M\+Ret\+Value\+::\+Move\+From\+C\+Host (
+\begin{DoxyParamCaption}
+\item[{{\bf T\+V\+M\+Value}}]{value, }
+\item[{int}]{type\+\_\+code}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}\hypertarget{classtvm_1_1runtime_1_1TVMRetValue_a05a3312e4f335513ba0dbaefcd0c5a2c}{}\label{classtvm_1_1runtime_1_1TVMRetValue_a05a3312e4f335513ba0dbaefcd0c5a2c}
+
+
+Construct a new \hyperlink{classtvm_1_1runtime_1_1TVMRetValue}{T\+V\+M\+Ret\+Value} by moving from return value stored via C A\+PI. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em value} & the value. \\
+\hline
+{\em type\+\_\+code} & The type code. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The created \hyperlink{classtvm_1_1runtime_1_1TVMRetValue}{T\+V\+M\+Ret\+Value}. 
+\end{DoxyReturn}
+\index{tvm\+::runtime\+::\+T\+V\+M\+Ret\+Value@{tvm\+::runtime\+::\+T\+V\+M\+Ret\+Value}!Move\+To\+C\+Host@{Move\+To\+C\+Host}}
+\index{Move\+To\+C\+Host@{Move\+To\+C\+Host}!tvm\+::runtime\+::\+T\+V\+M\+Ret\+Value@{tvm\+::runtime\+::\+T\+V\+M\+Ret\+Value}}
+\subsubsection[{\texorpdfstring{Move\+To\+C\+Host(\+T\+V\+M\+Value $\ast$ret\+\_\+value, int $\ast$ret\+\_\+type\+\_\+code)}{MoveToCHost(TVMValue *ret_value, int *ret_type_code)}}]{\setlength{\rightskip}{0pt plus 5cm}void tvm\+::runtime\+::\+T\+V\+M\+Ret\+Value\+::\+Move\+To\+C\+Host (
+\begin{DoxyParamCaption}
+\item[{{\bf T\+V\+M\+Value} $\ast$}]{ret\+\_\+value, }
+\item[{int $\ast$}]{ret\+\_\+type\+\_\+code}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classtvm_1_1runtime_1_1TVMRetValue_a74ea2767d491c57cb9c71e26ee934344}{}\label{classtvm_1_1runtime_1_1TVMRetValue_a74ea2767d491c57cb9c71e26ee934344}
+
+
+Move the value back to front-\/end via C A\+PI. This marks the current container as null. The managed resources is moved to front-\/end and the front end should take charge in managing them. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em ret\+\_\+value} & The return value. \\
+\hline
+{\em ret\+\_\+type\+\_\+code} & The return type code. \\
+\hline
+\end{DoxyParams}
+\index{tvm\+::runtime\+::\+T\+V\+M\+Ret\+Value@{tvm\+::runtime\+::\+T\+V\+M\+Ret\+Value}!operator Data\+Type@{operator Data\+Type}}
+\index{operator Data\+Type@{operator Data\+Type}!tvm\+::runtime\+::\+T\+V\+M\+Ret\+Value@{tvm\+::runtime\+::\+T\+V\+M\+Ret\+Value}}
+\subsubsection[{\texorpdfstring{operator Data\+Type() const }{operator DataType() const }}]{\setlength{\rightskip}{0pt plus 5cm}tvm\+::runtime\+::\+T\+V\+M\+Ret\+Value\+::operator {\bf Data\+Type} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classtvm_1_1runtime_1_1TVMRetValue_ad97cce376415a77a51215c9539732a75}{}\label{classtvm_1_1runtime_1_1TVMRetValue_ad97cce376415a77a51215c9539732a75}
+\index{tvm\+::runtime\+::\+T\+V\+M\+Ret\+Value@{tvm\+::runtime\+::\+T\+V\+M\+Ret\+Value}!operator D\+L\+Data\+Type@{operator D\+L\+Data\+Type}}
+\index{operator D\+L\+Data\+Type@{operator D\+L\+Data\+Type}!tvm\+::runtime\+::\+T\+V\+M\+Ret\+Value@{tvm\+::runtime\+::\+T\+V\+M\+Ret\+Value}}
+\subsubsection[{\texorpdfstring{operator D\+L\+Data\+Type() const }{operator DLDataType() const }}]{\setlength{\rightskip}{0pt plus 5cm}tvm\+::runtime\+::\+T\+V\+M\+Ret\+Value\+::operator D\+L\+Data\+Type (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classtvm_1_1runtime_1_1TVMRetValue_ac4320260c25f8ab0ff3d5a5795a6efa4}{}\label{classtvm_1_1runtime_1_1TVMRetValue_ac4320260c25f8ab0ff3d5a5795a6efa4}
+\index{tvm\+::runtime\+::\+T\+V\+M\+Ret\+Value@{tvm\+::runtime\+::\+T\+V\+M\+Ret\+Value}!operator Packed\+Func@{operator Packed\+Func}}
+\index{operator Packed\+Func@{operator Packed\+Func}!tvm\+::runtime\+::\+T\+V\+M\+Ret\+Value@{tvm\+::runtime\+::\+T\+V\+M\+Ret\+Value}}
+\subsubsection[{\texorpdfstring{operator Packed\+Func() const }{operator PackedFunc() const }}]{\setlength{\rightskip}{0pt plus 5cm}tvm\+::runtime\+::\+T\+V\+M\+Ret\+Value\+::operator {\bf Packed\+Func} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classtvm_1_1runtime_1_1TVMRetValue_a97e114bab413908227041ae324367c6f}{}\label{classtvm_1_1runtime_1_1TVMRetValue_a97e114bab413908227041ae324367c6f}
+\index{tvm\+::runtime\+::\+T\+V\+M\+Ret\+Value@{tvm\+::runtime\+::\+T\+V\+M\+Ret\+Value}!operator T@{operator T}}
+\index{operator T@{operator T}!tvm\+::runtime\+::\+T\+V\+M\+Ret\+Value@{tvm\+::runtime\+::\+T\+V\+M\+Ret\+Value}}
+\subsubsection[{\texorpdfstring{operator T() const }{operator T() const }}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T , typename $>$ tvm\+::runtime\+::\+T\+V\+M\+Ret\+Value\+::operator T (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classtvm_1_1runtime_1_1TVMRetValue_a0b9304664e8aa3ffebf46149add6ce03}{}\label{classtvm_1_1runtime_1_1TVMRetValue_a0b9304664e8aa3ffebf46149add6ce03}
+\index{tvm\+::runtime\+::\+T\+V\+M\+Ret\+Value@{tvm\+::runtime\+::\+T\+V\+M\+Ret\+Value}!operator Typed\+Packed\+Func$<$ F\+Type $>$@{operator Typed\+Packed\+Func$<$ F\+Type $>$}}
+\index{operator Typed\+Packed\+Func$<$ F\+Type $>$@{operator Typed\+Packed\+Func$<$ F\+Type $>$}!tvm\+::runtime\+::\+T\+V\+M\+Ret\+Value@{tvm\+::runtime\+::\+T\+V\+M\+Ret\+Value}}
+\subsubsection[{\texorpdfstring{operator Typed\+Packed\+Func$<$ F\+Type $>$() const }{operator TypedPackedFunc< FType >() const }}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename F\+Type $>$ tvm\+::runtime\+::\+T\+V\+M\+Ret\+Value\+::operator {\bf Typed\+Packed\+Func}$<$ F\+Type $>$ (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classtvm_1_1runtime_1_1TVMRetValue_a8aee084bb1fbda132f8bc78353d3fa55}{}\label{classtvm_1_1runtime_1_1TVMRetValue_a8aee084bb1fbda132f8bc78353d3fa55}
+\index{tvm\+::runtime\+::\+T\+V\+M\+Ret\+Value@{tvm\+::runtime\+::\+T\+V\+M\+Ret\+Value}!operator=@{operator=}}
+\index{operator=@{operator=}!tvm\+::runtime\+::\+T\+V\+M\+Ret\+Value@{tvm\+::runtime\+::\+T\+V\+M\+Ret\+Value}}
+\subsubsection[{\texorpdfstring{operator=(\+T\+V\+M\+Ret\+Value \&\&other)}{operator=(TVMRetValue &&other)}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf T\+V\+M\+Ret\+Value}\& tvm\+::runtime\+::\+T\+V\+M\+Ret\+Value\+::operator= (
+\begin{DoxyParamCaption}
+\item[{{\bf T\+V\+M\+Ret\+Value} \&\&}]{other}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classtvm_1_1runtime_1_1TVMRetValue_a4993d4b338c28096b56ed3d0d9ae5170}{}\label{classtvm_1_1runtime_1_1TVMRetValue_a4993d4b338c28096b56ed3d0d9ae5170}
+\index{tvm\+::runtime\+::\+T\+V\+M\+Ret\+Value@{tvm\+::runtime\+::\+T\+V\+M\+Ret\+Value}!operator=@{operator=}}
+\index{operator=@{operator=}!tvm\+::runtime\+::\+T\+V\+M\+Ret\+Value@{tvm\+::runtime\+::\+T\+V\+M\+Ret\+Value}}
+\subsubsection[{\texorpdfstring{operator=(double value)}{operator=(double value)}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf T\+V\+M\+Ret\+Value}\& tvm\+::runtime\+::\+T\+V\+M\+Ret\+Value\+::operator= (
+\begin{DoxyParamCaption}
+\item[{double}]{value}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classtvm_1_1runtime_1_1TVMRetValue_abf351bdd97209c8fb656b60abce7fccb}{}\label{classtvm_1_1runtime_1_1TVMRetValue_abf351bdd97209c8fb656b60abce7fccb}
+\index{tvm\+::runtime\+::\+T\+V\+M\+Ret\+Value@{tvm\+::runtime\+::\+T\+V\+M\+Ret\+Value}!operator=@{operator=}}
+\index{operator=@{operator=}!tvm\+::runtime\+::\+T\+V\+M\+Ret\+Value@{tvm\+::runtime\+::\+T\+V\+M\+Ret\+Value}}
+\subsubsection[{\texorpdfstring{operator=(std\+::nullptr\+\_\+t value)}{operator=(std::nullptr_t value)}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf T\+V\+M\+Ret\+Value}\& tvm\+::runtime\+::\+T\+V\+M\+Ret\+Value\+::operator= (
+\begin{DoxyParamCaption}
+\item[{std\+::nullptr\+\_\+t}]{value}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classtvm_1_1runtime_1_1TVMRetValue_a400ab1f50cbbbc1ab24975bf32556d16}{}\label{classtvm_1_1runtime_1_1TVMRetValue_a400ab1f50cbbbc1ab24975bf32556d16}
+\index{tvm\+::runtime\+::\+T\+V\+M\+Ret\+Value@{tvm\+::runtime\+::\+T\+V\+M\+Ret\+Value}!operator=@{operator=}}
+\index{operator=@{operator=}!tvm\+::runtime\+::\+T\+V\+M\+Ret\+Value@{tvm\+::runtime\+::\+T\+V\+M\+Ret\+Value}}
+\subsubsection[{\texorpdfstring{operator=(void $\ast$value)}{operator=(void *value)}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf T\+V\+M\+Ret\+Value}\& tvm\+::runtime\+::\+T\+V\+M\+Ret\+Value\+::operator= (
+\begin{DoxyParamCaption}
+\item[{void $\ast$}]{value}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classtvm_1_1runtime_1_1TVMRetValue_a7c16ff5c118b1577a9188ca3f3509167}{}\label{classtvm_1_1runtime_1_1TVMRetValue_a7c16ff5c118b1577a9188ca3f3509167}
+\index{tvm\+::runtime\+::\+T\+V\+M\+Ret\+Value@{tvm\+::runtime\+::\+T\+V\+M\+Ret\+Value}!operator=@{operator=}}
+\index{operator=@{operator=}!tvm\+::runtime\+::\+T\+V\+M\+Ret\+Value@{tvm\+::runtime\+::\+T\+V\+M\+Ret\+Value}}
+\subsubsection[{\texorpdfstring{operator=(int64\+\_\+t value)}{operator=(int64_t value)}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf T\+V\+M\+Ret\+Value}\& tvm\+::runtime\+::\+T\+V\+M\+Ret\+Value\+::operator= (
+\begin{DoxyParamCaption}
+\item[{int64\+\_\+t}]{value}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classtvm_1_1runtime_1_1TVMRetValue_ad362b734db5406b02e72476b7f8da779}{}\label{classtvm_1_1runtime_1_1TVMRetValue_ad362b734db5406b02e72476b7f8da779}
+\index{tvm\+::runtime\+::\+T\+V\+M\+Ret\+Value@{tvm\+::runtime\+::\+T\+V\+M\+Ret\+Value}!operator=@{operator=}}
+\index{operator=@{operator=}!tvm\+::runtime\+::\+T\+V\+M\+Ret\+Value@{tvm\+::runtime\+::\+T\+V\+M\+Ret\+Value}}
+\subsubsection[{\texorpdfstring{operator=(int value)}{operator=(int value)}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf T\+V\+M\+Ret\+Value}\& tvm\+::runtime\+::\+T\+V\+M\+Ret\+Value\+::operator= (
+\begin{DoxyParamCaption}
+\item[{int}]{value}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classtvm_1_1runtime_1_1TVMRetValue_a5d251ed32af617354c8622689a6d6e48}{}\label{classtvm_1_1runtime_1_1TVMRetValue_a5d251ed32af617354c8622689a6d6e48}
+\index{tvm\+::runtime\+::\+T\+V\+M\+Ret\+Value@{tvm\+::runtime\+::\+T\+V\+M\+Ret\+Value}!operator=@{operator=}}
+\index{operator=@{operator=}!tvm\+::runtime\+::\+T\+V\+M\+Ret\+Value@{tvm\+::runtime\+::\+T\+V\+M\+Ret\+Value}}
+\subsubsection[{\texorpdfstring{operator=(\+T\+V\+M\+Context value)}{operator=(TVMContext value)}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf T\+V\+M\+Ret\+Value}\& tvm\+::runtime\+::\+T\+V\+M\+Ret\+Value\+::operator= (
+\begin{DoxyParamCaption}
+\item[{{\bf T\+V\+M\+Context}}]{value}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classtvm_1_1runtime_1_1TVMRetValue_a063b7950d32288a967011949a7a70dc8}{}\label{classtvm_1_1runtime_1_1TVMRetValue_a063b7950d32288a967011949a7a70dc8}
+\index{tvm\+::runtime\+::\+T\+V\+M\+Ret\+Value@{tvm\+::runtime\+::\+T\+V\+M\+Ret\+Value}!operator=@{operator=}}
+\index{operator=@{operator=}!tvm\+::runtime\+::\+T\+V\+M\+Ret\+Value@{tvm\+::runtime\+::\+T\+V\+M\+Ret\+Value}}
+\subsubsection[{\texorpdfstring{operator=(\+D\+L\+Data\+Type t)}{operator=(DLDataType t)}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf T\+V\+M\+Ret\+Value}\& tvm\+::runtime\+::\+T\+V\+M\+Ret\+Value\+::operator= (
+\begin{DoxyParamCaption}
+\item[{D\+L\+Data\+Type}]{t}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classtvm_1_1runtime_1_1TVMRetValue_a2c8860df3cbdc52104dca8274abfa219}{}\label{classtvm_1_1runtime_1_1TVMRetValue_a2c8860df3cbdc52104dca8274abfa219}
+\index{tvm\+::runtime\+::\+T\+V\+M\+Ret\+Value@{tvm\+::runtime\+::\+T\+V\+M\+Ret\+Value}!operator=@{operator=}}
+\index{operator=@{operator=}!tvm\+::runtime\+::\+T\+V\+M\+Ret\+Value@{tvm\+::runtime\+::\+T\+V\+M\+Ret\+Value}}
+\subsubsection[{\texorpdfstring{operator=(const Data\+Type \&other)}{operator=(const DataType &other)}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf T\+V\+M\+Ret\+Value}\& tvm\+::runtime\+::\+T\+V\+M\+Ret\+Value\+::operator= (
+\begin{DoxyParamCaption}
+\item[{const {\bf Data\+Type} \&}]{other}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classtvm_1_1runtime_1_1TVMRetValue_addc4ffa96d47397893755d5e7e016084}{}\label{classtvm_1_1runtime_1_1TVMRetValue_addc4ffa96d47397893755d5e7e016084}
+\index{tvm\+::runtime\+::\+T\+V\+M\+Ret\+Value@{tvm\+::runtime\+::\+T\+V\+M\+Ret\+Value}!operator=@{operator=}}
+\index{operator=@{operator=}!tvm\+::runtime\+::\+T\+V\+M\+Ret\+Value@{tvm\+::runtime\+::\+T\+V\+M\+Ret\+Value}}
+\subsubsection[{\texorpdfstring{operator=(bool value)}{operator=(bool value)}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf T\+V\+M\+Ret\+Value}\& tvm\+::runtime\+::\+T\+V\+M\+Ret\+Value\+::operator= (
+\begin{DoxyParamCaption}
+\item[{bool}]{value}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classtvm_1_1runtime_1_1TVMRetValue_a510ec87e6718c0e6197e7321ca8774f2}{}\label{classtvm_1_1runtime_1_1TVMRetValue_a510ec87e6718c0e6197e7321ca8774f2}
+\index{tvm\+::runtime\+::\+T\+V\+M\+Ret\+Value@{tvm\+::runtime\+::\+T\+V\+M\+Ret\+Value}!operator=@{operator=}}
+\index{operator=@{operator=}!tvm\+::runtime\+::\+T\+V\+M\+Ret\+Value@{tvm\+::runtime\+::\+T\+V\+M\+Ret\+Value}}
+\subsubsection[{\texorpdfstring{operator=(std\+::string value)}{operator=(std::string value)}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf T\+V\+M\+Ret\+Value}\& tvm\+::runtime\+::\+T\+V\+M\+Ret\+Value\+::operator= (
+\begin{DoxyParamCaption}
+\item[{std\+::string}]{value}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classtvm_1_1runtime_1_1TVMRetValue_a952f62623ec147f366363b664d749566}{}\label{classtvm_1_1runtime_1_1TVMRetValue_a952f62623ec147f366363b664d749566}
+\index{tvm\+::runtime\+::\+T\+V\+M\+Ret\+Value@{tvm\+::runtime\+::\+T\+V\+M\+Ret\+Value}!operator=@{operator=}}
+\index{operator=@{operator=}!tvm\+::runtime\+::\+T\+V\+M\+Ret\+Value@{tvm\+::runtime\+::\+T\+V\+M\+Ret\+Value}}
+\subsubsection[{\texorpdfstring{operator=(\+T\+V\+M\+Byte\+Array value)}{operator=(TVMByteArray value)}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf T\+V\+M\+Ret\+Value}\& tvm\+::runtime\+::\+T\+V\+M\+Ret\+Value\+::operator= (
+\begin{DoxyParamCaption}
+\item[{{\bf T\+V\+M\+Byte\+Array}}]{value}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classtvm_1_1runtime_1_1TVMRetValue_afd42f6574de11e3b62d40509a94f4f9f}{}\label{classtvm_1_1runtime_1_1TVMRetValue_afd42f6574de11e3b62d40509a94f4f9f}
+\index{tvm\+::runtime\+::\+T\+V\+M\+Ret\+Value@{tvm\+::runtime\+::\+T\+V\+M\+Ret\+Value}!operator=@{operator=}}
+\index{operator=@{operator=}!tvm\+::runtime\+::\+T\+V\+M\+Ret\+Value@{tvm\+::runtime\+::\+T\+V\+M\+Ret\+Value}}
+\subsubsection[{\texorpdfstring{operator=(\+N\+D\+Array other)}{operator=(NDArray other)}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf T\+V\+M\+Ret\+Value}\& tvm\+::runtime\+::\+T\+V\+M\+Ret\+Value\+::operator= (
+\begin{DoxyParamCaption}
+\item[{{\bf N\+D\+Array}}]{other}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classtvm_1_1runtime_1_1TVMRetValue_afe5a60e856a30894e795d5230b0a7022}{}\label{classtvm_1_1runtime_1_1TVMRetValue_afe5a60e856a30894e795d5230b0a7022}
+\index{tvm\+::runtime\+::\+T\+V\+M\+Ret\+Value@{tvm\+::runtime\+::\+T\+V\+M\+Ret\+Value}!operator=@{operator=}}
+\index{operator=@{operator=}!tvm\+::runtime\+::\+T\+V\+M\+Ret\+Value@{tvm\+::runtime\+::\+T\+V\+M\+Ret\+Value}}
+\subsubsection[{\texorpdfstring{operator=(\+Module m)}{operator=(Module m)}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf T\+V\+M\+Ret\+Value}\& tvm\+::runtime\+::\+T\+V\+M\+Ret\+Value\+::operator= (
+\begin{DoxyParamCaption}
+\item[{{\bf Module}}]{m}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classtvm_1_1runtime_1_1TVMRetValue_ad5446f5812132852387dca7335989e88}{}\label{classtvm_1_1runtime_1_1TVMRetValue_ad5446f5812132852387dca7335989e88}
+\index{tvm\+::runtime\+::\+T\+V\+M\+Ret\+Value@{tvm\+::runtime\+::\+T\+V\+M\+Ret\+Value}!operator=@{operator=}}
+\index{operator=@{operator=}!tvm\+::runtime\+::\+T\+V\+M\+Ret\+Value@{tvm\+::runtime\+::\+T\+V\+M\+Ret\+Value}}
+\subsubsection[{\texorpdfstring{operator=(\+Packed\+Func f)}{operator=(PackedFunc f)}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf T\+V\+M\+Ret\+Value}\& tvm\+::runtime\+::\+T\+V\+M\+Ret\+Value\+::operator= (
+\begin{DoxyParamCaption}
+\item[{{\bf Packed\+Func}}]{f}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classtvm_1_1runtime_1_1TVMRetValue_a4ab194932127e4b1c372e5e58e450721}{}\label{classtvm_1_1runtime_1_1TVMRetValue_a4ab194932127e4b1c372e5e58e450721}
+\index{tvm\+::runtime\+::\+T\+V\+M\+Ret\+Value@{tvm\+::runtime\+::\+T\+V\+M\+Ret\+Value}!operator=@{operator=}}
+\index{operator=@{operator=}!tvm\+::runtime\+::\+T\+V\+M\+Ret\+Value@{tvm\+::runtime\+::\+T\+V\+M\+Ret\+Value}}
+\subsubsection[{\texorpdfstring{operator=(const Typed\+Packed\+Func$<$ F\+Type $>$ \&f)}{operator=(const TypedPackedFunc< FType > &f)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename F\+Type $>$ {\bf T\+V\+M\+Ret\+Value}\& tvm\+::runtime\+::\+T\+V\+M\+Ret\+Value\+::operator= (
+\begin{DoxyParamCaption}
+\item[{const {\bf Typed\+Packed\+Func}$<$ F\+Type $>$ \&}]{f}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classtvm_1_1runtime_1_1TVMRetValue_a3eaf85a64828b05e95d57e958089a34d}{}\label{classtvm_1_1runtime_1_1TVMRetValue_a3eaf85a64828b05e95d57e958089a34d}
+\index{tvm\+::runtime\+::\+T\+V\+M\+Ret\+Value@{tvm\+::runtime\+::\+T\+V\+M\+Ret\+Value}!operator=@{operator=}}
+\index{operator=@{operator=}!tvm\+::runtime\+::\+T\+V\+M\+Ret\+Value@{tvm\+::runtime\+::\+T\+V\+M\+Ret\+Value}}
+\subsubsection[{\texorpdfstring{operator=(const T\+V\+M\+Ret\+Value \&other)}{operator=(const TVMRetValue &other)}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf T\+V\+M\+Ret\+Value}\& tvm\+::runtime\+::\+T\+V\+M\+Ret\+Value\+::operator= (
+\begin{DoxyParamCaption}
+\item[{const {\bf T\+V\+M\+Ret\+Value} \&}]{other}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classtvm_1_1runtime_1_1TVMRetValue_ac87c22e4d49e79ce5b36b3aead667fcb}{}\label{classtvm_1_1runtime_1_1TVMRetValue_ac87c22e4d49e79ce5b36b3aead667fcb}
+\index{tvm\+::runtime\+::\+T\+V\+M\+Ret\+Value@{tvm\+::runtime\+::\+T\+V\+M\+Ret\+Value}!operator=@{operator=}}
+\index{operator=@{operator=}!tvm\+::runtime\+::\+T\+V\+M\+Ret\+Value@{tvm\+::runtime\+::\+T\+V\+M\+Ret\+Value}}
+\subsubsection[{\texorpdfstring{operator=(const T\+V\+M\+Arg\+Value \&other)}{operator=(const TVMArgValue &other)}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf T\+V\+M\+Ret\+Value}\& tvm\+::runtime\+::\+T\+V\+M\+Ret\+Value\+::operator= (
+\begin{DoxyParamCaption}
+\item[{const {\bf T\+V\+M\+Arg\+Value} \&}]{other}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classtvm_1_1runtime_1_1TVMRetValue_aafc5d18f0ac508fdd8a90b5af9bc1eff}{}\label{classtvm_1_1runtime_1_1TVMRetValue_aafc5d18f0ac508fdd8a90b5af9bc1eff}
+\index{tvm\+::runtime\+::\+T\+V\+M\+Ret\+Value@{tvm\+::runtime\+::\+T\+V\+M\+Ret\+Value}!operator=@{operator=}}
+\index{operator=@{operator=}!tvm\+::runtime\+::\+T\+V\+M\+Ret\+Value@{tvm\+::runtime\+::\+T\+V\+M\+Ret\+Value}}
+\subsubsection[{\texorpdfstring{operator=(\+T\+Object\+Ref other)}{operator=(TObjectRef other)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T\+Object\+Ref , typename $>$ {\bf T\+V\+M\+Ret\+Value} \& tvm\+::runtime\+::\+T\+V\+M\+Ret\+Value\+::operator= (
+\begin{DoxyParamCaption}
+\item[{T\+Object\+Ref}]{other}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classtvm_1_1runtime_1_1TVMRetValue_a230363e8e5980248aca5a760e0c3ab3d}{}\label{classtvm_1_1runtime_1_1TVMRetValue_a230363e8e5980248aca5a760e0c3ab3d}
+\index{tvm\+::runtime\+::\+T\+V\+M\+Ret\+Value@{tvm\+::runtime\+::\+T\+V\+M\+Ret\+Value}!value@{value}}
+\index{value@{value}!tvm\+::runtime\+::\+T\+V\+M\+Ret\+Value@{tvm\+::runtime\+::\+T\+V\+M\+Ret\+Value}}
+\subsubsection[{\texorpdfstring{value() const }{value() const }}]{\setlength{\rightskip}{0pt plus 5cm}const {\bf T\+V\+M\+Value}\& tvm\+::runtime\+::\+T\+V\+M\+Ret\+Value\+::value (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classtvm_1_1runtime_1_1TVMRetValue_a75696cb65d294217796fbc4f1c22d7f8}{}\label{classtvm_1_1runtime_1_1TVMRetValue_a75696cb65d294217796fbc4f1c22d7f8}
+\begin{DoxyReturn}{Returns}
+The value field, if the data is P\+OD 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+include/tvm/runtime/\hyperlink{packed__func_8h}{packed\+\_\+func.\+h}\end{DoxyCompactItemize}

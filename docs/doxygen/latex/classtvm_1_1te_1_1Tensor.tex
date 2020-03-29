@@ -1,0 +1,244 @@
+\hypertarget{classtvm_1_1te_1_1Tensor}{}\section{tvm\+:\+:te\+:\+:Tensor Class Reference}
+\label{classtvm_1_1te_1_1Tensor}\index{tvm\+::te\+::\+Tensor@{tvm\+::te\+::\+Tensor}}
+
+
+\hyperlink{classtvm_1_1te_1_1Tensor}{Tensor} structure representing a possible input, or intermediate computation result.  
+
+
+
+
+{\ttfamily \#include $<$tensor.\+h$>$}
+
+
+
+Inheritance diagram for tvm\+:\+:te\+:\+:Tensor\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=173pt]{classtvm_1_1te_1_1Tensor__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for tvm\+:\+:te\+:\+:Tensor\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=173pt]{classtvm_1_1te_1_1Tensor__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \hyperlink{classtvm_1_1te_1_1Tensor_1_1Slice}{Slice}
+\begin{DoxyCompactList}\small\item\em data structure to represent a slice that fixes first k coordinates. This is used to enable syntax sugar of \hyperlink{classtvm_1_1te_1_1Tensor}{Tensor}\mbox{[}x\mbox{]}\mbox{[}y\mbox{]}\mbox{[}z\mbox{]} to get the element. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+using \hyperlink{classtvm_1_1te_1_1Tensor_a79078835ab113994887e66878e2a87ab}{Container\+Type} = \hyperlink{classtvm_1_1te_1_1TensorNode}{Tensor\+Node}
+\begin{DoxyCompactList}\small\item\em specify container node \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classtvm_1_1te_1_1Tensor_a23a2f5549bdcd66eb210fd71813d6051}{Tensor} ()
+\begin{DoxyCompactList}\small\item\em default constructor, used internally \end{DoxyCompactList}\item 
+\hyperlink{classtvm_1_1te_1_1Tensor_a6d619c9a463a0ad05bb5bc27189d1230}{Tensor} (Object\+Ptr$<$ Object $>$ n)
+\item 
+const \hyperlink{classtvm_1_1te_1_1TensorNode}{Tensor\+Node} $\ast$ \hyperlink{classtvm_1_1te_1_1Tensor_a725bede99576a444220c7c46473edbba}{operator-\/$>$} () const 
+\begin{DoxyCompactList}\small\item\em access the internal node container \end{DoxyCompactList}\item 
+bool \hyperlink{classtvm_1_1te_1_1Tensor_a15b163083896422fbbf6a1ad972b461e}{operator==} (const \hyperlink{classtvm_1_1te_1_1Tensor}{Tensor} \&other) const 
+\begin{DoxyCompactList}\small\item\em check if two tensors equals each other. \end{DoxyCompactList}\item 
+bool \hyperlink{classtvm_1_1te_1_1Tensor_aa9247465fac8685c9b816359c144a32d}{operator!=} (const \hyperlink{classtvm_1_1te_1_1Tensor}{Tensor} \&other) const 
+\begin{DoxyCompactList}\small\item\em check if two tensors are different. \end{DoxyCompactList}\item 
+size\+\_\+t \hyperlink{classtvm_1_1te_1_1Tensor_abe7e5dcf5965fa514ba2a78b2f71a871}{ndim} () const 
+\item 
+{\footnotesize template$<$typename... Args$>$ }\\\hyperlink{classtvm_1_1PrimExpr}{Prim\+Expr} \hyperlink{classtvm_1_1te_1_1Tensor_a2c58dbdca81f9326dc097d2dfa932c13}{operator()} (Args \&\&...args) const 
+\begin{DoxyCompactList}\small\item\em Take elements from the tensor. \end{DoxyCompactList}\item 
+\hyperlink{classtvm_1_1PrimExpr}{Prim\+Expr} \hyperlink{classtvm_1_1te_1_1Tensor_aef881cbdd900afba307d07372e6d0710}{operator()} (\hyperlink{classtvm_1_1Array}{Array}$<$ \hyperlink{classtvm_1_1PrimExpr}{Prim\+Expr} $>$ indices) const 
+\begin{DoxyCompactList}\small\item\em Take elements from the tensor. \end{DoxyCompactList}\item 
+\hyperlink{classtvm_1_1PrimExpr}{Prim\+Expr} \hyperlink{classtvm_1_1te_1_1Tensor_a2833a614926eca85a2e8bd4c9af667b0}{operator()} (\hyperlink{classtvm_1_1Array}{Array}$<$ \hyperlink{classtvm_1_1tir_1_1Var}{Var} $>$ indices) const 
+\begin{DoxyCompactList}\small\item\em Take elements from the tensor. \end{DoxyCompactList}\item 
+\hyperlink{classtvm_1_1te_1_1Tensor_1_1Slice}{Slice} \hyperlink{classtvm_1_1te_1_1Tensor_a2186a1bbc39673d9e39eafe7a01fed91}{operator\mbox{[}$\,$\mbox{]}} (\hyperlink{classtvm_1_1PrimExpr}{Prim\+Expr} i) const 
+\begin{DoxyCompactList}\small\item\em get i-\/th slice from the current \hyperlink{classtvm_1_1te_1_1Tensor}{Tensor}. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\hyperlink{classtvm_1_1te_1_1Tensor}{Tensor} structure representing a possible input, or intermediate computation result. 
+
+\subsection{Member Typedef Documentation}
+\index{tvm\+::te\+::\+Tensor@{tvm\+::te\+::\+Tensor}!Container\+Type@{Container\+Type}}
+\index{Container\+Type@{Container\+Type}!tvm\+::te\+::\+Tensor@{tvm\+::te\+::\+Tensor}}
+\subsubsection[{\texorpdfstring{Container\+Type}{ContainerType}}]{\setlength{\rightskip}{0pt plus 5cm}using {\bf tvm\+::te\+::\+Tensor\+::\+Container\+Type} =  {\bf Tensor\+Node}}\hypertarget{classtvm_1_1te_1_1Tensor_a79078835ab113994887e66878e2a87ab}{}\label{classtvm_1_1te_1_1Tensor_a79078835ab113994887e66878e2a87ab}
+
+
+specify container node 
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\index{tvm\+::te\+::\+Tensor@{tvm\+::te\+::\+Tensor}!Tensor@{Tensor}}
+\index{Tensor@{Tensor}!tvm\+::te\+::\+Tensor@{tvm\+::te\+::\+Tensor}}
+\subsubsection[{\texorpdfstring{Tensor()}{Tensor()}}]{\setlength{\rightskip}{0pt plus 5cm}tvm\+::te\+::\+Tensor\+::\+Tensor (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classtvm_1_1te_1_1Tensor_a23a2f5549bdcd66eb210fd71813d6051}{}\label{classtvm_1_1te_1_1Tensor_a23a2f5549bdcd66eb210fd71813d6051}
+
+
+default constructor, used internally 
+
+\index{tvm\+::te\+::\+Tensor@{tvm\+::te\+::\+Tensor}!Tensor@{Tensor}}
+\index{Tensor@{Tensor}!tvm\+::te\+::\+Tensor@{tvm\+::te\+::\+Tensor}}
+\subsubsection[{\texorpdfstring{Tensor(\+Object\+Ptr$<$ Object $>$ n)}{Tensor(ObjectPtr< Object > n)}}]{\setlength{\rightskip}{0pt plus 5cm}tvm\+::te\+::\+Tensor\+::\+Tensor (
+\begin{DoxyParamCaption}
+\item[{Object\+Ptr$<$ Object $>$}]{n}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [explicit]}}\hypertarget{classtvm_1_1te_1_1Tensor_a6d619c9a463a0ad05bb5bc27189d1230}{}\label{classtvm_1_1te_1_1Tensor_a6d619c9a463a0ad05bb5bc27189d1230}
+
+
+\subsection{Member Function Documentation}
+\index{tvm\+::te\+::\+Tensor@{tvm\+::te\+::\+Tensor}!ndim@{ndim}}
+\index{ndim@{ndim}!tvm\+::te\+::\+Tensor@{tvm\+::te\+::\+Tensor}}
+\subsubsection[{\texorpdfstring{ndim() const }{ndim() const }}]{\setlength{\rightskip}{0pt plus 5cm}size\+\_\+t tvm\+::te\+::\+Tensor\+::ndim (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classtvm_1_1te_1_1Tensor_abe7e5dcf5965fa514ba2a78b2f71a871}{}\label{classtvm_1_1te_1_1Tensor_abe7e5dcf5965fa514ba2a78b2f71a871}
+\begin{DoxyReturn}{Returns}
+The dimension of the tensor 
+\end{DoxyReturn}
+\index{tvm\+::te\+::\+Tensor@{tvm\+::te\+::\+Tensor}!operator"!=@{operator"!=}}
+\index{operator"!=@{operator"!=}!tvm\+::te\+::\+Tensor@{tvm\+::te\+::\+Tensor}}
+\subsubsection[{\texorpdfstring{operator"!=(const Tensor \&other) const }{operator!=(const Tensor &other) const }}]{\setlength{\rightskip}{0pt plus 5cm}bool tvm\+::te\+::\+Tensor\+::operator!= (
+\begin{DoxyParamCaption}
+\item[{const {\bf Tensor} \&}]{other}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classtvm_1_1te_1_1Tensor_aa9247465fac8685c9b816359c144a32d}{}\label{classtvm_1_1te_1_1Tensor_aa9247465fac8685c9b816359c144a32d}
+
+
+check if two tensors are different. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em other} & tensor to be checked. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+whether the two tensors are different. 
+\end{DoxyReturn}
+\index{tvm\+::te\+::\+Tensor@{tvm\+::te\+::\+Tensor}!operator()@{operator()}}
+\index{operator()@{operator()}!tvm\+::te\+::\+Tensor@{tvm\+::te\+::\+Tensor}}
+\subsubsection[{\texorpdfstring{operator()(\+Args \&\&...\+args) const }{operator()(Args &&...args) const }}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename... Args$>$ {\bf Prim\+Expr} tvm\+::te\+::\+Tensor\+::operator() (
+\begin{DoxyParamCaption}
+\item[{Args \&\&...}]{args}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classtvm_1_1te_1_1Tensor_a2c58dbdca81f9326dc097d2dfa932c13}{}\label{classtvm_1_1te_1_1Tensor_a2c58dbdca81f9326dc097d2dfa932c13}
+
+
+Take elements from the tensor. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em args} & The indices \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the result expression representing tensor read. 
+\end{DoxyReturn}
+\index{tvm\+::te\+::\+Tensor@{tvm\+::te\+::\+Tensor}!operator()@{operator()}}
+\index{operator()@{operator()}!tvm\+::te\+::\+Tensor@{tvm\+::te\+::\+Tensor}}
+\subsubsection[{\texorpdfstring{operator()(\+Array$<$ Prim\+Expr $>$ indices) const }{operator()(Array< PrimExpr > indices) const }}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Prim\+Expr} tvm\+::te\+::\+Tensor\+::operator() (
+\begin{DoxyParamCaption}
+\item[{{\bf Array}$<$ {\bf Prim\+Expr} $>$}]{indices}
+\end{DoxyParamCaption}
+) const}\hypertarget{classtvm_1_1te_1_1Tensor_aef881cbdd900afba307d07372e6d0710}{}\label{classtvm_1_1te_1_1Tensor_aef881cbdd900afba307d07372e6d0710}
+
+
+Take elements from the tensor. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em indices} & the indices. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the result expression representing tensor read. 
+\end{DoxyReturn}
+\index{tvm\+::te\+::\+Tensor@{tvm\+::te\+::\+Tensor}!operator()@{operator()}}
+\index{operator()@{operator()}!tvm\+::te\+::\+Tensor@{tvm\+::te\+::\+Tensor}}
+\subsubsection[{\texorpdfstring{operator()(\+Array$<$ Var $>$ indices) const }{operator()(Array< Var > indices) const }}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Prim\+Expr} tvm\+::te\+::\+Tensor\+::operator() (
+\begin{DoxyParamCaption}
+\item[{{\bf Array}$<$ {\bf Var} $>$}]{indices}
+\end{DoxyParamCaption}
+) const}\hypertarget{classtvm_1_1te_1_1Tensor_a2833a614926eca85a2e8bd4c9af667b0}{}\label{classtvm_1_1te_1_1Tensor_a2833a614926eca85a2e8bd4c9af667b0}
+
+
+Take elements from the tensor. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em indices} & the indices. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the result expression representing tensor read. 
+\end{DoxyReturn}
+\index{tvm\+::te\+::\+Tensor@{tvm\+::te\+::\+Tensor}!operator-\/$>$@{operator-\/$>$}}
+\index{operator-\/$>$@{operator-\/$>$}!tvm\+::te\+::\+Tensor@{tvm\+::te\+::\+Tensor}}
+\subsubsection[{\texorpdfstring{operator-\/$>$() const }{operator->() const }}]{\setlength{\rightskip}{0pt plus 5cm}const {\bf Tensor\+Node} $\ast$ tvm\+::te\+::\+Tensor\+::operator-\/$>$ (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classtvm_1_1te_1_1Tensor_a725bede99576a444220c7c46473edbba}{}\label{classtvm_1_1te_1_1Tensor_a725bede99576a444220c7c46473edbba}
+
+
+access the internal node container 
+
+\begin{DoxyReturn}{Returns}
+the pointer to the internal node container 
+\end{DoxyReturn}
+\index{tvm\+::te\+::\+Tensor@{tvm\+::te\+::\+Tensor}!operator==@{operator==}}
+\index{operator==@{operator==}!tvm\+::te\+::\+Tensor@{tvm\+::te\+::\+Tensor}}
+\subsubsection[{\texorpdfstring{operator==(const Tensor \&other) const }{operator==(const Tensor &other) const }}]{\setlength{\rightskip}{0pt plus 5cm}bool tvm\+::te\+::\+Tensor\+::operator== (
+\begin{DoxyParamCaption}
+\item[{const {\bf Tensor} \&}]{other}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classtvm_1_1te_1_1Tensor_a15b163083896422fbbf6a1ad972b461e}{}\label{classtvm_1_1te_1_1Tensor_a15b163083896422fbbf6a1ad972b461e}
+
+
+check if two tensors equals each other. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em other} & tensor to be checked. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+whether the two tensors equals each other. 
+\end{DoxyReturn}
+\index{tvm\+::te\+::\+Tensor@{tvm\+::te\+::\+Tensor}!operator\mbox{[}$\,$\mbox{]}@{operator[]}}
+\index{operator\mbox{[}$\,$\mbox{]}@{operator[]}!tvm\+::te\+::\+Tensor@{tvm\+::te\+::\+Tensor}}
+\subsubsection[{\texorpdfstring{operator[](\+Prim\+Expr i) const }{operator[](PrimExpr i) const }}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Slice} tvm\+::te\+::\+Tensor\+::operator\mbox{[}$\,$\mbox{]} (
+\begin{DoxyParamCaption}
+\item[{{\bf Prim\+Expr}}]{i}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classtvm_1_1te_1_1Tensor_a2186a1bbc39673d9e39eafe7a01fed91}{}\label{classtvm_1_1te_1_1Tensor_a2186a1bbc39673d9e39eafe7a01fed91}
+
+
+get i-\/th slice from the current \hyperlink{classtvm_1_1te_1_1Tensor}{Tensor}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em i} & the index of the coordinate \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the subsequent slice. 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+include/tvm/te/\hyperlink{tensor_8h}{tensor.\+h}\end{DoxyCompactItemize}

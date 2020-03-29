@@ -1,0 +1,203 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="classtvm_1_1tir_1_1EvaluateNode" kind="class" language="C++" prot="public">
+    <compoundname>tvm::tir::EvaluateNode</compoundname>
+    <basecompoundref refid="classtvm_1_1tir_1_1StmtNode" prot="public" virt="non-virtual">tvm::tir::StmtNode</basecompoundref>
+    <includes refid="stmt_8h" local="no">stmt.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="classtvm_1_1tir_1_1EvaluateNode_1acd67ddcaf6ec168e993710808ec94358" prot="public" static="no" mutable="no">
+        <type><ref refid="classtvm_1_1PrimExpr" kindref="compound">PrimExpr</ref></type>
+        <definition>PrimExpr tvm::tir::EvaluateNode::value</definition>
+        <argsstring></argsstring>
+        <name>value</name>
+        <briefdescription>
+<para>The expression to be evaluated. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/tir/stmt.h" line="642" column="1" bodyfile="include/tvm/tir/stmt.h" bodystart="642" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-attrib">
+      <memberdef kind="variable" id="classtvm_1_1tir_1_1EvaluateNode_1a9d2b4f296b1cfa85b64a03ca581cbea4" prot="public" static="yes" mutable="no">
+        <type>constexpr const char *</type>
+        <definition>constexpr const char* tvm::tir::EvaluateNode::_type_key</definition>
+        <argsstring></argsstring>
+        <name>_type_key</name>
+        <initializer>= &quot;Evaluate&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/tir/stmt.h" line="658" column="1" bodyfile="include/tvm/tir/stmt.h" bodystart="658" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classtvm_1_1tir_1_1EvaluateNode_1a3950633f2ab07c83010e7a489d67d0e2" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void tvm::tir::EvaluateNode::VisitAttrs</definition>
+        <argsstring>(AttrVisitor *v)</argsstring>
+        <name>VisitAttrs</name>
+        <param>
+          <type><ref refid="classtvm_1_1AttrVisitor" kindref="compound">AttrVisitor</ref> *</type>
+          <declname>v</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/tir/stmt.h" line="644" column="1" bodyfile="include/tvm/tir/stmt.h" bodystart="644" bodyend="646"/>
+      </memberdef>
+      <memberdef kind="function" id="classtvm_1_1tir_1_1EvaluateNode_1adee5957be3a1dd8f0b6e7387f4c81d7d" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool tvm::tir::EvaluateNode::SEqualReduce</definition>
+        <argsstring>(const EvaluateNode *other, SEqualReducer equal) const </argsstring>
+        <name>SEqualReduce</name>
+        <param>
+          <type>const <ref refid="classtvm_1_1tir_1_1EvaluateNode" kindref="compound">EvaluateNode</ref> *</type>
+          <declname>other</declname>
+        </param>
+        <param>
+          <type><ref refid="classtvm_1_1SEqualReducer" kindref="compound">SEqualReducer</ref></type>
+          <declname>equal</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/tir/stmt.h" line="648" column="1" bodyfile="include/tvm/tir/stmt.h" bodystart="648" bodyend="650"/>
+      </memberdef>
+      <memberdef kind="function" id="classtvm_1_1tir_1_1EvaluateNode_1aa24892a4822d2707ca79757aa168435b" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void tvm::tir::EvaluateNode::SHashReduce</definition>
+        <argsstring>(SHashReducer hash_reduce) const </argsstring>
+        <name>SHashReduce</name>
+        <param>
+          <type><ref refid="classtvm_1_1SHashReducer" kindref="compound">SHashReducer</ref></type>
+          <declname>hash_reduce</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/tir/stmt.h" line="652" column="1" bodyfile="include/tvm/tir/stmt.h" bodystart="652" bodyend="654"/>
+      </memberdef>
+      <memberdef kind="function" id="classtvm_1_1tir_1_1EvaluateNode_1a6124f7d5e719d1225bfb29d32d6dcea4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>tvm::tir::EvaluateNode::TVM_DECLARE_FINAL_OBJECT_INFO</definition>
+        <argsstring>(EvaluateNode, StmtNode)</argsstring>
+        <name>TVM_DECLARE_FINAL_OBJECT_INFO</name>
+        <param>
+          <type><ref refid="classtvm_1_1tir_1_1EvaluateNode" kindref="compound">EvaluateNode</ref></type>
+        </param>
+        <param>
+          <type><ref refid="classtvm_1_1tir_1_1StmtNode" kindref="compound">StmtNode</ref></type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/tir/stmt.h" line="659" column="1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="classtvm_1_1tir_1_1EvaluateNode_1a5a3fc24b56f5b8eda0529a0c4ba11780" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classtvm_1_1tir_1_1Stmt" kindref="compound">Stmt</ref></type>
+        <definition>static Stmt tvm::tir::EvaluateNode::make</definition>
+        <argsstring>(PrimExpr v)</argsstring>
+        <name>make</name>
+        <param>
+          <type><ref refid="classtvm_1_1PrimExpr" kindref="compound">PrimExpr</ref></type>
+          <declname>v</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/tir/stmt.h" line="656" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Evaluates an expression. This is mostly used for putting a Call node into <ref refid="classtvm_1_1tir_1_1Stmt" kindref="compound">Stmt</ref>. </para>    </briefdescription>
+    <detaileddescription>
+<para>If value do not have side-effect, this node can be safely removed. </para>    </detaileddescription>
+    <inheritancegraph>
+      <node id="4957">
+        <label>Object</label>
+      </node>
+      <node id="4956">
+        <label>tvm::tir::StmtNode</label>
+        <link refid="classtvm_1_1tir_1_1StmtNode"/>
+        <childnode refid="4957" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="4955">
+        <label>tvm::tir::EvaluateNode</label>
+        <link refid="classtvm_1_1tir_1_1EvaluateNode"/>
+        <childnode refid="4956" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="4963">
+        <label>ObjectRef</label>
+      </node>
+      <node id="4960">
+        <label>Object</label>
+      </node>
+      <node id="4961">
+        <label>tvm::PrimExpr</label>
+        <link refid="classtvm_1_1PrimExpr"/>
+        <childnode refid="4962" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="4962">
+        <label>tvm::BaseExpr</label>
+        <link refid="classtvm_1_1BaseExpr"/>
+        <childnode refid="4963" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="4959">
+        <label>tvm::tir::StmtNode</label>
+        <link refid="classtvm_1_1tir_1_1StmtNode"/>
+        <childnode refid="4960" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="4958">
+        <label>tvm::tir::EvaluateNode</label>
+        <link refid="classtvm_1_1tir_1_1EvaluateNode"/>
+        <childnode refid="4959" relation="public-inheritance">
+        </childnode>
+        <childnode refid="4961" relation="usage">
+          <edgelabel>+value</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="include/tvm/tir/stmt.h" line="639" column="1" bodyfile="include/tvm/tir/stmt.h" bodystart="639" bodyend="660"/>
+    <listofallmembers>
+      <member refid="classtvm_1_1tir_1_1StmtNode_1a463ce5a124a6c222706888122bb44865" prot="public" virt="non-virtual"><scope>tvm::tir::EvaluateNode</scope><name>_type_has_method_sequal_reduce</name></member>
+      <member refid="classtvm_1_1tir_1_1StmtNode_1ab7e026e32383e67e620719b025e00056" prot="public" virt="non-virtual"><scope>tvm::tir::EvaluateNode</scope><name>_type_has_method_shash_reduce</name></member>
+      <member refid="classtvm_1_1tir_1_1EvaluateNode_1a9d2b4f296b1cfa85b64a03ca581cbea4" prot="public" virt="non-virtual"><scope>tvm::tir::EvaluateNode</scope><name>_type_key</name></member>
+      <member refid="classtvm_1_1tir_1_1EvaluateNode_1a5a3fc24b56f5b8eda0529a0c4ba11780" prot="public" virt="non-virtual"><scope>tvm::tir::EvaluateNode</scope><name>make</name></member>
+      <member refid="classtvm_1_1tir_1_1EvaluateNode_1adee5957be3a1dd8f0b6e7387f4c81d7d" prot="public" virt="non-virtual"><scope>tvm::tir::EvaluateNode</scope><name>SEqualReduce</name></member>
+      <member refid="classtvm_1_1tir_1_1EvaluateNode_1aa24892a4822d2707ca79757aa168435b" prot="public" virt="non-virtual"><scope>tvm::tir::EvaluateNode</scope><name>SHashReduce</name></member>
+      <member refid="classtvm_1_1tir_1_1StmtNode_1ab4627fb1adbea88d4fe3a33679569421" prot="public" virt="non-virtual"><scope>tvm::tir::EvaluateNode</scope><name>TVM_DECLARE_BASE_OBJECT_INFO</name></member>
+      <member refid="classtvm_1_1tir_1_1EvaluateNode_1a6124f7d5e719d1225bfb29d32d6dcea4" prot="public" virt="non-virtual"><scope>tvm::tir::EvaluateNode</scope><name>TVM_DECLARE_FINAL_OBJECT_INFO</name></member>
+      <member refid="classtvm_1_1tir_1_1EvaluateNode_1acd67ddcaf6ec168e993710808ec94358" prot="public" virt="non-virtual"><scope>tvm::tir::EvaluateNode</scope><name>value</name></member>
+      <member refid="classtvm_1_1tir_1_1EvaluateNode_1a3950633f2ab07c83010e7a489d67d0e2" prot="public" virt="non-virtual"><scope>tvm::tir::EvaluateNode</scope><name>VisitAttrs</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

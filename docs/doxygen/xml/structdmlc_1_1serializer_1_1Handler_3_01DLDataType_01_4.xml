@@ -1,0 +1,68 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="structdmlc_1_1serializer_1_1Handler_3_01DLDataType_01_4" kind="struct" language="C++" prot="public">
+    <compoundname>dmlc::serializer::Handler&lt; DLDataType &gt;</compoundname>
+    <includes refid="serializer_8h" local="no">serializer.h</includes>
+    <templateparamlist>
+    </templateparamlist>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="structdmlc_1_1serializer_1_1Handler_3_01DLDataType_01_4_1a8b12d99c9d96d3a5bda461746bcc5ffa" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>static void dmlc::serializer::Handler&lt; DLDataType &gt;::Write</definition>
+        <argsstring>(Stream *strm, const DLDataType &amp;dtype)</argsstring>
+        <name>Write</name>
+        <param>
+          <type>Stream *</type>
+          <declname>strm</declname>
+        </param>
+        <param>
+          <type>const DLDataType &amp;</type>
+          <declname>dtype</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/runtime/serializer.h" line="38" column="1" bodyfile="include/tvm/runtime/serializer.h" bodystart="38" bodyend="42"/>
+      </memberdef>
+      <memberdef kind="function" id="structdmlc_1_1serializer_1_1Handler_3_01DLDataType_01_4_1a98596da667d1aad2708015f5b15c35d8" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>static bool dmlc::serializer::Handler&lt; DLDataType &gt;::Read</definition>
+        <argsstring>(Stream *strm, DLDataType *dtype)</argsstring>
+        <name>Read</name>
+        <param>
+          <type>Stream *</type>
+          <declname>strm</declname>
+        </param>
+        <param>
+          <type>DLDataType *</type>
+          <declname>dtype</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/runtime/serializer.h" line="43" column="1" bodyfile="include/tvm/runtime/serializer.h" bodystart="43" bodyend="48"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="5275">
+        <label>dmlc::serializer::Handler&lt; DLDataType &gt;</label>
+        <link refid="structdmlc_1_1serializer_1_1Handler_3_01DLDataType_01_4"/>
+      </node>
+    </collaborationgraph>
+    <location file="include/tvm/runtime/serializer.h" line="37" column="1" bodyfile="include/tvm/runtime/serializer.h" bodystart="37" bodyend="49"/>
+    <listofallmembers>
+      <member refid="structdmlc_1_1serializer_1_1Handler_3_01DLDataType_01_4_1a98596da667d1aad2708015f5b15c35d8" prot="public" virt="non-virtual"><scope>dmlc::serializer::Handler&lt; DLDataType &gt;</scope><name>Read</name></member>
+      <member refid="structdmlc_1_1serializer_1_1Handler_3_01DLDataType_01_4_1a8b12d99c9d96d3a5bda461746bcc5ffa" prot="public" virt="non-virtual"><scope>dmlc::serializer::Handler&lt; DLDataType &gt;</scope><name>Write</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

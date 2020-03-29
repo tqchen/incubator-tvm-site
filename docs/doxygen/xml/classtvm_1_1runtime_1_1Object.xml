@@ -1,0 +1,836 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="classtvm_1_1runtime_1_1Object" kind="class" language="C++" prot="public">
+    <compoundname>tvm::runtime::Object</compoundname>
+    <derivedcompoundref refid="classtvm_1_1runtime_1_1ADTObj" prot="public" virt="non-virtual">tvm::runtime::ADTObj</derivedcompoundref>
+    <derivedcompoundref refid="classtvm_1_1runtime_1_1ModuleNode" prot="public" virt="non-virtual">tvm::runtime::ModuleNode</derivedcompoundref>
+    <derivedcompoundref refid="classtvm_1_1runtime_1_1NDArray_1_1Container" prot="public" virt="non-virtual">tvm::runtime::NDArray::Container</derivedcompoundref>
+    <derivedcompoundref refid="classtvm_1_1runtime_1_1StringObj" prot="public" virt="non-virtual">tvm::runtime::StringObj</derivedcompoundref>
+    <derivedcompoundref refid="classtvm_1_1runtime_1_1vm_1_1ClosureObj" prot="public" virt="non-virtual">tvm::runtime::vm::ClosureObj</derivedcompoundref>
+    <includes refid="object_8h" local="no">object.h</includes>
+      <sectiondef kind="public-type">
+      <memberdef kind="typedef" id="classtvm_1_1runtime_1_1Object_1a9e84841ca982bff376a978ade0132631" prot="public" static="no">
+        <type>void(*</type>
+        <definition>typedef void(* tvm::runtime::Object::FDeleter) (Object *self)</definition>
+        <argsstring>)(Object *self)</argsstring>
+        <name>FDeleter</name>
+        <briefdescription>
+<para><ref refid="classtvm_1_1runtime_1_1Object" kindref="compound">Object</ref> deleter. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>self</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>pointer to the <ref refid="classtvm_1_1runtime_1_1Object" kindref="compound">Object</ref>. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/runtime/object.h" line="150" column="1" bodyfile="include/tvm/runtime/object.h" bodystart="150" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="classtvm_1_1runtime_1_1Object_1a55549a6c23987890246248682560a03d" prot="public" static="no">
+        <type>std::atomic&lt; int32_t &gt;</type>
+        <definition>using tvm::runtime::Object::RefCounterType =  std::atomic&lt;int32_t&gt;</definition>
+        <argsstring></argsstring>
+        <name>RefCounterType</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/runtime/object.h" line="196" column="1" bodyfile="include/tvm/runtime/object.h" bodystart="196" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-attrib">
+      <memberdef kind="variable" id="classtvm_1_1runtime_1_1Object_1a43d6bf3191bebb805eced0744d859c1e" prot="public" static="yes" mutable="no">
+        <type>constexpr const char *</type>
+        <definition>constexpr const char* tvm::runtime::Object::_type_key</definition>
+        <argsstring></argsstring>
+        <name>_type_key</name>
+        <initializer>= &quot;Object&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/runtime/object.h" line="201" column="1" bodyfile="include/tvm/runtime/object.h" bodystart="201" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classtvm_1_1runtime_1_1Object_1a55cb618bd4bbcd49317b35ea8e2996be" prot="public" static="yes" mutable="no">
+        <type>constexpr bool</type>
+        <definition>constexpr bool tvm::runtime::Object::_type_final</definition>
+        <argsstring></argsstring>
+        <name>_type_final</name>
+        <initializer>= false</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/runtime/object.h" line="211" column="1" bodyfile="include/tvm/runtime/object.h" bodystart="211" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classtvm_1_1runtime_1_1Object_1a14b234a745215da158b2386bbb34bd70" prot="public" static="yes" mutable="no">
+        <type>constexpr uint32_t</type>
+        <definition>constexpr uint32_t tvm::runtime::Object::_type_child_slots</definition>
+        <argsstring></argsstring>
+        <name>_type_child_slots</name>
+        <initializer>= 0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/runtime/object.h" line="212" column="1" bodyfile="include/tvm/runtime/object.h" bodystart="212" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classtvm_1_1runtime_1_1Object_1a05ece7bcb6bf73e88765c1f193a489ce" prot="public" static="yes" mutable="no">
+        <type>constexpr bool</type>
+        <definition>constexpr bool tvm::runtime::Object::_type_child_slots_can_overflow</definition>
+        <argsstring></argsstring>
+        <name>_type_child_slots_can_overflow</name>
+        <initializer>= true</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/runtime/object.h" line="213" column="1" bodyfile="include/tvm/runtime/object.h" bodystart="213" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classtvm_1_1runtime_1_1Object_1a74e9f076b50b8b335b4a321e9b0bf03c" prot="public" static="yes" mutable="no">
+        <type>constexpr bool</type>
+        <definition>constexpr bool tvm::runtime::Object::_type_has_method_visit_attrs</definition>
+        <argsstring></argsstring>
+        <name>_type_has_method_visit_attrs</name>
+        <initializer>= true</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/runtime/object.h" line="215" column="1" bodyfile="include/tvm/runtime/object.h" bodystart="215" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classtvm_1_1runtime_1_1Object_1a92fe62494027b70af1f7696d611c21b6" prot="public" static="yes" mutable="no">
+        <type>constexpr bool</type>
+        <definition>constexpr bool tvm::runtime::Object::_type_has_method_sequal_reduce</definition>
+        <argsstring></argsstring>
+        <name>_type_has_method_sequal_reduce</name>
+        <initializer>= false</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/runtime/object.h" line="216" column="1" bodyfile="include/tvm/runtime/object.h" bodystart="216" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classtvm_1_1runtime_1_1Object_1ac97054694d03dc5eac58315fb569ef88" prot="public" static="yes" mutable="no">
+        <type>constexpr bool</type>
+        <definition>constexpr bool tvm::runtime::Object::_type_has_method_shash_reduce</definition>
+        <argsstring></argsstring>
+        <name>_type_has_method_shash_reduce</name>
+        <initializer>= false</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/runtime/object.h" line="217" column="1" bodyfile="include/tvm/runtime/object.h" bodystart="217" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classtvm_1_1runtime_1_1Object_1af6aed95d70af7e44ce376a8d7be6c5f1" prot="public" static="yes" mutable="no">
+        <type>constexpr uint32_t</type>
+        <definition>constexpr uint32_t tvm::runtime::Object::_type_index</definition>
+        <argsstring></argsstring>
+        <name>_type_index</name>
+        <initializer>= TypeIndex::kDynamic</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/runtime/object.h" line="221" column="1" bodyfile="include/tvm/runtime/object.h" bodystart="221" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="protected-attrib">
+      <memberdef kind="variable" id="classtvm_1_1runtime_1_1Object_1a4bfc2586cb55f2af47728187b3256255" prot="protected" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t tvm::runtime::Object::type_index_</definition>
+        <argsstring></argsstring>
+        <name>type_index_</name>
+        <initializer>{0}</initializer>
+        <briefdescription>
+<para><ref refid="classtvm_1_1Type" kindref="compound">Type</ref> index(tag) that indicates the type of the object. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/runtime/object.h" line="245" column="1" bodyfile="include/tvm/runtime/object.h" bodystart="245" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classtvm_1_1runtime_1_1Object_1a0d492efee331e2239a093f4b2017c10f" prot="protected" static="no" mutable="no">
+        <type><ref refid="classtvm_1_1runtime_1_1Object_1a55549a6c23987890246248682560a03d" kindref="member">RefCounterType</ref></type>
+        <definition>RefCounterType tvm::runtime::Object::ref_counter_</definition>
+        <argsstring></argsstring>
+        <name>ref_counter_</name>
+        <initializer>{0}</initializer>
+        <briefdescription>
+<para>The internal reference counter. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/runtime/object.h" line="247" column="1" bodyfile="include/tvm/runtime/object.h" bodystart="247" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classtvm_1_1runtime_1_1Object_1af4407d2b59132e803ff791482dbe0145" prot="protected" static="no" mutable="no">
+        <type><ref refid="classtvm_1_1runtime_1_1Object_1a9e84841ca982bff376a978ade0132631" kindref="member">FDeleter</ref></type>
+        <definition>FDeleter tvm::runtime::Object::deleter_</definition>
+        <argsstring></argsstring>
+        <name>deleter_</name>
+        <initializer>= nullptr</initializer>
+        <briefdescription>
+<para>deleter of this object to enable customized allocation. If the deleter is nullptr, no deletion will be performed. The creator of the object must always set the deleter field properly. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/runtime/object.h" line="253" column="1" bodyfile="include/tvm/runtime/object.h" bodystart="253" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="friend">
+      <memberdef kind="friend" id="classtvm_1_1runtime_1_1Object_1a8fae619f3bd1a2b2f7273d8d6525032a" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename</type>
+          </param>
+        </templateparamlist>
+        <type>friend class</type>
+        <definition>friend class ObjAllocatorBase</definition>
+        <argsstring></argsstring>
+        <name>ObjAllocatorBase</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/runtime/object.h" line="306" column="1" bodyfile="include/tvm/runtime/object.h" bodystart="306" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="friend" id="classtvm_1_1runtime_1_1Object_1a4193bb155125953e77ded93c0fb46965" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename</type>
+          </param>
+        </templateparamlist>
+        <type>friend class</type>
+        <definition>friend class ObjectPtr</definition>
+        <argsstring></argsstring>
+        <name>ObjectPtr</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/runtime/object.h" line="308" column="1" bodyfile="include/tvm/runtime/object.h" bodystart="308" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="friend" id="classtvm_1_1runtime_1_1Object_1ae0ea8b4adc6dab8c74086bceaef6b3e1" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>friend class</type>
+        <definition>friend class TVMRetValue</definition>
+        <argsstring></argsstring>
+        <name>TVMRetValue</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/runtime/object.h" line="309" column="1" bodyfile="include/tvm/runtime/object.h" bodystart="309" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="friend" id="classtvm_1_1runtime_1_1Object_1a4a8e2a2ce9dc9267dc18ac8abfd8dd16" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>friend class</type>
+        <definition>friend class ObjectInternal</definition>
+        <argsstring></argsstring>
+        <name>ObjectInternal</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/runtime/object.h" line="310" column="1" bodyfile="include/tvm/runtime/object.h" bodystart="310" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classtvm_1_1runtime_1_1Object_1a594c0d786dbc567ff6774ab11b45958a" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>uint32_t</type>
+        <definition>uint32_t tvm::runtime::Object::type_index</definition>
+        <argsstring>() const </argsstring>
+        <name>type_index</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>The internal runtime type index of the object. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/runtime/object.h" line="152" column="1" bodyfile="include/tvm/runtime/object.h" bodystart="152" bodyend="154"/>
+      </memberdef>
+      <memberdef kind="function" id="classtvm_1_1runtime_1_1Object_1a9581610ea91e0e38f57edc82e264a1b0" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>std::string</type>
+        <definition>std::string tvm::runtime::Object::GetTypeKey</definition>
+        <argsstring>() const </argsstring>
+        <name>GetTypeKey</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>the type key of the object. </para></simplesect>
+<simplesect kind="note"><para>this operation is expensive, can be used for error reporting. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/runtime/object.h" line="159" column="1" bodyfile="include/tvm/runtime/object.h" bodystart="159" bodyend="161"/>
+      </memberdef>
+      <memberdef kind="function" id="classtvm_1_1runtime_1_1Object_1ac9a7d8d3d562803c9cf91271c462b61d" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>size_t</type>
+        <definition>size_t tvm::runtime::Object::GetTypeKeyHash</definition>
+        <argsstring>() const </argsstring>
+        <name>GetTypeKeyHash</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>A hash value of the return of GetTypeKey. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/runtime/object.h" line="165" column="1" bodyfile="include/tvm/runtime/object.h" bodystart="165" bodyend="167"/>
+      </memberdef>
+      <memberdef kind="function" id="classtvm_1_1runtime_1_1Object_1af1359ebff2c328ff0bb80083937c95dd" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename TargetType</type>
+          </param>
+        </templateparamlist>
+        <type>bool</type>
+        <definition>bool tvm::runtime::Object::IsInstance</definition>
+        <argsstring>() const </argsstring>
+        <name>IsInstance</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Check if the object is an instance of TargetType. <parameterlist kind="templateparam"><parameteritem>
+<parameternamelist>
+<parametername>TargetType</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The target type to be checked. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Whether the target type is true. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/runtime/object.h" line="174" column="1" bodyfile="include/tvm/runtime/object.h" bodystart="812" bodyend="843"/>
+      </memberdef>
+      <memberdef kind="function" id="classtvm_1_1runtime_1_1Object_1a133436a9ec5c4a768b94102bf95a660b" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>tvm::runtime::Object::Object</definition>
+        <argsstring>()</argsstring>
+        <name>Object</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/runtime/object.h" line="225" column="1" bodyfile="include/tvm/runtime/object.h" bodystart="225" bodyend="225"/>
+      </memberdef>
+      <memberdef kind="function" id="classtvm_1_1runtime_1_1Object_1ab7968feb6ad38ecaffc320e13819d826" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>tvm::runtime::Object::Object</definition>
+        <argsstring>(const Object &amp;other)</argsstring>
+        <name>Object</name>
+        <param>
+          <type>const <ref refid="classtvm_1_1runtime_1_1Object" kindref="compound">Object</ref> &amp;</type>
+          <declname>other</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/runtime/object.h" line="231" column="1" bodyfile="include/tvm/runtime/object.h" bodystart="231" bodyend="232"/>
+      </memberdef>
+      <memberdef kind="function" id="classtvm_1_1runtime_1_1Object_1aa1612f69ea5b4225d4cda759cd517323" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>tvm::runtime::Object::Object</definition>
+        <argsstring>(Object &amp;&amp;other)</argsstring>
+        <name>Object</name>
+        <param>
+          <type><ref refid="classtvm_1_1runtime_1_1Object" kindref="compound">Object</ref> &amp;&amp;</type>
+          <declname>other</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/runtime/object.h" line="233" column="1" bodyfile="include/tvm/runtime/object.h" bodystart="233" bodyend="234"/>
+      </memberdef>
+      <memberdef kind="function" id="classtvm_1_1runtime_1_1Object_1a69c32fbd96181f5c21d2c878ab285e4f" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classtvm_1_1runtime_1_1Object" kindref="compound">Object</ref> &amp;</type>
+        <definition>Object&amp; tvm::runtime::Object::operator=</definition>
+        <argsstring>(const Object &amp;other)</argsstring>
+        <name>operator=</name>
+        <param>
+          <type>const <ref refid="classtvm_1_1runtime_1_1Object" kindref="compound">Object</ref> &amp;</type>
+          <declname>other</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/runtime/object.h" line="235" column="1" bodyfile="include/tvm/runtime/object.h" bodystart="235" bodyend="237"/>
+      </memberdef>
+      <memberdef kind="function" id="classtvm_1_1runtime_1_1Object_1ae341e561272ff43cdcbc927bc29ac50d" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classtvm_1_1runtime_1_1Object" kindref="compound">Object</ref> &amp;</type>
+        <definition>Object&amp; tvm::runtime::Object::operator=</definition>
+        <argsstring>(Object &amp;&amp;other)</argsstring>
+        <name>operator=</name>
+        <param>
+          <type><ref refid="classtvm_1_1runtime_1_1Object" kindref="compound">Object</ref> &amp;&amp;</type>
+          <declname>other</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/runtime/object.h" line="238" column="1" bodyfile="include/tvm/runtime/object.h" bodystart="238" bodyend="240"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="classtvm_1_1runtime_1_1Object_1a817ba6c23b7ee1821c48a75edf255a30" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>std::string</type>
+        <definition>static std::string tvm::runtime::Object::TypeIndex2Key</definition>
+        <argsstring>(uint32_t tindex)</argsstring>
+        <name>TypeIndex2Key</name>
+        <param>
+          <type>uint32_t</type>
+          <declname>tindex</declname>
+        </param>
+        <briefdescription>
+<para>Get the type key of the corresponding index from runtime. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>tindex</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The type index. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>the result. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/runtime/object.h" line="181" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classtvm_1_1runtime_1_1Object_1a6ee32a02dd44257da105fbbe5d9c8622" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>size_t</type>
+        <definition>static size_t tvm::runtime::Object::TypeIndex2KeyHash</definition>
+        <argsstring>(uint32_t tindex)</argsstring>
+        <name>TypeIndex2KeyHash</name>
+        <param>
+          <type>uint32_t</type>
+          <declname>tindex</declname>
+        </param>
+        <briefdescription>
+<para>Get the type key hash of the corresponding index from runtime. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>tindex</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The type index. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>the related key-hash. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/runtime/object.h" line="187" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classtvm_1_1runtime_1_1Object_1a6841f97e06e6614dd7e82c6dd41b818a" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>uint32_t</type>
+        <definition>static uint32_t tvm::runtime::Object::TypeKey2Index</definition>
+        <argsstring>(const std::string &amp;key)</argsstring>
+        <name>TypeKey2Index</name>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>key</declname>
+        </param>
+        <briefdescription>
+<para>Get the type index of the corresponding key from runtime. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>key</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The type key. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>the result. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/runtime/object.h" line="193" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classtvm_1_1runtime_1_1Object_1a5fbebc47be111ecc1d5869bcc0476e21" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>uint32_t</type>
+        <definition>static uint32_t tvm::runtime::Object::_GetOrAllocRuntimeTypeIndex</definition>
+        <argsstring>()</argsstring>
+        <name>_GetOrAllocRuntimeTypeIndex</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/runtime/object.h" line="203" column="1" bodyfile="include/tvm/runtime/object.h" bodystart="203" bodyend="205"/>
+      </memberdef>
+      <memberdef kind="function" id="classtvm_1_1runtime_1_1Object_1ad94d79729ac85aa7c976e23d39066383" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>uint32_t</type>
+        <definition>static uint32_t tvm::runtime::Object::RuntimeTypeIndex</definition>
+        <argsstring>()</argsstring>
+        <name>RuntimeTypeIndex</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/runtime/object.h" line="206" column="1" bodyfile="include/tvm/runtime/object.h" bodystart="206" bodyend="208"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="protected-static-func">
+      <memberdef kind="function" id="classtvm_1_1runtime_1_1Object_1a726972ff315c446192df94027ddea032" prot="protected" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>uint32_t</type>
+        <definition>static uint32_t tvm::runtime::Object::GetOrAllocRuntimeTypeIndex</definition>
+        <argsstring>(const std::string &amp;key, uint32_t static_tindex, uint32_t parent_tindex, uint32_t type_child_slots, bool type_child_slots_can_overflow)</argsstring>
+        <name>GetOrAllocRuntimeTypeIndex</name>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>key</declname>
+        </param>
+        <param>
+          <type>uint32_t</type>
+          <declname>static_tindex</declname>
+        </param>
+        <param>
+          <type>uint32_t</type>
+          <declname>parent_tindex</declname>
+        </param>
+        <param>
+          <type>uint32_t</type>
+          <declname>type_child_slots</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>type_child_slots_can_overflow</declname>
+        </param>
+        <briefdescription>
+<para>Get the type index using type key. </para>        </briefdescription>
+        <detaileddescription>
+<para>When the function is first time called for a type, it will register the type to the type table in the runtime. If the static_tindex is TypeIndex::kDynamic, the function will allocate a runtime type index. Otherwise, we will populate the type table and return the static index.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>key</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the type key. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>static_tindex</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The current _type_index field. can be TypeIndex::kDynamic. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>parent_tindex</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The index of the parent. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>type_child_slots</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Number of slots reserved for its children. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>type_child_slots_can_overflow</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Whether to allow child to overflow the slots. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The allocated type index. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/runtime/object.h" line="276" column="1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="protected-func">
+      <memberdef kind="function" id="classtvm_1_1runtime_1_1Object_1ac9e5eed7719e322117bde996a171e33a" prot="protected" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void tvm::runtime::Object::IncRef</definition>
+        <argsstring>()</argsstring>
+        <name>IncRef</name>
+        <briefdescription>
+<para>developer function, increases reference counter. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/runtime/object.h" line="285" column="1" bodyfile="include/tvm/runtime/object.h" bodystart="774" bodyend="776"/>
+      </memberdef>
+      <memberdef kind="function" id="classtvm_1_1runtime_1_1Object_1a70fb5361147634605d6595bb89381f03" prot="protected" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void tvm::runtime::Object::DecRef</definition>
+        <argsstring>()</argsstring>
+        <name>DecRef</name>
+        <briefdescription>
+<para>developer function, decrease reference counter. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="note"><para>The deleter will be called when ref_counter_ becomes zero. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/runtime/object.h" line="290" column="1" bodyfile="include/tvm/runtime/object.h" bodystart="778" bodyend="785"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="classtvm_1_1runtime_1_1Object_1a45a7e937c27335cf0a447d939790ceea" prot="private" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int tvm::runtime::Object::use_count</definition>
+        <argsstring>() const </argsstring>
+        <name>use_count</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>The usage count of the cell. </para></simplesect>
+<simplesect kind="note"><para>We use stl style naming to be consistent with known API in shared_ptr. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/runtime/object.h" line="297" column="1" bodyfile="include/tvm/runtime/object.h" bodystart="787" bodyend="789"/>
+      </memberdef>
+      <memberdef kind="function" id="classtvm_1_1runtime_1_1Object_1aa5ccb876620478f1a11667f7c341fb72" prot="private" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool tvm::runtime::Object::DerivedFrom</definition>
+        <argsstring>(uint32_t parent_tindex) const </argsstring>
+        <name>DerivedFrom</name>
+        <param>
+          <type>uint32_t</type>
+          <declname>parent_tindex</declname>
+        </param>
+        <briefdescription>
+<para>Check of this object is derived from the parent. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>parent_tindex</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The parent type index. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The derivation results. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/runtime/object.h" line="303" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>base class of all object containers. </para>    </briefdescription>
+    <detaileddescription>
+<para>Sub-class of objects should declare the following static constexpr fields:</para><para><itemizedlist>
+<listitem><para>_type_index: Static type index of the object, if assigned to TypeIndex::kDynamic the type index will be assigned during runtime. Runtime type index can be accessed by <ref refid="namespacetvm_1_1runtime_1a7d395cd724f727e86358b73b5cdeb4e4" kindref="member">ObjectType::TypeIndex()</ref>;</para></listitem><listitem><para>_type_key: The unique string identifier of tyep type.</para></listitem><listitem><para>_type_final: Whether the type is terminal type(there is no subclass of the type in the object system). This field is automatically set by marco TVM_DECLARE_FINAL_OBJECT_INFO It is still OK to sub-class a terminal object type T and construct it using make_object. But IsInstance check will only show that the object type is T(instead of the sub-class).</para></listitem></itemizedlist>
+</para><para>The following two fields are necessary for base classes that can be sub-classed.</para><para><itemizedlist>
+<listitem><para>_type_child_slots: Number of reserved type index slots for child classes. Used for runtime optimization for type checking in IsInstance. If an object&apos;s type_index is within range of [type_index, type_index + _type_child_slots] Then the object can be quickly decided as sub-class of the current object class. If not, a fallback mechanism is used to check the global type table. Recommendation: set to estimate number of children needed.</para></listitem><listitem><para>_type_child_slots_can_overflow: Whether we can add additional child classes even if the number of child classes exceeds the _type_child_slots. A fallback mechanism to check global type table will be used. Recommendation: set to false for optimal runtime speed if we know exact number of children.</para></listitem></itemizedlist>
+</para><para>Two macros are used to declare helper functions in the object:<itemizedlist>
+<listitem><para>Use TVM_DECLARE_BASE_OBJECT_INFO for object classes that can be sub-classed.</para></listitem><listitem><para>Use TVM_DECLARE_FINAL_OBJECT_INFO for object classes that cannot be sub-classed.</para></listitem></itemizedlist>
+</para><para>New objects can be created using make_object function. Which will automatically populate the type_index and deleter of the object.</para><para><simplesect kind="see"><para><ref refid="namespacetvm_1_1runtime_1a93466f4543eedc3925c66ed0e7ef2671" kindref="member">make_object</ref> </para></simplesect>
+<simplesect kind="see"><para><ref refid="classtvm_1_1runtime_1_1ObjectPtr" kindref="compound">ObjectPtr</ref> </para></simplesect>
+<simplesect kind="see"><para><ref refid="classtvm_1_1runtime_1_1ObjectRef" kindref="compound">ObjectRef</ref></para></simplesect>
+<programlisting><codeline><highlight class="normal">//<sp/>Create<sp/>a<sp/>base<sp/>object</highlight></codeline>
+<codeline><highlight class="normal">class<sp/>BaseObj<sp/>:<sp/>public<sp/>Object<sp/>{</highlight></codeline>
+<codeline><highlight class="normal"><sp/>public:</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>//<sp/>object<sp/>fields</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>int<sp/>field0;</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal"><sp/><sp/>//<sp/>object<sp/>properties</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>static<sp/>constexpr<sp/>const<sp/>uint32_t<sp/>_type_index<sp/>=<sp/>TypeIndex::kDynamic;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>static<sp/>constexpr<sp/>const<sp/>char*<sp/>_type_key<sp/>=<sp/>&quot;test.BaseObj&quot;;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>TVM_DECLARE_BASE_OBJECT_INFO(BaseObj,<sp/>Object);</highlight></codeline>
+<codeline><highlight class="normal">};</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">class<sp/>ObjLeaf<sp/>:<sp/>public<sp/>ObjBase<sp/>{</highlight></codeline>
+<codeline><highlight class="normal"><sp/>public:</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>//<sp/>fields</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>int<sp/>child_field0;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>//<sp/>object<sp/>properties</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>static<sp/>constexpr<sp/>const<sp/>uint32_t<sp/>_type_index<sp/>=<sp/>TypeIndex::kDynamic;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>static<sp/>constexpr<sp/>const<sp/>char*<sp/>_type_key<sp/>=<sp/>&quot;test.LeafObj&quot;;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>TVM_DECLARE_BASE_OBJECT_INFO(LeaffObj,<sp/>Object);</highlight></codeline>
+<codeline><highlight class="normal">};</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">//<sp/>The<sp/>following<sp/>code<sp/>should<sp/>be<sp/>put<sp/>into<sp/>a<sp/>cc<sp/>file.</highlight></codeline>
+<codeline><highlight class="normal">TVM_REGISTER_OBJECT_TYPE(ObjBase);</highlight></codeline>
+<codeline><highlight class="normal">TVM_REGISTER_OBJECT_TYPE(ObjLeaf);</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">//<sp/>Usage<sp/>example.</highlight></codeline>
+<codeline><highlight class="normal">void<sp/>TestObjects()<sp/>{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>//<sp/>create<sp/>an<sp/>object</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>ObjectRef<sp/>leaf_ref(make_object&lt;LeafObj&gt;());</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>//<sp/>cast<sp/>to<sp/>a<sp/>specific<sp/>instance</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>const<sp/>LeafObj*<sp/>leaf_ptr<sp/>=<sp/>leaf_ref.as&lt;LeafObj&gt;();</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>CHECK(leaf_ptr<sp/>!=<sp/>nullptr);</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>//<sp/>can<sp/>also<sp/>cast<sp/>to<sp/>the<sp/>base<sp/>class.</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>CHECK(leaf_ref.as&lt;BaseObj&gt;()<sp/>!=<sp/>nullptr);</highlight></codeline>
+<codeline><highlight class="normal">}</highlight></codeline>
+</programlisting> </para>    </detaileddescription>
+    <inheritancegraph>
+      <node id="5886">
+        <label>tvm::runtime::vm::VMClosureObj</label>
+        <link refid="classtvm_1_1runtime_1_1vm_1_1VMClosureObj"/>
+        <childnode refid="5884" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="5885">
+        <label>tvm::relay::InterpreterClosureObj</label>
+        <link refid="classtvm_1_1relay_1_1InterpreterClosureObj"/>
+        <childnode refid="5884" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="5876">
+        <label>tvm::runtime::Object</label>
+        <link refid="classtvm_1_1runtime_1_1Object"/>
+      </node>
+      <node id="5884">
+        <label>tvm::runtime::vm::ClosureObj</label>
+        <link refid="classtvm_1_1runtime_1_1vm_1_1ClosureObj"/>
+        <childnode refid="5876" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="5881">
+        <label>tvm::runtime::NDArray::Container</label>
+        <link refid="classtvm_1_1runtime_1_1NDArray_1_1Container"/>
+        <childnode refid="5876" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="5882">
+        <label>tvm::runtime::StringObj</label>
+        <link refid="classtvm_1_1runtime_1_1StringObj"/>
+        <childnode refid="5876" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="5880">
+        <label>tvm::runtime::vm::VirtualMachine</label>
+        <link refid="classtvm_1_1runtime_1_1vm_1_1VirtualMachine"/>
+        <childnode refid="5878" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="5883">
+        <label>tvm::runtime::StringObj::FromStd</label>
+        <link refid="classtvm_1_1runtime_1_1StringObj_1_1FromStd"/>
+        <childnode refid="5882" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="5877">
+        <label>tvm::runtime::ADTObj</label>
+        <link refid="classtvm_1_1runtime_1_1ADTObj"/>
+        <childnode refid="5876" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="5879">
+        <label>tvm::runtime::vm::Executable</label>
+        <link refid="classtvm_1_1runtime_1_1vm_1_1Executable"/>
+        <childnode refid="5878" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="5878">
+        <label>tvm::runtime::ModuleNode</label>
+        <link refid="classtvm_1_1runtime_1_1ModuleNode"/>
+        <childnode refid="5876" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="5887">
+        <label>tvm::runtime::Object</label>
+        <link refid="classtvm_1_1runtime_1_1Object"/>
+        <childnode refid="5887" relation="usage">
+          <edgelabel>#deleter_</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="include/tvm/runtime/object.h" line="144" column="1" bodyfile="include/tvm/runtime/object.h" bodystart="144" bodyend="311"/>
+    <listofallmembers>
+      <member refid="classtvm_1_1runtime_1_1Object_1a5fbebc47be111ecc1d5869bcc0476e21" prot="public" virt="non-virtual"><scope>tvm::runtime::Object</scope><name>_GetOrAllocRuntimeTypeIndex</name></member>
+      <member refid="classtvm_1_1runtime_1_1Object_1a14b234a745215da158b2386bbb34bd70" prot="public" virt="non-virtual"><scope>tvm::runtime::Object</scope><name>_type_child_slots</name></member>
+      <member refid="classtvm_1_1runtime_1_1Object_1a05ece7bcb6bf73e88765c1f193a489ce" prot="public" virt="non-virtual"><scope>tvm::runtime::Object</scope><name>_type_child_slots_can_overflow</name></member>
+      <member refid="classtvm_1_1runtime_1_1Object_1a55cb618bd4bbcd49317b35ea8e2996be" prot="public" virt="non-virtual"><scope>tvm::runtime::Object</scope><name>_type_final</name></member>
+      <member refid="classtvm_1_1runtime_1_1Object_1a92fe62494027b70af1f7696d611c21b6" prot="public" virt="non-virtual"><scope>tvm::runtime::Object</scope><name>_type_has_method_sequal_reduce</name></member>
+      <member refid="classtvm_1_1runtime_1_1Object_1ac97054694d03dc5eac58315fb569ef88" prot="public" virt="non-virtual"><scope>tvm::runtime::Object</scope><name>_type_has_method_shash_reduce</name></member>
+      <member refid="classtvm_1_1runtime_1_1Object_1a74e9f076b50b8b335b4a321e9b0bf03c" prot="public" virt="non-virtual"><scope>tvm::runtime::Object</scope><name>_type_has_method_visit_attrs</name></member>
+      <member refid="classtvm_1_1runtime_1_1Object_1af6aed95d70af7e44ce376a8d7be6c5f1" prot="public" virt="non-virtual"><scope>tvm::runtime::Object</scope><name>_type_index</name></member>
+      <member refid="classtvm_1_1runtime_1_1Object_1a43d6bf3191bebb805eced0744d859c1e" prot="public" virt="non-virtual"><scope>tvm::runtime::Object</scope><name>_type_key</name></member>
+      <member refid="classtvm_1_1runtime_1_1Object_1a70fb5361147634605d6595bb89381f03" prot="protected" virt="non-virtual"><scope>tvm::runtime::Object</scope><name>DecRef</name></member>
+      <member refid="classtvm_1_1runtime_1_1Object_1af4407d2b59132e803ff791482dbe0145" prot="protected" virt="non-virtual"><scope>tvm::runtime::Object</scope><name>deleter_</name></member>
+      <member refid="classtvm_1_1runtime_1_1Object_1aa5ccb876620478f1a11667f7c341fb72" prot="private" virt="non-virtual"><scope>tvm::runtime::Object</scope><name>DerivedFrom</name></member>
+      <member refid="classtvm_1_1runtime_1_1Object_1a9e84841ca982bff376a978ade0132631" prot="public" virt="non-virtual"><scope>tvm::runtime::Object</scope><name>FDeleter</name></member>
+      <member refid="classtvm_1_1runtime_1_1Object_1a726972ff315c446192df94027ddea032" prot="protected" virt="non-virtual"><scope>tvm::runtime::Object</scope><name>GetOrAllocRuntimeTypeIndex</name></member>
+      <member refid="classtvm_1_1runtime_1_1Object_1a9581610ea91e0e38f57edc82e264a1b0" prot="public" virt="non-virtual"><scope>tvm::runtime::Object</scope><name>GetTypeKey</name></member>
+      <member refid="classtvm_1_1runtime_1_1Object_1ac9a7d8d3d562803c9cf91271c462b61d" prot="public" virt="non-virtual"><scope>tvm::runtime::Object</scope><name>GetTypeKeyHash</name></member>
+      <member refid="classtvm_1_1runtime_1_1Object_1ac9e5eed7719e322117bde996a171e33a" prot="protected" virt="non-virtual"><scope>tvm::runtime::Object</scope><name>IncRef</name></member>
+      <member refid="classtvm_1_1runtime_1_1Object_1af1359ebff2c328ff0bb80083937c95dd" prot="public" virt="non-virtual"><scope>tvm::runtime::Object</scope><name>IsInstance</name></member>
+      <member refid="classtvm_1_1runtime_1_1Object_1a8fae619f3bd1a2b2f7273d8d6525032a" prot="private" virt="non-virtual"><scope>tvm::runtime::Object</scope><name>ObjAllocatorBase</name></member>
+      <member refid="classtvm_1_1runtime_1_1Object_1a133436a9ec5c4a768b94102bf95a660b" prot="public" virt="non-virtual"><scope>tvm::runtime::Object</scope><name>Object</name></member>
+      <member refid="classtvm_1_1runtime_1_1Object_1ab7968feb6ad38ecaffc320e13819d826" prot="public" virt="non-virtual"><scope>tvm::runtime::Object</scope><name>Object</name></member>
+      <member refid="classtvm_1_1runtime_1_1Object_1aa1612f69ea5b4225d4cda759cd517323" prot="public" virt="non-virtual"><scope>tvm::runtime::Object</scope><name>Object</name></member>
+      <member refid="classtvm_1_1runtime_1_1Object_1a4a8e2a2ce9dc9267dc18ac8abfd8dd16" prot="private" virt="non-virtual"><scope>tvm::runtime::Object</scope><name>ObjectInternal</name></member>
+      <member refid="classtvm_1_1runtime_1_1Object_1a4193bb155125953e77ded93c0fb46965" prot="private" virt="non-virtual"><scope>tvm::runtime::Object</scope><name>ObjectPtr</name></member>
+      <member refid="classtvm_1_1runtime_1_1Object_1a69c32fbd96181f5c21d2c878ab285e4f" prot="public" virt="non-virtual"><scope>tvm::runtime::Object</scope><name>operator=</name></member>
+      <member refid="classtvm_1_1runtime_1_1Object_1ae341e561272ff43cdcbc927bc29ac50d" prot="public" virt="non-virtual"><scope>tvm::runtime::Object</scope><name>operator=</name></member>
+      <member refid="classtvm_1_1runtime_1_1Object_1a0d492efee331e2239a093f4b2017c10f" prot="protected" virt="non-virtual"><scope>tvm::runtime::Object</scope><name>ref_counter_</name></member>
+      <member refid="classtvm_1_1runtime_1_1Object_1a55549a6c23987890246248682560a03d" prot="public" virt="non-virtual"><scope>tvm::runtime::Object</scope><name>RefCounterType</name></member>
+      <member refid="classtvm_1_1runtime_1_1Object_1ad94d79729ac85aa7c976e23d39066383" prot="public" virt="non-virtual"><scope>tvm::runtime::Object</scope><name>RuntimeTypeIndex</name></member>
+      <member refid="classtvm_1_1runtime_1_1Object_1ae0ea8b4adc6dab8c74086bceaef6b3e1" prot="private" virt="non-virtual"><scope>tvm::runtime::Object</scope><name>TVMRetValue</name></member>
+      <member refid="classtvm_1_1runtime_1_1Object_1a594c0d786dbc567ff6774ab11b45958a" prot="public" virt="non-virtual"><scope>tvm::runtime::Object</scope><name>type_index</name></member>
+      <member refid="classtvm_1_1runtime_1_1Object_1a4bfc2586cb55f2af47728187b3256255" prot="protected" virt="non-virtual"><scope>tvm::runtime::Object</scope><name>type_index_</name></member>
+      <member refid="classtvm_1_1runtime_1_1Object_1a817ba6c23b7ee1821c48a75edf255a30" prot="public" virt="non-virtual"><scope>tvm::runtime::Object</scope><name>TypeIndex2Key</name></member>
+      <member refid="classtvm_1_1runtime_1_1Object_1a6ee32a02dd44257da105fbbe5d9c8622" prot="public" virt="non-virtual"><scope>tvm::runtime::Object</scope><name>TypeIndex2KeyHash</name></member>
+      <member refid="classtvm_1_1runtime_1_1Object_1a6841f97e06e6614dd7e82c6dd41b818a" prot="public" virt="non-virtual"><scope>tvm::runtime::Object</scope><name>TypeKey2Index</name></member>
+      <member refid="classtvm_1_1runtime_1_1Object_1a45a7e937c27335cf0a447d939790ceea" prot="private" virt="non-virtual"><scope>tvm::runtime::Object</scope><name>use_count</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

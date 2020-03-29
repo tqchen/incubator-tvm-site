@@ -1,0 +1,99 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="classtvm_1_1relay_1_1Clause" kind="class" language="C++" prot="public">
+    <compoundname>tvm::relay::Clause</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">ObjectRef</basecompoundref>
+    <includes refid="relay_2adt_8h" local="no">adt.h</includes>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classtvm_1_1relay_1_1Clause_1a184cc12fa7b63039d56e3c11c3b9ad47" prot="public" static="no" const="no" explicit="yes" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>tvm::relay::Clause::Clause</definition>
+        <argsstring>(Pattern lhs, Expr rhs)</argsstring>
+        <name>Clause</name>
+        <param>
+          <type><ref refid="classtvm_1_1relay_1_1Pattern" kindref="compound">Pattern</ref></type>
+          <declname>lhs</declname>
+        </param>
+        <param>
+          <type><ref refid="namespacetvm_1_1relay_1a5b84e3790f89bb3fad5c7911eeb99531" kindref="member">Expr</ref></type>
+          <declname>rhs</declname>
+        </param>
+        <briefdescription>
+<para><ref refid="classtvm_1_1Constructor" kindref="compound">Constructor</ref>. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>lhs</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The pattern matched by the clause. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>rhs</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The resulting value </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/relay/adt.h" line="269" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classtvm_1_1relay_1_1Clause_1a298758d4ba110682e3ecdb1b78d27e79" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>tvm::relay::Clause::TVM_DEFINE_OBJECT_REF_METHODS</definition>
+        <argsstring>(Clause, ObjectRef, ClauseNode)</argsstring>
+        <name>TVM_DEFINE_OBJECT_REF_METHODS</name>
+        <param>
+          <type><ref refid="classtvm_1_1relay_1_1Clause" kindref="compound">Clause</ref></type>
+        </param>
+        <param>
+          <type>ObjectRef</type>
+        </param>
+        <param>
+          <type><ref refid="classtvm_1_1relay_1_1ClauseNode" kindref="compound">ClauseNode</ref></type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/relay/adt.h" line="271" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="4560">
+        <label>ObjectRef</label>
+      </node>
+      <node id="4559">
+        <label>tvm::relay::Clause</label>
+        <link refid="classtvm_1_1relay_1_1Clause"/>
+        <childnode refid="4560" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="4562">
+        <label>ObjectRef</label>
+      </node>
+      <node id="4561">
+        <label>tvm::relay::Clause</label>
+        <link refid="classtvm_1_1relay_1_1Clause"/>
+        <childnode refid="4562" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="include/tvm/relay/adt.h" line="262" column="1" bodyfile="include/tvm/relay/adt.h" bodystart="262" bodyend="272"/>
+    <listofallmembers>
+      <member refid="classtvm_1_1relay_1_1Clause_1a184cc12fa7b63039d56e3c11c3b9ad47" prot="public" virt="non-virtual"><scope>tvm::relay::Clause</scope><name>Clause</name></member>
+      <member refid="classtvm_1_1relay_1_1Clause_1a298758d4ba110682e3ecdb1b78d27e79" prot="public" virt="non-virtual"><scope>tvm::relay::Clause</scope><name>TVM_DEFINE_OBJECT_REF_METHODS</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

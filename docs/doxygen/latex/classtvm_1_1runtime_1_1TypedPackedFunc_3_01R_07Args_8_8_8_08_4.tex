@@ -1,0 +1,366 @@
+\hypertarget{classtvm_1_1runtime_1_1TypedPackedFunc_3_01R_07Args_8_8_8_08_4}{}\section{tvm\+:\+:runtime\+:\+:Typed\+Packed\+Func$<$ R(Args...)$>$ Class Template Reference}
+\label{classtvm_1_1runtime_1_1TypedPackedFunc_3_01R_07Args_8_8_8_08_4}\index{tvm\+::runtime\+::\+Typed\+Packed\+Func$<$ R(\+Args...)$>$@{tvm\+::runtime\+::\+Typed\+Packed\+Func$<$ R(\+Args...)$>$}}
+
+
+A \hyperlink{classtvm_1_1runtime_1_1PackedFunc}{Packed\+Func} wrapper to provide typed function signature. It is backed by a \hyperlink{classtvm_1_1runtime_1_1PackedFunc}{Packed\+Func} internally.  
+
+
+
+
+{\ttfamily \#include $<$packed\+\_\+func.\+h$>$}
+
+
+
+Collaboration diagram for tvm\+:\+:runtime\+:\+:Typed\+Packed\+Func$<$ R(Args...)$>$\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=226pt]{classtvm_1_1runtime_1_1TypedPackedFunc_3_01R_07Args_8_8_8_08_4__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+using \hyperlink{classtvm_1_1runtime_1_1TypedPackedFunc_3_01R_07Args_8_8_8_08_4_afaeae1b79f815895ab9ab09b444e7ba3}{T\+Self} = \hyperlink{classtvm_1_1runtime_1_1TypedPackedFunc}{Typed\+Packed\+Func}$<$ R(Args...)$>$
+\begin{DoxyCompactList}\small\item\em short hand for this function type \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classtvm_1_1runtime_1_1TypedPackedFunc_3_01R_07Args_8_8_8_08_4_a4abadc6786dd14a3aed6e2b5b342d1d6}{Typed\+Packed\+Func} ()
+\begin{DoxyCompactList}\small\item\em default constructor \end{DoxyCompactList}\item 
+\hyperlink{classtvm_1_1runtime_1_1TypedPackedFunc_3_01R_07Args_8_8_8_08_4_af45a2ceff92e6f6c394ea766a45027a0}{Typed\+Packed\+Func} (std\+::nullptr\+\_\+t null)
+\begin{DoxyCompactList}\small\item\em constructor from null \end{DoxyCompactList}\item 
+\hyperlink{classtvm_1_1runtime_1_1TypedPackedFunc_3_01R_07Args_8_8_8_08_4_afd8ee9dd9648c19b468bb4b0b00e8e4e}{Typed\+Packed\+Func} (\hyperlink{classtvm_1_1runtime_1_1PackedFunc}{Packed\+Func} \hyperlink{classtvm_1_1runtime_1_1TypedPackedFunc_3_01R_07Args_8_8_8_08_4_ac0ad0eb56ab0f12d91adb50dab38ddab}{packed})
+\begin{DoxyCompactList}\small\item\em construct by wrap a \hyperlink{classtvm_1_1runtime_1_1PackedFunc}{Packed\+Func} \end{DoxyCompactList}\item 
+\hyperlink{classtvm_1_1runtime_1_1TypedPackedFunc_3_01R_07Args_8_8_8_08_4_a6b346a6d0b601eff5a100c7a207e9c86}{Typed\+Packed\+Func} (const \hyperlink{classtvm_1_1runtime_1_1TVMRetValue}{T\+V\+M\+Ret\+Value} \&value)
+\begin{DoxyCompactList}\small\item\em constructor from \hyperlink{classtvm_1_1runtime_1_1TVMRetValue}{T\+V\+M\+Ret\+Value} \end{DoxyCompactList}\item 
+\hyperlink{classtvm_1_1runtime_1_1TypedPackedFunc_3_01R_07Args_8_8_8_08_4_a0161d426f9ca366c860ad48c384f7192}{Typed\+Packed\+Func} (const \hyperlink{classtvm_1_1runtime_1_1TVMArgValue}{T\+V\+M\+Arg\+Value} \&value)
+\begin{DoxyCompactList}\small\item\em constructor from \hyperlink{classtvm_1_1runtime_1_1TVMArgValue}{T\+V\+M\+Arg\+Value} \end{DoxyCompactList}\item 
+{\footnotesize template$<$typename F\+Lambda , typename  = typename std\+::enable\+\_\+if$<$             std\+::is\+\_\+convertible$<$\+F\+Lambda,                                 std\+::function$<$\+R(\+Args...)$>$                                 $>$\+::value$>$\+::type$>$ }\\\hyperlink{classtvm_1_1runtime_1_1TypedPackedFunc_3_01R_07Args_8_8_8_08_4_a36ca0d1876544463ee848766e70e5e96}{Typed\+Packed\+Func} (const F\+Lambda \&typed\+\_\+lambda)
+\begin{DoxyCompactList}\small\item\em construct from a lambda function with the same signature. \end{DoxyCompactList}\item 
+{\footnotesize template$<$typename F\+Lambda , typename  = typename std\+::enable\+\_\+if$<$             std\+::is\+\_\+convertible$<$\+F\+Lambda,                                 std\+::function$<$\+R(\+Args...)$>$                                 $>$\+::value$>$\+::type$>$ }\\\hyperlink{classtvm_1_1runtime_1_1TypedPackedFunc_3_01R_07Args_8_8_8_08_4_afaeae1b79f815895ab9ab09b444e7ba3}{T\+Self} \& \hyperlink{classtvm_1_1runtime_1_1TypedPackedFunc_3_01R_07Args_8_8_8_08_4_a8dd1fbae84cb9597c52977b0e8db64dc}{operator=} (F\+Lambda typed\+\_\+lambda)
+\begin{DoxyCompactList}\small\item\em copy assignment operator from typed lambda \end{DoxyCompactList}\item 
+\hyperlink{classtvm_1_1runtime_1_1TypedPackedFunc_3_01R_07Args_8_8_8_08_4_afaeae1b79f815895ab9ab09b444e7ba3}{T\+Self} \& \hyperlink{classtvm_1_1runtime_1_1TypedPackedFunc_3_01R_07Args_8_8_8_08_4_aa590b3e712e06867805b41aaf17019ed}{operator=} (\hyperlink{classtvm_1_1runtime_1_1PackedFunc}{Packed\+Func} \hyperlink{classtvm_1_1runtime_1_1TypedPackedFunc_3_01R_07Args_8_8_8_08_4_ac0ad0eb56ab0f12d91adb50dab38ddab}{packed})
+\begin{DoxyCompactList}\small\item\em copy assignment operator from \hyperlink{classtvm_1_1runtime_1_1PackedFunc}{Packed\+Func}. \end{DoxyCompactList}\item 
+R \hyperlink{classtvm_1_1runtime_1_1TypedPackedFunc_3_01R_07Args_8_8_8_08_4_ad76f4953dcc7a98bb8ad6b15994090d8}{operator()} (Args...\+args) const 
+\begin{DoxyCompactList}\small\item\em Invoke the operator. \end{DoxyCompactList}\item 
+\hyperlink{classtvm_1_1runtime_1_1TypedPackedFunc_3_01R_07Args_8_8_8_08_4_ad81c4bf7bbdfab20e9c9d58699d6c4a5}{operator Packed\+Func} () const 
+\begin{DoxyCompactList}\small\item\em convert to \hyperlink{classtvm_1_1runtime_1_1PackedFunc}{Packed\+Func} \end{DoxyCompactList}\item 
+const \hyperlink{classtvm_1_1runtime_1_1PackedFunc}{Packed\+Func} \& \hyperlink{classtvm_1_1runtime_1_1TypedPackedFunc_3_01R_07Args_8_8_8_08_4_ac0ad0eb56ab0f12d91adb50dab38ddab}{packed} () const 
+\item 
+bool \hyperlink{classtvm_1_1runtime_1_1TypedPackedFunc_3_01R_07Args_8_8_8_08_4_afa9327d129526d40c966fafc35255cad}{operator==} (std\+::nullptr\+\_\+t null) const 
+\item 
+bool \hyperlink{classtvm_1_1runtime_1_1TypedPackedFunc_3_01R_07Args_8_8_8_08_4_a890186f176c5553331af9c9de8d60e5c}{operator!=} (std\+::nullptr\+\_\+t null) const 
+\item 
+{\footnotesize template$<$typename F\+Type $>$ }\\void \hyperlink{classtvm_1_1runtime_1_1TypedPackedFunc_3_01R_07Args_8_8_8_08_4_a617bb54ee3fbe9704131229efd0d903c}{Assign\+Typed\+Lambda} (F\+Type flambda)
+\end{DoxyCompactItemize}
+\subsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+class \hyperlink{classtvm_1_1runtime_1_1TypedPackedFunc_3_01R_07Args_8_8_8_08_4_ae0ea8b4adc6dab8c74086bceaef6b3e1}{T\+V\+M\+Ret\+Value}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\subsubsection*{template$<$typename R, typename... Args$>$\\*
+class tvm\+::runtime\+::\+Typed\+Packed\+Func$<$ R(\+Args...)$>$}
+
+A \hyperlink{classtvm_1_1runtime_1_1PackedFunc}{Packed\+Func} wrapper to provide typed function signature. It is backed by a \hyperlink{classtvm_1_1runtime_1_1PackedFunc}{Packed\+Func} internally. 
+
+\label{classtvm_1_1runtime_1_1TypedPackedFunc_3_01R_07Args_8_8_8_08_4_TypedPackedFuncAnchor}%
+\hypertarget{classtvm_1_1runtime_1_1TypedPackedFunc_3_01R_07Args_8_8_8_08_4_TypedPackedFuncAnchor}{}%
+\hyperlink{classtvm_1_1runtime_1_1TypedPackedFunc}{Typed\+Packed\+Func} enables compile time type checking. \hyperlink{classtvm_1_1runtime_1_1TypedPackedFunc}{Typed\+Packed\+Func} works with the runtime system\+:
+\begin{DoxyItemize}
+\item It can be passed as an argument of \hyperlink{classtvm_1_1runtime_1_1PackedFunc}{Packed\+Func}.
+\item It can be assigned to \hyperlink{classtvm_1_1runtime_1_1TVMRetValue}{T\+V\+M\+Ret\+Value}.
+\item It can be directly converted to a type-\/erased \hyperlink{classtvm_1_1runtime_1_1PackedFunc}{Packed\+Func}.
+\end{DoxyItemize}
+
+Developers should prefer \hyperlink{classtvm_1_1runtime_1_1TypedPackedFunc}{Typed\+Packed\+Func} over \hyperlink{classtvm_1_1runtime_1_1PackedFunc}{Packed\+Func} in C++ code as it enables compile time checking. We can construct a \hyperlink{classtvm_1_1runtime_1_1TypedPackedFunc}{Typed\+Packed\+Func} from a lambda function with the same signature.
+
+
+\begin{DoxyCode}
+\textcolor{comment}{// user defined lambda function.}
+\textcolor{keyword}{auto} addone = [](\textcolor{keywordtype}{int} x)->\textcolor{keywordtype}{int} \{
+  \textcolor{keywordflow}{return} x + 1;
+\};
+\textcolor{comment}{// We can directly convert}
+\textcolor{comment}{// lambda function to TypedPackedFunc}
+TypedPackedFunc<int(int)> ftyped(addone);
+\textcolor{comment}{// invoke the function.}
+\textcolor{keywordtype}{int} y = ftyped(1);
+\textcolor{comment}{// Can be directly converted to PackedFunc}
+PackedFunc packed = ftype;
+\end{DoxyCode}
+ 
+\begin{DoxyTemplParams}{Template Parameters}
+{\em R} & The return value of the function. \\
+\hline
+{\em Args} & The argument signature of the function. \\
+\hline
+\end{DoxyTemplParams}
+
+
+\subsection{Member Typedef Documentation}
+\index{tvm\+::runtime\+::\+Typed\+Packed\+Func$<$ R(\+Args...)$>$@{tvm\+::runtime\+::\+Typed\+Packed\+Func$<$ R(\+Args...)$>$}!T\+Self@{T\+Self}}
+\index{T\+Self@{T\+Self}!tvm\+::runtime\+::\+Typed\+Packed\+Func$<$ R(\+Args...)$>$@{tvm\+::runtime\+::\+Typed\+Packed\+Func$<$ R(\+Args...)$>$}}
+\subsubsection[{\texorpdfstring{T\+Self}{TSelf}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename R , typename... Args$>$ using {\bf tvm\+::runtime\+::\+Typed\+Packed\+Func}$<$ R(Args...)$>$\+::{\bf T\+Self} =  {\bf Typed\+Packed\+Func}$<$R(Args...)$>$}\hypertarget{classtvm_1_1runtime_1_1TypedPackedFunc_3_01R_07Args_8_8_8_08_4_afaeae1b79f815895ab9ab09b444e7ba3}{}\label{classtvm_1_1runtime_1_1TypedPackedFunc_3_01R_07Args_8_8_8_08_4_afaeae1b79f815895ab9ab09b444e7ba3}
+
+
+short hand for this function type 
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\index{tvm\+::runtime\+::\+Typed\+Packed\+Func$<$ R(\+Args...)$>$@{tvm\+::runtime\+::\+Typed\+Packed\+Func$<$ R(\+Args...)$>$}!Typed\+Packed\+Func@{Typed\+Packed\+Func}}
+\index{Typed\+Packed\+Func@{Typed\+Packed\+Func}!tvm\+::runtime\+::\+Typed\+Packed\+Func$<$ R(\+Args...)$>$@{tvm\+::runtime\+::\+Typed\+Packed\+Func$<$ R(\+Args...)$>$}}
+\subsubsection[{\texorpdfstring{Typed\+Packed\+Func()}{TypedPackedFunc()}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename R , typename... Args$>$ {\bf tvm\+::runtime\+::\+Typed\+Packed\+Func}$<$ R(Args...)$>$\+::{\bf Typed\+Packed\+Func} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classtvm_1_1runtime_1_1TypedPackedFunc_3_01R_07Args_8_8_8_08_4_a4abadc6786dd14a3aed6e2b5b342d1d6}{}\label{classtvm_1_1runtime_1_1TypedPackedFunc_3_01R_07Args_8_8_8_08_4_a4abadc6786dd14a3aed6e2b5b342d1d6}
+
+
+default constructor 
+
+\index{tvm\+::runtime\+::\+Typed\+Packed\+Func$<$ R(\+Args...)$>$@{tvm\+::runtime\+::\+Typed\+Packed\+Func$<$ R(\+Args...)$>$}!Typed\+Packed\+Func@{Typed\+Packed\+Func}}
+\index{Typed\+Packed\+Func@{Typed\+Packed\+Func}!tvm\+::runtime\+::\+Typed\+Packed\+Func$<$ R(\+Args...)$>$@{tvm\+::runtime\+::\+Typed\+Packed\+Func$<$ R(\+Args...)$>$}}
+\subsubsection[{\texorpdfstring{Typed\+Packed\+Func(std\+::nullptr\+\_\+t null)}{TypedPackedFunc(std::nullptr_t null)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename R , typename... Args$>$ {\bf tvm\+::runtime\+::\+Typed\+Packed\+Func}$<$ R(Args...)$>$\+::{\bf Typed\+Packed\+Func} (
+\begin{DoxyParamCaption}
+\item[{std\+::nullptr\+\_\+t}]{null}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classtvm_1_1runtime_1_1TypedPackedFunc_3_01R_07Args_8_8_8_08_4_af45a2ceff92e6f6c394ea766a45027a0}{}\label{classtvm_1_1runtime_1_1TypedPackedFunc_3_01R_07Args_8_8_8_08_4_af45a2ceff92e6f6c394ea766a45027a0}
+
+
+constructor from null 
+
+\index{tvm\+::runtime\+::\+Typed\+Packed\+Func$<$ R(\+Args...)$>$@{tvm\+::runtime\+::\+Typed\+Packed\+Func$<$ R(\+Args...)$>$}!Typed\+Packed\+Func@{Typed\+Packed\+Func}}
+\index{Typed\+Packed\+Func@{Typed\+Packed\+Func}!tvm\+::runtime\+::\+Typed\+Packed\+Func$<$ R(\+Args...)$>$@{tvm\+::runtime\+::\+Typed\+Packed\+Func$<$ R(\+Args...)$>$}}
+\subsubsection[{\texorpdfstring{Typed\+Packed\+Func(\+Packed\+Func packed)}{TypedPackedFunc(PackedFunc packed)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename R , typename... Args$>$ {\bf tvm\+::runtime\+::\+Typed\+Packed\+Func}$<$ R(Args...)$>$\+::{\bf Typed\+Packed\+Func} (
+\begin{DoxyParamCaption}
+\item[{{\bf Packed\+Func}}]{packed}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classtvm_1_1runtime_1_1TypedPackedFunc_3_01R_07Args_8_8_8_08_4_afd8ee9dd9648c19b468bb4b0b00e8e4e}{}\label{classtvm_1_1runtime_1_1TypedPackedFunc_3_01R_07Args_8_8_8_08_4_afd8ee9dd9648c19b468bb4b0b00e8e4e}
+
+
+construct by wrap a \hyperlink{classtvm_1_1runtime_1_1PackedFunc}{Packed\+Func} 
+
+Example usage\+: 
+\begin{DoxyCode}
+PackedFunc \hyperlink{classtvm_1_1runtime_1_1TypedPackedFunc_3_01R_07Args_8_8_8_08_4_ac0ad0eb56ab0f12d91adb50dab38ddab}{packed}([](TVMArgs args, \hyperlink{classtvm_1_1runtime_1_1TypedPackedFunc_3_01R_07Args_8_8_8_08_4_ae0ea8b4adc6dab8c74086bceaef6b3e1}{TVMRetValue} *rv) \{
+  \textcolor{keywordtype}{int} x = args[0];
+  *rv = x + 1;
+ \});
+\textcolor{comment}{// construct from packed function}
+TypedPackedFunc<int(int)> ftyped(packed);
+\textcolor{comment}{// call the typed version.}
+CHECK\_EQ(ftyped(1), 2);
+\end{DoxyCode}
+
+
+
+\begin{DoxyParams}{Parameters}
+{\em packed} & The packed function \\
+\hline
+\end{DoxyParams}
+\index{tvm\+::runtime\+::\+Typed\+Packed\+Func$<$ R(\+Args...)$>$@{tvm\+::runtime\+::\+Typed\+Packed\+Func$<$ R(\+Args...)$>$}!Typed\+Packed\+Func@{Typed\+Packed\+Func}}
+\index{Typed\+Packed\+Func@{Typed\+Packed\+Func}!tvm\+::runtime\+::\+Typed\+Packed\+Func$<$ R(\+Args...)$>$@{tvm\+::runtime\+::\+Typed\+Packed\+Func$<$ R(\+Args...)$>$}}
+\subsubsection[{\texorpdfstring{Typed\+Packed\+Func(const T\+V\+M\+Ret\+Value \&value)}{TypedPackedFunc(const TVMRetValue &value)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename R , typename... Args$>$ {\bf tvm\+::runtime\+::\+Typed\+Packed\+Func}$<$ R(Args...)$>$\+::{\bf Typed\+Packed\+Func} (
+\begin{DoxyParamCaption}
+\item[{const {\bf T\+V\+M\+Ret\+Value} \&}]{value}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classtvm_1_1runtime_1_1TypedPackedFunc_3_01R_07Args_8_8_8_08_4_a6b346a6d0b601eff5a100c7a207e9c86}{}\label{classtvm_1_1runtime_1_1TypedPackedFunc_3_01R_07Args_8_8_8_08_4_a6b346a6d0b601eff5a100c7a207e9c86}
+
+
+constructor from \hyperlink{classtvm_1_1runtime_1_1TVMRetValue}{T\+V\+M\+Ret\+Value} 
+
+
+\begin{DoxyParams}{Parameters}
+{\em value} & The \hyperlink{classtvm_1_1runtime_1_1TVMRetValue}{T\+V\+M\+Ret\+Value} \\
+\hline
+\end{DoxyParams}
+\index{tvm\+::runtime\+::\+Typed\+Packed\+Func$<$ R(\+Args...)$>$@{tvm\+::runtime\+::\+Typed\+Packed\+Func$<$ R(\+Args...)$>$}!Typed\+Packed\+Func@{Typed\+Packed\+Func}}
+\index{Typed\+Packed\+Func@{Typed\+Packed\+Func}!tvm\+::runtime\+::\+Typed\+Packed\+Func$<$ R(\+Args...)$>$@{tvm\+::runtime\+::\+Typed\+Packed\+Func$<$ R(\+Args...)$>$}}
+\subsubsection[{\texorpdfstring{Typed\+Packed\+Func(const T\+V\+M\+Arg\+Value \&value)}{TypedPackedFunc(const TVMArgValue &value)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename R , typename... Args$>$ {\bf tvm\+::runtime\+::\+Typed\+Packed\+Func}$<$ R(Args...)$>$\+::{\bf Typed\+Packed\+Func} (
+\begin{DoxyParamCaption}
+\item[{const {\bf T\+V\+M\+Arg\+Value} \&}]{value}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classtvm_1_1runtime_1_1TypedPackedFunc_3_01R_07Args_8_8_8_08_4_a0161d426f9ca366c860ad48c384f7192}{}\label{classtvm_1_1runtime_1_1TypedPackedFunc_3_01R_07Args_8_8_8_08_4_a0161d426f9ca366c860ad48c384f7192}
+
+
+constructor from \hyperlink{classtvm_1_1runtime_1_1TVMArgValue}{T\+V\+M\+Arg\+Value} 
+
+
+\begin{DoxyParams}{Parameters}
+{\em value} & The \hyperlink{classtvm_1_1runtime_1_1TVMArgValue}{T\+V\+M\+Arg\+Value} \\
+\hline
+\end{DoxyParams}
+\index{tvm\+::runtime\+::\+Typed\+Packed\+Func$<$ R(\+Args...)$>$@{tvm\+::runtime\+::\+Typed\+Packed\+Func$<$ R(\+Args...)$>$}!Typed\+Packed\+Func@{Typed\+Packed\+Func}}
+\index{Typed\+Packed\+Func@{Typed\+Packed\+Func}!tvm\+::runtime\+::\+Typed\+Packed\+Func$<$ R(\+Args...)$>$@{tvm\+::runtime\+::\+Typed\+Packed\+Func$<$ R(\+Args...)$>$}}
+\subsubsection[{\texorpdfstring{Typed\+Packed\+Func(const F\+Lambda \&typed\+\_\+lambda)}{TypedPackedFunc(const FLambda &typed_lambda)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename R , typename... Args$>$ template$<$typename F\+Lambda , typename  = typename std\+::enable\+\_\+if$<$             std\+::is\+\_\+convertible$<$\+F\+Lambda,                                 std\+::function$<$\+R(\+Args...)$>$                                 $>$\+::value$>$\+::type$>$ {\bf tvm\+::runtime\+::\+Typed\+Packed\+Func}$<$ R(Args...)$>$\+::{\bf Typed\+Packed\+Func} (
+\begin{DoxyParamCaption}
+\item[{const F\+Lambda \&}]{typed\+\_\+lambda}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classtvm_1_1runtime_1_1TypedPackedFunc_3_01R_07Args_8_8_8_08_4_a36ca0d1876544463ee848766e70e5e96}{}\label{classtvm_1_1runtime_1_1TypedPackedFunc_3_01R_07Args_8_8_8_08_4_a36ca0d1876544463ee848766e70e5e96}
+
+
+construct from a lambda function with the same signature. 
+
+Example usage\+: 
+\begin{DoxyCode}
+\textcolor{keyword}{auto} typed\_lambda = [](\textcolor{keywordtype}{int} x)->\textcolor{keywordtype}{int} \{ \textcolor{keywordflow}{return} x + 1; \}
+\textcolor{comment}{// construct from packed function}
+TypedPackedFunc<int(int)> ftyped(typed\_lambda);
+\textcolor{comment}{// call the typed version.}
+CHECK\_EQ(ftyped(1), 2);
+\end{DoxyCode}
+
+
+
+\begin{DoxyParams}{Parameters}
+{\em typed\+\_\+lambda} & typed lambda function. \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyTemplParams}{Template Parameters}
+{\em F\+Lambda} & the type of the lambda function. \\
+\hline
+\end{DoxyTemplParams}
+
+
+\subsection{Member Function Documentation}
+\index{tvm\+::runtime\+::\+Typed\+Packed\+Func$<$ R(\+Args...)$>$@{tvm\+::runtime\+::\+Typed\+Packed\+Func$<$ R(\+Args...)$>$}!Assign\+Typed\+Lambda@{Assign\+Typed\+Lambda}}
+\index{Assign\+Typed\+Lambda@{Assign\+Typed\+Lambda}!tvm\+::runtime\+::\+Typed\+Packed\+Func$<$ R(\+Args...)$>$@{tvm\+::runtime\+::\+Typed\+Packed\+Func$<$ R(\+Args...)$>$}}
+\subsubsection[{\texorpdfstring{Assign\+Typed\+Lambda(\+F\+Type flambda)}{AssignTypedLambda(FType flambda)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename R , typename... Args$>$ template$<$typename F\+Type $>$ void {\bf tvm\+::runtime\+::\+Typed\+Packed\+Func}$<$ R(Args...)$>$\+::Assign\+Typed\+Lambda (
+\begin{DoxyParamCaption}
+\item[{F\+Type}]{flambda}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classtvm_1_1runtime_1_1TypedPackedFunc_3_01R_07Args_8_8_8_08_4_a617bb54ee3fbe9704131229efd0d903c}{}\label{classtvm_1_1runtime_1_1TypedPackedFunc_3_01R_07Args_8_8_8_08_4_a617bb54ee3fbe9704131229efd0d903c}
+\index{tvm\+::runtime\+::\+Typed\+Packed\+Func$<$ R(\+Args...)$>$@{tvm\+::runtime\+::\+Typed\+Packed\+Func$<$ R(\+Args...)$>$}!operator Packed\+Func@{operator Packed\+Func}}
+\index{operator Packed\+Func@{operator Packed\+Func}!tvm\+::runtime\+::\+Typed\+Packed\+Func$<$ R(\+Args...)$>$@{tvm\+::runtime\+::\+Typed\+Packed\+Func$<$ R(\+Args...)$>$}}
+\subsubsection[{\texorpdfstring{operator Packed\+Func() const }{operator PackedFunc() const }}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename R , typename... Args$>$ {\bf tvm\+::runtime\+::\+Typed\+Packed\+Func}$<$ R(Args...)$>$\+::operator {\bf Packed\+Func} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classtvm_1_1runtime_1_1TypedPackedFunc_3_01R_07Args_8_8_8_08_4_ad81c4bf7bbdfab20e9c9d58699d6c4a5}{}\label{classtvm_1_1runtime_1_1TypedPackedFunc_3_01R_07Args_8_8_8_08_4_ad81c4bf7bbdfab20e9c9d58699d6c4a5}
+
+
+convert to \hyperlink{classtvm_1_1runtime_1_1PackedFunc}{Packed\+Func} 
+
+\begin{DoxyReturn}{Returns}
+the internal \hyperlink{classtvm_1_1runtime_1_1PackedFunc}{Packed\+Func} 
+\end{DoxyReturn}
+\index{tvm\+::runtime\+::\+Typed\+Packed\+Func$<$ R(\+Args...)$>$@{tvm\+::runtime\+::\+Typed\+Packed\+Func$<$ R(\+Args...)$>$}!operator"!=@{operator"!=}}
+\index{operator"!=@{operator"!=}!tvm\+::runtime\+::\+Typed\+Packed\+Func$<$ R(\+Args...)$>$@{tvm\+::runtime\+::\+Typed\+Packed\+Func$<$ R(\+Args...)$>$}}
+\subsubsection[{\texorpdfstring{operator"!=(std\+::nullptr\+\_\+t null) const }{operator!=(std::nullptr_t null) const }}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename R , typename... Args$>$ bool {\bf tvm\+::runtime\+::\+Typed\+Packed\+Func}$<$ R(Args...)$>$\+::{\bf operator!}= (
+\begin{DoxyParamCaption}
+\item[{std\+::nullptr\+\_\+t}]{null}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classtvm_1_1runtime_1_1TypedPackedFunc_3_01R_07Args_8_8_8_08_4_a890186f176c5553331af9c9de8d60e5c}{}\label{classtvm_1_1runtime_1_1TypedPackedFunc_3_01R_07Args_8_8_8_08_4_a890186f176c5553331af9c9de8d60e5c}
+\begin{DoxyReturn}{Returns}
+Whether the packed function is not nullptr 
+\end{DoxyReturn}
+\index{tvm\+::runtime\+::\+Typed\+Packed\+Func$<$ R(\+Args...)$>$@{tvm\+::runtime\+::\+Typed\+Packed\+Func$<$ R(\+Args...)$>$}!operator()@{operator()}}
+\index{operator()@{operator()}!tvm\+::runtime\+::\+Typed\+Packed\+Func$<$ R(\+Args...)$>$@{tvm\+::runtime\+::\+Typed\+Packed\+Func$<$ R(\+Args...)$>$}}
+\subsubsection[{\texorpdfstring{operator()(\+Args...\+args) const }{operator()(Args...args) const }}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename R , typename... Args$>$ R {\bf tvm\+::runtime\+::\+Typed\+Packed\+Func}$<$ R(Args...)$>$\+::operator() (
+\begin{DoxyParamCaption}
+\item[{Args...}]{args}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classtvm_1_1runtime_1_1TypedPackedFunc_3_01R_07Args_8_8_8_08_4_ad76f4953dcc7a98bb8ad6b15994090d8}{}\label{classtvm_1_1runtime_1_1TypedPackedFunc_3_01R_07Args_8_8_8_08_4_ad76f4953dcc7a98bb8ad6b15994090d8}
+
+
+Invoke the operator. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em args} & The arguments \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The return value. 
+\end{DoxyReturn}
+\index{tvm\+::runtime\+::\+Typed\+Packed\+Func$<$ R(\+Args...)$>$@{tvm\+::runtime\+::\+Typed\+Packed\+Func$<$ R(\+Args...)$>$}!operator=@{operator=}}
+\index{operator=@{operator=}!tvm\+::runtime\+::\+Typed\+Packed\+Func$<$ R(\+Args...)$>$@{tvm\+::runtime\+::\+Typed\+Packed\+Func$<$ R(\+Args...)$>$}}
+\subsubsection[{\texorpdfstring{operator=(\+F\+Lambda typed\+\_\+lambda)}{operator=(FLambda typed_lambda)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename R , typename... Args$>$ template$<$typename F\+Lambda , typename  = typename std\+::enable\+\_\+if$<$             std\+::is\+\_\+convertible$<$\+F\+Lambda,                                 std\+::function$<$\+R(\+Args...)$>$                                 $>$\+::value$>$\+::type$>$ {\bf T\+Self}\& {\bf tvm\+::runtime\+::\+Typed\+Packed\+Func}$<$ R(Args...)$>$\+::operator= (
+\begin{DoxyParamCaption}
+\item[{F\+Lambda}]{typed\+\_\+lambda}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classtvm_1_1runtime_1_1TypedPackedFunc_3_01R_07Args_8_8_8_08_4_a8dd1fbae84cb9597c52977b0e8db64dc}{}\label{classtvm_1_1runtime_1_1TypedPackedFunc_3_01R_07Args_8_8_8_08_4_a8dd1fbae84cb9597c52977b0e8db64dc}
+
+
+copy assignment operator from typed lambda 
+
+Example usage\+: 
+\begin{DoxyCode}
+\textcolor{comment}{// construct from packed function}
+TypedPackedFunc<int(int)> ftyped;
+ftyped = [](\textcolor{keywordtype}{int} x) \{ \textcolor{keywordflow}{return} x + 1; \}
+\textcolor{comment}{// call the typed version.}
+CHECK\_EQ(ftyped(1), 2);
+\end{DoxyCode}
+
+
+
+\begin{DoxyParams}{Parameters}
+{\em typed\+\_\+lambda} & typed lambda function. \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyTemplParams}{Template Parameters}
+{\em F\+Lambda} & the type of the lambda function. \\
+\hline
+\end{DoxyTemplParams}
+\begin{DoxyReturn}{Returns}
+reference to self. 
+\end{DoxyReturn}
+\index{tvm\+::runtime\+::\+Typed\+Packed\+Func$<$ R(\+Args...)$>$@{tvm\+::runtime\+::\+Typed\+Packed\+Func$<$ R(\+Args...)$>$}!operator=@{operator=}}
+\index{operator=@{operator=}!tvm\+::runtime\+::\+Typed\+Packed\+Func$<$ R(\+Args...)$>$@{tvm\+::runtime\+::\+Typed\+Packed\+Func$<$ R(\+Args...)$>$}}
+\subsubsection[{\texorpdfstring{operator=(\+Packed\+Func packed)}{operator=(PackedFunc packed)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename R , typename... Args$>$ {\bf T\+Self}\& {\bf tvm\+::runtime\+::\+Typed\+Packed\+Func}$<$ R(Args...)$>$\+::operator= (
+\begin{DoxyParamCaption}
+\item[{{\bf Packed\+Func}}]{packed}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classtvm_1_1runtime_1_1TypedPackedFunc_3_01R_07Args_8_8_8_08_4_aa590b3e712e06867805b41aaf17019ed}{}\label{classtvm_1_1runtime_1_1TypedPackedFunc_3_01R_07Args_8_8_8_08_4_aa590b3e712e06867805b41aaf17019ed}
+
+
+copy assignment operator from \hyperlink{classtvm_1_1runtime_1_1PackedFunc}{Packed\+Func}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em packed} & The packed function. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+reference to self. 
+\end{DoxyReturn}
+\index{tvm\+::runtime\+::\+Typed\+Packed\+Func$<$ R(\+Args...)$>$@{tvm\+::runtime\+::\+Typed\+Packed\+Func$<$ R(\+Args...)$>$}!operator==@{operator==}}
+\index{operator==@{operator==}!tvm\+::runtime\+::\+Typed\+Packed\+Func$<$ R(\+Args...)$>$@{tvm\+::runtime\+::\+Typed\+Packed\+Func$<$ R(\+Args...)$>$}}
+\subsubsection[{\texorpdfstring{operator==(std\+::nullptr\+\_\+t null) const }{operator==(std::nullptr_t null) const }}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename R , typename... Args$>$ bool {\bf tvm\+::runtime\+::\+Typed\+Packed\+Func}$<$ R(Args...)$>$\+::operator== (
+\begin{DoxyParamCaption}
+\item[{std\+::nullptr\+\_\+t}]{null}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classtvm_1_1runtime_1_1TypedPackedFunc_3_01R_07Args_8_8_8_08_4_afa9327d129526d40c966fafc35255cad}{}\label{classtvm_1_1runtime_1_1TypedPackedFunc_3_01R_07Args_8_8_8_08_4_afa9327d129526d40c966fafc35255cad}
+\begin{DoxyReturn}{Returns}
+Whether the packed function is nullptr 
+\end{DoxyReturn}
+\index{tvm\+::runtime\+::\+Typed\+Packed\+Func$<$ R(\+Args...)$>$@{tvm\+::runtime\+::\+Typed\+Packed\+Func$<$ R(\+Args...)$>$}!packed@{packed}}
+\index{packed@{packed}!tvm\+::runtime\+::\+Typed\+Packed\+Func$<$ R(\+Args...)$>$@{tvm\+::runtime\+::\+Typed\+Packed\+Func$<$ R(\+Args...)$>$}}
+\subsubsection[{\texorpdfstring{packed() const }{packed() const }}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename R , typename... Args$>$ const {\bf Packed\+Func}\& {\bf tvm\+::runtime\+::\+Typed\+Packed\+Func}$<$ R(Args...)$>$\+::packed (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classtvm_1_1runtime_1_1TypedPackedFunc_3_01R_07Args_8_8_8_08_4_ac0ad0eb56ab0f12d91adb50dab38ddab}{}\label{classtvm_1_1runtime_1_1TypedPackedFunc_3_01R_07Args_8_8_8_08_4_ac0ad0eb56ab0f12d91adb50dab38ddab}
+\begin{DoxyReturn}{Returns}
+reference the internal \hyperlink{classtvm_1_1runtime_1_1PackedFunc}{Packed\+Func} 
+\end{DoxyReturn}
+
+
+\subsection{Friends And Related Function Documentation}
+\index{tvm\+::runtime\+::\+Typed\+Packed\+Func$<$ R(\+Args...)$>$@{tvm\+::runtime\+::\+Typed\+Packed\+Func$<$ R(\+Args...)$>$}!T\+V\+M\+Ret\+Value@{T\+V\+M\+Ret\+Value}}
+\index{T\+V\+M\+Ret\+Value@{T\+V\+M\+Ret\+Value}!tvm\+::runtime\+::\+Typed\+Packed\+Func$<$ R(\+Args...)$>$@{tvm\+::runtime\+::\+Typed\+Packed\+Func$<$ R(\+Args...)$>$}}
+\subsubsection[{\texorpdfstring{T\+V\+M\+Ret\+Value}{TVMRetValue}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename R , typename... Args$>$ friend class {\bf T\+V\+M\+Ret\+Value}\hspace{0.3cm}{\ttfamily [friend]}}\hypertarget{classtvm_1_1runtime_1_1TypedPackedFunc_3_01R_07Args_8_8_8_08_4_ae0ea8b4adc6dab8c74086bceaef6b3e1}{}\label{classtvm_1_1runtime_1_1TypedPackedFunc_3_01R_07Args_8_8_8_08_4_ae0ea8b4adc6dab8c74086bceaef6b3e1}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+include/tvm/runtime/\hyperlink{packed__func_8h}{packed\+\_\+func.\+h}\end{DoxyCompactItemize}

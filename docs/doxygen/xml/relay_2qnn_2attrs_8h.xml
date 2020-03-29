@@ -1,0 +1,490 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="relay_2qnn_2attrs_8h" kind="file" language="C++">
+    <compoundname>attrs.h</compoundname>
+    <includes refid="ir_2attrs_8h" local="no">tvm/ir/attrs.h</includes>
+    <includes local="no">string</includes>
+    <incdepgraph>
+      <node id="10144">
+        <label>tvm/ir/span.h</label>
+        <link refid="span_8h"/>
+        <childnode refid="10110" relation="include">
+        </childnode>
+        <childnode refid="10120" relation="include">
+        </childnode>
+        <childnode refid="10117" relation="include">
+        </childnode>
+      </node>
+      <node id="10119">
+        <label>atomic</label>
+      </node>
+      <node id="10134">
+        <label>functional</label>
+      </node>
+      <node id="10136">
+        <label>limits</label>
+      </node>
+      <node id="10125">
+        <label>tvm/runtime/module.h</label>
+        <link refid="runtime_2module_8h"/>
+        <childnode refid="10126" relation="include">
+        </childnode>
+        <childnode refid="10112" relation="include">
+        </childnode>
+        <childnode refid="10110" relation="include">
+        </childnode>
+        <childnode refid="10121" relation="include">
+        </childnode>
+        <childnode refid="10127" relation="include">
+        </childnode>
+        <childnode refid="10128" relation="include">
+        </childnode>
+        <childnode refid="10117" relation="include">
+        </childnode>
+        <childnode refid="10129" relation="include">
+        </childnode>
+        <childnode refid="10124" relation="include">
+        </childnode>
+      </node>
+      <node id="10124">
+        <label>tvm/runtime/packed_func.h</label>
+        <link refid="packed__func_8h"/>
+        <childnode refid="10111" relation="include">
+        </childnode>
+        <childnode refid="10112" relation="include">
+        </childnode>
+        <childnode refid="10125" relation="include">
+        </childnode>
+        <childnode refid="10130" relation="include">
+        </childnode>
+        <childnode refid="10133" relation="include">
+        </childnode>
+        <childnode refid="10110" relation="include">
+        </childnode>
+        <childnode refid="10134" relation="include">
+        </childnode>
+        <childnode refid="10135" relation="include">
+        </childnode>
+        <childnode refid="10128" relation="include">
+        </childnode>
+        <childnode refid="10117" relation="include">
+        </childnode>
+        <childnode refid="10136" relation="include">
+        </childnode>
+        <childnode refid="10127" relation="include">
+        </childnode>
+        <childnode refid="10118" relation="include">
+        </childnode>
+        <childnode refid="10116" relation="include">
+        </childnode>
+      </node>
+      <node id="10138">
+        <label>tvm/node/functor.h</label>
+        <link refid="functor_8h"/>
+        <childnode refid="10111" relation="include">
+        </childnode>
+        <childnode refid="10110" relation="include">
+        </childnode>
+        <childnode refid="10128" relation="include">
+        </childnode>
+        <childnode refid="10116" relation="include">
+        </childnode>
+        <childnode refid="10118" relation="include">
+        </childnode>
+      </node>
+      <node id="10110">
+        <label>tvm/runtime/object.h</label>
+        <link refid="object_8h"/>
+        <childnode refid="10111" relation="include">
+        </childnode>
+        <childnode refid="10112" relation="include">
+        </childnode>
+        <childnode refid="10116" relation="include">
+        </childnode>
+        <childnode refid="10117" relation="include">
+        </childnode>
+        <childnode refid="10118" relation="include">
+        </childnode>
+        <childnode refid="10119" relation="include">
+        </childnode>
+      </node>
+      <node id="10114">
+        <label>stdint.h</label>
+      </node>
+      <node id="10130">
+        <label>tvm/runtime/ndarray.h</label>
+        <link refid="ndarray_8h"/>
+        <childnode refid="10112" relation="include">
+        </childnode>
+        <childnode refid="10110" relation="include">
+        </childnode>
+        <childnode refid="10131" relation="include">
+        </childnode>
+        <childnode refid="10119" relation="include">
+        </childnode>
+        <childnode refid="10128" relation="include">
+        </childnode>
+        <childnode refid="10118" relation="include">
+        </childnode>
+      </node>
+      <node id="10141">
+        <label>tvm/node/structural_hash.h</label>
+        <link refid="structural__hash_8h"/>
+        <childnode refid="10133" relation="include">
+        </childnode>
+        <childnode refid="10138" relation="include">
+        </childnode>
+        <childnode refid="10139" relation="include">
+        </childnode>
+        <childnode refid="10117" relation="include">
+        </childnode>
+        <childnode refid="10134" relation="include">
+        </childnode>
+      </node>
+      <node id="10117">
+        <label>string</label>
+      </node>
+      <node id="10108">
+        <label>dmlc/common.h</label>
+      </node>
+      <node id="10142">
+        <label>tvm/node/repr_printer.h</label>
+        <link refid="repr__printer_8h"/>
+        <childnode refid="10138" relation="include">
+        </childnode>
+        <childnode refid="10143" relation="include">
+        </childnode>
+      </node>
+      <node id="10139">
+        <label>tvm/node/container.h</label>
+        <link refid="node_2container_8h"/>
+        <childnode refid="10110" relation="include">
+        </childnode>
+        <childnode refid="10121" relation="include">
+        </childnode>
+        <childnode refid="10124" relation="include">
+        </childnode>
+        <childnode refid="10116" relation="include">
+        </childnode>
+        <childnode refid="10128" relation="include">
+        </childnode>
+        <childnode refid="10140" relation="include">
+        </childnode>
+        <childnode refid="10129" relation="include">
+        </childnode>
+        <childnode refid="10118" relation="include">
+        </childnode>
+        <childnode refid="10117" relation="include">
+        </childnode>
+      </node>
+      <node id="10115">
+        <label>stddef.h</label>
+      </node>
+      <node id="10107">
+        <label>tvm/ir/attrs.h</label>
+        <link refid="ir_2attrs_8h"/>
+        <childnode refid="10108" relation="include">
+        </childnode>
+        <childnode refid="10109" relation="include">
+        </childnode>
+        <childnode refid="10124" relation="include">
+        </childnode>
+        <childnode refid="10129" relation="include">
+        </childnode>
+        <childnode refid="10128" relation="include">
+        </childnode>
+        <childnode refid="10134" relation="include">
+        </childnode>
+        <childnode refid="10116" relation="include">
+        </childnode>
+        <childnode refid="10117" relation="include">
+        </childnode>
+        <childnode refid="10118" relation="include">
+        </childnode>
+      </node>
+      <node id="10109">
+        <label>tvm/ir/expr.h</label>
+        <link refid="ir_2expr_8h"/>
+        <childnode refid="10110" relation="include">
+        </childnode>
+        <childnode refid="10120" relation="include">
+        </childnode>
+        <childnode refid="10139" relation="include">
+        </childnode>
+        <childnode refid="10144" relation="include">
+        </childnode>
+        <childnode refid="10145" relation="include">
+        </childnode>
+        <childnode refid="10117" relation="include">
+        </childnode>
+        <childnode refid="10146" relation="include">
+        </childnode>
+        <childnode refid="10136" relation="include">
+        </childnode>
+        <childnode refid="10116" relation="include">
+        </childnode>
+      </node>
+      <node id="10135">
+        <label>tuple</label>
+      </node>
+      <node id="10111">
+        <label>dmlc/logging.h</label>
+      </node>
+      <node id="10128">
+        <label>vector</label>
+      </node>
+      <node id="10137">
+        <label>tvm/node/structural_equal.h</label>
+        <link refid="structural__equal_8h"/>
+        <childnode refid="10133" relation="include">
+        </childnode>
+        <childnode refid="10138" relation="include">
+        </childnode>
+        <childnode refid="10139" relation="include">
+        </childnode>
+        <childnode refid="10117" relation="include">
+        </childnode>
+      </node>
+      <node id="10126">
+        <label>dmlc/io.h</label>
+      </node>
+      <node id="10112">
+        <label>tvm/runtime/c_runtime_api.h</label>
+        <link refid="c__runtime__api_8h"/>
+        <childnode refid="10113" relation="include">
+        </childnode>
+        <childnode refid="10114" relation="include">
+        </childnode>
+        <childnode refid="10115" relation="include">
+        </childnode>
+      </node>
+      <node id="10145">
+        <label>tvm/ir/type.h</label>
+        <link refid="ir_2type_8h"/>
+        <childnode refid="10110" relation="include">
+        </childnode>
+        <childnode refid="10133" relation="include">
+        </childnode>
+        <childnode refid="10120" relation="include">
+        </childnode>
+        <childnode refid="10139" relation="include">
+        </childnode>
+        <childnode refid="10144" relation="include">
+        </childnode>
+        <childnode refid="10117" relation="include">
+        </childnode>
+      </node>
+      <node id="10118">
+        <label>utility</label>
+      </node>
+      <node id="10120">
+        <label>tvm/node/node.h</label>
+        <link refid="node_8h"/>
+        <childnode refid="10112" relation="include">
+        </childnode>
+        <childnode refid="10110" relation="include">
+        </childnode>
+        <childnode refid="10121" relation="include">
+        </childnode>
+        <childnode refid="10123" relation="include">
+        </childnode>
+        <childnode refid="10142" relation="include">
+        </childnode>
+        <childnode refid="10139" relation="include">
+        </childnode>
+        <childnode refid="10137" relation="include">
+        </childnode>
+        <childnode refid="10141" relation="include">
+        </childnode>
+        <childnode refid="10117" relation="include">
+        </childnode>
+        <childnode refid="10128" relation="include">
+        </childnode>
+        <childnode refid="10118" relation="include">
+        </childnode>
+        <childnode refid="10116" relation="include">
+        </childnode>
+      </node>
+      <node id="10132">
+        <label>dmlc/serializer.h</label>
+      </node>
+      <node id="10122">
+        <label>cstdlib</label>
+      </node>
+      <node id="10143">
+        <label>iostream</label>
+      </node>
+      <node id="10131">
+        <label>tvm/runtime/serializer.h</label>
+        <link refid="serializer_8h"/>
+        <childnode refid="10126" relation="include">
+        </childnode>
+        <childnode refid="10132" relation="include">
+        </childnode>
+        <childnode refid="10112" relation="include">
+        </childnode>
+        <childnode refid="10130" relation="include">
+        </childnode>
+      </node>
+      <node id="10129">
+        <label>unordered_map</label>
+      </node>
+      <node id="10123">
+        <label>tvm/node/reflection.h</label>
+        <link refid="reflection_8h"/>
+        <childnode refid="10112" relation="include">
+        </childnode>
+        <childnode refid="10110" relation="include">
+        </childnode>
+        <childnode refid="10121" relation="include">
+        </childnode>
+        <childnode refid="10124" relation="include">
+        </childnode>
+        <childnode refid="10130" relation="include">
+        </childnode>
+        <childnode refid="10133" relation="include">
+        </childnode>
+        <childnode refid="10137" relation="include">
+        </childnode>
+        <childnode refid="10141" relation="include">
+        </childnode>
+        <childnode refid="10128" relation="include">
+        </childnode>
+        <childnode refid="10117" relation="include">
+        </childnode>
+        <childnode refid="10116" relation="include">
+        </childnode>
+      </node>
+      <node id="10121">
+        <label>tvm/runtime/memory.h</label>
+        <link refid="runtime_2memory_8h"/>
+        <childnode refid="10110" relation="include">
+        </childnode>
+        <childnode refid="10122" relation="include">
+        </childnode>
+        <childnode refid="10118" relation="include">
+        </childnode>
+        <childnode refid="10116" relation="include">
+        </childnode>
+      </node>
+      <node id="10133">
+        <label>tvm/runtime/data_type.h</label>
+        <link refid="data__type_8h"/>
+        <childnode refid="10112" relation="include">
+        </childnode>
+        <childnode refid="10111" relation="include">
+        </childnode>
+        <childnode refid="10116" relation="include">
+        </childnode>
+      </node>
+      <node id="10116">
+        <label>type_traits</label>
+      </node>
+      <node id="10146">
+        <label>algorithm</label>
+      </node>
+      <node id="10113">
+        <label>dlpack/dlpack.h</label>
+      </node>
+      <node id="10106">
+        <label>include/tvm/relay/qnn/attrs.h</label>
+        <link refid="relay/qnn/attrs.h"/>
+        <childnode refid="10107" relation="include">
+        </childnode>
+        <childnode refid="10117" relation="include">
+        </childnode>
+      </node>
+      <node id="10127">
+        <label>memory</label>
+      </node>
+      <node id="10140">
+        <label>initializer_list</label>
+      </node>
+    </incdepgraph>
+    <innerclass refid="structtvm_1_1relay_1_1qnn_1_1RequantizeAttrs" prot="public">tvm::relay::qnn::RequantizeAttrs</innerclass>
+    <innerclass refid="structtvm_1_1relay_1_1qnn_1_1QuantizeAttrs" prot="public">tvm::relay::qnn::QuantizeAttrs</innerclass>
+    <innernamespace refid="namespacetvm">tvm</innernamespace>
+    <innernamespace refid="namespacetvm_1_1relay">tvm::relay</innernamespace>
+    <innernamespace refid="namespacetvm_1_1relay_1_1qnn">tvm::relay::qnn</innernamespace>
+    <briefdescription>
+<para>Auxiliary attributes for qnn operators. </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="2"><highlight class="comment"><sp/>*<sp/>Licensed<sp/>to<sp/>the<sp/>Apache<sp/>Software<sp/>Foundation<sp/>(ASF)<sp/>under<sp/>one</highlight></codeline>
+<codeline lineno="3"><highlight class="comment"><sp/>*<sp/>or<sp/>more<sp/>contributor<sp/>license<sp/>agreements.<sp/><sp/>See<sp/>the<sp/>NOTICE<sp/>file</highlight></codeline>
+<codeline lineno="4"><highlight class="comment"><sp/>*<sp/>distributed<sp/>with<sp/>this<sp/>work<sp/>for<sp/>additional<sp/>information</highlight></codeline>
+<codeline lineno="5"><highlight class="comment"><sp/>*<sp/>regarding<sp/>copyright<sp/>ownership.<sp/><sp/>The<sp/>ASF<sp/>licenses<sp/>this<sp/>file</highlight></codeline>
+<codeline lineno="6"><highlight class="comment"><sp/>*<sp/>to<sp/>you<sp/>under<sp/>the<sp/>Apache<sp/>License,<sp/>Version<sp/>2.0<sp/>(the</highlight></codeline>
+<codeline lineno="7"><highlight class="comment"><sp/>*<sp/>&quot;License&quot;);<sp/>you<sp/>may<sp/>not<sp/>use<sp/>this<sp/>file<sp/>except<sp/>in<sp/>compliance</highlight></codeline>
+<codeline lineno="8"><highlight class="comment"><sp/>*<sp/>with<sp/>the<sp/>License.<sp/><sp/>You<sp/>may<sp/>obtain<sp/>a<sp/>copy<sp/>of<sp/>the<sp/>License<sp/>at</highlight></codeline>
+<codeline lineno="9"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="10"><highlight class="comment"><sp/>*<sp/><sp/><sp/>http://www.apache.org/licenses/LICENSE-2.0</highlight></codeline>
+<codeline lineno="11"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="12"><highlight class="comment"><sp/>*<sp/>Unless<sp/>required<sp/>by<sp/>applicable<sp/>law<sp/>or<sp/>agreed<sp/>to<sp/>in<sp/>writing,</highlight></codeline>
+<codeline lineno="13"><highlight class="comment"><sp/>*<sp/>software<sp/>distributed<sp/>under<sp/>the<sp/>License<sp/>is<sp/>distributed<sp/>on<sp/>an</highlight></codeline>
+<codeline lineno="14"><highlight class="comment"><sp/>*<sp/>&quot;AS<sp/>IS&quot;<sp/>BASIS,<sp/>WITHOUT<sp/>WARRANTIES<sp/>OR<sp/>CONDITIONS<sp/>OF<sp/>ANY</highlight></codeline>
+<codeline lineno="15"><highlight class="comment"><sp/>*<sp/>KIND,<sp/>either<sp/>express<sp/>or<sp/>implied.<sp/><sp/>See<sp/>the<sp/>License<sp/>for<sp/>the</highlight></codeline>
+<codeline lineno="16"><highlight class="comment"><sp/>*<sp/>specific<sp/>language<sp/>governing<sp/>permissions<sp/>and<sp/>limitations</highlight></codeline>
+<codeline lineno="17"><highlight class="comment"><sp/>*<sp/>under<sp/>the<sp/>License.</highlight></codeline>
+<codeline lineno="18"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight></codeline>
+<codeline lineno="24"><highlight class="preprocessor">#ifndef<sp/>TVM_RELAY_QNN_ATTRS_H_</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>TVM_RELAY_QNN_ATTRS_H_</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;<ref refid="ir_2attrs_8h" kindref="compound">tvm/ir/attrs.h</ref>&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="28"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;string&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="29"><highlight class="normal"></highlight></codeline>
+<codeline lineno="30"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal"><ref refid="namespacetvm" kindref="compound">tvm</ref><sp/>{</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal">relay<sp/>{</highlight></codeline>
+<codeline lineno="32" refid="namespacetvm_1_1relay_1_1qnn" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal">qnn<sp/>{</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"></highlight></codeline>
+<codeline lineno="35" refid="structtvm_1_1relay_1_1qnn_1_1RequantizeAttrs" refkind="compound"><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structtvm_1_1relay_1_1qnn_1_1RequantizeAttrs" kindref="compound">RequantizeAttrs</ref><sp/>:<sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/><ref refid="classtvm_1_1AttrsNode" kindref="compound">tvm::AttrsNode</ref>&lt;RequantizeAttrs&gt;<sp/>{</highlight></codeline>
+<codeline lineno="36" refid="structtvm_1_1relay_1_1qnn_1_1RequantizeAttrs_1a0dbe4aa881fcb9dfdfe43508df598a01" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="structtvm_1_1relay_1_1qnn_1_1RequantizeAttrs_1a0dbe4aa881fcb9dfdfe43508df598a01" kindref="member">axis</ref>;</highlight></codeline>
+<codeline lineno="37" refid="structtvm_1_1relay_1_1qnn_1_1RequantizeAttrs_1ae786b4706ed872d99ad26d6c42467f87" refkind="member"><highlight class="normal"><sp/><sp/>std::string<sp/><ref refid="structtvm_1_1relay_1_1qnn_1_1RequantizeAttrs_1ae786b4706ed872d99ad26d6c42467f87" kindref="member">rounding</ref>;</highlight></codeline>
+<codeline lineno="38" refid="structtvm_1_1relay_1_1qnn_1_1RequantizeAttrs_1a1440c1a273c779470bc5aea480da930b" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="classtvm_1_1runtime_1_1DataType" kindref="compound">DataType</ref><sp/><ref refid="structtvm_1_1relay_1_1qnn_1_1RequantizeAttrs_1a1440c1a273c779470bc5aea480da930b" kindref="member">out_dtype</ref>;</highlight></codeline>
+<codeline lineno="39"><highlight class="normal"></highlight></codeline>
+<codeline lineno="40" refid="structtvm_1_1relay_1_1qnn_1_1RequantizeAttrs_1a8c68c859172c361c7bf5f517fc797833" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="structtvm_1_1relay_1_1qnn_1_1RequantizeAttrs_1a8c68c859172c361c7bf5f517fc797833" kindref="member">TVM_DECLARE_ATTRS</ref>(<ref refid="structtvm_1_1relay_1_1qnn_1_1RequantizeAttrs" kindref="compound">RequantizeAttrs</ref>,<sp/></highlight><highlight class="stringliteral">&quot;relay.attrs.RequantizeAttrs&quot;</highlight><highlight class="normal">)<sp/>{</highlight></codeline>
+<codeline lineno="41"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="ir_2attrs_8h_1a578da113eb199bad72e26c03ad24832f" kindref="member">TVM_ATTR_FIELD</ref>(axis)</highlight></codeline>
+<codeline lineno="42"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>.describe(</highlight><highlight class="stringliteral">&quot;The<sp/>output<sp/>channel<sp/>axis<sp/>for<sp/>channel<sp/>wise<sp/>quantization.<sp/>Default<sp/>value<sp/>is<sp/>-1,&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="43"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;which<sp/>corresponds<sp/>to<sp/>the<sp/>last<sp/>axis.&quot;</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="44"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>.set_default(-1);</highlight></codeline>
+<codeline lineno="45"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="ir_2attrs_8h_1a578da113eb199bad72e26c03ad24832f" kindref="member">TVM_ATTR_FIELD</ref>(rounding).set_default(</highlight><highlight class="stringliteral">&quot;UPWARD&quot;</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="46"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>.describe(</highlight><highlight class="stringliteral">&quot;Defines<sp/>the<sp/>rounding<sp/>direction<sp/>when<sp/>the<sp/>value<sp/>is<sp/>midway<sp/>between&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="47"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;two<sp/>representable<sp/>values.<sp/>There<sp/>are<sp/>two<sp/>supported<sp/>modes<sp/>-<sp/>UPWARD&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="48"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;or<sp/>TONEAREST.<sp/>Both<sp/>modes<sp/>behave<sp/>exactly<sp/>same<sp/>except<sp/>at<sp/>the&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="49"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;midpoints<sp/>between<sp/>the<sp/>two<sp/>representable<sp/>values.<sp/>At<sp/>the<sp/>midpoint,&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="50"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;UPWARD<sp/>rounds<sp/>towards<sp/>positive<sp/>infinity<sp/>(for<sp/>example<sp/>-1.5<sp/>will<sp/>be&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="51"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;rounded<sp/>to<sp/>-1).<sp/>TONEAREST<sp/>is<sp/>the<sp/>standard<sp/>rounding<sp/>where<sp/>the&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="52"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;value<sp/>is<sp/>rounded<sp/>away<sp/>from<sp/>zero<sp/>at<sp/>midpoints<sp/>(for<sp/>example,<sp/>-1.5&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="53"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;rounds<sp/>to<sp/>-2).<sp/>More<sp/>context<sp/>can<sp/>be<sp/>found<sp/>at<sp/>following<sp/>gblic<sp/>manual&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="54"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;https://www.gnu.org/software/libc/manual/html_node/Rounding.html.&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="55"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="ir_2attrs_8h_1a578da113eb199bad72e26c03ad24832f" kindref="member">TVM_ATTR_FIELD</ref>(out_dtype)</highlight></codeline>
+<codeline lineno="56"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>.set_default(<ref refid="namespacetvm_1a28c693333c2b15702b1a9a57dec0fbf5" kindref="member">NullValue&lt;DataType&gt;</ref>())</highlight></codeline>
+<codeline lineno="57"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>.describe(</highlight><highlight class="stringliteral">&quot;Output<sp/>data<sp/>type,<sp/>set<sp/>to<sp/>explicit<sp/>type<sp/>under<sp/>mixed<sp/>precision<sp/>setting&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="58"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="59"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="60"><highlight class="normal"></highlight></codeline>
+<codeline lineno="62" refid="structtvm_1_1relay_1_1qnn_1_1QuantizeAttrs" refkind="compound"><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structtvm_1_1relay_1_1qnn_1_1QuantizeAttrs" kindref="compound">QuantizeAttrs</ref><sp/>:<sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/><ref refid="classtvm_1_1AttrsNode" kindref="compound">tvm::AttrsNode</ref>&lt;QuantizeAttrs&gt;<sp/>{</highlight></codeline>
+<codeline lineno="63" refid="structtvm_1_1relay_1_1qnn_1_1QuantizeAttrs_1a556d06b77c7d1ce777b0cd91658872f8" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="classtvm_1_1runtime_1_1DataType" kindref="compound">DataType</ref><sp/><ref refid="structtvm_1_1relay_1_1qnn_1_1QuantizeAttrs_1a556d06b77c7d1ce777b0cd91658872f8" kindref="member">out_dtype</ref>;</highlight></codeline>
+<codeline lineno="64" refid="structtvm_1_1relay_1_1qnn_1_1QuantizeAttrs_1a59eb1cf9ac723b0f03512c5ba16f1c8b" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="structtvm_1_1relay_1_1qnn_1_1QuantizeAttrs_1a59eb1cf9ac723b0f03512c5ba16f1c8b" kindref="member">axis</ref>;</highlight></codeline>
+<codeline lineno="65"><highlight class="normal"></highlight></codeline>
+<codeline lineno="66" refid="structtvm_1_1relay_1_1qnn_1_1QuantizeAttrs_1a4a6266f19e38e4e770dfce4dc19873cd" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="structtvm_1_1relay_1_1qnn_1_1QuantizeAttrs_1a4a6266f19e38e4e770dfce4dc19873cd" kindref="member">TVM_DECLARE_ATTRS</ref>(<ref refid="structtvm_1_1relay_1_1qnn_1_1QuantizeAttrs" kindref="compound">QuantizeAttrs</ref>,<sp/></highlight><highlight class="stringliteral">&quot;relay.attrs.QuantizeAttrs&quot;</highlight><highlight class="normal">)<sp/>{</highlight></codeline>
+<codeline lineno="67"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="ir_2attrs_8h_1a578da113eb199bad72e26c03ad24832f" kindref="member">TVM_ATTR_FIELD</ref>(out_dtype)</highlight></codeline>
+<codeline lineno="68"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>.describe(</highlight><highlight class="stringliteral">&quot;Output<sp/>data<sp/>type,<sp/>can<sp/>be<sp/>one<sp/>of<sp/>[int8<sp/>or<sp/>uint8].&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="69"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="ir_2attrs_8h_1a578da113eb199bad72e26c03ad24832f" kindref="member">TVM_ATTR_FIELD</ref>(axis)</highlight></codeline>
+<codeline lineno="70"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>.describe(</highlight><highlight class="stringliteral">&quot;The<sp/>output<sp/>channel<sp/>axis<sp/>for<sp/>channel<sp/>wise<sp/>quantization.<sp/>Default<sp/>value<sp/>is<sp/>-1,&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="71"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;which<sp/>corresponds<sp/>to<sp/>the<sp/>last<sp/>axis.&quot;</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="72"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>.set_default(-1);</highlight></codeline>
+<codeline lineno="73"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="74"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="75"><highlight class="normal"></highlight></codeline>
+<codeline lineno="76"><highlight class="normal">}<sp/><sp/></highlight><highlight class="comment">//<sp/>namespace<sp/>qnn</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="77"><highlight class="normal">}<sp/><sp/></highlight><highlight class="comment">//<sp/>namespace<sp/>relay</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="78"><highlight class="normal">}<sp/><sp/></highlight><highlight class="comment">//<sp/>namespace<sp/>tvm</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="79"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/><sp/>//<sp/>TVM_RELAY_QNN_ATTRS_H_</highlight></codeline>
+    </programlisting>
+    <location file="include/tvm/relay/qnn/attrs.h"/>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,86 @@
+\hypertarget{include_2tvm_2relay_2attrs_2transform_8h}{}\section{include/tvm/relay/attrs/transform.h File Reference}
+\label{include_2tvm_2relay_2attrs_2transform_8h}\index{include/tvm/relay/attrs/transform.\+h@{include/tvm/relay/attrs/transform.\+h}}
+
+
+Transform operators.  
+
+
+{\ttfamily \#include $<$tvm/ir/attrs.\+h$>$}\\*
+{\ttfamily \#include $<$tvm/relay/base.\+h$>$}\\*
+{\ttfamily \#include $<$tvm/relay/expr.\+h$>$}\\*
+{\ttfamily \#include $<$string$>$}\\*
+Include dependency graph for transform.\+h\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{include_2tvm_2relay_2attrs_2transform_8h__incl}
+\end{center}
+\end{figure}
+This graph shows which files directly or indirectly include this file\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=238pt]{include_2tvm_2relay_2attrs_2transform_8h__dep__incl}
+\end{center}
+\end{figure}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{structtvm_1_1relay_1_1CastAttrs}{tvm\+::relay\+::\+Cast\+Attrs}
+\begin{DoxyCompactList}\small\item\em data type cast \end{DoxyCompactList}\item 
+struct \hyperlink{structtvm_1_1relay_1_1ExpandDimsAttrs}{tvm\+::relay\+::\+Expand\+Dims\+Attrs}
+\begin{DoxyCompactList}\small\item\em Attributes used in expand\+\_\+dims operators. \end{DoxyCompactList}\item 
+struct \hyperlink{structtvm_1_1relay_1_1ConcatenateAttrs}{tvm\+::relay\+::\+Concatenate\+Attrs}
+\begin{DoxyCompactList}\small\item\em Attributes used in concatenate operators. \end{DoxyCompactList}\item 
+struct \hyperlink{structtvm_1_1relay_1_1TransposeAttrs}{tvm\+::relay\+::\+Transpose\+Attrs}
+\begin{DoxyCompactList}\small\item\em Attributes used in transpose operators. \end{DoxyCompactList}\item 
+struct \hyperlink{structtvm_1_1relay_1_1ReshapeAttrs}{tvm\+::relay\+::\+Reshape\+Attrs}
+\begin{DoxyCompactList}\small\item\em Attributes used in reshape operators. \end{DoxyCompactList}\item 
+struct \hyperlink{structtvm_1_1relay_1_1TakeAttrs}{tvm\+::relay\+::\+Take\+Attrs}
+\item 
+struct \hyperlink{structtvm_1_1relay_1_1InitOpAttrs}{tvm\+::relay\+::\+Init\+Op\+Attrs}
+\begin{DoxyCompactList}\small\item\em Attributes that specify a tensor. \end{DoxyCompactList}\item 
+struct \hyperlink{structtvm_1_1relay_1_1ArangeAttrs}{tvm\+::relay\+::\+Arange\+Attrs}
+\begin{DoxyCompactList}\small\item\em Attributes used in arange operators. \end{DoxyCompactList}\item 
+struct \hyperlink{structtvm_1_1relay_1_1StackAttrs}{tvm\+::relay\+::\+Stack\+Attrs}
+\begin{DoxyCompactList}\small\item\em Attributes used in stack operators. \end{DoxyCompactList}\item 
+struct \hyperlink{structtvm_1_1relay_1_1RepeatAttrs}{tvm\+::relay\+::\+Repeat\+Attrs}
+\begin{DoxyCompactList}\small\item\em Attributes used in repeat operators. \end{DoxyCompactList}\item 
+struct \hyperlink{structtvm_1_1relay_1_1TileAttrs}{tvm\+::relay\+::\+Tile\+Attrs}
+\begin{DoxyCompactList}\small\item\em Attributes used in tile operators. \end{DoxyCompactList}\item 
+struct \hyperlink{structtvm_1_1relay_1_1ReverseAttrs}{tvm\+::relay\+::\+Reverse\+Attrs}
+\begin{DoxyCompactList}\small\item\em Attributes used in reverse operators. \end{DoxyCompactList}\item 
+struct \hyperlink{structtvm_1_1relay_1_1SqueezeAttrs}{tvm\+::relay\+::\+Squeeze\+Attrs}
+\begin{DoxyCompactList}\small\item\em Attributes used in squeeze operators. \end{DoxyCompactList}\item 
+struct \hyperlink{structtvm_1_1relay_1_1SplitAttrs}{tvm\+::relay\+::\+Split\+Attrs}
+\item 
+struct \hyperlink{structtvm_1_1relay_1_1StridedSliceAttrs}{tvm\+::relay\+::\+Strided\+Slice\+Attrs}
+\begin{DoxyCompactList}\small\item\em Attributes for Strided\+Slice operator. \end{DoxyCompactList}\item 
+struct \hyperlink{structtvm_1_1relay_1_1SliceLikeAttrs}{tvm\+::relay\+::\+Slice\+Like\+Attrs}
+\item 
+struct \hyperlink{structtvm_1_1relay_1_1ClipAttrs}{tvm\+::relay\+::\+Clip\+Attrs}
+\begin{DoxyCompactList}\small\item\em Attributes for Clip operator. \end{DoxyCompactList}\item 
+struct \hyperlink{structtvm_1_1relay_1_1LayoutTransformAttrs}{tvm\+::relay\+::\+Layout\+Transform\+Attrs}
+\begin{DoxyCompactList}\small\item\em Attributes for Layout\+Transform operator. \end{DoxyCompactList}\item 
+struct \hyperlink{structtvm_1_1relay_1_1ShapeOfAttrs}{tvm\+::relay\+::\+Shape\+Of\+Attrs}
+\begin{DoxyCompactList}\small\item\em Attributes for Shape\+Of operator. \end{DoxyCompactList}\item 
+struct \hyperlink{structtvm_1_1relay_1_1SequenceMaskAttrs}{tvm\+::relay\+::\+Sequence\+Mask\+Attrs}
+\item 
+struct \hyperlink{structtvm_1_1relay_1_1NdarraySizeAttrs}{tvm\+::relay\+::\+Ndarray\+Size\+Attrs}
+\begin{DoxyCompactList}\small\item\em Attributes for ndarray\+\_\+size operator. \end{DoxyCompactList}\item 
+struct \hyperlink{structtvm_1_1relay_1_1OneHotAttrs}{tvm\+::relay\+::\+One\+Hot\+Attrs}
+\begin{DoxyCompactList}\small\item\em Attributes used in one-\/hot operator. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Namespaces}
+\begin{DoxyCompactItemize}
+\item 
+ \hyperlink{namespacetvm}{tvm}
+\item 
+ \hyperlink{namespacetvm_1_1relay}{tvm\+::relay}
+\begin{DoxyCompactList}\small\item\em Relay\+: a high level functional IR for T\+VM. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Transform operators. 
+

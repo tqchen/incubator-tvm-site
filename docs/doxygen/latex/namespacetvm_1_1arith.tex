@@ -1,0 +1,419 @@
+\hypertarget{namespacetvm_1_1arith}{}\section{tvm\+:\+:arith Namespace Reference}
+\label{namespacetvm_1_1arith}\index{tvm\+::arith@{tvm\+::arith}}
+
+
+namespace of arithmetic analysis.  
+
+
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \hyperlink{classtvm_1_1arith_1_1Analyzer}{Analyzer}
+\begin{DoxyCompactList}\small\item\em \hyperlink{classtvm_1_1arith_1_1Analyzer}{Analyzer} that contains bunch of sub-\/analyzers. \end{DoxyCompactList}\item 
+class \hyperlink{classtvm_1_1arith_1_1CanonicalSimplifier}{Canonical\+Simplifier}
+\begin{DoxyCompactList}\small\item\em Canonical-\/form based simplifier. \end{DoxyCompactList}\item 
+class \hyperlink{classtvm_1_1arith_1_1ConstIntBound}{Const\+Int\+Bound}
+\begin{DoxyCompactList}\small\item\em reference class to \hyperlink{classtvm_1_1arith_1_1ConstIntBoundNode}{Const\+Int\+Bound\+Node} \end{DoxyCompactList}\item 
+class \hyperlink{classtvm_1_1arith_1_1ConstIntBoundAnalyzer}{Const\+Int\+Bound\+Analyzer}
+\begin{DoxyCompactList}\small\item\em \hyperlink{classtvm_1_1arith_1_1Analyzer}{Analyzer} to get constant integer bound over expression. \end{DoxyCompactList}\item 
+class \hyperlink{classtvm_1_1arith_1_1ConstIntBoundNode}{Const\+Int\+Bound\+Node}
+\begin{DoxyCompactList}\small\item\em Constant integer up and lower bound(inclusive). Useful for value bound analysis. \end{DoxyCompactList}\item 
+class \hyperlink{classtvm_1_1arith_1_1ConstraintContext}{Constraint\+Context}
+\begin{DoxyCompactList}\small\item\em Constraint context. \end{DoxyCompactList}\item 
+class \hyperlink{classtvm_1_1arith_1_1IntSet}{Int\+Set}
+\begin{DoxyCompactList}\small\item\em Managed reference to \hyperlink{classtvm_1_1arith_1_1IntSetNode}{Int\+Set\+Node}. \end{DoxyCompactList}\item 
+class \hyperlink{classtvm_1_1arith_1_1IntSetAnalyzer}{Int\+Set\+Analyzer}
+\begin{DoxyCompactList}\small\item\em \hyperlink{classtvm_1_1Integer}{Integer} set analyzer. \end{DoxyCompactList}\item 
+class \hyperlink{classtvm_1_1arith_1_1IntSetNode}{Int\+Set\+Node}
+\begin{DoxyCompactList}\small\item\em Base class of all \hyperlink{classtvm_1_1Integer}{Integer} set containers. represent a set of integers in one dimension. \end{DoxyCompactList}\item 
+class \hyperlink{classtvm_1_1arith_1_1ModularSet}{Modular\+Set}
+\begin{DoxyCompactList}\small\item\em reference of \hyperlink{classtvm_1_1arith_1_1ModularSetNode}{Modular\+Set\+Node} \end{DoxyCompactList}\item 
+class \hyperlink{classtvm_1_1arith_1_1ModularSetAnalyzer}{Modular\+Set\+Analyzer}
+\begin{DoxyCompactList}\small\item\em \hyperlink{classtvm_1_1arith_1_1Analyzer}{Analyzer} to get modular information over expression. \end{DoxyCompactList}\item 
+class \hyperlink{classtvm_1_1arith_1_1ModularSetNode}{Modular\+Set\+Node}
+\begin{DoxyCompactList}\small\item\em \hyperlink{classtvm_1_1Range}{Range} of a linear integer function. Use to do specify the possible index values. \end{DoxyCompactList}\item 
+class \hyperlink{classtvm_1_1arith_1_1RewriteSimplifier}{Rewrite\+Simplifier}
+\begin{DoxyCompactList}\small\item\em Rewrite-\/rule based simplifier. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+using \hyperlink{namespacetvm_1_1arith_a94daf21fa21c1f7dd83081248f26d9eb}{Expr\+Int\+Set\+Map} = std\+::unordered\+\_\+map$<$ \hyperlink{classtvm_1_1PrimExpr}{Prim\+Expr}, \hyperlink{classtvm_1_1arith_1_1IntSet}{Int\+Set}, Object\+Hash, Object\+Equal $>$
+\begin{DoxyCompactList}\small\item\em \hyperlink{classtvm_1_1Map}{Map} from Expr to \hyperlink{classtvm_1_1arith_1_1IntSet}{Int\+Set}. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Enumerations}
+\begin{DoxyCompactItemize}
+\item 
+enum \hyperlink{namespacetvm_1_1arith_aca8806e355ad3dd5f1df9c1eca9aac9d}{Sign\+Type} \{ \hyperlink{namespacetvm_1_1arith_aca8806e355ad3dd5f1df9c1eca9aac9da5eb70f55e8952b4484fe6c652138ae00}{k\+Positive}, 
+\hyperlink{namespacetvm_1_1arith_aca8806e355ad3dd5f1df9c1eca9aac9da56331fd0b2625f7ce83b369b8a0a6f2a}{k\+Negative}, 
+\hyperlink{namespacetvm_1_1arith_aca8806e355ad3dd5f1df9c1eca9aac9dab2f22d68a809adead1caf5ec7c61bf67}{k\+Zero}, 
+\hyperlink{namespacetvm_1_1arith_aca8806e355ad3dd5f1df9c1eca9aac9da8812c1a077255594d23bc1c2f3af3979}{k\+Unknown}
+ \}\begin{DoxyCompactList}\small\item\em Sign type of an integer expression. \end{DoxyCompactList}
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classtvm_1_1arith_1_1IntSet}{Int\+Set} \hyperlink{namespacetvm_1_1arith_af0860828b70ea8ff0d2f7c036c37afd5}{Deduce\+Bound} (\hyperlink{classtvm_1_1PrimExpr}{Prim\+Expr} v, \hyperlink{classtvm_1_1PrimExpr}{Prim\+Expr} cond, const \hyperlink{classtvm_1_1Map}{Map}$<$ Var, \hyperlink{classtvm_1_1arith_1_1IntSet}{Int\+Set} $>$ \&hint\+\_\+map, const \hyperlink{classtvm_1_1Map}{Map}$<$ Var, \hyperlink{classtvm_1_1arith_1_1IntSet}{Int\+Set} $>$ \&relax\+\_\+map)
+\begin{DoxyCompactList}\small\item\em Deduce the bound of the target variable in a expression, give the domain of each variables. Return undefined \hyperlink{classtvm_1_1arith_1_1IntSet}{Int\+Set} to represent failure. \end{DoxyCompactList}\item 
+\hyperlink{classtvm_1_1arith_1_1IntSet}{Int\+Set} \hyperlink{namespacetvm_1_1arith_a3658d391f2333f405abdd54a9f174c9f}{Deduce\+Bound} (\hyperlink{classtvm_1_1PrimExpr}{Prim\+Expr} v, \hyperlink{classtvm_1_1PrimExpr}{Prim\+Expr} cond, const std\+::unordered\+\_\+map$<$ const Var\+Node $\ast$, \hyperlink{classtvm_1_1arith_1_1IntSet}{Int\+Set} $>$ \&hint\+\_\+map, const std\+::unordered\+\_\+map$<$ const Var\+Node $\ast$, \hyperlink{classtvm_1_1arith_1_1IntSet}{Int\+Set} $>$ \&relax\+\_\+map)
+\begin{DoxyCompactList}\small\item\em Same as Deduce\+Bound with unordered\+\_\+map signature. \end{DoxyCompactList}\item 
+Domain \hyperlink{namespacetvm_1_1arith_a7f55bb82049e1b5f3a22fbd7b7ef3570}{Domain\+Touched} (Stmt body, const \hyperlink{classtvm_1_1te_1_1Tensor}{te\+::\+Tensor} \&tensor, bool consider\+\_\+calls, bool consider\+\_\+provides)
+\begin{DoxyCompactList}\small\item\em Infer a regular domain that covers all the calls or provides within the given statement. \end{DoxyCompactList}\item 
+\hyperlink{classtvm_1_1arith_1_1IntSet}{Int\+Set} \hyperlink{namespacetvm_1_1arith_a73160d1f944121ad2ef22205dd496fdc}{Eval\+Set} (\hyperlink{classtvm_1_1PrimExpr}{Prim\+Expr} e, const \hyperlink{classtvm_1_1Map}{Map}$<$ Iter\+Var, \hyperlink{classtvm_1_1arith_1_1IntSet}{Int\+Set} $>$ \&dom\+\_\+map)
+\begin{DoxyCompactList}\small\item\em Find an symbolic integer set that contains all possible values of e given the domain of each iteration variables. \end{DoxyCompactList}\item 
+\hyperlink{classtvm_1_1arith_1_1IntSet}{Int\+Set} \hyperlink{namespacetvm_1_1arith_a9d0d0f69e5f98e935d2bd4058d74bcfa}{Eval\+Set} (\hyperlink{classtvm_1_1PrimExpr}{Prim\+Expr} e, const std\+::unordered\+\_\+map$<$ const \hyperlink{classtvm_1_1tir_1_1VarNode}{tir\+::\+Var\+Node} $\ast$, \hyperlink{classtvm_1_1arith_1_1IntSet}{Int\+Set} $>$ \&dom\+\_\+map)
+\begin{DoxyCompactList}\small\item\em Same as Eval\+Set, but takes unordered\+\_\+map. \end{DoxyCompactList}\item 
+\hyperlink{classtvm_1_1arith_1_1IntSet}{Int\+Set} \hyperlink{namespacetvm_1_1arith_a74234ce6f7733b3d8055d781cc782df7}{Eval\+Set} (\hyperlink{classtvm_1_1Range}{Range} r, const \hyperlink{classtvm_1_1Map}{Map}$<$ Iter\+Var, \hyperlink{classtvm_1_1arith_1_1IntSet}{Int\+Set} $>$ \&dom\+\_\+map)
+\begin{DoxyCompactList}\small\item\em Find an symbolic integer set that contains is union over all the possible conditional values in dom\+\_\+map. \end{DoxyCompactList}\item 
+\hyperlink{classtvm_1_1arith_1_1IntSet}{Int\+Set} \hyperlink{namespacetvm_1_1arith_aa30b03ba03ff9cad2cad7320194dfcbe}{Eval\+Set} (\hyperlink{classtvm_1_1arith_1_1IntSet}{Int\+Set} s, const std\+::unordered\+\_\+map$<$ const Var\+Node $\ast$, \hyperlink{classtvm_1_1arith_1_1IntSet}{Int\+Set} $>$ \&dom\+\_\+map)
+\begin{DoxyCompactList}\small\item\em Find an symbolic integer set that contains is union over all the possible conditional values in dom\+\_\+map. \end{DoxyCompactList}\item 
+\hyperlink{classtvm_1_1arith_1_1IntSet}{Int\+Set} \hyperlink{namespacetvm_1_1arith_a4bf945fe43afafbedffad6d5633efad7}{Eval\+Set} (\hyperlink{classtvm_1_1Range}{Range} r, const std\+::unordered\+\_\+map$<$ const Var\+Node $\ast$, \hyperlink{classtvm_1_1arith_1_1IntSet}{Int\+Set} $>$ \&dom\+\_\+map)
+\begin{DoxyCompactList}\small\item\em Same as Eval\+Set, but takes unordered\+\_\+map. \end{DoxyCompactList}\item 
+\hyperlink{namespacetvm_1_1arith_a94daf21fa21c1f7dd83081248f26d9eb}{Expr\+Int\+Set\+Map} \hyperlink{namespacetvm_1_1arith_a8a112f07411c5e1237b0c045ff276ac6}{Eval\+Set\+For\+Each\+Sub\+Expr} (\hyperlink{classtvm_1_1PrimExpr}{Prim\+Expr} e, const std\+::unordered\+\_\+map$<$ const Var\+Node $\ast$, \hyperlink{classtvm_1_1arith_1_1IntSet}{Int\+Set} $>$ \&dom\+\_\+map)
+\begin{DoxyCompactList}\small\item\em Find the integer set of every sub-\/expression, given the domain of each iteration variables. \end{DoxyCompactList}\item 
+\hyperlink{classtvm_1_1arith_1_1IntSet}{Int\+Set} \hyperlink{namespacetvm_1_1arith_a68a0523bf0384e492ab222d30be9160e}{Union} (const \hyperlink{classtvm_1_1Array}{Array}$<$ \hyperlink{classtvm_1_1arith_1_1IntSet}{Int\+Set} $>$ \&sets)
+\begin{DoxyCompactList}\small\item\em Create an union set of all sets. \end{DoxyCompactList}\item 
+\hyperlink{classtvm_1_1arith_1_1IntSet}{Int\+Set} \hyperlink{namespacetvm_1_1arith_ad66a987ddb3d8aee69f9175bf412eb8a}{Intersect} (const \hyperlink{classtvm_1_1Array}{Array}$<$ \hyperlink{classtvm_1_1arith_1_1IntSet}{Int\+Set} $>$ \&sets)
+\begin{DoxyCompactList}\small\item\em Create an union set of all sets. \end{DoxyCompactList}\item 
+\hyperlink{classtvm_1_1Array}{Array}$<$ \hyperlink{classtvm_1_1PrimExpr}{Prim\+Expr} $>$ \hyperlink{namespacetvm_1_1arith_a87a12ee0854469b04329a961ef261559}{Detect\+Linear\+Equation} (const \hyperlink{classtvm_1_1PrimExpr}{Prim\+Expr} \&e, const \hyperlink{classtvm_1_1Array}{Array}$<$ \hyperlink{classtvm_1_1tir_1_1Var}{tir\+::\+Var} $>$ \&vars)
+\begin{DoxyCompactList}\small\item\em Detect if e can be rewritten as e = sum\+\_\+\{i=0\}$^\wedge$\{n-\/1\} var\mbox{[}i\mbox{]} $\ast$ coeff\mbox{[}i\mbox{]} + coeff\mbox{[}n\mbox{]} Where coeff\mbox{[}i\mbox{]} and base are invariant of var\mbox{[}j\mbox{]} for all i and j. \end{DoxyCompactList}\item 
+\hyperlink{classtvm_1_1Array}{Array}$<$ \hyperlink{classtvm_1_1PrimExpr}{Prim\+Expr} $>$ \hyperlink{namespacetvm_1_1arith_a739616342876c2633b87ed16c649bc91}{Detect\+Clip\+Bound} (const \hyperlink{classtvm_1_1PrimExpr}{Prim\+Expr} \&e, const \hyperlink{classtvm_1_1Array}{Array}$<$ \hyperlink{classtvm_1_1tir_1_1Var}{tir\+::\+Var} $>$ \&vars)
+\begin{DoxyCompactList}\small\item\em Detect if expression corresponds to clip bound of the vars. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+namespace of arithmetic analysis. 
+
+\subsection{Typedef Documentation}
+\index{tvm\+::arith@{tvm\+::arith}!Expr\+Int\+Set\+Map@{Expr\+Int\+Set\+Map}}
+\index{Expr\+Int\+Set\+Map@{Expr\+Int\+Set\+Map}!tvm\+::arith@{tvm\+::arith}}
+\subsubsection[{\texorpdfstring{Expr\+Int\+Set\+Map}{ExprIntSetMap}}]{\setlength{\rightskip}{0pt plus 5cm}using {\bf tvm\+::arith\+::\+Expr\+Int\+Set\+Map} = typedef std\+::unordered\+\_\+map$<${\bf Prim\+Expr}, {\bf Int\+Set}, Object\+Hash, Object\+Equal$>$}\hypertarget{namespacetvm_1_1arith_a94daf21fa21c1f7dd83081248f26d9eb}{}\label{namespacetvm_1_1arith_a94daf21fa21c1f7dd83081248f26d9eb}
+
+
+\hyperlink{classtvm_1_1Map}{Map} from Expr to \hyperlink{classtvm_1_1arith_1_1IntSet}{Int\+Set}. 
+
+
+
+\subsection{Enumeration Type Documentation}
+\index{tvm\+::arith@{tvm\+::arith}!Sign\+Type@{Sign\+Type}}
+\index{Sign\+Type@{Sign\+Type}!tvm\+::arith@{tvm\+::arith}}
+\subsubsection[{\texorpdfstring{Sign\+Type}{SignType}}]{\setlength{\rightskip}{0pt plus 5cm}enum {\bf tvm\+::arith\+::\+Sign\+Type}}\hypertarget{namespacetvm_1_1arith_aca8806e355ad3dd5f1df9c1eca9aac9d}{}\label{namespacetvm_1_1arith_aca8806e355ad3dd5f1df9c1eca9aac9d}
+
+
+Sign type of an integer expression. 
+
+\begin{Desc}
+\item[Enumerator]\par
+\begin{description}
+\index{k\+Positive@{k\+Positive}!tvm\+::arith@{tvm\+::arith}}\index{tvm\+::arith@{tvm\+::arith}!k\+Positive@{k\+Positive}}\item[{\em 
+k\+Positive\hypertarget{namespacetvm_1_1arith_aca8806e355ad3dd5f1df9c1eca9aac9da5eb70f55e8952b4484fe6c652138ae00}{}\label{namespacetvm_1_1arith_aca8806e355ad3dd5f1df9c1eca9aac9da5eb70f55e8952b4484fe6c652138ae00}
+}]\index{k\+Negative@{k\+Negative}!tvm\+::arith@{tvm\+::arith}}\index{tvm\+::arith@{tvm\+::arith}!k\+Negative@{k\+Negative}}\item[{\em 
+k\+Negative\hypertarget{namespacetvm_1_1arith_aca8806e355ad3dd5f1df9c1eca9aac9da56331fd0b2625f7ce83b369b8a0a6f2a}{}\label{namespacetvm_1_1arith_aca8806e355ad3dd5f1df9c1eca9aac9da56331fd0b2625f7ce83b369b8a0a6f2a}
+}]\index{k\+Zero@{k\+Zero}!tvm\+::arith@{tvm\+::arith}}\index{tvm\+::arith@{tvm\+::arith}!k\+Zero@{k\+Zero}}\item[{\em 
+k\+Zero\hypertarget{namespacetvm_1_1arith_aca8806e355ad3dd5f1df9c1eca9aac9dab2f22d68a809adead1caf5ec7c61bf67}{}\label{namespacetvm_1_1arith_aca8806e355ad3dd5f1df9c1eca9aac9dab2f22d68a809adead1caf5ec7c61bf67}
+}]\index{k\+Unknown@{k\+Unknown}!tvm\+::arith@{tvm\+::arith}}\index{tvm\+::arith@{tvm\+::arith}!k\+Unknown@{k\+Unknown}}\item[{\em 
+k\+Unknown\hypertarget{namespacetvm_1_1arith_aca8806e355ad3dd5f1df9c1eca9aac9da8812c1a077255594d23bc1c2f3af3979}{}\label{namespacetvm_1_1arith_aca8806e355ad3dd5f1df9c1eca9aac9da8812c1a077255594d23bc1c2f3af3979}
+}]\end{description}
+\end{Desc}
+
+
+\subsection{Function Documentation}
+\index{tvm\+::arith@{tvm\+::arith}!Deduce\+Bound@{Deduce\+Bound}}
+\index{Deduce\+Bound@{Deduce\+Bound}!tvm\+::arith@{tvm\+::arith}}
+\subsubsection[{\texorpdfstring{Deduce\+Bound(\+Prim\+Expr v, Prim\+Expr cond, const Map$<$ Var, Int\+Set $>$ \&hint\+\_\+map, const Map$<$ Var, Int\+Set $>$ \&relax\+\_\+map)}{DeduceBound(PrimExpr v, PrimExpr cond, const Map< Var, IntSet > &hint_map, const Map< Var, IntSet > &relax_map)}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Int\+Set} tvm\+::arith\+::\+Deduce\+Bound (
+\begin{DoxyParamCaption}
+\item[{{\bf Prim\+Expr}}]{v, }
+\item[{{\bf Prim\+Expr}}]{cond, }
+\item[{const {\bf Map}$<$ Var, {\bf Int\+Set} $>$ \&}]{hint\+\_\+map, }
+\item[{const {\bf Map}$<$ Var, {\bf Int\+Set} $>$ \&}]{relax\+\_\+map}
+\end{DoxyParamCaption}
+)}\hypertarget{namespacetvm_1_1arith_af0860828b70ea8ff0d2f7c036c37afd5}{}\label{namespacetvm_1_1arith_af0860828b70ea8ff0d2f7c036c37afd5}
+
+
+Deduce the bound of the target variable in a expression, give the domain of each variables. Return undefined \hyperlink{classtvm_1_1arith_1_1IntSet}{Int\+Set} to represent failure. 
+
+\begin{DoxyNote}{Note}
+The returned set may be smaller than set that contains all possible values of v that satisfies the bound.
+\end{DoxyNote}
+
+\begin{DoxyParams}{Parameters}
+{\em v} & The target variable to be deduced. \\
+\hline
+{\em cond} & The conditional expression. \\
+\hline
+{\em hint\+\_\+map} & The domain of variable, used to help deduce. \\
+\hline
+{\em relax\+\_\+map} & The domain of each variable, used to relax the domain, The deduce bound must implies e for all value in relax\+\_\+map \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+An integer set that always satisfies the condition. 
+\end{DoxyReturn}
+\index{tvm\+::arith@{tvm\+::arith}!Deduce\+Bound@{Deduce\+Bound}}
+\index{Deduce\+Bound@{Deduce\+Bound}!tvm\+::arith@{tvm\+::arith}}
+\subsubsection[{\texorpdfstring{Deduce\+Bound(\+Prim\+Expr v, Prim\+Expr cond, const std\+::unordered\+\_\+map$<$ const Var\+Node $\ast$, Int\+Set $>$ \&hint\+\_\+map, const std\+::unordered\+\_\+map$<$ const Var\+Node $\ast$, Int\+Set $>$ \&relax\+\_\+map)}{DeduceBound(PrimExpr v, PrimExpr cond, const std::unordered_map< const VarNode *, IntSet > &hint_map, const std::unordered_map< const VarNode *, IntSet > &relax_map)}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Int\+Set} tvm\+::arith\+::\+Deduce\+Bound (
+\begin{DoxyParamCaption}
+\item[{{\bf Prim\+Expr}}]{v, }
+\item[{{\bf Prim\+Expr}}]{cond, }
+\item[{const std\+::unordered\+\_\+map$<$ const Var\+Node $\ast$, {\bf Int\+Set} $>$ \&}]{hint\+\_\+map, }
+\item[{const std\+::unordered\+\_\+map$<$ const Var\+Node $\ast$, {\bf Int\+Set} $>$ \&}]{relax\+\_\+map}
+\end{DoxyParamCaption}
+)}\hypertarget{namespacetvm_1_1arith_a3658d391f2333f405abdd54a9f174c9f}{}\label{namespacetvm_1_1arith_a3658d391f2333f405abdd54a9f174c9f}
+
+
+Same as Deduce\+Bound with unordered\+\_\+map signature. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em v} & The target variable to be deduced. \\
+\hline
+{\em cond} & The conditional expression. \\
+\hline
+{\em hint\+\_\+map} & The domain of variable, used to help deduce. \\
+\hline
+{\em relax\+\_\+map} & The domain of each variable, used to relax the domain, The deduce bound mush implies e for all value in relax\+\_\+map \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+An integer set that always satisfies the condition. 
+\end{DoxyReturn}
+\index{tvm\+::arith@{tvm\+::arith}!Detect\+Clip\+Bound@{Detect\+Clip\+Bound}}
+\index{Detect\+Clip\+Bound@{Detect\+Clip\+Bound}!tvm\+::arith@{tvm\+::arith}}
+\subsubsection[{\texorpdfstring{Detect\+Clip\+Bound(const Prim\+Expr \&e, const Array$<$ tir\+::\+Var $>$ \&vars)}{DetectClipBound(const PrimExpr &e, const Array< tir::Var > &vars)}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Array}$<${\bf Prim\+Expr}$>$ tvm\+::arith\+::\+Detect\+Clip\+Bound (
+\begin{DoxyParamCaption}
+\item[{const {\bf Prim\+Expr} \&}]{e, }
+\item[{const {\bf Array}$<$ {\bf tir\+::\+Var} $>$ \&}]{vars}
+\end{DoxyParamCaption}
+)}\hypertarget{namespacetvm_1_1arith_a739616342876c2633b87ed16c649bc91}{}\label{namespacetvm_1_1arith_a739616342876c2633b87ed16c649bc91}
+
+
+Detect if expression corresponds to clip bound of the vars. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em e} & The expression to be detected. \\
+\hline
+{\em vars} & List of variables to be used in detection. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+concat(\mbox{[}min\+\_\+value\mbox{[}i\mbox{]}, max\+\_\+value\mbox{[}i\mbox{]}\mbox{]}), None is returned if there is no min or max value return empty if the e does not match the pattern. 
+\end{DoxyReturn}
+\index{tvm\+::arith@{tvm\+::arith}!Detect\+Linear\+Equation@{Detect\+Linear\+Equation}}
+\index{Detect\+Linear\+Equation@{Detect\+Linear\+Equation}!tvm\+::arith@{tvm\+::arith}}
+\subsubsection[{\texorpdfstring{Detect\+Linear\+Equation(const Prim\+Expr \&e, const Array$<$ tir\+::\+Var $>$ \&vars)}{DetectLinearEquation(const PrimExpr &e, const Array< tir::Var > &vars)}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Array}$<${\bf Prim\+Expr}$>$ tvm\+::arith\+::\+Detect\+Linear\+Equation (
+\begin{DoxyParamCaption}
+\item[{const {\bf Prim\+Expr} \&}]{e, }
+\item[{const {\bf Array}$<$ {\bf tir\+::\+Var} $>$ \&}]{vars}
+\end{DoxyParamCaption}
+)}\hypertarget{namespacetvm_1_1arith_a87a12ee0854469b04329a961ef261559}{}\label{namespacetvm_1_1arith_a87a12ee0854469b04329a961ef261559}
+
+
+Detect if e can be rewritten as e = sum\+\_\+\{i=0\}$^\wedge$\{n-\/1\} var\mbox{[}i\mbox{]} $\ast$ coeff\mbox{[}i\mbox{]} + coeff\mbox{[}n\mbox{]} Where coeff\mbox{[}i\mbox{]} and base are invariant of var\mbox{[}j\mbox{]} for all i and j. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em e} & The expression to be detected. \\
+\hline
+{\em vars} & List of variables to be used in detection. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\mbox{[}coeff\mbox{[}i\mbox{]}\mbox{]} if it is possible, empty array if it is not. 
+\end{DoxyReturn}
+\index{tvm\+::arith@{tvm\+::arith}!Domain\+Touched@{Domain\+Touched}}
+\index{Domain\+Touched@{Domain\+Touched}!tvm\+::arith@{tvm\+::arith}}
+\subsubsection[{\texorpdfstring{Domain\+Touched(\+Stmt body, const te\+::\+Tensor \&tensor, bool consider\+\_\+calls, bool consider\+\_\+provides)}{DomainTouched(Stmt body, const te::Tensor &tensor, bool consider_calls, bool consider_provides)}}]{\setlength{\rightskip}{0pt plus 5cm}Domain tvm\+::arith\+::\+Domain\+Touched (
+\begin{DoxyParamCaption}
+\item[{Stmt}]{body, }
+\item[{const {\bf te\+::\+Tensor} \&}]{tensor, }
+\item[{bool}]{consider\+\_\+calls, }
+\item[{bool}]{consider\+\_\+provides}
+\end{DoxyParamCaption}
+)}\hypertarget{namespacetvm_1_1arith_a7f55bb82049e1b5f3a22fbd7b7ef3570}{}\label{namespacetvm_1_1arith_a7f55bb82049e1b5f3a22fbd7b7ef3570}
+
+
+Infer a regular domain that covers all the calls or provides within the given statement. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em body} & The given statement. \\
+\hline
+{\em tensor} & The name of the calls or provides. \\
+\hline
+{\em consider\+\_\+calls} & If calls (read) are considered. \\
+\hline
+{\em consider\+\_\+provides} & If provides (write) are considered. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The domain that covers all the calls or provides within the given statement. 
+\end{DoxyReturn}
+\index{tvm\+::arith@{tvm\+::arith}!Eval\+Set@{Eval\+Set}}
+\index{Eval\+Set@{Eval\+Set}!tvm\+::arith@{tvm\+::arith}}
+\subsubsection[{\texorpdfstring{Eval\+Set(\+Prim\+Expr e, const Map$<$ Iter\+Var, Int\+Set $>$ \&dom\+\_\+map)}{EvalSet(PrimExpr e, const Map< IterVar, IntSet > &dom_map)}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Int\+Set} tvm\+::arith\+::\+Eval\+Set (
+\begin{DoxyParamCaption}
+\item[{{\bf Prim\+Expr}}]{e, }
+\item[{const {\bf Map}$<$ Iter\+Var, {\bf Int\+Set} $>$ \&}]{dom\+\_\+map}
+\end{DoxyParamCaption}
+)}\hypertarget{namespacetvm_1_1arith_a73160d1f944121ad2ef22205dd496fdc}{}\label{namespacetvm_1_1arith_a73160d1f944121ad2ef22205dd496fdc}
+
+
+Find an symbolic integer set that contains all possible values of e given the domain of each iteration variables. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em e} & The expression to be evaluated. \\
+\hline
+{\em dom\+\_\+map} & The domain of each variable. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+An integer set that can cover all the possible values of e. 
+\end{DoxyReturn}
+\index{tvm\+::arith@{tvm\+::arith}!Eval\+Set@{Eval\+Set}}
+\index{Eval\+Set@{Eval\+Set}!tvm\+::arith@{tvm\+::arith}}
+\subsubsection[{\texorpdfstring{Eval\+Set(\+Prim\+Expr e, const std\+::unordered\+\_\+map$<$ const tir\+::\+Var\+Node $\ast$, Int\+Set $>$ \&dom\+\_\+map)}{EvalSet(PrimExpr e, const std::unordered_map< const tir::VarNode *, IntSet > &dom_map)}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Int\+Set} tvm\+::arith\+::\+Eval\+Set (
+\begin{DoxyParamCaption}
+\item[{{\bf Prim\+Expr}}]{e, }
+\item[{const std\+::unordered\+\_\+map$<$ const {\bf tir\+::\+Var\+Node} $\ast$, {\bf Int\+Set} $>$ \&}]{dom\+\_\+map}
+\end{DoxyParamCaption}
+)}\hypertarget{namespacetvm_1_1arith_a9d0d0f69e5f98e935d2bd4058d74bcfa}{}\label{namespacetvm_1_1arith_a9d0d0f69e5f98e935d2bd4058d74bcfa}
+
+
+Same as Eval\+Set, but takes unordered\+\_\+map. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em e} & The expression to be evaluated. \\
+\hline
+{\em dom\+\_\+map} & The domain of each variable. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+An integer set that can cover all the possible values of e. 
+\end{DoxyReturn}
+\index{tvm\+::arith@{tvm\+::arith}!Eval\+Set@{Eval\+Set}}
+\index{Eval\+Set@{Eval\+Set}!tvm\+::arith@{tvm\+::arith}}
+\subsubsection[{\texorpdfstring{Eval\+Set(\+Range r, const Map$<$ Iter\+Var, Int\+Set $>$ \&dom\+\_\+map)}{EvalSet(Range r, const Map< IterVar, IntSet > &dom_map)}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Int\+Set} tvm\+::arith\+::\+Eval\+Set (
+\begin{DoxyParamCaption}
+\item[{{\bf Range}}]{r, }
+\item[{const {\bf Map}$<$ Iter\+Var, {\bf Int\+Set} $>$ \&}]{dom\+\_\+map}
+\end{DoxyParamCaption}
+)}\hypertarget{namespacetvm_1_1arith_a74234ce6f7733b3d8055d781cc782df7}{}\label{namespacetvm_1_1arith_a74234ce6f7733b3d8055d781cc782df7}
+
+
+Find an symbolic integer set that contains is union over all the possible conditional values in dom\+\_\+map. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em r} & The initial range. \\
+\hline
+{\em dom\+\_\+map} & The domain of each variable. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+An integer set that can cover all the possible values. 
+\end{DoxyReturn}
+\index{tvm\+::arith@{tvm\+::arith}!Eval\+Set@{Eval\+Set}}
+\index{Eval\+Set@{Eval\+Set}!tvm\+::arith@{tvm\+::arith}}
+\subsubsection[{\texorpdfstring{Eval\+Set(\+Int\+Set s, const std\+::unordered\+\_\+map$<$ const Var\+Node $\ast$, Int\+Set $>$ \&dom\+\_\+map)}{EvalSet(IntSet s, const std::unordered_map< const VarNode *, IntSet > &dom_map)}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Int\+Set} tvm\+::arith\+::\+Eval\+Set (
+\begin{DoxyParamCaption}
+\item[{{\bf Int\+Set}}]{s, }
+\item[{const std\+::unordered\+\_\+map$<$ const Var\+Node $\ast$, {\bf Int\+Set} $>$ \&}]{dom\+\_\+map}
+\end{DoxyParamCaption}
+)}\hypertarget{namespacetvm_1_1arith_aa30b03ba03ff9cad2cad7320194dfcbe}{}\label{namespacetvm_1_1arith_aa30b03ba03ff9cad2cad7320194dfcbe}
+
+
+Find an symbolic integer set that contains is union over all the possible conditional values in dom\+\_\+map. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em s} & The initial set. \\
+\hline
+{\em dom\+\_\+map} & The domain of each variable. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+An integer set that can cover all the possible values. 
+\end{DoxyReturn}
+\index{tvm\+::arith@{tvm\+::arith}!Eval\+Set@{Eval\+Set}}
+\index{Eval\+Set@{Eval\+Set}!tvm\+::arith@{tvm\+::arith}}
+\subsubsection[{\texorpdfstring{Eval\+Set(\+Range r, const std\+::unordered\+\_\+map$<$ const Var\+Node $\ast$, Int\+Set $>$ \&dom\+\_\+map)}{EvalSet(Range r, const std::unordered_map< const VarNode *, IntSet > &dom_map)}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Int\+Set} tvm\+::arith\+::\+Eval\+Set (
+\begin{DoxyParamCaption}
+\item[{{\bf Range}}]{r, }
+\item[{const std\+::unordered\+\_\+map$<$ const Var\+Node $\ast$, {\bf Int\+Set} $>$ \&}]{dom\+\_\+map}
+\end{DoxyParamCaption}
+)}\hypertarget{namespacetvm_1_1arith_a4bf945fe43afafbedffad6d5633efad7}{}\label{namespacetvm_1_1arith_a4bf945fe43afafbedffad6d5633efad7}
+
+
+Same as Eval\+Set, but takes unordered\+\_\+map. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em r} & The range to be evaluated. \\
+\hline
+{\em dom\+\_\+map} & The domain of each variable. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+An integer set that can cover all the possible values of e. 
+\end{DoxyReturn}
+\index{tvm\+::arith@{tvm\+::arith}!Eval\+Set\+For\+Each\+Sub\+Expr@{Eval\+Set\+For\+Each\+Sub\+Expr}}
+\index{Eval\+Set\+For\+Each\+Sub\+Expr@{Eval\+Set\+For\+Each\+Sub\+Expr}!tvm\+::arith@{tvm\+::arith}}
+\subsubsection[{\texorpdfstring{Eval\+Set\+For\+Each\+Sub\+Expr(\+Prim\+Expr e, const std\+::unordered\+\_\+map$<$ const Var\+Node $\ast$, Int\+Set $>$ \&dom\+\_\+map)}{EvalSetForEachSubExpr(PrimExpr e, const std::unordered_map< const VarNode *, IntSet > &dom_map)}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Expr\+Int\+Set\+Map} tvm\+::arith\+::\+Eval\+Set\+For\+Each\+Sub\+Expr (
+\begin{DoxyParamCaption}
+\item[{{\bf Prim\+Expr}}]{e, }
+\item[{const std\+::unordered\+\_\+map$<$ const Var\+Node $\ast$, {\bf Int\+Set} $>$ \&}]{dom\+\_\+map}
+\end{DoxyParamCaption}
+)}\hypertarget{namespacetvm_1_1arith_a8a112f07411c5e1237b0c045ff276ac6}{}\label{namespacetvm_1_1arith_a8a112f07411c5e1237b0c045ff276ac6}
+
+
+Find the integer set of every sub-\/expression, given the domain of each iteration variables. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em e} & The expression to be evaluated. \\
+\hline
+{\em dom\+\_\+map} & The domain of each variable. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the map from the expression to its possible value. 
+\end{DoxyReturn}
+\index{tvm\+::arith@{tvm\+::arith}!Intersect@{Intersect}}
+\index{Intersect@{Intersect}!tvm\+::arith@{tvm\+::arith}}
+\subsubsection[{\texorpdfstring{Intersect(const Array$<$ Int\+Set $>$ \&sets)}{Intersect(const Array< IntSet > &sets)}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Int\+Set} tvm\+::arith\+::\+Intersect (
+\begin{DoxyParamCaption}
+\item[{const {\bf Array}$<$ {\bf Int\+Set} $>$ \&}]{sets}
+\end{DoxyParamCaption}
+)}\hypertarget{namespacetvm_1_1arith_ad66a987ddb3d8aee69f9175bf412eb8a}{}\label{namespacetvm_1_1arith_ad66a987ddb3d8aee69f9175bf412eb8a}
+
+
+Create an union set of all sets. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em sets} & The sets to be intersected \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the set after intersected 
+\end{DoxyReturn}
+\index{tvm\+::arith@{tvm\+::arith}!Union@{Union}}
+\index{Union@{Union}!tvm\+::arith@{tvm\+::arith}}
+\subsubsection[{\texorpdfstring{Union(const Array$<$ Int\+Set $>$ \&sets)}{Union(const Array< IntSet > &sets)}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Int\+Set} tvm\+::arith\+::\+Union (
+\begin{DoxyParamCaption}
+\item[{const {\bf Array}$<$ {\bf Int\+Set} $>$ \&}]{sets}
+\end{DoxyParamCaption}
+)}\hypertarget{namespacetvm_1_1arith_a68a0523bf0384e492ab222d30be9160e}{}\label{namespacetvm_1_1arith_a68a0523bf0384e492ab222d30be9160e}
+
+
+Create an union set of all sets. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em sets} & The sets to be unioned \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the set after union 
+\end{DoxyReturn}

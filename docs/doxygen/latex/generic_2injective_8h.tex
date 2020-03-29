@@ -1,0 +1,47 @@
+\hypertarget{generic_2injective_8h}{}\section{topi/include/topi/generic/injective.h File Reference}
+\label{generic_2injective_8h}\index{topi/include/topi/generic/injective.\+h@{topi/include/topi/generic/injective.\+h}}
+
+
+Generic schedule for injective operations.  
+
+
+{\ttfamily \#include $<$tvm/te/operation.\+h$>$}\\*
+{\ttfamily \#include $<$tvm/te/schedule\+\_\+pass.\+h$>$}\\*
+{\ttfamily \#include $<$tvm/target/generic\+\_\+func.\+h$>$}\\*
+{\ttfamily \#include $<$topi/tags.\+h$>$}\\*
+{\ttfamily \#include $<$topi/detail/fuse.\+h$>$}\\*
+Include dependency graph for injective.\+h\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{generic_2injective_8h__incl}
+\end{center}
+\end{figure}
+This graph shows which files directly or indirectly include this file\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=249pt]{generic_2injective_8h__dep__incl}
+\end{center}
+\end{figure}
+\subsection*{Namespaces}
+\begin{DoxyCompactItemize}
+\item 
+ \hyperlink{namespacetopi}{topi}
+\item 
+ \hyperlink{namespacetopi_1_1generic}{topi\+::generic}
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classtvm_1_1te_1_1Schedule}{Schedule} \hyperlink{namespacetopi_1_1generic_a301d2d9cb6cdba4de67325c37df037dd}{topi\+::generic\+::schedule\+\_\+injective\+\_\+from\+\_\+existing} (\hyperlink{classtvm_1_1te_1_1Schedule}{Schedule} sch, const \hyperlink{classtvm_1_1te_1_1Tensor}{Tensor} \&out)
+\begin{DoxyCompactList}\small\item\em Updates an existing schedule for the given injective ops. \end{DoxyCompactList}\item 
+\hyperlink{classtvm_1_1te_1_1Schedule}{Schedule} \hyperlink{namespacetopi_1_1generic_a2b769f24e728d2658734280a237fbe84}{topi\+::generic\+::schedule\+\_\+injective} (const \hyperlink{classtvm_1_1Target}{Target} \&target, const \hyperlink{classtvm_1_1Array}{Array}$<$ \hyperlink{classtvm_1_1te_1_1Tensor}{Tensor} $>$ \&outs)
+\begin{DoxyCompactList}\small\item\em Create a generic schedule for the given injective ops. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Generic schedule for injective operations. 
+

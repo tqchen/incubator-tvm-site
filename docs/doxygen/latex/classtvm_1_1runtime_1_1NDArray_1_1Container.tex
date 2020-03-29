@@ -1,0 +1,149 @@
+\hypertarget{classtvm_1_1runtime_1_1NDArray_1_1Container}{}\section{tvm\+:\+:runtime\+:\+:N\+D\+Array\+:\+:Container Class Reference}
+\label{classtvm_1_1runtime_1_1NDArray_1_1Container}\index{tvm\+::runtime\+::\+N\+D\+Array\+::\+Container@{tvm\+::runtime\+::\+N\+D\+Array\+::\+Container}}
+
+
+\hyperlink{classtvm_1_1runtime_1_1Object}{Object} container class that backs \hyperlink{classtvm_1_1runtime_1_1NDArray}{N\+D\+Array}.  
+
+
+
+
+{\ttfamily \#include $<$ndarray.\+h$>$}
+
+
+
+Inheritance diagram for tvm\+:\+:runtime\+:\+:N\+D\+Array\+:\+:Container\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{classtvm_1_1runtime_1_1NDArray_1_1Container__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for tvm\+:\+:runtime\+:\+:N\+D\+Array\+:\+:Container\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classtvm_1_1runtime_1_1NDArray_1_1Container__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classtvm_1_1runtime_1_1NDArray_1_1Container_a39b39ce5a2a658b44944381f1835404a}{Container} ()
+\begin{DoxyCompactList}\small\item\em default constructor \end{DoxyCompactList}\item 
+\hyperlink{classtvm_1_1runtime_1_1NDArray_1_1Container_a39edb3823aeabc846cc38e0fae1a3c37}{Container} (void $\ast$data, std\+::vector$<$ int64\+\_\+t $>$ shape, D\+L\+Data\+Type dtype, D\+L\+Context ctx)
+\item 
+void \hyperlink{classtvm_1_1runtime_1_1NDArray_1_1Container_a56109cfc826b26172f084c3790144351}{Set\+Deleter} (\hyperlink{classtvm_1_1runtime_1_1Object_a9e84841ca982bff376a978ade0132631}{F\+Deleter} deleter)
+\begin{DoxyCompactList}\small\item\em Set the deleter field. \end{DoxyCompactList}\item 
+\hyperlink{classtvm_1_1runtime_1_1NDArray_1_1Container_adce920eec8aecc847e0ca7d7b4cb169c}{T\+V\+M\+\_\+\+D\+E\+C\+L\+A\+R\+E\+\_\+\+B\+A\+S\+E\+\_\+\+O\+B\+J\+E\+C\+T\+\_\+\+I\+N\+FO} (\hyperlink{classtvm_1_1runtime_1_1NDArray_1_1Container}{N\+D\+Array\+::\+Container}, \hyperlink{classtvm_1_1runtime_1_1Object}{Object})
+\end{DoxyCompactItemize}
+\subsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static constexpr const uint32\+\_\+t \hyperlink{classtvm_1_1runtime_1_1NDArray_1_1Container_a2aa70a8af3dcb461cad06e57ec3ad7b6}{\+\_\+type\+\_\+index} = Type\+Index\+::k\+Dynamic
+\item 
+static constexpr const uint32\+\_\+t \hyperlink{classtvm_1_1runtime_1_1NDArray_1_1Container_a654a0db794bc7453907cafdfd1b6419e}{\+\_\+type\+\_\+child\+\_\+slots} = 0
+\item 
+static constexpr const uint32\+\_\+t \hyperlink{classtvm_1_1runtime_1_1NDArray_1_1Container_a5010c341b2c9a0976af2d763a277e21d}{\+\_\+type\+\_\+child\+\_\+slots\+\_\+can\+\_\+overflow} = true
+\item 
+static constexpr const char $\ast$ \hyperlink{classtvm_1_1runtime_1_1NDArray_1_1Container_a5f89a73ae36d22b46545cc5906e92a3d}{\+\_\+type\+\_\+key} = \char`\"{}N\+D\+Array\char`\"{}
+\end{DoxyCompactItemize}
+\subsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+class \hyperlink{classtvm_1_1runtime_1_1NDArray_1_1Container_a6ccaf80c7bc6037e59b208845b20db11}{R\+P\+C\+Wrapped\+Func}
+\item 
+class \hyperlink{classtvm_1_1runtime_1_1NDArray_1_1Container_ad41557e205cf8f4d6ef70b60587c37cb}{N\+D\+Array}
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+\hyperlink{classtvm_1_1runtime_1_1Object}{Object} container class that backs \hyperlink{classtvm_1_1runtime_1_1NDArray}{N\+D\+Array}. 
+
+\begin{DoxyNote}{Note}
+do not use this function directly, use \hyperlink{classtvm_1_1runtime_1_1NDArray}{N\+D\+Array}. 
+\end{DoxyNote}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\index{tvm\+::runtime\+::\+N\+D\+Array\+::\+Container@{tvm\+::runtime\+::\+N\+D\+Array\+::\+Container}!Container@{Container}}
+\index{Container@{Container}!tvm\+::runtime\+::\+N\+D\+Array\+::\+Container@{tvm\+::runtime\+::\+N\+D\+Array\+::\+Container}}
+\subsubsection[{\texorpdfstring{Container()}{Container()}}]{\setlength{\rightskip}{0pt plus 5cm}tvm\+::runtime\+::\+N\+D\+Array\+::\+Container\+::\+Container (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classtvm_1_1runtime_1_1NDArray_1_1Container_a39b39ce5a2a658b44944381f1835404a}{}\label{classtvm_1_1runtime_1_1NDArray_1_1Container_a39b39ce5a2a658b44944381f1835404a}
+
+
+default constructor 
+
+\index{tvm\+::runtime\+::\+N\+D\+Array\+::\+Container@{tvm\+::runtime\+::\+N\+D\+Array\+::\+Container}!Container@{Container}}
+\index{Container@{Container}!tvm\+::runtime\+::\+N\+D\+Array\+::\+Container@{tvm\+::runtime\+::\+N\+D\+Array\+::\+Container}}
+\subsubsection[{\texorpdfstring{Container(void $\ast$data, std\+::vector$<$ int64\+\_\+t $>$ shape, D\+L\+Data\+Type dtype, D\+L\+Context ctx)}{Container(void *data, std::vector< int64_t > shape, DLDataType dtype, DLContext ctx)}}]{\setlength{\rightskip}{0pt plus 5cm}tvm\+::runtime\+::\+N\+D\+Array\+::\+Container\+::\+Container (
+\begin{DoxyParamCaption}
+\item[{void $\ast$}]{data, }
+\item[{std\+::vector$<$ int64\+\_\+t $>$}]{shape, }
+\item[{D\+L\+Data\+Type}]{dtype, }
+\item[{D\+L\+Context}]{ctx}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classtvm_1_1runtime_1_1NDArray_1_1Container_a39edb3823aeabc846cc38e0fae1a3c37}{}\label{classtvm_1_1runtime_1_1NDArray_1_1Container_a39edb3823aeabc846cc38e0fae1a3c37}
+
+
+\subsection{Member Function Documentation}
+\index{tvm\+::runtime\+::\+N\+D\+Array\+::\+Container@{tvm\+::runtime\+::\+N\+D\+Array\+::\+Container}!Set\+Deleter@{Set\+Deleter}}
+\index{Set\+Deleter@{Set\+Deleter}!tvm\+::runtime\+::\+N\+D\+Array\+::\+Container@{tvm\+::runtime\+::\+N\+D\+Array\+::\+Container}}
+\subsubsection[{\texorpdfstring{Set\+Deleter(\+F\+Deleter deleter)}{SetDeleter(FDeleter deleter)}}]{\setlength{\rightskip}{0pt plus 5cm}void tvm\+::runtime\+::\+N\+D\+Array\+::\+Container\+::\+Set\+Deleter (
+\begin{DoxyParamCaption}
+\item[{{\bf F\+Deleter}}]{deleter}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classtvm_1_1runtime_1_1NDArray_1_1Container_a56109cfc826b26172f084c3790144351}{}\label{classtvm_1_1runtime_1_1NDArray_1_1Container_a56109cfc826b26172f084c3790144351}
+
+
+Set the deleter field. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em deleter} & The deleter. \\
+\hline
+\end{DoxyParams}
+\index{tvm\+::runtime\+::\+N\+D\+Array\+::\+Container@{tvm\+::runtime\+::\+N\+D\+Array\+::\+Container}!T\+V\+M\+\_\+\+D\+E\+C\+L\+A\+R\+E\+\_\+\+B\+A\+S\+E\+\_\+\+O\+B\+J\+E\+C\+T\+\_\+\+I\+N\+FO@{T\+V\+M\+\_\+\+D\+E\+C\+L\+A\+R\+E\+\_\+\+B\+A\+S\+E\+\_\+\+O\+B\+J\+E\+C\+T\+\_\+\+I\+N\+FO}}
+\index{T\+V\+M\+\_\+\+D\+E\+C\+L\+A\+R\+E\+\_\+\+B\+A\+S\+E\+\_\+\+O\+B\+J\+E\+C\+T\+\_\+\+I\+N\+FO@{T\+V\+M\+\_\+\+D\+E\+C\+L\+A\+R\+E\+\_\+\+B\+A\+S\+E\+\_\+\+O\+B\+J\+E\+C\+T\+\_\+\+I\+N\+FO}!tvm\+::runtime\+::\+N\+D\+Array\+::\+Container@{tvm\+::runtime\+::\+N\+D\+Array\+::\+Container}}
+\subsubsection[{\texorpdfstring{T\+V\+M\+\_\+\+D\+E\+C\+L\+A\+R\+E\+\_\+\+B\+A\+S\+E\+\_\+\+O\+B\+J\+E\+C\+T\+\_\+\+I\+N\+F\+O(\+N\+D\+Array\+::\+Container, Object)}{TVM_DECLARE_BASE_OBJECT_INFO(NDArray::Container, Object)}}]{\setlength{\rightskip}{0pt plus 5cm}tvm\+::runtime\+::\+N\+D\+Array\+::\+Container\+::\+T\+V\+M\+\_\+\+D\+E\+C\+L\+A\+R\+E\+\_\+\+B\+A\+S\+E\+\_\+\+O\+B\+J\+E\+C\+T\+\_\+\+I\+N\+FO (
+\begin{DoxyParamCaption}
+\item[{{\bf N\+D\+Array\+::\+Container}}]{, }
+\item[{{\bf Object}}]{}
+\end{DoxyParamCaption}
+)}\hypertarget{classtvm_1_1runtime_1_1NDArray_1_1Container_adce920eec8aecc847e0ca7d7b4cb169c}{}\label{classtvm_1_1runtime_1_1NDArray_1_1Container_adce920eec8aecc847e0ca7d7b4cb169c}
+
+
+\subsection{Friends And Related Function Documentation}
+\index{tvm\+::runtime\+::\+N\+D\+Array\+::\+Container@{tvm\+::runtime\+::\+N\+D\+Array\+::\+Container}!N\+D\+Array@{N\+D\+Array}}
+\index{N\+D\+Array@{N\+D\+Array}!tvm\+::runtime\+::\+N\+D\+Array\+::\+Container@{tvm\+::runtime\+::\+N\+D\+Array\+::\+Container}}
+\subsubsection[{\texorpdfstring{N\+D\+Array}{NDArray}}]{\setlength{\rightskip}{0pt plus 5cm}friend class {\bf N\+D\+Array}\hspace{0.3cm}{\ttfamily [friend]}}\hypertarget{classtvm_1_1runtime_1_1NDArray_1_1Container_ad41557e205cf8f4d6ef70b60587c37cb}{}\label{classtvm_1_1runtime_1_1NDArray_1_1Container_ad41557e205cf8f4d6ef70b60587c37cb}
+\index{tvm\+::runtime\+::\+N\+D\+Array\+::\+Container@{tvm\+::runtime\+::\+N\+D\+Array\+::\+Container}!R\+P\+C\+Wrapped\+Func@{R\+P\+C\+Wrapped\+Func}}
+\index{R\+P\+C\+Wrapped\+Func@{R\+P\+C\+Wrapped\+Func}!tvm\+::runtime\+::\+N\+D\+Array\+::\+Container@{tvm\+::runtime\+::\+N\+D\+Array\+::\+Container}}
+\subsubsection[{\texorpdfstring{R\+P\+C\+Wrapped\+Func}{RPCWrappedFunc}}]{\setlength{\rightskip}{0pt plus 5cm}friend class R\+P\+C\+Wrapped\+Func\hspace{0.3cm}{\ttfamily [friend]}}\hypertarget{classtvm_1_1runtime_1_1NDArray_1_1Container_a6ccaf80c7bc6037e59b208845b20db11}{}\label{classtvm_1_1runtime_1_1NDArray_1_1Container_a6ccaf80c7bc6037e59b208845b20db11}
+
+
+\subsection{Member Data Documentation}
+\index{tvm\+::runtime\+::\+N\+D\+Array\+::\+Container@{tvm\+::runtime\+::\+N\+D\+Array\+::\+Container}!\+\_\+type\+\_\+child\+\_\+slots@{\+\_\+type\+\_\+child\+\_\+slots}}
+\index{\+\_\+type\+\_\+child\+\_\+slots@{\+\_\+type\+\_\+child\+\_\+slots}!tvm\+::runtime\+::\+N\+D\+Array\+::\+Container@{tvm\+::runtime\+::\+N\+D\+Array\+::\+Container}}
+\subsubsection[{\texorpdfstring{\+\_\+type\+\_\+child\+\_\+slots}{_type_child_slots}}]{\setlength{\rightskip}{0pt plus 5cm}constexpr const uint32\+\_\+t tvm\+::runtime\+::\+N\+D\+Array\+::\+Container\+::\+\_\+type\+\_\+child\+\_\+slots = 0\hspace{0.3cm}{\ttfamily [static]}}\hypertarget{classtvm_1_1runtime_1_1NDArray_1_1Container_a654a0db794bc7453907cafdfd1b6419e}{}\label{classtvm_1_1runtime_1_1NDArray_1_1Container_a654a0db794bc7453907cafdfd1b6419e}
+\index{tvm\+::runtime\+::\+N\+D\+Array\+::\+Container@{tvm\+::runtime\+::\+N\+D\+Array\+::\+Container}!\+\_\+type\+\_\+child\+\_\+slots\+\_\+can\+\_\+overflow@{\+\_\+type\+\_\+child\+\_\+slots\+\_\+can\+\_\+overflow}}
+\index{\+\_\+type\+\_\+child\+\_\+slots\+\_\+can\+\_\+overflow@{\+\_\+type\+\_\+child\+\_\+slots\+\_\+can\+\_\+overflow}!tvm\+::runtime\+::\+N\+D\+Array\+::\+Container@{tvm\+::runtime\+::\+N\+D\+Array\+::\+Container}}
+\subsubsection[{\texorpdfstring{\+\_\+type\+\_\+child\+\_\+slots\+\_\+can\+\_\+overflow}{_type_child_slots_can_overflow}}]{\setlength{\rightskip}{0pt plus 5cm}constexpr const uint32\+\_\+t tvm\+::runtime\+::\+N\+D\+Array\+::\+Container\+::\+\_\+type\+\_\+child\+\_\+slots\+\_\+can\+\_\+overflow = true\hspace{0.3cm}{\ttfamily [static]}}\hypertarget{classtvm_1_1runtime_1_1NDArray_1_1Container_a5010c341b2c9a0976af2d763a277e21d}{}\label{classtvm_1_1runtime_1_1NDArray_1_1Container_a5010c341b2c9a0976af2d763a277e21d}
+\index{tvm\+::runtime\+::\+N\+D\+Array\+::\+Container@{tvm\+::runtime\+::\+N\+D\+Array\+::\+Container}!\+\_\+type\+\_\+index@{\+\_\+type\+\_\+index}}
+\index{\+\_\+type\+\_\+index@{\+\_\+type\+\_\+index}!tvm\+::runtime\+::\+N\+D\+Array\+::\+Container@{tvm\+::runtime\+::\+N\+D\+Array\+::\+Container}}
+\subsubsection[{\texorpdfstring{\+\_\+type\+\_\+index}{_type_index}}]{\setlength{\rightskip}{0pt plus 5cm}constexpr const uint32\+\_\+t tvm\+::runtime\+::\+N\+D\+Array\+::\+Container\+::\+\_\+type\+\_\+index = Type\+Index\+::k\+Dynamic\hspace{0.3cm}{\ttfamily [static]}}\hypertarget{classtvm_1_1runtime_1_1NDArray_1_1Container_a2aa70a8af3dcb461cad06e57ec3ad7b6}{}\label{classtvm_1_1runtime_1_1NDArray_1_1Container_a2aa70a8af3dcb461cad06e57ec3ad7b6}
+\index{tvm\+::runtime\+::\+N\+D\+Array\+::\+Container@{tvm\+::runtime\+::\+N\+D\+Array\+::\+Container}!\+\_\+type\+\_\+key@{\+\_\+type\+\_\+key}}
+\index{\+\_\+type\+\_\+key@{\+\_\+type\+\_\+key}!tvm\+::runtime\+::\+N\+D\+Array\+::\+Container@{tvm\+::runtime\+::\+N\+D\+Array\+::\+Container}}
+\subsubsection[{\texorpdfstring{\+\_\+type\+\_\+key}{_type_key}}]{\setlength{\rightskip}{0pt plus 5cm}constexpr const char$\ast$ tvm\+::runtime\+::\+N\+D\+Array\+::\+Container\+::\+\_\+type\+\_\+key = \char`\"{}N\+D\+Array\char`\"{}\hspace{0.3cm}{\ttfamily [static]}}\hypertarget{classtvm_1_1runtime_1_1NDArray_1_1Container_a5f89a73ae36d22b46545cc5906e92a3d}{}\label{classtvm_1_1runtime_1_1NDArray_1_1Container_a5f89a73ae36d22b46545cc5906e92a3d}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+include/tvm/runtime/\hyperlink{ndarray_8h}{ndarray.\+h}\end{DoxyCompactItemize}

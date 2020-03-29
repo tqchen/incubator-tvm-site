@@ -1,0 +1,290 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="classtvm_1_1relay_1_1VarNode" kind="class" language="C++" prot="public">
+    <compoundname>tvm::relay::VarNode</compoundname>
+    <basecompoundref refid="classtvm_1_1RelayExprNode" prot="public" virt="non-virtual">tvm::RelayExprNode</basecompoundref>
+    <includes refid="relay_2expr_8h" local="no">expr.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="classtvm_1_1relay_1_1VarNode_1af191a8eedf3575d626771c9c820ddb63" prot="public" static="no" mutable="no">
+        <type><ref refid="classtvm_1_1relay_1_1Id" kindref="compound">Id</ref></type>
+        <definition>Id tvm::relay::VarNode::vid</definition>
+        <argsstring></argsstring>
+        <name>vid</name>
+        <briefdescription>
+<para>The unique identifier of the <ref refid="classtvm_1_1relay_1_1Var" kindref="compound">Var</ref>. </para>        </briefdescription>
+        <detaileddescription>
+<para>vid will be preserved for the same <ref refid="classtvm_1_1relay_1_1Var" kindref="compound">Var</ref> during type inference and other rewritings, while the <ref refid="classtvm_1_1relay_1_1VarNode" kindref="compound">VarNode</ref> might be recreated to attach additional information. This property can be used to keep track of parameter <ref refid="classtvm_1_1relay_1_1Var" kindref="compound">Var</ref> information across passes. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/relay/expr.h" line="166" column="1" bodyfile="include/tvm/relay/expr.h" bodystart="166" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classtvm_1_1relay_1_1VarNode_1a79a56885eaf2a9326ff490164a5c1f0e" prot="public" static="no" mutable="no">
+        <type><ref refid="namespacetvm_1_1relay_1a661d95f170bca230773914caeef3fe52" kindref="member">Type</ref></type>
+        <definition>Type tvm::relay::VarNode::type_annotation</definition>
+        <argsstring></argsstring>
+        <name>type_annotation</name>
+        <briefdescription>
+<para>type annotaion of the variable. This field records user provided type annotation of the <ref refid="classtvm_1_1relay_1_1Var" kindref="compound">Var</ref>. This field is optional and can be None. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/relay/expr.h" line="172" column="1" bodyfile="include/tvm/relay/expr.h" bodystart="172" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-attrib">
+      <memberdef kind="variable" id="classtvm_1_1relay_1_1VarNode_1a8f636ca6173977176ebee6fed7820669" prot="public" static="yes" mutable="no">
+        <type>constexpr const char *</type>
+        <definition>constexpr const char* tvm::relay::VarNode::_type_key</definition>
+        <argsstring></argsstring>
+        <name>_type_key</name>
+        <initializer>= &quot;relay.Var&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/relay/expr.h" line="203" column="1" bodyfile="include/tvm/relay/expr.h" bodystart="203" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classtvm_1_1relay_1_1VarNode_1aa9a3d5f1c750ab4e34f23bf21daeb53d" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>const std::string &amp;</type>
+        <definition>const std::string&amp; tvm::relay::VarNode::name_hint</definition>
+        <argsstring>() const </argsstring>
+        <name>name_hint</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>The name hint of the variable </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/relay/expr.h" line="175" column="1" bodyfile="include/tvm/relay/expr.h" bodystart="175" bodyend="177"/>
+      </memberdef>
+      <memberdef kind="function" id="classtvm_1_1relay_1_1VarNode_1a9b43f30f77f1696e11f423f4834b42af" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void tvm::relay::VarNode::VisitAttrs</definition>
+        <argsstring>(tvm::AttrVisitor *v)</argsstring>
+        <name>VisitAttrs</name>
+        <param>
+          <type><ref refid="classtvm_1_1AttrVisitor" kindref="compound">tvm::AttrVisitor</ref> *</type>
+          <declname>v</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/relay/expr.h" line="179" column="1" bodyfile="include/tvm/relay/expr.h" bodystart="179" bodyend="184"/>
+      </memberdef>
+      <memberdef kind="function" id="classtvm_1_1relay_1_1VarNode_1abc18494ecd63c935ba379de302db95e0" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool tvm::relay::VarNode::SEqualReduce</definition>
+        <argsstring>(const VarNode *other, SEqualReducer equal) const </argsstring>
+        <name>SEqualReduce</name>
+        <param>
+          <type>const <ref refid="classtvm_1_1relay_1_1VarNode" kindref="compound">VarNode</ref> *</type>
+          <declname>other</declname>
+        </param>
+        <param>
+          <type><ref refid="classtvm_1_1SEqualReducer" kindref="compound">SEqualReducer</ref></type>
+          <declname>equal</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/relay/expr.h" line="186" column="1" bodyfile="include/tvm/relay/expr.h" bodystart="186" bodyend="190"/>
+      </memberdef>
+      <memberdef kind="function" id="classtvm_1_1relay_1_1VarNode_1a79ca8344a35daed052ca91a282c58cdb" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void tvm::relay::VarNode::SHashReduce</definition>
+        <argsstring>(SHashReducer hash_reduce) const </argsstring>
+        <name>SHashReduce</name>
+        <param>
+          <type><ref refid="classtvm_1_1SHashReducer" kindref="compound">SHashReducer</ref></type>
+          <declname>hash_reduce</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/relay/expr.h" line="192" column="1" bodyfile="include/tvm/relay/expr.h" bodystart="192" bodyend="195"/>
+      </memberdef>
+      <memberdef kind="function" id="classtvm_1_1relay_1_1VarNode_1a9fc5bd45ca5ccdd0f88f3ebb7c8aebb5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>tvm::relay::VarNode::TVM_DECLARE_FINAL_OBJECT_INFO</definition>
+        <argsstring>(VarNode, ExprNode)</argsstring>
+        <name>TVM_DECLARE_FINAL_OBJECT_INFO</name>
+        <param>
+          <type><ref refid="classtvm_1_1relay_1_1VarNode" kindref="compound">VarNode</ref></type>
+        </param>
+        <param>
+          <type><ref refid="namespacetvm_1_1relay_1a387f18e050d016c52ea6c4781e7cff6c" kindref="member">ExprNode</ref></type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/relay/expr.h" line="204" column="1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="classtvm_1_1relay_1_1VarNode_1aa2051e62113c0479c948a2f191ab09f1" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classtvm_1_1relay_1_1Var" kindref="compound">Var</ref></type>
+        <definition>static Var tvm::relay::VarNode::make</definition>
+        <argsstring>(std::string name_hint, Type type_annotation)</argsstring>
+        <name>make</name>
+        <param>
+          <type>std::string</type>
+          <declname>name_hint</declname>
+        </param>
+        <param>
+          <type><ref refid="namespacetvm_1_1relay_1a661d95f170bca230773914caeef3fe52" kindref="member">Type</ref></type>
+          <declname>type_annotation</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/relay/expr.h" line="197" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classtvm_1_1relay_1_1VarNode_1a3db693e18bb0da26eb51d6d71e12f419" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classtvm_1_1relay_1_1Var" kindref="compound">Var</ref></type>
+        <definition>static Var tvm::relay::VarNode::make</definition>
+        <argsstring>(Id vid, Type type_annotation)</argsstring>
+        <name>make</name>
+        <param>
+          <type><ref refid="classtvm_1_1relay_1_1Id" kindref="compound">Id</ref></type>
+          <declname>vid</declname>
+        </param>
+        <param>
+          <type><ref refid="namespacetvm_1_1relay_1a661d95f170bca230773914caeef3fe52" kindref="member">Type</ref></type>
+          <declname>type_annotation</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/relay/expr.h" line="200" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Container for <ref refid="classtvm_1_1relay_1_1Var" kindref="compound">Var</ref>. </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="7544">
+        <label>tvm::relay::VarNode</label>
+        <link refid="classtvm_1_1relay_1_1VarNode"/>
+        <childnode refid="7545" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="7546">
+        <label>tvm::BaseExprNode</label>
+        <link refid="classtvm_1_1BaseExprNode"/>
+        <childnode refid="7547" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="7545">
+        <label>ExprNode</label>
+        <link refid="classtvm_1_1RelayExprNode"/>
+        <childnode refid="7546" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="7547">
+        <label>Object</label>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="7553">
+        <label>ObjectRef</label>
+      </node>
+      <node id="7548">
+        <label>tvm::relay::VarNode</label>
+        <link refid="classtvm_1_1relay_1_1VarNode"/>
+        <childnode refid="7549" relation="public-inheritance">
+        </childnode>
+        <childnode refid="7555" relation="usage">
+          <edgelabel>+vid</edgelabel>
+        </childnode>
+        <childnode refid="7554" relation="usage">
+          <edgelabel>+type_annotation</edgelabel>
+        </childnode>
+      </node>
+      <node id="7550">
+        <label>tvm::BaseExprNode</label>
+        <link refid="classtvm_1_1BaseExprNode"/>
+        <childnode refid="7551" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="7549">
+        <label>ExprNode</label>
+        <link refid="classtvm_1_1RelayExprNode"/>
+        <childnode refid="7550" relation="public-inheritance">
+        </childnode>
+        <childnode refid="7552" relation="usage">
+          <edgelabel>+span</edgelabel>
+        </childnode>
+        <childnode refid="7554" relation="usage">
+          <edgelabel>+checked_type_</edgelabel>
+        </childnode>
+      </node>
+      <node id="7555">
+        <label>tvm::relay::Id</label>
+        <link refid="classtvm_1_1relay_1_1Id"/>
+        <childnode refid="7553" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="7552">
+        <label>tvm::Span</label>
+        <link refid="classtvm_1_1Span"/>
+        <childnode refid="7553" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="7551">
+        <label>Object</label>
+      </node>
+      <node id="7554">
+        <label>tvm::Type</label>
+        <link refid="classtvm_1_1Type"/>
+        <childnode refid="7553" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="include/tvm/relay/expr.h" line="155" column="1" bodyfile="include/tvm/relay/expr.h" bodystart="155" bodyend="205"/>
+    <listofallmembers>
+      <member refid="classtvm_1_1BaseExprNode_1a905dcf65204e877b6ccb977cf375f2a0" prot="public" virt="non-virtual"><scope>tvm::relay::VarNode</scope><name>_type_has_method_sequal_reduce</name></member>
+      <member refid="classtvm_1_1BaseExprNode_1a13d7d1f1e6f790951caf200cd59c3620" prot="public" virt="non-virtual"><scope>tvm::relay::VarNode</scope><name>_type_has_method_shash_reduce</name></member>
+      <member refid="classtvm_1_1relay_1_1VarNode_1a8f636ca6173977176ebee6fed7820669" prot="public" virt="non-virtual"><scope>tvm::relay::VarNode</scope><name>_type_key</name></member>
+      <member refid="classtvm_1_1RelayExprNode_1a89bfd23e109a842d18240277ffaaa130" prot="public" virt="non-virtual"><scope>tvm::relay::VarNode</scope><name>checked_type</name></member>
+      <member refid="classtvm_1_1RelayExprNode_1ae30ca49a8b84288fbc21d5f312f02929" prot="public" virt="non-virtual"><scope>tvm::relay::VarNode</scope><name>checked_type_</name></member>
+      <member refid="classtvm_1_1relay_1_1VarNode_1aa2051e62113c0479c948a2f191ab09f1" prot="public" virt="non-virtual"><scope>tvm::relay::VarNode</scope><name>make</name></member>
+      <member refid="classtvm_1_1relay_1_1VarNode_1a3db693e18bb0da26eb51d6d71e12f419" prot="public" virt="non-virtual"><scope>tvm::relay::VarNode</scope><name>make</name></member>
+      <member refid="classtvm_1_1relay_1_1VarNode_1aa9a3d5f1c750ab4e34f23bf21daeb53d" prot="public" virt="non-virtual"><scope>tvm::relay::VarNode</scope><name>name_hint</name></member>
+      <member refid="classtvm_1_1relay_1_1VarNode_1abc18494ecd63c935ba379de302db95e0" prot="public" virt="non-virtual"><scope>tvm::relay::VarNode</scope><name>SEqualReduce</name></member>
+      <member refid="classtvm_1_1relay_1_1VarNode_1a79ca8344a35daed052ca91a282c58cdb" prot="public" virt="non-virtual"><scope>tvm::relay::VarNode</scope><name>SHashReduce</name></member>
+      <member refid="classtvm_1_1RelayExprNode_1a904ae50be0b72eab079bed93829c9563" prot="public" virt="non-virtual"><scope>tvm::relay::VarNode</scope><name>span</name></member>
+      <member refid="classtvm_1_1RelayExprNode_1a89eb638258551ea1ae2d0e578335474a" prot="public" virt="non-virtual"><scope>tvm::relay::VarNode</scope><name>TVM_DECLARE_BASE_OBJECT_INFO</name></member>
+      <member refid="classtvm_1_1BaseExprNode_1a831794c879d47c30cdd9cefd4f05d533" prot="public" virt="non-virtual" ambiguityscope="tvm::BaseExprNode::"><scope>tvm::relay::VarNode</scope><name>TVM_DECLARE_BASE_OBJECT_INFO</name></member>
+      <member refid="classtvm_1_1relay_1_1VarNode_1a9fc5bd45ca5ccdd0f88f3ebb7c8aebb5" prot="public" virt="non-virtual"><scope>tvm::relay::VarNode</scope><name>TVM_DECLARE_FINAL_OBJECT_INFO</name></member>
+      <member refid="classtvm_1_1relay_1_1VarNode_1a79a56885eaf2a9326ff490164a5c1f0e" prot="public" virt="non-virtual"><scope>tvm::relay::VarNode</scope><name>type_annotation</name></member>
+      <member refid="classtvm_1_1RelayExprNode_1a60c73bac632a728a2a669bb34a1c3008" prot="public" virt="non-virtual"><scope>tvm::relay::VarNode</scope><name>type_as</name></member>
+      <member refid="classtvm_1_1relay_1_1VarNode_1af191a8eedf3575d626771c9c820ddb63" prot="public" virt="non-virtual"><scope>tvm::relay::VarNode</scope><name>vid</name></member>
+      <member refid="classtvm_1_1relay_1_1VarNode_1a9b43f30f77f1696e11f423f4834b42af" prot="public" virt="non-virtual"><scope>tvm::relay::VarNode</scope><name>VisitAttrs</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,535 @@
+\hypertarget{classtvm_1_1runtime_1_1DataType}{}\section{tvm\+:\+:runtime\+:\+:Data\+Type Class Reference}
+\label{classtvm_1_1runtime_1_1DataType}\index{tvm\+::runtime\+::\+Data\+Type@{tvm\+::runtime\+::\+Data\+Type}}
+
+
+Runtime primitive data type.  
+
+
+
+
+{\ttfamily \#include $<$data\+\_\+type.\+h$>$}
+
+
+
+Collaboration diagram for tvm\+:\+:runtime\+:\+:Data\+Type\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=209pt]{classtvm_1_1runtime_1_1DataType__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+enum \hyperlink{classtvm_1_1runtime_1_1DataType_a3c9ce1627be2550f656cd37b6c698c7d}{Type\+Code} \{ \hyperlink{classtvm_1_1runtime_1_1DataType_a3c9ce1627be2550f656cd37b6c698c7daba80c33310f753ce7578ba71f8b19450}{k\+Int} = k\+D\+L\+Int, 
+\hyperlink{classtvm_1_1runtime_1_1DataType_a3c9ce1627be2550f656cd37b6c698c7da2c35d4ea9e95ede0b5a1909a87cbc9f2}{k\+U\+Int} = k\+D\+L\+U\+Int, 
+\hyperlink{classtvm_1_1runtime_1_1DataType_a3c9ce1627be2550f656cd37b6c698c7da6622631a910a54272097f7f4b6373e9d}{k\+Float} = k\+D\+L\+Float, 
+\hyperlink{classtvm_1_1runtime_1_1DataType_a3c9ce1627be2550f656cd37b6c698c7da2a59b355bef5ebc40bd78833666197cb}{k\+Handle} = T\+V\+M\+Type\+Code\+:\+:k\+T\+V\+M\+Opaque\+Handle
+ \}\begin{DoxyCompactList}\small\item\em \hyperlink{classtvm_1_1Type}{Type} code for the \hyperlink{classtvm_1_1runtime_1_1DataType}{Data\+Type}. \end{DoxyCompactList}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classtvm_1_1runtime_1_1DataType_a6db427a47b8d503b10cd2aee6a39d3a9}{Data\+Type} ()
+\begin{DoxyCompactList}\small\item\em default constructor \end{DoxyCompactList}\item 
+\hyperlink{classtvm_1_1runtime_1_1DataType_aa27f63a2395ce1ac52e4d7740a31383b}{Data\+Type} (D\+L\+Data\+Type dtype)
+\begin{DoxyCompactList}\small\item\em \hyperlink{classtvm_1_1Constructor}{Constructor}. \end{DoxyCompactList}\item 
+\hyperlink{classtvm_1_1runtime_1_1DataType_a58d36fef8d6b5fb39b01dccd79ff1db4}{Data\+Type} (int \hyperlink{classtvm_1_1runtime_1_1DataType_a20aec12c682b0e73d3f47ba3b62c418b}{code}, int \hyperlink{classtvm_1_1runtime_1_1DataType_ac26a4b0d3de99a8c08ecc2618a8659d9}{bits}, int \hyperlink{classtvm_1_1runtime_1_1DataType_abc92c7ca9966808f024983c76e12cf4a}{lanes})
+\begin{DoxyCompactList}\small\item\em \hyperlink{classtvm_1_1Constructor}{Constructor}. \end{DoxyCompactList}\item 
+int \hyperlink{classtvm_1_1runtime_1_1DataType_a20aec12c682b0e73d3f47ba3b62c418b}{code} () const 
+\item 
+int \hyperlink{classtvm_1_1runtime_1_1DataType_ac26a4b0d3de99a8c08ecc2618a8659d9}{bits} () const 
+\item 
+int \hyperlink{classtvm_1_1runtime_1_1DataType_acaf924d15f1b2cfef7e27ac5bbb3224e}{bytes} () const 
+\item 
+int \hyperlink{classtvm_1_1runtime_1_1DataType_abc92c7ca9966808f024983c76e12cf4a}{lanes} () const 
+\item 
+bool \hyperlink{classtvm_1_1runtime_1_1DataType_aa8e03c0549459bb3a7293f9b1bf04b3e}{is\+\_\+scalar} () const 
+\item 
+bool \hyperlink{classtvm_1_1runtime_1_1DataType_a805fe49439d48debbc46c071b2957744}{is\+\_\+bool} () const 
+\item 
+bool \hyperlink{classtvm_1_1runtime_1_1DataType_a4580dc7ac2f703780b0cc249e7d150a2}{is\+\_\+float} () const 
+\item 
+bool \hyperlink{classtvm_1_1runtime_1_1DataType_ad2152f38ce867397b99bcbe3fba0618b}{is\+\_\+float16} () const 
+\item 
+bool \hyperlink{classtvm_1_1runtime_1_1DataType_aa0f1df1d5f4ed20bea6260b8ae939e20}{is\+\_\+int} () const 
+\item 
+bool \hyperlink{classtvm_1_1runtime_1_1DataType_a731b95a55b3dae496b9ecccffe834772}{is\+\_\+uint} () const 
+\item 
+bool \hyperlink{classtvm_1_1runtime_1_1DataType_af0ddd5dcfdee76fe344f4bfb7aff806d}{is\+\_\+handle} () const 
+\item 
+bool \hyperlink{classtvm_1_1runtime_1_1DataType_a21d377fb6acaf48f03d94cee082e08e9}{is\+\_\+vector} () const 
+\item 
+bool \hyperlink{classtvm_1_1runtime_1_1DataType_a0990e6ef4d29b009f17702fecc4a0094}{is\+\_\+vector\+\_\+bool} () const 
+\item 
+\hyperlink{classtvm_1_1runtime_1_1DataType}{Data\+Type} \hyperlink{classtvm_1_1runtime_1_1DataType_ab188f54da1a54b34a11621fcb8feb6a7}{with\+\_\+lanes} (int \hyperlink{classtvm_1_1runtime_1_1DataType_abc92c7ca9966808f024983c76e12cf4a}{lanes}) const 
+\begin{DoxyCompactList}\small\item\em Create a new data type by change lanes to a specified value. \end{DoxyCompactList}\item 
+\hyperlink{classtvm_1_1runtime_1_1DataType}{Data\+Type} \hyperlink{classtvm_1_1runtime_1_1DataType_a9cf48e54cda66f3351b331fcc6cca1dc}{with\+\_\+bits} (int \hyperlink{classtvm_1_1runtime_1_1DataType_ac26a4b0d3de99a8c08ecc2618a8659d9}{bits}) const 
+\begin{DoxyCompactList}\small\item\em Create a new data type by change bits to a specified value. \end{DoxyCompactList}\item 
+\hyperlink{classtvm_1_1runtime_1_1DataType}{Data\+Type} \hyperlink{classtvm_1_1runtime_1_1DataType_a022ff4c55c831167018e94213cac8564}{element\+\_\+of} () const 
+\begin{DoxyCompactList}\small\item\em Get the scalar version of the type. \end{DoxyCompactList}\item 
+bool \hyperlink{classtvm_1_1runtime_1_1DataType_a50fe4658199e24d8287934220e1cc8ab}{operator==} (const \hyperlink{classtvm_1_1runtime_1_1DataType}{Data\+Type} \&other) const 
+\begin{DoxyCompactList}\small\item\em Equal comparator. \end{DoxyCompactList}\item 
+bool \hyperlink{classtvm_1_1runtime_1_1DataType_a5a41d89517a2ba67eaa7bd6b6f6c0b90}{operator!=} (const \hyperlink{classtvm_1_1runtime_1_1DataType}{Data\+Type} \&other) const 
+\begin{DoxyCompactList}\small\item\em Not\+Equal comparator. \end{DoxyCompactList}\item 
+\hyperlink{classtvm_1_1runtime_1_1DataType_ab5fd476a3db6699ddb5a41236653fbd7}{operator D\+L\+Data\+Type} () const 
+\begin{DoxyCompactList}\small\item\em Converter to D\+L\+Data\+Type. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \hyperlink{classtvm_1_1runtime_1_1DataType}{Data\+Type} \hyperlink{classtvm_1_1runtime_1_1DataType_ab45f13dd70d982d9f977c79b6f7fac98}{Int} (int \hyperlink{classtvm_1_1runtime_1_1DataType_ac26a4b0d3de99a8c08ecc2618a8659d9}{bits}, int \hyperlink{classtvm_1_1runtime_1_1DataType_abc92c7ca9966808f024983c76e12cf4a}{lanes}=1)
+\begin{DoxyCompactList}\small\item\em Construct an int type. \end{DoxyCompactList}\item 
+static \hyperlink{classtvm_1_1runtime_1_1DataType}{Data\+Type} \hyperlink{classtvm_1_1runtime_1_1DataType_ad1cf4571ee1a22c188c66ee2e6e6c042}{U\+Int} (int \hyperlink{classtvm_1_1runtime_1_1DataType_ac26a4b0d3de99a8c08ecc2618a8659d9}{bits}, int \hyperlink{classtvm_1_1runtime_1_1DataType_abc92c7ca9966808f024983c76e12cf4a}{lanes}=1)
+\begin{DoxyCompactList}\small\item\em Construct an uint type. \end{DoxyCompactList}\item 
+static \hyperlink{classtvm_1_1runtime_1_1DataType}{Data\+Type} \hyperlink{classtvm_1_1runtime_1_1DataType_a237a714a6a16e14aa01fa4ac52426551}{Float} (int \hyperlink{classtvm_1_1runtime_1_1DataType_ac26a4b0d3de99a8c08ecc2618a8659d9}{bits}, int \hyperlink{classtvm_1_1runtime_1_1DataType_abc92c7ca9966808f024983c76e12cf4a}{lanes}=1)
+\begin{DoxyCompactList}\small\item\em Construct an uint type. \end{DoxyCompactList}\item 
+static \hyperlink{classtvm_1_1runtime_1_1DataType}{Data\+Type} \hyperlink{classtvm_1_1runtime_1_1DataType_a43941f847c40049ef292dc2873483e0d}{Bool} (int \hyperlink{classtvm_1_1runtime_1_1DataType_abc92c7ca9966808f024983c76e12cf4a}{lanes}=1)
+\begin{DoxyCompactList}\small\item\em Construct a bool type. \end{DoxyCompactList}\item 
+static \hyperlink{classtvm_1_1runtime_1_1DataType}{Data\+Type} \hyperlink{classtvm_1_1runtime_1_1DataType_aebad9f7235dd20af649fb5c2113797b8}{Handle} (int \hyperlink{classtvm_1_1runtime_1_1DataType_ac26a4b0d3de99a8c08ecc2618a8659d9}{bits}=64, int \hyperlink{classtvm_1_1runtime_1_1DataType_abc92c7ca9966808f024983c76e12cf4a}{lanes}=1)
+\begin{DoxyCompactList}\small\item\em Construct a handle type. \end{DoxyCompactList}\item 
+static \hyperlink{classtvm_1_1runtime_1_1DataType}{Data\+Type} \hyperlink{classtvm_1_1runtime_1_1DataType_a04f0e069017af3f0da47bc0c1fd80916}{Shape\+Index} ()
+\begin{DoxyCompactList}\small\item\em Get the corresponding type of T\+V\+M\+Shape\+Index. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Runtime primitive data type. 
+
+This class is a thin wrapper of D\+L\+Data\+Type. We also make use of \hyperlink{classtvm_1_1runtime_1_1DataType}{Data\+Type} in compiler to store quick hint 
+
+\subsection{Member Enumeration Documentation}
+\index{tvm\+::runtime\+::\+Data\+Type@{tvm\+::runtime\+::\+Data\+Type}!Type\+Code@{Type\+Code}}
+\index{Type\+Code@{Type\+Code}!tvm\+::runtime\+::\+Data\+Type@{tvm\+::runtime\+::\+Data\+Type}}
+\subsubsection[{\texorpdfstring{Type\+Code}{TypeCode}}]{\setlength{\rightskip}{0pt plus 5cm}enum {\bf tvm\+::runtime\+::\+Data\+Type\+::\+Type\+Code}}\hypertarget{classtvm_1_1runtime_1_1DataType_a3c9ce1627be2550f656cd37b6c698c7d}{}\label{classtvm_1_1runtime_1_1DataType_a3c9ce1627be2550f656cd37b6c698c7d}
+
+
+\hyperlink{classtvm_1_1Type}{Type} code for the \hyperlink{classtvm_1_1runtime_1_1DataType}{Data\+Type}. 
+
+\begin{Desc}
+\item[Enumerator]\par
+\begin{description}
+\index{k\+Int@{k\+Int}!tvm\+::runtime\+::\+Data\+Type@{tvm\+::runtime\+::\+Data\+Type}}\index{tvm\+::runtime\+::\+Data\+Type@{tvm\+::runtime\+::\+Data\+Type}!k\+Int@{k\+Int}}\item[{\em 
+k\+Int\hypertarget{classtvm_1_1runtime_1_1DataType_a3c9ce1627be2550f656cd37b6c698c7daba80c33310f753ce7578ba71f8b19450}{}\label{classtvm_1_1runtime_1_1DataType_a3c9ce1627be2550f656cd37b6c698c7daba80c33310f753ce7578ba71f8b19450}
+}]\index{k\+U\+Int@{k\+U\+Int}!tvm\+::runtime\+::\+Data\+Type@{tvm\+::runtime\+::\+Data\+Type}}\index{tvm\+::runtime\+::\+Data\+Type@{tvm\+::runtime\+::\+Data\+Type}!k\+U\+Int@{k\+U\+Int}}\item[{\em 
+k\+U\+Int\hypertarget{classtvm_1_1runtime_1_1DataType_a3c9ce1627be2550f656cd37b6c698c7da2c35d4ea9e95ede0b5a1909a87cbc9f2}{}\label{classtvm_1_1runtime_1_1DataType_a3c9ce1627be2550f656cd37b6c698c7da2c35d4ea9e95ede0b5a1909a87cbc9f2}
+}]\index{k\+Float@{k\+Float}!tvm\+::runtime\+::\+Data\+Type@{tvm\+::runtime\+::\+Data\+Type}}\index{tvm\+::runtime\+::\+Data\+Type@{tvm\+::runtime\+::\+Data\+Type}!k\+Float@{k\+Float}}\item[{\em 
+k\+Float\hypertarget{classtvm_1_1runtime_1_1DataType_a3c9ce1627be2550f656cd37b6c698c7da6622631a910a54272097f7f4b6373e9d}{}\label{classtvm_1_1runtime_1_1DataType_a3c9ce1627be2550f656cd37b6c698c7da6622631a910a54272097f7f4b6373e9d}
+}]\index{k\+Handle@{k\+Handle}!tvm\+::runtime\+::\+Data\+Type@{tvm\+::runtime\+::\+Data\+Type}}\index{tvm\+::runtime\+::\+Data\+Type@{tvm\+::runtime\+::\+Data\+Type}!k\+Handle@{k\+Handle}}\item[{\em 
+k\+Handle\hypertarget{classtvm_1_1runtime_1_1DataType_a3c9ce1627be2550f656cd37b6c698c7da2a59b355bef5ebc40bd78833666197cb}{}\label{classtvm_1_1runtime_1_1DataType_a3c9ce1627be2550f656cd37b6c698c7da2a59b355bef5ebc40bd78833666197cb}
+}]\end{description}
+\end{Desc}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\index{tvm\+::runtime\+::\+Data\+Type@{tvm\+::runtime\+::\+Data\+Type}!Data\+Type@{Data\+Type}}
+\index{Data\+Type@{Data\+Type}!tvm\+::runtime\+::\+Data\+Type@{tvm\+::runtime\+::\+Data\+Type}}
+\subsubsection[{\texorpdfstring{Data\+Type()}{DataType()}}]{\setlength{\rightskip}{0pt plus 5cm}tvm\+::runtime\+::\+Data\+Type\+::\+Data\+Type (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classtvm_1_1runtime_1_1DataType_a6db427a47b8d503b10cd2aee6a39d3a9}{}\label{classtvm_1_1runtime_1_1DataType_a6db427a47b8d503b10cd2aee6a39d3a9}
+
+
+default constructor 
+
+\index{tvm\+::runtime\+::\+Data\+Type@{tvm\+::runtime\+::\+Data\+Type}!Data\+Type@{Data\+Type}}
+\index{Data\+Type@{Data\+Type}!tvm\+::runtime\+::\+Data\+Type@{tvm\+::runtime\+::\+Data\+Type}}
+\subsubsection[{\texorpdfstring{Data\+Type(\+D\+L\+Data\+Type dtype)}{DataType(DLDataType dtype)}}]{\setlength{\rightskip}{0pt plus 5cm}tvm\+::runtime\+::\+Data\+Type\+::\+Data\+Type (
+\begin{DoxyParamCaption}
+\item[{D\+L\+Data\+Type}]{dtype}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [explicit]}}\hypertarget{classtvm_1_1runtime_1_1DataType_aa27f63a2395ce1ac52e4d7740a31383b}{}\label{classtvm_1_1runtime_1_1DataType_aa27f63a2395ce1ac52e4d7740a31383b}
+
+
+\hyperlink{classtvm_1_1Constructor}{Constructor}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em dtype} & The D\+L\+Data\+Type \\
+\hline
+\end{DoxyParams}
+\index{tvm\+::runtime\+::\+Data\+Type@{tvm\+::runtime\+::\+Data\+Type}!Data\+Type@{Data\+Type}}
+\index{Data\+Type@{Data\+Type}!tvm\+::runtime\+::\+Data\+Type@{tvm\+::runtime\+::\+Data\+Type}}
+\subsubsection[{\texorpdfstring{Data\+Type(int code, int bits, int lanes)}{DataType(int code, int bits, int lanes)}}]{\setlength{\rightskip}{0pt plus 5cm}tvm\+::runtime\+::\+Data\+Type\+::\+Data\+Type (
+\begin{DoxyParamCaption}
+\item[{int}]{code, }
+\item[{int}]{bits, }
+\item[{int}]{lanes}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classtvm_1_1runtime_1_1DataType_a58d36fef8d6b5fb39b01dccd79ff1db4}{}\label{classtvm_1_1runtime_1_1DataType_a58d36fef8d6b5fb39b01dccd79ff1db4}
+
+
+\hyperlink{classtvm_1_1Constructor}{Constructor}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em code} & The type code. \\
+\hline
+{\em bits} & The number of bits in the type. \\
+\hline
+{\em lanes} & The number of lanes. \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\index{tvm\+::runtime\+::\+Data\+Type@{tvm\+::runtime\+::\+Data\+Type}!bits@{bits}}
+\index{bits@{bits}!tvm\+::runtime\+::\+Data\+Type@{tvm\+::runtime\+::\+Data\+Type}}
+\subsubsection[{\texorpdfstring{bits() const }{bits() const }}]{\setlength{\rightskip}{0pt plus 5cm}int tvm\+::runtime\+::\+Data\+Type\+::bits (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classtvm_1_1runtime_1_1DataType_ac26a4b0d3de99a8c08ecc2618a8659d9}{}\label{classtvm_1_1runtime_1_1DataType_ac26a4b0d3de99a8c08ecc2618a8659d9}
+\begin{DoxyReturn}{Returns}
+number of bits in the data. 
+\end{DoxyReturn}
+\index{tvm\+::runtime\+::\+Data\+Type@{tvm\+::runtime\+::\+Data\+Type}!Bool@{Bool}}
+\index{Bool@{Bool}!tvm\+::runtime\+::\+Data\+Type@{tvm\+::runtime\+::\+Data\+Type}}
+\subsubsection[{\texorpdfstring{Bool(int lanes=1)}{Bool(int lanes=1)}}]{\setlength{\rightskip}{0pt plus 5cm}static {\bf Data\+Type} tvm\+::runtime\+::\+Data\+Type\+::\+Bool (
+\begin{DoxyParamCaption}
+\item[{int}]{lanes = {\ttfamily 1}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}\hypertarget{classtvm_1_1runtime_1_1DataType_a43941f847c40049ef292dc2873483e0d}{}\label{classtvm_1_1runtime_1_1DataType_a43941f847c40049ef292dc2873483e0d}
+
+
+Construct a bool type. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em lanes} & The number of lanes \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The constructed data type. 
+\end{DoxyReturn}
+\index{tvm\+::runtime\+::\+Data\+Type@{tvm\+::runtime\+::\+Data\+Type}!bytes@{bytes}}
+\index{bytes@{bytes}!tvm\+::runtime\+::\+Data\+Type@{tvm\+::runtime\+::\+Data\+Type}}
+\subsubsection[{\texorpdfstring{bytes() const }{bytes() const }}]{\setlength{\rightskip}{0pt plus 5cm}int tvm\+::runtime\+::\+Data\+Type\+::bytes (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classtvm_1_1runtime_1_1DataType_acaf924d15f1b2cfef7e27ac5bbb3224e}{}\label{classtvm_1_1runtime_1_1DataType_acaf924d15f1b2cfef7e27ac5bbb3224e}
+\begin{DoxyReturn}{Returns}
+number of bytes to store each scalar. 
+\end{DoxyReturn}
+\index{tvm\+::runtime\+::\+Data\+Type@{tvm\+::runtime\+::\+Data\+Type}!code@{code}}
+\index{code@{code}!tvm\+::runtime\+::\+Data\+Type@{tvm\+::runtime\+::\+Data\+Type}}
+\subsubsection[{\texorpdfstring{code() const }{code() const }}]{\setlength{\rightskip}{0pt plus 5cm}int tvm\+::runtime\+::\+Data\+Type\+::code (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classtvm_1_1runtime_1_1DataType_a20aec12c682b0e73d3f47ba3b62c418b}{}\label{classtvm_1_1runtime_1_1DataType_a20aec12c682b0e73d3f47ba3b62c418b}
+\begin{DoxyReturn}{Returns}
+The type code. 
+\end{DoxyReturn}
+\index{tvm\+::runtime\+::\+Data\+Type@{tvm\+::runtime\+::\+Data\+Type}!element\+\_\+of@{element\+\_\+of}}
+\index{element\+\_\+of@{element\+\_\+of}!tvm\+::runtime\+::\+Data\+Type@{tvm\+::runtime\+::\+Data\+Type}}
+\subsubsection[{\texorpdfstring{element\+\_\+of() const }{element_of() const }}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Data\+Type} tvm\+::runtime\+::\+Data\+Type\+::element\+\_\+of (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classtvm_1_1runtime_1_1DataType_a022ff4c55c831167018e94213cac8564}{}\label{classtvm_1_1runtime_1_1DataType_a022ff4c55c831167018e94213cac8564}
+
+
+Get the scalar version of the type. 
+
+\begin{DoxyReturn}{Returns}
+the result type. 
+\end{DoxyReturn}
+\index{tvm\+::runtime\+::\+Data\+Type@{tvm\+::runtime\+::\+Data\+Type}!Float@{Float}}
+\index{Float@{Float}!tvm\+::runtime\+::\+Data\+Type@{tvm\+::runtime\+::\+Data\+Type}}
+\subsubsection[{\texorpdfstring{Float(int bits, int lanes=1)}{Float(int bits, int lanes=1)}}]{\setlength{\rightskip}{0pt plus 5cm}static {\bf Data\+Type} tvm\+::runtime\+::\+Data\+Type\+::\+Float (
+\begin{DoxyParamCaption}
+\item[{int}]{bits, }
+\item[{int}]{lanes = {\ttfamily 1}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}\hypertarget{classtvm_1_1runtime_1_1DataType_a237a714a6a16e14aa01fa4ac52426551}{}\label{classtvm_1_1runtime_1_1DataType_a237a714a6a16e14aa01fa4ac52426551}
+
+
+Construct an uint type. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em bits} & The number of bits in the type. \\
+\hline
+{\em lanes} & The number of lanes \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The constructed data type. 
+\end{DoxyReturn}
+\index{tvm\+::runtime\+::\+Data\+Type@{tvm\+::runtime\+::\+Data\+Type}!Handle@{Handle}}
+\index{Handle@{Handle}!tvm\+::runtime\+::\+Data\+Type@{tvm\+::runtime\+::\+Data\+Type}}
+\subsubsection[{\texorpdfstring{Handle(int bits=64, int lanes=1)}{Handle(int bits=64, int lanes=1)}}]{\setlength{\rightskip}{0pt plus 5cm}static {\bf Data\+Type} tvm\+::runtime\+::\+Data\+Type\+::\+Handle (
+\begin{DoxyParamCaption}
+\item[{int}]{bits = {\ttfamily 64}, }
+\item[{int}]{lanes = {\ttfamily 1}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}\hypertarget{classtvm_1_1runtime_1_1DataType_aebad9f7235dd20af649fb5c2113797b8}{}\label{classtvm_1_1runtime_1_1DataType_aebad9f7235dd20af649fb5c2113797b8}
+
+
+Construct a handle type. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em bits} & The number of bits in the type. \\
+\hline
+{\em lanes} & The number of lanes \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The constructed data type. 
+\end{DoxyReturn}
+\index{tvm\+::runtime\+::\+Data\+Type@{tvm\+::runtime\+::\+Data\+Type}!Int@{Int}}
+\index{Int@{Int}!tvm\+::runtime\+::\+Data\+Type@{tvm\+::runtime\+::\+Data\+Type}}
+\subsubsection[{\texorpdfstring{Int(int bits, int lanes=1)}{Int(int bits, int lanes=1)}}]{\setlength{\rightskip}{0pt plus 5cm}static {\bf Data\+Type} tvm\+::runtime\+::\+Data\+Type\+::\+Int (
+\begin{DoxyParamCaption}
+\item[{int}]{bits, }
+\item[{int}]{lanes = {\ttfamily 1}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}\hypertarget{classtvm_1_1runtime_1_1DataType_ab45f13dd70d982d9f977c79b6f7fac98}{}\label{classtvm_1_1runtime_1_1DataType_ab45f13dd70d982d9f977c79b6f7fac98}
+
+
+Construct an int type. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em bits} & The number of bits in the type. \\
+\hline
+{\em lanes} & The number of lanes. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The constructed data type. 
+\end{DoxyReturn}
+\index{tvm\+::runtime\+::\+Data\+Type@{tvm\+::runtime\+::\+Data\+Type}!is\+\_\+bool@{is\+\_\+bool}}
+\index{is\+\_\+bool@{is\+\_\+bool}!tvm\+::runtime\+::\+Data\+Type@{tvm\+::runtime\+::\+Data\+Type}}
+\subsubsection[{\texorpdfstring{is\+\_\+bool() const }{is_bool() const }}]{\setlength{\rightskip}{0pt plus 5cm}bool tvm\+::runtime\+::\+Data\+Type\+::is\+\_\+bool (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classtvm_1_1runtime_1_1DataType_a805fe49439d48debbc46c071b2957744}{}\label{classtvm_1_1runtime_1_1DataType_a805fe49439d48debbc46c071b2957744}
+\begin{DoxyReturn}{Returns}
+whether type is a scalar type. 
+\end{DoxyReturn}
+\index{tvm\+::runtime\+::\+Data\+Type@{tvm\+::runtime\+::\+Data\+Type}!is\+\_\+float@{is\+\_\+float}}
+\index{is\+\_\+float@{is\+\_\+float}!tvm\+::runtime\+::\+Data\+Type@{tvm\+::runtime\+::\+Data\+Type}}
+\subsubsection[{\texorpdfstring{is\+\_\+float() const }{is_float() const }}]{\setlength{\rightskip}{0pt plus 5cm}bool tvm\+::runtime\+::\+Data\+Type\+::is\+\_\+float (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classtvm_1_1runtime_1_1DataType_a4580dc7ac2f703780b0cc249e7d150a2}{}\label{classtvm_1_1runtime_1_1DataType_a4580dc7ac2f703780b0cc249e7d150a2}
+\begin{DoxyReturn}{Returns}
+whether type is a float type. 
+\end{DoxyReturn}
+\index{tvm\+::runtime\+::\+Data\+Type@{tvm\+::runtime\+::\+Data\+Type}!is\+\_\+float16@{is\+\_\+float16}}
+\index{is\+\_\+float16@{is\+\_\+float16}!tvm\+::runtime\+::\+Data\+Type@{tvm\+::runtime\+::\+Data\+Type}}
+\subsubsection[{\texorpdfstring{is\+\_\+float16() const }{is_float16() const }}]{\setlength{\rightskip}{0pt plus 5cm}bool tvm\+::runtime\+::\+Data\+Type\+::is\+\_\+float16 (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classtvm_1_1runtime_1_1DataType_ad2152f38ce867397b99bcbe3fba0618b}{}\label{classtvm_1_1runtime_1_1DataType_ad2152f38ce867397b99bcbe3fba0618b}
+\begin{DoxyReturn}{Returns}
+whether type is a float16 type. 
+\end{DoxyReturn}
+\index{tvm\+::runtime\+::\+Data\+Type@{tvm\+::runtime\+::\+Data\+Type}!is\+\_\+handle@{is\+\_\+handle}}
+\index{is\+\_\+handle@{is\+\_\+handle}!tvm\+::runtime\+::\+Data\+Type@{tvm\+::runtime\+::\+Data\+Type}}
+\subsubsection[{\texorpdfstring{is\+\_\+handle() const }{is_handle() const }}]{\setlength{\rightskip}{0pt plus 5cm}bool tvm\+::runtime\+::\+Data\+Type\+::is\+\_\+handle (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classtvm_1_1runtime_1_1DataType_af0ddd5dcfdee76fe344f4bfb7aff806d}{}\label{classtvm_1_1runtime_1_1DataType_af0ddd5dcfdee76fe344f4bfb7aff806d}
+\begin{DoxyReturn}{Returns}
+whether type is a handle type. 
+\end{DoxyReturn}
+\index{tvm\+::runtime\+::\+Data\+Type@{tvm\+::runtime\+::\+Data\+Type}!is\+\_\+int@{is\+\_\+int}}
+\index{is\+\_\+int@{is\+\_\+int}!tvm\+::runtime\+::\+Data\+Type@{tvm\+::runtime\+::\+Data\+Type}}
+\subsubsection[{\texorpdfstring{is\+\_\+int() const }{is_int() const }}]{\setlength{\rightskip}{0pt plus 5cm}bool tvm\+::runtime\+::\+Data\+Type\+::is\+\_\+int (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classtvm_1_1runtime_1_1DataType_aa0f1df1d5f4ed20bea6260b8ae939e20}{}\label{classtvm_1_1runtime_1_1DataType_aa0f1df1d5f4ed20bea6260b8ae939e20}
+\begin{DoxyReturn}{Returns}
+whether type is an int type. 
+\end{DoxyReturn}
+\index{tvm\+::runtime\+::\+Data\+Type@{tvm\+::runtime\+::\+Data\+Type}!is\+\_\+scalar@{is\+\_\+scalar}}
+\index{is\+\_\+scalar@{is\+\_\+scalar}!tvm\+::runtime\+::\+Data\+Type@{tvm\+::runtime\+::\+Data\+Type}}
+\subsubsection[{\texorpdfstring{is\+\_\+scalar() const }{is_scalar() const }}]{\setlength{\rightskip}{0pt plus 5cm}bool tvm\+::runtime\+::\+Data\+Type\+::is\+\_\+scalar (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classtvm_1_1runtime_1_1DataType_aa8e03c0549459bb3a7293f9b1bf04b3e}{}\label{classtvm_1_1runtime_1_1DataType_aa8e03c0549459bb3a7293f9b1bf04b3e}
+\begin{DoxyReturn}{Returns}
+whether type is a scalar type. 
+\end{DoxyReturn}
+\index{tvm\+::runtime\+::\+Data\+Type@{tvm\+::runtime\+::\+Data\+Type}!is\+\_\+uint@{is\+\_\+uint}}
+\index{is\+\_\+uint@{is\+\_\+uint}!tvm\+::runtime\+::\+Data\+Type@{tvm\+::runtime\+::\+Data\+Type}}
+\subsubsection[{\texorpdfstring{is\+\_\+uint() const }{is_uint() const }}]{\setlength{\rightskip}{0pt plus 5cm}bool tvm\+::runtime\+::\+Data\+Type\+::is\+\_\+uint (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classtvm_1_1runtime_1_1DataType_a731b95a55b3dae496b9ecccffe834772}{}\label{classtvm_1_1runtime_1_1DataType_a731b95a55b3dae496b9ecccffe834772}
+\begin{DoxyReturn}{Returns}
+whether type is an uint type. 
+\end{DoxyReturn}
+\index{tvm\+::runtime\+::\+Data\+Type@{tvm\+::runtime\+::\+Data\+Type}!is\+\_\+vector@{is\+\_\+vector}}
+\index{is\+\_\+vector@{is\+\_\+vector}!tvm\+::runtime\+::\+Data\+Type@{tvm\+::runtime\+::\+Data\+Type}}
+\subsubsection[{\texorpdfstring{is\+\_\+vector() const }{is_vector() const }}]{\setlength{\rightskip}{0pt plus 5cm}bool tvm\+::runtime\+::\+Data\+Type\+::is\+\_\+vector (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classtvm_1_1runtime_1_1DataType_a21d377fb6acaf48f03d94cee082e08e9}{}\label{classtvm_1_1runtime_1_1DataType_a21d377fb6acaf48f03d94cee082e08e9}
+\begin{DoxyReturn}{Returns}
+whether type is a vector type. 
+\end{DoxyReturn}
+\index{tvm\+::runtime\+::\+Data\+Type@{tvm\+::runtime\+::\+Data\+Type}!is\+\_\+vector\+\_\+bool@{is\+\_\+vector\+\_\+bool}}
+\index{is\+\_\+vector\+\_\+bool@{is\+\_\+vector\+\_\+bool}!tvm\+::runtime\+::\+Data\+Type@{tvm\+::runtime\+::\+Data\+Type}}
+\subsubsection[{\texorpdfstring{is\+\_\+vector\+\_\+bool() const }{is_vector_bool() const }}]{\setlength{\rightskip}{0pt plus 5cm}bool tvm\+::runtime\+::\+Data\+Type\+::is\+\_\+vector\+\_\+bool (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classtvm_1_1runtime_1_1DataType_a0990e6ef4d29b009f17702fecc4a0094}{}\label{classtvm_1_1runtime_1_1DataType_a0990e6ef4d29b009f17702fecc4a0094}
+\begin{DoxyReturn}{Returns}
+whether type is a bool vector type. 
+\end{DoxyReturn}
+\index{tvm\+::runtime\+::\+Data\+Type@{tvm\+::runtime\+::\+Data\+Type}!lanes@{lanes}}
+\index{lanes@{lanes}!tvm\+::runtime\+::\+Data\+Type@{tvm\+::runtime\+::\+Data\+Type}}
+\subsubsection[{\texorpdfstring{lanes() const }{lanes() const }}]{\setlength{\rightskip}{0pt plus 5cm}int tvm\+::runtime\+::\+Data\+Type\+::lanes (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classtvm_1_1runtime_1_1DataType_abc92c7ca9966808f024983c76e12cf4a}{}\label{classtvm_1_1runtime_1_1DataType_abc92c7ca9966808f024983c76e12cf4a}
+\begin{DoxyReturn}{Returns}
+number of lanes in the data. 
+\end{DoxyReturn}
+\index{tvm\+::runtime\+::\+Data\+Type@{tvm\+::runtime\+::\+Data\+Type}!operator D\+L\+Data\+Type@{operator D\+L\+Data\+Type}}
+\index{operator D\+L\+Data\+Type@{operator D\+L\+Data\+Type}!tvm\+::runtime\+::\+Data\+Type@{tvm\+::runtime\+::\+Data\+Type}}
+\subsubsection[{\texorpdfstring{operator D\+L\+Data\+Type() const }{operator DLDataType() const }}]{\setlength{\rightskip}{0pt plus 5cm}tvm\+::runtime\+::\+Data\+Type\+::operator D\+L\+Data\+Type (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classtvm_1_1runtime_1_1DataType_ab5fd476a3db6699ddb5a41236653fbd7}{}\label{classtvm_1_1runtime_1_1DataType_ab5fd476a3db6699ddb5a41236653fbd7}
+
+
+Converter to D\+L\+Data\+Type. 
+
+\begin{DoxyReturn}{Returns}
+the result. 
+\end{DoxyReturn}
+\index{tvm\+::runtime\+::\+Data\+Type@{tvm\+::runtime\+::\+Data\+Type}!operator"!=@{operator"!=}}
+\index{operator"!=@{operator"!=}!tvm\+::runtime\+::\+Data\+Type@{tvm\+::runtime\+::\+Data\+Type}}
+\subsubsection[{\texorpdfstring{operator"!=(const Data\+Type \&other) const }{operator!=(const DataType &other) const }}]{\setlength{\rightskip}{0pt plus 5cm}bool tvm\+::runtime\+::\+Data\+Type\+::operator!= (
+\begin{DoxyParamCaption}
+\item[{const {\bf Data\+Type} \&}]{other}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classtvm_1_1runtime_1_1DataType_a5a41d89517a2ba67eaa7bd6b6f6c0b90}{}\label{classtvm_1_1runtime_1_1DataType_a5a41d89517a2ba67eaa7bd6b6f6c0b90}
+
+
+Not\+Equal comparator. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em other} & The data type to compre against. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The comparison resilt. 
+\end{DoxyReturn}
+\index{tvm\+::runtime\+::\+Data\+Type@{tvm\+::runtime\+::\+Data\+Type}!operator==@{operator==}}
+\index{operator==@{operator==}!tvm\+::runtime\+::\+Data\+Type@{tvm\+::runtime\+::\+Data\+Type}}
+\subsubsection[{\texorpdfstring{operator==(const Data\+Type \&other) const }{operator==(const DataType &other) const }}]{\setlength{\rightskip}{0pt plus 5cm}bool tvm\+::runtime\+::\+Data\+Type\+::operator== (
+\begin{DoxyParamCaption}
+\item[{const {\bf Data\+Type} \&}]{other}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classtvm_1_1runtime_1_1DataType_a50fe4658199e24d8287934220e1cc8ab}{}\label{classtvm_1_1runtime_1_1DataType_a50fe4658199e24d8287934220e1cc8ab}
+
+
+Equal comparator. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em other} & The data type to compre against. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The comparison resilt. 
+\end{DoxyReturn}
+\index{tvm\+::runtime\+::\+Data\+Type@{tvm\+::runtime\+::\+Data\+Type}!Shape\+Index@{Shape\+Index}}
+\index{Shape\+Index@{Shape\+Index}!tvm\+::runtime\+::\+Data\+Type@{tvm\+::runtime\+::\+Data\+Type}}
+\subsubsection[{\texorpdfstring{Shape\+Index()}{ShapeIndex()}}]{\setlength{\rightskip}{0pt plus 5cm}static {\bf Data\+Type} tvm\+::runtime\+::\+Data\+Type\+::\+Shape\+Index (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}\hypertarget{classtvm_1_1runtime_1_1DataType_a04f0e069017af3f0da47bc0c1fd80916}{}\label{classtvm_1_1runtime_1_1DataType_a04f0e069017af3f0da47bc0c1fd80916}
+
+
+Get the corresponding type of T\+V\+M\+Shape\+Index. 
+
+\begin{DoxyReturn}{Returns}
+The type of T\+VM shape index. 
+\end{DoxyReturn}
+\index{tvm\+::runtime\+::\+Data\+Type@{tvm\+::runtime\+::\+Data\+Type}!U\+Int@{U\+Int}}
+\index{U\+Int@{U\+Int}!tvm\+::runtime\+::\+Data\+Type@{tvm\+::runtime\+::\+Data\+Type}}
+\subsubsection[{\texorpdfstring{U\+Int(int bits, int lanes=1)}{UInt(int bits, int lanes=1)}}]{\setlength{\rightskip}{0pt plus 5cm}static {\bf Data\+Type} tvm\+::runtime\+::\+Data\+Type\+::\+U\+Int (
+\begin{DoxyParamCaption}
+\item[{int}]{bits, }
+\item[{int}]{lanes = {\ttfamily 1}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}\hypertarget{classtvm_1_1runtime_1_1DataType_ad1cf4571ee1a22c188c66ee2e6e6c042}{}\label{classtvm_1_1runtime_1_1DataType_ad1cf4571ee1a22c188c66ee2e6e6c042}
+
+
+Construct an uint type. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em bits} & The number of bits in the type. \\
+\hline
+{\em lanes} & The number of lanes \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The constructed data type. 
+\end{DoxyReturn}
+\index{tvm\+::runtime\+::\+Data\+Type@{tvm\+::runtime\+::\+Data\+Type}!with\+\_\+bits@{with\+\_\+bits}}
+\index{with\+\_\+bits@{with\+\_\+bits}!tvm\+::runtime\+::\+Data\+Type@{tvm\+::runtime\+::\+Data\+Type}}
+\subsubsection[{\texorpdfstring{with\+\_\+bits(int bits) const }{with_bits(int bits) const }}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Data\+Type} tvm\+::runtime\+::\+Data\+Type\+::with\+\_\+bits (
+\begin{DoxyParamCaption}
+\item[{int}]{bits}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classtvm_1_1runtime_1_1DataType_a9cf48e54cda66f3351b331fcc6cca1dc}{}\label{classtvm_1_1runtime_1_1DataType_a9cf48e54cda66f3351b331fcc6cca1dc}
+
+
+Create a new data type by change bits to a specified value. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em bits} & The target number of bits. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the result type. 
+\end{DoxyReturn}
+\index{tvm\+::runtime\+::\+Data\+Type@{tvm\+::runtime\+::\+Data\+Type}!with\+\_\+lanes@{with\+\_\+lanes}}
+\index{with\+\_\+lanes@{with\+\_\+lanes}!tvm\+::runtime\+::\+Data\+Type@{tvm\+::runtime\+::\+Data\+Type}}
+\subsubsection[{\texorpdfstring{with\+\_\+lanes(int lanes) const }{with_lanes(int lanes) const }}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Data\+Type} tvm\+::runtime\+::\+Data\+Type\+::with\+\_\+lanes (
+\begin{DoxyParamCaption}
+\item[{int}]{lanes}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classtvm_1_1runtime_1_1DataType_ab188f54da1a54b34a11621fcb8feb6a7}{}\label{classtvm_1_1runtime_1_1DataType_ab188f54da1a54b34a11621fcb8feb6a7}
+
+
+Create a new data type by change lanes to a specified value. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em lanes} & The target number of lanes. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the result type. 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+include/tvm/runtime/\hyperlink{data__type_8h}{data\+\_\+type.\+h}\end{DoxyCompactItemize}

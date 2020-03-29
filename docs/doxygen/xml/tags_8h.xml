@@ -1,0 +1,368 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="tags_8h" kind="file" language="C++">
+    <compoundname>tags.h</compoundname>
+    <includes local="no">string</includes>
+    <includedby refid="broadcast_8h" local="no">topi/include/topi/broadcast.h</includedby>
+    <includedby refid="cuda_2dense_8h" local="no">topi/include/topi/cuda/dense.h</includedby>
+    <includedby refid="cuda_2injective_8h" local="no">topi/include/topi/cuda/injective.h</includedby>
+    <includedby refid="cuda_2normalization_8h" local="no">topi/include/topi/cuda/normalization.h</includedby>
+    <includedby refid="cuda_2pooling_8h" local="no">topi/include/topi/cuda/pooling.h</includedby>
+    <includedby refid="cuda_2reduction_8h" local="no">topi/include/topi/cuda/reduction.h</includedby>
+    <includedby refid="cuda_2softmax_8h" local="no">topi/include/topi/cuda/softmax.h</includedby>
+    <includedby refid="elemwise_8h" local="no">topi/include/topi/elemwise.h</includedby>
+    <includedby refid="generic_2default_8h" local="no">topi/include/topi/generic/default.h</includedby>
+    <includedby refid="generic_2extern_8h" local="no">topi/include/topi/generic/extern.h</includedby>
+    <includedby refid="generic_2injective_8h" local="no">topi/include/topi/generic/injective.h</includedby>
+    <includedby refid="batch__matmul_8h" local="no">topi/include/topi/nn/batch_matmul.h</includedby>
+    <includedby refid="bias__add_8h" local="no">topi/include/topi/nn/bias_add.h</includedby>
+    <includedby refid="nn_2bnn_8h" local="no">topi/include/topi/nn/bnn.h</includedby>
+    <includedby refid="nn_2dense_8h" local="no">topi/include/topi/nn/dense.h</includedby>
+    <includedby refid="dilate_8h" local="no">topi/include/topi/nn/dilate.h</includedby>
+    <includedby refid="flatten_8h" local="no">topi/include/topi/nn/flatten.h</includedby>
+    <includedby refid="local__response__norm_8h" local="no">topi/include/topi/nn/local_response_norm.h</includedby>
+    <includedby refid="mapping_8h" local="no">topi/include/topi/nn/mapping.h</includedby>
+    <includedby refid="nn_2pooling_8h" local="no">topi/include/topi/nn/pooling.h</includedby>
+    <includedby refid="nn_2softmax_8h" local="no">topi/include/topi/nn/softmax.h</includedby>
+    <includedby refid="topi_2include_2topi_2nn_8h" local="no">topi/include/topi/nn.h</includedby>
+    <includedby refid="reduction_8h" local="no">topi/include/topi/reduction.h</includedby>
+    <includedby refid="rocm_2dense_8h" local="no">topi/include/topi/rocm/dense.h</includedby>
+    <includedby refid="rocm_2injective_8h" local="no">topi/include/topi/rocm/injective.h</includedby>
+    <includedby refid="rocm_2normalization_8h" local="no">topi/include/topi/rocm/normalization.h</includedby>
+    <includedby refid="rocm_2pooling_8h" local="no">topi/include/topi/rocm/pooling.h</includedby>
+    <includedby refid="rocm_2reduction_8h" local="no">topi/include/topi/rocm/reduction.h</includedby>
+    <includedby refid="rocm_2softmax_8h" local="no">topi/include/topi/rocm/softmax.h</includedby>
+    <includedby refid="topi_2include_2topi_2transform_8h" local="no">topi/include/topi/transform.h</includedby>
+    <includedby refid="reorg_8h" local="no">topi/include/topi/vision/reorg.h</includedby>
+    <includedby refid="x86_2bnn_8h" local="no">topi/include/topi/x86/bnn.h</includedby>
+    <includedby refid="x86_2default_8h" local="no">topi/include/topi/x86/default.h</includedby>
+    <includedby refid="x86_2injective_8h" local="no">topi/include/topi/x86/injective.h</includedby>
+    <incdepgraph>
+      <node id="18926">
+        <label>string</label>
+      </node>
+      <node id="18925">
+        <label>topi/include/topi/tags.h</label>
+        <link refid="tags.h"/>
+        <childnode refid="18926" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="18949">
+        <label>topi/include/topi/nn/batch_matmul.h</label>
+        <link refid="batch__matmul_8h"/>
+      </node>
+      <node id="18938">
+        <label>topi/include/topi/rocm/injective.h</label>
+        <link refid="rocm_2injective_8h"/>
+      </node>
+      <node id="18945">
+        <label>topi/include/topi/rocm/softmax.h</label>
+        <link refid="rocm_2softmax_8h"/>
+      </node>
+      <node id="18943">
+        <label>topi/include/topi/rocm/reduction.h</label>
+        <link refid="rocm_2reduction_8h"/>
+      </node>
+      <node id="18933">
+        <label>topi/include/topi/vision/reorg.h</label>
+        <link refid="reorg_8h"/>
+      </node>
+      <node id="18961">
+        <label>topi/include/topi/x86/injective.h</label>
+        <link refid="x86_2injective_8h"/>
+      </node>
+      <node id="18953">
+        <label>topi/include/topi/nn/flatten.h</label>
+        <link refid="flatten_8h"/>
+      </node>
+      <node id="18951">
+        <label>topi/include/topi/nn/dense.h</label>
+        <link refid="nn_2dense_8h"/>
+        <childnode refid="18935" relation="include">
+        </childnode>
+        <childnode refid="18936" relation="include">
+        </childnode>
+      </node>
+      <node id="18942">
+        <label>topi/include/topi/cuda/reduction.h</label>
+        <link refid="cuda_2reduction_8h"/>
+        <childnode refid="18943" relation="include">
+        </childnode>
+      </node>
+      <node id="18952">
+        <label>topi/include/topi/nn/dilate.h</label>
+        <link refid="dilate_8h"/>
+      </node>
+      <node id="18934">
+        <label>topi/include/topi/nn/bias_add.h</label>
+        <link refid="bias__add_8h"/>
+      </node>
+      <node id="18958">
+        <label>topi/include/topi/transform.h</label>
+        <link refid="topi_2include_2topi_2transform_8h"/>
+        <childnode refid="18934" relation="include">
+        </childnode>
+        <childnode refid="18930" relation="include">
+        </childnode>
+        <childnode refid="18933" relation="include">
+        </childnode>
+      </node>
+      <node id="18956">
+        <label>topi/include/topi/nn.h</label>
+        <link refid="topi_2include_2topi_2nn_8h"/>
+        <childnode refid="18931" relation="include">
+        </childnode>
+      </node>
+      <node id="18940">
+        <label>topi/include/topi/cuda/pooling.h</label>
+        <link refid="cuda_2pooling_8h"/>
+        <childnode refid="18941" relation="include">
+        </childnode>
+      </node>
+      <node id="18932">
+        <label>topi/include/topi/nn/softmax.h</label>
+        <link refid="nn_2softmax_8h"/>
+      </node>
+      <node id="18930">
+        <label>topi/include/topi/reduction.h</label>
+        <link refid="reduction_8h"/>
+        <childnode refid="18931" relation="include">
+        </childnode>
+        <childnode refid="18932" relation="include">
+        </childnode>
+        <childnode refid="18933" relation="include">
+        </childnode>
+      </node>
+      <node id="18954">
+        <label>topi/include/topi/nn/local_response_norm.h</label>
+        <link refid="local__response__norm_8h"/>
+      </node>
+      <node id="18950">
+        <label>topi/include/topi/nn/bnn.h</label>
+        <link refid="nn_2bnn_8h"/>
+      </node>
+      <node id="18939">
+        <label>topi/include/topi/cuda/normalization.h</label>
+        <link refid="cuda_2normalization_8h"/>
+      </node>
+      <node id="18944">
+        <label>topi/include/topi/cuda/softmax.h</label>
+        <link refid="cuda_2softmax_8h"/>
+        <childnode refid="18945" relation="include">
+        </childnode>
+      </node>
+      <node id="18960">
+        <label>topi/include/topi/x86/default.h</label>
+        <link refid="x86_2default_8h"/>
+      </node>
+      <node id="18941">
+        <label>topi/include/topi/rocm/pooling.h</label>
+        <link refid="rocm_2pooling_8h"/>
+      </node>
+      <node id="18936">
+        <label>topi/include/topi/rocm/dense.h</label>
+        <link refid="rocm_2dense_8h"/>
+      </node>
+      <node id="18937">
+        <label>topi/include/topi/cuda/injective.h</label>
+        <link refid="cuda_2injective_8h"/>
+        <childnode refid="18938" relation="include">
+        </childnode>
+      </node>
+      <node id="18959">
+        <label>topi/include/topi/x86/bnn.h</label>
+        <link refid="x86_2bnn_8h"/>
+      </node>
+      <node id="18931">
+        <label>topi/include/topi/nn/pooling.h</label>
+        <link refid="nn_2pooling_8h"/>
+      </node>
+      <node id="18946">
+        <label>topi/include/topi/generic/default.h</label>
+        <link refid="generic_2default_8h"/>
+      </node>
+      <node id="18928">
+        <label>topi/include/topi/broadcast.h</label>
+        <link refid="broadcast_8h"/>
+        <childnode refid="18929" relation="include">
+        </childnode>
+        <childnode refid="18934" relation="include">
+        </childnode>
+        <childnode refid="18930" relation="include">
+        </childnode>
+      </node>
+      <node id="18955">
+        <label>topi/include/topi/nn/mapping.h</label>
+        <link refid="mapping_8h"/>
+      </node>
+      <node id="18957">
+        <label>topi/include/topi/rocm/normalization.h</label>
+        <link refid="rocm_2normalization_8h"/>
+      </node>
+      <node id="18947">
+        <label>topi/include/topi/generic/extern.h</label>
+        <link refid="generic_2extern_8h"/>
+        <childnode refid="18935" relation="include">
+        </childnode>
+        <childnode refid="18936" relation="include">
+        </childnode>
+      </node>
+      <node id="18935">
+        <label>topi/include/topi/cuda/dense.h</label>
+        <link refid="cuda_2dense_8h"/>
+        <childnode refid="18936" relation="include">
+        </childnode>
+      </node>
+      <node id="18948">
+        <label>topi/include/topi/generic/injective.h</label>
+        <link refid="generic_2injective_8h"/>
+        <childnode refid="18947" relation="include">
+        </childnode>
+      </node>
+      <node id="18927">
+        <label>topi/include/topi/tags.h</label>
+        <link refid="tags.h"/>
+        <childnode refid="18928" relation="include">
+        </childnode>
+        <childnode refid="18935" relation="include">
+        </childnode>
+        <childnode refid="18937" relation="include">
+        </childnode>
+        <childnode refid="18939" relation="include">
+        </childnode>
+        <childnode refid="18940" relation="include">
+        </childnode>
+        <childnode refid="18942" relation="include">
+        </childnode>
+        <childnode refid="18944" relation="include">
+        </childnode>
+        <childnode refid="18929" relation="include">
+        </childnode>
+        <childnode refid="18946" relation="include">
+        </childnode>
+        <childnode refid="18947" relation="include">
+        </childnode>
+        <childnode refid="18948" relation="include">
+        </childnode>
+        <childnode refid="18949" relation="include">
+        </childnode>
+        <childnode refid="18934" relation="include">
+        </childnode>
+        <childnode refid="18950" relation="include">
+        </childnode>
+        <childnode refid="18951" relation="include">
+        </childnode>
+        <childnode refid="18952" relation="include">
+        </childnode>
+        <childnode refid="18953" relation="include">
+        </childnode>
+        <childnode refid="18954" relation="include">
+        </childnode>
+        <childnode refid="18955" relation="include">
+        </childnode>
+        <childnode refid="18931" relation="include">
+        </childnode>
+        <childnode refid="18932" relation="include">
+        </childnode>
+        <childnode refid="18956" relation="include">
+        </childnode>
+        <childnode refid="18930" relation="include">
+        </childnode>
+        <childnode refid="18936" relation="include">
+        </childnode>
+        <childnode refid="18938" relation="include">
+        </childnode>
+        <childnode refid="18957" relation="include">
+        </childnode>
+        <childnode refid="18941" relation="include">
+        </childnode>
+        <childnode refid="18943" relation="include">
+        </childnode>
+        <childnode refid="18945" relation="include">
+        </childnode>
+        <childnode refid="18958" relation="include">
+        </childnode>
+        <childnode refid="18933" relation="include">
+        </childnode>
+        <childnode refid="18959" relation="include">
+        </childnode>
+        <childnode refid="18960" relation="include">
+        </childnode>
+        <childnode refid="18961" relation="include">
+        </childnode>
+      </node>
+      <node id="18929">
+        <label>topi/include/topi/elemwise.h</label>
+        <link refid="elemwise_8h"/>
+        <childnode refid="18930" relation="include">
+        </childnode>
+      </node>
+    </invincdepgraph>
+    <innernamespace refid="namespacetopi">topi</innernamespace>
+    <briefdescription>
+<para>External function interface to rocBLAS libraries. </para>    </briefdescription>
+    <detaileddescription>
+<para>Tag definitions.</para>    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="2"><highlight class="comment"><sp/>*<sp/>Licensed<sp/>to<sp/>the<sp/>Apache<sp/>Software<sp/>Foundation<sp/>(ASF)<sp/>under<sp/>one</highlight></codeline>
+<codeline lineno="3"><highlight class="comment"><sp/>*<sp/>or<sp/>more<sp/>contributor<sp/>license<sp/>agreements.<sp/><sp/>See<sp/>the<sp/>NOTICE<sp/>file</highlight></codeline>
+<codeline lineno="4"><highlight class="comment"><sp/>*<sp/>distributed<sp/>with<sp/>this<sp/>work<sp/>for<sp/>additional<sp/>information</highlight></codeline>
+<codeline lineno="5"><highlight class="comment"><sp/>*<sp/>regarding<sp/>copyright<sp/>ownership.<sp/><sp/>The<sp/>ASF<sp/>licenses<sp/>this<sp/>file</highlight></codeline>
+<codeline lineno="6"><highlight class="comment"><sp/>*<sp/>to<sp/>you<sp/>under<sp/>the<sp/>Apache<sp/>License,<sp/>Version<sp/>2.0<sp/>(the</highlight></codeline>
+<codeline lineno="7"><highlight class="comment"><sp/>*<sp/>&quot;License&quot;);<sp/>you<sp/>may<sp/>not<sp/>use<sp/>this<sp/>file<sp/>except<sp/>in<sp/>compliance</highlight></codeline>
+<codeline lineno="8"><highlight class="comment"><sp/>*<sp/>with<sp/>the<sp/>License.<sp/><sp/>You<sp/>may<sp/>obtain<sp/>a<sp/>copy<sp/>of<sp/>the<sp/>License<sp/>at</highlight></codeline>
+<codeline lineno="9"><highlight class="comment"><sp/>*<sp/></highlight></codeline>
+<codeline lineno="10"><highlight class="comment"><sp/>*<sp/><sp/><sp/>http://www.apache.org/licenses/LICENSE-2.0</highlight></codeline>
+<codeline lineno="11"><highlight class="comment"><sp/>*<sp/></highlight></codeline>
+<codeline lineno="12"><highlight class="comment"><sp/>*<sp/>Unless<sp/>required<sp/>by<sp/>applicable<sp/>law<sp/>or<sp/>agreed<sp/>to<sp/>in<sp/>writing,</highlight></codeline>
+<codeline lineno="13"><highlight class="comment"><sp/>*<sp/>software<sp/>distributed<sp/>under<sp/>the<sp/>License<sp/>is<sp/>distributed<sp/>on<sp/>an</highlight></codeline>
+<codeline lineno="14"><highlight class="comment"><sp/>*<sp/>&quot;AS<sp/>IS&quot;<sp/>BASIS,<sp/>WITHOUT<sp/>WARRANTIES<sp/>OR<sp/>CONDITIONS<sp/>OF<sp/>ANY</highlight></codeline>
+<codeline lineno="15"><highlight class="comment"><sp/>*<sp/>KIND,<sp/>either<sp/>express<sp/>or<sp/>implied.<sp/><sp/>See<sp/>the<sp/>License<sp/>for<sp/>the</highlight></codeline>
+<codeline lineno="16"><highlight class="comment"><sp/>*<sp/>specific<sp/>language<sp/>governing<sp/>permissions<sp/>and<sp/>limitations</highlight></codeline>
+<codeline lineno="17"><highlight class="comment"><sp/>*<sp/>under<sp/>the<sp/>License.</highlight></codeline>
+<codeline lineno="18"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight></codeline>
+<codeline lineno="24"><highlight class="preprocessor">#ifndef<sp/>TOPI_TAGS_H_</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>TOPI_TAGS_H_</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;string&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="28"><highlight class="normal"></highlight></codeline>
+<codeline lineno="29"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal"><ref refid="namespacetopi" kindref="compound">topi</ref><sp/>{</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"></highlight></codeline>
+<codeline lineno="31" refid="namespacetopi_1ac1b34ed59d38a5f5338bee6b2cad42be" refkind="member"><highlight class="normal">constexpr<sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/><ref refid="namespacetopi_1ac1b34ed59d38a5f5338bee6b2cad42be" kindref="member">kElementWise</ref><sp/>=<sp/></highlight><highlight class="stringliteral">&quot;elemwise&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="32" refid="namespacetopi_1a60f05ec416e4618d25ad00dd9f536934" refkind="member"><highlight class="normal">constexpr<sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/><ref refid="namespacetopi_1a60f05ec416e4618d25ad00dd9f536934" kindref="member">kInjective</ref><sp/>=<sp/></highlight><highlight class="stringliteral">&quot;injective&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="33" refid="namespacetopi_1ae57dced7232a8ef1f94cd669c72e0093" refkind="member"><highlight class="normal">constexpr<sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/><ref refid="namespacetopi_1ae57dced7232a8ef1f94cd669c72e0093" kindref="member">kCommReduce</ref><sp/>=<sp/></highlight><highlight class="stringliteral">&quot;comm_reduce&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="34" refid="namespacetopi_1aaf18db0af5abc7dd13818115bac402bc" refkind="member"><highlight class="normal">constexpr<sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/><ref refid="namespacetopi_1aaf18db0af5abc7dd13818115bac402bc" kindref="member">kCommReduceIdx</ref><sp/>=<sp/></highlight><highlight class="stringliteral">&quot;comm_reduce_idx&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="35" refid="namespacetopi_1a794b9155e9ba9d1c9c42a1cff1fb645f" refkind="member"><highlight class="normal">constexpr<sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/><ref refid="namespacetopi_1a794b9155e9ba9d1c9c42a1cff1fb645f" kindref="member">kBroadcast</ref><sp/>=<sp/></highlight><highlight class="stringliteral">&quot;broadcast&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="36" refid="namespacetopi_1a06a6892f5e4681142f0c08b0af32499d" refkind="member"><highlight class="normal">constexpr<sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/><ref refid="namespacetopi_1a06a6892f5e4681142f0c08b0af32499d" kindref="member">kMatMul</ref><sp/>=<sp/></highlight><highlight class="stringliteral">&quot;matmul&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="37" refid="namespacetopi_1a8e842c3723b0ad6b2fb82ecb98b8a1c2" refkind="member"><highlight class="normal">constexpr<sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/><ref refid="namespacetopi_1a8e842c3723b0ad6b2fb82ecb98b8a1c2" kindref="member">kConv2dNCHW</ref><sp/>=<sp/></highlight><highlight class="stringliteral">&quot;conv2d_nchw&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="38" refid="namespacetopi_1a0a63c3748ea82acd5eef2b608c83e165" refkind="member"><highlight class="normal">constexpr<sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/><ref refid="namespacetopi_1a0a63c3748ea82acd5eef2b608c83e165" kindref="member">kConv2dHWCN</ref><sp/>=<sp/></highlight><highlight class="stringliteral">&quot;conv2d_hwcn&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="39" refid="namespacetopi_1a12dcb067885b89c536ae094569e8e3fb" refkind="member"><highlight class="normal">constexpr<sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/><ref refid="namespacetopi_1a12dcb067885b89c536ae094569e8e3fb" kindref="member">kDepthwiseConv2dNCHW</ref><sp/>=<sp/></highlight><highlight class="stringliteral">&quot;depthwise_conv2d_nchw&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="40" refid="namespacetopi_1a00fa259c7a4c72504f9ac906062e9ebc" refkind="member"><highlight class="normal">constexpr<sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/><ref refid="namespacetopi_1a00fa259c7a4c72504f9ac906062e9ebc" kindref="member">kDepthwiseConv2dNHWC</ref><sp/>=<sp/></highlight><highlight class="stringliteral">&quot;depthwise_conv2d_nhwc&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="41" refid="namespacetopi_1a5c20df4059bd823e003dfede11762473" refkind="member"><highlight class="normal">constexpr<sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/><ref refid="namespacetopi_1a5c20df4059bd823e003dfede11762473" kindref="member">kDepthwiseConv2dBackInputNHWC</ref><sp/>=<sp/></highlight><highlight class="stringliteral">&quot;depthwise_conv2d_back_input_nhwc&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="42" refid="namespacetopi_1a1676476ab91b608188918f5d267f1d07" refkind="member"><highlight class="normal">constexpr<sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/><ref refid="namespacetopi_1a1676476ab91b608188918f5d267f1d07" kindref="member">kDepthwiseConv2dBackWeightNHWC</ref><sp/>=<sp/></highlight><highlight class="stringliteral">&quot;depthwise_conv2d_back_weight_nhwc&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="43" refid="namespacetopi_1a4147e63b5ce67e3340ed5096bf6b9455" refkind="member"><highlight class="normal">constexpr<sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/><ref refid="namespacetopi_1a4147e63b5ce67e3340ed5096bf6b9455" kindref="member">kGroupConv2d</ref><sp/>=<sp/></highlight><highlight class="stringliteral">&quot;group_conv2d&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="44"><highlight class="normal"></highlight></codeline>
+<codeline lineno="45" refid="namespacetopi_1aeaf79d9b22b36fc51e7d1bb5ad331802" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="namespacetopi_1aeaf79d9b22b36fc51e7d1bb5ad331802" kindref="member">is_broadcast</ref>(std::string<sp/>tag)<sp/>{</highlight></codeline>
+<codeline lineno="46"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="47"><highlight class="normal"><sp/><sp/><sp/><sp/>tag.rfind(kElementWise,<sp/>0)<sp/>==<sp/>0<sp/>||</highlight></codeline>
+<codeline lineno="48"><highlight class="normal"><sp/><sp/><sp/><sp/>tag.rfind(kBroadcast,<sp/>0)<sp/>==<sp/>0;</highlight></codeline>
+<codeline lineno="49"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="50"><highlight class="normal"></highlight></codeline>
+<codeline lineno="51" refid="namespacetopi_1a83c42e686c1268b3a5bca51ba88e45b2" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="namespacetopi_1a83c42e686c1268b3a5bca51ba88e45b2" kindref="member">is_injective</ref>(std::string<sp/>tag)<sp/>{</highlight></codeline>
+<codeline lineno="52"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="53"><highlight class="normal"><sp/><sp/><sp/><sp/>tag.rfind(kElementWise,<sp/>0)<sp/>==<sp/>0<sp/>||</highlight></codeline>
+<codeline lineno="54"><highlight class="normal"><sp/><sp/><sp/><sp/>tag.rfind(kBroadcast,<sp/>0)<sp/>==<sp/>0<sp/>||</highlight></codeline>
+<codeline lineno="55"><highlight class="normal"><sp/><sp/><sp/><sp/>tag.rfind(kInjective,<sp/>0)<sp/>==<sp/>0;</highlight></codeline>
+<codeline lineno="56"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="57"><highlight class="normal"></highlight></codeline>
+<codeline lineno="58"><highlight class="normal">}<sp/><sp/></highlight><highlight class="comment">//<sp/>namespace<sp/>topi</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="59"><highlight class="normal"></highlight></codeline>
+<codeline lineno="60"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/><sp/>//<sp/>TOPI_TAGS_H_</highlight></codeline>
+    </programlisting>
+    <location file="topi/include/topi/tags.h"/>
+  </compounddef>
+</doxygen>

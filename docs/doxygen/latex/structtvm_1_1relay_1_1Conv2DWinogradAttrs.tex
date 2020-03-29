@@ -1,0 +1,117 @@
+\hypertarget{structtvm_1_1relay_1_1Conv2DWinogradAttrs}{}\section{tvm\+:\+:relay\+:\+:Conv2\+D\+Winograd\+Attrs Struct Reference}
+\label{structtvm_1_1relay_1_1Conv2DWinogradAttrs}\index{tvm\+::relay\+::\+Conv2\+D\+Winograd\+Attrs@{tvm\+::relay\+::\+Conv2\+D\+Winograd\+Attrs}}
+
+
+Attributes used in convolution operators with winograd algorithm.  
+
+
+
+
+{\ttfamily \#include $<$nn.\+h$>$}
+
+
+
+Inheritance diagram for tvm\+:\+:relay\+:\+:Conv2\+D\+Winograd\+Attrs\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{structtvm_1_1relay_1_1Conv2DWinogradAttrs__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for tvm\+:\+:relay\+:\+:Conv2\+D\+Winograd\+Attrs\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{structtvm_1_1relay_1_1Conv2DWinogradAttrs__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{structtvm_1_1relay_1_1Conv2DWinogradAttrs_a1eb2a5d5d54d08fee80715a4b8728b7e}{T\+V\+M\+\_\+\+D\+E\+C\+L\+A\+R\+E\+\_\+\+A\+T\+T\+RS} (\hyperlink{structtvm_1_1relay_1_1Conv2DWinogradAttrs}{Conv2\+D\+Winograd\+Attrs},\char`\"{}relay.\+attrs.\+Conv2\+D\+Winograd\+Attrs\char`\"{})
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+int \hyperlink{structtvm_1_1relay_1_1Conv2DWinogradAttrs_a3d89aa2ad84ad78f147b5bf068f89f62}{tile\+\_\+size}
+\item 
+\hyperlink{classtvm_1_1Array}{Array}$<$ \hyperlink{namespacetvm_1_1relay_ae153a27d81399fd266b8d598227764c4}{Index\+Expr} $>$ \hyperlink{structtvm_1_1relay_1_1Conv2DWinogradAttrs_a1458affba446b79cec2416102fc3951c}{strides}
+\item 
+\hyperlink{classtvm_1_1Array}{Array}$<$ \hyperlink{namespacetvm_1_1relay_ae153a27d81399fd266b8d598227764c4}{Index\+Expr} $>$ \hyperlink{structtvm_1_1relay_1_1Conv2DWinogradAttrs_af2caa695b5aabb9f92d48aa76f6c8314}{padding}
+\item 
+\hyperlink{classtvm_1_1Array}{Array}$<$ \hyperlink{namespacetvm_1_1relay_ae153a27d81399fd266b8d598227764c4}{Index\+Expr} $>$ \hyperlink{structtvm_1_1relay_1_1Conv2DWinogradAttrs_ad00d9bab387d241f8e4e718e8777610b}{dilation}
+\item 
+int \hyperlink{structtvm_1_1relay_1_1Conv2DWinogradAttrs_aac3e5fdb74476c7bd331b528f0fd7cbb}{groups}
+\item 
+\hyperlink{namespacetvm_1_1relay_ae153a27d81399fd266b8d598227764c4}{Index\+Expr} \hyperlink{structtvm_1_1relay_1_1Conv2DWinogradAttrs_ad0d16b09c353c2437801ec47d32b8cb4}{channels}
+\item 
+\hyperlink{classtvm_1_1Array}{Array}$<$ \hyperlink{namespacetvm_1_1relay_ae153a27d81399fd266b8d598227764c4}{Index\+Expr} $>$ \hyperlink{structtvm_1_1relay_1_1Conv2DWinogradAttrs_aa54c9305b1858319e432f8d05ecd90d8}{kernel\+\_\+size}
+\item 
+std\+::string \hyperlink{structtvm_1_1relay_1_1Conv2DWinogradAttrs_a65b50adaf337c2ca76d996e8e3abf4fb}{data\+\_\+layout}
+\item 
+std\+::string \hyperlink{structtvm_1_1relay_1_1Conv2DWinogradAttrs_a0cb32081ed30800cb3ad7dfac6e2df58}{kernel\+\_\+layout}
+\item 
+std\+::string \hyperlink{structtvm_1_1relay_1_1Conv2DWinogradAttrs_a8aca06f3092b450b76eeac4d7126209c}{out\+\_\+layout}
+\item 
+\hyperlink{namespacetvm_a41918af1a1dc386388639a9d3ad06c5d}{Data\+Type} \hyperlink{structtvm_1_1relay_1_1Conv2DWinogradAttrs_a00897b07a7b842186e1f91a8e18c8a1b}{out\+\_\+dtype}
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+Attributes used in convolution operators with winograd algorithm. 
+
+\subsection{Member Function Documentation}
+\index{tvm\+::relay\+::\+Conv2\+D\+Winograd\+Attrs@{tvm\+::relay\+::\+Conv2\+D\+Winograd\+Attrs}!T\+V\+M\+\_\+\+D\+E\+C\+L\+A\+R\+E\+\_\+\+A\+T\+T\+RS@{T\+V\+M\+\_\+\+D\+E\+C\+L\+A\+R\+E\+\_\+\+A\+T\+T\+RS}}
+\index{T\+V\+M\+\_\+\+D\+E\+C\+L\+A\+R\+E\+\_\+\+A\+T\+T\+RS@{T\+V\+M\+\_\+\+D\+E\+C\+L\+A\+R\+E\+\_\+\+A\+T\+T\+RS}!tvm\+::relay\+::\+Conv2\+D\+Winograd\+Attrs@{tvm\+::relay\+::\+Conv2\+D\+Winograd\+Attrs}}
+\subsubsection[{\texorpdfstring{T\+V\+M\+\_\+\+D\+E\+C\+L\+A\+R\+E\+\_\+\+A\+T\+T\+R\+S(\+Conv2\+D\+Winograd\+Attrs,""relay.\+attrs.\+Conv2\+D\+Winograd\+Attrs"")}{TVM_DECLARE_ATTRS(Conv2DWinogradAttrs,"relay.attrs.Conv2DWinogradAttrs")}}]{\setlength{\rightskip}{0pt plus 5cm}tvm\+::relay\+::\+Conv2\+D\+Winograd\+Attrs\+::\+T\+V\+M\+\_\+\+D\+E\+C\+L\+A\+R\+E\+\_\+\+A\+T\+T\+RS (
+\begin{DoxyParamCaption}
+\item[{{\bf Conv2\+D\+Winograd\+Attrs}}]{, }
+\item[{\char`\"{}relay.\+attrs.\+Conv2\+D\+Winograd\+Attrs\char`\"{}}]{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{structtvm_1_1relay_1_1Conv2DWinogradAttrs_a1eb2a5d5d54d08fee80715a4b8728b7e}{}\label{structtvm_1_1relay_1_1Conv2DWinogradAttrs_a1eb2a5d5d54d08fee80715a4b8728b7e}
+
+
+\subsection{Member Data Documentation}
+\index{tvm\+::relay\+::\+Conv2\+D\+Winograd\+Attrs@{tvm\+::relay\+::\+Conv2\+D\+Winograd\+Attrs}!channels@{channels}}
+\index{channels@{channels}!tvm\+::relay\+::\+Conv2\+D\+Winograd\+Attrs@{tvm\+::relay\+::\+Conv2\+D\+Winograd\+Attrs}}
+\subsubsection[{\texorpdfstring{channels}{channels}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Index\+Expr} tvm\+::relay\+::\+Conv2\+D\+Winograd\+Attrs\+::channels}\hypertarget{structtvm_1_1relay_1_1Conv2DWinogradAttrs_ad0d16b09c353c2437801ec47d32b8cb4}{}\label{structtvm_1_1relay_1_1Conv2DWinogradAttrs_ad0d16b09c353c2437801ec47d32b8cb4}
+\index{tvm\+::relay\+::\+Conv2\+D\+Winograd\+Attrs@{tvm\+::relay\+::\+Conv2\+D\+Winograd\+Attrs}!data\+\_\+layout@{data\+\_\+layout}}
+\index{data\+\_\+layout@{data\+\_\+layout}!tvm\+::relay\+::\+Conv2\+D\+Winograd\+Attrs@{tvm\+::relay\+::\+Conv2\+D\+Winograd\+Attrs}}
+\subsubsection[{\texorpdfstring{data\+\_\+layout}{data_layout}}]{\setlength{\rightskip}{0pt plus 5cm}std\+::string tvm\+::relay\+::\+Conv2\+D\+Winograd\+Attrs\+::data\+\_\+layout}\hypertarget{structtvm_1_1relay_1_1Conv2DWinogradAttrs_a65b50adaf337c2ca76d996e8e3abf4fb}{}\label{structtvm_1_1relay_1_1Conv2DWinogradAttrs_a65b50adaf337c2ca76d996e8e3abf4fb}
+\index{tvm\+::relay\+::\+Conv2\+D\+Winograd\+Attrs@{tvm\+::relay\+::\+Conv2\+D\+Winograd\+Attrs}!dilation@{dilation}}
+\index{dilation@{dilation}!tvm\+::relay\+::\+Conv2\+D\+Winograd\+Attrs@{tvm\+::relay\+::\+Conv2\+D\+Winograd\+Attrs}}
+\subsubsection[{\texorpdfstring{dilation}{dilation}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Array}$<${\bf Index\+Expr}$>$ tvm\+::relay\+::\+Conv2\+D\+Winograd\+Attrs\+::dilation}\hypertarget{structtvm_1_1relay_1_1Conv2DWinogradAttrs_ad00d9bab387d241f8e4e718e8777610b}{}\label{structtvm_1_1relay_1_1Conv2DWinogradAttrs_ad00d9bab387d241f8e4e718e8777610b}
+\index{tvm\+::relay\+::\+Conv2\+D\+Winograd\+Attrs@{tvm\+::relay\+::\+Conv2\+D\+Winograd\+Attrs}!groups@{groups}}
+\index{groups@{groups}!tvm\+::relay\+::\+Conv2\+D\+Winograd\+Attrs@{tvm\+::relay\+::\+Conv2\+D\+Winograd\+Attrs}}
+\subsubsection[{\texorpdfstring{groups}{groups}}]{\setlength{\rightskip}{0pt plus 5cm}int tvm\+::relay\+::\+Conv2\+D\+Winograd\+Attrs\+::groups}\hypertarget{structtvm_1_1relay_1_1Conv2DWinogradAttrs_aac3e5fdb74476c7bd331b528f0fd7cbb}{}\label{structtvm_1_1relay_1_1Conv2DWinogradAttrs_aac3e5fdb74476c7bd331b528f0fd7cbb}
+\index{tvm\+::relay\+::\+Conv2\+D\+Winograd\+Attrs@{tvm\+::relay\+::\+Conv2\+D\+Winograd\+Attrs}!kernel\+\_\+layout@{kernel\+\_\+layout}}
+\index{kernel\+\_\+layout@{kernel\+\_\+layout}!tvm\+::relay\+::\+Conv2\+D\+Winograd\+Attrs@{tvm\+::relay\+::\+Conv2\+D\+Winograd\+Attrs}}
+\subsubsection[{\texorpdfstring{kernel\+\_\+layout}{kernel_layout}}]{\setlength{\rightskip}{0pt plus 5cm}std\+::string tvm\+::relay\+::\+Conv2\+D\+Winograd\+Attrs\+::kernel\+\_\+layout}\hypertarget{structtvm_1_1relay_1_1Conv2DWinogradAttrs_a0cb32081ed30800cb3ad7dfac6e2df58}{}\label{structtvm_1_1relay_1_1Conv2DWinogradAttrs_a0cb32081ed30800cb3ad7dfac6e2df58}
+\index{tvm\+::relay\+::\+Conv2\+D\+Winograd\+Attrs@{tvm\+::relay\+::\+Conv2\+D\+Winograd\+Attrs}!kernel\+\_\+size@{kernel\+\_\+size}}
+\index{kernel\+\_\+size@{kernel\+\_\+size}!tvm\+::relay\+::\+Conv2\+D\+Winograd\+Attrs@{tvm\+::relay\+::\+Conv2\+D\+Winograd\+Attrs}}
+\subsubsection[{\texorpdfstring{kernel\+\_\+size}{kernel_size}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Array}$<${\bf Index\+Expr}$>$ tvm\+::relay\+::\+Conv2\+D\+Winograd\+Attrs\+::kernel\+\_\+size}\hypertarget{structtvm_1_1relay_1_1Conv2DWinogradAttrs_aa54c9305b1858319e432f8d05ecd90d8}{}\label{structtvm_1_1relay_1_1Conv2DWinogradAttrs_aa54c9305b1858319e432f8d05ecd90d8}
+\index{tvm\+::relay\+::\+Conv2\+D\+Winograd\+Attrs@{tvm\+::relay\+::\+Conv2\+D\+Winograd\+Attrs}!out\+\_\+dtype@{out\+\_\+dtype}}
+\index{out\+\_\+dtype@{out\+\_\+dtype}!tvm\+::relay\+::\+Conv2\+D\+Winograd\+Attrs@{tvm\+::relay\+::\+Conv2\+D\+Winograd\+Attrs}}
+\subsubsection[{\texorpdfstring{out\+\_\+dtype}{out_dtype}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Data\+Type} tvm\+::relay\+::\+Conv2\+D\+Winograd\+Attrs\+::out\+\_\+dtype}\hypertarget{structtvm_1_1relay_1_1Conv2DWinogradAttrs_a00897b07a7b842186e1f91a8e18c8a1b}{}\label{structtvm_1_1relay_1_1Conv2DWinogradAttrs_a00897b07a7b842186e1f91a8e18c8a1b}
+\index{tvm\+::relay\+::\+Conv2\+D\+Winograd\+Attrs@{tvm\+::relay\+::\+Conv2\+D\+Winograd\+Attrs}!out\+\_\+layout@{out\+\_\+layout}}
+\index{out\+\_\+layout@{out\+\_\+layout}!tvm\+::relay\+::\+Conv2\+D\+Winograd\+Attrs@{tvm\+::relay\+::\+Conv2\+D\+Winograd\+Attrs}}
+\subsubsection[{\texorpdfstring{out\+\_\+layout}{out_layout}}]{\setlength{\rightskip}{0pt plus 5cm}std\+::string tvm\+::relay\+::\+Conv2\+D\+Winograd\+Attrs\+::out\+\_\+layout}\hypertarget{structtvm_1_1relay_1_1Conv2DWinogradAttrs_a8aca06f3092b450b76eeac4d7126209c}{}\label{structtvm_1_1relay_1_1Conv2DWinogradAttrs_a8aca06f3092b450b76eeac4d7126209c}
+\index{tvm\+::relay\+::\+Conv2\+D\+Winograd\+Attrs@{tvm\+::relay\+::\+Conv2\+D\+Winograd\+Attrs}!padding@{padding}}
+\index{padding@{padding}!tvm\+::relay\+::\+Conv2\+D\+Winograd\+Attrs@{tvm\+::relay\+::\+Conv2\+D\+Winograd\+Attrs}}
+\subsubsection[{\texorpdfstring{padding}{padding}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Array}$<${\bf Index\+Expr}$>$ tvm\+::relay\+::\+Conv2\+D\+Winograd\+Attrs\+::padding}\hypertarget{structtvm_1_1relay_1_1Conv2DWinogradAttrs_af2caa695b5aabb9f92d48aa76f6c8314}{}\label{structtvm_1_1relay_1_1Conv2DWinogradAttrs_af2caa695b5aabb9f92d48aa76f6c8314}
+\index{tvm\+::relay\+::\+Conv2\+D\+Winograd\+Attrs@{tvm\+::relay\+::\+Conv2\+D\+Winograd\+Attrs}!strides@{strides}}
+\index{strides@{strides}!tvm\+::relay\+::\+Conv2\+D\+Winograd\+Attrs@{tvm\+::relay\+::\+Conv2\+D\+Winograd\+Attrs}}
+\subsubsection[{\texorpdfstring{strides}{strides}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Array}$<${\bf Index\+Expr}$>$ tvm\+::relay\+::\+Conv2\+D\+Winograd\+Attrs\+::strides}\hypertarget{structtvm_1_1relay_1_1Conv2DWinogradAttrs_a1458affba446b79cec2416102fc3951c}{}\label{structtvm_1_1relay_1_1Conv2DWinogradAttrs_a1458affba446b79cec2416102fc3951c}
+\index{tvm\+::relay\+::\+Conv2\+D\+Winograd\+Attrs@{tvm\+::relay\+::\+Conv2\+D\+Winograd\+Attrs}!tile\+\_\+size@{tile\+\_\+size}}
+\index{tile\+\_\+size@{tile\+\_\+size}!tvm\+::relay\+::\+Conv2\+D\+Winograd\+Attrs@{tvm\+::relay\+::\+Conv2\+D\+Winograd\+Attrs}}
+\subsubsection[{\texorpdfstring{tile\+\_\+size}{tile_size}}]{\setlength{\rightskip}{0pt plus 5cm}int tvm\+::relay\+::\+Conv2\+D\+Winograd\+Attrs\+::tile\+\_\+size}\hypertarget{structtvm_1_1relay_1_1Conv2DWinogradAttrs_a3d89aa2ad84ad78f147b5bf068f89f62}{}\label{structtvm_1_1relay_1_1Conv2DWinogradAttrs_a3d89aa2ad84ad78f147b5bf068f89f62}
+
+
+The documentation for this struct was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+include/tvm/relay/attrs/\hyperlink{include_2tvm_2relay_2attrs_2nn_8h}{nn.\+h}\end{DoxyCompactItemize}

@@ -1,0 +1,89 @@
+\hypertarget{classtvm_1_1With}{}\section{tvm\+:\+:With$<$ Context\+Type $>$ Class Template Reference}
+\label{classtvm_1_1With}\index{tvm\+::\+With$<$ Context\+Type $>$@{tvm\+::\+With$<$ Context\+Type $>$}}
+
+
+R\+A\+II wrapper function to enter and exit a context object similar to python\textquotesingle{}s with syntax.  
+
+
+
+
+{\ttfamily \#include $<$with.\+h$>$}
+
+
+
+Collaboration diagram for tvm\+:\+:With$<$ Context\+Type $>$\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=223pt]{classtvm_1_1With__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\footnotesize template$<$typename... Args$>$ }\\\hyperlink{classtvm_1_1With_a6546ddcfe91125f25b794e6145b870ed}{With} (Args \&\&...args)
+\begin{DoxyCompactList}\small\item\em constructor. Enter the scope of the context. \end{DoxyCompactList}\item 
+\hyperlink{classtvm_1_1With_adc3aab8dafb5d3afebc82733e3893a4f}{$\sim$\+With} () D\+M\+L\+C\+\_\+\+T\+H\+R\+O\+W\+\_\+\+E\+X\+C\+E\+P\+T\+I\+ON
+\begin{DoxyCompactList}\small\item\em destructor, leaves the scope of the context. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\subsubsection*{template$<$typename Context\+Type$>$\\*
+class tvm\+::\+With$<$ Context\+Type $>$}
+
+R\+A\+II wrapper function to enter and exit a context object similar to python\textquotesingle{}s with syntax. 
+
+
+\begin{DoxyCode}
+\textcolor{comment}{// context class}
+\textcolor{keyword}{class }MyContext \{
+ \textcolor{keyword}{private}:
+   \textcolor{keyword}{friend} \textcolor{keyword}{class }\hyperlink{classtvm_1_1With_a6546ddcfe91125f25b794e6145b870ed}{With}<MyContext>;
+   MyContext(arguments);
+   \textcolor{keywordtype}{void} EnterWithScope();
+   \textcolor{keywordtype}{void} ExitWithScope();
+\};
+
+\{
+  With<MyContext> scope(arguments);
+  \textcolor{comment}{// effect take place.}
+\}
+\end{DoxyCode}
+
+
+
+\begin{DoxyTemplParams}{Template Parameters}
+{\em Context\+Type} & \hyperlink{classtvm_1_1Type}{Type} of the context object. \\
+\hline
+\end{DoxyTemplParams}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\index{tvm\+::\+With@{tvm\+::\+With}!With@{With}}
+\index{With@{With}!tvm\+::\+With@{tvm\+::\+With}}
+\subsubsection[{\texorpdfstring{With(\+Args \&\&...\+args)}{With(Args &&...args)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Context\+Type $>$ template$<$typename... Args$>$ {\bf tvm\+::\+With}$<$ Context\+Type $>$\+::{\bf With} (
+\begin{DoxyParamCaption}
+\item[{Args \&\&...}]{args}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [explicit]}}\hypertarget{classtvm_1_1With_a6546ddcfe91125f25b794e6145b870ed}{}\label{classtvm_1_1With_a6546ddcfe91125f25b794e6145b870ed}
+
+
+constructor. Enter the scope of the context. 
+
+\index{tvm\+::\+With@{tvm\+::\+With}!````~With@{$\sim$\+With}}
+\index{````~With@{$\sim$\+With}!tvm\+::\+With@{tvm\+::\+With}}
+\subsubsection[{\texorpdfstring{$\sim$\+With() D\+M\+L\+C\+\_\+\+T\+H\+R\+O\+W\+\_\+\+E\+X\+C\+E\+P\+T\+I\+ON}{~With() DMLC_THROW_EXCEPTION}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Context\+Type $>$ {\bf tvm\+::\+With}$<$ Context\+Type $>$\+::$\sim${\bf With} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classtvm_1_1With_adc3aab8dafb5d3afebc82733e3893a4f}{}\label{classtvm_1_1With_adc3aab8dafb5d3afebc82733e3893a4f}
+
+
+destructor, leaves the scope of the context. 
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+include/tvm/support/\hyperlink{with_8h}{with.\+h}\end{DoxyCompactItemize}

@@ -1,0 +1,29 @@
+\hypertarget{serialization_8h}{}\section{include/tvm/node/serialization.h File Reference}
+\label{serialization_8h}\index{include/tvm/node/serialization.\+h@{include/tvm/node/serialization.\+h}}
+{\ttfamily \#include $<$tvm/runtime/c\+\_\+runtime\+\_\+api.\+h$>$}\\*
+{\ttfamily \#include $<$tvm/runtime/object.\+h$>$}\\*
+{\ttfamily \#include $<$string$>$}\\*
+Include dependency graph for serialization.\+h\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{serialization_8h__incl}
+\end{center}
+\end{figure}
+\subsection*{Namespaces}
+\begin{DoxyCompactItemize}
+\item 
+ \hyperlink{namespacetvm}{tvm}
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+std\+::string \hyperlink{namespacetvm_aad98af358976b1598430090b7db92823}{tvm\+::\+Save\+J\+S\+ON} (const runtime\+::\+Object\+Ref \&node)
+\begin{DoxyCompactList}\small\item\em save the node as well as all the node it depends on as json. This can be used to serialize any T\+VM object \end{DoxyCompactList}\item 
+runtime\+::\+Object\+Ref \hyperlink{namespacetvm_afa0a9bdf3997ef4fad45b19fb1a655cd}{tvm\+::\+Load\+J\+S\+ON} (std\+::string json\+\_\+str)
+\begin{DoxyCompactList}\small\item\em Internal implementation of Load\+J\+S\+ON Load tvm Node object from json and return a shared\+\_\+ptr of Node. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Utility functions for serialization. 

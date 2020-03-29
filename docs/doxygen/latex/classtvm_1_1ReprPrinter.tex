@@ -1,0 +1,120 @@
+\hypertarget{classtvm_1_1ReprPrinter}{}\section{tvm\+:\+:Repr\+Printer Class Reference}
+\label{classtvm_1_1ReprPrinter}\index{tvm\+::\+Repr\+Printer@{tvm\+::\+Repr\+Printer}}
+
+
+A printer class to print the A\+S\+T/\+IR nodes.  
+
+
+
+
+{\ttfamily \#include $<$repr\+\_\+printer.\+h$>$}
+
+
+
+Collaboration diagram for tvm\+:\+:Repr\+Printer\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=174pt]{classtvm_1_1ReprPrinter__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+using \hyperlink{classtvm_1_1ReprPrinter_aee843a9a8b4885f5797843bed6467415}{F\+Type} = \hyperlink{classtvm_1_1NodeFunctor}{Node\+Functor}$<$ void(const Object\+Ref \&, \hyperlink{classtvm_1_1ReprPrinter}{Repr\+Printer} $\ast$)$>$
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classtvm_1_1ReprPrinter_a05b878a528f2dec33e28278b17ddeb6b}{Repr\+Printer} (std\+::ostream \&\hyperlink{classtvm_1_1ReprPrinter_a036409dcdcf6f0ac5c6d7d27ec60ed94}{stream})
+\item 
+void \hyperlink{classtvm_1_1ReprPrinter_a01e320b8f3db86141771dfa0aa7ed389}{Print} (const Object\+Ref \&node)
+\begin{DoxyCompactList}\small\item\em The node to be printed. \end{DoxyCompactList}\item 
+void \hyperlink{classtvm_1_1ReprPrinter_a9c5941e7c4e24c9880dbd340cc226bf4}{Print\+Indent} ()
+\begin{DoxyCompactList}\small\item\em Print indent to the stream. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \hyperlink{classtvm_1_1ReprPrinter_aee843a9a8b4885f5797843bed6467415}{F\+Type} \& \hyperlink{classtvm_1_1ReprPrinter_ace33744d3c98c545d490d37113103677}{vtable} ()
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+std\+::ostream \& \hyperlink{classtvm_1_1ReprPrinter_a036409dcdcf6f0ac5c6d7d27ec60ed94}{stream}
+\begin{DoxyCompactList}\small\item\em The output stream. \end{DoxyCompactList}\item 
+int \hyperlink{classtvm_1_1ReprPrinter_ae39b784d74fbac5576f48abc37885db0}{indent} \{0\}
+\begin{DoxyCompactList}\small\item\em The indentation level. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+A printer class to print the A\+S\+T/\+IR nodes. 
+
+\subsection{Member Typedef Documentation}
+\index{tvm\+::\+Repr\+Printer@{tvm\+::\+Repr\+Printer}!F\+Type@{F\+Type}}
+\index{F\+Type@{F\+Type}!tvm\+::\+Repr\+Printer@{tvm\+::\+Repr\+Printer}}
+\subsubsection[{\texorpdfstring{F\+Type}{FType}}]{\setlength{\rightskip}{0pt plus 5cm}using {\bf tvm\+::\+Repr\+Printer\+::\+F\+Type} =  {\bf Node\+Functor}$<$void(const Object\+Ref\&, {\bf Repr\+Printer}$\ast$)$>$}\hypertarget{classtvm_1_1ReprPrinter_aee843a9a8b4885f5797843bed6467415}{}\label{classtvm_1_1ReprPrinter_aee843a9a8b4885f5797843bed6467415}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\index{tvm\+::\+Repr\+Printer@{tvm\+::\+Repr\+Printer}!Repr\+Printer@{Repr\+Printer}}
+\index{Repr\+Printer@{Repr\+Printer}!tvm\+::\+Repr\+Printer@{tvm\+::\+Repr\+Printer}}
+\subsubsection[{\texorpdfstring{Repr\+Printer(std\+::ostream \&stream)}{ReprPrinter(std::ostream &stream)}}]{\setlength{\rightskip}{0pt plus 5cm}tvm\+::\+Repr\+Printer\+::\+Repr\+Printer (
+\begin{DoxyParamCaption}
+\item[{std\+::ostream \&}]{stream}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [explicit]}}\hypertarget{classtvm_1_1ReprPrinter_a05b878a528f2dec33e28278b17ddeb6b}{}\label{classtvm_1_1ReprPrinter_a05b878a528f2dec33e28278b17ddeb6b}
+
+
+\subsection{Member Function Documentation}
+\index{tvm\+::\+Repr\+Printer@{tvm\+::\+Repr\+Printer}!Print@{Print}}
+\index{Print@{Print}!tvm\+::\+Repr\+Printer@{tvm\+::\+Repr\+Printer}}
+\subsubsection[{\texorpdfstring{Print(const Object\+Ref \&node)}{Print(const ObjectRef &node)}}]{\setlength{\rightskip}{0pt plus 5cm}void tvm\+::\+Repr\+Printer\+::\+Print (
+\begin{DoxyParamCaption}
+\item[{const Object\+Ref \&}]{node}
+\end{DoxyParamCaption}
+)}\hypertarget{classtvm_1_1ReprPrinter_a01e320b8f3db86141771dfa0aa7ed389}{}\label{classtvm_1_1ReprPrinter_a01e320b8f3db86141771dfa0aa7ed389}
+
+
+The node to be printed. 
+
+\index{tvm\+::\+Repr\+Printer@{tvm\+::\+Repr\+Printer}!Print\+Indent@{Print\+Indent}}
+\index{Print\+Indent@{Print\+Indent}!tvm\+::\+Repr\+Printer@{tvm\+::\+Repr\+Printer}}
+\subsubsection[{\texorpdfstring{Print\+Indent()}{PrintIndent()}}]{\setlength{\rightskip}{0pt plus 5cm}void tvm\+::\+Repr\+Printer\+::\+Print\+Indent (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{classtvm_1_1ReprPrinter_a9c5941e7c4e24c9880dbd340cc226bf4}{}\label{classtvm_1_1ReprPrinter_a9c5941e7c4e24c9880dbd340cc226bf4}
+
+
+Print indent to the stream. 
+
+\index{tvm\+::\+Repr\+Printer@{tvm\+::\+Repr\+Printer}!vtable@{vtable}}
+\index{vtable@{vtable}!tvm\+::\+Repr\+Printer@{tvm\+::\+Repr\+Printer}}
+\subsubsection[{\texorpdfstring{vtable()}{vtable()}}]{\setlength{\rightskip}{0pt plus 5cm}static {\bf F\+Type}\& tvm\+::\+Repr\+Printer\+::vtable (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}\hypertarget{classtvm_1_1ReprPrinter_ace33744d3c98c545d490d37113103677}{}\label{classtvm_1_1ReprPrinter_ace33744d3c98c545d490d37113103677}
+
+
+\subsection{Member Data Documentation}
+\index{tvm\+::\+Repr\+Printer@{tvm\+::\+Repr\+Printer}!indent@{indent}}
+\index{indent@{indent}!tvm\+::\+Repr\+Printer@{tvm\+::\+Repr\+Printer}}
+\subsubsection[{\texorpdfstring{indent}{indent}}]{\setlength{\rightskip}{0pt plus 5cm}int tvm\+::\+Repr\+Printer\+::indent \{0\}}\hypertarget{classtvm_1_1ReprPrinter_ae39b784d74fbac5576f48abc37885db0}{}\label{classtvm_1_1ReprPrinter_ae39b784d74fbac5576f48abc37885db0}
+
+
+The indentation level. 
+
+\index{tvm\+::\+Repr\+Printer@{tvm\+::\+Repr\+Printer}!stream@{stream}}
+\index{stream@{stream}!tvm\+::\+Repr\+Printer@{tvm\+::\+Repr\+Printer}}
+\subsubsection[{\texorpdfstring{stream}{stream}}]{\setlength{\rightskip}{0pt plus 5cm}std\+::ostream\& tvm\+::\+Repr\+Printer\+::stream}\hypertarget{classtvm_1_1ReprPrinter_a036409dcdcf6f0ac5c6d7d27ec60ed94}{}\label{classtvm_1_1ReprPrinter_a036409dcdcf6f0ac5c6d7d27ec60ed94}
+
+
+The output stream. 
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+include/tvm/node/\hyperlink{repr__printer_8h}{repr\+\_\+printer.\+h}\end{DoxyCompactItemize}

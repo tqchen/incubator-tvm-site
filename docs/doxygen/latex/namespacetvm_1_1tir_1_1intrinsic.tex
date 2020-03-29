@@ -1,0 +1,354 @@
+\hypertarget{namespacetvm_1_1tir_1_1intrinsic}{}\section{tvm\+:\+:tir\+:\+:intrinsic Namespace Reference}
+\label{namespacetvm_1_1tir_1_1intrinsic}\index{tvm\+::tir\+::intrinsic@{tvm\+::tir\+::intrinsic}}
+
+
+namespace of T\+VM Intrinsic functions  
+
+
+\subsection*{Enumerations}
+\begin{DoxyCompactItemize}
+\item 
+enum \hyperlink{namespacetvm_1_1tir_1_1intrinsic_a7aee573af86b33b88d123fc26a40cdd9}{T\+V\+M\+Struct\+Field\+Kind} \+: int \{ \\*
+\hyperlink{namespacetvm_1_1tir_1_1intrinsic_a7aee573af86b33b88d123fc26a40cdd9a4db7d8a5cd05d94fe63484b1a6a5f41e}{k\+Arr\+Addr}, 
+\hyperlink{namespacetvm_1_1tir_1_1intrinsic_a7aee573af86b33b88d123fc26a40cdd9ac4fd2e6f182e390a5f12bc0b86a7bdde}{k\+Arr\+Data}, 
+\hyperlink{namespacetvm_1_1tir_1_1intrinsic_a7aee573af86b33b88d123fc26a40cdd9abd1c578a1b9382f7641e57d47cc0fef5}{k\+Arr\+Shape}, 
+\hyperlink{namespacetvm_1_1tir_1_1intrinsic_a7aee573af86b33b88d123fc26a40cdd9a316dc2fac47b891f4a7cd4f6f1e2ea9c}{k\+Arr\+Strides}, 
+\\*
+\hyperlink{namespacetvm_1_1tir_1_1intrinsic_a7aee573af86b33b88d123fc26a40cdd9a6848c5265a37e6d8ff900962cffd24f9}{k\+Arr\+N\+Dim}, 
+\hyperlink{namespacetvm_1_1tir_1_1intrinsic_a7aee573af86b33b88d123fc26a40cdd9a754ca8d37cdfbcbc5969782b86ca9e62}{k\+Arr\+Type\+Code}, 
+\hyperlink{namespacetvm_1_1tir_1_1intrinsic_a7aee573af86b33b88d123fc26a40cdd9a794b84c54e74f7eb76c55c8b757cb07a}{k\+Arr\+Type\+Bits}, 
+\hyperlink{namespacetvm_1_1tir_1_1intrinsic_a7aee573af86b33b88d123fc26a40cdd9a5d44e05899072b51faf77feef33a17e4}{k\+Arr\+Type\+Lanes}, 
+\\*
+\hyperlink{namespacetvm_1_1tir_1_1intrinsic_a7aee573af86b33b88d123fc26a40cdd9aace077df8be29cbf09dffeccb9c87361}{k\+Arr\+Byte\+Offset}, 
+\hyperlink{namespacetvm_1_1tir_1_1intrinsic_a7aee573af86b33b88d123fc26a40cdd9a7010568a29d2c4672120433c51af8867}{k\+Arr\+Device\+Id}, 
+\hyperlink{namespacetvm_1_1tir_1_1intrinsic_a7aee573af86b33b88d123fc26a40cdd9a34a8c297dd601e3a693d8b4ad1268a12}{k\+Arr\+Device\+Type}, 
+\hyperlink{namespacetvm_1_1tir_1_1intrinsic_a7aee573af86b33b88d123fc26a40cdd9ad68bd1fb79d2f15de845fa682fea01c0}{k\+Arr\+Kind\+Bound\+\_\+}, 
+\\*
+\hyperlink{namespacetvm_1_1tir_1_1intrinsic_a7aee573af86b33b88d123fc26a40cdd9ac6ce092b04c704569325ff038a18eaf7}{k\+T\+V\+M\+Value\+Content}, 
+\hyperlink{namespacetvm_1_1tir_1_1intrinsic_a7aee573af86b33b88d123fc26a40cdd9ac87458c0fb42f635a949331c07da6b58}{k\+T\+V\+M\+Value\+Kind\+Bound\+\_\+}
+ \}\begin{DoxyCompactList}\small\item\em The kind of structure field info used in intrinsic. \end{DoxyCompactList}
+\end{DoxyCompactItemize}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+constexpr const char $\ast$ \hyperlink{namespacetvm_1_1tir_1_1intrinsic_abdf19f5eab40c9dbc4952e76a29bd49c}{tvm\+\_\+large\+\_\+uint\+\_\+imm} = \char`\"{}tvm\+\_\+large\+\_\+uint\+\_\+imm\char`\"{}
+\begin{DoxyCompactList}\small\item\em See pesudo code. \end{DoxyCompactList}\item 
+constexpr const char $\ast$ \hyperlink{namespacetvm_1_1tir_1_1intrinsic_a58cdd60cdf71a2b97109804ae5c9c78a}{tvm\+\_\+address\+\_\+of} = \char`\"{}tvm\+\_\+address\+\_\+of\char`\"{}
+\begin{DoxyCompactList}\small\item\em See pesudo code. \end{DoxyCompactList}\item 
+constexpr const char $\ast$ \hyperlink{namespacetvm_1_1tir_1_1intrinsic_acbd194e010059c3229f6db9809e77e5a}{tvm\+\_\+if\+\_\+then\+\_\+else} = \char`\"{}tvm\+\_\+if\+\_\+then\+\_\+else\char`\"{}
+\begin{DoxyCompactList}\small\item\em Same as select, used for unsafe memory access. \end{DoxyCompactList}\item 
+constexpr const char $\ast$ \hyperlink{namespacetvm_1_1tir_1_1intrinsic_a9606b4e3a5d65a1ef787969074340be1}{tvm\+\_\+access\+\_\+ptr} = \char`\"{}tvm\+\_\+access\+\_\+ptr\char`\"{}
+\begin{DoxyCompactList}\small\item\em Get head access address with memory access pattern info. \end{DoxyCompactList}\item 
+constexpr const char $\ast$ \hyperlink{namespacetvm_1_1tir_1_1intrinsic_a075f340d77d7e0b8b60616fe5e64d2cc}{tvm\+\_\+static\+\_\+handle} = \char`\"{}tvm\+\_\+static\+\_\+handle\char`\"{}
+\begin{DoxyCompactList}\small\item\em Create a function local static handle that iniitalizes to nullptr. can be used to cache function local static resources. \end{DoxyCompactList}\item 
+constexpr const char $\ast$ \hyperlink{namespacetvm_1_1tir_1_1intrinsic_af3a86e8446b1f2b078597cb7cdadfbff}{tvm\+\_\+context\+\_\+id} = \char`\"{}tvm\+\_\+context\+\_\+id\char`\"{}
+\begin{DoxyCompactList}\small\item\em Return a unique context id, used for hint of workspace separation. Different context id ganrantees not having overlapping workspace. \end{DoxyCompactList}\item 
+constexpr const char $\ast$ \hyperlink{namespacetvm_1_1tir_1_1intrinsic_a19fa5d609f7ae416ede0eb14f1b4b165}{tvm\+\_\+tuple} = \char`\"{}tvm\+\_\+tuple\char`\"{}
+\begin{DoxyCompactList}\small\item\em tvm\+\_\+tuple is not an actual function and cannot codegen. It is used to represent tuple structure in value field of Attr\+Stmt, for the sake of giving hint to optimization. \end{DoxyCompactList}\item 
+constexpr const char $\ast$ \hyperlink{namespacetvm_1_1tir_1_1intrinsic_aba1b46cdb01d149f49d6676b889142b5}{tvm\+\_\+struct\+\_\+get} = \char`\"{}tvm\+\_\+struct\+\_\+get\char`\"{}
+\begin{DoxyCompactList}\small\item\em See pesudo code. \end{DoxyCompactList}\item 
+constexpr const char $\ast$ \hyperlink{namespacetvm_1_1tir_1_1intrinsic_a2857ab6a0557554feee6e21dbd37eab9}{tvm\+\_\+struct\+\_\+set} = \char`\"{}tvm\+\_\+struct\+\_\+set\char`\"{}
+\begin{DoxyCompactList}\small\item\em See pesudo code. \end{DoxyCompactList}\item 
+constexpr const char $\ast$ \hyperlink{namespacetvm_1_1tir_1_1intrinsic_ab5761917c5bd5b727203ddbc84763423}{tvm\+\_\+handle\+\_\+is\+\_\+null} = \char`\"{}tvm\+\_\+handle\+\_\+is\+\_\+null\char`\"{}
+\begin{DoxyCompactList}\small\item\em See pesudo code. \end{DoxyCompactList}\item 
+constexpr const char $\ast$ \hyperlink{namespacetvm_1_1tir_1_1intrinsic_ad86e388d33768f6641d60a2e1d142cbb}{tvm\+\_\+throw\+\_\+last\+\_\+error} = \char`\"{}tvm\+\_\+throw\+\_\+last\+\_\+error\char`\"{}
+\begin{DoxyCompactList}\small\item\em See pesudo code. \end{DoxyCompactList}\item 
+constexpr const char $\ast$ \hyperlink{namespacetvm_1_1tir_1_1intrinsic_a204b4be973bdf3e0c82f56a1273752bb}{tvm\+\_\+stack\+\_\+alloca} = \char`\"{}tvm\+\_\+stack\+\_\+alloca\char`\"{}
+\begin{DoxyCompactList}\small\item\em See pesudo code. \end{DoxyCompactList}\item 
+constexpr const char $\ast$ \hyperlink{namespacetvm_1_1tir_1_1intrinsic_aab2d9941d781b4b5bb399cffb9488fd6}{tvm\+\_\+stack\+\_\+make\+\_\+shape} = \char`\"{}tvm\+\_\+stack\+\_\+make\+\_\+shape\char`\"{}
+\begin{DoxyCompactList}\small\item\em Allocate a shape tuple on stack, return the handle. \end{DoxyCompactList}\item 
+constexpr const char $\ast$ \hyperlink{namespacetvm_1_1tir_1_1intrinsic_ab210d3708ad9206af139d76f29727ab4}{tvm\+\_\+stack\+\_\+make\+\_\+array} = \char`\"{}tvm\+\_\+stack\+\_\+make\+\_\+array\char`\"{}
+\begin{DoxyCompactList}\small\item\em Allocate a N\+D\+Array(\+D\+L\+Tensor) on stack, return the handle. \end{DoxyCompactList}\item 
+constexpr const char $\ast$ \hyperlink{namespacetvm_1_1tir_1_1intrinsic_ac49ed1daf574a2544c8d3cbe3110d6c9}{tvm\+\_\+call\+\_\+packed} = \char`\"{}tvm\+\_\+call\+\_\+packed\char`\"{}
+\begin{DoxyCompactList}\small\item\em See pesudo code. \end{DoxyCompactList}\item 
+constexpr const char $\ast$ \hyperlink{namespacetvm_1_1tir_1_1intrinsic_a7127f9ff70e7e124403e6a22de1a82f3}{tvm\+\_\+call\+\_\+trace\+\_\+packed} = \char`\"{}tvm\+\_\+call\+\_\+trace\+\_\+packed\char`\"{}
+\begin{DoxyCompactList}\small\item\em See pesudo code. \end{DoxyCompactList}\item 
+constexpr const char $\ast$ \hyperlink{namespacetvm_1_1tir_1_1intrinsic_a3480cec5a6cf03c2cc894d6f889d1f39}{tvm\+\_\+thread\+\_\+context} = \char`\"{}tvm\+\_\+thread\+\_\+context\char`\"{}
+\begin{DoxyCompactList}\small\item\em See pesudo code Mark the content as thread local context, can get optimized by only call the call once at thread start. \end{DoxyCompactList}\item 
+constexpr const char $\ast$ \hyperlink{namespacetvm_1_1tir_1_1intrinsic_ad1044b04b108f8d72d8468c7df8a426f}{tvm\+\_\+call\+\_\+packed\+\_\+lowered} = \char`\"{}tvm\+\_\+call\+\_\+packed\+\_\+lowered\char`\"{}
+\begin{DoxyCompactList}\small\item\em Lowered version of call packed, the space of value and type codes are explicitly allocated. \end{DoxyCompactList}\item 
+constexpr const char $\ast$ \hyperlink{namespacetvm_1_1tir_1_1intrinsic_ad906c61d3e4610e103d5fee028e6147f}{tvm\+\_\+call\+\_\+trace\+\_\+packed\+\_\+lowered}
+\begin{DoxyCompactList}\small\item\em Lowered version of trace intrinsic, the space of value and type codes are explicitly allocated. The return value is the (end -\/ 1) value on the stack. \end{DoxyCompactList}\item 
+constexpr const char $\ast$ \hyperlink{namespacetvm_1_1tir_1_1intrinsic_a327df78182d6687b72a93c468a3cd962}{tvm\+\_\+storage\+\_\+sync} = \char`\"{}tvm\+\_\+storage\+\_\+sync\char`\"{}
+\begin{DoxyCompactList}\small\item\em See pseudo code. \end{DoxyCompactList}\item 
+constexpr const char $\ast$ \hyperlink{namespacetvm_1_1tir_1_1intrinsic_a1c5047acaa6e7e500840f9a1984f4e58}{tvm\+\_\+warp\+\_\+shuffle} = \char`\"{}tvm\+\_\+warp\+\_\+shuffle\char`\"{}
+\begin{DoxyCompactList}\small\item\em See pseudo code. \end{DoxyCompactList}\item 
+constexpr const char $\ast$ \hyperlink{namespacetvm_1_1tir_1_1intrinsic_a7ccada41188e0161827169ce24a6db16}{tvm\+\_\+global\+\_\+barrier\+\_\+kinit} = \char`\"{}tvm\+\_\+global\+\_\+barrier\+\_\+kinit\char`\"{}
+\begin{DoxyCompactList}\small\item\em Initialize the global barrier. Call this at beginning of kernel that need global barrier. \end{DoxyCompactList}\item 
+constexpr const char $\ast$ \hyperlink{namespacetvm_1_1tir_1_1intrinsic_a374a98c3ef9da28a660825a0457ae997}{tvm\+\_\+thread\+\_\+allreduce} = \char`\"{}tvm\+\_\+thread\+\_\+allreduce\char`\"{}
+\begin{DoxyCompactList}\small\item\em See pesudo code. \end{DoxyCompactList}\item 
+constexpr const char $\ast$ \hyperlink{namespacetvm_1_1tir_1_1intrinsic_a8ec923ea4f1dad1fbbd4962684bd9b51}{tvm\+\_\+load\+\_\+matrix\+\_\+sync} = \char`\"{}tvm\+\_\+load\+\_\+matrix\+\_\+sync\char`\"{}
+\begin{DoxyCompactList}\small\item\em tvm intrinsic for tensor core load operators. \end{DoxyCompactList}\item 
+constexpr const char $\ast$ \hyperlink{namespacetvm_1_1tir_1_1intrinsic_aa78302097030bd1c144b826db84defdc}{tvm\+\_\+mma\+\_\+sync} = \char`\"{}tvm\+\_\+mma\+\_\+sync\char`\"{}
+\begin{DoxyCompactList}\small\item\em tvm intrinsic for tensor core mma\+\_\+sync operators. \end{DoxyCompactList}\item 
+constexpr const char $\ast$ \hyperlink{namespacetvm_1_1tir_1_1intrinsic_a4d1287729e05d683af059be0faaf9014}{tvm\+\_\+bmma\+\_\+sync} = \char`\"{}tvm\+\_\+bmma\+\_\+sync\char`\"{}
+\begin{DoxyCompactList}\small\item\em tvm intrinsic for tensor core bmma\+\_\+sync operators. \end{DoxyCompactList}\item 
+constexpr const char $\ast$ \hyperlink{namespacetvm_1_1tir_1_1intrinsic_a6c0862848e3eb5b6972c76f0b27585f9}{tvm\+\_\+fill\+\_\+fragment} = \char`\"{}tvm\+\_\+fill\+\_\+fragment\char`\"{}
+\begin{DoxyCompactList}\small\item\em tvm intrinsic for tensor core fill\+\_\+fragment operators. \end{DoxyCompactList}\item 
+constexpr const char $\ast$ \hyperlink{namespacetvm_1_1tir_1_1intrinsic_a3127cfee7b97ef7182019e69b7a3eb78}{tvm\+\_\+store\+\_\+matrix\+\_\+sync} = \char`\"{}tvm\+\_\+store\+\_\+matrix\+\_\+sync\char`\"{}
+\begin{DoxyCompactList}\small\item\em tvm intrinsic for tensor core store operators. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+namespace of T\+VM Intrinsic functions 
+
+\subsection{Enumeration Type Documentation}
+\index{tvm\+::tir\+::intrinsic@{tvm\+::tir\+::intrinsic}!T\+V\+M\+Struct\+Field\+Kind@{T\+V\+M\+Struct\+Field\+Kind}}
+\index{T\+V\+M\+Struct\+Field\+Kind@{T\+V\+M\+Struct\+Field\+Kind}!tvm\+::tir\+::intrinsic@{tvm\+::tir\+::intrinsic}}
+\subsubsection[{\texorpdfstring{T\+V\+M\+Struct\+Field\+Kind}{TVMStructFieldKind}}]{\setlength{\rightskip}{0pt plus 5cm}enum {\bf tvm\+::tir\+::intrinsic\+::\+T\+V\+M\+Struct\+Field\+Kind} \+: int}\hypertarget{namespacetvm_1_1tir_1_1intrinsic_a7aee573af86b33b88d123fc26a40cdd9}{}\label{namespacetvm_1_1tir_1_1intrinsic_a7aee573af86b33b88d123fc26a40cdd9}
+
+
+The kind of structure field info used in intrinsic. 
+
+\begin{Desc}
+\item[Enumerator]\par
+\begin{description}
+\index{k\+Arr\+Addr@{k\+Arr\+Addr}!tvm\+::tir\+::intrinsic@{tvm\+::tir\+::intrinsic}}\index{tvm\+::tir\+::intrinsic@{tvm\+::tir\+::intrinsic}!k\+Arr\+Addr@{k\+Arr\+Addr}}\item[{\em 
+k\+Arr\+Addr\hypertarget{namespacetvm_1_1tir_1_1intrinsic_a7aee573af86b33b88d123fc26a40cdd9a4db7d8a5cd05d94fe63484b1a6a5f41e}{}\label{namespacetvm_1_1tir_1_1intrinsic_a7aee573af86b33b88d123fc26a40cdd9a4db7d8a5cd05d94fe63484b1a6a5f41e}
+}]\index{k\+Arr\+Data@{k\+Arr\+Data}!tvm\+::tir\+::intrinsic@{tvm\+::tir\+::intrinsic}}\index{tvm\+::tir\+::intrinsic@{tvm\+::tir\+::intrinsic}!k\+Arr\+Data@{k\+Arr\+Data}}\item[{\em 
+k\+Arr\+Data\hypertarget{namespacetvm_1_1tir_1_1intrinsic_a7aee573af86b33b88d123fc26a40cdd9ac4fd2e6f182e390a5f12bc0b86a7bdde}{}\label{namespacetvm_1_1tir_1_1intrinsic_a7aee573af86b33b88d123fc26a40cdd9ac4fd2e6f182e390a5f12bc0b86a7bdde}
+}]\index{k\+Arr\+Shape@{k\+Arr\+Shape}!tvm\+::tir\+::intrinsic@{tvm\+::tir\+::intrinsic}}\index{tvm\+::tir\+::intrinsic@{tvm\+::tir\+::intrinsic}!k\+Arr\+Shape@{k\+Arr\+Shape}}\item[{\em 
+k\+Arr\+Shape\hypertarget{namespacetvm_1_1tir_1_1intrinsic_a7aee573af86b33b88d123fc26a40cdd9abd1c578a1b9382f7641e57d47cc0fef5}{}\label{namespacetvm_1_1tir_1_1intrinsic_a7aee573af86b33b88d123fc26a40cdd9abd1c578a1b9382f7641e57d47cc0fef5}
+}]\index{k\+Arr\+Strides@{k\+Arr\+Strides}!tvm\+::tir\+::intrinsic@{tvm\+::tir\+::intrinsic}}\index{tvm\+::tir\+::intrinsic@{tvm\+::tir\+::intrinsic}!k\+Arr\+Strides@{k\+Arr\+Strides}}\item[{\em 
+k\+Arr\+Strides\hypertarget{namespacetvm_1_1tir_1_1intrinsic_a7aee573af86b33b88d123fc26a40cdd9a316dc2fac47b891f4a7cd4f6f1e2ea9c}{}\label{namespacetvm_1_1tir_1_1intrinsic_a7aee573af86b33b88d123fc26a40cdd9a316dc2fac47b891f4a7cd4f6f1e2ea9c}
+}]\index{k\+Arr\+N\+Dim@{k\+Arr\+N\+Dim}!tvm\+::tir\+::intrinsic@{tvm\+::tir\+::intrinsic}}\index{tvm\+::tir\+::intrinsic@{tvm\+::tir\+::intrinsic}!k\+Arr\+N\+Dim@{k\+Arr\+N\+Dim}}\item[{\em 
+k\+Arr\+N\+Dim\hypertarget{namespacetvm_1_1tir_1_1intrinsic_a7aee573af86b33b88d123fc26a40cdd9a6848c5265a37e6d8ff900962cffd24f9}{}\label{namespacetvm_1_1tir_1_1intrinsic_a7aee573af86b33b88d123fc26a40cdd9a6848c5265a37e6d8ff900962cffd24f9}
+}]\index{k\+Arr\+Type\+Code@{k\+Arr\+Type\+Code}!tvm\+::tir\+::intrinsic@{tvm\+::tir\+::intrinsic}}\index{tvm\+::tir\+::intrinsic@{tvm\+::tir\+::intrinsic}!k\+Arr\+Type\+Code@{k\+Arr\+Type\+Code}}\item[{\em 
+k\+Arr\+Type\+Code\hypertarget{namespacetvm_1_1tir_1_1intrinsic_a7aee573af86b33b88d123fc26a40cdd9a754ca8d37cdfbcbc5969782b86ca9e62}{}\label{namespacetvm_1_1tir_1_1intrinsic_a7aee573af86b33b88d123fc26a40cdd9a754ca8d37cdfbcbc5969782b86ca9e62}
+}]\index{k\+Arr\+Type\+Bits@{k\+Arr\+Type\+Bits}!tvm\+::tir\+::intrinsic@{tvm\+::tir\+::intrinsic}}\index{tvm\+::tir\+::intrinsic@{tvm\+::tir\+::intrinsic}!k\+Arr\+Type\+Bits@{k\+Arr\+Type\+Bits}}\item[{\em 
+k\+Arr\+Type\+Bits\hypertarget{namespacetvm_1_1tir_1_1intrinsic_a7aee573af86b33b88d123fc26a40cdd9a794b84c54e74f7eb76c55c8b757cb07a}{}\label{namespacetvm_1_1tir_1_1intrinsic_a7aee573af86b33b88d123fc26a40cdd9a794b84c54e74f7eb76c55c8b757cb07a}
+}]\index{k\+Arr\+Type\+Lanes@{k\+Arr\+Type\+Lanes}!tvm\+::tir\+::intrinsic@{tvm\+::tir\+::intrinsic}}\index{tvm\+::tir\+::intrinsic@{tvm\+::tir\+::intrinsic}!k\+Arr\+Type\+Lanes@{k\+Arr\+Type\+Lanes}}\item[{\em 
+k\+Arr\+Type\+Lanes\hypertarget{namespacetvm_1_1tir_1_1intrinsic_a7aee573af86b33b88d123fc26a40cdd9a5d44e05899072b51faf77feef33a17e4}{}\label{namespacetvm_1_1tir_1_1intrinsic_a7aee573af86b33b88d123fc26a40cdd9a5d44e05899072b51faf77feef33a17e4}
+}]\index{k\+Arr\+Byte\+Offset@{k\+Arr\+Byte\+Offset}!tvm\+::tir\+::intrinsic@{tvm\+::tir\+::intrinsic}}\index{tvm\+::tir\+::intrinsic@{tvm\+::tir\+::intrinsic}!k\+Arr\+Byte\+Offset@{k\+Arr\+Byte\+Offset}}\item[{\em 
+k\+Arr\+Byte\+Offset\hypertarget{namespacetvm_1_1tir_1_1intrinsic_a7aee573af86b33b88d123fc26a40cdd9aace077df8be29cbf09dffeccb9c87361}{}\label{namespacetvm_1_1tir_1_1intrinsic_a7aee573af86b33b88d123fc26a40cdd9aace077df8be29cbf09dffeccb9c87361}
+}]\index{k\+Arr\+Device\+Id@{k\+Arr\+Device\+Id}!tvm\+::tir\+::intrinsic@{tvm\+::tir\+::intrinsic}}\index{tvm\+::tir\+::intrinsic@{tvm\+::tir\+::intrinsic}!k\+Arr\+Device\+Id@{k\+Arr\+Device\+Id}}\item[{\em 
+k\+Arr\+Device\+Id\hypertarget{namespacetvm_1_1tir_1_1intrinsic_a7aee573af86b33b88d123fc26a40cdd9a7010568a29d2c4672120433c51af8867}{}\label{namespacetvm_1_1tir_1_1intrinsic_a7aee573af86b33b88d123fc26a40cdd9a7010568a29d2c4672120433c51af8867}
+}]\index{k\+Arr\+Device\+Type@{k\+Arr\+Device\+Type}!tvm\+::tir\+::intrinsic@{tvm\+::tir\+::intrinsic}}\index{tvm\+::tir\+::intrinsic@{tvm\+::tir\+::intrinsic}!k\+Arr\+Device\+Type@{k\+Arr\+Device\+Type}}\item[{\em 
+k\+Arr\+Device\+Type\hypertarget{namespacetvm_1_1tir_1_1intrinsic_a7aee573af86b33b88d123fc26a40cdd9a34a8c297dd601e3a693d8b4ad1268a12}{}\label{namespacetvm_1_1tir_1_1intrinsic_a7aee573af86b33b88d123fc26a40cdd9a34a8c297dd601e3a693d8b4ad1268a12}
+}]\index{k\+Arr\+Kind\+Bound\+\_\+@{k\+Arr\+Kind\+Bound\+\_\+}!tvm\+::tir\+::intrinsic@{tvm\+::tir\+::intrinsic}}\index{tvm\+::tir\+::intrinsic@{tvm\+::tir\+::intrinsic}!k\+Arr\+Kind\+Bound\+\_\+@{k\+Arr\+Kind\+Bound\+\_\+}}\item[{\em 
+k\+Arr\+Kind\+Bound\+\_\+\hypertarget{namespacetvm_1_1tir_1_1intrinsic_a7aee573af86b33b88d123fc26a40cdd9ad68bd1fb79d2f15de845fa682fea01c0}{}\label{namespacetvm_1_1tir_1_1intrinsic_a7aee573af86b33b88d123fc26a40cdd9ad68bd1fb79d2f15de845fa682fea01c0}
+}]\index{k\+T\+V\+M\+Value\+Content@{k\+T\+V\+M\+Value\+Content}!tvm\+::tir\+::intrinsic@{tvm\+::tir\+::intrinsic}}\index{tvm\+::tir\+::intrinsic@{tvm\+::tir\+::intrinsic}!k\+T\+V\+M\+Value\+Content@{k\+T\+V\+M\+Value\+Content}}\item[{\em 
+k\+T\+V\+M\+Value\+Content\hypertarget{namespacetvm_1_1tir_1_1intrinsic_a7aee573af86b33b88d123fc26a40cdd9ac6ce092b04c704569325ff038a18eaf7}{}\label{namespacetvm_1_1tir_1_1intrinsic_a7aee573af86b33b88d123fc26a40cdd9ac6ce092b04c704569325ff038a18eaf7}
+}]\index{k\+T\+V\+M\+Value\+Kind\+Bound\+\_\+@{k\+T\+V\+M\+Value\+Kind\+Bound\+\_\+}!tvm\+::tir\+::intrinsic@{tvm\+::tir\+::intrinsic}}\index{tvm\+::tir\+::intrinsic@{tvm\+::tir\+::intrinsic}!k\+T\+V\+M\+Value\+Kind\+Bound\+\_\+@{k\+T\+V\+M\+Value\+Kind\+Bound\+\_\+}}\item[{\em 
+k\+T\+V\+M\+Value\+Kind\+Bound\+\_\+\hypertarget{namespacetvm_1_1tir_1_1intrinsic_a7aee573af86b33b88d123fc26a40cdd9ac87458c0fb42f635a949331c07da6b58}{}\label{namespacetvm_1_1tir_1_1intrinsic_a7aee573af86b33b88d123fc26a40cdd9ac87458c0fb42f635a949331c07da6b58}
+}]\end{description}
+\end{Desc}
+
+
+\subsection{Variable Documentation}
+\index{tvm\+::tir\+::intrinsic@{tvm\+::tir\+::intrinsic}!tvm\+\_\+access\+\_\+ptr@{tvm\+\_\+access\+\_\+ptr}}
+\index{tvm\+\_\+access\+\_\+ptr@{tvm\+\_\+access\+\_\+ptr}!tvm\+::tir\+::intrinsic@{tvm\+::tir\+::intrinsic}}
+\subsubsection[{\texorpdfstring{tvm\+\_\+access\+\_\+ptr}{tvm_access_ptr}}]{\setlength{\rightskip}{0pt plus 5cm}constexpr const char$\ast$ tvm\+::tir\+::intrinsic\+::tvm\+\_\+access\+\_\+ptr = \char`\"{}tvm\+\_\+access\+\_\+ptr\char`\"{}}\hypertarget{namespacetvm_1_1tir_1_1intrinsic_a9606b4e3a5d65a1ef787969074340be1}{}\label{namespacetvm_1_1tir_1_1intrinsic_a9606b4e3a5d65a1ef787969074340be1}
+
+
+Get head access address with memory access pattern info. 
+
+This operator also marks range of the memory access The offset and extent are in unit of the D\+Type(including vectorization factor). rw\+\_\+mask is a bit\+\_\+mask setting whether the access is a read(1) or write(2). The access is assume to happen in the current expression.
+
+Ptr\+Type tvm\+\_\+access\+\_\+ptr(Expr dtype, D\+Type$\ast$ data, int offset, int extent, int rw\+\_\+mask) \{ // D\+Type == dtype.\+type(); return \&data\mbox{[}offset\mbox{]}; \} \index{tvm\+::tir\+::intrinsic@{tvm\+::tir\+::intrinsic}!tvm\+\_\+address\+\_\+of@{tvm\+\_\+address\+\_\+of}}
+\index{tvm\+\_\+address\+\_\+of@{tvm\+\_\+address\+\_\+of}!tvm\+::tir\+::intrinsic@{tvm\+::tir\+::intrinsic}}
+\subsubsection[{\texorpdfstring{tvm\+\_\+address\+\_\+of}{tvm_address_of}}]{\setlength{\rightskip}{0pt plus 5cm}constexpr const char$\ast$ tvm\+::tir\+::intrinsic\+::tvm\+\_\+address\+\_\+of = \char`\"{}tvm\+\_\+address\+\_\+of\char`\"{}}\hypertarget{namespacetvm_1_1tir_1_1intrinsic_a58cdd60cdf71a2b97109804ae5c9c78a}{}\label{namespacetvm_1_1tir_1_1intrinsic_a58cdd60cdf71a2b97109804ae5c9c78a}
+
+
+See pesudo code. 
+
+Handle tvm\+\_\+address\+\_\+of(\+Load $\ast$op) \{ return \&op-\/$>$buffer\+\_\+var\mbox{[}index\mbox{]}; \} \index{tvm\+::tir\+::intrinsic@{tvm\+::tir\+::intrinsic}!tvm\+\_\+bmma\+\_\+sync@{tvm\+\_\+bmma\+\_\+sync}}
+\index{tvm\+\_\+bmma\+\_\+sync@{tvm\+\_\+bmma\+\_\+sync}!tvm\+::tir\+::intrinsic@{tvm\+::tir\+::intrinsic}}
+\subsubsection[{\texorpdfstring{tvm\+\_\+bmma\+\_\+sync}{tvm_bmma_sync}}]{\setlength{\rightskip}{0pt plus 5cm}constexpr const char$\ast$ tvm\+::tir\+::intrinsic\+::tvm\+\_\+bmma\+\_\+sync = \char`\"{}tvm\+\_\+bmma\+\_\+sync\char`\"{}}\hypertarget{namespacetvm_1_1tir_1_1intrinsic_a4d1287729e05d683af059be0faaf9014}{}\label{namespacetvm_1_1tir_1_1intrinsic_a4d1287729e05d683af059be0faaf9014}
+
+
+tvm intrinsic for tensor core bmma\+\_\+sync operators. 
+
+void tvm\+\_\+bmma\+\_\+sync(\hyperlink{classtvm_1_1tir_1_1Var}{Var} fragment\+\_\+d, Expr index\+\_\+d, \hyperlink{classtvm_1_1tir_1_1Var}{Var} fragment\+\_\+a, Expr index\+\_\+a, \hyperlink{classtvm_1_1tir_1_1Var}{Var} fragment\+\_\+b, Expr index\+\_\+b, \hyperlink{classtvm_1_1tir_1_1Var}{Var} fragment\+\_\+c, Expr index\+\_\+c) \{ nvcuda\+::wmma\+::bmma\+\_\+sync(fragment\+\_\+d\mbox{[}index\+\_\+d\mbox{]}, fragment\+\_\+a\mbox{[}index\+\_\+a\mbox{]}, fragment\+\_\+b\mbox{[}index\+\_\+b\mbox{]}, fragment\+\_\+c\mbox{[}index\+\_\+c\mbox{]}); \} \index{tvm\+::tir\+::intrinsic@{tvm\+::tir\+::intrinsic}!tvm\+\_\+call\+\_\+packed@{tvm\+\_\+call\+\_\+packed}}
+\index{tvm\+\_\+call\+\_\+packed@{tvm\+\_\+call\+\_\+packed}!tvm\+::tir\+::intrinsic@{tvm\+::tir\+::intrinsic}}
+\subsubsection[{\texorpdfstring{tvm\+\_\+call\+\_\+packed}{tvm_call_packed}}]{\setlength{\rightskip}{0pt plus 5cm}constexpr const char$\ast$ tvm\+::tir\+::intrinsic\+::tvm\+\_\+call\+\_\+packed = \char`\"{}tvm\+\_\+call\+\_\+packed\char`\"{}}\hypertarget{namespacetvm_1_1tir_1_1intrinsic_ac49ed1daf574a2544c8d3cbe3110d6c9}{}\label{namespacetvm_1_1tir_1_1intrinsic_ac49ed1daf574a2544c8d3cbe3110d6c9}
+
+
+See pesudo code. 
+
+int tvm\+\_\+call\+\_\+packed(name, T\+V\+M\+Value$\ast$ args) \{ Module\+Node$\ast$ env = Get\+Current\+Env(); const Packed\+Func$\ast$ f = env-\/$>$Get\+Func\+From\+Env(name); ($\ast$f)(args, type\+\_\+code\+\_\+of(args), len(args)); return 0; \} \index{tvm\+::tir\+::intrinsic@{tvm\+::tir\+::intrinsic}!tvm\+\_\+call\+\_\+packed\+\_\+lowered@{tvm\+\_\+call\+\_\+packed\+\_\+lowered}}
+\index{tvm\+\_\+call\+\_\+packed\+\_\+lowered@{tvm\+\_\+call\+\_\+packed\+\_\+lowered}!tvm\+::tir\+::intrinsic@{tvm\+::tir\+::intrinsic}}
+\subsubsection[{\texorpdfstring{tvm\+\_\+call\+\_\+packed\+\_\+lowered}{tvm_call_packed_lowered}}]{\setlength{\rightskip}{0pt plus 5cm}constexpr const char$\ast$ tvm\+::tir\+::intrinsic\+::tvm\+\_\+call\+\_\+packed\+\_\+lowered = \char`\"{}tvm\+\_\+call\+\_\+packed\+\_\+lowered\char`\"{}}\hypertarget{namespacetvm_1_1tir_1_1intrinsic_ad1044b04b108f8d72d8468c7df8a426f}{}\label{namespacetvm_1_1tir_1_1intrinsic_ad1044b04b108f8d72d8468c7df8a426f}
+
+
+Lowered version of call packed, the space of value and type codes are explicitly allocated. 
+
+int tvm\+\_\+call\+\_\+packed\+\_\+lowered(name, T\+V\+M\+Value$\ast$ value\+\_\+stack, int$\ast$ tcode\+\_\+stack, int begin, int end) \{ Module\+Node$\ast$ env = Get\+Current\+Env(); const Packed\+Func$\ast$ f = env-\/$>$Get\+Func\+From\+Env(name); f-\/$>$Call\+Packed(T\+V\+M\+Args(value\+\_\+stack\mbox{[}begin\+:end\mbox{]}, tcode\+\_\+stack\mbox{[}begin\+:end\mbox{]}), T\+V\+M\+Ret\+Value(value\+\_\+stack + end, tcode\+\_\+stack + end)); \} \index{tvm\+::tir\+::intrinsic@{tvm\+::tir\+::intrinsic}!tvm\+\_\+call\+\_\+trace\+\_\+packed@{tvm\+\_\+call\+\_\+trace\+\_\+packed}}
+\index{tvm\+\_\+call\+\_\+trace\+\_\+packed@{tvm\+\_\+call\+\_\+trace\+\_\+packed}!tvm\+::tir\+::intrinsic@{tvm\+::tir\+::intrinsic}}
+\subsubsection[{\texorpdfstring{tvm\+\_\+call\+\_\+trace\+\_\+packed}{tvm_call_trace_packed}}]{\setlength{\rightskip}{0pt plus 5cm}constexpr const char$\ast$ tvm\+::tir\+::intrinsic\+::tvm\+\_\+call\+\_\+trace\+\_\+packed = \char`\"{}tvm\+\_\+call\+\_\+trace\+\_\+packed\char`\"{}}\hypertarget{namespacetvm_1_1tir_1_1intrinsic_a7127f9ff70e7e124403e6a22de1a82f3}{}\label{namespacetvm_1_1tir_1_1intrinsic_a7127f9ff70e7e124403e6a22de1a82f3}
+
+
+See pesudo code. 
+
+int tvm\+\_\+call\+\_\+trace\+\_\+packed(name, T\+V\+M\+Value$\ast$ args) \{ Module\+Node$\ast$ env = Get\+Current\+Env(); const Packed\+Func$\ast$ f = env-\/$>$Get\+Func\+From\+Env(name); ($\ast$f)(args, type\+\_\+code\+\_\+of(args), len(args)); return 0; \} \index{tvm\+::tir\+::intrinsic@{tvm\+::tir\+::intrinsic}!tvm\+\_\+call\+\_\+trace\+\_\+packed\+\_\+lowered@{tvm\+\_\+call\+\_\+trace\+\_\+packed\+\_\+lowered}}
+\index{tvm\+\_\+call\+\_\+trace\+\_\+packed\+\_\+lowered@{tvm\+\_\+call\+\_\+trace\+\_\+packed\+\_\+lowered}!tvm\+::tir\+::intrinsic@{tvm\+::tir\+::intrinsic}}
+\subsubsection[{\texorpdfstring{tvm\+\_\+call\+\_\+trace\+\_\+packed\+\_\+lowered}{tvm_call_trace_packed_lowered}}]{\setlength{\rightskip}{0pt plus 5cm}constexpr const char$\ast$ tvm\+::tir\+::intrinsic\+::tvm\+\_\+call\+\_\+trace\+\_\+packed\+\_\+lowered}\hypertarget{namespacetvm_1_1tir_1_1intrinsic_ad906c61d3e4610e103d5fee028e6147f}{}\label{namespacetvm_1_1tir_1_1intrinsic_ad906c61d3e4610e103d5fee028e6147f}
+{\bfseries Initial value\+:}
+\begin{DoxyCode}
+=
+    \textcolor{stringliteral}{"tvm\_call\_trace\_packed\_lowered"}
+\end{DoxyCode}
+
+
+Lowered version of trace intrinsic, the space of value and type codes are explicitly allocated. The return value is the (end -\/ 1) value on the stack. 
+
+int tvm\+\_\+call\+\_\+trace\+\_\+packed\+\_\+lowered(name, T\+V\+M\+Value$\ast$ value\+\_\+stack, int$\ast$ tcode\+\_\+stack, int begin, int end) \{ Module\+Node$\ast$ env = Get\+Current\+Env(); const Packed\+Func$\ast$ f = env-\/$>$Get\+Func\+From\+Env(name); f-\/$>$Call\+Packed(T\+V\+M\+Args(value\+\_\+stack\mbox{[}begin\+:end\mbox{]}, tcode\+\_\+stack\mbox{[}begin\+:end\mbox{]}), T\+V\+M\+Ret\+Value(value\+\_\+stack + end, tcode\+\_\+stack + end)); \} \index{tvm\+::tir\+::intrinsic@{tvm\+::tir\+::intrinsic}!tvm\+\_\+context\+\_\+id@{tvm\+\_\+context\+\_\+id}}
+\index{tvm\+\_\+context\+\_\+id@{tvm\+\_\+context\+\_\+id}!tvm\+::tir\+::intrinsic@{tvm\+::tir\+::intrinsic}}
+\subsubsection[{\texorpdfstring{tvm\+\_\+context\+\_\+id}{tvm_context_id}}]{\setlength{\rightskip}{0pt plus 5cm}constexpr const char$\ast$ tvm\+::tir\+::intrinsic\+::tvm\+\_\+context\+\_\+id = \char`\"{}tvm\+\_\+context\+\_\+id\char`\"{}}\hypertarget{namespacetvm_1_1tir_1_1intrinsic_af3a86e8446b1f2b078597cb7cdadfbff}{}\label{namespacetvm_1_1tir_1_1intrinsic_af3a86e8446b1f2b078597cb7cdadfbff}
+
+
+Return a unique context id, used for hint of workspace separation. Different context id ganrantees not having overlapping workspace. 
+
+\index{tvm\+::tir\+::intrinsic@{tvm\+::tir\+::intrinsic}!tvm\+\_\+fill\+\_\+fragment@{tvm\+\_\+fill\+\_\+fragment}}
+\index{tvm\+\_\+fill\+\_\+fragment@{tvm\+\_\+fill\+\_\+fragment}!tvm\+::tir\+::intrinsic@{tvm\+::tir\+::intrinsic}}
+\subsubsection[{\texorpdfstring{tvm\+\_\+fill\+\_\+fragment}{tvm_fill_fragment}}]{\setlength{\rightskip}{0pt plus 5cm}constexpr const char$\ast$ tvm\+::tir\+::intrinsic\+::tvm\+\_\+fill\+\_\+fragment = \char`\"{}tvm\+\_\+fill\+\_\+fragment\char`\"{}}\hypertarget{namespacetvm_1_1tir_1_1intrinsic_a6c0862848e3eb5b6972c76f0b27585f9}{}\label{namespacetvm_1_1tir_1_1intrinsic_a6c0862848e3eb5b6972c76f0b27585f9}
+
+
+tvm intrinsic for tensor core fill\+\_\+fragment operators. 
+
+void tvm\+\_\+fill\+\_\+fragment(\hyperlink{classtvm_1_1tir_1_1Var}{Var} fragment, U\+Int\+Imm m, U\+Int\+Imm, n, U\+Int\+Imm k, Expr index, Expr value) \{ // m, n, k are the shape of wmma fragment // fragments must be in \textquotesingle{}wmma.\+accumulator\textquotesingle{} scope. nvcuda\+::wmma\+::fill\+\_\+fragment(fragment\mbox{[}index\mbox{]}, value); \} \index{tvm\+::tir\+::intrinsic@{tvm\+::tir\+::intrinsic}!tvm\+\_\+global\+\_\+barrier\+\_\+kinit@{tvm\+\_\+global\+\_\+barrier\+\_\+kinit}}
+\index{tvm\+\_\+global\+\_\+barrier\+\_\+kinit@{tvm\+\_\+global\+\_\+barrier\+\_\+kinit}!tvm\+::tir\+::intrinsic@{tvm\+::tir\+::intrinsic}}
+\subsubsection[{\texorpdfstring{tvm\+\_\+global\+\_\+barrier\+\_\+kinit}{tvm_global_barrier_kinit}}]{\setlength{\rightskip}{0pt plus 5cm}constexpr const char$\ast$ tvm\+::tir\+::intrinsic\+::tvm\+\_\+global\+\_\+barrier\+\_\+kinit = \char`\"{}tvm\+\_\+global\+\_\+barrier\+\_\+kinit\char`\"{}}\hypertarget{namespacetvm_1_1tir_1_1intrinsic_a7ccada41188e0161827169ce24a6db16}{}\label{namespacetvm_1_1tir_1_1intrinsic_a7ccada41188e0161827169ce24a6db16}
+
+
+Initialize the global barrier. Call this at beginning of kernel that need global barrier. 
+
+\index{tvm\+::tir\+::intrinsic@{tvm\+::tir\+::intrinsic}!tvm\+\_\+handle\+\_\+is\+\_\+null@{tvm\+\_\+handle\+\_\+is\+\_\+null}}
+\index{tvm\+\_\+handle\+\_\+is\+\_\+null@{tvm\+\_\+handle\+\_\+is\+\_\+null}!tvm\+::tir\+::intrinsic@{tvm\+::tir\+::intrinsic}}
+\subsubsection[{\texorpdfstring{tvm\+\_\+handle\+\_\+is\+\_\+null}{tvm_handle_is_null}}]{\setlength{\rightskip}{0pt plus 5cm}constexpr const char$\ast$ tvm\+::tir\+::intrinsic\+::tvm\+\_\+handle\+\_\+is\+\_\+null = \char`\"{}tvm\+\_\+handle\+\_\+is\+\_\+null\char`\"{}}\hypertarget{namespacetvm_1_1tir_1_1intrinsic_ab5761917c5bd5b727203ddbc84763423}{}\label{namespacetvm_1_1tir_1_1intrinsic_ab5761917c5bd5b727203ddbc84763423}
+
+
+See pesudo code. 
+
+bool tvm\+\_\+handle\+\_\+is\+\_\+null(void$\ast$ handle) \{ return handle == nullptr \} \index{tvm\+::tir\+::intrinsic@{tvm\+::tir\+::intrinsic}!tvm\+\_\+if\+\_\+then\+\_\+else@{tvm\+\_\+if\+\_\+then\+\_\+else}}
+\index{tvm\+\_\+if\+\_\+then\+\_\+else@{tvm\+\_\+if\+\_\+then\+\_\+else}!tvm\+::tir\+::intrinsic@{tvm\+::tir\+::intrinsic}}
+\subsubsection[{\texorpdfstring{tvm\+\_\+if\+\_\+then\+\_\+else}{tvm_if_then_else}}]{\setlength{\rightskip}{0pt plus 5cm}constexpr const char$\ast$ tvm\+::tir\+::intrinsic\+::tvm\+\_\+if\+\_\+then\+\_\+else = \char`\"{}tvm\+\_\+if\+\_\+then\+\_\+else\char`\"{}}\hypertarget{namespacetvm_1_1tir_1_1intrinsic_acbd194e010059c3229f6db9809e77e5a}{}\label{namespacetvm_1_1tir_1_1intrinsic_acbd194e010059c3229f6db9809e77e5a}
+
+
+Same as select, used for unsafe memory access. 
+
+\hyperlink{classtvm_1_1Type}{Type} tvm\+\_\+if\+\_\+then\+\_\+else(cond, a, b) \{ return cond ? a \+: b; \} \index{tvm\+::tir\+::intrinsic@{tvm\+::tir\+::intrinsic}!tvm\+\_\+large\+\_\+uint\+\_\+imm@{tvm\+\_\+large\+\_\+uint\+\_\+imm}}
+\index{tvm\+\_\+large\+\_\+uint\+\_\+imm@{tvm\+\_\+large\+\_\+uint\+\_\+imm}!tvm\+::tir\+::intrinsic@{tvm\+::tir\+::intrinsic}}
+\subsubsection[{\texorpdfstring{tvm\+\_\+large\+\_\+uint\+\_\+imm}{tvm_large_uint_imm}}]{\setlength{\rightskip}{0pt plus 5cm}constexpr const char$\ast$ tvm\+::tir\+::intrinsic\+::tvm\+\_\+large\+\_\+uint\+\_\+imm = \char`\"{}tvm\+\_\+large\+\_\+uint\+\_\+imm\char`\"{}}\hypertarget{namespacetvm_1_1tir_1_1intrinsic_abdf19f5eab40c9dbc4952e76a29bd49c}{}\label{namespacetvm_1_1tir_1_1intrinsic_abdf19f5eab40c9dbc4952e76a29bd49c}
+
+
+See pesudo code. 
+
+Construct a big uint that may not be representable by int64
+
+Expr tvm\+\_\+large\+\_\+uint\+\_\+imm(uint32\+\_\+t v0, uin32\+\_\+t v1) \{ return (v1 $<$$<$ 32) $\vert$ v0; \} \index{tvm\+::tir\+::intrinsic@{tvm\+::tir\+::intrinsic}!tvm\+\_\+load\+\_\+matrix\+\_\+sync@{tvm\+\_\+load\+\_\+matrix\+\_\+sync}}
+\index{tvm\+\_\+load\+\_\+matrix\+\_\+sync@{tvm\+\_\+load\+\_\+matrix\+\_\+sync}!tvm\+::tir\+::intrinsic@{tvm\+::tir\+::intrinsic}}
+\subsubsection[{\texorpdfstring{tvm\+\_\+load\+\_\+matrix\+\_\+sync}{tvm_load_matrix_sync}}]{\setlength{\rightskip}{0pt plus 5cm}constexpr const char$\ast$ tvm\+::tir\+::intrinsic\+::tvm\+\_\+load\+\_\+matrix\+\_\+sync = \char`\"{}tvm\+\_\+load\+\_\+matrix\+\_\+sync\char`\"{}}\hypertarget{namespacetvm_1_1tir_1_1intrinsic_a8ec923ea4f1dad1fbbd4962684bd9b51}{}\label{namespacetvm_1_1tir_1_1intrinsic_a8ec923ea4f1dad1fbbd4962684bd9b51}
+
+
+tvm intrinsic for tensor core load operators. 
+
+void tvm\+\_\+load\+\_\+matrix\+\_\+sync(\hyperlink{classtvm_1_1tir_1_1Var}{Var} fragment, U\+Int\+Imm m, U\+Int\+Imm, n, U\+Int\+Imm k, Expr index, Expr buffer\+\_\+ptr, Expr stride, \hyperlink{classtvm_1_1tir_1_1StringImm}{String\+Imm} layout) \{ // m, n, k are the shape of wmma fragment. // Determine fragment layout(column-\/major or row major) by layout. // fragments must be in \textquotesingle{}wmma.\+matrix\+\_\+a\textquotesingle{} or \textquotesingle{}wmma.\+matrix\+\_\+b\textquotesingle{} scope. nvcuda\+::wmma\+::load\+\_\+matrix\+\_\+sync(fragment\mbox{[}index\mbox{]}, buffer\+\_\+ptr, stride); \} \index{tvm\+::tir\+::intrinsic@{tvm\+::tir\+::intrinsic}!tvm\+\_\+mma\+\_\+sync@{tvm\+\_\+mma\+\_\+sync}}
+\index{tvm\+\_\+mma\+\_\+sync@{tvm\+\_\+mma\+\_\+sync}!tvm\+::tir\+::intrinsic@{tvm\+::tir\+::intrinsic}}
+\subsubsection[{\texorpdfstring{tvm\+\_\+mma\+\_\+sync}{tvm_mma_sync}}]{\setlength{\rightskip}{0pt plus 5cm}constexpr const char$\ast$ tvm\+::tir\+::intrinsic\+::tvm\+\_\+mma\+\_\+sync = \char`\"{}tvm\+\_\+mma\+\_\+sync\char`\"{}}\hypertarget{namespacetvm_1_1tir_1_1intrinsic_aa78302097030bd1c144b826db84defdc}{}\label{namespacetvm_1_1tir_1_1intrinsic_aa78302097030bd1c144b826db84defdc}
+
+
+tvm intrinsic for tensor core mma\+\_\+sync operators. 
+
+void tvm\+\_\+mma\+\_\+sync(\hyperlink{classtvm_1_1tir_1_1Var}{Var} fragment\+\_\+d, Expr index\+\_\+d, \hyperlink{classtvm_1_1tir_1_1Var}{Var} fragment\+\_\+a, Expr index\+\_\+a, \hyperlink{classtvm_1_1tir_1_1Var}{Var} fragment\+\_\+b, Expr index\+\_\+b, \hyperlink{classtvm_1_1tir_1_1Var}{Var} fragment\+\_\+c, Expr index\+\_\+c) \{ nvcuda\+::wmma\+::mma\+\_\+sync(fragment\+\_\+d\mbox{[}index\+\_\+d\mbox{]}, fragment\+\_\+a\mbox{[}index\+\_\+a\mbox{]}, fragment\+\_\+b\mbox{[}index\+\_\+b\mbox{]}, fragment\+\_\+c\mbox{[}index\+\_\+c\mbox{]}); \} \index{tvm\+::tir\+::intrinsic@{tvm\+::tir\+::intrinsic}!tvm\+\_\+stack\+\_\+alloca@{tvm\+\_\+stack\+\_\+alloca}}
+\index{tvm\+\_\+stack\+\_\+alloca@{tvm\+\_\+stack\+\_\+alloca}!tvm\+::tir\+::intrinsic@{tvm\+::tir\+::intrinsic}}
+\subsubsection[{\texorpdfstring{tvm\+\_\+stack\+\_\+alloca}{tvm_stack_alloca}}]{\setlength{\rightskip}{0pt plus 5cm}constexpr const char$\ast$ tvm\+::tir\+::intrinsic\+::tvm\+\_\+stack\+\_\+alloca = \char`\"{}tvm\+\_\+stack\+\_\+alloca\char`\"{}}\hypertarget{namespacetvm_1_1tir_1_1intrinsic_a204b4be973bdf3e0c82f56a1273752bb}{}\label{namespacetvm_1_1tir_1_1intrinsic_a204b4be973bdf3e0c82f56a1273752bb}
+
+
+See pesudo code. 
+
+dtype in \{shape, array, arg\+\_\+value, arg\+\_\+tcode\}
+
+Handle tvm\+\_\+stack\+\_\+alloca(string dtype, int num) \{ return new on stack dtype\mbox{[}num\mbox{]}; \} \index{tvm\+::tir\+::intrinsic@{tvm\+::tir\+::intrinsic}!tvm\+\_\+stack\+\_\+make\+\_\+array@{tvm\+\_\+stack\+\_\+make\+\_\+array}}
+\index{tvm\+\_\+stack\+\_\+make\+\_\+array@{tvm\+\_\+stack\+\_\+make\+\_\+array}!tvm\+::tir\+::intrinsic@{tvm\+::tir\+::intrinsic}}
+\subsubsection[{\texorpdfstring{tvm\+\_\+stack\+\_\+make\+\_\+array}{tvm_stack_make_array}}]{\setlength{\rightskip}{0pt plus 5cm}constexpr const char$\ast$ tvm\+::tir\+::intrinsic\+::tvm\+\_\+stack\+\_\+make\+\_\+array = \char`\"{}tvm\+\_\+stack\+\_\+make\+\_\+array\char`\"{}}\hypertarget{namespacetvm_1_1tir_1_1intrinsic_ab210d3708ad9206af139d76f29727ab4}{}\label{namespacetvm_1_1tir_1_1intrinsic_ab210d3708ad9206af139d76f29727ab4}
+
+
+Allocate a N\+D\+Array(\+D\+L\+Tensor) on stack, return the handle. 
+
+\hyperlink{classtvm_1_1Type}{Type} tvm\+\_\+stack\+\_\+make\+\_\+array(Expr data, Expr shape, Expr strides, Expr ndim, Expr dtype, Expr elem\+\_\+offset) \{ ret = alloca stack D\+L\+Tensor(); ret-\/$>$data = data; ret-\/$>$shape = shape; ret-\/$>$strides = strides != 0 ? strides \+: nullptr; ret-\/$>$ndim = ndim; ret-\/$>$dtype = dtype.\+type(); ret-\/$>$byte\+\_\+offset = elem\+\_\+offset $\ast$ sizeof(dtype); return ret; \} \index{tvm\+::tir\+::intrinsic@{tvm\+::tir\+::intrinsic}!tvm\+\_\+stack\+\_\+make\+\_\+shape@{tvm\+\_\+stack\+\_\+make\+\_\+shape}}
+\index{tvm\+\_\+stack\+\_\+make\+\_\+shape@{tvm\+\_\+stack\+\_\+make\+\_\+shape}!tvm\+::tir\+::intrinsic@{tvm\+::tir\+::intrinsic}}
+\subsubsection[{\texorpdfstring{tvm\+\_\+stack\+\_\+make\+\_\+shape}{tvm_stack_make_shape}}]{\setlength{\rightskip}{0pt plus 5cm}constexpr const char$\ast$ tvm\+::tir\+::intrinsic\+::tvm\+\_\+stack\+\_\+make\+\_\+shape = \char`\"{}tvm\+\_\+stack\+\_\+make\+\_\+shape\char`\"{}}\hypertarget{namespacetvm_1_1tir_1_1intrinsic_aab2d9941d781b4b5bb399cffb9488fd6}{}\label{namespacetvm_1_1tir_1_1intrinsic_aab2d9941d781b4b5bb399cffb9488fd6}
+
+
+Allocate a shape tuple on stack, return the handle. 
+
+Handle tvm\+\_\+stack\+\_\+make\+\_\+shape(list args) \{ ret = alloca stack int64\+\_\+t\mbox{[}len(args)\mbox{]}; for i in range(len(args))\+: ret\mbox{[}i\mbox{]} = args\mbox{[}i\mbox{]} return \&ret\mbox{[}0\mbox{]}; \} \index{tvm\+::tir\+::intrinsic@{tvm\+::tir\+::intrinsic}!tvm\+\_\+static\+\_\+handle@{tvm\+\_\+static\+\_\+handle}}
+\index{tvm\+\_\+static\+\_\+handle@{tvm\+\_\+static\+\_\+handle}!tvm\+::tir\+::intrinsic@{tvm\+::tir\+::intrinsic}}
+\subsubsection[{\texorpdfstring{tvm\+\_\+static\+\_\+handle}{tvm_static_handle}}]{\setlength{\rightskip}{0pt plus 5cm}constexpr const char$\ast$ tvm\+::tir\+::intrinsic\+::tvm\+\_\+static\+\_\+handle = \char`\"{}tvm\+\_\+static\+\_\+handle\char`\"{}}\hypertarget{namespacetvm_1_1tir_1_1intrinsic_a075f340d77d7e0b8b60616fe5e64d2cc}{}\label{namespacetvm_1_1tir_1_1intrinsic_a075f340d77d7e0b8b60616fe5e64d2cc}
+
+
+Create a function local static handle that iniitalizes to nullptr. can be used to cache function local static resources. 
+
+\index{tvm\+::tir\+::intrinsic@{tvm\+::tir\+::intrinsic}!tvm\+\_\+storage\+\_\+sync@{tvm\+\_\+storage\+\_\+sync}}
+\index{tvm\+\_\+storage\+\_\+sync@{tvm\+\_\+storage\+\_\+sync}!tvm\+::tir\+::intrinsic@{tvm\+::tir\+::intrinsic}}
+\subsubsection[{\texorpdfstring{tvm\+\_\+storage\+\_\+sync}{tvm_storage_sync}}]{\setlength{\rightskip}{0pt plus 5cm}constexpr const char$\ast$ tvm\+::tir\+::intrinsic\+::tvm\+\_\+storage\+\_\+sync = \char`\"{}tvm\+\_\+storage\+\_\+sync\char`\"{}}\hypertarget{namespacetvm_1_1tir_1_1intrinsic_a327df78182d6687b72a93c468a3cd962}{}\label{namespacetvm_1_1tir_1_1intrinsic_a327df78182d6687b72a93c468a3cd962}
+
+
+See pseudo code. 
+
+int tvm\+\_\+storage\+\_\+sync(std\+::string storage\+\_\+scope) \{ \+\_\+\+\_\+sync(storage\+\_\+scope); return 0; \} \index{tvm\+::tir\+::intrinsic@{tvm\+::tir\+::intrinsic}!tvm\+\_\+store\+\_\+matrix\+\_\+sync@{tvm\+\_\+store\+\_\+matrix\+\_\+sync}}
+\index{tvm\+\_\+store\+\_\+matrix\+\_\+sync@{tvm\+\_\+store\+\_\+matrix\+\_\+sync}!tvm\+::tir\+::intrinsic@{tvm\+::tir\+::intrinsic}}
+\subsubsection[{\texorpdfstring{tvm\+\_\+store\+\_\+matrix\+\_\+sync}{tvm_store_matrix_sync}}]{\setlength{\rightskip}{0pt plus 5cm}constexpr const char$\ast$ tvm\+::tir\+::intrinsic\+::tvm\+\_\+store\+\_\+matrix\+\_\+sync = \char`\"{}tvm\+\_\+store\+\_\+matrix\+\_\+sync\char`\"{}}\hypertarget{namespacetvm_1_1tir_1_1intrinsic_a3127cfee7b97ef7182019e69b7a3eb78}{}\label{namespacetvm_1_1tir_1_1intrinsic_a3127cfee7b97ef7182019e69b7a3eb78}
+
+
+tvm intrinsic for tensor core store operators. 
+
+void tvm\+\_\+store\+\_\+matrix\+\_\+sync(\hyperlink{classtvm_1_1tir_1_1Var}{Var} fragment, U\+Int\+Imm m, U\+Int\+Imm, n, U\+Int\+Imm k, Expr index, Expr buffer\+\_\+ptr, Expr stride, \hyperlink{classtvm_1_1tir_1_1StringImm}{String\+Imm} layout) \{ // m, n, k are the shape of wmma fragment // fragments must be in \textquotesingle{}wmma.\+accumulator\textquotesingle{} scope. nvcuda\+::wmma\+::store\+\_\+matrix\+\_\+sync(fragment\mbox{[}index\mbox{]}, buffer\+\_\+ptr, stride, layout); \} \index{tvm\+::tir\+::intrinsic@{tvm\+::tir\+::intrinsic}!tvm\+\_\+struct\+\_\+get@{tvm\+\_\+struct\+\_\+get}}
+\index{tvm\+\_\+struct\+\_\+get@{tvm\+\_\+struct\+\_\+get}!tvm\+::tir\+::intrinsic@{tvm\+::tir\+::intrinsic}}
+\subsubsection[{\texorpdfstring{tvm\+\_\+struct\+\_\+get}{tvm_struct_get}}]{\setlength{\rightskip}{0pt plus 5cm}constexpr const char$\ast$ tvm\+::tir\+::intrinsic\+::tvm\+\_\+struct\+\_\+get = \char`\"{}tvm\+\_\+struct\+\_\+get\char`\"{}}\hypertarget{namespacetvm_1_1tir_1_1intrinsic_aba1b46cdb01d149f49d6676b889142b5}{}\label{namespacetvm_1_1tir_1_1intrinsic_aba1b46cdb01d149f49d6676b889142b5}
+
+
+See pesudo code. 
+
+\hyperlink{classtvm_1_1Type}{Type} tvm\+\_\+struct\+\_\+get(\+Struct\+Type$\ast$ arr, int index, int field\+\_\+id) \{ return arr\mbox{[}index\mbox{]}-\/$>$field; \} \begin{DoxySeeAlso}{See also}
+\hyperlink{namespacetvm_1_1tir_1_1intrinsic_a7aee573af86b33b88d123fc26a40cdd9}{T\+V\+M\+Struct\+Field\+Kind} 
+\end{DoxySeeAlso}
+\index{tvm\+::tir\+::intrinsic@{tvm\+::tir\+::intrinsic}!tvm\+\_\+struct\+\_\+set@{tvm\+\_\+struct\+\_\+set}}
+\index{tvm\+\_\+struct\+\_\+set@{tvm\+\_\+struct\+\_\+set}!tvm\+::tir\+::intrinsic@{tvm\+::tir\+::intrinsic}}
+\subsubsection[{\texorpdfstring{tvm\+\_\+struct\+\_\+set}{tvm_struct_set}}]{\setlength{\rightskip}{0pt plus 5cm}constexpr const char$\ast$ tvm\+::tir\+::intrinsic\+::tvm\+\_\+struct\+\_\+set = \char`\"{}tvm\+\_\+struct\+\_\+set\char`\"{}}\hypertarget{namespacetvm_1_1tir_1_1intrinsic_a2857ab6a0557554feee6e21dbd37eab9}{}\label{namespacetvm_1_1tir_1_1intrinsic_a2857ab6a0557554feee6e21dbd37eab9}
+
+
+See pesudo code. 
+
+Handle tvm\+\_\+struct\+\_\+set(\+Struct\+Type$\ast$ arr, int index, int field\+\_\+id, value) \{ arr\mbox{[}index\mbox{]}-\/$>$field = value; \} \begin{DoxySeeAlso}{See also}
+\hyperlink{namespacetvm_1_1tir_1_1intrinsic_a7aee573af86b33b88d123fc26a40cdd9}{T\+V\+M\+Struct\+Field\+Kind} 
+\end{DoxySeeAlso}
+\index{tvm\+::tir\+::intrinsic@{tvm\+::tir\+::intrinsic}!tvm\+\_\+thread\+\_\+allreduce@{tvm\+\_\+thread\+\_\+allreduce}}
+\index{tvm\+\_\+thread\+\_\+allreduce@{tvm\+\_\+thread\+\_\+allreduce}!tvm\+::tir\+::intrinsic@{tvm\+::tir\+::intrinsic}}
+\subsubsection[{\texorpdfstring{tvm\+\_\+thread\+\_\+allreduce}{tvm_thread_allreduce}}]{\setlength{\rightskip}{0pt plus 5cm}constexpr const char$\ast$ tvm\+::tir\+::intrinsic\+::tvm\+\_\+thread\+\_\+allreduce = \char`\"{}tvm\+\_\+thread\+\_\+allreduce\char`\"{}}\hypertarget{namespacetvm_1_1tir_1_1intrinsic_a374a98c3ef9da28a660825a0457ae997}{}\label{namespacetvm_1_1tir_1_1intrinsic_a374a98c3ef9da28a660825a0457ae997}
+
+
+See pesudo code. 
+
+void tvm\+\_\+thread\+\_\+allreduce(U\+Int\+Imm size, Expr source0, ..., Expr cond, \hyperlink{classtvm_1_1tir_1_1Var}{Var} reduce\+\_\+temp0, .., \hyperlink{classtvm_1_1tir_1_1Var}{Var} thread\+\_\+idx1, ...) \{ // constraint by the other thread\+\_\+idx remain the same. // reduce\+\_\+temp is used to save intermediate result. reduce\+\_\+temp0, ... = reduce(combiner, source0, ..., cond over \mbox{[}thread\+\_\+idx1, thread\+\_\+idx2\mbox{]} passed by any caller) \} \index{tvm\+::tir\+::intrinsic@{tvm\+::tir\+::intrinsic}!tvm\+\_\+thread\+\_\+context@{tvm\+\_\+thread\+\_\+context}}
+\index{tvm\+\_\+thread\+\_\+context@{tvm\+\_\+thread\+\_\+context}!tvm\+::tir\+::intrinsic@{tvm\+::tir\+::intrinsic}}
+\subsubsection[{\texorpdfstring{tvm\+\_\+thread\+\_\+context}{tvm_thread_context}}]{\setlength{\rightskip}{0pt plus 5cm}constexpr const char$\ast$ tvm\+::tir\+::intrinsic\+::tvm\+\_\+thread\+\_\+context = \char`\"{}tvm\+\_\+thread\+\_\+context\char`\"{}}\hypertarget{namespacetvm_1_1tir_1_1intrinsic_a3480cec5a6cf03c2cc894d6f889d1f39}{}\label{namespacetvm_1_1tir_1_1intrinsic_a3480cec5a6cf03c2cc894d6f889d1f39}
+
+
+See pesudo code Mark the content as thread local context, can get optimized by only call the call once at thread start. 
+
+Do not allow nesting(getting a thread context from another).
+
+Handle tvm\+\_\+thread\+\_\+context(\+Expr call) \{ return call; \} \index{tvm\+::tir\+::intrinsic@{tvm\+::tir\+::intrinsic}!tvm\+\_\+throw\+\_\+last\+\_\+error@{tvm\+\_\+throw\+\_\+last\+\_\+error}}
+\index{tvm\+\_\+throw\+\_\+last\+\_\+error@{tvm\+\_\+throw\+\_\+last\+\_\+error}!tvm\+::tir\+::intrinsic@{tvm\+::tir\+::intrinsic}}
+\subsubsection[{\texorpdfstring{tvm\+\_\+throw\+\_\+last\+\_\+error}{tvm_throw_last_error}}]{\setlength{\rightskip}{0pt plus 5cm}constexpr const char$\ast$ tvm\+::tir\+::intrinsic\+::tvm\+\_\+throw\+\_\+last\+\_\+error = \char`\"{}tvm\+\_\+throw\+\_\+last\+\_\+error\char`\"{}}\hypertarget{namespacetvm_1_1tir_1_1intrinsic_ad86e388d33768f6641d60a2e1d142cbb}{}\label{namespacetvm_1_1tir_1_1intrinsic_ad86e388d33768f6641d60a2e1d142cbb}
+
+
+See pesudo code. 
+
+void \hyperlink{namespacetvm_1_1tir_1_1intrinsic_ad86e388d33768f6641d60a2e1d142cbb}{tvm\+\_\+throw\+\_\+last\+\_\+error()} \{ throw \hyperlink{c__runtime__api_8h_a775383bcd8c0237e36bdf0c9654d62c3}{T\+V\+M\+Get\+Last\+Error()}; \} \index{tvm\+::tir\+::intrinsic@{tvm\+::tir\+::intrinsic}!tvm\+\_\+tuple@{tvm\+\_\+tuple}}
+\index{tvm\+\_\+tuple@{tvm\+\_\+tuple}!tvm\+::tir\+::intrinsic@{tvm\+::tir\+::intrinsic}}
+\subsubsection[{\texorpdfstring{tvm\+\_\+tuple}{tvm_tuple}}]{\setlength{\rightskip}{0pt plus 5cm}constexpr const char$\ast$ tvm\+::tir\+::intrinsic\+::tvm\+\_\+tuple = \char`\"{}tvm\+\_\+tuple\char`\"{}}\hypertarget{namespacetvm_1_1tir_1_1intrinsic_a19fa5d609f7ae416ede0eb14f1b4b165}{}\label{namespacetvm_1_1tir_1_1intrinsic_a19fa5d609f7ae416ede0eb14f1b4b165}
+
+
+tvm\+\_\+tuple is not an actual function and cannot codegen. It is used to represent tuple structure in value field of Attr\+Stmt, for the sake of giving hint to optimization. 
+
+Handle tvm\+\_\+tuple(value0, value1, ..., value\+\_\+n); \index{tvm\+::tir\+::intrinsic@{tvm\+::tir\+::intrinsic}!tvm\+\_\+warp\+\_\+shuffle@{tvm\+\_\+warp\+\_\+shuffle}}
+\index{tvm\+\_\+warp\+\_\+shuffle@{tvm\+\_\+warp\+\_\+shuffle}!tvm\+::tir\+::intrinsic@{tvm\+::tir\+::intrinsic}}
+\subsubsection[{\texorpdfstring{tvm\+\_\+warp\+\_\+shuffle}{tvm_warp_shuffle}}]{\setlength{\rightskip}{0pt plus 5cm}constexpr const char$\ast$ tvm\+::tir\+::intrinsic\+::tvm\+\_\+warp\+\_\+shuffle = \char`\"{}tvm\+\_\+warp\+\_\+shuffle\char`\"{}}\hypertarget{namespacetvm_1_1tir_1_1intrinsic_a1c5047acaa6e7e500840f9a1984f4e58}{}\label{namespacetvm_1_1tir_1_1intrinsic_a1c5047acaa6e7e500840f9a1984f4e58}
+
+
+See pseudo code. 
+
+\hyperlink{classtvm_1_1Type}{Type} tvm\+\_\+warp\+\_\+shuffle(\+Type value, warp\+\_\+id) \{ return (value passed in by warp indicated by warp\+\_\+id); \} 

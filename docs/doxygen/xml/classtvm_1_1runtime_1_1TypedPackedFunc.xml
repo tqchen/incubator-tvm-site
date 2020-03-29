@@ -1,0 +1,25 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="classtvm_1_1runtime_1_1TypedPackedFunc" kind="class" language="C++" prot="public">
+    <compoundname>tvm::runtime::TypedPackedFunc</compoundname>
+    <includes refid="packed__func_8h" local="no">packed_func.h</includes>
+    <templateparamlist>
+      <param>
+        <type>typename FType</type>
+      </param>
+    </templateparamlist>
+    <briefdescription>
+<para>Please refer to <ref refid="classtvm_1_1runtime_1_1TypedPackedFunc_3_01R_07Args_8_8_8_08_4_1TypedPackedFuncAnchor" kindref="member">TypedPackedFunc&lt;R(Args..)&gt;</ref>. </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="7413">
+        <label>tvm::runtime::TypedPackedFunc&lt; FType &gt;</label>
+        <link refid="classtvm_1_1runtime_1_1TypedPackedFunc"/>
+      </node>
+    </collaborationgraph>
+    <location file="include/tvm/runtime/packed_func.h" line="163" column="1" bodyfile="include/tvm/runtime/packed_func.h" bodystart="163" bodyend="-1"/>
+    <listofallmembers>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,136 @@
+\hypertarget{classtvm_1_1TensorTypeNode}{}\section{tvm\+:\+:Tensor\+Type\+Node Class Reference}
+\label{classtvm_1_1TensorTypeNode}\index{tvm\+::\+Tensor\+Type\+Node@{tvm\+::\+Tensor\+Type\+Node}}
+
+
+This is the most commonly used type in relay. \hyperlink{classtvm_1_1TensorType}{Tensor\+Type} have a fixed dimension, data type.  
+
+
+
+
+{\ttfamily \#include $<$tensor\+\_\+type.\+h$>$}
+
+
+
+Inheritance diagram for tvm\+:\+:Tensor\+Type\+Node\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=285pt]{classtvm_1_1TensorTypeNode__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for tvm\+:\+:Tensor\+Type\+Node\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{classtvm_1_1TensorTypeNode__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{classtvm_1_1TensorTypeNode_a49f67378d6735693e24fb7b61c725132}{Visit\+Attrs} (\hyperlink{classtvm_1_1AttrVisitor}{tvm\+::\+Attr\+Visitor} $\ast$v)
+\item 
+bool \hyperlink{classtvm_1_1TensorTypeNode_af38f7e3df5a2beaec7190eb037bf89e9}{S\+Equal\+Reduce} (const \hyperlink{classtvm_1_1TensorTypeNode}{Tensor\+Type\+Node} $\ast$other, \hyperlink{classtvm_1_1SEqualReducer}{S\+Equal\+Reducer} equal) const 
+\item 
+void \hyperlink{classtvm_1_1TensorTypeNode_ab79c6efa74f976b6a515860b622b485e}{S\+Hash\+Reduce} (\hyperlink{classtvm_1_1SHashReducer}{S\+Hash\+Reducer} hash\+\_\+reduce) const 
+\item 
+\hyperlink{classtvm_1_1PrimExpr}{Prim\+Expr} \hyperlink{classtvm_1_1TensorTypeNode_ac69ea89085f16b718fe3c4525e1798ba}{Size} () const 
+\begin{DoxyCompactList}\small\item\em Return product of elements in the shape. \end{DoxyCompactList}\item 
+\hyperlink{classtvm_1_1TensorTypeNode_a96eab1328e646dba6c954b552766c5c4}{T\+V\+M\+\_\+\+D\+E\+C\+L\+A\+R\+E\+\_\+\+F\+I\+N\+A\+L\+\_\+\+O\+B\+J\+E\+C\+T\+\_\+\+I\+N\+FO} (\hyperlink{classtvm_1_1TensorTypeNode}{Tensor\+Type\+Node}, \hyperlink{classtvm_1_1BaseTensorTypeNode}{Base\+Tensor\+Type\+Node})
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classtvm_1_1Array}{Array}$<$ \hyperlink{classtvm_1_1PrimExpr}{Prim\+Expr} $>$ \hyperlink{classtvm_1_1TensorTypeNode_a98fa347833e4504dd6f8056d9863a708}{shape}
+\begin{DoxyCompactList}\small\item\em The shape of the tensor, represented by Prim\+Expr(tvm\+::\+Expr). \end{DoxyCompactList}\item 
+\hyperlink{namespacetvm_a41918af1a1dc386388639a9d3ad06c5d}{Data\+Type} \hyperlink{classtvm_1_1TensorTypeNode_a715d148ed0f0fdc8bf975bb31e210975}{dtype}
+\begin{DoxyCompactList}\small\item\em The content data type. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static constexpr const char $\ast$ \hyperlink{classtvm_1_1TensorTypeNode_ae18b22592965b3f847dc387814ff647a}{\+\_\+type\+\_\+key} = \char`\"{}relay.\+Tensor\+Type\char`\"{}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+This is the most commonly used type in relay. \hyperlink{classtvm_1_1TensorType}{Tensor\+Type} have a fixed dimension, data type. 
+
+The elements of shape can be either Int\+Imm(constant integer), or any symbolic integer expression. The symbolic integer allows generic shape inference in certain cases. \begin{DoxySeeAlso}{See also}
+\hyperlink{classtvm_1_1TensorType}{Tensor\+Type} 
+\end{DoxySeeAlso}
+
+
+\subsection{Member Function Documentation}
+\index{tvm\+::\+Tensor\+Type\+Node@{tvm\+::\+Tensor\+Type\+Node}!S\+Equal\+Reduce@{S\+Equal\+Reduce}}
+\index{S\+Equal\+Reduce@{S\+Equal\+Reduce}!tvm\+::\+Tensor\+Type\+Node@{tvm\+::\+Tensor\+Type\+Node}}
+\subsubsection[{\texorpdfstring{S\+Equal\+Reduce(const Tensor\+Type\+Node $\ast$other, S\+Equal\+Reducer equal) const }{SEqualReduce(const TensorTypeNode *other, SEqualReducer equal) const }}]{\setlength{\rightskip}{0pt plus 5cm}bool tvm\+::\+Tensor\+Type\+Node\+::\+S\+Equal\+Reduce (
+\begin{DoxyParamCaption}
+\item[{const {\bf Tensor\+Type\+Node} $\ast$}]{other, }
+\item[{{\bf S\+Equal\+Reducer}}]{equal}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classtvm_1_1TensorTypeNode_af38f7e3df5a2beaec7190eb037bf89e9}{}\label{classtvm_1_1TensorTypeNode_af38f7e3df5a2beaec7190eb037bf89e9}
+\index{tvm\+::\+Tensor\+Type\+Node@{tvm\+::\+Tensor\+Type\+Node}!S\+Hash\+Reduce@{S\+Hash\+Reduce}}
+\index{S\+Hash\+Reduce@{S\+Hash\+Reduce}!tvm\+::\+Tensor\+Type\+Node@{tvm\+::\+Tensor\+Type\+Node}}
+\subsubsection[{\texorpdfstring{S\+Hash\+Reduce(\+S\+Hash\+Reducer hash\+\_\+reduce) const }{SHashReduce(SHashReducer hash_reduce) const }}]{\setlength{\rightskip}{0pt plus 5cm}void tvm\+::\+Tensor\+Type\+Node\+::\+S\+Hash\+Reduce (
+\begin{DoxyParamCaption}
+\item[{{\bf S\+Hash\+Reducer}}]{hash\+\_\+reduce}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classtvm_1_1TensorTypeNode_ab79c6efa74f976b6a515860b622b485e}{}\label{classtvm_1_1TensorTypeNode_ab79c6efa74f976b6a515860b622b485e}
+\index{tvm\+::\+Tensor\+Type\+Node@{tvm\+::\+Tensor\+Type\+Node}!Size@{Size}}
+\index{Size@{Size}!tvm\+::\+Tensor\+Type\+Node@{tvm\+::\+Tensor\+Type\+Node}}
+\subsubsection[{\texorpdfstring{Size() const }{Size() const }}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Prim\+Expr} tvm\+::\+Tensor\+Type\+Node\+::\+Size (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}\hypertarget{classtvm_1_1TensorTypeNode_ac69ea89085f16b718fe3c4525e1798ba}{}\label{classtvm_1_1TensorTypeNode_ac69ea89085f16b718fe3c4525e1798ba}
+
+
+Return product of elements in the shape. 
+
+\begin{DoxyReturn}{Returns}
+(d1 $\ast$ d\+\_\+2 ... $\ast$ d\+\_\+n) if shape is (d\+\_\+1, d\+\_\+2, ..., d\+\_\+n) and 1 if shape size is zero. 
+\end{DoxyReturn}
+\index{tvm\+::\+Tensor\+Type\+Node@{tvm\+::\+Tensor\+Type\+Node}!T\+V\+M\+\_\+\+D\+E\+C\+L\+A\+R\+E\+\_\+\+F\+I\+N\+A\+L\+\_\+\+O\+B\+J\+E\+C\+T\+\_\+\+I\+N\+FO@{T\+V\+M\+\_\+\+D\+E\+C\+L\+A\+R\+E\+\_\+\+F\+I\+N\+A\+L\+\_\+\+O\+B\+J\+E\+C\+T\+\_\+\+I\+N\+FO}}
+\index{T\+V\+M\+\_\+\+D\+E\+C\+L\+A\+R\+E\+\_\+\+F\+I\+N\+A\+L\+\_\+\+O\+B\+J\+E\+C\+T\+\_\+\+I\+N\+FO@{T\+V\+M\+\_\+\+D\+E\+C\+L\+A\+R\+E\+\_\+\+F\+I\+N\+A\+L\+\_\+\+O\+B\+J\+E\+C\+T\+\_\+\+I\+N\+FO}!tvm\+::\+Tensor\+Type\+Node@{tvm\+::\+Tensor\+Type\+Node}}
+\subsubsection[{\texorpdfstring{T\+V\+M\+\_\+\+D\+E\+C\+L\+A\+R\+E\+\_\+\+F\+I\+N\+A\+L\+\_\+\+O\+B\+J\+E\+C\+T\+\_\+\+I\+N\+F\+O(\+Tensor\+Type\+Node, Base\+Tensor\+Type\+Node)}{TVM_DECLARE_FINAL_OBJECT_INFO(TensorTypeNode, BaseTensorTypeNode)}}]{\setlength{\rightskip}{0pt plus 5cm}tvm\+::\+Tensor\+Type\+Node\+::\+T\+V\+M\+\_\+\+D\+E\+C\+L\+A\+R\+E\+\_\+\+F\+I\+N\+A\+L\+\_\+\+O\+B\+J\+E\+C\+T\+\_\+\+I\+N\+FO (
+\begin{DoxyParamCaption}
+\item[{{\bf Tensor\+Type\+Node}}]{, }
+\item[{{\bf Base\+Tensor\+Type\+Node}}]{}
+\end{DoxyParamCaption}
+)}\hypertarget{classtvm_1_1TensorTypeNode_a96eab1328e646dba6c954b552766c5c4}{}\label{classtvm_1_1TensorTypeNode_a96eab1328e646dba6c954b552766c5c4}
+\index{tvm\+::\+Tensor\+Type\+Node@{tvm\+::\+Tensor\+Type\+Node}!Visit\+Attrs@{Visit\+Attrs}}
+\index{Visit\+Attrs@{Visit\+Attrs}!tvm\+::\+Tensor\+Type\+Node@{tvm\+::\+Tensor\+Type\+Node}}
+\subsubsection[{\texorpdfstring{Visit\+Attrs(tvm\+::\+Attr\+Visitor $\ast$v)}{VisitAttrs(tvm::AttrVisitor *v)}}]{\setlength{\rightskip}{0pt plus 5cm}void tvm\+::\+Tensor\+Type\+Node\+::\+Visit\+Attrs (
+\begin{DoxyParamCaption}
+\item[{{\bf tvm\+::\+Attr\+Visitor} $\ast$}]{v}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classtvm_1_1TensorTypeNode_a49f67378d6735693e24fb7b61c725132}{}\label{classtvm_1_1TensorTypeNode_a49f67378d6735693e24fb7b61c725132}
+
+
+\subsection{Member Data Documentation}
+\index{tvm\+::\+Tensor\+Type\+Node@{tvm\+::\+Tensor\+Type\+Node}!\+\_\+type\+\_\+key@{\+\_\+type\+\_\+key}}
+\index{\+\_\+type\+\_\+key@{\+\_\+type\+\_\+key}!tvm\+::\+Tensor\+Type\+Node@{tvm\+::\+Tensor\+Type\+Node}}
+\subsubsection[{\texorpdfstring{\+\_\+type\+\_\+key}{_type_key}}]{\setlength{\rightskip}{0pt plus 5cm}constexpr const char$\ast$ tvm\+::\+Tensor\+Type\+Node\+::\+\_\+type\+\_\+key = \char`\"{}relay.\+Tensor\+Type\char`\"{}\hspace{0.3cm}{\ttfamily [static]}}\hypertarget{classtvm_1_1TensorTypeNode_ae18b22592965b3f847dc387814ff647a}{}\label{classtvm_1_1TensorTypeNode_ae18b22592965b3f847dc387814ff647a}
+\index{tvm\+::\+Tensor\+Type\+Node@{tvm\+::\+Tensor\+Type\+Node}!dtype@{dtype}}
+\index{dtype@{dtype}!tvm\+::\+Tensor\+Type\+Node@{tvm\+::\+Tensor\+Type\+Node}}
+\subsubsection[{\texorpdfstring{dtype}{dtype}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Data\+Type} tvm\+::\+Tensor\+Type\+Node\+::dtype}\hypertarget{classtvm_1_1TensorTypeNode_a715d148ed0f0fdc8bf975bb31e210975}{}\label{classtvm_1_1TensorTypeNode_a715d148ed0f0fdc8bf975bb31e210975}
+
+
+The content data type. 
+
+\index{tvm\+::\+Tensor\+Type\+Node@{tvm\+::\+Tensor\+Type\+Node}!shape@{shape}}
+\index{shape@{shape}!tvm\+::\+Tensor\+Type\+Node@{tvm\+::\+Tensor\+Type\+Node}}
+\subsubsection[{\texorpdfstring{shape}{shape}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Array}$<${\bf Prim\+Expr}$>$ tvm\+::\+Tensor\+Type\+Node\+::shape}\hypertarget{classtvm_1_1TensorTypeNode_a98fa347833e4504dd6f8056d9863a708}{}\label{classtvm_1_1TensorTypeNode_a98fa347833e4504dd6f8056d9863a708}
+
+
+The shape of the tensor, represented by Prim\+Expr(tvm\+::\+Expr). 
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+include/tvm/ir/\hyperlink{tensor__type_8h}{tensor\+\_\+type.\+h}\end{DoxyCompactItemize}

@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>JSDoc: Home</title>
+
+    <script src="scripts/prettify/prettify.js"> </script>
+    <script src="scripts/prettify/lang-css.js"> </script>
+    <!--[if lt IE 9]>
+      <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <link type="text/css" rel="stylesheet" href="styles/prettify-tomorrow.css">
+    <link type="text/css" rel="stylesheet" href="styles/jsdoc-default.css">
+</head>
+
+<body>
+
+<div id="main">
+
+    <h1 class="page-title">Home</h1>
+
+    
+
+
+
+    
+
+
+    <h3> </h3>
+
+
+
+
+
+
+
+
+
+
+    
+
+
+
+
+    <section>
+        <article><!--- Licensed to the Apache Software Foundation (ASF) under one -->
+<!--- or more contributor license agreements.  See the NOTICE file -->
+<!--- distributed with this work for additional information -->
+<!--- regarding copyright ownership.  The ASF licenses this file -->
+<!--- to you under the Apache License, Version 2.0 (the -->
+<!--- "License"); you may not use this file except in compliance -->
+<!--- with the License.  You may obtain a copy of the License at -->
+<!---   http://www.apache.org/licenses/LICENSE-2.0 -->
+<!--- Unless required by applicable law or agreed to in writing, -->
+<!--- software distributed under the License is distributed on an -->
+<!--- "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY -->
+<!--- KIND, either express or implied.  See the License for the -->
+<!--- specific language governing permissions and limitations -->
+<!--- under the License. -->
+<h1>TVM WebAssembly and Javascript Backend</h1>
+<p>This folder contains TVM WebAssembly and Javascript backend through Emscripten.</p>
+<h2>Installation</h2>
+<p>While the LLVM main branch support webassembly as a target. We still need a good runtime with libc and other
+system library support. Emscripten toolchain offers that nicely. The general idea is to build TVM against
+the fastcomp LLVM backend in the Emscripten project and allow us to generate <code>asmjs-unknown-emscripten</code>
+as a backend target.</p>
+<h3>Setup Emscripten</h3>
+<p>Checkout <a href="https://kripken.github.io/emscripten-site/docs/getting_started/downloads.html">Emscripten Portable SDK Downloads</a>
+to download emsdk-portable and unzip it on a local folder. Follow the installation guide from emscripten document.</p>
+<pre class="prettyprint source lang-bash"><code>./emsdk update
+./emsdk install latest
+./emsdk activate latest
+</code></pre>
+<p>Because we need to compile against the LLVM backend of emscripten, we will need the source and llvm library.
+Which can be installed via following command.</p>
+<pre class="prettyprint source lang-bash"><code>./emsdk install clang-incoming-64bit
+./emsdk activate clang-incoming-64bit
+</code></pre>
+<h3>Setup Environment Variable</h3>
+<p>In normal setting, we can setup the necessary environment variable with the following command.</p>
+<pre class="prettyprint source lang-bash"><code>source /path-to-emsdk-portable/emsdk_env.sh
+</code></pre>
+<p>However, this will put emscripten's clang and llvm path ahead of the current system path.
+What you can do is to set the path manually, by putting emscripten's path after the PATH like the following ones.
+You can get the detailed path by type <code>./emsdk activate</code></p>
+<pre class="prettyprint source lang-bash"><code>export PATH=${PATH}:/emsdk-related-path-here
+
+</code></pre>
+<h3>Build TVM with Fastcomp LLVM</h3>
+<p>To build TVM with Emscripten's Fastcomp LLVM, we can modify the LLVM_CONFIG in <code>config.mk</code>
+to point to fastcomp's llvm-config and build TVM normally.</p>
+<pre class="prettyprint source lang-bash"><code>LLVM_CONFIG = /path/to/emsdk-portable/clang/fastcomp/build_incoming_64/bin/llvm-config
+</code></pre>
+<h3>Build TVM Web Runtime</h3>
+<p>The above command gives us the TVM compiling environment. Now we need to build runtime,
+to do so, make sure we set the environment correctly as in previous section and type</p>
+<pre class="prettyprint source lang-bash"><code>make web
+</code></pre>
+<p>This will create <code>build/libtvm_web_runtime.bc</code> and <code>build/libtvm_web_runtime.js</code>.</p>
+<h2>Use TVM to Generate Javascript Library</h2>
+<p>The general idea is to use TVM as normally and set target to be <code>llvm -target=asmjs-unknown-emscripten -system-lib</code>.</p>
+<p>The following code snippet from <a href="https://github.com/apache/incubator-tvm/tree/master/tests/web/prepare_test_libs.py">tests/web/prepare_test_libs.py</a> demonstrate
+the compilation process.</p>
+<pre class="prettyprint source lang-python"><code>import tvm
+from tvm import te
+from tvm.contrib import emscripten
+import os
+def prepare_test_libs(base_path):
+    target = &quot;llvm -target=asmjs-unknown-emscripten -system-lib&quot;
+    if not tvm.runtime.enabled(target):
+        raise RuntimeError(&quot;Target %s is not enbaled&quot; % target)
+    n = te.var(&quot;n&quot;)
+    A = te.placeholder((n,), name='A')
+    B = te.compute(A.shape, lambda *i: A(*i) + 1.0, name='B')
+    s = te.create_schedule(B.op)
+    fadd1 = tvm.build(s, [A, B], target, name=&quot;add_one&quot;)
+    obj_path = os.path.join(base_path, &quot;test_add_one.bc&quot;)
+    fadd1.save(obj_path)
+    emscripten.create_js(os.path.join(base_path, &quot;test_module.js&quot;), obj_path)
+
+if __name__ == &quot;__main__&quot;:
+    curr_path = os.path.dirname(os.path.abspath(os.path.expanduser(__file__)))
+    prepare_test_libs(os.path.join(curr_path, &quot;../../build&quot;))
+</code></pre>
+<p>In this workflow, we use TVM to generate a <code>.bc</code> file and statically link
+that with the  <code>build/libtvm_web_runtime.bc</code>(emscripten.create_js will help you do that).
+The result js library is a library that contains both TVM runtime and the compiled function.</p>
+<h2>Run the Generated Library</h2>
+<p>The following code snippet from <a href="https://github.com/apache/incubator-tvm/tree/master/tests/web/test_module_load.js">tests/web/test_module_load.js</a> demonstrate
+how to run the compiled library.</p>
+<pre class="prettyprint source lang-js"><code>// Load Emscripten Module, need to change path to root/build
+const path = require(&quot;path&quot;);
+process.chdir(path.join(__dirname, &quot;../../build&quot;));
+var Module = require(&quot;../../build/test_module.js&quot;);
+// Bootstrap TVMruntime with emscripten module.
+const tvm_runtime = require(&quot;../../web/tvm_runtime.js&quot;);
+const tvm = tvm_runtime.create(Module);
+
+// Load system library, the compiled function is registered in sysLib.
+var sysLib = tvm.systemLib();
+
+function randomArray(length, max) {
+  return Array.apply(null, Array(length)).map(function() {
+    return Math.random() * max;
+  });
+}
+
+function testAddOne() {
+  // grab pre-loaded function
+  var faddOne = sysLib.getFunction(&quot;add_one&quot;);
+  var assert = require('assert');
+  tvm.assert(tvm.isPackedFunc(faddOne));
+  var n = 124;
+  var A = tvm.empty(n).copyFrom(randomArray(n, 1));
+  var B = tvm.empty(n);
+  // call the function.
+  faddOne(A, B);
+  AA = A.asArray();  // retrieve values in js array
+  BB = B.asArray();  // retrieve values in js array
+  // verify
+  for (var i = 0; i &lt; BB.length; ++i) {
+    assert(Math.abs(BB[i] - (AA[i] + 1)) &lt; 1e-5);
+  }
+  faddOne.release();
+}
+
+testAddOne();
+sysLib.release();
+console.log(&quot;Finish verifying test_module_load&quot;);
+</code></pre>
+<p>Current example supports static linking, which is the preferred way to get more efficiency
+in javascript backend.</p>
+<h2>Proxy based RPC</h2>
+<p>We can now use javascript end to start an RPC server and connect to it from python side,
+making the testing flow easier.</p>
+<p>The following is an example to reproduce this. This requires everything to be in the git source and setup PYTHONPATH(instead of use setup.py install)</p>
+<ul>
+<li>run &quot;python -m tvm.exec.rpc_proxy --example-rpc=1&quot; to start proxy.</li>
+<li>Open broswer, goto the server webpage click Connect to proxy.
+<ul>
+<li>Alternatively run &quot;node web/example_rpc_node.js&quot;</li>
+</ul>
+</li>
+<li>run &quot;python tests/web/websock_rpc_test.py&quot; to run the rpc client.</li>
+</ul>
+<p>The general idea is to use Emscripten's dynamic linking to dynamically load modules.</p></article>
+    </section>
+
+
+
+
+
+
+</div>
+
+<nav>
+    <h2><a href="index.html">Home</a></h2><h3>Namespaces</h3><ul><li><a href="tvm.html">tvm</a></li><li><a href="tvm_runtime.html">tvm_runtime</a></li></ul><h3>Classes</h3><ul><li><a href="tvm.GraphModule.html">GraphModule</a></li><li><a href="tvm.NDArray.html">NDArray</a></li><li><a href="tvm.TVMConstant.html">TVMConstant</a></li><li><a href="tvm.TVMContext.html">TVMContext</a></li><li><a href="tvm.TVMModule.html">TVMModule</a></li><li><a href="tvm.TVMRuntime.html">TVMRuntime</a></li></ul>
+</nav>
+
+<br class="clear">
+
+<footer>
+    Documentation generated by <a href="https://github.com/jsdoc/jsdoc">JSDoc 3.6.3</a>
+</footer>
+
+<script> prettyPrint(); </script>
+<script src="scripts/linenumber.js"> </script>
+</body>
+</html>

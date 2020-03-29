@@ -1,0 +1,190 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="classtvm_1_1relay_1_1Function" kind="class" language="C++" prot="public">
+    <compoundname>tvm::relay::Function</compoundname>
+    <basecompoundref refid="classtvm_1_1BaseFunc" prot="public" virt="non-virtual">tvm::BaseFunc</basecompoundref>
+    <includes refid="relay_2function_8h" local="no">function.h</includes>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classtvm_1_1relay_1_1Function_1a4da29d04ce5fa5ab531d587cbebc358f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>tvm::relay::Function::Function</definition>
+        <argsstring>(tvm::Array&lt; Var &gt; params, Expr body, Type ret_type, tvm::Array&lt; TypeVar &gt; ty_params, tvm::DictAttrs attrs=NullValue&lt; DictAttrs &gt;())</argsstring>
+        <name>Function</name>
+        <param>
+          <type><ref refid="classtvm_1_1Array" kindref="compound">tvm::Array</ref>&lt; <ref refid="classtvm_1_1relay_1_1Var" kindref="compound">Var</ref> &gt;</type>
+          <declname>params</declname>
+        </param>
+        <param>
+          <type><ref refid="namespacetvm_1_1relay_1a5b84e3790f89bb3fad5c7911eeb99531" kindref="member">Expr</ref></type>
+          <declname>body</declname>
+        </param>
+        <param>
+          <type><ref refid="namespacetvm_1_1relay_1a661d95f170bca230773914caeef3fe52" kindref="member">Type</ref></type>
+          <declname>ret_type</declname>
+        </param>
+        <param>
+          <type><ref refid="classtvm_1_1Array" kindref="compound">tvm::Array</ref>&lt; <ref refid="namespacetvm_1_1relay_1a63321eb51080f3f57dd7563a3ca0bfa6" kindref="member">TypeVar</ref> &gt;</type>
+          <declname>ty_params</declname>
+        </param>
+        <param>
+          <type><ref refid="classtvm_1_1DictAttrs" kindref="compound">tvm::DictAttrs</ref></type>
+          <declname>attrs</declname>
+          <defval><ref refid="namespacetvm_1ab6c242e8ac09beb463fba306948b7f15" kindref="member">NullValue</ref>&lt; <ref refid="classtvm_1_1DictAttrs" kindref="compound">DictAttrs</ref> &gt;()</defval>
+        </param>
+        <briefdescription>
+<para><ref refid="classtvm_1_1Constructor" kindref="compound">Constructor</ref>. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>params</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The parameters of the function. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>body</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The body of the function. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>ret_type</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The return type of the function. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>ty_params</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The type parameters. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>attrs</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Additional function attributes. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/relay/function.h" line="118" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classtvm_1_1relay_1_1Function_1afb025766d10255fbc8310363f320f772" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>tvm::relay::Function::TVM_DEFINE_OBJECT_REF_METHODS</definition>
+        <argsstring>(Function, BaseFunc, FunctionNode)</argsstring>
+        <name>TVM_DEFINE_OBJECT_REF_METHODS</name>
+        <param>
+          <type><ref refid="classtvm_1_1relay_1_1Function" kindref="compound">Function</ref></type>
+        </param>
+        <param>
+          <type><ref refid="namespacetvm_1_1relay_1acbaff2ae7feec23fea55e025a9cc1b76" kindref="member">BaseFunc</ref></type>
+        </param>
+        <param>
+          <type><ref refid="classtvm_1_1relay_1_1FunctionNode" kindref="compound">FunctionNode</ref></type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/relay/function.h" line="124" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classtvm_1_1relay_1_1Function_1ac085d821f02ee1e2a4927f85f72f6862" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>tvm::relay::Function::TVM_DEFINE_OBJECT_REF_COW_METHOD</definition>
+        <argsstring>(FunctionNode)</argsstring>
+        <name>TVM_DEFINE_OBJECT_REF_COW_METHOD</name>
+        <param>
+          <type><ref refid="classtvm_1_1relay_1_1FunctionNode" kindref="compound">FunctionNode</ref></type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/relay/function.h" line="125" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Managed reference to <ref refid="classtvm_1_1relay_1_1FunctionNode" kindref="compound">FunctionNode</ref>. </para>    </briefdescription>
+    <detaileddescription>
+<para><simplesect kind="see"><para><ref refid="classtvm_1_1relay_1_1FunctionNode" kindref="compound">FunctionNode</ref> </para></simplesect>
+</para>    </detaileddescription>
+    <inheritancegraph>
+      <node id="5108">
+        <label>ObjectRef</label>
+      </node>
+      <node id="5105">
+        <label>BaseFunc</label>
+        <link refid="classtvm_1_1BaseFunc"/>
+        <childnode refid="5106" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="5104">
+        <label>tvm::relay::Function</label>
+        <link refid="classtvm_1_1relay_1_1Function"/>
+        <childnode refid="5105" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="5106">
+        <label>tvm::RelayExpr</label>
+        <link refid="classtvm_1_1RelayExpr"/>
+        <childnode refid="5107" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="5107">
+        <label>tvm::BaseExpr</label>
+        <link refid="classtvm_1_1BaseExpr"/>
+        <childnode refid="5108" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="5113">
+        <label>ObjectRef</label>
+      </node>
+      <node id="5110">
+        <label>BaseFunc</label>
+        <link refid="classtvm_1_1BaseFunc"/>
+        <childnode refid="5111" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="5109">
+        <label>tvm::relay::Function</label>
+        <link refid="classtvm_1_1relay_1_1Function"/>
+        <childnode refid="5110" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="5111">
+        <label>tvm::RelayExpr</label>
+        <link refid="classtvm_1_1RelayExpr"/>
+        <childnode refid="5112" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="5112">
+        <label>tvm::BaseExpr</label>
+        <link refid="classtvm_1_1BaseExpr"/>
+        <childnode refid="5113" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="include/tvm/relay/function.h" line="108" column="1" bodyfile="include/tvm/relay/function.h" bodystart="108" bodyend="126"/>
+    <listofallmembers>
+      <member refid="classtvm_1_1relay_1_1Function_1a4da29d04ce5fa5ab531d587cbebc358f" prot="public" virt="non-virtual"><scope>tvm::relay::Function</scope><name>Function</name></member>
+      <member refid="classtvm_1_1relay_1_1Function_1ac085d821f02ee1e2a4927f85f72f6862" prot="public" virt="non-virtual"><scope>tvm::relay::Function</scope><name>TVM_DEFINE_OBJECT_REF_COW_METHOD</name></member>
+      <member refid="classtvm_1_1relay_1_1Function_1afb025766d10255fbc8310363f320f772" prot="public" virt="non-virtual"><scope>tvm::relay::Function</scope><name>TVM_DEFINE_OBJECT_REF_METHODS</name></member>
+      <member refid="classtvm_1_1BaseFunc_1a7cadd404d82f2d6962373ac609a10501" prot="public" virt="non-virtual" ambiguityscope="tvm::BaseFunc::"><scope>tvm::relay::Function</scope><name>TVM_DEFINE_OBJECT_REF_METHODS</name></member>
+      <member refid="classtvm_1_1RelayExpr_1aaeb30fa197e3d25cd7897f3ac4dcef9d" prot="public" virt="non-virtual" ambiguityscope="tvm::RelayExpr::"><scope>tvm::relay::Function</scope><name>TVM_DEFINE_OBJECT_REF_METHODS</name></member>
+      <member refid="classtvm_1_1BaseExpr_1aa513c6abed6e5b76c7fc9441649b3e4c" prot="public" virt="non-virtual" ambiguityscope="tvm::BaseExpr::"><scope>tvm::relay::Function</scope><name>TVM_DEFINE_OBJECT_REF_METHODS</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

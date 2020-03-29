@@ -1,0 +1,134 @@
+\hypertarget{classtvm_1_1NodeFunctor_3_01R_07const_01ObjectRef_01_6n_00_01Args_8_8_8_08_4}{}\section{tvm\+:\+:Node\+Functor$<$ R(const Object\+Ref \&n, Args...)$>$ Class Template Reference}
+\label{classtvm_1_1NodeFunctor_3_01R_07const_01ObjectRef_01_6n_00_01Args_8_8_8_08_4}\index{tvm\+::\+Node\+Functor$<$ R(const Object\+Ref \&n, Args...)$>$@{tvm\+::\+Node\+Functor$<$ R(const Object\+Ref \&n, Args...)$>$}}
+
+
+{\ttfamily \#include $<$functor.\+h$>$}
+
+
+
+Collaboration diagram for tvm\+:\+:Node\+Functor$<$ R(const Object\+Ref \&n, Args...)$>$\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=199pt]{classtvm_1_1NodeFunctor_3_01R_07const_01ObjectRef_01_6n_00_01Args_8_8_8_08_4__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+using \hyperlink{classtvm_1_1NodeFunctor_3_01R_07const_01ObjectRef_01_6n_00_01Args_8_8_8_08_4_ac7f687cb7dda02407b578a6683fa708a}{result\+\_\+type} = R
+\begin{DoxyCompactList}\small\item\em the result type of this functor \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+bool \hyperlink{classtvm_1_1NodeFunctor_3_01R_07const_01ObjectRef_01_6n_00_01Args_8_8_8_08_4_a3233a0b1e9898fc719e72db783881c71}{can\+\_\+dispatch} (const Object\+Ref \&n) const 
+\begin{DoxyCompactList}\small\item\em Whether the functor can dispatch the corresponding Node. \end{DoxyCompactList}\item 
+R \hyperlink{classtvm_1_1NodeFunctor_3_01R_07const_01ObjectRef_01_6n_00_01Args_8_8_8_08_4_a0b4aaedd0c2bb1f4c20b78221d30ef54}{operator()} (const Object\+Ref \&n, Args...\+args) const 
+\begin{DoxyCompactList}\small\item\em invoke the functor, dispatch on type of n \end{DoxyCompactList}\item 
+{\footnotesize template$<$typename T\+Node $>$ }\\\hyperlink{classtvm_1_1NodeFunctor_3_01R_07const_01ObjectRef_01_6n_00_01Args_8_8_8_08_4}{T\+Self} \& \hyperlink{classtvm_1_1NodeFunctor_3_01R_07const_01ObjectRef_01_6n_00_01Args_8_8_8_08_4_a2fcc19e5151e9b9e56cafc76231b29fd}{set\+\_\+dispatch} (F\+Pointer f)
+\begin{DoxyCompactList}\small\item\em set the dispacher for type T\+Node \end{DoxyCompactList}\item 
+{\footnotesize template$<$typename T\+Node $>$ }\\\hyperlink{classtvm_1_1NodeFunctor_3_01R_07const_01ObjectRef_01_6n_00_01Args_8_8_8_08_4}{T\+Self} \& \hyperlink{classtvm_1_1NodeFunctor_3_01R_07const_01ObjectRef_01_6n_00_01Args_8_8_8_08_4_a7c6f675b3c24ea09365a646b2ca7c77e}{clear\+\_\+dispatch} ()
+\begin{DoxyCompactList}\small\item\em unset the dispacher for type T\+Node \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Member Typedef Documentation}
+\index{tvm\+::\+Node\+Functor$<$ R(const Object\+Ref \&n, Args...)$>$@{tvm\+::\+Node\+Functor$<$ R(const Object\+Ref \&n, Args...)$>$}!result\+\_\+type@{result\+\_\+type}}
+\index{result\+\_\+type@{result\+\_\+type}!tvm\+::\+Node\+Functor$<$ R(const Object\+Ref \&n, Args...)$>$@{tvm\+::\+Node\+Functor$<$ R(const Object\+Ref \&n, Args...)$>$}}
+\subsubsection[{\texorpdfstring{result\+\_\+type}{result_type}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename R , typename... Args$>$ using {\bf tvm\+::\+Node\+Functor}$<$ R(const Object\+Ref \&n, Args...)$>$\+::{\bf result\+\_\+type} =  R}\hypertarget{classtvm_1_1NodeFunctor_3_01R_07const_01ObjectRef_01_6n_00_01Args_8_8_8_08_4_ac7f687cb7dda02407b578a6683fa708a}{}\label{classtvm_1_1NodeFunctor_3_01R_07const_01ObjectRef_01_6n_00_01Args_8_8_8_08_4_ac7f687cb7dda02407b578a6683fa708a}
+
+
+the result type of this functor 
+
+
+
+\subsection{Member Function Documentation}
+\index{tvm\+::\+Node\+Functor$<$ R(const Object\+Ref \&n, Args...)$>$@{tvm\+::\+Node\+Functor$<$ R(const Object\+Ref \&n, Args...)$>$}!can\+\_\+dispatch@{can\+\_\+dispatch}}
+\index{can\+\_\+dispatch@{can\+\_\+dispatch}!tvm\+::\+Node\+Functor$<$ R(const Object\+Ref \&n, Args...)$>$@{tvm\+::\+Node\+Functor$<$ R(const Object\+Ref \&n, Args...)$>$}}
+\subsubsection[{\texorpdfstring{can\+\_\+dispatch(const Object\+Ref \&n) const }{can_dispatch(const ObjectRef &n) const }}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename R , typename... Args$>$ bool {\bf tvm\+::\+Node\+Functor}$<$ R(const Object\+Ref \&n, Args...)$>$\+::can\+\_\+dispatch (
+\begin{DoxyParamCaption}
+\item[{const Object\+Ref \&}]{n}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classtvm_1_1NodeFunctor_3_01R_07const_01ObjectRef_01_6n_00_01Args_8_8_8_08_4_a3233a0b1e9898fc719e72db783881c71}{}\label{classtvm_1_1NodeFunctor_3_01R_07const_01ObjectRef_01_6n_00_01Args_8_8_8_08_4_a3233a0b1e9898fc719e72db783881c71}
+
+
+Whether the functor can dispatch the corresponding Node. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em n} & The node to be dispatched \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Whether dispatching function is registered for n\textquotesingle{}s type. 
+\end{DoxyReturn}
+\index{tvm\+::\+Node\+Functor$<$ R(const Object\+Ref \&n, Args...)$>$@{tvm\+::\+Node\+Functor$<$ R(const Object\+Ref \&n, Args...)$>$}!clear\+\_\+dispatch@{clear\+\_\+dispatch}}
+\index{clear\+\_\+dispatch@{clear\+\_\+dispatch}!tvm\+::\+Node\+Functor$<$ R(const Object\+Ref \&n, Args...)$>$@{tvm\+::\+Node\+Functor$<$ R(const Object\+Ref \&n, Args...)$>$}}
+\subsubsection[{\texorpdfstring{clear\+\_\+dispatch()}{clear_dispatch()}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename R , typename... Args$>$ template$<$typename T\+Node $>$ {\bf T\+Self}\& {\bf tvm\+::\+Node\+Functor}$<$ R(const Object\+Ref \&n, Args...)$>$\+::clear\+\_\+dispatch (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classtvm_1_1NodeFunctor_3_01R_07const_01ObjectRef_01_6n_00_01Args_8_8_8_08_4_a7c6f675b3c24ea09365a646b2ca7c77e}{}\label{classtvm_1_1NodeFunctor_3_01R_07const_01ObjectRef_01_6n_00_01Args_8_8_8_08_4_a7c6f675b3c24ea09365a646b2ca7c77e}
+
+
+unset the dispacher for type T\+Node 
+
+
+\begin{DoxyTemplParams}{Template Parameters}
+{\em T\+Node} & the type of Node to be dispatched. \\
+\hline
+\end{DoxyTemplParams}
+\begin{DoxyReturn}{Returns}
+reference to self. 
+\end{DoxyReturn}
+\index{tvm\+::\+Node\+Functor$<$ R(const Object\+Ref \&n, Args...)$>$@{tvm\+::\+Node\+Functor$<$ R(const Object\+Ref \&n, Args...)$>$}!operator()@{operator()}}
+\index{operator()@{operator()}!tvm\+::\+Node\+Functor$<$ R(const Object\+Ref \&n, Args...)$>$@{tvm\+::\+Node\+Functor$<$ R(const Object\+Ref \&n, Args...)$>$}}
+\subsubsection[{\texorpdfstring{operator()(const Object\+Ref \&n, Args...\+args) const }{operator()(const ObjectRef &n, Args...args) const }}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename R , typename... Args$>$ R {\bf tvm\+::\+Node\+Functor}$<$ R(const Object\+Ref \&n, Args...)$>$\+::operator() (
+\begin{DoxyParamCaption}
+\item[{const Object\+Ref \&}]{n, }
+\item[{Args...}]{args}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classtvm_1_1NodeFunctor_3_01R_07const_01ObjectRef_01_6n_00_01Args_8_8_8_08_4_a0b4aaedd0c2bb1f4c20b78221d30ef54}{}\label{classtvm_1_1NodeFunctor_3_01R_07const_01ObjectRef_01_6n_00_01Args_8_8_8_08_4_a0b4aaedd0c2bb1f4c20b78221d30ef54}
+
+
+invoke the functor, dispatch on type of n 
+
+
+\begin{DoxyParams}{Parameters}
+{\em n} & The Node argument \\
+\hline
+{\em args} & The additional arguments \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The result. 
+\end{DoxyReturn}
+\index{tvm\+::\+Node\+Functor$<$ R(const Object\+Ref \&n, Args...)$>$@{tvm\+::\+Node\+Functor$<$ R(const Object\+Ref \&n, Args...)$>$}!set\+\_\+dispatch@{set\+\_\+dispatch}}
+\index{set\+\_\+dispatch@{set\+\_\+dispatch}!tvm\+::\+Node\+Functor$<$ R(const Object\+Ref \&n, Args...)$>$@{tvm\+::\+Node\+Functor$<$ R(const Object\+Ref \&n, Args...)$>$}}
+\subsubsection[{\texorpdfstring{set\+\_\+dispatch(\+F\+Pointer f)}{set_dispatch(FPointer f)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename R , typename... Args$>$ template$<$typename T\+Node $>$ {\bf T\+Self}\& {\bf tvm\+::\+Node\+Functor}$<$ R(const Object\+Ref \&n, Args...)$>$\+::set\+\_\+dispatch (
+\begin{DoxyParamCaption}
+\item[{F\+Pointer}]{f}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classtvm_1_1NodeFunctor_3_01R_07const_01ObjectRef_01_6n_00_01Args_8_8_8_08_4_a2fcc19e5151e9b9e56cafc76231b29fd}{}\label{classtvm_1_1NodeFunctor_3_01R_07const_01ObjectRef_01_6n_00_01Args_8_8_8_08_4_a2fcc19e5151e9b9e56cafc76231b29fd}
+
+
+set the dispacher for type T\+Node 
+
+
+\begin{DoxyParams}{Parameters}
+{\em f} & The function to be set. \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyTemplParams}{Template Parameters}
+{\em T\+Node} & the type of Node to be dispatched. \\
+\hline
+\end{DoxyTemplParams}
+\begin{DoxyReturn}{Returns}
+reference to self. 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+include/tvm/node/\hyperlink{functor_8h}{functor.\+h}\end{DoxyCompactItemize}

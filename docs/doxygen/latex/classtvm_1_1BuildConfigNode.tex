@@ -1,0 +1,222 @@
+\hypertarget{classtvm_1_1BuildConfigNode}{}\section{tvm\+:\+:Build\+Config\+Node Class Reference}
+\label{classtvm_1_1BuildConfigNode}\index{tvm\+::\+Build\+Config\+Node@{tvm\+::\+Build\+Config\+Node}}
+
+
+Container for build configuration options.  
+
+
+
+
+{\ttfamily \#include $<$target.\+h$>$}
+
+
+
+Inheritance diagram for tvm\+:\+:Build\+Config\+Node\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=285pt]{classtvm_1_1BuildConfigNode__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for tvm\+:\+:Build\+Config\+Node\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=285pt]{classtvm_1_1BuildConfigNode__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{classtvm_1_1BuildConfigNode_a5514cee791fd035addad8caf89b73bde}{Visit\+Attrs} (\hyperlink{classtvm_1_1AttrVisitor}{Attr\+Visitor} $\ast$v)
+\item 
+\hyperlink{classtvm_1_1BuildConfigNode_a03301ebe2141ae95117e8f15e411f199}{T\+V\+M\+\_\+\+D\+E\+C\+L\+A\+R\+E\+\_\+\+F\+I\+N\+A\+L\+\_\+\+O\+B\+J\+E\+C\+T\+\_\+\+I\+N\+FO} (\hyperlink{classtvm_1_1BuildConfigNode}{Build\+Config\+Node}, Object)
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+int \hyperlink{classtvm_1_1BuildConfigNode_a5e2c8350cb1a96b35bc383a23c1fd397}{data\+\_\+alignment} = -\/1
+\begin{DoxyCompactList}\small\item\em The data alignment to use when constructing buffers. If this is set to -\/1, then T\+VM\textquotesingle{}s internal default will be used. \end{DoxyCompactList}\item 
+int \hyperlink{classtvm_1_1BuildConfigNode_ab846adeceeb4f6b9b00410b2ce66a4a2}{offset\+\_\+factor} = 0
+\begin{DoxyCompactList}\small\item\em The offset factor to use when constructing buffers. If this is set to 0, then the offset field is not used. \end{DoxyCompactList}\item 
+int \hyperlink{classtvm_1_1BuildConfigNode_a86e454b099b0da8bf58b0116ac052241}{double\+\_\+buffer\+\_\+split\+\_\+loop} = 1
+\begin{DoxyCompactList}\small\item\em Splitting factor for loop splitting. If this is set to zero, no splitting will be done. Otherwise, a split will be done with this factor and the inner loop will be unrolled. \end{DoxyCompactList}\item 
+int \hyperlink{classtvm_1_1BuildConfigNode_a906d69e936afa01fa60a816acc66e095}{auto\+\_\+unroll\+\_\+max\+\_\+step} = 0
+\begin{DoxyCompactList}\small\item\em Threshold of number of steps in the loop to be automatically unrolled. \end{DoxyCompactList}\item 
+int \hyperlink{classtvm_1_1BuildConfigNode_ae1e3ea8be3710e8e91dcb691ea75c460}{auto\+\_\+unroll\+\_\+max\+\_\+depth} = 8
+\begin{DoxyCompactList}\small\item\em The maximum nested level of loops that can be automatically unrolled. \end{DoxyCompactList}\item 
+int \hyperlink{classtvm_1_1BuildConfigNode_ac2bd9a11784fb5908cff6760e80a2534}{auto\+\_\+unroll\+\_\+max\+\_\+extent} = 0
+\begin{DoxyCompactList}\small\item\em The maximum extent of loop that will be unrolled. \end{DoxyCompactList}\item 
+bool \hyperlink{classtvm_1_1BuildConfigNode_ab0e01cf0180f09e0e3f3184cc1c01228}{unroll\+\_\+explicit} = true
+\begin{DoxyCompactList}\small\item\em Whether to explicitly unroll the loop. If set to false, the unroll hint will be passed to the Code\+Gen phase. Set to true if Code\+Gen supports unroll pragma. \end{DoxyCompactList}\item 
+bool \hyperlink{classtvm_1_1BuildConfigNode_a12ea43d3ae7856db884409e74f4451b6}{restricted\+\_\+func} = true
+\begin{DoxyCompactList}\small\item\em Set to true if buffer arguments do not overlap. This enables more optimization. \end{DoxyCompactList}\item 
+bool \hyperlink{classtvm_1_1BuildConfigNode_ae3f6cb045e5b3d85bdd39224444cb94d}{detect\+\_\+global\+\_\+barrier} = false
+\begin{DoxyCompactList}\small\item\em Whether to detect global barrier. \end{DoxyCompactList}\item 
+bool \hyperlink{classtvm_1_1BuildConfigNode_a1ace63c2704b6bd7cb11b41775ed9697}{partition\+\_\+const\+\_\+loop} = false
+\begin{DoxyCompactList}\small\item\em Whether to partition const loop. \end{DoxyCompactList}\item 
+std\+::vector$<$ std\+::pair$<$ int, \hyperlink{classtvm_1_1runtime_1_1PackedFunc}{runtime\+::\+Packed\+Func} $>$ $>$ \hyperlink{classtvm_1_1BuildConfigNode_a766fcbcd64c2f2183c423e42f1bffb7f}{add\+\_\+lower\+\_\+pass}
+\begin{DoxyCompactList}\small\item\em Whether to dump the IR of each pass (only when building from python) \end{DoxyCompactList}\item 
+bool \hyperlink{classtvm_1_1BuildConfigNode_a63ece2a7d9dd4ffdfc2116ed9eee12a3}{dump\+\_\+pass\+\_\+ir} = false
+\begin{DoxyCompactList}\small\item\em Whether to dump the IR of each pass (only when building from python) \end{DoxyCompactList}\item 
+bool \hyperlink{classtvm_1_1BuildConfigNode_a01df805ead94051622f60457e916e9cc}{instrument\+\_\+bound\+\_\+checkers} = false
+\begin{DoxyCompactList}\small\item\em Whether to instrument loads and stores with check for out of the bounds. \end{DoxyCompactList}\item 
+bool \hyperlink{classtvm_1_1BuildConfigNode_a2a8903e47165c194c23b99873e8e7e5d}{disable\+\_\+select\+\_\+rewriting} = false
+\begin{DoxyCompactList}\small\item\em Whether to disable select rewriting. \end{DoxyCompactList}\item 
+bool \hyperlink{classtvm_1_1BuildConfigNode_ae8af930ce70dbe693f088293bf4fadce}{disable\+\_\+vectorize} = false
+\begin{DoxyCompactList}\small\item\em Whether to disable loop vectorization. \end{DoxyCompactList}\item 
+bool \hyperlink{classtvm_1_1BuildConfigNode_ab44ea7dd076903dafb212210ef5f71a6}{disable\+\_\+assert} = false
+\begin{DoxyCompactList}\small\item\em Whether to disable assert stmt generation. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static constexpr const char $\ast$ \hyperlink{classtvm_1_1BuildConfigNode_ab4090aa9a1db3a0ce85d1664e77f2a1c}{\+\_\+type\+\_\+key} = \char`\"{}Build\+Config\char`\"{}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Container for build configuration options. 
+
+\subsection{Member Function Documentation}
+\index{tvm\+::\+Build\+Config\+Node@{tvm\+::\+Build\+Config\+Node}!T\+V\+M\+\_\+\+D\+E\+C\+L\+A\+R\+E\+\_\+\+F\+I\+N\+A\+L\+\_\+\+O\+B\+J\+E\+C\+T\+\_\+\+I\+N\+FO@{T\+V\+M\+\_\+\+D\+E\+C\+L\+A\+R\+E\+\_\+\+F\+I\+N\+A\+L\+\_\+\+O\+B\+J\+E\+C\+T\+\_\+\+I\+N\+FO}}
+\index{T\+V\+M\+\_\+\+D\+E\+C\+L\+A\+R\+E\+\_\+\+F\+I\+N\+A\+L\+\_\+\+O\+B\+J\+E\+C\+T\+\_\+\+I\+N\+FO@{T\+V\+M\+\_\+\+D\+E\+C\+L\+A\+R\+E\+\_\+\+F\+I\+N\+A\+L\+\_\+\+O\+B\+J\+E\+C\+T\+\_\+\+I\+N\+FO}!tvm\+::\+Build\+Config\+Node@{tvm\+::\+Build\+Config\+Node}}
+\subsubsection[{\texorpdfstring{T\+V\+M\+\_\+\+D\+E\+C\+L\+A\+R\+E\+\_\+\+F\+I\+N\+A\+L\+\_\+\+O\+B\+J\+E\+C\+T\+\_\+\+I\+N\+F\+O(\+Build\+Config\+Node, Object)}{TVM_DECLARE_FINAL_OBJECT_INFO(BuildConfigNode, Object)}}]{\setlength{\rightskip}{0pt plus 5cm}tvm\+::\+Build\+Config\+Node\+::\+T\+V\+M\+\_\+\+D\+E\+C\+L\+A\+R\+E\+\_\+\+F\+I\+N\+A\+L\+\_\+\+O\+B\+J\+E\+C\+T\+\_\+\+I\+N\+FO (
+\begin{DoxyParamCaption}
+\item[{{\bf Build\+Config\+Node}}]{, }
+\item[{Object}]{}
+\end{DoxyParamCaption}
+)}\hypertarget{classtvm_1_1BuildConfigNode_a03301ebe2141ae95117e8f15e411f199}{}\label{classtvm_1_1BuildConfigNode_a03301ebe2141ae95117e8f15e411f199}
+\index{tvm\+::\+Build\+Config\+Node@{tvm\+::\+Build\+Config\+Node}!Visit\+Attrs@{Visit\+Attrs}}
+\index{Visit\+Attrs@{Visit\+Attrs}!tvm\+::\+Build\+Config\+Node@{tvm\+::\+Build\+Config\+Node}}
+\subsubsection[{\texorpdfstring{Visit\+Attrs(\+Attr\+Visitor $\ast$v)}{VisitAttrs(AttrVisitor *v)}}]{\setlength{\rightskip}{0pt plus 5cm}void tvm\+::\+Build\+Config\+Node\+::\+Visit\+Attrs (
+\begin{DoxyParamCaption}
+\item[{{\bf Attr\+Visitor} $\ast$}]{v}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classtvm_1_1BuildConfigNode_a5514cee791fd035addad8caf89b73bde}{}\label{classtvm_1_1BuildConfigNode_a5514cee791fd035addad8caf89b73bde}
+
+
+\subsection{Member Data Documentation}
+\index{tvm\+::\+Build\+Config\+Node@{tvm\+::\+Build\+Config\+Node}!\+\_\+type\+\_\+key@{\+\_\+type\+\_\+key}}
+\index{\+\_\+type\+\_\+key@{\+\_\+type\+\_\+key}!tvm\+::\+Build\+Config\+Node@{tvm\+::\+Build\+Config\+Node}}
+\subsubsection[{\texorpdfstring{\+\_\+type\+\_\+key}{_type_key}}]{\setlength{\rightskip}{0pt plus 5cm}constexpr const char$\ast$ tvm\+::\+Build\+Config\+Node\+::\+\_\+type\+\_\+key = \char`\"{}Build\+Config\char`\"{}\hspace{0.3cm}{\ttfamily [static]}}\hypertarget{classtvm_1_1BuildConfigNode_ab4090aa9a1db3a0ce85d1664e77f2a1c}{}\label{classtvm_1_1BuildConfigNode_ab4090aa9a1db3a0ce85d1664e77f2a1c}
+\index{tvm\+::\+Build\+Config\+Node@{tvm\+::\+Build\+Config\+Node}!add\+\_\+lower\+\_\+pass@{add\+\_\+lower\+\_\+pass}}
+\index{add\+\_\+lower\+\_\+pass@{add\+\_\+lower\+\_\+pass}!tvm\+::\+Build\+Config\+Node@{tvm\+::\+Build\+Config\+Node}}
+\subsubsection[{\texorpdfstring{add\+\_\+lower\+\_\+pass}{add_lower_pass}}]{\setlength{\rightskip}{0pt plus 5cm}std\+::vector$<$ std\+::pair$<$int, {\bf runtime\+::\+Packed\+Func}$>$ $>$ tvm\+::\+Build\+Config\+Node\+::add\+\_\+lower\+\_\+pass}\hypertarget{classtvm_1_1BuildConfigNode_a766fcbcd64c2f2183c423e42f1bffb7f}{}\label{classtvm_1_1BuildConfigNode_a766fcbcd64c2f2183c423e42f1bffb7f}
+
+
+Whether to dump the IR of each pass (only when building from python) 
+
+\index{tvm\+::\+Build\+Config\+Node@{tvm\+::\+Build\+Config\+Node}!auto\+\_\+unroll\+\_\+max\+\_\+depth@{auto\+\_\+unroll\+\_\+max\+\_\+depth}}
+\index{auto\+\_\+unroll\+\_\+max\+\_\+depth@{auto\+\_\+unroll\+\_\+max\+\_\+depth}!tvm\+::\+Build\+Config\+Node@{tvm\+::\+Build\+Config\+Node}}
+\subsubsection[{\texorpdfstring{auto\+\_\+unroll\+\_\+max\+\_\+depth}{auto_unroll_max_depth}}]{\setlength{\rightskip}{0pt plus 5cm}int tvm\+::\+Build\+Config\+Node\+::auto\+\_\+unroll\+\_\+max\+\_\+depth = 8}\hypertarget{classtvm_1_1BuildConfigNode_ae1e3ea8be3710e8e91dcb691ea75c460}{}\label{classtvm_1_1BuildConfigNode_ae1e3ea8be3710e8e91dcb691ea75c460}
+
+
+The maximum nested level of loops that can be automatically unrolled. 
+
+\index{tvm\+::\+Build\+Config\+Node@{tvm\+::\+Build\+Config\+Node}!auto\+\_\+unroll\+\_\+max\+\_\+extent@{auto\+\_\+unroll\+\_\+max\+\_\+extent}}
+\index{auto\+\_\+unroll\+\_\+max\+\_\+extent@{auto\+\_\+unroll\+\_\+max\+\_\+extent}!tvm\+::\+Build\+Config\+Node@{tvm\+::\+Build\+Config\+Node}}
+\subsubsection[{\texorpdfstring{auto\+\_\+unroll\+\_\+max\+\_\+extent}{auto_unroll_max_extent}}]{\setlength{\rightskip}{0pt plus 5cm}int tvm\+::\+Build\+Config\+Node\+::auto\+\_\+unroll\+\_\+max\+\_\+extent = 0}\hypertarget{classtvm_1_1BuildConfigNode_ac2bd9a11784fb5908cff6760e80a2534}{}\label{classtvm_1_1BuildConfigNode_ac2bd9a11784fb5908cff6760e80a2534}
+
+
+The maximum extent of loop that will be unrolled. 
+
+\index{tvm\+::\+Build\+Config\+Node@{tvm\+::\+Build\+Config\+Node}!auto\+\_\+unroll\+\_\+max\+\_\+step@{auto\+\_\+unroll\+\_\+max\+\_\+step}}
+\index{auto\+\_\+unroll\+\_\+max\+\_\+step@{auto\+\_\+unroll\+\_\+max\+\_\+step}!tvm\+::\+Build\+Config\+Node@{tvm\+::\+Build\+Config\+Node}}
+\subsubsection[{\texorpdfstring{auto\+\_\+unroll\+\_\+max\+\_\+step}{auto_unroll_max_step}}]{\setlength{\rightskip}{0pt plus 5cm}int tvm\+::\+Build\+Config\+Node\+::auto\+\_\+unroll\+\_\+max\+\_\+step = 0}\hypertarget{classtvm_1_1BuildConfigNode_a906d69e936afa01fa60a816acc66e095}{}\label{classtvm_1_1BuildConfigNode_a906d69e936afa01fa60a816acc66e095}
+
+
+Threshold of number of steps in the loop to be automatically unrolled. 
+
+\index{tvm\+::\+Build\+Config\+Node@{tvm\+::\+Build\+Config\+Node}!data\+\_\+alignment@{data\+\_\+alignment}}
+\index{data\+\_\+alignment@{data\+\_\+alignment}!tvm\+::\+Build\+Config\+Node@{tvm\+::\+Build\+Config\+Node}}
+\subsubsection[{\texorpdfstring{data\+\_\+alignment}{data_alignment}}]{\setlength{\rightskip}{0pt plus 5cm}int tvm\+::\+Build\+Config\+Node\+::data\+\_\+alignment = -\/1}\hypertarget{classtvm_1_1BuildConfigNode_a5e2c8350cb1a96b35bc383a23c1fd397}{}\label{classtvm_1_1BuildConfigNode_a5e2c8350cb1a96b35bc383a23c1fd397}
+
+
+The data alignment to use when constructing buffers. If this is set to -\/1, then T\+VM\textquotesingle{}s internal default will be used. 
+
+\index{tvm\+::\+Build\+Config\+Node@{tvm\+::\+Build\+Config\+Node}!detect\+\_\+global\+\_\+barrier@{detect\+\_\+global\+\_\+barrier}}
+\index{detect\+\_\+global\+\_\+barrier@{detect\+\_\+global\+\_\+barrier}!tvm\+::\+Build\+Config\+Node@{tvm\+::\+Build\+Config\+Node}}
+\subsubsection[{\texorpdfstring{detect\+\_\+global\+\_\+barrier}{detect_global_barrier}}]{\setlength{\rightskip}{0pt plus 5cm}bool tvm\+::\+Build\+Config\+Node\+::detect\+\_\+global\+\_\+barrier = false}\hypertarget{classtvm_1_1BuildConfigNode_ae3f6cb045e5b3d85bdd39224444cb94d}{}\label{classtvm_1_1BuildConfigNode_ae3f6cb045e5b3d85bdd39224444cb94d}
+
+
+Whether to detect global barrier. 
+
+\index{tvm\+::\+Build\+Config\+Node@{tvm\+::\+Build\+Config\+Node}!disable\+\_\+assert@{disable\+\_\+assert}}
+\index{disable\+\_\+assert@{disable\+\_\+assert}!tvm\+::\+Build\+Config\+Node@{tvm\+::\+Build\+Config\+Node}}
+\subsubsection[{\texorpdfstring{disable\+\_\+assert}{disable_assert}}]{\setlength{\rightskip}{0pt plus 5cm}bool tvm\+::\+Build\+Config\+Node\+::disable\+\_\+assert = false}\hypertarget{classtvm_1_1BuildConfigNode_ab44ea7dd076903dafb212210ef5f71a6}{}\label{classtvm_1_1BuildConfigNode_ab44ea7dd076903dafb212210ef5f71a6}
+
+
+Whether to disable assert stmt generation. 
+
+\index{tvm\+::\+Build\+Config\+Node@{tvm\+::\+Build\+Config\+Node}!disable\+\_\+select\+\_\+rewriting@{disable\+\_\+select\+\_\+rewriting}}
+\index{disable\+\_\+select\+\_\+rewriting@{disable\+\_\+select\+\_\+rewriting}!tvm\+::\+Build\+Config\+Node@{tvm\+::\+Build\+Config\+Node}}
+\subsubsection[{\texorpdfstring{disable\+\_\+select\+\_\+rewriting}{disable_select_rewriting}}]{\setlength{\rightskip}{0pt plus 5cm}bool tvm\+::\+Build\+Config\+Node\+::disable\+\_\+select\+\_\+rewriting = false}\hypertarget{classtvm_1_1BuildConfigNode_a2a8903e47165c194c23b99873e8e7e5d}{}\label{classtvm_1_1BuildConfigNode_a2a8903e47165c194c23b99873e8e7e5d}
+
+
+Whether to disable select rewriting. 
+
+\index{tvm\+::\+Build\+Config\+Node@{tvm\+::\+Build\+Config\+Node}!disable\+\_\+vectorize@{disable\+\_\+vectorize}}
+\index{disable\+\_\+vectorize@{disable\+\_\+vectorize}!tvm\+::\+Build\+Config\+Node@{tvm\+::\+Build\+Config\+Node}}
+\subsubsection[{\texorpdfstring{disable\+\_\+vectorize}{disable_vectorize}}]{\setlength{\rightskip}{0pt plus 5cm}bool tvm\+::\+Build\+Config\+Node\+::disable\+\_\+vectorize = false}\hypertarget{classtvm_1_1BuildConfigNode_ae8af930ce70dbe693f088293bf4fadce}{}\label{classtvm_1_1BuildConfigNode_ae8af930ce70dbe693f088293bf4fadce}
+
+
+Whether to disable loop vectorization. 
+
+\index{tvm\+::\+Build\+Config\+Node@{tvm\+::\+Build\+Config\+Node}!double\+\_\+buffer\+\_\+split\+\_\+loop@{double\+\_\+buffer\+\_\+split\+\_\+loop}}
+\index{double\+\_\+buffer\+\_\+split\+\_\+loop@{double\+\_\+buffer\+\_\+split\+\_\+loop}!tvm\+::\+Build\+Config\+Node@{tvm\+::\+Build\+Config\+Node}}
+\subsubsection[{\texorpdfstring{double\+\_\+buffer\+\_\+split\+\_\+loop}{double_buffer_split_loop}}]{\setlength{\rightskip}{0pt plus 5cm}int tvm\+::\+Build\+Config\+Node\+::double\+\_\+buffer\+\_\+split\+\_\+loop = 1}\hypertarget{classtvm_1_1BuildConfigNode_a86e454b099b0da8bf58b0116ac052241}{}\label{classtvm_1_1BuildConfigNode_a86e454b099b0da8bf58b0116ac052241}
+
+
+Splitting factor for loop splitting. If this is set to zero, no splitting will be done. Otherwise, a split will be done with this factor and the inner loop will be unrolled. 
+
+\index{tvm\+::\+Build\+Config\+Node@{tvm\+::\+Build\+Config\+Node}!dump\+\_\+pass\+\_\+ir@{dump\+\_\+pass\+\_\+ir}}
+\index{dump\+\_\+pass\+\_\+ir@{dump\+\_\+pass\+\_\+ir}!tvm\+::\+Build\+Config\+Node@{tvm\+::\+Build\+Config\+Node}}
+\subsubsection[{\texorpdfstring{dump\+\_\+pass\+\_\+ir}{dump_pass_ir}}]{\setlength{\rightskip}{0pt plus 5cm}bool tvm\+::\+Build\+Config\+Node\+::dump\+\_\+pass\+\_\+ir = false}\hypertarget{classtvm_1_1BuildConfigNode_a63ece2a7d9dd4ffdfc2116ed9eee12a3}{}\label{classtvm_1_1BuildConfigNode_a63ece2a7d9dd4ffdfc2116ed9eee12a3}
+
+
+Whether to dump the IR of each pass (only when building from python) 
+
+\index{tvm\+::\+Build\+Config\+Node@{tvm\+::\+Build\+Config\+Node}!instrument\+\_\+bound\+\_\+checkers@{instrument\+\_\+bound\+\_\+checkers}}
+\index{instrument\+\_\+bound\+\_\+checkers@{instrument\+\_\+bound\+\_\+checkers}!tvm\+::\+Build\+Config\+Node@{tvm\+::\+Build\+Config\+Node}}
+\subsubsection[{\texorpdfstring{instrument\+\_\+bound\+\_\+checkers}{instrument_bound_checkers}}]{\setlength{\rightskip}{0pt plus 5cm}bool tvm\+::\+Build\+Config\+Node\+::instrument\+\_\+bound\+\_\+checkers = false}\hypertarget{classtvm_1_1BuildConfigNode_a01df805ead94051622f60457e916e9cc}{}\label{classtvm_1_1BuildConfigNode_a01df805ead94051622f60457e916e9cc}
+
+
+Whether to instrument loads and stores with check for out of the bounds. 
+
+\index{tvm\+::\+Build\+Config\+Node@{tvm\+::\+Build\+Config\+Node}!offset\+\_\+factor@{offset\+\_\+factor}}
+\index{offset\+\_\+factor@{offset\+\_\+factor}!tvm\+::\+Build\+Config\+Node@{tvm\+::\+Build\+Config\+Node}}
+\subsubsection[{\texorpdfstring{offset\+\_\+factor}{offset_factor}}]{\setlength{\rightskip}{0pt plus 5cm}int tvm\+::\+Build\+Config\+Node\+::offset\+\_\+factor = 0}\hypertarget{classtvm_1_1BuildConfigNode_ab846adeceeb4f6b9b00410b2ce66a4a2}{}\label{classtvm_1_1BuildConfigNode_ab846adeceeb4f6b9b00410b2ce66a4a2}
+
+
+The offset factor to use when constructing buffers. If this is set to 0, then the offset field is not used. 
+
+\index{tvm\+::\+Build\+Config\+Node@{tvm\+::\+Build\+Config\+Node}!partition\+\_\+const\+\_\+loop@{partition\+\_\+const\+\_\+loop}}
+\index{partition\+\_\+const\+\_\+loop@{partition\+\_\+const\+\_\+loop}!tvm\+::\+Build\+Config\+Node@{tvm\+::\+Build\+Config\+Node}}
+\subsubsection[{\texorpdfstring{partition\+\_\+const\+\_\+loop}{partition_const_loop}}]{\setlength{\rightskip}{0pt plus 5cm}bool tvm\+::\+Build\+Config\+Node\+::partition\+\_\+const\+\_\+loop = false}\hypertarget{classtvm_1_1BuildConfigNode_a1ace63c2704b6bd7cb11b41775ed9697}{}\label{classtvm_1_1BuildConfigNode_a1ace63c2704b6bd7cb11b41775ed9697}
+
+
+Whether to partition const loop. 
+
+\index{tvm\+::\+Build\+Config\+Node@{tvm\+::\+Build\+Config\+Node}!restricted\+\_\+func@{restricted\+\_\+func}}
+\index{restricted\+\_\+func@{restricted\+\_\+func}!tvm\+::\+Build\+Config\+Node@{tvm\+::\+Build\+Config\+Node}}
+\subsubsection[{\texorpdfstring{restricted\+\_\+func}{restricted_func}}]{\setlength{\rightskip}{0pt plus 5cm}bool tvm\+::\+Build\+Config\+Node\+::restricted\+\_\+func = true}\hypertarget{classtvm_1_1BuildConfigNode_a12ea43d3ae7856db884409e74f4451b6}{}\label{classtvm_1_1BuildConfigNode_a12ea43d3ae7856db884409e74f4451b6}
+
+
+Set to true if buffer arguments do not overlap. This enables more optimization. 
+
+\index{tvm\+::\+Build\+Config\+Node@{tvm\+::\+Build\+Config\+Node}!unroll\+\_\+explicit@{unroll\+\_\+explicit}}
+\index{unroll\+\_\+explicit@{unroll\+\_\+explicit}!tvm\+::\+Build\+Config\+Node@{tvm\+::\+Build\+Config\+Node}}
+\subsubsection[{\texorpdfstring{unroll\+\_\+explicit}{unroll_explicit}}]{\setlength{\rightskip}{0pt plus 5cm}bool tvm\+::\+Build\+Config\+Node\+::unroll\+\_\+explicit = true}\hypertarget{classtvm_1_1BuildConfigNode_ab0e01cf0180f09e0e3f3184cc1c01228}{}\label{classtvm_1_1BuildConfigNode_ab0e01cf0180f09e0e3f3184cc1c01228}
+
+
+Whether to explicitly unroll the loop. If set to false, the unroll hint will be passed to the Code\+Gen phase. Set to true if Code\+Gen supports unroll pragma. 
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+include/tvm/target/\hyperlink{target_8h}{target.\+h}\end{DoxyCompactItemize}

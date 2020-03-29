@@ -1,0 +1,107 @@
+\hypertarget{classtvm_1_1relay_1_1PatternConstructorNode}{}\section{tvm\+:\+:relay\+:\+:Pattern\+Constructor\+Node Class Reference}
+\label{classtvm_1_1relay_1_1PatternConstructorNode}\index{tvm\+::relay\+::\+Pattern\+Constructor\+Node@{tvm\+::relay\+::\+Pattern\+Constructor\+Node}}
+
+
+\hyperlink{classtvm_1_1relay_1_1PatternVar}{Pattern\+Var} container node.  
+
+
+
+
+{\ttfamily \#include $<$adt.\+h$>$}
+
+
+
+Inheritance diagram for tvm\+:\+:relay\+:\+:Pattern\+Constructor\+Node\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=285pt]{classtvm_1_1relay_1_1PatternConstructorNode__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for tvm\+:\+:relay\+:\+:Pattern\+Constructor\+Node\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classtvm_1_1relay_1_1PatternConstructorNode__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{classtvm_1_1relay_1_1PatternConstructorNode_a8c5b04714541179bb05093ee5d5e13d5}{Visit\+Attrs} (\hyperlink{classtvm_1_1AttrVisitor}{tvm\+::\+Attr\+Visitor} $\ast$v)
+\item 
+bool \hyperlink{classtvm_1_1relay_1_1PatternConstructorNode_a5448348a780e5052a2d4ddbe0e9e5e10}{S\+Equal\+Reduce} (const \hyperlink{classtvm_1_1relay_1_1PatternConstructorNode}{Pattern\+Constructor\+Node} $\ast$other, \hyperlink{classtvm_1_1SEqualReducer}{S\+Equal\+Reducer} equal) const 
+\item 
+void \hyperlink{classtvm_1_1relay_1_1PatternConstructorNode_a530768aaafb43062bd756d96670c3d47}{S\+Hash\+Reduce} (\hyperlink{classtvm_1_1SHashReducer}{S\+Hash\+Reducer} hash\+\_\+reduce) const 
+\item 
+\hyperlink{classtvm_1_1relay_1_1PatternConstructorNode_a18b0c68de7b91821280b591b79086a39}{T\+V\+M\+\_\+\+D\+E\+C\+L\+A\+R\+E\+\_\+\+F\+I\+N\+A\+L\+\_\+\+O\+B\+J\+E\+C\+T\+\_\+\+I\+N\+FO} (\hyperlink{classtvm_1_1relay_1_1PatternConstructorNode}{Pattern\+Constructor\+Node}, \hyperlink{classtvm_1_1relay_1_1PatternNode}{Pattern\+Node})
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{namespacetvm_1_1relay_aec85bf097deda59bd22e88475c9165e9}{Constructor} \hyperlink{classtvm_1_1relay_1_1PatternConstructorNode_a4ad38292de4758a711a01982ebf78f54}{constructor}
+\item 
+\hyperlink{classtvm_1_1Array}{tvm\+::\+Array}$<$ \hyperlink{classtvm_1_1relay_1_1Pattern}{Pattern} $>$ \hyperlink{classtvm_1_1relay_1_1PatternConstructorNode_a0a09dff6a8e84eee02f6af3b2f523894}{patterns}
+\end{DoxyCompactItemize}
+\subsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static constexpr const char $\ast$ \hyperlink{classtvm_1_1relay_1_1PatternConstructorNode_ac28bdec2b8ce1c54567369eb717acc42}{\+\_\+type\+\_\+key} = \char`\"{}relay.\+Pattern\+Constructor\char`\"{}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\hyperlink{classtvm_1_1relay_1_1PatternVar}{Pattern\+Var} container node. 
+
+\subsection{Member Function Documentation}
+\index{tvm\+::relay\+::\+Pattern\+Constructor\+Node@{tvm\+::relay\+::\+Pattern\+Constructor\+Node}!S\+Equal\+Reduce@{S\+Equal\+Reduce}}
+\index{S\+Equal\+Reduce@{S\+Equal\+Reduce}!tvm\+::relay\+::\+Pattern\+Constructor\+Node@{tvm\+::relay\+::\+Pattern\+Constructor\+Node}}
+\subsubsection[{\texorpdfstring{S\+Equal\+Reduce(const Pattern\+Constructor\+Node $\ast$other, S\+Equal\+Reducer equal) const }{SEqualReduce(const PatternConstructorNode *other, SEqualReducer equal) const }}]{\setlength{\rightskip}{0pt plus 5cm}bool tvm\+::relay\+::\+Pattern\+Constructor\+Node\+::\+S\+Equal\+Reduce (
+\begin{DoxyParamCaption}
+\item[{const {\bf Pattern\+Constructor\+Node} $\ast$}]{other, }
+\item[{{\bf S\+Equal\+Reducer}}]{equal}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classtvm_1_1relay_1_1PatternConstructorNode_a5448348a780e5052a2d4ddbe0e9e5e10}{}\label{classtvm_1_1relay_1_1PatternConstructorNode_a5448348a780e5052a2d4ddbe0e9e5e10}
+\index{tvm\+::relay\+::\+Pattern\+Constructor\+Node@{tvm\+::relay\+::\+Pattern\+Constructor\+Node}!S\+Hash\+Reduce@{S\+Hash\+Reduce}}
+\index{S\+Hash\+Reduce@{S\+Hash\+Reduce}!tvm\+::relay\+::\+Pattern\+Constructor\+Node@{tvm\+::relay\+::\+Pattern\+Constructor\+Node}}
+\subsubsection[{\texorpdfstring{S\+Hash\+Reduce(\+S\+Hash\+Reducer hash\+\_\+reduce) const }{SHashReduce(SHashReducer hash_reduce) const }}]{\setlength{\rightskip}{0pt plus 5cm}void tvm\+::relay\+::\+Pattern\+Constructor\+Node\+::\+S\+Hash\+Reduce (
+\begin{DoxyParamCaption}
+\item[{{\bf S\+Hash\+Reducer}}]{hash\+\_\+reduce}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classtvm_1_1relay_1_1PatternConstructorNode_a530768aaafb43062bd756d96670c3d47}{}\label{classtvm_1_1relay_1_1PatternConstructorNode_a530768aaafb43062bd756d96670c3d47}
+\index{tvm\+::relay\+::\+Pattern\+Constructor\+Node@{tvm\+::relay\+::\+Pattern\+Constructor\+Node}!T\+V\+M\+\_\+\+D\+E\+C\+L\+A\+R\+E\+\_\+\+F\+I\+N\+A\+L\+\_\+\+O\+B\+J\+E\+C\+T\+\_\+\+I\+N\+FO@{T\+V\+M\+\_\+\+D\+E\+C\+L\+A\+R\+E\+\_\+\+F\+I\+N\+A\+L\+\_\+\+O\+B\+J\+E\+C\+T\+\_\+\+I\+N\+FO}}
+\index{T\+V\+M\+\_\+\+D\+E\+C\+L\+A\+R\+E\+\_\+\+F\+I\+N\+A\+L\+\_\+\+O\+B\+J\+E\+C\+T\+\_\+\+I\+N\+FO@{T\+V\+M\+\_\+\+D\+E\+C\+L\+A\+R\+E\+\_\+\+F\+I\+N\+A\+L\+\_\+\+O\+B\+J\+E\+C\+T\+\_\+\+I\+N\+FO}!tvm\+::relay\+::\+Pattern\+Constructor\+Node@{tvm\+::relay\+::\+Pattern\+Constructor\+Node}}
+\subsubsection[{\texorpdfstring{T\+V\+M\+\_\+\+D\+E\+C\+L\+A\+R\+E\+\_\+\+F\+I\+N\+A\+L\+\_\+\+O\+B\+J\+E\+C\+T\+\_\+\+I\+N\+F\+O(\+Pattern\+Constructor\+Node, Pattern\+Node)}{TVM_DECLARE_FINAL_OBJECT_INFO(PatternConstructorNode, PatternNode)}}]{\setlength{\rightskip}{0pt plus 5cm}tvm\+::relay\+::\+Pattern\+Constructor\+Node\+::\+T\+V\+M\+\_\+\+D\+E\+C\+L\+A\+R\+E\+\_\+\+F\+I\+N\+A\+L\+\_\+\+O\+B\+J\+E\+C\+T\+\_\+\+I\+N\+FO (
+\begin{DoxyParamCaption}
+\item[{{\bf Pattern\+Constructor\+Node}}]{, }
+\item[{{\bf Pattern\+Node}}]{}
+\end{DoxyParamCaption}
+)}\hypertarget{classtvm_1_1relay_1_1PatternConstructorNode_a18b0c68de7b91821280b591b79086a39}{}\label{classtvm_1_1relay_1_1PatternConstructorNode_a18b0c68de7b91821280b591b79086a39}
+\index{tvm\+::relay\+::\+Pattern\+Constructor\+Node@{tvm\+::relay\+::\+Pattern\+Constructor\+Node}!Visit\+Attrs@{Visit\+Attrs}}
+\index{Visit\+Attrs@{Visit\+Attrs}!tvm\+::relay\+::\+Pattern\+Constructor\+Node@{tvm\+::relay\+::\+Pattern\+Constructor\+Node}}
+\subsubsection[{\texorpdfstring{Visit\+Attrs(tvm\+::\+Attr\+Visitor $\ast$v)}{VisitAttrs(tvm::AttrVisitor *v)}}]{\setlength{\rightskip}{0pt plus 5cm}void tvm\+::relay\+::\+Pattern\+Constructor\+Node\+::\+Visit\+Attrs (
+\begin{DoxyParamCaption}
+\item[{{\bf tvm\+::\+Attr\+Visitor} $\ast$}]{v}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classtvm_1_1relay_1_1PatternConstructorNode_a8c5b04714541179bb05093ee5d5e13d5}{}\label{classtvm_1_1relay_1_1PatternConstructorNode_a8c5b04714541179bb05093ee5d5e13d5}
+
+
+\subsection{Member Data Documentation}
+\index{tvm\+::relay\+::\+Pattern\+Constructor\+Node@{tvm\+::relay\+::\+Pattern\+Constructor\+Node}!\+\_\+type\+\_\+key@{\+\_\+type\+\_\+key}}
+\index{\+\_\+type\+\_\+key@{\+\_\+type\+\_\+key}!tvm\+::relay\+::\+Pattern\+Constructor\+Node@{tvm\+::relay\+::\+Pattern\+Constructor\+Node}}
+\subsubsection[{\texorpdfstring{\+\_\+type\+\_\+key}{_type_key}}]{\setlength{\rightskip}{0pt plus 5cm}constexpr const char$\ast$ tvm\+::relay\+::\+Pattern\+Constructor\+Node\+::\+\_\+type\+\_\+key = \char`\"{}relay.\+Pattern\+Constructor\char`\"{}\hspace{0.3cm}{\ttfamily [static]}}\hypertarget{classtvm_1_1relay_1_1PatternConstructorNode_ac28bdec2b8ce1c54567369eb717acc42}{}\label{classtvm_1_1relay_1_1PatternConstructorNode_ac28bdec2b8ce1c54567369eb717acc42}
+\index{tvm\+::relay\+::\+Pattern\+Constructor\+Node@{tvm\+::relay\+::\+Pattern\+Constructor\+Node}!constructor@{constructor}}
+\index{constructor@{constructor}!tvm\+::relay\+::\+Pattern\+Constructor\+Node@{tvm\+::relay\+::\+Pattern\+Constructor\+Node}}
+\subsubsection[{\texorpdfstring{constructor}{constructor}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Constructor} tvm\+::relay\+::\+Pattern\+Constructor\+Node\+::constructor}\hypertarget{classtvm_1_1relay_1_1PatternConstructorNode_a4ad38292de4758a711a01982ebf78f54}{}\label{classtvm_1_1relay_1_1PatternConstructorNode_a4ad38292de4758a711a01982ebf78f54}
+\hyperlink{classtvm_1_1Constructor}{Constructor} matched by the pattern. \index{tvm\+::relay\+::\+Pattern\+Constructor\+Node@{tvm\+::relay\+::\+Pattern\+Constructor\+Node}!patterns@{patterns}}
+\index{patterns@{patterns}!tvm\+::relay\+::\+Pattern\+Constructor\+Node@{tvm\+::relay\+::\+Pattern\+Constructor\+Node}}
+\subsubsection[{\texorpdfstring{patterns}{patterns}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf tvm\+::\+Array}$<${\bf Pattern}$>$ tvm\+::relay\+::\+Pattern\+Constructor\+Node\+::patterns}\hypertarget{classtvm_1_1relay_1_1PatternConstructorNode_a0a09dff6a8e84eee02f6af3b2f523894}{}\label{classtvm_1_1relay_1_1PatternConstructorNode_a0a09dff6a8e84eee02f6af3b2f523894}
+Sub-\/patterns to match against each input to the constructor. 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+include/tvm/relay/\hyperlink{relay_2adt_8h}{adt.\+h}\end{DoxyCompactItemize}

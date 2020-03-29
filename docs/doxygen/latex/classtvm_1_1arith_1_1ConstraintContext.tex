@@ -1,0 +1,53 @@
+\hypertarget{classtvm_1_1arith_1_1ConstraintContext}{}\section{tvm\+:\+:arith\+:\+:Constraint\+Context Class Reference}
+\label{classtvm_1_1arith_1_1ConstraintContext}\index{tvm\+::arith\+::\+Constraint\+Context@{tvm\+::arith\+::\+Constraint\+Context}}
+
+
+Constraint context.  
+
+
+
+
+{\ttfamily \#include $<$analyzer.\+h$>$}
+
+
+
+Collaboration diagram for tvm\+:\+:arith\+:\+:Constraint\+Context\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=236pt]{classtvm_1_1arith_1_1ConstraintContext__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+class \hyperlink{classtvm_1_1arith_1_1ConstraintContext_acf0da349a64c42ae689d9459ae09f0e3}{With$<$ Constraint\+Context $>$}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Constraint context. 
+
+
+\begin{DoxyCode}
+Var(\textcolor{stringliteral}{"x"});
+arith::Analyzer analyzer;
+\{
+  With<arith::ConstraintContext> scope(&analyzer, x % 3 == 0);
+  CHECK\_EQ(analyzer.modular\_set(x)->coeff, 3);
+\}
+\textcolor{comment}{// constraint no longer in effect.}
+CHECK\_NE(analyzer.modular\_set(x)->coeff, 3);
+\end{DoxyCode}
+ 
+
+\subsection{Friends And Related Function Documentation}
+\index{tvm\+::arith\+::\+Constraint\+Context@{tvm\+::arith\+::\+Constraint\+Context}!With$<$ Constraint\+Context $>$@{With$<$ Constraint\+Context $>$}}
+\index{With$<$ Constraint\+Context $>$@{With$<$ Constraint\+Context $>$}!tvm\+::arith\+::\+Constraint\+Context@{tvm\+::arith\+::\+Constraint\+Context}}
+\subsubsection[{\texorpdfstring{With$<$ Constraint\+Context $>$}{With< ConstraintContext >}}]{\setlength{\rightskip}{0pt plus 5cm}friend class {\bf With}$<$ {\bf Constraint\+Context} $>$\hspace{0.3cm}{\ttfamily [friend]}}\hypertarget{classtvm_1_1arith_1_1ConstraintContext_acf0da349a64c42ae689d9459ae09f0e3}{}\label{classtvm_1_1arith_1_1ConstraintContext_acf0da349a64c42ae689d9459ae09f0e3}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+include/tvm/arith/\hyperlink{analyzer_8h}{analyzer.\+h}\end{DoxyCompactItemize}

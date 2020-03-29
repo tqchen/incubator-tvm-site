@@ -1,0 +1,684 @@
+\hypertarget{classtvm_1_1te_1_1Stage}{}\section{tvm\+:\+:te\+:\+:Stage Class Reference}
+\label{classtvm_1_1te_1_1Stage}\index{tvm\+::te\+::\+Stage@{tvm\+::te\+::\+Stage}}
+
+
+\hyperlink{classtvm_1_1te_1_1Stage}{Stage}, contains scheduling for a stage of computation.  
+
+
+
+
+{\ttfamily \#include $<$schedule.\+h$>$}
+
+
+
+Inheritance diagram for tvm\+:\+:te\+:\+:Stage\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=188pt]{classtvm_1_1te_1_1Stage__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for tvm\+:\+:te\+:\+:Stage\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=188pt]{classtvm_1_1te_1_1Stage__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+using \hyperlink{classtvm_1_1te_1_1Stage_abf9765aa226d6ec0930cb202a392e041}{Container\+Type} = \hyperlink{classtvm_1_1te_1_1StageNode}{Stage\+Node}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classtvm_1_1te_1_1Stage_afec82602b9321c489b88632a005335f8}{Stage} ()
+\item 
+\hyperlink{classtvm_1_1te_1_1Stage_aa6ace38b6312e42aaf9389c8749ae0a4}{Stage} (Object\+Ptr$<$ Object $>$ n)
+\item 
+\hyperlink{classtvm_1_1te_1_1Stage_a1ecdc9a000be62c9cc26a96d4c33e36e}{Stage} (\hyperlink{classtvm_1_1te_1_1Operation}{Operation} op)
+\begin{DoxyCompactList}\small\item\em create a new schedule for op. \end{DoxyCompactList}\item 
+const \hyperlink{classtvm_1_1te_1_1StageNode}{Stage\+Node} $\ast$ \hyperlink{classtvm_1_1te_1_1Stage_adb81d41e9f0722f4b49cf1175814cc37}{operator-\/$>$} () const 
+\begin{DoxyCompactList}\small\item\em access the internal node container \end{DoxyCompactList}\item 
+\hyperlink{classtvm_1_1te_1_1StageNode}{Stage\+Node} $\ast$ \hyperlink{classtvm_1_1te_1_1Stage_a427ef4fef2edf15624be2c87bdad9505}{operator-\/$>$} ()
+\begin{DoxyCompactList}\small\item\em access the internal node container \end{DoxyCompactList}\item 
+\hyperlink{classtvm_1_1te_1_1Stage}{Stage} \& \hyperlink{classtvm_1_1te_1_1Stage_a0dc42f190125f0cf63e8d749ae66af7c}{set\+\_\+scope} (std\+::string scope)
+\begin{DoxyCompactList}\small\item\em set the memory scope of the stage \end{DoxyCompactList}\item 
+\hyperlink{classtvm_1_1te_1_1Stage}{Stage} \& \hyperlink{classtvm_1_1te_1_1Stage_a071545484de7a894c01ccf0e77183730}{compute\+\_\+at} (\hyperlink{classtvm_1_1te_1_1Stage}{Stage} parent, \hyperlink{classtvm_1_1tir_1_1IterVar}{Iter\+Var} scope)
+\begin{DoxyCompactList}\small\item\em specify the schedule to be computed at the parent schedule\textquotesingle{}s scope. \end{DoxyCompactList}\item 
+\hyperlink{classtvm_1_1te_1_1Stage}{Stage} \& \hyperlink{classtvm_1_1te_1_1Stage_a1c58b35e37561739440b322c29d30c3b}{compute\+\_\+inline} ()
+\begin{DoxyCompactList}\small\item\em Compute the function inline. \end{DoxyCompactList}\item 
+\hyperlink{classtvm_1_1te_1_1Stage}{Stage} \& \hyperlink{classtvm_1_1te_1_1Stage_a95b58b2d2ec034ecd0bdb99f95c0b0ba}{compute\+\_\+root} ()
+\begin{DoxyCompactList}\small\item\em Compute the function at group root. \end{DoxyCompactList}\item 
+\hyperlink{classtvm_1_1te_1_1Stage}{Stage} \& \hyperlink{classtvm_1_1te_1_1Stage_aa9ace0034447b461610ebc1c2de69a26}{bind} (\hyperlink{classtvm_1_1tir_1_1IterVar}{Iter\+Var} ivar, \hyperlink{classtvm_1_1tir_1_1IterVar}{Iter\+Var} thread\+\_\+ivar)
+\begin{DoxyCompactList}\small\item\em Bind the Iter\+Var to thread index. \end{DoxyCompactList}\item 
+\hyperlink{classtvm_1_1te_1_1Stage}{Stage} \& \hyperlink{classtvm_1_1te_1_1Stage_a0056636228aed23f71eecc0810731436}{set\+\_\+store\+\_\+predicate} (\hyperlink{classtvm_1_1PrimExpr}{Prim\+Expr} predicate)
+\begin{DoxyCompactList}\small\item\em Set the predicate to determine whether a store to the array should be performed. Use this when there are multiple threads performing the same store and we only need one of them to do the store. \end{DoxyCompactList}\item 
+\hyperlink{classtvm_1_1te_1_1Stage}{Stage} \& \hyperlink{classtvm_1_1te_1_1Stage_aba3eb6be98bdb18da51a31bbf4af4617}{env\+\_\+threads} (\hyperlink{classtvm_1_1Array}{Array}$<$ \hyperlink{classtvm_1_1tir_1_1IterVar}{Iter\+Var} $>$ threads)
+\begin{DoxyCompactList}\small\item\em Specify environment threads that launched around the group\textquotesingle{}s scope. This can only be used in group stage. \end{DoxyCompactList}\item 
+\hyperlink{classtvm_1_1te_1_1Stage}{Stage} \& \hyperlink{classtvm_1_1te_1_1Stage_a5a7cd562be59b68a187ad97085a3425d}{split} (\hyperlink{classtvm_1_1tir_1_1IterVar}{Iter\+Var} parent, \hyperlink{classtvm_1_1PrimExpr}{Prim\+Expr} factor, \hyperlink{classtvm_1_1tir_1_1IterVar}{Iter\+Var} $\ast$p\+\_\+outer, \hyperlink{classtvm_1_1tir_1_1IterVar}{Iter\+Var} $\ast$p\+\_\+inner)
+\begin{DoxyCompactList}\small\item\em Split the parent by factor, generate. \end{DoxyCompactList}\item 
+\hyperlink{classtvm_1_1te_1_1Stage}{Stage} \& \hyperlink{classtvm_1_1te_1_1Stage_a51432f38d9ec4792a2525023179ae604}{split\+\_\+by\+\_\+nparts} (\hyperlink{classtvm_1_1tir_1_1IterVar}{Iter\+Var} parent, \hyperlink{classtvm_1_1PrimExpr}{Prim\+Expr} nparts, \hyperlink{classtvm_1_1tir_1_1IterVar}{Iter\+Var} $\ast$p\+\_\+outer, \hyperlink{classtvm_1_1tir_1_1IterVar}{Iter\+Var} $\ast$p\+\_\+inner)
+\begin{DoxyCompactList}\small\item\em Split the iteration with given number of parts. \end{DoxyCompactList}\item 
+\hyperlink{classtvm_1_1te_1_1Stage}{Stage} \& \hyperlink{classtvm_1_1te_1_1Stage_a5658065d9cbbee620bbd107d30c4ae72}{fuse} (\hyperlink{classtvm_1_1tir_1_1IterVar}{Iter\+Var} outer, \hyperlink{classtvm_1_1tir_1_1IterVar}{Iter\+Var} inner, \hyperlink{classtvm_1_1tir_1_1IterVar}{Iter\+Var} $\ast$p\+\_\+target)
+\begin{DoxyCompactList}\small\item\em Fuse the inner outer domain to the target. \end{DoxyCompactList}\item 
+\hyperlink{classtvm_1_1te_1_1Stage}{Stage} \& \hyperlink{classtvm_1_1te_1_1Stage_a07b721494aa3c0c79e8a8654c433708f}{fuse} (const \hyperlink{classtvm_1_1Array}{Array}$<$ \hyperlink{classtvm_1_1tir_1_1IterVar}{Iter\+Var} $>$ \&axes, \hyperlink{classtvm_1_1tir_1_1IterVar}{Iter\+Var} $\ast$p\+\_\+target)
+\begin{DoxyCompactList}\small\item\em Fuse all the axes together into a single axis. \end{DoxyCompactList}\item 
+\hyperlink{classtvm_1_1te_1_1Stage}{Stage} \& \hyperlink{classtvm_1_1te_1_1Stage_ad96cd240a92df9cafae89cdf2a7e302e}{reorder} (const \hyperlink{classtvm_1_1Array}{Array}$<$ \hyperlink{classtvm_1_1tir_1_1IterVar}{Iter\+Var} $>$ \&order)
+\begin{DoxyCompactList}\small\item\em Reorder the iteration. \end{DoxyCompactList}\item 
+\hyperlink{classtvm_1_1te_1_1Stage}{Stage} \& \hyperlink{classtvm_1_1te_1_1Stage_a7a42ba3166c506fcacf596ac13553b67}{tile} (\hyperlink{classtvm_1_1tir_1_1IterVar}{Iter\+Var} x\+\_\+parent, \hyperlink{classtvm_1_1tir_1_1IterVar}{Iter\+Var} y\+\_\+parent, \hyperlink{classtvm_1_1PrimExpr}{Prim\+Expr} x\+\_\+factor, \hyperlink{classtvm_1_1PrimExpr}{Prim\+Expr} y\+\_\+factor, \hyperlink{classtvm_1_1tir_1_1IterVar}{Iter\+Var} $\ast$p\+\_\+x\+\_\+outer, \hyperlink{classtvm_1_1tir_1_1IterVar}{Iter\+Var} $\ast$p\+\_\+y\+\_\+outer, \hyperlink{classtvm_1_1tir_1_1IterVar}{Iter\+Var} $\ast$p\+\_\+x\+\_\+inner, \hyperlink{classtvm_1_1tir_1_1IterVar}{Iter\+Var} $\ast$p\+\_\+y\+\_\+inner)
+\begin{DoxyCompactList}\small\item\em Perform tiling on two dimensions The final loop order from outmost to inner most are \mbox{[}x\+\_\+outer, y\+\_\+outer, x\+\_\+inner, y\+\_\+inner\mbox{]}. \end{DoxyCompactList}\item 
+\hyperlink{classtvm_1_1te_1_1Stage}{Stage} \& \hyperlink{classtvm_1_1te_1_1Stage_a44d33e3920106e75dc7c68272f880812}{vectorize} (\hyperlink{classtvm_1_1tir_1_1IterVar}{Iter\+Var} \hyperlink{namespacetvm_1_1te_ae0c71f84710b436cbe0b32289d0838f4}{var})
+\begin{DoxyCompactList}\small\item\em Vectorize iteration. \end{DoxyCompactList}\item 
+\hyperlink{classtvm_1_1te_1_1Stage}{Stage} \& \hyperlink{classtvm_1_1te_1_1Stage_ab5fe485e1d730c36b096c060b8d2ef9d}{tensorize} (\hyperlink{classtvm_1_1tir_1_1IterVar}{Iter\+Var} \hyperlink{namespacetvm_1_1te_ae0c71f84710b436cbe0b32289d0838f4}{var}, \hyperlink{classtvm_1_1te_1_1TensorIntrin}{Tensor\+Intrin} f)
+\begin{DoxyCompactList}\small\item\em Replace computation of the current stage by tensor intrinsic f. \end{DoxyCompactList}\item 
+\hyperlink{classtvm_1_1te_1_1Stage}{Stage} \& \hyperlink{classtvm_1_1te_1_1Stage_af83ad8672660403504f472228b044b33}{unroll} (\hyperlink{classtvm_1_1tir_1_1IterVar}{Iter\+Var} \hyperlink{namespacetvm_1_1te_ae0c71f84710b436cbe0b32289d0838f4}{var})
+\begin{DoxyCompactList}\small\item\em Unroll iteration. \end{DoxyCompactList}\item 
+\hyperlink{classtvm_1_1te_1_1Stage}{Stage} \& \hyperlink{classtvm_1_1te_1_1Stage_a60a6be10a1a96cb594c1399efabafef3}{parallel} (\hyperlink{classtvm_1_1tir_1_1IterVar}{Iter\+Var} \hyperlink{namespacetvm_1_1te_ae0c71f84710b436cbe0b32289d0838f4}{var})
+\begin{DoxyCompactList}\small\item\em Parallelize iteration. \end{DoxyCompactList}\item 
+\hyperlink{classtvm_1_1te_1_1Stage}{Stage} \& \hyperlink{classtvm_1_1te_1_1Stage_a7045099f180e5cdcf9b1959b280a2d35}{pragma} (\hyperlink{classtvm_1_1tir_1_1IterVar}{Iter\+Var} \hyperlink{namespacetvm_1_1te_ae0c71f84710b436cbe0b32289d0838f4}{var}, const std\+::string \&pragma\+\_\+type, const \hyperlink{classtvm_1_1PrimExpr}{Prim\+Expr} \&pragma\+\_\+value=\hyperlink{classtvm_1_1PrimExpr}{Prim\+Expr}())
+\begin{DoxyCompactList}\small\item\em Annotate the iteration with pragma. \end{DoxyCompactList}\item 
+\hyperlink{classtvm_1_1te_1_1Stage}{Stage} \& \hyperlink{classtvm_1_1te_1_1Stage_a611327890918fb641a8e65396ab9c5f6}{prefetch} (const \hyperlink{classtvm_1_1te_1_1Tensor}{Tensor} \&domain, \hyperlink{classtvm_1_1tir_1_1IterVar}{Iter\+Var} \hyperlink{namespacetvm_1_1te_ae0c71f84710b436cbe0b32289d0838f4}{var}, \hyperlink{classtvm_1_1PrimExpr}{Prim\+Expr} offset)
+\begin{DoxyCompactList}\small\item\em Fetch data in advance. \end{DoxyCompactList}\item 
+\hyperlink{classtvm_1_1te_1_1Stage}{Stage} \& \hyperlink{classtvm_1_1te_1_1Stage_aa73e3a269d84c3b4f0a1994371d67bab}{storage\+\_\+align} (\hyperlink{classtvm_1_1tir_1_1IterVar}{Iter\+Var} axis, int factor, int offset)
+\begin{DoxyCompactList}\small\item\em Set alignment requirement for specific dimension. \end{DoxyCompactList}\item 
+\hyperlink{classtvm_1_1te_1_1Stage}{Stage} \& \hyperlink{classtvm_1_1te_1_1Stage_a0cdea4d4b25b730c44d86e6c57505000}{double\+\_\+buffer} ()
+\begin{DoxyCompactList}\small\item\em Compute current stage with double buffering. \end{DoxyCompactList}\item 
+\hyperlink{classtvm_1_1te_1_1Stage}{Stage} \& \hyperlink{classtvm_1_1te_1_1Stage_a0728134ed00dd97169d4e6cec6fe0e8f}{opengl} ()
+\begin{DoxyCompactList}\small\item\em \hyperlink{classtvm_1_1te_1_1Schedule}{Schedule} for Open\+GL fragment shader. \end{DoxyCompactList}\item 
+bool \hyperlink{classtvm_1_1te_1_1Stage_af6aa745f05336b8afcd5b0b6d2fd9cb6}{is\+\_\+scheduled} () const 
+\begin{DoxyCompactList}\small\item\em whether the stage has been scheduled. \end{DoxyCompactList}\item 
+\hyperlink{classtvm_1_1te_1_1Stage}{Stage} \hyperlink{classtvm_1_1te_1_1Stage_a9431049e6573f40af10b02e7cd8d8efc}{Get\+Attach\+Spec} () const 
+\begin{DoxyCompactList}\small\item\em Get attachment spec of current stage. If the stage compute at Group root, this function will traverse the group function to get the final spec from the group. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\hyperlink{classtvm_1_1te_1_1Stage}{Stage}, contains scheduling for a stage of computation. 
+
+\subsection{Member Typedef Documentation}
+\index{tvm\+::te\+::\+Stage@{tvm\+::te\+::\+Stage}!Container\+Type@{Container\+Type}}
+\index{Container\+Type@{Container\+Type}!tvm\+::te\+::\+Stage@{tvm\+::te\+::\+Stage}}
+\subsubsection[{\texorpdfstring{Container\+Type}{ContainerType}}]{\setlength{\rightskip}{0pt plus 5cm}using {\bf tvm\+::te\+::\+Stage\+::\+Container\+Type} =  {\bf Stage\+Node}}\hypertarget{classtvm_1_1te_1_1Stage_abf9765aa226d6ec0930cb202a392e041}{}\label{classtvm_1_1te_1_1Stage_abf9765aa226d6ec0930cb202a392e041}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\index{tvm\+::te\+::\+Stage@{tvm\+::te\+::\+Stage}!Stage@{Stage}}
+\index{Stage@{Stage}!tvm\+::te\+::\+Stage@{tvm\+::te\+::\+Stage}}
+\subsubsection[{\texorpdfstring{Stage()}{Stage()}}]{\setlength{\rightskip}{0pt plus 5cm}tvm\+::te\+::\+Stage\+::\+Stage (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classtvm_1_1te_1_1Stage_afec82602b9321c489b88632a005335f8}{}\label{classtvm_1_1te_1_1Stage_afec82602b9321c489b88632a005335f8}
+\index{tvm\+::te\+::\+Stage@{tvm\+::te\+::\+Stage}!Stage@{Stage}}
+\index{Stage@{Stage}!tvm\+::te\+::\+Stage@{tvm\+::te\+::\+Stage}}
+\subsubsection[{\texorpdfstring{Stage(\+Object\+Ptr$<$ Object $>$ n)}{Stage(ObjectPtr< Object > n)}}]{\setlength{\rightskip}{0pt plus 5cm}tvm\+::te\+::\+Stage\+::\+Stage (
+\begin{DoxyParamCaption}
+\item[{Object\+Ptr$<$ Object $>$}]{n}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [explicit]}}\hypertarget{classtvm_1_1te_1_1Stage_aa6ace38b6312e42aaf9389c8749ae0a4}{}\label{classtvm_1_1te_1_1Stage_aa6ace38b6312e42aaf9389c8749ae0a4}
+\index{tvm\+::te\+::\+Stage@{tvm\+::te\+::\+Stage}!Stage@{Stage}}
+\index{Stage@{Stage}!tvm\+::te\+::\+Stage@{tvm\+::te\+::\+Stage}}
+\subsubsection[{\texorpdfstring{Stage(\+Operation op)}{Stage(Operation op)}}]{\setlength{\rightskip}{0pt plus 5cm}tvm\+::te\+::\+Stage\+::\+Stage (
+\begin{DoxyParamCaption}
+\item[{{\bf Operation}}]{op}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [explicit]}}\hypertarget{classtvm_1_1te_1_1Stage_a1ecdc9a000be62c9cc26a96d4c33e36e}{}\label{classtvm_1_1te_1_1Stage_a1ecdc9a000be62c9cc26a96d4c33e36e}
+
+
+create a new schedule for op. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em op} & The operator in the schedule \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\index{tvm\+::te\+::\+Stage@{tvm\+::te\+::\+Stage}!bind@{bind}}
+\index{bind@{bind}!tvm\+::te\+::\+Stage@{tvm\+::te\+::\+Stage}}
+\subsubsection[{\texorpdfstring{bind(\+Iter\+Var ivar, Iter\+Var thread\+\_\+ivar)}{bind(IterVar ivar, IterVar thread_ivar)}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Stage}\& tvm\+::te\+::\+Stage\+::bind (
+\begin{DoxyParamCaption}
+\item[{{\bf Iter\+Var}}]{ivar, }
+\item[{{\bf Iter\+Var}}]{thread\+\_\+ivar}
+\end{DoxyParamCaption}
+)}\hypertarget{classtvm_1_1te_1_1Stage_aa9ace0034447b461610ebc1c2de69a26}{}\label{classtvm_1_1te_1_1Stage_aa9ace0034447b461610ebc1c2de69a26}
+
+
+Bind the Iter\+Var to thread index. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em ivar} & The Iter\+Var to be bound. \\
+\hline
+{\em thread\+\_\+ivar} & The thread axis to be bound. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+reference to self. 
+\end{DoxyReturn}
+\index{tvm\+::te\+::\+Stage@{tvm\+::te\+::\+Stage}!compute\+\_\+at@{compute\+\_\+at}}
+\index{compute\+\_\+at@{compute\+\_\+at}!tvm\+::te\+::\+Stage@{tvm\+::te\+::\+Stage}}
+\subsubsection[{\texorpdfstring{compute\+\_\+at(\+Stage parent, Iter\+Var scope)}{compute_at(Stage parent, IterVar scope)}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Stage}\& tvm\+::te\+::\+Stage\+::compute\+\_\+at (
+\begin{DoxyParamCaption}
+\item[{{\bf Stage}}]{parent, }
+\item[{{\bf Iter\+Var}}]{scope}
+\end{DoxyParamCaption}
+)}\hypertarget{classtvm_1_1te_1_1Stage_a071545484de7a894c01ccf0e77183730}{}\label{classtvm_1_1te_1_1Stage_a071545484de7a894c01ccf0e77183730}
+
+
+specify the schedule to be computed at the parent schedule\textquotesingle{}s scope. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em parent} & The parent schedule. \\
+\hline
+{\em scope} & The iteration point to carry the schedule. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+reference to self. 
+\end{DoxyReturn}
+\index{tvm\+::te\+::\+Stage@{tvm\+::te\+::\+Stage}!compute\+\_\+inline@{compute\+\_\+inline}}
+\index{compute\+\_\+inline@{compute\+\_\+inline}!tvm\+::te\+::\+Stage@{tvm\+::te\+::\+Stage}}
+\subsubsection[{\texorpdfstring{compute\+\_\+inline()}{compute_inline()}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Stage}\& tvm\+::te\+::\+Stage\+::compute\+\_\+inline (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{classtvm_1_1te_1_1Stage_a1c58b35e37561739440b322c29d30c3b}{}\label{classtvm_1_1te_1_1Stage_a1c58b35e37561739440b322c29d30c3b}
+
+
+Compute the function inline. 
+
+\begin{DoxyReturn}{Returns}
+reference to self. 
+\end{DoxyReturn}
+\index{tvm\+::te\+::\+Stage@{tvm\+::te\+::\+Stage}!compute\+\_\+root@{compute\+\_\+root}}
+\index{compute\+\_\+root@{compute\+\_\+root}!tvm\+::te\+::\+Stage@{tvm\+::te\+::\+Stage}}
+\subsubsection[{\texorpdfstring{compute\+\_\+root()}{compute_root()}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Stage}\& tvm\+::te\+::\+Stage\+::compute\+\_\+root (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{classtvm_1_1te_1_1Stage_a95b58b2d2ec034ecd0bdb99f95c0b0ba}{}\label{classtvm_1_1te_1_1Stage_a95b58b2d2ec034ecd0bdb99f95c0b0ba}
+
+
+Compute the function at group root. 
+
+\begin{DoxyReturn}{Returns}
+reference to self. 
+\end{DoxyReturn}
+\index{tvm\+::te\+::\+Stage@{tvm\+::te\+::\+Stage}!double\+\_\+buffer@{double\+\_\+buffer}}
+\index{double\+\_\+buffer@{double\+\_\+buffer}!tvm\+::te\+::\+Stage@{tvm\+::te\+::\+Stage}}
+\subsubsection[{\texorpdfstring{double\+\_\+buffer()}{double_buffer()}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Stage}\& tvm\+::te\+::\+Stage\+::double\+\_\+buffer (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{classtvm_1_1te_1_1Stage_a0cdea4d4b25b730c44d86e6c57505000}{}\label{classtvm_1_1te_1_1Stage_a0cdea4d4b25b730c44d86e6c57505000}
+
+
+Compute current stage with double buffering. 
+
+\begin{DoxyReturn}{Returns}
+reference to self. 
+\end{DoxyReturn}
+\index{tvm\+::te\+::\+Stage@{tvm\+::te\+::\+Stage}!env\+\_\+threads@{env\+\_\+threads}}
+\index{env\+\_\+threads@{env\+\_\+threads}!tvm\+::te\+::\+Stage@{tvm\+::te\+::\+Stage}}
+\subsubsection[{\texorpdfstring{env\+\_\+threads(\+Array$<$ Iter\+Var $>$ threads)}{env_threads(Array< IterVar > threads)}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Stage}\& tvm\+::te\+::\+Stage\+::env\+\_\+threads (
+\begin{DoxyParamCaption}
+\item[{{\bf Array}$<$ {\bf Iter\+Var} $>$}]{threads}
+\end{DoxyParamCaption}
+)}\hypertarget{classtvm_1_1te_1_1Stage_aba3eb6be98bdb18da51a31bbf4af4617}{}\label{classtvm_1_1te_1_1Stage_aba3eb6be98bdb18da51a31bbf4af4617}
+
+
+Specify environment threads that launched around the group\textquotesingle{}s scope. This can only be used in group stage. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em threads} & The threads to be launched around the scope. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyNote}{Note}
+Each thread can only appear in one env\+\_\+threads. This is a beta feature. 
+\end{DoxyNote}
+\begin{DoxyReturn}{Returns}
+reference to self. 
+\end{DoxyReturn}
+\index{tvm\+::te\+::\+Stage@{tvm\+::te\+::\+Stage}!fuse@{fuse}}
+\index{fuse@{fuse}!tvm\+::te\+::\+Stage@{tvm\+::te\+::\+Stage}}
+\subsubsection[{\texorpdfstring{fuse(\+Iter\+Var outer, Iter\+Var inner, Iter\+Var $\ast$p\+\_\+target)}{fuse(IterVar outer, IterVar inner, IterVar *p_target)}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Stage}\& tvm\+::te\+::\+Stage\+::fuse (
+\begin{DoxyParamCaption}
+\item[{{\bf Iter\+Var}}]{outer, }
+\item[{{\bf Iter\+Var}}]{inner, }
+\item[{{\bf Iter\+Var} $\ast$}]{p\+\_\+target}
+\end{DoxyParamCaption}
+)}\hypertarget{classtvm_1_1te_1_1Stage_a5658065d9cbbee620bbd107d30c4ae72}{}\label{classtvm_1_1te_1_1Stage_a5658065d9cbbee620bbd107d30c4ae72}
+
+
+Fuse the inner outer domain to the target. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em outer} & The outer domain to be fused. \\
+\hline
+{\em inner} & The inner domain to be fused \\
+\hline
+{\em p\+\_\+target} & The result target domain. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+reference to self. 
+\end{DoxyReturn}
+\index{tvm\+::te\+::\+Stage@{tvm\+::te\+::\+Stage}!fuse@{fuse}}
+\index{fuse@{fuse}!tvm\+::te\+::\+Stage@{tvm\+::te\+::\+Stage}}
+\subsubsection[{\texorpdfstring{fuse(const Array$<$ Iter\+Var $>$ \&axes, Iter\+Var $\ast$p\+\_\+target)}{fuse(const Array< IterVar > &axes, IterVar *p_target)}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Stage}\& tvm\+::te\+::\+Stage\+::fuse (
+\begin{DoxyParamCaption}
+\item[{const {\bf Array}$<$ {\bf Iter\+Var} $>$ \&}]{axes, }
+\item[{{\bf Iter\+Var} $\ast$}]{p\+\_\+target}
+\end{DoxyParamCaption}
+)}\hypertarget{classtvm_1_1te_1_1Stage_a07b721494aa3c0c79e8a8654c433708f}{}\label{classtvm_1_1te_1_1Stage_a07b721494aa3c0c79e8a8654c433708f}
+
+
+Fuse all the axes together into a single axis. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em axes} & All the axes to be fused. \\
+\hline
+{\em p\+\_\+target} & The result target domain.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyNote}{Note}
+axes can be an empty array, in that case, a singleton Iter\+Var is created and inserted to the outermost loop. The fuse of empty array is used to support zero-\/dimension tensors.
+\end{DoxyNote}
+\begin{DoxyReturn}{Returns}
+reference to self. 
+\end{DoxyReturn}
+\index{tvm\+::te\+::\+Stage@{tvm\+::te\+::\+Stage}!Get\+Attach\+Spec@{Get\+Attach\+Spec}}
+\index{Get\+Attach\+Spec@{Get\+Attach\+Spec}!tvm\+::te\+::\+Stage@{tvm\+::te\+::\+Stage}}
+\subsubsection[{\texorpdfstring{Get\+Attach\+Spec() const }{GetAttachSpec() const }}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Stage} tvm\+::te\+::\+Stage\+::\+Get\+Attach\+Spec (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}\hypertarget{classtvm_1_1te_1_1Stage_a9431049e6573f40af10b02e7cd8d8efc}{}\label{classtvm_1_1te_1_1Stage_a9431049e6573f40af10b02e7cd8d8efc}
+
+
+Get attachment spec of current stage. If the stage compute at Group root, this function will traverse the group function to get the final spec from the group. 
+
+\begin{DoxyReturn}{Returns}
+A stage representing the attach spec of the group. 
+\end{DoxyReturn}
+\index{tvm\+::te\+::\+Stage@{tvm\+::te\+::\+Stage}!is\+\_\+scheduled@{is\+\_\+scheduled}}
+\index{is\+\_\+scheduled@{is\+\_\+scheduled}!tvm\+::te\+::\+Stage@{tvm\+::te\+::\+Stage}}
+\subsubsection[{\texorpdfstring{is\+\_\+scheduled() const }{is_scheduled() const }}]{\setlength{\rightskip}{0pt plus 5cm}bool tvm\+::te\+::\+Stage\+::is\+\_\+scheduled (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}\hypertarget{classtvm_1_1te_1_1Stage_af6aa745f05336b8afcd5b0b6d2fd9cb6}{}\label{classtvm_1_1te_1_1Stage_af6aa745f05336b8afcd5b0b6d2fd9cb6}
+
+
+whether the stage has been scheduled. 
+
+\begin{DoxyReturn}{Returns}
+whether the stage has been scheduled. 
+\end{DoxyReturn}
+\index{tvm\+::te\+::\+Stage@{tvm\+::te\+::\+Stage}!opengl@{opengl}}
+\index{opengl@{opengl}!tvm\+::te\+::\+Stage@{tvm\+::te\+::\+Stage}}
+\subsubsection[{\texorpdfstring{opengl()}{opengl()}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Stage}\& tvm\+::te\+::\+Stage\+::opengl (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{classtvm_1_1te_1_1Stage_a0728134ed00dd97169d4e6cec6fe0e8f}{}\label{classtvm_1_1te_1_1Stage_a0728134ed00dd97169d4e6cec6fe0e8f}
+
+
+\hyperlink{classtvm_1_1te_1_1Schedule}{Schedule} for Open\+GL fragment shader. 
+
+\begin{DoxyReturn}{Returns}
+reference to self. 
+\end{DoxyReturn}
+\index{tvm\+::te\+::\+Stage@{tvm\+::te\+::\+Stage}!operator-\/$>$@{operator-\/$>$}}
+\index{operator-\/$>$@{operator-\/$>$}!tvm\+::te\+::\+Stage@{tvm\+::te\+::\+Stage}}
+\subsubsection[{\texorpdfstring{operator-\/$>$() const }{operator->() const }}]{\setlength{\rightskip}{0pt plus 5cm}const {\bf Stage\+Node} $\ast$ tvm\+::te\+::\+Stage\+::operator-\/$>$ (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classtvm_1_1te_1_1Stage_adb81d41e9f0722f4b49cf1175814cc37}{}\label{classtvm_1_1te_1_1Stage_adb81d41e9f0722f4b49cf1175814cc37}
+
+
+access the internal node container 
+
+\begin{DoxyReturn}{Returns}
+the pointer to the internal node container 
+\end{DoxyReturn}
+\index{tvm\+::te\+::\+Stage@{tvm\+::te\+::\+Stage}!operator-\/$>$@{operator-\/$>$}}
+\index{operator-\/$>$@{operator-\/$>$}!tvm\+::te\+::\+Stage@{tvm\+::te\+::\+Stage}}
+\subsubsection[{\texorpdfstring{operator-\/$>$()}{operator->()}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Stage\+Node} $\ast$ tvm\+::te\+::\+Stage\+::operator-\/$>$ (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classtvm_1_1te_1_1Stage_a427ef4fef2edf15624be2c87bdad9505}{}\label{classtvm_1_1te_1_1Stage_a427ef4fef2edf15624be2c87bdad9505}
+
+
+access the internal node container 
+
+\begin{DoxyReturn}{Returns}
+the pointer to the internal node container 
+\end{DoxyReturn}
+\index{tvm\+::te\+::\+Stage@{tvm\+::te\+::\+Stage}!parallel@{parallel}}
+\index{parallel@{parallel}!tvm\+::te\+::\+Stage@{tvm\+::te\+::\+Stage}}
+\subsubsection[{\texorpdfstring{parallel(\+Iter\+Var var)}{parallel(IterVar var)}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Stage}\& tvm\+::te\+::\+Stage\+::parallel (
+\begin{DoxyParamCaption}
+\item[{{\bf Iter\+Var}}]{var}
+\end{DoxyParamCaption}
+)}\hypertarget{classtvm_1_1te_1_1Stage_a60a6be10a1a96cb594c1399efabafef3}{}\label{classtvm_1_1te_1_1Stage_a60a6be10a1a96cb594c1399efabafef3}
+
+
+Parallelize iteration. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em var} & The axis to be parallelized. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+reference to self. 
+\end{DoxyReturn}
+\index{tvm\+::te\+::\+Stage@{tvm\+::te\+::\+Stage}!pragma@{pragma}}
+\index{pragma@{pragma}!tvm\+::te\+::\+Stage@{tvm\+::te\+::\+Stage}}
+\subsubsection[{\texorpdfstring{pragma(\+Iter\+Var var, const std\+::string \&pragma\+\_\+type, const Prim\+Expr \&pragma\+\_\+value=\+Prim\+Expr())}{pragma(IterVar var, const std::string &pragma_type, const PrimExpr &pragma_value=PrimExpr())}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Stage}\& tvm\+::te\+::\+Stage\+::pragma (
+\begin{DoxyParamCaption}
+\item[{{\bf Iter\+Var}}]{var, }
+\item[{const std\+::string \&}]{pragma\+\_\+type, }
+\item[{const {\bf Prim\+Expr} \&}]{pragma\+\_\+value = {\ttfamily {\bf Prim\+Expr}()}}
+\end{DoxyParamCaption}
+)}\hypertarget{classtvm_1_1te_1_1Stage_a7045099f180e5cdcf9b1959b280a2d35}{}\label{classtvm_1_1te_1_1Stage_a7045099f180e5cdcf9b1959b280a2d35}
+
+
+Annotate the iteration with pragma. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em var} & The axis to be parallelized. \\
+\hline
+{\em pragma\+\_\+type} & The pragma type. \\
+\hline
+{\em pragma\+\_\+value} & The pragma value\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+reference to self. 
+\end{DoxyReturn}
+\index{tvm\+::te\+::\+Stage@{tvm\+::te\+::\+Stage}!prefetch@{prefetch}}
+\index{prefetch@{prefetch}!tvm\+::te\+::\+Stage@{tvm\+::te\+::\+Stage}}
+\subsubsection[{\texorpdfstring{prefetch(const Tensor \&domain, Iter\+Var var, Prim\+Expr offset)}{prefetch(const Tensor &domain, IterVar var, PrimExpr offset)}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Stage}\& tvm\+::te\+::\+Stage\+::prefetch (
+\begin{DoxyParamCaption}
+\item[{const {\bf Tensor} \&}]{domain, }
+\item[{{\bf Iter\+Var}}]{var, }
+\item[{{\bf Prim\+Expr}}]{offset}
+\end{DoxyParamCaption}
+)}\hypertarget{classtvm_1_1te_1_1Stage_a611327890918fb641a8e65396ab9c5f6}{}\label{classtvm_1_1te_1_1Stage_a611327890918fb641a8e65396ab9c5f6}
+
+
+Fetch data in advance. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em domain} & the tensor to be prefetched \\
+\hline
+{\em var} & the iteration point at which to apply prefetching \\
+\hline
+{\em offset} & the number of iterations be to fetched in advance \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+reference to self 
+\end{DoxyReturn}
+\index{tvm\+::te\+::\+Stage@{tvm\+::te\+::\+Stage}!reorder@{reorder}}
+\index{reorder@{reorder}!tvm\+::te\+::\+Stage@{tvm\+::te\+::\+Stage}}
+\subsubsection[{\texorpdfstring{reorder(const Array$<$ Iter\+Var $>$ \&order)}{reorder(const Array< IterVar > &order)}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Stage}\& tvm\+::te\+::\+Stage\+::reorder (
+\begin{DoxyParamCaption}
+\item[{const {\bf Array}$<$ {\bf Iter\+Var} $>$ \&}]{order}
+\end{DoxyParamCaption}
+)}\hypertarget{classtvm_1_1te_1_1Stage_ad96cd240a92df9cafae89cdf2a7e302e}{}\label{classtvm_1_1te_1_1Stage_ad96cd240a92df9cafae89cdf2a7e302e}
+
+
+Reorder the iteration. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em order} & The order of iteration variable. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+reference to self. 
+\end{DoxyReturn}
+\index{tvm\+::te\+::\+Stage@{tvm\+::te\+::\+Stage}!set\+\_\+scope@{set\+\_\+scope}}
+\index{set\+\_\+scope@{set\+\_\+scope}!tvm\+::te\+::\+Stage@{tvm\+::te\+::\+Stage}}
+\subsubsection[{\texorpdfstring{set\+\_\+scope(std\+::string scope)}{set_scope(std::string scope)}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Stage}\& tvm\+::te\+::\+Stage\+::set\+\_\+scope (
+\begin{DoxyParamCaption}
+\item[{std\+::string}]{scope}
+\end{DoxyParamCaption}
+)}\hypertarget{classtvm_1_1te_1_1Stage_a0dc42f190125f0cf63e8d749ae66af7c}{}\label{classtvm_1_1te_1_1Stage_a0dc42f190125f0cf63e8d749ae66af7c}
+
+
+set the memory scope of the stage 
+
+
+\begin{DoxyParams}{Parameters}
+{\em scope} & The memory scope. \\
+\hline
+\end{DoxyParams}
+\index{tvm\+::te\+::\+Stage@{tvm\+::te\+::\+Stage}!set\+\_\+store\+\_\+predicate@{set\+\_\+store\+\_\+predicate}}
+\index{set\+\_\+store\+\_\+predicate@{set\+\_\+store\+\_\+predicate}!tvm\+::te\+::\+Stage@{tvm\+::te\+::\+Stage}}
+\subsubsection[{\texorpdfstring{set\+\_\+store\+\_\+predicate(\+Prim\+Expr predicate)}{set_store_predicate(PrimExpr predicate)}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Stage}\& tvm\+::te\+::\+Stage\+::set\+\_\+store\+\_\+predicate (
+\begin{DoxyParamCaption}
+\item[{{\bf Prim\+Expr}}]{predicate}
+\end{DoxyParamCaption}
+)}\hypertarget{classtvm_1_1te_1_1Stage_a0056636228aed23f71eecc0810731436}{}\label{classtvm_1_1te_1_1Stage_a0056636228aed23f71eecc0810731436}
+
+
+Set the predicate to determine whether a store to the array should be performed. Use this when there are multiple threads performing the same store and we only need one of them to do the store. 
+
+\begin{DoxyNote}{Note}
+This is a dangerous scheduling primitive that can change behavior of program. Only do when we are certain that thare are duplicated stores. 
+\end{DoxyNote}
+
+\begin{DoxyParams}{Parameters}
+{\em predicate} & The condition to be checked. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+reference to self. 
+\end{DoxyReturn}
+\index{tvm\+::te\+::\+Stage@{tvm\+::te\+::\+Stage}!split@{split}}
+\index{split@{split}!tvm\+::te\+::\+Stage@{tvm\+::te\+::\+Stage}}
+\subsubsection[{\texorpdfstring{split(\+Iter\+Var parent, Prim\+Expr factor, Iter\+Var $\ast$p\+\_\+outer, Iter\+Var $\ast$p\+\_\+inner)}{split(IterVar parent, PrimExpr factor, IterVar *p_outer, IterVar *p_inner)}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Stage}\& tvm\+::te\+::\+Stage\+::split (
+\begin{DoxyParamCaption}
+\item[{{\bf Iter\+Var}}]{parent, }
+\item[{{\bf Prim\+Expr}}]{factor, }
+\item[{{\bf Iter\+Var} $\ast$}]{p\+\_\+outer, }
+\item[{{\bf Iter\+Var} $\ast$}]{p\+\_\+inner}
+\end{DoxyParamCaption}
+)}\hypertarget{classtvm_1_1te_1_1Stage_a5a7cd562be59b68a187ad97085a3425d}{}\label{classtvm_1_1te_1_1Stage_a5a7cd562be59b68a187ad97085a3425d}
+
+
+Split the parent by factor, generate. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em parent} & The parent iteration domain. \\
+\hline
+{\em factor} & The split factor of the loop. \\
+\hline
+{\em p\+\_\+outer} & The result outer domain \\
+\hline
+{\em p\+\_\+inner} & The result inner domain. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+reference to self. 
+\end{DoxyReturn}
+\index{tvm\+::te\+::\+Stage@{tvm\+::te\+::\+Stage}!split\+\_\+by\+\_\+nparts@{split\+\_\+by\+\_\+nparts}}
+\index{split\+\_\+by\+\_\+nparts@{split\+\_\+by\+\_\+nparts}!tvm\+::te\+::\+Stage@{tvm\+::te\+::\+Stage}}
+\subsubsection[{\texorpdfstring{split\+\_\+by\+\_\+nparts(\+Iter\+Var parent, Prim\+Expr nparts, Iter\+Var $\ast$p\+\_\+outer, Iter\+Var $\ast$p\+\_\+inner)}{split_by_nparts(IterVar parent, PrimExpr nparts, IterVar *p_outer, IterVar *p_inner)}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Stage}\& tvm\+::te\+::\+Stage\+::split\+\_\+by\+\_\+nparts (
+\begin{DoxyParamCaption}
+\item[{{\bf Iter\+Var}}]{parent, }
+\item[{{\bf Prim\+Expr}}]{nparts, }
+\item[{{\bf Iter\+Var} $\ast$}]{p\+\_\+outer, }
+\item[{{\bf Iter\+Var} $\ast$}]{p\+\_\+inner}
+\end{DoxyParamCaption}
+)}\hypertarget{classtvm_1_1te_1_1Stage_a51432f38d9ec4792a2525023179ae604}{}\label{classtvm_1_1te_1_1Stage_a51432f38d9ec4792a2525023179ae604}
+
+
+Split the iteration with given number of parts. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em parent} & The parent domain. \\
+\hline
+{\em nparts} & The number of parts in the outer domain. \\
+\hline
+{\em p\+\_\+outer} & The result outer domain. \\
+\hline
+{\em p\+\_\+inner} & The result inner domain. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+reference to self. 
+\end{DoxyReturn}
+\index{tvm\+::te\+::\+Stage@{tvm\+::te\+::\+Stage}!storage\+\_\+align@{storage\+\_\+align}}
+\index{storage\+\_\+align@{storage\+\_\+align}!tvm\+::te\+::\+Stage@{tvm\+::te\+::\+Stage}}
+\subsubsection[{\texorpdfstring{storage\+\_\+align(\+Iter\+Var axis, int factor, int offset)}{storage_align(IterVar axis, int factor, int offset)}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Stage}\& tvm\+::te\+::\+Stage\+::storage\+\_\+align (
+\begin{DoxyParamCaption}
+\item[{{\bf Iter\+Var}}]{axis, }
+\item[{int}]{factor, }
+\item[{int}]{offset}
+\end{DoxyParamCaption}
+)}\hypertarget{classtvm_1_1te_1_1Stage_aa73e3a269d84c3b4f0a1994371d67bab}{}\label{classtvm_1_1te_1_1Stage_aa73e3a269d84c3b4f0a1994371d67bab}
+
+
+Set alignment requirement for specific dimension. 
+
+Such that stride\mbox{[}axis\mbox{]} == k $\ast$ factor + offset for some k.
+
+
+\begin{DoxyParams}{Parameters}
+{\em axis} & The dimension to be specified for alignment. \\
+\hline
+{\em factor} & The factor multiple of alignment \\
+\hline
+{\em offset} & The required offset factor. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+reference to self 
+\end{DoxyReturn}
+\index{tvm\+::te\+::\+Stage@{tvm\+::te\+::\+Stage}!tensorize@{tensorize}}
+\index{tensorize@{tensorize}!tvm\+::te\+::\+Stage@{tvm\+::te\+::\+Stage}}
+\subsubsection[{\texorpdfstring{tensorize(\+Iter\+Var var, Tensor\+Intrin f)}{tensorize(IterVar var, TensorIntrin f)}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Stage}\& tvm\+::te\+::\+Stage\+::tensorize (
+\begin{DoxyParamCaption}
+\item[{{\bf Iter\+Var}}]{var, }
+\item[{{\bf Tensor\+Intrin}}]{f}
+\end{DoxyParamCaption}
+)}\hypertarget{classtvm_1_1te_1_1Stage_ab5fe485e1d730c36b096c060b8d2ef9d}{}\label{classtvm_1_1te_1_1Stage_ab5fe485e1d730c36b096c060b8d2ef9d}
+
+
+Replace computation of the current stage by tensor intrinsic f. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em var} & The axis marks beginning of tensorization. Every operations inside the axis(include axis itself is tensorized). \\
+\hline
+{\em f} & The \hyperlink{classtvm_1_1te_1_1Tensor}{Tensor} compute intrinsics. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+reference to self. 
+\end{DoxyReturn}
+\index{tvm\+::te\+::\+Stage@{tvm\+::te\+::\+Stage}!tile@{tile}}
+\index{tile@{tile}!tvm\+::te\+::\+Stage@{tvm\+::te\+::\+Stage}}
+\subsubsection[{\texorpdfstring{tile(\+Iter\+Var x\+\_\+parent, Iter\+Var y\+\_\+parent, Prim\+Expr x\+\_\+factor, Prim\+Expr y\+\_\+factor, Iter\+Var $\ast$p\+\_\+x\+\_\+outer, Iter\+Var $\ast$p\+\_\+y\+\_\+outer, Iter\+Var $\ast$p\+\_\+x\+\_\+inner, Iter\+Var $\ast$p\+\_\+y\+\_\+inner)}{tile(IterVar x_parent, IterVar y_parent, PrimExpr x_factor, PrimExpr y_factor, IterVar *p_x_outer, IterVar *p_y_outer, IterVar *p_x_inner, IterVar *p_y_inner)}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Stage}\& tvm\+::te\+::\+Stage\+::tile (
+\begin{DoxyParamCaption}
+\item[{{\bf Iter\+Var}}]{x\+\_\+parent, }
+\item[{{\bf Iter\+Var}}]{y\+\_\+parent, }
+\item[{{\bf Prim\+Expr}}]{x\+\_\+factor, }
+\item[{{\bf Prim\+Expr}}]{y\+\_\+factor, }
+\item[{{\bf Iter\+Var} $\ast$}]{p\+\_\+x\+\_\+outer, }
+\item[{{\bf Iter\+Var} $\ast$}]{p\+\_\+y\+\_\+outer, }
+\item[{{\bf Iter\+Var} $\ast$}]{p\+\_\+x\+\_\+inner, }
+\item[{{\bf Iter\+Var} $\ast$}]{p\+\_\+y\+\_\+inner}
+\end{DoxyParamCaption}
+)}\hypertarget{classtvm_1_1te_1_1Stage_a7a42ba3166c506fcacf596ac13553b67}{}\label{classtvm_1_1te_1_1Stage_a7a42ba3166c506fcacf596ac13553b67}
+
+
+Perform tiling on two dimensions The final loop order from outmost to inner most are \mbox{[}x\+\_\+outer, y\+\_\+outer, x\+\_\+inner, y\+\_\+inner\mbox{]}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em x\+\_\+parent} & The original x dimension \\
+\hline
+{\em y\+\_\+parent} & The original y dimension \\
+\hline
+{\em x\+\_\+factor} & The stride factor on x axis \\
+\hline
+{\em y\+\_\+factor} & The stride factor on y axis \\
+\hline
+{\em p\+\_\+x\+\_\+outer} & Outer axis of x dimension \\
+\hline
+{\em p\+\_\+y\+\_\+outer} & Outer axis of y dimension \\
+\hline
+{\em p\+\_\+x\+\_\+inner} & Inner axis of x dimension \\
+\hline
+{\em p\+\_\+y\+\_\+inner} & Inner axis of y dimension \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+reference to self. 
+\end{DoxyReturn}
+\index{tvm\+::te\+::\+Stage@{tvm\+::te\+::\+Stage}!unroll@{unroll}}
+\index{unroll@{unroll}!tvm\+::te\+::\+Stage@{tvm\+::te\+::\+Stage}}
+\subsubsection[{\texorpdfstring{unroll(\+Iter\+Var var)}{unroll(IterVar var)}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Stage}\& tvm\+::te\+::\+Stage\+::unroll (
+\begin{DoxyParamCaption}
+\item[{{\bf Iter\+Var}}]{var}
+\end{DoxyParamCaption}
+)}\hypertarget{classtvm_1_1te_1_1Stage_af83ad8672660403504f472228b044b33}{}\label{classtvm_1_1te_1_1Stage_af83ad8672660403504f472228b044b33}
+
+
+Unroll iteration. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em var} & The axis to be unrolled. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+reference to self. 
+\end{DoxyReturn}
+\index{tvm\+::te\+::\+Stage@{tvm\+::te\+::\+Stage}!vectorize@{vectorize}}
+\index{vectorize@{vectorize}!tvm\+::te\+::\+Stage@{tvm\+::te\+::\+Stage}}
+\subsubsection[{\texorpdfstring{vectorize(\+Iter\+Var var)}{vectorize(IterVar var)}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Stage}\& tvm\+::te\+::\+Stage\+::vectorize (
+\begin{DoxyParamCaption}
+\item[{{\bf Iter\+Var}}]{var}
+\end{DoxyParamCaption}
+)}\hypertarget{classtvm_1_1te_1_1Stage_a44d33e3920106e75dc7c68272f880812}{}\label{classtvm_1_1te_1_1Stage_a44d33e3920106e75dc7c68272f880812}
+
+
+Vectorize iteration. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em var} & The axis to be vectorized. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+reference to self. 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+include/tvm/te/\hyperlink{schedule_8h}{schedule.\+h}\end{DoxyCompactItemize}

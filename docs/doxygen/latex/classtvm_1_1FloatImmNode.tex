@@ -1,0 +1,111 @@
+\hypertarget{classtvm_1_1FloatImmNode}{}\section{tvm\+:\+:Float\+Imm\+Node Class Reference}
+\label{classtvm_1_1FloatImmNode}\index{tvm\+::\+Float\+Imm\+Node@{tvm\+::\+Float\+Imm\+Node}}
+
+
+Constant floating point literals in the program.  
+
+
+
+
+{\ttfamily \#include $<$expr.\+h$>$}
+
+
+
+Inheritance diagram for tvm\+:\+:Float\+Imm\+Node\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=285pt]{classtvm_1_1FloatImmNode__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for tvm\+:\+:Float\+Imm\+Node\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classtvm_1_1FloatImmNode__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{classtvm_1_1FloatImmNode_a74569b541c1056734fff07a23a05558e}{Visit\+Attrs} (\hyperlink{classtvm_1_1AttrVisitor}{Attr\+Visitor} $\ast$v)
+\item 
+bool \hyperlink{classtvm_1_1FloatImmNode_a13156b7fe5e11835246b157987031b7b}{S\+Equal\+Reduce} (const \hyperlink{classtvm_1_1FloatImmNode}{Float\+Imm\+Node} $\ast$other, \hyperlink{classtvm_1_1SEqualReducer}{S\+Equal\+Reducer} equal) const 
+\item 
+void \hyperlink{classtvm_1_1FloatImmNode_a7974ef908deb8bcc00e46aa9e0d989b5}{S\+Hash\+Reduce} (\hyperlink{classtvm_1_1SHashReducer}{S\+Hash\+Reducer} hash\+\_\+reduce) const 
+\item 
+\hyperlink{classtvm_1_1FloatImmNode_a3a946ff538b4eb2a18c6ca30ae2da881}{T\+V\+M\+\_\+\+D\+E\+C\+L\+A\+R\+E\+\_\+\+F\+I\+N\+A\+L\+\_\+\+O\+B\+J\+E\+C\+T\+\_\+\+I\+N\+FO} (\hyperlink{classtvm_1_1FloatImmNode}{Float\+Imm\+Node}, \hyperlink{classtvm_1_1PrimExprNode}{Prim\+Expr\+Node})
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+double \hyperlink{classtvm_1_1FloatImmNode_a88ce961273d224831b187d8e9f149e08}{value}
+\begin{DoxyCompactList}\small\item\em The constant value content. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static constexpr const char $\ast$ \hyperlink{classtvm_1_1FloatImmNode_ab43f63c181c5e97e1c7da83deacc73e2}{\+\_\+type\+\_\+key} = \char`\"{}Float\+Imm\char`\"{}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Constant floating point literals in the program. 
+
+\begin{DoxySeeAlso}{See also}
+\hyperlink{classtvm_1_1FloatImm}{Float\+Imm} 
+\end{DoxySeeAlso}
+
+
+\subsection{Member Function Documentation}
+\index{tvm\+::\+Float\+Imm\+Node@{tvm\+::\+Float\+Imm\+Node}!S\+Equal\+Reduce@{S\+Equal\+Reduce}}
+\index{S\+Equal\+Reduce@{S\+Equal\+Reduce}!tvm\+::\+Float\+Imm\+Node@{tvm\+::\+Float\+Imm\+Node}}
+\subsubsection[{\texorpdfstring{S\+Equal\+Reduce(const Float\+Imm\+Node $\ast$other, S\+Equal\+Reducer equal) const }{SEqualReduce(const FloatImmNode *other, SEqualReducer equal) const }}]{\setlength{\rightskip}{0pt plus 5cm}bool tvm\+::\+Float\+Imm\+Node\+::\+S\+Equal\+Reduce (
+\begin{DoxyParamCaption}
+\item[{const {\bf Float\+Imm\+Node} $\ast$}]{other, }
+\item[{{\bf S\+Equal\+Reducer}}]{equal}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classtvm_1_1FloatImmNode_a13156b7fe5e11835246b157987031b7b}{}\label{classtvm_1_1FloatImmNode_a13156b7fe5e11835246b157987031b7b}
+\index{tvm\+::\+Float\+Imm\+Node@{tvm\+::\+Float\+Imm\+Node}!S\+Hash\+Reduce@{S\+Hash\+Reduce}}
+\index{S\+Hash\+Reduce@{S\+Hash\+Reduce}!tvm\+::\+Float\+Imm\+Node@{tvm\+::\+Float\+Imm\+Node}}
+\subsubsection[{\texorpdfstring{S\+Hash\+Reduce(\+S\+Hash\+Reducer hash\+\_\+reduce) const }{SHashReduce(SHashReducer hash_reduce) const }}]{\setlength{\rightskip}{0pt plus 5cm}void tvm\+::\+Float\+Imm\+Node\+::\+S\+Hash\+Reduce (
+\begin{DoxyParamCaption}
+\item[{{\bf S\+Hash\+Reducer}}]{hash\+\_\+reduce}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classtvm_1_1FloatImmNode_a7974ef908deb8bcc00e46aa9e0d989b5}{}\label{classtvm_1_1FloatImmNode_a7974ef908deb8bcc00e46aa9e0d989b5}
+\index{tvm\+::\+Float\+Imm\+Node@{tvm\+::\+Float\+Imm\+Node}!T\+V\+M\+\_\+\+D\+E\+C\+L\+A\+R\+E\+\_\+\+F\+I\+N\+A\+L\+\_\+\+O\+B\+J\+E\+C\+T\+\_\+\+I\+N\+FO@{T\+V\+M\+\_\+\+D\+E\+C\+L\+A\+R\+E\+\_\+\+F\+I\+N\+A\+L\+\_\+\+O\+B\+J\+E\+C\+T\+\_\+\+I\+N\+FO}}
+\index{T\+V\+M\+\_\+\+D\+E\+C\+L\+A\+R\+E\+\_\+\+F\+I\+N\+A\+L\+\_\+\+O\+B\+J\+E\+C\+T\+\_\+\+I\+N\+FO@{T\+V\+M\+\_\+\+D\+E\+C\+L\+A\+R\+E\+\_\+\+F\+I\+N\+A\+L\+\_\+\+O\+B\+J\+E\+C\+T\+\_\+\+I\+N\+FO}!tvm\+::\+Float\+Imm\+Node@{tvm\+::\+Float\+Imm\+Node}}
+\subsubsection[{\texorpdfstring{T\+V\+M\+\_\+\+D\+E\+C\+L\+A\+R\+E\+\_\+\+F\+I\+N\+A\+L\+\_\+\+O\+B\+J\+E\+C\+T\+\_\+\+I\+N\+F\+O(\+Float\+Imm\+Node, Prim\+Expr\+Node)}{TVM_DECLARE_FINAL_OBJECT_INFO(FloatImmNode, PrimExprNode)}}]{\setlength{\rightskip}{0pt plus 5cm}tvm\+::\+Float\+Imm\+Node\+::\+T\+V\+M\+\_\+\+D\+E\+C\+L\+A\+R\+E\+\_\+\+F\+I\+N\+A\+L\+\_\+\+O\+B\+J\+E\+C\+T\+\_\+\+I\+N\+FO (
+\begin{DoxyParamCaption}
+\item[{{\bf Float\+Imm\+Node}}]{, }
+\item[{{\bf Prim\+Expr\+Node}}]{}
+\end{DoxyParamCaption}
+)}\hypertarget{classtvm_1_1FloatImmNode_a3a946ff538b4eb2a18c6ca30ae2da881}{}\label{classtvm_1_1FloatImmNode_a3a946ff538b4eb2a18c6ca30ae2da881}
+\index{tvm\+::\+Float\+Imm\+Node@{tvm\+::\+Float\+Imm\+Node}!Visit\+Attrs@{Visit\+Attrs}}
+\index{Visit\+Attrs@{Visit\+Attrs}!tvm\+::\+Float\+Imm\+Node@{tvm\+::\+Float\+Imm\+Node}}
+\subsubsection[{\texorpdfstring{Visit\+Attrs(\+Attr\+Visitor $\ast$v)}{VisitAttrs(AttrVisitor *v)}}]{\setlength{\rightskip}{0pt plus 5cm}void tvm\+::\+Float\+Imm\+Node\+::\+Visit\+Attrs (
+\begin{DoxyParamCaption}
+\item[{{\bf Attr\+Visitor} $\ast$}]{v}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classtvm_1_1FloatImmNode_a74569b541c1056734fff07a23a05558e}{}\label{classtvm_1_1FloatImmNode_a74569b541c1056734fff07a23a05558e}
+
+
+\subsection{Member Data Documentation}
+\index{tvm\+::\+Float\+Imm\+Node@{tvm\+::\+Float\+Imm\+Node}!\+\_\+type\+\_\+key@{\+\_\+type\+\_\+key}}
+\index{\+\_\+type\+\_\+key@{\+\_\+type\+\_\+key}!tvm\+::\+Float\+Imm\+Node@{tvm\+::\+Float\+Imm\+Node}}
+\subsubsection[{\texorpdfstring{\+\_\+type\+\_\+key}{_type_key}}]{\setlength{\rightskip}{0pt plus 5cm}constexpr const char$\ast$ tvm\+::\+Float\+Imm\+Node\+::\+\_\+type\+\_\+key = \char`\"{}Float\+Imm\char`\"{}\hspace{0.3cm}{\ttfamily [static]}}\hypertarget{classtvm_1_1FloatImmNode_ab43f63c181c5e97e1c7da83deacc73e2}{}\label{classtvm_1_1FloatImmNode_ab43f63c181c5e97e1c7da83deacc73e2}
+\index{tvm\+::\+Float\+Imm\+Node@{tvm\+::\+Float\+Imm\+Node}!value@{value}}
+\index{value@{value}!tvm\+::\+Float\+Imm\+Node@{tvm\+::\+Float\+Imm\+Node}}
+\subsubsection[{\texorpdfstring{value}{value}}]{\setlength{\rightskip}{0pt plus 5cm}double tvm\+::\+Float\+Imm\+Node\+::value}\hypertarget{classtvm_1_1FloatImmNode_a88ce961273d224831b187d8e9f149e08}{}\label{classtvm_1_1FloatImmNode_a88ce961273d224831b187d8e9f149e08}
+
+
+The constant value content. 
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+include/tvm/ir/\hyperlink{ir_2expr_8h}{expr.\+h}\end{DoxyCompactItemize}

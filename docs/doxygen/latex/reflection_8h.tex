@@ -1,0 +1,180 @@
+\hypertarget{reflection_8h}{}\section{include/tvm/node/reflection.h File Reference}
+\label{reflection_8h}\index{include/tvm/node/reflection.\+h@{include/tvm/node/reflection.\+h}}
+
+
+Reflection and serialization of compiler I\+R/\+A\+ST nodes.  
+
+
+{\ttfamily \#include $<$tvm/runtime/c\+\_\+runtime\+\_\+api.\+h$>$}\\*
+{\ttfamily \#include $<$tvm/runtime/object.\+h$>$}\\*
+{\ttfamily \#include $<$tvm/runtime/memory.\+h$>$}\\*
+{\ttfamily \#include $<$tvm/runtime/packed\+\_\+func.\+h$>$}\\*
+{\ttfamily \#include $<$tvm/runtime/ndarray.\+h$>$}\\*
+{\ttfamily \#include $<$tvm/runtime/data\+\_\+type.\+h$>$}\\*
+{\ttfamily \#include $<$tvm/node/structural\+\_\+equal.\+h$>$}\\*
+{\ttfamily \#include $<$tvm/node/structural\+\_\+hash.\+h$>$}\\*
+{\ttfamily \#include $<$vector$>$}\\*
+{\ttfamily \#include $<$string$>$}\\*
+{\ttfamily \#include $<$type\+\_\+traits$>$}\\*
+Include dependency graph for reflection.\+h\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{reflection_8h__incl}
+\end{center}
+\end{figure}
+This graph shows which files directly or indirectly include this file\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{reflection_8h__dep__incl}
+\end{center}
+\end{figure}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \hyperlink{classtvm_1_1AttrVisitor}{tvm\+::\+Attr\+Visitor}
+\begin{DoxyCompactList}\small\item\em Visitor class for to get the attributesof a A\+S\+T/\+IR node. The content is going to be called for each field. \end{DoxyCompactList}\item 
+class \hyperlink{classtvm_1_1ReflectionVTable}{tvm\+::\+Reflection\+V\+Table}
+\begin{DoxyCompactList}\small\item\em Virtual function table to support I\+R/\+A\+ST node reflection. \end{DoxyCompactList}\item 
+class \hyperlink{classtvm_1_1ReflectionVTable_1_1Registry}{tvm\+::\+Reflection\+V\+Table\+::\+Registry}
+\begin{DoxyCompactList}\small\item\em \hyperlink{classtvm_1_1ReflectionVTable_1_1Registry}{Registry} of a reflection table. \end{DoxyCompactList}\item 
+struct \hyperlink{structtvm_1_1detail_1_1ImplVisitAttrs}{tvm\+::detail\+::\+Impl\+Visit\+Attrs$<$ T, bool $>$}
+\item 
+struct \hyperlink{structtvm_1_1detail_1_1ImplVisitAttrs_3_01T_00_01true_01_4}{tvm\+::detail\+::\+Impl\+Visit\+Attrs$<$ T, true $>$}
+\item 
+struct \hyperlink{structtvm_1_1detail_1_1ImplSEqualReduce}{tvm\+::detail\+::\+Impl\+S\+Equal\+Reduce$<$ T, bool $>$}
+\item 
+struct \hyperlink{structtvm_1_1detail_1_1ImplSEqualReduce_3_01T_00_01true_01_4}{tvm\+::detail\+::\+Impl\+S\+Equal\+Reduce$<$ T, true $>$}
+\item 
+struct \hyperlink{structtvm_1_1detail_1_1ImplSHashReduce}{tvm\+::detail\+::\+Impl\+S\+Hash\+Reduce$<$ T, bool $>$}
+\item 
+struct \hyperlink{structtvm_1_1detail_1_1ImplSHashReduce_3_01T_00_01true_01_4}{tvm\+::detail\+::\+Impl\+S\+Hash\+Reduce$<$ T, true $>$}
+\item 
+struct \hyperlink{structtvm_1_1detail_1_1ReflectionTrait}{tvm\+::detail\+::\+Reflection\+Trait$<$ T $>$}
+\item 
+struct \hyperlink{structtvm_1_1detail_1_1SelectVisitAttrs}{tvm\+::detail\+::\+Select\+Visit\+Attrs$<$ T, Trait\+Name, bool $>$}
+\item 
+struct \hyperlink{structtvm_1_1detail_1_1SelectVisitAttrs_3_01T_00_01TraitName_00_01false_01_4}{tvm\+::detail\+::\+Select\+Visit\+Attrs$<$ T, Trait\+Name, false $>$}
+\item 
+struct \hyperlink{structtvm_1_1detail_1_1SelectSEqualReduce}{tvm\+::detail\+::\+Select\+S\+Equal\+Reduce$<$ T, Trait\+Name, bool $>$}
+\item 
+struct \hyperlink{structtvm_1_1detail_1_1SelectSEqualReduce_3_01T_00_01TraitName_00_01false_01_4}{tvm\+::detail\+::\+Select\+S\+Equal\+Reduce$<$ T, Trait\+Name, false $>$}
+\item 
+struct \hyperlink{structtvm_1_1detail_1_1SelectSHashReduce}{tvm\+::detail\+::\+Select\+S\+Hash\+Reduce$<$ T, Trait\+Name, bool $>$}
+\item 
+struct \hyperlink{structtvm_1_1detail_1_1SelectSHashReduce_3_01T_00_01TraitName_00_01false_01_4}{tvm\+::detail\+::\+Select\+S\+Hash\+Reduce$<$ T, Trait\+Name, false $>$}
+\end{DoxyCompactItemize}
+\subsection*{Namespaces}
+\begin{DoxyCompactItemize}
+\item 
+ \hyperlink{namespacetvm}{tvm}
+\item 
+ \hyperlink{namespacetvm_1_1detail}{tvm\+::detail}
+\end{DoxyCompactItemize}
+\subsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \hyperlink{reflection_8h_a889418628421484559c553a6636f3dcf}{T\+V\+M\+\_\+\+R\+E\+F\+L\+E\+C\+T\+I\+O\+N\+\_\+\+R\+E\+G\+\_\+\+V\+A\+R\+\_\+\+D\+EF}
+\item 
+\#define \hyperlink{reflection_8h_ad7093e57035dde5910eb7cdb2f08c64f}{T\+V\+M\+\_\+\+R\+E\+G\+I\+S\+T\+E\+R\+\_\+\+R\+E\+F\+L\+E\+C\+T\+I\+O\+N\+\_\+\+V\+T\+A\+B\+LE}(Type\+Name,  Trait\+Name)
+\begin{DoxyCompactList}\small\item\em Directly register reflection V\+Table. \end{DoxyCompactList}\item 
+\#define \hyperlink{reflection_8h_a12fd7a4323c2f8ad77d48448009f2129}{T\+V\+M\+\_\+\+R\+E\+G\+I\+S\+T\+E\+R\+\_\+\+N\+O\+D\+E\+\_\+\+T\+Y\+PE}(Type\+Name)
+\begin{DoxyCompactList}\small\item\em Register a node type to object registry and reflection registry. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Reflection and serialization of compiler I\+R/\+A\+ST nodes. 
+
+
+
+\subsection{Macro Definition Documentation}
+\index{reflection.\+h@{reflection.\+h}!T\+V\+M\+\_\+\+R\+E\+F\+L\+E\+C\+T\+I\+O\+N\+\_\+\+R\+E\+G\+\_\+\+V\+A\+R\+\_\+\+D\+EF@{T\+V\+M\+\_\+\+R\+E\+F\+L\+E\+C\+T\+I\+O\+N\+\_\+\+R\+E\+G\+\_\+\+V\+A\+R\+\_\+\+D\+EF}}
+\index{T\+V\+M\+\_\+\+R\+E\+F\+L\+E\+C\+T\+I\+O\+N\+\_\+\+R\+E\+G\+\_\+\+V\+A\+R\+\_\+\+D\+EF@{T\+V\+M\+\_\+\+R\+E\+F\+L\+E\+C\+T\+I\+O\+N\+\_\+\+R\+E\+G\+\_\+\+V\+A\+R\+\_\+\+D\+EF}!reflection.\+h@{reflection.\+h}}
+\subsubsection[{\texorpdfstring{T\+V\+M\+\_\+\+R\+E\+F\+L\+E\+C\+T\+I\+O\+N\+\_\+\+R\+E\+G\+\_\+\+V\+A\+R\+\_\+\+D\+EF}{TVM_REFLECTION_REG_VAR_DEF}}]{\setlength{\rightskip}{0pt plus 5cm}\#define T\+V\+M\+\_\+\+R\+E\+F\+L\+E\+C\+T\+I\+O\+N\+\_\+\+R\+E\+G\+\_\+\+V\+A\+R\+\_\+\+D\+EF}\hypertarget{reflection_8h_a889418628421484559c553a6636f3dcf}{}\label{reflection_8h_a889418628421484559c553a6636f3dcf}
+{\bfseries Value\+:}
+\begin{DoxyCode}
+\textcolor{keyword}{static} TVM\_ATTRIBUTE\_UNUSED ::tvm::ReflectionVTable::Registry        \(\backslash\)
+  \_\_make\_reflectiion
+\end{DoxyCode}
+\index{reflection.\+h@{reflection.\+h}!T\+V\+M\+\_\+\+R\+E\+G\+I\+S\+T\+E\+R\+\_\+\+N\+O\+D\+E\+\_\+\+T\+Y\+PE@{T\+V\+M\+\_\+\+R\+E\+G\+I\+S\+T\+E\+R\+\_\+\+N\+O\+D\+E\+\_\+\+T\+Y\+PE}}
+\index{T\+V\+M\+\_\+\+R\+E\+G\+I\+S\+T\+E\+R\+\_\+\+N\+O\+D\+E\+\_\+\+T\+Y\+PE@{T\+V\+M\+\_\+\+R\+E\+G\+I\+S\+T\+E\+R\+\_\+\+N\+O\+D\+E\+\_\+\+T\+Y\+PE}!reflection.\+h@{reflection.\+h}}
+\subsubsection[{\texorpdfstring{T\+V\+M\+\_\+\+R\+E\+G\+I\+S\+T\+E\+R\+\_\+\+N\+O\+D\+E\+\_\+\+T\+Y\+PE}{TVM_REGISTER_NODE_TYPE}}]{\setlength{\rightskip}{0pt plus 5cm}\#define T\+V\+M\+\_\+\+R\+E\+G\+I\+S\+T\+E\+R\+\_\+\+N\+O\+D\+E\+\_\+\+T\+Y\+PE(
+\begin{DoxyParamCaption}
+\item[{}]{Type\+Name}
+\end{DoxyParamCaption}
+)}\hypertarget{reflection_8h_a12fd7a4323c2f8ad77d48448009f2129}{}\label{reflection_8h_a12fd7a4323c2f8ad77d48448009f2129}
+{\bfseries Value\+:}
+\begin{DoxyCode}
+\hyperlink{object_8h_ae1029068e5e7608770038906ca30db09}{TVM\_REGISTER\_OBJECT\_TYPE}(TypeName);                                   
+      \hyperlink{reflection_8h_ad7093e57035dde5910eb7cdb2f08c64f}{\(\backslash\)}
+\hyperlink{reflection_8h_ad7093e57035dde5910eb7cdb2f08c64f}{  TVM\_REGISTER\_REFLECTION\_VTABLE}(TypeName, ::
+      \hyperlink{structtvm_1_1detail_1_1ReflectionTrait}{tvm::detail::ReflectionTrait<TypeName>}) \(\backslash\)
+  .set\_creator([](\textcolor{keyword}{const} std::string&) -> ObjectPtr<Object> \{            \(\backslash\)
+      return ::tvm::runtime::make\_object<TypeName>();                   \(\backslash\)
+    \})
+\end{DoxyCode}
+
+
+Register a node type to object registry and reflection registry. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em Type\+Name} & The name of the type. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyNote}{Note}
+This macro will call T\+V\+M\+\_\+\+R\+E\+G\+I\+S\+T\+E\+R\+\_\+\+O\+B\+J\+E\+C\+T\+\_\+\+T\+Y\+PE for the type as well. 
+\end{DoxyNote}
+\index{reflection.\+h@{reflection.\+h}!T\+V\+M\+\_\+\+R\+E\+G\+I\+S\+T\+E\+R\+\_\+\+R\+E\+F\+L\+E\+C\+T\+I\+O\+N\+\_\+\+V\+T\+A\+B\+LE@{T\+V\+M\+\_\+\+R\+E\+G\+I\+S\+T\+E\+R\+\_\+\+R\+E\+F\+L\+E\+C\+T\+I\+O\+N\+\_\+\+V\+T\+A\+B\+LE}}
+\index{T\+V\+M\+\_\+\+R\+E\+G\+I\+S\+T\+E\+R\+\_\+\+R\+E\+F\+L\+E\+C\+T\+I\+O\+N\+\_\+\+V\+T\+A\+B\+LE@{T\+V\+M\+\_\+\+R\+E\+G\+I\+S\+T\+E\+R\+\_\+\+R\+E\+F\+L\+E\+C\+T\+I\+O\+N\+\_\+\+V\+T\+A\+B\+LE}!reflection.\+h@{reflection.\+h}}
+\subsubsection[{\texorpdfstring{T\+V\+M\+\_\+\+R\+E\+G\+I\+S\+T\+E\+R\+\_\+\+R\+E\+F\+L\+E\+C\+T\+I\+O\+N\+\_\+\+V\+T\+A\+B\+LE}{TVM_REGISTER_REFLECTION_VTABLE}}]{\setlength{\rightskip}{0pt plus 5cm}\#define T\+V\+M\+\_\+\+R\+E\+G\+I\+S\+T\+E\+R\+\_\+\+R\+E\+F\+L\+E\+C\+T\+I\+O\+N\+\_\+\+V\+T\+A\+B\+LE(
+\begin{DoxyParamCaption}
+\item[{}]{Type\+Name, }
+\item[{}]{Trait\+Name}
+\end{DoxyParamCaption}
+)}\hypertarget{reflection_8h_ad7093e57035dde5910eb7cdb2f08c64f}{}\label{reflection_8h_ad7093e57035dde5910eb7cdb2f08c64f}
+{\bfseries Value\+:}
+\begin{DoxyCode}
+\hyperlink{object_8h_a73bf3e57b9d7a6e0dd55d901321d01ed}{TVM\_STR\_CONCAT}(\hyperlink{reflection_8h_a889418628421484559c553a6636f3dcf}{TVM\_REFLECTION\_REG\_VAR\_DEF}, \_\_COUNTER\_\_) =          
+         \hyperlink{classtvm_1_1ReflectionVTable_acf555f668f940322ab7b3dea1a45bd95}{\(\backslash\)}
+\hyperlink{classtvm_1_1ReflectionVTable_acf555f668f940322ab7b3dea1a45bd95}{      ::tvm::ReflectionVTable::Global}()->
+      \hyperlink{classtvm_1_1ReflectionVTable_a775a9d85f429302c05e06ddc64eb9456}{Register}<TypeName, TraitName>() \(\backslash\)
+\end{DoxyCode}
+
+
+Directly register reflection V\+Table. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em Type\+Name} & The name of the type. \\
+\hline
+{\em Trait\+Name} & A trait class that implements functions like Visit\+Attrs and S\+Equal\+Reduce.\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyCode}
+1 // Example SEQualReduce traits for runtime StringObj.
+2 
+3 struct StringObjTrait \{
+4    static constexpr const std::nullptr\_t VisitAttrs = nullptr;
+5 
+6   static bool SEqualReduce(const runtime::StringObj* lhs,
+7                            const runtime::StringObj* rhs,
+8                            SEqualReducer equal) \{
+9     if (lhs == rhs) return true;
+10     if (lhs->size != rhs->size) return false;
+11     if (lhs->data != rhs->data) return true;
+12     return std::memcmp(lhs->data, rhs->data, lhs->size) != 0;
+13   \}
+14 \};
+15 
+16 TVM\_REGISTER\_REFLECTION\_VTABLE(runtime::StringObj, StringObjTrait);
+\end{DoxyCode}
+
+
+\begin{DoxyNote}{Note}
+This macro can be called in different place as T\+V\+M\+\_\+\+R\+E\+G\+I\+S\+T\+E\+R\+\_\+\+O\+B\+J\+E\+C\+T\+\_\+\+T\+Y\+PE. And can be used to register the related reflection functions for runtime objects. 
+\end{DoxyNote}

@@ -1,0 +1,934 @@
+\hypertarget{structtvm_1_1runtime_1_1vm_1_1Instruction}{}\section{tvm\+:\+:runtime\+:\+:vm\+:\+:Instruction Struct Reference}
+\label{structtvm_1_1runtime_1_1vm_1_1Instruction}\index{tvm\+::runtime\+::vm\+::\+Instruction@{tvm\+::runtime\+::vm\+::\+Instruction}}
+
+
+A single virtual machine instruction.  
+
+
+
+
+{\ttfamily \#include $<$vm.\+h$>$}
+
+
+
+Collaboration diagram for tvm\+:\+:runtime\+:\+:vm\+:\+:Instruction\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=236pt]{structtvm_1_1runtime_1_1vm_1_1Instruction__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{structtvm_1_1runtime_1_1vm_1_1Instruction_afb6a19291861797375b04b07f174614b}{Instruction} ()
+\item 
+\hyperlink{structtvm_1_1runtime_1_1vm_1_1Instruction_a22bf3a1b6b92af774cf87893d091d5ce}{Instruction} (const \hyperlink{structtvm_1_1runtime_1_1vm_1_1Instruction}{Instruction} \&instr)
+\item 
+\hyperlink{structtvm_1_1runtime_1_1vm_1_1Instruction}{Instruction} \& \hyperlink{structtvm_1_1runtime_1_1vm_1_1Instruction_a69c12a9470f67ea26e53172f5c9220a1}{operator=} (const \hyperlink{structtvm_1_1runtime_1_1vm_1_1Instruction}{Instruction} \&instr)
+\item 
+\hyperlink{structtvm_1_1runtime_1_1vm_1_1Instruction_aff9f0ab6000156b24ef3631caf5972bd}{$\sim$\+Instruction} ()
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \hyperlink{structtvm_1_1runtime_1_1vm_1_1Instruction}{Instruction} \hyperlink{structtvm_1_1runtime_1_1vm_1_1Instruction_a25ec217ce2afe8decb3d92c716e31c83}{Ret} (\hyperlink{namespacetvm_1_1runtime_1_1vm_a3bbbf700719e9dc3dda2bc25210c18ae}{Reg\+Name} return\+\_\+reg)
+\begin{DoxyCompactList}\small\item\em Construct a return instruction. \end{DoxyCompactList}\item 
+static \hyperlink{structtvm_1_1runtime_1_1vm_1_1Instruction}{Instruction} \hyperlink{structtvm_1_1runtime_1_1vm_1_1Instruction_a1107060efafaf8af3fba3ec865334946}{Fatal} ()
+\begin{DoxyCompactList}\small\item\em Construct a fatal instruction. \end{DoxyCompactList}\item 
+static \hyperlink{structtvm_1_1runtime_1_1vm_1_1Instruction}{Instruction} \hyperlink{structtvm_1_1runtime_1_1vm_1_1Instruction_a83bcfbc103e576eac9a225ab1912c1e4}{Invoke\+Packed} (\hyperlink{namespacetvm_1_1runtime_1_1vm_a3597867d2db714bf760876a23d6b7d3d}{Index} \hyperlink{structtvm_1_1runtime_1_1vm_1_1Instruction_ac60e60c96d7bb22d8ac06169d5969232}{packed\+\_\+index}, \hyperlink{namespacetvm_1_1runtime_1_1vm_a3597867d2db714bf760876a23d6b7d3d}{Index} \hyperlink{structtvm_1_1runtime_1_1vm_1_1Instruction_a360b264ed892e620935b648e5a91a5ea}{arity}, \hyperlink{namespacetvm_1_1runtime_1_1vm_a3597867d2db714bf760876a23d6b7d3d}{Index} \hyperlink{structtvm_1_1runtime_1_1vm_1_1Instruction_a6bb6a1b8be0c078394f2336970aab1af}{output\+\_\+size}, const std\+::vector$<$ \hyperlink{namespacetvm_1_1runtime_1_1vm_a3bbbf700719e9dc3dda2bc25210c18ae}{Reg\+Name} $>$ \&args)
+\begin{DoxyCompactList}\small\item\em Construct a invoke packed instruction. \end{DoxyCompactList}\item 
+static \hyperlink{structtvm_1_1runtime_1_1vm_1_1Instruction}{Instruction} \hyperlink{structtvm_1_1runtime_1_1vm_1_1Instruction_ad7d69fff7d1f2acae7f7c802f1360ec4}{Alloc\+Tensor} (\hyperlink{namespacetvm_1_1runtime_1_1vm_a3bbbf700719e9dc3dda2bc25210c18ae}{Reg\+Name} \hyperlink{structtvm_1_1runtime_1_1vm_1_1Instruction_a3412cabd3b4f42f106f56fc22257f6ca}{storage}, const std\+::vector$<$ int64\+\_\+t $>$ \&\hyperlink{structtvm_1_1runtime_1_1vm_1_1Instruction_a1354fe84e9c14c550a53f5de8f48d968}{shape}, D\+L\+Data\+Type \hyperlink{structtvm_1_1runtime_1_1vm_1_1Instruction_a91614b450055e58850c47949b3ed2714}{dtype}, \hyperlink{namespacetvm_1_1runtime_1_1vm_a3bbbf700719e9dc3dda2bc25210c18ae}{Reg\+Name} \hyperlink{structtvm_1_1runtime_1_1vm_1_1Instruction_a17f056cc4798d31c8bcee6903be8dd1d}{dst})
+\begin{DoxyCompactList}\small\item\em Construct an allocate tensor instruction with constant shape. \end{DoxyCompactList}\item 
+static \hyperlink{structtvm_1_1runtime_1_1vm_1_1Instruction}{Instruction} \hyperlink{structtvm_1_1runtime_1_1vm_1_1Instruction_a8bac5c8e2d7a8bbf5519a6620fcc25e0}{Alloc\+Tensor\+Reg} (\hyperlink{namespacetvm_1_1runtime_1_1vm_a3bbbf700719e9dc3dda2bc25210c18ae}{Reg\+Name} \hyperlink{structtvm_1_1runtime_1_1vm_1_1Instruction_a3412cabd3b4f42f106f56fc22257f6ca}{storage}, \hyperlink{namespacetvm_1_1runtime_1_1vm_a3bbbf700719e9dc3dda2bc25210c18ae}{Reg\+Name} \hyperlink{structtvm_1_1runtime_1_1vm_1_1Instruction_a0a650382fcb2cacf9d6de7007aecf3c5}{shape\+\_\+register}, D\+L\+Data\+Type \hyperlink{structtvm_1_1runtime_1_1vm_1_1Instruction_a91614b450055e58850c47949b3ed2714}{dtype}, \hyperlink{namespacetvm_1_1runtime_1_1vm_a3bbbf700719e9dc3dda2bc25210c18ae}{Reg\+Name} \hyperlink{structtvm_1_1runtime_1_1vm_1_1Instruction_a17f056cc4798d31c8bcee6903be8dd1d}{dst})
+\begin{DoxyCompactList}\small\item\em Construct an allocate tensor instruction with register. \end{DoxyCompactList}\item 
+static \hyperlink{structtvm_1_1runtime_1_1vm_1_1Instruction}{Instruction} \hyperlink{structtvm_1_1runtime_1_1vm_1_1Instruction_aa3abb881f27ea29f0fb2eed670130a6f}{Alloc\+A\+DT} (\hyperlink{namespacetvm_1_1runtime_1_1vm_a3597867d2db714bf760876a23d6b7d3d}{Index} tag, \hyperlink{namespacetvm_1_1runtime_1_1vm_a3597867d2db714bf760876a23d6b7d3d}{Index} \hyperlink{structtvm_1_1runtime_1_1vm_1_1Instruction_a45fa340afb68a10e339b9482fda65ba7}{num\+\_\+fields}, const std\+::vector$<$ \hyperlink{namespacetvm_1_1runtime_1_1vm_a3bbbf700719e9dc3dda2bc25210c18ae}{Reg\+Name} $>$ \&fields, \hyperlink{namespacetvm_1_1runtime_1_1vm_a3bbbf700719e9dc3dda2bc25210c18ae}{Reg\+Name} \hyperlink{structtvm_1_1runtime_1_1vm_1_1Instruction_a17f056cc4798d31c8bcee6903be8dd1d}{dst})
+\begin{DoxyCompactList}\small\item\em Construct an allocate datatype instruction. \end{DoxyCompactList}\item 
+static \hyperlink{structtvm_1_1runtime_1_1vm_1_1Instruction}{Instruction} \hyperlink{structtvm_1_1runtime_1_1vm_1_1Instruction_af8d06b58af58444b96df0a932b5e4168}{Alloc\+Closure} (\hyperlink{namespacetvm_1_1runtime_1_1vm_a3597867d2db714bf760876a23d6b7d3d}{Index} \hyperlink{structtvm_1_1runtime_1_1vm_1_1Instruction_aa60b1a70648dbba4e7ec35a56a29a02d}{func\+\_\+index}, \hyperlink{namespacetvm_1_1runtime_1_1vm_a3597867d2db714bf760876a23d6b7d3d}{Index} \hyperlink{structtvm_1_1runtime_1_1vm_1_1Instruction_adbf563aa259f209ad20619c25921cdc1}{num\+\_\+freevar}, const std\+::vector$<$ \hyperlink{namespacetvm_1_1runtime_1_1vm_a3bbbf700719e9dc3dda2bc25210c18ae}{Reg\+Name} $>$ \&\hyperlink{structtvm_1_1runtime_1_1vm_1_1Instruction_a720b762553a301b526d66042afcd5ca3}{free\+\_\+vars}, \hyperlink{namespacetvm_1_1runtime_1_1vm_a3bbbf700719e9dc3dda2bc25210c18ae}{Reg\+Name} \hyperlink{structtvm_1_1runtime_1_1vm_1_1Instruction_a17f056cc4798d31c8bcee6903be8dd1d}{dst})
+\begin{DoxyCompactList}\small\item\em Construct an allocate closure instruction. \end{DoxyCompactList}\item 
+static \hyperlink{structtvm_1_1runtime_1_1vm_1_1Instruction}{Instruction} \hyperlink{structtvm_1_1runtime_1_1vm_1_1Instruction_a538ae141008bb7bcfd9513f9d3e2a54b}{Get\+Field} (\hyperlink{namespacetvm_1_1runtime_1_1vm_a3bbbf700719e9dc3dda2bc25210c18ae}{Reg\+Name} object\+\_\+reg, \hyperlink{namespacetvm_1_1runtime_1_1vm_a3597867d2db714bf760876a23d6b7d3d}{Index} \hyperlink{structtvm_1_1runtime_1_1vm_1_1Instruction_a623d715b7b22a5fa853e8d000a6f1ecd}{field\+\_\+index}, \hyperlink{namespacetvm_1_1runtime_1_1vm_a3bbbf700719e9dc3dda2bc25210c18ae}{Reg\+Name} \hyperlink{structtvm_1_1runtime_1_1vm_1_1Instruction_a17f056cc4798d31c8bcee6903be8dd1d}{dst})
+\begin{DoxyCompactList}\small\item\em Construct a get field instruction. \end{DoxyCompactList}\item 
+static \hyperlink{structtvm_1_1runtime_1_1vm_1_1Instruction}{Instruction} \hyperlink{structtvm_1_1runtime_1_1vm_1_1Instruction_a8b46d1eb3853555b6d3a85f2ef9c0868}{Get\+Tag} (\hyperlink{namespacetvm_1_1runtime_1_1vm_a3bbbf700719e9dc3dda2bc25210c18ae}{Reg\+Name} object\+\_\+reg, \hyperlink{namespacetvm_1_1runtime_1_1vm_a3bbbf700719e9dc3dda2bc25210c18ae}{Reg\+Name} \hyperlink{structtvm_1_1runtime_1_1vm_1_1Instruction_a17f056cc4798d31c8bcee6903be8dd1d}{dst})
+\begin{DoxyCompactList}\small\item\em Construct a get\+\_\+tag instruction. \end{DoxyCompactList}\item 
+static \hyperlink{structtvm_1_1runtime_1_1vm_1_1Instruction}{Instruction} \hyperlink{structtvm_1_1runtime_1_1vm_1_1Instruction_ae7a1eb87c8f583a606e89a0ad22af38b}{If} (\hyperlink{namespacetvm_1_1runtime_1_1vm_a3bbbf700719e9dc3dda2bc25210c18ae}{Reg\+Name} \hyperlink{structtvm_1_1runtime_1_1vm_1_1Instruction_adebc0e955069bdaa543df3a908351532}{test}, \hyperlink{namespacetvm_1_1runtime_1_1vm_a3bbbf700719e9dc3dda2bc25210c18ae}{Reg\+Name} \hyperlink{structtvm_1_1runtime_1_1vm_1_1Instruction_a46879dbe84105fb621a6167f8d73b223}{target}, \hyperlink{namespacetvm_1_1runtime_1_1vm_a3597867d2db714bf760876a23d6b7d3d}{Index} true\+\_\+branch, \hyperlink{namespacetvm_1_1runtime_1_1vm_a3597867d2db714bf760876a23d6b7d3d}{Index} false\+\_\+branch)
+\begin{DoxyCompactList}\small\item\em Construct an if instruction. \end{DoxyCompactList}\item 
+static \hyperlink{structtvm_1_1runtime_1_1vm_1_1Instruction}{Instruction} \hyperlink{structtvm_1_1runtime_1_1vm_1_1Instruction_a40b49fe5c05c5fe5f7a5c5c01bf651c8}{Goto} (\hyperlink{namespacetvm_1_1runtime_1_1vm_a3597867d2db714bf760876a23d6b7d3d}{Index} \hyperlink{structtvm_1_1runtime_1_1vm_1_1Instruction_a721907173e94d564bff879792b29f789}{pc\+\_\+offset})
+\begin{DoxyCompactList}\small\item\em Construct a goto instruction. \end{DoxyCompactList}\item 
+static \hyperlink{structtvm_1_1runtime_1_1vm_1_1Instruction}{Instruction} \hyperlink{structtvm_1_1runtime_1_1vm_1_1Instruction_acb19406a24fa95bf39a29d15ad6be256}{Invoke} (\hyperlink{namespacetvm_1_1runtime_1_1vm_a3597867d2db714bf760876a23d6b7d3d}{Index} \hyperlink{structtvm_1_1runtime_1_1vm_1_1Instruction_aa60b1a70648dbba4e7ec35a56a29a02d}{func\+\_\+index}, const std\+::vector$<$ \hyperlink{namespacetvm_1_1runtime_1_1vm_a3bbbf700719e9dc3dda2bc25210c18ae}{Reg\+Name} $>$ \&args, \hyperlink{namespacetvm_1_1runtime_1_1vm_a3bbbf700719e9dc3dda2bc25210c18ae}{Reg\+Name} \hyperlink{structtvm_1_1runtime_1_1vm_1_1Instruction_a17f056cc4798d31c8bcee6903be8dd1d}{dst})
+\begin{DoxyCompactList}\small\item\em Construct an invoke instruction. \end{DoxyCompactList}\item 
+static \hyperlink{structtvm_1_1runtime_1_1vm_1_1Instruction}{Instruction} \hyperlink{structtvm_1_1runtime_1_1vm_1_1Instruction_aff2701f8ac1a6232115e73fbb3fe522a}{Invoke\+Closure} (\hyperlink{namespacetvm_1_1runtime_1_1vm_a3bbbf700719e9dc3dda2bc25210c18ae}{Reg\+Name} \hyperlink{structtvm_1_1runtime_1_1vm_1_1Instruction_a3a175836bc0893d99935f32911e45bfd}{closure}, const std\+::vector$<$ \hyperlink{namespacetvm_1_1runtime_1_1vm_a3bbbf700719e9dc3dda2bc25210c18ae}{Reg\+Name} $>$ \&args, \hyperlink{namespacetvm_1_1runtime_1_1vm_a3bbbf700719e9dc3dda2bc25210c18ae}{Reg\+Name} \hyperlink{structtvm_1_1runtime_1_1vm_1_1Instruction_a17f056cc4798d31c8bcee6903be8dd1d}{dst})
+\begin{DoxyCompactList}\small\item\em Construct an invoke closure instruction. \end{DoxyCompactList}\item 
+static \hyperlink{structtvm_1_1runtime_1_1vm_1_1Instruction}{Instruction} \hyperlink{structtvm_1_1runtime_1_1vm_1_1Instruction_a24eb319b975b2929aa80cf9a7d9bf661}{Load\+Const} (\hyperlink{namespacetvm_1_1runtime_1_1vm_a3597867d2db714bf760876a23d6b7d3d}{Index} \hyperlink{structtvm_1_1runtime_1_1vm_1_1Instruction_a950d212c6493a47bfcbf368daa974853}{const\+\_\+index}, \hyperlink{namespacetvm_1_1runtime_1_1vm_a3bbbf700719e9dc3dda2bc25210c18ae}{Reg\+Name} \hyperlink{structtvm_1_1runtime_1_1vm_1_1Instruction_a17f056cc4798d31c8bcee6903be8dd1d}{dst})
+\begin{DoxyCompactList}\small\item\em Construct a load constant instruction. \end{DoxyCompactList}\item 
+static \hyperlink{structtvm_1_1runtime_1_1vm_1_1Instruction}{Instruction} \hyperlink{structtvm_1_1runtime_1_1vm_1_1Instruction_a7aa251e343bc1ebf8a164bdc243ba185}{Load\+Consti} (\hyperlink{namespacetvm_1_1runtime_1_1vm_a3597867d2db714bf760876a23d6b7d3d}{Index} \hyperlink{structtvm_1_1runtime_1_1vm_1_1Instruction_ac1e5be6bd195486a884bd8a26b5d12f9}{val}, \hyperlink{namespacetvm_1_1runtime_1_1vm_a3bbbf700719e9dc3dda2bc25210c18ae}{Reg\+Name} \hyperlink{structtvm_1_1runtime_1_1vm_1_1Instruction_a17f056cc4798d31c8bcee6903be8dd1d}{dst})
+\begin{DoxyCompactList}\small\item\em Construct a load\+\_\+constanti instruction. \end{DoxyCompactList}\item 
+static \hyperlink{structtvm_1_1runtime_1_1vm_1_1Instruction}{Instruction} \hyperlink{structtvm_1_1runtime_1_1vm_1_1Instruction_a162dc8d73dc2306f066c3ee013ff096f}{Move} (\hyperlink{namespacetvm_1_1runtime_1_1vm_a3bbbf700719e9dc3dda2bc25210c18ae}{Reg\+Name} src, \hyperlink{namespacetvm_1_1runtime_1_1vm_a3bbbf700719e9dc3dda2bc25210c18ae}{Reg\+Name} \hyperlink{structtvm_1_1runtime_1_1vm_1_1Instruction_a17f056cc4798d31c8bcee6903be8dd1d}{dst})
+\begin{DoxyCompactList}\small\item\em Construct a move instruction. \end{DoxyCompactList}\item 
+static \hyperlink{structtvm_1_1runtime_1_1vm_1_1Instruction}{Instruction} \hyperlink{structtvm_1_1runtime_1_1vm_1_1Instruction_aa9bb0614ecf04ae6a8bccfc03dbb6a1f}{Alloc\+Storage} (\hyperlink{namespacetvm_1_1runtime_1_1vm_a3bbbf700719e9dc3dda2bc25210c18ae}{Reg\+Name} size, \hyperlink{namespacetvm_1_1runtime_1_1vm_a3bbbf700719e9dc3dda2bc25210c18ae}{Reg\+Name} \hyperlink{structtvm_1_1runtime_1_1vm_1_1Instruction_ad56f744402eb006b4b8ec94ccbe840c3}{alignment}, D\+L\+Data\+Type \hyperlink{structtvm_1_1runtime_1_1vm_1_1Instruction_a0f48c1e04fe9ba735576bef37caf9cce}{dtype\+\_\+hint}, \hyperlink{namespacetvm_1_1runtime_1_1vm_a3bbbf700719e9dc3dda2bc25210c18ae}{Reg\+Name} \hyperlink{structtvm_1_1runtime_1_1vm_1_1Instruction_a17f056cc4798d31c8bcee6903be8dd1d}{dst})
+\begin{DoxyCompactList}\small\item\em Allocate a storage block. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{namespacetvm_1_1runtime_1_1vm_a8d8d95ce8d629c7213f2f595917870ec}{Opcode} \hyperlink{structtvm_1_1runtime_1_1vm_1_1Instruction_aa16a3e7e4030a69da0def6465d65e745}{op}
+\begin{DoxyCompactList}\small\item\em The instruction opcode. \end{DoxyCompactList}\item 
+\hyperlink{namespacetvm_1_1runtime_1_1vm_a3bbbf700719e9dc3dda2bc25210c18ae}{Reg\+Name} \hyperlink{structtvm_1_1runtime_1_1vm_1_1Instruction_a17f056cc4798d31c8bcee6903be8dd1d}{dst}
+\begin{DoxyCompactList}\small\item\em The destination register. \end{DoxyCompactList}\item 
+\begin{tabbing}
+xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=\kill
+union \{\\
+\>struct \{\\
+\>\>\hyperlink{namespacetvm_1_1runtime_1_1vm_a3bbbf700719e9dc3dda2bc25210c18ae}{RegName} \hyperlink{structtvm_1_1runtime_1_1vm_1_1Instruction_a3412cabd3b4f42f106f56fc22257f6ca}{storage}\\
+\>\>\>{\em The storage to allocate from. }\\
+\>\>uint32\_t \hyperlink{structtvm_1_1runtime_1_1vm_1_1Instruction_a173d5883d5721b633350c0bfc24122b9}{ndim}\\
+\>\>\>{\em The number of dimensions. }\\
+\>\>int64\_t $\ast$ \hyperlink{structtvm_1_1runtime_1_1vm_1_1Instruction_a1354fe84e9c14c550a53f5de8f48d968}{shape}\\
+\>\>\>{\em The shape of tensor. }\\
+\>\>DLDataType \hyperlink{structtvm_1_1runtime_1_1vm_1_1Instruction_a91614b450055e58850c47949b3ed2714}{dtype}\\
+\>\>\>{\em The datatype of tensor to be allocated. }\\
+\>\} \hyperlink{structtvm_1_1runtime_1_1vm_1_1Instruction_ac0cf97d97cad4decc0c2306ad74dc958}{alloc\_tensor}\\
+\>struct \{\\
+\>\>\hyperlink{namespacetvm_1_1runtime_1_1vm_a3bbbf700719e9dc3dda2bc25210c18ae}{RegName} \hyperlink{structtvm_1_1runtime_1_1vm_1_1Instruction_a3412cabd3b4f42f106f56fc22257f6ca}{storage}\\
+\>\>\>{\em The storage to allocate from. }\\
+\>\>\hyperlink{namespacetvm_1_1runtime_1_1vm_a3bbbf700719e9dc3dda2bc25210c18ae}{RegName} \hyperlink{structtvm_1_1runtime_1_1vm_1_1Instruction_a0a650382fcb2cacf9d6de7007aecf3c5}{shape\_register}\\
+\>\>\>{\em The register to read the shape out of. }\\
+\>\>DLDataType \hyperlink{structtvm_1_1runtime_1_1vm_1_1Instruction_a91614b450055e58850c47949b3ed2714}{dtype}\\
+\>\>\>{\em The datatype of tensor to be allocated. }\\
+\>\} \hyperlink{structtvm_1_1runtime_1_1vm_1_1Instruction_a631b30d31115b92d5b00e26769550b54}{alloc\_tensor\_reg}\\
+\>struct \{\\
+\>\>\hyperlink{namespacetvm_1_1runtime_1_1vm_a3bbbf700719e9dc3dda2bc25210c18ae}{RegName} \hyperlink{structtvm_1_1runtime_1_1vm_1_1Instruction_a3a175836bc0893d99935f32911e45bfd}{closure}\\
+\>\>\>{\em The register containing the closure. }\\
+\>\>\hyperlink{namespacetvm_1_1runtime_1_1vm_a3597867d2db714bf760876a23d6b7d3d}{Index} \hyperlink{structtvm_1_1runtime_1_1vm_1_1Instruction_ad4b0bb0bc9012b8e34c6fd621390532f}{num\_closure\_args}\\
+\>\>\>{\em The number of arguments to the closure. }\\
+\>\>\hyperlink{namespacetvm_1_1runtime_1_1vm_a3bbbf700719e9dc3dda2bc25210c18ae}{RegName} $\ast$ \hyperlink{structtvm_1_1runtime_1_1vm_1_1Instruction_aee9011e3fab2ace2ae167db9a4394ee8}{closure\_args}\\
+\>\>\>{\em The closure arguments as an array. }\\
+\>\} \\
+\>struct \{\\
+\>\>\hyperlink{namespacetvm_1_1runtime_1_1vm_a3bbbf700719e9dc3dda2bc25210c18ae}{RegName} \hyperlink{structtvm_1_1runtime_1_1vm_1_1Instruction_ae0d33229af059c727db2abd3616660e0}{result}\\
+\>\>\>{\em The register to return. }\\
+\>\} \\
+\>struct \{\\
+\>\>\hyperlink{namespacetvm_1_1runtime_1_1vm_a3bbbf700719e9dc3dda2bc25210c18ae}{RegName} \hyperlink{structtvm_1_1runtime_1_1vm_1_1Instruction_a50da0d506e9a2bffeaf75c702cf2cc33}{from}\\
+\>\>\>{\em The source register for a move operation. }\\
+\>\} \\
+\>struct \{\\
+\>\>\hyperlink{namespacetvm_1_1runtime_1_1vm_a3597867d2db714bf760876a23d6b7d3d}{Index} \hyperlink{structtvm_1_1runtime_1_1vm_1_1Instruction_ac60e60c96d7bb22d8ac06169d5969232}{packed\_index}\\
+\>\>\>{\em The index into the packed function table. }\\
+\>\>\hyperlink{namespacetvm_1_1runtime_1_1vm_a3597867d2db714bf760876a23d6b7d3d}{Index} \hyperlink{structtvm_1_1runtime_1_1vm_1_1Instruction_a360b264ed892e620935b648e5a91a5ea}{arity}\\
+\>\>\>{\em The arity of the packed function. }\\
+\>\>\hyperlink{namespacetvm_1_1runtime_1_1vm_a3597867d2db714bf760876a23d6b7d3d}{Index} \hyperlink{structtvm_1_1runtime_1_1vm_1_1Instruction_a6bb6a1b8be0c078394f2336970aab1af}{output\_size}\\
+\>\>\>{\em The number of outputs produced by the packed function. }\\
+\>\>\hyperlink{namespacetvm_1_1runtime_1_1vm_a3bbbf700719e9dc3dda2bc25210c18ae}{RegName} $\ast$ \hyperlink{structtvm_1_1runtime_1_1vm_1_1Instruction_a5a39350aa263659863295deab57996ed}{packed\_args}\\
+\>\>\>{\em The arguments to pass to the packed function. }\\
+\>\} \\
+\>struct \{\\
+\>\>\hyperlink{namespacetvm_1_1runtime_1_1vm_a3bbbf700719e9dc3dda2bc25210c18ae}{RegName} \hyperlink{structtvm_1_1runtime_1_1vm_1_1Instruction_adebc0e955069bdaa543df3a908351532}{test}\\
+\>\>\>{\em The register containing the test value. }\\
+\>\>\hyperlink{namespacetvm_1_1runtime_1_1vm_a3bbbf700719e9dc3dda2bc25210c18ae}{RegName} \hyperlink{structtvm_1_1runtime_1_1vm_1_1Instruction_a46879dbe84105fb621a6167f8d73b223}{target}\\
+\>\>\>{\em The register containing the target value. }\\
+\>\>\hyperlink{namespacetvm_1_1runtime_1_1vm_a3597867d2db714bf760876a23d6b7d3d}{Index} \hyperlink{structtvm_1_1runtime_1_1vm_1_1Instruction_a58e6e5eba0eba678b94273ef7deb1df2}{true\_offset}\\
+\>\>\>{\em The program counter offset for the true branch. }\\
+\>\>\hyperlink{namespacetvm_1_1runtime_1_1vm_a3597867d2db714bf760876a23d6b7d3d}{Index} \hyperlink{structtvm_1_1runtime_1_1vm_1_1Instruction_a20f3b29da9e03f2fa6977743c30a02de}{false\_offset}\\
+\>\>\>{\em The program counter offset for the false branch. }\\
+\>\} \hyperlink{structtvm_1_1runtime_1_1vm_1_1Instruction_a8e2e4f263c0c7fdf46a7840e2d40ac30}{if\_op}\\
+\>struct \{\\
+\>\>\hyperlink{namespacetvm_1_1runtime_1_1vm_a3597867d2db714bf760876a23d6b7d3d}{Index} \hyperlink{structtvm_1_1runtime_1_1vm_1_1Instruction_aa60b1a70648dbba4e7ec35a56a29a02d}{func\_index}\\
+\>\>\>{\em The function to call. }\\
+\>\>\hyperlink{namespacetvm_1_1runtime_1_1vm_a3597867d2db714bf760876a23d6b7d3d}{Index} \hyperlink{structtvm_1_1runtime_1_1vm_1_1Instruction_a5d98a3b5b50e6fa9029d05f741c0bce9}{num\_args}\\
+\>\>\>{\em The number of arguments to the function. }\\
+\>\>\hyperlink{namespacetvm_1_1runtime_1_1vm_a3bbbf700719e9dc3dda2bc25210c18ae}{RegName} $\ast$ \hyperlink{structtvm_1_1runtime_1_1vm_1_1Instruction_a6fc678bca0e215303087981a79f23b7f}{invoke\_args\_registers}\\
+\>\>\>{\em The registers containing the arguments. }\\
+\>\} \\
+\>struct \{\\
+\>\>\hyperlink{namespacetvm_1_1runtime_1_1vm_a3597867d2db714bf760876a23d6b7d3d}{Index} \hyperlink{structtvm_1_1runtime_1_1vm_1_1Instruction_a950d212c6493a47bfcbf368daa974853}{const\_index}\\
+\>\} \\
+\>struct \{\\
+\>\>\hyperlink{namespacetvm_1_1runtime_1_1vm_a3597867d2db714bf760876a23d6b7d3d}{Index} \hyperlink{structtvm_1_1runtime_1_1vm_1_1Instruction_ac1e5be6bd195486a884bd8a26b5d12f9}{val}\\
+\>\} \hyperlink{structtvm_1_1runtime_1_1vm_1_1Instruction_a283d814bcf66dea649d51cb90cb76748}{load\_consti}\\
+\>struct \{\\
+\>\>\hyperlink{namespacetvm_1_1runtime_1_1vm_a3597867d2db714bf760876a23d6b7d3d}{Index} \hyperlink{structtvm_1_1runtime_1_1vm_1_1Instruction_a721907173e94d564bff879792b29f789}{pc\_offset}\\
+\>\>\>{\em The jump offset. }\\
+\>\} \\
+\>struct \{\\
+\>\>\hyperlink{namespacetvm_1_1runtime_1_1vm_a3bbbf700719e9dc3dda2bc25210c18ae}{RegName} \hyperlink{structtvm_1_1runtime_1_1vm_1_1Instruction_a0ac4dada6519d071a819cc897cb15cf1}{object}\\
+\>\>\>{\em The register to project from. }\\
+\>\>\hyperlink{namespacetvm_1_1runtime_1_1vm_a3597867d2db714bf760876a23d6b7d3d}{Index} \hyperlink{structtvm_1_1runtime_1_1vm_1_1Instruction_a623d715b7b22a5fa853e8d000a6f1ecd}{field\_index}\\
+\>\>\>{\em The field to read out. }\\
+\>\} \\
+\>struct \{\\
+\>\>\hyperlink{namespacetvm_1_1runtime_1_1vm_a3bbbf700719e9dc3dda2bc25210c18ae}{RegName} \hyperlink{structtvm_1_1runtime_1_1vm_1_1Instruction_a0ac4dada6519d071a819cc897cb15cf1}{object}\\
+\>\>\>{\em The register to project from. }\\
+\>\} \hyperlink{structtvm_1_1runtime_1_1vm_1_1Instruction_ae9c77196c15b6e835c8b020c1c297eb2}{get\_tag}\\
+\>struct \{\\
+\>\>\hyperlink{namespacetvm_1_1runtime_1_1vm_a3597867d2db714bf760876a23d6b7d3d}{Index} \hyperlink{structtvm_1_1runtime_1_1vm_1_1Instruction_a7349fa2a2e70149d4af08289c539150f}{constructor\_tag}\\
+\>\>\>{\em The datatype\textquotesingle{}s constructor tag. }\\
+\>\>\hyperlink{namespacetvm_1_1runtime_1_1vm_a3597867d2db714bf760876a23d6b7d3d}{Index} \hyperlink{structtvm_1_1runtime_1_1vm_1_1Instruction_a45fa340afb68a10e339b9482fda65ba7}{num\_fields}\\
+\>\>\>{\em The number of fields to store in the datatype. }\\
+\>\>\hyperlink{namespacetvm_1_1runtime_1_1vm_a3bbbf700719e9dc3dda2bc25210c18ae}{RegName} $\ast$ \hyperlink{structtvm_1_1runtime_1_1vm_1_1Instruction_a25adb383014a74a9c4ac805beefe86b6}{datatype\_fields}\\
+\>\>\>{\em The fields as an array. }\\
+\>\} \\
+\>struct \{\\
+\>\>\hyperlink{namespacetvm_1_1runtime_1_1vm_a3597867d2db714bf760876a23d6b7d3d}{Index} \hyperlink{structtvm_1_1runtime_1_1vm_1_1Instruction_aaea1385d3562231a2e242faa0b51c616}{clo\_index}\\
+\>\>\>{\em The index into the function table. }\\
+\>\>\hyperlink{namespacetvm_1_1runtime_1_1vm_a3597867d2db714bf760876a23d6b7d3d}{Index} \hyperlink{structtvm_1_1runtime_1_1vm_1_1Instruction_adbf563aa259f209ad20619c25921cdc1}{num\_freevar}\\
+\>\>\>{\em The number of free variables to capture. }\\
+\>\>\hyperlink{namespacetvm_1_1runtime_1_1vm_a3bbbf700719e9dc3dda2bc25210c18ae}{RegName} $\ast$ \hyperlink{structtvm_1_1runtime_1_1vm_1_1Instruction_a720b762553a301b526d66042afcd5ca3}{free\_vars}\\
+\>\>\>{\em The free variables as an array. }\\
+\>\} \\
+\>struct \{\\
+\>\>\hyperlink{namespacetvm_1_1runtime_1_1vm_a3bbbf700719e9dc3dda2bc25210c18ae}{RegName} \hyperlink{structtvm_1_1runtime_1_1vm_1_1Instruction_a4f907889caa7c348a3a2dea88e89b827}{allocation\_size}\\
+\>\>\>{\em The size of the allocation. }\\
+\>\>\hyperlink{namespacetvm_1_1runtime_1_1vm_a3bbbf700719e9dc3dda2bc25210c18ae}{RegName} \hyperlink{structtvm_1_1runtime_1_1vm_1_1Instruction_ad56f744402eb006b4b8ec94ccbe840c3}{alignment}\\
+\>\>\>{\em The alignment of the allocation. }\\
+\>\>DLDataType \hyperlink{structtvm_1_1runtime_1_1vm_1_1Instruction_a0f48c1e04fe9ba735576bef37caf9cce}{dtype\_hint}\\
+\>\>\>{\em The hint of the dtype. }\\
+\>\} \hyperlink{structtvm_1_1runtime_1_1vm_1_1Instruction_af2ef1564cf59236e194d922633d90204}{alloc\_storage}\\
+\}; \\
+
+\end{tabbing}\end{DoxyCompactItemize}
+\subsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+std\+::ostream \& \hyperlink{structtvm_1_1runtime_1_1vm_1_1Instruction_a7948440c8e6f670e3c782619415dc184}{operator$<$$<$} (std\+::ostream \&os, const \hyperlink{structtvm_1_1runtime_1_1vm_1_1Instruction}{Instruction} \&)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+A single virtual machine instruction. 
+
+The representation of the instruction is as a tagged union.
+
+The first field represents which instruction, and by extension which field of the union is active. 
+
+\subsection{Constructor \& Destructor Documentation}
+\index{tvm\+::runtime\+::vm\+::\+Instruction@{tvm\+::runtime\+::vm\+::\+Instruction}!Instruction@{Instruction}}
+\index{Instruction@{Instruction}!tvm\+::runtime\+::vm\+::\+Instruction@{tvm\+::runtime\+::vm\+::\+Instruction}}
+\subsubsection[{\texorpdfstring{Instruction()}{Instruction()}}]{\setlength{\rightskip}{0pt plus 5cm}tvm\+::runtime\+::vm\+::\+Instruction\+::\+Instruction (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{structtvm_1_1runtime_1_1vm_1_1Instruction_afb6a19291861797375b04b07f174614b}{}\label{structtvm_1_1runtime_1_1vm_1_1Instruction_afb6a19291861797375b04b07f174614b}
+\index{tvm\+::runtime\+::vm\+::\+Instruction@{tvm\+::runtime\+::vm\+::\+Instruction}!Instruction@{Instruction}}
+\index{Instruction@{Instruction}!tvm\+::runtime\+::vm\+::\+Instruction@{tvm\+::runtime\+::vm\+::\+Instruction}}
+\subsubsection[{\texorpdfstring{Instruction(const Instruction \&instr)}{Instruction(const Instruction &instr)}}]{\setlength{\rightskip}{0pt plus 5cm}tvm\+::runtime\+::vm\+::\+Instruction\+::\+Instruction (
+\begin{DoxyParamCaption}
+\item[{const {\bf Instruction} \&}]{instr}
+\end{DoxyParamCaption}
+)}\hypertarget{structtvm_1_1runtime_1_1vm_1_1Instruction_a22bf3a1b6b92af774cf87893d091d5ce}{}\label{structtvm_1_1runtime_1_1vm_1_1Instruction_a22bf3a1b6b92af774cf87893d091d5ce}
+\index{tvm\+::runtime\+::vm\+::\+Instruction@{tvm\+::runtime\+::vm\+::\+Instruction}!````~Instruction@{$\sim$\+Instruction}}
+\index{````~Instruction@{$\sim$\+Instruction}!tvm\+::runtime\+::vm\+::\+Instruction@{tvm\+::runtime\+::vm\+::\+Instruction}}
+\subsubsection[{\texorpdfstring{$\sim$\+Instruction()}{~Instruction()}}]{\setlength{\rightskip}{0pt plus 5cm}tvm\+::runtime\+::vm\+::\+Instruction\+::$\sim$\+Instruction (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{structtvm_1_1runtime_1_1vm_1_1Instruction_aff9f0ab6000156b24ef3631caf5972bd}{}\label{structtvm_1_1runtime_1_1vm_1_1Instruction_aff9f0ab6000156b24ef3631caf5972bd}
+
+
+\subsection{Member Function Documentation}
+\index{tvm\+::runtime\+::vm\+::\+Instruction@{tvm\+::runtime\+::vm\+::\+Instruction}!Alloc\+A\+DT@{Alloc\+A\+DT}}
+\index{Alloc\+A\+DT@{Alloc\+A\+DT}!tvm\+::runtime\+::vm\+::\+Instruction@{tvm\+::runtime\+::vm\+::\+Instruction}}
+\subsubsection[{\texorpdfstring{Alloc\+A\+D\+T(\+Index tag, Index num\+\_\+fields, const std\+::vector$<$ Reg\+Name $>$ \&fields, Reg\+Name dst)}{AllocADT(Index tag, Index num_fields, const std::vector< RegName > &fields, RegName dst)}}]{\setlength{\rightskip}{0pt plus 5cm}static {\bf Instruction} tvm\+::runtime\+::vm\+::\+Instruction\+::\+Alloc\+A\+DT (
+\begin{DoxyParamCaption}
+\item[{{\bf Index}}]{tag, }
+\item[{{\bf Index}}]{num\+\_\+fields, }
+\item[{const std\+::vector$<$ {\bf Reg\+Name} $>$ \&}]{fields, }
+\item[{{\bf Reg\+Name}}]{dst}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}\hypertarget{structtvm_1_1runtime_1_1vm_1_1Instruction_aa3abb881f27ea29f0fb2eed670130a6f}{}\label{structtvm_1_1runtime_1_1vm_1_1Instruction_aa3abb881f27ea29f0fb2eed670130a6f}
+
+
+Construct an allocate datatype instruction. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em tag} & The datatype tag. \\
+\hline
+{\em num\+\_\+fields} & The number of fields for the datatype. \\
+\hline
+{\em fields} & The registers containing the fields. \\
+\hline
+{\em dst} & The register name of the destination. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The allocate instruction tensor. 
+\end{DoxyReturn}
+\index{tvm\+::runtime\+::vm\+::\+Instruction@{tvm\+::runtime\+::vm\+::\+Instruction}!Alloc\+Closure@{Alloc\+Closure}}
+\index{Alloc\+Closure@{Alloc\+Closure}!tvm\+::runtime\+::vm\+::\+Instruction@{tvm\+::runtime\+::vm\+::\+Instruction}}
+\subsubsection[{\texorpdfstring{Alloc\+Closure(\+Index func\+\_\+index, Index num\+\_\+freevar, const std\+::vector$<$ Reg\+Name $>$ \&free\+\_\+vars, Reg\+Name dst)}{AllocClosure(Index func_index, Index num_freevar, const std::vector< RegName > &free_vars, RegName dst)}}]{\setlength{\rightskip}{0pt plus 5cm}static {\bf Instruction} tvm\+::runtime\+::vm\+::\+Instruction\+::\+Alloc\+Closure (
+\begin{DoxyParamCaption}
+\item[{{\bf Index}}]{func\+\_\+index, }
+\item[{{\bf Index}}]{num\+\_\+freevar, }
+\item[{const std\+::vector$<$ {\bf Reg\+Name} $>$ \&}]{free\+\_\+vars, }
+\item[{{\bf Reg\+Name}}]{dst}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}\hypertarget{structtvm_1_1runtime_1_1vm_1_1Instruction_af8d06b58af58444b96df0a932b5e4168}{}\label{structtvm_1_1runtime_1_1vm_1_1Instruction_af8d06b58af58444b96df0a932b5e4168}
+
+
+Construct an allocate closure instruction. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em func\+\_\+index} & The index of the function table. \\
+\hline
+{\em num\+\_\+freevar} & The number of free variables. \\
+\hline
+{\em free\+\_\+vars} & The registers of the free variables. \\
+\hline
+{\em dst} & The destination register. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The allocate closure instruction. 
+\end{DoxyReturn}
+\index{tvm\+::runtime\+::vm\+::\+Instruction@{tvm\+::runtime\+::vm\+::\+Instruction}!Alloc\+Storage@{Alloc\+Storage}}
+\index{Alloc\+Storage@{Alloc\+Storage}!tvm\+::runtime\+::vm\+::\+Instruction@{tvm\+::runtime\+::vm\+::\+Instruction}}
+\subsubsection[{\texorpdfstring{Alloc\+Storage(\+Reg\+Name size, Reg\+Name alignment, D\+L\+Data\+Type dtype\+\_\+hint, Reg\+Name dst)}{AllocStorage(RegName size, RegName alignment, DLDataType dtype_hint, RegName dst)}}]{\setlength{\rightskip}{0pt plus 5cm}static {\bf Instruction} tvm\+::runtime\+::vm\+::\+Instruction\+::\+Alloc\+Storage (
+\begin{DoxyParamCaption}
+\item[{{\bf Reg\+Name}}]{size, }
+\item[{{\bf Reg\+Name}}]{alignment, }
+\item[{D\+L\+Data\+Type}]{dtype\+\_\+hint, }
+\item[{{\bf Reg\+Name}}]{dst}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}\hypertarget{structtvm_1_1runtime_1_1vm_1_1Instruction_aa9bb0614ecf04ae6a8bccfc03dbb6a1f}{}\label{structtvm_1_1runtime_1_1vm_1_1Instruction_aa9bb0614ecf04ae6a8bccfc03dbb6a1f}
+
+
+Allocate a storage block. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em size} & The size of the allocation. \\
+\hline
+{\em alignment} & The allocation\textquotesingle{}s alignment. \\
+\hline
+{\em dtype\+\_\+hint} & The data type hint for the allocator. \\
+\hline
+{\em dst} & The destination to place the storage. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The alloc storage instruction. 
+\end{DoxyReturn}
+\index{tvm\+::runtime\+::vm\+::\+Instruction@{tvm\+::runtime\+::vm\+::\+Instruction}!Alloc\+Tensor@{Alloc\+Tensor}}
+\index{Alloc\+Tensor@{Alloc\+Tensor}!tvm\+::runtime\+::vm\+::\+Instruction@{tvm\+::runtime\+::vm\+::\+Instruction}}
+\subsubsection[{\texorpdfstring{Alloc\+Tensor(\+Reg\+Name storage, const std\+::vector$<$ int64\+\_\+t $>$ \&shape, D\+L\+Data\+Type dtype, Reg\+Name dst)}{AllocTensor(RegName storage, const std::vector< int64_t > &shape, DLDataType dtype, RegName dst)}}]{\setlength{\rightskip}{0pt plus 5cm}static {\bf Instruction} tvm\+::runtime\+::vm\+::\+Instruction\+::\+Alloc\+Tensor (
+\begin{DoxyParamCaption}
+\item[{{\bf Reg\+Name}}]{storage, }
+\item[{const std\+::vector$<$ int64\+\_\+t $>$ \&}]{shape, }
+\item[{D\+L\+Data\+Type}]{dtype, }
+\item[{{\bf Reg\+Name}}]{dst}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}\hypertarget{structtvm_1_1runtime_1_1vm_1_1Instruction_ad7d69fff7d1f2acae7f7c802f1360ec4}{}\label{structtvm_1_1runtime_1_1vm_1_1Instruction_ad7d69fff7d1f2acae7f7c802f1360ec4}
+
+
+Construct an allocate tensor instruction with constant shape. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em storage} & The storage to allocate out of. \\
+\hline
+{\em shape} & The shape of the tensor. \\
+\hline
+{\em dtype} & The dtype of the tensor. \\
+\hline
+{\em dst} & The destination register. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The allocate tensor instruction. 
+\end{DoxyReturn}
+\index{tvm\+::runtime\+::vm\+::\+Instruction@{tvm\+::runtime\+::vm\+::\+Instruction}!Alloc\+Tensor\+Reg@{Alloc\+Tensor\+Reg}}
+\index{Alloc\+Tensor\+Reg@{Alloc\+Tensor\+Reg}!tvm\+::runtime\+::vm\+::\+Instruction@{tvm\+::runtime\+::vm\+::\+Instruction}}
+\subsubsection[{\texorpdfstring{Alloc\+Tensor\+Reg(\+Reg\+Name storage, Reg\+Name shape\+\_\+register, D\+L\+Data\+Type dtype, Reg\+Name dst)}{AllocTensorReg(RegName storage, RegName shape_register, DLDataType dtype, RegName dst)}}]{\setlength{\rightskip}{0pt plus 5cm}static {\bf Instruction} tvm\+::runtime\+::vm\+::\+Instruction\+::\+Alloc\+Tensor\+Reg (
+\begin{DoxyParamCaption}
+\item[{{\bf Reg\+Name}}]{storage, }
+\item[{{\bf Reg\+Name}}]{shape\+\_\+register, }
+\item[{D\+L\+Data\+Type}]{dtype, }
+\item[{{\bf Reg\+Name}}]{dst}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}\hypertarget{structtvm_1_1runtime_1_1vm_1_1Instruction_a8bac5c8e2d7a8bbf5519a6620fcc25e0}{}\label{structtvm_1_1runtime_1_1vm_1_1Instruction_a8bac5c8e2d7a8bbf5519a6620fcc25e0}
+
+
+Construct an allocate tensor instruction with register. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em storage} & The storage to allocate out of. \\
+\hline
+{\em shape\+\_\+register} & The register containing the shape. \\
+\hline
+{\em dtype} & The dtype of the tensor. \\
+\hline
+{\em dst} & The destination register. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The allocate tensor instruction. 
+\end{DoxyReturn}
+\index{tvm\+::runtime\+::vm\+::\+Instruction@{tvm\+::runtime\+::vm\+::\+Instruction}!Fatal@{Fatal}}
+\index{Fatal@{Fatal}!tvm\+::runtime\+::vm\+::\+Instruction@{tvm\+::runtime\+::vm\+::\+Instruction}}
+\subsubsection[{\texorpdfstring{Fatal()}{Fatal()}}]{\setlength{\rightskip}{0pt plus 5cm}static {\bf Instruction} tvm\+::runtime\+::vm\+::\+Instruction\+::\+Fatal (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}\hypertarget{structtvm_1_1runtime_1_1vm_1_1Instruction_a1107060efafaf8af3fba3ec865334946}{}\label{structtvm_1_1runtime_1_1vm_1_1Instruction_a1107060efafaf8af3fba3ec865334946}
+
+
+Construct a fatal instruction. 
+
+\begin{DoxyReturn}{Returns}
+The fatal instruction. 
+\end{DoxyReturn}
+\index{tvm\+::runtime\+::vm\+::\+Instruction@{tvm\+::runtime\+::vm\+::\+Instruction}!Get\+Field@{Get\+Field}}
+\index{Get\+Field@{Get\+Field}!tvm\+::runtime\+::vm\+::\+Instruction@{tvm\+::runtime\+::vm\+::\+Instruction}}
+\subsubsection[{\texorpdfstring{Get\+Field(\+Reg\+Name object\+\_\+reg, Index field\+\_\+index, Reg\+Name dst)}{GetField(RegName object_reg, Index field_index, RegName dst)}}]{\setlength{\rightskip}{0pt plus 5cm}static {\bf Instruction} tvm\+::runtime\+::vm\+::\+Instruction\+::\+Get\+Field (
+\begin{DoxyParamCaption}
+\item[{{\bf Reg\+Name}}]{object\+\_\+reg, }
+\item[{{\bf Index}}]{field\+\_\+index, }
+\item[{{\bf Reg\+Name}}]{dst}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}\hypertarget{structtvm_1_1runtime_1_1vm_1_1Instruction_a538ae141008bb7bcfd9513f9d3e2a54b}{}\label{structtvm_1_1runtime_1_1vm_1_1Instruction_a538ae141008bb7bcfd9513f9d3e2a54b}
+
+
+Construct a get field instruction. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em object\+\_\+reg} & The register containing the object to project from. \\
+\hline
+{\em field\+\_\+index} & The field to read out of the object. \\
+\hline
+{\em dst} & The destination register. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The get field instruction. 
+\end{DoxyReturn}
+\index{tvm\+::runtime\+::vm\+::\+Instruction@{tvm\+::runtime\+::vm\+::\+Instruction}!Get\+Tag@{Get\+Tag}}
+\index{Get\+Tag@{Get\+Tag}!tvm\+::runtime\+::vm\+::\+Instruction@{tvm\+::runtime\+::vm\+::\+Instruction}}
+\subsubsection[{\texorpdfstring{Get\+Tag(\+Reg\+Name object\+\_\+reg, Reg\+Name dst)}{GetTag(RegName object_reg, RegName dst)}}]{\setlength{\rightskip}{0pt plus 5cm}static {\bf Instruction} tvm\+::runtime\+::vm\+::\+Instruction\+::\+Get\+Tag (
+\begin{DoxyParamCaption}
+\item[{{\bf Reg\+Name}}]{object\+\_\+reg, }
+\item[{{\bf Reg\+Name}}]{dst}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}\hypertarget{structtvm_1_1runtime_1_1vm_1_1Instruction_a8b46d1eb3853555b6d3a85f2ef9c0868}{}\label{structtvm_1_1runtime_1_1vm_1_1Instruction_a8b46d1eb3853555b6d3a85f2ef9c0868}
+
+
+Construct a get\+\_\+tag instruction. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em object\+\_\+reg} & The register containing the object to project from. \\
+\hline
+{\em dst} & The destination register. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The get\+\_\+tag instruction. 
+\end{DoxyReturn}
+\index{tvm\+::runtime\+::vm\+::\+Instruction@{tvm\+::runtime\+::vm\+::\+Instruction}!Goto@{Goto}}
+\index{Goto@{Goto}!tvm\+::runtime\+::vm\+::\+Instruction@{tvm\+::runtime\+::vm\+::\+Instruction}}
+\subsubsection[{\texorpdfstring{Goto(\+Index pc\+\_\+offset)}{Goto(Index pc_offset)}}]{\setlength{\rightskip}{0pt plus 5cm}static {\bf Instruction} tvm\+::runtime\+::vm\+::\+Instruction\+::\+Goto (
+\begin{DoxyParamCaption}
+\item[{{\bf Index}}]{pc\+\_\+offset}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}\hypertarget{structtvm_1_1runtime_1_1vm_1_1Instruction_a40b49fe5c05c5fe5f7a5c5c01bf651c8}{}\label{structtvm_1_1runtime_1_1vm_1_1Instruction_a40b49fe5c05c5fe5f7a5c5c01bf651c8}
+
+
+Construct a goto instruction. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em pc\+\_\+offset} & The offset from the current pc. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The goto instruction. 
+\end{DoxyReturn}
+\index{tvm\+::runtime\+::vm\+::\+Instruction@{tvm\+::runtime\+::vm\+::\+Instruction}!If@{If}}
+\index{If@{If}!tvm\+::runtime\+::vm\+::\+Instruction@{tvm\+::runtime\+::vm\+::\+Instruction}}
+\subsubsection[{\texorpdfstring{If(\+Reg\+Name test, Reg\+Name target, Index true\+\_\+branch, Index false\+\_\+branch)}{If(RegName test, RegName target, Index true_branch, Index false_branch)}}]{\setlength{\rightskip}{0pt plus 5cm}static {\bf Instruction} tvm\+::runtime\+::vm\+::\+Instruction\+::\+If (
+\begin{DoxyParamCaption}
+\item[{{\bf Reg\+Name}}]{test, }
+\item[{{\bf Reg\+Name}}]{target, }
+\item[{{\bf Index}}]{true\+\_\+branch, }
+\item[{{\bf Index}}]{false\+\_\+branch}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}\hypertarget{structtvm_1_1runtime_1_1vm_1_1Instruction_ae7a1eb87c8f583a606e89a0ad22af38b}{}\label{structtvm_1_1runtime_1_1vm_1_1Instruction_ae7a1eb87c8f583a606e89a0ad22af38b}
+
+
+Construct an if instruction. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em test} & The register containing the test value. \\
+\hline
+{\em target} & The register containing the target value. \\
+\hline
+{\em true\+\_\+branch} & The offset to the true branch. \\
+\hline
+{\em false\+\_\+branch} & The offset to the false branch. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The if instruction. 
+\end{DoxyReturn}
+\index{tvm\+::runtime\+::vm\+::\+Instruction@{tvm\+::runtime\+::vm\+::\+Instruction}!Invoke@{Invoke}}
+\index{Invoke@{Invoke}!tvm\+::runtime\+::vm\+::\+Instruction@{tvm\+::runtime\+::vm\+::\+Instruction}}
+\subsubsection[{\texorpdfstring{Invoke(\+Index func\+\_\+index, const std\+::vector$<$ Reg\+Name $>$ \&args, Reg\+Name dst)}{Invoke(Index func_index, const std::vector< RegName > &args, RegName dst)}}]{\setlength{\rightskip}{0pt plus 5cm}static {\bf Instruction} tvm\+::runtime\+::vm\+::\+Instruction\+::\+Invoke (
+\begin{DoxyParamCaption}
+\item[{{\bf Index}}]{func\+\_\+index, }
+\item[{const std\+::vector$<$ {\bf Reg\+Name} $>$ \&}]{args, }
+\item[{{\bf Reg\+Name}}]{dst}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}\hypertarget{structtvm_1_1runtime_1_1vm_1_1Instruction_acb19406a24fa95bf39a29d15ad6be256}{}\label{structtvm_1_1runtime_1_1vm_1_1Instruction_acb19406a24fa95bf39a29d15ad6be256}
+
+
+Construct an invoke instruction. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em func\+\_\+index} & The index of the function to invoke. \\
+\hline
+{\em args} & The registers containing the arguments. \\
+\hline
+{\em dst} & The destination register. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The invoke instruction. 
+\end{DoxyReturn}
+\index{tvm\+::runtime\+::vm\+::\+Instruction@{tvm\+::runtime\+::vm\+::\+Instruction}!Invoke\+Closure@{Invoke\+Closure}}
+\index{Invoke\+Closure@{Invoke\+Closure}!tvm\+::runtime\+::vm\+::\+Instruction@{tvm\+::runtime\+::vm\+::\+Instruction}}
+\subsubsection[{\texorpdfstring{Invoke\+Closure(\+Reg\+Name closure, const std\+::vector$<$ Reg\+Name $>$ \&args, Reg\+Name dst)}{InvokeClosure(RegName closure, const std::vector< RegName > &args, RegName dst)}}]{\setlength{\rightskip}{0pt plus 5cm}static {\bf Instruction} tvm\+::runtime\+::vm\+::\+Instruction\+::\+Invoke\+Closure (
+\begin{DoxyParamCaption}
+\item[{{\bf Reg\+Name}}]{closure, }
+\item[{const std\+::vector$<$ {\bf Reg\+Name} $>$ \&}]{args, }
+\item[{{\bf Reg\+Name}}]{dst}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}\hypertarget{structtvm_1_1runtime_1_1vm_1_1Instruction_aff2701f8ac1a6232115e73fbb3fe522a}{}\label{structtvm_1_1runtime_1_1vm_1_1Instruction_aff2701f8ac1a6232115e73fbb3fe522a}
+
+
+Construct an invoke closure instruction. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em closure} & The register of the closure to invoke. \\
+\hline
+{\em args} & The registers containing the arguments. \\
+\hline
+{\em dst} & The destination register. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The invoke closure instruction. 
+\end{DoxyReturn}
+\index{tvm\+::runtime\+::vm\+::\+Instruction@{tvm\+::runtime\+::vm\+::\+Instruction}!Invoke\+Packed@{Invoke\+Packed}}
+\index{Invoke\+Packed@{Invoke\+Packed}!tvm\+::runtime\+::vm\+::\+Instruction@{tvm\+::runtime\+::vm\+::\+Instruction}}
+\subsubsection[{\texorpdfstring{Invoke\+Packed(\+Index packed\+\_\+index, Index arity, Index output\+\_\+size, const std\+::vector$<$ Reg\+Name $>$ \&args)}{InvokePacked(Index packed_index, Index arity, Index output_size, const std::vector< RegName > &args)}}]{\setlength{\rightskip}{0pt plus 5cm}static {\bf Instruction} tvm\+::runtime\+::vm\+::\+Instruction\+::\+Invoke\+Packed (
+\begin{DoxyParamCaption}
+\item[{{\bf Index}}]{packed\+\_\+index, }
+\item[{{\bf Index}}]{arity, }
+\item[{{\bf Index}}]{output\+\_\+size, }
+\item[{const std\+::vector$<$ {\bf Reg\+Name} $>$ \&}]{args}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}\hypertarget{structtvm_1_1runtime_1_1vm_1_1Instruction_a83bcfbc103e576eac9a225ab1912c1e4}{}\label{structtvm_1_1runtime_1_1vm_1_1Instruction_a83bcfbc103e576eac9a225ab1912c1e4}
+
+
+Construct a invoke packed instruction. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em packed\+\_\+index} & The index of the packed function. \\
+\hline
+{\em arity} & The arity of the function. \\
+\hline
+{\em output\+\_\+size} & The number of outputs of the packed function. \\
+\hline
+{\em args} & The argument registers. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The invoke packed instruction. 
+\end{DoxyReturn}
+\index{tvm\+::runtime\+::vm\+::\+Instruction@{tvm\+::runtime\+::vm\+::\+Instruction}!Load\+Const@{Load\+Const}}
+\index{Load\+Const@{Load\+Const}!tvm\+::runtime\+::vm\+::\+Instruction@{tvm\+::runtime\+::vm\+::\+Instruction}}
+\subsubsection[{\texorpdfstring{Load\+Const(\+Index const\+\_\+index, Reg\+Name dst)}{LoadConst(Index const_index, RegName dst)}}]{\setlength{\rightskip}{0pt plus 5cm}static {\bf Instruction} tvm\+::runtime\+::vm\+::\+Instruction\+::\+Load\+Const (
+\begin{DoxyParamCaption}
+\item[{{\bf Index}}]{const\+\_\+index, }
+\item[{{\bf Reg\+Name}}]{dst}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}\hypertarget{structtvm_1_1runtime_1_1vm_1_1Instruction_a24eb319b975b2929aa80cf9a7d9bf661}{}\label{structtvm_1_1runtime_1_1vm_1_1Instruction_a24eb319b975b2929aa80cf9a7d9bf661}
+
+
+Construct a load constant instruction. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em const\+\_\+index} & The index of the constant. \\
+\hline
+{\em dst} & The destination register. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The load constant instruction. 
+\end{DoxyReturn}
+\index{tvm\+::runtime\+::vm\+::\+Instruction@{tvm\+::runtime\+::vm\+::\+Instruction}!Load\+Consti@{Load\+Consti}}
+\index{Load\+Consti@{Load\+Consti}!tvm\+::runtime\+::vm\+::\+Instruction@{tvm\+::runtime\+::vm\+::\+Instruction}}
+\subsubsection[{\texorpdfstring{Load\+Consti(\+Index val, Reg\+Name dst)}{LoadConsti(Index val, RegName dst)}}]{\setlength{\rightskip}{0pt plus 5cm}static {\bf Instruction} tvm\+::runtime\+::vm\+::\+Instruction\+::\+Load\+Consti (
+\begin{DoxyParamCaption}
+\item[{{\bf Index}}]{val, }
+\item[{{\bf Reg\+Name}}]{dst}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}\hypertarget{structtvm_1_1runtime_1_1vm_1_1Instruction_a7aa251e343bc1ebf8a164bdc243ba185}{}\label{structtvm_1_1runtime_1_1vm_1_1Instruction_a7aa251e343bc1ebf8a164bdc243ba185}
+
+
+Construct a load\+\_\+constanti instruction. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em val} & The interger constant value. \\
+\hline
+{\em dst} & The destination register. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The load\+\_\+constanti instruction. 
+\end{DoxyReturn}
+\index{tvm\+::runtime\+::vm\+::\+Instruction@{tvm\+::runtime\+::vm\+::\+Instruction}!Move@{Move}}
+\index{Move@{Move}!tvm\+::runtime\+::vm\+::\+Instruction@{tvm\+::runtime\+::vm\+::\+Instruction}}
+\subsubsection[{\texorpdfstring{Move(\+Reg\+Name src, Reg\+Name dst)}{Move(RegName src, RegName dst)}}]{\setlength{\rightskip}{0pt plus 5cm}static {\bf Instruction} tvm\+::runtime\+::vm\+::\+Instruction\+::\+Move (
+\begin{DoxyParamCaption}
+\item[{{\bf Reg\+Name}}]{src, }
+\item[{{\bf Reg\+Name}}]{dst}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}\hypertarget{structtvm_1_1runtime_1_1vm_1_1Instruction_a162dc8d73dc2306f066c3ee013ff096f}{}\label{structtvm_1_1runtime_1_1vm_1_1Instruction_a162dc8d73dc2306f066c3ee013ff096f}
+
+
+Construct a move instruction. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em src} & The source register. \\
+\hline
+{\em dst} & The destination register. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The move instruction. 
+\end{DoxyReturn}
+\index{tvm\+::runtime\+::vm\+::\+Instruction@{tvm\+::runtime\+::vm\+::\+Instruction}!operator=@{operator=}}
+\index{operator=@{operator=}!tvm\+::runtime\+::vm\+::\+Instruction@{tvm\+::runtime\+::vm\+::\+Instruction}}
+\subsubsection[{\texorpdfstring{operator=(const Instruction \&instr)}{operator=(const Instruction &instr)}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Instruction}\& tvm\+::runtime\+::vm\+::\+Instruction\+::operator= (
+\begin{DoxyParamCaption}
+\item[{const {\bf Instruction} \&}]{instr}
+\end{DoxyParamCaption}
+)}\hypertarget{structtvm_1_1runtime_1_1vm_1_1Instruction_a69c12a9470f67ea26e53172f5c9220a1}{}\label{structtvm_1_1runtime_1_1vm_1_1Instruction_a69c12a9470f67ea26e53172f5c9220a1}
+\index{tvm\+::runtime\+::vm\+::\+Instruction@{tvm\+::runtime\+::vm\+::\+Instruction}!Ret@{Ret}}
+\index{Ret@{Ret}!tvm\+::runtime\+::vm\+::\+Instruction@{tvm\+::runtime\+::vm\+::\+Instruction}}
+\subsubsection[{\texorpdfstring{Ret(\+Reg\+Name return\+\_\+reg)}{Ret(RegName return_reg)}}]{\setlength{\rightskip}{0pt plus 5cm}static {\bf Instruction} tvm\+::runtime\+::vm\+::\+Instruction\+::\+Ret (
+\begin{DoxyParamCaption}
+\item[{{\bf Reg\+Name}}]{return\+\_\+reg}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}\hypertarget{structtvm_1_1runtime_1_1vm_1_1Instruction_a25ec217ce2afe8decb3d92c716e31c83}{}\label{structtvm_1_1runtime_1_1vm_1_1Instruction_a25ec217ce2afe8decb3d92c716e31c83}
+
+
+Construct a return instruction. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em return\+\_\+reg} & The register containing the return value. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The return instruction. 
+\end{DoxyReturn}
+
+
+\subsection{Friends And Related Function Documentation}
+\index{tvm\+::runtime\+::vm\+::\+Instruction@{tvm\+::runtime\+::vm\+::\+Instruction}!operator$<$$<$@{operator$<$$<$}}
+\index{operator$<$$<$@{operator$<$$<$}!tvm\+::runtime\+::vm\+::\+Instruction@{tvm\+::runtime\+::vm\+::\+Instruction}}
+\subsubsection[{\texorpdfstring{operator$<$$<$}{operator<<}}]{\setlength{\rightskip}{0pt plus 5cm}std\+::ostream\& operator$<$$<$ (
+\begin{DoxyParamCaption}
+\item[{std\+::ostream \&}]{os, }
+\item[{const {\bf Instruction} \&}]{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [friend]}}\hypertarget{structtvm_1_1runtime_1_1vm_1_1Instruction_a7948440c8e6f670e3c782619415dc184}{}\label{structtvm_1_1runtime_1_1vm_1_1Instruction_a7948440c8e6f670e3c782619415dc184}
+
+
+\subsection{Member Data Documentation}
+\subsubsection[{\texorpdfstring{"@1}{@1}}]{\setlength{\rightskip}{0pt plus 5cm}union \{ ... \} }\hypertarget{structtvm_1_1runtime_1_1vm_1_1Instruction_a07b7eb011780c5735fc13059229bb26d}{}\label{structtvm_1_1runtime_1_1vm_1_1Instruction_a07b7eb011780c5735fc13059229bb26d}
+\index{tvm\+::runtime\+::vm\+::\+Instruction@{tvm\+::runtime\+::vm\+::\+Instruction}!alignment@{alignment}}
+\index{alignment@{alignment}!tvm\+::runtime\+::vm\+::\+Instruction@{tvm\+::runtime\+::vm\+::\+Instruction}}
+\subsubsection[{\texorpdfstring{alignment}{alignment}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Reg\+Name} tvm\+::runtime\+::vm\+::\+Instruction\+::alignment}\hypertarget{structtvm_1_1runtime_1_1vm_1_1Instruction_ad56f744402eb006b4b8ec94ccbe840c3}{}\label{structtvm_1_1runtime_1_1vm_1_1Instruction_ad56f744402eb006b4b8ec94ccbe840c3}
+
+
+The alignment of the allocation. 
+
+\index{tvm\+::runtime\+::vm\+::\+Instruction@{tvm\+::runtime\+::vm\+::\+Instruction}!alloc\+\_\+storage@{alloc\+\_\+storage}}
+\index{alloc\+\_\+storage@{alloc\+\_\+storage}!tvm\+::runtime\+::vm\+::\+Instruction@{tvm\+::runtime\+::vm\+::\+Instruction}}
+\subsubsection[{\texorpdfstring{alloc\+\_\+storage}{alloc_storage}}]{\setlength{\rightskip}{0pt plus 5cm}struct \{ ... \}   tvm\+::runtime\+::vm\+::\+Instruction\+::alloc\+\_\+storage}\hypertarget{structtvm_1_1runtime_1_1vm_1_1Instruction_af2ef1564cf59236e194d922633d90204}{}\label{structtvm_1_1runtime_1_1vm_1_1Instruction_af2ef1564cf59236e194d922633d90204}
+\index{tvm\+::runtime\+::vm\+::\+Instruction@{tvm\+::runtime\+::vm\+::\+Instruction}!alloc\+\_\+tensor@{alloc\+\_\+tensor}}
+\index{alloc\+\_\+tensor@{alloc\+\_\+tensor}!tvm\+::runtime\+::vm\+::\+Instruction@{tvm\+::runtime\+::vm\+::\+Instruction}}
+\subsubsection[{\texorpdfstring{alloc\+\_\+tensor}{alloc_tensor}}]{\setlength{\rightskip}{0pt plus 5cm}struct \{ ... \}   tvm\+::runtime\+::vm\+::\+Instruction\+::alloc\+\_\+tensor}\hypertarget{structtvm_1_1runtime_1_1vm_1_1Instruction_ac0cf97d97cad4decc0c2306ad74dc958}{}\label{structtvm_1_1runtime_1_1vm_1_1Instruction_ac0cf97d97cad4decc0c2306ad74dc958}
+\index{tvm\+::runtime\+::vm\+::\+Instruction@{tvm\+::runtime\+::vm\+::\+Instruction}!alloc\+\_\+tensor\+\_\+reg@{alloc\+\_\+tensor\+\_\+reg}}
+\index{alloc\+\_\+tensor\+\_\+reg@{alloc\+\_\+tensor\+\_\+reg}!tvm\+::runtime\+::vm\+::\+Instruction@{tvm\+::runtime\+::vm\+::\+Instruction}}
+\subsubsection[{\texorpdfstring{alloc\+\_\+tensor\+\_\+reg}{alloc_tensor_reg}}]{\setlength{\rightskip}{0pt plus 5cm}struct \{ ... \}   tvm\+::runtime\+::vm\+::\+Instruction\+::alloc\+\_\+tensor\+\_\+reg}\hypertarget{structtvm_1_1runtime_1_1vm_1_1Instruction_a631b30d31115b92d5b00e26769550b54}{}\label{structtvm_1_1runtime_1_1vm_1_1Instruction_a631b30d31115b92d5b00e26769550b54}
+\index{tvm\+::runtime\+::vm\+::\+Instruction@{tvm\+::runtime\+::vm\+::\+Instruction}!allocation\+\_\+size@{allocation\+\_\+size}}
+\index{allocation\+\_\+size@{allocation\+\_\+size}!tvm\+::runtime\+::vm\+::\+Instruction@{tvm\+::runtime\+::vm\+::\+Instruction}}
+\subsubsection[{\texorpdfstring{allocation\+\_\+size}{allocation_size}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Reg\+Name} tvm\+::runtime\+::vm\+::\+Instruction\+::allocation\+\_\+size}\hypertarget{structtvm_1_1runtime_1_1vm_1_1Instruction_a4f907889caa7c348a3a2dea88e89b827}{}\label{structtvm_1_1runtime_1_1vm_1_1Instruction_a4f907889caa7c348a3a2dea88e89b827}
+
+
+The size of the allocation. 
+
+\index{tvm\+::runtime\+::vm\+::\+Instruction@{tvm\+::runtime\+::vm\+::\+Instruction}!arity@{arity}}
+\index{arity@{arity}!tvm\+::runtime\+::vm\+::\+Instruction@{tvm\+::runtime\+::vm\+::\+Instruction}}
+\subsubsection[{\texorpdfstring{arity}{arity}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Index} tvm\+::runtime\+::vm\+::\+Instruction\+::arity}\hypertarget{structtvm_1_1runtime_1_1vm_1_1Instruction_a360b264ed892e620935b648e5a91a5ea}{}\label{structtvm_1_1runtime_1_1vm_1_1Instruction_a360b264ed892e620935b648e5a91a5ea}
+
+
+The arity of the packed function. 
+
+\index{tvm\+::runtime\+::vm\+::\+Instruction@{tvm\+::runtime\+::vm\+::\+Instruction}!clo\+\_\+index@{clo\+\_\+index}}
+\index{clo\+\_\+index@{clo\+\_\+index}!tvm\+::runtime\+::vm\+::\+Instruction@{tvm\+::runtime\+::vm\+::\+Instruction}}
+\subsubsection[{\texorpdfstring{clo\+\_\+index}{clo_index}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Index} tvm\+::runtime\+::vm\+::\+Instruction\+::clo\+\_\+index}\hypertarget{structtvm_1_1runtime_1_1vm_1_1Instruction_aaea1385d3562231a2e242faa0b51c616}{}\label{structtvm_1_1runtime_1_1vm_1_1Instruction_aaea1385d3562231a2e242faa0b51c616}
+
+
+The index into the function table. 
+
+\index{tvm\+::runtime\+::vm\+::\+Instruction@{tvm\+::runtime\+::vm\+::\+Instruction}!closure@{closure}}
+\index{closure@{closure}!tvm\+::runtime\+::vm\+::\+Instruction@{tvm\+::runtime\+::vm\+::\+Instruction}}
+\subsubsection[{\texorpdfstring{closure}{closure}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Reg\+Name} tvm\+::runtime\+::vm\+::\+Instruction\+::closure}\hypertarget{structtvm_1_1runtime_1_1vm_1_1Instruction_a3a175836bc0893d99935f32911e45bfd}{}\label{structtvm_1_1runtime_1_1vm_1_1Instruction_a3a175836bc0893d99935f32911e45bfd}
+
+
+The register containing the closure. 
+
+\index{tvm\+::runtime\+::vm\+::\+Instruction@{tvm\+::runtime\+::vm\+::\+Instruction}!closure\+\_\+args@{closure\+\_\+args}}
+\index{closure\+\_\+args@{closure\+\_\+args}!tvm\+::runtime\+::vm\+::\+Instruction@{tvm\+::runtime\+::vm\+::\+Instruction}}
+\subsubsection[{\texorpdfstring{closure\+\_\+args}{closure_args}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Reg\+Name}$\ast$ tvm\+::runtime\+::vm\+::\+Instruction\+::closure\+\_\+args}\hypertarget{structtvm_1_1runtime_1_1vm_1_1Instruction_aee9011e3fab2ace2ae167db9a4394ee8}{}\label{structtvm_1_1runtime_1_1vm_1_1Instruction_aee9011e3fab2ace2ae167db9a4394ee8}
+
+
+The closure arguments as an array. 
+
+\index{tvm\+::runtime\+::vm\+::\+Instruction@{tvm\+::runtime\+::vm\+::\+Instruction}!const\+\_\+index@{const\+\_\+index}}
+\index{const\+\_\+index@{const\+\_\+index}!tvm\+::runtime\+::vm\+::\+Instruction@{tvm\+::runtime\+::vm\+::\+Instruction}}
+\subsubsection[{\texorpdfstring{const\+\_\+index}{const_index}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Index} tvm\+::runtime\+::vm\+::\+Instruction\+::const\+\_\+index}\hypertarget{structtvm_1_1runtime_1_1vm_1_1Instruction_a950d212c6493a47bfcbf368daa974853}{}\label{structtvm_1_1runtime_1_1vm_1_1Instruction_a950d212c6493a47bfcbf368daa974853}
+\index{tvm\+::runtime\+::vm\+::\+Instruction@{tvm\+::runtime\+::vm\+::\+Instruction}!constructor\+\_\+tag@{constructor\+\_\+tag}}
+\index{constructor\+\_\+tag@{constructor\+\_\+tag}!tvm\+::runtime\+::vm\+::\+Instruction@{tvm\+::runtime\+::vm\+::\+Instruction}}
+\subsubsection[{\texorpdfstring{constructor\+\_\+tag}{constructor_tag}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Index} tvm\+::runtime\+::vm\+::\+Instruction\+::constructor\+\_\+tag}\hypertarget{structtvm_1_1runtime_1_1vm_1_1Instruction_a7349fa2a2e70149d4af08289c539150f}{}\label{structtvm_1_1runtime_1_1vm_1_1Instruction_a7349fa2a2e70149d4af08289c539150f}
+
+
+The datatype\textquotesingle{}s constructor tag. 
+
+\index{tvm\+::runtime\+::vm\+::\+Instruction@{tvm\+::runtime\+::vm\+::\+Instruction}!datatype\+\_\+fields@{datatype\+\_\+fields}}
+\index{datatype\+\_\+fields@{datatype\+\_\+fields}!tvm\+::runtime\+::vm\+::\+Instruction@{tvm\+::runtime\+::vm\+::\+Instruction}}
+\subsubsection[{\texorpdfstring{datatype\+\_\+fields}{datatype_fields}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Reg\+Name}$\ast$ tvm\+::runtime\+::vm\+::\+Instruction\+::datatype\+\_\+fields}\hypertarget{structtvm_1_1runtime_1_1vm_1_1Instruction_a25adb383014a74a9c4ac805beefe86b6}{}\label{structtvm_1_1runtime_1_1vm_1_1Instruction_a25adb383014a74a9c4ac805beefe86b6}
+
+
+The fields as an array. 
+
+\index{tvm\+::runtime\+::vm\+::\+Instruction@{tvm\+::runtime\+::vm\+::\+Instruction}!dst@{dst}}
+\index{dst@{dst}!tvm\+::runtime\+::vm\+::\+Instruction@{tvm\+::runtime\+::vm\+::\+Instruction}}
+\subsubsection[{\texorpdfstring{dst}{dst}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Reg\+Name} tvm\+::runtime\+::vm\+::\+Instruction\+::dst}\hypertarget{structtvm_1_1runtime_1_1vm_1_1Instruction_a17f056cc4798d31c8bcee6903be8dd1d}{}\label{structtvm_1_1runtime_1_1vm_1_1Instruction_a17f056cc4798d31c8bcee6903be8dd1d}
+
+
+The destination register. 
+
+\index{tvm\+::runtime\+::vm\+::\+Instruction@{tvm\+::runtime\+::vm\+::\+Instruction}!dtype@{dtype}}
+\index{dtype@{dtype}!tvm\+::runtime\+::vm\+::\+Instruction@{tvm\+::runtime\+::vm\+::\+Instruction}}
+\subsubsection[{\texorpdfstring{dtype}{dtype}}]{\setlength{\rightskip}{0pt plus 5cm}D\+L\+Data\+Type tvm\+::runtime\+::vm\+::\+Instruction\+::dtype}\hypertarget{structtvm_1_1runtime_1_1vm_1_1Instruction_a91614b450055e58850c47949b3ed2714}{}\label{structtvm_1_1runtime_1_1vm_1_1Instruction_a91614b450055e58850c47949b3ed2714}
+
+
+The datatype of tensor to be allocated. 
+
+\index{tvm\+::runtime\+::vm\+::\+Instruction@{tvm\+::runtime\+::vm\+::\+Instruction}!dtype\+\_\+hint@{dtype\+\_\+hint}}
+\index{dtype\+\_\+hint@{dtype\+\_\+hint}!tvm\+::runtime\+::vm\+::\+Instruction@{tvm\+::runtime\+::vm\+::\+Instruction}}
+\subsubsection[{\texorpdfstring{dtype\+\_\+hint}{dtype_hint}}]{\setlength{\rightskip}{0pt plus 5cm}D\+L\+Data\+Type tvm\+::runtime\+::vm\+::\+Instruction\+::dtype\+\_\+hint}\hypertarget{structtvm_1_1runtime_1_1vm_1_1Instruction_a0f48c1e04fe9ba735576bef37caf9cce}{}\label{structtvm_1_1runtime_1_1vm_1_1Instruction_a0f48c1e04fe9ba735576bef37caf9cce}
+
+
+The hint of the dtype. 
+
+\index{tvm\+::runtime\+::vm\+::\+Instruction@{tvm\+::runtime\+::vm\+::\+Instruction}!false\+\_\+offset@{false\+\_\+offset}}
+\index{false\+\_\+offset@{false\+\_\+offset}!tvm\+::runtime\+::vm\+::\+Instruction@{tvm\+::runtime\+::vm\+::\+Instruction}}
+\subsubsection[{\texorpdfstring{false\+\_\+offset}{false_offset}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Index} tvm\+::runtime\+::vm\+::\+Instruction\+::false\+\_\+offset}\hypertarget{structtvm_1_1runtime_1_1vm_1_1Instruction_a20f3b29da9e03f2fa6977743c30a02de}{}\label{structtvm_1_1runtime_1_1vm_1_1Instruction_a20f3b29da9e03f2fa6977743c30a02de}
+
+
+The program counter offset for the false branch. 
+
+\index{tvm\+::runtime\+::vm\+::\+Instruction@{tvm\+::runtime\+::vm\+::\+Instruction}!field\+\_\+index@{field\+\_\+index}}
+\index{field\+\_\+index@{field\+\_\+index}!tvm\+::runtime\+::vm\+::\+Instruction@{tvm\+::runtime\+::vm\+::\+Instruction}}
+\subsubsection[{\texorpdfstring{field\+\_\+index}{field_index}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Index} tvm\+::runtime\+::vm\+::\+Instruction\+::field\+\_\+index}\hypertarget{structtvm_1_1runtime_1_1vm_1_1Instruction_a623d715b7b22a5fa853e8d000a6f1ecd}{}\label{structtvm_1_1runtime_1_1vm_1_1Instruction_a623d715b7b22a5fa853e8d000a6f1ecd}
+
+
+The field to read out. 
+
+\index{tvm\+::runtime\+::vm\+::\+Instruction@{tvm\+::runtime\+::vm\+::\+Instruction}!free\+\_\+vars@{free\+\_\+vars}}
+\index{free\+\_\+vars@{free\+\_\+vars}!tvm\+::runtime\+::vm\+::\+Instruction@{tvm\+::runtime\+::vm\+::\+Instruction}}
+\subsubsection[{\texorpdfstring{free\+\_\+vars}{free_vars}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Reg\+Name}$\ast$ tvm\+::runtime\+::vm\+::\+Instruction\+::free\+\_\+vars}\hypertarget{structtvm_1_1runtime_1_1vm_1_1Instruction_a720b762553a301b526d66042afcd5ca3}{}\label{structtvm_1_1runtime_1_1vm_1_1Instruction_a720b762553a301b526d66042afcd5ca3}
+
+
+The free variables as an array. 
+
+\index{tvm\+::runtime\+::vm\+::\+Instruction@{tvm\+::runtime\+::vm\+::\+Instruction}!from@{from}}
+\index{from@{from}!tvm\+::runtime\+::vm\+::\+Instruction@{tvm\+::runtime\+::vm\+::\+Instruction}}
+\subsubsection[{\texorpdfstring{from}{from}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Reg\+Name} tvm\+::runtime\+::vm\+::\+Instruction\+::from}\hypertarget{structtvm_1_1runtime_1_1vm_1_1Instruction_a50da0d506e9a2bffeaf75c702cf2cc33}{}\label{structtvm_1_1runtime_1_1vm_1_1Instruction_a50da0d506e9a2bffeaf75c702cf2cc33}
+
+
+The source register for a move operation. 
+
+\index{tvm\+::runtime\+::vm\+::\+Instruction@{tvm\+::runtime\+::vm\+::\+Instruction}!func\+\_\+index@{func\+\_\+index}}
+\index{func\+\_\+index@{func\+\_\+index}!tvm\+::runtime\+::vm\+::\+Instruction@{tvm\+::runtime\+::vm\+::\+Instruction}}
+\subsubsection[{\texorpdfstring{func\+\_\+index}{func_index}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Index} tvm\+::runtime\+::vm\+::\+Instruction\+::func\+\_\+index}\hypertarget{structtvm_1_1runtime_1_1vm_1_1Instruction_aa60b1a70648dbba4e7ec35a56a29a02d}{}\label{structtvm_1_1runtime_1_1vm_1_1Instruction_aa60b1a70648dbba4e7ec35a56a29a02d}
+
+
+The function to call. 
+
+\index{tvm\+::runtime\+::vm\+::\+Instruction@{tvm\+::runtime\+::vm\+::\+Instruction}!get\+\_\+tag@{get\+\_\+tag}}
+\index{get\+\_\+tag@{get\+\_\+tag}!tvm\+::runtime\+::vm\+::\+Instruction@{tvm\+::runtime\+::vm\+::\+Instruction}}
+\subsubsection[{\texorpdfstring{get\+\_\+tag}{get_tag}}]{\setlength{\rightskip}{0pt plus 5cm}struct \{ ... \}   tvm\+::runtime\+::vm\+::\+Instruction\+::get\+\_\+tag}\hypertarget{structtvm_1_1runtime_1_1vm_1_1Instruction_ae9c77196c15b6e835c8b020c1c297eb2}{}\label{structtvm_1_1runtime_1_1vm_1_1Instruction_ae9c77196c15b6e835c8b020c1c297eb2}
+\index{tvm\+::runtime\+::vm\+::\+Instruction@{tvm\+::runtime\+::vm\+::\+Instruction}!if\+\_\+op@{if\+\_\+op}}
+\index{if\+\_\+op@{if\+\_\+op}!tvm\+::runtime\+::vm\+::\+Instruction@{tvm\+::runtime\+::vm\+::\+Instruction}}
+\subsubsection[{\texorpdfstring{if\+\_\+op}{if_op}}]{\setlength{\rightskip}{0pt plus 5cm}struct \{ ... \}   tvm\+::runtime\+::vm\+::\+Instruction\+::if\+\_\+op}\hypertarget{structtvm_1_1runtime_1_1vm_1_1Instruction_a8e2e4f263c0c7fdf46a7840e2d40ac30}{}\label{structtvm_1_1runtime_1_1vm_1_1Instruction_a8e2e4f263c0c7fdf46a7840e2d40ac30}
+\index{tvm\+::runtime\+::vm\+::\+Instruction@{tvm\+::runtime\+::vm\+::\+Instruction}!invoke\+\_\+args\+\_\+registers@{invoke\+\_\+args\+\_\+registers}}
+\index{invoke\+\_\+args\+\_\+registers@{invoke\+\_\+args\+\_\+registers}!tvm\+::runtime\+::vm\+::\+Instruction@{tvm\+::runtime\+::vm\+::\+Instruction}}
+\subsubsection[{\texorpdfstring{invoke\+\_\+args\+\_\+registers}{invoke_args_registers}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Reg\+Name}$\ast$ tvm\+::runtime\+::vm\+::\+Instruction\+::invoke\+\_\+args\+\_\+registers}\hypertarget{structtvm_1_1runtime_1_1vm_1_1Instruction_a6fc678bca0e215303087981a79f23b7f}{}\label{structtvm_1_1runtime_1_1vm_1_1Instruction_a6fc678bca0e215303087981a79f23b7f}
+
+
+The registers containing the arguments. 
+
+\index{tvm\+::runtime\+::vm\+::\+Instruction@{tvm\+::runtime\+::vm\+::\+Instruction}!load\+\_\+consti@{load\+\_\+consti}}
+\index{load\+\_\+consti@{load\+\_\+consti}!tvm\+::runtime\+::vm\+::\+Instruction@{tvm\+::runtime\+::vm\+::\+Instruction}}
+\subsubsection[{\texorpdfstring{load\+\_\+consti}{load_consti}}]{\setlength{\rightskip}{0pt plus 5cm}struct \{ ... \}   tvm\+::runtime\+::vm\+::\+Instruction\+::load\+\_\+consti}\hypertarget{structtvm_1_1runtime_1_1vm_1_1Instruction_a283d814bcf66dea649d51cb90cb76748}{}\label{structtvm_1_1runtime_1_1vm_1_1Instruction_a283d814bcf66dea649d51cb90cb76748}
+\index{tvm\+::runtime\+::vm\+::\+Instruction@{tvm\+::runtime\+::vm\+::\+Instruction}!ndim@{ndim}}
+\index{ndim@{ndim}!tvm\+::runtime\+::vm\+::\+Instruction@{tvm\+::runtime\+::vm\+::\+Instruction}}
+\subsubsection[{\texorpdfstring{ndim}{ndim}}]{\setlength{\rightskip}{0pt plus 5cm}uint32\+\_\+t tvm\+::runtime\+::vm\+::\+Instruction\+::ndim}\hypertarget{structtvm_1_1runtime_1_1vm_1_1Instruction_a173d5883d5721b633350c0bfc24122b9}{}\label{structtvm_1_1runtime_1_1vm_1_1Instruction_a173d5883d5721b633350c0bfc24122b9}
+
+
+The number of dimensions. 
+
+\index{tvm\+::runtime\+::vm\+::\+Instruction@{tvm\+::runtime\+::vm\+::\+Instruction}!num\+\_\+args@{num\+\_\+args}}
+\index{num\+\_\+args@{num\+\_\+args}!tvm\+::runtime\+::vm\+::\+Instruction@{tvm\+::runtime\+::vm\+::\+Instruction}}
+\subsubsection[{\texorpdfstring{num\+\_\+args}{num_args}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Index} tvm\+::runtime\+::vm\+::\+Instruction\+::num\+\_\+args}\hypertarget{structtvm_1_1runtime_1_1vm_1_1Instruction_a5d98a3b5b50e6fa9029d05f741c0bce9}{}\label{structtvm_1_1runtime_1_1vm_1_1Instruction_a5d98a3b5b50e6fa9029d05f741c0bce9}
+
+
+The number of arguments to the function. 
+
+\index{tvm\+::runtime\+::vm\+::\+Instruction@{tvm\+::runtime\+::vm\+::\+Instruction}!num\+\_\+closure\+\_\+args@{num\+\_\+closure\+\_\+args}}
+\index{num\+\_\+closure\+\_\+args@{num\+\_\+closure\+\_\+args}!tvm\+::runtime\+::vm\+::\+Instruction@{tvm\+::runtime\+::vm\+::\+Instruction}}
+\subsubsection[{\texorpdfstring{num\+\_\+closure\+\_\+args}{num_closure_args}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Index} tvm\+::runtime\+::vm\+::\+Instruction\+::num\+\_\+closure\+\_\+args}\hypertarget{structtvm_1_1runtime_1_1vm_1_1Instruction_ad4b0bb0bc9012b8e34c6fd621390532f}{}\label{structtvm_1_1runtime_1_1vm_1_1Instruction_ad4b0bb0bc9012b8e34c6fd621390532f}
+
+
+The number of arguments to the closure. 
+
+\index{tvm\+::runtime\+::vm\+::\+Instruction@{tvm\+::runtime\+::vm\+::\+Instruction}!num\+\_\+fields@{num\+\_\+fields}}
+\index{num\+\_\+fields@{num\+\_\+fields}!tvm\+::runtime\+::vm\+::\+Instruction@{tvm\+::runtime\+::vm\+::\+Instruction}}
+\subsubsection[{\texorpdfstring{num\+\_\+fields}{num_fields}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Index} tvm\+::runtime\+::vm\+::\+Instruction\+::num\+\_\+fields}\hypertarget{structtvm_1_1runtime_1_1vm_1_1Instruction_a45fa340afb68a10e339b9482fda65ba7}{}\label{structtvm_1_1runtime_1_1vm_1_1Instruction_a45fa340afb68a10e339b9482fda65ba7}
+
+
+The number of fields to store in the datatype. 
+
+\index{tvm\+::runtime\+::vm\+::\+Instruction@{tvm\+::runtime\+::vm\+::\+Instruction}!num\+\_\+freevar@{num\+\_\+freevar}}
+\index{num\+\_\+freevar@{num\+\_\+freevar}!tvm\+::runtime\+::vm\+::\+Instruction@{tvm\+::runtime\+::vm\+::\+Instruction}}
+\subsubsection[{\texorpdfstring{num\+\_\+freevar}{num_freevar}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Index} tvm\+::runtime\+::vm\+::\+Instruction\+::num\+\_\+freevar}\hypertarget{structtvm_1_1runtime_1_1vm_1_1Instruction_adbf563aa259f209ad20619c25921cdc1}{}\label{structtvm_1_1runtime_1_1vm_1_1Instruction_adbf563aa259f209ad20619c25921cdc1}
+
+
+The number of free variables to capture. 
+
+\index{tvm\+::runtime\+::vm\+::\+Instruction@{tvm\+::runtime\+::vm\+::\+Instruction}!object@{object}}
+\index{object@{object}!tvm\+::runtime\+::vm\+::\+Instruction@{tvm\+::runtime\+::vm\+::\+Instruction}}
+\subsubsection[{\texorpdfstring{object}{object}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Reg\+Name} tvm\+::runtime\+::vm\+::\+Instruction\+::object}\hypertarget{structtvm_1_1runtime_1_1vm_1_1Instruction_a0ac4dada6519d071a819cc897cb15cf1}{}\label{structtvm_1_1runtime_1_1vm_1_1Instruction_a0ac4dada6519d071a819cc897cb15cf1}
+
+
+The register to project from. 
+
+\index{tvm\+::runtime\+::vm\+::\+Instruction@{tvm\+::runtime\+::vm\+::\+Instruction}!op@{op}}
+\index{op@{op}!tvm\+::runtime\+::vm\+::\+Instruction@{tvm\+::runtime\+::vm\+::\+Instruction}}
+\subsubsection[{\texorpdfstring{op}{op}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Opcode} tvm\+::runtime\+::vm\+::\+Instruction\+::op}\hypertarget{structtvm_1_1runtime_1_1vm_1_1Instruction_aa16a3e7e4030a69da0def6465d65e745}{}\label{structtvm_1_1runtime_1_1vm_1_1Instruction_aa16a3e7e4030a69da0def6465d65e745}
+
+
+The instruction opcode. 
+
+\index{tvm\+::runtime\+::vm\+::\+Instruction@{tvm\+::runtime\+::vm\+::\+Instruction}!output\+\_\+size@{output\+\_\+size}}
+\index{output\+\_\+size@{output\+\_\+size}!tvm\+::runtime\+::vm\+::\+Instruction@{tvm\+::runtime\+::vm\+::\+Instruction}}
+\subsubsection[{\texorpdfstring{output\+\_\+size}{output_size}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Index} tvm\+::runtime\+::vm\+::\+Instruction\+::output\+\_\+size}\hypertarget{structtvm_1_1runtime_1_1vm_1_1Instruction_a6bb6a1b8be0c078394f2336970aab1af}{}\label{structtvm_1_1runtime_1_1vm_1_1Instruction_a6bb6a1b8be0c078394f2336970aab1af}
+
+
+The number of outputs produced by the packed function. 
+
+\index{tvm\+::runtime\+::vm\+::\+Instruction@{tvm\+::runtime\+::vm\+::\+Instruction}!packed\+\_\+args@{packed\+\_\+args}}
+\index{packed\+\_\+args@{packed\+\_\+args}!tvm\+::runtime\+::vm\+::\+Instruction@{tvm\+::runtime\+::vm\+::\+Instruction}}
+\subsubsection[{\texorpdfstring{packed\+\_\+args}{packed_args}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Reg\+Name}$\ast$ tvm\+::runtime\+::vm\+::\+Instruction\+::packed\+\_\+args}\hypertarget{structtvm_1_1runtime_1_1vm_1_1Instruction_a5a39350aa263659863295deab57996ed}{}\label{structtvm_1_1runtime_1_1vm_1_1Instruction_a5a39350aa263659863295deab57996ed}
+
+
+The arguments to pass to the packed function. 
+
+\index{tvm\+::runtime\+::vm\+::\+Instruction@{tvm\+::runtime\+::vm\+::\+Instruction}!packed\+\_\+index@{packed\+\_\+index}}
+\index{packed\+\_\+index@{packed\+\_\+index}!tvm\+::runtime\+::vm\+::\+Instruction@{tvm\+::runtime\+::vm\+::\+Instruction}}
+\subsubsection[{\texorpdfstring{packed\+\_\+index}{packed_index}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Index} tvm\+::runtime\+::vm\+::\+Instruction\+::packed\+\_\+index}\hypertarget{structtvm_1_1runtime_1_1vm_1_1Instruction_ac60e60c96d7bb22d8ac06169d5969232}{}\label{structtvm_1_1runtime_1_1vm_1_1Instruction_ac60e60c96d7bb22d8ac06169d5969232}
+
+
+The index into the packed function table. 
+
+\index{tvm\+::runtime\+::vm\+::\+Instruction@{tvm\+::runtime\+::vm\+::\+Instruction}!pc\+\_\+offset@{pc\+\_\+offset}}
+\index{pc\+\_\+offset@{pc\+\_\+offset}!tvm\+::runtime\+::vm\+::\+Instruction@{tvm\+::runtime\+::vm\+::\+Instruction}}
+\subsubsection[{\texorpdfstring{pc\+\_\+offset}{pc_offset}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Index} tvm\+::runtime\+::vm\+::\+Instruction\+::pc\+\_\+offset}\hypertarget{structtvm_1_1runtime_1_1vm_1_1Instruction_a721907173e94d564bff879792b29f789}{}\label{structtvm_1_1runtime_1_1vm_1_1Instruction_a721907173e94d564bff879792b29f789}
+
+
+The jump offset. 
+
+\index{tvm\+::runtime\+::vm\+::\+Instruction@{tvm\+::runtime\+::vm\+::\+Instruction}!result@{result}}
+\index{result@{result}!tvm\+::runtime\+::vm\+::\+Instruction@{tvm\+::runtime\+::vm\+::\+Instruction}}
+\subsubsection[{\texorpdfstring{result}{result}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Reg\+Name} tvm\+::runtime\+::vm\+::\+Instruction\+::result}\hypertarget{structtvm_1_1runtime_1_1vm_1_1Instruction_ae0d33229af059c727db2abd3616660e0}{}\label{structtvm_1_1runtime_1_1vm_1_1Instruction_ae0d33229af059c727db2abd3616660e0}
+
+
+The register to return. 
+
+\index{tvm\+::runtime\+::vm\+::\+Instruction@{tvm\+::runtime\+::vm\+::\+Instruction}!shape@{shape}}
+\index{shape@{shape}!tvm\+::runtime\+::vm\+::\+Instruction@{tvm\+::runtime\+::vm\+::\+Instruction}}
+\subsubsection[{\texorpdfstring{shape}{shape}}]{\setlength{\rightskip}{0pt plus 5cm}int64\+\_\+t$\ast$ tvm\+::runtime\+::vm\+::\+Instruction\+::shape}\hypertarget{structtvm_1_1runtime_1_1vm_1_1Instruction_a1354fe84e9c14c550a53f5de8f48d968}{}\label{structtvm_1_1runtime_1_1vm_1_1Instruction_a1354fe84e9c14c550a53f5de8f48d968}
+
+
+The shape of tensor. 
+
+\index{tvm\+::runtime\+::vm\+::\+Instruction@{tvm\+::runtime\+::vm\+::\+Instruction}!shape\+\_\+register@{shape\+\_\+register}}
+\index{shape\+\_\+register@{shape\+\_\+register}!tvm\+::runtime\+::vm\+::\+Instruction@{tvm\+::runtime\+::vm\+::\+Instruction}}
+\subsubsection[{\texorpdfstring{shape\+\_\+register}{shape_register}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Reg\+Name} tvm\+::runtime\+::vm\+::\+Instruction\+::shape\+\_\+register}\hypertarget{structtvm_1_1runtime_1_1vm_1_1Instruction_a0a650382fcb2cacf9d6de7007aecf3c5}{}\label{structtvm_1_1runtime_1_1vm_1_1Instruction_a0a650382fcb2cacf9d6de7007aecf3c5}
+
+
+The register to read the shape out of. 
+
+\index{tvm\+::runtime\+::vm\+::\+Instruction@{tvm\+::runtime\+::vm\+::\+Instruction}!storage@{storage}}
+\index{storage@{storage}!tvm\+::runtime\+::vm\+::\+Instruction@{tvm\+::runtime\+::vm\+::\+Instruction}}
+\subsubsection[{\texorpdfstring{storage}{storage}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Reg\+Name} tvm\+::runtime\+::vm\+::\+Instruction\+::storage}\hypertarget{structtvm_1_1runtime_1_1vm_1_1Instruction_a3412cabd3b4f42f106f56fc22257f6ca}{}\label{structtvm_1_1runtime_1_1vm_1_1Instruction_a3412cabd3b4f42f106f56fc22257f6ca}
+
+
+The storage to allocate from. 
+
+\index{tvm\+::runtime\+::vm\+::\+Instruction@{tvm\+::runtime\+::vm\+::\+Instruction}!target@{target}}
+\index{target@{target}!tvm\+::runtime\+::vm\+::\+Instruction@{tvm\+::runtime\+::vm\+::\+Instruction}}
+\subsubsection[{\texorpdfstring{target}{target}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Reg\+Name} tvm\+::runtime\+::vm\+::\+Instruction\+::target}\hypertarget{structtvm_1_1runtime_1_1vm_1_1Instruction_a46879dbe84105fb621a6167f8d73b223}{}\label{structtvm_1_1runtime_1_1vm_1_1Instruction_a46879dbe84105fb621a6167f8d73b223}
+
+
+The register containing the target value. 
+
+\index{tvm\+::runtime\+::vm\+::\+Instruction@{tvm\+::runtime\+::vm\+::\+Instruction}!test@{test}}
+\index{test@{test}!tvm\+::runtime\+::vm\+::\+Instruction@{tvm\+::runtime\+::vm\+::\+Instruction}}
+\subsubsection[{\texorpdfstring{test}{test}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Reg\+Name} tvm\+::runtime\+::vm\+::\+Instruction\+::test}\hypertarget{structtvm_1_1runtime_1_1vm_1_1Instruction_adebc0e955069bdaa543df3a908351532}{}\label{structtvm_1_1runtime_1_1vm_1_1Instruction_adebc0e955069bdaa543df3a908351532}
+
+
+The register containing the test value. 
+
+\index{tvm\+::runtime\+::vm\+::\+Instruction@{tvm\+::runtime\+::vm\+::\+Instruction}!true\+\_\+offset@{true\+\_\+offset}}
+\index{true\+\_\+offset@{true\+\_\+offset}!tvm\+::runtime\+::vm\+::\+Instruction@{tvm\+::runtime\+::vm\+::\+Instruction}}
+\subsubsection[{\texorpdfstring{true\+\_\+offset}{true_offset}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Index} tvm\+::runtime\+::vm\+::\+Instruction\+::true\+\_\+offset}\hypertarget{structtvm_1_1runtime_1_1vm_1_1Instruction_a58e6e5eba0eba678b94273ef7deb1df2}{}\label{structtvm_1_1runtime_1_1vm_1_1Instruction_a58e6e5eba0eba678b94273ef7deb1df2}
+
+
+The program counter offset for the true branch. 
+
+\index{tvm\+::runtime\+::vm\+::\+Instruction@{tvm\+::runtime\+::vm\+::\+Instruction}!val@{val}}
+\index{val@{val}!tvm\+::runtime\+::vm\+::\+Instruction@{tvm\+::runtime\+::vm\+::\+Instruction}}
+\subsubsection[{\texorpdfstring{val}{val}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Index} tvm\+::runtime\+::vm\+::\+Instruction\+::val}\hypertarget{structtvm_1_1runtime_1_1vm_1_1Instruction_ac1e5be6bd195486a884bd8a26b5d12f9}{}\label{structtvm_1_1runtime_1_1vm_1_1Instruction_ac1e5be6bd195486a884bd8a26b5d12f9}
+
+
+The documentation for this struct was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+include/tvm/runtime/\hyperlink{vm_8h}{vm.\+h}\end{DoxyCompactItemize}

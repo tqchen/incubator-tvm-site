@@ -1,0 +1,51 @@
+\hypertarget{cuda_2reduction_8h}{}\section{topi/include/topi/cuda/reduction.h File Reference}
+\label{cuda_2reduction_8h}\index{topi/include/topi/cuda/reduction.\+h@{topi/include/topi/cuda/reduction.\+h}}
+
+
+C\+U\+DA schedule for reduction operations.  
+
+
+{\ttfamily \#include $<$tvm/te/operation.\+h$>$}\\*
+{\ttfamily \#include $<$tvm/te/schedule\+\_\+pass.\+h$>$}\\*
+{\ttfamily \#include $<$tvm/target/generic\+\_\+func.\+h$>$}\\*
+{\ttfamily \#include $<$topi/tags.\+h$>$}\\*
+{\ttfamily \#include $<$topi/detail/fuse.\+h$>$}\\*
+Include dependency graph for reduction.\+h\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{cuda_2reduction_8h__incl}
+\end{center}
+\end{figure}
+This graph shows which files directly or indirectly include this file\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=200pt]{cuda_2reduction_8h__dep__incl}
+\end{center}
+\end{figure}
+\subsection*{Namespaces}
+\begin{DoxyCompactItemize}
+\item 
+ \hyperlink{namespacetopi}{topi}
+\item 
+ \hyperlink{namespacetopi_1_1cuda}{topi\+::cuda}
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classtvm_1_1te_1_1Schedule}{Schedule} \hyperlink{namespacetopi_1_1cuda_a308601fa6af41c20a2864501fd0cda80}{topi\+::cuda\+::\+Schedule\+Reduce} (const \hyperlink{classtvm_1_1Target}{Target} \&target, \hyperlink{classtvm_1_1te_1_1Operation}{Operation} op, \hyperlink{classtvm_1_1te_1_1Schedule}{Schedule} sch, bool is\+\_\+idx\+\_\+reduce=false)
+\begin{DoxyCompactList}\small\item\em Schedule a given reduce operation. \end{DoxyCompactList}\item 
+void \hyperlink{namespacetopi_1_1cuda_a07255e046847302abd54dd2e02a84354}{topi\+::cuda\+::\+Traverse\+Before\+Reduce} (\hyperlink{classtvm_1_1te_1_1Schedule}{Schedule} s, \hyperlink{classtvm_1_1te_1_1Operation}{Operation} op)
+\begin{DoxyCompactList}\small\item\em Recursively traverse operator inputs, setting injective inputs to be computed inline. \end{DoxyCompactList}\item 
+void \hyperlink{namespacetopi_1_1cuda_a3420d2910f604087789ab4c96850f816}{topi\+::cuda\+::\+Traverse\+After\+Reduce} (const \hyperlink{classtvm_1_1Target}{Target} \&target, \hyperlink{classtvm_1_1te_1_1Schedule}{Schedule} s, \hyperlink{classtvm_1_1te_1_1Operation}{Operation} op)
+\begin{DoxyCompactList}\small\item\em Schedule a reduce op, then invoke Traverse\+Before\+Reduce on each of the op\textquotesingle{}s inputs. \end{DoxyCompactList}\item 
+\hyperlink{classtvm_1_1te_1_1Schedule}{Schedule} \hyperlink{namespacetopi_1_1cuda_aad0c9654034582022e8e81e82ff08349}{topi\+::cuda\+::schedule\+\_\+reduce} (const \hyperlink{classtvm_1_1Target}{Target} \&target, \hyperlink{classtvm_1_1Array}{Array}$<$ \hyperlink{classtvm_1_1te_1_1Tensor}{Tensor} $>$ outs)
+\begin{DoxyCompactList}\small\item\em Create a C\+U\+DA schedule for a reduce operation. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+C\+U\+DA schedule for reduction operations. 
+

@@ -1,0 +1,294 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="structtvm_1_1relay_1_1Conv2DTransposeAttrs" kind="struct" language="C++" prot="public">
+    <compoundname>tvm::relay::Conv2DTransposeAttrs</compoundname>
+    <basecompoundref refid="classtvm_1_1AttrsNode" prot="public" virt="non-virtual">tvm::AttrsNode&lt; Conv2DTransposeAttrs &gt;</basecompoundref>
+    <includes refid="include_2tvm_2relay_2attrs_2nn_8h" local="no">nn.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structtvm_1_1relay_1_1Conv2DTransposeAttrs_1ab270af38918c684563df21fa8aef866d" prot="public" static="no" mutable="no">
+        <type><ref refid="namespacetvm_1_1relay_1ae153a27d81399fd266b8d598227764c4" kindref="member">IndexExpr</ref></type>
+        <definition>IndexExpr tvm::relay::Conv2DTransposeAttrs::channels</definition>
+        <argsstring></argsstring>
+        <name>channels</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/relay/attrs/nn.h" line="321" column="1" bodyfile="include/tvm/relay/attrs/nn.h" bodystart="321" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structtvm_1_1relay_1_1Conv2DTransposeAttrs_1ae3e9c3e0d37b837816276b2985d5295e" prot="public" static="no" mutable="no">
+        <type><ref refid="classtvm_1_1Array" kindref="compound">Array</ref>&lt; <ref refid="namespacetvm_1_1relay_1ae153a27d81399fd266b8d598227764c4" kindref="member">IndexExpr</ref> &gt;</type>
+        <definition>Array&lt;IndexExpr&gt; tvm::relay::Conv2DTransposeAttrs::kernel_size</definition>
+        <argsstring></argsstring>
+        <name>kernel_size</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/relay/attrs/nn.h" line="322" column="1" bodyfile="include/tvm/relay/attrs/nn.h" bodystart="322" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structtvm_1_1relay_1_1Conv2DTransposeAttrs_1a2cca4ce8d1729231cb667f810a14ba77" prot="public" static="no" mutable="no">
+        <type><ref refid="classtvm_1_1Array" kindref="compound">Array</ref>&lt; <ref refid="namespacetvm_1_1relay_1ae153a27d81399fd266b8d598227764c4" kindref="member">IndexExpr</ref> &gt;</type>
+        <definition>Array&lt;IndexExpr&gt; tvm::relay::Conv2DTransposeAttrs::strides</definition>
+        <argsstring></argsstring>
+        <name>strides</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/relay/attrs/nn.h" line="323" column="1" bodyfile="include/tvm/relay/attrs/nn.h" bodystart="323" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structtvm_1_1relay_1_1Conv2DTransposeAttrs_1aa09a7575475716d658595c23e6a1b399" prot="public" static="no" mutable="no">
+        <type><ref refid="classtvm_1_1Array" kindref="compound">Array</ref>&lt; <ref refid="namespacetvm_1_1relay_1ae153a27d81399fd266b8d598227764c4" kindref="member">IndexExpr</ref> &gt;</type>
+        <definition>Array&lt;IndexExpr&gt; tvm::relay::Conv2DTransposeAttrs::padding</definition>
+        <argsstring></argsstring>
+        <name>padding</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/relay/attrs/nn.h" line="324" column="1" bodyfile="include/tvm/relay/attrs/nn.h" bodystart="324" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structtvm_1_1relay_1_1Conv2DTransposeAttrs_1ac7bd13f11eeec17e9e9c97f6ff09924d" prot="public" static="no" mutable="no">
+        <type><ref refid="classtvm_1_1Array" kindref="compound">Array</ref>&lt; <ref refid="namespacetvm_1_1relay_1ae153a27d81399fd266b8d598227764c4" kindref="member">IndexExpr</ref> &gt;</type>
+        <definition>Array&lt;IndexExpr&gt; tvm::relay::Conv2DTransposeAttrs::output_padding</definition>
+        <argsstring></argsstring>
+        <name>output_padding</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/relay/attrs/nn.h" line="325" column="1" bodyfile="include/tvm/relay/attrs/nn.h" bodystart="325" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structtvm_1_1relay_1_1Conv2DTransposeAttrs_1a30f6e24172d522b9a3ae228ead058e0b" prot="public" static="no" mutable="no">
+        <type><ref refid="classtvm_1_1Array" kindref="compound">Array</ref>&lt; <ref refid="namespacetvm_1_1relay_1ae153a27d81399fd266b8d598227764c4" kindref="member">IndexExpr</ref> &gt;</type>
+        <definition>Array&lt;IndexExpr&gt; tvm::relay::Conv2DTransposeAttrs::dilation</definition>
+        <argsstring></argsstring>
+        <name>dilation</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/relay/attrs/nn.h" line="326" column="1" bodyfile="include/tvm/relay/attrs/nn.h" bodystart="326" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structtvm_1_1relay_1_1Conv2DTransposeAttrs_1a17abe1064acbc6d984153498caeaf9f3" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int tvm::relay::Conv2DTransposeAttrs::groups</definition>
+        <argsstring></argsstring>
+        <name>groups</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/relay/attrs/nn.h" line="327" column="1" bodyfile="include/tvm/relay/attrs/nn.h" bodystart="327" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structtvm_1_1relay_1_1Conv2DTransposeAttrs_1a44339b9feda8c50da6518cd7d66d9727" prot="public" static="no" mutable="no">
+        <type>std::string</type>
+        <definition>std::string tvm::relay::Conv2DTransposeAttrs::data_layout</definition>
+        <argsstring></argsstring>
+        <name>data_layout</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/relay/attrs/nn.h" line="328" column="1" bodyfile="include/tvm/relay/attrs/nn.h" bodystart="328" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structtvm_1_1relay_1_1Conv2DTransposeAttrs_1ad0839f3b82465c887a7da60c36b1bff0" prot="public" static="no" mutable="no">
+        <type>std::string</type>
+        <definition>std::string tvm::relay::Conv2DTransposeAttrs::kernel_layout</definition>
+        <argsstring></argsstring>
+        <name>kernel_layout</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/relay/attrs/nn.h" line="329" column="1" bodyfile="include/tvm/relay/attrs/nn.h" bodystart="329" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structtvm_1_1relay_1_1Conv2DTransposeAttrs_1a51c1ecd25ffa7030b204acea2f029d09" prot="public" static="no" mutable="no">
+        <type>std::string</type>
+        <definition>std::string tvm::relay::Conv2DTransposeAttrs::out_layout</definition>
+        <argsstring></argsstring>
+        <name>out_layout</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/relay/attrs/nn.h" line="330" column="1" bodyfile="include/tvm/relay/attrs/nn.h" bodystart="330" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structtvm_1_1relay_1_1Conv2DTransposeAttrs_1ab50c790cf49ae6efad0f34b63c828353" prot="public" static="no" mutable="no">
+        <type><ref refid="namespacetvm_1a41918af1a1dc386388639a9d3ad06c5d" kindref="member">DataType</ref></type>
+        <definition>DataType tvm::relay::Conv2DTransposeAttrs::out_dtype</definition>
+        <argsstring></argsstring>
+        <name>out_dtype</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/relay/attrs/nn.h" line="331" column="1" bodyfile="include/tvm/relay/attrs/nn.h" bodystart="331" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="structtvm_1_1relay_1_1Conv2DTransposeAttrs_1a6a50c25b66ad09fb73c6bffad795c9ac" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>tvm::relay::Conv2DTransposeAttrs::TVM_DECLARE_ATTRS</definition>
+        <argsstring>(Conv2DTransposeAttrs,&quot;relay.attrs.Conv2DTransposeAttrs&quot;)</argsstring>
+        <name>TVM_DECLARE_ATTRS</name>
+        <param>
+          <type><ref refid="structtvm_1_1relay_1_1Conv2DTransposeAttrs" kindref="compound">Conv2DTransposeAttrs</ref></type>
+        </param>
+        <param>
+          <type>&quot;relay.attrs.Conv2DTransposeAttrs&quot;</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/relay/attrs/nn.h" line="333" column="1" bodyfile="include/tvm/relay/attrs/nn.h" bodystart="333" bodyend="379"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Attributes used in transposed convolution operator. </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="4762">
+        <label>tvm::AttrsNode&lt; Conv2DTransposeAttrs &gt;</label>
+        <link refid="classtvm_1_1AttrsNode"/>
+        <childnode refid="4763" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="4763">
+        <label>tvm::BaseAttrsNode</label>
+        <link refid="classtvm_1_1BaseAttrsNode"/>
+        <childnode refid="4764" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="4764">
+        <label>Object</label>
+      </node>
+      <node id="4761">
+        <label>tvm::relay::Conv2DTransposeAttrs</label>
+        <link refid="structtvm_1_1relay_1_1Conv2DTransposeAttrs"/>
+        <childnode refid="4762" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="4770">
+        <label>ObjectRef</label>
+      </node>
+      <node id="4766">
+        <label>tvm::AttrsNode&lt; Conv2DTransposeAttrs &gt;</label>
+        <link refid="classtvm_1_1AttrsNode"/>
+        <childnode refid="4767" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="4767">
+        <label>tvm::BaseAttrsNode</label>
+        <link refid="classtvm_1_1BaseAttrsNode"/>
+        <childnode refid="4768" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="4768">
+        <label>Object</label>
+      </node>
+      <node id="4771">
+        <label>tvm::PrimExpr</label>
+        <link refid="classtvm_1_1PrimExpr"/>
+        <childnode refid="4772" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="4773">
+        <label>tvm::runtime::DataType</label>
+        <link refid="classtvm_1_1runtime_1_1DataType"/>
+      </node>
+      <node id="4772">
+        <label>tvm::BaseExpr</label>
+        <link refid="classtvm_1_1BaseExpr"/>
+        <childnode refid="4770" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="4765">
+        <label>tvm::relay::Conv2DTransposeAttrs</label>
+        <link refid="structtvm_1_1relay_1_1Conv2DTransposeAttrs"/>
+        <childnode refid="4766" relation="public-inheritance">
+        </childnode>
+        <childnode refid="4769" relation="usage">
+          <edgelabel>+kernel_size</edgelabel>
+          <edgelabel>+strides</edgelabel>
+          <edgelabel>+dilation</edgelabel>
+          <edgelabel>+output_padding</edgelabel>
+          <edgelabel>+padding</edgelabel>
+        </childnode>
+        <childnode refid="4771" relation="usage">
+          <edgelabel>+channels</edgelabel>
+        </childnode>
+        <childnode refid="4773" relation="usage">
+          <edgelabel>+out_dtype</edgelabel>
+        </childnode>
+      </node>
+      <node id="4769">
+        <label>tvm::Array&lt; tvm::PrimExpr &gt;</label>
+        <link refid="classtvm_1_1Array"/>
+        <childnode refid="4770" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="include/tvm/relay/attrs/nn.h" line="320" column="1" bodyfile="include/tvm/relay/attrs/nn.h" bodystart="320" bodyend="380"/>
+    <listofallmembers>
+      <member refid="classtvm_1_1BaseAttrsNode_1ad812afdb028fe3944a80cd922dceff82" prot="public" virt="non-virtual"><scope>tvm::relay::Conv2DTransposeAttrs</scope><name>_type_has_method_sequal_reduce</name></member>
+      <member refid="classtvm_1_1BaseAttrsNode_1ad85f4aca5e8840d23851c0c07acd0862" prot="public" virt="non-virtual"><scope>tvm::relay::Conv2DTransposeAttrs</scope><name>_type_has_method_shash_reduce</name></member>
+      <member refid="classtvm_1_1BaseAttrsNode_1a8e4fd4e728774e0556cda84b0c2b80d6" prot="public" virt="non-virtual"><scope>tvm::relay::Conv2DTransposeAttrs</scope><name>_type_key</name></member>
+      <member refid="structtvm_1_1relay_1_1Conv2DTransposeAttrs_1ab270af38918c684563df21fa8aef866d" prot="public" virt="non-virtual"><scope>tvm::relay::Conv2DTransposeAttrs</scope><name>channels</name></member>
+      <member refid="classtvm_1_1AttrsNode_1a7f609d3a1b52df0b442793f043cc49ae" prot="public" virt="virtual"><scope>tvm::relay::Conv2DTransposeAttrs</scope><name>ContentEqual</name></member>
+      <member refid="classtvm_1_1AttrsNode_1abe3e0fd8559c5d446a136490d4dbee12" prot="public" virt="virtual"><scope>tvm::relay::Conv2DTransposeAttrs</scope><name>ContentHash</name></member>
+      <member refid="structtvm_1_1relay_1_1Conv2DTransposeAttrs_1a44339b9feda8c50da6518cd7d66d9727" prot="public" virt="non-virtual"><scope>tvm::relay::Conv2DTransposeAttrs</scope><name>data_layout</name></member>
+      <member refid="structtvm_1_1relay_1_1Conv2DTransposeAttrs_1a30f6e24172d522b9a3ae228ead058e0b" prot="public" virt="non-virtual"><scope>tvm::relay::Conv2DTransposeAttrs</scope><name>dilation</name></member>
+      <member refid="structtvm_1_1relay_1_1Conv2DTransposeAttrs_1a17abe1064acbc6d984153498caeaf9f3" prot="public" virt="non-virtual"><scope>tvm::relay::Conv2DTransposeAttrs</scope><name>groups</name></member>
+      <member refid="classtvm_1_1AttrsNode_1acfba199ef906818f35432d2e5532559a" prot="public" virt="virtual"><scope>tvm::relay::Conv2DTransposeAttrs</scope><name>InitByPackedArgs</name></member>
+      <member refid="classtvm_1_1BaseAttrsNode_1aef9e5266d16e163ccc7b1b16c1ea3269" prot="public" virt="non-virtual"><scope>tvm::relay::Conv2DTransposeAttrs</scope><name>InitBySeq</name></member>
+      <member refid="structtvm_1_1relay_1_1Conv2DTransposeAttrs_1ad0839f3b82465c887a7da60c36b1bff0" prot="public" virt="non-virtual"><scope>tvm::relay::Conv2DTransposeAttrs</scope><name>kernel_layout</name></member>
+      <member refid="structtvm_1_1relay_1_1Conv2DTransposeAttrs_1ae3e9c3e0d37b837816276b2985d5295e" prot="public" virt="non-virtual"><scope>tvm::relay::Conv2DTransposeAttrs</scope><name>kernel_size</name></member>
+      <member refid="classtvm_1_1AttrsNode_1acefe615381b5d881870af9db7ce6a981" prot="public" virt="virtual"><scope>tvm::relay::Conv2DTransposeAttrs</scope><name>ListFieldInfo</name></member>
+      <member refid="structtvm_1_1relay_1_1Conv2DTransposeAttrs_1ab50c790cf49ae6efad0f34b63c828353" prot="public" virt="non-virtual"><scope>tvm::relay::Conv2DTransposeAttrs</scope><name>out_dtype</name></member>
+      <member refid="structtvm_1_1relay_1_1Conv2DTransposeAttrs_1a51c1ecd25ffa7030b204acea2f029d09" prot="public" virt="non-virtual"><scope>tvm::relay::Conv2DTransposeAttrs</scope><name>out_layout</name></member>
+      <member refid="structtvm_1_1relay_1_1Conv2DTransposeAttrs_1ac7bd13f11eeec17e9e9c97f6ff09924d" prot="public" virt="non-virtual"><scope>tvm::relay::Conv2DTransposeAttrs</scope><name>output_padding</name></member>
+      <member refid="structtvm_1_1relay_1_1Conv2DTransposeAttrs_1aa09a7575475716d658595c23e6a1b399" prot="public" virt="non-virtual"><scope>tvm::relay::Conv2DTransposeAttrs</scope><name>padding</name></member>
+      <member refid="classtvm_1_1BaseAttrsNode_1a118837841487c80b157dbead88f18513" prot="public" virt="non-virtual"><scope>tvm::relay::Conv2DTransposeAttrs</scope><name>PrintDocString</name></member>
+      <member refid="classtvm_1_1AttrsNode_1af8192054af4e2797953cc7b67625092f" prot="public" virt="non-virtual"><scope>tvm::relay::Conv2DTransposeAttrs</scope><name>SEqualReduce</name></member>
+      <member refid="classtvm_1_1AttrsNode_1ad6cc4d8a955e30b9f55c0b5367ccce38" prot="public" virt="non-virtual"><scope>tvm::relay::Conv2DTransposeAttrs</scope><name>SHashReduce</name></member>
+      <member refid="structtvm_1_1relay_1_1Conv2DTransposeAttrs_1a2cca4ce8d1729231cb667f810a14ba77" prot="public" virt="non-virtual"><scope>tvm::relay::Conv2DTransposeAttrs</scope><name>strides</name></member>
+      <member refid="structtvm_1_1relay_1_1Conv2DTransposeAttrs_1a6a50c25b66ad09fb73c6bffad795c9ac" prot="public" virt="non-virtual"><scope>tvm::relay::Conv2DTransposeAttrs</scope><name>TVM_DECLARE_ATTRS</name></member>
+      <member refid="classtvm_1_1BaseAttrsNode_1aaca524319f015a18a1385cfea5ba8895" prot="public" virt="non-virtual"><scope>tvm::relay::Conv2DTransposeAttrs</scope><name>TVM_DECLARE_BASE_OBJECT_INFO</name></member>
+      <member refid="classtvm_1_1BaseAttrsNode_1a257561dad74174cbdc08f6725a45d8ac" prot="public" virt="non-virtual"><scope>tvm::relay::Conv2DTransposeAttrs</scope><name>TVMArgs</name></member>
+      <member refid="classtvm_1_1BaseAttrsNode_1a1f56f080d0c1fab79d9469029aef8ebb" prot="public" virt="non-virtual"><scope>tvm::relay::Conv2DTransposeAttrs</scope><name>TVMRetValue</name></member>
+      <member refid="classtvm_1_1AttrsNode_1a5da687ced06b4f2dfa04b142a34a9c72" prot="public" virt="virtual"><scope>tvm::relay::Conv2DTransposeAttrs</scope><name>VisitAttrs</name></member>
+      <member refid="classtvm_1_1AttrsNode_1acd05137ba529ac7cd07053e3da885205" prot="public" virt="virtual"><scope>tvm::relay::Conv2DTransposeAttrs</scope><name>VisitNonDefaultAttrs</name></member>
+      <member refid="classtvm_1_1BaseAttrsNode_1a225581a40231b2de219da30fced428a2" prot="public" virt="virtual"><scope>tvm::relay::Conv2DTransposeAttrs</scope><name>~BaseAttrsNode</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

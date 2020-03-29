@@ -1,0 +1,1741 @@
+\hypertarget{namespacetvm_1_1relay}{}\section{tvm\+:\+:relay Namespace Reference}
+\label{namespacetvm_1_1relay}\index{tvm\+::relay@{tvm\+::relay}}
+
+
+Relay\+: a high level functional IR for T\+VM.  
+
+
+\subsection*{Namespaces}
+\begin{DoxyCompactItemize}
+\item 
+ \hyperlink{namespacetvm_1_1relay_1_1attr}{attr}
+\begin{DoxyCompactList}\small\item\em namespace of the attributes that can be attached to a \hyperlink{classtvm_1_1relay_1_1Function}{relay\+::\+Function}. \end{DoxyCompactList}\item 
+ \hyperlink{namespacetvm_1_1relay_1_1qnn}{qnn}
+\item 
+ \hyperlink{namespacetvm_1_1relay_1_1transform}{transform}
+\end{DoxyCompactItemize}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{structtvm_1_1relay_1_1AdaptivePool2DAttrs}{Adaptive\+Pool2\+D\+Attrs}
+\begin{DoxyCompactList}\small\item\em Attributes for adaptive pool operator. \end{DoxyCompactList}\item 
+struct \hyperlink{structtvm_1_1relay_1_1AdaptivePool3DAttrs}{Adaptive\+Pool3\+D\+Attrs}
+\item 
+struct \hyperlink{structtvm_1_1relay_1_1AllocTensorAttrs}{Alloc\+Tensor\+Attrs}
+\begin{DoxyCompactList}\small\item\em Options for allocating tensors. \end{DoxyCompactList}\item 
+struct \hyperlink{structtvm_1_1relay_1_1ArangeAttrs}{Arange\+Attrs}
+\begin{DoxyCompactList}\small\item\em Attributes used in arange operators. \end{DoxyCompactList}\item 
+struct \hyperlink{structtvm_1_1relay_1_1ArgsortAttrs}{Argsort\+Attrs}
+\begin{DoxyCompactList}\small\item\em Attributes used in argsort operators. \end{DoxyCompactList}\item 
+struct \hyperlink{structtvm_1_1relay_1_1AvgPool1DAttrs}{Avg\+Pool1\+D\+Attrs}
+\begin{DoxyCompactList}\small\item\em Attributes for 1D avg pool operator. \end{DoxyCompactList}\item 
+struct \hyperlink{structtvm_1_1relay_1_1AvgPool2DAttrs}{Avg\+Pool2\+D\+Attrs}
+\begin{DoxyCompactList}\small\item\em Attributes for avg pool operator. \end{DoxyCompactList}\item 
+struct \hyperlink{structtvm_1_1relay_1_1AvgPool3DAttrs}{Avg\+Pool3\+D\+Attrs}
+\begin{DoxyCompactList}\small\item\em Attributes for 3D avg pool operator. \end{DoxyCompactList}\item 
+struct \hyperlink{structtvm_1_1relay_1_1BatchNormAttrs}{Batch\+Norm\+Attrs}
+\begin{DoxyCompactList}\small\item\em Attributes used in batch\+\_\+norm operator. \end{DoxyCompactList}\item 
+struct \hyperlink{structtvm_1_1relay_1_1BiasAddAttrs}{Bias\+Add\+Attrs}
+\begin{DoxyCompactList}\small\item\em Add a 1D Tensor to an axis of a data. \end{DoxyCompactList}\item 
+struct \hyperlink{structtvm_1_1relay_1_1BinaryConv2DAttrs}{Binary\+Conv2\+D\+Attrs}
+\begin{DoxyCompactList}\small\item\em Attribues used in bitserial convolution operators. \end{DoxyCompactList}\item 
+struct \hyperlink{structtvm_1_1relay_1_1BinaryDenseAttrs}{Binary\+Dense\+Attrs}
+\item 
+struct \hyperlink{structtvm_1_1relay_1_1BitPackAttrs}{Bit\+Pack\+Attrs}
+\begin{DoxyCompactList}\small\item\em Attributes used in bitpack operators. \end{DoxyCompactList}\item 
+class \hyperlink{classtvm_1_1relay_1_1Call}{Call}
+\item 
+class \hyperlink{classtvm_1_1relay_1_1CallNode}{Call\+Node}
+\begin{DoxyCompactList}\small\item\em \hyperlink{classtvm_1_1relay_1_1Call}{Call} container. \end{DoxyCompactList}\item 
+struct \hyperlink{structtvm_1_1relay_1_1CastAttrs}{Cast\+Attrs}
+\begin{DoxyCompactList}\small\item\em data type cast \end{DoxyCompactList}\item 
+struct \hyperlink{structtvm_1_1relay_1_1CastHintAttrs}{Cast\+Hint\+Attrs}
+\begin{DoxyCompactList}\small\item\em Annotate an expression to be cast into specific data type. \end{DoxyCompactList}\item 
+class \hyperlink{classtvm_1_1relay_1_1Clause}{Clause}
+\item 
+class \hyperlink{classtvm_1_1relay_1_1ClauseNode}{Clause\+Node}
+\begin{DoxyCompactList}\small\item\em \hyperlink{classtvm_1_1relay_1_1Clause}{Clause} container node. \end{DoxyCompactList}\item 
+struct \hyperlink{structtvm_1_1relay_1_1ClipAttrs}{Clip\+Attrs}
+\begin{DoxyCompactList}\small\item\em Attributes for Clip operator. \end{DoxyCompactList}\item 
+struct \hyperlink{structtvm_1_1relay_1_1CompilerAttrs}{Compiler\+Attrs}
+\begin{DoxyCompactList}\small\item\em Options for the operators used to annotate a compiler. \end{DoxyCompactList}\item 
+struct \hyperlink{structtvm_1_1relay_1_1ConcatenateAttrs}{Concatenate\+Attrs}
+\begin{DoxyCompactList}\small\item\em Attributes used in concatenate operators. \end{DoxyCompactList}\item 
+class \hyperlink{classtvm_1_1relay_1_1Constant}{Constant}
+\item 
+class \hyperlink{classtvm_1_1relay_1_1ConstantNode}{Constant\+Node}
+\begin{DoxyCompactList}\small\item\em \hyperlink{classtvm_1_1relay_1_1Constant}{Constant} tensor type. \end{DoxyCompactList}\item 
+class \hyperlink{classtvm_1_1relay_1_1ConstructorValue}{Constructor\+Value}
+\item 
+struct \hyperlink{structtvm_1_1relay_1_1ConstructorValueObj}{Constructor\+Value\+Obj}
+\item 
+struct \hyperlink{structtvm_1_1relay_1_1Conv1DAttrs}{Conv1\+D\+Attrs}
+\begin{DoxyCompactList}\small\item\em Attributes used in 1D convolution operators. \end{DoxyCompactList}\item 
+struct \hyperlink{structtvm_1_1relay_1_1Conv1DTransposeAttrs}{Conv1\+D\+Transpose\+Attrs}
+\begin{DoxyCompactList}\small\item\em Attributes used in 1D transposed convolution operator. \end{DoxyCompactList}\item 
+struct \hyperlink{structtvm_1_1relay_1_1Conv2DAttrs}{Conv2\+D\+Attrs}
+\begin{DoxyCompactList}\small\item\em Attributes used in convolution operators. \end{DoxyCompactList}\item 
+struct \hyperlink{structtvm_1_1relay_1_1Conv2DTransposeAttrs}{Conv2\+D\+Transpose\+Attrs}
+\begin{DoxyCompactList}\small\item\em Attributes used in transposed convolution operator. \end{DoxyCompactList}\item 
+struct \hyperlink{structtvm_1_1relay_1_1Conv2DWinogradAttrs}{Conv2\+D\+Winograd\+Attrs}
+\begin{DoxyCompactList}\small\item\em Attributes used in convolution operators with winograd algorithm. \end{DoxyCompactList}\item 
+struct \hyperlink{structtvm_1_1relay_1_1Conv2DWinogradNNPACKWeightTransformAttrs}{Conv2\+D\+Winograd\+N\+N\+P\+A\+C\+K\+Weight\+Transform\+Attrs}
+\begin{DoxyCompactList}\small\item\em Attributes used in winograd weight transformation operators. \end{DoxyCompactList}\item 
+struct \hyperlink{structtvm_1_1relay_1_1Conv2DWinogradWeightTransformAttrs}{Conv2\+D\+Winograd\+Weight\+Transform\+Attrs}
+\begin{DoxyCompactList}\small\item\em Attributes used in winograd weight transformation operators. \end{DoxyCompactList}\item 
+struct \hyperlink{structtvm_1_1relay_1_1Conv3DAttrs}{Conv3\+D\+Attrs}
+\begin{DoxyCompactList}\small\item\em Attributes used in convolution operators. \end{DoxyCompactList}\item 
+struct \hyperlink{structtvm_1_1relay_1_1CropAndResizeAttrs}{Crop\+And\+Resize\+Attrs}
+\begin{DoxyCompactList}\small\item\em Attributes used in image crop\+\_\+and\+\_\+resize operator. \end{DoxyCompactList}\item 
+struct \hyperlink{structtvm_1_1relay_1_1DebugAttrs}{Debug\+Attrs}
+\begin{DoxyCompactList}\small\item\em Options for the debug operators. \end{DoxyCompactList}\item 
+struct \hyperlink{structtvm_1_1relay_1_1DeformableConv2DAttrs}{Deformable\+Conv2\+D\+Attrs}
+\begin{DoxyCompactList}\small\item\em Attributes for Deformable\+Conv2D operator. \end{DoxyCompactList}\item 
+struct \hyperlink{structtvm_1_1relay_1_1DenseAttrs}{Dense\+Attrs}
+\begin{DoxyCompactList}\small\item\em Attributes for dense operator. \end{DoxyCompactList}\item 
+struct \hyperlink{structtvm_1_1relay_1_1DeviceCopyAttrs}{Device\+Copy\+Attrs}
+\begin{DoxyCompactList}\small\item\em Options for the device copy operators. \end{DoxyCompactList}\item 
+struct \hyperlink{structtvm_1_1relay_1_1Dilation2DAttrs}{Dilation2\+D\+Attrs}
+\begin{DoxyCompactList}\small\item\em Attributes used in dilation operators. \end{DoxyCompactList}\item 
+struct \hyperlink{structtvm_1_1relay_1_1DropoutAttrs}{Dropout\+Attrs}
+\begin{DoxyCompactList}\small\item\em Attributes used in dropout operator. \end{DoxyCompactList}\item 
+struct \hyperlink{structtvm_1_1relay_1_1ExpandDimsAttrs}{Expand\+Dims\+Attrs}
+\begin{DoxyCompactList}\small\item\em Attributes used in expand\+\_\+dims operators. \end{DoxyCompactList}\item 
+class \hyperlink{classtvm_1_1relay_1_1ExprFunctor}{Expr\+Functor}
+\begin{DoxyCompactList}\small\item\em A dynamical functor that dispatches on in the first Expr argument. You can use this as a more powerful Visitor, since it allows you to define function signatures of Visit \hyperlink{classtvm_1_1relay_1_1Function}{Function}. \end{DoxyCompactList}\item 
+class \hyperlink{classtvm_1_1relay_1_1ExprFunctor_3_01R_07const_01Expr_01_6n_00_01Args_8_8_8_08_4}{Expr\+Functor$<$ R(const Expr \&n, Args...)$>$}
+\item 
+class \hyperlink{classtvm_1_1relay_1_1ExprMutator}{Expr\+Mutator}
+\begin{DoxyCompactList}\small\item\em A wrapper around \hyperlink{classtvm_1_1relay_1_1ExprFunctor}{Expr\+Functor} which functionally updates the A\+ST. \end{DoxyCompactList}\item 
+class \hyperlink{classtvm_1_1relay_1_1ExprVisitor}{Expr\+Visitor}
+\begin{DoxyCompactList}\small\item\em A simple visitor wrapper around \hyperlink{classtvm_1_1relay_1_1ExprFunctor}{Expr\+Functor}. Recursively visit the content. \end{DoxyCompactList}\item 
+class \hyperlink{classtvm_1_1relay_1_1FeatureSet}{Feature\+Set}
+\begin{DoxyCompactList}\small\item\em A finite set of Feature. \end{DoxyCompactList}\item 
+struct \hyperlink{structtvm_1_1relay_1_1FIFOBufferAttrs}{F\+I\+F\+O\+Buffer\+Attrs}
+\begin{DoxyCompactList}\small\item\em Attributes for F\+I\+FO buffer operator. \end{DoxyCompactList}\item 
+class \hyperlink{classtvm_1_1relay_1_1Function}{Function}
+\begin{DoxyCompactList}\small\item\em Managed reference to \hyperlink{classtvm_1_1relay_1_1FunctionNode}{Function\+Node}. \end{DoxyCompactList}\item 
+class \hyperlink{classtvm_1_1relay_1_1FunctionNode}{Function\+Node}
+\begin{DoxyCompactList}\small\item\em Relay \hyperlink{classtvm_1_1relay_1_1Function}{Function} container. \end{DoxyCompactList}\item 
+struct \hyperlink{structtvm_1_1relay_1_1GetValidCountsAttrs}{Get\+Valid\+Counts\+Attrs}
+\begin{DoxyCompactList}\small\item\em Attributes used in get\+\_\+valid\+\_\+counts operator. \end{DoxyCompactList}\item 
+struct \hyperlink{structtvm_1_1relay_1_1GlobalPool2DAttrs}{Global\+Pool2\+D\+Attrs}
+\begin{DoxyCompactList}\small\item\em Attributes for global pool operator. \end{DoxyCompactList}\item 
+class \hyperlink{classtvm_1_1relay_1_1Id}{Id}
+\item 
+class \hyperlink{classtvm_1_1relay_1_1IdNode}{Id\+Node}
+\begin{DoxyCompactList}\small\item\em The unique identifier of variables. \end{DoxyCompactList}\item 
+class \hyperlink{classtvm_1_1relay_1_1If}{If}
+\item 
+class \hyperlink{classtvm_1_1relay_1_1IfNode}{If\+Node}
+\begin{DoxyCompactList}\small\item\em container of \hyperlink{classtvm_1_1relay_1_1If}{If} \end{DoxyCompactList}\item 
+struct \hyperlink{structtvm_1_1relay_1_1InitOpAttrs}{Init\+Op\+Attrs}
+\begin{DoxyCompactList}\small\item\em Attributes that specify a tensor. \end{DoxyCompactList}\item 
+struct \hyperlink{structtvm_1_1relay_1_1InstanceNormAttrs}{Instance\+Norm\+Attrs}
+\begin{DoxyCompactList}\small\item\em Attributes used in instance\+\_\+norm operator. \end{DoxyCompactList}\item 
+class \hyperlink{classtvm_1_1relay_1_1InterpreterClosure}{Interpreter\+Closure}
+\item 
+class \hyperlink{classtvm_1_1relay_1_1InterpreterClosureObj}{Interpreter\+Closure\+Obj}
+\begin{DoxyCompactList}\small\item\em The container type of Closures used by the interpreter. \end{DoxyCompactList}\item 
+struct \hyperlink{structtvm_1_1relay_1_1L2NormalizeAttrs}{L2\+Normalize\+Attrs}
+\begin{DoxyCompactList}\small\item\em Attributes for L2\+Normalize operator. \end{DoxyCompactList}\item 
+struct \hyperlink{structtvm_1_1relay_1_1LayerNormAttrs}{Layer\+Norm\+Attrs}
+\begin{DoxyCompactList}\small\item\em Attributes used in layer\+\_\+norm operator. \end{DoxyCompactList}\item 
+struct \hyperlink{structtvm_1_1relay_1_1LayoutTransformAttrs}{Layout\+Transform\+Attrs}
+\begin{DoxyCompactList}\small\item\em Attributes for Layout\+Transform operator. \end{DoxyCompactList}\item 
+struct \hyperlink{structtvm_1_1relay_1_1LeakyReluAttrs}{Leaky\+Relu\+Attrs}
+\begin{DoxyCompactList}\small\item\em Attributes for leaky relu operator. \end{DoxyCompactList}\item 
+class \hyperlink{classtvm_1_1relay_1_1Let}{Let}
+\item 
+class \hyperlink{classtvm_1_1relay_1_1LetNode}{Let\+Node}
+\begin{DoxyCompactList}\small\item\em A binding of a sub-\/network. \end{DoxyCompactList}\item 
+struct \hyperlink{structtvm_1_1relay_1_1LRNAttrs}{L\+R\+N\+Attrs}
+\begin{DoxyCompactList}\small\item\em Attributes for L\+RN operator. \end{DoxyCompactList}\item 
+class \hyperlink{classtvm_1_1relay_1_1Match}{Match}
+\item 
+class \hyperlink{classtvm_1_1relay_1_1MatchNode}{Match\+Node}
+\begin{DoxyCompactList}\small\item\em \hyperlink{classtvm_1_1relay_1_1Match}{Match} container node. \end{DoxyCompactList}\item 
+struct \hyperlink{structtvm_1_1relay_1_1MaxPool1DAttrs}{Max\+Pool1\+D\+Attrs}
+\begin{DoxyCompactList}\small\item\em Attributes for 1D max pool operator. \end{DoxyCompactList}\item 
+struct \hyperlink{structtvm_1_1relay_1_1MaxPool2DAttrs}{Max\+Pool2\+D\+Attrs}
+\begin{DoxyCompactList}\small\item\em Attributes for max pool operator. \end{DoxyCompactList}\item 
+struct \hyperlink{structtvm_1_1relay_1_1MaxPool3DAttrs}{Max\+Pool3\+D\+Attrs}
+\begin{DoxyCompactList}\small\item\em Attributes for 3D max pool operator. \end{DoxyCompactList}\item 
+struct \hyperlink{structtvm_1_1relay_1_1MirrorPadAttrs}{Mirror\+Pad\+Attrs}
+\begin{DoxyCompactList}\small\item\em Attributes used for the Mirror\+Padding operator. \end{DoxyCompactList}\item 
+struct \hyperlink{structtvm_1_1relay_1_1MultiBoxPriorAttrs}{Multi\+Box\+Prior\+Attrs}
+\begin{DoxyCompactList}\small\item\em Attributes used in multibox\+\_\+prior operators. \end{DoxyCompactList}\item 
+struct \hyperlink{structtvm_1_1relay_1_1MultiBoxTransformLocAttrs}{Multi\+Box\+Transform\+Loc\+Attrs}
+\item 
+struct \hyperlink{structtvm_1_1relay_1_1NdarraySizeAttrs}{Ndarray\+Size\+Attrs}
+\begin{DoxyCompactList}\small\item\em Attributes for ndarray\+\_\+size operator. \end{DoxyCompactList}\item 
+struct \hyperlink{structtvm_1_1relay_1_1NonMaximumSuppressionAttrs}{Non\+Maximum\+Suppression\+Attrs}
+\begin{DoxyCompactList}\small\item\em Attributes used in non\+\_\+maximum\+\_\+suppression operator. \end{DoxyCompactList}\item 
+struct \hyperlink{structtvm_1_1relay_1_1OnDeviceAttrs}{On\+Device\+Attrs}
+\begin{DoxyCompactList}\small\item\em Options for the device annotation operators. \end{DoxyCompactList}\item 
+struct \hyperlink{structtvm_1_1relay_1_1OneHotAttrs}{One\+Hot\+Attrs}
+\begin{DoxyCompactList}\small\item\em Attributes used in one-\/hot operator. \end{DoxyCompactList}\item 
+class \hyperlink{classtvm_1_1relay_1_1OpImplementation}{Op\+Implementation}
+\begin{DoxyCompactList}\small\item\em Operator implementation class. \end{DoxyCompactList}\item 
+class \hyperlink{classtvm_1_1relay_1_1OpImplementationNode}{Op\+Implementation\+Node}
+\begin{DoxyCompactList}\small\item\em Operator implementation that includes compute and schedule function. \end{DoxyCompactList}\item 
+class \hyperlink{classtvm_1_1relay_1_1OpSpecialization}{Op\+Specialization}
+\begin{DoxyCompactList}\small\item\em Operator specialization class. \end{DoxyCompactList}\item 
+class \hyperlink{classtvm_1_1relay_1_1OpSpecializationNode}{Op\+Specialization\+Node}
+\begin{DoxyCompactList}\small\item\em Specialized implementations for operators under certain conditions. \end{DoxyCompactList}\item 
+class \hyperlink{classtvm_1_1relay_1_1OpStrategy}{Op\+Strategy}
+\begin{DoxyCompactList}\small\item\em Operator strategy class. \end{DoxyCompactList}\item 
+class \hyperlink{classtvm_1_1relay_1_1OpStrategyNode}{Op\+Strategy\+Node}
+\begin{DoxyCompactList}\small\item\em Operator strategy to choose implementation. \end{DoxyCompactList}\item 
+struct \hyperlink{structtvm_1_1relay_1_1PadAttrs}{Pad\+Attrs}
+\begin{DoxyCompactList}\small\item\em Attributes used for the padding operator. \end{DoxyCompactList}\item 
+class \hyperlink{classtvm_1_1relay_1_1Pattern}{Pattern}
+\begin{DoxyCompactList}\small\item\em \hyperlink{classtvm_1_1relay_1_1Pattern}{Pattern} is the base type for an A\+DT match pattern in Relay. \end{DoxyCompactList}\item 
+class \hyperlink{classtvm_1_1relay_1_1PatternConstructor}{Pattern\+Constructor}
+\item 
+class \hyperlink{classtvm_1_1relay_1_1PatternConstructorNode}{Pattern\+Constructor\+Node}
+\begin{DoxyCompactList}\small\item\em \hyperlink{classtvm_1_1relay_1_1PatternVar}{Pattern\+Var} container node. \end{DoxyCompactList}\item 
+class \hyperlink{classtvm_1_1relay_1_1PatternFunctor}{Pattern\+Functor}
+\begin{DoxyCompactList}\small\item\em A dynamical functor on A\+DT patterns that dispatches on its first argument. You can use this as a more powerful visitor, since it allows you to define the types of further arguments to Visit\+Pattern. \end{DoxyCompactList}\item 
+class \hyperlink{classtvm_1_1relay_1_1PatternFunctor_3_01R_07const_01Pattern_01_6n_00_01Args_8_8_8_08_4}{Pattern\+Functor$<$ R(const Pattern \&n, Args...)$>$}
+\item 
+class \hyperlink{classtvm_1_1relay_1_1PatternMutator}{Pattern\+Mutator}
+\begin{DoxyCompactList}\small\item\em A wrapper around \hyperlink{classtvm_1_1relay_1_1ExprFunctor}{Expr\+Functor} which functionally updates the A\+ST. \end{DoxyCompactList}\item 
+class \hyperlink{classtvm_1_1relay_1_1PatternNode}{Pattern\+Node}
+\begin{DoxyCompactList}\small\item\em Base type for declaring relay pattern. \end{DoxyCompactList}\item 
+class \hyperlink{classtvm_1_1relay_1_1PatternTuple}{Pattern\+Tuple}
+\item 
+class \hyperlink{classtvm_1_1relay_1_1PatternTupleNode}{Pattern\+Tuple\+Node}
+\begin{DoxyCompactList}\small\item\em \hyperlink{classtvm_1_1relay_1_1PatternVar}{Pattern\+Var} container node. \end{DoxyCompactList}\item 
+class \hyperlink{classtvm_1_1relay_1_1PatternVar}{Pattern\+Var}
+\item 
+class \hyperlink{classtvm_1_1relay_1_1PatternVarNode}{Pattern\+Var\+Node}
+\begin{DoxyCompactList}\small\item\em \hyperlink{classtvm_1_1relay_1_1PatternVar}{Pattern\+Var} container node. \end{DoxyCompactList}\item 
+class \hyperlink{classtvm_1_1relay_1_1PatternVisitor}{Pattern\+Visitor}
+\begin{DoxyCompactList}\small\item\em A simple visitor wrapper around \hyperlink{classtvm_1_1relay_1_1PatternFunctor}{Pattern\+Functor}. \end{DoxyCompactList}\item 
+class \hyperlink{classtvm_1_1relay_1_1PatternWildcard}{Pattern\+Wildcard}
+\item 
+class \hyperlink{classtvm_1_1relay_1_1PatternWildcardNode}{Pattern\+Wildcard\+Node}
+\begin{DoxyCompactList}\small\item\em \hyperlink{classtvm_1_1relay_1_1PatternWildcard}{Pattern\+Wildcard} container node. \end{DoxyCompactList}\item 
+struct \hyperlink{structtvm_1_1relay_1_1PReluAttrs}{P\+Relu\+Attrs}
+\begin{DoxyCompactList}\small\item\em Attributes for prelu operator. \end{DoxyCompactList}\item 
+struct \hyperlink{structtvm_1_1relay_1_1ProposalAttrs}{Proposal\+Attrs}
+\begin{DoxyCompactList}\small\item\em Attributes used in proposal operators. \end{DoxyCompactList}\item 
+class \hyperlink{classtvm_1_1relay_1_1RecClosure}{Rec\+Closure}
+\item 
+class \hyperlink{classtvm_1_1relay_1_1RecClosureObj}{Rec\+Closure\+Obj}
+\begin{DoxyCompactList}\small\item\em The container type of \hyperlink{classtvm_1_1relay_1_1RecClosure}{Rec\+Closure}. \end{DoxyCompactList}\item 
+struct \hyperlink{structtvm_1_1relay_1_1ReduceAttrs}{Reduce\+Attrs}
+\begin{DoxyCompactList}\small\item\em Attributes for Reduce operators. \end{DoxyCompactList}\item 
+class \hyperlink{classtvm_1_1relay_1_1RefCreate}{Ref\+Create}
+\item 
+class \hyperlink{classtvm_1_1relay_1_1RefCreateNode}{Ref\+Create\+Node}
+\item 
+class \hyperlink{classtvm_1_1relay_1_1RefRead}{Ref\+Read}
+\item 
+class \hyperlink{classtvm_1_1relay_1_1RefReadNode}{Ref\+Read\+Node}
+\item 
+class \hyperlink{classtvm_1_1relay_1_1RefValue}{Ref\+Value}
+\item 
+struct \hyperlink{structtvm_1_1relay_1_1RefValueObj}{Ref\+Value\+Obj}
+\item 
+class \hyperlink{classtvm_1_1relay_1_1RefWrite}{Ref\+Write}
+\item 
+class \hyperlink{classtvm_1_1relay_1_1RefWriteNode}{Ref\+Write\+Node}
+\item 
+class \hyperlink{classtvm_1_1relay_1_1RelayNode}{Relay\+Node}
+\begin{DoxyCompactList}\small\item\em This is the base node container of all relay structures. \end{DoxyCompactList}\item 
+struct \hyperlink{structtvm_1_1relay_1_1RepeatAttrs}{Repeat\+Attrs}
+\begin{DoxyCompactList}\small\item\em Attributes used in repeat operators. \end{DoxyCompactList}\item 
+struct \hyperlink{structtvm_1_1relay_1_1ReshapeAttrs}{Reshape\+Attrs}
+\begin{DoxyCompactList}\small\item\em Attributes used in reshape operators. \end{DoxyCompactList}\item 
+struct \hyperlink{structtvm_1_1relay_1_1ResizeAttrs}{Resize\+Attrs}
+\begin{DoxyCompactList}\small\item\em Attributes used in image resize operator. \end{DoxyCompactList}\item 
+struct \hyperlink{structtvm_1_1relay_1_1ReverseAttrs}{Reverse\+Attrs}
+\begin{DoxyCompactList}\small\item\em Attributes used in reverse operators. \end{DoxyCompactList}\item 
+struct \hyperlink{structtvm_1_1relay_1_1ROIAlignAttrs}{R\+O\+I\+Align\+Attrs}
+\begin{DoxyCompactList}\small\item\em Attributes used in roi\+\_\+align operators. \end{DoxyCompactList}\item 
+struct \hyperlink{structtvm_1_1relay_1_1ROIPoolAttrs}{R\+O\+I\+Pool\+Attrs}
+\begin{DoxyCompactList}\small\item\em Attributes used in roi\+\_\+pool operators. \end{DoxyCompactList}\item 
+struct \hyperlink{structtvm_1_1relay_1_1SequenceMaskAttrs}{Sequence\+Mask\+Attrs}
+\item 
+struct \hyperlink{structtvm_1_1relay_1_1ShapeFuncAttrs}{Shape\+Func\+Attrs}
+\begin{DoxyCompactList}\small\item\em Options for the shape function operator. \end{DoxyCompactList}\item 
+struct \hyperlink{structtvm_1_1relay_1_1ShapeOfAttrs}{Shape\+Of\+Attrs}
+\begin{DoxyCompactList}\small\item\em Attributes for Shape\+Of operator. \end{DoxyCompactList}\item 
+struct \hyperlink{structtvm_1_1relay_1_1SliceLikeAttrs}{Slice\+Like\+Attrs}
+\item 
+struct \hyperlink{structtvm_1_1relay_1_1SoftmaxAttrs}{Softmax\+Attrs}
+\begin{DoxyCompactList}\small\item\em Attributes used in softmax operators. \end{DoxyCompactList}\item 
+struct \hyperlink{structtvm_1_1relay_1_1SparseDenseAttrs}{Sparse\+Dense\+Attrs}
+\begin{DoxyCompactList}\small\item\em Attributes for sparse\+\_\+dense operator. \end{DoxyCompactList}\item 
+struct \hyperlink{structtvm_1_1relay_1_1SparseTransposeAttrs}{Sparse\+Transpose\+Attrs}
+\begin{DoxyCompactList}\small\item\em Attributes for sparse\+\_\+transpose operator. \end{DoxyCompactList}\item 
+struct \hyperlink{structtvm_1_1relay_1_1SplitAttrs}{Split\+Attrs}
+\item 
+struct \hyperlink{structtvm_1_1relay_1_1SqueezeAttrs}{Squeeze\+Attrs}
+\begin{DoxyCompactList}\small\item\em Attributes used in squeeze operators. \end{DoxyCompactList}\item 
+struct \hyperlink{structtvm_1_1relay_1_1StackAttrs}{Stack\+Attrs}
+\begin{DoxyCompactList}\small\item\em Attributes used in stack operators. \end{DoxyCompactList}\item 
+struct \hyperlink{structtvm_1_1relay_1_1StridedSliceAttrs}{Strided\+Slice\+Attrs}
+\begin{DoxyCompactList}\small\item\em Attributes for Strided\+Slice operator. \end{DoxyCompactList}\item 
+struct \hyperlink{structtvm_1_1relay_1_1StructuralHash}{Structural\+Hash}
+\begin{DoxyCompactList}\small\item\em A hashing structure in the style of std\+::hash. \end{DoxyCompactList}\item 
+struct \hyperlink{structtvm_1_1relay_1_1SubPixelAttrs}{Sub\+Pixel\+Attrs}
+\begin{DoxyCompactList}\small\item\em Attributes used in subpixel operators. \end{DoxyCompactList}\item 
+struct \hyperlink{structtvm_1_1relay_1_1TakeAttrs}{Take\+Attrs}
+\item 
+class \hyperlink{classtvm_1_1relay_1_1TempExpr}{Temp\+Expr}
+\item 
+class \hyperlink{classtvm_1_1relay_1_1TempExprNode}{Temp\+Expr\+Node}
+\begin{DoxyCompactList}\small\item\em Base class of the temporary expression. \end{DoxyCompactList}\item 
+struct \hyperlink{structtvm_1_1relay_1_1TileAttrs}{Tile\+Attrs}
+\begin{DoxyCompactList}\small\item\em Attributes used in tile operators. \end{DoxyCompactList}\item 
+struct \hyperlink{structtvm_1_1relay_1_1TopKAttrs}{Top\+K\+Attrs}
+\item 
+struct \hyperlink{structtvm_1_1relay_1_1TransposeAttrs}{Transpose\+Attrs}
+\begin{DoxyCompactList}\small\item\em Attributes used in transpose operators. \end{DoxyCompactList}\item 
+class \hyperlink{classtvm_1_1relay_1_1Tuple}{Tuple}
+\item 
+class \hyperlink{classtvm_1_1relay_1_1TupleGetItem}{Tuple\+Get\+Item}
+\item 
+class \hyperlink{classtvm_1_1relay_1_1TupleGetItemNode}{Tuple\+Get\+Item\+Node}
+\item 
+class \hyperlink{classtvm_1_1relay_1_1TupleNode}{Tuple\+Node}
+\begin{DoxyCompactList}\small\item\em \hyperlink{classtvm_1_1relay_1_1Tuple}{Tuple} container. \end{DoxyCompactList}\item 
+struct \hyperlink{structtvm_1_1relay_1_1UpSampling3DAttrs}{Up\+Sampling3\+D\+Attrs}
+\begin{DoxyCompactList}\small\item\em Attributes for upsampling3d operator. \end{DoxyCompactList}\item 
+struct \hyperlink{structtvm_1_1relay_1_1UpSamplingAttrs}{Up\+Sampling\+Attrs}
+\begin{DoxyCompactList}\small\item\em Attributes for upsampling operator. \end{DoxyCompactList}\item 
+class \hyperlink{classtvm_1_1relay_1_1Var}{Var}
+\item 
+class \hyperlink{classtvm_1_1relay_1_1VarNode}{Var\+Node}
+\begin{DoxyCompactList}\small\item\em Container for \hyperlink{classtvm_1_1relay_1_1Var}{Var}. \end{DoxyCompactList}\item 
+struct \hyperlink{structtvm_1_1relay_1_1YoloReorgAttrs}{Yolo\+Reorg\+Attrs}
+\begin{DoxyCompactList}\small\item\em Attributes used in yolo reorg operators. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+using \hyperlink{namespacetvm_1_1relay_aec85bf097deda59bd22e88475c9165e9}{Constructor} = \hyperlink{classtvm_1_1Constructor}{tvm\+::\+Constructor}
+\item 
+using \hyperlink{namespacetvm_1_1relay_a6b95f70a9b44cc1c96593201594d1345}{Constructor\+Node} = \hyperlink{classtvm_1_1ConstructorNode}{tvm\+::\+Constructor\+Node}
+\item 
+using \hyperlink{namespacetvm_1_1relay_a6e725a1cb4c83346e261eac7dc7292a8}{Type\+Data} = \hyperlink{classtvm_1_1TypeData}{tvm\+::\+Type\+Data}
+\item 
+using \hyperlink{namespacetvm_1_1relay_a2b8c0d5920eaca88569907e92df6066f}{Type\+Data\+Node} = \hyperlink{classtvm_1_1TypeDataNode}{tvm\+::\+Type\+Data\+Node}
+\item 
+using \hyperlink{namespacetvm_1_1relay_ae153a27d81399fd266b8d598227764c4}{Index\+Expr} = \+::\hyperlink{classtvm_1_1PrimExpr}{tvm\+::\+Prim\+Expr}
+\begin{DoxyCompactList}\small\item\em Symbolic expression for tensor shape. \end{DoxyCompactList}\item 
+using \hyperlink{namespacetvm_1_1relay_a14eacafcb803b0757e48654bb1bac655}{Source\+Name} = \hyperlink{classtvm_1_1SourceName}{tvm\+::\+Source\+Name}
+\item 
+using \hyperlink{namespacetvm_1_1relay_af40ca6124bc2e88f2323eeb79d326cc0}{Span} = \hyperlink{classtvm_1_1Span}{tvm\+::\+Span}
+\item 
+using \hyperlink{namespacetvm_1_1relay_a7d0fa6578e97d0d64b08865f94f04827}{Span\+Node} = \hyperlink{classtvm_1_1SpanNode}{tvm\+::\+Span\+Node}
+\item 
+using \hyperlink{namespacetvm_1_1relay_a5b84e3790f89bb3fad5c7911eeb99531}{Expr} = \hyperlink{classtvm_1_1RelayExpr}{tvm\+::\+Relay\+Expr}
+\item 
+using \hyperlink{namespacetvm_1_1relay_a387f18e050d016c52ea6c4781e7cff6c}{Expr\+Node} = \hyperlink{classtvm_1_1RelayExprNode}{tvm\+::\+Relay\+Expr\+Node}
+\item 
+using \hyperlink{namespacetvm_1_1relay_acbaff2ae7feec23fea55e025a9cc1b76}{Base\+Func} = \hyperlink{classtvm_1_1BaseFunc}{tvm\+::\+Base\+Func}
+\item 
+using \hyperlink{namespacetvm_1_1relay_a4edf28d1226abc08d28bc2fd90ce7b42}{Base\+Func\+Node} = \hyperlink{classtvm_1_1BaseFuncNode}{tvm\+::\+Base\+Func\+Node}
+\item 
+using \hyperlink{namespacetvm_1_1relay_a81ac7c3d0824529fddce7849c9c66289}{Global\+Var} = \hyperlink{classtvm_1_1GlobalVar}{tvm\+::\+Global\+Var}
+\item 
+using \hyperlink{namespacetvm_1_1relay_afe7144195dbbc914183189444ef6a347}{Global\+Var\+Node} = \hyperlink{classtvm_1_1GlobalVarNode}{tvm\+::\+Global\+Var\+Node}
+\item 
+using \hyperlink{namespacetvm_1_1relay_a6c46d15e80f1a9916b8e9c264a185c98}{Op} = \hyperlink{classtvm_1_1Op}{tvm\+::\+Op}
+\item 
+using \hyperlink{namespacetvm_1_1relay_ac9d4f2cf78a48659817a88d890e1d142}{Op\+Node} = \hyperlink{classtvm_1_1OpNode}{tvm\+::\+Op\+Node}
+\item 
+using \hyperlink{namespacetvm_1_1relay_a5dab2ddae20ac7564a81ab3a0a9aba76}{T\+Op\+Pattern} = int
+\begin{DoxyCompactList}\small\item\em the operator pattern \end{DoxyCompactList}\item 
+using \hyperlink{namespacetvm_1_1relay_afb8a8d4dd43830d4ce7d566abcd1c450}{T\+Op\+Is\+Stateful} = bool
+\begin{DoxyCompactList}\small\item\em Whether operator is stateful or contain internal state. \end{DoxyCompactList}\item 
+using \hyperlink{namespacetvm_1_1relay_ab4c835287dfc5ec074ea8431bcebbb17}{T\+Non\+Computational} = bool
+\begin{DoxyCompactList}\small\item\em Mark the operator as non-\/computational. \end{DoxyCompactList}\item 
+using \hyperlink{namespacetvm_1_1relay_a75252d8d7e8d18b796074ffe4cc9f3ff}{T\+Shape\+Data\+Dependant} = bool
+\begin{DoxyCompactList}\small\item\em Mark the operator whether output shape is data dependant. \end{DoxyCompactList}\item 
+using \hyperlink{namespacetvm_1_1relay_a63a0893a8379998657ddff39a3162188}{F\+T\+V\+M\+Compute} = \hyperlink{classtvm_1_1runtime_1_1TypedPackedFunc}{runtime\+::\+Typed\+Packed\+Func}$<$ \hyperlink{classtvm_1_1Array}{Array}$<$ \hyperlink{classtvm_1_1te_1_1Tensor}{te\+::\+Tensor} $>$(const \hyperlink{classtvm_1_1Attrs}{Attrs} \&attrs, const \hyperlink{classtvm_1_1Array}{Array}$<$ \hyperlink{classtvm_1_1te_1_1Tensor}{te\+::\+Tensor} $>$ \&inputs, const \hyperlink{namespacetvm_1_1relay_a661d95f170bca230773914caeef3fe52}{Type} \&out\+\_\+type)$>$
+\begin{DoxyCompactList}\small\item\em Computation description interface. \end{DoxyCompactList}\item 
+using \hyperlink{namespacetvm_1_1relay_af8f7c5928c79389da637c35df6c8557c}{F\+T\+V\+M\+Schedule} = \hyperlink{classtvm_1_1runtime_1_1TypedPackedFunc}{runtime\+::\+Typed\+Packed\+Func}$<$ \hyperlink{classtvm_1_1te_1_1Schedule}{te\+::\+Schedule}(const \hyperlink{classtvm_1_1Attrs}{Attrs} \&attrs, const \hyperlink{classtvm_1_1Array}{Array}$<$ \hyperlink{classtvm_1_1te_1_1Tensor}{te\+::\+Tensor} $>$ \&outs, const \hyperlink{classtvm_1_1Target}{Target} \&target)$>$
+\begin{DoxyCompactList}\small\item\em Build the computation schedule for op whose root is at current op. \end{DoxyCompactList}\item 
+using \hyperlink{namespacetvm_1_1relay_a2eb2ad4e7a83e0a28e2ad073d7bf9305}{F\+T\+V\+M\+Strategy} = \hyperlink{classtvm_1_1GenericFunc}{Generic\+Func}
+\begin{DoxyCompactList}\small\item\em Generate the strategy of operators. This function is a generic function and can be re-\/defined for different targets. \end{DoxyCompactList}\item 
+using \hyperlink{namespacetvm_1_1relay_ac36536541a0688d02f9172bf8a35813b}{F\+T\+V\+M\+Alter\+Op\+Layout} = \hyperlink{classtvm_1_1runtime_1_1TypedPackedFunc}{runtime\+::\+Typed\+Packed\+Func}$<$ \hyperlink{namespacetvm_1_1relay_a5b84e3790f89bb3fad5c7911eeb99531}{Expr}(const \hyperlink{classtvm_1_1Attrs}{Attrs} \&attrs, const \hyperlink{classtvm_1_1Array}{Array}$<$ \hyperlink{namespacetvm_1_1relay_a5b84e3790f89bb3fad5c7911eeb99531}{Expr} $>$ \&args, const \hyperlink{classtvm_1_1Array}{Array}$<$ \hyperlink{classtvm_1_1te_1_1Tensor}{te\+::\+Tensor} $>$ \&tinfos, const \hyperlink{namespacetvm_1_1relay_a661d95f170bca230773914caeef3fe52}{Type} \&out\+\_\+type)$>$
+\begin{DoxyCompactList}\small\item\em Alternate the layout of operators or replace the operator with other expressions. This function will be invoked in Alter\+Op\+Layout pass. \end{DoxyCompactList}\item 
+using \hyperlink{namespacetvm_1_1relay_a526f835aaefdc86a8faa7da39802ebd5}{F\+T\+V\+M\+Convert\+Op\+Layout} = \hyperlink{classtvm_1_1runtime_1_1TypedPackedFunc}{runtime\+::\+Typed\+Packed\+Func}$<$ \hyperlink{namespacetvm_1_1relay_a5b84e3790f89bb3fad5c7911eeb99531}{Expr}(const \hyperlink{classtvm_1_1Attrs}{Attrs} \&attrs, const \hyperlink{classtvm_1_1Array}{Array}$<$ \hyperlink{namespacetvm_1_1relay_a5b84e3790f89bb3fad5c7911eeb99531}{Expr} $>$ \&args, const \hyperlink{classtvm_1_1Array}{Array}$<$ \hyperlink{classtvm_1_1te_1_1Tensor}{te\+::\+Tensor} $>$ \&tinfos, const std\+::string \&desired\+\_\+layout)$>$
+\begin{DoxyCompactList}\small\item\em Convert the layout of operators or replace the operator with other expressions. This function will be invoked in Convert\+Layout pass. \end{DoxyCompactList}\item 
+using \hyperlink{namespacetvm_1_1relay_a40770ea2c292eec7b9ebe4d310c67fb5}{F\+T\+V\+M\+Legalize} = \hyperlink{classtvm_1_1runtime_1_1TypedPackedFunc}{runtime\+::\+Typed\+Packed\+Func}$<$ \hyperlink{namespacetvm_1_1relay_a5b84e3790f89bb3fad5c7911eeb99531}{Expr}(const \hyperlink{classtvm_1_1Attrs}{Attrs} \&attrs, const \hyperlink{classtvm_1_1Array}{Array}$<$ \hyperlink{namespacetvm_1_1relay_a5b84e3790f89bb3fad5c7911eeb99531}{Expr} $>$ \&args, const \hyperlink{classtvm_1_1Array}{Array}$<$ \hyperlink{namespacetvm_1_1relay_a661d95f170bca230773914caeef3fe52}{tvm\+::relay\+::\+Type} $>$ \&arg\+\_\+types)$>$
+\begin{DoxyCompactList}\small\item\em Legalizes an expression with another expression. This function will be invoked in Legalize pass. It is a target-\/dependent pass. \end{DoxyCompactList}\item 
+using \hyperlink{namespacetvm_1_1relay_ab140f1857d8471d98fe5371f8da68154}{F\+T\+V\+M\+Annotate\+Target} = \hyperlink{classtvm_1_1runtime_1_1TypedPackedFunc}{runtime\+::\+Typed\+Packed\+Func}$<$ bool(const \hyperlink{classtvm_1_1Attrs}{Attrs} \&attrs, const \hyperlink{classtvm_1_1Array}{Array}$<$ \hyperlink{namespacetvm_1_1relay_a5b84e3790f89bb3fad5c7911eeb99531}{Expr} $>$ \&args)$>$
+\begin{DoxyCompactList}\small\item\em Annotates an expression to indicate if an op should be compiled using the given compiler/target. \end{DoxyCompactList}\item 
+using \hyperlink{namespacetvm_1_1relay_aa04117f6f0a173924ff2f6d080c9265c}{F\+Forward\+Rewrite} = \hyperlink{classtvm_1_1runtime_1_1TypedPackedFunc}{runtime\+::\+Typed\+Packed\+Func}$<$ \hyperlink{namespacetvm_1_1relay_a5b84e3790f89bb3fad5c7911eeb99531}{Expr}(const \hyperlink{classtvm_1_1relay_1_1Call}{Call} \&ref\+\_\+call, const \hyperlink{classtvm_1_1Array}{Array}$<$ \hyperlink{namespacetvm_1_1relay_a5b84e3790f89bb3fad5c7911eeb99531}{Expr} $>$ \&new\+\_\+args, const Object\+Ref \&ctx)$>$
+\begin{DoxyCompactList}\small\item\em Forward rewriting rule for a specific op. \end{DoxyCompactList}\item 
+using \hyperlink{namespacetvm_1_1relay_a9abada45a4f21ae750c1caba923f1059}{F\+Primal\+Gradient} = \hyperlink{classtvm_1_1runtime_1_1TypedPackedFunc}{runtime\+::\+Typed\+Packed\+Func}$<$ \hyperlink{classtvm_1_1Array}{tvm\+::\+Array}$<$ \hyperlink{namespacetvm_1_1relay_a5b84e3790f89bb3fad5c7911eeb99531}{Expr} $>$(const \hyperlink{namespacetvm_1_1relay_a5b84e3790f89bb3fad5c7911eeb99531}{Expr} \&orig\+\_\+call, const \hyperlink{namespacetvm_1_1relay_a5b84e3790f89bb3fad5c7911eeb99531}{Expr} \&output\+\_\+grad)$>$
+\begin{DoxyCompactList}\small\item\em Gradient for a specific op. \end{DoxyCompactList}\item 
+using \hyperlink{namespacetvm_1_1relay_a4d64348ae2b75977e167109fb4af4409}{Shape} = \hyperlink{classtvm_1_1Array}{Array}$<$ \hyperlink{namespacetvm_1_1relay_ae153a27d81399fd266b8d598227764c4}{Index\+Expr} $>$
+\begin{DoxyCompactList}\small\item\em A runtime representation of shape. \end{DoxyCompactList}\item 
+using \hyperlink{namespacetvm_1_1relay_a6f7012819c4abe61de2d52e4bf94cfbd}{F\+Shape\+Func} = \hyperlink{classtvm_1_1runtime_1_1TypedPackedFunc}{runtime\+::\+Typed\+Packed\+Func}$<$ \hyperlink{classtvm_1_1Array}{Array}$<$ \hyperlink{classtvm_1_1te_1_1Tensor}{te\+::\+Tensor} $>$(const \hyperlink{classtvm_1_1Attrs}{Attrs} \&attrs, const \hyperlink{classtvm_1_1Array}{Array}$<$ \hyperlink{classtvm_1_1te_1_1Tensor}{te\+::\+Tensor} $>$ \&inputs, const \hyperlink{classtvm_1_1Array}{Array}$<$ \hyperlink{namespacetvm_1_1relay_ae153a27d81399fd266b8d598227764c4}{Index\+Expr} $>$ \&out\+\_\+ndims)$>$
+\item 
+using \hyperlink{namespacetvm_1_1relay_aa6b4b16b28a3cfd5052b2b4214a440d9}{Any} = \hyperlink{classtvm_1_1tir_1_1AnyNode}{tvm\+::tir\+::\+Any\+Node}
+\item 
+using \hyperlink{namespacetvm_1_1relay_aa44e35e7d791c8dd53bb00ddb6411b38}{Kind} = \hyperlink{namespacetvm_acd267f8d7f55da6ac681239831963279}{Type\+Kind}
+\item 
+using \hyperlink{namespacetvm_1_1relay_a661d95f170bca230773914caeef3fe52}{Type} = \hyperlink{classtvm_1_1Type}{tvm\+::\+Type}
+\item 
+using \hyperlink{namespacetvm_1_1relay_af6995f0c848d0d5cc4124a38f43aaf12}{Type\+Node} = \hyperlink{classtvm_1_1TypeNode}{tvm\+::\+Type\+Node}
+\item 
+using \hyperlink{namespacetvm_1_1relay_a63321eb51080f3f57dd7563a3ca0bfa6}{Type\+Var} = \hyperlink{classtvm_1_1TypeVar}{tvm\+::\+Type\+Var}
+\item 
+using \hyperlink{namespacetvm_1_1relay_ab2cbe31b81ebd71ea8028a8404a7c9f3}{Type\+Var\+Node} = \hyperlink{classtvm_1_1TypeVarNode}{tvm\+::\+Type\+Var\+Node}
+\item 
+using \hyperlink{namespacetvm_1_1relay_a2235e350f9cd1eac3aa0177034976043}{Global\+Type\+Var} = \hyperlink{classtvm_1_1GlobalTypeVar}{tvm\+::\+Global\+Type\+Var}
+\item 
+using \hyperlink{namespacetvm_1_1relay_a9a10e2305e3a50dd00e07b043b93b5e8}{Global\+Type\+Var\+Node} = \hyperlink{classtvm_1_1GlobalTypeVarNode}{tvm\+::\+Global\+Type\+Var\+Node}
+\item 
+using \hyperlink{namespacetvm_1_1relay_ace9102638dffea6747ae9fa9be9f00f2}{Tuple\+Type} = \hyperlink{classtvm_1_1TupleType}{tvm\+::\+Tuple\+Type}
+\item 
+using \hyperlink{namespacetvm_1_1relay_a916609c894ac1000b66f9582f338d965}{Tuple\+Type\+Node} = \hyperlink{classtvm_1_1TupleTypeNode}{tvm\+::\+Tuple\+Type\+Node}
+\item 
+using \hyperlink{namespacetvm_1_1relay_a64e2e93fe04716efd8334ab4e39c92ce}{Type\+Constraint} = \hyperlink{classtvm_1_1TypeConstraint}{tvm\+::\+Type\+Constraint}
+\item 
+using \hyperlink{namespacetvm_1_1relay_a565e027589acded20ca38df22be098dc}{Type\+Constraint\+Node} = \hyperlink{classtvm_1_1TypeConstraintNode}{tvm\+::\+Type\+Constraint\+Node}
+\item 
+using \hyperlink{namespacetvm_1_1relay_aa475de90506d48a1bb04ef6d1bd99bfb}{Func\+Type} = \hyperlink{classtvm_1_1FuncType}{tvm\+::\+Func\+Type}
+\item 
+using \hyperlink{namespacetvm_1_1relay_ab551714015417af28d5ca2b47722997e}{Func\+Type\+Node} = \hyperlink{classtvm_1_1FuncTypeNode}{tvm\+::\+Func\+Type\+Node}
+\item 
+using \hyperlink{namespacetvm_1_1relay_a34535a1f05224c26db569bc134de7647}{Incomplete\+Type} = \hyperlink{classtvm_1_1IncompleteType}{tvm\+::\+Incomplete\+Type}
+\item 
+using \hyperlink{namespacetvm_1_1relay_a517ebee34b82bdb80f74ffcdcf361940}{Incomplete\+Type\+Node} = \hyperlink{classtvm_1_1IncompleteTypeNode}{tvm\+::\+Incomplete\+Type\+Node}
+\item 
+using \hyperlink{namespacetvm_1_1relay_a13fd39dbc2a639262858e9b72e8fb37f}{Relay\+Ref\+Type} = \hyperlink{classtvm_1_1RelayRefType}{tvm\+::\+Relay\+Ref\+Type}
+\item 
+using \hyperlink{namespacetvm_1_1relay_ae665239bd9119c8afb037d47781bf237}{Relay\+Ref\+Type\+Node} = \hyperlink{classtvm_1_1RelayRefTypeNode}{tvm\+::\+Relay\+Ref\+Type\+Node}
+\item 
+using \hyperlink{namespacetvm_1_1relay_a52c13723bba53f4953dfd10c34d480f8}{Tensor\+Type} = \hyperlink{classtvm_1_1TensorType}{tvm\+::\+Tensor\+Type}
+\item 
+using \hyperlink{namespacetvm_1_1relay_acfeff91bc774a278a2e9f6103a04387d}{Tensor\+Type\+Node} = \hyperlink{classtvm_1_1TensorTypeNode}{tvm\+::\+Tensor\+Type\+Node}
+\item 
+using \hyperlink{namespacetvm_1_1relay_ab406a37acee11226e3e2e119beee439e}{Type\+Call} = \hyperlink{classtvm_1_1TypeCall}{tvm\+::\+Type\+Call}
+\item 
+using \hyperlink{namespacetvm_1_1relay_af4dccabc877b8fd7db47cb73fb93883e}{Type\+Call\+Node} = \hyperlink{classtvm_1_1TypeCallNode}{tvm\+::\+Type\+Call\+Node}
+\item 
+using \hyperlink{namespacetvm_1_1relay_adab0d56fd993df71df3068dea0cd5456}{Type\+Relation} = \hyperlink{classtvm_1_1TypeRelation}{tvm\+::\+Type\+Relation}
+\item 
+using \hyperlink{namespacetvm_1_1relay_a89d812eaf13520b04e89a9414c51748c}{Type\+Relation\+Node} = \hyperlink{classtvm_1_1TypeRelationNode}{tvm\+::\+Type\+Relation\+Node}
+\item 
+using \hyperlink{namespacetvm_1_1relay_af253112249297a6cfb2a9b94cde0f235}{Type\+Relation\+Fn} = \hyperlink{namespacetvm_a72dcba4493adfcd8908663898ece3514}{tvm\+::\+Type\+Relation\+Fn}
+\item 
+using \hyperlink{namespacetvm_1_1relay_afa9be9990c2006832cbfc02ebb35e527}{Type\+Reporter} = \hyperlink{classtvm_1_1TypeReporter}{tvm\+::\+Type\+Reporter}
+\item 
+using \hyperlink{namespacetvm_1_1relay_aaa3b5700ea20db399f539cec1abcb12b}{Type\+Reporter\+Node} = \hyperlink{classtvm_1_1TypeReporterNode}{tvm\+::\+Type\+Reporter\+Node}
+\end{DoxyCompactItemize}
+\subsection*{Enumerations}
+\begin{DoxyCompactItemize}
+\item 
+enum \hyperlink{namespacetvm_1_1relay_a926750aeda977340aa82bceac863fc9e}{Feature} \+: int \{ \\*
+\hyperlink{namespacetvm_1_1relay_a926750aeda977340aa82bceac863fc9ea42a71e7934e2efe344713b17c426eecd}{f\+Var} = 0, 
+\hyperlink{namespacetvm_1_1relay_a926750aeda977340aa82bceac863fc9eae9b152650b0ebe6dbc1b42e0f84d567f}{f\+Global\+Var} = 1, 
+\hyperlink{namespacetvm_1_1relay_a926750aeda977340aa82bceac863fc9ea29eacc09610a7fd43026682238aae25f}{f\+Constant} = 2, 
+\hyperlink{namespacetvm_1_1relay_a926750aeda977340aa82bceac863fc9eaa2fe12a180d97822c440e169dc287e66}{f\+Tuple} = 3, 
+\\*
+\hyperlink{namespacetvm_1_1relay_a926750aeda977340aa82bceac863fc9ea4d2cb67f2e197880e0971286f2ffb498}{f\+Tuple\+Get\+Item} = 4, 
+\hyperlink{namespacetvm_1_1relay_a926750aeda977340aa82bceac863fc9ea3b367d0501427ea782137266a2fb77fa}{f\+Function} = 5, 
+\hyperlink{namespacetvm_1_1relay_a926750aeda977340aa82bceac863fc9eaca21bd0f67c01c6f7b82a1596cdfdf8b}{f\+Op} = 6, 
+\hyperlink{namespacetvm_1_1relay_a926750aeda977340aa82bceac863fc9ea5f3d3030d2ed56e5a47329e29f12ef02}{f\+Call} = 7, 
+\\*
+\hyperlink{namespacetvm_1_1relay_a926750aeda977340aa82bceac863fc9ea07ce432e7b4b4c044af03e4dbd210ba4}{f\+Let} = 8, 
+\hyperlink{namespacetvm_1_1relay_a926750aeda977340aa82bceac863fc9ea4e6b686fb15d50c4aef2316bef53a781}{f\+If} = 9, 
+\hyperlink{namespacetvm_1_1relay_a926750aeda977340aa82bceac863fc9ea46daa677c87c05e68258acea3579443d}{f\+Ref\+Create} = 10, 
+\hyperlink{namespacetvm_1_1relay_a926750aeda977340aa82bceac863fc9ea7c9e5e3d738c26c3ed34099f44f66251}{f\+Ref\+Read} = 11, 
+\\*
+\hyperlink{namespacetvm_1_1relay_a926750aeda977340aa82bceac863fc9ea4737da29588504f7f31cf4fb52925d63}{f\+Ref\+Write} = 12, 
+\hyperlink{namespacetvm_1_1relay_a926750aeda977340aa82bceac863fc9eaff71be930d862c312a5ae263e71167a2}{f\+Constructor} = 13, 
+\hyperlink{namespacetvm_1_1relay_a926750aeda977340aa82bceac863fc9ea53a8eba57c4a3abd37b4c96fb98bf61b}{f\+Match} = 14, 
+\hyperlink{namespacetvm_1_1relay_a926750aeda977340aa82bceac863fc9eac6392a0ecc7df38dbfa282a54d3718d1}{f\+Graph} = 15, 
+\\*
+\hyperlink{namespacetvm_1_1relay_a926750aeda977340aa82bceac863fc9eaff508e399703958af46f99ee8eb7d1a5}{f\+Let\+Rec} = 16
+ \}\begin{DoxyCompactList}\small\item\em Different kinds of relay feature a program might use. \end{DoxyCompactList}
+\item 
+enum \hyperlink{namespacetvm_1_1relay_ab5f4d382bf1bee69c3e484ea6c837578}{Op\+Pattern\+Kind} \{ \\*
+\hyperlink{namespacetvm_1_1relay_ab5f4d382bf1bee69c3e484ea6c837578a8c63d345994ce14eb197df6ad22de3aa}{k\+Elem\+Wise} = 0, 
+\hyperlink{namespacetvm_1_1relay_ab5f4d382bf1bee69c3e484ea6c837578a3c016b63ef8869468ab565c862713245}{k\+Broadcast} = 1, 
+\hyperlink{namespacetvm_1_1relay_ab5f4d382bf1bee69c3e484ea6c837578a7f703d1ae163ba4e6bef88357a232e00}{k\+Injective} = 2, 
+\hyperlink{namespacetvm_1_1relay_ab5f4d382bf1bee69c3e484ea6c837578ad282ac05b650598c3bfb559dc62a0738}{k\+Comm\+Reduce} = 3, 
+\\*
+\hyperlink{namespacetvm_1_1relay_ab5f4d382bf1bee69c3e484ea6c837578ab9b265465c486425c2f60cd4057e2ef4}{k\+Out\+E\+Wise\+Fusable} = 4, 
+\hyperlink{namespacetvm_1_1relay_ab5f4d382bf1bee69c3e484ea6c837578ae5610688419b90595a0701fe007a2ebb}{k\+Tuple} = 7, 
+\hyperlink{namespacetvm_1_1relay_ab5f4d382bf1bee69c3e484ea6c837578a3cb3cec00829ebd525feba875f2d6ac1}{k\+Opaque} = 8
+ \}\begin{DoxyCompactList}\small\item\em operator pattern used in graph fusion \end{DoxyCompactList}
+\item 
+enum \hyperlink{namespacetvm_1_1relay_adab76fedc831b249d1c80d69c4a620a3}{Any\+Codegen\+Strategy} \{ \hyperlink{namespacetvm_1_1relay_adab76fedc831b249d1c80d69c4a620a3a1a3550732b0caf3981198af2c1373542}{k\+Variable\+Dimensions}
+ \}\begin{DoxyCompactList}\small\item\em The codegeneration strategy for dynamic dimensions. \end{DoxyCompactList}
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{namespacetvm_acd267f8d7f55da6ac681239831963279}{Kind} \hyperlink{namespacetvm_1_1relay_af73e45f453515df6f9c0bbbf189719d6}{Kind\+Check} (const \hyperlink{namespacetvm_1_1relay_a661d95f170bca230773914caeef3fe52}{Type} \&t, const \hyperlink{classtvm_1_1IRModule}{I\+R\+Module} \&mod)
+\begin{DoxyCompactList}\small\item\em Check that types are well kinded by applying \char`\"{}kinding rules\char`\"{}. \end{DoxyCompactList}\item 
+bool \hyperlink{namespacetvm_1_1relay_abdade48285a63efffe743e73e41d3b35}{Constant\+Check} (const \hyperlink{namespacetvm_1_1relay_a5b84e3790f89bb3fad5c7911eeb99531}{Expr} \&e)
+\begin{DoxyCompactList}\small\item\em Check whether an expression is constant. \end{DoxyCompactList}\item 
+bool \hyperlink{namespacetvm_1_1relay_ade8a41f4d5e1698684fe03446776c799}{Alpha\+Equal} (const \hyperlink{namespacetvm_1_1relay_a5b84e3790f89bb3fad5c7911eeb99531}{Expr} \&e1, const \hyperlink{namespacetvm_1_1relay_a5b84e3790f89bb3fad5c7911eeb99531}{Expr} \&e2)
+\begin{DoxyCompactList}\small\item\em Compare two expressions for structural equivalence. \end{DoxyCompactList}\item 
+bool \hyperlink{namespacetvm_1_1relay_a396e72c6921843a960ac588a8c60253d}{Alpha\+Equal} (const \hyperlink{namespacetvm_1_1relay_a661d95f170bca230773914caeef3fe52}{Type} \&t1, const \hyperlink{namespacetvm_1_1relay_a661d95f170bca230773914caeef3fe52}{Type} \&t2)
+\begin{DoxyCompactList}\small\item\em Compare two types for structural equivalence. \end{DoxyCompactList}\item 
+bool \hyperlink{namespacetvm_1_1relay_a4e98128c160e24833fdba44345ad3ba3}{Alpha\+Equal} (const \hyperlink{classtvm_1_1relay_1_1Pattern}{Pattern} \&t1, const \hyperlink{classtvm_1_1relay_1_1Pattern}{Pattern} \&t2)
+\begin{DoxyCompactList}\small\item\em Compare two patterns for structural equivalence. \end{DoxyCompactList}\item 
+bool \hyperlink{namespacetvm_1_1relay_a59dde25d981d5b506115dd4dba7f67b7}{Well\+Formed} (const \hyperlink{namespacetvm_1_1relay_a5b84e3790f89bb3fad5c7911eeb99531}{Expr} \&expr)
+\begin{DoxyCompactList}\small\item\em Check that each \hyperlink{classtvm_1_1relay_1_1Var}{Var} is only bound once. \end{DoxyCompactList}\item 
+\hyperlink{classtvm_1_1Array}{tvm\+::\+Array}$<$ \hyperlink{classtvm_1_1relay_1_1Var}{Var} $>$ \hyperlink{namespacetvm_1_1relay_a0bcc32688b446d3574932554f6b8c2df}{Bound\+Vars} (const \hyperlink{namespacetvm_1_1relay_a5b84e3790f89bb3fad5c7911eeb99531}{Expr} \&expr)
+\begin{DoxyCompactList}\small\item\em Get all bound variables from expression expr. \end{DoxyCompactList}\item 
+\hyperlink{classtvm_1_1Array}{tvm\+::\+Array}$<$ \hyperlink{classtvm_1_1relay_1_1Var}{Var} $>$ \hyperlink{namespacetvm_1_1relay_aedcb2b290b4f80292eb34afefc41f0ac}{Bound\+Vars} (const \hyperlink{classtvm_1_1relay_1_1Pattern}{Pattern} \&pat)
+\begin{DoxyCompactList}\small\item\em Get all bound variables from pattern pat. \end{DoxyCompactList}\item 
+\hyperlink{classtvm_1_1Array}{tvm\+::\+Array}$<$ \hyperlink{classtvm_1_1relay_1_1Var}{Var} $>$ \hyperlink{namespacetvm_1_1relay_af2c5771c67f06c0af32c7b4b4269e73f}{Free\+Vars} (const \hyperlink{namespacetvm_1_1relay_a5b84e3790f89bb3fad5c7911eeb99531}{Expr} \&expr)
+\begin{DoxyCompactList}\small\item\em Get free type parameters from expression expr. \end{DoxyCompactList}\item 
+\hyperlink{classtvm_1_1Array}{tvm\+::\+Array}$<$ \hyperlink{classtvm_1_1relay_1_1Var}{Var} $>$ \hyperlink{namespacetvm_1_1relay_a6b1e94cf8d97514fe4a9493a0dec1559}{All\+Vars} (const \hyperlink{namespacetvm_1_1relay_a5b84e3790f89bb3fad5c7911eeb99531}{Expr} \&expr)
+\begin{DoxyCompactList}\small\item\em Get all variables from expression expr. \end{DoxyCompactList}\item 
+\hyperlink{classtvm_1_1Array}{tvm\+::\+Array}$<$ \hyperlink{namespacetvm_1_1relay_a63321eb51080f3f57dd7563a3ca0bfa6}{Type\+Var} $>$ \hyperlink{namespacetvm_1_1relay_acc529cca9623ac81c8aa6e106cdb5850}{Free\+Type\+Vars} (const \hyperlink{namespacetvm_1_1relay_a5b84e3790f89bb3fad5c7911eeb99531}{Expr} \&expr, const \hyperlink{classtvm_1_1IRModule}{I\+R\+Module} \&mod)
+\begin{DoxyCompactList}\small\item\em Get free Type\+Vars from expression expr. \end{DoxyCompactList}\item 
+\hyperlink{classtvm_1_1Array}{tvm\+::\+Array}$<$ \hyperlink{namespacetvm_1_1relay_a63321eb51080f3f57dd7563a3ca0bfa6}{Type\+Var} $>$ \hyperlink{namespacetvm_1_1relay_a446e2b12f3e907336313004c3e0a0c86}{Free\+Type\+Vars} (const \hyperlink{namespacetvm_1_1relay_a661d95f170bca230773914caeef3fe52}{Type} \&t, const \hyperlink{classtvm_1_1IRModule}{I\+R\+Module} \&mod)
+\begin{DoxyCompactList}\small\item\em Get free Type\+Vars from type t. \end{DoxyCompactList}\item 
+\hyperlink{classtvm_1_1Array}{tvm\+::\+Array}$<$ \hyperlink{namespacetvm_1_1relay_a63321eb51080f3f57dd7563a3ca0bfa6}{Type\+Var} $>$ \hyperlink{namespacetvm_1_1relay_a1e5aa65b13f8ca172009aa2ff3ba59d6}{Bound\+Type\+Vars} (const \hyperlink{namespacetvm_1_1relay_a5b84e3790f89bb3fad5c7911eeb99531}{Expr} \&expr, const \hyperlink{classtvm_1_1IRModule}{I\+R\+Module} \&mod)
+\begin{DoxyCompactList}\small\item\em Get all bound type variables from expression expr. \end{DoxyCompactList}\item 
+\hyperlink{classtvm_1_1Array}{tvm\+::\+Array}$<$ \hyperlink{namespacetvm_1_1relay_a63321eb51080f3f57dd7563a3ca0bfa6}{Type\+Var} $>$ \hyperlink{namespacetvm_1_1relay_a419979c48a5e37cd969f6fd6d0fead4b}{Bound\+Type\+Vars} (const \hyperlink{namespacetvm_1_1relay_a661d95f170bca230773914caeef3fe52}{Type} \&t, const \hyperlink{classtvm_1_1IRModule}{I\+R\+Module} \&mod)
+\begin{DoxyCompactList}\small\item\em Get all bound type variables from type t. \end{DoxyCompactList}\item 
+\hyperlink{classtvm_1_1Array}{tvm\+::\+Array}$<$ \hyperlink{namespacetvm_1_1relay_a63321eb51080f3f57dd7563a3ca0bfa6}{Type\+Var} $>$ \hyperlink{namespacetvm_1_1relay_ae67484a25663dfe2f87cbad53075abbf}{All\+Type\+Vars} (const \hyperlink{namespacetvm_1_1relay_a5b84e3790f89bb3fad5c7911eeb99531}{Expr} \&expr, const \hyperlink{classtvm_1_1IRModule}{I\+R\+Module} \&mod)
+\begin{DoxyCompactList}\small\item\em Get all type variables in expression expr. \end{DoxyCompactList}\item 
+\hyperlink{classtvm_1_1Array}{tvm\+::\+Array}$<$ \hyperlink{namespacetvm_1_1relay_a63321eb51080f3f57dd7563a3ca0bfa6}{Type\+Var} $>$ \hyperlink{namespacetvm_1_1relay_ad24361b252cdb636192641e6801f2666}{All\+Type\+Vars} (const \hyperlink{namespacetvm_1_1relay_a661d95f170bca230773914caeef3fe52}{Type} \&t, const \hyperlink{classtvm_1_1IRModule}{I\+R\+Module} \&mod)
+\begin{DoxyCompactList}\small\item\em Get all type variables in type t. \end{DoxyCompactList}\item 
+\hyperlink{classtvm_1_1Map}{Map}$<$ \hyperlink{namespacetvm_1_1relay_a5b84e3790f89bb3fad5c7911eeb99531}{Expr}, \hyperlink{classtvm_1_1Integer}{Integer} $>$ \hyperlink{namespacetvm_1_1relay_ab6e35e7086b1f79ae55651500f94116b}{Collect\+Device\+Info} (const \hyperlink{namespacetvm_1_1relay_a5b84e3790f89bb3fad5c7911eeb99531}{Expr} \&expr)
+\begin{DoxyCompactList}\small\item\em Collect the device mapping information of each expression. \end{DoxyCompactList}\item 
+\hyperlink{classtvm_1_1Map}{Map}$<$ \hyperlink{namespacetvm_1_1relay_a5b84e3790f89bb3fad5c7911eeb99531}{Expr}, \hyperlink{classtvm_1_1Integer}{Integer} $>$ \hyperlink{namespacetvm_1_1relay_a4e17d61a10c7781b004559a5b7430047}{Collect\+Device\+Annotation\+Ops} (const \hyperlink{namespacetvm_1_1relay_a5b84e3790f89bb3fad5c7911eeb99531}{Expr} \&expr)
+\begin{DoxyCompactList}\small\item\em Collect the device anntation operators. \end{DoxyCompactList}\item 
+\hyperlink{classtvm_1_1Array}{Array}$<$ \hyperlink{classtvm_1_1relay_1_1Pattern}{Pattern} $>$ \hyperlink{namespacetvm_1_1relay_aa3a8cace40f8056fd6412f39c3eaa605}{Unmatched\+Cases} (const \hyperlink{classtvm_1_1relay_1_1Match}{Match} \&match, const \hyperlink{classtvm_1_1IRModule}{I\+R\+Module} \&mod)
+\begin{DoxyCompactList}\small\item\em Finds cases that the given match expression does not catch, if any. \end{DoxyCompactList}\item 
+void \hyperlink{namespacetvm_1_1relay_a5ede3d80c546097084cf98b60e600b80}{Post\+Order\+Visit} (const \hyperlink{namespacetvm_1_1relay_a5b84e3790f89bb3fad5c7911eeb99531}{Expr} \&node, std\+::function$<$ void(const \hyperlink{namespacetvm_1_1relay_a5b84e3790f89bb3fad5c7911eeb99531}{Expr} \&)$>$ fvisit)
+\begin{DoxyCompactList}\small\item\em recursively visit the ir in post D\+FS order node, apply fvisit Each node is guaranteed to be visited only once. \end{DoxyCompactList}\item 
+\hyperlink{classtvm_1_1relay_1_1FeatureSet}{Feature\+Set} \hyperlink{namespacetvm_1_1relay_a62b651084b386991221bc32c020cbef5}{Detect\+Feature} (const \hyperlink{classtvm_1_1RelayExpr}{Relay\+Expr} \&expr)
+\begin{DoxyCompactList}\small\item\em Calculate the feature of the program. \end{DoxyCompactList}\item 
+\hyperlink{classtvm_1_1relay_1_1FeatureSet}{Feature\+Set} \hyperlink{namespacetvm_1_1relay_a81978c82e1130854e575ccabc152ad70}{Detect\+Feature} (const \hyperlink{classtvm_1_1IRModule}{I\+R\+Module} \&mod)
+\begin{DoxyCompactList}\small\item\em Calculate the feature of the program. \end{DoxyCompactList}\item 
+\hyperlink{classtvm_1_1relay_1_1FeatureSet}{Feature\+Set} \hyperlink{namespacetvm_1_1relay_a191d5425083368521d49cc49cef65aba}{Detect\+Feature} (const \hyperlink{namespacetvm_1_1relay_a5b84e3790f89bb3fad5c7911eeb99531}{Expr} \&expr, const \hyperlink{classtvm_1_1IRModule}{I\+R\+Module} \&mod)
+\begin{DoxyCompactList}\small\item\em Calculate the feature of the program. \end{DoxyCompactList}\item 
+\hyperlink{classtvm_1_1runtime_1_1TypedPackedFunc}{runtime\+::\+Typed\+Packed\+Func}$<$ Object\+Ref(\hyperlink{namespacetvm_1_1relay_a5b84e3790f89bb3fad5c7911eeb99531}{Expr})$>$ \hyperlink{namespacetvm_1_1relay_ad02b5b16803fc28a9d920b105074a17d}{Create\+Interpreter} (\hyperlink{classtvm_1_1IRModule}{I\+R\+Module} mod, D\+L\+Context context, \hyperlink{classtvm_1_1Target}{Target} target)
+\begin{DoxyCompactList}\small\item\em Create a Interpreter function that can evaluate an expression and produce a value. \end{DoxyCompactList}\item 
+\hyperlink{namespacetvm_1_1relay_a5b84e3790f89bb3fad5c7911eeb99531}{Expr} \hyperlink{namespacetvm_1_1relay_ad7cfa0b6a4537989b886d47767526726}{Bind} (const \hyperlink{namespacetvm_1_1relay_a5b84e3790f89bb3fad5c7911eeb99531}{Expr} \&expr, const \hyperlink{classtvm_1_1Map}{tvm\+::\+Map}$<$ \hyperlink{classtvm_1_1relay_1_1Var}{Var}, \hyperlink{namespacetvm_1_1relay_a5b84e3790f89bb3fad5c7911eeb99531}{Expr} $>$ \&binds)
+\begin{DoxyCompactList}\small\item\em Bind the free variables to a Relay expression. This is a helper function usually called by other pass functions to help optimizations. \end{DoxyCompactList}\item 
+\hyperlink{classtvm_1_1relay_1_1Function}{Function} \hyperlink{namespacetvm_1_1relay_a18141658f627685d55704609111f57be}{Infer\+Type} (const \hyperlink{classtvm_1_1relay_1_1Function}{Function} \&f, const \hyperlink{classtvm_1_1IRModule}{I\+R\+Module} \&mod, const \hyperlink{namespacetvm_1_1relay_a81ac7c3d0824529fddce7849c9c66289}{Global\+Var} \&var)
+\begin{DoxyCompactList}\small\item\em Infer the type of a function as if it is mapped to var in the mod. \end{DoxyCompactList}\item 
+\hyperlink{namespacetvm_1_1relay_a5b84e3790f89bb3fad5c7911eeb99531}{Expr} \hyperlink{namespacetvm_1_1relay_ac36059b06a538598a8f46257c0cb9fe0}{Forward\+Rewrite} (const \hyperlink{namespacetvm_1_1relay_a5b84e3790f89bb3fad5c7911eeb99531}{Expr} \&expr, const std\+::string \&rewrite\+\_\+map\+\_\+attr\+\_\+name, std\+::function$<$ Object\+Ref(const \hyperlink{classtvm_1_1relay_1_1Call}{Call} \&)$>$ fcontext=nullptr, std\+::function$<$ \hyperlink{namespacetvm_1_1relay_a5b84e3790f89bb3fad5c7911eeb99531}{Expr}(const \hyperlink{namespacetvm_1_1relay_a5b84e3790f89bb3fad5c7911eeb99531}{Expr} \&)$>$ fmulti\+\_\+ref\+\_\+trigger=nullptr)
+\begin{DoxyCompactList}\small\item\em Apply rewrite rules to rewrite the expr in post D\+FS order. This function is used as a helper function to rewrtie an expression in a pass. \end{DoxyCompactList}\item 
+\hyperlink{namespacetvm_1_1relay_a5b84e3790f89bb3fad5c7911eeb99531}{Expr} \hyperlink{namespacetvm_1_1relay_ae6b8ec762f81290872d611c40cc72458}{Forward\+Rewrite} (const \hyperlink{namespacetvm_1_1relay_a5b84e3790f89bb3fad5c7911eeb99531}{Expr} \&expr, const \hyperlink{namespacetvm_1_1relay_aa04117f6f0a173924ff2f6d080c9265c}{F\+Forward\+Rewrite} \&rewrite\+\_\+func, std\+::function$<$ Object\+Ref(const \hyperlink{classtvm_1_1relay_1_1Call}{Call} \&)$>$ fcontext=nullptr, std\+::function$<$ \hyperlink{namespacetvm_1_1relay_a5b84e3790f89bb3fad5c7911eeb99531}{Expr}(const \hyperlink{namespacetvm_1_1relay_a5b84e3790f89bb3fad5c7911eeb99531}{Expr} \&)$>$ fmulti\+\_\+ref\+\_\+trigger=nullptr)
+\begin{DoxyCompactList}\small\item\em Apply rewrite rules to rewrite the expr in post D\+FS order. This function is used as a helper function to rewrtie an expression in a pass. \end{DoxyCompactList}\item 
+\hyperlink{namespacetvm_1_1relay_a5b84e3790f89bb3fad5c7911eeb99531}{Expr} \hyperlink{namespacetvm_1_1relay_a7917e50fbb560a15995e8a617d65d1ab}{Rewrite\+Annotated\+Ops} (const \hyperlink{namespacetvm_1_1relay_a5b84e3790f89bb3fad5c7911eeb99531}{Expr} \&expr, int fallback\+\_\+device)
+\begin{DoxyCompactList}\small\item\em Rewrite the annotated program. \end{DoxyCompactList}\item 
+\hyperlink{classtvm_1_1relay_1_1Function}{Function} \hyperlink{namespacetvm_1_1relay_ab9548d99857f7698f4fe64d056dcd46a}{To\+C\+PS} (const \hyperlink{classtvm_1_1relay_1_1Function}{Function} \&f, const \hyperlink{classtvm_1_1IRModule}{I\+R\+Module} \&mod)
+\begin{DoxyCompactList}\small\item\em Turn an expression into continuation passing style(\+C\+P\+S). \end{DoxyCompactList}\item 
+\hyperlink{classtvm_1_1relay_1_1Function}{Function} \hyperlink{namespacetvm_1_1relay_a1677d450d58078811f52fd70d67db515}{Un\+C\+PS} (const \hyperlink{classtvm_1_1relay_1_1Function}{Function} \&f)
+\begin{DoxyCompactList}\small\item\em Remove the continuation argument of a C\+PS function. \end{DoxyCompactList}\item 
+\hyperlink{namespacetvm_1_1relay_a5b84e3790f89bb3fad5c7911eeb99531}{Expr} \hyperlink{namespacetvm_1_1relay_a1ecbcbe35c7abd82b9eabf94f6b797d2}{De\+Dup} (const \hyperlink{namespacetvm_1_1relay_a5b84e3790f89bb3fad5c7911eeb99531}{Expr} \&e)
+\begin{DoxyCompactList}\small\item\em Deduplicate the bound variables and type variables in the expression. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+constexpr size\+\_\+t \hyperlink{namespacetvm_1_1relay_ac3a576d7d192ce78bafb169c9aa882d1}{feature\+\_\+count} = 17
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Relay\+: a high level functional IR for T\+VM. 
+
+This namespace contains the abstract syntax tree, and other essential data structures for the Relay IR.
+
+You can find more about Relay by reading the language reference. 
+
+\subsection{Typedef Documentation}
+\index{tvm\+::relay@{tvm\+::relay}!Any@{Any}}
+\index{Any@{Any}!tvm\+::relay@{tvm\+::relay}}
+\subsubsection[{\texorpdfstring{Any}{Any}}]{\setlength{\rightskip}{0pt plus 5cm}using {\bf tvm\+::relay\+::\+Any} = typedef {\bf tvm\+::tir\+::\+Any\+Node}}\hypertarget{namespacetvm_1_1relay_aa6b4b16b28a3cfd5052b2b4214a440d9}{}\label{namespacetvm_1_1relay_aa6b4b16b28a3cfd5052b2b4214a440d9}
+\index{tvm\+::relay@{tvm\+::relay}!Base\+Func@{Base\+Func}}
+\index{Base\+Func@{Base\+Func}!tvm\+::relay@{tvm\+::relay}}
+\subsubsection[{\texorpdfstring{Base\+Func}{BaseFunc}}]{\setlength{\rightskip}{0pt plus 5cm}using {\bf tvm\+::relay\+::\+Base\+Func} = typedef {\bf tvm\+::\+Base\+Func}}\hypertarget{namespacetvm_1_1relay_acbaff2ae7feec23fea55e025a9cc1b76}{}\label{namespacetvm_1_1relay_acbaff2ae7feec23fea55e025a9cc1b76}
+\index{tvm\+::relay@{tvm\+::relay}!Base\+Func\+Node@{Base\+Func\+Node}}
+\index{Base\+Func\+Node@{Base\+Func\+Node}!tvm\+::relay@{tvm\+::relay}}
+\subsubsection[{\texorpdfstring{Base\+Func\+Node}{BaseFuncNode}}]{\setlength{\rightskip}{0pt plus 5cm}using {\bf tvm\+::relay\+::\+Base\+Func\+Node} = typedef {\bf tvm\+::\+Base\+Func\+Node}}\hypertarget{namespacetvm_1_1relay_a4edf28d1226abc08d28bc2fd90ce7b42}{}\label{namespacetvm_1_1relay_a4edf28d1226abc08d28bc2fd90ce7b42}
+\index{tvm\+::relay@{tvm\+::relay}!Constructor@{Constructor}}
+\index{Constructor@{Constructor}!tvm\+::relay@{tvm\+::relay}}
+\subsubsection[{\texorpdfstring{Constructor}{Constructor}}]{\setlength{\rightskip}{0pt plus 5cm}using {\bf tvm\+::relay\+::\+Constructor} = typedef {\bf tvm\+::\+Constructor}}\hypertarget{namespacetvm_1_1relay_aec85bf097deda59bd22e88475c9165e9}{}\label{namespacetvm_1_1relay_aec85bf097deda59bd22e88475c9165e9}
+\index{tvm\+::relay@{tvm\+::relay}!Constructor\+Node@{Constructor\+Node}}
+\index{Constructor\+Node@{Constructor\+Node}!tvm\+::relay@{tvm\+::relay}}
+\subsubsection[{\texorpdfstring{Constructor\+Node}{ConstructorNode}}]{\setlength{\rightskip}{0pt plus 5cm}using {\bf tvm\+::relay\+::\+Constructor\+Node} = typedef {\bf tvm\+::\+Constructor\+Node}}\hypertarget{namespacetvm_1_1relay_a6b95f70a9b44cc1c96593201594d1345}{}\label{namespacetvm_1_1relay_a6b95f70a9b44cc1c96593201594d1345}
+\index{tvm\+::relay@{tvm\+::relay}!Expr@{Expr}}
+\index{Expr@{Expr}!tvm\+::relay@{tvm\+::relay}}
+\subsubsection[{\texorpdfstring{Expr}{Expr}}]{\setlength{\rightskip}{0pt plus 5cm}using {\bf tvm\+::relay\+::\+Expr} = typedef {\bf tvm\+::\+Relay\+Expr}}\hypertarget{namespacetvm_1_1relay_a5b84e3790f89bb3fad5c7911eeb99531}{}\label{namespacetvm_1_1relay_a5b84e3790f89bb3fad5c7911eeb99531}
+\index{tvm\+::relay@{tvm\+::relay}!Expr\+Node@{Expr\+Node}}
+\index{Expr\+Node@{Expr\+Node}!tvm\+::relay@{tvm\+::relay}}
+\subsubsection[{\texorpdfstring{Expr\+Node}{ExprNode}}]{\setlength{\rightskip}{0pt plus 5cm}using {\bf tvm\+::relay\+::\+Expr\+Node} = typedef {\bf tvm\+::\+Relay\+Expr\+Node}}\hypertarget{namespacetvm_1_1relay_a387f18e050d016c52ea6c4781e7cff6c}{}\label{namespacetvm_1_1relay_a387f18e050d016c52ea6c4781e7cff6c}
+\index{tvm\+::relay@{tvm\+::relay}!F\+Forward\+Rewrite@{F\+Forward\+Rewrite}}
+\index{F\+Forward\+Rewrite@{F\+Forward\+Rewrite}!tvm\+::relay@{tvm\+::relay}}
+\subsubsection[{\texorpdfstring{F\+Forward\+Rewrite}{FForwardRewrite}}]{\setlength{\rightskip}{0pt plus 5cm}using {\bf tvm\+::relay\+::\+F\+Forward\+Rewrite} = typedef {\bf runtime\+::\+Typed\+Packed\+Func}$<$ {\bf Expr}(const {\bf Call}\& ref\+\_\+call, const {\bf Array}$<${\bf Expr}$>$\& new\+\_\+args, const Object\+Ref\& ctx)$>$}\hypertarget{namespacetvm_1_1relay_aa04117f6f0a173924ff2f6d080c9265c}{}\label{namespacetvm_1_1relay_aa04117f6f0a173924ff2f6d080c9265c}
+
+
+Forward rewriting rule for a specific op. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em ref\+\_\+call} & The reference old call type to be rewritten. We can make use of the op and type information. \\
+\hline
+{\em new\+\_\+args} & The new arguments (some of them could be \hyperlink{classtvm_1_1relay_1_1TempExpr}{Temp\+Expr}). \\
+\hline
+{\em ctx} & Optional context information about ref\+\_\+call. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The rewriten result call, can also return nullptr, which indicate the rewriter should use the default fallback rule that realizes all its input and compose the call.
+\end{DoxyReturn}
+\begin{DoxyNote}{Note}
+When we register the function, we can register a different signature with ctx to be a specific node type. 
+\end{DoxyNote}
+\index{tvm\+::relay@{tvm\+::relay}!F\+Primal\+Gradient@{F\+Primal\+Gradient}}
+\index{F\+Primal\+Gradient@{F\+Primal\+Gradient}!tvm\+::relay@{tvm\+::relay}}
+\subsubsection[{\texorpdfstring{F\+Primal\+Gradient}{FPrimalGradient}}]{\setlength{\rightskip}{0pt plus 5cm}using {\bf tvm\+::relay\+::\+F\+Primal\+Gradient} = typedef {\bf runtime\+::\+Typed\+Packed\+Func}$<${\bf tvm\+::\+Array}$<${\bf Expr}$>$(const {\bf Expr}\& orig\+\_\+call, const {\bf Expr}\& output\+\_\+grad)$>$}\hypertarget{namespacetvm_1_1relay_a9abada45a4f21ae750c1caba923f1059}{}\label{namespacetvm_1_1relay_a9abada45a4f21ae750c1caba923f1059}
+
+
+Gradient for a specific op. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em orig\+\_\+call} & the original Expr. \\
+\hline
+{\em output\+\_\+grad} & the gradient of the Expr. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the gradient for each parameters. 
+\end{DoxyReturn}
+\index{tvm\+::relay@{tvm\+::relay}!F\+Shape\+Func@{F\+Shape\+Func}}
+\index{F\+Shape\+Func@{F\+Shape\+Func}!tvm\+::relay@{tvm\+::relay}}
+\subsubsection[{\texorpdfstring{F\+Shape\+Func}{FShapeFunc}}]{\setlength{\rightskip}{0pt plus 5cm}using {\bf tvm\+::relay\+::\+F\+Shape\+Func} = typedef {\bf runtime\+::\+Typed\+Packed\+Func}$<$ {\bf Array}$<${\bf te\+::\+Tensor}$>$(const {\bf Attrs}\& attrs, const {\bf Array}$<${\bf te\+::\+Tensor}$>$\& inputs, const {\bf Array}$<${\bf Index\+Expr}$>$\& out\+\_\+ndims)$>$}\hypertarget{namespacetvm_1_1relay_a6f7012819c4abe61de2d52e4bf94cfbd}{}\label{namespacetvm_1_1relay_a6f7012819c4abe61de2d52e4bf94cfbd}
+\index{tvm\+::relay@{tvm\+::relay}!F\+T\+V\+M\+Alter\+Op\+Layout@{F\+T\+V\+M\+Alter\+Op\+Layout}}
+\index{F\+T\+V\+M\+Alter\+Op\+Layout@{F\+T\+V\+M\+Alter\+Op\+Layout}!tvm\+::relay@{tvm\+::relay}}
+\subsubsection[{\texorpdfstring{F\+T\+V\+M\+Alter\+Op\+Layout}{FTVMAlterOpLayout}}]{\setlength{\rightskip}{0pt plus 5cm}using {\bf tvm\+::relay\+::\+F\+T\+V\+M\+Alter\+Op\+Layout} = typedef {\bf runtime\+::\+Typed\+Packed\+Func}$<$ {\bf Expr}(const {\bf Attrs}\& attrs, const {\bf Array}$<${\bf Expr}$>$\& args, const {\bf Array}$<${\bf te\+::\+Tensor}$>$\& tinfos, const {\bf Type}\& out\+\_\+type)$>$}\hypertarget{namespacetvm_1_1relay_ac36536541a0688d02f9172bf8a35813b}{}\label{namespacetvm_1_1relay_ac36536541a0688d02f9172bf8a35813b}
+
+
+Alternate the layout of operators or replace the operator with other expressions. This function will be invoked in Alter\+Op\+Layout pass. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em attrs} & The attribute of the original node. \\
+\hline
+{\em args} & The input symbols of the original node. \\
+\hline
+{\em tinfos} & An array of placeholders, use for getting the inferred shape and dtype of the inputs. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+new\+\_\+expr The modified expression. 
+\end{DoxyReturn}
+\index{tvm\+::relay@{tvm\+::relay}!F\+T\+V\+M\+Annotate\+Target@{F\+T\+V\+M\+Annotate\+Target}}
+\index{F\+T\+V\+M\+Annotate\+Target@{F\+T\+V\+M\+Annotate\+Target}!tvm\+::relay@{tvm\+::relay}}
+\subsubsection[{\texorpdfstring{F\+T\+V\+M\+Annotate\+Target}{FTVMAnnotateTarget}}]{\setlength{\rightskip}{0pt plus 5cm}using {\bf tvm\+::relay\+::\+F\+T\+V\+M\+Annotate\+Target} = typedef {\bf runtime\+::\+Typed\+Packed\+Func}$<$ bool(const {\bf Attrs}\& attrs, const {\bf Array}$<${\bf Expr}$>$\& args)$>$}\hypertarget{namespacetvm_1_1relay_ab140f1857d8471d98fe5371f8da68154}{}\label{namespacetvm_1_1relay_ab140f1857d8471d98fe5371f8da68154}
+
+
+Annotates an expression to indicate if an op should be compiled using the given compiler/target. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em attrs} & The attribute of the original expr. \\
+\hline
+{\em args} & The arguments of the original expr.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true if this op should be registered to invoke a specific compiler for codegen, otherwise, false. 
+\end{DoxyReturn}
+\index{tvm\+::relay@{tvm\+::relay}!F\+T\+V\+M\+Compute@{F\+T\+V\+M\+Compute}}
+\index{F\+T\+V\+M\+Compute@{F\+T\+V\+M\+Compute}!tvm\+::relay@{tvm\+::relay}}
+\subsubsection[{\texorpdfstring{F\+T\+V\+M\+Compute}{FTVMCompute}}]{\setlength{\rightskip}{0pt plus 5cm}using {\bf tvm\+::relay\+::\+F\+T\+V\+M\+Compute} = typedef {\bf runtime\+::\+Typed\+Packed\+Func}$<$ {\bf Array}$<${\bf te\+::\+Tensor}$>$(const {\bf Attrs}\& attrs, const {\bf Array}$<${\bf te\+::\+Tensor}$>$\& inputs, const {\bf Type}\& out\+\_\+type)$>$}\hypertarget{namespacetvm_1_1relay_a63a0893a8379998657ddff39a3162188}{}\label{namespacetvm_1_1relay_a63a0893a8379998657ddff39a3162188}
+
+
+Computation description interface. 
+
+\begin{DoxyNote}{Note}
+This function have a special convention for functions with tuple input/output.
+\end{DoxyNote}
+So far we restrict tuple support to the following case\+:
+\begin{DoxyItemize}
+\item \hyperlink{classtvm_1_1relay_1_1Function}{Function} which takes a single tuple as input.
+\item \hyperlink{classtvm_1_1relay_1_1Function}{Function} which outputs a single tuple.
+\end{DoxyItemize}
+
+In both cases, the tuple is flattened as array.
+
+
+\begin{DoxyParams}{Parameters}
+{\em attrs} & The attribute of the primitive \\
+\hline
+{\em inputs} & The input tensors. \\
+\hline
+{\em out\+\_\+type} & The output type information \& these are always placeholders. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The output compute description of the operator. 
+\end{DoxyReturn}
+\index{tvm\+::relay@{tvm\+::relay}!F\+T\+V\+M\+Convert\+Op\+Layout@{F\+T\+V\+M\+Convert\+Op\+Layout}}
+\index{F\+T\+V\+M\+Convert\+Op\+Layout@{F\+T\+V\+M\+Convert\+Op\+Layout}!tvm\+::relay@{tvm\+::relay}}
+\subsubsection[{\texorpdfstring{F\+T\+V\+M\+Convert\+Op\+Layout}{FTVMConvertOpLayout}}]{\setlength{\rightskip}{0pt plus 5cm}using {\bf tvm\+::relay\+::\+F\+T\+V\+M\+Convert\+Op\+Layout} = typedef {\bf runtime\+::\+Typed\+Packed\+Func}$<$ {\bf Expr}(const {\bf Attrs}\& attrs, const {\bf Array}$<${\bf Expr}$>$\& args, const {\bf Array}$<${\bf te\+::\+Tensor}$>$\& tinfos, const std\+::string\& desired\+\_\+layout)$>$}\hypertarget{namespacetvm_1_1relay_a526f835aaefdc86a8faa7da39802ebd5}{}\label{namespacetvm_1_1relay_a526f835aaefdc86a8faa7da39802ebd5}
+
+
+Convert the layout of operators or replace the operator with other expressions. This function will be invoked in Convert\+Layout pass. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em attrs} & The attribute of the original node. \\
+\hline
+{\em inputs} & The input symbols of the original node. \\
+\hline
+{\em tinfos} & An array of placeholders, use for getting the inferred shape and dtype of the inputs. \\
+\hline
+{\em desired\+\_\+layout} & The desired layout. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+new\+\_\+expr The modified expression. 
+\end{DoxyReturn}
+\index{tvm\+::relay@{tvm\+::relay}!F\+T\+V\+M\+Legalize@{F\+T\+V\+M\+Legalize}}
+\index{F\+T\+V\+M\+Legalize@{F\+T\+V\+M\+Legalize}!tvm\+::relay@{tvm\+::relay}}
+\subsubsection[{\texorpdfstring{F\+T\+V\+M\+Legalize}{FTVMLegalize}}]{\setlength{\rightskip}{0pt plus 5cm}using {\bf tvm\+::relay\+::\+F\+T\+V\+M\+Legalize} = typedef {\bf runtime\+::\+Typed\+Packed\+Func}$<$ {\bf Expr}(const {\bf Attrs}\& attrs, const {\bf Array}$<${\bf Expr}$>$\& args, const {\bf Array}$<${\bf tvm\+::relay\+::\+Type}$>$\& arg\+\_\+types)$>$}\hypertarget{namespacetvm_1_1relay_a40770ea2c292eec7b9ebe4d310c67fb5}{}\label{namespacetvm_1_1relay_a40770ea2c292eec7b9ebe4d310c67fb5}
+
+
+Legalizes an expression with another expression. This function will be invoked in Legalize pass. It is a target-\/dependent pass. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em attrs} & The attribute of the original node. \\
+\hline
+{\em args} & The input symbols of the original node. \\
+\hline
+{\em arg\+\_\+types} & An array of placeholders, use for getting the inferred shape and dtype of the inputs. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+new\+\_\+expr The modified expression. 
+\end{DoxyReturn}
+\index{tvm\+::relay@{tvm\+::relay}!F\+T\+V\+M\+Schedule@{F\+T\+V\+M\+Schedule}}
+\index{F\+T\+V\+M\+Schedule@{F\+T\+V\+M\+Schedule}!tvm\+::relay@{tvm\+::relay}}
+\subsubsection[{\texorpdfstring{F\+T\+V\+M\+Schedule}{FTVMSchedule}}]{\setlength{\rightskip}{0pt plus 5cm}using {\bf tvm\+::relay\+::\+F\+T\+V\+M\+Schedule} = typedef {\bf runtime\+::\+Typed\+Packed\+Func}$<$ {\bf te\+::\+Schedule}(const {\bf Attrs}\& attrs, const {\bf Array}$<${\bf te\+::\+Tensor}$>$\& outs, const {\bf Target}\& target)$>$}\hypertarget{namespacetvm_1_1relay_af8f7c5928c79389da637c35df6c8557c}{}\label{namespacetvm_1_1relay_af8f7c5928c79389da637c35df6c8557c}
+
+
+Build the computation schedule for op whose root is at current op. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em attrs} & The attribute of the node. \\
+\hline
+{\em outs} & The output tensors. \\
+\hline
+{\em target} & The build target. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+schedule The computation schedule. 
+\end{DoxyReturn}
+\index{tvm\+::relay@{tvm\+::relay}!F\+T\+V\+M\+Strategy@{F\+T\+V\+M\+Strategy}}
+\index{F\+T\+V\+M\+Strategy@{F\+T\+V\+M\+Strategy}!tvm\+::relay@{tvm\+::relay}}
+\subsubsection[{\texorpdfstring{F\+T\+V\+M\+Strategy}{FTVMStrategy}}]{\setlength{\rightskip}{0pt plus 5cm}using {\bf tvm\+::relay\+::\+F\+T\+V\+M\+Strategy} = typedef {\bf Generic\+Func}}\hypertarget{namespacetvm_1_1relay_a2eb2ad4e7a83e0a28e2ad073d7bf9305}{}\label{namespacetvm_1_1relay_a2eb2ad4e7a83e0a28e2ad073d7bf9305}
+
+
+Generate the strategy of operators. This function is a generic function and can be re-\/defined for different targets. 
+
+The function signature of generic function is\+: \hyperlink{classtvm_1_1relay_1_1OpStrategy}{Op\+Strategy}(const \hyperlink{classtvm_1_1Attrs}{Attrs}\& attrs, const Array$<$\+Tensor$>$\& inputs, const \hyperlink{classtvm_1_1Type}{Type}\& out\+\_\+type, const \hyperlink{classtvm_1_1Target}{Target}\& target) \index{tvm\+::relay@{tvm\+::relay}!Func\+Type@{Func\+Type}}
+\index{Func\+Type@{Func\+Type}!tvm\+::relay@{tvm\+::relay}}
+\subsubsection[{\texorpdfstring{Func\+Type}{FuncType}}]{\setlength{\rightskip}{0pt plus 5cm}using {\bf tvm\+::relay\+::\+Func\+Type} = typedef {\bf tvm\+::\+Func\+Type}}\hypertarget{namespacetvm_1_1relay_aa475de90506d48a1bb04ef6d1bd99bfb}{}\label{namespacetvm_1_1relay_aa475de90506d48a1bb04ef6d1bd99bfb}
+\index{tvm\+::relay@{tvm\+::relay}!Func\+Type\+Node@{Func\+Type\+Node}}
+\index{Func\+Type\+Node@{Func\+Type\+Node}!tvm\+::relay@{tvm\+::relay}}
+\subsubsection[{\texorpdfstring{Func\+Type\+Node}{FuncTypeNode}}]{\setlength{\rightskip}{0pt plus 5cm}using {\bf tvm\+::relay\+::\+Func\+Type\+Node} = typedef {\bf tvm\+::\+Func\+Type\+Node}}\hypertarget{namespacetvm_1_1relay_ab551714015417af28d5ca2b47722997e}{}\label{namespacetvm_1_1relay_ab551714015417af28d5ca2b47722997e}
+\index{tvm\+::relay@{tvm\+::relay}!Global\+Type\+Var@{Global\+Type\+Var}}
+\index{Global\+Type\+Var@{Global\+Type\+Var}!tvm\+::relay@{tvm\+::relay}}
+\subsubsection[{\texorpdfstring{Global\+Type\+Var}{GlobalTypeVar}}]{\setlength{\rightskip}{0pt plus 5cm}using {\bf tvm\+::relay\+::\+Global\+Type\+Var} = typedef {\bf tvm\+::\+Global\+Type\+Var}}\hypertarget{namespacetvm_1_1relay_a2235e350f9cd1eac3aa0177034976043}{}\label{namespacetvm_1_1relay_a2235e350f9cd1eac3aa0177034976043}
+\index{tvm\+::relay@{tvm\+::relay}!Global\+Type\+Var\+Node@{Global\+Type\+Var\+Node}}
+\index{Global\+Type\+Var\+Node@{Global\+Type\+Var\+Node}!tvm\+::relay@{tvm\+::relay}}
+\subsubsection[{\texorpdfstring{Global\+Type\+Var\+Node}{GlobalTypeVarNode}}]{\setlength{\rightskip}{0pt plus 5cm}using {\bf tvm\+::relay\+::\+Global\+Type\+Var\+Node} = typedef {\bf tvm\+::\+Global\+Type\+Var\+Node}}\hypertarget{namespacetvm_1_1relay_a9a10e2305e3a50dd00e07b043b93b5e8}{}\label{namespacetvm_1_1relay_a9a10e2305e3a50dd00e07b043b93b5e8}
+\index{tvm\+::relay@{tvm\+::relay}!Global\+Var@{Global\+Var}}
+\index{Global\+Var@{Global\+Var}!tvm\+::relay@{tvm\+::relay}}
+\subsubsection[{\texorpdfstring{Global\+Var}{GlobalVar}}]{\setlength{\rightskip}{0pt plus 5cm}using {\bf tvm\+::relay\+::\+Global\+Var} = typedef {\bf tvm\+::\+Global\+Var}}\hypertarget{namespacetvm_1_1relay_a81ac7c3d0824529fddce7849c9c66289}{}\label{namespacetvm_1_1relay_a81ac7c3d0824529fddce7849c9c66289}
+\index{tvm\+::relay@{tvm\+::relay}!Global\+Var\+Node@{Global\+Var\+Node}}
+\index{Global\+Var\+Node@{Global\+Var\+Node}!tvm\+::relay@{tvm\+::relay}}
+\subsubsection[{\texorpdfstring{Global\+Var\+Node}{GlobalVarNode}}]{\setlength{\rightskip}{0pt plus 5cm}using {\bf tvm\+::relay\+::\+Global\+Var\+Node} = typedef {\bf tvm\+::\+Global\+Var\+Node}}\hypertarget{namespacetvm_1_1relay_afe7144195dbbc914183189444ef6a347}{}\label{namespacetvm_1_1relay_afe7144195dbbc914183189444ef6a347}
+\index{tvm\+::relay@{tvm\+::relay}!Incomplete\+Type@{Incomplete\+Type}}
+\index{Incomplete\+Type@{Incomplete\+Type}!tvm\+::relay@{tvm\+::relay}}
+\subsubsection[{\texorpdfstring{Incomplete\+Type}{IncompleteType}}]{\setlength{\rightskip}{0pt plus 5cm}using {\bf tvm\+::relay\+::\+Incomplete\+Type} = typedef {\bf tvm\+::\+Incomplete\+Type}}\hypertarget{namespacetvm_1_1relay_a34535a1f05224c26db569bc134de7647}{}\label{namespacetvm_1_1relay_a34535a1f05224c26db569bc134de7647}
+\index{tvm\+::relay@{tvm\+::relay}!Incomplete\+Type\+Node@{Incomplete\+Type\+Node}}
+\index{Incomplete\+Type\+Node@{Incomplete\+Type\+Node}!tvm\+::relay@{tvm\+::relay}}
+\subsubsection[{\texorpdfstring{Incomplete\+Type\+Node}{IncompleteTypeNode}}]{\setlength{\rightskip}{0pt plus 5cm}using {\bf tvm\+::relay\+::\+Incomplete\+Type\+Node} = typedef {\bf tvm\+::\+Incomplete\+Type\+Node}}\hypertarget{namespacetvm_1_1relay_a517ebee34b82bdb80f74ffcdcf361940}{}\label{namespacetvm_1_1relay_a517ebee34b82bdb80f74ffcdcf361940}
+\index{tvm\+::relay@{tvm\+::relay}!Index\+Expr@{Index\+Expr}}
+\index{Index\+Expr@{Index\+Expr}!tvm\+::relay@{tvm\+::relay}}
+\subsubsection[{\texorpdfstring{Index\+Expr}{IndexExpr}}]{\setlength{\rightskip}{0pt plus 5cm}using {\bf tvm\+::relay\+::\+Index\+Expr} = typedef \+::{\bf tvm\+::\+Prim\+Expr}}\hypertarget{namespacetvm_1_1relay_ae153a27d81399fd266b8d598227764c4}{}\label{namespacetvm_1_1relay_ae153a27d81399fd266b8d598227764c4}
+
+
+Symbolic expression for tensor shape. 
+
+\index{tvm\+::relay@{tvm\+::relay}!Kind@{Kind}}
+\index{Kind@{Kind}!tvm\+::relay@{tvm\+::relay}}
+\subsubsection[{\texorpdfstring{Kind}{Kind}}]{\setlength{\rightskip}{0pt plus 5cm}using {\bf tvm\+::relay\+::\+Kind} = typedef {\bf Type\+Kind}}\hypertarget{namespacetvm_1_1relay_aa44e35e7d791c8dd53bb00ddb6411b38}{}\label{namespacetvm_1_1relay_aa44e35e7d791c8dd53bb00ddb6411b38}
+\index{tvm\+::relay@{tvm\+::relay}!Op@{Op}}
+\index{Op@{Op}!tvm\+::relay@{tvm\+::relay}}
+\subsubsection[{\texorpdfstring{Op}{Op}}]{\setlength{\rightskip}{0pt plus 5cm}using {\bf tvm\+::relay\+::\+Op} = typedef {\bf tvm\+::\+Op}}\hypertarget{namespacetvm_1_1relay_a6c46d15e80f1a9916b8e9c264a185c98}{}\label{namespacetvm_1_1relay_a6c46d15e80f1a9916b8e9c264a185c98}
+\index{tvm\+::relay@{tvm\+::relay}!Op\+Node@{Op\+Node}}
+\index{Op\+Node@{Op\+Node}!tvm\+::relay@{tvm\+::relay}}
+\subsubsection[{\texorpdfstring{Op\+Node}{OpNode}}]{\setlength{\rightskip}{0pt plus 5cm}using {\bf tvm\+::relay\+::\+Op\+Node} = typedef {\bf tvm\+::\+Op\+Node}}\hypertarget{namespacetvm_1_1relay_ac9d4f2cf78a48659817a88d890e1d142}{}\label{namespacetvm_1_1relay_ac9d4f2cf78a48659817a88d890e1d142}
+\index{tvm\+::relay@{tvm\+::relay}!Relay\+Ref\+Type@{Relay\+Ref\+Type}}
+\index{Relay\+Ref\+Type@{Relay\+Ref\+Type}!tvm\+::relay@{tvm\+::relay}}
+\subsubsection[{\texorpdfstring{Relay\+Ref\+Type}{RelayRefType}}]{\setlength{\rightskip}{0pt plus 5cm}using {\bf tvm\+::relay\+::\+Relay\+Ref\+Type} = typedef {\bf tvm\+::\+Relay\+Ref\+Type}}\hypertarget{namespacetvm_1_1relay_a13fd39dbc2a639262858e9b72e8fb37f}{}\label{namespacetvm_1_1relay_a13fd39dbc2a639262858e9b72e8fb37f}
+\index{tvm\+::relay@{tvm\+::relay}!Relay\+Ref\+Type\+Node@{Relay\+Ref\+Type\+Node}}
+\index{Relay\+Ref\+Type\+Node@{Relay\+Ref\+Type\+Node}!tvm\+::relay@{tvm\+::relay}}
+\subsubsection[{\texorpdfstring{Relay\+Ref\+Type\+Node}{RelayRefTypeNode}}]{\setlength{\rightskip}{0pt plus 5cm}using {\bf tvm\+::relay\+::\+Relay\+Ref\+Type\+Node} = typedef {\bf tvm\+::\+Relay\+Ref\+Type\+Node}}\hypertarget{namespacetvm_1_1relay_ae665239bd9119c8afb037d47781bf237}{}\label{namespacetvm_1_1relay_ae665239bd9119c8afb037d47781bf237}
+\index{tvm\+::relay@{tvm\+::relay}!Shape@{Shape}}
+\index{Shape@{Shape}!tvm\+::relay@{tvm\+::relay}}
+\subsubsection[{\texorpdfstring{Shape}{Shape}}]{\setlength{\rightskip}{0pt plus 5cm}using {\bf tvm\+::relay\+::\+Shape} = typedef {\bf Array}$<${\bf Index\+Expr}$>$}\hypertarget{namespacetvm_1_1relay_a4d64348ae2b75977e167109fb4af4409}{}\label{namespacetvm_1_1relay_a4d64348ae2b75977e167109fb4af4409}
+
+
+A runtime representation of shape. 
+
+\index{tvm\+::relay@{tvm\+::relay}!Source\+Name@{Source\+Name}}
+\index{Source\+Name@{Source\+Name}!tvm\+::relay@{tvm\+::relay}}
+\subsubsection[{\texorpdfstring{Source\+Name}{SourceName}}]{\setlength{\rightskip}{0pt plus 5cm}using {\bf tvm\+::relay\+::\+Source\+Name} = typedef {\bf tvm\+::\+Source\+Name}}\hypertarget{namespacetvm_1_1relay_a14eacafcb803b0757e48654bb1bac655}{}\label{namespacetvm_1_1relay_a14eacafcb803b0757e48654bb1bac655}
+\index{tvm\+::relay@{tvm\+::relay}!Span@{Span}}
+\index{Span@{Span}!tvm\+::relay@{tvm\+::relay}}
+\subsubsection[{\texorpdfstring{Span}{Span}}]{\setlength{\rightskip}{0pt plus 5cm}using {\bf tvm\+::relay\+::\+Span} = typedef {\bf tvm\+::\+Span}}\hypertarget{namespacetvm_1_1relay_af40ca6124bc2e88f2323eeb79d326cc0}{}\label{namespacetvm_1_1relay_af40ca6124bc2e88f2323eeb79d326cc0}
+\index{tvm\+::relay@{tvm\+::relay}!Span\+Node@{Span\+Node}}
+\index{Span\+Node@{Span\+Node}!tvm\+::relay@{tvm\+::relay}}
+\subsubsection[{\texorpdfstring{Span\+Node}{SpanNode}}]{\setlength{\rightskip}{0pt plus 5cm}using {\bf tvm\+::relay\+::\+Span\+Node} = typedef {\bf tvm\+::\+Span\+Node}}\hypertarget{namespacetvm_1_1relay_a7d0fa6578e97d0d64b08865f94f04827}{}\label{namespacetvm_1_1relay_a7d0fa6578e97d0d64b08865f94f04827}
+\index{tvm\+::relay@{tvm\+::relay}!Tensor\+Type@{Tensor\+Type}}
+\index{Tensor\+Type@{Tensor\+Type}!tvm\+::relay@{tvm\+::relay}}
+\subsubsection[{\texorpdfstring{Tensor\+Type}{TensorType}}]{\setlength{\rightskip}{0pt plus 5cm}using {\bf tvm\+::relay\+::\+Tensor\+Type} = typedef {\bf tvm\+::\+Tensor\+Type}}\hypertarget{namespacetvm_1_1relay_a52c13723bba53f4953dfd10c34d480f8}{}\label{namespacetvm_1_1relay_a52c13723bba53f4953dfd10c34d480f8}
+\index{tvm\+::relay@{tvm\+::relay}!Tensor\+Type\+Node@{Tensor\+Type\+Node}}
+\index{Tensor\+Type\+Node@{Tensor\+Type\+Node}!tvm\+::relay@{tvm\+::relay}}
+\subsubsection[{\texorpdfstring{Tensor\+Type\+Node}{TensorTypeNode}}]{\setlength{\rightskip}{0pt plus 5cm}using {\bf tvm\+::relay\+::\+Tensor\+Type\+Node} = typedef {\bf tvm\+::\+Tensor\+Type\+Node}}\hypertarget{namespacetvm_1_1relay_acfeff91bc774a278a2e9f6103a04387d}{}\label{namespacetvm_1_1relay_acfeff91bc774a278a2e9f6103a04387d}
+\index{tvm\+::relay@{tvm\+::relay}!T\+Non\+Computational@{T\+Non\+Computational}}
+\index{T\+Non\+Computational@{T\+Non\+Computational}!tvm\+::relay@{tvm\+::relay}}
+\subsubsection[{\texorpdfstring{T\+Non\+Computational}{TNonComputational}}]{\setlength{\rightskip}{0pt plus 5cm}using {\bf tvm\+::relay\+::\+T\+Non\+Computational} = typedef bool}\hypertarget{namespacetvm_1_1relay_ab4c835287dfc5ec074ea8431bcebbb17}{}\label{namespacetvm_1_1relay_ab4c835287dfc5ec074ea8431bcebbb17}
+
+
+Mark the operator as non-\/computational. 
+
+\index{tvm\+::relay@{tvm\+::relay}!T\+Op\+Is\+Stateful@{T\+Op\+Is\+Stateful}}
+\index{T\+Op\+Is\+Stateful@{T\+Op\+Is\+Stateful}!tvm\+::relay@{tvm\+::relay}}
+\subsubsection[{\texorpdfstring{T\+Op\+Is\+Stateful}{TOpIsStateful}}]{\setlength{\rightskip}{0pt plus 5cm}using {\bf tvm\+::relay\+::\+T\+Op\+Is\+Stateful} = typedef bool}\hypertarget{namespacetvm_1_1relay_afb8a8d4dd43830d4ce7d566abcd1c450}{}\label{namespacetvm_1_1relay_afb8a8d4dd43830d4ce7d566abcd1c450}
+
+
+Whether operator is stateful or contain internal state. 
+
+All the primitive ops we registered so far are pure. This attribute is left for potential future compatible reasons. We can always work around the stateful ops by adding an additional handle argument and return it. \index{tvm\+::relay@{tvm\+::relay}!T\+Op\+Pattern@{T\+Op\+Pattern}}
+\index{T\+Op\+Pattern@{T\+Op\+Pattern}!tvm\+::relay@{tvm\+::relay}}
+\subsubsection[{\texorpdfstring{T\+Op\+Pattern}{TOpPattern}}]{\setlength{\rightskip}{0pt plus 5cm}using {\bf tvm\+::relay\+::\+T\+Op\+Pattern} = typedef int}\hypertarget{namespacetvm_1_1relay_a5dab2ddae20ac7564a81ab3a0a9aba76}{}\label{namespacetvm_1_1relay_a5dab2ddae20ac7564a81ab3a0a9aba76}
+
+
+the operator pattern 
+
+\index{tvm\+::relay@{tvm\+::relay}!T\+Shape\+Data\+Dependant@{T\+Shape\+Data\+Dependant}}
+\index{T\+Shape\+Data\+Dependant@{T\+Shape\+Data\+Dependant}!tvm\+::relay@{tvm\+::relay}}
+\subsubsection[{\texorpdfstring{T\+Shape\+Data\+Dependant}{TShapeDataDependant}}]{\setlength{\rightskip}{0pt plus 5cm}using {\bf tvm\+::relay\+::\+T\+Shape\+Data\+Dependant} = typedef bool}\hypertarget{namespacetvm_1_1relay_a75252d8d7e8d18b796074ffe4cc9f3ff}{}\label{namespacetvm_1_1relay_a75252d8d7e8d18b796074ffe4cc9f3ff}
+
+
+Mark the operator whether output shape is data dependant. 
+
+\index{tvm\+::relay@{tvm\+::relay}!Tuple\+Type@{Tuple\+Type}}
+\index{Tuple\+Type@{Tuple\+Type}!tvm\+::relay@{tvm\+::relay}}
+\subsubsection[{\texorpdfstring{Tuple\+Type}{TupleType}}]{\setlength{\rightskip}{0pt plus 5cm}using {\bf tvm\+::relay\+::\+Tuple\+Type} = typedef {\bf tvm\+::\+Tuple\+Type}}\hypertarget{namespacetvm_1_1relay_ace9102638dffea6747ae9fa9be9f00f2}{}\label{namespacetvm_1_1relay_ace9102638dffea6747ae9fa9be9f00f2}
+\index{tvm\+::relay@{tvm\+::relay}!Tuple\+Type\+Node@{Tuple\+Type\+Node}}
+\index{Tuple\+Type\+Node@{Tuple\+Type\+Node}!tvm\+::relay@{tvm\+::relay}}
+\subsubsection[{\texorpdfstring{Tuple\+Type\+Node}{TupleTypeNode}}]{\setlength{\rightskip}{0pt plus 5cm}using {\bf tvm\+::relay\+::\+Tuple\+Type\+Node} = typedef {\bf tvm\+::\+Tuple\+Type\+Node}}\hypertarget{namespacetvm_1_1relay_a916609c894ac1000b66f9582f338d965}{}\label{namespacetvm_1_1relay_a916609c894ac1000b66f9582f338d965}
+\index{tvm\+::relay@{tvm\+::relay}!Type@{Type}}
+\index{Type@{Type}!tvm\+::relay@{tvm\+::relay}}
+\subsubsection[{\texorpdfstring{Type}{Type}}]{\setlength{\rightskip}{0pt plus 5cm}using {\bf tvm\+::relay\+::\+Type} = typedef {\bf tvm\+::\+Type}}\hypertarget{namespacetvm_1_1relay_a661d95f170bca230773914caeef3fe52}{}\label{namespacetvm_1_1relay_a661d95f170bca230773914caeef3fe52}
+\index{tvm\+::relay@{tvm\+::relay}!Type\+Call@{Type\+Call}}
+\index{Type\+Call@{Type\+Call}!tvm\+::relay@{tvm\+::relay}}
+\subsubsection[{\texorpdfstring{Type\+Call}{TypeCall}}]{\setlength{\rightskip}{0pt plus 5cm}using {\bf tvm\+::relay\+::\+Type\+Call} = typedef {\bf tvm\+::\+Type\+Call}}\hypertarget{namespacetvm_1_1relay_ab406a37acee11226e3e2e119beee439e}{}\label{namespacetvm_1_1relay_ab406a37acee11226e3e2e119beee439e}
+\index{tvm\+::relay@{tvm\+::relay}!Type\+Call\+Node@{Type\+Call\+Node}}
+\index{Type\+Call\+Node@{Type\+Call\+Node}!tvm\+::relay@{tvm\+::relay}}
+\subsubsection[{\texorpdfstring{Type\+Call\+Node}{TypeCallNode}}]{\setlength{\rightskip}{0pt plus 5cm}using {\bf tvm\+::relay\+::\+Type\+Call\+Node} = typedef {\bf tvm\+::\+Type\+Call\+Node}}\hypertarget{namespacetvm_1_1relay_af4dccabc877b8fd7db47cb73fb93883e}{}\label{namespacetvm_1_1relay_af4dccabc877b8fd7db47cb73fb93883e}
+\index{tvm\+::relay@{tvm\+::relay}!Type\+Constraint@{Type\+Constraint}}
+\index{Type\+Constraint@{Type\+Constraint}!tvm\+::relay@{tvm\+::relay}}
+\subsubsection[{\texorpdfstring{Type\+Constraint}{TypeConstraint}}]{\setlength{\rightskip}{0pt plus 5cm}using {\bf tvm\+::relay\+::\+Type\+Constraint} = typedef {\bf tvm\+::\+Type\+Constraint}}\hypertarget{namespacetvm_1_1relay_a64e2e93fe04716efd8334ab4e39c92ce}{}\label{namespacetvm_1_1relay_a64e2e93fe04716efd8334ab4e39c92ce}
+\index{tvm\+::relay@{tvm\+::relay}!Type\+Constraint\+Node@{Type\+Constraint\+Node}}
+\index{Type\+Constraint\+Node@{Type\+Constraint\+Node}!tvm\+::relay@{tvm\+::relay}}
+\subsubsection[{\texorpdfstring{Type\+Constraint\+Node}{TypeConstraintNode}}]{\setlength{\rightskip}{0pt plus 5cm}using {\bf tvm\+::relay\+::\+Type\+Constraint\+Node} = typedef {\bf tvm\+::\+Type\+Constraint\+Node}}\hypertarget{namespacetvm_1_1relay_a565e027589acded20ca38df22be098dc}{}\label{namespacetvm_1_1relay_a565e027589acded20ca38df22be098dc}
+\index{tvm\+::relay@{tvm\+::relay}!Type\+Data@{Type\+Data}}
+\index{Type\+Data@{Type\+Data}!tvm\+::relay@{tvm\+::relay}}
+\subsubsection[{\texorpdfstring{Type\+Data}{TypeData}}]{\setlength{\rightskip}{0pt plus 5cm}using {\bf tvm\+::relay\+::\+Type\+Data} = typedef {\bf tvm\+::\+Type\+Data}}\hypertarget{namespacetvm_1_1relay_a6e725a1cb4c83346e261eac7dc7292a8}{}\label{namespacetvm_1_1relay_a6e725a1cb4c83346e261eac7dc7292a8}
+\index{tvm\+::relay@{tvm\+::relay}!Type\+Data\+Node@{Type\+Data\+Node}}
+\index{Type\+Data\+Node@{Type\+Data\+Node}!tvm\+::relay@{tvm\+::relay}}
+\subsubsection[{\texorpdfstring{Type\+Data\+Node}{TypeDataNode}}]{\setlength{\rightskip}{0pt plus 5cm}using {\bf tvm\+::relay\+::\+Type\+Data\+Node} = typedef {\bf tvm\+::\+Type\+Data\+Node}}\hypertarget{namespacetvm_1_1relay_a2b8c0d5920eaca88569907e92df6066f}{}\label{namespacetvm_1_1relay_a2b8c0d5920eaca88569907e92df6066f}
+\index{tvm\+::relay@{tvm\+::relay}!Type\+Node@{Type\+Node}}
+\index{Type\+Node@{Type\+Node}!tvm\+::relay@{tvm\+::relay}}
+\subsubsection[{\texorpdfstring{Type\+Node}{TypeNode}}]{\setlength{\rightskip}{0pt plus 5cm}using {\bf tvm\+::relay\+::\+Type\+Node} = typedef {\bf tvm\+::\+Type\+Node}}\hypertarget{namespacetvm_1_1relay_af6995f0c848d0d5cc4124a38f43aaf12}{}\label{namespacetvm_1_1relay_af6995f0c848d0d5cc4124a38f43aaf12}
+\index{tvm\+::relay@{tvm\+::relay}!Type\+Relation@{Type\+Relation}}
+\index{Type\+Relation@{Type\+Relation}!tvm\+::relay@{tvm\+::relay}}
+\subsubsection[{\texorpdfstring{Type\+Relation}{TypeRelation}}]{\setlength{\rightskip}{0pt plus 5cm}using {\bf tvm\+::relay\+::\+Type\+Relation} = typedef {\bf tvm\+::\+Type\+Relation}}\hypertarget{namespacetvm_1_1relay_adab0d56fd993df71df3068dea0cd5456}{}\label{namespacetvm_1_1relay_adab0d56fd993df71df3068dea0cd5456}
+\index{tvm\+::relay@{tvm\+::relay}!Type\+Relation\+Fn@{Type\+Relation\+Fn}}
+\index{Type\+Relation\+Fn@{Type\+Relation\+Fn}!tvm\+::relay@{tvm\+::relay}}
+\subsubsection[{\texorpdfstring{Type\+Relation\+Fn}{TypeRelationFn}}]{\setlength{\rightskip}{0pt plus 5cm}using {\bf tvm\+::relay\+::\+Type\+Relation\+Fn} = typedef {\bf tvm\+::\+Type\+Relation\+Fn}}\hypertarget{namespacetvm_1_1relay_af253112249297a6cfb2a9b94cde0f235}{}\label{namespacetvm_1_1relay_af253112249297a6cfb2a9b94cde0f235}
+\index{tvm\+::relay@{tvm\+::relay}!Type\+Relation\+Node@{Type\+Relation\+Node}}
+\index{Type\+Relation\+Node@{Type\+Relation\+Node}!tvm\+::relay@{tvm\+::relay}}
+\subsubsection[{\texorpdfstring{Type\+Relation\+Node}{TypeRelationNode}}]{\setlength{\rightskip}{0pt plus 5cm}using {\bf tvm\+::relay\+::\+Type\+Relation\+Node} = typedef {\bf tvm\+::\+Type\+Relation\+Node}}\hypertarget{namespacetvm_1_1relay_a89d812eaf13520b04e89a9414c51748c}{}\label{namespacetvm_1_1relay_a89d812eaf13520b04e89a9414c51748c}
+\index{tvm\+::relay@{tvm\+::relay}!Type\+Reporter@{Type\+Reporter}}
+\index{Type\+Reporter@{Type\+Reporter}!tvm\+::relay@{tvm\+::relay}}
+\subsubsection[{\texorpdfstring{Type\+Reporter}{TypeReporter}}]{\setlength{\rightskip}{0pt plus 5cm}using {\bf tvm\+::relay\+::\+Type\+Reporter} = typedef {\bf tvm\+::\+Type\+Reporter}}\hypertarget{namespacetvm_1_1relay_afa9be9990c2006832cbfc02ebb35e527}{}\label{namespacetvm_1_1relay_afa9be9990c2006832cbfc02ebb35e527}
+\index{tvm\+::relay@{tvm\+::relay}!Type\+Reporter\+Node@{Type\+Reporter\+Node}}
+\index{Type\+Reporter\+Node@{Type\+Reporter\+Node}!tvm\+::relay@{tvm\+::relay}}
+\subsubsection[{\texorpdfstring{Type\+Reporter\+Node}{TypeReporterNode}}]{\setlength{\rightskip}{0pt plus 5cm}using {\bf tvm\+::relay\+::\+Type\+Reporter\+Node} = typedef {\bf tvm\+::\+Type\+Reporter\+Node}}\hypertarget{namespacetvm_1_1relay_aaa3b5700ea20db399f539cec1abcb12b}{}\label{namespacetvm_1_1relay_aaa3b5700ea20db399f539cec1abcb12b}
+\index{tvm\+::relay@{tvm\+::relay}!Type\+Var@{Type\+Var}}
+\index{Type\+Var@{Type\+Var}!tvm\+::relay@{tvm\+::relay}}
+\subsubsection[{\texorpdfstring{Type\+Var}{TypeVar}}]{\setlength{\rightskip}{0pt plus 5cm}using {\bf tvm\+::relay\+::\+Type\+Var} = typedef {\bf tvm\+::\+Type\+Var}}\hypertarget{namespacetvm_1_1relay_a63321eb51080f3f57dd7563a3ca0bfa6}{}\label{namespacetvm_1_1relay_a63321eb51080f3f57dd7563a3ca0bfa6}
+\index{tvm\+::relay@{tvm\+::relay}!Type\+Var\+Node@{Type\+Var\+Node}}
+\index{Type\+Var\+Node@{Type\+Var\+Node}!tvm\+::relay@{tvm\+::relay}}
+\subsubsection[{\texorpdfstring{Type\+Var\+Node}{TypeVarNode}}]{\setlength{\rightskip}{0pt plus 5cm}using {\bf tvm\+::relay\+::\+Type\+Var\+Node} = typedef {\bf tvm\+::\+Type\+Var\+Node}}\hypertarget{namespacetvm_1_1relay_ab2cbe31b81ebd71ea8028a8404a7c9f3}{}\label{namespacetvm_1_1relay_ab2cbe31b81ebd71ea8028a8404a7c9f3}
+
+
+\subsection{Enumeration Type Documentation}
+\index{tvm\+::relay@{tvm\+::relay}!Any\+Codegen\+Strategy@{Any\+Codegen\+Strategy}}
+\index{Any\+Codegen\+Strategy@{Any\+Codegen\+Strategy}!tvm\+::relay@{tvm\+::relay}}
+\subsubsection[{\texorpdfstring{Any\+Codegen\+Strategy}{AnyCodegenStrategy}}]{\setlength{\rightskip}{0pt plus 5cm}enum {\bf tvm\+::relay\+::\+Any\+Codegen\+Strategy}}\hypertarget{namespacetvm_1_1relay_adab76fedc831b249d1c80d69c4a620a3}{}\label{namespacetvm_1_1relay_adab76fedc831b249d1c80d69c4a620a3}
+
+
+The codegeneration strategy for dynamic dimensions. 
+
+\begin{Desc}
+\item[Enumerator]\par
+\begin{description}
+\index{k\+Variable\+Dimensions@{k\+Variable\+Dimensions}!tvm\+::relay@{tvm\+::relay}}\index{tvm\+::relay@{tvm\+::relay}!k\+Variable\+Dimensions@{k\+Variable\+Dimensions}}\item[{\em 
+k\+Variable\+Dimensions\hypertarget{namespacetvm_1_1relay_adab76fedc831b249d1c80d69c4a620a3a1a3550732b0caf3981198af2c1373542}{}\label{namespacetvm_1_1relay_adab76fedc831b249d1c80d69c4a620a3a1a3550732b0caf3981198af2c1373542}
+}]The default strategy of using completely variable dimensions. \end{description}
+\end{Desc}
+\index{tvm\+::relay@{tvm\+::relay}!Feature@{Feature}}
+\index{Feature@{Feature}!tvm\+::relay@{tvm\+::relay}}
+\subsubsection[{\texorpdfstring{Feature}{Feature}}]{\setlength{\rightskip}{0pt plus 5cm}enum {\bf tvm\+::relay\+::\+Feature} \+: int}\hypertarget{namespacetvm_1_1relay_a926750aeda977340aa82bceac863fc9e}{}\label{namespacetvm_1_1relay_a926750aeda977340aa82bceac863fc9e}
+
+
+Different kinds of relay feature a program might use. 
+
+\begin{Desc}
+\item[Enumerator]\par
+\begin{description}
+\index{f\+Var@{f\+Var}!tvm\+::relay@{tvm\+::relay}}\index{tvm\+::relay@{tvm\+::relay}!f\+Var@{f\+Var}}\item[{\em 
+f\+Var\hypertarget{namespacetvm_1_1relay_a926750aeda977340aa82bceac863fc9ea42a71e7934e2efe344713b17c426eecd}{}\label{namespacetvm_1_1relay_a926750aeda977340aa82bceac863fc9ea42a71e7934e2efe344713b17c426eecd}
+}]\index{f\+Global\+Var@{f\+Global\+Var}!tvm\+::relay@{tvm\+::relay}}\index{tvm\+::relay@{tvm\+::relay}!f\+Global\+Var@{f\+Global\+Var}}\item[{\em 
+f\+Global\+Var\hypertarget{namespacetvm_1_1relay_a926750aeda977340aa82bceac863fc9eae9b152650b0ebe6dbc1b42e0f84d567f}{}\label{namespacetvm_1_1relay_a926750aeda977340aa82bceac863fc9eae9b152650b0ebe6dbc1b42e0f84d567f}
+}]\index{f\+Constant@{f\+Constant}!tvm\+::relay@{tvm\+::relay}}\index{tvm\+::relay@{tvm\+::relay}!f\+Constant@{f\+Constant}}\item[{\em 
+f\+Constant\hypertarget{namespacetvm_1_1relay_a926750aeda977340aa82bceac863fc9ea29eacc09610a7fd43026682238aae25f}{}\label{namespacetvm_1_1relay_a926750aeda977340aa82bceac863fc9ea29eacc09610a7fd43026682238aae25f}
+}]\index{f\+Tuple@{f\+Tuple}!tvm\+::relay@{tvm\+::relay}}\index{tvm\+::relay@{tvm\+::relay}!f\+Tuple@{f\+Tuple}}\item[{\em 
+f\+Tuple\hypertarget{namespacetvm_1_1relay_a926750aeda977340aa82bceac863fc9eaa2fe12a180d97822c440e169dc287e66}{}\label{namespacetvm_1_1relay_a926750aeda977340aa82bceac863fc9eaa2fe12a180d97822c440e169dc287e66}
+}]\index{f\+Tuple\+Get\+Item@{f\+Tuple\+Get\+Item}!tvm\+::relay@{tvm\+::relay}}\index{tvm\+::relay@{tvm\+::relay}!f\+Tuple\+Get\+Item@{f\+Tuple\+Get\+Item}}\item[{\em 
+f\+Tuple\+Get\+Item\hypertarget{namespacetvm_1_1relay_a926750aeda977340aa82bceac863fc9ea4d2cb67f2e197880e0971286f2ffb498}{}\label{namespacetvm_1_1relay_a926750aeda977340aa82bceac863fc9ea4d2cb67f2e197880e0971286f2ffb498}
+}]\index{f\+Function@{f\+Function}!tvm\+::relay@{tvm\+::relay}}\index{tvm\+::relay@{tvm\+::relay}!f\+Function@{f\+Function}}\item[{\em 
+f\+Function\hypertarget{namespacetvm_1_1relay_a926750aeda977340aa82bceac863fc9ea3b367d0501427ea782137266a2fb77fa}{}\label{namespacetvm_1_1relay_a926750aeda977340aa82bceac863fc9ea3b367d0501427ea782137266a2fb77fa}
+}]\index{f\+Op@{f\+Op}!tvm\+::relay@{tvm\+::relay}}\index{tvm\+::relay@{tvm\+::relay}!f\+Op@{f\+Op}}\item[{\em 
+f\+Op\hypertarget{namespacetvm_1_1relay_a926750aeda977340aa82bceac863fc9eaca21bd0f67c01c6f7b82a1596cdfdf8b}{}\label{namespacetvm_1_1relay_a926750aeda977340aa82bceac863fc9eaca21bd0f67c01c6f7b82a1596cdfdf8b}
+}]\index{f\+Call@{f\+Call}!tvm\+::relay@{tvm\+::relay}}\index{tvm\+::relay@{tvm\+::relay}!f\+Call@{f\+Call}}\item[{\em 
+f\+Call\hypertarget{namespacetvm_1_1relay_a926750aeda977340aa82bceac863fc9ea5f3d3030d2ed56e5a47329e29f12ef02}{}\label{namespacetvm_1_1relay_a926750aeda977340aa82bceac863fc9ea5f3d3030d2ed56e5a47329e29f12ef02}
+}]\index{f\+Let@{f\+Let}!tvm\+::relay@{tvm\+::relay}}\index{tvm\+::relay@{tvm\+::relay}!f\+Let@{f\+Let}}\item[{\em 
+f\+Let\hypertarget{namespacetvm_1_1relay_a926750aeda977340aa82bceac863fc9ea07ce432e7b4b4c044af03e4dbd210ba4}{}\label{namespacetvm_1_1relay_a926750aeda977340aa82bceac863fc9ea07ce432e7b4b4c044af03e4dbd210ba4}
+}]\index{f\+If@{f\+If}!tvm\+::relay@{tvm\+::relay}}\index{tvm\+::relay@{tvm\+::relay}!f\+If@{f\+If}}\item[{\em 
+f\+If\hypertarget{namespacetvm_1_1relay_a926750aeda977340aa82bceac863fc9ea4e6b686fb15d50c4aef2316bef53a781}{}\label{namespacetvm_1_1relay_a926750aeda977340aa82bceac863fc9ea4e6b686fb15d50c4aef2316bef53a781}
+}]\index{f\+Ref\+Create@{f\+Ref\+Create}!tvm\+::relay@{tvm\+::relay}}\index{tvm\+::relay@{tvm\+::relay}!f\+Ref\+Create@{f\+Ref\+Create}}\item[{\em 
+f\+Ref\+Create\hypertarget{namespacetvm_1_1relay_a926750aeda977340aa82bceac863fc9ea46daa677c87c05e68258acea3579443d}{}\label{namespacetvm_1_1relay_a926750aeda977340aa82bceac863fc9ea46daa677c87c05e68258acea3579443d}
+}]\index{f\+Ref\+Read@{f\+Ref\+Read}!tvm\+::relay@{tvm\+::relay}}\index{tvm\+::relay@{tvm\+::relay}!f\+Ref\+Read@{f\+Ref\+Read}}\item[{\em 
+f\+Ref\+Read\hypertarget{namespacetvm_1_1relay_a926750aeda977340aa82bceac863fc9ea7c9e5e3d738c26c3ed34099f44f66251}{}\label{namespacetvm_1_1relay_a926750aeda977340aa82bceac863fc9ea7c9e5e3d738c26c3ed34099f44f66251}
+}]\index{f\+Ref\+Write@{f\+Ref\+Write}!tvm\+::relay@{tvm\+::relay}}\index{tvm\+::relay@{tvm\+::relay}!f\+Ref\+Write@{f\+Ref\+Write}}\item[{\em 
+f\+Ref\+Write\hypertarget{namespacetvm_1_1relay_a926750aeda977340aa82bceac863fc9ea4737da29588504f7f31cf4fb52925d63}{}\label{namespacetvm_1_1relay_a926750aeda977340aa82bceac863fc9ea4737da29588504f7f31cf4fb52925d63}
+}]\index{f\+Constructor@{f\+Constructor}!tvm\+::relay@{tvm\+::relay}}\index{tvm\+::relay@{tvm\+::relay}!f\+Constructor@{f\+Constructor}}\item[{\em 
+f\+Constructor\hypertarget{namespacetvm_1_1relay_a926750aeda977340aa82bceac863fc9eaff71be930d862c312a5ae263e71167a2}{}\label{namespacetvm_1_1relay_a926750aeda977340aa82bceac863fc9eaff71be930d862c312a5ae263e71167a2}
+}]\index{f\+Match@{f\+Match}!tvm\+::relay@{tvm\+::relay}}\index{tvm\+::relay@{tvm\+::relay}!f\+Match@{f\+Match}}\item[{\em 
+f\+Match\hypertarget{namespacetvm_1_1relay_a926750aeda977340aa82bceac863fc9ea53a8eba57c4a3abd37b4c96fb98bf61b}{}\label{namespacetvm_1_1relay_a926750aeda977340aa82bceac863fc9ea53a8eba57c4a3abd37b4c96fb98bf61b}
+}]\index{f\+Graph@{f\+Graph}!tvm\+::relay@{tvm\+::relay}}\index{tvm\+::relay@{tvm\+::relay}!f\+Graph@{f\+Graph}}\item[{\em 
+f\+Graph\hypertarget{namespacetvm_1_1relay_a926750aeda977340aa82bceac863fc9eac6392a0ecc7df38dbfa282a54d3718d1}{}\label{namespacetvm_1_1relay_a926750aeda977340aa82bceac863fc9eac6392a0ecc7df38dbfa282a54d3718d1}
+}]Whether any non-\/atom fragment of the program is shared, making the program a graph. \index{f\+Let\+Rec@{f\+Let\+Rec}!tvm\+::relay@{tvm\+::relay}}\index{tvm\+::relay@{tvm\+::relay}!f\+Let\+Rec@{f\+Let\+Rec}}\item[{\em 
+f\+Let\+Rec\hypertarget{namespacetvm_1_1relay_a926750aeda977340aa82bceac863fc9eaff508e399703958af46f99ee8eb7d1a5}{}\label{namespacetvm_1_1relay_a926750aeda977340aa82bceac863fc9eaff508e399703958af46f99ee8eb7d1a5}
+}]Whether there is local fixpoint in the program. \end{description}
+\end{Desc}
+\index{tvm\+::relay@{tvm\+::relay}!Op\+Pattern\+Kind@{Op\+Pattern\+Kind}}
+\index{Op\+Pattern\+Kind@{Op\+Pattern\+Kind}!tvm\+::relay@{tvm\+::relay}}
+\subsubsection[{\texorpdfstring{Op\+Pattern\+Kind}{OpPatternKind}}]{\setlength{\rightskip}{0pt plus 5cm}enum {\bf tvm\+::relay\+::\+Op\+Pattern\+Kind}}\hypertarget{namespacetvm_1_1relay_ab5f4d382bf1bee69c3e484ea6c837578}{}\label{namespacetvm_1_1relay_ab5f4d382bf1bee69c3e484ea6c837578}
+
+
+operator pattern used in graph fusion 
+
+\begin{Desc}
+\item[Enumerator]\par
+\begin{description}
+\index{k\+Elem\+Wise@{k\+Elem\+Wise}!tvm\+::relay@{tvm\+::relay}}\index{tvm\+::relay@{tvm\+::relay}!k\+Elem\+Wise@{k\+Elem\+Wise}}\item[{\em 
+k\+Elem\+Wise\hypertarget{namespacetvm_1_1relay_ab5f4d382bf1bee69c3e484ea6c837578a8c63d345994ce14eb197df6ad22de3aa}{}\label{namespacetvm_1_1relay_ab5f4d382bf1bee69c3e484ea6c837578a8c63d345994ce14eb197df6ad22de3aa}
+}]\index{k\+Broadcast@{k\+Broadcast}!tvm\+::relay@{tvm\+::relay}}\index{tvm\+::relay@{tvm\+::relay}!k\+Broadcast@{k\+Broadcast}}\item[{\em 
+k\+Broadcast\hypertarget{namespacetvm_1_1relay_ab5f4d382bf1bee69c3e484ea6c837578a3c016b63ef8869468ab565c862713245}{}\label{namespacetvm_1_1relay_ab5f4d382bf1bee69c3e484ea6c837578a3c016b63ef8869468ab565c862713245}
+}]\index{k\+Injective@{k\+Injective}!tvm\+::relay@{tvm\+::relay}}\index{tvm\+::relay@{tvm\+::relay}!k\+Injective@{k\+Injective}}\item[{\em 
+k\+Injective\hypertarget{namespacetvm_1_1relay_ab5f4d382bf1bee69c3e484ea6c837578a7f703d1ae163ba4e6bef88357a232e00}{}\label{namespacetvm_1_1relay_ab5f4d382bf1bee69c3e484ea6c837578a7f703d1ae163ba4e6bef88357a232e00}
+}]\index{k\+Comm\+Reduce@{k\+Comm\+Reduce}!tvm\+::relay@{tvm\+::relay}}\index{tvm\+::relay@{tvm\+::relay}!k\+Comm\+Reduce@{k\+Comm\+Reduce}}\item[{\em 
+k\+Comm\+Reduce\hypertarget{namespacetvm_1_1relay_ab5f4d382bf1bee69c3e484ea6c837578ad282ac05b650598c3bfb559dc62a0738}{}\label{namespacetvm_1_1relay_ab5f4d382bf1bee69c3e484ea6c837578ad282ac05b650598c3bfb559dc62a0738}
+}]\index{k\+Out\+E\+Wise\+Fusable@{k\+Out\+E\+Wise\+Fusable}!tvm\+::relay@{tvm\+::relay}}\index{tvm\+::relay@{tvm\+::relay}!k\+Out\+E\+Wise\+Fusable@{k\+Out\+E\+Wise\+Fusable}}\item[{\em 
+k\+Out\+E\+Wise\+Fusable\hypertarget{namespacetvm_1_1relay_ab5f4d382bf1bee69c3e484ea6c837578ab9b265465c486425c2f60cd4057e2ef4}{}\label{namespacetvm_1_1relay_ab5f4d382bf1bee69c3e484ea6c837578ab9b265465c486425c2f60cd4057e2ef4}
+}]\index{k\+Tuple@{k\+Tuple}!tvm\+::relay@{tvm\+::relay}}\index{tvm\+::relay@{tvm\+::relay}!k\+Tuple@{k\+Tuple}}\item[{\em 
+k\+Tuple\hypertarget{namespacetvm_1_1relay_ab5f4d382bf1bee69c3e484ea6c837578ae5610688419b90595a0701fe007a2ebb}{}\label{namespacetvm_1_1relay_ab5f4d382bf1bee69c3e484ea6c837578ae5610688419b90595a0701fe007a2ebb}
+}]\index{k\+Opaque@{k\+Opaque}!tvm\+::relay@{tvm\+::relay}}\index{tvm\+::relay@{tvm\+::relay}!k\+Opaque@{k\+Opaque}}\item[{\em 
+k\+Opaque\hypertarget{namespacetvm_1_1relay_ab5f4d382bf1bee69c3e484ea6c837578a3cb3cec00829ebd525feba875f2d6ac1}{}\label{namespacetvm_1_1relay_ab5f4d382bf1bee69c3e484ea6c837578a3cb3cec00829ebd525feba875f2d6ac1}
+}]\end{description}
+\end{Desc}
+
+
+\subsection{Function Documentation}
+\index{tvm\+::relay@{tvm\+::relay}!All\+Type\+Vars@{All\+Type\+Vars}}
+\index{All\+Type\+Vars@{All\+Type\+Vars}!tvm\+::relay@{tvm\+::relay}}
+\subsubsection[{\texorpdfstring{All\+Type\+Vars(const Expr \&expr, const I\+R\+Module \&mod)}{AllTypeVars(const Expr &expr, const IRModule &mod)}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf tvm\+::\+Array}$<${\bf Type\+Var}$>$ tvm\+::relay\+::\+All\+Type\+Vars (
+\begin{DoxyParamCaption}
+\item[{const {\bf Expr} \&}]{expr, }
+\item[{const {\bf I\+R\+Module} \&}]{mod}
+\end{DoxyParamCaption}
+)}\hypertarget{namespacetvm_1_1relay_ae67484a25663dfe2f87cbad53075abbf}{}\label{namespacetvm_1_1relay_ae67484a25663dfe2f87cbad53075abbf}
+
+
+Get all type variables in expression expr. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em expr} & the expression. \\
+\hline
+{\em mod} & the module.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+List of type vars, in the Post\+D\+FS order in the expression. 
+\end{DoxyReturn}
+\index{tvm\+::relay@{tvm\+::relay}!All\+Type\+Vars@{All\+Type\+Vars}}
+\index{All\+Type\+Vars@{All\+Type\+Vars}!tvm\+::relay@{tvm\+::relay}}
+\subsubsection[{\texorpdfstring{All\+Type\+Vars(const Type \&t, const I\+R\+Module \&mod)}{AllTypeVars(const Type &t, const IRModule &mod)}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf tvm\+::\+Array}$<${\bf Type\+Var}$>$ tvm\+::relay\+::\+All\+Type\+Vars (
+\begin{DoxyParamCaption}
+\item[{const {\bf Type} \&}]{t, }
+\item[{const {\bf I\+R\+Module} \&}]{mod}
+\end{DoxyParamCaption}
+)}\hypertarget{namespacetvm_1_1relay_ad24361b252cdb636192641e6801f2666}{}\label{namespacetvm_1_1relay_ad24361b252cdb636192641e6801f2666}
+
+
+Get all type variables in type t. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em t} & the type. \\
+\hline
+{\em mod} & the module.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+List of type vars, in the Post\+D\+FS order visited by type. 
+\end{DoxyReturn}
+\index{tvm\+::relay@{tvm\+::relay}!All\+Vars@{All\+Vars}}
+\index{All\+Vars@{All\+Vars}!tvm\+::relay@{tvm\+::relay}}
+\subsubsection[{\texorpdfstring{All\+Vars(const Expr \&expr)}{AllVars(const Expr &expr)}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf tvm\+::\+Array}$<${\bf Var}$>$ tvm\+::relay\+::\+All\+Vars (
+\begin{DoxyParamCaption}
+\item[{const {\bf Expr} \&}]{expr}
+\end{DoxyParamCaption}
+)}\hypertarget{namespacetvm_1_1relay_a6b1e94cf8d97514fe4a9493a0dec1559}{}\label{namespacetvm_1_1relay_a6b1e94cf8d97514fe4a9493a0dec1559}
+
+
+Get all variables from expression expr. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em expr} & the expression.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+List of all vars, in the Post\+D\+FS order in the expression. 
+\end{DoxyReturn}
+\index{tvm\+::relay@{tvm\+::relay}!Alpha\+Equal@{Alpha\+Equal}}
+\index{Alpha\+Equal@{Alpha\+Equal}!tvm\+::relay@{tvm\+::relay}}
+\subsubsection[{\texorpdfstring{Alpha\+Equal(const Expr \&e1, const Expr \&e2)}{AlphaEqual(const Expr &e1, const Expr &e2)}}]{\setlength{\rightskip}{0pt plus 5cm}bool tvm\+::relay\+::\+Alpha\+Equal (
+\begin{DoxyParamCaption}
+\item[{const {\bf Expr} \&}]{e1, }
+\item[{const {\bf Expr} \&}]{e2}
+\end{DoxyParamCaption}
+)}\hypertarget{namespacetvm_1_1relay_ade8a41f4d5e1698684fe03446776c799}{}\label{namespacetvm_1_1relay_ade8a41f4d5e1698684fe03446776c799}
+
+
+Compare two expressions for structural equivalence. 
+
+This comparison operator respects scoping and compares expressions without regard to variable choice.
+
+For example\+: {\ttfamily let x = 1 in x} is equal to {\ttfamily let y = 1 in y}.
+
+See \href{https://en.wikipedia.org/wiki/Lambda_calculus#Alpha_equivalence}{\tt https\+://en.\+wikipedia.\+org/wiki/\+Lambda\+\_\+calculus\#\+Alpha\+\_\+equivalence} for more details.
+
+
+\begin{DoxyParams}{Parameters}
+{\em e1} & The left hand expression. \\
+\hline
+{\em e2} & The right hand expression.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true if equal, otherwise false 
+\end{DoxyReturn}
+\index{tvm\+::relay@{tvm\+::relay}!Alpha\+Equal@{Alpha\+Equal}}
+\index{Alpha\+Equal@{Alpha\+Equal}!tvm\+::relay@{tvm\+::relay}}
+\subsubsection[{\texorpdfstring{Alpha\+Equal(const Type \&t1, const Type \&t2)}{AlphaEqual(const Type &t1, const Type &t2)}}]{\setlength{\rightskip}{0pt plus 5cm}bool tvm\+::relay\+::\+Alpha\+Equal (
+\begin{DoxyParamCaption}
+\item[{const {\bf Type} \&}]{t1, }
+\item[{const {\bf Type} \&}]{t2}
+\end{DoxyParamCaption}
+)}\hypertarget{namespacetvm_1_1relay_a396e72c6921843a960ac588a8c60253d}{}\label{namespacetvm_1_1relay_a396e72c6921843a960ac588a8c60253d}
+
+
+Compare two types for structural equivalence. 
+
+This comparison operator respects scoping and compares expressions without regard to variable choice.
+
+For example\+: {\ttfamily forall s, Tensor\mbox{[}f32, s\mbox{]}} is equal to {\ttfamily forall w, Tensor\mbox{[}f32, w\mbox{]}}.
+
+See \href{https://en.wikipedia.org/wiki/Lambda_calculus#Alpha_equivalence}{\tt https\+://en.\+wikipedia.\+org/wiki/\+Lambda\+\_\+calculus\#\+Alpha\+\_\+equivalence} for more details.
+
+
+\begin{DoxyParams}{Parameters}
+{\em t1} & The left hand type. \\
+\hline
+{\em t2} & The right hand type.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true if equal, otherwise false 
+\end{DoxyReturn}
+\index{tvm\+::relay@{tvm\+::relay}!Alpha\+Equal@{Alpha\+Equal}}
+\index{Alpha\+Equal@{Alpha\+Equal}!tvm\+::relay@{tvm\+::relay}}
+\subsubsection[{\texorpdfstring{Alpha\+Equal(const Pattern \&t1, const Pattern \&t2)}{AlphaEqual(const Pattern &t1, const Pattern &t2)}}]{\setlength{\rightskip}{0pt plus 5cm}bool tvm\+::relay\+::\+Alpha\+Equal (
+\begin{DoxyParamCaption}
+\item[{const {\bf Pattern} \&}]{t1, }
+\item[{const {\bf Pattern} \&}]{t2}
+\end{DoxyParamCaption}
+)}\hypertarget{namespacetvm_1_1relay_a4e98128c160e24833fdba44345ad3ba3}{}\label{namespacetvm_1_1relay_a4e98128c160e24833fdba44345ad3ba3}
+
+
+Compare two patterns for structural equivalence. 
+
+This comparison operator respects scoping and compares patterns without regard to variable choice.
+
+For example\+: {\ttfamily A(x, \+\_\+, y)} is equal to {\ttfamily A(z, \+\_\+, a)}.
+
+See \href{https://en.wikipedia.org/wiki/Lambda_calculus#Alpha_equivalence}{\tt https\+://en.\+wikipedia.\+org/wiki/\+Lambda\+\_\+calculus\#\+Alpha\+\_\+equivalence} for more details.
+
+
+\begin{DoxyParams}{Parameters}
+{\em t1} & The left hand pattern. \\
+\hline
+{\em t2} & The right hand pattern.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true if equal, otherwise false 
+\end{DoxyReturn}
+\index{tvm\+::relay@{tvm\+::relay}!Bind@{Bind}}
+\index{Bind@{Bind}!tvm\+::relay@{tvm\+::relay}}
+\subsubsection[{\texorpdfstring{Bind(const Expr \&expr, const tvm\+::\+Map$<$ Var, Expr $>$ \&binds)}{Bind(const Expr &expr, const tvm::Map< Var, Expr > &binds)}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Expr} tvm\+::relay\+::\+Bind (
+\begin{DoxyParamCaption}
+\item[{const {\bf Expr} \&}]{expr, }
+\item[{const {\bf tvm\+::\+Map}$<$ {\bf Var}, {\bf Expr} $>$ \&}]{binds}
+\end{DoxyParamCaption}
+)}\hypertarget{namespacetvm_1_1relay_ad7cfa0b6a4537989b886d47767526726}{}\label{namespacetvm_1_1relay_ad7cfa0b6a4537989b886d47767526726}
+
+
+Bind the free variables to a Relay expression. This is a helper function usually called by other pass functions to help optimizations. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em expr} & The input expression. \\
+\hline
+{\em binds} & The variable to expression map that will be used to help the binding.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The updated expression. 
+\end{DoxyReturn}
+\index{tvm\+::relay@{tvm\+::relay}!Bound\+Type\+Vars@{Bound\+Type\+Vars}}
+\index{Bound\+Type\+Vars@{Bound\+Type\+Vars}!tvm\+::relay@{tvm\+::relay}}
+\subsubsection[{\texorpdfstring{Bound\+Type\+Vars(const Expr \&expr, const I\+R\+Module \&mod)}{BoundTypeVars(const Expr &expr, const IRModule &mod)}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf tvm\+::\+Array}$<${\bf Type\+Var}$>$ tvm\+::relay\+::\+Bound\+Type\+Vars (
+\begin{DoxyParamCaption}
+\item[{const {\bf Expr} \&}]{expr, }
+\item[{const {\bf I\+R\+Module} \&}]{mod}
+\end{DoxyParamCaption}
+)}\hypertarget{namespacetvm_1_1relay_a1e5aa65b13f8ca172009aa2ff3ba59d6}{}\label{namespacetvm_1_1relay_a1e5aa65b13f8ca172009aa2ff3ba59d6}
+
+
+Get all bound type variables from expression expr. 
+
+Bound variables are all type variables that are declared in the expr. They only have meaning inside that expr, and can only be used in it.
+
+
+\begin{DoxyParams}{Parameters}
+{\em expr} & the expression. \\
+\hline
+{\em mod} & the module.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+List of bound type vars, in the Post\+D\+FS order in the expression. 
+\end{DoxyReturn}
+\index{tvm\+::relay@{tvm\+::relay}!Bound\+Type\+Vars@{Bound\+Type\+Vars}}
+\index{Bound\+Type\+Vars@{Bound\+Type\+Vars}!tvm\+::relay@{tvm\+::relay}}
+\subsubsection[{\texorpdfstring{Bound\+Type\+Vars(const Type \&t, const I\+R\+Module \&mod)}{BoundTypeVars(const Type &t, const IRModule &mod)}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf tvm\+::\+Array}$<${\bf Type\+Var}$>$ tvm\+::relay\+::\+Bound\+Type\+Vars (
+\begin{DoxyParamCaption}
+\item[{const {\bf Type} \&}]{t, }
+\item[{const {\bf I\+R\+Module} \&}]{mod}
+\end{DoxyParamCaption}
+)}\hypertarget{namespacetvm_1_1relay_a419979c48a5e37cd969f6fd6d0fead4b}{}\label{namespacetvm_1_1relay_a419979c48a5e37cd969f6fd6d0fead4b}
+
+
+Get all bound type variables from type t. 
+
+Bound variables are all type variables that are declared in the type. They only have meaning inside that type, and can only be used in it.
+
+
+\begin{DoxyParams}{Parameters}
+{\em t} & the type \\
+\hline
+{\em mod} & the module.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+List of bound type vars, in the Post\+D\+FS order visited by type. 
+\end{DoxyReturn}
+\index{tvm\+::relay@{tvm\+::relay}!Bound\+Vars@{Bound\+Vars}}
+\index{Bound\+Vars@{Bound\+Vars}!tvm\+::relay@{tvm\+::relay}}
+\subsubsection[{\texorpdfstring{Bound\+Vars(const Expr \&expr)}{BoundVars(const Expr &expr)}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf tvm\+::\+Array}$<${\bf Var}$>$ tvm\+::relay\+::\+Bound\+Vars (
+\begin{DoxyParamCaption}
+\item[{const {\bf Expr} \&}]{expr}
+\end{DoxyParamCaption}
+)}\hypertarget{namespacetvm_1_1relay_a0bcc32688b446d3574932554f6b8c2df}{}\label{namespacetvm_1_1relay_a0bcc32688b446d3574932554f6b8c2df}
+
+
+Get all bound variables from expression expr. 
+
+Bound variables are all variables that are declared in the expr. They only have meaning inside that expr, and can only be used in it.
+
+
+\begin{DoxyParams}{Parameters}
+{\em expr} & the expression.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+List of bound vars, in the Post\+D\+FS order in the expression. 
+\end{DoxyReturn}
+\index{tvm\+::relay@{tvm\+::relay}!Bound\+Vars@{Bound\+Vars}}
+\index{Bound\+Vars@{Bound\+Vars}!tvm\+::relay@{tvm\+::relay}}
+\subsubsection[{\texorpdfstring{Bound\+Vars(const Pattern \&pat)}{BoundVars(const Pattern &pat)}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf tvm\+::\+Array}$<${\bf Var}$>$ tvm\+::relay\+::\+Bound\+Vars (
+\begin{DoxyParamCaption}
+\item[{const {\bf Pattern} \&}]{pat}
+\end{DoxyParamCaption}
+)}\hypertarget{namespacetvm_1_1relay_aedcb2b290b4f80292eb34afefc41f0ac}{}\label{namespacetvm_1_1relay_aedcb2b290b4f80292eb34afefc41f0ac}
+
+
+Get all bound variables from pattern pat. 
+
+Bound variables are all variables that got bound by the pat. They only have meaning inside that expr, and can only be used in it.
+
+
+\begin{DoxyParams}{Parameters}
+{\em pat} & the \hyperlink{classtvm_1_1relay_1_1Pattern}{Pattern}.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+List of bound vars, in the Post\+D\+FS order in the expression. 
+\end{DoxyReturn}
+\index{tvm\+::relay@{tvm\+::relay}!Collect\+Device\+Annotation\+Ops@{Collect\+Device\+Annotation\+Ops}}
+\index{Collect\+Device\+Annotation\+Ops@{Collect\+Device\+Annotation\+Ops}!tvm\+::relay@{tvm\+::relay}}
+\subsubsection[{\texorpdfstring{Collect\+Device\+Annotation\+Ops(const Expr \&expr)}{CollectDeviceAnnotationOps(const Expr &expr)}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Map}$<${\bf Expr}, {\bf Integer}$>$ tvm\+::relay\+::\+Collect\+Device\+Annotation\+Ops (
+\begin{DoxyParamCaption}
+\item[{const {\bf Expr} \&}]{expr}
+\end{DoxyParamCaption}
+)}\hypertarget{namespacetvm_1_1relay_a4e17d61a10c7781b004559a5b7430047}{}\label{namespacetvm_1_1relay_a4e17d61a10c7781b004559a5b7430047}
+
+
+Collect the device anntation operators. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em expr} & The expression.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The annotated expression to device type mapping for annotation ops. 
+\end{DoxyReturn}
+\index{tvm\+::relay@{tvm\+::relay}!Collect\+Device\+Info@{Collect\+Device\+Info}}
+\index{Collect\+Device\+Info@{Collect\+Device\+Info}!tvm\+::relay@{tvm\+::relay}}
+\subsubsection[{\texorpdfstring{Collect\+Device\+Info(const Expr \&expr)}{CollectDeviceInfo(const Expr &expr)}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Map}$<${\bf Expr}, {\bf Integer}$>$ tvm\+::relay\+::\+Collect\+Device\+Info (
+\begin{DoxyParamCaption}
+\item[{const {\bf Expr} \&}]{expr}
+\end{DoxyParamCaption}
+)}\hypertarget{namespacetvm_1_1relay_ab6e35e7086b1f79ae55651500f94116b}{}\label{namespacetvm_1_1relay_ab6e35e7086b1f79ae55651500f94116b}
+
+
+Collect the device mapping information of each expression. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em expr} & The expression.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The device mapping. 
+\end{DoxyReturn}
+\index{tvm\+::relay@{tvm\+::relay}!Constant\+Check@{Constant\+Check}}
+\index{Constant\+Check@{Constant\+Check}!tvm\+::relay@{tvm\+::relay}}
+\subsubsection[{\texorpdfstring{Constant\+Check(const Expr \&e)}{ConstantCheck(const Expr &e)}}]{\setlength{\rightskip}{0pt plus 5cm}bool tvm\+::relay\+::\+Constant\+Check (
+\begin{DoxyParamCaption}
+\item[{const {\bf Expr} \&}]{e}
+\end{DoxyParamCaption}
+)}\hypertarget{namespacetvm_1_1relay_abdade48285a63efffe743e73e41d3b35}{}\label{namespacetvm_1_1relay_abdade48285a63efffe743e73e41d3b35}
+
+
+Check whether an expression is constant. 
+
+\hyperlink{classtvm_1_1relay_1_1If}{If} the inputs of an expression are all constant, it means the expression itself is constant also.
+
+
+\begin{DoxyParams}{Parameters}
+{\em e} & the expression.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+whether the expression is constant. 
+\end{DoxyReturn}
+\index{tvm\+::relay@{tvm\+::relay}!Create\+Interpreter@{Create\+Interpreter}}
+\index{Create\+Interpreter@{Create\+Interpreter}!tvm\+::relay@{tvm\+::relay}}
+\subsubsection[{\texorpdfstring{Create\+Interpreter(\+I\+R\+Module mod, D\+L\+Context context, Target target)}{CreateInterpreter(IRModule mod, DLContext context, Target target)}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf runtime\+::\+Typed\+Packed\+Func}$<$Object\+Ref({\bf Expr})$>$ tvm\+::relay\+::\+Create\+Interpreter (
+\begin{DoxyParamCaption}
+\item[{{\bf I\+R\+Module}}]{mod, }
+\item[{D\+L\+Context}]{context, }
+\item[{{\bf Target}}]{target}
+\end{DoxyParamCaption}
+)}\hypertarget{namespacetvm_1_1relay_ad02b5b16803fc28a9d920b105074a17d}{}\label{namespacetvm_1_1relay_ad02b5b16803fc28a9d920b105074a17d}
+
+
+Create a Interpreter function that can evaluate an expression and produce a value. 
+
+The resulting value can be passed to Python, making it easy to use for testing and debugging.
+
+The interpreter interprets the program fragments not supported by the T\+VM runtime, although the interpreter is naively implemented it uses T\+VM operators for evaluating all operators.
+
+Our intent is that this will never be the most efficient implementation of Relay\textquotesingle{}s semantics, but a readable and clear one.
+
+
+\begin{DoxyParams}{Parameters}
+{\em mod} & The function module. \\
+\hline
+{\em context} & The primary context that the interepreter runs on. \\
+\hline
+{\em target} & Compiler target flag to compile the functions on the context. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A function that takes in an expression and returns a value. 
+\end{DoxyReturn}
+\index{tvm\+::relay@{tvm\+::relay}!De\+Dup@{De\+Dup}}
+\index{De\+Dup@{De\+Dup}!tvm\+::relay@{tvm\+::relay}}
+\subsubsection[{\texorpdfstring{De\+Dup(const Expr \&e)}{DeDup(const Expr &e)}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Expr} tvm\+::relay\+::\+De\+Dup (
+\begin{DoxyParamCaption}
+\item[{const {\bf Expr} \&}]{e}
+\end{DoxyParamCaption}
+)}\hypertarget{namespacetvm_1_1relay_a1ecbcbe35c7abd82b9eabf94f6b797d2}{}\label{namespacetvm_1_1relay_a1ecbcbe35c7abd82b9eabf94f6b797d2}
+
+
+Deduplicate the bound variables and type variables in the expression. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em e} & the expression.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the deduplicated expression. 
+\end{DoxyReturn}
+\index{tvm\+::relay@{tvm\+::relay}!Detect\+Feature@{Detect\+Feature}}
+\index{Detect\+Feature@{Detect\+Feature}!tvm\+::relay@{tvm\+::relay}}
+\subsubsection[{\texorpdfstring{Detect\+Feature(const Relay\+Expr \&expr)}{DetectFeature(const RelayExpr &expr)}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Feature\+Set} tvm\+::relay\+::\+Detect\+Feature (
+\begin{DoxyParamCaption}
+\item[{const {\bf Relay\+Expr} \&}]{expr}
+\end{DoxyParamCaption}
+)}\hypertarget{namespacetvm_1_1relay_a62b651084b386991221bc32c020cbef5}{}\label{namespacetvm_1_1relay_a62b651084b386991221bc32c020cbef5}
+
+
+Calculate the feature of the program. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em expr} & The expression.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The \hyperlink{classtvm_1_1relay_1_1FeatureSet}{Feature\+Set}. 
+\end{DoxyReturn}
+\index{tvm\+::relay@{tvm\+::relay}!Detect\+Feature@{Detect\+Feature}}
+\index{Detect\+Feature@{Detect\+Feature}!tvm\+::relay@{tvm\+::relay}}
+\subsubsection[{\texorpdfstring{Detect\+Feature(const I\+R\+Module \&mod)}{DetectFeature(const IRModule &mod)}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Feature\+Set} tvm\+::relay\+::\+Detect\+Feature (
+\begin{DoxyParamCaption}
+\item[{const {\bf I\+R\+Module} \&}]{mod}
+\end{DoxyParamCaption}
+)}\hypertarget{namespacetvm_1_1relay_a81978c82e1130854e575ccabc152ad70}{}\label{namespacetvm_1_1relay_a81978c82e1130854e575ccabc152ad70}
+
+
+Calculate the feature of the program. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em mod} & The module.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The \hyperlink{classtvm_1_1relay_1_1FeatureSet}{Feature\+Set}. 
+\end{DoxyReturn}
+\index{tvm\+::relay@{tvm\+::relay}!Detect\+Feature@{Detect\+Feature}}
+\index{Detect\+Feature@{Detect\+Feature}!tvm\+::relay@{tvm\+::relay}}
+\subsubsection[{\texorpdfstring{Detect\+Feature(const Expr \&expr, const I\+R\+Module \&mod)}{DetectFeature(const Expr &expr, const IRModule &mod)}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Feature\+Set} tvm\+::relay\+::\+Detect\+Feature (
+\begin{DoxyParamCaption}
+\item[{const {\bf Expr} \&}]{expr, }
+\item[{const {\bf I\+R\+Module} \&}]{mod}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{namespacetvm_1_1relay_a191d5425083368521d49cc49cef65aba}{}\label{namespacetvm_1_1relay_a191d5425083368521d49cc49cef65aba}
+
+
+Calculate the feature of the program. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em expr} & The expression. \\
+\hline
+{\em mod} & The module.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The \hyperlink{classtvm_1_1relay_1_1FeatureSet}{Feature\+Set}. 
+\end{DoxyReturn}
+\index{tvm\+::relay@{tvm\+::relay}!Forward\+Rewrite@{Forward\+Rewrite}}
+\index{Forward\+Rewrite@{Forward\+Rewrite}!tvm\+::relay@{tvm\+::relay}}
+\subsubsection[{\texorpdfstring{Forward\+Rewrite(const Expr \&expr, const std\+::string \&rewrite\+\_\+map\+\_\+attr\+\_\+name, std\+::function$<$ Object\+Ref(const Call \&)$>$ fcontext=nullptr, std\+::function$<$ Expr(const Expr \&)$>$ fmulti\+\_\+ref\+\_\+trigger=nullptr)}{ForwardRewrite(const Expr &expr, const std::string &rewrite_map_attr_name, std::function< ObjectRef(const Call &)> fcontext=nullptr, std::function< Expr(const Expr &)> fmulti_ref_trigger=nullptr)}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Expr} tvm\+::relay\+::\+Forward\+Rewrite (
+\begin{DoxyParamCaption}
+\item[{const {\bf Expr} \&}]{expr, }
+\item[{const std\+::string \&}]{rewrite\+\_\+map\+\_\+attr\+\_\+name, }
+\item[{std\+::function$<$ Object\+Ref(const {\bf Call} \&)$>$}]{fcontext = {\ttfamily nullptr}, }
+\item[{std\+::function$<$ {\bf Expr}(const {\bf Expr} \&)$>$}]{fmulti\+\_\+ref\+\_\+trigger = {\ttfamily nullptr}}
+\end{DoxyParamCaption}
+)}\hypertarget{namespacetvm_1_1relay_ac36059b06a538598a8f46257c0cb9fe0}{}\label{namespacetvm_1_1relay_ac36059b06a538598a8f46257c0cb9fe0}
+
+
+Apply rewrite rules to rewrite the expr in post D\+FS order. This function is used as a helper function to rewrtie an expression in a pass. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em expr} & The expression. \\
+\hline
+{\em rewrite\+\_\+map\+\_\+attr\+\_\+name} & The \hyperlink{classtvm_1_1Op}{Op}\textquotesingle{}s attr name which corresponds to the rewrite rule function. \\
+\hline
+{\em fcontext} & Additional callback to provide context argument for each call node. \\
+\hline
+{\em fmulti\+\_\+ref\+\_\+trigger} & Transformation function to be called when an Expr consumed by multiple callers. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The rewritten expression. 
+\end{DoxyReturn}
+\index{tvm\+::relay@{tvm\+::relay}!Forward\+Rewrite@{Forward\+Rewrite}}
+\index{Forward\+Rewrite@{Forward\+Rewrite}!tvm\+::relay@{tvm\+::relay}}
+\subsubsection[{\texorpdfstring{Forward\+Rewrite(const Expr \&expr, const F\+Forward\+Rewrite \&rewrite\+\_\+func, std\+::function$<$ Object\+Ref(const Call \&)$>$ fcontext=nullptr, std\+::function$<$ Expr(const Expr \&)$>$ fmulti\+\_\+ref\+\_\+trigger=nullptr)}{ForwardRewrite(const Expr &expr, const FForwardRewrite &rewrite_func, std::function< ObjectRef(const Call &)> fcontext=nullptr, std::function< Expr(const Expr &)> fmulti_ref_trigger=nullptr)}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Expr} tvm\+::relay\+::\+Forward\+Rewrite (
+\begin{DoxyParamCaption}
+\item[{const {\bf Expr} \&}]{expr, }
+\item[{const {\bf F\+Forward\+Rewrite} \&}]{rewrite\+\_\+func, }
+\item[{std\+::function$<$ Object\+Ref(const {\bf Call} \&)$>$}]{fcontext = {\ttfamily nullptr}, }
+\item[{std\+::function$<$ {\bf Expr}(const {\bf Expr} \&)$>$}]{fmulti\+\_\+ref\+\_\+trigger = {\ttfamily nullptr}}
+\end{DoxyParamCaption}
+)}\hypertarget{namespacetvm_1_1relay_ae6b8ec762f81290872d611c40cc72458}{}\label{namespacetvm_1_1relay_ae6b8ec762f81290872d611c40cc72458}
+
+
+Apply rewrite rules to rewrite the expr in post D\+FS order. This function is used as a helper function to rewrtie an expression in a pass. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em expr} & The expression. \\
+\hline
+{\em rewrite\+\_\+func} & The rewrite func that will apply to all operators. \\
+\hline
+{\em fcontext} & Additional callback to provide context argument for each call node. \\
+\hline
+{\em fmulti\+\_\+ref\+\_\+trigger} & Transformation function to be called when an Expr consumed by multiple callers.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The rewritten expression. 
+\end{DoxyReturn}
+\index{tvm\+::relay@{tvm\+::relay}!Free\+Type\+Vars@{Free\+Type\+Vars}}
+\index{Free\+Type\+Vars@{Free\+Type\+Vars}!tvm\+::relay@{tvm\+::relay}}
+\subsubsection[{\texorpdfstring{Free\+Type\+Vars(const Expr \&expr, const I\+R\+Module \&mod)}{FreeTypeVars(const Expr &expr, const IRModule &mod)}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf tvm\+::\+Array}$<${\bf Type\+Var}$>$ tvm\+::relay\+::\+Free\+Type\+Vars (
+\begin{DoxyParamCaption}
+\item[{const {\bf Expr} \&}]{expr, }
+\item[{const {\bf I\+R\+Module} \&}]{mod}
+\end{DoxyParamCaption}
+)}\hypertarget{namespacetvm_1_1relay_acc529cca9623ac81c8aa6e106cdb5850}{}\label{namespacetvm_1_1relay_acc529cca9623ac81c8aa6e106cdb5850}
+
+
+Get free Type\+Vars from expression expr. 
+
+Free type parameters are type parameters that are not bound by a function type in the context.
+
+
+\begin{DoxyParams}{Parameters}
+{\em expr} & the expression. \\
+\hline
+{\em mod} & the module.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+List of free vars, in the Post\+D\+FS order visited by expr. 
+\end{DoxyReturn}
+\index{tvm\+::relay@{tvm\+::relay}!Free\+Type\+Vars@{Free\+Type\+Vars}}
+\index{Free\+Type\+Vars@{Free\+Type\+Vars}!tvm\+::relay@{tvm\+::relay}}
+\subsubsection[{\texorpdfstring{Free\+Type\+Vars(const Type \&t, const I\+R\+Module \&mod)}{FreeTypeVars(const Type &t, const IRModule &mod)}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf tvm\+::\+Array}$<${\bf Type\+Var}$>$ tvm\+::relay\+::\+Free\+Type\+Vars (
+\begin{DoxyParamCaption}
+\item[{const {\bf Type} \&}]{t, }
+\item[{const {\bf I\+R\+Module} \&}]{mod}
+\end{DoxyParamCaption}
+)}\hypertarget{namespacetvm_1_1relay_a446e2b12f3e907336313004c3e0a0c86}{}\label{namespacetvm_1_1relay_a446e2b12f3e907336313004c3e0a0c86}
+
+
+Get free Type\+Vars from type t. 
+
+Free type parameters are type parameters that are not bound by a function type in the context.
+
+
+\begin{DoxyParams}{Parameters}
+{\em t} & the type. \\
+\hline
+{\em mod} & the module.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+List of free type vars, in the Post\+D\+FS order visited by type. 
+\end{DoxyReturn}
+\index{tvm\+::relay@{tvm\+::relay}!Free\+Vars@{Free\+Vars}}
+\index{Free\+Vars@{Free\+Vars}!tvm\+::relay@{tvm\+::relay}}
+\subsubsection[{\texorpdfstring{Free\+Vars(const Expr \&expr)}{FreeVars(const Expr &expr)}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf tvm\+::\+Array}$<${\bf Var}$>$ tvm\+::relay\+::\+Free\+Vars (
+\begin{DoxyParamCaption}
+\item[{const {\bf Expr} \&}]{expr}
+\end{DoxyParamCaption}
+)}\hypertarget{namespacetvm_1_1relay_af2c5771c67f06c0af32c7b4b4269e73f}{}\label{namespacetvm_1_1relay_af2c5771c67f06c0af32c7b4b4269e73f}
+
+
+Get free type parameters from expression expr. 
+
+Free variables are variables that are not bound by a let or a function parameter in the context.
+
+
+\begin{DoxyParams}{Parameters}
+{\em expr} & the expression.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+List of free vars, in the Post\+D\+FS order in the expression. 
+\end{DoxyReturn}
+\index{tvm\+::relay@{tvm\+::relay}!Infer\+Type@{Infer\+Type}}
+\index{Infer\+Type@{Infer\+Type}!tvm\+::relay@{tvm\+::relay}}
+\subsubsection[{\texorpdfstring{Infer\+Type(const Function \&f, const I\+R\+Module \&mod, const Global\+Var \&var)}{InferType(const Function &f, const IRModule &mod, const GlobalVar &var)}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Function} tvm\+::relay\+::\+Infer\+Type (
+\begin{DoxyParamCaption}
+\item[{const {\bf Function} \&}]{f, }
+\item[{const {\bf I\+R\+Module} \&}]{mod, }
+\item[{const {\bf Global\+Var} \&}]{var}
+\end{DoxyParamCaption}
+)}\hypertarget{namespacetvm_1_1relay_a18141658f627685d55704609111f57be}{}\label{namespacetvm_1_1relay_a18141658f627685d55704609111f57be}
+
+
+Infer the type of a function as if it is mapped to var in the mod. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em f} & the function. \\
+\hline
+{\em mod} & The module used for referencing global functions. \\
+\hline
+{\em var} & The global variable corresponding to the function.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A type checked \hyperlink{classtvm_1_1relay_1_1Function}{Function} with its checked\+\_\+type field populated. 
+\end{DoxyReturn}
+\begin{DoxyNote}{Note}
+this function mutates mod and is not thread-\/safe. 
+\end{DoxyNote}
+\index{tvm\+::relay@{tvm\+::relay}!Kind\+Check@{Kind\+Check}}
+\index{Kind\+Check@{Kind\+Check}!tvm\+::relay@{tvm\+::relay}}
+\subsubsection[{\texorpdfstring{Kind\+Check(const Type \&t, const I\+R\+Module \&mod)}{KindCheck(const Type &t, const IRModule &mod)}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Kind} tvm\+::relay\+::\+Kind\+Check (
+\begin{DoxyParamCaption}
+\item[{const {\bf Type} \&}]{t, }
+\item[{const {\bf I\+R\+Module} \&}]{mod}
+\end{DoxyParamCaption}
+)}\hypertarget{namespacetvm_1_1relay_af73e45f453515df6f9c0bbbf189719d6}{}\label{namespacetvm_1_1relay_af73e45f453515df6f9c0bbbf189719d6}
+
+
+Check that types are well kinded by applying \char`\"{}kinding rules\char`\"{}. 
+
+This pass ensures we do not do things that violate the design of the type system when writing down types.
+
+For example tensors are not allowed to contain functions in Relay.
+
+We check this by ensuring the {\ttfamily dtype} field of a Tensor always contains a data type such as {\ttfamily int}, {\ttfamily float}, {\ttfamily uint}.
+
+
+\begin{DoxyParams}{Parameters}
+{\em t} & The type to check. \\
+\hline
+{\em mod} & The global module.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The kind of the passed type. 
+\end{DoxyReturn}
+\index{tvm\+::relay@{tvm\+::relay}!Post\+Order\+Visit@{Post\+Order\+Visit}}
+\index{Post\+Order\+Visit@{Post\+Order\+Visit}!tvm\+::relay@{tvm\+::relay}}
+\subsubsection[{\texorpdfstring{Post\+Order\+Visit(const Expr \&node, std\+::function$<$ void(const Expr \&)$>$ fvisit)}{PostOrderVisit(const Expr &node, std::function< void(const Expr &)> fvisit)}}]{\setlength{\rightskip}{0pt plus 5cm}void tvm\+::relay\+::\+Post\+Order\+Visit (
+\begin{DoxyParamCaption}
+\item[{const {\bf Expr} \&}]{node, }
+\item[{std\+::function$<$ void(const {\bf Expr} \&)$>$}]{fvisit}
+\end{DoxyParamCaption}
+)}\hypertarget{namespacetvm_1_1relay_a5ede3d80c546097084cf98b60e600b80}{}\label{namespacetvm_1_1relay_a5ede3d80c546097084cf98b60e600b80}
+
+
+recursively visit the ir in post D\+FS order node, apply fvisit Each node is guaranteed to be visited only once. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em node} & The ir to be visited. \\
+\hline
+{\em fvisit} & The visitor function to be applied. \\
+\hline
+\end{DoxyParams}
+\index{tvm\+::relay@{tvm\+::relay}!Rewrite\+Annotated\+Ops@{Rewrite\+Annotated\+Ops}}
+\index{Rewrite\+Annotated\+Ops@{Rewrite\+Annotated\+Ops}!tvm\+::relay@{tvm\+::relay}}
+\subsubsection[{\texorpdfstring{Rewrite\+Annotated\+Ops(const Expr \&expr, int fallback\+\_\+device)}{RewriteAnnotatedOps(const Expr &expr, int fallback_device)}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Expr} tvm\+::relay\+::\+Rewrite\+Annotated\+Ops (
+\begin{DoxyParamCaption}
+\item[{const {\bf Expr} \&}]{expr, }
+\item[{int}]{fallback\+\_\+device}
+\end{DoxyParamCaption}
+)}\hypertarget{namespacetvm_1_1relay_a7917e50fbb560a15995e8a617d65d1ab}{}\label{namespacetvm_1_1relay_a7917e50fbb560a15995e8a617d65d1ab}
+
+
+Rewrite the annotated program. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em expr} & The expression. \\
+\hline
+{\em fallback\+\_\+device} & The fallback device which is the default device for operators without annotation.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The updated program. 
+\end{DoxyReturn}
+\index{tvm\+::relay@{tvm\+::relay}!To\+C\+PS@{To\+C\+PS}}
+\index{To\+C\+PS@{To\+C\+PS}!tvm\+::relay@{tvm\+::relay}}
+\subsubsection[{\texorpdfstring{To\+C\+P\+S(const Function \&f, const I\+R\+Module \&mod)}{ToCPS(const Function &f, const IRModule &mod)}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Function} tvm\+::relay\+::\+To\+C\+PS (
+\begin{DoxyParamCaption}
+\item[{const {\bf Function} \&}]{f, }
+\item[{const {\bf I\+R\+Module} \&}]{mod}
+\end{DoxyParamCaption}
+)}\hypertarget{namespacetvm_1_1relay_ab9548d99857f7698f4fe64d056dcd46a}{}\label{namespacetvm_1_1relay_ab9548d99857f7698f4fe64d056dcd46a}
+
+
+Turn an expression into continuation passing style(\+C\+P\+S). 
+
+C\+PS mean that every function will, instead of returning the result directly, be passed down an extra function (called the continuation) as argument, and pass the result to the continuation instead.
+
+Thus, every function call has to be passed an extra argument that represent the rest of the computation (Hence the name of continuation).
+
+Similarly, all other compute will be wrapped and call the continuation as well.
+
+
+\begin{DoxyParams}{Parameters}
+{\em f} & the function. \\
+\hline
+{\em mod} & the module.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the converted \hyperlink{classtvm_1_1relay_1_1Function}{Function}. 
+\end{DoxyReturn}
+\index{tvm\+::relay@{tvm\+::relay}!Un\+C\+PS@{Un\+C\+PS}}
+\index{Un\+C\+PS@{Un\+C\+PS}!tvm\+::relay@{tvm\+::relay}}
+\subsubsection[{\texorpdfstring{Un\+C\+P\+S(const Function \&f)}{UnCPS(const Function &f)}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Function} tvm\+::relay\+::\+Un\+C\+PS (
+\begin{DoxyParamCaption}
+\item[{const {\bf Function} \&}]{f}
+\end{DoxyParamCaption}
+)}\hypertarget{namespacetvm_1_1relay_a1677d450d58078811f52fd70d67db515}{}\label{namespacetvm_1_1relay_a1677d450d58078811f52fd70d67db515}
+
+
+Remove the continuation argument of a C\+PS function. 
+
+Note that this only transform the type back into un-\/\+C\+PS form when there is no higher order input/output.
+
+
+\begin{DoxyParams}{Parameters}
+{\em f} & the function.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the converted \hyperlink{classtvm_1_1relay_1_1Function}{Function}. 
+\end{DoxyReturn}
+\index{tvm\+::relay@{tvm\+::relay}!Unmatched\+Cases@{Unmatched\+Cases}}
+\index{Unmatched\+Cases@{Unmatched\+Cases}!tvm\+::relay@{tvm\+::relay}}
+\subsubsection[{\texorpdfstring{Unmatched\+Cases(const Match \&match, const I\+R\+Module \&mod)}{UnmatchedCases(const Match &match, const IRModule &mod)}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Array}$<${\bf Pattern}$>$ tvm\+::relay\+::\+Unmatched\+Cases (
+\begin{DoxyParamCaption}
+\item[{const {\bf Match} \&}]{match, }
+\item[{const {\bf I\+R\+Module} \&}]{mod}
+\end{DoxyParamCaption}
+)}\hypertarget{namespacetvm_1_1relay_aa3a8cace40f8056fd6412f39c3eaa605}{}\label{namespacetvm_1_1relay_aa3a8cace40f8056fd6412f39c3eaa605}
+
+
+Finds cases that the given match expression does not catch, if any. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em match} & the match expression to test\\
+\hline
+{\em mod} & The module used for accessing global type var definitions, can be None.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Returns a list of cases (as patterns) that are not handled by the match expression. 
+\end{DoxyReturn}
+\index{tvm\+::relay@{tvm\+::relay}!Well\+Formed@{Well\+Formed}}
+\index{Well\+Formed@{Well\+Formed}!tvm\+::relay@{tvm\+::relay}}
+\subsubsection[{\texorpdfstring{Well\+Formed(const Expr \&expr)}{WellFormed(const Expr &expr)}}]{\setlength{\rightskip}{0pt plus 5cm}bool tvm\+::relay\+::\+Well\+Formed (
+\begin{DoxyParamCaption}
+\item[{const {\bf Expr} \&}]{expr}
+\end{DoxyParamCaption}
+)}\hypertarget{namespacetvm_1_1relay_a59dde25d981d5b506115dd4dba7f67b7}{}\label{namespacetvm_1_1relay_a59dde25d981d5b506115dd4dba7f67b7}
+
+
+Check that each \hyperlink{classtvm_1_1relay_1_1Var}{Var} is only bound once. 
+
+For example, the expression {\ttfamily let x = 1 in let x = 2 in 3} bound x twice.
+
+{\ttfamily let f = (\textbackslash{}x -\/$>$ x) in let g = (\textbackslash{}x -\/$>$ x + 1) in f(g(2))} also bound x twice, although x is not shadowed.
+
+
+\begin{DoxyParams}{Parameters}
+{\em expr} & the expression to check.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true iff all \hyperlink{classtvm_1_1relay_1_1Var}{Var} in expr is bound at most once. 
+\end{DoxyReturn}
+
+
+\subsection{Variable Documentation}
+\index{tvm\+::relay@{tvm\+::relay}!feature\+\_\+count@{feature\+\_\+count}}
+\index{feature\+\_\+count@{feature\+\_\+count}!tvm\+::relay@{tvm\+::relay}}
+\subsubsection[{\texorpdfstring{feature\+\_\+count}{feature_count}}]{\setlength{\rightskip}{0pt plus 5cm}constexpr size\+\_\+t tvm\+::relay\+::feature\+\_\+count = 17}\hypertarget{namespacetvm_1_1relay_ac3a576d7d192ce78bafb169c9aa882d1}{}\label{namespacetvm_1_1relay_ac3a576d7d192ce78bafb169c9aa882d1}

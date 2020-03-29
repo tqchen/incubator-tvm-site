@@ -1,0 +1,253 @@
+\hypertarget{classtvm_1_1GenericFunc}{}\section{tvm\+:\+:Generic\+Func Class Reference}
+\label{classtvm_1_1GenericFunc}\index{tvm\+::\+Generic\+Func@{tvm\+::\+Generic\+Func}}
+
+
+Generic function that can be specialized on a per-\/target basis.  
+
+
+
+
+{\ttfamily \#include $<$generic\+\_\+func.\+h$>$}
+
+
+
+Inheritance diagram for tvm\+:\+:Generic\+Func\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=212pt]{classtvm_1_1GenericFunc__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for tvm\+:\+:Generic\+Func\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=212pt]{classtvm_1_1GenericFunc__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+using \hyperlink{classtvm_1_1GenericFunc_adb9e6551f7f52018f1641198bd08574f}{Container\+Type} = \hyperlink{classtvm_1_1GenericFuncNode}{Generic\+Func\+Node}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classtvm_1_1GenericFunc_ae7363acf2a4a41ca5edb48a3f3537ba1}{Generic\+Func} ()
+\item 
+\hyperlink{classtvm_1_1GenericFunc_a355b52473c166484b944131937671d5f}{Generic\+Func} (Object\+Ptr$<$ Object $>$ n)
+\item 
+\hyperlink{classtvm_1_1GenericFunc}{Generic\+Func} \& \hyperlink{classtvm_1_1GenericFunc_a97c34a40c5059bdda64494d61f50602d}{set\+\_\+default} (const \hyperlink{classtvm_1_1runtime_1_1PackedFunc}{runtime\+::\+Packed\+Func} value, bool allow\+\_\+override=false)
+\begin{DoxyCompactList}\small\item\em Set the default function implementaiton. \end{DoxyCompactList}\item 
+\hyperlink{classtvm_1_1GenericFunc}{Generic\+Func} \& \hyperlink{classtvm_1_1GenericFunc_a2a5ef71cd38881b0ef73efa8f0b5fdc8}{register\+\_\+func} (const std\+::vector$<$ std\+::string $>$ \&tags, const \hyperlink{classtvm_1_1runtime_1_1PackedFunc}{runtime\+::\+Packed\+Func} value, bool allow\+\_\+override=false)
+\begin{DoxyCompactList}\small\item\em Register a specialized function. \end{DoxyCompactList}\item 
+{\footnotesize template$<$typename... Args$>$ }\\\hyperlink{classtvm_1_1runtime_1_1TVMRetValue}{runtime\+::\+T\+V\+M\+Ret\+Value} \hyperlink{classtvm_1_1GenericFunc_a1db58ce5213c9913379b42f3126a01b0}{operator()} (Args \&\&...args) const 
+\begin{DoxyCompactList}\small\item\em Call generic function by directly passing in unpacked format. \end{DoxyCompactList}\item 
+void \hyperlink{classtvm_1_1GenericFunc_a640deb0864ed3a59a0f2921de076a369}{Call\+Packed} (\hyperlink{classtvm_1_1runtime_1_1TVMArgs}{runtime\+::\+T\+V\+M\+Args} args, \hyperlink{classtvm_1_1runtime_1_1TVMRetValue}{runtime\+::\+T\+V\+M\+Ret\+Value} $\ast$ret) const 
+\begin{DoxyCompactList}\small\item\em Invoke the relevant function for the current target context, set by set\+\_\+target\+\_\+context. Arguments are passed in packed format. \end{DoxyCompactList}\item 
+\hyperlink{classtvm_1_1GenericFuncNode}{Generic\+Func\+Node} $\ast$ \hyperlink{classtvm_1_1GenericFunc_a4a04307dffa174f71cdfb08d1903dec2}{operator-\/$>$} ()
+\begin{DoxyCompactList}\small\item\em access the internal node container \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \hyperlink{classtvm_1_1GenericFunc}{Generic\+Func} \hyperlink{classtvm_1_1GenericFunc_a74a6f06af50db51c3ff42fd493c44826}{Get} (const std\+::string \&name)
+\begin{DoxyCompactList}\small\item\em Find or register the \hyperlink{classtvm_1_1GenericFunc}{Generic\+Func} instance corresponding to the give name. \end{DoxyCompactList}\item 
+static void \hyperlink{classtvm_1_1GenericFunc_a909acecbf2f34f847a34e587a4570dce}{Register\+Generic\+Func} (\hyperlink{classtvm_1_1GenericFunc}{Generic\+Func} func, const std\+::string \&name)
+\begin{DoxyCompactList}\small\item\em Add a \hyperlink{classtvm_1_1GenericFunc}{Generic\+Func} instance to the registry. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{classtvm_1_1GenericFunc_a1fd6b9bc3f72bb2b64e602de3982929d}{Manager}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Generic function that can be specialized on a per-\/target basis. 
+
+\subsection{Member Typedef Documentation}
+\index{tvm\+::\+Generic\+Func@{tvm\+::\+Generic\+Func}!Container\+Type@{Container\+Type}}
+\index{Container\+Type@{Container\+Type}!tvm\+::\+Generic\+Func@{tvm\+::\+Generic\+Func}}
+\subsubsection[{\texorpdfstring{Container\+Type}{ContainerType}}]{\setlength{\rightskip}{0pt plus 5cm}using {\bf tvm\+::\+Generic\+Func\+::\+Container\+Type} =  {\bf Generic\+Func\+Node}}\hypertarget{classtvm_1_1GenericFunc_adb9e6551f7f52018f1641198bd08574f}{}\label{classtvm_1_1GenericFunc_adb9e6551f7f52018f1641198bd08574f}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\index{tvm\+::\+Generic\+Func@{tvm\+::\+Generic\+Func}!Generic\+Func@{Generic\+Func}}
+\index{Generic\+Func@{Generic\+Func}!tvm\+::\+Generic\+Func@{tvm\+::\+Generic\+Func}}
+\subsubsection[{\texorpdfstring{Generic\+Func()}{GenericFunc()}}]{\setlength{\rightskip}{0pt plus 5cm}tvm\+::\+Generic\+Func\+::\+Generic\+Func (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classtvm_1_1GenericFunc_ae7363acf2a4a41ca5edb48a3f3537ba1}{}\label{classtvm_1_1GenericFunc_ae7363acf2a4a41ca5edb48a3f3537ba1}
+\index{tvm\+::\+Generic\+Func@{tvm\+::\+Generic\+Func}!Generic\+Func@{Generic\+Func}}
+\index{Generic\+Func@{Generic\+Func}!tvm\+::\+Generic\+Func@{tvm\+::\+Generic\+Func}}
+\subsubsection[{\texorpdfstring{Generic\+Func(\+Object\+Ptr$<$ Object $>$ n)}{GenericFunc(ObjectPtr< Object > n)}}]{\setlength{\rightskip}{0pt plus 5cm}tvm\+::\+Generic\+Func\+::\+Generic\+Func (
+\begin{DoxyParamCaption}
+\item[{Object\+Ptr$<$ Object $>$}]{n}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [explicit]}}\hypertarget{classtvm_1_1GenericFunc_a355b52473c166484b944131937671d5f}{}\label{classtvm_1_1GenericFunc_a355b52473c166484b944131937671d5f}
+
+
+\subsection{Member Function Documentation}
+\index{tvm\+::\+Generic\+Func@{tvm\+::\+Generic\+Func}!Call\+Packed@{Call\+Packed}}
+\index{Call\+Packed@{Call\+Packed}!tvm\+::\+Generic\+Func@{tvm\+::\+Generic\+Func}}
+\subsubsection[{\texorpdfstring{Call\+Packed(runtime\+::\+T\+V\+M\+Args args, runtime\+::\+T\+V\+M\+Ret\+Value $\ast$ret) const }{CallPacked(runtime::TVMArgs args, runtime::TVMRetValue *ret) const }}]{\setlength{\rightskip}{0pt plus 5cm}void tvm\+::\+Generic\+Func\+::\+Call\+Packed (
+\begin{DoxyParamCaption}
+\item[{{\bf runtime\+::\+T\+V\+M\+Args}}]{args, }
+\item[{{\bf runtime\+::\+T\+V\+M\+Ret\+Value} $\ast$}]{ret}
+\end{DoxyParamCaption}
+) const}\hypertarget{classtvm_1_1GenericFunc_a640deb0864ed3a59a0f2921de076a369}{}\label{classtvm_1_1GenericFunc_a640deb0864ed3a59a0f2921de076a369}
+
+
+Invoke the relevant function for the current target context, set by set\+\_\+target\+\_\+context. Arguments are passed in packed format. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em args} & The arguments to pass to the function. \\
+\hline
+{\em ret} & The return value \\
+\hline
+\end{DoxyParams}
+\index{tvm\+::\+Generic\+Func@{tvm\+::\+Generic\+Func}!Get@{Get}}
+\index{Get@{Get}!tvm\+::\+Generic\+Func@{tvm\+::\+Generic\+Func}}
+\subsubsection[{\texorpdfstring{Get(const std\+::string \&name)}{Get(const std::string &name)}}]{\setlength{\rightskip}{0pt plus 5cm}static {\bf Generic\+Func} tvm\+::\+Generic\+Func\+::\+Get (
+\begin{DoxyParamCaption}
+\item[{const std\+::string \&}]{name}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}\hypertarget{classtvm_1_1GenericFunc_a74a6f06af50db51c3ff42fd493c44826}{}\label{classtvm_1_1GenericFunc_a74a6f06af50db51c3ff42fd493c44826}
+
+
+Find or register the \hyperlink{classtvm_1_1GenericFunc}{Generic\+Func} instance corresponding to the give name. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em name} & The name of the registered \hyperlink{classtvm_1_1GenericFunc}{Generic\+Func} \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The \hyperlink{classtvm_1_1GenericFunc}{Generic\+Func} instance 
+\end{DoxyReturn}
+\index{tvm\+::\+Generic\+Func@{tvm\+::\+Generic\+Func}!operator()@{operator()}}
+\index{operator()@{operator()}!tvm\+::\+Generic\+Func@{tvm\+::\+Generic\+Func}}
+\subsubsection[{\texorpdfstring{operator()(\+Args \&\&...\+args) const }{operator()(Args &&...args) const }}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename... Args$>$ {\bf runtime\+::\+T\+V\+M\+Ret\+Value} tvm\+::\+Generic\+Func\+::operator() (
+\begin{DoxyParamCaption}
+\item[{Args \&\&...}]{args}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classtvm_1_1GenericFunc_a1db58ce5213c9913379b42f3126a01b0}{}\label{classtvm_1_1GenericFunc_a1db58ce5213c9913379b42f3126a01b0}
+
+
+Call generic function by directly passing in unpacked format. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em args} & Arguments to be passed. \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyTemplParams}{Template Parameters}
+{\em Args} & arguments to be passed.\\
+\hline
+\end{DoxyTemplParams}
+
+\begin{DoxyCode}
+\textcolor{comment}{// Example code on how to call generic function}
+\textcolor{keywordtype}{void} CallGeneirc(\hyperlink{classtvm_1_1GenericFunc_ae7363acf2a4a41ca5edb48a3f3537ba1}{GenericFunc} f) \{
+  \textcolor{comment}{// call like normal functions by pass in arguments}
+  \textcolor{comment}{// return value is automatically converted back}
+  \textcolor{keywordtype}{int} rvalue = f(1, 2.0);
+\}
+\end{DoxyCode}
+ \index{tvm\+::\+Generic\+Func@{tvm\+::\+Generic\+Func}!operator-\/$>$@{operator-\/$>$}}
+\index{operator-\/$>$@{operator-\/$>$}!tvm\+::\+Generic\+Func@{tvm\+::\+Generic\+Func}}
+\subsubsection[{\texorpdfstring{operator-\/$>$()}{operator->()}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Generic\+Func\+Node} $\ast$ tvm\+::\+Generic\+Func\+::operator-\/$>$ (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classtvm_1_1GenericFunc_a4a04307dffa174f71cdfb08d1903dec2}{}\label{classtvm_1_1GenericFunc_a4a04307dffa174f71cdfb08d1903dec2}
+
+
+access the internal node container 
+
+\begin{DoxyReturn}{Returns}
+the pointer to the internal node container 
+\end{DoxyReturn}
+\index{tvm\+::\+Generic\+Func@{tvm\+::\+Generic\+Func}!register\+\_\+func@{register\+\_\+func}}
+\index{register\+\_\+func@{register\+\_\+func}!tvm\+::\+Generic\+Func@{tvm\+::\+Generic\+Func}}
+\subsubsection[{\texorpdfstring{register\+\_\+func(const std\+::vector$<$ std\+::string $>$ \&tags, const runtime\+::\+Packed\+Func value, bool allow\+\_\+override=false)}{register_func(const std::vector< std::string > &tags, const runtime::PackedFunc value, bool allow_override=false)}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Generic\+Func}\& tvm\+::\+Generic\+Func\+::register\+\_\+func (
+\begin{DoxyParamCaption}
+\item[{const std\+::vector$<$ std\+::string $>$ \&}]{tags, }
+\item[{const {\bf runtime\+::\+Packed\+Func}}]{value, }
+\item[{bool}]{allow\+\_\+override = {\ttfamily false}}
+\end{DoxyParamCaption}
+)}\hypertarget{classtvm_1_1GenericFunc_a2a5ef71cd38881b0ef73efa8f0b5fdc8}{}\label{classtvm_1_1GenericFunc_a2a5ef71cd38881b0ef73efa8f0b5fdc8}
+
+
+Register a specialized function. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em tags} & The tags for this specialization \\
+\hline
+{\em value} & The specialized function \\
+\hline
+{\em allow\+\_\+override} & If true, this call may override previously registered tags. If false, an error will be logged if the call would override previously registered tags. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+reference to self. 
+\end{DoxyReturn}
+\index{tvm\+::\+Generic\+Func@{tvm\+::\+Generic\+Func}!Register\+Generic\+Func@{Register\+Generic\+Func}}
+\index{Register\+Generic\+Func@{Register\+Generic\+Func}!tvm\+::\+Generic\+Func@{tvm\+::\+Generic\+Func}}
+\subsubsection[{\texorpdfstring{Register\+Generic\+Func(\+Generic\+Func func, const std\+::string \&name)}{RegisterGenericFunc(GenericFunc func, const std::string &name)}}]{\setlength{\rightskip}{0pt plus 5cm}static void tvm\+::\+Generic\+Func\+::\+Register\+Generic\+Func (
+\begin{DoxyParamCaption}
+\item[{{\bf Generic\+Func}}]{func, }
+\item[{const std\+::string \&}]{name}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}\hypertarget{classtvm_1_1GenericFunc_a909acecbf2f34f847a34e587a4570dce}{}\label{classtvm_1_1GenericFunc_a909acecbf2f34f847a34e587a4570dce}
+
+
+Add a \hyperlink{classtvm_1_1GenericFunc}{Generic\+Func} instance to the registry. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em func} & The \hyperlink{classtvm_1_1GenericFunc}{Generic\+Func} instance \\
+\hline
+{\em name} & The name of the registered \hyperlink{classtvm_1_1GenericFunc}{Generic\+Func} \\
+\hline
+\end{DoxyParams}
+\index{tvm\+::\+Generic\+Func@{tvm\+::\+Generic\+Func}!set\+\_\+default@{set\+\_\+default}}
+\index{set\+\_\+default@{set\+\_\+default}!tvm\+::\+Generic\+Func@{tvm\+::\+Generic\+Func}}
+\subsubsection[{\texorpdfstring{set\+\_\+default(const runtime\+::\+Packed\+Func value, bool allow\+\_\+override=false)}{set_default(const runtime::PackedFunc value, bool allow_override=false)}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Generic\+Func}\& tvm\+::\+Generic\+Func\+::set\+\_\+default (
+\begin{DoxyParamCaption}
+\item[{const {\bf runtime\+::\+Packed\+Func}}]{value, }
+\item[{bool}]{allow\+\_\+override = {\ttfamily false}}
+\end{DoxyParamCaption}
+)}\hypertarget{classtvm_1_1GenericFunc_a97c34a40c5059bdda64494d61f50602d}{}\label{classtvm_1_1GenericFunc_a97c34a40c5059bdda64494d61f50602d}
+
+
+Set the default function implementaiton. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em value} & The default function \\
+\hline
+{\em allow\+\_\+override} & If true, this call may override a previously registered function. If false, an error will be logged if the call would override a previously registered function. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+reference to self. 
+\end{DoxyReturn}
+
+
+\subsection{Friends And Related Function Documentation}
+\index{tvm\+::\+Generic\+Func@{tvm\+::\+Generic\+Func}!Manager@{Manager}}
+\index{Manager@{Manager}!tvm\+::\+Generic\+Func@{tvm\+::\+Generic\+Func}}
+\subsubsection[{\texorpdfstring{Manager}{Manager}}]{\setlength{\rightskip}{0pt plus 5cm}friend struct Manager\hspace{0.3cm}{\ttfamily [friend]}}\hypertarget{classtvm_1_1GenericFunc_a1fd6b9bc3f72bb2b64e602de3982929d}{}\label{classtvm_1_1GenericFunc_a1fd6b9bc3f72bb2b64e602de3982929d}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+include/tvm/target/\hyperlink{generic__func_8h}{generic\+\_\+func.\+h}\end{DoxyCompactItemize}

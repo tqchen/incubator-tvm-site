@@ -1,0 +1,70 @@
+\hypertarget{classtvm_1_1arith_1_1IntSetAnalyzer}{}\section{tvm\+:\+:arith\+:\+:Int\+Set\+Analyzer Class Reference}
+\label{classtvm_1_1arith_1_1IntSetAnalyzer}\index{tvm\+::arith\+::\+Int\+Set\+Analyzer@{tvm\+::arith\+::\+Int\+Set\+Analyzer}}
+
+
+\hyperlink{classtvm_1_1Integer}{Integer} set analyzer.  
+
+
+
+
+{\ttfamily \#include $<$analyzer.\+h$>$}
+
+
+
+Collaboration diagram for tvm\+:\+:arith\+:\+:Int\+Set\+Analyzer\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=219pt]{classtvm_1_1arith_1_1IntSetAnalyzer__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classtvm_1_1arith_1_1IntSet}{Int\+Set} \hyperlink{classtvm_1_1arith_1_1IntSetAnalyzer_ac8784f523d61adffbded801b17d4c2bf}{operator()} (const \hyperlink{classtvm_1_1PrimExpr}{Prim\+Expr} \&expr, const \hyperlink{classtvm_1_1Map}{Map}$<$ Var, \hyperlink{classtvm_1_1arith_1_1IntSet}{Int\+Set} $>$ \&dom\+\_\+map)
+\begin{DoxyCompactList}\small\item\em Find a symbolic integer set that contains all possible values of expr given the domain of each variables. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+class \hyperlink{classtvm_1_1arith_1_1IntSetAnalyzer_a88d594816df596eed10643082b0d0805}{Analyzer}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\hyperlink{classtvm_1_1Integer}{Integer} set analyzer. 
+
+\subsection{Member Function Documentation}
+\index{tvm\+::arith\+::\+Int\+Set\+Analyzer@{tvm\+::arith\+::\+Int\+Set\+Analyzer}!operator()@{operator()}}
+\index{operator()@{operator()}!tvm\+::arith\+::\+Int\+Set\+Analyzer@{tvm\+::arith\+::\+Int\+Set\+Analyzer}}
+\subsubsection[{\texorpdfstring{operator()(const Prim\+Expr \&expr, const Map$<$ Var, Int\+Set $>$ \&dom\+\_\+map)}{operator()(const PrimExpr &expr, const Map< Var, IntSet > &dom_map)}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Int\+Set} tvm\+::arith\+::\+Int\+Set\+Analyzer\+::operator() (
+\begin{DoxyParamCaption}
+\item[{const {\bf Prim\+Expr} \&}]{expr, }
+\item[{const {\bf Map}$<$ Var, {\bf Int\+Set} $>$ \&}]{dom\+\_\+map}
+\end{DoxyParamCaption}
+)}\hypertarget{classtvm_1_1arith_1_1IntSetAnalyzer_ac8784f523d61adffbded801b17d4c2bf}{}\label{classtvm_1_1arith_1_1IntSetAnalyzer_ac8784f523d61adffbded801b17d4c2bf}
+
+
+Find a symbolic integer set that contains all possible values of expr given the domain of each variables. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em expr} & The expression of interest. \\
+\hline
+{\em dom\+\_\+map} & The domain map to indicate which variable to relax. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the result of the analysis. 
+\end{DoxyReturn}
+
+
+\subsection{Friends And Related Function Documentation}
+\index{tvm\+::arith\+::\+Int\+Set\+Analyzer@{tvm\+::arith\+::\+Int\+Set\+Analyzer}!Analyzer@{Analyzer}}
+\index{Analyzer@{Analyzer}!tvm\+::arith\+::\+Int\+Set\+Analyzer@{tvm\+::arith\+::\+Int\+Set\+Analyzer}}
+\subsubsection[{\texorpdfstring{Analyzer}{Analyzer}}]{\setlength{\rightskip}{0pt plus 5cm}friend class {\bf Analyzer}\hspace{0.3cm}{\ttfamily [friend]}}\hypertarget{classtvm_1_1arith_1_1IntSetAnalyzer_a88d594816df596eed10643082b0d0805}{}\label{classtvm_1_1arith_1_1IntSetAnalyzer_a88d594816df596eed10643082b0d0805}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+include/tvm/arith/\hyperlink{analyzer_8h}{analyzer.\+h}\end{DoxyCompactItemize}

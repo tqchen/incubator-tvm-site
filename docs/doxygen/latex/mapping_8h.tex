@@ -1,0 +1,37 @@
+\hypertarget{mapping_8h}{}\section{topi/include/topi/nn/mapping.h File Reference}
+\label{mapping_8h}\index{topi/include/topi/nn/mapping.\+h@{topi/include/topi/nn/mapping.\+h}}
+
+
+Mapping op constructions.  
+
+
+{\ttfamily \#include $<$tvm/te/operation.\+h$>$}\\*
+{\ttfamily \#include $<$topi/tags.\+h$>$}\\*
+{\ttfamily \#include $<$string$>$}\\*
+Include dependency graph for mapping.\+h\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{mapping_8h__incl}
+\end{center}
+\end{figure}
+\subsection*{Namespaces}
+\begin{DoxyCompactItemize}
+\item 
+ \hyperlink{namespacetopi}{topi}
+\item 
+ \hyperlink{namespacetopi_1_1nn}{topi\+::nn}
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classtvm_1_1te_1_1Tensor}{Tensor} \hyperlink{namespacetopi_1_1nn_ae9516b844130a2189ad2989b646ec2b1}{topi\+::nn\+::scale\+\_\+shift\+\_\+nchw} (const \hyperlink{classtvm_1_1te_1_1Tensor}{Tensor} \&x, const \hyperlink{classtvm_1_1te_1_1Tensor}{Tensor} \&scale, const \hyperlink{classtvm_1_1te_1_1Tensor}{Tensor} \&shift, std\+::string name=\char`\"{}Scale\+Shift\char`\"{}, std\+::string tag=k\+Broadcast)
+\begin{DoxyCompactList}\small\item\em Scale and shift with N\+C\+HW order. \end{DoxyCompactList}\item 
+\hyperlink{classtvm_1_1te_1_1Tensor}{Tensor} \hyperlink{namespacetopi_1_1nn_ab19179f1b4a73a42b17ddf2f5fea46fc}{topi\+::nn\+::scale\+\_\+shift\+\_\+nhwc} (const \hyperlink{classtvm_1_1te_1_1Tensor}{Tensor} \&x, const \hyperlink{classtvm_1_1te_1_1Tensor}{Tensor} \&scale, const \hyperlink{classtvm_1_1te_1_1Tensor}{Tensor} \&shift, std\+::string name=\char`\"{}Scale\+Shift\char`\"{}, std\+::string tag=k\+Broadcast)
+\begin{DoxyCompactList}\small\item\em Scale and shift with N\+H\+WC order. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Mapping op constructions. 
+

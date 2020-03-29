@@ -1,0 +1,76 @@
+\hypertarget{target_8h}{}\section{include/tvm/target/target.h File Reference}
+\label{target_8h}\index{include/tvm/target/target.\+h@{include/tvm/target/target.\+h}}
+
+
+Compilation target object.  
+
+
+{\ttfamily \#include $<$tvm/support/with.\+h$>$}\\*
+{\ttfamily \#include $<$tvm/node/container.\+h$>$}\\*
+{\ttfamily \#include $<$tvm/ir/expr.\+h$>$}\\*
+{\ttfamily \#include $<$string$>$}\\*
+{\ttfamily \#include $<$vector$>$}\\*
+{\ttfamily \#include $<$unordered\+\_\+set$>$}\\*
+{\ttfamily \#include $<$utility$>$}\\*
+Include dependency graph for target.\+h\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{target_8h__incl}
+\end{center}
+\end{figure}
+This graph shows which files directly or indirectly include this file\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{target_8h__dep__incl}
+\end{center}
+\end{figure}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \hyperlink{classtvm_1_1TargetNode}{tvm\+::\+Target\+Node}
+\begin{DoxyCompactList}\small\item\em Compilation target. \end{DoxyCompactList}\item 
+class \hyperlink{classtvm_1_1Target}{tvm\+::\+Target}
+\begin{DoxyCompactList}\small\item\em Managed reference class to \hyperlink{classtvm_1_1TargetNode}{Target\+Node}. \end{DoxyCompactList}\item 
+class \hyperlink{classtvm_1_1BuildConfigNode}{tvm\+::\+Build\+Config\+Node}
+\begin{DoxyCompactList}\small\item\em Container for build configuration options. \end{DoxyCompactList}\item 
+class \hyperlink{classtvm_1_1BuildConfig}{tvm\+::\+Build\+Config}
+\begin{DoxyCompactList}\small\item\em Build configuration for compilations. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Namespaces}
+\begin{DoxyCompactItemize}
+\item 
+ \hyperlink{namespacetvm}{tvm}
+\item 
+ \hyperlink{namespacetvm_1_1target}{tvm\+::target}
+\begin{DoxyCompactList}\small\item\em This namespace provides functions to construct \hyperlink{classtvm_1_1Target}{Target} instances. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+Target \hyperlink{namespacetvm_1_1target_a8d851f48166f0f7ccf3c709e6271cb7d}{tvm\+::target\+::llvm} (const std\+::vector$<$ std\+::string $>$ \&options=std\+::vector$<$ std\+::string $>$())
+\item 
+Target \hyperlink{namespacetvm_1_1target_ae035a32c24d135c0ba65303bdbd87416}{tvm\+::target\+::cuda} (const std\+::vector$<$ std\+::string $>$ \&options=std\+::vector$<$ std\+::string $>$())
+\item 
+Target \hyperlink{namespacetvm_1_1target_afd36efca8e3ce77399559195d9e79a4a}{tvm\+::target\+::rocm} (const std\+::vector$<$ std\+::string $>$ \&options=std\+::vector$<$ std\+::string $>$())
+\item 
+Target \hyperlink{namespacetvm_1_1target_a34d788fb3230e4631e0a90430063c5d1}{tvm\+::target\+::opencl} (const std\+::vector$<$ std\+::string $>$ \&options=std\+::vector$<$ std\+::string $>$())
+\item 
+Target \hyperlink{namespacetvm_1_1target_a95b77120d71f2fde84f95f9d01252834}{tvm\+::target\+::metal} (const std\+::vector$<$ std\+::string $>$ \&options=std\+::vector$<$ std\+::string $>$())
+\item 
+Target \hyperlink{namespacetvm_1_1target_a020e427a235a2cc54c1c997a5567e595}{tvm\+::target\+::rasp} (const std\+::vector$<$ std\+::string $>$ \&options=std\+::vector$<$ std\+::string $>$())
+\item 
+Target \hyperlink{namespacetvm_1_1target_ae53344656c8a18717e2b75823a4e7308}{tvm\+::target\+::mali} (const std\+::vector$<$ std\+::string $>$ \&options=std\+::vector$<$ std\+::string $>$())
+\item 
+Target \hyperlink{namespacetvm_1_1target_aaa091303c33c4a354097be9ac7e2e4f8}{tvm\+::target\+::intel\+\_\+graphics} (const std\+::vector$<$ std\+::string $>$ \&options=std\+::vector$<$ std\+::string $>$())
+\item 
+Target \hyperlink{namespacetvm_1_1target_a786980129073f38d1f1355f92da2b8da}{tvm\+::target\+::stackvm} (const std\+::vector$<$ std\+::string $>$ \&options=std\+::vector$<$ std\+::string $>$())
+\item 
+Target \hyperlink{namespacetvm_1_1target_a1fece6d42e0638ab5cd4b6c364c47984}{tvm\+::target\+::ext\+\_\+dev} (const std\+::vector$<$ std\+::string $>$ \&options=std\+::vector$<$ std\+::string $>$())
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Compilation target object. 
+

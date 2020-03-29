@@ -1,0 +1,147 @@
+\hypertarget{classtvm_1_1tir_1_1ShuffleNode}{}\section{tvm\+:\+:tir\+:\+:Shuffle\+Node Class Reference}
+\label{classtvm_1_1tir_1_1ShuffleNode}\index{tvm\+::tir\+::\+Shuffle\+Node@{tvm\+::tir\+::\+Shuffle\+Node}}
+
+
+Shuffle instruction. vec = concat(vectors) result = (vec\mbox{[}indices\mbox{[}0\mbox{]}\mbox{]}, vec\mbox{[}indices\mbox{[}1\mbox{]}\mbox{]} ...)  
+
+
+
+
+{\ttfamily \#include $<$expr.\+h$>$}
+
+
+
+Inheritance diagram for tvm\+:\+:tir\+:\+:Shuffle\+Node\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{classtvm_1_1tir_1_1ShuffleNode__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for tvm\+:\+:tir\+:\+:Shuffle\+Node\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classtvm_1_1tir_1_1ShuffleNode__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{classtvm_1_1tir_1_1ShuffleNode_af764cbab54a79f4f7f3d5e1ddd9e1e5f}{Visit\+Attrs} (\hyperlink{classtvm_1_1AttrVisitor}{Attr\+Visitor} $\ast$v)
+\item 
+bool \hyperlink{classtvm_1_1tir_1_1ShuffleNode_a2e6ed6e12430264b802e5a86d7833080}{S\+Equal\+Reduce} (const \hyperlink{classtvm_1_1tir_1_1ShuffleNode}{Shuffle\+Node} $\ast$other, \hyperlink{classtvm_1_1SEqualReducer}{S\+Equal\+Reducer} equal) const 
+\item 
+void \hyperlink{classtvm_1_1tir_1_1ShuffleNode_ad9b879bb15015dccc8fc93918ba41e29}{S\+Hash\+Reduce} (\hyperlink{classtvm_1_1SHashReducer}{S\+Hash\+Reducer} hash\+\_\+reduce) const 
+\item 
+\hyperlink{classtvm_1_1tir_1_1ShuffleNode_a980a4e844989e3325200c7d0a5303f9d}{T\+V\+M\+\_\+\+D\+E\+C\+L\+A\+R\+E\+\_\+\+F\+I\+N\+A\+L\+\_\+\+O\+B\+J\+E\+C\+T\+\_\+\+I\+N\+FO} (\hyperlink{classtvm_1_1tir_1_1ShuffleNode}{Shuffle\+Node}, \hyperlink{classtvm_1_1PrimExprNode}{Prim\+Expr\+Node})
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \hyperlink{classtvm_1_1PrimExpr}{Prim\+Expr} \hyperlink{classtvm_1_1tir_1_1ShuffleNode_a7e8f0acfc91e59f25d5c054576a95c85}{make} (\hyperlink{classtvm_1_1Array}{Array}$<$ \hyperlink{classtvm_1_1PrimExpr}{Prim\+Expr} $>$ \hyperlink{classtvm_1_1tir_1_1ShuffleNode_aa444b61cf671ef31060535c61746ab6c}{vectors}, \hyperlink{classtvm_1_1Array}{Array}$<$ \hyperlink{classtvm_1_1PrimExpr}{Prim\+Expr} $>$ \hyperlink{classtvm_1_1tir_1_1ShuffleNode_a3e4a328452a531b67642117f023e8a0e}{indices})
+\item 
+static \hyperlink{classtvm_1_1PrimExpr}{Prim\+Expr} \hyperlink{classtvm_1_1tir_1_1ShuffleNode_aff50804874dfea17238bfcb84660fe4b}{make\+\_\+concat} (\hyperlink{classtvm_1_1Array}{Array}$<$ \hyperlink{classtvm_1_1PrimExpr}{Prim\+Expr} $>$ \hyperlink{classtvm_1_1tir_1_1ShuffleNode_aa444b61cf671ef31060535c61746ab6c}{vectors})
+\item 
+static \hyperlink{classtvm_1_1PrimExpr}{Prim\+Expr} \hyperlink{classtvm_1_1tir_1_1ShuffleNode_ae4523770814267bf73788ef9ecaf6417}{make\+\_\+extract\+\_\+element} (\hyperlink{classtvm_1_1PrimExpr}{Prim\+Expr} vector, int index)
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classtvm_1_1Array}{Array}$<$ \hyperlink{classtvm_1_1PrimExpr}{Prim\+Expr} $>$ \hyperlink{classtvm_1_1tir_1_1ShuffleNode_aa444b61cf671ef31060535c61746ab6c}{vectors}
+\begin{DoxyCompactList}\small\item\em the input vectors. \end{DoxyCompactList}\item 
+\hyperlink{classtvm_1_1Array}{Array}$<$ \hyperlink{classtvm_1_1PrimExpr}{Prim\+Expr} $>$ \hyperlink{classtvm_1_1tir_1_1ShuffleNode_a3e4a328452a531b67642117f023e8a0e}{indices}
+\begin{DoxyCompactList}\small\item\em The indices of each element. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static constexpr const char $\ast$ \hyperlink{classtvm_1_1tir_1_1ShuffleNode_a401554050461c44b5cf4f94e420c4c79}{\+\_\+type\+\_\+key} = \char`\"{}Shuffle\char`\"{}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Shuffle instruction. vec = concat(vectors) result = (vec\mbox{[}indices\mbox{[}0\mbox{]}\mbox{]}, vec\mbox{[}indices\mbox{[}1\mbox{]}\mbox{]} ...) 
+
+\subsection{Member Function Documentation}
+\index{tvm\+::tir\+::\+Shuffle\+Node@{tvm\+::tir\+::\+Shuffle\+Node}!make@{make}}
+\index{make@{make}!tvm\+::tir\+::\+Shuffle\+Node@{tvm\+::tir\+::\+Shuffle\+Node}}
+\subsubsection[{\texorpdfstring{make(\+Array$<$ Prim\+Expr $>$ vectors, Array$<$ Prim\+Expr $>$ indices)}{make(Array< PrimExpr > vectors, Array< PrimExpr > indices)}}]{\setlength{\rightskip}{0pt plus 5cm}static {\bf Prim\+Expr} tvm\+::tir\+::\+Shuffle\+Node\+::make (
+\begin{DoxyParamCaption}
+\item[{{\bf Array}$<$ {\bf Prim\+Expr} $>$}]{vectors, }
+\item[{{\bf Array}$<$ {\bf Prim\+Expr} $>$}]{indices}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}\hypertarget{classtvm_1_1tir_1_1ShuffleNode_a7e8f0acfc91e59f25d5c054576a95c85}{}\label{classtvm_1_1tir_1_1ShuffleNode_a7e8f0acfc91e59f25d5c054576a95c85}
+\index{tvm\+::tir\+::\+Shuffle\+Node@{tvm\+::tir\+::\+Shuffle\+Node}!make\+\_\+concat@{make\+\_\+concat}}
+\index{make\+\_\+concat@{make\+\_\+concat}!tvm\+::tir\+::\+Shuffle\+Node@{tvm\+::tir\+::\+Shuffle\+Node}}
+\subsubsection[{\texorpdfstring{make\+\_\+concat(\+Array$<$ Prim\+Expr $>$ vectors)}{make_concat(Array< PrimExpr > vectors)}}]{\setlength{\rightskip}{0pt plus 5cm}static {\bf Prim\+Expr} tvm\+::tir\+::\+Shuffle\+Node\+::make\+\_\+concat (
+\begin{DoxyParamCaption}
+\item[{{\bf Array}$<$ {\bf Prim\+Expr} $>$}]{vectors}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}\hypertarget{classtvm_1_1tir_1_1ShuffleNode_aff50804874dfea17238bfcb84660fe4b}{}\label{classtvm_1_1tir_1_1ShuffleNode_aff50804874dfea17238bfcb84660fe4b}
+\index{tvm\+::tir\+::\+Shuffle\+Node@{tvm\+::tir\+::\+Shuffle\+Node}!make\+\_\+extract\+\_\+element@{make\+\_\+extract\+\_\+element}}
+\index{make\+\_\+extract\+\_\+element@{make\+\_\+extract\+\_\+element}!tvm\+::tir\+::\+Shuffle\+Node@{tvm\+::tir\+::\+Shuffle\+Node}}
+\subsubsection[{\texorpdfstring{make\+\_\+extract\+\_\+element(\+Prim\+Expr vector, int index)}{make_extract_element(PrimExpr vector, int index)}}]{\setlength{\rightskip}{0pt plus 5cm}static {\bf Prim\+Expr} tvm\+::tir\+::\+Shuffle\+Node\+::make\+\_\+extract\+\_\+element (
+\begin{DoxyParamCaption}
+\item[{{\bf Prim\+Expr}}]{vector, }
+\item[{int}]{index}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}\hypertarget{classtvm_1_1tir_1_1ShuffleNode_ae4523770814267bf73788ef9ecaf6417}{}\label{classtvm_1_1tir_1_1ShuffleNode_ae4523770814267bf73788ef9ecaf6417}
+\index{tvm\+::tir\+::\+Shuffle\+Node@{tvm\+::tir\+::\+Shuffle\+Node}!S\+Equal\+Reduce@{S\+Equal\+Reduce}}
+\index{S\+Equal\+Reduce@{S\+Equal\+Reduce}!tvm\+::tir\+::\+Shuffle\+Node@{tvm\+::tir\+::\+Shuffle\+Node}}
+\subsubsection[{\texorpdfstring{S\+Equal\+Reduce(const Shuffle\+Node $\ast$other, S\+Equal\+Reducer equal) const }{SEqualReduce(const ShuffleNode *other, SEqualReducer equal) const }}]{\setlength{\rightskip}{0pt plus 5cm}bool tvm\+::tir\+::\+Shuffle\+Node\+::\+S\+Equal\+Reduce (
+\begin{DoxyParamCaption}
+\item[{const {\bf Shuffle\+Node} $\ast$}]{other, }
+\item[{{\bf S\+Equal\+Reducer}}]{equal}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classtvm_1_1tir_1_1ShuffleNode_a2e6ed6e12430264b802e5a86d7833080}{}\label{classtvm_1_1tir_1_1ShuffleNode_a2e6ed6e12430264b802e5a86d7833080}
+\index{tvm\+::tir\+::\+Shuffle\+Node@{tvm\+::tir\+::\+Shuffle\+Node}!S\+Hash\+Reduce@{S\+Hash\+Reduce}}
+\index{S\+Hash\+Reduce@{S\+Hash\+Reduce}!tvm\+::tir\+::\+Shuffle\+Node@{tvm\+::tir\+::\+Shuffle\+Node}}
+\subsubsection[{\texorpdfstring{S\+Hash\+Reduce(\+S\+Hash\+Reducer hash\+\_\+reduce) const }{SHashReduce(SHashReducer hash_reduce) const }}]{\setlength{\rightskip}{0pt plus 5cm}void tvm\+::tir\+::\+Shuffle\+Node\+::\+S\+Hash\+Reduce (
+\begin{DoxyParamCaption}
+\item[{{\bf S\+Hash\+Reducer}}]{hash\+\_\+reduce}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classtvm_1_1tir_1_1ShuffleNode_ad9b879bb15015dccc8fc93918ba41e29}{}\label{classtvm_1_1tir_1_1ShuffleNode_ad9b879bb15015dccc8fc93918ba41e29}
+\index{tvm\+::tir\+::\+Shuffle\+Node@{tvm\+::tir\+::\+Shuffle\+Node}!T\+V\+M\+\_\+\+D\+E\+C\+L\+A\+R\+E\+\_\+\+F\+I\+N\+A\+L\+\_\+\+O\+B\+J\+E\+C\+T\+\_\+\+I\+N\+FO@{T\+V\+M\+\_\+\+D\+E\+C\+L\+A\+R\+E\+\_\+\+F\+I\+N\+A\+L\+\_\+\+O\+B\+J\+E\+C\+T\+\_\+\+I\+N\+FO}}
+\index{T\+V\+M\+\_\+\+D\+E\+C\+L\+A\+R\+E\+\_\+\+F\+I\+N\+A\+L\+\_\+\+O\+B\+J\+E\+C\+T\+\_\+\+I\+N\+FO@{T\+V\+M\+\_\+\+D\+E\+C\+L\+A\+R\+E\+\_\+\+F\+I\+N\+A\+L\+\_\+\+O\+B\+J\+E\+C\+T\+\_\+\+I\+N\+FO}!tvm\+::tir\+::\+Shuffle\+Node@{tvm\+::tir\+::\+Shuffle\+Node}}
+\subsubsection[{\texorpdfstring{T\+V\+M\+\_\+\+D\+E\+C\+L\+A\+R\+E\+\_\+\+F\+I\+N\+A\+L\+\_\+\+O\+B\+J\+E\+C\+T\+\_\+\+I\+N\+F\+O(\+Shuffle\+Node, Prim\+Expr\+Node)}{TVM_DECLARE_FINAL_OBJECT_INFO(ShuffleNode, PrimExprNode)}}]{\setlength{\rightskip}{0pt plus 5cm}tvm\+::tir\+::\+Shuffle\+Node\+::\+T\+V\+M\+\_\+\+D\+E\+C\+L\+A\+R\+E\+\_\+\+F\+I\+N\+A\+L\+\_\+\+O\+B\+J\+E\+C\+T\+\_\+\+I\+N\+FO (
+\begin{DoxyParamCaption}
+\item[{{\bf Shuffle\+Node}}]{, }
+\item[{{\bf Prim\+Expr\+Node}}]{}
+\end{DoxyParamCaption}
+)}\hypertarget{classtvm_1_1tir_1_1ShuffleNode_a980a4e844989e3325200c7d0a5303f9d}{}\label{classtvm_1_1tir_1_1ShuffleNode_a980a4e844989e3325200c7d0a5303f9d}
+\index{tvm\+::tir\+::\+Shuffle\+Node@{tvm\+::tir\+::\+Shuffle\+Node}!Visit\+Attrs@{Visit\+Attrs}}
+\index{Visit\+Attrs@{Visit\+Attrs}!tvm\+::tir\+::\+Shuffle\+Node@{tvm\+::tir\+::\+Shuffle\+Node}}
+\subsubsection[{\texorpdfstring{Visit\+Attrs(\+Attr\+Visitor $\ast$v)}{VisitAttrs(AttrVisitor *v)}}]{\setlength{\rightskip}{0pt plus 5cm}void tvm\+::tir\+::\+Shuffle\+Node\+::\+Visit\+Attrs (
+\begin{DoxyParamCaption}
+\item[{{\bf Attr\+Visitor} $\ast$}]{v}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classtvm_1_1tir_1_1ShuffleNode_af764cbab54a79f4f7f3d5e1ddd9e1e5f}{}\label{classtvm_1_1tir_1_1ShuffleNode_af764cbab54a79f4f7f3d5e1ddd9e1e5f}
+
+
+\subsection{Member Data Documentation}
+\index{tvm\+::tir\+::\+Shuffle\+Node@{tvm\+::tir\+::\+Shuffle\+Node}!\+\_\+type\+\_\+key@{\+\_\+type\+\_\+key}}
+\index{\+\_\+type\+\_\+key@{\+\_\+type\+\_\+key}!tvm\+::tir\+::\+Shuffle\+Node@{tvm\+::tir\+::\+Shuffle\+Node}}
+\subsubsection[{\texorpdfstring{\+\_\+type\+\_\+key}{_type_key}}]{\setlength{\rightskip}{0pt plus 5cm}constexpr const char$\ast$ tvm\+::tir\+::\+Shuffle\+Node\+::\+\_\+type\+\_\+key = \char`\"{}Shuffle\char`\"{}\hspace{0.3cm}{\ttfamily [static]}}\hypertarget{classtvm_1_1tir_1_1ShuffleNode_a401554050461c44b5cf4f94e420c4c79}{}\label{classtvm_1_1tir_1_1ShuffleNode_a401554050461c44b5cf4f94e420c4c79}
+\index{tvm\+::tir\+::\+Shuffle\+Node@{tvm\+::tir\+::\+Shuffle\+Node}!indices@{indices}}
+\index{indices@{indices}!tvm\+::tir\+::\+Shuffle\+Node@{tvm\+::tir\+::\+Shuffle\+Node}}
+\subsubsection[{\texorpdfstring{indices}{indices}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Array}$<${\bf Prim\+Expr}$>$ tvm\+::tir\+::\+Shuffle\+Node\+::indices}\hypertarget{classtvm_1_1tir_1_1ShuffleNode_a3e4a328452a531b67642117f023e8a0e}{}\label{classtvm_1_1tir_1_1ShuffleNode_a3e4a328452a531b67642117f023e8a0e}
+
+
+The indices of each element. 
+
+\index{tvm\+::tir\+::\+Shuffle\+Node@{tvm\+::tir\+::\+Shuffle\+Node}!vectors@{vectors}}
+\index{vectors@{vectors}!tvm\+::tir\+::\+Shuffle\+Node@{tvm\+::tir\+::\+Shuffle\+Node}}
+\subsubsection[{\texorpdfstring{vectors}{vectors}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Array}$<${\bf Prim\+Expr}$>$ tvm\+::tir\+::\+Shuffle\+Node\+::vectors}\hypertarget{classtvm_1_1tir_1_1ShuffleNode_aa444b61cf671ef31060535c61746ab6c}{}\label{classtvm_1_1tir_1_1ShuffleNode_aa444b61cf671ef31060535c61746ab6c}
+
+
+the input vectors. 
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+include/tvm/tir/\hyperlink{tir_2expr_8h}{expr.\+h}\end{DoxyCompactItemize}

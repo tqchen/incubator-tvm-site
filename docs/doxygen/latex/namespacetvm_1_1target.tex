@@ -1,0 +1,136 @@
+\hypertarget{namespacetvm_1_1target}{}\section{tvm\+:\+:target Namespace Reference}
+\label{namespacetvm_1_1target}\index{tvm\+::target@{tvm\+::target}}
+
+
+This namespace provides functions to construct \hyperlink{classtvm_1_1Target}{Target} instances.  
+
+
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classtvm_1_1Target}{Target} \hyperlink{namespacetvm_1_1target_a8d851f48166f0f7ccf3c709e6271cb7d}{llvm} (const std\+::vector$<$ std\+::string $>$ \&options=std\+::vector$<$ std\+::string $>$())
+\item 
+\hyperlink{classtvm_1_1Target}{Target} \hyperlink{namespacetvm_1_1target_ae035a32c24d135c0ba65303bdbd87416}{cuda} (const std\+::vector$<$ std\+::string $>$ \&options=std\+::vector$<$ std\+::string $>$())
+\item 
+\hyperlink{classtvm_1_1Target}{Target} \hyperlink{namespacetvm_1_1target_afd36efca8e3ce77399559195d9e79a4a}{rocm} (const std\+::vector$<$ std\+::string $>$ \&options=std\+::vector$<$ std\+::string $>$())
+\item 
+\hyperlink{classtvm_1_1Target}{Target} \hyperlink{namespacetvm_1_1target_a34d788fb3230e4631e0a90430063c5d1}{opencl} (const std\+::vector$<$ std\+::string $>$ \&options=std\+::vector$<$ std\+::string $>$())
+\item 
+\hyperlink{classtvm_1_1Target}{Target} \hyperlink{namespacetvm_1_1target_a95b77120d71f2fde84f95f9d01252834}{metal} (const std\+::vector$<$ std\+::string $>$ \&options=std\+::vector$<$ std\+::string $>$())
+\item 
+\hyperlink{classtvm_1_1Target}{Target} \hyperlink{namespacetvm_1_1target_a020e427a235a2cc54c1c997a5567e595}{rasp} (const std\+::vector$<$ std\+::string $>$ \&options=std\+::vector$<$ std\+::string $>$())
+\item 
+\hyperlink{classtvm_1_1Target}{Target} \hyperlink{namespacetvm_1_1target_ae53344656c8a18717e2b75823a4e7308}{mali} (const std\+::vector$<$ std\+::string $>$ \&options=std\+::vector$<$ std\+::string $>$())
+\item 
+\hyperlink{classtvm_1_1Target}{Target} \hyperlink{namespacetvm_1_1target_aaa091303c33c4a354097be9ac7e2e4f8}{intel\+\_\+graphics} (const std\+::vector$<$ std\+::string $>$ \&options=std\+::vector$<$ std\+::string $>$())
+\item 
+\hyperlink{classtvm_1_1Target}{Target} \hyperlink{namespacetvm_1_1target_a786980129073f38d1f1355f92da2b8da}{stackvm} (const std\+::vector$<$ std\+::string $>$ \&options=std\+::vector$<$ std\+::string $>$())
+\item 
+\hyperlink{classtvm_1_1Target}{Target} \hyperlink{namespacetvm_1_1target_a1fece6d42e0638ab5cd4b6c364c47984}{ext\+\_\+dev} (const std\+::vector$<$ std\+::string $>$ \&options=std\+::vector$<$ std\+::string $>$())
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+This namespace provides functions to construct \hyperlink{classtvm_1_1Target}{Target} instances. 
+
+\subsection{Function Documentation}
+\index{tvm\+::target@{tvm\+::target}!cuda@{cuda}}
+\index{cuda@{cuda}!tvm\+::target@{tvm\+::target}}
+\subsubsection[{\texorpdfstring{cuda(const std\+::vector$<$ std\+::string $>$ \&options=std\+::vector$<$ std\+::string $>$())}{cuda(const std::vector< std::string > &options=std::vector< std::string >())}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Target} tvm\+::target\+::cuda (
+\begin{DoxyParamCaption}
+\item[{const std\+::vector$<$ std\+::string $>$ \&}]{options = {\ttfamily std\+:\+:vector$<$~std\+:\+:string~$>$()}}
+\end{DoxyParamCaption}
+)}\hypertarget{namespacetvm_1_1target_ae035a32c24d135c0ba65303bdbd87416}{}\label{namespacetvm_1_1target_ae035a32c24d135c0ba65303bdbd87416}
+\begin{DoxyReturn}{Returns}
+A target for C\+U\+DA 
+\end{DoxyReturn}
+\index{tvm\+::target@{tvm\+::target}!ext\+\_\+dev@{ext\+\_\+dev}}
+\index{ext\+\_\+dev@{ext\+\_\+dev}!tvm\+::target@{tvm\+::target}}
+\subsubsection[{\texorpdfstring{ext\+\_\+dev(const std\+::vector$<$ std\+::string $>$ \&options=std\+::vector$<$ std\+::string $>$())}{ext_dev(const std::vector< std::string > &options=std::vector< std::string >())}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Target} tvm\+::target\+::ext\+\_\+dev (
+\begin{DoxyParamCaption}
+\item[{const std\+::vector$<$ std\+::string $>$ \&}]{options = {\ttfamily std\+:\+:vector$<$~std\+:\+:string~$>$()}}
+\end{DoxyParamCaption}
+)}\hypertarget{namespacetvm_1_1target_a1fece6d42e0638ab5cd4b6c364c47984}{}\label{namespacetvm_1_1target_a1fece6d42e0638ab5cd4b6c364c47984}
+\begin{DoxyReturn}{Returns}
+A target for external device 
+\end{DoxyReturn}
+\index{tvm\+::target@{tvm\+::target}!intel\+\_\+graphics@{intel\+\_\+graphics}}
+\index{intel\+\_\+graphics@{intel\+\_\+graphics}!tvm\+::target@{tvm\+::target}}
+\subsubsection[{\texorpdfstring{intel\+\_\+graphics(const std\+::vector$<$ std\+::string $>$ \&options=std\+::vector$<$ std\+::string $>$())}{intel_graphics(const std::vector< std::string > &options=std::vector< std::string >())}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Target} tvm\+::target\+::intel\+\_\+graphics (
+\begin{DoxyParamCaption}
+\item[{const std\+::vector$<$ std\+::string $>$ \&}]{options = {\ttfamily std\+:\+:vector$<$~std\+:\+:string~$>$()}}
+\end{DoxyParamCaption}
+)}\hypertarget{namespacetvm_1_1target_aaa091303c33c4a354097be9ac7e2e4f8}{}\label{namespacetvm_1_1target_aaa091303c33c4a354097be9ac7e2e4f8}
+\begin{DoxyReturn}{Returns}
+A target for Intel Graphics 
+\end{DoxyReturn}
+\index{tvm\+::target@{tvm\+::target}!llvm@{llvm}}
+\index{llvm@{llvm}!tvm\+::target@{tvm\+::target}}
+\subsubsection[{\texorpdfstring{llvm(const std\+::vector$<$ std\+::string $>$ \&options=std\+::vector$<$ std\+::string $>$())}{llvm(const std::vector< std::string > &options=std::vector< std::string >())}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Target} tvm\+::target\+::llvm (
+\begin{DoxyParamCaption}
+\item[{const std\+::vector$<$ std\+::string $>$ \&}]{options = {\ttfamily std\+:\+:vector$<$~std\+:\+:string~$>$()}}
+\end{DoxyParamCaption}
+)}\hypertarget{namespacetvm_1_1target_a8d851f48166f0f7ccf3c709e6271cb7d}{}\label{namespacetvm_1_1target_a8d851f48166f0f7ccf3c709e6271cb7d}
+\begin{DoxyReturn}{Returns}
+A target for L\+L\+VM 
+\end{DoxyReturn}
+\index{tvm\+::target@{tvm\+::target}!mali@{mali}}
+\index{mali@{mali}!tvm\+::target@{tvm\+::target}}
+\subsubsection[{\texorpdfstring{mali(const std\+::vector$<$ std\+::string $>$ \&options=std\+::vector$<$ std\+::string $>$())}{mali(const std::vector< std::string > &options=std::vector< std::string >())}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Target} tvm\+::target\+::mali (
+\begin{DoxyParamCaption}
+\item[{const std\+::vector$<$ std\+::string $>$ \&}]{options = {\ttfamily std\+:\+:vector$<$~std\+:\+:string~$>$()}}
+\end{DoxyParamCaption}
+)}\hypertarget{namespacetvm_1_1target_ae53344656c8a18717e2b75823a4e7308}{}\label{namespacetvm_1_1target_ae53344656c8a18717e2b75823a4e7308}
+\begin{DoxyReturn}{Returns}
+A target for Mali 
+\end{DoxyReturn}
+\index{tvm\+::target@{tvm\+::target}!metal@{metal}}
+\index{metal@{metal}!tvm\+::target@{tvm\+::target}}
+\subsubsection[{\texorpdfstring{metal(const std\+::vector$<$ std\+::string $>$ \&options=std\+::vector$<$ std\+::string $>$())}{metal(const std::vector< std::string > &options=std::vector< std::string >())}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Target} tvm\+::target\+::metal (
+\begin{DoxyParamCaption}
+\item[{const std\+::vector$<$ std\+::string $>$ \&}]{options = {\ttfamily std\+:\+:vector$<$~std\+:\+:string~$>$()}}
+\end{DoxyParamCaption}
+)}\hypertarget{namespacetvm_1_1target_a95b77120d71f2fde84f95f9d01252834}{}\label{namespacetvm_1_1target_a95b77120d71f2fde84f95f9d01252834}
+\begin{DoxyReturn}{Returns}
+A target for Metal 
+\end{DoxyReturn}
+\index{tvm\+::target@{tvm\+::target}!opencl@{opencl}}
+\index{opencl@{opencl}!tvm\+::target@{tvm\+::target}}
+\subsubsection[{\texorpdfstring{opencl(const std\+::vector$<$ std\+::string $>$ \&options=std\+::vector$<$ std\+::string $>$())}{opencl(const std::vector< std::string > &options=std::vector< std::string >())}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Target} tvm\+::target\+::opencl (
+\begin{DoxyParamCaption}
+\item[{const std\+::vector$<$ std\+::string $>$ \&}]{options = {\ttfamily std\+:\+:vector$<$~std\+:\+:string~$>$()}}
+\end{DoxyParamCaption}
+)}\hypertarget{namespacetvm_1_1target_a34d788fb3230e4631e0a90430063c5d1}{}\label{namespacetvm_1_1target_a34d788fb3230e4631e0a90430063c5d1}
+\begin{DoxyReturn}{Returns}
+A target for Open\+CL 
+\end{DoxyReturn}
+\index{tvm\+::target@{tvm\+::target}!rasp@{rasp}}
+\index{rasp@{rasp}!tvm\+::target@{tvm\+::target}}
+\subsubsection[{\texorpdfstring{rasp(const std\+::vector$<$ std\+::string $>$ \&options=std\+::vector$<$ std\+::string $>$())}{rasp(const std::vector< std::string > &options=std::vector< std::string >())}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Target} tvm\+::target\+::rasp (
+\begin{DoxyParamCaption}
+\item[{const std\+::vector$<$ std\+::string $>$ \&}]{options = {\ttfamily std\+:\+:vector$<$~std\+:\+:string~$>$()}}
+\end{DoxyParamCaption}
+)}\hypertarget{namespacetvm_1_1target_a020e427a235a2cc54c1c997a5567e595}{}\label{namespacetvm_1_1target_a020e427a235a2cc54c1c997a5567e595}
+\begin{DoxyReturn}{Returns}
+A target for rasp 
+\end{DoxyReturn}
+\index{tvm\+::target@{tvm\+::target}!rocm@{rocm}}
+\index{rocm@{rocm}!tvm\+::target@{tvm\+::target}}
+\subsubsection[{\texorpdfstring{rocm(const std\+::vector$<$ std\+::string $>$ \&options=std\+::vector$<$ std\+::string $>$())}{rocm(const std::vector< std::string > &options=std::vector< std::string >())}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Target} tvm\+::target\+::rocm (
+\begin{DoxyParamCaption}
+\item[{const std\+::vector$<$ std\+::string $>$ \&}]{options = {\ttfamily std\+:\+:vector$<$~std\+:\+:string~$>$()}}
+\end{DoxyParamCaption}
+)}\hypertarget{namespacetvm_1_1target_afd36efca8e3ce77399559195d9e79a4a}{}\label{namespacetvm_1_1target_afd36efca8e3ce77399559195d9e79a4a}
+\begin{DoxyReturn}{Returns}
+A target for R\+O\+Cm 
+\end{DoxyReturn}
+\index{tvm\+::target@{tvm\+::target}!stackvm@{stackvm}}
+\index{stackvm@{stackvm}!tvm\+::target@{tvm\+::target}}
+\subsubsection[{\texorpdfstring{stackvm(const std\+::vector$<$ std\+::string $>$ \&options=std\+::vector$<$ std\+::string $>$())}{stackvm(const std::vector< std::string > &options=std::vector< std::string >())}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Target} tvm\+::target\+::stackvm (
+\begin{DoxyParamCaption}
+\item[{const std\+::vector$<$ std\+::string $>$ \&}]{options = {\ttfamily std\+:\+:vector$<$~std\+:\+:string~$>$()}}
+\end{DoxyParamCaption}
+)}\hypertarget{namespacetvm_1_1target_a786980129073f38d1f1355f92da2b8da}{}\label{namespacetvm_1_1target_a786980129073f38d1f1355f92da2b8da}
+\begin{DoxyReturn}{Returns}
+A target for stackvm 
+\end{DoxyReturn}

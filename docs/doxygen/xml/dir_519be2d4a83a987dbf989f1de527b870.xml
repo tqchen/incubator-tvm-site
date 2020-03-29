@@ -1,0 +1,22 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="dir_519be2d4a83a987dbf989f1de527b870" kind="dir">
+    <compoundname>include/tvm/relay/attrs</compoundname>
+    <innerfile refid="algorithm_8h">algorithm.h</innerfile>
+    <innerfile refid="annotation_8h">annotation.h</innerfile>
+    <innerfile refid="bitserial_8h">bitserial.h</innerfile>
+    <innerfile refid="debug_8h">debug.h</innerfile>
+    <innerfile refid="device__copy_8h">device_copy.h</innerfile>
+    <innerfile refid="image_8h">image.h</innerfile>
+    <innerfile refid="relay_2attrs_2memory_8h">memory.h</innerfile>
+    <innerfile refid="include_2tvm_2relay_2attrs_2nn_8h">nn.h</innerfile>
+    <innerfile refid="reduce_8h">reduce.h</innerfile>
+    <innerfile refid="include_2tvm_2relay_2attrs_2transform_8h">transform.h</innerfile>
+    <innerfile refid="vision_8h">vision.h</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="include/tvm/relay/attrs/"/>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,269 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="classtvm_1_1runtime_1_1NDArray_1_1Container" kind="class" language="C++" prot="public">
+    <compoundname>tvm::runtime::NDArray::Container</compoundname>
+    <basecompoundref refid="classtvm_1_1runtime_1_1Object" prot="public" virt="non-virtual">tvm::runtime::Object</basecompoundref>
+    <basecompoundref refid="classtvm_1_1runtime_1_1NDArray_1_1ContainerBase" prot="public" virt="non-virtual">tvm::runtime::NDArray::ContainerBase</basecompoundref>
+    <includes refid="ndarray_8h" local="no">ndarray.h</includes>
+      <sectiondef kind="public-static-attrib">
+      <memberdef kind="variable" id="classtvm_1_1runtime_1_1NDArray_1_1Container_1a2aa70a8af3dcb461cad06e57ec3ad7b6" prot="public" static="yes" mutable="no">
+        <type>constexpr const uint32_t</type>
+        <definition>constexpr const uint32_t tvm::runtime::NDArray::Container::_type_index</definition>
+        <argsstring></argsstring>
+        <name>_type_index</name>
+        <initializer>= TypeIndex::kDynamic</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/runtime/ndarray.h" line="291" column="1" bodyfile="include/tvm/runtime/ndarray.h" bodystart="291" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classtvm_1_1runtime_1_1NDArray_1_1Container_1a654a0db794bc7453907cafdfd1b6419e" prot="public" static="yes" mutable="no">
+        <type>constexpr const uint32_t</type>
+        <definition>constexpr const uint32_t tvm::runtime::NDArray::Container::_type_child_slots</definition>
+        <argsstring></argsstring>
+        <name>_type_child_slots</name>
+        <initializer>= 0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/runtime/ndarray.h" line="292" column="1" bodyfile="include/tvm/runtime/ndarray.h" bodystart="292" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classtvm_1_1runtime_1_1NDArray_1_1Container_1a5010c341b2c9a0976af2d763a277e21d" prot="public" static="yes" mutable="no">
+        <type>constexpr const uint32_t</type>
+        <definition>constexpr const uint32_t tvm::runtime::NDArray::Container::_type_child_slots_can_overflow</definition>
+        <argsstring></argsstring>
+        <name>_type_child_slots_can_overflow</name>
+        <initializer>= true</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/runtime/ndarray.h" line="293" column="1" bodyfile="include/tvm/runtime/ndarray.h" bodystart="293" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classtvm_1_1runtime_1_1NDArray_1_1Container_1a5f89a73ae36d22b46545cc5906e92a3d" prot="public" static="yes" mutable="no">
+        <type>constexpr const char *</type>
+        <definition>constexpr const char* tvm::runtime::NDArray::Container::_type_key</definition>
+        <argsstring></argsstring>
+        <name>_type_key</name>
+        <initializer>= &quot;NDArray&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/runtime/ndarray.h" line="294" column="1" bodyfile="include/tvm/runtime/ndarray.h" bodystart="294" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="friend">
+      <memberdef kind="friend" id="classtvm_1_1runtime_1_1NDArray_1_1Container_1a6ccaf80c7bc6037e59b208845b20db11" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>friend class</type>
+        <definition>friend class RPCWrappedFunc</definition>
+        <argsstring></argsstring>
+        <name>RPCWrappedFunc</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/runtime/ndarray.h" line="298" column="1" bodyfile="include/tvm/runtime/ndarray.h" bodystart="298" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="friend" id="classtvm_1_1runtime_1_1NDArray_1_1Container_1ad41557e205cf8f4d6ef70b60587c37cb" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>friend class</type>
+        <definition>friend class NDArray</definition>
+        <argsstring></argsstring>
+        <name>NDArray</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/runtime/ndarray.h" line="299" column="1" bodyfile="include/tvm/runtime/ndarray.h" bodystart="299" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classtvm_1_1runtime_1_1NDArray_1_1Container_1a39b39ce5a2a658b44944381f1835404a" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>tvm::runtime::NDArray::Container::Container</definition>
+        <argsstring>()</argsstring>
+        <name>Container</name>
+        <briefdescription>
+<para>default constructor </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/runtime/ndarray.h" line="252" column="1" bodyfile="include/tvm/runtime/ndarray.h" bodystart="252" bodyend="260"/>
+      </memberdef>
+      <memberdef kind="function" id="classtvm_1_1runtime_1_1NDArray_1_1Container_1a39edb3823aeabc846cc38e0fae1a3c37" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>tvm::runtime::NDArray::Container::Container</definition>
+        <argsstring>(void *data, std::vector&lt; int64_t &gt; shape, DLDataType dtype, DLContext ctx)</argsstring>
+        <name>Container</name>
+        <param>
+          <type>void *</type>
+          <declname>data</declname>
+        </param>
+        <param>
+          <type>std::vector&lt; int64_t &gt;</type>
+          <declname>shape</declname>
+        </param>
+        <param>
+          <type>DLDataType</type>
+          <declname>dtype</declname>
+        </param>
+        <param>
+          <type>DLContext</type>
+          <declname>ctx</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/runtime/ndarray.h" line="262" column="1" bodyfile="include/tvm/runtime/ndarray.h" bodystart="262" bodyend="276"/>
+      </memberdef>
+      <memberdef kind="function" id="classtvm_1_1runtime_1_1NDArray_1_1Container_1a56109cfc826b26172f084c3790144351" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void tvm::runtime::NDArray::Container::SetDeleter</definition>
+        <argsstring>(FDeleter deleter)</argsstring>
+        <name>SetDeleter</name>
+        <param>
+          <type><ref refid="classtvm_1_1runtime_1_1Object_1a9e84841ca982bff376a978ade0132631" kindref="member">FDeleter</ref></type>
+          <declname>deleter</declname>
+        </param>
+        <briefdescription>
+<para>Set the deleter field. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>deleter</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The deleter. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/runtime/ndarray.h" line="281" column="1" bodyfile="include/tvm/runtime/ndarray.h" bodystart="281" bodyend="283"/>
+      </memberdef>
+      <memberdef kind="function" id="classtvm_1_1runtime_1_1NDArray_1_1Container_1adce920eec8aecc847e0ca7d7b4cb169c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>tvm::runtime::NDArray::Container::TVM_DECLARE_BASE_OBJECT_INFO</definition>
+        <argsstring>(NDArray::Container, Object)</argsstring>
+        <name>TVM_DECLARE_BASE_OBJECT_INFO</name>
+        <param>
+          <type><ref refid="classtvm_1_1runtime_1_1NDArray_1_1Container" kindref="compound">NDArray::Container</ref></type>
+        </param>
+        <param>
+          <type><ref refid="classtvm_1_1runtime_1_1Object" kindref="compound">Object</ref></type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/runtime/ndarray.h" line="295" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para><ref refid="classtvm_1_1runtime_1_1Object" kindref="compound">Object</ref> container class that backs <ref refid="classtvm_1_1runtime_1_1NDArray" kindref="compound">NDArray</ref>. </para>    </briefdescription>
+    <detaileddescription>
+<para><simplesect kind="note"><para>do not use this function directly, use <ref refid="classtvm_1_1runtime_1_1NDArray" kindref="compound">NDArray</ref>. </para></simplesect>
+</para>    </detaileddescription>
+    <inheritancegraph>
+      <node id="4714">
+        <label>tvm::runtime::Object</label>
+        <link refid="classtvm_1_1runtime_1_1Object"/>
+      </node>
+      <node id="4713">
+        <label>tvm::runtime::NDArray::Container</label>
+        <link refid="classtvm_1_1runtime_1_1NDArray_1_1Container"/>
+        <childnode refid="4714" relation="public-inheritance">
+        </childnode>
+        <childnode refid="4715" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="4715">
+        <label>tvm::runtime::NDArray::ContainerBase</label>
+        <link refid="classtvm_1_1runtime_1_1NDArray_1_1ContainerBase"/>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="4717">
+        <label>tvm::runtime::Object</label>
+        <link refid="classtvm_1_1runtime_1_1Object"/>
+        <childnode refid="4717" relation="usage">
+          <edgelabel>#deleter_</edgelabel>
+        </childnode>
+      </node>
+      <node id="4716">
+        <label>tvm::runtime::NDArray::Container</label>
+        <link refid="classtvm_1_1runtime_1_1NDArray_1_1Container"/>
+        <childnode refid="4717" relation="public-inheritance">
+        </childnode>
+        <childnode refid="4718" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="4718">
+        <label>tvm::runtime::NDArray::ContainerBase</label>
+        <link refid="classtvm_1_1runtime_1_1NDArray_1_1ContainerBase"/>
+      </node>
+    </collaborationgraph>
+    <location file="include/tvm/runtime/ndarray.h" line="249" column="1" bodyfile="include/tvm/runtime/ndarray.h" bodystart="247" bodyend="300"/>
+    <listofallmembers>
+      <member refid="classtvm_1_1runtime_1_1Object_1a5fbebc47be111ecc1d5869bcc0476e21" prot="public" virt="non-virtual"><scope>tvm::runtime::NDArray::Container</scope><name>_GetOrAllocRuntimeTypeIndex</name></member>
+      <member refid="classtvm_1_1runtime_1_1NDArray_1_1Container_1a654a0db794bc7453907cafdfd1b6419e" prot="public" virt="non-virtual"><scope>tvm::runtime::NDArray::Container</scope><name>_type_child_slots</name></member>
+      <member refid="classtvm_1_1runtime_1_1NDArray_1_1Container_1a5010c341b2c9a0976af2d763a277e21d" prot="public" virt="non-virtual"><scope>tvm::runtime::NDArray::Container</scope><name>_type_child_slots_can_overflow</name></member>
+      <member refid="classtvm_1_1runtime_1_1Object_1a55cb618bd4bbcd49317b35ea8e2996be" prot="public" virt="non-virtual"><scope>tvm::runtime::NDArray::Container</scope><name>_type_final</name></member>
+      <member refid="classtvm_1_1runtime_1_1Object_1a92fe62494027b70af1f7696d611c21b6" prot="public" virt="non-virtual"><scope>tvm::runtime::NDArray::Container</scope><name>_type_has_method_sequal_reduce</name></member>
+      <member refid="classtvm_1_1runtime_1_1Object_1ac97054694d03dc5eac58315fb569ef88" prot="public" virt="non-virtual"><scope>tvm::runtime::NDArray::Container</scope><name>_type_has_method_shash_reduce</name></member>
+      <member refid="classtvm_1_1runtime_1_1Object_1a74e9f076b50b8b335b4a321e9b0bf03c" prot="public" virt="non-virtual"><scope>tvm::runtime::NDArray::Container</scope><name>_type_has_method_visit_attrs</name></member>
+      <member refid="classtvm_1_1runtime_1_1NDArray_1_1Container_1a2aa70a8af3dcb461cad06e57ec3ad7b6" prot="public" virt="non-virtual"><scope>tvm::runtime::NDArray::Container</scope><name>_type_index</name></member>
+      <member refid="classtvm_1_1runtime_1_1NDArray_1_1Container_1a5f89a73ae36d22b46545cc5906e92a3d" prot="public" virt="non-virtual"><scope>tvm::runtime::NDArray::Container</scope><name>_type_key</name></member>
+      <member refid="classtvm_1_1runtime_1_1NDArray_1_1Container_1a39b39ce5a2a658b44944381f1835404a" prot="public" virt="non-virtual"><scope>tvm::runtime::NDArray::Container</scope><name>Container</name></member>
+      <member refid="classtvm_1_1runtime_1_1NDArray_1_1Container_1a39edb3823aeabc846cc38e0fae1a3c37" prot="public" virt="non-virtual"><scope>tvm::runtime::NDArray::Container</scope><name>Container</name></member>
+      <member refid="classtvm_1_1runtime_1_1Object_1a70fb5361147634605d6595bb89381f03" prot="protected" virt="non-virtual"><scope>tvm::runtime::NDArray::Container</scope><name>DecRef</name></member>
+      <member refid="classtvm_1_1runtime_1_1Object_1af4407d2b59132e803ff791482dbe0145" prot="protected" virt="non-virtual"><scope>tvm::runtime::NDArray::Container</scope><name>deleter_</name></member>
+      <member refid="classtvm_1_1runtime_1_1NDArray_1_1ContainerBase_1a1063a9d01075d5b7b0e8fa31d4d72e0b" prot="public" virt="non-virtual"><scope>tvm::runtime::NDArray::Container</scope><name>dl_tensor</name></member>
+      <member refid="classtvm_1_1runtime_1_1Object_1a9e84841ca982bff376a978ade0132631" prot="public" virt="non-virtual"><scope>tvm::runtime::NDArray::Container</scope><name>FDeleter</name></member>
+      <member refid="classtvm_1_1runtime_1_1Object_1a726972ff315c446192df94027ddea032" prot="protected" virt="non-virtual"><scope>tvm::runtime::NDArray::Container</scope><name>GetOrAllocRuntimeTypeIndex</name></member>
+      <member refid="classtvm_1_1runtime_1_1Object_1a9581610ea91e0e38f57edc82e264a1b0" prot="public" virt="non-virtual"><scope>tvm::runtime::NDArray::Container</scope><name>GetTypeKey</name></member>
+      <member refid="classtvm_1_1runtime_1_1Object_1ac9a7d8d3d562803c9cf91271c462b61d" prot="public" virt="non-virtual"><scope>tvm::runtime::NDArray::Container</scope><name>GetTypeKeyHash</name></member>
+      <member refid="classtvm_1_1runtime_1_1Object_1ac9e5eed7719e322117bde996a171e33a" prot="protected" virt="non-virtual"><scope>tvm::runtime::NDArray::Container</scope><name>IncRef</name></member>
+      <member refid="classtvm_1_1runtime_1_1Object_1af1359ebff2c328ff0bb80083937c95dd" prot="public" virt="non-virtual"><scope>tvm::runtime::NDArray::Container</scope><name>IsInstance</name></member>
+      <member refid="classtvm_1_1runtime_1_1NDArray_1_1ContainerBase_1a56d07e60df973dcf2b99ef6a204bb184" prot="public" virt="non-virtual"><scope>tvm::runtime::NDArray::Container</scope><name>manager_ctx</name></member>
+      <member refid="classtvm_1_1runtime_1_1NDArray_1_1Container_1ad41557e205cf8f4d6ef70b60587c37cb" prot="protected" virt="non-virtual"><scope>tvm::runtime::NDArray::Container</scope><name>NDArray</name></member>
+      <member refid="classtvm_1_1runtime_1_1Object_1a133436a9ec5c4a768b94102bf95a660b" prot="public" virt="non-virtual"><scope>tvm::runtime::NDArray::Container</scope><name>Object</name></member>
+      <member refid="classtvm_1_1runtime_1_1Object_1ab7968feb6ad38ecaffc320e13819d826" prot="public" virt="non-virtual"><scope>tvm::runtime::NDArray::Container</scope><name>Object</name></member>
+      <member refid="classtvm_1_1runtime_1_1Object_1aa1612f69ea5b4225d4cda759cd517323" prot="public" virt="non-virtual"><scope>tvm::runtime::NDArray::Container</scope><name>Object</name></member>
+      <member refid="classtvm_1_1runtime_1_1Object_1a69c32fbd96181f5c21d2c878ab285e4f" prot="public" virt="non-virtual"><scope>tvm::runtime::NDArray::Container</scope><name>operator=</name></member>
+      <member refid="classtvm_1_1runtime_1_1Object_1ae341e561272ff43cdcbc927bc29ac50d" prot="public" virt="non-virtual"><scope>tvm::runtime::NDArray::Container</scope><name>operator=</name></member>
+      <member refid="classtvm_1_1runtime_1_1Object_1a0d492efee331e2239a093f4b2017c10f" prot="protected" virt="non-virtual"><scope>tvm::runtime::NDArray::Container</scope><name>ref_counter_</name></member>
+      <member refid="classtvm_1_1runtime_1_1Object_1a55549a6c23987890246248682560a03d" prot="public" virt="non-virtual"><scope>tvm::runtime::NDArray::Container</scope><name>RefCounterType</name></member>
+      <member refid="classtvm_1_1runtime_1_1NDArray_1_1Container_1a6ccaf80c7bc6037e59b208845b20db11" prot="protected" virt="non-virtual"><scope>tvm::runtime::NDArray::Container</scope><name>RPCWrappedFunc</name></member>
+      <member refid="classtvm_1_1runtime_1_1Object_1ad94d79729ac85aa7c976e23d39066383" prot="public" virt="non-virtual"><scope>tvm::runtime::NDArray::Container</scope><name>RuntimeTypeIndex</name></member>
+      <member refid="classtvm_1_1runtime_1_1NDArray_1_1Container_1a56109cfc826b26172f084c3790144351" prot="public" virt="non-virtual"><scope>tvm::runtime::NDArray::Container</scope><name>SetDeleter</name></member>
+      <member refid="classtvm_1_1runtime_1_1NDArray_1_1ContainerBase_1a852a3d49f916098ea6012237dbd242fc" prot="protected" virt="non-virtual"><scope>tvm::runtime::NDArray::Container</scope><name>shape_</name></member>
+      <member refid="classtvm_1_1runtime_1_1NDArray_1_1Container_1adce920eec8aecc847e0ca7d7b4cb169c" prot="public" virt="non-virtual"><scope>tvm::runtime::NDArray::Container</scope><name>TVM_DECLARE_BASE_OBJECT_INFO</name></member>
+      <member refid="classtvm_1_1runtime_1_1Object_1a594c0d786dbc567ff6774ab11b45958a" prot="public" virt="non-virtual"><scope>tvm::runtime::NDArray::Container</scope><name>type_index</name></member>
+      <member refid="classtvm_1_1runtime_1_1Object_1a4bfc2586cb55f2af47728187b3256255" prot="protected" virt="non-virtual"><scope>tvm::runtime::NDArray::Container</scope><name>type_index_</name></member>
+      <member refid="classtvm_1_1runtime_1_1Object_1a817ba6c23b7ee1821c48a75edf255a30" prot="public" virt="non-virtual"><scope>tvm::runtime::NDArray::Container</scope><name>TypeIndex2Key</name></member>
+      <member refid="classtvm_1_1runtime_1_1Object_1a6ee32a02dd44257da105fbbe5d9c8622" prot="public" virt="non-virtual"><scope>tvm::runtime::NDArray::Container</scope><name>TypeIndex2KeyHash</name></member>
+      <member refid="classtvm_1_1runtime_1_1Object_1a6841f97e06e6614dd7e82c6dd41b818a" prot="public" virt="non-virtual"><scope>tvm::runtime::NDArray::Container</scope><name>TypeKey2Index</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

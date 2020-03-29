@@ -1,0 +1,223 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="classtvm_1_1tir_1_1VarNode" kind="class" language="C++" prot="public">
+    <compoundname>tvm::tir::VarNode</compoundname>
+    <basecompoundref refid="classtvm_1_1PrimExprNode" prot="public" virt="non-virtual">tvm::PrimExprNode</basecompoundref>
+    <derivedcompoundref refid="classtvm_1_1tir_1_1SizeVarNode" prot="public" virt="non-virtual">tvm::tir::SizeVarNode</derivedcompoundref>
+    <includes refid="tir_2expr_8h" local="no">expr.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="classtvm_1_1tir_1_1VarNode_1ac09a97d7c89f6d50b2a8f198e0917dce" prot="public" static="no" mutable="no">
+        <type>std::string</type>
+        <definition>std::string tvm::tir::VarNode::name_hint</definition>
+        <argsstring></argsstring>
+        <name>name_hint</name>
+        <briefdescription>
+<para>The hint to the variable name. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="note"><para>Each variable is uniquely identified by its address. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/tir/expr.h" line="62" column="1" bodyfile="include/tvm/tir/expr.h" bodystart="62" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classtvm_1_1tir_1_1VarNode_1a7a84c6d137a79e9a5b9c4b6183f18353" prot="public" static="no" mutable="no">
+        <type><ref refid="classtvm_1_1Type" kindref="compound">Type</ref></type>
+        <definition>Type tvm::tir::VarNode::type_annotation</definition>
+        <argsstring></argsstring>
+        <name>type_annotation</name>
+        <briefdescription>
+<para>type annotaion of the variable. </para>        </briefdescription>
+        <detaileddescription>
+<para>It is an optional field that provides a refined type of the variable than dtype.</para><para><simplesect kind="see"><para><ref refid="ir_2type_8h" kindref="compound">tvm/ir/type.h</ref> for discussion of relations between <ref refid="classtvm_1_1runtime_1_1DataType" kindref="compound">runtime::DataType</ref> and <ref refid="classtvm_1_1Type" kindref="compound">Type</ref>. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/tir/expr.h" line="70" column="1" bodyfile="include/tvm/tir/expr.h" bodystart="70" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-attrib">
+      <memberdef kind="variable" id="classtvm_1_1tir_1_1VarNode_1a43c00470f63021c090059d75086ec512" prot="public" static="yes" mutable="no">
+        <type>constexpr const char *</type>
+        <definition>constexpr const char* tvm::tir::VarNode::_type_key</definition>
+        <argsstring></argsstring>
+        <name>_type_key</name>
+        <initializer>= &quot;tir.Var&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/tir/expr.h" line="90" column="1" bodyfile="include/tvm/tir/expr.h" bodystart="90" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classtvm_1_1tir_1_1VarNode_1a77e835b6ba3c6d26609cbc0b05917e96" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void tvm::tir::VarNode::VisitAttrs</definition>
+        <argsstring>(AttrVisitor *v)</argsstring>
+        <name>VisitAttrs</name>
+        <param>
+          <type><ref refid="classtvm_1_1AttrVisitor" kindref="compound">AttrVisitor</ref> *</type>
+          <declname>v</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/tir/expr.h" line="72" column="1" bodyfile="include/tvm/tir/expr.h" bodystart="72" bodyend="76"/>
+      </memberdef>
+      <memberdef kind="function" id="classtvm_1_1tir_1_1VarNode_1acdb9c51a2ddd95cedd2a18717dfe585f" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool tvm::tir::VarNode::SEqualReduce</definition>
+        <argsstring>(const VarNode *other, SEqualReducer equal) const </argsstring>
+        <name>SEqualReduce</name>
+        <param>
+          <type>const <ref refid="classtvm_1_1tir_1_1VarNode" kindref="compound">VarNode</ref> *</type>
+          <declname>other</declname>
+        </param>
+        <param>
+          <type><ref refid="classtvm_1_1SEqualReducer" kindref="compound">SEqualReducer</ref></type>
+          <declname>equal</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/tir/expr.h" line="78" column="1" bodyfile="include/tvm/tir/expr.h" bodystart="78" bodyend="82"/>
+      </memberdef>
+      <memberdef kind="function" id="classtvm_1_1tir_1_1VarNode_1ad86c6023a45643e8532ac9ef8a4ca910" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void tvm::tir::VarNode::SHashReduce</definition>
+        <argsstring>(SHashReducer hash_reduce) const </argsstring>
+        <name>SHashReduce</name>
+        <param>
+          <type><ref refid="classtvm_1_1SHashReducer" kindref="compound">SHashReducer</ref></type>
+          <declname>hash_reduce</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/tir/expr.h" line="84" column="1" bodyfile="include/tvm/tir/expr.h" bodystart="84" bodyend="88"/>
+      </memberdef>
+      <memberdef kind="function" id="classtvm_1_1tir_1_1VarNode_1a629882d57604a710116f12976b40a043" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>tvm::tir::VarNode::TVM_DECLARE_BASE_OBJECT_INFO</definition>
+        <argsstring>(VarNode, PrimExprNode)</argsstring>
+        <name>TVM_DECLARE_BASE_OBJECT_INFO</name>
+        <param>
+          <type><ref refid="classtvm_1_1tir_1_1VarNode" kindref="compound">VarNode</ref></type>
+        </param>
+        <param>
+          <type><ref refid="classtvm_1_1PrimExprNode" kindref="compound">PrimExprNode</ref></type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/tir/expr.h" line="91" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>A variable node in the IR. </para>    </briefdescription>
+    <detaileddescription>
+<para>A variable is uniquely identified by its address.</para><para>Each variable is only binded once in the following nodes:<itemizedlist>
+<listitem><para>Allocate</para></listitem><listitem><para>For</para></listitem><listitem><para>Let</para></listitem><listitem><para>LetStmt </para></listitem></itemizedlist>
+</para>    </detaileddescription>
+    <inheritancegraph>
+      <node id="7556">
+        <label>tvm::tir::VarNode</label>
+        <link refid="classtvm_1_1tir_1_1VarNode"/>
+        <childnode refid="7557" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="7560">
+        <label>tvm::tir::SizeVarNode</label>
+        <link refid="classtvm_1_1tir_1_1SizeVarNode"/>
+        <childnode refid="7556" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="7558">
+        <label>tvm::BaseExprNode</label>
+        <link refid="classtvm_1_1BaseExprNode"/>
+        <childnode refid="7559" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="7559">
+        <label>Object</label>
+      </node>
+      <node id="7557">
+        <label>tvm::PrimExprNode</label>
+        <link refid="classtvm_1_1PrimExprNode"/>
+        <childnode refid="7558" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="7567">
+        <label>ObjectRef</label>
+      </node>
+      <node id="7561">
+        <label>tvm::tir::VarNode</label>
+        <link refid="classtvm_1_1tir_1_1VarNode"/>
+        <childnode refid="7562" relation="public-inheritance">
+        </childnode>
+        <childnode refid="7566" relation="usage">
+          <edgelabel>+type_annotation</edgelabel>
+        </childnode>
+      </node>
+      <node id="7563">
+        <label>tvm::BaseExprNode</label>
+        <link refid="classtvm_1_1BaseExprNode"/>
+        <childnode refid="7564" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="7564">
+        <label>Object</label>
+      </node>
+      <node id="7565">
+        <label>tvm::runtime::DataType</label>
+        <link refid="classtvm_1_1runtime_1_1DataType"/>
+      </node>
+      <node id="7566">
+        <label>tvm::Type</label>
+        <link refid="classtvm_1_1Type"/>
+        <childnode refid="7567" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="7562">
+        <label>tvm::PrimExprNode</label>
+        <link refid="classtvm_1_1PrimExprNode"/>
+        <childnode refid="7563" relation="public-inheritance">
+        </childnode>
+        <childnode refid="7565" relation="usage">
+          <edgelabel>+dtype</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="include/tvm/tir/expr.h" line="56" column="1" bodyfile="include/tvm/tir/expr.h" bodystart="56" bodyend="92"/>
+    <listofallmembers>
+      <member refid="classtvm_1_1BaseExprNode_1a905dcf65204e877b6ccb977cf375f2a0" prot="public" virt="non-virtual"><scope>tvm::tir::VarNode</scope><name>_type_has_method_sequal_reduce</name></member>
+      <member refid="classtvm_1_1BaseExprNode_1a13d7d1f1e6f790951caf200cd59c3620" prot="public" virt="non-virtual"><scope>tvm::tir::VarNode</scope><name>_type_has_method_shash_reduce</name></member>
+      <member refid="classtvm_1_1tir_1_1VarNode_1a43c00470f63021c090059d75086ec512" prot="public" virt="non-virtual"><scope>tvm::tir::VarNode</scope><name>_type_key</name></member>
+      <member refid="classtvm_1_1PrimExprNode_1a95af9234514ec5f11355db41524be7f9" prot="public" virt="non-virtual"><scope>tvm::tir::VarNode</scope><name>dtype</name></member>
+      <member refid="classtvm_1_1tir_1_1VarNode_1ac09a97d7c89f6d50b2a8f198e0917dce" prot="public" virt="non-virtual"><scope>tvm::tir::VarNode</scope><name>name_hint</name></member>
+      <member refid="classtvm_1_1tir_1_1VarNode_1acdb9c51a2ddd95cedd2a18717dfe585f" prot="public" virt="non-virtual"><scope>tvm::tir::VarNode</scope><name>SEqualReduce</name></member>
+      <member refid="classtvm_1_1tir_1_1VarNode_1ad86c6023a45643e8532ac9ef8a4ca910" prot="public" virt="non-virtual"><scope>tvm::tir::VarNode</scope><name>SHashReduce</name></member>
+      <member refid="classtvm_1_1tir_1_1VarNode_1a629882d57604a710116f12976b40a043" prot="public" virt="non-virtual"><scope>tvm::tir::VarNode</scope><name>TVM_DECLARE_BASE_OBJECT_INFO</name></member>
+      <member refid="classtvm_1_1PrimExprNode_1afcf4654378d65e0200b33e43194d0490" prot="public" virt="non-virtual" ambiguityscope="tvm::PrimExprNode::"><scope>tvm::tir::VarNode</scope><name>TVM_DECLARE_BASE_OBJECT_INFO</name></member>
+      <member refid="classtvm_1_1BaseExprNode_1a831794c879d47c30cdd9cefd4f05d533" prot="public" virt="non-virtual" ambiguityscope="tvm::BaseExprNode::"><scope>tvm::tir::VarNode</scope><name>TVM_DECLARE_BASE_OBJECT_INFO</name></member>
+      <member refid="classtvm_1_1tir_1_1VarNode_1a7a84c6d137a79e9a5b9c4b6183f18353" prot="public" virt="non-virtual"><scope>tvm::tir::VarNode</scope><name>type_annotation</name></member>
+      <member refid="classtvm_1_1tir_1_1VarNode_1a77e835b6ba3c6d26609cbc0b05917e96" prot="public" virt="non-virtual"><scope>tvm::tir::VarNode</scope><name>VisitAttrs</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

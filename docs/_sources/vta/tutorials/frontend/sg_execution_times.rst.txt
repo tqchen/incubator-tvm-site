@@ -1,0 +1,11 @@
+
+:orphan:
+
+.. _sphx_glr_vta_tutorials_frontend_sg_execution_times:
+
+Computation times
+=================
+**00:59.241** total execution time for **vta_tutorials_frontend** files:
+
+- **00:33.332**: :ref:`sphx_glr_vta_tutorials_frontend_deploy_detection.py` (``deploy_detection.py``)
+- **00:25.909**: :ref:`sphx_glr_vta_tutorials_frontend_deploy_classification.py` (``deploy_classification.py``)

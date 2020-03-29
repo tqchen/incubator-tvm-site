@@ -1,0 +1,120 @@
+\hypertarget{classtvm_1_1TypeCallNode}{}\section{tvm\+:\+:Type\+Call\+Node Class Reference}
+\label{classtvm_1_1TypeCallNode}\index{tvm\+::\+Type\+Call\+Node@{tvm\+::\+Type\+Call\+Node}}
+
+
+\hyperlink{classtvm_1_1Type}{Type} function application.  
+
+
+
+
+{\ttfamily \#include $<$type\+\_\+relation.\+h$>$}
+
+
+
+Inheritance diagram for tvm\+:\+:Type\+Call\+Node\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=285pt]{classtvm_1_1TypeCallNode__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for tvm\+:\+:Type\+Call\+Node\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classtvm_1_1TypeCallNode__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{classtvm_1_1TypeCallNode_a78d868b71e85155ef0b9a003bab87a77}{Visit\+Attrs} (\hyperlink{classtvm_1_1AttrVisitor}{Attr\+Visitor} $\ast$v)
+\item 
+bool \hyperlink{classtvm_1_1TypeCallNode_adcd169de4a8923b333f721d5c79dcbc5}{S\+Equal\+Reduce} (const \hyperlink{classtvm_1_1TypeCallNode}{Type\+Call\+Node} $\ast$other, \hyperlink{classtvm_1_1SEqualReducer}{S\+Equal\+Reducer} equal) const 
+\item 
+void \hyperlink{classtvm_1_1TypeCallNode_ad26289590f6b21bdf772529ed56d1f0c}{S\+Hash\+Reduce} (\hyperlink{classtvm_1_1SHashReducer}{S\+Hash\+Reducer} hash\+\_\+reduce) const 
+\item 
+\hyperlink{classtvm_1_1TypeCallNode_ae2a79cdbb7b42224f49d18f5e559e1f0}{T\+V\+M\+\_\+\+D\+E\+C\+L\+A\+R\+E\+\_\+\+F\+I\+N\+A\+L\+\_\+\+O\+B\+J\+E\+C\+T\+\_\+\+I\+N\+FO} (\hyperlink{classtvm_1_1TypeCallNode}{Type\+Call\+Node}, \hyperlink{classtvm_1_1TypeNode}{Type\+Node})
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classtvm_1_1Type}{Type} \hyperlink{classtvm_1_1TypeCallNode_ad411852baaa607438122219b714773ea}{func}
+\begin{DoxyCompactList}\small\item\em The type-\/level function (A\+DT that takes type params). \end{DoxyCompactList}\item 
+\hyperlink{classtvm_1_1Array}{Array}$<$ \hyperlink{classtvm_1_1Type}{Type} $>$ \hyperlink{classtvm_1_1TypeCallNode_a2e5fb370089941ae6fae26a110ad3783}{args}
+\begin{DoxyCompactList}\small\item\em The arguments. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static constexpr const char $\ast$ \hyperlink{classtvm_1_1TypeCallNode_a40818692649116129f929d01b46fb2a4}{\+\_\+type\+\_\+key} = \char`\"{}Type\+Call\char`\"{}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\hyperlink{classtvm_1_1Type}{Type} function application. 
+
+\begin{DoxySeeAlso}{See also}
+\hyperlink{classtvm_1_1TypeCall}{Type\+Call} 
+\end{DoxySeeAlso}
+
+
+\subsection{Member Function Documentation}
+\index{tvm\+::\+Type\+Call\+Node@{tvm\+::\+Type\+Call\+Node}!S\+Equal\+Reduce@{S\+Equal\+Reduce}}
+\index{S\+Equal\+Reduce@{S\+Equal\+Reduce}!tvm\+::\+Type\+Call\+Node@{tvm\+::\+Type\+Call\+Node}}
+\subsubsection[{\texorpdfstring{S\+Equal\+Reduce(const Type\+Call\+Node $\ast$other, S\+Equal\+Reducer equal) const }{SEqualReduce(const TypeCallNode *other, SEqualReducer equal) const }}]{\setlength{\rightskip}{0pt plus 5cm}bool tvm\+::\+Type\+Call\+Node\+::\+S\+Equal\+Reduce (
+\begin{DoxyParamCaption}
+\item[{const {\bf Type\+Call\+Node} $\ast$}]{other, }
+\item[{{\bf S\+Equal\+Reducer}}]{equal}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classtvm_1_1TypeCallNode_adcd169de4a8923b333f721d5c79dcbc5}{}\label{classtvm_1_1TypeCallNode_adcd169de4a8923b333f721d5c79dcbc5}
+\index{tvm\+::\+Type\+Call\+Node@{tvm\+::\+Type\+Call\+Node}!S\+Hash\+Reduce@{S\+Hash\+Reduce}}
+\index{S\+Hash\+Reduce@{S\+Hash\+Reduce}!tvm\+::\+Type\+Call\+Node@{tvm\+::\+Type\+Call\+Node}}
+\subsubsection[{\texorpdfstring{S\+Hash\+Reduce(\+S\+Hash\+Reducer hash\+\_\+reduce) const }{SHashReduce(SHashReducer hash_reduce) const }}]{\setlength{\rightskip}{0pt plus 5cm}void tvm\+::\+Type\+Call\+Node\+::\+S\+Hash\+Reduce (
+\begin{DoxyParamCaption}
+\item[{{\bf S\+Hash\+Reducer}}]{hash\+\_\+reduce}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classtvm_1_1TypeCallNode_ad26289590f6b21bdf772529ed56d1f0c}{}\label{classtvm_1_1TypeCallNode_ad26289590f6b21bdf772529ed56d1f0c}
+\index{tvm\+::\+Type\+Call\+Node@{tvm\+::\+Type\+Call\+Node}!T\+V\+M\+\_\+\+D\+E\+C\+L\+A\+R\+E\+\_\+\+F\+I\+N\+A\+L\+\_\+\+O\+B\+J\+E\+C\+T\+\_\+\+I\+N\+FO@{T\+V\+M\+\_\+\+D\+E\+C\+L\+A\+R\+E\+\_\+\+F\+I\+N\+A\+L\+\_\+\+O\+B\+J\+E\+C\+T\+\_\+\+I\+N\+FO}}
+\index{T\+V\+M\+\_\+\+D\+E\+C\+L\+A\+R\+E\+\_\+\+F\+I\+N\+A\+L\+\_\+\+O\+B\+J\+E\+C\+T\+\_\+\+I\+N\+FO@{T\+V\+M\+\_\+\+D\+E\+C\+L\+A\+R\+E\+\_\+\+F\+I\+N\+A\+L\+\_\+\+O\+B\+J\+E\+C\+T\+\_\+\+I\+N\+FO}!tvm\+::\+Type\+Call\+Node@{tvm\+::\+Type\+Call\+Node}}
+\subsubsection[{\texorpdfstring{T\+V\+M\+\_\+\+D\+E\+C\+L\+A\+R\+E\+\_\+\+F\+I\+N\+A\+L\+\_\+\+O\+B\+J\+E\+C\+T\+\_\+\+I\+N\+F\+O(\+Type\+Call\+Node, Type\+Node)}{TVM_DECLARE_FINAL_OBJECT_INFO(TypeCallNode, TypeNode)}}]{\setlength{\rightskip}{0pt plus 5cm}tvm\+::\+Type\+Call\+Node\+::\+T\+V\+M\+\_\+\+D\+E\+C\+L\+A\+R\+E\+\_\+\+F\+I\+N\+A\+L\+\_\+\+O\+B\+J\+E\+C\+T\+\_\+\+I\+N\+FO (
+\begin{DoxyParamCaption}
+\item[{{\bf Type\+Call\+Node}}]{, }
+\item[{{\bf Type\+Node}}]{}
+\end{DoxyParamCaption}
+)}\hypertarget{classtvm_1_1TypeCallNode_ae2a79cdbb7b42224f49d18f5e559e1f0}{}\label{classtvm_1_1TypeCallNode_ae2a79cdbb7b42224f49d18f5e559e1f0}
+\index{tvm\+::\+Type\+Call\+Node@{tvm\+::\+Type\+Call\+Node}!Visit\+Attrs@{Visit\+Attrs}}
+\index{Visit\+Attrs@{Visit\+Attrs}!tvm\+::\+Type\+Call\+Node@{tvm\+::\+Type\+Call\+Node}}
+\subsubsection[{\texorpdfstring{Visit\+Attrs(\+Attr\+Visitor $\ast$v)}{VisitAttrs(AttrVisitor *v)}}]{\setlength{\rightskip}{0pt plus 5cm}void tvm\+::\+Type\+Call\+Node\+::\+Visit\+Attrs (
+\begin{DoxyParamCaption}
+\item[{{\bf Attr\+Visitor} $\ast$}]{v}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classtvm_1_1TypeCallNode_a78d868b71e85155ef0b9a003bab87a77}{}\label{classtvm_1_1TypeCallNode_a78d868b71e85155ef0b9a003bab87a77}
+
+
+\subsection{Member Data Documentation}
+\index{tvm\+::\+Type\+Call\+Node@{tvm\+::\+Type\+Call\+Node}!\+\_\+type\+\_\+key@{\+\_\+type\+\_\+key}}
+\index{\+\_\+type\+\_\+key@{\+\_\+type\+\_\+key}!tvm\+::\+Type\+Call\+Node@{tvm\+::\+Type\+Call\+Node}}
+\subsubsection[{\texorpdfstring{\+\_\+type\+\_\+key}{_type_key}}]{\setlength{\rightskip}{0pt plus 5cm}constexpr const char$\ast$ tvm\+::\+Type\+Call\+Node\+::\+\_\+type\+\_\+key = \char`\"{}Type\+Call\char`\"{}\hspace{0.3cm}{\ttfamily [static]}}\hypertarget{classtvm_1_1TypeCallNode_a40818692649116129f929d01b46fb2a4}{}\label{classtvm_1_1TypeCallNode_a40818692649116129f929d01b46fb2a4}
+\index{tvm\+::\+Type\+Call\+Node@{tvm\+::\+Type\+Call\+Node}!args@{args}}
+\index{args@{args}!tvm\+::\+Type\+Call\+Node@{tvm\+::\+Type\+Call\+Node}}
+\subsubsection[{\texorpdfstring{args}{args}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Array}$<${\bf Type}$>$ tvm\+::\+Type\+Call\+Node\+::args}\hypertarget{classtvm_1_1TypeCallNode_a2e5fb370089941ae6fae26a110ad3783}{}\label{classtvm_1_1TypeCallNode_a2e5fb370089941ae6fae26a110ad3783}
+
+
+The arguments. 
+
+\index{tvm\+::\+Type\+Call\+Node@{tvm\+::\+Type\+Call\+Node}!func@{func}}
+\index{func@{func}!tvm\+::\+Type\+Call\+Node@{tvm\+::\+Type\+Call\+Node}}
+\subsubsection[{\texorpdfstring{func}{func}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Type} tvm\+::\+Type\+Call\+Node\+::func}\hypertarget{classtvm_1_1TypeCallNode_ad411852baaa607438122219b714773ea}{}\label{classtvm_1_1TypeCallNode_ad411852baaa607438122219b714773ea}
+
+
+The type-\/level function (A\+DT that takes type params). 
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+include/tvm/ir/\hyperlink{type__relation_8h}{type\+\_\+relation.\+h}\end{DoxyCompactItemize}

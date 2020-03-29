@@ -1,0 +1,96 @@
+\hypertarget{classtvm_1_1arith_1_1ModularSetAnalyzer}{}\section{tvm\+:\+:arith\+:\+:Modular\+Set\+Analyzer Class Reference}
+\label{classtvm_1_1arith_1_1ModularSetAnalyzer}\index{tvm\+::arith\+::\+Modular\+Set\+Analyzer@{tvm\+::arith\+::\+Modular\+Set\+Analyzer}}
+
+
+\hyperlink{classtvm_1_1arith_1_1Analyzer}{Analyzer} to get modular information over expression.  
+
+
+
+
+{\ttfamily \#include $<$analyzer.\+h$>$}
+
+
+
+Collaboration diagram for tvm\+:\+:arith\+:\+:Modular\+Set\+Analyzer\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=245pt]{classtvm_1_1arith_1_1ModularSetAnalyzer__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classtvm_1_1arith_1_1ModularSet}{Modular\+Set} \hyperlink{classtvm_1_1arith_1_1ModularSetAnalyzer_a57c3c62ebc821f5f01bc2b43f06488da}{operator()} (const \hyperlink{classtvm_1_1PrimExpr}{Prim\+Expr} \&expr)
+\begin{DoxyCompactList}\small\item\em analyze the expr \end{DoxyCompactList}\item 
+void \hyperlink{classtvm_1_1arith_1_1ModularSetAnalyzer_a798cd8c3a1c5cae3c84080373c6913e9}{Update} (const Var \&var, const \hyperlink{classtvm_1_1arith_1_1ModularSet}{Modular\+Set} \&info, bool override=false)
+\begin{DoxyCompactList}\small\item\em Update constant int bound information of var. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+class \hyperlink{classtvm_1_1arith_1_1ModularSetAnalyzer_a88d594816df596eed10643082b0d0805}{Analyzer}
+\item 
+class \hyperlink{classtvm_1_1arith_1_1ModularSetAnalyzer_ab8bf22547cf1df0a28fc4ee98841ab89}{Constraint\+Context}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\hyperlink{classtvm_1_1arith_1_1Analyzer}{Analyzer} to get modular information over expression. 
+
+\subsection{Member Function Documentation}
+\index{tvm\+::arith\+::\+Modular\+Set\+Analyzer@{tvm\+::arith\+::\+Modular\+Set\+Analyzer}!operator()@{operator()}}
+\index{operator()@{operator()}!tvm\+::arith\+::\+Modular\+Set\+Analyzer@{tvm\+::arith\+::\+Modular\+Set\+Analyzer}}
+\subsubsection[{\texorpdfstring{operator()(const Prim\+Expr \&expr)}{operator()(const PrimExpr &expr)}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Modular\+Set} tvm\+::arith\+::\+Modular\+Set\+Analyzer\+::operator() (
+\begin{DoxyParamCaption}
+\item[{const {\bf Prim\+Expr} \&}]{expr}
+\end{DoxyParamCaption}
+)}\hypertarget{classtvm_1_1arith_1_1ModularSetAnalyzer_a57c3c62ebc821f5f01bc2b43f06488da}{}\label{classtvm_1_1arith_1_1ModularSetAnalyzer_a57c3c62ebc821f5f01bc2b43f06488da}
+
+
+analyze the expr 
+
+
+\begin{DoxyParams}{Parameters}
+{\em expr} & The expression of interest. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the result of the analysis. 
+\end{DoxyReturn}
+\index{tvm\+::arith\+::\+Modular\+Set\+Analyzer@{tvm\+::arith\+::\+Modular\+Set\+Analyzer}!Update@{Update}}
+\index{Update@{Update}!tvm\+::arith\+::\+Modular\+Set\+Analyzer@{tvm\+::arith\+::\+Modular\+Set\+Analyzer}}
+\subsubsection[{\texorpdfstring{Update(const Var \&var, const Modular\+Set \&info, bool override=false)}{Update(const Var &var, const ModularSet &info, bool override=false)}}]{\setlength{\rightskip}{0pt plus 5cm}void tvm\+::arith\+::\+Modular\+Set\+Analyzer\+::\+Update (
+\begin{DoxyParamCaption}
+\item[{const Var \&}]{var, }
+\item[{const {\bf Modular\+Set} \&}]{info, }
+\item[{bool}]{override = {\ttfamily false}}
+\end{DoxyParamCaption}
+)}\hypertarget{classtvm_1_1arith_1_1ModularSetAnalyzer_a798cd8c3a1c5cae3c84080373c6913e9}{}\label{classtvm_1_1arith_1_1ModularSetAnalyzer_a798cd8c3a1c5cae3c84080373c6913e9}
+
+
+Update constant int bound information of var. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em var} & The variable of interest. \\
+\hline
+{\em info} & The bound information. \\
+\hline
+{\em override} & Whether do we allow override of existing information. \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Friends And Related Function Documentation}
+\index{tvm\+::arith\+::\+Modular\+Set\+Analyzer@{tvm\+::arith\+::\+Modular\+Set\+Analyzer}!Analyzer@{Analyzer}}
+\index{Analyzer@{Analyzer}!tvm\+::arith\+::\+Modular\+Set\+Analyzer@{tvm\+::arith\+::\+Modular\+Set\+Analyzer}}
+\subsubsection[{\texorpdfstring{Analyzer}{Analyzer}}]{\setlength{\rightskip}{0pt plus 5cm}friend class {\bf Analyzer}\hspace{0.3cm}{\ttfamily [friend]}}\hypertarget{classtvm_1_1arith_1_1ModularSetAnalyzer_a88d594816df596eed10643082b0d0805}{}\label{classtvm_1_1arith_1_1ModularSetAnalyzer_a88d594816df596eed10643082b0d0805}
+\index{tvm\+::arith\+::\+Modular\+Set\+Analyzer@{tvm\+::arith\+::\+Modular\+Set\+Analyzer}!Constraint\+Context@{Constraint\+Context}}
+\index{Constraint\+Context@{Constraint\+Context}!tvm\+::arith\+::\+Modular\+Set\+Analyzer@{tvm\+::arith\+::\+Modular\+Set\+Analyzer}}
+\subsubsection[{\texorpdfstring{Constraint\+Context}{ConstraintContext}}]{\setlength{\rightskip}{0pt plus 5cm}friend class {\bf Constraint\+Context}\hspace{0.3cm}{\ttfamily [friend]}}\hypertarget{classtvm_1_1arith_1_1ModularSetAnalyzer_ab8bf22547cf1df0a28fc4ee98841ab89}{}\label{classtvm_1_1arith_1_1ModularSetAnalyzer_ab8bf22547cf1df0a28fc4ee98841ab89}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+include/tvm/arith/\hyperlink{analyzer_8h}{analyzer.\+h}\end{DoxyCompactItemize}

@@ -1,0 +1,85 @@
+\hypertarget{relay_2adt_8h}{}\section{include/tvm/relay/adt.h File Reference}
+\label{relay_2adt_8h}\index{include/tvm/relay/adt.\+h@{include/tvm/relay/adt.\+h}}
+
+
+Algebraic data types for Relay.  
+
+
+{\ttfamily \#include $<$tvm/ir/attrs.\+h$>$}\\*
+{\ttfamily \#include $<$tvm/ir/adt.\+h$>$}\\*
+{\ttfamily \#include $<$tvm/relay/base.\+h$>$}\\*
+{\ttfamily \#include $<$tvm/relay/expr.\+h$>$}\\*
+{\ttfamily \#include $<$tvm/relay/type.\+h$>$}\\*
+{\ttfamily \#include $<$string$>$}\\*
+{\ttfamily \#include $<$functional$>$}\\*
+{\ttfamily \#include $<$utility$>$}\\*
+Include dependency graph for adt.\+h\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{relay_2adt_8h__incl}
+\end{center}
+\end{figure}
+This graph shows which files directly or indirectly include this file\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{relay_2adt_8h__dep__incl}
+\end{center}
+\end{figure}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \hyperlink{classtvm_1_1relay_1_1PatternNode}{tvm\+::relay\+::\+Pattern\+Node}
+\begin{DoxyCompactList}\small\item\em Base type for declaring relay pattern. \end{DoxyCompactList}\item 
+class \hyperlink{classtvm_1_1relay_1_1Pattern}{tvm\+::relay\+::\+Pattern}
+\begin{DoxyCompactList}\small\item\em \hyperlink{classtvm_1_1relay_1_1Pattern}{Pattern} is the base type for an A\+DT match pattern in Relay. \end{DoxyCompactList}\item 
+class \hyperlink{classtvm_1_1relay_1_1PatternWildcardNode}{tvm\+::relay\+::\+Pattern\+Wildcard\+Node}
+\begin{DoxyCompactList}\small\item\em \hyperlink{classtvm_1_1relay_1_1PatternWildcard}{Pattern\+Wildcard} container node. \end{DoxyCompactList}\item 
+class \hyperlink{classtvm_1_1relay_1_1PatternWildcard}{tvm\+::relay\+::\+Pattern\+Wildcard}
+\item 
+class \hyperlink{classtvm_1_1relay_1_1PatternVarNode}{tvm\+::relay\+::\+Pattern\+Var\+Node}
+\begin{DoxyCompactList}\small\item\em \hyperlink{classtvm_1_1relay_1_1PatternVar}{Pattern\+Var} container node. \end{DoxyCompactList}\item 
+class \hyperlink{classtvm_1_1relay_1_1PatternVar}{tvm\+::relay\+::\+Pattern\+Var}
+\item 
+class \hyperlink{classtvm_1_1relay_1_1PatternConstructorNode}{tvm\+::relay\+::\+Pattern\+Constructor\+Node}
+\begin{DoxyCompactList}\small\item\em \hyperlink{classtvm_1_1relay_1_1PatternVar}{Pattern\+Var} container node. \end{DoxyCompactList}\item 
+class \hyperlink{classtvm_1_1relay_1_1PatternConstructor}{tvm\+::relay\+::\+Pattern\+Constructor}
+\item 
+class \hyperlink{classtvm_1_1relay_1_1PatternTupleNode}{tvm\+::relay\+::\+Pattern\+Tuple\+Node}
+\begin{DoxyCompactList}\small\item\em \hyperlink{classtvm_1_1relay_1_1PatternVar}{Pattern\+Var} container node. \end{DoxyCompactList}\item 
+class \hyperlink{classtvm_1_1relay_1_1PatternTuple}{tvm\+::relay\+::\+Pattern\+Tuple}
+\item 
+class \hyperlink{classtvm_1_1relay_1_1ClauseNode}{tvm\+::relay\+::\+Clause\+Node}
+\begin{DoxyCompactList}\small\item\em \hyperlink{classtvm_1_1relay_1_1Clause}{Clause} container node. \end{DoxyCompactList}\item 
+class \hyperlink{classtvm_1_1relay_1_1Clause}{tvm\+::relay\+::\+Clause}
+\item 
+class \hyperlink{classtvm_1_1relay_1_1MatchNode}{tvm\+::relay\+::\+Match\+Node}
+\begin{DoxyCompactList}\small\item\em \hyperlink{classtvm_1_1relay_1_1Match}{Match} container node. \end{DoxyCompactList}\item 
+class \hyperlink{classtvm_1_1relay_1_1Match}{tvm\+::relay\+::\+Match}
+\end{DoxyCompactItemize}
+\subsection*{Namespaces}
+\begin{DoxyCompactItemize}
+\item 
+ \hyperlink{namespacetvm}{tvm}
+\item 
+ \hyperlink{namespacetvm_1_1relay}{tvm\+::relay}
+\begin{DoxyCompactList}\small\item\em Relay\+: a high level functional IR for T\+VM. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+using \hyperlink{namespacetvm_1_1relay_aec85bf097deda59bd22e88475c9165e9}{tvm\+::relay\+::\+Constructor} = \hyperlink{classtvm_1_1Constructor}{tvm\+::\+Constructor}
+\item 
+using \hyperlink{namespacetvm_1_1relay_a6b95f70a9b44cc1c96593201594d1345}{tvm\+::relay\+::\+Constructor\+Node} = \hyperlink{classtvm_1_1ConstructorNode}{tvm\+::\+Constructor\+Node}
+\item 
+using \hyperlink{namespacetvm_1_1relay_a6e725a1cb4c83346e261eac7dc7292a8}{tvm\+::relay\+::\+Type\+Data} = \hyperlink{classtvm_1_1TypeData}{tvm\+::\+Type\+Data}
+\item 
+using \hyperlink{namespacetvm_1_1relay_a2b8c0d5920eaca88569907e92df6066f}{tvm\+::relay\+::\+Type\+Data\+Node} = \hyperlink{classtvm_1_1TypeDataNode}{tvm\+::\+Type\+Data\+Node}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Algebraic data types for Relay. 
+

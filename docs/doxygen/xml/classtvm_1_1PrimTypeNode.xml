@@ -1,0 +1,186 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="classtvm_1_1PrimTypeNode" kind="class" language="C++" prot="public">
+    <compoundname>tvm::PrimTypeNode</compoundname>
+    <basecompoundref refid="classtvm_1_1TypeNode" prot="public" virt="non-virtual">tvm::TypeNode</basecompoundref>
+    <includes refid="ir_2type_8h" local="no">type.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="classtvm_1_1PrimTypeNode_1a3095121c58f824e258f2ac2f345ae7d1" prot="public" static="no" mutable="no">
+        <type><ref refid="classtvm_1_1runtime_1_1DataType" kindref="compound">runtime::DataType</ref></type>
+        <definition>runtime::DataType tvm::PrimTypeNode::dtype</definition>
+        <argsstring></argsstring>
+        <name>dtype</name>
+        <briefdescription>
+<para>The corresponding dtype field. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/ir/type.h" line="109" column="1" bodyfile="include/tvm/ir/type.h" bodystart="109" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-attrib">
+      <memberdef kind="variable" id="classtvm_1_1PrimTypeNode_1a711129730780a378013cd8bf2e447a2b" prot="public" static="yes" mutable="no">
+        <type>constexpr const char *</type>
+        <definition>constexpr const char* tvm::PrimTypeNode::_type_key</definition>
+        <argsstring></argsstring>
+        <name>_type_key</name>
+        <initializer>= &quot;PrimType&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/ir/type.h" line="123" column="1" bodyfile="include/tvm/ir/type.h" bodystart="123" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classtvm_1_1PrimTypeNode_1a63ea742d617f0c34f2cb00ae162fd192" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void tvm::PrimTypeNode::VisitAttrs</definition>
+        <argsstring>(AttrVisitor *v)</argsstring>
+        <name>VisitAttrs</name>
+        <param>
+          <type><ref refid="classtvm_1_1AttrVisitor" kindref="compound">AttrVisitor</ref> *</type>
+          <declname>v</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/ir/type.h" line="111" column="1" bodyfile="include/tvm/ir/type.h" bodystart="111" bodyend="113"/>
+      </memberdef>
+      <memberdef kind="function" id="classtvm_1_1PrimTypeNode_1ae1ecf23e5d7a4b5338fadcf177d9ef96" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool tvm::PrimTypeNode::SEqualReduce</definition>
+        <argsstring>(const PrimTypeNode *other, SEqualReducer equal) const </argsstring>
+        <name>SEqualReduce</name>
+        <param>
+          <type>const <ref refid="classtvm_1_1PrimTypeNode" kindref="compound">PrimTypeNode</ref> *</type>
+          <declname>other</declname>
+        </param>
+        <param>
+          <type><ref refid="classtvm_1_1SEqualReducer" kindref="compound">SEqualReducer</ref></type>
+          <declname>equal</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/ir/type.h" line="115" column="1" bodyfile="include/tvm/ir/type.h" bodystart="115" bodyend="117"/>
+      </memberdef>
+      <memberdef kind="function" id="classtvm_1_1PrimTypeNode_1af08c6e0fed4402ffeed9a6fe69cf9722" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void tvm::PrimTypeNode::SHashReduce</definition>
+        <argsstring>(SHashReducer hash_reduce) const </argsstring>
+        <name>SHashReduce</name>
+        <param>
+          <type><ref refid="classtvm_1_1SHashReducer" kindref="compound">SHashReducer</ref></type>
+          <declname>hash_reduce</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/ir/type.h" line="119" column="1" bodyfile="include/tvm/ir/type.h" bodystart="119" bodyend="121"/>
+      </memberdef>
+      <memberdef kind="function" id="classtvm_1_1PrimTypeNode_1a8ac8f457c079af39001ace2e95098e95" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>tvm::PrimTypeNode::TVM_DECLARE_FINAL_OBJECT_INFO</definition>
+        <argsstring>(PrimTypeNode, TypeNode)</argsstring>
+        <name>TVM_DECLARE_FINAL_OBJECT_INFO</name>
+        <param>
+          <type><ref refid="classtvm_1_1PrimTypeNode" kindref="compound">PrimTypeNode</ref></type>
+        </param>
+        <param>
+          <type><ref refid="classtvm_1_1TypeNode" kindref="compound">TypeNode</ref></type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/ir/type.h" line="124" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Primitive data types used in the low-level IR. </para>    </briefdescription>
+    <detaileddescription>
+<para><ref refid="classtvm_1_1PrimType" kindref="compound">PrimType</ref> represents POD-values and handles that are not automatically managed by the runtime.</para><para><simplesect kind="see"><para><ref refid="classtvm_1_1PrimType" kindref="compound">PrimType</ref> </para></simplesect>
+</para>    </detaileddescription>
+    <inheritancegraph>
+      <node id="6312">
+        <label>tvm::TypeNode</label>
+        <link refid="classtvm_1_1TypeNode"/>
+        <childnode refid="6313" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="6313">
+        <label>Object</label>
+      </node>
+      <node id="6311">
+        <label>tvm::PrimTypeNode</label>
+        <link refid="classtvm_1_1PrimTypeNode"/>
+        <childnode refid="6312" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="6318">
+        <label>ObjectRef</label>
+      </node>
+      <node id="6317">
+        <label>tvm::Span</label>
+        <link refid="classtvm_1_1Span"/>
+        <childnode refid="6318" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="6315">
+        <label>tvm::TypeNode</label>
+        <link refid="classtvm_1_1TypeNode"/>
+        <childnode refid="6316" relation="public-inheritance">
+        </childnode>
+        <childnode refid="6317" relation="usage">
+          <edgelabel>+span</edgelabel>
+        </childnode>
+      </node>
+      <node id="6316">
+        <label>Object</label>
+      </node>
+      <node id="6319">
+        <label>tvm::runtime::DataType</label>
+        <link refid="classtvm_1_1runtime_1_1DataType"/>
+      </node>
+      <node id="6314">
+        <label>tvm::PrimTypeNode</label>
+        <link refid="classtvm_1_1PrimTypeNode"/>
+        <childnode refid="6315" relation="public-inheritance">
+        </childnode>
+        <childnode refid="6319" relation="usage">
+          <edgelabel>+dtype</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="include/tvm/ir/type.h" line="104" column="1" bodyfile="include/tvm/ir/type.h" bodystart="104" bodyend="125"/>
+    <listofallmembers>
+      <member refid="classtvm_1_1TypeNode_1ab02f7d165755f57689f986aca467a7e5" prot="public" virt="non-virtual"><scope>tvm::PrimTypeNode</scope><name>_type_has_method_sequal_reduce</name></member>
+      <member refid="classtvm_1_1TypeNode_1a4179c7d7d55d1141cadfd19547fb1344" prot="public" virt="non-virtual"><scope>tvm::PrimTypeNode</scope><name>_type_has_method_shash_reduce</name></member>
+      <member refid="classtvm_1_1PrimTypeNode_1a711129730780a378013cd8bf2e447a2b" prot="public" virt="non-virtual"><scope>tvm::PrimTypeNode</scope><name>_type_key</name></member>
+      <member refid="classtvm_1_1PrimTypeNode_1a3095121c58f824e258f2ac2f345ae7d1" prot="public" virt="non-virtual"><scope>tvm::PrimTypeNode</scope><name>dtype</name></member>
+      <member refid="classtvm_1_1PrimTypeNode_1ae1ecf23e5d7a4b5338fadcf177d9ef96" prot="public" virt="non-virtual"><scope>tvm::PrimTypeNode</scope><name>SEqualReduce</name></member>
+      <member refid="classtvm_1_1PrimTypeNode_1af08c6e0fed4402ffeed9a6fe69cf9722" prot="public" virt="non-virtual"><scope>tvm::PrimTypeNode</scope><name>SHashReduce</name></member>
+      <member refid="classtvm_1_1TypeNode_1a7b06d502a5162d51bb205691bbb95bb5" prot="public" virt="non-virtual"><scope>tvm::PrimTypeNode</scope><name>span</name></member>
+      <member refid="classtvm_1_1TypeNode_1abadff70e220806f889e81a0ad3bca0da" prot="public" virt="non-virtual"><scope>tvm::PrimTypeNode</scope><name>TVM_DECLARE_BASE_OBJECT_INFO</name></member>
+      <member refid="classtvm_1_1PrimTypeNode_1a8ac8f457c079af39001ace2e95098e95" prot="public" virt="non-virtual"><scope>tvm::PrimTypeNode</scope><name>TVM_DECLARE_FINAL_OBJECT_INFO</name></member>
+      <member refid="classtvm_1_1PrimTypeNode_1a63ea742d617f0c34f2cb00ae162fd192" prot="public" virt="non-virtual"><scope>tvm::PrimTypeNode</scope><name>VisitAttrs</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

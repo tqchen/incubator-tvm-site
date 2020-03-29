@@ -1,0 +1,2470 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="namespacetvm_1_1relay" kind="namespace" language="C++">
+    <compoundname>tvm::relay</compoundname>
+    <innerclass refid="structtvm_1_1relay_1_1AdaptivePool2DAttrs" prot="public">tvm::relay::AdaptivePool2DAttrs</innerclass>
+    <innerclass refid="structtvm_1_1relay_1_1AdaptivePool3DAttrs" prot="public">tvm::relay::AdaptivePool3DAttrs</innerclass>
+    <innerclass refid="structtvm_1_1relay_1_1AllocTensorAttrs" prot="public">tvm::relay::AllocTensorAttrs</innerclass>
+    <innerclass refid="structtvm_1_1relay_1_1ArangeAttrs" prot="public">tvm::relay::ArangeAttrs</innerclass>
+    <innerclass refid="structtvm_1_1relay_1_1ArgsortAttrs" prot="public">tvm::relay::ArgsortAttrs</innerclass>
+    <innerclass refid="structtvm_1_1relay_1_1AvgPool1DAttrs" prot="public">tvm::relay::AvgPool1DAttrs</innerclass>
+    <innerclass refid="structtvm_1_1relay_1_1AvgPool2DAttrs" prot="public">tvm::relay::AvgPool2DAttrs</innerclass>
+    <innerclass refid="structtvm_1_1relay_1_1AvgPool3DAttrs" prot="public">tvm::relay::AvgPool3DAttrs</innerclass>
+    <innerclass refid="structtvm_1_1relay_1_1BatchNormAttrs" prot="public">tvm::relay::BatchNormAttrs</innerclass>
+    <innerclass refid="structtvm_1_1relay_1_1BiasAddAttrs" prot="public">tvm::relay::BiasAddAttrs</innerclass>
+    <innerclass refid="structtvm_1_1relay_1_1BinaryConv2DAttrs" prot="public">tvm::relay::BinaryConv2DAttrs</innerclass>
+    <innerclass refid="structtvm_1_1relay_1_1BinaryDenseAttrs" prot="public">tvm::relay::BinaryDenseAttrs</innerclass>
+    <innerclass refid="structtvm_1_1relay_1_1BitPackAttrs" prot="public">tvm::relay::BitPackAttrs</innerclass>
+    <innerclass refid="classtvm_1_1relay_1_1Call" prot="public">tvm::relay::Call</innerclass>
+    <innerclass refid="classtvm_1_1relay_1_1CallNode" prot="public">tvm::relay::CallNode</innerclass>
+    <innerclass refid="structtvm_1_1relay_1_1CastAttrs" prot="public">tvm::relay::CastAttrs</innerclass>
+    <innerclass refid="structtvm_1_1relay_1_1CastHintAttrs" prot="public">tvm::relay::CastHintAttrs</innerclass>
+    <innerclass refid="classtvm_1_1relay_1_1Clause" prot="public">tvm::relay::Clause</innerclass>
+    <innerclass refid="classtvm_1_1relay_1_1ClauseNode" prot="public">tvm::relay::ClauseNode</innerclass>
+    <innerclass refid="structtvm_1_1relay_1_1ClipAttrs" prot="public">tvm::relay::ClipAttrs</innerclass>
+    <innerclass refid="structtvm_1_1relay_1_1CompilerAttrs" prot="public">tvm::relay::CompilerAttrs</innerclass>
+    <innerclass refid="structtvm_1_1relay_1_1ConcatenateAttrs" prot="public">tvm::relay::ConcatenateAttrs</innerclass>
+    <innerclass refid="classtvm_1_1relay_1_1Constant" prot="public">tvm::relay::Constant</innerclass>
+    <innerclass refid="classtvm_1_1relay_1_1ConstantNode" prot="public">tvm::relay::ConstantNode</innerclass>
+    <innerclass refid="classtvm_1_1relay_1_1ConstructorValue" prot="public">tvm::relay::ConstructorValue</innerclass>
+    <innerclass refid="structtvm_1_1relay_1_1ConstructorValueObj" prot="public">tvm::relay::ConstructorValueObj</innerclass>
+    <innerclass refid="structtvm_1_1relay_1_1Conv1DAttrs" prot="public">tvm::relay::Conv1DAttrs</innerclass>
+    <innerclass refid="structtvm_1_1relay_1_1Conv1DTransposeAttrs" prot="public">tvm::relay::Conv1DTransposeAttrs</innerclass>
+    <innerclass refid="structtvm_1_1relay_1_1Conv2DAttrs" prot="public">tvm::relay::Conv2DAttrs</innerclass>
+    <innerclass refid="structtvm_1_1relay_1_1Conv2DTransposeAttrs" prot="public">tvm::relay::Conv2DTransposeAttrs</innerclass>
+    <innerclass refid="structtvm_1_1relay_1_1Conv2DWinogradAttrs" prot="public">tvm::relay::Conv2DWinogradAttrs</innerclass>
+    <innerclass refid="structtvm_1_1relay_1_1Conv2DWinogradNNPACKWeightTransformAttrs" prot="public">tvm::relay::Conv2DWinogradNNPACKWeightTransformAttrs</innerclass>
+    <innerclass refid="structtvm_1_1relay_1_1Conv2DWinogradWeightTransformAttrs" prot="public">tvm::relay::Conv2DWinogradWeightTransformAttrs</innerclass>
+    <innerclass refid="structtvm_1_1relay_1_1Conv3DAttrs" prot="public">tvm::relay::Conv3DAttrs</innerclass>
+    <innerclass refid="structtvm_1_1relay_1_1CropAndResizeAttrs" prot="public">tvm::relay::CropAndResizeAttrs</innerclass>
+    <innerclass refid="structtvm_1_1relay_1_1DebugAttrs" prot="public">tvm::relay::DebugAttrs</innerclass>
+    <innerclass refid="structtvm_1_1relay_1_1DeformableConv2DAttrs" prot="public">tvm::relay::DeformableConv2DAttrs</innerclass>
+    <innerclass refid="structtvm_1_1relay_1_1DenseAttrs" prot="public">tvm::relay::DenseAttrs</innerclass>
+    <innerclass refid="structtvm_1_1relay_1_1DeviceCopyAttrs" prot="public">tvm::relay::DeviceCopyAttrs</innerclass>
+    <innerclass refid="structtvm_1_1relay_1_1Dilation2DAttrs" prot="public">tvm::relay::Dilation2DAttrs</innerclass>
+    <innerclass refid="structtvm_1_1relay_1_1DropoutAttrs" prot="public">tvm::relay::DropoutAttrs</innerclass>
+    <innerclass refid="structtvm_1_1relay_1_1ExpandDimsAttrs" prot="public">tvm::relay::ExpandDimsAttrs</innerclass>
+    <innerclass refid="classtvm_1_1relay_1_1ExprFunctor" prot="public">tvm::relay::ExprFunctor</innerclass>
+    <innerclass refid="classtvm_1_1relay_1_1ExprFunctor_3_01R_07const_01Expr_01_6n_00_01Args_8_8_8_08_4" prot="public">tvm::relay::ExprFunctor&lt; R(const Expr &amp;n, Args...)&gt;</innerclass>
+    <innerclass refid="classtvm_1_1relay_1_1ExprMutator" prot="public">tvm::relay::ExprMutator</innerclass>
+    <innerclass refid="classtvm_1_1relay_1_1ExprVisitor" prot="public">tvm::relay::ExprVisitor</innerclass>
+    <innerclass refid="classtvm_1_1relay_1_1FeatureSet" prot="public">tvm::relay::FeatureSet</innerclass>
+    <innerclass refid="structtvm_1_1relay_1_1FIFOBufferAttrs" prot="public">tvm::relay::FIFOBufferAttrs</innerclass>
+    <innerclass refid="classtvm_1_1relay_1_1Function" prot="public">tvm::relay::Function</innerclass>
+    <innerclass refid="classtvm_1_1relay_1_1FunctionNode" prot="public">tvm::relay::FunctionNode</innerclass>
+    <innerclass refid="structtvm_1_1relay_1_1GetValidCountsAttrs" prot="public">tvm::relay::GetValidCountsAttrs</innerclass>
+    <innerclass refid="structtvm_1_1relay_1_1GlobalPool2DAttrs" prot="public">tvm::relay::GlobalPool2DAttrs</innerclass>
+    <innerclass refid="classtvm_1_1relay_1_1Id" prot="public">tvm::relay::Id</innerclass>
+    <innerclass refid="classtvm_1_1relay_1_1IdNode" prot="public">tvm::relay::IdNode</innerclass>
+    <innerclass refid="classtvm_1_1relay_1_1If" prot="public">tvm::relay::If</innerclass>
+    <innerclass refid="classtvm_1_1relay_1_1IfNode" prot="public">tvm::relay::IfNode</innerclass>
+    <innerclass refid="structtvm_1_1relay_1_1InitOpAttrs" prot="public">tvm::relay::InitOpAttrs</innerclass>
+    <innerclass refid="structtvm_1_1relay_1_1InstanceNormAttrs" prot="public">tvm::relay::InstanceNormAttrs</innerclass>
+    <innerclass refid="classtvm_1_1relay_1_1InterpreterClosure" prot="public">tvm::relay::InterpreterClosure</innerclass>
+    <innerclass refid="classtvm_1_1relay_1_1InterpreterClosureObj" prot="public">tvm::relay::InterpreterClosureObj</innerclass>
+    <innerclass refid="structtvm_1_1relay_1_1L2NormalizeAttrs" prot="public">tvm::relay::L2NormalizeAttrs</innerclass>
+    <innerclass refid="structtvm_1_1relay_1_1LayerNormAttrs" prot="public">tvm::relay::LayerNormAttrs</innerclass>
+    <innerclass refid="structtvm_1_1relay_1_1LayoutTransformAttrs" prot="public">tvm::relay::LayoutTransformAttrs</innerclass>
+    <innerclass refid="structtvm_1_1relay_1_1LeakyReluAttrs" prot="public">tvm::relay::LeakyReluAttrs</innerclass>
+    <innerclass refid="classtvm_1_1relay_1_1Let" prot="public">tvm::relay::Let</innerclass>
+    <innerclass refid="classtvm_1_1relay_1_1LetNode" prot="public">tvm::relay::LetNode</innerclass>
+    <innerclass refid="structtvm_1_1relay_1_1LRNAttrs" prot="public">tvm::relay::LRNAttrs</innerclass>
+    <innerclass refid="classtvm_1_1relay_1_1Match" prot="public">tvm::relay::Match</innerclass>
+    <innerclass refid="classtvm_1_1relay_1_1MatchNode" prot="public">tvm::relay::MatchNode</innerclass>
+    <innerclass refid="structtvm_1_1relay_1_1MaxPool1DAttrs" prot="public">tvm::relay::MaxPool1DAttrs</innerclass>
+    <innerclass refid="structtvm_1_1relay_1_1MaxPool2DAttrs" prot="public">tvm::relay::MaxPool2DAttrs</innerclass>
+    <innerclass refid="structtvm_1_1relay_1_1MaxPool3DAttrs" prot="public">tvm::relay::MaxPool3DAttrs</innerclass>
+    <innerclass refid="structtvm_1_1relay_1_1MirrorPadAttrs" prot="public">tvm::relay::MirrorPadAttrs</innerclass>
+    <innerclass refid="structtvm_1_1relay_1_1MultiBoxPriorAttrs" prot="public">tvm::relay::MultiBoxPriorAttrs</innerclass>
+    <innerclass refid="structtvm_1_1relay_1_1MultiBoxTransformLocAttrs" prot="public">tvm::relay::MultiBoxTransformLocAttrs</innerclass>
+    <innerclass refid="structtvm_1_1relay_1_1NdarraySizeAttrs" prot="public">tvm::relay::NdarraySizeAttrs</innerclass>
+    <innerclass refid="structtvm_1_1relay_1_1NonMaximumSuppressionAttrs" prot="public">tvm::relay::NonMaximumSuppressionAttrs</innerclass>
+    <innerclass refid="structtvm_1_1relay_1_1OnDeviceAttrs" prot="public">tvm::relay::OnDeviceAttrs</innerclass>
+    <innerclass refid="structtvm_1_1relay_1_1OneHotAttrs" prot="public">tvm::relay::OneHotAttrs</innerclass>
+    <innerclass refid="classtvm_1_1relay_1_1OpImplementation" prot="public">tvm::relay::OpImplementation</innerclass>
+    <innerclass refid="classtvm_1_1relay_1_1OpImplementationNode" prot="public">tvm::relay::OpImplementationNode</innerclass>
+    <innerclass refid="classtvm_1_1relay_1_1OpSpecialization" prot="public">tvm::relay::OpSpecialization</innerclass>
+    <innerclass refid="classtvm_1_1relay_1_1OpSpecializationNode" prot="public">tvm::relay::OpSpecializationNode</innerclass>
+    <innerclass refid="classtvm_1_1relay_1_1OpStrategy" prot="public">tvm::relay::OpStrategy</innerclass>
+    <innerclass refid="classtvm_1_1relay_1_1OpStrategyNode" prot="public">tvm::relay::OpStrategyNode</innerclass>
+    <innerclass refid="structtvm_1_1relay_1_1PadAttrs" prot="public">tvm::relay::PadAttrs</innerclass>
+    <innerclass refid="classtvm_1_1relay_1_1Pattern" prot="public">tvm::relay::Pattern</innerclass>
+    <innerclass refid="classtvm_1_1relay_1_1PatternConstructor" prot="public">tvm::relay::PatternConstructor</innerclass>
+    <innerclass refid="classtvm_1_1relay_1_1PatternConstructorNode" prot="public">tvm::relay::PatternConstructorNode</innerclass>
+    <innerclass refid="classtvm_1_1relay_1_1PatternFunctor" prot="public">tvm::relay::PatternFunctor</innerclass>
+    <innerclass refid="classtvm_1_1relay_1_1PatternFunctor_3_01R_07const_01Pattern_01_6n_00_01Args_8_8_8_08_4" prot="public">tvm::relay::PatternFunctor&lt; R(const Pattern &amp;n, Args...)&gt;</innerclass>
+    <innerclass refid="classtvm_1_1relay_1_1PatternMutator" prot="public">tvm::relay::PatternMutator</innerclass>
+    <innerclass refid="classtvm_1_1relay_1_1PatternNode" prot="public">tvm::relay::PatternNode</innerclass>
+    <innerclass refid="classtvm_1_1relay_1_1PatternTuple" prot="public">tvm::relay::PatternTuple</innerclass>
+    <innerclass refid="classtvm_1_1relay_1_1PatternTupleNode" prot="public">tvm::relay::PatternTupleNode</innerclass>
+    <innerclass refid="classtvm_1_1relay_1_1PatternVar" prot="public">tvm::relay::PatternVar</innerclass>
+    <innerclass refid="classtvm_1_1relay_1_1PatternVarNode" prot="public">tvm::relay::PatternVarNode</innerclass>
+    <innerclass refid="classtvm_1_1relay_1_1PatternVisitor" prot="public">tvm::relay::PatternVisitor</innerclass>
+    <innerclass refid="classtvm_1_1relay_1_1PatternWildcard" prot="public">tvm::relay::PatternWildcard</innerclass>
+    <innerclass refid="classtvm_1_1relay_1_1PatternWildcardNode" prot="public">tvm::relay::PatternWildcardNode</innerclass>
+    <innerclass refid="structtvm_1_1relay_1_1PReluAttrs" prot="public">tvm::relay::PReluAttrs</innerclass>
+    <innerclass refid="structtvm_1_1relay_1_1ProposalAttrs" prot="public">tvm::relay::ProposalAttrs</innerclass>
+    <innerclass refid="classtvm_1_1relay_1_1RecClosure" prot="public">tvm::relay::RecClosure</innerclass>
+    <innerclass refid="classtvm_1_1relay_1_1RecClosureObj" prot="public">tvm::relay::RecClosureObj</innerclass>
+    <innerclass refid="structtvm_1_1relay_1_1ReduceAttrs" prot="public">tvm::relay::ReduceAttrs</innerclass>
+    <innerclass refid="classtvm_1_1relay_1_1RefCreate" prot="public">tvm::relay::RefCreate</innerclass>
+    <innerclass refid="classtvm_1_1relay_1_1RefCreateNode" prot="public">tvm::relay::RefCreateNode</innerclass>
+    <innerclass refid="classtvm_1_1relay_1_1RefRead" prot="public">tvm::relay::RefRead</innerclass>
+    <innerclass refid="classtvm_1_1relay_1_1RefReadNode" prot="public">tvm::relay::RefReadNode</innerclass>
+    <innerclass refid="classtvm_1_1relay_1_1RefValue" prot="public">tvm::relay::RefValue</innerclass>
+    <innerclass refid="structtvm_1_1relay_1_1RefValueObj" prot="public">tvm::relay::RefValueObj</innerclass>
+    <innerclass refid="classtvm_1_1relay_1_1RefWrite" prot="public">tvm::relay::RefWrite</innerclass>
+    <innerclass refid="classtvm_1_1relay_1_1RefWriteNode" prot="public">tvm::relay::RefWriteNode</innerclass>
+    <innerclass refid="classtvm_1_1relay_1_1RelayNode" prot="public">tvm::relay::RelayNode</innerclass>
+    <innerclass refid="structtvm_1_1relay_1_1RepeatAttrs" prot="public">tvm::relay::RepeatAttrs</innerclass>
+    <innerclass refid="structtvm_1_1relay_1_1ReshapeAttrs" prot="public">tvm::relay::ReshapeAttrs</innerclass>
+    <innerclass refid="structtvm_1_1relay_1_1ResizeAttrs" prot="public">tvm::relay::ResizeAttrs</innerclass>
+    <innerclass refid="structtvm_1_1relay_1_1ReverseAttrs" prot="public">tvm::relay::ReverseAttrs</innerclass>
+    <innerclass refid="structtvm_1_1relay_1_1ROIAlignAttrs" prot="public">tvm::relay::ROIAlignAttrs</innerclass>
+    <innerclass refid="structtvm_1_1relay_1_1ROIPoolAttrs" prot="public">tvm::relay::ROIPoolAttrs</innerclass>
+    <innerclass refid="structtvm_1_1relay_1_1SequenceMaskAttrs" prot="public">tvm::relay::SequenceMaskAttrs</innerclass>
+    <innerclass refid="structtvm_1_1relay_1_1ShapeFuncAttrs" prot="public">tvm::relay::ShapeFuncAttrs</innerclass>
+    <innerclass refid="structtvm_1_1relay_1_1ShapeOfAttrs" prot="public">tvm::relay::ShapeOfAttrs</innerclass>
+    <innerclass refid="structtvm_1_1relay_1_1SliceLikeAttrs" prot="public">tvm::relay::SliceLikeAttrs</innerclass>
+    <innerclass refid="structtvm_1_1relay_1_1SoftmaxAttrs" prot="public">tvm::relay::SoftmaxAttrs</innerclass>
+    <innerclass refid="structtvm_1_1relay_1_1SparseDenseAttrs" prot="public">tvm::relay::SparseDenseAttrs</innerclass>
+    <innerclass refid="structtvm_1_1relay_1_1SparseTransposeAttrs" prot="public">tvm::relay::SparseTransposeAttrs</innerclass>
+    <innerclass refid="structtvm_1_1relay_1_1SplitAttrs" prot="public">tvm::relay::SplitAttrs</innerclass>
+    <innerclass refid="structtvm_1_1relay_1_1SqueezeAttrs" prot="public">tvm::relay::SqueezeAttrs</innerclass>
+    <innerclass refid="structtvm_1_1relay_1_1StackAttrs" prot="public">tvm::relay::StackAttrs</innerclass>
+    <innerclass refid="structtvm_1_1relay_1_1StridedSliceAttrs" prot="public">tvm::relay::StridedSliceAttrs</innerclass>
+    <innerclass refid="structtvm_1_1relay_1_1StructuralHash" prot="public">tvm::relay::StructuralHash</innerclass>
+    <innerclass refid="structtvm_1_1relay_1_1SubPixelAttrs" prot="public">tvm::relay::SubPixelAttrs</innerclass>
+    <innerclass refid="structtvm_1_1relay_1_1TakeAttrs" prot="public">tvm::relay::TakeAttrs</innerclass>
+    <innerclass refid="classtvm_1_1relay_1_1TempExpr" prot="public">tvm::relay::TempExpr</innerclass>
+    <innerclass refid="classtvm_1_1relay_1_1TempExprNode" prot="public">tvm::relay::TempExprNode</innerclass>
+    <innerclass refid="structtvm_1_1relay_1_1TileAttrs" prot="public">tvm::relay::TileAttrs</innerclass>
+    <innerclass refid="structtvm_1_1relay_1_1TopKAttrs" prot="public">tvm::relay::TopKAttrs</innerclass>
+    <innerclass refid="structtvm_1_1relay_1_1TransposeAttrs" prot="public">tvm::relay::TransposeAttrs</innerclass>
+    <innerclass refid="classtvm_1_1relay_1_1Tuple" prot="public">tvm::relay::Tuple</innerclass>
+    <innerclass refid="classtvm_1_1relay_1_1TupleGetItem" prot="public">tvm::relay::TupleGetItem</innerclass>
+    <innerclass refid="classtvm_1_1relay_1_1TupleGetItemNode" prot="public">tvm::relay::TupleGetItemNode</innerclass>
+    <innerclass refid="classtvm_1_1relay_1_1TupleNode" prot="public">tvm::relay::TupleNode</innerclass>
+    <innerclass refid="structtvm_1_1relay_1_1UpSampling3DAttrs" prot="public">tvm::relay::UpSampling3DAttrs</innerclass>
+    <innerclass refid="structtvm_1_1relay_1_1UpSamplingAttrs" prot="public">tvm::relay::UpSamplingAttrs</innerclass>
+    <innerclass refid="classtvm_1_1relay_1_1Var" prot="public">tvm::relay::Var</innerclass>
+    <innerclass refid="classtvm_1_1relay_1_1VarNode" prot="public">tvm::relay::VarNode</innerclass>
+    <innerclass refid="structtvm_1_1relay_1_1YoloReorgAttrs" prot="public">tvm::relay::YoloReorgAttrs</innerclass>
+    <innernamespace refid="namespacetvm_1_1relay_1_1attr">tvm::relay::attr</innernamespace>
+    <innernamespace refid="namespacetvm_1_1relay_1_1qnn">tvm::relay::qnn</innernamespace>
+    <innernamespace refid="namespacetvm_1_1relay_1_1transform">tvm::relay::transform</innernamespace>
+      <sectiondef kind="enum">
+      <memberdef kind="enum" id="namespacetvm_1_1relay_1a926750aeda977340aa82bceac863fc9e" prot="public" static="no">
+        <name>Feature</name>
+        <enumvalue id="namespacetvm_1_1relay_1a926750aeda977340aa82bceac863fc9ea42a71e7934e2efe344713b17c426eecd" prot="public">
+          <name>fVar</name>
+          <initializer>= 0</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacetvm_1_1relay_1a926750aeda977340aa82bceac863fc9eae9b152650b0ebe6dbc1b42e0f84d567f" prot="public">
+          <name>fGlobalVar</name>
+          <initializer>= 1</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacetvm_1_1relay_1a926750aeda977340aa82bceac863fc9ea29eacc09610a7fd43026682238aae25f" prot="public">
+          <name>fConstant</name>
+          <initializer>= 2</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacetvm_1_1relay_1a926750aeda977340aa82bceac863fc9eaa2fe12a180d97822c440e169dc287e66" prot="public">
+          <name>fTuple</name>
+          <initializer>= 3</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacetvm_1_1relay_1a926750aeda977340aa82bceac863fc9ea4d2cb67f2e197880e0971286f2ffb498" prot="public">
+          <name>fTupleGetItem</name>
+          <initializer>= 4</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacetvm_1_1relay_1a926750aeda977340aa82bceac863fc9ea3b367d0501427ea782137266a2fb77fa" prot="public">
+          <name>fFunction</name>
+          <initializer>= 5</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacetvm_1_1relay_1a926750aeda977340aa82bceac863fc9eaca21bd0f67c01c6f7b82a1596cdfdf8b" prot="public">
+          <name>fOp</name>
+          <initializer>= 6</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacetvm_1_1relay_1a926750aeda977340aa82bceac863fc9ea5f3d3030d2ed56e5a47329e29f12ef02" prot="public">
+          <name>fCall</name>
+          <initializer>= 7</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacetvm_1_1relay_1a926750aeda977340aa82bceac863fc9ea07ce432e7b4b4c044af03e4dbd210ba4" prot="public">
+          <name>fLet</name>
+          <initializer>= 8</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacetvm_1_1relay_1a926750aeda977340aa82bceac863fc9ea4e6b686fb15d50c4aef2316bef53a781" prot="public">
+          <name>fIf</name>
+          <initializer>= 9</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacetvm_1_1relay_1a926750aeda977340aa82bceac863fc9ea46daa677c87c05e68258acea3579443d" prot="public">
+          <name>fRefCreate</name>
+          <initializer>= 10</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacetvm_1_1relay_1a926750aeda977340aa82bceac863fc9ea7c9e5e3d738c26c3ed34099f44f66251" prot="public">
+          <name>fRefRead</name>
+          <initializer>= 11</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacetvm_1_1relay_1a926750aeda977340aa82bceac863fc9ea4737da29588504f7f31cf4fb52925d63" prot="public">
+          <name>fRefWrite</name>
+          <initializer>= 12</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacetvm_1_1relay_1a926750aeda977340aa82bceac863fc9eaff71be930d862c312a5ae263e71167a2" prot="public">
+          <name>fConstructor</name>
+          <initializer>= 13</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacetvm_1_1relay_1a926750aeda977340aa82bceac863fc9ea53a8eba57c4a3abd37b4c96fb98bf61b" prot="public">
+          <name>fMatch</name>
+          <initializer>= 14</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacetvm_1_1relay_1a926750aeda977340aa82bceac863fc9eac6392a0ecc7df38dbfa282a54d3718d1" prot="public">
+          <name>fGraph</name>
+          <initializer>= 15</initializer>
+          <briefdescription>
+<para>Whether any non-atom fragment of the program is shared, making the program a graph. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacetvm_1_1relay_1a926750aeda977340aa82bceac863fc9eaff508e399703958af46f99ee8eb7d1a5" prot="public">
+          <name>fLetRec</name>
+          <initializer>= 16</initializer>
+          <briefdescription>
+<para>Whether there is local fixpoint in the program. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para>Different kinds of relay feature a program might use. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/relay/feature.h" line="37" column="1" bodyfile="include/tvm/relay/feature.h" bodystart="37" bodyend="57"/>
+      </memberdef>
+      <memberdef kind="enum" id="namespacetvm_1_1relay_1ab5f4d382bf1bee69c3e484ea6c837578" prot="public" static="no">
+        <name>OpPatternKind</name>
+        <enumvalue id="namespacetvm_1_1relay_1ab5f4d382bf1bee69c3e484ea6c837578a8c63d345994ce14eb197df6ad22de3aa" prot="public">
+          <name>kElemWise</name>
+          <initializer>= 0</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacetvm_1_1relay_1ab5f4d382bf1bee69c3e484ea6c837578a3c016b63ef8869468ab565c862713245" prot="public">
+          <name>kBroadcast</name>
+          <initializer>= 1</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacetvm_1_1relay_1ab5f4d382bf1bee69c3e484ea6c837578a7f703d1ae163ba4e6bef88357a232e00" prot="public">
+          <name>kInjective</name>
+          <initializer>= 2</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacetvm_1_1relay_1ab5f4d382bf1bee69c3e484ea6c837578ad282ac05b650598c3bfb559dc62a0738" prot="public">
+          <name>kCommReduce</name>
+          <initializer>= 3</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacetvm_1_1relay_1ab5f4d382bf1bee69c3e484ea6c837578ab9b265465c486425c2f60cd4057e2ef4" prot="public">
+          <name>kOutEWiseFusable</name>
+          <initializer>= 4</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacetvm_1_1relay_1ab5f4d382bf1bee69c3e484ea6c837578ae5610688419b90595a0701fe007a2ebb" prot="public">
+          <name>kTuple</name>
+          <initializer>= 7</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacetvm_1_1relay_1ab5f4d382bf1bee69c3e484ea6c837578a3cb3cec00829ebd525feba875f2d6ac1" prot="public">
+          <name>kOpaque</name>
+          <initializer>= 8</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para>operator pattern used in graph fusion </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/relay/op_attr_types.h" line="44" column="1" bodyfile="include/tvm/relay/op_attr_types.h" bodystart="44" bodyend="64"/>
+      </memberdef>
+      <memberdef kind="enum" id="namespacetvm_1_1relay_1adab76fedc831b249d1c80d69c4a620a3" prot="public" static="no">
+        <name>AnyCodegenStrategy</name>
+        <enumvalue id="namespacetvm_1_1relay_1adab76fedc831b249d1c80d69c4a620a3a1a3550732b0caf3981198af2c1373542" prot="public">
+          <name>kVariableDimensions</name>
+          <briefdescription>
+<para>The default strategy of using completely variable dimensions. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para>The codegeneration strategy for dynamic dimensions. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/relay/op_attr_types.h" line="228" column="1" bodyfile="include/tvm/relay/op_attr_types.h" bodystart="228" bodyend="231"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="typedef">
+      <memberdef kind="typedef" id="namespacetvm_1_1relay_1aec85bf097deda59bd22e88475c9165e9" prot="public" static="no">
+        <type><ref refid="classtvm_1_1Constructor" kindref="compound">tvm::Constructor</ref></type>
+        <definition>using tvm::relay::Constructor = typedef tvm::Constructor</definition>
+        <argsstring></argsstring>
+        <name>Constructor</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/relay/adt.h" line="39" column="1" bodyfile="include/tvm/relay/adt.h" bodystart="39" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="namespacetvm_1_1relay_1a6b95f70a9b44cc1c96593201594d1345" prot="public" static="no">
+        <type><ref refid="classtvm_1_1ConstructorNode" kindref="compound">tvm::ConstructorNode</ref></type>
+        <definition>using tvm::relay::ConstructorNode = typedef tvm::ConstructorNode</definition>
+        <argsstring></argsstring>
+        <name>ConstructorNode</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/relay/adt.h" line="40" column="1" bodyfile="include/tvm/relay/adt.h" bodystart="40" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="namespacetvm_1_1relay_1a6e725a1cb4c83346e261eac7dc7292a8" prot="public" static="no">
+        <type><ref refid="classtvm_1_1TypeData" kindref="compound">tvm::TypeData</ref></type>
+        <definition>using tvm::relay::TypeData = typedef tvm::TypeData</definition>
+        <argsstring></argsstring>
+        <name>TypeData</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/relay/adt.h" line="42" column="1" bodyfile="include/tvm/relay/adt.h" bodystart="42" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="namespacetvm_1_1relay_1a2b8c0d5920eaca88569907e92df6066f" prot="public" static="no">
+        <type><ref refid="classtvm_1_1TypeDataNode" kindref="compound">tvm::TypeDataNode</ref></type>
+        <definition>using tvm::relay::TypeDataNode = typedef tvm::TypeDataNode</definition>
+        <argsstring></argsstring>
+        <name>TypeDataNode</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/relay/adt.h" line="43" column="1" bodyfile="include/tvm/relay/adt.h" bodystart="43" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="namespacetvm_1_1relay_1ae153a27d81399fd266b8d598227764c4" prot="public" static="no">
+        <type>::<ref refid="classtvm_1_1PrimExpr" kindref="compound">tvm::PrimExpr</ref></type>
+        <definition>using tvm::relay::IndexExpr = typedef ::tvm::PrimExpr</definition>
+        <argsstring></argsstring>
+        <name>IndexExpr</name>
+        <briefdescription>
+<para>Symbolic expression for tensor shape. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/relay/base.h" line="60" column="1" bodyfile="include/tvm/relay/base.h" bodystart="60" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="namespacetvm_1_1relay_1a14eacafcb803b0757e48654bb1bac655" prot="public" static="no">
+        <type><ref refid="classtvm_1_1SourceName" kindref="compound">tvm::SourceName</ref></type>
+        <definition>using tvm::relay::SourceName = typedef tvm::SourceName</definition>
+        <argsstring></argsstring>
+        <name>SourceName</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/relay/base.h" line="62" column="1" bodyfile="include/tvm/relay/base.h" bodystart="62" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="namespacetvm_1_1relay_1af40ca6124bc2e88f2323eeb79d326cc0" prot="public" static="no">
+        <type><ref refid="classtvm_1_1Span" kindref="compound">tvm::Span</ref></type>
+        <definition>using tvm::relay::Span = typedef tvm::Span</definition>
+        <argsstring></argsstring>
+        <name>Span</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/relay/base.h" line="63" column="1" bodyfile="include/tvm/relay/base.h" bodystart="63" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="namespacetvm_1_1relay_1a7d0fa6578e97d0d64b08865f94f04827" prot="public" static="no">
+        <type><ref refid="classtvm_1_1SpanNode" kindref="compound">tvm::SpanNode</ref></type>
+        <definition>using tvm::relay::SpanNode = typedef tvm::SpanNode</definition>
+        <argsstring></argsstring>
+        <name>SpanNode</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/relay/base.h" line="64" column="1" bodyfile="include/tvm/relay/base.h" bodystart="64" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="namespacetvm_1_1relay_1a5b84e3790f89bb3fad5c7911eeb99531" prot="public" static="no">
+        <type><ref refid="classtvm_1_1RelayExpr" kindref="compound">tvm::RelayExpr</ref></type>
+        <definition>using tvm::relay::Expr = typedef tvm::RelayExpr</definition>
+        <argsstring></argsstring>
+        <name>Expr</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/relay/expr.h" line="39" column="1" bodyfile="include/tvm/relay/expr.h" bodystart="39" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="namespacetvm_1_1relay_1a387f18e050d016c52ea6c4781e7cff6c" prot="public" static="no">
+        <type><ref refid="classtvm_1_1RelayExprNode" kindref="compound">tvm::RelayExprNode</ref></type>
+        <definition>using tvm::relay::ExprNode = typedef tvm::RelayExprNode</definition>
+        <argsstring></argsstring>
+        <name>ExprNode</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/relay/expr.h" line="40" column="1" bodyfile="include/tvm/relay/expr.h" bodystart="40" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="namespacetvm_1_1relay_1acbaff2ae7feec23fea55e025a9cc1b76" prot="public" static="no">
+        <type><ref refid="classtvm_1_1BaseFunc" kindref="compound">tvm::BaseFunc</ref></type>
+        <definition>using tvm::relay::BaseFunc = typedef tvm::BaseFunc</definition>
+        <argsstring></argsstring>
+        <name>BaseFunc</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/relay/expr.h" line="41" column="1" bodyfile="include/tvm/relay/expr.h" bodystart="41" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="namespacetvm_1_1relay_1a4edf28d1226abc08d28bc2fd90ce7b42" prot="public" static="no">
+        <type><ref refid="classtvm_1_1BaseFuncNode" kindref="compound">tvm::BaseFuncNode</ref></type>
+        <definition>using tvm::relay::BaseFuncNode = typedef tvm::BaseFuncNode</definition>
+        <argsstring></argsstring>
+        <name>BaseFuncNode</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/relay/expr.h" line="42" column="1" bodyfile="include/tvm/relay/expr.h" bodystart="42" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="namespacetvm_1_1relay_1a81ac7c3d0824529fddce7849c9c66289" prot="public" static="no">
+        <type><ref refid="classtvm_1_1GlobalVar" kindref="compound">tvm::GlobalVar</ref></type>
+        <definition>using tvm::relay::GlobalVar = typedef tvm::GlobalVar</definition>
+        <argsstring></argsstring>
+        <name>GlobalVar</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/relay/expr.h" line="43" column="1" bodyfile="include/tvm/relay/expr.h" bodystart="43" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="namespacetvm_1_1relay_1afe7144195dbbc914183189444ef6a347" prot="public" static="no">
+        <type><ref refid="classtvm_1_1GlobalVarNode" kindref="compound">tvm::GlobalVarNode</ref></type>
+        <definition>using tvm::relay::GlobalVarNode = typedef tvm::GlobalVarNode</definition>
+        <argsstring></argsstring>
+        <name>GlobalVarNode</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/relay/expr.h" line="44" column="1" bodyfile="include/tvm/relay/expr.h" bodystart="44" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="namespacetvm_1_1relay_1a6c46d15e80f1a9916b8e9c264a185c98" prot="public" static="no">
+        <type><ref refid="classtvm_1_1Op" kindref="compound">tvm::Op</ref></type>
+        <definition>using tvm::relay::Op = typedef tvm::Op</definition>
+        <argsstring></argsstring>
+        <name>Op</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/relay/op.h" line="34" column="1" bodyfile="include/tvm/relay/op.h" bodystart="34" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="namespacetvm_1_1relay_1ac9d4f2cf78a48659817a88d890e1d142" prot="public" static="no">
+        <type><ref refid="classtvm_1_1OpNode" kindref="compound">tvm::OpNode</ref></type>
+        <definition>using tvm::relay::OpNode = typedef tvm::OpNode</definition>
+        <argsstring></argsstring>
+        <name>OpNode</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/relay/op.h" line="35" column="1" bodyfile="include/tvm/relay/op.h" bodystart="35" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="namespacetvm_1_1relay_1a5dab2ddae20ac7564a81ab3a0a9aba76" prot="public" static="no">
+        <type>int</type>
+        <definition>using tvm::relay::TOpPattern = typedef int</definition>
+        <argsstring></argsstring>
+        <name>TOpPattern</name>
+        <briefdescription>
+<para>the operator pattern </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/relay/op_attr_types.h" line="67" column="1" bodyfile="include/tvm/relay/op_attr_types.h" bodystart="67" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="namespacetvm_1_1relay_1afb8a8d4dd43830d4ce7d566abcd1c450" prot="public" static="no">
+        <type>bool</type>
+        <definition>using tvm::relay::TOpIsStateful = typedef bool</definition>
+        <argsstring></argsstring>
+        <name>TOpIsStateful</name>
+        <briefdescription>
+<para>Whether operator is stateful or contain internal state. </para>        </briefdescription>
+        <detaileddescription>
+<para>All the primitive ops we registered so far are pure. This attribute is left for potential future compatible reasons. We can always work around the stateful ops by adding an additional handle argument and return it. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/relay/op_attr_types.h" line="77" column="1" bodyfile="include/tvm/relay/op_attr_types.h" bodystart="77" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="namespacetvm_1_1relay_1ab4c835287dfc5ec074ea8431bcebbb17" prot="public" static="no">
+        <type>bool</type>
+        <definition>using tvm::relay::TNonComputational = typedef bool</definition>
+        <argsstring></argsstring>
+        <name>TNonComputational</name>
+        <briefdescription>
+<para>Mark the operator as non-computational. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/relay/op_attr_types.h" line="82" column="1" bodyfile="include/tvm/relay/op_attr_types.h" bodystart="82" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="namespacetvm_1_1relay_1a75252d8d7e8d18b796074ffe4cc9f3ff" prot="public" static="no">
+        <type>bool</type>
+        <definition>using tvm::relay::TShapeDataDependant = typedef bool</definition>
+        <argsstring></argsstring>
+        <name>TShapeDataDependant</name>
+        <briefdescription>
+<para>Mark the operator whether output shape is data dependant. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/relay/op_attr_types.h" line="87" column="1" bodyfile="include/tvm/relay/op_attr_types.h" bodystart="87" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="namespacetvm_1_1relay_1a63a0893a8379998657ddff39a3162188" prot="public" static="no">
+        <type><ref refid="classtvm_1_1runtime_1_1TypedPackedFunc" kindref="compound">runtime::TypedPackedFunc</ref>&lt; <ref refid="classtvm_1_1Array" kindref="compound">Array</ref>&lt; <ref refid="classtvm_1_1te_1_1Tensor" kindref="compound">te::Tensor</ref> &gt;(const <ref refid="classtvm_1_1Attrs" kindref="compound">Attrs</ref> &amp;attrs, const <ref refid="classtvm_1_1Array" kindref="compound">Array</ref>&lt; <ref refid="classtvm_1_1te_1_1Tensor" kindref="compound">te::Tensor</ref> &gt; &amp;inputs, const <ref refid="namespacetvm_1_1relay_1a661d95f170bca230773914caeef3fe52" kindref="member">Type</ref> &amp;out_type)&gt;</type>
+        <definition>using tvm::relay::FTVMCompute = typedef runtime::TypedPackedFunc&lt; Array&lt;te::Tensor&gt;(const Attrs&amp; attrs, const Array&lt;te::Tensor&gt;&amp; inputs, const Type&amp; out_type)&gt;</definition>
+        <argsstring></argsstring>
+        <name>FTVMCompute</name>
+        <briefdescription>
+<para>Computation description interface. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="note"><para>This function have a special convention for functions with tuple input/output.</para></simplesect>
+So far we restrict tuple support to the following case:<itemizedlist>
+<listitem><para><ref refid="classtvm_1_1relay_1_1Function" kindref="compound">Function</ref> which takes a single tuple as input.</para></listitem><listitem><para><ref refid="classtvm_1_1relay_1_1Function" kindref="compound">Function</ref> which outputs a single tuple.</para></listitem></itemizedlist>
+</para><para>In both cases, the tuple is flattened as array.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>attrs</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The attribute of the primitive </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>inputs</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The input tensors. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>out_type</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The output type information &amp; these are always placeholders. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The output compute description of the operator. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/relay/op_attr_types.h" line="107" column="1" bodyfile="include/tvm/relay/op_attr_types.h" bodystart="110" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="namespacetvm_1_1relay_1af8f7c5928c79389da637c35df6c8557c" prot="public" static="no">
+        <type><ref refid="classtvm_1_1runtime_1_1TypedPackedFunc" kindref="compound">runtime::TypedPackedFunc</ref>&lt; <ref refid="classtvm_1_1te_1_1Schedule" kindref="compound">te::Schedule</ref>(const <ref refid="classtvm_1_1Attrs" kindref="compound">Attrs</ref> &amp;attrs, const <ref refid="classtvm_1_1Array" kindref="compound">Array</ref>&lt; <ref refid="classtvm_1_1te_1_1Tensor" kindref="compound">te::Tensor</ref> &gt; &amp;outs, const <ref refid="classtvm_1_1Target" kindref="compound">Target</ref> &amp;target)&gt;</type>
+        <definition>using tvm::relay::FTVMSchedule = typedef runtime::TypedPackedFunc&lt; te::Schedule(const Attrs&amp; attrs, const Array&lt;te::Tensor&gt;&amp; outs, const Target&amp; target)&gt;</definition>
+        <argsstring></argsstring>
+        <name>FTVMSchedule</name>
+        <briefdescription>
+<para>Build the computation schedule for op whose root is at current op. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>attrs</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The attribute of the node. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>outs</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The output tensors. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>target</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The build target. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>schedule The computation schedule. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/relay/op_attr_types.h" line="121" column="1" bodyfile="include/tvm/relay/op_attr_types.h" bodystart="124" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="namespacetvm_1_1relay_1a2eb2ad4e7a83e0a28e2ad073d7bf9305" prot="public" static="no">
+        <type><ref refid="classtvm_1_1GenericFunc" kindref="compound">GenericFunc</ref></type>
+        <definition>using tvm::relay::FTVMStrategy = typedef GenericFunc</definition>
+        <argsstring></argsstring>
+        <name>FTVMStrategy</name>
+        <briefdescription>
+<para>Generate the strategy of operators. This function is a generic function and can be re-defined for different targets. </para>        </briefdescription>
+        <detaileddescription>
+<para>The function signature of generic function is: <ref refid="classtvm_1_1relay_1_1OpStrategy" kindref="compound">OpStrategy</ref>(const <ref refid="classtvm_1_1Attrs" kindref="compound">Attrs</ref>&amp; attrs, const Array&lt;Tensor&gt;&amp; inputs, const <ref refid="classtvm_1_1Type" kindref="compound">Type</ref>&amp; out_type, const <ref refid="classtvm_1_1Target" kindref="compound">Target</ref>&amp; target) </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/relay/op_attr_types.h" line="134" column="1" bodyfile="include/tvm/relay/op_attr_types.h" bodystart="134" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="namespacetvm_1_1relay_1ac36536541a0688d02f9172bf8a35813b" prot="public" static="no">
+        <type><ref refid="classtvm_1_1runtime_1_1TypedPackedFunc" kindref="compound">runtime::TypedPackedFunc</ref>&lt; <ref refid="namespacetvm_1_1relay_1a5b84e3790f89bb3fad5c7911eeb99531" kindref="member">Expr</ref>(const <ref refid="classtvm_1_1Attrs" kindref="compound">Attrs</ref> &amp;attrs, const <ref refid="classtvm_1_1Array" kindref="compound">Array</ref>&lt; <ref refid="namespacetvm_1_1relay_1a5b84e3790f89bb3fad5c7911eeb99531" kindref="member">Expr</ref> &gt; &amp;args, const <ref refid="classtvm_1_1Array" kindref="compound">Array</ref>&lt; <ref refid="classtvm_1_1te_1_1Tensor" kindref="compound">te::Tensor</ref> &gt; &amp;tinfos, const <ref refid="namespacetvm_1_1relay_1a661d95f170bca230773914caeef3fe52" kindref="member">Type</ref> &amp;out_type)&gt;</type>
+        <definition>using tvm::relay::FTVMAlterOpLayout = typedef runtime::TypedPackedFunc&lt; Expr(const Attrs&amp; attrs, const Array&lt;Expr&gt;&amp; args, const Array&lt;te::Tensor&gt;&amp; tinfos, const Type&amp; out_type)&gt;</definition>
+        <argsstring></argsstring>
+        <name>FTVMAlterOpLayout</name>
+        <briefdescription>
+<para>Alternate the layout of operators or replace the operator with other expressions. This function will be invoked in AlterOpLayout pass. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>attrs</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The attribute of the original node. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>args</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The input symbols of the original node. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>tinfos</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>An array of placeholders, use for getting the inferred shape and dtype of the inputs. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>new_expr The modified expression. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/relay/op_attr_types.h" line="146" column="1" bodyfile="include/tvm/relay/op_attr_types.h" bodystart="150" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="namespacetvm_1_1relay_1a526f835aaefdc86a8faa7da39802ebd5" prot="public" static="no">
+        <type><ref refid="classtvm_1_1runtime_1_1TypedPackedFunc" kindref="compound">runtime::TypedPackedFunc</ref>&lt; <ref refid="namespacetvm_1_1relay_1a5b84e3790f89bb3fad5c7911eeb99531" kindref="member">Expr</ref>(const <ref refid="classtvm_1_1Attrs" kindref="compound">Attrs</ref> &amp;attrs, const <ref refid="classtvm_1_1Array" kindref="compound">Array</ref>&lt; <ref refid="namespacetvm_1_1relay_1a5b84e3790f89bb3fad5c7911eeb99531" kindref="member">Expr</ref> &gt; &amp;args, const <ref refid="classtvm_1_1Array" kindref="compound">Array</ref>&lt; <ref refid="classtvm_1_1te_1_1Tensor" kindref="compound">te::Tensor</ref> &gt; &amp;tinfos, const std::string &amp;desired_layout)&gt;</type>
+        <definition>using tvm::relay::FTVMConvertOpLayout = typedef runtime::TypedPackedFunc&lt; Expr(const Attrs&amp; attrs, const Array&lt;Expr&gt;&amp; args, const Array&lt;te::Tensor&gt;&amp; tinfos, const std::string&amp; desired_layout)&gt;</definition>
+        <argsstring></argsstring>
+        <name>FTVMConvertOpLayout</name>
+        <briefdescription>
+<para>Convert the layout of operators or replace the operator with other expressions. This function will be invoked in ConvertLayout pass. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>attrs</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The attribute of the original node. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>inputs</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The input symbols of the original node. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>tinfos</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>An array of placeholders, use for getting the inferred shape and dtype of the inputs. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>desired_layout</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The desired layout. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>new_expr The modified expression. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/relay/op_attr_types.h" line="163" column="1" bodyfile="include/tvm/relay/op_attr_types.h" bodystart="167" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="namespacetvm_1_1relay_1a40770ea2c292eec7b9ebe4d310c67fb5" prot="public" static="no">
+        <type><ref refid="classtvm_1_1runtime_1_1TypedPackedFunc" kindref="compound">runtime::TypedPackedFunc</ref>&lt; <ref refid="namespacetvm_1_1relay_1a5b84e3790f89bb3fad5c7911eeb99531" kindref="member">Expr</ref>(const <ref refid="classtvm_1_1Attrs" kindref="compound">Attrs</ref> &amp;attrs, const <ref refid="classtvm_1_1Array" kindref="compound">Array</ref>&lt; <ref refid="namespacetvm_1_1relay_1a5b84e3790f89bb3fad5c7911eeb99531" kindref="member">Expr</ref> &gt; &amp;args, const <ref refid="classtvm_1_1Array" kindref="compound">Array</ref>&lt; <ref refid="namespacetvm_1_1relay_1a661d95f170bca230773914caeef3fe52" kindref="member">tvm::relay::Type</ref> &gt; &amp;arg_types)&gt;</type>
+        <definition>using tvm::relay::FTVMLegalize = typedef runtime::TypedPackedFunc&lt; Expr(const Attrs&amp; attrs, const Array&lt;Expr&gt;&amp; args, const Array&lt;tvm::relay::Type&gt;&amp; arg_types)&gt;</definition>
+        <argsstring></argsstring>
+        <name>FTVMLegalize</name>
+        <briefdescription>
+<para>Legalizes an expression with another expression. This function will be invoked in Legalize pass. It is a target-dependent pass. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>attrs</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The attribute of the original node. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>args</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The input symbols of the original node. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>arg_types</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>An array of placeholders, use for getting the inferred shape and dtype of the inputs. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>new_expr The modified expression. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/relay/op_attr_types.h" line="177" column="1" bodyfile="include/tvm/relay/op_attr_types.h" bodystart="180" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="namespacetvm_1_1relay_1ab140f1857d8471d98fe5371f8da68154" prot="public" static="no">
+        <type><ref refid="classtvm_1_1runtime_1_1TypedPackedFunc" kindref="compound">runtime::TypedPackedFunc</ref>&lt; bool(const <ref refid="classtvm_1_1Attrs" kindref="compound">Attrs</ref> &amp;attrs, const <ref refid="classtvm_1_1Array" kindref="compound">Array</ref>&lt; <ref refid="namespacetvm_1_1relay_1a5b84e3790f89bb3fad5c7911eeb99531" kindref="member">Expr</ref> &gt; &amp;args)&gt;</type>
+        <definition>using tvm::relay::FTVMAnnotateTarget = typedef runtime::TypedPackedFunc&lt; bool(const Attrs&amp; attrs, const Array&lt;Expr&gt;&amp; args)&gt;</definition>
+        <argsstring></argsstring>
+        <name>FTVMAnnotateTarget</name>
+        <briefdescription>
+<para>Annotates an expression to indicate if an op should be compiled using the given compiler/target. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>attrs</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The attribute of the original expr. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>args</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The arguments of the original expr.</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>true if this op should be registered to invoke a specific compiler for codegen, otherwise, false. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/relay/op_attr_types.h" line="192" column="1" bodyfile="include/tvm/relay/op_attr_types.h" bodystart="194" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="namespacetvm_1_1relay_1aa04117f6f0a173924ff2f6d080c9265c" prot="public" static="no">
+        <type><ref refid="classtvm_1_1runtime_1_1TypedPackedFunc" kindref="compound">runtime::TypedPackedFunc</ref>&lt; <ref refid="namespacetvm_1_1relay_1a5b84e3790f89bb3fad5c7911eeb99531" kindref="member">Expr</ref>(const <ref refid="classtvm_1_1relay_1_1Call" kindref="compound">Call</ref> &amp;ref_call, const <ref refid="classtvm_1_1Array" kindref="compound">Array</ref>&lt; <ref refid="namespacetvm_1_1relay_1a5b84e3790f89bb3fad5c7911eeb99531" kindref="member">Expr</ref> &gt; &amp;new_args, const ObjectRef &amp;ctx)&gt;</type>
+        <definition>using tvm::relay::FForwardRewrite = typedef runtime::TypedPackedFunc&lt; Expr(const Call&amp; ref_call, const Array&lt;Expr&gt;&amp; new_args, const ObjectRef&amp; ctx)&gt;</definition>
+        <argsstring></argsstring>
+        <name>FForwardRewrite</name>
+        <briefdescription>
+<para>Forward rewriting rule for a specific op. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>ref_call</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The reference old call type to be rewritten. We can make use of the op and type information. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>new_args</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The new arguments (some of them could be <ref refid="classtvm_1_1relay_1_1TempExpr" kindref="compound">TempExpr</ref>). </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>ctx</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Optional context information about ref_call. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The rewriten result call, can also return nullptr, which indicate the rewriter should use the default fallback rule that realizes all its input and compose the call.</para></simplesect>
+<simplesect kind="note"><para>When we register the function, we can register a different signature with ctx to be a specific node type. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/relay/op_attr_types.h" line="210" column="1" bodyfile="include/tvm/relay/op_attr_types.h" bodystart="213" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="namespacetvm_1_1relay_1a9abada45a4f21ae750c1caba923f1059" prot="public" static="no">
+        <type><ref refid="classtvm_1_1runtime_1_1TypedPackedFunc" kindref="compound">runtime::TypedPackedFunc</ref>&lt; <ref refid="classtvm_1_1Array" kindref="compound">tvm::Array</ref>&lt; <ref refid="namespacetvm_1_1relay_1a5b84e3790f89bb3fad5c7911eeb99531" kindref="member">Expr</ref> &gt;(const <ref refid="namespacetvm_1_1relay_1a5b84e3790f89bb3fad5c7911eeb99531" kindref="member">Expr</ref> &amp;orig_call, const <ref refid="namespacetvm_1_1relay_1a5b84e3790f89bb3fad5c7911eeb99531" kindref="member">Expr</ref> &amp;output_grad)&gt;</type>
+        <definition>using tvm::relay::FPrimalGradient = typedef runtime::TypedPackedFunc&lt;tvm::Array&lt;Expr&gt;(const Expr&amp; orig_call, const Expr&amp; output_grad)&gt;</definition>
+        <argsstring></argsstring>
+        <name>FPrimalGradient</name>
+        <briefdescription>
+<para>Gradient for a specific op. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>orig_call</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the original Expr. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>output_grad</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the gradient of the Expr. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>the gradient for each parameters. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/relay/op_attr_types.h" line="222" column="1" bodyfile="include/tvm/relay/op_attr_types.h" bodystart="223" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="namespacetvm_1_1relay_1a4d64348ae2b75977e167109fb4af4409" prot="public" static="no">
+        <type><ref refid="classtvm_1_1Array" kindref="compound">Array</ref>&lt; <ref refid="namespacetvm_1_1relay_1ae153a27d81399fd266b8d598227764c4" kindref="member">IndexExpr</ref> &gt;</type>
+        <definition>using tvm::relay::Shape = typedef Array&lt;IndexExpr&gt;</definition>
+        <argsstring></argsstring>
+        <name>Shape</name>
+        <briefdescription>
+<para>A runtime representation of shape. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/relay/op_attr_types.h" line="234" column="1" bodyfile="include/tvm/relay/op_attr_types.h" bodystart="234" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="namespacetvm_1_1relay_1a6f7012819c4abe61de2d52e4bf94cfbd" prot="public" static="no">
+        <type><ref refid="classtvm_1_1runtime_1_1TypedPackedFunc" kindref="compound">runtime::TypedPackedFunc</ref>&lt; <ref refid="classtvm_1_1Array" kindref="compound">Array</ref>&lt; <ref refid="classtvm_1_1te_1_1Tensor" kindref="compound">te::Tensor</ref> &gt;(const <ref refid="classtvm_1_1Attrs" kindref="compound">Attrs</ref> &amp;attrs, const <ref refid="classtvm_1_1Array" kindref="compound">Array</ref>&lt; <ref refid="classtvm_1_1te_1_1Tensor" kindref="compound">te::Tensor</ref> &gt; &amp;inputs, const <ref refid="classtvm_1_1Array" kindref="compound">Array</ref>&lt; <ref refid="namespacetvm_1_1relay_1ae153a27d81399fd266b8d598227764c4" kindref="member">IndexExpr</ref> &gt; &amp;out_ndims)&gt;</type>
+        <definition>using tvm::relay::FShapeFunc = typedef runtime::TypedPackedFunc&lt; Array&lt;te::Tensor&gt;(const Attrs&amp; attrs, const Array&lt;te::Tensor&gt;&amp; inputs, const Array&lt;IndexExpr&gt;&amp; out_ndims)&gt;</definition>
+        <argsstring></argsstring>
+        <name>FShapeFunc</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/relay/op_attr_types.h" line="236" column="1" bodyfile="include/tvm/relay/op_attr_types.h" bodystart="239" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="namespacetvm_1_1relay_1aa6b4b16b28a3cfd5052b2b4214a440d9" prot="public" static="no">
+        <type><ref refid="classtvm_1_1tir_1_1AnyNode" kindref="compound">tvm::tir::AnyNode</ref></type>
+        <definition>using tvm::relay::Any = typedef tvm::tir::AnyNode</definition>
+        <argsstring></argsstring>
+        <name>Any</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/relay/type.h" line="44" column="1" bodyfile="include/tvm/relay/type.h" bodystart="44" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="namespacetvm_1_1relay_1aa44e35e7d791c8dd53bb00ddb6411b38" prot="public" static="no">
+        <type><ref refid="namespacetvm_1acd267f8d7f55da6ac681239831963279" kindref="member">TypeKind</ref></type>
+        <definition>using tvm::relay::Kind = typedef TypeKind</definition>
+        <argsstring></argsstring>
+        <name>Kind</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/relay/type.h" line="45" column="1" bodyfile="include/tvm/relay/type.h" bodystart="45" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="namespacetvm_1_1relay_1a661d95f170bca230773914caeef3fe52" prot="public" static="no">
+        <type><ref refid="classtvm_1_1Type" kindref="compound">tvm::Type</ref></type>
+        <definition>using tvm::relay::Type = typedef tvm::Type</definition>
+        <argsstring></argsstring>
+        <name>Type</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/relay/type.h" line="46" column="1" bodyfile="include/tvm/relay/type.h" bodystart="46" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="namespacetvm_1_1relay_1af6995f0c848d0d5cc4124a38f43aaf12" prot="public" static="no">
+        <type><ref refid="classtvm_1_1TypeNode" kindref="compound">tvm::TypeNode</ref></type>
+        <definition>using tvm::relay::TypeNode = typedef tvm::TypeNode</definition>
+        <argsstring></argsstring>
+        <name>TypeNode</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/relay/type.h" line="47" column="1" bodyfile="include/tvm/relay/type.h" bodystart="47" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="namespacetvm_1_1relay_1a63321eb51080f3f57dd7563a3ca0bfa6" prot="public" static="no">
+        <type><ref refid="classtvm_1_1TypeVar" kindref="compound">tvm::TypeVar</ref></type>
+        <definition>using tvm::relay::TypeVar = typedef tvm::TypeVar</definition>
+        <argsstring></argsstring>
+        <name>TypeVar</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/relay/type.h" line="48" column="1" bodyfile="include/tvm/relay/type.h" bodystart="48" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="namespacetvm_1_1relay_1ab2cbe31b81ebd71ea8028a8404a7c9f3" prot="public" static="no">
+        <type><ref refid="classtvm_1_1TypeVarNode" kindref="compound">tvm::TypeVarNode</ref></type>
+        <definition>using tvm::relay::TypeVarNode = typedef tvm::TypeVarNode</definition>
+        <argsstring></argsstring>
+        <name>TypeVarNode</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/relay/type.h" line="49" column="1" bodyfile="include/tvm/relay/type.h" bodystart="49" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="namespacetvm_1_1relay_1a2235e350f9cd1eac3aa0177034976043" prot="public" static="no">
+        <type><ref refid="classtvm_1_1GlobalTypeVar" kindref="compound">tvm::GlobalTypeVar</ref></type>
+        <definition>using tvm::relay::GlobalTypeVar = typedef tvm::GlobalTypeVar</definition>
+        <argsstring></argsstring>
+        <name>GlobalTypeVar</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/relay/type.h" line="50" column="1" bodyfile="include/tvm/relay/type.h" bodystart="50" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="namespacetvm_1_1relay_1a9a10e2305e3a50dd00e07b043b93b5e8" prot="public" static="no">
+        <type><ref refid="classtvm_1_1GlobalTypeVarNode" kindref="compound">tvm::GlobalTypeVarNode</ref></type>
+        <definition>using tvm::relay::GlobalTypeVarNode = typedef tvm::GlobalTypeVarNode</definition>
+        <argsstring></argsstring>
+        <name>GlobalTypeVarNode</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/relay/type.h" line="51" column="1" bodyfile="include/tvm/relay/type.h" bodystart="51" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="namespacetvm_1_1relay_1ace9102638dffea6747ae9fa9be9f00f2" prot="public" static="no">
+        <type><ref refid="classtvm_1_1TupleType" kindref="compound">tvm::TupleType</ref></type>
+        <definition>using tvm::relay::TupleType = typedef tvm::TupleType</definition>
+        <argsstring></argsstring>
+        <name>TupleType</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/relay/type.h" line="52" column="1" bodyfile="include/tvm/relay/type.h" bodystart="52" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="namespacetvm_1_1relay_1a916609c894ac1000b66f9582f338d965" prot="public" static="no">
+        <type><ref refid="classtvm_1_1TupleTypeNode" kindref="compound">tvm::TupleTypeNode</ref></type>
+        <definition>using tvm::relay::TupleTypeNode = typedef tvm::TupleTypeNode</definition>
+        <argsstring></argsstring>
+        <name>TupleTypeNode</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/relay/type.h" line="53" column="1" bodyfile="include/tvm/relay/type.h" bodystart="53" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="namespacetvm_1_1relay_1a64e2e93fe04716efd8334ab4e39c92ce" prot="public" static="no">
+        <type><ref refid="classtvm_1_1TypeConstraint" kindref="compound">tvm::TypeConstraint</ref></type>
+        <definition>using tvm::relay::TypeConstraint = typedef tvm::TypeConstraint</definition>
+        <argsstring></argsstring>
+        <name>TypeConstraint</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/relay/type.h" line="54" column="1" bodyfile="include/tvm/relay/type.h" bodystart="54" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="namespacetvm_1_1relay_1a565e027589acded20ca38df22be098dc" prot="public" static="no">
+        <type><ref refid="classtvm_1_1TypeConstraintNode" kindref="compound">tvm::TypeConstraintNode</ref></type>
+        <definition>using tvm::relay::TypeConstraintNode = typedef tvm::TypeConstraintNode</definition>
+        <argsstring></argsstring>
+        <name>TypeConstraintNode</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/relay/type.h" line="55" column="1" bodyfile="include/tvm/relay/type.h" bodystart="55" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="namespacetvm_1_1relay_1aa475de90506d48a1bb04ef6d1bd99bfb" prot="public" static="no">
+        <type><ref refid="classtvm_1_1FuncType" kindref="compound">tvm::FuncType</ref></type>
+        <definition>using tvm::relay::FuncType = typedef tvm::FuncType</definition>
+        <argsstring></argsstring>
+        <name>FuncType</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/relay/type.h" line="56" column="1" bodyfile="include/tvm/relay/type.h" bodystart="56" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="namespacetvm_1_1relay_1ab551714015417af28d5ca2b47722997e" prot="public" static="no">
+        <type><ref refid="classtvm_1_1FuncTypeNode" kindref="compound">tvm::FuncTypeNode</ref></type>
+        <definition>using tvm::relay::FuncTypeNode = typedef tvm::FuncTypeNode</definition>
+        <argsstring></argsstring>
+        <name>FuncTypeNode</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/relay/type.h" line="57" column="1" bodyfile="include/tvm/relay/type.h" bodystart="57" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="namespacetvm_1_1relay_1a34535a1f05224c26db569bc134de7647" prot="public" static="no">
+        <type><ref refid="classtvm_1_1IncompleteType" kindref="compound">tvm::IncompleteType</ref></type>
+        <definition>using tvm::relay::IncompleteType = typedef tvm::IncompleteType</definition>
+        <argsstring></argsstring>
+        <name>IncompleteType</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/relay/type.h" line="58" column="1" bodyfile="include/tvm/relay/type.h" bodystart="58" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="namespacetvm_1_1relay_1a517ebee34b82bdb80f74ffcdcf361940" prot="public" static="no">
+        <type><ref refid="classtvm_1_1IncompleteTypeNode" kindref="compound">tvm::IncompleteTypeNode</ref></type>
+        <definition>using tvm::relay::IncompleteTypeNode = typedef tvm::IncompleteTypeNode</definition>
+        <argsstring></argsstring>
+        <name>IncompleteTypeNode</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/relay/type.h" line="59" column="1" bodyfile="include/tvm/relay/type.h" bodystart="59" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="namespacetvm_1_1relay_1a13fd39dbc2a639262858e9b72e8fb37f" prot="public" static="no">
+        <type><ref refid="classtvm_1_1RelayRefType" kindref="compound">tvm::RelayRefType</ref></type>
+        <definition>using tvm::relay::RelayRefType = typedef tvm::RelayRefType</definition>
+        <argsstring></argsstring>
+        <name>RelayRefType</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/relay/type.h" line="60" column="1" bodyfile="include/tvm/relay/type.h" bodystart="60" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="namespacetvm_1_1relay_1ae665239bd9119c8afb037d47781bf237" prot="public" static="no">
+        <type><ref refid="classtvm_1_1RelayRefTypeNode" kindref="compound">tvm::RelayRefTypeNode</ref></type>
+        <definition>using tvm::relay::RelayRefTypeNode = typedef tvm::RelayRefTypeNode</definition>
+        <argsstring></argsstring>
+        <name>RelayRefTypeNode</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/relay/type.h" line="61" column="1" bodyfile="include/tvm/relay/type.h" bodystart="61" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="namespacetvm_1_1relay_1a52c13723bba53f4953dfd10c34d480f8" prot="public" static="no">
+        <type><ref refid="classtvm_1_1TensorType" kindref="compound">tvm::TensorType</ref></type>
+        <definition>using tvm::relay::TensorType = typedef tvm::TensorType</definition>
+        <argsstring></argsstring>
+        <name>TensorType</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/relay/type.h" line="62" column="1" bodyfile="include/tvm/relay/type.h" bodystart="62" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="namespacetvm_1_1relay_1acfeff91bc774a278a2e9f6103a04387d" prot="public" static="no">
+        <type><ref refid="classtvm_1_1TensorTypeNode" kindref="compound">tvm::TensorTypeNode</ref></type>
+        <definition>using tvm::relay::TensorTypeNode = typedef tvm::TensorTypeNode</definition>
+        <argsstring></argsstring>
+        <name>TensorTypeNode</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/relay/type.h" line="63" column="1" bodyfile="include/tvm/relay/type.h" bodystart="63" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="namespacetvm_1_1relay_1ab406a37acee11226e3e2e119beee439e" prot="public" static="no">
+        <type><ref refid="classtvm_1_1TypeCall" kindref="compound">tvm::TypeCall</ref></type>
+        <definition>using tvm::relay::TypeCall = typedef tvm::TypeCall</definition>
+        <argsstring></argsstring>
+        <name>TypeCall</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/relay/type.h" line="64" column="1" bodyfile="include/tvm/relay/type.h" bodystart="64" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="namespacetvm_1_1relay_1af4dccabc877b8fd7db47cb73fb93883e" prot="public" static="no">
+        <type><ref refid="classtvm_1_1TypeCallNode" kindref="compound">tvm::TypeCallNode</ref></type>
+        <definition>using tvm::relay::TypeCallNode = typedef tvm::TypeCallNode</definition>
+        <argsstring></argsstring>
+        <name>TypeCallNode</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/relay/type.h" line="65" column="1" bodyfile="include/tvm/relay/type.h" bodystart="65" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="namespacetvm_1_1relay_1adab0d56fd993df71df3068dea0cd5456" prot="public" static="no">
+        <type><ref refid="classtvm_1_1TypeRelation" kindref="compound">tvm::TypeRelation</ref></type>
+        <definition>using tvm::relay::TypeRelation = typedef tvm::TypeRelation</definition>
+        <argsstring></argsstring>
+        <name>TypeRelation</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/relay/type.h" line="66" column="1" bodyfile="include/tvm/relay/type.h" bodystart="66" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="namespacetvm_1_1relay_1a89d812eaf13520b04e89a9414c51748c" prot="public" static="no">
+        <type><ref refid="classtvm_1_1TypeRelationNode" kindref="compound">tvm::TypeRelationNode</ref></type>
+        <definition>using tvm::relay::TypeRelationNode = typedef tvm::TypeRelationNode</definition>
+        <argsstring></argsstring>
+        <name>TypeRelationNode</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/relay/type.h" line="67" column="1" bodyfile="include/tvm/relay/type.h" bodystart="67" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="namespacetvm_1_1relay_1af253112249297a6cfb2a9b94cde0f235" prot="public" static="no">
+        <type><ref refid="namespacetvm_1a72dcba4493adfcd8908663898ece3514" kindref="member">tvm::TypeRelationFn</ref></type>
+        <definition>using tvm::relay::TypeRelationFn = typedef tvm::TypeRelationFn</definition>
+        <argsstring></argsstring>
+        <name>TypeRelationFn</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/relay/type.h" line="68" column="1" bodyfile="include/tvm/relay/type.h" bodystart="68" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="namespacetvm_1_1relay_1afa9be9990c2006832cbfc02ebb35e527" prot="public" static="no">
+        <type><ref refid="classtvm_1_1TypeReporter" kindref="compound">tvm::TypeReporter</ref></type>
+        <definition>using tvm::relay::TypeReporter = typedef tvm::TypeReporter</definition>
+        <argsstring></argsstring>
+        <name>TypeReporter</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/relay/type.h" line="69" column="1" bodyfile="include/tvm/relay/type.h" bodystart="69" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="namespacetvm_1_1relay_1aaa3b5700ea20db399f539cec1abcb12b" prot="public" static="no">
+        <type><ref refid="classtvm_1_1TypeReporterNode" kindref="compound">tvm::TypeReporterNode</ref></type>
+        <definition>using tvm::relay::TypeReporterNode = typedef tvm::TypeReporterNode</definition>
+        <argsstring></argsstring>
+        <name>TypeReporterNode</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/relay/type.h" line="70" column="1" bodyfile="include/tvm/relay/type.h" bodystart="70" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="var">
+      <memberdef kind="variable" id="namespacetvm_1_1relay_1ac3a576d7d192ce78bafb169c9aa882d1" prot="public" static="no" mutable="no">
+        <type>constexpr size_t</type>
+        <definition>constexpr size_t tvm::relay::feature_count</definition>
+        <argsstring></argsstring>
+        <name>feature_count</name>
+        <initializer>= 17</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/relay/feature.h" line="59" column="1" bodyfile="include/tvm/relay/feature.h" bodystart="59" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="namespacetvm_1_1relay_1af73e45f453515df6f9c0bbbf189719d6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="namespacetvm_1acd267f8d7f55da6ac681239831963279" kindref="member">Kind</ref></type>
+        <definition>Kind tvm::relay::KindCheck</definition>
+        <argsstring>(const Type &amp;t, const IRModule &amp;mod)</argsstring>
+        <name>KindCheck</name>
+        <param>
+          <type>const <ref refid="namespacetvm_1_1relay_1a661d95f170bca230773914caeef3fe52" kindref="member">Type</ref> &amp;</type>
+          <declname>t</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classtvm_1_1IRModule" kindref="compound">IRModule</ref> &amp;</type>
+          <declname>mod</declname>
+        </param>
+        <briefdescription>
+<para>Check that types are well kinded by applying &quot;kinding rules&quot;. </para>        </briefdescription>
+        <detaileddescription>
+<para>This pass ensures we do not do things that violate the design of the type system when writing down types.</para><para>For example tensors are not allowed to contain functions in Relay.</para><para>We check this by ensuring the <computeroutput>dtype</computeroutput> field of a Tensor always contains a data type such as <computeroutput>int</computeroutput>, <computeroutput>float</computeroutput>, <computeroutput>uint</computeroutput>.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>t</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The type to check. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>mod</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The global module.</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The kind of the passed type. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/relay/analysis.h" line="53" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacetvm_1_1relay_1abdade48285a63efffe743e73e41d3b35" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool tvm::relay::ConstantCheck</definition>
+        <argsstring>(const Expr &amp;e)</argsstring>
+        <name>ConstantCheck</name>
+        <param>
+          <type>const <ref refid="namespacetvm_1_1relay_1a5b84e3790f89bb3fad5c7911eeb99531" kindref="member">Expr</ref> &amp;</type>
+          <declname>e</declname>
+        </param>
+        <briefdescription>
+<para>Check whether an expression is constant. </para>        </briefdescription>
+        <detaileddescription>
+<para><ref refid="classtvm_1_1relay_1_1If" kindref="compound">If</ref> the inputs of an expression are all constant, it means the expression itself is constant also.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>e</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the expression.</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>whether the expression is constant. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/relay/analysis.h" line="65" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacetvm_1_1relay_1ade8a41f4d5e1698684fe03446776c799" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool tvm::relay::AlphaEqual</definition>
+        <argsstring>(const Expr &amp;e1, const Expr &amp;e2)</argsstring>
+        <name>AlphaEqual</name>
+        <param>
+          <type>const <ref refid="namespacetvm_1_1relay_1a5b84e3790f89bb3fad5c7911eeb99531" kindref="member">Expr</ref> &amp;</type>
+          <declname>e1</declname>
+        </param>
+        <param>
+          <type>const <ref refid="namespacetvm_1_1relay_1a5b84e3790f89bb3fad5c7911eeb99531" kindref="member">Expr</ref> &amp;</type>
+          <declname>e2</declname>
+        </param>
+        <briefdescription>
+<para>Compare two expressions for structural equivalence. </para>        </briefdescription>
+        <detaileddescription>
+<para>This comparison operator respects scoping and compares expressions without regard to variable choice.</para><para>For example: <computeroutput>let x = 1 in x</computeroutput> is equal to <computeroutput>let y = 1 in y</computeroutput>.</para><para>See <ulink url="https://en.wikipedia.org/wiki/Lambda_calculus#Alpha_equivalence">https://en.wikipedia.org/wiki/Lambda_calculus#Alpha_equivalence</ulink> for more details.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>e1</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The left hand expression. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>e2</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The right hand expression.</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>true if equal, otherwise false </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/relay/analysis.h" line="83" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacetvm_1_1relay_1a396e72c6921843a960ac588a8c60253d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool tvm::relay::AlphaEqual</definition>
+        <argsstring>(const Type &amp;t1, const Type &amp;t2)</argsstring>
+        <name>AlphaEqual</name>
+        <param>
+          <type>const <ref refid="namespacetvm_1_1relay_1a661d95f170bca230773914caeef3fe52" kindref="member">Type</ref> &amp;</type>
+          <declname>t1</declname>
+        </param>
+        <param>
+          <type>const <ref refid="namespacetvm_1_1relay_1a661d95f170bca230773914caeef3fe52" kindref="member">Type</ref> &amp;</type>
+          <declname>t2</declname>
+        </param>
+        <briefdescription>
+<para>Compare two types for structural equivalence. </para>        </briefdescription>
+        <detaileddescription>
+<para>This comparison operator respects scoping and compares expressions without regard to variable choice.</para><para>For example: <computeroutput>forall s, Tensor[f32, s]</computeroutput> is equal to <computeroutput>forall w, Tensor[f32, w]</computeroutput>.</para><para>See <ulink url="https://en.wikipedia.org/wiki/Lambda_calculus#Alpha_equivalence">https://en.wikipedia.org/wiki/Lambda_calculus#Alpha_equivalence</ulink> for more details.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>t1</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The left hand type. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>t2</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The right hand type.</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>true if equal, otherwise false </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/relay/analysis.h" line="102" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacetvm_1_1relay_1a4e98128c160e24833fdba44345ad3ba3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool tvm::relay::AlphaEqual</definition>
+        <argsstring>(const Pattern &amp;t1, const Pattern &amp;t2)</argsstring>
+        <name>AlphaEqual</name>
+        <param>
+          <type>const <ref refid="classtvm_1_1relay_1_1Pattern" kindref="compound">Pattern</ref> &amp;</type>
+          <declname>t1</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classtvm_1_1relay_1_1Pattern" kindref="compound">Pattern</ref> &amp;</type>
+          <declname>t2</declname>
+        </param>
+        <briefdescription>
+<para>Compare two patterns for structural equivalence. </para>        </briefdescription>
+        <detaileddescription>
+<para>This comparison operator respects scoping and compares patterns without regard to variable choice.</para><para>For example: <computeroutput>A(x, _, y)</computeroutput> is equal to <computeroutput>A(z, _, a)</computeroutput>.</para><para>See <ulink url="https://en.wikipedia.org/wiki/Lambda_calculus#Alpha_equivalence">https://en.wikipedia.org/wiki/Lambda_calculus#Alpha_equivalence</ulink> for more details.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>t1</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The left hand pattern. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>t2</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The right hand pattern.</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>true if equal, otherwise false </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/relay/analysis.h" line="120" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacetvm_1_1relay_1a59dde25d981d5b506115dd4dba7f67b7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool tvm::relay::WellFormed</definition>
+        <argsstring>(const Expr &amp;expr)</argsstring>
+        <name>WellFormed</name>
+        <param>
+          <type>const <ref refid="namespacetvm_1_1relay_1a5b84e3790f89bb3fad5c7911eeb99531" kindref="member">Expr</ref> &amp;</type>
+          <declname>expr</declname>
+        </param>
+        <briefdescription>
+<para>Check that each <ref refid="classtvm_1_1relay_1_1Var" kindref="compound">Var</ref> is only bound once. </para>        </briefdescription>
+        <detaileddescription>
+<para>For example, the expression <computeroutput>let x = 1 in let x = 2 in 3</computeroutput> bound x twice.</para><para><computeroutput>let f = (\x -&gt; x) in let g = (\x -&gt; x + 1) in f(g(2))</computeroutput> also bound x twice, although x is not shadowed.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>expr</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the expression to check.</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>true iff all <ref refid="classtvm_1_1relay_1_1Var" kindref="compound">Var</ref> in expr is bound at most once. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/relay/analysis.h" line="134" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacetvm_1_1relay_1a0bcc32688b446d3574932554f6b8c2df" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classtvm_1_1Array" kindref="compound">tvm::Array</ref>&lt; <ref refid="classtvm_1_1relay_1_1Var" kindref="compound">Var</ref> &gt;</type>
+        <definition>tvm::Array&lt;Var&gt; tvm::relay::BoundVars</definition>
+        <argsstring>(const Expr &amp;expr)</argsstring>
+        <name>BoundVars</name>
+        <param>
+          <type>const <ref refid="namespacetvm_1_1relay_1a5b84e3790f89bb3fad5c7911eeb99531" kindref="member">Expr</ref> &amp;</type>
+          <declname>expr</declname>
+        </param>
+        <briefdescription>
+<para>Get all bound variables from expression expr. </para>        </briefdescription>
+        <detaileddescription>
+<para>Bound variables are all variables that are declared in the expr. They only have meaning inside that expr, and can only be used in it.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>expr</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the expression.</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>List of bound vars, in the PostDFS order in the expression. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/relay/analysis.h" line="146" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacetvm_1_1relay_1aedcb2b290b4f80292eb34afefc41f0ac" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classtvm_1_1Array" kindref="compound">tvm::Array</ref>&lt; <ref refid="classtvm_1_1relay_1_1Var" kindref="compound">Var</ref> &gt;</type>
+        <definition>tvm::Array&lt;Var&gt; tvm::relay::BoundVars</definition>
+        <argsstring>(const Pattern &amp;pat)</argsstring>
+        <name>BoundVars</name>
+        <param>
+          <type>const <ref refid="classtvm_1_1relay_1_1Pattern" kindref="compound">Pattern</ref> &amp;</type>
+          <declname>pat</declname>
+        </param>
+        <briefdescription>
+<para>Get all bound variables from pattern pat. </para>        </briefdescription>
+        <detaileddescription>
+<para>Bound variables are all variables that got bound by the pat. They only have meaning inside that expr, and can only be used in it.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>pat</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the <ref refid="classtvm_1_1relay_1_1Pattern" kindref="compound">Pattern</ref>.</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>List of bound vars, in the PostDFS order in the expression. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/relay/analysis.h" line="158" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacetvm_1_1relay_1af2c5771c67f06c0af32c7b4b4269e73f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classtvm_1_1Array" kindref="compound">tvm::Array</ref>&lt; <ref refid="classtvm_1_1relay_1_1Var" kindref="compound">Var</ref> &gt;</type>
+        <definition>tvm::Array&lt;Var&gt; tvm::relay::FreeVars</definition>
+        <argsstring>(const Expr &amp;expr)</argsstring>
+        <name>FreeVars</name>
+        <param>
+          <type>const <ref refid="namespacetvm_1_1relay_1a5b84e3790f89bb3fad5c7911eeb99531" kindref="member">Expr</ref> &amp;</type>
+          <declname>expr</declname>
+        </param>
+        <briefdescription>
+<para>Get free type parameters from expression expr. </para>        </briefdescription>
+        <detaileddescription>
+<para>Free variables are variables that are not bound by a let or a function parameter in the context.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>expr</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the expression.</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>List of free vars, in the PostDFS order in the expression. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/relay/analysis.h" line="170" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacetvm_1_1relay_1a6b1e94cf8d97514fe4a9493a0dec1559" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classtvm_1_1Array" kindref="compound">tvm::Array</ref>&lt; <ref refid="classtvm_1_1relay_1_1Var" kindref="compound">Var</ref> &gt;</type>
+        <definition>tvm::Array&lt;Var&gt; tvm::relay::AllVars</definition>
+        <argsstring>(const Expr &amp;expr)</argsstring>
+        <name>AllVars</name>
+        <param>
+          <type>const <ref refid="namespacetvm_1_1relay_1a5b84e3790f89bb3fad5c7911eeb99531" kindref="member">Expr</ref> &amp;</type>
+          <declname>expr</declname>
+        </param>
+        <briefdescription>
+<para>Get all variables from expression expr. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>expr</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the expression.</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>List of all vars, in the PostDFS order in the expression. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/relay/analysis.h" line="179" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacetvm_1_1relay_1acc529cca9623ac81c8aa6e106cdb5850" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classtvm_1_1Array" kindref="compound">tvm::Array</ref>&lt; <ref refid="namespacetvm_1_1relay_1a63321eb51080f3f57dd7563a3ca0bfa6" kindref="member">TypeVar</ref> &gt;</type>
+        <definition>tvm::Array&lt;TypeVar&gt; tvm::relay::FreeTypeVars</definition>
+        <argsstring>(const Expr &amp;expr, const IRModule &amp;mod)</argsstring>
+        <name>FreeTypeVars</name>
+        <param>
+          <type>const <ref refid="namespacetvm_1_1relay_1a5b84e3790f89bb3fad5c7911eeb99531" kindref="member">Expr</ref> &amp;</type>
+          <declname>expr</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classtvm_1_1IRModule" kindref="compound">IRModule</ref> &amp;</type>
+          <declname>mod</declname>
+        </param>
+        <briefdescription>
+<para>Get free TypeVars from expression expr. </para>        </briefdescription>
+        <detaileddescription>
+<para>Free type parameters are type parameters that are not bound by a function type in the context.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>expr</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the expression. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>mod</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the module.</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>List of free vars, in the PostDFS order visited by expr. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/relay/analysis.h" line="192" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacetvm_1_1relay_1a446e2b12f3e907336313004c3e0a0c86" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classtvm_1_1Array" kindref="compound">tvm::Array</ref>&lt; <ref refid="namespacetvm_1_1relay_1a63321eb51080f3f57dd7563a3ca0bfa6" kindref="member">TypeVar</ref> &gt;</type>
+        <definition>tvm::Array&lt;TypeVar&gt; tvm::relay::FreeTypeVars</definition>
+        <argsstring>(const Type &amp;t, const IRModule &amp;mod)</argsstring>
+        <name>FreeTypeVars</name>
+        <param>
+          <type>const <ref refid="namespacetvm_1_1relay_1a661d95f170bca230773914caeef3fe52" kindref="member">Type</ref> &amp;</type>
+          <declname>t</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classtvm_1_1IRModule" kindref="compound">IRModule</ref> &amp;</type>
+          <declname>mod</declname>
+        </param>
+        <briefdescription>
+<para>Get free TypeVars from type t. </para>        </briefdescription>
+        <detaileddescription>
+<para>Free type parameters are type parameters that are not bound by a function type in the context.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>t</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the type. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>mod</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the module.</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>List of free type vars, in the PostDFS order visited by type. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/relay/analysis.h" line="205" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacetvm_1_1relay_1a1e5aa65b13f8ca172009aa2ff3ba59d6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classtvm_1_1Array" kindref="compound">tvm::Array</ref>&lt; <ref refid="namespacetvm_1_1relay_1a63321eb51080f3f57dd7563a3ca0bfa6" kindref="member">TypeVar</ref> &gt;</type>
+        <definition>tvm::Array&lt;TypeVar&gt; tvm::relay::BoundTypeVars</definition>
+        <argsstring>(const Expr &amp;expr, const IRModule &amp;mod)</argsstring>
+        <name>BoundTypeVars</name>
+        <param>
+          <type>const <ref refid="namespacetvm_1_1relay_1a5b84e3790f89bb3fad5c7911eeb99531" kindref="member">Expr</ref> &amp;</type>
+          <declname>expr</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classtvm_1_1IRModule" kindref="compound">IRModule</ref> &amp;</type>
+          <declname>mod</declname>
+        </param>
+        <briefdescription>
+<para>Get all bound type variables from expression expr. </para>        </briefdescription>
+        <detaileddescription>
+<para>Bound variables are all type variables that are declared in the expr. They only have meaning inside that expr, and can only be used in it.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>expr</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the expression. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>mod</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the module.</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>List of bound type vars, in the PostDFS order in the expression. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/relay/analysis.h" line="218" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacetvm_1_1relay_1a419979c48a5e37cd969f6fd6d0fead4b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classtvm_1_1Array" kindref="compound">tvm::Array</ref>&lt; <ref refid="namespacetvm_1_1relay_1a63321eb51080f3f57dd7563a3ca0bfa6" kindref="member">TypeVar</ref> &gt;</type>
+        <definition>tvm::Array&lt;TypeVar&gt; tvm::relay::BoundTypeVars</definition>
+        <argsstring>(const Type &amp;t, const IRModule &amp;mod)</argsstring>
+        <name>BoundTypeVars</name>
+        <param>
+          <type>const <ref refid="namespacetvm_1_1relay_1a661d95f170bca230773914caeef3fe52" kindref="member">Type</ref> &amp;</type>
+          <declname>t</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classtvm_1_1IRModule" kindref="compound">IRModule</ref> &amp;</type>
+          <declname>mod</declname>
+        </param>
+        <briefdescription>
+<para>Get all bound type variables from type t. </para>        </briefdescription>
+        <detaileddescription>
+<para>Bound variables are all type variables that are declared in the type. They only have meaning inside that type, and can only be used in it.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>t</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the type </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>mod</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the module.</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>List of bound type vars, in the PostDFS order visited by type. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/relay/analysis.h" line="231" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacetvm_1_1relay_1ae67484a25663dfe2f87cbad53075abbf" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classtvm_1_1Array" kindref="compound">tvm::Array</ref>&lt; <ref refid="namespacetvm_1_1relay_1a63321eb51080f3f57dd7563a3ca0bfa6" kindref="member">TypeVar</ref> &gt;</type>
+        <definition>tvm::Array&lt;TypeVar&gt; tvm::relay::AllTypeVars</definition>
+        <argsstring>(const Expr &amp;expr, const IRModule &amp;mod)</argsstring>
+        <name>AllTypeVars</name>
+        <param>
+          <type>const <ref refid="namespacetvm_1_1relay_1a5b84e3790f89bb3fad5c7911eeb99531" kindref="member">Expr</ref> &amp;</type>
+          <declname>expr</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classtvm_1_1IRModule" kindref="compound">IRModule</ref> &amp;</type>
+          <declname>mod</declname>
+        </param>
+        <briefdescription>
+<para>Get all type variables in expression expr. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>expr</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the expression. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>mod</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the module.</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>List of type vars, in the PostDFS order in the expression. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/relay/analysis.h" line="241" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacetvm_1_1relay_1ad24361b252cdb636192641e6801f2666" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classtvm_1_1Array" kindref="compound">tvm::Array</ref>&lt; <ref refid="namespacetvm_1_1relay_1a63321eb51080f3f57dd7563a3ca0bfa6" kindref="member">TypeVar</ref> &gt;</type>
+        <definition>tvm::Array&lt;TypeVar&gt; tvm::relay::AllTypeVars</definition>
+        <argsstring>(const Type &amp;t, const IRModule &amp;mod)</argsstring>
+        <name>AllTypeVars</name>
+        <param>
+          <type>const <ref refid="namespacetvm_1_1relay_1a661d95f170bca230773914caeef3fe52" kindref="member">Type</ref> &amp;</type>
+          <declname>t</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classtvm_1_1IRModule" kindref="compound">IRModule</ref> &amp;</type>
+          <declname>mod</declname>
+        </param>
+        <briefdescription>
+<para>Get all type variables in type t. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>t</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the type. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>mod</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the module.</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>List of type vars, in the PostDFS order visited by type. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/relay/analysis.h" line="251" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacetvm_1_1relay_1ab6e35e7086b1f79ae55651500f94116b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classtvm_1_1Map" kindref="compound">Map</ref>&lt; <ref refid="namespacetvm_1_1relay_1a5b84e3790f89bb3fad5c7911eeb99531" kindref="member">Expr</ref>, <ref refid="classtvm_1_1Integer" kindref="compound">Integer</ref> &gt;</type>
+        <definition>Map&lt;Expr, Integer&gt; tvm::relay::CollectDeviceInfo</definition>
+        <argsstring>(const Expr &amp;expr)</argsstring>
+        <name>CollectDeviceInfo</name>
+        <param>
+          <type>const <ref refid="namespacetvm_1_1relay_1a5b84e3790f89bb3fad5c7911eeb99531" kindref="member">Expr</ref> &amp;</type>
+          <declname>expr</declname>
+        </param>
+        <briefdescription>
+<para>Collect the device mapping information of each expression. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>expr</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The expression.</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The device mapping. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/relay/analysis.h" line="260" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacetvm_1_1relay_1a4e17d61a10c7781b004559a5b7430047" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classtvm_1_1Map" kindref="compound">Map</ref>&lt; <ref refid="namespacetvm_1_1relay_1a5b84e3790f89bb3fad5c7911eeb99531" kindref="member">Expr</ref>, <ref refid="classtvm_1_1Integer" kindref="compound">Integer</ref> &gt;</type>
+        <definition>Map&lt;Expr, Integer&gt; tvm::relay::CollectDeviceAnnotationOps</definition>
+        <argsstring>(const Expr &amp;expr)</argsstring>
+        <name>CollectDeviceAnnotationOps</name>
+        <param>
+          <type>const <ref refid="namespacetvm_1_1relay_1a5b84e3790f89bb3fad5c7911eeb99531" kindref="member">Expr</ref> &amp;</type>
+          <declname>expr</declname>
+        </param>
+        <briefdescription>
+<para>Collect the device anntation operators. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>expr</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The expression.</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The annotated expression to device type mapping for annotation ops. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/relay/analysis.h" line="269" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacetvm_1_1relay_1aa3a8cace40f8056fd6412f39c3eaa605" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classtvm_1_1Array" kindref="compound">Array</ref>&lt; <ref refid="classtvm_1_1relay_1_1Pattern" kindref="compound">Pattern</ref> &gt;</type>
+        <definition>Array&lt;Pattern&gt; tvm::relay::UnmatchedCases</definition>
+        <argsstring>(const Match &amp;match, const IRModule &amp;mod)</argsstring>
+        <name>UnmatchedCases</name>
+        <param>
+          <type>const <ref refid="classtvm_1_1relay_1_1Match" kindref="compound">Match</ref> &amp;</type>
+          <declname>match</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classtvm_1_1IRModule" kindref="compound">IRModule</ref> &amp;</type>
+          <declname>mod</declname>
+        </param>
+        <briefdescription>
+<para>Finds cases that the given match expression does not catch, if any. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>match</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the match expression to test</para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>mod</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The module used for accessing global type var definitions, can be None.</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Returns a list of cases (as patterns) that are not handled by the match expression. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/relay/analysis.h" line="281" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacetvm_1_1relay_1a5ede3d80c546097084cf98b60e600b80" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void tvm::relay::PostOrderVisit</definition>
+        <argsstring>(const Expr &amp;node, std::function&lt; void(const Expr &amp;)&gt; fvisit)</argsstring>
+        <name>PostOrderVisit</name>
+        <param>
+          <type>const <ref refid="namespacetvm_1_1relay_1a5b84e3790f89bb3fad5c7911eeb99531" kindref="member">Expr</ref> &amp;</type>
+          <declname>node</declname>
+        </param>
+        <param>
+          <type>std::function&lt; void(const <ref refid="namespacetvm_1_1relay_1a5b84e3790f89bb3fad5c7911eeb99531" kindref="member">Expr</ref> &amp;)&gt;</type>
+          <declname>fvisit</declname>
+        </param>
+        <briefdescription>
+<para>recursively visit the ir in post DFS order node, apply fvisit Each node is guaranteed to be visited only once. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>node</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The ir to be visited. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>fvisit</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The visitor function to be applied. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/relay/expr_functor.h" line="241" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacetvm_1_1relay_1a62b651084b386991221bc32c020cbef5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classtvm_1_1relay_1_1FeatureSet" kindref="compound">FeatureSet</ref></type>
+        <definition>FeatureSet tvm::relay::DetectFeature</definition>
+        <argsstring>(const RelayExpr &amp;expr)</argsstring>
+        <name>DetectFeature</name>
+        <param>
+          <type>const <ref refid="classtvm_1_1RelayExpr" kindref="compound">RelayExpr</ref> &amp;</type>
+          <declname>expr</declname>
+        </param>
+        <briefdescription>
+<para>Calculate the feature of the program. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>expr</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The expression.</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The <ref refid="classtvm_1_1relay_1_1FeatureSet" kindref="compound">FeatureSet</ref>. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/relay/feature.h" line="144" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacetvm_1_1relay_1a81978c82e1130854e575ccabc152ad70" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classtvm_1_1relay_1_1FeatureSet" kindref="compound">FeatureSet</ref></type>
+        <definition>FeatureSet tvm::relay::DetectFeature</definition>
+        <argsstring>(const IRModule &amp;mod)</argsstring>
+        <name>DetectFeature</name>
+        <param>
+          <type>const <ref refid="classtvm_1_1IRModule" kindref="compound">IRModule</ref> &amp;</type>
+          <declname>mod</declname>
+        </param>
+        <briefdescription>
+<para>Calculate the feature of the program. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>mod</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The module.</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The <ref refid="classtvm_1_1relay_1_1FeatureSet" kindref="compound">FeatureSet</ref>. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/relay/feature.h" line="153" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacetvm_1_1relay_1a191d5425083368521d49cc49cef65aba" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classtvm_1_1relay_1_1FeatureSet" kindref="compound">FeatureSet</ref></type>
+        <definition>FeatureSet tvm::relay::DetectFeature</definition>
+        <argsstring>(const Expr &amp;expr, const IRModule &amp;mod)</argsstring>
+        <name>DetectFeature</name>
+        <param>
+          <type>const <ref refid="namespacetvm_1_1relay_1a5b84e3790f89bb3fad5c7911eeb99531" kindref="member">Expr</ref> &amp;</type>
+          <declname>expr</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classtvm_1_1IRModule" kindref="compound">IRModule</ref> &amp;</type>
+          <declname>mod</declname>
+        </param>
+        <briefdescription>
+<para>Calculate the feature of the program. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>expr</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The expression. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>mod</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The module.</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The <ref refid="classtvm_1_1relay_1_1FeatureSet" kindref="compound">FeatureSet</ref>. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/relay/feature.h" line="163" column="1" bodyfile="include/tvm/relay/feature.h" bodystart="163" bodyend="165"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacetvm_1_1relay_1ad02b5b16803fc28a9d920b105074a17d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classtvm_1_1runtime_1_1TypedPackedFunc" kindref="compound">runtime::TypedPackedFunc</ref>&lt; ObjectRef(<ref refid="namespacetvm_1_1relay_1a5b84e3790f89bb3fad5c7911eeb99531" kindref="member">Expr</ref>)&gt;</type>
+        <definition>runtime::TypedPackedFunc&lt;ObjectRef(Expr)&gt; tvm::relay::CreateInterpreter</definition>
+        <argsstring>(IRModule mod, DLContext context, Target target)</argsstring>
+        <name>CreateInterpreter</name>
+        <param>
+          <type><ref refid="classtvm_1_1IRModule" kindref="compound">IRModule</ref></type>
+          <declname>mod</declname>
+        </param>
+        <param>
+          <type>DLContext</type>
+          <declname>context</declname>
+        </param>
+        <param>
+          <type><ref refid="classtvm_1_1Target" kindref="compound">Target</ref></type>
+          <declname>target</declname>
+        </param>
+        <briefdescription>
+<para>Create a Interpreter function that can evaluate an expression and produce a value. </para>        </briefdescription>
+        <detaileddescription>
+<para>The resulting value can be passed to Python, making it easy to use for testing and debugging.</para><para>The interpreter interprets the program fragments not supported by the TVM runtime, although the interpreter is naively implemented it uses TVM operators for evaluating all operators.</para><para>Our intent is that this will never be the most efficient implementation of Relay&apos;s semantics, but a readable and clear one.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>mod</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The function module. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>context</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The primary context that the interepreter runs on. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>target</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Compiler target flag to compile the functions on the context. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>A function that takes in an expression and returns a value. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/relay/interpreter.h" line="68" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacetvm_1_1relay_1ad7cfa0b6a4537989b886d47767526726" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="namespacetvm_1_1relay_1a5b84e3790f89bb3fad5c7911eeb99531" kindref="member">Expr</ref></type>
+        <definition>Expr tvm::relay::Bind</definition>
+        <argsstring>(const Expr &amp;expr, const tvm::Map&lt; Var, Expr &gt; &amp;binds)</argsstring>
+        <name>Bind</name>
+        <param>
+          <type>const <ref refid="namespacetvm_1_1relay_1a5b84e3790f89bb3fad5c7911eeb99531" kindref="member">Expr</ref> &amp;</type>
+          <declname>expr</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classtvm_1_1Map" kindref="compound">tvm::Map</ref>&lt; <ref refid="classtvm_1_1relay_1_1Var" kindref="compound">Var</ref>, <ref refid="namespacetvm_1_1relay_1a5b84e3790f89bb3fad5c7911eeb99531" kindref="member">Expr</ref> &gt; &amp;</type>
+          <declname>binds</declname>
+        </param>
+        <briefdescription>
+<para>Bind the free variables to a Relay expression. This is a helper function usually called by other pass functions to help optimizations. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>expr</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The input expression. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>binds</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The variable to expression map that will be used to help the binding.</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The updated expression. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/relay/transform.h" line="372" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacetvm_1_1relay_1a18141658f627685d55704609111f57be" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classtvm_1_1relay_1_1Function" kindref="compound">Function</ref></type>
+        <definition>Function tvm::relay::InferType</definition>
+        <argsstring>(const Function &amp;f, const IRModule &amp;mod, const GlobalVar &amp;var)</argsstring>
+        <name>InferType</name>
+        <param>
+          <type>const <ref refid="classtvm_1_1relay_1_1Function" kindref="compound">Function</ref> &amp;</type>
+          <declname>f</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classtvm_1_1IRModule" kindref="compound">IRModule</ref> &amp;</type>
+          <declname>mod</declname>
+        </param>
+        <param>
+          <type>const <ref refid="namespacetvm_1_1relay_1a81ac7c3d0824529fddce7849c9c66289" kindref="member">GlobalVar</ref> &amp;</type>
+          <declname>var</declname>
+        </param>
+        <briefdescription>
+<para>Infer the type of a function as if it is mapped to var in the mod. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>f</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the function. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>mod</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The module used for referencing global functions. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>var</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The global variable corresponding to the function.</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>A type checked <ref refid="classtvm_1_1relay_1_1Function" kindref="compound">Function</ref> with its checked_type field populated. </para></simplesect>
+<simplesect kind="note"><para>this function mutates mod and is not thread-safe. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/relay/transform.h" line="384" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacetvm_1_1relay_1ac36059b06a538598a8f46257c0cb9fe0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="namespacetvm_1_1relay_1a5b84e3790f89bb3fad5c7911eeb99531" kindref="member">Expr</ref></type>
+        <definition>Expr tvm::relay::ForwardRewrite</definition>
+        <argsstring>(const Expr &amp;expr, const std::string &amp;rewrite_map_attr_name, std::function&lt; ObjectRef(const Call &amp;)&gt; fcontext=nullptr, std::function&lt; Expr(const Expr &amp;)&gt; fmulti_ref_trigger=nullptr)</argsstring>
+        <name>ForwardRewrite</name>
+        <param>
+          <type>const <ref refid="namespacetvm_1_1relay_1a5b84e3790f89bb3fad5c7911eeb99531" kindref="member">Expr</ref> &amp;</type>
+          <declname>expr</declname>
+        </param>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>rewrite_map_attr_name</declname>
+        </param>
+        <param>
+          <type>std::function&lt; ObjectRef(const <ref refid="classtvm_1_1relay_1_1Call" kindref="compound">Call</ref> &amp;)&gt;</type>
+          <declname>fcontext</declname>
+          <defval>nullptr</defval>
+        </param>
+        <param>
+          <type>std::function&lt; <ref refid="namespacetvm_1_1relay_1a5b84e3790f89bb3fad5c7911eeb99531" kindref="member">Expr</ref>(const <ref refid="namespacetvm_1_1relay_1a5b84e3790f89bb3fad5c7911eeb99531" kindref="member">Expr</ref> &amp;)&gt;</type>
+          <declname>fmulti_ref_trigger</declname>
+          <defval>nullptr</defval>
+        </param>
+        <briefdescription>
+<para>Apply rewrite rules to rewrite the expr in post DFS order. This function is used as a helper function to rewrtie an expression in a pass. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>expr</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The expression. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>rewrite_map_attr_name</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The <ref refid="classtvm_1_1Op" kindref="compound">Op</ref>&apos;s attr name which corresponds to the rewrite rule function. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>fcontext</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Additional callback to provide context argument for each call node. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>fmulti_ref_trigger</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Transformation function to be called when an Expr consumed by multiple callers. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The rewritten expression. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/relay/transform.h" line="400" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacetvm_1_1relay_1ae6b8ec762f81290872d611c40cc72458" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="namespacetvm_1_1relay_1a5b84e3790f89bb3fad5c7911eeb99531" kindref="member">Expr</ref></type>
+        <definition>Expr tvm::relay::ForwardRewrite</definition>
+        <argsstring>(const Expr &amp;expr, const FForwardRewrite &amp;rewrite_func, std::function&lt; ObjectRef(const Call &amp;)&gt; fcontext=nullptr, std::function&lt; Expr(const Expr &amp;)&gt; fmulti_ref_trigger=nullptr)</argsstring>
+        <name>ForwardRewrite</name>
+        <param>
+          <type>const <ref refid="namespacetvm_1_1relay_1a5b84e3790f89bb3fad5c7911eeb99531" kindref="member">Expr</ref> &amp;</type>
+          <declname>expr</declname>
+        </param>
+        <param>
+          <type>const <ref refid="namespacetvm_1_1relay_1aa04117f6f0a173924ff2f6d080c9265c" kindref="member">FForwardRewrite</ref> &amp;</type>
+          <declname>rewrite_func</declname>
+        </param>
+        <param>
+          <type>std::function&lt; ObjectRef(const <ref refid="classtvm_1_1relay_1_1Call" kindref="compound">Call</ref> &amp;)&gt;</type>
+          <declname>fcontext</declname>
+          <defval>nullptr</defval>
+        </param>
+        <param>
+          <type>std::function&lt; <ref refid="namespacetvm_1_1relay_1a5b84e3790f89bb3fad5c7911eeb99531" kindref="member">Expr</ref>(const <ref refid="namespacetvm_1_1relay_1a5b84e3790f89bb3fad5c7911eeb99531" kindref="member">Expr</ref> &amp;)&gt;</type>
+          <declname>fmulti_ref_trigger</declname>
+          <defval>nullptr</defval>
+        </param>
+        <briefdescription>
+<para>Apply rewrite rules to rewrite the expr in post DFS order. This function is used as a helper function to rewrtie an expression in a pass. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>expr</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The expression. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>rewrite_func</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The rewrite func that will apply to all operators. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>fcontext</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Additional callback to provide context argument for each call node. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>fmulti_ref_trigger</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Transformation function to be called when an Expr consumed by multiple callers.</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The rewritten expression. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/relay/transform.h" line="417" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacetvm_1_1relay_1a7917e50fbb560a15995e8a617d65d1ab" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="namespacetvm_1_1relay_1a5b84e3790f89bb3fad5c7911eeb99531" kindref="member">Expr</ref></type>
+        <definition>Expr tvm::relay::RewriteAnnotatedOps</definition>
+        <argsstring>(const Expr &amp;expr, int fallback_device)</argsstring>
+        <name>RewriteAnnotatedOps</name>
+        <param>
+          <type>const <ref refid="namespacetvm_1_1relay_1a5b84e3790f89bb3fad5c7911eeb99531" kindref="member">Expr</ref> &amp;</type>
+          <declname>expr</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>fallback_device</declname>
+        </param>
+        <briefdescription>
+<para>Rewrite the annotated program. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>expr</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The expression. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>fallback_device</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The fallback device which is the default device for operators without annotation.</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The updated program. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/relay/transform.h" line="431" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacetvm_1_1relay_1ab9548d99857f7698f4fe64d056dcd46a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classtvm_1_1relay_1_1Function" kindref="compound">Function</ref></type>
+        <definition>Function tvm::relay::ToCPS</definition>
+        <argsstring>(const Function &amp;f, const IRModule &amp;mod)</argsstring>
+        <name>ToCPS</name>
+        <param>
+          <type>const <ref refid="classtvm_1_1relay_1_1Function" kindref="compound">Function</ref> &amp;</type>
+          <declname>f</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classtvm_1_1IRModule" kindref="compound">IRModule</ref> &amp;</type>
+          <declname>mod</declname>
+        </param>
+        <briefdescription>
+<para>Turn an expression into continuation passing style(CPS). </para>        </briefdescription>
+        <detaileddescription>
+<para>CPS mean that every function will, instead of returning the result directly, be passed down an extra function (called the continuation) as argument, and pass the result to the continuation instead.</para><para>Thus, every function call has to be passed an extra argument that represent the rest of the computation (Hence the name of continuation).</para><para>Similarly, all other compute will be wrapped and call the continuation as well.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>f</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the function. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>mod</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the module.</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>the converted <ref refid="classtvm_1_1relay_1_1Function" kindref="compound">Function</ref>. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/relay/transform.h" line="450" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacetvm_1_1relay_1a1677d450d58078811f52fd70d67db515" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classtvm_1_1relay_1_1Function" kindref="compound">Function</ref></type>
+        <definition>Function tvm::relay::UnCPS</definition>
+        <argsstring>(const Function &amp;f)</argsstring>
+        <name>UnCPS</name>
+        <param>
+          <type>const <ref refid="classtvm_1_1relay_1_1Function" kindref="compound">Function</ref> &amp;</type>
+          <declname>f</declname>
+        </param>
+        <briefdescription>
+<para>Remove the continuation argument of a CPS function. </para>        </briefdescription>
+        <detaileddescription>
+<para>Note that this only transform the type back into un-CPS form when there is no higher order input/output.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>f</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the function.</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>the converted <ref refid="classtvm_1_1relay_1_1Function" kindref="compound">Function</ref>. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/relay/transform.h" line="462" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacetvm_1_1relay_1a1ecbcbe35c7abd82b9eabf94f6b797d2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="namespacetvm_1_1relay_1a5b84e3790f89bb3fad5c7911eeb99531" kindref="member">Expr</ref></type>
+        <definition>Expr tvm::relay::DeDup</definition>
+        <argsstring>(const Expr &amp;e)</argsstring>
+        <name>DeDup</name>
+        <param>
+          <type>const <ref refid="namespacetvm_1_1relay_1a5b84e3790f89bb3fad5c7911eeb99531" kindref="member">Expr</ref> &amp;</type>
+          <declname>e</declname>
+        </param>
+        <briefdescription>
+<para>Deduplicate the bound variables and type variables in the expression. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>e</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the expression.</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>the deduplicated expression. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/relay/transform.h" line="471" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Relay: a high level functional IR for TVM. </para>    </briefdescription>
+    <detaileddescription>
+<para>This namespace contains the abstract syntax tree, and other essential data structures for the Relay IR.</para><para>You can find more about Relay by reading the language reference. </para>    </detaileddescription>
+    <location file="include/tvm/relay/adt.h" line="37" column="1"/>
+  </compounddef>
+</doxygen>

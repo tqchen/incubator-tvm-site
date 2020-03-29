@@ -1,0 +1,13 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="dir_d523279167051dc3aad9a40981221f4d" kind="dir">
+    <compoundname>include/tvm/relay/qnn</compoundname>
+    <innerfile refid="relay_2qnn_2attrs_8h">attrs.h</innerfile>
+    <innerfile refid="include_2tvm_2relay_2qnn_2transform_8h">transform.h</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="include/tvm/relay/qnn/"/>
+  </compounddef>
+</doxygen>

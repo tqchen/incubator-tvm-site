@@ -1,0 +1,498 @@
+\hypertarget{classtvm_1_1Array}{}\section{tvm\+:\+:Array$<$ T, typename $>$ Class Template Reference}
+\label{classtvm_1_1Array}\index{tvm\+::\+Array$<$ T, typename $>$@{tvm\+::\+Array$<$ T, typename $>$}}
+
+
+\hyperlink{classtvm_1_1Array}{Array} container of Node\+Ref in D\+SL graph. \hyperlink{classtvm_1_1Array}{Array} implements copy on write semantics, which means array is mutable but copy will happen when array is referenced in more than two places.  
+
+
+
+
+{\ttfamily \#include $<$container.\+h$>$}
+
+
+
+Inheritance diagram for tvm\+:\+:Array$<$ T, typename $>$\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=229pt]{classtvm_1_1Array__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for tvm\+:\+:Array$<$ T, typename $>$\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=229pt]{classtvm_1_1Array__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{structtvm_1_1Array_1_1ValueConverter}{Value\+Converter}
+\end{DoxyCompactItemize}
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+using \hyperlink{classtvm_1_1Array_ab85f7f463f8a418f6b4dcffdf43b007c}{Container\+Type} = \hyperlink{classtvm_1_1ArrayNode}{Array\+Node}
+\begin{DoxyCompactList}\small\item\em specify container node \end{DoxyCompactList}\item 
+using \hyperlink{classtvm_1_1Array_a82550eb5257293ba5af8866aa8ff16e6}{iterator} = \hyperlink{classtvm_1_1IterAdapter}{Iter\+Adapter}$<$ \hyperlink{structtvm_1_1Array_1_1ValueConverter}{Value\+Converter}, std\+::vector$<$ Object\+Ref $>$\+::const\+\_\+iterator $>$
+\item 
+using \hyperlink{classtvm_1_1Array_a6b71ab5c7c8c2abffe81a0ea3842fd1a}{reverse\+\_\+iterator} = \hyperlink{classtvm_1_1IterAdapter}{Iter\+Adapter}$<$ \hyperlink{structtvm_1_1Array_1_1ValueConverter}{Value\+Converter}, std\+::vector$<$ Object\+Ref $>$\+::const\+\_\+reverse\+\_\+iterator $>$
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classtvm_1_1Array_aab72ecf006512069d8f791e3cae3eee0}{Array} ()
+\begin{DoxyCompactList}\small\item\em default constructor \end{DoxyCompactList}\item 
+\hyperlink{classtvm_1_1Array_a42ad68bcaefafa48967fa815cdb1e9fe}{Array} (\hyperlink{classtvm_1_1Array}{Array}$<$ T $>$ \&\&other)
+\begin{DoxyCompactList}\small\item\em move constructor \end{DoxyCompactList}\item 
+\hyperlink{classtvm_1_1Array_a48ecf47f2a0bc8dfaddc8da83300deed}{Array} (const \hyperlink{classtvm_1_1Array}{Array}$<$ T $>$ \&other)
+\begin{DoxyCompactList}\small\item\em copy constructor \end{DoxyCompactList}\item 
+\hyperlink{classtvm_1_1Array_abda937076918f8123b1fc62303a940a4}{Array} (Object\+Ptr$<$ Object $>$ n)
+\begin{DoxyCompactList}\small\item\em constructor from pointer \end{DoxyCompactList}\item 
+{\footnotesize template$<$typename Iter\+Type $>$ }\\\hyperlink{classtvm_1_1Array_a8e465f5428bc1189dfd6eaf7075bb96f}{Array} (Iter\+Type \hyperlink{classtvm_1_1Array_a5db0d3faad39ca865162e50d555a25fa}{begin}, Iter\+Type \hyperlink{classtvm_1_1Array_a6f05e6a14eca3ea865da0f293b4a5325}{end})
+\begin{DoxyCompactList}\small\item\em constructor from iterator \end{DoxyCompactList}\item 
+\hyperlink{classtvm_1_1Array_a9cd4b1d4c96884994152797a15df7343}{Array} (std\+::initializer\+\_\+list$<$ T $>$ init)
+\begin{DoxyCompactList}\small\item\em constructor from initializer list \end{DoxyCompactList}\item 
+\hyperlink{classtvm_1_1Array_a92ba9f4611201b6bad1fb46f5944922e}{Array} (const std\+::vector$<$ T $>$ \&init)
+\begin{DoxyCompactList}\small\item\em constructor from vector \end{DoxyCompactList}\item 
+\hyperlink{classtvm_1_1Array_ae409fb0a54ed7fb8c34b7b0445f88802}{Array} (size\+\_\+t n, const T \&val)
+\begin{DoxyCompactList}\small\item\em Constructs a container with n elements. Each element is a copy of val. \end{DoxyCompactList}\item 
+\hyperlink{classtvm_1_1Array}{Array}$<$ T $>$ \& \hyperlink{classtvm_1_1Array_acf66932043c572cb9fec8813dbe5d596}{operator=} (\hyperlink{classtvm_1_1Array}{Array}$<$ T $>$ \&\&other)
+\begin{DoxyCompactList}\small\item\em move assign operator \end{DoxyCompactList}\item 
+\hyperlink{classtvm_1_1Array}{Array}$<$ T $>$ \& \hyperlink{classtvm_1_1Array_a06969623060ee1bb0e82ba7a43513450}{operator=} (const \hyperlink{classtvm_1_1Array}{Array}$<$ T $>$ \&other)
+\begin{DoxyCompactList}\small\item\em copy assign operator \end{DoxyCompactList}\item 
+{\footnotesize template$<$typename Iter\+Type $>$ }\\void \hyperlink{classtvm_1_1Array_a5eebc9ddbd2e257d0586443b6d493df3}{assign} (Iter\+Type \hyperlink{classtvm_1_1Array_a5db0d3faad39ca865162e50d555a25fa}{begin}, Iter\+Type \hyperlink{classtvm_1_1Array_a6f05e6a14eca3ea865da0f293b4a5325}{end})
+\begin{DoxyCompactList}\small\item\em reset the array to content from iterator. \end{DoxyCompactList}\item 
+const T \hyperlink{classtvm_1_1Array_afed60e692eab1b2511b07a2b20751878}{operator\mbox{[}$\,$\mbox{]}} (size\+\_\+t i) const 
+\begin{DoxyCompactList}\small\item\em Read i-\/th element from array. \end{DoxyCompactList}\item 
+size\+\_\+t \hyperlink{classtvm_1_1Array_a6c150ee7d3e46117b099d2052b19aec5}{size} () const 
+\item 
+\hyperlink{classtvm_1_1ArrayNode}{Array\+Node} $\ast$ \hyperlink{classtvm_1_1Array_a8ebe3653e2bcef7481ab6264f7c231c8}{Copy\+On\+Write} ()
+\begin{DoxyCompactList}\small\item\em copy on write semantics Do nothing if current handle is the unique copy of the array. Otherwise make a new copy of the array to ensure the current handle hold a unique copy. \end{DoxyCompactList}\item 
+void \hyperlink{classtvm_1_1Array_a24d5ac1f6730d46cb1a6d16729f0a7bb}{push\+\_\+back} (const T \&item)
+\begin{DoxyCompactList}\small\item\em push a new item to the back of the list \end{DoxyCompactList}\item 
+void \hyperlink{classtvm_1_1Array_a8303345e666f9c72586721bc067e7fc9}{resize} (size\+\_\+t \hyperlink{classtvm_1_1Array_a6c150ee7d3e46117b099d2052b19aec5}{size})
+\begin{DoxyCompactList}\small\item\em Resize the array. \end{DoxyCompactList}\item 
+void \hyperlink{classtvm_1_1Array_ab3db968deb4be7a51767f22d267eb7af}{Set} (size\+\_\+t i, const T \&value)
+\begin{DoxyCompactList}\small\item\em set i-\/th element of the array. \end{DoxyCompactList}\item 
+bool \hyperlink{classtvm_1_1Array_a531169863918d8464aa4b905d236674f}{empty} () const 
+\item 
+{\footnotesize template$<$typename F $>$ }\\void \hyperlink{classtvm_1_1Array_abb864921139827a886c8fec5b7796041}{Mutate\+By\+Apply} (F fmutate)
+\begin{DoxyCompactList}\small\item\em Helper function to apply fmutate to mutate an array. \end{DoxyCompactList}\item 
+\hyperlink{classtvm_1_1Array_a82550eb5257293ba5af8866aa8ff16e6}{iterator} \hyperlink{classtvm_1_1Array_a5db0d3faad39ca865162e50d555a25fa}{begin} () const 
+\item 
+\hyperlink{classtvm_1_1Array_a82550eb5257293ba5af8866aa8ff16e6}{iterator} \hyperlink{classtvm_1_1Array_a6f05e6a14eca3ea865da0f293b4a5325}{end} () const 
+\item 
+\hyperlink{classtvm_1_1Array_a6b71ab5c7c8c2abffe81a0ea3842fd1a}{reverse\+\_\+iterator} \hyperlink{classtvm_1_1Array_ad9e24a3208ffabbc079db08804a6f602}{rbegin} () const 
+\item 
+\hyperlink{classtvm_1_1Array_a6b71ab5c7c8c2abffe81a0ea3842fd1a}{reverse\+\_\+iterator} \hyperlink{classtvm_1_1Array_adc2c5ea9dacd9a1fae22c409a39007b8}{rend} () const 
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\subsubsection*{template$<$typename T, typename = typename std\+::enable\+\_\+if$<$std\+::is\+\_\+base\+\_\+of$<$\+Object\+Ref, T$>$\+::value$>$\+::type$>$\\*
+class tvm\+::\+Array$<$ T, typename $>$}
+
+\hyperlink{classtvm_1_1Array}{Array} container of Node\+Ref in D\+SL graph. \hyperlink{classtvm_1_1Array}{Array} implements copy on write semantics, which means array is mutable but copy will happen when array is referenced in more than two places. 
+
+operator\mbox{[}\mbox{]} only provide const acces, use Set to mutate the content. 
+\begin{DoxyTemplParams}{Template Parameters}
+{\em T} & The content Node\+Ref type. \\
+\hline
+\end{DoxyTemplParams}
+
+
+\subsection{Member Typedef Documentation}
+\index{tvm\+::\+Array@{tvm\+::\+Array}!Container\+Type@{Container\+Type}}
+\index{Container\+Type@{Container\+Type}!tvm\+::\+Array@{tvm\+::\+Array}}
+\subsubsection[{\texorpdfstring{Container\+Type}{ContainerType}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T, typename  = typename std\+::enable\+\_\+if$<$std\+::is\+\_\+base\+\_\+of$<$\+Object\+Ref, T$>$\+::value$>$\+::type$>$ using {\bf tvm\+::\+Array}$<$ T, typename $>$\+::{\bf Container\+Type} =  {\bf Array\+Node}}\hypertarget{classtvm_1_1Array_ab85f7f463f8a418f6b4dcffdf43b007c}{}\label{classtvm_1_1Array_ab85f7f463f8a418f6b4dcffdf43b007c}
+
+
+specify container node 
+
+\index{tvm\+::\+Array@{tvm\+::\+Array}!iterator@{iterator}}
+\index{iterator@{iterator}!tvm\+::\+Array@{tvm\+::\+Array}}
+\subsubsection[{\texorpdfstring{iterator}{iterator}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T, typename  = typename std\+::enable\+\_\+if$<$std\+::is\+\_\+base\+\_\+of$<$\+Object\+Ref, T$>$\+::value$>$\+::type$>$ using {\bf tvm\+::\+Array}$<$ T, typename $>$\+::{\bf iterator} =  {\bf Iter\+Adapter}$<${\bf Value\+Converter}, std\+::vector$<$Object\+Ref$>$\+::const\+\_\+iterator$>$}\hypertarget{classtvm_1_1Array_a82550eb5257293ba5af8866aa8ff16e6}{}\label{classtvm_1_1Array_a82550eb5257293ba5af8866aa8ff16e6}
+\index{tvm\+::\+Array@{tvm\+::\+Array}!reverse\+\_\+iterator@{reverse\+\_\+iterator}}
+\index{reverse\+\_\+iterator@{reverse\+\_\+iterator}!tvm\+::\+Array@{tvm\+::\+Array}}
+\subsubsection[{\texorpdfstring{reverse\+\_\+iterator}{reverse_iterator}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T, typename  = typename std\+::enable\+\_\+if$<$std\+::is\+\_\+base\+\_\+of$<$\+Object\+Ref, T$>$\+::value$>$\+::type$>$ using {\bf tvm\+::\+Array}$<$ T, typename $>$\+::{\bf reverse\+\_\+iterator} =  {\bf Iter\+Adapter}$<$ {\bf Value\+Converter}, std\+::vector$<$Object\+Ref$>$\+::const\+\_\+reverse\+\_\+iterator$>$}\hypertarget{classtvm_1_1Array_a6b71ab5c7c8c2abffe81a0ea3842fd1a}{}\label{classtvm_1_1Array_a6b71ab5c7c8c2abffe81a0ea3842fd1a}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\index{tvm\+::\+Array@{tvm\+::\+Array}!Array@{Array}}
+\index{Array@{Array}!tvm\+::\+Array@{tvm\+::\+Array}}
+\subsubsection[{\texorpdfstring{Array()}{Array()}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T, typename  = typename std\+::enable\+\_\+if$<$std\+::is\+\_\+base\+\_\+of$<$\+Object\+Ref, T$>$\+::value$>$\+::type$>$ {\bf tvm\+::\+Array}$<$ T, typename $>$\+::{\bf Array} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classtvm_1_1Array_aab72ecf006512069d8f791e3cae3eee0}{}\label{classtvm_1_1Array_aab72ecf006512069d8f791e3cae3eee0}
+
+
+default constructor 
+
+\index{tvm\+::\+Array@{tvm\+::\+Array}!Array@{Array}}
+\index{Array@{Array}!tvm\+::\+Array@{tvm\+::\+Array}}
+\subsubsection[{\texorpdfstring{Array(\+Array$<$ T $>$ \&\&other)}{Array(Array< T > &&other)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T, typename  = typename std\+::enable\+\_\+if$<$std\+::is\+\_\+base\+\_\+of$<$\+Object\+Ref, T$>$\+::value$>$\+::type$>$ {\bf tvm\+::\+Array}$<$ T, typename $>$\+::{\bf Array} (
+\begin{DoxyParamCaption}
+\item[{{\bf Array}$<$ T $>$ \&\&}]{other}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classtvm_1_1Array_a42ad68bcaefafa48967fa815cdb1e9fe}{}\label{classtvm_1_1Array_a42ad68bcaefafa48967fa815cdb1e9fe}
+
+
+move constructor 
+
+
+\begin{DoxyParams}{Parameters}
+{\em other} & source \\
+\hline
+\end{DoxyParams}
+\index{tvm\+::\+Array@{tvm\+::\+Array}!Array@{Array}}
+\index{Array@{Array}!tvm\+::\+Array@{tvm\+::\+Array}}
+\subsubsection[{\texorpdfstring{Array(const Array$<$ T $>$ \&other)}{Array(const Array< T > &other)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T, typename  = typename std\+::enable\+\_\+if$<$std\+::is\+\_\+base\+\_\+of$<$\+Object\+Ref, T$>$\+::value$>$\+::type$>$ {\bf tvm\+::\+Array}$<$ T, typename $>$\+::{\bf Array} (
+\begin{DoxyParamCaption}
+\item[{const {\bf Array}$<$ T $>$ \&}]{other}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classtvm_1_1Array_a48ecf47f2a0bc8dfaddc8da83300deed}{}\label{classtvm_1_1Array_a48ecf47f2a0bc8dfaddc8da83300deed}
+
+
+copy constructor 
+
+
+\begin{DoxyParams}{Parameters}
+{\em other} & source \\
+\hline
+\end{DoxyParams}
+\index{tvm\+::\+Array@{tvm\+::\+Array}!Array@{Array}}
+\index{Array@{Array}!tvm\+::\+Array@{tvm\+::\+Array}}
+\subsubsection[{\texorpdfstring{Array(\+Object\+Ptr$<$ Object $>$ n)}{Array(ObjectPtr< Object > n)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T, typename  = typename std\+::enable\+\_\+if$<$std\+::is\+\_\+base\+\_\+of$<$\+Object\+Ref, T$>$\+::value$>$\+::type$>$ {\bf tvm\+::\+Array}$<$ T, typename $>$\+::{\bf Array} (
+\begin{DoxyParamCaption}
+\item[{Object\+Ptr$<$ Object $>$}]{n}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [explicit]}}\hypertarget{classtvm_1_1Array_abda937076918f8123b1fc62303a940a4}{}\label{classtvm_1_1Array_abda937076918f8123b1fc62303a940a4}
+
+
+constructor from pointer 
+
+
+\begin{DoxyParams}{Parameters}
+{\em n} & the container pointer \\
+\hline
+\end{DoxyParams}
+\index{tvm\+::\+Array@{tvm\+::\+Array}!Array@{Array}}
+\index{Array@{Array}!tvm\+::\+Array@{tvm\+::\+Array}}
+\subsubsection[{\texorpdfstring{Array(\+Iter\+Type begin, Iter\+Type end)}{Array(IterType begin, IterType end)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T, typename  = typename std\+::enable\+\_\+if$<$std\+::is\+\_\+base\+\_\+of$<$\+Object\+Ref, T$>$\+::value$>$\+::type$>$ template$<$typename Iter\+Type $>$ {\bf tvm\+::\+Array}$<$ T, typename $>$\+::{\bf Array} (
+\begin{DoxyParamCaption}
+\item[{Iter\+Type}]{begin, }
+\item[{Iter\+Type}]{end}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classtvm_1_1Array_a8e465f5428bc1189dfd6eaf7075bb96f}{}\label{classtvm_1_1Array_a8e465f5428bc1189dfd6eaf7075bb96f}
+
+
+constructor from iterator 
+
+
+\begin{DoxyParams}{Parameters}
+{\em begin} & begin of iterator \\
+\hline
+{\em end} & end of iterator \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyTemplParams}{Template Parameters}
+{\em Iter\+Type} & The type of iterator \\
+\hline
+\end{DoxyTemplParams}
+\index{tvm\+::\+Array@{tvm\+::\+Array}!Array@{Array}}
+\index{Array@{Array}!tvm\+::\+Array@{tvm\+::\+Array}}
+\subsubsection[{\texorpdfstring{Array(std\+::initializer\+\_\+list$<$ T $>$ init)}{Array(std::initializer_list< T > init)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T, typename  = typename std\+::enable\+\_\+if$<$std\+::is\+\_\+base\+\_\+of$<$\+Object\+Ref, T$>$\+::value$>$\+::type$>$ {\bf tvm\+::\+Array}$<$ T, typename $>$\+::{\bf Array} (
+\begin{DoxyParamCaption}
+\item[{std\+::initializer\+\_\+list$<$ T $>$}]{init}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classtvm_1_1Array_a9cd4b1d4c96884994152797a15df7343}{}\label{classtvm_1_1Array_a9cd4b1d4c96884994152797a15df7343}
+
+
+constructor from initializer list 
+
+
+\begin{DoxyParams}{Parameters}
+{\em init} & The initalizer list \\
+\hline
+\end{DoxyParams}
+\index{tvm\+::\+Array@{tvm\+::\+Array}!Array@{Array}}
+\index{Array@{Array}!tvm\+::\+Array@{tvm\+::\+Array}}
+\subsubsection[{\texorpdfstring{Array(const std\+::vector$<$ T $>$ \&init)}{Array(const std::vector< T > &init)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T, typename  = typename std\+::enable\+\_\+if$<$std\+::is\+\_\+base\+\_\+of$<$\+Object\+Ref, T$>$\+::value$>$\+::type$>$ {\bf tvm\+::\+Array}$<$ T, typename $>$\+::{\bf Array} (
+\begin{DoxyParamCaption}
+\item[{const std\+::vector$<$ T $>$ \&}]{init}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classtvm_1_1Array_a92ba9f4611201b6bad1fb46f5944922e}{}\label{classtvm_1_1Array_a92ba9f4611201b6bad1fb46f5944922e}
+
+
+constructor from vector 
+
+
+\begin{DoxyParams}{Parameters}
+{\em init} & The vector \\
+\hline
+\end{DoxyParams}
+\index{tvm\+::\+Array@{tvm\+::\+Array}!Array@{Array}}
+\index{Array@{Array}!tvm\+::\+Array@{tvm\+::\+Array}}
+\subsubsection[{\texorpdfstring{Array(size\+\_\+t n, const T \&val)}{Array(size_t n, const T &val)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T, typename  = typename std\+::enable\+\_\+if$<$std\+::is\+\_\+base\+\_\+of$<$\+Object\+Ref, T$>$\+::value$>$\+::type$>$ {\bf tvm\+::\+Array}$<$ T, typename $>$\+::{\bf Array} (
+\begin{DoxyParamCaption}
+\item[{size\+\_\+t}]{n, }
+\item[{const T \&}]{val}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [explicit]}}\hypertarget{classtvm_1_1Array_ae409fb0a54ed7fb8c34b7b0445f88802}{}\label{classtvm_1_1Array_ae409fb0a54ed7fb8c34b7b0445f88802}
+
+
+Constructs a container with n elements. Each element is a copy of val. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em n} & The size of the container \\
+\hline
+{\em val} & The init value \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\index{tvm\+::\+Array@{tvm\+::\+Array}!assign@{assign}}
+\index{assign@{assign}!tvm\+::\+Array@{tvm\+::\+Array}}
+\subsubsection[{\texorpdfstring{assign(\+Iter\+Type begin, Iter\+Type end)}{assign(IterType begin, IterType end)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T, typename  = typename std\+::enable\+\_\+if$<$std\+::is\+\_\+base\+\_\+of$<$\+Object\+Ref, T$>$\+::value$>$\+::type$>$ template$<$typename Iter\+Type $>$ void {\bf tvm\+::\+Array}$<$ T, typename $>$\+::assign (
+\begin{DoxyParamCaption}
+\item[{Iter\+Type}]{begin, }
+\item[{Iter\+Type}]{end}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classtvm_1_1Array_a5eebc9ddbd2e257d0586443b6d493df3}{}\label{classtvm_1_1Array_a5eebc9ddbd2e257d0586443b6d493df3}
+
+
+reset the array to content from iterator. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em begin} & begin of iterator \\
+\hline
+{\em end} & end of iterator \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyTemplParams}{Template Parameters}
+{\em Iter\+Type} & The type of iterator \\
+\hline
+\end{DoxyTemplParams}
+\index{tvm\+::\+Array@{tvm\+::\+Array}!begin@{begin}}
+\index{begin@{begin}!tvm\+::\+Array@{tvm\+::\+Array}}
+\subsubsection[{\texorpdfstring{begin() const }{begin() const }}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T, typename  = typename std\+::enable\+\_\+if$<$std\+::is\+\_\+base\+\_\+of$<$\+Object\+Ref, T$>$\+::value$>$\+::type$>$ {\bf iterator} {\bf tvm\+::\+Array}$<$ T, typename $>$\+::begin (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classtvm_1_1Array_a5db0d3faad39ca865162e50d555a25fa}{}\label{classtvm_1_1Array_a5db0d3faad39ca865162e50d555a25fa}
+\begin{DoxyReturn}{Returns}
+begin iterator 
+\end{DoxyReturn}
+\index{tvm\+::\+Array@{tvm\+::\+Array}!Copy\+On\+Write@{Copy\+On\+Write}}
+\index{Copy\+On\+Write@{Copy\+On\+Write}!tvm\+::\+Array@{tvm\+::\+Array}}
+\subsubsection[{\texorpdfstring{Copy\+On\+Write()}{CopyOnWrite()}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T, typename  = typename std\+::enable\+\_\+if$<$std\+::is\+\_\+base\+\_\+of$<$\+Object\+Ref, T$>$\+::value$>$\+::type$>$ {\bf Array\+Node}$\ast$ {\bf tvm\+::\+Array}$<$ T, typename $>$\+::Copy\+On\+Write (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classtvm_1_1Array_a8ebe3653e2bcef7481ab6264f7c231c8}{}\label{classtvm_1_1Array_a8ebe3653e2bcef7481ab6264f7c231c8}
+
+
+copy on write semantics Do nothing if current handle is the unique copy of the array. Otherwise make a new copy of the array to ensure the current handle hold a unique copy. 
+
+\begin{DoxyReturn}{Returns}
+Handle to the internal node container(which ganrantees to be unique) 
+\end{DoxyReturn}
+\index{tvm\+::\+Array@{tvm\+::\+Array}!empty@{empty}}
+\index{empty@{empty}!tvm\+::\+Array@{tvm\+::\+Array}}
+\subsubsection[{\texorpdfstring{empty() const }{empty() const }}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T, typename  = typename std\+::enable\+\_\+if$<$std\+::is\+\_\+base\+\_\+of$<$\+Object\+Ref, T$>$\+::value$>$\+::type$>$ bool {\bf tvm\+::\+Array}$<$ T, typename $>$\+::empty (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classtvm_1_1Array_a531169863918d8464aa4b905d236674f}{}\label{classtvm_1_1Array_a531169863918d8464aa4b905d236674f}
+\begin{DoxyReturn}{Returns}
+whether array is empty 
+\end{DoxyReturn}
+\index{tvm\+::\+Array@{tvm\+::\+Array}!end@{end}}
+\index{end@{end}!tvm\+::\+Array@{tvm\+::\+Array}}
+\subsubsection[{\texorpdfstring{end() const }{end() const }}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T, typename  = typename std\+::enable\+\_\+if$<$std\+::is\+\_\+base\+\_\+of$<$\+Object\+Ref, T$>$\+::value$>$\+::type$>$ {\bf iterator} {\bf tvm\+::\+Array}$<$ T, typename $>$\+::end (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classtvm_1_1Array_a6f05e6a14eca3ea865da0f293b4a5325}{}\label{classtvm_1_1Array_a6f05e6a14eca3ea865da0f293b4a5325}
+\begin{DoxyReturn}{Returns}
+end iterator 
+\end{DoxyReturn}
+\index{tvm\+::\+Array@{tvm\+::\+Array}!Mutate\+By\+Apply@{Mutate\+By\+Apply}}
+\index{Mutate\+By\+Apply@{Mutate\+By\+Apply}!tvm\+::\+Array@{tvm\+::\+Array}}
+\subsubsection[{\texorpdfstring{Mutate\+By\+Apply(\+F fmutate)}{MutateByApply(F fmutate)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T, typename  = typename std\+::enable\+\_\+if$<$std\+::is\+\_\+base\+\_\+of$<$\+Object\+Ref, T$>$\+::value$>$\+::type$>$ template$<$typename F $>$ void {\bf tvm\+::\+Array}$<$ T, typename $>$\+::Mutate\+By\+Apply (
+\begin{DoxyParamCaption}
+\item[{F}]{fmutate}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classtvm_1_1Array_abb864921139827a886c8fec5b7796041}{}\label{classtvm_1_1Array_abb864921139827a886c8fec5b7796041}
+
+
+Helper function to apply fmutate to mutate an array. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em fmutate} & The transformation function T -\/$>$ T. \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyTemplParams}{Template Parameters}
+{\em F} & the type of the mutation function. \\
+\hline
+\end{DoxyTemplParams}
+\begin{DoxyNote}{Note}
+This function performs copy on write optimization. 
+\end{DoxyNote}
+\index{tvm\+::\+Array@{tvm\+::\+Array}!operator=@{operator=}}
+\index{operator=@{operator=}!tvm\+::\+Array@{tvm\+::\+Array}}
+\subsubsection[{\texorpdfstring{operator=(\+Array$<$ T $>$ \&\&other)}{operator=(Array< T > &&other)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T, typename  = typename std\+::enable\+\_\+if$<$std\+::is\+\_\+base\+\_\+of$<$\+Object\+Ref, T$>$\+::value$>$\+::type$>$ {\bf Array}$<$T$>$\& {\bf tvm\+::\+Array}$<$ T, typename $>$\+::operator= (
+\begin{DoxyParamCaption}
+\item[{{\bf Array}$<$ T $>$ \&\&}]{other}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classtvm_1_1Array_acf66932043c572cb9fec8813dbe5d596}{}\label{classtvm_1_1Array_acf66932043c572cb9fec8813dbe5d596}
+
+
+move assign operator 
+
+
+\begin{DoxyParams}{Parameters}
+{\em other} & The source of assignment \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+reference to self. 
+\end{DoxyReturn}
+\index{tvm\+::\+Array@{tvm\+::\+Array}!operator=@{operator=}}
+\index{operator=@{operator=}!tvm\+::\+Array@{tvm\+::\+Array}}
+\subsubsection[{\texorpdfstring{operator=(const Array$<$ T $>$ \&other)}{operator=(const Array< T > &other)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T, typename  = typename std\+::enable\+\_\+if$<$std\+::is\+\_\+base\+\_\+of$<$\+Object\+Ref, T$>$\+::value$>$\+::type$>$ {\bf Array}$<$T$>$\& {\bf tvm\+::\+Array}$<$ T, typename $>$\+::operator= (
+\begin{DoxyParamCaption}
+\item[{const {\bf Array}$<$ T $>$ \&}]{other}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classtvm_1_1Array_a06969623060ee1bb0e82ba7a43513450}{}\label{classtvm_1_1Array_a06969623060ee1bb0e82ba7a43513450}
+
+
+copy assign operator 
+
+
+\begin{DoxyParams}{Parameters}
+{\em other} & The source of assignment \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+reference to self. 
+\end{DoxyReturn}
+\index{tvm\+::\+Array@{tvm\+::\+Array}!operator\mbox{[}$\,$\mbox{]}@{operator[]}}
+\index{operator\mbox{[}$\,$\mbox{]}@{operator[]}!tvm\+::\+Array@{tvm\+::\+Array}}
+\subsubsection[{\texorpdfstring{operator[](size\+\_\+t i) const }{operator[](size_t i) const }}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T, typename  = typename std\+::enable\+\_\+if$<$std\+::is\+\_\+base\+\_\+of$<$\+Object\+Ref, T$>$\+::value$>$\+::type$>$ const T {\bf tvm\+::\+Array}$<$ T, typename $>$\+::operator\mbox{[}$\,$\mbox{]} (
+\begin{DoxyParamCaption}
+\item[{size\+\_\+t}]{i}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classtvm_1_1Array_afed60e692eab1b2511b07a2b20751878}{}\label{classtvm_1_1Array_afed60e692eab1b2511b07a2b20751878}
+
+
+Read i-\/th element from array. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em i} & The index \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the i-\/th element. 
+\end{DoxyReturn}
+\index{tvm\+::\+Array@{tvm\+::\+Array}!push\+\_\+back@{push\+\_\+back}}
+\index{push\+\_\+back@{push\+\_\+back}!tvm\+::\+Array@{tvm\+::\+Array}}
+\subsubsection[{\texorpdfstring{push\+\_\+back(const T \&item)}{push_back(const T &item)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T, typename  = typename std\+::enable\+\_\+if$<$std\+::is\+\_\+base\+\_\+of$<$\+Object\+Ref, T$>$\+::value$>$\+::type$>$ void {\bf tvm\+::\+Array}$<$ T, typename $>$\+::push\+\_\+back (
+\begin{DoxyParamCaption}
+\item[{const T \&}]{item}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classtvm_1_1Array_a24d5ac1f6730d46cb1a6d16729f0a7bb}{}\label{classtvm_1_1Array_a24d5ac1f6730d46cb1a6d16729f0a7bb}
+
+
+push a new item to the back of the list 
+
+
+\begin{DoxyParams}{Parameters}
+{\em item} & The item to be pushed. \\
+\hline
+\end{DoxyParams}
+\index{tvm\+::\+Array@{tvm\+::\+Array}!rbegin@{rbegin}}
+\index{rbegin@{rbegin}!tvm\+::\+Array@{tvm\+::\+Array}}
+\subsubsection[{\texorpdfstring{rbegin() const }{rbegin() const }}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T, typename  = typename std\+::enable\+\_\+if$<$std\+::is\+\_\+base\+\_\+of$<$\+Object\+Ref, T$>$\+::value$>$\+::type$>$ {\bf reverse\+\_\+iterator} {\bf tvm\+::\+Array}$<$ T, typename $>$\+::rbegin (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classtvm_1_1Array_ad9e24a3208ffabbc079db08804a6f602}{}\label{classtvm_1_1Array_ad9e24a3208ffabbc079db08804a6f602}
+\begin{DoxyReturn}{Returns}
+rbegin iterator 
+\end{DoxyReturn}
+\index{tvm\+::\+Array@{tvm\+::\+Array}!rend@{rend}}
+\index{rend@{rend}!tvm\+::\+Array@{tvm\+::\+Array}}
+\subsubsection[{\texorpdfstring{rend() const }{rend() const }}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T, typename  = typename std\+::enable\+\_\+if$<$std\+::is\+\_\+base\+\_\+of$<$\+Object\+Ref, T$>$\+::value$>$\+::type$>$ {\bf reverse\+\_\+iterator} {\bf tvm\+::\+Array}$<$ T, typename $>$\+::rend (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classtvm_1_1Array_adc2c5ea9dacd9a1fae22c409a39007b8}{}\label{classtvm_1_1Array_adc2c5ea9dacd9a1fae22c409a39007b8}
+\begin{DoxyReturn}{Returns}
+rend iterator 
+\end{DoxyReturn}
+\index{tvm\+::\+Array@{tvm\+::\+Array}!resize@{resize}}
+\index{resize@{resize}!tvm\+::\+Array@{tvm\+::\+Array}}
+\subsubsection[{\texorpdfstring{resize(size\+\_\+t size)}{resize(size_t size)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T, typename  = typename std\+::enable\+\_\+if$<$std\+::is\+\_\+base\+\_\+of$<$\+Object\+Ref, T$>$\+::value$>$\+::type$>$ void {\bf tvm\+::\+Array}$<$ T, typename $>$\+::resize (
+\begin{DoxyParamCaption}
+\item[{size\+\_\+t}]{size}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classtvm_1_1Array_a8303345e666f9c72586721bc067e7fc9}{}\label{classtvm_1_1Array_a8303345e666f9c72586721bc067e7fc9}
+
+
+Resize the array. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em size} & The new size. \\
+\hline
+\end{DoxyParams}
+\index{tvm\+::\+Array@{tvm\+::\+Array}!Set@{Set}}
+\index{Set@{Set}!tvm\+::\+Array@{tvm\+::\+Array}}
+\subsubsection[{\texorpdfstring{Set(size\+\_\+t i, const T \&value)}{Set(size_t i, const T &value)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T, typename  = typename std\+::enable\+\_\+if$<$std\+::is\+\_\+base\+\_\+of$<$\+Object\+Ref, T$>$\+::value$>$\+::type$>$ void {\bf tvm\+::\+Array}$<$ T, typename $>$\+::Set (
+\begin{DoxyParamCaption}
+\item[{size\+\_\+t}]{i, }
+\item[{const T \&}]{value}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classtvm_1_1Array_ab3db968deb4be7a51767f22d267eb7af}{}\label{classtvm_1_1Array_ab3db968deb4be7a51767f22d267eb7af}
+
+
+set i-\/th element of the array. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em i} & The index \\
+\hline
+{\em value} & The value to be setted. \\
+\hline
+\end{DoxyParams}
+\index{tvm\+::\+Array@{tvm\+::\+Array}!size@{size}}
+\index{size@{size}!tvm\+::\+Array@{tvm\+::\+Array}}
+\subsubsection[{\texorpdfstring{size() const }{size() const }}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T, typename  = typename std\+::enable\+\_\+if$<$std\+::is\+\_\+base\+\_\+of$<$\+Object\+Ref, T$>$\+::value$>$\+::type$>$ size\+\_\+t {\bf tvm\+::\+Array}$<$ T, typename $>$\+::size (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classtvm_1_1Array_a6c150ee7d3e46117b099d2052b19aec5}{}\label{classtvm_1_1Array_a6c150ee7d3e46117b099d2052b19aec5}
+\begin{DoxyReturn}{Returns}
+The size of the array 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+include/tvm/node/\hyperlink{node_2container_8h}{container.\+h}\end{DoxyCompactItemize}

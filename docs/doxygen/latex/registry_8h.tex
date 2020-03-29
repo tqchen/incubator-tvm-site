@@ -1,0 +1,95 @@
+\hypertarget{registry_8h}{}\section{include/tvm/runtime/registry.h File Reference}
+\label{registry_8h}\index{include/tvm/runtime/registry.\+h@{include/tvm/runtime/registry.\+h}}
+
+
+This file defines the T\+VM global function registry.  
+
+
+{\ttfamily \#include $<$tvm/runtime/packed\+\_\+func.\+h$>$}\\*
+{\ttfamily \#include $<$string$>$}\\*
+{\ttfamily \#include $<$vector$>$}\\*
+{\ttfamily \#include $<$utility$>$}\\*
+Include dependency graph for registry.\+h\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{registry_8h__incl}
+\end{center}
+\end{figure}
+This graph shows which files directly or indirectly include this file\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{registry_8h__dep__incl}
+\end{center}
+\end{figure}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \hyperlink{classtvm_1_1runtime_1_1Registry}{tvm\+::runtime\+::\+Registry}
+\begin{DoxyCompactList}\small\item\em \hyperlink{classtvm_1_1runtime_1_1Registry}{Registry} for global function. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Namespaces}
+\begin{DoxyCompactItemize}
+\item 
+ \hyperlink{namespacetvm}{tvm}
+\item 
+ \hyperlink{namespacetvm_1_1runtime}{tvm\+::runtime}
+\end{DoxyCompactItemize}
+\subsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \hyperlink{registry_8h_a11b8ea3ea0ce4b6cd2d7be2d5a5627b8}{T\+V\+M\+\_\+\+F\+U\+N\+C\+\_\+\+R\+E\+G\+\_\+\+V\+A\+R\+\_\+\+D\+EF}~static \hyperlink{object_8h_a744c2fdb7ff7dc43070c1841a5873c84}{T\+V\+M\+\_\+\+A\+T\+T\+R\+I\+B\+U\+T\+E\+\_\+\+U\+N\+U\+S\+ED} \+::\hyperlink{classtvm_1_1runtime_1_1Registry}{tvm\+::runtime\+::\+Registry}\& \+\_\+\+\_\+mk\+\_\+ \#\# T\+VM
+\item 
+\#define \hyperlink{registry_8h_a10f047b126505a3deda0b7f68718fa37}{T\+V\+M\+\_\+\+R\+E\+G\+I\+S\+T\+E\+R\+\_\+\+G\+L\+O\+B\+AL}(Op\+Name)
+\begin{DoxyCompactList}\small\item\em Register a function globally. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+This file defines the T\+VM global function registry. 
+
+The registered functions will be made available to front-\/end as well as backend users.
+
+The registry stores type-\/erased functions. Each registered function is automatically exposed to front-\/end language(e.\+g. python).
+
+Front-\/end can also pass callbacks as Packed\+Func, or register then into the same global registry in C++. The goal is to mix the front-\/end language and the T\+VM back-\/end.
+
+
+\begin{DoxyCode}
+\textcolor{comment}{// register the function as MyAPIFuncName}
+\hyperlink{registry_8h_a10f047b126505a3deda0b7f68718fa37}{TVM\_REGISTER\_GLOBAL}(MyAPIFuncName)
+.set\_body([](TVMArgs args, TVMRetValue* rv) \{
+  \textcolor{comment}{// my code.}
+\});
+\end{DoxyCode}
+ 
+
+\subsection{Macro Definition Documentation}
+\index{registry.\+h@{registry.\+h}!T\+V\+M\+\_\+\+F\+U\+N\+C\+\_\+\+R\+E\+G\+\_\+\+V\+A\+R\+\_\+\+D\+EF@{T\+V\+M\+\_\+\+F\+U\+N\+C\+\_\+\+R\+E\+G\+\_\+\+V\+A\+R\+\_\+\+D\+EF}}
+\index{T\+V\+M\+\_\+\+F\+U\+N\+C\+\_\+\+R\+E\+G\+\_\+\+V\+A\+R\+\_\+\+D\+EF@{T\+V\+M\+\_\+\+F\+U\+N\+C\+\_\+\+R\+E\+G\+\_\+\+V\+A\+R\+\_\+\+D\+EF}!registry.\+h@{registry.\+h}}
+\subsubsection[{\texorpdfstring{T\+V\+M\+\_\+\+F\+U\+N\+C\+\_\+\+R\+E\+G\+\_\+\+V\+A\+R\+\_\+\+D\+EF}{TVM_FUNC_REG_VAR_DEF}}]{\setlength{\rightskip}{0pt plus 5cm}\#define T\+V\+M\+\_\+\+F\+U\+N\+C\+\_\+\+R\+E\+G\+\_\+\+V\+A\+R\+\_\+\+D\+EF~static {\bf T\+V\+M\+\_\+\+A\+T\+T\+R\+I\+B\+U\+T\+E\+\_\+\+U\+N\+U\+S\+ED} \+::{\bf tvm\+::runtime\+::\+Registry}\& \+\_\+\+\_\+mk\+\_\+ \#\# T\+VM}\hypertarget{registry_8h_a11b8ea3ea0ce4b6cd2d7be2d5a5627b8}{}\label{registry_8h_a11b8ea3ea0ce4b6cd2d7be2d5a5627b8}
+\index{registry.\+h@{registry.\+h}!T\+V\+M\+\_\+\+R\+E\+G\+I\+S\+T\+E\+R\+\_\+\+G\+L\+O\+B\+AL@{T\+V\+M\+\_\+\+R\+E\+G\+I\+S\+T\+E\+R\+\_\+\+G\+L\+O\+B\+AL}}
+\index{T\+V\+M\+\_\+\+R\+E\+G\+I\+S\+T\+E\+R\+\_\+\+G\+L\+O\+B\+AL@{T\+V\+M\+\_\+\+R\+E\+G\+I\+S\+T\+E\+R\+\_\+\+G\+L\+O\+B\+AL}!registry.\+h@{registry.\+h}}
+\subsubsection[{\texorpdfstring{T\+V\+M\+\_\+\+R\+E\+G\+I\+S\+T\+E\+R\+\_\+\+G\+L\+O\+B\+AL}{TVM_REGISTER_GLOBAL}}]{\setlength{\rightskip}{0pt plus 5cm}\#define T\+V\+M\+\_\+\+R\+E\+G\+I\+S\+T\+E\+R\+\_\+\+G\+L\+O\+B\+AL(
+\begin{DoxyParamCaption}
+\item[{}]{Op\+Name}
+\end{DoxyParamCaption}
+)}\hypertarget{registry_8h_a10f047b126505a3deda0b7f68718fa37}{}\label{registry_8h_a10f047b126505a3deda0b7f68718fa37}
+{\bfseries Value\+:}
+\begin{DoxyCode}
+\hyperlink{object_8h_a73bf3e57b9d7a6e0dd55d901321d01ed}{TVM\_STR\_CONCAT}(\hyperlink{registry_8h_a11b8ea3ea0ce4b6cd2d7be2d5a5627b8}{TVM\_FUNC\_REG\_VAR\_DEF}, \_\_COUNTER\_\_) =            
+      \hyperlink{classtvm_1_1runtime_1_1Registry_a227ffef03991cd50224d5d31257a475a}{\(\backslash\)}
+\hyperlink{classtvm_1_1runtime_1_1Registry_a227ffef03991cd50224d5d31257a475a}{      ::tvm::runtime::Registry::Register}(OpName)
+\end{DoxyCode}
+
+
+Register a function globally. 
+
+
+\begin{DoxyCode}
+1 TVM\_REGISTER\_GLOBAL("MyPrint")
+2 .set\_body([](TVMArgs args, TVMRetValue* rv) \{
+3 \});
+\end{DoxyCode}
+ 

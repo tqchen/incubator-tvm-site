@@ -1,0 +1,15 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="dir_194ecda214f05a38134392ac6a69b970" kind="dir">
+    <compoundname>include/tvm/arith</compoundname>
+    <innerfile refid="analyzer_8h">analyzer.h</innerfile>
+    <innerfile refid="bound_8h">bound.h</innerfile>
+    <innerfile refid="int__set_8h">int_set.h</innerfile>
+    <innerfile refid="pattern_8h">pattern.h</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="include/tvm/arith/"/>
+  </compounddef>
+</doxygen>

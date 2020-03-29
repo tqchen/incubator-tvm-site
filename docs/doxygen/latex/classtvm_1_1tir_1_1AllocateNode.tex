@@ -1,0 +1,207 @@
+\hypertarget{classtvm_1_1tir_1_1AllocateNode}{}\section{tvm\+:\+:tir\+:\+:Allocate\+Node Class Reference}
+\label{classtvm_1_1tir_1_1AllocateNode}\index{tvm\+::tir\+::\+Allocate\+Node@{tvm\+::tir\+::\+Allocate\+Node}}
+
+
+Allocate a buffer that can be used in body.  
+
+
+
+
+{\ttfamily \#include $<$stmt.\+h$>$}
+
+
+
+Inheritance diagram for tvm\+:\+:tir\+:\+:Allocate\+Node\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=285pt]{classtvm_1_1tir_1_1AllocateNode__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for tvm\+:\+:tir\+:\+:Allocate\+Node\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classtvm_1_1tir_1_1AllocateNode__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{classtvm_1_1tir_1_1AllocateNode_ab476a2f1664e28a6da78dfa1d7bc2889}{Visit\+Attrs} (\hyperlink{classtvm_1_1AttrVisitor}{Attr\+Visitor} $\ast$v)
+\item 
+bool \hyperlink{classtvm_1_1tir_1_1AllocateNode_af666f784cf57e890d16a326912955075}{S\+Equal\+Reduce} (const \hyperlink{classtvm_1_1tir_1_1AllocateNode}{Allocate\+Node} $\ast$other, \hyperlink{classtvm_1_1SEqualReducer}{S\+Equal\+Reducer} equal) const 
+\item 
+void \hyperlink{classtvm_1_1tir_1_1AllocateNode_aa8b61783e619cc9be13115ca7dfe10b2}{S\+Hash\+Reduce} (\hyperlink{classtvm_1_1SHashReducer}{S\+Hash\+Reducer} hash\+\_\+reduce) const 
+\item 
+int32\+\_\+t \hyperlink{classtvm_1_1tir_1_1AllocateNode_a7e72bb427a2c945d5eb6bec22bd96f82}{constant\+\_\+allocation\+\_\+size} () const 
+\begin{DoxyCompactList}\small\item\em If the buffer size is constant, return the size. Otherwise return 0. \end{DoxyCompactList}\item 
+\hyperlink{classtvm_1_1tir_1_1AllocateNode_a8df9749b7cd4db25d5de52572be1ba34}{T\+V\+M\+\_\+\+D\+E\+C\+L\+A\+R\+E\+\_\+\+F\+I\+N\+A\+L\+\_\+\+O\+B\+J\+E\+C\+T\+\_\+\+I\+N\+FO} (\hyperlink{classtvm_1_1tir_1_1AllocateNode}{Allocate\+Node}, \hyperlink{classtvm_1_1tir_1_1StmtNode}{Stmt\+Node})
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \hyperlink{classtvm_1_1tir_1_1Stmt}{Stmt} \hyperlink{classtvm_1_1tir_1_1AllocateNode_a0e3c6c493843b0e96cdbeedb7992b695}{make} (\hyperlink{classtvm_1_1tir_1_1Var}{Var} \hyperlink{classtvm_1_1tir_1_1AllocateNode_acc0828bc8173ba2d46f90ddd2a329ae0}{buffer\+\_\+var}, \hyperlink{namespacetvm_a41918af1a1dc386388639a9d3ad06c5d}{Data\+Type} \hyperlink{classtvm_1_1tir_1_1AllocateNode_aba885cfd49a10c594320d0e84a9a4c90}{dtype}, \hyperlink{classtvm_1_1Array}{Array}$<$ \hyperlink{classtvm_1_1PrimExpr}{Prim\+Expr} $>$ \hyperlink{classtvm_1_1tir_1_1AllocateNode_a0f6d59cffc5fda07450e0fdab6b66bcb}{extents}, \hyperlink{classtvm_1_1PrimExpr}{Prim\+Expr} \hyperlink{classtvm_1_1tir_1_1AllocateNode_a6b855ad51d1fcb4e21e9afe657f77ba5}{condition}, \hyperlink{classtvm_1_1tir_1_1Stmt}{Stmt} \hyperlink{classtvm_1_1tir_1_1AllocateNode_a797e50c85f4bc016bcf3a3a22737980e}{body}, \hyperlink{classtvm_1_1PrimExpr}{Prim\+Expr} \hyperlink{classtvm_1_1tir_1_1AllocateNode_a52b31635e23aeb6e18e83aa3cc9f8d00}{new\+\_\+expr}=\hyperlink{classtvm_1_1PrimExpr}{Prim\+Expr}(), std\+::string \hyperlink{classtvm_1_1tir_1_1AllocateNode_ac2c84aa70f243d933c0480331910de52}{free\+\_\+function}=std\+::string())
+\item 
+static int32\+\_\+t \hyperlink{classtvm_1_1tir_1_1AllocateNode_ac30c52ef2a4d9f728026f4f7188094ce}{constant\+\_\+allocation\+\_\+size} (const \hyperlink{classtvm_1_1Array}{Array}$<$ \hyperlink{classtvm_1_1PrimExpr}{Prim\+Expr} $>$ \&\hyperlink{classtvm_1_1tir_1_1AllocateNode_a0f6d59cffc5fda07450e0fdab6b66bcb}{extents})
+\begin{DoxyCompactList}\small\item\em If the buffer size is constant, return the size. Otherwise return 0. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classtvm_1_1tir_1_1Var}{Var} \hyperlink{classtvm_1_1tir_1_1AllocateNode_acc0828bc8173ba2d46f90ddd2a329ae0}{buffer\+\_\+var}
+\begin{DoxyCompactList}\small\item\em The buffer variable. \end{DoxyCompactList}\item 
+\hyperlink{namespacetvm_a41918af1a1dc386388639a9d3ad06c5d}{Data\+Type} \hyperlink{classtvm_1_1tir_1_1AllocateNode_aba885cfd49a10c594320d0e84a9a4c90}{dtype}
+\begin{DoxyCompactList}\small\item\em The type of the buffer. \end{DoxyCompactList}\item 
+\hyperlink{classtvm_1_1Array}{Array}$<$ \hyperlink{classtvm_1_1PrimExpr}{Prim\+Expr} $>$ \hyperlink{classtvm_1_1tir_1_1AllocateNode_a0f6d59cffc5fda07450e0fdab6b66bcb}{extents}
+\begin{DoxyCompactList}\small\item\em The extents of the buffer. \end{DoxyCompactList}\item 
+\hyperlink{classtvm_1_1PrimExpr}{Prim\+Expr} \hyperlink{classtvm_1_1tir_1_1AllocateNode_a6b855ad51d1fcb4e21e9afe657f77ba5}{condition}
+\begin{DoxyCompactList}\small\item\em Only allocate buffer when condition is satisfied. \end{DoxyCompactList}\item 
+\hyperlink{classtvm_1_1tir_1_1Stmt}{Stmt} \hyperlink{classtvm_1_1tir_1_1AllocateNode_a797e50c85f4bc016bcf3a3a22737980e}{body}
+\begin{DoxyCompactList}\small\item\em The body to be executed. \end{DoxyCompactList}\item 
+\hyperlink{classtvm_1_1PrimExpr}{Prim\+Expr} \hyperlink{classtvm_1_1tir_1_1AllocateNode_a52b31635e23aeb6e18e83aa3cc9f8d00}{new\+\_\+expr}
+\item 
+std\+::string \hyperlink{classtvm_1_1tir_1_1AllocateNode_ac2c84aa70f243d933c0480331910de52}{free\+\_\+function}
+\end{DoxyCompactItemize}
+\subsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static constexpr const char $\ast$ \hyperlink{classtvm_1_1tir_1_1AllocateNode_abfc8c658a61830c646b7773e213ce004}{\+\_\+type\+\_\+key} = \char`\"{}Allocate\char`\"{}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Allocate a buffer that can be used in body. 
+
+\subsection{Member Function Documentation}
+\index{tvm\+::tir\+::\+Allocate\+Node@{tvm\+::tir\+::\+Allocate\+Node}!constant\+\_\+allocation\+\_\+size@{constant\+\_\+allocation\+\_\+size}}
+\index{constant\+\_\+allocation\+\_\+size@{constant\+\_\+allocation\+\_\+size}!tvm\+::tir\+::\+Allocate\+Node@{tvm\+::tir\+::\+Allocate\+Node}}
+\subsubsection[{\texorpdfstring{constant\+\_\+allocation\+\_\+size() const }{constant_allocation_size() const }}]{\setlength{\rightskip}{0pt plus 5cm}int32\+\_\+t tvm\+::tir\+::\+Allocate\+Node\+::constant\+\_\+allocation\+\_\+size (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classtvm_1_1tir_1_1AllocateNode_a7e72bb427a2c945d5eb6bec22bd96f82}{}\label{classtvm_1_1tir_1_1AllocateNode_a7e72bb427a2c945d5eb6bec22bd96f82}
+
+
+If the buffer size is constant, return the size. Otherwise return 0. 
+
+\begin{DoxyReturn}{Returns}
+The result. 
+\end{DoxyReturn}
+\index{tvm\+::tir\+::\+Allocate\+Node@{tvm\+::tir\+::\+Allocate\+Node}!constant\+\_\+allocation\+\_\+size@{constant\+\_\+allocation\+\_\+size}}
+\index{constant\+\_\+allocation\+\_\+size@{constant\+\_\+allocation\+\_\+size}!tvm\+::tir\+::\+Allocate\+Node@{tvm\+::tir\+::\+Allocate\+Node}}
+\subsubsection[{\texorpdfstring{constant\+\_\+allocation\+\_\+size(const Array$<$ Prim\+Expr $>$ \&extents)}{constant_allocation_size(const Array< PrimExpr > &extents)}}]{\setlength{\rightskip}{0pt plus 5cm}static int32\+\_\+t tvm\+::tir\+::\+Allocate\+Node\+::constant\+\_\+allocation\+\_\+size (
+\begin{DoxyParamCaption}
+\item[{const {\bf Array}$<$ {\bf Prim\+Expr} $>$ \&}]{extents}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}\hypertarget{classtvm_1_1tir_1_1AllocateNode_ac30c52ef2a4d9f728026f4f7188094ce}{}\label{classtvm_1_1tir_1_1AllocateNode_ac30c52ef2a4d9f728026f4f7188094ce}
+
+
+If the buffer size is constant, return the size. Otherwise return 0. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em extents} & The extents of the buffer. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The result. 
+\end{DoxyReturn}
+\index{tvm\+::tir\+::\+Allocate\+Node@{tvm\+::tir\+::\+Allocate\+Node}!make@{make}}
+\index{make@{make}!tvm\+::tir\+::\+Allocate\+Node@{tvm\+::tir\+::\+Allocate\+Node}}
+\subsubsection[{\texorpdfstring{make(\+Var buffer\+\_\+var, Data\+Type dtype, Array$<$ Prim\+Expr $>$ extents, Prim\+Expr condition, Stmt body, Prim\+Expr new\+\_\+expr=\+Prim\+Expr(), std\+::string free\+\_\+function=std\+::string())}{make(Var buffer_var, DataType dtype, Array< PrimExpr > extents, PrimExpr condition, Stmt body, PrimExpr new_expr=PrimExpr(), std::string free_function=std::string())}}]{\setlength{\rightskip}{0pt plus 5cm}static {\bf Stmt} tvm\+::tir\+::\+Allocate\+Node\+::make (
+\begin{DoxyParamCaption}
+\item[{{\bf Var}}]{buffer\+\_\+var, }
+\item[{{\bf Data\+Type}}]{dtype, }
+\item[{{\bf Array}$<$ {\bf Prim\+Expr} $>$}]{extents, }
+\item[{{\bf Prim\+Expr}}]{condition, }
+\item[{{\bf Stmt}}]{body, }
+\item[{{\bf Prim\+Expr}}]{new\+\_\+expr = {\ttfamily {\bf Prim\+Expr}()}, }
+\item[{std\+::string}]{free\+\_\+function = {\ttfamily std\+:\+:string()}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}\hypertarget{classtvm_1_1tir_1_1AllocateNode_a0e3c6c493843b0e96cdbeedb7992b695}{}\label{classtvm_1_1tir_1_1AllocateNode_a0e3c6c493843b0e96cdbeedb7992b695}
+\index{tvm\+::tir\+::\+Allocate\+Node@{tvm\+::tir\+::\+Allocate\+Node}!S\+Equal\+Reduce@{S\+Equal\+Reduce}}
+\index{S\+Equal\+Reduce@{S\+Equal\+Reduce}!tvm\+::tir\+::\+Allocate\+Node@{tvm\+::tir\+::\+Allocate\+Node}}
+\subsubsection[{\texorpdfstring{S\+Equal\+Reduce(const Allocate\+Node $\ast$other, S\+Equal\+Reducer equal) const }{SEqualReduce(const AllocateNode *other, SEqualReducer equal) const }}]{\setlength{\rightskip}{0pt plus 5cm}bool tvm\+::tir\+::\+Allocate\+Node\+::\+S\+Equal\+Reduce (
+\begin{DoxyParamCaption}
+\item[{const {\bf Allocate\+Node} $\ast$}]{other, }
+\item[{{\bf S\+Equal\+Reducer}}]{equal}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classtvm_1_1tir_1_1AllocateNode_af666f784cf57e890d16a326912955075}{}\label{classtvm_1_1tir_1_1AllocateNode_af666f784cf57e890d16a326912955075}
+\index{tvm\+::tir\+::\+Allocate\+Node@{tvm\+::tir\+::\+Allocate\+Node}!S\+Hash\+Reduce@{S\+Hash\+Reduce}}
+\index{S\+Hash\+Reduce@{S\+Hash\+Reduce}!tvm\+::tir\+::\+Allocate\+Node@{tvm\+::tir\+::\+Allocate\+Node}}
+\subsubsection[{\texorpdfstring{S\+Hash\+Reduce(\+S\+Hash\+Reducer hash\+\_\+reduce) const }{SHashReduce(SHashReducer hash_reduce) const }}]{\setlength{\rightskip}{0pt plus 5cm}void tvm\+::tir\+::\+Allocate\+Node\+::\+S\+Hash\+Reduce (
+\begin{DoxyParamCaption}
+\item[{{\bf S\+Hash\+Reducer}}]{hash\+\_\+reduce}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classtvm_1_1tir_1_1AllocateNode_aa8b61783e619cc9be13115ca7dfe10b2}{}\label{classtvm_1_1tir_1_1AllocateNode_aa8b61783e619cc9be13115ca7dfe10b2}
+\index{tvm\+::tir\+::\+Allocate\+Node@{tvm\+::tir\+::\+Allocate\+Node}!T\+V\+M\+\_\+\+D\+E\+C\+L\+A\+R\+E\+\_\+\+F\+I\+N\+A\+L\+\_\+\+O\+B\+J\+E\+C\+T\+\_\+\+I\+N\+FO@{T\+V\+M\+\_\+\+D\+E\+C\+L\+A\+R\+E\+\_\+\+F\+I\+N\+A\+L\+\_\+\+O\+B\+J\+E\+C\+T\+\_\+\+I\+N\+FO}}
+\index{T\+V\+M\+\_\+\+D\+E\+C\+L\+A\+R\+E\+\_\+\+F\+I\+N\+A\+L\+\_\+\+O\+B\+J\+E\+C\+T\+\_\+\+I\+N\+FO@{T\+V\+M\+\_\+\+D\+E\+C\+L\+A\+R\+E\+\_\+\+F\+I\+N\+A\+L\+\_\+\+O\+B\+J\+E\+C\+T\+\_\+\+I\+N\+FO}!tvm\+::tir\+::\+Allocate\+Node@{tvm\+::tir\+::\+Allocate\+Node}}
+\subsubsection[{\texorpdfstring{T\+V\+M\+\_\+\+D\+E\+C\+L\+A\+R\+E\+\_\+\+F\+I\+N\+A\+L\+\_\+\+O\+B\+J\+E\+C\+T\+\_\+\+I\+N\+F\+O(\+Allocate\+Node, Stmt\+Node)}{TVM_DECLARE_FINAL_OBJECT_INFO(AllocateNode, StmtNode)}}]{\setlength{\rightskip}{0pt plus 5cm}tvm\+::tir\+::\+Allocate\+Node\+::\+T\+V\+M\+\_\+\+D\+E\+C\+L\+A\+R\+E\+\_\+\+F\+I\+N\+A\+L\+\_\+\+O\+B\+J\+E\+C\+T\+\_\+\+I\+N\+FO (
+\begin{DoxyParamCaption}
+\item[{{\bf Allocate\+Node}}]{, }
+\item[{{\bf Stmt\+Node}}]{}
+\end{DoxyParamCaption}
+)}\hypertarget{classtvm_1_1tir_1_1AllocateNode_a8df9749b7cd4db25d5de52572be1ba34}{}\label{classtvm_1_1tir_1_1AllocateNode_a8df9749b7cd4db25d5de52572be1ba34}
+\index{tvm\+::tir\+::\+Allocate\+Node@{tvm\+::tir\+::\+Allocate\+Node}!Visit\+Attrs@{Visit\+Attrs}}
+\index{Visit\+Attrs@{Visit\+Attrs}!tvm\+::tir\+::\+Allocate\+Node@{tvm\+::tir\+::\+Allocate\+Node}}
+\subsubsection[{\texorpdfstring{Visit\+Attrs(\+Attr\+Visitor $\ast$v)}{VisitAttrs(AttrVisitor *v)}}]{\setlength{\rightskip}{0pt plus 5cm}void tvm\+::tir\+::\+Allocate\+Node\+::\+Visit\+Attrs (
+\begin{DoxyParamCaption}
+\item[{{\bf Attr\+Visitor} $\ast$}]{v}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classtvm_1_1tir_1_1AllocateNode_ab476a2f1664e28a6da78dfa1d7bc2889}{}\label{classtvm_1_1tir_1_1AllocateNode_ab476a2f1664e28a6da78dfa1d7bc2889}
+
+
+\subsection{Member Data Documentation}
+\index{tvm\+::tir\+::\+Allocate\+Node@{tvm\+::tir\+::\+Allocate\+Node}!\+\_\+type\+\_\+key@{\+\_\+type\+\_\+key}}
+\index{\+\_\+type\+\_\+key@{\+\_\+type\+\_\+key}!tvm\+::tir\+::\+Allocate\+Node@{tvm\+::tir\+::\+Allocate\+Node}}
+\subsubsection[{\texorpdfstring{\+\_\+type\+\_\+key}{_type_key}}]{\setlength{\rightskip}{0pt plus 5cm}constexpr const char$\ast$ tvm\+::tir\+::\+Allocate\+Node\+::\+\_\+type\+\_\+key = \char`\"{}Allocate\char`\"{}\hspace{0.3cm}{\ttfamily [static]}}\hypertarget{classtvm_1_1tir_1_1AllocateNode_abfc8c658a61830c646b7773e213ce004}{}\label{classtvm_1_1tir_1_1AllocateNode_abfc8c658a61830c646b7773e213ce004}
+\index{tvm\+::tir\+::\+Allocate\+Node@{tvm\+::tir\+::\+Allocate\+Node}!body@{body}}
+\index{body@{body}!tvm\+::tir\+::\+Allocate\+Node@{tvm\+::tir\+::\+Allocate\+Node}}
+\subsubsection[{\texorpdfstring{body}{body}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Stmt} tvm\+::tir\+::\+Allocate\+Node\+::body}\hypertarget{classtvm_1_1tir_1_1AllocateNode_a797e50c85f4bc016bcf3a3a22737980e}{}\label{classtvm_1_1tir_1_1AllocateNode_a797e50c85f4bc016bcf3a3a22737980e}
+
+
+The body to be executed. 
+
+\index{tvm\+::tir\+::\+Allocate\+Node@{tvm\+::tir\+::\+Allocate\+Node}!buffer\+\_\+var@{buffer\+\_\+var}}
+\index{buffer\+\_\+var@{buffer\+\_\+var}!tvm\+::tir\+::\+Allocate\+Node@{tvm\+::tir\+::\+Allocate\+Node}}
+\subsubsection[{\texorpdfstring{buffer\+\_\+var}{buffer_var}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Var} tvm\+::tir\+::\+Allocate\+Node\+::buffer\+\_\+var}\hypertarget{classtvm_1_1tir_1_1AllocateNode_acc0828bc8173ba2d46f90ddd2a329ae0}{}\label{classtvm_1_1tir_1_1AllocateNode_acc0828bc8173ba2d46f90ddd2a329ae0}
+
+
+The buffer variable. 
+
+\index{tvm\+::tir\+::\+Allocate\+Node@{tvm\+::tir\+::\+Allocate\+Node}!condition@{condition}}
+\index{condition@{condition}!tvm\+::tir\+::\+Allocate\+Node@{tvm\+::tir\+::\+Allocate\+Node}}
+\subsubsection[{\texorpdfstring{condition}{condition}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Prim\+Expr} tvm\+::tir\+::\+Allocate\+Node\+::condition}\hypertarget{classtvm_1_1tir_1_1AllocateNode_a6b855ad51d1fcb4e21e9afe657f77ba5}{}\label{classtvm_1_1tir_1_1AllocateNode_a6b855ad51d1fcb4e21e9afe657f77ba5}
+
+
+Only allocate buffer when condition is satisfied. 
+
+\index{tvm\+::tir\+::\+Allocate\+Node@{tvm\+::tir\+::\+Allocate\+Node}!dtype@{dtype}}
+\index{dtype@{dtype}!tvm\+::tir\+::\+Allocate\+Node@{tvm\+::tir\+::\+Allocate\+Node}}
+\subsubsection[{\texorpdfstring{dtype}{dtype}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Data\+Type} tvm\+::tir\+::\+Allocate\+Node\+::dtype}\hypertarget{classtvm_1_1tir_1_1AllocateNode_aba885cfd49a10c594320d0e84a9a4c90}{}\label{classtvm_1_1tir_1_1AllocateNode_aba885cfd49a10c594320d0e84a9a4c90}
+
+
+The type of the buffer. 
+
+\index{tvm\+::tir\+::\+Allocate\+Node@{tvm\+::tir\+::\+Allocate\+Node}!extents@{extents}}
+\index{extents@{extents}!tvm\+::tir\+::\+Allocate\+Node@{tvm\+::tir\+::\+Allocate\+Node}}
+\subsubsection[{\texorpdfstring{extents}{extents}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Array}$<${\bf Prim\+Expr}$>$ tvm\+::tir\+::\+Allocate\+Node\+::extents}\hypertarget{classtvm_1_1tir_1_1AllocateNode_a0f6d59cffc5fda07450e0fdab6b66bcb}{}\label{classtvm_1_1tir_1_1AllocateNode_a0f6d59cffc5fda07450e0fdab6b66bcb}
+
+
+The extents of the buffer. 
+
+\index{tvm\+::tir\+::\+Allocate\+Node@{tvm\+::tir\+::\+Allocate\+Node}!free\+\_\+function@{free\+\_\+function}}
+\index{free\+\_\+function@{free\+\_\+function}!tvm\+::tir\+::\+Allocate\+Node@{tvm\+::tir\+::\+Allocate\+Node}}
+\subsubsection[{\texorpdfstring{free\+\_\+function}{free_function}}]{\setlength{\rightskip}{0pt plus 5cm}std\+::string tvm\+::tir\+::\+Allocate\+Node\+::free\+\_\+function}\hypertarget{classtvm_1_1tir_1_1AllocateNode_ac2c84aa70f243d933c0480331910de52}{}\label{classtvm_1_1tir_1_1AllocateNode_ac2c84aa70f243d933c0480331910de52}
+\index{tvm\+::tir\+::\+Allocate\+Node@{tvm\+::tir\+::\+Allocate\+Node}!new\+\_\+expr@{new\+\_\+expr}}
+\index{new\+\_\+expr@{new\+\_\+expr}!tvm\+::tir\+::\+Allocate\+Node@{tvm\+::tir\+::\+Allocate\+Node}}
+\subsubsection[{\texorpdfstring{new\+\_\+expr}{new_expr}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Prim\+Expr} tvm\+::tir\+::\+Allocate\+Node\+::new\+\_\+expr}\hypertarget{classtvm_1_1tir_1_1AllocateNode_a52b31635e23aeb6e18e83aa3cc9f8d00}{}\label{classtvm_1_1tir_1_1AllocateNode_a52b31635e23aeb6e18e83aa3cc9f8d00}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+include/tvm/tir/\hyperlink{stmt_8h}{stmt.\+h}\end{DoxyCompactItemize}

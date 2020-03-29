@@ -1,0 +1,83 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="classtvm_1_1detail_1_1AttrNonDefaultVisitor" kind="class" language="C++" prot="public">
+    <compoundname>tvm::detail::AttrNonDefaultVisitor</compoundname>
+    <includes refid="ir_2attrs_8h" local="no">attrs.h</includes>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classtvm_1_1detail_1_1AttrNonDefaultVisitor_1a8453e632b65957a403a6f87259f7a81a" prot="private" static="no" mutable="no">
+        <type><ref refid="classtvm_1_1AttrVisitor" kindref="compound">AttrVisitor</ref> *</type>
+        <definition>AttrVisitor* tvm::detail::AttrNonDefaultVisitor::visitor_</definition>
+        <argsstring></argsstring>
+        <name>visitor_</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/ir/attrs.h" line="794" column="1" bodyfile="include/tvm/ir/attrs.h" bodystart="794" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classtvm_1_1detail_1_1AttrNonDefaultVisitor_1a8b27d05c6de24ab60b999c227e346337" prot="public" static="no" const="no" explicit="yes" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>tvm::detail::AttrNonDefaultVisitor::AttrNonDefaultVisitor</definition>
+        <argsstring>(AttrVisitor *visitor)</argsstring>
+        <name>AttrNonDefaultVisitor</name>
+        <param>
+          <type><ref refid="classtvm_1_1AttrVisitor" kindref="compound">AttrVisitor</ref> *</type>
+          <declname>visitor</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/ir/attrs.h" line="784" column="1" bodyfile="include/tvm/ir/attrs.h" bodystart="784" bodyend="786"/>
+      </memberdef>
+      <memberdef kind="function" id="classtvm_1_1detail_1_1AttrNonDefaultVisitor_1aa359d725f84781937ffd4eeb4445fc66" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename T</type>
+          </param>
+        </templateparamlist>
+        <type><ref refid="structtvm_1_1detail_1_1AttrTriggerNonDefaultEntry" kindref="compound">AttrTriggerNonDefaultEntry</ref>&lt; T &gt;</type>
+        <definition>AttrTriggerNonDefaultEntry&lt;T&gt; tvm::detail::AttrNonDefaultVisitor::operator()</definition>
+        <argsstring>(const char *key, T *value)</argsstring>
+        <name>operator()</name>
+        <param>
+          <type>const char *</type>
+          <declname>key</declname>
+        </param>
+        <param>
+          <type>T *</type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/ir/attrs.h" line="789" column="1" bodyfile="include/tvm/ir/attrs.h" bodystart="789" bodyend="791"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="3972">
+        <label>tvm::detail::AttrNonDefaultVisitor</label>
+        <link refid="classtvm_1_1detail_1_1AttrNonDefaultVisitor"/>
+      </node>
+    </collaborationgraph>
+    <location file="include/tvm/ir/attrs.h" line="782" column="1" bodyfile="include/tvm/ir/attrs.h" bodystart="782" bodyend="795"/>
+    <listofallmembers>
+      <member refid="classtvm_1_1detail_1_1AttrNonDefaultVisitor_1a8b27d05c6de24ab60b999c227e346337" prot="public" virt="non-virtual"><scope>tvm::detail::AttrNonDefaultVisitor</scope><name>AttrNonDefaultVisitor</name></member>
+      <member refid="classtvm_1_1detail_1_1AttrNonDefaultVisitor_1aa359d725f84781937ffd4eeb4445fc66" prot="public" virt="non-virtual"><scope>tvm::detail::AttrNonDefaultVisitor</scope><name>operator()</name></member>
+      <member refid="classtvm_1_1detail_1_1AttrNonDefaultVisitor_1a8453e632b65957a403a6f87259f7a81a" prot="private" virt="non-virtual"><scope>tvm::detail::AttrNonDefaultVisitor</scope><name>visitor_</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

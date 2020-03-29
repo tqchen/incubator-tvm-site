@@ -1,0 +1,124 @@
+\hypertarget{classtvm_1_1TypeDataNode}{}\section{tvm\+:\+:Type\+Data\+Node Class Reference}
+\label{classtvm_1_1TypeDataNode}\index{tvm\+::\+Type\+Data\+Node@{tvm\+::\+Type\+Data\+Node}}
+
+
+\hyperlink{classtvm_1_1TypeData}{Type\+Data} container node.  
+
+
+
+
+{\ttfamily \#include $<$adt.\+h$>$}
+
+
+
+Inheritance diagram for tvm\+:\+:Type\+Data\+Node\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=285pt]{classtvm_1_1TypeDataNode__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for tvm\+:\+:Type\+Data\+Node\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classtvm_1_1TypeDataNode__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{classtvm_1_1TypeDataNode_aa8db517fa4778bf6c3f2106133fba7d5}{Visit\+Attrs} (\hyperlink{classtvm_1_1AttrVisitor}{Attr\+Visitor} $\ast$v)
+\item 
+bool \hyperlink{classtvm_1_1TypeDataNode_ab7ebb91263a4262e63910ae4bfc8deb7}{S\+Equal\+Reduce} (const \hyperlink{classtvm_1_1TypeDataNode}{Type\+Data\+Node} $\ast$other, \hyperlink{classtvm_1_1SEqualReducer}{S\+Equal\+Reducer} equal) const 
+\item 
+void \hyperlink{classtvm_1_1TypeDataNode_a66e9988584461e9d3d737f32386aeaad}{S\+Hash\+Reduce} (\hyperlink{classtvm_1_1SHashReducer}{S\+Hash\+Reducer} hash\+\_\+reduce) const 
+\item 
+\hyperlink{classtvm_1_1TypeDataNode_aafa7068fe3f0cf2052c4d1ceb59910f1}{T\+V\+M\+\_\+\+D\+E\+C\+L\+A\+R\+E\+\_\+\+F\+I\+N\+A\+L\+\_\+\+O\+B\+J\+E\+C\+T\+\_\+\+I\+N\+FO} (\hyperlink{classtvm_1_1TypeDataNode}{Type\+Data\+Node}, \hyperlink{classtvm_1_1TypeNode}{Type\+Node})
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classtvm_1_1GlobalTypeVar}{Global\+Type\+Var} \hyperlink{classtvm_1_1TypeDataNode_a2fe297fe22375fbc180deb003d142ab9}{header}
+\begin{DoxyCompactList}\small\item\em The header is simply the name of the A\+DT. We adopt nominal typing for A\+DT definitions; that is, differently-\/named A\+DT definitions with same constructors have different types. \end{DoxyCompactList}\item 
+\hyperlink{classtvm_1_1Array}{Array}$<$ \hyperlink{classtvm_1_1TypeVar}{Type\+Var} $>$ \hyperlink{classtvm_1_1TypeDataNode_a350a23efc88be1def5b93d27ac6fa88b}{type\+\_\+vars}
+\begin{DoxyCompactList}\small\item\em The type variables (to allow for polymorphism). \end{DoxyCompactList}\item 
+\hyperlink{classtvm_1_1Array}{Array}$<$ \hyperlink{classtvm_1_1Constructor}{Constructor} $>$ \hyperlink{classtvm_1_1TypeDataNode_a4b8e6e09856e514b91586223d48fd117}{constructors}
+\begin{DoxyCompactList}\small\item\em The constructors. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static constexpr const char $\ast$ \hyperlink{classtvm_1_1TypeDataNode_a75183ddef80f36ec7cf91507b858719b}{\+\_\+type\+\_\+key} = \char`\"{}relay.\+Type\+Data\char`\"{}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\hyperlink{classtvm_1_1TypeData}{Type\+Data} container node. 
+
+\subsection{Member Function Documentation}
+\index{tvm\+::\+Type\+Data\+Node@{tvm\+::\+Type\+Data\+Node}!S\+Equal\+Reduce@{S\+Equal\+Reduce}}
+\index{S\+Equal\+Reduce@{S\+Equal\+Reduce}!tvm\+::\+Type\+Data\+Node@{tvm\+::\+Type\+Data\+Node}}
+\subsubsection[{\texorpdfstring{S\+Equal\+Reduce(const Type\+Data\+Node $\ast$other, S\+Equal\+Reducer equal) const }{SEqualReduce(const TypeDataNode *other, SEqualReducer equal) const }}]{\setlength{\rightskip}{0pt plus 5cm}bool tvm\+::\+Type\+Data\+Node\+::\+S\+Equal\+Reduce (
+\begin{DoxyParamCaption}
+\item[{const {\bf Type\+Data\+Node} $\ast$}]{other, }
+\item[{{\bf S\+Equal\+Reducer}}]{equal}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classtvm_1_1TypeDataNode_ab7ebb91263a4262e63910ae4bfc8deb7}{}\label{classtvm_1_1TypeDataNode_ab7ebb91263a4262e63910ae4bfc8deb7}
+\index{tvm\+::\+Type\+Data\+Node@{tvm\+::\+Type\+Data\+Node}!S\+Hash\+Reduce@{S\+Hash\+Reduce}}
+\index{S\+Hash\+Reduce@{S\+Hash\+Reduce}!tvm\+::\+Type\+Data\+Node@{tvm\+::\+Type\+Data\+Node}}
+\subsubsection[{\texorpdfstring{S\+Hash\+Reduce(\+S\+Hash\+Reducer hash\+\_\+reduce) const }{SHashReduce(SHashReducer hash_reduce) const }}]{\setlength{\rightskip}{0pt plus 5cm}void tvm\+::\+Type\+Data\+Node\+::\+S\+Hash\+Reduce (
+\begin{DoxyParamCaption}
+\item[{{\bf S\+Hash\+Reducer}}]{hash\+\_\+reduce}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classtvm_1_1TypeDataNode_a66e9988584461e9d3d737f32386aeaad}{}\label{classtvm_1_1TypeDataNode_a66e9988584461e9d3d737f32386aeaad}
+\index{tvm\+::\+Type\+Data\+Node@{tvm\+::\+Type\+Data\+Node}!T\+V\+M\+\_\+\+D\+E\+C\+L\+A\+R\+E\+\_\+\+F\+I\+N\+A\+L\+\_\+\+O\+B\+J\+E\+C\+T\+\_\+\+I\+N\+FO@{T\+V\+M\+\_\+\+D\+E\+C\+L\+A\+R\+E\+\_\+\+F\+I\+N\+A\+L\+\_\+\+O\+B\+J\+E\+C\+T\+\_\+\+I\+N\+FO}}
+\index{T\+V\+M\+\_\+\+D\+E\+C\+L\+A\+R\+E\+\_\+\+F\+I\+N\+A\+L\+\_\+\+O\+B\+J\+E\+C\+T\+\_\+\+I\+N\+FO@{T\+V\+M\+\_\+\+D\+E\+C\+L\+A\+R\+E\+\_\+\+F\+I\+N\+A\+L\+\_\+\+O\+B\+J\+E\+C\+T\+\_\+\+I\+N\+FO}!tvm\+::\+Type\+Data\+Node@{tvm\+::\+Type\+Data\+Node}}
+\subsubsection[{\texorpdfstring{T\+V\+M\+\_\+\+D\+E\+C\+L\+A\+R\+E\+\_\+\+F\+I\+N\+A\+L\+\_\+\+O\+B\+J\+E\+C\+T\+\_\+\+I\+N\+F\+O(\+Type\+Data\+Node, Type\+Node)}{TVM_DECLARE_FINAL_OBJECT_INFO(TypeDataNode, TypeNode)}}]{\setlength{\rightskip}{0pt plus 5cm}tvm\+::\+Type\+Data\+Node\+::\+T\+V\+M\+\_\+\+D\+E\+C\+L\+A\+R\+E\+\_\+\+F\+I\+N\+A\+L\+\_\+\+O\+B\+J\+E\+C\+T\+\_\+\+I\+N\+FO (
+\begin{DoxyParamCaption}
+\item[{{\bf Type\+Data\+Node}}]{, }
+\item[{{\bf Type\+Node}}]{}
+\end{DoxyParamCaption}
+)}\hypertarget{classtvm_1_1TypeDataNode_aafa7068fe3f0cf2052c4d1ceb59910f1}{}\label{classtvm_1_1TypeDataNode_aafa7068fe3f0cf2052c4d1ceb59910f1}
+\index{tvm\+::\+Type\+Data\+Node@{tvm\+::\+Type\+Data\+Node}!Visit\+Attrs@{Visit\+Attrs}}
+\index{Visit\+Attrs@{Visit\+Attrs}!tvm\+::\+Type\+Data\+Node@{tvm\+::\+Type\+Data\+Node}}
+\subsubsection[{\texorpdfstring{Visit\+Attrs(\+Attr\+Visitor $\ast$v)}{VisitAttrs(AttrVisitor *v)}}]{\setlength{\rightskip}{0pt plus 5cm}void tvm\+::\+Type\+Data\+Node\+::\+Visit\+Attrs (
+\begin{DoxyParamCaption}
+\item[{{\bf Attr\+Visitor} $\ast$}]{v}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classtvm_1_1TypeDataNode_aa8db517fa4778bf6c3f2106133fba7d5}{}\label{classtvm_1_1TypeDataNode_aa8db517fa4778bf6c3f2106133fba7d5}
+
+
+\subsection{Member Data Documentation}
+\index{tvm\+::\+Type\+Data\+Node@{tvm\+::\+Type\+Data\+Node}!\+\_\+type\+\_\+key@{\+\_\+type\+\_\+key}}
+\index{\+\_\+type\+\_\+key@{\+\_\+type\+\_\+key}!tvm\+::\+Type\+Data\+Node@{tvm\+::\+Type\+Data\+Node}}
+\subsubsection[{\texorpdfstring{\+\_\+type\+\_\+key}{_type_key}}]{\setlength{\rightskip}{0pt plus 5cm}constexpr const char$\ast$ tvm\+::\+Type\+Data\+Node\+::\+\_\+type\+\_\+key = \char`\"{}relay.\+Type\+Data\char`\"{}\hspace{0.3cm}{\ttfamily [static]}}\hypertarget{classtvm_1_1TypeDataNode_a75183ddef80f36ec7cf91507b858719b}{}\label{classtvm_1_1TypeDataNode_a75183ddef80f36ec7cf91507b858719b}
+\index{tvm\+::\+Type\+Data\+Node@{tvm\+::\+Type\+Data\+Node}!constructors@{constructors}}
+\index{constructors@{constructors}!tvm\+::\+Type\+Data\+Node@{tvm\+::\+Type\+Data\+Node}}
+\subsubsection[{\texorpdfstring{constructors}{constructors}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Array}$<${\bf Constructor}$>$ tvm\+::\+Type\+Data\+Node\+::constructors}\hypertarget{classtvm_1_1TypeDataNode_a4b8e6e09856e514b91586223d48fd117}{}\label{classtvm_1_1TypeDataNode_a4b8e6e09856e514b91586223d48fd117}
+
+
+The constructors. 
+
+\index{tvm\+::\+Type\+Data\+Node@{tvm\+::\+Type\+Data\+Node}!header@{header}}
+\index{header@{header}!tvm\+::\+Type\+Data\+Node@{tvm\+::\+Type\+Data\+Node}}
+\subsubsection[{\texorpdfstring{header}{header}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Global\+Type\+Var} tvm\+::\+Type\+Data\+Node\+::header}\hypertarget{classtvm_1_1TypeDataNode_a2fe297fe22375fbc180deb003d142ab9}{}\label{classtvm_1_1TypeDataNode_a2fe297fe22375fbc180deb003d142ab9}
+
+
+The header is simply the name of the A\+DT. We adopt nominal typing for A\+DT definitions; that is, differently-\/named A\+DT definitions with same constructors have different types. 
+
+\index{tvm\+::\+Type\+Data\+Node@{tvm\+::\+Type\+Data\+Node}!type\+\_\+vars@{type\+\_\+vars}}
+\index{type\+\_\+vars@{type\+\_\+vars}!tvm\+::\+Type\+Data\+Node@{tvm\+::\+Type\+Data\+Node}}
+\subsubsection[{\texorpdfstring{type\+\_\+vars}{type_vars}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Array}$<${\bf Type\+Var}$>$ tvm\+::\+Type\+Data\+Node\+::type\+\_\+vars}\hypertarget{classtvm_1_1TypeDataNode_a350a23efc88be1def5b93d27ac6fa88b}{}\label{classtvm_1_1TypeDataNode_a350a23efc88be1def5b93d27ac6fa88b}
+
+
+The type variables (to allow for polymorphism). 
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+include/tvm/ir/\hyperlink{ir_2adt_8h}{adt.\+h}\end{DoxyCompactItemize}

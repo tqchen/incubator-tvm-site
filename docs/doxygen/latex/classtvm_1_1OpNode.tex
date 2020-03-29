@@ -1,0 +1,228 @@
+\hypertarget{classtvm_1_1OpNode}{}\section{tvm\+:\+:Op\+Node Class Reference}
+\label{classtvm_1_1OpNode}\index{tvm\+::\+Op\+Node@{tvm\+::\+Op\+Node}}
+
+
+Primitive Op(builtin intrinsics)  
+
+
+
+
+{\ttfamily \#include $<$op.\+h$>$}
+
+
+
+Inheritance diagram for tvm\+:\+:Op\+Node\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{classtvm_1_1OpNode__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for tvm\+:\+:Op\+Node\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classtvm_1_1OpNode__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{classtvm_1_1OpNode_a9a5aacb190b2c4ead60b2810bd9053f4}{Visit\+Attrs} (\hyperlink{classtvm_1_1AttrVisitor}{Attr\+Visitor} $\ast$v)
+\item 
+bool \hyperlink{classtvm_1_1OpNode_a23237d4a1ca4e21371d5ed0ac3520725}{S\+Equal\+Reduce} (const \hyperlink{classtvm_1_1OpNode}{Op\+Node} $\ast$other, \hyperlink{classtvm_1_1SEqualReducer}{S\+Equal\+Reducer} equal) const 
+\item 
+void \hyperlink{classtvm_1_1OpNode_abe8c1e8f86a4b62187a233174edce575}{S\+Hash\+Reduce} (\hyperlink{classtvm_1_1SHashReducer}{S\+Hash\+Reducer} hash\+\_\+reduce) const 
+\item 
+bool \hyperlink{classtvm_1_1OpNode_a285c8dc0ccec2ca34386271d1b338506}{Is\+Primitive\+Op} () const 
+\begin{DoxyCompactList}\small\item\em Check that if current op is a \char`\"{}primtive operator\char`\"{}. That is the arguments are all type variables, and there is a single type relation applied to the input and output types. \end{DoxyCompactList}\item 
+\hyperlink{classtvm_1_1OpNode_ade027d3176f48e7127be6ff08c723306}{T\+V\+M\+\_\+\+D\+E\+C\+L\+A\+R\+E\+\_\+\+F\+I\+N\+A\+L\+\_\+\+O\+B\+J\+E\+C\+T\+\_\+\+I\+N\+FO} (\hyperlink{classtvm_1_1OpNode}{Op\+Node}, \hyperlink{classtvm_1_1RelayExprNode}{Relay\+Expr\+Node})
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+std\+::string \hyperlink{classtvm_1_1OpNode_ae8810815c68a55b8b6ab00dfb7d7778d}{name}
+\begin{DoxyCompactList}\small\item\em name of the operator \end{DoxyCompactList}\item 
+\hyperlink{classtvm_1_1FuncType}{Func\+Type} \hyperlink{classtvm_1_1OpNode_adff89c1e3f0aa6798a97fc4461293f7c}{op\+\_\+type}
+\begin{DoxyCompactList}\small\item\em the type of the operator \end{DoxyCompactList}\item 
+std\+::string \hyperlink{classtvm_1_1OpNode_a95d402556bd6c710a0b38f50c8e5e3bc}{description}
+\begin{DoxyCompactList}\small\item\em detailed description of the operator This can be used to generate docstring automatically for the operator. \end{DoxyCompactList}\item 
+\hyperlink{classtvm_1_1Array}{Array}$<$ \hyperlink{classtvm_1_1AttrFieldInfo}{Attr\+Field\+Info} $>$ \hyperlink{classtvm_1_1OpNode_af753e9ea21f09017bb61d5722b2ce181}{arguments}
+\item 
+std\+::string \hyperlink{classtvm_1_1OpNode_aedeeca81655fb2bba9e1de79dcd539d1}{attrs\+\_\+type\+\_\+key}
+\begin{DoxyCompactList}\small\item\em The type key of the attribute field This can be empty, in which case it defaults to anything. \end{DoxyCompactList}\item 
+uint32\+\_\+t \hyperlink{classtvm_1_1OpNode_a4b7f1c6f18ede931328377bb8794c1bc}{attrs\+\_\+type\+\_\+index} \{0\}
+\begin{DoxyCompactList}\small\item\em attribute type index, this field varies in each run and is not exposed to frontend. \end{DoxyCompactList}\item 
+int32\+\_\+t \hyperlink{classtvm_1_1OpNode_aa13505588162bc5448bd03f02f5c545b}{num\+\_\+inputs} = -\/1
+\begin{DoxyCompactList}\small\item\em number of input arguments to the operator, -\/1 means it is variable length \end{DoxyCompactList}\item 
+int32\+\_\+t \hyperlink{classtvm_1_1OpNode_a68a34098b5a111dec5f381cc4a80cb78}{support\+\_\+level} = 10
+\begin{DoxyCompactList}\small\item\em support level of the operator, The lower the more priority it contains. This is in analogies to B\+L\+AS levels. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static constexpr const char $\ast$ \hyperlink{classtvm_1_1OpNode_a2c50dc0d1b84d52d6da19a6fa3fcabac}{\+\_\+type\+\_\+key} = \char`\"{}relay.\+Op\char`\"{}
+\end{DoxyCompactItemize}
+\subsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+class \hyperlink{classtvm_1_1OpNode_a296d487cd2e3438353e759571270be97}{Generic\+Op\+Map}
+\item 
+class \hyperlink{classtvm_1_1OpNode_af7ebaf5af32d51226208f533e6d5cb1d}{Op\+Registry}
+\item 
+bool \hyperlink{classtvm_1_1OpNode_aee9090e54dff3e72ed272b981e036ae6}{Is\+Primitive\+Op} (const \hyperlink{classtvm_1_1RelayExpr}{Relay\+Expr} \&)
+\begin{DoxyCompactList}\small\item\em Check that an expression is a \char`\"{}primitive operator\char`\"{}. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Primitive Op(builtin intrinsics) 
+
+This data structure stores the meta-\/data about primitive operators that can be invoked via Call.
+
+Low-\/level IR intrinsics(such as libc.\+expf) are also implemented via \hyperlink{classtvm_1_1Op}{Op}.
+
+\begin{DoxySeeAlso}{See also}
+\hyperlink{classtvm_1_1Op}{Op} 
+\end{DoxySeeAlso}
+
+
+\subsection{Member Function Documentation}
+\index{tvm\+::\+Op\+Node@{tvm\+::\+Op\+Node}!Is\+Primitive\+Op@{Is\+Primitive\+Op}}
+\index{Is\+Primitive\+Op@{Is\+Primitive\+Op}!tvm\+::\+Op\+Node@{tvm\+::\+Op\+Node}}
+\subsubsection[{\texorpdfstring{Is\+Primitive\+Op() const }{IsPrimitiveOp() const }}]{\setlength{\rightskip}{0pt plus 5cm}bool tvm\+::\+Op\+Node\+::\+Is\+Primitive\+Op (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classtvm_1_1OpNode_a285c8dc0ccec2ca34386271d1b338506}{}\label{classtvm_1_1OpNode_a285c8dc0ccec2ca34386271d1b338506}
+
+
+Check that if current op is a \char`\"{}primtive operator\char`\"{}. That is the arguments are all type variables, and there is a single type relation applied to the input and output types. 
+
+\index{tvm\+::\+Op\+Node@{tvm\+::\+Op\+Node}!S\+Equal\+Reduce@{S\+Equal\+Reduce}}
+\index{S\+Equal\+Reduce@{S\+Equal\+Reduce}!tvm\+::\+Op\+Node@{tvm\+::\+Op\+Node}}
+\subsubsection[{\texorpdfstring{S\+Equal\+Reduce(const Op\+Node $\ast$other, S\+Equal\+Reducer equal) const }{SEqualReduce(const OpNode *other, SEqualReducer equal) const }}]{\setlength{\rightskip}{0pt plus 5cm}bool tvm\+::\+Op\+Node\+::\+S\+Equal\+Reduce (
+\begin{DoxyParamCaption}
+\item[{const {\bf Op\+Node} $\ast$}]{other, }
+\item[{{\bf S\+Equal\+Reducer}}]{equal}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classtvm_1_1OpNode_a23237d4a1ca4e21371d5ed0ac3520725}{}\label{classtvm_1_1OpNode_a23237d4a1ca4e21371d5ed0ac3520725}
+\index{tvm\+::\+Op\+Node@{tvm\+::\+Op\+Node}!S\+Hash\+Reduce@{S\+Hash\+Reduce}}
+\index{S\+Hash\+Reduce@{S\+Hash\+Reduce}!tvm\+::\+Op\+Node@{tvm\+::\+Op\+Node}}
+\subsubsection[{\texorpdfstring{S\+Hash\+Reduce(\+S\+Hash\+Reducer hash\+\_\+reduce) const }{SHashReduce(SHashReducer hash_reduce) const }}]{\setlength{\rightskip}{0pt plus 5cm}void tvm\+::\+Op\+Node\+::\+S\+Hash\+Reduce (
+\begin{DoxyParamCaption}
+\item[{{\bf S\+Hash\+Reducer}}]{hash\+\_\+reduce}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classtvm_1_1OpNode_abe8c1e8f86a4b62187a233174edce575}{}\label{classtvm_1_1OpNode_abe8c1e8f86a4b62187a233174edce575}
+\index{tvm\+::\+Op\+Node@{tvm\+::\+Op\+Node}!T\+V\+M\+\_\+\+D\+E\+C\+L\+A\+R\+E\+\_\+\+F\+I\+N\+A\+L\+\_\+\+O\+B\+J\+E\+C\+T\+\_\+\+I\+N\+FO@{T\+V\+M\+\_\+\+D\+E\+C\+L\+A\+R\+E\+\_\+\+F\+I\+N\+A\+L\+\_\+\+O\+B\+J\+E\+C\+T\+\_\+\+I\+N\+FO}}
+\index{T\+V\+M\+\_\+\+D\+E\+C\+L\+A\+R\+E\+\_\+\+F\+I\+N\+A\+L\+\_\+\+O\+B\+J\+E\+C\+T\+\_\+\+I\+N\+FO@{T\+V\+M\+\_\+\+D\+E\+C\+L\+A\+R\+E\+\_\+\+F\+I\+N\+A\+L\+\_\+\+O\+B\+J\+E\+C\+T\+\_\+\+I\+N\+FO}!tvm\+::\+Op\+Node@{tvm\+::\+Op\+Node}}
+\subsubsection[{\texorpdfstring{T\+V\+M\+\_\+\+D\+E\+C\+L\+A\+R\+E\+\_\+\+F\+I\+N\+A\+L\+\_\+\+O\+B\+J\+E\+C\+T\+\_\+\+I\+N\+F\+O(\+Op\+Node, Relay\+Expr\+Node)}{TVM_DECLARE_FINAL_OBJECT_INFO(OpNode, RelayExprNode)}}]{\setlength{\rightskip}{0pt plus 5cm}tvm\+::\+Op\+Node\+::\+T\+V\+M\+\_\+\+D\+E\+C\+L\+A\+R\+E\+\_\+\+F\+I\+N\+A\+L\+\_\+\+O\+B\+J\+E\+C\+T\+\_\+\+I\+N\+FO (
+\begin{DoxyParamCaption}
+\item[{{\bf Op\+Node}}]{, }
+\item[{{\bf Relay\+Expr\+Node}}]{}
+\end{DoxyParamCaption}
+)}\hypertarget{classtvm_1_1OpNode_ade027d3176f48e7127be6ff08c723306}{}\label{classtvm_1_1OpNode_ade027d3176f48e7127be6ff08c723306}
+\index{tvm\+::\+Op\+Node@{tvm\+::\+Op\+Node}!Visit\+Attrs@{Visit\+Attrs}}
+\index{Visit\+Attrs@{Visit\+Attrs}!tvm\+::\+Op\+Node@{tvm\+::\+Op\+Node}}
+\subsubsection[{\texorpdfstring{Visit\+Attrs(\+Attr\+Visitor $\ast$v)}{VisitAttrs(AttrVisitor *v)}}]{\setlength{\rightskip}{0pt plus 5cm}void tvm\+::\+Op\+Node\+::\+Visit\+Attrs (
+\begin{DoxyParamCaption}
+\item[{{\bf Attr\+Visitor} $\ast$}]{v}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classtvm_1_1OpNode_a9a5aacb190b2c4ead60b2810bd9053f4}{}\label{classtvm_1_1OpNode_a9a5aacb190b2c4ead60b2810bd9053f4}
+
+
+\subsection{Friends And Related Function Documentation}
+\index{tvm\+::\+Op\+Node@{tvm\+::\+Op\+Node}!Generic\+Op\+Map@{Generic\+Op\+Map}}
+\index{Generic\+Op\+Map@{Generic\+Op\+Map}!tvm\+::\+Op\+Node@{tvm\+::\+Op\+Node}}
+\subsubsection[{\texorpdfstring{Generic\+Op\+Map}{GenericOpMap}}]{\setlength{\rightskip}{0pt plus 5cm}friend class {\bf Generic\+Op\+Map}\hspace{0.3cm}{\ttfamily [friend]}}\hypertarget{classtvm_1_1OpNode_a296d487cd2e3438353e759571270be97}{}\label{classtvm_1_1OpNode_a296d487cd2e3438353e759571270be97}
+\index{tvm\+::\+Op\+Node@{tvm\+::\+Op\+Node}!Is\+Primitive\+Op@{Is\+Primitive\+Op}}
+\index{Is\+Primitive\+Op@{Is\+Primitive\+Op}!tvm\+::\+Op\+Node@{tvm\+::\+Op\+Node}}
+\subsubsection[{\texorpdfstring{Is\+Primitive\+Op}{IsPrimitiveOp}}]{\setlength{\rightskip}{0pt plus 5cm}bool Is\+Primitive\+Op (
+\begin{DoxyParamCaption}
+\item[{const {\bf Relay\+Expr} \&}]{expr}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [friend]}}\hypertarget{classtvm_1_1OpNode_aee9090e54dff3e72ed272b981e036ae6}{}\label{classtvm_1_1OpNode_aee9090e54dff3e72ed272b981e036ae6}
+
+
+Check that an expression is a \char`\"{}primitive operator\char`\"{}. 
+
+Will return true if the expression is an operator which matches the form of primitive operators registered directly by the Relay codebase.
+
+That is the arguments are all type variables, and there is a single type relation applied to the input and output types.
+
+
+\begin{DoxyParams}{Parameters}
+{\em expr} & An expression. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Whether the expression is primitive op. 
+\end{DoxyReturn}
+\index{tvm\+::\+Op\+Node@{tvm\+::\+Op\+Node}!Op\+Registry@{Op\+Registry}}
+\index{Op\+Registry@{Op\+Registry}!tvm\+::\+Op\+Node@{tvm\+::\+Op\+Node}}
+\subsubsection[{\texorpdfstring{Op\+Registry}{OpRegistry}}]{\setlength{\rightskip}{0pt plus 5cm}friend class {\bf Op\+Registry}\hspace{0.3cm}{\ttfamily [friend]}}\hypertarget{classtvm_1_1OpNode_af7ebaf5af32d51226208f533e6d5cb1d}{}\label{classtvm_1_1OpNode_af7ebaf5af32d51226208f533e6d5cb1d}
+
+
+\subsection{Member Data Documentation}
+\index{tvm\+::\+Op\+Node@{tvm\+::\+Op\+Node}!\+\_\+type\+\_\+key@{\+\_\+type\+\_\+key}}
+\index{\+\_\+type\+\_\+key@{\+\_\+type\+\_\+key}!tvm\+::\+Op\+Node@{tvm\+::\+Op\+Node}}
+\subsubsection[{\texorpdfstring{\+\_\+type\+\_\+key}{_type_key}}]{\setlength{\rightskip}{0pt plus 5cm}constexpr const char$\ast$ tvm\+::\+Op\+Node\+::\+\_\+type\+\_\+key = \char`\"{}relay.\+Op\char`\"{}\hspace{0.3cm}{\ttfamily [static]}}\hypertarget{classtvm_1_1OpNode_a2c50dc0d1b84d52d6da19a6fa3fcabac}{}\label{classtvm_1_1OpNode_a2c50dc0d1b84d52d6da19a6fa3fcabac}
+\index{tvm\+::\+Op\+Node@{tvm\+::\+Op\+Node}!arguments@{arguments}}
+\index{arguments@{arguments}!tvm\+::\+Op\+Node@{tvm\+::\+Op\+Node}}
+\subsubsection[{\texorpdfstring{arguments}{arguments}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Array}$<${\bf Attr\+Field\+Info}$>$ tvm\+::\+Op\+Node\+::arguments}\hypertarget{classtvm_1_1OpNode_af753e9ea21f09017bb61d5722b2ce181}{}\label{classtvm_1_1OpNode_af753e9ea21f09017bb61d5722b2ce181}
+\index{tvm\+::\+Op\+Node@{tvm\+::\+Op\+Node}!attrs\+\_\+type\+\_\+index@{attrs\+\_\+type\+\_\+index}}
+\index{attrs\+\_\+type\+\_\+index@{attrs\+\_\+type\+\_\+index}!tvm\+::\+Op\+Node@{tvm\+::\+Op\+Node}}
+\subsubsection[{\texorpdfstring{attrs\+\_\+type\+\_\+index}{attrs_type_index}}]{\setlength{\rightskip}{0pt plus 5cm}uint32\+\_\+t tvm\+::\+Op\+Node\+::attrs\+\_\+type\+\_\+index \{0\}}\hypertarget{classtvm_1_1OpNode_a4b7f1c6f18ede931328377bb8794c1bc}{}\label{classtvm_1_1OpNode_a4b7f1c6f18ede931328377bb8794c1bc}
+
+
+attribute type index, this field varies in each run and is not exposed to frontend. 
+
+\index{tvm\+::\+Op\+Node@{tvm\+::\+Op\+Node}!attrs\+\_\+type\+\_\+key@{attrs\+\_\+type\+\_\+key}}
+\index{attrs\+\_\+type\+\_\+key@{attrs\+\_\+type\+\_\+key}!tvm\+::\+Op\+Node@{tvm\+::\+Op\+Node}}
+\subsubsection[{\texorpdfstring{attrs\+\_\+type\+\_\+key}{attrs_type_key}}]{\setlength{\rightskip}{0pt plus 5cm}std\+::string tvm\+::\+Op\+Node\+::attrs\+\_\+type\+\_\+key}\hypertarget{classtvm_1_1OpNode_aedeeca81655fb2bba9e1de79dcd539d1}{}\label{classtvm_1_1OpNode_aedeeca81655fb2bba9e1de79dcd539d1}
+
+
+The type key of the attribute field This can be empty, in which case it defaults to anything. 
+
+\index{tvm\+::\+Op\+Node@{tvm\+::\+Op\+Node}!description@{description}}
+\index{description@{description}!tvm\+::\+Op\+Node@{tvm\+::\+Op\+Node}}
+\subsubsection[{\texorpdfstring{description}{description}}]{\setlength{\rightskip}{0pt plus 5cm}std\+::string tvm\+::\+Op\+Node\+::description}\hypertarget{classtvm_1_1OpNode_a95d402556bd6c710a0b38f50c8e5e3bc}{}\label{classtvm_1_1OpNode_a95d402556bd6c710a0b38f50c8e5e3bc}
+
+
+detailed description of the operator This can be used to generate docstring automatically for the operator. 
+
+\index{tvm\+::\+Op\+Node@{tvm\+::\+Op\+Node}!name@{name}}
+\index{name@{name}!tvm\+::\+Op\+Node@{tvm\+::\+Op\+Node}}
+\subsubsection[{\texorpdfstring{name}{name}}]{\setlength{\rightskip}{0pt plus 5cm}std\+::string tvm\+::\+Op\+Node\+::name}\hypertarget{classtvm_1_1OpNode_ae8810815c68a55b8b6ab00dfb7d7778d}{}\label{classtvm_1_1OpNode_ae8810815c68a55b8b6ab00dfb7d7778d}
+
+
+name of the operator 
+
+\index{tvm\+::\+Op\+Node@{tvm\+::\+Op\+Node}!num\+\_\+inputs@{num\+\_\+inputs}}
+\index{num\+\_\+inputs@{num\+\_\+inputs}!tvm\+::\+Op\+Node@{tvm\+::\+Op\+Node}}
+\subsubsection[{\texorpdfstring{num\+\_\+inputs}{num_inputs}}]{\setlength{\rightskip}{0pt plus 5cm}int32\+\_\+t tvm\+::\+Op\+Node\+::num\+\_\+inputs = -\/1}\hypertarget{classtvm_1_1OpNode_aa13505588162bc5448bd03f02f5c545b}{}\label{classtvm_1_1OpNode_aa13505588162bc5448bd03f02f5c545b}
+
+
+number of input arguments to the operator, -\/1 means it is variable length 
+
+\index{tvm\+::\+Op\+Node@{tvm\+::\+Op\+Node}!op\+\_\+type@{op\+\_\+type}}
+\index{op\+\_\+type@{op\+\_\+type}!tvm\+::\+Op\+Node@{tvm\+::\+Op\+Node}}
+\subsubsection[{\texorpdfstring{op\+\_\+type}{op_type}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Func\+Type} tvm\+::\+Op\+Node\+::op\+\_\+type\hspace{0.3cm}{\ttfamily [mutable]}}\hypertarget{classtvm_1_1OpNode_adff89c1e3f0aa6798a97fc4461293f7c}{}\label{classtvm_1_1OpNode_adff89c1e3f0aa6798a97fc4461293f7c}
+
+
+the type of the operator 
+
+\index{tvm\+::\+Op\+Node@{tvm\+::\+Op\+Node}!support\+\_\+level@{support\+\_\+level}}
+\index{support\+\_\+level@{support\+\_\+level}!tvm\+::\+Op\+Node@{tvm\+::\+Op\+Node}}
+\subsubsection[{\texorpdfstring{support\+\_\+level}{support_level}}]{\setlength{\rightskip}{0pt plus 5cm}int32\+\_\+t tvm\+::\+Op\+Node\+::support\+\_\+level = 10}\hypertarget{classtvm_1_1OpNode_a68a34098b5a111dec5f381cc4a80cb78}{}\label{classtvm_1_1OpNode_a68a34098b5a111dec5f381cc4a80cb78}
+
+
+support level of the operator, The lower the more priority it contains. This is in analogies to B\+L\+AS levels. 
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+include/tvm/ir/\hyperlink{ir_2op_8h}{op.\+h}\end{DoxyCompactItemize}

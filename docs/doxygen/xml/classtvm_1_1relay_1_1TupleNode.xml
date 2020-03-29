@@ -1,0 +1,212 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="classtvm_1_1relay_1_1TupleNode" kind="class" language="C++" prot="public">
+    <compoundname>tvm::relay::TupleNode</compoundname>
+    <basecompoundref refid="classtvm_1_1RelayExprNode" prot="public" virt="non-virtual">tvm::RelayExprNode</basecompoundref>
+    <includes refid="relay_2expr_8h" local="no">expr.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="classtvm_1_1relay_1_1TupleNode_1a97f7a213817d69edaa782dbefa1e8458" prot="public" static="no" mutable="no">
+        <type><ref refid="classtvm_1_1Array" kindref="compound">tvm::Array</ref>&lt; <ref refid="namespacetvm_1_1relay_1a5b84e3790f89bb3fad5c7911eeb99531" kindref="member">relay::Expr</ref> &gt;</type>
+        <definition>tvm::Array&lt;relay::Expr&gt; tvm::relay::TupleNode::fields</definition>
+        <argsstring></argsstring>
+        <name>fields</name>
+        <briefdescription>
+<para>the fields of the tuple </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/relay/expr.h" line="105" column="1" bodyfile="include/tvm/relay/expr.h" bodystart="105" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-attrib">
+      <memberdef kind="variable" id="classtvm_1_1relay_1_1TupleNode_1aa01467badaa2110d0b87b3243c99b568" prot="public" static="yes" mutable="no">
+        <type>constexpr const char *</type>
+        <definition>constexpr const char* tvm::relay::TupleNode::_type_key</definition>
+        <argsstring></argsstring>
+        <name>_type_key</name>
+        <initializer>= &quot;relay.Tuple&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/relay/expr.h" line="130" column="1" bodyfile="include/tvm/relay/expr.h" bodystart="130" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classtvm_1_1relay_1_1TupleNode_1ae9e351b42b8cde177714c98c5d353e29" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void tvm::relay::TupleNode::VisitAttrs</definition>
+        <argsstring>(tvm::AttrVisitor *v)</argsstring>
+        <name>VisitAttrs</name>
+        <param>
+          <type><ref refid="classtvm_1_1AttrVisitor" kindref="compound">tvm::AttrVisitor</ref> *</type>
+          <declname>v</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/relay/expr.h" line="107" column="1" bodyfile="include/tvm/relay/expr.h" bodystart="107" bodyend="111"/>
+      </memberdef>
+      <memberdef kind="function" id="classtvm_1_1relay_1_1TupleNode_1aeeb335ccd239b1b3d033a2ed0bd91b98" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool tvm::relay::TupleNode::SEqualReduce</definition>
+        <argsstring>(const TupleNode *other, SEqualReducer equal) const </argsstring>
+        <name>SEqualReduce</name>
+        <param>
+          <type>const <ref refid="classtvm_1_1relay_1_1TupleNode" kindref="compound">TupleNode</ref> *</type>
+          <declname>other</declname>
+        </param>
+        <param>
+          <type><ref refid="classtvm_1_1SEqualReducer" kindref="compound">SEqualReducer</ref></type>
+          <declname>equal</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/relay/expr.h" line="113" column="1" bodyfile="include/tvm/relay/expr.h" bodystart="113" bodyend="121"/>
+      </memberdef>
+      <memberdef kind="function" id="classtvm_1_1relay_1_1TupleNode_1a20a24afd2954d105d1ac57ac022fadc1" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void tvm::relay::TupleNode::SHashReduce</definition>
+        <argsstring>(SHashReducer hash_reduce) const </argsstring>
+        <name>SHashReduce</name>
+        <param>
+          <type><ref refid="classtvm_1_1SHashReducer" kindref="compound">SHashReducer</ref></type>
+          <declname>hash_reduce</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/relay/expr.h" line="123" column="1" bodyfile="include/tvm/relay/expr.h" bodystart="123" bodyend="128"/>
+      </memberdef>
+      <memberdef kind="function" id="classtvm_1_1relay_1_1TupleNode_1ac967e2fd67033e86bf31abddf59d79e5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>tvm::relay::TupleNode::TVM_DECLARE_FINAL_OBJECT_INFO</definition>
+        <argsstring>(TupleNode, ExprNode)</argsstring>
+        <name>TVM_DECLARE_FINAL_OBJECT_INFO</name>
+        <param>
+          <type><ref refid="classtvm_1_1relay_1_1TupleNode" kindref="compound">TupleNode</ref></type>
+        </param>
+        <param>
+          <type><ref refid="namespacetvm_1_1relay_1a387f18e050d016c52ea6c4781e7cff6c" kindref="member">ExprNode</ref></type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/relay/expr.h" line="131" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para><ref refid="classtvm_1_1relay_1_1Tuple" kindref="compound">Tuple</ref> container. </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="7287">
+        <label>tvm::BaseExprNode</label>
+        <link refid="classtvm_1_1BaseExprNode"/>
+        <childnode refid="7288" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="7286">
+        <label>ExprNode</label>
+        <link refid="classtvm_1_1RelayExprNode"/>
+        <childnode refid="7287" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="7288">
+        <label>Object</label>
+      </node>
+      <node id="7285">
+        <label>tvm::relay::TupleNode</label>
+        <link refid="classtvm_1_1relay_1_1TupleNode"/>
+        <childnode refid="7286" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="7294">
+        <label>ObjectRef</label>
+      </node>
+      <node id="7296">
+        <label>tvm::Array&lt; relay::tvm::RelayExpr &gt;</label>
+        <link refid="classtvm_1_1Array"/>
+        <childnode refid="7294" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="7291">
+        <label>tvm::BaseExprNode</label>
+        <link refid="classtvm_1_1BaseExprNode"/>
+        <childnode refid="7292" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="7290">
+        <label>ExprNode</label>
+        <link refid="classtvm_1_1RelayExprNode"/>
+        <childnode refid="7291" relation="public-inheritance">
+        </childnode>
+        <childnode refid="7293" relation="usage">
+          <edgelabel>+span</edgelabel>
+        </childnode>
+        <childnode refid="7295" relation="usage">
+          <edgelabel>+checked_type_</edgelabel>
+        </childnode>
+      </node>
+      <node id="7293">
+        <label>tvm::Span</label>
+        <link refid="classtvm_1_1Span"/>
+        <childnode refid="7294" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="7292">
+        <label>Object</label>
+      </node>
+      <node id="7289">
+        <label>tvm::relay::TupleNode</label>
+        <link refid="classtvm_1_1relay_1_1TupleNode"/>
+        <childnode refid="7290" relation="public-inheritance">
+        </childnode>
+        <childnode refid="7296" relation="usage">
+          <edgelabel>+fields</edgelabel>
+        </childnode>
+      </node>
+      <node id="7295">
+        <label>tvm::Type</label>
+        <link refid="classtvm_1_1Type"/>
+        <childnode refid="7294" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="include/tvm/relay/expr.h" line="102" column="1" bodyfile="include/tvm/relay/expr.h" bodystart="102" bodyend="132"/>
+    <listofallmembers>
+      <member refid="classtvm_1_1BaseExprNode_1a905dcf65204e877b6ccb977cf375f2a0" prot="public" virt="non-virtual"><scope>tvm::relay::TupleNode</scope><name>_type_has_method_sequal_reduce</name></member>
+      <member refid="classtvm_1_1BaseExprNode_1a13d7d1f1e6f790951caf200cd59c3620" prot="public" virt="non-virtual"><scope>tvm::relay::TupleNode</scope><name>_type_has_method_shash_reduce</name></member>
+      <member refid="classtvm_1_1relay_1_1TupleNode_1aa01467badaa2110d0b87b3243c99b568" prot="public" virt="non-virtual"><scope>tvm::relay::TupleNode</scope><name>_type_key</name></member>
+      <member refid="classtvm_1_1RelayExprNode_1a89bfd23e109a842d18240277ffaaa130" prot="public" virt="non-virtual"><scope>tvm::relay::TupleNode</scope><name>checked_type</name></member>
+      <member refid="classtvm_1_1RelayExprNode_1ae30ca49a8b84288fbc21d5f312f02929" prot="public" virt="non-virtual"><scope>tvm::relay::TupleNode</scope><name>checked_type_</name></member>
+      <member refid="classtvm_1_1relay_1_1TupleNode_1a97f7a213817d69edaa782dbefa1e8458" prot="public" virt="non-virtual"><scope>tvm::relay::TupleNode</scope><name>fields</name></member>
+      <member refid="classtvm_1_1relay_1_1TupleNode_1aeeb335ccd239b1b3d033a2ed0bd91b98" prot="public" virt="non-virtual"><scope>tvm::relay::TupleNode</scope><name>SEqualReduce</name></member>
+      <member refid="classtvm_1_1relay_1_1TupleNode_1a20a24afd2954d105d1ac57ac022fadc1" prot="public" virt="non-virtual"><scope>tvm::relay::TupleNode</scope><name>SHashReduce</name></member>
+      <member refid="classtvm_1_1RelayExprNode_1a904ae50be0b72eab079bed93829c9563" prot="public" virt="non-virtual"><scope>tvm::relay::TupleNode</scope><name>span</name></member>
+      <member refid="classtvm_1_1RelayExprNode_1a89eb638258551ea1ae2d0e578335474a" prot="public" virt="non-virtual"><scope>tvm::relay::TupleNode</scope><name>TVM_DECLARE_BASE_OBJECT_INFO</name></member>
+      <member refid="classtvm_1_1BaseExprNode_1a831794c879d47c30cdd9cefd4f05d533" prot="public" virt="non-virtual" ambiguityscope="tvm::BaseExprNode::"><scope>tvm::relay::TupleNode</scope><name>TVM_DECLARE_BASE_OBJECT_INFO</name></member>
+      <member refid="classtvm_1_1relay_1_1TupleNode_1ac967e2fd67033e86bf31abddf59d79e5" prot="public" virt="non-virtual"><scope>tvm::relay::TupleNode</scope><name>TVM_DECLARE_FINAL_OBJECT_INFO</name></member>
+      <member refid="classtvm_1_1RelayExprNode_1a60c73bac632a728a2a669bb34a1c3008" prot="public" virt="non-virtual"><scope>tvm::relay::TupleNode</scope><name>type_as</name></member>
+      <member refid="classtvm_1_1relay_1_1TupleNode_1ae9e351b42b8cde177714c98c5d353e29" prot="public" virt="non-virtual"><scope>tvm::relay::TupleNode</scope><name>VisitAttrs</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

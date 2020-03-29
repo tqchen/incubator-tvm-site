@@ -1,0 +1,160 @@
+\hypertarget{classtvm_1_1relay_1_1FunctionNode}{}\section{tvm\+:\+:relay\+:\+:Function\+Node Class Reference}
+\label{classtvm_1_1relay_1_1FunctionNode}\index{tvm\+::relay\+::\+Function\+Node@{tvm\+::relay\+::\+Function\+Node}}
+
+
+Relay \hyperlink{classtvm_1_1relay_1_1Function}{Function} container.  
+
+
+
+
+{\ttfamily \#include $<$function.\+h$>$}
+
+
+
+Inheritance diagram for tvm\+:\+:relay\+:\+:Function\+Node\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{classtvm_1_1relay_1_1FunctionNode__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for tvm\+:\+:relay\+:\+:Function\+Node\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classtvm_1_1relay_1_1FunctionNode__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{classtvm_1_1relay_1_1FunctionNode_a7f6fba6dde1c0edaa9989e018b8bbb4f}{Visit\+Attrs} (\hyperlink{classtvm_1_1AttrVisitor}{tvm\+::\+Attr\+Visitor} $\ast$v)
+\item 
+bool \hyperlink{classtvm_1_1relay_1_1FunctionNode_a8d54d444e9ea9fce2c485f52adce00bb}{S\+Equal\+Reduce} (const \hyperlink{classtvm_1_1relay_1_1FunctionNode}{Function\+Node} $\ast$other, \hyperlink{classtvm_1_1SEqualReducer}{S\+Equal\+Reducer} equal) const 
+\item 
+void \hyperlink{classtvm_1_1relay_1_1FunctionNode_afe0cf90285e42336eb9c1eebe793c276}{S\+Hash\+Reduce} (\hyperlink{classtvm_1_1SHashReducer}{S\+Hash\+Reducer} hash\+\_\+reduce) const 
+\item 
+\hyperlink{namespacetvm_1_1relay_aa475de90506d48a1bb04ef6d1bd99bfb}{Func\+Type} \hyperlink{classtvm_1_1relay_1_1FunctionNode_a758bc467aa4dc4041b0fc7b7dbca4e67}{func\+\_\+type\+\_\+annotation} () const 
+\begin{DoxyCompactList}\small\item\em Return the derived function annotation of this expression. \end{DoxyCompactList}\item 
+\hyperlink{classtvm_1_1relay_1_1FunctionNode_a303e82499e8931d3b63aea0ad29df5f2}{T\+V\+M\+\_\+\+D\+E\+C\+L\+A\+R\+E\+\_\+\+F\+I\+N\+A\+L\+\_\+\+O\+B\+J\+E\+C\+T\+\_\+\+I\+N\+FO} (\hyperlink{classtvm_1_1relay_1_1FunctionNode}{Function\+Node}, \hyperlink{namespacetvm_1_1relay_a4edf28d1226abc08d28bc2fd90ce7b42}{Base\+Func\+Node})
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classtvm_1_1Array}{tvm\+::\+Array}$<$ \hyperlink{classtvm_1_1relay_1_1Var}{Var} $>$ \hyperlink{classtvm_1_1relay_1_1FunctionNode_a689c5078fb501798aa1d57d1825e3b5a}{params}
+\begin{DoxyCompactList}\small\item\em \hyperlink{classtvm_1_1relay_1_1Function}{Function} parameters. \end{DoxyCompactList}\item 
+\hyperlink{namespacetvm_1_1relay_a5b84e3790f89bb3fad5c7911eeb99531}{Expr} \hyperlink{classtvm_1_1relay_1_1FunctionNode_a32687067886a6d94e798431a01d04949}{body}
+\begin{DoxyCompactList}\small\item\em The expression which represents the computation of the function, the expression may reference the parameters, and the type of it or sub-\/expressions may reference the type variables. \end{DoxyCompactList}\item 
+\hyperlink{namespacetvm_1_1relay_a661d95f170bca230773914caeef3fe52}{Type} \hyperlink{classtvm_1_1relay_1_1FunctionNode_a075bcae369d873c24b7887eb7c96da40}{ret\+\_\+type}
+\begin{DoxyCompactList}\small\item\em User annotated return type of the function. \end{DoxyCompactList}\item 
+\hyperlink{classtvm_1_1Array}{tvm\+::\+Array}$<$ \hyperlink{namespacetvm_1_1relay_a63321eb51080f3f57dd7563a3ca0bfa6}{Type\+Var} $>$ \hyperlink{classtvm_1_1relay_1_1FunctionNode_a558ecb3ab57111b1a0f347764054d5e1}{type\+\_\+params}
+\begin{DoxyCompactList}\small\item\em \hyperlink{classtvm_1_1Type}{Type} parameters of the function. Enables the function to vary its type based on these. This corresponds to template paramaters in c++\textquotesingle{}s terminology. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static constexpr const char $\ast$ \hyperlink{classtvm_1_1relay_1_1FunctionNode_a75dd6eaa948a6bfc802686999428bfef}{\+\_\+type\+\_\+key} = \char`\"{}relay.\+Function\char`\"{}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Relay \hyperlink{classtvm_1_1relay_1_1Function}{Function} container. 
+
+\begin{DoxySeeAlso}{See also}
+\hyperlink{classtvm_1_1relay_1_1Function}{Function} 
+\end{DoxySeeAlso}
+
+
+\subsection{Member Function Documentation}
+\index{tvm\+::relay\+::\+Function\+Node@{tvm\+::relay\+::\+Function\+Node}!func\+\_\+type\+\_\+annotation@{func\+\_\+type\+\_\+annotation}}
+\index{func\+\_\+type\+\_\+annotation@{func\+\_\+type\+\_\+annotation}!tvm\+::relay\+::\+Function\+Node@{tvm\+::relay\+::\+Function\+Node}}
+\subsubsection[{\texorpdfstring{func\+\_\+type\+\_\+annotation() const }{func_type_annotation() const }}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Func\+Type} tvm\+::relay\+::\+Function\+Node\+::func\+\_\+type\+\_\+annotation (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}\hypertarget{classtvm_1_1relay_1_1FunctionNode_a758bc467aa4dc4041b0fc7b7dbca4e67}{}\label{classtvm_1_1relay_1_1FunctionNode_a758bc467aa4dc4041b0fc7b7dbca4e67}
+
+
+Return the derived function annotation of this expression. 
+
+\begin{DoxyReturn}{Returns}
+The function type annotation. 
+\end{DoxyReturn}
+\begin{DoxyNote}{Note}
+The function type annotation can contain \hyperlink{classtvm_1_1IncompleteType}{Incomplete\+Type}. 
+\end{DoxyNote}
+\index{tvm\+::relay\+::\+Function\+Node@{tvm\+::relay\+::\+Function\+Node}!S\+Equal\+Reduce@{S\+Equal\+Reduce}}
+\index{S\+Equal\+Reduce@{S\+Equal\+Reduce}!tvm\+::relay\+::\+Function\+Node@{tvm\+::relay\+::\+Function\+Node}}
+\subsubsection[{\texorpdfstring{S\+Equal\+Reduce(const Function\+Node $\ast$other, S\+Equal\+Reducer equal) const }{SEqualReduce(const FunctionNode *other, SEqualReducer equal) const }}]{\setlength{\rightskip}{0pt plus 5cm}bool tvm\+::relay\+::\+Function\+Node\+::\+S\+Equal\+Reduce (
+\begin{DoxyParamCaption}
+\item[{const {\bf Function\+Node} $\ast$}]{other, }
+\item[{{\bf S\+Equal\+Reducer}}]{equal}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classtvm_1_1relay_1_1FunctionNode_a8d54d444e9ea9fce2c485f52adce00bb}{}\label{classtvm_1_1relay_1_1FunctionNode_a8d54d444e9ea9fce2c485f52adce00bb}
+\index{tvm\+::relay\+::\+Function\+Node@{tvm\+::relay\+::\+Function\+Node}!S\+Hash\+Reduce@{S\+Hash\+Reduce}}
+\index{S\+Hash\+Reduce@{S\+Hash\+Reduce}!tvm\+::relay\+::\+Function\+Node@{tvm\+::relay\+::\+Function\+Node}}
+\subsubsection[{\texorpdfstring{S\+Hash\+Reduce(\+S\+Hash\+Reducer hash\+\_\+reduce) const }{SHashReduce(SHashReducer hash_reduce) const }}]{\setlength{\rightskip}{0pt plus 5cm}void tvm\+::relay\+::\+Function\+Node\+::\+S\+Hash\+Reduce (
+\begin{DoxyParamCaption}
+\item[{{\bf S\+Hash\+Reducer}}]{hash\+\_\+reduce}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classtvm_1_1relay_1_1FunctionNode_afe0cf90285e42336eb9c1eebe793c276}{}\label{classtvm_1_1relay_1_1FunctionNode_afe0cf90285e42336eb9c1eebe793c276}
+\index{tvm\+::relay\+::\+Function\+Node@{tvm\+::relay\+::\+Function\+Node}!T\+V\+M\+\_\+\+D\+E\+C\+L\+A\+R\+E\+\_\+\+F\+I\+N\+A\+L\+\_\+\+O\+B\+J\+E\+C\+T\+\_\+\+I\+N\+FO@{T\+V\+M\+\_\+\+D\+E\+C\+L\+A\+R\+E\+\_\+\+F\+I\+N\+A\+L\+\_\+\+O\+B\+J\+E\+C\+T\+\_\+\+I\+N\+FO}}
+\index{T\+V\+M\+\_\+\+D\+E\+C\+L\+A\+R\+E\+\_\+\+F\+I\+N\+A\+L\+\_\+\+O\+B\+J\+E\+C\+T\+\_\+\+I\+N\+FO@{T\+V\+M\+\_\+\+D\+E\+C\+L\+A\+R\+E\+\_\+\+F\+I\+N\+A\+L\+\_\+\+O\+B\+J\+E\+C\+T\+\_\+\+I\+N\+FO}!tvm\+::relay\+::\+Function\+Node@{tvm\+::relay\+::\+Function\+Node}}
+\subsubsection[{\texorpdfstring{T\+V\+M\+\_\+\+D\+E\+C\+L\+A\+R\+E\+\_\+\+F\+I\+N\+A\+L\+\_\+\+O\+B\+J\+E\+C\+T\+\_\+\+I\+N\+F\+O(\+Function\+Node, Base\+Func\+Node)}{TVM_DECLARE_FINAL_OBJECT_INFO(FunctionNode, BaseFuncNode)}}]{\setlength{\rightskip}{0pt plus 5cm}tvm\+::relay\+::\+Function\+Node\+::\+T\+V\+M\+\_\+\+D\+E\+C\+L\+A\+R\+E\+\_\+\+F\+I\+N\+A\+L\+\_\+\+O\+B\+J\+E\+C\+T\+\_\+\+I\+N\+FO (
+\begin{DoxyParamCaption}
+\item[{{\bf Function\+Node}}]{, }
+\item[{{\bf Base\+Func\+Node}}]{}
+\end{DoxyParamCaption}
+)}\hypertarget{classtvm_1_1relay_1_1FunctionNode_a303e82499e8931d3b63aea0ad29df5f2}{}\label{classtvm_1_1relay_1_1FunctionNode_a303e82499e8931d3b63aea0ad29df5f2}
+\index{tvm\+::relay\+::\+Function\+Node@{tvm\+::relay\+::\+Function\+Node}!Visit\+Attrs@{Visit\+Attrs}}
+\index{Visit\+Attrs@{Visit\+Attrs}!tvm\+::relay\+::\+Function\+Node@{tvm\+::relay\+::\+Function\+Node}}
+\subsubsection[{\texorpdfstring{Visit\+Attrs(tvm\+::\+Attr\+Visitor $\ast$v)}{VisitAttrs(tvm::AttrVisitor *v)}}]{\setlength{\rightskip}{0pt plus 5cm}void tvm\+::relay\+::\+Function\+Node\+::\+Visit\+Attrs (
+\begin{DoxyParamCaption}
+\item[{{\bf tvm\+::\+Attr\+Visitor} $\ast$}]{v}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classtvm_1_1relay_1_1FunctionNode_a7f6fba6dde1c0edaa9989e018b8bbb4f}{}\label{classtvm_1_1relay_1_1FunctionNode_a7f6fba6dde1c0edaa9989e018b8bbb4f}
+
+
+\subsection{Member Data Documentation}
+\index{tvm\+::relay\+::\+Function\+Node@{tvm\+::relay\+::\+Function\+Node}!\+\_\+type\+\_\+key@{\+\_\+type\+\_\+key}}
+\index{\+\_\+type\+\_\+key@{\+\_\+type\+\_\+key}!tvm\+::relay\+::\+Function\+Node@{tvm\+::relay\+::\+Function\+Node}}
+\subsubsection[{\texorpdfstring{\+\_\+type\+\_\+key}{_type_key}}]{\setlength{\rightskip}{0pt plus 5cm}constexpr const char$\ast$ tvm\+::relay\+::\+Function\+Node\+::\+\_\+type\+\_\+key = \char`\"{}relay.\+Function\char`\"{}\hspace{0.3cm}{\ttfamily [static]}}\hypertarget{classtvm_1_1relay_1_1FunctionNode_a75dd6eaa948a6bfc802686999428bfef}{}\label{classtvm_1_1relay_1_1FunctionNode_a75dd6eaa948a6bfc802686999428bfef}
+\index{tvm\+::relay\+::\+Function\+Node@{tvm\+::relay\+::\+Function\+Node}!body@{body}}
+\index{body@{body}!tvm\+::relay\+::\+Function\+Node@{tvm\+::relay\+::\+Function\+Node}}
+\subsubsection[{\texorpdfstring{body}{body}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Expr} tvm\+::relay\+::\+Function\+Node\+::body}\hypertarget{classtvm_1_1relay_1_1FunctionNode_a32687067886a6d94e798431a01d04949}{}\label{classtvm_1_1relay_1_1FunctionNode_a32687067886a6d94e798431a01d04949}
+
+
+The expression which represents the computation of the function, the expression may reference the parameters, and the type of it or sub-\/expressions may reference the type variables. 
+
+\index{tvm\+::relay\+::\+Function\+Node@{tvm\+::relay\+::\+Function\+Node}!params@{params}}
+\index{params@{params}!tvm\+::relay\+::\+Function\+Node@{tvm\+::relay\+::\+Function\+Node}}
+\subsubsection[{\texorpdfstring{params}{params}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf tvm\+::\+Array}$<${\bf Var}$>$ tvm\+::relay\+::\+Function\+Node\+::params}\hypertarget{classtvm_1_1relay_1_1FunctionNode_a689c5078fb501798aa1d57d1825e3b5a}{}\label{classtvm_1_1relay_1_1FunctionNode_a689c5078fb501798aa1d57d1825e3b5a}
+
+
+\hyperlink{classtvm_1_1relay_1_1Function}{Function} parameters. 
+
+\index{tvm\+::relay\+::\+Function\+Node@{tvm\+::relay\+::\+Function\+Node}!ret\+\_\+type@{ret\+\_\+type}}
+\index{ret\+\_\+type@{ret\+\_\+type}!tvm\+::relay\+::\+Function\+Node@{tvm\+::relay\+::\+Function\+Node}}
+\subsubsection[{\texorpdfstring{ret\+\_\+type}{ret_type}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Type} tvm\+::relay\+::\+Function\+Node\+::ret\+\_\+type}\hypertarget{classtvm_1_1relay_1_1FunctionNode_a075bcae369d873c24b7887eb7c96da40}{}\label{classtvm_1_1relay_1_1FunctionNode_a075bcae369d873c24b7887eb7c96da40}
+
+
+User annotated return type of the function. 
+
+\index{tvm\+::relay\+::\+Function\+Node@{tvm\+::relay\+::\+Function\+Node}!type\+\_\+params@{type\+\_\+params}}
+\index{type\+\_\+params@{type\+\_\+params}!tvm\+::relay\+::\+Function\+Node@{tvm\+::relay\+::\+Function\+Node}}
+\subsubsection[{\texorpdfstring{type\+\_\+params}{type_params}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf tvm\+::\+Array}$<${\bf Type\+Var}$>$ tvm\+::relay\+::\+Function\+Node\+::type\+\_\+params}\hypertarget{classtvm_1_1relay_1_1FunctionNode_a558ecb3ab57111b1a0f347764054d5e1}{}\label{classtvm_1_1relay_1_1FunctionNode_a558ecb3ab57111b1a0f347764054d5e1}
+
+
+\hyperlink{classtvm_1_1Type}{Type} parameters of the function. Enables the function to vary its type based on these. This corresponds to template paramaters in c++\textquotesingle{}s terminology. 
+
+\begin{DoxyNote}{Note}
+This can be usually empty for non-\/polymorphic functions. 
+\end{DoxyNote}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+include/tvm/relay/\hyperlink{relay_2function_8h}{function.\+h}\end{DoxyCompactItemize}

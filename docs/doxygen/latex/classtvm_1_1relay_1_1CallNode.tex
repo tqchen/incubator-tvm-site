@@ -1,0 +1,148 @@
+\hypertarget{classtvm_1_1relay_1_1CallNode}{}\section{tvm\+:\+:relay\+:\+:Call\+Node Class Reference}
+\label{classtvm_1_1relay_1_1CallNode}\index{tvm\+::relay\+::\+Call\+Node@{tvm\+::relay\+::\+Call\+Node}}
+
+
+\hyperlink{classtvm_1_1relay_1_1Call}{Call} container.  
+
+
+
+
+{\ttfamily \#include $<$expr.\+h$>$}
+
+
+
+Inheritance diagram for tvm\+:\+:relay\+:\+:Call\+Node\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{classtvm_1_1relay_1_1CallNode__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for tvm\+:\+:relay\+:\+:Call\+Node\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classtvm_1_1relay_1_1CallNode__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{classtvm_1_1relay_1_1CallNode_a28ee1603f20958c8c4fe54d8df3ac558}{Visit\+Attrs} (\hyperlink{classtvm_1_1AttrVisitor}{tvm\+::\+Attr\+Visitor} $\ast$v)
+\item 
+bool \hyperlink{classtvm_1_1relay_1_1CallNode_af6d816670918e299428a54661b0d6ed3}{S\+Equal\+Reduce} (const \hyperlink{classtvm_1_1relay_1_1CallNode}{Call\+Node} $\ast$other, \hyperlink{classtvm_1_1SEqualReducer}{S\+Equal\+Reducer} equal) const 
+\item 
+void \hyperlink{classtvm_1_1relay_1_1CallNode_a1e34c40a1c5a0a5cada02448cd068b2d}{S\+Hash\+Reduce} (\hyperlink{classtvm_1_1SHashReducer}{S\+Hash\+Reducer} hash\+\_\+reduce) const 
+\item 
+\hyperlink{classtvm_1_1relay_1_1CallNode_afb0adb68867bdeba9c635eaed3526abb}{T\+V\+M\+\_\+\+D\+E\+C\+L\+A\+R\+E\+\_\+\+F\+I\+N\+A\+L\+\_\+\+O\+B\+J\+E\+C\+T\+\_\+\+I\+N\+FO} (\hyperlink{classtvm_1_1relay_1_1CallNode}{Call\+Node}, \hyperlink{namespacetvm_1_1relay_a387f18e050d016c52ea6c4781e7cff6c}{Expr\+Node})
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{namespacetvm_1_1relay_a5b84e3790f89bb3fad5c7911eeb99531}{Expr} \hyperlink{classtvm_1_1relay_1_1CallNode_ade66944f5a2f064e4eb07ad9f9438306}{op}
+\begin{DoxyCompactList}\small\item\em The operator(function) being invoked. \end{DoxyCompactList}\item 
+\hyperlink{classtvm_1_1Array}{tvm\+::\+Array}$<$ \hyperlink{namespacetvm_1_1relay_a5b84e3790f89bb3fad5c7911eeb99531}{relay\+::\+Expr} $>$ \hyperlink{classtvm_1_1relay_1_1CallNode_a7b2ba771babac0a99e2909227d35c092}{args}
+\begin{DoxyCompactList}\small\item\em The arguments(inputs) of the call. \end{DoxyCompactList}\item 
+\hyperlink{classtvm_1_1Attrs}{Attrs} \hyperlink{classtvm_1_1relay_1_1CallNode_ac9d1656e2a9fda49049186c3aa3eb208}{attrs}
+\begin{DoxyCompactList}\small\item\em The additional attributes. \end{DoxyCompactList}\item 
+\hyperlink{classtvm_1_1Array}{tvm\+::\+Array}$<$ \hyperlink{namespacetvm_1_1relay_a661d95f170bca230773914caeef3fe52}{Type} $>$ \hyperlink{classtvm_1_1relay_1_1CallNode_ad23d97a6ae1cc1bea903d4c714f811d6}{type\+\_\+args}
+\begin{DoxyCompactList}\small\item\em The type arguments passed to polymorphic(template) function. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static constexpr const char $\ast$ \hyperlink{classtvm_1_1relay_1_1CallNode_a978aab84f7bf94e9f860014dafb95055}{\+\_\+type\+\_\+key} = \char`\"{}relay.\+Call\char`\"{}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\hyperlink{classtvm_1_1relay_1_1Call}{Call} container. 
+
+\subsection{Member Function Documentation}
+\index{tvm\+::relay\+::\+Call\+Node@{tvm\+::relay\+::\+Call\+Node}!S\+Equal\+Reduce@{S\+Equal\+Reduce}}
+\index{S\+Equal\+Reduce@{S\+Equal\+Reduce}!tvm\+::relay\+::\+Call\+Node@{tvm\+::relay\+::\+Call\+Node}}
+\subsubsection[{\texorpdfstring{S\+Equal\+Reduce(const Call\+Node $\ast$other, S\+Equal\+Reducer equal) const }{SEqualReduce(const CallNode *other, SEqualReducer equal) const }}]{\setlength{\rightskip}{0pt plus 5cm}bool tvm\+::relay\+::\+Call\+Node\+::\+S\+Equal\+Reduce (
+\begin{DoxyParamCaption}
+\item[{const {\bf Call\+Node} $\ast$}]{other, }
+\item[{{\bf S\+Equal\+Reducer}}]{equal}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classtvm_1_1relay_1_1CallNode_af6d816670918e299428a54661b0d6ed3}{}\label{classtvm_1_1relay_1_1CallNode_af6d816670918e299428a54661b0d6ed3}
+\index{tvm\+::relay\+::\+Call\+Node@{tvm\+::relay\+::\+Call\+Node}!S\+Hash\+Reduce@{S\+Hash\+Reduce}}
+\index{S\+Hash\+Reduce@{S\+Hash\+Reduce}!tvm\+::relay\+::\+Call\+Node@{tvm\+::relay\+::\+Call\+Node}}
+\subsubsection[{\texorpdfstring{S\+Hash\+Reduce(\+S\+Hash\+Reducer hash\+\_\+reduce) const }{SHashReduce(SHashReducer hash_reduce) const }}]{\setlength{\rightskip}{0pt plus 5cm}void tvm\+::relay\+::\+Call\+Node\+::\+S\+Hash\+Reduce (
+\begin{DoxyParamCaption}
+\item[{{\bf S\+Hash\+Reducer}}]{hash\+\_\+reduce}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classtvm_1_1relay_1_1CallNode_a1e34c40a1c5a0a5cada02448cd068b2d}{}\label{classtvm_1_1relay_1_1CallNode_a1e34c40a1c5a0a5cada02448cd068b2d}
+\index{tvm\+::relay\+::\+Call\+Node@{tvm\+::relay\+::\+Call\+Node}!T\+V\+M\+\_\+\+D\+E\+C\+L\+A\+R\+E\+\_\+\+F\+I\+N\+A\+L\+\_\+\+O\+B\+J\+E\+C\+T\+\_\+\+I\+N\+FO@{T\+V\+M\+\_\+\+D\+E\+C\+L\+A\+R\+E\+\_\+\+F\+I\+N\+A\+L\+\_\+\+O\+B\+J\+E\+C\+T\+\_\+\+I\+N\+FO}}
+\index{T\+V\+M\+\_\+\+D\+E\+C\+L\+A\+R\+E\+\_\+\+F\+I\+N\+A\+L\+\_\+\+O\+B\+J\+E\+C\+T\+\_\+\+I\+N\+FO@{T\+V\+M\+\_\+\+D\+E\+C\+L\+A\+R\+E\+\_\+\+F\+I\+N\+A\+L\+\_\+\+O\+B\+J\+E\+C\+T\+\_\+\+I\+N\+FO}!tvm\+::relay\+::\+Call\+Node@{tvm\+::relay\+::\+Call\+Node}}
+\subsubsection[{\texorpdfstring{T\+V\+M\+\_\+\+D\+E\+C\+L\+A\+R\+E\+\_\+\+F\+I\+N\+A\+L\+\_\+\+O\+B\+J\+E\+C\+T\+\_\+\+I\+N\+F\+O(\+Call\+Node, Expr\+Node)}{TVM_DECLARE_FINAL_OBJECT_INFO(CallNode, ExprNode)}}]{\setlength{\rightskip}{0pt plus 5cm}tvm\+::relay\+::\+Call\+Node\+::\+T\+V\+M\+\_\+\+D\+E\+C\+L\+A\+R\+E\+\_\+\+F\+I\+N\+A\+L\+\_\+\+O\+B\+J\+E\+C\+T\+\_\+\+I\+N\+FO (
+\begin{DoxyParamCaption}
+\item[{{\bf Call\+Node}}]{, }
+\item[{{\bf Expr\+Node}}]{}
+\end{DoxyParamCaption}
+)}\hypertarget{classtvm_1_1relay_1_1CallNode_afb0adb68867bdeba9c635eaed3526abb}{}\label{classtvm_1_1relay_1_1CallNode_afb0adb68867bdeba9c635eaed3526abb}
+\index{tvm\+::relay\+::\+Call\+Node@{tvm\+::relay\+::\+Call\+Node}!Visit\+Attrs@{Visit\+Attrs}}
+\index{Visit\+Attrs@{Visit\+Attrs}!tvm\+::relay\+::\+Call\+Node@{tvm\+::relay\+::\+Call\+Node}}
+\subsubsection[{\texorpdfstring{Visit\+Attrs(tvm\+::\+Attr\+Visitor $\ast$v)}{VisitAttrs(tvm::AttrVisitor *v)}}]{\setlength{\rightskip}{0pt plus 5cm}void tvm\+::relay\+::\+Call\+Node\+::\+Visit\+Attrs (
+\begin{DoxyParamCaption}
+\item[{{\bf tvm\+::\+Attr\+Visitor} $\ast$}]{v}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classtvm_1_1relay_1_1CallNode_a28ee1603f20958c8c4fe54d8df3ac558}{}\label{classtvm_1_1relay_1_1CallNode_a28ee1603f20958c8c4fe54d8df3ac558}
+
+
+\subsection{Member Data Documentation}
+\index{tvm\+::relay\+::\+Call\+Node@{tvm\+::relay\+::\+Call\+Node}!\+\_\+type\+\_\+key@{\+\_\+type\+\_\+key}}
+\index{\+\_\+type\+\_\+key@{\+\_\+type\+\_\+key}!tvm\+::relay\+::\+Call\+Node@{tvm\+::relay\+::\+Call\+Node}}
+\subsubsection[{\texorpdfstring{\+\_\+type\+\_\+key}{_type_key}}]{\setlength{\rightskip}{0pt plus 5cm}constexpr const char$\ast$ tvm\+::relay\+::\+Call\+Node\+::\+\_\+type\+\_\+key = \char`\"{}relay.\+Call\char`\"{}\hspace{0.3cm}{\ttfamily [static]}}\hypertarget{classtvm_1_1relay_1_1CallNode_a978aab84f7bf94e9f860014dafb95055}{}\label{classtvm_1_1relay_1_1CallNode_a978aab84f7bf94e9f860014dafb95055}
+\index{tvm\+::relay\+::\+Call\+Node@{tvm\+::relay\+::\+Call\+Node}!args@{args}}
+\index{args@{args}!tvm\+::relay\+::\+Call\+Node@{tvm\+::relay\+::\+Call\+Node}}
+\subsubsection[{\texorpdfstring{args}{args}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf tvm\+::\+Array}$<${\bf relay\+::\+Expr}$>$ tvm\+::relay\+::\+Call\+Node\+::args}\hypertarget{classtvm_1_1relay_1_1CallNode_a7b2ba771babac0a99e2909227d35c092}{}\label{classtvm_1_1relay_1_1CallNode_a7b2ba771babac0a99e2909227d35c092}
+
+
+The arguments(inputs) of the call. 
+
+\index{tvm\+::relay\+::\+Call\+Node@{tvm\+::relay\+::\+Call\+Node}!attrs@{attrs}}
+\index{attrs@{attrs}!tvm\+::relay\+::\+Call\+Node@{tvm\+::relay\+::\+Call\+Node}}
+\subsubsection[{\texorpdfstring{attrs}{attrs}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Attrs} tvm\+::relay\+::\+Call\+Node\+::attrs}\hypertarget{classtvm_1_1relay_1_1CallNode_ac9d1656e2a9fda49049186c3aa3eb208}{}\label{classtvm_1_1relay_1_1CallNode_ac9d1656e2a9fda49049186c3aa3eb208}
+
+
+The additional attributes. 
+
+\index{tvm\+::relay\+::\+Call\+Node@{tvm\+::relay\+::\+Call\+Node}!op@{op}}
+\index{op@{op}!tvm\+::relay\+::\+Call\+Node@{tvm\+::relay\+::\+Call\+Node}}
+\subsubsection[{\texorpdfstring{op}{op}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Expr} tvm\+::relay\+::\+Call\+Node\+::op}\hypertarget{classtvm_1_1relay_1_1CallNode_ade66944f5a2f064e4eb07ad9f9438306}{}\label{classtvm_1_1relay_1_1CallNode_ade66944f5a2f064e4eb07ad9f9438306}
+
+
+The operator(function) being invoked. 
+
+
+\begin{DoxyItemize}
+\item It can be \hyperlink{namespacetvm_1_1relay_a6c46d15e80f1a9916b8e9c264a185c98}{relay\+::\+Op} which corresponds to the primitive operators.
+\item It can also be user defined functions (\hyperlink{classtvm_1_1relay_1_1Function}{Function}, \hyperlink{classtvm_1_1GlobalVar}{Global\+Var}, \hyperlink{classtvm_1_1relay_1_1Var}{Var}). 
+\end{DoxyItemize}\index{tvm\+::relay\+::\+Call\+Node@{tvm\+::relay\+::\+Call\+Node}!type\+\_\+args@{type\+\_\+args}}
+\index{type\+\_\+args@{type\+\_\+args}!tvm\+::relay\+::\+Call\+Node@{tvm\+::relay\+::\+Call\+Node}}
+\subsubsection[{\texorpdfstring{type\+\_\+args}{type_args}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf tvm\+::\+Array}$<${\bf Type}$>$ tvm\+::relay\+::\+Call\+Node\+::type\+\_\+args}\hypertarget{classtvm_1_1relay_1_1CallNode_ad23d97a6ae1cc1bea903d4c714f811d6}{}\label{classtvm_1_1relay_1_1CallNode_ad23d97a6ae1cc1bea903d4c714f811d6}
+
+
+The type arguments passed to polymorphic(template) function. 
+
+This is the advance feature that is only used when the function is polymorphic. It is safe to be ignored in most cases. For example, in the following code, the type\+\_\+args of addone call is \mbox{[}int\mbox{]}.
+
+
+\begin{DoxyCode}
+\textcolor{keyword}{template}<\textcolor{keyword}{typename} T>
+T addone(T a) \{ \textcolor{keywordflow}{return} a + 1; \}
+
+\textcolor{keywordtype}{void} main() \{
+  \textcolor{keywordtype}{int} x = addone<int>(10);
+\}
+\end{DoxyCode}
+ 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+include/tvm/relay/\hyperlink{relay_2expr_8h}{expr.\+h}\end{DoxyCompactItemize}

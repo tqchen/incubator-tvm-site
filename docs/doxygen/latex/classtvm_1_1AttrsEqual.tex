@@ -1,0 +1,151 @@
+\hypertarget{classtvm_1_1AttrsEqual}{}\section{tvm\+:\+:Attrs\+Equal Class Reference}
+\label{classtvm_1_1AttrsEqual}\index{tvm\+::\+Attrs\+Equal@{tvm\+::\+Attrs\+Equal}}
+
+
+Content-\/aware Equality comparator for attrs.  
+
+
+
+
+{\ttfamily \#include $<$attrs.\+h$>$}
+
+
+
+Collaboration diagram for tvm\+:\+:Attrs\+Equal\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=171pt]{classtvm_1_1AttrsEqual__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+bool \hyperlink{classtvm_1_1AttrsEqual_af65f9cf21d8c4355388d7e54d0bdb1ef}{operator()} (const double \&lhs, const double \&rhs) const 
+\item 
+bool \hyperlink{classtvm_1_1AttrsEqual_a93b456b86566cac5b319db9eea0ea7f1}{operator()} (const int64\+\_\+t \&lhs, const int64\+\_\+t \&rhs) const 
+\item 
+bool \hyperlink{classtvm_1_1AttrsEqual_a644f5e9603108f79b65cdb4753e38b6a}{operator()} (const uint64\+\_\+t \&lhs, const uint64\+\_\+t \&rhs) const 
+\item 
+bool \hyperlink{classtvm_1_1AttrsEqual_a9038da9b1c4cc4216de13dc30e45a2f7}{operator()} (const int \&lhs, const int \&rhs) const 
+\item 
+bool \hyperlink{classtvm_1_1AttrsEqual_abf0d990a522127ceb3d0b0badd5e4dc8}{operator()} (const bool \&lhs, const bool \&rhs) const 
+\item 
+bool \hyperlink{classtvm_1_1AttrsEqual_a39fd9bc47e3055367f216445a679255e}{operator()} (const std\+::string \&lhs, const std\+::string \&rhs) const 
+\item 
+bool \hyperlink{classtvm_1_1AttrsEqual_aab0d53b8bc5dfb6b833f0a4b59266ff6}{operator()} (const \hyperlink{namespacetvm_a41918af1a1dc386388639a9d3ad06c5d}{Data\+Type} \&lhs, const \hyperlink{namespacetvm_a41918af1a1dc386388639a9d3ad06c5d}{Data\+Type} \&rhs) const 
+\item 
+bool \hyperlink{classtvm_1_1AttrsEqual_ac5279a5f1c09f5986c842a69899d0fa6}{operator()} (const Object\+Ref \&lhs, const Object\+Ref \&rhs) const 
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classtvm_1_1AttrsEqual_a82543680d85e663c8085c06ccc229827}{Attrs\+Equal\+Handler} $\ast$ \hyperlink{classtvm_1_1AttrsEqual_a8296ba912da1568dca506f079f0ab6c9}{handler\+\_\+} \{nullptr\}
+\begin{DoxyCompactList}\small\item\em internal handle. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+class \hyperlink{classtvm_1_1AttrsEqual_a82543680d85e663c8085c06ccc229827}{Attrs\+Equal\+Handler}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Content-\/aware Equality comparator for attrs. 
+
+This comparator will recursively deep compare the following Attributes.
+
+
+\begin{DoxyItemize}
+\item \hyperlink{classtvm_1_1IntImm}{Int\+Imm}, U\+Int\+Imm, \hyperlink{classtvm_1_1FloatImm}{Float\+Imm}, String\+Imm
+\item Any subclass of \hyperlink{classtvm_1_1BaseAttrsNode}{Base\+Attrs\+Node}
+\item \hyperlink{classtvm_1_1Array}{Array} of Attributes.
+\item \hyperlink{classtvm_1_1Map}{Map} from string to Attributes. 
+\end{DoxyItemize}
+
+\subsection{Member Function Documentation}
+\index{tvm\+::\+Attrs\+Equal@{tvm\+::\+Attrs\+Equal}!operator()@{operator()}}
+\index{operator()@{operator()}!tvm\+::\+Attrs\+Equal@{tvm\+::\+Attrs\+Equal}}
+\subsubsection[{\texorpdfstring{operator()(const double \&lhs, const double \&rhs) const }{operator()(const double &lhs, const double &rhs) const }}]{\setlength{\rightskip}{0pt plus 5cm}bool tvm\+::\+Attrs\+Equal\+::operator() (
+\begin{DoxyParamCaption}
+\item[{const double \&}]{lhs, }
+\item[{const double \&}]{rhs}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classtvm_1_1AttrsEqual_af65f9cf21d8c4355388d7e54d0bdb1ef}{}\label{classtvm_1_1AttrsEqual_af65f9cf21d8c4355388d7e54d0bdb1ef}
+\index{tvm\+::\+Attrs\+Equal@{tvm\+::\+Attrs\+Equal}!operator()@{operator()}}
+\index{operator()@{operator()}!tvm\+::\+Attrs\+Equal@{tvm\+::\+Attrs\+Equal}}
+\subsubsection[{\texorpdfstring{operator()(const int64\+\_\+t \&lhs, const int64\+\_\+t \&rhs) const }{operator()(const int64_t &lhs, const int64_t &rhs) const }}]{\setlength{\rightskip}{0pt plus 5cm}bool tvm\+::\+Attrs\+Equal\+::operator() (
+\begin{DoxyParamCaption}
+\item[{const int64\+\_\+t \&}]{lhs, }
+\item[{const int64\+\_\+t \&}]{rhs}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classtvm_1_1AttrsEqual_a93b456b86566cac5b319db9eea0ea7f1}{}\label{classtvm_1_1AttrsEqual_a93b456b86566cac5b319db9eea0ea7f1}
+\index{tvm\+::\+Attrs\+Equal@{tvm\+::\+Attrs\+Equal}!operator()@{operator()}}
+\index{operator()@{operator()}!tvm\+::\+Attrs\+Equal@{tvm\+::\+Attrs\+Equal}}
+\subsubsection[{\texorpdfstring{operator()(const uint64\+\_\+t \&lhs, const uint64\+\_\+t \&rhs) const }{operator()(const uint64_t &lhs, const uint64_t &rhs) const }}]{\setlength{\rightskip}{0pt plus 5cm}bool tvm\+::\+Attrs\+Equal\+::operator() (
+\begin{DoxyParamCaption}
+\item[{const uint64\+\_\+t \&}]{lhs, }
+\item[{const uint64\+\_\+t \&}]{rhs}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classtvm_1_1AttrsEqual_a644f5e9603108f79b65cdb4753e38b6a}{}\label{classtvm_1_1AttrsEqual_a644f5e9603108f79b65cdb4753e38b6a}
+\index{tvm\+::\+Attrs\+Equal@{tvm\+::\+Attrs\+Equal}!operator()@{operator()}}
+\index{operator()@{operator()}!tvm\+::\+Attrs\+Equal@{tvm\+::\+Attrs\+Equal}}
+\subsubsection[{\texorpdfstring{operator()(const int \&lhs, const int \&rhs) const }{operator()(const int &lhs, const int &rhs) const }}]{\setlength{\rightskip}{0pt plus 5cm}bool tvm\+::\+Attrs\+Equal\+::operator() (
+\begin{DoxyParamCaption}
+\item[{const int \&}]{lhs, }
+\item[{const int \&}]{rhs}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classtvm_1_1AttrsEqual_a9038da9b1c4cc4216de13dc30e45a2f7}{}\label{classtvm_1_1AttrsEqual_a9038da9b1c4cc4216de13dc30e45a2f7}
+\index{tvm\+::\+Attrs\+Equal@{tvm\+::\+Attrs\+Equal}!operator()@{operator()}}
+\index{operator()@{operator()}!tvm\+::\+Attrs\+Equal@{tvm\+::\+Attrs\+Equal}}
+\subsubsection[{\texorpdfstring{operator()(const bool \&lhs, const bool \&rhs) const }{operator()(const bool &lhs, const bool &rhs) const }}]{\setlength{\rightskip}{0pt plus 5cm}bool tvm\+::\+Attrs\+Equal\+::operator() (
+\begin{DoxyParamCaption}
+\item[{const bool \&}]{lhs, }
+\item[{const bool \&}]{rhs}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classtvm_1_1AttrsEqual_abf0d990a522127ceb3d0b0badd5e4dc8}{}\label{classtvm_1_1AttrsEqual_abf0d990a522127ceb3d0b0badd5e4dc8}
+\index{tvm\+::\+Attrs\+Equal@{tvm\+::\+Attrs\+Equal}!operator()@{operator()}}
+\index{operator()@{operator()}!tvm\+::\+Attrs\+Equal@{tvm\+::\+Attrs\+Equal}}
+\subsubsection[{\texorpdfstring{operator()(const std\+::string \&lhs, const std\+::string \&rhs) const }{operator()(const std::string &lhs, const std::string &rhs) const }}]{\setlength{\rightskip}{0pt plus 5cm}bool tvm\+::\+Attrs\+Equal\+::operator() (
+\begin{DoxyParamCaption}
+\item[{const std\+::string \&}]{lhs, }
+\item[{const std\+::string \&}]{rhs}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classtvm_1_1AttrsEqual_a39fd9bc47e3055367f216445a679255e}{}\label{classtvm_1_1AttrsEqual_a39fd9bc47e3055367f216445a679255e}
+\index{tvm\+::\+Attrs\+Equal@{tvm\+::\+Attrs\+Equal}!operator()@{operator()}}
+\index{operator()@{operator()}!tvm\+::\+Attrs\+Equal@{tvm\+::\+Attrs\+Equal}}
+\subsubsection[{\texorpdfstring{operator()(const Data\+Type \&lhs, const Data\+Type \&rhs) const }{operator()(const DataType &lhs, const DataType &rhs) const }}]{\setlength{\rightskip}{0pt plus 5cm}bool tvm\+::\+Attrs\+Equal\+::operator() (
+\begin{DoxyParamCaption}
+\item[{const {\bf Data\+Type} \&}]{lhs, }
+\item[{const {\bf Data\+Type} \&}]{rhs}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classtvm_1_1AttrsEqual_aab0d53b8bc5dfb6b833f0a4b59266ff6}{}\label{classtvm_1_1AttrsEqual_aab0d53b8bc5dfb6b833f0a4b59266ff6}
+\index{tvm\+::\+Attrs\+Equal@{tvm\+::\+Attrs\+Equal}!operator()@{operator()}}
+\index{operator()@{operator()}!tvm\+::\+Attrs\+Equal@{tvm\+::\+Attrs\+Equal}}
+\subsubsection[{\texorpdfstring{operator()(const Object\+Ref \&lhs, const Object\+Ref \&rhs) const }{operator()(const ObjectRef &lhs, const ObjectRef &rhs) const }}]{\setlength{\rightskip}{0pt plus 5cm}bool tvm\+::\+Attrs\+Equal\+::operator() (
+\begin{DoxyParamCaption}
+\item[{const Object\+Ref \&}]{lhs, }
+\item[{const Object\+Ref \&}]{rhs}
+\end{DoxyParamCaption}
+) const}\hypertarget{classtvm_1_1AttrsEqual_ac5279a5f1c09f5986c842a69899d0fa6}{}\label{classtvm_1_1AttrsEqual_ac5279a5f1c09f5986c842a69899d0fa6}
+
+
+\subsection{Friends And Related Function Documentation}
+\index{tvm\+::\+Attrs\+Equal@{tvm\+::\+Attrs\+Equal}!Attrs\+Equal\+Handler@{Attrs\+Equal\+Handler}}
+\index{Attrs\+Equal\+Handler@{Attrs\+Equal\+Handler}!tvm\+::\+Attrs\+Equal@{tvm\+::\+Attrs\+Equal}}
+\subsubsection[{\texorpdfstring{Attrs\+Equal\+Handler}{AttrsEqualHandler}}]{\setlength{\rightskip}{0pt plus 5cm}friend class Attrs\+Equal\+Handler\hspace{0.3cm}{\ttfamily [friend]}}\hypertarget{classtvm_1_1AttrsEqual_a82543680d85e663c8085c06ccc229827}{}\label{classtvm_1_1AttrsEqual_a82543680d85e663c8085c06ccc229827}
+
+
+\subsection{Member Data Documentation}
+\index{tvm\+::\+Attrs\+Equal@{tvm\+::\+Attrs\+Equal}!handler\+\_\+@{handler\+\_\+}}
+\index{handler\+\_\+@{handler\+\_\+}!tvm\+::\+Attrs\+Equal@{tvm\+::\+Attrs\+Equal}}
+\subsubsection[{\texorpdfstring{handler\+\_\+}{handler_}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Attrs\+Equal\+Handler}$\ast$ tvm\+::\+Attrs\+Equal\+::handler\+\_\+ \{nullptr\}\hspace{0.3cm}{\ttfamily [protected]}}\hypertarget{classtvm_1_1AttrsEqual_a8296ba912da1568dca506f079f0ab6c9}{}\label{classtvm_1_1AttrsEqual_a8296ba912da1568dca506f079f0ab6c9}
+
+
+internal handle. 
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+include/tvm/ir/\hyperlink{ir_2attrs_8h}{attrs.\+h}\end{DoxyCompactItemize}

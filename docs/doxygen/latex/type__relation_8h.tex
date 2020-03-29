@@ -1,0 +1,57 @@
+\hypertarget{type__relation_8h}{}\section{include/tvm/ir/type\+\_\+relation.h File Reference}
+\label{type__relation_8h}\index{include/tvm/ir/type\+\_\+relation.\+h@{include/tvm/ir/type\+\_\+relation.\+h}}
+
+
+Type relation and function for type inference(checking).  
+
+
+{\ttfamily \#include $<$tvm/ir/type.\+h$>$}\\*
+{\ttfamily \#include $<$tvm/ir/module.\+h$>$}\\*
+{\ttfamily \#include $<$tvm/ir/env\+\_\+func.\+h$>$}\\*
+{\ttfamily \#include $<$tvm/ir/attrs.\+h$>$}\\*
+Include dependency graph for type\+\_\+relation.\+h\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{type__relation_8h__incl}
+\end{center}
+\end{figure}
+This graph shows which files directly or indirectly include this file\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{type__relation_8h__dep__incl}
+\end{center}
+\end{figure}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \hyperlink{classtvm_1_1TypeCallNode}{tvm\+::\+Type\+Call\+Node}
+\begin{DoxyCompactList}\small\item\em \hyperlink{classtvm_1_1Type}{Type} function application. \end{DoxyCompactList}\item 
+class \hyperlink{classtvm_1_1TypeCall}{tvm\+::\+Type\+Call}
+\begin{DoxyCompactList}\small\item\em Managed reference to \hyperlink{classtvm_1_1TypeCallNode}{Type\+Call\+Node}. \end{DoxyCompactList}\item 
+class \hyperlink{classtvm_1_1TypeReporterNode}{tvm\+::\+Type\+Reporter\+Node}
+\begin{DoxyCompactList}\small\item\em reporter that reports back to the type resolution information. \end{DoxyCompactList}\item 
+class \hyperlink{classtvm_1_1TypeReporter}{tvm\+::\+Type\+Reporter}
+\begin{DoxyCompactList}\small\item\em Container class of \hyperlink{classtvm_1_1TypeReporter}{Type\+Reporter}. \end{DoxyCompactList}\item 
+class \hyperlink{classtvm_1_1TypeRelationNode}{tvm\+::\+Type\+Relation\+Node}
+\begin{DoxyCompactList}\small\item\em User defined type relation, it is an input-\/output relation on types. \end{DoxyCompactList}\item 
+class \hyperlink{classtvm_1_1TypeRelation}{tvm\+::\+Type\+Relation}
+\begin{DoxyCompactList}\small\item\em Managed reference to \hyperlink{classtvm_1_1TypeRelationNode}{Type\+Relation\+Node}. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Namespaces}
+\begin{DoxyCompactItemize}
+\item 
+ \hyperlink{namespacetvm}{tvm}
+\end{DoxyCompactItemize}
+\subsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+using \hyperlink{namespacetvm_a72dcba4493adfcd8908663898ece3514}{tvm\+::\+Type\+Relation\+Fn} = Typed\+Env\+Func$<$ bool(const Array$<$ Type $>$ \&args, int num\+\_\+inputs, const Attrs \&attrs, const Type\+Reporter \&reporter)$>$
+\begin{DoxyCompactList}\small\item\em User defined type constraint function. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Type relation and function for type inference(checking). 
+

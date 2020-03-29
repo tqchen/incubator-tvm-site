@@ -1,0 +1,76 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="classtvm_1_1tir_1_1FunctionRef" kind="class" language="C++" prot="public">
+    <compoundname>tvm::tir::FunctionRef</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">ObjectRef</basecompoundref>
+    <derivedcompoundref refid="classtvm_1_1te_1_1Operation" prot="public" virt="non-virtual">tvm::te::Operation</derivedcompoundref>
+    <derivedcompoundref refid="classtvm_1_1tir_1_1LoweredFunc" prot="public" virt="non-virtual">tvm::tir::LoweredFunc</derivedcompoundref>
+    <includes refid="tir_2expr_8h" local="no">expr.h</includes>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classtvm_1_1tir_1_1FunctionRef_1a273924d56febd3c08f493584e4cf7b40" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>tvm::tir::FunctionRef::TVM_DEFINE_OBJECT_REF_METHODS</definition>
+        <argsstring>(FunctionRef, ObjectRef, FunctionBaseNode)</argsstring>
+        <name>TVM_DEFINE_OBJECT_REF_METHODS</name>
+        <param>
+          <type><ref refid="classtvm_1_1tir_1_1FunctionRef" kindref="compound">FunctionRef</ref></type>
+        </param>
+        <param>
+          <type>ObjectRef</type>
+        </param>
+        <param>
+          <type><ref refid="classtvm_1_1tir_1_1FunctionBaseNode" kindref="compound">FunctionBaseNode</ref></type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/tir/expr.h" line="928" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>reference to a function </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="5148">
+        <label>tvm::te::Operation</label>
+        <link refid="classtvm_1_1te_1_1Operation"/>
+        <childnode refid="5146" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="5147">
+        <label>ObjectRef</label>
+      </node>
+      <node id="5146">
+        <label>tvm::tir::FunctionRef</label>
+        <link refid="classtvm_1_1tir_1_1FunctionRef"/>
+        <childnode refid="5147" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="5149">
+        <label>tvm::tir::LoweredFunc</label>
+        <link refid="classtvm_1_1tir_1_1LoweredFunc"/>
+        <childnode refid="5146" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="5151">
+        <label>ObjectRef</label>
+      </node>
+      <node id="5150">
+        <label>tvm::tir::FunctionRef</label>
+        <link refid="classtvm_1_1tir_1_1FunctionRef"/>
+        <childnode refid="5151" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="include/tvm/tir/expr.h" line="926" column="1" bodyfile="include/tvm/tir/expr.h" bodystart="926" bodyend="929"/>
+    <listofallmembers>
+      <member refid="classtvm_1_1tir_1_1FunctionRef_1a273924d56febd3c08f493584e4cf7b40" prot="public" virt="non-virtual"><scope>tvm::tir::FunctionRef</scope><name>TVM_DEFINE_OBJECT_REF_METHODS</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

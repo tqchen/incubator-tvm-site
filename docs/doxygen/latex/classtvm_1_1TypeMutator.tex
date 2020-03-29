@@ -1,0 +1,162 @@
+\hypertarget{classtvm_1_1TypeMutator}{}\section{tvm\+:\+:Type\+Mutator Class Reference}
+\label{classtvm_1_1TypeMutator}\index{tvm\+::\+Type\+Mutator@{tvm\+::\+Type\+Mutator}}
+
+
+\hyperlink{classtvm_1_1TypeMutator}{Type\+Mutator} that mutates expressions.  
+
+
+
+
+{\ttfamily \#include $<$type\+\_\+functor.\+h$>$}
+
+
+
+Inheritance diagram for tvm\+:\+:Type\+Mutator\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=210pt]{classtvm_1_1TypeMutator__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for tvm\+:\+:Type\+Mutator\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=210pt]{classtvm_1_1TypeMutator__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classtvm_1_1Type}{Type} \hyperlink{classtvm_1_1TypeMutator_a84e824911927d98e20a338eab8b75a45}{Visit\+Type} (const \hyperlink{classtvm_1_1Type}{Type} \&t) override
+\item 
+\hyperlink{classtvm_1_1Type}{Type} \hyperlink{classtvm_1_1TypeMutator_a76915eced75e531e0ca73ad6882bbaae}{Visit\+Type\+\_\+} (const \hyperlink{classtvm_1_1TypeVarNode}{Type\+Var\+Node} $\ast$op) override
+\item 
+\hyperlink{classtvm_1_1Type}{Type} \hyperlink{classtvm_1_1TypeMutator_a4c7667d35d0a9a28c957165b65536c93}{Visit\+Type\+\_\+} (const \hyperlink{classtvm_1_1TensorTypeNode}{Tensor\+Type\+Node} $\ast$op) override
+\item 
+\hyperlink{classtvm_1_1Type}{Type} \hyperlink{classtvm_1_1TypeMutator_a2a78bda75555650a37a80e1e074d562a}{Visit\+Type\+\_\+} (const \hyperlink{classtvm_1_1IncompleteTypeNode}{Incomplete\+Type\+Node} $\ast$op) override
+\item 
+\hyperlink{classtvm_1_1Type}{Type} \hyperlink{classtvm_1_1TypeMutator_a11e7e2f91d7dd05bee32aee6260eb459}{Visit\+Type\+\_\+} (const \hyperlink{classtvm_1_1FuncTypeNode}{Func\+Type\+Node} $\ast$op) override
+\item 
+\hyperlink{classtvm_1_1Type}{Type} \hyperlink{classtvm_1_1TypeMutator_ac694fbe28eb7026d30c5ca5fa2fb4a1a}{Visit\+Type\+\_\+} (const \hyperlink{classtvm_1_1TupleTypeNode}{Tuple\+Type\+Node} $\ast$op) override
+\item 
+\hyperlink{classtvm_1_1Type}{Type} \hyperlink{classtvm_1_1TypeMutator_a18a04668d3fb464d957f3a26a4274104}{Visit\+Type\+\_\+} (const \hyperlink{classtvm_1_1TypeRelationNode}{Type\+Relation\+Node} $\ast$type\+\_\+rel) override
+\item 
+\hyperlink{classtvm_1_1Type}{Type} \hyperlink{classtvm_1_1TypeMutator_a89bd7a76f5a736defc7f3b0dda664761}{Visit\+Type\+\_\+} (const \hyperlink{classtvm_1_1RelayRefTypeNode}{Relay\+Ref\+Type\+Node} $\ast$op) override
+\item 
+\hyperlink{classtvm_1_1Type}{Type} \hyperlink{classtvm_1_1TypeMutator_ad4ad7209f8789568e5e57870f0b758f0}{Visit\+Type\+\_\+} (const \hyperlink{classtvm_1_1GlobalTypeVarNode}{Global\+Type\+Var\+Node} $\ast$op) override
+\item 
+\hyperlink{classtvm_1_1Type}{Type} \hyperlink{classtvm_1_1TypeMutator_ab270cb7a0d9af50362137c1d68d32276}{Visit\+Type\+\_\+} (const \hyperlink{classtvm_1_1TypeCallNode}{Type\+Call\+Node} $\ast$op) override
+\item 
+\hyperlink{classtvm_1_1Type}{Type} \hyperlink{classtvm_1_1TypeMutator_a9c2d7e1a52faac66f55896ecde3f2211}{Visit\+Type\+\_\+} (const \hyperlink{classtvm_1_1TypeDataNode}{Type\+Data\+Node} $\ast$op) override
+\item 
+\hyperlink{classtvm_1_1Type}{Type} \hyperlink{classtvm_1_1TypeMutator_a8171dc89a947d6224e83e86ce5d06d11}{Visit\+Type\+\_\+} (const \hyperlink{classtvm_1_1PrimTypeNode}{Prim\+Type\+Node} $\ast$op) override
+\item 
+\hyperlink{classtvm_1_1Type}{Type} \hyperlink{classtvm_1_1TypeMutator_a0d7ff530827c63fb3eb18cb720305dca}{Visit\+Type\+\_\+} (const \hyperlink{classtvm_1_1PointerTypeNode}{Pointer\+Type\+Node} $\ast$op) override
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\hyperlink{classtvm_1_1TypeMutator}{Type\+Mutator} that mutates expressions. 
+
+\subsection{Member Function Documentation}
+\index{tvm\+::\+Type\+Mutator@{tvm\+::\+Type\+Mutator}!Visit\+Type@{Visit\+Type}}
+\index{Visit\+Type@{Visit\+Type}!tvm\+::\+Type\+Mutator@{tvm\+::\+Type\+Mutator}}
+\subsubsection[{\texorpdfstring{Visit\+Type(const Type \&t) override}{VisitType(const Type &t) override}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Type} tvm\+::\+Type\+Mutator\+::\+Visit\+Type (
+\begin{DoxyParamCaption}
+\item[{const {\bf Type} \&}]{t}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [override]}}\hypertarget{classtvm_1_1TypeMutator_a84e824911927d98e20a338eab8b75a45}{}\label{classtvm_1_1TypeMutator_a84e824911927d98e20a338eab8b75a45}
+\index{tvm\+::\+Type\+Mutator@{tvm\+::\+Type\+Mutator}!Visit\+Type\+\_\+@{Visit\+Type\+\_\+}}
+\index{Visit\+Type\+\_\+@{Visit\+Type\+\_\+}!tvm\+::\+Type\+Mutator@{tvm\+::\+Type\+Mutator}}
+\subsubsection[{\texorpdfstring{Visit\+Type\+\_\+(const Type\+Var\+Node $\ast$op) override}{VisitType_(const TypeVarNode *op) override}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Type} tvm\+::\+Type\+Mutator\+::\+Visit\+Type\+\_\+ (
+\begin{DoxyParamCaption}
+\item[{const {\bf Type\+Var\+Node} $\ast$}]{op}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [override]}}\hypertarget{classtvm_1_1TypeMutator_a76915eced75e531e0ca73ad6882bbaae}{}\label{classtvm_1_1TypeMutator_a76915eced75e531e0ca73ad6882bbaae}
+\index{tvm\+::\+Type\+Mutator@{tvm\+::\+Type\+Mutator}!Visit\+Type\+\_\+@{Visit\+Type\+\_\+}}
+\index{Visit\+Type\+\_\+@{Visit\+Type\+\_\+}!tvm\+::\+Type\+Mutator@{tvm\+::\+Type\+Mutator}}
+\subsubsection[{\texorpdfstring{Visit\+Type\+\_\+(const Tensor\+Type\+Node $\ast$op) override}{VisitType_(const TensorTypeNode *op) override}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Type} tvm\+::\+Type\+Mutator\+::\+Visit\+Type\+\_\+ (
+\begin{DoxyParamCaption}
+\item[{const {\bf Tensor\+Type\+Node} $\ast$}]{op}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [override]}}\hypertarget{classtvm_1_1TypeMutator_a4c7667d35d0a9a28c957165b65536c93}{}\label{classtvm_1_1TypeMutator_a4c7667d35d0a9a28c957165b65536c93}
+\index{tvm\+::\+Type\+Mutator@{tvm\+::\+Type\+Mutator}!Visit\+Type\+\_\+@{Visit\+Type\+\_\+}}
+\index{Visit\+Type\+\_\+@{Visit\+Type\+\_\+}!tvm\+::\+Type\+Mutator@{tvm\+::\+Type\+Mutator}}
+\subsubsection[{\texorpdfstring{Visit\+Type\+\_\+(const Incomplete\+Type\+Node $\ast$op) override}{VisitType_(const IncompleteTypeNode *op) override}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Type} tvm\+::\+Type\+Mutator\+::\+Visit\+Type\+\_\+ (
+\begin{DoxyParamCaption}
+\item[{const {\bf Incomplete\+Type\+Node} $\ast$}]{op}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [override]}}\hypertarget{classtvm_1_1TypeMutator_a2a78bda75555650a37a80e1e074d562a}{}\label{classtvm_1_1TypeMutator_a2a78bda75555650a37a80e1e074d562a}
+\index{tvm\+::\+Type\+Mutator@{tvm\+::\+Type\+Mutator}!Visit\+Type\+\_\+@{Visit\+Type\+\_\+}}
+\index{Visit\+Type\+\_\+@{Visit\+Type\+\_\+}!tvm\+::\+Type\+Mutator@{tvm\+::\+Type\+Mutator}}
+\subsubsection[{\texorpdfstring{Visit\+Type\+\_\+(const Func\+Type\+Node $\ast$op) override}{VisitType_(const FuncTypeNode *op) override}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Type} tvm\+::\+Type\+Mutator\+::\+Visit\+Type\+\_\+ (
+\begin{DoxyParamCaption}
+\item[{const {\bf Func\+Type\+Node} $\ast$}]{op}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [override]}}\hypertarget{classtvm_1_1TypeMutator_a11e7e2f91d7dd05bee32aee6260eb459}{}\label{classtvm_1_1TypeMutator_a11e7e2f91d7dd05bee32aee6260eb459}
+\index{tvm\+::\+Type\+Mutator@{tvm\+::\+Type\+Mutator}!Visit\+Type\+\_\+@{Visit\+Type\+\_\+}}
+\index{Visit\+Type\+\_\+@{Visit\+Type\+\_\+}!tvm\+::\+Type\+Mutator@{tvm\+::\+Type\+Mutator}}
+\subsubsection[{\texorpdfstring{Visit\+Type\+\_\+(const Tuple\+Type\+Node $\ast$op) override}{VisitType_(const TupleTypeNode *op) override}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Type} tvm\+::\+Type\+Mutator\+::\+Visit\+Type\+\_\+ (
+\begin{DoxyParamCaption}
+\item[{const {\bf Tuple\+Type\+Node} $\ast$}]{op}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [override]}}\hypertarget{classtvm_1_1TypeMutator_ac694fbe28eb7026d30c5ca5fa2fb4a1a}{}\label{classtvm_1_1TypeMutator_ac694fbe28eb7026d30c5ca5fa2fb4a1a}
+\index{tvm\+::\+Type\+Mutator@{tvm\+::\+Type\+Mutator}!Visit\+Type\+\_\+@{Visit\+Type\+\_\+}}
+\index{Visit\+Type\+\_\+@{Visit\+Type\+\_\+}!tvm\+::\+Type\+Mutator@{tvm\+::\+Type\+Mutator}}
+\subsubsection[{\texorpdfstring{Visit\+Type\+\_\+(const Type\+Relation\+Node $\ast$type\+\_\+rel) override}{VisitType_(const TypeRelationNode *type_rel) override}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Type} tvm\+::\+Type\+Mutator\+::\+Visit\+Type\+\_\+ (
+\begin{DoxyParamCaption}
+\item[{const {\bf Type\+Relation\+Node} $\ast$}]{type\+\_\+rel}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [override]}}\hypertarget{classtvm_1_1TypeMutator_a18a04668d3fb464d957f3a26a4274104}{}\label{classtvm_1_1TypeMutator_a18a04668d3fb464d957f3a26a4274104}
+\index{tvm\+::\+Type\+Mutator@{tvm\+::\+Type\+Mutator}!Visit\+Type\+\_\+@{Visit\+Type\+\_\+}}
+\index{Visit\+Type\+\_\+@{Visit\+Type\+\_\+}!tvm\+::\+Type\+Mutator@{tvm\+::\+Type\+Mutator}}
+\subsubsection[{\texorpdfstring{Visit\+Type\+\_\+(const Relay\+Ref\+Type\+Node $\ast$op) override}{VisitType_(const RelayRefTypeNode *op) override}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Type} tvm\+::\+Type\+Mutator\+::\+Visit\+Type\+\_\+ (
+\begin{DoxyParamCaption}
+\item[{const {\bf Relay\+Ref\+Type\+Node} $\ast$}]{op}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [override]}}\hypertarget{classtvm_1_1TypeMutator_a89bd7a76f5a736defc7f3b0dda664761}{}\label{classtvm_1_1TypeMutator_a89bd7a76f5a736defc7f3b0dda664761}
+\index{tvm\+::\+Type\+Mutator@{tvm\+::\+Type\+Mutator}!Visit\+Type\+\_\+@{Visit\+Type\+\_\+}}
+\index{Visit\+Type\+\_\+@{Visit\+Type\+\_\+}!tvm\+::\+Type\+Mutator@{tvm\+::\+Type\+Mutator}}
+\subsubsection[{\texorpdfstring{Visit\+Type\+\_\+(const Global\+Type\+Var\+Node $\ast$op) override}{VisitType_(const GlobalTypeVarNode *op) override}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Type} tvm\+::\+Type\+Mutator\+::\+Visit\+Type\+\_\+ (
+\begin{DoxyParamCaption}
+\item[{const {\bf Global\+Type\+Var\+Node} $\ast$}]{op}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [override]}}\hypertarget{classtvm_1_1TypeMutator_ad4ad7209f8789568e5e57870f0b758f0}{}\label{classtvm_1_1TypeMutator_ad4ad7209f8789568e5e57870f0b758f0}
+\index{tvm\+::\+Type\+Mutator@{tvm\+::\+Type\+Mutator}!Visit\+Type\+\_\+@{Visit\+Type\+\_\+}}
+\index{Visit\+Type\+\_\+@{Visit\+Type\+\_\+}!tvm\+::\+Type\+Mutator@{tvm\+::\+Type\+Mutator}}
+\subsubsection[{\texorpdfstring{Visit\+Type\+\_\+(const Type\+Call\+Node $\ast$op) override}{VisitType_(const TypeCallNode *op) override}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Type} tvm\+::\+Type\+Mutator\+::\+Visit\+Type\+\_\+ (
+\begin{DoxyParamCaption}
+\item[{const {\bf Type\+Call\+Node} $\ast$}]{op}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [override]}}\hypertarget{classtvm_1_1TypeMutator_ab270cb7a0d9af50362137c1d68d32276}{}\label{classtvm_1_1TypeMutator_ab270cb7a0d9af50362137c1d68d32276}
+\index{tvm\+::\+Type\+Mutator@{tvm\+::\+Type\+Mutator}!Visit\+Type\+\_\+@{Visit\+Type\+\_\+}}
+\index{Visit\+Type\+\_\+@{Visit\+Type\+\_\+}!tvm\+::\+Type\+Mutator@{tvm\+::\+Type\+Mutator}}
+\subsubsection[{\texorpdfstring{Visit\+Type\+\_\+(const Type\+Data\+Node $\ast$op) override}{VisitType_(const TypeDataNode *op) override}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Type} tvm\+::\+Type\+Mutator\+::\+Visit\+Type\+\_\+ (
+\begin{DoxyParamCaption}
+\item[{const {\bf Type\+Data\+Node} $\ast$}]{op}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [override]}}\hypertarget{classtvm_1_1TypeMutator_a9c2d7e1a52faac66f55896ecde3f2211}{}\label{classtvm_1_1TypeMutator_a9c2d7e1a52faac66f55896ecde3f2211}
+\index{tvm\+::\+Type\+Mutator@{tvm\+::\+Type\+Mutator}!Visit\+Type\+\_\+@{Visit\+Type\+\_\+}}
+\index{Visit\+Type\+\_\+@{Visit\+Type\+\_\+}!tvm\+::\+Type\+Mutator@{tvm\+::\+Type\+Mutator}}
+\subsubsection[{\texorpdfstring{Visit\+Type\+\_\+(const Prim\+Type\+Node $\ast$op) override}{VisitType_(const PrimTypeNode *op) override}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Type} tvm\+::\+Type\+Mutator\+::\+Visit\+Type\+\_\+ (
+\begin{DoxyParamCaption}
+\item[{const {\bf Prim\+Type\+Node} $\ast$}]{op}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [override]}}\hypertarget{classtvm_1_1TypeMutator_a8171dc89a947d6224e83e86ce5d06d11}{}\label{classtvm_1_1TypeMutator_a8171dc89a947d6224e83e86ce5d06d11}
+\index{tvm\+::\+Type\+Mutator@{tvm\+::\+Type\+Mutator}!Visit\+Type\+\_\+@{Visit\+Type\+\_\+}}
+\index{Visit\+Type\+\_\+@{Visit\+Type\+\_\+}!tvm\+::\+Type\+Mutator@{tvm\+::\+Type\+Mutator}}
+\subsubsection[{\texorpdfstring{Visit\+Type\+\_\+(const Pointer\+Type\+Node $\ast$op) override}{VisitType_(const PointerTypeNode *op) override}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Type} tvm\+::\+Type\+Mutator\+::\+Visit\+Type\+\_\+ (
+\begin{DoxyParamCaption}
+\item[{const {\bf Pointer\+Type\+Node} $\ast$}]{op}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [override]}}\hypertarget{classtvm_1_1TypeMutator_a0d7ff530827c63fb3eb18cb720305dca}{}\label{classtvm_1_1TypeMutator_a0d7ff530827c63fb3eb18cb720305dca}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+include/tvm/ir/\hyperlink{type__functor_8h}{type\+\_\+functor.\+h}\end{DoxyCompactItemize}

@@ -1,0 +1,181 @@
+\hypertarget{classtvm_1_1Op}{}\section{tvm\+:\+:Op Class Reference}
+\label{classtvm_1_1Op}\index{tvm\+::\+Op@{tvm\+::\+Op}}
+
+
+Managed reference class to \hyperlink{classtvm_1_1OpNode}{Op\+Node}.  
+
+
+
+
+{\ttfamily \#include $<$op.\+h$>$}
+
+
+
+Inheritance diagram for tvm\+:\+:Op\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=230pt]{classtvm_1_1Op__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for tvm\+:\+:Op\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=230pt]{classtvm_1_1Op__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+using \hyperlink{classtvm_1_1Op_a03bdb10e7fe5aac4e638523ab030c1e4}{Container\+Type} = \hyperlink{classtvm_1_1OpNode}{Op\+Node}
+\begin{DoxyCompactList}\small\item\em specify container node \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classtvm_1_1Op_afde3bc925d4d4c7ea09d4da50fc32c66}{Op} ()
+\begin{DoxyCompactList}\small\item\em default constructor \end{DoxyCompactList}\item 
+\hyperlink{classtvm_1_1Op_abaafec14f5f05cc8bd3cdbf99eeb53d5}{Op} (Object\+Ptr$<$ Object $>$ n)
+\begin{DoxyCompactList}\small\item\em constructor from node pointer \end{DoxyCompactList}\item 
+const \hyperlink{classtvm_1_1OpNode}{Op\+Node} $\ast$ \hyperlink{classtvm_1_1Op_adecc41ad59962134dce22a8211ee19f2}{operator-\/$>$} () const 
+\begin{DoxyCompactList}\small\item\em access the internal node container \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\footnotesize template$<$typename Value\+Type $>$ }\\static \hyperlink{classtvm_1_1OpMap}{Op\+Map}$<$ Value\+Type $>$ \hyperlink{classtvm_1_1Op_ab1d0bfd024cedf156bf59cccfc29bd59}{Get\+Attr} (const std\+::string \&attr\+\_\+name)
+\begin{DoxyCompactList}\small\item\em Get additional registered attribute about operators. If nothing has been registered, an empty \hyperlink{classtvm_1_1OpMap}{Op\+Map} will be returned. \end{DoxyCompactList}\item 
+static bool \hyperlink{classtvm_1_1Op_a51002130d653fea8a25d4080a84037f6}{Has\+Attr} (const std\+::string \&attr\+\_\+name)
+\begin{DoxyCompactList}\small\item\em Checks if an attr is present in the registry. \end{DoxyCompactList}\item 
+static const \hyperlink{classtvm_1_1Op}{Op} \& \hyperlink{classtvm_1_1Op_a0d3633a44d1d1b210520b72056d1e449}{Get} (const std\+::string \&op\+\_\+name)
+\begin{DoxyCompactList}\small\item\em Get an \hyperlink{classtvm_1_1Op}{Op} for a given operator name. Will raise an error if the op has not been registered. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Managed reference class to \hyperlink{classtvm_1_1OpNode}{Op\+Node}. 
+
+\begin{DoxySeeAlso}{See also}
+\hyperlink{classtvm_1_1OpNode}{Op\+Node} 
+\end{DoxySeeAlso}
+
+
+\subsection{Member Typedef Documentation}
+\index{tvm\+::\+Op@{tvm\+::\+Op}!Container\+Type@{Container\+Type}}
+\index{Container\+Type@{Container\+Type}!tvm\+::\+Op@{tvm\+::\+Op}}
+\subsubsection[{\texorpdfstring{Container\+Type}{ContainerType}}]{\setlength{\rightskip}{0pt plus 5cm}using {\bf tvm\+::\+Op\+::\+Container\+Type} =  {\bf Op\+Node}}\hypertarget{classtvm_1_1Op_a03bdb10e7fe5aac4e638523ab030c1e4}{}\label{classtvm_1_1Op_a03bdb10e7fe5aac4e638523ab030c1e4}
+
+
+specify container node 
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\index{tvm\+::\+Op@{tvm\+::\+Op}!Op@{Op}}
+\index{Op@{Op}!tvm\+::\+Op@{tvm\+::\+Op}}
+\subsubsection[{\texorpdfstring{Op()}{Op()}}]{\setlength{\rightskip}{0pt plus 5cm}tvm\+::\+Op\+::\+Op (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classtvm_1_1Op_afde3bc925d4d4c7ea09d4da50fc32c66}{}\label{classtvm_1_1Op_afde3bc925d4d4c7ea09d4da50fc32c66}
+
+
+default constructor 
+
+\index{tvm\+::\+Op@{tvm\+::\+Op}!Op@{Op}}
+\index{Op@{Op}!tvm\+::\+Op@{tvm\+::\+Op}}
+\subsubsection[{\texorpdfstring{Op(\+Object\+Ptr$<$ Object $>$ n)}{Op(ObjectPtr< Object > n)}}]{\setlength{\rightskip}{0pt plus 5cm}tvm\+::\+Op\+::\+Op (
+\begin{DoxyParamCaption}
+\item[{Object\+Ptr$<$ Object $>$}]{n}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [explicit]}}\hypertarget{classtvm_1_1Op_abaafec14f5f05cc8bd3cdbf99eeb53d5}{}\label{classtvm_1_1Op_abaafec14f5f05cc8bd3cdbf99eeb53d5}
+
+
+constructor from node pointer 
+
+
+
+\subsection{Member Function Documentation}
+\index{tvm\+::\+Op@{tvm\+::\+Op}!Get@{Get}}
+\index{Get@{Get}!tvm\+::\+Op@{tvm\+::\+Op}}
+\subsubsection[{\texorpdfstring{Get(const std\+::string \&op\+\_\+name)}{Get(const std::string &op_name)}}]{\setlength{\rightskip}{0pt plus 5cm}static const {\bf Op}\& tvm\+::\+Op\+::\+Get (
+\begin{DoxyParamCaption}
+\item[{const std\+::string \&}]{op\+\_\+name}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}\hypertarget{classtvm_1_1Op_a0d3633a44d1d1b210520b72056d1e449}{}\label{classtvm_1_1Op_a0d3633a44d1d1b210520b72056d1e449}
+
+
+Get an \hyperlink{classtvm_1_1Op}{Op} for a given operator name. Will raise an error if the op has not been registered. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em op\+\_\+name} & Name of the operator. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Pointer to a \hyperlink{classtvm_1_1Op}{Op}, valid throughout program lifetime. 
+\end{DoxyReturn}
+\index{tvm\+::\+Op@{tvm\+::\+Op}!Get\+Attr@{Get\+Attr}}
+\index{Get\+Attr@{Get\+Attr}!tvm\+::\+Op@{tvm\+::\+Op}}
+\subsubsection[{\texorpdfstring{Get\+Attr(const std\+::string \&attr\+\_\+name)}{GetAttr(const std::string &attr_name)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Value\+Type $>$ {\bf Op\+Map}$<$ Value\+Type $>$ tvm\+::\+Op\+::\+Get\+Attr (
+\begin{DoxyParamCaption}
+\item[{const std\+::string \&}]{attr\+\_\+name}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}\hypertarget{classtvm_1_1Op_ab1d0bfd024cedf156bf59cccfc29bd59}{}\label{classtvm_1_1Op_ab1d0bfd024cedf156bf59cccfc29bd59}
+
+
+Get additional registered attribute about operators. If nothing has been registered, an empty \hyperlink{classtvm_1_1OpMap}{Op\+Map} will be returned. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em attr\+\_\+name} & The name of the attribute. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+An \hyperlink{classtvm_1_1OpMap}{Op\+Map} of specified attr\+\_\+name. 
+\end{DoxyReturn}
+
+\begin{DoxyTemplParams}{Template Parameters}
+{\em Value\+Type} & The type of the attribute. \\
+\hline
+\end{DoxyTemplParams}
+\index{tvm\+::\+Op@{tvm\+::\+Op}!Has\+Attr@{Has\+Attr}}
+\index{Has\+Attr@{Has\+Attr}!tvm\+::\+Op@{tvm\+::\+Op}}
+\subsubsection[{\texorpdfstring{Has\+Attr(const std\+::string \&attr\+\_\+name)}{HasAttr(const std::string &attr_name)}}]{\setlength{\rightskip}{0pt plus 5cm}bool tvm\+::\+Op\+::\+Has\+Attr (
+\begin{DoxyParamCaption}
+\item[{const std\+::string \&}]{attr\+\_\+name}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}\hypertarget{classtvm_1_1Op_a51002130d653fea8a25d4080a84037f6}{}\label{classtvm_1_1Op_a51002130d653fea8a25d4080a84037f6}
+
+
+Checks if an attr is present in the registry. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em attr\+\_\+name} & The name of the attribute. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+bool True if the attr is present. 
+\end{DoxyReturn}
+\index{tvm\+::\+Op@{tvm\+::\+Op}!operator-\/$>$@{operator-\/$>$}}
+\index{operator-\/$>$@{operator-\/$>$}!tvm\+::\+Op@{tvm\+::\+Op}}
+\subsubsection[{\texorpdfstring{operator-\/$>$() const }{operator->() const }}]{\setlength{\rightskip}{0pt plus 5cm}const {\bf Op\+Node} $\ast$ tvm\+::\+Op\+::operator-\/$>$ (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classtvm_1_1Op_adecc41ad59962134dce22a8211ee19f2}{}\label{classtvm_1_1Op_adecc41ad59962134dce22a8211ee19f2}
+
+
+access the internal node container 
+
+\begin{DoxyReturn}{Returns}
+the pointer to the internal node container 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+include/tvm/ir/\hyperlink{ir_2op_8h}{op.\+h}\end{DoxyCompactItemize}

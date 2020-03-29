@@ -1,0 +1,15 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="dir_5da96592f3a7c442b838b075c58254c2" kind="dir">
+    <compoundname>include/tvm/target</compoundname>
+    <innerfile refid="codegen_8h">codegen.h</innerfile>
+    <innerfile refid="generic__func_8h">generic_func.h</innerfile>
+    <innerfile refid="target_8h">target.h</innerfile>
+    <innerfile refid="target__info_8h">target_info.h</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="include/tvm/target/"/>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,1166 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="ir_2op_8h" kind="file" language="C++">
+    <compoundname>op.h</compoundname>
+    <includes local="no">dmlc/registry.h</includes>
+    <includes refid="ir_2attrs_8h" local="no">tvm/ir/attrs.h</includes>
+    <includes refid="registry_8h" local="no">tvm/runtime/registry.h</includes>
+    <includes refid="ir_2expr_8h" local="no">tvm/ir/expr.h</includes>
+    <includes refid="ir_2type_8h" local="no">tvm/ir/type.h</includes>
+    <includes refid="type__relation_8h" local="no">tvm/ir/type_relation.h</includes>
+    <includes local="no">string</includes>
+    <includes local="no">utility</includes>
+    <includes local="no">vector</includes>
+    <includedby refid="relay_2expr_8h" local="no">include/tvm/relay/expr.h</includedby>
+    <includedby refid="relay_2op_8h" local="no">include/tvm/relay/op.h</includedby>
+    <incdepgraph>
+      <node id="11051">
+        <label>tvm/ir/span.h</label>
+        <link refid="span_8h"/>
+        <childnode refid="11017" relation="include">
+        </childnode>
+        <childnode refid="11027" relation="include">
+        </childnode>
+        <childnode refid="11024" relation="include">
+        </childnode>
+      </node>
+      <node id="11026">
+        <label>atomic</label>
+      </node>
+      <node id="11041">
+        <label>functional</label>
+      </node>
+      <node id="11043">
+        <label>limits</label>
+      </node>
+      <node id="11057">
+        <label>tvm/ir/function.h</label>
+        <link refid="ir_2function_8h"/>
+        <childnode refid="11016" relation="include">
+        </childnode>
+        <childnode refid="11014" relation="include">
+        </childnode>
+        <childnode refid="11023" relation="include">
+        </childnode>
+        <childnode refid="11024" relation="include">
+        </childnode>
+      </node>
+      <node id="11032">
+        <label>tvm/runtime/module.h</label>
+        <link refid="runtime_2module_8h"/>
+        <childnode refid="11033" relation="include">
+        </childnode>
+        <childnode refid="11019" relation="include">
+        </childnode>
+        <childnode refid="11017" relation="include">
+        </childnode>
+        <childnode refid="11028" relation="include">
+        </childnode>
+        <childnode refid="11034" relation="include">
+        </childnode>
+        <childnode refid="11035" relation="include">
+        </childnode>
+        <childnode refid="11024" relation="include">
+        </childnode>
+        <childnode refid="11036" relation="include">
+        </childnode>
+        <childnode refid="11031" relation="include">
+        </childnode>
+      </node>
+      <node id="11031">
+        <label>tvm/runtime/packed_func.h</label>
+        <link refid="packed__func_8h"/>
+        <childnode refid="11018" relation="include">
+        </childnode>
+        <childnode refid="11019" relation="include">
+        </childnode>
+        <childnode refid="11032" relation="include">
+        </childnode>
+        <childnode refid="11037" relation="include">
+        </childnode>
+        <childnode refid="11040" relation="include">
+        </childnode>
+        <childnode refid="11017" relation="include">
+        </childnode>
+        <childnode refid="11041" relation="include">
+        </childnode>
+        <childnode refid="11042" relation="include">
+        </childnode>
+        <childnode refid="11035" relation="include">
+        </childnode>
+        <childnode refid="11024" relation="include">
+        </childnode>
+        <childnode refid="11043" relation="include">
+        </childnode>
+        <childnode refid="11034" relation="include">
+        </childnode>
+        <childnode refid="11025" relation="include">
+        </childnode>
+        <childnode refid="11023" relation="include">
+        </childnode>
+      </node>
+      <node id="11045">
+        <label>tvm/node/functor.h</label>
+        <link refid="functor_8h"/>
+        <childnode refid="11018" relation="include">
+        </childnode>
+        <childnode refid="11017" relation="include">
+        </childnode>
+        <childnode refid="11035" relation="include">
+        </childnode>
+        <childnode refid="11023" relation="include">
+        </childnode>
+        <childnode refid="11025" relation="include">
+        </childnode>
+      </node>
+      <node id="11060">
+        <label>tvm/ir/env_func.h</label>
+        <link refid="env__func_8h"/>
+        <childnode refid="11030" relation="include">
+        </childnode>
+        <childnode refid="11024" relation="include">
+        </childnode>
+        <childnode refid="11025" relation="include">
+        </childnode>
+      </node>
+      <node id="11055">
+        <label>tvm/ir/type_relation.h</label>
+        <link refid="type__relation_8h"/>
+        <childnode refid="11052" relation="include">
+        </childnode>
+        <childnode refid="11056" relation="include">
+        </childnode>
+        <childnode refid="11060" relation="include">
+        </childnode>
+        <childnode refid="11014" relation="include">
+        </childnode>
+      </node>
+      <node id="11017">
+        <label>tvm/runtime/object.h</label>
+        <link refid="object_8h"/>
+        <childnode refid="11018" relation="include">
+        </childnode>
+        <childnode refid="11019" relation="include">
+        </childnode>
+        <childnode refid="11023" relation="include">
+        </childnode>
+        <childnode refid="11024" relation="include">
+        </childnode>
+        <childnode refid="11025" relation="include">
+        </childnode>
+        <childnode refid="11026" relation="include">
+        </childnode>
+      </node>
+      <node id="11021">
+        <label>stdint.h</label>
+      </node>
+      <node id="11037">
+        <label>tvm/runtime/ndarray.h</label>
+        <link refid="ndarray_8h"/>
+        <childnode refid="11019" relation="include">
+        </childnode>
+        <childnode refid="11017" relation="include">
+        </childnode>
+        <childnode refid="11038" relation="include">
+        </childnode>
+        <childnode refid="11026" relation="include">
+        </childnode>
+        <childnode refid="11035" relation="include">
+        </childnode>
+        <childnode refid="11025" relation="include">
+        </childnode>
+      </node>
+      <node id="11048">
+        <label>tvm/node/structural_hash.h</label>
+        <link refid="structural__hash_8h"/>
+        <childnode refid="11040" relation="include">
+        </childnode>
+        <childnode refid="11045" relation="include">
+        </childnode>
+        <childnode refid="11046" relation="include">
+        </childnode>
+        <childnode refid="11024" relation="include">
+        </childnode>
+        <childnode refid="11041" relation="include">
+        </childnode>
+      </node>
+      <node id="11024">
+        <label>string</label>
+      </node>
+      <node id="11015">
+        <label>dmlc/common.h</label>
+      </node>
+      <node id="11049">
+        <label>tvm/node/repr_printer.h</label>
+        <link refid="repr__printer_8h"/>
+        <childnode refid="11045" relation="include">
+        </childnode>
+        <childnode refid="11050" relation="include">
+        </childnode>
+      </node>
+      <node id="11046">
+        <label>tvm/node/container.h</label>
+        <link refid="node_2container_8h"/>
+        <childnode refid="11017" relation="include">
+        </childnode>
+        <childnode refid="11028" relation="include">
+        </childnode>
+        <childnode refid="11031" relation="include">
+        </childnode>
+        <childnode refid="11023" relation="include">
+        </childnode>
+        <childnode refid="11035" relation="include">
+        </childnode>
+        <childnode refid="11047" relation="include">
+        </childnode>
+        <childnode refid="11036" relation="include">
+        </childnode>
+        <childnode refid="11025" relation="include">
+        </childnode>
+        <childnode refid="11024" relation="include">
+        </childnode>
+      </node>
+      <node id="11059">
+        <label>unordered_set</label>
+      </node>
+      <node id="11022">
+        <label>stddef.h</label>
+      </node>
+      <node id="11014">
+        <label>tvm/ir/attrs.h</label>
+        <link refid="ir_2attrs_8h"/>
+        <childnode refid="11015" relation="include">
+        </childnode>
+        <childnode refid="11016" relation="include">
+        </childnode>
+        <childnode refid="11031" relation="include">
+        </childnode>
+        <childnode refid="11036" relation="include">
+        </childnode>
+        <childnode refid="11035" relation="include">
+        </childnode>
+        <childnode refid="11041" relation="include">
+        </childnode>
+        <childnode refid="11023" relation="include">
+        </childnode>
+        <childnode refid="11024" relation="include">
+        </childnode>
+        <childnode refid="11025" relation="include">
+        </childnode>
+      </node>
+      <node id="11016">
+        <label>tvm/ir/expr.h</label>
+        <link refid="ir_2expr_8h"/>
+        <childnode refid="11017" relation="include">
+        </childnode>
+        <childnode refid="11027" relation="include">
+        </childnode>
+        <childnode refid="11046" relation="include">
+        </childnode>
+        <childnode refid="11051" relation="include">
+        </childnode>
+        <childnode refid="11052" relation="include">
+        </childnode>
+        <childnode refid="11024" relation="include">
+        </childnode>
+        <childnode refid="11053" relation="include">
+        </childnode>
+        <childnode refid="11043" relation="include">
+        </childnode>
+        <childnode refid="11023" relation="include">
+        </childnode>
+      </node>
+      <node id="11058">
+        <label>tvm/ir/adt.h</label>
+        <link refid="ir_2adt_8h"/>
+        <childnode refid="11017" relation="include">
+        </childnode>
+        <childnode refid="11027" relation="include">
+        </childnode>
+        <childnode refid="11046" relation="include">
+        </childnode>
+        <childnode refid="11016" relation="include">
+        </childnode>
+        <childnode refid="11052" relation="include">
+        </childnode>
+        <childnode refid="11024" relation="include">
+        </childnode>
+      </node>
+      <node id="11042">
+        <label>tuple</label>
+      </node>
+      <node id="11018">
+        <label>dmlc/logging.h</label>
+      </node>
+      <node id="11035">
+        <label>vector</label>
+      </node>
+      <node id="11044">
+        <label>tvm/node/structural_equal.h</label>
+        <link refid="structural__equal_8h"/>
+        <childnode refid="11040" relation="include">
+        </childnode>
+        <childnode refid="11045" relation="include">
+        </childnode>
+        <childnode refid="11046" relation="include">
+        </childnode>
+        <childnode refid="11024" relation="include">
+        </childnode>
+      </node>
+      <node id="11033">
+        <label>dmlc/io.h</label>
+      </node>
+      <node id="11019">
+        <label>tvm/runtime/c_runtime_api.h</label>
+        <link refid="c__runtime__api_8h"/>
+        <childnode refid="11020" relation="include">
+        </childnode>
+        <childnode refid="11021" relation="include">
+        </childnode>
+        <childnode refid="11022" relation="include">
+        </childnode>
+      </node>
+      <node id="11052">
+        <label>tvm/ir/type.h</label>
+        <link refid="ir_2type_8h"/>
+        <childnode refid="11017" relation="include">
+        </childnode>
+        <childnode refid="11040" relation="include">
+        </childnode>
+        <childnode refid="11027" relation="include">
+        </childnode>
+        <childnode refid="11046" relation="include">
+        </childnode>
+        <childnode refid="11051" relation="include">
+        </childnode>
+        <childnode refid="11024" relation="include">
+        </childnode>
+      </node>
+      <node id="11025">
+        <label>utility</label>
+      </node>
+      <node id="11056">
+        <label>tvm/ir/module.h</label>
+        <link refid="ir_2module_8h"/>
+        <childnode refid="11052" relation="include">
+        </childnode>
+        <childnode refid="11016" relation="include">
+        </childnode>
+        <childnode refid="11057" relation="include">
+        </childnode>
+        <childnode refid="11058" relation="include">
+        </childnode>
+        <childnode refid="11024" relation="include">
+        </childnode>
+        <childnode refid="11035" relation="include">
+        </childnode>
+        <childnode refid="11036" relation="include">
+        </childnode>
+        <childnode refid="11059" relation="include">
+        </childnode>
+      </node>
+      <node id="11027">
+        <label>tvm/node/node.h</label>
+        <link refid="node_8h"/>
+        <childnode refid="11019" relation="include">
+        </childnode>
+        <childnode refid="11017" relation="include">
+        </childnode>
+        <childnode refid="11028" relation="include">
+        </childnode>
+        <childnode refid="11030" relation="include">
+        </childnode>
+        <childnode refid="11049" relation="include">
+        </childnode>
+        <childnode refid="11046" relation="include">
+        </childnode>
+        <childnode refid="11044" relation="include">
+        </childnode>
+        <childnode refid="11048" relation="include">
+        </childnode>
+        <childnode refid="11024" relation="include">
+        </childnode>
+        <childnode refid="11035" relation="include">
+        </childnode>
+        <childnode refid="11025" relation="include">
+        </childnode>
+        <childnode refid="11023" relation="include">
+        </childnode>
+      </node>
+      <node id="11039">
+        <label>dmlc/serializer.h</label>
+      </node>
+      <node id="11012">
+        <label>include/tvm/ir/op.h</label>
+        <link refid="ir/op.h"/>
+        <childnode refid="11013" relation="include">
+        </childnode>
+        <childnode refid="11014" relation="include">
+        </childnode>
+        <childnode refid="11054" relation="include">
+        </childnode>
+        <childnode refid="11016" relation="include">
+        </childnode>
+        <childnode refid="11052" relation="include">
+        </childnode>
+        <childnode refid="11055" relation="include">
+        </childnode>
+        <childnode refid="11024" relation="include">
+        </childnode>
+        <childnode refid="11025" relation="include">
+        </childnode>
+        <childnode refid="11035" relation="include">
+        </childnode>
+      </node>
+      <node id="11029">
+        <label>cstdlib</label>
+      </node>
+      <node id="11050">
+        <label>iostream</label>
+      </node>
+      <node id="11038">
+        <label>tvm/runtime/serializer.h</label>
+        <link refid="serializer_8h"/>
+        <childnode refid="11033" relation="include">
+        </childnode>
+        <childnode refid="11039" relation="include">
+        </childnode>
+        <childnode refid="11019" relation="include">
+        </childnode>
+        <childnode refid="11037" relation="include">
+        </childnode>
+      </node>
+      <node id="11036">
+        <label>unordered_map</label>
+      </node>
+      <node id="11030">
+        <label>tvm/node/reflection.h</label>
+        <link refid="reflection_8h"/>
+        <childnode refid="11019" relation="include">
+        </childnode>
+        <childnode refid="11017" relation="include">
+        </childnode>
+        <childnode refid="11028" relation="include">
+        </childnode>
+        <childnode refid="11031" relation="include">
+        </childnode>
+        <childnode refid="11037" relation="include">
+        </childnode>
+        <childnode refid="11040" relation="include">
+        </childnode>
+        <childnode refid="11044" relation="include">
+        </childnode>
+        <childnode refid="11048" relation="include">
+        </childnode>
+        <childnode refid="11035" relation="include">
+        </childnode>
+        <childnode refid="11024" relation="include">
+        </childnode>
+        <childnode refid="11023" relation="include">
+        </childnode>
+      </node>
+      <node id="11028">
+        <label>tvm/runtime/memory.h</label>
+        <link refid="runtime_2memory_8h"/>
+        <childnode refid="11017" relation="include">
+        </childnode>
+        <childnode refid="11029" relation="include">
+        </childnode>
+        <childnode refid="11025" relation="include">
+        </childnode>
+        <childnode refid="11023" relation="include">
+        </childnode>
+      </node>
+      <node id="11054">
+        <label>tvm/runtime/registry.h</label>
+        <link refid="registry_8h"/>
+        <childnode refid="11031" relation="include">
+        </childnode>
+        <childnode refid="11024" relation="include">
+        </childnode>
+        <childnode refid="11035" relation="include">
+        </childnode>
+        <childnode refid="11025" relation="include">
+        </childnode>
+      </node>
+      <node id="11013">
+        <label>dmlc/registry.h</label>
+      </node>
+      <node id="11040">
+        <label>tvm/runtime/data_type.h</label>
+        <link refid="data__type_8h"/>
+        <childnode refid="11019" relation="include">
+        </childnode>
+        <childnode refid="11018" relation="include">
+        </childnode>
+        <childnode refid="11023" relation="include">
+        </childnode>
+      </node>
+      <node id="11023">
+        <label>type_traits</label>
+      </node>
+      <node id="11053">
+        <label>algorithm</label>
+      </node>
+      <node id="11020">
+        <label>dlpack/dlpack.h</label>
+      </node>
+      <node id="11034">
+        <label>memory</label>
+      </node>
+      <node id="11047">
+        <label>initializer_list</label>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="11074">
+        <label>include/tvm/relay/interpreter.h</label>
+        <link refid="interpreter_8h"/>
+      </node>
+      <node id="11064">
+        <label>include/tvm/relay/adt.h</label>
+        <link refid="relay_2adt_8h"/>
+        <childnode refid="11063" relation="include">
+        </childnode>
+        <childnode refid="11065" relation="include">
+        </childnode>
+        <childnode refid="11066" relation="include">
+        </childnode>
+        <childnode refid="11067" relation="include">
+        </childnode>
+      </node>
+      <node id="11071">
+        <label>include/tvm/relay/qnn/transform.h</label>
+        <link refid="include_2tvm_2relay_2qnn_2transform_8h"/>
+      </node>
+      <node id="11062">
+        <label>include/tvm/relay/expr.h</label>
+        <link refid="relay_2expr_8h"/>
+        <childnode refid="11063" relation="include">
+        </childnode>
+        <childnode refid="11064" relation="include">
+        </childnode>
+        <childnode refid="11065" relation="include">
+        </childnode>
+        <childnode refid="11068" relation="include">
+        </childnode>
+        <childnode refid="11069" relation="include">
+        </childnode>
+        <childnode refid="11066" relation="include">
+        </childnode>
+        <childnode refid="11072" relation="include">
+        </childnode>
+        <childnode refid="11073" relation="include">
+        </childnode>
+        <childnode refid="11074" relation="include">
+        </childnode>
+        <childnode refid="11075" relation="include">
+        </childnode>
+        <childnode refid="11076" relation="include">
+        </childnode>
+        <childnode refid="11077" relation="include">
+        </childnode>
+        <childnode refid="11067" relation="include">
+        </childnode>
+        <childnode refid="11070" relation="include">
+        </childnode>
+      </node>
+      <node id="11063">
+        <label>include/tvm/ir/type_functor.h</label>
+        <link refid="type__functor_8h"/>
+      </node>
+      <node id="11069">
+        <label>include/tvm/relay/attrs/transform.h</label>
+        <link refid="include_2tvm_2relay_2attrs_2transform_8h"/>
+        <childnode refid="11070" relation="include">
+        </childnode>
+      </node>
+      <node id="11067">
+        <label>include/tvm/relay/pattern_functor.h</label>
+        <link refid="pattern__functor_8h"/>
+      </node>
+      <node id="11073">
+        <label>include/tvm/relay/function.h</label>
+        <link refid="relay_2function_8h"/>
+        <childnode refid="11065" relation="include">
+        </childnode>
+        <childnode refid="11066" relation="include">
+        </childnode>
+        <childnode refid="11070" relation="include">
+        </childnode>
+      </node>
+      <node id="11068">
+        <label>include/tvm/relay/attrs/memory.h</label>
+        <link refid="relay_2attrs_2memory_8h"/>
+      </node>
+      <node id="11072">
+        <label>include/tvm/relay/feature.h</label>
+        <link refid="feature_8h"/>
+      </node>
+      <node id="11070">
+        <label>include/tvm/relay/transform.h</label>
+        <link refid="include_2tvm_2relay_2transform_8h"/>
+        <childnode refid="11071" relation="include">
+        </childnode>
+      </node>
+      <node id="11066">
+        <label>include/tvm/relay/expr_functor.h</label>
+        <link refid="relay_2expr__functor_8h"/>
+      </node>
+      <node id="11061">
+        <label>include/tvm/ir/op.h</label>
+        <link refid="ir/op.h"/>
+        <childnode refid="11062" relation="include">
+        </childnode>
+        <childnode refid="11075" relation="include">
+        </childnode>
+      </node>
+      <node id="11076">
+        <label>include/tvm/relay/op_attr_types.h</label>
+        <link refid="op__attr__types_8h"/>
+        <childnode refid="11077" relation="include">
+        </childnode>
+        <childnode refid="11070" relation="include">
+        </childnode>
+      </node>
+      <node id="11065">
+        <label>include/tvm/relay/analysis.h</label>
+        <link refid="analysis_8h"/>
+      </node>
+      <node id="11075">
+        <label>include/tvm/relay/op.h</label>
+        <link refid="relay_2op_8h"/>
+        <childnode refid="11066" relation="include">
+        </childnode>
+        <childnode refid="11067" relation="include">
+        </childnode>
+        <childnode refid="11070" relation="include">
+        </childnode>
+      </node>
+      <node id="11077">
+        <label>include/tvm/relay/op_strategy.h</label>
+        <link refid="op__strategy_8h"/>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="classtvm_1_1OpMap" prot="public">tvm::OpMap</innerclass>
+    <innerclass refid="classtvm_1_1OpNode" prot="public">tvm::OpNode</innerclass>
+    <innerclass refid="classtvm_1_1Op" prot="public">tvm::Op</innerclass>
+    <innerclass refid="classtvm_1_1OpRegistry" prot="public">tvm::OpRegistry</innerclass>
+    <innerclass refid="classtvm_1_1GenericOpMap" prot="public">tvm::GenericOpMap</innerclass>
+    <innerclass refid="classtvm_1_1OpMap" prot="public">tvm::OpMap</innerclass>
+    <innernamespace refid="namespacetvm">tvm</innernamespace>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="ir_2op_8h_1a013dedecd9c6f457ed4ecc475fbdbd50" prot="public" static="no">
+        <name>TVM_STRINGIZE_DETAIL</name>
+        <param><defname>x</defname></param>
+        <initializer>#x</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/ir/op.h" line="404" column="9" bodyfile="include/tvm/ir/op.h" bodystart="404" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="ir_2op_8h_1a9695ac0f55d84dc1188cdf29c3c58454" prot="public" static="no">
+        <name>TVM_STRINGIZE</name>
+        <param><defname>x</defname></param>
+        <initializer><ref refid="ir_2op_8h_1a013dedecd9c6f457ed4ecc475fbdbd50" kindref="member">TVM_STRINGIZE_DETAIL</ref>(x)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/ir/op.h" line="405" column="9" bodyfile="include/tvm/ir/op.h" bodystart="405" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="ir_2op_8h_1aa26ce86513967e27c7571bf70cb8a57e" prot="public" static="no">
+        <name>TVM_DESCRIBE</name>
+        <param><defname>...</defname></param>
+        <initializer>describe(__VA_ARGS__ &quot;\n\nFrom:&quot; __FILE__ &quot;:&quot; <ref refid="ir_2op_8h_1a9695ac0f55d84dc1188cdf29c3c58454" kindref="member">TVM_STRINGIZE</ref>(__LINE__))</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/ir/op.h" line="406" column="9" bodyfile="include/tvm/ir/op.h" bodystart="406" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="ir_2op_8h_1a4658d181c38630e35f37c98fd1b0bde9" prot="public" static="no">
+        <name>TVM_ADD_FILELINE</name>
+        <initializer>&quot;\n\nDefined in &quot; __FILE__ &quot;:L&quot; TVM_STRINGIZE(__LINE__)</initializer>
+        <briefdescription>
+<para>Macro to include current line as string. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/ir/op.h" line="410" column="9" bodyfile="include/tvm/ir/op.h" bodystart="410" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="ir_2op_8h_1ab5474fc13be62edade1979771c0c2a49" prot="public" static="no">
+        <name>TVM_OP_REGISTER_VAR_DEF</name>
+        <initializer>static DMLC_ATTRIBUTE_UNUSED ::<ref refid="classtvm_1_1OpRegistry" kindref="compound">tvm::OpRegistry</ref>&amp; __make_##Op</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/ir/op.h" line="413" column="9" bodyfile="include/tvm/ir/op.h" bodystart="413" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="ir_2op_8h_1ab695572ca7d8604832410ac4e5ea5713" prot="public" static="no">
+        <name>TVM_REGISTER_OP</name>
+        <param><defname>OpName</defname></param>
+        <initializer><ref refid="object_8h_1a73bf3e57b9d7a6e0dd55d901321d01ed" kindref="member">TVM_STR_CONCAT</ref>(<ref refid="ir_2op_8h_1ab5474fc13be62edade1979771c0c2a49" kindref="member">TVM_OP_REGISTER_VAR_DEF</ref>, __COUNTER__) =       \
+  ::<ref refid="classtvm_1_1OpRegistry_1ac0f9d63e659e4059fe46688363a0219e" kindref="member">tvm::OpRegistry::Registry</ref>()                                \
+          -&gt;__REGISTER_OR_GET__(OpName)                        \
+          .set_name()</initializer>
+        <briefdescription>
+<para>Register a new operator, or set attribute of the corresponding op. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>OpName</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The name of registry</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<programlisting><codeline><highlight class="normal">TVM_REGISTER_OP(&quot;add&quot;)</highlight></codeline>
+<codeline><highlight class="normal">.describe(&quot;add<sp/>two<sp/>inputs<sp/>together&quot;)</highlight></codeline>
+<codeline><highlight class="normal">.set_num_inputs(2)</highlight></codeline>
+<codeline><highlight class="normal">.set_attr&lt;OpKernel&gt;(&quot;gpu_kernel&quot;,<sp/>AddKernel);</highlight></codeline>
+</programlisting> </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/ir/op.h" line="431" column="9" bodyfile="include/tvm/ir/op.h" bodystart="431" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Primitive operators(builtin intrinsics) and registry for them. </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="2"><highlight class="comment"><sp/>*<sp/>Licensed<sp/>to<sp/>the<sp/>Apache<sp/>Software<sp/>Foundation<sp/>(ASF)<sp/>under<sp/>one</highlight></codeline>
+<codeline lineno="3"><highlight class="comment"><sp/>*<sp/>or<sp/>more<sp/>contributor<sp/>license<sp/>agreements.<sp/><sp/>See<sp/>the<sp/>NOTICE<sp/>file</highlight></codeline>
+<codeline lineno="4"><highlight class="comment"><sp/>*<sp/>distributed<sp/>with<sp/>this<sp/>work<sp/>for<sp/>additional<sp/>information</highlight></codeline>
+<codeline lineno="5"><highlight class="comment"><sp/>*<sp/>regarding<sp/>copyright<sp/>ownership.<sp/><sp/>The<sp/>ASF<sp/>licenses<sp/>this<sp/>file</highlight></codeline>
+<codeline lineno="6"><highlight class="comment"><sp/>*<sp/>to<sp/>you<sp/>under<sp/>the<sp/>Apache<sp/>License,<sp/>Version<sp/>2.0<sp/>(the</highlight></codeline>
+<codeline lineno="7"><highlight class="comment"><sp/>*<sp/>&quot;License&quot;);<sp/>you<sp/>may<sp/>not<sp/>use<sp/>this<sp/>file<sp/>except<sp/>in<sp/>compliance</highlight></codeline>
+<codeline lineno="8"><highlight class="comment"><sp/>*<sp/>with<sp/>the<sp/>License.<sp/><sp/>You<sp/>may<sp/>obtain<sp/>a<sp/>copy<sp/>of<sp/>the<sp/>License<sp/>at</highlight></codeline>
+<codeline lineno="9"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="10"><highlight class="comment"><sp/>*<sp/><sp/><sp/>http://www.apache.org/licenses/LICENSE-2.0</highlight></codeline>
+<codeline lineno="11"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="12"><highlight class="comment"><sp/>*<sp/>Unless<sp/>required<sp/>by<sp/>applicable<sp/>law<sp/>or<sp/>agreed<sp/>to<sp/>in<sp/>writing,</highlight></codeline>
+<codeline lineno="13"><highlight class="comment"><sp/>*<sp/>software<sp/>distributed<sp/>under<sp/>the<sp/>License<sp/>is<sp/>distributed<sp/>on<sp/>an</highlight></codeline>
+<codeline lineno="14"><highlight class="comment"><sp/>*<sp/>&quot;AS<sp/>IS&quot;<sp/>BASIS,<sp/>WITHOUT<sp/>WARRANTIES<sp/>OR<sp/>CONDITIONS<sp/>OF<sp/>ANY</highlight></codeline>
+<codeline lineno="15"><highlight class="comment"><sp/>*<sp/>KIND,<sp/>either<sp/>express<sp/>or<sp/>implied.<sp/><sp/>See<sp/>the<sp/>License<sp/>for<sp/>the</highlight></codeline>
+<codeline lineno="16"><highlight class="comment"><sp/>*<sp/>specific<sp/>language<sp/>governing<sp/>permissions<sp/>and<sp/>limitations</highlight></codeline>
+<codeline lineno="17"><highlight class="comment"><sp/>*<sp/>under<sp/>the<sp/>License.</highlight></codeline>
+<codeline lineno="18"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight></codeline>
+<codeline lineno="25"><highlight class="preprocessor">#ifndef<sp/>TVM_IR_OP_H_</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>TVM_IR_OP_H_</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight></codeline>
+<codeline lineno="28"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;dmlc/registry.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="29"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;<ref refid="ir_2attrs_8h" kindref="compound">tvm/ir/attrs.h</ref>&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="30"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;<ref refid="registry_8h" kindref="compound">tvm/runtime/registry.h</ref>&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="31"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;<ref refid="ir_2expr_8h" kindref="compound">tvm/ir/expr.h</ref>&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="32"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;<ref refid="ir_2type_8h" kindref="compound">tvm/ir/type.h</ref>&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="33"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;<ref refid="type__relation_8h" kindref="compound">tvm/ir/type_relation.h</ref>&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="34"><highlight class="normal"></highlight></codeline>
+<codeline lineno="35"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;string&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="36"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;utility&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="37"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;vector&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="38"><highlight class="normal"></highlight></codeline>
+<codeline lineno="39"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal"><ref refid="namespacetvm" kindref="compound">tvm</ref><sp/>{</highlight></codeline>
+<codeline lineno="40"><highlight class="normal"></highlight></codeline>
+<codeline lineno="41"><highlight class="normal"></highlight><highlight class="comment">//<sp/>forward<sp/>declare<sp/>name.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="42"><highlight class="normal"></highlight><highlight class="keyword">template</highlight><highlight class="normal"><sp/>&lt;</highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>ValueType&gt;</highlight></codeline>
+<codeline lineno="43" refid="classtvm_1_1OpMap" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classtvm_1_1OpMap" kindref="compound">OpMap</ref>;</highlight></codeline>
+<codeline lineno="44"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classtvm_1_1GenericOpMap" kindref="compound">GenericOpMap</ref>;</highlight></codeline>
+<codeline lineno="45"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classtvm_1_1OpRegistry" kindref="compound">OpRegistry</ref>;</highlight></codeline>
+<codeline lineno="46"><highlight class="normal"></highlight></codeline>
+<codeline lineno="47"><highlight class="normal"></highlight><highlight class="comment">//<sp/>TODO(tvm-team):<sp/>migrate<sp/>low-level<sp/>intrinsics<sp/>to<sp/>use<sp/>Op</highlight></codeline>
+<codeline lineno="59" refid="classtvm_1_1OpNode" refkind="compound"><highlight class="comment"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classtvm_1_1OpNode" kindref="compound">OpNode</ref><sp/>:<sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/><ref refid="classtvm_1_1RelayExprNode" kindref="compound">RelayExprNode</ref><sp/>{</highlight></codeline>
+<codeline lineno="60"><highlight class="normal"><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="62" refid="classtvm_1_1OpNode_1ae8810815c68a55b8b6ab00dfb7d7778d" refkind="member"><highlight class="normal"><sp/><sp/>std::string<sp/><ref refid="classtvm_1_1OpNode_1ae8810815c68a55b8b6ab00dfb7d7778d" kindref="member">name</ref>;</highlight></codeline>
+<codeline lineno="64" refid="classtvm_1_1OpNode_1adff89c1e3f0aa6798a97fc4461293f7c" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">mutable</highlight><highlight class="normal"><sp/><ref refid="classtvm_1_1FuncType" kindref="compound">FuncType</ref><sp/><ref refid="classtvm_1_1OpNode_1adff89c1e3f0aa6798a97fc4461293f7c" kindref="member">op_type</ref>;</highlight></codeline>
+<codeline lineno="69" refid="classtvm_1_1OpNode_1a95d402556bd6c710a0b38f50c8e5e3bc" refkind="member"><highlight class="normal"><sp/><sp/>std::string<sp/><ref refid="classtvm_1_1OpNode_1a95d402556bd6c710a0b38f50c8e5e3bc" kindref="member">description</ref>;</highlight></codeline>
+<codeline lineno="70"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">/*<sp/>\brief<sp/>Information<sp/>of<sp/>input<sp/>arguments<sp/>to<sp/>the<sp/>operator<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="71" refid="classtvm_1_1OpNode_1af753e9ea21f09017bb61d5722b2ce181" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="classtvm_1_1Array" kindref="compound">Array&lt;AttrFieldInfo&gt;</ref><sp/><ref refid="classtvm_1_1OpNode_1af753e9ea21f09017bb61d5722b2ce181" kindref="member">arguments</ref>;</highlight></codeline>
+<codeline lineno="76" refid="classtvm_1_1OpNode_1aedeeca81655fb2bba9e1de79dcd539d1" refkind="member"><highlight class="normal"><sp/><sp/>std::string<sp/><ref refid="classtvm_1_1OpNode_1aedeeca81655fb2bba9e1de79dcd539d1" kindref="member">attrs_type_key</ref>;</highlight></codeline>
+<codeline lineno="81" refid="classtvm_1_1OpNode_1a4b7f1c6f18ede931328377bb8794c1bc" refkind="member"><highlight class="normal"><sp/><sp/>uint32_t<sp/><ref refid="classtvm_1_1OpNode_1a4b7f1c6f18ede931328377bb8794c1bc" kindref="member">attrs_type_index</ref>{0};</highlight></codeline>
+<codeline lineno="86" refid="classtvm_1_1OpNode_1aa13505588162bc5448bd03f02f5c545b" refkind="member"><highlight class="normal"><sp/><sp/>int32_t<sp/><ref refid="classtvm_1_1OpNode_1aa13505588162bc5448bd03f02f5c545b" kindref="member">num_inputs</ref><sp/>=<sp/>-1;</highlight></codeline>
+<codeline lineno="92" refid="classtvm_1_1OpNode_1a68a34098b5a111dec5f381cc4a80cb78" refkind="member"><highlight class="normal"><sp/><sp/>int32_t<sp/><ref refid="classtvm_1_1OpNode_1a68a34098b5a111dec5f381cc4a80cb78" kindref="member">support_level</ref><sp/>=<sp/>10;</highlight></codeline>
+<codeline lineno="93"><highlight class="normal"></highlight></codeline>
+<codeline lineno="94" refid="classtvm_1_1OpNode_1a9a5aacb190b2c4ead60b2810bd9053f4" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classtvm_1_1OpNode_1a9a5aacb190b2c4ead60b2810bd9053f4" kindref="member">VisitAttrs</ref>(<ref refid="classtvm_1_1AttrVisitor" kindref="compound">AttrVisitor</ref>*<sp/>v)<sp/>{</highlight></codeline>
+<codeline lineno="95"><highlight class="normal"><sp/><sp/><sp/><sp/>v-&gt;Visit(</highlight><highlight class="stringliteral">&quot;name&quot;</highlight><highlight class="normal">,<sp/>&amp;name);</highlight></codeline>
+<codeline lineno="96"><highlight class="normal"><sp/><sp/><sp/><sp/>v-&gt;Visit(</highlight><highlight class="stringliteral">&quot;op_type&quot;</highlight><highlight class="normal">,<sp/>&amp;op_type);</highlight></codeline>
+<codeline lineno="97"><highlight class="normal"><sp/><sp/><sp/><sp/>v-&gt;Visit(</highlight><highlight class="stringliteral">&quot;description&quot;</highlight><highlight class="normal">,<sp/>&amp;description);</highlight></codeline>
+<codeline lineno="98"><highlight class="normal"><sp/><sp/><sp/><sp/>v-&gt;Visit(</highlight><highlight class="stringliteral">&quot;arguments&quot;</highlight><highlight class="normal">,<sp/>&amp;arguments);</highlight></codeline>
+<codeline lineno="99"><highlight class="normal"><sp/><sp/><sp/><sp/>v-&gt;Visit(</highlight><highlight class="stringliteral">&quot;attrs_type_key&quot;</highlight><highlight class="normal">,<sp/>&amp;attrs_type_key);</highlight></codeline>
+<codeline lineno="100"><highlight class="normal"><sp/><sp/><sp/><sp/>v-&gt;Visit(</highlight><highlight class="stringliteral">&quot;num_inputs&quot;</highlight><highlight class="normal">,<sp/>&amp;num_inputs);</highlight></codeline>
+<codeline lineno="101"><highlight class="normal"><sp/><sp/><sp/><sp/>v-&gt;Visit(</highlight><highlight class="stringliteral">&quot;support_level&quot;</highlight><highlight class="normal">,<sp/>&amp;support_level);</highlight></codeline>
+<codeline lineno="102"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="103"><highlight class="normal"></highlight></codeline>
+<codeline lineno="104" refid="classtvm_1_1OpNode_1a23237d4a1ca4e21371d5ed0ac3520725" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classtvm_1_1OpNode_1a23237d4a1ca4e21371d5ed0ac3520725" kindref="member">SEqualReduce</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classtvm_1_1OpNode" kindref="compound">OpNode</ref>*<sp/>other,<sp/><ref refid="classtvm_1_1SEqualReducer" kindref="compound">SEqualReducer</ref><sp/><ref refid="namespacetopi_1ae10e1fb8c765a9ae15c12f45199375b3" kindref="member">equal</ref>)</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="105"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>pointer<sp/>equality<sp/>is<sp/>fine<sp/>as<sp/>there<sp/>is<sp/>only<sp/>one<sp/>op<sp/>with<sp/>the<sp/>same<sp/>name.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="106"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">this</highlight><highlight class="normal"><sp/>==<sp/>other;</highlight></codeline>
+<codeline lineno="107"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="108"><highlight class="normal"></highlight></codeline>
+<codeline lineno="109" refid="classtvm_1_1OpNode_1abe8c1e8f86a4b62187a233174edce575" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classtvm_1_1OpNode_1abe8c1e8f86a4b62187a233174edce575" kindref="member">SHashReduce</ref>(<ref refid="classtvm_1_1SHashReducer" kindref="compound">SHashReducer</ref><sp/>hash_reduce)</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="110"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Name<sp/>uniquely<sp/>identifies<sp/>an<sp/>Op.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="111"><highlight class="normal"><sp/><sp/><sp/><sp/>hash_reduce(name);</highlight></codeline>
+<codeline lineno="112"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="113"><highlight class="normal"></highlight></codeline>
+<codeline lineno="119" refid="classtvm_1_1OpNode_1a285c8dc0ccec2ca34386271d1b338506" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classtvm_1_1OpNode_1a285c8dc0ccec2ca34386271d1b338506" kindref="member">IsPrimitiveOp</ref>()</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="120"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(is_primitive_<sp/>!=<sp/>-1)<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>is_primitive_<sp/>!=<sp/>0;</highlight></codeline>
+<codeline lineno="121"><highlight class="normal"><sp/><sp/><sp/><sp/>is_primitive_<sp/>=<sp/>this-&gt;IsPrimitiveOp_()<sp/>?<sp/>1<sp/>:<sp/>0;</highlight></codeline>
+<codeline lineno="122"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>is_primitive_<sp/>!=<sp/>0;</highlight></codeline>
+<codeline lineno="123"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="124"><highlight class="normal"></highlight></codeline>
+<codeline lineno="125" refid="classtvm_1_1OpNode_1a2c50dc0d1b84d52d6da19a6fa3fcabac" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/>constexpr<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*<sp/><ref refid="classtvm_1_1OpNode_1a2c50dc0d1b84d52d6da19a6fa3fcabac" kindref="member">_type_key</ref><sp/>=<sp/></highlight><highlight class="stringliteral">&quot;relay.Op&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="126"><highlight class="normal"><sp/><sp/><ref refid="classtvm_1_1OpNode_1ade027d3176f48e7127be6ff08c723306" kindref="member">TVM_DECLARE_FINAL_OBJECT_INFO</ref>(<ref refid="classtvm_1_1OpNode" kindref="compound">OpNode</ref>,<sp/><ref refid="classtvm_1_1RelayExprNode" kindref="compound">RelayExprNode</ref>);</highlight></codeline>
+<codeline lineno="127"><highlight class="normal"></highlight></codeline>
+<codeline lineno="128"><highlight class="normal"><sp/></highlight><highlight class="keyword">private</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="129"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>friend<sp/>class</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="130" refid="classtvm_1_1OpNode_1a296d487cd2e3438353e759571270be97" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">friend</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classtvm_1_1GenericOpMap" kindref="compound">GenericOpMap</ref>;</highlight></codeline>
+<codeline lineno="131" refid="classtvm_1_1OpNode_1af7ebaf5af32d51226208f533e6d5cb1d" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">friend</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classtvm_1_1OpRegistry" kindref="compound">OpRegistry</ref>;</highlight></codeline>
+<codeline lineno="132"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">friend</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classtvm_1_1OpNode_1a285c8dc0ccec2ca34386271d1b338506" kindref="member">IsPrimitiveOp</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classtvm_1_1RelayExpr" kindref="compound">RelayExpr</ref>&amp;);</highlight></codeline>
+<codeline lineno="133"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>Program<sp/>internal<sp/>unique<sp/>index<sp/>of<sp/>operator.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="134"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>Used<sp/>to<sp/>help<sp/>index<sp/>the<sp/>program.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="135"><highlight class="normal"><sp/><sp/>uint32_t<sp/>index_{0};</highlight></codeline>
+<codeline lineno="136"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>whether<sp/>this<sp/>is<sp/>a<sp/>primitive<sp/>op.<sp/>-1<sp/>means<sp/>unknown.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="137"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">mutable</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>is_primitive_{-1};</highlight></codeline>
+<codeline lineno="138"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>Internal<sp/>function<sp/>to<sp/>compute<sp/>if<sp/>it<sp/>is<sp/>primitive<sp/>op</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="139"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>IsPrimitiveOp_()</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="140"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal">&amp;<sp/>fn_ty<sp/>=<sp/>this-&gt;<ref refid="classtvm_1_1OpNode_1adff89c1e3f0aa6798a97fc4461293f7c" kindref="member">op_type</ref>;</highlight></codeline>
+<codeline lineno="141"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(fn_ty-&gt;type_constraints.size()<sp/>!=<sp/>1)<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="142"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classtvm_1_1TypeRelationNode" kindref="compound">TypeRelationNode</ref>*<sp/>rel<sp/>=<sp/>fn_ty-&gt;type_constraints[0].as&lt;<ref refid="classtvm_1_1TypeRelationNode" kindref="compound">TypeRelationNode</ref>&gt;();</highlight></codeline>
+<codeline lineno="143"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(rel<sp/>==<sp/></highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">)<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="144"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>validate<sp/>if<sp/>the<sp/>type<sp/>parameter<sp/>matches<sp/>up</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="145"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>i<sp/>=<sp/>0;<sp/>i<sp/>&lt;<sp/>fn_ty-&gt;type_params.size();<sp/>++i)<sp/>{</highlight></codeline>
+<codeline lineno="146"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(!fn_ty-&gt;type_params[i].same_as(rel-&gt;<ref refid="classtvm_1_1TypeRelationNode_1a4ae12e1df74b0b93404db6a762ef9f3f" kindref="member">args</ref>[i]))<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="147"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="148"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="149"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="150"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="151"><highlight class="normal"></highlight></codeline>
+<codeline lineno="156" refid="classtvm_1_1Op" refkind="compound"><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classtvm_1_1Op" kindref="compound">Op</ref><sp/>:<sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/><ref refid="classtvm_1_1RelayExpr" kindref="compound">RelayExpr</ref><sp/>{</highlight></codeline>
+<codeline lineno="157"><highlight class="normal"><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="159" refid="classtvm_1_1Op_1afde3bc925d4d4c7ea09d4da50fc32c66" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="classtvm_1_1Op_1afde3bc925d4d4c7ea09d4da50fc32c66" kindref="member">Op</ref>()<sp/>{}</highlight></codeline>
+<codeline lineno="161" refid="classtvm_1_1Op_1abaafec14f5f05cc8bd3cdbf99eeb53d5" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">explicit</highlight><highlight class="normal"><sp/><ref refid="classtvm_1_1Op_1abaafec14f5f05cc8bd3cdbf99eeb53d5" kindref="member">Op</ref>(ObjectPtr&lt;Object&gt;<sp/>n)<sp/>:<sp/><ref refid="classtvm_1_1RelayExpr" kindref="compound">RelayExpr</ref>(n)<sp/>{}</highlight></codeline>
+<codeline lineno="166"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classtvm_1_1OpNode" kindref="compound">OpNode</ref>*<sp/>operator-&gt;()<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="174"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">template</highlight><highlight class="normal"><sp/>&lt;</highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>ValueType&gt;</highlight></codeline>
+<codeline lineno="175"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/><ref refid="classtvm_1_1OpMap" kindref="compound">OpMap&lt;ValueType&gt;</ref><sp/>GetAttr(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::string&amp;<sp/>attr_name);</highlight></codeline>
+<codeline lineno="181"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>HasAttr(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::string&amp;<sp/>attr_name);</highlight></codeline>
+<codeline lineno="188"><highlight class="normal"><sp/><sp/>TVM_DLL<sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classtvm_1_1Op" kindref="compound">Op</ref>&amp;<sp/>Get(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::string&amp;<sp/>op_name);</highlight></codeline>
+<codeline lineno="189"><highlight class="normal"></highlight></codeline>
+<codeline lineno="191" refid="classtvm_1_1Op_1a03bdb10e7fe5aac4e638523ab030c1e4" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">using</highlight><highlight class="normal"><sp/><ref refid="classtvm_1_1OpNode" kindref="compound">ContainerType</ref><sp/>=<sp/><ref refid="namespacetvm_1_1relay_1ac9d4f2cf78a48659817a88d890e1d142" kindref="member">OpNode</ref>;</highlight></codeline>
+<codeline lineno="192"><highlight class="normal"></highlight></codeline>
+<codeline lineno="193"><highlight class="normal"><sp/></highlight><highlight class="keyword">private</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="199"><highlight class="normal"><sp/><sp/>TVM_DLL<sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classtvm_1_1GenericOpMap" kindref="compound">GenericOpMap</ref>&amp;<sp/>GetGenericAttr(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::string&amp;<sp/>key);</highlight></codeline>
+<codeline lineno="205"><highlight class="normal"><sp/><sp/>TVM_DLL<sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>HasGenericAttr(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::string&amp;<sp/>key);</highlight></codeline>
+<codeline lineno="206"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="207"><highlight class="normal"></highlight></codeline>
+<codeline lineno="212" refid="classtvm_1_1OpRegistry" refkind="compound"><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classtvm_1_1OpRegistry" kindref="compound">OpRegistry</ref><sp/>{</highlight></codeline>
+<codeline lineno="213"><highlight class="normal"><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="215" refid="classtvm_1_1OpRegistry_1a381093d9c0d1177baef90f4b25828e21" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classtvm_1_1Op" kindref="compound">Op</ref>&amp;<sp/><ref refid="classtvm_1_1OpRegistry_1a381093d9c0d1177baef90f4b25828e21" kindref="member">op</ref>()</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>op_;<sp/>}</highlight></codeline>
+<codeline lineno="222"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/><ref refid="classtvm_1_1OpRegistry" kindref="compound">OpRegistry</ref>&amp;<sp/>describe(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::string&amp;<sp/>descr);<sp/><sp/></highlight><highlight class="comment">//<sp/>NOLINT(*)</highlight></codeline>
+<codeline lineno="230"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/><ref refid="classtvm_1_1OpRegistry" kindref="compound">OpRegistry</ref>&amp;<sp/>add_argument(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::string&amp;<sp/>name,</highlight></codeline>
+<codeline lineno="231"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::string&amp;<sp/>type,</highlight></codeline>
+<codeline lineno="232"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::string&amp;<sp/>description);</highlight></codeline>
+<codeline lineno="240"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/><ref refid="classtvm_1_1OpRegistry" kindref="compound">OpRegistry</ref>&amp;<sp/>add_type_rel(</highlight></codeline>
+<codeline lineno="241"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::string&amp;<sp/>rel_name,</highlight></codeline>
+<codeline lineno="242"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classtvm_1_1runtime_1_1TypedPackedFunc" kindref="compound">runtime::TypedPackedFunc</ref>&lt;</highlight><highlight class="keywordtype">bool</highlight><highlight class="normal">(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classtvm_1_1Array" kindref="compound">Array&lt;Type&gt;</ref>&amp;,</highlight></codeline>
+<codeline lineno="243"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal">,</highlight></codeline>
+<codeline lineno="244"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classtvm_1_1Attrs" kindref="compound">Attrs</ref>&amp;,</highlight></codeline>
+<codeline lineno="245"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classtvm_1_1TypeReporter" kindref="compound">TypeReporter</ref>&amp;)&gt;<sp/>type_rel_func);</highlight></codeline>
+<codeline lineno="251"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">template</highlight><highlight class="normal">&lt;</highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>AttrsType&gt;</highlight></codeline>
+<codeline lineno="252"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/><ref refid="classtvm_1_1OpRegistry" kindref="compound">OpRegistry</ref>&amp;<sp/>set_attrs_type();</highlight></codeline>
+<codeline lineno="258"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/><ref refid="classtvm_1_1OpRegistry" kindref="compound">OpRegistry</ref>&amp;<sp/>set_num_inputs(int32_t<sp/>n);<sp/><sp/></highlight><highlight class="comment">//<sp/>NOLINT(*)</highlight></codeline>
+<codeline lineno="264"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/><ref refid="classtvm_1_1OpRegistry" kindref="compound">OpRegistry</ref>&amp;<sp/>set_support_level(int32_t<sp/>level);<sp/><sp/></highlight><highlight class="comment">//<sp/>NOLINT(*)</highlight></codeline>
+<codeline lineno="278"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">template</highlight><highlight class="normal"><sp/>&lt;</highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>ValueType&gt;</highlight></codeline>
+<codeline lineno="279"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/><ref refid="classtvm_1_1OpRegistry" kindref="compound">OpRegistry</ref>&amp;<sp/>set_attr(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::string&amp;<sp/>attr_name,<sp/><sp/></highlight><highlight class="comment">//<sp/>NOLINT(*)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="280"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>ValueType&amp;<sp/>value,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>plevel<sp/>=<sp/>10);</highlight></codeline>
+<codeline lineno="281"><highlight class="normal"></highlight></codeline>
+<codeline lineno="286"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>reset_attr(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::string&amp;<sp/>attr_name);</highlight></codeline>
+<codeline lineno="287"><highlight class="normal"></highlight></codeline>
+<codeline lineno="288"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>set<sp/>the<sp/>name<sp/>of<sp/>the<sp/>op<sp/>to<sp/>be<sp/>the<sp/>same<sp/>as<sp/>registry</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="289" refid="classtvm_1_1OpRegistry_1a1b08766909281904cb0006682fc7b04e" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/><ref refid="classtvm_1_1OpRegistry" kindref="compound">OpRegistry</ref>&amp;<sp/><ref refid="classtvm_1_1OpRegistry_1a1b08766909281904cb0006682fc7b04e" kindref="member">set_name</ref>()<sp/>{<sp/><sp/></highlight><highlight class="comment">//<sp/>NOLINT(*)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="290"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keyword">get</highlight><highlight class="normal">()-&gt;name.length()<sp/>==<sp/>0)<sp/>{</highlight></codeline>
+<codeline lineno="291"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">get</highlight><highlight class="normal">()-&gt;name<sp/>=<sp/>name;</highlight></codeline>
+<codeline lineno="292"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="293"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>*</highlight><highlight class="keyword">this</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="294"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="296"><highlight class="normal"><sp/><sp/>TVM_DLL<sp/>static<sp/>::dmlc::Registry&lt;OpRegistry&gt;*<sp/>Registry();</highlight></codeline>
+<codeline lineno="297"><highlight class="normal"></highlight></codeline>
+<codeline lineno="298"><highlight class="normal"><sp/></highlight><highlight class="keyword">private</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="299" refid="classtvm_1_1OpRegistry_1a956426f929f055cff95af38d41ed8085" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">friend</highlight><highlight class="normal"><sp/>class<sp/>::dmlc::Registry&lt;OpRegistry&gt;;</highlight></codeline>
+<codeline lineno="300"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>the<sp/>name</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="301"><highlight class="normal"><sp/><sp/>std::string<sp/><ref refid="classtvm_1_1OpNode_1ae8810815c68a55b8b6ab00dfb7d7778d" kindref="member">name</ref>;</highlight></codeline>
+<codeline lineno="303"><highlight class="normal"><sp/><sp/><ref refid="classtvm_1_1Op" kindref="compound">Op</ref><sp/>op_;</highlight></codeline>
+<codeline lineno="304"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>private<sp/>constructor</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="305"><highlight class="normal"><sp/><sp/>TVM_DLL<sp/><ref refid="classtvm_1_1OpNode_1af7ebaf5af32d51226208f533e6d5cb1d" kindref="member">OpRegistry</ref>();</highlight></codeline>
+<codeline lineno="306"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>return<sp/>internal<sp/>pointer<sp/>to<sp/>op.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="307"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/><ref refid="classtvm_1_1OpNode" kindref="compound">OpNode</ref>*<sp/></highlight><highlight class="keyword">get</highlight><highlight class="normal">();</highlight></codeline>
+<codeline lineno="308"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>update<sp/>the<sp/>attribute<sp/>OpMap</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="309"><highlight class="normal"><sp/><sp/>TVM_DLL<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>UpdateAttr(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::string&amp;<sp/>key,</highlight></codeline>
+<codeline lineno="310"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classtvm_1_1runtime_1_1TVMRetValue" kindref="compound">runtime::TVMRetValue</ref><sp/>value,</highlight></codeline>
+<codeline lineno="311"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>plevel);</highlight></codeline>
+<codeline lineno="312"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="313"><highlight class="normal"></highlight></codeline>
+<codeline lineno="317" refid="classtvm_1_1GenericOpMap" refkind="compound"><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classtvm_1_1GenericOpMap" kindref="compound">GenericOpMap</ref><sp/>{</highlight></codeline>
+<codeline lineno="318"><highlight class="normal"><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="324"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>count(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classtvm_1_1Op" kindref="compound">Op</ref>&amp;<sp/>op)<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="330"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classtvm_1_1runtime_1_1TVMRetValue" kindref="compound">runtime::TVMRetValue</ref>&amp;<sp/>operator[](</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classtvm_1_1Op" kindref="compound">Op</ref>&amp;<sp/>op)<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="338"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">template</highlight><highlight class="normal"><sp/>&lt;</highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>ValueType&gt;</highlight></codeline>
+<codeline lineno="339"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/>ValueType<sp/></highlight><highlight class="keyword">get</highlight><highlight class="normal">(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classtvm_1_1Op" kindref="compound">Op</ref>&amp;<sp/>op,<sp/>ValueType<sp/>def_value)<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="348"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">template</highlight><highlight class="normal"><sp/>&lt;</highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>ValueType&gt;</highlight></codeline>
+<codeline lineno="349"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/>ValueType<sp/></highlight><highlight class="keyword">get</highlight><highlight class="normal">(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classtvm_1_1RelayExpr" kindref="compound">RelayExpr</ref>&amp;<sp/>expr,<sp/>ValueType<sp/>def_value)<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="350"><highlight class="normal"></highlight></codeline>
+<codeline lineno="351"><highlight class="normal"><sp/></highlight><highlight class="keyword">private</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="352" refid="classtvm_1_1GenericOpMap_1af7ebaf5af32d51226208f533e6d5cb1d" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">friend</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classtvm_1_1OpRegistry" kindref="compound">OpRegistry</ref>;</highlight></codeline>
+<codeline lineno="353"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>the<sp/>attribute<sp/>field.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="354"><highlight class="normal"><sp/><sp/>std::string<sp/>attr_name_;</highlight></codeline>
+<codeline lineno="355"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>internal<sp/>data</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="356"><highlight class="normal"><sp/><sp/>std::vector&lt;std::pair&lt;runtime::TVMRetValue,<sp/>int&gt;<sp/>&gt;<sp/>data_;</highlight></codeline>
+<codeline lineno="357"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>The<sp/>value</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="358"><highlight class="normal"><sp/><sp/><ref refid="classtvm_1_1OpNode_1a296d487cd2e3438353e759571270be97" kindref="member">GenericOpMap</ref>()<sp/>=<sp/></highlight><highlight class="keywordflow">default</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="359"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="360"><highlight class="normal"></highlight></codeline>
+<codeline lineno="365"><highlight class="keyword">template</highlight><highlight class="normal"><sp/>&lt;</highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>ValueType&gt;</highlight></codeline>
+<codeline lineno="366"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classtvm_1_1OpMap" kindref="compound">OpMap</ref><sp/>{</highlight></codeline>
+<codeline lineno="367"><highlight class="normal"><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="373"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>count(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classtvm_1_1Op" kindref="compound">Op</ref>&amp;<sp/>op)<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="379"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/>ValueType<sp/>operator[](</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classtvm_1_1Op" kindref="compound">Op</ref>&amp;<sp/>op)<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="386"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/>ValueType<sp/></highlight><highlight class="keyword">get</highlight><highlight class="normal">(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classtvm_1_1Op" kindref="compound">Op</ref>&amp;<sp/>op,<sp/>ValueType<sp/>def_value)<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="394"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/>ValueType<sp/></highlight><highlight class="keyword">get</highlight><highlight class="normal">(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classtvm_1_1RelayExpr" kindref="compound">RelayExpr</ref>&amp;<sp/>expr,<sp/>ValueType<sp/>def_value)<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="395"><highlight class="normal"></highlight></codeline>
+<codeline lineno="396"><highlight class="normal"><sp/></highlight><highlight class="keyword">private</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="397" refid="classtvm_1_1OpMap_1a2c31e8a3c11caeb061d69db14ebb0e95" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">friend</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classtvm_1_1Op" kindref="compound">Op</ref>;</highlight></codeline>
+<codeline lineno="398"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>constructor</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="399"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">explicit</highlight><highlight class="normal"><sp/><ref refid="classtvm_1_1OpMap" kindref="compound">OpMap</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classtvm_1_1GenericOpMap" kindref="compound">GenericOpMap</ref>&amp;<sp/>map)<sp/>:<sp/>map_(map)<sp/>{}</highlight></codeline>
+<codeline lineno="401"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classtvm_1_1GenericOpMap" kindref="compound">GenericOpMap</ref>&amp;<sp/>map_;</highlight></codeline>
+<codeline lineno="402"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="403"><highlight class="normal"></highlight></codeline>
+<codeline lineno="404" refid="ir_2op_8h_1a013dedecd9c6f457ed4ecc475fbdbd50" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>TVM_STRINGIZE_DETAIL(x)<sp/>#x</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="405" refid="ir_2op_8h_1a9695ac0f55d84dc1188cdf29c3c58454" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>TVM_STRINGIZE(x)<sp/>TVM_STRINGIZE_DETAIL(x)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="406" refid="ir_2op_8h_1aa26ce86513967e27c7571bf70cb8a57e" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>TVM_DESCRIBE(...)<sp/>describe(__VA_ARGS__<sp/>&quot;\n\nFrom:&quot;<sp/>__FILE__<sp/>&quot;:&quot;<sp/>TVM_STRINGIZE(__LINE__))</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="407"><highlight class="normal"></highlight></codeline>
+<codeline lineno="410" refid="ir_2op_8h_1a4658d181c38630e35f37c98fd1b0bde9" refkind="member"><highlight class="preprocessor">#define<sp/>TVM_ADD_FILELINE<sp/>&quot;\n\nDefined<sp/>in<sp/>&quot;<sp/>__FILE__<sp/>&quot;:L&quot;<sp/>TVM_STRINGIZE(__LINE__)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="411"><highlight class="normal"></highlight></codeline>
+<codeline lineno="412"><highlight class="normal"></highlight><highlight class="comment">//<sp/>internal<sp/>macros<sp/>to<sp/>make</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="413" refid="ir_2op_8h_1ab5474fc13be62edade1979771c0c2a49" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>TVM_OP_REGISTER_VAR_DEF<sp/>\</highlight></codeline>
+<codeline lineno="414"><highlight class="preprocessor"><sp/><sp/>static<sp/>DMLC_ATTRIBUTE_UNUSED<sp/>::tvm::OpRegistry&amp;<sp/>__make_##Op</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="415"><highlight class="normal"></highlight></codeline>
+<codeline lineno="431" refid="ir_2op_8h_1ab695572ca7d8604832410ac4e5ea5713" refkind="member"><highlight class="preprocessor">#define<sp/>TVM_REGISTER_OP(OpName)<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>\</highlight></codeline>
+<codeline lineno="432"><highlight class="preprocessor"><sp/><sp/>TVM_STR_CONCAT(TVM_OP_REGISTER_VAR_DEF,<sp/>__COUNTER__)<sp/>=<sp/><sp/><sp/><sp/><sp/><sp/><sp/>\</highlight></codeline>
+<codeline lineno="433"><highlight class="preprocessor"><sp/><sp/>::tvm::OpRegistry::Registry()<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>\</highlight></codeline>
+<codeline lineno="434"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>-&gt;__REGISTER_OR_GET__(OpName)<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>\</highlight></codeline>
+<codeline lineno="435"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>.set_name()</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="436"><highlight class="normal"></highlight></codeline>
+<codeline lineno="437"><highlight class="normal"></highlight><highlight class="comment">//<sp/>implementations</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="438" refid="classtvm_1_1Op_1adecc41ad59962134dce22a8211ee19f2" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classtvm_1_1OpNode" kindref="compound">OpNode</ref>*<sp/><ref refid="classtvm_1_1Op_1adecc41ad59962134dce22a8211ee19f2" kindref="member">Op::operator-&gt;</ref>()</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="439"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">static_cast&lt;</highlight><highlight class="keyword">const<sp/></highlight><highlight class="normal"><ref refid="classtvm_1_1OpNode" kindref="compound">OpNode</ref>*</highlight><highlight class="keyword">&gt;</highlight><highlight class="normal">(</highlight><highlight class="keyword">get</highlight><highlight class="normal">());</highlight></codeline>
+<codeline lineno="440"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="441"><highlight class="normal"></highlight></codeline>
+<codeline lineno="442"><highlight class="normal"></highlight><highlight class="keyword">template</highlight><highlight class="normal"><sp/>&lt;</highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>ValueType&gt;</highlight></codeline>
+<codeline lineno="443" refid="classtvm_1_1Op_1ab1d0bfd024cedf156bf59cccfc29bd59" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/><ref refid="classtvm_1_1OpMap" kindref="compound">OpMap&lt;ValueType&gt;</ref><sp/><ref refid="classtvm_1_1Op_1ab1d0bfd024cedf156bf59cccfc29bd59" kindref="member">Op::GetAttr</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::string&amp;<sp/>key)<sp/>{</highlight></codeline>
+<codeline lineno="444"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="classtvm_1_1OpMap" kindref="compound">OpMap&lt;ValueType&gt;</ref>(Op::GetGenericAttr(key));</highlight></codeline>
+<codeline lineno="445"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="446"><highlight class="normal"></highlight></codeline>
+<codeline lineno="447" refid="classtvm_1_1Op_1a51002130d653fea8a25d4080a84037f6" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classtvm_1_1Op_1a51002130d653fea8a25d4080a84037f6" kindref="member">Op::HasAttr</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::string&amp;<sp/>key)<sp/>{</highlight></codeline>
+<codeline lineno="448"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>Op::HasGenericAttr(key);</highlight></codeline>
+<codeline lineno="449"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="450"><highlight class="normal"></highlight></codeline>
+<codeline lineno="451"><highlight class="normal"></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/><ref refid="classtvm_1_1OpNode" kindref="compound">OpNode</ref>*<sp/>OpRegistry::get()<sp/>{</highlight></codeline>
+<codeline lineno="452"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">const_cast&lt;</highlight><highlight class="normal"><ref refid="classtvm_1_1OpNode" kindref="compound">OpNode</ref>*</highlight><highlight class="keyword">&gt;</highlight><highlight class="normal">(op_.operator-&gt;());</highlight></codeline>
+<codeline lineno="453"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="454"><highlight class="normal"></highlight></codeline>
+<codeline lineno="455" refid="classtvm_1_1OpRegistry_1a0a72aecfe0d1b5d65f8518a70febb4bc" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/><ref refid="classtvm_1_1OpRegistry" kindref="compound">OpRegistry</ref>&amp;<sp/><ref refid="classtvm_1_1OpRegistry_1a0a72aecfe0d1b5d65f8518a70febb4bc" kindref="member">OpRegistry::describe</ref>(</highlight></codeline>
+<codeline lineno="456"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::string&amp;<sp/>descr)<sp/>{<sp/><sp/></highlight><highlight class="comment">//<sp/>NOLINT(*)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="457"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">get</highlight><highlight class="normal">()-&gt;description<sp/>=<sp/>descr;</highlight></codeline>
+<codeline lineno="458"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>*</highlight><highlight class="keyword">this</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="459"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="460"><highlight class="normal"></highlight></codeline>
+<codeline lineno="461" refid="classtvm_1_1OpRegistry_1a5d15fca747762cf20a5c1881cbe661ff" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/><ref refid="classtvm_1_1OpRegistry" kindref="compound">OpRegistry</ref>&amp;<sp/><ref refid="classtvm_1_1OpRegistry_1a5d15fca747762cf20a5c1881cbe661ff" kindref="member">OpRegistry::add_argument</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::string&amp;<sp/>name,</highlight></codeline>
+<codeline lineno="462"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::string&amp;<sp/>type,</highlight></codeline>
+<codeline lineno="463"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::string&amp;<sp/>description)<sp/>{</highlight></codeline>
+<codeline lineno="464"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>n<sp/>=<sp/>make_object&lt;AttrFieldInfoNode&gt;();</highlight></codeline>
+<codeline lineno="465"><highlight class="normal"><sp/><sp/>n-&gt;name<sp/>=<sp/><ref refid="classtvm_1_1OpNode_1ae8810815c68a55b8b6ab00dfb7d7778d" kindref="member">name</ref>;</highlight></codeline>
+<codeline lineno="466"><highlight class="normal"><sp/><sp/>n-&gt;type_info<sp/>=<sp/>type;</highlight></codeline>
+<codeline lineno="467"><highlight class="normal"><sp/><sp/>n-&gt;description<sp/>=<sp/><ref refid="classtvm_1_1OpNode_1a95d402556bd6c710a0b38f50c8e5e3bc" kindref="member">description</ref>;</highlight></codeline>
+<codeline lineno="468"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">get</highlight><highlight class="normal">()-&gt;arguments.<ref refid="classtvm_1_1Array_1a24d5ac1f6730d46cb1a6d16729f0a7bb" kindref="member">push_back</ref>(<ref refid="classtvm_1_1AttrFieldInfo" kindref="compound">AttrFieldInfo</ref>(n));</highlight></codeline>
+<codeline lineno="469"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>*</highlight><highlight class="keyword">this</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="470"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="471"><highlight class="normal"></highlight></codeline>
+<codeline lineno="472" refid="classtvm_1_1OpRegistry_1a7db583af58b340af8a5784cc858b507e" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/><ref refid="classtvm_1_1OpRegistry" kindref="compound">OpRegistry</ref>&amp;<sp/><ref refid="classtvm_1_1OpRegistry_1a7db583af58b340af8a5784cc858b507e" kindref="member">OpRegistry::add_type_rel</ref>(</highlight></codeline>
+<codeline lineno="473"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::string&amp;<sp/>rel_name,</highlight></codeline>
+<codeline lineno="474"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classtvm_1_1runtime_1_1TypedPackedFunc" kindref="compound">runtime::TypedPackedFunc</ref>&lt;</highlight><highlight class="keywordtype">bool</highlight><highlight class="normal">(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classtvm_1_1Array" kindref="compound">Array&lt;Type&gt;</ref>&amp;,</highlight></codeline>
+<codeline lineno="475"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal">,</highlight></codeline>
+<codeline lineno="476"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classtvm_1_1Attrs" kindref="compound">Attrs</ref>&amp;,</highlight></codeline>
+<codeline lineno="477"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classtvm_1_1TypeReporter" kindref="compound">TypeReporter</ref>&amp;)&gt;<sp/>type_rel_func)<sp/>{</highlight></codeline>
+<codeline lineno="478"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>func_name<sp/>=<sp/>std::string(</highlight><highlight class="stringliteral">&quot;tvm.relay.type_relation.&quot;</highlight><highlight class="normal">)<sp/>+<sp/>rel_name;</highlight></codeline>
+<codeline lineno="479"><highlight class="normal"><sp/><sp/><ref refid="classtvm_1_1TypedEnvFunc" kindref="compound">TypeRelationFn</ref><sp/>env_type_rel_func;</highlight></codeline>
+<codeline lineno="480"><highlight class="normal"></highlight></codeline>
+<codeline lineno="481"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<ref refid="classtvm_1_1runtime_1_1Registry_1afcddc7b207f519f92c622e6918076635" kindref="member">runtime::Registry::Get</ref>(func_name))<sp/>{</highlight></codeline>
+<codeline lineno="482"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>env_func<sp/>=<sp/><ref refid="classtvm_1_1EnvFunc_1a44b694c40d5ff79319ba02afa89fe5ab" kindref="member">EnvFunc::Get</ref>(func_name);</highlight></codeline>
+<codeline lineno="483"><highlight class="normal"><sp/><sp/><sp/><sp/>env_type_rel_func<sp/>=<sp/>env_func;</highlight></codeline>
+<codeline lineno="484"><highlight class="normal"><sp/><sp/>}<sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="485"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classtvm_1_1runtime_1_1Registry_1a227ffef03991cd50224d5d31257a475a" kindref="member">runtime::Registry::Register</ref>(func_name)</highlight></codeline>
+<codeline lineno="486"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>.<ref refid="classtvm_1_1runtime_1_1Registry_1aed802ed365a13a9cef9de4e9f601b62a" kindref="member">set_body</ref>(type_rel_func.packed());</highlight></codeline>
+<codeline lineno="487"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>env_func<sp/>=<sp/><ref refid="classtvm_1_1EnvFunc_1a44b694c40d5ff79319ba02afa89fe5ab" kindref="member">EnvFunc::Get</ref>(func_name);</highlight></codeline>
+<codeline lineno="488"><highlight class="normal"><sp/><sp/><sp/><sp/>env_type_rel_func<sp/>=<sp/>env_func;</highlight></codeline>
+<codeline lineno="489"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="490"><highlight class="normal"></highlight></codeline>
+<codeline lineno="491"><highlight class="normal"><sp/><sp/><ref refid="classtvm_1_1Array" kindref="compound">Array&lt;TypeVar&gt;</ref><sp/>type_params;</highlight></codeline>
+<codeline lineno="492"><highlight class="normal"><sp/><sp/><ref refid="classtvm_1_1Array" kindref="compound">Array&lt;Type&gt;</ref><sp/>arg_types;</highlight></codeline>
+<codeline lineno="493"><highlight class="normal"></highlight></codeline>
+<codeline lineno="494"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>Add<sp/>inputs.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="495"><highlight class="normal"><sp/><sp/>std::string<sp/>input_name_prefix<sp/>=<sp/></highlight><highlight class="stringliteral">&quot;in&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="496"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>i<sp/>=<sp/>0;<sp/>i<sp/>&lt;<sp/></highlight><highlight class="keyword">get</highlight><highlight class="normal">()-&gt;num_inputs;<sp/>i++)<sp/>{</highlight></codeline>
+<codeline lineno="497"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>name<sp/>=<sp/>input_name_prefix<sp/>+<sp/>std::to_string(i);</highlight></codeline>
+<codeline lineno="498"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>param<sp/>=<sp/><ref refid="namespacetvm_1_1relay_1a63321eb51080f3f57dd7563a3ca0bfa6" kindref="member">TypeVar</ref>(name,<sp/><ref refid="namespacetvm_1acd267f8d7f55da6ac681239831963279a46f081c7ea2307c83d3cdfd42e1583f7" kindref="member">TypeKind::kType</ref>);</highlight></codeline>
+<codeline lineno="499"><highlight class="normal"><sp/><sp/><sp/><sp/>type_params.<ref refid="classtvm_1_1Array_1a24d5ac1f6730d46cb1a6d16729f0a7bb" kindref="member">push_back</ref>(param);</highlight></codeline>
+<codeline lineno="500"><highlight class="normal"><sp/><sp/><sp/><sp/>arg_types.<ref refid="classtvm_1_1Array_1a24d5ac1f6730d46cb1a6d16729f0a7bb" kindref="member">push_back</ref>(param);</highlight></codeline>
+<codeline lineno="501"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="502"><highlight class="normal"></highlight></codeline>
+<codeline lineno="503"><highlight class="normal"><sp/><sp/><ref refid="classtvm_1_1Array" kindref="compound">Array&lt;Type&gt;</ref><sp/>ty_call_args<sp/>=<sp/>arg_types;</highlight></codeline>
+<codeline lineno="504"><highlight class="normal"></highlight></codeline>
+<codeline lineno="505"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>Add<sp/>output<sp/>type.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="506"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>out_param<sp/>=<sp/><ref refid="namespacetvm_1_1relay_1a63321eb51080f3f57dd7563a3ca0bfa6" kindref="member">TypeVar</ref>(</highlight><highlight class="stringliteral">&quot;out&quot;</highlight><highlight class="normal">,<sp/><ref refid="namespacetvm_1acd267f8d7f55da6ac681239831963279a46f081c7ea2307c83d3cdfd42e1583f7" kindref="member">TypeKind::kType</ref>);</highlight></codeline>
+<codeline lineno="507"><highlight class="normal"><sp/><sp/>type_params.<ref refid="classtvm_1_1Array_1a24d5ac1f6730d46cb1a6d16729f0a7bb" kindref="member">push_back</ref>(out_param);</highlight></codeline>
+<codeline lineno="508"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>this<sp/>will<sp/>trigger<sp/>copy<sp/>on<sp/>write.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="509"><highlight class="normal"><sp/><sp/>ty_call_args.<ref refid="classtvm_1_1Array_1a24d5ac1f6730d46cb1a6d16729f0a7bb" kindref="member">push_back</ref>(out_param);</highlight></codeline>
+<codeline lineno="510"><highlight class="normal"></highlight></codeline>
+<codeline lineno="511"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>The<sp/>attributes<sp/>of<sp/>primitive<sp/>op<sp/>is<sp/>nullptr</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="512"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="513"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>The<sp/>attributes<sp/>of<sp/>primitive<sp/>operator<sp/>can<sp/>vary<sp/>at<sp/>the<sp/>call<sp/>site.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="514"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>The<sp/>type<sp/>of<sp/>sum<sp/>is<sp/>also<sp/>dependent<sp/>on<sp/>Attrs<sp/>being<sp/>passed.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="515"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>So<sp/>puting<sp/>nullptr<sp/>in<sp/>the<sp/>Attrs<sp/>means<sp/>that<sp/>the<sp/>operator<sp/>is<sp/>polymorphic<sp/>on<sp/>Attrs.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="516"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="517"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>A<sp/>common<sp/>example<sp/>is<sp/>sum(x,<sp/>axis),<sp/>where<sp/>the<sp/>choice<sp/>of<sp/>axis</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="518"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>can<sp/>affect<sp/>the<sp/>type<sp/>of<sp/>the<sp/>function.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="519"><highlight class="normal"><sp/><sp/><ref refid="classtvm_1_1TypeConstraint" kindref="compound">TypeConstraint</ref><sp/>type_rel<sp/>=</highlight></codeline>
+<codeline lineno="520"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="namespacetvm_1_1relay_1adab0d56fd993df71df3068dea0cd5456" kindref="member">TypeRelation</ref>(env_type_rel_func,</highlight></codeline>
+<codeline lineno="521"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>ty_call_args,</highlight></codeline>
+<codeline lineno="522"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>arg_types.<ref refid="classtvm_1_1Array_1a6c150ee7d3e46117b099d2052b19aec5" kindref="member">size</ref>(),</highlight></codeline>
+<codeline lineno="523"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classtvm_1_1Attrs" kindref="compound">Attrs</ref>());</highlight></codeline>
+<codeline lineno="524"><highlight class="normal"></highlight></codeline>
+<codeline lineno="525"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>func_type<sp/>=</highlight></codeline>
+<codeline lineno="526"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="namespacetvm_1_1relay_1aa475de90506d48a1bb04ef6d1bd99bfb" kindref="member">FuncType</ref>(arg_types,<sp/>out_param,<sp/>type_params,<sp/>{type_rel});</highlight></codeline>
+<codeline lineno="527"><highlight class="normal"></highlight></codeline>
+<codeline lineno="528"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">get</highlight><highlight class="normal">()-&gt;op_type<sp/>=<sp/>func_type;</highlight></codeline>
+<codeline lineno="529"><highlight class="normal"></highlight></codeline>
+<codeline lineno="530"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>*</highlight><highlight class="keyword">this</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="531"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="532"><highlight class="normal"></highlight></codeline>
+<codeline lineno="533" refid="classtvm_1_1OpRegistry_1a432a240bf74af65004beee94d046edfd" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/><ref refid="classtvm_1_1OpRegistry" kindref="compound">OpRegistry</ref>&amp;<sp/><ref refid="classtvm_1_1OpRegistry_1a432a240bf74af65004beee94d046edfd" kindref="member">OpRegistry::set_num_inputs</ref>(int32_t<sp/>n)<sp/>{<sp/><sp/></highlight><highlight class="comment">//<sp/>NOLINT(*)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="534"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">get</highlight><highlight class="normal">()-&gt;num_inputs<sp/>=<sp/>n;</highlight></codeline>
+<codeline lineno="535"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>*</highlight><highlight class="keyword">this</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="536"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="537"><highlight class="normal"></highlight></codeline>
+<codeline lineno="538"><highlight class="normal"></highlight><highlight class="keyword">template</highlight><highlight class="normal">&lt;</highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>AttrsType&gt;</highlight></codeline>
+<codeline lineno="539" refid="classtvm_1_1OpRegistry_1aafc6025ac5b10313e69c84130ee5cca0" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/><ref refid="classtvm_1_1OpRegistry" kindref="compound">OpRegistry</ref>&amp;<sp/><ref refid="classtvm_1_1OpRegistry_1aafc6025ac5b10313e69c84130ee5cca0" kindref="member">OpRegistry::set_attrs_type</ref>()<sp/>{<sp/><sp/></highlight><highlight class="comment">//<sp/>NOLINT(*)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="540"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">get</highlight><highlight class="normal">()-&gt;attrs_type_key<sp/>=<sp/>AttrsType::_type_key;</highlight></codeline>
+<codeline lineno="541"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">get</highlight><highlight class="normal">()-&gt;<ref refid="classtvm_1_1OpNode_1a4b7f1c6f18ede931328377bb8794c1bc" kindref="member">attrs_type_index</ref><sp/>=<sp/>AttrsType::RuntimeTypeIndex();</highlight></codeline>
+<codeline lineno="542"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>*</highlight><highlight class="keyword">this</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="543"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="544"><highlight class="normal"></highlight></codeline>
+<codeline lineno="545" refid="classtvm_1_1OpRegistry_1adb43dc08f36cc080855bbec206b1c86f" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/><ref refid="classtvm_1_1OpRegistry" kindref="compound">OpRegistry</ref>&amp;<sp/><ref refid="classtvm_1_1OpRegistry_1adb43dc08f36cc080855bbec206b1c86f" kindref="member">OpRegistry::set_support_level</ref>(int32_t<sp/>n)<sp/>{<sp/><sp/></highlight><highlight class="comment">//<sp/>NOLINT(*)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="546"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">get</highlight><highlight class="normal">()-&gt;support_level<sp/>=<sp/>n;</highlight></codeline>
+<codeline lineno="547"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>*</highlight><highlight class="keyword">this</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="548"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="549"><highlight class="normal"></highlight></codeline>
+<codeline lineno="550"><highlight class="normal"></highlight><highlight class="keyword">template</highlight><highlight class="normal"><sp/>&lt;</highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>ValueType&gt;</highlight></codeline>
+<codeline lineno="551" refid="classtvm_1_1OpRegistry_1a1fe827230a62fd815f63b9b6f0e2531b" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/><ref refid="classtvm_1_1OpRegistry" kindref="compound">OpRegistry</ref>&amp;<sp/><ref refid="classtvm_1_1OpRegistry_1a1fe827230a62fd815f63b9b6f0e2531b" kindref="member">OpRegistry::set_attr</ref>(<sp/><sp/></highlight><highlight class="comment">//<sp/>NOLINT(*)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="552"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::string&amp;<sp/>attr_name,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>ValueType&amp;<sp/>value,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>plevel)<sp/>{</highlight></codeline>
+<codeline lineno="553"><highlight class="normal"><sp/><sp/>CHECK_GT(plevel,<sp/>0)<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;plevel<sp/>in<sp/>set_attr<sp/>must<sp/>be<sp/>greater<sp/>than<sp/>0&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="554"><highlight class="normal"><sp/><sp/><ref refid="classtvm_1_1runtime_1_1TVMRetValue" kindref="compound">runtime::TVMRetValue</ref><sp/>rv;</highlight></codeline>
+<codeline lineno="555"><highlight class="normal"><sp/><sp/>rv<sp/>=<sp/>value;</highlight></codeline>
+<codeline lineno="556"><highlight class="normal"><sp/><sp/>UpdateAttr(attr_name,<sp/>rv,<sp/>plevel);</highlight></codeline>
+<codeline lineno="557"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>*</highlight><highlight class="keyword">this</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="558"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="559"><highlight class="normal"></highlight></codeline>
+<codeline lineno="560"><highlight class="normal"></highlight><highlight class="comment">//<sp/>member<sp/>functions<sp/>of<sp/>OpMap</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="561" refid="classtvm_1_1GenericOpMap_1aae9ad079762cba7d1ea7875734992506" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="classtvm_1_1GenericOpMap_1aae9ad079762cba7d1ea7875734992506" kindref="member">GenericOpMap::count</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classtvm_1_1Op" kindref="compound">Op</ref>&amp;<sp/>op)</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="562"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(op.defined())<sp/>{</highlight></codeline>
+<codeline lineno="563"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>uint32_t<sp/>idx<sp/>=<sp/>op-&gt;index_;</highlight></codeline>
+<codeline lineno="564"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>idx<sp/>&lt;<sp/>data_.size()<sp/>?<sp/>(data_[idx].second<sp/>!=<sp/>0)<sp/>:<sp/>0;</highlight></codeline>
+<codeline lineno="565"><highlight class="normal"><sp/><sp/>}<sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="566"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>0;</highlight></codeline>
+<codeline lineno="567"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="568"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="569"><highlight class="normal"></highlight></codeline>
+<codeline lineno="570"><highlight class="normal"></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classtvm_1_1runtime_1_1TVMRetValue" kindref="compound">runtime::TVMRetValue</ref>&amp;</highlight></codeline>
+<codeline lineno="571" refid="classtvm_1_1GenericOpMap_1a74e4a7eab2bf83c8b505e4942b5b7516" refkind="member"><highlight class="normal"><ref refid="classtvm_1_1GenericOpMap_1a74e4a7eab2bf83c8b505e4942b5b7516" kindref="member">GenericOpMap::operator[]</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classtvm_1_1Op" kindref="compound">Op</ref>&amp;<sp/>op)</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="572"><highlight class="normal"><sp/><sp/>CHECK(op.defined());</highlight></codeline>
+<codeline lineno="573"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>uint32_t<sp/>idx<sp/>=<sp/>op-&gt;index_;</highlight></codeline>
+<codeline lineno="574"><highlight class="normal"><sp/><sp/>CHECK(idx<sp/>&lt;<sp/>data_.size()<sp/>&amp;&amp;<sp/>data_[idx].second<sp/>!=<sp/>0)</highlight></codeline>
+<codeline lineno="575"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;Attribute<sp/>&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/>attr_name_<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;<sp/>has<sp/>not<sp/>been<sp/>registered<sp/>for<sp/>Operator<sp/>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="576"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>&lt;&lt;<sp/>op-&gt;<ref refid="classtvm_1_1OpNode_1ae8810815c68a55b8b6ab00dfb7d7778d" kindref="member">name</ref>;</highlight></codeline>
+<codeline lineno="577"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>data_[idx].first;</highlight></codeline>
+<codeline lineno="578"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="579"><highlight class="normal"></highlight></codeline>
+<codeline lineno="580"><highlight class="normal"></highlight><highlight class="keyword">template</highlight><highlight class="normal"><sp/>&lt;</highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>ValueType&gt;</highlight></codeline>
+<codeline lineno="581" refid="classtvm_1_1GenericOpMap_1a9adaf806540db27a3eb334a599fb8cb5" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/>ValueType<sp/><ref refid="classtvm_1_1GenericOpMap_1a9adaf806540db27a3eb334a599fb8cb5" kindref="member">GenericOpMap::get</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classtvm_1_1Op" kindref="compound">Op</ref>&amp;<sp/>op,<sp/>ValueType<sp/>value)</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="582"><highlight class="normal"><sp/><sp/>CHECK(op.defined());</highlight></codeline>
+<codeline lineno="583"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>uint32_t<sp/>idx<sp/>=<sp/>op-&gt;index_;</highlight></codeline>
+<codeline lineno="584"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(idx<sp/>&lt;<sp/>data_.size()<sp/>&amp;&amp;<sp/>data_[idx].second<sp/>!=<sp/>0)<sp/>{</highlight></codeline>
+<codeline lineno="585"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>data_[idx].first;</highlight></codeline>
+<codeline lineno="586"><highlight class="normal"><sp/><sp/>}<sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="587"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>value;</highlight></codeline>
+<codeline lineno="588"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="589"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="590"><highlight class="normal"></highlight></codeline>
+<codeline lineno="591"><highlight class="normal"></highlight><highlight class="keyword">template</highlight><highlight class="normal"><sp/>&lt;</highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>ValueType&gt;</highlight></codeline>
+<codeline lineno="592" refid="classtvm_1_1GenericOpMap_1a204ef8651b7ec324ed2fbec84217a8fa" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/>ValueType<sp/><ref refid="classtvm_1_1GenericOpMap_1a9adaf806540db27a3eb334a599fb8cb5" kindref="member">GenericOpMap::get</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classtvm_1_1RelayExpr" kindref="compound">RelayExpr</ref>&amp;<sp/>expr,<sp/>ValueType<sp/>value)</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="593"><highlight class="normal"><sp/><sp/>CHECK(expr.defined());</highlight></codeline>
+<codeline lineno="594"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classtvm_1_1OpNode" kindref="compound">OpNode</ref>*<sp/>op<sp/>=<sp/>expr.as&lt;<ref refid="classtvm_1_1OpNode" kindref="compound">OpNode</ref>&gt;())<sp/>{</highlight></codeline>
+<codeline lineno="595"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>uint32_t<sp/>idx<sp/>=<sp/>op-&gt;index_;</highlight></codeline>
+<codeline lineno="596"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(idx<sp/>&lt;<sp/>data_.size()<sp/>&amp;&amp;<sp/>data_[idx].second<sp/>!=<sp/>0)<sp/>{</highlight></codeline>
+<codeline lineno="597"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>data_[idx].first;</highlight></codeline>
+<codeline lineno="598"><highlight class="normal"><sp/><sp/><sp/><sp/>}<sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="599"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>value;</highlight></codeline>
+<codeline lineno="600"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="601"><highlight class="normal"><sp/><sp/>}<sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="602"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>value;</highlight></codeline>
+<codeline lineno="603"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="604"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="605"><highlight class="normal"></highlight></codeline>
+<codeline lineno="606"><highlight class="normal"></highlight><highlight class="keyword">template</highlight><highlight class="normal"><sp/>&lt;</highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>ValueType&gt;</highlight></codeline>
+<codeline lineno="607" refid="classtvm_1_1OpMap_1a682c5cbb2d79f69e047d0f04041bd1c1" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="classtvm_1_1OpMap_1a682c5cbb2d79f69e047d0f04041bd1c1" kindref="member">OpMap&lt;ValueType&gt;::count</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classtvm_1_1Op" kindref="compound">Op</ref>&amp;<sp/>op)</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="608"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>map_.count(op);</highlight></codeline>
+<codeline lineno="609"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="610"><highlight class="normal"></highlight></codeline>
+<codeline lineno="611"><highlight class="normal"></highlight><highlight class="keyword">template</highlight><highlight class="normal"><sp/>&lt;</highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>ValueType&gt;</highlight></codeline>
+<codeline lineno="612" refid="classtvm_1_1OpMap_1ab719867303894f6e441a59348cab4ced" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/>ValueType<sp/><ref refid="classtvm_1_1OpMap_1ab719867303894f6e441a59348cab4ced" kindref="member">OpMap&lt;ValueType&gt;::operator[]</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classtvm_1_1Op" kindref="compound">Op</ref>&amp;<sp/>op)</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="613"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>map_[op];</highlight></codeline>
+<codeline lineno="614"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="615"><highlight class="normal"></highlight></codeline>
+<codeline lineno="616"><highlight class="normal"></highlight><highlight class="keyword">template</highlight><highlight class="normal"><sp/>&lt;</highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>ValueType&gt;</highlight></codeline>
+<codeline lineno="617" refid="classtvm_1_1OpMap_1a3704a7d04cd90cf722361b1a7b3eec2c" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/>ValueType<sp/><ref refid="classtvm_1_1OpMap_1a3704a7d04cd90cf722361b1a7b3eec2c" kindref="member">OpMap&lt;ValueType&gt;::get</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classtvm_1_1Op" kindref="compound">Op</ref>&amp;<sp/>op,</highlight></codeline>
+<codeline lineno="618"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>ValueType<sp/>def_value)</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="619"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>map_.get&lt;ValueType&gt;(op,<sp/>def_value);</highlight></codeline>
+<codeline lineno="620"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="621"><highlight class="normal"></highlight></codeline>
+<codeline lineno="622"><highlight class="normal"></highlight><highlight class="keyword">template</highlight><highlight class="normal"><sp/>&lt;</highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>ValueType&gt;</highlight></codeline>
+<codeline lineno="623" refid="classtvm_1_1OpMap_1ae1069dc1bd6bf1b277960ef4b791c8c3" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/>ValueType<sp/><ref refid="classtvm_1_1OpMap_1a3704a7d04cd90cf722361b1a7b3eec2c" kindref="member">OpMap&lt;ValueType&gt;::get</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classtvm_1_1RelayExpr" kindref="compound">RelayExpr</ref>&amp;<sp/>expr,</highlight></codeline>
+<codeline lineno="624"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>ValueType<sp/>def_value)</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="625"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>map_.get&lt;ValueType&gt;(expr,<sp/>def_value);</highlight></codeline>
+<codeline lineno="626"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="627"><highlight class="normal"></highlight></codeline>
+<codeline lineno="641" refid="namespacetvm_1a8259e23409eda017c6bde908e050b670" refkind="member"><highlight class="keyword">inline</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classtvm_1_1OpNode_1a285c8dc0ccec2ca34386271d1b338506" kindref="member">IsPrimitiveOp</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classtvm_1_1RelayExpr" kindref="compound">RelayExpr</ref>&amp;<sp/>expr)<sp/>{</highlight></codeline>
+<codeline lineno="642"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal">*<sp/>op<sp/>=<sp/>expr.as&lt;<ref refid="classtvm_1_1OpNode" kindref="compound">OpNode</ref>&gt;();</highlight></codeline>
+<codeline lineno="643"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>op<sp/>!=<sp/></highlight><highlight class="keyword">nullptr</highlight><highlight class="normal"><sp/>&amp;&amp;<sp/>op-&gt;<ref refid="classtvm_1_1OpNode_1a285c8dc0ccec2ca34386271d1b338506" kindref="member">IsPrimitiveOp</ref>();</highlight></codeline>
+<codeline lineno="644"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="645"><highlight class="normal"></highlight></codeline>
+<codeline lineno="646"><highlight class="normal">}<sp/><sp/></highlight><highlight class="comment">//<sp/>namespace<sp/>tvm</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="647"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/><sp/>//<sp/>TVM_IR_OP_H_</highlight></codeline>
+    </programlisting>
+    <location file="include/tvm/ir/op.h"/>
+  </compounddef>
+</doxygen>

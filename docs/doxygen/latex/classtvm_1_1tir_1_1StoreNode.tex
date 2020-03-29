@@ -1,0 +1,164 @@
+\hypertarget{classtvm_1_1tir_1_1StoreNode}{}\section{tvm\+:\+:tir\+:\+:Store\+Node Class Reference}
+\label{classtvm_1_1tir_1_1StoreNode}\index{tvm\+::tir\+::\+Store\+Node@{tvm\+::tir\+::\+Store\+Node}}
+
+
+Store value to the buffer.  
+
+
+
+
+{\ttfamily \#include $<$stmt.\+h$>$}
+
+
+
+Inheritance diagram for tvm\+:\+:tir\+:\+:Store\+Node\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=285pt]{classtvm_1_1tir_1_1StoreNode__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for tvm\+:\+:tir\+:\+:Store\+Node\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classtvm_1_1tir_1_1StoreNode__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{classtvm_1_1tir_1_1StoreNode_a3f6c20a2767139e3a6555554f1e130a4}{Visit\+Attrs} (\hyperlink{classtvm_1_1AttrVisitor}{Attr\+Visitor} $\ast$v)
+\item 
+bool \hyperlink{classtvm_1_1tir_1_1StoreNode_a1fdbfaef5042c83fc109a1e53a6cdc74}{S\+Equal\+Reduce} (const \hyperlink{classtvm_1_1tir_1_1StoreNode}{Store\+Node} $\ast$other, \hyperlink{classtvm_1_1SEqualReducer}{S\+Equal\+Reducer} equal) const 
+\item 
+void \hyperlink{classtvm_1_1tir_1_1StoreNode_a70ef320d87e4f42f7d4abe43d6c9c980}{S\+Hash\+Reduce} (\hyperlink{classtvm_1_1SHashReducer}{S\+Hash\+Reducer} hash\+\_\+reduce) const 
+\item 
+\hyperlink{classtvm_1_1tir_1_1StoreNode_ab320356d8d0645fc93ea21cad679b0c3}{T\+V\+M\+\_\+\+D\+E\+C\+L\+A\+R\+E\+\_\+\+F\+I\+N\+A\+L\+\_\+\+O\+B\+J\+E\+C\+T\+\_\+\+I\+N\+FO} (\hyperlink{classtvm_1_1tir_1_1StoreNode}{Store\+Node}, \hyperlink{classtvm_1_1tir_1_1StmtNode}{Stmt\+Node})
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \hyperlink{classtvm_1_1tir_1_1Stmt}{Stmt} \hyperlink{classtvm_1_1tir_1_1StoreNode_a1fb4127cab1ae4efa7c630651f60c768}{make} (\hyperlink{classtvm_1_1tir_1_1Var}{Var} \hyperlink{classtvm_1_1tir_1_1StoreNode_aed2fc3d3c119126a61182666930e8729}{buffer\+\_\+var}, \hyperlink{classtvm_1_1PrimExpr}{Prim\+Expr} \hyperlink{classtvm_1_1tir_1_1StoreNode_ab263339a5ca3f30c5be6498f3db67bc0}{value}, \hyperlink{classtvm_1_1PrimExpr}{Prim\+Expr} \hyperlink{classtvm_1_1tir_1_1StoreNode_adb01cdfb84c4b715cb817dcf49118557}{index}, \hyperlink{classtvm_1_1PrimExpr}{Prim\+Expr} \hyperlink{classtvm_1_1tir_1_1StoreNode_a1f4b2a87017d5c8ff41f79701d91f99a}{predicate})
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classtvm_1_1tir_1_1Var}{Var} \hyperlink{classtvm_1_1tir_1_1StoreNode_aed2fc3d3c119126a61182666930e8729}{buffer\+\_\+var}
+\begin{DoxyCompactList}\small\item\em The buffer variable. \end{DoxyCompactList}\item 
+\hyperlink{classtvm_1_1PrimExpr}{Prim\+Expr} \hyperlink{classtvm_1_1tir_1_1StoreNode_ab263339a5ca3f30c5be6498f3db67bc0}{value}
+\begin{DoxyCompactList}\small\item\em The value to be stored. \end{DoxyCompactList}\item 
+\hyperlink{classtvm_1_1PrimExpr}{Prim\+Expr} \hyperlink{classtvm_1_1tir_1_1StoreNode_adb01cdfb84c4b715cb817dcf49118557}{index}
+\begin{DoxyCompactList}\small\item\em The index locations to be stored. \end{DoxyCompactList}\item 
+\hyperlink{classtvm_1_1PrimExpr}{Prim\+Expr} \hyperlink{classtvm_1_1tir_1_1StoreNode_a1f4b2a87017d5c8ff41f79701d91f99a}{predicate}
+\begin{DoxyCompactList}\small\item\em The predicate to mask which lanes would be stored. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static constexpr const char $\ast$ \hyperlink{classtvm_1_1tir_1_1StoreNode_aa15540d79868b231397a8ffe1f22cf9f}{\+\_\+type\+\_\+key} = \char`\"{}Store\char`\"{}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Store value to the buffer. 
+
+Equivalent to ((D\+Type$\ast$)buffer\+\_\+var)\mbox{[}index\mbox{]} = value. where D\+Type is the type specified by type().element\+\_\+of().
+
+For example, if type = float32x3, then the store will corresponds to
+
+
+\begin{DoxyCode}
+\textcolor{keyword}{auto} buffer = \textcolor{keyword}{static\_cast<}\textcolor{keywordtype}{float}*\textcolor{keyword}{>}(\hyperlink{classtvm_1_1tir_1_1StoreNode_aed2fc3d3c119126a61182666930e8729}{buffer\_var});
+buffer[\hyperlink{classtvm_1_1tir_1_1StoreNode_adb01cdfb84c4b715cb817dcf49118557}{index}.v0] = \hyperlink{classtvm_1_1tir_1_1StoreNode_ab263339a5ca3f30c5be6498f3db67bc0}{value}.v0;
+buffer[\hyperlink{classtvm_1_1tir_1_1StoreNode_adb01cdfb84c4b715cb817dcf49118557}{index}.v1] = \hyperlink{classtvm_1_1tir_1_1StoreNode_ab263339a5ca3f30c5be6498f3db67bc0}{value}.v1;
+buffer[\hyperlink{classtvm_1_1tir_1_1StoreNode_adb01cdfb84c4b715cb817dcf49118557}{index}.v2] = \hyperlink{classtvm_1_1tir_1_1StoreNode_ab263339a5ca3f30c5be6498f3db67bc0}{value}.v2;
+\end{DoxyCode}
+ \begin{DoxySeeAlso}{See also}
+\hyperlink{classtvm_1_1tir_1_1LoadNode}{Load\+Node} 
+\end{DoxySeeAlso}
+
+
+\subsection{Member Function Documentation}
+\index{tvm\+::tir\+::\+Store\+Node@{tvm\+::tir\+::\+Store\+Node}!make@{make}}
+\index{make@{make}!tvm\+::tir\+::\+Store\+Node@{tvm\+::tir\+::\+Store\+Node}}
+\subsubsection[{\texorpdfstring{make(\+Var buffer\+\_\+var, Prim\+Expr value, Prim\+Expr index, Prim\+Expr predicate)}{make(Var buffer_var, PrimExpr value, PrimExpr index, PrimExpr predicate)}}]{\setlength{\rightskip}{0pt plus 5cm}static {\bf Stmt} tvm\+::tir\+::\+Store\+Node\+::make (
+\begin{DoxyParamCaption}
+\item[{{\bf Var}}]{buffer\+\_\+var, }
+\item[{{\bf Prim\+Expr}}]{value, }
+\item[{{\bf Prim\+Expr}}]{index, }
+\item[{{\bf Prim\+Expr}}]{predicate}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}\hypertarget{classtvm_1_1tir_1_1StoreNode_a1fb4127cab1ae4efa7c630651f60c768}{}\label{classtvm_1_1tir_1_1StoreNode_a1fb4127cab1ae4efa7c630651f60c768}
+\index{tvm\+::tir\+::\+Store\+Node@{tvm\+::tir\+::\+Store\+Node}!S\+Equal\+Reduce@{S\+Equal\+Reduce}}
+\index{S\+Equal\+Reduce@{S\+Equal\+Reduce}!tvm\+::tir\+::\+Store\+Node@{tvm\+::tir\+::\+Store\+Node}}
+\subsubsection[{\texorpdfstring{S\+Equal\+Reduce(const Store\+Node $\ast$other, S\+Equal\+Reducer equal) const }{SEqualReduce(const StoreNode *other, SEqualReducer equal) const }}]{\setlength{\rightskip}{0pt plus 5cm}bool tvm\+::tir\+::\+Store\+Node\+::\+S\+Equal\+Reduce (
+\begin{DoxyParamCaption}
+\item[{const {\bf Store\+Node} $\ast$}]{other, }
+\item[{{\bf S\+Equal\+Reducer}}]{equal}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classtvm_1_1tir_1_1StoreNode_a1fdbfaef5042c83fc109a1e53a6cdc74}{}\label{classtvm_1_1tir_1_1StoreNode_a1fdbfaef5042c83fc109a1e53a6cdc74}
+\index{tvm\+::tir\+::\+Store\+Node@{tvm\+::tir\+::\+Store\+Node}!S\+Hash\+Reduce@{S\+Hash\+Reduce}}
+\index{S\+Hash\+Reduce@{S\+Hash\+Reduce}!tvm\+::tir\+::\+Store\+Node@{tvm\+::tir\+::\+Store\+Node}}
+\subsubsection[{\texorpdfstring{S\+Hash\+Reduce(\+S\+Hash\+Reducer hash\+\_\+reduce) const }{SHashReduce(SHashReducer hash_reduce) const }}]{\setlength{\rightskip}{0pt plus 5cm}void tvm\+::tir\+::\+Store\+Node\+::\+S\+Hash\+Reduce (
+\begin{DoxyParamCaption}
+\item[{{\bf S\+Hash\+Reducer}}]{hash\+\_\+reduce}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classtvm_1_1tir_1_1StoreNode_a70ef320d87e4f42f7d4abe43d6c9c980}{}\label{classtvm_1_1tir_1_1StoreNode_a70ef320d87e4f42f7d4abe43d6c9c980}
+\index{tvm\+::tir\+::\+Store\+Node@{tvm\+::tir\+::\+Store\+Node}!T\+V\+M\+\_\+\+D\+E\+C\+L\+A\+R\+E\+\_\+\+F\+I\+N\+A\+L\+\_\+\+O\+B\+J\+E\+C\+T\+\_\+\+I\+N\+FO@{T\+V\+M\+\_\+\+D\+E\+C\+L\+A\+R\+E\+\_\+\+F\+I\+N\+A\+L\+\_\+\+O\+B\+J\+E\+C\+T\+\_\+\+I\+N\+FO}}
+\index{T\+V\+M\+\_\+\+D\+E\+C\+L\+A\+R\+E\+\_\+\+F\+I\+N\+A\+L\+\_\+\+O\+B\+J\+E\+C\+T\+\_\+\+I\+N\+FO@{T\+V\+M\+\_\+\+D\+E\+C\+L\+A\+R\+E\+\_\+\+F\+I\+N\+A\+L\+\_\+\+O\+B\+J\+E\+C\+T\+\_\+\+I\+N\+FO}!tvm\+::tir\+::\+Store\+Node@{tvm\+::tir\+::\+Store\+Node}}
+\subsubsection[{\texorpdfstring{T\+V\+M\+\_\+\+D\+E\+C\+L\+A\+R\+E\+\_\+\+F\+I\+N\+A\+L\+\_\+\+O\+B\+J\+E\+C\+T\+\_\+\+I\+N\+F\+O(\+Store\+Node, Stmt\+Node)}{TVM_DECLARE_FINAL_OBJECT_INFO(StoreNode, StmtNode)}}]{\setlength{\rightskip}{0pt plus 5cm}tvm\+::tir\+::\+Store\+Node\+::\+T\+V\+M\+\_\+\+D\+E\+C\+L\+A\+R\+E\+\_\+\+F\+I\+N\+A\+L\+\_\+\+O\+B\+J\+E\+C\+T\+\_\+\+I\+N\+FO (
+\begin{DoxyParamCaption}
+\item[{{\bf Store\+Node}}]{, }
+\item[{{\bf Stmt\+Node}}]{}
+\end{DoxyParamCaption}
+)}\hypertarget{classtvm_1_1tir_1_1StoreNode_ab320356d8d0645fc93ea21cad679b0c3}{}\label{classtvm_1_1tir_1_1StoreNode_ab320356d8d0645fc93ea21cad679b0c3}
+\index{tvm\+::tir\+::\+Store\+Node@{tvm\+::tir\+::\+Store\+Node}!Visit\+Attrs@{Visit\+Attrs}}
+\index{Visit\+Attrs@{Visit\+Attrs}!tvm\+::tir\+::\+Store\+Node@{tvm\+::tir\+::\+Store\+Node}}
+\subsubsection[{\texorpdfstring{Visit\+Attrs(\+Attr\+Visitor $\ast$v)}{VisitAttrs(AttrVisitor *v)}}]{\setlength{\rightskip}{0pt plus 5cm}void tvm\+::tir\+::\+Store\+Node\+::\+Visit\+Attrs (
+\begin{DoxyParamCaption}
+\item[{{\bf Attr\+Visitor} $\ast$}]{v}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classtvm_1_1tir_1_1StoreNode_a3f6c20a2767139e3a6555554f1e130a4}{}\label{classtvm_1_1tir_1_1StoreNode_a3f6c20a2767139e3a6555554f1e130a4}
+
+
+\subsection{Member Data Documentation}
+\index{tvm\+::tir\+::\+Store\+Node@{tvm\+::tir\+::\+Store\+Node}!\+\_\+type\+\_\+key@{\+\_\+type\+\_\+key}}
+\index{\+\_\+type\+\_\+key@{\+\_\+type\+\_\+key}!tvm\+::tir\+::\+Store\+Node@{tvm\+::tir\+::\+Store\+Node}}
+\subsubsection[{\texorpdfstring{\+\_\+type\+\_\+key}{_type_key}}]{\setlength{\rightskip}{0pt plus 5cm}constexpr const char$\ast$ tvm\+::tir\+::\+Store\+Node\+::\+\_\+type\+\_\+key = \char`\"{}Store\char`\"{}\hspace{0.3cm}{\ttfamily [static]}}\hypertarget{classtvm_1_1tir_1_1StoreNode_aa15540d79868b231397a8ffe1f22cf9f}{}\label{classtvm_1_1tir_1_1StoreNode_aa15540d79868b231397a8ffe1f22cf9f}
+\index{tvm\+::tir\+::\+Store\+Node@{tvm\+::tir\+::\+Store\+Node}!buffer\+\_\+var@{buffer\+\_\+var}}
+\index{buffer\+\_\+var@{buffer\+\_\+var}!tvm\+::tir\+::\+Store\+Node@{tvm\+::tir\+::\+Store\+Node}}
+\subsubsection[{\texorpdfstring{buffer\+\_\+var}{buffer_var}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Var} tvm\+::tir\+::\+Store\+Node\+::buffer\+\_\+var}\hypertarget{classtvm_1_1tir_1_1StoreNode_aed2fc3d3c119126a61182666930e8729}{}\label{classtvm_1_1tir_1_1StoreNode_aed2fc3d3c119126a61182666930e8729}
+
+
+The buffer variable. 
+
+\index{tvm\+::tir\+::\+Store\+Node@{tvm\+::tir\+::\+Store\+Node}!index@{index}}
+\index{index@{index}!tvm\+::tir\+::\+Store\+Node@{tvm\+::tir\+::\+Store\+Node}}
+\subsubsection[{\texorpdfstring{index}{index}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Prim\+Expr} tvm\+::tir\+::\+Store\+Node\+::index}\hypertarget{classtvm_1_1tir_1_1StoreNode_adb01cdfb84c4b715cb817dcf49118557}{}\label{classtvm_1_1tir_1_1StoreNode_adb01cdfb84c4b715cb817dcf49118557}
+
+
+The index locations to be stored. 
+
+\index{tvm\+::tir\+::\+Store\+Node@{tvm\+::tir\+::\+Store\+Node}!predicate@{predicate}}
+\index{predicate@{predicate}!tvm\+::tir\+::\+Store\+Node@{tvm\+::tir\+::\+Store\+Node}}
+\subsubsection[{\texorpdfstring{predicate}{predicate}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Prim\+Expr} tvm\+::tir\+::\+Store\+Node\+::predicate}\hypertarget{classtvm_1_1tir_1_1StoreNode_a1f4b2a87017d5c8ff41f79701d91f99a}{}\label{classtvm_1_1tir_1_1StoreNode_a1f4b2a87017d5c8ff41f79701d91f99a}
+
+
+The predicate to mask which lanes would be stored. 
+
+\index{tvm\+::tir\+::\+Store\+Node@{tvm\+::tir\+::\+Store\+Node}!value@{value}}
+\index{value@{value}!tvm\+::tir\+::\+Store\+Node@{tvm\+::tir\+::\+Store\+Node}}
+\subsubsection[{\texorpdfstring{value}{value}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Prim\+Expr} tvm\+::tir\+::\+Store\+Node\+::value}\hypertarget{classtvm_1_1tir_1_1StoreNode_ab263339a5ca3f30c5be6498f3db67bc0}{}\label{classtvm_1_1tir_1_1StoreNode_ab263339a5ca3f30c5be6498f3db67bc0}
+
+
+The value to be stored. 
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+include/tvm/tir/\hyperlink{stmt_8h}{stmt.\+h}\end{DoxyCompactItemize}

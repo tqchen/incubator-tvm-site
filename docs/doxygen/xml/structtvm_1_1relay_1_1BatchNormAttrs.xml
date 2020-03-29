@@ -1,0 +1,158 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="structtvm_1_1relay_1_1BatchNormAttrs" kind="struct" language="C++" prot="public">
+    <compoundname>tvm::relay::BatchNormAttrs</compoundname>
+    <basecompoundref refid="classtvm_1_1AttrsNode" prot="public" virt="non-virtual">tvm::AttrsNode&lt; BatchNormAttrs &gt;</basecompoundref>
+    <includes refid="include_2tvm_2relay_2attrs_2nn_8h" local="no">nn.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structtvm_1_1relay_1_1BatchNormAttrs_1a162a37ae1c83ff610f1743ac91013d88" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int tvm::relay::BatchNormAttrs::axis</definition>
+        <argsstring></argsstring>
+        <name>axis</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/relay/attrs/nn.h" line="831" column="1" bodyfile="include/tvm/relay/attrs/nn.h" bodystart="831" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structtvm_1_1relay_1_1BatchNormAttrs_1acbdb18e57584b13352e7470f2948db15" prot="public" static="no" mutable="no">
+        <type>double</type>
+        <definition>double tvm::relay::BatchNormAttrs::epsilon</definition>
+        <argsstring></argsstring>
+        <name>epsilon</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/relay/attrs/nn.h" line="832" column="1" bodyfile="include/tvm/relay/attrs/nn.h" bodystart="832" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structtvm_1_1relay_1_1BatchNormAttrs_1ab0ad1e2be87f4e12d9e46b2da6c12713" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool tvm::relay::BatchNormAttrs::center</definition>
+        <argsstring></argsstring>
+        <name>center</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/relay/attrs/nn.h" line="833" column="1" bodyfile="include/tvm/relay/attrs/nn.h" bodystart="833" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structtvm_1_1relay_1_1BatchNormAttrs_1a24be5ce23e38232943c34324885377ff" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool tvm::relay::BatchNormAttrs::scale</definition>
+        <argsstring></argsstring>
+        <name>scale</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/relay/attrs/nn.h" line="834" column="1" bodyfile="include/tvm/relay/attrs/nn.h" bodystart="834" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="structtvm_1_1relay_1_1BatchNormAttrs_1a485b2c49acb6785fb00741ee626800be" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>tvm::relay::BatchNormAttrs::TVM_DECLARE_ATTRS</definition>
+        <argsstring>(BatchNormAttrs,&quot;relay.attrs.BatchNormAttrs&quot;)</argsstring>
+        <name>TVM_DECLARE_ATTRS</name>
+        <param>
+          <type><ref refid="structtvm_1_1relay_1_1BatchNormAttrs" kindref="compound">BatchNormAttrs</ref></type>
+        </param>
+        <param>
+          <type>&quot;relay.attrs.BatchNormAttrs&quot;</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/relay/attrs/nn.h" line="836" column="1" bodyfile="include/tvm/relay/attrs/nn.h" bodystart="836" bodyend="851"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Attributes used in batch_norm operator. </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="4385">
+        <label>tvm::AttrsNode&lt; BatchNormAttrs &gt;</label>
+        <link refid="classtvm_1_1AttrsNode"/>
+        <childnode refid="4386" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="4384">
+        <label>tvm::relay::BatchNormAttrs</label>
+        <link refid="structtvm_1_1relay_1_1BatchNormAttrs"/>
+        <childnode refid="4385" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="4386">
+        <label>tvm::BaseAttrsNode</label>
+        <link refid="classtvm_1_1BaseAttrsNode"/>
+        <childnode refid="4387" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="4387">
+        <label>Object</label>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="4389">
+        <label>tvm::AttrsNode&lt; BatchNormAttrs &gt;</label>
+        <link refid="classtvm_1_1AttrsNode"/>
+        <childnode refid="4390" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="4388">
+        <label>tvm::relay::BatchNormAttrs</label>
+        <link refid="structtvm_1_1relay_1_1BatchNormAttrs"/>
+        <childnode refid="4389" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="4390">
+        <label>tvm::BaseAttrsNode</label>
+        <link refid="classtvm_1_1BaseAttrsNode"/>
+        <childnode refid="4391" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="4391">
+        <label>Object</label>
+      </node>
+    </collaborationgraph>
+    <location file="include/tvm/relay/attrs/nn.h" line="830" column="1" bodyfile="include/tvm/relay/attrs/nn.h" bodystart="830" bodyend="852"/>
+    <listofallmembers>
+      <member refid="classtvm_1_1BaseAttrsNode_1ad812afdb028fe3944a80cd922dceff82" prot="public" virt="non-virtual"><scope>tvm::relay::BatchNormAttrs</scope><name>_type_has_method_sequal_reduce</name></member>
+      <member refid="classtvm_1_1BaseAttrsNode_1ad85f4aca5e8840d23851c0c07acd0862" prot="public" virt="non-virtual"><scope>tvm::relay::BatchNormAttrs</scope><name>_type_has_method_shash_reduce</name></member>
+      <member refid="classtvm_1_1BaseAttrsNode_1a8e4fd4e728774e0556cda84b0c2b80d6" prot="public" virt="non-virtual"><scope>tvm::relay::BatchNormAttrs</scope><name>_type_key</name></member>
+      <member refid="structtvm_1_1relay_1_1BatchNormAttrs_1a162a37ae1c83ff610f1743ac91013d88" prot="public" virt="non-virtual"><scope>tvm::relay::BatchNormAttrs</scope><name>axis</name></member>
+      <member refid="structtvm_1_1relay_1_1BatchNormAttrs_1ab0ad1e2be87f4e12d9e46b2da6c12713" prot="public" virt="non-virtual"><scope>tvm::relay::BatchNormAttrs</scope><name>center</name></member>
+      <member refid="classtvm_1_1AttrsNode_1a7f609d3a1b52df0b442793f043cc49ae" prot="public" virt="virtual"><scope>tvm::relay::BatchNormAttrs</scope><name>ContentEqual</name></member>
+      <member refid="classtvm_1_1AttrsNode_1abe3e0fd8559c5d446a136490d4dbee12" prot="public" virt="virtual"><scope>tvm::relay::BatchNormAttrs</scope><name>ContentHash</name></member>
+      <member refid="structtvm_1_1relay_1_1BatchNormAttrs_1acbdb18e57584b13352e7470f2948db15" prot="public" virt="non-virtual"><scope>tvm::relay::BatchNormAttrs</scope><name>epsilon</name></member>
+      <member refid="classtvm_1_1AttrsNode_1acfba199ef906818f35432d2e5532559a" prot="public" virt="virtual"><scope>tvm::relay::BatchNormAttrs</scope><name>InitByPackedArgs</name></member>
+      <member refid="classtvm_1_1BaseAttrsNode_1aef9e5266d16e163ccc7b1b16c1ea3269" prot="public" virt="non-virtual"><scope>tvm::relay::BatchNormAttrs</scope><name>InitBySeq</name></member>
+      <member refid="classtvm_1_1AttrsNode_1acefe615381b5d881870af9db7ce6a981" prot="public" virt="virtual"><scope>tvm::relay::BatchNormAttrs</scope><name>ListFieldInfo</name></member>
+      <member refid="classtvm_1_1BaseAttrsNode_1a118837841487c80b157dbead88f18513" prot="public" virt="non-virtual"><scope>tvm::relay::BatchNormAttrs</scope><name>PrintDocString</name></member>
+      <member refid="structtvm_1_1relay_1_1BatchNormAttrs_1a24be5ce23e38232943c34324885377ff" prot="public" virt="non-virtual"><scope>tvm::relay::BatchNormAttrs</scope><name>scale</name></member>
+      <member refid="classtvm_1_1AttrsNode_1af8192054af4e2797953cc7b67625092f" prot="public" virt="non-virtual"><scope>tvm::relay::BatchNormAttrs</scope><name>SEqualReduce</name></member>
+      <member refid="classtvm_1_1AttrsNode_1ad6cc4d8a955e30b9f55c0b5367ccce38" prot="public" virt="non-virtual"><scope>tvm::relay::BatchNormAttrs</scope><name>SHashReduce</name></member>
+      <member refid="structtvm_1_1relay_1_1BatchNormAttrs_1a485b2c49acb6785fb00741ee626800be" prot="public" virt="non-virtual"><scope>tvm::relay::BatchNormAttrs</scope><name>TVM_DECLARE_ATTRS</name></member>
+      <member refid="classtvm_1_1BaseAttrsNode_1aaca524319f015a18a1385cfea5ba8895" prot="public" virt="non-virtual"><scope>tvm::relay::BatchNormAttrs</scope><name>TVM_DECLARE_BASE_OBJECT_INFO</name></member>
+      <member refid="classtvm_1_1BaseAttrsNode_1a257561dad74174cbdc08f6725a45d8ac" prot="public" virt="non-virtual"><scope>tvm::relay::BatchNormAttrs</scope><name>TVMArgs</name></member>
+      <member refid="classtvm_1_1BaseAttrsNode_1a1f56f080d0c1fab79d9469029aef8ebb" prot="public" virt="non-virtual"><scope>tvm::relay::BatchNormAttrs</scope><name>TVMRetValue</name></member>
+      <member refid="classtvm_1_1AttrsNode_1a5da687ced06b4f2dfa04b142a34a9c72" prot="public" virt="virtual"><scope>tvm::relay::BatchNormAttrs</scope><name>VisitAttrs</name></member>
+      <member refid="classtvm_1_1AttrsNode_1acd05137ba529ac7cd07053e3da885205" prot="public" virt="virtual"><scope>tvm::relay::BatchNormAttrs</scope><name>VisitNonDefaultAttrs</name></member>
+      <member refid="classtvm_1_1BaseAttrsNode_1a225581a40231b2de219da30fced428a2" prot="public" virt="virtual"><scope>tvm::relay::BatchNormAttrs</scope><name>~BaseAttrsNode</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,198 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="namespacetopi_1_1generic" kind="namespace" language="C++">
+    <compoundname>topi::generic</compoundname>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="namespacetopi_1_1generic_1abc753fc92d16de874fb5febde604e4f3" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classtvm_1_1te_1_1Schedule" kindref="compound">Schedule</ref></type>
+        <definition>Schedule topi::generic::default_schedule</definition>
+        <argsstring>(const Target &amp;target, Array&lt; Tensor &gt; outs)</argsstring>
+        <name>default_schedule</name>
+        <param>
+          <type>const <ref refid="classtvm_1_1Target" kindref="compound">Target</ref> &amp;</type>
+          <declname>target</declname>
+        </param>
+        <param>
+          <type><ref refid="classtvm_1_1Array" kindref="compound">Array</ref>&lt; <ref refid="classtvm_1_1te_1_1Tensor" kindref="compound">Tensor</ref> &gt;</type>
+          <declname>outs</declname>
+        </param>
+        <briefdescription>
+<para>Create a generic default schedule for the given output tensors. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>target</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The target to generate a schedule for. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>outs</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The output tensors.</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>A schedule for the given ops. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="topi/include/topi/generic/default.h" line="46" column="1" bodyfile="topi/include/topi/generic/default.h" bodystart="46" bodyend="53"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacetopi_1_1generic_1a105c5aaed7d861da8ae27259126722ba" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classtvm_1_1te_1_1Schedule" kindref="compound">Schedule</ref></type>
+        <definition>Schedule topi::generic::default_schedule_auto_inline</definition>
+        <argsstring>(const Target &amp;target, Array&lt; Tensor &gt; outs)</argsstring>
+        <name>default_schedule_auto_inline</name>
+        <param>
+          <type>const <ref refid="classtvm_1_1Target" kindref="compound">Target</ref> &amp;</type>
+          <declname>target</declname>
+        </param>
+        <param>
+          <type><ref refid="classtvm_1_1Array" kindref="compound">Array</ref>&lt; <ref refid="classtvm_1_1te_1_1Tensor" kindref="compound">Tensor</ref> &gt;</type>
+          <declname>outs</declname>
+        </param>
+        <briefdescription>
+<para>Create a generic default schedule for the given output tensors, and apply auto inline. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>target</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The target to generate a schedule for. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>outs</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The output tensors.</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>A schedule for the given ops. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="topi/include/topi/generic/default.h" line="64" column="1" bodyfile="topi/include/topi/generic/default.h" bodystart="64" bodyend="77"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacetopi_1_1generic_1a63d40a8d62c878ba683e3f945bd76873" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classtvm_1_1te_1_1Schedule" kindref="compound">Schedule</ref></type>
+        <definition>Schedule topi::generic::schedule_extern</definition>
+        <argsstring>(const Target &amp;target, Array&lt; Tensor &gt; outs)</argsstring>
+        <name>schedule_extern</name>
+        <param>
+          <type>const <ref refid="classtvm_1_1Target" kindref="compound">Target</ref> &amp;</type>
+          <declname>target</declname>
+        </param>
+        <param>
+          <type><ref refid="classtvm_1_1Array" kindref="compound">Array</ref>&lt; <ref refid="classtvm_1_1te_1_1Tensor" kindref="compound">Tensor</ref> &gt;</type>
+          <declname>outs</declname>
+        </param>
+        <briefdescription>
+<para>Schedule an extern op followed by injective operations. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>target</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The target to generate a schedule for. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>outs</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The output tensors.</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>A schedule for the op. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="topi/include/topi/generic/extern.h" line="47" column="1" bodyfile="topi/include/topi/generic/extern.h" bodystart="47" bodyend="63"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacetopi_1_1generic_1a301d2d9cb6cdba4de67325c37df037dd" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classtvm_1_1te_1_1Schedule" kindref="compound">Schedule</ref></type>
+        <definition>Schedule topi::generic::schedule_injective_from_existing</definition>
+        <argsstring>(Schedule sch, const Tensor &amp;out)</argsstring>
+        <name>schedule_injective_from_existing</name>
+        <param>
+          <type><ref refid="classtvm_1_1te_1_1Schedule" kindref="compound">Schedule</ref></type>
+          <declname>sch</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classtvm_1_1te_1_1Tensor" kindref="compound">Tensor</ref> &amp;</type>
+          <declname>out</declname>
+        </param>
+        <briefdescription>
+<para>Updates an existing schedule for the given injective ops. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>sch</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The schedule to update. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>out</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The tensor representing the injective op.</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The updated schedule. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="topi/include/topi/generic/injective.h" line="47" column="1" bodyfile="topi/include/topi/generic/injective.h" bodystart="47" bodyend="50"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacetopi_1_1generic_1a2b769f24e728d2658734280a237fbe84" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classtvm_1_1te_1_1Schedule" kindref="compound">Schedule</ref></type>
+        <definition>Schedule topi::generic::schedule_injective</definition>
+        <argsstring>(const Target &amp;target, const Array&lt; Tensor &gt; &amp;outs)</argsstring>
+        <name>schedule_injective</name>
+        <param>
+          <type>const <ref refid="classtvm_1_1Target" kindref="compound">Target</ref> &amp;</type>
+          <declname>target</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classtvm_1_1Array" kindref="compound">Array</ref>&lt; <ref refid="classtvm_1_1te_1_1Tensor" kindref="compound">Tensor</ref> &gt; &amp;</type>
+          <declname>outs</declname>
+        </param>
+        <briefdescription>
+<para>Create a generic schedule for the given injective ops. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>target</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The target to generate a schedule for. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>outs</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The output tensors.</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>A schedule for the given ops. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="topi/include/topi/generic/injective.h" line="60" column="1" bodyfile="topi/include/topi/generic/injective.h" bodystart="60" bodyend="71"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="topi/include/topi/generic/default.h" line="37" column="1"/>
+  </compounddef>
+</doxygen>

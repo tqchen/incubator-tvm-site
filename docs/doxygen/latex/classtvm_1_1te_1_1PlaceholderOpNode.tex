@@ -1,0 +1,364 @@
+\hypertarget{classtvm_1_1te_1_1PlaceholderOpNode}{}\section{tvm\+:\+:te\+:\+:Placeholder\+Op\+Node Class Reference}
+\label{classtvm_1_1te_1_1PlaceholderOpNode}\index{tvm\+::te\+::\+Placeholder\+Op\+Node@{tvm\+::te\+::\+Placeholder\+Op\+Node}}
+
+
+A placeholder op represents an input placeholder.  
+
+
+
+
+{\ttfamily \#include $<$operation.\+h$>$}
+
+
+
+Inheritance diagram for tvm\+:\+:te\+:\+:Placeholder\+Op\+Node\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{classtvm_1_1te_1_1PlaceholderOpNode__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for tvm\+:\+:te\+:\+:Placeholder\+Op\+Node\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{classtvm_1_1te_1_1PlaceholderOpNode__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+int \hyperlink{classtvm_1_1te_1_1PlaceholderOpNode_a777ce9b0843eaaa37d0667b14d50059a}{num\+\_\+outputs} () const final
+\item 
+\hyperlink{classtvm_1_1Array}{Array}$<$ \hyperlink{classtvm_1_1tir_1_1IterVar}{Iter\+Var} $>$ \hyperlink{classtvm_1_1te_1_1PlaceholderOpNode_aed3620e14c76716f976ffec15a68f074}{root\+\_\+iter\+\_\+vars} () const final
+\item 
+\hyperlink{namespacetvm_a41918af1a1dc386388639a9d3ad06c5d}{Data\+Type} \hyperlink{classtvm_1_1te_1_1PlaceholderOpNode_a84d9963cba34ebe035091c15f10d3bff}{output\+\_\+dtype} (size\+\_\+t i) const final
+\begin{DoxyCompactList}\small\item\em Get data type. i-\/th output tensor. \end{DoxyCompactList}\item 
+\hyperlink{classtvm_1_1Array}{Array}$<$ \hyperlink{classtvm_1_1PrimExpr}{Prim\+Expr} $>$ \hyperlink{classtvm_1_1te_1_1PlaceholderOpNode_a22624cba74f79b3fa5a6ac2a4b986c79}{output\+\_\+shape} (size\+\_\+t i) const final
+\begin{DoxyCompactList}\small\item\em Get shape of i-\/th output tensor. \end{DoxyCompactList}\item 
+\hyperlink{classtvm_1_1Array}{Array}$<$ \hyperlink{classtvm_1_1te_1_1Tensor}{Tensor} $>$ \hyperlink{classtvm_1_1te_1_1PlaceholderOpNode_a598ce6ccf1c0c5b68263f2f6b0434b50}{Input\+Tensors} () const final
+\begin{DoxyCompactList}\small\item\em List all the input Tensors. \end{DoxyCompactList}\item 
+\hyperlink{classtvm_1_1te_1_1Operation}{Operation} \hyperlink{classtvm_1_1te_1_1PlaceholderOpNode_a8fe0700318a8292c45faeca6c992bc4e}{Replace\+Inputs} (const \hyperlink{classtvm_1_1te_1_1Operation}{Operation} \&self, const std\+::unordered\+\_\+map$<$ \hyperlink{classtvm_1_1te_1_1Tensor}{Tensor}, \hyperlink{classtvm_1_1te_1_1Tensor}{Tensor} $>$ \&rmap) const final
+\begin{DoxyCompactList}\small\item\em Replace the input of the operation by pattern specified by rmap. \end{DoxyCompactList}\item 
+void \hyperlink{classtvm_1_1te_1_1PlaceholderOpNode_aa7c4daa391954629cbc0eb9d91ed0ed3}{Prop\+Bound\+To\+Inputs} (const \hyperlink{classtvm_1_1te_1_1Operation}{Operation} \&self, \hyperlink{classtvm_1_1arith_1_1Analyzer}{arith\+::\+Analyzer} $\ast$analyzer, const std\+::unordered\+\_\+map$<$ const \hyperlink{classtvm_1_1tir_1_1VarNode}{Var\+Node} $\ast$, Int\+Set $>$ \&dom\+\_\+map, std\+::unordered\+\_\+map$<$ \hyperlink{classtvm_1_1te_1_1Tensor}{Tensor}, \hyperlink{structtvm_1_1te_1_1TensorDom}{Tensor\+Dom} $>$ $\ast$out\+\_\+dom\+\_\+map) const final
+\begin{DoxyCompactList}\small\item\em Propagate the bounds to inputs. \end{DoxyCompactList}\item 
+void \hyperlink{classtvm_1_1te_1_1PlaceholderOpNode_ab4e1418bc5187cad2710bc5156e3ac5b}{Gather\+Bound} (const \hyperlink{classtvm_1_1te_1_1Operation}{Operation} \&self, const std\+::unordered\+\_\+map$<$ \hyperlink{classtvm_1_1te_1_1Tensor}{Tensor}, \hyperlink{structtvm_1_1te_1_1TensorDom}{Tensor\+Dom} $>$ \&tensor\+\_\+dom, std\+::unordered\+\_\+map$<$ \hyperlink{classtvm_1_1tir_1_1IterVar}{Iter\+Var}, \hyperlink{classtvm_1_1Range}{Range} $>$ $\ast$out\+\_\+dom\+\_\+map) const final
+\begin{DoxyCompactList}\small\item\em Gather the bound from output tensor. Set the range of each root\+\_\+iter\+\_\+vars in the op to out\+\_\+dom\+\_\+map. \end{DoxyCompactList}\item 
+\hyperlink{classtvm_1_1tir_1_1Stmt}{Stmt} \hyperlink{classtvm_1_1te_1_1PlaceholderOpNode_a524d658c650915abff3a2388b9c3d0c5}{Build\+Realize} (const \hyperlink{classtvm_1_1te_1_1Stage}{Stage} \&stage, const std\+::unordered\+\_\+map$<$ \hyperlink{classtvm_1_1tir_1_1IterVar}{Iter\+Var}, \hyperlink{classtvm_1_1Range}{Range} $>$ \&realize\+\_\+map, const \hyperlink{classtvm_1_1tir_1_1Stmt}{Stmt} \&body) const final
+\begin{DoxyCompactList}\small\item\em Build the Realize statement that realizes the op\textquotesingle{}s output tensors. \end{DoxyCompactList}\item 
+\hyperlink{classtvm_1_1tir_1_1Stmt}{Stmt} \hyperlink{classtvm_1_1te_1_1PlaceholderOpNode_a3571782a91faade829f9b11a5893cba1}{Build\+Provide} (const \hyperlink{classtvm_1_1te_1_1Stage}{Stage} \&stage, const std\+::unordered\+\_\+map$<$ \hyperlink{classtvm_1_1tir_1_1IterVar}{Iter\+Var}, \hyperlink{classtvm_1_1Range}{Range} $>$ \&dom\+\_\+map, bool debug\+\_\+keep\+\_\+trivial\+\_\+loop) const final
+\begin{DoxyCompactList}\small\item\em Build the statement that provide the output tensors. \end{DoxyCompactList}\item 
+void \hyperlink{classtvm_1_1te_1_1PlaceholderOpNode_a5bf09a2782cf05e19d0912ec3fbba9e9}{Visit\+Attrs} (\hyperlink{classtvm_1_1AttrVisitor}{Attr\+Visitor} $\ast$v)
+\item 
+\hyperlink{classtvm_1_1te_1_1PlaceholderOpNode_af6c7ed8827416057732e6b9e8eef513e}{T\+V\+M\+\_\+\+D\+E\+C\+L\+A\+R\+E\+\_\+\+F\+I\+N\+A\+L\+\_\+\+O\+B\+J\+E\+C\+T\+\_\+\+I\+N\+FO} (\hyperlink{classtvm_1_1te_1_1PlaceholderOpNode}{Placeholder\+Op\+Node}, \hyperlink{classtvm_1_1te_1_1OperationNode}{Operation\+Node})
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \hyperlink{classtvm_1_1te_1_1Operation}{Operation} \hyperlink{classtvm_1_1te_1_1PlaceholderOpNode_a8141a03c4cf35d02860ed44b6773a7ca}{make} (std\+::string \hyperlink{classtvm_1_1te_1_1OperationNode_ad2fd6f140257f7b3c311f88374fa74d2}{name}, \hyperlink{classtvm_1_1Array}{Array}$<$ \hyperlink{classtvm_1_1PrimExpr}{Prim\+Expr} $>$ \hyperlink{classtvm_1_1te_1_1PlaceholderOpNode_a301fb989a618e248d69120f6c7b33c3f}{shape}, \hyperlink{namespacetvm_a41918af1a1dc386388639a9d3ad06c5d}{Data\+Type} \hyperlink{classtvm_1_1te_1_1PlaceholderOpNode_a4c0ad4ece5214f3638a101c3f4aef38b}{dtype})
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classtvm_1_1Array}{Array}$<$ \hyperlink{classtvm_1_1PrimExpr}{Prim\+Expr} $>$ \hyperlink{classtvm_1_1te_1_1PlaceholderOpNode_a301fb989a618e248d69120f6c7b33c3f}{shape}
+\begin{DoxyCompactList}\small\item\em The shape of the input. \end{DoxyCompactList}\item 
+\hyperlink{namespacetvm_a41918af1a1dc386388639a9d3ad06c5d}{Data\+Type} \hyperlink{classtvm_1_1te_1_1PlaceholderOpNode_a4c0ad4ece5214f3638a101c3f4aef38b}{dtype}
+\begin{DoxyCompactList}\small\item\em The data type of the input. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static constexpr const char $\ast$ \hyperlink{classtvm_1_1te_1_1PlaceholderOpNode_a516d9ad8c441fc3eb93d1a0d112bacd1}{\+\_\+type\+\_\+key} = \char`\"{}Placeholder\+Op\char`\"{}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+A placeholder op represents an input placeholder. 
+
+\subsection{Member Function Documentation}
+\index{tvm\+::te\+::\+Placeholder\+Op\+Node@{tvm\+::te\+::\+Placeholder\+Op\+Node}!Build\+Provide@{Build\+Provide}}
+\index{Build\+Provide@{Build\+Provide}!tvm\+::te\+::\+Placeholder\+Op\+Node@{tvm\+::te\+::\+Placeholder\+Op\+Node}}
+\subsubsection[{\texorpdfstring{Build\+Provide(const Stage \&stage, const std\+::unordered\+\_\+map$<$ Iter\+Var, Range $>$ \&dom\+\_\+map, bool debug\+\_\+keep\+\_\+trivial\+\_\+loop) const final}{BuildProvide(const Stage &stage, const std::unordered_map< IterVar, Range > &dom_map, bool debug_keep_trivial_loop) const final}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Stmt} tvm\+::te\+::\+Placeholder\+Op\+Node\+::\+Build\+Provide (
+\begin{DoxyParamCaption}
+\item[{const {\bf Stage} \&}]{stage, }
+\item[{const std\+::unordered\+\_\+map$<$ {\bf Iter\+Var}, {\bf Range} $>$ \&}]{dom\+\_\+map, }
+\item[{bool}]{debug\+\_\+keep\+\_\+trivial\+\_\+loop}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [final]}, {\ttfamily [virtual]}}\hypertarget{classtvm_1_1te_1_1PlaceholderOpNode_a3571782a91faade829f9b11a5893cba1}{}\label{classtvm_1_1te_1_1PlaceholderOpNode_a3571782a91faade829f9b11a5893cba1}
+
+
+Build the statement that provide the output tensors. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em stage} & The schedule stage of the op. \\
+\hline
+{\em dom\+\_\+map} & The domain map of all iteration domains. \\
+\hline
+{\em debug\+\_\+keep\+\_\+trivial\+\_\+loop} & Whether keep trivial loops with extent of 1 \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A statement that add production and wraps consumer. 
+\end{DoxyReturn}
+
+
+Implements \hyperlink{classtvm_1_1te_1_1OperationNode_a0a4a33f450e0e0890f59af9464c9015f}{tvm\+::te\+::\+Operation\+Node}.
+
+\index{tvm\+::te\+::\+Placeholder\+Op\+Node@{tvm\+::te\+::\+Placeholder\+Op\+Node}!Build\+Realize@{Build\+Realize}}
+\index{Build\+Realize@{Build\+Realize}!tvm\+::te\+::\+Placeholder\+Op\+Node@{tvm\+::te\+::\+Placeholder\+Op\+Node}}
+\subsubsection[{\texorpdfstring{Build\+Realize(const Stage \&stage, const std\+::unordered\+\_\+map$<$ Iter\+Var, Range $>$ \&realize\+\_\+map, const Stmt \&body) const final}{BuildRealize(const Stage &stage, const std::unordered_map< IterVar, Range > &realize_map, const Stmt &body) const final}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Stmt} tvm\+::te\+::\+Placeholder\+Op\+Node\+::\+Build\+Realize (
+\begin{DoxyParamCaption}
+\item[{const {\bf Stage} \&}]{stage, }
+\item[{const std\+::unordered\+\_\+map$<$ {\bf Iter\+Var}, {\bf Range} $>$ \&}]{realize\+\_\+map, }
+\item[{const {\bf Stmt} \&}]{body}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [final]}, {\ttfamily [virtual]}}\hypertarget{classtvm_1_1te_1_1PlaceholderOpNode_a524d658c650915abff3a2388b9c3d0c5}{}\label{classtvm_1_1te_1_1PlaceholderOpNode_a524d658c650915abff3a2388b9c3d0c5}
+
+
+Build the Realize statement that realizes the op\textquotesingle{}s output tensors. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em stage} & the op\textquotesingle{}s stage. \\
+\hline
+{\em realize\+\_\+map} & The realization domain map of the operators. \\
+\hline
+{\em body} & The body that is going to get \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A realization statement that wraps body. 
+\end{DoxyReturn}
+
+
+Implements \hyperlink{classtvm_1_1te_1_1OperationNode_afc89a6b2f5e35adf79c3587a95ba283a}{tvm\+::te\+::\+Operation\+Node}.
+
+\index{tvm\+::te\+::\+Placeholder\+Op\+Node@{tvm\+::te\+::\+Placeholder\+Op\+Node}!Gather\+Bound@{Gather\+Bound}}
+\index{Gather\+Bound@{Gather\+Bound}!tvm\+::te\+::\+Placeholder\+Op\+Node@{tvm\+::te\+::\+Placeholder\+Op\+Node}}
+\subsubsection[{\texorpdfstring{Gather\+Bound(const Operation \&self, const std\+::unordered\+\_\+map$<$ Tensor, Tensor\+Dom $>$ \&tensor\+\_\+dom, std\+::unordered\+\_\+map$<$ Iter\+Var, Range $>$ $\ast$out\+\_\+dom\+\_\+map) const final}{GatherBound(const Operation &self, const std::unordered_map< Tensor, TensorDom > &tensor_dom, std::unordered_map< IterVar, Range > *out_dom_map) const final}}]{\setlength{\rightskip}{0pt plus 5cm}void tvm\+::te\+::\+Placeholder\+Op\+Node\+::\+Gather\+Bound (
+\begin{DoxyParamCaption}
+\item[{const {\bf Operation} \&}]{self, }
+\item[{const std\+::unordered\+\_\+map$<$ {\bf Tensor}, {\bf Tensor\+Dom} $>$ \&}]{tensor\+\_\+dom, }
+\item[{std\+::unordered\+\_\+map$<$ {\bf Iter\+Var}, {\bf Range} $>$ $\ast$}]{out\+\_\+dom\+\_\+map}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [final]}, {\ttfamily [virtual]}}\hypertarget{classtvm_1_1te_1_1PlaceholderOpNode_ab4e1418bc5187cad2710bc5156e3ac5b}{}\label{classtvm_1_1te_1_1PlaceholderOpNode_ab4e1418bc5187cad2710bc5156e3ac5b}
+
+
+Gather the bound from output tensor. Set the range of each root\+\_\+iter\+\_\+vars in the op to out\+\_\+dom\+\_\+map. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em self} & The reference to self. \\
+\hline
+{\em tensor\+\_\+dom} & Domain map of Tensor-\/$>$access set of each dimension. \\
+\hline
+{\em out\+\_\+dom\+\_\+map} & The output domain map of each Iter\+Var to be setted. \\
+\hline
+\end{DoxyParams}
+
+
+Implements \hyperlink{classtvm_1_1te_1_1OperationNode_a278d1f242176ff48cc150532a9172aee}{tvm\+::te\+::\+Operation\+Node}.
+
+\index{tvm\+::te\+::\+Placeholder\+Op\+Node@{tvm\+::te\+::\+Placeholder\+Op\+Node}!Input\+Tensors@{Input\+Tensors}}
+\index{Input\+Tensors@{Input\+Tensors}!tvm\+::te\+::\+Placeholder\+Op\+Node@{tvm\+::te\+::\+Placeholder\+Op\+Node}}
+\subsubsection[{\texorpdfstring{Input\+Tensors() const final}{InputTensors() const final}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Array}$<${\bf Tensor}$>$ tvm\+::te\+::\+Placeholder\+Op\+Node\+::\+Input\+Tensors (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [final]}, {\ttfamily [virtual]}}\hypertarget{classtvm_1_1te_1_1PlaceholderOpNode_a598ce6ccf1c0c5b68263f2f6b0434b50}{}\label{classtvm_1_1te_1_1PlaceholderOpNode_a598ce6ccf1c0c5b68263f2f6b0434b50}
+
+
+List all the input Tensors. 
+
+\begin{DoxyReturn}{Returns}
+List of input tensors. 
+\end{DoxyReturn}
+
+
+Implements \hyperlink{classtvm_1_1te_1_1OperationNode_a9675fbb905d62de5b86624388acec4b1}{tvm\+::te\+::\+Operation\+Node}.
+
+\index{tvm\+::te\+::\+Placeholder\+Op\+Node@{tvm\+::te\+::\+Placeholder\+Op\+Node}!make@{make}}
+\index{make@{make}!tvm\+::te\+::\+Placeholder\+Op\+Node@{tvm\+::te\+::\+Placeholder\+Op\+Node}}
+\subsubsection[{\texorpdfstring{make(std\+::string name, Array$<$ Prim\+Expr $>$ shape, Data\+Type dtype)}{make(std::string name, Array< PrimExpr > shape, DataType dtype)}}]{\setlength{\rightskip}{0pt plus 5cm}static {\bf Operation} tvm\+::te\+::\+Placeholder\+Op\+Node\+::make (
+\begin{DoxyParamCaption}
+\item[{std\+::string}]{name, }
+\item[{{\bf Array}$<$ {\bf Prim\+Expr} $>$}]{shape, }
+\item[{{\bf Data\+Type}}]{dtype}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}\hypertarget{classtvm_1_1te_1_1PlaceholderOpNode_a8141a03c4cf35d02860ed44b6773a7ca}{}\label{classtvm_1_1te_1_1PlaceholderOpNode_a8141a03c4cf35d02860ed44b6773a7ca}
+\index{tvm\+::te\+::\+Placeholder\+Op\+Node@{tvm\+::te\+::\+Placeholder\+Op\+Node}!num\+\_\+outputs@{num\+\_\+outputs}}
+\index{num\+\_\+outputs@{num\+\_\+outputs}!tvm\+::te\+::\+Placeholder\+Op\+Node@{tvm\+::te\+::\+Placeholder\+Op\+Node}}
+\subsubsection[{\texorpdfstring{num\+\_\+outputs() const final}{num_outputs() const final}}]{\setlength{\rightskip}{0pt plus 5cm}int tvm\+::te\+::\+Placeholder\+Op\+Node\+::num\+\_\+outputs (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [final]}, {\ttfamily [virtual]}}\hypertarget{classtvm_1_1te_1_1PlaceholderOpNode_a777ce9b0843eaaa37d0667b14d50059a}{}\label{classtvm_1_1te_1_1PlaceholderOpNode_a777ce9b0843eaaa37d0667b14d50059a}
+\begin{DoxyReturn}{Returns}
+the number of outputs of this function 
+\end{DoxyReturn}
+
+
+Implements \hyperlink{classtvm_1_1tir_1_1FunctionBaseNode_a86d8a47eb472945b01ab508c1ff94930}{tvm\+::tir\+::\+Function\+Base\+Node}.
+
+\index{tvm\+::te\+::\+Placeholder\+Op\+Node@{tvm\+::te\+::\+Placeholder\+Op\+Node}!output\+\_\+dtype@{output\+\_\+dtype}}
+\index{output\+\_\+dtype@{output\+\_\+dtype}!tvm\+::te\+::\+Placeholder\+Op\+Node@{tvm\+::te\+::\+Placeholder\+Op\+Node}}
+\subsubsection[{\texorpdfstring{output\+\_\+dtype(size\+\_\+t i) const final}{output_dtype(size_t i) const final}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Data\+Type} tvm\+::te\+::\+Placeholder\+Op\+Node\+::output\+\_\+dtype (
+\begin{DoxyParamCaption}
+\item[{size\+\_\+t}]{i}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [final]}, {\ttfamily [virtual]}}\hypertarget{classtvm_1_1te_1_1PlaceholderOpNode_a84d9963cba34ebe035091c15f10d3bff}{}\label{classtvm_1_1te_1_1PlaceholderOpNode_a84d9963cba34ebe035091c15f10d3bff}
+
+
+Get data type. i-\/th output tensor. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em i} & The output index. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+type of i-\/th output. 
+\end{DoxyReturn}
+
+
+Implements \hyperlink{classtvm_1_1te_1_1OperationNode_a6bcb7f0c177c642d82a5a200d13369f0}{tvm\+::te\+::\+Operation\+Node}.
+
+\index{tvm\+::te\+::\+Placeholder\+Op\+Node@{tvm\+::te\+::\+Placeholder\+Op\+Node}!output\+\_\+shape@{output\+\_\+shape}}
+\index{output\+\_\+shape@{output\+\_\+shape}!tvm\+::te\+::\+Placeholder\+Op\+Node@{tvm\+::te\+::\+Placeholder\+Op\+Node}}
+\subsubsection[{\texorpdfstring{output\+\_\+shape(size\+\_\+t i) const final}{output_shape(size_t i) const final}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Array}$<${\bf Prim\+Expr}$>$ tvm\+::te\+::\+Placeholder\+Op\+Node\+::output\+\_\+shape (
+\begin{DoxyParamCaption}
+\item[{size\+\_\+t}]{i}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [final]}, {\ttfamily [virtual]}}\hypertarget{classtvm_1_1te_1_1PlaceholderOpNode_a22624cba74f79b3fa5a6ac2a4b986c79}{}\label{classtvm_1_1te_1_1PlaceholderOpNode_a22624cba74f79b3fa5a6ac2a4b986c79}
+
+
+Get shape of i-\/th output tensor. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em i} & The output index. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+shape of i-\/th output. 
+\end{DoxyReturn}
+
+
+Implements \hyperlink{classtvm_1_1te_1_1OperationNode_a7c4fc476de1543ea65c83e02631bfd09}{tvm\+::te\+::\+Operation\+Node}.
+
+\index{tvm\+::te\+::\+Placeholder\+Op\+Node@{tvm\+::te\+::\+Placeholder\+Op\+Node}!Prop\+Bound\+To\+Inputs@{Prop\+Bound\+To\+Inputs}}
+\index{Prop\+Bound\+To\+Inputs@{Prop\+Bound\+To\+Inputs}!tvm\+::te\+::\+Placeholder\+Op\+Node@{tvm\+::te\+::\+Placeholder\+Op\+Node}}
+\subsubsection[{\texorpdfstring{Prop\+Bound\+To\+Inputs(const Operation \&self, arith\+::\+Analyzer $\ast$analyzer, const std\+::unordered\+\_\+map$<$ const Var\+Node $\ast$, Int\+Set $>$ \&dom\+\_\+map, std\+::unordered\+\_\+map$<$ Tensor, Tensor\+Dom $>$ $\ast$out\+\_\+dom\+\_\+map) const final}{PropBoundToInputs(const Operation &self, arith::Analyzer *analyzer, const std::unordered_map< const VarNode *, IntSet > &dom_map, std::unordered_map< Tensor, TensorDom > *out_dom_map) const final}}]{\setlength{\rightskip}{0pt plus 5cm}void tvm\+::te\+::\+Placeholder\+Op\+Node\+::\+Prop\+Bound\+To\+Inputs (
+\begin{DoxyParamCaption}
+\item[{const {\bf Operation} \&}]{self, }
+\item[{{\bf arith\+::\+Analyzer} $\ast$}]{analyzer, }
+\item[{const std\+::unordered\+\_\+map$<$ const {\bf Var\+Node} $\ast$, Int\+Set $>$ \&}]{dom\+\_\+map, }
+\item[{std\+::unordered\+\_\+map$<$ {\bf Tensor}, {\bf Tensor\+Dom} $>$ $\ast$}]{out\+\_\+dom\+\_\+map}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [final]}, {\ttfamily [virtual]}}\hypertarget{classtvm_1_1te_1_1PlaceholderOpNode_aa7c4daa391954629cbc0eb9d91ed0ed3}{}\label{classtvm_1_1te_1_1PlaceholderOpNode_aa7c4daa391954629cbc0eb9d91ed0ed3}
+
+
+Propagate the bounds to inputs. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em self} & The reference to self. \\
+\hline
+{\em analyzer} & The analyzer to be used in the function. \\
+\hline
+{\em dom\+\_\+map} & the domain map of Variables(corresponds to root\+\_\+iter\+\_\+vars) \\
+\hline
+{\em out\+\_\+dom\+\_\+map} & The output domain. The function is only asked to fill the bounds for Tensors that is already in the out\+\_\+dom\+\_\+map \\
+\hline
+\end{DoxyParams}
+
+
+Implements \hyperlink{classtvm_1_1te_1_1OperationNode_a3c32a93264e0d627d8389b703edcaf49}{tvm\+::te\+::\+Operation\+Node}.
+
+\index{tvm\+::te\+::\+Placeholder\+Op\+Node@{tvm\+::te\+::\+Placeholder\+Op\+Node}!Replace\+Inputs@{Replace\+Inputs}}
+\index{Replace\+Inputs@{Replace\+Inputs}!tvm\+::te\+::\+Placeholder\+Op\+Node@{tvm\+::te\+::\+Placeholder\+Op\+Node}}
+\subsubsection[{\texorpdfstring{Replace\+Inputs(const Operation \&self, const std\+::unordered\+\_\+map$<$ Tensor, Tensor $>$ \&rmap) const final}{ReplaceInputs(const Operation &self, const std::unordered_map< Tensor, Tensor > &rmap) const final}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Operation} tvm\+::te\+::\+Placeholder\+Op\+Node\+::\+Replace\+Inputs (
+\begin{DoxyParamCaption}
+\item[{const {\bf Operation} \&}]{self, }
+\item[{const std\+::unordered\+\_\+map$<$ {\bf Tensor}, {\bf Tensor} $>$ \&}]{rmap}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [final]}, {\ttfamily [virtual]}}\hypertarget{classtvm_1_1te_1_1PlaceholderOpNode_a8fe0700318a8292c45faeca6c992bc4e}{}\label{classtvm_1_1te_1_1PlaceholderOpNode_a8fe0700318a8292c45faeca6c992bc4e}
+
+
+Replace the input of the operation by pattern specified by rmap. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em self} & The reference to self. \\
+\hline
+{\em rmap} & The replacement map. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+self if nothing is replaced, otherwise return replaced op. 
+\end{DoxyReturn}
+
+
+Implements \hyperlink{classtvm_1_1te_1_1OperationNode_a9a876a433cfbe32215c3802ef520016e}{tvm\+::te\+::\+Operation\+Node}.
+
+\index{tvm\+::te\+::\+Placeholder\+Op\+Node@{tvm\+::te\+::\+Placeholder\+Op\+Node}!root\+\_\+iter\+\_\+vars@{root\+\_\+iter\+\_\+vars}}
+\index{root\+\_\+iter\+\_\+vars@{root\+\_\+iter\+\_\+vars}!tvm\+::te\+::\+Placeholder\+Op\+Node@{tvm\+::te\+::\+Placeholder\+Op\+Node}}
+\subsubsection[{\texorpdfstring{root\+\_\+iter\+\_\+vars() const final}{root_iter_vars() const final}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Array}$<${\bf Iter\+Var}$>$ tvm\+::te\+::\+Placeholder\+Op\+Node\+::root\+\_\+iter\+\_\+vars (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [final]}, {\ttfamily [virtual]}}\hypertarget{classtvm_1_1te_1_1PlaceholderOpNode_aed3620e14c76716f976ffec15a68f074}{}\label{classtvm_1_1te_1_1PlaceholderOpNode_aed3620e14c76716f976ffec15a68f074}
+\begin{DoxyReturn}{Returns}
+The list of iteration variable at root 
+\end{DoxyReturn}
+\begin{DoxyNote}{Note}
+root\+\_\+iter\+\_\+vars decides the shape of the outputs. 
+\end{DoxyNote}
+
+
+Implements \hyperlink{classtvm_1_1te_1_1OperationNode_a8d15cfe7d0d721da305c1b36e9f5a914}{tvm\+::te\+::\+Operation\+Node}.
+
+\index{tvm\+::te\+::\+Placeholder\+Op\+Node@{tvm\+::te\+::\+Placeholder\+Op\+Node}!T\+V\+M\+\_\+\+D\+E\+C\+L\+A\+R\+E\+\_\+\+F\+I\+N\+A\+L\+\_\+\+O\+B\+J\+E\+C\+T\+\_\+\+I\+N\+FO@{T\+V\+M\+\_\+\+D\+E\+C\+L\+A\+R\+E\+\_\+\+F\+I\+N\+A\+L\+\_\+\+O\+B\+J\+E\+C\+T\+\_\+\+I\+N\+FO}}
+\index{T\+V\+M\+\_\+\+D\+E\+C\+L\+A\+R\+E\+\_\+\+F\+I\+N\+A\+L\+\_\+\+O\+B\+J\+E\+C\+T\+\_\+\+I\+N\+FO@{T\+V\+M\+\_\+\+D\+E\+C\+L\+A\+R\+E\+\_\+\+F\+I\+N\+A\+L\+\_\+\+O\+B\+J\+E\+C\+T\+\_\+\+I\+N\+FO}!tvm\+::te\+::\+Placeholder\+Op\+Node@{tvm\+::te\+::\+Placeholder\+Op\+Node}}
+\subsubsection[{\texorpdfstring{T\+V\+M\+\_\+\+D\+E\+C\+L\+A\+R\+E\+\_\+\+F\+I\+N\+A\+L\+\_\+\+O\+B\+J\+E\+C\+T\+\_\+\+I\+N\+F\+O(\+Placeholder\+Op\+Node, Operation\+Node)}{TVM_DECLARE_FINAL_OBJECT_INFO(PlaceholderOpNode, OperationNode)}}]{\setlength{\rightskip}{0pt plus 5cm}tvm\+::te\+::\+Placeholder\+Op\+Node\+::\+T\+V\+M\+\_\+\+D\+E\+C\+L\+A\+R\+E\+\_\+\+F\+I\+N\+A\+L\+\_\+\+O\+B\+J\+E\+C\+T\+\_\+\+I\+N\+FO (
+\begin{DoxyParamCaption}
+\item[{{\bf Placeholder\+Op\+Node}}]{, }
+\item[{{\bf Operation\+Node}}]{}
+\end{DoxyParamCaption}
+)}\hypertarget{classtvm_1_1te_1_1PlaceholderOpNode_af6c7ed8827416057732e6b9e8eef513e}{}\label{classtvm_1_1te_1_1PlaceholderOpNode_af6c7ed8827416057732e6b9e8eef513e}
+\index{tvm\+::te\+::\+Placeholder\+Op\+Node@{tvm\+::te\+::\+Placeholder\+Op\+Node}!Visit\+Attrs@{Visit\+Attrs}}
+\index{Visit\+Attrs@{Visit\+Attrs}!tvm\+::te\+::\+Placeholder\+Op\+Node@{tvm\+::te\+::\+Placeholder\+Op\+Node}}
+\subsubsection[{\texorpdfstring{Visit\+Attrs(\+Attr\+Visitor $\ast$v)}{VisitAttrs(AttrVisitor *v)}}]{\setlength{\rightskip}{0pt plus 5cm}void tvm\+::te\+::\+Placeholder\+Op\+Node\+::\+Visit\+Attrs (
+\begin{DoxyParamCaption}
+\item[{{\bf Attr\+Visitor} $\ast$}]{v}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classtvm_1_1te_1_1PlaceholderOpNode_a5bf09a2782cf05e19d0912ec3fbba9e9}{}\label{classtvm_1_1te_1_1PlaceholderOpNode_a5bf09a2782cf05e19d0912ec3fbba9e9}
+
+
+\subsection{Member Data Documentation}
+\index{tvm\+::te\+::\+Placeholder\+Op\+Node@{tvm\+::te\+::\+Placeholder\+Op\+Node}!\+\_\+type\+\_\+key@{\+\_\+type\+\_\+key}}
+\index{\+\_\+type\+\_\+key@{\+\_\+type\+\_\+key}!tvm\+::te\+::\+Placeholder\+Op\+Node@{tvm\+::te\+::\+Placeholder\+Op\+Node}}
+\subsubsection[{\texorpdfstring{\+\_\+type\+\_\+key}{_type_key}}]{\setlength{\rightskip}{0pt plus 5cm}constexpr const char$\ast$ tvm\+::te\+::\+Placeholder\+Op\+Node\+::\+\_\+type\+\_\+key = \char`\"{}Placeholder\+Op\char`\"{}\hspace{0.3cm}{\ttfamily [static]}}\hypertarget{classtvm_1_1te_1_1PlaceholderOpNode_a516d9ad8c441fc3eb93d1a0d112bacd1}{}\label{classtvm_1_1te_1_1PlaceholderOpNode_a516d9ad8c441fc3eb93d1a0d112bacd1}
+\index{tvm\+::te\+::\+Placeholder\+Op\+Node@{tvm\+::te\+::\+Placeholder\+Op\+Node}!dtype@{dtype}}
+\index{dtype@{dtype}!tvm\+::te\+::\+Placeholder\+Op\+Node@{tvm\+::te\+::\+Placeholder\+Op\+Node}}
+\subsubsection[{\texorpdfstring{dtype}{dtype}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Data\+Type} tvm\+::te\+::\+Placeholder\+Op\+Node\+::dtype}\hypertarget{classtvm_1_1te_1_1PlaceholderOpNode_a4c0ad4ece5214f3638a101c3f4aef38b}{}\label{classtvm_1_1te_1_1PlaceholderOpNode_a4c0ad4ece5214f3638a101c3f4aef38b}
+
+
+The data type of the input. 
+
+\index{tvm\+::te\+::\+Placeholder\+Op\+Node@{tvm\+::te\+::\+Placeholder\+Op\+Node}!shape@{shape}}
+\index{shape@{shape}!tvm\+::te\+::\+Placeholder\+Op\+Node@{tvm\+::te\+::\+Placeholder\+Op\+Node}}
+\subsubsection[{\texorpdfstring{shape}{shape}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Array}$<${\bf Prim\+Expr}$>$ tvm\+::te\+::\+Placeholder\+Op\+Node\+::shape}\hypertarget{classtvm_1_1te_1_1PlaceholderOpNode_a301fb989a618e248d69120f6c7b33c3f}{}\label{classtvm_1_1te_1_1PlaceholderOpNode_a301fb989a618e248d69120f6c7b33c3f}
+
+
+The shape of the input. 
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+include/tvm/te/\hyperlink{operation_8h}{operation.\+h}\end{DoxyCompactItemize}

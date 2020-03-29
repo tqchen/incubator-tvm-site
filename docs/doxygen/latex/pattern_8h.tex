@@ -1,0 +1,37 @@
+\hypertarget{pattern_8h}{}\section{include/tvm/arith/pattern.h File Reference}
+\label{pattern_8h}\index{include/tvm/arith/pattern.\+h@{include/tvm/arith/pattern.\+h}}
+
+
+Expression pattern detectors.  
+
+
+{\ttfamily \#include $<$tvm/node/container.\+h$>$}\\*
+{\ttfamily \#include $<$tvm/ir/expr.\+h$>$}\\*
+{\ttfamily \#include $<$tvm/tir/expr.\+h$>$}\\*
+Include dependency graph for pattern.\+h\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{pattern_8h__incl}
+\end{center}
+\end{figure}
+\subsection*{Namespaces}
+\begin{DoxyCompactItemize}
+\item 
+ \hyperlink{namespacetvm}{tvm}
+\item 
+ \hyperlink{namespacetvm_1_1arith}{tvm\+::arith}
+\begin{DoxyCompactList}\small\item\em namespace of arithmetic analysis. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+Array$<$ Prim\+Expr $>$ \hyperlink{namespacetvm_1_1arith_a87a12ee0854469b04329a961ef261559}{tvm\+::arith\+::\+Detect\+Linear\+Equation} (const Prim\+Expr \&e, const Array$<$ tir\+::\+Var $>$ \&vars)
+\begin{DoxyCompactList}\small\item\em Detect if e can be rewritten as e = sum\+\_\+\{i=0\}$^\wedge$\{n-\/1\} var\mbox{[}i\mbox{]} $\ast$ coeff\mbox{[}i\mbox{]} + coeff\mbox{[}n\mbox{]} Where coeff\mbox{[}i\mbox{]} and base are invariant of var\mbox{[}j\mbox{]} for all i and j. \end{DoxyCompactList}\item 
+Array$<$ Prim\+Expr $>$ \hyperlink{namespacetvm_1_1arith_a739616342876c2633b87ed16c649bc91}{tvm\+::arith\+::\+Detect\+Clip\+Bound} (const Prim\+Expr \&e, const Array$<$ tir\+::\+Var $>$ \&vars)
+\begin{DoxyCompactList}\small\item\em Detect if expression corresponds to clip bound of the vars. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Expression pattern detectors. 
+

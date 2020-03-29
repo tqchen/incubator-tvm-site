@@ -1,0 +1,145 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="classtvm_1_1GenericFuncNode" kind="class" language="C++" prot="public">
+    <compoundname>tvm::GenericFuncNode</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">Object</basecompoundref>
+    <includes refid="generic__func_8h" local="no">generic_func.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="classtvm_1_1GenericFuncNode_1ade1da360d3e314360fd5399b2d76d3a1" prot="public" static="no" mutable="no">
+        <type>std::string</type>
+        <definition>std::string tvm::GenericFuncNode::name_</definition>
+        <argsstring></argsstring>
+        <name>name_</name>
+        <briefdescription>
+<para>name of the function </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/target/generic_func.h" line="142" column="1" bodyfile="include/tvm/target/generic_func.h" bodystart="142" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classtvm_1_1GenericFuncNode_1acaf4bdfb07ba37809feb52ec863ec4d3" prot="public" static="no" mutable="no">
+        <type><ref refid="classtvm_1_1runtime_1_1PackedFunc" kindref="compound">runtime::PackedFunc</ref></type>
+        <definition>runtime::PackedFunc tvm::GenericFuncNode::generic_func_</definition>
+        <argsstring></argsstring>
+        <name>generic_func_</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/target/generic_func.h" line="144" column="1" bodyfile="include/tvm/target/generic_func.h" bodystart="144" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classtvm_1_1GenericFuncNode_1af9c722adc3fc97ade2c64c7e140462ea" prot="public" static="no" mutable="no">
+        <type>std::unordered_map&lt; std::string, <ref refid="classtvm_1_1runtime_1_1PackedFunc" kindref="compound">runtime::PackedFunc</ref> &gt;</type>
+        <definition>std::unordered_map&lt;std::string, runtime::PackedFunc&gt; tvm::GenericFuncNode::dispatch_dict_</definition>
+        <argsstring></argsstring>
+        <name>dispatch_dict_</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/target/generic_func.h" line="146" column="1" bodyfile="include/tvm/target/generic_func.h" bodystart="146" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-attrib">
+      <memberdef kind="variable" id="classtvm_1_1GenericFuncNode_1a32b96460a03360f3c6857047ba252797" prot="public" static="yes" mutable="no">
+        <type>constexpr const char *</type>
+        <definition>constexpr const char* tvm::GenericFuncNode::_type_key</definition>
+        <argsstring></argsstring>
+        <name>_type_key</name>
+        <initializer>= &quot;GenericFunc&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/target/generic_func.h" line="150" column="1" bodyfile="include/tvm/target/generic_func.h" bodystart="150" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classtvm_1_1GenericFuncNode_1a1a2d059b54cdacc0b4c97e00a3e3b905" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void tvm::GenericFuncNode::VisitAttrs</definition>
+        <argsstring>(AttrVisitor *v)</argsstring>
+        <name>VisitAttrs</name>
+        <param>
+          <type><ref refid="classtvm_1_1AttrVisitor" kindref="compound">AttrVisitor</ref> *</type>
+          <declname>v</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/target/generic_func.h" line="148" column="1" bodyfile="include/tvm/target/generic_func.h" bodystart="148" bodyend="148"/>
+      </memberdef>
+      <memberdef kind="function" id="classtvm_1_1GenericFuncNode_1a2d82e7bd9db66ff84ec723fd19fe76af" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>tvm::GenericFuncNode::TVM_DECLARE_FINAL_OBJECT_INFO</definition>
+        <argsstring>(GenericFuncNode, Object)</argsstring>
+        <name>TVM_DECLARE_FINAL_OBJECT_INFO</name>
+        <param>
+          <type><ref refid="classtvm_1_1GenericFuncNode" kindref="compound">GenericFuncNode</ref></type>
+        </param>
+        <param>
+          <type>Object</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/target/generic_func.h" line="151" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Represents a generic function that can be specialized on a per-target basis. </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="5183">
+        <label>Object</label>
+      </node>
+      <node id="5182">
+        <label>tvm::GenericFuncNode</label>
+        <link refid="classtvm_1_1GenericFuncNode"/>
+        <childnode refid="5183" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="5185">
+        <label>Object</label>
+      </node>
+      <node id="5186">
+        <label>tvm::runtime::PackedFunc</label>
+        <link refid="classtvm_1_1runtime_1_1PackedFunc"/>
+      </node>
+      <node id="5184">
+        <label>tvm::GenericFuncNode</label>
+        <link refid="classtvm_1_1GenericFuncNode"/>
+        <childnode refid="5185" relation="public-inheritance">
+        </childnode>
+        <childnode refid="5186" relation="usage">
+          <edgelabel>+generic_func_</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="include/tvm/target/generic_func.h" line="139" column="1" bodyfile="include/tvm/target/generic_func.h" bodystart="139" bodyend="152"/>
+    <listofallmembers>
+      <member refid="classtvm_1_1GenericFuncNode_1a32b96460a03360f3c6857047ba252797" prot="public" virt="non-virtual"><scope>tvm::GenericFuncNode</scope><name>_type_key</name></member>
+      <member refid="classtvm_1_1GenericFuncNode_1af9c722adc3fc97ade2c64c7e140462ea" prot="public" virt="non-virtual"><scope>tvm::GenericFuncNode</scope><name>dispatch_dict_</name></member>
+      <member refid="classtvm_1_1GenericFuncNode_1acaf4bdfb07ba37809feb52ec863ec4d3" prot="public" virt="non-virtual"><scope>tvm::GenericFuncNode</scope><name>generic_func_</name></member>
+      <member refid="classtvm_1_1GenericFuncNode_1ade1da360d3e314360fd5399b2d76d3a1" prot="public" virt="non-virtual"><scope>tvm::GenericFuncNode</scope><name>name_</name></member>
+      <member refid="classtvm_1_1GenericFuncNode_1a2d82e7bd9db66ff84ec723fd19fe76af" prot="public" virt="non-virtual"><scope>tvm::GenericFuncNode</scope><name>TVM_DECLARE_FINAL_OBJECT_INFO</name></member>
+      <member refid="classtvm_1_1GenericFuncNode_1a1a2d059b54cdacc0b4c97e00a3e3b905" prot="public" virt="non-virtual"><scope>tvm::GenericFuncNode</scope><name>VisitAttrs</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

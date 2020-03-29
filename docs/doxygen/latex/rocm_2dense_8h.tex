@@ -1,0 +1,42 @@
+\hypertarget{rocm_2dense_8h}{}\section{topi/include/topi/rocm/dense.h File Reference}
+\label{rocm_2dense_8h}\index{topi/include/topi/rocm/dense.\+h@{topi/include/topi/rocm/dense.\+h}}
+
+
+rocm schedule for dense operation  
+
+
+{\ttfamily \#include $<$tvm/te/operation.\+h$>$}\\*
+{\ttfamily \#include $<$tvm/target/generic\+\_\+func.\+h$>$}\\*
+{\ttfamily \#include $<$topi/tags.\+h$>$}\\*
+{\ttfamily \#include \char`\"{}topi/detail/array\+\_\+utils.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}topi/nn/dense.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}topi/contrib/rocblas.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}topi/generic/extern.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}topi/cuda/dense.\+h\char`\"{}}\\*
+Include dependency graph for dense.\+h\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{rocm_2dense_8h__incl}
+\end{center}
+\end{figure}
+\subsection*{Namespaces}
+\begin{DoxyCompactItemize}
+\item 
+ \hyperlink{namespacetopi}{topi}
+\item 
+ \hyperlink{namespacetopi_1_1rocm}{topi\+::rocm}
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classtvm_1_1te_1_1Tensor}{tvm\+::te\+::\+Tensor} \hyperlink{namespacetopi_1_1rocm_ad31d98789d966de421bb57809fbeb8eb}{topi\+::rocm\+::dense\+\_\+rocm} (const \hyperlink{classtvm_1_1Target}{Target} \&target, const \hyperlink{classtvm_1_1te_1_1Tensor}{tvm\+::te\+::\+Tensor} \&data, const \hyperlink{classtvm_1_1te_1_1Tensor}{tvm\+::te\+::\+Tensor} \&weight, const \hyperlink{classtvm_1_1te_1_1Tensor}{tvm\+::te\+::\+Tensor} \&bias, const \hyperlink{namespacetvm_a41918af1a1dc386388639a9d3ad06c5d}{Data\+Type} \&out\+\_\+dtype)
+\begin{DoxyCompactList}\small\item\em Implementation of dense for rocm backend. \end{DoxyCompactList}\item 
+\hyperlink{classtvm_1_1te_1_1Schedule}{Schedule} \hyperlink{namespacetopi_1_1rocm_a3edc082fa687a728d2a00dbf32784c8e}{topi\+::rocm\+::schedule\+\_\+dense} (const \hyperlink{classtvm_1_1Target}{Target} \&target, const \hyperlink{classtvm_1_1Array}{Array}$<$ \hyperlink{classtvm_1_1te_1_1Tensor}{Tensor} $>$ \&outs)
+\begin{DoxyCompactList}\small\item\em Create a rocm schedule for dense. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+rocm schedule for dense operation 
+

@@ -1,0 +1,127 @@
+\hypertarget{classtvm_1_1Error}{}\section{tvm\+:\+:Error Class Reference}
+\label{classtvm_1_1Error}\index{tvm\+::\+Error@{tvm\+::\+Error}}
+
+
+Custom \hyperlink{classtvm_1_1Error}{Error} class to be thrown during compilation.  
+
+
+
+
+{\ttfamily \#include $<$error.\+h$>$}
+
+
+
+Inheritance diagram for tvm\+:\+:Error\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=145pt]{classtvm_1_1Error__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for tvm\+:\+:Error\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=288pt]{classtvm_1_1Error__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classtvm_1_1Error_a34fb93ad5e30fb0ba2d29557e3888cad}{Error} (const std\+::string \&msg)
+\begin{DoxyCompactList}\small\item\em construct error from message. \end{DoxyCompactList}\item 
+\hyperlink{classtvm_1_1Error_a4e6ed7f9bfe3a8b9e9fd707333d9a271}{Error} (const \hyperlink{structtvm_1_1ErrorBuilder}{Error\+Builder} \&err)
+\begin{DoxyCompactList}\small\item\em construct error from error builder. \end{DoxyCompactList}\item 
+\hyperlink{classtvm_1_1Error_ae795782b25b3d8861eba48ac126075f6}{Error} (const \hyperlink{classtvm_1_1Error}{Error} \&other)
+\begin{DoxyCompactList}\small\item\em copy constructor. \end{DoxyCompactList}\item 
+\hyperlink{classtvm_1_1Error_af24ae3b0fbb989c6fe282ef0571eb8de}{Error} ()
+\begin{DoxyCompactList}\small\item\em default constructor. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classtvm_1_1Span}{Span} \hyperlink{classtvm_1_1Error_a1bebfe879cb28d2157c4c52691fd93c4}{span}
+\begin{DoxyCompactList}\small\item\em Location of the error. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Custom \hyperlink{classtvm_1_1Error}{Error} class to be thrown during compilation. 
+
+\subsection{Constructor \& Destructor Documentation}
+\index{tvm\+::\+Error@{tvm\+::\+Error}!Error@{Error}}
+\index{Error@{Error}!tvm\+::\+Error@{tvm\+::\+Error}}
+\subsubsection[{\texorpdfstring{Error(const std\+::string \&msg)}{Error(const std::string &msg)}}]{\setlength{\rightskip}{0pt plus 5cm}tvm\+::\+Error\+::\+Error (
+\begin{DoxyParamCaption}
+\item[{const std\+::string \&}]{msg}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [explicit]}}\hypertarget{classtvm_1_1Error_a34fb93ad5e30fb0ba2d29557e3888cad}{}\label{classtvm_1_1Error_a34fb93ad5e30fb0ba2d29557e3888cad}
+
+
+construct error from message. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em msg} & The message \\
+\hline
+\end{DoxyParams}
+\index{tvm\+::\+Error@{tvm\+::\+Error}!Error@{Error}}
+\index{Error@{Error}!tvm\+::\+Error@{tvm\+::\+Error}}
+\subsubsection[{\texorpdfstring{Error(const Error\+Builder \&err)}{Error(const ErrorBuilder &err)}}]{\setlength{\rightskip}{0pt plus 5cm}tvm\+::\+Error\+::\+Error (
+\begin{DoxyParamCaption}
+\item[{const {\bf Error\+Builder} \&}]{err}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classtvm_1_1Error_a4e6ed7f9bfe3a8b9e9fd707333d9a271}{}\label{classtvm_1_1Error_a4e6ed7f9bfe3a8b9e9fd707333d9a271}
+
+
+construct error from error builder. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em err} & The error builder \\
+\hline
+\end{DoxyParams}
+\index{tvm\+::\+Error@{tvm\+::\+Error}!Error@{Error}}
+\index{Error@{Error}!tvm\+::\+Error@{tvm\+::\+Error}}
+\subsubsection[{\texorpdfstring{Error(const Error \&other)}{Error(const Error &other)}}]{\setlength{\rightskip}{0pt plus 5cm}tvm\+::\+Error\+::\+Error (
+\begin{DoxyParamCaption}
+\item[{const {\bf Error} \&}]{other}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classtvm_1_1Error_ae795782b25b3d8861eba48ac126075f6}{}\label{classtvm_1_1Error_ae795782b25b3d8861eba48ac126075f6}
+
+
+copy constructor. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em other} & The other ereor. \\
+\hline
+\end{DoxyParams}
+\index{tvm\+::\+Error@{tvm\+::\+Error}!Error@{Error}}
+\index{Error@{Error}!tvm\+::\+Error@{tvm\+::\+Error}}
+\subsubsection[{\texorpdfstring{Error()}{Error()}}]{\setlength{\rightskip}{0pt plus 5cm}tvm\+::\+Error\+::\+Error (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classtvm_1_1Error_af24ae3b0fbb989c6fe282ef0571eb8de}{}\label{classtvm_1_1Error_af24ae3b0fbb989c6fe282ef0571eb8de}
+
+
+default constructor. 
+
+
+
+\subsection{Member Data Documentation}
+\index{tvm\+::\+Error@{tvm\+::\+Error}!span@{span}}
+\index{span@{span}!tvm\+::\+Error@{tvm\+::\+Error}}
+\subsubsection[{\texorpdfstring{span}{span}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Span} tvm\+::\+Error\+::span}\hypertarget{classtvm_1_1Error_a1bebfe879cb28d2157c4c52691fd93c4}{}\label{classtvm_1_1Error_a1bebfe879cb28d2157c4c52691fd93c4}
+
+
+Location of the error. 
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+include/tvm/ir/\hyperlink{error_8h}{error.\+h}\end{DoxyCompactItemize}

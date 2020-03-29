@@ -1,0 +1,160 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="classtvm_1_1relay_1_1PatternNode" kind="class" language="C++" prot="public">
+    <compoundname>tvm::relay::PatternNode</compoundname>
+    <basecompoundref refid="classtvm_1_1relay_1_1RelayNode" prot="public" virt="non-virtual">tvm::relay::RelayNode</basecompoundref>
+    <derivedcompoundref refid="classtvm_1_1relay_1_1PatternConstructorNode" prot="public" virt="non-virtual">tvm::relay::PatternConstructorNode</derivedcompoundref>
+    <derivedcompoundref refid="classtvm_1_1relay_1_1PatternTupleNode" prot="public" virt="non-virtual">tvm::relay::PatternTupleNode</derivedcompoundref>
+    <derivedcompoundref refid="classtvm_1_1relay_1_1PatternVarNode" prot="public" virt="non-virtual">tvm::relay::PatternVarNode</derivedcompoundref>
+    <derivedcompoundref refid="classtvm_1_1relay_1_1PatternWildcardNode" prot="public" virt="non-virtual">tvm::relay::PatternWildcardNode</derivedcompoundref>
+    <includes refid="relay_2adt_8h" local="no">adt.h</includes>
+      <sectiondef kind="public-static-attrib">
+      <memberdef kind="variable" id="classtvm_1_1relay_1_1PatternNode_1ad34d63c3d67d63b42d392122610ab115" prot="public" static="yes" mutable="no">
+        <type>constexpr const char *</type>
+        <definition>constexpr const char* tvm::relay::PatternNode::_type_key</definition>
+        <argsstring></argsstring>
+        <name>_type_key</name>
+        <initializer>= &quot;relay.Pattern&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/relay/adt.h" line="48" column="1" bodyfile="include/tvm/relay/adt.h" bodystart="48" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classtvm_1_1relay_1_1PatternNode_1ac52b4d661c8dd415bec83ec7d9dea6b5" prot="public" static="yes" mutable="no">
+        <type>constexpr const bool</type>
+        <definition>constexpr const bool tvm::relay::PatternNode::_type_has_method_sequal_reduce</definition>
+        <argsstring></argsstring>
+        <name>_type_has_method_sequal_reduce</name>
+        <initializer>= true</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/relay/adt.h" line="49" column="1" bodyfile="include/tvm/relay/adt.h" bodystart="49" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classtvm_1_1relay_1_1PatternNode_1a3ae0b4252660bc9b6b68be14a5fadb4e" prot="public" static="yes" mutable="no">
+        <type>constexpr const bool</type>
+        <definition>constexpr const bool tvm::relay::PatternNode::_type_has_method_shash_reduce</definition>
+        <argsstring></argsstring>
+        <name>_type_has_method_shash_reduce</name>
+        <initializer>= true</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/relay/adt.h" line="50" column="1" bodyfile="include/tvm/relay/adt.h" bodystart="50" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classtvm_1_1relay_1_1PatternNode_1afa4d5780f1b010b5fc441e6b7896b469" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>tvm::relay::PatternNode::TVM_DECLARE_BASE_OBJECT_INFO</definition>
+        <argsstring>(PatternNode, Object)</argsstring>
+        <name>TVM_DECLARE_BASE_OBJECT_INFO</name>
+        <param>
+          <type><ref refid="classtvm_1_1relay_1_1PatternNode" kindref="compound">PatternNode</ref></type>
+        </param>
+        <param>
+          <type>Object</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/relay/adt.h" line="51" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Base type for declaring relay pattern. </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="6099">
+        <label>tvm::relay::PatternTupleNode</label>
+        <link refid="classtvm_1_1relay_1_1PatternTupleNode"/>
+        <childnode refid="6095" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="6096">
+        <label>tvm::relay::RelayNode</label>
+        <link refid="classtvm_1_1relay_1_1RelayNode"/>
+        <childnode refid="6097" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="6097">
+        <label>Object</label>
+      </node>
+      <node id="6095">
+        <label>tvm::relay::PatternNode</label>
+        <link refid="classtvm_1_1relay_1_1PatternNode"/>
+        <childnode refid="6096" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="6100">
+        <label>tvm::relay::PatternVarNode</label>
+        <link refid="classtvm_1_1relay_1_1PatternVarNode"/>
+        <childnode refid="6095" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="6101">
+        <label>tvm::relay::PatternWildcardNode</label>
+        <link refid="classtvm_1_1relay_1_1PatternWildcardNode"/>
+        <childnode refid="6095" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="6098">
+        <label>tvm::relay::PatternConstructorNode</label>
+        <link refid="classtvm_1_1relay_1_1PatternConstructorNode"/>
+        <childnode refid="6095" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="6106">
+        <label>ObjectRef</label>
+      </node>
+      <node id="6103">
+        <label>tvm::relay::RelayNode</label>
+        <link refid="classtvm_1_1relay_1_1RelayNode"/>
+        <childnode refid="6104" relation="public-inheritance">
+        </childnode>
+        <childnode refid="6105" relation="usage">
+          <edgelabel>+span</edgelabel>
+        </childnode>
+      </node>
+      <node id="6105">
+        <label>tvm::Span</label>
+        <link refid="classtvm_1_1Span"/>
+        <childnode refid="6106" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="6104">
+        <label>Object</label>
+      </node>
+      <node id="6102">
+        <label>tvm::relay::PatternNode</label>
+        <link refid="classtvm_1_1relay_1_1PatternNode"/>
+        <childnode refid="6103" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="include/tvm/relay/adt.h" line="46" column="1" bodyfile="include/tvm/relay/adt.h" bodystart="46" bodyend="52"/>
+    <listofallmembers>
+      <member refid="classtvm_1_1relay_1_1PatternNode_1ac52b4d661c8dd415bec83ec7d9dea6b5" prot="public" virt="non-virtual"><scope>tvm::relay::PatternNode</scope><name>_type_has_method_sequal_reduce</name></member>
+      <member refid="classtvm_1_1relay_1_1PatternNode_1a3ae0b4252660bc9b6b68be14a5fadb4e" prot="public" virt="non-virtual"><scope>tvm::relay::PatternNode</scope><name>_type_has_method_shash_reduce</name></member>
+      <member refid="classtvm_1_1relay_1_1PatternNode_1ad34d63c3d67d63b42d392122610ab115" prot="public" virt="non-virtual"><scope>tvm::relay::PatternNode</scope><name>_type_key</name></member>
+      <member refid="classtvm_1_1relay_1_1RelayNode_1aa071442f5359c04aef5692334ce784c7" prot="public" virt="non-virtual"><scope>tvm::relay::PatternNode</scope><name>span</name></member>
+      <member refid="classtvm_1_1relay_1_1PatternNode_1afa4d5780f1b010b5fc441e6b7896b469" prot="public" virt="non-virtual"><scope>tvm::relay::PatternNode</scope><name>TVM_DECLARE_BASE_OBJECT_INFO</name></member>
+      <member refid="classtvm_1_1relay_1_1RelayNode_1af61323189c9e15411934e05ac86547ca" prot="public" virt="non-virtual" ambiguityscope="tvm::relay::RelayNode::"><scope>tvm::relay::PatternNode</scope><name>TVM_DECLARE_BASE_OBJECT_INFO</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

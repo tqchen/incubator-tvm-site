@@ -1,0 +1,57 @@
+\hypertarget{classtvm_1_1runtime_1_1SimpleObjAllocator_1_1Handler}{}\section{tvm\+:\+:runtime\+:\+:Simple\+Obj\+Allocator\+:\+:Handler$<$ T $>$ Class Template Reference}
+\label{classtvm_1_1runtime_1_1SimpleObjAllocator_1_1Handler}\index{tvm\+::runtime\+::\+Simple\+Obj\+Allocator\+::\+Handler$<$ T $>$@{tvm\+::runtime\+::\+Simple\+Obj\+Allocator\+::\+Handler$<$ T $>$}}
+
+
+{\ttfamily \#include $<$memory.\+h$>$}
+
+
+
+Collaboration diagram for tvm\+:\+:runtime\+:\+:Simple\+Obj\+Allocator\+:\+:Handler$<$ T $>$\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=256pt]{classtvm_1_1runtime_1_1SimpleObjAllocator_1_1Handler__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+using \hyperlink{classtvm_1_1runtime_1_1SimpleObjAllocator_1_1Handler_ada6a65394767c674dbbfb5937ef51bd6}{Storage\+Type} = typename std\+::aligned\+\_\+storage$<$ sizeof(T), alignof(T)$>$\+::type
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\footnotesize template$<$typename... Args$>$ }\\static T $\ast$ \hyperlink{classtvm_1_1runtime_1_1SimpleObjAllocator_1_1Handler_af605b9c8534aa0731632f8dd9d32327d}{New} (\hyperlink{classtvm_1_1runtime_1_1SimpleObjAllocator}{Simple\+Obj\+Allocator} $\ast$, Args \&\&...args)
+\item 
+static \hyperlink{classtvm_1_1runtime_1_1Object_a9e84841ca982bff376a978ade0132631}{Object\+::\+F\+Deleter} \hyperlink{classtvm_1_1runtime_1_1SimpleObjAllocator_1_1Handler_ad2425c09e13c317ab96e728ee6cd4065}{Deleter} ()
+\end{DoxyCompactItemize}
+
+
+\subsection{Member Typedef Documentation}
+\index{tvm\+::runtime\+::\+Simple\+Obj\+Allocator\+::\+Handler@{tvm\+::runtime\+::\+Simple\+Obj\+Allocator\+::\+Handler}!Storage\+Type@{Storage\+Type}}
+\index{Storage\+Type@{Storage\+Type}!tvm\+::runtime\+::\+Simple\+Obj\+Allocator\+::\+Handler@{tvm\+::runtime\+::\+Simple\+Obj\+Allocator\+::\+Handler}}
+\subsubsection[{\texorpdfstring{Storage\+Type}{StorageType}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T $>$ using {\bf tvm\+::runtime\+::\+Simple\+Obj\+Allocator\+::\+Handler}$<$ T $>$\+::{\bf Storage\+Type} =  typename std\+::aligned\+\_\+storage$<$sizeof(T), alignof(T)$>$\+::type}\hypertarget{classtvm_1_1runtime_1_1SimpleObjAllocator_1_1Handler_ada6a65394767c674dbbfb5937ef51bd6}{}\label{classtvm_1_1runtime_1_1SimpleObjAllocator_1_1Handler_ada6a65394767c674dbbfb5937ef51bd6}
+
+
+\subsection{Member Function Documentation}
+\index{tvm\+::runtime\+::\+Simple\+Obj\+Allocator\+::\+Handler@{tvm\+::runtime\+::\+Simple\+Obj\+Allocator\+::\+Handler}!Deleter@{Deleter}}
+\index{Deleter@{Deleter}!tvm\+::runtime\+::\+Simple\+Obj\+Allocator\+::\+Handler@{tvm\+::runtime\+::\+Simple\+Obj\+Allocator\+::\+Handler}}
+\subsubsection[{\texorpdfstring{Deleter()}{Deleter()}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T $>$ static {\bf Object\+::\+F\+Deleter} {\bf tvm\+::runtime\+::\+Simple\+Obj\+Allocator\+::\+Handler}$<$ T $>$\+::Deleter (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}\hypertarget{classtvm_1_1runtime_1_1SimpleObjAllocator_1_1Handler_ad2425c09e13c317ab96e728ee6cd4065}{}\label{classtvm_1_1runtime_1_1SimpleObjAllocator_1_1Handler_ad2425c09e13c317ab96e728ee6cd4065}
+\index{tvm\+::runtime\+::\+Simple\+Obj\+Allocator\+::\+Handler@{tvm\+::runtime\+::\+Simple\+Obj\+Allocator\+::\+Handler}!New@{New}}
+\index{New@{New}!tvm\+::runtime\+::\+Simple\+Obj\+Allocator\+::\+Handler@{tvm\+::runtime\+::\+Simple\+Obj\+Allocator\+::\+Handler}}
+\subsubsection[{\texorpdfstring{New(\+Simple\+Obj\+Allocator $\ast$, Args \&\&...\+args)}{New(SimpleObjAllocator *, Args &&...args)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T $>$ template$<$typename... Args$>$ static T$\ast$ {\bf tvm\+::runtime\+::\+Simple\+Obj\+Allocator\+::\+Handler}$<$ T $>$\+::New (
+\begin{DoxyParamCaption}
+\item[{{\bf Simple\+Obj\+Allocator} $\ast$}]{, }
+\item[{Args \&\&...}]{args}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}\hypertarget{classtvm_1_1runtime_1_1SimpleObjAllocator_1_1Handler_af605b9c8534aa0731632f8dd9d32327d}{}\label{classtvm_1_1runtime_1_1SimpleObjAllocator_1_1Handler_af605b9c8534aa0731632f8dd9d32327d}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+include/tvm/runtime/\hyperlink{runtime_2memory_8h}{memory.\+h}\end{DoxyCompactItemize}

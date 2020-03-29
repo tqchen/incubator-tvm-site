@@ -1,0 +1,14 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="dir_9028d5d964ed0471973ff1d6dc49c294" kind="dir">
+    <compoundname>topi/include/topi/x86</compoundname>
+    <innerfile refid="x86_2bnn_8h">bnn.h</innerfile>
+    <innerfile refid="x86_2default_8h">default.h</innerfile>
+    <innerfile refid="x86_2injective_8h">injective.h</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="topi/include/topi/x86/"/>
+  </compounddef>
+</doxygen>

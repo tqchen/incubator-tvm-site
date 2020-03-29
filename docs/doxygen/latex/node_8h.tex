@@ -1,0 +1,50 @@
+\hypertarget{node_8h}{}\section{include/tvm/node/node.h File Reference}
+\label{node_8h}\index{include/tvm/node/node.\+h@{include/tvm/node/node.\+h}}
+
+
+Definitions and helper macros for I\+R/\+A\+ST nodes.  
+
+
+{\ttfamily \#include $<$tvm/runtime/c\+\_\+runtime\+\_\+api.\+h$>$}\\*
+{\ttfamily \#include $<$tvm/runtime/object.\+h$>$}\\*
+{\ttfamily \#include $<$tvm/runtime/memory.\+h$>$}\\*
+{\ttfamily \#include $<$tvm/node/reflection.\+h$>$}\\*
+{\ttfamily \#include $<$tvm/node/repr\+\_\+printer.\+h$>$}\\*
+{\ttfamily \#include $<$tvm/node/container.\+h$>$}\\*
+{\ttfamily \#include $<$tvm/node/structural\+\_\+equal.\+h$>$}\\*
+{\ttfamily \#include $<$tvm/node/structural\+\_\+hash.\+h$>$}\\*
+{\ttfamily \#include $<$string$>$}\\*
+{\ttfamily \#include $<$vector$>$}\\*
+{\ttfamily \#include $<$utility$>$}\\*
+{\ttfamily \#include $<$type\+\_\+traits$>$}\\*
+Include dependency graph for node.\+h\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{node_8h__incl}
+\end{center}
+\end{figure}
+This graph shows which files directly or indirectly include this file\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{node_8h__dep__incl}
+\end{center}
+\end{figure}
+\subsection*{Namespaces}
+\begin{DoxyCompactItemize}
+\item 
+ \hyperlink{namespacetvm}{tvm}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Definitions and helper macros for I\+R/\+A\+ST nodes. 
+
+The node folder contains base utilities for I\+R/\+A\+ST nodes, invariant of which specific language dialect.
+
+We implement A\+S\+T/\+IR nodes as sub-\/classes of runtime\+::\+Object. The base class Node is just an alias of runtime\+::\+Object.
+
+Besides the runtime type checking provided by Object, node folder contains additional functionalities such as reflection and serialization, which are important features for building a compiler infra. 

@@ -1,0 +1,131 @@
+\hypertarget{classtvm_1_1tir_1_1BinaryOpNode}{}\section{tvm\+:\+:tir\+:\+:Binary\+Op\+Node$<$ T $>$ Class Template Reference}
+\label{classtvm_1_1tir_1_1BinaryOpNode}\index{tvm\+::tir\+::\+Binary\+Op\+Node$<$ T $>$@{tvm\+::tir\+::\+Binary\+Op\+Node$<$ T $>$}}
+
+
+Base template to implement binary ops.  
+
+
+
+
+{\ttfamily \#include $<$expr.\+h$>$}
+
+
+
+Inheritance diagram for tvm\+:\+:tir\+:\+:Binary\+Op\+Node$<$ T $>$\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=285pt]{classtvm_1_1tir_1_1BinaryOpNode__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for tvm\+:\+:tir\+:\+:Binary\+Op\+Node$<$ T $>$\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classtvm_1_1tir_1_1BinaryOpNode__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{classtvm_1_1tir_1_1BinaryOpNode_a75e2d8fdc2a5793f34ecb771a6938cc6}{Visit\+Attrs} (\hyperlink{classtvm_1_1AttrVisitor}{Attr\+Visitor} $\ast$v)
+\item 
+bool \hyperlink{classtvm_1_1tir_1_1BinaryOpNode_a743b7846b1376cb2d8e4b821d9cb9eaa}{S\+Equal\+Reduce} (const T $\ast$other, \hyperlink{classtvm_1_1SEqualReducer}{S\+Equal\+Reducer} equal) const 
+\item 
+void \hyperlink{classtvm_1_1tir_1_1BinaryOpNode_a2fd1d01ff422a1765b27f1da1b7af4ce}{S\+Hash\+Reduce} (\hyperlink{classtvm_1_1SHashReducer}{S\+Hash\+Reducer} hash\+\_\+reduce) const 
+\item 
+\hyperlink{classtvm_1_1tir_1_1BinaryOpNode_a5c562cd4eac4b86d0b06f29eb92ef70d}{T\+V\+M\+\_\+\+D\+E\+C\+L\+A\+R\+E\+\_\+\+F\+I\+N\+A\+L\+\_\+\+O\+B\+J\+E\+C\+T\+\_\+\+I\+N\+FO} (T, \hyperlink{classtvm_1_1PrimExprNode}{Prim\+Expr\+Node})
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \hyperlink{classtvm_1_1PrimExpr}{Prim\+Expr} \hyperlink{classtvm_1_1tir_1_1BinaryOpNode_afb3a9f4de76865880cc9f19ebcc75ea0}{make} (\hyperlink{classtvm_1_1PrimExpr}{Prim\+Expr} \hyperlink{classtvm_1_1tir_1_1BinaryOpNode_adbbd197d65ab43acfc1ffdfd0f2b75ab}{a}, \hyperlink{classtvm_1_1PrimExpr}{Prim\+Expr} \hyperlink{classtvm_1_1tir_1_1BinaryOpNode_a2b8c5fdbb2edc200484b7195ad68acf6}{b})
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classtvm_1_1PrimExpr}{Prim\+Expr} \hyperlink{classtvm_1_1tir_1_1BinaryOpNode_adbbd197d65ab43acfc1ffdfd0f2b75ab}{a}
+\begin{DoxyCompactList}\small\item\em The left operand. \end{DoxyCompactList}\item 
+\hyperlink{classtvm_1_1PrimExpr}{Prim\+Expr} \hyperlink{classtvm_1_1tir_1_1BinaryOpNode_a2b8c5fdbb2edc200484b7195ad68acf6}{b}
+\begin{DoxyCompactList}\small\item\em The right operand. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+\subsubsection*{template$<$typename T$>$\\*
+class tvm\+::tir\+::\+Binary\+Op\+Node$<$ T $>$}
+
+Base template to implement binary ops. 
+
+
+\begin{DoxyTemplParams}{Template Parameters}
+{\em T} & The type of the child class. \\
+\hline
+\end{DoxyTemplParams}
+
+
+\subsection{Member Function Documentation}
+\index{tvm\+::tir\+::\+Binary\+Op\+Node@{tvm\+::tir\+::\+Binary\+Op\+Node}!make@{make}}
+\index{make@{make}!tvm\+::tir\+::\+Binary\+Op\+Node@{tvm\+::tir\+::\+Binary\+Op\+Node}}
+\subsubsection[{\texorpdfstring{make(\+Prim\+Expr a, Prim\+Expr b)}{make(PrimExpr a, PrimExpr b)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T$>$ static {\bf Prim\+Expr} {\bf tvm\+::tir\+::\+Binary\+Op\+Node}$<$ T $>$\+::make (
+\begin{DoxyParamCaption}
+\item[{{\bf Prim\+Expr}}]{a, }
+\item[{{\bf Prim\+Expr}}]{b}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}\hypertarget{classtvm_1_1tir_1_1BinaryOpNode_afb3a9f4de76865880cc9f19ebcc75ea0}{}\label{classtvm_1_1tir_1_1BinaryOpNode_afb3a9f4de76865880cc9f19ebcc75ea0}
+\index{tvm\+::tir\+::\+Binary\+Op\+Node@{tvm\+::tir\+::\+Binary\+Op\+Node}!S\+Equal\+Reduce@{S\+Equal\+Reduce}}
+\index{S\+Equal\+Reduce@{S\+Equal\+Reduce}!tvm\+::tir\+::\+Binary\+Op\+Node@{tvm\+::tir\+::\+Binary\+Op\+Node}}
+\subsubsection[{\texorpdfstring{S\+Equal\+Reduce(const T $\ast$other, S\+Equal\+Reducer equal) const }{SEqualReduce(const T *other, SEqualReducer equal) const }}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T$>$ bool {\bf tvm\+::tir\+::\+Binary\+Op\+Node}$<$ T $>$\+::S\+Equal\+Reduce (
+\begin{DoxyParamCaption}
+\item[{const T $\ast$}]{other, }
+\item[{{\bf S\+Equal\+Reducer}}]{equal}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classtvm_1_1tir_1_1BinaryOpNode_a743b7846b1376cb2d8e4b821d9cb9eaa}{}\label{classtvm_1_1tir_1_1BinaryOpNode_a743b7846b1376cb2d8e4b821d9cb9eaa}
+\index{tvm\+::tir\+::\+Binary\+Op\+Node@{tvm\+::tir\+::\+Binary\+Op\+Node}!S\+Hash\+Reduce@{S\+Hash\+Reduce}}
+\index{S\+Hash\+Reduce@{S\+Hash\+Reduce}!tvm\+::tir\+::\+Binary\+Op\+Node@{tvm\+::tir\+::\+Binary\+Op\+Node}}
+\subsubsection[{\texorpdfstring{S\+Hash\+Reduce(\+S\+Hash\+Reducer hash\+\_\+reduce) const }{SHashReduce(SHashReducer hash_reduce) const }}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T$>$ void {\bf tvm\+::tir\+::\+Binary\+Op\+Node}$<$ T $>$\+::S\+Hash\+Reduce (
+\begin{DoxyParamCaption}
+\item[{{\bf S\+Hash\+Reducer}}]{hash\+\_\+reduce}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classtvm_1_1tir_1_1BinaryOpNode_a2fd1d01ff422a1765b27f1da1b7af4ce}{}\label{classtvm_1_1tir_1_1BinaryOpNode_a2fd1d01ff422a1765b27f1da1b7af4ce}
+\index{tvm\+::tir\+::\+Binary\+Op\+Node@{tvm\+::tir\+::\+Binary\+Op\+Node}!T\+V\+M\+\_\+\+D\+E\+C\+L\+A\+R\+E\+\_\+\+F\+I\+N\+A\+L\+\_\+\+O\+B\+J\+E\+C\+T\+\_\+\+I\+N\+FO@{T\+V\+M\+\_\+\+D\+E\+C\+L\+A\+R\+E\+\_\+\+F\+I\+N\+A\+L\+\_\+\+O\+B\+J\+E\+C\+T\+\_\+\+I\+N\+FO}}
+\index{T\+V\+M\+\_\+\+D\+E\+C\+L\+A\+R\+E\+\_\+\+F\+I\+N\+A\+L\+\_\+\+O\+B\+J\+E\+C\+T\+\_\+\+I\+N\+FO@{T\+V\+M\+\_\+\+D\+E\+C\+L\+A\+R\+E\+\_\+\+F\+I\+N\+A\+L\+\_\+\+O\+B\+J\+E\+C\+T\+\_\+\+I\+N\+FO}!tvm\+::tir\+::\+Binary\+Op\+Node@{tvm\+::tir\+::\+Binary\+Op\+Node}}
+\subsubsection[{\texorpdfstring{T\+V\+M\+\_\+\+D\+E\+C\+L\+A\+R\+E\+\_\+\+F\+I\+N\+A\+L\+\_\+\+O\+B\+J\+E\+C\+T\+\_\+\+I\+N\+F\+O(\+T, Prim\+Expr\+Node)}{TVM_DECLARE_FINAL_OBJECT_INFO(T, PrimExprNode)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T$>$ {\bf tvm\+::tir\+::\+Binary\+Op\+Node}$<$ T $>$\+::T\+V\+M\+\_\+\+D\+E\+C\+L\+A\+R\+E\+\_\+\+F\+I\+N\+A\+L\+\_\+\+O\+B\+J\+E\+C\+T\+\_\+\+I\+N\+FO (
+\begin{DoxyParamCaption}
+\item[{T}]{, }
+\item[{{\bf Prim\+Expr\+Node}}]{}
+\end{DoxyParamCaption}
+)}\hypertarget{classtvm_1_1tir_1_1BinaryOpNode_a5c562cd4eac4b86d0b06f29eb92ef70d}{}\label{classtvm_1_1tir_1_1BinaryOpNode_a5c562cd4eac4b86d0b06f29eb92ef70d}
+\index{tvm\+::tir\+::\+Binary\+Op\+Node@{tvm\+::tir\+::\+Binary\+Op\+Node}!Visit\+Attrs@{Visit\+Attrs}}
+\index{Visit\+Attrs@{Visit\+Attrs}!tvm\+::tir\+::\+Binary\+Op\+Node@{tvm\+::tir\+::\+Binary\+Op\+Node}}
+\subsubsection[{\texorpdfstring{Visit\+Attrs(\+Attr\+Visitor $\ast$v)}{VisitAttrs(AttrVisitor *v)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T$>$ void {\bf tvm\+::tir\+::\+Binary\+Op\+Node}$<$ T $>$\+::Visit\+Attrs (
+\begin{DoxyParamCaption}
+\item[{{\bf Attr\+Visitor} $\ast$}]{v}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classtvm_1_1tir_1_1BinaryOpNode_a75e2d8fdc2a5793f34ecb771a6938cc6}{}\label{classtvm_1_1tir_1_1BinaryOpNode_a75e2d8fdc2a5793f34ecb771a6938cc6}
+
+
+\subsection{Member Data Documentation}
+\index{tvm\+::tir\+::\+Binary\+Op\+Node@{tvm\+::tir\+::\+Binary\+Op\+Node}!a@{a}}
+\index{a@{a}!tvm\+::tir\+::\+Binary\+Op\+Node@{tvm\+::tir\+::\+Binary\+Op\+Node}}
+\subsubsection[{\texorpdfstring{a}{a}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T$>$ {\bf Prim\+Expr} {\bf tvm\+::tir\+::\+Binary\+Op\+Node}$<$ T $>$\+::a}\hypertarget{classtvm_1_1tir_1_1BinaryOpNode_adbbd197d65ab43acfc1ffdfd0f2b75ab}{}\label{classtvm_1_1tir_1_1BinaryOpNode_adbbd197d65ab43acfc1ffdfd0f2b75ab}
+
+
+The left operand. 
+
+\index{tvm\+::tir\+::\+Binary\+Op\+Node@{tvm\+::tir\+::\+Binary\+Op\+Node}!b@{b}}
+\index{b@{b}!tvm\+::tir\+::\+Binary\+Op\+Node@{tvm\+::tir\+::\+Binary\+Op\+Node}}
+\subsubsection[{\texorpdfstring{b}{b}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T$>$ {\bf Prim\+Expr} {\bf tvm\+::tir\+::\+Binary\+Op\+Node}$<$ T $>$\+::b}\hypertarget{classtvm_1_1tir_1_1BinaryOpNode_a2b8c5fdbb2edc200484b7195ad68acf6}{}\label{classtvm_1_1tir_1_1BinaryOpNode_a2b8c5fdbb2edc200484b7195ad68acf6}
+
+
+The right operand. 
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+include/tvm/tir/\hyperlink{tir_2expr_8h}{expr.\+h}\end{DoxyCompactItemize}

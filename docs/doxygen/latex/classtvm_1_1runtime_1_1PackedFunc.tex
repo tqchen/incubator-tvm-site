@@ -1,0 +1,208 @@
+\hypertarget{classtvm_1_1runtime_1_1PackedFunc}{}\section{tvm\+:\+:runtime\+:\+:Packed\+Func Class Reference}
+\label{classtvm_1_1runtime_1_1PackedFunc}\index{tvm\+::runtime\+::\+Packed\+Func@{tvm\+::runtime\+::\+Packed\+Func}}
+
+
+Packed function is a type-\/erased function. The arguments are passed by packed format.  
+
+
+
+
+{\ttfamily \#include $<$packed\+\_\+func.\+h$>$}
+
+
+
+Collaboration diagram for tvm\+:\+:runtime\+:\+:Packed\+Func\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=220pt]{classtvm_1_1runtime_1_1PackedFunc__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+using \hyperlink{classtvm_1_1runtime_1_1PackedFunc_ae5f951a6a515f3e3a7493c27704b7849}{F\+Type} = std\+::function$<$ void(\hyperlink{classtvm_1_1runtime_1_1TVMArgs}{T\+V\+M\+Args} args, \hyperlink{classtvm_1_1runtime_1_1TVMRetValue}{T\+V\+M\+Ret\+Value} $\ast$rv)$>$
+\begin{DoxyCompactList}\small\item\em The internal std\+::function. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classtvm_1_1runtime_1_1PackedFunc_ac04ed1678799ef2f0d22204edddcdb41}{Packed\+Func} ()
+\begin{DoxyCompactList}\small\item\em default constructor \end{DoxyCompactList}\item 
+\hyperlink{classtvm_1_1runtime_1_1PackedFunc_afde7eaa98f6cb12c7e80da16e859c210}{Packed\+Func} (std\+::nullptr\+\_\+t null)
+\begin{DoxyCompactList}\small\item\em constructor from null \end{DoxyCompactList}\item 
+\hyperlink{classtvm_1_1runtime_1_1PackedFunc_a66c99486332437e0459429dd00db2710}{Packed\+Func} (\hyperlink{classtvm_1_1runtime_1_1PackedFunc_ae5f951a6a515f3e3a7493c27704b7849}{F\+Type} \hyperlink{classtvm_1_1runtime_1_1PackedFunc_a14fb895cbdceecbe566588b7467dafc3}{body})
+\begin{DoxyCompactList}\small\item\em constructing a packed function from a std\+::function. \end{DoxyCompactList}\item 
+{\footnotesize template$<$typename... Args$>$ }\\\hyperlink{classtvm_1_1runtime_1_1TVMRetValue}{T\+V\+M\+Ret\+Value} \hyperlink{classtvm_1_1runtime_1_1PackedFunc_a4e0c70245a080d914946285ff3ebc0d7}{operator()} (Args \&\&...args) const 
+\begin{DoxyCompactList}\small\item\em Call packed function by directly passing in unpacked format. \end{DoxyCompactList}\item 
+void \hyperlink{classtvm_1_1runtime_1_1PackedFunc_aa90598e3e64b32de7ebfc5e09208afa4}{Call\+Packed} (\hyperlink{classtvm_1_1runtime_1_1TVMArgs}{T\+V\+M\+Args} args, \hyperlink{classtvm_1_1runtime_1_1TVMRetValue}{T\+V\+M\+Ret\+Value} $\ast$rv) const 
+\begin{DoxyCompactList}\small\item\em Call the function in packed format. \end{DoxyCompactList}\item 
+\hyperlink{classtvm_1_1runtime_1_1PackedFunc_ae5f951a6a515f3e3a7493c27704b7849}{F\+Type} \hyperlink{classtvm_1_1runtime_1_1PackedFunc_a14fb895cbdceecbe566588b7467dafc3}{body} () const 
+\item 
+bool \hyperlink{classtvm_1_1runtime_1_1PackedFunc_acfc585ee6554c18706fcfe89d3c6df87}{operator==} (std\+::nullptr\+\_\+t null) const 
+\item 
+bool \hyperlink{classtvm_1_1runtime_1_1PackedFunc_ad70b44cf7f2719f1e91fe7c865790865}{operator!=} (std\+::nullptr\+\_\+t null) const 
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Packed function is a type-\/erased function. The arguments are passed by packed format. 
+
+This is an useful unified interface to call generated functions, It is the unified function function type of T\+VM. It corresponds to T\+V\+M\+Function\+Handle in C runtime A\+PI. 
+
+\subsection{Member Typedef Documentation}
+\index{tvm\+::runtime\+::\+Packed\+Func@{tvm\+::runtime\+::\+Packed\+Func}!F\+Type@{F\+Type}}
+\index{F\+Type@{F\+Type}!tvm\+::runtime\+::\+Packed\+Func@{tvm\+::runtime\+::\+Packed\+Func}}
+\subsubsection[{\texorpdfstring{F\+Type}{FType}}]{\setlength{\rightskip}{0pt plus 5cm}using {\bf tvm\+::runtime\+::\+Packed\+Func\+::\+F\+Type} =  std\+::function$<$void ({\bf T\+V\+M\+Args} args, {\bf T\+V\+M\+Ret\+Value}$\ast$ rv)$>$}\hypertarget{classtvm_1_1runtime_1_1PackedFunc_ae5f951a6a515f3e3a7493c27704b7849}{}\label{classtvm_1_1runtime_1_1PackedFunc_ae5f951a6a515f3e3a7493c27704b7849}
+
+
+The internal std\+::function. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em args} & The arguments to the function. \\
+\hline
+{\em rv} & The return value.\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyCode}
+\textcolor{comment}{// Example code on how to implemented FType}
+\textcolor{keywordtype}{void} MyPackedFunc(TVMArgs args, TVMRetValue* rv) \{
+  \textcolor{comment}{// automatically convert arguments to desired type.}
+  \textcolor{keywordtype}{int} a0 = args[0];
+  \textcolor{keywordtype}{float} a1 = args[1];
+  ...
+  \textcolor{comment}{// automatically assign values to rv}
+  std::string my\_return\_value = \textcolor{stringliteral}{"x"};
+  *rv = my\_return\_value;
+\}
+\end{DoxyCode}
+ 
+
+\subsection{Constructor \& Destructor Documentation}
+\index{tvm\+::runtime\+::\+Packed\+Func@{tvm\+::runtime\+::\+Packed\+Func}!Packed\+Func@{Packed\+Func}}
+\index{Packed\+Func@{Packed\+Func}!tvm\+::runtime\+::\+Packed\+Func@{tvm\+::runtime\+::\+Packed\+Func}}
+\subsubsection[{\texorpdfstring{Packed\+Func()}{PackedFunc()}}]{\setlength{\rightskip}{0pt plus 5cm}tvm\+::runtime\+::\+Packed\+Func\+::\+Packed\+Func (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classtvm_1_1runtime_1_1PackedFunc_ac04ed1678799ef2f0d22204edddcdb41}{}\label{classtvm_1_1runtime_1_1PackedFunc_ac04ed1678799ef2f0d22204edddcdb41}
+
+
+default constructor 
+
+\index{tvm\+::runtime\+::\+Packed\+Func@{tvm\+::runtime\+::\+Packed\+Func}!Packed\+Func@{Packed\+Func}}
+\index{Packed\+Func@{Packed\+Func}!tvm\+::runtime\+::\+Packed\+Func@{tvm\+::runtime\+::\+Packed\+Func}}
+\subsubsection[{\texorpdfstring{Packed\+Func(std\+::nullptr\+\_\+t null)}{PackedFunc(std::nullptr_t null)}}]{\setlength{\rightskip}{0pt plus 5cm}tvm\+::runtime\+::\+Packed\+Func\+::\+Packed\+Func (
+\begin{DoxyParamCaption}
+\item[{std\+::nullptr\+\_\+t}]{null}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classtvm_1_1runtime_1_1PackedFunc_afde7eaa98f6cb12c7e80da16e859c210}{}\label{classtvm_1_1runtime_1_1PackedFunc_afde7eaa98f6cb12c7e80da16e859c210}
+
+
+constructor from null 
+
+\index{tvm\+::runtime\+::\+Packed\+Func@{tvm\+::runtime\+::\+Packed\+Func}!Packed\+Func@{Packed\+Func}}
+\index{Packed\+Func@{Packed\+Func}!tvm\+::runtime\+::\+Packed\+Func@{tvm\+::runtime\+::\+Packed\+Func}}
+\subsubsection[{\texorpdfstring{Packed\+Func(\+F\+Type body)}{PackedFunc(FType body)}}]{\setlength{\rightskip}{0pt plus 5cm}tvm\+::runtime\+::\+Packed\+Func\+::\+Packed\+Func (
+\begin{DoxyParamCaption}
+\item[{{\bf F\+Type}}]{body}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [explicit]}}\hypertarget{classtvm_1_1runtime_1_1PackedFunc_a66c99486332437e0459429dd00db2710}{}\label{classtvm_1_1runtime_1_1PackedFunc_a66c99486332437e0459429dd00db2710}
+
+
+constructing a packed function from a std\+::function. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em body} & the internal container of packed function. \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\index{tvm\+::runtime\+::\+Packed\+Func@{tvm\+::runtime\+::\+Packed\+Func}!body@{body}}
+\index{body@{body}!tvm\+::runtime\+::\+Packed\+Func@{tvm\+::runtime\+::\+Packed\+Func}}
+\subsubsection[{\texorpdfstring{body() const }{body() const }}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Packed\+Func\+::\+F\+Type} tvm\+::runtime\+::\+Packed\+Func\+::body (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classtvm_1_1runtime_1_1PackedFunc_a14fb895cbdceecbe566588b7467dafc3}{}\label{classtvm_1_1runtime_1_1PackedFunc_a14fb895cbdceecbe566588b7467dafc3}
+\begin{DoxyReturn}{Returns}
+the internal body function 
+\end{DoxyReturn}
+\index{tvm\+::runtime\+::\+Packed\+Func@{tvm\+::runtime\+::\+Packed\+Func}!Call\+Packed@{Call\+Packed}}
+\index{Call\+Packed@{Call\+Packed}!tvm\+::runtime\+::\+Packed\+Func@{tvm\+::runtime\+::\+Packed\+Func}}
+\subsubsection[{\texorpdfstring{Call\+Packed(\+T\+V\+M\+Args args, T\+V\+M\+Ret\+Value $\ast$rv) const }{CallPacked(TVMArgs args, TVMRetValue *rv) const }}]{\setlength{\rightskip}{0pt plus 5cm}void tvm\+::runtime\+::\+Packed\+Func\+::\+Call\+Packed (
+\begin{DoxyParamCaption}
+\item[{{\bf T\+V\+M\+Args}}]{args, }
+\item[{{\bf T\+V\+M\+Ret\+Value} $\ast$}]{rv}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classtvm_1_1runtime_1_1PackedFunc_aa90598e3e64b32de7ebfc5e09208afa4}{}\label{classtvm_1_1runtime_1_1PackedFunc_aa90598e3e64b32de7ebfc5e09208afa4}
+
+
+Call the function in packed format. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em args} & The arguments \\
+\hline
+{\em rv} & The return value. \\
+\hline
+\end{DoxyParams}
+\index{tvm\+::runtime\+::\+Packed\+Func@{tvm\+::runtime\+::\+Packed\+Func}!operator"!=@{operator"!=}}
+\index{operator"!=@{operator"!=}!tvm\+::runtime\+::\+Packed\+Func@{tvm\+::runtime\+::\+Packed\+Func}}
+\subsubsection[{\texorpdfstring{operator"!=(std\+::nullptr\+\_\+t null) const }{operator!=(std::nullptr_t null) const }}]{\setlength{\rightskip}{0pt plus 5cm}bool tvm\+::runtime\+::\+Packed\+Func\+::operator!= (
+\begin{DoxyParamCaption}
+\item[{std\+::nullptr\+\_\+t}]{null}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classtvm_1_1runtime_1_1PackedFunc_ad70b44cf7f2719f1e91fe7c865790865}{}\label{classtvm_1_1runtime_1_1PackedFunc_ad70b44cf7f2719f1e91fe7c865790865}
+\begin{DoxyReturn}{Returns}
+Whether the packed function is not nullptr 
+\end{DoxyReturn}
+\index{tvm\+::runtime\+::\+Packed\+Func@{tvm\+::runtime\+::\+Packed\+Func}!operator()@{operator()}}
+\index{operator()@{operator()}!tvm\+::runtime\+::\+Packed\+Func@{tvm\+::runtime\+::\+Packed\+Func}}
+\subsubsection[{\texorpdfstring{operator()(\+Args \&\&...\+args) const }{operator()(Args &&...args) const }}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename... Args$>$ {\bf T\+V\+M\+Ret\+Value} tvm\+::runtime\+::\+Packed\+Func\+::operator() (
+\begin{DoxyParamCaption}
+\item[{Args \&\&...}]{args}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classtvm_1_1runtime_1_1PackedFunc_a4e0c70245a080d914946285ff3ebc0d7}{}\label{classtvm_1_1runtime_1_1PackedFunc_a4e0c70245a080d914946285ff3ebc0d7}
+
+
+Call packed function by directly passing in unpacked format. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em args} & Arguments to be passed. \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyTemplParams}{Template Parameters}
+{\em Args} & arguments to be passed.\\
+\hline
+\end{DoxyTemplParams}
+
+\begin{DoxyCode}
+\textcolor{comment}{// Example code on how to call packed function}
+\textcolor{keywordtype}{void} \hyperlink{classtvm_1_1runtime_1_1PackedFunc_aa90598e3e64b32de7ebfc5e09208afa4}{CallPacked}(\hyperlink{classtvm_1_1runtime_1_1PackedFunc_ac04ed1678799ef2f0d22204edddcdb41}{PackedFunc} f) \{
+  \textcolor{comment}{// call like normal functions by pass in arguments}
+  \textcolor{comment}{// return value is automatically converted back}
+  \textcolor{keywordtype}{int} rvalue = f(1, 2.0);
+\}
+\end{DoxyCode}
+ \index{tvm\+::runtime\+::\+Packed\+Func@{tvm\+::runtime\+::\+Packed\+Func}!operator==@{operator==}}
+\index{operator==@{operator==}!tvm\+::runtime\+::\+Packed\+Func@{tvm\+::runtime\+::\+Packed\+Func}}
+\subsubsection[{\texorpdfstring{operator==(std\+::nullptr\+\_\+t null) const }{operator==(std::nullptr_t null) const }}]{\setlength{\rightskip}{0pt plus 5cm}bool tvm\+::runtime\+::\+Packed\+Func\+::operator== (
+\begin{DoxyParamCaption}
+\item[{std\+::nullptr\+\_\+t}]{null}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classtvm_1_1runtime_1_1PackedFunc_acfc585ee6554c18706fcfe89d3c6df87}{}\label{classtvm_1_1runtime_1_1PackedFunc_acfc585ee6554c18706fcfe89d3c6df87}
+\begin{DoxyReturn}{Returns}
+Whether the packed function is nullptr 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+include/tvm/runtime/\hyperlink{packed__func_8h}{packed\+\_\+func.\+h}\end{DoxyCompactItemize}

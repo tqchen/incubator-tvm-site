@@ -1,0 +1,103 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="threading__backend_8h" kind="file" language="C++">
+    <compoundname>threading_backend.h</compoundname>
+    <includes local="no">functional</includes>
+    <includes local="no">memory</includes>
+    <includes local="no">vector</includes>
+    <incdepgraph>
+      <node id="15246">
+        <label>functional</label>
+      </node>
+      <node id="15248">
+        <label>vector</label>
+      </node>
+      <node id="15245">
+        <label>include/tvm/runtime/threading_backend.h</label>
+        <link refid="threading_backend.h"/>
+        <childnode refid="15246" relation="include">
+        </childnode>
+        <childnode refid="15247" relation="include">
+        </childnode>
+        <childnode refid="15248" relation="include">
+        </childnode>
+      </node>
+      <node id="15247">
+        <label>memory</label>
+      </node>
+    </incdepgraph>
+    <innerclass refid="classtvm_1_1runtime_1_1threading_1_1ThreadGroup" prot="public">tvm::runtime::threading::ThreadGroup</innerclass>
+    <innernamespace refid="namespacetvm">tvm</innernamespace>
+    <innernamespace refid="namespacetvm_1_1runtime">tvm::runtime</innernamespace>
+    <innernamespace refid="namespacetvm_1_1runtime_1_1threading">tvm::runtime::threading</innernamespace>
+    <briefdescription>
+<para>Utilities for manipulating thread pool threads. </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="2"><highlight class="comment"><sp/>*<sp/>Licensed<sp/>to<sp/>the<sp/>Apache<sp/>Software<sp/>Foundation<sp/>(ASF)<sp/>under<sp/>one</highlight></codeline>
+<codeline lineno="3"><highlight class="comment"><sp/>*<sp/>or<sp/>more<sp/>contributor<sp/>license<sp/>agreements.<sp/><sp/>See<sp/>the<sp/>NOTICE<sp/>file</highlight></codeline>
+<codeline lineno="4"><highlight class="comment"><sp/>*<sp/>distributed<sp/>with<sp/>this<sp/>work<sp/>for<sp/>additional<sp/>information</highlight></codeline>
+<codeline lineno="5"><highlight class="comment"><sp/>*<sp/>regarding<sp/>copyright<sp/>ownership.<sp/><sp/>The<sp/>ASF<sp/>licenses<sp/>this<sp/>file</highlight></codeline>
+<codeline lineno="6"><highlight class="comment"><sp/>*<sp/>to<sp/>you<sp/>under<sp/>the<sp/>Apache<sp/>License,<sp/>Version<sp/>2.0<sp/>(the</highlight></codeline>
+<codeline lineno="7"><highlight class="comment"><sp/>*<sp/>&quot;License&quot;);<sp/>you<sp/>may<sp/>not<sp/>use<sp/>this<sp/>file<sp/>except<sp/>in<sp/>compliance</highlight></codeline>
+<codeline lineno="8"><highlight class="comment"><sp/>*<sp/>with<sp/>the<sp/>License.<sp/><sp/>You<sp/>may<sp/>obtain<sp/>a<sp/>copy<sp/>of<sp/>the<sp/>License<sp/>at</highlight></codeline>
+<codeline lineno="9"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="10"><highlight class="comment"><sp/>*<sp/><sp/><sp/>http://www.apache.org/licenses/LICENSE-2.0</highlight></codeline>
+<codeline lineno="11"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="12"><highlight class="comment"><sp/>*<sp/>Unless<sp/>required<sp/>by<sp/>applicable<sp/>law<sp/>or<sp/>agreed<sp/>to<sp/>in<sp/>writing,</highlight></codeline>
+<codeline lineno="13"><highlight class="comment"><sp/>*<sp/>software<sp/>distributed<sp/>under<sp/>the<sp/>License<sp/>is<sp/>distributed<sp/>on<sp/>an</highlight></codeline>
+<codeline lineno="14"><highlight class="comment"><sp/>*<sp/>&quot;AS<sp/>IS&quot;<sp/>BASIS,<sp/>WITHOUT<sp/>WARRANTIES<sp/>OR<sp/>CONDITIONS<sp/>OF<sp/>ANY</highlight></codeline>
+<codeline lineno="15"><highlight class="comment"><sp/>*<sp/>KIND,<sp/>either<sp/>express<sp/>or<sp/>implied.<sp/><sp/>See<sp/>the<sp/>License<sp/>for<sp/>the</highlight></codeline>
+<codeline lineno="16"><highlight class="comment"><sp/>*<sp/>specific<sp/>language<sp/>governing<sp/>permissions<sp/>and<sp/>limitations</highlight></codeline>
+<codeline lineno="17"><highlight class="comment"><sp/>*<sp/>under<sp/>the<sp/>License.</highlight></codeline>
+<codeline lineno="18"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight></codeline>
+<codeline lineno="24"><highlight class="preprocessor">#ifndef<sp/>TVM_RUNTIME_THREADING_BACKEND_H_</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>TVM_RUNTIME_THREADING_BACKEND_H_</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;functional&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="28"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;memory&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="29"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;vector&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="30"><highlight class="normal"></highlight></codeline>
+<codeline lineno="31"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal"><ref refid="namespacetvm" kindref="compound">tvm</ref><sp/>{</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal">runtime<sp/>{</highlight></codeline>
+<codeline lineno="33" refid="namespacetvm_1_1runtime_1_1threading" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal">threading<sp/>{</highlight></codeline>
+<codeline lineno="34"><highlight class="normal"></highlight></codeline>
+<codeline lineno="39" refid="classtvm_1_1runtime_1_1threading_1_1ThreadGroup" refkind="compound"><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classtvm_1_1runtime_1_1threading_1_1ThreadGroup" kindref="compound">ThreadGroup</ref><sp/>{</highlight></codeline>
+<codeline lineno="40"><highlight class="normal"><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="41"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal">Impl;</highlight></codeline>
+<codeline lineno="42"><highlight class="normal"></highlight></codeline>
+<codeline lineno="55"><highlight class="normal"><sp/><sp/><ref refid="classtvm_1_1runtime_1_1threading_1_1ThreadGroup_1ac5d6f6fc93271e3627201be7cfcde287" kindref="member">ThreadGroup</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>num_workers,</highlight></codeline>
+<codeline lineno="56"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::function&lt;</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal">)&gt;<sp/>worker_callback,</highlight></codeline>
+<codeline lineno="57"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>exclude_worker0<sp/>=<sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="58"><highlight class="normal"><sp/><sp/><ref refid="classtvm_1_1runtime_1_1threading_1_1ThreadGroup_1aa4342f9c75798111f6354a7806c93254" kindref="member">~ThreadGroup</ref>();</highlight></codeline>
+<codeline lineno="59"><highlight class="normal"></highlight></codeline>
+<codeline lineno="63"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classtvm_1_1runtime_1_1threading_1_1ThreadGroup_1a17a569bc69432bccea02d0cc554ff385" kindref="member">Join</ref>();</highlight></codeline>
+<codeline lineno="64"><highlight class="normal"></highlight></codeline>
+<codeline lineno="65" refid="classtvm_1_1runtime_1_1threading_1_1ThreadGroup_1a5230a4c2d7f6c2f73f3d5fb00e9f6acd" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">enum</highlight><highlight class="normal"><sp/><ref refid="classtvm_1_1runtime_1_1threading_1_1ThreadGroup_1a5230a4c2d7f6c2f73f3d5fb00e9f6acd" kindref="member">AffinityMode</ref><sp/>:<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="66" refid="classtvm_1_1runtime_1_1threading_1_1ThreadGroup_1a5230a4c2d7f6c2f73f3d5fb00e9f6acda5dcdee58295aad729c0ef90cd4d807bf" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classtvm_1_1runtime_1_1threading_1_1ThreadGroup_1a5230a4c2d7f6c2f73f3d5fb00e9f6acda5dcdee58295aad729c0ef90cd4d807bf" kindref="member">kBig</ref><sp/>=<sp/>1,</highlight></codeline>
+<codeline lineno="67" refid="classtvm_1_1runtime_1_1threading_1_1ThreadGroup_1a5230a4c2d7f6c2f73f3d5fb00e9f6acda618cfa7040dff793381df4c9e6c13b73" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classtvm_1_1runtime_1_1threading_1_1ThreadGroup_1a5230a4c2d7f6c2f73f3d5fb00e9f6acda618cfa7040dff793381df4c9e6c13b73" kindref="member">kLittle</ref><sp/>=<sp/>-1,</highlight></codeline>
+<codeline lineno="68"><highlight class="normal"><sp/><sp/>};</highlight></codeline>
+<codeline lineno="69"><highlight class="normal"></highlight></codeline>
+<codeline lineno="82"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="classtvm_1_1runtime_1_1threading_1_1ThreadGroup_1a458a6479c996dcdfa994ae1231f4635a" kindref="member">Configure</ref>(<ref refid="classtvm_1_1runtime_1_1threading_1_1ThreadGroup_1a5230a4c2d7f6c2f73f3d5fb00e9f6acd" kindref="member">AffinityMode</ref><sp/>mode,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>nthreads,<sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>exclude_worker0);</highlight></codeline>
+<codeline lineno="83"><highlight class="normal"></highlight></codeline>
+<codeline lineno="84"><highlight class="normal"><sp/></highlight><highlight class="keyword">private</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="85"><highlight class="normal"><sp/><sp/>Impl*<sp/>impl_;</highlight></codeline>
+<codeline lineno="86"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="87"><highlight class="normal"></highlight></codeline>
+<codeline lineno="91"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="namespacetvm_1_1runtime_1_1threading_1ac026961af34f1d6c26d8f1abbc580439" kindref="member">Yield</ref>();</highlight></codeline>
+<codeline lineno="92"><highlight class="normal"></highlight></codeline>
+<codeline lineno="96"><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="namespacetvm_1_1runtime_1_1threading_1af8c1c389a74e67bcc3680555288219f8" kindref="member">MaxConcurrency</ref>();</highlight></codeline>
+<codeline lineno="97"><highlight class="normal"></highlight></codeline>
+<codeline lineno="98"><highlight class="normal"></highlight></codeline>
+<codeline lineno="99"><highlight class="normal">}<sp/><sp/></highlight><highlight class="comment">//<sp/>namespace<sp/>threading</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="100"><highlight class="normal">}<sp/><sp/></highlight><highlight class="comment">//<sp/>namespace<sp/>runtime</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="101"><highlight class="normal">}<sp/><sp/></highlight><highlight class="comment">//<sp/>namespace<sp/>tvm</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="102"><highlight class="normal"></highlight></codeline>
+<codeline lineno="103"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/><sp/>//<sp/>TVM_RUNTIME_THREADING_BACKEND_H_</highlight></codeline>
+    </programlisting>
+    <location file="include/tvm/runtime/threading_backend.h"/>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,25 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="classtvm_1_1TypeFunctor" kind="class" language="C++" prot="public">
+    <compoundname>tvm::TypeFunctor</compoundname>
+    <includes refid="type__functor_8h" local="no">type_functor.h</includes>
+    <templateparamlist>
+      <param>
+        <type>typename FType</type>
+      </param>
+    </templateparamlist>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="7417">
+        <label>tvm::TypeFunctor&lt; FType &gt;</label>
+        <link refid="classtvm_1_1TypeFunctor"/>
+      </node>
+    </collaborationgraph>
+    <location file="include/tvm/ir/type_functor.h" line="37" column="1" bodyfile="include/tvm/ir/type_functor.h" bodystart="37" bodyend="-1"/>
+    <listofallmembers>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

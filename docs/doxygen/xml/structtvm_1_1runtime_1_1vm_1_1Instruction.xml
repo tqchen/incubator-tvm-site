@@ -1,0 +1,1516 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="structtvm_1_1runtime_1_1vm_1_1Instruction" kind="struct" language="C++" prot="public">
+    <compoundname>tvm::runtime::vm::Instruction</compoundname>
+    <includes refid="vm_8h" local="no">vm.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structtvm_1_1runtime_1_1vm_1_1Instruction_1aa16a3e7e4030a69da0def6465d65e745" prot="public" static="no" mutable="no">
+        <type><ref refid="namespacetvm_1_1runtime_1_1vm_1a8d8d95ce8d629c7213f2f595917870ec" kindref="member">Opcode</ref></type>
+        <definition>Opcode tvm::runtime::vm::Instruction::op</definition>
+        <argsstring></argsstring>
+        <name>op</name>
+        <briefdescription>
+<para>The instruction opcode. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/runtime/vm.h" line="129" column="1" bodyfile="include/tvm/runtime/vm.h" bodystart="129" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structtvm_1_1runtime_1_1vm_1_1Instruction_1a17f056cc4798d31c8bcee6903be8dd1d" prot="public" static="no" mutable="no">
+        <type><ref refid="namespacetvm_1_1runtime_1_1vm_1a3bbbf700719e9dc3dda2bc25210c18ae" kindref="member">RegName</ref></type>
+        <definition>RegName tvm::runtime::vm::Instruction::dst</definition>
+        <argsstring></argsstring>
+        <name>dst</name>
+        <briefdescription>
+<para>The destination register. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/runtime/vm.h" line="132" column="1" bodyfile="include/tvm/runtime/vm.h" bodystart="132" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structtvm_1_1runtime_1_1vm_1_1Instruction_1a3412cabd3b4f42f106f56fc22257f6ca" prot="public" static="no" mutable="no">
+        <type><ref refid="namespacetvm_1_1runtime_1_1vm_1a3bbbf700719e9dc3dda2bc25210c18ae" kindref="member">RegName</ref></type>
+        <definition>RegName tvm::runtime::vm::Instruction::storage</definition>
+        <argsstring></argsstring>
+        <name>storage</name>
+        <briefdescription>
+<para>The storage to allocate from. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/runtime/vm.h" line="137" column="1" bodyfile="include/tvm/runtime/vm.h" bodystart="137" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structtvm_1_1runtime_1_1vm_1_1Instruction_1a173d5883d5721b633350c0bfc24122b9" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t tvm::runtime::vm::Instruction::ndim</definition>
+        <argsstring></argsstring>
+        <name>ndim</name>
+        <briefdescription>
+<para>The number of dimensions. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/runtime/vm.h" line="139" column="1" bodyfile="include/tvm/runtime/vm.h" bodystart="139" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structtvm_1_1runtime_1_1vm_1_1Instruction_1a1354fe84e9c14c550a53f5de8f48d968" prot="public" static="no" mutable="no">
+        <type>int64_t *</type>
+        <definition>int64_t* tvm::runtime::vm::Instruction::shape</definition>
+        <argsstring></argsstring>
+        <name>shape</name>
+        <briefdescription>
+<para>The shape of tensor. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/runtime/vm.h" line="141" column="1" bodyfile="include/tvm/runtime/vm.h" bodystart="141" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structtvm_1_1runtime_1_1vm_1_1Instruction_1a91614b450055e58850c47949b3ed2714" prot="public" static="no" mutable="no">
+        <type>DLDataType</type>
+        <definition>DLDataType tvm::runtime::vm::Instruction::dtype</definition>
+        <argsstring></argsstring>
+        <name>dtype</name>
+        <briefdescription>
+<para>The datatype of tensor to be allocated. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/runtime/vm.h" line="143" column="1" bodyfile="include/tvm/runtime/vm.h" bodystart="143" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structtvm_1_1runtime_1_1vm_1_1Instruction_1ac0cf97d97cad4decc0c2306ad74dc958" prot="public" static="no" mutable="no">
+        <type>struct tvm::runtime::vm::Instruction::@0::@2</type>
+        <definition>struct tvm::runtime::vm::Instruction::@0::@2  tvm::runtime::vm::Instruction::alloc_tensor</definition>
+        <argsstring></argsstring>
+        <name>alloc_tensor</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/runtime/vm.h" line="144" column="1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structtvm_1_1runtime_1_1vm_1_1Instruction_1a0a650382fcb2cacf9d6de7007aecf3c5" prot="public" static="no" mutable="no">
+        <type><ref refid="namespacetvm_1_1runtime_1_1vm_1a3bbbf700719e9dc3dda2bc25210c18ae" kindref="member">RegName</ref></type>
+        <definition>RegName tvm::runtime::vm::Instruction::shape_register</definition>
+        <argsstring></argsstring>
+        <name>shape_register</name>
+        <briefdescription>
+<para>The register to read the shape out of. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/runtime/vm.h" line="149" column="1" bodyfile="include/tvm/runtime/vm.h" bodystart="149" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structtvm_1_1runtime_1_1vm_1_1Instruction_1a631b30d31115b92d5b00e26769550b54" prot="public" static="no" mutable="no">
+        <type>struct tvm::runtime::vm::Instruction::@0::@3</type>
+        <definition>struct tvm::runtime::vm::Instruction::@0::@3  tvm::runtime::vm::Instruction::alloc_tensor_reg</definition>
+        <argsstring></argsstring>
+        <name>alloc_tensor_reg</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/runtime/vm.h" line="152" column="1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structtvm_1_1runtime_1_1vm_1_1Instruction_1a3a175836bc0893d99935f32911e45bfd" prot="public" static="no" mutable="no">
+        <type><ref refid="namespacetvm_1_1runtime_1_1vm_1a3bbbf700719e9dc3dda2bc25210c18ae" kindref="member">RegName</ref></type>
+        <definition>RegName tvm::runtime::vm::Instruction::closure</definition>
+        <argsstring></argsstring>
+        <name>closure</name>
+        <briefdescription>
+<para>The register containing the closure. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/runtime/vm.h" line="155" column="1" bodyfile="include/tvm/runtime/vm.h" bodystart="155" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structtvm_1_1runtime_1_1vm_1_1Instruction_1ad4b0bb0bc9012b8e34c6fd621390532f" prot="public" static="no" mutable="no">
+        <type><ref refid="namespacetvm_1_1runtime_1_1vm_1a3597867d2db714bf760876a23d6b7d3d" kindref="member">Index</ref></type>
+        <definition>Index tvm::runtime::vm::Instruction::num_closure_args</definition>
+        <argsstring></argsstring>
+        <name>num_closure_args</name>
+        <briefdescription>
+<para>The number of arguments to the closure. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/runtime/vm.h" line="157" column="1" bodyfile="include/tvm/runtime/vm.h" bodystart="157" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structtvm_1_1runtime_1_1vm_1_1Instruction_1aee9011e3fab2ace2ae167db9a4394ee8" prot="public" static="no" mutable="no">
+        <type><ref refid="namespacetvm_1_1runtime_1_1vm_1a3bbbf700719e9dc3dda2bc25210c18ae" kindref="member">RegName</ref> *</type>
+        <definition>RegName* tvm::runtime::vm::Instruction::closure_args</definition>
+        <argsstring></argsstring>
+        <name>closure_args</name>
+        <briefdescription>
+<para>The closure arguments as an array. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/runtime/vm.h" line="159" column="1" bodyfile="include/tvm/runtime/vm.h" bodystart="159" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structtvm_1_1runtime_1_1vm_1_1Instruction_1ae0d33229af059c727db2abd3616660e0" prot="public" static="no" mutable="no">
+        <type><ref refid="namespacetvm_1_1runtime_1_1vm_1a3bbbf700719e9dc3dda2bc25210c18ae" kindref="member">RegName</ref></type>
+        <definition>RegName tvm::runtime::vm::Instruction::result</definition>
+        <argsstring></argsstring>
+        <name>result</name>
+        <briefdescription>
+<para>The register to return. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/runtime/vm.h" line="163" column="1" bodyfile="include/tvm/runtime/vm.h" bodystart="163" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structtvm_1_1runtime_1_1vm_1_1Instruction_1a50da0d506e9a2bffeaf75c702cf2cc33" prot="public" static="no" mutable="no">
+        <type><ref refid="namespacetvm_1_1runtime_1_1vm_1a3bbbf700719e9dc3dda2bc25210c18ae" kindref="member">RegName</ref></type>
+        <definition>RegName tvm::runtime::vm::Instruction::from</definition>
+        <argsstring></argsstring>
+        <name>from</name>
+        <briefdescription>
+<para>The source register for a move operation. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/runtime/vm.h" line="167" column="1" bodyfile="include/tvm/runtime/vm.h" bodystart="167" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structtvm_1_1runtime_1_1vm_1_1Instruction_1ac60e60c96d7bb22d8ac06169d5969232" prot="public" static="no" mutable="no">
+        <type><ref refid="namespacetvm_1_1runtime_1_1vm_1a3597867d2db714bf760876a23d6b7d3d" kindref="member">Index</ref></type>
+        <definition>Index tvm::runtime::vm::Instruction::packed_index</definition>
+        <argsstring></argsstring>
+        <name>packed_index</name>
+        <briefdescription>
+<para>The index into the packed function table. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/runtime/vm.h" line="171" column="1" bodyfile="include/tvm/runtime/vm.h" bodystart="171" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structtvm_1_1runtime_1_1vm_1_1Instruction_1a360b264ed892e620935b648e5a91a5ea" prot="public" static="no" mutable="no">
+        <type><ref refid="namespacetvm_1_1runtime_1_1vm_1a3597867d2db714bf760876a23d6b7d3d" kindref="member">Index</ref></type>
+        <definition>Index tvm::runtime::vm::Instruction::arity</definition>
+        <argsstring></argsstring>
+        <name>arity</name>
+        <briefdescription>
+<para>The arity of the packed function. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/runtime/vm.h" line="173" column="1" bodyfile="include/tvm/runtime/vm.h" bodystart="173" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structtvm_1_1runtime_1_1vm_1_1Instruction_1a6bb6a1b8be0c078394f2336970aab1af" prot="public" static="no" mutable="no">
+        <type><ref refid="namespacetvm_1_1runtime_1_1vm_1a3597867d2db714bf760876a23d6b7d3d" kindref="member">Index</ref></type>
+        <definition>Index tvm::runtime::vm::Instruction::output_size</definition>
+        <argsstring></argsstring>
+        <name>output_size</name>
+        <briefdescription>
+<para>The number of outputs produced by the packed function. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/runtime/vm.h" line="175" column="1" bodyfile="include/tvm/runtime/vm.h" bodystart="175" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structtvm_1_1runtime_1_1vm_1_1Instruction_1a5a39350aa263659863295deab57996ed" prot="public" static="no" mutable="no">
+        <type><ref refid="namespacetvm_1_1runtime_1_1vm_1a3bbbf700719e9dc3dda2bc25210c18ae" kindref="member">RegName</ref> *</type>
+        <definition>RegName* tvm::runtime::vm::Instruction::packed_args</definition>
+        <argsstring></argsstring>
+        <name>packed_args</name>
+        <briefdescription>
+<para>The arguments to pass to the packed function. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/runtime/vm.h" line="177" column="1" bodyfile="include/tvm/runtime/vm.h" bodystart="177" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structtvm_1_1runtime_1_1vm_1_1Instruction_1adebc0e955069bdaa543df3a908351532" prot="public" static="no" mutable="no">
+        <type><ref refid="namespacetvm_1_1runtime_1_1vm_1a3bbbf700719e9dc3dda2bc25210c18ae" kindref="member">RegName</ref></type>
+        <definition>RegName tvm::runtime::vm::Instruction::test</definition>
+        <argsstring></argsstring>
+        <name>test</name>
+        <briefdescription>
+<para>The register containing the test value. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/runtime/vm.h" line="181" column="1" bodyfile="include/tvm/runtime/vm.h" bodystart="181" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structtvm_1_1runtime_1_1vm_1_1Instruction_1a46879dbe84105fb621a6167f8d73b223" prot="public" static="no" mutable="no">
+        <type><ref refid="namespacetvm_1_1runtime_1_1vm_1a3bbbf700719e9dc3dda2bc25210c18ae" kindref="member">RegName</ref></type>
+        <definition>RegName tvm::runtime::vm::Instruction::target</definition>
+        <argsstring></argsstring>
+        <name>target</name>
+        <briefdescription>
+<para>The register containing the target value. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/runtime/vm.h" line="183" column="1" bodyfile="include/tvm/runtime/vm.h" bodystart="183" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structtvm_1_1runtime_1_1vm_1_1Instruction_1a58e6e5eba0eba678b94273ef7deb1df2" prot="public" static="no" mutable="no">
+        <type><ref refid="namespacetvm_1_1runtime_1_1vm_1a3597867d2db714bf760876a23d6b7d3d" kindref="member">Index</ref></type>
+        <definition>Index tvm::runtime::vm::Instruction::true_offset</definition>
+        <argsstring></argsstring>
+        <name>true_offset</name>
+        <briefdescription>
+<para>The program counter offset for the true branch. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/runtime/vm.h" line="185" column="1" bodyfile="include/tvm/runtime/vm.h" bodystart="185" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structtvm_1_1runtime_1_1vm_1_1Instruction_1a20f3b29da9e03f2fa6977743c30a02de" prot="public" static="no" mutable="no">
+        <type><ref refid="namespacetvm_1_1runtime_1_1vm_1a3597867d2db714bf760876a23d6b7d3d" kindref="member">Index</ref></type>
+        <definition>Index tvm::runtime::vm::Instruction::false_offset</definition>
+        <argsstring></argsstring>
+        <name>false_offset</name>
+        <briefdescription>
+<para>The program counter offset for the false branch. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/runtime/vm.h" line="187" column="1" bodyfile="include/tvm/runtime/vm.h" bodystart="187" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structtvm_1_1runtime_1_1vm_1_1Instruction_1a8e2e4f263c0c7fdf46a7840e2d40ac30" prot="public" static="no" mutable="no">
+        <type>struct tvm::runtime::vm::Instruction::@0::@12</type>
+        <definition>struct tvm::runtime::vm::Instruction::@0::@12  tvm::runtime::vm::Instruction::if_op</definition>
+        <argsstring></argsstring>
+        <name>if_op</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/runtime/vm.h" line="188" column="1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structtvm_1_1runtime_1_1vm_1_1Instruction_1aa60b1a70648dbba4e7ec35a56a29a02d" prot="public" static="no" mutable="no">
+        <type><ref refid="namespacetvm_1_1runtime_1_1vm_1a3597867d2db714bf760876a23d6b7d3d" kindref="member">Index</ref></type>
+        <definition>Index tvm::runtime::vm::Instruction::func_index</definition>
+        <argsstring></argsstring>
+        <name>func_index</name>
+        <briefdescription>
+<para>The function to call. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/runtime/vm.h" line="191" column="1" bodyfile="include/tvm/runtime/vm.h" bodystart="191" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structtvm_1_1runtime_1_1vm_1_1Instruction_1a5d98a3b5b50e6fa9029d05f741c0bce9" prot="public" static="no" mutable="no">
+        <type><ref refid="namespacetvm_1_1runtime_1_1vm_1a3597867d2db714bf760876a23d6b7d3d" kindref="member">Index</ref></type>
+        <definition>Index tvm::runtime::vm::Instruction::num_args</definition>
+        <argsstring></argsstring>
+        <name>num_args</name>
+        <briefdescription>
+<para>The number of arguments to the function. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/runtime/vm.h" line="193" column="1" bodyfile="include/tvm/runtime/vm.h" bodystart="193" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structtvm_1_1runtime_1_1vm_1_1Instruction_1a6fc678bca0e215303087981a79f23b7f" prot="public" static="no" mutable="no">
+        <type><ref refid="namespacetvm_1_1runtime_1_1vm_1a3bbbf700719e9dc3dda2bc25210c18ae" kindref="member">RegName</ref> *</type>
+        <definition>RegName* tvm::runtime::vm::Instruction::invoke_args_registers</definition>
+        <argsstring></argsstring>
+        <name>invoke_args_registers</name>
+        <briefdescription>
+<para>The registers containing the arguments. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/runtime/vm.h" line="195" column="1" bodyfile="include/tvm/runtime/vm.h" bodystart="195" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structtvm_1_1runtime_1_1vm_1_1Instruction_1a950d212c6493a47bfcbf368daa974853" prot="public" static="no" mutable="no">
+        <type><ref refid="namespacetvm_1_1runtime_1_1vm_1a3597867d2db714bf760876a23d6b7d3d" kindref="member">Index</ref></type>
+        <definition>Index tvm::runtime::vm::Instruction::const_index</definition>
+        <argsstring></argsstring>
+        <name>const_index</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/runtime/vm.h" line="199" column="1" bodyfile="include/tvm/runtime/vm.h" bodystart="199" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structtvm_1_1runtime_1_1vm_1_1Instruction_1ac1e5be6bd195486a884bd8a26b5d12f9" prot="public" static="no" mutable="no">
+        <type><ref refid="namespacetvm_1_1runtime_1_1vm_1a3597867d2db714bf760876a23d6b7d3d" kindref="member">Index</ref></type>
+        <definition>Index tvm::runtime::vm::Instruction::val</definition>
+        <argsstring></argsstring>
+        <name>val</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/runtime/vm.h" line="203" column="1" bodyfile="include/tvm/runtime/vm.h" bodystart="203" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structtvm_1_1runtime_1_1vm_1_1Instruction_1a283d814bcf66dea649d51cb90cb76748" prot="public" static="no" mutable="no">
+        <type>struct tvm::runtime::vm::Instruction::@0::@17</type>
+        <definition>struct tvm::runtime::vm::Instruction::@0::@17  tvm::runtime::vm::Instruction::load_consti</definition>
+        <argsstring></argsstring>
+        <name>load_consti</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/runtime/vm.h" line="204" column="1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structtvm_1_1runtime_1_1vm_1_1Instruction_1a721907173e94d564bff879792b29f789" prot="public" static="no" mutable="no">
+        <type><ref refid="namespacetvm_1_1runtime_1_1vm_1a3597867d2db714bf760876a23d6b7d3d" kindref="member">Index</ref></type>
+        <definition>Index tvm::runtime::vm::Instruction::pc_offset</definition>
+        <argsstring></argsstring>
+        <name>pc_offset</name>
+        <briefdescription>
+<para>The jump offset. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/runtime/vm.h" line="207" column="1" bodyfile="include/tvm/runtime/vm.h" bodystart="207" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structtvm_1_1runtime_1_1vm_1_1Instruction_1a0ac4dada6519d071a819cc897cb15cf1" prot="public" static="no" mutable="no">
+        <type><ref refid="namespacetvm_1_1runtime_1_1vm_1a3bbbf700719e9dc3dda2bc25210c18ae" kindref="member">RegName</ref></type>
+        <definition>RegName tvm::runtime::vm::Instruction::object</definition>
+        <argsstring></argsstring>
+        <name>object</name>
+        <briefdescription>
+<para>The register to project from. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/runtime/vm.h" line="211" column="1" bodyfile="include/tvm/runtime/vm.h" bodystart="211" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structtvm_1_1runtime_1_1vm_1_1Instruction_1a623d715b7b22a5fa853e8d000a6f1ecd" prot="public" static="no" mutable="no">
+        <type><ref refid="namespacetvm_1_1runtime_1_1vm_1a3597867d2db714bf760876a23d6b7d3d" kindref="member">Index</ref></type>
+        <definition>Index tvm::runtime::vm::Instruction::field_index</definition>
+        <argsstring></argsstring>
+        <name>field_index</name>
+        <briefdescription>
+<para>The field to read out. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/runtime/vm.h" line="213" column="1" bodyfile="include/tvm/runtime/vm.h" bodystart="213" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structtvm_1_1runtime_1_1vm_1_1Instruction_1ae9c77196c15b6e835c8b020c1c297eb2" prot="public" static="no" mutable="no">
+        <type>struct tvm::runtime::vm::Instruction::@0::@22</type>
+        <definition>struct tvm::runtime::vm::Instruction::@0::@22  tvm::runtime::vm::Instruction::get_tag</definition>
+        <argsstring></argsstring>
+        <name>get_tag</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/runtime/vm.h" line="218" column="1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structtvm_1_1runtime_1_1vm_1_1Instruction_1a7349fa2a2e70149d4af08289c539150f" prot="public" static="no" mutable="no">
+        <type><ref refid="namespacetvm_1_1runtime_1_1vm_1a3597867d2db714bf760876a23d6b7d3d" kindref="member">Index</ref></type>
+        <definition>Index tvm::runtime::vm::Instruction::constructor_tag</definition>
+        <argsstring></argsstring>
+        <name>constructor_tag</name>
+        <briefdescription>
+<para>The datatype&apos;s constructor tag. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/runtime/vm.h" line="221" column="1" bodyfile="include/tvm/runtime/vm.h" bodystart="221" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structtvm_1_1runtime_1_1vm_1_1Instruction_1a45fa340afb68a10e339b9482fda65ba7" prot="public" static="no" mutable="no">
+        <type><ref refid="namespacetvm_1_1runtime_1_1vm_1a3597867d2db714bf760876a23d6b7d3d" kindref="member">Index</ref></type>
+        <definition>Index tvm::runtime::vm::Instruction::num_fields</definition>
+        <argsstring></argsstring>
+        <name>num_fields</name>
+        <briefdescription>
+<para>The number of fields to store in the datatype. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/runtime/vm.h" line="223" column="1" bodyfile="include/tvm/runtime/vm.h" bodystart="223" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structtvm_1_1runtime_1_1vm_1_1Instruction_1a25adb383014a74a9c4ac805beefe86b6" prot="public" static="no" mutable="no">
+        <type><ref refid="namespacetvm_1_1runtime_1_1vm_1a3bbbf700719e9dc3dda2bc25210c18ae" kindref="member">RegName</ref> *</type>
+        <definition>RegName* tvm::runtime::vm::Instruction::datatype_fields</definition>
+        <argsstring></argsstring>
+        <name>datatype_fields</name>
+        <briefdescription>
+<para>The fields as an array. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/runtime/vm.h" line="225" column="1" bodyfile="include/tvm/runtime/vm.h" bodystart="225" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structtvm_1_1runtime_1_1vm_1_1Instruction_1aaea1385d3562231a2e242faa0b51c616" prot="public" static="no" mutable="no">
+        <type><ref refid="namespacetvm_1_1runtime_1_1vm_1a3597867d2db714bf760876a23d6b7d3d" kindref="member">Index</ref></type>
+        <definition>Index tvm::runtime::vm::Instruction::clo_index</definition>
+        <argsstring></argsstring>
+        <name>clo_index</name>
+        <briefdescription>
+<para>The index into the function table. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/runtime/vm.h" line="229" column="1" bodyfile="include/tvm/runtime/vm.h" bodystart="229" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structtvm_1_1runtime_1_1vm_1_1Instruction_1adbf563aa259f209ad20619c25921cdc1" prot="public" static="no" mutable="no">
+        <type><ref refid="namespacetvm_1_1runtime_1_1vm_1a3597867d2db714bf760876a23d6b7d3d" kindref="member">Index</ref></type>
+        <definition>Index tvm::runtime::vm::Instruction::num_freevar</definition>
+        <argsstring></argsstring>
+        <name>num_freevar</name>
+        <briefdescription>
+<para>The number of free variables to capture. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/runtime/vm.h" line="231" column="1" bodyfile="include/tvm/runtime/vm.h" bodystart="231" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structtvm_1_1runtime_1_1vm_1_1Instruction_1a720b762553a301b526d66042afcd5ca3" prot="public" static="no" mutable="no">
+        <type><ref refid="namespacetvm_1_1runtime_1_1vm_1a3bbbf700719e9dc3dda2bc25210c18ae" kindref="member">RegName</ref> *</type>
+        <definition>RegName* tvm::runtime::vm::Instruction::free_vars</definition>
+        <argsstring></argsstring>
+        <name>free_vars</name>
+        <briefdescription>
+<para>The free variables as an array. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/runtime/vm.h" line="233" column="1" bodyfile="include/tvm/runtime/vm.h" bodystart="233" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structtvm_1_1runtime_1_1vm_1_1Instruction_1a4f907889caa7c348a3a2dea88e89b827" prot="public" static="no" mutable="no">
+        <type><ref refid="namespacetvm_1_1runtime_1_1vm_1a3bbbf700719e9dc3dda2bc25210c18ae" kindref="member">RegName</ref></type>
+        <definition>RegName tvm::runtime::vm::Instruction::allocation_size</definition>
+        <argsstring></argsstring>
+        <name>allocation_size</name>
+        <briefdescription>
+<para>The size of the allocation. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/runtime/vm.h" line="237" column="1" bodyfile="include/tvm/runtime/vm.h" bodystart="237" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structtvm_1_1runtime_1_1vm_1_1Instruction_1ad56f744402eb006b4b8ec94ccbe840c3" prot="public" static="no" mutable="no">
+        <type><ref refid="namespacetvm_1_1runtime_1_1vm_1a3bbbf700719e9dc3dda2bc25210c18ae" kindref="member">RegName</ref></type>
+        <definition>RegName tvm::runtime::vm::Instruction::alignment</definition>
+        <argsstring></argsstring>
+        <name>alignment</name>
+        <briefdescription>
+<para>The alignment of the allocation. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/runtime/vm.h" line="239" column="1" bodyfile="include/tvm/runtime/vm.h" bodystart="239" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structtvm_1_1runtime_1_1vm_1_1Instruction_1a0f48c1e04fe9ba735576bef37caf9cce" prot="public" static="no" mutable="no">
+        <type>DLDataType</type>
+        <definition>DLDataType tvm::runtime::vm::Instruction::dtype_hint</definition>
+        <argsstring></argsstring>
+        <name>dtype_hint</name>
+        <briefdescription>
+<para>The hint of the dtype. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/runtime/vm.h" line="241" column="1" bodyfile="include/tvm/runtime/vm.h" bodystart="241" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structtvm_1_1runtime_1_1vm_1_1Instruction_1af2ef1564cf59236e194d922633d90204" prot="public" static="no" mutable="no">
+        <type>struct tvm::runtime::vm::Instruction::@0::@27</type>
+        <definition>struct tvm::runtime::vm::Instruction::@0::@27  tvm::runtime::vm::Instruction::alloc_storage</definition>
+        <argsstring></argsstring>
+        <name>alloc_storage</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/runtime/vm.h" line="242" column="1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structtvm_1_1runtime_1_1vm_1_1Instruction_1a07b7eb011780c5735fc13059229bb26d" prot="public" static="no" mutable="no">
+        <type>union tvm::runtime::vm::Instruction::@0</type>
+        <definition>union tvm::runtime::vm::Instruction::@0 tvm::runtime::vm::Instruction::@1</definition>
+        <argsstring></argsstring>
+        <name>@1</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/runtime/vm.h" line="243" column="1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="structtvm_1_1runtime_1_1vm_1_1Instruction_1a25ec217ce2afe8decb3d92c716e31c83" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="structtvm_1_1runtime_1_1vm_1_1Instruction" kindref="compound">Instruction</ref></type>
+        <definition>static Instruction tvm::runtime::vm::Instruction::Ret</definition>
+        <argsstring>(RegName return_reg)</argsstring>
+        <name>Ret</name>
+        <param>
+          <type><ref refid="namespacetvm_1_1runtime_1_1vm_1a3bbbf700719e9dc3dda2bc25210c18ae" kindref="member">RegName</ref></type>
+          <declname>return_reg</declname>
+        </param>
+        <briefdescription>
+<para>Construct a return instruction. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>return_reg</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The register containing the return value. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The return instruction. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/runtime/vm.h" line="250" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="structtvm_1_1runtime_1_1vm_1_1Instruction_1a1107060efafaf8af3fba3ec865334946" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="structtvm_1_1runtime_1_1vm_1_1Instruction" kindref="compound">Instruction</ref></type>
+        <definition>static Instruction tvm::runtime::vm::Instruction::Fatal</definition>
+        <argsstring>()</argsstring>
+        <name>Fatal</name>
+        <briefdescription>
+<para>Construct a fatal instruction. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>The fatal instruction. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/runtime/vm.h" line="255" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="structtvm_1_1runtime_1_1vm_1_1Instruction_1a83bcfbc103e576eac9a225ab1912c1e4" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="structtvm_1_1runtime_1_1vm_1_1Instruction" kindref="compound">Instruction</ref></type>
+        <definition>static Instruction tvm::runtime::vm::Instruction::InvokePacked</definition>
+        <argsstring>(Index packed_index, Index arity, Index output_size, const std::vector&lt; RegName &gt; &amp;args)</argsstring>
+        <name>InvokePacked</name>
+        <param>
+          <type><ref refid="namespacetvm_1_1runtime_1_1vm_1a3597867d2db714bf760876a23d6b7d3d" kindref="member">Index</ref></type>
+          <declname>packed_index</declname>
+        </param>
+        <param>
+          <type><ref refid="namespacetvm_1_1runtime_1_1vm_1a3597867d2db714bf760876a23d6b7d3d" kindref="member">Index</ref></type>
+          <declname>arity</declname>
+        </param>
+        <param>
+          <type><ref refid="namespacetvm_1_1runtime_1_1vm_1a3597867d2db714bf760876a23d6b7d3d" kindref="member">Index</ref></type>
+          <declname>output_size</declname>
+        </param>
+        <param>
+          <type>const std::vector&lt; <ref refid="namespacetvm_1_1runtime_1_1vm_1a3bbbf700719e9dc3dda2bc25210c18ae" kindref="member">RegName</ref> &gt; &amp;</type>
+          <declname>args</declname>
+        </param>
+        <briefdescription>
+<para>Construct a invoke packed instruction. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>packed_index</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The index of the packed function. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>arity</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The arity of the function. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>output_size</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The number of outputs of the packed function. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>args</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The argument registers. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The invoke packed instruction. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/runtime/vm.h" line="264" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="structtvm_1_1runtime_1_1vm_1_1Instruction_1ad7d69fff7d1f2acae7f7c802f1360ec4" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="structtvm_1_1runtime_1_1vm_1_1Instruction" kindref="compound">Instruction</ref></type>
+        <definition>static Instruction tvm::runtime::vm::Instruction::AllocTensor</definition>
+        <argsstring>(RegName storage, const std::vector&lt; int64_t &gt; &amp;shape, DLDataType dtype, RegName dst)</argsstring>
+        <name>AllocTensor</name>
+        <param>
+          <type><ref refid="namespacetvm_1_1runtime_1_1vm_1a3bbbf700719e9dc3dda2bc25210c18ae" kindref="member">RegName</ref></type>
+          <declname>storage</declname>
+        </param>
+        <param>
+          <type>const std::vector&lt; int64_t &gt; &amp;</type>
+          <declname>shape</declname>
+        </param>
+        <param>
+          <type>DLDataType</type>
+          <declname>dtype</declname>
+        </param>
+        <param>
+          <type><ref refid="namespacetvm_1_1runtime_1_1vm_1a3bbbf700719e9dc3dda2bc25210c18ae" kindref="member">RegName</ref></type>
+          <declname>dst</declname>
+        </param>
+        <briefdescription>
+<para>Construct an allocate tensor instruction with constant shape. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>storage</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The storage to allocate out of. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>shape</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The shape of the tensor. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>dtype</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The dtype of the tensor. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>dst</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The destination register. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The allocate tensor instruction. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/runtime/vm.h" line="274" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="structtvm_1_1runtime_1_1vm_1_1Instruction_1a8bac5c8e2d7a8bbf5519a6620fcc25e0" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="structtvm_1_1runtime_1_1vm_1_1Instruction" kindref="compound">Instruction</ref></type>
+        <definition>static Instruction tvm::runtime::vm::Instruction::AllocTensorReg</definition>
+        <argsstring>(RegName storage, RegName shape_register, DLDataType dtype, RegName dst)</argsstring>
+        <name>AllocTensorReg</name>
+        <param>
+          <type><ref refid="namespacetvm_1_1runtime_1_1vm_1a3bbbf700719e9dc3dda2bc25210c18ae" kindref="member">RegName</ref></type>
+          <declname>storage</declname>
+        </param>
+        <param>
+          <type><ref refid="namespacetvm_1_1runtime_1_1vm_1a3bbbf700719e9dc3dda2bc25210c18ae" kindref="member">RegName</ref></type>
+          <declname>shape_register</declname>
+        </param>
+        <param>
+          <type>DLDataType</type>
+          <declname>dtype</declname>
+        </param>
+        <param>
+          <type><ref refid="namespacetvm_1_1runtime_1_1vm_1a3bbbf700719e9dc3dda2bc25210c18ae" kindref="member">RegName</ref></type>
+          <declname>dst</declname>
+        </param>
+        <briefdescription>
+<para>Construct an allocate tensor instruction with register. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>storage</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The storage to allocate out of. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>shape_register</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The register containing the shape. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>dtype</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The dtype of the tensor. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>dst</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The destination register. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The allocate tensor instruction. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/runtime/vm.h" line="284" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="structtvm_1_1runtime_1_1vm_1_1Instruction_1aa3abb881f27ea29f0fb2eed670130a6f" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="structtvm_1_1runtime_1_1vm_1_1Instruction" kindref="compound">Instruction</ref></type>
+        <definition>static Instruction tvm::runtime::vm::Instruction::AllocADT</definition>
+        <argsstring>(Index tag, Index num_fields, const std::vector&lt; RegName &gt; &amp;fields, RegName dst)</argsstring>
+        <name>AllocADT</name>
+        <param>
+          <type><ref refid="namespacetvm_1_1runtime_1_1vm_1a3597867d2db714bf760876a23d6b7d3d" kindref="member">Index</ref></type>
+          <declname>tag</declname>
+        </param>
+        <param>
+          <type><ref refid="namespacetvm_1_1runtime_1_1vm_1a3597867d2db714bf760876a23d6b7d3d" kindref="member">Index</ref></type>
+          <declname>num_fields</declname>
+        </param>
+        <param>
+          <type>const std::vector&lt; <ref refid="namespacetvm_1_1runtime_1_1vm_1a3bbbf700719e9dc3dda2bc25210c18ae" kindref="member">RegName</ref> &gt; &amp;</type>
+          <declname>fields</declname>
+        </param>
+        <param>
+          <type><ref refid="namespacetvm_1_1runtime_1_1vm_1a3bbbf700719e9dc3dda2bc25210c18ae" kindref="member">RegName</ref></type>
+          <declname>dst</declname>
+        </param>
+        <briefdescription>
+<para>Construct an allocate datatype instruction. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>tag</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The datatype tag. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>num_fields</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The number of fields for the datatype. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>fields</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The registers containing the fields. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>dst</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The register name of the destination. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The allocate instruction tensor. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/runtime/vm.h" line="294" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="structtvm_1_1runtime_1_1vm_1_1Instruction_1af8d06b58af58444b96df0a932b5e4168" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="structtvm_1_1runtime_1_1vm_1_1Instruction" kindref="compound">Instruction</ref></type>
+        <definition>static Instruction tvm::runtime::vm::Instruction::AllocClosure</definition>
+        <argsstring>(Index func_index, Index num_freevar, const std::vector&lt; RegName &gt; &amp;free_vars, RegName dst)</argsstring>
+        <name>AllocClosure</name>
+        <param>
+          <type><ref refid="namespacetvm_1_1runtime_1_1vm_1a3597867d2db714bf760876a23d6b7d3d" kindref="member">Index</ref></type>
+          <declname>func_index</declname>
+        </param>
+        <param>
+          <type><ref refid="namespacetvm_1_1runtime_1_1vm_1a3597867d2db714bf760876a23d6b7d3d" kindref="member">Index</ref></type>
+          <declname>num_freevar</declname>
+        </param>
+        <param>
+          <type>const std::vector&lt; <ref refid="namespacetvm_1_1runtime_1_1vm_1a3bbbf700719e9dc3dda2bc25210c18ae" kindref="member">RegName</ref> &gt; &amp;</type>
+          <declname>free_vars</declname>
+        </param>
+        <param>
+          <type><ref refid="namespacetvm_1_1runtime_1_1vm_1a3bbbf700719e9dc3dda2bc25210c18ae" kindref="member">RegName</ref></type>
+          <declname>dst</declname>
+        </param>
+        <briefdescription>
+<para>Construct an allocate closure instruction. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>func_index</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The index of the function table. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>num_freevar</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The number of free variables. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>free_vars</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The registers of the free variables. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>dst</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The destination register. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The allocate closure instruction. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/runtime/vm.h" line="304" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="structtvm_1_1runtime_1_1vm_1_1Instruction_1a538ae141008bb7bcfd9513f9d3e2a54b" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="structtvm_1_1runtime_1_1vm_1_1Instruction" kindref="compound">Instruction</ref></type>
+        <definition>static Instruction tvm::runtime::vm::Instruction::GetField</definition>
+        <argsstring>(RegName object_reg, Index field_index, RegName dst)</argsstring>
+        <name>GetField</name>
+        <param>
+          <type><ref refid="namespacetvm_1_1runtime_1_1vm_1a3bbbf700719e9dc3dda2bc25210c18ae" kindref="member">RegName</ref></type>
+          <declname>object_reg</declname>
+        </param>
+        <param>
+          <type><ref refid="namespacetvm_1_1runtime_1_1vm_1a3597867d2db714bf760876a23d6b7d3d" kindref="member">Index</ref></type>
+          <declname>field_index</declname>
+        </param>
+        <param>
+          <type><ref refid="namespacetvm_1_1runtime_1_1vm_1a3bbbf700719e9dc3dda2bc25210c18ae" kindref="member">RegName</ref></type>
+          <declname>dst</declname>
+        </param>
+        <briefdescription>
+<para>Construct a get field instruction. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>object_reg</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The register containing the object to project from. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>field_index</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The field to read out of the object. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>dst</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The destination register. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The get field instruction. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/runtime/vm.h" line="313" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="structtvm_1_1runtime_1_1vm_1_1Instruction_1a8b46d1eb3853555b6d3a85f2ef9c0868" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="structtvm_1_1runtime_1_1vm_1_1Instruction" kindref="compound">Instruction</ref></type>
+        <definition>static Instruction tvm::runtime::vm::Instruction::GetTag</definition>
+        <argsstring>(RegName object_reg, RegName dst)</argsstring>
+        <name>GetTag</name>
+        <param>
+          <type><ref refid="namespacetvm_1_1runtime_1_1vm_1a3bbbf700719e9dc3dda2bc25210c18ae" kindref="member">RegName</ref></type>
+          <declname>object_reg</declname>
+        </param>
+        <param>
+          <type><ref refid="namespacetvm_1_1runtime_1_1vm_1a3bbbf700719e9dc3dda2bc25210c18ae" kindref="member">RegName</ref></type>
+          <declname>dst</declname>
+        </param>
+        <briefdescription>
+<para>Construct a get_tag instruction. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>object_reg</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The register containing the object to project from. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>dst</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The destination register. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The get_tag instruction. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/runtime/vm.h" line="320" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="structtvm_1_1runtime_1_1vm_1_1Instruction_1ae7a1eb87c8f583a606e89a0ad22af38b" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="structtvm_1_1runtime_1_1vm_1_1Instruction" kindref="compound">Instruction</ref></type>
+        <definition>static Instruction tvm::runtime::vm::Instruction::If</definition>
+        <argsstring>(RegName test, RegName target, Index true_branch, Index false_branch)</argsstring>
+        <name>If</name>
+        <param>
+          <type><ref refid="namespacetvm_1_1runtime_1_1vm_1a3bbbf700719e9dc3dda2bc25210c18ae" kindref="member">RegName</ref></type>
+          <declname>test</declname>
+        </param>
+        <param>
+          <type><ref refid="namespacetvm_1_1runtime_1_1vm_1a3bbbf700719e9dc3dda2bc25210c18ae" kindref="member">RegName</ref></type>
+          <declname>target</declname>
+        </param>
+        <param>
+          <type><ref refid="namespacetvm_1_1runtime_1_1vm_1a3597867d2db714bf760876a23d6b7d3d" kindref="member">Index</ref></type>
+          <declname>true_branch</declname>
+        </param>
+        <param>
+          <type><ref refid="namespacetvm_1_1runtime_1_1vm_1a3597867d2db714bf760876a23d6b7d3d" kindref="member">Index</ref></type>
+          <declname>false_branch</declname>
+        </param>
+        <briefdescription>
+<para>Construct an if instruction. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>test</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The register containing the test value. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>target</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The register containing the target value. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>true_branch</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The offset to the true branch. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>false_branch</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The offset to the false branch. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The if instruction. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/runtime/vm.h" line="329" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="structtvm_1_1runtime_1_1vm_1_1Instruction_1a40b49fe5c05c5fe5f7a5c5c01bf651c8" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="structtvm_1_1runtime_1_1vm_1_1Instruction" kindref="compound">Instruction</ref></type>
+        <definition>static Instruction tvm::runtime::vm::Instruction::Goto</definition>
+        <argsstring>(Index pc_offset)</argsstring>
+        <name>Goto</name>
+        <param>
+          <type><ref refid="namespacetvm_1_1runtime_1_1vm_1a3597867d2db714bf760876a23d6b7d3d" kindref="member">Index</ref></type>
+          <declname>pc_offset</declname>
+        </param>
+        <briefdescription>
+<para>Construct a goto instruction. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>pc_offset</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The offset from the current pc. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The goto instruction. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/runtime/vm.h" line="335" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="structtvm_1_1runtime_1_1vm_1_1Instruction_1acb19406a24fa95bf39a29d15ad6be256" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="structtvm_1_1runtime_1_1vm_1_1Instruction" kindref="compound">Instruction</ref></type>
+        <definition>static Instruction tvm::runtime::vm::Instruction::Invoke</definition>
+        <argsstring>(Index func_index, const std::vector&lt; RegName &gt; &amp;args, RegName dst)</argsstring>
+        <name>Invoke</name>
+        <param>
+          <type><ref refid="namespacetvm_1_1runtime_1_1vm_1a3597867d2db714bf760876a23d6b7d3d" kindref="member">Index</ref></type>
+          <declname>func_index</declname>
+        </param>
+        <param>
+          <type>const std::vector&lt; <ref refid="namespacetvm_1_1runtime_1_1vm_1a3bbbf700719e9dc3dda2bc25210c18ae" kindref="member">RegName</ref> &gt; &amp;</type>
+          <declname>args</declname>
+        </param>
+        <param>
+          <type><ref refid="namespacetvm_1_1runtime_1_1vm_1a3bbbf700719e9dc3dda2bc25210c18ae" kindref="member">RegName</ref></type>
+          <declname>dst</declname>
+        </param>
+        <briefdescription>
+<para>Construct an invoke instruction. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>func_index</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The index of the function to invoke. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>args</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The registers containing the arguments. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>dst</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The destination register. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The invoke instruction. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/runtime/vm.h" line="343" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="structtvm_1_1runtime_1_1vm_1_1Instruction_1aff2701f8ac1a6232115e73fbb3fe522a" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="structtvm_1_1runtime_1_1vm_1_1Instruction" kindref="compound">Instruction</ref></type>
+        <definition>static Instruction tvm::runtime::vm::Instruction::InvokeClosure</definition>
+        <argsstring>(RegName closure, const std::vector&lt; RegName &gt; &amp;args, RegName dst)</argsstring>
+        <name>InvokeClosure</name>
+        <param>
+          <type><ref refid="namespacetvm_1_1runtime_1_1vm_1a3bbbf700719e9dc3dda2bc25210c18ae" kindref="member">RegName</ref></type>
+          <declname>closure</declname>
+        </param>
+        <param>
+          <type>const std::vector&lt; <ref refid="namespacetvm_1_1runtime_1_1vm_1a3bbbf700719e9dc3dda2bc25210c18ae" kindref="member">RegName</ref> &gt; &amp;</type>
+          <declname>args</declname>
+        </param>
+        <param>
+          <type><ref refid="namespacetvm_1_1runtime_1_1vm_1a3bbbf700719e9dc3dda2bc25210c18ae" kindref="member">RegName</ref></type>
+          <declname>dst</declname>
+        </param>
+        <briefdescription>
+<para>Construct an invoke closure instruction. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>closure</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The register of the closure to invoke. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>args</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The registers containing the arguments. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>dst</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The destination register. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The invoke closure instruction. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/runtime/vm.h" line="351" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="structtvm_1_1runtime_1_1vm_1_1Instruction_1a24eb319b975b2929aa80cf9a7d9bf661" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="structtvm_1_1runtime_1_1vm_1_1Instruction" kindref="compound">Instruction</ref></type>
+        <definition>static Instruction tvm::runtime::vm::Instruction::LoadConst</definition>
+        <argsstring>(Index const_index, RegName dst)</argsstring>
+        <name>LoadConst</name>
+        <param>
+          <type><ref refid="namespacetvm_1_1runtime_1_1vm_1a3597867d2db714bf760876a23d6b7d3d" kindref="member">Index</ref></type>
+          <declname>const_index</declname>
+        </param>
+        <param>
+          <type><ref refid="namespacetvm_1_1runtime_1_1vm_1a3bbbf700719e9dc3dda2bc25210c18ae" kindref="member">RegName</ref></type>
+          <declname>dst</declname>
+        </param>
+        <briefdescription>
+<para>Construct a load constant instruction. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>const_index</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The index of the constant. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>dst</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The destination register. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The load constant instruction. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/runtime/vm.h" line="358" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="structtvm_1_1runtime_1_1vm_1_1Instruction_1a7aa251e343bc1ebf8a164bdc243ba185" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="structtvm_1_1runtime_1_1vm_1_1Instruction" kindref="compound">Instruction</ref></type>
+        <definition>static Instruction tvm::runtime::vm::Instruction::LoadConsti</definition>
+        <argsstring>(Index val, RegName dst)</argsstring>
+        <name>LoadConsti</name>
+        <param>
+          <type><ref refid="namespacetvm_1_1runtime_1_1vm_1a3597867d2db714bf760876a23d6b7d3d" kindref="member">Index</ref></type>
+          <declname>val</declname>
+        </param>
+        <param>
+          <type><ref refid="namespacetvm_1_1runtime_1_1vm_1a3bbbf700719e9dc3dda2bc25210c18ae" kindref="member">RegName</ref></type>
+          <declname>dst</declname>
+        </param>
+        <briefdescription>
+<para>Construct a load_constanti instruction. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>val</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The interger constant value. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>dst</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The destination register. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The load_constanti instruction. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/runtime/vm.h" line="365" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="structtvm_1_1runtime_1_1vm_1_1Instruction_1a162dc8d73dc2306f066c3ee013ff096f" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="structtvm_1_1runtime_1_1vm_1_1Instruction" kindref="compound">Instruction</ref></type>
+        <definition>static Instruction tvm::runtime::vm::Instruction::Move</definition>
+        <argsstring>(RegName src, RegName dst)</argsstring>
+        <name>Move</name>
+        <param>
+          <type><ref refid="namespacetvm_1_1runtime_1_1vm_1a3bbbf700719e9dc3dda2bc25210c18ae" kindref="member">RegName</ref></type>
+          <declname>src</declname>
+        </param>
+        <param>
+          <type><ref refid="namespacetvm_1_1runtime_1_1vm_1a3bbbf700719e9dc3dda2bc25210c18ae" kindref="member">RegName</ref></type>
+          <declname>dst</declname>
+        </param>
+        <briefdescription>
+<para>Construct a move instruction. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>src</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The source register. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>dst</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The destination register. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The move instruction. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/runtime/vm.h" line="372" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="structtvm_1_1runtime_1_1vm_1_1Instruction_1aa9bb0614ecf04ae6a8bccfc03dbb6a1f" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="structtvm_1_1runtime_1_1vm_1_1Instruction" kindref="compound">Instruction</ref></type>
+        <definition>static Instruction tvm::runtime::vm::Instruction::AllocStorage</definition>
+        <argsstring>(RegName size, RegName alignment, DLDataType dtype_hint, RegName dst)</argsstring>
+        <name>AllocStorage</name>
+        <param>
+          <type><ref refid="namespacetvm_1_1runtime_1_1vm_1a3bbbf700719e9dc3dda2bc25210c18ae" kindref="member">RegName</ref></type>
+          <declname>size</declname>
+        </param>
+        <param>
+          <type><ref refid="namespacetvm_1_1runtime_1_1vm_1a3bbbf700719e9dc3dda2bc25210c18ae" kindref="member">RegName</ref></type>
+          <declname>alignment</declname>
+        </param>
+        <param>
+          <type>DLDataType</type>
+          <declname>dtype_hint</declname>
+        </param>
+        <param>
+          <type><ref refid="namespacetvm_1_1runtime_1_1vm_1a3bbbf700719e9dc3dda2bc25210c18ae" kindref="member">RegName</ref></type>
+          <declname>dst</declname>
+        </param>
+        <briefdescription>
+<para>Allocate a storage block. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>size</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The size of the allocation. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>alignment</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The allocation&apos;s alignment. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>dtype_hint</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The data type hint for the allocator. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>dst</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The destination to place the storage. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The alloc storage instruction. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/runtime/vm.h" line="382" column="1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="structtvm_1_1runtime_1_1vm_1_1Instruction_1afb6a19291861797375b04b07f174614b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>tvm::runtime::vm::Instruction::Instruction</definition>
+        <argsstring>()</argsstring>
+        <name>Instruction</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/runtime/vm.h" line="385" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="structtvm_1_1runtime_1_1vm_1_1Instruction_1a22bf3a1b6b92af774cf87893d091d5ce" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>tvm::runtime::vm::Instruction::Instruction</definition>
+        <argsstring>(const Instruction &amp;instr)</argsstring>
+        <name>Instruction</name>
+        <param>
+          <type>const <ref refid="structtvm_1_1runtime_1_1vm_1_1Instruction" kindref="compound">Instruction</ref> &amp;</type>
+          <declname>instr</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/runtime/vm.h" line="386" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="structtvm_1_1runtime_1_1vm_1_1Instruction_1a69c12a9470f67ea26e53172f5c9220a1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="structtvm_1_1runtime_1_1vm_1_1Instruction" kindref="compound">Instruction</ref> &amp;</type>
+        <definition>Instruction&amp; tvm::runtime::vm::Instruction::operator=</definition>
+        <argsstring>(const Instruction &amp;instr)</argsstring>
+        <name>operator=</name>
+        <param>
+          <type>const <ref refid="structtvm_1_1runtime_1_1vm_1_1Instruction" kindref="compound">Instruction</ref> &amp;</type>
+          <declname>instr</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/runtime/vm.h" line="387" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="structtvm_1_1runtime_1_1vm_1_1Instruction_1aff9f0ab6000156b24ef3631caf5972bd" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>tvm::runtime::vm::Instruction::~Instruction</definition>
+        <argsstring>()</argsstring>
+        <name>~Instruction</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/runtime/vm.h" line="388" column="1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="friend">
+      <memberdef kind="friend" id="structtvm_1_1runtime_1_1vm_1_1Instruction_1a7948440c8e6f670e3c782619415dc184" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>friend std::ostream &amp;</type>
+        <definition>std::ostream&amp; operator&lt;&lt;</definition>
+        <argsstring>(std::ostream &amp;os, const Instruction &amp;)</argsstring>
+        <name>operator&lt;&lt;</name>
+        <param>
+          <type>std::ostream &amp;</type>
+          <declname>os</declname>
+        </param>
+        <param>
+          <type>const <ref refid="structtvm_1_1runtime_1_1vm_1_1Instruction" kindref="compound">Instruction</ref> &amp;</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/runtime/vm.h" line="390" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>A single virtual machine instruction. </para>    </briefdescription>
+    <detaileddescription>
+<para>The representation of the instruction is as a tagged union.</para><para>The first field represents which instruction, and by extension which field of the union is active. </para>    </detaileddescription>
+    <collaborationgraph>
+      <node id="5376">
+        <label>tvm::runtime::vm::Instruction</label>
+        <link refid="structtvm_1_1runtime_1_1vm_1_1Instruction"/>
+      </node>
+    </collaborationgraph>
+    <location file="include/tvm/runtime/vm.h" line="127" column="1" bodyfile="include/tvm/runtime/vm.h" bodystart="127" bodyend="391"/>
+    <listofallmembers>
+      <member refid="structtvm_1_1runtime_1_1vm_1_1Instruction_1ad56f744402eb006b4b8ec94ccbe840c3" prot="public" virt="non-virtual"><scope>tvm::runtime::vm::Instruction</scope><name>alignment</name></member>
+      <member refid="structtvm_1_1runtime_1_1vm_1_1Instruction_1af2ef1564cf59236e194d922633d90204" prot="public" virt="non-virtual"><scope>tvm::runtime::vm::Instruction</scope><name>alloc_storage</name></member>
+      <member refid="structtvm_1_1runtime_1_1vm_1_1Instruction_1ac0cf97d97cad4decc0c2306ad74dc958" prot="public" virt="non-virtual"><scope>tvm::runtime::vm::Instruction</scope><name>alloc_tensor</name></member>
+      <member refid="structtvm_1_1runtime_1_1vm_1_1Instruction_1a631b30d31115b92d5b00e26769550b54" prot="public" virt="non-virtual"><scope>tvm::runtime::vm::Instruction</scope><name>alloc_tensor_reg</name></member>
+      <member refid="structtvm_1_1runtime_1_1vm_1_1Instruction_1aa3abb881f27ea29f0fb2eed670130a6f" prot="public" virt="non-virtual"><scope>tvm::runtime::vm::Instruction</scope><name>AllocADT</name></member>
+      <member refid="structtvm_1_1runtime_1_1vm_1_1Instruction_1a4f907889caa7c348a3a2dea88e89b827" prot="public" virt="non-virtual"><scope>tvm::runtime::vm::Instruction</scope><name>allocation_size</name></member>
+      <member refid="structtvm_1_1runtime_1_1vm_1_1Instruction_1af8d06b58af58444b96df0a932b5e4168" prot="public" virt="non-virtual"><scope>tvm::runtime::vm::Instruction</scope><name>AllocClosure</name></member>
+      <member refid="structtvm_1_1runtime_1_1vm_1_1Instruction_1aa9bb0614ecf04ae6a8bccfc03dbb6a1f" prot="public" virt="non-virtual"><scope>tvm::runtime::vm::Instruction</scope><name>AllocStorage</name></member>
+      <member refid="structtvm_1_1runtime_1_1vm_1_1Instruction_1ad7d69fff7d1f2acae7f7c802f1360ec4" prot="public" virt="non-virtual"><scope>tvm::runtime::vm::Instruction</scope><name>AllocTensor</name></member>
+      <member refid="structtvm_1_1runtime_1_1vm_1_1Instruction_1a8bac5c8e2d7a8bbf5519a6620fcc25e0" prot="public" virt="non-virtual"><scope>tvm::runtime::vm::Instruction</scope><name>AllocTensorReg</name></member>
+      <member refid="structtvm_1_1runtime_1_1vm_1_1Instruction_1a360b264ed892e620935b648e5a91a5ea" prot="public" virt="non-virtual"><scope>tvm::runtime::vm::Instruction</scope><name>arity</name></member>
+      <member refid="structtvm_1_1runtime_1_1vm_1_1Instruction_1aaea1385d3562231a2e242faa0b51c616" prot="public" virt="non-virtual"><scope>tvm::runtime::vm::Instruction</scope><name>clo_index</name></member>
+      <member refid="structtvm_1_1runtime_1_1vm_1_1Instruction_1a3a175836bc0893d99935f32911e45bfd" prot="public" virt="non-virtual"><scope>tvm::runtime::vm::Instruction</scope><name>closure</name></member>
+      <member refid="structtvm_1_1runtime_1_1vm_1_1Instruction_1aee9011e3fab2ace2ae167db9a4394ee8" prot="public" virt="non-virtual"><scope>tvm::runtime::vm::Instruction</scope><name>closure_args</name></member>
+      <member refid="structtvm_1_1runtime_1_1vm_1_1Instruction_1a950d212c6493a47bfcbf368daa974853" prot="public" virt="non-virtual"><scope>tvm::runtime::vm::Instruction</scope><name>const_index</name></member>
+      <member refid="structtvm_1_1runtime_1_1vm_1_1Instruction_1a7349fa2a2e70149d4af08289c539150f" prot="public" virt="non-virtual"><scope>tvm::runtime::vm::Instruction</scope><name>constructor_tag</name></member>
+      <member refid="structtvm_1_1runtime_1_1vm_1_1Instruction_1a25adb383014a74a9c4ac805beefe86b6" prot="public" virt="non-virtual"><scope>tvm::runtime::vm::Instruction</scope><name>datatype_fields</name></member>
+      <member refid="structtvm_1_1runtime_1_1vm_1_1Instruction_1a17f056cc4798d31c8bcee6903be8dd1d" prot="public" virt="non-virtual"><scope>tvm::runtime::vm::Instruction</scope><name>dst</name></member>
+      <member refid="structtvm_1_1runtime_1_1vm_1_1Instruction_1a91614b450055e58850c47949b3ed2714" prot="public" virt="non-virtual"><scope>tvm::runtime::vm::Instruction</scope><name>dtype</name></member>
+      <member refid="structtvm_1_1runtime_1_1vm_1_1Instruction_1a0f48c1e04fe9ba735576bef37caf9cce" prot="public" virt="non-virtual"><scope>tvm::runtime::vm::Instruction</scope><name>dtype_hint</name></member>
+      <member refid="structtvm_1_1runtime_1_1vm_1_1Instruction_1a20f3b29da9e03f2fa6977743c30a02de" prot="public" virt="non-virtual"><scope>tvm::runtime::vm::Instruction</scope><name>false_offset</name></member>
+      <member refid="structtvm_1_1runtime_1_1vm_1_1Instruction_1a1107060efafaf8af3fba3ec865334946" prot="public" virt="non-virtual"><scope>tvm::runtime::vm::Instruction</scope><name>Fatal</name></member>
+      <member refid="structtvm_1_1runtime_1_1vm_1_1Instruction_1a623d715b7b22a5fa853e8d000a6f1ecd" prot="public" virt="non-virtual"><scope>tvm::runtime::vm::Instruction</scope><name>field_index</name></member>
+      <member refid="structtvm_1_1runtime_1_1vm_1_1Instruction_1a720b762553a301b526d66042afcd5ca3" prot="public" virt="non-virtual"><scope>tvm::runtime::vm::Instruction</scope><name>free_vars</name></member>
+      <member refid="structtvm_1_1runtime_1_1vm_1_1Instruction_1a50da0d506e9a2bffeaf75c702cf2cc33" prot="public" virt="non-virtual"><scope>tvm::runtime::vm::Instruction</scope><name>from</name></member>
+      <member refid="structtvm_1_1runtime_1_1vm_1_1Instruction_1aa60b1a70648dbba4e7ec35a56a29a02d" prot="public" virt="non-virtual"><scope>tvm::runtime::vm::Instruction</scope><name>func_index</name></member>
+      <member refid="structtvm_1_1runtime_1_1vm_1_1Instruction_1ae9c77196c15b6e835c8b020c1c297eb2" prot="public" virt="non-virtual"><scope>tvm::runtime::vm::Instruction</scope><name>get_tag</name></member>
+      <member refid="structtvm_1_1runtime_1_1vm_1_1Instruction_1a538ae141008bb7bcfd9513f9d3e2a54b" prot="public" virt="non-virtual"><scope>tvm::runtime::vm::Instruction</scope><name>GetField</name></member>
+      <member refid="structtvm_1_1runtime_1_1vm_1_1Instruction_1a8b46d1eb3853555b6d3a85f2ef9c0868" prot="public" virt="non-virtual"><scope>tvm::runtime::vm::Instruction</scope><name>GetTag</name></member>
+      <member refid="structtvm_1_1runtime_1_1vm_1_1Instruction_1a40b49fe5c05c5fe5f7a5c5c01bf651c8" prot="public" virt="non-virtual"><scope>tvm::runtime::vm::Instruction</scope><name>Goto</name></member>
+      <member refid="structtvm_1_1runtime_1_1vm_1_1Instruction_1ae7a1eb87c8f583a606e89a0ad22af38b" prot="public" virt="non-virtual"><scope>tvm::runtime::vm::Instruction</scope><name>If</name></member>
+      <member refid="structtvm_1_1runtime_1_1vm_1_1Instruction_1a8e2e4f263c0c7fdf46a7840e2d40ac30" prot="public" virt="non-virtual"><scope>tvm::runtime::vm::Instruction</scope><name>if_op</name></member>
+      <member refid="structtvm_1_1runtime_1_1vm_1_1Instruction_1afb6a19291861797375b04b07f174614b" prot="public" virt="non-virtual"><scope>tvm::runtime::vm::Instruction</scope><name>Instruction</name></member>
+      <member refid="structtvm_1_1runtime_1_1vm_1_1Instruction_1a22bf3a1b6b92af774cf87893d091d5ce" prot="public" virt="non-virtual"><scope>tvm::runtime::vm::Instruction</scope><name>Instruction</name></member>
+      <member refid="structtvm_1_1runtime_1_1vm_1_1Instruction_1acb19406a24fa95bf39a29d15ad6be256" prot="public" virt="non-virtual"><scope>tvm::runtime::vm::Instruction</scope><name>Invoke</name></member>
+      <member refid="structtvm_1_1runtime_1_1vm_1_1Instruction_1a6fc678bca0e215303087981a79f23b7f" prot="public" virt="non-virtual"><scope>tvm::runtime::vm::Instruction</scope><name>invoke_args_registers</name></member>
+      <member refid="structtvm_1_1runtime_1_1vm_1_1Instruction_1aff2701f8ac1a6232115e73fbb3fe522a" prot="public" virt="non-virtual"><scope>tvm::runtime::vm::Instruction</scope><name>InvokeClosure</name></member>
+      <member refid="structtvm_1_1runtime_1_1vm_1_1Instruction_1a83bcfbc103e576eac9a225ab1912c1e4" prot="public" virt="non-virtual"><scope>tvm::runtime::vm::Instruction</scope><name>InvokePacked</name></member>
+      <member refid="structtvm_1_1runtime_1_1vm_1_1Instruction_1a283d814bcf66dea649d51cb90cb76748" prot="public" virt="non-virtual"><scope>tvm::runtime::vm::Instruction</scope><name>load_consti</name></member>
+      <member refid="structtvm_1_1runtime_1_1vm_1_1Instruction_1a24eb319b975b2929aa80cf9a7d9bf661" prot="public" virt="non-virtual"><scope>tvm::runtime::vm::Instruction</scope><name>LoadConst</name></member>
+      <member refid="structtvm_1_1runtime_1_1vm_1_1Instruction_1a7aa251e343bc1ebf8a164bdc243ba185" prot="public" virt="non-virtual"><scope>tvm::runtime::vm::Instruction</scope><name>LoadConsti</name></member>
+      <member refid="structtvm_1_1runtime_1_1vm_1_1Instruction_1a162dc8d73dc2306f066c3ee013ff096f" prot="public" virt="non-virtual"><scope>tvm::runtime::vm::Instruction</scope><name>Move</name></member>
+      <member refid="structtvm_1_1runtime_1_1vm_1_1Instruction_1a173d5883d5721b633350c0bfc24122b9" prot="public" virt="non-virtual"><scope>tvm::runtime::vm::Instruction</scope><name>ndim</name></member>
+      <member refid="structtvm_1_1runtime_1_1vm_1_1Instruction_1a5d98a3b5b50e6fa9029d05f741c0bce9" prot="public" virt="non-virtual"><scope>tvm::runtime::vm::Instruction</scope><name>num_args</name></member>
+      <member refid="structtvm_1_1runtime_1_1vm_1_1Instruction_1ad4b0bb0bc9012b8e34c6fd621390532f" prot="public" virt="non-virtual"><scope>tvm::runtime::vm::Instruction</scope><name>num_closure_args</name></member>
+      <member refid="structtvm_1_1runtime_1_1vm_1_1Instruction_1a45fa340afb68a10e339b9482fda65ba7" prot="public" virt="non-virtual"><scope>tvm::runtime::vm::Instruction</scope><name>num_fields</name></member>
+      <member refid="structtvm_1_1runtime_1_1vm_1_1Instruction_1adbf563aa259f209ad20619c25921cdc1" prot="public" virt="non-virtual"><scope>tvm::runtime::vm::Instruction</scope><name>num_freevar</name></member>
+      <member refid="structtvm_1_1runtime_1_1vm_1_1Instruction_1a0ac4dada6519d071a819cc897cb15cf1" prot="public" virt="non-virtual"><scope>tvm::runtime::vm::Instruction</scope><name>object</name></member>
+      <member refid="structtvm_1_1runtime_1_1vm_1_1Instruction_1aa16a3e7e4030a69da0def6465d65e745" prot="public" virt="non-virtual"><scope>tvm::runtime::vm::Instruction</scope><name>op</name></member>
+      <member refid="structtvm_1_1runtime_1_1vm_1_1Instruction_1a7948440c8e6f670e3c782619415dc184" prot="public" virt="non-virtual"><scope>tvm::runtime::vm::Instruction</scope><name>operator&lt;&lt;</name></member>
+      <member refid="structtvm_1_1runtime_1_1vm_1_1Instruction_1a69c12a9470f67ea26e53172f5c9220a1" prot="public" virt="non-virtual"><scope>tvm::runtime::vm::Instruction</scope><name>operator=</name></member>
+      <member refid="structtvm_1_1runtime_1_1vm_1_1Instruction_1a6bb6a1b8be0c078394f2336970aab1af" prot="public" virt="non-virtual"><scope>tvm::runtime::vm::Instruction</scope><name>output_size</name></member>
+      <member refid="structtvm_1_1runtime_1_1vm_1_1Instruction_1a5a39350aa263659863295deab57996ed" prot="public" virt="non-virtual"><scope>tvm::runtime::vm::Instruction</scope><name>packed_args</name></member>
+      <member refid="structtvm_1_1runtime_1_1vm_1_1Instruction_1ac60e60c96d7bb22d8ac06169d5969232" prot="public" virt="non-virtual"><scope>tvm::runtime::vm::Instruction</scope><name>packed_index</name></member>
+      <member refid="structtvm_1_1runtime_1_1vm_1_1Instruction_1a721907173e94d564bff879792b29f789" prot="public" virt="non-virtual"><scope>tvm::runtime::vm::Instruction</scope><name>pc_offset</name></member>
+      <member refid="structtvm_1_1runtime_1_1vm_1_1Instruction_1ae0d33229af059c727db2abd3616660e0" prot="public" virt="non-virtual"><scope>tvm::runtime::vm::Instruction</scope><name>result</name></member>
+      <member refid="structtvm_1_1runtime_1_1vm_1_1Instruction_1a25ec217ce2afe8decb3d92c716e31c83" prot="public" virt="non-virtual"><scope>tvm::runtime::vm::Instruction</scope><name>Ret</name></member>
+      <member refid="structtvm_1_1runtime_1_1vm_1_1Instruction_1a1354fe84e9c14c550a53f5de8f48d968" prot="public" virt="non-virtual"><scope>tvm::runtime::vm::Instruction</scope><name>shape</name></member>
+      <member refid="structtvm_1_1runtime_1_1vm_1_1Instruction_1a0a650382fcb2cacf9d6de7007aecf3c5" prot="public" virt="non-virtual"><scope>tvm::runtime::vm::Instruction</scope><name>shape_register</name></member>
+      <member refid="structtvm_1_1runtime_1_1vm_1_1Instruction_1a3412cabd3b4f42f106f56fc22257f6ca" prot="public" virt="non-virtual"><scope>tvm::runtime::vm::Instruction</scope><name>storage</name></member>
+      <member refid="structtvm_1_1runtime_1_1vm_1_1Instruction_1a46879dbe84105fb621a6167f8d73b223" prot="public" virt="non-virtual"><scope>tvm::runtime::vm::Instruction</scope><name>target</name></member>
+      <member refid="structtvm_1_1runtime_1_1vm_1_1Instruction_1adebc0e955069bdaa543df3a908351532" prot="public" virt="non-virtual"><scope>tvm::runtime::vm::Instruction</scope><name>test</name></member>
+      <member refid="structtvm_1_1runtime_1_1vm_1_1Instruction_1a58e6e5eba0eba678b94273ef7deb1df2" prot="public" virt="non-virtual"><scope>tvm::runtime::vm::Instruction</scope><name>true_offset</name></member>
+      <member refid="structtvm_1_1runtime_1_1vm_1_1Instruction_1ac1e5be6bd195486a884bd8a26b5d12f9" prot="public" virt="non-virtual"><scope>tvm::runtime::vm::Instruction</scope><name>val</name></member>
+      <member refid="structtvm_1_1runtime_1_1vm_1_1Instruction_1aff9f0ab6000156b24ef3631caf5972bd" prot="public" virt="non-virtual"><scope>tvm::runtime::vm::Instruction</scope><name>~Instruction</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

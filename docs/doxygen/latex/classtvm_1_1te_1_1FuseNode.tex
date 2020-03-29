@@ -1,0 +1,119 @@
+\hypertarget{classtvm_1_1te_1_1FuseNode}{}\section{tvm\+:\+:te\+:\+:Fuse\+Node Class Reference}
+\label{classtvm_1_1te_1_1FuseNode}\index{tvm\+::te\+::\+Fuse\+Node@{tvm\+::te\+::\+Fuse\+Node}}
+
+
+Fuse two domains into one domain.  
+
+
+
+
+{\ttfamily \#include $<$schedule.\+h$>$}
+
+
+
+Inheritance diagram for tvm\+:\+:te\+:\+:Fuse\+Node\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=285pt]{classtvm_1_1te_1_1FuseNode__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for tvm\+:\+:te\+:\+:Fuse\+Node\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classtvm_1_1te_1_1FuseNode__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{classtvm_1_1te_1_1FuseNode_a61330fd9eca1277948bd9900c3f91f08}{Visit\+Attrs} (\hyperlink{classtvm_1_1AttrVisitor}{Attr\+Visitor} $\ast$v)
+\item 
+\hyperlink{classtvm_1_1te_1_1FuseNode_ad5447bffbfd6ae596bfef3b1234eff1d}{T\+V\+M\+\_\+\+D\+E\+C\+L\+A\+R\+E\+\_\+\+F\+I\+N\+A\+L\+\_\+\+O\+B\+J\+E\+C\+T\+\_\+\+I\+N\+FO} (\hyperlink{classtvm_1_1te_1_1FuseNode}{Fuse\+Node}, \hyperlink{classtvm_1_1te_1_1IterVarRelationNode}{Iter\+Var\+Relation\+Node})
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \hyperlink{classtvm_1_1te_1_1IterVarRelation}{Iter\+Var\+Relation} \hyperlink{classtvm_1_1te_1_1FuseNode_ae86a4641dfa5d446f078b62a4b213ef3}{make} (\hyperlink{classtvm_1_1tir_1_1IterVar}{Iter\+Var} \hyperlink{classtvm_1_1te_1_1FuseNode_a90efca7f5397eb34989f5d085ae9bab5}{outer}, \hyperlink{classtvm_1_1tir_1_1IterVar}{Iter\+Var} \hyperlink{classtvm_1_1te_1_1FuseNode_a5a867854c20179cd32b19fb1eab90616}{inner}, \hyperlink{classtvm_1_1tir_1_1IterVar}{Iter\+Var} \hyperlink{classtvm_1_1te_1_1FuseNode_ad5abaac8d77c9c88ec374ae91d68cb88}{fused})
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classtvm_1_1tir_1_1IterVar}{Iter\+Var} \hyperlink{classtvm_1_1te_1_1FuseNode_a90efca7f5397eb34989f5d085ae9bab5}{outer}
+\begin{DoxyCompactList}\small\item\em The outer domain. \end{DoxyCompactList}\item 
+\hyperlink{classtvm_1_1tir_1_1IterVar}{Iter\+Var} \hyperlink{classtvm_1_1te_1_1FuseNode_a5a867854c20179cd32b19fb1eab90616}{inner}
+\begin{DoxyCompactList}\small\item\em The inner domain. \end{DoxyCompactList}\item 
+\hyperlink{classtvm_1_1tir_1_1IterVar}{Iter\+Var} \hyperlink{classtvm_1_1te_1_1FuseNode_ad5abaac8d77c9c88ec374ae91d68cb88}{fused}
+\begin{DoxyCompactList}\small\item\em The target domain. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static constexpr const char $\ast$ \hyperlink{classtvm_1_1te_1_1FuseNode_aea440c46ab4280ddf181bb88c258d279}{\+\_\+type\+\_\+key} = \char`\"{}Fuse\char`\"{}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Fuse two domains into one domain. 
+
+\subsection{Member Function Documentation}
+\index{tvm\+::te\+::\+Fuse\+Node@{tvm\+::te\+::\+Fuse\+Node}!make@{make}}
+\index{make@{make}!tvm\+::te\+::\+Fuse\+Node@{tvm\+::te\+::\+Fuse\+Node}}
+\subsubsection[{\texorpdfstring{make(\+Iter\+Var outer, Iter\+Var inner, Iter\+Var fused)}{make(IterVar outer, IterVar inner, IterVar fused)}}]{\setlength{\rightskip}{0pt plus 5cm}static {\bf Iter\+Var\+Relation} tvm\+::te\+::\+Fuse\+Node\+::make (
+\begin{DoxyParamCaption}
+\item[{{\bf Iter\+Var}}]{outer, }
+\item[{{\bf Iter\+Var}}]{inner, }
+\item[{{\bf Iter\+Var}}]{fused}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}\hypertarget{classtvm_1_1te_1_1FuseNode_ae86a4641dfa5d446f078b62a4b213ef3}{}\label{classtvm_1_1te_1_1FuseNode_ae86a4641dfa5d446f078b62a4b213ef3}
+\index{tvm\+::te\+::\+Fuse\+Node@{tvm\+::te\+::\+Fuse\+Node}!T\+V\+M\+\_\+\+D\+E\+C\+L\+A\+R\+E\+\_\+\+F\+I\+N\+A\+L\+\_\+\+O\+B\+J\+E\+C\+T\+\_\+\+I\+N\+FO@{T\+V\+M\+\_\+\+D\+E\+C\+L\+A\+R\+E\+\_\+\+F\+I\+N\+A\+L\+\_\+\+O\+B\+J\+E\+C\+T\+\_\+\+I\+N\+FO}}
+\index{T\+V\+M\+\_\+\+D\+E\+C\+L\+A\+R\+E\+\_\+\+F\+I\+N\+A\+L\+\_\+\+O\+B\+J\+E\+C\+T\+\_\+\+I\+N\+FO@{T\+V\+M\+\_\+\+D\+E\+C\+L\+A\+R\+E\+\_\+\+F\+I\+N\+A\+L\+\_\+\+O\+B\+J\+E\+C\+T\+\_\+\+I\+N\+FO}!tvm\+::te\+::\+Fuse\+Node@{tvm\+::te\+::\+Fuse\+Node}}
+\subsubsection[{\texorpdfstring{T\+V\+M\+\_\+\+D\+E\+C\+L\+A\+R\+E\+\_\+\+F\+I\+N\+A\+L\+\_\+\+O\+B\+J\+E\+C\+T\+\_\+\+I\+N\+F\+O(\+Fuse\+Node, Iter\+Var\+Relation\+Node)}{TVM_DECLARE_FINAL_OBJECT_INFO(FuseNode, IterVarRelationNode)}}]{\setlength{\rightskip}{0pt plus 5cm}tvm\+::te\+::\+Fuse\+Node\+::\+T\+V\+M\+\_\+\+D\+E\+C\+L\+A\+R\+E\+\_\+\+F\+I\+N\+A\+L\+\_\+\+O\+B\+J\+E\+C\+T\+\_\+\+I\+N\+FO (
+\begin{DoxyParamCaption}
+\item[{{\bf Fuse\+Node}}]{, }
+\item[{{\bf Iter\+Var\+Relation\+Node}}]{}
+\end{DoxyParamCaption}
+)}\hypertarget{classtvm_1_1te_1_1FuseNode_ad5447bffbfd6ae596bfef3b1234eff1d}{}\label{classtvm_1_1te_1_1FuseNode_ad5447bffbfd6ae596bfef3b1234eff1d}
+\index{tvm\+::te\+::\+Fuse\+Node@{tvm\+::te\+::\+Fuse\+Node}!Visit\+Attrs@{Visit\+Attrs}}
+\index{Visit\+Attrs@{Visit\+Attrs}!tvm\+::te\+::\+Fuse\+Node@{tvm\+::te\+::\+Fuse\+Node}}
+\subsubsection[{\texorpdfstring{Visit\+Attrs(\+Attr\+Visitor $\ast$v)}{VisitAttrs(AttrVisitor *v)}}]{\setlength{\rightskip}{0pt plus 5cm}void tvm\+::te\+::\+Fuse\+Node\+::\+Visit\+Attrs (
+\begin{DoxyParamCaption}
+\item[{{\bf Attr\+Visitor} $\ast$}]{v}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classtvm_1_1te_1_1FuseNode_a61330fd9eca1277948bd9900c3f91f08}{}\label{classtvm_1_1te_1_1FuseNode_a61330fd9eca1277948bd9900c3f91f08}
+
+
+\subsection{Member Data Documentation}
+\index{tvm\+::te\+::\+Fuse\+Node@{tvm\+::te\+::\+Fuse\+Node}!\+\_\+type\+\_\+key@{\+\_\+type\+\_\+key}}
+\index{\+\_\+type\+\_\+key@{\+\_\+type\+\_\+key}!tvm\+::te\+::\+Fuse\+Node@{tvm\+::te\+::\+Fuse\+Node}}
+\subsubsection[{\texorpdfstring{\+\_\+type\+\_\+key}{_type_key}}]{\setlength{\rightskip}{0pt plus 5cm}constexpr const char$\ast$ tvm\+::te\+::\+Fuse\+Node\+::\+\_\+type\+\_\+key = \char`\"{}Fuse\char`\"{}\hspace{0.3cm}{\ttfamily [static]}}\hypertarget{classtvm_1_1te_1_1FuseNode_aea440c46ab4280ddf181bb88c258d279}{}\label{classtvm_1_1te_1_1FuseNode_aea440c46ab4280ddf181bb88c258d279}
+\index{tvm\+::te\+::\+Fuse\+Node@{tvm\+::te\+::\+Fuse\+Node}!fused@{fused}}
+\index{fused@{fused}!tvm\+::te\+::\+Fuse\+Node@{tvm\+::te\+::\+Fuse\+Node}}
+\subsubsection[{\texorpdfstring{fused}{fused}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Iter\+Var} tvm\+::te\+::\+Fuse\+Node\+::fused}\hypertarget{classtvm_1_1te_1_1FuseNode_ad5abaac8d77c9c88ec374ae91d68cb88}{}\label{classtvm_1_1te_1_1FuseNode_ad5abaac8d77c9c88ec374ae91d68cb88}
+
+
+The target domain. 
+
+\index{tvm\+::te\+::\+Fuse\+Node@{tvm\+::te\+::\+Fuse\+Node}!inner@{inner}}
+\index{inner@{inner}!tvm\+::te\+::\+Fuse\+Node@{tvm\+::te\+::\+Fuse\+Node}}
+\subsubsection[{\texorpdfstring{inner}{inner}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Iter\+Var} tvm\+::te\+::\+Fuse\+Node\+::inner}\hypertarget{classtvm_1_1te_1_1FuseNode_a5a867854c20179cd32b19fb1eab90616}{}\label{classtvm_1_1te_1_1FuseNode_a5a867854c20179cd32b19fb1eab90616}
+
+
+The inner domain. 
+
+\index{tvm\+::te\+::\+Fuse\+Node@{tvm\+::te\+::\+Fuse\+Node}!outer@{outer}}
+\index{outer@{outer}!tvm\+::te\+::\+Fuse\+Node@{tvm\+::te\+::\+Fuse\+Node}}
+\subsubsection[{\texorpdfstring{outer}{outer}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Iter\+Var} tvm\+::te\+::\+Fuse\+Node\+::outer}\hypertarget{classtvm_1_1te_1_1FuseNode_a90efca7f5397eb34989f5d085ae9bab5}{}\label{classtvm_1_1te_1_1FuseNode_a90efca7f5397eb34989f5d085ae9bab5}
+
+
+The outer domain. 
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+include/tvm/te/\hyperlink{schedule_8h}{schedule.\+h}\end{DoxyCompactItemize}

@@ -1,0 +1,186 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="structtvm_1_1relay_1_1UpSampling3DAttrs" kind="struct" language="C++" prot="public">
+    <compoundname>tvm::relay::UpSampling3DAttrs</compoundname>
+    <basecompoundref refid="classtvm_1_1AttrsNode" prot="public" virt="non-virtual">tvm::AttrsNode&lt; UpSampling3DAttrs &gt;</basecompoundref>
+    <includes refid="include_2tvm_2relay_2attrs_2nn_8h" local="no">nn.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structtvm_1_1relay_1_1UpSampling3DAttrs_1a73f52d511b9d564724930bc40497cee7" prot="public" static="no" mutable="no">
+        <type>double</type>
+        <definition>double tvm::relay::UpSampling3DAttrs::scale_d</definition>
+        <argsstring></argsstring>
+        <name>scale_d</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/relay/attrs/nn.h" line="733" column="1" bodyfile="include/tvm/relay/attrs/nn.h" bodystart="733" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structtvm_1_1relay_1_1UpSampling3DAttrs_1a8ce387249c84609450b32fd69d719366" prot="public" static="no" mutable="no">
+        <type>double</type>
+        <definition>double tvm::relay::UpSampling3DAttrs::scale_h</definition>
+        <argsstring></argsstring>
+        <name>scale_h</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/relay/attrs/nn.h" line="734" column="1" bodyfile="include/tvm/relay/attrs/nn.h" bodystart="734" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structtvm_1_1relay_1_1UpSampling3DAttrs_1a270613b4109d2b24766b7bfbac2539c1" prot="public" static="no" mutable="no">
+        <type>double</type>
+        <definition>double tvm::relay::UpSampling3DAttrs::scale_w</definition>
+        <argsstring></argsstring>
+        <name>scale_w</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/relay/attrs/nn.h" line="735" column="1" bodyfile="include/tvm/relay/attrs/nn.h" bodystart="735" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structtvm_1_1relay_1_1UpSampling3DAttrs_1af8891c263011a72ee4989a601b860f08" prot="public" static="no" mutable="no">
+        <type>std::string</type>
+        <definition>std::string tvm::relay::UpSampling3DAttrs::layout</definition>
+        <argsstring></argsstring>
+        <name>layout</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/relay/attrs/nn.h" line="736" column="1" bodyfile="include/tvm/relay/attrs/nn.h" bodystart="736" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structtvm_1_1relay_1_1UpSampling3DAttrs_1a86334960861ecfd8dbd6cc61631b4647" prot="public" static="no" mutable="no">
+        <type>std::string</type>
+        <definition>std::string tvm::relay::UpSampling3DAttrs::method</definition>
+        <argsstring></argsstring>
+        <name>method</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/relay/attrs/nn.h" line="737" column="1" bodyfile="include/tvm/relay/attrs/nn.h" bodystart="737" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structtvm_1_1relay_1_1UpSampling3DAttrs_1af1e45a8c9fe5959dc0570a6993a68164" prot="public" static="no" mutable="no">
+        <type>std::string</type>
+        <definition>std::string tvm::relay::UpSampling3DAttrs::coordinate_transformation_mode</definition>
+        <argsstring></argsstring>
+        <name>coordinate_transformation_mode</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/relay/attrs/nn.h" line="738" column="1" bodyfile="include/tvm/relay/attrs/nn.h" bodystart="738" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="structtvm_1_1relay_1_1UpSampling3DAttrs_1a2bb538ca08e7f318e24e088c482366a4" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>tvm::relay::UpSampling3DAttrs::TVM_DECLARE_ATTRS</definition>
+        <argsstring>(UpSampling3DAttrs,&quot;relay.attrs.UpSampling3DAttrs&quot;)</argsstring>
+        <name>TVM_DECLARE_ATTRS</name>
+        <param>
+          <type><ref refid="structtvm_1_1relay_1_1UpSampling3DAttrs" kindref="compound">UpSampling3DAttrs</ref></type>
+        </param>
+        <param>
+          <type>&quot;relay.attrs.UpSampling3DAttrs&quot;</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/relay/attrs/nn.h" line="740" column="1" bodyfile="include/tvm/relay/attrs/nn.h" bodystart="740" bodyend="761"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Attributes for upsampling3d operator. </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="7509">
+        <label>tvm::BaseAttrsNode</label>
+        <link refid="classtvm_1_1BaseAttrsNode"/>
+        <childnode refid="7510" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="7510">
+        <label>Object</label>
+      </node>
+      <node id="7508">
+        <label>tvm::AttrsNode&lt; UpSampling3DAttrs &gt;</label>
+        <link refid="classtvm_1_1AttrsNode"/>
+        <childnode refid="7509" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="7507">
+        <label>tvm::relay::UpSampling3DAttrs</label>
+        <link refid="structtvm_1_1relay_1_1UpSampling3DAttrs"/>
+        <childnode refid="7508" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="7513">
+        <label>tvm::BaseAttrsNode</label>
+        <link refid="classtvm_1_1BaseAttrsNode"/>
+        <childnode refid="7514" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="7514">
+        <label>Object</label>
+      </node>
+      <node id="7512">
+        <label>tvm::AttrsNode&lt; UpSampling3DAttrs &gt;</label>
+        <link refid="classtvm_1_1AttrsNode"/>
+        <childnode refid="7513" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="7511">
+        <label>tvm::relay::UpSampling3DAttrs</label>
+        <link refid="structtvm_1_1relay_1_1UpSampling3DAttrs"/>
+        <childnode refid="7512" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="include/tvm/relay/attrs/nn.h" line="732" column="1" bodyfile="include/tvm/relay/attrs/nn.h" bodystart="732" bodyend="762"/>
+    <listofallmembers>
+      <member refid="classtvm_1_1BaseAttrsNode_1ad812afdb028fe3944a80cd922dceff82" prot="public" virt="non-virtual"><scope>tvm::relay::UpSampling3DAttrs</scope><name>_type_has_method_sequal_reduce</name></member>
+      <member refid="classtvm_1_1BaseAttrsNode_1ad85f4aca5e8840d23851c0c07acd0862" prot="public" virt="non-virtual"><scope>tvm::relay::UpSampling3DAttrs</scope><name>_type_has_method_shash_reduce</name></member>
+      <member refid="classtvm_1_1BaseAttrsNode_1a8e4fd4e728774e0556cda84b0c2b80d6" prot="public" virt="non-virtual"><scope>tvm::relay::UpSampling3DAttrs</scope><name>_type_key</name></member>
+      <member refid="classtvm_1_1AttrsNode_1a7f609d3a1b52df0b442793f043cc49ae" prot="public" virt="virtual"><scope>tvm::relay::UpSampling3DAttrs</scope><name>ContentEqual</name></member>
+      <member refid="classtvm_1_1AttrsNode_1abe3e0fd8559c5d446a136490d4dbee12" prot="public" virt="virtual"><scope>tvm::relay::UpSampling3DAttrs</scope><name>ContentHash</name></member>
+      <member refid="structtvm_1_1relay_1_1UpSampling3DAttrs_1af1e45a8c9fe5959dc0570a6993a68164" prot="public" virt="non-virtual"><scope>tvm::relay::UpSampling3DAttrs</scope><name>coordinate_transformation_mode</name></member>
+      <member refid="classtvm_1_1AttrsNode_1acfba199ef906818f35432d2e5532559a" prot="public" virt="virtual"><scope>tvm::relay::UpSampling3DAttrs</scope><name>InitByPackedArgs</name></member>
+      <member refid="classtvm_1_1BaseAttrsNode_1aef9e5266d16e163ccc7b1b16c1ea3269" prot="public" virt="non-virtual"><scope>tvm::relay::UpSampling3DAttrs</scope><name>InitBySeq</name></member>
+      <member refid="structtvm_1_1relay_1_1UpSampling3DAttrs_1af8891c263011a72ee4989a601b860f08" prot="public" virt="non-virtual"><scope>tvm::relay::UpSampling3DAttrs</scope><name>layout</name></member>
+      <member refid="classtvm_1_1AttrsNode_1acefe615381b5d881870af9db7ce6a981" prot="public" virt="virtual"><scope>tvm::relay::UpSampling3DAttrs</scope><name>ListFieldInfo</name></member>
+      <member refid="structtvm_1_1relay_1_1UpSampling3DAttrs_1a86334960861ecfd8dbd6cc61631b4647" prot="public" virt="non-virtual"><scope>tvm::relay::UpSampling3DAttrs</scope><name>method</name></member>
+      <member refid="classtvm_1_1BaseAttrsNode_1a118837841487c80b157dbead88f18513" prot="public" virt="non-virtual"><scope>tvm::relay::UpSampling3DAttrs</scope><name>PrintDocString</name></member>
+      <member refid="structtvm_1_1relay_1_1UpSampling3DAttrs_1a73f52d511b9d564724930bc40497cee7" prot="public" virt="non-virtual"><scope>tvm::relay::UpSampling3DAttrs</scope><name>scale_d</name></member>
+      <member refid="structtvm_1_1relay_1_1UpSampling3DAttrs_1a8ce387249c84609450b32fd69d719366" prot="public" virt="non-virtual"><scope>tvm::relay::UpSampling3DAttrs</scope><name>scale_h</name></member>
+      <member refid="structtvm_1_1relay_1_1UpSampling3DAttrs_1a270613b4109d2b24766b7bfbac2539c1" prot="public" virt="non-virtual"><scope>tvm::relay::UpSampling3DAttrs</scope><name>scale_w</name></member>
+      <member refid="classtvm_1_1AttrsNode_1af8192054af4e2797953cc7b67625092f" prot="public" virt="non-virtual"><scope>tvm::relay::UpSampling3DAttrs</scope><name>SEqualReduce</name></member>
+      <member refid="classtvm_1_1AttrsNode_1ad6cc4d8a955e30b9f55c0b5367ccce38" prot="public" virt="non-virtual"><scope>tvm::relay::UpSampling3DAttrs</scope><name>SHashReduce</name></member>
+      <member refid="structtvm_1_1relay_1_1UpSampling3DAttrs_1a2bb538ca08e7f318e24e088c482366a4" prot="public" virt="non-virtual"><scope>tvm::relay::UpSampling3DAttrs</scope><name>TVM_DECLARE_ATTRS</name></member>
+      <member refid="classtvm_1_1BaseAttrsNode_1aaca524319f015a18a1385cfea5ba8895" prot="public" virt="non-virtual"><scope>tvm::relay::UpSampling3DAttrs</scope><name>TVM_DECLARE_BASE_OBJECT_INFO</name></member>
+      <member refid="classtvm_1_1BaseAttrsNode_1a257561dad74174cbdc08f6725a45d8ac" prot="public" virt="non-virtual"><scope>tvm::relay::UpSampling3DAttrs</scope><name>TVMArgs</name></member>
+      <member refid="classtvm_1_1BaseAttrsNode_1a1f56f080d0c1fab79d9469029aef8ebb" prot="public" virt="non-virtual"><scope>tvm::relay::UpSampling3DAttrs</scope><name>TVMRetValue</name></member>
+      <member refid="classtvm_1_1AttrsNode_1a5da687ced06b4f2dfa04b142a34a9c72" prot="public" virt="virtual"><scope>tvm::relay::UpSampling3DAttrs</scope><name>VisitAttrs</name></member>
+      <member refid="classtvm_1_1AttrsNode_1acd05137ba529ac7cd07053e3da885205" prot="public" virt="virtual"><scope>tvm::relay::UpSampling3DAttrs</scope><name>VisitNonDefaultAttrs</name></member>
+      <member refid="classtvm_1_1BaseAttrsNode_1a225581a40231b2de219da30fced428a2" prot="public" virt="virtual"><scope>tvm::relay::UpSampling3DAttrs</scope><name>~BaseAttrsNode</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

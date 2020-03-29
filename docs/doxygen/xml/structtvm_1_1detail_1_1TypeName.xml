@@ -1,0 +1,50 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="structtvm_1_1detail_1_1TypeName" kind="struct" language="C++" prot="public">
+    <compoundname>tvm::detail::TypeName</compoundname>
+    <includes refid="ir_2attrs_8h" local="no">attrs.h</includes>
+    <templateparamlist>
+      <param>
+        <type>typename T</type>
+      </param>
+    </templateparamlist>
+      <sectiondef kind="public-static-attrib">
+      <memberdef kind="variable" id="structtvm_1_1detail_1_1TypeName_1a58c1b5351ce2e7c0c7787448c18287a0" prot="public" static="yes" mutable="no">
+        <type>constexpr const char *</type>
+        <definition>constexpr const char* tvm::detail::TypeName&lt; T &gt;::value</definition>
+        <argsstring></argsstring>
+        <name>value</name>
+        <initializer>= T::ContainerType::_type_key</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/ir/attrs.h" line="644" column="1" bodyfile="include/tvm/ir/attrs.h" bodystart="644" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Helper struct to get the type name known to tvm. </para>    </briefdescription>
+    <detaileddescription>
+<para><parameterlist kind="templateparam"><parameteritem>
+<parameternamelist>
+<parametername>T</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the type we are interested in. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>    </detaileddescription>
+    <collaborationgraph>
+      <node id="7425">
+        <label>tvm::detail::TypeName&lt; T &gt;</label>
+        <link refid="structtvm_1_1detail_1_1TypeName"/>
+      </node>
+    </collaborationgraph>
+    <location file="include/tvm/ir/attrs.h" line="643" column="1" bodyfile="include/tvm/ir/attrs.h" bodystart="643" bodyend="645"/>
+    <listofallmembers>
+      <member refid="structtvm_1_1detail_1_1TypeName_1a58c1b5351ce2e7c0c7787448c18287a0" prot="public" virt="non-virtual"><scope>tvm::detail::TypeName</scope><name>value</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

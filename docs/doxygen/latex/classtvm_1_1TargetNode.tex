@@ -1,0 +1,209 @@
+\hypertarget{classtvm_1_1TargetNode}{}\section{tvm\+:\+:Target\+Node Class Reference}
+\label{classtvm_1_1TargetNode}\index{tvm\+::\+Target\+Node@{tvm\+::\+Target\+Node}}
+
+
+Compilation target.  
+
+
+
+
+{\ttfamily \#include $<$target.\+h$>$}
+
+
+
+Inheritance diagram for tvm\+:\+:Target\+Node\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=285pt]{classtvm_1_1TargetNode__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for tvm\+:\+:Target\+Node\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{classtvm_1_1TargetNode__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+const std\+::string \& \hyperlink{classtvm_1_1TargetNode_a04c6114b51f49035a69f6df8db0abaa0}{str} () const 
+\item 
+void \hyperlink{classtvm_1_1TargetNode_ad4a9f21d97d244c2055e9ba2eca71ee5}{Visit\+Attrs} (\hyperlink{classtvm_1_1AttrVisitor}{Attr\+Visitor} $\ast$v)
+\item 
+std\+::vector$<$ std\+::string $>$ \hyperlink{classtvm_1_1TargetNode_a83a72db573e343416e50d30b0991420c}{keys} () const 
+\begin{DoxyCompactList}\small\item\em Get the keys for this target as a vector of string. \end{DoxyCompactList}\item 
+std\+::vector$<$ std\+::string $>$ \hyperlink{classtvm_1_1TargetNode_a8bbfe78ad27505e54e34e968de8ca0b4}{options} () const 
+\begin{DoxyCompactList}\small\item\em Get the options for this target as a vector of string. \end{DoxyCompactList}\item 
+std\+::unordered\+\_\+set$<$ std\+::string $>$ \hyperlink{classtvm_1_1TargetNode_a1d3a6c7cb961944c78d50bf6113aded8}{libs} () const 
+\begin{DoxyCompactList}\small\item\em Get the keys for this target as an unordered\+\_\+set of string. \end{DoxyCompactList}\item 
+\hyperlink{classtvm_1_1TargetNode_a8602fa00bc833f39fa16b682acd704b7}{T\+V\+M\+\_\+\+D\+E\+C\+L\+A\+R\+E\+\_\+\+F\+I\+N\+A\+L\+\_\+\+O\+B\+J\+E\+C\+T\+\_\+\+I\+N\+FO} (\hyperlink{classtvm_1_1TargetNode}{Target\+Node}, Object)
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+std\+::string \hyperlink{classtvm_1_1TargetNode_aeafc514163bba21ce3c676edd07dd7cb}{target\+\_\+name}
+\begin{DoxyCompactList}\small\item\em The name of the target device. \end{DoxyCompactList}\item 
+std\+::string \hyperlink{classtvm_1_1TargetNode_a08da6caaa24e22a11859c12b941ff955}{device\+\_\+name}
+\begin{DoxyCompactList}\small\item\em The name of the target device. \end{DoxyCompactList}\item 
+int \hyperlink{classtvm_1_1TargetNode_ab18779083b5f3afadc7dbb080bc7ebcf}{device\+\_\+type}
+\begin{DoxyCompactList}\small\item\em The type of the target device. \end{DoxyCompactList}\item 
+int \hyperlink{classtvm_1_1TargetNode_ad501b3a5f9c4af3eac8ef71b924231c6}{max\+\_\+num\+\_\+threads} = 1
+\begin{DoxyCompactList}\small\item\em The maximum threads that a schedule should use for this device. \end{DoxyCompactList}\item 
+int \hyperlink{classtvm_1_1TargetNode_a4a6adb62a05cc26bd922998ab0b6dfce}{thread\+\_\+warp\+\_\+size} = 1
+\begin{DoxyCompactList}\small\item\em The warp size that should be used by the Lower\+Thread\+Allreduce pass. \end{DoxyCompactList}\item 
+\hyperlink{classtvm_1_1Array}{Array}$<$ \hyperlink{classtvm_1_1PrimExpr}{Prim\+Expr} $>$ \hyperlink{classtvm_1_1TargetNode_a172a4eb37b5bfae486439c06bc8182c8}{keys\+\_\+array}
+\begin{DoxyCompactList}\small\item\em Keys for this target. \end{DoxyCompactList}\item 
+\hyperlink{classtvm_1_1Array}{Array}$<$ \hyperlink{classtvm_1_1PrimExpr}{Prim\+Expr} $>$ \hyperlink{classtvm_1_1TargetNode_a6957dc3edcbf686c77d10dc4ce0be572}{options\+\_\+array}
+\begin{DoxyCompactList}\small\item\em Options for this target. \end{DoxyCompactList}\item 
+\hyperlink{classtvm_1_1Array}{Array}$<$ \hyperlink{classtvm_1_1PrimExpr}{Prim\+Expr} $>$ \hyperlink{classtvm_1_1TargetNode_a32640ef524a569fbc232af24f0bdcfc5}{libs\+\_\+array}
+\begin{DoxyCompactList}\small\item\em Collection of imported libs. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static constexpr const char $\ast$ \hyperlink{classtvm_1_1TargetNode_a496626468eac236e9e046cb77a5f697e}{\+\_\+type\+\_\+key} = \char`\"{}Target\char`\"{}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Compilation target. 
+
+\begin{DoxyNote}{Note}
+Use \hyperlink{namespacetvm_1_1target_a8d851f48166f0f7ccf3c709e6271cb7d}{target\+::llvm}, \hyperlink{namespacetvm_1_1target_ae035a32c24d135c0ba65303bdbd87416}{target\+::cuda} etc functions. 
+\end{DoxyNote}
+\begin{DoxySeeAlso}{See also}
+\hyperlink{classtvm_1_1Target}{Target} 
+\end{DoxySeeAlso}
+
+
+\subsection{Member Function Documentation}
+\index{tvm\+::\+Target\+Node@{tvm\+::\+Target\+Node}!keys@{keys}}
+\index{keys@{keys}!tvm\+::\+Target\+Node@{tvm\+::\+Target\+Node}}
+\subsubsection[{\texorpdfstring{keys() const }{keys() const }}]{\setlength{\rightskip}{0pt plus 5cm}std\+::vector$<$std\+::string$>$ tvm\+::\+Target\+Node\+::keys (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}\hypertarget{classtvm_1_1TargetNode_a83a72db573e343416e50d30b0991420c}{}\label{classtvm_1_1TargetNode_a83a72db573e343416e50d30b0991420c}
+
+
+Get the keys for this target as a vector of string. 
+
+\index{tvm\+::\+Target\+Node@{tvm\+::\+Target\+Node}!libs@{libs}}
+\index{libs@{libs}!tvm\+::\+Target\+Node@{tvm\+::\+Target\+Node}}
+\subsubsection[{\texorpdfstring{libs() const }{libs() const }}]{\setlength{\rightskip}{0pt plus 5cm}std\+::unordered\+\_\+set$<$std\+::string$>$ tvm\+::\+Target\+Node\+::libs (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}\hypertarget{classtvm_1_1TargetNode_a1d3a6c7cb961944c78d50bf6113aded8}{}\label{classtvm_1_1TargetNode_a1d3a6c7cb961944c78d50bf6113aded8}
+
+
+Get the keys for this target as an unordered\+\_\+set of string. 
+
+\index{tvm\+::\+Target\+Node@{tvm\+::\+Target\+Node}!options@{options}}
+\index{options@{options}!tvm\+::\+Target\+Node@{tvm\+::\+Target\+Node}}
+\subsubsection[{\texorpdfstring{options() const }{options() const }}]{\setlength{\rightskip}{0pt plus 5cm}std\+::vector$<$std\+::string$>$ tvm\+::\+Target\+Node\+::options (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}\hypertarget{classtvm_1_1TargetNode_a8bbfe78ad27505e54e34e968de8ca0b4}{}\label{classtvm_1_1TargetNode_a8bbfe78ad27505e54e34e968de8ca0b4}
+
+
+Get the options for this target as a vector of string. 
+
+\index{tvm\+::\+Target\+Node@{tvm\+::\+Target\+Node}!str@{str}}
+\index{str@{str}!tvm\+::\+Target\+Node@{tvm\+::\+Target\+Node}}
+\subsubsection[{\texorpdfstring{str() const }{str() const }}]{\setlength{\rightskip}{0pt plus 5cm}const std\+::string\& tvm\+::\+Target\+Node\+::str (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}\hypertarget{classtvm_1_1TargetNode_a04c6114b51f49035a69f6df8db0abaa0}{}\label{classtvm_1_1TargetNode_a04c6114b51f49035a69f6df8db0abaa0}
+\begin{DoxyReturn}{Returns}
+the full device string to pass to \hyperlink{namespacetvm_1_1codegen_ad59f6371549d077dbd0c291b90f5cdf3}{codegen\+::\+Build} 
+\end{DoxyReturn}
+\index{tvm\+::\+Target\+Node@{tvm\+::\+Target\+Node}!T\+V\+M\+\_\+\+D\+E\+C\+L\+A\+R\+E\+\_\+\+F\+I\+N\+A\+L\+\_\+\+O\+B\+J\+E\+C\+T\+\_\+\+I\+N\+FO@{T\+V\+M\+\_\+\+D\+E\+C\+L\+A\+R\+E\+\_\+\+F\+I\+N\+A\+L\+\_\+\+O\+B\+J\+E\+C\+T\+\_\+\+I\+N\+FO}}
+\index{T\+V\+M\+\_\+\+D\+E\+C\+L\+A\+R\+E\+\_\+\+F\+I\+N\+A\+L\+\_\+\+O\+B\+J\+E\+C\+T\+\_\+\+I\+N\+FO@{T\+V\+M\+\_\+\+D\+E\+C\+L\+A\+R\+E\+\_\+\+F\+I\+N\+A\+L\+\_\+\+O\+B\+J\+E\+C\+T\+\_\+\+I\+N\+FO}!tvm\+::\+Target\+Node@{tvm\+::\+Target\+Node}}
+\subsubsection[{\texorpdfstring{T\+V\+M\+\_\+\+D\+E\+C\+L\+A\+R\+E\+\_\+\+F\+I\+N\+A\+L\+\_\+\+O\+B\+J\+E\+C\+T\+\_\+\+I\+N\+F\+O(\+Target\+Node, Object)}{TVM_DECLARE_FINAL_OBJECT_INFO(TargetNode, Object)}}]{\setlength{\rightskip}{0pt plus 5cm}tvm\+::\+Target\+Node\+::\+T\+V\+M\+\_\+\+D\+E\+C\+L\+A\+R\+E\+\_\+\+F\+I\+N\+A\+L\+\_\+\+O\+B\+J\+E\+C\+T\+\_\+\+I\+N\+FO (
+\begin{DoxyParamCaption}
+\item[{{\bf Target\+Node}}]{, }
+\item[{Object}]{}
+\end{DoxyParamCaption}
+)}\hypertarget{classtvm_1_1TargetNode_a8602fa00bc833f39fa16b682acd704b7}{}\label{classtvm_1_1TargetNode_a8602fa00bc833f39fa16b682acd704b7}
+\index{tvm\+::\+Target\+Node@{tvm\+::\+Target\+Node}!Visit\+Attrs@{Visit\+Attrs}}
+\index{Visit\+Attrs@{Visit\+Attrs}!tvm\+::\+Target\+Node@{tvm\+::\+Target\+Node}}
+\subsubsection[{\texorpdfstring{Visit\+Attrs(\+Attr\+Visitor $\ast$v)}{VisitAttrs(AttrVisitor *v)}}]{\setlength{\rightskip}{0pt plus 5cm}void tvm\+::\+Target\+Node\+::\+Visit\+Attrs (
+\begin{DoxyParamCaption}
+\item[{{\bf Attr\+Visitor} $\ast$}]{v}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classtvm_1_1TargetNode_ad4a9f21d97d244c2055e9ba2eca71ee5}{}\label{classtvm_1_1TargetNode_ad4a9f21d97d244c2055e9ba2eca71ee5}
+
+
+\subsection{Member Data Documentation}
+\index{tvm\+::\+Target\+Node@{tvm\+::\+Target\+Node}!\+\_\+type\+\_\+key@{\+\_\+type\+\_\+key}}
+\index{\+\_\+type\+\_\+key@{\+\_\+type\+\_\+key}!tvm\+::\+Target\+Node@{tvm\+::\+Target\+Node}}
+\subsubsection[{\texorpdfstring{\+\_\+type\+\_\+key}{_type_key}}]{\setlength{\rightskip}{0pt plus 5cm}constexpr const char$\ast$ tvm\+::\+Target\+Node\+::\+\_\+type\+\_\+key = \char`\"{}Target\char`\"{}\hspace{0.3cm}{\ttfamily [static]}}\hypertarget{classtvm_1_1TargetNode_a496626468eac236e9e046cb77a5f697e}{}\label{classtvm_1_1TargetNode_a496626468eac236e9e046cb77a5f697e}
+\index{tvm\+::\+Target\+Node@{tvm\+::\+Target\+Node}!device\+\_\+name@{device\+\_\+name}}
+\index{device\+\_\+name@{device\+\_\+name}!tvm\+::\+Target\+Node@{tvm\+::\+Target\+Node}}
+\subsubsection[{\texorpdfstring{device\+\_\+name}{device_name}}]{\setlength{\rightskip}{0pt plus 5cm}std\+::string tvm\+::\+Target\+Node\+::device\+\_\+name}\hypertarget{classtvm_1_1TargetNode_a08da6caaa24e22a11859c12b941ff955}{}\label{classtvm_1_1TargetNode_a08da6caaa24e22a11859c12b941ff955}
+
+
+The name of the target device. 
+
+\index{tvm\+::\+Target\+Node@{tvm\+::\+Target\+Node}!device\+\_\+type@{device\+\_\+type}}
+\index{device\+\_\+type@{device\+\_\+type}!tvm\+::\+Target\+Node@{tvm\+::\+Target\+Node}}
+\subsubsection[{\texorpdfstring{device\+\_\+type}{device_type}}]{\setlength{\rightskip}{0pt plus 5cm}int tvm\+::\+Target\+Node\+::device\+\_\+type}\hypertarget{classtvm_1_1TargetNode_ab18779083b5f3afadc7dbb080bc7ebcf}{}\label{classtvm_1_1TargetNode_ab18779083b5f3afadc7dbb080bc7ebcf}
+
+
+The type of the target device. 
+
+\index{tvm\+::\+Target\+Node@{tvm\+::\+Target\+Node}!keys\+\_\+array@{keys\+\_\+array}}
+\index{keys\+\_\+array@{keys\+\_\+array}!tvm\+::\+Target\+Node@{tvm\+::\+Target\+Node}}
+\subsubsection[{\texorpdfstring{keys\+\_\+array}{keys_array}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Array}$<${\bf Prim\+Expr}$>$ tvm\+::\+Target\+Node\+::keys\+\_\+array}\hypertarget{classtvm_1_1TargetNode_a172a4eb37b5bfae486439c06bc8182c8}{}\label{classtvm_1_1TargetNode_a172a4eb37b5bfae486439c06bc8182c8}
+
+
+Keys for this target. 
+
+\index{tvm\+::\+Target\+Node@{tvm\+::\+Target\+Node}!libs\+\_\+array@{libs\+\_\+array}}
+\index{libs\+\_\+array@{libs\+\_\+array}!tvm\+::\+Target\+Node@{tvm\+::\+Target\+Node}}
+\subsubsection[{\texorpdfstring{libs\+\_\+array}{libs_array}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Array}$<${\bf Prim\+Expr}$>$ tvm\+::\+Target\+Node\+::libs\+\_\+array}\hypertarget{classtvm_1_1TargetNode_a32640ef524a569fbc232af24f0bdcfc5}{}\label{classtvm_1_1TargetNode_a32640ef524a569fbc232af24f0bdcfc5}
+
+
+Collection of imported libs. 
+
+\index{tvm\+::\+Target\+Node@{tvm\+::\+Target\+Node}!max\+\_\+num\+\_\+threads@{max\+\_\+num\+\_\+threads}}
+\index{max\+\_\+num\+\_\+threads@{max\+\_\+num\+\_\+threads}!tvm\+::\+Target\+Node@{tvm\+::\+Target\+Node}}
+\subsubsection[{\texorpdfstring{max\+\_\+num\+\_\+threads}{max_num_threads}}]{\setlength{\rightskip}{0pt plus 5cm}int tvm\+::\+Target\+Node\+::max\+\_\+num\+\_\+threads = 1}\hypertarget{classtvm_1_1TargetNode_ad501b3a5f9c4af3eac8ef71b924231c6}{}\label{classtvm_1_1TargetNode_ad501b3a5f9c4af3eac8ef71b924231c6}
+
+
+The maximum threads that a schedule should use for this device. 
+
+\index{tvm\+::\+Target\+Node@{tvm\+::\+Target\+Node}!options\+\_\+array@{options\+\_\+array}}
+\index{options\+\_\+array@{options\+\_\+array}!tvm\+::\+Target\+Node@{tvm\+::\+Target\+Node}}
+\subsubsection[{\texorpdfstring{options\+\_\+array}{options_array}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Array}$<${\bf Prim\+Expr}$>$ tvm\+::\+Target\+Node\+::options\+\_\+array}\hypertarget{classtvm_1_1TargetNode_a6957dc3edcbf686c77d10dc4ce0be572}{}\label{classtvm_1_1TargetNode_a6957dc3edcbf686c77d10dc4ce0be572}
+
+
+Options for this target. 
+
+\index{tvm\+::\+Target\+Node@{tvm\+::\+Target\+Node}!target\+\_\+name@{target\+\_\+name}}
+\index{target\+\_\+name@{target\+\_\+name}!tvm\+::\+Target\+Node@{tvm\+::\+Target\+Node}}
+\subsubsection[{\texorpdfstring{target\+\_\+name}{target_name}}]{\setlength{\rightskip}{0pt plus 5cm}std\+::string tvm\+::\+Target\+Node\+::target\+\_\+name}\hypertarget{classtvm_1_1TargetNode_aeafc514163bba21ce3c676edd07dd7cb}{}\label{classtvm_1_1TargetNode_aeafc514163bba21ce3c676edd07dd7cb}
+
+
+The name of the target device. 
+
+\index{tvm\+::\+Target\+Node@{tvm\+::\+Target\+Node}!thread\+\_\+warp\+\_\+size@{thread\+\_\+warp\+\_\+size}}
+\index{thread\+\_\+warp\+\_\+size@{thread\+\_\+warp\+\_\+size}!tvm\+::\+Target\+Node@{tvm\+::\+Target\+Node}}
+\subsubsection[{\texorpdfstring{thread\+\_\+warp\+\_\+size}{thread_warp_size}}]{\setlength{\rightskip}{0pt plus 5cm}int tvm\+::\+Target\+Node\+::thread\+\_\+warp\+\_\+size = 1}\hypertarget{classtvm_1_1TargetNode_a4a6adb62a05cc26bd922998ab0b6dfce}{}\label{classtvm_1_1TargetNode_a4a6adb62a05cc26bd922998ab0b6dfce}
+
+
+The warp size that should be used by the Lower\+Thread\+Allreduce pass. 
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+include/tvm/target/\hyperlink{target_8h}{target.\+h}\end{DoxyCompactItemize}

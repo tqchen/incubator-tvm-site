@@ -1,0 +1,217 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="classtvm_1_1runtime_1_1TVMArgValue" kind="class" language="C++" prot="public">
+    <compoundname>tvm::runtime::TVMArgValue</compoundname>
+    <basecompoundref refid="classtvm_1_1runtime_1_1TVMPODValue__" prot="public" virt="non-virtual">tvm::runtime::TVMPODValue_</basecompoundref>
+    <includes refid="packed__func_8h" local="no">packed_func.h</includes>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classtvm_1_1runtime_1_1TVMArgValue_1a987b2fb283cea5484d4655e3f711c046" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>tvm::runtime::TVMArgValue::TVMArgValue</definition>
+        <argsstring>()</argsstring>
+        <name>TVMArgValue</name>
+        <briefdescription>
+<para>default constructor </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/runtime/packed_func.h" line="520" column="1" bodyfile="include/tvm/runtime/packed_func.h" bodystart="520" bodyend="520"/>
+      </memberdef>
+      <memberdef kind="function" id="classtvm_1_1runtime_1_1TVMArgValue_1a5fbd71750e5bbba6edc9094178af9276" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>tvm::runtime::TVMArgValue::TVMArgValue</definition>
+        <argsstring>(TVMValue value, int type_code)</argsstring>
+        <name>TVMArgValue</name>
+        <param>
+          <type><ref refid="unionTVMValue" kindref="compound">TVMValue</ref></type>
+          <declname>value</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>type_code</declname>
+        </param>
+        <briefdescription>
+<para>constructor </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>value</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>of the function </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>type_code</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The type code. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/runtime/packed_func.h" line="526" column="1" bodyfile="include/tvm/runtime/packed_func.h" bodystart="526" bodyend="528"/>
+      </memberdef>
+      <memberdef kind="function" id="classtvm_1_1runtime_1_1TVMArgValue_1a42023de967d37a0ff1a6dd0b6cdf9660" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>tvm::runtime::TVMArgValue::operator DLDataType</definition>
+        <argsstring>() const </argsstring>
+        <name>operator DLDataType</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/runtime/packed_func.h" line="557" column="1" bodyfile="include/tvm/runtime/packed_func.h" bodystart="557" bodyend="569"/>
+      </memberdef>
+      <memberdef kind="function" id="classtvm_1_1runtime_1_1TVMArgValue_1a07ea2b6deccadcc2a49597cfc241c278" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>tvm::runtime::TVMArgValue::operator DataType</definition>
+        <argsstring>() const </argsstring>
+        <name>operator DataType</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/runtime/packed_func.h" line="570" column="1" bodyfile="include/tvm/runtime/packed_func.h" bodystart="570" bodyend="572"/>
+      </memberdef>
+      <memberdef kind="function" id="classtvm_1_1runtime_1_1TVMArgValue_1abffc8b37686cc5e79f5029b1a86e04eb" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>tvm::runtime::TVMArgValue::operator PackedFunc</definition>
+        <argsstring>() const </argsstring>
+        <name>operator PackedFunc</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/runtime/packed_func.h" line="573" column="1" bodyfile="include/tvm/runtime/packed_func.h" bodystart="573" bodyend="577"/>
+      </memberdef>
+      <memberdef kind="function" id="classtvm_1_1runtime_1_1TVMArgValue_1a3248024ad6150cac8911c60259c3ffbd" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename FType</type>
+          </param>
+        </templateparamlist>
+        <type></type>
+        <definition>tvm::runtime::TVMArgValue::operator TypedPackedFunc&lt; FType &gt;</definition>
+        <argsstring>() const </argsstring>
+        <name>operator TypedPackedFunc&lt; FType &gt;</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/runtime/packed_func.h" line="579" column="1" bodyfile="include/tvm/runtime/packed_func.h" bodystart="579" bodyend="581"/>
+      </memberdef>
+      <memberdef kind="function" id="classtvm_1_1runtime_1_1TVMArgValue_1abb35e686e66c7af341584ba78a956270" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>const <ref refid="unionTVMValue" kindref="compound">TVMValue</ref> &amp;</type>
+        <definition>const TVMValue&amp; tvm::runtime::TVMArgValue::value</definition>
+        <argsstring>() const </argsstring>
+        <name>value</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/runtime/packed_func.h" line="582" column="1" bodyfile="include/tvm/runtime/packed_func.h" bodystart="582" bodyend="584"/>
+      </memberdef>
+      <memberdef kind="function" id="classtvm_1_1runtime_1_1TVMArgValue_1a1621744e7148fee07fdc623e25961000" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename T</type>
+          </param>
+          <param>
+            <type>typename</type>
+            <defval>typename std::enable_if&lt;             std::is_class&lt;T&gt;::<ref refid="classtvm_1_1runtime_1_1TVMArgValue_1abb35e686e66c7af341584ba78a956270" kindref="member">value</ref>&gt;::type</defval>
+          </param>
+        </templateparamlist>
+        <type></type>
+        <definition>tvm::runtime::TVMArgValue::operator T</definition>
+        <argsstring>() const </argsstring>
+        <name>operator T</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/runtime/packed_func.h" line="588" column="1" bodyfile="include/tvm/runtime/packed_func.h" bodystart="1498" bodyend="1500"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>A single argument value to <ref refid="classtvm_1_1runtime_1_1PackedFunc" kindref="compound">PackedFunc</ref>. Containing both type_code and <ref refid="unionTVMValue" kindref="compound">TVMValue</ref>. </para>    </briefdescription>
+    <detaileddescription>
+<para>Provides utilities to do type cast into other types. </para>    </detaileddescription>
+    <inheritancegraph>
+      <node id="7318">
+        <label>tvm::runtime::TVMPODValue_</label>
+        <link refid="classtvm_1_1runtime_1_1TVMPODValue__"/>
+      </node>
+      <node id="7317">
+        <label>tvm::runtime::TVMArgValue</label>
+        <link refid="classtvm_1_1runtime_1_1TVMArgValue"/>
+        <childnode refid="7318" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="7321">
+        <label>TVMValue</label>
+        <link refid="unionTVMValue"/>
+      </node>
+      <node id="7320">
+        <label>tvm::runtime::TVMPODValue_</label>
+        <link refid="classtvm_1_1runtime_1_1TVMPODValue__"/>
+        <childnode refid="7321" relation="usage">
+          <edgelabel>#value_</edgelabel>
+        </childnode>
+      </node>
+      <node id="7319">
+        <label>tvm::runtime::TVMArgValue</label>
+        <link refid="classtvm_1_1runtime_1_1TVMArgValue"/>
+        <childnode refid="7320" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="include/tvm/runtime/packed_func.h" line="517" column="1" bodyfile="include/tvm/runtime/packed_func.h" bodystart="517" bodyend="589"/>
+    <listofallmembers>
+      <member refid="classtvm_1_1runtime_1_1TVMPODValue___1a918b5a9ef8fcd65d649c7dd41ff12d9f" prot="public" virt="non-virtual"><scope>tvm::runtime::TVMArgValue</scope><name>AsObjectRef</name></member>
+      <member refid="classtvm_1_1runtime_1_1TVMPODValue___1a35455daf8c507edabf726c30de60fbed" prot="public" virt="non-virtual"><scope>tvm::runtime::TVMArgValue</scope><name>IsObjectRef</name></member>
+      <member refid="classtvm_1_1runtime_1_1TVMPODValue___1a6d3e2520d7329a8ef0d4ada22ece5fa8" prot="public" virt="non-virtual"><scope>tvm::runtime::TVMArgValue</scope><name>operator bool</name></member>
+      <member refid="classtvm_1_1runtime_1_1TVMArgValue_1a07ea2b6deccadcc2a49597cfc241c278" prot="public" virt="non-virtual"><scope>tvm::runtime::TVMArgValue</scope><name>operator DataType</name></member>
+      <member refid="classtvm_1_1runtime_1_1TVMArgValue_1a42023de967d37a0ff1a6dd0b6cdf9660" prot="public" virt="non-virtual"><scope>tvm::runtime::TVMArgValue</scope><name>operator DLDataType</name></member>
+      <member refid="classtvm_1_1runtime_1_1TVMPODValue___1ad4ac7900cf899e31f5834c8ac3a2d6d1" prot="public" virt="non-virtual"><scope>tvm::runtime::TVMArgValue</scope><name>operator DLTensor *</name></member>
+      <member refid="classtvm_1_1runtime_1_1TVMPODValue___1a5ce868719163d4131526a51ae50ee58d" prot="public" virt="non-virtual"><scope>tvm::runtime::TVMArgValue</scope><name>operator double</name></member>
+      <member refid="classtvm_1_1runtime_1_1TVMPODValue___1a50fddd03f30c0feb612cdb9eb2e2ad70" prot="public" virt="non-virtual"><scope>tvm::runtime::TVMArgValue</scope><name>operator int</name></member>
+      <member refid="classtvm_1_1runtime_1_1TVMPODValue___1ac165086c9b9eb10ec15843681beedb3b" prot="public" virt="non-virtual"><scope>tvm::runtime::TVMArgValue</scope><name>operator int64_t</name></member>
+      <member refid="classtvm_1_1runtime_1_1TVMPODValue___1a6a2d985b2e4573dcb2f518299c08b365" prot="public" virt="non-virtual"><scope>tvm::runtime::TVMArgValue</scope><name>operator Module</name></member>
+      <member refid="classtvm_1_1runtime_1_1TVMPODValue___1a2b949a0699c7d58ea7cd8eda6c3e1bcf" prot="public" virt="non-virtual"><scope>tvm::runtime::TVMArgValue</scope><name>operator NDArray</name></member>
+      <member refid="classtvm_1_1runtime_1_1TVMArgValue_1abffc8b37686cc5e79f5029b1a86e04eb" prot="public" virt="non-virtual"><scope>tvm::runtime::TVMArgValue</scope><name>operator PackedFunc</name></member>
+      <member refid="classtvm_1_1runtime_1_1TVMArgValue_1a1621744e7148fee07fdc623e25961000" prot="public" virt="non-virtual"><scope>tvm::runtime::TVMArgValue</scope><name>operator T</name></member>
+      <member refid="classtvm_1_1runtime_1_1TVMPODValue___1ad2089bfe768b39b214e098884d9da7c8" prot="public" virt="non-virtual"><scope>tvm::runtime::TVMArgValue</scope><name>operator tvm::Integer</name></member>
+      <member refid="classtvm_1_1runtime_1_1TVMPODValue___1a5b321945a09aa94894d389cfd6a3e892" prot="public" virt="non-virtual"><scope>tvm::runtime::TVMArgValue</scope><name>operator tvm::PrimExpr</name></member>
+      <member refid="classtvm_1_1runtime_1_1TVMPODValue___1a4fc0e1332d57c439e8bf8c05aff15fbc" prot="public" virt="non-virtual"><scope>tvm::runtime::TVMArgValue</scope><name>operator TVMContext</name></member>
+      <member refid="classtvm_1_1runtime_1_1TVMArgValue_1a3248024ad6150cac8911c60259c3ffbd" prot="public" virt="non-virtual"><scope>tvm::runtime::TVMArgValue</scope><name>operator TypedPackedFunc&lt; FType &gt;</name></member>
+      <member refid="classtvm_1_1runtime_1_1TVMPODValue___1abee98b24b41c9cfd0731ba5c5f5846a3" prot="public" virt="non-virtual"><scope>tvm::runtime::TVMArgValue</scope><name>operator uint64_t</name></member>
+      <member refid="classtvm_1_1runtime_1_1TVMPODValue___1a2b823e57fb67bba8c052d7c2f8892253" prot="public" virt="non-virtual"><scope>tvm::runtime::TVMArgValue</scope><name>operator void *</name></member>
+      <member refid="classtvm_1_1runtime_1_1TVMPODValue___1a362662e4d4b67c031ff70d4397052b29" prot="public" virt="non-virtual"><scope>tvm::runtime::TVMArgValue</scope><name>ptr</name></member>
+      <member refid="classtvm_1_1runtime_1_1TVMArgValue_1a987b2fb283cea5484d4655e3f711c046" prot="public" virt="non-virtual"><scope>tvm::runtime::TVMArgValue</scope><name>TVMArgValue</name></member>
+      <member refid="classtvm_1_1runtime_1_1TVMArgValue_1a5fbd71750e5bbba6edc9094178af9276" prot="public" virt="non-virtual"><scope>tvm::runtime::TVMArgValue</scope><name>TVMArgValue</name></member>
+      <member refid="classtvm_1_1runtime_1_1TVMPODValue___1a2f46b59a6c1d5eb4575d7f583b5f1a0c" prot="protected" virt="non-virtual"><scope>tvm::runtime::TVMArgValue</scope><name>TVMPODValue_</name></member>
+      <member refid="classtvm_1_1runtime_1_1TVMPODValue___1afe1837bdbafe8341c2031c5cebcf6e74" prot="protected" virt="non-virtual"><scope>tvm::runtime::TVMArgValue</scope><name>TVMPODValue_</name></member>
+      <member refid="classtvm_1_1runtime_1_1TVMPODValue___1a5a799e4197f227549cd641b0e753f9b8" prot="public" virt="non-virtual"><scope>tvm::runtime::TVMArgValue</scope><name>type_code</name></member>
+      <member refid="classtvm_1_1runtime_1_1TVMPODValue___1aed3e983e990c5c4ed3ac09b95055297e" prot="protected" virt="non-virtual"><scope>tvm::runtime::TVMArgValue</scope><name>type_code_</name></member>
+      <member refid="classtvm_1_1runtime_1_1TVMArgValue_1abb35e686e66c7af341584ba78a956270" prot="public" virt="non-virtual"><scope>tvm::runtime::TVMArgValue</scope><name>value</name></member>
+      <member refid="classtvm_1_1runtime_1_1TVMPODValue___1a8ffdfcc7099faf19ee07a5c03ce06af8" prot="protected" virt="non-virtual"><scope>tvm::runtime::TVMArgValue</scope><name>value_</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

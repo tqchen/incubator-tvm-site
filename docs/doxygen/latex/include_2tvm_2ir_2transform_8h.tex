@@ -1,0 +1,76 @@
+\hypertarget{include_2tvm_2ir_2transform_8h}{}\section{include/tvm/ir/transform.h File Reference}
+\label{include_2tvm_2ir_2transform_8h}\index{include/tvm/ir/transform.\+h@{include/tvm/ir/transform.\+h}}
+{\ttfamily \#include $<$tvm/support/with.\+h$>$}\\*
+{\ttfamily \#include $<$tvm/node/container.\+h$>$}\\*
+{\ttfamily \#include $<$tvm/ir/error.\+h$>$}\\*
+{\ttfamily \#include $<$tvm/ir/module.\+h$>$}\\*
+{\ttfamily \#include $<$string$>$}\\*
+Include dependency graph for transform.\+h\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{include_2tvm_2ir_2transform_8h__incl}
+\end{center}
+\end{figure}
+This graph shows which files directly or indirectly include this file\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{include_2tvm_2ir_2transform_8h__dep__incl}
+\end{center}
+\end{figure}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \hyperlink{classtvm_1_1transform_1_1PassContextNode}{tvm\+::transform\+::\+Pass\+Context\+Node}
+\begin{DoxyCompactList}\small\item\em \hyperlink{classtvm_1_1transform_1_1PassContextNode}{Pass\+Context\+Node} contains the information that a pass can rely on, such as analysis results. \end{DoxyCompactList}\item 
+class \hyperlink{classtvm_1_1transform_1_1PassContext}{tvm\+::transform\+::\+Pass\+Context}
+\begin{DoxyCompactList}\small\item\em \hyperlink{classtvm_1_1transform_1_1PassContext}{Pass\+Context} that is used to configure the pass behavior. \end{DoxyCompactList}\item 
+class \hyperlink{classtvm_1_1transform_1_1PassInfoNode}{tvm\+::transform\+::\+Pass\+Info\+Node}
+\begin{DoxyCompactList}\small\item\em Meta data that will be used to help optimization and analysis. \end{DoxyCompactList}\item 
+class \hyperlink{classtvm_1_1transform_1_1PassInfo}{tvm\+::transform\+::\+Pass\+Info}
+\item 
+class \hyperlink{classtvm_1_1transform_1_1PassNode}{tvm\+::transform\+::\+Pass\+Node}
+\begin{DoxyCompactList}\small\item\em \hyperlink{classtvm_1_1transform_1_1PassNode}{Pass\+Node} is the base type of differnt types of optimization passes. It is designed as a pure class and implemented by different pass subclasses at different granularity of Relay nodes. \end{DoxyCompactList}\item 
+class \hyperlink{classtvm_1_1transform_1_1Pass}{tvm\+::transform\+::\+Pass}
+\item 
+class \hyperlink{classtvm_1_1transform_1_1Sequential}{tvm\+::transform\+::\+Sequential}
+\end{DoxyCompactItemize}
+\subsection*{Namespaces}
+\begin{DoxyCompactItemize}
+\item 
+ \hyperlink{namespacetvm}{tvm}
+\item 
+ \hyperlink{namespacetvm_1_1transform}{tvm\+::transform}
+\end{DoxyCompactItemize}
+\subsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+using \hyperlink{namespacetvm_1_1transform_a0904052a95bd90a669cba07770694652}{tvm\+::transform\+::\+Trace\+Func} = runtime\+::\+Typed\+Packed\+Func$<$ void(const I\+R\+Module \&ir\+\_\+module, const Pass\+Info \&ctx, bool is\+\_\+before)$>$
+\begin{DoxyCompactList}\small\item\em A callback for tracing passes, useful for debugging and logging. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+Pass \hyperlink{namespacetvm_1_1transform_a6b8fcf03bde56b5b0ad51ad9a0f5fd36}{tvm\+::transform\+::\+Create\+Module\+Pass} (const runtime\+::\+Typed\+Packed\+Func$<$ I\+R\+Module(I\+R\+Module, Pass\+Context)$>$ \&pass\+\_\+func, int opt\+\_\+level, const std\+::string \&name, const Array$<$ Prim\+Expr $>$ \&required)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+This file implements a pass manager. The pass manager manages a sequence of I\+R\+Module -\/$>$ I\+R\+Module transformation passes over a particlar unit of A\+ST. The design is largely inspired from L\+L\+VM\textquotesingle{}s pass manager and modern deep learning frameworks that perform tensor-\/$>$tensor transformations.
+
+The responsibilities of a traditional compiler pass manager usually involves\+:
+\begin{DoxyItemize}
+\item Organizing the execution order of optimization passes though not necessarily in the optimal sequence.
+\item Collecting required analysis information and keep them up-\/to-\/date.
+\item Reducing the effort required to implement new passes for compiler developers, etc.
+\end{DoxyItemize}
+
+Similar to L\+L\+VM\textquotesingle{}s pass manager, we designed the Relay pass manager to work different granularity, i.\+e. module level, function level, and even sequential passe that contains a host of passes.
+
+However, we also extend the functionality of the traditional pass manager with the consideration of requirements/convention from deep learning frameworks, such as Pytorch and Gluon, etc. Each pass in the Relay pass manager performs the I\+R\+Module -\/$>$ I\+R\+Module transformation. All different types of passes, including the sequential-\/level pass object, are essentially pass objects. This design, therefore, effectively provides users a consistent and convenient interface, i.\+e. Pass, to play with. It offers a means to ease the development and testing of Relay passes. For example, with the pass manager, external users will be able to have custom passes correctly scheduled without having to modify a single handcrafted pass order.
+
+In the future we need to describe constraints between passes. For example, we may want to preserve dependencies between different passes and validate them on the completion of a certain pass.
+
+We also need to store side information and import the error reporting system. 

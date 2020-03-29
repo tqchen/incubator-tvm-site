@@ -1,0 +1,1016 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="classtvm_1_1IRModuleNode" kind="class" language="C++" prot="public">
+    <compoundname>tvm::IRModuleNode</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">Object</basecompoundref>
+    <includes refid="ir_2module_8h" local="no">module.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="classtvm_1_1IRModuleNode_1a88423026ad43fa60158bc9a647704d93" prot="public" static="no" mutable="no">
+        <type><ref refid="classtvm_1_1Map" kindref="compound">Map</ref>&lt; <ref refid="classtvm_1_1GlobalVar" kindref="compound">GlobalVar</ref>, <ref refid="classtvm_1_1BaseFunc" kindref="compound">BaseFunc</ref> &gt;</type>
+        <definition>Map&lt;GlobalVar, BaseFunc&gt; tvm::IRModuleNode::functions</definition>
+        <argsstring></argsstring>
+        <name>functions</name>
+        <briefdescription>
+<para>A map from ids to all global functions. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/ir/module.h" line="52" column="1" bodyfile="include/tvm/ir/module.h" bodystart="52" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classtvm_1_1IRModuleNode_1a547dbf39f1ecf5324153e10f7ca724c3" prot="public" static="no" mutable="no">
+        <type><ref refid="classtvm_1_1Map" kindref="compound">Map</ref>&lt; <ref refid="classtvm_1_1GlobalTypeVar" kindref="compound">GlobalTypeVar</ref>, <ref refid="classtvm_1_1TypeData" kindref="compound">TypeData</ref> &gt;</type>
+        <definition>Map&lt;GlobalTypeVar, TypeData&gt; tvm::IRModuleNode::type_definitions</definition>
+        <argsstring></argsstring>
+        <name>type_definitions</name>
+        <briefdescription>
+<para>A map from global type vars to ADT type data. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/ir/module.h" line="54" column="1" bodyfile="include/tvm/ir/module.h" bodystart="54" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-attrib">
+      <memberdef kind="variable" id="classtvm_1_1IRModuleNode_1a6437f77d18cf9a45f2c183d050605d15" prot="public" static="yes" mutable="no">
+        <type>constexpr const char *</type>
+        <definition>constexpr const char* tvm::IRModuleNode::_type_key</definition>
+        <argsstring></argsstring>
+        <name>_type_key</name>
+        <initializer>= &quot;IRModule&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/ir/module.h" line="241" column="1" bodyfile="include/tvm/ir/module.h" bodystart="241" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classtvm_1_1IRModuleNode_1a3c64ad855dbfb5851fc6590f1be417d6" prot="public" static="yes" mutable="no">
+        <type>constexpr const bool</type>
+        <definition>constexpr const bool tvm::IRModuleNode::_type_has_method_sequal_reduce</definition>
+        <argsstring></argsstring>
+        <name>_type_has_method_sequal_reduce</name>
+        <initializer>= true</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/ir/module.h" line="242" column="1" bodyfile="include/tvm/ir/module.h" bodystart="242" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classtvm_1_1IRModuleNode_1a8900caed3cd5b810aa2a49877028e53d" prot="public" static="yes" mutable="no">
+        <type>constexpr const bool</type>
+        <definition>constexpr const bool tvm::IRModuleNode::_type_has_method_shash_reduce</definition>
+        <argsstring></argsstring>
+        <name>_type_has_method_shash_reduce</name>
+        <initializer>= true</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/ir/module.h" line="243" column="1" bodyfile="include/tvm/ir/module.h" bodystart="243" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classtvm_1_1IRModuleNode_1a997126d02d269c7fd8a7e25d8481fd86" prot="private" static="no" mutable="no">
+        <type><ref refid="classtvm_1_1Map" kindref="compound">Map</ref>&lt; std::string, <ref refid="classtvm_1_1GlobalVar" kindref="compound">GlobalVar</ref> &gt;</type>
+        <definition>Map&lt;std::string, GlobalVar&gt; tvm::IRModuleNode::global_var_map_</definition>
+        <argsstring></argsstring>
+        <name>global_var_map_</name>
+        <briefdescription>
+<para>A map from string names to global variables that ensures global uniqueness. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/ir/module.h" line="253" column="1" bodyfile="include/tvm/ir/module.h" bodystart="253" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classtvm_1_1IRModuleNode_1a595b137e4f012225d2643fe6cf6dc550" prot="private" static="no" mutable="no">
+        <type><ref refid="classtvm_1_1Map" kindref="compound">Map</ref>&lt; std::string, <ref refid="classtvm_1_1GlobalTypeVar" kindref="compound">GlobalTypeVar</ref> &gt;</type>
+        <definition>Map&lt;std::string, GlobalTypeVar&gt; tvm::IRModuleNode::global_type_var_map_</definition>
+        <argsstring></argsstring>
+        <name>global_type_var_map_</name>
+        <briefdescription>
+<para>A map from string names to global type variables (ADT names) that ensures global uniqueness. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/ir/module.h" line="258" column="1" bodyfile="include/tvm/ir/module.h" bodystart="258" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classtvm_1_1IRModuleNode_1a8bc4d7da196a212e7181a0f9afecd1c9" prot="private" static="no" mutable="no">
+        <type>std::unordered_map&lt; int32_t, <ref refid="classtvm_1_1Constructor" kindref="compound">Constructor</ref> &gt;</type>
+        <definition>std::unordered_map&lt;int32_t, Constructor&gt; tvm::IRModuleNode::constructor_tag_map_</definition>
+        <argsstring></argsstring>
+        <name>constructor_tag_map_</name>
+        <briefdescription>
+<para>A map from constructor tags to constructor objects for convenient access. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/ir/module.h" line="263" column="1" bodyfile="include/tvm/ir/module.h" bodystart="263" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classtvm_1_1IRModuleNode_1a5d1a7a2bb8446800d0a7a8e2d2ff6817" prot="private" static="no" mutable="no">
+        <type>std::unordered_set&lt; std::string &gt;</type>
+        <definition>std::unordered_set&lt;std::string&gt; tvm::IRModuleNode::import_set_</definition>
+        <argsstring></argsstring>
+        <name>import_set_</name>
+        <briefdescription>
+<para>The files previously imported, required to ensure importing is idempotent for each module. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/ir/module.h" line="268" column="1" bodyfile="include/tvm/ir/module.h" bodystart="268" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="friend">
+      <memberdef kind="friend" id="classtvm_1_1IRModuleNode_1a2b30d3e406c01bb6287d1d7514ecaf46" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>friend class</type>
+        <definition>friend class IRModule</definition>
+        <argsstring></argsstring>
+        <name>IRModule</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/ir/module.h" line="269" column="1" bodyfile="include/tvm/ir/module.h" bodystart="269" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classtvm_1_1IRModuleNode_1a12962213bf292b6ebef70804f099eb8a" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>tvm::IRModuleNode::IRModuleNode</definition>
+        <argsstring>()</argsstring>
+        <name>IRModuleNode</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/ir/module.h" line="56" column="1" bodyfile="include/tvm/ir/module.h" bodystart="56" bodyend="56"/>
+      </memberdef>
+      <memberdef kind="function" id="classtvm_1_1IRModuleNode_1affbad8fa2513bd33cf8ac7d95aee132e" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void tvm::IRModuleNode::VisitAttrs</definition>
+        <argsstring>(AttrVisitor *v)</argsstring>
+        <name>VisitAttrs</name>
+        <param>
+          <type><ref refid="classtvm_1_1AttrVisitor" kindref="compound">AttrVisitor</ref> *</type>
+          <declname>v</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/ir/module.h" line="58" column="1" bodyfile="include/tvm/ir/module.h" bodystart="58" bodyend="63"/>
+      </memberdef>
+      <memberdef kind="function" id="classtvm_1_1IRModuleNode_1a73931fab441b0a8a8866547e504dbe65" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool tvm::IRModuleNode::SEqualReduce</definition>
+        <argsstring>(const IRModuleNode *other, SEqualReducer equal) const </argsstring>
+        <name>SEqualReduce</name>
+        <param>
+          <type>const <ref refid="classtvm_1_1IRModuleNode" kindref="compound">IRModuleNode</ref> *</type>
+          <declname>other</declname>
+        </param>
+        <param>
+          <type><ref refid="classtvm_1_1SEqualReducer" kindref="compound">SEqualReducer</ref></type>
+          <declname>equal</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/ir/module.h" line="65" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classtvm_1_1IRModuleNode_1a07f7ac491b06aa86c5cc9590a758e408" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void tvm::IRModuleNode::SHashReduce</definition>
+        <argsstring>(SHashReducer hash_reduce) const </argsstring>
+        <name>SHashReduce</name>
+        <param>
+          <type><ref refid="classtvm_1_1SHashReducer" kindref="compound">SHashReducer</ref></type>
+          <declname>hash_reduce</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/ir/module.h" line="67" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classtvm_1_1IRModuleNode_1ab0ece193de49f17b3de1a75b9739162d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void tvm::IRModuleNode::Add</definition>
+        <argsstring>(const GlobalVar &amp;var, const BaseFunc &amp;func, bool update=false)</argsstring>
+        <name>Add</name>
+        <param>
+          <type>const <ref refid="classtvm_1_1GlobalVar" kindref="compound">GlobalVar</ref> &amp;</type>
+          <declname>var</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classtvm_1_1BaseFunc" kindref="compound">BaseFunc</ref> &amp;</type>
+          <declname>func</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>update</declname>
+          <defval>false</defval>
+        </param>
+        <briefdescription>
+<para>Add a function to the global environment. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>var</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The var of the global function. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>func</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The function. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>update</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Controls whether you can replace a definition in the environment. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/ir/module.h" line="76" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classtvm_1_1IRModuleNode_1a46112d512de54bcd5d398a79b03c814a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void tvm::IRModuleNode::AddUnchecked</definition>
+        <argsstring>(const GlobalVar &amp;var, const BaseFunc &amp;func)</argsstring>
+        <name>AddUnchecked</name>
+        <param>
+          <type>const <ref refid="classtvm_1_1GlobalVar" kindref="compound">GlobalVar</ref> &amp;</type>
+          <declname>var</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classtvm_1_1BaseFunc" kindref="compound">BaseFunc</ref> &amp;</type>
+          <declname>func</declname>
+        </param>
+        <briefdescription>
+<para>Add a function to the global environment. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>var</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The name of the global function. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>func</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The function.</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+It does not do type inference as Add does. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/ir/module.h" line="85" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classtvm_1_1IRModuleNode_1a4284c66981befd976af5deadaca2b7f6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void tvm::IRModuleNode::AddTypeDef</definition>
+        <argsstring>(const GlobalTypeVar &amp;var, const TypeData &amp;type, bool update=false)</argsstring>
+        <name>AddTypeDef</name>
+        <param>
+          <type>const <ref refid="classtvm_1_1GlobalTypeVar" kindref="compound">GlobalTypeVar</ref> &amp;</type>
+          <declname>var</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classtvm_1_1TypeData" kindref="compound">TypeData</ref> &amp;</type>
+          <declname>type</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>update</declname>
+          <defval>false</defval>
+        </param>
+        <briefdescription>
+<para>Add a type-level definition to the global environment. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>var</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The var of the global type definition. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>type</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The ADT. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>update</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Controls whether you can replace a definition in the environment. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/ir/module.h" line="94" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classtvm_1_1IRModuleNode_1a1c4aaf62ebed8952d523c3e832051299" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void tvm::IRModuleNode::AddTypeDefUnchecked</definition>
+        <argsstring>(const GlobalTypeVar &amp;var, const TypeData &amp;type, bool update=false)</argsstring>
+        <name>AddTypeDefUnchecked</name>
+        <param>
+          <type>const <ref refid="classtvm_1_1GlobalTypeVar" kindref="compound">GlobalTypeVar</ref> &amp;</type>
+          <declname>var</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classtvm_1_1TypeData" kindref="compound">TypeData</ref> &amp;</type>
+          <declname>type</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>update</declname>
+          <defval>false</defval>
+        </param>
+        <briefdescription>
+<para>Add a type-level definition to the global environment. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>var</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The var of the global type definition. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>type</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The ADT. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>update</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Controls whether you can replace a definition in the environment.</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+It does not do type checking as AddTypeDef does. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/ir/module.h" line="105" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classtvm_1_1IRModuleNode_1abdd8936c6fca33ef9b7c086f8fd58f84" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void tvm::IRModuleNode::Update</definition>
+        <argsstring>(const GlobalVar &amp;var, const BaseFunc &amp;func)</argsstring>
+        <name>Update</name>
+        <param>
+          <type>const <ref refid="classtvm_1_1GlobalVar" kindref="compound">GlobalVar</ref> &amp;</type>
+          <declname>var</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classtvm_1_1BaseFunc" kindref="compound">BaseFunc</ref> &amp;</type>
+          <declname>func</declname>
+        </param>
+        <briefdescription>
+<para>Update a function in the global environment. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>var</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The name of the global function to update. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>func</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The new function. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/ir/module.h" line="114" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classtvm_1_1IRModuleNode_1a63b73181faaa31a95e8d71e1cf5b80b2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void tvm::IRModuleNode::UpdateTypeDef</definition>
+        <argsstring>(const GlobalTypeVar &amp;var, const TypeData &amp;type)</argsstring>
+        <name>UpdateTypeDef</name>
+        <param>
+          <type>const <ref refid="classtvm_1_1GlobalTypeVar" kindref="compound">GlobalTypeVar</ref> &amp;</type>
+          <declname>var</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classtvm_1_1TypeData" kindref="compound">TypeData</ref> &amp;</type>
+          <declname>type</declname>
+        </param>
+        <briefdescription>
+<para>Update a type definition in the global environment. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>var</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The name of the global type definition to update. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>type</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The new ADT. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/ir/module.h" line="121" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classtvm_1_1IRModuleNode_1a1350c7d68665605f9c4f10850f4a90b9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void tvm::IRModuleNode::Remove</definition>
+        <argsstring>(const GlobalVar &amp;var)</argsstring>
+        <name>Remove</name>
+        <param>
+          <type>const <ref refid="classtvm_1_1GlobalVar" kindref="compound">GlobalVar</ref> &amp;</type>
+          <declname>var</declname>
+        </param>
+        <briefdescription>
+<para>Remove a function from the global environment. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>var</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The name of the global function to update. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/ir/module.h" line="127" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classtvm_1_1IRModuleNode_1a8614291d65bba50bbdc4c30053d96790" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool tvm::IRModuleNode::ContainGlobalVar</definition>
+        <argsstring>(const std::string &amp;name) const </argsstring>
+        <name>ContainGlobalVar</name>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>name</declname>
+        </param>
+        <briefdescription>
+<para>Check if the global_var_map_ contains a global variable. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>name</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The variable name. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>true if contains, otherise false. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/ir/module.h" line="134" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classtvm_1_1IRModuleNode_1ab9cee2139cc9ece5fed5ddb949a72f4b" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool tvm::IRModuleNode::ContainGlobalTypeVar</definition>
+        <argsstring>(const std::string &amp;name) const </argsstring>
+        <name>ContainGlobalTypeVar</name>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>name</declname>
+        </param>
+        <briefdescription>
+<para>Check if the global_type_var_map_ contains a global type variable. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>name</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The variable name. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>true if contains, otherise false. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/ir/module.h" line="141" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classtvm_1_1IRModuleNode_1a1930de860e8f5a6d39da503e88621da9" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classtvm_1_1GlobalVar" kindref="compound">GlobalVar</ref></type>
+        <definition>GlobalVar tvm::IRModuleNode::GetGlobalVar</definition>
+        <argsstring>(const std::string &amp;str) const </argsstring>
+        <name>GetGlobalVar</name>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>str</declname>
+        </param>
+        <briefdescription>
+<para>Lookup a global function by its variable. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>str</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The unique string specifying the global variable. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The global variable. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/ir/module.h" line="148" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classtvm_1_1IRModuleNode_1a45e6e5cf1e544f6230f1b048aa214fa3" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classtvm_1_1Array" kindref="compound">Array</ref>&lt; <ref refid="classtvm_1_1GlobalVar" kindref="compound">GlobalVar</ref> &gt;</type>
+        <definition>Array&lt;GlobalVar&gt; tvm::IRModuleNode::GetGlobalVars</definition>
+        <argsstring>() const </argsstring>
+        <name>GetGlobalVars</name>
+        <briefdescription>
+<para>Collect all global vars defined in this module. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>An array of global vars </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/ir/module.h" line="154" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classtvm_1_1IRModuleNode_1a61f3008a7e1f4cc4910a6b687180cb06" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classtvm_1_1GlobalTypeVar" kindref="compound">GlobalTypeVar</ref></type>
+        <definition>GlobalTypeVar tvm::IRModuleNode::GetGlobalTypeVar</definition>
+        <argsstring>(const std::string &amp;str) const </argsstring>
+        <name>GetGlobalTypeVar</name>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>str</declname>
+        </param>
+        <briefdescription>
+<para>Look up a global function by its name. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>str</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The unique string specifying the global variable. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The global variable. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/ir/module.h" line="161" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classtvm_1_1IRModuleNode_1aedd95d1388c07381eb4fabedeea8b7e5" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classtvm_1_1Array" kindref="compound">Array</ref>&lt; <ref refid="classtvm_1_1GlobalTypeVar" kindref="compound">GlobalTypeVar</ref> &gt;</type>
+        <definition>Array&lt;GlobalTypeVar&gt; tvm::IRModuleNode::GetGlobalTypeVars</definition>
+        <argsstring>() const </argsstring>
+        <name>GetGlobalTypeVars</name>
+        <briefdescription>
+<para>Collect all global type vars defined in this module. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>An array of global type vars </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/ir/module.h" line="167" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classtvm_1_1IRModuleNode_1ab9d56f56190fa8c6265ea172ef00eae7" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classtvm_1_1Constructor" kindref="compound">Constructor</ref></type>
+        <definition>Constructor tvm::IRModuleNode::GetConstructor</definition>
+        <argsstring>(const std::string &amp;adt, const std::string &amp;cons) const </argsstring>
+        <name>GetConstructor</name>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>adt</declname>
+        </param>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>cons</declname>
+        </param>
+        <briefdescription>
+<para>Find constructor of ADT using name. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>adt</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>name of the ADT the constructor belongs to </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>cons</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>name of the constructor </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para><ref refid="classtvm_1_1Constructor" kindref="compound">Constructor</ref> of ADT, error if not found </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/ir/module.h" line="175" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classtvm_1_1IRModuleNode_1a46e08749832a28023b3452e426fe51f2" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classtvm_1_1BaseFunc" kindref="compound">BaseFunc</ref></type>
+        <definition>BaseFunc tvm::IRModuleNode::Lookup</definition>
+        <argsstring>(const GlobalVar &amp;var) const </argsstring>
+        <name>Lookup</name>
+        <param>
+          <type>const <ref refid="classtvm_1_1GlobalVar" kindref="compound">GlobalVar</ref> &amp;</type>
+          <declname>var</declname>
+        </param>
+        <briefdescription>
+<para>Look up a global function by its variable. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>var</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The global var to lookup. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The function named by the variable argument. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/ir/module.h" line="182" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classtvm_1_1IRModuleNode_1abbebfa676ee155c644a97ce33ad599ca" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classtvm_1_1BaseFunc" kindref="compound">BaseFunc</ref></type>
+        <definition>BaseFunc tvm::IRModuleNode::Lookup</definition>
+        <argsstring>(const std::string &amp;name) const </argsstring>
+        <name>Lookup</name>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>name</declname>
+        </param>
+        <briefdescription>
+<para>Look up a global function by its string name. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>name</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The name of the function. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The function named by the argument. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/ir/module.h" line="189" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classtvm_1_1IRModuleNode_1a48ba730bc22c3b7ab06fcc79d9f2ec9a" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classtvm_1_1TypeData" kindref="compound">TypeData</ref></type>
+        <definition>TypeData tvm::IRModuleNode::LookupTypeDef</definition>
+        <argsstring>(const GlobalTypeVar &amp;var) const </argsstring>
+        <name>LookupTypeDef</name>
+        <param>
+          <type>const <ref refid="classtvm_1_1GlobalTypeVar" kindref="compound">GlobalTypeVar</ref> &amp;</type>
+          <declname>var</declname>
+        </param>
+        <briefdescription>
+<para>Look up a global type definition by its variable. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>var</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The var of the global type definition. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The type definition. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/ir/module.h" line="196" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classtvm_1_1IRModuleNode_1a81eb5a98228295ac0f58f5ad8df02d33" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classtvm_1_1TypeData" kindref="compound">TypeData</ref></type>
+        <definition>TypeData tvm::IRModuleNode::LookupTypeDef</definition>
+        <argsstring>(const std::string &amp;var) const </argsstring>
+        <name>LookupTypeDef</name>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>var</declname>
+        </param>
+        <briefdescription>
+<para>Look up a global type definition by its name. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>var</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The name of the global type definition. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The type definition. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/ir/module.h" line="203" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classtvm_1_1IRModuleNode_1ae078ad8def39579701d144578c787bcf" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classtvm_1_1Constructor" kindref="compound">Constructor</ref></type>
+        <definition>Constructor tvm::IRModuleNode::LookupTag</definition>
+        <argsstring>(const int32_t tag)</argsstring>
+        <name>LookupTag</name>
+        <param>
+          <type>const int32_t</type>
+          <declname>tag</declname>
+        </param>
+        <briefdescription>
+<para>Look up a constructor by its tag. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>tag</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The tag for the constructor. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The constructor object. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/ir/module.h" line="210" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classtvm_1_1IRModuleNode_1a94a93385e64ce844299729af6a573015" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void tvm::IRModuleNode::Update</definition>
+        <argsstring>(const IRModule &amp;other)</argsstring>
+        <name>Update</name>
+        <param>
+          <type>const <ref refid="classtvm_1_1IRModule" kindref="compound">IRModule</ref> &amp;</type>
+          <declname>other</declname>
+        </param>
+        <briefdescription>
+<para>Update the functions inside this environment by functions in another environment. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>other</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The other environment. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/ir/module.h" line="217" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classtvm_1_1IRModuleNode_1a88551ba5a3aef9640c771473b9dff0d5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void tvm::IRModuleNode::Import</definition>
+        <argsstring>(const std::string &amp;path)</argsstring>
+        <name>Import</name>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>path</declname>
+        </param>
+        <briefdescription>
+<para>Import Relay code from the file at path. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>path</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The path of the Relay code to import.</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="note"><para>The path resolution behavior is standard, if abosolute will be the absolute file, if relative it will be resovled against the current working directory. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/ir/module.h" line="228" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classtvm_1_1IRModuleNode_1ad00716d1699635dafa60bb03741488c0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void tvm::IRModuleNode::ImportFromStd</definition>
+        <argsstring>(const std::string &amp;path)</argsstring>
+        <name>ImportFromStd</name>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>path</declname>
+        </param>
+        <briefdescription>
+<para>Import Relay code from the file at path, relative to the standard library. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>path</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The path of the Relay code to import. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/ir/module.h" line="234" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classtvm_1_1IRModuleNode_1ada72a4ea8d04a3486de5673a1f690fc9" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>std::unordered_set&lt; std::string &gt;</type>
+        <definition>std::unordered_set&lt;std::string&gt; tvm::IRModuleNode::Imports</definition>
+        <argsstring>() const </argsstring>
+        <name>Imports</name>
+        <briefdescription>
+<para>The set of imported files. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/ir/module.h" line="239" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classtvm_1_1IRModuleNode_1a4840f698deaffe0e96317a436dfd079f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>tvm::IRModuleNode::TVM_DECLARE_FINAL_OBJECT_INFO</definition>
+        <argsstring>(IRModuleNode, Object)</argsstring>
+        <name>TVM_DECLARE_FINAL_OBJECT_INFO</name>
+        <param>
+          <type><ref refid="classtvm_1_1IRModuleNode" kindref="compound">IRModuleNode</ref></type>
+        </param>
+        <param>
+          <type>Object</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/ir/module.h" line="244" column="1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="classtvm_1_1IRModuleNode_1af6db81b2a40c66eb5265cf902abc1ce4" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void tvm::IRModuleNode::RegisterConstructors</definition>
+        <argsstring>(const GlobalTypeVar &amp;var, const TypeData &amp;type)</argsstring>
+        <name>RegisterConstructors</name>
+        <param>
+          <type>const <ref refid="classtvm_1_1GlobalTypeVar" kindref="compound">GlobalTypeVar</ref> &amp;</type>
+          <declname>var</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classtvm_1_1TypeData" kindref="compound">TypeData</ref> &amp;</type>
+          <declname>type</declname>
+        </param>
+        <briefdescription>
+<para>Helper function for registering a typedef&apos;s constructors. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/ir/module.h" line="248" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para><ref refid="classtvm_1_1IRModule" kindref="compound">IRModule</ref> that holds functions and type definitions. </para>    </briefdescription>
+    <detaileddescription>
+<para><ref refid="classtvm_1_1IRModule" kindref="compound">IRModule</ref> is the basic unit for all IR transformations across the stack.</para><para>Many operations require access to the global <ref refid="classtvm_1_1IRModule" kindref="compound">IRModule</ref>. We pass the <ref refid="classtvm_1_1IRModule" kindref="compound">IRModule</ref> by value in a functional style as an explicit argument, but we mutate the Module while optimizing programs. <simplesect kind="see"><para><ref refid="classtvm_1_1IRModule" kindref="compound">IRModule</ref> </para></simplesect>
+</para>    </detaileddescription>
+    <inheritancegraph>
+      <node id="5438">
+        <label>tvm::IRModuleNode</label>
+        <link refid="classtvm_1_1IRModuleNode"/>
+        <childnode refid="5439" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="5439">
+        <label>Object</label>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="5443">
+        <label>ObjectRef</label>
+      </node>
+      <node id="5440">
+        <label>tvm::IRModuleNode</label>
+        <link refid="classtvm_1_1IRModuleNode"/>
+        <childnode refid="5441" relation="public-inheritance">
+        </childnode>
+        <childnode refid="5442" relation="usage">
+          <edgelabel>+functions</edgelabel>
+        </childnode>
+        <childnode refid="5444" relation="usage">
+          <edgelabel>+type_definitions</edgelabel>
+        </childnode>
+      </node>
+      <node id="5441">
+        <label>Object</label>
+      </node>
+      <node id="5442">
+        <label>tvm::Map&lt; tvm::GlobalVar, tvm::BaseFunc &gt;</label>
+        <link refid="classtvm_1_1Map"/>
+        <childnode refid="5443" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="5444">
+        <label>tvm::Map&lt; tvm::GlobalTypeVar, tvm::TypeData &gt;</label>
+        <link refid="classtvm_1_1Map"/>
+        <childnode refid="5443" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="include/tvm/ir/module.h" line="49" column="1" bodyfile="include/tvm/ir/module.h" bodystart="49" bodyend="270"/>
+    <listofallmembers>
+      <member refid="classtvm_1_1IRModuleNode_1a3c64ad855dbfb5851fc6590f1be417d6" prot="public" virt="non-virtual"><scope>tvm::IRModuleNode</scope><name>_type_has_method_sequal_reduce</name></member>
+      <member refid="classtvm_1_1IRModuleNode_1a8900caed3cd5b810aa2a49877028e53d" prot="public" virt="non-virtual"><scope>tvm::IRModuleNode</scope><name>_type_has_method_shash_reduce</name></member>
+      <member refid="classtvm_1_1IRModuleNode_1a6437f77d18cf9a45f2c183d050605d15" prot="public" virt="non-virtual"><scope>tvm::IRModuleNode</scope><name>_type_key</name></member>
+      <member refid="classtvm_1_1IRModuleNode_1ab0ece193de49f17b3de1a75b9739162d" prot="public" virt="non-virtual"><scope>tvm::IRModuleNode</scope><name>Add</name></member>
+      <member refid="classtvm_1_1IRModuleNode_1a4284c66981befd976af5deadaca2b7f6" prot="public" virt="non-virtual"><scope>tvm::IRModuleNode</scope><name>AddTypeDef</name></member>
+      <member refid="classtvm_1_1IRModuleNode_1a1c4aaf62ebed8952d523c3e832051299" prot="public" virt="non-virtual"><scope>tvm::IRModuleNode</scope><name>AddTypeDefUnchecked</name></member>
+      <member refid="classtvm_1_1IRModuleNode_1a46112d512de54bcd5d398a79b03c814a" prot="public" virt="non-virtual"><scope>tvm::IRModuleNode</scope><name>AddUnchecked</name></member>
+      <member refid="classtvm_1_1IRModuleNode_1a8bc4d7da196a212e7181a0f9afecd1c9" prot="private" virt="non-virtual"><scope>tvm::IRModuleNode</scope><name>constructor_tag_map_</name></member>
+      <member refid="classtvm_1_1IRModuleNode_1ab9cee2139cc9ece5fed5ddb949a72f4b" prot="public" virt="non-virtual"><scope>tvm::IRModuleNode</scope><name>ContainGlobalTypeVar</name></member>
+      <member refid="classtvm_1_1IRModuleNode_1a8614291d65bba50bbdc4c30053d96790" prot="public" virt="non-virtual"><scope>tvm::IRModuleNode</scope><name>ContainGlobalVar</name></member>
+      <member refid="classtvm_1_1IRModuleNode_1a88423026ad43fa60158bc9a647704d93" prot="public" virt="non-virtual"><scope>tvm::IRModuleNode</scope><name>functions</name></member>
+      <member refid="classtvm_1_1IRModuleNode_1ab9d56f56190fa8c6265ea172ef00eae7" prot="public" virt="non-virtual"><scope>tvm::IRModuleNode</scope><name>GetConstructor</name></member>
+      <member refid="classtvm_1_1IRModuleNode_1a61f3008a7e1f4cc4910a6b687180cb06" prot="public" virt="non-virtual"><scope>tvm::IRModuleNode</scope><name>GetGlobalTypeVar</name></member>
+      <member refid="classtvm_1_1IRModuleNode_1aedd95d1388c07381eb4fabedeea8b7e5" prot="public" virt="non-virtual"><scope>tvm::IRModuleNode</scope><name>GetGlobalTypeVars</name></member>
+      <member refid="classtvm_1_1IRModuleNode_1a1930de860e8f5a6d39da503e88621da9" prot="public" virt="non-virtual"><scope>tvm::IRModuleNode</scope><name>GetGlobalVar</name></member>
+      <member refid="classtvm_1_1IRModuleNode_1a45e6e5cf1e544f6230f1b048aa214fa3" prot="public" virt="non-virtual"><scope>tvm::IRModuleNode</scope><name>GetGlobalVars</name></member>
+      <member refid="classtvm_1_1IRModuleNode_1a595b137e4f012225d2643fe6cf6dc550" prot="private" virt="non-virtual"><scope>tvm::IRModuleNode</scope><name>global_type_var_map_</name></member>
+      <member refid="classtvm_1_1IRModuleNode_1a997126d02d269c7fd8a7e25d8481fd86" prot="private" virt="non-virtual"><scope>tvm::IRModuleNode</scope><name>global_var_map_</name></member>
+      <member refid="classtvm_1_1IRModuleNode_1a88551ba5a3aef9640c771473b9dff0d5" prot="public" virt="non-virtual"><scope>tvm::IRModuleNode</scope><name>Import</name></member>
+      <member refid="classtvm_1_1IRModuleNode_1a5d1a7a2bb8446800d0a7a8e2d2ff6817" prot="private" virt="non-virtual"><scope>tvm::IRModuleNode</scope><name>import_set_</name></member>
+      <member refid="classtvm_1_1IRModuleNode_1ad00716d1699635dafa60bb03741488c0" prot="public" virt="non-virtual"><scope>tvm::IRModuleNode</scope><name>ImportFromStd</name></member>
+      <member refid="classtvm_1_1IRModuleNode_1ada72a4ea8d04a3486de5673a1f690fc9" prot="public" virt="non-virtual"><scope>tvm::IRModuleNode</scope><name>Imports</name></member>
+      <member refid="classtvm_1_1IRModuleNode_1a2b30d3e406c01bb6287d1d7514ecaf46" prot="private" virt="non-virtual"><scope>tvm::IRModuleNode</scope><name>IRModule</name></member>
+      <member refid="classtvm_1_1IRModuleNode_1a12962213bf292b6ebef70804f099eb8a" prot="public" virt="non-virtual"><scope>tvm::IRModuleNode</scope><name>IRModuleNode</name></member>
+      <member refid="classtvm_1_1IRModuleNode_1a46e08749832a28023b3452e426fe51f2" prot="public" virt="non-virtual"><scope>tvm::IRModuleNode</scope><name>Lookup</name></member>
+      <member refid="classtvm_1_1IRModuleNode_1abbebfa676ee155c644a97ce33ad599ca" prot="public" virt="non-virtual"><scope>tvm::IRModuleNode</scope><name>Lookup</name></member>
+      <member refid="classtvm_1_1IRModuleNode_1ae078ad8def39579701d144578c787bcf" prot="public" virt="non-virtual"><scope>tvm::IRModuleNode</scope><name>LookupTag</name></member>
+      <member refid="classtvm_1_1IRModuleNode_1a48ba730bc22c3b7ab06fcc79d9f2ec9a" prot="public" virt="non-virtual"><scope>tvm::IRModuleNode</scope><name>LookupTypeDef</name></member>
+      <member refid="classtvm_1_1IRModuleNode_1a81eb5a98228295ac0f58f5ad8df02d33" prot="public" virt="non-virtual"><scope>tvm::IRModuleNode</scope><name>LookupTypeDef</name></member>
+      <member refid="classtvm_1_1IRModuleNode_1af6db81b2a40c66eb5265cf902abc1ce4" prot="private" virt="non-virtual"><scope>tvm::IRModuleNode</scope><name>RegisterConstructors</name></member>
+      <member refid="classtvm_1_1IRModuleNode_1a1350c7d68665605f9c4f10850f4a90b9" prot="public" virt="non-virtual"><scope>tvm::IRModuleNode</scope><name>Remove</name></member>
+      <member refid="classtvm_1_1IRModuleNode_1a73931fab441b0a8a8866547e504dbe65" prot="public" virt="non-virtual"><scope>tvm::IRModuleNode</scope><name>SEqualReduce</name></member>
+      <member refid="classtvm_1_1IRModuleNode_1a07f7ac491b06aa86c5cc9590a758e408" prot="public" virt="non-virtual"><scope>tvm::IRModuleNode</scope><name>SHashReduce</name></member>
+      <member refid="classtvm_1_1IRModuleNode_1a4840f698deaffe0e96317a436dfd079f" prot="public" virt="non-virtual"><scope>tvm::IRModuleNode</scope><name>TVM_DECLARE_FINAL_OBJECT_INFO</name></member>
+      <member refid="classtvm_1_1IRModuleNode_1a547dbf39f1ecf5324153e10f7ca724c3" prot="public" virt="non-virtual"><scope>tvm::IRModuleNode</scope><name>type_definitions</name></member>
+      <member refid="classtvm_1_1IRModuleNode_1abdd8936c6fca33ef9b7c086f8fd58f84" prot="public" virt="non-virtual"><scope>tvm::IRModuleNode</scope><name>Update</name></member>
+      <member refid="classtvm_1_1IRModuleNode_1a94a93385e64ce844299729af6a573015" prot="public" virt="non-virtual"><scope>tvm::IRModuleNode</scope><name>Update</name></member>
+      <member refid="classtvm_1_1IRModuleNode_1a63b73181faaa31a95e8d71e1cf5b80b2" prot="public" virt="non-virtual"><scope>tvm::IRModuleNode</scope><name>UpdateTypeDef</name></member>
+      <member refid="classtvm_1_1IRModuleNode_1affbad8fa2513bd33cf8ac7d95aee132e" prot="public" virt="non-virtual"><scope>tvm::IRModuleNode</scope><name>VisitAttrs</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

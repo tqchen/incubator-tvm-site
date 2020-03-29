@@ -1,0 +1,138 @@
+\hypertarget{classtvm_1_1tir_1_1AssertStmtNode}{}\section{tvm\+:\+:tir\+:\+:Assert\+Stmt\+Node Class Reference}
+\label{classtvm_1_1tir_1_1AssertStmtNode}\index{tvm\+::tir\+::\+Assert\+Stmt\+Node@{tvm\+::tir\+::\+Assert\+Stmt\+Node}}
+
+
+Assert condition, if an error occurs, return the error message.  
+
+
+
+
+{\ttfamily \#include $<$stmt.\+h$>$}
+
+
+
+Inheritance diagram for tvm\+:\+:tir\+:\+:Assert\+Stmt\+Node\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=285pt]{classtvm_1_1tir_1_1AssertStmtNode__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for tvm\+:\+:tir\+:\+:Assert\+Stmt\+Node\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classtvm_1_1tir_1_1AssertStmtNode__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{classtvm_1_1tir_1_1AssertStmtNode_ad4b51bee8779971bed4bdfeb72006d99}{Visit\+Attrs} (\hyperlink{classtvm_1_1AttrVisitor}{Attr\+Visitor} $\ast$v)
+\item 
+bool \hyperlink{classtvm_1_1tir_1_1AssertStmtNode_a95e359c096097dacf07eeaefd1977826}{S\+Equal\+Reduce} (const \hyperlink{classtvm_1_1tir_1_1AssertStmtNode}{Assert\+Stmt\+Node} $\ast$other, \hyperlink{classtvm_1_1SEqualReducer}{S\+Equal\+Reducer} equal) const 
+\item 
+void \hyperlink{classtvm_1_1tir_1_1AssertStmtNode_af951b4bd4d85da16e19cdf546a447c1f}{S\+Hash\+Reduce} (\hyperlink{classtvm_1_1SHashReducer}{S\+Hash\+Reducer} hash\+\_\+reduce) const 
+\item 
+\hyperlink{classtvm_1_1tir_1_1AssertStmtNode_a63080edac8e68a1358affcc192b747c6}{T\+V\+M\+\_\+\+D\+E\+C\+L\+A\+R\+E\+\_\+\+F\+I\+N\+A\+L\+\_\+\+O\+B\+J\+E\+C\+T\+\_\+\+I\+N\+FO} (\hyperlink{classtvm_1_1tir_1_1AssertStmtNode}{Assert\+Stmt\+Node}, \hyperlink{classtvm_1_1tir_1_1StmtNode}{Stmt\+Node})
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \hyperlink{classtvm_1_1tir_1_1Stmt}{Stmt} \hyperlink{classtvm_1_1tir_1_1AssertStmtNode_abdd0a95299b297bab446c9710c039b06}{make} (\hyperlink{classtvm_1_1PrimExpr}{Prim\+Expr} \hyperlink{classtvm_1_1tir_1_1AssertStmtNode_a016ff228d0c944b8d295223f54858493}{condition}, \hyperlink{classtvm_1_1PrimExpr}{Prim\+Expr} \hyperlink{classtvm_1_1tir_1_1AssertStmtNode_a42ff732b4df33bddf74f9a92669cebb9}{message}, \hyperlink{classtvm_1_1tir_1_1Stmt}{Stmt} \hyperlink{classtvm_1_1tir_1_1AssertStmtNode_ad861e0e3a9f7d7aefe60cba36241d226}{body})
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classtvm_1_1PrimExpr}{Prim\+Expr} \hyperlink{classtvm_1_1tir_1_1AssertStmtNode_a016ff228d0c944b8d295223f54858493}{condition}
+\begin{DoxyCompactList}\small\item\em Condition to be checked. \end{DoxyCompactList}\item 
+\hyperlink{classtvm_1_1PrimExpr}{Prim\+Expr} \hyperlink{classtvm_1_1tir_1_1AssertStmtNode_a42ff732b4df33bddf74f9a92669cebb9}{message}
+\begin{DoxyCompactList}\small\item\em \hyperlink{classtvm_1_1Error}{Error} message when assertion failed. \end{DoxyCompactList}\item 
+\hyperlink{classtvm_1_1tir_1_1Stmt}{Stmt} \hyperlink{classtvm_1_1tir_1_1AssertStmtNode_ad861e0e3a9f7d7aefe60cba36241d226}{body}
+\begin{DoxyCompactList}\small\item\em Body which this assertion holds true. Will be executed after the assertion. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static constexpr const char $\ast$ \hyperlink{classtvm_1_1tir_1_1AssertStmtNode_a656ba70169caac2670439782234b2fa6}{\+\_\+type\+\_\+key} = \char`\"{}Assert\+Stmt\char`\"{}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Assert condition, if an error occurs, return the error message. 
+
+\subsection{Member Function Documentation}
+\index{tvm\+::tir\+::\+Assert\+Stmt\+Node@{tvm\+::tir\+::\+Assert\+Stmt\+Node}!make@{make}}
+\index{make@{make}!tvm\+::tir\+::\+Assert\+Stmt\+Node@{tvm\+::tir\+::\+Assert\+Stmt\+Node}}
+\subsubsection[{\texorpdfstring{make(\+Prim\+Expr condition, Prim\+Expr message, Stmt body)}{make(PrimExpr condition, PrimExpr message, Stmt body)}}]{\setlength{\rightskip}{0pt plus 5cm}static {\bf Stmt} tvm\+::tir\+::\+Assert\+Stmt\+Node\+::make (
+\begin{DoxyParamCaption}
+\item[{{\bf Prim\+Expr}}]{condition, }
+\item[{{\bf Prim\+Expr}}]{message, }
+\item[{{\bf Stmt}}]{body}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}\hypertarget{classtvm_1_1tir_1_1AssertStmtNode_abdd0a95299b297bab446c9710c039b06}{}\label{classtvm_1_1tir_1_1AssertStmtNode_abdd0a95299b297bab446c9710c039b06}
+\index{tvm\+::tir\+::\+Assert\+Stmt\+Node@{tvm\+::tir\+::\+Assert\+Stmt\+Node}!S\+Equal\+Reduce@{S\+Equal\+Reduce}}
+\index{S\+Equal\+Reduce@{S\+Equal\+Reduce}!tvm\+::tir\+::\+Assert\+Stmt\+Node@{tvm\+::tir\+::\+Assert\+Stmt\+Node}}
+\subsubsection[{\texorpdfstring{S\+Equal\+Reduce(const Assert\+Stmt\+Node $\ast$other, S\+Equal\+Reducer equal) const }{SEqualReduce(const AssertStmtNode *other, SEqualReducer equal) const }}]{\setlength{\rightskip}{0pt plus 5cm}bool tvm\+::tir\+::\+Assert\+Stmt\+Node\+::\+S\+Equal\+Reduce (
+\begin{DoxyParamCaption}
+\item[{const {\bf Assert\+Stmt\+Node} $\ast$}]{other, }
+\item[{{\bf S\+Equal\+Reducer}}]{equal}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classtvm_1_1tir_1_1AssertStmtNode_a95e359c096097dacf07eeaefd1977826}{}\label{classtvm_1_1tir_1_1AssertStmtNode_a95e359c096097dacf07eeaefd1977826}
+\index{tvm\+::tir\+::\+Assert\+Stmt\+Node@{tvm\+::tir\+::\+Assert\+Stmt\+Node}!S\+Hash\+Reduce@{S\+Hash\+Reduce}}
+\index{S\+Hash\+Reduce@{S\+Hash\+Reduce}!tvm\+::tir\+::\+Assert\+Stmt\+Node@{tvm\+::tir\+::\+Assert\+Stmt\+Node}}
+\subsubsection[{\texorpdfstring{S\+Hash\+Reduce(\+S\+Hash\+Reducer hash\+\_\+reduce) const }{SHashReduce(SHashReducer hash_reduce) const }}]{\setlength{\rightskip}{0pt plus 5cm}void tvm\+::tir\+::\+Assert\+Stmt\+Node\+::\+S\+Hash\+Reduce (
+\begin{DoxyParamCaption}
+\item[{{\bf S\+Hash\+Reducer}}]{hash\+\_\+reduce}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classtvm_1_1tir_1_1AssertStmtNode_af951b4bd4d85da16e19cdf546a447c1f}{}\label{classtvm_1_1tir_1_1AssertStmtNode_af951b4bd4d85da16e19cdf546a447c1f}
+\index{tvm\+::tir\+::\+Assert\+Stmt\+Node@{tvm\+::tir\+::\+Assert\+Stmt\+Node}!T\+V\+M\+\_\+\+D\+E\+C\+L\+A\+R\+E\+\_\+\+F\+I\+N\+A\+L\+\_\+\+O\+B\+J\+E\+C\+T\+\_\+\+I\+N\+FO@{T\+V\+M\+\_\+\+D\+E\+C\+L\+A\+R\+E\+\_\+\+F\+I\+N\+A\+L\+\_\+\+O\+B\+J\+E\+C\+T\+\_\+\+I\+N\+FO}}
+\index{T\+V\+M\+\_\+\+D\+E\+C\+L\+A\+R\+E\+\_\+\+F\+I\+N\+A\+L\+\_\+\+O\+B\+J\+E\+C\+T\+\_\+\+I\+N\+FO@{T\+V\+M\+\_\+\+D\+E\+C\+L\+A\+R\+E\+\_\+\+F\+I\+N\+A\+L\+\_\+\+O\+B\+J\+E\+C\+T\+\_\+\+I\+N\+FO}!tvm\+::tir\+::\+Assert\+Stmt\+Node@{tvm\+::tir\+::\+Assert\+Stmt\+Node}}
+\subsubsection[{\texorpdfstring{T\+V\+M\+\_\+\+D\+E\+C\+L\+A\+R\+E\+\_\+\+F\+I\+N\+A\+L\+\_\+\+O\+B\+J\+E\+C\+T\+\_\+\+I\+N\+F\+O(\+Assert\+Stmt\+Node, Stmt\+Node)}{TVM_DECLARE_FINAL_OBJECT_INFO(AssertStmtNode, StmtNode)}}]{\setlength{\rightskip}{0pt plus 5cm}tvm\+::tir\+::\+Assert\+Stmt\+Node\+::\+T\+V\+M\+\_\+\+D\+E\+C\+L\+A\+R\+E\+\_\+\+F\+I\+N\+A\+L\+\_\+\+O\+B\+J\+E\+C\+T\+\_\+\+I\+N\+FO (
+\begin{DoxyParamCaption}
+\item[{{\bf Assert\+Stmt\+Node}}]{, }
+\item[{{\bf Stmt\+Node}}]{}
+\end{DoxyParamCaption}
+)}\hypertarget{classtvm_1_1tir_1_1AssertStmtNode_a63080edac8e68a1358affcc192b747c6}{}\label{classtvm_1_1tir_1_1AssertStmtNode_a63080edac8e68a1358affcc192b747c6}
+\index{tvm\+::tir\+::\+Assert\+Stmt\+Node@{tvm\+::tir\+::\+Assert\+Stmt\+Node}!Visit\+Attrs@{Visit\+Attrs}}
+\index{Visit\+Attrs@{Visit\+Attrs}!tvm\+::tir\+::\+Assert\+Stmt\+Node@{tvm\+::tir\+::\+Assert\+Stmt\+Node}}
+\subsubsection[{\texorpdfstring{Visit\+Attrs(\+Attr\+Visitor $\ast$v)}{VisitAttrs(AttrVisitor *v)}}]{\setlength{\rightskip}{0pt plus 5cm}void tvm\+::tir\+::\+Assert\+Stmt\+Node\+::\+Visit\+Attrs (
+\begin{DoxyParamCaption}
+\item[{{\bf Attr\+Visitor} $\ast$}]{v}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classtvm_1_1tir_1_1AssertStmtNode_ad4b51bee8779971bed4bdfeb72006d99}{}\label{classtvm_1_1tir_1_1AssertStmtNode_ad4b51bee8779971bed4bdfeb72006d99}
+
+
+\subsection{Member Data Documentation}
+\index{tvm\+::tir\+::\+Assert\+Stmt\+Node@{tvm\+::tir\+::\+Assert\+Stmt\+Node}!\+\_\+type\+\_\+key@{\+\_\+type\+\_\+key}}
+\index{\+\_\+type\+\_\+key@{\+\_\+type\+\_\+key}!tvm\+::tir\+::\+Assert\+Stmt\+Node@{tvm\+::tir\+::\+Assert\+Stmt\+Node}}
+\subsubsection[{\texorpdfstring{\+\_\+type\+\_\+key}{_type_key}}]{\setlength{\rightskip}{0pt plus 5cm}constexpr const char$\ast$ tvm\+::tir\+::\+Assert\+Stmt\+Node\+::\+\_\+type\+\_\+key = \char`\"{}Assert\+Stmt\char`\"{}\hspace{0.3cm}{\ttfamily [static]}}\hypertarget{classtvm_1_1tir_1_1AssertStmtNode_a656ba70169caac2670439782234b2fa6}{}\label{classtvm_1_1tir_1_1AssertStmtNode_a656ba70169caac2670439782234b2fa6}
+\index{tvm\+::tir\+::\+Assert\+Stmt\+Node@{tvm\+::tir\+::\+Assert\+Stmt\+Node}!body@{body}}
+\index{body@{body}!tvm\+::tir\+::\+Assert\+Stmt\+Node@{tvm\+::tir\+::\+Assert\+Stmt\+Node}}
+\subsubsection[{\texorpdfstring{body}{body}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Stmt} tvm\+::tir\+::\+Assert\+Stmt\+Node\+::body}\hypertarget{classtvm_1_1tir_1_1AssertStmtNode_ad861e0e3a9f7d7aefe60cba36241d226}{}\label{classtvm_1_1tir_1_1AssertStmtNode_ad861e0e3a9f7d7aefe60cba36241d226}
+
+
+Body which this assertion holds true. Will be executed after the assertion. 
+
+\index{tvm\+::tir\+::\+Assert\+Stmt\+Node@{tvm\+::tir\+::\+Assert\+Stmt\+Node}!condition@{condition}}
+\index{condition@{condition}!tvm\+::tir\+::\+Assert\+Stmt\+Node@{tvm\+::tir\+::\+Assert\+Stmt\+Node}}
+\subsubsection[{\texorpdfstring{condition}{condition}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Prim\+Expr} tvm\+::tir\+::\+Assert\+Stmt\+Node\+::condition}\hypertarget{classtvm_1_1tir_1_1AssertStmtNode_a016ff228d0c944b8d295223f54858493}{}\label{classtvm_1_1tir_1_1AssertStmtNode_a016ff228d0c944b8d295223f54858493}
+
+
+Condition to be checked. 
+
+\index{tvm\+::tir\+::\+Assert\+Stmt\+Node@{tvm\+::tir\+::\+Assert\+Stmt\+Node}!message@{message}}
+\index{message@{message}!tvm\+::tir\+::\+Assert\+Stmt\+Node@{tvm\+::tir\+::\+Assert\+Stmt\+Node}}
+\subsubsection[{\texorpdfstring{message}{message}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Prim\+Expr} tvm\+::tir\+::\+Assert\+Stmt\+Node\+::message}\hypertarget{classtvm_1_1tir_1_1AssertStmtNode_a42ff732b4df33bddf74f9a92669cebb9}{}\label{classtvm_1_1tir_1_1AssertStmtNode_a42ff732b4df33bddf74f9a92669cebb9}
+
+
+\hyperlink{classtvm_1_1Error}{Error} message when assertion failed. 
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+include/tvm/tir/\hyperlink{stmt_8h}{stmt.\+h}\end{DoxyCompactItemize}

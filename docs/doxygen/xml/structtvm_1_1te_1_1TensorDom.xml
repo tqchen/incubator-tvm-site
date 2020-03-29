@@ -1,0 +1,56 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="structtvm_1_1te_1_1TensorDom" kind="struct" language="C++" prot="public">
+    <compoundname>tvm::te::TensorDom</compoundname>
+    <includes refid="operation_8h" local="no">operation.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structtvm_1_1te_1_1TensorDom_1a9f2a41beaf5db1710238e4753ef17b85" prot="public" static="no" mutable="no">
+        <type>std::vector&lt; std::vector&lt; IntSet &gt; &gt;</type>
+        <definition>std::vector&lt;std::vector&lt;IntSet&gt; &gt; tvm::te::TensorDom::data</definition>
+        <argsstring></argsstring>
+        <name>data</name>
+        <briefdescription>
+<para>The domain data. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/te/operation.h" line="52" column="1" bodyfile="include/tvm/te/operation.h" bodystart="52" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="structtvm_1_1te_1_1TensorDom_1a1c1c057115d9dbeec11ff717bf18430b" prot="public" static="no" const="no" explicit="yes" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>tvm::te::TensorDom::TensorDom</definition>
+        <argsstring>(int ndim)</argsstring>
+        <name>TensorDom</name>
+        <param>
+          <type>int</type>
+          <declname>ndim</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/te/operation.h" line="49" column="1" bodyfile="include/tvm/te/operation.h" bodystart="49" bodyend="50"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Temporary data structure to store union of bounds of each axis of <ref refid="classtvm_1_1te_1_1Tensor" kindref="compound">Tensor</ref>. </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="7164">
+        <label>tvm::te::TensorDom</label>
+        <link refid="structtvm_1_1te_1_1TensorDom"/>
+      </node>
+    </collaborationgraph>
+    <location file="include/tvm/te/operation.h" line="47" column="1" bodyfile="include/tvm/te/operation.h" bodystart="47" bodyend="53"/>
+    <listofallmembers>
+      <member refid="structtvm_1_1te_1_1TensorDom_1a9f2a41beaf5db1710238e4753ef17b85" prot="public" virt="non-virtual"><scope>tvm::te::TensorDom</scope><name>data</name></member>
+      <member refid="structtvm_1_1te_1_1TensorDom_1a1c1c057115d9dbeec11ff717bf18430b" prot="public" virt="non-virtual"><scope>tvm::te::TensorDom</scope><name>TensorDom</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

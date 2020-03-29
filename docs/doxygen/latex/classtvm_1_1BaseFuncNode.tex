@@ -1,0 +1,156 @@
+\hypertarget{classtvm_1_1BaseFuncNode}{}\section{tvm\+:\+:Base\+Func\+Node Class Reference}
+\label{classtvm_1_1BaseFuncNode}\index{tvm\+::\+Base\+Func\+Node@{tvm\+::\+Base\+Func\+Node}}
+
+
+Base node of all functions.  
+
+
+
+
+{\ttfamily \#include $<$function.\+h$>$}
+
+
+
+Inheritance diagram for tvm\+:\+:Base\+Func\+Node\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classtvm_1_1BaseFuncNode__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for tvm\+:\+:Base\+Func\+Node\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classtvm_1_1BaseFuncNode__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\footnotesize template$<$typename T\+Object\+Ref $>$ }\\T\+Object\+Ref \hyperlink{classtvm_1_1BaseFuncNode_a6f177158609cf9da9a4e0a9d3187e3d2}{Get\+Attr} (const std\+::string \&attr\+\_\+key, T\+Object\+Ref default\+\_\+value=\hyperlink{namespacetvm_ab6c242e8ac09beb463fba306948b7f15}{Null\+Value}$<$ T\+Object\+Ref $>$()) const 
+\begin{DoxyCompactList}\small\item\em Get a function attribute. \end{DoxyCompactList}\item 
+bool \hyperlink{classtvm_1_1BaseFuncNode_a11694119d77e8d04a9fffd5e9a8b0766}{Has\+Nonzero\+Attr} (const std\+::string \&attr\+\_\+key) const 
+\begin{DoxyCompactList}\small\item\em Check whether the function has an non-\/zero integer attr. \end{DoxyCompactList}\item 
+\hyperlink{classtvm_1_1BaseFuncNode_a577e46c2eda9aec1f8a8e48444d00fd2}{T\+V\+M\+\_\+\+D\+E\+C\+L\+A\+R\+E\+\_\+\+B\+A\+S\+E\+\_\+\+O\+B\+J\+E\+C\+T\+\_\+\+I\+N\+FO} (\hyperlink{classtvm_1_1BaseFuncNode}{Base\+Func\+Node}, \hyperlink{classtvm_1_1RelayExprNode}{Relay\+Expr\+Node})
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classtvm_1_1DictAttrs}{Dict\+Attrs} \hyperlink{classtvm_1_1BaseFuncNode_a4fd1a615179d1eb5748990e5de46d668}{attrs}
+\begin{DoxyCompactList}\small\item\em Additional attributes storing the meta-\/data. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static constexpr const char $\ast$ \hyperlink{classtvm_1_1BaseFuncNode_af656e6ccc286ca59e8932f2a2b2f14c1}{\+\_\+type\+\_\+key} = \char`\"{}Base\+Func\char`\"{}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Base node of all functions. 
+
+We support several variants of functions throughout the stack. All of the functions share the same type system(via checked\+\_\+type) to support cross variant calls.
+
+\begin{DoxySeeAlso}{See also}
+\hyperlink{classtvm_1_1BaseFunc}{Base\+Func} 
+\end{DoxySeeAlso}
+
+
+\subsection{Member Function Documentation}
+\index{tvm\+::\+Base\+Func\+Node@{tvm\+::\+Base\+Func\+Node}!Get\+Attr@{Get\+Attr}}
+\index{Get\+Attr@{Get\+Attr}!tvm\+::\+Base\+Func\+Node@{tvm\+::\+Base\+Func\+Node}}
+\subsubsection[{\texorpdfstring{Get\+Attr(const std\+::string \&attr\+\_\+key, T\+Object\+Ref default\+\_\+value=\+Null\+Value$<$ T\+Object\+Ref $>$()) const }{GetAttr(const std::string &attr_key, TObjectRef default_value=NullValue< TObjectRef >()) const }}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T\+Object\+Ref $>$ T\+Object\+Ref tvm\+::\+Base\+Func\+Node\+::\+Get\+Attr (
+\begin{DoxyParamCaption}
+\item[{const std\+::string \&}]{attr\+\_\+key, }
+\item[{T\+Object\+Ref}]{default\+\_\+value = {\ttfamily {\bf Null\+Value}$<$TObjectRef$>$()}}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classtvm_1_1BaseFuncNode_a6f177158609cf9da9a4e0a9d3187e3d2}{}\label{classtvm_1_1BaseFuncNode_a6f177158609cf9da9a4e0a9d3187e3d2}
+
+
+Get a function attribute. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em attr\+\_\+key} & The attribute key. \\
+\hline
+{\em default\+\_\+value} & The default value if the key does not exist, defaults to nullptr.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The result
+\end{DoxyReturn}
+
+\begin{DoxyTemplParams}{Template Parameters}
+{\em T\+O\+Bject\+Ref} & the expected object type. \\
+\hline
+\end{DoxyTemplParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em \hyperlink{classtvm_1_1Error}{Error}} & if the key exists but the value does not match T\+Object\+Ref\\
+\hline
+\end{DoxyExceptions}
+
+\begin{DoxyCode}
+\textcolor{keywordtype}{void} GetAttrExample(\textcolor{keyword}{const} \hyperlink{namespacetvm_1_1relay_acbaff2ae7feec23fea55e025a9cc1b76}{BaseFunc}& f) \{
+  Integer value = f->GetAttr<Integer>(\textcolor{stringliteral}{"AttrKey"}, 0);
+\}
+\end{DoxyCode}
+ \index{tvm\+::\+Base\+Func\+Node@{tvm\+::\+Base\+Func\+Node}!Has\+Nonzero\+Attr@{Has\+Nonzero\+Attr}}
+\index{Has\+Nonzero\+Attr@{Has\+Nonzero\+Attr}!tvm\+::\+Base\+Func\+Node@{tvm\+::\+Base\+Func\+Node}}
+\subsubsection[{\texorpdfstring{Has\+Nonzero\+Attr(const std\+::string \&attr\+\_\+key) const }{HasNonzeroAttr(const std::string &attr_key) const }}]{\setlength{\rightskip}{0pt plus 5cm}bool tvm\+::\+Base\+Func\+Node\+::\+Has\+Nonzero\+Attr (
+\begin{DoxyParamCaption}
+\item[{const std\+::string \&}]{attr\+\_\+key}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classtvm_1_1BaseFuncNode_a11694119d77e8d04a9fffd5e9a8b0766}{}\label{classtvm_1_1BaseFuncNode_a11694119d77e8d04a9fffd5e9a8b0766}
+
+
+Check whether the function has an non-\/zero integer attr. 
+
+This function can be used to check whether an optional attribute mark(e.\+g. inline) exists.
+
+
+\begin{DoxyParams}{Parameters}
+{\em attr\+\_\+key} & The key to the attribute. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The check result.
+\end{DoxyReturn}
+
+\begin{DoxyCode}
+\textcolor{keywordtype}{void} HasNonzeroAttrExample(\textcolor{keyword}{const} \hyperlink{namespacetvm_1_1relay_acbaff2ae7feec23fea55e025a9cc1b76}{BaseFunc}& f) \{
+  \textcolor{keywordflow}{if} (f->HasNonzeroAttr(\hyperlink{namespacetvm_1_1relay_1_1attr_ad294262b6b1ca1b7bf3924a139f17562}{attr::kInline})) \{
+    \textcolor{comment}{// inline the function.}
+  \}
+\}
+\end{DoxyCode}
+ \index{tvm\+::\+Base\+Func\+Node@{tvm\+::\+Base\+Func\+Node}!T\+V\+M\+\_\+\+D\+E\+C\+L\+A\+R\+E\+\_\+\+B\+A\+S\+E\+\_\+\+O\+B\+J\+E\+C\+T\+\_\+\+I\+N\+FO@{T\+V\+M\+\_\+\+D\+E\+C\+L\+A\+R\+E\+\_\+\+B\+A\+S\+E\+\_\+\+O\+B\+J\+E\+C\+T\+\_\+\+I\+N\+FO}}
+\index{T\+V\+M\+\_\+\+D\+E\+C\+L\+A\+R\+E\+\_\+\+B\+A\+S\+E\+\_\+\+O\+B\+J\+E\+C\+T\+\_\+\+I\+N\+FO@{T\+V\+M\+\_\+\+D\+E\+C\+L\+A\+R\+E\+\_\+\+B\+A\+S\+E\+\_\+\+O\+B\+J\+E\+C\+T\+\_\+\+I\+N\+FO}!tvm\+::\+Base\+Func\+Node@{tvm\+::\+Base\+Func\+Node}}
+\subsubsection[{\texorpdfstring{T\+V\+M\+\_\+\+D\+E\+C\+L\+A\+R\+E\+\_\+\+B\+A\+S\+E\+\_\+\+O\+B\+J\+E\+C\+T\+\_\+\+I\+N\+F\+O(\+Base\+Func\+Node, Relay\+Expr\+Node)}{TVM_DECLARE_BASE_OBJECT_INFO(BaseFuncNode, RelayExprNode)}}]{\setlength{\rightskip}{0pt plus 5cm}tvm\+::\+Base\+Func\+Node\+::\+T\+V\+M\+\_\+\+D\+E\+C\+L\+A\+R\+E\+\_\+\+B\+A\+S\+E\+\_\+\+O\+B\+J\+E\+C\+T\+\_\+\+I\+N\+FO (
+\begin{DoxyParamCaption}
+\item[{{\bf Base\+Func\+Node}}]{, }
+\item[{{\bf Relay\+Expr\+Node}}]{}
+\end{DoxyParamCaption}
+)}\hypertarget{classtvm_1_1BaseFuncNode_a577e46c2eda9aec1f8a8e48444d00fd2}{}\label{classtvm_1_1BaseFuncNode_a577e46c2eda9aec1f8a8e48444d00fd2}
+
+
+\subsection{Member Data Documentation}
+\index{tvm\+::\+Base\+Func\+Node@{tvm\+::\+Base\+Func\+Node}!\+\_\+type\+\_\+key@{\+\_\+type\+\_\+key}}
+\index{\+\_\+type\+\_\+key@{\+\_\+type\+\_\+key}!tvm\+::\+Base\+Func\+Node@{tvm\+::\+Base\+Func\+Node}}
+\subsubsection[{\texorpdfstring{\+\_\+type\+\_\+key}{_type_key}}]{\setlength{\rightskip}{0pt plus 5cm}constexpr const char$\ast$ tvm\+::\+Base\+Func\+Node\+::\+\_\+type\+\_\+key = \char`\"{}Base\+Func\char`\"{}\hspace{0.3cm}{\ttfamily [static]}}\hypertarget{classtvm_1_1BaseFuncNode_af656e6ccc286ca59e8932f2a2b2f14c1}{}\label{classtvm_1_1BaseFuncNode_af656e6ccc286ca59e8932f2a2b2f14c1}
+\index{tvm\+::\+Base\+Func\+Node@{tvm\+::\+Base\+Func\+Node}!attrs@{attrs}}
+\index{attrs@{attrs}!tvm\+::\+Base\+Func\+Node@{tvm\+::\+Base\+Func\+Node}}
+\subsubsection[{\texorpdfstring{attrs}{attrs}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Dict\+Attrs} tvm\+::\+Base\+Func\+Node\+::attrs}\hypertarget{classtvm_1_1BaseFuncNode_a4fd1a615179d1eb5748990e5de46d668}{}\label{classtvm_1_1BaseFuncNode_a4fd1a615179d1eb5748990e5de46d668}
+
+
+Additional attributes storing the meta-\/data. 
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+include/tvm/ir/\hyperlink{ir_2function_8h}{function.\+h}\end{DoxyCompactItemize}

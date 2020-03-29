@@ -1,0 +1,172 @@
+\hypertarget{classtvm_1_1relay_1_1FeatureSet}{}\section{tvm\+:\+:relay\+:\+:Feature\+Set Class Reference}
+\label{classtvm_1_1relay_1_1FeatureSet}\index{tvm\+::relay\+::\+Feature\+Set@{tvm\+::relay\+::\+Feature\+Set}}
+
+
+A finite set of Feature.  
+
+
+
+
+{\ttfamily \#include $<$feature.\+h$>$}
+
+
+
+Collaboration diagram for tvm\+:\+:relay\+:\+:Feature\+Set\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=241pt]{classtvm_1_1relay_1_1FeatureSet__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classtvm_1_1relay_1_1FeatureSet_a268c7544d97aeb7ef3ac19778c23b577}{Feature\+Set} (const \hyperlink{classtvm_1_1relay_1_1FeatureSet}{Feature\+Set} \&)=default
+\item 
+\hyperlink{classtvm_1_1relay_1_1FeatureSet_a7fe9317883438c23defc65d12532387a}{Feature\+Set} (\hyperlink{namespacetvm_1_1relay_a926750aeda977340aa82bceac863fc9e}{Feature} ft)
+\begin{DoxyCompactList}\small\item\em A singleton set containing a single Feature. \end{DoxyCompactList}\item 
+\hyperlink{classtvm_1_1relay_1_1FeatureSet_a2b85e65f7b1de12a3ae87b8201427d51}{Feature\+Set} (const \hyperlink{classtvm_1_1Array}{tvm\+::\+Array}$<$ \hyperlink{classtvm_1_1Integer}{tvm\+::\+Integer} $>$ \&ft)
+\item 
+\hyperlink{classtvm_1_1relay_1_1FeatureSet_a103023c45ee24a93a895fd0b78fcce7a}{operator Array$<$ Integer $>$} () const 
+\item 
+{\footnotesize template$<$typename T $>$ }\\\hyperlink{classtvm_1_1relay_1_1FeatureSet}{Feature\+Set} \& \hyperlink{classtvm_1_1relay_1_1FeatureSet_a73e4e0de2e58ef67a88d27a48b3c3fc0}{operator+=} (const T \&rhs)
+\item 
+{\footnotesize template$<$typename T $>$ }\\\hyperlink{classtvm_1_1relay_1_1FeatureSet}{Feature\+Set} \hyperlink{classtvm_1_1relay_1_1FeatureSet_a2de909bb66c16b2ed7ae76cc4bb843eb}{operator+} (const T \&rhs) const 
+\begin{DoxyCompactList}\small\item\em Set union. \end{DoxyCompactList}\item 
+{\footnotesize template$<$typename T $>$ }\\\hyperlink{classtvm_1_1relay_1_1FeatureSet}{Feature\+Set} \& \hyperlink{classtvm_1_1relay_1_1FeatureSet_ad90ce4d929774c0feb92c3eb56bea338}{operator-\/=} (const T \&rhs)
+\item 
+{\footnotesize template$<$typename T $>$ }\\\hyperlink{classtvm_1_1relay_1_1FeatureSet}{Feature\+Set} \hyperlink{classtvm_1_1relay_1_1FeatureSet_a122b67229c2281d4138fcb41ccab13f0}{operator-\/} (const T \&rhs) const 
+\begin{DoxyCompactList}\small\item\em Set difference. \end{DoxyCompactList}\item 
+bool \hyperlink{classtvm_1_1relay_1_1FeatureSet_a1024f586b1b0ea8d78274f8066876af3}{is\+\_\+subset\+\_\+of} (const \hyperlink{classtvm_1_1relay_1_1FeatureSet}{Feature\+Set} \&rhs) const 
+\begin{DoxyCompactList}\small\item\em Is this a subset of rhs? \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \hyperlink{classtvm_1_1relay_1_1FeatureSet}{Feature\+Set} \hyperlink{classtvm_1_1relay_1_1FeatureSet_abbedfbde4f544c66e6129181b3c29c2a}{All} ()
+\begin{DoxyCompactList}\small\item\em A set that contain all the Feature. \end{DoxyCompactList}\item 
+static \hyperlink{classtvm_1_1relay_1_1FeatureSet}{Feature\+Set} \hyperlink{classtvm_1_1relay_1_1FeatureSet_a68c408c752ef58b2c27802491165adbb}{No} ()
+\begin{DoxyCompactList}\small\item\em The empty set. Contain no Feature. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+A finite set of Feature. 
+
+\subsection{Constructor \& Destructor Documentation}
+\index{tvm\+::relay\+::\+Feature\+Set@{tvm\+::relay\+::\+Feature\+Set}!Feature\+Set@{Feature\+Set}}
+\index{Feature\+Set@{Feature\+Set}!tvm\+::relay\+::\+Feature\+Set@{tvm\+::relay\+::\+Feature\+Set}}
+\subsubsection[{\texorpdfstring{Feature\+Set(const Feature\+Set \&)=default}{FeatureSet(const FeatureSet &)=default}}]{\setlength{\rightskip}{0pt plus 5cm}tvm\+::relay\+::\+Feature\+Set\+::\+Feature\+Set (
+\begin{DoxyParamCaption}
+\item[{const {\bf Feature\+Set} \&}]{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [default]}}\hypertarget{classtvm_1_1relay_1_1FeatureSet_a268c7544d97aeb7ef3ac19778c23b577}{}\label{classtvm_1_1relay_1_1FeatureSet_a268c7544d97aeb7ef3ac19778c23b577}
+\index{tvm\+::relay\+::\+Feature\+Set@{tvm\+::relay\+::\+Feature\+Set}!Feature\+Set@{Feature\+Set}}
+\index{Feature\+Set@{Feature\+Set}!tvm\+::relay\+::\+Feature\+Set@{tvm\+::relay\+::\+Feature\+Set}}
+\subsubsection[{\texorpdfstring{Feature\+Set(\+Feature ft)}{FeatureSet(Feature ft)}}]{\setlength{\rightskip}{0pt plus 5cm}tvm\+::relay\+::\+Feature\+Set\+::\+Feature\+Set (
+\begin{DoxyParamCaption}
+\item[{{\bf Feature}}]{ft}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [explicit]}}\hypertarget{classtvm_1_1relay_1_1FeatureSet_a7fe9317883438c23defc65d12532387a}{}\label{classtvm_1_1relay_1_1FeatureSet_a7fe9317883438c23defc65d12532387a}
+
+
+A singleton set containing a single Feature. 
+
+\index{tvm\+::relay\+::\+Feature\+Set@{tvm\+::relay\+::\+Feature\+Set}!Feature\+Set@{Feature\+Set}}
+\index{Feature\+Set@{Feature\+Set}!tvm\+::relay\+::\+Feature\+Set@{tvm\+::relay\+::\+Feature\+Set}}
+\subsubsection[{\texorpdfstring{Feature\+Set(const tvm\+::\+Array$<$ tvm\+::\+Integer $>$ \&ft)}{FeatureSet(const tvm::Array< tvm::Integer > &ft)}}]{\setlength{\rightskip}{0pt plus 5cm}tvm\+::relay\+::\+Feature\+Set\+::\+Feature\+Set (
+\begin{DoxyParamCaption}
+\item[{const {\bf tvm\+::\+Array}$<$ {\bf tvm\+::\+Integer} $>$ \&}]{ft}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [explicit]}}\hypertarget{classtvm_1_1relay_1_1FeatureSet_a2b85e65f7b1de12a3ae87b8201427d51}{}\label{classtvm_1_1relay_1_1FeatureSet_a2b85e65f7b1de12a3ae87b8201427d51}
+
+
+\subsection{Member Function Documentation}
+\index{tvm\+::relay\+::\+Feature\+Set@{tvm\+::relay\+::\+Feature\+Set}!All@{All}}
+\index{All@{All}!tvm\+::relay\+::\+Feature\+Set@{tvm\+::relay\+::\+Feature\+Set}}
+\subsubsection[{\texorpdfstring{All()}{All()}}]{\setlength{\rightskip}{0pt plus 5cm}static {\bf Feature\+Set} tvm\+::relay\+::\+Feature\+Set\+::\+All (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}\hypertarget{classtvm_1_1relay_1_1FeatureSet_abbedfbde4f544c66e6129181b3c29c2a}{}\label{classtvm_1_1relay_1_1FeatureSet_abbedfbde4f544c66e6129181b3c29c2a}
+
+
+A set that contain all the Feature. 
+
+\index{tvm\+::relay\+::\+Feature\+Set@{tvm\+::relay\+::\+Feature\+Set}!is\+\_\+subset\+\_\+of@{is\+\_\+subset\+\_\+of}}
+\index{is\+\_\+subset\+\_\+of@{is\+\_\+subset\+\_\+of}!tvm\+::relay\+::\+Feature\+Set@{tvm\+::relay\+::\+Feature\+Set}}
+\subsubsection[{\texorpdfstring{is\+\_\+subset\+\_\+of(const Feature\+Set \&rhs) const }{is_subset_of(const FeatureSet &rhs) const }}]{\setlength{\rightskip}{0pt plus 5cm}bool tvm\+::relay\+::\+Feature\+Set\+::is\+\_\+subset\+\_\+of (
+\begin{DoxyParamCaption}
+\item[{const {\bf Feature\+Set} \&}]{rhs}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classtvm_1_1relay_1_1FeatureSet_a1024f586b1b0ea8d78274f8066876af3}{}\label{classtvm_1_1relay_1_1FeatureSet_a1024f586b1b0ea8d78274f8066876af3}
+
+
+Is this a subset of rhs? 
+
+
+\begin{DoxyParams}{Parameters}
+{\em rhs} & another \hyperlink{classtvm_1_1relay_1_1FeatureSet}{Feature\+Set}.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true only if this is a subset of rhs. 
+\end{DoxyReturn}
+\index{tvm\+::relay\+::\+Feature\+Set@{tvm\+::relay\+::\+Feature\+Set}!No@{No}}
+\index{No@{No}!tvm\+::relay\+::\+Feature\+Set@{tvm\+::relay\+::\+Feature\+Set}}
+\subsubsection[{\texorpdfstring{No()}{No()}}]{\setlength{\rightskip}{0pt plus 5cm}static {\bf Feature\+Set} tvm\+::relay\+::\+Feature\+Set\+::\+No (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}\hypertarget{classtvm_1_1relay_1_1FeatureSet_a68c408c752ef58b2c27802491165adbb}{}\label{classtvm_1_1relay_1_1FeatureSet_a68c408c752ef58b2c27802491165adbb}
+
+
+The empty set. Contain no Feature. 
+
+\index{tvm\+::relay\+::\+Feature\+Set@{tvm\+::relay\+::\+Feature\+Set}!operator Array$<$ Integer $>$@{operator Array$<$ Integer $>$}}
+\index{operator Array$<$ Integer $>$@{operator Array$<$ Integer $>$}!tvm\+::relay\+::\+Feature\+Set@{tvm\+::relay\+::\+Feature\+Set}}
+\subsubsection[{\texorpdfstring{operator Array$<$ Integer $>$() const }{operator Array< Integer >() const }}]{\setlength{\rightskip}{0pt plus 5cm}tvm\+::relay\+::\+Feature\+Set\+::operator {\bf Array}$<$ {\bf Integer} $>$ (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [explicit]}}\hypertarget{classtvm_1_1relay_1_1FeatureSet_a103023c45ee24a93a895fd0b78fcce7a}{}\label{classtvm_1_1relay_1_1FeatureSet_a103023c45ee24a93a895fd0b78fcce7a}
+\index{tvm\+::relay\+::\+Feature\+Set@{tvm\+::relay\+::\+Feature\+Set}!operator+@{operator+}}
+\index{operator+@{operator+}!tvm\+::relay\+::\+Feature\+Set@{tvm\+::relay\+::\+Feature\+Set}}
+\subsubsection[{\texorpdfstring{operator+(const T \&rhs) const }{operator+(const T &rhs) const }}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T $>$ {\bf Feature\+Set} tvm\+::relay\+::\+Feature\+Set\+::operator+ (
+\begin{DoxyParamCaption}
+\item[{const T \&}]{rhs}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classtvm_1_1relay_1_1FeatureSet_a2de909bb66c16b2ed7ae76cc4bb843eb}{}\label{classtvm_1_1relay_1_1FeatureSet_a2de909bb66c16b2ed7ae76cc4bb843eb}
+
+
+Set union. 
+
+\index{tvm\+::relay\+::\+Feature\+Set@{tvm\+::relay\+::\+Feature\+Set}!operator+=@{operator+=}}
+\index{operator+=@{operator+=}!tvm\+::relay\+::\+Feature\+Set@{tvm\+::relay\+::\+Feature\+Set}}
+\subsubsection[{\texorpdfstring{operator+=(const T \&rhs)}{operator+=(const T &rhs)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T $>$ {\bf Feature\+Set}\& tvm\+::relay\+::\+Feature\+Set\+::operator+= (
+\begin{DoxyParamCaption}
+\item[{const T \&}]{rhs}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classtvm_1_1relay_1_1FeatureSet_a73e4e0de2e58ef67a88d27a48b3c3fc0}{}\label{classtvm_1_1relay_1_1FeatureSet_a73e4e0de2e58ef67a88d27a48b3c3fc0}
+\index{tvm\+::relay\+::\+Feature\+Set@{tvm\+::relay\+::\+Feature\+Set}!operator-\/@{operator-\/}}
+\index{operator-\/@{operator-\/}!tvm\+::relay\+::\+Feature\+Set@{tvm\+::relay\+::\+Feature\+Set}}
+\subsubsection[{\texorpdfstring{operator-\/(const T \&rhs) const }{operator-(const T &rhs) const }}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T $>$ {\bf Feature\+Set} tvm\+::relay\+::\+Feature\+Set\+::operator-\/ (
+\begin{DoxyParamCaption}
+\item[{const T \&}]{rhs}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classtvm_1_1relay_1_1FeatureSet_a122b67229c2281d4138fcb41ccab13f0}{}\label{classtvm_1_1relay_1_1FeatureSet_a122b67229c2281d4138fcb41ccab13f0}
+
+
+Set difference. 
+
+\index{tvm\+::relay\+::\+Feature\+Set@{tvm\+::relay\+::\+Feature\+Set}!operator-\/=@{operator-\/=}}
+\index{operator-\/=@{operator-\/=}!tvm\+::relay\+::\+Feature\+Set@{tvm\+::relay\+::\+Feature\+Set}}
+\subsubsection[{\texorpdfstring{operator-\/=(const T \&rhs)}{operator-=(const T &rhs)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T $>$ {\bf Feature\+Set}\& tvm\+::relay\+::\+Feature\+Set\+::operator-\/= (
+\begin{DoxyParamCaption}
+\item[{const T \&}]{rhs}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classtvm_1_1relay_1_1FeatureSet_ad90ce4d929774c0feb92c3eb56bea338}{}\label{classtvm_1_1relay_1_1FeatureSet_ad90ce4d929774c0feb92c3eb56bea338}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+include/tvm/relay/\hyperlink{feature_8h}{feature.\+h}\end{DoxyCompactItemize}

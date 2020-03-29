@@ -1,0 +1,48 @@
+\hypertarget{error_8h}{}\section{include/tvm/ir/error.h File Reference}
+\label{error_8h}\index{include/tvm/ir/error.\+h@{include/tvm/ir/error.\+h}}
+
+
+Utilities for error tracking and reporting.  
+
+
+{\ttfamily \#include $<$tvm/ir/span.\+h$>$}\\*
+{\ttfamily \#include $<$tvm/ir/module.\+h$>$}\\*
+{\ttfamily \#include $<$string$>$}\\*
+{\ttfamily \#include $<$vector$>$}\\*
+{\ttfamily \#include $<$sstream$>$}\\*
+{\ttfamily \#include $<$unordered\+\_\+map$>$}\\*
+Include dependency graph for error.\+h\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{error_8h__incl}
+\end{center}
+\end{figure}
+This graph shows which files directly or indirectly include this file\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{error_8h__dep__incl}
+\end{center}
+\end{figure}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{structtvm_1_1ErrorBuilder}{tvm\+::\+Error\+Builder}
+\begin{DoxyCompactList}\small\item\em A wrapper around std\+::stringstream to build error. \end{DoxyCompactList}\item 
+class \hyperlink{classtvm_1_1Error}{tvm\+::\+Error}
+\begin{DoxyCompactList}\small\item\em Custom \hyperlink{classtvm_1_1Error}{Error} class to be thrown during compilation. \end{DoxyCompactList}\item 
+class \hyperlink{classtvm_1_1ErrorReporter}{tvm\+::\+Error\+Reporter}
+\begin{DoxyCompactList}\small\item\em An abstraction around how errors are stored and reported. Designed to be opaque to users, so we can support a robust and simpler error reporting mode, as well as a more complex mode. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Namespaces}
+\begin{DoxyCompactItemize}
+\item 
+ \hyperlink{namespacetvm}{tvm}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Utilities for error tracking and reporting. 
+

@@ -1,0 +1,25 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="dir_dc867ff9a37cad1764f1670dc7eba6c1" kind="dir">
+    <compoundname>include/tvm/ir</compoundname>
+    <innerfile refid="ir_2adt_8h">adt.h</innerfile>
+    <innerfile refid="ir_2attrs_8h">attrs.h</innerfile>
+    <innerfile refid="env__func_8h">env_func.h</innerfile>
+    <innerfile refid="error_8h">error.h</innerfile>
+    <innerfile refid="ir_2expr_8h">expr.h</innerfile>
+    <innerfile refid="ir_2function_8h">function.h</innerfile>
+    <innerfile refid="ir_2module_8h">module.h</innerfile>
+    <innerfile refid="ir_2op_8h">op.h</innerfile>
+    <innerfile refid="span_8h">span.h</innerfile>
+    <innerfile refid="tensor__type_8h">tensor_type.h</innerfile>
+    <innerfile refid="include_2tvm_2ir_2transform_8h">transform.h</innerfile>
+    <innerfile refid="ir_2type_8h">type.h</innerfile>
+    <innerfile refid="type__functor_8h">type_functor.h</innerfile>
+    <innerfile refid="type__relation_8h">type_relation.h</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="include/tvm/ir/"/>
+  </compounddef>
+</doxygen>

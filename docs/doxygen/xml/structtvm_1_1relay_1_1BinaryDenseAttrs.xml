@@ -1,0 +1,212 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="structtvm_1_1relay_1_1BinaryDenseAttrs" kind="struct" language="C++" prot="public">
+    <compoundname>tvm::relay::BinaryDenseAttrs</compoundname>
+    <basecompoundref refid="classtvm_1_1AttrsNode" prot="public" virt="non-virtual">tvm::AttrsNode&lt; BinaryDenseAttrs &gt;</basecompoundref>
+    <includes refid="bitserial_8h" local="no">bitserial.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structtvm_1_1relay_1_1BinaryDenseAttrs_1a5373b2f2aac19653ae21aec74c69cdb0" prot="public" static="no" mutable="no">
+        <type><ref refid="namespacetvm_1_1relay_1ae153a27d81399fd266b8d598227764c4" kindref="member">IndexExpr</ref></type>
+        <definition>IndexExpr tvm::relay::BinaryDenseAttrs::units</definition>
+        <argsstring></argsstring>
+        <name>units</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/relay/attrs/bitserial.h" line="107" column="1" bodyfile="include/tvm/relay/attrs/bitserial.h" bodystart="107" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structtvm_1_1relay_1_1BinaryDenseAttrs_1a080c3768bc73266ef675953ea98c8ae8" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int tvm::relay::BinaryDenseAttrs::data_bits</definition>
+        <argsstring></argsstring>
+        <name>data_bits</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/relay/attrs/bitserial.h" line="108" column="1" bodyfile="include/tvm/relay/attrs/bitserial.h" bodystart="108" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structtvm_1_1relay_1_1BinaryDenseAttrs_1a6647c2d9d1d3108c6f552ff4271f2625" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int tvm::relay::BinaryDenseAttrs::weight_bits</definition>
+        <argsstring></argsstring>
+        <name>weight_bits</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/relay/attrs/bitserial.h" line="109" column="1" bodyfile="include/tvm/relay/attrs/bitserial.h" bodystart="109" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structtvm_1_1relay_1_1BinaryDenseAttrs_1a6aac82cbb3d54c5770fa035c0c9f81a2" prot="public" static="no" mutable="no">
+        <type><ref refid="namespacetvm_1a41918af1a1dc386388639a9d3ad06c5d" kindref="member">DataType</ref></type>
+        <definition>DataType tvm::relay::BinaryDenseAttrs::pack_dtype</definition>
+        <argsstring></argsstring>
+        <name>pack_dtype</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/relay/attrs/bitserial.h" line="110" column="1" bodyfile="include/tvm/relay/attrs/bitserial.h" bodystart="110" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structtvm_1_1relay_1_1BinaryDenseAttrs_1a8a391a620450d8c0e4449774a60272c6" prot="public" static="no" mutable="no">
+        <type><ref refid="namespacetvm_1a41918af1a1dc386388639a9d3ad06c5d" kindref="member">DataType</ref></type>
+        <definition>DataType tvm::relay::BinaryDenseAttrs::out_dtype</definition>
+        <argsstring></argsstring>
+        <name>out_dtype</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/relay/attrs/bitserial.h" line="111" column="1" bodyfile="include/tvm/relay/attrs/bitserial.h" bodystart="111" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structtvm_1_1relay_1_1BinaryDenseAttrs_1af21cdb9dac67ab9ecea5a19642658d8a" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool tvm::relay::BinaryDenseAttrs::unipolar</definition>
+        <argsstring></argsstring>
+        <name>unipolar</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/relay/attrs/bitserial.h" line="112" column="1" bodyfile="include/tvm/relay/attrs/bitserial.h" bodystart="112" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="structtvm_1_1relay_1_1BinaryDenseAttrs_1af47db15b68e233040e647eec83013990" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>tvm::relay::BinaryDenseAttrs::TVM_DECLARE_ATTRS</definition>
+        <argsstring>(BinaryDenseAttrs,&quot;relay.attrs.BinaryDenseAttrs&quot;)</argsstring>
+        <name>TVM_DECLARE_ATTRS</name>
+        <param>
+          <type><ref refid="structtvm_1_1relay_1_1BinaryDenseAttrs" kindref="compound">BinaryDenseAttrs</ref></type>
+        </param>
+        <param>
+          <type>&quot;relay.attrs.BinaryDenseAttrs&quot;</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/relay/attrs/bitserial.h" line="114" column="1" bodyfile="include/tvm/relay/attrs/bitserial.h" bodystart="114" bodyend="132"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="4426">
+        <label>tvm::BaseAttrsNode</label>
+        <link refid="classtvm_1_1BaseAttrsNode"/>
+        <childnode refid="4427" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="4427">
+        <label>Object</label>
+      </node>
+      <node id="4425">
+        <label>tvm::AttrsNode&lt; BinaryDenseAttrs &gt;</label>
+        <link refid="classtvm_1_1AttrsNode"/>
+        <childnode refid="4426" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="4424">
+        <label>tvm::relay::BinaryDenseAttrs</label>
+        <link refid="structtvm_1_1relay_1_1BinaryDenseAttrs"/>
+        <childnode refid="4425" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="4434">
+        <label>ObjectRef</label>
+      </node>
+      <node id="4430">
+        <label>tvm::BaseAttrsNode</label>
+        <link refid="classtvm_1_1BaseAttrsNode"/>
+        <childnode refid="4431" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="4431">
+        <label>Object</label>
+      </node>
+      <node id="4432">
+        <label>tvm::PrimExpr</label>
+        <link refid="classtvm_1_1PrimExpr"/>
+        <childnode refid="4433" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="4435">
+        <label>tvm::runtime::DataType</label>
+        <link refid="classtvm_1_1runtime_1_1DataType"/>
+      </node>
+      <node id="4433">
+        <label>tvm::BaseExpr</label>
+        <link refid="classtvm_1_1BaseExpr"/>
+        <childnode refid="4434" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="4429">
+        <label>tvm::AttrsNode&lt; BinaryDenseAttrs &gt;</label>
+        <link refid="classtvm_1_1AttrsNode"/>
+        <childnode refid="4430" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="4428">
+        <label>tvm::relay::BinaryDenseAttrs</label>
+        <link refid="structtvm_1_1relay_1_1BinaryDenseAttrs"/>
+        <childnode refid="4429" relation="public-inheritance">
+        </childnode>
+        <childnode refid="4432" relation="usage">
+          <edgelabel>+units</edgelabel>
+        </childnode>
+        <childnode refid="4435" relation="usage">
+          <edgelabel>+out_dtype</edgelabel>
+          <edgelabel>+pack_dtype</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="include/tvm/relay/attrs/bitserial.h" line="106" column="1" bodyfile="include/tvm/relay/attrs/bitserial.h" bodystart="106" bodyend="133"/>
+    <listofallmembers>
+      <member refid="classtvm_1_1BaseAttrsNode_1ad812afdb028fe3944a80cd922dceff82" prot="public" virt="non-virtual"><scope>tvm::relay::BinaryDenseAttrs</scope><name>_type_has_method_sequal_reduce</name></member>
+      <member refid="classtvm_1_1BaseAttrsNode_1ad85f4aca5e8840d23851c0c07acd0862" prot="public" virt="non-virtual"><scope>tvm::relay::BinaryDenseAttrs</scope><name>_type_has_method_shash_reduce</name></member>
+      <member refid="classtvm_1_1BaseAttrsNode_1a8e4fd4e728774e0556cda84b0c2b80d6" prot="public" virt="non-virtual"><scope>tvm::relay::BinaryDenseAttrs</scope><name>_type_key</name></member>
+      <member refid="classtvm_1_1AttrsNode_1a7f609d3a1b52df0b442793f043cc49ae" prot="public" virt="virtual"><scope>tvm::relay::BinaryDenseAttrs</scope><name>ContentEqual</name></member>
+      <member refid="classtvm_1_1AttrsNode_1abe3e0fd8559c5d446a136490d4dbee12" prot="public" virt="virtual"><scope>tvm::relay::BinaryDenseAttrs</scope><name>ContentHash</name></member>
+      <member refid="structtvm_1_1relay_1_1BinaryDenseAttrs_1a080c3768bc73266ef675953ea98c8ae8" prot="public" virt="non-virtual"><scope>tvm::relay::BinaryDenseAttrs</scope><name>data_bits</name></member>
+      <member refid="classtvm_1_1AttrsNode_1acfba199ef906818f35432d2e5532559a" prot="public" virt="virtual"><scope>tvm::relay::BinaryDenseAttrs</scope><name>InitByPackedArgs</name></member>
+      <member refid="classtvm_1_1BaseAttrsNode_1aef9e5266d16e163ccc7b1b16c1ea3269" prot="public" virt="non-virtual"><scope>tvm::relay::BinaryDenseAttrs</scope><name>InitBySeq</name></member>
+      <member refid="classtvm_1_1AttrsNode_1acefe615381b5d881870af9db7ce6a981" prot="public" virt="virtual"><scope>tvm::relay::BinaryDenseAttrs</scope><name>ListFieldInfo</name></member>
+      <member refid="structtvm_1_1relay_1_1BinaryDenseAttrs_1a8a391a620450d8c0e4449774a60272c6" prot="public" virt="non-virtual"><scope>tvm::relay::BinaryDenseAttrs</scope><name>out_dtype</name></member>
+      <member refid="structtvm_1_1relay_1_1BinaryDenseAttrs_1a6aac82cbb3d54c5770fa035c0c9f81a2" prot="public" virt="non-virtual"><scope>tvm::relay::BinaryDenseAttrs</scope><name>pack_dtype</name></member>
+      <member refid="classtvm_1_1BaseAttrsNode_1a118837841487c80b157dbead88f18513" prot="public" virt="non-virtual"><scope>tvm::relay::BinaryDenseAttrs</scope><name>PrintDocString</name></member>
+      <member refid="classtvm_1_1AttrsNode_1af8192054af4e2797953cc7b67625092f" prot="public" virt="non-virtual"><scope>tvm::relay::BinaryDenseAttrs</scope><name>SEqualReduce</name></member>
+      <member refid="classtvm_1_1AttrsNode_1ad6cc4d8a955e30b9f55c0b5367ccce38" prot="public" virt="non-virtual"><scope>tvm::relay::BinaryDenseAttrs</scope><name>SHashReduce</name></member>
+      <member refid="structtvm_1_1relay_1_1BinaryDenseAttrs_1af47db15b68e233040e647eec83013990" prot="public" virt="non-virtual"><scope>tvm::relay::BinaryDenseAttrs</scope><name>TVM_DECLARE_ATTRS</name></member>
+      <member refid="classtvm_1_1BaseAttrsNode_1aaca524319f015a18a1385cfea5ba8895" prot="public" virt="non-virtual"><scope>tvm::relay::BinaryDenseAttrs</scope><name>TVM_DECLARE_BASE_OBJECT_INFO</name></member>
+      <member refid="classtvm_1_1BaseAttrsNode_1a257561dad74174cbdc08f6725a45d8ac" prot="public" virt="non-virtual"><scope>tvm::relay::BinaryDenseAttrs</scope><name>TVMArgs</name></member>
+      <member refid="classtvm_1_1BaseAttrsNode_1a1f56f080d0c1fab79d9469029aef8ebb" prot="public" virt="non-virtual"><scope>tvm::relay::BinaryDenseAttrs</scope><name>TVMRetValue</name></member>
+      <member refid="structtvm_1_1relay_1_1BinaryDenseAttrs_1af21cdb9dac67ab9ecea5a19642658d8a" prot="public" virt="non-virtual"><scope>tvm::relay::BinaryDenseAttrs</scope><name>unipolar</name></member>
+      <member refid="structtvm_1_1relay_1_1BinaryDenseAttrs_1a5373b2f2aac19653ae21aec74c69cdb0" prot="public" virt="non-virtual"><scope>tvm::relay::BinaryDenseAttrs</scope><name>units</name></member>
+      <member refid="classtvm_1_1AttrsNode_1a5da687ced06b4f2dfa04b142a34a9c72" prot="public" virt="virtual"><scope>tvm::relay::BinaryDenseAttrs</scope><name>VisitAttrs</name></member>
+      <member refid="classtvm_1_1AttrsNode_1acd05137ba529ac7cd07053e3da885205" prot="public" virt="virtual"><scope>tvm::relay::BinaryDenseAttrs</scope><name>VisitNonDefaultAttrs</name></member>
+      <member refid="structtvm_1_1relay_1_1BinaryDenseAttrs_1a6647c2d9d1d3108c6f552ff4271f2625" prot="public" virt="non-virtual"><scope>tvm::relay::BinaryDenseAttrs</scope><name>weight_bits</name></member>
+      <member refid="classtvm_1_1BaseAttrsNode_1a225581a40231b2de219da30fced428a2" prot="public" virt="virtual"><scope>tvm::relay::BinaryDenseAttrs</scope><name>~BaseAttrsNode</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

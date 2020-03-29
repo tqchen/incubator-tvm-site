@@ -1,0 +1,193 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="classtvm_1_1GlobalTypeVarNode" kind="class" language="C++" prot="public">
+    <compoundname>tvm::GlobalTypeVarNode</compoundname>
+    <basecompoundref refid="classtvm_1_1TypeNode" prot="public" virt="non-virtual">tvm::TypeNode</basecompoundref>
+    <includes refid="ir_2type_8h" local="no">type.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="classtvm_1_1GlobalTypeVarNode_1a9a4ba707c819bf2e29d9b58c72047a1b" prot="public" static="no" mutable="no">
+        <type>std::string</type>
+        <definition>std::string tvm::GlobalTypeVarNode::name_hint</definition>
+        <argsstring></argsstring>
+        <name>name_hint</name>
+        <briefdescription>
+<para>The name of the variable, this only acts as a hint to the user, and is not used for equality. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/ir/type.h" line="281" column="1" bodyfile="include/tvm/ir/type.h" bodystart="281" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classtvm_1_1GlobalTypeVarNode_1a335e232894a68cc1e0ecb766bf4053c7" prot="public" static="no" mutable="no">
+        <type><ref refid="namespacetvm_1acd267f8d7f55da6ac681239831963279" kindref="member">TypeKind</ref></type>
+        <definition>TypeKind tvm::GlobalTypeVarNode::kind</definition>
+        <argsstring></argsstring>
+        <name>kind</name>
+        <briefdescription>
+<para>The kind of type parameter. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/ir/type.h" line="283" column="1" bodyfile="include/tvm/ir/type.h" bodystart="283" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-attrib">
+      <memberdef kind="variable" id="classtvm_1_1GlobalTypeVarNode_1af82257e44561e9f8267bacfda2ecc854" prot="public" static="yes" mutable="no">
+        <type>constexpr const char *</type>
+        <definition>constexpr const char* tvm::GlobalTypeVarNode::_type_key</definition>
+        <argsstring></argsstring>
+        <name>_type_key</name>
+        <initializer>= &quot;GlobalTypeVar&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/ir/type.h" line="302" column="1" bodyfile="include/tvm/ir/type.h" bodystart="302" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classtvm_1_1GlobalTypeVarNode_1ad0db6587dd6fb6be938680d52d28d9ac" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void tvm::GlobalTypeVarNode::VisitAttrs</definition>
+        <argsstring>(AttrVisitor *v)</argsstring>
+        <name>VisitAttrs</name>
+        <param>
+          <type><ref refid="classtvm_1_1AttrVisitor" kindref="compound">AttrVisitor</ref> *</type>
+          <declname>v</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/ir/type.h" line="285" column="1" bodyfile="include/tvm/ir/type.h" bodystart="285" bodyend="288"/>
+      </memberdef>
+      <memberdef kind="function" id="classtvm_1_1GlobalTypeVarNode_1a5c1bfa6eb261fff74b4419de27520497" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool tvm::GlobalTypeVarNode::SEqualReduce</definition>
+        <argsstring>(const GlobalTypeVarNode *other, SEqualReducer equal) const </argsstring>
+        <name>SEqualReduce</name>
+        <param>
+          <type>const <ref refid="classtvm_1_1GlobalTypeVarNode" kindref="compound">GlobalTypeVarNode</ref> *</type>
+          <declname>other</declname>
+        </param>
+        <param>
+          <type><ref refid="classtvm_1_1SEqualReducer" kindref="compound">SEqualReducer</ref></type>
+          <declname>equal</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/ir/type.h" line="290" column="1" bodyfile="include/tvm/ir/type.h" bodystart="290" bodyend="295"/>
+      </memberdef>
+      <memberdef kind="function" id="classtvm_1_1GlobalTypeVarNode_1aa885581e4b82ff1cb8b0e77372b462f1" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void tvm::GlobalTypeVarNode::SHashReduce</definition>
+        <argsstring>(SHashReducer hash_reduce) const </argsstring>
+        <name>SHashReduce</name>
+        <param>
+          <type><ref refid="classtvm_1_1SHashReducer" kindref="compound">SHashReducer</ref></type>
+          <declname>hash_reduce</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/ir/type.h" line="297" column="1" bodyfile="include/tvm/ir/type.h" bodystart="297" bodyend="300"/>
+      </memberdef>
+      <memberdef kind="function" id="classtvm_1_1GlobalTypeVarNode_1aa040d458ec687c7e2fd9b73a2528adc9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>tvm::GlobalTypeVarNode::TVM_DECLARE_FINAL_OBJECT_INFO</definition>
+        <argsstring>(GlobalTypeVarNode, TypeNode)</argsstring>
+        <name>TVM_DECLARE_FINAL_OBJECT_INFO</name>
+        <param>
+          <type><ref refid="classtvm_1_1GlobalTypeVarNode" kindref="compound">GlobalTypeVarNode</ref></type>
+        </param>
+        <param>
+          <type><ref refid="classtvm_1_1TypeNode" kindref="compound">TypeNode</ref></type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/ir/type.h" line="303" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>A global type variable that is used for defining new types or type aliases. </para>    </briefdescription>
+    <detaileddescription>
+<para><simplesect kind="see"><para><ref refid="classtvm_1_1GlobalTypeVar" kindref="compound">GlobalTypeVar</ref> </para></simplesect>
+</para>    </detaileddescription>
+    <inheritancegraph>
+      <node id="5226">
+        <label>tvm::TypeNode</label>
+        <link refid="classtvm_1_1TypeNode"/>
+        <childnode refid="5227" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="5227">
+        <label>Object</label>
+      </node>
+      <node id="5225">
+        <label>tvm::GlobalTypeVarNode</label>
+        <link refid="classtvm_1_1GlobalTypeVarNode"/>
+        <childnode refid="5226" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="5232">
+        <label>ObjectRef</label>
+      </node>
+      <node id="5231">
+        <label>tvm::Span</label>
+        <link refid="classtvm_1_1Span"/>
+        <childnode refid="5232" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="5229">
+        <label>tvm::TypeNode</label>
+        <link refid="classtvm_1_1TypeNode"/>
+        <childnode refid="5230" relation="public-inheritance">
+        </childnode>
+        <childnode refid="5231" relation="usage">
+          <edgelabel>+span</edgelabel>
+        </childnode>
+      </node>
+      <node id="5230">
+        <label>Object</label>
+      </node>
+      <node id="5228">
+        <label>tvm::GlobalTypeVarNode</label>
+        <link refid="classtvm_1_1GlobalTypeVarNode"/>
+        <childnode refid="5229" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="include/tvm/ir/type.h" line="274" column="1" bodyfile="include/tvm/ir/type.h" bodystart="274" bodyend="304"/>
+    <listofallmembers>
+      <member refid="classtvm_1_1TypeNode_1ab02f7d165755f57689f986aca467a7e5" prot="public" virt="non-virtual"><scope>tvm::GlobalTypeVarNode</scope><name>_type_has_method_sequal_reduce</name></member>
+      <member refid="classtvm_1_1TypeNode_1a4179c7d7d55d1141cadfd19547fb1344" prot="public" virt="non-virtual"><scope>tvm::GlobalTypeVarNode</scope><name>_type_has_method_shash_reduce</name></member>
+      <member refid="classtvm_1_1GlobalTypeVarNode_1af82257e44561e9f8267bacfda2ecc854" prot="public" virt="non-virtual"><scope>tvm::GlobalTypeVarNode</scope><name>_type_key</name></member>
+      <member refid="classtvm_1_1GlobalTypeVarNode_1a335e232894a68cc1e0ecb766bf4053c7" prot="public" virt="non-virtual"><scope>tvm::GlobalTypeVarNode</scope><name>kind</name></member>
+      <member refid="classtvm_1_1GlobalTypeVarNode_1a9a4ba707c819bf2e29d9b58c72047a1b" prot="public" virt="non-virtual"><scope>tvm::GlobalTypeVarNode</scope><name>name_hint</name></member>
+      <member refid="classtvm_1_1GlobalTypeVarNode_1a5c1bfa6eb261fff74b4419de27520497" prot="public" virt="non-virtual"><scope>tvm::GlobalTypeVarNode</scope><name>SEqualReduce</name></member>
+      <member refid="classtvm_1_1GlobalTypeVarNode_1aa885581e4b82ff1cb8b0e77372b462f1" prot="public" virt="non-virtual"><scope>tvm::GlobalTypeVarNode</scope><name>SHashReduce</name></member>
+      <member refid="classtvm_1_1TypeNode_1a7b06d502a5162d51bb205691bbb95bb5" prot="public" virt="non-virtual"><scope>tvm::GlobalTypeVarNode</scope><name>span</name></member>
+      <member refid="classtvm_1_1TypeNode_1abadff70e220806f889e81a0ad3bca0da" prot="public" virt="non-virtual"><scope>tvm::GlobalTypeVarNode</scope><name>TVM_DECLARE_BASE_OBJECT_INFO</name></member>
+      <member refid="classtvm_1_1GlobalTypeVarNode_1aa040d458ec687c7e2fd9b73a2528adc9" prot="public" virt="non-virtual"><scope>tvm::GlobalTypeVarNode</scope><name>TVM_DECLARE_FINAL_OBJECT_INFO</name></member>
+      <member refid="classtvm_1_1GlobalTypeVarNode_1ad0db6587dd6fb6be938680d52d28d9ac" prot="public" virt="non-virtual"><scope>tvm::GlobalTypeVarNode</scope><name>VisitAttrs</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

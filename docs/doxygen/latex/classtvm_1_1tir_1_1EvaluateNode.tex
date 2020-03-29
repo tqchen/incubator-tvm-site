@@ -1,0 +1,120 @@
+\hypertarget{classtvm_1_1tir_1_1EvaluateNode}{}\section{tvm\+:\+:tir\+:\+:Evaluate\+Node Class Reference}
+\label{classtvm_1_1tir_1_1EvaluateNode}\index{tvm\+::tir\+::\+Evaluate\+Node@{tvm\+::tir\+::\+Evaluate\+Node}}
+
+
+Evaluates an expression. This is mostly used for putting a Call node into \hyperlink{classtvm_1_1tir_1_1Stmt}{Stmt}.  
+
+
+
+
+{\ttfamily \#include $<$stmt.\+h$>$}
+
+
+
+Inheritance diagram for tvm\+:\+:tir\+:\+:Evaluate\+Node\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=285pt]{classtvm_1_1tir_1_1EvaluateNode__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for tvm\+:\+:tir\+:\+:Evaluate\+Node\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classtvm_1_1tir_1_1EvaluateNode__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{classtvm_1_1tir_1_1EvaluateNode_a3950633f2ab07c83010e7a489d67d0e2}{Visit\+Attrs} (\hyperlink{classtvm_1_1AttrVisitor}{Attr\+Visitor} $\ast$v)
+\item 
+bool \hyperlink{classtvm_1_1tir_1_1EvaluateNode_adee5957be3a1dd8f0b6e7387f4c81d7d}{S\+Equal\+Reduce} (const \hyperlink{classtvm_1_1tir_1_1EvaluateNode}{Evaluate\+Node} $\ast$other, \hyperlink{classtvm_1_1SEqualReducer}{S\+Equal\+Reducer} equal) const 
+\item 
+void \hyperlink{classtvm_1_1tir_1_1EvaluateNode_aa24892a4822d2707ca79757aa168435b}{S\+Hash\+Reduce} (\hyperlink{classtvm_1_1SHashReducer}{S\+Hash\+Reducer} hash\+\_\+reduce) const 
+\item 
+\hyperlink{classtvm_1_1tir_1_1EvaluateNode_a6124f7d5e719d1225bfb29d32d6dcea4}{T\+V\+M\+\_\+\+D\+E\+C\+L\+A\+R\+E\+\_\+\+F\+I\+N\+A\+L\+\_\+\+O\+B\+J\+E\+C\+T\+\_\+\+I\+N\+FO} (\hyperlink{classtvm_1_1tir_1_1EvaluateNode}{Evaluate\+Node}, \hyperlink{classtvm_1_1tir_1_1StmtNode}{Stmt\+Node})
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \hyperlink{classtvm_1_1tir_1_1Stmt}{Stmt} \hyperlink{classtvm_1_1tir_1_1EvaluateNode_a5a3fc24b56f5b8eda0529a0c4ba11780}{make} (\hyperlink{classtvm_1_1PrimExpr}{Prim\+Expr} v)
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classtvm_1_1PrimExpr}{Prim\+Expr} \hyperlink{classtvm_1_1tir_1_1EvaluateNode_acd67ddcaf6ec168e993710808ec94358}{value}
+\begin{DoxyCompactList}\small\item\em The expression to be evaluated. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static constexpr const char $\ast$ \hyperlink{classtvm_1_1tir_1_1EvaluateNode_a9d2b4f296b1cfa85b64a03ca581cbea4}{\+\_\+type\+\_\+key} = \char`\"{}Evaluate\char`\"{}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Evaluates an expression. This is mostly used for putting a Call node into \hyperlink{classtvm_1_1tir_1_1Stmt}{Stmt}. 
+
+If value do not have side-\/effect, this node can be safely removed. 
+
+\subsection{Member Function Documentation}
+\index{tvm\+::tir\+::\+Evaluate\+Node@{tvm\+::tir\+::\+Evaluate\+Node}!make@{make}}
+\index{make@{make}!tvm\+::tir\+::\+Evaluate\+Node@{tvm\+::tir\+::\+Evaluate\+Node}}
+\subsubsection[{\texorpdfstring{make(\+Prim\+Expr v)}{make(PrimExpr v)}}]{\setlength{\rightskip}{0pt plus 5cm}static {\bf Stmt} tvm\+::tir\+::\+Evaluate\+Node\+::make (
+\begin{DoxyParamCaption}
+\item[{{\bf Prim\+Expr}}]{v}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}\hypertarget{classtvm_1_1tir_1_1EvaluateNode_a5a3fc24b56f5b8eda0529a0c4ba11780}{}\label{classtvm_1_1tir_1_1EvaluateNode_a5a3fc24b56f5b8eda0529a0c4ba11780}
+\index{tvm\+::tir\+::\+Evaluate\+Node@{tvm\+::tir\+::\+Evaluate\+Node}!S\+Equal\+Reduce@{S\+Equal\+Reduce}}
+\index{S\+Equal\+Reduce@{S\+Equal\+Reduce}!tvm\+::tir\+::\+Evaluate\+Node@{tvm\+::tir\+::\+Evaluate\+Node}}
+\subsubsection[{\texorpdfstring{S\+Equal\+Reduce(const Evaluate\+Node $\ast$other, S\+Equal\+Reducer equal) const }{SEqualReduce(const EvaluateNode *other, SEqualReducer equal) const }}]{\setlength{\rightskip}{0pt plus 5cm}bool tvm\+::tir\+::\+Evaluate\+Node\+::\+S\+Equal\+Reduce (
+\begin{DoxyParamCaption}
+\item[{const {\bf Evaluate\+Node} $\ast$}]{other, }
+\item[{{\bf S\+Equal\+Reducer}}]{equal}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classtvm_1_1tir_1_1EvaluateNode_adee5957be3a1dd8f0b6e7387f4c81d7d}{}\label{classtvm_1_1tir_1_1EvaluateNode_adee5957be3a1dd8f0b6e7387f4c81d7d}
+\index{tvm\+::tir\+::\+Evaluate\+Node@{tvm\+::tir\+::\+Evaluate\+Node}!S\+Hash\+Reduce@{S\+Hash\+Reduce}}
+\index{S\+Hash\+Reduce@{S\+Hash\+Reduce}!tvm\+::tir\+::\+Evaluate\+Node@{tvm\+::tir\+::\+Evaluate\+Node}}
+\subsubsection[{\texorpdfstring{S\+Hash\+Reduce(\+S\+Hash\+Reducer hash\+\_\+reduce) const }{SHashReduce(SHashReducer hash_reduce) const }}]{\setlength{\rightskip}{0pt plus 5cm}void tvm\+::tir\+::\+Evaluate\+Node\+::\+S\+Hash\+Reduce (
+\begin{DoxyParamCaption}
+\item[{{\bf S\+Hash\+Reducer}}]{hash\+\_\+reduce}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classtvm_1_1tir_1_1EvaluateNode_aa24892a4822d2707ca79757aa168435b}{}\label{classtvm_1_1tir_1_1EvaluateNode_aa24892a4822d2707ca79757aa168435b}
+\index{tvm\+::tir\+::\+Evaluate\+Node@{tvm\+::tir\+::\+Evaluate\+Node}!T\+V\+M\+\_\+\+D\+E\+C\+L\+A\+R\+E\+\_\+\+F\+I\+N\+A\+L\+\_\+\+O\+B\+J\+E\+C\+T\+\_\+\+I\+N\+FO@{T\+V\+M\+\_\+\+D\+E\+C\+L\+A\+R\+E\+\_\+\+F\+I\+N\+A\+L\+\_\+\+O\+B\+J\+E\+C\+T\+\_\+\+I\+N\+FO}}
+\index{T\+V\+M\+\_\+\+D\+E\+C\+L\+A\+R\+E\+\_\+\+F\+I\+N\+A\+L\+\_\+\+O\+B\+J\+E\+C\+T\+\_\+\+I\+N\+FO@{T\+V\+M\+\_\+\+D\+E\+C\+L\+A\+R\+E\+\_\+\+F\+I\+N\+A\+L\+\_\+\+O\+B\+J\+E\+C\+T\+\_\+\+I\+N\+FO}!tvm\+::tir\+::\+Evaluate\+Node@{tvm\+::tir\+::\+Evaluate\+Node}}
+\subsubsection[{\texorpdfstring{T\+V\+M\+\_\+\+D\+E\+C\+L\+A\+R\+E\+\_\+\+F\+I\+N\+A\+L\+\_\+\+O\+B\+J\+E\+C\+T\+\_\+\+I\+N\+F\+O(\+Evaluate\+Node, Stmt\+Node)}{TVM_DECLARE_FINAL_OBJECT_INFO(EvaluateNode, StmtNode)}}]{\setlength{\rightskip}{0pt plus 5cm}tvm\+::tir\+::\+Evaluate\+Node\+::\+T\+V\+M\+\_\+\+D\+E\+C\+L\+A\+R\+E\+\_\+\+F\+I\+N\+A\+L\+\_\+\+O\+B\+J\+E\+C\+T\+\_\+\+I\+N\+FO (
+\begin{DoxyParamCaption}
+\item[{{\bf Evaluate\+Node}}]{, }
+\item[{{\bf Stmt\+Node}}]{}
+\end{DoxyParamCaption}
+)}\hypertarget{classtvm_1_1tir_1_1EvaluateNode_a6124f7d5e719d1225bfb29d32d6dcea4}{}\label{classtvm_1_1tir_1_1EvaluateNode_a6124f7d5e719d1225bfb29d32d6dcea4}
+\index{tvm\+::tir\+::\+Evaluate\+Node@{tvm\+::tir\+::\+Evaluate\+Node}!Visit\+Attrs@{Visit\+Attrs}}
+\index{Visit\+Attrs@{Visit\+Attrs}!tvm\+::tir\+::\+Evaluate\+Node@{tvm\+::tir\+::\+Evaluate\+Node}}
+\subsubsection[{\texorpdfstring{Visit\+Attrs(\+Attr\+Visitor $\ast$v)}{VisitAttrs(AttrVisitor *v)}}]{\setlength{\rightskip}{0pt plus 5cm}void tvm\+::tir\+::\+Evaluate\+Node\+::\+Visit\+Attrs (
+\begin{DoxyParamCaption}
+\item[{{\bf Attr\+Visitor} $\ast$}]{v}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classtvm_1_1tir_1_1EvaluateNode_a3950633f2ab07c83010e7a489d67d0e2}{}\label{classtvm_1_1tir_1_1EvaluateNode_a3950633f2ab07c83010e7a489d67d0e2}
+
+
+\subsection{Member Data Documentation}
+\index{tvm\+::tir\+::\+Evaluate\+Node@{tvm\+::tir\+::\+Evaluate\+Node}!\+\_\+type\+\_\+key@{\+\_\+type\+\_\+key}}
+\index{\+\_\+type\+\_\+key@{\+\_\+type\+\_\+key}!tvm\+::tir\+::\+Evaluate\+Node@{tvm\+::tir\+::\+Evaluate\+Node}}
+\subsubsection[{\texorpdfstring{\+\_\+type\+\_\+key}{_type_key}}]{\setlength{\rightskip}{0pt plus 5cm}constexpr const char$\ast$ tvm\+::tir\+::\+Evaluate\+Node\+::\+\_\+type\+\_\+key = \char`\"{}Evaluate\char`\"{}\hspace{0.3cm}{\ttfamily [static]}}\hypertarget{classtvm_1_1tir_1_1EvaluateNode_a9d2b4f296b1cfa85b64a03ca581cbea4}{}\label{classtvm_1_1tir_1_1EvaluateNode_a9d2b4f296b1cfa85b64a03ca581cbea4}
+\index{tvm\+::tir\+::\+Evaluate\+Node@{tvm\+::tir\+::\+Evaluate\+Node}!value@{value}}
+\index{value@{value}!tvm\+::tir\+::\+Evaluate\+Node@{tvm\+::tir\+::\+Evaluate\+Node}}
+\subsubsection[{\texorpdfstring{value}{value}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Prim\+Expr} tvm\+::tir\+::\+Evaluate\+Node\+::value}\hypertarget{classtvm_1_1tir_1_1EvaluateNode_acd67ddcaf6ec168e993710808ec94358}{}\label{classtvm_1_1tir_1_1EvaluateNode_acd67ddcaf6ec168e993710808ec94358}
+
+
+The expression to be evaluated. 
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+include/tvm/tir/\hyperlink{stmt_8h}{stmt.\+h}\end{DoxyCompactItemize}

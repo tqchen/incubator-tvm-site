@@ -1,0 +1,276 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="classtvm_1_1tir_1_1ProvideNode" kind="class" language="C++" prot="public">
+    <compoundname>tvm::tir::ProvideNode</compoundname>
+    <basecompoundref refid="classtvm_1_1tir_1_1StmtNode" prot="public" virt="non-virtual">tvm::tir::StmtNode</basecompoundref>
+    <includes refid="stmt_8h" local="no">stmt.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="classtvm_1_1tir_1_1ProvideNode_1ae733ea7142d3c2823a60bdb3bd9b8f3c" prot="public" static="no" mutable="no">
+        <type><ref refid="classtvm_1_1tir_1_1FunctionRef" kindref="compound">FunctionRef</ref></type>
+        <definition>FunctionRef tvm::tir::ProvideNode::func</definition>
+        <argsstring></argsstring>
+        <name>func</name>
+        <briefdescription>
+<para>The function to be updated. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/tir/stmt.h" line="283" column="1" bodyfile="include/tvm/tir/stmt.h" bodystart="283" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classtvm_1_1tir_1_1ProvideNode_1a043817fe37e1d7b5937b549621cb101d" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int tvm::tir::ProvideNode::value_index</definition>
+        <argsstring></argsstring>
+        <name>value_index</name>
+        <initializer>{0}</initializer>
+        <briefdescription>
+<para>The output value index if func&apos;s value is a tuple. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/tir/stmt.h" line="285" column="1" bodyfile="include/tvm/tir/stmt.h" bodystart="285" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classtvm_1_1tir_1_1ProvideNode_1a8ea72dcf6b347c0f19ba53fb6f7aa934" prot="public" static="no" mutable="no">
+        <type><ref refid="classtvm_1_1PrimExpr" kindref="compound">PrimExpr</ref></type>
+        <definition>PrimExpr tvm::tir::ProvideNode::value</definition>
+        <argsstring></argsstring>
+        <name>value</name>
+        <briefdescription>
+<para>The value to be stored. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/tir/stmt.h" line="287" column="1" bodyfile="include/tvm/tir/stmt.h" bodystart="287" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classtvm_1_1tir_1_1ProvideNode_1a595dcef23f7615e871bd8f5052db6626" prot="public" static="no" mutable="no">
+        <type><ref refid="classtvm_1_1Array" kindref="compound">Array</ref>&lt; <ref refid="classtvm_1_1PrimExpr" kindref="compound">PrimExpr</ref> &gt;</type>
+        <definition>Array&lt;PrimExpr&gt; tvm::tir::ProvideNode::args</definition>
+        <argsstring></argsstring>
+        <name>args</name>
+        <briefdescription>
+<para>The index arguments of the function. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/tir/stmt.h" line="289" column="1" bodyfile="include/tvm/tir/stmt.h" bodystart="289" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-attrib">
+      <memberdef kind="variable" id="classtvm_1_1tir_1_1ProvideNode_1a18f42dfddbf80d14f4d052856dcaae4d" prot="public" static="yes" mutable="no">
+        <type>constexpr const char *</type>
+        <definition>constexpr const char* tvm::tir::ProvideNode::_type_key</definition>
+        <argsstring></argsstring>
+        <name>_type_key</name>
+        <initializer>= &quot;Provide&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/tir/stmt.h" line="318" column="1" bodyfile="include/tvm/tir/stmt.h" bodystart="318" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classtvm_1_1tir_1_1ProvideNode_1ad10005102ba52f0db2d5e4dd6aa78413" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void tvm::tir::ProvideNode::VisitAttrs</definition>
+        <argsstring>(AttrVisitor *v)</argsstring>
+        <name>VisitAttrs</name>
+        <param>
+          <type><ref refid="classtvm_1_1AttrVisitor" kindref="compound">AttrVisitor</ref> *</type>
+          <declname>v</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/tir/stmt.h" line="291" column="1" bodyfile="include/tvm/tir/stmt.h" bodystart="291" bodyend="296"/>
+      </memberdef>
+      <memberdef kind="function" id="classtvm_1_1tir_1_1ProvideNode_1a946de6e2023bc71813f22d61860576fc" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool tvm::tir::ProvideNode::SEqualReduce</definition>
+        <argsstring>(const ProvideNode *other, SEqualReducer equal) const </argsstring>
+        <name>SEqualReduce</name>
+        <param>
+          <type>const <ref refid="classtvm_1_1tir_1_1ProvideNode" kindref="compound">ProvideNode</ref> *</type>
+          <declname>other</declname>
+        </param>
+        <param>
+          <type><ref refid="classtvm_1_1SEqualReducer" kindref="compound">SEqualReducer</ref></type>
+          <declname>equal</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/tir/stmt.h" line="298" column="1" bodyfile="include/tvm/tir/stmt.h" bodystart="298" bodyend="304"/>
+      </memberdef>
+      <memberdef kind="function" id="classtvm_1_1tir_1_1ProvideNode_1a44c1f3f0a5ccf7d53befc3b61c985692" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void tvm::tir::ProvideNode::SHashReduce</definition>
+        <argsstring>(SHashReducer hash_reduce) const </argsstring>
+        <name>SHashReduce</name>
+        <param>
+          <type><ref refid="classtvm_1_1SHashReducer" kindref="compound">SHashReducer</ref></type>
+          <declname>hash_reduce</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/tir/stmt.h" line="306" column="1" bodyfile="include/tvm/tir/stmt.h" bodystart="306" bodyend="311"/>
+      </memberdef>
+      <memberdef kind="function" id="classtvm_1_1tir_1_1ProvideNode_1ad4f570b59de8c382fcc0028d28f4f3f2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>tvm::tir::ProvideNode::TVM_DECLARE_FINAL_OBJECT_INFO</definition>
+        <argsstring>(ProvideNode, StmtNode)</argsstring>
+        <name>TVM_DECLARE_FINAL_OBJECT_INFO</name>
+        <param>
+          <type><ref refid="classtvm_1_1tir_1_1ProvideNode" kindref="compound">ProvideNode</ref></type>
+        </param>
+        <param>
+          <type><ref refid="classtvm_1_1tir_1_1StmtNode" kindref="compound">StmtNode</ref></type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/tir/stmt.h" line="319" column="1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="classtvm_1_1tir_1_1ProvideNode_1a3445989acfb8a019e9d9d3dc146372d7" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classtvm_1_1tir_1_1Stmt" kindref="compound">Stmt</ref></type>
+        <definition>static Stmt tvm::tir::ProvideNode::make</definition>
+        <argsstring>(FunctionRef func, int value_index, PrimExpr value, Array&lt; PrimExpr &gt; args)</argsstring>
+        <name>make</name>
+        <param>
+          <type><ref refid="classtvm_1_1tir_1_1FunctionRef" kindref="compound">FunctionRef</ref></type>
+          <declname>func</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>value_index</declname>
+        </param>
+        <param>
+          <type><ref refid="classtvm_1_1PrimExpr" kindref="compound">PrimExpr</ref></type>
+          <declname>value</declname>
+        </param>
+        <param>
+          <type><ref refid="classtvm_1_1Array" kindref="compound">Array</ref>&lt; <ref refid="classtvm_1_1PrimExpr" kindref="compound">PrimExpr</ref> &gt;</type>
+          <declname>args</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/tir/stmt.h" line="313" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Store value into mult-dimensional array defined by func. </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="6339">
+        <label>tvm::tir::ProvideNode</label>
+        <link refid="classtvm_1_1tir_1_1ProvideNode"/>
+        <childnode refid="6340" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="6341">
+        <label>Object</label>
+      </node>
+      <node id="6340">
+        <label>tvm::tir::StmtNode</label>
+        <link refid="classtvm_1_1tir_1_1StmtNode"/>
+        <childnode refid="6341" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="6346">
+        <label>ObjectRef</label>
+      </node>
+      <node id="6345">
+        <label>tvm::tir::FunctionRef</label>
+        <link refid="classtvm_1_1tir_1_1FunctionRef"/>
+        <childnode refid="6346" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="6342">
+        <label>tvm::tir::ProvideNode</label>
+        <link refid="classtvm_1_1tir_1_1ProvideNode"/>
+        <childnode refid="6343" relation="public-inheritance">
+        </childnode>
+        <childnode refid="6345" relation="usage">
+          <edgelabel>+func</edgelabel>
+        </childnode>
+        <childnode refid="6347" relation="usage">
+          <edgelabel>+args</edgelabel>
+        </childnode>
+        <childnode refid="6348" relation="usage">
+          <edgelabel>+value</edgelabel>
+        </childnode>
+      </node>
+      <node id="6344">
+        <label>Object</label>
+      </node>
+      <node id="6348">
+        <label>tvm::PrimExpr</label>
+        <link refid="classtvm_1_1PrimExpr"/>
+        <childnode refid="6349" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="6349">
+        <label>tvm::BaseExpr</label>
+        <link refid="classtvm_1_1BaseExpr"/>
+        <childnode refid="6346" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="6343">
+        <label>tvm::tir::StmtNode</label>
+        <link refid="classtvm_1_1tir_1_1StmtNode"/>
+        <childnode refid="6344" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="6347">
+        <label>tvm::Array&lt; tvm::PrimExpr &gt;</label>
+        <link refid="classtvm_1_1Array"/>
+        <childnode refid="6346" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="include/tvm/tir/stmt.h" line="280" column="1" bodyfile="include/tvm/tir/stmt.h" bodystart="280" bodyend="320"/>
+    <listofallmembers>
+      <member refid="classtvm_1_1tir_1_1StmtNode_1a463ce5a124a6c222706888122bb44865" prot="public" virt="non-virtual"><scope>tvm::tir::ProvideNode</scope><name>_type_has_method_sequal_reduce</name></member>
+      <member refid="classtvm_1_1tir_1_1StmtNode_1ab7e026e32383e67e620719b025e00056" prot="public" virt="non-virtual"><scope>tvm::tir::ProvideNode</scope><name>_type_has_method_shash_reduce</name></member>
+      <member refid="classtvm_1_1tir_1_1ProvideNode_1a18f42dfddbf80d14f4d052856dcaae4d" prot="public" virt="non-virtual"><scope>tvm::tir::ProvideNode</scope><name>_type_key</name></member>
+      <member refid="classtvm_1_1tir_1_1ProvideNode_1a595dcef23f7615e871bd8f5052db6626" prot="public" virt="non-virtual"><scope>tvm::tir::ProvideNode</scope><name>args</name></member>
+      <member refid="classtvm_1_1tir_1_1ProvideNode_1ae733ea7142d3c2823a60bdb3bd9b8f3c" prot="public" virt="non-virtual"><scope>tvm::tir::ProvideNode</scope><name>func</name></member>
+      <member refid="classtvm_1_1tir_1_1ProvideNode_1a3445989acfb8a019e9d9d3dc146372d7" prot="public" virt="non-virtual"><scope>tvm::tir::ProvideNode</scope><name>make</name></member>
+      <member refid="classtvm_1_1tir_1_1ProvideNode_1a946de6e2023bc71813f22d61860576fc" prot="public" virt="non-virtual"><scope>tvm::tir::ProvideNode</scope><name>SEqualReduce</name></member>
+      <member refid="classtvm_1_1tir_1_1ProvideNode_1a44c1f3f0a5ccf7d53befc3b61c985692" prot="public" virt="non-virtual"><scope>tvm::tir::ProvideNode</scope><name>SHashReduce</name></member>
+      <member refid="classtvm_1_1tir_1_1StmtNode_1ab4627fb1adbea88d4fe3a33679569421" prot="public" virt="non-virtual"><scope>tvm::tir::ProvideNode</scope><name>TVM_DECLARE_BASE_OBJECT_INFO</name></member>
+      <member refid="classtvm_1_1tir_1_1ProvideNode_1ad4f570b59de8c382fcc0028d28f4f3f2" prot="public" virt="non-virtual"><scope>tvm::tir::ProvideNode</scope><name>TVM_DECLARE_FINAL_OBJECT_INFO</name></member>
+      <member refid="classtvm_1_1tir_1_1ProvideNode_1a8ea72dcf6b347c0f19ba53fb6f7aa934" prot="public" virt="non-virtual"><scope>tvm::tir::ProvideNode</scope><name>value</name></member>
+      <member refid="classtvm_1_1tir_1_1ProvideNode_1a043817fe37e1d7b5937b549621cb101d" prot="public" virt="non-virtual"><scope>tvm::tir::ProvideNode</scope><name>value_index</name></member>
+      <member refid="classtvm_1_1tir_1_1ProvideNode_1ad10005102ba52f0db2d5e4dd6aa78413" prot="public" virt="non-virtual"><scope>tvm::tir::ProvideNode</scope><name>VisitAttrs</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

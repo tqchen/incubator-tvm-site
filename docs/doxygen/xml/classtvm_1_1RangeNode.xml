@@ -1,0 +1,249 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="classtvm_1_1RangeNode" kind="class" language="C++" prot="public">
+    <compoundname>tvm::RangeNode</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">Object</basecompoundref>
+    <includes refid="ir_2expr_8h" local="no">expr.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="classtvm_1_1RangeNode_1a43d2fb12bb61cf05936a1972d0158b49" prot="public" static="no" mutable="no">
+        <type><ref refid="classtvm_1_1PrimExpr" kindref="compound">PrimExpr</ref></type>
+        <definition>PrimExpr tvm::RangeNode::min</definition>
+        <argsstring></argsstring>
+        <name>min</name>
+        <briefdescription>
+<para>beginning of the node </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/ir/expr.h" line="376" column="1" bodyfile="include/tvm/ir/expr.h" bodystart="376" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classtvm_1_1RangeNode_1acd2ddcfab1f591a6c1f2568dd0180845" prot="public" static="no" mutable="no">
+        <type><ref refid="classtvm_1_1PrimExpr" kindref="compound">PrimExpr</ref></type>
+        <definition>PrimExpr tvm::RangeNode::extent</definition>
+        <argsstring></argsstring>
+        <name>extent</name>
+        <briefdescription>
+<para>the extend of range </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/ir/expr.h" line="378" column="1" bodyfile="include/tvm/ir/expr.h" bodystart="378" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-attrib">
+      <memberdef kind="variable" id="classtvm_1_1RangeNode_1a65cbd1aa0dbb91e13a960b927327295d" prot="public" static="yes" mutable="no">
+        <type>constexpr const char *</type>
+        <definition>constexpr const char* tvm::RangeNode::_type_key</definition>
+        <argsstring></argsstring>
+        <name>_type_key</name>
+        <initializer>= &quot;Range&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/ir/expr.h" line="397" column="1" bodyfile="include/tvm/ir/expr.h" bodystart="397" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classtvm_1_1RangeNode_1ad80ba0f15d54fc988892db93a4ca1d3c" prot="public" static="yes" mutable="no">
+        <type>constexpr const bool</type>
+        <definition>constexpr const bool tvm::RangeNode::_type_has_method_sequal_reduce</definition>
+        <argsstring></argsstring>
+        <name>_type_has_method_sequal_reduce</name>
+        <initializer>= true</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/ir/expr.h" line="398" column="1" bodyfile="include/tvm/ir/expr.h" bodystart="398" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classtvm_1_1RangeNode_1abdc5325a297420fca1f083ee295f7dcf" prot="public" static="yes" mutable="no">
+        <type>constexpr const bool</type>
+        <definition>constexpr const bool tvm::RangeNode::_type_has_method_shash_reduce</definition>
+        <argsstring></argsstring>
+        <name>_type_has_method_shash_reduce</name>
+        <initializer>= true</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/ir/expr.h" line="399" column="1" bodyfile="include/tvm/ir/expr.h" bodystart="399" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classtvm_1_1RangeNode_1ab845f7ed4ed85e360b730df3450d1aab" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>tvm::RangeNode::RangeNode</definition>
+        <argsstring>()</argsstring>
+        <name>RangeNode</name>
+        <briefdescription>
+<para>constructor </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/ir/expr.h" line="380" column="1" bodyfile="include/tvm/ir/expr.h" bodystart="380" bodyend="380"/>
+      </memberdef>
+      <memberdef kind="function" id="classtvm_1_1RangeNode_1a6ee2e11a496cc52627354fd90f00e2a0" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>tvm::RangeNode::RangeNode</definition>
+        <argsstring>(PrimExpr min, PrimExpr extent)</argsstring>
+        <name>RangeNode</name>
+        <param>
+          <type><ref refid="classtvm_1_1PrimExpr" kindref="compound">PrimExpr</ref></type>
+          <declname>min</declname>
+        </param>
+        <param>
+          <type><ref refid="classtvm_1_1PrimExpr" kindref="compound">PrimExpr</ref></type>
+          <declname>extent</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/ir/expr.h" line="381" column="1" bodyfile="include/tvm/ir/expr.h" bodystart="381" bodyend="381"/>
+      </memberdef>
+      <memberdef kind="function" id="classtvm_1_1RangeNode_1a4922785883bc78fdcdaa8169c85e63c9" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void tvm::RangeNode::VisitAttrs</definition>
+        <argsstring>(AttrVisitor *v)</argsstring>
+        <name>VisitAttrs</name>
+        <param>
+          <type><ref refid="classtvm_1_1AttrVisitor" kindref="compound">AttrVisitor</ref> *</type>
+          <declname>v</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/ir/expr.h" line="383" column="1" bodyfile="include/tvm/ir/expr.h" bodystart="383" bodyend="386"/>
+      </memberdef>
+      <memberdef kind="function" id="classtvm_1_1RangeNode_1a64d94b3a2f18ab2e946926559c8a6a00" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool tvm::RangeNode::SEqualReduce</definition>
+        <argsstring>(const RangeNode *other, SEqualReducer equal) const </argsstring>
+        <name>SEqualReduce</name>
+        <param>
+          <type>const <ref refid="classtvm_1_1RangeNode" kindref="compound">RangeNode</ref> *</type>
+          <declname>other</declname>
+        </param>
+        <param>
+          <type><ref refid="classtvm_1_1SEqualReducer" kindref="compound">SEqualReducer</ref></type>
+          <declname>equal</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/ir/expr.h" line="388" column="1" bodyfile="include/tvm/ir/expr.h" bodystart="388" bodyend="390"/>
+      </memberdef>
+      <memberdef kind="function" id="classtvm_1_1RangeNode_1a80bd0fe8be559acfacd5e5d90c938b2f" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void tvm::RangeNode::SHashReduce</definition>
+        <argsstring>(SHashReducer hash_reduce) const </argsstring>
+        <name>SHashReduce</name>
+        <param>
+          <type><ref refid="classtvm_1_1SHashReducer" kindref="compound">SHashReducer</ref></type>
+          <declname>hash_reduce</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/ir/expr.h" line="392" column="1" bodyfile="include/tvm/ir/expr.h" bodystart="392" bodyend="395"/>
+      </memberdef>
+      <memberdef kind="function" id="classtvm_1_1RangeNode_1a7cfc39cadf205d093bc6c51d5912f81a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>tvm::RangeNode::TVM_DECLARE_FINAL_OBJECT_INFO</definition>
+        <argsstring>(RangeNode, Object)</argsstring>
+        <name>TVM_DECLARE_FINAL_OBJECT_INFO</name>
+        <param>
+          <type><ref refid="classtvm_1_1RangeNode" kindref="compound">RangeNode</ref></type>
+        </param>
+        <param>
+          <type>Object</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/ir/expr.h" line="400" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>range over one dimension </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="6375">
+        <label>tvm::RangeNode</label>
+        <link refid="classtvm_1_1RangeNode"/>
+        <childnode refid="6376" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="6376">
+        <label>Object</label>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="6381">
+        <label>ObjectRef</label>
+      </node>
+      <node id="6377">
+        <label>tvm::RangeNode</label>
+        <link refid="classtvm_1_1RangeNode"/>
+        <childnode refid="6378" relation="public-inheritance">
+        </childnode>
+        <childnode refid="6379" relation="usage">
+          <edgelabel>+min</edgelabel>
+          <edgelabel>+extent</edgelabel>
+        </childnode>
+      </node>
+      <node id="6378">
+        <label>Object</label>
+      </node>
+      <node id="6379">
+        <label>tvm::PrimExpr</label>
+        <link refid="classtvm_1_1PrimExpr"/>
+        <childnode refid="6380" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="6380">
+        <label>tvm::BaseExpr</label>
+        <link refid="classtvm_1_1BaseExpr"/>
+        <childnode refid="6381" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="include/tvm/ir/expr.h" line="373" column="1" bodyfile="include/tvm/ir/expr.h" bodystart="373" bodyend="401"/>
+    <listofallmembers>
+      <member refid="classtvm_1_1RangeNode_1ad80ba0f15d54fc988892db93a4ca1d3c" prot="public" virt="non-virtual"><scope>tvm::RangeNode</scope><name>_type_has_method_sequal_reduce</name></member>
+      <member refid="classtvm_1_1RangeNode_1abdc5325a297420fca1f083ee295f7dcf" prot="public" virt="non-virtual"><scope>tvm::RangeNode</scope><name>_type_has_method_shash_reduce</name></member>
+      <member refid="classtvm_1_1RangeNode_1a65cbd1aa0dbb91e13a960b927327295d" prot="public" virt="non-virtual"><scope>tvm::RangeNode</scope><name>_type_key</name></member>
+      <member refid="classtvm_1_1RangeNode_1acd2ddcfab1f591a6c1f2568dd0180845" prot="public" virt="non-virtual"><scope>tvm::RangeNode</scope><name>extent</name></member>
+      <member refid="classtvm_1_1RangeNode_1a43d2fb12bb61cf05936a1972d0158b49" prot="public" virt="non-virtual"><scope>tvm::RangeNode</scope><name>min</name></member>
+      <member refid="classtvm_1_1RangeNode_1ab845f7ed4ed85e360b730df3450d1aab" prot="public" virt="non-virtual"><scope>tvm::RangeNode</scope><name>RangeNode</name></member>
+      <member refid="classtvm_1_1RangeNode_1a6ee2e11a496cc52627354fd90f00e2a0" prot="public" virt="non-virtual"><scope>tvm::RangeNode</scope><name>RangeNode</name></member>
+      <member refid="classtvm_1_1RangeNode_1a64d94b3a2f18ab2e946926559c8a6a00" prot="public" virt="non-virtual"><scope>tvm::RangeNode</scope><name>SEqualReduce</name></member>
+      <member refid="classtvm_1_1RangeNode_1a80bd0fe8be559acfacd5e5d90c938b2f" prot="public" virt="non-virtual"><scope>tvm::RangeNode</scope><name>SHashReduce</name></member>
+      <member refid="classtvm_1_1RangeNode_1a7cfc39cadf205d093bc6c51d5912f81a" prot="public" virt="non-virtual"><scope>tvm::RangeNode</scope><name>TVM_DECLARE_FINAL_OBJECT_INFO</name></member>
+      <member refid="classtvm_1_1RangeNode_1a4922785883bc78fdcdaa8169c85e63c9" prot="public" virt="non-virtual"><scope>tvm::RangeNode</scope><name>VisitAttrs</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

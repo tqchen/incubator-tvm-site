@@ -1,0 +1,121 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="classtvm_1_1relay_1_1OpSpecialization" kind="class" language="C++" prot="public">
+    <compoundname>tvm::relay::OpSpecialization</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">ObjectRef</basecompoundref>
+    <includes refid="op__strategy_8h" local="no">op_strategy.h</includes>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classtvm_1_1relay_1_1OpSpecialization_1a3ab916c19673ce13522fc9b48730ab88" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void tvm::relay::OpSpecialization::AddImplementation</definition>
+        <argsstring>(FTVMCompute fcompute, FTVMSchedule fschedule, std::string name, int plevel)</argsstring>
+        <name>AddImplementation</name>
+        <param>
+          <type><ref refid="namespacetvm_1_1relay_1a63a0893a8379998657ddff39a3162188" kindref="member">FTVMCompute</ref></type>
+          <declname>fcompute</declname>
+        </param>
+        <param>
+          <type><ref refid="namespacetvm_1_1relay_1af8f7c5928c79389da637c35df6c8557c" kindref="member">FTVMSchedule</ref></type>
+          <declname>fschedule</declname>
+        </param>
+        <param>
+          <type>std::string</type>
+          <declname>name</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>plevel</declname>
+        </param>
+        <briefdescription>
+<para>Add an implementation. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>fcompute</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Compute function </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>fschedule</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Schedule function </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>name</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Name of the implementation </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>plevel</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Priority level of the implementation </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/relay/op_strategy.h" line="122" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classtvm_1_1relay_1_1OpSpecialization_1a53db9a6774035d5477cb196f9a25ec95" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>tvm::relay::OpSpecialization::TVM_DEFINE_MUTABLE_OBJECT_REF_METHODS</definition>
+        <argsstring>(OpSpecialization, ObjectRef, OpSpecializationNode)</argsstring>
+        <name>TVM_DEFINE_MUTABLE_OBJECT_REF_METHODS</name>
+        <param>
+          <type><ref refid="classtvm_1_1relay_1_1OpSpecialization" kindref="compound">OpSpecialization</ref></type>
+        </param>
+        <param>
+          <type>ObjectRef</type>
+        </param>
+        <param>
+          <type><ref refid="classtvm_1_1relay_1_1OpSpecializationNode" kindref="compound">OpSpecializationNode</ref></type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/relay/op_strategy.h" line="125" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Operator specialization class. </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="5984">
+        <label>ObjectRef</label>
+      </node>
+      <node id="5983">
+        <label>tvm::relay::OpSpecialization</label>
+        <link refid="classtvm_1_1relay_1_1OpSpecialization"/>
+        <childnode refid="5984" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="5986">
+        <label>ObjectRef</label>
+      </node>
+      <node id="5985">
+        <label>tvm::relay::OpSpecialization</label>
+        <link refid="classtvm_1_1relay_1_1OpSpecialization"/>
+        <childnode refid="5986" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="include/tvm/relay/op_strategy.h" line="113" column="1" bodyfile="include/tvm/relay/op_strategy.h" bodystart="113" bodyend="126"/>
+    <listofallmembers>
+      <member refid="classtvm_1_1relay_1_1OpSpecialization_1a3ab916c19673ce13522fc9b48730ab88" prot="public" virt="non-virtual"><scope>tvm::relay::OpSpecialization</scope><name>AddImplementation</name></member>
+      <member refid="classtvm_1_1relay_1_1OpSpecialization_1a53db9a6774035d5477cb196f9a25ec95" prot="public" virt="non-virtual"><scope>tvm::relay::OpSpecialization</scope><name>TVM_DEFINE_MUTABLE_OBJECT_REF_METHODS</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

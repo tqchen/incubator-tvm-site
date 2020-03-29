@@ -1,0 +1,86 @@
+\hypertarget{classtvm_1_1runtime_1_1NDArray_1_1ContainerBase}{}\section{tvm\+:\+:runtime\+:\+:N\+D\+Array\+:\+:Container\+Base Class Reference}
+\label{classtvm_1_1runtime_1_1NDArray_1_1ContainerBase}\index{tvm\+::runtime\+::\+N\+D\+Array\+::\+Container\+Base@{tvm\+::runtime\+::\+N\+D\+Array\+::\+Container\+Base}}
+
+
+The container base structure contains all the fields except for the \hyperlink{classtvm_1_1runtime_1_1Object}{Object} header.  
+
+
+
+
+{\ttfamily \#include $<$ndarray.\+h$>$}
+
+
+
+Inheritance diagram for tvm\+:\+:runtime\+:\+:N\+D\+Array\+:\+:Container\+Base\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=284pt]{classtvm_1_1runtime_1_1NDArray_1_1ContainerBase__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for tvm\+:\+:runtime\+:\+:N\+D\+Array\+:\+:Container\+Base\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=205pt]{classtvm_1_1runtime_1_1NDArray_1_1ContainerBase__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+D\+L\+Tensor \hyperlink{classtvm_1_1runtime_1_1NDArray_1_1ContainerBase_a1063a9d01075d5b7b0e8fa31d4d72e0b}{dl\+\_\+tensor}
+\begin{DoxyCompactList}\small\item\em The corresponding dl\+\_\+tensor field. \end{DoxyCompactList}\item 
+void $\ast$ \hyperlink{classtvm_1_1runtime_1_1NDArray_1_1ContainerBase_a56d07e60df973dcf2b99ef6a204bb184}{manager\+\_\+ctx} \{nullptr\}
+\begin{DoxyCompactList}\small\item\em additional context, reserved for recycling \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+std\+::vector$<$ int64\+\_\+t $>$ \hyperlink{classtvm_1_1runtime_1_1NDArray_1_1ContainerBase_a852a3d49f916098ea6012237dbd242fc}{shape\+\_\+}
+\begin{DoxyCompactList}\small\item\em The shape container, can be used used for shape data. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+The container base structure contains all the fields except for the \hyperlink{classtvm_1_1runtime_1_1Object}{Object} header. 
+
+\begin{DoxyNote}{Note}
+We explicitly declare this structure in order to pass \hyperlink{classtvm_1_1runtime_1_1PackedFunc}{Packed\+Func} argument using Container\+Base$\ast$. 
+\end{DoxyNote}
+
+
+\subsection{Member Data Documentation}
+\index{tvm\+::runtime\+::\+N\+D\+Array\+::\+Container\+Base@{tvm\+::runtime\+::\+N\+D\+Array\+::\+Container\+Base}!dl\+\_\+tensor@{dl\+\_\+tensor}}
+\index{dl\+\_\+tensor@{dl\+\_\+tensor}!tvm\+::runtime\+::\+N\+D\+Array\+::\+Container\+Base@{tvm\+::runtime\+::\+N\+D\+Array\+::\+Container\+Base}}
+\subsubsection[{\texorpdfstring{dl\+\_\+tensor}{dl_tensor}}]{\setlength{\rightskip}{0pt plus 5cm}D\+L\+Tensor tvm\+::runtime\+::\+N\+D\+Array\+::\+Container\+Base\+::dl\+\_\+tensor}\hypertarget{classtvm_1_1runtime_1_1NDArray_1_1ContainerBase_a1063a9d01075d5b7b0e8fa31d4d72e0b}{}\label{classtvm_1_1runtime_1_1NDArray_1_1ContainerBase_a1063a9d01075d5b7b0e8fa31d4d72e0b}
+
+
+The corresponding dl\+\_\+tensor field. 
+
+\begin{DoxyNote}{Note}
+it is important that the first field is D\+L\+Tensor So that this data structure is D\+L\+Tensor compatible. The head ptr of this struct can be viewed as D\+L\+Tensor$\ast$. 
+\end{DoxyNote}
+\index{tvm\+::runtime\+::\+N\+D\+Array\+::\+Container\+Base@{tvm\+::runtime\+::\+N\+D\+Array\+::\+Container\+Base}!manager\+\_\+ctx@{manager\+\_\+ctx}}
+\index{manager\+\_\+ctx@{manager\+\_\+ctx}!tvm\+::runtime\+::\+N\+D\+Array\+::\+Container\+Base@{tvm\+::runtime\+::\+N\+D\+Array\+::\+Container\+Base}}
+\subsubsection[{\texorpdfstring{manager\+\_\+ctx}{manager_ctx}}]{\setlength{\rightskip}{0pt plus 5cm}void$\ast$ tvm\+::runtime\+::\+N\+D\+Array\+::\+Container\+Base\+::manager\+\_\+ctx \{nullptr\}}\hypertarget{classtvm_1_1runtime_1_1NDArray_1_1ContainerBase_a56d07e60df973dcf2b99ef6a204bb184}{}\label{classtvm_1_1runtime_1_1NDArray_1_1ContainerBase_a56d07e60df973dcf2b99ef6a204bb184}
+
+
+additional context, reserved for recycling 
+
+\begin{DoxyNote}{Note}
+We can attach additional content here which the current container depend on (e.\+g. reference to original memory when creating views). 
+\end{DoxyNote}
+\index{tvm\+::runtime\+::\+N\+D\+Array\+::\+Container\+Base@{tvm\+::runtime\+::\+N\+D\+Array\+::\+Container\+Base}!shape\+\_\+@{shape\+\_\+}}
+\index{shape\+\_\+@{shape\+\_\+}!tvm\+::runtime\+::\+N\+D\+Array\+::\+Container\+Base@{tvm\+::runtime\+::\+N\+D\+Array\+::\+Container\+Base}}
+\subsubsection[{\texorpdfstring{shape\+\_\+}{shape_}}]{\setlength{\rightskip}{0pt plus 5cm}std\+::vector$<$int64\+\_\+t$>$ tvm\+::runtime\+::\+N\+D\+Array\+::\+Container\+Base\+::shape\+\_\+\hspace{0.3cm}{\ttfamily [protected]}}\hypertarget{classtvm_1_1runtime_1_1NDArray_1_1ContainerBase_a852a3d49f916098ea6012237dbd242fc}{}\label{classtvm_1_1runtime_1_1NDArray_1_1ContainerBase_a852a3d49f916098ea6012237dbd242fc}
+
+
+The shape container, can be used used for shape data. 
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+include/tvm/runtime/\hyperlink{ndarray_8h}{ndarray.\+h}\end{DoxyCompactItemize}

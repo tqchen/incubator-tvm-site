@@ -1,0 +1,76 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="classtvm_1_1BaseTensorType" kind="class" language="C++" prot="public">
+    <compoundname>tvm::BaseTensorType</compoundname>
+    <basecompoundref refid="classtvm_1_1Type" prot="public" virt="non-virtual">tvm::Type</basecompoundref>
+    <includes refid="tensor__type_8h" local="no">tensor_type.h</includes>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classtvm_1_1BaseTensorType_1a4bb22cee852ae3a6b73d28dde0e7e64e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>tvm::BaseTensorType::TVM_DEFINE_OBJECT_REF_METHODS</definition>
+        <argsstring>(BaseTensorType, Type, BaseTensorTypeNode)</argsstring>
+        <name>TVM_DEFINE_OBJECT_REF_METHODS</name>
+        <param>
+          <type><ref refid="classtvm_1_1BaseTensorType" kindref="compound">BaseTensorType</ref></type>
+        </param>
+        <param>
+          <type><ref refid="classtvm_1_1Type" kindref="compound">Type</ref></type>
+        </param>
+        <param>
+          <type><ref refid="classtvm_1_1BaseTensorTypeNode" kindref="compound">BaseTensorTypeNode</ref></type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/ir/tensor_type.h" line="48" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Managed reference to <ref refid="classtvm_1_1BaseTensorTypeNode" kindref="compound">BaseTensorTypeNode</ref>. </para>    </briefdescription>
+    <detaileddescription>
+<para><simplesect kind="see"><para><ref refid="classtvm_1_1BaseTensorTypeNode" kindref="compound">BaseTensorTypeNode</ref>. </para></simplesect>
+</para>    </detaileddescription>
+    <inheritancegraph>
+      <node id="4364">
+        <label>ObjectRef</label>
+      </node>
+      <node id="4362">
+        <label>tvm::BaseTensorType</label>
+        <link refid="classtvm_1_1BaseTensorType"/>
+        <childnode refid="4363" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="4363">
+        <label>tvm::Type</label>
+        <link refid="classtvm_1_1Type"/>
+        <childnode refid="4364" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="4367">
+        <label>ObjectRef</label>
+      </node>
+      <node id="4365">
+        <label>tvm::BaseTensorType</label>
+        <link refid="classtvm_1_1BaseTensorType"/>
+        <childnode refid="4366" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="4366">
+        <label>tvm::Type</label>
+        <link refid="classtvm_1_1Type"/>
+        <childnode refid="4367" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="include/tvm/ir/tensor_type.h" line="46" column="1" bodyfile="include/tvm/ir/tensor_type.h" bodystart="46" bodyend="49"/>
+    <listofallmembers>
+      <member refid="classtvm_1_1BaseTensorType_1a4bb22cee852ae3a6b73d28dde0e7e64e" prot="public" virt="non-virtual"><scope>tvm::BaseTensorType</scope><name>TVM_DEFINE_OBJECT_REF_METHODS</name></member>
+      <member refid="classtvm_1_1Type_1a1188605b5afd297c39e614872a608a35" prot="public" virt="non-virtual" ambiguityscope="tvm::Type::"><scope>tvm::BaseTensorType</scope><name>TVM_DEFINE_OBJECT_REF_METHODS</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

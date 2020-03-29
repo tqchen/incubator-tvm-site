@@ -1,0 +1,110 @@
+\hypertarget{structtvm_1_1runtime_1_1vm_1_1VMFrame}{}\section{tvm\+:\+:runtime\+:\+:vm\+:\+:V\+M\+Frame Struct Reference}
+\label{structtvm_1_1runtime_1_1vm_1_1VMFrame}\index{tvm\+::runtime\+::vm\+::\+V\+M\+Frame@{tvm\+::runtime\+::vm\+::\+V\+M\+Frame}}
+
+
+A representation of a stack frame.  
+
+
+
+
+{\ttfamily \#include $<$vm.\+h$>$}
+
+
+
+Collaboration diagram for tvm\+:\+:runtime\+:\+:vm\+:\+:V\+M\+Frame\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{structtvm_1_1runtime_1_1vm_1_1VMFrame__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{structtvm_1_1runtime_1_1vm_1_1VMFrame_a8f8c990ee4fa7cb7472f5440f2ca3bde}{V\+M\+Frame} (\hyperlink{namespacetvm_1_1runtime_1_1vm_a3597867d2db714bf760876a23d6b7d3d}{Index} \hyperlink{structtvm_1_1runtime_1_1vm_1_1VMFrame_af798dec5a7e9049d6673093d2f3e7dea}{pc}, \hyperlink{namespacetvm_1_1runtime_1_1vm_a3597867d2db714bf760876a23d6b7d3d}{Index} \hyperlink{structtvm_1_1runtime_1_1vm_1_1VMFrame_a96a641c01ca63e6b146ef321319ec1f4}{func\+\_\+index}, \hyperlink{namespacetvm_1_1runtime_1_1vm_a3597867d2db714bf760876a23d6b7d3d}{Index} \hyperlink{structtvm_1_1runtime_1_1vm_1_1VMFrame_a189d59efcb86fa14dc486c2852a5f01b}{args}, const \hyperlink{structtvm_1_1runtime_1_1vm_1_1Instruction}{Instruction} $\ast$\hyperlink{structtvm_1_1runtime_1_1vm_1_1VMFrame_a6b1467a43cd8cb5123b08bbb4b39f428}{code}, \hyperlink{namespacetvm_1_1runtime_1_1vm_a3597867d2db714bf760876a23d6b7d3d}{Index} register\+\_\+file\+\_\+size)
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{namespacetvm_1_1runtime_1_1vm_a3597867d2db714bf760876a23d6b7d3d}{Index} \hyperlink{structtvm_1_1runtime_1_1vm_1_1VMFrame_af798dec5a7e9049d6673093d2f3e7dea}{pc}
+\begin{DoxyCompactList}\small\item\em The return program counter. \end{DoxyCompactList}\item 
+\hyperlink{namespacetvm_1_1runtime_1_1vm_a3597867d2db714bf760876a23d6b7d3d}{Index} \hyperlink{structtvm_1_1runtime_1_1vm_1_1VMFrame_a96a641c01ca63e6b146ef321319ec1f4}{func\+\_\+index}
+\begin{DoxyCompactList}\small\item\em The index into the function table, points to the caller. \end{DoxyCompactList}\item 
+\hyperlink{namespacetvm_1_1runtime_1_1vm_a3597867d2db714bf760876a23d6b7d3d}{Index} \hyperlink{structtvm_1_1runtime_1_1vm_1_1VMFrame_a189d59efcb86fa14dc486c2852a5f01b}{args}
+\begin{DoxyCompactList}\small\item\em The number of arguments. \end{DoxyCompactList}\item 
+const \hyperlink{structtvm_1_1runtime_1_1vm_1_1Instruction}{Instruction} $\ast$ \hyperlink{structtvm_1_1runtime_1_1vm_1_1VMFrame_a6b1467a43cd8cb5123b08bbb4b39f428}{code}
+\begin{DoxyCompactList}\small\item\em A pointer into the caller function\textquotesingle{}s instructions. \end{DoxyCompactList}\item 
+std\+::vector$<$ \hyperlink{classtvm_1_1runtime_1_1ObjectRef}{Object\+Ref} $>$ \hyperlink{structtvm_1_1runtime_1_1vm_1_1VMFrame_a583dcf6c0ed3f3d2916679382c7a0775}{register\+\_\+file}
+\begin{DoxyCompactList}\small\item\em Statically allocated space for objects. \end{DoxyCompactList}\item 
+\hyperlink{namespacetvm_1_1runtime_1_1vm_a3bbbf700719e9dc3dda2bc25210c18ae}{Reg\+Name} \hyperlink{structtvm_1_1runtime_1_1vm_1_1VMFrame_a2f6c425a89ee6872ead9bc71ab87fdd1}{caller\+\_\+return\+\_\+register}
+\begin{DoxyCompactList}\small\item\em Register in caller\textquotesingle{}s frame to put return value. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+A representation of a stack frame. 
+
+A stack frame is a record containing the information needed to restore the caller\textquotesingle{}s virtual machine state after returning from a function call. 
+
+\subsection{Constructor \& Destructor Documentation}
+\index{tvm\+::runtime\+::vm\+::\+V\+M\+Frame@{tvm\+::runtime\+::vm\+::\+V\+M\+Frame}!V\+M\+Frame@{V\+M\+Frame}}
+\index{V\+M\+Frame@{V\+M\+Frame}!tvm\+::runtime\+::vm\+::\+V\+M\+Frame@{tvm\+::runtime\+::vm\+::\+V\+M\+Frame}}
+\subsubsection[{\texorpdfstring{V\+M\+Frame(\+Index pc, Index func\+\_\+index, Index args, const Instruction $\ast$code, Index register\+\_\+file\+\_\+size)}{VMFrame(Index pc, Index func_index, Index args, const Instruction *code, Index register_file_size)}}]{\setlength{\rightskip}{0pt plus 5cm}tvm\+::runtime\+::vm\+::\+V\+M\+Frame\+::\+V\+M\+Frame (
+\begin{DoxyParamCaption}
+\item[{{\bf Index}}]{pc, }
+\item[{{\bf Index}}]{func\+\_\+index, }
+\item[{{\bf Index}}]{args, }
+\item[{const {\bf Instruction} $\ast$}]{code, }
+\item[{{\bf Index}}]{register\+\_\+file\+\_\+size}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{structtvm_1_1runtime_1_1vm_1_1VMFrame_a8f8c990ee4fa7cb7472f5440f2ca3bde}{}\label{structtvm_1_1runtime_1_1vm_1_1VMFrame_a8f8c990ee4fa7cb7472f5440f2ca3bde}
+
+
+\subsection{Member Data Documentation}
+\index{tvm\+::runtime\+::vm\+::\+V\+M\+Frame@{tvm\+::runtime\+::vm\+::\+V\+M\+Frame}!args@{args}}
+\index{args@{args}!tvm\+::runtime\+::vm\+::\+V\+M\+Frame@{tvm\+::runtime\+::vm\+::\+V\+M\+Frame}}
+\subsubsection[{\texorpdfstring{args}{args}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Index} tvm\+::runtime\+::vm\+::\+V\+M\+Frame\+::args}\hypertarget{structtvm_1_1runtime_1_1vm_1_1VMFrame_a189d59efcb86fa14dc486c2852a5f01b}{}\label{structtvm_1_1runtime_1_1vm_1_1VMFrame_a189d59efcb86fa14dc486c2852a5f01b}
+
+
+The number of arguments. 
+
+\index{tvm\+::runtime\+::vm\+::\+V\+M\+Frame@{tvm\+::runtime\+::vm\+::\+V\+M\+Frame}!caller\+\_\+return\+\_\+register@{caller\+\_\+return\+\_\+register}}
+\index{caller\+\_\+return\+\_\+register@{caller\+\_\+return\+\_\+register}!tvm\+::runtime\+::vm\+::\+V\+M\+Frame@{tvm\+::runtime\+::vm\+::\+V\+M\+Frame}}
+\subsubsection[{\texorpdfstring{caller\+\_\+return\+\_\+register}{caller_return_register}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Reg\+Name} tvm\+::runtime\+::vm\+::\+V\+M\+Frame\+::caller\+\_\+return\+\_\+register}\hypertarget{structtvm_1_1runtime_1_1vm_1_1VMFrame_a2f6c425a89ee6872ead9bc71ab87fdd1}{}\label{structtvm_1_1runtime_1_1vm_1_1VMFrame_a2f6c425a89ee6872ead9bc71ab87fdd1}
+
+
+Register in caller\textquotesingle{}s frame to put return value. 
+
+\index{tvm\+::runtime\+::vm\+::\+V\+M\+Frame@{tvm\+::runtime\+::vm\+::\+V\+M\+Frame}!code@{code}}
+\index{code@{code}!tvm\+::runtime\+::vm\+::\+V\+M\+Frame@{tvm\+::runtime\+::vm\+::\+V\+M\+Frame}}
+\subsubsection[{\texorpdfstring{code}{code}}]{\setlength{\rightskip}{0pt plus 5cm}const {\bf Instruction}$\ast$ tvm\+::runtime\+::vm\+::\+V\+M\+Frame\+::code}\hypertarget{structtvm_1_1runtime_1_1vm_1_1VMFrame_a6b1467a43cd8cb5123b08bbb4b39f428}{}\label{structtvm_1_1runtime_1_1vm_1_1VMFrame_a6b1467a43cd8cb5123b08bbb4b39f428}
+
+
+A pointer into the caller function\textquotesingle{}s instructions. 
+
+\index{tvm\+::runtime\+::vm\+::\+V\+M\+Frame@{tvm\+::runtime\+::vm\+::\+V\+M\+Frame}!func\+\_\+index@{func\+\_\+index}}
+\index{func\+\_\+index@{func\+\_\+index}!tvm\+::runtime\+::vm\+::\+V\+M\+Frame@{tvm\+::runtime\+::vm\+::\+V\+M\+Frame}}
+\subsubsection[{\texorpdfstring{func\+\_\+index}{func_index}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Index} tvm\+::runtime\+::vm\+::\+V\+M\+Frame\+::func\+\_\+index}\hypertarget{structtvm_1_1runtime_1_1vm_1_1VMFrame_a96a641c01ca63e6b146ef321319ec1f4}{}\label{structtvm_1_1runtime_1_1vm_1_1VMFrame_a96a641c01ca63e6b146ef321319ec1f4}
+
+
+The index into the function table, points to the caller. 
+
+\index{tvm\+::runtime\+::vm\+::\+V\+M\+Frame@{tvm\+::runtime\+::vm\+::\+V\+M\+Frame}!pc@{pc}}
+\index{pc@{pc}!tvm\+::runtime\+::vm\+::\+V\+M\+Frame@{tvm\+::runtime\+::vm\+::\+V\+M\+Frame}}
+\subsubsection[{\texorpdfstring{pc}{pc}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Index} tvm\+::runtime\+::vm\+::\+V\+M\+Frame\+::pc}\hypertarget{structtvm_1_1runtime_1_1vm_1_1VMFrame_af798dec5a7e9049d6673093d2f3e7dea}{}\label{structtvm_1_1runtime_1_1vm_1_1VMFrame_af798dec5a7e9049d6673093d2f3e7dea}
+
+
+The return program counter. 
+
+\index{tvm\+::runtime\+::vm\+::\+V\+M\+Frame@{tvm\+::runtime\+::vm\+::\+V\+M\+Frame}!register\+\_\+file@{register\+\_\+file}}
+\index{register\+\_\+file@{register\+\_\+file}!tvm\+::runtime\+::vm\+::\+V\+M\+Frame@{tvm\+::runtime\+::vm\+::\+V\+M\+Frame}}
+\subsubsection[{\texorpdfstring{register\+\_\+file}{register_file}}]{\setlength{\rightskip}{0pt plus 5cm}std\+::vector$<${\bf Object\+Ref}$>$ tvm\+::runtime\+::vm\+::\+V\+M\+Frame\+::register\+\_\+file}\hypertarget{structtvm_1_1runtime_1_1vm_1_1VMFrame_a583dcf6c0ed3f3d2916679382c7a0775}{}\label{structtvm_1_1runtime_1_1vm_1_1VMFrame_a583dcf6c0ed3f3d2916679382c7a0775}
+
+
+Statically allocated space for objects. 
+
+
+
+The documentation for this struct was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+include/tvm/runtime/\hyperlink{vm_8h}{vm.\+h}\end{DoxyCompactItemize}

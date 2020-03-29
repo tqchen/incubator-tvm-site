@@ -1,0 +1,24 @@
+\hypertarget{namespacetvm_1_1relay_1_1qnn_1_1transform}{}\section{tvm\+:\+:relay\+:\+:qnn\+:\+:transform Namespace Reference}
+\label{namespacetvm_1_1relay_1_1qnn_1_1transform}\index{tvm\+::relay\+::qnn\+::transform@{tvm\+::relay\+::qnn\+::transform}}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+Pass \hyperlink{namespacetvm_1_1relay_1_1qnn_1_1transform_a2323e3c38cc9ae1626cd98295b83e906}{Legalize} ()
+\begin{DoxyCompactList}\small\item\em Legalizes a Q\+NN expr. Contains specifically two types of Legalizations. First, converts/\+Lowers an expression containing Q\+NN ops to an expression containing only core Relay ops. Each Q\+NN op is lowered to a sequence of exisiting Relay ops. This is a target-\/independent pass. One can register the lowering/transformation function for this op using F\+T\+V\+M\+Qnn\+Canonicalize attr\+\_\+name for F\+T\+V\+M\+Legalize op attribute. Second, as opposed to Relay Legalize, this one legalizes only Q\+NN ops. One can register a transformation/legalization function for an op by using the F\+T\+V\+M\+Qnn\+Legalize attr\+\_\+name for F\+T\+V\+M\+Legalize op attribute. The isolation of Q\+NN and Relay Legalize gives us separation of concerns, leading to a better software practice. The legalization can be configured to happen per target. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Function Documentation}
+\index{tvm\+::relay\+::qnn\+::transform@{tvm\+::relay\+::qnn\+::transform}!Legalize@{Legalize}}
+\index{Legalize@{Legalize}!tvm\+::relay\+::qnn\+::transform@{tvm\+::relay\+::qnn\+::transform}}
+\subsubsection[{\texorpdfstring{Legalize()}{Legalize()}}]{\setlength{\rightskip}{0pt plus 5cm}Pass tvm\+::relay\+::qnn\+::transform\+::\+Legalize (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{namespacetvm_1_1relay_1_1qnn_1_1transform_a2323e3c38cc9ae1626cd98295b83e906}{}\label{namespacetvm_1_1relay_1_1qnn_1_1transform_a2323e3c38cc9ae1626cd98295b83e906}
+
+
+Legalizes a Q\+NN expr. Contains specifically two types of Legalizations. First, converts/\+Lowers an expression containing Q\+NN ops to an expression containing only core Relay ops. Each Q\+NN op is lowered to a sequence of exisiting Relay ops. This is a target-\/independent pass. One can register the lowering/transformation function for this op using F\+T\+V\+M\+Qnn\+Canonicalize attr\+\_\+name for F\+T\+V\+M\+Legalize op attribute. Second, as opposed to Relay Legalize, this one legalizes only Q\+NN ops. One can register a transformation/legalization function for an op by using the F\+T\+V\+M\+Qnn\+Legalize attr\+\_\+name for F\+T\+V\+M\+Legalize op attribute. The isolation of Q\+NN and Relay Legalize gives us separation of concerns, leading to a better software practice. The legalization can be configured to happen per target. 
+
+\begin{DoxyReturn}{Returns}
+The pass. 
+\end{DoxyReturn}

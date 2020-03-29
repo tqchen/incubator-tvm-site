@@ -1,0 +1,124 @@
+\hypertarget{classtvm_1_1relay_1_1MatchNode}{}\section{tvm\+:\+:relay\+:\+:Match\+Node Class Reference}
+\label{classtvm_1_1relay_1_1MatchNode}\index{tvm\+::relay\+::\+Match\+Node@{tvm\+::relay\+::\+Match\+Node}}
+
+
+\hyperlink{classtvm_1_1relay_1_1Match}{Match} container node.  
+
+
+
+
+{\ttfamily \#include $<$adt.\+h$>$}
+
+
+
+Inheritance diagram for tvm\+:\+:relay\+:\+:Match\+Node\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{classtvm_1_1relay_1_1MatchNode__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for tvm\+:\+:relay\+:\+:Match\+Node\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classtvm_1_1relay_1_1MatchNode__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{classtvm_1_1relay_1_1MatchNode_aa1ad8ab1b8aa92510a76dfdff2085234}{Visit\+Attrs} (\hyperlink{classtvm_1_1AttrVisitor}{tvm\+::\+Attr\+Visitor} $\ast$v)
+\item 
+bool \hyperlink{classtvm_1_1relay_1_1MatchNode_a87ee538523b1ff28de151f5ca521017f}{S\+Equal\+Reduce} (const \hyperlink{classtvm_1_1relay_1_1MatchNode}{Match\+Node} $\ast$other, \hyperlink{classtvm_1_1SEqualReducer}{S\+Equal\+Reducer} equal) const 
+\item 
+void \hyperlink{classtvm_1_1relay_1_1MatchNode_a49046df65cc279884e6b3c583278ddff}{S\+Hash\+Reduce} (\hyperlink{classtvm_1_1SHashReducer}{S\+Hash\+Reducer} hash\+\_\+reduce) const 
+\item 
+\hyperlink{classtvm_1_1relay_1_1MatchNode_a99c2538811c3229576114e345b1a5eb5}{T\+V\+M\+\_\+\+D\+E\+C\+L\+A\+R\+E\+\_\+\+F\+I\+N\+A\+L\+\_\+\+O\+B\+J\+E\+C\+T\+\_\+\+I\+N\+FO} (\hyperlink{classtvm_1_1relay_1_1MatchNode}{Match\+Node}, \hyperlink{namespacetvm_1_1relay_a387f18e050d016c52ea6c4781e7cff6c}{Expr\+Node})
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{namespacetvm_1_1relay_a5b84e3790f89bb3fad5c7911eeb99531}{Expr} \hyperlink{classtvm_1_1relay_1_1MatchNode_a2bbd42a0a2bdbdf35662f8866c6a5f97}{data}
+\begin{DoxyCompactList}\small\item\em The input being deconstructed. \end{DoxyCompactList}\item 
+\hyperlink{classtvm_1_1Array}{tvm\+::\+Array}$<$ \hyperlink{classtvm_1_1relay_1_1Clause}{Clause} $>$ \hyperlink{classtvm_1_1relay_1_1MatchNode_a1e35f1c0a12e235eb052cd48f6659cd6}{clauses}
+\begin{DoxyCompactList}\small\item\em The match node clauses. \end{DoxyCompactList}\item 
+bool \hyperlink{classtvm_1_1relay_1_1MatchNode_a17c6c8bd3fccfa7f86ace014db7fd694}{complete}
+\begin{DoxyCompactList}\small\item\em Should this match be complete (cover all cases)? \hyperlink{classtvm_1_1relay_1_1If}{If} yes, the type checker will generate an error if there are any missing cases. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static constexpr const char $\ast$ \hyperlink{classtvm_1_1relay_1_1MatchNode_ae09048eac4da99f3c259f431e376081d}{\+\_\+type\+\_\+key} = \char`\"{}relay.\+Match\char`\"{}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\hyperlink{classtvm_1_1relay_1_1Match}{Match} container node. 
+
+\subsection{Member Function Documentation}
+\index{tvm\+::relay\+::\+Match\+Node@{tvm\+::relay\+::\+Match\+Node}!S\+Equal\+Reduce@{S\+Equal\+Reduce}}
+\index{S\+Equal\+Reduce@{S\+Equal\+Reduce}!tvm\+::relay\+::\+Match\+Node@{tvm\+::relay\+::\+Match\+Node}}
+\subsubsection[{\texorpdfstring{S\+Equal\+Reduce(const Match\+Node $\ast$other, S\+Equal\+Reducer equal) const }{SEqualReduce(const MatchNode *other, SEqualReducer equal) const }}]{\setlength{\rightskip}{0pt plus 5cm}bool tvm\+::relay\+::\+Match\+Node\+::\+S\+Equal\+Reduce (
+\begin{DoxyParamCaption}
+\item[{const {\bf Match\+Node} $\ast$}]{other, }
+\item[{{\bf S\+Equal\+Reducer}}]{equal}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classtvm_1_1relay_1_1MatchNode_a87ee538523b1ff28de151f5ca521017f}{}\label{classtvm_1_1relay_1_1MatchNode_a87ee538523b1ff28de151f5ca521017f}
+\index{tvm\+::relay\+::\+Match\+Node@{tvm\+::relay\+::\+Match\+Node}!S\+Hash\+Reduce@{S\+Hash\+Reduce}}
+\index{S\+Hash\+Reduce@{S\+Hash\+Reduce}!tvm\+::relay\+::\+Match\+Node@{tvm\+::relay\+::\+Match\+Node}}
+\subsubsection[{\texorpdfstring{S\+Hash\+Reduce(\+S\+Hash\+Reducer hash\+\_\+reduce) const }{SHashReduce(SHashReducer hash_reduce) const }}]{\setlength{\rightskip}{0pt plus 5cm}void tvm\+::relay\+::\+Match\+Node\+::\+S\+Hash\+Reduce (
+\begin{DoxyParamCaption}
+\item[{{\bf S\+Hash\+Reducer}}]{hash\+\_\+reduce}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classtvm_1_1relay_1_1MatchNode_a49046df65cc279884e6b3c583278ddff}{}\label{classtvm_1_1relay_1_1MatchNode_a49046df65cc279884e6b3c583278ddff}
+\index{tvm\+::relay\+::\+Match\+Node@{tvm\+::relay\+::\+Match\+Node}!T\+V\+M\+\_\+\+D\+E\+C\+L\+A\+R\+E\+\_\+\+F\+I\+N\+A\+L\+\_\+\+O\+B\+J\+E\+C\+T\+\_\+\+I\+N\+FO@{T\+V\+M\+\_\+\+D\+E\+C\+L\+A\+R\+E\+\_\+\+F\+I\+N\+A\+L\+\_\+\+O\+B\+J\+E\+C\+T\+\_\+\+I\+N\+FO}}
+\index{T\+V\+M\+\_\+\+D\+E\+C\+L\+A\+R\+E\+\_\+\+F\+I\+N\+A\+L\+\_\+\+O\+B\+J\+E\+C\+T\+\_\+\+I\+N\+FO@{T\+V\+M\+\_\+\+D\+E\+C\+L\+A\+R\+E\+\_\+\+F\+I\+N\+A\+L\+\_\+\+O\+B\+J\+E\+C\+T\+\_\+\+I\+N\+FO}!tvm\+::relay\+::\+Match\+Node@{tvm\+::relay\+::\+Match\+Node}}
+\subsubsection[{\texorpdfstring{T\+V\+M\+\_\+\+D\+E\+C\+L\+A\+R\+E\+\_\+\+F\+I\+N\+A\+L\+\_\+\+O\+B\+J\+E\+C\+T\+\_\+\+I\+N\+F\+O(\+Match\+Node, Expr\+Node)}{TVM_DECLARE_FINAL_OBJECT_INFO(MatchNode, ExprNode)}}]{\setlength{\rightskip}{0pt plus 5cm}tvm\+::relay\+::\+Match\+Node\+::\+T\+V\+M\+\_\+\+D\+E\+C\+L\+A\+R\+E\+\_\+\+F\+I\+N\+A\+L\+\_\+\+O\+B\+J\+E\+C\+T\+\_\+\+I\+N\+FO (
+\begin{DoxyParamCaption}
+\item[{{\bf Match\+Node}}]{, }
+\item[{{\bf Expr\+Node}}]{}
+\end{DoxyParamCaption}
+)}\hypertarget{classtvm_1_1relay_1_1MatchNode_a99c2538811c3229576114e345b1a5eb5}{}\label{classtvm_1_1relay_1_1MatchNode_a99c2538811c3229576114e345b1a5eb5}
+\index{tvm\+::relay\+::\+Match\+Node@{tvm\+::relay\+::\+Match\+Node}!Visit\+Attrs@{Visit\+Attrs}}
+\index{Visit\+Attrs@{Visit\+Attrs}!tvm\+::relay\+::\+Match\+Node@{tvm\+::relay\+::\+Match\+Node}}
+\subsubsection[{\texorpdfstring{Visit\+Attrs(tvm\+::\+Attr\+Visitor $\ast$v)}{VisitAttrs(tvm::AttrVisitor *v)}}]{\setlength{\rightskip}{0pt plus 5cm}void tvm\+::relay\+::\+Match\+Node\+::\+Visit\+Attrs (
+\begin{DoxyParamCaption}
+\item[{{\bf tvm\+::\+Attr\+Visitor} $\ast$}]{v}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classtvm_1_1relay_1_1MatchNode_aa1ad8ab1b8aa92510a76dfdff2085234}{}\label{classtvm_1_1relay_1_1MatchNode_aa1ad8ab1b8aa92510a76dfdff2085234}
+
+
+\subsection{Member Data Documentation}
+\index{tvm\+::relay\+::\+Match\+Node@{tvm\+::relay\+::\+Match\+Node}!\+\_\+type\+\_\+key@{\+\_\+type\+\_\+key}}
+\index{\+\_\+type\+\_\+key@{\+\_\+type\+\_\+key}!tvm\+::relay\+::\+Match\+Node@{tvm\+::relay\+::\+Match\+Node}}
+\subsubsection[{\texorpdfstring{\+\_\+type\+\_\+key}{_type_key}}]{\setlength{\rightskip}{0pt plus 5cm}constexpr const char$\ast$ tvm\+::relay\+::\+Match\+Node\+::\+\_\+type\+\_\+key = \char`\"{}relay.\+Match\char`\"{}\hspace{0.3cm}{\ttfamily [static]}}\hypertarget{classtvm_1_1relay_1_1MatchNode_ae09048eac4da99f3c259f431e376081d}{}\label{classtvm_1_1relay_1_1MatchNode_ae09048eac4da99f3c259f431e376081d}
+\index{tvm\+::relay\+::\+Match\+Node@{tvm\+::relay\+::\+Match\+Node}!clauses@{clauses}}
+\index{clauses@{clauses}!tvm\+::relay\+::\+Match\+Node@{tvm\+::relay\+::\+Match\+Node}}
+\subsubsection[{\texorpdfstring{clauses}{clauses}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf tvm\+::\+Array}$<${\bf Clause}$>$ tvm\+::relay\+::\+Match\+Node\+::clauses}\hypertarget{classtvm_1_1relay_1_1MatchNode_a1e35f1c0a12e235eb052cd48f6659cd6}{}\label{classtvm_1_1relay_1_1MatchNode_a1e35f1c0a12e235eb052cd48f6659cd6}
+
+
+The match node clauses. 
+
+\index{tvm\+::relay\+::\+Match\+Node@{tvm\+::relay\+::\+Match\+Node}!complete@{complete}}
+\index{complete@{complete}!tvm\+::relay\+::\+Match\+Node@{tvm\+::relay\+::\+Match\+Node}}
+\subsubsection[{\texorpdfstring{complete}{complete}}]{\setlength{\rightskip}{0pt plus 5cm}bool tvm\+::relay\+::\+Match\+Node\+::complete}\hypertarget{classtvm_1_1relay_1_1MatchNode_a17c6c8bd3fccfa7f86ace014db7fd694}{}\label{classtvm_1_1relay_1_1MatchNode_a17c6c8bd3fccfa7f86ace014db7fd694}
+
+
+Should this match be complete (cover all cases)? \hyperlink{classtvm_1_1relay_1_1If}{If} yes, the type checker will generate an error if there are any missing cases. 
+
+\index{tvm\+::relay\+::\+Match\+Node@{tvm\+::relay\+::\+Match\+Node}!data@{data}}
+\index{data@{data}!tvm\+::relay\+::\+Match\+Node@{tvm\+::relay\+::\+Match\+Node}}
+\subsubsection[{\texorpdfstring{data}{data}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Expr} tvm\+::relay\+::\+Match\+Node\+::data}\hypertarget{classtvm_1_1relay_1_1MatchNode_a2bbd42a0a2bdbdf35662f8866c6a5f97}{}\label{classtvm_1_1relay_1_1MatchNode_a2bbd42a0a2bdbdf35662f8866c6a5f97}
+
+
+The input being deconstructed. 
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+include/tvm/relay/\hyperlink{relay_2adt_8h}{adt.\+h}\end{DoxyCompactItemize}

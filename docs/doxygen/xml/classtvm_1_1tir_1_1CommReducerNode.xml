@@ -1,0 +1,299 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="classtvm_1_1tir_1_1CommReducerNode" kind="class" language="C++" prot="public">
+    <compoundname>tvm::tir::CommReducerNode</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">Object</basecompoundref>
+    <includes refid="tir_2expr_8h" local="no">expr.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="classtvm_1_1tir_1_1CommReducerNode_1a3fc76ed5cf3a73c803ce1c74dedf7429" prot="public" static="no" mutable="no">
+        <type><ref refid="classtvm_1_1Array" kindref="compound">Array</ref>&lt; <ref refid="classtvm_1_1tir_1_1Var" kindref="compound">Var</ref> &gt;</type>
+        <definition>Array&lt;Var&gt; tvm::tir::CommReducerNode::lhs</definition>
+        <argsstring></argsstring>
+        <name>lhs</name>
+        <briefdescription>
+<para>The left argument of reducer. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/tir/expr.h" line="1107" column="1" bodyfile="include/tvm/tir/expr.h" bodystart="1107" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classtvm_1_1tir_1_1CommReducerNode_1a2902b0d55dd823febc6941fae9f32337" prot="public" static="no" mutable="no">
+        <type><ref refid="classtvm_1_1Array" kindref="compound">Array</ref>&lt; <ref refid="classtvm_1_1tir_1_1Var" kindref="compound">Var</ref> &gt;</type>
+        <definition>Array&lt;Var&gt; tvm::tir::CommReducerNode::rhs</definition>
+        <argsstring></argsstring>
+        <name>rhs</name>
+        <briefdescription>
+<para>The right argument of reducer. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/tir/expr.h" line="1109" column="1" bodyfile="include/tvm/tir/expr.h" bodystart="1109" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classtvm_1_1tir_1_1CommReducerNode_1a7030917568a088215da423fc56882814" prot="public" static="no" mutable="no">
+        <type><ref refid="classtvm_1_1Array" kindref="compound">Array</ref>&lt; <ref refid="classtvm_1_1PrimExpr" kindref="compound">PrimExpr</ref> &gt;</type>
+        <definition>Array&lt;PrimExpr&gt; tvm::tir::CommReducerNode::result</definition>
+        <argsstring></argsstring>
+        <name>result</name>
+        <briefdescription>
+<para>The result of reducer. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/tir/expr.h" line="1111" column="1" bodyfile="include/tvm/tir/expr.h" bodystart="1111" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classtvm_1_1tir_1_1CommReducerNode_1ad8cbb3f8e12db0a2a814c1cbde2e8b9c" prot="public" static="no" mutable="no">
+        <type><ref refid="classtvm_1_1Array" kindref="compound">Array</ref>&lt; <ref refid="classtvm_1_1PrimExpr" kindref="compound">PrimExpr</ref> &gt;</type>
+        <definition>Array&lt;PrimExpr&gt; tvm::tir::CommReducerNode::identity_element</definition>
+        <argsstring></argsstring>
+        <name>identity_element</name>
+        <briefdescription>
+<para>The identity element of reducer, which leaves other elements unchanged when combined with it, with respect to the binary operation of this reducer uses. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/tir/expr.h" line="1117" column="1" bodyfile="include/tvm/tir/expr.h" bodystart="1117" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-attrib">
+      <memberdef kind="variable" id="classtvm_1_1tir_1_1CommReducerNode_1a6018d3a9bcc12cc4b1705dc30161f917" prot="public" static="yes" mutable="no">
+        <type>constexpr const char *</type>
+        <definition>constexpr const char* tvm::tir::CommReducerNode::_type_key</definition>
+        <argsstring></argsstring>
+        <name>_type_key</name>
+        <initializer>= &quot;CommReducer&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/tir/expr.h" line="1148" column="1" bodyfile="include/tvm/tir/expr.h" bodystart="1148" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classtvm_1_1tir_1_1CommReducerNode_1a652ae6d8ae6bbc677d2a1dbfffe6d034" prot="public" static="yes" mutable="no">
+        <type>constexpr const bool</type>
+        <definition>constexpr const bool tvm::tir::CommReducerNode::_type_has_method_sequal_reduce</definition>
+        <argsstring></argsstring>
+        <name>_type_has_method_sequal_reduce</name>
+        <initializer>= true</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/tir/expr.h" line="1149" column="1" bodyfile="include/tvm/tir/expr.h" bodystart="1149" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classtvm_1_1tir_1_1CommReducerNode_1a17818bc2255e3900d4f5cd12a3605ed8" prot="public" static="yes" mutable="no">
+        <type>constexpr const bool</type>
+        <definition>constexpr const bool tvm::tir::CommReducerNode::_type_has_method_shash_reduce</definition>
+        <argsstring></argsstring>
+        <name>_type_has_method_shash_reduce</name>
+        <initializer>= true</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/tir/expr.h" line="1150" column="1" bodyfile="include/tvm/tir/expr.h" bodystart="1150" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classtvm_1_1tir_1_1CommReducerNode_1a676a4b831713ce7a8ad27dbbdc85864e" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classtvm_1_1Array" kindref="compound">Array</ref>&lt; <ref refid="classtvm_1_1PrimExpr" kindref="compound">PrimExpr</ref> &gt;</type>
+        <definition>Array&lt;PrimExpr&gt; tvm::tir::CommReducerNode::operator()</definition>
+        <argsstring>(Array&lt; PrimExpr &gt; a, Array&lt; PrimExpr &gt; b) const </argsstring>
+        <name>operator()</name>
+        <param>
+          <type><ref refid="classtvm_1_1Array" kindref="compound">Array</ref>&lt; <ref refid="classtvm_1_1PrimExpr" kindref="compound">PrimExpr</ref> &gt;</type>
+          <declname>a</declname>
+        </param>
+        <param>
+          <type><ref refid="classtvm_1_1Array" kindref="compound">Array</ref>&lt; <ref refid="classtvm_1_1PrimExpr" kindref="compound">PrimExpr</ref> &gt;</type>
+          <declname>b</declname>
+        </param>
+        <briefdescription>
+<para>Function call operator to combine a and b. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/tir/expr.h" line="1119" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classtvm_1_1tir_1_1CommReducerNode_1a91c948da93ea84120c01034af7d867d5" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void tvm::tir::CommReducerNode::VisitAttrs</definition>
+        <argsstring>(AttrVisitor *v)</argsstring>
+        <name>VisitAttrs</name>
+        <param>
+          <type><ref refid="classtvm_1_1AttrVisitor" kindref="compound">AttrVisitor</ref> *</type>
+          <declname>v</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/tir/expr.h" line="1126" column="1" bodyfile="include/tvm/tir/expr.h" bodystart="1126" bodyend="1131"/>
+      </memberdef>
+      <memberdef kind="function" id="classtvm_1_1tir_1_1CommReducerNode_1a7a679454a48aeb1def1ab92c9f2c923d" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool tvm::tir::CommReducerNode::SEqualReduce</definition>
+        <argsstring>(const CommReducerNode *other, SEqualReducer equal) const </argsstring>
+        <name>SEqualReduce</name>
+        <param>
+          <type>const <ref refid="classtvm_1_1tir_1_1CommReducerNode" kindref="compound">CommReducerNode</ref> *</type>
+          <declname>other</declname>
+        </param>
+        <param>
+          <type><ref refid="classtvm_1_1SEqualReducer" kindref="compound">SEqualReducer</ref></type>
+          <declname>equal</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/tir/expr.h" line="1133" column="1" bodyfile="include/tvm/tir/expr.h" bodystart="1133" bodyend="1139"/>
+      </memberdef>
+      <memberdef kind="function" id="classtvm_1_1tir_1_1CommReducerNode_1a663cc97035b41c567fd0bb4b90ee2f82" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void tvm::tir::CommReducerNode::SHashReduce</definition>
+        <argsstring>(SHashReducer hash_reduce) const </argsstring>
+        <name>SHashReduce</name>
+        <param>
+          <type><ref refid="classtvm_1_1SHashReducer" kindref="compound">SHashReducer</ref></type>
+          <declname>hash_reduce</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/tir/expr.h" line="1141" column="1" bodyfile="include/tvm/tir/expr.h" bodystart="1141" bodyend="1146"/>
+      </memberdef>
+      <memberdef kind="function" id="classtvm_1_1tir_1_1CommReducerNode_1a7fcf5b95cf5c253b018e6015a383bcd3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>tvm::tir::CommReducerNode::TVM_DECLARE_FINAL_OBJECT_INFO</definition>
+        <argsstring>(CommReducerNode, Object)</argsstring>
+        <name>TVM_DECLARE_FINAL_OBJECT_INFO</name>
+        <param>
+          <type><ref refid="classtvm_1_1tir_1_1CommReducerNode" kindref="compound">CommReducerNode</ref></type>
+        </param>
+        <param>
+          <type>Object</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/tir/expr.h" line="1151" column="1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="classtvm_1_1tir_1_1CommReducerNode_1a69338f35b7dcba5fa20d0595edd8e7b2" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classtvm_1_1tir_1_1CommReducer" kindref="compound">CommReducer</ref></type>
+        <definition>static CommReducer tvm::tir::CommReducerNode::make</definition>
+        <argsstring>(Array&lt; Var &gt; lhs, Array&lt; Var &gt; rhs, Array&lt; PrimExpr &gt; result, Array&lt; PrimExpr &gt; identity_element)</argsstring>
+        <name>make</name>
+        <param>
+          <type><ref refid="classtvm_1_1Array" kindref="compound">Array</ref>&lt; <ref refid="classtvm_1_1tir_1_1Var" kindref="compound">Var</ref> &gt;</type>
+          <declname>lhs</declname>
+        </param>
+        <param>
+          <type><ref refid="classtvm_1_1Array" kindref="compound">Array</ref>&lt; <ref refid="classtvm_1_1tir_1_1Var" kindref="compound">Var</ref> &gt;</type>
+          <declname>rhs</declname>
+        </param>
+        <param>
+          <type><ref refid="classtvm_1_1Array" kindref="compound">Array</ref>&lt; <ref refid="classtvm_1_1PrimExpr" kindref="compound">PrimExpr</ref> &gt;</type>
+          <declname>result</declname>
+        </param>
+        <param>
+          <type><ref refid="classtvm_1_1Array" kindref="compound">Array</ref>&lt; <ref refid="classtvm_1_1PrimExpr" kindref="compound">PrimExpr</ref> &gt;</type>
+          <declname>identity_element</declname>
+        </param>
+        <briefdescription>
+<para>construct <ref refid="classtvm_1_1tir_1_1CommReducer" kindref="compound">CommReducer</ref> from args, result and identity_element </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/tir/expr.h" line="1121" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>A commutative reducer node to represent a commutative binary operator with identity element. </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="4608">
+        <label>tvm::tir::CommReducerNode</label>
+        <link refid="classtvm_1_1tir_1_1CommReducerNode"/>
+        <childnode refid="4609" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="4609">
+        <label>Object</label>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="4613">
+        <label>ObjectRef</label>
+      </node>
+      <node id="4610">
+        <label>tvm::tir::CommReducerNode</label>
+        <link refid="classtvm_1_1tir_1_1CommReducerNode"/>
+        <childnode refid="4611" relation="public-inheritance">
+        </childnode>
+        <childnode refid="4612" relation="usage">
+          <edgelabel>+lhs</edgelabel>
+          <edgelabel>+rhs</edgelabel>
+        </childnode>
+        <childnode refid="4614" relation="usage">
+          <edgelabel>+identity_element</edgelabel>
+          <edgelabel>+result</edgelabel>
+        </childnode>
+      </node>
+      <node id="4611">
+        <label>Object</label>
+      </node>
+      <node id="4612">
+        <label>tvm::Array&lt; tvm::tir::Var &gt;</label>
+        <link refid="classtvm_1_1Array"/>
+        <childnode refid="4613" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="4614">
+        <label>tvm::Array&lt; tvm::PrimExpr &gt;</label>
+        <link refid="classtvm_1_1Array"/>
+        <childnode refid="4613" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="include/tvm/tir/expr.h" line="1104" column="1" bodyfile="include/tvm/tir/expr.h" bodystart="1104" bodyend="1152"/>
+    <listofallmembers>
+      <member refid="classtvm_1_1tir_1_1CommReducerNode_1a652ae6d8ae6bbc677d2a1dbfffe6d034" prot="public" virt="non-virtual"><scope>tvm::tir::CommReducerNode</scope><name>_type_has_method_sequal_reduce</name></member>
+      <member refid="classtvm_1_1tir_1_1CommReducerNode_1a17818bc2255e3900d4f5cd12a3605ed8" prot="public" virt="non-virtual"><scope>tvm::tir::CommReducerNode</scope><name>_type_has_method_shash_reduce</name></member>
+      <member refid="classtvm_1_1tir_1_1CommReducerNode_1a6018d3a9bcc12cc4b1705dc30161f917" prot="public" virt="non-virtual"><scope>tvm::tir::CommReducerNode</scope><name>_type_key</name></member>
+      <member refid="classtvm_1_1tir_1_1CommReducerNode_1ad8cbb3f8e12db0a2a814c1cbde2e8b9c" prot="public" virt="non-virtual"><scope>tvm::tir::CommReducerNode</scope><name>identity_element</name></member>
+      <member refid="classtvm_1_1tir_1_1CommReducerNode_1a3fc76ed5cf3a73c803ce1c74dedf7429" prot="public" virt="non-virtual"><scope>tvm::tir::CommReducerNode</scope><name>lhs</name></member>
+      <member refid="classtvm_1_1tir_1_1CommReducerNode_1a69338f35b7dcba5fa20d0595edd8e7b2" prot="public" virt="non-virtual"><scope>tvm::tir::CommReducerNode</scope><name>make</name></member>
+      <member refid="classtvm_1_1tir_1_1CommReducerNode_1a676a4b831713ce7a8ad27dbbdc85864e" prot="public" virt="non-virtual"><scope>tvm::tir::CommReducerNode</scope><name>operator()</name></member>
+      <member refid="classtvm_1_1tir_1_1CommReducerNode_1a7030917568a088215da423fc56882814" prot="public" virt="non-virtual"><scope>tvm::tir::CommReducerNode</scope><name>result</name></member>
+      <member refid="classtvm_1_1tir_1_1CommReducerNode_1a2902b0d55dd823febc6941fae9f32337" prot="public" virt="non-virtual"><scope>tvm::tir::CommReducerNode</scope><name>rhs</name></member>
+      <member refid="classtvm_1_1tir_1_1CommReducerNode_1a7a679454a48aeb1def1ab92c9f2c923d" prot="public" virt="non-virtual"><scope>tvm::tir::CommReducerNode</scope><name>SEqualReduce</name></member>
+      <member refid="classtvm_1_1tir_1_1CommReducerNode_1a663cc97035b41c567fd0bb4b90ee2f82" prot="public" virt="non-virtual"><scope>tvm::tir::CommReducerNode</scope><name>SHashReduce</name></member>
+      <member refid="classtvm_1_1tir_1_1CommReducerNode_1a7fcf5b95cf5c253b018e6015a383bcd3" prot="public" virt="non-virtual"><scope>tvm::tir::CommReducerNode</scope><name>TVM_DECLARE_FINAL_OBJECT_INFO</name></member>
+      <member refid="classtvm_1_1tir_1_1CommReducerNode_1a91c948da93ea84120c01034af7d867d5" prot="public" virt="non-virtual"><scope>tvm::tir::CommReducerNode</scope><name>VisitAttrs</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,1070 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="namespacetvm_1_1runtime" kind="namespace" language="C++">
+    <compoundname>tvm::runtime</compoundname>
+    <innerclass refid="classtvm_1_1runtime_1_1ADT" prot="public">tvm::runtime::ADT</innerclass>
+    <innerclass refid="classtvm_1_1runtime_1_1ADTObj" prot="public">tvm::runtime::ADTObj</innerclass>
+    <innerclass refid="classtvm_1_1runtime_1_1DataType" prot="public">tvm::runtime::DataType</innerclass>
+    <innerclass refid="classtvm_1_1runtime_1_1DeviceAPI" prot="public">tvm::runtime::DeviceAPI</innerclass>
+    <innerclass refid="classtvm_1_1runtime_1_1InplaceArrayBase" prot="public">tvm::runtime::InplaceArrayBase</innerclass>
+    <innerclass refid="classtvm_1_1runtime_1_1Module" prot="public">tvm::runtime::Module</innerclass>
+    <innerclass refid="classtvm_1_1runtime_1_1ModuleNode" prot="public">tvm::runtime::ModuleNode</innerclass>
+    <innerclass refid="classtvm_1_1runtime_1_1NDArray" prot="public">tvm::runtime::NDArray</innerclass>
+    <innerclass refid="classtvm_1_1runtime_1_1ObjAllocatorBase" prot="public">tvm::runtime::ObjAllocatorBase</innerclass>
+    <innerclass refid="classtvm_1_1runtime_1_1Object" prot="public">tvm::runtime::Object</innerclass>
+    <innerclass refid="structtvm_1_1runtime_1_1ObjectEqual" prot="public">tvm::runtime::ObjectEqual</innerclass>
+    <innerclass refid="structtvm_1_1runtime_1_1ObjectHash" prot="public">tvm::runtime::ObjectHash</innerclass>
+    <innerclass refid="classtvm_1_1runtime_1_1ObjectPtr" prot="public">tvm::runtime::ObjectPtr</innerclass>
+    <innerclass refid="classtvm_1_1runtime_1_1ObjectRef" prot="public">tvm::runtime::ObjectRef</innerclass>
+    <innerclass refid="structtvm_1_1runtime_1_1ObjectTypeChecker" prot="public">tvm::runtime::ObjectTypeChecker</innerclass>
+    <innerclass refid="structtvm_1_1runtime_1_1ObjectTypeChecker_3_01Array_3_01T_01_4_01_4" prot="public">tvm::runtime::ObjectTypeChecker&lt; Array&lt; T &gt; &gt;</innerclass>
+    <innerclass refid="structtvm_1_1runtime_1_1ObjectTypeChecker_3_01Map_3_01K_00_01V_01_4_01_4" prot="public">tvm::runtime::ObjectTypeChecker&lt; Map&lt; K, V &gt; &gt;</innerclass>
+    <innerclass refid="classtvm_1_1runtime_1_1PackedFunc" prot="public">tvm::runtime::PackedFunc</innerclass>
+    <innerclass refid="classtvm_1_1runtime_1_1Registry" prot="public">tvm::runtime::Registry</innerclass>
+    <innerclass refid="classtvm_1_1runtime_1_1SimpleObjAllocator" prot="public">tvm::runtime::SimpleObjAllocator</innerclass>
+    <innerclass refid="classtvm_1_1runtime_1_1String" prot="public">tvm::runtime::String</innerclass>
+    <innerclass refid="classtvm_1_1runtime_1_1StringObj" prot="public">tvm::runtime::StringObj</innerclass>
+    <innerclass refid="classtvm_1_1runtime_1_1TVMArgs" prot="public">tvm::runtime::TVMArgs</innerclass>
+    <innerclass refid="classtvm_1_1runtime_1_1TVMArgsSetter" prot="public">tvm::runtime::TVMArgsSetter</innerclass>
+    <innerclass refid="classtvm_1_1runtime_1_1TVMArgValue" prot="public">tvm::runtime::TVMArgValue</innerclass>
+    <innerclass refid="classtvm_1_1runtime_1_1TVMPODValue__" prot="public">tvm::runtime::TVMPODValue_</innerclass>
+    <innerclass refid="classtvm_1_1runtime_1_1TVMRetValue" prot="public">tvm::runtime::TVMRetValue</innerclass>
+    <innerclass refid="classtvm_1_1runtime_1_1TypedPackedFunc" prot="public">tvm::runtime::TypedPackedFunc</innerclass>
+    <innerclass refid="classtvm_1_1runtime_1_1TypedPackedFunc_3_01R_07Args_8_8_8_08_4" prot="public">tvm::runtime::TypedPackedFunc&lt; R(Args...)&gt;</innerclass>
+    <innernamespace refid="namespacetvm_1_1runtime_1_1symbol">tvm::runtime::symbol</innernamespace>
+    <innernamespace refid="namespacetvm_1_1runtime_1_1threading">tvm::runtime::threading</innernamespace>
+    <innernamespace refid="namespacetvm_1_1runtime_1_1vm">tvm::runtime::vm</innernamespace>
+      <sectiondef kind="enum">
+      <memberdef kind="enum" id="namespacetvm_1_1runtime_1a46fef1ca0ccc05473e9bb0a8c6b66619" prot="public" static="no">
+        <name>DeviceAttrKind</name>
+        <enumvalue id="namespacetvm_1_1runtime_1a46fef1ca0ccc05473e9bb0a8c6b66619afae6abc73ecd8ccc7f556da2f56e40eb" prot="public">
+          <name>kExist</name>
+          <initializer>= 0</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacetvm_1_1runtime_1a46fef1ca0ccc05473e9bb0a8c6b66619a1d8a0b62ddd4995257333b10b8e090c4" prot="public">
+          <name>kMaxThreadsPerBlock</name>
+          <initializer>= 1</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacetvm_1_1runtime_1a46fef1ca0ccc05473e9bb0a8c6b66619aa707ea3fd97e625364ad60daa89be2da" prot="public">
+          <name>kWarpSize</name>
+          <initializer>= 2</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacetvm_1_1runtime_1a46fef1ca0ccc05473e9bb0a8c6b66619adff7742765a9f6f50973675bf34ad264" prot="public">
+          <name>kMaxSharedMemoryPerBlock</name>
+          <initializer>= 3</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacetvm_1_1runtime_1a46fef1ca0ccc05473e9bb0a8c6b66619ad7ba910261fb30889f38c93be3fff05b" prot="public">
+          <name>kComputeVersion</name>
+          <initializer>= 4</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacetvm_1_1runtime_1a46fef1ca0ccc05473e9bb0a8c6b66619a0ac04959bdda893a53c05024409de9ca" prot="public">
+          <name>kDeviceName</name>
+          <initializer>= 5</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacetvm_1_1runtime_1a46fef1ca0ccc05473e9bb0a8c6b66619a90ebfaf325917db841553c65ce2ae630" prot="public">
+          <name>kMaxClockRate</name>
+          <initializer>= 6</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacetvm_1_1runtime_1a46fef1ca0ccc05473e9bb0a8c6b66619a463bdbf9ce7f9dc87a73d0b787da43cd" prot="public">
+          <name>kMultiProcessorCount</name>
+          <initializer>= 7</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacetvm_1_1runtime_1a46fef1ca0ccc05473e9bb0a8c6b66619a66b772d7dc87aede55f700793ab15991" prot="public">
+          <name>kMaxThreadDimensions</name>
+          <initializer>= 8</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacetvm_1_1runtime_1a46fef1ca0ccc05473e9bb0a8c6b66619ad7ca96c2095b4670de00ee1d0ca79201" prot="public">
+          <name>kGcnArch</name>
+          <initializer>= 9</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para>the query type into GetAttr </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/runtime/device_api.h" line="36" column="1" bodyfile="include/tvm/runtime/device_api.h" bodystart="36" bodyend="47"/>
+      </memberdef>
+      <memberdef kind="enum" id="namespacetvm_1_1runtime_1a7d395cd724f727e86358b73b5cdeb4e4" prot="public" static="no">
+        <name>TypeIndex</name>
+        <enumvalue id="namespacetvm_1_1runtime_1a7d395cd724f727e86358b73b5cdeb4e4a1b73281b45b997205b5082ba53300d6a" prot="public">
+          <name>kRoot</name>
+          <initializer>= 0</initializer>
+          <briefdescription>
+<para>Root object type. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacetvm_1_1runtime_1a7d395cd724f727e86358b73b5cdeb4e4a626309e16a9075cc8009c93adf3fbc9f" prot="public">
+          <name>kClosure</name>
+          <initializer>= 1</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacetvm_1_1runtime_1a7d395cd724f727e86358b73b5cdeb4e4a86d9bc218c0f54443cbbe3fcc5c8382e" prot="public">
+          <name>kVMADT</name>
+          <initializer>= 2</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacetvm_1_1runtime_1a7d395cd724f727e86358b73b5cdeb4e4af5474ebdbaaa19e977334eefa4bbd611" prot="public">
+          <name>kRuntimeModule</name>
+          <initializer>= 3</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacetvm_1_1runtime_1a7d395cd724f727e86358b73b5cdeb4e4a548302094bc9afb6bb14dc2a283c1014" prot="public">
+          <name>kStaticIndexEnd</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacetvm_1_1runtime_1a7d395cd724f727e86358b73b5cdeb4e4a633f5947b3a79c577b538cec7528f5aa" prot="public">
+          <name>kDynamic</name>
+          <initializer>= kStaticIndexEnd</initializer>
+          <briefdescription>
+<para><ref refid="classtvm_1_1Type" kindref="compound">Type</ref> index is allocated during runtime. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para>list of the type index. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/runtime/object.h" line="50" column="1" bodyfile="include/tvm/runtime/object.h" bodystart="50" bodyend="59"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="var">
+      <memberdef kind="variable" id="namespacetvm_1_1runtime_1ac8a77303649fb143634796b3dc50a286" prot="public" static="no" mutable="no">
+        <type>constexpr int</type>
+        <definition>constexpr int tvm::runtime::kAllocAlignment</definition>
+        <argsstring></argsstring>
+        <name>kAllocAlignment</name>
+        <initializer>= 64</initializer>
+        <briefdescription>
+<para>Number of bytes each allocation must align to. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/runtime/device_api.h" line="50" column="1" bodyfile="include/tvm/runtime/device_api.h" bodystart="50" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespacetvm_1_1runtime_1a8f5819cabea098a1818cf7cda40fdb1f" prot="public" static="no" mutable="no">
+        <type>constexpr int</type>
+        <definition>constexpr int tvm::runtime::kTempAllocaAlignment</definition>
+        <argsstring></argsstring>
+        <name>kTempAllocaAlignment</name>
+        <initializer>= 64</initializer>
+        <briefdescription>
+<para>Number of bytes each allocation must align to in temporary allocation. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/runtime/device_api.h" line="53" column="1" bodyfile="include/tvm/runtime/device_api.h" bodystart="53" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespacetvm_1_1runtime_1a2f6f769f6dbbbb24929b7c9f91a48c90" prot="public" static="no" mutable="no">
+        <type>constexpr int</type>
+        <definition>constexpr int tvm::runtime::kMaxStackAlloca</definition>
+        <argsstring></argsstring>
+        <name>kMaxStackAlloca</name>
+        <initializer>= 1024</initializer>
+        <briefdescription>
+<para>Maximum size that can be allocated on stack. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/runtime/device_api.h" line="56" column="1" bodyfile="include/tvm/runtime/device_api.h" bodystart="56" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespacetvm_1_1runtime_1a48cbe06e6c95ca6fabc20dd1cbacc2c9" prot="public" static="no" mutable="no">
+        <type>constexpr int</type>
+        <definition>constexpr int tvm::runtime::kRPCSessMask</definition>
+        <argsstring></argsstring>
+        <name>kRPCSessMask</name>
+        <initializer>= 128</initializer>
+        <briefdescription>
+<para>The device type bigger than this is RPC device. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/runtime/device_api.h" line="199" column="1" bodyfile="include/tvm/runtime/device_api.h" bodystart="199" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespacetvm_1_1runtime_1acf4599f17bfe79ae1fe8afc1af053b43" prot="public" static="no" mutable="no">
+        <type>constexpr uint64_t</type>
+        <definition>constexpr uint64_t tvm::runtime::kTVMNDArrayMagic</definition>
+        <argsstring></argsstring>
+        <name>kTVMNDArrayMagic</name>
+        <initializer>= 0xDD5E40F096B4A13F</initializer>
+        <briefdescription>
+<para>Magic number for <ref refid="classtvm_1_1runtime_1_1NDArray" kindref="compound">NDArray</ref> file. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/runtime/ndarray.h" line="406" column="1" bodyfile="include/tvm/runtime/ndarray.h" bodystart="406" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="namespacetvm_1_1runtime_1af22b89284299c81d0c1802199af446d7" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>std::ostream &amp;</type>
+        <definition>std::ostream&amp; tvm::runtime::operator&lt;&lt;</definition>
+        <argsstring>(std::ostream &amp;os, const ObjectRef &amp;n)</argsstring>
+        <name>operator&lt;&lt;</name>
+        <param>
+          <type>std::ostream &amp;</type>
+          <declname>os</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classtvm_1_1runtime_1_1ObjectRef" kindref="compound">ObjectRef</ref> &amp;</type>
+          <declname>n</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/node/repr_printer.h" line="62" column="1" bodyfile="include/tvm/node/repr_printer.h" bodystart="62" bodyend="65"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacetvm_1_1runtime_1ad01a53416152b68029d67190c3709d25" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int tvm::runtime::GetVectorBytes</definition>
+        <argsstring>(DataType dtype)</argsstring>
+        <name>GetVectorBytes</name>
+        <param>
+          <type><ref refid="classtvm_1_1runtime_1_1DataType" kindref="compound">DataType</ref></type>
+          <declname>dtype</declname>
+        </param>
+        <briefdescription>
+<para>Get the number of bytes needed in a vector. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>dtype</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The data type. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Number of bytes needed. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/runtime/data_type.h" line="234" column="1" bodyfile="include/tvm/runtime/data_type.h" bodystart="234" bodyend="246"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacetvm_1_1runtime_1adbabb7cfb79bfb6d802f65a9803e4eb6" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool tvm::runtime::TypeMatch</definition>
+        <argsstring>(DLDataType t, int code, int bits, int lanes=1)</argsstring>
+        <name>TypeMatch</name>
+        <param>
+          <type>DLDataType</type>
+          <declname>t</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>code</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>bits</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>lanes</declname>
+          <defval>1</defval>
+        </param>
+        <briefdescription>
+<para>Check whether type matches the given spec. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>t</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The type </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>code</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The type code. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>bits</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The number of bits to be matched. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>lanes</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The number of lanes in the type. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/runtime/data_type.h" line="255" column="1" bodyfile="include/tvm/runtime/data_type.h" bodystart="255" bodyend="257"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacetvm_1_1runtime_1aee574cee6755b0c2f1aa664c6967686f" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool tvm::runtime::TypeEqual</definition>
+        <argsstring>(DLDataType lhs, DLDataType rhs)</argsstring>
+        <name>TypeEqual</name>
+        <param>
+          <type>DLDataType</type>
+          <declname>lhs</declname>
+        </param>
+        <param>
+          <type>DLDataType</type>
+          <declname>rhs</declname>
+        </param>
+        <briefdescription>
+<para>Check whether two types are equal . </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>lhs</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The left operand. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>rhs</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The right operand. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/runtime/data_type.h" line="263" column="1" bodyfile="include/tvm/runtime/data_type.h" bodystart="263" bodyend="265"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacetvm_1_1runtime_1a9109e4efe269213052ed6a94853c0c00" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>const char *</type>
+        <definition>const char* tvm::runtime::DeviceName</definition>
+        <argsstring>(int type)</argsstring>
+        <name>DeviceName</name>
+        <param>
+          <type>int</type>
+          <declname>type</declname>
+        </param>
+        <briefdescription>
+<para>The name of Device API factory. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>type</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The device type. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>the device name. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/runtime/device_api.h" line="206" column="1" bodyfile="include/tvm/runtime/device_api.h" bodystart="206" bodyend="223"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacetvm_1_1runtime_1a0ce391c2492dfc73b5c6c6459693c6a6" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>std::ostream &amp;</type>
+        <definition>std::ostream&amp; tvm::runtime::operator&lt;&lt;</definition>
+        <argsstring>(std::ostream &amp;os, DLContext ctx)</argsstring>
+        <name>operator&lt;&lt;</name>
+        <param>
+          <type>std::ostream &amp;</type>
+          <declname>os</declname>
+        </param>
+        <param>
+          <type>DLContext</type>
+          <declname>ctx</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/runtime/device_api.h" line="225" column="1" bodyfile="include/tvm/runtime/device_api.h" bodystart="225" bodyend="233"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacetvm_1_1runtime_1a93466f4543eedc3925c66ed0e7ef2671" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename T</type>
+          </param>
+          <param>
+            <type>typename...</type>
+            <declname>Args</declname>
+            <defname>Args</defname>
+          </param>
+        </templateparamlist>
+        <type><ref refid="classtvm_1_1runtime_1_1ObjectPtr" kindref="compound">ObjectPtr</ref>&lt; T &gt;</type>
+        <definition>ObjectPtr&lt; T &gt; tvm::runtime::make_object</definition>
+        <argsstring>(Args &amp;&amp;...args)</argsstring>
+        <name>make_object</name>
+        <param>
+          <type>Args &amp;&amp;...</type>
+          <declname>args</declname>
+        </param>
+        <briefdescription>
+<para>Allocate an object using default allocator. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>args</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>arguments to the constructor. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="templateparam"><parameteritem>
+<parameternamelist>
+<parametername>T</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the node type. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The <ref refid="classtvm_1_1runtime_1_1ObjectPtr" kindref="compound">ObjectPtr</ref> to the allocated object. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/runtime/memory.h" line="40" column="1" bodyfile="include/tvm/runtime/memory.h" bodystart="202" bodyend="204"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacetvm_1_1runtime_1a144496aaff68cd251b6bc0a7b24ca041" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename ArrayType</type>
+          </param>
+          <param>
+            <type>typename ElemType</type>
+          </param>
+          <param>
+            <type>typename...</type>
+            <declname>Args</declname>
+            <defname>Args</defname>
+          </param>
+        </templateparamlist>
+        <type><ref refid="classtvm_1_1runtime_1_1ObjectPtr" kindref="compound">ObjectPtr</ref>&lt; ArrayType &gt;</type>
+        <definition>ObjectPtr&lt;ArrayType&gt; tvm::runtime::make_inplace_array_object</definition>
+        <argsstring>(size_t num_elems, Args &amp;&amp;...args)</argsstring>
+        <name>make_inplace_array_object</name>
+        <param>
+          <type>size_t</type>
+          <declname>num_elems</declname>
+        </param>
+        <param>
+          <type>Args &amp;&amp;...</type>
+          <declname>args</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/runtime/memory.h" line="207" column="1" bodyfile="include/tvm/runtime/memory.h" bodystart="207" bodyend="210"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacetvm_1_1runtime_1abbea0c23882ae01431ac7fe6506b32a7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool tvm::runtime::RuntimeEnabled</definition>
+        <argsstring>(const std::string &amp;target)</argsstring>
+        <name>RuntimeEnabled</name>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>target</declname>
+        </param>
+        <briefdescription>
+<para>Check if runtime module is enabled for target. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>target</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The target module name. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Whether runtime is enabled. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/runtime/module.h" line="219" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacetvm_1_1runtime_1a8fb37910dcd9bb6899e6a3a47f006514" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool tvm::runtime::SaveDLTensor</definition>
+        <argsstring>(dmlc::Stream *strm, const DLTensor *tensor)</argsstring>
+        <name>SaveDLTensor</name>
+        <param>
+          <type>dmlc::Stream *</type>
+          <declname>strm</declname>
+        </param>
+        <param>
+          <type>const DLTensor *</type>
+          <declname>tensor</declname>
+        </param>
+        <briefdescription>
+<para>Save a DLTensor to stream. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>strm</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The output stream </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>tensor</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The tensor to be saved. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/runtime/ndarray.h" line="208" column="1" bodyfile="include/tvm/runtime/ndarray.h" bodystart="408" bodyend="455"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacetvm_1_1runtime_1a59940b6d63dd4c5175c0fe875047c1cf" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>size_t</type>
+        <definition>size_t tvm::runtime::GetDataSize</definition>
+        <argsstring>(const DLTensor &amp;arr)</argsstring>
+        <name>GetDataSize</name>
+        <param>
+          <type>const DLTensor &amp;</type>
+          <declname>arr</declname>
+        </param>
+        <briefdescription>
+<para>return the size of data the DLTensor hold, in term of number of bytes </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>arr</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the input DLTensor </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>number of bytes of data in the DLTensor. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/runtime/ndarray.h" line="309" column="1" bodyfile="include/tvm/runtime/ndarray.h" bodystart="309" bodyend="316"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacetvm_1_1runtime_1adb2ed1227b418f5846d43d3234b52391" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool tvm::runtime::IsContiguous</definition>
+        <argsstring>(const DLTensor &amp;arr)</argsstring>
+        <name>IsContiguous</name>
+        <param>
+          <type>const DLTensor &amp;</type>
+          <declname>arr</declname>
+        </param>
+        <briefdescription>
+<para>check if a DLTensor is contiguous. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>arr</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The input DLTensor. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The check result. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/runtime/ndarray.h" line="323" column="1" bodyfile="include/tvm/runtime/ndarray.h" bodystart="323" bodyend="332"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacetvm_1_1runtime_1afdd7050eda88b079f0a962bd413a34ea" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classtvm_1_1runtime_1_1Object" kindref="compound">Object</ref> *</type>
+        <definition>Object* tvm::runtime::TVMArrayHandleToObjectHandle</definition>
+        <argsstring>(TVMArrayHandle handle)</argsstring>
+        <name>TVMArrayHandleToObjectHandle</name>
+        <param>
+          <type><ref refid="c__runtime__api_8h_1a73ca58cb32f4a4adf71d274dc1e27be4" kindref="member">TVMArrayHandle</ref></type>
+          <declname>handle</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/runtime/ndarray.h" line="400" column="1" bodyfile="include/tvm/runtime/ndarray.h" bodystart="400" bodyend="403"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacetvm_1_1runtime_1aa4a97de4fefd23aa5942c6a545544a05" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename RelayRefType</type>
+          </param>
+          <param>
+            <type>typename ObjectType</type>
+          </param>
+        </templateparamlist>
+        <type><ref refid="classtvm_1_1RelayRefType" kindref="compound">RelayRefType</ref></type>
+        <definition>RelayRefType tvm::runtime::GetRef</definition>
+        <argsstring>(const ObjectType *ptr)</argsstring>
+        <name>GetRef</name>
+        <param>
+          <type>const ObjectType *</type>
+          <declname>ptr</declname>
+        </param>
+        <briefdescription>
+<para>Get a reference type from a raw object ptr type. </para>        </briefdescription>
+        <detaileddescription>
+<para>It is always important to get a reference type if we want to return a value as reference or keep the object alive beyond the scope of the function.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>ptr</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The object pointer </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="templateparam"><parameteritem>
+<parameternamelist>
+<parametername>RefType</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The reference type </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>ObjectType</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The object type </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The corresponding RefType </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/runtime/object.h" line="326" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacetvm_1_1runtime_1a756a222aed384e208f32d35d3412c918" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename SubRef</type>
+          </param>
+          <param>
+            <type>typename BaseRef</type>
+          </param>
+        </templateparamlist>
+        <type>SubRef</type>
+        <definition>SubRef tvm::runtime::Downcast</definition>
+        <argsstring>(BaseRef ref)</argsstring>
+        <name>Downcast</name>
+        <param>
+          <type>BaseRef</type>
+          <declname>ref</declname>
+        </param>
+        <briefdescription>
+<para>Downcast a base reference type to a more specific type. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>ref</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The inptut reference </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The corresponding SubRef. </para></simplesect>
+<parameterlist kind="templateparam"><parameteritem>
+<parameternamelist>
+<parametername>SubRef</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The target specific reference type. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>BaseRef</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the current reference type. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/runtime/object.h" line="337" column="1" bodyfile="include/tvm/runtime/object.h" bodystart="871" bodyend="876"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacetvm_1_1runtime_1a46bcf7948293194c5b9c7db91da96381" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename BaseType</type>
+          </param>
+          <param>
+            <type>typename ObjectType</type>
+          </param>
+        </templateparamlist>
+        <type><ref refid="classtvm_1_1runtime_1_1ObjectPtr" kindref="compound">ObjectPtr</ref>&lt; BaseType &gt;</type>
+        <definition>ObjectPtr&lt;BaseType&gt; tvm::runtime::GetObjectPtr</definition>
+        <argsstring>(ObjectType *ptr)</argsstring>
+        <name>GetObjectPtr</name>
+        <param>
+          <type>ObjectType *</type>
+          <declname>ptr</declname>
+        </param>
+        <briefdescription>
+<para>Get an object ptr type from a raw object ptr. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>ptr</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The object pointer </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="templateparam"><parameteritem>
+<parameternamelist>
+<parametername>BaseType</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The reference type </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>ObjectType</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The object type </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The corresponding RefType </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/runtime/object.h" line="622" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacetvm_1_1runtime_1ad4c790ddcf38a1ef9800466cd0c1a0a2" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename RelayRefType</type>
+          </param>
+          <param>
+            <type>typename ObjType</type>
+          </param>
+        </templateparamlist>
+        <type><ref refid="classtvm_1_1RelayRefType" kindref="compound">RelayRefType</ref></type>
+        <definition>RelayRefType tvm::runtime::GetRef</definition>
+        <argsstring>(const ObjType *ptr)</argsstring>
+        <name>GetRef</name>
+        <param>
+          <type>const ObjType *</type>
+          <declname>ptr</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/runtime/object.h" line="857" column="1" bodyfile="include/tvm/runtime/object.h" bodystart="857" bodyend="861"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacetvm_1_1runtime_1ac2d903012aff56c2bd54ff66f48450c3" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename BaseType</type>
+          </param>
+          <param>
+            <type>typename ObjType</type>
+          </param>
+        </templateparamlist>
+        <type><ref refid="classtvm_1_1runtime_1_1ObjectPtr" kindref="compound">ObjectPtr</ref>&lt; BaseType &gt;</type>
+        <definition>ObjectPtr&lt;BaseType&gt; tvm::runtime::GetObjectPtr</definition>
+        <argsstring>(ObjType *ptr)</argsstring>
+        <name>GetObjectPtr</name>
+        <param>
+          <type>ObjType *</type>
+          <declname>ptr</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/runtime/object.h" line="864" column="1" bodyfile="include/tvm/runtime/object.h" bodystart="864" bodyend="868"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacetvm_1_1runtime_1a06a49d761ea6373557c24c01eaceb07d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>std::string</type>
+        <definition>std::string tvm::runtime::GetCustomTypeName</definition>
+        <argsstring>(uint8_t type_code)</argsstring>
+        <name>GetCustomTypeName</name>
+        <param>
+          <type>uint8_t</type>
+          <declname>type_code</declname>
+        </param>
+        <briefdescription>
+<para>Runtime utility for getting custom type name from code. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>type_code</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Custom type code </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Custom type name </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/runtime/packed_func.h" line="60" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacetvm_1_1runtime_1a1b8eedadc5a269b2f9614ce69a9932e7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool tvm::runtime::GetCustomTypeRegistered</definition>
+        <argsstring>(uint8_t type_code)</argsstring>
+        <name>GetCustomTypeRegistered</name>
+        <param>
+          <type>uint8_t</type>
+          <declname>type_code</declname>
+        </param>
+        <briefdescription>
+<para>Runtime utility for checking whether custom type is registered. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>type_code</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Custom type code </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Bool representing whether type is registered </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/runtime/packed_func.h" line="67" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacetvm_1_1runtime_1ac6d167947285dff3c780bd5d01ace9b9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>uint8_t</type>
+        <definition>uint8_t tvm::runtime::ParseCustomDatatype</definition>
+        <argsstring>(const std::string &amp;s, const char **scan)</argsstring>
+        <name>ParseCustomDatatype</name>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>s</declname>
+        </param>
+        <param>
+          <type>const char **</type>
+          <declname>scan</declname>
+        </param>
+        <briefdescription>
+<para>Runtime utility for parsing string of the form &quot;custom[&lt;typename&gt;]&quot;. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>s</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><ref refid="classtvm_1_1runtime_1_1String" kindref="compound">String</ref> to parse </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>scan</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>pointer to parsing pointer, which is scanning across s </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>type code of custom type parsed </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/runtime/packed_func.h" line="75" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacetvm_1_1runtime_1a504dc7b1fd693412576703f44bcc3cfb" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>const char *</type>
+        <definition>const char * tvm::runtime::TypeCode2Str</definition>
+        <argsstring>(int type_code)</argsstring>
+        <name>TypeCode2Str</name>
+        <param>
+          <type>int</type>
+          <declname>type_code</declname>
+        </param>
+        <briefdescription>
+<para>Convert type code to its name. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>type_code</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The type code . </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The name of type code. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/runtime/packed_func.h" line="367" column="1" bodyfile="include/tvm/runtime/packed_func.h" bodystart="998" bodyend="1017"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacetvm_1_1runtime_1a277f104e659f71cd8885744700016341" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>DLDataType</type>
+        <definition>DLDataType tvm::runtime::String2DLDataType</definition>
+        <argsstring>(std::string s)</argsstring>
+        <name>String2DLDataType</name>
+        <param>
+          <type>std::string</type>
+          <declname>s</declname>
+        </param>
+        <briefdescription>
+<para>convert a string to TVM type. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>s</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The string to be converted. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The corresponding tvm type. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/runtime/packed_func.h" line="374" column="1" bodyfile="include/tvm/runtime/packed_func.h" bodystart="1047" bodyend="1086"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacetvm_1_1runtime_1ac360f2d9815036ab1b4d84d9cfb46b4f" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>std::string</type>
+        <definition>std::string tvm::runtime::DLDataType2String</definition>
+        <argsstring>(DLDataType t)</argsstring>
+        <name>DLDataType2String</name>
+        <param>
+          <type>DLDataType</type>
+          <declname>t</declname>
+        </param>
+        <briefdescription>
+<para>convert a TVM type to string. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>t</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The type to be converted. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The corresponding tvm type in string. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/runtime/packed_func.h" line="381" column="1" bodyfile="include/tvm/runtime/packed_func.h" bodystart="1040" bodyend="1045"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacetvm_1_1runtime_1a11ed99740d7bb838d96617de83ff2363" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>std::ostream &amp;</type>
+        <definition>std::ostream&amp; tvm::runtime::operator&lt;&lt;</definition>
+        <argsstring>(std::ostream &amp;os, DLDataType t)</argsstring>
+        <name>operator&lt;&lt;</name>
+        <param>
+          <type>std::ostream &amp;</type>
+          <declname>os</declname>
+        </param>
+        <param>
+          <type>DLDataType</type>
+          <declname>t</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/runtime/packed_func.h" line="1019" column="1" bodyfile="include/tvm/runtime/packed_func.h" bodystart="1019" bodyend="1034"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacetvm_1_1runtime_1a59d447b7bdac52d26bca3422fe098f6f" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>std::ostream &amp;</type>
+        <definition>std::ostream&amp; tvm::runtime::operator&lt;&lt;</definition>
+        <argsstring>(std::ostream &amp;os, const DataType &amp;dtype)</argsstring>
+        <name>operator&lt;&lt;</name>
+        <param>
+          <type>std::ostream &amp;</type>
+          <declname>os</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classtvm_1_1runtime_1_1DataType" kindref="compound">DataType</ref> &amp;</type>
+          <declname>dtype</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/runtime/packed_func.h" line="1036" column="1" bodyfile="include/tvm/runtime/packed_func.h" bodystart="1036" bodyend="1038"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="include/tvm/ir/expr.h" line="452" column="1"/>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,147 @@
+\hypertarget{classtvm_1_1tir_1_1SeqStmt}{}\section{tvm\+:\+:tir\+:\+:Seq\+Stmt Class Reference}
+\label{classtvm_1_1tir_1_1SeqStmt}\index{tvm\+::tir\+::\+Seq\+Stmt@{tvm\+::tir\+::\+Seq\+Stmt}}
+
+
+Sequence statement.  
+
+
+
+
+{\ttfamily \#include $<$stmt.\+h$>$}
+
+
+
+Inheritance diagram for tvm\+:\+:tir\+:\+:Seq\+Stmt\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=230pt]{classtvm_1_1tir_1_1SeqStmt__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for tvm\+:\+:tir\+:\+:Seq\+Stmt\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=230pt]{classtvm_1_1tir_1_1SeqStmt__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \hyperlink{classtvm_1_1tir_1_1SeqStmt_1_1Flattener}{Flattener}
+\begin{DoxyCompactList}\small\item\em Helper class to flatten sequence of arguments into \hyperlink{classtvm_1_1Array}{Array}. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classtvm_1_1tir_1_1SeqStmt_a195b9e5e7b1ac5e3b4369ecf0fe507ef}{Seq\+Stmt} (\hyperlink{classtvm_1_1Array}{Array}$<$ \hyperlink{classtvm_1_1tir_1_1Stmt}{Stmt} $>$ seq)
+\begin{DoxyCompactList}\small\item\em Construct \hyperlink{classtvm_1_1tir_1_1SeqStmt}{Seq\+Stmt}. \end{DoxyCompactList}\item 
+size\+\_\+t \hyperlink{classtvm_1_1tir_1_1SeqStmt_acef74f73785a3c87b06b5f54f04434c5}{size} () const 
+\item 
+\hyperlink{classtvm_1_1tir_1_1Stmt}{Stmt} \hyperlink{classtvm_1_1tir_1_1SeqStmt_a524c9780854c9957a3a1ea5f6e08a492}{operator\mbox{[}$\,$\mbox{]}} (size\+\_\+t index) const 
+\begin{DoxyCompactList}\small\item\em Get the index-\/th element in the sequence. \end{DoxyCompactList}\item 
+\hyperlink{classtvm_1_1tir_1_1SeqStmt_a49bd1ec442b841a84e01d7c2a1db85ea}{T\+V\+M\+\_\+\+D\+E\+F\+I\+N\+E\+\_\+\+O\+B\+J\+E\+C\+T\+\_\+\+R\+E\+F\+\_\+\+M\+E\+T\+H\+O\+DS} (\hyperlink{classtvm_1_1tir_1_1SeqStmt}{Seq\+Stmt}, \hyperlink{classtvm_1_1tir_1_1Stmt}{Stmt}, \hyperlink{classtvm_1_1tir_1_1SeqStmtNode}{Seq\+Stmt\+Node})
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\footnotesize template$<$typename... Args$>$ }\\static \hyperlink{classtvm_1_1tir_1_1Stmt}{Stmt} \hyperlink{classtvm_1_1tir_1_1SeqStmt_a89a52de7cbea6a0aea4de70cebbe220c}{Flatten} (Args \&\&...seq\+\_\+args)
+\begin{DoxyCompactList}\small\item\em Construct a sequence statement by flattening all the arrays and sequences in the arguments recursively. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Sequence statement. 
+
+\subsection{Constructor \& Destructor Documentation}
+\index{tvm\+::tir\+::\+Seq\+Stmt@{tvm\+::tir\+::\+Seq\+Stmt}!Seq\+Stmt@{Seq\+Stmt}}
+\index{Seq\+Stmt@{Seq\+Stmt}!tvm\+::tir\+::\+Seq\+Stmt@{tvm\+::tir\+::\+Seq\+Stmt}}
+\subsubsection[{\texorpdfstring{Seq\+Stmt(\+Array$<$ Stmt $>$ seq)}{SeqStmt(Array< Stmt > seq)}}]{\setlength{\rightskip}{0pt plus 5cm}tvm\+::tir\+::\+Seq\+Stmt\+::\+Seq\+Stmt (
+\begin{DoxyParamCaption}
+\item[{{\bf Array}$<$ {\bf Stmt} $>$}]{seq}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [explicit]}}\hypertarget{classtvm_1_1tir_1_1SeqStmt_a195b9e5e7b1ac5e3b4369ecf0fe507ef}{}\label{classtvm_1_1tir_1_1SeqStmt_a195b9e5e7b1ac5e3b4369ecf0fe507ef}
+
+
+Construct \hyperlink{classtvm_1_1tir_1_1SeqStmt}{Seq\+Stmt}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em seq} & The sequence. \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\index{tvm\+::tir\+::\+Seq\+Stmt@{tvm\+::tir\+::\+Seq\+Stmt}!Flatten@{Flatten}}
+\index{Flatten@{Flatten}!tvm\+::tir\+::\+Seq\+Stmt@{tvm\+::tir\+::\+Seq\+Stmt}}
+\subsubsection[{\texorpdfstring{Flatten(\+Args \&\&...\+seq\+\_\+args)}{Flatten(Args &&...seq_args)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename... Args$>$ static {\bf Stmt} tvm\+::tir\+::\+Seq\+Stmt\+::\+Flatten (
+\begin{DoxyParamCaption}
+\item[{Args \&\&...}]{seq\+\_\+args}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}\hypertarget{classtvm_1_1tir_1_1SeqStmt_a89a52de7cbea6a0aea4de70cebbe220c}{}\label{classtvm_1_1tir_1_1SeqStmt_a89a52de7cbea6a0aea4de70cebbe220c}
+
+
+Construct a sequence statement by flattening all the arrays and sequences in the arguments recursively. 
+
+
+\begin{DoxyItemize}
+\item When an argument is nullptr, it will be ignored.
+\item When an argument is an array or a \hyperlink{classtvm_1_1tir_1_1SeqStmt}{Seq\+Stmt}, it will be flattened recursively.
+\item When an argument is a consumer block in Producer\+Consumer, the consumer tag will be dropped as such information is not useful in lowering.
+\item A normal \hyperlink{classtvm_1_1tir_1_1Stmt}{Stmt} will be appended to the end of the sequence.
+\end{DoxyItemize}
+
+\begin{DoxyNote}{Note}
+This function can directly return an element if it is the only element in the sequence.
+\end{DoxyNote}
+
+\begin{DoxyParams}{Parameters}
+{\em seq\+\_\+args} & The list of arguments to be flattened. \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyTemplParams}{Template Parameters}
+{\em Args} & arguments \\
+\hline
+\end{DoxyTemplParams}
+\begin{DoxyReturn}{Returns}
+The constructed statement 
+\end{DoxyReturn}
+\index{tvm\+::tir\+::\+Seq\+Stmt@{tvm\+::tir\+::\+Seq\+Stmt}!operator\mbox{[}$\,$\mbox{]}@{operator[]}}
+\index{operator\mbox{[}$\,$\mbox{]}@{operator[]}!tvm\+::tir\+::\+Seq\+Stmt@{tvm\+::tir\+::\+Seq\+Stmt}}
+\subsubsection[{\texorpdfstring{operator[](size\+\_\+t index) const }{operator[](size_t index) const }}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Stmt} tvm\+::tir\+::\+Seq\+Stmt\+::operator\mbox{[}$\,$\mbox{]} (
+\begin{DoxyParamCaption}
+\item[{size\+\_\+t}]{index}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classtvm_1_1tir_1_1SeqStmt_a524c9780854c9957a3a1ea5f6e08a492}{}\label{classtvm_1_1tir_1_1SeqStmt_a524c9780854c9957a3a1ea5f6e08a492}
+
+
+Get the index-\/th element in the sequence. 
+
+\index{tvm\+::tir\+::\+Seq\+Stmt@{tvm\+::tir\+::\+Seq\+Stmt}!size@{size}}
+\index{size@{size}!tvm\+::tir\+::\+Seq\+Stmt@{tvm\+::tir\+::\+Seq\+Stmt}}
+\subsubsection[{\texorpdfstring{size() const }{size() const }}]{\setlength{\rightskip}{0pt plus 5cm}size\+\_\+t tvm\+::tir\+::\+Seq\+Stmt\+::size (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classtvm_1_1tir_1_1SeqStmt_acef74f73785a3c87b06b5f54f04434c5}{}\label{classtvm_1_1tir_1_1SeqStmt_acef74f73785a3c87b06b5f54f04434c5}
+\begin{DoxyReturn}{Returns}
+get the size of the sequence 
+\end{DoxyReturn}
+\index{tvm\+::tir\+::\+Seq\+Stmt@{tvm\+::tir\+::\+Seq\+Stmt}!T\+V\+M\+\_\+\+D\+E\+F\+I\+N\+E\+\_\+\+O\+B\+J\+E\+C\+T\+\_\+\+R\+E\+F\+\_\+\+M\+E\+T\+H\+O\+DS@{T\+V\+M\+\_\+\+D\+E\+F\+I\+N\+E\+\_\+\+O\+B\+J\+E\+C\+T\+\_\+\+R\+E\+F\+\_\+\+M\+E\+T\+H\+O\+DS}}
+\index{T\+V\+M\+\_\+\+D\+E\+F\+I\+N\+E\+\_\+\+O\+B\+J\+E\+C\+T\+\_\+\+R\+E\+F\+\_\+\+M\+E\+T\+H\+O\+DS@{T\+V\+M\+\_\+\+D\+E\+F\+I\+N\+E\+\_\+\+O\+B\+J\+E\+C\+T\+\_\+\+R\+E\+F\+\_\+\+M\+E\+T\+H\+O\+DS}!tvm\+::tir\+::\+Seq\+Stmt@{tvm\+::tir\+::\+Seq\+Stmt}}
+\subsubsection[{\texorpdfstring{T\+V\+M\+\_\+\+D\+E\+F\+I\+N\+E\+\_\+\+O\+B\+J\+E\+C\+T\+\_\+\+R\+E\+F\+\_\+\+M\+E\+T\+H\+O\+D\+S(\+Seq\+Stmt, Stmt, Seq\+Stmt\+Node)}{TVM_DEFINE_OBJECT_REF_METHODS(SeqStmt, Stmt, SeqStmtNode)}}]{\setlength{\rightskip}{0pt plus 5cm}tvm\+::tir\+::\+Seq\+Stmt\+::\+T\+V\+M\+\_\+\+D\+E\+F\+I\+N\+E\+\_\+\+O\+B\+J\+E\+C\+T\+\_\+\+R\+E\+F\+\_\+\+M\+E\+T\+H\+O\+DS (
+\begin{DoxyParamCaption}
+\item[{{\bf Seq\+Stmt}}]{, }
+\item[{{\bf Stmt}}]{, }
+\item[{{\bf Seq\+Stmt\+Node}}]{}
+\end{DoxyParamCaption}
+)}\hypertarget{classtvm_1_1tir_1_1SeqStmt_a49bd1ec442b841a84e01d7c2a1db85ea}{}\label{classtvm_1_1tir_1_1SeqStmt_a49bd1ec442b841a84e01d7c2a1db85ea}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+include/tvm/tir/\hyperlink{stmt_8h}{stmt.\+h}\end{DoxyCompactItemize}

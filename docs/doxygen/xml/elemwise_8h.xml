@@ -1,0 +1,1077 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="elemwise_8h" kind="file" language="C++">
+    <compoundname>elemwise.h</compoundname>
+    <includes refid="tir_2expr_8h" local="no">tvm/tir/expr.h</includes>
+    <includes refid="ir__pass_8h" local="no">tvm/tir/ir_pass.h</includes>
+    <includes refid="tags_8h" local="no">topi/tags.h</includes>
+    <includes local="no">string</includes>
+    <includes refid="broadcast_8h" local="yes">broadcast.h</includes>
+    <includedby refid="reduction_8h" local="no">topi/include/topi/reduction.h</includedby>
+    <incdepgraph>
+      <node id="18317">
+        <label>tvm/arith/int_set.h</label>
+        <link refid="int__set_8h"/>
+        <childnode refid="18309" relation="include">
+        </childnode>
+        <childnode refid="18274" relation="include">
+        </childnode>
+        <childnode refid="18294" relation="include">
+        </childnode>
+      </node>
+      <node id="18310">
+        <label>tvm/ir/span.h</label>
+        <link refid="span_8h"/>
+        <childnode refid="18280" relation="include">
+        </childnode>
+        <childnode refid="18275" relation="include">
+        </childnode>
+        <childnode refid="18283" relation="include">
+        </childnode>
+      </node>
+      <node id="18285">
+        <label>atomic</label>
+      </node>
+      <node id="18321">
+        <label>tvm/tir/buffer.h</label>
+        <link refid="buffer_8h"/>
+        <childnode refid="18304" relation="include">
+        </childnode>
+        <childnode refid="18274" relation="include">
+        </childnode>
+        <childnode refid="18319" relation="include">
+        </childnode>
+        <childnode refid="18283" relation="include">
+        </childnode>
+      </node>
+      <node id="18315">
+        <label>tvm/te/tensor.h</label>
+        <link refid="tensor_8h"/>
+        <childnode refid="18304" relation="include">
+        </childnode>
+        <childnode refid="18316" relation="include">
+        </childnode>
+        <childnode refid="18274" relation="include">
+        </childnode>
+        <childnode refid="18319" relation="include">
+        </childnode>
+        <childnode refid="18283" relation="include">
+        </childnode>
+        <childnode refid="18293" relation="include">
+        </childnode>
+        <childnode refid="18284" relation="include">
+        </childnode>
+        <childnode refid="18282" relation="include">
+        </childnode>
+      </node>
+      <node id="18299">
+        <label>functional</label>
+      </node>
+      <node id="18301">
+        <label>limits</label>
+      </node>
+      <node id="18324">
+        <label>tvm/ir/function.h</label>
+        <link refid="ir_2function_8h"/>
+        <childnode refid="18309" relation="include">
+        </childnode>
+        <childnode refid="18325" relation="include">
+        </childnode>
+        <childnode refid="18282" relation="include">
+        </childnode>
+        <childnode refid="18283" relation="include">
+        </childnode>
+      </node>
+      <node id="18290">
+        <label>tvm/runtime/module.h</label>
+        <link refid="runtime_2module_8h"/>
+        <childnode refid="18291" relation="include">
+        </childnode>
+        <childnode refid="18276" relation="include">
+        </childnode>
+        <childnode refid="18280" relation="include">
+        </childnode>
+        <childnode refid="18286" relation="include">
+        </childnode>
+        <childnode refid="18292" relation="include">
+        </childnode>
+        <childnode refid="18293" relation="include">
+        </childnode>
+        <childnode refid="18283" relation="include">
+        </childnode>
+        <childnode refid="18294" relation="include">
+        </childnode>
+        <childnode refid="18289" relation="include">
+        </childnode>
+      </node>
+      <node id="18289">
+        <label>tvm/runtime/packed_func.h</label>
+        <link refid="packed__func_8h"/>
+        <childnode refid="18281" relation="include">
+        </childnode>
+        <childnode refid="18276" relation="include">
+        </childnode>
+        <childnode refid="18290" relation="include">
+        </childnode>
+        <childnode refid="18295" relation="include">
+        </childnode>
+        <childnode refid="18298" relation="include">
+        </childnode>
+        <childnode refid="18280" relation="include">
+        </childnode>
+        <childnode refid="18299" relation="include">
+        </childnode>
+        <childnode refid="18300" relation="include">
+        </childnode>
+        <childnode refid="18293" relation="include">
+        </childnode>
+        <childnode refid="18283" relation="include">
+        </childnode>
+        <childnode refid="18301" relation="include">
+        </childnode>
+        <childnode refid="18292" relation="include">
+        </childnode>
+        <childnode refid="18284" relation="include">
+        </childnode>
+        <childnode refid="18282" relation="include">
+        </childnode>
+      </node>
+      <node id="18303">
+        <label>tvm/node/functor.h</label>
+        <link refid="functor_8h"/>
+        <childnode refid="18281" relation="include">
+        </childnode>
+        <childnode refid="18280" relation="include">
+        </childnode>
+        <childnode refid="18293" relation="include">
+        </childnode>
+        <childnode refid="18282" relation="include">
+        </childnode>
+        <childnode refid="18284" relation="include">
+        </childnode>
+      </node>
+      <node id="18323">
+        <label>tvm/tir/function.h</label>
+        <link refid="tir_2function_8h"/>
+        <childnode refid="18324" relation="include">
+        </childnode>
+        <childnode refid="18274" relation="include">
+        </childnode>
+        <childnode refid="18321" relation="include">
+        </childnode>
+        <childnode refid="18318" relation="include">
+        </childnode>
+        <childnode refid="18283" relation="include">
+        </childnode>
+      </node>
+      <node id="18320">
+        <label>tvm/te/tensor_intrin.h</label>
+        <link refid="tensor__intrin_8h"/>
+        <childnode refid="18315" relation="include">
+        </childnode>
+        <childnode refid="18321" relation="include">
+        </childnode>
+        <childnode refid="18283" relation="include">
+        </childnode>
+      </node>
+      <node id="18280">
+        <label>tvm/runtime/object.h</label>
+        <link refid="object_8h"/>
+        <childnode refid="18281" relation="include">
+        </childnode>
+        <childnode refid="18276" relation="include">
+        </childnode>
+        <childnode refid="18282" relation="include">
+        </childnode>
+        <childnode refid="18283" relation="include">
+        </childnode>
+        <childnode refid="18284" relation="include">
+        </childnode>
+        <childnode refid="18285" relation="include">
+        </childnode>
+      </node>
+      <node id="18278">
+        <label>stdint.h</label>
+      </node>
+      <node id="18295">
+        <label>tvm/runtime/ndarray.h</label>
+        <link refid="ndarray_8h"/>
+        <childnode refid="18276" relation="include">
+        </childnode>
+        <childnode refid="18280" relation="include">
+        </childnode>
+        <childnode refid="18296" relation="include">
+        </childnode>
+        <childnode refid="18285" relation="include">
+        </childnode>
+        <childnode refid="18293" relation="include">
+        </childnode>
+        <childnode refid="18284" relation="include">
+        </childnode>
+      </node>
+      <node id="18306">
+        <label>tvm/node/structural_hash.h</label>
+        <link refid="structural__hash_8h"/>
+        <childnode refid="18298" relation="include">
+        </childnode>
+        <childnode refid="18303" relation="include">
+        </childnode>
+        <childnode refid="18304" relation="include">
+        </childnode>
+        <childnode refid="18283" relation="include">
+        </childnode>
+        <childnode refid="18299" relation="include">
+        </childnode>
+      </node>
+      <node id="18334">
+        <label>topi/detail/constant_utils.h</label>
+        <link refid="constant__utils_8h"/>
+        <childnode refid="18274" relation="include">
+        </childnode>
+        <childnode refid="18313" relation="include">
+        </childnode>
+        <childnode refid="18283" relation="include">
+        </childnode>
+        <childnode refid="18293" relation="include">
+        </childnode>
+      </node>
+      <node id="18333">
+        <label>tvm/arith/analyzer.h</label>
+        <link refid="analyzer_8h"/>
+        <childnode refid="18322" relation="include">
+        </childnode>
+        <childnode refid="18309" relation="include">
+        </childnode>
+        <childnode refid="18317" relation="include">
+        </childnode>
+        <childnode refid="18293" relation="include">
+        </childnode>
+        <childnode refid="18294" relation="include">
+        </childnode>
+        <childnode refid="18292" relation="include">
+        </childnode>
+        <childnode refid="18301" relation="include">
+        </childnode>
+      </node>
+      <node id="18274">
+        <label>tvm/tir/expr.h</label>
+        <link refid="tir_2expr_8h"/>
+        <childnode refid="18275" relation="include">
+        </childnode>
+        <childnode refid="18304" relation="include">
+        </childnode>
+        <childnode refid="18303" relation="include">
+        </childnode>
+        <childnode refid="18276" relation="include">
+        </childnode>
+        <childnode refid="18298" relation="include">
+        </childnode>
+        <childnode refid="18309" relation="include">
+        </childnode>
+        <childnode refid="18283" relation="include">
+        </childnode>
+        <childnode refid="18312" relation="include">
+        </childnode>
+        <childnode refid="18294" relation="include">
+        </childnode>
+        <childnode refid="18308" relation="include">
+        </childnode>
+        <childnode refid="18301" relation="include">
+        </childnode>
+        <childnode refid="18284" relation="include">
+        </childnode>
+      </node>
+      <node id="18283">
+        <label>string</label>
+      </node>
+      <node id="18326">
+        <label>dmlc/common.h</label>
+      </node>
+      <node id="18307">
+        <label>tvm/node/repr_printer.h</label>
+        <link refid="repr__printer_8h"/>
+        <childnode refid="18303" relation="include">
+        </childnode>
+        <childnode refid="18308" relation="include">
+        </childnode>
+      </node>
+      <node id="18304">
+        <label>tvm/node/container.h</label>
+        <link refid="node_2container_8h"/>
+        <childnode refid="18280" relation="include">
+        </childnode>
+        <childnode refid="18286" relation="include">
+        </childnode>
+        <childnode refid="18289" relation="include">
+        </childnode>
+        <childnode refid="18282" relation="include">
+        </childnode>
+        <childnode refid="18293" relation="include">
+        </childnode>
+        <childnode refid="18305" relation="include">
+        </childnode>
+        <childnode refid="18294" relation="include">
+        </childnode>
+        <childnode refid="18284" relation="include">
+        </childnode>
+        <childnode refid="18283" relation="include">
+        </childnode>
+      </node>
+      <node id="18328">
+        <label>unordered_set</label>
+      </node>
+      <node id="18332">
+        <label>tvm/te/operation.h</label>
+        <link refid="operation_8h"/>
+        <childnode refid="18333" relation="include">
+        </childnode>
+        <childnode refid="18315" relation="include">
+        </childnode>
+        <childnode refid="18314" relation="include">
+        </childnode>
+        <childnode refid="18274" relation="include">
+        </childnode>
+        <childnode refid="18319" relation="include">
+        </childnode>
+        <childnode refid="18321" relation="include">
+        </childnode>
+        <childnode refid="18283" relation="include">
+        </childnode>
+        <childnode refid="18293" relation="include">
+        </childnode>
+        <childnode refid="18294" relation="include">
+        </childnode>
+      </node>
+      <node id="18279">
+        <label>stddef.h</label>
+      </node>
+      <node id="18325">
+        <label>tvm/ir/attrs.h</label>
+        <link refid="ir_2attrs_8h"/>
+        <childnode refid="18326" relation="include">
+        </childnode>
+        <childnode refid="18309" relation="include">
+        </childnode>
+        <childnode refid="18289" relation="include">
+        </childnode>
+        <childnode refid="18294" relation="include">
+        </childnode>
+        <childnode refid="18293" relation="include">
+        </childnode>
+        <childnode refid="18299" relation="include">
+        </childnode>
+        <childnode refid="18282" relation="include">
+        </childnode>
+        <childnode refid="18283" relation="include">
+        </childnode>
+        <childnode refid="18284" relation="include">
+        </childnode>
+      </node>
+      <node id="18316">
+        <label>tvm/arith/bound.h</label>
+        <link refid="bound_8h"/>
+        <childnode refid="18304" relation="include">
+        </childnode>
+        <childnode refid="18309" relation="include">
+        </childnode>
+        <childnode refid="18317" relation="include">
+        </childnode>
+        <childnode refid="18274" relation="include">
+        </childnode>
+        <childnode refid="18318" relation="include">
+        </childnode>
+        <childnode refid="18294" relation="include">
+        </childnode>
+      </node>
+      <node id="18327">
+        <label>tvm/tir/lowered_func.h</label>
+        <link refid="lowered__func_8h"/>
+        <childnode refid="18304" relation="include">
+        </childnode>
+        <childnode refid="18274" relation="include">
+        </childnode>
+        <childnode refid="18318" relation="include">
+        </childnode>
+        <childnode refid="18283" relation="include">
+        </childnode>
+      </node>
+      <node id="18319">
+        <label>tvm/tir/op.h</label>
+        <link refid="tir_2op_8h"/>
+        <childnode refid="18311" relation="include">
+        </childnode>
+        <childnode refid="18274" relation="include">
+        </childnode>
+        <childnode refid="18318" relation="include">
+        </childnode>
+        <childnode refid="18312" relation="include">
+        </childnode>
+        <childnode refid="18282" relation="include">
+        </childnode>
+        <childnode refid="18301" relation="include">
+        </childnode>
+      </node>
+      <node id="18309">
+        <label>tvm/ir/expr.h</label>
+        <link refid="ir_2expr_8h"/>
+        <childnode refid="18280" relation="include">
+        </childnode>
+        <childnode refid="18275" relation="include">
+        </childnode>
+        <childnode refid="18304" relation="include">
+        </childnode>
+        <childnode refid="18310" relation="include">
+        </childnode>
+        <childnode refid="18311" relation="include">
+        </childnode>
+        <childnode refid="18283" relation="include">
+        </childnode>
+        <childnode refid="18312" relation="include">
+        </childnode>
+        <childnode refid="18301" relation="include">
+        </childnode>
+        <childnode refid="18282" relation="include">
+        </childnode>
+      </node>
+      <node id="18331">
+        <label>topi/detail/broadcast.h</label>
+        <link refid="detail_2broadcast_8h"/>
+        <childnode refid="18332" relation="include">
+        </childnode>
+        <childnode refid="18334" relation="include">
+        </childnode>
+        <childnode refid="18312" relation="include">
+        </childnode>
+        <childnode refid="18335" relation="include">
+        </childnode>
+        <childnode refid="18283" relation="include">
+        </childnode>
+      </node>
+      <node id="18300">
+        <label>tuple</label>
+      </node>
+      <node id="18281">
+        <label>dmlc/logging.h</label>
+      </node>
+      <node id="18318">
+        <label>tvm/tir/stmt.h</label>
+        <link refid="stmt_8h"/>
+        <childnode refid="18274" relation="include">
+        </childnode>
+        <childnode refid="18282" relation="include">
+        </childnode>
+        <childnode refid="18283" relation="include">
+        </childnode>
+        <childnode refid="18293" relation="include">
+        </childnode>
+        <childnode refid="18284" relation="include">
+        </childnode>
+      </node>
+      <node id="18293">
+        <label>vector</label>
+      </node>
+      <node id="18302">
+        <label>tvm/node/structural_equal.h</label>
+        <link refid="structural__equal_8h"/>
+        <childnode refid="18298" relation="include">
+        </childnode>
+        <childnode refid="18303" relation="include">
+        </childnode>
+        <childnode refid="18304" relation="include">
+        </childnode>
+        <childnode refid="18283" relation="include">
+        </childnode>
+      </node>
+      <node id="18291">
+        <label>dmlc/io.h</label>
+      </node>
+      <node id="18276">
+        <label>tvm/runtime/c_runtime_api.h</label>
+        <link refid="c__runtime__api_8h"/>
+        <childnode refid="18277" relation="include">
+        </childnode>
+        <childnode refid="18278" relation="include">
+        </childnode>
+        <childnode refid="18279" relation="include">
+        </childnode>
+      </node>
+      <node id="18311">
+        <label>tvm/ir/type.h</label>
+        <link refid="ir_2type_8h"/>
+        <childnode refid="18280" relation="include">
+        </childnode>
+        <childnode refid="18298" relation="include">
+        </childnode>
+        <childnode refid="18275" relation="include">
+        </childnode>
+        <childnode refid="18304" relation="include">
+        </childnode>
+        <childnode refid="18310" relation="include">
+        </childnode>
+        <childnode refid="18283" relation="include">
+        </childnode>
+      </node>
+      <node id="18313">
+        <label>tvm/tir/ir_pass.h</label>
+        <link refid="ir__pass_8h"/>
+        <childnode refid="18314" relation="include">
+        </childnode>
+        <childnode refid="18274" relation="include">
+        </childnode>
+        <childnode refid="18321" relation="include">
+        </childnode>
+        <childnode refid="18323" relation="include">
+        </childnode>
+        <childnode refid="18327" relation="include">
+        </childnode>
+        <childnode refid="18294" relation="include">
+        </childnode>
+        <childnode refid="18328" relation="include">
+        </childnode>
+        <childnode refid="18293" relation="include">
+        </childnode>
+        <childnode refid="18283" relation="include">
+        </childnode>
+      </node>
+      <node id="18284">
+        <label>utility</label>
+      </node>
+      <node id="18275">
+        <label>tvm/node/node.h</label>
+        <link refid="node_8h"/>
+        <childnode refid="18276" relation="include">
+        </childnode>
+        <childnode refid="18280" relation="include">
+        </childnode>
+        <childnode refid="18286" relation="include">
+        </childnode>
+        <childnode refid="18288" relation="include">
+        </childnode>
+        <childnode refid="18307" relation="include">
+        </childnode>
+        <childnode refid="18304" relation="include">
+        </childnode>
+        <childnode refid="18302" relation="include">
+        </childnode>
+        <childnode refid="18306" relation="include">
+        </childnode>
+        <childnode refid="18283" relation="include">
+        </childnode>
+        <childnode refid="18293" relation="include">
+        </childnode>
+        <childnode refid="18284" relation="include">
+        </childnode>
+        <childnode refid="18282" relation="include">
+        </childnode>
+      </node>
+      <node id="18330">
+        <label>broadcast.h</label>
+        <link refid="broadcast_8h"/>
+        <childnode refid="18331" relation="include">
+        </childnode>
+        <childnode refid="18334" relation="include">
+        </childnode>
+        <childnode refid="18329" relation="include">
+        </childnode>
+        <childnode refid="18283" relation="include">
+        </childnode>
+        <childnode refid="18312" relation="include">
+        </childnode>
+      </node>
+      <node id="18297">
+        <label>dmlc/serializer.h</label>
+      </node>
+      <node id="18287">
+        <label>cstdlib</label>
+      </node>
+      <node id="18308">
+        <label>iostream</label>
+      </node>
+      <node id="18296">
+        <label>tvm/runtime/serializer.h</label>
+        <link refid="serializer_8h"/>
+        <childnode refid="18291" relation="include">
+        </childnode>
+        <childnode refid="18297" relation="include">
+        </childnode>
+        <childnode refid="18276" relation="include">
+        </childnode>
+        <childnode refid="18295" relation="include">
+        </childnode>
+      </node>
+      <node id="18335">
+        <label>deque</label>
+      </node>
+      <node id="18294">
+        <label>unordered_map</label>
+      </node>
+      <node id="18288">
+        <label>tvm/node/reflection.h</label>
+        <link refid="reflection_8h"/>
+        <childnode refid="18276" relation="include">
+        </childnode>
+        <childnode refid="18280" relation="include">
+        </childnode>
+        <childnode refid="18286" relation="include">
+        </childnode>
+        <childnode refid="18289" relation="include">
+        </childnode>
+        <childnode refid="18295" relation="include">
+        </childnode>
+        <childnode refid="18298" relation="include">
+        </childnode>
+        <childnode refid="18302" relation="include">
+        </childnode>
+        <childnode refid="18306" relation="include">
+        </childnode>
+        <childnode refid="18293" relation="include">
+        </childnode>
+        <childnode refid="18283" relation="include">
+        </childnode>
+        <childnode refid="18282" relation="include">
+        </childnode>
+      </node>
+      <node id="18286">
+        <label>tvm/runtime/memory.h</label>
+        <link refid="runtime_2memory_8h"/>
+        <childnode refid="18280" relation="include">
+        </childnode>
+        <childnode refid="18287" relation="include">
+        </childnode>
+        <childnode refid="18284" relation="include">
+        </childnode>
+        <childnode refid="18282" relation="include">
+        </childnode>
+      </node>
+      <node id="18298">
+        <label>tvm/runtime/data_type.h</label>
+        <link refid="data__type_8h"/>
+        <childnode refid="18276" relation="include">
+        </childnode>
+        <childnode refid="18281" relation="include">
+        </childnode>
+        <childnode refid="18282" relation="include">
+        </childnode>
+      </node>
+      <node id="18322">
+        <label>tvm/support/with.h</label>
+        <link refid="with_8h"/>
+        <childnode refid="18281" relation="include">
+        </childnode>
+        <childnode refid="18284" relation="include">
+        </childnode>
+      </node>
+      <node id="18282">
+        <label>type_traits</label>
+      </node>
+      <node id="18312">
+        <label>algorithm</label>
+      </node>
+      <node id="18329">
+        <label>topi/tags.h</label>
+        <link refid="tags_8h"/>
+        <childnode refid="18283" relation="include">
+        </childnode>
+      </node>
+      <node id="18277">
+        <label>dlpack/dlpack.h</label>
+      </node>
+      <node id="18314">
+        <label>tvm/te/schedule.h</label>
+        <link refid="schedule_8h"/>
+        <childnode refid="18274" relation="include">
+        </childnode>
+        <childnode refid="18315" relation="include">
+        </childnode>
+        <childnode refid="18320" relation="include">
+        </childnode>
+        <childnode refid="18322" relation="include">
+        </childnode>
+        <childnode refid="18283" relation="include">
+        </childnode>
+        <childnode refid="18294" relation="include">
+        </childnode>
+      </node>
+      <node id="18273">
+        <label>topi/include/topi/elemwise.h</label>
+        <link refid="elemwise.h"/>
+        <childnode refid="18274" relation="include">
+        </childnode>
+        <childnode refid="18313" relation="include">
+        </childnode>
+        <childnode refid="18329" relation="include">
+        </childnode>
+        <childnode refid="18283" relation="include">
+        </childnode>
+        <childnode refid="18330" relation="include">
+        </childnode>
+      </node>
+      <node id="18292">
+        <label>memory</label>
+      </node>
+      <node id="18305">
+        <label>initializer_list</label>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="18340">
+        <label>topi/include/topi/vision/reorg.h</label>
+        <link refid="reorg_8h"/>
+      </node>
+      <node id="18339">
+        <label>topi/include/topi/nn/softmax.h</label>
+        <link refid="nn_2softmax_8h"/>
+      </node>
+      <node id="18337">
+        <label>topi/include/topi/reduction.h</label>
+        <link refid="reduction_8h"/>
+        <childnode refid="18338" relation="include">
+        </childnode>
+        <childnode refid="18339" relation="include">
+        </childnode>
+        <childnode refid="18340" relation="include">
+        </childnode>
+      </node>
+      <node id="18338">
+        <label>topi/include/topi/nn/pooling.h</label>
+        <link refid="nn_2pooling_8h"/>
+      </node>
+      <node id="18336">
+        <label>topi/include/topi/elemwise.h</label>
+        <link refid="elemwise.h"/>
+        <childnode refid="18337" relation="include">
+        </childnode>
+      </node>
+    </invincdepgraph>
+    <innernamespace refid="namespacetopi">topi</innernamespace>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="elemwise_8h_1af185de28568db73253bc391f202b6b02" prot="public" static="no">
+        <name>TOPI_DECLARE_UNARY_OP</name>
+        <param><defname>OpName</defname></param>
+        <initializer>inline <ref refid="classtvm_1_1te_1_1Tensor" kindref="compound">Tensor</ref> OpName(const <ref refid="classtvm_1_1te_1_1Tensor" kindref="compound">Tensor</ref>&amp; x,                         \
+                       std::string name = &quot;T_&quot; #OpName,         \
+                       std::string tag = kElementWise) {        \
+    return compute(x-&gt;shape, [&amp;](const <ref refid="classtvm_1_1Array" kindref="compound">Array</ref>&lt;Var&gt;&amp; i) {         \
+        return ::tvm::OpName(x(i));                             \
+      }, name, tag);                                            \
+  }</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="topi/include/topi/elemwise.h" line="38" column="9" bodyfile="topi/include/topi/elemwise.h" bodystart="38" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Elementwise op constructions. </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="2"><highlight class="comment"><sp/>*<sp/>Licensed<sp/>to<sp/>the<sp/>Apache<sp/>Software<sp/>Foundation<sp/>(ASF)<sp/>under<sp/>one</highlight></codeline>
+<codeline lineno="3"><highlight class="comment"><sp/>*<sp/>or<sp/>more<sp/>contributor<sp/>license<sp/>agreements.<sp/><sp/>See<sp/>the<sp/>NOTICE<sp/>file</highlight></codeline>
+<codeline lineno="4"><highlight class="comment"><sp/>*<sp/>distributed<sp/>with<sp/>this<sp/>work<sp/>for<sp/>additional<sp/>information</highlight></codeline>
+<codeline lineno="5"><highlight class="comment"><sp/>*<sp/>regarding<sp/>copyright<sp/>ownership.<sp/><sp/>The<sp/>ASF<sp/>licenses<sp/>this<sp/>file</highlight></codeline>
+<codeline lineno="6"><highlight class="comment"><sp/>*<sp/>to<sp/>you<sp/>under<sp/>the<sp/>Apache<sp/>License,<sp/>Version<sp/>2.0<sp/>(the</highlight></codeline>
+<codeline lineno="7"><highlight class="comment"><sp/>*<sp/>&quot;License&quot;);<sp/>you<sp/>may<sp/>not<sp/>use<sp/>this<sp/>file<sp/>except<sp/>in<sp/>compliance</highlight></codeline>
+<codeline lineno="8"><highlight class="comment"><sp/>*<sp/>with<sp/>the<sp/>License.<sp/><sp/>You<sp/>may<sp/>obtain<sp/>a<sp/>copy<sp/>of<sp/>the<sp/>License<sp/>at</highlight></codeline>
+<codeline lineno="9"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="10"><highlight class="comment"><sp/>*<sp/><sp/><sp/>http://www.apache.org/licenses/LICENSE-2.0</highlight></codeline>
+<codeline lineno="11"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="12"><highlight class="comment"><sp/>*<sp/>Unless<sp/>required<sp/>by<sp/>applicable<sp/>law<sp/>or<sp/>agreed<sp/>to<sp/>in<sp/>writing,</highlight></codeline>
+<codeline lineno="13"><highlight class="comment"><sp/>*<sp/>software<sp/>distributed<sp/>under<sp/>the<sp/>License<sp/>is<sp/>distributed<sp/>on<sp/>an</highlight></codeline>
+<codeline lineno="14"><highlight class="comment"><sp/>*<sp/>&quot;AS<sp/>IS&quot;<sp/>BASIS,<sp/>WITHOUT<sp/>WARRANTIES<sp/>OR<sp/>CONDITIONS<sp/>OF<sp/>ANY</highlight></codeline>
+<codeline lineno="15"><highlight class="comment"><sp/>*<sp/>KIND,<sp/>either<sp/>express<sp/>or<sp/>implied.<sp/><sp/>See<sp/>the<sp/>License<sp/>for<sp/>the</highlight></codeline>
+<codeline lineno="16"><highlight class="comment"><sp/>*<sp/>specific<sp/>language<sp/>governing<sp/>permissions<sp/>and<sp/>limitations</highlight></codeline>
+<codeline lineno="17"><highlight class="comment"><sp/>*<sp/>under<sp/>the<sp/>License.</highlight></codeline>
+<codeline lineno="18"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight></codeline>
+<codeline lineno="24"><highlight class="preprocessor">#ifndef<sp/>TOPI_ELEMWISE_H_</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>TOPI_ELEMWISE_H_</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;<ref refid="tir_2expr_8h" kindref="compound">tvm/tir/expr.h</ref>&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="28"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;<ref refid="ir__pass_8h" kindref="compound">tvm/tir/ir_pass.h</ref>&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="29"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;<ref refid="tags_8h" kindref="compound">topi/tags.h</ref>&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="30"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;string&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="31"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="broadcast_8h" kindref="compound">broadcast.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="32"><highlight class="normal"></highlight></codeline>
+<codeline lineno="33"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal"><ref refid="namespacetopi" kindref="compound">topi</ref><sp/>{</highlight></codeline>
+<codeline lineno="34"><highlight class="normal"></highlight><highlight class="keyword">using<sp/>namespace<sp/></highlight><highlight class="normal"><ref refid="namespacetvm" kindref="compound">tvm</ref>;</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"></highlight><highlight class="keyword">using<sp/>namespace<sp/></highlight><highlight class="normal"><ref refid="namespacetvm_1_1te" kindref="compound">tvm::te</ref>;</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"></highlight></codeline>
+<codeline lineno="37"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Unary<sp/>intrinsic<sp/>operators</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="38" refid="elemwise_8h_1af185de28568db73253bc391f202b6b02" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>TOPI_DECLARE_UNARY_OP(OpName)<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>\</highlight></codeline>
+<codeline lineno="39"><highlight class="preprocessor"><sp/><sp/>inline<sp/>Tensor<sp/>OpName(const<sp/>Tensor&amp;<sp/>x,<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>\</highlight></codeline>
+<codeline lineno="40"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::string<sp/>name<sp/>=<sp/>&quot;T_&quot;<sp/>#OpName,<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>\</highlight></codeline>
+<codeline lineno="41"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::string<sp/>tag<sp/>=<sp/>kElementWise)<sp/>{<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>\</highlight></codeline>
+<codeline lineno="42"><highlight class="preprocessor"><sp/><sp/><sp/><sp/>return<sp/>compute(x-&gt;shape,<sp/>[&amp;](const<sp/>Array&lt;Var&gt;&amp;<sp/>i)<sp/>{<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>\</highlight></codeline>
+<codeline lineno="43"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>return<sp/>::tvm::OpName(x(i));<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>\</highlight></codeline>
+<codeline lineno="44"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/>},<sp/>name,<sp/>tag);<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>\</highlight></codeline>
+<codeline lineno="45"><highlight class="preprocessor"><sp/><sp/>}</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="46"><highlight class="normal"></highlight></codeline>
+<codeline lineno="47" refid="namespacetopi_1a6c81e9f70678673736d57a3951eb5a27" refkind="member"><highlight class="normal"><ref refid="elemwise_8h_1af185de28568db73253bc391f202b6b02" kindref="member">TOPI_DECLARE_UNARY_OP</ref>(<ref refid="namespacetopi_1a6c81e9f70678673736d57a3951eb5a27" kindref="member">exp</ref>);</highlight></codeline>
+<codeline lineno="48" refid="namespacetopi_1a53573f63480717b1d30c474c0ca4ec2f" refkind="member"><highlight class="normal"><ref refid="elemwise_8h_1af185de28568db73253bc391f202b6b02" kindref="member">TOPI_DECLARE_UNARY_OP</ref>(<ref refid="namespacetopi_1a53573f63480717b1d30c474c0ca4ec2f" kindref="member">erf</ref>);</highlight></codeline>
+<codeline lineno="49" refid="namespacetopi_1a15b253d8fcbcef6ff51ed961e3335305" refkind="member"><highlight class="normal"><ref refid="elemwise_8h_1af185de28568db73253bc391f202b6b02" kindref="member">TOPI_DECLARE_UNARY_OP</ref>(<ref refid="namespacetopi_1a15b253d8fcbcef6ff51ed961e3335305" kindref="member">sigmoid</ref>);</highlight></codeline>
+<codeline lineno="50" refid="namespacetopi_1a99c914006a93f0a67619105c8a9c60dc" refkind="member"><highlight class="normal"><ref refid="elemwise_8h_1af185de28568db73253bc391f202b6b02" kindref="member">TOPI_DECLARE_UNARY_OP</ref>(<ref refid="namespacetopi_1a99c914006a93f0a67619105c8a9c60dc" kindref="member">sqrt</ref>);</highlight></codeline>
+<codeline lineno="51" refid="namespacetopi_1ac2472cb0d5b8deb69bde85866e712863" refkind="member"><highlight class="normal"><ref refid="elemwise_8h_1af185de28568db73253bc391f202b6b02" kindref="member">TOPI_DECLARE_UNARY_OP</ref>(<ref refid="namespacetopi_1ac2472cb0d5b8deb69bde85866e712863" kindref="member">log</ref>);</highlight></codeline>
+<codeline lineno="52" refid="namespacetopi_1acd86f6a79bf0f7cdb1296ae7829f8307" refkind="member"><highlight class="normal"><ref refid="elemwise_8h_1af185de28568db73253bc391f202b6b02" kindref="member">TOPI_DECLARE_UNARY_OP</ref>(<ref refid="namespacetopi_1acd86f6a79bf0f7cdb1296ae7829f8307" kindref="member">floor</ref>);</highlight></codeline>
+<codeline lineno="53" refid="namespacetopi_1a4766e1050dc67d63cb8a945d1fbb4a27" refkind="member"><highlight class="normal"><ref refid="elemwise_8h_1af185de28568db73253bc391f202b6b02" kindref="member">TOPI_DECLARE_UNARY_OP</ref>(<ref refid="namespacetopi_1a4766e1050dc67d63cb8a945d1fbb4a27" kindref="member">ceil</ref>);</highlight></codeline>
+<codeline lineno="54" refid="namespacetopi_1a52c0e224551415ba90fb1a3f5db288c0" refkind="member"><highlight class="normal"><ref refid="elemwise_8h_1af185de28568db73253bc391f202b6b02" kindref="member">TOPI_DECLARE_UNARY_OP</ref>(<ref refid="namespacetopi_1a52c0e224551415ba90fb1a3f5db288c0" kindref="member">round</ref>);</highlight></codeline>
+<codeline lineno="55" refid="namespacetopi_1aa1c0d966d270dcd7802f765886baf5b5" refkind="member"><highlight class="normal"><ref refid="elemwise_8h_1af185de28568db73253bc391f202b6b02" kindref="member">TOPI_DECLARE_UNARY_OP</ref>(<ref refid="namespacetopi_1aa1c0d966d270dcd7802f765886baf5b5" kindref="member">trunc</ref>);</highlight></codeline>
+<codeline lineno="56" refid="namespacetopi_1a2784fda0b30c6fdf925e92e246b10508" refkind="member"><highlight class="normal"><ref refid="elemwise_8h_1af185de28568db73253bc391f202b6b02" kindref="member">TOPI_DECLARE_UNARY_OP</ref>(<ref refid="namespacetopi_1a2784fda0b30c6fdf925e92e246b10508" kindref="member">abs</ref>);</highlight></codeline>
+<codeline lineno="57" refid="namespacetopi_1a90f0c42afb12c3d7f1256154cb8e0b7f" refkind="member"><highlight class="normal"><ref refid="elemwise_8h_1af185de28568db73253bc391f202b6b02" kindref="member">TOPI_DECLARE_UNARY_OP</ref>(<ref refid="namespacetopi_1a90f0c42afb12c3d7f1256154cb8e0b7f" kindref="member">cos</ref>);</highlight></codeline>
+<codeline lineno="58" refid="namespacetopi_1a003324fc758b6f65294aeb7a9b7ada9b" refkind="member"><highlight class="normal"><ref refid="elemwise_8h_1af185de28568db73253bc391f202b6b02" kindref="member">TOPI_DECLARE_UNARY_OP</ref>(<ref refid="namespacetopi_1a003324fc758b6f65294aeb7a9b7ada9b" kindref="member">tan</ref>);</highlight></codeline>
+<codeline lineno="59" refid="namespacetopi_1a10ca4bd733a98424cef7953bc9236dfb" refkind="member"><highlight class="normal"><ref refid="elemwise_8h_1af185de28568db73253bc391f202b6b02" kindref="member">TOPI_DECLARE_UNARY_OP</ref>(<ref refid="namespacetopi_1a10ca4bd733a98424cef7953bc9236dfb" kindref="member">sin</ref>);</highlight></codeline>
+<codeline lineno="60" refid="namespacetopi_1a0b3d467c4c95817d68fd2887ca0ecd8b" refkind="member"><highlight class="normal"><ref refid="elemwise_8h_1af185de28568db73253bc391f202b6b02" kindref="member">TOPI_DECLARE_UNARY_OP</ref>(<ref refid="namespacetopi_1a0b3d467c4c95817d68fd2887ca0ecd8b" kindref="member">atan</ref>);</highlight></codeline>
+<codeline lineno="61" refid="namespacetopi_1a45876b65f453b816e8f136c749bb650b" refkind="member"><highlight class="normal"><ref refid="elemwise_8h_1af185de28568db73253bc391f202b6b02" kindref="member">TOPI_DECLARE_UNARY_OP</ref>(<ref refid="namespacetopi_1a45876b65f453b816e8f136c749bb650b" kindref="member">isnan</ref>);</highlight></codeline>
+<codeline lineno="62" refid="namespacetopi_1ab5cb2628d1686589c27254ce1767fa91" refkind="member"><highlight class="normal"><ref refid="elemwise_8h_1af185de28568db73253bc391f202b6b02" kindref="member">TOPI_DECLARE_UNARY_OP</ref>(<ref refid="namespacetopi_1ab5cb2628d1686589c27254ce1767fa91" kindref="member">tanh</ref>);</highlight></codeline>
+<codeline lineno="63" refid="namespacetopi_1a4568b2a7240a100189b391e2f968ccc5" refkind="member"><highlight class="normal"><ref refid="elemwise_8h_1af185de28568db73253bc391f202b6b02" kindref="member">TOPI_DECLARE_UNARY_OP</ref>(<ref refid="namespacetopi_1a4568b2a7240a100189b391e2f968ccc5" kindref="member">isfinite</ref>);</highlight></codeline>
+<codeline lineno="64" refid="namespacetopi_1a28ca1863f504edc2e0f8865ca608569e" refkind="member"><highlight class="normal"><ref refid="elemwise_8h_1af185de28568db73253bc391f202b6b02" kindref="member">TOPI_DECLARE_UNARY_OP</ref>(<ref refid="namespacetopi_1a28ca1863f504edc2e0f8865ca608569e" kindref="member">isinf</ref>);</highlight></codeline>
+<codeline lineno="65"><highlight class="normal"></highlight></codeline>
+<codeline lineno="66"><highlight class="normal"></highlight><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="67"><highlight class="comment"><sp/>*<sp/>\brief<sp/>Fast_tanh_float<sp/>implementation<sp/>from<sp/>Eigen</highlight></codeline>
+<codeline lineno="68"><highlight class="comment"><sp/>*<sp/>https://github.com/eigenteam/eigen-git-mirror/blob/master/Eigen/src/Core/MathFunctionsImpl.h#L26</highlight></codeline>
+<codeline lineno="69"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="70" refid="namespacetopi_1a1cfb51ba097f0249f1f81d03bdd52fe2" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/><ref refid="classtvm_1_1te_1_1Tensor" kindref="compound">Tensor</ref><sp/><ref refid="namespacetopi_1a1cfb51ba097f0249f1f81d03bdd52fe2" kindref="member">fast_tanh_float</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classtvm_1_1te_1_1Tensor" kindref="compound">Tensor</ref>&amp;<sp/>in,</highlight></codeline>
+<codeline lineno="71"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::string<sp/>name,</highlight></codeline>
+<codeline lineno="72"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::string<sp/>tag)<sp/>{</highlight></codeline>
+<codeline lineno="73"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>Clamp<sp/>the<sp/>inputs<sp/>to<sp/>the<sp/>range<sp/>[-9,<sp/>9]<sp/>since<sp/>anything<sp/>outside</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="74"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>this<sp/>range<sp/>is<sp/>+/-1.0f<sp/>in<sp/>single-precision.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="75"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>x<sp/>=<sp/><ref refid="namespacetopi_1a09126c7373a571b8f24e8206c24e6bf5" kindref="member">maximum</ref>(<ref refid="namespacetopi_1afab96b6fc623d4bbb98bd381435d4dea" kindref="member">minimum</ref>(in,<sp/><ref refid="namespacetvm_1_1tir_1a4ea566597880d04bd62fbec687e338b5" kindref="member">make_const</ref>(in-&gt;<ref refid="classtvm_1_1te_1_1TensorNode_1a4c0b6e32a09ab6ea6b869de45394294d" kindref="member">dtype</ref>,<sp/>9.0)),<sp/><ref refid="namespacetvm_1_1tir_1a4ea566597880d04bd62fbec687e338b5" kindref="member">make_const</ref>(in-&gt;<ref refid="classtvm_1_1te_1_1TensorNode_1a4c0b6e32a09ab6ea6b869de45394294d" kindref="member">dtype</ref>,<sp/>-9.0));</highlight></codeline>
+<codeline lineno="76"><highlight class="normal"></highlight></codeline>
+<codeline lineno="77"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>The<sp/>monomial<sp/>coefficients<sp/>of<sp/>the<sp/>numerator<sp/>polynomial<sp/>(odd).</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="78"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>alpha_1<sp/>=<sp/><ref refid="namespacetvm_1_1tir_1a4ea566597880d04bd62fbec687e338b5" kindref="member">make_const</ref>(in-&gt;<ref refid="classtvm_1_1te_1_1TensorNode_1a4c0b6e32a09ab6ea6b869de45394294d" kindref="member">dtype</ref>,<sp/>4.89352455891786e-03);</highlight></codeline>
+<codeline lineno="79"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>alpha_3<sp/>=<sp/><ref refid="namespacetvm_1_1tir_1a4ea566597880d04bd62fbec687e338b5" kindref="member">make_const</ref>(in-&gt;<ref refid="classtvm_1_1te_1_1TensorNode_1a4c0b6e32a09ab6ea6b869de45394294d" kindref="member">dtype</ref>,<sp/>6.37261928875436e-04);</highlight></codeline>
+<codeline lineno="80"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>alpha_5<sp/>=<sp/><ref refid="namespacetvm_1_1tir_1a4ea566597880d04bd62fbec687e338b5" kindref="member">make_const</ref>(in-&gt;<ref refid="classtvm_1_1te_1_1TensorNode_1a4c0b6e32a09ab6ea6b869de45394294d" kindref="member">dtype</ref>,<sp/>1.48572235717979e-05);</highlight></codeline>
+<codeline lineno="81"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>alpha_7<sp/>=<sp/><ref refid="namespacetvm_1_1tir_1a4ea566597880d04bd62fbec687e338b5" kindref="member">make_const</ref>(in-&gt;<ref refid="classtvm_1_1te_1_1TensorNode_1a4c0b6e32a09ab6ea6b869de45394294d" kindref="member">dtype</ref>,<sp/>5.12229709037114e-08);</highlight></codeline>
+<codeline lineno="82"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>alpha_9<sp/>=<sp/><ref refid="namespacetvm_1_1tir_1a4ea566597880d04bd62fbec687e338b5" kindref="member">make_const</ref>(in-&gt;<ref refid="classtvm_1_1te_1_1TensorNode_1a4c0b6e32a09ab6ea6b869de45394294d" kindref="member">dtype</ref>,<sp/>-8.60467152213735e-11);</highlight></codeline>
+<codeline lineno="83"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>alpha_11<sp/>=<sp/><ref refid="namespacetvm_1_1tir_1a4ea566597880d04bd62fbec687e338b5" kindref="member">make_const</ref>(in-&gt;<ref refid="classtvm_1_1te_1_1TensorNode_1a4c0b6e32a09ab6ea6b869de45394294d" kindref="member">dtype</ref>,<sp/>2.00018790482477e-13);</highlight></codeline>
+<codeline lineno="84"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>alpha_13<sp/>=<sp/><ref refid="namespacetvm_1_1tir_1a4ea566597880d04bd62fbec687e338b5" kindref="member">make_const</ref>(in-&gt;<ref refid="classtvm_1_1te_1_1TensorNode_1a4c0b6e32a09ab6ea6b869de45394294d" kindref="member">dtype</ref>,<sp/>-2.76076847742355e-16);</highlight></codeline>
+<codeline lineno="85"><highlight class="normal"></highlight></codeline>
+<codeline lineno="86"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>The<sp/>monomial<sp/>coefficients<sp/>of<sp/>the<sp/>denominator<sp/>polynomial<sp/>(even).</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="87"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>beta_0<sp/>=<sp/><ref refid="namespacetvm_1_1tir_1a4ea566597880d04bd62fbec687e338b5" kindref="member">make_const</ref>(in-&gt;<ref refid="classtvm_1_1te_1_1TensorNode_1a4c0b6e32a09ab6ea6b869de45394294d" kindref="member">dtype</ref>,<sp/>4.89352518554385e-03);</highlight></codeline>
+<codeline lineno="88"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>beta_2<sp/>=<sp/><ref refid="namespacetvm_1_1tir_1a4ea566597880d04bd62fbec687e338b5" kindref="member">make_const</ref>(in-&gt;<ref refid="classtvm_1_1te_1_1TensorNode_1a4c0b6e32a09ab6ea6b869de45394294d" kindref="member">dtype</ref>,<sp/>2.26843463243900e-03);</highlight></codeline>
+<codeline lineno="89"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>beta_4<sp/>=<sp/><ref refid="namespacetvm_1_1tir_1a4ea566597880d04bd62fbec687e338b5" kindref="member">make_const</ref>(in-&gt;<ref refid="classtvm_1_1te_1_1TensorNode_1a4c0b6e32a09ab6ea6b869de45394294d" kindref="member">dtype</ref>,<sp/>1.18534705686654e-04);</highlight></codeline>
+<codeline lineno="90"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>beta_6<sp/>=<sp/><ref refid="namespacetvm_1_1tir_1a4ea566597880d04bd62fbec687e338b5" kindref="member">make_const</ref>(in-&gt;<ref refid="classtvm_1_1te_1_1TensorNode_1a4c0b6e32a09ab6ea6b869de45394294d" kindref="member">dtype</ref>,<sp/>1.19825839466702e-06);</highlight></codeline>
+<codeline lineno="91"><highlight class="normal"></highlight></codeline>
+<codeline lineno="92"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="namespacetvm_1_1te_1aeacae1afc9dd1267cbb5779f9daa4671" kindref="member">compute</ref>(x-&gt;shape,</highlight></codeline>
+<codeline lineno="93"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>[&amp;](</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classtvm_1_1Array" kindref="compound">Array&lt;Var&gt;</ref>&amp;<sp/>i)<sp/>{</highlight></codeline>
+<codeline lineno="94"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>auto<sp/>x2<sp/>=<sp/>x(i)<sp/>*<sp/>x(i);</highlight></codeline>
+<codeline lineno="95"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>auto<sp/>p<sp/>=<sp/>x2<sp/>*<sp/>alpha_13<sp/>+<sp/>alpha_11;</highlight></codeline>
+<codeline lineno="96"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>p<sp/>=<sp/>x2<sp/>*<sp/>p<sp/>+<sp/>alpha_9;</highlight></codeline>
+<codeline lineno="97"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>p<sp/>=<sp/>x2<sp/>*<sp/>p<sp/>+<sp/>alpha_7;</highlight></codeline>
+<codeline lineno="98"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>p<sp/>=<sp/>x2<sp/>*<sp/>p<sp/>+<sp/>alpha_5;</highlight></codeline>
+<codeline lineno="99"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>p<sp/>=<sp/>x2<sp/>*<sp/>p<sp/>+<sp/>alpha_3;</highlight></codeline>
+<codeline lineno="100"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>p<sp/>=<sp/>x2<sp/>*<sp/>p<sp/>+<sp/>alpha_1;</highlight></codeline>
+<codeline lineno="101"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>p<sp/>=<sp/>x(i)<sp/>*<sp/>p;</highlight></codeline>
+<codeline lineno="102"><highlight class="normal"></highlight></codeline>
+<codeline lineno="103"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>auto<sp/>q<sp/>=<sp/>x2<sp/>*<sp/>beta_6<sp/>+<sp/>beta_4;</highlight></codeline>
+<codeline lineno="104"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>q<sp/>=<sp/>x2<sp/>*<sp/>q<sp/>+<sp/>beta_2;</highlight></codeline>
+<codeline lineno="105"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>q<sp/>=<sp/>x2<sp/>*<sp/>q<sp/>+<sp/>beta_0;</highlight></codeline>
+<codeline lineno="106"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>return<sp/>p<sp/>/<sp/>q;</highlight></codeline>
+<codeline lineno="107"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>},</highlight></codeline>
+<codeline lineno="108"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>name,<sp/>tag);</highlight></codeline>
+<codeline lineno="109"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="110"><highlight class="normal"></highlight></codeline>
+<codeline lineno="120" refid="namespacetopi_1ae013a4d1c692ba974eb4c49d53b1a7fe" refkind="member"><highlight class="keyword">inline</highlight><highlight class="normal"><sp/><ref refid="classtvm_1_1te_1_1Tensor" kindref="compound">Tensor</ref><sp/><ref refid="namespacetopi_1ae013a4d1c692ba974eb4c49d53b1a7fe" kindref="member">fast_tanh</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classtvm_1_1te_1_1Tensor" kindref="compound">Tensor</ref>&amp;<sp/>x,</highlight></codeline>
+<codeline lineno="121"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::string<sp/>name<sp/>=<sp/></highlight><highlight class="stringliteral">&quot;T_fast_tanh&quot;</highlight><highlight class="normal">,</highlight></codeline>
+<codeline lineno="122"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::string<sp/>tag<sp/>=<sp/><ref refid="namespacetopi_1ac1b34ed59d38a5f5338bee6b2cad42be" kindref="member">kElementWise</ref>)<sp/>{</highlight></codeline>
+<codeline lineno="123"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(x-&gt;<ref refid="classtvm_1_1te_1_1TensorNode_1a4c0b6e32a09ab6ea6b869de45394294d" kindref="member">dtype</ref><sp/>==<sp/><ref refid="classtvm_1_1runtime_1_1DataType_1a237a714a6a16e14aa01fa4ac52426551" kindref="member">DataType::Float</ref>(32))<sp/>{</highlight></codeline>
+<codeline lineno="124"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>invoke<sp/>fast_tanh_float<sp/>implementation</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="125"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="namespacetopi_1a1cfb51ba097f0249f1f81d03bdd52fe2" kindref="member">fast_tanh_float</ref>(x,<sp/>name,<sp/>tag);</highlight></codeline>
+<codeline lineno="126"><highlight class="normal"><sp/><sp/>}<sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="127"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>fallback<sp/>to<sp/>default<sp/>implementation</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="128"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="namespacetvm_1_1te_1aeacae1afc9dd1267cbb5779f9daa4671" kindref="member">compute</ref>(x-&gt;<ref refid="classtvm_1_1te_1_1TensorNode_1a0ba732bc2def0d467854585752911351" kindref="member">shape</ref>,<sp/>[&amp;](</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classtvm_1_1Array" kindref="compound">Array&lt;Var&gt;</ref>&amp;<sp/>i)<sp/>{</highlight></codeline>
+<codeline lineno="129"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>return<sp/>::tvm::tanh(x(i));</highlight></codeline>
+<codeline lineno="130"><highlight class="normal"><sp/><sp/><sp/><sp/>},<sp/>name,<sp/>tag);</highlight></codeline>
+<codeline lineno="131"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="132"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="133"><highlight class="normal"></highlight></codeline>
+<codeline lineno="143" refid="namespacetopi_1a4f5a29ac302ac31ce75e65f21ad60d41" refkind="member"><highlight class="keyword">inline</highlight><highlight class="normal"><sp/><ref refid="classtvm_1_1te_1_1Tensor" kindref="compound">Tensor</ref><sp/><ref refid="namespacetopi_1a4f5a29ac302ac31ce75e65f21ad60d41" kindref="member">identity</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classtvm_1_1te_1_1Tensor" kindref="compound">Tensor</ref>&amp;<sp/>x,</highlight></codeline>
+<codeline lineno="144"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::string<sp/>name<sp/>=<sp/></highlight><highlight class="stringliteral">&quot;T_identity&quot;</highlight><highlight class="normal">,</highlight></codeline>
+<codeline lineno="145"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::string<sp/>tag<sp/>=<sp/><ref refid="namespacetopi_1ac1b34ed59d38a5f5338bee6b2cad42be" kindref="member">kElementWise</ref>)<sp/>{</highlight></codeline>
+<codeline lineno="146"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="namespacetvm_1_1te_1aeacae1afc9dd1267cbb5779f9daa4671" kindref="member">compute</ref>(x-&gt;<ref refid="classtvm_1_1te_1_1TensorNode_1a0ba732bc2def0d467854585752911351" kindref="member">shape</ref>,<sp/>[&amp;](</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classtvm_1_1Array" kindref="compound">Array&lt;Var&gt;</ref>&amp;<sp/>i)<sp/>{</highlight></codeline>
+<codeline lineno="147"><highlight class="normal"><sp/><sp/><sp/><sp/>return<sp/>x(i);</highlight></codeline>
+<codeline lineno="148"><highlight class="normal"><sp/><sp/>},<sp/>name,<sp/>tag);</highlight></codeline>
+<codeline lineno="149"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="150"><highlight class="normal"></highlight></codeline>
+<codeline lineno="160" refid="namespacetopi_1a9953d63728137b5bba2ef2832963e411" refkind="member"><highlight class="keyword">inline</highlight><highlight class="normal"><sp/><ref refid="classtvm_1_1te_1_1Tensor" kindref="compound">Tensor</ref><sp/><ref refid="namespacetopi_1a9953d63728137b5bba2ef2832963e411" kindref="member">negative</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classtvm_1_1te_1_1Tensor" kindref="compound">Tensor</ref>&amp;<sp/>x,</highlight></codeline>
+<codeline lineno="161"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::string<sp/>name<sp/>=<sp/></highlight><highlight class="stringliteral">&quot;T_negative&quot;</highlight><highlight class="normal">,</highlight></codeline>
+<codeline lineno="162"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::string<sp/>tag<sp/>=<sp/><ref refid="namespacetopi_1ac1b34ed59d38a5f5338bee6b2cad42be" kindref="member">kElementWise</ref>)<sp/>{</highlight></codeline>
+<codeline lineno="163"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="namespacetvm_1_1te_1aeacae1afc9dd1267cbb5779f9daa4671" kindref="member">compute</ref>(x-&gt;<ref refid="classtvm_1_1te_1_1TensorNode_1a0ba732bc2def0d467854585752911351" kindref="member">shape</ref>,<sp/>[&amp;](</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classtvm_1_1Array" kindref="compound">Array&lt;Var&gt;</ref>&amp;<sp/>i)<sp/>{</highlight></codeline>
+<codeline lineno="164"><highlight class="normal"><sp/><sp/><sp/><sp/>return<sp/>-x(i);</highlight></codeline>
+<codeline lineno="165"><highlight class="normal"><sp/><sp/>},<sp/>name,<sp/>tag);</highlight></codeline>
+<codeline lineno="166"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="167"><highlight class="normal"></highlight></codeline>
+<codeline lineno="177" refid="namespacetopi_1a0fb4fd70e46944f4dbcc0cc0790b0146" refkind="member"><highlight class="keyword">inline</highlight><highlight class="normal"><sp/><ref refid="classtvm_1_1te_1_1Tensor" kindref="compound">Tensor</ref><sp/><ref refid="namespacetopi_1a0fb4fd70e46944f4dbcc0cc0790b0146" kindref="member">logical_not</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classtvm_1_1te_1_1Tensor" kindref="compound">Tensor</ref>&amp;<sp/>x,</highlight></codeline>
+<codeline lineno="178"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::string<sp/>name<sp/>=<sp/></highlight><highlight class="stringliteral">&quot;T_logical_not&quot;</highlight><highlight class="normal">,</highlight></codeline>
+<codeline lineno="179"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::string<sp/>tag<sp/>=<sp/><ref refid="namespacetopi_1ac1b34ed59d38a5f5338bee6b2cad42be" kindref="member">kElementWise</ref>)<sp/>{</highlight></codeline>
+<codeline lineno="180"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="namespacetvm_1_1te_1aeacae1afc9dd1267cbb5779f9daa4671" kindref="member">compute</ref>(x-&gt;<ref refid="classtvm_1_1te_1_1TensorNode_1a0ba732bc2def0d467854585752911351" kindref="member">shape</ref>,<sp/>[&amp;](</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classtvm_1_1Array" kindref="compound">Array&lt;Var&gt;</ref>&amp;<sp/>i)<sp/>{</highlight></codeline>
+<codeline lineno="181"><highlight class="normal"><sp/><sp/><sp/><sp/>return<sp/>!x(i);</highlight></codeline>
+<codeline lineno="182"><highlight class="normal"><sp/><sp/>},<sp/>name,<sp/>tag);</highlight></codeline>
+<codeline lineno="183"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="184"><highlight class="normal"></highlight></codeline>
+<codeline lineno="194" refid="namespacetopi_1ab6cd26e240ccecfe8fec12e8107ddc2d" refkind="member"><highlight class="keyword">inline</highlight><highlight class="normal"><sp/><ref refid="classtvm_1_1te_1_1Tensor" kindref="compound">Tensor</ref><sp/><ref refid="namespacetopi_1ab6cd26e240ccecfe8fec12e8107ddc2d" kindref="member">bitwise_not</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classtvm_1_1te_1_1Tensor" kindref="compound">Tensor</ref>&amp;<sp/>x,</highlight></codeline>
+<codeline lineno="195"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::string<sp/>name<sp/>=<sp/></highlight><highlight class="stringliteral">&quot;T_bitwise_not&quot;</highlight><highlight class="normal">,</highlight></codeline>
+<codeline lineno="196"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::string<sp/>tag<sp/>=<sp/><ref refid="namespacetopi_1ac1b34ed59d38a5f5338bee6b2cad42be" kindref="member">kElementWise</ref>)<sp/>{</highlight></codeline>
+<codeline lineno="197"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="namespacetvm_1_1te_1aeacae1afc9dd1267cbb5779f9daa4671" kindref="member">compute</ref>(x-&gt;<ref refid="classtvm_1_1te_1_1TensorNode_1a0ba732bc2def0d467854585752911351" kindref="member">shape</ref>,<sp/>[&amp;](</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classtvm_1_1Array" kindref="compound">Array&lt;Var&gt;</ref>&amp;<sp/>i)<sp/>{</highlight></codeline>
+<codeline lineno="198"><highlight class="normal"><sp/><sp/><sp/><sp/>return<sp/>~x(i);</highlight></codeline>
+<codeline lineno="199"><highlight class="normal"><sp/><sp/>},<sp/>name,<sp/>tag);</highlight></codeline>
+<codeline lineno="200"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="201"><highlight class="normal"></highlight></codeline>
+<codeline lineno="211" refid="namespacetopi_1a673e10ba936f6eafc4a516c95f63da71" refkind="member"><highlight class="keyword">inline</highlight><highlight class="normal"><sp/><ref refid="classtvm_1_1te_1_1Tensor" kindref="compound">Tensor</ref><sp/><ref refid="namespacetopi_1a673e10ba936f6eafc4a516c95f63da71" kindref="member">sign</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classtvm_1_1te_1_1Tensor" kindref="compound">Tensor</ref>&amp;<sp/>x,</highlight></codeline>
+<codeline lineno="212"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::string<sp/>name<sp/>=<sp/></highlight><highlight class="stringliteral">&quot;T_sign&quot;</highlight><highlight class="normal">,</highlight></codeline>
+<codeline lineno="213"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::string<sp/>tag<sp/>=<sp/><ref refid="namespacetopi_1ac1b34ed59d38a5f5338bee6b2cad42be" kindref="member">kElementWise</ref>)<sp/>{</highlight></codeline>
+<codeline lineno="214"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="namespacetvm_1_1te_1aeacae1afc9dd1267cbb5779f9daa4671" kindref="member">compute</ref>(x-&gt;<ref refid="classtvm_1_1te_1_1TensorNode_1a0ba732bc2def0d467854585752911351" kindref="member">shape</ref>,<sp/>[&amp;](</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classtvm_1_1Array" kindref="compound">Array&lt;Var&gt;</ref>&amp;<sp/>i)<sp/>{</highlight></codeline>
+<codeline lineno="215"><highlight class="normal"><sp/><sp/><sp/><sp/>PrimExpr<sp/>zero<sp/>=<sp/>make_zero(x-&gt;dtype);</highlight></codeline>
+<codeline lineno="216"><highlight class="normal"><sp/><sp/><sp/><sp/>PrimExpr<sp/>one<sp/>=<sp/>make_const(x-&gt;dtype,<sp/>1);</highlight></codeline>
+<codeline lineno="217"><highlight class="normal"><sp/><sp/><sp/><sp/>PrimExpr<sp/>minus_one<sp/>=<sp/>make_const(x-&gt;dtype,<sp/>-1);</highlight></codeline>
+<codeline lineno="218"><highlight class="normal"><sp/><sp/><sp/><sp/>auto<sp/>s1<sp/>=<sp/>tvm::tir::SelectNode::make((x(i)<sp/>&lt;<sp/>zero),<sp/>minus_one,<sp/>zero);</highlight></codeline>
+<codeline lineno="219"><highlight class="normal"><sp/><sp/><sp/><sp/>auto<sp/>s2<sp/>=<sp/>tvm::tir::SelectNode::make((x(i)<sp/>&gt;<sp/>zero),<sp/>one,<sp/>s1);</highlight></codeline>
+<codeline lineno="220"><highlight class="normal"><sp/><sp/><sp/><sp/>return<sp/>s2;</highlight></codeline>
+<codeline lineno="221"><highlight class="normal"><sp/><sp/>},<sp/>name,<sp/>tag);</highlight></codeline>
+<codeline lineno="222"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="223"><highlight class="normal"></highlight></codeline>
+<codeline lineno="233" refid="namespacetopi_1a795309406565ae282d42f54462c3ece3" refkind="member"><highlight class="keyword">inline</highlight><highlight class="normal"><sp/><ref refid="classtvm_1_1te_1_1Tensor" kindref="compound">Tensor</ref><sp/><ref refid="namespacetopi_1a795309406565ae282d42f54462c3ece3" kindref="member">rsqrt</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classtvm_1_1te_1_1Tensor" kindref="compound">Tensor</ref>&amp;<sp/>x,</highlight></codeline>
+<codeline lineno="234"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::string<sp/>name<sp/>=<sp/></highlight><highlight class="stringliteral">&quot;tensor&quot;</highlight><highlight class="normal">,</highlight></codeline>
+<codeline lineno="235"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::string<sp/>tag<sp/>=<sp/><ref refid="namespacetopi_1ac1b34ed59d38a5f5338bee6b2cad42be" kindref="member">kElementWise</ref>)<sp/>{</highlight></codeline>
+<codeline lineno="236"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="namespacetvm_1_1te_1aeacae1afc9dd1267cbb5779f9daa4671" kindref="member">compute</ref>(x-&gt;<ref refid="classtvm_1_1te_1_1TensorNode_1a0ba732bc2def0d467854585752911351" kindref="member">shape</ref>,<sp/>[&amp;](</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classtvm_1_1Array" kindref="compound">Array&lt;Var&gt;</ref>&amp;<sp/>i)<sp/>{</highlight></codeline>
+<codeline lineno="237"><highlight class="normal"><sp/><sp/><sp/><sp/>PrimExpr<sp/>one<sp/>=<sp/>make_const(x-&gt;dtype,<sp/>1);</highlight></codeline>
+<codeline lineno="238"><highlight class="normal"><sp/><sp/><sp/><sp/>return<sp/>one/tvm::sqrt(x(i));</highlight></codeline>
+<codeline lineno="239"><highlight class="normal"><sp/><sp/>},<sp/>name,<sp/>tag);</highlight></codeline>
+<codeline lineno="240"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="241"><highlight class="normal"></highlight></codeline>
+<codeline lineno="254" refid="namespacetopi_1aea1d7c9456b658b57d97f80159ebe773" refkind="member"><highlight class="keyword">inline</highlight><highlight class="normal"><sp/><ref refid="classtvm_1_1te_1_1Tensor" kindref="compound">Tensor</ref><sp/><ref refid="namespacetopi_1aea1d7c9456b658b57d97f80159ebe773" kindref="member">clip</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classtvm_1_1te_1_1Tensor" kindref="compound">Tensor</ref>&amp;<sp/>x,</highlight></codeline>
+<codeline lineno="255"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classtvm_1_1PrimExpr" kindref="compound">PrimExpr</ref>&amp;<sp/>a_min,</highlight></codeline>
+<codeline lineno="256"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classtvm_1_1PrimExpr" kindref="compound">PrimExpr</ref>&amp;<sp/>a_max,</highlight></codeline>
+<codeline lineno="257"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::string<sp/>name<sp/>=<sp/></highlight><highlight class="stringliteral">&quot;T_clip&quot;</highlight><highlight class="normal">,</highlight></codeline>
+<codeline lineno="258"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::string<sp/>tag<sp/>=<sp/><ref refid="namespacetopi_1ac1b34ed59d38a5f5338bee6b2cad42be" kindref="member">kElementWise</ref>)<sp/>{</highlight></codeline>
+<codeline lineno="259"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="namespacetvm_1_1te_1aeacae1afc9dd1267cbb5779f9daa4671" kindref="member">compute</ref>(x-&gt;<ref refid="classtvm_1_1te_1_1TensorNode_1a0ba732bc2def0d467854585752911351" kindref="member">shape</ref>,<sp/>[&amp;](</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classtvm_1_1Array" kindref="compound">Array&lt;Var&gt;</ref>&amp;<sp/>i)<sp/>{</highlight></codeline>
+<codeline lineno="260"><highlight class="normal"><sp/><sp/><sp/><sp/>auto<sp/>min_val<sp/>=<sp/>tvm::cast(x-&gt;dtype,<sp/>a_min);</highlight></codeline>
+<codeline lineno="261"><highlight class="normal"><sp/><sp/><sp/><sp/>auto<sp/>max_val<sp/>=<sp/>tvm::cast(x-&gt;dtype,<sp/>a_max);</highlight></codeline>
+<codeline lineno="262"><highlight class="normal"><sp/><sp/><sp/><sp/>return<sp/>tvm::max(tvm::min(x(i),<sp/>max_val),<sp/>min_val);<sp/><sp/></highlight><highlight class="comment">//<sp/>NOLINT(*)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="263"><highlight class="normal"><sp/><sp/>},<sp/>name,<sp/>tag);</highlight></codeline>
+<codeline lineno="264"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="265"><highlight class="normal"></highlight></codeline>
+<codeline lineno="278" refid="namespacetopi_1acfc3df84ca997ccac0f57d50e96c1c06" refkind="member"><highlight class="keyword">inline</highlight><highlight class="normal"><sp/><ref refid="classtvm_1_1te_1_1Tensor" kindref="compound">Tensor</ref><sp/><ref refid="namespacetopi_1acfc3df84ca997ccac0f57d50e96c1c06" kindref="member">cast</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classtvm_1_1te_1_1Tensor" kindref="compound">Tensor</ref>&amp;<sp/>x,</highlight></codeline>
+<codeline lineno="279"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classtvm_1_1runtime_1_1DataType" kindref="compound">DataType</ref><sp/>type,</highlight></codeline>
+<codeline lineno="280"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::string<sp/>name<sp/>=<sp/></highlight><highlight class="stringliteral">&quot;T_cast&quot;</highlight><highlight class="normal">,</highlight></codeline>
+<codeline lineno="281"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::string<sp/>tag<sp/>=<sp/><ref refid="namespacetopi_1ac1b34ed59d38a5f5338bee6b2cad42be" kindref="member">kElementWise</ref>)<sp/>{</highlight></codeline>
+<codeline lineno="282"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="namespacetvm_1_1te_1aeacae1afc9dd1267cbb5779f9daa4671" kindref="member">compute</ref>(x-&gt;<ref refid="classtvm_1_1te_1_1TensorNode_1a0ba732bc2def0d467854585752911351" kindref="member">shape</ref>,<sp/>[&amp;](</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classtvm_1_1Array" kindref="compound">Array&lt;Var&gt;</ref>&amp;<sp/>i)<sp/>{</highlight></codeline>
+<codeline lineno="283"><highlight class="normal"><sp/><sp/><sp/><sp/>auto<sp/>expr<sp/>=<sp/>x(i);</highlight></codeline>
+<codeline lineno="284"><highlight class="normal"><sp/><sp/><sp/><sp/>if<sp/>(expr.dtype().code()<sp/>==<sp/>type.code()<sp/>&amp;&amp;<sp/>expr.dtype().bits()<sp/>==<sp/>type.bits())<sp/>{</highlight></codeline>
+<codeline lineno="285"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>if<sp/>(expr.dtype().lanes()<sp/>==<sp/>type.lanes())<sp/>{</highlight></codeline>
+<codeline lineno="286"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>return<sp/>expr;</highlight></codeline>
+<codeline lineno="287"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>}<sp/>else<sp/>if<sp/>(expr.dtype().lanes()<sp/>==<sp/>1<sp/>&amp;&amp;<sp/>type.lanes()<sp/>&gt;<sp/>1)<sp/>{</highlight></codeline>
+<codeline lineno="288"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>return<sp/>tvm::tir::BroadcastNode::make(expr,<sp/>type.lanes());</highlight></codeline>
+<codeline lineno="289"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="290"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="291"><highlight class="normal"></highlight></codeline>
+<codeline lineno="292"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="namespacetvm_1aa058caeda9deceda3d6ffeda347be442" kindref="member">tvm::cast</ref>(type,<sp/>x(i));</highlight></codeline>
+<codeline lineno="293"><highlight class="normal"><sp/><sp/>},<sp/>name,<sp/>tag);</highlight></codeline>
+<codeline lineno="294"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="295"><highlight class="normal"></highlight></codeline>
+<codeline lineno="306" refid="namespacetopi_1aef42f5cbf417ab34e319ff5a3ff7120f" refkind="member"><highlight class="keyword">inline</highlight><highlight class="normal"><sp/><ref refid="classtvm_1_1te_1_1Tensor" kindref="compound">Tensor</ref><sp/><ref refid="namespacetopi_1aef42f5cbf417ab34e319ff5a3ff7120f" kindref="member">reinterpret</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classtvm_1_1te_1_1Tensor" kindref="compound">Tensor</ref>&amp;<sp/>x,<sp/><ref refid="classtvm_1_1runtime_1_1DataType" kindref="compound">DataType</ref><sp/>type,<sp/>std::string<sp/>name<sp/>=<sp/></highlight><highlight class="stringliteral">&quot;tensor&quot;</highlight><highlight class="normal">,</highlight></codeline>
+<codeline lineno="307"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::string<sp/>tag<sp/>=<sp/><ref refid="namespacetopi_1ac1b34ed59d38a5f5338bee6b2cad42be" kindref="member">kElementWise</ref>)<sp/>{</highlight></codeline>
+<codeline lineno="308"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="namespacetvm_1_1te_1aeacae1afc9dd1267cbb5779f9daa4671" kindref="member">compute</ref>(x-&gt;<ref refid="classtvm_1_1te_1_1TensorNode_1a0ba732bc2def0d467854585752911351" kindref="member">shape</ref>,</highlight></codeline>
+<codeline lineno="309"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>[&amp;](</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classtvm_1_1Array" kindref="compound">Array&lt;Var&gt;</ref>&amp;<sp/>i)<sp/>{</highlight></codeline>
+<codeline lineno="310"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>return<sp/>tvm::tir::CallNode::make(type,<sp/></highlight><highlight class="stringliteral">&quot;reinterpret&quot;</highlight><highlight class="normal">,<sp/>{x(i)},</highlight></codeline>
+<codeline lineno="311"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classtvm_1_1tir_1_1CallNode_1a13e1f0f48f488fd085ca2684738fa97aa2403c0f0c0f7bef7f60d06918d8d39ac" kindref="member">tvm::tir::CallNode::PureIntrinsic</ref>);</highlight></codeline>
+<codeline lineno="312"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>},</highlight></codeline>
+<codeline lineno="313"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>name,<sp/>tag);</highlight></codeline>
+<codeline lineno="314"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="315"><highlight class="normal"></highlight></codeline>
+<codeline lineno="325" refid="namespacetopi_1ae5844b930680196ff3c9cbbedc8a57d3" refkind="member"><highlight class="keyword">inline</highlight><highlight class="normal"><sp/><ref refid="classtvm_1_1te_1_1Tensor" kindref="compound">Tensor</ref><sp/><ref refid="namespacetopi_1ae5844b930680196ff3c9cbbedc8a57d3" kindref="member">elemwise_sum</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classtvm_1_1Array" kindref="compound">Array&lt;Tensor&gt;</ref>&amp;<sp/>xs,</highlight></codeline>
+<codeline lineno="326"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::string<sp/>name<sp/>=<sp/></highlight><highlight class="stringliteral">&quot;T_elemwise_sum&quot;</highlight><highlight class="normal">,</highlight></codeline>
+<codeline lineno="327"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::string<sp/>tag<sp/>=<sp/><ref refid="namespacetopi_1ac1b34ed59d38a5f5338bee6b2cad42be" kindref="member">kElementWise</ref>)<sp/>{</highlight></codeline>
+<codeline lineno="328"><highlight class="normal"><sp/><sp/>CHECK_GT(xs.<ref refid="classtvm_1_1Array_1a6c150ee7d3e46117b099d2052b19aec5" kindref="member">size</ref>(),<sp/>0)<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;elemwise<sp/>sum<sp/>must<sp/>have<sp/>at<sp/>least<sp/>one<sp/>input<sp/>tensor.&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="329"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="namespacetvm_1_1te_1aeacae1afc9dd1267cbb5779f9daa4671" kindref="member">compute</ref>(xs[0]-&gt;<ref refid="namespacetopi_1a649c66231bc50f3ed98ac8bb6b6e2518" kindref="member">shape</ref>,<sp/>[&amp;](</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classtvm_1_1Array" kindref="compound">Array&lt;Var&gt;</ref>&amp;<sp/>i)<sp/>{</highlight></codeline>
+<codeline lineno="330"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>sum_expr<sp/>=<sp/>xs[0](i);</highlight></codeline>
+<codeline lineno="331"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>j<sp/>=<sp/>1;<sp/>j<sp/>&lt;<sp/>xs.<ref refid="classtvm_1_1Array_1a6c150ee7d3e46117b099d2052b19aec5" kindref="member">size</ref>();<sp/>j++)<sp/>{</highlight></codeline>
+<codeline lineno="332"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>sum_expr<sp/>=<sp/>sum_expr<sp/>+<sp/>xs[j](i);</highlight></codeline>
+<codeline lineno="333"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="334"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>sum_expr;</highlight></codeline>
+<codeline lineno="335"><highlight class="normal"><sp/><sp/>},<sp/>name,<sp/>tag);</highlight></codeline>
+<codeline lineno="336"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="337"><highlight class="normal"></highlight></codeline>
+<codeline lineno="349" refid="namespacetopi_1a951ea0de420a6464f5301296735d6980" refkind="member"><highlight class="keyword">inline</highlight><highlight class="normal"><sp/><ref refid="classtvm_1_1te_1_1Tensor" kindref="compound">Tensor</ref><sp/><ref refid="namespacetopi_1a951ea0de420a6464f5301296735d6980" kindref="member">full</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classtvm_1_1Array" kindref="compound">Array&lt;PrimExpr&gt;</ref>&amp;<sp/><ref refid="namespacetopi_1a649c66231bc50f3ed98ac8bb6b6e2518" kindref="member">shape</ref>,</highlight></codeline>
+<codeline lineno="350"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classtvm_1_1runtime_1_1DataType" kindref="compound">DataType</ref><sp/>dtype,</highlight></codeline>
+<codeline lineno="351"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classtvm_1_1PrimExpr" kindref="compound">PrimExpr</ref><sp/>fill_value,</highlight></codeline>
+<codeline lineno="352"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::string<sp/>name<sp/>=<sp/></highlight><highlight class="stringliteral">&quot;T_full&quot;</highlight><highlight class="normal">,</highlight></codeline>
+<codeline lineno="353"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::string<sp/>tag<sp/>=<sp/><ref refid="namespacetopi_1ac1b34ed59d38a5f5338bee6b2cad42be" kindref="member">kElementWise</ref>)<sp/>{</highlight></codeline>
+<codeline lineno="354"><highlight class="normal"><sp/><sp/><ref refid="classtvm_1_1PrimExpr" kindref="compound">PrimExpr</ref><sp/>ev<sp/>=<sp/><ref refid="namespacetopi_1acfc3df84ca997ccac0f57d50e96c1c06" kindref="member">cast</ref>(dtype,<sp/>fill_value);</highlight></codeline>
+<codeline lineno="355"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(!ev.defined())<sp/>{</highlight></codeline>
+<codeline lineno="356"><highlight class="normal"><sp/><sp/><sp/><sp/>LOG(ERROR)<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;Can&apos;t<sp/>cast<sp/>fill_value<sp/>to<sp/>&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/>dtype;</highlight></codeline>
+<codeline lineno="357"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="358"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="namespacetvm_1_1te_1aeacae1afc9dd1267cbb5779f9daa4671" kindref="member">compute</ref>(shape,<sp/>[&amp;](</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classtvm_1_1Array" kindref="compound">Array&lt;Var&gt;</ref>&amp;<sp/>i)<sp/>{</highlight></codeline>
+<codeline lineno="359"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>ev;</highlight></codeline>
+<codeline lineno="360"><highlight class="normal"><sp/><sp/>},<sp/>name,<sp/>tag);</highlight></codeline>
+<codeline lineno="361"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="362"><highlight class="normal"></highlight></codeline>
+<codeline lineno="374" refid="namespacetopi_1a7672df8583ba232093a90d44e337ab32" refkind="member"><highlight class="keyword">inline</highlight><highlight class="normal"><sp/><ref refid="classtvm_1_1te_1_1Tensor" kindref="compound">Tensor</ref><sp/><ref refid="namespacetopi_1a7672df8583ba232093a90d44e337ab32" kindref="member">full_like</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classtvm_1_1te_1_1Tensor" kindref="compound">Tensor</ref>&amp;<sp/>x,</highlight></codeline>
+<codeline lineno="375"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classtvm_1_1PrimExpr" kindref="compound">PrimExpr</ref><sp/>fill_value,</highlight></codeline>
+<codeline lineno="376"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::string<sp/>name<sp/>=<sp/></highlight><highlight class="stringliteral">&quot;T_full_like&quot;</highlight><highlight class="normal">,</highlight></codeline>
+<codeline lineno="377"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::string<sp/>tag<sp/>=<sp/><ref refid="namespacetopi_1ac1b34ed59d38a5f5338bee6b2cad42be" kindref="member">kElementWise</ref>)<sp/>{</highlight></codeline>
+<codeline lineno="378"><highlight class="normal"><sp/><sp/><ref refid="classtvm_1_1PrimExpr" kindref="compound">PrimExpr</ref><sp/>ev<sp/>=<sp/><ref refid="namespacetopi_1acfc3df84ca997ccac0f57d50e96c1c06" kindref="member">cast</ref>(x-&gt;<ref refid="classtvm_1_1te_1_1TensorNode_1a4c0b6e32a09ab6ea6b869de45394294d" kindref="member">dtype</ref>,<sp/>fill_value);</highlight></codeline>
+<codeline lineno="379"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="namespacetvm_1_1te_1aeacae1afc9dd1267cbb5779f9daa4671" kindref="member">compute</ref>(x-&gt;<ref refid="classtvm_1_1te_1_1TensorNode_1a0ba732bc2def0d467854585752911351" kindref="member">shape</ref>,<sp/>[&amp;](</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classtvm_1_1Array" kindref="compound">Array&lt;Var&gt;</ref>&amp;<sp/>i)<sp/>{</highlight></codeline>
+<codeline lineno="380"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>return<sp/>ev;</highlight></codeline>
+<codeline lineno="381"><highlight class="normal"><sp/><sp/>},<sp/>name,<sp/>tag);</highlight></codeline>
+<codeline lineno="382"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="383"><highlight class="normal"></highlight></codeline>
+<codeline lineno="405" refid="namespacetopi_1a20d46dbd3d9b11811db853ee46f44e6c" refkind="member"><highlight class="keyword">inline</highlight><highlight class="normal"><sp/><ref refid="classtvm_1_1te_1_1Tensor" kindref="compound">Tensor</ref><sp/><ref refid="namespacetopi_1a20d46dbd3d9b11811db853ee46f44e6c" kindref="member">fast_exp_float32</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classtvm_1_1te_1_1Tensor" kindref="compound">Tensor</ref>&amp;<sp/>_x,</highlight></codeline>
+<codeline lineno="406"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::string<sp/>name,</highlight></codeline>
+<codeline lineno="407"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::string<sp/>tag)<sp/>{</highlight></codeline>
+<codeline lineno="408"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>x_hi<sp/>=<sp/><ref refid="namespacetvm_1_1tir_1a4ea566597880d04bd62fbec687e338b5" kindref="member">make_const</ref>(<ref refid="classtvm_1_1runtime_1_1DataType_1a237a714a6a16e14aa01fa4ac52426551" kindref="member">DataType::Float</ref>(32),<sp/>88.3762626647950f);</highlight></codeline>
+<codeline lineno="409"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>x_lo<sp/>=<sp/><ref refid="namespacetvm_1_1tir_1a4ea566597880d04bd62fbec687e338b5" kindref="member">make_const</ref>(<ref refid="classtvm_1_1runtime_1_1DataType_1a237a714a6a16e14aa01fa4ac52426551" kindref="member">DataType::Float</ref>(32),<sp/>-88.3762626647949f);</highlight></codeline>
+<codeline lineno="410"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>log2e<sp/>=<sp/><ref refid="namespacetvm_1_1tir_1a4ea566597880d04bd62fbec687e338b5" kindref="member">make_const</ref>(<ref refid="classtvm_1_1runtime_1_1DataType_1a237a714a6a16e14aa01fa4ac52426551" kindref="member">DataType::Float</ref>(32),<sp/>1.44269504088896341f);</highlight></codeline>
+<codeline lineno="411"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>ln2<sp/>=<sp/><ref refid="namespacetvm_1_1tir_1a4ea566597880d04bd62fbec687e338b5" kindref="member">make_const</ref>(<ref refid="classtvm_1_1runtime_1_1DataType_1a237a714a6a16e14aa01fa4ac52426551" kindref="member">DataType::Float</ref>(32),<sp/>0.6931471805599453f);</highlight></codeline>
+<codeline lineno="412"><highlight class="normal"><sp/><sp/><ref refid="classtvm_1_1PrimExpr" kindref="compound">PrimExpr</ref><sp/>p[6]<sp/>=<sp/>{<ref refid="namespacetvm_1_1tir_1a4ea566597880d04bd62fbec687e338b5" kindref="member">make_const</ref>(<ref refid="classtvm_1_1runtime_1_1DataType_1a237a714a6a16e14aa01fa4ac52426551" kindref="member">DataType::Float</ref>(32),<sp/>1.9875691500E-4f),</highlight></codeline>
+<codeline lineno="413"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="namespacetvm_1_1tir_1a4ea566597880d04bd62fbec687e338b5" kindref="member">make_const</ref>(<ref refid="classtvm_1_1runtime_1_1DataType_1a237a714a6a16e14aa01fa4ac52426551" kindref="member">DataType::Float</ref>(32),<sp/>1.3981999507E-3f),</highlight></codeline>
+<codeline lineno="414"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="namespacetvm_1_1tir_1a4ea566597880d04bd62fbec687e338b5" kindref="member">make_const</ref>(<ref refid="classtvm_1_1runtime_1_1DataType_1a237a714a6a16e14aa01fa4ac52426551" kindref="member">DataType::Float</ref>(32),<sp/>8.3334519073E-3f),</highlight></codeline>
+<codeline lineno="415"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="namespacetvm_1_1tir_1a4ea566597880d04bd62fbec687e338b5" kindref="member">make_const</ref>(<ref refid="classtvm_1_1runtime_1_1DataType_1a237a714a6a16e14aa01fa4ac52426551" kindref="member">DataType::Float</ref>(32),<sp/>4.1665795894E-2f),</highlight></codeline>
+<codeline lineno="416"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="namespacetvm_1_1tir_1a4ea566597880d04bd62fbec687e338b5" kindref="member">make_const</ref>(<ref refid="classtvm_1_1runtime_1_1DataType_1a237a714a6a16e14aa01fa4ac52426551" kindref="member">DataType::Float</ref>(32),<sp/>1.6666665459E-1f),</highlight></codeline>
+<codeline lineno="417"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="namespacetvm_1_1tir_1a4ea566597880d04bd62fbec687e338b5" kindref="member">make_const</ref>(<ref refid="classtvm_1_1runtime_1_1DataType_1a237a714a6a16e14aa01fa4ac52426551" kindref="member">DataType::Float</ref>(32),<sp/>5.0000001201E-1f)};</highlight></codeline>
+<codeline lineno="418"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>one<sp/>=<sp/><ref refid="namespacetvm_1_1tir_1a4ea566597880d04bd62fbec687e338b5" kindref="member">make_const</ref>(<ref refid="classtvm_1_1runtime_1_1DataType_1a237a714a6a16e14aa01fa4ac52426551" kindref="member">DataType::Float</ref>(32),<sp/>1.0f);</highlight></codeline>
+<codeline lineno="419"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>one_half<sp/>=<sp/><ref refid="namespacetvm_1_1tir_1a4ea566597880d04bd62fbec687e338b5" kindref="member">make_const</ref>(<ref refid="classtvm_1_1runtime_1_1DataType_1a237a714a6a16e14aa01fa4ac52426551" kindref="member">DataType::Float</ref>(32),<sp/>0.5f);</highlight></codeline>
+<codeline lineno="420"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>b<sp/>=<sp/><ref refid="namespacetvm_1_1tir_1a4ea566597880d04bd62fbec687e338b5" kindref="member">make_const</ref>(<ref refid="classtvm_1_1runtime_1_1DataType_1a237a714a6a16e14aa01fa4ac52426551" kindref="member">DataType::Float</ref>(32),<sp/>127.0f);</highlight></codeline>
+<codeline lineno="421"><highlight class="normal"></highlight></codeline>
+<codeline lineno="422"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="namespacetvm_1_1te_1aeacae1afc9dd1267cbb5779f9daa4671" kindref="member">compute</ref>(_x-&gt;<ref refid="classtvm_1_1te_1_1TensorNode_1a0ba732bc2def0d467854585752911351" kindref="member">shape</ref>,</highlight></codeline>
+<codeline lineno="423"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>[&amp;](</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classtvm_1_1Array" kindref="compound">Array&lt;Var&gt;</ref>&amp;<sp/>i)<sp/>{</highlight></codeline>
+<codeline lineno="424"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>clamp<sp/>x</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="425"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>auto<sp/>x<sp/>=<sp/>::tvm::max(::tvm::min(_x(i),<sp/>x_hi),<sp/>x_lo);</highlight></codeline>
+<codeline lineno="426"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>integer<sp/>part</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="427"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>auto<sp/>n<sp/>=<sp/>::tvm::floor(x<sp/>*<sp/>log2e<sp/>+<sp/>one_half);</highlight></codeline>
+<codeline lineno="428"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>fractional<sp/>part</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="429"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>auto<sp/>f<sp/>=<sp/>x<sp/>-<sp/>n<sp/>*<sp/>ln2;</highlight></codeline>
+<codeline lineno="430"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>auto<sp/>y<sp/>=<sp/>(((((p[0]<sp/>*<sp/>f<sp/>+<sp/>p[1])<sp/>*<sp/>f<sp/>+<sp/>p[2])<sp/>*<sp/>f<sp/>+<sp/>p[3])*<sp/>f+<sp/>p[4])<sp/>*<sp/>f</highlight></codeline>
+<codeline lineno="431"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>+<sp/>p[5])<sp/>*<sp/>f<sp/>*<sp/>f<sp/>+<sp/>f<sp/>+<sp/>one;</highlight></codeline>
+<codeline lineno="432"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Return<sp/>2^m<sp/>*<sp/>exp(r).</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="433"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>auto<sp/>ef<sp/>=<sp/>tvm::reinterpret(DataType::Float(32),</highlight></codeline>
+<codeline lineno="434"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>::tvm::cast(DataType::Int(32),<sp/>n<sp/>+<sp/>b)<sp/>&lt;&lt;<sp/>23);</highlight></codeline>
+<codeline lineno="435"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>return<sp/>::tvm::max(ef<sp/>*<sp/>y,<sp/>_x(i));<sp/></highlight><highlight class="comment">//<sp/>NOLINT(*)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="436"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>},</highlight></codeline>
+<codeline lineno="437"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>name,<sp/>tag);</highlight></codeline>
+<codeline lineno="438"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="439"><highlight class="normal"></highlight></codeline>
+<codeline lineno="440"><highlight class="normal"></highlight></codeline>
+<codeline lineno="451" refid="namespacetopi_1ae6d188f262af775d79e3d409bb22045d" refkind="member"><highlight class="keyword">inline</highlight><highlight class="normal"><sp/><ref refid="classtvm_1_1te_1_1Tensor" kindref="compound">Tensor</ref><sp/><ref refid="namespacetopi_1ae6d188f262af775d79e3d409bb22045d" kindref="member">fast_exp</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classtvm_1_1te_1_1Tensor" kindref="compound">Tensor</ref>&amp;<sp/>x,</highlight></codeline>
+<codeline lineno="452"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::string<sp/>name<sp/>=<sp/></highlight><highlight class="stringliteral">&quot;T_fast_exp&quot;</highlight><highlight class="normal">,</highlight></codeline>
+<codeline lineno="453"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::string<sp/>tag<sp/>=<sp/><ref refid="namespacetopi_1ac1b34ed59d38a5f5338bee6b2cad42be" kindref="member">kElementWise</ref>)<sp/>{</highlight></codeline>
+<codeline lineno="454"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(x-&gt;<ref refid="classtvm_1_1te_1_1TensorNode_1a4c0b6e32a09ab6ea6b869de45394294d" kindref="member">dtype</ref><sp/>==<sp/><ref refid="classtvm_1_1runtime_1_1DataType_1a237a714a6a16e14aa01fa4ac52426551" kindref="member">DataType::Float</ref>(32))<sp/>{</highlight></codeline>
+<codeline lineno="455"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>ret<sp/>=<sp/><ref refid="namespacetopi_1a20d46dbd3d9b11811db853ee46f44e6c" kindref="member">fast_exp_float32</ref>(x,<sp/>name,<sp/>tag);</highlight></codeline>
+<codeline lineno="456"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>ret;</highlight></codeline>
+<codeline lineno="457"><highlight class="normal"><sp/><sp/>}<sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="458"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="namespacetvm_1_1te_1aeacae1afc9dd1267cbb5779f9daa4671" kindref="member">compute</ref>(x-&gt;<ref refid="classtvm_1_1te_1_1TensorNode_1a0ba732bc2def0d467854585752911351" kindref="member">shape</ref>,<sp/>[&amp;](</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classtvm_1_1Array" kindref="compound">Array&lt;Var&gt;</ref>&amp;<sp/>i)<sp/>{</highlight></codeline>
+<codeline lineno="459"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>return<sp/>::tvm::exp(x(i));</highlight></codeline>
+<codeline lineno="460"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>},<sp/>name,<sp/>tag);</highlight></codeline>
+<codeline lineno="461"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="462"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="463"><highlight class="normal"></highlight></codeline>
+<codeline lineno="464"><highlight class="normal">}<sp/><sp/></highlight><highlight class="comment">//<sp/>namespace<sp/>topi</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="465"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/><sp/>//<sp/>TOPI_ELEMWISE_H_</highlight></codeline>
+    </programlisting>
+    <location file="topi/include/topi/elemwise.h"/>
+  </compounddef>
+</doxygen>

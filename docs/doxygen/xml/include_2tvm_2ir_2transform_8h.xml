@@ -1,0 +1,739 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="include_2tvm_2ir_2transform_8h" kind="file" language="C++">
+    <compoundname>transform.h</compoundname>
+    <includes refid="with_8h" local="no">tvm/support/with.h</includes>
+    <includes refid="node_2container_8h" local="no">tvm/node/container.h</includes>
+    <includes refid="error_8h" local="no">tvm/ir/error.h</includes>
+    <includes refid="ir_2module_8h" local="no">tvm/ir/module.h</includes>
+    <includes local="no">string</includes>
+    <includedby refid="include_2tvm_2relay_2transform_8h" local="no">include/tvm/relay/transform.h</includedby>
+    <includedby refid="include_2tvm_2tir_2transform_8h" local="no">include/tvm/tir/transform.h</includedby>
+    <incdepgraph>
+      <node id="11470">
+        <label>tvm/ir/span.h</label>
+        <link refid="span_8h"/>
+        <childnode refid="11445" relation="include">
+        </childnode>
+        <childnode refid="11471" relation="include">
+        </childnode>
+        <childnode refid="11451" relation="include">
+        </childnode>
+      </node>
+      <node id="11452">
+        <label>atomic</label>
+      </node>
+      <node id="11465">
+        <label>functional</label>
+      </node>
+      <node id="11467">
+        <label>limits</label>
+      </node>
+      <node id="11482">
+        <label>tvm/ir/function.h</label>
+        <link refid="ir_2function_8h"/>
+        <childnode refid="11480" relation="include">
+        </childnode>
+        <childnode refid="11483" relation="include">
+        </childnode>
+        <childnode refid="11450" relation="include">
+        </childnode>
+        <childnode refid="11451" relation="include">
+        </childnode>
+      </node>
+      <node id="11456">
+        <label>tvm/runtime/module.h</label>
+        <link refid="runtime_2module_8h"/>
+        <childnode refid="11457" relation="include">
+        </childnode>
+        <childnode refid="11446" relation="include">
+        </childnode>
+        <childnode refid="11445" relation="include">
+        </childnode>
+        <childnode refid="11453" relation="include">
+        </childnode>
+        <childnode refid="11458" relation="include">
+        </childnode>
+        <childnode refid="11459" relation="include">
+        </childnode>
+        <childnode refid="11451" relation="include">
+        </childnode>
+        <childnode refid="11460" relation="include">
+        </childnode>
+        <childnode refid="11455" relation="include">
+        </childnode>
+      </node>
+      <node id="11455">
+        <label>tvm/runtime/packed_func.h</label>
+        <link refid="packed__func_8h"/>
+        <childnode refid="11442" relation="include">
+        </childnode>
+        <childnode refid="11446" relation="include">
+        </childnode>
+        <childnode refid="11456" relation="include">
+        </childnode>
+        <childnode refid="11461" relation="include">
+        </childnode>
+        <childnode refid="11464" relation="include">
+        </childnode>
+        <childnode refid="11445" relation="include">
+        </childnode>
+        <childnode refid="11465" relation="include">
+        </childnode>
+        <childnode refid="11466" relation="include">
+        </childnode>
+        <childnode refid="11459" relation="include">
+        </childnode>
+        <childnode refid="11451" relation="include">
+        </childnode>
+        <childnode refid="11467" relation="include">
+        </childnode>
+        <childnode refid="11458" relation="include">
+        </childnode>
+        <childnode refid="11443" relation="include">
+        </childnode>
+        <childnode refid="11450" relation="include">
+        </childnode>
+      </node>
+      <node id="11474">
+        <label>tvm/node/functor.h</label>
+        <link refid="functor_8h"/>
+        <childnode refid="11442" relation="include">
+        </childnode>
+        <childnode refid="11445" relation="include">
+        </childnode>
+        <childnode refid="11459" relation="include">
+        </childnode>
+        <childnode refid="11450" relation="include">
+        </childnode>
+        <childnode refid="11443" relation="include">
+        </childnode>
+      </node>
+      <node id="11445">
+        <label>tvm/runtime/object.h</label>
+        <link refid="object_8h"/>
+        <childnode refid="11442" relation="include">
+        </childnode>
+        <childnode refid="11446" relation="include">
+        </childnode>
+        <childnode refid="11450" relation="include">
+        </childnode>
+        <childnode refid="11451" relation="include">
+        </childnode>
+        <childnode refid="11443" relation="include">
+        </childnode>
+        <childnode refid="11452" relation="include">
+        </childnode>
+      </node>
+      <node id="11448">
+        <label>stdint.h</label>
+      </node>
+      <node id="11461">
+        <label>tvm/runtime/ndarray.h</label>
+        <link refid="ndarray_8h"/>
+        <childnode refid="11446" relation="include">
+        </childnode>
+        <childnode refid="11445" relation="include">
+        </childnode>
+        <childnode refid="11462" relation="include">
+        </childnode>
+        <childnode refid="11452" relation="include">
+        </childnode>
+        <childnode refid="11459" relation="include">
+        </childnode>
+        <childnode refid="11443" relation="include">
+        </childnode>
+      </node>
+      <node id="11475">
+        <label>tvm/node/structural_hash.h</label>
+        <link refid="structural__hash_8h"/>
+        <childnode refid="11464" relation="include">
+        </childnode>
+        <childnode refid="11474" relation="include">
+        </childnode>
+        <childnode refid="11444" relation="include">
+        </childnode>
+        <childnode refid="11451" relation="include">
+        </childnode>
+        <childnode refid="11465" relation="include">
+        </childnode>
+      </node>
+      <node id="11451">
+        <label>string</label>
+      </node>
+      <node id="11484">
+        <label>dmlc/common.h</label>
+      </node>
+      <node id="11476">
+        <label>tvm/node/repr_printer.h</label>
+        <link refid="repr__printer_8h"/>
+        <childnode refid="11474" relation="include">
+        </childnode>
+        <childnode refid="11477" relation="include">
+        </childnode>
+      </node>
+      <node id="11444">
+        <label>tvm/node/container.h</label>
+        <link refid="node_2container_8h"/>
+        <childnode refid="11445" relation="include">
+        </childnode>
+        <childnode refid="11453" relation="include">
+        </childnode>
+        <childnode refid="11455" relation="include">
+        </childnode>
+        <childnode refid="11450" relation="include">
+        </childnode>
+        <childnode refid="11459" relation="include">
+        </childnode>
+        <childnode refid="11468" relation="include">
+        </childnode>
+        <childnode refid="11460" relation="include">
+        </childnode>
+        <childnode refid="11443" relation="include">
+        </childnode>
+        <childnode refid="11451" relation="include">
+        </childnode>
+      </node>
+      <node id="11486">
+        <label>unordered_set</label>
+      </node>
+      <node id="11449">
+        <label>stddef.h</label>
+      </node>
+      <node id="11483">
+        <label>tvm/ir/attrs.h</label>
+        <link refid="ir_2attrs_8h"/>
+        <childnode refid="11484" relation="include">
+        </childnode>
+        <childnode refid="11480" relation="include">
+        </childnode>
+        <childnode refid="11455" relation="include">
+        </childnode>
+        <childnode refid="11460" relation="include">
+        </childnode>
+        <childnode refid="11459" relation="include">
+        </childnode>
+        <childnode refid="11465" relation="include">
+        </childnode>
+        <childnode refid="11450" relation="include">
+        </childnode>
+        <childnode refid="11451" relation="include">
+        </childnode>
+        <childnode refid="11443" relation="include">
+        </childnode>
+      </node>
+      <node id="11469">
+        <label>tvm/ir/error.h</label>
+        <link refid="error_8h"/>
+        <childnode refid="11470" relation="include">
+        </childnode>
+        <childnode refid="11478" relation="include">
+        </childnode>
+        <childnode refid="11451" relation="include">
+        </childnode>
+        <childnode refid="11459" relation="include">
+        </childnode>
+        <childnode refid="11487" relation="include">
+        </childnode>
+        <childnode refid="11460" relation="include">
+        </childnode>
+      </node>
+      <node id="11480">
+        <label>tvm/ir/expr.h</label>
+        <link refid="ir_2expr_8h"/>
+        <childnode refid="11445" relation="include">
+        </childnode>
+        <childnode refid="11471" relation="include">
+        </childnode>
+        <childnode refid="11444" relation="include">
+        </childnode>
+        <childnode refid="11470" relation="include">
+        </childnode>
+        <childnode refid="11479" relation="include">
+        </childnode>
+        <childnode refid="11451" relation="include">
+        </childnode>
+        <childnode refid="11481" relation="include">
+        </childnode>
+        <childnode refid="11467" relation="include">
+        </childnode>
+        <childnode refid="11450" relation="include">
+        </childnode>
+      </node>
+      <node id="11440">
+        <label>include/tvm/ir/transform.h</label>
+        <link refid="include/tvm/ir/transform.h"/>
+        <childnode refid="11441" relation="include">
+        </childnode>
+        <childnode refid="11444" relation="include">
+        </childnode>
+        <childnode refid="11469" relation="include">
+        </childnode>
+        <childnode refid="11478" relation="include">
+        </childnode>
+        <childnode refid="11451" relation="include">
+        </childnode>
+      </node>
+      <node id="11485">
+        <label>tvm/ir/adt.h</label>
+        <link refid="ir_2adt_8h"/>
+        <childnode refid="11445" relation="include">
+        </childnode>
+        <childnode refid="11471" relation="include">
+        </childnode>
+        <childnode refid="11444" relation="include">
+        </childnode>
+        <childnode refid="11480" relation="include">
+        </childnode>
+        <childnode refid="11479" relation="include">
+        </childnode>
+        <childnode refid="11451" relation="include">
+        </childnode>
+      </node>
+      <node id="11466">
+        <label>tuple</label>
+      </node>
+      <node id="11442">
+        <label>dmlc/logging.h</label>
+      </node>
+      <node id="11459">
+        <label>vector</label>
+      </node>
+      <node id="11473">
+        <label>tvm/node/structural_equal.h</label>
+        <link refid="structural__equal_8h"/>
+        <childnode refid="11464" relation="include">
+        </childnode>
+        <childnode refid="11474" relation="include">
+        </childnode>
+        <childnode refid="11444" relation="include">
+        </childnode>
+        <childnode refid="11451" relation="include">
+        </childnode>
+      </node>
+      <node id="11457">
+        <label>dmlc/io.h</label>
+      </node>
+      <node id="11446">
+        <label>tvm/runtime/c_runtime_api.h</label>
+        <link refid="c__runtime__api_8h"/>
+        <childnode refid="11447" relation="include">
+        </childnode>
+        <childnode refid="11448" relation="include">
+        </childnode>
+        <childnode refid="11449" relation="include">
+        </childnode>
+      </node>
+      <node id="11479">
+        <label>tvm/ir/type.h</label>
+        <link refid="ir_2type_8h"/>
+        <childnode refid="11445" relation="include">
+        </childnode>
+        <childnode refid="11464" relation="include">
+        </childnode>
+        <childnode refid="11471" relation="include">
+        </childnode>
+        <childnode refid="11444" relation="include">
+        </childnode>
+        <childnode refid="11470" relation="include">
+        </childnode>
+        <childnode refid="11451" relation="include">
+        </childnode>
+      </node>
+      <node id="11443">
+        <label>utility</label>
+      </node>
+      <node id="11487">
+        <label>sstream</label>
+      </node>
+      <node id="11478">
+        <label>tvm/ir/module.h</label>
+        <link refid="ir_2module_8h"/>
+        <childnode refid="11479" relation="include">
+        </childnode>
+        <childnode refid="11480" relation="include">
+        </childnode>
+        <childnode refid="11482" relation="include">
+        </childnode>
+        <childnode refid="11485" relation="include">
+        </childnode>
+        <childnode refid="11451" relation="include">
+        </childnode>
+        <childnode refid="11459" relation="include">
+        </childnode>
+        <childnode refid="11460" relation="include">
+        </childnode>
+        <childnode refid="11486" relation="include">
+        </childnode>
+      </node>
+      <node id="11471">
+        <label>tvm/node/node.h</label>
+        <link refid="node_8h"/>
+        <childnode refid="11446" relation="include">
+        </childnode>
+        <childnode refid="11445" relation="include">
+        </childnode>
+        <childnode refid="11453" relation="include">
+        </childnode>
+        <childnode refid="11472" relation="include">
+        </childnode>
+        <childnode refid="11476" relation="include">
+        </childnode>
+        <childnode refid="11444" relation="include">
+        </childnode>
+        <childnode refid="11473" relation="include">
+        </childnode>
+        <childnode refid="11475" relation="include">
+        </childnode>
+        <childnode refid="11451" relation="include">
+        </childnode>
+        <childnode refid="11459" relation="include">
+        </childnode>
+        <childnode refid="11443" relation="include">
+        </childnode>
+        <childnode refid="11450" relation="include">
+        </childnode>
+      </node>
+      <node id="11463">
+        <label>dmlc/serializer.h</label>
+      </node>
+      <node id="11454">
+        <label>cstdlib</label>
+      </node>
+      <node id="11477">
+        <label>iostream</label>
+      </node>
+      <node id="11462">
+        <label>tvm/runtime/serializer.h</label>
+        <link refid="serializer_8h"/>
+        <childnode refid="11457" relation="include">
+        </childnode>
+        <childnode refid="11463" relation="include">
+        </childnode>
+        <childnode refid="11446" relation="include">
+        </childnode>
+        <childnode refid="11461" relation="include">
+        </childnode>
+      </node>
+      <node id="11460">
+        <label>unordered_map</label>
+      </node>
+      <node id="11472">
+        <label>tvm/node/reflection.h</label>
+        <link refid="reflection_8h"/>
+        <childnode refid="11446" relation="include">
+        </childnode>
+        <childnode refid="11445" relation="include">
+        </childnode>
+        <childnode refid="11453" relation="include">
+        </childnode>
+        <childnode refid="11455" relation="include">
+        </childnode>
+        <childnode refid="11461" relation="include">
+        </childnode>
+        <childnode refid="11464" relation="include">
+        </childnode>
+        <childnode refid="11473" relation="include">
+        </childnode>
+        <childnode refid="11475" relation="include">
+        </childnode>
+        <childnode refid="11459" relation="include">
+        </childnode>
+        <childnode refid="11451" relation="include">
+        </childnode>
+        <childnode refid="11450" relation="include">
+        </childnode>
+      </node>
+      <node id="11453">
+        <label>tvm/runtime/memory.h</label>
+        <link refid="runtime_2memory_8h"/>
+        <childnode refid="11445" relation="include">
+        </childnode>
+        <childnode refid="11454" relation="include">
+        </childnode>
+        <childnode refid="11443" relation="include">
+        </childnode>
+        <childnode refid="11450" relation="include">
+        </childnode>
+      </node>
+      <node id="11464">
+        <label>tvm/runtime/data_type.h</label>
+        <link refid="data__type_8h"/>
+        <childnode refid="11446" relation="include">
+        </childnode>
+        <childnode refid="11442" relation="include">
+        </childnode>
+        <childnode refid="11450" relation="include">
+        </childnode>
+      </node>
+      <node id="11441">
+        <label>tvm/support/with.h</label>
+        <link refid="with_8h"/>
+        <childnode refid="11442" relation="include">
+        </childnode>
+        <childnode refid="11443" relation="include">
+        </childnode>
+      </node>
+      <node id="11450">
+        <label>type_traits</label>
+      </node>
+      <node id="11481">
+        <label>algorithm</label>
+      </node>
+      <node id="11447">
+        <label>dlpack/dlpack.h</label>
+      </node>
+      <node id="11458">
+        <label>memory</label>
+      </node>
+      <node id="11468">
+        <label>initializer_list</label>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="11490">
+        <label>include/tvm/relay/qnn/transform.h</label>
+        <link refid="include_2tvm_2relay_2qnn_2transform_8h"/>
+      </node>
+      <node id="11488">
+        <label>include/tvm/ir/transform.h</label>
+        <link refid="include/tvm/ir/transform.h"/>
+        <childnode refid="11489" relation="include">
+        </childnode>
+        <childnode refid="11491" relation="include">
+        </childnode>
+      </node>
+      <node id="11491">
+        <label>include/tvm/tir/transform.h</label>
+        <link refid="include_2tvm_2tir_2transform_8h"/>
+      </node>
+      <node id="11489">
+        <label>include/tvm/relay/transform.h</label>
+        <link refid="include_2tvm_2relay_2transform_8h"/>
+        <childnode refid="11490" relation="include">
+        </childnode>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="classtvm_1_1transform_1_1PassContextNode" prot="public">tvm::transform::PassContextNode</innerclass>
+    <innerclass refid="classtvm_1_1transform_1_1PassContext" prot="public">tvm::transform::PassContext</innerclass>
+    <innerclass refid="classtvm_1_1transform_1_1PassInfoNode" prot="public">tvm::transform::PassInfoNode</innerclass>
+    <innerclass refid="classtvm_1_1transform_1_1PassInfo" prot="public">tvm::transform::PassInfo</innerclass>
+    <innerclass refid="classtvm_1_1transform_1_1PassNode" prot="public">tvm::transform::PassNode</innerclass>
+    <innerclass refid="classtvm_1_1transform_1_1Pass" prot="public">tvm::transform::Pass</innerclass>
+    <innerclass refid="classtvm_1_1transform_1_1Sequential" prot="public">tvm::transform::Sequential</innerclass>
+    <innernamespace refid="namespacetvm">tvm</innernamespace>
+    <innernamespace refid="namespacetvm_1_1transform">tvm::transform</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>This file implements a pass manager. The pass manager manages a sequence of IRModule -&gt; IRModule transformation passes over a particlar unit of AST. The design is largely inspired from LLVM&apos;s pass manager and modern deep learning frameworks that perform tensor-&gt;tensor transformations.</para><para>The responsibilities of a traditional compiler pass manager usually involves:<itemizedlist>
+<listitem><para>Organizing the execution order of optimization passes though not necessarily in the optimal sequence.</para></listitem><listitem><para>Collecting required analysis information and keep them up-to-date.</para></listitem><listitem><para>Reducing the effort required to implement new passes for compiler developers, etc.</para></listitem></itemizedlist>
+</para><para>Similar to LLVM&apos;s pass manager, we designed the Relay pass manager to work different granularity, i.e. module level, function level, and even sequential passe that contains a host of passes.</para><para>However, we also extend the functionality of the traditional pass manager with the consideration of requirements/convention from deep learning frameworks, such as Pytorch and Gluon, etc. Each pass in the Relay pass manager performs the IRModule -&gt; IRModule transformation. All different types of passes, including the sequential-level pass object, are essentially pass objects. This design, therefore, effectively provides users a consistent and convenient interface, i.e. Pass, to play with. It offers a means to ease the development and testing of Relay passes. For example, with the pass manager, external users will be able to have custom passes correctly scheduled without having to modify a single handcrafted pass order.</para><para>In the future we need to describe constraints between passes. For example, we may want to preserve dependencies between different passes and validate them on the completion of a certain pass.</para><para>We also need to store side information and import the error reporting system. </para>    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="2"><highlight class="comment"><sp/>*<sp/>Licensed<sp/>to<sp/>the<sp/>Apache<sp/>Software<sp/>Foundation<sp/>(ASF)<sp/>under<sp/>one</highlight></codeline>
+<codeline lineno="3"><highlight class="comment"><sp/>*<sp/>or<sp/>more<sp/>contributor<sp/>license<sp/>agreements.<sp/><sp/>See<sp/>the<sp/>NOTICE<sp/>file</highlight></codeline>
+<codeline lineno="4"><highlight class="comment"><sp/>*<sp/>distributed<sp/>with<sp/>this<sp/>work<sp/>for<sp/>additional<sp/>information</highlight></codeline>
+<codeline lineno="5"><highlight class="comment"><sp/>*<sp/>regarding<sp/>copyright<sp/>ownership.<sp/><sp/>The<sp/>ASF<sp/>licenses<sp/>this<sp/>file</highlight></codeline>
+<codeline lineno="6"><highlight class="comment"><sp/>*<sp/>to<sp/>you<sp/>under<sp/>the<sp/>Apache<sp/>License,<sp/>Version<sp/>2.0<sp/>(the</highlight></codeline>
+<codeline lineno="7"><highlight class="comment"><sp/>*<sp/>&quot;License&quot;);<sp/>you<sp/>may<sp/>not<sp/>use<sp/>this<sp/>file<sp/>except<sp/>in<sp/>compliance</highlight></codeline>
+<codeline lineno="8"><highlight class="comment"><sp/>*<sp/>with<sp/>the<sp/>License.<sp/><sp/>You<sp/>may<sp/>obtain<sp/>a<sp/>copy<sp/>of<sp/>the<sp/>License<sp/>at</highlight></codeline>
+<codeline lineno="9"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="10"><highlight class="comment"><sp/>*<sp/><sp/><sp/>http://www.apache.org/licenses/LICENSE-2.0</highlight></codeline>
+<codeline lineno="11"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="12"><highlight class="comment"><sp/>*<sp/>Unless<sp/>required<sp/>by<sp/>applicable<sp/>law<sp/>or<sp/>agreed<sp/>to<sp/>in<sp/>writing,</highlight></codeline>
+<codeline lineno="13"><highlight class="comment"><sp/>*<sp/>software<sp/>distributed<sp/>under<sp/>the<sp/>License<sp/>is<sp/>distributed<sp/>on<sp/>an</highlight></codeline>
+<codeline lineno="14"><highlight class="comment"><sp/>*<sp/>&quot;AS<sp/>IS&quot;<sp/>BASIS,<sp/>WITHOUT<sp/>WARRANTIES<sp/>OR<sp/>CONDITIONS<sp/>OF<sp/>ANY</highlight></codeline>
+<codeline lineno="15"><highlight class="comment"><sp/>*<sp/>KIND,<sp/>either<sp/>express<sp/>or<sp/>implied.<sp/><sp/>See<sp/>the<sp/>License<sp/>for<sp/>the</highlight></codeline>
+<codeline lineno="16"><highlight class="comment"><sp/>*<sp/>specific<sp/>language<sp/>governing<sp/>permissions<sp/>and<sp/>limitations</highlight></codeline>
+<codeline lineno="17"><highlight class="comment"><sp/>*<sp/>under<sp/>the<sp/>License.</highlight></codeline>
+<codeline lineno="18"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight></codeline>
+<codeline lineno="56"><highlight class="preprocessor">#ifndef<sp/>TVM_IR_TRANSFORM_H_</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="57"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>TVM_IR_TRANSFORM_H_</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="58"><highlight class="normal"></highlight></codeline>
+<codeline lineno="59"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;<ref refid="with_8h" kindref="compound">tvm/support/with.h</ref>&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="60"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;<ref refid="node_2container_8h" kindref="compound">tvm/node/container.h</ref>&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="61"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;<ref refid="error_8h" kindref="compound">tvm/ir/error.h</ref>&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="62"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;<ref refid="ir_2module_8h" kindref="compound">tvm/ir/module.h</ref>&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="63"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;string&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="64"><highlight class="normal"></highlight></codeline>
+<codeline lineno="65"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal"><ref refid="namespacetvm" kindref="compound">tvm</ref><sp/>{</highlight></codeline>
+<codeline lineno="66" refid="namespacetvm_1_1transform" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal">transform<sp/>{</highlight></codeline>
+<codeline lineno="67"><highlight class="normal"></highlight></codeline>
+<codeline lineno="68"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Forward<sp/>declare<sp/>for<sp/>TraceFunc.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="69"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classtvm_1_1transform_1_1PassInfo" kindref="compound">PassInfo</ref>;</highlight></codeline>
+<codeline lineno="70"><highlight class="normal"></highlight></codeline>
+<codeline lineno="74"><highlight class="keyword">using</highlight><highlight class="normal"><sp/><ref refid="classtvm_1_1runtime_1_1TypedPackedFunc" kindref="compound">TraceFunc</ref><sp/>=</highlight></codeline>
+<codeline lineno="75"><highlight class="normal"><sp/><sp/><ref refid="classtvm_1_1runtime_1_1TypedPackedFunc" kindref="compound">runtime::TypedPackedFunc</ref>&lt;void(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classtvm_1_1IRModule" kindref="compound">IRModule</ref>&amp;<sp/>ir_module,</highlight></codeline>
+<codeline lineno="76"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classtvm_1_1transform_1_1PassInfo" kindref="compound">PassInfo</ref>&amp;<sp/>ctx,</highlight></codeline>
+<codeline lineno="77" refid="namespacetvm_1_1transform_1a0904052a95bd90a669cba07770694652" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>is_before)&gt;;</highlight></codeline>
+<codeline lineno="78"><highlight class="normal"></highlight></codeline>
+<codeline lineno="84" refid="classtvm_1_1transform_1_1PassContextNode" refkind="compound"><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classtvm_1_1transform_1_1PassContextNode" kindref="compound">PassContextNode</ref><sp/>:<sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/>Object<sp/>{</highlight></codeline>
+<codeline lineno="85"><highlight class="normal"><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="89" refid="classtvm_1_1transform_1_1PassContextNode_1aaa3ce0ad4b706d1a38ea953e52941c12" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="classtvm_1_1ErrorReporter" kindref="compound">ErrorReporter</ref><sp/><ref refid="classtvm_1_1transform_1_1PassContextNode_1aaa3ce0ad4b706d1a38ea953e52941c12" kindref="member">err_reporter</ref>;</highlight></codeline>
+<codeline lineno="90"><highlight class="normal"></highlight></codeline>
+<codeline lineno="92" refid="classtvm_1_1transform_1_1PassContextNode_1af166034a8746d65044eea0a2673de991" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="classtvm_1_1transform_1_1PassContextNode_1af166034a8746d65044eea0a2673de991" kindref="member">opt_level</ref>{2};</highlight></codeline>
+<codeline lineno="93"><highlight class="normal"></highlight></codeline>
+<codeline lineno="95" refid="classtvm_1_1transform_1_1PassContextNode_1a0b98ed8aa5bbb660801a9608759a00a9" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="classtvm_1_1transform_1_1PassContextNode_1a0b98ed8aa5bbb660801a9608759a00a9" kindref="member">fallback_device</ref>{</highlight><highlight class="keyword">static_cast&lt;</highlight><highlight class="keywordtype">int</highlight><highlight class="keyword">&gt;</highlight><highlight class="normal">(kDLCPU)};</highlight></codeline>
+<codeline lineno="96"><highlight class="normal"></highlight></codeline>
+<codeline lineno="98" refid="classtvm_1_1transform_1_1PassContextNode_1ac8928bc4c5bfe3a1b2c7805da35f707a" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="classtvm_1_1Array" kindref="compound">Array&lt;PrimExpr&gt;</ref><sp/><ref refid="classtvm_1_1transform_1_1PassContextNode_1ac8928bc4c5bfe3a1b2c7805da35f707a" kindref="member">required_pass</ref>;</highlight></codeline>
+<codeline lineno="100" refid="classtvm_1_1transform_1_1PassContextNode_1ada6069e057832107b112acfd7df1383a" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="classtvm_1_1Array" kindref="compound">Array&lt;PrimExpr&gt;</ref><sp/><ref refid="classtvm_1_1transform_1_1PassContextNode_1ada6069e057832107b112acfd7df1383a" kindref="member">disabled_pass</ref>;</highlight></codeline>
+<codeline lineno="101"><highlight class="normal"></highlight></codeline>
+<codeline lineno="102" refid="classtvm_1_1transform_1_1PassContextNode_1a84242480dd92b11637881d8313524481" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="classtvm_1_1runtime_1_1TypedPackedFunc" kindref="compound">TraceFunc</ref><sp/><ref refid="classtvm_1_1transform_1_1PassContextNode_1a84242480dd92b11637881d8313524481" kindref="member">trace_func</ref>;</highlight></codeline>
+<codeline lineno="103"><highlight class="normal"></highlight></codeline>
+<codeline lineno="104"><highlight class="normal"><sp/><sp/><ref refid="classtvm_1_1transform_1_1PassContextNode_1aa91df8069b6573e72305ab57e9bc620f" kindref="member">PassContextNode</ref>()<sp/>=<sp/></highlight><highlight class="keywordflow">default</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="105"><highlight class="normal"></highlight></codeline>
+<codeline lineno="106" refid="classtvm_1_1transform_1_1PassContextNode_1acc5e97af0ff79af8ab2d6745745e8c63" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classtvm_1_1transform_1_1PassContextNode_1acc5e97af0ff79af8ab2d6745745e8c63" kindref="member">VisitAttrs</ref>(<ref refid="classtvm_1_1AttrVisitor" kindref="compound">AttrVisitor</ref>*<sp/>v)<sp/>{</highlight></codeline>
+<codeline lineno="107"><highlight class="normal"><sp/><sp/><sp/><sp/>v-&gt;Visit(</highlight><highlight class="stringliteral">&quot;opt_level&quot;</highlight><highlight class="normal">,<sp/>&amp;<ref refid="classtvm_1_1transform_1_1PassContextNode_1af166034a8746d65044eea0a2673de991" kindref="member">opt_level</ref>);</highlight></codeline>
+<codeline lineno="108"><highlight class="normal"><sp/><sp/><sp/><sp/>v-&gt;Visit(</highlight><highlight class="stringliteral">&quot;fallback_device&quot;</highlight><highlight class="normal">,<sp/>&amp;<ref refid="classtvm_1_1transform_1_1PassContextNode_1a0b98ed8aa5bbb660801a9608759a00a9" kindref="member">fallback_device</ref>);</highlight></codeline>
+<codeline lineno="109"><highlight class="normal"><sp/><sp/><sp/><sp/>v-&gt;Visit(</highlight><highlight class="stringliteral">&quot;required_pass&quot;</highlight><highlight class="normal">,<sp/>&amp;required_pass);</highlight></codeline>
+<codeline lineno="110"><highlight class="normal"><sp/><sp/><sp/><sp/>v-&gt;Visit(</highlight><highlight class="stringliteral">&quot;disabled_pass&quot;</highlight><highlight class="normal">,<sp/>&amp;disabled_pass);</highlight></codeline>
+<codeline lineno="111"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="112"><highlight class="normal"></highlight></codeline>
+<codeline lineno="113" refid="classtvm_1_1transform_1_1PassContextNode_1ae786553a00ae1f29e0bdb93d7c5c3088" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/>constexpr<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*<sp/><ref refid="classtvm_1_1transform_1_1PassContextNode_1ae786553a00ae1f29e0bdb93d7c5c3088" kindref="member">_type_key</ref><sp/>=<sp/></highlight><highlight class="stringliteral">&quot;transform.PassContext&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="114" refid="classtvm_1_1transform_1_1PassContextNode_1a24b97a15e18bdad2338c71741f5b615e" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/>constexpr<sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classtvm_1_1transform_1_1PassContextNode_1a24b97a15e18bdad2338c71741f5b615e" kindref="member">_type_has_method_sequal_reduce</ref><sp/>=<sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="115"><highlight class="normal"><sp/><sp/><ref refid="classtvm_1_1transform_1_1PassContextNode_1a613725ab055b022ae84d7cabb755533d" kindref="member">TVM_DECLARE_FINAL_OBJECT_INFO</ref>(<ref refid="classtvm_1_1transform_1_1PassContextNode" kindref="compound">PassContextNode</ref>,<sp/>Object);</highlight></codeline>
+<codeline lineno="116"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="117"><highlight class="normal"></highlight></codeline>
+<codeline lineno="118"><highlight class="normal"></highlight></codeline>
+<codeline lineno="133" refid="classtvm_1_1transform_1_1PassContext" refkind="compound"><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classtvm_1_1transform_1_1PassContext" kindref="compound">PassContext</ref><sp/>:<sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/>ObjectRef<sp/>{</highlight></codeline>
+<codeline lineno="134"><highlight class="normal"><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="135" refid="classtvm_1_1transform_1_1PassContext_1a906dadb55586afece28d71d3436fdf1d" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="classtvm_1_1transform_1_1PassContext_1a906dadb55586afece28d71d3436fdf1d" kindref="member">PassContext</ref>()<sp/>{}</highlight></codeline>
+<codeline lineno="136" refid="classtvm_1_1transform_1_1PassContext_1a8f5f511c2e29991eceff7b1f4883313e" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">explicit</highlight><highlight class="normal"><sp/><ref refid="classtvm_1_1transform_1_1PassContext_1a8f5f511c2e29991eceff7b1f4883313e" kindref="member">PassContext</ref>(ObjectPtr&lt;Object&gt;<sp/>n)<sp/>:<sp/>ObjectRef(n)<sp/>{}</highlight></codeline>
+<codeline lineno="141" refid="classtvm_1_1transform_1_1PassContext_1a69b8a7115988b2e8a77afc8e8f98aaa3" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classtvm_1_1transform_1_1PassContextNode" kindref="compound">PassContextNode</ref>*<sp/><ref refid="classtvm_1_1transform_1_1PassContext_1a69b8a7115988b2e8a77afc8e8f98aaa3" kindref="member">operator-&gt;</ref>()</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="142"><highlight class="normal"><sp/><sp/><sp/><sp/>CHECK(</highlight><highlight class="keyword">get</highlight><highlight class="normal">()<sp/>!=<sp/></highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="143"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">static_cast&lt;</highlight><highlight class="keyword">const<sp/></highlight><highlight class="normal"><ref refid="classtvm_1_1transform_1_1PassContextNode" kindref="compound">PassContextNode</ref>*</highlight><highlight class="keyword">&gt;</highlight><highlight class="normal">(</highlight><highlight class="keyword">get</highlight><highlight class="normal">());</highlight></codeline>
+<codeline lineno="144"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="149" refid="classtvm_1_1transform_1_1PassContext_1ab10baf6f7bcbd6e0e4b295399bc9f3a9" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="classtvm_1_1transform_1_1PassContextNode" kindref="compound">PassContextNode</ref>*<sp/><ref refid="classtvm_1_1transform_1_1PassContext_1ab10baf6f7bcbd6e0e4b295399bc9f3a9" kindref="member">operator-&gt;</ref>()<sp/>{</highlight></codeline>
+<codeline lineno="150"><highlight class="normal"><sp/><sp/><sp/><sp/>CHECK(</highlight><highlight class="keyword">get</highlight><highlight class="normal">()<sp/>!=<sp/></highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="151"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">static_cast&lt;</highlight><highlight class="normal"><ref refid="classtvm_1_1transform_1_1PassContextNode" kindref="compound">PassContextNode</ref>*</highlight><highlight class="keyword">&gt;</highlight><highlight class="normal">(get_mutable());</highlight></codeline>
+<codeline lineno="152"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="157"><highlight class="normal"><sp/><sp/>TVM_DLL<sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/><ref refid="classtvm_1_1transform_1_1PassContext" kindref="compound">PassContext</ref><sp/>Create();</highlight></codeline>
+<codeline lineno="162"><highlight class="normal"><sp/><sp/>TVM_DLL<sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/><ref refid="classtvm_1_1transform_1_1PassContext" kindref="compound">PassContext</ref><sp/>Current();</highlight></codeline>
+<codeline lineno="163"><highlight class="normal"></highlight></codeline>
+<codeline lineno="170"><highlight class="normal"><sp/><sp/>TVM_DLL<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>Trace(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classtvm_1_1IRModule" kindref="compound">IRModule</ref>&amp;<sp/>module,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classtvm_1_1transform_1_1PassInfo" kindref="compound">PassInfo</ref>&amp;<sp/>info,<sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>is_before)<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="171"><highlight class="normal"></highlight></codeline>
+<codeline lineno="172"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>accessor.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="173" refid="classtvm_1_1transform_1_1PassContext_1aacc7ca51bec83db2784d871bb324ce93" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">using</highlight><highlight class="normal"><sp/><ref refid="classtvm_1_1transform_1_1PassContextNode" kindref="compound">ContainerType</ref><sp/>=<sp/><ref refid="classtvm_1_1transform_1_1PassContextNode_1aa91df8069b6573e72305ab57e9bc620f" kindref="member">PassContextNode</ref>;</highlight></codeline>
+<codeline lineno="174"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal">Internal;</highlight></codeline>
+<codeline lineno="175"><highlight class="normal"></highlight></codeline>
+<codeline lineno="176"><highlight class="normal"><sp/></highlight><highlight class="keyword">private</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="177"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>The<sp/>entry<sp/>of<sp/>a<sp/>pass<sp/>context<sp/>scope.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="178"><highlight class="normal"><sp/><sp/>TVM_DLL<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>EnterWithScope();</highlight></codeline>
+<codeline lineno="179"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>The<sp/>exit<sp/>of<sp/>a<sp/>pass<sp/>context<sp/>scope.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="180"><highlight class="normal"><sp/><sp/>TVM_DLL<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>ExitWithScope();</highlight></codeline>
+<codeline lineno="181"><highlight class="normal"></highlight></codeline>
+<codeline lineno="182"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>Classes<sp/>to<sp/>get<sp/>the<sp/>Python<sp/>`with`<sp/>like<sp/>syntax.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="183" refid="classtvm_1_1transform_1_1PassContext_1a8bde6eb35df6b3a9f53810e0bc79fdfd" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">friend</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal">Internal;</highlight></codeline>
+<codeline lineno="184" refid="classtvm_1_1transform_1_1PassContext_1a5f399608a6da56a5c91ea6ead8489f69" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">friend</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classtvm_1_1With" kindref="compound">With</ref>&lt;<ref refid="classtvm_1_1transform_1_1PassContext" kindref="compound">PassContext</ref>&gt;;</highlight></codeline>
+<codeline lineno="185"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="186"><highlight class="normal"></highlight></codeline>
+<codeline lineno="191" refid="classtvm_1_1transform_1_1PassInfoNode" refkind="compound"><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classtvm_1_1transform_1_1PassInfoNode" kindref="compound">PassInfoNode</ref><sp/>:<sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/>Object<sp/>{</highlight></codeline>
+<codeline lineno="192"><highlight class="normal"><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="194" refid="classtvm_1_1transform_1_1PassInfoNode_1a8e22e5767cd899bb9aef1ee1c529a2a7" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="classtvm_1_1transform_1_1PassInfoNode_1a8e22e5767cd899bb9aef1ee1c529a2a7" kindref="member">opt_level</ref>;</highlight></codeline>
+<codeline lineno="195"><highlight class="normal"></highlight></codeline>
+<codeline lineno="197" refid="classtvm_1_1transform_1_1PassInfoNode_1a29ef9f45e08c32e691cef46eb858dbe7" refkind="member"><highlight class="normal"><sp/><sp/>std::string<sp/><ref refid="classtvm_1_1transform_1_1PassInfoNode_1a29ef9f45e08c32e691cef46eb858dbe7" kindref="member">name</ref>;</highlight></codeline>
+<codeline lineno="198"><highlight class="normal"></highlight></codeline>
+<codeline lineno="200" refid="classtvm_1_1transform_1_1PassInfoNode_1a9af9278b785b3c11b90b00640f68dc87" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="classtvm_1_1Array" kindref="compound">Array&lt;PrimExpr&gt;</ref><sp/><ref refid="classtvm_1_1transform_1_1PassInfoNode_1a9af9278b785b3c11b90b00640f68dc87" kindref="member">required</ref>;</highlight></codeline>
+<codeline lineno="201"><highlight class="normal"></highlight></codeline>
+<codeline lineno="202"><highlight class="normal"><sp/><sp/><ref refid="namespacetvm_1_1relay_1_1transform_1aae88cd0ad69cf64c7e9caf0a0c8ebb45" kindref="member">PassInfoNode</ref>()<sp/>=<sp/></highlight><highlight class="keywordflow">default</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="203"><highlight class="normal"></highlight></codeline>
+<codeline lineno="204" refid="classtvm_1_1transform_1_1PassInfoNode_1a09fd26c53f74228763943f519c7d3277" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classtvm_1_1transform_1_1PassInfoNode_1a09fd26c53f74228763943f519c7d3277" kindref="member">VisitAttrs</ref>(<ref refid="classtvm_1_1AttrVisitor" kindref="compound">AttrVisitor</ref>*<sp/>v)<sp/>{</highlight></codeline>
+<codeline lineno="205"><highlight class="normal"><sp/><sp/><sp/><sp/>v-&gt;Visit(</highlight><highlight class="stringliteral">&quot;opt_level&quot;</highlight><highlight class="normal">,<sp/>&amp;opt_level);</highlight></codeline>
+<codeline lineno="206"><highlight class="normal"><sp/><sp/><sp/><sp/>v-&gt;Visit(</highlight><highlight class="stringliteral">&quot;name&quot;</highlight><highlight class="normal">,<sp/>&amp;name);</highlight></codeline>
+<codeline lineno="207"><highlight class="normal"><sp/><sp/><sp/><sp/>v-&gt;Visit(</highlight><highlight class="stringliteral">&quot;required&quot;</highlight><highlight class="normal">,<sp/>&amp;required);</highlight></codeline>
+<codeline lineno="208"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="209"><highlight class="normal"></highlight></codeline>
+<codeline lineno="210" refid="classtvm_1_1transform_1_1PassInfoNode_1a78c9eca9534883355d96eb0cd1fb8816" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/>constexpr<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*<sp/><ref refid="classtvm_1_1transform_1_1PassContextNode_1ae786553a00ae1f29e0bdb93d7c5c3088" kindref="member">_type_key</ref><sp/>=<sp/></highlight><highlight class="stringliteral">&quot;transform.PassInfo&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="211" refid="classtvm_1_1transform_1_1PassInfoNode_1a41087cffcece669d267f137ad30a5404" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/>constexpr<sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classtvm_1_1transform_1_1PassContextNode_1a24b97a15e18bdad2338c71741f5b615e" kindref="member">_type_has_method_sequal_reduce</ref><sp/>=<sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="212"><highlight class="normal"><sp/><sp/><ref refid="classtvm_1_1transform_1_1PassContextNode_1a613725ab055b022ae84d7cabb755533d" kindref="member">TVM_DECLARE_FINAL_OBJECT_INFO</ref>(<ref refid="classtvm_1_1transform_1_1PassInfoNode" kindref="compound">PassInfoNode</ref>,<sp/>Object);</highlight></codeline>
+<codeline lineno="213"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="214"><highlight class="normal"></highlight></codeline>
+<codeline lineno="215"><highlight class="normal"></highlight><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="216"><highlight class="comment"><sp/>*<sp/>\brief<sp/>Managed<sp/>reference<sp/>class<sp/>for<sp/>PassInfoNode</highlight></codeline>
+<codeline lineno="217"><highlight class="comment"><sp/>*<sp/>\sa<sp/>PassInfoNode</highlight></codeline>
+<codeline lineno="218"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="219" refid="classtvm_1_1transform_1_1PassInfo" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classtvm_1_1transform_1_1PassInfo" kindref="compound">PassInfo</ref><sp/>:<sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/>ObjectRef<sp/>{</highlight></codeline>
+<codeline lineno="220"><highlight class="normal"><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="227"><highlight class="normal"><sp/><sp/>TVM_DLL<sp/><ref refid="namespacetvm_1_1relay_1_1transform_1aa405b5f11938fb8c4fa2ca21926edc9d" kindref="member">PassInfo</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="classtvm_1_1transform_1_1PassContextNode_1af166034a8746d65044eea0a2673de991" kindref="member">opt_level</ref>,</highlight></codeline>
+<codeline lineno="228"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::string<sp/>name,</highlight></codeline>
+<codeline lineno="229"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classtvm_1_1Array" kindref="compound">Array&lt;PrimExpr&gt;</ref><sp/>required);</highlight></codeline>
+<codeline lineno="230"><highlight class="normal"></highlight></codeline>
+<codeline lineno="231"><highlight class="normal"><sp/><sp/><ref refid="object_8h_1ac6e7295a4999e2c8e4a2c990beca887a" kindref="member">TVM_DEFINE_OBJECT_REF_METHODS</ref>(PassInfo,<sp/>ObjectRef,<sp/><ref refid="classtvm_1_1transform_1_1PassInfoNode" kindref="compound">PassInfoNode</ref>);</highlight></codeline>
+<codeline lineno="232"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="233"><highlight class="normal"></highlight></codeline>
+<codeline lineno="239" refid="classtvm_1_1transform_1_1PassNode" refkind="compound"><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classtvm_1_1transform_1_1PassNode" kindref="compound">PassNode</ref><sp/>:<sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/>Object<sp/>{</highlight></codeline>
+<codeline lineno="240"><highlight class="normal"><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="241" refid="classtvm_1_1transform_1_1PassNode_1ad8fd84de45a9445aacea6273ae2eb7f6" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/><ref refid="classtvm_1_1transform_1_1PassNode_1ad8fd84de45a9445aacea6273ae2eb7f6" kindref="member">~PassNode</ref>()<sp/>{}</highlight></codeline>
+<codeline lineno="244"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/><ref refid="classtvm_1_1transform_1_1PassInfo" kindref="compound">PassInfo</ref><sp/>Info()<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="245"><highlight class="normal"></highlight></codeline>
+<codeline lineno="253" refid="classtvm_1_1transform_1_1PassNode_1a3fa3ffce313008085951ac8dccdf28d4" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="classtvm_1_1IRModule" kindref="compound">IRModule</ref><sp/><ref refid="classtvm_1_1transform_1_1PassNode_1a3fa3ffce313008085951ac8dccdf28d4" kindref="member">operator()</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classtvm_1_1IRModule" kindref="compound">IRModule</ref>&amp;<sp/><ref refid="namespacetopi_1ab32a7a76e3a94a1edba52436a1337cb6" kindref="member">mod</ref>)</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="254"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>this-&gt;operator()(mod,<sp/><ref refid="classtvm_1_1transform_1_1PassContext_1a4d21045965f6e5ea9338a1e8111af5fc" kindref="member">PassContext::Current</ref>());</highlight></codeline>
+<codeline lineno="255"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="256"><highlight class="normal"></highlight></codeline>
+<codeline lineno="265"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/><ref refid="classtvm_1_1IRModule" kindref="compound">IRModule</ref><sp/>operator()(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classtvm_1_1IRModule" kindref="compound">IRModule</ref>&amp;<sp/><ref refid="namespacetopi_1ab32a7a76e3a94a1edba52436a1337cb6" kindref="member">mod</ref>,</highlight></codeline>
+<codeline lineno="266"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>PassContext&amp;<sp/>pass_ctx)<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="267"><highlight class="normal"></highlight></codeline>
+<codeline lineno="268" refid="classtvm_1_1transform_1_1PassNode_1af04aed6a576c3a4b9c2969d6f190cd37" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classtvm_1_1transform_1_1PassNode_1af04aed6a576c3a4b9c2969d6f190cd37" kindref="member">VisitAttrs</ref>(<ref refid="classtvm_1_1AttrVisitor" kindref="compound">AttrVisitor</ref>*<sp/>v)<sp/>{}</highlight></codeline>
+<codeline lineno="269"><highlight class="normal"></highlight></codeline>
+<codeline lineno="270" refid="classtvm_1_1transform_1_1PassNode_1a4e95f892a77bfa9173892e88b032a4a8" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/>constexpr<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*<sp/><ref refid="classtvm_1_1transform_1_1PassContextNode_1ae786553a00ae1f29e0bdb93d7c5c3088" kindref="member">_type_key</ref><sp/>=<sp/></highlight><highlight class="stringliteral">&quot;transform.Pass&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="271"><highlight class="normal"><sp/><sp/><ref refid="object_8h_1ac2b7418e9549512b5db0126cf2a716f1" kindref="member">TVM_DECLARE_BASE_OBJECT_INFO</ref>(<ref refid="classtvm_1_1transform_1_1PassNode" kindref="compound">PassNode</ref>,<sp/>Object);</highlight></codeline>
+<codeline lineno="272"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="273"><highlight class="normal"></highlight></codeline>
+<codeline lineno="274" refid="classtvm_1_1transform_1_1Pass" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classtvm_1_1transform_1_1Pass" kindref="compound">Pass</ref><sp/>:<sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/>ObjectRef<sp/>{</highlight></codeline>
+<codeline lineno="275"><highlight class="normal"><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="283" refid="classtvm_1_1transform_1_1Pass_1a3894c4af152ad0618323d20d21ef631d" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="classtvm_1_1IRModule" kindref="compound">IRModule</ref><sp/><ref refid="classtvm_1_1transform_1_1Pass_1a3894c4af152ad0618323d20d21ef631d" kindref="member">operator()</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classtvm_1_1IRModule" kindref="compound">IRModule</ref>&amp;<sp/><ref refid="namespacetopi_1ab32a7a76e3a94a1edba52436a1337cb6" kindref="member">mod</ref>)</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="284"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classtvm_1_1transform_1_1PassNode" kindref="compound">PassNode</ref>*<sp/>node<sp/>=<sp/>operator-&gt;();</highlight></codeline>
+<codeline lineno="285"><highlight class="normal"><sp/><sp/><sp/><sp/>CHECK(node<sp/>!=<sp/></highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="286"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>node-&gt;operator()(<ref refid="namespacetopi_1ab32a7a76e3a94a1edba52436a1337cb6" kindref="member">mod</ref>);</highlight></codeline>
+<codeline lineno="287"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="296" refid="classtvm_1_1transform_1_1Pass_1aeb29f2d1519ba3611ad8dbeb03b65245" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="classtvm_1_1IRModule" kindref="compound">IRModule</ref><sp/><ref refid="classtvm_1_1transform_1_1Pass_1aeb29f2d1519ba3611ad8dbeb03b65245" kindref="member">operator()</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classtvm_1_1IRModule" kindref="compound">IRModule</ref>&amp;<sp/><ref refid="namespacetopi_1ab32a7a76e3a94a1edba52436a1337cb6" kindref="member">mod</ref>,</highlight></codeline>
+<codeline lineno="297"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>PassContext&amp;<sp/>pass_ctx)</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="298"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classtvm_1_1transform_1_1PassNode" kindref="compound">PassNode</ref>*<sp/>node<sp/>=<sp/>operator-&gt;();</highlight></codeline>
+<codeline lineno="299"><highlight class="normal"><sp/><sp/><sp/><sp/>CHECK(node<sp/>!=<sp/></highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="300"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>node-&gt;operator()(<ref refid="namespacetopi_1ab32a7a76e3a94a1edba52436a1337cb6" kindref="member">mod</ref>,<sp/>pass_ctx);</highlight></codeline>
+<codeline lineno="301"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="302"><highlight class="normal"></highlight></codeline>
+<codeline lineno="303"><highlight class="normal"><sp/><sp/><ref refid="object_8h_1ac6e7295a4999e2c8e4a2c990beca887a" kindref="member">TVM_DEFINE_OBJECT_REF_METHODS</ref>(<ref refid="classtvm_1_1transform_1_1Pass" kindref="compound">Pass</ref>,<sp/>ObjectRef,<sp/><ref refid="classtvm_1_1transform_1_1PassNode" kindref="compound">PassNode</ref>);</highlight></codeline>
+<codeline lineno="304"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="305"><highlight class="normal"></highlight></codeline>
+<codeline lineno="306"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal">SequentialNode;</highlight></codeline>
+<codeline lineno="307"><highlight class="normal"></highlight></codeline>
+<codeline lineno="308" refid="classtvm_1_1transform_1_1Sequential" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classtvm_1_1transform_1_1Sequential" kindref="compound">Sequential</ref><sp/>:<sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/><ref refid="classtvm_1_1transform_1_1Pass" kindref="compound">Pass</ref><sp/>{</highlight></codeline>
+<codeline lineno="309"><highlight class="normal"><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="316"><highlight class="normal"><sp/><sp/>TVM_DLL<sp/><ref refid="namespacetvm_1_1relay_1_1transform_1a3ae923037d22b4640b450c06e6c1e33e" kindref="member">Sequential</ref>(<ref refid="classtvm_1_1Array" kindref="compound">Array&lt;Pass&gt;</ref><sp/>passes,<sp/><ref refid="classtvm_1_1transform_1_1PassInfo" kindref="compound">PassInfo</ref><sp/>pass_info);</highlight></codeline>
+<codeline lineno="317"><highlight class="normal"></highlight></codeline>
+<codeline lineno="326"><highlight class="normal"><sp/><sp/>TVM_DLL<sp/><ref refid="namespacetvm_1_1relay_1_1transform_1a3ae923037d22b4640b450c06e6c1e33e" kindref="member">Sequential</ref>(<ref refid="classtvm_1_1Array" kindref="compound">Array&lt;Pass&gt;</ref><sp/>passes,<sp/>std::string<sp/>name<sp/>=<sp/></highlight><highlight class="stringliteral">&quot;sequential&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="327"><highlight class="normal"></highlight></codeline>
+<codeline lineno="328"><highlight class="normal"><sp/><sp/><ref refid="namespacetvm_1_1relay_1_1transform_1a3ae923037d22b4640b450c06e6c1e33e" kindref="member">Sequential</ref>()<sp/>=<sp/></highlight><highlight class="keywordflow">default</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="329" refid="classtvm_1_1transform_1_1Sequential_1ad8a15a63b3d4a2b10518c7a61a761416" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">explicit</highlight><highlight class="normal"><sp/><ref refid="classtvm_1_1transform_1_1Sequential_1ad8a15a63b3d4a2b10518c7a61a761416" kindref="member">Sequential</ref>(ObjectPtr&lt;Object&gt;<sp/>n)<sp/>:<sp/><ref refid="classtvm_1_1transform_1_1Pass" kindref="compound">Pass</ref>(n)<sp/>{}</highlight></codeline>
+<codeline lineno="330"><highlight class="normal"></highlight></codeline>
+<codeline lineno="331"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>SequentialNode*<sp/>operator-&gt;()<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="332" refid="classtvm_1_1transform_1_1Sequential_1ad1ce40c08602f33656cc82d281f52d9d" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">using</highlight><highlight class="normal"><sp/><ref refid="classtvm_1_1transform_1_1Sequential" kindref="compound">ContainerType</ref><sp/>=<sp/><ref refid="namespacetvm_1_1relay_1_1transform_1a3ae923037d22b4640b450c06e6c1e33e" kindref="member">Sequential</ref>;</highlight></codeline>
+<codeline lineno="333"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="334"><highlight class="normal"></highlight></codeline>
+<codeline lineno="335"><highlight class="normal"></highlight><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="336"><highlight class="comment"><sp/>*<sp/>\brief<sp/>Create<sp/>a<sp/>module<sp/>pass.</highlight></codeline>
+<codeline lineno="337"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="338"><highlight class="comment"><sp/>*<sp/>\param<sp/>pass_func<sp/>The<sp/>packed<sp/>function<sp/>that<sp/>contains<sp/>the<sp/>optimization.</highlight></codeline>
+<codeline lineno="339"><highlight class="comment"><sp/>*<sp/>\param<sp/>opt_level<sp/>The<sp/>optimization<sp/>level<sp/>of<sp/>the<sp/>module<sp/>pass.</highlight></codeline>
+<codeline lineno="340"><highlight class="comment"><sp/>*<sp/>\param<sp/>name<sp/>The<sp/>name<sp/>of<sp/>the<sp/>module<sp/>pass.</highlight></codeline>
+<codeline lineno="341"><highlight class="comment"><sp/>*<sp/>\param<sp/>required<sp/>The<sp/>list<sp/>of<sp/>the<sp/>passes<sp/>that<sp/>the<sp/>module<sp/>pass<sp/>is<sp/>dependent<sp/>on.</highlight></codeline>
+<codeline lineno="342"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="343"><highlight class="comment"><sp/>*<sp/>\return<sp/>The<sp/>created<sp/>module<sp/>pass.</highlight></codeline>
+<codeline lineno="344"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="345"><highlight class="normal"><ref refid="classtvm_1_1transform_1_1Pass" kindref="compound">Pass</ref><sp/><ref refid="namespacetvm_1_1transform_1a6b8fcf03bde56b5b0ad51ad9a0f5fd36" kindref="member">CreateModulePass</ref>(</highlight></codeline>
+<codeline lineno="346"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classtvm_1_1runtime_1_1TypedPackedFunc" kindref="compound">runtime::TypedPackedFunc</ref>&lt;<ref refid="classtvm_1_1IRModule" kindref="compound">IRModule</ref>(<ref refid="classtvm_1_1IRModule" kindref="compound">IRModule</ref>,<sp/>PassContext)&gt;&amp;<sp/>pass_func,</highlight></codeline>
+<codeline lineno="347"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="classtvm_1_1transform_1_1PassContextNode_1af166034a8746d65044eea0a2673de991" kindref="member">opt_level</ref>,</highlight></codeline>
+<codeline lineno="348"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::string&amp;<sp/>name,</highlight></codeline>
+<codeline lineno="349"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classtvm_1_1Array" kindref="compound">Array&lt;PrimExpr&gt;</ref>&amp;<sp/>required);</highlight></codeline>
+<codeline lineno="350"><highlight class="normal"></highlight></codeline>
+<codeline lineno="351"><highlight class="normal">}<sp/><sp/></highlight><highlight class="comment">//<sp/>namespace<sp/>transform</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="352"><highlight class="normal">}<sp/><sp/></highlight><highlight class="comment">//<sp/>namespace<sp/>tvm</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="353"><highlight class="normal"></highlight></codeline>
+<codeline lineno="354"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/><sp/>//<sp/>TVM_IR_TRANSFORM_H_</highlight></codeline>
+    </programlisting>
+    <location file="include/tvm/ir/transform.h"/>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,139 @@
+\hypertarget{classtvm_1_1te_1_1SplitNode}{}\section{tvm\+:\+:te\+:\+:Split\+Node Class Reference}
+\label{classtvm_1_1te_1_1SplitNode}\index{tvm\+::te\+::\+Split\+Node@{tvm\+::te\+::\+Split\+Node}}
+
+
+Split the parent domain into product of outer and iter.  
+
+
+
+
+{\ttfamily \#include $<$schedule.\+h$>$}
+
+
+
+Inheritance diagram for tvm\+:\+:te\+:\+:Split\+Node\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=285pt]{classtvm_1_1te_1_1SplitNode__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for tvm\+:\+:te\+:\+:Split\+Node\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classtvm_1_1te_1_1SplitNode__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{classtvm_1_1te_1_1SplitNode_a2af7d1cd6ed818f6f6c6e0c94a5e5614}{Visit\+Attrs} (\hyperlink{classtvm_1_1AttrVisitor}{Attr\+Visitor} $\ast$v)
+\item 
+\hyperlink{classtvm_1_1te_1_1SplitNode_ae140a619383fad245de4b86b00005d91}{T\+V\+M\+\_\+\+D\+E\+C\+L\+A\+R\+E\+\_\+\+F\+I\+N\+A\+L\+\_\+\+O\+B\+J\+E\+C\+T\+\_\+\+I\+N\+FO} (\hyperlink{classtvm_1_1te_1_1SplitNode}{Split\+Node}, \hyperlink{classtvm_1_1te_1_1IterVarRelationNode}{Iter\+Var\+Relation\+Node})
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \hyperlink{classtvm_1_1te_1_1IterVarRelation}{Iter\+Var\+Relation} \hyperlink{classtvm_1_1te_1_1SplitNode_a1df00e4d8709ec541cc8660c1192449f}{make} (\hyperlink{classtvm_1_1tir_1_1IterVar}{Iter\+Var} \hyperlink{classtvm_1_1te_1_1SplitNode_aff313d36c09c8d93ba34aa4a251d6a9f}{parent}, \hyperlink{classtvm_1_1tir_1_1IterVar}{Iter\+Var} \hyperlink{classtvm_1_1te_1_1SplitNode_a8d0f3974bbd80f360c717278ec932fbd}{outer}, \hyperlink{classtvm_1_1tir_1_1IterVar}{Iter\+Var} \hyperlink{classtvm_1_1te_1_1SplitNode_a54baaf3b5697606521b164b5db7bb8ba}{inner}, \hyperlink{classtvm_1_1PrimExpr}{Prim\+Expr} \hyperlink{classtvm_1_1te_1_1SplitNode_a60369ff01e34008f1b3215d7f215b972}{factor}, \hyperlink{classtvm_1_1PrimExpr}{Prim\+Expr} \hyperlink{classtvm_1_1te_1_1SplitNode_a4e809bca962d95b7fab6a98f1617a05c}{nparts})
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classtvm_1_1tir_1_1IterVar}{Iter\+Var} \hyperlink{classtvm_1_1te_1_1SplitNode_aff313d36c09c8d93ba34aa4a251d6a9f}{parent}
+\begin{DoxyCompactList}\small\item\em The parent domain. \end{DoxyCompactList}\item 
+\hyperlink{classtvm_1_1tir_1_1IterVar}{Iter\+Var} \hyperlink{classtvm_1_1te_1_1SplitNode_a8d0f3974bbd80f360c717278ec932fbd}{outer}
+\begin{DoxyCompactList}\small\item\em The outer domain. \end{DoxyCompactList}\item 
+\hyperlink{classtvm_1_1tir_1_1IterVar}{Iter\+Var} \hyperlink{classtvm_1_1te_1_1SplitNode_a54baaf3b5697606521b164b5db7bb8ba}{inner}
+\begin{DoxyCompactList}\small\item\em The inner domain. \end{DoxyCompactList}\item 
+\hyperlink{classtvm_1_1PrimExpr}{Prim\+Expr} \hyperlink{classtvm_1_1te_1_1SplitNode_a60369ff01e34008f1b3215d7f215b972}{factor}
+\begin{DoxyCompactList}\small\item\em The split factor. \end{DoxyCompactList}\item 
+\hyperlink{classtvm_1_1PrimExpr}{Prim\+Expr} \hyperlink{classtvm_1_1te_1_1SplitNode_a4e809bca962d95b7fab6a98f1617a05c}{nparts}
+\begin{DoxyCompactList}\small\item\em Number of parts, only factor or nparts can be given. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static constexpr const char $\ast$ \hyperlink{classtvm_1_1te_1_1SplitNode_aedb5511b8ed87273d74eca6c9643765f}{\+\_\+type\+\_\+key} = \char`\"{}Split\char`\"{}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Split the parent domain into product of outer and iter. 
+
+\subsection{Member Function Documentation}
+\index{tvm\+::te\+::\+Split\+Node@{tvm\+::te\+::\+Split\+Node}!make@{make}}
+\index{make@{make}!tvm\+::te\+::\+Split\+Node@{tvm\+::te\+::\+Split\+Node}}
+\subsubsection[{\texorpdfstring{make(\+Iter\+Var parent, Iter\+Var outer, Iter\+Var inner, Prim\+Expr factor, Prim\+Expr nparts)}{make(IterVar parent, IterVar outer, IterVar inner, PrimExpr factor, PrimExpr nparts)}}]{\setlength{\rightskip}{0pt plus 5cm}static {\bf Iter\+Var\+Relation} tvm\+::te\+::\+Split\+Node\+::make (
+\begin{DoxyParamCaption}
+\item[{{\bf Iter\+Var}}]{parent, }
+\item[{{\bf Iter\+Var}}]{outer, }
+\item[{{\bf Iter\+Var}}]{inner, }
+\item[{{\bf Prim\+Expr}}]{factor, }
+\item[{{\bf Prim\+Expr}}]{nparts}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}\hypertarget{classtvm_1_1te_1_1SplitNode_a1df00e4d8709ec541cc8660c1192449f}{}\label{classtvm_1_1te_1_1SplitNode_a1df00e4d8709ec541cc8660c1192449f}
+\index{tvm\+::te\+::\+Split\+Node@{tvm\+::te\+::\+Split\+Node}!T\+V\+M\+\_\+\+D\+E\+C\+L\+A\+R\+E\+\_\+\+F\+I\+N\+A\+L\+\_\+\+O\+B\+J\+E\+C\+T\+\_\+\+I\+N\+FO@{T\+V\+M\+\_\+\+D\+E\+C\+L\+A\+R\+E\+\_\+\+F\+I\+N\+A\+L\+\_\+\+O\+B\+J\+E\+C\+T\+\_\+\+I\+N\+FO}}
+\index{T\+V\+M\+\_\+\+D\+E\+C\+L\+A\+R\+E\+\_\+\+F\+I\+N\+A\+L\+\_\+\+O\+B\+J\+E\+C\+T\+\_\+\+I\+N\+FO@{T\+V\+M\+\_\+\+D\+E\+C\+L\+A\+R\+E\+\_\+\+F\+I\+N\+A\+L\+\_\+\+O\+B\+J\+E\+C\+T\+\_\+\+I\+N\+FO}!tvm\+::te\+::\+Split\+Node@{tvm\+::te\+::\+Split\+Node}}
+\subsubsection[{\texorpdfstring{T\+V\+M\+\_\+\+D\+E\+C\+L\+A\+R\+E\+\_\+\+F\+I\+N\+A\+L\+\_\+\+O\+B\+J\+E\+C\+T\+\_\+\+I\+N\+F\+O(\+Split\+Node, Iter\+Var\+Relation\+Node)}{TVM_DECLARE_FINAL_OBJECT_INFO(SplitNode, IterVarRelationNode)}}]{\setlength{\rightskip}{0pt plus 5cm}tvm\+::te\+::\+Split\+Node\+::\+T\+V\+M\+\_\+\+D\+E\+C\+L\+A\+R\+E\+\_\+\+F\+I\+N\+A\+L\+\_\+\+O\+B\+J\+E\+C\+T\+\_\+\+I\+N\+FO (
+\begin{DoxyParamCaption}
+\item[{{\bf Split\+Node}}]{, }
+\item[{{\bf Iter\+Var\+Relation\+Node}}]{}
+\end{DoxyParamCaption}
+)}\hypertarget{classtvm_1_1te_1_1SplitNode_ae140a619383fad245de4b86b00005d91}{}\label{classtvm_1_1te_1_1SplitNode_ae140a619383fad245de4b86b00005d91}
+\index{tvm\+::te\+::\+Split\+Node@{tvm\+::te\+::\+Split\+Node}!Visit\+Attrs@{Visit\+Attrs}}
+\index{Visit\+Attrs@{Visit\+Attrs}!tvm\+::te\+::\+Split\+Node@{tvm\+::te\+::\+Split\+Node}}
+\subsubsection[{\texorpdfstring{Visit\+Attrs(\+Attr\+Visitor $\ast$v)}{VisitAttrs(AttrVisitor *v)}}]{\setlength{\rightskip}{0pt plus 5cm}void tvm\+::te\+::\+Split\+Node\+::\+Visit\+Attrs (
+\begin{DoxyParamCaption}
+\item[{{\bf Attr\+Visitor} $\ast$}]{v}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classtvm_1_1te_1_1SplitNode_a2af7d1cd6ed818f6f6c6e0c94a5e5614}{}\label{classtvm_1_1te_1_1SplitNode_a2af7d1cd6ed818f6f6c6e0c94a5e5614}
+
+
+\subsection{Member Data Documentation}
+\index{tvm\+::te\+::\+Split\+Node@{tvm\+::te\+::\+Split\+Node}!\+\_\+type\+\_\+key@{\+\_\+type\+\_\+key}}
+\index{\+\_\+type\+\_\+key@{\+\_\+type\+\_\+key}!tvm\+::te\+::\+Split\+Node@{tvm\+::te\+::\+Split\+Node}}
+\subsubsection[{\texorpdfstring{\+\_\+type\+\_\+key}{_type_key}}]{\setlength{\rightskip}{0pt plus 5cm}constexpr const char$\ast$ tvm\+::te\+::\+Split\+Node\+::\+\_\+type\+\_\+key = \char`\"{}Split\char`\"{}\hspace{0.3cm}{\ttfamily [static]}}\hypertarget{classtvm_1_1te_1_1SplitNode_aedb5511b8ed87273d74eca6c9643765f}{}\label{classtvm_1_1te_1_1SplitNode_aedb5511b8ed87273d74eca6c9643765f}
+\index{tvm\+::te\+::\+Split\+Node@{tvm\+::te\+::\+Split\+Node}!factor@{factor}}
+\index{factor@{factor}!tvm\+::te\+::\+Split\+Node@{tvm\+::te\+::\+Split\+Node}}
+\subsubsection[{\texorpdfstring{factor}{factor}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Prim\+Expr} tvm\+::te\+::\+Split\+Node\+::factor}\hypertarget{classtvm_1_1te_1_1SplitNode_a60369ff01e34008f1b3215d7f215b972}{}\label{classtvm_1_1te_1_1SplitNode_a60369ff01e34008f1b3215d7f215b972}
+
+
+The split factor. 
+
+\index{tvm\+::te\+::\+Split\+Node@{tvm\+::te\+::\+Split\+Node}!inner@{inner}}
+\index{inner@{inner}!tvm\+::te\+::\+Split\+Node@{tvm\+::te\+::\+Split\+Node}}
+\subsubsection[{\texorpdfstring{inner}{inner}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Iter\+Var} tvm\+::te\+::\+Split\+Node\+::inner}\hypertarget{classtvm_1_1te_1_1SplitNode_a54baaf3b5697606521b164b5db7bb8ba}{}\label{classtvm_1_1te_1_1SplitNode_a54baaf3b5697606521b164b5db7bb8ba}
+
+
+The inner domain. 
+
+\index{tvm\+::te\+::\+Split\+Node@{tvm\+::te\+::\+Split\+Node}!nparts@{nparts}}
+\index{nparts@{nparts}!tvm\+::te\+::\+Split\+Node@{tvm\+::te\+::\+Split\+Node}}
+\subsubsection[{\texorpdfstring{nparts}{nparts}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Prim\+Expr} tvm\+::te\+::\+Split\+Node\+::nparts}\hypertarget{classtvm_1_1te_1_1SplitNode_a4e809bca962d95b7fab6a98f1617a05c}{}\label{classtvm_1_1te_1_1SplitNode_a4e809bca962d95b7fab6a98f1617a05c}
+
+
+Number of parts, only factor or nparts can be given. 
+
+\index{tvm\+::te\+::\+Split\+Node@{tvm\+::te\+::\+Split\+Node}!outer@{outer}}
+\index{outer@{outer}!tvm\+::te\+::\+Split\+Node@{tvm\+::te\+::\+Split\+Node}}
+\subsubsection[{\texorpdfstring{outer}{outer}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Iter\+Var} tvm\+::te\+::\+Split\+Node\+::outer}\hypertarget{classtvm_1_1te_1_1SplitNode_a8d0f3974bbd80f360c717278ec932fbd}{}\label{classtvm_1_1te_1_1SplitNode_a8d0f3974bbd80f360c717278ec932fbd}
+
+
+The outer domain. 
+
+\index{tvm\+::te\+::\+Split\+Node@{tvm\+::te\+::\+Split\+Node}!parent@{parent}}
+\index{parent@{parent}!tvm\+::te\+::\+Split\+Node@{tvm\+::te\+::\+Split\+Node}}
+\subsubsection[{\texorpdfstring{parent}{parent}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Iter\+Var} tvm\+::te\+::\+Split\+Node\+::parent}\hypertarget{classtvm_1_1te_1_1SplitNode_aff313d36c09c8d93ba34aa4a251d6a9f}{}\label{classtvm_1_1te_1_1SplitNode_aff313d36c09c8d93ba34aa4a251d6a9f}
+
+
+The parent domain. 
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+include/tvm/te/\hyperlink{schedule_8h}{schedule.\+h}\end{DoxyCompactItemize}

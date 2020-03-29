@@ -1,0 +1,174 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="classtvm_1_1te_1_1RebaseNode" kind="class" language="C++" prot="public">
+    <compoundname>tvm::te::RebaseNode</compoundname>
+    <basecompoundref refid="classtvm_1_1te_1_1IterVarRelationNode" prot="public" virt="non-virtual">tvm::te::IterVarRelationNode</basecompoundref>
+    <includes refid="schedule_8h" local="no">schedule.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="classtvm_1_1te_1_1RebaseNode_1a4fea0a62970e2831dd92c58aee14a1f4" prot="public" static="no" mutable="no">
+        <type><ref refid="classtvm_1_1tir_1_1IterVar" kindref="compound">IterVar</ref></type>
+        <definition>IterVar tvm::te::RebaseNode::parent</definition>
+        <argsstring></argsstring>
+        <name>parent</name>
+        <briefdescription>
+<para>The parent domain. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/te/schedule.h" line="712" column="1" bodyfile="include/tvm/te/schedule.h" bodystart="712" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classtvm_1_1te_1_1RebaseNode_1a3e718d8fd2ae0f2d76b794e6dfa303f0" prot="public" static="no" mutable="no">
+        <type><ref refid="classtvm_1_1tir_1_1IterVar" kindref="compound">IterVar</ref></type>
+        <definition>IterVar tvm::te::RebaseNode::rebased</definition>
+        <argsstring></argsstring>
+        <name>rebased</name>
+        <briefdescription>
+<para>The inner domain. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/te/schedule.h" line="714" column="1" bodyfile="include/tvm/te/schedule.h" bodystart="714" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-attrib">
+      <memberdef kind="variable" id="classtvm_1_1te_1_1RebaseNode_1aead226ee7d9092dc0961fc7d639f6d7e" prot="public" static="yes" mutable="no">
+        <type>constexpr const char *</type>
+        <definition>constexpr const char* tvm::te::RebaseNode::_type_key</definition>
+        <argsstring></argsstring>
+        <name>_type_key</name>
+        <initializer>= &quot;Rebase&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/te/schedule.h" line="723" column="1" bodyfile="include/tvm/te/schedule.h" bodystart="723" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classtvm_1_1te_1_1RebaseNode_1ad1f1f4d3c250d1f5110ada4ac577e27f" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void tvm::te::RebaseNode::VisitAttrs</definition>
+        <argsstring>(AttrVisitor *v)</argsstring>
+        <name>VisitAttrs</name>
+        <param>
+          <type><ref refid="classtvm_1_1AttrVisitor" kindref="compound">AttrVisitor</ref> *</type>
+          <declname>v</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/te/schedule.h" line="716" column="1" bodyfile="include/tvm/te/schedule.h" bodystart="716" bodyend="719"/>
+      </memberdef>
+      <memberdef kind="function" id="classtvm_1_1te_1_1RebaseNode_1ae3e2fdeaad4d6e501b8e79785c4da3ef" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>tvm::te::RebaseNode::TVM_DECLARE_FINAL_OBJECT_INFO</definition>
+        <argsstring>(RebaseNode, IterVarRelationNode)</argsstring>
+        <name>TVM_DECLARE_FINAL_OBJECT_INFO</name>
+        <param>
+          <type><ref refid="classtvm_1_1te_1_1RebaseNode" kindref="compound">RebaseNode</ref></type>
+        </param>
+        <param>
+          <type><ref refid="classtvm_1_1te_1_1IterVarRelationNode" kindref="compound">IterVarRelationNode</ref></type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/te/schedule.h" line="724" column="1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="classtvm_1_1te_1_1RebaseNode_1a6622093ce84e285119800c6736f22801" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classtvm_1_1te_1_1IterVarRelation" kindref="compound">IterVarRelation</ref></type>
+        <definition>static IterVarRelation tvm::te::RebaseNode::make</definition>
+        <argsstring>(IterVar parent, IterVar rebased)</argsstring>
+        <name>make</name>
+        <param>
+          <type><ref refid="classtvm_1_1tir_1_1IterVar" kindref="compound">IterVar</ref></type>
+          <declname>parent</declname>
+        </param>
+        <param>
+          <type><ref refid="classtvm_1_1tir_1_1IterVar" kindref="compound">IterVar</ref></type>
+          <declname>rebased</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/te/schedule.h" line="721" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Rebase the iteration to make min to be 0. This is useful to normalize the <ref refid="classtvm_1_1te_1_1Schedule" kindref="compound">Schedule</ref> to make every leaf variable&apos;s min to be 0. </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="6395">
+        <label>tvm::te::RebaseNode</label>
+        <link refid="classtvm_1_1te_1_1RebaseNode"/>
+        <childnode refid="6396" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="6397">
+        <label>Object</label>
+      </node>
+      <node id="6396">
+        <label>tvm::te::IterVarRelationNode</label>
+        <link refid="classtvm_1_1te_1_1IterVarRelationNode"/>
+        <childnode refid="6397" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="6402">
+        <label>ObjectRef</label>
+      </node>
+      <node id="6398">
+        <label>tvm::te::RebaseNode</label>
+        <link refid="classtvm_1_1te_1_1RebaseNode"/>
+        <childnode refid="6399" relation="public-inheritance">
+        </childnode>
+        <childnode refid="6401" relation="usage">
+          <edgelabel>+rebased</edgelabel>
+          <edgelabel>+parent</edgelabel>
+        </childnode>
+      </node>
+      <node id="6401">
+        <label>tvm::tir::IterVar</label>
+        <link refid="classtvm_1_1tir_1_1IterVar"/>
+        <childnode refid="6402" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="6400">
+        <label>Object</label>
+      </node>
+      <node id="6399">
+        <label>tvm::te::IterVarRelationNode</label>
+        <link refid="classtvm_1_1te_1_1IterVarRelationNode"/>
+        <childnode refid="6400" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="include/tvm/te/schedule.h" line="709" column="1" bodyfile="include/tvm/te/schedule.h" bodystart="709" bodyend="725"/>
+    <listofallmembers>
+      <member refid="classtvm_1_1te_1_1RebaseNode_1aead226ee7d9092dc0961fc7d639f6d7e" prot="public" virt="non-virtual"><scope>tvm::te::RebaseNode</scope><name>_type_key</name></member>
+      <member refid="classtvm_1_1te_1_1RebaseNode_1a6622093ce84e285119800c6736f22801" prot="public" virt="non-virtual"><scope>tvm::te::RebaseNode</scope><name>make</name></member>
+      <member refid="classtvm_1_1te_1_1RebaseNode_1a4fea0a62970e2831dd92c58aee14a1f4" prot="public" virt="non-virtual"><scope>tvm::te::RebaseNode</scope><name>parent</name></member>
+      <member refid="classtvm_1_1te_1_1RebaseNode_1a3e718d8fd2ae0f2d76b794e6dfa303f0" prot="public" virt="non-virtual"><scope>tvm::te::RebaseNode</scope><name>rebased</name></member>
+      <member refid="classtvm_1_1te_1_1IterVarRelationNode_1a8ff434b2be862efbab049f0467bfd258" prot="public" virt="non-virtual"><scope>tvm::te::RebaseNode</scope><name>TVM_DECLARE_BASE_OBJECT_INFO</name></member>
+      <member refid="classtvm_1_1te_1_1RebaseNode_1ae3e2fdeaad4d6e501b8e79785c4da3ef" prot="public" virt="non-virtual"><scope>tvm::te::RebaseNode</scope><name>TVM_DECLARE_FINAL_OBJECT_INFO</name></member>
+      <member refid="classtvm_1_1te_1_1RebaseNode_1ad1f1f4d3c250d1f5110ada4ac577e27f" prot="public" virt="non-virtual"><scope>tvm::te::RebaseNode</scope><name>VisitAttrs</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

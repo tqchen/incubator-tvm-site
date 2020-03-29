@@ -1,0 +1,257 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="classtvm_1_1IterAdapter" kind="class" language="C++" prot="public">
+    <compoundname>tvm::IterAdapter</compoundname>
+    <includes refid="node_2container_8h" local="no">container.h</includes>
+    <templateparamlist>
+      <param>
+        <type>typename Converter</type>
+      </param>
+      <param>
+        <type>typename TIter</type>
+      </param>
+    </templateparamlist>
+      <sectiondef kind="public-type">
+      <memberdef kind="typedef" id="classtvm_1_1IterAdapter_1a6fcccf32d94242ce3b0613db5bcd53d5" prot="public" static="no">
+        <type>typename std::iterator_traits&lt; TIter &gt;::<ref refid="classtvm_1_1IterAdapter_1a6fcccf32d94242ce3b0613db5bcd53d5" kindref="member">difference_type</ref></type>
+        <definition>using tvm::IterAdapter&lt; Converter, TIter &gt;::difference_type =  typename std::iterator_traits&lt;TIter&gt;::difference_type</definition>
+        <argsstring></argsstring>
+        <name>difference_type</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/node/container.h" line="95" column="1" bodyfile="include/tvm/node/container.h" bodystart="95" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="classtvm_1_1IterAdapter_1a920384d7073ed15812199181625d857e" prot="public" static="no">
+        <type>typename Converter::ResultType</type>
+        <definition>using tvm::IterAdapter&lt; Converter, TIter &gt;::value_type =  typename Converter::ResultType</definition>
+        <argsstring></argsstring>
+        <name>value_type</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/node/container.h" line="96" column="1" bodyfile="include/tvm/node/container.h" bodystart="96" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="classtvm_1_1IterAdapter_1acdd89c4869bbb96d00fafd85ff3a3492" prot="public" static="no">
+        <type>typename Converter::ResultType *</type>
+        <definition>using tvm::IterAdapter&lt; Converter, TIter &gt;::pointer =  typename Converter::ResultType*</definition>
+        <argsstring></argsstring>
+        <name>pointer</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/node/container.h" line="97" column="1" bodyfile="include/tvm/node/container.h" bodystart="97" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="classtvm_1_1IterAdapter_1a02187b2d7b029d2f27c4d999b84f958d" prot="public" static="no">
+        <type>typename Converter::ResultType &amp;</type>
+        <definition>using tvm::IterAdapter&lt; Converter, TIter &gt;::reference =  typename Converter::ResultType&amp;</definition>
+        <argsstring></argsstring>
+        <name>reference</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/node/container.h" line="98" column="1" bodyfile="include/tvm/node/container.h" bodystart="98" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="classtvm_1_1IterAdapter_1a2fa322bdb58941c57c6f25ea53678ed7" prot="public" static="no">
+        <type>typename std::iterator_traits&lt; TIter &gt;::<ref refid="classtvm_1_1IterAdapter_1a2fa322bdb58941c57c6f25ea53678ed7" kindref="member">iterator_category</ref></type>
+        <definition>using tvm::IterAdapter&lt; Converter, TIter &gt;::iterator_category =  typename std::iterator_traits&lt;TIter&gt;::iterator_category</definition>
+        <argsstring></argsstring>
+        <name>iterator_category</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/node/container.h" line="99" column="1" bodyfile="include/tvm/node/container.h" bodystart="99" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classtvm_1_1IterAdapter_1af04c49f0f3e68eb231b614a766fcc486" prot="private" static="no" mutable="no">
+        <type>TIter</type>
+        <definition>TIter tvm::IterAdapter&lt; Converter, TIter &gt;::iter_</definition>
+        <argsstring></argsstring>
+        <name>iter_</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/node/container.h" line="128" column="1" bodyfile="include/tvm/node/container.h" bodystart="128" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classtvm_1_1IterAdapter_1a5b0e7480919d0179691292f053e8b58a" prot="public" static="no" const="no" explicit="yes" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>tvm::IterAdapter&lt; Converter, TIter &gt;::IterAdapter</definition>
+        <argsstring>(TIter iter)</argsstring>
+        <name>IterAdapter</name>
+        <param>
+          <type>TIter</type>
+          <declname>iter</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/node/container.h" line="101" column="1" bodyfile="include/tvm/node/container.h" bodystart="101" bodyend="101"/>
+      </memberdef>
+      <memberdef kind="function" id="classtvm_1_1IterAdapter_1a26651fc29c5a8b7d3902cec7c68978c3" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classtvm_1_1IterAdapter" kindref="compound">IterAdapter</ref> &amp;</type>
+        <definition>IterAdapter&amp; tvm::IterAdapter&lt; Converter, TIter &gt;::operator++</definition>
+        <argsstring>()</argsstring>
+        <name>operator++</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/node/container.h" line="102" column="1" bodyfile="include/tvm/node/container.h" bodystart="102" bodyend="105"/>
+      </memberdef>
+      <memberdef kind="function" id="classtvm_1_1IterAdapter_1a632448e530261af4f8d20cd1c7d6f604" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classtvm_1_1IterAdapter" kindref="compound">IterAdapter</ref></type>
+        <definition>IterAdapter tvm::IterAdapter&lt; Converter, TIter &gt;::operator+</definition>
+        <argsstring>(difference_type offset) const </argsstring>
+        <name>operator+</name>
+        <param>
+          <type><ref refid="classtvm_1_1IterAdapter_1a6fcccf32d94242ce3b0613db5bcd53d5" kindref="member">difference_type</ref></type>
+          <declname>offset</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/node/container.h" line="106" column="1" bodyfile="include/tvm/node/container.h" bodystart="106" bodyend="108"/>
+      </memberdef>
+      <memberdef kind="function" id="classtvm_1_1IterAdapter_1a730c42eead8dc1ae5b0d5dd8b6c749a9" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename T</type>
+            <defval><ref refid="classtvm_1_1IterAdapter" kindref="compound">IterAdapter</ref></defval>
+          </param>
+        </templateparamlist>
+        <type>std::enable_if&lt; std::is_same&lt; <ref refid="classtvm_1_1IterAdapter_1a2fa322bdb58941c57c6f25ea53678ed7" kindref="member">iterator_category</ref>, std::random_access_iterator_tag &gt;::value, typename T::difference_type &gt;::type</type>
+        <definition>std::enable_if&lt;std::is_same&lt;iterator_category, std::random_access_iterator_tag&gt;::value, typename T::difference_type&gt;::type tvm::IterAdapter&lt; Converter, TIter &gt;::operator-</definition>
+        <argsstring>(const IterAdapter &amp;rhs) const </argsstring>
+        <name>operator-</name>
+        <param>
+          <type>const <ref refid="classtvm_1_1IterAdapter" kindref="compound">IterAdapter</ref> &amp;</type>
+          <declname>rhs</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/node/container.h" line="113" column="1" bodyfile="include/tvm/node/container.h" bodystart="113" bodyend="115"/>
+      </memberdef>
+      <memberdef kind="function" id="classtvm_1_1IterAdapter_1a8bb0653979acc063862d800adb846d64" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool tvm::IterAdapter&lt; Converter, TIter &gt;::operator==</definition>
+        <argsstring>(IterAdapter other) const </argsstring>
+        <name>operator==</name>
+        <param>
+          <type><ref refid="classtvm_1_1IterAdapter" kindref="compound">IterAdapter</ref></type>
+          <declname>other</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/node/container.h" line="117" column="1" bodyfile="include/tvm/node/container.h" bodystart="117" bodyend="119"/>
+      </memberdef>
+      <memberdef kind="function" id="classtvm_1_1IterAdapter_1adddb09d93d6148a0bd9a7763b5d603f6" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool tvm::IterAdapter&lt; Converter, TIter &gt;::operator!=</definition>
+        <argsstring>(IterAdapter other) const </argsstring>
+        <name>operator!=</name>
+        <param>
+          <type><ref refid="classtvm_1_1IterAdapter" kindref="compound">IterAdapter</ref></type>
+          <declname>other</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/node/container.h" line="120" column="1" bodyfile="include/tvm/node/container.h" bodystart="120" bodyend="122"/>
+      </memberdef>
+      <memberdef kind="function" id="classtvm_1_1IterAdapter_1a19d48c13586d042b39484bf8bae24aca" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>const <ref refid="classtvm_1_1IterAdapter_1a920384d7073ed15812199181625d857e" kindref="member">value_type</ref></type>
+        <definition>const value_type tvm::IterAdapter&lt; Converter, TIter &gt;::operator*</definition>
+        <argsstring>() const </argsstring>
+        <name>operator*</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/node/container.h" line="123" column="1" bodyfile="include/tvm/node/container.h" bodystart="123" bodyend="125"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>iterator adapter that adapts TIter to return another type. </para>    </briefdescription>
+    <detaileddescription>
+<para><parameterlist kind="templateparam"><parameteritem>
+<parameternamelist>
+<parametername>Converter</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>a struct that contains converting function </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>TIter</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the content iterator type. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>    </detaileddescription>
+    <collaborationgraph>
+      <node id="5446">
+        <label>tvm::IterAdapter&lt; Converter, TIter &gt;</label>
+        <link refid="classtvm_1_1IterAdapter"/>
+      </node>
+    </collaborationgraph>
+    <location file="include/tvm/node/container.h" line="93" column="1" bodyfile="include/tvm/node/container.h" bodystart="93" bodyend="129"/>
+    <listofallmembers>
+      <member refid="classtvm_1_1IterAdapter_1a6fcccf32d94242ce3b0613db5bcd53d5" prot="public" virt="non-virtual"><scope>tvm::IterAdapter</scope><name>difference_type</name></member>
+      <member refid="classtvm_1_1IterAdapter_1af04c49f0f3e68eb231b614a766fcc486" prot="private" virt="non-virtual"><scope>tvm::IterAdapter</scope><name>iter_</name></member>
+      <member refid="classtvm_1_1IterAdapter_1a5b0e7480919d0179691292f053e8b58a" prot="public" virt="non-virtual"><scope>tvm::IterAdapter</scope><name>IterAdapter</name></member>
+      <member refid="classtvm_1_1IterAdapter_1a2fa322bdb58941c57c6f25ea53678ed7" prot="public" virt="non-virtual"><scope>tvm::IterAdapter</scope><name>iterator_category</name></member>
+      <member refid="classtvm_1_1IterAdapter_1adddb09d93d6148a0bd9a7763b5d603f6" prot="public" virt="non-virtual"><scope>tvm::IterAdapter</scope><name>operator!=</name></member>
+      <member refid="classtvm_1_1IterAdapter_1a19d48c13586d042b39484bf8bae24aca" prot="public" virt="non-virtual"><scope>tvm::IterAdapter</scope><name>operator*</name></member>
+      <member refid="classtvm_1_1IterAdapter_1a632448e530261af4f8d20cd1c7d6f604" prot="public" virt="non-virtual"><scope>tvm::IterAdapter</scope><name>operator+</name></member>
+      <member refid="classtvm_1_1IterAdapter_1a26651fc29c5a8b7d3902cec7c68978c3" prot="public" virt="non-virtual"><scope>tvm::IterAdapter</scope><name>operator++</name></member>
+      <member refid="classtvm_1_1IterAdapter_1a730c42eead8dc1ae5b0d5dd8b6c749a9" prot="public" virt="non-virtual"><scope>tvm::IterAdapter</scope><name>operator-</name></member>
+      <member refid="classtvm_1_1IterAdapter_1a8bb0653979acc063862d800adb846d64" prot="public" virt="non-virtual"><scope>tvm::IterAdapter</scope><name>operator==</name></member>
+      <member refid="classtvm_1_1IterAdapter_1acdd89c4869bbb96d00fafd85ff3a3492" prot="public" virt="non-virtual"><scope>tvm::IterAdapter</scope><name>pointer</name></member>
+      <member refid="classtvm_1_1IterAdapter_1a02187b2d7b029d2f27c4d999b84f958d" prot="public" virt="non-virtual"><scope>tvm::IterAdapter</scope><name>reference</name></member>
+      <member refid="classtvm_1_1IterAdapter_1a920384d7073ed15812199181625d857e" prot="public" virt="non-virtual"><scope>tvm::IterAdapter</scope><name>value_type</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

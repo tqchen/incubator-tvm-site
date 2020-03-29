@@ -1,0 +1,481 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="runtime_2container_8h" kind="file" language="C++">
+    <compoundname>container.h</compoundname>
+    <includes local="no">dmlc/logging.h</includes>
+    <includes refid="runtime_2memory_8h" local="no">tvm/runtime/memory.h</includes>
+    <includes refid="object_8h" local="no">tvm/runtime/object.h</includes>
+    <includes local="no">cstring</includes>
+    <includes local="no">initializer_list</includes>
+    <includes local="no">string</includes>
+    <includes local="no">type_traits</includes>
+    <includes local="no">utility</includes>
+    <includes local="no">vector</includes>
+    <includedby refid="interpreter_8h" local="no">include/tvm/relay/interpreter.h</includedby>
+    <incdepgraph>
+      <node id="12315">
+        <label>atomic</label>
+      </node>
+      <node id="12307">
+        <label>tvm/runtime/object.h</label>
+        <link refid="object_8h"/>
+        <childnode refid="12305" relation="include">
+        </childnode>
+        <childnode refid="12308" relation="include">
+        </childnode>
+        <childnode refid="12312" relation="include">
+        </childnode>
+        <childnode refid="12313" relation="include">
+        </childnode>
+        <childnode refid="12314" relation="include">
+        </childnode>
+        <childnode refid="12315" relation="include">
+        </childnode>
+      </node>
+      <node id="12310">
+        <label>stdint.h</label>
+      </node>
+      <node id="12313">
+        <label>string</label>
+      </node>
+      <node id="12311">
+        <label>stddef.h</label>
+      </node>
+      <node id="12305">
+        <label>dmlc/logging.h</label>
+      </node>
+      <node id="12319">
+        <label>vector</label>
+      </node>
+      <node id="12308">
+        <label>tvm/runtime/c_runtime_api.h</label>
+        <link refid="c__runtime__api_8h"/>
+        <childnode refid="12309" relation="include">
+        </childnode>
+        <childnode refid="12310" relation="include">
+        </childnode>
+        <childnode refid="12311" relation="include">
+        </childnode>
+      </node>
+      <node id="12314">
+        <label>utility</label>
+      </node>
+      <node id="12316">
+        <label>cstdlib</label>
+      </node>
+      <node id="12306">
+        <label>tvm/runtime/memory.h</label>
+        <link refid="runtime_2memory_8h"/>
+        <childnode refid="12307" relation="include">
+        </childnode>
+        <childnode refid="12316" relation="include">
+        </childnode>
+        <childnode refid="12314" relation="include">
+        </childnode>
+        <childnode refid="12312" relation="include">
+        </childnode>
+      </node>
+      <node id="12312">
+        <label>type_traits</label>
+      </node>
+      <node id="12309">
+        <label>dlpack/dlpack.h</label>
+      </node>
+      <node id="12317">
+        <label>cstring</label>
+      </node>
+      <node id="12304">
+        <label>include/tvm/runtime/container.h</label>
+        <link refid="runtime/container.h"/>
+        <childnode refid="12305" relation="include">
+        </childnode>
+        <childnode refid="12306" relation="include">
+        </childnode>
+        <childnode refid="12307" relation="include">
+        </childnode>
+        <childnode refid="12317" relation="include">
+        </childnode>
+        <childnode refid="12318" relation="include">
+        </childnode>
+        <childnode refid="12313" relation="include">
+        </childnode>
+        <childnode refid="12312" relation="include">
+        </childnode>
+        <childnode refid="12314" relation="include">
+        </childnode>
+        <childnode refid="12319" relation="include">
+        </childnode>
+      </node>
+      <node id="12318">
+        <label>initializer_list</label>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="12321">
+        <label>include/tvm/relay/interpreter.h</label>
+        <link refid="interpreter_8h"/>
+      </node>
+      <node id="12320">
+        <label>include/tvm/runtime/container.h</label>
+        <link refid="runtime/container.h"/>
+        <childnode refid="12321" relation="include">
+        </childnode>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="classtvm_1_1runtime_1_1InplaceArrayBase" prot="public">tvm::runtime::InplaceArrayBase</innerclass>
+    <innerclass refid="classtvm_1_1runtime_1_1ADTObj" prot="public">tvm::runtime::ADTObj</innerclass>
+    <innerclass refid="classtvm_1_1runtime_1_1ADT" prot="public">tvm::runtime::ADT</innerclass>
+    <innerclass refid="classtvm_1_1runtime_1_1StringObj" prot="public">tvm::runtime::StringObj</innerclass>
+    <innerclass refid="classtvm_1_1runtime_1_1String" prot="public">tvm::runtime::String</innerclass>
+    <innerclass refid="classtvm_1_1runtime_1_1StringObj_1_1FromStd" prot="public">tvm::runtime::StringObj::FromStd</innerclass>
+    <innernamespace refid="namespacetvm">tvm</innernamespace>
+    <innernamespace refid="namespacetvm_1_1runtime">tvm::runtime</innernamespace>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="runtime_2container_8h_1a6407a1cc4df1e6d995286b6d00f98bff" prot="public" static="no">
+        <name>TVM_USE_CXX14_STRING_VIEW_HASH</name>
+        <initializer>0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/runtime/container.h" line="45" column="10" bodyfile="include/tvm/runtime/container.h" bodystart="45" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="runtime_2container_8h_1a08f8776a8d5e0590a2ffc7adb0932909" prot="public" static="no">
+        <name>TVM_USE_CXX17_STRING_VIEW_HASH</name>
+        <initializer>0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/runtime/container.h" line="53" column="10" bodyfile="include/tvm/runtime/container.h" bodystart="53" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Common POD(plain old data) container types. </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="2"><highlight class="comment"><sp/>*<sp/>Licensed<sp/>to<sp/>the<sp/>Apache<sp/>Software<sp/>Foundation<sp/>(ASF)<sp/>under<sp/>one</highlight></codeline>
+<codeline lineno="3"><highlight class="comment"><sp/>*<sp/>or<sp/>more<sp/>contributor<sp/>license<sp/>agreements.<sp/><sp/>See<sp/>the<sp/>NOTICE<sp/>file</highlight></codeline>
+<codeline lineno="4"><highlight class="comment"><sp/>*<sp/>distributed<sp/>with<sp/>this<sp/>work<sp/>for<sp/>additional<sp/>information</highlight></codeline>
+<codeline lineno="5"><highlight class="comment"><sp/>*<sp/>regarding<sp/>copyright<sp/>ownership.<sp/><sp/>The<sp/>ASF<sp/>licenses<sp/>this<sp/>file</highlight></codeline>
+<codeline lineno="6"><highlight class="comment"><sp/>*<sp/>to<sp/>you<sp/>under<sp/>the<sp/>Apache<sp/>License,<sp/>Version<sp/>2.0<sp/>(the</highlight></codeline>
+<codeline lineno="7"><highlight class="comment"><sp/>*<sp/>&quot;License&quot;);<sp/>you<sp/>may<sp/>not<sp/>use<sp/>this<sp/>file<sp/>except<sp/>in<sp/>compliance</highlight></codeline>
+<codeline lineno="8"><highlight class="comment"><sp/>*<sp/>with<sp/>the<sp/>License.<sp/><sp/>You<sp/>may<sp/>obtain<sp/>a<sp/>copy<sp/>of<sp/>the<sp/>License<sp/>at</highlight></codeline>
+<codeline lineno="9"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="10"><highlight class="comment"><sp/>*<sp/><sp/><sp/>http://www.apache.org/licenses/LICENSE-2.0</highlight></codeline>
+<codeline lineno="11"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="12"><highlight class="comment"><sp/>*<sp/>Unless<sp/>required<sp/>by<sp/>applicable<sp/>law<sp/>or<sp/>agreed<sp/>to<sp/>in<sp/>writing,</highlight></codeline>
+<codeline lineno="13"><highlight class="comment"><sp/>*<sp/>software<sp/>distributed<sp/>under<sp/>the<sp/>License<sp/>is<sp/>distributed<sp/>on<sp/>an</highlight></codeline>
+<codeline lineno="14"><highlight class="comment"><sp/>*<sp/>&quot;AS<sp/>IS&quot;<sp/>BASIS,<sp/>WITHOUT<sp/>WARRANTIES<sp/>OR<sp/>CONDITIONS<sp/>OF<sp/>ANY</highlight></codeline>
+<codeline lineno="15"><highlight class="comment"><sp/>*<sp/>KIND,<sp/>either<sp/>express<sp/>or<sp/>implied.<sp/><sp/>See<sp/>the<sp/>License<sp/>for<sp/>the</highlight></codeline>
+<codeline lineno="16"><highlight class="comment"><sp/>*<sp/>specific<sp/>language<sp/>governing<sp/>permissions<sp/>and<sp/>limitations</highlight></codeline>
+<codeline lineno="17"><highlight class="comment"><sp/>*<sp/>under<sp/>the<sp/>License.</highlight></codeline>
+<codeline lineno="18"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight></codeline>
+<codeline lineno="24"><highlight class="preprocessor">#ifndef<sp/>TVM_RUNTIME_CONTAINER_H_</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>TVM_RUNTIME_CONTAINER_H_</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;dmlc/logging.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="28"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;<ref refid="runtime_2memory_8h" kindref="compound">tvm/runtime/memory.h</ref>&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="29"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;<ref refid="object_8h" kindref="compound">tvm/runtime/object.h</ref>&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="30"><highlight class="normal"></highlight></codeline>
+<codeline lineno="31"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;cstring&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="32"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;initializer_list&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="33"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;string&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="34"><highlight class="normal"></highlight><highlight class="comment">//<sp/>We<sp/>use<sp/>c++14<sp/>std::experimental::string_view<sp/>for<sp/>optimizing<sp/>hash<sp/>computation</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="35"><highlight class="normal"></highlight><highlight class="comment">//<sp/>only<sp/>right<sp/>now,<sp/>its<sp/>usage<sp/>is<sp/>limited<sp/>in<sp/>this<sp/>file.<sp/>Any<sp/>broader<sp/>usage<sp/>of</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="36"><highlight class="normal"></highlight><highlight class="comment">//<sp/>std::experiment<sp/>in<sp/>our<sp/>core<sp/>codebase<sp/>is<sp/>discouraged<sp/>and<sp/>needs<sp/>community</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="37"><highlight class="normal"></highlight><highlight class="comment">//<sp/>discussion<sp/>for<sp/>each<sp/>use<sp/>case.<sp/>Reference<sp/>for<sp/>feature<sp/>test<sp/>macros<sp/>of</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="38"><highlight class="normal"></highlight><highlight class="comment">//<sp/>string_view:</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="39"><highlight class="normal"></highlight><highlight class="comment">//<sp/>https://isocpp.org/std/standing-documents/sd-6-sg10-feature-test-recommendations</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="40"><highlight class="normal"></highlight><highlight class="comment">//<sp/>https://en.cppreference.com/w/User:D41D8CD98F/feature_testing_macros</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="41"><highlight class="normal"></highlight><highlight class="preprocessor">#if<sp/>defined(__cpp_lib_experimental_string_view)<sp/>&amp;&amp;<sp/>\</highlight></codeline>
+<codeline lineno="42"><highlight class="preprocessor"><sp/><sp/><sp/><sp/>__cpp_lib_experimental_string_view<sp/>&gt;=<sp/>201411</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="43"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>TVM_USE_CXX14_STRING_VIEW_HASH<sp/>1</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="44"><highlight class="normal"></highlight><highlight class="preprocessor">#else</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="45" refid="runtime_2container_8h_1a6407a1cc4df1e6d995286b6d00f98bff" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>TVM_USE_CXX14_STRING_VIEW_HASH<sp/>0</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="46"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="47"><highlight class="normal"></highlight></codeline>
+<codeline lineno="48"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Tested<sp/>with<sp/>clang<sp/>version<sp/>9.0.1<sp/>and<sp/>c++17.<sp/>It<sp/>will<sp/>detect<sp/>string_view<sp/>support</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="49"><highlight class="normal"></highlight><highlight class="comment">//<sp/>correctly.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="50"><highlight class="normal"></highlight><highlight class="preprocessor">#if<sp/>defined(__cpp_lib_string_view)<sp/>&amp;&amp;<sp/>__cpp_lib_string_view<sp/>&gt;=<sp/>201606</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="51"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>TVM_USE_CXX17_STRING_VIEW_HASH<sp/>1</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="52"><highlight class="normal"></highlight><highlight class="preprocessor">#else</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="53" refid="runtime_2container_8h_1a08f8776a8d5e0590a2ffc7adb0932909" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>TVM_USE_CXX17_STRING_VIEW_HASH<sp/>0</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="54"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="55"><highlight class="normal"></highlight></codeline>
+<codeline lineno="56"><highlight class="normal"></highlight><highlight class="preprocessor">#if<sp/>TVM_USE_CXX17_STRING_VIEW_HASH</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="57"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;string_view&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="58"><highlight class="normal"></highlight><highlight class="preprocessor">#elif<sp/>TVM_USE_CXX14_STRING_VIEW_HASH</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="59"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;experimental/string_view&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="60"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="61"><highlight class="normal"></highlight></codeline>
+<codeline lineno="62"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;type_traits&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="63"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;utility&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="64"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;vector&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="65"><highlight class="normal"></highlight></codeline>
+<codeline lineno="66"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal"><ref refid="namespacetvm" kindref="compound">tvm</ref><sp/>{</highlight></codeline>
+<codeline lineno="67"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal">runtime<sp/>{</highlight></codeline>
+<codeline lineno="68"><highlight class="normal"></highlight></codeline>
+<codeline lineno="108"><highlight class="keyword">template</highlight><highlight class="normal"><sp/>&lt;</highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>ArrayType,<sp/></highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>ElemType&gt;</highlight></codeline>
+<codeline lineno="109" refid="classtvm_1_1runtime_1_1InplaceArrayBase" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classtvm_1_1runtime_1_1InplaceArrayBase" kindref="compound">InplaceArrayBase</ref><sp/>{</highlight></codeline>
+<codeline lineno="110"><highlight class="normal"><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="116" refid="classtvm_1_1runtime_1_1InplaceArrayBase_1a68c9bdbfd3a02ade0965972a0cd508cc" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>ElemType&amp;<sp/><ref refid="classtvm_1_1runtime_1_1InplaceArrayBase_1a68c9bdbfd3a02ade0965972a0cd508cc" kindref="member">operator[]</ref>(</highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>idx)</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="117"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>size<sp/>=<sp/>Self()-&gt;GetSize();</highlight></codeline>
+<codeline lineno="118"><highlight class="normal"><sp/><sp/><sp/><sp/>CHECK_LT(idx,<sp/>size)<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;Index<sp/>&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/>idx<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;<sp/>out<sp/>of<sp/>bounds<sp/>&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/>size<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;\n&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="119"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>*(</highlight><highlight class="keyword">reinterpret_cast&lt;</highlight><highlight class="normal">ElemType*</highlight><highlight class="keyword">&gt;</highlight><highlight class="normal">(AddressOf(idx)));</highlight></codeline>
+<codeline lineno="120"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="121"><highlight class="normal"></highlight></codeline>
+<codeline lineno="127" refid="classtvm_1_1runtime_1_1InplaceArrayBase_1a4b37b5fcd2285b818e8f623da8b326b2" refkind="member"><highlight class="normal"><sp/><sp/>ElemType&amp;<sp/><ref refid="classtvm_1_1runtime_1_1InplaceArrayBase_1a4b37b5fcd2285b818e8f623da8b326b2" kindref="member">operator[]</ref>(</highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>idx)<sp/>{</highlight></codeline>
+<codeline lineno="128"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>size<sp/>=<sp/>Self()-&gt;GetSize();</highlight></codeline>
+<codeline lineno="129"><highlight class="normal"><sp/><sp/><sp/><sp/>CHECK_LT(idx,<sp/>size)<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;Index<sp/>&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/>idx<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;<sp/>out<sp/>of<sp/>bounds<sp/>&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/>size<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;\n&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="130"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>*(</highlight><highlight class="keyword">reinterpret_cast&lt;</highlight><highlight class="normal">ElemType*</highlight><highlight class="keyword">&gt;</highlight><highlight class="normal">(AddressOf(idx)));</highlight></codeline>
+<codeline lineno="131"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="132"><highlight class="normal"></highlight></codeline>
+<codeline lineno="136" refid="classtvm_1_1runtime_1_1InplaceArrayBase_1ad1cf3446de62c7aba99235f2843f839f" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="classtvm_1_1runtime_1_1InplaceArrayBase_1ad1cf3446de62c7aba99235f2843f839f" kindref="member">~InplaceArrayBase</ref>()<sp/>{</highlight></codeline>
+<codeline lineno="137"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(!(std::is_standard_layout&lt;ElemType&gt;::value<sp/>&amp;&amp;</highlight></codeline>
+<codeline lineno="138"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::is_trivial&lt;ElemType&gt;::value))<sp/>{</highlight></codeline>
+<codeline lineno="139"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>size<sp/>=<sp/>Self()-&gt;GetSize();</highlight></codeline>
+<codeline lineno="140"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>i<sp/>=<sp/>0;<sp/>i<sp/>&lt;<sp/>size;<sp/>++i)<sp/>{</highlight></codeline>
+<codeline lineno="141"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>ElemType*<sp/>fp<sp/>=<sp/></highlight><highlight class="keyword">reinterpret_cast&lt;</highlight><highlight class="normal">ElemType*</highlight><highlight class="keyword">&gt;</highlight><highlight class="normal">(AddressOf(i));</highlight></codeline>
+<codeline lineno="142"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>fp-&gt;ElemType::~ElemType();</highlight></codeline>
+<codeline lineno="143"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="144"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="145"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="146"><highlight class="normal"></highlight></codeline>
+<codeline lineno="147"><highlight class="normal"><sp/></highlight><highlight class="keyword">protected</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="158"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">template</highlight><highlight class="normal"><sp/>&lt;</highlight><highlight class="keyword">typename</highlight><highlight class="normal">...<sp/>Args&gt;</highlight></codeline>
+<codeline lineno="159" refid="classtvm_1_1runtime_1_1InplaceArrayBase_1a7900079ae38be41d93b522239d3ba4f2" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classtvm_1_1runtime_1_1InplaceArrayBase_1a7900079ae38be41d93b522239d3ba4f2" kindref="member">EmplaceInit</ref>(</highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>idx,<sp/>Args&amp;&amp;...<sp/>args)<sp/>{</highlight></codeline>
+<codeline lineno="160"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal">*<sp/>field_ptr<sp/>=<sp/>AddressOf(idx);</highlight></codeline>
+<codeline lineno="161"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/>(field_ptr)<sp/>ElemType(std::forward&lt;Args&gt;(args)...);</highlight></codeline>
+<codeline lineno="162"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="163"><highlight class="normal"></highlight></codeline>
+<codeline lineno="164"><highlight class="normal"><sp/></highlight><highlight class="keyword">private</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="170"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/>ArrayType*<sp/>Self()</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="171"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">static_cast&lt;</highlight><highlight class="normal">ArrayType*</highlight><highlight class="keyword">&gt;</highlight><highlight class="normal">(</highlight><highlight class="keyword">const_cast&lt;</highlight><highlight class="normal"><ref refid="classtvm_1_1runtime_1_1InplaceArrayBase" kindref="compound">InplaceArrayBase</ref>*</highlight><highlight class="keyword">&gt;</highlight><highlight class="normal">(</highlight><highlight class="keyword">this</highlight><highlight class="normal">));</highlight></codeline>
+<codeline lineno="172"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="173"><highlight class="normal"></highlight></codeline>
+<codeline lineno="180"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal">*<sp/>AddressOf(</highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>idx)</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="181"><highlight class="normal"><sp/><sp/><sp/><sp/>static_assert(</highlight><highlight class="keyword">alignof</highlight><highlight class="normal">(ArrayType)<sp/>%<sp/></highlight><highlight class="keyword">alignof</highlight><highlight class="normal">(ElemType)<sp/>==<sp/>0<sp/>&amp;&amp;</highlight></codeline>
+<codeline lineno="182"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">sizeof</highlight><highlight class="normal">(ArrayType)<sp/>%<sp/></highlight><highlight class="keyword">alignof</highlight><highlight class="normal">(ElemType)<sp/>==<sp/>0,</highlight></codeline>
+<codeline lineno="183"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;The<sp/>size<sp/>and<sp/>alignment<sp/>of<sp/>ArrayType<sp/>should<sp/>respect<sp/>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="184"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;ElemType&apos;s<sp/>alignment.&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="185"><highlight class="normal"></highlight></codeline>
+<codeline lineno="186"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>kDataStart<sp/>=<sp/></highlight><highlight class="keyword">sizeof</highlight><highlight class="normal">(ArrayType);</highlight></codeline>
+<codeline lineno="187"><highlight class="normal"><sp/><sp/><sp/><sp/>ArrayType*<sp/></highlight><highlight class="keyword">self</highlight><highlight class="normal"><sp/>=<sp/>Self();</highlight></codeline>
+<codeline lineno="188"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*<sp/>data_start<sp/>=<sp/></highlight><highlight class="keyword">reinterpret_cast&lt;</highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*</highlight><highlight class="keyword">&gt;</highlight><highlight class="normal">(</highlight><highlight class="keyword">self</highlight><highlight class="normal">)<sp/>+<sp/>kDataStart;</highlight></codeline>
+<codeline lineno="189"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>data_start<sp/>+<sp/>idx<sp/>*<sp/></highlight><highlight class="keyword">sizeof</highlight><highlight class="normal">(ElemType);</highlight></codeline>
+<codeline lineno="190"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="191"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="192"><highlight class="normal"></highlight></codeline>
+<codeline lineno="194" refid="classtvm_1_1runtime_1_1ADTObj" refkind="compound"><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classtvm_1_1runtime_1_1ADTObj" kindref="compound">ADTObj</ref><sp/>:<sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/><ref refid="classtvm_1_1runtime_1_1Object" kindref="compound">Object</ref>,<sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/><ref refid="classtvm_1_1runtime_1_1InplaceArrayBase" kindref="compound">InplaceArrayBase</ref>&lt;ADTObj,<sp/>ObjectRef&gt;<sp/>{</highlight></codeline>
+<codeline lineno="195"><highlight class="normal"><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="197" refid="classtvm_1_1runtime_1_1ADTObj_1a8c1835b988e836dd451a343bac7e402d" refkind="member"><highlight class="normal"><sp/><sp/>int32_t<sp/><ref refid="classtvm_1_1runtime_1_1ADTObj_1a8c1835b988e836dd451a343bac7e402d" kindref="member">tag</ref>;</highlight></codeline>
+<codeline lineno="199" refid="classtvm_1_1runtime_1_1ADTObj_1a699d898a036382a0c86fba219bcf8102" refkind="member"><highlight class="normal"><sp/><sp/>uint32_t<sp/><ref refid="classtvm_1_1runtime_1_1ADTObj_1a699d898a036382a0c86fba219bcf8102" kindref="member">size</ref>;</highlight></codeline>
+<codeline lineno="200"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>The<sp/>fields<sp/>of<sp/>the<sp/>structure<sp/>follows<sp/>directly<sp/>in<sp/>memory.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="201"><highlight class="normal"></highlight></codeline>
+<codeline lineno="202" refid="classtvm_1_1runtime_1_1ADTObj_1ae35ebc3d49a7264ac1ed16a80472347f" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/>constexpr<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>uint32_t<sp/>_type_index<sp/>=<sp/><ref refid="namespacetvm_1_1runtime_1a7d395cd724f727e86358b73b5cdeb4e4a86d9bc218c0f54443cbbe3fcc5c8382e" kindref="member">TypeIndex::kVMADT</ref>;</highlight></codeline>
+<codeline lineno="203" refid="classtvm_1_1runtime_1_1ADTObj_1ab083e5c0b35f64b668eaf5cfb0f98098" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/>constexpr<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*<sp/>_type_key<sp/>=<sp/></highlight><highlight class="stringliteral">&quot;vm.ADT&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="204"><highlight class="normal"><sp/><sp/><ref refid="object_8h_1a3aea9b3f65aeb9150c0fa7800e5573c6" kindref="member">TVM_DECLARE_FINAL_OBJECT_INFO</ref>(<ref refid="classtvm_1_1runtime_1_1ADTObj" kindref="compound">ADTObj</ref>,<sp/><ref refid="classtvm_1_1runtime_1_1Object" kindref="compound">Object</ref>);</highlight></codeline>
+<codeline lineno="205"><highlight class="normal"></highlight></codeline>
+<codeline lineno="206"><highlight class="normal"><sp/></highlight><highlight class="keyword">private</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="210"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>GetSize()</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>size;<sp/>}</highlight></codeline>
+<codeline lineno="211"><highlight class="normal"></highlight></codeline>
+<codeline lineno="219"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">template</highlight><highlight class="normal"><sp/>&lt;</highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>Iterator&gt;</highlight></codeline>
+<codeline lineno="220"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>Init(Iterator<sp/>begin,<sp/>Iterator<sp/>end)<sp/>{</highlight></codeline>
+<codeline lineno="221"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>num_elems<sp/>=<sp/>std::distance(begin,<sp/>end);</highlight></codeline>
+<codeline lineno="222"><highlight class="normal"><sp/><sp/><sp/><sp/>this-&gt;size<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="223"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>it<sp/>=<sp/>begin;</highlight></codeline>
+<codeline lineno="224"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>i<sp/>=<sp/>0;<sp/>i<sp/>&lt;<sp/>num_elems;<sp/>++i)<sp/>{</highlight></codeline>
+<codeline lineno="225"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classtvm_1_1runtime_1_1InplaceArrayBase_1a7900079ae38be41d93b522239d3ba4f2" kindref="member">InplaceArrayBase::EmplaceInit</ref>(i,<sp/>*it++);</highlight></codeline>
+<codeline lineno="226"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Only<sp/>increment<sp/>size<sp/>after<sp/>the<sp/>initialization<sp/>succeeds</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="227"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>this-&gt;size++;</highlight></codeline>
+<codeline lineno="228"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="229"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="230"><highlight class="normal"></highlight></codeline>
+<codeline lineno="231" refid="classtvm_1_1runtime_1_1ADTObj_1a96ef507f2261998fb326f88992b9738a" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">friend</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classtvm_1_1runtime_1_1ADT" kindref="compound">ADT</ref>;</highlight></codeline>
+<codeline lineno="232"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">friend</highlight><highlight class="normal"><sp/><ref refid="classtvm_1_1runtime_1_1InplaceArrayBase" kindref="compound">InplaceArrayBase&lt;ADTObj, ObjectRef&gt;</ref>;</highlight></codeline>
+<codeline lineno="233"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="234"><highlight class="normal"></highlight></codeline>
+<codeline lineno="236" refid="classtvm_1_1runtime_1_1ADT" refkind="compound"><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classtvm_1_1runtime_1_1ADT" kindref="compound">ADT</ref><sp/>:<sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/><ref refid="classtvm_1_1runtime_1_1ObjectRef" kindref="compound">ObjectRef</ref><sp/>{</highlight></codeline>
+<codeline lineno="237"><highlight class="normal"><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="244" refid="classtvm_1_1runtime_1_1ADT_1a204397cb319fdb83a72b1d9112a09caa" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="classtvm_1_1runtime_1_1ADT_1a204397cb319fdb83a72b1d9112a09caa" kindref="member">ADT</ref>(int32_t<sp/>tag,<sp/>std::vector&lt;ObjectRef&gt;<sp/>fields)</highlight></codeline>
+<codeline lineno="245"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>:<sp/><ref refid="classtvm_1_1runtime_1_1ADT" kindref="compound">ADT</ref>(tag,<sp/>fields.begin(),<sp/>fields.end()){};</highlight></codeline>
+<codeline lineno="246"><highlight class="normal"></highlight></codeline>
+<codeline lineno="254"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">template</highlight><highlight class="normal"><sp/>&lt;</highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>Iterator&gt;</highlight></codeline>
+<codeline lineno="255" refid="classtvm_1_1runtime_1_1ADT_1aea0665ed087095ed39354064e5071d4f" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="classtvm_1_1runtime_1_1ADT_1aea0665ed087095ed39354064e5071d4f" kindref="member">ADT</ref>(int32_t<sp/>tag,<sp/>Iterator<sp/>begin,<sp/>Iterator<sp/>end)<sp/>{</highlight></codeline>
+<codeline lineno="256"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>num_elems<sp/>=<sp/>std::distance(begin,<sp/>end);</highlight></codeline>
+<codeline lineno="257"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>ptr<sp/>=<sp/>make_inplace_array_object&lt;ADTObj,<sp/>ObjectRef&gt;(num_elems);</highlight></codeline>
+<codeline lineno="258"><highlight class="normal"><sp/><sp/><sp/><sp/>ptr-&gt;tag<sp/>=<sp/>tag;</highlight></codeline>
+<codeline lineno="259"><highlight class="normal"><sp/><sp/><sp/><sp/>ptr-&gt;Init(begin,<sp/>end);</highlight></codeline>
+<codeline lineno="260"><highlight class="normal"><sp/><sp/><sp/><sp/>data_<sp/>=<sp/>std::move(ptr);</highlight></codeline>
+<codeline lineno="261"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="262"><highlight class="normal"></highlight></codeline>
+<codeline lineno="269" refid="classtvm_1_1runtime_1_1ADT_1a9ebe228980db0256d72fc01ba5c7ae89" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="classtvm_1_1runtime_1_1ADT_1a9ebe228980db0256d72fc01ba5c7ae89" kindref="member">ADT</ref>(int32_t<sp/>tag,<sp/>std::initializer_list&lt;ObjectRef&gt;<sp/>init)</highlight></codeline>
+<codeline lineno="270"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>:<sp/><ref refid="classtvm_1_1runtime_1_1ADT" kindref="compound">ADT</ref>(tag,<sp/>init.begin(),<sp/>init.end()){};</highlight></codeline>
+<codeline lineno="271"><highlight class="normal"></highlight></codeline>
+<codeline lineno="278" refid="classtvm_1_1runtime_1_1ADT_1a6a1dba101b18cffbd307f7c0f92a39b2" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classtvm_1_1runtime_1_1ObjectRef" kindref="compound">ObjectRef</ref>&amp;<sp/><ref refid="classtvm_1_1runtime_1_1ADT_1a6a1dba101b18cffbd307f7c0f92a39b2" kindref="member">operator[]</ref>(</highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>idx)</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="279"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>operator-&gt;()-&gt;operator[](idx);</highlight></codeline>
+<codeline lineno="280"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="281"><highlight class="normal"></highlight></codeline>
+<codeline lineno="285" refid="classtvm_1_1runtime_1_1ADT_1a1a631df56a143132d60076c8038a9a97" refkind="member"><highlight class="normal"><sp/><sp/>int32_t<sp/><ref refid="classtvm_1_1runtime_1_1ADT_1a1a631df56a143132d60076c8038a9a97" kindref="member">tag</ref>()</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>operator-&gt;()-&gt;tag;<sp/>}</highlight></codeline>
+<codeline lineno="286"><highlight class="normal"></highlight></codeline>
+<codeline lineno="290" refid="classtvm_1_1runtime_1_1ADT_1af8cf2f61fa9b7737718f15a018d12b84" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/><ref refid="classtvm_1_1runtime_1_1ADT_1af8cf2f61fa9b7737718f15a018d12b84" kindref="member">size</ref>()</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>operator-&gt;()-&gt;size;<sp/>}</highlight></codeline>
+<codeline lineno="291"><highlight class="normal"></highlight></codeline>
+<codeline lineno="299"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">template</highlight><highlight class="normal"><sp/>&lt;</highlight><highlight class="keyword">typename</highlight><highlight class="normal">...<sp/>Args&gt;</highlight></codeline>
+<codeline lineno="300" refid="classtvm_1_1runtime_1_1ADT_1a9952c0be3e79a57cf80a3c01fd7bbe87" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/><ref refid="classtvm_1_1runtime_1_1ADT" kindref="compound">ADT</ref><sp/><ref refid="classtvm_1_1runtime_1_1ADT_1a9952c0be3e79a57cf80a3c01fd7bbe87" kindref="member">Tuple</ref>(Args&amp;&amp;...<sp/>args)<sp/>{</highlight></codeline>
+<codeline lineno="301"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="classtvm_1_1runtime_1_1ADT" kindref="compound">ADT</ref>(0,<sp/>std::forward&lt;Args&gt;(args)...);</highlight></codeline>
+<codeline lineno="302"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="303"><highlight class="normal"></highlight></codeline>
+<codeline lineno="304"><highlight class="normal"><sp/><sp/><ref refid="object_8h_1ac6e7295a4999e2c8e4a2c990beca887a" kindref="member">TVM_DEFINE_OBJECT_REF_METHODS</ref>(<ref refid="classtvm_1_1runtime_1_1ADT" kindref="compound">ADT</ref>,<sp/><ref refid="classtvm_1_1runtime_1_1ObjectRef" kindref="compound">ObjectRef</ref>,<sp/><ref refid="classtvm_1_1runtime_1_1ADTObj" kindref="compound">ADTObj</ref>);</highlight></codeline>
+<codeline lineno="305"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="306"><highlight class="normal"></highlight></codeline>
+<codeline lineno="308" refid="classtvm_1_1runtime_1_1StringObj" refkind="compound"><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classtvm_1_1runtime_1_1StringObj" kindref="compound">StringObj</ref><sp/>:<sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/><ref refid="classtvm_1_1runtime_1_1Object" kindref="compound">Object</ref><sp/>{</highlight></codeline>
+<codeline lineno="309"><highlight class="normal"><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="311" refid="classtvm_1_1runtime_1_1StringObj_1a4ab9dd883ceed3efccf663acfbcd152f" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*<sp/><ref refid="classtvm_1_1runtime_1_1StringObj_1a4ab9dd883ceed3efccf663acfbcd152f" kindref="member">data</ref>;</highlight></codeline>
+<codeline lineno="312"><highlight class="normal"></highlight></codeline>
+<codeline lineno="314" refid="classtvm_1_1runtime_1_1StringObj_1a866c6a8805c30f6cc4faac2298985d23" refkind="member"><highlight class="normal"><sp/><sp/>uint64_t<sp/><ref refid="classtvm_1_1runtime_1_1StringObj_1a866c6a8805c30f6cc4faac2298985d23" kindref="member">size</ref>;</highlight></codeline>
+<codeline lineno="315"><highlight class="normal"></highlight></codeline>
+<codeline lineno="316" refid="classtvm_1_1runtime_1_1StringObj_1a9d0bb5c54d59456980767be2398dbc16" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/>constexpr<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>uint32_t<sp/>_type_index<sp/>=<sp/><ref refid="namespacetvm_1_1runtime_1a7d395cd724f727e86358b73b5cdeb4e4a633f5947b3a79c577b538cec7528f5aa" kindref="member">TypeIndex::kDynamic</ref>;</highlight></codeline>
+<codeline lineno="317" refid="classtvm_1_1runtime_1_1StringObj_1a4b4433ded5abdaae4ac417cee103f8d2" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/>constexpr<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*<sp/>_type_key<sp/>=<sp/></highlight><highlight class="stringliteral">&quot;runtime.String&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="318"><highlight class="normal"><sp/><sp/><ref refid="object_8h_1a3aea9b3f65aeb9150c0fa7800e5573c6" kindref="member">TVM_DECLARE_FINAL_OBJECT_INFO</ref>(<ref refid="classtvm_1_1runtime_1_1StringObj" kindref="compound">StringObj</ref>,<sp/><ref refid="classtvm_1_1runtime_1_1Object" kindref="compound">Object</ref>);</highlight></codeline>
+<codeline lineno="319"><highlight class="normal"></highlight></codeline>
+<codeline lineno="320"><highlight class="normal"><sp/></highlight><highlight class="keyword">private</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="322" refid="classtvm_1_1runtime_1_1StringObj_1a7fb804f7dc96dd9f705c84095f37f1ca" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classtvm_1_1runtime_1_1StringObj_1_1FromStd" kindref="compound">FromStd</ref>;</highlight></codeline>
+<codeline lineno="323"><highlight class="normal"></highlight></codeline>
+<codeline lineno="324"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">friend</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classtvm_1_1runtime_1_1String" kindref="compound">String</ref>;</highlight></codeline>
+<codeline lineno="325"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="326"><highlight class="normal"></highlight></codeline>
+<codeline lineno="353" refid="classtvm_1_1runtime_1_1String" refkind="compound"><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classtvm_1_1runtime_1_1String" kindref="compound">String</ref><sp/>:<sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/><ref refid="classtvm_1_1runtime_1_1ObjectRef" kindref="compound">ObjectRef</ref><sp/>{</highlight></codeline>
+<codeline lineno="354"><highlight class="normal"><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="363"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">explicit</highlight><highlight class="normal"><sp/><ref refid="classtvm_1_1runtime_1_1String" kindref="compound">String</ref>(std::string<sp/>other);</highlight></codeline>
+<codeline lineno="364"><highlight class="normal"></highlight></codeline>
+<codeline lineno="371"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/><ref refid="classtvm_1_1runtime_1_1String" kindref="compound">String</ref><sp/>operator=(std::string<sp/>other);</highlight></codeline>
+<codeline lineno="372"><highlight class="normal"></highlight></codeline>
+<codeline lineno="380" refid="classtvm_1_1runtime_1_1String_1ae0c8008f2660354514aa1f59540ea0a1" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classtvm_1_1runtime_1_1String_1ae0c8008f2660354514aa1f59540ea0a1" kindref="member">operator==</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::string&amp;<sp/>other)</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="381"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>this-&gt;compare(other)<sp/>==<sp/>0;</highlight></codeline>
+<codeline lineno="382"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="383"><highlight class="normal"></highlight></codeline>
+<codeline lineno="391" refid="classtvm_1_1runtime_1_1String_1ad6094750f4d337c7e5a1b04180675b41" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classtvm_1_1runtime_1_1String_1ad6094750f4d337c7e5a1b04180675b41" kindref="member">operator!=</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::string&amp;<sp/>other)</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>!<ref refid="namespacetvm_1a2ea3b45c96d3980227e418f7158ce5c3" kindref="member">operator==</ref>(other);<sp/>}</highlight></codeline>
+<codeline lineno="392"><highlight class="normal"></highlight></codeline>
+<codeline lineno="400" refid="classtvm_1_1runtime_1_1String_1a21ee70af849336830d9f7d01005dc0a3" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classtvm_1_1runtime_1_1String_1a21ee70af849336830d9f7d01005dc0a3" kindref="member">operator==</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*<sp/>other)</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>compare(other)<sp/>==<sp/>0;<sp/>}</highlight></codeline>
+<codeline lineno="401"><highlight class="normal"></highlight></codeline>
+<codeline lineno="409" refid="classtvm_1_1runtime_1_1String_1afd91d1bddf1d126fbd8f20aebeb020f2" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classtvm_1_1runtime_1_1String_1afd91d1bddf1d126fbd8f20aebeb020f2" kindref="member">operator!=</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*<sp/>other)</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>!<ref refid="namespacetvm_1a2ea3b45c96d3980227e418f7158ce5c3" kindref="member">operator==</ref>(other);<sp/>}</highlight></codeline>
+<codeline lineno="410"><highlight class="normal"></highlight></codeline>
+<codeline lineno="419" refid="classtvm_1_1runtime_1_1String_1a7ee59f6227213720ef176b995191b4e0" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="classtvm_1_1runtime_1_1String_1a7ee59f6227213720ef176b995191b4e0" kindref="member">compare</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classtvm_1_1runtime_1_1String" kindref="compound">String</ref>&amp;<sp/>other)</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="420"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>memncmp(data(),<sp/>other.<ref refid="classtvm_1_1runtime_1_1String_1a7bf6b73710e93d238712be0c9d4143b0" kindref="member">data</ref>(),<sp/>size(),<sp/>other.<ref refid="classtvm_1_1runtime_1_1String_1a44788bd2440eb4ebbada370314536243" kindref="member">size</ref>());</highlight></codeline>
+<codeline lineno="421"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="422"><highlight class="normal"></highlight></codeline>
+<codeline lineno="431" refid="classtvm_1_1runtime_1_1String_1adaa1cef73909f379ca5991ef1ab61c40" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="classtvm_1_1runtime_1_1String_1adaa1cef73909f379ca5991ef1ab61c40" kindref="member">compare</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::string&amp;<sp/>other)</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="432"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>memncmp(data(),<sp/>other.data(),<sp/>size(),<sp/>other.size());</highlight></codeline>
+<codeline lineno="433"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="434"><highlight class="normal"></highlight></codeline>
+<codeline lineno="443" refid="classtvm_1_1runtime_1_1String_1ad2c11edfba52dedb10ac48e2980ffba6" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="classtvm_1_1runtime_1_1String_1ad2c11edfba52dedb10ac48e2980ffba6" kindref="member">compare</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*<sp/>other)</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="444"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>memncmp(data(),<sp/>other,<sp/>size(),<sp/>std::strlen(other));</highlight></codeline>
+<codeline lineno="445"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="446"><highlight class="normal"></highlight></codeline>
+<codeline lineno="452" refid="classtvm_1_1runtime_1_1String_1a61a280bb2b55d56477bab49e0b8eb187" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*<sp/><ref refid="classtvm_1_1runtime_1_1String_1a61a280bb2b55d56477bab49e0b8eb187" kindref="member">c_str</ref>()</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">get</highlight><highlight class="normal">()-&gt;data;<sp/>}</highlight></codeline>
+<codeline lineno="453"><highlight class="normal"></highlight></codeline>
+<codeline lineno="459" refid="classtvm_1_1runtime_1_1String_1a44788bd2440eb4ebbada370314536243" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/><ref refid="classtvm_1_1runtime_1_1String_1a44788bd2440eb4ebbada370314536243" kindref="member">size</ref>()</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="460"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal">*<sp/>ptr<sp/>=<sp/></highlight><highlight class="keyword">get</highlight><highlight class="normal">();</highlight></codeline>
+<codeline lineno="461"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(ptr<sp/>==<sp/></highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">)<sp/>{</highlight></codeline>
+<codeline lineno="462"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>0;</highlight></codeline>
+<codeline lineno="463"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="464"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>ptr-&gt;size;</highlight></codeline>
+<codeline lineno="465"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="466"><highlight class="normal"></highlight></codeline>
+<codeline lineno="472" refid="classtvm_1_1runtime_1_1String_1a406e45189b6e0239cf32f717f59d59d2" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/><ref refid="classtvm_1_1runtime_1_1String_1a406e45189b6e0239cf32f717f59d59d2" kindref="member">length</ref>()</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>size();<sp/>}</highlight></codeline>
+<codeline lineno="473"><highlight class="normal"></highlight></codeline>
+<codeline lineno="479" refid="classtvm_1_1runtime_1_1String_1a93f37d0bb56661345a4e0bf1c902b685" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classtvm_1_1runtime_1_1String_1a93f37d0bb56661345a4e0bf1c902b685" kindref="member">empty</ref>()</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>size()<sp/>==<sp/>0;<sp/>}</highlight></codeline>
+<codeline lineno="480"><highlight class="normal"></highlight></codeline>
+<codeline lineno="486" refid="classtvm_1_1runtime_1_1String_1a7bf6b73710e93d238712be0c9d4143b0" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*<sp/><ref refid="classtvm_1_1runtime_1_1String_1a7bf6b73710e93d238712be0c9d4143b0" kindref="member">data</ref>()</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">get</highlight><highlight class="normal">()-&gt;data;<sp/>}</highlight></codeline>
+<codeline lineno="487"><highlight class="normal"></highlight></codeline>
+<codeline lineno="493"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">operator</highlight><highlight class="normal"><sp/>std::string()</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>std::string{</highlight><highlight class="keyword">get</highlight><highlight class="normal">()-&gt;data,<sp/>size()};<sp/>}</highlight></codeline>
+<codeline lineno="494"><highlight class="normal"></highlight></codeline>
+<codeline lineno="501" refid="classtvm_1_1runtime_1_1String_1a0ea0aa1d24073721ee7bf9bd5d23c53a" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/><ref refid="classtvm_1_1runtime_1_1String_1a0ea0aa1d24073721ee7bf9bd5d23c53a" kindref="member">HashBytes</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*<sp/>data,<sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>size)<sp/>{</highlight></codeline>
+<codeline lineno="502"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>This<sp/>function<sp/>falls<sp/>back<sp/>to<sp/>string<sp/>copy<sp/>with<sp/>c++11<sp/>compiler<sp/>and<sp/>is</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="503"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>recommended<sp/>to<sp/>be<sp/>compiled<sp/>with<sp/>c++14</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="504"><highlight class="normal"></highlight><highlight class="preprocessor">#if<sp/>TVM_USE_CXX17_STRING_VIEW_HASH</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="505"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>std::hash&lt;std::string_view&gt;()(</highlight></codeline>
+<codeline lineno="506"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::string_view(data,<sp/>size));</highlight></codeline>
+<codeline lineno="507"><highlight class="normal"></highlight><highlight class="preprocessor">#elif<sp/>TVM_USE_CXX14_STRING_VIEW_HASH</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="508"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>std::hash&lt;std::experimental::string_view&gt;()(</highlight></codeline>
+<codeline lineno="509"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::experimental::string_view(data,<sp/>size));</highlight></codeline>
+<codeline lineno="510"><highlight class="normal"></highlight><highlight class="preprocessor">#else</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="511"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>std::hash&lt;std::string&gt;()(std::string(data,<sp/>size));</highlight></codeline>
+<codeline lineno="512"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="513"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="514"><highlight class="normal"></highlight></codeline>
+<codeline lineno="515"><highlight class="normal"><sp/><sp/><ref refid="object_8h_1ac6e7295a4999e2c8e4a2c990beca887a" kindref="member">TVM_DEFINE_OBJECT_REF_METHODS</ref>(<ref refid="classtvm_1_1runtime_1_1String" kindref="compound">String</ref>,<sp/><ref refid="classtvm_1_1runtime_1_1ObjectRef" kindref="compound">ObjectRef</ref>,<sp/><ref refid="classtvm_1_1runtime_1_1StringObj" kindref="compound">StringObj</ref>);</highlight></codeline>
+<codeline lineno="516"><highlight class="normal"></highlight></codeline>
+<codeline lineno="517"><highlight class="normal"><sp/></highlight><highlight class="keyword">private</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="519"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classtvm_1_1runtime_1_1StringObj" kindref="compound">StringObj</ref>*<sp/></highlight><highlight class="keyword">get</highlight><highlight class="normal">()<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>operator-&gt;();<sp/>}</highlight></codeline>
+<codeline lineno="520"><highlight class="normal"></highlight></codeline>
+<codeline lineno="531"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>memncmp(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*<sp/>lhs,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*<sp/>rhs,<sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>lhs_count,</highlight></codeline>
+<codeline lineno="532"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>rhs_count);</highlight></codeline>
+<codeline lineno="533"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="534"><highlight class="normal"></highlight></codeline>
+<codeline lineno="536" refid="classtvm_1_1runtime_1_1StringObj_1_1FromStd" refkind="compound"><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classtvm_1_1runtime_1_1StringObj_1_1FromStd" kindref="compound">StringObj::FromStd</ref><sp/>:<sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/><ref refid="classtvm_1_1runtime_1_1StringObj" kindref="compound">StringObj</ref><sp/>{</highlight></codeline>
+<codeline lineno="537"><highlight class="normal"><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="546" refid="classtvm_1_1runtime_1_1StringObj_1_1FromStd_1ae16447bf3dfb1874dc8e04633ba820b4" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">explicit</highlight><highlight class="normal"><sp/><ref refid="classtvm_1_1runtime_1_1StringObj_1_1FromStd_1ae16447bf3dfb1874dc8e04633ba820b4" kindref="member">FromStd</ref>(std::string<sp/>other)<sp/>:<sp/>data_container{other}<sp/>{}</highlight></codeline>
+<codeline lineno="547"><highlight class="normal"></highlight></codeline>
+<codeline lineno="548"><highlight class="normal"><sp/></highlight><highlight class="keyword">private</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="550"><highlight class="normal"><sp/><sp/>std::string<sp/>data_container;</highlight></codeline>
+<codeline lineno="551"><highlight class="normal"></highlight></codeline>
+<codeline lineno="552" refid="classtvm_1_1runtime_1_1StringObj_1_1FromStd_1a7fb804f7dc96dd9f705c84095f37f1ca" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">friend</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classtvm_1_1runtime_1_1String" kindref="compound">String</ref>;</highlight></codeline>
+<codeline lineno="553"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="554"><highlight class="normal"></highlight></codeline>
+<codeline lineno="555" refid="classtvm_1_1runtime_1_1String_1a02fca36e3ff55cc1e83635b02a11fca3" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/><ref refid="classtvm_1_1runtime_1_1String_1a02fca36e3ff55cc1e83635b02a11fca3" kindref="member">String::String</ref>(std::string<sp/>other)<sp/>{</highlight></codeline>
+<codeline lineno="556"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>ptr<sp/>=<sp/>make_object&lt;StringObj::FromStd&gt;(std::move(other));</highlight></codeline>
+<codeline lineno="557"><highlight class="normal"><sp/><sp/>ptr-&gt;size<sp/>=<sp/>ptr-&gt;data_container.size();</highlight></codeline>
+<codeline lineno="558"><highlight class="normal"><sp/><sp/>ptr-&gt;data<sp/>=<sp/>ptr-&gt;data_container.data();</highlight></codeline>
+<codeline lineno="559"><highlight class="normal"><sp/><sp/>data_<sp/>=<sp/>std::move(ptr);</highlight></codeline>
+<codeline lineno="560"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="561"><highlight class="normal"></highlight></codeline>
+<codeline lineno="562" refid="classtvm_1_1runtime_1_1String_1a0d6160f9a7e4efbafa7f6d7a42fec0d4" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/><ref refid="classtvm_1_1runtime_1_1String" kindref="compound">String</ref><sp/><ref refid="classtvm_1_1runtime_1_1String_1a0d6160f9a7e4efbafa7f6d7a42fec0d4" kindref="member">String::operator=</ref>(std::string<sp/>other)<sp/>{</highlight></codeline>
+<codeline lineno="563"><highlight class="normal"><sp/><sp/><ref refid="classtvm_1_1runtime_1_1String" kindref="compound">String</ref><sp/>replace{std::move(other)};</highlight></codeline>
+<codeline lineno="564"><highlight class="normal"><sp/><sp/>data_.swap(replace.data_);</highlight></codeline>
+<codeline lineno="565"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>Downcast&lt;String&gt;(*this);</highlight></codeline>
+<codeline lineno="566"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="567"><highlight class="normal"></highlight></codeline>
+<codeline lineno="568"><highlight class="normal"></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>String::memncmp(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*<sp/>lhs,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*<sp/>rhs,<sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>lhs_count,</highlight></codeline>
+<codeline lineno="569"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>rhs_count)<sp/>{</highlight></codeline>
+<codeline lineno="570"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(lhs<sp/>==<sp/>rhs<sp/>&amp;&amp;<sp/>lhs_count<sp/>==<sp/>rhs_count)<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>0;</highlight></codeline>
+<codeline lineno="571"><highlight class="normal"></highlight></codeline>
+<codeline lineno="572"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>i<sp/>=<sp/>0;<sp/>i<sp/>&lt;<sp/>lhs_count<sp/>&amp;&amp;<sp/>i<sp/>&lt;<sp/>rhs_count;<sp/>++i)<sp/>{</highlight></codeline>
+<codeline lineno="573"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(lhs[i]<sp/>&lt;<sp/>rhs[i])<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>-1;</highlight></codeline>
+<codeline lineno="574"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(lhs[i]<sp/>&gt;<sp/>rhs[i])<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>1;</highlight></codeline>
+<codeline lineno="575"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="576"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(lhs_count<sp/>&lt;<sp/>rhs_count)<sp/>{</highlight></codeline>
+<codeline lineno="577"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>-1;</highlight></codeline>
+<codeline lineno="578"><highlight class="normal"><sp/><sp/>}<sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(lhs_count<sp/>&gt;<sp/>rhs_count)<sp/>{</highlight></codeline>
+<codeline lineno="579"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>1;</highlight></codeline>
+<codeline lineno="580"><highlight class="normal"><sp/><sp/>}<sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="581"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>0;</highlight></codeline>
+<codeline lineno="582"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="583"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="584"><highlight class="normal"></highlight></codeline>
+<codeline lineno="585"><highlight class="normal">}<sp/><sp/></highlight><highlight class="comment">//<sp/>namespace<sp/>runtime</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="586"><highlight class="normal">}<sp/><sp/></highlight><highlight class="comment">//<sp/>namespace<sp/>tvm</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="587"><highlight class="normal"></highlight></codeline>
+<codeline lineno="588"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal"><ref refid="namespacestd" kindref="compound">std</ref><sp/>{</highlight></codeline>
+<codeline lineno="589"><highlight class="normal"></highlight></codeline>
+<codeline lineno="590"><highlight class="normal"></highlight><highlight class="keyword">template</highlight><highlight class="normal"><sp/>&lt;&gt;</highlight></codeline>
+<codeline lineno="591"><highlight class="normal"></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal">hash&lt;::<ref refid="classtvm_1_1runtime_1_1String" kindref="compound">tvm::runtime::String</ref>&gt;<sp/>{</highlight></codeline>
+<codeline lineno="592"><highlight class="normal"><sp/><sp/>std::size_t<sp/>operator()(const<sp/>::tvm::runtime::String&amp;<sp/>str)</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="593"><highlight class="normal"><sp/><sp/><sp/><sp/>return<sp/>::tvm::runtime::String::HashBytes(str.data(),<sp/>str.size());</highlight></codeline>
+<codeline lineno="594"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="595"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="596"><highlight class="normal">}<sp/><sp/></highlight><highlight class="comment">//<sp/>namespace<sp/>std</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="597"><highlight class="normal"></highlight></codeline>
+<codeline lineno="598"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/><sp/>//<sp/>TVM_RUNTIME_CONTAINER_H_</highlight></codeline>
+    </programlisting>
+    <location file="include/tvm/runtime/container.h"/>
+  </compounddef>
+</doxygen>

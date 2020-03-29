@@ -1,0 +1,102 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="classtvm_1_1te_1_1TensorIntrin" kind="class" language="C++" prot="public">
+    <compoundname>tvm::te::TensorIntrin</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">ObjectRef</basecompoundref>
+    <includes refid="tensor__intrin_8h" local="no">tensor_intrin.h</includes>
+      <sectiondef kind="public-type">
+      <memberdef kind="typedef" id="classtvm_1_1te_1_1TensorIntrin_1ac7879e6d4dfd10a44423334871459a7b" prot="public" static="no">
+        <type><ref refid="classtvm_1_1te_1_1TensorIntrinNode" kindref="compound">TensorIntrinNode</ref></type>
+        <definition>using tvm::te::TensorIntrin::ContainerType =  TensorIntrinNode</definition>
+        <argsstring></argsstring>
+        <name>ContainerType</name>
+        <briefdescription>
+<para>specify container node </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/te/tensor_intrin.h" line="50" column="1" bodyfile="include/tvm/te/tensor_intrin.h" bodystart="50" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classtvm_1_1te_1_1TensorIntrin_1a24961182ef6710f04d76eb65d626ec72" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>tvm::te::TensorIntrin::TensorIntrin</definition>
+        <argsstring>()</argsstring>
+        <name>TensorIntrin</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/te/tensor_intrin.h" line="41" column="1" bodyfile="include/tvm/te/tensor_intrin.h" bodystart="41" bodyend="41"/>
+      </memberdef>
+      <memberdef kind="function" id="classtvm_1_1te_1_1TensorIntrin_1a07fb4c81adf8a37622e3f83086e60159" prot="public" static="no" const="no" explicit="yes" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>tvm::te::TensorIntrin::TensorIntrin</definition>
+        <argsstring>(ObjectPtr&lt; Object &gt; n)</argsstring>
+        <name>TensorIntrin</name>
+        <param>
+          <type>ObjectPtr&lt; Object &gt;</type>
+          <declname>n</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/te/tensor_intrin.h" line="42" column="1" bodyfile="include/tvm/te/tensor_intrin.h" bodystart="42" bodyend="42"/>
+      </memberdef>
+      <memberdef kind="function" id="classtvm_1_1te_1_1TensorIntrin_1a7f24683aa74591a7f1110a82e961134b" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>const <ref refid="classtvm_1_1te_1_1TensorIntrinNode" kindref="compound">TensorIntrinNode</ref> *</type>
+        <definition>const TensorIntrinNode * tvm::te::TensorIntrin::operator-&gt;</definition>
+        <argsstring>() const </argsstring>
+        <name>operator-&gt;</name>
+        <briefdescription>
+<para>access the internal node container </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>the pointer to the internal node container </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/te/tensor_intrin.h" line="47" column="1" bodyfile="include/tvm/te/tensor_intrin.h" bodystart="116" bodyend="118"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para><ref refid="classtvm_1_1te_1_1Tensor" kindref="compound">Tensor</ref> intrinsic node. </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="7166">
+        <label>ObjectRef</label>
+      </node>
+      <node id="7165">
+        <label>tvm::te::TensorIntrin</label>
+        <link refid="classtvm_1_1te_1_1TensorIntrin"/>
+        <childnode refid="7166" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="7168">
+        <label>ObjectRef</label>
+      </node>
+      <node id="7167">
+        <label>tvm::te::TensorIntrin</label>
+        <link refid="classtvm_1_1te_1_1TensorIntrin"/>
+        <childnode refid="7168" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="include/tvm/te/tensor_intrin.h" line="39" column="1" bodyfile="include/tvm/te/tensor_intrin.h" bodystart="39" bodyend="51"/>
+    <listofallmembers>
+      <member refid="classtvm_1_1te_1_1TensorIntrin_1ac7879e6d4dfd10a44423334871459a7b" prot="public" virt="non-virtual"><scope>tvm::te::TensorIntrin</scope><name>ContainerType</name></member>
+      <member refid="classtvm_1_1te_1_1TensorIntrin_1a7f24683aa74591a7f1110a82e961134b" prot="public" virt="non-virtual"><scope>tvm::te::TensorIntrin</scope><name>operator-&gt;</name></member>
+      <member refid="classtvm_1_1te_1_1TensorIntrin_1a24961182ef6710f04d76eb65d626ec72" prot="public" virt="non-virtual"><scope>tvm::te::TensorIntrin</scope><name>TensorIntrin</name></member>
+      <member refid="classtvm_1_1te_1_1TensorIntrin_1a07fb4c81adf8a37622e3f83086e60159" prot="public" virt="non-virtual"><scope>tvm::te::TensorIntrin</scope><name>TensorIntrin</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,84 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="classtvm_1_1relay_1_1RecClosure" kind="class" language="C++" prot="public">
+    <compoundname>tvm::relay::RecClosure</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">ObjectRef</basecompoundref>
+    <includes refid="interpreter_8h" local="no">interpreter.h</includes>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classtvm_1_1relay_1_1RecClosure_1ad00197077c4b1f91211cdef2d79f01d1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>tvm::relay::RecClosure::RecClosure</definition>
+        <argsstring>(InterpreterClosure clos, Var bind)</argsstring>
+        <name>RecClosure</name>
+        <param>
+          <type><ref refid="classtvm_1_1relay_1_1InterpreterClosure" kindref="compound">InterpreterClosure</ref></type>
+          <declname>clos</declname>
+        </param>
+        <param>
+          <type><ref refid="classtvm_1_1relay_1_1Var" kindref="compound">Var</ref></type>
+          <declname>bind</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/relay/interpreter.h" line="124" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classtvm_1_1relay_1_1RecClosure_1a63f379d774602912268318a29278bf24" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>tvm::relay::RecClosure::TVM_DEFINE_OBJECT_REF_METHODS</definition>
+        <argsstring>(RecClosure, ObjectRef, RecClosureObj)</argsstring>
+        <name>TVM_DEFINE_OBJECT_REF_METHODS</name>
+        <param>
+          <type><ref refid="classtvm_1_1relay_1_1RecClosure" kindref="compound">RecClosure</ref></type>
+        </param>
+        <param>
+          <type>ObjectRef</type>
+        </param>
+        <param>
+          <type><ref refid="classtvm_1_1relay_1_1RecClosureObj" kindref="compound">RecClosureObj</ref></type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/relay/interpreter.h" line="125" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="6404">
+        <label>ObjectRef</label>
+      </node>
+      <node id="6403">
+        <label>tvm::relay::RecClosure</label>
+        <link refid="classtvm_1_1relay_1_1RecClosure"/>
+        <childnode refid="6404" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="6406">
+        <label>ObjectRef</label>
+      </node>
+      <node id="6405">
+        <label>tvm::relay::RecClosure</label>
+        <link refid="classtvm_1_1relay_1_1RecClosure"/>
+        <childnode refid="6406" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="include/tvm/relay/interpreter.h" line="122" column="1" bodyfile="include/tvm/relay/interpreter.h" bodystart="122" bodyend="126"/>
+    <listofallmembers>
+      <member refid="classtvm_1_1relay_1_1RecClosure_1ad00197077c4b1f91211cdef2d79f01d1" prot="public" virt="non-virtual"><scope>tvm::relay::RecClosure</scope><name>RecClosure</name></member>
+      <member refid="classtvm_1_1relay_1_1RecClosure_1a63f379d774602912268318a29278bf24" prot="public" virt="non-virtual"><scope>tvm::relay::RecClosure</scope><name>TVM_DEFINE_OBJECT_REF_METHODS</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

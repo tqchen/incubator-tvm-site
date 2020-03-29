@@ -1,0 +1,78 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="classtvm_1_1StructuralHash" kind="class" language="C++" prot="public">
+    <compoundname>tvm::StructuralHash</compoundname>
+    <basecompoundref refid="classtvm_1_1BaseValueHash" prot="public" virt="non-virtual">tvm::BaseValueHash</basecompoundref>
+    <includes refid="structural__hash_8h" local="no">structural_hash.h</includes>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classtvm_1_1StructuralHash_1a9854ccfc7f91fc98094accac82edaf26" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>size_t</type>
+        <definition>size_t tvm::StructuralHash::operator()</definition>
+        <argsstring>(const ObjectRef &amp;key) const </argsstring>
+        <name>operator()</name>
+        <param>
+          <type>const ObjectRef &amp;</type>
+          <declname>key</declname>
+        </param>
+        <briefdescription>
+<para>Compute structural hashing value for an object. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>key</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The left operand. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The hash value. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/node/structural_hash.h" line="97" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Content-aware structural hasing. </para>    </briefdescription>
+    <detaileddescription>
+<para>The structural hash value is recursively defined in the DAG of IRNodes. There are two kinds of nodes:</para><para><itemizedlist>
+<listitem><para>Normal node: the hash value is defined by its content and type only.</para></listitem><listitem><para>Graph node: each graph node will be assigned a unique index ordered by the first occurence during the visit. The hash value of a graph node is combined from the hash values of its contents and the index. </para></listitem></itemizedlist>
+</para>    </detaileddescription>
+    <inheritancegraph>
+      <node id="7073">
+        <label>tvm::BaseValueHash</label>
+        <link refid="classtvm_1_1BaseValueHash"/>
+      </node>
+      <node id="7072">
+        <label>tvm::StructuralHash</label>
+        <link refid="classtvm_1_1StructuralHash"/>
+        <childnode refid="7073" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="7075">
+        <label>tvm::BaseValueHash</label>
+        <link refid="classtvm_1_1BaseValueHash"/>
+      </node>
+      <node id="7074">
+        <label>tvm::StructuralHash</label>
+        <link refid="classtvm_1_1StructuralHash"/>
+        <childnode refid="7075" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="include/tvm/node/structural_hash.h" line="88" column="1" bodyfile="include/tvm/node/structural_hash.h" bodystart="88" bodyend="98"/>
+    <listofallmembers>
+      <member refid="classtvm_1_1StructuralHash_1a9854ccfc7f91fc98094accac82edaf26" prot="public" virt="non-virtual"><scope>tvm::StructuralHash</scope><name>operator()</name></member>
+      <member refid="classtvm_1_1BaseValueHash_1ae5264c45c41cfbb82d8944d6b7402f8a" prot="public" virt="non-virtual" ambiguityscope="tvm::BaseValueHash::"><scope>tvm::StructuralHash</scope><name>operator()</name></member>
+      <member refid="classtvm_1_1BaseValueHash_1a75e98fc026241cf33f36ec817e73f503" prot="public" virt="non-virtual" ambiguityscope="tvm::BaseValueHash::"><scope>tvm::StructuralHash</scope><name>operator()</name></member>
+      <member refid="classtvm_1_1BaseValueHash_1a7e2db7c92be284347da2bc7736c2f0b4" prot="public" virt="non-virtual" ambiguityscope="tvm::BaseValueHash::"><scope>tvm::StructuralHash</scope><name>operator()</name></member>
+      <member refid="classtvm_1_1BaseValueHash_1af88eb7061b7d5db3ce7a045a331df9fc" prot="public" virt="non-virtual" ambiguityscope="tvm::BaseValueHash::"><scope>tvm::StructuralHash</scope><name>operator()</name></member>
+      <member refid="classtvm_1_1BaseValueHash_1a0878f3a6a7e9633e9b36c995a365e49d" prot="public" virt="non-virtual" ambiguityscope="tvm::BaseValueHash::"><scope>tvm::StructuralHash</scope><name>operator()</name></member>
+      <member refid="classtvm_1_1BaseValueHash_1a5d95cf4c946c882342eb33133cf02c2a" prot="public" virt="non-virtual" ambiguityscope="tvm::BaseValueHash::"><scope>tvm::StructuralHash</scope><name>operator()</name></member>
+      <member refid="classtvm_1_1BaseValueHash_1ab695a0b7131118a9083229b18966d9e7" prot="public" virt="non-virtual" ambiguityscope="tvm::BaseValueHash::"><scope>tvm::StructuralHash</scope><name>operator()</name></member>
+      <member refid="classtvm_1_1BaseValueHash_1a3e26f78c0d21151d09a84b625445e081" prot="public" virt="non-virtual" ambiguityscope="tvm::BaseValueHash::"><scope>tvm::StructuralHash</scope><name>operator()</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

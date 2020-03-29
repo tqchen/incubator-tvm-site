@@ -1,0 +1,700 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="rocm_2reduction_8h" kind="file" language="C++">
+    <compoundname>reduction.h</compoundname>
+    <includes refid="tags_8h" local="no">topi/tags.h</includes>
+    <includes refid="fuse_8h" local="no">topi/detail/fuse.h</includes>
+    <includes refid="operation_8h" local="no">tvm/te/operation.h</includes>
+    <includes refid="generic__func_8h" local="no">tvm/target/generic_func.h</includes>
+    <includes refid="cuda_2reduction_8h" local="yes">topi/cuda/reduction.h</includes>
+    <incdepgraph>
+      <node id="17598">
+        <label>tvm/arith/int_set.h</label>
+        <link refid="int__set_8h"/>
+        <childnode refid="17563" relation="include">
+        </childnode>
+        <childnode refid="17599" relation="include">
+        </childnode>
+        <childnode refid="17580" relation="include">
+        </childnode>
+      </node>
+      <node id="17595">
+        <label>tvm/ir/span.h</label>
+        <link refid="span_8h"/>
+        <childnode refid="17564" relation="include">
+        </childnode>
+        <childnode refid="17571" relation="include">
+        </childnode>
+        <childnode refid="17556" relation="include">
+        </childnode>
+      </node>
+      <node id="17557">
+        <label>topi/detail/fuse.h</label>
+        <link refid="fuse_8h"/>
+        <childnode refid="17558" relation="include">
+        </childnode>
+      </node>
+      <node id="17570">
+        <label>atomic</label>
+      </node>
+      <node id="17606">
+        <label>tvm/tir/buffer.h</label>
+        <link refid="buffer_8h"/>
+        <childnode refid="17590" relation="include">
+        </childnode>
+        <childnode refid="17599" relation="include">
+        </childnode>
+        <childnode refid="17603" relation="include">
+        </childnode>
+        <childnode refid="17556" relation="include">
+        </childnode>
+      </node>
+      <node id="17600">
+        <label>tvm/te/tensor.h</label>
+        <link refid="tensor_8h"/>
+        <childnode refid="17590" relation="include">
+        </childnode>
+        <childnode refid="17601" relation="include">
+        </childnode>
+        <childnode refid="17599" relation="include">
+        </childnode>
+        <childnode refid="17603" relation="include">
+        </childnode>
+        <childnode refid="17556" relation="include">
+        </childnode>
+        <childnode refid="17579" relation="include">
+        </childnode>
+        <childnode refid="17562" relation="include">
+        </childnode>
+        <childnode refid="17569" relation="include">
+        </childnode>
+      </node>
+      <node id="17585">
+        <label>functional</label>
+      </node>
+      <node id="17587">
+        <label>limits</label>
+      </node>
+      <node id="17576">
+        <label>tvm/runtime/module.h</label>
+        <link refid="runtime_2module_8h"/>
+        <childnode refid="17577" relation="include">
+        </childnode>
+        <childnode refid="17565" relation="include">
+        </childnode>
+        <childnode refid="17564" relation="include">
+        </childnode>
+        <childnode refid="17572" relation="include">
+        </childnode>
+        <childnode refid="17578" relation="include">
+        </childnode>
+        <childnode refid="17579" relation="include">
+        </childnode>
+        <childnode refid="17556" relation="include">
+        </childnode>
+        <childnode refid="17580" relation="include">
+        </childnode>
+        <childnode refid="17575" relation="include">
+        </childnode>
+      </node>
+      <node id="17575">
+        <label>tvm/runtime/packed_func.h</label>
+        <link refid="packed__func_8h"/>
+        <childnode refid="17561" relation="include">
+        </childnode>
+        <childnode refid="17565" relation="include">
+        </childnode>
+        <childnode refid="17576" relation="include">
+        </childnode>
+        <childnode refid="17581" relation="include">
+        </childnode>
+        <childnode refid="17584" relation="include">
+        </childnode>
+        <childnode refid="17564" relation="include">
+        </childnode>
+        <childnode refid="17585" relation="include">
+        </childnode>
+        <childnode refid="17586" relation="include">
+        </childnode>
+        <childnode refid="17579" relation="include">
+        </childnode>
+        <childnode refid="17556" relation="include">
+        </childnode>
+        <childnode refid="17587" relation="include">
+        </childnode>
+        <childnode refid="17578" relation="include">
+        </childnode>
+        <childnode refid="17562" relation="include">
+        </childnode>
+        <childnode refid="17569" relation="include">
+        </childnode>
+      </node>
+      <node id="17589">
+        <label>tvm/node/functor.h</label>
+        <link refid="functor_8h"/>
+        <childnode refid="17561" relation="include">
+        </childnode>
+        <childnode refid="17564" relation="include">
+        </childnode>
+        <childnode refid="17579" relation="include">
+        </childnode>
+        <childnode refid="17569" relation="include">
+        </childnode>
+        <childnode refid="17562" relation="include">
+        </childnode>
+      </node>
+      <node id="17554">
+        <label>topi/include/topi/rocm/reduction.h</label>
+        <link refid="rocm/reduction.h"/>
+        <childnode refid="17555" relation="include">
+        </childnode>
+        <childnode refid="17557" relation="include">
+        </childnode>
+        <childnode refid="17558" relation="include">
+        </childnode>
+        <childnode refid="17607" relation="include">
+        </childnode>
+        <childnode refid="17610" relation="include">
+        </childnode>
+      </node>
+      <node id="17605">
+        <label>tvm/te/tensor_intrin.h</label>
+        <link refid="tensor__intrin_8h"/>
+        <childnode refid="17600" relation="include">
+        </childnode>
+        <childnode refid="17606" relation="include">
+        </childnode>
+        <childnode refid="17556" relation="include">
+        </childnode>
+      </node>
+      <node id="17564">
+        <label>tvm/runtime/object.h</label>
+        <link refid="object_8h"/>
+        <childnode refid="17561" relation="include">
+        </childnode>
+        <childnode refid="17565" relation="include">
+        </childnode>
+        <childnode refid="17569" relation="include">
+        </childnode>
+        <childnode refid="17556" relation="include">
+        </childnode>
+        <childnode refid="17562" relation="include">
+        </childnode>
+        <childnode refid="17570" relation="include">
+        </childnode>
+      </node>
+      <node id="17567">
+        <label>stdint.h</label>
+      </node>
+      <node id="17581">
+        <label>tvm/runtime/ndarray.h</label>
+        <link refid="ndarray_8h"/>
+        <childnode refid="17565" relation="include">
+        </childnode>
+        <childnode refid="17564" relation="include">
+        </childnode>
+        <childnode refid="17582" relation="include">
+        </childnode>
+        <childnode refid="17570" relation="include">
+        </childnode>
+        <childnode refid="17579" relation="include">
+        </childnode>
+        <childnode refid="17562" relation="include">
+        </childnode>
+      </node>
+      <node id="17592">
+        <label>tvm/node/structural_hash.h</label>
+        <link refid="structural__hash_8h"/>
+        <childnode refid="17584" relation="include">
+        </childnode>
+        <childnode refid="17589" relation="include">
+        </childnode>
+        <childnode refid="17590" relation="include">
+        </childnode>
+        <childnode refid="17556" relation="include">
+        </childnode>
+        <childnode refid="17585" relation="include">
+        </childnode>
+      </node>
+      <node id="17610">
+        <label>topi/cuda/reduction.h</label>
+        <link refid="cuda_2reduction_8h"/>
+        <childnode refid="17558" relation="include">
+        </childnode>
+        <childnode refid="17611" relation="include">
+        </childnode>
+        <childnode refid="17607" relation="include">
+        </childnode>
+        <childnode refid="17555" relation="include">
+        </childnode>
+        <childnode refid="17557" relation="include">
+        </childnode>
+      </node>
+      <node id="17559">
+        <label>tvm/arith/analyzer.h</label>
+        <link refid="analyzer_8h"/>
+        <childnode refid="17560" relation="include">
+        </childnode>
+        <childnode refid="17563" relation="include">
+        </childnode>
+        <childnode refid="17598" relation="include">
+        </childnode>
+        <childnode refid="17579" relation="include">
+        </childnode>
+        <childnode refid="17580" relation="include">
+        </childnode>
+        <childnode refid="17578" relation="include">
+        </childnode>
+        <childnode refid="17587" relation="include">
+        </childnode>
+      </node>
+      <node id="17607">
+        <label>tvm/target/generic_func.h</label>
+        <link refid="generic__func_8h"/>
+        <childnode refid="17560" relation="include">
+        </childnode>
+        <childnode refid="17575" relation="include">
+        </childnode>
+        <childnode refid="17608" relation="include">
+        </childnode>
+        <childnode refid="17579" relation="include">
+        </childnode>
+        <childnode refid="17556" relation="include">
+        </childnode>
+        <childnode refid="17562" relation="include">
+        </childnode>
+        <childnode refid="17580" relation="include">
+        </childnode>
+      </node>
+      <node id="17599">
+        <label>tvm/tir/expr.h</label>
+        <link refid="tir_2expr_8h"/>
+        <childnode refid="17571" relation="include">
+        </childnode>
+        <childnode refid="17590" relation="include">
+        </childnode>
+        <childnode refid="17589" relation="include">
+        </childnode>
+        <childnode refid="17565" relation="include">
+        </childnode>
+        <childnode refid="17584" relation="include">
+        </childnode>
+        <childnode refid="17563" relation="include">
+        </childnode>
+        <childnode refid="17556" relation="include">
+        </childnode>
+        <childnode refid="17597" relation="include">
+        </childnode>
+        <childnode refid="17580" relation="include">
+        </childnode>
+        <childnode refid="17594" relation="include">
+        </childnode>
+        <childnode refid="17587" relation="include">
+        </childnode>
+        <childnode refid="17562" relation="include">
+        </childnode>
+      </node>
+      <node id="17556">
+        <label>string</label>
+      </node>
+      <node id="17593">
+        <label>tvm/node/repr_printer.h</label>
+        <link refid="repr__printer_8h"/>
+        <childnode refid="17589" relation="include">
+        </childnode>
+        <childnode refid="17594" relation="include">
+        </childnode>
+      </node>
+      <node id="17590">
+        <label>tvm/node/container.h</label>
+        <link refid="node_2container_8h"/>
+        <childnode refid="17564" relation="include">
+        </childnode>
+        <childnode refid="17572" relation="include">
+        </childnode>
+        <childnode refid="17575" relation="include">
+        </childnode>
+        <childnode refid="17569" relation="include">
+        </childnode>
+        <childnode refid="17579" relation="include">
+        </childnode>
+        <childnode refid="17591" relation="include">
+        </childnode>
+        <childnode refid="17580" relation="include">
+        </childnode>
+        <childnode refid="17562" relation="include">
+        </childnode>
+        <childnode refid="17556" relation="include">
+        </childnode>
+      </node>
+      <node id="17609">
+        <label>unordered_set</label>
+      </node>
+      <node id="17558">
+        <label>tvm/te/operation.h</label>
+        <link refid="operation_8h"/>
+        <childnode refid="17559" relation="include">
+        </childnode>
+        <childnode refid="17600" relation="include">
+        </childnode>
+        <childnode refid="17604" relation="include">
+        </childnode>
+        <childnode refid="17599" relation="include">
+        </childnode>
+        <childnode refid="17603" relation="include">
+        </childnode>
+        <childnode refid="17606" relation="include">
+        </childnode>
+        <childnode refid="17556" relation="include">
+        </childnode>
+        <childnode refid="17579" relation="include">
+        </childnode>
+        <childnode refid="17580" relation="include">
+        </childnode>
+      </node>
+      <node id="17568">
+        <label>stddef.h</label>
+      </node>
+      <node id="17608">
+        <label>tvm/target/target.h</label>
+        <link refid="target_8h"/>
+        <childnode refid="17560" relation="include">
+        </childnode>
+        <childnode refid="17590" relation="include">
+        </childnode>
+        <childnode refid="17563" relation="include">
+        </childnode>
+        <childnode refid="17556" relation="include">
+        </childnode>
+        <childnode refid="17579" relation="include">
+        </childnode>
+        <childnode refid="17609" relation="include">
+        </childnode>
+        <childnode refid="17562" relation="include">
+        </childnode>
+      </node>
+      <node id="17601">
+        <label>tvm/arith/bound.h</label>
+        <link refid="bound_8h"/>
+        <childnode refid="17590" relation="include">
+        </childnode>
+        <childnode refid="17563" relation="include">
+        </childnode>
+        <childnode refid="17598" relation="include">
+        </childnode>
+        <childnode refid="17599" relation="include">
+        </childnode>
+        <childnode refid="17602" relation="include">
+        </childnode>
+        <childnode refid="17580" relation="include">
+        </childnode>
+      </node>
+      <node id="17603">
+        <label>tvm/tir/op.h</label>
+        <link refid="tir_2op_8h"/>
+        <childnode refid="17596" relation="include">
+        </childnode>
+        <childnode refid="17599" relation="include">
+        </childnode>
+        <childnode refid="17602" relation="include">
+        </childnode>
+        <childnode refid="17597" relation="include">
+        </childnode>
+        <childnode refid="17569" relation="include">
+        </childnode>
+        <childnode refid="17587" relation="include">
+        </childnode>
+      </node>
+      <node id="17563">
+        <label>tvm/ir/expr.h</label>
+        <link refid="ir_2expr_8h"/>
+        <childnode refid="17564" relation="include">
+        </childnode>
+        <childnode refid="17571" relation="include">
+        </childnode>
+        <childnode refid="17590" relation="include">
+        </childnode>
+        <childnode refid="17595" relation="include">
+        </childnode>
+        <childnode refid="17596" relation="include">
+        </childnode>
+        <childnode refid="17556" relation="include">
+        </childnode>
+        <childnode refid="17597" relation="include">
+        </childnode>
+        <childnode refid="17587" relation="include">
+        </childnode>
+        <childnode refid="17569" relation="include">
+        </childnode>
+      </node>
+      <node id="17611">
+        <label>tvm/te/schedule_pass.h</label>
+        <link refid="schedule__pass_8h"/>
+        <childnode refid="17604" relation="include">
+        </childnode>
+      </node>
+      <node id="17586">
+        <label>tuple</label>
+      </node>
+      <node id="17561">
+        <label>dmlc/logging.h</label>
+      </node>
+      <node id="17602">
+        <label>tvm/tir/stmt.h</label>
+        <link refid="stmt_8h"/>
+        <childnode refid="17599" relation="include">
+        </childnode>
+        <childnode refid="17569" relation="include">
+        </childnode>
+        <childnode refid="17556" relation="include">
+        </childnode>
+        <childnode refid="17579" relation="include">
+        </childnode>
+        <childnode refid="17562" relation="include">
+        </childnode>
+      </node>
+      <node id="17579">
+        <label>vector</label>
+      </node>
+      <node id="17588">
+        <label>tvm/node/structural_equal.h</label>
+        <link refid="structural__equal_8h"/>
+        <childnode refid="17584" relation="include">
+        </childnode>
+        <childnode refid="17589" relation="include">
+        </childnode>
+        <childnode refid="17590" relation="include">
+        </childnode>
+        <childnode refid="17556" relation="include">
+        </childnode>
+      </node>
+      <node id="17577">
+        <label>dmlc/io.h</label>
+      </node>
+      <node id="17565">
+        <label>tvm/runtime/c_runtime_api.h</label>
+        <link refid="c__runtime__api_8h"/>
+        <childnode refid="17566" relation="include">
+        </childnode>
+        <childnode refid="17567" relation="include">
+        </childnode>
+        <childnode refid="17568" relation="include">
+        </childnode>
+      </node>
+      <node id="17596">
+        <label>tvm/ir/type.h</label>
+        <link refid="ir_2type_8h"/>
+        <childnode refid="17564" relation="include">
+        </childnode>
+        <childnode refid="17584" relation="include">
+        </childnode>
+        <childnode refid="17571" relation="include">
+        </childnode>
+        <childnode refid="17590" relation="include">
+        </childnode>
+        <childnode refid="17595" relation="include">
+        </childnode>
+        <childnode refid="17556" relation="include">
+        </childnode>
+      </node>
+      <node id="17562">
+        <label>utility</label>
+      </node>
+      <node id="17571">
+        <label>tvm/node/node.h</label>
+        <link refid="node_8h"/>
+        <childnode refid="17565" relation="include">
+        </childnode>
+        <childnode refid="17564" relation="include">
+        </childnode>
+        <childnode refid="17572" relation="include">
+        </childnode>
+        <childnode refid="17574" relation="include">
+        </childnode>
+        <childnode refid="17593" relation="include">
+        </childnode>
+        <childnode refid="17590" relation="include">
+        </childnode>
+        <childnode refid="17588" relation="include">
+        </childnode>
+        <childnode refid="17592" relation="include">
+        </childnode>
+        <childnode refid="17556" relation="include">
+        </childnode>
+        <childnode refid="17579" relation="include">
+        </childnode>
+        <childnode refid="17562" relation="include">
+        </childnode>
+        <childnode refid="17569" relation="include">
+        </childnode>
+      </node>
+      <node id="17583">
+        <label>dmlc/serializer.h</label>
+      </node>
+      <node id="17573">
+        <label>cstdlib</label>
+      </node>
+      <node id="17594">
+        <label>iostream</label>
+      </node>
+      <node id="17582">
+        <label>tvm/runtime/serializer.h</label>
+        <link refid="serializer_8h"/>
+        <childnode refid="17577" relation="include">
+        </childnode>
+        <childnode refid="17583" relation="include">
+        </childnode>
+        <childnode refid="17565" relation="include">
+        </childnode>
+        <childnode refid="17581" relation="include">
+        </childnode>
+      </node>
+      <node id="17580">
+        <label>unordered_map</label>
+      </node>
+      <node id="17574">
+        <label>tvm/node/reflection.h</label>
+        <link refid="reflection_8h"/>
+        <childnode refid="17565" relation="include">
+        </childnode>
+        <childnode refid="17564" relation="include">
+        </childnode>
+        <childnode refid="17572" relation="include">
+        </childnode>
+        <childnode refid="17575" relation="include">
+        </childnode>
+        <childnode refid="17581" relation="include">
+        </childnode>
+        <childnode refid="17584" relation="include">
+        </childnode>
+        <childnode refid="17588" relation="include">
+        </childnode>
+        <childnode refid="17592" relation="include">
+        </childnode>
+        <childnode refid="17579" relation="include">
+        </childnode>
+        <childnode refid="17556" relation="include">
+        </childnode>
+        <childnode refid="17569" relation="include">
+        </childnode>
+      </node>
+      <node id="17572">
+        <label>tvm/runtime/memory.h</label>
+        <link refid="runtime_2memory_8h"/>
+        <childnode refid="17564" relation="include">
+        </childnode>
+        <childnode refid="17573" relation="include">
+        </childnode>
+        <childnode refid="17562" relation="include">
+        </childnode>
+        <childnode refid="17569" relation="include">
+        </childnode>
+      </node>
+      <node id="17584">
+        <label>tvm/runtime/data_type.h</label>
+        <link refid="data__type_8h"/>
+        <childnode refid="17565" relation="include">
+        </childnode>
+        <childnode refid="17561" relation="include">
+        </childnode>
+        <childnode refid="17569" relation="include">
+        </childnode>
+      </node>
+      <node id="17560">
+        <label>tvm/support/with.h</label>
+        <link refid="with_8h"/>
+        <childnode refid="17561" relation="include">
+        </childnode>
+        <childnode refid="17562" relation="include">
+        </childnode>
+      </node>
+      <node id="17569">
+        <label>type_traits</label>
+      </node>
+      <node id="17597">
+        <label>algorithm</label>
+      </node>
+      <node id="17555">
+        <label>topi/tags.h</label>
+        <link refid="tags_8h"/>
+        <childnode refid="17556" relation="include">
+        </childnode>
+      </node>
+      <node id="17566">
+        <label>dlpack/dlpack.h</label>
+      </node>
+      <node id="17604">
+        <label>tvm/te/schedule.h</label>
+        <link refid="schedule_8h"/>
+        <childnode refid="17599" relation="include">
+        </childnode>
+        <childnode refid="17600" relation="include">
+        </childnode>
+        <childnode refid="17605" relation="include">
+        </childnode>
+        <childnode refid="17560" relation="include">
+        </childnode>
+        <childnode refid="17556" relation="include">
+        </childnode>
+        <childnode refid="17580" relation="include">
+        </childnode>
+      </node>
+      <node id="17578">
+        <label>memory</label>
+      </node>
+      <node id="17591">
+        <label>initializer_list</label>
+      </node>
+    </incdepgraph>
+    <innernamespace refid="namespacetopi">topi</innernamespace>
+    <innernamespace refid="namespacetopi_1_1rocm">topi::rocm</innernamespace>
+    <briefdescription>
+<para>rocm schedule for reduction operations </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="2"><highlight class="comment"><sp/>*<sp/>Licensed<sp/>to<sp/>the<sp/>Apache<sp/>Software<sp/>Foundation<sp/>(ASF)<sp/>under<sp/>one</highlight></codeline>
+<codeline lineno="3"><highlight class="comment"><sp/>*<sp/>or<sp/>more<sp/>contributor<sp/>license<sp/>agreements.<sp/><sp/>See<sp/>the<sp/>NOTICE<sp/>file</highlight></codeline>
+<codeline lineno="4"><highlight class="comment"><sp/>*<sp/>distributed<sp/>with<sp/>this<sp/>work<sp/>for<sp/>additional<sp/>information</highlight></codeline>
+<codeline lineno="5"><highlight class="comment"><sp/>*<sp/>regarding<sp/>copyright<sp/>ownership.<sp/><sp/>The<sp/>ASF<sp/>licenses<sp/>this<sp/>file</highlight></codeline>
+<codeline lineno="6"><highlight class="comment"><sp/>*<sp/>to<sp/>you<sp/>under<sp/>the<sp/>Apache<sp/>License,<sp/>Version<sp/>2.0<sp/>(the</highlight></codeline>
+<codeline lineno="7"><highlight class="comment"><sp/>*<sp/>&quot;License&quot;);<sp/>you<sp/>may<sp/>not<sp/>use<sp/>this<sp/>file<sp/>except<sp/>in<sp/>compliance</highlight></codeline>
+<codeline lineno="8"><highlight class="comment"><sp/>*<sp/>with<sp/>the<sp/>License.<sp/><sp/>You<sp/>may<sp/>obtain<sp/>a<sp/>copy<sp/>of<sp/>the<sp/>License<sp/>at</highlight></codeline>
+<codeline lineno="9"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="10"><highlight class="comment"><sp/>*<sp/><sp/><sp/>http://www.apache.org/licenses/LICENSE-2.0</highlight></codeline>
+<codeline lineno="11"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="12"><highlight class="comment"><sp/>*<sp/>Unless<sp/>required<sp/>by<sp/>applicable<sp/>law<sp/>or<sp/>agreed<sp/>to<sp/>in<sp/>writing,</highlight></codeline>
+<codeline lineno="13"><highlight class="comment"><sp/>*<sp/>software<sp/>distributed<sp/>under<sp/>the<sp/>License<sp/>is<sp/>distributed<sp/>on<sp/>an</highlight></codeline>
+<codeline lineno="14"><highlight class="comment"><sp/>*<sp/>&quot;AS<sp/>IS&quot;<sp/>BASIS,<sp/>WITHOUT<sp/>WARRANTIES<sp/>OR<sp/>CONDITIONS<sp/>OF<sp/>ANY</highlight></codeline>
+<codeline lineno="15"><highlight class="comment"><sp/>*<sp/>KIND,<sp/>either<sp/>express<sp/>or<sp/>implied.<sp/><sp/>See<sp/>the<sp/>License<sp/>for<sp/>the</highlight></codeline>
+<codeline lineno="16"><highlight class="comment"><sp/>*<sp/>specific<sp/>language<sp/>governing<sp/>permissions<sp/>and<sp/>limitations</highlight></codeline>
+<codeline lineno="17"><highlight class="comment"><sp/>*<sp/>under<sp/>the<sp/>License.</highlight></codeline>
+<codeline lineno="18"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight></codeline>
+<codeline lineno="24"><highlight class="preprocessor">#ifndef<sp/>TOPI_ROCM_REDUCTION_H_</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>TOPI_ROCM_REDUCTION_H_</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;<ref refid="tags_8h" kindref="compound">topi/tags.h</ref>&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="28"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;<ref refid="fuse_8h" kindref="compound">topi/detail/fuse.h</ref>&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="29"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;<ref refid="operation_8h" kindref="compound">tvm/te/operation.h</ref>&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="30"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;<ref refid="generic__func_8h" kindref="compound">tvm/target/generic_func.h</ref>&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="31"><highlight class="normal"></highlight></codeline>
+<codeline lineno="32"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="cuda_2reduction_8h" kindref="compound">topi/cuda/reduction.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="33"><highlight class="normal"></highlight></codeline>
+<codeline lineno="34"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal"><ref refid="namespacetopi" kindref="compound">topi</ref><sp/>{</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"></highlight><highlight class="keyword">using<sp/>namespace<sp/></highlight><highlight class="normal"><ref refid="namespacetvm" kindref="compound">tvm</ref>;</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"></highlight><highlight class="keyword">using<sp/>namespace<sp/></highlight><highlight class="normal"><ref refid="namespacetvm_1_1te" kindref="compound">tvm::te</ref>;</highlight></codeline>
+<codeline lineno="37"><highlight class="normal"></highlight></codeline>
+<codeline lineno="38"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal"><ref refid="namespacetvm_1_1target_1afd36efca8e3ce77399559195d9e79a4a" kindref="member">rocm</ref><sp/>{</highlight></codeline>
+<codeline lineno="47" refid="namespacetopi_1_1rocm_1ab723607763d527d439a68a9c6304a4cd" refkind="member"><highlight class="normal"><ref refid="classtvm_1_1te_1_1Schedule" kindref="compound">Schedule</ref><sp/><ref refid="namespacetopi_1_1rocm_1ab723607763d527d439a68a9c6304a4cd" kindref="member">schedule_reduce</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classtvm_1_1Target" kindref="compound">Target</ref>&amp;<sp/>target,<sp/><ref refid="classtvm_1_1Array" kindref="compound">Array&lt;Tensor&gt;</ref><sp/>outs)<sp/>{</highlight></codeline>
+<codeline lineno="48"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="namespacetopi_1_1cuda_1aad0c9654034582022e8e81e82ff08349" kindref="member">topi::cuda::schedule_reduce</ref>(target,<sp/>outs);</highlight></codeline>
+<codeline lineno="49"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="50"><highlight class="normal"></highlight></codeline>
+<codeline lineno="51"><highlight class="normal">}<sp/><sp/></highlight><highlight class="comment">//<sp/>namespace<sp/>rocm</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="52"><highlight class="normal">}<sp/><sp/></highlight><highlight class="comment">//<sp/>namespace<sp/>topi</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="53"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/><sp/>//<sp/>TOPI_ROCM_REDUCTION_H_</highlight></codeline>
+    </programlisting>
+    <location file="topi/include/topi/rocm/reduction.h"/>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,142 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="classtvm_1_1TensorType" kind="class" language="C++" prot="public">
+    <compoundname>tvm::TensorType</compoundname>
+    <basecompoundref refid="classtvm_1_1Type" prot="public" virt="non-virtual">tvm::Type</basecompoundref>
+    <includes refid="tensor__type_8h" local="no">tensor_type.h</includes>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classtvm_1_1TensorType_1ade4460e9b02b42757a83808dec478b87" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>tvm::TensorType::TensorType</definition>
+        <argsstring>(Array&lt; PrimExpr &gt; shape, DataType dtype)</argsstring>
+        <name>TensorType</name>
+        <param>
+          <type><ref refid="classtvm_1_1Array" kindref="compound">Array</ref>&lt; <ref refid="classtvm_1_1PrimExpr" kindref="compound">PrimExpr</ref> &gt;</type>
+          <declname>shape</declname>
+        </param>
+        <param>
+          <type><ref refid="namespacetvm_1a41918af1a1dc386388639a9d3ad06c5d" kindref="member">DataType</ref></type>
+          <declname>dtype</declname>
+        </param>
+        <briefdescription>
+<para><ref refid="classtvm_1_1Constructor" kindref="compound">Constructor</ref>. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>shape</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The shape of the tensor. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>dtype</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The runtime dtype of the tensor&apos;s elements. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/ir/tensor_type.h" line="107" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classtvm_1_1TensorType_1a2ad8a8a7c8e9d2cf9d33ab4fcc6e811d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>tvm::TensorType::TVM_DEFINE_OBJECT_REF_METHODS</definition>
+        <argsstring>(TensorType, Type, TensorTypeNode)</argsstring>
+        <name>TVM_DEFINE_OBJECT_REF_METHODS</name>
+        <param>
+          <type><ref refid="classtvm_1_1TensorType" kindref="compound">TensorType</ref></type>
+        </param>
+        <param>
+          <type><ref refid="classtvm_1_1Type" kindref="compound">Type</ref></type>
+        </param>
+        <param>
+          <type><ref refid="classtvm_1_1TensorTypeNode" kindref="compound">TensorTypeNode</ref></type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/ir/tensor_type.h" line="116" column="1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="classtvm_1_1TensorType_1ab3d79794f932115e9ad71d616648d05d" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classtvm_1_1TensorType" kindref="compound">TensorType</ref></type>
+        <definition>static TensorType tvm::TensorType::Scalar</definition>
+        <argsstring>(DataType dtype)</argsstring>
+        <name>Scalar</name>
+        <param>
+          <type><ref refid="namespacetvm_1a41918af1a1dc386388639a9d3ad06c5d" kindref="member">DataType</ref></type>
+          <declname>dtype</declname>
+        </param>
+        <briefdescription>
+<para>Construct an scalar containing elements of dtype. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>dtype</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The runtime dtype of the tensor&apos;s elements. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>THe constructed type. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/ir/tensor_type.h" line="114" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Managed reference to <ref refid="classtvm_1_1TensorTypeNode" kindref="compound">TensorTypeNode</ref>. </para>    </briefdescription>
+    <detaileddescription>
+<para><simplesect kind="see"><para><ref refid="classtvm_1_1TensorTypeNode" kindref="compound">TensorTypeNode</ref>. </para></simplesect>
+</para>    </detaileddescription>
+    <inheritancegraph>
+      <node id="7209">
+        <label>ObjectRef</label>
+      </node>
+      <node id="7207">
+        <label>tvm::TensorType</label>
+        <link refid="classtvm_1_1TensorType"/>
+        <childnode refid="7208" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="7208">
+        <label>tvm::Type</label>
+        <link refid="classtvm_1_1Type"/>
+        <childnode refid="7209" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="7212">
+        <label>ObjectRef</label>
+      </node>
+      <node id="7210">
+        <label>tvm::TensorType</label>
+        <link refid="classtvm_1_1TensorType"/>
+        <childnode refid="7211" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="7211">
+        <label>tvm::Type</label>
+        <link refid="classtvm_1_1Type"/>
+        <childnode refid="7212" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="include/tvm/ir/tensor_type.h" line="100" column="1" bodyfile="include/tvm/ir/tensor_type.h" bodystart="100" bodyend="117"/>
+    <listofallmembers>
+      <member refid="classtvm_1_1TensorType_1ab3d79794f932115e9ad71d616648d05d" prot="public" virt="non-virtual"><scope>tvm::TensorType</scope><name>Scalar</name></member>
+      <member refid="classtvm_1_1TensorType_1ade4460e9b02b42757a83808dec478b87" prot="public" virt="non-virtual"><scope>tvm::TensorType</scope><name>TensorType</name></member>
+      <member refid="classtvm_1_1TensorType_1a2ad8a8a7c8e9d2cf9d33ab4fcc6e811d" prot="public" virt="non-virtual"><scope>tvm::TensorType</scope><name>TVM_DEFINE_OBJECT_REF_METHODS</name></member>
+      <member refid="classtvm_1_1Type_1a1188605b5afd297c39e614872a608a35" prot="public" virt="non-virtual" ambiguityscope="tvm::Type::"><scope>tvm::TensorType</scope><name>TVM_DEFINE_OBJECT_REF_METHODS</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

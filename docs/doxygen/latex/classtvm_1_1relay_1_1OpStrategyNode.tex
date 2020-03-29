@@ -1,0 +1,87 @@
+\hypertarget{classtvm_1_1relay_1_1OpStrategyNode}{}\section{tvm\+:\+:relay\+:\+:Op\+Strategy\+Node Class Reference}
+\label{classtvm_1_1relay_1_1OpStrategyNode}\index{tvm\+::relay\+::\+Op\+Strategy\+Node@{tvm\+::relay\+::\+Op\+Strategy\+Node}}
+
+
+Operator strategy to choose implementation.  
+
+
+
+
+{\ttfamily \#include $<$op\+\_\+strategy.\+h$>$}
+
+
+
+Inheritance diagram for tvm\+:\+:relay\+:\+:Op\+Strategy\+Node\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=285pt]{classtvm_1_1relay_1_1OpStrategyNode__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for tvm\+:\+:relay\+:\+:Op\+Strategy\+Node\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=317pt]{classtvm_1_1relay_1_1OpStrategyNode__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{classtvm_1_1relay_1_1OpStrategyNode_a9e3048aafa0fe847cb160fd8825f5220}{Visit\+Attrs} (\hyperlink{classtvm_1_1AttrVisitor}{tvm\+::\+Attr\+Visitor} $\ast$v)
+\item 
+\hyperlink{classtvm_1_1relay_1_1OpStrategyNode_a3cb5dde9cf9375f779b95d941b774f84}{T\+V\+M\+\_\+\+D\+E\+C\+L\+A\+R\+E\+\_\+\+F\+I\+N\+A\+L\+\_\+\+O\+B\+J\+E\+C\+T\+\_\+\+I\+N\+FO} (\hyperlink{classtvm_1_1relay_1_1OpStrategyNode}{Op\+Strategy\+Node}, \hyperlink{namespacetvm_1_1relay_a387f18e050d016c52ea6c4781e7cff6c}{Expr\+Node})
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classtvm_1_1Array}{Array}$<$ \hyperlink{classtvm_1_1relay_1_1OpSpecialization}{Op\+Specialization} $>$ \hyperlink{classtvm_1_1relay_1_1OpStrategyNode_a32d7610bdfd32c485b5f579daac2aeff}{specializations}
+\begin{DoxyCompactList}\small\item\em List of operator specializations. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static constexpr const char $\ast$ \hyperlink{classtvm_1_1relay_1_1OpStrategyNode_a6b7991cb900e90a42f889359dd7956a0}{\+\_\+type\+\_\+key} = \char`\"{}relay.\+Op\+Strategy\char`\"{}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Operator strategy to choose implementation. 
+
+\subsection{Member Function Documentation}
+\index{tvm\+::relay\+::\+Op\+Strategy\+Node@{tvm\+::relay\+::\+Op\+Strategy\+Node}!T\+V\+M\+\_\+\+D\+E\+C\+L\+A\+R\+E\+\_\+\+F\+I\+N\+A\+L\+\_\+\+O\+B\+J\+E\+C\+T\+\_\+\+I\+N\+FO@{T\+V\+M\+\_\+\+D\+E\+C\+L\+A\+R\+E\+\_\+\+F\+I\+N\+A\+L\+\_\+\+O\+B\+J\+E\+C\+T\+\_\+\+I\+N\+FO}}
+\index{T\+V\+M\+\_\+\+D\+E\+C\+L\+A\+R\+E\+\_\+\+F\+I\+N\+A\+L\+\_\+\+O\+B\+J\+E\+C\+T\+\_\+\+I\+N\+FO@{T\+V\+M\+\_\+\+D\+E\+C\+L\+A\+R\+E\+\_\+\+F\+I\+N\+A\+L\+\_\+\+O\+B\+J\+E\+C\+T\+\_\+\+I\+N\+FO}!tvm\+::relay\+::\+Op\+Strategy\+Node@{tvm\+::relay\+::\+Op\+Strategy\+Node}}
+\subsubsection[{\texorpdfstring{T\+V\+M\+\_\+\+D\+E\+C\+L\+A\+R\+E\+\_\+\+F\+I\+N\+A\+L\+\_\+\+O\+B\+J\+E\+C\+T\+\_\+\+I\+N\+F\+O(\+Op\+Strategy\+Node, Expr\+Node)}{TVM_DECLARE_FINAL_OBJECT_INFO(OpStrategyNode, ExprNode)}}]{\setlength{\rightskip}{0pt plus 5cm}tvm\+::relay\+::\+Op\+Strategy\+Node\+::\+T\+V\+M\+\_\+\+D\+E\+C\+L\+A\+R\+E\+\_\+\+F\+I\+N\+A\+L\+\_\+\+O\+B\+J\+E\+C\+T\+\_\+\+I\+N\+FO (
+\begin{DoxyParamCaption}
+\item[{{\bf Op\+Strategy\+Node}}]{, }
+\item[{{\bf Expr\+Node}}]{}
+\end{DoxyParamCaption}
+)}\hypertarget{classtvm_1_1relay_1_1OpStrategyNode_a3cb5dde9cf9375f779b95d941b774f84}{}\label{classtvm_1_1relay_1_1OpStrategyNode_a3cb5dde9cf9375f779b95d941b774f84}
+\index{tvm\+::relay\+::\+Op\+Strategy\+Node@{tvm\+::relay\+::\+Op\+Strategy\+Node}!Visit\+Attrs@{Visit\+Attrs}}
+\index{Visit\+Attrs@{Visit\+Attrs}!tvm\+::relay\+::\+Op\+Strategy\+Node@{tvm\+::relay\+::\+Op\+Strategy\+Node}}
+\subsubsection[{\texorpdfstring{Visit\+Attrs(tvm\+::\+Attr\+Visitor $\ast$v)}{VisitAttrs(tvm::AttrVisitor *v)}}]{\setlength{\rightskip}{0pt plus 5cm}void tvm\+::relay\+::\+Op\+Strategy\+Node\+::\+Visit\+Attrs (
+\begin{DoxyParamCaption}
+\item[{{\bf tvm\+::\+Attr\+Visitor} $\ast$}]{v}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classtvm_1_1relay_1_1OpStrategyNode_a9e3048aafa0fe847cb160fd8825f5220}{}\label{classtvm_1_1relay_1_1OpStrategyNode_a9e3048aafa0fe847cb160fd8825f5220}
+
+
+\subsection{Member Data Documentation}
+\index{tvm\+::relay\+::\+Op\+Strategy\+Node@{tvm\+::relay\+::\+Op\+Strategy\+Node}!\+\_\+type\+\_\+key@{\+\_\+type\+\_\+key}}
+\index{\+\_\+type\+\_\+key@{\+\_\+type\+\_\+key}!tvm\+::relay\+::\+Op\+Strategy\+Node@{tvm\+::relay\+::\+Op\+Strategy\+Node}}
+\subsubsection[{\texorpdfstring{\+\_\+type\+\_\+key}{_type_key}}]{\setlength{\rightskip}{0pt plus 5cm}constexpr const char$\ast$ tvm\+::relay\+::\+Op\+Strategy\+Node\+::\+\_\+type\+\_\+key = \char`\"{}relay.\+Op\+Strategy\char`\"{}\hspace{0.3cm}{\ttfamily [static]}}\hypertarget{classtvm_1_1relay_1_1OpStrategyNode_a6b7991cb900e90a42f889359dd7956a0}{}\label{classtvm_1_1relay_1_1OpStrategyNode_a6b7991cb900e90a42f889359dd7956a0}
+\index{tvm\+::relay\+::\+Op\+Strategy\+Node@{tvm\+::relay\+::\+Op\+Strategy\+Node}!specializations@{specializations}}
+\index{specializations@{specializations}!tvm\+::relay\+::\+Op\+Strategy\+Node@{tvm\+::relay\+::\+Op\+Strategy\+Node}}
+\subsubsection[{\texorpdfstring{specializations}{specializations}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Array}$<${\bf Op\+Specialization}$>$ tvm\+::relay\+::\+Op\+Strategy\+Node\+::specializations}\hypertarget{classtvm_1_1relay_1_1OpStrategyNode_a32d7610bdfd32c485b5f579daac2aeff}{}\label{classtvm_1_1relay_1_1OpStrategyNode_a32d7610bdfd32c485b5f579daac2aeff}
+
+
+List of operator specializations. 
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+include/tvm/relay/\hyperlink{op__strategy_8h}{op\+\_\+strategy.\+h}\end{DoxyCompactItemize}

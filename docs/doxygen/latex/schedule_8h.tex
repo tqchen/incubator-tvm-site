@@ -1,0 +1,89 @@
+\hypertarget{schedule_8h}{}\section{include/tvm/te/schedule.h File Reference}
+\label{schedule_8h}\index{include/tvm/te/schedule.\+h@{include/tvm/te/schedule.\+h}}
+
+
+Define a schedule.  
+
+
+{\ttfamily \#include $<$tvm/tir/expr.\+h$>$}\\*
+{\ttfamily \#include $<$tvm/te/tensor.\+h$>$}\\*
+{\ttfamily \#include $<$tvm/te/tensor\+\_\+intrin.\+h$>$}\\*
+{\ttfamily \#include $<$tvm/support/with.\+h$>$}\\*
+{\ttfamily \#include $<$string$>$}\\*
+{\ttfamily \#include $<$unordered\+\_\+map$>$}\\*
+Include dependency graph for schedule.\+h\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{schedule_8h__incl}
+\end{center}
+\end{figure}
+This graph shows which files directly or indirectly include this file\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{schedule_8h__dep__incl}
+\end{center}
+\end{figure}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \hyperlink{classtvm_1_1te_1_1Stage}{tvm\+::te\+::\+Stage}
+\begin{DoxyCompactList}\small\item\em \hyperlink{classtvm_1_1te_1_1Stage}{Stage}, contains scheduling for a stage of computation. \end{DoxyCompactList}\item 
+class \hyperlink{classtvm_1_1te_1_1Schedule}{tvm\+::te\+::\+Schedule}
+\begin{DoxyCompactList}\small\item\em Global schedule container For operations and all the operations they depend on. The schedule per \hyperlink{classtvm_1_1te_1_1Operation}{Operation} is named as stage. \end{DoxyCompactList}\item 
+class \hyperlink{classtvm_1_1te_1_1IterVarRelation}{tvm\+::te\+::\+Iter\+Var\+Relation}
+\begin{DoxyCompactList}\small\item\em The schedule relation between Iter\+Vars can be Split, Fuse. \end{DoxyCompactList}\item 
+class \hyperlink{classtvm_1_1te_1_1IterVarAttr}{tvm\+::te\+::\+Iter\+Var\+Attr}
+\begin{DoxyCompactList}\small\item\em Additional scheduable attributes about Iter\+Var. \end{DoxyCompactList}\item 
+class \hyperlink{classtvm_1_1te_1_1StageNode}{tvm\+::te\+::\+Stage\+Node}
+\begin{DoxyCompactList}\small\item\em represents a stage. \end{DoxyCompactList}\item 
+class \hyperlink{classtvm_1_1te_1_1ScheduleNode}{tvm\+::te\+::\+Schedule\+Node}
+\begin{DoxyCompactList}\small\item\em node container for schedule \end{DoxyCompactList}\item 
+class \hyperlink{classtvm_1_1te_1_1IterVarAttrNode}{tvm\+::te\+::\+Iter\+Var\+Attr\+Node}
+\begin{DoxyCompactList}\small\item\em node container for Iter\+Var attr \end{DoxyCompactList}\item 
+class \hyperlink{classtvm_1_1te_1_1IterVarRelationNode}{tvm\+::te\+::\+Iter\+Var\+Relation\+Node}
+\begin{DoxyCompactList}\small\item\em base node of iteration var \end{DoxyCompactList}\item 
+class \hyperlink{classtvm_1_1te_1_1SplitNode}{tvm\+::te\+::\+Split\+Node}
+\begin{DoxyCompactList}\small\item\em Split the parent domain into product of outer and iter. \end{DoxyCompactList}\item 
+class \hyperlink{classtvm_1_1te_1_1FuseNode}{tvm\+::te\+::\+Fuse\+Node}
+\begin{DoxyCompactList}\small\item\em Fuse two domains into one domain. \end{DoxyCompactList}\item 
+class \hyperlink{classtvm_1_1te_1_1RebaseNode}{tvm\+::te\+::\+Rebase\+Node}
+\begin{DoxyCompactList}\small\item\em Rebase the iteration to make min to be 0. This is useful to normalize the \hyperlink{classtvm_1_1te_1_1Schedule}{Schedule} to make every leaf variable\textquotesingle{}s min to be 0. \end{DoxyCompactList}\item 
+class \hyperlink{classtvm_1_1te_1_1SingletonNode}{tvm\+::te\+::\+Singleton\+Node}
+\begin{DoxyCompactList}\small\item\em Singleton iterator \mbox{[}0, 1) \end{DoxyCompactList}\item 
+class \hyperlink{classtvm_1_1te_1_1SpecializedConditionNode}{tvm\+::te\+::\+Specialized\+Condition\+Node}
+\begin{DoxyCompactList}\small\item\em Container for specialization conditions. \end{DoxyCompactList}\item 
+class \hyperlink{classtvm_1_1te_1_1SpecializedCondition}{tvm\+::te\+::\+Specialized\+Condition}
+\begin{DoxyCompactList}\small\item\em Specialized condition to enable op specialization. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Namespaces}
+\begin{DoxyCompactItemize}
+\item 
+ \hyperlink{namespacetvm}{tvm}
+\item 
+ \hyperlink{namespacetvm_1_1te}{tvm\+::te}
+\begin{DoxyCompactList}\small\item\em \hyperlink{classtvm_1_1te_1_1Tensor}{Tensor} expression language D\+SL. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Enumerations}
+\begin{DoxyCompactItemize}
+\item 
+enum \hyperlink{namespacetvm_1_1te_a7693a274748dadfa2eaa35f5ce9008a5}{tvm\+::te\+::\+Attach\+Type} \+: int \{ \\*
+\hyperlink{namespacetvm_1_1te_a7693a274748dadfa2eaa35f5ce9008a5aac738a0b856206b6347a1f4899f31bfa}{tvm\+::te\+::k\+Group\+Root} = 1, 
+\hyperlink{namespacetvm_1_1te_a7693a274748dadfa2eaa35f5ce9008a5a6472eda35fc70bd00e3ce3b3ce3047fc}{tvm\+::te\+::k\+Inline} = 2, 
+\hyperlink{namespacetvm_1_1te_a7693a274748dadfa2eaa35f5ce9008a5af4fc945dfabb70f21d7341f8ee0b3cf3}{tvm\+::te\+::k\+Inlined\+Already} = 3, 
+\hyperlink{namespacetvm_1_1te_a7693a274748dadfa2eaa35f5ce9008a5a672a7857e6a2ba34f56bc81e66f4133e}{tvm\+::te\+::k\+Scope} = 4, 
+\\*
+\hyperlink{namespacetvm_1_1te_a7693a274748dadfa2eaa35f5ce9008a5a502d1f34c7923709e22688c3a1514e80}{tvm\+::te\+::k\+Scan\+Update} = 5
+ \}\begin{DoxyCompactList}\small\item\em the attachment type \end{DoxyCompactList}
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+Schedule \hyperlink{namespacetvm_1_1te_a485034766309df280239e0994913b34b}{tvm\+::te\+::create\+\_\+schedule} (Array$<$ Operation $>$ ops)
+\begin{DoxyCompactList}\small\item\em Create a schedule for array of ops(and their dependencies). \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Define a schedule. 
+

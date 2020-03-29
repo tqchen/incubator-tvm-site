@@ -1,0 +1,88 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="classtvm_1_1relay_1_1Id" kind="class" language="C++" prot="public">
+    <compoundname>tvm::relay::Id</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">ObjectRef</basecompoundref>
+    <includes refid="base_8h" local="no">base.h</includes>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classtvm_1_1relay_1_1Id_1a3db94e0ac14a61cb40af26416264e39d" prot="public" static="no" const="no" explicit="yes" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>tvm::relay::Id::Id</definition>
+        <argsstring>(std::string name_hint)</argsstring>
+        <name>Id</name>
+        <param>
+          <type>std::string</type>
+          <declname>name_hint</declname>
+        </param>
+        <briefdescription>
+<para>The constructor. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>name_hint</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The name of the variable. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/relay/base.h" line="110" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classtvm_1_1relay_1_1Id_1aa2bcee89d16f90c169c258310865519b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>tvm::relay::Id::TVM_DEFINE_OBJECT_REF_METHODS</definition>
+        <argsstring>(Id, ObjectRef, IdNode)</argsstring>
+        <name>TVM_DEFINE_OBJECT_REF_METHODS</name>
+        <param>
+          <type><ref refid="classtvm_1_1relay_1_1Id" kindref="compound">Id</ref></type>
+        </param>
+        <param>
+          <type>ObjectRef</type>
+        </param>
+        <param>
+          <type><ref refid="classtvm_1_1relay_1_1IdNode" kindref="compound">IdNode</ref></type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/relay/base.h" line="112" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="5290">
+        <label>ObjectRef</label>
+      </node>
+      <node id="5289">
+        <label>tvm::relay::Id</label>
+        <link refid="classtvm_1_1relay_1_1Id"/>
+        <childnode refid="5290" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="5292">
+        <label>ObjectRef</label>
+      </node>
+      <node id="5291">
+        <label>tvm::relay::Id</label>
+        <link refid="classtvm_1_1relay_1_1Id"/>
+        <childnode refid="5292" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="include/tvm/relay/base.h" line="104" column="1" bodyfile="include/tvm/relay/base.h" bodystart="104" bodyend="113"/>
+    <listofallmembers>
+      <member refid="classtvm_1_1relay_1_1Id_1a3db94e0ac14a61cb40af26416264e39d" prot="public" virt="non-virtual"><scope>tvm::relay::Id</scope><name>Id</name></member>
+      <member refid="classtvm_1_1relay_1_1Id_1aa2bcee89d16f90c169c258310865519b" prot="public" virt="non-virtual"><scope>tvm::relay::Id</scope><name>TVM_DEFINE_OBJECT_REF_METHODS</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

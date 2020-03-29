@@ -1,0 +1,92 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="classtvm_1_1ArrayNode" kind="class" language="C++" prot="public">
+    <compoundname>tvm::ArrayNode</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">Object</basecompoundref>
+    <includes refid="node_2container_8h" local="no">container.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="classtvm_1_1ArrayNode_1a4bb8934345a35142365c296caac04e8f" prot="public" static="no" mutable="no">
+        <type>std::vector&lt; ObjectRef &gt;</type>
+        <definition>std::vector&lt;ObjectRef&gt; tvm::ArrayNode::data</definition>
+        <argsstring></argsstring>
+        <name>data</name>
+        <briefdescription>
+<para>the data content </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/node/container.h" line="50" column="1" bodyfile="include/tvm/node/container.h" bodystart="50" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-attrib">
+      <memberdef kind="variable" id="classtvm_1_1ArrayNode_1af9cb38fb40d44e3351abb28c4042c43c" prot="public" static="yes" mutable="no">
+        <type>constexpr const char *</type>
+        <definition>constexpr const char* tvm::ArrayNode::_type_key</definition>
+        <argsstring></argsstring>
+        <name>_type_key</name>
+        <initializer>= &quot;Array&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/node/container.h" line="52" column="1" bodyfile="include/tvm/node/container.h" bodystart="52" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classtvm_1_1ArrayNode_1a70f730ac25dc44057db0fec77b58b297" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>tvm::ArrayNode::TVM_DECLARE_FINAL_OBJECT_INFO</definition>
+        <argsstring>(ArrayNode, Object)</argsstring>
+        <name>TVM_DECLARE_FINAL_OBJECT_INFO</name>
+        <param>
+          <type><ref refid="classtvm_1_1ArrayNode" kindref="compound">ArrayNode</ref></type>
+        </param>
+        <param>
+          <type>Object</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/node/container.h" line="53" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>array node content in array </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="3934">
+        <label>Object</label>
+      </node>
+      <node id="3933">
+        <label>tvm::ArrayNode</label>
+        <link refid="classtvm_1_1ArrayNode"/>
+        <childnode refid="3934" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="3936">
+        <label>Object</label>
+      </node>
+      <node id="3935">
+        <label>tvm::ArrayNode</label>
+        <link refid="classtvm_1_1ArrayNode"/>
+        <childnode refid="3936" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="include/tvm/node/container.h" line="47" column="1" bodyfile="include/tvm/node/container.h" bodystart="47" bodyend="54"/>
+    <listofallmembers>
+      <member refid="classtvm_1_1ArrayNode_1af9cb38fb40d44e3351abb28c4042c43c" prot="public" virt="non-virtual"><scope>tvm::ArrayNode</scope><name>_type_key</name></member>
+      <member refid="classtvm_1_1ArrayNode_1a4bb8934345a35142365c296caac04e8f" prot="public" virt="non-virtual"><scope>tvm::ArrayNode</scope><name>data</name></member>
+      <member refid="classtvm_1_1ArrayNode_1a70f730ac25dc44057db0fec77b58b297" prot="public" virt="non-virtual"><scope>tvm::ArrayNode</scope><name>TVM_DECLARE_FINAL_OBJECT_INFO</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

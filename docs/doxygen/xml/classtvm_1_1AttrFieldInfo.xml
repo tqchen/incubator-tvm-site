@@ -1,0 +1,62 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="classtvm_1_1AttrFieldInfo" kind="class" language="C++" prot="public">
+    <compoundname>tvm::AttrFieldInfo</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">ObjectRef</basecompoundref>
+    <includes refid="ir_2attrs_8h" local="no">attrs.h</includes>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classtvm_1_1AttrFieldInfo_1af897e77cf019cd43014025ac0d2a5a37" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>tvm::AttrFieldInfo::TVM_DEFINE_OBJECT_REF_METHODS</definition>
+        <argsstring>(AttrFieldInfo, ObjectRef, AttrFieldInfoNode)</argsstring>
+        <name>TVM_DEFINE_OBJECT_REF_METHODS</name>
+        <param>
+          <type><ref refid="classtvm_1_1AttrFieldInfo" kindref="compound">AttrFieldInfo</ref></type>
+        </param>
+        <param>
+          <type>ObjectRef</type>
+        </param>
+        <param>
+          <type><ref refid="classtvm_1_1AttrFieldInfoNode" kindref="compound">AttrFieldInfoNode</ref></type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/ir/attrs.h" line="131" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para><ref refid="classtvm_1_1AttrFieldInfo" kindref="compound">AttrFieldInfo</ref>. </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="3960">
+        <label>ObjectRef</label>
+      </node>
+      <node id="3959">
+        <label>tvm::AttrFieldInfo</label>
+        <link refid="classtvm_1_1AttrFieldInfo"/>
+        <childnode refid="3960" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="3962">
+        <label>ObjectRef</label>
+      </node>
+      <node id="3961">
+        <label>tvm::AttrFieldInfo</label>
+        <link refid="classtvm_1_1AttrFieldInfo"/>
+        <childnode refid="3962" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="include/tvm/ir/attrs.h" line="129" column="1" bodyfile="include/tvm/ir/attrs.h" bodystart="129" bodyend="132"/>
+    <listofallmembers>
+      <member refid="classtvm_1_1AttrFieldInfo_1af897e77cf019cd43014025ac0d2a5a37" prot="public" virt="non-virtual"><scope>tvm::AttrFieldInfo</scope><name>TVM_DEFINE_OBJECT_REF_METHODS</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

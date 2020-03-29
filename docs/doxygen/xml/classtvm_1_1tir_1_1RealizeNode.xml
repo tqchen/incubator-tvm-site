@@ -1,0 +1,327 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="classtvm_1_1tir_1_1RealizeNode" kind="class" language="C++" prot="public">
+    <compoundname>tvm::tir::RealizeNode</compoundname>
+    <basecompoundref refid="classtvm_1_1tir_1_1StmtNode" prot="public" virt="non-virtual">tvm::tir::StmtNode</basecompoundref>
+    <includes refid="stmt_8h" local="no">stmt.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="classtvm_1_1tir_1_1RealizeNode_1ac74657f89ed01d27c42a123aa9c4e1d0" prot="public" static="no" mutable="no">
+        <type><ref refid="classtvm_1_1tir_1_1FunctionRef" kindref="compound">FunctionRef</ref></type>
+        <definition>FunctionRef tvm::tir::RealizeNode::func</definition>
+        <argsstring></argsstring>
+        <name>func</name>
+        <briefdescription>
+<para>The function to be realized. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/tir/stmt.h" line="428" column="1" bodyfile="include/tvm/tir/stmt.h" bodystart="428" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classtvm_1_1tir_1_1RealizeNode_1ab126f401e72fe4b9b1ceee3a9dffaaef" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int tvm::tir::RealizeNode::value_index</definition>
+        <argsstring></argsstring>
+        <name>value_index</name>
+        <briefdescription>
+<para>The output value index if func&apos;s value is a tuple. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/tir/stmt.h" line="430" column="1" bodyfile="include/tvm/tir/stmt.h" bodystart="430" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classtvm_1_1tir_1_1RealizeNode_1a94cf509b9b13b5975fde6e04abf15314" prot="public" static="no" mutable="no">
+        <type><ref refid="namespacetvm_1a41918af1a1dc386388639a9d3ad06c5d" kindref="member">DataType</ref></type>
+        <definition>DataType tvm::tir::RealizeNode::dtype</definition>
+        <argsstring></argsstring>
+        <name>dtype</name>
+        <briefdescription>
+<para>The data type of the array. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/tir/stmt.h" line="432" column="1" bodyfile="include/tvm/tir/stmt.h" bodystart="432" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classtvm_1_1tir_1_1RealizeNode_1a5e2e8544a255e076311ff44eee46b9c7" prot="public" static="no" mutable="no">
+        <type><ref refid="namespacetvm_1_1tir_1a8277e2a3d81a80a4776705673df51e0a" kindref="member">Region</ref></type>
+        <definition>Region tvm::tir::RealizeNode::bounds</definition>
+        <argsstring></argsstring>
+        <name>bounds</name>
+        <briefdescription>
+<para>Bounds to be realized. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/tir/stmt.h" line="434" column="1" bodyfile="include/tvm/tir/stmt.h" bodystart="434" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classtvm_1_1tir_1_1RealizeNode_1a19b83a431ad0ac0d5c361b359f0bb0fa" prot="public" static="no" mutable="no">
+        <type><ref refid="classtvm_1_1PrimExpr" kindref="compound">PrimExpr</ref></type>
+        <definition>PrimExpr tvm::tir::RealizeNode::condition</definition>
+        <argsstring></argsstring>
+        <name>condition</name>
+        <briefdescription>
+<para>Only realize if condition holds. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/tir/stmt.h" line="436" column="1" bodyfile="include/tvm/tir/stmt.h" bodystart="436" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classtvm_1_1tir_1_1RealizeNode_1aa8a89873f73042f8784913b7f088297e" prot="public" static="no" mutable="no">
+        <type><ref refid="classtvm_1_1tir_1_1Stmt" kindref="compound">Stmt</ref></type>
+        <definition>Stmt tvm::tir::RealizeNode::body</definition>
+        <argsstring></argsstring>
+        <name>body</name>
+        <briefdescription>
+<para>The body of realization. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/tir/stmt.h" line="438" column="1" bodyfile="include/tvm/tir/stmt.h" bodystart="438" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-attrib">
+      <memberdef kind="variable" id="classtvm_1_1tir_1_1RealizeNode_1ad65cce50b516f20690ae7092e6b35c69" prot="public" static="yes" mutable="no">
+        <type>constexpr const char *</type>
+        <definition>constexpr const char* tvm::tir::RealizeNode::_type_key</definition>
+        <argsstring></argsstring>
+        <name>_type_key</name>
+        <initializer>= &quot;Realize&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/tir/stmt.h" line="475" column="1" bodyfile="include/tvm/tir/stmt.h" bodystart="475" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classtvm_1_1tir_1_1RealizeNode_1a81eb59b0034a600c759d231cb23a1d13" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void tvm::tir::RealizeNode::VisitAttrs</definition>
+        <argsstring>(AttrVisitor *v)</argsstring>
+        <name>VisitAttrs</name>
+        <param>
+          <type><ref refid="classtvm_1_1AttrVisitor" kindref="compound">AttrVisitor</ref> *</type>
+          <declname>v</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/tir/stmt.h" line="440" column="1" bodyfile="include/tvm/tir/stmt.h" bodystart="440" bodyend="447"/>
+      </memberdef>
+      <memberdef kind="function" id="classtvm_1_1tir_1_1RealizeNode_1a7b03b82b28f358f5cf41a0a846064cd7" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool tvm::tir::RealizeNode::SEqualReduce</definition>
+        <argsstring>(const RealizeNode *other, SEqualReducer equal) const </argsstring>
+        <name>SEqualReduce</name>
+        <param>
+          <type>const <ref refid="classtvm_1_1tir_1_1RealizeNode" kindref="compound">RealizeNode</ref> *</type>
+          <declname>other</declname>
+        </param>
+        <param>
+          <type><ref refid="classtvm_1_1SEqualReducer" kindref="compound">SEqualReducer</ref></type>
+          <declname>equal</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/tir/stmt.h" line="456" column="1" bodyfile="include/tvm/tir/stmt.h" bodystart="456" bodyend="464"/>
+      </memberdef>
+      <memberdef kind="function" id="classtvm_1_1tir_1_1RealizeNode_1a579bb23d02358538a7036e2618758bdc" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void tvm::tir::RealizeNode::SHashReduce</definition>
+        <argsstring>(SHashReducer hash_reduce) const </argsstring>
+        <name>SHashReduce</name>
+        <param>
+          <type><ref refid="classtvm_1_1SHashReducer" kindref="compound">SHashReducer</ref></type>
+          <declname>hash_reduce</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/tir/stmt.h" line="466" column="1" bodyfile="include/tvm/tir/stmt.h" bodystart="466" bodyend="473"/>
+      </memberdef>
+      <memberdef kind="function" id="classtvm_1_1tir_1_1RealizeNode_1ae71417374f0059376826f6ad13d60e1c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>tvm::tir::RealizeNode::TVM_DECLARE_FINAL_OBJECT_INFO</definition>
+        <argsstring>(RealizeNode, StmtNode)</argsstring>
+        <name>TVM_DECLARE_FINAL_OBJECT_INFO</name>
+        <param>
+          <type><ref refid="classtvm_1_1tir_1_1RealizeNode" kindref="compound">RealizeNode</ref></type>
+        </param>
+        <param>
+          <type><ref refid="classtvm_1_1tir_1_1StmtNode" kindref="compound">StmtNode</ref></type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/tir/stmt.h" line="476" column="1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="classtvm_1_1tir_1_1RealizeNode_1aa64ed79c18690a0e76f44eb0d736074b" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classtvm_1_1tir_1_1Stmt" kindref="compound">Stmt</ref></type>
+        <definition>static Stmt tvm::tir::RealizeNode::make</definition>
+        <argsstring>(FunctionRef func, int value_index, DataType dtype, Region bounds, PrimExpr condition, Stmt body)</argsstring>
+        <name>make</name>
+        <param>
+          <type><ref refid="classtvm_1_1tir_1_1FunctionRef" kindref="compound">FunctionRef</ref></type>
+          <declname>func</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>value_index</declname>
+        </param>
+        <param>
+          <type><ref refid="namespacetvm_1a41918af1a1dc386388639a9d3ad06c5d" kindref="member">DataType</ref></type>
+          <declname>dtype</declname>
+        </param>
+        <param>
+          <type><ref refid="namespacetvm_1_1tir_1a8277e2a3d81a80a4776705673df51e0a" kindref="member">Region</ref></type>
+          <declname>bounds</declname>
+        </param>
+        <param>
+          <type><ref refid="classtvm_1_1PrimExpr" kindref="compound">PrimExpr</ref></type>
+          <declname>condition</declname>
+        </param>
+        <param>
+          <type><ref refid="classtvm_1_1tir_1_1Stmt" kindref="compound">Stmt</ref></type>
+          <declname>body</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/tir/stmt.h" line="449" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Annotate the bounds where func need to be written and read in body. We will need to allocate space for the corresponding regions. </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="6382">
+        <label>tvm::tir::RealizeNode</label>
+        <link refid="classtvm_1_1tir_1_1RealizeNode"/>
+        <childnode refid="6383" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="6384">
+        <label>Object</label>
+      </node>
+      <node id="6383">
+        <label>tvm::tir::StmtNode</label>
+        <link refid="classtvm_1_1tir_1_1StmtNode"/>
+        <childnode refid="6384" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="6389">
+        <label>ObjectRef</label>
+      </node>
+      <node id="6388">
+        <label>tvm::tir::FunctionRef</label>
+        <link refid="classtvm_1_1tir_1_1FunctionRef"/>
+        <childnode refid="6389" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="6385">
+        <label>tvm::tir::RealizeNode</label>
+        <link refid="classtvm_1_1tir_1_1RealizeNode"/>
+        <childnode refid="6386" relation="public-inheritance">
+        </childnode>
+        <childnode refid="6388" relation="usage">
+          <edgelabel>+func</edgelabel>
+        </childnode>
+        <childnode refid="6390" relation="usage">
+          <edgelabel>+bounds</edgelabel>
+        </childnode>
+        <childnode refid="6391" relation="usage">
+          <edgelabel>+condition</edgelabel>
+        </childnode>
+        <childnode refid="6393" relation="usage">
+          <edgelabel>+body</edgelabel>
+        </childnode>
+        <childnode refid="6394" relation="usage">
+          <edgelabel>+dtype</edgelabel>
+        </childnode>
+      </node>
+      <node id="6390">
+        <label>tvm::Array&lt; Range &gt;</label>
+        <link refid="classtvm_1_1Array"/>
+        <childnode refid="6389" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="6387">
+        <label>Object</label>
+      </node>
+      <node id="6391">
+        <label>tvm::PrimExpr</label>
+        <link refid="classtvm_1_1PrimExpr"/>
+        <childnode refid="6392" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="6393">
+        <label>tvm::tir::Stmt</label>
+        <link refid="classtvm_1_1tir_1_1Stmt"/>
+        <childnode refid="6389" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="6394">
+        <label>tvm::runtime::DataType</label>
+        <link refid="classtvm_1_1runtime_1_1DataType"/>
+      </node>
+      <node id="6392">
+        <label>tvm::BaseExpr</label>
+        <link refid="classtvm_1_1BaseExpr"/>
+        <childnode refid="6389" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="6386">
+        <label>tvm::tir::StmtNode</label>
+        <link refid="classtvm_1_1tir_1_1StmtNode"/>
+        <childnode refid="6387" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="include/tvm/tir/stmt.h" line="425" column="1" bodyfile="include/tvm/tir/stmt.h" bodystart="425" bodyend="477"/>
+    <listofallmembers>
+      <member refid="classtvm_1_1tir_1_1StmtNode_1a463ce5a124a6c222706888122bb44865" prot="public" virt="non-virtual"><scope>tvm::tir::RealizeNode</scope><name>_type_has_method_sequal_reduce</name></member>
+      <member refid="classtvm_1_1tir_1_1StmtNode_1ab7e026e32383e67e620719b025e00056" prot="public" virt="non-virtual"><scope>tvm::tir::RealizeNode</scope><name>_type_has_method_shash_reduce</name></member>
+      <member refid="classtvm_1_1tir_1_1RealizeNode_1ad65cce50b516f20690ae7092e6b35c69" prot="public" virt="non-virtual"><scope>tvm::tir::RealizeNode</scope><name>_type_key</name></member>
+      <member refid="classtvm_1_1tir_1_1RealizeNode_1aa8a89873f73042f8784913b7f088297e" prot="public" virt="non-virtual"><scope>tvm::tir::RealizeNode</scope><name>body</name></member>
+      <member refid="classtvm_1_1tir_1_1RealizeNode_1a5e2e8544a255e076311ff44eee46b9c7" prot="public" virt="non-virtual"><scope>tvm::tir::RealizeNode</scope><name>bounds</name></member>
+      <member refid="classtvm_1_1tir_1_1RealizeNode_1a19b83a431ad0ac0d5c361b359f0bb0fa" prot="public" virt="non-virtual"><scope>tvm::tir::RealizeNode</scope><name>condition</name></member>
+      <member refid="classtvm_1_1tir_1_1RealizeNode_1a94cf509b9b13b5975fde6e04abf15314" prot="public" virt="non-virtual"><scope>tvm::tir::RealizeNode</scope><name>dtype</name></member>
+      <member refid="classtvm_1_1tir_1_1RealizeNode_1ac74657f89ed01d27c42a123aa9c4e1d0" prot="public" virt="non-virtual"><scope>tvm::tir::RealizeNode</scope><name>func</name></member>
+      <member refid="classtvm_1_1tir_1_1RealizeNode_1aa64ed79c18690a0e76f44eb0d736074b" prot="public" virt="non-virtual"><scope>tvm::tir::RealizeNode</scope><name>make</name></member>
+      <member refid="classtvm_1_1tir_1_1RealizeNode_1a7b03b82b28f358f5cf41a0a846064cd7" prot="public" virt="non-virtual"><scope>tvm::tir::RealizeNode</scope><name>SEqualReduce</name></member>
+      <member refid="classtvm_1_1tir_1_1RealizeNode_1a579bb23d02358538a7036e2618758bdc" prot="public" virt="non-virtual"><scope>tvm::tir::RealizeNode</scope><name>SHashReduce</name></member>
+      <member refid="classtvm_1_1tir_1_1StmtNode_1ab4627fb1adbea88d4fe3a33679569421" prot="public" virt="non-virtual"><scope>tvm::tir::RealizeNode</scope><name>TVM_DECLARE_BASE_OBJECT_INFO</name></member>
+      <member refid="classtvm_1_1tir_1_1RealizeNode_1ae71417374f0059376826f6ad13d60e1c" prot="public" virt="non-virtual"><scope>tvm::tir::RealizeNode</scope><name>TVM_DECLARE_FINAL_OBJECT_INFO</name></member>
+      <member refid="classtvm_1_1tir_1_1RealizeNode_1ab126f401e72fe4b9b1ceee3a9dffaaef" prot="public" virt="non-virtual"><scope>tvm::tir::RealizeNode</scope><name>value_index</name></member>
+      <member refid="classtvm_1_1tir_1_1RealizeNode_1a81eb59b0034a600c759d231cb23a1d13" prot="public" virt="non-virtual"><scope>tvm::tir::RealizeNode</scope><name>VisitAttrs</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

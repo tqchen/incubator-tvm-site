@@ -1,0 +1,151 @@
+\hypertarget{classtvm_1_1tir_1_1LoadNode}{}\section{tvm\+:\+:tir\+:\+:Load\+Node Class Reference}
+\label{classtvm_1_1tir_1_1LoadNode}\index{tvm\+::tir\+::\+Load\+Node@{tvm\+::tir\+::\+Load\+Node}}
+
+
+Load the value from buffer\+\_\+var.  
+
+
+
+
+{\ttfamily \#include $<$expr.\+h$>$}
+
+
+
+Inheritance diagram for tvm\+:\+:tir\+:\+:Load\+Node\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{classtvm_1_1tir_1_1LoadNode__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for tvm\+:\+:tir\+:\+:Load\+Node\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classtvm_1_1tir_1_1LoadNode__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{classtvm_1_1tir_1_1LoadNode_acc4597323aba2761dafaf9a24bb4c0e4}{Visit\+Attrs} (\hyperlink{classtvm_1_1AttrVisitor}{Attr\+Visitor} $\ast$v)
+\item 
+bool \hyperlink{classtvm_1_1tir_1_1LoadNode_adbc71528163b57582a742224be58d15c}{S\+Equal\+Reduce} (const \hyperlink{classtvm_1_1tir_1_1LoadNode}{Load\+Node} $\ast$other, \hyperlink{classtvm_1_1SEqualReducer}{S\+Equal\+Reducer} equal) const 
+\item 
+void \hyperlink{classtvm_1_1tir_1_1LoadNode_afb58f71fc73372de53d375c03d178dba}{S\+Hash\+Reduce} (\hyperlink{classtvm_1_1SHashReducer}{S\+Hash\+Reducer} hash\+\_\+reduce) const 
+\item 
+\hyperlink{classtvm_1_1tir_1_1LoadNode_a4f612c08468ab2cf9e297b4e34a42d29}{T\+V\+M\+\_\+\+D\+E\+C\+L\+A\+R\+E\+\_\+\+F\+I\+N\+A\+L\+\_\+\+O\+B\+J\+E\+C\+T\+\_\+\+I\+N\+FO} (\hyperlink{classtvm_1_1tir_1_1LoadNode}{Load\+Node}, \hyperlink{classtvm_1_1PrimExprNode}{Prim\+Expr\+Node})
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \hyperlink{classtvm_1_1PrimExpr}{Prim\+Expr} \hyperlink{classtvm_1_1tir_1_1LoadNode_a2c16f2f89538c254b7fb4839537c65c3}{make} (\hyperlink{namespacetvm_a41918af1a1dc386388639a9d3ad06c5d}{Data\+Type} \hyperlink{classtvm_1_1PrimExprNode_a95af9234514ec5f11355db41524be7f9}{dtype}, \hyperlink{classtvm_1_1tir_1_1Var}{Var} \hyperlink{classtvm_1_1tir_1_1LoadNode_a2c69902eee069e824c822492068e6913}{buffer\+\_\+var}, \hyperlink{classtvm_1_1PrimExpr}{Prim\+Expr} \hyperlink{classtvm_1_1tir_1_1LoadNode_a0133c1a78c31b6eba24036a1f410cc1b}{index}, \hyperlink{classtvm_1_1PrimExpr}{Prim\+Expr} \hyperlink{classtvm_1_1tir_1_1LoadNode_af27e6b2dc6293dffaa93e992085be458}{predicate})
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classtvm_1_1tir_1_1Var}{Var} \hyperlink{classtvm_1_1tir_1_1LoadNode_a2c69902eee069e824c822492068e6913}{buffer\+\_\+var}
+\begin{DoxyCompactList}\small\item\em The buffer variable. \end{DoxyCompactList}\item 
+\hyperlink{classtvm_1_1PrimExpr}{Prim\+Expr} \hyperlink{classtvm_1_1tir_1_1LoadNode_a0133c1a78c31b6eba24036a1f410cc1b}{index}
+\begin{DoxyCompactList}\small\item\em The index locations to be loaded. \end{DoxyCompactList}\item 
+\hyperlink{classtvm_1_1PrimExpr}{Prim\+Expr} \hyperlink{classtvm_1_1tir_1_1LoadNode_af27e6b2dc6293dffaa93e992085be458}{predicate}
+\begin{DoxyCompactList}\small\item\em The predicate to mask which lanes would be loaded. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static constexpr const char $\ast$ \hyperlink{classtvm_1_1tir_1_1LoadNode_a4b031889ebb171c34e1f7b377df9c44e}{\+\_\+type\+\_\+key} = \char`\"{}Load\char`\"{}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Load the value from buffer\+\_\+var. 
+
+Equivalent to ((D\+Type$\ast$)buffer\+\_\+var)\mbox{[}index\mbox{]} where D\+Type is the type specified by type().element\+\_\+of().
+
+For example, if type = float32x3, then the load will corresponds to
+
+
+\begin{DoxyCode}
+\textcolor{keyword}{auto} buffer = \textcolor{keyword}{static\_cast<}\textcolor{keywordtype}{float}*\textcolor{keyword}{>}(\hyperlink{classtvm_1_1tir_1_1LoadNode_a2c69902eee069e824c822492068e6913}{buffer\_var});
+\textcolor{keyword}{auto} loaded\_val = float32x3(buffer[\hyperlink{classtvm_1_1tir_1_1LoadNode_a0133c1a78c31b6eba24036a1f410cc1b}{index}.v0], buffer[\hyperlink{classtvm_1_1tir_1_1LoadNode_a0133c1a78c31b6eba24036a1f410cc1b}{index}.v1], buffer[
+      \hyperlink{classtvm_1_1tir_1_1LoadNode_a0133c1a78c31b6eba24036a1f410cc1b}{index}.v2]);
+\end{DoxyCode}
+ 
+
+\subsection{Member Function Documentation}
+\index{tvm\+::tir\+::\+Load\+Node@{tvm\+::tir\+::\+Load\+Node}!make@{make}}
+\index{make@{make}!tvm\+::tir\+::\+Load\+Node@{tvm\+::tir\+::\+Load\+Node}}
+\subsubsection[{\texorpdfstring{make(\+Data\+Type dtype, Var buffer\+\_\+var, Prim\+Expr index, Prim\+Expr predicate)}{make(DataType dtype, Var buffer_var, PrimExpr index, PrimExpr predicate)}}]{\setlength{\rightskip}{0pt plus 5cm}static {\bf Prim\+Expr} tvm\+::tir\+::\+Load\+Node\+::make (
+\begin{DoxyParamCaption}
+\item[{{\bf Data\+Type}}]{dtype, }
+\item[{{\bf Var}}]{buffer\+\_\+var, }
+\item[{{\bf Prim\+Expr}}]{index, }
+\item[{{\bf Prim\+Expr}}]{predicate}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}\hypertarget{classtvm_1_1tir_1_1LoadNode_a2c16f2f89538c254b7fb4839537c65c3}{}\label{classtvm_1_1tir_1_1LoadNode_a2c16f2f89538c254b7fb4839537c65c3}
+\index{tvm\+::tir\+::\+Load\+Node@{tvm\+::tir\+::\+Load\+Node}!S\+Equal\+Reduce@{S\+Equal\+Reduce}}
+\index{S\+Equal\+Reduce@{S\+Equal\+Reduce}!tvm\+::tir\+::\+Load\+Node@{tvm\+::tir\+::\+Load\+Node}}
+\subsubsection[{\texorpdfstring{S\+Equal\+Reduce(const Load\+Node $\ast$other, S\+Equal\+Reducer equal) const }{SEqualReduce(const LoadNode *other, SEqualReducer equal) const }}]{\setlength{\rightskip}{0pt plus 5cm}bool tvm\+::tir\+::\+Load\+Node\+::\+S\+Equal\+Reduce (
+\begin{DoxyParamCaption}
+\item[{const {\bf Load\+Node} $\ast$}]{other, }
+\item[{{\bf S\+Equal\+Reducer}}]{equal}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classtvm_1_1tir_1_1LoadNode_adbc71528163b57582a742224be58d15c}{}\label{classtvm_1_1tir_1_1LoadNode_adbc71528163b57582a742224be58d15c}
+\index{tvm\+::tir\+::\+Load\+Node@{tvm\+::tir\+::\+Load\+Node}!S\+Hash\+Reduce@{S\+Hash\+Reduce}}
+\index{S\+Hash\+Reduce@{S\+Hash\+Reduce}!tvm\+::tir\+::\+Load\+Node@{tvm\+::tir\+::\+Load\+Node}}
+\subsubsection[{\texorpdfstring{S\+Hash\+Reduce(\+S\+Hash\+Reducer hash\+\_\+reduce) const }{SHashReduce(SHashReducer hash_reduce) const }}]{\setlength{\rightskip}{0pt plus 5cm}void tvm\+::tir\+::\+Load\+Node\+::\+S\+Hash\+Reduce (
+\begin{DoxyParamCaption}
+\item[{{\bf S\+Hash\+Reducer}}]{hash\+\_\+reduce}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classtvm_1_1tir_1_1LoadNode_afb58f71fc73372de53d375c03d178dba}{}\label{classtvm_1_1tir_1_1LoadNode_afb58f71fc73372de53d375c03d178dba}
+\index{tvm\+::tir\+::\+Load\+Node@{tvm\+::tir\+::\+Load\+Node}!T\+V\+M\+\_\+\+D\+E\+C\+L\+A\+R\+E\+\_\+\+F\+I\+N\+A\+L\+\_\+\+O\+B\+J\+E\+C\+T\+\_\+\+I\+N\+FO@{T\+V\+M\+\_\+\+D\+E\+C\+L\+A\+R\+E\+\_\+\+F\+I\+N\+A\+L\+\_\+\+O\+B\+J\+E\+C\+T\+\_\+\+I\+N\+FO}}
+\index{T\+V\+M\+\_\+\+D\+E\+C\+L\+A\+R\+E\+\_\+\+F\+I\+N\+A\+L\+\_\+\+O\+B\+J\+E\+C\+T\+\_\+\+I\+N\+FO@{T\+V\+M\+\_\+\+D\+E\+C\+L\+A\+R\+E\+\_\+\+F\+I\+N\+A\+L\+\_\+\+O\+B\+J\+E\+C\+T\+\_\+\+I\+N\+FO}!tvm\+::tir\+::\+Load\+Node@{tvm\+::tir\+::\+Load\+Node}}
+\subsubsection[{\texorpdfstring{T\+V\+M\+\_\+\+D\+E\+C\+L\+A\+R\+E\+\_\+\+F\+I\+N\+A\+L\+\_\+\+O\+B\+J\+E\+C\+T\+\_\+\+I\+N\+F\+O(\+Load\+Node, Prim\+Expr\+Node)}{TVM_DECLARE_FINAL_OBJECT_INFO(LoadNode, PrimExprNode)}}]{\setlength{\rightskip}{0pt plus 5cm}tvm\+::tir\+::\+Load\+Node\+::\+T\+V\+M\+\_\+\+D\+E\+C\+L\+A\+R\+E\+\_\+\+F\+I\+N\+A\+L\+\_\+\+O\+B\+J\+E\+C\+T\+\_\+\+I\+N\+FO (
+\begin{DoxyParamCaption}
+\item[{{\bf Load\+Node}}]{, }
+\item[{{\bf Prim\+Expr\+Node}}]{}
+\end{DoxyParamCaption}
+)}\hypertarget{classtvm_1_1tir_1_1LoadNode_a4f612c08468ab2cf9e297b4e34a42d29}{}\label{classtvm_1_1tir_1_1LoadNode_a4f612c08468ab2cf9e297b4e34a42d29}
+\index{tvm\+::tir\+::\+Load\+Node@{tvm\+::tir\+::\+Load\+Node}!Visit\+Attrs@{Visit\+Attrs}}
+\index{Visit\+Attrs@{Visit\+Attrs}!tvm\+::tir\+::\+Load\+Node@{tvm\+::tir\+::\+Load\+Node}}
+\subsubsection[{\texorpdfstring{Visit\+Attrs(\+Attr\+Visitor $\ast$v)}{VisitAttrs(AttrVisitor *v)}}]{\setlength{\rightskip}{0pt plus 5cm}void tvm\+::tir\+::\+Load\+Node\+::\+Visit\+Attrs (
+\begin{DoxyParamCaption}
+\item[{{\bf Attr\+Visitor} $\ast$}]{v}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classtvm_1_1tir_1_1LoadNode_acc4597323aba2761dafaf9a24bb4c0e4}{}\label{classtvm_1_1tir_1_1LoadNode_acc4597323aba2761dafaf9a24bb4c0e4}
+
+
+\subsection{Member Data Documentation}
+\index{tvm\+::tir\+::\+Load\+Node@{tvm\+::tir\+::\+Load\+Node}!\+\_\+type\+\_\+key@{\+\_\+type\+\_\+key}}
+\index{\+\_\+type\+\_\+key@{\+\_\+type\+\_\+key}!tvm\+::tir\+::\+Load\+Node@{tvm\+::tir\+::\+Load\+Node}}
+\subsubsection[{\texorpdfstring{\+\_\+type\+\_\+key}{_type_key}}]{\setlength{\rightskip}{0pt plus 5cm}constexpr const char$\ast$ tvm\+::tir\+::\+Load\+Node\+::\+\_\+type\+\_\+key = \char`\"{}Load\char`\"{}\hspace{0.3cm}{\ttfamily [static]}}\hypertarget{classtvm_1_1tir_1_1LoadNode_a4b031889ebb171c34e1f7b377df9c44e}{}\label{classtvm_1_1tir_1_1LoadNode_a4b031889ebb171c34e1f7b377df9c44e}
+\index{tvm\+::tir\+::\+Load\+Node@{tvm\+::tir\+::\+Load\+Node}!buffer\+\_\+var@{buffer\+\_\+var}}
+\index{buffer\+\_\+var@{buffer\+\_\+var}!tvm\+::tir\+::\+Load\+Node@{tvm\+::tir\+::\+Load\+Node}}
+\subsubsection[{\texorpdfstring{buffer\+\_\+var}{buffer_var}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Var} tvm\+::tir\+::\+Load\+Node\+::buffer\+\_\+var}\hypertarget{classtvm_1_1tir_1_1LoadNode_a2c69902eee069e824c822492068e6913}{}\label{classtvm_1_1tir_1_1LoadNode_a2c69902eee069e824c822492068e6913}
+
+
+The buffer variable. 
+
+\index{tvm\+::tir\+::\+Load\+Node@{tvm\+::tir\+::\+Load\+Node}!index@{index}}
+\index{index@{index}!tvm\+::tir\+::\+Load\+Node@{tvm\+::tir\+::\+Load\+Node}}
+\subsubsection[{\texorpdfstring{index}{index}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Prim\+Expr} tvm\+::tir\+::\+Load\+Node\+::index}\hypertarget{classtvm_1_1tir_1_1LoadNode_a0133c1a78c31b6eba24036a1f410cc1b}{}\label{classtvm_1_1tir_1_1LoadNode_a0133c1a78c31b6eba24036a1f410cc1b}
+
+
+The index locations to be loaded. 
+
+\index{tvm\+::tir\+::\+Load\+Node@{tvm\+::tir\+::\+Load\+Node}!predicate@{predicate}}
+\index{predicate@{predicate}!tvm\+::tir\+::\+Load\+Node@{tvm\+::tir\+::\+Load\+Node}}
+\subsubsection[{\texorpdfstring{predicate}{predicate}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Prim\+Expr} tvm\+::tir\+::\+Load\+Node\+::predicate}\hypertarget{classtvm_1_1tir_1_1LoadNode_af27e6b2dc6293dffaa93e992085be458}{}\label{classtvm_1_1tir_1_1LoadNode_af27e6b2dc6293dffaa93e992085be458}
+
+
+The predicate to mask which lanes would be loaded. 
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+include/tvm/tir/\hyperlink{tir_2expr_8h}{expr.\+h}\end{DoxyCompactItemize}

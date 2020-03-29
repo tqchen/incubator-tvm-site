@@ -1,0 +1,245 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="classtvm_1_1PrimExpr" kind="class" language="C++" prot="public">
+    <compoundname>tvm::PrimExpr</compoundname>
+    <basecompoundref refid="classtvm_1_1BaseExpr" prot="public" virt="non-virtual">tvm::BaseExpr</basecompoundref>
+    <derivedcompoundref refid="classtvm_1_1FloatImm" prot="public" virt="non-virtual">tvm::FloatImm</derivedcompoundref>
+    <derivedcompoundref refid="classtvm_1_1IntImm" prot="public" virt="non-virtual">tvm::IntImm</derivedcompoundref>
+    <derivedcompoundref refid="classtvm_1_1tir_1_1StringImm" prot="public" virt="non-virtual">tvm::tir::StringImm</derivedcompoundref>
+    <derivedcompoundref refid="classtvm_1_1tir_1_1Var" prot="public" virt="non-virtual">tvm::tir::Var</derivedcompoundref>
+    <includes refid="ir_2expr_8h" local="no">expr.h</includes>
+      <sectiondef kind="friend">
+      <memberdef kind="friend" id="classtvm_1_1PrimExpr_1a036e6d2e955a7aad104e989af37b7c67" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>friend class</type>
+        <definition>friend class runtime::TVMPODValue_</definition>
+        <argsstring></argsstring>
+        <name>runtime::TVMPODValue_</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/ir/expr.h" line="125" column="1" bodyfile="include/tvm/ir/expr.h" bodystart="125" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classtvm_1_1PrimExpr_1a7f0ca30e951608a0b36a77a66d4d19e0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>tvm::PrimExpr::PrimExpr</definition>
+        <argsstring>(int32_t value)</argsstring>
+        <name>PrimExpr</name>
+        <param>
+          <type>int32_t</type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+<para>construct from integer. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>value</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The value to be constructed. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/ir/expr.h" line="104" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classtvm_1_1PrimExpr_1a756d3f8b17b019560946524951ae6118" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>tvm::PrimExpr::PrimExpr</definition>
+        <argsstring>(float value)</argsstring>
+        <name>PrimExpr</name>
+        <param>
+          <type>float</type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+<para>construct from float. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>value</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The value to be constructed. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/ir/expr.h" line="109" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classtvm_1_1PrimExpr_1aa7ef79a97755173304b89581e79d485a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>tvm::PrimExpr::PrimExpr</definition>
+        <argsstring>(std::string str)</argsstring>
+        <name>PrimExpr</name>
+        <param>
+          <type>std::string</type>
+          <declname>str</declname>
+        </param>
+        <briefdescription>
+<para>construct from string. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>str</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The value to be constructed. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/ir/expr.h" line="114" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classtvm_1_1PrimExpr_1a1098008618699c33adfbd19e582f9ffd" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="namespacetvm_1a41918af1a1dc386388639a9d3ad06c5d" kindref="member">DataType</ref></type>
+        <definition>DataType tvm::PrimExpr::dtype</definition>
+        <argsstring>() const </argsstring>
+        <name>dtype</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>the data type of this expression. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/ir/expr.h" line="117" column="1" bodyfile="include/tvm/ir/expr.h" bodystart="117" bodyend="119"/>
+      </memberdef>
+      <memberdef kind="function" id="classtvm_1_1PrimExpr_1a3ad47a31c4ce693077a93f154b2b1e12" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>tvm::PrimExpr::TVM_DEFINE_OBJECT_REF_METHODS</definition>
+        <argsstring>(PrimExpr, BaseExpr, PrimExprNode)</argsstring>
+        <name>TVM_DEFINE_OBJECT_REF_METHODS</name>
+        <param>
+          <type><ref refid="classtvm_1_1PrimExpr" kindref="compound">PrimExpr</ref></type>
+        </param>
+        <param>
+          <type><ref refid="classtvm_1_1BaseExpr" kindref="compound">BaseExpr</ref></type>
+        </param>
+        <param>
+          <type><ref refid="classtvm_1_1PrimExprNode" kindref="compound">PrimExprNode</ref></type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/ir/expr.h" line="121" column="1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-static-func">
+      <memberdef kind="function" id="classtvm_1_1PrimExpr_1aef86306fbc87185f6c1bb9e649edba53" prot="private" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classtvm_1_1PrimExpr" kindref="compound">PrimExpr</ref></type>
+        <definition>static PrimExpr tvm::PrimExpr::FromObject_</definition>
+        <argsstring>(ObjectPtr&lt; Object &gt; ptr)</argsstring>
+        <name>FromObject_</name>
+        <param>
+          <type>ObjectPtr&lt; Object &gt;</type>
+          <declname>ptr</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/ir/expr.h" line="126" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Reference to <ref refid="classtvm_1_1PrimExprNode" kindref="compound">PrimExprNode</ref>. </para>    </briefdescription>
+    <detaileddescription>
+<para><simplesect kind="see"><para><ref refid="classtvm_1_1PrimExprNode" kindref="compound">PrimExprNode</ref> </para></simplesect>
+</para>    </detaileddescription>
+    <inheritancegraph>
+      <node id="6210">
+        <label>ObjectRef</label>
+      </node>
+      <node id="6214">
+        <label>tvm::tir::StringImm</label>
+        <link refid="classtvm_1_1tir_1_1StringImm"/>
+        <childnode refid="6208" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="6211">
+        <label>tvm::FloatImm</label>
+        <link refid="classtvm_1_1FloatImm"/>
+        <childnode refid="6208" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="6216">
+        <label>tvm::tir::SizeVar</label>
+        <link refid="classtvm_1_1tir_1_1SizeVar"/>
+        <childnode refid="6215" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="6208">
+        <label>tvm::PrimExpr</label>
+        <link refid="classtvm_1_1PrimExpr"/>
+        <childnode refid="6209" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="6213">
+        <label>tvm::Integer</label>
+        <link refid="classtvm_1_1Integer"/>
+        <childnode refid="6212" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="6209">
+        <label>tvm::BaseExpr</label>
+        <link refid="classtvm_1_1BaseExpr"/>
+        <childnode refid="6210" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="6215">
+        <label>tvm::tir::Var</label>
+        <link refid="classtvm_1_1tir_1_1Var"/>
+        <childnode refid="6208" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="6212">
+        <label>tvm::IntImm</label>
+        <link refid="classtvm_1_1IntImm"/>
+        <childnode refid="6208" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="6219">
+        <label>ObjectRef</label>
+      </node>
+      <node id="6217">
+        <label>tvm::PrimExpr</label>
+        <link refid="classtvm_1_1PrimExpr"/>
+        <childnode refid="6218" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="6218">
+        <label>tvm::BaseExpr</label>
+        <link refid="classtvm_1_1BaseExpr"/>
+        <childnode refid="6219" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="include/tvm/ir/expr.h" line="98" column="1" bodyfile="include/tvm/ir/expr.h" bodystart="98" bodyend="127"/>
+    <listofallmembers>
+      <member refid="classtvm_1_1PrimExpr_1a1098008618699c33adfbd19e582f9ffd" prot="public" virt="non-virtual"><scope>tvm::PrimExpr</scope><name>dtype</name></member>
+      <member refid="classtvm_1_1PrimExpr_1aef86306fbc87185f6c1bb9e649edba53" prot="private" virt="non-virtual"><scope>tvm::PrimExpr</scope><name>FromObject_</name></member>
+      <member refid="classtvm_1_1PrimExpr_1a7f0ca30e951608a0b36a77a66d4d19e0" prot="public" virt="non-virtual"><scope>tvm::PrimExpr</scope><name>PrimExpr</name></member>
+      <member refid="classtvm_1_1PrimExpr_1a756d3f8b17b019560946524951ae6118" prot="public" virt="non-virtual"><scope>tvm::PrimExpr</scope><name>PrimExpr</name></member>
+      <member refid="classtvm_1_1PrimExpr_1aa7ef79a97755173304b89581e79d485a" prot="public" virt="non-virtual"><scope>tvm::PrimExpr</scope><name>PrimExpr</name></member>
+      <member refid="classtvm_1_1PrimExpr_1a036e6d2e955a7aad104e989af37b7c67" prot="public" virt="non-virtual"><scope>tvm::PrimExpr</scope><name>runtime::TVMPODValue_</name></member>
+      <member refid="classtvm_1_1PrimExpr_1a3ad47a31c4ce693077a93f154b2b1e12" prot="public" virt="non-virtual"><scope>tvm::PrimExpr</scope><name>TVM_DEFINE_OBJECT_REF_METHODS</name></member>
+      <member refid="classtvm_1_1BaseExpr_1aa513c6abed6e5b76c7fc9441649b3e4c" prot="public" virt="non-virtual" ambiguityscope="tvm::BaseExpr::"><scope>tvm::PrimExpr</scope><name>TVM_DEFINE_OBJECT_REF_METHODS</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

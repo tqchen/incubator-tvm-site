@@ -1,0 +1,145 @@
+\hypertarget{classtvm_1_1te_1_1TensorNode}{}\section{tvm\+:\+:te\+:\+:Tensor\+Node Class Reference}
+\label{classtvm_1_1te_1_1TensorNode}\index{tvm\+::te\+::\+Tensor\+Node@{tvm\+::te\+::\+Tensor\+Node}}
+
+
+Node to represent a tensor.  
+
+
+
+
+{\ttfamily \#include $<$tensor.\+h$>$}
+
+
+
+Inheritance diagram for tvm\+:\+:te\+:\+:Tensor\+Node\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=285pt]{classtvm_1_1te_1_1TensorNode__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for tvm\+:\+:te\+:\+:Tensor\+Node\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{classtvm_1_1te_1_1TensorNode__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classtvm_1_1te_1_1TensorNode_a153569448cb1bf9d2924d35639c3b8b8}{Tensor\+Node} ()
+\begin{DoxyCompactList}\small\item\em constructor \end{DoxyCompactList}\item 
+void \hyperlink{classtvm_1_1te_1_1TensorNode_a206fe89fe8fa50a48434bdafc44872e9}{Visit\+Attrs} (\hyperlink{classtvm_1_1AttrVisitor}{Attr\+Visitor} $\ast$v)
+\item 
+\hyperlink{classtvm_1_1te_1_1TensorNode_a442e7ed4b4877e72692216af97b3f0b7}{T\+V\+M\+\_\+\+D\+E\+C\+L\+A\+R\+E\+\_\+\+F\+I\+N\+A\+L\+\_\+\+O\+B\+J\+E\+C\+T\+\_\+\+I\+N\+FO} (\hyperlink{classtvm_1_1te_1_1TensorNode}{Tensor\+Node}, Object)
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \hyperlink{classtvm_1_1te_1_1Tensor}{Tensor} \hyperlink{classtvm_1_1te_1_1TensorNode_a4c08ea01c5a78a1a83e2745368ae19a2}{make} (\hyperlink{classtvm_1_1Array}{Array}$<$ \hyperlink{classtvm_1_1PrimExpr}{Prim\+Expr} $>$ \hyperlink{classtvm_1_1te_1_1TensorNode_a0ba732bc2def0d467854585752911351}{shape}, \hyperlink{namespacetvm_a41918af1a1dc386388639a9d3ad06c5d}{Data\+Type} \hyperlink{classtvm_1_1te_1_1TensorNode_a4c0b6e32a09ab6ea6b869de45394294d}{dtype}, \hyperlink{classtvm_1_1te_1_1Operation}{Operation} \hyperlink{classtvm_1_1te_1_1TensorNode_a64faab73896ac7e9dd8dc43110920c7c}{op}, int \hyperlink{classtvm_1_1te_1_1TensorNode_aaf908a208cea7f27477c1c58ba605aa8}{value\+\_\+index})
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classtvm_1_1Array}{Array}$<$ \hyperlink{classtvm_1_1PrimExpr}{Prim\+Expr} $>$ \hyperlink{classtvm_1_1te_1_1TensorNode_a0ba732bc2def0d467854585752911351}{shape}
+\begin{DoxyCompactList}\small\item\em The shape of the tensor. \end{DoxyCompactList}\item 
+\hyperlink{namespacetvm_a41918af1a1dc386388639a9d3ad06c5d}{Data\+Type} \hyperlink{classtvm_1_1te_1_1TensorNode_a4c0b6e32a09ab6ea6b869de45394294d}{dtype}
+\begin{DoxyCompactList}\small\item\em data type in the content of the tensor \end{DoxyCompactList}\item 
+\hyperlink{classtvm_1_1te_1_1Operation}{Operation} \hyperlink{classtvm_1_1te_1_1TensorNode_a64faab73896ac7e9dd8dc43110920c7c}{op}
+\begin{DoxyCompactList}\small\item\em the source operation, can be None \end{DoxyCompactList}\item 
+int \hyperlink{classtvm_1_1te_1_1TensorNode_aaf908a208cea7f27477c1c58ba605aa8}{value\+\_\+index} \{0\}
+\begin{DoxyCompactList}\small\item\em the output index from source operation \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static constexpr const char $\ast$ \hyperlink{classtvm_1_1te_1_1TensorNode_a0e33ec8b473ade0dbd3643fe380c36a2}{\+\_\+type\+\_\+key} = \char`\"{}Tensor\char`\"{}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Node to represent a tensor. 
+
+\subsection{Constructor \& Destructor Documentation}
+\index{tvm\+::te\+::\+Tensor\+Node@{tvm\+::te\+::\+Tensor\+Node}!Tensor\+Node@{Tensor\+Node}}
+\index{Tensor\+Node@{Tensor\+Node}!tvm\+::te\+::\+Tensor\+Node@{tvm\+::te\+::\+Tensor\+Node}}
+\subsubsection[{\texorpdfstring{Tensor\+Node()}{TensorNode()}}]{\setlength{\rightskip}{0pt plus 5cm}tvm\+::te\+::\+Tensor\+Node\+::\+Tensor\+Node (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classtvm_1_1te_1_1TensorNode_a153569448cb1bf9d2924d35639c3b8b8}{}\label{classtvm_1_1te_1_1TensorNode_a153569448cb1bf9d2924d35639c3b8b8}
+
+
+constructor 
+
+
+
+\subsection{Member Function Documentation}
+\index{tvm\+::te\+::\+Tensor\+Node@{tvm\+::te\+::\+Tensor\+Node}!make@{make}}
+\index{make@{make}!tvm\+::te\+::\+Tensor\+Node@{tvm\+::te\+::\+Tensor\+Node}}
+\subsubsection[{\texorpdfstring{make(\+Array$<$ Prim\+Expr $>$ shape, Data\+Type dtype, Operation op, int value\+\_\+index)}{make(Array< PrimExpr > shape, DataType dtype, Operation op, int value_index)}}]{\setlength{\rightskip}{0pt plus 5cm}static {\bf Tensor} tvm\+::te\+::\+Tensor\+Node\+::make (
+\begin{DoxyParamCaption}
+\item[{{\bf Array}$<$ {\bf Prim\+Expr} $>$}]{shape, }
+\item[{{\bf Data\+Type}}]{dtype, }
+\item[{{\bf Operation}}]{op, }
+\item[{int}]{value\+\_\+index}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}\hypertarget{classtvm_1_1te_1_1TensorNode_a4c08ea01c5a78a1a83e2745368ae19a2}{}\label{classtvm_1_1te_1_1TensorNode_a4c08ea01c5a78a1a83e2745368ae19a2}
+\index{tvm\+::te\+::\+Tensor\+Node@{tvm\+::te\+::\+Tensor\+Node}!T\+V\+M\+\_\+\+D\+E\+C\+L\+A\+R\+E\+\_\+\+F\+I\+N\+A\+L\+\_\+\+O\+B\+J\+E\+C\+T\+\_\+\+I\+N\+FO@{T\+V\+M\+\_\+\+D\+E\+C\+L\+A\+R\+E\+\_\+\+F\+I\+N\+A\+L\+\_\+\+O\+B\+J\+E\+C\+T\+\_\+\+I\+N\+FO}}
+\index{T\+V\+M\+\_\+\+D\+E\+C\+L\+A\+R\+E\+\_\+\+F\+I\+N\+A\+L\+\_\+\+O\+B\+J\+E\+C\+T\+\_\+\+I\+N\+FO@{T\+V\+M\+\_\+\+D\+E\+C\+L\+A\+R\+E\+\_\+\+F\+I\+N\+A\+L\+\_\+\+O\+B\+J\+E\+C\+T\+\_\+\+I\+N\+FO}!tvm\+::te\+::\+Tensor\+Node@{tvm\+::te\+::\+Tensor\+Node}}
+\subsubsection[{\texorpdfstring{T\+V\+M\+\_\+\+D\+E\+C\+L\+A\+R\+E\+\_\+\+F\+I\+N\+A\+L\+\_\+\+O\+B\+J\+E\+C\+T\+\_\+\+I\+N\+F\+O(\+Tensor\+Node, Object)}{TVM_DECLARE_FINAL_OBJECT_INFO(TensorNode, Object)}}]{\setlength{\rightskip}{0pt plus 5cm}tvm\+::te\+::\+Tensor\+Node\+::\+T\+V\+M\+\_\+\+D\+E\+C\+L\+A\+R\+E\+\_\+\+F\+I\+N\+A\+L\+\_\+\+O\+B\+J\+E\+C\+T\+\_\+\+I\+N\+FO (
+\begin{DoxyParamCaption}
+\item[{{\bf Tensor\+Node}}]{, }
+\item[{Object}]{}
+\end{DoxyParamCaption}
+)}\hypertarget{classtvm_1_1te_1_1TensorNode_a442e7ed4b4877e72692216af97b3f0b7}{}\label{classtvm_1_1te_1_1TensorNode_a442e7ed4b4877e72692216af97b3f0b7}
+\index{tvm\+::te\+::\+Tensor\+Node@{tvm\+::te\+::\+Tensor\+Node}!Visit\+Attrs@{Visit\+Attrs}}
+\index{Visit\+Attrs@{Visit\+Attrs}!tvm\+::te\+::\+Tensor\+Node@{tvm\+::te\+::\+Tensor\+Node}}
+\subsubsection[{\texorpdfstring{Visit\+Attrs(\+Attr\+Visitor $\ast$v)}{VisitAttrs(AttrVisitor *v)}}]{\setlength{\rightskip}{0pt plus 5cm}void tvm\+::te\+::\+Tensor\+Node\+::\+Visit\+Attrs (
+\begin{DoxyParamCaption}
+\item[{{\bf Attr\+Visitor} $\ast$}]{v}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classtvm_1_1te_1_1TensorNode_a206fe89fe8fa50a48434bdafc44872e9}{}\label{classtvm_1_1te_1_1TensorNode_a206fe89fe8fa50a48434bdafc44872e9}
+
+
+\subsection{Member Data Documentation}
+\index{tvm\+::te\+::\+Tensor\+Node@{tvm\+::te\+::\+Tensor\+Node}!\+\_\+type\+\_\+key@{\+\_\+type\+\_\+key}}
+\index{\+\_\+type\+\_\+key@{\+\_\+type\+\_\+key}!tvm\+::te\+::\+Tensor\+Node@{tvm\+::te\+::\+Tensor\+Node}}
+\subsubsection[{\texorpdfstring{\+\_\+type\+\_\+key}{_type_key}}]{\setlength{\rightskip}{0pt plus 5cm}constexpr const char$\ast$ tvm\+::te\+::\+Tensor\+Node\+::\+\_\+type\+\_\+key = \char`\"{}Tensor\char`\"{}\hspace{0.3cm}{\ttfamily [static]}}\hypertarget{classtvm_1_1te_1_1TensorNode_a0e33ec8b473ade0dbd3643fe380c36a2}{}\label{classtvm_1_1te_1_1TensorNode_a0e33ec8b473ade0dbd3643fe380c36a2}
+\index{tvm\+::te\+::\+Tensor\+Node@{tvm\+::te\+::\+Tensor\+Node}!dtype@{dtype}}
+\index{dtype@{dtype}!tvm\+::te\+::\+Tensor\+Node@{tvm\+::te\+::\+Tensor\+Node}}
+\subsubsection[{\texorpdfstring{dtype}{dtype}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Data\+Type} tvm\+::te\+::\+Tensor\+Node\+::dtype}\hypertarget{classtvm_1_1te_1_1TensorNode_a4c0b6e32a09ab6ea6b869de45394294d}{}\label{classtvm_1_1te_1_1TensorNode_a4c0b6e32a09ab6ea6b869de45394294d}
+
+
+data type in the content of the tensor 
+
+\index{tvm\+::te\+::\+Tensor\+Node@{tvm\+::te\+::\+Tensor\+Node}!op@{op}}
+\index{op@{op}!tvm\+::te\+::\+Tensor\+Node@{tvm\+::te\+::\+Tensor\+Node}}
+\subsubsection[{\texorpdfstring{op}{op}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Operation} tvm\+::te\+::\+Tensor\+Node\+::op}\hypertarget{classtvm_1_1te_1_1TensorNode_a64faab73896ac7e9dd8dc43110920c7c}{}\label{classtvm_1_1te_1_1TensorNode_a64faab73896ac7e9dd8dc43110920c7c}
+
+
+the source operation, can be None 
+
+\index{tvm\+::te\+::\+Tensor\+Node@{tvm\+::te\+::\+Tensor\+Node}!shape@{shape}}
+\index{shape@{shape}!tvm\+::te\+::\+Tensor\+Node@{tvm\+::te\+::\+Tensor\+Node}}
+\subsubsection[{\texorpdfstring{shape}{shape}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Array}$<${\bf Prim\+Expr}$>$ tvm\+::te\+::\+Tensor\+Node\+::shape}\hypertarget{classtvm_1_1te_1_1TensorNode_a0ba732bc2def0d467854585752911351}{}\label{classtvm_1_1te_1_1TensorNode_a0ba732bc2def0d467854585752911351}
+
+
+The shape of the tensor. 
+
+\index{tvm\+::te\+::\+Tensor\+Node@{tvm\+::te\+::\+Tensor\+Node}!value\+\_\+index@{value\+\_\+index}}
+\index{value\+\_\+index@{value\+\_\+index}!tvm\+::te\+::\+Tensor\+Node@{tvm\+::te\+::\+Tensor\+Node}}
+\subsubsection[{\texorpdfstring{value\+\_\+index}{value_index}}]{\setlength{\rightskip}{0pt plus 5cm}int tvm\+::te\+::\+Tensor\+Node\+::value\+\_\+index \{0\}}\hypertarget{classtvm_1_1te_1_1TensorNode_aaf908a208cea7f27477c1c58ba605aa8}{}\label{classtvm_1_1te_1_1TensorNode_aaf908a208cea7f27477c1c58ba605aa8}
+
+
+the output index from source operation 
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+include/tvm/te/\hyperlink{tensor_8h}{tensor.\+h}\end{DoxyCompactItemize}

@@ -1,0 +1,114 @@
+\hypertarget{classtvm_1_1MemoryInfoNode}{}\section{tvm\+:\+:Memory\+Info\+Node Class Reference}
+\label{classtvm_1_1MemoryInfoNode}\index{tvm\+::\+Memory\+Info\+Node@{tvm\+::\+Memory\+Info\+Node}}
+
+
+Memory information of special memory region. Use \hyperlink{classtvm_1_1MemoryInfo}{Memory\+Info} as its container type.  
+
+
+
+
+{\ttfamily \#include $<$target\+\_\+info.\+h$>$}
+
+
+
+Inheritance diagram for tvm\+:\+:Memory\+Info\+Node\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=285pt]{classtvm_1_1MemoryInfoNode__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for tvm\+:\+:Memory\+Info\+Node\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=337pt]{classtvm_1_1MemoryInfoNode__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{classtvm_1_1MemoryInfoNode_a93ff1429c6382dc4d17bf91d8dad5e81}{Visit\+Attrs} (\hyperlink{classtvm_1_1AttrVisitor}{Attr\+Visitor} $\ast$v)
+\item 
+\hyperlink{classtvm_1_1MemoryInfoNode_a76cbbfb90ec0f5deeeb10171430a0ccb}{T\+V\+M\+\_\+\+D\+E\+C\+L\+A\+R\+E\+\_\+\+F\+I\+N\+A\+L\+\_\+\+O\+B\+J\+E\+C\+T\+\_\+\+I\+N\+FO} (\hyperlink{classtvm_1_1MemoryInfoNode}{Memory\+Info\+Node}, Object)
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+int \hyperlink{classtvm_1_1MemoryInfoNode_aa935f1ee9d8d2f06633ca4b3c44f7725}{unit\+\_\+bits}
+\begin{DoxyCompactList}\small\item\em The addressable unit. \end{DoxyCompactList}\item 
+int \hyperlink{classtvm_1_1MemoryInfoNode_ae0b6f9572f77177a08a8a522d1ec2aa4}{max\+\_\+num\+\_\+bits}
+\begin{DoxyCompactList}\small\item\em Maximum number of bits supported in the memory. \end{DoxyCompactList}\item 
+int \hyperlink{classtvm_1_1MemoryInfoNode_aededa36e61d4f423bd363519d8d17809}{max\+\_\+simd\+\_\+bits}
+\begin{DoxyCompactList}\small\item\em maximum number of bits to be used in simd op \end{DoxyCompactList}\item 
+\hyperlink{classtvm_1_1PrimExpr}{Prim\+Expr} \hyperlink{classtvm_1_1MemoryInfoNode_af2e6ca44c6258c7c743482ae6f7c7deb}{head\+\_\+address}
+\begin{DoxyCompactList}\small\item\em head address of the buffer, if visible to C\+PU This address can be None. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static constexpr const char $\ast$ \hyperlink{classtvm_1_1MemoryInfoNode_a679e07b35ff1da70063e3146e7cbb9dd}{\+\_\+type\+\_\+key} = \char`\"{}Memory\+Info\char`\"{}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Memory information of special memory region. Use \hyperlink{classtvm_1_1MemoryInfo}{Memory\+Info} as its container type. 
+
+\subsection{Member Function Documentation}
+\index{tvm\+::\+Memory\+Info\+Node@{tvm\+::\+Memory\+Info\+Node}!T\+V\+M\+\_\+\+D\+E\+C\+L\+A\+R\+E\+\_\+\+F\+I\+N\+A\+L\+\_\+\+O\+B\+J\+E\+C\+T\+\_\+\+I\+N\+FO@{T\+V\+M\+\_\+\+D\+E\+C\+L\+A\+R\+E\+\_\+\+F\+I\+N\+A\+L\+\_\+\+O\+B\+J\+E\+C\+T\+\_\+\+I\+N\+FO}}
+\index{T\+V\+M\+\_\+\+D\+E\+C\+L\+A\+R\+E\+\_\+\+F\+I\+N\+A\+L\+\_\+\+O\+B\+J\+E\+C\+T\+\_\+\+I\+N\+FO@{T\+V\+M\+\_\+\+D\+E\+C\+L\+A\+R\+E\+\_\+\+F\+I\+N\+A\+L\+\_\+\+O\+B\+J\+E\+C\+T\+\_\+\+I\+N\+FO}!tvm\+::\+Memory\+Info\+Node@{tvm\+::\+Memory\+Info\+Node}}
+\subsubsection[{\texorpdfstring{T\+V\+M\+\_\+\+D\+E\+C\+L\+A\+R\+E\+\_\+\+F\+I\+N\+A\+L\+\_\+\+O\+B\+J\+E\+C\+T\+\_\+\+I\+N\+F\+O(\+Memory\+Info\+Node, Object)}{TVM_DECLARE_FINAL_OBJECT_INFO(MemoryInfoNode, Object)}}]{\setlength{\rightskip}{0pt plus 5cm}tvm\+::\+Memory\+Info\+Node\+::\+T\+V\+M\+\_\+\+D\+E\+C\+L\+A\+R\+E\+\_\+\+F\+I\+N\+A\+L\+\_\+\+O\+B\+J\+E\+C\+T\+\_\+\+I\+N\+FO (
+\begin{DoxyParamCaption}
+\item[{{\bf Memory\+Info\+Node}}]{, }
+\item[{Object}]{}
+\end{DoxyParamCaption}
+)}\hypertarget{classtvm_1_1MemoryInfoNode_a76cbbfb90ec0f5deeeb10171430a0ccb}{}\label{classtvm_1_1MemoryInfoNode_a76cbbfb90ec0f5deeeb10171430a0ccb}
+\index{tvm\+::\+Memory\+Info\+Node@{tvm\+::\+Memory\+Info\+Node}!Visit\+Attrs@{Visit\+Attrs}}
+\index{Visit\+Attrs@{Visit\+Attrs}!tvm\+::\+Memory\+Info\+Node@{tvm\+::\+Memory\+Info\+Node}}
+\subsubsection[{\texorpdfstring{Visit\+Attrs(\+Attr\+Visitor $\ast$v)}{VisitAttrs(AttrVisitor *v)}}]{\setlength{\rightskip}{0pt plus 5cm}void tvm\+::\+Memory\+Info\+Node\+::\+Visit\+Attrs (
+\begin{DoxyParamCaption}
+\item[{{\bf Attr\+Visitor} $\ast$}]{v}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classtvm_1_1MemoryInfoNode_a93ff1429c6382dc4d17bf91d8dad5e81}{}\label{classtvm_1_1MemoryInfoNode_a93ff1429c6382dc4d17bf91d8dad5e81}
+
+
+\subsection{Member Data Documentation}
+\index{tvm\+::\+Memory\+Info\+Node@{tvm\+::\+Memory\+Info\+Node}!\+\_\+type\+\_\+key@{\+\_\+type\+\_\+key}}
+\index{\+\_\+type\+\_\+key@{\+\_\+type\+\_\+key}!tvm\+::\+Memory\+Info\+Node@{tvm\+::\+Memory\+Info\+Node}}
+\subsubsection[{\texorpdfstring{\+\_\+type\+\_\+key}{_type_key}}]{\setlength{\rightskip}{0pt plus 5cm}constexpr const char$\ast$ tvm\+::\+Memory\+Info\+Node\+::\+\_\+type\+\_\+key = \char`\"{}Memory\+Info\char`\"{}\hspace{0.3cm}{\ttfamily [static]}}\hypertarget{classtvm_1_1MemoryInfoNode_a679e07b35ff1da70063e3146e7cbb9dd}{}\label{classtvm_1_1MemoryInfoNode_a679e07b35ff1da70063e3146e7cbb9dd}
+\index{tvm\+::\+Memory\+Info\+Node@{tvm\+::\+Memory\+Info\+Node}!head\+\_\+address@{head\+\_\+address}}
+\index{head\+\_\+address@{head\+\_\+address}!tvm\+::\+Memory\+Info\+Node@{tvm\+::\+Memory\+Info\+Node}}
+\subsubsection[{\texorpdfstring{head\+\_\+address}{head_address}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Prim\+Expr} tvm\+::\+Memory\+Info\+Node\+::head\+\_\+address}\hypertarget{classtvm_1_1MemoryInfoNode_af2e6ca44c6258c7c743482ae6f7c7deb}{}\label{classtvm_1_1MemoryInfoNode_af2e6ca44c6258c7c743482ae6f7c7deb}
+
+
+head address of the buffer, if visible to C\+PU This address can be None. 
+
+\index{tvm\+::\+Memory\+Info\+Node@{tvm\+::\+Memory\+Info\+Node}!max\+\_\+num\+\_\+bits@{max\+\_\+num\+\_\+bits}}
+\index{max\+\_\+num\+\_\+bits@{max\+\_\+num\+\_\+bits}!tvm\+::\+Memory\+Info\+Node@{tvm\+::\+Memory\+Info\+Node}}
+\subsubsection[{\texorpdfstring{max\+\_\+num\+\_\+bits}{max_num_bits}}]{\setlength{\rightskip}{0pt plus 5cm}int tvm\+::\+Memory\+Info\+Node\+::max\+\_\+num\+\_\+bits}\hypertarget{classtvm_1_1MemoryInfoNode_ae0b6f9572f77177a08a8a522d1ec2aa4}{}\label{classtvm_1_1MemoryInfoNode_ae0b6f9572f77177a08a8a522d1ec2aa4}
+
+
+Maximum number of bits supported in the memory. 
+
+\index{tvm\+::\+Memory\+Info\+Node@{tvm\+::\+Memory\+Info\+Node}!max\+\_\+simd\+\_\+bits@{max\+\_\+simd\+\_\+bits}}
+\index{max\+\_\+simd\+\_\+bits@{max\+\_\+simd\+\_\+bits}!tvm\+::\+Memory\+Info\+Node@{tvm\+::\+Memory\+Info\+Node}}
+\subsubsection[{\texorpdfstring{max\+\_\+simd\+\_\+bits}{max_simd_bits}}]{\setlength{\rightskip}{0pt plus 5cm}int tvm\+::\+Memory\+Info\+Node\+::max\+\_\+simd\+\_\+bits}\hypertarget{classtvm_1_1MemoryInfoNode_aededa36e61d4f423bd363519d8d17809}{}\label{classtvm_1_1MemoryInfoNode_aededa36e61d4f423bd363519d8d17809}
+
+
+maximum number of bits to be used in simd op 
+
+\index{tvm\+::\+Memory\+Info\+Node@{tvm\+::\+Memory\+Info\+Node}!unit\+\_\+bits@{unit\+\_\+bits}}
+\index{unit\+\_\+bits@{unit\+\_\+bits}!tvm\+::\+Memory\+Info\+Node@{tvm\+::\+Memory\+Info\+Node}}
+\subsubsection[{\texorpdfstring{unit\+\_\+bits}{unit_bits}}]{\setlength{\rightskip}{0pt plus 5cm}int tvm\+::\+Memory\+Info\+Node\+::unit\+\_\+bits}\hypertarget{classtvm_1_1MemoryInfoNode_aa935f1ee9d8d2f06633ca4b3c44f7725}{}\label{classtvm_1_1MemoryInfoNode_aa935f1ee9d8d2f06633ca4b3c44f7725}
+
+
+The addressable unit. 
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+include/tvm/target/\hyperlink{target__info_8h}{target\+\_\+info.\+h}\end{DoxyCompactItemize}

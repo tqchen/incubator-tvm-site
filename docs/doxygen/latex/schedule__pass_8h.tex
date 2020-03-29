@@ -1,0 +1,48 @@
+\hypertarget{schedule__pass_8h}{}\section{include/tvm/te/schedule\+\_\+pass.h File Reference}
+\label{schedule__pass_8h}\index{include/tvm/te/schedule\+\_\+pass.\+h@{include/tvm/te/schedule\+\_\+pass.\+h}}
+
+
+Collection of Schedule pass functions.  
+
+
+{\ttfamily \#include $<$tvm/te/schedule.\+h$>$}\\*
+Include dependency graph for schedule\+\_\+pass.\+h\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{schedule__pass_8h__incl}
+\end{center}
+\end{figure}
+This graph shows which files directly or indirectly include this file\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{schedule__pass_8h__dep__incl}
+\end{center}
+\end{figure}
+\subsection*{Namespaces}
+\begin{DoxyCompactItemize}
+\item 
+ \hyperlink{namespacetvm}{tvm}
+\item 
+ \hyperlink{namespacetvm_1_1te}{tvm\+::te}
+\begin{DoxyCompactList}\small\item\em \hyperlink{classtvm_1_1te_1_1Tensor}{Tensor} expression language D\+SL. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+Map$<$ Iter\+Var, Range $>$ \hyperlink{namespacetvm_1_1te_ac0effd02bbddf8ce2cce7073e175ca4c}{tvm\+::te\+::\+Infer\+Bound} (const Schedule \&sch)
+\begin{DoxyCompactList}\small\item\em Infer the bound of all iteration variables relates to the schedule. \end{DoxyCompactList}\item 
+Stmt \hyperlink{namespacetvm_1_1te_ac5f0fdd7c2d3deb15b7855c5b1ff1aff}{tvm\+::te\+::\+Schedule\+Ops} (Schedule s, Map$<$ Iter\+Var, Range $>$ dom\+\_\+map, bool debug\+\_\+keep\+\_\+trivial\+\_\+loop)
+\begin{DoxyCompactList}\small\item\em \hyperlink{classtvm_1_1te_1_1Schedule}{Schedule} s\textquotesingle{} dependent operations. \end{DoxyCompactList}\item 
+void \hyperlink{namespacetvm_1_1te_a26ae0c9351036d0f7ca362e3c857d24a}{tvm\+::te\+::\+Auto\+Inline\+Elem\+Wise} (Schedule sch)
+\begin{DoxyCompactList}\small\item\em To automatically inline the element-\/wise operations. \end{DoxyCompactList}\item 
+void \hyperlink{namespacetvm_1_1te_a9872626811f38606b4e934faa13b5b9f}{tvm\+::te\+::\+Auto\+Inline\+Injective} (Schedule sch)
+\begin{DoxyCompactList}\small\item\em To automatically inline operations with injective writes (i.\+e. writes without reduction or sequential loops). Note that in this case, guarantees about contiguity, transpose, stride, alignemnt and memory footprint in general do not hold. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Collection of Schedule pass functions. 
+
+These passes works on the schedule hyper-\/graph and infers information such as bounds, check conditions read/write dependencies between the Iter\+Var 

@@ -1,0 +1,199 @@
+\hypertarget{classtvm_1_1SEqualReducer}{}\section{tvm\+:\+:S\+Equal\+Reducer Class Reference}
+\label{classtvm_1_1SEqualReducer}\index{tvm\+::\+S\+Equal\+Reducer@{tvm\+::\+S\+Equal\+Reducer}}
+
+
+A Reducer class to reduce the structural equality result of two objects.  
+
+
+
+
+{\ttfamily \#include $<$structural\+\_\+equal.\+h$>$}
+
+
+
+Inheritance diagram for tvm\+:\+:S\+Equal\+Reducer\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=198pt]{classtvm_1_1SEqualReducer__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for tvm\+:\+:S\+Equal\+Reducer\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=198pt]{classtvm_1_1SEqualReducer__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \hyperlink{classtvm_1_1SEqualReducer_1_1Handler}{Handler}
+\begin{DoxyCompactList}\small\item\em Internal handler that defines custom behaviors.. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classtvm_1_1SEqualReducer_abb85d3142af880fb96ae79423e5c382e}{S\+Equal\+Reducer} ()=default
+\begin{DoxyCompactList}\small\item\em default constructor \end{DoxyCompactList}\item 
+\hyperlink{classtvm_1_1SEqualReducer_a2562e028a0298c0e45d5ebbb98545fa4}{S\+Equal\+Reducer} (\hyperlink{classtvm_1_1SEqualReducer_1_1Handler}{Handler} $\ast$handler, bool map\+\_\+free\+\_\+vars)
+\begin{DoxyCompactList}\small\item\em \hyperlink{classtvm_1_1Constructor}{Constructor} with a specific handler. \end{DoxyCompactList}\item 
+bool \hyperlink{classtvm_1_1SEqualReducer_a530065b8aa051c777ccf5b4d71c2c66c}{operator()} (const Object\+Ref \&lhs, const Object\+Ref \&rhs) const 
+\begin{DoxyCompactList}\small\item\em Reduce condition to comparison of two objects. \end{DoxyCompactList}\item 
+bool \hyperlink{classtvm_1_1SEqualReducer_a62ba4c55928d4886853f9c33f4147340}{Def\+Equal} (const Object\+Ref \&lhs, const Object\+Ref \&rhs)
+\begin{DoxyCompactList}\small\item\em Reduce condition to comparison of two definitions, where free vars can be mapped. \end{DoxyCompactList}\item 
+{\footnotesize template$<$typename T $>$ }\\bool \hyperlink{classtvm_1_1SEqualReducer_a75b0feb43cf0a2b789170bbefb45ccf1}{operator()} (const \hyperlink{classtvm_1_1Array}{Array}$<$ T $>$ \&lhs, const \hyperlink{classtvm_1_1Array}{Array}$<$ T $>$ \&rhs) const 
+\begin{DoxyCompactList}\small\item\em Reduce condition to comparison of two arrays. \end{DoxyCompactList}\item 
+bool \hyperlink{classtvm_1_1SEqualReducer_af49dfe588f340f8e44dc245f2cb9a030}{Free\+Var\+Equal\+Impl} (const \hyperlink{classtvm_1_1runtime_1_1Object}{runtime\+::\+Object} $\ast$lhs, const \hyperlink{classtvm_1_1runtime_1_1Object}{runtime\+::\+Object} $\ast$rhs) const 
+\begin{DoxyCompactList}\small\item\em Implementation for equality rule of var type objects(e.\+g. \hyperlink{classtvm_1_1TypeVar}{Type\+Var}, \hyperlink{classtvm_1_1tir_1_1Var}{tir\+::\+Var}). \end{DoxyCompactList}\item 
+\hyperlink{classtvm_1_1SEqualReducer_1_1Handler}{Handler} $\ast$ \hyperlink{classtvm_1_1SEqualReducer_ab910dfcb744d509bc7ac4854ab1a2abd}{operator-\/$>$} () const 
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+A Reducer class to reduce the structural equality result of two objects. 
+
+The reducer will call the S\+Equal\+Reduce function of each objects recursively. Importantly, the reducer may not directly use recursive calls to resolve the equality checking. Instead, it can store the necessary equality conditions and check later via an internally managed stack. 
+
+\subsection{Constructor \& Destructor Documentation}
+\index{tvm\+::\+S\+Equal\+Reducer@{tvm\+::\+S\+Equal\+Reducer}!S\+Equal\+Reducer@{S\+Equal\+Reducer}}
+\index{S\+Equal\+Reducer@{S\+Equal\+Reducer}!tvm\+::\+S\+Equal\+Reducer@{tvm\+::\+S\+Equal\+Reducer}}
+\subsubsection[{\texorpdfstring{S\+Equal\+Reducer()=default}{SEqualReducer()=default}}]{\setlength{\rightskip}{0pt plus 5cm}tvm\+::\+S\+Equal\+Reducer\+::\+S\+Equal\+Reducer (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [default]}}\hypertarget{classtvm_1_1SEqualReducer_abb85d3142af880fb96ae79423e5c382e}{}\label{classtvm_1_1SEqualReducer_abb85d3142af880fb96ae79423e5c382e}
+
+
+default constructor 
+
+\index{tvm\+::\+S\+Equal\+Reducer@{tvm\+::\+S\+Equal\+Reducer}!S\+Equal\+Reducer@{S\+Equal\+Reducer}}
+\index{S\+Equal\+Reducer@{S\+Equal\+Reducer}!tvm\+::\+S\+Equal\+Reducer@{tvm\+::\+S\+Equal\+Reducer}}
+\subsubsection[{\texorpdfstring{S\+Equal\+Reducer(\+Handler $\ast$handler, bool map\+\_\+free\+\_\+vars)}{SEqualReducer(Handler *handler, bool map_free_vars)}}]{\setlength{\rightskip}{0pt plus 5cm}tvm\+::\+S\+Equal\+Reducer\+::\+S\+Equal\+Reducer (
+\begin{DoxyParamCaption}
+\item[{{\bf Handler} $\ast$}]{handler, }
+\item[{bool}]{map\+\_\+free\+\_\+vars}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [explicit]}}\hypertarget{classtvm_1_1SEqualReducer_a2562e028a0298c0e45d5ebbb98545fa4}{}\label{classtvm_1_1SEqualReducer_a2562e028a0298c0e45d5ebbb98545fa4}
+
+
+\hyperlink{classtvm_1_1Constructor}{Constructor} with a specific handler. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em handler} & The equal handler for objects. \\
+\hline
+{\em map\+\_\+free\+\_\+vars} & Whether or not to map free variables. \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\index{tvm\+::\+S\+Equal\+Reducer@{tvm\+::\+S\+Equal\+Reducer}!Def\+Equal@{Def\+Equal}}
+\index{Def\+Equal@{Def\+Equal}!tvm\+::\+S\+Equal\+Reducer@{tvm\+::\+S\+Equal\+Reducer}}
+\subsubsection[{\texorpdfstring{Def\+Equal(const Object\+Ref \&lhs, const Object\+Ref \&rhs)}{DefEqual(const ObjectRef &lhs, const ObjectRef &rhs)}}]{\setlength{\rightskip}{0pt plus 5cm}bool tvm\+::\+S\+Equal\+Reducer\+::\+Def\+Equal (
+\begin{DoxyParamCaption}
+\item[{const Object\+Ref \&}]{lhs, }
+\item[{const Object\+Ref \&}]{rhs}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classtvm_1_1SEqualReducer_a62ba4c55928d4886853f9c33f4147340}{}\label{classtvm_1_1SEqualReducer_a62ba4c55928d4886853f9c33f4147340}
+
+
+Reduce condition to comparison of two definitions, where free vars can be mapped. 
+
+Call this function to compare definition points such as function params and var in a let-\/binding.
+
+
+\begin{DoxyParams}{Parameters}
+{\em lhs} & The left operand. \\
+\hline
+{\em rhs} & The right operand. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the immediate check result. 
+\end{DoxyReturn}
+\index{tvm\+::\+S\+Equal\+Reducer@{tvm\+::\+S\+Equal\+Reducer}!Free\+Var\+Equal\+Impl@{Free\+Var\+Equal\+Impl}}
+\index{Free\+Var\+Equal\+Impl@{Free\+Var\+Equal\+Impl}!tvm\+::\+S\+Equal\+Reducer@{tvm\+::\+S\+Equal\+Reducer}}
+\subsubsection[{\texorpdfstring{Free\+Var\+Equal\+Impl(const runtime\+::\+Object $\ast$lhs, const runtime\+::\+Object $\ast$rhs) const }{FreeVarEqualImpl(const runtime::Object *lhs, const runtime::Object *rhs) const }}]{\setlength{\rightskip}{0pt plus 5cm}bool tvm\+::\+S\+Equal\+Reducer\+::\+Free\+Var\+Equal\+Impl (
+\begin{DoxyParamCaption}
+\item[{const {\bf runtime\+::\+Object} $\ast$}]{lhs, }
+\item[{const {\bf runtime\+::\+Object} $\ast$}]{rhs}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classtvm_1_1SEqualReducer_af49dfe588f340f8e44dc245f2cb9a030}{}\label{classtvm_1_1SEqualReducer_af49dfe588f340f8e44dc245f2cb9a030}
+
+
+Implementation for equality rule of var type objects(e.\+g. \hyperlink{classtvm_1_1TypeVar}{Type\+Var}, \hyperlink{classtvm_1_1tir_1_1Var}{tir\+::\+Var}). 
+
+
+\begin{DoxyParams}{Parameters}
+{\em lhs} & The left operand. \\
+\hline
+{\em rhs} & The right operand. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the result. 
+\end{DoxyReturn}
+\index{tvm\+::\+S\+Equal\+Reducer@{tvm\+::\+S\+Equal\+Reducer}!operator()@{operator()}}
+\index{operator()@{operator()}!tvm\+::\+S\+Equal\+Reducer@{tvm\+::\+S\+Equal\+Reducer}}
+\subsubsection[{\texorpdfstring{operator()(const Object\+Ref \&lhs, const Object\+Ref \&rhs) const }{operator()(const ObjectRef &lhs, const ObjectRef &rhs) const }}]{\setlength{\rightskip}{0pt plus 5cm}bool tvm\+::\+S\+Equal\+Reducer\+::operator() (
+\begin{DoxyParamCaption}
+\item[{const Object\+Ref \&}]{lhs, }
+\item[{const Object\+Ref \&}]{rhs}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classtvm_1_1SEqualReducer_a530065b8aa051c777ccf5b4d71c2c66c}{}\label{classtvm_1_1SEqualReducer_a530065b8aa051c777ccf5b4d71c2c66c}
+
+
+Reduce condition to comparison of two objects. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em lhs} & The left operand. \\
+\hline
+{\em rhs} & The right operand. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the immediate check result. 
+\end{DoxyReturn}
+\index{tvm\+::\+S\+Equal\+Reducer@{tvm\+::\+S\+Equal\+Reducer}!operator()@{operator()}}
+\index{operator()@{operator()}!tvm\+::\+S\+Equal\+Reducer@{tvm\+::\+S\+Equal\+Reducer}}
+\subsubsection[{\texorpdfstring{operator()(const Array$<$ T $>$ \&lhs, const Array$<$ T $>$ \&rhs) const }{operator()(const Array< T > &lhs, const Array< T > &rhs) const }}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T $>$ bool tvm\+::\+S\+Equal\+Reducer\+::operator() (
+\begin{DoxyParamCaption}
+\item[{const {\bf Array}$<$ T $>$ \&}]{lhs, }
+\item[{const {\bf Array}$<$ T $>$ \&}]{rhs}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classtvm_1_1SEqualReducer_a75b0feb43cf0a2b789170bbefb45ccf1}{}\label{classtvm_1_1SEqualReducer_a75b0feb43cf0a2b789170bbefb45ccf1}
+
+
+Reduce condition to comparison of two arrays. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em lhs} & The left operand. \\
+\hline
+{\em rhs} & The right operand. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the immediate check result. 
+\end{DoxyReturn}
+\index{tvm\+::\+S\+Equal\+Reducer@{tvm\+::\+S\+Equal\+Reducer}!operator-\/$>$@{operator-\/$>$}}
+\index{operator-\/$>$@{operator-\/$>$}!tvm\+::\+S\+Equal\+Reducer@{tvm\+::\+S\+Equal\+Reducer}}
+\subsubsection[{\texorpdfstring{operator-\/$>$() const }{operator->() const }}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Handler}$\ast$ tvm\+::\+S\+Equal\+Reducer\+::operator-\/$>$ (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classtvm_1_1SEqualReducer_ab910dfcb744d509bc7ac4854ab1a2abd}{}\label{classtvm_1_1SEqualReducer_ab910dfcb744d509bc7ac4854ab1a2abd}
+\begin{DoxyReturn}{Returns}
+Get the internal handler. 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+include/tvm/node/\hyperlink{structural__equal_8h}{structural\+\_\+equal.\+h}\end{DoxyCompactItemize}

@@ -1,0 +1,25 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="dir_85f3d6180da4edc5eb489febd20e807a" kind="dir">
+    <compoundname>topi/include/topi</compoundname>
+    <innerdir refid="dir_82fbc0b750acd2d16bf657eba2735040">topi/include/topi/contrib</innerdir>
+    <innerdir refid="dir_9a72de697ed8769045f2ae88dc0db9c6">topi/include/topi/cuda</innerdir>
+    <innerdir refid="dir_14640941691eabc830844bef8114fc0c">topi/include/topi/detail</innerdir>
+    <innerdir refid="dir_919d148e3bc0d2ada10274b170555243">topi/include/topi/generic</innerdir>
+    <innerdir refid="dir_501163e255a572c2b8f8622055dcc830">topi/include/topi/nn</innerdir>
+    <innerdir refid="dir_59fae77b9344561cec492d4c84fe16f0">topi/include/topi/rocm</innerdir>
+    <innerdir refid="dir_cf1b2a4a187708c24d9394e639e6417e">topi/include/topi/vision</innerdir>
+    <innerdir refid="dir_9028d5d964ed0471973ff1d6dc49c294">topi/include/topi/x86</innerdir>
+    <innerfile refid="broadcast_8h">broadcast.h</innerfile>
+    <innerfile refid="elemwise_8h">elemwise.h</innerfile>
+    <innerfile refid="topi_2include_2topi_2nn_8h">nn.h</innerfile>
+    <innerfile refid="reduction_8h">reduction.h</innerfile>
+    <innerfile refid="tags_8h">tags.h</innerfile>
+    <innerfile refid="topi_2include_2topi_2transform_8h">transform.h</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="topi/include/topi/"/>
+  </compounddef>
+</doxygen>

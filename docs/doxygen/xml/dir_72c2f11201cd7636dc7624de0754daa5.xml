@@ -1,0 +1,22 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="dir_72c2f11201cd7636dc7624de0754daa5" kind="dir">
+    <compoundname>include/tvm/tir</compoundname>
+    <innerfile refid="buffer_8h">buffer.h</innerfile>
+    <innerfile refid="data__layout_8h">data_layout.h</innerfile>
+    <innerfile refid="tir_2expr_8h">expr.h</innerfile>
+    <innerfile refid="tir_2expr__functor_8h">expr_functor.h</innerfile>
+    <innerfile refid="tir_2function_8h">function.h</innerfile>
+    <innerfile refid="ir__pass_8h">ir_pass.h</innerfile>
+    <innerfile refid="lowered__func_8h">lowered_func.h</innerfile>
+    <innerfile refid="tir_2op_8h">op.h</innerfile>
+    <innerfile refid="stmt_8h">stmt.h</innerfile>
+    <innerfile refid="stmt__functor_8h">stmt_functor.h</innerfile>
+    <innerfile refid="include_2tvm_2tir_2transform_8h">transform.h</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="include/tvm/tir/"/>
+  </compounddef>
+</doxygen>

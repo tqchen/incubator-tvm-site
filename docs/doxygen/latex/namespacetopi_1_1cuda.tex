@@ -1,0 +1,305 @@
+\hypertarget{namespacetopi_1_1cuda}{}\section{topi\+:\+:cuda Namespace Reference}
+\label{namespacetopi_1_1cuda}\index{topi\+::cuda@{topi\+::cuda}}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classtvm_1_1te_1_1Tensor}{tvm\+::te\+::\+Tensor} \hyperlink{namespacetopi_1_1cuda_adf9851df7c1a1e8e847d2e13b2946d4e}{dense\+\_\+cuda} (const \hyperlink{classtvm_1_1Target}{Target} \&target, const \hyperlink{classtvm_1_1te_1_1Tensor}{tvm\+::te\+::\+Tensor} \&data, const \hyperlink{classtvm_1_1te_1_1Tensor}{tvm\+::te\+::\+Tensor} \&weight, const \hyperlink{classtvm_1_1te_1_1Tensor}{tvm\+::te\+::\+Tensor} \&bias, const \hyperlink{namespacetvm_a41918af1a1dc386388639a9d3ad06c5d}{Data\+Type} \&out\+\_\+dtype)
+\begin{DoxyCompactList}\small\item\em Implementation of dense for C\+U\+DA backend. \end{DoxyCompactList}\item 
+\hyperlink{classtvm_1_1te_1_1Schedule}{Schedule} \hyperlink{namespacetopi_1_1cuda_ac4a8c5cd447bc5d71956173b247b3237}{schedule\+\_\+dense} (const \hyperlink{classtvm_1_1Target}{Target} \&target, const \hyperlink{classtvm_1_1Array}{Array}$<$ \hyperlink{classtvm_1_1te_1_1Tensor}{Tensor} $>$ \&outs)
+\begin{DoxyCompactList}\small\item\em Create a C\+U\+DA schedule for dense. \end{DoxyCompactList}\item 
+\hyperlink{classtvm_1_1te_1_1Schedule}{Schedule} \hyperlink{namespacetopi_1_1cuda_aeb133c69956d801df6f9ff349d26ed83}{schedule\+\_\+injective\+\_\+from\+\_\+existing} (\hyperlink{classtvm_1_1te_1_1Schedule}{Schedule} sch, const \hyperlink{classtvm_1_1te_1_1Tensor}{Tensor} \&out)
+\begin{DoxyCompactList}\small\item\em Updates an existing schedule for the given injective ops. \end{DoxyCompactList}\item 
+\hyperlink{classtvm_1_1te_1_1Schedule}{Schedule} \hyperlink{namespacetopi_1_1cuda_a2bf9bfe82cdc71f0c74ec59e67fdeafd}{schedule\+\_\+injective} (const \hyperlink{classtvm_1_1Target}{Target} \&target, const \hyperlink{classtvm_1_1Array}{Array}$<$ \hyperlink{classtvm_1_1te_1_1Tensor}{Tensor} $>$ \&outs)
+\begin{DoxyCompactList}\small\item\em Create a C\+U\+DA schedule for the given output tensors. \end{DoxyCompactList}\item 
+\hyperlink{classtvm_1_1te_1_1Schedule}{Schedule} \hyperlink{namespacetopi_1_1cuda_ac33d664c4579676ce9ac5773acc67c19}{schedule\+\_\+lrn} (const \hyperlink{classtvm_1_1Array}{Array}$<$ \hyperlink{classtvm_1_1te_1_1Tensor}{Tensor} $>$ \&outs)
+\begin{DoxyCompactList}\small\item\em Create a C\+U\+DA schedule for L\+RN. \end{DoxyCompactList}\item 
+\hyperlink{classtvm_1_1te_1_1Schedule}{Schedule} \hyperlink{namespacetopi_1_1cuda_a8f3ae83160a8d6a96b5ddfaca7e1c21b}{schedule\+\_\+pool} (const \hyperlink{classtvm_1_1Target}{Target} \&target, const \hyperlink{classtvm_1_1Array}{Array}$<$ \hyperlink{classtvm_1_1te_1_1Tensor}{Tensor} $>$ \&outs)
+\begin{DoxyCompactList}\small\item\em Create a C\+U\+DA schedule for pool. \end{DoxyCompactList}\item 
+\hyperlink{classtvm_1_1te_1_1Schedule}{Schedule} \hyperlink{namespacetopi_1_1cuda_ad62dabb52c17a9edcfbeb34cf66b4c4e}{schedule\+\_\+global\+\_\+pool} (const \hyperlink{classtvm_1_1Target}{Target} \&target, const \hyperlink{classtvm_1_1Array}{Array}$<$ \hyperlink{classtvm_1_1te_1_1Tensor}{Tensor} $>$ \&outs)
+\begin{DoxyCompactList}\small\item\em Create a C\+U\+DA schedule for global\+\_\+pool. \end{DoxyCompactList}\item 
+\hyperlink{classtvm_1_1te_1_1Schedule}{Schedule} \hyperlink{namespacetopi_1_1cuda_a308601fa6af41c20a2864501fd0cda80}{Schedule\+Reduce} (const \hyperlink{classtvm_1_1Target}{Target} \&target, \hyperlink{classtvm_1_1te_1_1Operation}{Operation} op, \hyperlink{classtvm_1_1te_1_1Schedule}{Schedule} sch, bool is\+\_\+idx\+\_\+reduce=false)
+\begin{DoxyCompactList}\small\item\em Schedule a given reduce operation. \end{DoxyCompactList}\item 
+void \hyperlink{namespacetopi_1_1cuda_a07255e046847302abd54dd2e02a84354}{Traverse\+Before\+Reduce} (\hyperlink{classtvm_1_1te_1_1Schedule}{Schedule} s, \hyperlink{classtvm_1_1te_1_1Operation}{Operation} op)
+\begin{DoxyCompactList}\small\item\em Recursively traverse operator inputs, setting injective inputs to be computed inline. \end{DoxyCompactList}\item 
+void \hyperlink{namespacetopi_1_1cuda_a3420d2910f604087789ab4c96850f816}{Traverse\+After\+Reduce} (const \hyperlink{classtvm_1_1Target}{Target} \&target, \hyperlink{classtvm_1_1te_1_1Schedule}{Schedule} s, \hyperlink{classtvm_1_1te_1_1Operation}{Operation} op)
+\begin{DoxyCompactList}\small\item\em Schedule a reduce op, then invoke Traverse\+Before\+Reduce on each of the op\textquotesingle{}s inputs. \end{DoxyCompactList}\item 
+\hyperlink{classtvm_1_1te_1_1Schedule}{Schedule} \hyperlink{namespacetopi_1_1cuda_aad0c9654034582022e8e81e82ff08349}{schedule\+\_\+reduce} (const \hyperlink{classtvm_1_1Target}{Target} \&target, \hyperlink{classtvm_1_1Array}{Array}$<$ \hyperlink{classtvm_1_1te_1_1Tensor}{Tensor} $>$ outs)
+\begin{DoxyCompactList}\small\item\em Create a C\+U\+DA schedule for a reduce operation. \end{DoxyCompactList}\item 
+\hyperlink{classtvm_1_1te_1_1Schedule}{Schedule} \hyperlink{namespacetopi_1_1cuda_a068a59d0860e73f880133e87f352629d}{schedule\+\_\+softmax} (const \hyperlink{classtvm_1_1Target}{Target} \&target, const \hyperlink{classtvm_1_1Array}{Array}$<$ \hyperlink{classtvm_1_1te_1_1Tensor}{Tensor} $>$ \&outs)
+\begin{DoxyCompactList}\small\item\em Create a C\+U\+DA schedule for the given softmax output tensors. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Function Documentation}
+\index{topi\+::cuda@{topi\+::cuda}!dense\+\_\+cuda@{dense\+\_\+cuda}}
+\index{dense\+\_\+cuda@{dense\+\_\+cuda}!topi\+::cuda@{topi\+::cuda}}
+\subsubsection[{\texorpdfstring{dense\+\_\+cuda(const Target \&target, const tvm\+::te\+::\+Tensor \&data, const tvm\+::te\+::\+Tensor \&weight, const tvm\+::te\+::\+Tensor \&bias, const Data\+Type \&out\+\_\+dtype)}{dense_cuda(const Target &target, const tvm::te::Tensor &data, const tvm::te::Tensor &weight, const tvm::te::Tensor &bias, const DataType &out_dtype)}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf tvm\+::te\+::\+Tensor} topi\+::cuda\+::dense\+\_\+cuda (
+\begin{DoxyParamCaption}
+\item[{const {\bf Target} \&}]{target, }
+\item[{const {\bf tvm\+::te\+::\+Tensor} \&}]{data, }
+\item[{const {\bf tvm\+::te\+::\+Tensor} \&}]{weight, }
+\item[{const {\bf tvm\+::te\+::\+Tensor} \&}]{bias, }
+\item[{const {\bf Data\+Type} \&}]{out\+\_\+dtype}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{namespacetopi_1_1cuda_adf9851df7c1a1e8e847d2e13b2946d4e}{}\label{namespacetopi_1_1cuda_adf9851df7c1a1e8e847d2e13b2946d4e}
+
+
+Implementation of dense for C\+U\+DA backend. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em target} & The target device \\
+\hline
+{\em data} & Tensor with shape \mbox{[}batch, in\+\_\+dim\mbox{]} \\
+\hline
+{\em weight} & Tensor with shape \mbox{[}out\+\_\+dim, in\+\_\+dim\mbox{]} \\
+\hline
+{\em bias} & Tensor with shape \mbox{[}out\+\_\+dim\mbox{]}. Optional; to omit bias, pass Tensor() \\
+\hline
+{\em out\+\_\+dtype} & Output data type. Used for mixed precision.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Tensor with shape \mbox{[}batch, out\+\_\+dim\mbox{]} 
+\end{DoxyReturn}
+\index{topi\+::cuda@{topi\+::cuda}!schedule\+\_\+dense@{schedule\+\_\+dense}}
+\index{schedule\+\_\+dense@{schedule\+\_\+dense}!topi\+::cuda@{topi\+::cuda}}
+\subsubsection[{\texorpdfstring{schedule\+\_\+dense(const Target \&target, const Array$<$ Tensor $>$ \&outs)}{schedule_dense(const Target &target, const Array< Tensor > &outs)}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Schedule} topi\+::cuda\+::schedule\+\_\+dense (
+\begin{DoxyParamCaption}
+\item[{const {\bf Target} \&}]{target, }
+\item[{const {\bf Array}$<$ {\bf Tensor} $>$ \&}]{outs}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{namespacetopi_1_1cuda_ac4a8c5cd447bc5d71956173b247b3237}{}\label{namespacetopi_1_1cuda_ac4a8c5cd447bc5d71956173b247b3237}
+
+
+Create a C\+U\+DA schedule for dense. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em target} & The target to generate a schedule for. \\
+\hline
+{\em outs} & The output tensors.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A schedule for the given ops. 
+\end{DoxyReturn}
+\index{topi\+::cuda@{topi\+::cuda}!schedule\+\_\+global\+\_\+pool@{schedule\+\_\+global\+\_\+pool}}
+\index{schedule\+\_\+global\+\_\+pool@{schedule\+\_\+global\+\_\+pool}!topi\+::cuda@{topi\+::cuda}}
+\subsubsection[{\texorpdfstring{schedule\+\_\+global\+\_\+pool(const Target \&target, const Array$<$ Tensor $>$ \&outs)}{schedule_global_pool(const Target &target, const Array< Tensor > &outs)}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Schedule} topi\+::cuda\+::schedule\+\_\+global\+\_\+pool (
+\begin{DoxyParamCaption}
+\item[{const {\bf Target} \&}]{target, }
+\item[{const {\bf Array}$<$ {\bf Tensor} $>$ \&}]{outs}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{namespacetopi_1_1cuda_ad62dabb52c17a9edcfbeb34cf66b4c4e}{}\label{namespacetopi_1_1cuda_ad62dabb52c17a9edcfbeb34cf66b4c4e}
+
+
+Create a C\+U\+DA schedule for global\+\_\+pool. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em target} & The target to generate a schedule for. \\
+\hline
+{\em outs} & The output tensors.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A schedule for the given ops. 
+\end{DoxyReturn}
+\index{topi\+::cuda@{topi\+::cuda}!schedule\+\_\+injective@{schedule\+\_\+injective}}
+\index{schedule\+\_\+injective@{schedule\+\_\+injective}!topi\+::cuda@{topi\+::cuda}}
+\subsubsection[{\texorpdfstring{schedule\+\_\+injective(const Target \&target, const Array$<$ Tensor $>$ \&outs)}{schedule_injective(const Target &target, const Array< Tensor > &outs)}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Schedule} topi\+::cuda\+::schedule\+\_\+injective (
+\begin{DoxyParamCaption}
+\item[{const {\bf Target} \&}]{target, }
+\item[{const {\bf Array}$<$ {\bf Tensor} $>$ \&}]{outs}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{namespacetopi_1_1cuda_a2bf9bfe82cdc71f0c74ec59e67fdeafd}{}\label{namespacetopi_1_1cuda_a2bf9bfe82cdc71f0c74ec59e67fdeafd}
+
+
+Create a C\+U\+DA schedule for the given output tensors. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em target} & The target to generate a schedule for. \\
+\hline
+{\em outs} & The output tensors.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A schedule for the given ops. 
+\end{DoxyReturn}
+\index{topi\+::cuda@{topi\+::cuda}!schedule\+\_\+injective\+\_\+from\+\_\+existing@{schedule\+\_\+injective\+\_\+from\+\_\+existing}}
+\index{schedule\+\_\+injective\+\_\+from\+\_\+existing@{schedule\+\_\+injective\+\_\+from\+\_\+existing}!topi\+::cuda@{topi\+::cuda}}
+\subsubsection[{\texorpdfstring{schedule\+\_\+injective\+\_\+from\+\_\+existing(\+Schedule sch, const Tensor \&out)}{schedule_injective_from_existing(Schedule sch, const Tensor &out)}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Schedule} topi\+::cuda\+::schedule\+\_\+injective\+\_\+from\+\_\+existing (
+\begin{DoxyParamCaption}
+\item[{{\bf Schedule}}]{sch, }
+\item[{const {\bf Tensor} \&}]{out}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{namespacetopi_1_1cuda_aeb133c69956d801df6f9ff349d26ed83}{}\label{namespacetopi_1_1cuda_aeb133c69956d801df6f9ff349d26ed83}
+
+
+Updates an existing schedule for the given injective ops. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em sch} & The schedule to update. \\
+\hline
+{\em out} & The tensor representing the injective op.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The updated schedule. 
+\end{DoxyReturn}
+\index{topi\+::cuda@{topi\+::cuda}!schedule\+\_\+lrn@{schedule\+\_\+lrn}}
+\index{schedule\+\_\+lrn@{schedule\+\_\+lrn}!topi\+::cuda@{topi\+::cuda}}
+\subsubsection[{\texorpdfstring{schedule\+\_\+lrn(const Array$<$ Tensor $>$ \&outs)}{schedule_lrn(const Array< Tensor > &outs)}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Schedule} topi\+::cuda\+::schedule\+\_\+lrn (
+\begin{DoxyParamCaption}
+\item[{const {\bf Array}$<$ {\bf Tensor} $>$ \&}]{outs}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{namespacetopi_1_1cuda_ac33d664c4579676ce9ac5773acc67c19}{}\label{namespacetopi_1_1cuda_ac33d664c4579676ce9ac5773acc67c19}
+
+
+Create a C\+U\+DA schedule for L\+RN. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em outs} & The output tensors. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A schedule for the given ops. 
+\end{DoxyReturn}
+\index{topi\+::cuda@{topi\+::cuda}!schedule\+\_\+pool@{schedule\+\_\+pool}}
+\index{schedule\+\_\+pool@{schedule\+\_\+pool}!topi\+::cuda@{topi\+::cuda}}
+\subsubsection[{\texorpdfstring{schedule\+\_\+pool(const Target \&target, const Array$<$ Tensor $>$ \&outs)}{schedule_pool(const Target &target, const Array< Tensor > &outs)}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Schedule} topi\+::cuda\+::schedule\+\_\+pool (
+\begin{DoxyParamCaption}
+\item[{const {\bf Target} \&}]{target, }
+\item[{const {\bf Array}$<$ {\bf Tensor} $>$ \&}]{outs}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{namespacetopi_1_1cuda_a8f3ae83160a8d6a96b5ddfaca7e1c21b}{}\label{namespacetopi_1_1cuda_a8f3ae83160a8d6a96b5ddfaca7e1c21b}
+
+
+Create a C\+U\+DA schedule for pool. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em target} & The target to generate a schedule for. \\
+\hline
+{\em outs} & The output tensors.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A schedule for the given ops. 
+\end{DoxyReturn}
+\index{topi\+::cuda@{topi\+::cuda}!schedule\+\_\+reduce@{schedule\+\_\+reduce}}
+\index{schedule\+\_\+reduce@{schedule\+\_\+reduce}!topi\+::cuda@{topi\+::cuda}}
+\subsubsection[{\texorpdfstring{schedule\+\_\+reduce(const Target \&target, Array$<$ Tensor $>$ outs)}{schedule_reduce(const Target &target, Array< Tensor > outs)}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Schedule} topi\+::cuda\+::schedule\+\_\+reduce (
+\begin{DoxyParamCaption}
+\item[{const {\bf Target} \&}]{target, }
+\item[{{\bf Array}$<$ {\bf Tensor} $>$}]{outs}
+\end{DoxyParamCaption}
+)}\hypertarget{namespacetopi_1_1cuda_aad0c9654034582022e8e81e82ff08349}{}\label{namespacetopi_1_1cuda_aad0c9654034582022e8e81e82ff08349}
+
+
+Create a C\+U\+DA schedule for a reduce operation. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em target} & The target to generate a schedule for. \\
+\hline
+{\em outs} & The output tensors.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A schedule for the given ops. 
+\end{DoxyReturn}
+\index{topi\+::cuda@{topi\+::cuda}!schedule\+\_\+softmax@{schedule\+\_\+softmax}}
+\index{schedule\+\_\+softmax@{schedule\+\_\+softmax}!topi\+::cuda@{topi\+::cuda}}
+\subsubsection[{\texorpdfstring{schedule\+\_\+softmax(const Target \&target, const Array$<$ Tensor $>$ \&outs)}{schedule_softmax(const Target &target, const Array< Tensor > &outs)}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Schedule} topi\+::cuda\+::schedule\+\_\+softmax (
+\begin{DoxyParamCaption}
+\item[{const {\bf Target} \&}]{target, }
+\item[{const {\bf Array}$<$ {\bf Tensor} $>$ \&}]{outs}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{namespacetopi_1_1cuda_a068a59d0860e73f880133e87f352629d}{}\label{namespacetopi_1_1cuda_a068a59d0860e73f880133e87f352629d}
+
+
+Create a C\+U\+DA schedule for the given softmax output tensors. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em target} & The target to generate a schedule for. \\
+\hline
+{\em outs} & The output tensors.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A schedule for the given ops. 
+\end{DoxyReturn}
+\index{topi\+::cuda@{topi\+::cuda}!Schedule\+Reduce@{Schedule\+Reduce}}
+\index{Schedule\+Reduce@{Schedule\+Reduce}!topi\+::cuda@{topi\+::cuda}}
+\subsubsection[{\texorpdfstring{Schedule\+Reduce(const Target \&target, Operation op, Schedule sch, bool is\+\_\+idx\+\_\+reduce=false)}{ScheduleReduce(const Target &target, Operation op, Schedule sch, bool is_idx_reduce=false)}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Schedule} topi\+::cuda\+::\+Schedule\+Reduce (
+\begin{DoxyParamCaption}
+\item[{const {\bf Target} \&}]{target, }
+\item[{{\bf Operation}}]{op, }
+\item[{{\bf Schedule}}]{sch, }
+\item[{bool}]{is\+\_\+idx\+\_\+reduce = {\ttfamily false}}
+\end{DoxyParamCaption}
+)}\hypertarget{namespacetopi_1_1cuda_a308601fa6af41c20a2864501fd0cda80}{}\label{namespacetopi_1_1cuda_a308601fa6af41c20a2864501fd0cda80}
+
+
+Schedule a given reduce operation. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em target} & The target to generate a schedule for. \\
+\hline
+{\em op} & The operation representing the injective operation. \\
+\hline
+{\em sch} & The schedule to apply this scheduling to \\
+\hline
+{\em is\+\_\+idx\+\_\+reduce} & Pass true to schedule a reduce op that returns an index, such as argmax or argmin.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The schedule given by sch 
+\end{DoxyReturn}
+\index{topi\+::cuda@{topi\+::cuda}!Traverse\+After\+Reduce@{Traverse\+After\+Reduce}}
+\index{Traverse\+After\+Reduce@{Traverse\+After\+Reduce}!topi\+::cuda@{topi\+::cuda}}
+\subsubsection[{\texorpdfstring{Traverse\+After\+Reduce(const Target \&target, Schedule s, Operation op)}{TraverseAfterReduce(const Target &target, Schedule s, Operation op)}}]{\setlength{\rightskip}{0pt plus 5cm}void topi\+::cuda\+::\+Traverse\+After\+Reduce (
+\begin{DoxyParamCaption}
+\item[{const {\bf Target} \&}]{target, }
+\item[{{\bf Schedule}}]{s, }
+\item[{{\bf Operation}}]{op}
+\end{DoxyParamCaption}
+)}\hypertarget{namespacetopi_1_1cuda_a3420d2910f604087789ab4c96850f816}{}\label{namespacetopi_1_1cuda_a3420d2910f604087789ab4c96850f816}
+
+
+Schedule a reduce op, then invoke Traverse\+Before\+Reduce on each of the op\textquotesingle{}s inputs. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em target} & The target to generate a schedule for. \\
+\hline
+{\em s} & The schedule we are building \\
+\hline
+{\em op} & The reduce op \\
+\hline
+\end{DoxyParams}
+\index{topi\+::cuda@{topi\+::cuda}!Traverse\+Before\+Reduce@{Traverse\+Before\+Reduce}}
+\index{Traverse\+Before\+Reduce@{Traverse\+Before\+Reduce}!topi\+::cuda@{topi\+::cuda}}
+\subsubsection[{\texorpdfstring{Traverse\+Before\+Reduce(\+Schedule s, Operation op)}{TraverseBeforeReduce(Schedule s, Operation op)}}]{\setlength{\rightskip}{0pt plus 5cm}void topi\+::cuda\+::\+Traverse\+Before\+Reduce (
+\begin{DoxyParamCaption}
+\item[{{\bf Schedule}}]{s, }
+\item[{{\bf Operation}}]{op}
+\end{DoxyParamCaption}
+)}\hypertarget{namespacetopi_1_1cuda_a07255e046847302abd54dd2e02a84354}{}\label{namespacetopi_1_1cuda_a07255e046847302abd54dd2e02a84354}
+
+
+Recursively traverse operator inputs, setting injective inputs to be computed inline. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em s} & The schedule we are building \\
+\hline
+{\em op} & The current op in the traversal \\
+\hline
+\end{DoxyParams}

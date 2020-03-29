@@ -1,0 +1,83 @@
+\hypertarget{classtvm_1_1relay_1_1OpStrategy}{}\section{tvm\+:\+:relay\+:\+:Op\+Strategy Class Reference}
+\label{classtvm_1_1relay_1_1OpStrategy}\index{tvm\+::relay\+::\+Op\+Strategy@{tvm\+::relay\+::\+Op\+Strategy}}
+
+
+Operator strategy class.  
+
+
+
+
+{\ttfamily \#include $<$op\+\_\+strategy.\+h$>$}
+
+
+
+Inheritance diagram for tvm\+:\+:relay\+:\+:Op\+Strategy\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=220pt]{classtvm_1_1relay_1_1OpStrategy__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for tvm\+:\+:relay\+:\+:Op\+Strategy\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=220pt]{classtvm_1_1relay_1_1OpStrategy__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{classtvm_1_1relay_1_1OpStrategy_a6d7e387686881dde1e7aef025a1a8a2a}{Add\+Implementation} (\hyperlink{namespacetvm_1_1relay_a63a0893a8379998657ddff39a3162188}{F\+T\+V\+M\+Compute} fcompute, \hyperlink{namespacetvm_1_1relay_af8f7c5928c79389da637c35df6c8557c}{F\+T\+V\+M\+Schedule} fschedule, std\+::string name, int plevel)
+\begin{DoxyCompactList}\small\item\em Add an implementation. \end{DoxyCompactList}\item 
+\hyperlink{classtvm_1_1relay_1_1OpStrategy_a2daaa225e3fdf5c5a20df0d81fba10d9}{T\+V\+M\+\_\+\+D\+E\+F\+I\+N\+E\+\_\+\+M\+U\+T\+A\+B\+L\+E\+\_\+\+O\+B\+J\+E\+C\+T\+\_\+\+R\+E\+F\+\_\+\+M\+E\+T\+H\+O\+DS} (\hyperlink{classtvm_1_1relay_1_1OpStrategy}{Op\+Strategy}, Object\+Ref, \hyperlink{classtvm_1_1relay_1_1OpStrategyNode}{Op\+Strategy\+Node})
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Operator strategy class. 
+
+\subsection{Member Function Documentation}
+\index{tvm\+::relay\+::\+Op\+Strategy@{tvm\+::relay\+::\+Op\+Strategy}!Add\+Implementation@{Add\+Implementation}}
+\index{Add\+Implementation@{Add\+Implementation}!tvm\+::relay\+::\+Op\+Strategy@{tvm\+::relay\+::\+Op\+Strategy}}
+\subsubsection[{\texorpdfstring{Add\+Implementation(\+F\+T\+V\+M\+Compute fcompute, F\+T\+V\+M\+Schedule fschedule, std\+::string name, int plevel)}{AddImplementation(FTVMCompute fcompute, FTVMSchedule fschedule, std::string name, int plevel)}}]{\setlength{\rightskip}{0pt plus 5cm}void tvm\+::relay\+::\+Op\+Strategy\+::\+Add\+Implementation (
+\begin{DoxyParamCaption}
+\item[{{\bf F\+T\+V\+M\+Compute}}]{fcompute, }
+\item[{{\bf F\+T\+V\+M\+Schedule}}]{fschedule, }
+\item[{std\+::string}]{name, }
+\item[{int}]{plevel}
+\end{DoxyParamCaption}
+)}\hypertarget{classtvm_1_1relay_1_1OpStrategy_a6d7e387686881dde1e7aef025a1a8a2a}{}\label{classtvm_1_1relay_1_1OpStrategy_a6d7e387686881dde1e7aef025a1a8a2a}
+
+
+Add an implementation. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em fcompute} & Compute function \\
+\hline
+{\em fschedule} & Schedule function \\
+\hline
+{\em name} & Name of the implementation \\
+\hline
+{\em plevel} & Priority level of the implementation \\
+\hline
+\end{DoxyParams}
+\index{tvm\+::relay\+::\+Op\+Strategy@{tvm\+::relay\+::\+Op\+Strategy}!T\+V\+M\+\_\+\+D\+E\+F\+I\+N\+E\+\_\+\+M\+U\+T\+A\+B\+L\+E\+\_\+\+O\+B\+J\+E\+C\+T\+\_\+\+R\+E\+F\+\_\+\+M\+E\+T\+H\+O\+DS@{T\+V\+M\+\_\+\+D\+E\+F\+I\+N\+E\+\_\+\+M\+U\+T\+A\+B\+L\+E\+\_\+\+O\+B\+J\+E\+C\+T\+\_\+\+R\+E\+F\+\_\+\+M\+E\+T\+H\+O\+DS}}
+\index{T\+V\+M\+\_\+\+D\+E\+F\+I\+N\+E\+\_\+\+M\+U\+T\+A\+B\+L\+E\+\_\+\+O\+B\+J\+E\+C\+T\+\_\+\+R\+E\+F\+\_\+\+M\+E\+T\+H\+O\+DS@{T\+V\+M\+\_\+\+D\+E\+F\+I\+N\+E\+\_\+\+M\+U\+T\+A\+B\+L\+E\+\_\+\+O\+B\+J\+E\+C\+T\+\_\+\+R\+E\+F\+\_\+\+M\+E\+T\+H\+O\+DS}!tvm\+::relay\+::\+Op\+Strategy@{tvm\+::relay\+::\+Op\+Strategy}}
+\subsubsection[{\texorpdfstring{T\+V\+M\+\_\+\+D\+E\+F\+I\+N\+E\+\_\+\+M\+U\+T\+A\+B\+L\+E\+\_\+\+O\+B\+J\+E\+C\+T\+\_\+\+R\+E\+F\+\_\+\+M\+E\+T\+H\+O\+D\+S(\+Op\+Strategy, Object\+Ref, Op\+Strategy\+Node)}{TVM_DEFINE_MUTABLE_OBJECT_REF_METHODS(OpStrategy, ObjectRef, OpStrategyNode)}}]{\setlength{\rightskip}{0pt plus 5cm}tvm\+::relay\+::\+Op\+Strategy\+::\+T\+V\+M\+\_\+\+D\+E\+F\+I\+N\+E\+\_\+\+M\+U\+T\+A\+B\+L\+E\+\_\+\+O\+B\+J\+E\+C\+T\+\_\+\+R\+E\+F\+\_\+\+M\+E\+T\+H\+O\+DS (
+\begin{DoxyParamCaption}
+\item[{{\bf Op\+Strategy}}]{, }
+\item[{Object\+Ref}]{, }
+\item[{{\bf Op\+Strategy\+Node}}]{}
+\end{DoxyParamCaption}
+)}\hypertarget{classtvm_1_1relay_1_1OpStrategy_a2daaa225e3fdf5c5a20df0d81fba10d9}{}\label{classtvm_1_1relay_1_1OpStrategy_a2daaa225e3fdf5c5a20df0d81fba10d9}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+include/tvm/relay/\hyperlink{op__strategy_8h}{op\+\_\+strategy.\+h}\end{DoxyCompactItemize}

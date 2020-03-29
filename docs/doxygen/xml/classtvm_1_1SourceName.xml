@@ -1,0 +1,92 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="classtvm_1_1SourceName" kind="class" language="C++" prot="public">
+    <compoundname>tvm::SourceName</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">ObjectRef</basecompoundref>
+    <includes refid="span_8h" local="no">span.h</includes>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="classtvm_1_1SourceName_1a84de4459dbad5f4c911b2b35ac549479" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classtvm_1_1SourceName" kindref="compound">SourceName</ref></type>
+        <definition>static SourceName tvm::SourceName::Get</definition>
+        <argsstring>(const std::string &amp;name)</argsstring>
+        <name>Get</name>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>name</declname>
+        </param>
+        <briefdescription>
+<para>Get an <ref refid="classtvm_1_1SourceName" kindref="compound">SourceName</ref> for a given operator name. Will raise an error if the source name has not been registered. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>name</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Name of the operator. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para><ref refid="classtvm_1_1SourceName" kindref="compound">SourceName</ref> valid throughout program lifetime. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/ir/span.h" line="67" column="1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classtvm_1_1SourceName_1a64311c063eff4fe9716c7016096bc756" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>tvm::SourceName::TVM_DEFINE_OBJECT_REF_METHODS</definition>
+        <argsstring>(SourceName, ObjectRef, SourceNameNode)</argsstring>
+        <name>TVM_DEFINE_OBJECT_REF_METHODS</name>
+        <param>
+          <type><ref refid="classtvm_1_1SourceName" kindref="compound">SourceName</ref></type>
+        </param>
+        <param>
+          <type>ObjectRef</type>
+        </param>
+        <param>
+          <type><ref refid="classtvm_1_1SourceNameNode" kindref="compound">SourceNameNode</ref></type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/ir/span.h" line="69" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>The source name of a file span. </para>    </briefdescription>
+    <detaileddescription>
+<para><simplesect kind="see"><para><ref refid="classtvm_1_1SourceNameNode" kindref="compound">SourceNameNode</ref>, <ref refid="classtvm_1_1Span" kindref="compound">Span</ref> </para></simplesect>
+</para>    </detaileddescription>
+    <inheritancegraph>
+      <node id="6857">
+        <label>ObjectRef</label>
+      </node>
+      <node id="6856">
+        <label>tvm::SourceName</label>
+        <link refid="classtvm_1_1SourceName"/>
+        <childnode refid="6857" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="6859">
+        <label>ObjectRef</label>
+      </node>
+      <node id="6858">
+        <label>tvm::SourceName</label>
+        <link refid="classtvm_1_1SourceName"/>
+        <childnode refid="6859" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="include/tvm/ir/span.h" line="59" column="1" bodyfile="include/tvm/ir/span.h" bodystart="59" bodyend="70"/>
+    <listofallmembers>
+      <member refid="classtvm_1_1SourceName_1a84de4459dbad5f4c911b2b35ac549479" prot="public" virt="non-virtual"><scope>tvm::SourceName</scope><name>Get</name></member>
+      <member refid="classtvm_1_1SourceName_1a64311c063eff4fe9716c7016096bc756" prot="public" virt="non-virtual"><scope>tvm::SourceName</scope><name>TVM_DEFINE_OBJECT_REF_METHODS</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

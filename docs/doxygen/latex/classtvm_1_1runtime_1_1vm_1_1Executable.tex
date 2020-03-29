@@ -1,0 +1,312 @@
+\hypertarget{classtvm_1_1runtime_1_1vm_1_1Executable}{}\section{tvm\+:\+:runtime\+:\+:vm\+:\+:Executable Class Reference}
+\label{classtvm_1_1runtime_1_1vm_1_1Executable}\index{tvm\+::runtime\+::vm\+::\+Executable@{tvm\+::runtime\+::vm\+::\+Executable}}
+
+
+The executable emitted by the VM compiler.  
+
+
+
+
+{\ttfamily \#include $<$vm.\+h$>$}
+
+
+
+Inheritance diagram for tvm\+:\+:runtime\+:\+:vm\+:\+:Executable\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{classtvm_1_1runtime_1_1vm_1_1Executable__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for tvm\+:\+:runtime\+:\+:vm\+:\+:Executable\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{classtvm_1_1runtime_1_1vm_1_1Executable__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classtvm_1_1runtime_1_1PackedFunc}{Packed\+Func} \hyperlink{classtvm_1_1runtime_1_1vm_1_1Executable_af052de1610aae050d4363b6625265e86}{Get\+Function} (const std\+::string \&name, const \hyperlink{classtvm_1_1runtime_1_1ObjectPtr}{Object\+Ptr}$<$ \hyperlink{classtvm_1_1runtime_1_1Object}{Object} $>$ \&sptr\+\_\+to\+\_\+self) final
+\begin{DoxyCompactList}\small\item\em Get a \hyperlink{classtvm_1_1runtime_1_1PackedFunc}{Packed\+Func} from an executable module. \end{DoxyCompactList}\item 
+\hyperlink{structTVMByteArray}{T\+V\+M\+Byte\+Array} \hyperlink{classtvm_1_1runtime_1_1vm_1_1Executable_af949a66ffb86ea941dec43fe95f8d898}{Save} ()
+\begin{DoxyCompactList}\small\item\em Serialize the executable into global section, constant section, and code section. \end{DoxyCompactList}\item 
+std\+::string \hyperlink{classtvm_1_1runtime_1_1vm_1_1Executable_a83307b4609d46297dfd7fd81e143ea38}{Get\+Bytecode} () const 
+\begin{DoxyCompactList}\small\item\em Get the serialized form of the {\ttfamily functions}. This is essentially bytecode serialization. \end{DoxyCompactList}\item 
+std\+::string \hyperlink{classtvm_1_1runtime_1_1vm_1_1Executable_a43cc6b3ccb971d2ddf39e2d969d8a43e}{Stats} () const 
+\begin{DoxyCompactList}\small\item\em Print the detailed statistics of the given code, i.\+e. number of globls and constants, etc. \end{DoxyCompactList}\item 
+\hyperlink{classtvm_1_1runtime_1_1Module}{runtime\+::\+Module} \hyperlink{classtvm_1_1runtime_1_1vm_1_1Executable_ae02ad73c98dd82f842796bfaa1d018a4}{Get\+Lib} () const 
+\begin{DoxyCompactList}\small\item\em Get the {\ttfamily lib} module in an executable. Users have the flexibility to call {\ttfamily export\+\_\+library} from the frontend to save the library to disk. \end{DoxyCompactList}\item 
+int \hyperlink{classtvm_1_1runtime_1_1vm_1_1Executable_a3a970ab4d5a437c367f960824e5df685}{Get\+Function\+Arity} (std\+::string func) const 
+\begin{DoxyCompactList}\small\item\em Get the arity of the VM Fucntion. \end{DoxyCompactList}\item 
+std\+::string \hyperlink{classtvm_1_1runtime_1_1vm_1_1Executable_a8f438b473ed27c3fe3a1bc95fbb79b69}{Get\+Function\+Parameter\+Name} (std\+::string func, uint32\+\_\+t index) const 
+\begin{DoxyCompactList}\small\item\em Get the parameter name given the function name and parameter index. \end{DoxyCompactList}\item 
+virtual \hyperlink{classtvm_1_1runtime_1_1vm_1_1Executable_a99432cdf9ce74de84f08feec9b08ed5e}{$\sim$\+Executable} ()
+\item 
+const char $\ast$ \hyperlink{classtvm_1_1runtime_1_1vm_1_1Executable_aef4f3663ee57fcbdf2d775f4dbbe79dc}{type\+\_\+key} () const final
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \hyperlink{classtvm_1_1runtime_1_1Module}{runtime\+::\+Module} \hyperlink{classtvm_1_1runtime_1_1vm_1_1Executable_a4eeb4c5cfb8830d32d96756fd1dc58d0}{Load} (const std\+::string \&code, const \hyperlink{classtvm_1_1runtime_1_1Module}{runtime\+::\+Module} \hyperlink{classtvm_1_1runtime_1_1vm_1_1Executable_a0d69e974364e3f2eb643c25b77c74015}{lib})
+\begin{DoxyCompactList}\small\item\em Load the saved VM executable. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classtvm_1_1runtime_1_1Module}{runtime\+::\+Module} \hyperlink{classtvm_1_1runtime_1_1vm_1_1Executable_a0d69e974364e3f2eb643c25b77c74015}{lib}
+\begin{DoxyCompactList}\small\item\em The runtime module/library that contains both the host and also the device code when executing on non-\/\+C\+PU devices. \end{DoxyCompactList}\item 
+std\+::vector$<$ \hyperlink{classtvm_1_1runtime_1_1ObjectRef}{Object\+Ref} $>$ \hyperlink{classtvm_1_1runtime_1_1vm_1_1Executable_a64a56d507939eee688f485057a2c7d2e}{constants}
+\begin{DoxyCompactList}\small\item\em The global constant pool. \end{DoxyCompactList}\item 
+std\+::unordered\+\_\+map$<$ std\+::string, \hyperlink{namespacetvm_1_1runtime_1_1vm_a3597867d2db714bf760876a23d6b7d3d}{Index} $>$ \hyperlink{classtvm_1_1runtime_1_1vm_1_1Executable_a9a808f0c63ae0d65ad8d625e3a7cb749}{global\+\_\+map}
+\begin{DoxyCompactList}\small\item\em A map from globals (as strings) to their index in the function map. \end{DoxyCompactList}\item 
+std\+::unordered\+\_\+map$<$ std\+::string, \hyperlink{namespacetvm_1_1runtime_1_1vm_a3597867d2db714bf760876a23d6b7d3d}{Index} $>$ \hyperlink{classtvm_1_1runtime_1_1vm_1_1Executable_ab5a31e8670a4f20564abc48610a90e8c}{primitive\+\_\+map}
+\begin{DoxyCompactList}\small\item\em A mapping from the packed function (as string) to the index that corresponds to the position of the {\ttfamily packed\+\_\+funcs} list in a {\ttfamily \hyperlink{classtvm_1_1runtime_1_1vm_1_1VirtualMachine}{Virtual\+Machine}} object. \end{DoxyCompactList}\item 
+std\+::vector$<$ \hyperlink{structtvm_1_1runtime_1_1vm_1_1VMFunction}{V\+M\+Function} $>$ \hyperlink{classtvm_1_1runtime_1_1vm_1_1Executable_af7d75150b6a98a7766a552d7e7e34a11}{functions}
+\begin{DoxyCompactList}\small\item\em The virtual machine\textquotesingle{}s function table. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+The executable emitted by the VM compiler. 
+
+The executable contains information (e.\+g. data in different memory regions) to run in a virtual machine.
+
+
+\begin{DoxyItemize}
+\item Global section, containing all globals.
+\item Constant section, storing the constant pool.
+\item Primitive name section, containing the function name of the primitive ops used by the virtual machine.
+\item Code section, handling the VM functions and bytecode. 
+\end{DoxyItemize}
+
+\subsection{Constructor \& Destructor Documentation}
+\index{tvm\+::runtime\+::vm\+::\+Executable@{tvm\+::runtime\+::vm\+::\+Executable}!````~Executable@{$\sim$\+Executable}}
+\index{````~Executable@{$\sim$\+Executable}!tvm\+::runtime\+::vm\+::\+Executable@{tvm\+::runtime\+::vm\+::\+Executable}}
+\subsubsection[{\texorpdfstring{$\sim$\+Executable()}{~Executable()}}]{\setlength{\rightskip}{0pt plus 5cm}virtual tvm\+::runtime\+::vm\+::\+Executable\+::$\sim$\+Executable (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}\hypertarget{classtvm_1_1runtime_1_1vm_1_1Executable_a99432cdf9ce74de84f08feec9b08ed5e}{}\label{classtvm_1_1runtime_1_1vm_1_1Executable_a99432cdf9ce74de84f08feec9b08ed5e}
+
+
+\subsection{Member Function Documentation}
+\index{tvm\+::runtime\+::vm\+::\+Executable@{tvm\+::runtime\+::vm\+::\+Executable}!Get\+Bytecode@{Get\+Bytecode}}
+\index{Get\+Bytecode@{Get\+Bytecode}!tvm\+::runtime\+::vm\+::\+Executable@{tvm\+::runtime\+::vm\+::\+Executable}}
+\subsubsection[{\texorpdfstring{Get\+Bytecode() const }{GetBytecode() const }}]{\setlength{\rightskip}{0pt plus 5cm}std\+::string tvm\+::runtime\+::vm\+::\+Executable\+::\+Get\+Bytecode (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}\hypertarget{classtvm_1_1runtime_1_1vm_1_1Executable_a83307b4609d46297dfd7fd81e143ea38}{}\label{classtvm_1_1runtime_1_1vm_1_1Executable_a83307b4609d46297dfd7fd81e143ea38}
+
+
+Get the serialized form of the {\ttfamily functions}. This is essentially bytecode serialization. 
+
+\begin{DoxyReturn}{Returns}
+The serialized vm bytecode.
+\end{DoxyReturn}
+\begin{DoxyNote}{Note}
+The bytecode is in the following format\+: func\+\_\+name reg\+\_\+file\+\_\+size num\+\_\+instructions param1 param2 ... paramM instruction1 instruction2 ... instructionN
+\end{DoxyNote}
+Each instruction is printed in the following format\+: opcode num\+\_\+fields field1 ... fieldX \# The text format.
+
+Serializing an {\ttfamily \hyperlink{structtvm_1_1runtime_1_1vm_1_1Instruction}{Instruction}} requires us to deal with the bytecode. Each line of the instructions could be serialized as the following format\+: hash, opcode, f1, f2, ..., fX, field with variable length
+\begin{DoxyEnumerate}
+\item hash\+: the hash of the instruction. This number will be used to help us validate if an instruction is well-\/formed during deserialization.
+\item opcode\+: the opcode code of the instruction.
+\item f1, f2, ..., fX. These fields together represent the fixed fields in an instruction, e.\+g., {\ttfamily from} and {\ttfamily dst} fields of a {\ttfamily Move} instruction. For example, {\ttfamily D\+L\+Data\+Type} will be unpacked into three fields (code, bits, lanes).
+\item The rest of the line indicates the field with variable length, e.\+g., the shape of a tensor, the args used by an {\ttfamily Invok\+Packed} instruction, etc.
+\end{DoxyEnumerate}
+
+The field starting from \# is only used for debugging. The serialized code doesn\textquotesingle{}t contain it, therefore the deserializer doens\textquotesingle{}t need to handle it. \index{tvm\+::runtime\+::vm\+::\+Executable@{tvm\+::runtime\+::vm\+::\+Executable}!Get\+Function@{Get\+Function}}
+\index{Get\+Function@{Get\+Function}!tvm\+::runtime\+::vm\+::\+Executable@{tvm\+::runtime\+::vm\+::\+Executable}}
+\subsubsection[{\texorpdfstring{Get\+Function(const std\+::string \&name, const Object\+Ptr$<$ Object $>$ \&sptr\+\_\+to\+\_\+self) final}{GetFunction(const std::string &name, const ObjectPtr< Object > &sptr_to_self) final}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Packed\+Func} tvm\+::runtime\+::vm\+::\+Executable\+::\+Get\+Function (
+\begin{DoxyParamCaption}
+\item[{const std\+::string \&}]{name, }
+\item[{const {\bf Object\+Ptr}$<$ {\bf Object} $>$ \&}]{sptr\+\_\+to\+\_\+self}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [final]}, {\ttfamily [virtual]}}\hypertarget{classtvm_1_1runtime_1_1vm_1_1Executable_af052de1610aae050d4363b6625265e86}{}\label{classtvm_1_1runtime_1_1vm_1_1Executable_af052de1610aae050d4363b6625265e86}
+
+
+Get a \hyperlink{classtvm_1_1runtime_1_1PackedFunc}{Packed\+Func} from an executable module. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em name} & the name of the function. \\
+\hline
+{\em sptr\+\_\+to\+\_\+self} & The shared\+\_\+ptr that points to this module node.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\hyperlink{classtvm_1_1runtime_1_1PackedFunc}{Packed\+Func} or nullptr when it is not available. 
+\end{DoxyReturn}
+
+
+Implements \hyperlink{classtvm_1_1runtime_1_1ModuleNode_af16bc90e6265eb5492b028308dbb1a25}{tvm\+::runtime\+::\+Module\+Node}.
+
+\index{tvm\+::runtime\+::vm\+::\+Executable@{tvm\+::runtime\+::vm\+::\+Executable}!Get\+Function\+Arity@{Get\+Function\+Arity}}
+\index{Get\+Function\+Arity@{Get\+Function\+Arity}!tvm\+::runtime\+::vm\+::\+Executable@{tvm\+::runtime\+::vm\+::\+Executable}}
+\subsubsection[{\texorpdfstring{Get\+Function\+Arity(std\+::string func) const }{GetFunctionArity(std::string func) const }}]{\setlength{\rightskip}{0pt plus 5cm}int tvm\+::runtime\+::vm\+::\+Executable\+::\+Get\+Function\+Arity (
+\begin{DoxyParamCaption}
+\item[{std\+::string}]{func}
+\end{DoxyParamCaption}
+) const}\hypertarget{classtvm_1_1runtime_1_1vm_1_1Executable_a3a970ab4d5a437c367f960824e5df685}{}\label{classtvm_1_1runtime_1_1vm_1_1Executable_a3a970ab4d5a437c367f960824e5df685}
+
+
+Get the arity of the VM Fucntion. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em func} & Function name. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The number of parameters. 
+\end{DoxyReturn}
+\index{tvm\+::runtime\+::vm\+::\+Executable@{tvm\+::runtime\+::vm\+::\+Executable}!Get\+Function\+Parameter\+Name@{Get\+Function\+Parameter\+Name}}
+\index{Get\+Function\+Parameter\+Name@{Get\+Function\+Parameter\+Name}!tvm\+::runtime\+::vm\+::\+Executable@{tvm\+::runtime\+::vm\+::\+Executable}}
+\subsubsection[{\texorpdfstring{Get\+Function\+Parameter\+Name(std\+::string func, uint32\+\_\+t index) const }{GetFunctionParameterName(std::string func, uint32_t index) const }}]{\setlength{\rightskip}{0pt plus 5cm}std\+::string tvm\+::runtime\+::vm\+::\+Executable\+::\+Get\+Function\+Parameter\+Name (
+\begin{DoxyParamCaption}
+\item[{std\+::string}]{func, }
+\item[{uint32\+\_\+t}]{index}
+\end{DoxyParamCaption}
+) const}\hypertarget{classtvm_1_1runtime_1_1vm_1_1Executable_a8f438b473ed27c3fe3a1bc95fbb79b69}{}\label{classtvm_1_1runtime_1_1vm_1_1Executable_a8f438b473ed27c3fe3a1bc95fbb79b69}
+
+
+Get the parameter name given the function name and parameter index. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em func} & Function name. \\
+\hline
+{\em index} & Parameter index. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The parameter name. 
+\end{DoxyReturn}
+\index{tvm\+::runtime\+::vm\+::\+Executable@{tvm\+::runtime\+::vm\+::\+Executable}!Get\+Lib@{Get\+Lib}}
+\index{Get\+Lib@{Get\+Lib}!tvm\+::runtime\+::vm\+::\+Executable@{tvm\+::runtime\+::vm\+::\+Executable}}
+\subsubsection[{\texorpdfstring{Get\+Lib() const }{GetLib() const }}]{\setlength{\rightskip}{0pt plus 5cm}{\bf runtime\+::\+Module} tvm\+::runtime\+::vm\+::\+Executable\+::\+Get\+Lib (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classtvm_1_1runtime_1_1vm_1_1Executable_ae02ad73c98dd82f842796bfaa1d018a4}{}\label{classtvm_1_1runtime_1_1vm_1_1Executable_ae02ad73c98dd82f842796bfaa1d018a4}
+
+
+Get the {\ttfamily lib} module in an executable. Users have the flexibility to call {\ttfamily export\+\_\+library} from the frontend to save the library to disk. 
+
+\begin{DoxyReturn}{Returns}
+The runtime module that contains the hardwre dependent code. 
+\end{DoxyReturn}
+\index{tvm\+::runtime\+::vm\+::\+Executable@{tvm\+::runtime\+::vm\+::\+Executable}!Load@{Load}}
+\index{Load@{Load}!tvm\+::runtime\+::vm\+::\+Executable@{tvm\+::runtime\+::vm\+::\+Executable}}
+\subsubsection[{\texorpdfstring{Load(const std\+::string \&code, const runtime\+::\+Module lib)}{Load(const std::string &code, const runtime::Module lib)}}]{\setlength{\rightskip}{0pt plus 5cm}static {\bf runtime\+::\+Module} tvm\+::runtime\+::vm\+::\+Executable\+::\+Load (
+\begin{DoxyParamCaption}
+\item[{const std\+::string \&}]{code, }
+\item[{const {\bf runtime\+::\+Module}}]{lib}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}\hypertarget{classtvm_1_1runtime_1_1vm_1_1Executable_a4eeb4c5cfb8830d32d96756fd1dc58d0}{}\label{classtvm_1_1runtime_1_1vm_1_1Executable_a4eeb4c5cfb8830d32d96756fd1dc58d0}
+
+
+Load the saved VM executable. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em code} & The bytecode in string. \\
+\hline
+{\em lib} & The compiled runtime library.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+exe The constructed executable. 
+\end{DoxyReturn}
+\index{tvm\+::runtime\+::vm\+::\+Executable@{tvm\+::runtime\+::vm\+::\+Executable}!Save@{Save}}
+\index{Save@{Save}!tvm\+::runtime\+::vm\+::\+Executable@{tvm\+::runtime\+::vm\+::\+Executable}}
+\subsubsection[{\texorpdfstring{Save()}{Save()}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf T\+V\+M\+Byte\+Array} tvm\+::runtime\+::vm\+::\+Executable\+::\+Save (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{classtvm_1_1runtime_1_1vm_1_1Executable_af949a66ffb86ea941dec43fe95f8d898}{}\label{classtvm_1_1runtime_1_1vm_1_1Executable_af949a66ffb86ea941dec43fe95f8d898}
+
+
+Serialize the executable into global section, constant section, and code section. 
+
+\begin{DoxyReturn}{Returns}
+The binary representation of the VM. 
+\end{DoxyReturn}
+\index{tvm\+::runtime\+::vm\+::\+Executable@{tvm\+::runtime\+::vm\+::\+Executable}!Stats@{Stats}}
+\index{Stats@{Stats}!tvm\+::runtime\+::vm\+::\+Executable@{tvm\+::runtime\+::vm\+::\+Executable}}
+\subsubsection[{\texorpdfstring{Stats() const }{Stats() const }}]{\setlength{\rightskip}{0pt plus 5cm}std\+::string tvm\+::runtime\+::vm\+::\+Executable\+::\+Stats (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}\hypertarget{classtvm_1_1runtime_1_1vm_1_1Executable_a43cc6b3ccb971d2ddf39e2d969d8a43e}{}\label{classtvm_1_1runtime_1_1vm_1_1Executable_a43cc6b3ccb971d2ddf39e2d969d8a43e}
+
+
+Print the detailed statistics of the given code, i.\+e. number of globls and constants, etc. 
+
+\index{tvm\+::runtime\+::vm\+::\+Executable@{tvm\+::runtime\+::vm\+::\+Executable}!type\+\_\+key@{type\+\_\+key}}
+\index{type\+\_\+key@{type\+\_\+key}!tvm\+::runtime\+::vm\+::\+Executable@{tvm\+::runtime\+::vm\+::\+Executable}}
+\subsubsection[{\texorpdfstring{type\+\_\+key() const final}{type_key() const final}}]{\setlength{\rightskip}{0pt plus 5cm}const char$\ast$ tvm\+::runtime\+::vm\+::\+Executable\+::type\+\_\+key (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [final]}, {\ttfamily [virtual]}}\hypertarget{classtvm_1_1runtime_1_1vm_1_1Executable_aef4f3663ee57fcbdf2d775f4dbbe79dc}{}\label{classtvm_1_1runtime_1_1vm_1_1Executable_aef4f3663ee57fcbdf2d775f4dbbe79dc}
+\begin{DoxyReturn}{Returns}
+The per module type key. 
+\end{DoxyReturn}
+\begin{DoxyNote}{Note}
+This key is used to for serializing custom modules. 
+\end{DoxyNote}
+
+
+Implements \hyperlink{classtvm_1_1runtime_1_1ModuleNode_a5834549180e1c668e7126562cea9a557}{tvm\+::runtime\+::\+Module\+Node}.
+
+
+
+\subsection{Member Data Documentation}
+\index{tvm\+::runtime\+::vm\+::\+Executable@{tvm\+::runtime\+::vm\+::\+Executable}!constants@{constants}}
+\index{constants@{constants}!tvm\+::runtime\+::vm\+::\+Executable@{tvm\+::runtime\+::vm\+::\+Executable}}
+\subsubsection[{\texorpdfstring{constants}{constants}}]{\setlength{\rightskip}{0pt plus 5cm}std\+::vector$<${\bf Object\+Ref}$>$ tvm\+::runtime\+::vm\+::\+Executable\+::constants}\hypertarget{classtvm_1_1runtime_1_1vm_1_1Executable_a64a56d507939eee688f485057a2c7d2e}{}\label{classtvm_1_1runtime_1_1vm_1_1Executable_a64a56d507939eee688f485057a2c7d2e}
+
+
+The global constant pool. 
+
+\index{tvm\+::runtime\+::vm\+::\+Executable@{tvm\+::runtime\+::vm\+::\+Executable}!functions@{functions}}
+\index{functions@{functions}!tvm\+::runtime\+::vm\+::\+Executable@{tvm\+::runtime\+::vm\+::\+Executable}}
+\subsubsection[{\texorpdfstring{functions}{functions}}]{\setlength{\rightskip}{0pt plus 5cm}std\+::vector$<${\bf V\+M\+Function}$>$ tvm\+::runtime\+::vm\+::\+Executable\+::functions}\hypertarget{classtvm_1_1runtime_1_1vm_1_1Executable_af7d75150b6a98a7766a552d7e7e34a11}{}\label{classtvm_1_1runtime_1_1vm_1_1Executable_af7d75150b6a98a7766a552d7e7e34a11}
+
+
+The virtual machine\textquotesingle{}s function table. 
+
+\index{tvm\+::runtime\+::vm\+::\+Executable@{tvm\+::runtime\+::vm\+::\+Executable}!global\+\_\+map@{global\+\_\+map}}
+\index{global\+\_\+map@{global\+\_\+map}!tvm\+::runtime\+::vm\+::\+Executable@{tvm\+::runtime\+::vm\+::\+Executable}}
+\subsubsection[{\texorpdfstring{global\+\_\+map}{global_map}}]{\setlength{\rightskip}{0pt plus 5cm}std\+::unordered\+\_\+map$<$std\+::string, {\bf Index}$>$ tvm\+::runtime\+::vm\+::\+Executable\+::global\+\_\+map}\hypertarget{classtvm_1_1runtime_1_1vm_1_1Executable_a9a808f0c63ae0d65ad8d625e3a7cb749}{}\label{classtvm_1_1runtime_1_1vm_1_1Executable_a9a808f0c63ae0d65ad8d625e3a7cb749}
+
+
+A map from globals (as strings) to their index in the function map. 
+
+\index{tvm\+::runtime\+::vm\+::\+Executable@{tvm\+::runtime\+::vm\+::\+Executable}!lib@{lib}}
+\index{lib@{lib}!tvm\+::runtime\+::vm\+::\+Executable@{tvm\+::runtime\+::vm\+::\+Executable}}
+\subsubsection[{\texorpdfstring{lib}{lib}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf runtime\+::\+Module} tvm\+::runtime\+::vm\+::\+Executable\+::lib}\hypertarget{classtvm_1_1runtime_1_1vm_1_1Executable_a0d69e974364e3f2eb643c25b77c74015}{}\label{classtvm_1_1runtime_1_1vm_1_1Executable_a0d69e974364e3f2eb643c25b77c74015}
+
+
+The runtime module/library that contains both the host and also the device code when executing on non-\/\+C\+PU devices. 
+
+\index{tvm\+::runtime\+::vm\+::\+Executable@{tvm\+::runtime\+::vm\+::\+Executable}!primitive\+\_\+map@{primitive\+\_\+map}}
+\index{primitive\+\_\+map@{primitive\+\_\+map}!tvm\+::runtime\+::vm\+::\+Executable@{tvm\+::runtime\+::vm\+::\+Executable}}
+\subsubsection[{\texorpdfstring{primitive\+\_\+map}{primitive_map}}]{\setlength{\rightskip}{0pt plus 5cm}std\+::unordered\+\_\+map$<$std\+::string, {\bf Index}$>$ tvm\+::runtime\+::vm\+::\+Executable\+::primitive\+\_\+map}\hypertarget{classtvm_1_1runtime_1_1vm_1_1Executable_ab5a31e8670a4f20564abc48610a90e8c}{}\label{classtvm_1_1runtime_1_1vm_1_1Executable_ab5a31e8670a4f20564abc48610a90e8c}
+
+
+A mapping from the packed function (as string) to the index that corresponds to the position of the {\ttfamily packed\+\_\+funcs} list in a {\ttfamily \hyperlink{classtvm_1_1runtime_1_1vm_1_1VirtualMachine}{Virtual\+Machine}} object. 
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+include/tvm/runtime/\hyperlink{vm_8h}{vm.\+h}\end{DoxyCompactItemize}

@@ -1,0 +1,403 @@
+\hypertarget{classtvm_1_1tir_1_1Layout}{}\section{tvm\+:\+:tir\+:\+:Layout Class Reference}
+\label{classtvm_1_1tir_1_1Layout}\index{tvm\+::tir\+::\+Layout@{tvm\+::tir\+::\+Layout}}
+
+
+\hyperlink{classtvm_1_1tir_1_1Layout}{Layout} is to describe how data is organized within an N-\/dimention tensor. It is composed of upper cases, lower cases and numbers, where upper case indicates a primal axis and the corresponding lower case with factor size indicates the subordinate axis. For example, N\+C\+H\+W16c can describe a 5-\/D tensor of \mbox{[}batch\+\_\+size, channel, height, width, channel\+\_\+block\mbox{]}. Here subordinate axis channel\+\_\+block=16 is the factor size of the primal axis C (channel). \hyperlink{classtvm_1_1tir_1_1Layout}{Layout} for scalar is defined, while both its name and axes have size 0.  
+
+
+
+
+{\ttfamily \#include $<$data\+\_\+layout.\+h$>$}
+
+
+
+Inheritance diagram for tvm\+:\+:tir\+:\+:Layout\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=169pt]{classtvm_1_1tir_1_1Layout__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for tvm\+:\+:tir\+:\+:Layout\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=169pt]{classtvm_1_1tir_1_1Layout__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+using \hyperlink{classtvm_1_1tir_1_1Layout_a34e09318237c606d8e3dfd6267ae72b8}{Container\+Type} = \hyperlink{classtvm_1_1tir_1_1LayoutNode}{Layout\+Node}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classtvm_1_1tir_1_1Layout_abf3ba7ad67d43133c8f4f9beb21edf32}{Layout} (Object\+Ptr$<$ Object $>$ n)
+\item 
+\hyperlink{classtvm_1_1tir_1_1Layout_a585c5a7813852d9741a7a739c4e2cbad}{Layout} ()=default
+\begin{DoxyCompactList}\small\item\em default constructor \end{DoxyCompactList}\item 
+\hyperlink{classtvm_1_1tir_1_1Layout_ace4d6c608f7148bb2c6aefe33b4e4ab5}{Layout} (const \hyperlink{classtvm_1_1Array}{Array}$<$ \hyperlink{classtvm_1_1tir_1_1IterVar}{tir\+::\+Iter\+Var} $>$ \&axes)
+\item 
+\hyperlink{classtvm_1_1tir_1_1Layout_a11a8465c3cc562e408a48a7f0fd324fd}{Layout} (const char $\ast$\hyperlink{classtvm_1_1tir_1_1Layout_a9c22206c841f0f09e20d56b9c96b321d}{name})
+\begin{DoxyCompactList}\small\item\em construct from a string \end{DoxyCompactList}\item 
+\hyperlink{classtvm_1_1tir_1_1Layout_a7cece4c969caab17658f4e70fa6a69e5}{Layout} (const std\+::string \&\hyperlink{classtvm_1_1tir_1_1Layout_a9c22206c841f0f09e20d56b9c96b321d}{name})
+\begin{DoxyCompactList}\small\item\em construct from a string. \end{DoxyCompactList}\item 
+const \hyperlink{classtvm_1_1tir_1_1LayoutNode}{Layout\+Node} $\ast$ \hyperlink{classtvm_1_1tir_1_1Layout_aef6a0989eb7c1a0b9a0707a465cbaa9b}{operator-\/$>$} () const 
+\begin{DoxyCompactList}\small\item\em access the internal node container \end{DoxyCompactList}\item 
+\hyperlink{classtvm_1_1tir_1_1LayoutNode}{Layout\+Node} $\ast$ \hyperlink{classtvm_1_1tir_1_1Layout_a24d1414e53ab3bd153942bf5de5402e2}{operator-\/$>$} ()
+\begin{DoxyCompactList}\small\item\em access the internal node container \end{DoxyCompactList}\item 
+\hyperlink{classtvm_1_1tir_1_1Layout}{Layout} \hyperlink{classtvm_1_1tir_1_1Layout_a506777d73f3b9e5ce24e4f4dfa4122b0}{Sub\+Layout} (size\+\_\+t pos, size\+\_\+t len) const 
+\begin{DoxyCompactList}\small\item\em Returns a sub-\/layout which is the portion of the object that starts at dimension {\ttfamily pos} and spans {\ttfamily len} dimensions (or until the end of the layout, whichever comes first). \end{DoxyCompactList}\item 
+\hyperlink{classtvm_1_1tir_1_1Layout}{Layout} \hyperlink{classtvm_1_1tir_1_1Layout_aba8612236310488f3a385bd8b139b914}{Split} (const \hyperlink{classtvm_1_1tir_1_1LayoutAxis}{Layout\+Axis} \&axis, size\+\_\+t target\+\_\+pos, int32\+\_\+t factor) const 
+\begin{DoxyCompactList}\small\item\em Split {\ttfamily axis} by {\ttfamily size} and put the sub-\/axis to position {\ttfamily target\+\_\+pos}. \end{DoxyCompactList}\item 
+size\+\_\+t \hyperlink{classtvm_1_1tir_1_1Layout_a4bca97ce52386c053a442ff960581f92}{ndim} () const 
+\item 
+size\+\_\+t \hyperlink{classtvm_1_1tir_1_1Layout_a2f983c2de370c89a9f0b12ebcf9fec0c}{ndim\+\_\+primal} () const 
+\item 
+\hyperlink{classtvm_1_1tir_1_1Layout}{Layout} \hyperlink{classtvm_1_1tir_1_1Layout_a88c306ea4682d28b85032277fa29df63}{Expand\+Primal} (const \hyperlink{classtvm_1_1tir_1_1Layout}{Layout} \&dst\+\_\+layout)
+\begin{DoxyCompactList}\small\item\em Returns a new layout where the dims have been expanded to match the primal dimensions. \end{DoxyCompactList}\item 
+int32\+\_\+t \hyperlink{classtvm_1_1tir_1_1Layout_a0fa224417a05bc774c6e4fc8093ca75a}{Index\+Of} (const \hyperlink{classtvm_1_1tir_1_1LayoutAxis}{Layout\+Axis} \&axis) const 
+\begin{DoxyCompactList}\small\item\em return the index of the input axis. If it is not found in the layout or the layout is undefined, return -\/1. \end{DoxyCompactList}\item 
+int32\+\_\+t \hyperlink{classtvm_1_1tir_1_1Layout_ad1e29ab749a79562fb2f746ccc42adf1}{Factor\+Of} (const \hyperlink{classtvm_1_1tir_1_1LayoutAxis}{Layout\+Axis} \&axis) const 
+\begin{DoxyCompactList}\small\item\em Get the factor size of the subordinate axis. \end{DoxyCompactList}\item 
+bool \hyperlink{classtvm_1_1tir_1_1Layout_a57a19f7b1c1f3d05d333f6c10272006e}{Contains} (const \hyperlink{classtvm_1_1tir_1_1LayoutAxis}{Layout\+Axis} \&axis) const 
+\begin{DoxyCompactList}\small\item\em Whether the layout contains an axis. \end{DoxyCompactList}\item 
+const \hyperlink{classtvm_1_1tir_1_1LayoutAxis}{Layout\+Axis} \& \hyperlink{classtvm_1_1tir_1_1Layout_afa5744d258322fb0d9c50c52374bcd9f}{operator\mbox{[}$\,$\mbox{]}} (int32\+\_\+t i) const 
+\item 
+std\+::string \hyperlink{classtvm_1_1tir_1_1Layout_a9c22206c841f0f09e20d56b9c96b321d}{name} () const 
+\item 
+bool \hyperlink{classtvm_1_1tir_1_1Layout_a2edd48a0abe23330747e815e9598b62e}{Equals} (const \hyperlink{classtvm_1_1tir_1_1Layout}{Layout} \&rhs) const 
+\begin{DoxyCompactList}\small\item\em Whether the two layouts are equal. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static const \hyperlink{classtvm_1_1tir_1_1Layout}{Layout} \& \hyperlink{classtvm_1_1tir_1_1Layout_a1c7bdf466d341ad61aba104db318ee0e}{Undef} ()
+\begin{DoxyCompactList}\small\item\em Return an undefined layout. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+std\+::ostream \& \hyperlink{classtvm_1_1tir_1_1Layout_a4d0f3b738af6b70040980e1287282377}{operator$<$$<$} (std\+::ostream \&os, const \hyperlink{classtvm_1_1tir_1_1Layout}{Layout} \&l)
+\begin{DoxyCompactList}\small\item\em allow output string of layout to ostream \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\hyperlink{classtvm_1_1tir_1_1Layout}{Layout} is to describe how data is organized within an N-\/dimention tensor. It is composed of upper cases, lower cases and numbers, where upper case indicates a primal axis and the corresponding lower case with factor size indicates the subordinate axis. For example, N\+C\+H\+W16c can describe a 5-\/D tensor of \mbox{[}batch\+\_\+size, channel, height, width, channel\+\_\+block\mbox{]}. Here subordinate axis channel\+\_\+block=16 is the factor size of the primal axis C (channel). \hyperlink{classtvm_1_1tir_1_1Layout}{Layout} for scalar is defined, while both its name and axes have size 0. 
+
+\subsection{Member Typedef Documentation}
+\index{tvm\+::tir\+::\+Layout@{tvm\+::tir\+::\+Layout}!Container\+Type@{Container\+Type}}
+\index{Container\+Type@{Container\+Type}!tvm\+::tir\+::\+Layout@{tvm\+::tir\+::\+Layout}}
+\subsubsection[{\texorpdfstring{Container\+Type}{ContainerType}}]{\setlength{\rightskip}{0pt plus 5cm}using {\bf tvm\+::tir\+::\+Layout\+::\+Container\+Type} =  {\bf Layout\+Node}}\hypertarget{classtvm_1_1tir_1_1Layout_a34e09318237c606d8e3dfd6267ae72b8}{}\label{classtvm_1_1tir_1_1Layout_a34e09318237c606d8e3dfd6267ae72b8}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\index{tvm\+::tir\+::\+Layout@{tvm\+::tir\+::\+Layout}!Layout@{Layout}}
+\index{Layout@{Layout}!tvm\+::tir\+::\+Layout@{tvm\+::tir\+::\+Layout}}
+\subsubsection[{\texorpdfstring{Layout(\+Object\+Ptr$<$ Object $>$ n)}{Layout(ObjectPtr< Object > n)}}]{\setlength{\rightskip}{0pt plus 5cm}tvm\+::tir\+::\+Layout\+::\+Layout (
+\begin{DoxyParamCaption}
+\item[{Object\+Ptr$<$ Object $>$}]{n}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [explicit]}}\hypertarget{classtvm_1_1tir_1_1Layout_abf3ba7ad67d43133c8f4f9beb21edf32}{}\label{classtvm_1_1tir_1_1Layout_abf3ba7ad67d43133c8f4f9beb21edf32}
+\index{tvm\+::tir\+::\+Layout@{tvm\+::tir\+::\+Layout}!Layout@{Layout}}
+\index{Layout@{Layout}!tvm\+::tir\+::\+Layout@{tvm\+::tir\+::\+Layout}}
+\subsubsection[{\texorpdfstring{Layout()=default}{Layout()=default}}]{\setlength{\rightskip}{0pt plus 5cm}tvm\+::tir\+::\+Layout\+::\+Layout (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [default]}}\hypertarget{classtvm_1_1tir_1_1Layout_a585c5a7813852d9741a7a739c4e2cbad}{}\label{classtvm_1_1tir_1_1Layout_a585c5a7813852d9741a7a739c4e2cbad}
+
+
+default constructor 
+
+\index{tvm\+::tir\+::\+Layout@{tvm\+::tir\+::\+Layout}!Layout@{Layout}}
+\index{Layout@{Layout}!tvm\+::tir\+::\+Layout@{tvm\+::tir\+::\+Layout}}
+\subsubsection[{\texorpdfstring{Layout(const Array$<$ tir\+::\+Iter\+Var $>$ \&axes)}{Layout(const Array< tir::IterVar > &axes)}}]{\setlength{\rightskip}{0pt plus 5cm}tvm\+::tir\+::\+Layout\+::\+Layout (
+\begin{DoxyParamCaption}
+\item[{const {\bf Array}$<$ {\bf tir\+::\+Iter\+Var} $>$ \&}]{axes}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [explicit]}}\hypertarget{classtvm_1_1tir_1_1Layout_ace4d6c608f7148bb2c6aefe33b4e4ab5}{}\label{classtvm_1_1tir_1_1Layout_ace4d6c608f7148bb2c6aefe33b4e4ab5}
+\index{tvm\+::tir\+::\+Layout@{tvm\+::tir\+::\+Layout}!Layout@{Layout}}
+\index{Layout@{Layout}!tvm\+::tir\+::\+Layout@{tvm\+::tir\+::\+Layout}}
+\subsubsection[{\texorpdfstring{Layout(const char $\ast$name)}{Layout(const char *name)}}]{\setlength{\rightskip}{0pt plus 5cm}tvm\+::tir\+::\+Layout\+::\+Layout (
+\begin{DoxyParamCaption}
+\item[{const char $\ast$}]{name}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classtvm_1_1tir_1_1Layout_a11a8465c3cc562e408a48a7f0fd324fd}{}\label{classtvm_1_1tir_1_1Layout_a11a8465c3cc562e408a48a7f0fd324fd}
+
+
+construct from a string 
+
+\index{tvm\+::tir\+::\+Layout@{tvm\+::tir\+::\+Layout}!Layout@{Layout}}
+\index{Layout@{Layout}!tvm\+::tir\+::\+Layout@{tvm\+::tir\+::\+Layout}}
+\subsubsection[{\texorpdfstring{Layout(const std\+::string \&name)}{Layout(const std::string &name)}}]{\setlength{\rightskip}{0pt plus 5cm}tvm\+::tir\+::\+Layout\+::\+Layout (
+\begin{DoxyParamCaption}
+\item[{const std\+::string \&}]{name}
+\end{DoxyParamCaption}
+)}\hypertarget{classtvm_1_1tir_1_1Layout_a7cece4c969caab17658f4e70fa6a69e5}{}\label{classtvm_1_1tir_1_1Layout_a7cece4c969caab17658f4e70fa6a69e5}
+
+
+construct from a string. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em name} & input in layout convention\+: upper case indicates a dimension and the corresponding lower case with factor size indicates the split dimension. return undefined layout if \char`\"{}\+\_\+\+\_\+undef\+\_\+\+\_\+\char`\"{} is passed. \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\index{tvm\+::tir\+::\+Layout@{tvm\+::tir\+::\+Layout}!Contains@{Contains}}
+\index{Contains@{Contains}!tvm\+::tir\+::\+Layout@{tvm\+::tir\+::\+Layout}}
+\subsubsection[{\texorpdfstring{Contains(const Layout\+Axis \&axis) const }{Contains(const LayoutAxis &axis) const }}]{\setlength{\rightskip}{0pt plus 5cm}bool tvm\+::tir\+::\+Layout\+::\+Contains (
+\begin{DoxyParamCaption}
+\item[{const {\bf Layout\+Axis} \&}]{axis}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classtvm_1_1tir_1_1Layout_a57a19f7b1c1f3d05d333f6c10272006e}{}\label{classtvm_1_1tir_1_1Layout_a57a19f7b1c1f3d05d333f6c10272006e}
+
+
+Whether the layout contains an axis. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em axis} & axis to be checked. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Whether the layout contains the axis. 
+\end{DoxyReturn}
+\index{tvm\+::tir\+::\+Layout@{tvm\+::tir\+::\+Layout}!Equals@{Equals}}
+\index{Equals@{Equals}!tvm\+::tir\+::\+Layout@{tvm\+::tir\+::\+Layout}}
+\subsubsection[{\texorpdfstring{Equals(const Layout \&rhs) const }{Equals(const Layout &rhs) const }}]{\setlength{\rightskip}{0pt plus 5cm}bool tvm\+::tir\+::\+Layout\+::\+Equals (
+\begin{DoxyParamCaption}
+\item[{const {\bf Layout} \&}]{rhs}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classtvm_1_1tir_1_1Layout_a2edd48a0abe23330747e815e9598b62e}{}\label{classtvm_1_1tir_1_1Layout_a2edd48a0abe23330747e815e9598b62e}
+
+
+Whether the two layouts are equal. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em rhs} & Another layout. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+whether the two layouts are equal. 
+\end{DoxyReturn}
+\index{tvm\+::tir\+::\+Layout@{tvm\+::tir\+::\+Layout}!Expand\+Primal@{Expand\+Primal}}
+\index{Expand\+Primal@{Expand\+Primal}!tvm\+::tir\+::\+Layout@{tvm\+::tir\+::\+Layout}}
+\subsubsection[{\texorpdfstring{Expand\+Primal(const Layout \&dst\+\_\+layout)}{ExpandPrimal(const Layout &dst_layout)}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Layout} tvm\+::tir\+::\+Layout\+::\+Expand\+Primal (
+\begin{DoxyParamCaption}
+\item[{const {\bf Layout} \&}]{dst\+\_\+layout}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classtvm_1_1tir_1_1Layout_a88c306ea4682d28b85032277fa29df63}{}\label{classtvm_1_1tir_1_1Layout_a88c306ea4682d28b85032277fa29df63}
+
+
+Returns a new layout where the dims have been expanded to match the primal dimensions. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em dst\+\_\+layout} & The dst layout to which current layout has to be expanded. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The expanded \hyperlink{classtvm_1_1tir_1_1Layout}{Layout}. 
+\end{DoxyReturn}
+\index{tvm\+::tir\+::\+Layout@{tvm\+::tir\+::\+Layout}!Factor\+Of@{Factor\+Of}}
+\index{Factor\+Of@{Factor\+Of}!tvm\+::tir\+::\+Layout@{tvm\+::tir\+::\+Layout}}
+\subsubsection[{\texorpdfstring{Factor\+Of(const Layout\+Axis \&axis) const }{FactorOf(const LayoutAxis &axis) const }}]{\setlength{\rightskip}{0pt plus 5cm}int32\+\_\+t tvm\+::tir\+::\+Layout\+::\+Factor\+Of (
+\begin{DoxyParamCaption}
+\item[{const {\bf Layout\+Axis} \&}]{axis}
+\end{DoxyParamCaption}
+) const}\hypertarget{classtvm_1_1tir_1_1Layout_ad1e29ab749a79562fb2f746ccc42adf1}{}\label{classtvm_1_1tir_1_1Layout_ad1e29ab749a79562fb2f746ccc42adf1}
+
+
+Get the factor size of the subordinate axis. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em axis} & the input primal-\/axis or subordinate-\/axis. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the size of the subordinate-\/axis of {\ttfamily axis} (if {\ttfamily axis} is a primal-\/axis), or the size of {\ttfamily axis} itself (if {\ttfamily axis} is a subordinate-\/axis). Return -\/1 if {\ttfamily axis} is not in the layout the layout is undefined. 
+\end{DoxyReturn}
+\index{tvm\+::tir\+::\+Layout@{tvm\+::tir\+::\+Layout}!Index\+Of@{Index\+Of}}
+\index{Index\+Of@{Index\+Of}!tvm\+::tir\+::\+Layout@{tvm\+::tir\+::\+Layout}}
+\subsubsection[{\texorpdfstring{Index\+Of(const Layout\+Axis \&axis) const }{IndexOf(const LayoutAxis &axis) const }}]{\setlength{\rightskip}{0pt plus 5cm}int32\+\_\+t tvm\+::tir\+::\+Layout\+::\+Index\+Of (
+\begin{DoxyParamCaption}
+\item[{const {\bf Layout\+Axis} \&}]{axis}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classtvm_1_1tir_1_1Layout_a0fa224417a05bc774c6e4fc8093ca75a}{}\label{classtvm_1_1tir_1_1Layout_a0fa224417a05bc774c6e4fc8093ca75a}
+
+
+return the index of the input axis. If it is not found in the layout or the layout is undefined, return -\/1. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em axis} & the input axis. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the index or -\/1 if not found. 
+\end{DoxyReturn}
+\index{tvm\+::tir\+::\+Layout@{tvm\+::tir\+::\+Layout}!name@{name}}
+\index{name@{name}!tvm\+::tir\+::\+Layout@{tvm\+::tir\+::\+Layout}}
+\subsubsection[{\texorpdfstring{name() const }{name() const }}]{\setlength{\rightskip}{0pt plus 5cm}std\+::string tvm\+::tir\+::\+Layout\+::name (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classtvm_1_1tir_1_1Layout_a9c22206c841f0f09e20d56b9c96b321d}{}\label{classtvm_1_1tir_1_1Layout_a9c22206c841f0f09e20d56b9c96b321d}
+\begin{DoxyReturn}{Returns}
+the string description of the layout 
+\end{DoxyReturn}
+\index{tvm\+::tir\+::\+Layout@{tvm\+::tir\+::\+Layout}!ndim@{ndim}}
+\index{ndim@{ndim}!tvm\+::tir\+::\+Layout@{tvm\+::tir\+::\+Layout}}
+\subsubsection[{\texorpdfstring{ndim() const }{ndim() const }}]{\setlength{\rightskip}{0pt plus 5cm}size\+\_\+t tvm\+::tir\+::\+Layout\+::ndim (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classtvm_1_1tir_1_1Layout_a4bca97ce52386c053a442ff960581f92}{}\label{classtvm_1_1tir_1_1Layout_a4bca97ce52386c053a442ff960581f92}
+\begin{DoxyReturn}{Returns}
+number of dimensions 
+\end{DoxyReturn}
+\index{tvm\+::tir\+::\+Layout@{tvm\+::tir\+::\+Layout}!ndim\+\_\+primal@{ndim\+\_\+primal}}
+\index{ndim\+\_\+primal@{ndim\+\_\+primal}!tvm\+::tir\+::\+Layout@{tvm\+::tir\+::\+Layout}}
+\subsubsection[{\texorpdfstring{ndim\+\_\+primal() const }{ndim_primal() const }}]{\setlength{\rightskip}{0pt plus 5cm}size\+\_\+t tvm\+::tir\+::\+Layout\+::ndim\+\_\+primal (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classtvm_1_1tir_1_1Layout_a2f983c2de370c89a9f0b12ebcf9fec0c}{}\label{classtvm_1_1tir_1_1Layout_a2f983c2de370c89a9f0b12ebcf9fec0c}
+\begin{DoxyReturn}{Returns}
+number of super dimensions 
+\end{DoxyReturn}
+\index{tvm\+::tir\+::\+Layout@{tvm\+::tir\+::\+Layout}!operator-\/$>$@{operator-\/$>$}}
+\index{operator-\/$>$@{operator-\/$>$}!tvm\+::tir\+::\+Layout@{tvm\+::tir\+::\+Layout}}
+\subsubsection[{\texorpdfstring{operator-\/$>$() const }{operator->() const }}]{\setlength{\rightskip}{0pt plus 5cm}const {\bf Layout\+Node}$\ast$ tvm\+::tir\+::\+Layout\+::operator-\/$>$ (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classtvm_1_1tir_1_1Layout_aef6a0989eb7c1a0b9a0707a465cbaa9b}{}\label{classtvm_1_1tir_1_1Layout_aef6a0989eb7c1a0b9a0707a465cbaa9b}
+
+
+access the internal node container 
+
+\begin{DoxyReturn}{Returns}
+the pointer to the internal node container 
+\end{DoxyReturn}
+\index{tvm\+::tir\+::\+Layout@{tvm\+::tir\+::\+Layout}!operator-\/$>$@{operator-\/$>$}}
+\index{operator-\/$>$@{operator-\/$>$}!tvm\+::tir\+::\+Layout@{tvm\+::tir\+::\+Layout}}
+\subsubsection[{\texorpdfstring{operator-\/$>$()}{operator->()}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Layout\+Node}$\ast$ tvm\+::tir\+::\+Layout\+::operator-\/$>$ (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classtvm_1_1tir_1_1Layout_a24d1414e53ab3bd153942bf5de5402e2}{}\label{classtvm_1_1tir_1_1Layout_a24d1414e53ab3bd153942bf5de5402e2}
+
+
+access the internal node container 
+
+\begin{DoxyReturn}{Returns}
+the pointer to the internal node container 
+\end{DoxyReturn}
+\index{tvm\+::tir\+::\+Layout@{tvm\+::tir\+::\+Layout}!operator\mbox{[}$\,$\mbox{]}@{operator[]}}
+\index{operator\mbox{[}$\,$\mbox{]}@{operator[]}!tvm\+::tir\+::\+Layout@{tvm\+::tir\+::\+Layout}}
+\subsubsection[{\texorpdfstring{operator[](int32\+\_\+t i) const }{operator[](int32_t i) const }}]{\setlength{\rightskip}{0pt plus 5cm}const {\bf Layout\+Axis}\& tvm\+::tir\+::\+Layout\+::operator\mbox{[}$\,$\mbox{]} (
+\begin{DoxyParamCaption}
+\item[{int32\+\_\+t}]{i}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classtvm_1_1tir_1_1Layout_afa5744d258322fb0d9c50c52374bcd9f}{}\label{classtvm_1_1tir_1_1Layout_afa5744d258322fb0d9c50c52374bcd9f}
+\index{tvm\+::tir\+::\+Layout@{tvm\+::tir\+::\+Layout}!Split@{Split}}
+\index{Split@{Split}!tvm\+::tir\+::\+Layout@{tvm\+::tir\+::\+Layout}}
+\subsubsection[{\texorpdfstring{Split(const Layout\+Axis \&axis, size\+\_\+t target\+\_\+pos, int32\+\_\+t factor) const }{Split(const LayoutAxis &axis, size_t target_pos, int32_t factor) const }}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Layout} tvm\+::tir\+::\+Layout\+::\+Split (
+\begin{DoxyParamCaption}
+\item[{const {\bf Layout\+Axis} \&}]{axis, }
+\item[{size\+\_\+t}]{target\+\_\+pos, }
+\item[{int32\+\_\+t}]{factor}
+\end{DoxyParamCaption}
+) const}\hypertarget{classtvm_1_1tir_1_1Layout_aba8612236310488f3a385bd8b139b914}{}\label{classtvm_1_1tir_1_1Layout_aba8612236310488f3a385bd8b139b914}
+
+
+Split {\ttfamily axis} by {\ttfamily size} and put the sub-\/axis to position {\ttfamily target\+\_\+pos}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em axis} & The source axis to be split. It must be a primal-\/axis; \\
+\hline
+{\em target\+\_\+pos} & The target position of the newly split subordinate-\/axis. \\
+\hline
+{\em factor} & size of the sub-\/dimension. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A newly constructed \hyperlink{classtvm_1_1tir_1_1Layout}{Layout} object. 
+\end{DoxyReturn}
+\index{tvm\+::tir\+::\+Layout@{tvm\+::tir\+::\+Layout}!Sub\+Layout@{Sub\+Layout}}
+\index{Sub\+Layout@{Sub\+Layout}!tvm\+::tir\+::\+Layout@{tvm\+::tir\+::\+Layout}}
+\subsubsection[{\texorpdfstring{Sub\+Layout(size\+\_\+t pos, size\+\_\+t len) const }{SubLayout(size_t pos, size_t len) const }}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Layout} tvm\+::tir\+::\+Layout\+::\+Sub\+Layout (
+\begin{DoxyParamCaption}
+\item[{size\+\_\+t}]{pos, }
+\item[{size\+\_\+t}]{len}
+\end{DoxyParamCaption}
+) const}\hypertarget{classtvm_1_1tir_1_1Layout_a506777d73f3b9e5ce24e4f4dfa4122b0}{}\label{classtvm_1_1tir_1_1Layout_a506777d73f3b9e5ce24e4f4dfa4122b0}
+
+
+Returns a sub-\/layout which is the portion of the object that starts at dimension {\ttfamily pos} and spans {\ttfamily len} dimensions (or until the end of the layout, whichever comes first). 
+
+
+\begin{DoxyParams}{Parameters}
+{\em pos} & The start position. \\
+\hline
+{\em len} & The length of the sub-\/layout. if 0, return layout of scalar \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A newly constructed \hyperlink{classtvm_1_1tir_1_1Layout}{Layout} object. 
+\end{DoxyReturn}
+\index{tvm\+::tir\+::\+Layout@{tvm\+::tir\+::\+Layout}!Undef@{Undef}}
+\index{Undef@{Undef}!tvm\+::tir\+::\+Layout@{tvm\+::tir\+::\+Layout}}
+\subsubsection[{\texorpdfstring{Undef()}{Undef()}}]{\setlength{\rightskip}{0pt plus 5cm}static const {\bf Layout}\& tvm\+::tir\+::\+Layout\+::\+Undef (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}\hypertarget{classtvm_1_1tir_1_1Layout_a1c7bdf466d341ad61aba104db318ee0e}{}\label{classtvm_1_1tir_1_1Layout_a1c7bdf466d341ad61aba104db318ee0e}
+
+
+Return an undefined layout. 
+
+\begin{DoxyReturn}{Returns}
+a (global) undefined layout. 
+\end{DoxyReturn}
+
+
+\subsection{Friends And Related Function Documentation}
+\index{tvm\+::tir\+::\+Layout@{tvm\+::tir\+::\+Layout}!operator$<$$<$@{operator$<$$<$}}
+\index{operator$<$$<$@{operator$<$$<$}!tvm\+::tir\+::\+Layout@{tvm\+::tir\+::\+Layout}}
+\subsubsection[{\texorpdfstring{operator$<$$<$}{operator<<}}]{\setlength{\rightskip}{0pt plus 5cm}std\+::ostream\& operator$<$$<$ (
+\begin{DoxyParamCaption}
+\item[{std\+::ostream \&}]{os, }
+\item[{const {\bf Layout} \&}]{l}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [friend]}}\hypertarget{classtvm_1_1tir_1_1Layout_a4d0f3b738af6b70040980e1287282377}{}\label{classtvm_1_1tir_1_1Layout_a4d0f3b738af6b70040980e1287282377}
+
+
+allow output string of layout to ostream 
+
+
+\begin{DoxyParams}{Parameters}
+{\em os} & the output stream \\
+\hline
+{\em l} & the layout \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the ostream 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+include/tvm/tir/\hyperlink{data__layout_8h}{data\+\_\+layout.\+h}\end{DoxyCompactItemize}

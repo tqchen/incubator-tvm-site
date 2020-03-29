@@ -1,0 +1,104 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="classtvm_1_1te_1_1IterVarRelationNode" kind="class" language="C++" prot="public">
+    <compoundname>tvm::te::IterVarRelationNode</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">Object</basecompoundref>
+    <derivedcompoundref refid="classtvm_1_1te_1_1FuseNode" prot="public" virt="non-virtual">tvm::te::FuseNode</derivedcompoundref>
+    <derivedcompoundref refid="classtvm_1_1te_1_1RebaseNode" prot="public" virt="non-virtual">tvm::te::RebaseNode</derivedcompoundref>
+    <derivedcompoundref refid="classtvm_1_1te_1_1SingletonNode" prot="public" virt="non-virtual">tvm::te::SingletonNode</derivedcompoundref>
+    <derivedcompoundref refid="classtvm_1_1te_1_1SplitNode" prot="public" virt="non-virtual">tvm::te::SplitNode</derivedcompoundref>
+    <includes refid="schedule_8h" local="no">schedule.h</includes>
+      <sectiondef kind="public-static-attrib">
+      <memberdef kind="variable" id="classtvm_1_1te_1_1IterVarRelationNode_1a5cd9f686b3aae26c63737f3532c2a164" prot="public" static="yes" mutable="no">
+        <type>constexpr const char *</type>
+        <definition>constexpr const char* tvm::te::IterVarRelationNode::_type_key</definition>
+        <argsstring></argsstring>
+        <name>_type_key</name>
+        <initializer>= &quot;IterVarRelation&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/te/schedule.h" line="640" column="1" bodyfile="include/tvm/te/schedule.h" bodystart="640" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classtvm_1_1te_1_1IterVarRelationNode_1a8ff434b2be862efbab049f0467bfd258" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>tvm::te::IterVarRelationNode::TVM_DECLARE_BASE_OBJECT_INFO</definition>
+        <argsstring>(IterVarRelationNode, Object)</argsstring>
+        <name>TVM_DECLARE_BASE_OBJECT_INFO</name>
+        <param>
+          <type><ref refid="classtvm_1_1te_1_1IterVarRelationNode" kindref="compound">IterVarRelationNode</ref></type>
+        </param>
+        <param>
+          <type>Object</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/te/schedule.h" line="641" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>base node of iteration var </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="5480">
+        <label>tvm::te::RebaseNode</label>
+        <link refid="classtvm_1_1te_1_1RebaseNode"/>
+        <childnode refid="5477" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="5482">
+        <label>tvm::te::SplitNode</label>
+        <link refid="classtvm_1_1te_1_1SplitNode"/>
+        <childnode refid="5477" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="5481">
+        <label>tvm::te::SingletonNode</label>
+        <link refid="classtvm_1_1te_1_1SingletonNode"/>
+        <childnode refid="5477" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="5478">
+        <label>Object</label>
+      </node>
+      <node id="5477">
+        <label>tvm::te::IterVarRelationNode</label>
+        <link refid="classtvm_1_1te_1_1IterVarRelationNode"/>
+        <childnode refid="5478" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="5479">
+        <label>tvm::te::FuseNode</label>
+        <link refid="classtvm_1_1te_1_1FuseNode"/>
+        <childnode refid="5477" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="5484">
+        <label>Object</label>
+      </node>
+      <node id="5483">
+        <label>tvm::te::IterVarRelationNode</label>
+        <link refid="classtvm_1_1te_1_1IterVarRelationNode"/>
+        <childnode refid="5484" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="include/tvm/te/schedule.h" line="638" column="1" bodyfile="include/tvm/te/schedule.h" bodystart="638" bodyend="642"/>
+    <listofallmembers>
+      <member refid="classtvm_1_1te_1_1IterVarRelationNode_1a5cd9f686b3aae26c63737f3532c2a164" prot="public" virt="non-virtual"><scope>tvm::te::IterVarRelationNode</scope><name>_type_key</name></member>
+      <member refid="classtvm_1_1te_1_1IterVarRelationNode_1a8ff434b2be862efbab049f0467bfd258" prot="public" virt="non-virtual"><scope>tvm::te::IterVarRelationNode</scope><name>TVM_DECLARE_BASE_OBJECT_INFO</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

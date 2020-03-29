@@ -1,0 +1,159 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="classtvm_1_1Error" kind="class" language="C++" prot="public">
+    <compoundname>tvm::Error</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">Error</basecompoundref>
+    <includes refid="error_8h" local="no">error.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="classtvm_1_1Error_1a1bebfe879cb28d2157c4c52691fd93c4" prot="public" static="no" mutable="no">
+        <type><ref refid="classtvm_1_1Span" kindref="compound">Span</ref></type>
+        <definition>Span tvm::Error::span</definition>
+        <argsstring></argsstring>
+        <name>span</name>
+        <briefdescription>
+<para>Location of the error. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/ir/error.h" line="71" column="1" bodyfile="include/tvm/ir/error.h" bodystart="71" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classtvm_1_1Error_1a34fb93ad5e30fb0ba2d29557e3888cad" prot="public" static="no" const="no" explicit="yes" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>tvm::Error::Error</definition>
+        <argsstring>(const std::string &amp;msg)</argsstring>
+        <name>Error</name>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>msg</declname>
+        </param>
+        <briefdescription>
+<para>construct error from message. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>msg</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The message </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/ir/error.h" line="76" column="1" bodyfile="include/tvm/ir/error.h" bodystart="76" bodyend="76"/>
+      </memberdef>
+      <memberdef kind="function" id="classtvm_1_1Error_1a4e6ed7f9bfe3a8b9e9fd707333d9a271" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>tvm::Error::Error</definition>
+        <argsstring>(const ErrorBuilder &amp;err)</argsstring>
+        <name>Error</name>
+        <param>
+          <type>const <ref refid="structtvm_1_1ErrorBuilder" kindref="compound">ErrorBuilder</ref> &amp;</type>
+          <declname>err</declname>
+        </param>
+        <briefdescription>
+<para>construct error from error builder. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>err</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The error builder </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/ir/error.h" line="81" column="1" bodyfile="include/tvm/ir/error.h" bodystart="81" bodyend="81"/>
+      </memberdef>
+      <memberdef kind="function" id="classtvm_1_1Error_1ae795782b25b3d8861eba48ac126075f6" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>tvm::Error::Error</definition>
+        <argsstring>(const Error &amp;other)</argsstring>
+        <name>Error</name>
+        <param>
+          <type>const <ref refid="classtvm_1_1Error" kindref="compound">Error</ref> &amp;</type>
+          <declname>other</declname>
+        </param>
+        <briefdescription>
+<para>copy constructor. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>other</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The other ereor. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/ir/error.h" line="86" column="1" bodyfile="include/tvm/ir/error.h" bodystart="86" bodyend="86"/>
+      </memberdef>
+      <memberdef kind="function" id="classtvm_1_1Error_1af24ae3b0fbb989c6fe282ef0571eb8de" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>tvm::Error::Error</definition>
+        <argsstring>()</argsstring>
+        <name>Error</name>
+        <briefdescription>
+<para>default constructor. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/ir/error.h" line="89" column="1" bodyfile="include/tvm/ir/error.h" bodystart="89" bodyend="89"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Custom <ref refid="classtvm_1_1Error" kindref="compound">Error</ref> class to be thrown during compilation. </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="4946">
+        <label>Error</label>
+      </node>
+      <node id="4945">
+        <label>tvm::Error</label>
+        <link refid="classtvm_1_1Error"/>
+        <childnode refid="4946" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="4950">
+        <label>ObjectRef</label>
+      </node>
+      <node id="4948">
+        <label>Error</label>
+      </node>
+      <node id="4949">
+        <label>tvm::Span</label>
+        <link refid="classtvm_1_1Span"/>
+        <childnode refid="4950" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="4947">
+        <label>tvm::Error</label>
+        <link refid="classtvm_1_1Error"/>
+        <childnode refid="4948" relation="public-inheritance">
+        </childnode>
+        <childnode refid="4949" relation="usage">
+          <edgelabel>+span</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="include/tvm/ir/error.h" line="68" column="1" bodyfile="include/tvm/ir/error.h" bodystart="68" bodyend="90"/>
+    <listofallmembers>
+      <member refid="classtvm_1_1Error_1a34fb93ad5e30fb0ba2d29557e3888cad" prot="public" virt="non-virtual"><scope>tvm::Error</scope><name>Error</name></member>
+      <member refid="classtvm_1_1Error_1a4e6ed7f9bfe3a8b9e9fd707333d9a271" prot="public" virt="non-virtual"><scope>tvm::Error</scope><name>Error</name></member>
+      <member refid="classtvm_1_1Error_1ae795782b25b3d8861eba48ac126075f6" prot="public" virt="non-virtual"><scope>tvm::Error</scope><name>Error</name></member>
+      <member refid="classtvm_1_1Error_1af24ae3b0fbb989c6fe282ef0571eb8de" prot="public" virt="non-virtual"><scope>tvm::Error</scope><name>Error</name></member>
+      <member refid="classtvm_1_1Error_1a1bebfe879cb28d2157c4c52691fd93c4" prot="public" virt="non-virtual"><scope>tvm::Error</scope><name>span</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

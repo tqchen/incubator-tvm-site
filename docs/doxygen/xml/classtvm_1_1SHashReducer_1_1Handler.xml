@@ -1,0 +1,175 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="classtvm_1_1SHashReducer_1_1Handler" kind="class" language="C++" prot="public" abstract="yes">
+    <compoundname>tvm::SHashReducer::Handler</compoundname>
+    <includes refid="structural__hash_8h" local="no">structural_hash.h</includes>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classtvm_1_1SHashReducer_1_1Handler_1a1bb22d4bb3983b4c3ca87b0daef7f93b" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>void</type>
+        <definition>virtual void tvm::SHashReducer::Handler::SHashReduceHashedValue</definition>
+        <argsstring>(size_t hashed_value)=0</argsstring>
+        <name>SHashReduceHashedValue</name>
+        <param>
+          <type>size_t</type>
+          <declname>hashed_value</declname>
+        </param>
+        <briefdescription>
+<para>Append hashed_value to the current sequence of hashes. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>hashed_value</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The hashed value </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/node/structural_hash.h" line="125" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classtvm_1_1SHashReducer_1_1Handler_1a6f9ddf0676a2bb500fedcf3892912c54" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>void</type>
+        <definition>virtual void tvm::SHashReducer::Handler::SHashReduce</definition>
+        <argsstring>(const ObjectRef &amp;key, bool map_free_vars)=0</argsstring>
+        <name>SHashReduce</name>
+        <param>
+          <type>const ObjectRef &amp;</type>
+          <declname>key</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>map_free_vars</declname>
+        </param>
+        <briefdescription>
+<para>Append hash value of key to the current sequence of hashes. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>key</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The object to compute hash from. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>map_free_vars</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Whether to map free variables by their occurence number. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/node/structural_hash.h" line="132" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classtvm_1_1SHashReducer_1_1Handler_1ab2fe484814770615ef9ddb1f6a6f2dfb" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>void</type>
+        <definition>virtual void tvm::SHashReducer::Handler::SHashReduceFreeVar</definition>
+        <argsstring>(const runtime::Object *var, bool map_free_vars)=0</argsstring>
+        <name>SHashReduceFreeVar</name>
+        <param>
+          <type>const <ref refid="classtvm_1_1runtime_1_1Object" kindref="compound">runtime::Object</ref> *</type>
+          <declname>var</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>map_free_vars</declname>
+        </param>
+        <briefdescription>
+<para>Apppend a hash value of free variable to the current sequence of hashes. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>var</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The var of interest. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>map_free_vars</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Whether to map free variables by their occurence number.</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="note"><para>If map_free_vars is set to be true, internally the handler can maintain a counter to encode free variables by their order of occurence. This helps to resolve variable mapping of function parameters and let binding variables.</para></simplesect>
+If map_free_vars is set to be false, the address of the variable will be used. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/node/structural_hash.h" line="146" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classtvm_1_1SHashReducer_1_1Handler_1a74fa7e570590ff3b040178cb50f48ee3" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>bool</type>
+        <definition>virtual bool tvm::SHashReducer::Handler::LookupHashedValue</definition>
+        <argsstring>(const ObjectRef &amp;key, size_t *hashed_value)=0</argsstring>
+        <name>LookupHashedValue</name>
+        <param>
+          <type>const ObjectRef &amp;</type>
+          <declname>key</declname>
+        </param>
+        <param>
+          <type>size_t *</type>
+          <declname>hashed_value</declname>
+        </param>
+        <briefdescription>
+<para>Lookup a hash value for key. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>key</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The hash key. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>hashed_value</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the result hash value</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Whether there is already a pre-computed hash value. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/node/structural_hash.h" line="155" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classtvm_1_1SHashReducer_1_1Handler_1a8f9a489881fc55552f13a58313a863cf" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>void</type>
+        <definition>virtual void tvm::SHashReducer::Handler::MarkGraphNode</definition>
+        <argsstring>()=0</argsstring>
+        <name>MarkGraphNode</name>
+        <briefdescription>
+<para>Mark current comparison as graph node in hashing. Graph node hash will depends on the graph structure. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/node/structural_hash.h" line="160" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Internal handler that defines custom behaviors. </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="5269">
+        <label>tvm::SHashReducer::Handler</label>
+        <link refid="classtvm_1_1SHashReducer_1_1Handler"/>
+      </node>
+    </collaborationgraph>
+    <location file="include/tvm/node/structural_hash.h" line="118" column="1" bodyfile="include/tvm/node/structural_hash.h" bodystart="118" bodyend="161"/>
+    <listofallmembers>
+      <member refid="classtvm_1_1SHashReducer_1_1Handler_1a74fa7e570590ff3b040178cb50f48ee3" prot="public" virt="pure-virtual"><scope>tvm::SHashReducer::Handler</scope><name>LookupHashedValue</name></member>
+      <member refid="classtvm_1_1SHashReducer_1_1Handler_1a8f9a489881fc55552f13a58313a863cf" prot="public" virt="pure-virtual"><scope>tvm::SHashReducer::Handler</scope><name>MarkGraphNode</name></member>
+      <member refid="classtvm_1_1SHashReducer_1_1Handler_1a6f9ddf0676a2bb500fedcf3892912c54" prot="public" virt="pure-virtual"><scope>tvm::SHashReducer::Handler</scope><name>SHashReduce</name></member>
+      <member refid="classtvm_1_1SHashReducer_1_1Handler_1ab2fe484814770615ef9ddb1f6a6f2dfb" prot="public" virt="pure-virtual"><scope>tvm::SHashReducer::Handler</scope><name>SHashReduceFreeVar</name></member>
+      <member refid="classtvm_1_1SHashReducer_1_1Handler_1a1bb22d4bb3983b4c3ca87b0daef7f93b" prot="public" virt="pure-virtual"><scope>tvm::SHashReducer::Handler</scope><name>SHashReduceHashedValue</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

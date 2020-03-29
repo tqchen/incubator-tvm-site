@@ -1,0 +1,2016 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="classtvm_1_1BaseAttrsNode" kind="class" language="C++" prot="public" abstract="yes">
+    <compoundname>tvm::BaseAttrsNode</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">Object</basecompoundref>
+    <derivedcompoundref refid="classtvm_1_1AttrsNode" prot="public" virt="non-virtual">tvm::AttrsNode&lt; AdaptivePool2DAttrs &gt;</derivedcompoundref>
+    <derivedcompoundref refid="classtvm_1_1AttrsNode" prot="public" virt="non-virtual">tvm::AttrsNode&lt; AdaptivePool3DAttrs &gt;</derivedcompoundref>
+    <derivedcompoundref refid="classtvm_1_1AttrsNode" prot="public" virt="non-virtual">tvm::AttrsNode&lt; AllocTensorAttrs &gt;</derivedcompoundref>
+    <derivedcompoundref refid="classtvm_1_1AttrsNode" prot="public" virt="non-virtual">tvm::AttrsNode&lt; ArangeAttrs &gt;</derivedcompoundref>
+    <derivedcompoundref refid="classtvm_1_1AttrsNode" prot="public" virt="non-virtual">tvm::AttrsNode&lt; ArgsortAttrs &gt;</derivedcompoundref>
+    <derivedcompoundref refid="classtvm_1_1AttrsNode" prot="public" virt="non-virtual">tvm::AttrsNode&lt; AvgPool1DAttrs &gt;</derivedcompoundref>
+    <derivedcompoundref refid="classtvm_1_1AttrsNode" prot="public" virt="non-virtual">tvm::AttrsNode&lt; AvgPool2DAttrs &gt;</derivedcompoundref>
+    <derivedcompoundref refid="classtvm_1_1AttrsNode" prot="public" virt="non-virtual">tvm::AttrsNode&lt; AvgPool3DAttrs &gt;</derivedcompoundref>
+    <derivedcompoundref refid="classtvm_1_1AttrsNode" prot="public" virt="non-virtual">tvm::AttrsNode&lt; BatchNormAttrs &gt;</derivedcompoundref>
+    <derivedcompoundref refid="classtvm_1_1AttrsNode" prot="public" virt="non-virtual">tvm::AttrsNode&lt; BiasAddAttrs &gt;</derivedcompoundref>
+    <derivedcompoundref refid="classtvm_1_1AttrsNode" prot="public" virt="non-virtual">tvm::AttrsNode&lt; BinaryConv2DAttrs &gt;</derivedcompoundref>
+    <derivedcompoundref refid="classtvm_1_1AttrsNode" prot="public" virt="non-virtual">tvm::AttrsNode&lt; BinaryDenseAttrs &gt;</derivedcompoundref>
+    <derivedcompoundref refid="classtvm_1_1AttrsNode" prot="public" virt="non-virtual">tvm::AttrsNode&lt; BitPackAttrs &gt;</derivedcompoundref>
+    <derivedcompoundref refid="classtvm_1_1AttrsNode" prot="public" virt="non-virtual">tvm::AttrsNode&lt; CastAttrs &gt;</derivedcompoundref>
+    <derivedcompoundref refid="classtvm_1_1AttrsNode" prot="public" virt="non-virtual">tvm::AttrsNode&lt; CastHintAttrs &gt;</derivedcompoundref>
+    <derivedcompoundref refid="classtvm_1_1AttrsNode" prot="public" virt="non-virtual">tvm::AttrsNode&lt; ClipAttrs &gt;</derivedcompoundref>
+    <derivedcompoundref refid="classtvm_1_1AttrsNode" prot="public" virt="non-virtual">tvm::AttrsNode&lt; CompilerAttrs &gt;</derivedcompoundref>
+    <derivedcompoundref refid="classtvm_1_1AttrsNode" prot="public" virt="non-virtual">tvm::AttrsNode&lt; ConcatenateAttrs &gt;</derivedcompoundref>
+    <derivedcompoundref refid="classtvm_1_1AttrsNode" prot="public" virt="non-virtual">tvm::AttrsNode&lt; Conv1DAttrs &gt;</derivedcompoundref>
+    <derivedcompoundref refid="classtvm_1_1AttrsNode" prot="public" virt="non-virtual">tvm::AttrsNode&lt; Conv1DTransposeAttrs &gt;</derivedcompoundref>
+    <derivedcompoundref refid="classtvm_1_1AttrsNode" prot="public" virt="non-virtual">tvm::AttrsNode&lt; Conv2DAttrs &gt;</derivedcompoundref>
+    <derivedcompoundref refid="classtvm_1_1AttrsNode" prot="public" virt="non-virtual">tvm::AttrsNode&lt; Conv2DTransposeAttrs &gt;</derivedcompoundref>
+    <derivedcompoundref refid="classtvm_1_1AttrsNode" prot="public" virt="non-virtual">tvm::AttrsNode&lt; Conv2DWinogradAttrs &gt;</derivedcompoundref>
+    <derivedcompoundref refid="classtvm_1_1AttrsNode" prot="public" virt="non-virtual">tvm::AttrsNode&lt; Conv2DWinogradNNPACKWeightTransformAttrs &gt;</derivedcompoundref>
+    <derivedcompoundref refid="classtvm_1_1AttrsNode" prot="public" virt="non-virtual">tvm::AttrsNode&lt; Conv2DWinogradWeightTransformAttrs &gt;</derivedcompoundref>
+    <derivedcompoundref refid="classtvm_1_1AttrsNode" prot="public" virt="non-virtual">tvm::AttrsNode&lt; Conv3DAttrs &gt;</derivedcompoundref>
+    <derivedcompoundref refid="classtvm_1_1AttrsNode" prot="public" virt="non-virtual">tvm::AttrsNode&lt; CropAndResizeAttrs &gt;</derivedcompoundref>
+    <derivedcompoundref refid="classtvm_1_1AttrsNode" prot="public" virt="non-virtual">tvm::AttrsNode&lt; DebugAttrs &gt;</derivedcompoundref>
+    <derivedcompoundref refid="classtvm_1_1AttrsNode" prot="public" virt="non-virtual">tvm::AttrsNode&lt; DeformableConv2DAttrs &gt;</derivedcompoundref>
+    <derivedcompoundref refid="classtvm_1_1AttrsNode" prot="public" virt="non-virtual">tvm::AttrsNode&lt; DenseAttrs &gt;</derivedcompoundref>
+    <derivedcompoundref refid="classtvm_1_1AttrsNode" prot="public" virt="non-virtual">tvm::AttrsNode&lt; DeviceCopyAttrs &gt;</derivedcompoundref>
+    <derivedcompoundref refid="classtvm_1_1AttrsNode" prot="public" virt="non-virtual">tvm::AttrsNode&lt; Dilation2DAttrs &gt;</derivedcompoundref>
+    <derivedcompoundref refid="classtvm_1_1AttrsNode" prot="public" virt="non-virtual">tvm::AttrsNode&lt; DropoutAttrs &gt;</derivedcompoundref>
+    <derivedcompoundref refid="classtvm_1_1AttrsNode" prot="public" virt="non-virtual">tvm::AttrsNode&lt; ExpandDimsAttrs &gt;</derivedcompoundref>
+    <derivedcompoundref refid="classtvm_1_1AttrsNode" prot="public" virt="non-virtual">tvm::AttrsNode&lt; FIFOBufferAttrs &gt;</derivedcompoundref>
+    <derivedcompoundref refid="classtvm_1_1AttrsNode" prot="public" virt="non-virtual">tvm::AttrsNode&lt; GetValidCountsAttrs &gt;</derivedcompoundref>
+    <derivedcompoundref refid="classtvm_1_1AttrsNode" prot="public" virt="non-virtual">tvm::AttrsNode&lt; GlobalPool2DAttrs &gt;</derivedcompoundref>
+    <derivedcompoundref refid="classtvm_1_1AttrsNode" prot="public" virt="non-virtual">tvm::AttrsNode&lt; InitOpAttrs &gt;</derivedcompoundref>
+    <derivedcompoundref refid="classtvm_1_1AttrsNode" prot="public" virt="non-virtual">tvm::AttrsNode&lt; InstanceNormAttrs &gt;</derivedcompoundref>
+    <derivedcompoundref refid="classtvm_1_1AttrsNode" prot="public" virt="non-virtual">tvm::AttrsNode&lt; L2NormalizeAttrs &gt;</derivedcompoundref>
+    <derivedcompoundref refid="classtvm_1_1AttrsNode" prot="public" virt="non-virtual">tvm::AttrsNode&lt; LayerNormAttrs &gt;</derivedcompoundref>
+    <derivedcompoundref refid="classtvm_1_1AttrsNode" prot="public" virt="non-virtual">tvm::AttrsNode&lt; LayoutTransformAttrs &gt;</derivedcompoundref>
+    <derivedcompoundref refid="classtvm_1_1AttrsNode" prot="public" virt="non-virtual">tvm::AttrsNode&lt; LeakyReluAttrs &gt;</derivedcompoundref>
+    <derivedcompoundref refid="classtvm_1_1AttrsNode" prot="public" virt="non-virtual">tvm::AttrsNode&lt; LRNAttrs &gt;</derivedcompoundref>
+    <derivedcompoundref refid="classtvm_1_1AttrsNode" prot="public" virt="non-virtual">tvm::AttrsNode&lt; MaxPool1DAttrs &gt;</derivedcompoundref>
+    <derivedcompoundref refid="classtvm_1_1AttrsNode" prot="public" virt="non-virtual">tvm::AttrsNode&lt; MaxPool2DAttrs &gt;</derivedcompoundref>
+    <derivedcompoundref refid="classtvm_1_1AttrsNode" prot="public" virt="non-virtual">tvm::AttrsNode&lt; MaxPool3DAttrs &gt;</derivedcompoundref>
+    <derivedcompoundref refid="classtvm_1_1AttrsNode" prot="public" virt="non-virtual">tvm::AttrsNode&lt; MirrorPadAttrs &gt;</derivedcompoundref>
+    <derivedcompoundref refid="classtvm_1_1AttrsNode" prot="public" virt="non-virtual">tvm::AttrsNode&lt; MultiBoxPriorAttrs &gt;</derivedcompoundref>
+    <derivedcompoundref refid="classtvm_1_1AttrsNode" prot="public" virt="non-virtual">tvm::AttrsNode&lt; MultiBoxTransformLocAttrs &gt;</derivedcompoundref>
+    <derivedcompoundref refid="classtvm_1_1AttrsNode" prot="public" virt="non-virtual">tvm::AttrsNode&lt; NdarraySizeAttrs &gt;</derivedcompoundref>
+    <derivedcompoundref refid="classtvm_1_1AttrsNode" prot="public" virt="non-virtual">tvm::AttrsNode&lt; NonMaximumSuppressionAttrs &gt;</derivedcompoundref>
+    <derivedcompoundref refid="classtvm_1_1AttrsNode" prot="public" virt="non-virtual">tvm::AttrsNode&lt; OnDeviceAttrs &gt;</derivedcompoundref>
+    <derivedcompoundref refid="classtvm_1_1AttrsNode" prot="public" virt="non-virtual">tvm::AttrsNode&lt; OneHotAttrs &gt;</derivedcompoundref>
+    <derivedcompoundref refid="classtvm_1_1AttrsNode" prot="public" virt="non-virtual">tvm::AttrsNode&lt; PadAttrs &gt;</derivedcompoundref>
+    <derivedcompoundref refid="classtvm_1_1AttrsNode" prot="public" virt="non-virtual">tvm::AttrsNode&lt; PReluAttrs &gt;</derivedcompoundref>
+    <derivedcompoundref refid="classtvm_1_1AttrsNode" prot="public" virt="non-virtual">tvm::AttrsNode&lt; ProposalAttrs &gt;</derivedcompoundref>
+    <derivedcompoundref refid="classtvm_1_1AttrsNode" prot="public" virt="non-virtual">tvm::AttrsNode&lt; QuantizeAttrs &gt;</derivedcompoundref>
+    <derivedcompoundref refid="classtvm_1_1AttrsNode" prot="public" virt="non-virtual">tvm::AttrsNode&lt; ReduceAttrs &gt;</derivedcompoundref>
+    <derivedcompoundref refid="classtvm_1_1AttrsNode" prot="public" virt="non-virtual">tvm::AttrsNode&lt; RepeatAttrs &gt;</derivedcompoundref>
+    <derivedcompoundref refid="classtvm_1_1AttrsNode" prot="public" virt="non-virtual">tvm::AttrsNode&lt; RequantizeAttrs &gt;</derivedcompoundref>
+    <derivedcompoundref refid="classtvm_1_1AttrsNode" prot="public" virt="non-virtual">tvm::AttrsNode&lt; ReshapeAttrs &gt;</derivedcompoundref>
+    <derivedcompoundref refid="classtvm_1_1AttrsNode" prot="public" virt="non-virtual">tvm::AttrsNode&lt; ResizeAttrs &gt;</derivedcompoundref>
+    <derivedcompoundref refid="classtvm_1_1AttrsNode" prot="public" virt="non-virtual">tvm::AttrsNode&lt; ReverseAttrs &gt;</derivedcompoundref>
+    <derivedcompoundref refid="classtvm_1_1AttrsNode" prot="public" virt="non-virtual">tvm::AttrsNode&lt; ROIAlignAttrs &gt;</derivedcompoundref>
+    <derivedcompoundref refid="classtvm_1_1AttrsNode" prot="public" virt="non-virtual">tvm::AttrsNode&lt; ROIPoolAttrs &gt;</derivedcompoundref>
+    <derivedcompoundref refid="classtvm_1_1AttrsNode" prot="public" virt="non-virtual">tvm::AttrsNode&lt; SequenceMaskAttrs &gt;</derivedcompoundref>
+    <derivedcompoundref refid="classtvm_1_1AttrsNode" prot="public" virt="non-virtual">tvm::AttrsNode&lt; ShapeFuncAttrs &gt;</derivedcompoundref>
+    <derivedcompoundref refid="classtvm_1_1AttrsNode" prot="public" virt="non-virtual">tvm::AttrsNode&lt; ShapeOfAttrs &gt;</derivedcompoundref>
+    <derivedcompoundref refid="classtvm_1_1AttrsNode" prot="public" virt="non-virtual">tvm::AttrsNode&lt; SliceLikeAttrs &gt;</derivedcompoundref>
+    <derivedcompoundref refid="classtvm_1_1AttrsNode" prot="public" virt="non-virtual">tvm::AttrsNode&lt; SoftmaxAttrs &gt;</derivedcompoundref>
+    <derivedcompoundref refid="classtvm_1_1AttrsNode" prot="public" virt="non-virtual">tvm::AttrsNode&lt; SparseDenseAttrs &gt;</derivedcompoundref>
+    <derivedcompoundref refid="classtvm_1_1AttrsNode" prot="public" virt="non-virtual">tvm::AttrsNode&lt; SparseTransposeAttrs &gt;</derivedcompoundref>
+    <derivedcompoundref refid="classtvm_1_1AttrsNode" prot="public" virt="non-virtual">tvm::AttrsNode&lt; SplitAttrs &gt;</derivedcompoundref>
+    <derivedcompoundref refid="classtvm_1_1AttrsNode" prot="public" virt="non-virtual">tvm::AttrsNode&lt; SqueezeAttrs &gt;</derivedcompoundref>
+    <derivedcompoundref refid="classtvm_1_1AttrsNode" prot="public" virt="non-virtual">tvm::AttrsNode&lt; StackAttrs &gt;</derivedcompoundref>
+    <derivedcompoundref refid="classtvm_1_1AttrsNode" prot="public" virt="non-virtual">tvm::AttrsNode&lt; StridedSliceAttrs &gt;</derivedcompoundref>
+    <derivedcompoundref refid="classtvm_1_1AttrsNode" prot="public" virt="non-virtual">tvm::AttrsNode&lt; SubPixelAttrs &gt;</derivedcompoundref>
+    <derivedcompoundref refid="classtvm_1_1AttrsNode" prot="public" virt="non-virtual">tvm::AttrsNode&lt; TakeAttrs &gt;</derivedcompoundref>
+    <derivedcompoundref refid="classtvm_1_1AttrsNode" prot="public" virt="non-virtual">tvm::AttrsNode&lt; TileAttrs &gt;</derivedcompoundref>
+    <derivedcompoundref refid="classtvm_1_1AttrsNode" prot="public" virt="non-virtual">tvm::AttrsNode&lt; TopKAttrs &gt;</derivedcompoundref>
+    <derivedcompoundref refid="classtvm_1_1AttrsNode" prot="public" virt="non-virtual">tvm::AttrsNode&lt; TransposeAttrs &gt;</derivedcompoundref>
+    <derivedcompoundref refid="classtvm_1_1AttrsNode" prot="public" virt="non-virtual">tvm::AttrsNode&lt; UpSampling3DAttrs &gt;</derivedcompoundref>
+    <derivedcompoundref refid="classtvm_1_1AttrsNode" prot="public" virt="non-virtual">tvm::AttrsNode&lt; UpSamplingAttrs &gt;</derivedcompoundref>
+    <derivedcompoundref refid="classtvm_1_1AttrsNode" prot="public" virt="non-virtual">tvm::AttrsNode&lt; YoloReorgAttrs &gt;</derivedcompoundref>
+    <derivedcompoundref refid="classtvm_1_1AttrsNode" prot="public" virt="non-virtual">tvm::AttrsNode&lt; DerivedType &gt;</derivedcompoundref>
+    <derivedcompoundref refid="classtvm_1_1DictAttrsNode" prot="public" virt="non-virtual">tvm::DictAttrsNode</derivedcompoundref>
+    <includes refid="ir_2attrs_8h" local="no">attrs.h</includes>
+      <sectiondef kind="public-type">
+      <memberdef kind="typedef" id="classtvm_1_1BaseAttrsNode_1a257561dad74174cbdc08f6725a45d8ac" prot="public" static="no">
+        <type><ref refid="classtvm_1_1runtime_1_1TVMArgs" kindref="compound">runtime::TVMArgs</ref></type>
+        <definition>using tvm::BaseAttrsNode::TVMArgs =  runtime::TVMArgs</definition>
+        <argsstring></argsstring>
+        <name>TVMArgs</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/ir/attrs.h" line="231" column="1" bodyfile="include/tvm/ir/attrs.h" bodystart="231" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="classtvm_1_1BaseAttrsNode_1a1f56f080d0c1fab79d9469029aef8ebb" prot="public" static="no">
+        <type><ref refid="classtvm_1_1runtime_1_1TVMRetValue" kindref="compound">runtime::TVMRetValue</ref></type>
+        <definition>using tvm::BaseAttrsNode::TVMRetValue =  runtime::TVMRetValue</definition>
+        <argsstring></argsstring>
+        <name>TVMRetValue</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/ir/attrs.h" line="232" column="1" bodyfile="include/tvm/ir/attrs.h" bodystart="232" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-attrib">
+      <memberdef kind="variable" id="classtvm_1_1BaseAttrsNode_1ad812afdb028fe3944a80cd922dceff82" prot="public" static="yes" mutable="no">
+        <type>constexpr const bool</type>
+        <definition>constexpr const bool tvm::BaseAttrsNode::_type_has_method_sequal_reduce</definition>
+        <argsstring></argsstring>
+        <name>_type_has_method_sequal_reduce</name>
+        <initializer>= true</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/ir/attrs.h" line="284" column="1" bodyfile="include/tvm/ir/attrs.h" bodystart="284" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classtvm_1_1BaseAttrsNode_1ad85f4aca5e8840d23851c0c07acd0862" prot="public" static="yes" mutable="no">
+        <type>constexpr const bool</type>
+        <definition>constexpr const bool tvm::BaseAttrsNode::_type_has_method_shash_reduce</definition>
+        <argsstring></argsstring>
+        <name>_type_has_method_shash_reduce</name>
+        <initializer>= true</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/ir/attrs.h" line="285" column="1" bodyfile="include/tvm/ir/attrs.h" bodystart="285" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classtvm_1_1BaseAttrsNode_1a8e4fd4e728774e0556cda84b0c2b80d6" prot="public" static="yes" mutable="no">
+        <type>constexpr const char *</type>
+        <definition>constexpr const char* tvm::BaseAttrsNode::_type_key</definition>
+        <argsstring></argsstring>
+        <name>_type_key</name>
+        <initializer>= &quot;Attrs&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/ir/attrs.h" line="286" column="1" bodyfile="include/tvm/ir/attrs.h" bodystart="286" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classtvm_1_1BaseAttrsNode_1a225581a40231b2de219da30fced428a2" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type></type>
+        <definition>virtual tvm::BaseAttrsNode::~BaseAttrsNode</definition>
+        <argsstring>()</argsstring>
+        <name>~BaseAttrsNode</name>
+        <briefdescription>
+<para>virtual destructor </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/ir/attrs.h" line="234" column="1" bodyfile="include/tvm/ir/attrs.h" bodystart="234" bodyend="234"/>
+      </memberdef>
+      <memberdef kind="function" id="classtvm_1_1BaseAttrsNode_1af145cd54a0d92705871500a675e43abe" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>void</type>
+        <definition>virtual void tvm::BaseAttrsNode::VisitAttrs</definition>
+        <argsstring>(AttrVisitor *v)</argsstring>
+        <name>VisitAttrs</name>
+        <reimplementedby refid="classtvm_1_1DictAttrsNode_1a8866b613e11f531ec6db5834bb1d15ef">VisitAttrs</reimplementedby>
+        <reimplementedby refid="classtvm_1_1AttrsNode_1a5da687ced06b4f2dfa04b142a34a9c72">VisitAttrs</reimplementedby>
+        <reimplementedby refid="classtvm_1_1AttrsNode_1a5da687ced06b4f2dfa04b142a34a9c72">VisitAttrs</reimplementedby>
+        <reimplementedby refid="classtvm_1_1AttrsNode_1a5da687ced06b4f2dfa04b142a34a9c72">VisitAttrs</reimplementedby>
+        <reimplementedby refid="classtvm_1_1AttrsNode_1a5da687ced06b4f2dfa04b142a34a9c72">VisitAttrs</reimplementedby>
+        <reimplementedby refid="classtvm_1_1AttrsNode_1a5da687ced06b4f2dfa04b142a34a9c72">VisitAttrs</reimplementedby>
+        <reimplementedby refid="classtvm_1_1AttrsNode_1a5da687ced06b4f2dfa04b142a34a9c72">VisitAttrs</reimplementedby>
+        <reimplementedby refid="classtvm_1_1AttrsNode_1a5da687ced06b4f2dfa04b142a34a9c72">VisitAttrs</reimplementedby>
+        <reimplementedby refid="classtvm_1_1AttrsNode_1a5da687ced06b4f2dfa04b142a34a9c72">VisitAttrs</reimplementedby>
+        <reimplementedby refid="classtvm_1_1AttrsNode_1a5da687ced06b4f2dfa04b142a34a9c72">VisitAttrs</reimplementedby>
+        <reimplementedby refid="classtvm_1_1AttrsNode_1a5da687ced06b4f2dfa04b142a34a9c72">VisitAttrs</reimplementedby>
+        <reimplementedby refid="classtvm_1_1AttrsNode_1a5da687ced06b4f2dfa04b142a34a9c72">VisitAttrs</reimplementedby>
+        <reimplementedby refid="classtvm_1_1AttrsNode_1a5da687ced06b4f2dfa04b142a34a9c72">VisitAttrs</reimplementedby>
+        <reimplementedby refid="classtvm_1_1AttrsNode_1a5da687ced06b4f2dfa04b142a34a9c72">VisitAttrs</reimplementedby>
+        <reimplementedby refid="classtvm_1_1AttrsNode_1a5da687ced06b4f2dfa04b142a34a9c72">VisitAttrs</reimplementedby>
+        <reimplementedby refid="classtvm_1_1AttrsNode_1a5da687ced06b4f2dfa04b142a34a9c72">VisitAttrs</reimplementedby>
+        <reimplementedby refid="classtvm_1_1AttrsNode_1a5da687ced06b4f2dfa04b142a34a9c72">VisitAttrs</reimplementedby>
+        <reimplementedby refid="classtvm_1_1AttrsNode_1a5da687ced06b4f2dfa04b142a34a9c72">VisitAttrs</reimplementedby>
+        <reimplementedby refid="classtvm_1_1AttrsNode_1a5da687ced06b4f2dfa04b142a34a9c72">VisitAttrs</reimplementedby>
+        <reimplementedby refid="classtvm_1_1AttrsNode_1a5da687ced06b4f2dfa04b142a34a9c72">VisitAttrs</reimplementedby>
+        <reimplementedby refid="classtvm_1_1AttrsNode_1a5da687ced06b4f2dfa04b142a34a9c72">VisitAttrs</reimplementedby>
+        <reimplementedby refid="classtvm_1_1AttrsNode_1a5da687ced06b4f2dfa04b142a34a9c72">VisitAttrs</reimplementedby>
+        <reimplementedby refid="classtvm_1_1AttrsNode_1a5da687ced06b4f2dfa04b142a34a9c72">VisitAttrs</reimplementedby>
+        <reimplementedby refid="classtvm_1_1AttrsNode_1a5da687ced06b4f2dfa04b142a34a9c72">VisitAttrs</reimplementedby>
+        <reimplementedby refid="classtvm_1_1AttrsNode_1a5da687ced06b4f2dfa04b142a34a9c72">VisitAttrs</reimplementedby>
+        <reimplementedby refid="classtvm_1_1AttrsNode_1a5da687ced06b4f2dfa04b142a34a9c72">VisitAttrs</reimplementedby>
+        <reimplementedby refid="classtvm_1_1AttrsNode_1a5da687ced06b4f2dfa04b142a34a9c72">VisitAttrs</reimplementedby>
+        <reimplementedby refid="classtvm_1_1AttrsNode_1a5da687ced06b4f2dfa04b142a34a9c72">VisitAttrs</reimplementedby>
+        <reimplementedby refid="classtvm_1_1AttrsNode_1a5da687ced06b4f2dfa04b142a34a9c72">VisitAttrs</reimplementedby>
+        <reimplementedby refid="classtvm_1_1AttrsNode_1a5da687ced06b4f2dfa04b142a34a9c72">VisitAttrs</reimplementedby>
+        <reimplementedby refid="classtvm_1_1AttrsNode_1a5da687ced06b4f2dfa04b142a34a9c72">VisitAttrs</reimplementedby>
+        <reimplementedby refid="classtvm_1_1AttrsNode_1a5da687ced06b4f2dfa04b142a34a9c72">VisitAttrs</reimplementedby>
+        <reimplementedby refid="classtvm_1_1AttrsNode_1a5da687ced06b4f2dfa04b142a34a9c72">VisitAttrs</reimplementedby>
+        <reimplementedby refid="classtvm_1_1AttrsNode_1a5da687ced06b4f2dfa04b142a34a9c72">VisitAttrs</reimplementedby>
+        <reimplementedby refid="classtvm_1_1AttrsNode_1a5da687ced06b4f2dfa04b142a34a9c72">VisitAttrs</reimplementedby>
+        <reimplementedby refid="classtvm_1_1AttrsNode_1a5da687ced06b4f2dfa04b142a34a9c72">VisitAttrs</reimplementedby>
+        <reimplementedby refid="classtvm_1_1AttrsNode_1a5da687ced06b4f2dfa04b142a34a9c72">VisitAttrs</reimplementedby>
+        <reimplementedby refid="classtvm_1_1AttrsNode_1a5da687ced06b4f2dfa04b142a34a9c72">VisitAttrs</reimplementedby>
+        <reimplementedby refid="classtvm_1_1AttrsNode_1a5da687ced06b4f2dfa04b142a34a9c72">VisitAttrs</reimplementedby>
+        <reimplementedby refid="classtvm_1_1AttrsNode_1a5da687ced06b4f2dfa04b142a34a9c72">VisitAttrs</reimplementedby>
+        <reimplementedby refid="classtvm_1_1AttrsNode_1a5da687ced06b4f2dfa04b142a34a9c72">VisitAttrs</reimplementedby>
+        <reimplementedby refid="classtvm_1_1AttrsNode_1a5da687ced06b4f2dfa04b142a34a9c72">VisitAttrs</reimplementedby>
+        <reimplementedby refid="classtvm_1_1AttrsNode_1a5da687ced06b4f2dfa04b142a34a9c72">VisitAttrs</reimplementedby>
+        <reimplementedby refid="classtvm_1_1AttrsNode_1a5da687ced06b4f2dfa04b142a34a9c72">VisitAttrs</reimplementedby>
+        <reimplementedby refid="classtvm_1_1AttrsNode_1a5da687ced06b4f2dfa04b142a34a9c72">VisitAttrs</reimplementedby>
+        <reimplementedby refid="classtvm_1_1AttrsNode_1a5da687ced06b4f2dfa04b142a34a9c72">VisitAttrs</reimplementedby>
+        <reimplementedby refid="classtvm_1_1AttrsNode_1a5da687ced06b4f2dfa04b142a34a9c72">VisitAttrs</reimplementedby>
+        <reimplementedby refid="classtvm_1_1AttrsNode_1a5da687ced06b4f2dfa04b142a34a9c72">VisitAttrs</reimplementedby>
+        <reimplementedby refid="classtvm_1_1AttrsNode_1a5da687ced06b4f2dfa04b142a34a9c72">VisitAttrs</reimplementedby>
+        <reimplementedby refid="classtvm_1_1AttrsNode_1a5da687ced06b4f2dfa04b142a34a9c72">VisitAttrs</reimplementedby>
+        <reimplementedby refid="classtvm_1_1AttrsNode_1a5da687ced06b4f2dfa04b142a34a9c72">VisitAttrs</reimplementedby>
+        <reimplementedby refid="classtvm_1_1AttrsNode_1a5da687ced06b4f2dfa04b142a34a9c72">VisitAttrs</reimplementedby>
+        <reimplementedby refid="classtvm_1_1AttrsNode_1a5da687ced06b4f2dfa04b142a34a9c72">VisitAttrs</reimplementedby>
+        <reimplementedby refid="classtvm_1_1AttrsNode_1a5da687ced06b4f2dfa04b142a34a9c72">VisitAttrs</reimplementedby>
+        <reimplementedby refid="classtvm_1_1AttrsNode_1a5da687ced06b4f2dfa04b142a34a9c72">VisitAttrs</reimplementedby>
+        <reimplementedby refid="classtvm_1_1AttrsNode_1a5da687ced06b4f2dfa04b142a34a9c72">VisitAttrs</reimplementedby>
+        <reimplementedby refid="classtvm_1_1AttrsNode_1a5da687ced06b4f2dfa04b142a34a9c72">VisitAttrs</reimplementedby>
+        <reimplementedby refid="classtvm_1_1AttrsNode_1a5da687ced06b4f2dfa04b142a34a9c72">VisitAttrs</reimplementedby>
+        <reimplementedby refid="classtvm_1_1AttrsNode_1a5da687ced06b4f2dfa04b142a34a9c72">VisitAttrs</reimplementedby>
+        <reimplementedby refid="classtvm_1_1AttrsNode_1a5da687ced06b4f2dfa04b142a34a9c72">VisitAttrs</reimplementedby>
+        <reimplementedby refid="classtvm_1_1AttrsNode_1a5da687ced06b4f2dfa04b142a34a9c72">VisitAttrs</reimplementedby>
+        <reimplementedby refid="classtvm_1_1AttrsNode_1a5da687ced06b4f2dfa04b142a34a9c72">VisitAttrs</reimplementedby>
+        <reimplementedby refid="classtvm_1_1AttrsNode_1a5da687ced06b4f2dfa04b142a34a9c72">VisitAttrs</reimplementedby>
+        <reimplementedby refid="classtvm_1_1AttrsNode_1a5da687ced06b4f2dfa04b142a34a9c72">VisitAttrs</reimplementedby>
+        <reimplementedby refid="classtvm_1_1AttrsNode_1a5da687ced06b4f2dfa04b142a34a9c72">VisitAttrs</reimplementedby>
+        <reimplementedby refid="classtvm_1_1AttrsNode_1a5da687ced06b4f2dfa04b142a34a9c72">VisitAttrs</reimplementedby>
+        <reimplementedby refid="classtvm_1_1AttrsNode_1a5da687ced06b4f2dfa04b142a34a9c72">VisitAttrs</reimplementedby>
+        <reimplementedby refid="classtvm_1_1AttrsNode_1a5da687ced06b4f2dfa04b142a34a9c72">VisitAttrs</reimplementedby>
+        <reimplementedby refid="classtvm_1_1AttrsNode_1a5da687ced06b4f2dfa04b142a34a9c72">VisitAttrs</reimplementedby>
+        <reimplementedby refid="classtvm_1_1AttrsNode_1a5da687ced06b4f2dfa04b142a34a9c72">VisitAttrs</reimplementedby>
+        <reimplementedby refid="classtvm_1_1AttrsNode_1a5da687ced06b4f2dfa04b142a34a9c72">VisitAttrs</reimplementedby>
+        <reimplementedby refid="classtvm_1_1AttrsNode_1a5da687ced06b4f2dfa04b142a34a9c72">VisitAttrs</reimplementedby>
+        <reimplementedby refid="classtvm_1_1AttrsNode_1a5da687ced06b4f2dfa04b142a34a9c72">VisitAttrs</reimplementedby>
+        <reimplementedby refid="classtvm_1_1AttrsNode_1a5da687ced06b4f2dfa04b142a34a9c72">VisitAttrs</reimplementedby>
+        <reimplementedby refid="classtvm_1_1AttrsNode_1a5da687ced06b4f2dfa04b142a34a9c72">VisitAttrs</reimplementedby>
+        <reimplementedby refid="classtvm_1_1AttrsNode_1a5da687ced06b4f2dfa04b142a34a9c72">VisitAttrs</reimplementedby>
+        <reimplementedby refid="classtvm_1_1AttrsNode_1a5da687ced06b4f2dfa04b142a34a9c72">VisitAttrs</reimplementedby>
+        <reimplementedby refid="classtvm_1_1AttrsNode_1a5da687ced06b4f2dfa04b142a34a9c72">VisitAttrs</reimplementedby>
+        <reimplementedby refid="classtvm_1_1AttrsNode_1a5da687ced06b4f2dfa04b142a34a9c72">VisitAttrs</reimplementedby>
+        <reimplementedby refid="classtvm_1_1AttrsNode_1a5da687ced06b4f2dfa04b142a34a9c72">VisitAttrs</reimplementedby>
+        <reimplementedby refid="classtvm_1_1AttrsNode_1a5da687ced06b4f2dfa04b142a34a9c72">VisitAttrs</reimplementedby>
+        <reimplementedby refid="classtvm_1_1AttrsNode_1a5da687ced06b4f2dfa04b142a34a9c72">VisitAttrs</reimplementedby>
+        <reimplementedby refid="classtvm_1_1AttrsNode_1a5da687ced06b4f2dfa04b142a34a9c72">VisitAttrs</reimplementedby>
+        <reimplementedby refid="classtvm_1_1AttrsNode_1a5da687ced06b4f2dfa04b142a34a9c72">VisitAttrs</reimplementedby>
+        <reimplementedby refid="classtvm_1_1AttrsNode_1a5da687ced06b4f2dfa04b142a34a9c72">VisitAttrs</reimplementedby>
+        <reimplementedby refid="classtvm_1_1AttrsNode_1a5da687ced06b4f2dfa04b142a34a9c72">VisitAttrs</reimplementedby>
+        <reimplementedby refid="classtvm_1_1AttrsNode_1a5da687ced06b4f2dfa04b142a34a9c72">VisitAttrs</reimplementedby>
+        <param>
+          <type><ref refid="classtvm_1_1AttrVisitor" kindref="compound">AttrVisitor</ref> *</type>
+          <declname>v</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/ir/attrs.h" line="236" column="1" bodyfile="include/tvm/ir/attrs.h" bodystart="236" bodyend="236"/>
+      </memberdef>
+      <memberdef kind="function" id="classtvm_1_1BaseAttrsNode_1aef9e5266d16e163ccc7b1b16c1ea3269" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename...</type>
+            <declname>Args</declname>
+            <defname>Args</defname>
+          </param>
+        </templateparamlist>
+        <type>void</type>
+        <definition>void tvm::BaseAttrsNode::InitBySeq</definition>
+        <argsstring>(Args &amp;&amp;...args)</argsstring>
+        <name>InitBySeq</name>
+        <param>
+          <type>Args &amp;&amp;...</type>
+          <declname>args</declname>
+        </param>
+        <briefdescription>
+<para>Initialize the attributes by sequence of arguments. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>args</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The postional arguments in the form [key0, value0, key1, value1, ..., key_n, value_n] </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/ir/attrs.h" line="243" column="1" bodyfile="include/tvm/ir/attrs.h" bodystart="919" bodyend="924"/>
+      </memberdef>
+      <memberdef kind="function" id="classtvm_1_1BaseAttrsNode_1a118837841487c80b157dbead88f18513" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void tvm::BaseAttrsNode::PrintDocString</definition>
+        <argsstring>(std::ostream &amp;os) const </argsstring>
+        <name>PrintDocString</name>
+        <param>
+          <type>std::ostream &amp;</type>
+          <declname>os</declname>
+        </param>
+        <briefdescription>
+<para>Print readible docstring to ostream, add newline. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>os</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the stream to print the docstring to. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/ir/attrs.h" line="248" column="1" bodyfile="include/tvm/ir/attrs.h" bodystart="926" bodyend="934"/>
+      </memberdef>
+      <memberdef kind="function" id="classtvm_1_1BaseAttrsNode_1acc8ff84447e3830050d96e2da4188195" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>void</type>
+        <definition>virtual void tvm::BaseAttrsNode::VisitNonDefaultAttrs</definition>
+        <argsstring>(AttrVisitor *v)=0</argsstring>
+        <name>VisitNonDefaultAttrs</name>
+        <reimplementedby refid="classtvm_1_1DictAttrsNode_1ac096af14759a1d48ecf78fd6545776e0">VisitNonDefaultAttrs</reimplementedby>
+        <reimplementedby refid="classtvm_1_1AttrsNode_1acd05137ba529ac7cd07053e3da885205">VisitNonDefaultAttrs</reimplementedby>
+        <reimplementedby refid="classtvm_1_1AttrsNode_1acd05137ba529ac7cd07053e3da885205">VisitNonDefaultAttrs</reimplementedby>
+        <reimplementedby refid="classtvm_1_1AttrsNode_1acd05137ba529ac7cd07053e3da885205">VisitNonDefaultAttrs</reimplementedby>
+        <reimplementedby refid="classtvm_1_1AttrsNode_1acd05137ba529ac7cd07053e3da885205">VisitNonDefaultAttrs</reimplementedby>
+        <reimplementedby refid="classtvm_1_1AttrsNode_1acd05137ba529ac7cd07053e3da885205">VisitNonDefaultAttrs</reimplementedby>
+        <reimplementedby refid="classtvm_1_1AttrsNode_1acd05137ba529ac7cd07053e3da885205">VisitNonDefaultAttrs</reimplementedby>
+        <reimplementedby refid="classtvm_1_1AttrsNode_1acd05137ba529ac7cd07053e3da885205">VisitNonDefaultAttrs</reimplementedby>
+        <reimplementedby refid="classtvm_1_1AttrsNode_1acd05137ba529ac7cd07053e3da885205">VisitNonDefaultAttrs</reimplementedby>
+        <reimplementedby refid="classtvm_1_1AttrsNode_1acd05137ba529ac7cd07053e3da885205">VisitNonDefaultAttrs</reimplementedby>
+        <reimplementedby refid="classtvm_1_1AttrsNode_1acd05137ba529ac7cd07053e3da885205">VisitNonDefaultAttrs</reimplementedby>
+        <reimplementedby refid="classtvm_1_1AttrsNode_1acd05137ba529ac7cd07053e3da885205">VisitNonDefaultAttrs</reimplementedby>
+        <reimplementedby refid="classtvm_1_1AttrsNode_1acd05137ba529ac7cd07053e3da885205">VisitNonDefaultAttrs</reimplementedby>
+        <reimplementedby refid="classtvm_1_1AttrsNode_1acd05137ba529ac7cd07053e3da885205">VisitNonDefaultAttrs</reimplementedby>
+        <reimplementedby refid="classtvm_1_1AttrsNode_1acd05137ba529ac7cd07053e3da885205">VisitNonDefaultAttrs</reimplementedby>
+        <reimplementedby refid="classtvm_1_1AttrsNode_1acd05137ba529ac7cd07053e3da885205">VisitNonDefaultAttrs</reimplementedby>
+        <reimplementedby refid="classtvm_1_1AttrsNode_1acd05137ba529ac7cd07053e3da885205">VisitNonDefaultAttrs</reimplementedby>
+        <reimplementedby refid="classtvm_1_1AttrsNode_1acd05137ba529ac7cd07053e3da885205">VisitNonDefaultAttrs</reimplementedby>
+        <reimplementedby refid="classtvm_1_1AttrsNode_1acd05137ba529ac7cd07053e3da885205">VisitNonDefaultAttrs</reimplementedby>
+        <reimplementedby refid="classtvm_1_1AttrsNode_1acd05137ba529ac7cd07053e3da885205">VisitNonDefaultAttrs</reimplementedby>
+        <reimplementedby refid="classtvm_1_1AttrsNode_1acd05137ba529ac7cd07053e3da885205">VisitNonDefaultAttrs</reimplementedby>
+        <reimplementedby refid="classtvm_1_1AttrsNode_1acd05137ba529ac7cd07053e3da885205">VisitNonDefaultAttrs</reimplementedby>
+        <reimplementedby refid="classtvm_1_1AttrsNode_1acd05137ba529ac7cd07053e3da885205">VisitNonDefaultAttrs</reimplementedby>
+        <reimplementedby refid="classtvm_1_1AttrsNode_1acd05137ba529ac7cd07053e3da885205">VisitNonDefaultAttrs</reimplementedby>
+        <reimplementedby refid="classtvm_1_1AttrsNode_1acd05137ba529ac7cd07053e3da885205">VisitNonDefaultAttrs</reimplementedby>
+        <reimplementedby refid="classtvm_1_1AttrsNode_1acd05137ba529ac7cd07053e3da885205">VisitNonDefaultAttrs</reimplementedby>
+        <reimplementedby refid="classtvm_1_1AttrsNode_1acd05137ba529ac7cd07053e3da885205">VisitNonDefaultAttrs</reimplementedby>
+        <reimplementedby refid="classtvm_1_1AttrsNode_1acd05137ba529ac7cd07053e3da885205">VisitNonDefaultAttrs</reimplementedby>
+        <reimplementedby refid="classtvm_1_1AttrsNode_1acd05137ba529ac7cd07053e3da885205">VisitNonDefaultAttrs</reimplementedby>
+        <reimplementedby refid="classtvm_1_1AttrsNode_1acd05137ba529ac7cd07053e3da885205">VisitNonDefaultAttrs</reimplementedby>
+        <reimplementedby refid="classtvm_1_1AttrsNode_1acd05137ba529ac7cd07053e3da885205">VisitNonDefaultAttrs</reimplementedby>
+        <reimplementedby refid="classtvm_1_1AttrsNode_1acd05137ba529ac7cd07053e3da885205">VisitNonDefaultAttrs</reimplementedby>
+        <reimplementedby refid="classtvm_1_1AttrsNode_1acd05137ba529ac7cd07053e3da885205">VisitNonDefaultAttrs</reimplementedby>
+        <reimplementedby refid="classtvm_1_1AttrsNode_1acd05137ba529ac7cd07053e3da885205">VisitNonDefaultAttrs</reimplementedby>
+        <reimplementedby refid="classtvm_1_1AttrsNode_1acd05137ba529ac7cd07053e3da885205">VisitNonDefaultAttrs</reimplementedby>
+        <reimplementedby refid="classtvm_1_1AttrsNode_1acd05137ba529ac7cd07053e3da885205">VisitNonDefaultAttrs</reimplementedby>
+        <reimplementedby refid="classtvm_1_1AttrsNode_1acd05137ba529ac7cd07053e3da885205">VisitNonDefaultAttrs</reimplementedby>
+        <reimplementedby refid="classtvm_1_1AttrsNode_1acd05137ba529ac7cd07053e3da885205">VisitNonDefaultAttrs</reimplementedby>
+        <reimplementedby refid="classtvm_1_1AttrsNode_1acd05137ba529ac7cd07053e3da885205">VisitNonDefaultAttrs</reimplementedby>
+        <reimplementedby refid="classtvm_1_1AttrsNode_1acd05137ba529ac7cd07053e3da885205">VisitNonDefaultAttrs</reimplementedby>
+        <reimplementedby refid="classtvm_1_1AttrsNode_1acd05137ba529ac7cd07053e3da885205">VisitNonDefaultAttrs</reimplementedby>
+        <reimplementedby refid="classtvm_1_1AttrsNode_1acd05137ba529ac7cd07053e3da885205">VisitNonDefaultAttrs</reimplementedby>
+        <reimplementedby refid="classtvm_1_1AttrsNode_1acd05137ba529ac7cd07053e3da885205">VisitNonDefaultAttrs</reimplementedby>
+        <reimplementedby refid="classtvm_1_1AttrsNode_1acd05137ba529ac7cd07053e3da885205">VisitNonDefaultAttrs</reimplementedby>
+        <reimplementedby refid="classtvm_1_1AttrsNode_1acd05137ba529ac7cd07053e3da885205">VisitNonDefaultAttrs</reimplementedby>
+        <reimplementedby refid="classtvm_1_1AttrsNode_1acd05137ba529ac7cd07053e3da885205">VisitNonDefaultAttrs</reimplementedby>
+        <reimplementedby refid="classtvm_1_1AttrsNode_1acd05137ba529ac7cd07053e3da885205">VisitNonDefaultAttrs</reimplementedby>
+        <reimplementedby refid="classtvm_1_1AttrsNode_1acd05137ba529ac7cd07053e3da885205">VisitNonDefaultAttrs</reimplementedby>
+        <reimplementedby refid="classtvm_1_1AttrsNode_1acd05137ba529ac7cd07053e3da885205">VisitNonDefaultAttrs</reimplementedby>
+        <reimplementedby refid="classtvm_1_1AttrsNode_1acd05137ba529ac7cd07053e3da885205">VisitNonDefaultAttrs</reimplementedby>
+        <reimplementedby refid="classtvm_1_1AttrsNode_1acd05137ba529ac7cd07053e3da885205">VisitNonDefaultAttrs</reimplementedby>
+        <reimplementedby refid="classtvm_1_1AttrsNode_1acd05137ba529ac7cd07053e3da885205">VisitNonDefaultAttrs</reimplementedby>
+        <reimplementedby refid="classtvm_1_1AttrsNode_1acd05137ba529ac7cd07053e3da885205">VisitNonDefaultAttrs</reimplementedby>
+        <reimplementedby refid="classtvm_1_1AttrsNode_1acd05137ba529ac7cd07053e3da885205">VisitNonDefaultAttrs</reimplementedby>
+        <reimplementedby refid="classtvm_1_1AttrsNode_1acd05137ba529ac7cd07053e3da885205">VisitNonDefaultAttrs</reimplementedby>
+        <reimplementedby refid="classtvm_1_1AttrsNode_1acd05137ba529ac7cd07053e3da885205">VisitNonDefaultAttrs</reimplementedby>
+        <reimplementedby refid="classtvm_1_1AttrsNode_1acd05137ba529ac7cd07053e3da885205">VisitNonDefaultAttrs</reimplementedby>
+        <reimplementedby refid="classtvm_1_1AttrsNode_1acd05137ba529ac7cd07053e3da885205">VisitNonDefaultAttrs</reimplementedby>
+        <reimplementedby refid="classtvm_1_1AttrsNode_1acd05137ba529ac7cd07053e3da885205">VisitNonDefaultAttrs</reimplementedby>
+        <reimplementedby refid="classtvm_1_1AttrsNode_1acd05137ba529ac7cd07053e3da885205">VisitNonDefaultAttrs</reimplementedby>
+        <reimplementedby refid="classtvm_1_1AttrsNode_1acd05137ba529ac7cd07053e3da885205">VisitNonDefaultAttrs</reimplementedby>
+        <reimplementedby refid="classtvm_1_1AttrsNode_1acd05137ba529ac7cd07053e3da885205">VisitNonDefaultAttrs</reimplementedby>
+        <reimplementedby refid="classtvm_1_1AttrsNode_1acd05137ba529ac7cd07053e3da885205">VisitNonDefaultAttrs</reimplementedby>
+        <reimplementedby refid="classtvm_1_1AttrsNode_1acd05137ba529ac7cd07053e3da885205">VisitNonDefaultAttrs</reimplementedby>
+        <reimplementedby refid="classtvm_1_1AttrsNode_1acd05137ba529ac7cd07053e3da885205">VisitNonDefaultAttrs</reimplementedby>
+        <reimplementedby refid="classtvm_1_1AttrsNode_1acd05137ba529ac7cd07053e3da885205">VisitNonDefaultAttrs</reimplementedby>
+        <reimplementedby refid="classtvm_1_1AttrsNode_1acd05137ba529ac7cd07053e3da885205">VisitNonDefaultAttrs</reimplementedby>
+        <reimplementedby refid="classtvm_1_1AttrsNode_1acd05137ba529ac7cd07053e3da885205">VisitNonDefaultAttrs</reimplementedby>
+        <reimplementedby refid="classtvm_1_1AttrsNode_1acd05137ba529ac7cd07053e3da885205">VisitNonDefaultAttrs</reimplementedby>
+        <reimplementedby refid="classtvm_1_1AttrsNode_1acd05137ba529ac7cd07053e3da885205">VisitNonDefaultAttrs</reimplementedby>
+        <reimplementedby refid="classtvm_1_1AttrsNode_1acd05137ba529ac7cd07053e3da885205">VisitNonDefaultAttrs</reimplementedby>
+        <reimplementedby refid="classtvm_1_1AttrsNode_1acd05137ba529ac7cd07053e3da885205">VisitNonDefaultAttrs</reimplementedby>
+        <reimplementedby refid="classtvm_1_1AttrsNode_1acd05137ba529ac7cd07053e3da885205">VisitNonDefaultAttrs</reimplementedby>
+        <reimplementedby refid="classtvm_1_1AttrsNode_1acd05137ba529ac7cd07053e3da885205">VisitNonDefaultAttrs</reimplementedby>
+        <reimplementedby refid="classtvm_1_1AttrsNode_1acd05137ba529ac7cd07053e3da885205">VisitNonDefaultAttrs</reimplementedby>
+        <reimplementedby refid="classtvm_1_1AttrsNode_1acd05137ba529ac7cd07053e3da885205">VisitNonDefaultAttrs</reimplementedby>
+        <reimplementedby refid="classtvm_1_1AttrsNode_1acd05137ba529ac7cd07053e3da885205">VisitNonDefaultAttrs</reimplementedby>
+        <reimplementedby refid="classtvm_1_1AttrsNode_1acd05137ba529ac7cd07053e3da885205">VisitNonDefaultAttrs</reimplementedby>
+        <reimplementedby refid="classtvm_1_1AttrsNode_1acd05137ba529ac7cd07053e3da885205">VisitNonDefaultAttrs</reimplementedby>
+        <reimplementedby refid="classtvm_1_1AttrsNode_1acd05137ba529ac7cd07053e3da885205">VisitNonDefaultAttrs</reimplementedby>
+        <reimplementedby refid="classtvm_1_1AttrsNode_1acd05137ba529ac7cd07053e3da885205">VisitNonDefaultAttrs</reimplementedby>
+        <reimplementedby refid="classtvm_1_1AttrsNode_1acd05137ba529ac7cd07053e3da885205">VisitNonDefaultAttrs</reimplementedby>
+        <reimplementedby refid="classtvm_1_1AttrsNode_1acd05137ba529ac7cd07053e3da885205">VisitNonDefaultAttrs</reimplementedby>
+        <reimplementedby refid="classtvm_1_1AttrsNode_1acd05137ba529ac7cd07053e3da885205">VisitNonDefaultAttrs</reimplementedby>
+        <reimplementedby refid="classtvm_1_1AttrsNode_1acd05137ba529ac7cd07053e3da885205">VisitNonDefaultAttrs</reimplementedby>
+        <reimplementedby refid="classtvm_1_1AttrsNode_1acd05137ba529ac7cd07053e3da885205">VisitNonDefaultAttrs</reimplementedby>
+        <reimplementedby refid="classtvm_1_1AttrsNode_1acd05137ba529ac7cd07053e3da885205">VisitNonDefaultAttrs</reimplementedby>
+        <param>
+          <type><ref refid="classtvm_1_1AttrVisitor" kindref="compound">AttrVisitor</ref> *</type>
+          <declname>v</declname>
+        </param>
+        <briefdescription>
+<para>Visit attributes that do not equal the default value. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="note"><para>This is useful to extract fields for concise printing. </para></simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>v</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The visitor </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/ir/attrs.h" line="255" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classtvm_1_1BaseAttrsNode_1a6db664b2fcfb42f967652b596f0cab99" prot="public" static="no" const="yes" explicit="no" inline="no" virt="pure-virtual">
+        <type><ref refid="classtvm_1_1Array" kindref="compound">Array</ref>&lt; <ref refid="classtvm_1_1AttrFieldInfo" kindref="compound">AttrFieldInfo</ref> &gt;</type>
+        <definition>virtual Array&lt;AttrFieldInfo&gt; tvm::BaseAttrsNode::ListFieldInfo</definition>
+        <argsstring>() const =0</argsstring>
+        <name>ListFieldInfo</name>
+        <reimplementedby refid="classtvm_1_1DictAttrsNode_1ab0cbd903adcee206626a192f008ca1e7">ListFieldInfo</reimplementedby>
+        <reimplementedby refid="classtvm_1_1AttrsNode_1acefe615381b5d881870af9db7ce6a981">ListFieldInfo</reimplementedby>
+        <reimplementedby refid="classtvm_1_1AttrsNode_1acefe615381b5d881870af9db7ce6a981">ListFieldInfo</reimplementedby>
+        <reimplementedby refid="classtvm_1_1AttrsNode_1acefe615381b5d881870af9db7ce6a981">ListFieldInfo</reimplementedby>
+        <reimplementedby refid="classtvm_1_1AttrsNode_1acefe615381b5d881870af9db7ce6a981">ListFieldInfo</reimplementedby>
+        <reimplementedby refid="classtvm_1_1AttrsNode_1acefe615381b5d881870af9db7ce6a981">ListFieldInfo</reimplementedby>
+        <reimplementedby refid="classtvm_1_1AttrsNode_1acefe615381b5d881870af9db7ce6a981">ListFieldInfo</reimplementedby>
+        <reimplementedby refid="classtvm_1_1AttrsNode_1acefe615381b5d881870af9db7ce6a981">ListFieldInfo</reimplementedby>
+        <reimplementedby refid="classtvm_1_1AttrsNode_1acefe615381b5d881870af9db7ce6a981">ListFieldInfo</reimplementedby>
+        <reimplementedby refid="classtvm_1_1AttrsNode_1acefe615381b5d881870af9db7ce6a981">ListFieldInfo</reimplementedby>
+        <reimplementedby refid="classtvm_1_1AttrsNode_1acefe615381b5d881870af9db7ce6a981">ListFieldInfo</reimplementedby>
+        <reimplementedby refid="classtvm_1_1AttrsNode_1acefe615381b5d881870af9db7ce6a981">ListFieldInfo</reimplementedby>
+        <reimplementedby refid="classtvm_1_1AttrsNode_1acefe615381b5d881870af9db7ce6a981">ListFieldInfo</reimplementedby>
+        <reimplementedby refid="classtvm_1_1AttrsNode_1acefe615381b5d881870af9db7ce6a981">ListFieldInfo</reimplementedby>
+        <reimplementedby refid="classtvm_1_1AttrsNode_1acefe615381b5d881870af9db7ce6a981">ListFieldInfo</reimplementedby>
+        <reimplementedby refid="classtvm_1_1AttrsNode_1acefe615381b5d881870af9db7ce6a981">ListFieldInfo</reimplementedby>
+        <reimplementedby refid="classtvm_1_1AttrsNode_1acefe615381b5d881870af9db7ce6a981">ListFieldInfo</reimplementedby>
+        <reimplementedby refid="classtvm_1_1AttrsNode_1acefe615381b5d881870af9db7ce6a981">ListFieldInfo</reimplementedby>
+        <reimplementedby refid="classtvm_1_1AttrsNode_1acefe615381b5d881870af9db7ce6a981">ListFieldInfo</reimplementedby>
+        <reimplementedby refid="classtvm_1_1AttrsNode_1acefe615381b5d881870af9db7ce6a981">ListFieldInfo</reimplementedby>
+        <reimplementedby refid="classtvm_1_1AttrsNode_1acefe615381b5d881870af9db7ce6a981">ListFieldInfo</reimplementedby>
+        <reimplementedby refid="classtvm_1_1AttrsNode_1acefe615381b5d881870af9db7ce6a981">ListFieldInfo</reimplementedby>
+        <reimplementedby refid="classtvm_1_1AttrsNode_1acefe615381b5d881870af9db7ce6a981">ListFieldInfo</reimplementedby>
+        <reimplementedby refid="classtvm_1_1AttrsNode_1acefe615381b5d881870af9db7ce6a981">ListFieldInfo</reimplementedby>
+        <reimplementedby refid="classtvm_1_1AttrsNode_1acefe615381b5d881870af9db7ce6a981">ListFieldInfo</reimplementedby>
+        <reimplementedby refid="classtvm_1_1AttrsNode_1acefe615381b5d881870af9db7ce6a981">ListFieldInfo</reimplementedby>
+        <reimplementedby refid="classtvm_1_1AttrsNode_1acefe615381b5d881870af9db7ce6a981">ListFieldInfo</reimplementedby>
+        <reimplementedby refid="classtvm_1_1AttrsNode_1acefe615381b5d881870af9db7ce6a981">ListFieldInfo</reimplementedby>
+        <reimplementedby refid="classtvm_1_1AttrsNode_1acefe615381b5d881870af9db7ce6a981">ListFieldInfo</reimplementedby>
+        <reimplementedby refid="classtvm_1_1AttrsNode_1acefe615381b5d881870af9db7ce6a981">ListFieldInfo</reimplementedby>
+        <reimplementedby refid="classtvm_1_1AttrsNode_1acefe615381b5d881870af9db7ce6a981">ListFieldInfo</reimplementedby>
+        <reimplementedby refid="classtvm_1_1AttrsNode_1acefe615381b5d881870af9db7ce6a981">ListFieldInfo</reimplementedby>
+        <reimplementedby refid="classtvm_1_1AttrsNode_1acefe615381b5d881870af9db7ce6a981">ListFieldInfo</reimplementedby>
+        <reimplementedby refid="classtvm_1_1AttrsNode_1acefe615381b5d881870af9db7ce6a981">ListFieldInfo</reimplementedby>
+        <reimplementedby refid="classtvm_1_1AttrsNode_1acefe615381b5d881870af9db7ce6a981">ListFieldInfo</reimplementedby>
+        <reimplementedby refid="classtvm_1_1AttrsNode_1acefe615381b5d881870af9db7ce6a981">ListFieldInfo</reimplementedby>
+        <reimplementedby refid="classtvm_1_1AttrsNode_1acefe615381b5d881870af9db7ce6a981">ListFieldInfo</reimplementedby>
+        <reimplementedby refid="classtvm_1_1AttrsNode_1acefe615381b5d881870af9db7ce6a981">ListFieldInfo</reimplementedby>
+        <reimplementedby refid="classtvm_1_1AttrsNode_1acefe615381b5d881870af9db7ce6a981">ListFieldInfo</reimplementedby>
+        <reimplementedby refid="classtvm_1_1AttrsNode_1acefe615381b5d881870af9db7ce6a981">ListFieldInfo</reimplementedby>
+        <reimplementedby refid="classtvm_1_1AttrsNode_1acefe615381b5d881870af9db7ce6a981">ListFieldInfo</reimplementedby>
+        <reimplementedby refid="classtvm_1_1AttrsNode_1acefe615381b5d881870af9db7ce6a981">ListFieldInfo</reimplementedby>
+        <reimplementedby refid="classtvm_1_1AttrsNode_1acefe615381b5d881870af9db7ce6a981">ListFieldInfo</reimplementedby>
+        <reimplementedby refid="classtvm_1_1AttrsNode_1acefe615381b5d881870af9db7ce6a981">ListFieldInfo</reimplementedby>
+        <reimplementedby refid="classtvm_1_1AttrsNode_1acefe615381b5d881870af9db7ce6a981">ListFieldInfo</reimplementedby>
+        <reimplementedby refid="classtvm_1_1AttrsNode_1acefe615381b5d881870af9db7ce6a981">ListFieldInfo</reimplementedby>
+        <reimplementedby refid="classtvm_1_1AttrsNode_1acefe615381b5d881870af9db7ce6a981">ListFieldInfo</reimplementedby>
+        <reimplementedby refid="classtvm_1_1AttrsNode_1acefe615381b5d881870af9db7ce6a981">ListFieldInfo</reimplementedby>
+        <reimplementedby refid="classtvm_1_1AttrsNode_1acefe615381b5d881870af9db7ce6a981">ListFieldInfo</reimplementedby>
+        <reimplementedby refid="classtvm_1_1AttrsNode_1acefe615381b5d881870af9db7ce6a981">ListFieldInfo</reimplementedby>
+        <reimplementedby refid="classtvm_1_1AttrsNode_1acefe615381b5d881870af9db7ce6a981">ListFieldInfo</reimplementedby>
+        <reimplementedby refid="classtvm_1_1AttrsNode_1acefe615381b5d881870af9db7ce6a981">ListFieldInfo</reimplementedby>
+        <reimplementedby refid="classtvm_1_1AttrsNode_1acefe615381b5d881870af9db7ce6a981">ListFieldInfo</reimplementedby>
+        <reimplementedby refid="classtvm_1_1AttrsNode_1acefe615381b5d881870af9db7ce6a981">ListFieldInfo</reimplementedby>
+        <reimplementedby refid="classtvm_1_1AttrsNode_1acefe615381b5d881870af9db7ce6a981">ListFieldInfo</reimplementedby>
+        <reimplementedby refid="classtvm_1_1AttrsNode_1acefe615381b5d881870af9db7ce6a981">ListFieldInfo</reimplementedby>
+        <reimplementedby refid="classtvm_1_1AttrsNode_1acefe615381b5d881870af9db7ce6a981">ListFieldInfo</reimplementedby>
+        <reimplementedby refid="classtvm_1_1AttrsNode_1acefe615381b5d881870af9db7ce6a981">ListFieldInfo</reimplementedby>
+        <reimplementedby refid="classtvm_1_1AttrsNode_1acefe615381b5d881870af9db7ce6a981">ListFieldInfo</reimplementedby>
+        <reimplementedby refid="classtvm_1_1AttrsNode_1acefe615381b5d881870af9db7ce6a981">ListFieldInfo</reimplementedby>
+        <reimplementedby refid="classtvm_1_1AttrsNode_1acefe615381b5d881870af9db7ce6a981">ListFieldInfo</reimplementedby>
+        <reimplementedby refid="classtvm_1_1AttrsNode_1acefe615381b5d881870af9db7ce6a981">ListFieldInfo</reimplementedby>
+        <reimplementedby refid="classtvm_1_1AttrsNode_1acefe615381b5d881870af9db7ce6a981">ListFieldInfo</reimplementedby>
+        <reimplementedby refid="classtvm_1_1AttrsNode_1acefe615381b5d881870af9db7ce6a981">ListFieldInfo</reimplementedby>
+        <reimplementedby refid="classtvm_1_1AttrsNode_1acefe615381b5d881870af9db7ce6a981">ListFieldInfo</reimplementedby>
+        <reimplementedby refid="classtvm_1_1AttrsNode_1acefe615381b5d881870af9db7ce6a981">ListFieldInfo</reimplementedby>
+        <reimplementedby refid="classtvm_1_1AttrsNode_1acefe615381b5d881870af9db7ce6a981">ListFieldInfo</reimplementedby>
+        <reimplementedby refid="classtvm_1_1AttrsNode_1acefe615381b5d881870af9db7ce6a981">ListFieldInfo</reimplementedby>
+        <reimplementedby refid="classtvm_1_1AttrsNode_1acefe615381b5d881870af9db7ce6a981">ListFieldInfo</reimplementedby>
+        <reimplementedby refid="classtvm_1_1AttrsNode_1acefe615381b5d881870af9db7ce6a981">ListFieldInfo</reimplementedby>
+        <reimplementedby refid="classtvm_1_1AttrsNode_1acefe615381b5d881870af9db7ce6a981">ListFieldInfo</reimplementedby>
+        <reimplementedby refid="classtvm_1_1AttrsNode_1acefe615381b5d881870af9db7ce6a981">ListFieldInfo</reimplementedby>
+        <reimplementedby refid="classtvm_1_1AttrsNode_1acefe615381b5d881870af9db7ce6a981">ListFieldInfo</reimplementedby>
+        <reimplementedby refid="classtvm_1_1AttrsNode_1acefe615381b5d881870af9db7ce6a981">ListFieldInfo</reimplementedby>
+        <reimplementedby refid="classtvm_1_1AttrsNode_1acefe615381b5d881870af9db7ce6a981">ListFieldInfo</reimplementedby>
+        <reimplementedby refid="classtvm_1_1AttrsNode_1acefe615381b5d881870af9db7ce6a981">ListFieldInfo</reimplementedby>
+        <reimplementedby refid="classtvm_1_1AttrsNode_1acefe615381b5d881870af9db7ce6a981">ListFieldInfo</reimplementedby>
+        <reimplementedby refid="classtvm_1_1AttrsNode_1acefe615381b5d881870af9db7ce6a981">ListFieldInfo</reimplementedby>
+        <reimplementedby refid="classtvm_1_1AttrsNode_1acefe615381b5d881870af9db7ce6a981">ListFieldInfo</reimplementedby>
+        <reimplementedby refid="classtvm_1_1AttrsNode_1acefe615381b5d881870af9db7ce6a981">ListFieldInfo</reimplementedby>
+        <reimplementedby refid="classtvm_1_1AttrsNode_1acefe615381b5d881870af9db7ce6a981">ListFieldInfo</reimplementedby>
+        <reimplementedby refid="classtvm_1_1AttrsNode_1acefe615381b5d881870af9db7ce6a981">ListFieldInfo</reimplementedby>
+        <reimplementedby refid="classtvm_1_1AttrsNode_1acefe615381b5d881870af9db7ce6a981">ListFieldInfo</reimplementedby>
+        <reimplementedby refid="classtvm_1_1AttrsNode_1acefe615381b5d881870af9db7ce6a981">ListFieldInfo</reimplementedby>
+        <reimplementedby refid="classtvm_1_1AttrsNode_1acefe615381b5d881870af9db7ce6a981">ListFieldInfo</reimplementedby>
+        <reimplementedby refid="classtvm_1_1AttrsNode_1acefe615381b5d881870af9db7ce6a981">ListFieldInfo</reimplementedby>
+        <reimplementedby refid="classtvm_1_1AttrsNode_1acefe615381b5d881870af9db7ce6a981">ListFieldInfo</reimplementedby>
+        <briefdescription>
+<para>Get the field information. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>The fields in the <ref refid="classtvm_1_1Attrs" kindref="compound">Attrs</ref>. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/ir/attrs.h" line="260" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classtvm_1_1BaseAttrsNode_1a375ef57a9dcf85e7961f91699927e50b" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>void</type>
+        <definition>virtual void tvm::BaseAttrsNode::InitByPackedArgs</definition>
+        <argsstring>(const TVMArgs &amp;kwargs, bool allow_unknown=false)=0</argsstring>
+        <name>InitByPackedArgs</name>
+        <reimplementedby refid="classtvm_1_1DictAttrsNode_1a06f561f072ccdd91c5c791b26331cc2f">InitByPackedArgs</reimplementedby>
+        <reimplementedby refid="classtvm_1_1AttrsNode_1acfba199ef906818f35432d2e5532559a">InitByPackedArgs</reimplementedby>
+        <reimplementedby refid="classtvm_1_1AttrsNode_1acfba199ef906818f35432d2e5532559a">InitByPackedArgs</reimplementedby>
+        <reimplementedby refid="classtvm_1_1AttrsNode_1acfba199ef906818f35432d2e5532559a">InitByPackedArgs</reimplementedby>
+        <reimplementedby refid="classtvm_1_1AttrsNode_1acfba199ef906818f35432d2e5532559a">InitByPackedArgs</reimplementedby>
+        <reimplementedby refid="classtvm_1_1AttrsNode_1acfba199ef906818f35432d2e5532559a">InitByPackedArgs</reimplementedby>
+        <reimplementedby refid="classtvm_1_1AttrsNode_1acfba199ef906818f35432d2e5532559a">InitByPackedArgs</reimplementedby>
+        <reimplementedby refid="classtvm_1_1AttrsNode_1acfba199ef906818f35432d2e5532559a">InitByPackedArgs</reimplementedby>
+        <reimplementedby refid="classtvm_1_1AttrsNode_1acfba199ef906818f35432d2e5532559a">InitByPackedArgs</reimplementedby>
+        <reimplementedby refid="classtvm_1_1AttrsNode_1acfba199ef906818f35432d2e5532559a">InitByPackedArgs</reimplementedby>
+        <reimplementedby refid="classtvm_1_1AttrsNode_1acfba199ef906818f35432d2e5532559a">InitByPackedArgs</reimplementedby>
+        <reimplementedby refid="classtvm_1_1AttrsNode_1acfba199ef906818f35432d2e5532559a">InitByPackedArgs</reimplementedby>
+        <reimplementedby refid="classtvm_1_1AttrsNode_1acfba199ef906818f35432d2e5532559a">InitByPackedArgs</reimplementedby>
+        <reimplementedby refid="classtvm_1_1AttrsNode_1acfba199ef906818f35432d2e5532559a">InitByPackedArgs</reimplementedby>
+        <reimplementedby refid="classtvm_1_1AttrsNode_1acfba199ef906818f35432d2e5532559a">InitByPackedArgs</reimplementedby>
+        <reimplementedby refid="classtvm_1_1AttrsNode_1acfba199ef906818f35432d2e5532559a">InitByPackedArgs</reimplementedby>
+        <reimplementedby refid="classtvm_1_1AttrsNode_1acfba199ef906818f35432d2e5532559a">InitByPackedArgs</reimplementedby>
+        <reimplementedby refid="classtvm_1_1AttrsNode_1acfba199ef906818f35432d2e5532559a">InitByPackedArgs</reimplementedby>
+        <reimplementedby refid="classtvm_1_1AttrsNode_1acfba199ef906818f35432d2e5532559a">InitByPackedArgs</reimplementedby>
+        <reimplementedby refid="classtvm_1_1AttrsNode_1acfba199ef906818f35432d2e5532559a">InitByPackedArgs</reimplementedby>
+        <reimplementedby refid="classtvm_1_1AttrsNode_1acfba199ef906818f35432d2e5532559a">InitByPackedArgs</reimplementedby>
+        <reimplementedby refid="classtvm_1_1AttrsNode_1acfba199ef906818f35432d2e5532559a">InitByPackedArgs</reimplementedby>
+        <reimplementedby refid="classtvm_1_1AttrsNode_1acfba199ef906818f35432d2e5532559a">InitByPackedArgs</reimplementedby>
+        <reimplementedby refid="classtvm_1_1AttrsNode_1acfba199ef906818f35432d2e5532559a">InitByPackedArgs</reimplementedby>
+        <reimplementedby refid="classtvm_1_1AttrsNode_1acfba199ef906818f35432d2e5532559a">InitByPackedArgs</reimplementedby>
+        <reimplementedby refid="classtvm_1_1AttrsNode_1acfba199ef906818f35432d2e5532559a">InitByPackedArgs</reimplementedby>
+        <reimplementedby refid="classtvm_1_1AttrsNode_1acfba199ef906818f35432d2e5532559a">InitByPackedArgs</reimplementedby>
+        <reimplementedby refid="classtvm_1_1AttrsNode_1acfba199ef906818f35432d2e5532559a">InitByPackedArgs</reimplementedby>
+        <reimplementedby refid="classtvm_1_1AttrsNode_1acfba199ef906818f35432d2e5532559a">InitByPackedArgs</reimplementedby>
+        <reimplementedby refid="classtvm_1_1AttrsNode_1acfba199ef906818f35432d2e5532559a">InitByPackedArgs</reimplementedby>
+        <reimplementedby refid="classtvm_1_1AttrsNode_1acfba199ef906818f35432d2e5532559a">InitByPackedArgs</reimplementedby>
+        <reimplementedby refid="classtvm_1_1AttrsNode_1acfba199ef906818f35432d2e5532559a">InitByPackedArgs</reimplementedby>
+        <reimplementedby refid="classtvm_1_1AttrsNode_1acfba199ef906818f35432d2e5532559a">InitByPackedArgs</reimplementedby>
+        <reimplementedby refid="classtvm_1_1AttrsNode_1acfba199ef906818f35432d2e5532559a">InitByPackedArgs</reimplementedby>
+        <reimplementedby refid="classtvm_1_1AttrsNode_1acfba199ef906818f35432d2e5532559a">InitByPackedArgs</reimplementedby>
+        <reimplementedby refid="classtvm_1_1AttrsNode_1acfba199ef906818f35432d2e5532559a">InitByPackedArgs</reimplementedby>
+        <reimplementedby refid="classtvm_1_1AttrsNode_1acfba199ef906818f35432d2e5532559a">InitByPackedArgs</reimplementedby>
+        <reimplementedby refid="classtvm_1_1AttrsNode_1acfba199ef906818f35432d2e5532559a">InitByPackedArgs</reimplementedby>
+        <reimplementedby refid="classtvm_1_1AttrsNode_1acfba199ef906818f35432d2e5532559a">InitByPackedArgs</reimplementedby>
+        <reimplementedby refid="classtvm_1_1AttrsNode_1acfba199ef906818f35432d2e5532559a">InitByPackedArgs</reimplementedby>
+        <reimplementedby refid="classtvm_1_1AttrsNode_1acfba199ef906818f35432d2e5532559a">InitByPackedArgs</reimplementedby>
+        <reimplementedby refid="classtvm_1_1AttrsNode_1acfba199ef906818f35432d2e5532559a">InitByPackedArgs</reimplementedby>
+        <reimplementedby refid="classtvm_1_1AttrsNode_1acfba199ef906818f35432d2e5532559a">InitByPackedArgs</reimplementedby>
+        <reimplementedby refid="classtvm_1_1AttrsNode_1acfba199ef906818f35432d2e5532559a">InitByPackedArgs</reimplementedby>
+        <reimplementedby refid="classtvm_1_1AttrsNode_1acfba199ef906818f35432d2e5532559a">InitByPackedArgs</reimplementedby>
+        <reimplementedby refid="classtvm_1_1AttrsNode_1acfba199ef906818f35432d2e5532559a">InitByPackedArgs</reimplementedby>
+        <reimplementedby refid="classtvm_1_1AttrsNode_1acfba199ef906818f35432d2e5532559a">InitByPackedArgs</reimplementedby>
+        <reimplementedby refid="classtvm_1_1AttrsNode_1acfba199ef906818f35432d2e5532559a">InitByPackedArgs</reimplementedby>
+        <reimplementedby refid="classtvm_1_1AttrsNode_1acfba199ef906818f35432d2e5532559a">InitByPackedArgs</reimplementedby>
+        <reimplementedby refid="classtvm_1_1AttrsNode_1acfba199ef906818f35432d2e5532559a">InitByPackedArgs</reimplementedby>
+        <reimplementedby refid="classtvm_1_1AttrsNode_1acfba199ef906818f35432d2e5532559a">InitByPackedArgs</reimplementedby>
+        <reimplementedby refid="classtvm_1_1AttrsNode_1acfba199ef906818f35432d2e5532559a">InitByPackedArgs</reimplementedby>
+        <reimplementedby refid="classtvm_1_1AttrsNode_1acfba199ef906818f35432d2e5532559a">InitByPackedArgs</reimplementedby>
+        <reimplementedby refid="classtvm_1_1AttrsNode_1acfba199ef906818f35432d2e5532559a">InitByPackedArgs</reimplementedby>
+        <reimplementedby refid="classtvm_1_1AttrsNode_1acfba199ef906818f35432d2e5532559a">InitByPackedArgs</reimplementedby>
+        <reimplementedby refid="classtvm_1_1AttrsNode_1acfba199ef906818f35432d2e5532559a">InitByPackedArgs</reimplementedby>
+        <reimplementedby refid="classtvm_1_1AttrsNode_1acfba199ef906818f35432d2e5532559a">InitByPackedArgs</reimplementedby>
+        <reimplementedby refid="classtvm_1_1AttrsNode_1acfba199ef906818f35432d2e5532559a">InitByPackedArgs</reimplementedby>
+        <reimplementedby refid="classtvm_1_1AttrsNode_1acfba199ef906818f35432d2e5532559a">InitByPackedArgs</reimplementedby>
+        <reimplementedby refid="classtvm_1_1AttrsNode_1acfba199ef906818f35432d2e5532559a">InitByPackedArgs</reimplementedby>
+        <reimplementedby refid="classtvm_1_1AttrsNode_1acfba199ef906818f35432d2e5532559a">InitByPackedArgs</reimplementedby>
+        <reimplementedby refid="classtvm_1_1AttrsNode_1acfba199ef906818f35432d2e5532559a">InitByPackedArgs</reimplementedby>
+        <reimplementedby refid="classtvm_1_1AttrsNode_1acfba199ef906818f35432d2e5532559a">InitByPackedArgs</reimplementedby>
+        <reimplementedby refid="classtvm_1_1AttrsNode_1acfba199ef906818f35432d2e5532559a">InitByPackedArgs</reimplementedby>
+        <reimplementedby refid="classtvm_1_1AttrsNode_1acfba199ef906818f35432d2e5532559a">InitByPackedArgs</reimplementedby>
+        <reimplementedby refid="classtvm_1_1AttrsNode_1acfba199ef906818f35432d2e5532559a">InitByPackedArgs</reimplementedby>
+        <reimplementedby refid="classtvm_1_1AttrsNode_1acfba199ef906818f35432d2e5532559a">InitByPackedArgs</reimplementedby>
+        <reimplementedby refid="classtvm_1_1AttrsNode_1acfba199ef906818f35432d2e5532559a">InitByPackedArgs</reimplementedby>
+        <reimplementedby refid="classtvm_1_1AttrsNode_1acfba199ef906818f35432d2e5532559a">InitByPackedArgs</reimplementedby>
+        <reimplementedby refid="classtvm_1_1AttrsNode_1acfba199ef906818f35432d2e5532559a">InitByPackedArgs</reimplementedby>
+        <reimplementedby refid="classtvm_1_1AttrsNode_1acfba199ef906818f35432d2e5532559a">InitByPackedArgs</reimplementedby>
+        <reimplementedby refid="classtvm_1_1AttrsNode_1acfba199ef906818f35432d2e5532559a">InitByPackedArgs</reimplementedby>
+        <reimplementedby refid="classtvm_1_1AttrsNode_1acfba199ef906818f35432d2e5532559a">InitByPackedArgs</reimplementedby>
+        <reimplementedby refid="classtvm_1_1AttrsNode_1acfba199ef906818f35432d2e5532559a">InitByPackedArgs</reimplementedby>
+        <reimplementedby refid="classtvm_1_1AttrsNode_1acfba199ef906818f35432d2e5532559a">InitByPackedArgs</reimplementedby>
+        <reimplementedby refid="classtvm_1_1AttrsNode_1acfba199ef906818f35432d2e5532559a">InitByPackedArgs</reimplementedby>
+        <reimplementedby refid="classtvm_1_1AttrsNode_1acfba199ef906818f35432d2e5532559a">InitByPackedArgs</reimplementedby>
+        <reimplementedby refid="classtvm_1_1AttrsNode_1acfba199ef906818f35432d2e5532559a">InitByPackedArgs</reimplementedby>
+        <reimplementedby refid="classtvm_1_1AttrsNode_1acfba199ef906818f35432d2e5532559a">InitByPackedArgs</reimplementedby>
+        <reimplementedby refid="classtvm_1_1AttrsNode_1acfba199ef906818f35432d2e5532559a">InitByPackedArgs</reimplementedby>
+        <reimplementedby refid="classtvm_1_1AttrsNode_1acfba199ef906818f35432d2e5532559a">InitByPackedArgs</reimplementedby>
+        <reimplementedby refid="classtvm_1_1AttrsNode_1acfba199ef906818f35432d2e5532559a">InitByPackedArgs</reimplementedby>
+        <reimplementedby refid="classtvm_1_1AttrsNode_1acfba199ef906818f35432d2e5532559a">InitByPackedArgs</reimplementedby>
+        <reimplementedby refid="classtvm_1_1AttrsNode_1acfba199ef906818f35432d2e5532559a">InitByPackedArgs</reimplementedby>
+        <reimplementedby refid="classtvm_1_1AttrsNode_1acfba199ef906818f35432d2e5532559a">InitByPackedArgs</reimplementedby>
+        <reimplementedby refid="classtvm_1_1AttrsNode_1acfba199ef906818f35432d2e5532559a">InitByPackedArgs</reimplementedby>
+        <reimplementedby refid="classtvm_1_1AttrsNode_1acfba199ef906818f35432d2e5532559a">InitByPackedArgs</reimplementedby>
+        <param>
+          <type>const <ref refid="classtvm_1_1BaseAttrsNode_1a257561dad74174cbdc08f6725a45d8ac" kindref="member">TVMArgs</ref> &amp;</type>
+          <declname>kwargs</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>allow_unknown</declname>
+          <defval>false</defval>
+        </param>
+        <briefdescription>
+<para>Initialize the attributes by arguments. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>kwargs</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The key value pairs for initialization. [key0, value0, key1, value1, ..., key_n, value_n] </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>allow_unknown</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Whether allow additional unknown fields. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="note"><para>This function throws when the required field is not present. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/ir/attrs.h" line="268" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classtvm_1_1BaseAttrsNode_1a39c5a3e9c732b7d1132192af4c6297cc" prot="public" static="no" const="yes" explicit="no" inline="no" virt="pure-virtual">
+        <type>bool</type>
+        <definition>virtual bool tvm::BaseAttrsNode::ContentEqual</definition>
+        <argsstring>(const Object *other, AttrsEqual equal) const =0</argsstring>
+        <name>ContentEqual</name>
+        <reimplementedby refid="classtvm_1_1DictAttrsNode_1ae698075fc46d508c9d7f4196c7edc02b">ContentEqual</reimplementedby>
+        <reimplementedby refid="classtvm_1_1AttrsNode_1a7f609d3a1b52df0b442793f043cc49ae">ContentEqual</reimplementedby>
+        <reimplementedby refid="classtvm_1_1AttrsNode_1a7f609d3a1b52df0b442793f043cc49ae">ContentEqual</reimplementedby>
+        <reimplementedby refid="classtvm_1_1AttrsNode_1a7f609d3a1b52df0b442793f043cc49ae">ContentEqual</reimplementedby>
+        <reimplementedby refid="classtvm_1_1AttrsNode_1a7f609d3a1b52df0b442793f043cc49ae">ContentEqual</reimplementedby>
+        <reimplementedby refid="classtvm_1_1AttrsNode_1a7f609d3a1b52df0b442793f043cc49ae">ContentEqual</reimplementedby>
+        <reimplementedby refid="classtvm_1_1AttrsNode_1a7f609d3a1b52df0b442793f043cc49ae">ContentEqual</reimplementedby>
+        <reimplementedby refid="classtvm_1_1AttrsNode_1a7f609d3a1b52df0b442793f043cc49ae">ContentEqual</reimplementedby>
+        <reimplementedby refid="classtvm_1_1AttrsNode_1a7f609d3a1b52df0b442793f043cc49ae">ContentEqual</reimplementedby>
+        <reimplementedby refid="classtvm_1_1AttrsNode_1a7f609d3a1b52df0b442793f043cc49ae">ContentEqual</reimplementedby>
+        <reimplementedby refid="classtvm_1_1AttrsNode_1a7f609d3a1b52df0b442793f043cc49ae">ContentEqual</reimplementedby>
+        <reimplementedby refid="classtvm_1_1AttrsNode_1a7f609d3a1b52df0b442793f043cc49ae">ContentEqual</reimplementedby>
+        <reimplementedby refid="classtvm_1_1AttrsNode_1a7f609d3a1b52df0b442793f043cc49ae">ContentEqual</reimplementedby>
+        <reimplementedby refid="classtvm_1_1AttrsNode_1a7f609d3a1b52df0b442793f043cc49ae">ContentEqual</reimplementedby>
+        <reimplementedby refid="classtvm_1_1AttrsNode_1a7f609d3a1b52df0b442793f043cc49ae">ContentEqual</reimplementedby>
+        <reimplementedby refid="classtvm_1_1AttrsNode_1a7f609d3a1b52df0b442793f043cc49ae">ContentEqual</reimplementedby>
+        <reimplementedby refid="classtvm_1_1AttrsNode_1a7f609d3a1b52df0b442793f043cc49ae">ContentEqual</reimplementedby>
+        <reimplementedby refid="classtvm_1_1AttrsNode_1a7f609d3a1b52df0b442793f043cc49ae">ContentEqual</reimplementedby>
+        <reimplementedby refid="classtvm_1_1AttrsNode_1a7f609d3a1b52df0b442793f043cc49ae">ContentEqual</reimplementedby>
+        <reimplementedby refid="classtvm_1_1AttrsNode_1a7f609d3a1b52df0b442793f043cc49ae">ContentEqual</reimplementedby>
+        <reimplementedby refid="classtvm_1_1AttrsNode_1a7f609d3a1b52df0b442793f043cc49ae">ContentEqual</reimplementedby>
+        <reimplementedby refid="classtvm_1_1AttrsNode_1a7f609d3a1b52df0b442793f043cc49ae">ContentEqual</reimplementedby>
+        <reimplementedby refid="classtvm_1_1AttrsNode_1a7f609d3a1b52df0b442793f043cc49ae">ContentEqual</reimplementedby>
+        <reimplementedby refid="classtvm_1_1AttrsNode_1a7f609d3a1b52df0b442793f043cc49ae">ContentEqual</reimplementedby>
+        <reimplementedby refid="classtvm_1_1AttrsNode_1a7f609d3a1b52df0b442793f043cc49ae">ContentEqual</reimplementedby>
+        <reimplementedby refid="classtvm_1_1AttrsNode_1a7f609d3a1b52df0b442793f043cc49ae">ContentEqual</reimplementedby>
+        <reimplementedby refid="classtvm_1_1AttrsNode_1a7f609d3a1b52df0b442793f043cc49ae">ContentEqual</reimplementedby>
+        <reimplementedby refid="classtvm_1_1AttrsNode_1a7f609d3a1b52df0b442793f043cc49ae">ContentEqual</reimplementedby>
+        <reimplementedby refid="classtvm_1_1AttrsNode_1a7f609d3a1b52df0b442793f043cc49ae">ContentEqual</reimplementedby>
+        <reimplementedby refid="classtvm_1_1AttrsNode_1a7f609d3a1b52df0b442793f043cc49ae">ContentEqual</reimplementedby>
+        <reimplementedby refid="classtvm_1_1AttrsNode_1a7f609d3a1b52df0b442793f043cc49ae">ContentEqual</reimplementedby>
+        <reimplementedby refid="classtvm_1_1AttrsNode_1a7f609d3a1b52df0b442793f043cc49ae">ContentEqual</reimplementedby>
+        <reimplementedby refid="classtvm_1_1AttrsNode_1a7f609d3a1b52df0b442793f043cc49ae">ContentEqual</reimplementedby>
+        <reimplementedby refid="classtvm_1_1AttrsNode_1a7f609d3a1b52df0b442793f043cc49ae">ContentEqual</reimplementedby>
+        <reimplementedby refid="classtvm_1_1AttrsNode_1a7f609d3a1b52df0b442793f043cc49ae">ContentEqual</reimplementedby>
+        <reimplementedby refid="classtvm_1_1AttrsNode_1a7f609d3a1b52df0b442793f043cc49ae">ContentEqual</reimplementedby>
+        <reimplementedby refid="classtvm_1_1AttrsNode_1a7f609d3a1b52df0b442793f043cc49ae">ContentEqual</reimplementedby>
+        <reimplementedby refid="classtvm_1_1AttrsNode_1a7f609d3a1b52df0b442793f043cc49ae">ContentEqual</reimplementedby>
+        <reimplementedby refid="classtvm_1_1AttrsNode_1a7f609d3a1b52df0b442793f043cc49ae">ContentEqual</reimplementedby>
+        <reimplementedby refid="classtvm_1_1AttrsNode_1a7f609d3a1b52df0b442793f043cc49ae">ContentEqual</reimplementedby>
+        <reimplementedby refid="classtvm_1_1AttrsNode_1a7f609d3a1b52df0b442793f043cc49ae">ContentEqual</reimplementedby>
+        <reimplementedby refid="classtvm_1_1AttrsNode_1a7f609d3a1b52df0b442793f043cc49ae">ContentEqual</reimplementedby>
+        <reimplementedby refid="classtvm_1_1AttrsNode_1a7f609d3a1b52df0b442793f043cc49ae">ContentEqual</reimplementedby>
+        <reimplementedby refid="classtvm_1_1AttrsNode_1a7f609d3a1b52df0b442793f043cc49ae">ContentEqual</reimplementedby>
+        <reimplementedby refid="classtvm_1_1AttrsNode_1a7f609d3a1b52df0b442793f043cc49ae">ContentEqual</reimplementedby>
+        <reimplementedby refid="classtvm_1_1AttrsNode_1a7f609d3a1b52df0b442793f043cc49ae">ContentEqual</reimplementedby>
+        <reimplementedby refid="classtvm_1_1AttrsNode_1a7f609d3a1b52df0b442793f043cc49ae">ContentEqual</reimplementedby>
+        <reimplementedby refid="classtvm_1_1AttrsNode_1a7f609d3a1b52df0b442793f043cc49ae">ContentEqual</reimplementedby>
+        <reimplementedby refid="classtvm_1_1AttrsNode_1a7f609d3a1b52df0b442793f043cc49ae">ContentEqual</reimplementedby>
+        <reimplementedby refid="classtvm_1_1AttrsNode_1a7f609d3a1b52df0b442793f043cc49ae">ContentEqual</reimplementedby>
+        <reimplementedby refid="classtvm_1_1AttrsNode_1a7f609d3a1b52df0b442793f043cc49ae">ContentEqual</reimplementedby>
+        <reimplementedby refid="classtvm_1_1AttrsNode_1a7f609d3a1b52df0b442793f043cc49ae">ContentEqual</reimplementedby>
+        <reimplementedby refid="classtvm_1_1AttrsNode_1a7f609d3a1b52df0b442793f043cc49ae">ContentEqual</reimplementedby>
+        <reimplementedby refid="classtvm_1_1AttrsNode_1a7f609d3a1b52df0b442793f043cc49ae">ContentEqual</reimplementedby>
+        <reimplementedby refid="classtvm_1_1AttrsNode_1a7f609d3a1b52df0b442793f043cc49ae">ContentEqual</reimplementedby>
+        <reimplementedby refid="classtvm_1_1AttrsNode_1a7f609d3a1b52df0b442793f043cc49ae">ContentEqual</reimplementedby>
+        <reimplementedby refid="classtvm_1_1AttrsNode_1a7f609d3a1b52df0b442793f043cc49ae">ContentEqual</reimplementedby>
+        <reimplementedby refid="classtvm_1_1AttrsNode_1a7f609d3a1b52df0b442793f043cc49ae">ContentEqual</reimplementedby>
+        <reimplementedby refid="classtvm_1_1AttrsNode_1a7f609d3a1b52df0b442793f043cc49ae">ContentEqual</reimplementedby>
+        <reimplementedby refid="classtvm_1_1AttrsNode_1a7f609d3a1b52df0b442793f043cc49ae">ContentEqual</reimplementedby>
+        <reimplementedby refid="classtvm_1_1AttrsNode_1a7f609d3a1b52df0b442793f043cc49ae">ContentEqual</reimplementedby>
+        <reimplementedby refid="classtvm_1_1AttrsNode_1a7f609d3a1b52df0b442793f043cc49ae">ContentEqual</reimplementedby>
+        <reimplementedby refid="classtvm_1_1AttrsNode_1a7f609d3a1b52df0b442793f043cc49ae">ContentEqual</reimplementedby>
+        <reimplementedby refid="classtvm_1_1AttrsNode_1a7f609d3a1b52df0b442793f043cc49ae">ContentEqual</reimplementedby>
+        <reimplementedby refid="classtvm_1_1AttrsNode_1a7f609d3a1b52df0b442793f043cc49ae">ContentEqual</reimplementedby>
+        <reimplementedby refid="classtvm_1_1AttrsNode_1a7f609d3a1b52df0b442793f043cc49ae">ContentEqual</reimplementedby>
+        <reimplementedby refid="classtvm_1_1AttrsNode_1a7f609d3a1b52df0b442793f043cc49ae">ContentEqual</reimplementedby>
+        <reimplementedby refid="classtvm_1_1AttrsNode_1a7f609d3a1b52df0b442793f043cc49ae">ContentEqual</reimplementedby>
+        <reimplementedby refid="classtvm_1_1AttrsNode_1a7f609d3a1b52df0b442793f043cc49ae">ContentEqual</reimplementedby>
+        <reimplementedby refid="classtvm_1_1AttrsNode_1a7f609d3a1b52df0b442793f043cc49ae">ContentEqual</reimplementedby>
+        <reimplementedby refid="classtvm_1_1AttrsNode_1a7f609d3a1b52df0b442793f043cc49ae">ContentEqual</reimplementedby>
+        <reimplementedby refid="classtvm_1_1AttrsNode_1a7f609d3a1b52df0b442793f043cc49ae">ContentEqual</reimplementedby>
+        <reimplementedby refid="classtvm_1_1AttrsNode_1a7f609d3a1b52df0b442793f043cc49ae">ContentEqual</reimplementedby>
+        <reimplementedby refid="classtvm_1_1AttrsNode_1a7f609d3a1b52df0b442793f043cc49ae">ContentEqual</reimplementedby>
+        <reimplementedby refid="classtvm_1_1AttrsNode_1a7f609d3a1b52df0b442793f043cc49ae">ContentEqual</reimplementedby>
+        <reimplementedby refid="classtvm_1_1AttrsNode_1a7f609d3a1b52df0b442793f043cc49ae">ContentEqual</reimplementedby>
+        <reimplementedby refid="classtvm_1_1AttrsNode_1a7f609d3a1b52df0b442793f043cc49ae">ContentEqual</reimplementedby>
+        <reimplementedby refid="classtvm_1_1AttrsNode_1a7f609d3a1b52df0b442793f043cc49ae">ContentEqual</reimplementedby>
+        <reimplementedby refid="classtvm_1_1AttrsNode_1a7f609d3a1b52df0b442793f043cc49ae">ContentEqual</reimplementedby>
+        <reimplementedby refid="classtvm_1_1AttrsNode_1a7f609d3a1b52df0b442793f043cc49ae">ContentEqual</reimplementedby>
+        <reimplementedby refid="classtvm_1_1AttrsNode_1a7f609d3a1b52df0b442793f043cc49ae">ContentEqual</reimplementedby>
+        <reimplementedby refid="classtvm_1_1AttrsNode_1a7f609d3a1b52df0b442793f043cc49ae">ContentEqual</reimplementedby>
+        <reimplementedby refid="classtvm_1_1AttrsNode_1a7f609d3a1b52df0b442793f043cc49ae">ContentEqual</reimplementedby>
+        <reimplementedby refid="classtvm_1_1AttrsNode_1a7f609d3a1b52df0b442793f043cc49ae">ContentEqual</reimplementedby>
+        <reimplementedby refid="classtvm_1_1AttrsNode_1a7f609d3a1b52df0b442793f043cc49ae">ContentEqual</reimplementedby>
+        <reimplementedby refid="classtvm_1_1AttrsNode_1a7f609d3a1b52df0b442793f043cc49ae">ContentEqual</reimplementedby>
+        <reimplementedby refid="classtvm_1_1AttrsNode_1a7f609d3a1b52df0b442793f043cc49ae">ContentEqual</reimplementedby>
+        <param>
+          <type>const Object *</type>
+          <declname>other</declname>
+        </param>
+        <param>
+          <type><ref refid="classtvm_1_1AttrsEqual" kindref="compound">AttrsEqual</ref></type>
+          <declname>equal</declname>
+        </param>
+        <briefdescription>
+<para>Whether this attribute&apos;s content equals to another node. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>other</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The pointer to another node. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>equal</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The equal comparator </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The comparison result. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/ir/attrs.h" line="275" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classtvm_1_1BaseAttrsNode_1a3a25e3f163d3a4a1d50d33a160697d0c" prot="public" static="no" const="yes" explicit="no" inline="no" virt="pure-virtual">
+        <type>size_t</type>
+        <definition>virtual size_t tvm::BaseAttrsNode::ContentHash</definition>
+        <argsstring>(AttrsHash hasher) const =0</argsstring>
+        <name>ContentHash</name>
+        <reimplementedby refid="classtvm_1_1DictAttrsNode_1a92e852ca387558588474c9e1c503e3ee">ContentHash</reimplementedby>
+        <reimplementedby refid="classtvm_1_1AttrsNode_1abe3e0fd8559c5d446a136490d4dbee12">ContentHash</reimplementedby>
+        <reimplementedby refid="classtvm_1_1AttrsNode_1abe3e0fd8559c5d446a136490d4dbee12">ContentHash</reimplementedby>
+        <reimplementedby refid="classtvm_1_1AttrsNode_1abe3e0fd8559c5d446a136490d4dbee12">ContentHash</reimplementedby>
+        <reimplementedby refid="classtvm_1_1AttrsNode_1abe3e0fd8559c5d446a136490d4dbee12">ContentHash</reimplementedby>
+        <reimplementedby refid="classtvm_1_1AttrsNode_1abe3e0fd8559c5d446a136490d4dbee12">ContentHash</reimplementedby>
+        <reimplementedby refid="classtvm_1_1AttrsNode_1abe3e0fd8559c5d446a136490d4dbee12">ContentHash</reimplementedby>
+        <reimplementedby refid="classtvm_1_1AttrsNode_1abe3e0fd8559c5d446a136490d4dbee12">ContentHash</reimplementedby>
+        <reimplementedby refid="classtvm_1_1AttrsNode_1abe3e0fd8559c5d446a136490d4dbee12">ContentHash</reimplementedby>
+        <reimplementedby refid="classtvm_1_1AttrsNode_1abe3e0fd8559c5d446a136490d4dbee12">ContentHash</reimplementedby>
+        <reimplementedby refid="classtvm_1_1AttrsNode_1abe3e0fd8559c5d446a136490d4dbee12">ContentHash</reimplementedby>
+        <reimplementedby refid="classtvm_1_1AttrsNode_1abe3e0fd8559c5d446a136490d4dbee12">ContentHash</reimplementedby>
+        <reimplementedby refid="classtvm_1_1AttrsNode_1abe3e0fd8559c5d446a136490d4dbee12">ContentHash</reimplementedby>
+        <reimplementedby refid="classtvm_1_1AttrsNode_1abe3e0fd8559c5d446a136490d4dbee12">ContentHash</reimplementedby>
+        <reimplementedby refid="classtvm_1_1AttrsNode_1abe3e0fd8559c5d446a136490d4dbee12">ContentHash</reimplementedby>
+        <reimplementedby refid="classtvm_1_1AttrsNode_1abe3e0fd8559c5d446a136490d4dbee12">ContentHash</reimplementedby>
+        <reimplementedby refid="classtvm_1_1AttrsNode_1abe3e0fd8559c5d446a136490d4dbee12">ContentHash</reimplementedby>
+        <reimplementedby refid="classtvm_1_1AttrsNode_1abe3e0fd8559c5d446a136490d4dbee12">ContentHash</reimplementedby>
+        <reimplementedby refid="classtvm_1_1AttrsNode_1abe3e0fd8559c5d446a136490d4dbee12">ContentHash</reimplementedby>
+        <reimplementedby refid="classtvm_1_1AttrsNode_1abe3e0fd8559c5d446a136490d4dbee12">ContentHash</reimplementedby>
+        <reimplementedby refid="classtvm_1_1AttrsNode_1abe3e0fd8559c5d446a136490d4dbee12">ContentHash</reimplementedby>
+        <reimplementedby refid="classtvm_1_1AttrsNode_1abe3e0fd8559c5d446a136490d4dbee12">ContentHash</reimplementedby>
+        <reimplementedby refid="classtvm_1_1AttrsNode_1abe3e0fd8559c5d446a136490d4dbee12">ContentHash</reimplementedby>
+        <reimplementedby refid="classtvm_1_1AttrsNode_1abe3e0fd8559c5d446a136490d4dbee12">ContentHash</reimplementedby>
+        <reimplementedby refid="classtvm_1_1AttrsNode_1abe3e0fd8559c5d446a136490d4dbee12">ContentHash</reimplementedby>
+        <reimplementedby refid="classtvm_1_1AttrsNode_1abe3e0fd8559c5d446a136490d4dbee12">ContentHash</reimplementedby>
+        <reimplementedby refid="classtvm_1_1AttrsNode_1abe3e0fd8559c5d446a136490d4dbee12">ContentHash</reimplementedby>
+        <reimplementedby refid="classtvm_1_1AttrsNode_1abe3e0fd8559c5d446a136490d4dbee12">ContentHash</reimplementedby>
+        <reimplementedby refid="classtvm_1_1AttrsNode_1abe3e0fd8559c5d446a136490d4dbee12">ContentHash</reimplementedby>
+        <reimplementedby refid="classtvm_1_1AttrsNode_1abe3e0fd8559c5d446a136490d4dbee12">ContentHash</reimplementedby>
+        <reimplementedby refid="classtvm_1_1AttrsNode_1abe3e0fd8559c5d446a136490d4dbee12">ContentHash</reimplementedby>
+        <reimplementedby refid="classtvm_1_1AttrsNode_1abe3e0fd8559c5d446a136490d4dbee12">ContentHash</reimplementedby>
+        <reimplementedby refid="classtvm_1_1AttrsNode_1abe3e0fd8559c5d446a136490d4dbee12">ContentHash</reimplementedby>
+        <reimplementedby refid="classtvm_1_1AttrsNode_1abe3e0fd8559c5d446a136490d4dbee12">ContentHash</reimplementedby>
+        <reimplementedby refid="classtvm_1_1AttrsNode_1abe3e0fd8559c5d446a136490d4dbee12">ContentHash</reimplementedby>
+        <reimplementedby refid="classtvm_1_1AttrsNode_1abe3e0fd8559c5d446a136490d4dbee12">ContentHash</reimplementedby>
+        <reimplementedby refid="classtvm_1_1AttrsNode_1abe3e0fd8559c5d446a136490d4dbee12">ContentHash</reimplementedby>
+        <reimplementedby refid="classtvm_1_1AttrsNode_1abe3e0fd8559c5d446a136490d4dbee12">ContentHash</reimplementedby>
+        <reimplementedby refid="classtvm_1_1AttrsNode_1abe3e0fd8559c5d446a136490d4dbee12">ContentHash</reimplementedby>
+        <reimplementedby refid="classtvm_1_1AttrsNode_1abe3e0fd8559c5d446a136490d4dbee12">ContentHash</reimplementedby>
+        <reimplementedby refid="classtvm_1_1AttrsNode_1abe3e0fd8559c5d446a136490d4dbee12">ContentHash</reimplementedby>
+        <reimplementedby refid="classtvm_1_1AttrsNode_1abe3e0fd8559c5d446a136490d4dbee12">ContentHash</reimplementedby>
+        <reimplementedby refid="classtvm_1_1AttrsNode_1abe3e0fd8559c5d446a136490d4dbee12">ContentHash</reimplementedby>
+        <reimplementedby refid="classtvm_1_1AttrsNode_1abe3e0fd8559c5d446a136490d4dbee12">ContentHash</reimplementedby>
+        <reimplementedby refid="classtvm_1_1AttrsNode_1abe3e0fd8559c5d446a136490d4dbee12">ContentHash</reimplementedby>
+        <reimplementedby refid="classtvm_1_1AttrsNode_1abe3e0fd8559c5d446a136490d4dbee12">ContentHash</reimplementedby>
+        <reimplementedby refid="classtvm_1_1AttrsNode_1abe3e0fd8559c5d446a136490d4dbee12">ContentHash</reimplementedby>
+        <reimplementedby refid="classtvm_1_1AttrsNode_1abe3e0fd8559c5d446a136490d4dbee12">ContentHash</reimplementedby>
+        <reimplementedby refid="classtvm_1_1AttrsNode_1abe3e0fd8559c5d446a136490d4dbee12">ContentHash</reimplementedby>
+        <reimplementedby refid="classtvm_1_1AttrsNode_1abe3e0fd8559c5d446a136490d4dbee12">ContentHash</reimplementedby>
+        <reimplementedby refid="classtvm_1_1AttrsNode_1abe3e0fd8559c5d446a136490d4dbee12">ContentHash</reimplementedby>
+        <reimplementedby refid="classtvm_1_1AttrsNode_1abe3e0fd8559c5d446a136490d4dbee12">ContentHash</reimplementedby>
+        <reimplementedby refid="classtvm_1_1AttrsNode_1abe3e0fd8559c5d446a136490d4dbee12">ContentHash</reimplementedby>
+        <reimplementedby refid="classtvm_1_1AttrsNode_1abe3e0fd8559c5d446a136490d4dbee12">ContentHash</reimplementedby>
+        <reimplementedby refid="classtvm_1_1AttrsNode_1abe3e0fd8559c5d446a136490d4dbee12">ContentHash</reimplementedby>
+        <reimplementedby refid="classtvm_1_1AttrsNode_1abe3e0fd8559c5d446a136490d4dbee12">ContentHash</reimplementedby>
+        <reimplementedby refid="classtvm_1_1AttrsNode_1abe3e0fd8559c5d446a136490d4dbee12">ContentHash</reimplementedby>
+        <reimplementedby refid="classtvm_1_1AttrsNode_1abe3e0fd8559c5d446a136490d4dbee12">ContentHash</reimplementedby>
+        <reimplementedby refid="classtvm_1_1AttrsNode_1abe3e0fd8559c5d446a136490d4dbee12">ContentHash</reimplementedby>
+        <reimplementedby refid="classtvm_1_1AttrsNode_1abe3e0fd8559c5d446a136490d4dbee12">ContentHash</reimplementedby>
+        <reimplementedby refid="classtvm_1_1AttrsNode_1abe3e0fd8559c5d446a136490d4dbee12">ContentHash</reimplementedby>
+        <reimplementedby refid="classtvm_1_1AttrsNode_1abe3e0fd8559c5d446a136490d4dbee12">ContentHash</reimplementedby>
+        <reimplementedby refid="classtvm_1_1AttrsNode_1abe3e0fd8559c5d446a136490d4dbee12">ContentHash</reimplementedby>
+        <reimplementedby refid="classtvm_1_1AttrsNode_1abe3e0fd8559c5d446a136490d4dbee12">ContentHash</reimplementedby>
+        <reimplementedby refid="classtvm_1_1AttrsNode_1abe3e0fd8559c5d446a136490d4dbee12">ContentHash</reimplementedby>
+        <reimplementedby refid="classtvm_1_1AttrsNode_1abe3e0fd8559c5d446a136490d4dbee12">ContentHash</reimplementedby>
+        <reimplementedby refid="classtvm_1_1AttrsNode_1abe3e0fd8559c5d446a136490d4dbee12">ContentHash</reimplementedby>
+        <reimplementedby refid="classtvm_1_1AttrsNode_1abe3e0fd8559c5d446a136490d4dbee12">ContentHash</reimplementedby>
+        <reimplementedby refid="classtvm_1_1AttrsNode_1abe3e0fd8559c5d446a136490d4dbee12">ContentHash</reimplementedby>
+        <reimplementedby refid="classtvm_1_1AttrsNode_1abe3e0fd8559c5d446a136490d4dbee12">ContentHash</reimplementedby>
+        <reimplementedby refid="classtvm_1_1AttrsNode_1abe3e0fd8559c5d446a136490d4dbee12">ContentHash</reimplementedby>
+        <reimplementedby refid="classtvm_1_1AttrsNode_1abe3e0fd8559c5d446a136490d4dbee12">ContentHash</reimplementedby>
+        <reimplementedby refid="classtvm_1_1AttrsNode_1abe3e0fd8559c5d446a136490d4dbee12">ContentHash</reimplementedby>
+        <reimplementedby refid="classtvm_1_1AttrsNode_1abe3e0fd8559c5d446a136490d4dbee12">ContentHash</reimplementedby>
+        <reimplementedby refid="classtvm_1_1AttrsNode_1abe3e0fd8559c5d446a136490d4dbee12">ContentHash</reimplementedby>
+        <reimplementedby refid="classtvm_1_1AttrsNode_1abe3e0fd8559c5d446a136490d4dbee12">ContentHash</reimplementedby>
+        <reimplementedby refid="classtvm_1_1AttrsNode_1abe3e0fd8559c5d446a136490d4dbee12">ContentHash</reimplementedby>
+        <reimplementedby refid="classtvm_1_1AttrsNode_1abe3e0fd8559c5d446a136490d4dbee12">ContentHash</reimplementedby>
+        <reimplementedby refid="classtvm_1_1AttrsNode_1abe3e0fd8559c5d446a136490d4dbee12">ContentHash</reimplementedby>
+        <reimplementedby refid="classtvm_1_1AttrsNode_1abe3e0fd8559c5d446a136490d4dbee12">ContentHash</reimplementedby>
+        <reimplementedby refid="classtvm_1_1AttrsNode_1abe3e0fd8559c5d446a136490d4dbee12">ContentHash</reimplementedby>
+        <reimplementedby refid="classtvm_1_1AttrsNode_1abe3e0fd8559c5d446a136490d4dbee12">ContentHash</reimplementedby>
+        <reimplementedby refid="classtvm_1_1AttrsNode_1abe3e0fd8559c5d446a136490d4dbee12">ContentHash</reimplementedby>
+        <reimplementedby refid="classtvm_1_1AttrsNode_1abe3e0fd8559c5d446a136490d4dbee12">ContentHash</reimplementedby>
+        <reimplementedby refid="classtvm_1_1AttrsNode_1abe3e0fd8559c5d446a136490d4dbee12">ContentHash</reimplementedby>
+        <reimplementedby refid="classtvm_1_1AttrsNode_1abe3e0fd8559c5d446a136490d4dbee12">ContentHash</reimplementedby>
+        <reimplementedby refid="classtvm_1_1AttrsNode_1abe3e0fd8559c5d446a136490d4dbee12">ContentHash</reimplementedby>
+        <param>
+          <type><ref refid="classtvm_1_1AttrsHash" kindref="compound">AttrsHash</ref></type>
+          <declname>hasher</declname>
+        </param>
+        <briefdescription>
+<para>Content aware hash. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>hasher</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The hasher to run the hash. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>the hash result. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/ir/attrs.h" line="282" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classtvm_1_1BaseAttrsNode_1aaca524319f015a18a1385cfea5ba8895" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>tvm::BaseAttrsNode::TVM_DECLARE_BASE_OBJECT_INFO</definition>
+        <argsstring>(BaseAttrsNode, Object)</argsstring>
+        <name>TVM_DECLARE_BASE_OBJECT_INFO</name>
+        <param>
+          <type><ref refid="classtvm_1_1BaseAttrsNode" kindref="compound">BaseAttrsNode</ref></type>
+        </param>
+        <param>
+          <type>Object</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/ir/attrs.h" line="287" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Base class of all attribute class. </para>    </briefdescription>
+    <detaileddescription>
+<para><simplesect kind="note"><para>Do not subclass AttrBaseNode directly, subclass <ref refid="classtvm_1_1AttrsNode" kindref="compound">AttrsNode</ref> instead. </para></simplesect>
+<simplesect kind="see"><para><ref refid="classtvm_1_1AttrsNode" kindref="compound">AttrsNode</ref> </para></simplesect>
+</para>    </detaileddescription>
+    <inheritancegraph>
+      <node id="4137">
+        <label>tvm::relay::MaxPool2DAttrs</label>
+        <link refid="structtvm_1_1relay_1_1MaxPool2DAttrs"/>
+        <childnode refid="4136" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="4106">
+        <label>tvm::AttrsNode&lt; DeviceCopyAttrs &gt;</label>
+        <link refid="classtvm_1_1AttrsNode"/>
+        <childnode refid="4044" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="4168">
+        <label>tvm::AttrsNode&lt; ReshapeAttrs &gt;</label>
+        <link refid="classtvm_1_1AttrsNode"/>
+        <childnode refid="4044" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="4081">
+        <label>tvm::relay::ConcatenateAttrs</label>
+        <link refid="structtvm_1_1relay_1_1ConcatenateAttrs"/>
+        <childnode refid="4080" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="4203">
+        <label>tvm::relay::TakeAttrs</label>
+        <link refid="structtvm_1_1relay_1_1TakeAttrs"/>
+        <childnode refid="4202" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="4196">
+        <label>tvm::AttrsNode&lt; StackAttrs &gt;</label>
+        <link refid="classtvm_1_1AttrsNode"/>
+        <childnode refid="4044" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="4175">
+        <label>tvm::relay::ROIAlignAttrs</label>
+        <link refid="structtvm_1_1relay_1_1ROIAlignAttrs"/>
+        <childnode refid="4174" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="4138">
+        <label>tvm::AttrsNode&lt; MaxPool3DAttrs &gt;</label>
+        <link refid="classtvm_1_1AttrsNode"/>
+        <childnode refid="4044" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="4212">
+        <label>tvm::AttrsNode&lt; UpSamplingAttrs &gt;</label>
+        <link refid="classtvm_1_1AttrsNode"/>
+        <childnode refid="4044" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="4046">
+        <label>tvm::AttrsNode&lt; AdaptivePool2DAttrs &gt;</label>
+        <link refid="classtvm_1_1AttrsNode"/>
+        <childnode refid="4044" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="4062">
+        <label>tvm::AttrsNode&lt; BatchNormAttrs &gt;</label>
+        <link refid="classtvm_1_1AttrsNode"/>
+        <childnode refid="4044" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="4116">
+        <label>tvm::AttrsNode&lt; GetValidCountsAttrs &gt;</label>
+        <link refid="classtvm_1_1AttrsNode"/>
+        <childnode refid="4044" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="4185">
+        <label>tvm::relay::SliceLikeAttrs</label>
+        <link refid="structtvm_1_1relay_1_1SliceLikeAttrs"/>
+        <childnode refid="4184" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="4188">
+        <label>tvm::AttrsNode&lt; SparseDenseAttrs &gt;</label>
+        <link refid="classtvm_1_1AttrsNode"/>
+        <childnode refid="4044" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="4052">
+        <label>tvm::AttrsNode&lt; ArangeAttrs &gt;</label>
+        <link refid="classtvm_1_1AttrsNode"/>
+        <childnode refid="4044" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="4058">
+        <label>tvm::AttrsNode&lt; AvgPool2DAttrs &gt;</label>
+        <link refid="classtvm_1_1AttrsNode"/>
+        <childnode refid="4044" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="4123">
+        <label>tvm::relay::InstanceNormAttrs</label>
+        <link refid="structtvm_1_1relay_1_1InstanceNormAttrs"/>
+        <childnode refid="4122" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="4154">
+        <label>tvm::AttrsNode&lt; PadAttrs &gt;</label>
+        <link refid="classtvm_1_1AttrsNode"/>
+        <childnode refid="4044" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="4125">
+        <label>tvm::relay::L2NormalizeAttrs</label>
+        <link refid="structtvm_1_1relay_1_1L2NormalizeAttrs"/>
+        <childnode refid="4124" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="4164">
+        <label>tvm::AttrsNode&lt; RepeatAttrs &gt;</label>
+        <link refid="classtvm_1_1AttrsNode"/>
+        <childnode refid="4044" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="4152">
+        <label>tvm::AttrsNode&lt; OneHotAttrs &gt;</label>
+        <link refid="classtvm_1_1AttrsNode"/>
+        <childnode refid="4044" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="4216">
+        <label>tvm::AttrsNode&lt; DerivedType &gt;</label>
+        <link refid="classtvm_1_1AttrsNode"/>
+        <childnode refid="4044" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="4190">
+        <label>tvm::AttrsNode&lt; SparseTransposeAttrs &gt;</label>
+        <link refid="classtvm_1_1AttrsNode"/>
+        <childnode refid="4044" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="4101">
+        <label>tvm::relay::DebugAttrs</label>
+        <link refid="structtvm_1_1relay_1_1DebugAttrs"/>
+        <childnode refid="4100" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="4197">
+        <label>tvm::relay::StackAttrs</label>
+        <link refid="structtvm_1_1relay_1_1StackAttrs"/>
+        <childnode refid="4196" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="4202">
+        <label>tvm::AttrsNode&lt; TakeAttrs &gt;</label>
+        <link refid="classtvm_1_1AttrsNode"/>
+        <childnode refid="4044" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="4087">
+        <label>tvm::relay::Conv2DAttrs</label>
+        <link refid="structtvm_1_1relay_1_1Conv2DAttrs"/>
+        <childnode refid="4086" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="4161">
+        <label>tvm::relay::qnn::QuantizeAttrs</label>
+        <link refid="structtvm_1_1relay_1_1qnn_1_1QuantizeAttrs"/>
+        <childnode refid="4160" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="4049">
+        <label>tvm::relay::AdaptivePool3DAttrs</label>
+        <link refid="structtvm_1_1relay_1_1AdaptivePool3DAttrs"/>
+        <childnode refid="4048" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="4141">
+        <label>tvm::relay::MirrorPadAttrs</label>
+        <link refid="structtvm_1_1relay_1_1MirrorPadAttrs"/>
+        <childnode refid="4140" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="4070">
+        <label>tvm::AttrsNode&lt; BitPackAttrs &gt;</label>
+        <link refid="classtvm_1_1AttrsNode"/>
+        <childnode refid="4044" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="4120">
+        <label>tvm::AttrsNode&lt; InitOpAttrs &gt;</label>
+        <link refid="classtvm_1_1AttrsNode"/>
+        <childnode refid="4044" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="4095">
+        <label>tvm::relay::Conv2DWinogradWeightTransformAttrs</label>
+        <link refid="structtvm_1_1relay_1_1Conv2DWinogradWeightTransformAttrs"/>
+        <childnode refid="4094" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="4160">
+        <label>tvm::AttrsNode&lt; QuantizeAttrs &gt;</label>
+        <link refid="classtvm_1_1AttrsNode"/>
+        <childnode refid="4044" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="4108">
+        <label>tvm::AttrsNode&lt; Dilation2DAttrs &gt;</label>
+        <link refid="classtvm_1_1AttrsNode"/>
+        <childnode refid="4044" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="4199">
+        <label>tvm::relay::StridedSliceAttrs</label>
+        <link refid="structtvm_1_1relay_1_1StridedSliceAttrs"/>
+        <childnode refid="4198" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="4099">
+        <label>tvm::relay::CropAndResizeAttrs</label>
+        <link refid="structtvm_1_1relay_1_1CropAndResizeAttrs"/>
+        <childnode refid="4098" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="4096">
+        <label>tvm::AttrsNode&lt; Conv3DAttrs &gt;</label>
+        <link refid="classtvm_1_1AttrsNode"/>
+        <childnode refid="4044" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="4054">
+        <label>tvm::AttrsNode&lt; ArgsortAttrs &gt;</label>
+        <link refid="classtvm_1_1AttrsNode"/>
+        <childnode refid="4044" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="4214">
+        <label>tvm::AttrsNode&lt; YoloReorgAttrs &gt;</label>
+        <link refid="classtvm_1_1AttrsNode"/>
+        <childnode refid="4044" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="4133">
+        <label>tvm::relay::LRNAttrs</label>
+        <link refid="structtvm_1_1relay_1_1LRNAttrs"/>
+        <childnode refid="4132" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="4088">
+        <label>tvm::AttrsNode&lt; Conv2DTransposeAttrs &gt;</label>
+        <link refid="classtvm_1_1AttrsNode"/>
+        <childnode refid="4044" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="4217">
+        <label>tvm::DictAttrsNode</label>
+        <link refid="classtvm_1_1DictAttrsNode"/>
+        <childnode refid="4044" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="4102">
+        <label>tvm::AttrsNode&lt; DeformableConv2DAttrs &gt;</label>
+        <link refid="classtvm_1_1AttrsNode"/>
+        <childnode refid="4044" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="4180">
+        <label>tvm::AttrsNode&lt; ShapeFuncAttrs &gt;</label>
+        <link refid="classtvm_1_1AttrsNode"/>
+        <childnode refid="4044" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="4112">
+        <label>tvm::AttrsNode&lt; ExpandDimsAttrs &gt;</label>
+        <link refid="classtvm_1_1AttrsNode"/>
+        <childnode refid="4044" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="4136">
+        <label>tvm::AttrsNode&lt; MaxPool2DAttrs &gt;</label>
+        <link refid="classtvm_1_1AttrsNode"/>
+        <childnode refid="4044" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="4063">
+        <label>tvm::relay::BatchNormAttrs</label>
+        <link refid="structtvm_1_1relay_1_1BatchNormAttrs"/>
+        <childnode refid="4062" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="4092">
+        <label>tvm::AttrsNode&lt; Conv2DWinogradNNPACKWeightTransformAttrs &gt;</label>
+        <link refid="classtvm_1_1AttrsNode"/>
+        <childnode refid="4044" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="4065">
+        <label>tvm::relay::BiasAddAttrs</label>
+        <link refid="structtvm_1_1relay_1_1BiasAddAttrs"/>
+        <childnode refid="4064" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="4206">
+        <label>tvm::AttrsNode&lt; TopKAttrs &gt;</label>
+        <link refid="classtvm_1_1AttrsNode"/>
+        <childnode refid="4044" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="4127">
+        <label>tvm::relay::LayerNormAttrs</label>
+        <link refid="structtvm_1_1relay_1_1LayerNormAttrs"/>
+        <childnode refid="4126" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="4103">
+        <label>tvm::relay::DeformableConv2DAttrs</label>
+        <link refid="structtvm_1_1relay_1_1DeformableConv2DAttrs"/>
+        <childnode refid="4102" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="4192">
+        <label>tvm::AttrsNode&lt; SplitAttrs &gt;</label>
+        <link refid="classtvm_1_1AttrsNode"/>
+        <childnode refid="4044" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="4056">
+        <label>tvm::AttrsNode&lt; AvgPool1DAttrs &gt;</label>
+        <link refid="classtvm_1_1AttrsNode"/>
+        <childnode refid="4044" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="4117">
+        <label>tvm::relay::GetValidCountsAttrs</label>
+        <link refid="structtvm_1_1relay_1_1GetValidCountsAttrs"/>
+        <childnode refid="4116" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="4170">
+        <label>tvm::AttrsNode&lt; ResizeAttrs &gt;</label>
+        <link refid="classtvm_1_1AttrsNode"/>
+        <childnode refid="4044" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="4158">
+        <label>tvm::AttrsNode&lt; ProposalAttrs &gt;</label>
+        <link refid="classtvm_1_1AttrsNode"/>
+        <childnode refid="4044" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="4177">
+        <label>tvm::relay::ROIPoolAttrs</label>
+        <link refid="structtvm_1_1relay_1_1ROIPoolAttrs"/>
+        <childnode refid="4176" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="4151">
+        <label>tvm::relay::OnDeviceAttrs</label>
+        <link refid="structtvm_1_1relay_1_1OnDeviceAttrs"/>
+        <childnode refid="4150" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="4181">
+        <label>tvm::relay::ShapeFuncAttrs</label>
+        <link refid="structtvm_1_1relay_1_1ShapeFuncAttrs"/>
+        <childnode refid="4180" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="4044">
+        <label>tvm::BaseAttrsNode</label>
+        <link refid="classtvm_1_1BaseAttrsNode"/>
+        <childnode refid="4045" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="4051">
+        <label>tvm::relay::AllocTensorAttrs</label>
+        <link refid="structtvm_1_1relay_1_1AllocTensorAttrs"/>
+        <childnode refid="4050" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="4148">
+        <label>tvm::AttrsNode&lt; NonMaximumSuppressionAttrs &gt;</label>
+        <link refid="classtvm_1_1AttrsNode"/>
+        <childnode refid="4044" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="4050">
+        <label>tvm::AttrsNode&lt; AllocTensorAttrs &gt;</label>
+        <link refid="classtvm_1_1AttrsNode"/>
+        <childnode refid="4044" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="4079">
+        <label>tvm::relay::CompilerAttrs</label>
+        <link refid="structtvm_1_1relay_1_1CompilerAttrs"/>
+        <childnode refid="4078" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="4204">
+        <label>tvm::AttrsNode&lt; TileAttrs &gt;</label>
+        <link refid="classtvm_1_1AttrsNode"/>
+        <childnode refid="4044" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="4061">
+        <label>tvm::relay::AvgPool3DAttrs</label>
+        <link refid="structtvm_1_1relay_1_1AvgPool3DAttrs"/>
+        <childnode refid="4060" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="4139">
+        <label>tvm::relay::MaxPool3DAttrs</label>
+        <link refid="structtvm_1_1relay_1_1MaxPool3DAttrs"/>
+        <childnode refid="4138" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="4157">
+        <label>tvm::relay::PReluAttrs</label>
+        <link refid="structtvm_1_1relay_1_1PReluAttrs"/>
+        <childnode refid="4156" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="4169">
+        <label>tvm::relay::ReshapeAttrs</label>
+        <link refid="structtvm_1_1relay_1_1ReshapeAttrs"/>
+        <childnode refid="4168" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="4146">
+        <label>tvm::AttrsNode&lt; NdarraySizeAttrs &gt;</label>
+        <link refid="classtvm_1_1AttrsNode"/>
+        <childnode refid="4044" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="4208">
+        <label>tvm::AttrsNode&lt; TransposeAttrs &gt;</label>
+        <link refid="classtvm_1_1AttrsNode"/>
+        <childnode refid="4044" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="4045">
+        <label>Object</label>
+      </node>
+      <node id="4130">
+        <label>tvm::AttrsNode&lt; LeakyReluAttrs &gt;</label>
+        <link refid="classtvm_1_1AttrsNode"/>
+        <childnode refid="4044" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="4107">
+        <label>tvm::relay::DeviceCopyAttrs</label>
+        <link refid="structtvm_1_1relay_1_1DeviceCopyAttrs"/>
+        <childnode refid="4106" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="4191">
+        <label>tvm::relay::SparseTransposeAttrs</label>
+        <link refid="structtvm_1_1relay_1_1SparseTransposeAttrs"/>
+        <childnode refid="4190" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="4074">
+        <label>tvm::AttrsNode&lt; CastHintAttrs &gt;</label>
+        <link refid="classtvm_1_1AttrsNode"/>
+        <childnode refid="4044" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="4155">
+        <label>tvm::relay::PadAttrs</label>
+        <link refid="structtvm_1_1relay_1_1PadAttrs"/>
+        <childnode refid="4154" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="4172">
+        <label>tvm::AttrsNode&lt; ReverseAttrs &gt;</label>
+        <link refid="classtvm_1_1AttrsNode"/>
+        <childnode refid="4044" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="4194">
+        <label>tvm::AttrsNode&lt; SqueezeAttrs &gt;</label>
+        <link refid="classtvm_1_1AttrsNode"/>
+        <childnode refid="4044" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="4053">
+        <label>tvm::relay::ArangeAttrs</label>
+        <link refid="structtvm_1_1relay_1_1ArangeAttrs"/>
+        <childnode refid="4052" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="4145">
+        <label>tvm::relay::MultiBoxTransformLocAttrs</label>
+        <link refid="structtvm_1_1relay_1_1MultiBoxTransformLocAttrs"/>
+        <childnode refid="4144" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="4085">
+        <label>tvm::relay::Conv1DTransposeAttrs</label>
+        <link refid="structtvm_1_1relay_1_1Conv1DTransposeAttrs"/>
+        <childnode refid="4084" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="4105">
+        <label>tvm::relay::DenseAttrs</label>
+        <link refid="structtvm_1_1relay_1_1DenseAttrs"/>
+        <childnode refid="4104" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="4134">
+        <label>tvm::AttrsNode&lt; MaxPool1DAttrs &gt;</label>
+        <link refid="classtvm_1_1AttrsNode"/>
+        <childnode refid="4044" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="4183">
+        <label>tvm::relay::ShapeOfAttrs</label>
+        <link refid="structtvm_1_1relay_1_1ShapeOfAttrs"/>
+        <childnode refid="4182" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="4057">
+        <label>tvm::relay::AvgPool1DAttrs</label>
+        <link refid="structtvm_1_1relay_1_1AvgPool1DAttrs"/>
+        <childnode refid="4056" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="4100">
+        <label>tvm::AttrsNode&lt; DebugAttrs &gt;</label>
+        <link refid="classtvm_1_1AttrsNode"/>
+        <childnode refid="4044" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="4118">
+        <label>tvm::AttrsNode&lt; GlobalPool2DAttrs &gt;</label>
+        <link refid="classtvm_1_1AttrsNode"/>
+        <childnode refid="4044" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="4162">
+        <label>tvm::AttrsNode&lt; ReduceAttrs &gt;</label>
+        <link refid="classtvm_1_1AttrsNode"/>
+        <childnode refid="4044" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="4135">
+        <label>tvm::relay::MaxPool1DAttrs</label>
+        <link refid="structtvm_1_1relay_1_1MaxPool1DAttrs"/>
+        <childnode refid="4134" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="4140">
+        <label>tvm::AttrsNode&lt; MirrorPadAttrs &gt;</label>
+        <link refid="classtvm_1_1AttrsNode"/>
+        <childnode refid="4044" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="4189">
+        <label>tvm::relay::SparseDenseAttrs</label>
+        <link refid="structtvm_1_1relay_1_1SparseDenseAttrs"/>
+        <childnode refid="4188" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="4184">
+        <label>tvm::AttrsNode&lt; SliceLikeAttrs &gt;</label>
+        <link refid="classtvm_1_1AttrsNode"/>
+        <childnode refid="4044" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="4078">
+        <label>tvm::AttrsNode&lt; CompilerAttrs &gt;</label>
+        <link refid="classtvm_1_1AttrsNode"/>
+        <childnode refid="4044" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="4142">
+        <label>tvm::AttrsNode&lt; MultiBoxPriorAttrs &gt;</label>
+        <link refid="classtvm_1_1AttrsNode"/>
+        <childnode refid="4044" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="4068">
+        <label>tvm::AttrsNode&lt; BinaryDenseAttrs &gt;</label>
+        <link refid="classtvm_1_1AttrsNode"/>
+        <childnode refid="4044" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="4149">
+        <label>tvm::relay::NonMaximumSuppressionAttrs</label>
+        <link refid="structtvm_1_1relay_1_1NonMaximumSuppressionAttrs"/>
+        <childnode refid="4148" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="4083">
+        <label>tvm::relay::Conv1DAttrs</label>
+        <link refid="structtvm_1_1relay_1_1Conv1DAttrs"/>
+        <childnode refid="4082" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="4055">
+        <label>tvm::relay::ArgsortAttrs</label>
+        <link refid="structtvm_1_1relay_1_1ArgsortAttrs"/>
+        <childnode refid="4054" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="4119">
+        <label>tvm::relay::GlobalPool2DAttrs</label>
+        <link refid="structtvm_1_1relay_1_1GlobalPool2DAttrs"/>
+        <childnode refid="4118" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="4047">
+        <label>tvm::relay::AdaptivePool2DAttrs</label>
+        <link refid="structtvm_1_1relay_1_1AdaptivePool2DAttrs"/>
+        <childnode refid="4046" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="4124">
+        <label>tvm::AttrsNode&lt; L2NormalizeAttrs &gt;</label>
+        <link refid="classtvm_1_1AttrsNode"/>
+        <childnode refid="4044" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="4067">
+        <label>tvm::relay::BinaryConv2DAttrs</label>
+        <link refid="structtvm_1_1relay_1_1BinaryConv2DAttrs"/>
+        <childnode refid="4066" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="4069">
+        <label>tvm::relay::BinaryDenseAttrs</label>
+        <link refid="structtvm_1_1relay_1_1BinaryDenseAttrs"/>
+        <childnode refid="4068" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="4121">
+        <label>tvm::relay::InitOpAttrs</label>
+        <link refid="structtvm_1_1relay_1_1InitOpAttrs"/>
+        <childnode refid="4120" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="4115">
+        <label>tvm::relay::FIFOBufferAttrs</label>
+        <link refid="structtvm_1_1relay_1_1FIFOBufferAttrs"/>
+        <childnode refid="4114" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="4098">
+        <label>tvm::AttrsNode&lt; CropAndResizeAttrs &gt;</label>
+        <link refid="classtvm_1_1AttrsNode"/>
+        <childnode refid="4044" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="4075">
+        <label>tvm::relay::CastHintAttrs</label>
+        <link refid="structtvm_1_1relay_1_1CastHintAttrs"/>
+        <childnode refid="4074" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="4080">
+        <label>tvm::AttrsNode&lt; ConcatenateAttrs &gt;</label>
+        <link refid="classtvm_1_1AttrsNode"/>
+        <childnode refid="4044" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="4171">
+        <label>tvm::relay::ResizeAttrs</label>
+        <link refid="structtvm_1_1relay_1_1ResizeAttrs"/>
+        <childnode refid="4170" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="4215">
+        <label>tvm::relay::YoloReorgAttrs</label>
+        <link refid="structtvm_1_1relay_1_1YoloReorgAttrs"/>
+        <childnode refid="4214" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="4147">
+        <label>tvm::relay::NdarraySizeAttrs</label>
+        <link refid="structtvm_1_1relay_1_1NdarraySizeAttrs"/>
+        <childnode refid="4146" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="4213">
+        <label>tvm::relay::UpSamplingAttrs</label>
+        <link refid="structtvm_1_1relay_1_1UpSamplingAttrs"/>
+        <childnode refid="4212" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="4186">
+        <label>tvm::AttrsNode&lt; SoftmaxAttrs &gt;</label>
+        <link refid="classtvm_1_1AttrsNode"/>
+        <childnode refid="4044" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="4089">
+        <label>tvm::relay::Conv2DTransposeAttrs</label>
+        <link refid="structtvm_1_1relay_1_1Conv2DTransposeAttrs"/>
+        <childnode refid="4088" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="4159">
+        <label>tvm::relay::ProposalAttrs</label>
+        <link refid="structtvm_1_1relay_1_1ProposalAttrs"/>
+        <childnode refid="4158" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="4090">
+        <label>tvm::AttrsNode&lt; Conv2DWinogradAttrs &gt;</label>
+        <link refid="classtvm_1_1AttrsNode"/>
+        <childnode refid="4044" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="4205">
+        <label>tvm::relay::TileAttrs</label>
+        <link refid="structtvm_1_1relay_1_1TileAttrs"/>
+        <childnode refid="4204" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="4163">
+        <label>tvm::relay::ReduceAttrs</label>
+        <link refid="structtvm_1_1relay_1_1ReduceAttrs"/>
+        <childnode refid="4162" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="4111">
+        <label>tvm::relay::DropoutAttrs</label>
+        <link refid="structtvm_1_1relay_1_1DropoutAttrs"/>
+        <childnode refid="4110" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="4179">
+        <label>tvm::relay::SequenceMaskAttrs</label>
+        <link refid="structtvm_1_1relay_1_1SequenceMaskAttrs"/>
+        <childnode refid="4178" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="4209">
+        <label>tvm::relay::TransposeAttrs</label>
+        <link refid="structtvm_1_1relay_1_1TransposeAttrs"/>
+        <childnode refid="4208" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="4114">
+        <label>tvm::AttrsNode&lt; FIFOBufferAttrs &gt;</label>
+        <link refid="classtvm_1_1AttrsNode"/>
+        <childnode refid="4044" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="4073">
+        <label>tvm::relay::CastAttrs</label>
+        <link refid="structtvm_1_1relay_1_1CastAttrs"/>
+        <childnode refid="4072" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="4071">
+        <label>tvm::relay::BitPackAttrs</label>
+        <link refid="structtvm_1_1relay_1_1BitPackAttrs"/>
+        <childnode refid="4070" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="4165">
+        <label>tvm::relay::RepeatAttrs</label>
+        <link refid="structtvm_1_1relay_1_1RepeatAttrs"/>
+        <childnode refid="4164" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="4091">
+        <label>tvm::relay::Conv2DWinogradAttrs</label>
+        <link refid="structtvm_1_1relay_1_1Conv2DWinogradAttrs"/>
+        <childnode refid="4090" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="4082">
+        <label>tvm::AttrsNode&lt; Conv1DAttrs &gt;</label>
+        <link refid="classtvm_1_1AttrsNode"/>
+        <childnode refid="4044" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="4097">
+        <label>tvm::relay::Conv3DAttrs</label>
+        <link refid="structtvm_1_1relay_1_1Conv3DAttrs"/>
+        <childnode refid="4096" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="4093">
+        <label>tvm::relay::Conv2DWinogradNNPACKWeightTransformAttrs</label>
+        <link refid="structtvm_1_1relay_1_1Conv2DWinogradNNPACKWeightTransformAttrs"/>
+        <childnode refid="4092" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="4182">
+        <label>tvm::AttrsNode&lt; ShapeOfAttrs &gt;</label>
+        <link refid="classtvm_1_1AttrsNode"/>
+        <childnode refid="4044" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="4048">
+        <label>tvm::AttrsNode&lt; AdaptivePool3DAttrs &gt;</label>
+        <link refid="classtvm_1_1AttrsNode"/>
+        <childnode refid="4044" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="4143">
+        <label>tvm::relay::MultiBoxPriorAttrs</label>
+        <link refid="structtvm_1_1relay_1_1MultiBoxPriorAttrs"/>
+        <childnode refid="4142" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="4131">
+        <label>tvm::relay::LeakyReluAttrs</label>
+        <link refid="structtvm_1_1relay_1_1LeakyReluAttrs"/>
+        <childnode refid="4130" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="4195">
+        <label>tvm::relay::SqueezeAttrs</label>
+        <link refid="structtvm_1_1relay_1_1SqueezeAttrs"/>
+        <childnode refid="4194" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="4198">
+        <label>tvm::AttrsNode&lt; StridedSliceAttrs &gt;</label>
+        <link refid="classtvm_1_1AttrsNode"/>
+        <childnode refid="4044" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="4200">
+        <label>tvm::AttrsNode&lt; SubPixelAttrs &gt;</label>
+        <link refid="classtvm_1_1AttrsNode"/>
+        <childnode refid="4044" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="4060">
+        <label>tvm::AttrsNode&lt; AvgPool3DAttrs &gt;</label>
+        <link refid="classtvm_1_1AttrsNode"/>
+        <childnode refid="4044" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="4178">
+        <label>tvm::AttrsNode&lt; SequenceMaskAttrs &gt;</label>
+        <link refid="classtvm_1_1AttrsNode"/>
+        <childnode refid="4044" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="4201">
+        <label>tvm::relay::SubPixelAttrs</label>
+        <link refid="structtvm_1_1relay_1_1SubPixelAttrs"/>
+        <childnode refid="4200" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="4104">
+        <label>tvm::AttrsNode&lt; DenseAttrs &gt;</label>
+        <link refid="classtvm_1_1AttrsNode"/>
+        <childnode refid="4044" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="4128">
+        <label>tvm::AttrsNode&lt; LayoutTransformAttrs &gt;</label>
+        <link refid="classtvm_1_1AttrsNode"/>
+        <childnode refid="4044" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="4066">
+        <label>tvm::AttrsNode&lt; BinaryConv2DAttrs &gt;</label>
+        <link refid="classtvm_1_1AttrsNode"/>
+        <childnode refid="4044" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="4210">
+        <label>tvm::AttrsNode&lt; UpSampling3DAttrs &gt;</label>
+        <link refid="classtvm_1_1AttrsNode"/>
+        <childnode refid="4044" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="4129">
+        <label>tvm::relay::LayoutTransformAttrs</label>
+        <link refid="structtvm_1_1relay_1_1LayoutTransformAttrs"/>
+        <childnode refid="4128" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="4153">
+        <label>tvm::relay::OneHotAttrs</label>
+        <link refid="structtvm_1_1relay_1_1OneHotAttrs"/>
+        <childnode refid="4152" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="4122">
+        <label>tvm::AttrsNode&lt; InstanceNormAttrs &gt;</label>
+        <link refid="classtvm_1_1AttrsNode"/>
+        <childnode refid="4044" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="4110">
+        <label>tvm::AttrsNode&lt; DropoutAttrs &gt;</label>
+        <link refid="classtvm_1_1AttrsNode"/>
+        <childnode refid="4044" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="4077">
+        <label>tvm::relay::ClipAttrs</label>
+        <link refid="structtvm_1_1relay_1_1ClipAttrs"/>
+        <childnode refid="4076" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="4176">
+        <label>tvm::AttrsNode&lt; ROIPoolAttrs &gt;</label>
+        <link refid="classtvm_1_1AttrsNode"/>
+        <childnode refid="4044" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="4144">
+        <label>tvm::AttrsNode&lt; MultiBoxTransformLocAttrs &gt;</label>
+        <link refid="classtvm_1_1AttrsNode"/>
+        <childnode refid="4044" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="4166">
+        <label>tvm::AttrsNode&lt; RequantizeAttrs &gt;</label>
+        <link refid="classtvm_1_1AttrsNode"/>
+        <childnode refid="4044" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="4126">
+        <label>tvm::AttrsNode&lt; LayerNormAttrs &gt;</label>
+        <link refid="classtvm_1_1AttrsNode"/>
+        <childnode refid="4044" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="4193">
+        <label>tvm::relay::SplitAttrs</label>
+        <link refid="structtvm_1_1relay_1_1SplitAttrs"/>
+        <childnode refid="4192" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="4113">
+        <label>tvm::relay::ExpandDimsAttrs</label>
+        <link refid="structtvm_1_1relay_1_1ExpandDimsAttrs"/>
+        <childnode refid="4112" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="4211">
+        <label>tvm::relay::UpSampling3DAttrs</label>
+        <link refid="structtvm_1_1relay_1_1UpSampling3DAttrs"/>
+        <childnode refid="4210" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="4173">
+        <label>tvm::relay::ReverseAttrs</label>
+        <link refid="structtvm_1_1relay_1_1ReverseAttrs"/>
+        <childnode refid="4172" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="4174">
+        <label>tvm::AttrsNode&lt; ROIAlignAttrs &gt;</label>
+        <link refid="classtvm_1_1AttrsNode"/>
+        <childnode refid="4044" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="4094">
+        <label>tvm::AttrsNode&lt; Conv2DWinogradWeightTransformAttrs &gt;</label>
+        <link refid="classtvm_1_1AttrsNode"/>
+        <childnode refid="4044" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="4132">
+        <label>tvm::AttrsNode&lt; LRNAttrs &gt;</label>
+        <link refid="classtvm_1_1AttrsNode"/>
+        <childnode refid="4044" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="4084">
+        <label>tvm::AttrsNode&lt; Conv1DTransposeAttrs &gt;</label>
+        <link refid="classtvm_1_1AttrsNode"/>
+        <childnode refid="4044" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="4207">
+        <label>tvm::relay::TopKAttrs</label>
+        <link refid="structtvm_1_1relay_1_1TopKAttrs"/>
+        <childnode refid="4206" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="4064">
+        <label>tvm::AttrsNode&lt; BiasAddAttrs &gt;</label>
+        <link refid="classtvm_1_1AttrsNode"/>
+        <childnode refid="4044" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="4109">
+        <label>tvm::relay::Dilation2DAttrs</label>
+        <link refid="structtvm_1_1relay_1_1Dilation2DAttrs"/>
+        <childnode refid="4108" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="4076">
+        <label>tvm::AttrsNode&lt; ClipAttrs &gt;</label>
+        <link refid="classtvm_1_1AttrsNode"/>
+        <childnode refid="4044" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="4150">
+        <label>tvm::AttrsNode&lt; OnDeviceAttrs &gt;</label>
+        <link refid="classtvm_1_1AttrsNode"/>
+        <childnode refid="4044" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="4156">
+        <label>tvm::AttrsNode&lt; PReluAttrs &gt;</label>
+        <link refid="classtvm_1_1AttrsNode"/>
+        <childnode refid="4044" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="4072">
+        <label>tvm::AttrsNode&lt; CastAttrs &gt;</label>
+        <link refid="classtvm_1_1AttrsNode"/>
+        <childnode refid="4044" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="4059">
+        <label>tvm::relay::AvgPool2DAttrs</label>
+        <link refid="structtvm_1_1relay_1_1AvgPool2DAttrs"/>
+        <childnode refid="4058" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="4167">
+        <label>tvm::relay::qnn::RequantizeAttrs</label>
+        <link refid="structtvm_1_1relay_1_1qnn_1_1RequantizeAttrs"/>
+        <childnode refid="4166" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="4086">
+        <label>tvm::AttrsNode&lt; Conv2DAttrs &gt;</label>
+        <link refid="classtvm_1_1AttrsNode"/>
+        <childnode refid="4044" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="4187">
+        <label>tvm::relay::SoftmaxAttrs</label>
+        <link refid="structtvm_1_1relay_1_1SoftmaxAttrs"/>
+        <childnode refid="4186" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="4218">
+        <label>tvm::BaseAttrsNode</label>
+        <link refid="classtvm_1_1BaseAttrsNode"/>
+        <childnode refid="4219" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="4219">
+        <label>Object</label>
+      </node>
+    </collaborationgraph>
+    <location file="include/tvm/ir/attrs.h" line="229" column="1" bodyfile="include/tvm/ir/attrs.h" bodystart="229" bodyend="288"/>
+    <listofallmembers>
+      <member refid="classtvm_1_1BaseAttrsNode_1ad812afdb028fe3944a80cd922dceff82" prot="public" virt="non-virtual"><scope>tvm::BaseAttrsNode</scope><name>_type_has_method_sequal_reduce</name></member>
+      <member refid="classtvm_1_1BaseAttrsNode_1ad85f4aca5e8840d23851c0c07acd0862" prot="public" virt="non-virtual"><scope>tvm::BaseAttrsNode</scope><name>_type_has_method_shash_reduce</name></member>
+      <member refid="classtvm_1_1BaseAttrsNode_1a8e4fd4e728774e0556cda84b0c2b80d6" prot="public" virt="non-virtual"><scope>tvm::BaseAttrsNode</scope><name>_type_key</name></member>
+      <member refid="classtvm_1_1BaseAttrsNode_1a39c5a3e9c732b7d1132192af4c6297cc" prot="public" virt="pure-virtual"><scope>tvm::BaseAttrsNode</scope><name>ContentEqual</name></member>
+      <member refid="classtvm_1_1BaseAttrsNode_1a3a25e3f163d3a4a1d50d33a160697d0c" prot="public" virt="pure-virtual"><scope>tvm::BaseAttrsNode</scope><name>ContentHash</name></member>
+      <member refid="classtvm_1_1BaseAttrsNode_1a375ef57a9dcf85e7961f91699927e50b" prot="public" virt="pure-virtual"><scope>tvm::BaseAttrsNode</scope><name>InitByPackedArgs</name></member>
+      <member refid="classtvm_1_1BaseAttrsNode_1aef9e5266d16e163ccc7b1b16c1ea3269" prot="public" virt="non-virtual"><scope>tvm::BaseAttrsNode</scope><name>InitBySeq</name></member>
+      <member refid="classtvm_1_1BaseAttrsNode_1a6db664b2fcfb42f967652b596f0cab99" prot="public" virt="pure-virtual"><scope>tvm::BaseAttrsNode</scope><name>ListFieldInfo</name></member>
+      <member refid="classtvm_1_1BaseAttrsNode_1a118837841487c80b157dbead88f18513" prot="public" virt="non-virtual"><scope>tvm::BaseAttrsNode</scope><name>PrintDocString</name></member>
+      <member refid="classtvm_1_1BaseAttrsNode_1aaca524319f015a18a1385cfea5ba8895" prot="public" virt="non-virtual"><scope>tvm::BaseAttrsNode</scope><name>TVM_DECLARE_BASE_OBJECT_INFO</name></member>
+      <member refid="classtvm_1_1BaseAttrsNode_1a257561dad74174cbdc08f6725a45d8ac" prot="public" virt="non-virtual"><scope>tvm::BaseAttrsNode</scope><name>TVMArgs</name></member>
+      <member refid="classtvm_1_1BaseAttrsNode_1a1f56f080d0c1fab79d9469029aef8ebb" prot="public" virt="non-virtual"><scope>tvm::BaseAttrsNode</scope><name>TVMRetValue</name></member>
+      <member refid="classtvm_1_1BaseAttrsNode_1af145cd54a0d92705871500a675e43abe" prot="public" virt="virtual"><scope>tvm::BaseAttrsNode</scope><name>VisitAttrs</name></member>
+      <member refid="classtvm_1_1BaseAttrsNode_1acc8ff84447e3830050d96e2da4188195" prot="public" virt="pure-virtual"><scope>tvm::BaseAttrsNode</scope><name>VisitNonDefaultAttrs</name></member>
+      <member refid="classtvm_1_1BaseAttrsNode_1a225581a40231b2de219da30fced428a2" prot="public" virt="virtual"><scope>tvm::BaseAttrsNode</scope><name>~BaseAttrsNode</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

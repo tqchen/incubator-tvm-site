@@ -1,0 +1,82 @@
+\hypertarget{generic__func_8h}{}\section{include/tvm/target/generic\+\_\+func.h File Reference}
+\label{generic__func_8h}\index{include/tvm/target/generic\+\_\+func.\+h@{include/tvm/target/generic\+\_\+func.\+h}}
+
+
+Generic function that can be specialzied on a per target basis.  
+
+
+{\ttfamily \#include $<$tvm/support/with.\+h$>$}\\*
+{\ttfamily \#include $<$tvm/runtime/packed\+\_\+func.\+h$>$}\\*
+{\ttfamily \#include $<$tvm/target/target.\+h$>$}\\*
+{\ttfamily \#include $<$vector$>$}\\*
+{\ttfamily \#include $<$string$>$}\\*
+{\ttfamily \#include $<$utility$>$}\\*
+{\ttfamily \#include $<$unordered\+\_\+map$>$}\\*
+Include dependency graph for generic\+\_\+func.\+h\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{generic__func_8h__incl}
+\end{center}
+\end{figure}
+This graph shows which files directly or indirectly include this file\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{generic__func_8h__dep__incl}
+\end{center}
+\end{figure}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \hyperlink{classtvm_1_1GenericFunc}{tvm\+::\+Generic\+Func}
+\begin{DoxyCompactList}\small\item\em Generic function that can be specialized on a per-\/target basis. \end{DoxyCompactList}\item 
+class \hyperlink{classtvm_1_1GenericFuncNode}{tvm\+::\+Generic\+Func\+Node}
+\begin{DoxyCompactList}\small\item\em Represents a generic function that can be specialized on a per-\/target basis. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Namespaces}
+\begin{DoxyCompactItemize}
+\item 
+ \hyperlink{namespacetvm}{tvm}
+\end{DoxyCompactItemize}
+\subsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \hyperlink{generic__func_8h_a10648c82893ca73b419af99573860159}{T\+V\+M\+\_\+\+G\+E\+N\+E\+R\+I\+C\+\_\+\+F\+U\+N\+C\+\_\+\+R\+E\+G\+\_\+\+V\+A\+R\+\_\+\+D\+EF}~static \hyperlink{object_8h_a744c2fdb7ff7dc43070c1841a5873c84}{T\+V\+M\+\_\+\+A\+T\+T\+R\+I\+B\+U\+T\+E\+\_\+\+U\+N\+U\+S\+ED} \+::\hyperlink{classtvm_1_1GenericFunc}{tvm\+::\+Generic\+Func}\& \+\_\+\+\_\+mk\+\_\+ \#\# T\+VM
+\item 
+\#define \hyperlink{generic__func_8h_acab90de01c5afdb5bf990640a676232b}{T\+V\+M\+\_\+\+R\+E\+G\+I\+S\+T\+E\+R\+\_\+\+G\+E\+N\+E\+R\+I\+C\+\_\+\+F\+U\+NC}(name)
+\begin{DoxyCompactList}\small\item\em Register a new generic function, or set a device-\/specific variant of the corresponding function. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Generic function that can be specialzied on a per target basis. 
+
+
+
+\subsection{Macro Definition Documentation}
+\index{generic\+\_\+func.\+h@{generic\+\_\+func.\+h}!T\+V\+M\+\_\+\+G\+E\+N\+E\+R\+I\+C\+\_\+\+F\+U\+N\+C\+\_\+\+R\+E\+G\+\_\+\+V\+A\+R\+\_\+\+D\+EF@{T\+V\+M\+\_\+\+G\+E\+N\+E\+R\+I\+C\+\_\+\+F\+U\+N\+C\+\_\+\+R\+E\+G\+\_\+\+V\+A\+R\+\_\+\+D\+EF}}
+\index{T\+V\+M\+\_\+\+G\+E\+N\+E\+R\+I\+C\+\_\+\+F\+U\+N\+C\+\_\+\+R\+E\+G\+\_\+\+V\+A\+R\+\_\+\+D\+EF@{T\+V\+M\+\_\+\+G\+E\+N\+E\+R\+I\+C\+\_\+\+F\+U\+N\+C\+\_\+\+R\+E\+G\+\_\+\+V\+A\+R\+\_\+\+D\+EF}!generic\+\_\+func.\+h@{generic\+\_\+func.\+h}}
+\subsubsection[{\texorpdfstring{T\+V\+M\+\_\+\+G\+E\+N\+E\+R\+I\+C\+\_\+\+F\+U\+N\+C\+\_\+\+R\+E\+G\+\_\+\+V\+A\+R\+\_\+\+D\+EF}{TVM_GENERIC_FUNC_REG_VAR_DEF}}]{\setlength{\rightskip}{0pt plus 5cm}\#define T\+V\+M\+\_\+\+G\+E\+N\+E\+R\+I\+C\+\_\+\+F\+U\+N\+C\+\_\+\+R\+E\+G\+\_\+\+V\+A\+R\+\_\+\+D\+EF~static {\bf T\+V\+M\+\_\+\+A\+T\+T\+R\+I\+B\+U\+T\+E\+\_\+\+U\+N\+U\+S\+ED} \+::{\bf tvm\+::\+Generic\+Func}\& \+\_\+\+\_\+mk\+\_\+ \#\# T\+VM}\hypertarget{generic__func_8h_a10648c82893ca73b419af99573860159}{}\label{generic__func_8h_a10648c82893ca73b419af99573860159}
+\index{generic\+\_\+func.\+h@{generic\+\_\+func.\+h}!T\+V\+M\+\_\+\+R\+E\+G\+I\+S\+T\+E\+R\+\_\+\+G\+E\+N\+E\+R\+I\+C\+\_\+\+F\+U\+NC@{T\+V\+M\+\_\+\+R\+E\+G\+I\+S\+T\+E\+R\+\_\+\+G\+E\+N\+E\+R\+I\+C\+\_\+\+F\+U\+NC}}
+\index{T\+V\+M\+\_\+\+R\+E\+G\+I\+S\+T\+E\+R\+\_\+\+G\+E\+N\+E\+R\+I\+C\+\_\+\+F\+U\+NC@{T\+V\+M\+\_\+\+R\+E\+G\+I\+S\+T\+E\+R\+\_\+\+G\+E\+N\+E\+R\+I\+C\+\_\+\+F\+U\+NC}!generic\+\_\+func.\+h@{generic\+\_\+func.\+h}}
+\subsubsection[{\texorpdfstring{T\+V\+M\+\_\+\+R\+E\+G\+I\+S\+T\+E\+R\+\_\+\+G\+E\+N\+E\+R\+I\+C\+\_\+\+F\+U\+NC}{TVM_REGISTER_GENERIC_FUNC}}]{\setlength{\rightskip}{0pt plus 5cm}\#define T\+V\+M\+\_\+\+R\+E\+G\+I\+S\+T\+E\+R\+\_\+\+G\+E\+N\+E\+R\+I\+C\+\_\+\+F\+U\+NC(
+\begin{DoxyParamCaption}
+\item[{}]{name}
+\end{DoxyParamCaption}
+)}\hypertarget{generic__func_8h_acab90de01c5afdb5bf990640a676232b}{}\label{generic__func_8h_acab90de01c5afdb5bf990640a676232b}
+{\bfseries Value\+:}
+\begin{DoxyCode}
+\hyperlink{object_8h_a73bf3e57b9d7a6e0dd55d901321d01ed}{TVM\_STR\_CONCAT}(\hyperlink{generic__func_8h_a10648c82893ca73b419af99573860159}{TVM\_GENERIC\_FUNC\_REG\_VAR\_DEF}, \_\_COUNTER\_\_) =     
+      \hyperlink{classtvm_1_1GenericFunc_a74a6f06af50db51c3ff42fd493c44826}{\(\backslash\)}
+\hyperlink{classtvm_1_1GenericFunc_a74a6f06af50db51c3ff42fd493c44826}{      ::tvm::GenericFunc::Get}(#name)
+\end{DoxyCode}
+
+
+Register a new generic function, or set a device-\/specific variant of the corresponding function. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em name} & The name of the function \\
+\hline
+\end{DoxyParams}

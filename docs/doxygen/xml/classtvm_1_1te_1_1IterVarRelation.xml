@@ -1,0 +1,86 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="classtvm_1_1te_1_1IterVarRelation" kind="class" language="C++" prot="public">
+    <compoundname>tvm::te::IterVarRelation</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">ObjectRef</basecompoundref>
+    <includes refid="schedule_8h" local="no">schedule.h</includes>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classtvm_1_1te_1_1IterVarRelation_1a4b50caede957f1cb50587ce15a87109f" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>tvm::te::IterVarRelation::IterVarRelation</definition>
+        <argsstring>()</argsstring>
+        <name>IterVarRelation</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/te/schedule.h" line="406" column="1" bodyfile="include/tvm/te/schedule.h" bodystart="406" bodyend="406"/>
+      </memberdef>
+      <memberdef kind="function" id="classtvm_1_1te_1_1IterVarRelation_1a3e611ee0870d9a542b8deb79575dbf66" prot="public" static="no" const="no" explicit="yes" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>tvm::te::IterVarRelation::IterVarRelation</definition>
+        <argsstring>(ObjectPtr&lt; Object &gt; n)</argsstring>
+        <name>IterVarRelation</name>
+        <param>
+          <type>ObjectPtr&lt; Object &gt;</type>
+          <declname>n</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/te/schedule.h" line="407" column="1" bodyfile="include/tvm/te/schedule.h" bodystart="407" bodyend="407"/>
+      </memberdef>
+      <memberdef kind="function" id="classtvm_1_1te_1_1IterVarRelation_1a3fb20ebd4911573771b51840704058cd" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>const <ref refid="classtvm_1_1te_1_1IterVarRelationNode" kindref="compound">IterVarRelationNode</ref> *</type>
+        <definition>const IterVarRelationNode * tvm::te::IterVarRelation::operator-&gt;</definition>
+        <argsstring>() const </argsstring>
+        <name>operator-&gt;</name>
+        <briefdescription>
+<para>access the internal node container </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>the pointer to the internal node container </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/te/schedule.h" line="412" column="1" bodyfile="include/tvm/te/schedule.h" bodystart="809" bodyend="811"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>The schedule relation between IterVars can be Split, Fuse. </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="5474">
+        <label>ObjectRef</label>
+      </node>
+      <node id="5473">
+        <label>tvm::te::IterVarRelation</label>
+        <link refid="classtvm_1_1te_1_1IterVarRelation"/>
+        <childnode refid="5474" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="5476">
+        <label>ObjectRef</label>
+      </node>
+      <node id="5475">
+        <label>tvm::te::IterVarRelation</label>
+        <link refid="classtvm_1_1te_1_1IterVarRelation"/>
+        <childnode refid="5476" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="include/tvm/te/schedule.h" line="404" column="1" bodyfile="include/tvm/te/schedule.h" bodystart="404" bodyend="413"/>
+    <listofallmembers>
+      <member refid="classtvm_1_1te_1_1IterVarRelation_1a4b50caede957f1cb50587ce15a87109f" prot="public" virt="non-virtual"><scope>tvm::te::IterVarRelation</scope><name>IterVarRelation</name></member>
+      <member refid="classtvm_1_1te_1_1IterVarRelation_1a3e611ee0870d9a542b8deb79575dbf66" prot="public" virt="non-virtual"><scope>tvm::te::IterVarRelation</scope><name>IterVarRelation</name></member>
+      <member refid="classtvm_1_1te_1_1IterVarRelation_1a3fb20ebd4911573771b51840704058cd" prot="public" virt="non-virtual"><scope>tvm::te::IterVarRelation</scope><name>operator-&gt;</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

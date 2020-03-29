@@ -1,0 +1,449 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="classtvm_1_1PrimExprNode" kind="class" language="C++" prot="public">
+    <compoundname>tvm::PrimExprNode</compoundname>
+    <basecompoundref refid="classtvm_1_1BaseExprNode" prot="public" virt="non-virtual">tvm::BaseExprNode</basecompoundref>
+    <derivedcompoundref refid="classtvm_1_1tir_1_1BinaryOpNode" prot="public" virt="non-virtual">tvm::tir::BinaryOpNode&lt; AddNode &gt;</derivedcompoundref>
+    <derivedcompoundref refid="classtvm_1_1tir_1_1BinaryOpNode" prot="public" virt="non-virtual">tvm::tir::BinaryOpNode&lt; DivNode &gt;</derivedcompoundref>
+    <derivedcompoundref refid="classtvm_1_1tir_1_1BinaryOpNode" prot="public" virt="non-virtual">tvm::tir::BinaryOpNode&lt; FloorDivNode &gt;</derivedcompoundref>
+    <derivedcompoundref refid="classtvm_1_1tir_1_1BinaryOpNode" prot="public" virt="non-virtual">tvm::tir::BinaryOpNode&lt; FloorModNode &gt;</derivedcompoundref>
+    <derivedcompoundref refid="classtvm_1_1tir_1_1BinaryOpNode" prot="public" virt="non-virtual">tvm::tir::BinaryOpNode&lt; MaxNode &gt;</derivedcompoundref>
+    <derivedcompoundref refid="classtvm_1_1tir_1_1BinaryOpNode" prot="public" virt="non-virtual">tvm::tir::BinaryOpNode&lt; MinNode &gt;</derivedcompoundref>
+    <derivedcompoundref refid="classtvm_1_1tir_1_1BinaryOpNode" prot="public" virt="non-virtual">tvm::tir::BinaryOpNode&lt; ModNode &gt;</derivedcompoundref>
+    <derivedcompoundref refid="classtvm_1_1tir_1_1BinaryOpNode" prot="public" virt="non-virtual">tvm::tir::BinaryOpNode&lt; MulNode &gt;</derivedcompoundref>
+    <derivedcompoundref refid="classtvm_1_1tir_1_1BinaryOpNode" prot="public" virt="non-virtual">tvm::tir::BinaryOpNode&lt; SubNode &gt;</derivedcompoundref>
+    <derivedcompoundref refid="classtvm_1_1tir_1_1CmpOpNode" prot="public" virt="non-virtual">tvm::tir::CmpOpNode&lt; EQNode &gt;</derivedcompoundref>
+    <derivedcompoundref refid="classtvm_1_1tir_1_1CmpOpNode" prot="public" virt="non-virtual">tvm::tir::CmpOpNode&lt; GENode &gt;</derivedcompoundref>
+    <derivedcompoundref refid="classtvm_1_1tir_1_1CmpOpNode" prot="public" virt="non-virtual">tvm::tir::CmpOpNode&lt; GTNode &gt;</derivedcompoundref>
+    <derivedcompoundref refid="classtvm_1_1tir_1_1CmpOpNode" prot="public" virt="non-virtual">tvm::tir::CmpOpNode&lt; LENode &gt;</derivedcompoundref>
+    <derivedcompoundref refid="classtvm_1_1tir_1_1CmpOpNode" prot="public" virt="non-virtual">tvm::tir::CmpOpNode&lt; LTNode &gt;</derivedcompoundref>
+    <derivedcompoundref refid="classtvm_1_1tir_1_1CmpOpNode" prot="public" virt="non-virtual">tvm::tir::CmpOpNode&lt; NENode &gt;</derivedcompoundref>
+    <derivedcompoundref refid="classtvm_1_1FloatImmNode" prot="public" virt="non-virtual">tvm::FloatImmNode</derivedcompoundref>
+    <derivedcompoundref refid="classtvm_1_1IntImmNode" prot="public" virt="non-virtual">tvm::IntImmNode</derivedcompoundref>
+    <derivedcompoundref refid="classtvm_1_1tir_1_1AndNode" prot="public" virt="non-virtual">tvm::tir::AndNode</derivedcompoundref>
+    <derivedcompoundref refid="classtvm_1_1tir_1_1AnyNode" prot="public" virt="non-virtual">tvm::tir::AnyNode</derivedcompoundref>
+    <derivedcompoundref refid="classtvm_1_1tir_1_1BinaryOpNode" prot="public" virt="non-virtual">tvm::tir::BinaryOpNode&lt; T &gt;</derivedcompoundref>
+    <derivedcompoundref refid="classtvm_1_1tir_1_1BroadcastNode" prot="public" virt="non-virtual">tvm::tir::BroadcastNode</derivedcompoundref>
+    <derivedcompoundref refid="classtvm_1_1tir_1_1CallNode" prot="public" virt="non-virtual">tvm::tir::CallNode</derivedcompoundref>
+    <derivedcompoundref refid="classtvm_1_1tir_1_1CastNode" prot="public" virt="non-virtual">tvm::tir::CastNode</derivedcompoundref>
+    <derivedcompoundref refid="classtvm_1_1tir_1_1CmpOpNode" prot="public" virt="non-virtual">tvm::tir::CmpOpNode&lt; T &gt;</derivedcompoundref>
+    <derivedcompoundref refid="classtvm_1_1tir_1_1LetNode" prot="public" virt="non-virtual">tvm::tir::LetNode</derivedcompoundref>
+    <derivedcompoundref refid="classtvm_1_1tir_1_1LoadNode" prot="public" virt="non-virtual">tvm::tir::LoadNode</derivedcompoundref>
+    <derivedcompoundref refid="classtvm_1_1tir_1_1NotNode" prot="public" virt="non-virtual">tvm::tir::NotNode</derivedcompoundref>
+    <derivedcompoundref refid="classtvm_1_1tir_1_1OrNode" prot="public" virt="non-virtual">tvm::tir::OrNode</derivedcompoundref>
+    <derivedcompoundref refid="classtvm_1_1tir_1_1RampNode" prot="public" virt="non-virtual">tvm::tir::RampNode</derivedcompoundref>
+    <derivedcompoundref refid="classtvm_1_1tir_1_1ReduceNode" prot="public" virt="non-virtual">tvm::tir::ReduceNode</derivedcompoundref>
+    <derivedcompoundref refid="classtvm_1_1tir_1_1SelectNode" prot="public" virt="non-virtual">tvm::tir::SelectNode</derivedcompoundref>
+    <derivedcompoundref refid="classtvm_1_1tir_1_1ShuffleNode" prot="public" virt="non-virtual">tvm::tir::ShuffleNode</derivedcompoundref>
+    <derivedcompoundref refid="classtvm_1_1tir_1_1StringImmNode" prot="public" virt="non-virtual">tvm::tir::StringImmNode</derivedcompoundref>
+    <derivedcompoundref refid="classtvm_1_1tir_1_1VarNode" prot="public" virt="non-virtual">tvm::tir::VarNode</derivedcompoundref>
+    <includes refid="ir_2expr_8h" local="no">expr.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="classtvm_1_1PrimExprNode_1a95af9234514ec5f11355db41524be7f9" prot="public" static="no" mutable="no">
+        <type><ref refid="namespacetvm_1a41918af1a1dc386388639a9d3ad06c5d" kindref="member">DataType</ref></type>
+        <definition>DataType tvm::PrimExprNode::dtype</definition>
+        <argsstring></argsstring>
+        <name>dtype</name>
+        <briefdescription>
+<para>The runtime data type of the primitive expression. </para>        </briefdescription>
+        <detaileddescription>
+<para>runtime::DataType(dtype) provides coarse grained type information during compile time and runtime. It is eagerly built in <ref refid="classtvm_1_1PrimExpr" kindref="compound">PrimExpr</ref> expression construction and can be used for quick type checking.</para><para>dtype is sufficient to decide the <ref refid="classtvm_1_1Type" kindref="compound">Type</ref> of the <ref refid="classtvm_1_1PrimExpr" kindref="compound">PrimExpr</ref> when it corresponds to POD value types such as i32.</para><para>When dtype is <ref refid="classtvm_1_1runtime_1_1DataType_1aebad9f7235dd20af649fb5c2113797b8" kindref="member">DataType::Handle()</ref>, the expression could corresponds to a more fine-grained <ref refid="classtvm_1_1Type" kindref="compound">Type</ref>, and we can get the type by running lazy type inference. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/ir/expr.h" line="88" column="1" bodyfile="include/tvm/ir/expr.h" bodystart="88" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-attrib">
+      <memberdef kind="variable" id="classtvm_1_1PrimExprNode_1a9dc9d675de8446078c93ed9cb50bae6e" prot="public" static="yes" mutable="no">
+        <type>constexpr const char *</type>
+        <definition>constexpr const char* tvm::PrimExprNode::_type_key</definition>
+        <argsstring></argsstring>
+        <name>_type_key</name>
+        <initializer>= &quot;PrimExpr&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/ir/expr.h" line="90" column="1" bodyfile="include/tvm/ir/expr.h" bodystart="90" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classtvm_1_1PrimExprNode_1afcf4654378d65e0200b33e43194d0490" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>tvm::PrimExprNode::TVM_DECLARE_BASE_OBJECT_INFO</definition>
+        <argsstring>(PrimExprNode, BaseExprNode)</argsstring>
+        <name>TVM_DECLARE_BASE_OBJECT_INFO</name>
+        <param>
+          <type><ref refid="classtvm_1_1PrimExprNode" kindref="compound">PrimExprNode</ref></type>
+        </param>
+        <param>
+          <type><ref refid="classtvm_1_1BaseExprNode" kindref="compound">BaseExprNode</ref></type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/ir/expr.h" line="91" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Base node of all primitive expressions. </para>    </briefdescription>
+    <detaileddescription>
+<para>A primitive expression deals with low-level POD data types and handles without doing life-cycle management for objects.</para><para><ref refid="classtvm_1_1PrimExpr" kindref="compound">PrimExpr</ref> is used in the low-level code optimizations and integer analysis.</para><para><simplesect kind="see"><para><ref refid="classtvm_1_1PrimExpr" kindref="compound">PrimExpr</ref> </para></simplesect>
+</para>    </detaileddescription>
+    <inheritancegraph>
+      <node id="6257">
+        <label>tvm::tir::BinaryOpNode&lt; T &gt;</label>
+        <link refid="classtvm_1_1tir_1_1BinaryOpNode"/>
+        <childnode refid="6220" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="6271">
+        <label>tvm::tir::VarNode</label>
+        <link refid="classtvm_1_1tir_1_1VarNode"/>
+        <childnode refid="6220" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="6230">
+        <label>tvm::tir::FloorModNode</label>
+        <link refid="classtvm_1_1tir_1_1FloorModNode"/>
+        <childnode refid="6229" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="6266">
+        <label>tvm::tir::RampNode</label>
+        <link refid="classtvm_1_1tir_1_1RampNode"/>
+        <childnode refid="6220" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="6256">
+        <label>tvm::tir::AnyNode</label>
+        <link refid="classtvm_1_1tir_1_1AnyNode"/>
+        <childnode refid="6220" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="6265">
+        <label>tvm::tir::OrNode</label>
+        <link refid="classtvm_1_1tir_1_1OrNode"/>
+        <childnode refid="6220" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="6232">
+        <label>tvm::tir::MaxNode</label>
+        <link refid="classtvm_1_1tir_1_1MaxNode"/>
+        <childnode refid="6231" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="6224">
+        <label>tvm::tir::AddNode</label>
+        <link refid="classtvm_1_1tir_1_1AddNode"/>
+        <childnode refid="6223" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="6270">
+        <label>tvm::tir::StringImmNode</label>
+        <link refid="classtvm_1_1tir_1_1StringImmNode"/>
+        <childnode refid="6220" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="6234">
+        <label>tvm::tir::MinNode</label>
+        <link refid="classtvm_1_1tir_1_1MinNode"/>
+        <childnode refid="6233" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="6229">
+        <label>tvm::tir::BinaryOpNode&lt; FloorModNode &gt;</label>
+        <link refid="classtvm_1_1tir_1_1BinaryOpNode"/>
+        <childnode refid="6220" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="6267">
+        <label>tvm::tir::ReduceNode</label>
+        <link refid="classtvm_1_1tir_1_1ReduceNode"/>
+        <childnode refid="6220" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="6235">
+        <label>tvm::tir::BinaryOpNode&lt; ModNode &gt;</label>
+        <link refid="classtvm_1_1tir_1_1BinaryOpNode"/>
+        <childnode refid="6220" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="6272">
+        <label>tvm::tir::SizeVarNode</label>
+        <link refid="classtvm_1_1tir_1_1SizeVarNode"/>
+        <childnode refid="6271" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="6244">
+        <label>tvm::tir::GENode</label>
+        <link refid="classtvm_1_1tir_1_1GENode"/>
+        <childnode refid="6243" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="6243">
+        <label>tvm::tir::CmpOpNode&lt; GENode &gt;</label>
+        <link refid="classtvm_1_1tir_1_1CmpOpNode"/>
+        <childnode refid="6220" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="6252">
+        <label>tvm::tir::NENode</label>
+        <link refid="classtvm_1_1tir_1_1NENode"/>
+        <childnode refid="6251" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="6223">
+        <label>tvm::tir::BinaryOpNode&lt; AddNode &gt;</label>
+        <link refid="classtvm_1_1tir_1_1BinaryOpNode"/>
+        <childnode refid="6220" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="6242">
+        <label>tvm::tir::EQNode</label>
+        <link refid="classtvm_1_1tir_1_1EQNode"/>
+        <childnode refid="6241" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="6261">
+        <label>tvm::tir::CmpOpNode&lt; T &gt;</label>
+        <link refid="classtvm_1_1tir_1_1CmpOpNode"/>
+        <childnode refid="6220" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="6231">
+        <label>tvm::tir::BinaryOpNode&lt; MaxNode &gt;</label>
+        <link refid="classtvm_1_1tir_1_1BinaryOpNode"/>
+        <childnode refid="6220" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="6249">
+        <label>tvm::tir::CmpOpNode&lt; LTNode &gt;</label>
+        <link refid="classtvm_1_1tir_1_1CmpOpNode"/>
+        <childnode refid="6220" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="6221">
+        <label>tvm::BaseExprNode</label>
+        <link refid="classtvm_1_1BaseExprNode"/>
+        <childnode refid="6222" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="6268">
+        <label>tvm::tir::SelectNode</label>
+        <link refid="classtvm_1_1tir_1_1SelectNode"/>
+        <childnode refid="6220" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="6259">
+        <label>tvm::tir::CallNode</label>
+        <link refid="classtvm_1_1tir_1_1CallNode"/>
+        <childnode refid="6220" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="6254">
+        <label>tvm::IntImmNode</label>
+        <link refid="classtvm_1_1IntImmNode"/>
+        <childnode refid="6220" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="6253">
+        <label>tvm::FloatImmNode</label>
+        <link refid="classtvm_1_1FloatImmNode"/>
+        <childnode refid="6220" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="6241">
+        <label>tvm::tir::CmpOpNode&lt; EQNode &gt;</label>
+        <link refid="classtvm_1_1tir_1_1CmpOpNode"/>
+        <childnode refid="6220" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="6222">
+        <label>Object</label>
+      </node>
+      <node id="6260">
+        <label>tvm::tir::CastNode</label>
+        <link refid="classtvm_1_1tir_1_1CastNode"/>
+        <childnode refid="6220" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="6228">
+        <label>tvm::tir::FloorDivNode</label>
+        <link refid="classtvm_1_1tir_1_1FloorDivNode"/>
+        <childnode refid="6227" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="6239">
+        <label>tvm::tir::BinaryOpNode&lt; SubNode &gt;</label>
+        <link refid="classtvm_1_1tir_1_1BinaryOpNode"/>
+        <childnode refid="6220" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="6269">
+        <label>tvm::tir::ShuffleNode</label>
+        <link refid="classtvm_1_1tir_1_1ShuffleNode"/>
+        <childnode refid="6220" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="6238">
+        <label>tvm::tir::MulNode</label>
+        <link refid="classtvm_1_1tir_1_1MulNode"/>
+        <childnode refid="6237" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="6227">
+        <label>tvm::tir::BinaryOpNode&lt; FloorDivNode &gt;</label>
+        <link refid="classtvm_1_1tir_1_1BinaryOpNode"/>
+        <childnode refid="6220" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="6250">
+        <label>tvm::tir::LTNode</label>
+        <link refid="classtvm_1_1tir_1_1LTNode"/>
+        <childnode refid="6249" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="6245">
+        <label>tvm::tir::CmpOpNode&lt; GTNode &gt;</label>
+        <link refid="classtvm_1_1tir_1_1CmpOpNode"/>
+        <childnode refid="6220" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="6240">
+        <label>tvm::tir::SubNode</label>
+        <link refid="classtvm_1_1tir_1_1SubNode"/>
+        <childnode refid="6239" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="6263">
+        <label>tvm::tir::LoadNode</label>
+        <link refid="classtvm_1_1tir_1_1LoadNode"/>
+        <childnode refid="6220" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="6248">
+        <label>tvm::tir::LENode</label>
+        <link refid="structtvm_1_1tir_1_1LENode"/>
+        <childnode refid="6247" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="6226">
+        <label>tvm::tir::DivNode</label>
+        <link refid="classtvm_1_1tir_1_1DivNode"/>
+        <childnode refid="6225" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="6251">
+        <label>tvm::tir::CmpOpNode&lt; NENode &gt;</label>
+        <link refid="classtvm_1_1tir_1_1CmpOpNode"/>
+        <childnode refid="6220" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="6258">
+        <label>tvm::tir::BroadcastNode</label>
+        <link refid="classtvm_1_1tir_1_1BroadcastNode"/>
+        <childnode refid="6220" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="6237">
+        <label>tvm::tir::BinaryOpNode&lt; MulNode &gt;</label>
+        <link refid="classtvm_1_1tir_1_1BinaryOpNode"/>
+        <childnode refid="6220" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="6247">
+        <label>tvm::tir::CmpOpNode&lt; LENode &gt;</label>
+        <link refid="classtvm_1_1tir_1_1CmpOpNode"/>
+        <childnode refid="6220" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="6233">
+        <label>tvm::tir::BinaryOpNode&lt; MinNode &gt;</label>
+        <link refid="classtvm_1_1tir_1_1BinaryOpNode"/>
+        <childnode refid="6220" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="6246">
+        <label>tvm::tir::GTNode</label>
+        <link refid="classtvm_1_1tir_1_1GTNode"/>
+        <childnode refid="6245" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="6262">
+        <label>tvm::tir::LetNode</label>
+        <link refid="classtvm_1_1tir_1_1LetNode"/>
+        <childnode refid="6220" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="6220">
+        <label>tvm::PrimExprNode</label>
+        <link refid="classtvm_1_1PrimExprNode"/>
+        <childnode refid="6221" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="6236">
+        <label>tvm::tir::ModNode</label>
+        <link refid="classtvm_1_1tir_1_1ModNode"/>
+        <childnode refid="6235" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="6225">
+        <label>tvm::tir::BinaryOpNode&lt; DivNode &gt;</label>
+        <link refid="classtvm_1_1tir_1_1BinaryOpNode"/>
+        <childnode refid="6220" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="6255">
+        <label>tvm::tir::AndNode</label>
+        <link refid="classtvm_1_1tir_1_1AndNode"/>
+        <childnode refid="6220" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="6264">
+        <label>tvm::tir::NotNode</label>
+        <link refid="classtvm_1_1tir_1_1NotNode"/>
+        <childnode refid="6220" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="6274">
+        <label>tvm::BaseExprNode</label>
+        <link refid="classtvm_1_1BaseExprNode"/>
+        <childnode refid="6275" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="6275">
+        <label>Object</label>
+      </node>
+      <node id="6276">
+        <label>tvm::runtime::DataType</label>
+        <link refid="classtvm_1_1runtime_1_1DataType"/>
+      </node>
+      <node id="6273">
+        <label>tvm::PrimExprNode</label>
+        <link refid="classtvm_1_1PrimExprNode"/>
+        <childnode refid="6274" relation="public-inheritance">
+        </childnode>
+        <childnode refid="6276" relation="usage">
+          <edgelabel>+dtype</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="include/tvm/ir/expr.h" line="72" column="1" bodyfile="include/tvm/ir/expr.h" bodystart="72" bodyend="92"/>
+    <listofallmembers>
+      <member refid="classtvm_1_1BaseExprNode_1a905dcf65204e877b6ccb977cf375f2a0" prot="public" virt="non-virtual"><scope>tvm::PrimExprNode</scope><name>_type_has_method_sequal_reduce</name></member>
+      <member refid="classtvm_1_1BaseExprNode_1a13d7d1f1e6f790951caf200cd59c3620" prot="public" virt="non-virtual"><scope>tvm::PrimExprNode</scope><name>_type_has_method_shash_reduce</name></member>
+      <member refid="classtvm_1_1PrimExprNode_1a9dc9d675de8446078c93ed9cb50bae6e" prot="public" virt="non-virtual"><scope>tvm::PrimExprNode</scope><name>_type_key</name></member>
+      <member refid="classtvm_1_1PrimExprNode_1a95af9234514ec5f11355db41524be7f9" prot="public" virt="non-virtual"><scope>tvm::PrimExprNode</scope><name>dtype</name></member>
+      <member refid="classtvm_1_1PrimExprNode_1afcf4654378d65e0200b33e43194d0490" prot="public" virt="non-virtual"><scope>tvm::PrimExprNode</scope><name>TVM_DECLARE_BASE_OBJECT_INFO</name></member>
+      <member refid="classtvm_1_1BaseExprNode_1a831794c879d47c30cdd9cefd4f05d533" prot="public" virt="non-virtual" ambiguityscope="tvm::BaseExprNode::"><scope>tvm::PrimExprNode</scope><name>TVM_DECLARE_BASE_OBJECT_INFO</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,346 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="classtvm_1_1arith_1_1Analyzer" kind="class" language="C++" prot="public">
+    <compoundname>tvm::arith::Analyzer</compoundname>
+    <includes refid="analyzer_8h" local="no">analyzer.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="classtvm_1_1arith_1_1Analyzer_1a435eba3ac3a839d3c53b74acfdc10146" prot="public" static="no" mutable="no">
+        <type><ref refid="classtvm_1_1arith_1_1ConstIntBoundAnalyzer" kindref="compound">ConstIntBoundAnalyzer</ref></type>
+        <definition>ConstIntBoundAnalyzer tvm::arith::Analyzer::const_int_bound</definition>
+        <argsstring></argsstring>
+        <name>const_int_bound</name>
+        <briefdescription>
+<para>sub-analyzer: const integer bound </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/arith/analyzer.h" line="386" column="1" bodyfile="include/tvm/arith/analyzer.h" bodystart="386" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classtvm_1_1arith_1_1Analyzer_1acac92a9522deabe289fea99efbd9eaec" prot="public" static="no" mutable="no">
+        <type><ref refid="classtvm_1_1arith_1_1ModularSetAnalyzer" kindref="compound">ModularSetAnalyzer</ref></type>
+        <definition>ModularSetAnalyzer tvm::arith::Analyzer::modular_set</definition>
+        <argsstring></argsstring>
+        <name>modular_set</name>
+        <briefdescription>
+<para>sub-analyzer: modular set </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/arith/analyzer.h" line="388" column="1" bodyfile="include/tvm/arith/analyzer.h" bodystart="388" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classtvm_1_1arith_1_1Analyzer_1acc86c6e8c04cb0de4ff9d78e769924b2" prot="public" static="no" mutable="no">
+        <type><ref refid="classtvm_1_1arith_1_1RewriteSimplifier" kindref="compound">RewriteSimplifier</ref></type>
+        <definition>RewriteSimplifier tvm::arith::Analyzer::rewrite_simplify</definition>
+        <argsstring></argsstring>
+        <name>rewrite_simplify</name>
+        <briefdescription>
+<para>sub-analyzer rewrite simplify </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/arith/analyzer.h" line="390" column="1" bodyfile="include/tvm/arith/analyzer.h" bodystart="390" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classtvm_1_1arith_1_1Analyzer_1a6cdf29adeceaa20b8c3dd7c26b92cd00" prot="public" static="no" mutable="no">
+        <type><ref refid="classtvm_1_1arith_1_1CanonicalSimplifier" kindref="compound">CanonicalSimplifier</ref></type>
+        <definition>CanonicalSimplifier tvm::arith::Analyzer::canonical_simplify</definition>
+        <argsstring></argsstring>
+        <name>canonical_simplify</name>
+        <briefdescription>
+<para>sub-analyzer canonical simplify </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/arith/analyzer.h" line="392" column="1" bodyfile="include/tvm/arith/analyzer.h" bodystart="392" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classtvm_1_1arith_1_1Analyzer_1a0d054ea2ea5b7e99f0883c00672ec831" prot="public" static="no" mutable="no">
+        <type><ref refid="classtvm_1_1arith_1_1IntSetAnalyzer" kindref="compound">IntSetAnalyzer</ref></type>
+        <definition>IntSetAnalyzer tvm::arith::Analyzer::int_set</definition>
+        <argsstring></argsstring>
+        <name>int_set</name>
+        <briefdescription>
+<para>sub-analyzer: int set </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/arith/analyzer.h" line="394" column="1" bodyfile="include/tvm/arith/analyzer.h" bodystart="394" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classtvm_1_1arith_1_1Analyzer_1af33491068003d13952289cd296ba63af" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>tvm::arith::Analyzer::Analyzer</definition>
+        <argsstring>(const Analyzer &amp;)=delete</argsstring>
+        <name>Analyzer</name>
+        <param>
+          <type>const <ref refid="classtvm_1_1arith_1_1Analyzer" kindref="compound">Analyzer</ref> &amp;</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/arith/analyzer.h" line="383" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classtvm_1_1arith_1_1Analyzer_1a9dccc7d98b8b9465390e10436d3a9178" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classtvm_1_1arith_1_1Analyzer" kindref="compound">Analyzer</ref> &amp;</type>
+        <definition>Analyzer&amp; tvm::arith::Analyzer::operator=</definition>
+        <argsstring>(const Analyzer &amp;)=delete</argsstring>
+        <name>operator=</name>
+        <param>
+          <type>const <ref refid="classtvm_1_1arith_1_1Analyzer" kindref="compound">Analyzer</ref> &amp;</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/arith/analyzer.h" line="384" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classtvm_1_1arith_1_1Analyzer_1ae8568eeee02c68849e468f8c19a2701d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>tvm::arith::Analyzer::Analyzer</definition>
+        <argsstring>()</argsstring>
+        <name>Analyzer</name>
+        <briefdescription>
+<para>constructor </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/arith/analyzer.h" line="396" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classtvm_1_1arith_1_1Analyzer_1a509393e0c96c4455d26dd2d737ba2251" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void tvm::arith::Analyzer::Bind</definition>
+        <argsstring>(const Var &amp;var, const PrimExpr &amp;expr)</argsstring>
+        <name>Bind</name>
+        <param>
+          <type>const Var &amp;</type>
+          <declname>var</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classtvm_1_1PrimExpr" kindref="compound">PrimExpr</ref> &amp;</type>
+          <declname>expr</declname>
+        </param>
+        <briefdescription>
+<para>Notify all the sub-analyzers that var is created and binded to expr. </para>        </briefdescription>
+        <detaileddescription>
+<para>Each var can only be binded once.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>var</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The variable. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>expr</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The expression we bind to. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/arith/analyzer.h" line="406" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classtvm_1_1arith_1_1Analyzer_1ae24b097cad6d18e00eafa6a2a36d9712" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void tvm::arith::Analyzer::Bind</definition>
+        <argsstring>(const Var &amp;var, const Range &amp;range)</argsstring>
+        <name>Bind</name>
+        <param>
+          <type>const Var &amp;</type>
+          <declname>var</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classtvm_1_1Range" kindref="compound">Range</ref> &amp;</type>
+          <declname>range</declname>
+        </param>
+        <briefdescription>
+<para>Notify all the sub-analyzers that var is created and binded to a range. </para>        </briefdescription>
+        <detaileddescription>
+<para>Each var can only be binded once.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>var</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The variable. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>range</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The range we bind to. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/arith/analyzer.h" line="416" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classtvm_1_1arith_1_1Analyzer_1a5e97e3abc176f85a5b8e5d0d1cb9f5e1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool tvm::arith::Analyzer::CanProveGreaterEqual</definition>
+        <argsstring>(const PrimExpr &amp;expr, int64_t lower_bound)</argsstring>
+        <name>CanProveGreaterEqual</name>
+        <param>
+          <type>const <ref refid="classtvm_1_1PrimExpr" kindref="compound">PrimExpr</ref> &amp;</type>
+          <declname>expr</declname>
+        </param>
+        <param>
+          <type>int64_t</type>
+          <declname>lower_bound</declname>
+        </param>
+        <briefdescription>
+<para>Whether can we prove expr &gt;= val. </para>        </briefdescription>
+        <detaileddescription>
+<para>Non-negative proof is very useful in integer analysis to lower divisions and mods given difference in trunc and ceil mode.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>expr</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The expression. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>lower_bound</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The lower bound. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Whether we can prove it.</para></simplesect>
+<simplesect kind="note"><para><ref refid="classtvm_1_1arith_1_1Analyzer" kindref="compound">Analyzer</ref> will call into sub-analyzers to get the result. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/arith/analyzer.h" line="429" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classtvm_1_1arith_1_1Analyzer_1af84b3978b1df3b2680fb47818e5dc30d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool tvm::arith::Analyzer::CanProve</definition>
+        <argsstring>(const PrimExpr &amp;cond)</argsstring>
+        <name>CanProve</name>
+        <param>
+          <type>const <ref refid="classtvm_1_1PrimExpr" kindref="compound">PrimExpr</ref> &amp;</type>
+          <declname>cond</declname>
+        </param>
+        <briefdescription>
+<para>Whether can we prove condition. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>cond</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The expression to be proved. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The result.</para></simplesect>
+<simplesect kind="note"><para><ref refid="classtvm_1_1arith_1_1Analyzer" kindref="compound">Analyzer</ref> will call into sub-analyzers to get the result. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/arith/analyzer.h" line="438" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classtvm_1_1arith_1_1Analyzer_1a2d2bda00f4b06ae8b9fc7bc1cd5b0020" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classtvm_1_1PrimExpr" kindref="compound">PrimExpr</ref></type>
+        <definition>PrimExpr tvm::arith::Analyzer::Simplify</definition>
+        <argsstring>(const PrimExpr &amp;expr)</argsstring>
+        <name>Simplify</name>
+        <param>
+          <type>const <ref refid="classtvm_1_1PrimExpr" kindref="compound">PrimExpr</ref> &amp;</type>
+          <declname>expr</declname>
+        </param>
+        <briefdescription>
+<para>Simplify expr. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>expr</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The expression to be simplified. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The result.</para></simplesect>
+<simplesect kind="note"><para><ref refid="classtvm_1_1arith_1_1Analyzer" kindref="compound">Analyzer</ref> will call into sub-analyzers to get the result. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/arith/analyzer.h" line="447" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para><ref refid="classtvm_1_1arith_1_1Analyzer" kindref="compound">Analyzer</ref> that contains bunch of sub-analyzers. </para>    </briefdescription>
+    <detaileddescription>
+<para>Each sub-analyzer can make use of another sub-analyzer by weak reference of this.</para><para>NOTE for sub-analyzer developers: If the analyzer uses memoization, we need to clear the internal cache when information about a Var has been overridden. </para>    </detaileddescription>
+    <collaborationgraph>
+      <node id="3879">
+        <label>tvm::arith::Analyzer</label>
+        <link refid="classtvm_1_1arith_1_1Analyzer"/>
+        <childnode refid="3880" relation="usage">
+          <edgelabel>+canonical_simplify</edgelabel>
+        </childnode>
+        <childnode refid="3881" relation="usage">
+          <edgelabel>+rewrite_simplify</edgelabel>
+        </childnode>
+        <childnode refid="3882" relation="usage">
+          <edgelabel>+const_int_bound</edgelabel>
+        </childnode>
+        <childnode refid="3883" relation="usage">
+          <edgelabel>+int_set</edgelabel>
+        </childnode>
+        <childnode refid="3884" relation="usage">
+          <edgelabel>+modular_set</edgelabel>
+        </childnode>
+      </node>
+      <node id="3882">
+        <label>tvm::arith::ConstIntBoundAnalyzer</label>
+        <link refid="classtvm_1_1arith_1_1ConstIntBoundAnalyzer"/>
+      </node>
+      <node id="3881">
+        <label>tvm::arith::RewriteSimplifier</label>
+        <link refid="classtvm_1_1arith_1_1RewriteSimplifier"/>
+      </node>
+      <node id="3880">
+        <label>tvm::arith::CanonicalSimplifier</label>
+        <link refid="classtvm_1_1arith_1_1CanonicalSimplifier"/>
+      </node>
+      <node id="3884">
+        <label>tvm::arith::ModularSetAnalyzer</label>
+        <link refid="classtvm_1_1arith_1_1ModularSetAnalyzer"/>
+      </node>
+      <node id="3883">
+        <label>tvm::arith::IntSetAnalyzer</label>
+        <link refid="classtvm_1_1arith_1_1IntSetAnalyzer"/>
+      </node>
+    </collaborationgraph>
+    <location file="include/tvm/arith/analyzer.h" line="378" column="1" bodyfile="include/tvm/arith/analyzer.h" bodystart="378" bodyend="448"/>
+    <listofallmembers>
+      <member refid="classtvm_1_1arith_1_1Analyzer_1af33491068003d13952289cd296ba63af" prot="public" virt="non-virtual"><scope>tvm::arith::Analyzer</scope><name>Analyzer</name></member>
+      <member refid="classtvm_1_1arith_1_1Analyzer_1ae8568eeee02c68849e468f8c19a2701d" prot="public" virt="non-virtual"><scope>tvm::arith::Analyzer</scope><name>Analyzer</name></member>
+      <member refid="classtvm_1_1arith_1_1Analyzer_1a509393e0c96c4455d26dd2d737ba2251" prot="public" virt="non-virtual"><scope>tvm::arith::Analyzer</scope><name>Bind</name></member>
+      <member refid="classtvm_1_1arith_1_1Analyzer_1ae24b097cad6d18e00eafa6a2a36d9712" prot="public" virt="non-virtual"><scope>tvm::arith::Analyzer</scope><name>Bind</name></member>
+      <member refid="classtvm_1_1arith_1_1Analyzer_1a6cdf29adeceaa20b8c3dd7c26b92cd00" prot="public" virt="non-virtual"><scope>tvm::arith::Analyzer</scope><name>canonical_simplify</name></member>
+      <member refid="classtvm_1_1arith_1_1Analyzer_1af84b3978b1df3b2680fb47818e5dc30d" prot="public" virt="non-virtual"><scope>tvm::arith::Analyzer</scope><name>CanProve</name></member>
+      <member refid="classtvm_1_1arith_1_1Analyzer_1a5e97e3abc176f85a5b8e5d0d1cb9f5e1" prot="public" virt="non-virtual"><scope>tvm::arith::Analyzer</scope><name>CanProveGreaterEqual</name></member>
+      <member refid="classtvm_1_1arith_1_1Analyzer_1a435eba3ac3a839d3c53b74acfdc10146" prot="public" virt="non-virtual"><scope>tvm::arith::Analyzer</scope><name>const_int_bound</name></member>
+      <member refid="classtvm_1_1arith_1_1Analyzer_1a0d054ea2ea5b7e99f0883c00672ec831" prot="public" virt="non-virtual"><scope>tvm::arith::Analyzer</scope><name>int_set</name></member>
+      <member refid="classtvm_1_1arith_1_1Analyzer_1acac92a9522deabe289fea99efbd9eaec" prot="public" virt="non-virtual"><scope>tvm::arith::Analyzer</scope><name>modular_set</name></member>
+      <member refid="classtvm_1_1arith_1_1Analyzer_1a9dccc7d98b8b9465390e10436d3a9178" prot="public" virt="non-virtual"><scope>tvm::arith::Analyzer</scope><name>operator=</name></member>
+      <member refid="classtvm_1_1arith_1_1Analyzer_1acc86c6e8c04cb0de4ff9d78e769924b2" prot="public" virt="non-virtual"><scope>tvm::arith::Analyzer</scope><name>rewrite_simplify</name></member>
+      <member refid="classtvm_1_1arith_1_1Analyzer_1a2d2bda00f4b06ae8b9fc7bc1cd5b0020" prot="public" virt="non-virtual"><scope>tvm::arith::Analyzer</scope><name>Simplify</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

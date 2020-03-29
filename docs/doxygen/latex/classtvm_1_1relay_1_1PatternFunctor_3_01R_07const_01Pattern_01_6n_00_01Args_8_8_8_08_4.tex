@@ -1,0 +1,156 @@
+\hypertarget{classtvm_1_1relay_1_1PatternFunctor_3_01R_07const_01Pattern_01_6n_00_01Args_8_8_8_08_4}{}\section{tvm\+:\+:relay\+:\+:Pattern\+Functor$<$ R(const Pattern \&n, Args...)$>$ Class Template Reference}
+\label{classtvm_1_1relay_1_1PatternFunctor_3_01R_07const_01Pattern_01_6n_00_01Args_8_8_8_08_4}\index{tvm\+::relay\+::\+Pattern\+Functor$<$ R(const Pattern \&n, Args...)$>$@{tvm\+::relay\+::\+Pattern\+Functor$<$ R(const Pattern \&n, Args...)$>$}}
+
+
+{\ttfamily \#include $<$pattern\+\_\+functor.\+h$>$}
+
+
+
+Collaboration diagram for tvm\+:\+:relay\+:\+:Pattern\+Functor$<$ R(const Pattern \&n, Args...)$>$\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=247pt]{classtvm_1_1relay_1_1PatternFunctor_3_01R_07const_01Pattern_01_6n_00_01Args_8_8_8_08_4__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+using \hyperlink{classtvm_1_1relay_1_1PatternFunctor_3_01R_07const_01Pattern_01_6n_00_01Args_8_8_8_08_4_ad3446527dc668d6e1b3e753378d4e4d6}{result\+\_\+type} = R
+\begin{DoxyCompactList}\small\item\em the result type of this functor \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual \hyperlink{classtvm_1_1relay_1_1PatternFunctor_3_01R_07const_01Pattern_01_6n_00_01Args_8_8_8_08_4_a4c56c067b4d7406fc5267fca717833a8}{$\sim$\+Pattern\+Functor} ()
+\begin{DoxyCompactList}\small\item\em virtual destructor \end{DoxyCompactList}\item 
+R \hyperlink{classtvm_1_1relay_1_1PatternFunctor_3_01R_07const_01Pattern_01_6n_00_01Args_8_8_8_08_4_ab69db8ff3c90fc7a91673a5b9f7493f3}{operator()} (const \hyperlink{classtvm_1_1relay_1_1Pattern}{Pattern} \&n, Args...\+args)
+\begin{DoxyCompactList}\small\item\em Same as call. \end{DoxyCompactList}\item 
+virtual R \hyperlink{classtvm_1_1relay_1_1PatternFunctor_3_01R_07const_01Pattern_01_6n_00_01Args_8_8_8_08_4_abcf80d4f5b0aca1c3a373000b747673c}{Visit\+Pattern} (const \hyperlink{classtvm_1_1relay_1_1Pattern}{Pattern} \&n, Args...\+args)
+\begin{DoxyCompactList}\small\item\em The functor call. \end{DoxyCompactList}\item 
+virtual R \hyperlink{classtvm_1_1relay_1_1PatternFunctor_3_01R_07const_01Pattern_01_6n_00_01Args_8_8_8_08_4_ad8e3b155b95a5504666c182a470c99d7}{Visit\+Pattern\+\_\+} (const \hyperlink{classtvm_1_1relay_1_1PatternWildcardNode}{Pattern\+Wildcard\+Node} $\ast$op, Args...\+args)
+\item 
+virtual R \hyperlink{classtvm_1_1relay_1_1PatternFunctor_3_01R_07const_01Pattern_01_6n_00_01Args_8_8_8_08_4_aadcac1521b0deb3a6c35a6ca89c02794}{Visit\+Pattern\+\_\+} (const \hyperlink{classtvm_1_1relay_1_1PatternVarNode}{Pattern\+Var\+Node} $\ast$op, Args...\+args)
+\item 
+virtual R \hyperlink{classtvm_1_1relay_1_1PatternFunctor_3_01R_07const_01Pattern_01_6n_00_01Args_8_8_8_08_4_aa770e826edec27f4e8c28dd9f531d190}{Visit\+Pattern\+\_\+} (const \hyperlink{classtvm_1_1relay_1_1PatternConstructorNode}{Pattern\+Constructor\+Node} $\ast$op, Args...\+args)
+\item 
+virtual R \hyperlink{classtvm_1_1relay_1_1PatternFunctor_3_01R_07const_01Pattern_01_6n_00_01Args_8_8_8_08_4_aec2751be0d75f51e6699672bd06492e7}{Visit\+Pattern\+\_\+} (const \hyperlink{classtvm_1_1relay_1_1PatternTupleNode}{Pattern\+Tuple\+Node} $\ast$op, Args...\+args)
+\item 
+virtual R \hyperlink{classtvm_1_1relay_1_1PatternFunctor_3_01R_07const_01Pattern_01_6n_00_01Args_8_8_8_08_4_ad71efcd0b9a937b35f7fd4e2b6131773}{Visit\+Pattern\+Default\+\_\+} (const Object $\ast$op, Args...)
+\end{DoxyCompactItemize}
+
+
+\subsection{Member Typedef Documentation}
+\index{tvm\+::relay\+::\+Pattern\+Functor$<$ R(const Pattern \&n, Args...)$>$@{tvm\+::relay\+::\+Pattern\+Functor$<$ R(const Pattern \&n, Args...)$>$}!result\+\_\+type@{result\+\_\+type}}
+\index{result\+\_\+type@{result\+\_\+type}!tvm\+::relay\+::\+Pattern\+Functor$<$ R(const Pattern \&n, Args...)$>$@{tvm\+::relay\+::\+Pattern\+Functor$<$ R(const Pattern \&n, Args...)$>$}}
+\subsubsection[{\texorpdfstring{result\+\_\+type}{result_type}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename R , typename... Args$>$ using {\bf tvm\+::relay\+::\+Pattern\+Functor}$<$ R(const {\bf Pattern} \&n, Args...)$>$\+::{\bf result\+\_\+type} =  R}\hypertarget{classtvm_1_1relay_1_1PatternFunctor_3_01R_07const_01Pattern_01_6n_00_01Args_8_8_8_08_4_ad3446527dc668d6e1b3e753378d4e4d6}{}\label{classtvm_1_1relay_1_1PatternFunctor_3_01R_07const_01Pattern_01_6n_00_01Args_8_8_8_08_4_ad3446527dc668d6e1b3e753378d4e4d6}
+
+
+the result type of this functor 
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\index{tvm\+::relay\+::\+Pattern\+Functor$<$ R(const Pattern \&n, Args...)$>$@{tvm\+::relay\+::\+Pattern\+Functor$<$ R(const Pattern \&n, Args...)$>$}!````~Pattern\+Functor@{$\sim$\+Pattern\+Functor}}
+\index{````~Pattern\+Functor@{$\sim$\+Pattern\+Functor}!tvm\+::relay\+::\+Pattern\+Functor$<$ R(const Pattern \&n, Args...)$>$@{tvm\+::relay\+::\+Pattern\+Functor$<$ R(const Pattern \&n, Args...)$>$}}
+\subsubsection[{\texorpdfstring{$\sim$\+Pattern\+Functor()}{~PatternFunctor()}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename R , typename... Args$>$ virtual {\bf tvm\+::relay\+::\+Pattern\+Functor}$<$ R(const {\bf Pattern} \&n, Args...)$>$\+::$\sim${\bf Pattern\+Functor} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}\hypertarget{classtvm_1_1relay_1_1PatternFunctor_3_01R_07const_01Pattern_01_6n_00_01Args_8_8_8_08_4_a4c56c067b4d7406fc5267fca717833a8}{}\label{classtvm_1_1relay_1_1PatternFunctor_3_01R_07const_01Pattern_01_6n_00_01Args_8_8_8_08_4_a4c56c067b4d7406fc5267fca717833a8}
+
+
+virtual destructor 
+
+
+
+\subsection{Member Function Documentation}
+\index{tvm\+::relay\+::\+Pattern\+Functor$<$ R(const Pattern \&n, Args...)$>$@{tvm\+::relay\+::\+Pattern\+Functor$<$ R(const Pattern \&n, Args...)$>$}!operator()@{operator()}}
+\index{operator()@{operator()}!tvm\+::relay\+::\+Pattern\+Functor$<$ R(const Pattern \&n, Args...)$>$@{tvm\+::relay\+::\+Pattern\+Functor$<$ R(const Pattern \&n, Args...)$>$}}
+\subsubsection[{\texorpdfstring{operator()(const Pattern \&n, Args...\+args)}{operator()(const Pattern &n, Args...args)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename R , typename... Args$>$ R {\bf tvm\+::relay\+::\+Pattern\+Functor}$<$ R(const {\bf Pattern} \&n, Args...)$>$\+::operator() (
+\begin{DoxyParamCaption}
+\item[{const {\bf Pattern} \&}]{n, }
+\item[{Args...}]{args}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classtvm_1_1relay_1_1PatternFunctor_3_01R_07const_01Pattern_01_6n_00_01Args_8_8_8_08_4_ab69db8ff3c90fc7a91673a5b9f7493f3}{}\label{classtvm_1_1relay_1_1PatternFunctor_3_01R_07const_01Pattern_01_6n_00_01Args_8_8_8_08_4_ab69db8ff3c90fc7a91673a5b9f7493f3}
+
+
+Same as call. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em n} & The expression node. \\
+\hline
+{\em args} & Additional arguments. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The result of the call 
+\end{DoxyReturn}
+\index{tvm\+::relay\+::\+Pattern\+Functor$<$ R(const Pattern \&n, Args...)$>$@{tvm\+::relay\+::\+Pattern\+Functor$<$ R(const Pattern \&n, Args...)$>$}!Visit\+Pattern@{Visit\+Pattern}}
+\index{Visit\+Pattern@{Visit\+Pattern}!tvm\+::relay\+::\+Pattern\+Functor$<$ R(const Pattern \&n, Args...)$>$@{tvm\+::relay\+::\+Pattern\+Functor$<$ R(const Pattern \&n, Args...)$>$}}
+\subsubsection[{\texorpdfstring{Visit\+Pattern(const Pattern \&n, Args...\+args)}{VisitPattern(const Pattern &n, Args...args)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename R , typename... Args$>$ virtual R {\bf tvm\+::relay\+::\+Pattern\+Functor}$<$ R(const {\bf Pattern} \&n, Args...)$>$\+::Visit\+Pattern (
+\begin{DoxyParamCaption}
+\item[{const {\bf Pattern} \&}]{n, }
+\item[{Args...}]{args}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}\hypertarget{classtvm_1_1relay_1_1PatternFunctor_3_01R_07const_01Pattern_01_6n_00_01Args_8_8_8_08_4_abcf80d4f5b0aca1c3a373000b747673c}{}\label{classtvm_1_1relay_1_1PatternFunctor_3_01R_07const_01Pattern_01_6n_00_01Args_8_8_8_08_4_abcf80d4f5b0aca1c3a373000b747673c}
+
+
+The functor call. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em n} & The expression node. \\
+\hline
+{\em args} & Additional arguments. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The result of the call 
+\end{DoxyReturn}
+\index{tvm\+::relay\+::\+Pattern\+Functor$<$ R(const Pattern \&n, Args...)$>$@{tvm\+::relay\+::\+Pattern\+Functor$<$ R(const Pattern \&n, Args...)$>$}!Visit\+Pattern\+\_\+@{Visit\+Pattern\+\_\+}}
+\index{Visit\+Pattern\+\_\+@{Visit\+Pattern\+\_\+}!tvm\+::relay\+::\+Pattern\+Functor$<$ R(const Pattern \&n, Args...)$>$@{tvm\+::relay\+::\+Pattern\+Functor$<$ R(const Pattern \&n, Args...)$>$}}
+\subsubsection[{\texorpdfstring{Visit\+Pattern\+\_\+(const Pattern\+Wildcard\+Node $\ast$op, Args...\+args)}{VisitPattern_(const PatternWildcardNode *op, Args...args)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename R , typename... Args$>$ virtual R {\bf tvm\+::relay\+::\+Pattern\+Functor}$<$ R(const {\bf Pattern} \&n, Args...)$>$\+::Visit\+Pattern\+\_\+ (
+\begin{DoxyParamCaption}
+\item[{const {\bf Pattern\+Wildcard\+Node} $\ast$}]{op, }
+\item[{Args...}]{args}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}\hypertarget{classtvm_1_1relay_1_1PatternFunctor_3_01R_07const_01Pattern_01_6n_00_01Args_8_8_8_08_4_ad8e3b155b95a5504666c182a470c99d7}{}\label{classtvm_1_1relay_1_1PatternFunctor_3_01R_07const_01Pattern_01_6n_00_01Args_8_8_8_08_4_ad8e3b155b95a5504666c182a470c99d7}
+\index{tvm\+::relay\+::\+Pattern\+Functor$<$ R(const Pattern \&n, Args...)$>$@{tvm\+::relay\+::\+Pattern\+Functor$<$ R(const Pattern \&n, Args...)$>$}!Visit\+Pattern\+\_\+@{Visit\+Pattern\+\_\+}}
+\index{Visit\+Pattern\+\_\+@{Visit\+Pattern\+\_\+}!tvm\+::relay\+::\+Pattern\+Functor$<$ R(const Pattern \&n, Args...)$>$@{tvm\+::relay\+::\+Pattern\+Functor$<$ R(const Pattern \&n, Args...)$>$}}
+\subsubsection[{\texorpdfstring{Visit\+Pattern\+\_\+(const Pattern\+Var\+Node $\ast$op, Args...\+args)}{VisitPattern_(const PatternVarNode *op, Args...args)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename R , typename... Args$>$ virtual R {\bf tvm\+::relay\+::\+Pattern\+Functor}$<$ R(const {\bf Pattern} \&n, Args...)$>$\+::Visit\+Pattern\+\_\+ (
+\begin{DoxyParamCaption}
+\item[{const {\bf Pattern\+Var\+Node} $\ast$}]{op, }
+\item[{Args...}]{args}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}\hypertarget{classtvm_1_1relay_1_1PatternFunctor_3_01R_07const_01Pattern_01_6n_00_01Args_8_8_8_08_4_aadcac1521b0deb3a6c35a6ca89c02794}{}\label{classtvm_1_1relay_1_1PatternFunctor_3_01R_07const_01Pattern_01_6n_00_01Args_8_8_8_08_4_aadcac1521b0deb3a6c35a6ca89c02794}
+\index{tvm\+::relay\+::\+Pattern\+Functor$<$ R(const Pattern \&n, Args...)$>$@{tvm\+::relay\+::\+Pattern\+Functor$<$ R(const Pattern \&n, Args...)$>$}!Visit\+Pattern\+\_\+@{Visit\+Pattern\+\_\+}}
+\index{Visit\+Pattern\+\_\+@{Visit\+Pattern\+\_\+}!tvm\+::relay\+::\+Pattern\+Functor$<$ R(const Pattern \&n, Args...)$>$@{tvm\+::relay\+::\+Pattern\+Functor$<$ R(const Pattern \&n, Args...)$>$}}
+\subsubsection[{\texorpdfstring{Visit\+Pattern\+\_\+(const Pattern\+Constructor\+Node $\ast$op, Args...\+args)}{VisitPattern_(const PatternConstructorNode *op, Args...args)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename R , typename... Args$>$ virtual R {\bf tvm\+::relay\+::\+Pattern\+Functor}$<$ R(const {\bf Pattern} \&n, Args...)$>$\+::Visit\+Pattern\+\_\+ (
+\begin{DoxyParamCaption}
+\item[{const {\bf Pattern\+Constructor\+Node} $\ast$}]{op, }
+\item[{Args...}]{args}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}\hypertarget{classtvm_1_1relay_1_1PatternFunctor_3_01R_07const_01Pattern_01_6n_00_01Args_8_8_8_08_4_aa770e826edec27f4e8c28dd9f531d190}{}\label{classtvm_1_1relay_1_1PatternFunctor_3_01R_07const_01Pattern_01_6n_00_01Args_8_8_8_08_4_aa770e826edec27f4e8c28dd9f531d190}
+\index{tvm\+::relay\+::\+Pattern\+Functor$<$ R(const Pattern \&n, Args...)$>$@{tvm\+::relay\+::\+Pattern\+Functor$<$ R(const Pattern \&n, Args...)$>$}!Visit\+Pattern\+\_\+@{Visit\+Pattern\+\_\+}}
+\index{Visit\+Pattern\+\_\+@{Visit\+Pattern\+\_\+}!tvm\+::relay\+::\+Pattern\+Functor$<$ R(const Pattern \&n, Args...)$>$@{tvm\+::relay\+::\+Pattern\+Functor$<$ R(const Pattern \&n, Args...)$>$}}
+\subsubsection[{\texorpdfstring{Visit\+Pattern\+\_\+(const Pattern\+Tuple\+Node $\ast$op, Args...\+args)}{VisitPattern_(const PatternTupleNode *op, Args...args)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename R , typename... Args$>$ virtual R {\bf tvm\+::relay\+::\+Pattern\+Functor}$<$ R(const {\bf Pattern} \&n, Args...)$>$\+::Visit\+Pattern\+\_\+ (
+\begin{DoxyParamCaption}
+\item[{const {\bf Pattern\+Tuple\+Node} $\ast$}]{op, }
+\item[{Args...}]{args}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}\hypertarget{classtvm_1_1relay_1_1PatternFunctor_3_01R_07const_01Pattern_01_6n_00_01Args_8_8_8_08_4_aec2751be0d75f51e6699672bd06492e7}{}\label{classtvm_1_1relay_1_1PatternFunctor_3_01R_07const_01Pattern_01_6n_00_01Args_8_8_8_08_4_aec2751be0d75f51e6699672bd06492e7}
+\index{tvm\+::relay\+::\+Pattern\+Functor$<$ R(const Pattern \&n, Args...)$>$@{tvm\+::relay\+::\+Pattern\+Functor$<$ R(const Pattern \&n, Args...)$>$}!Visit\+Pattern\+Default\+\_\+@{Visit\+Pattern\+Default\+\_\+}}
+\index{Visit\+Pattern\+Default\+\_\+@{Visit\+Pattern\+Default\+\_\+}!tvm\+::relay\+::\+Pattern\+Functor$<$ R(const Pattern \&n, Args...)$>$@{tvm\+::relay\+::\+Pattern\+Functor$<$ R(const Pattern \&n, Args...)$>$}}
+\subsubsection[{\texorpdfstring{Visit\+Pattern\+Default\+\_\+(const Object $\ast$op, Args...)}{VisitPatternDefault_(const Object *op, Args...)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename R , typename... Args$>$ virtual R {\bf tvm\+::relay\+::\+Pattern\+Functor}$<$ R(const {\bf Pattern} \&n, Args...)$>$\+::Visit\+Pattern\+Default\+\_\+ (
+\begin{DoxyParamCaption}
+\item[{const Object $\ast$}]{op, }
+\item[{Args...}]{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}\hypertarget{classtvm_1_1relay_1_1PatternFunctor_3_01R_07const_01Pattern_01_6n_00_01Args_8_8_8_08_4_ad71efcd0b9a937b35f7fd4e2b6131773}{}\label{classtvm_1_1relay_1_1PatternFunctor_3_01R_07const_01Pattern_01_6n_00_01Args_8_8_8_08_4_ad71efcd0b9a937b35f7fd4e2b6131773}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+include/tvm/relay/\hyperlink{pattern__functor_8h}{pattern\+\_\+functor.\+h}\end{DoxyCompactItemize}

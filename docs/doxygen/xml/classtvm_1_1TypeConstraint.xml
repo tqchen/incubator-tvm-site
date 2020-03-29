@@ -1,0 +1,83 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="classtvm_1_1TypeConstraint" kind="class" language="C++" prot="public">
+    <compoundname>tvm::TypeConstraint</compoundname>
+    <basecompoundref refid="classtvm_1_1Type" prot="public" virt="non-virtual">tvm::Type</basecompoundref>
+    <derivedcompoundref refid="classtvm_1_1TypeRelation" prot="public" virt="non-virtual">tvm::TypeRelation</derivedcompoundref>
+    <includes refid="ir_2type_8h" local="no">type.h</includes>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classtvm_1_1TypeConstraint_1a4aa7caa008e2810f5b999c85b5e3b62c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>tvm::TypeConstraint::TVM_DEFINE_OBJECT_REF_METHODS</definition>
+        <argsstring>(TypeConstraint, Type, TypeConstraintNode)</argsstring>
+        <name>TVM_DEFINE_OBJECT_REF_METHODS</name>
+        <param>
+          <type><ref refid="classtvm_1_1TypeConstraint" kindref="compound">TypeConstraint</ref></type>
+        </param>
+        <param>
+          <type><ref refid="classtvm_1_1Type" kindref="compound">Type</ref></type>
+        </param>
+        <param>
+          <type><ref refid="classtvm_1_1TypeConstraintNode" kindref="compound">TypeConstraintNode</ref></type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/ir/type.h" line="403" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Managed reference to <ref refid="classtvm_1_1TypeConstraintNode" kindref="compound">TypeConstraintNode</ref>. </para>    </briefdescription>
+    <detaileddescription>
+<para><simplesect kind="see"><para><ref refid="classtvm_1_1TypeConstraintNode" kindref="compound">TypeConstraintNode</ref>, <ref refid="classtvm_1_1TypeRelation" kindref="compound">TypeRelation</ref> </para></simplesect>
+</para>    </detaileddescription>
+    <inheritancegraph>
+      <node id="7374">
+        <label>ObjectRef</label>
+      </node>
+      <node id="7372">
+        <label>tvm::TypeConstraint</label>
+        <link refid="classtvm_1_1TypeConstraint"/>
+        <childnode refid="7373" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="7375">
+        <label>tvm::TypeRelation</label>
+        <link refid="classtvm_1_1TypeRelation"/>
+        <childnode refid="7372" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="7373">
+        <label>tvm::Type</label>
+        <link refid="classtvm_1_1Type"/>
+        <childnode refid="7374" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="7378">
+        <label>ObjectRef</label>
+      </node>
+      <node id="7376">
+        <label>tvm::TypeConstraint</label>
+        <link refid="classtvm_1_1TypeConstraint"/>
+        <childnode refid="7377" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="7377">
+        <label>tvm::Type</label>
+        <link refid="classtvm_1_1Type"/>
+        <childnode refid="7378" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="include/tvm/ir/type.h" line="401" column="1" bodyfile="include/tvm/ir/type.h" bodystart="401" bodyend="404"/>
+    <listofallmembers>
+      <member refid="classtvm_1_1TypeConstraint_1a4aa7caa008e2810f5b999c85b5e3b62c" prot="public" virt="non-virtual"><scope>tvm::TypeConstraint</scope><name>TVM_DEFINE_OBJECT_REF_METHODS</name></member>
+      <member refid="classtvm_1_1Type_1a1188605b5afd297c39e614872a608a35" prot="public" virt="non-virtual" ambiguityscope="tvm::Type::"><scope>tvm::TypeConstraint</scope><name>TVM_DEFINE_OBJECT_REF_METHODS</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

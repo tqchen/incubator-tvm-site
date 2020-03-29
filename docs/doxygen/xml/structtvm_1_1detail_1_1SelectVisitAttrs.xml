@@ -1,0 +1,49 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="structtvm_1_1detail_1_1SelectVisitAttrs" kind="struct" language="C++" prot="public">
+    <compoundname>tvm::detail::SelectVisitAttrs</compoundname>
+    <includes refid="reflection_8h" local="no">reflection.h</includes>
+    <templateparamlist>
+      <param>
+        <type>typename T</type>
+      </param>
+      <param>
+        <type>typename TraitName</type>
+      </param>
+      <param>
+        <type>bool</type>
+        <defval>std::is_null_pointer&lt;decltype(TraitName::VisitAttrs)&gt;::value</defval>
+      </param>
+    </templateparamlist>
+      <sectiondef kind="public-static-attrib">
+      <memberdef kind="variable" id="structtvm_1_1detail_1_1SelectVisitAttrs_1aacd15172d6c63d2008e1d109530d174f" prot="public" static="yes" mutable="no">
+        <type>constexpr const std::nullptr_t</type>
+        <definition>constexpr const std::nullptr_t tvm::detail::SelectVisitAttrs&lt; T, TraitName, bool &gt;::VisitAttrs</definition>
+        <argsstring></argsstring>
+        <name>VisitAttrs</name>
+        <initializer>= nullptr</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/node/reflection.h" line="317" column="1" bodyfile="include/tvm/node/reflection.h" bodystart="317" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="6734">
+        <label>tvm::detail::SelectVisitAttrs&lt; T, TraitName, bool &gt;</label>
+        <link refid="structtvm_1_1detail_1_1SelectVisitAttrs"/>
+      </node>
+    </collaborationgraph>
+    <location file="include/tvm/node/reflection.h" line="316" column="1" bodyfile="include/tvm/node/reflection.h" bodystart="316" bodyend="318"/>
+    <listofallmembers>
+      <member refid="structtvm_1_1detail_1_1SelectVisitAttrs_1aacd15172d6c63d2008e1d109530d174f" prot="public" virt="non-virtual"><scope>tvm::detail::SelectVisitAttrs</scope><name>VisitAttrs</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

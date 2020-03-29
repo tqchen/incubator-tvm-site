@@ -1,0 +1,211 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="classtvm_1_1TypeCallNode" kind="class" language="C++" prot="public">
+    <compoundname>tvm::TypeCallNode</compoundname>
+    <basecompoundref refid="classtvm_1_1TypeNode" prot="public" virt="non-virtual">tvm::TypeNode</basecompoundref>
+    <includes refid="type__relation_8h" local="no">type_relation.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="classtvm_1_1TypeCallNode_1ad411852baaa607438122219b714773ea" prot="public" static="no" mutable="no">
+        <type><ref refid="classtvm_1_1Type" kindref="compound">Type</ref></type>
+        <definition>Type tvm::TypeCallNode::func</definition>
+        <argsstring></argsstring>
+        <name>func</name>
+        <briefdescription>
+<para>The type-level function (ADT that takes type params). </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/ir/type_relation.h" line="43" column="1" bodyfile="include/tvm/ir/type_relation.h" bodystart="43" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classtvm_1_1TypeCallNode_1a2e5fb370089941ae6fae26a110ad3783" prot="public" static="no" mutable="no">
+        <type><ref refid="classtvm_1_1Array" kindref="compound">Array</ref>&lt; <ref refid="classtvm_1_1Type" kindref="compound">Type</ref> &gt;</type>
+        <definition>Array&lt;Type&gt; tvm::TypeCallNode::args</definition>
+        <argsstring></argsstring>
+        <name>args</name>
+        <briefdescription>
+<para>The arguments. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/ir/type_relation.h" line="45" column="1" bodyfile="include/tvm/ir/type_relation.h" bodystart="45" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-attrib">
+      <memberdef kind="variable" id="classtvm_1_1TypeCallNode_1a40818692649116129f929d01b46fb2a4" prot="public" static="yes" mutable="no">
+        <type>constexpr const char *</type>
+        <definition>constexpr const char* tvm::TypeCallNode::_type_key</definition>
+        <argsstring></argsstring>
+        <name>_type_key</name>
+        <initializer>= &quot;TypeCall&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/ir/type_relation.h" line="64" column="1" bodyfile="include/tvm/ir/type_relation.h" bodystart="64" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classtvm_1_1TypeCallNode_1a78d868b71e85155ef0b9a003bab87a77" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void tvm::TypeCallNode::VisitAttrs</definition>
+        <argsstring>(AttrVisitor *v)</argsstring>
+        <name>VisitAttrs</name>
+        <param>
+          <type><ref refid="classtvm_1_1AttrVisitor" kindref="compound">AttrVisitor</ref> *</type>
+          <declname>v</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/ir/type_relation.h" line="47" column="1" bodyfile="include/tvm/ir/type_relation.h" bodystart="47" bodyend="51"/>
+      </memberdef>
+      <memberdef kind="function" id="classtvm_1_1TypeCallNode_1adcd169de4a8923b333f721d5c79dcbc5" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool tvm::TypeCallNode::SEqualReduce</definition>
+        <argsstring>(const TypeCallNode *other, SEqualReducer equal) const </argsstring>
+        <name>SEqualReduce</name>
+        <param>
+          <type>const <ref refid="classtvm_1_1TypeCallNode" kindref="compound">TypeCallNode</ref> *</type>
+          <declname>other</declname>
+        </param>
+        <param>
+          <type><ref refid="classtvm_1_1SEqualReducer" kindref="compound">SEqualReducer</ref></type>
+          <declname>equal</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/ir/type_relation.h" line="53" column="1" bodyfile="include/tvm/ir/type_relation.h" bodystart="53" bodyend="57"/>
+      </memberdef>
+      <memberdef kind="function" id="classtvm_1_1TypeCallNode_1ad26289590f6b21bdf772529ed56d1f0c" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void tvm::TypeCallNode::SHashReduce</definition>
+        <argsstring>(SHashReducer hash_reduce) const </argsstring>
+        <name>SHashReduce</name>
+        <param>
+          <type><ref refid="classtvm_1_1SHashReducer" kindref="compound">SHashReducer</ref></type>
+          <declname>hash_reduce</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/ir/type_relation.h" line="59" column="1" bodyfile="include/tvm/ir/type_relation.h" bodystart="59" bodyend="62"/>
+      </memberdef>
+      <memberdef kind="function" id="classtvm_1_1TypeCallNode_1ae2a79cdbb7b42224f49d18f5e559e1f0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>tvm::TypeCallNode::TVM_DECLARE_FINAL_OBJECT_INFO</definition>
+        <argsstring>(TypeCallNode, TypeNode)</argsstring>
+        <name>TVM_DECLARE_FINAL_OBJECT_INFO</name>
+        <param>
+          <type><ref refid="classtvm_1_1TypeCallNode" kindref="compound">TypeCallNode</ref></type>
+        </param>
+        <param>
+          <type><ref refid="classtvm_1_1TypeNode" kindref="compound">TypeNode</ref></type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/ir/type_relation.h" line="65" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para><ref refid="classtvm_1_1Type" kindref="compound">Type</ref> function application. </para>    </briefdescription>
+    <detaileddescription>
+<para><simplesect kind="see"><para><ref refid="classtvm_1_1TypeCall" kindref="compound">TypeCall</ref> </para></simplesect>
+</para>    </detaileddescription>
+    <inheritancegraph>
+      <node id="7362">
+        <label>tvm::TypeCallNode</label>
+        <link refid="classtvm_1_1TypeCallNode"/>
+        <childnode refid="7363" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="7363">
+        <label>tvm::TypeNode</label>
+        <link refid="classtvm_1_1TypeNode"/>
+        <childnode refid="7364" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="7364">
+        <label>Object</label>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="7369">
+        <label>ObjectRef</label>
+      </node>
+      <node id="7365">
+        <label>tvm::TypeCallNode</label>
+        <link refid="classtvm_1_1TypeCallNode"/>
+        <childnode refid="7366" relation="public-inheritance">
+        </childnode>
+        <childnode refid="7370" relation="usage">
+          <edgelabel>+args</edgelabel>
+        </childnode>
+        <childnode refid="7371" relation="usage">
+          <edgelabel>+func</edgelabel>
+        </childnode>
+      </node>
+      <node id="7368">
+        <label>tvm::Span</label>
+        <link refid="classtvm_1_1Span"/>
+        <childnode refid="7369" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="7366">
+        <label>tvm::TypeNode</label>
+        <link refid="classtvm_1_1TypeNode"/>
+        <childnode refid="7367" relation="public-inheritance">
+        </childnode>
+        <childnode refid="7368" relation="usage">
+          <edgelabel>+span</edgelabel>
+        </childnode>
+      </node>
+      <node id="7367">
+        <label>Object</label>
+      </node>
+      <node id="7370">
+        <label>tvm::Array&lt; tvm::Type &gt;</label>
+        <link refid="classtvm_1_1Array"/>
+        <childnode refid="7369" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="7371">
+        <label>tvm::Type</label>
+        <link refid="classtvm_1_1Type"/>
+        <childnode refid="7369" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="include/tvm/ir/type_relation.h" line="38" column="1" bodyfile="include/tvm/ir/type_relation.h" bodystart="38" bodyend="66"/>
+    <listofallmembers>
+      <member refid="classtvm_1_1TypeNode_1ab02f7d165755f57689f986aca467a7e5" prot="public" virt="non-virtual"><scope>tvm::TypeCallNode</scope><name>_type_has_method_sequal_reduce</name></member>
+      <member refid="classtvm_1_1TypeNode_1a4179c7d7d55d1141cadfd19547fb1344" prot="public" virt="non-virtual"><scope>tvm::TypeCallNode</scope><name>_type_has_method_shash_reduce</name></member>
+      <member refid="classtvm_1_1TypeCallNode_1a40818692649116129f929d01b46fb2a4" prot="public" virt="non-virtual"><scope>tvm::TypeCallNode</scope><name>_type_key</name></member>
+      <member refid="classtvm_1_1TypeCallNode_1a2e5fb370089941ae6fae26a110ad3783" prot="public" virt="non-virtual"><scope>tvm::TypeCallNode</scope><name>args</name></member>
+      <member refid="classtvm_1_1TypeCallNode_1ad411852baaa607438122219b714773ea" prot="public" virt="non-virtual"><scope>tvm::TypeCallNode</scope><name>func</name></member>
+      <member refid="classtvm_1_1TypeCallNode_1adcd169de4a8923b333f721d5c79dcbc5" prot="public" virt="non-virtual"><scope>tvm::TypeCallNode</scope><name>SEqualReduce</name></member>
+      <member refid="classtvm_1_1TypeCallNode_1ad26289590f6b21bdf772529ed56d1f0c" prot="public" virt="non-virtual"><scope>tvm::TypeCallNode</scope><name>SHashReduce</name></member>
+      <member refid="classtvm_1_1TypeNode_1a7b06d502a5162d51bb205691bbb95bb5" prot="public" virt="non-virtual"><scope>tvm::TypeCallNode</scope><name>span</name></member>
+      <member refid="classtvm_1_1TypeNode_1abadff70e220806f889e81a0ad3bca0da" prot="public" virt="non-virtual"><scope>tvm::TypeCallNode</scope><name>TVM_DECLARE_BASE_OBJECT_INFO</name></member>
+      <member refid="classtvm_1_1TypeCallNode_1ae2a79cdbb7b42224f49d18f5e559e1f0" prot="public" virt="non-virtual"><scope>tvm::TypeCallNode</scope><name>TVM_DECLARE_FINAL_OBJECT_INFO</name></member>
+      <member refid="classtvm_1_1TypeCallNode_1a78d868b71e85155ef0b9a003bab87a77" prot="public" virt="non-virtual"><scope>tvm::TypeCallNode</scope><name>VisitAttrs</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

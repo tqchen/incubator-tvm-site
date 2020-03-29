@@ -1,0 +1,243 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="classtvm_1_1tir_1_1OrNode" kind="class" language="C++" prot="public">
+    <compoundname>tvm::tir::OrNode</compoundname>
+    <basecompoundref refid="classtvm_1_1PrimExprNode" prot="public" virt="non-virtual">tvm::PrimExprNode</basecompoundref>
+    <includes refid="tir_2expr_8h" local="no">expr.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="classtvm_1_1tir_1_1OrNode_1a61302dc15e752bbde390bdba6c5de3a8" prot="public" static="no" mutable="no">
+        <type><ref refid="classtvm_1_1PrimExpr" kindref="compound">PrimExpr</ref></type>
+        <definition>PrimExpr tvm::tir::OrNode::a</definition>
+        <argsstring></argsstring>
+        <name>a</name>
+        <briefdescription>
+<para>The left operand. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/tir/expr.h" line="637" column="1" bodyfile="include/tvm/tir/expr.h" bodystart="637" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classtvm_1_1tir_1_1OrNode_1a37326d054944087da18aca83cd3570e9" prot="public" static="no" mutable="no">
+        <type><ref refid="classtvm_1_1PrimExpr" kindref="compound">PrimExpr</ref></type>
+        <definition>PrimExpr tvm::tir::OrNode::b</definition>
+        <argsstring></argsstring>
+        <name>b</name>
+        <briefdescription>
+<para>The right operand. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/tir/expr.h" line="639" column="1" bodyfile="include/tvm/tir/expr.h" bodystart="639" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-attrib">
+      <memberdef kind="variable" id="classtvm_1_1tir_1_1OrNode_1a9c0985de2d00800a2745ffda44b6e4a9" prot="public" static="yes" mutable="no">
+        <type>constexpr const char *</type>
+        <definition>constexpr const char* tvm::tir::OrNode::_type_key</definition>
+        <argsstring></argsstring>
+        <name>_type_key</name>
+        <initializer>= &quot;Or&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/tir/expr.h" line="662" column="1" bodyfile="include/tvm/tir/expr.h" bodystart="662" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classtvm_1_1tir_1_1OrNode_1adeffc3d1cdf32cefe1e7fab3a6b6f9f9" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void tvm::tir::OrNode::VisitAttrs</definition>
+        <argsstring>(AttrVisitor *v)</argsstring>
+        <name>VisitAttrs</name>
+        <param>
+          <type><ref refid="classtvm_1_1AttrVisitor" kindref="compound">AttrVisitor</ref> *</type>
+          <declname>v</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/tir/expr.h" line="641" column="1" bodyfile="include/tvm/tir/expr.h" bodystart="641" bodyend="645"/>
+      </memberdef>
+      <memberdef kind="function" id="classtvm_1_1tir_1_1OrNode_1af21aa217c579adf7b73f2b9f1ce1dd27" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool tvm::tir::OrNode::SEqualReduce</definition>
+        <argsstring>(const OrNode *other, SEqualReducer equal) const </argsstring>
+        <name>SEqualReduce</name>
+        <param>
+          <type>const <ref refid="classtvm_1_1tir_1_1OrNode" kindref="compound">OrNode</ref> *</type>
+          <declname>other</declname>
+        </param>
+        <param>
+          <type><ref refid="classtvm_1_1SEqualReducer" kindref="compound">SEqualReducer</ref></type>
+          <declname>equal</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/tir/expr.h" line="647" column="1" bodyfile="include/tvm/tir/expr.h" bodystart="647" bodyend="652"/>
+      </memberdef>
+      <memberdef kind="function" id="classtvm_1_1tir_1_1OrNode_1a0f4e04760d3ec7f808d8aa51b3607fda" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void tvm::tir::OrNode::SHashReduce</definition>
+        <argsstring>(SHashReducer hash_reduce) const </argsstring>
+        <name>SHashReduce</name>
+        <param>
+          <type><ref refid="classtvm_1_1SHashReducer" kindref="compound">SHashReducer</ref></type>
+          <declname>hash_reduce</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/tir/expr.h" line="654" column="1" bodyfile="include/tvm/tir/expr.h" bodystart="654" bodyend="658"/>
+      </memberdef>
+      <memberdef kind="function" id="classtvm_1_1tir_1_1OrNode_1a705bb9e8ad690e506b286469dbd2eb4a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>tvm::tir::OrNode::TVM_DECLARE_FINAL_OBJECT_INFO</definition>
+        <argsstring>(OrNode, PrimExprNode)</argsstring>
+        <name>TVM_DECLARE_FINAL_OBJECT_INFO</name>
+        <param>
+          <type><ref refid="classtvm_1_1tir_1_1OrNode" kindref="compound">OrNode</ref></type>
+        </param>
+        <param>
+          <type><ref refid="classtvm_1_1PrimExprNode" kindref="compound">PrimExprNode</ref></type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/tir/expr.h" line="663" column="1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="classtvm_1_1tir_1_1OrNode_1a0f7867f76a1685e21712033932e8f4a5" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classtvm_1_1PrimExpr" kindref="compound">PrimExpr</ref></type>
+        <definition>static PrimExpr tvm::tir::OrNode::make</definition>
+        <argsstring>(PrimExpr a, PrimExpr b)</argsstring>
+        <name>make</name>
+        <param>
+          <type><ref refid="classtvm_1_1PrimExpr" kindref="compound">PrimExpr</ref></type>
+          <declname>a</declname>
+        </param>
+        <param>
+          <type><ref refid="classtvm_1_1PrimExpr" kindref="compound">PrimExpr</ref></type>
+          <declname>b</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/tir/expr.h" line="660" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>a || b </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="6004">
+        <label>tvm::tir::OrNode</label>
+        <link refid="classtvm_1_1tir_1_1OrNode"/>
+        <childnode refid="6005" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="6006">
+        <label>tvm::BaseExprNode</label>
+        <link refid="classtvm_1_1BaseExprNode"/>
+        <childnode refid="6007" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="6007">
+        <label>Object</label>
+      </node>
+      <node id="6005">
+        <label>tvm::PrimExprNode</label>
+        <link refid="classtvm_1_1PrimExprNode"/>
+        <childnode refid="6006" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="6015">
+        <label>ObjectRef</label>
+      </node>
+      <node id="6008">
+        <label>tvm::tir::OrNode</label>
+        <link refid="classtvm_1_1tir_1_1OrNode"/>
+        <childnode refid="6009" relation="public-inheritance">
+        </childnode>
+        <childnode refid="6013" relation="usage">
+          <edgelabel>+a</edgelabel>
+          <edgelabel>+b</edgelabel>
+        </childnode>
+      </node>
+      <node id="6010">
+        <label>tvm::BaseExprNode</label>
+        <link refid="classtvm_1_1BaseExprNode"/>
+        <childnode refid="6011" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="6011">
+        <label>Object</label>
+      </node>
+      <node id="6013">
+        <label>tvm::PrimExpr</label>
+        <link refid="classtvm_1_1PrimExpr"/>
+        <childnode refid="6014" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="6012">
+        <label>tvm::runtime::DataType</label>
+        <link refid="classtvm_1_1runtime_1_1DataType"/>
+      </node>
+      <node id="6014">
+        <label>tvm::BaseExpr</label>
+        <link refid="classtvm_1_1BaseExpr"/>
+        <childnode refid="6015" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="6009">
+        <label>tvm::PrimExprNode</label>
+        <link refid="classtvm_1_1PrimExprNode"/>
+        <childnode refid="6010" relation="public-inheritance">
+        </childnode>
+        <childnode refid="6012" relation="usage">
+          <edgelabel>+dtype</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="include/tvm/tir/expr.h" line="634" column="1" bodyfile="include/tvm/tir/expr.h" bodystart="634" bodyend="664"/>
+    <listofallmembers>
+      <member refid="classtvm_1_1BaseExprNode_1a905dcf65204e877b6ccb977cf375f2a0" prot="public" virt="non-virtual"><scope>tvm::tir::OrNode</scope><name>_type_has_method_sequal_reduce</name></member>
+      <member refid="classtvm_1_1BaseExprNode_1a13d7d1f1e6f790951caf200cd59c3620" prot="public" virt="non-virtual"><scope>tvm::tir::OrNode</scope><name>_type_has_method_shash_reduce</name></member>
+      <member refid="classtvm_1_1tir_1_1OrNode_1a9c0985de2d00800a2745ffda44b6e4a9" prot="public" virt="non-virtual"><scope>tvm::tir::OrNode</scope><name>_type_key</name></member>
+      <member refid="classtvm_1_1tir_1_1OrNode_1a61302dc15e752bbde390bdba6c5de3a8" prot="public" virt="non-virtual"><scope>tvm::tir::OrNode</scope><name>a</name></member>
+      <member refid="classtvm_1_1tir_1_1OrNode_1a37326d054944087da18aca83cd3570e9" prot="public" virt="non-virtual"><scope>tvm::tir::OrNode</scope><name>b</name></member>
+      <member refid="classtvm_1_1PrimExprNode_1a95af9234514ec5f11355db41524be7f9" prot="public" virt="non-virtual"><scope>tvm::tir::OrNode</scope><name>dtype</name></member>
+      <member refid="classtvm_1_1tir_1_1OrNode_1a0f7867f76a1685e21712033932e8f4a5" prot="public" virt="non-virtual"><scope>tvm::tir::OrNode</scope><name>make</name></member>
+      <member refid="classtvm_1_1tir_1_1OrNode_1af21aa217c579adf7b73f2b9f1ce1dd27" prot="public" virt="non-virtual"><scope>tvm::tir::OrNode</scope><name>SEqualReduce</name></member>
+      <member refid="classtvm_1_1tir_1_1OrNode_1a0f4e04760d3ec7f808d8aa51b3607fda" prot="public" virt="non-virtual"><scope>tvm::tir::OrNode</scope><name>SHashReduce</name></member>
+      <member refid="classtvm_1_1PrimExprNode_1afcf4654378d65e0200b33e43194d0490" prot="public" virt="non-virtual"><scope>tvm::tir::OrNode</scope><name>TVM_DECLARE_BASE_OBJECT_INFO</name></member>
+      <member refid="classtvm_1_1BaseExprNode_1a831794c879d47c30cdd9cefd4f05d533" prot="public" virt="non-virtual" ambiguityscope="tvm::BaseExprNode::"><scope>tvm::tir::OrNode</scope><name>TVM_DECLARE_BASE_OBJECT_INFO</name></member>
+      <member refid="classtvm_1_1tir_1_1OrNode_1a705bb9e8ad690e506b286469dbd2eb4a" prot="public" virt="non-virtual"><scope>tvm::tir::OrNode</scope><name>TVM_DECLARE_FINAL_OBJECT_INFO</name></member>
+      <member refid="classtvm_1_1tir_1_1OrNode_1adeffc3d1cdf32cefe1e7fab3a6b6f9f9" prot="public" virt="non-virtual"><scope>tvm::tir::OrNode</scope><name>VisitAttrs</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

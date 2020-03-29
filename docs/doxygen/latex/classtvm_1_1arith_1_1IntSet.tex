@@ -1,0 +1,381 @@
+\hypertarget{classtvm_1_1arith_1_1IntSet}{}\section{tvm\+:\+:arith\+:\+:Int\+Set Class Reference}
+\label{classtvm_1_1arith_1_1IntSet}\index{tvm\+::arith\+::\+Int\+Set@{tvm\+::arith\+::\+Int\+Set}}
+
+
+Managed reference to \hyperlink{classtvm_1_1arith_1_1IntSetNode}{Int\+Set\+Node}.  
+
+
+
+
+{\ttfamily \#include $<$int\+\_\+set.\+h$>$}
+
+
+
+Inheritance diagram for tvm\+:\+:arith\+:\+:Int\+Set\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=207pt]{classtvm_1_1arith_1_1IntSet__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for tvm\+:\+:arith\+:\+:Int\+Set\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=207pt]{classtvm_1_1arith_1_1IntSet__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classtvm_1_1arith_1_1IntSet_a94870e317c0fe710b6aab013df335fb4}{Int\+Set} ()
+\begin{DoxyCompactList}\small\item\em constructor \end{DoxyCompactList}\item 
+\hyperlink{classtvm_1_1arith_1_1IntSet_a0d9b20e40ac72352647969cc1430b881}{Int\+Set} (Object\+Ptr$<$ Object $>$ n)
+\item 
+const \hyperlink{classtvm_1_1arith_1_1IntSetNode}{Int\+Set\+Node} $\ast$ \hyperlink{classtvm_1_1arith_1_1IntSet_aaea2d5a2e766abae102bf56f3ee5ec35}{operator-\/$>$} () const 
+\begin{DoxyCompactList}\small\item\em access the internal node container \end{DoxyCompactList}\item 
+\hyperlink{classtvm_1_1Range}{Range} \hyperlink{classtvm_1_1arith_1_1IntSet_a87331de8815851fcd10bf5e3b878062e}{cover\+\_\+range} (\hyperlink{classtvm_1_1Range}{Range} max\+\_\+range) const 
+\begin{DoxyCompactList}\small\item\em Find a range that covers the region. \end{DoxyCompactList}\item 
+\hyperlink{classtvm_1_1PrimExpr}{Prim\+Expr} \hyperlink{classtvm_1_1arith_1_1IntSet_ab4b94806a72afc801f392b6c1e09b2bd}{min} () const 
+\item 
+\hyperlink{classtvm_1_1PrimExpr}{Prim\+Expr} \hyperlink{classtvm_1_1arith_1_1IntSet_afc04d6fd5d46def5dff8f69d344df107}{max} () const 
+\item 
+bool \hyperlink{classtvm_1_1arith_1_1IntSet_a360733fbb5026aa3b451c948447cf868}{is\+\_\+nothing} () const 
+\item 
+bool \hyperlink{classtvm_1_1arith_1_1IntSet_a76915ad1257dba46982dca412164193a}{is\+\_\+everything} () const 
+\item 
+bool \hyperlink{classtvm_1_1arith_1_1IntSet_a2a8851c9c9d80dc4fef43919f069e828}{is\+\_\+single\+\_\+point} () const 
+\item 
+bool \hyperlink{classtvm_1_1arith_1_1IntSet_a217b7d0c997ecd1752b590778f4ea8fb}{can\+\_\+prove\+\_\+positive} () const 
+\item 
+bool \hyperlink{classtvm_1_1arith_1_1IntSet_a407b23e6a7ab7af70aba0ba77eaec218}{can\+\_\+prove\+\_\+negative} () const 
+\item 
+bool \hyperlink{classtvm_1_1arith_1_1IntSet_a4d56a12f7d192e5b739f83999ab4ccc3}{can\+\_\+prove\+\_\+non\+\_\+positive} () const 
+\item 
+bool \hyperlink{classtvm_1_1arith_1_1IntSet_a70785e828279d810ec4d34137cd588cf}{can\+\_\+prove\+\_\+non\+\_\+negative} () const 
+\item 
+\hyperlink{namespacetvm_1_1arith_aca8806e355ad3dd5f1df9c1eca9aac9d}{Sign\+Type} \hyperlink{classtvm_1_1arith_1_1IntSet_a36d9ef554088056be1ce517f1ceea3f1}{sign\+\_\+type} () const 
+\item 
+\hyperlink{classtvm_1_1PrimExpr}{Prim\+Expr} \hyperlink{classtvm_1_1arith_1_1IntSet_a0c8ce073360823084109d976721174b5}{point\+\_\+value} () const 
+\begin{DoxyCompactList}\small\item\em The single point value, call only if is\+\_\+single\+\_\+point is true. \end{DoxyCompactList}\item 
+bool \hyperlink{classtvm_1_1arith_1_1IntSet_af6b303660c7d2bf53f48716c9c8f9abe}{match\+\_\+range} (const \hyperlink{classtvm_1_1Range}{Range} \&r) const 
+\begin{DoxyCompactList}\small\item\em Try to match \hyperlink{classtvm_1_1arith_1_1IntSet}{Int\+Set} with range r. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \hyperlink{classtvm_1_1arith_1_1IntSet}{Int\+Set} \hyperlink{classtvm_1_1arith_1_1IntSet_a5c4cd4c999b14280a237c0afd3360aca}{nothing} ()
+\item 
+static \hyperlink{classtvm_1_1arith_1_1IntSet}{Int\+Set} \hyperlink{classtvm_1_1arith_1_1IntSet_aaeffa7a1eb404803a88c5be3ca705090}{everything} ()
+\item 
+static \hyperlink{classtvm_1_1arith_1_1IntSet}{Int\+Set} \hyperlink{classtvm_1_1arith_1_1IntSet_aa6c7870804e1603736ae6c76d7179c6a}{single\+\_\+point} (\hyperlink{classtvm_1_1PrimExpr}{Prim\+Expr} point)
+\begin{DoxyCompactList}\small\item\em construct a point set. \end{DoxyCompactList}\item 
+static \hyperlink{classtvm_1_1arith_1_1IntSet}{Int\+Set} \hyperlink{classtvm_1_1arith_1_1IntSet_a3f8837f5cbe28739550a528214eb91c6}{vector} (\hyperlink{classtvm_1_1PrimExpr}{Prim\+Expr} vec)
+\begin{DoxyCompactList}\small\item\em construct a integer set from vector expression. \end{DoxyCompactList}\item 
+static \hyperlink{classtvm_1_1arith_1_1IntSet}{Int\+Set} \hyperlink{classtvm_1_1arith_1_1IntSet_afad6e9a1b54e9aa2b35c56cc9ebef168}{range} (\hyperlink{classtvm_1_1Range}{Range} r)
+\begin{DoxyCompactList}\small\item\em Construct a set representing a range. \end{DoxyCompactList}\item 
+static \hyperlink{classtvm_1_1arith_1_1IntSet}{Int\+Set} \hyperlink{classtvm_1_1arith_1_1IntSet_a56454f692fb041e6b51544c4f84f1420}{interval} (\hyperlink{classtvm_1_1PrimExpr}{Prim\+Expr} \hyperlink{classtvm_1_1arith_1_1IntSet_ab4b94806a72afc801f392b6c1e09b2bd}{min}, \hyperlink{classtvm_1_1PrimExpr}{Prim\+Expr} \hyperlink{classtvm_1_1arith_1_1IntSet_afc04d6fd5d46def5dff8f69d344df107}{max})
+\begin{DoxyCompactList}\small\item\em Construct a set representing a interval. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Managed reference to \hyperlink{classtvm_1_1arith_1_1IntSetNode}{Int\+Set\+Node}. 
+
+\begin{DoxySeeAlso}{See also}
+\hyperlink{classtvm_1_1arith_1_1IntSetNode}{Int\+Set\+Node} 
+\end{DoxySeeAlso}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\index{tvm\+::arith\+::\+Int\+Set@{tvm\+::arith\+::\+Int\+Set}!Int\+Set@{Int\+Set}}
+\index{Int\+Set@{Int\+Set}!tvm\+::arith\+::\+Int\+Set@{tvm\+::arith\+::\+Int\+Set}}
+\subsubsection[{\texorpdfstring{Int\+Set()}{IntSet()}}]{\setlength{\rightskip}{0pt plus 5cm}tvm\+::arith\+::\+Int\+Set\+::\+Int\+Set (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classtvm_1_1arith_1_1IntSet_a94870e317c0fe710b6aab013df335fb4}{}\label{classtvm_1_1arith_1_1IntSet_a94870e317c0fe710b6aab013df335fb4}
+
+
+constructor 
+
+\index{tvm\+::arith\+::\+Int\+Set@{tvm\+::arith\+::\+Int\+Set}!Int\+Set@{Int\+Set}}
+\index{Int\+Set@{Int\+Set}!tvm\+::arith\+::\+Int\+Set@{tvm\+::arith\+::\+Int\+Set}}
+\subsubsection[{\texorpdfstring{Int\+Set(\+Object\+Ptr$<$ Object $>$ n)}{IntSet(ObjectPtr< Object > n)}}]{\setlength{\rightskip}{0pt plus 5cm}tvm\+::arith\+::\+Int\+Set\+::\+Int\+Set (
+\begin{DoxyParamCaption}
+\item[{Object\+Ptr$<$ Object $>$}]{n}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [explicit]}}\hypertarget{classtvm_1_1arith_1_1IntSet_a0d9b20e40ac72352647969cc1430b881}{}\label{classtvm_1_1arith_1_1IntSet_a0d9b20e40ac72352647969cc1430b881}
+
+
+\subsection{Member Function Documentation}
+\index{tvm\+::arith\+::\+Int\+Set@{tvm\+::arith\+::\+Int\+Set}!can\+\_\+prove\+\_\+negative@{can\+\_\+prove\+\_\+negative}}
+\index{can\+\_\+prove\+\_\+negative@{can\+\_\+prove\+\_\+negative}!tvm\+::arith\+::\+Int\+Set@{tvm\+::arith\+::\+Int\+Set}}
+\subsubsection[{\texorpdfstring{can\+\_\+prove\+\_\+negative() const }{can_prove_negative() const }}]{\setlength{\rightskip}{0pt plus 5cm}bool tvm\+::arith\+::\+Int\+Set\+::can\+\_\+prove\+\_\+negative (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}\hypertarget{classtvm_1_1arith_1_1IntSet_a407b23e6a7ab7af70aba0ba77eaec218}{}\label{classtvm_1_1arith_1_1IntSet_a407b23e6a7ab7af70aba0ba77eaec218}
+\begin{DoxyReturn}{Returns}
+Whether the set is proved to be smaller than 0 
+\end{DoxyReturn}
+\index{tvm\+::arith\+::\+Int\+Set@{tvm\+::arith\+::\+Int\+Set}!can\+\_\+prove\+\_\+non\+\_\+negative@{can\+\_\+prove\+\_\+non\+\_\+negative}}
+\index{can\+\_\+prove\+\_\+non\+\_\+negative@{can\+\_\+prove\+\_\+non\+\_\+negative}!tvm\+::arith\+::\+Int\+Set@{tvm\+::arith\+::\+Int\+Set}}
+\subsubsection[{\texorpdfstring{can\+\_\+prove\+\_\+non\+\_\+negative() const }{can_prove_non_negative() const }}]{\setlength{\rightskip}{0pt plus 5cm}bool tvm\+::arith\+::\+Int\+Set\+::can\+\_\+prove\+\_\+non\+\_\+negative (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}\hypertarget{classtvm_1_1arith_1_1IntSet_a70785e828279d810ec4d34137cd588cf}{}\label{classtvm_1_1arith_1_1IntSet_a70785e828279d810ec4d34137cd588cf}
+\begin{DoxyReturn}{Returns}
+Whether the set is proved to be larger than or equal to 0 
+\end{DoxyReturn}
+\index{tvm\+::arith\+::\+Int\+Set@{tvm\+::arith\+::\+Int\+Set}!can\+\_\+prove\+\_\+non\+\_\+positive@{can\+\_\+prove\+\_\+non\+\_\+positive}}
+\index{can\+\_\+prove\+\_\+non\+\_\+positive@{can\+\_\+prove\+\_\+non\+\_\+positive}!tvm\+::arith\+::\+Int\+Set@{tvm\+::arith\+::\+Int\+Set}}
+\subsubsection[{\texorpdfstring{can\+\_\+prove\+\_\+non\+\_\+positive() const }{can_prove_non_positive() const }}]{\setlength{\rightskip}{0pt plus 5cm}bool tvm\+::arith\+::\+Int\+Set\+::can\+\_\+prove\+\_\+non\+\_\+positive (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}\hypertarget{classtvm_1_1arith_1_1IntSet_a4d56a12f7d192e5b739f83999ab4ccc3}{}\label{classtvm_1_1arith_1_1IntSet_a4d56a12f7d192e5b739f83999ab4ccc3}
+\begin{DoxyReturn}{Returns}
+Whether the set is proved to be smaller than or equal to 0 
+\end{DoxyReturn}
+\index{tvm\+::arith\+::\+Int\+Set@{tvm\+::arith\+::\+Int\+Set}!can\+\_\+prove\+\_\+positive@{can\+\_\+prove\+\_\+positive}}
+\index{can\+\_\+prove\+\_\+positive@{can\+\_\+prove\+\_\+positive}!tvm\+::arith\+::\+Int\+Set@{tvm\+::arith\+::\+Int\+Set}}
+\subsubsection[{\texorpdfstring{can\+\_\+prove\+\_\+positive() const }{can_prove_positive() const }}]{\setlength{\rightskip}{0pt plus 5cm}bool tvm\+::arith\+::\+Int\+Set\+::can\+\_\+prove\+\_\+positive (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}\hypertarget{classtvm_1_1arith_1_1IntSet_a217b7d0c997ecd1752b590778f4ea8fb}{}\label{classtvm_1_1arith_1_1IntSet_a217b7d0c997ecd1752b590778f4ea8fb}
+\begin{DoxyReturn}{Returns}
+Whether the set is proved to be bigger than 0 
+\end{DoxyReturn}
+\index{tvm\+::arith\+::\+Int\+Set@{tvm\+::arith\+::\+Int\+Set}!cover\+\_\+range@{cover\+\_\+range}}
+\index{cover\+\_\+range@{cover\+\_\+range}!tvm\+::arith\+::\+Int\+Set@{tvm\+::arith\+::\+Int\+Set}}
+\subsubsection[{\texorpdfstring{cover\+\_\+range(\+Range max\+\_\+range) const }{cover_range(Range max_range) const }}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Range} tvm\+::arith\+::\+Int\+Set\+::cover\+\_\+range (
+\begin{DoxyParamCaption}
+\item[{{\bf Range}}]{max\+\_\+range}
+\end{DoxyParamCaption}
+) const}\hypertarget{classtvm_1_1arith_1_1IntSet_a87331de8815851fcd10bf5e3b878062e}{}\label{classtvm_1_1arith_1_1IntSet_a87331de8815851fcd10bf5e3b878062e}
+
+
+Find a range that covers the region. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em max\+\_\+range} & The range to be covered. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The covering range. 
+\end{DoxyReturn}
+\index{tvm\+::arith\+::\+Int\+Set@{tvm\+::arith\+::\+Int\+Set}!everything@{everything}}
+\index{everything@{everything}!tvm\+::arith\+::\+Int\+Set@{tvm\+::arith\+::\+Int\+Set}}
+\subsubsection[{\texorpdfstring{everything()}{everything()}}]{\setlength{\rightskip}{0pt plus 5cm}static {\bf Int\+Set} tvm\+::arith\+::\+Int\+Set\+::everything (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}\hypertarget{classtvm_1_1arith_1_1IntSet_aaeffa7a1eb404803a88c5be3ca705090}{}\label{classtvm_1_1arith_1_1IntSet_aaeffa7a1eb404803a88c5be3ca705090}
+\begin{DoxyReturn}{Returns}
+The set contains everything 
+\end{DoxyReturn}
+\index{tvm\+::arith\+::\+Int\+Set@{tvm\+::arith\+::\+Int\+Set}!interval@{interval}}
+\index{interval@{interval}!tvm\+::arith\+::\+Int\+Set@{tvm\+::arith\+::\+Int\+Set}}
+\subsubsection[{\texorpdfstring{interval(\+Prim\+Expr min, Prim\+Expr max)}{interval(PrimExpr min, PrimExpr max)}}]{\setlength{\rightskip}{0pt plus 5cm}static {\bf Int\+Set} tvm\+::arith\+::\+Int\+Set\+::interval (
+\begin{DoxyParamCaption}
+\item[{{\bf Prim\+Expr}}]{min, }
+\item[{{\bf Prim\+Expr}}]{max}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}\hypertarget{classtvm_1_1arith_1_1IntSet_a56454f692fb041e6b51544c4f84f1420}{}\label{classtvm_1_1arith_1_1IntSet_a56454f692fb041e6b51544c4f84f1420}
+
+
+Construct a set representing a interval. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em min} & The minimum value of the interval. \\
+\hline
+{\em max} & The maximum value of the interval. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+constructed set. 
+\end{DoxyReturn}
+\index{tvm\+::arith\+::\+Int\+Set@{tvm\+::arith\+::\+Int\+Set}!is\+\_\+everything@{is\+\_\+everything}}
+\index{is\+\_\+everything@{is\+\_\+everything}!tvm\+::arith\+::\+Int\+Set@{tvm\+::arith\+::\+Int\+Set}}
+\subsubsection[{\texorpdfstring{is\+\_\+everything() const }{is_everything() const }}]{\setlength{\rightskip}{0pt plus 5cm}bool tvm\+::arith\+::\+Int\+Set\+::is\+\_\+everything (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}\hypertarget{classtvm_1_1arith_1_1IntSet_a76915ad1257dba46982dca412164193a}{}\label{classtvm_1_1arith_1_1IntSet_a76915ad1257dba46982dca412164193a}
+\begin{DoxyReturn}{Returns}
+Whether the set represent everything 
+\end{DoxyReturn}
+\index{tvm\+::arith\+::\+Int\+Set@{tvm\+::arith\+::\+Int\+Set}!is\+\_\+nothing@{is\+\_\+nothing}}
+\index{is\+\_\+nothing@{is\+\_\+nothing}!tvm\+::arith\+::\+Int\+Set@{tvm\+::arith\+::\+Int\+Set}}
+\subsubsection[{\texorpdfstring{is\+\_\+nothing() const }{is_nothing() const }}]{\setlength{\rightskip}{0pt plus 5cm}bool tvm\+::arith\+::\+Int\+Set\+::is\+\_\+nothing (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}\hypertarget{classtvm_1_1arith_1_1IntSet_a360733fbb5026aa3b451c948447cf868}{}\label{classtvm_1_1arith_1_1IntSet_a360733fbb5026aa3b451c948447cf868}
+\begin{DoxyReturn}{Returns}
+Whether the set represent nothing 
+\end{DoxyReturn}
+\index{tvm\+::arith\+::\+Int\+Set@{tvm\+::arith\+::\+Int\+Set}!is\+\_\+single\+\_\+point@{is\+\_\+single\+\_\+point}}
+\index{is\+\_\+single\+\_\+point@{is\+\_\+single\+\_\+point}!tvm\+::arith\+::\+Int\+Set@{tvm\+::arith\+::\+Int\+Set}}
+\subsubsection[{\texorpdfstring{is\+\_\+single\+\_\+point() const }{is_single_point() const }}]{\setlength{\rightskip}{0pt plus 5cm}bool tvm\+::arith\+::\+Int\+Set\+::is\+\_\+single\+\_\+point (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}\hypertarget{classtvm_1_1arith_1_1IntSet_a2a8851c9c9d80dc4fef43919f069e828}{}\label{classtvm_1_1arith_1_1IntSet_a2a8851c9c9d80dc4fef43919f069e828}
+\begin{DoxyReturn}{Returns}
+Whether the set is a single point 
+\end{DoxyReturn}
+\index{tvm\+::arith\+::\+Int\+Set@{tvm\+::arith\+::\+Int\+Set}!match\+\_\+range@{match\+\_\+range}}
+\index{match\+\_\+range@{match\+\_\+range}!tvm\+::arith\+::\+Int\+Set@{tvm\+::arith\+::\+Int\+Set}}
+\subsubsection[{\texorpdfstring{match\+\_\+range(const Range \&r) const }{match_range(const Range &r) const }}]{\setlength{\rightskip}{0pt plus 5cm}bool tvm\+::arith\+::\+Int\+Set\+::match\+\_\+range (
+\begin{DoxyParamCaption}
+\item[{const {\bf Range} \&}]{r}
+\end{DoxyParamCaption}
+) const}\hypertarget{classtvm_1_1arith_1_1IntSet_af6b303660c7d2bf53f48716c9c8f9abe}{}\label{classtvm_1_1arith_1_1IntSet_af6b303660c7d2bf53f48716c9c8f9abe}
+
+
+Try to match \hyperlink{classtvm_1_1arith_1_1IntSet}{Int\+Set} with range r. 
+
+\begin{DoxyNote}{Note}
+It is guanrateed that Int\+Set\+::range(r).match\+\_\+range(r) == true 
+\end{DoxyNote}
+\begin{DoxyReturn}{Returns}
+true if we can prove they are the same. 
+\end{DoxyReturn}
+\index{tvm\+::arith\+::\+Int\+Set@{tvm\+::arith\+::\+Int\+Set}!max@{max}}
+\index{max@{max}!tvm\+::arith\+::\+Int\+Set@{tvm\+::arith\+::\+Int\+Set}}
+\subsubsection[{\texorpdfstring{max() const }{max() const }}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Prim\+Expr} tvm\+::arith\+::\+Int\+Set\+::max (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}\hypertarget{classtvm_1_1arith_1_1IntSet_afc04d6fd5d46def5dff8f69d344df107}{}\label{classtvm_1_1arith_1_1IntSet_afc04d6fd5d46def5dff8f69d344df107}
+\begin{DoxyReturn}{Returns}
+upper bound of the set 
+\end{DoxyReturn}
+\index{tvm\+::arith\+::\+Int\+Set@{tvm\+::arith\+::\+Int\+Set}!min@{min}}
+\index{min@{min}!tvm\+::arith\+::\+Int\+Set@{tvm\+::arith\+::\+Int\+Set}}
+\subsubsection[{\texorpdfstring{min() const }{min() const }}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Prim\+Expr} tvm\+::arith\+::\+Int\+Set\+::min (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}\hypertarget{classtvm_1_1arith_1_1IntSet_ab4b94806a72afc801f392b6c1e09b2bd}{}\label{classtvm_1_1arith_1_1IntSet_ab4b94806a72afc801f392b6c1e09b2bd}
+\begin{DoxyReturn}{Returns}
+Lower bound of the set 
+\end{DoxyReturn}
+\index{tvm\+::arith\+::\+Int\+Set@{tvm\+::arith\+::\+Int\+Set}!nothing@{nothing}}
+\index{nothing@{nothing}!tvm\+::arith\+::\+Int\+Set@{tvm\+::arith\+::\+Int\+Set}}
+\subsubsection[{\texorpdfstring{nothing()}{nothing()}}]{\setlength{\rightskip}{0pt plus 5cm}static {\bf Int\+Set} tvm\+::arith\+::\+Int\+Set\+::nothing (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}\hypertarget{classtvm_1_1arith_1_1IntSet_a5c4cd4c999b14280a237c0afd3360aca}{}\label{classtvm_1_1arith_1_1IntSet_a5c4cd4c999b14280a237c0afd3360aca}
+\begin{DoxyReturn}{Returns}
+The set contains nothing 
+\end{DoxyReturn}
+\index{tvm\+::arith\+::\+Int\+Set@{tvm\+::arith\+::\+Int\+Set}!operator-\/$>$@{operator-\/$>$}}
+\index{operator-\/$>$@{operator-\/$>$}!tvm\+::arith\+::\+Int\+Set@{tvm\+::arith\+::\+Int\+Set}}
+\subsubsection[{\texorpdfstring{operator-\/$>$() const }{operator->() const }}]{\setlength{\rightskip}{0pt plus 5cm}const {\bf Int\+Set\+Node}$\ast$ tvm\+::arith\+::\+Int\+Set\+::operator-\/$>$ (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classtvm_1_1arith_1_1IntSet_aaea2d5a2e766abae102bf56f3ee5ec35}{}\label{classtvm_1_1arith_1_1IntSet_aaea2d5a2e766abae102bf56f3ee5ec35}
+
+
+access the internal node container 
+
+\begin{DoxyReturn}{Returns}
+the pointer to the internal node container 
+\end{DoxyReturn}
+\index{tvm\+::arith\+::\+Int\+Set@{tvm\+::arith\+::\+Int\+Set}!point\+\_\+value@{point\+\_\+value}}
+\index{point\+\_\+value@{point\+\_\+value}!tvm\+::arith\+::\+Int\+Set@{tvm\+::arith\+::\+Int\+Set}}
+\subsubsection[{\texorpdfstring{point\+\_\+value() const }{point_value() const }}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Prim\+Expr} tvm\+::arith\+::\+Int\+Set\+::point\+\_\+value (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}\hypertarget{classtvm_1_1arith_1_1IntSet_a0c8ce073360823084109d976721174b5}{}\label{classtvm_1_1arith_1_1IntSet_a0c8ce073360823084109d976721174b5}
+
+
+The single point value, call only if is\+\_\+single\+\_\+point is true. 
+
+\begin{DoxyReturn}{Returns}
+The point value. 
+\end{DoxyReturn}
+\index{tvm\+::arith\+::\+Int\+Set@{tvm\+::arith\+::\+Int\+Set}!range@{range}}
+\index{range@{range}!tvm\+::arith\+::\+Int\+Set@{tvm\+::arith\+::\+Int\+Set}}
+\subsubsection[{\texorpdfstring{range(\+Range r)}{range(Range r)}}]{\setlength{\rightskip}{0pt plus 5cm}static {\bf Int\+Set} tvm\+::arith\+::\+Int\+Set\+::range (
+\begin{DoxyParamCaption}
+\item[{{\bf Range}}]{r}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}\hypertarget{classtvm_1_1arith_1_1IntSet_afad6e9a1b54e9aa2b35c56cc9ebef168}{}\label{classtvm_1_1arith_1_1IntSet_afad6e9a1b54e9aa2b35c56cc9ebef168}
+
+
+Construct a set representing a range. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em r} & The range \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+constructed set. 
+\end{DoxyReturn}
+\index{tvm\+::arith\+::\+Int\+Set@{tvm\+::arith\+::\+Int\+Set}!sign\+\_\+type@{sign\+\_\+type}}
+\index{sign\+\_\+type@{sign\+\_\+type}!tvm\+::arith\+::\+Int\+Set@{tvm\+::arith\+::\+Int\+Set}}
+\subsubsection[{\texorpdfstring{sign\+\_\+type() const }{sign_type() const }}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Sign\+Type} tvm\+::arith\+::\+Int\+Set\+::sign\+\_\+type (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}\hypertarget{classtvm_1_1arith_1_1IntSet_a36d9ef554088056be1ce517f1ceea3f1}{}\label{classtvm_1_1arith_1_1IntSet_a36d9ef554088056be1ce517f1ceea3f1}
+\begin{DoxyReturn}{Returns}
+The sign of the elements in the integer set 
+\end{DoxyReturn}
+\index{tvm\+::arith\+::\+Int\+Set@{tvm\+::arith\+::\+Int\+Set}!single\+\_\+point@{single\+\_\+point}}
+\index{single\+\_\+point@{single\+\_\+point}!tvm\+::arith\+::\+Int\+Set@{tvm\+::arith\+::\+Int\+Set}}
+\subsubsection[{\texorpdfstring{single\+\_\+point(\+Prim\+Expr point)}{single_point(PrimExpr point)}}]{\setlength{\rightskip}{0pt plus 5cm}static {\bf Int\+Set} tvm\+::arith\+::\+Int\+Set\+::single\+\_\+point (
+\begin{DoxyParamCaption}
+\item[{{\bf Prim\+Expr}}]{point}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}\hypertarget{classtvm_1_1arith_1_1IntSet_aa6c7870804e1603736ae6c76d7179c6a}{}\label{classtvm_1_1arith_1_1IntSet_aa6c7870804e1603736ae6c76d7179c6a}
+
+
+construct a point set. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em point} & The point in the set. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+construct a single point set 
+\end{DoxyReturn}
+\index{tvm\+::arith\+::\+Int\+Set@{tvm\+::arith\+::\+Int\+Set}!vector@{vector}}
+\index{vector@{vector}!tvm\+::arith\+::\+Int\+Set@{tvm\+::arith\+::\+Int\+Set}}
+\subsubsection[{\texorpdfstring{vector(\+Prim\+Expr vec)}{vector(PrimExpr vec)}}]{\setlength{\rightskip}{0pt plus 5cm}static {\bf Int\+Set} tvm\+::arith\+::\+Int\+Set\+::vector (
+\begin{DoxyParamCaption}
+\item[{{\bf Prim\+Expr}}]{vec}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}\hypertarget{classtvm_1_1arith_1_1IntSet_a3f8837f5cbe28739550a528214eb91c6}{}\label{classtvm_1_1arith_1_1IntSet_a3f8837f5cbe28739550a528214eb91c6}
+
+
+construct a integer set from vector expression. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em vec} & The vector expression, can also be single point. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The result set containing the indices in the vector. 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+include/tvm/arith/\hyperlink{int__set_8h}{int\+\_\+set.\+h}\end{DoxyCompactItemize}

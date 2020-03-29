@@ -1,0 +1,253 @@
+\hypertarget{classtvm_1_1relay_1_1ExprMutator}{}\section{tvm\+:\+:relay\+:\+:Expr\+Mutator Class Reference}
+\label{classtvm_1_1relay_1_1ExprMutator}\index{tvm\+::relay\+::\+Expr\+Mutator@{tvm\+::relay\+::\+Expr\+Mutator}}
+
+
+A wrapper around \hyperlink{classtvm_1_1relay_1_1ExprFunctor}{Expr\+Functor} which functionally updates the A\+ST.  
+
+
+
+
+{\ttfamily \#include $<$expr\+\_\+functor.\+h$>$}
+
+
+
+Inheritance diagram for tvm\+:\+:relay\+:\+:Expr\+Mutator\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=208pt]{classtvm_1_1relay_1_1ExprMutator__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for tvm\+:\+:relay\+:\+:Expr\+Mutator\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=208pt]{classtvm_1_1relay_1_1ExprMutator__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{namespacetvm_1_1relay_a5b84e3790f89bb3fad5c7911eeb99531}{Expr} \hyperlink{classtvm_1_1relay_1_1ExprMutator_ab8d4855c77e09d2274716ca2bbcf0a86}{Mutate} (const \hyperlink{namespacetvm_1_1relay_a5b84e3790f89bb3fad5c7911eeb99531}{Expr} \&expr)
+\begin{DoxyCompactList}\small\item\em Mutate is alias for Visit\+Expr. \end{DoxyCompactList}\item 
+\hyperlink{namespacetvm_1_1relay_a5b84e3790f89bb3fad5c7911eeb99531}{Expr} \hyperlink{classtvm_1_1relay_1_1ExprMutator_af64fcd37bf18a71a7a5f0eb58a9b9eba}{Visit\+Expr} (const \hyperlink{namespacetvm_1_1relay_a5b84e3790f89bb3fad5c7911eeb99531}{Expr} \&expr) override
+\item 
+\hyperlink{namespacetvm_1_1relay_a5b84e3790f89bb3fad5c7911eeb99531}{Expr} \hyperlink{classtvm_1_1relay_1_1ExprMutator_ad84a1bcfeb97ec4816579d2363cd76a1}{Visit\+Expr\+\_\+} (const \hyperlink{classtvm_1_1relay_1_1VarNode}{Var\+Node} $\ast$op) override
+\item 
+\hyperlink{namespacetvm_1_1relay_a5b84e3790f89bb3fad5c7911eeb99531}{Expr} \hyperlink{classtvm_1_1relay_1_1ExprMutator_aa7b993f25c157507d57b9c2718f2621e}{Visit\+Expr\+\_\+} (const \hyperlink{classtvm_1_1relay_1_1ConstantNode}{Constant\+Node} $\ast$op) override
+\item 
+\hyperlink{namespacetvm_1_1relay_a5b84e3790f89bb3fad5c7911eeb99531}{Expr} \hyperlink{classtvm_1_1relay_1_1ExprMutator_af5e80e31b1e5cc39176f7e9a14c623e6}{Visit\+Expr\+\_\+} (const \hyperlink{namespacetvm_1_1relay_afe7144195dbbc914183189444ef6a347}{Global\+Var\+Node} $\ast$op) override
+\item 
+\hyperlink{namespacetvm_1_1relay_a5b84e3790f89bb3fad5c7911eeb99531}{Expr} \hyperlink{classtvm_1_1relay_1_1ExprMutator_a07acf48b6c03fdd45f6fee3595358646}{Visit\+Expr\+\_\+} (const \hyperlink{namespacetvm_1_1relay_ac9d4f2cf78a48659817a88d890e1d142}{Op\+Node} $\ast$op) override
+\item 
+\hyperlink{namespacetvm_1_1relay_a5b84e3790f89bb3fad5c7911eeb99531}{Expr} \hyperlink{classtvm_1_1relay_1_1ExprMutator_a568baaf4dd295369b950e7bcb248e32f}{Visit\+Expr\+\_\+} (const \hyperlink{classtvm_1_1relay_1_1TupleNode}{Tuple\+Node} $\ast$op) override
+\item 
+\hyperlink{namespacetvm_1_1relay_a5b84e3790f89bb3fad5c7911eeb99531}{Expr} \hyperlink{classtvm_1_1relay_1_1ExprMutator_ad9e6cf40a15c931b4ad2891528c0e946}{Visit\+Expr\+\_\+} (const \hyperlink{classtvm_1_1relay_1_1FunctionNode}{Function\+Node} $\ast$op) override
+\item 
+\hyperlink{namespacetvm_1_1relay_a5b84e3790f89bb3fad5c7911eeb99531}{Expr} \hyperlink{classtvm_1_1relay_1_1ExprMutator_affe6bbbc8d394c8a0f4c459c6ae09e8f}{Visit\+Expr\+\_\+} (const \hyperlink{classtvm_1_1relay_1_1CallNode}{Call\+Node} $\ast$call\+\_\+node) override
+\item 
+\hyperlink{namespacetvm_1_1relay_a5b84e3790f89bb3fad5c7911eeb99531}{Expr} \hyperlink{classtvm_1_1relay_1_1ExprMutator_ae8e1f8512f277d0e2f0390ccad48b565}{Visit\+Expr\+\_\+} (const \hyperlink{classtvm_1_1relay_1_1LetNode}{Let\+Node} $\ast$op) override
+\item 
+\hyperlink{namespacetvm_1_1relay_a5b84e3790f89bb3fad5c7911eeb99531}{Expr} \hyperlink{classtvm_1_1relay_1_1ExprMutator_a8db108ba710993fafaf4c116d17c83af}{Visit\+Expr\+\_\+} (const \hyperlink{classtvm_1_1relay_1_1IfNode}{If\+Node} $\ast$op) override
+\item 
+\hyperlink{namespacetvm_1_1relay_a5b84e3790f89bb3fad5c7911eeb99531}{Expr} \hyperlink{classtvm_1_1relay_1_1ExprMutator_a0e70f362b6aeca9688344e5d135457d5}{Visit\+Expr\+\_\+} (const \hyperlink{classtvm_1_1relay_1_1TupleGetItemNode}{Tuple\+Get\+Item\+Node} $\ast$op) override
+\item 
+\hyperlink{namespacetvm_1_1relay_a5b84e3790f89bb3fad5c7911eeb99531}{Expr} \hyperlink{classtvm_1_1relay_1_1ExprMutator_ac22fb8d0001bb57b4dd4a796f32d4517}{Visit\+Expr\+\_\+} (const \hyperlink{classtvm_1_1relay_1_1RefCreateNode}{Ref\+Create\+Node} $\ast$op) override
+\item 
+\hyperlink{namespacetvm_1_1relay_a5b84e3790f89bb3fad5c7911eeb99531}{Expr} \hyperlink{classtvm_1_1relay_1_1ExprMutator_a139d2a36b9a3b4cb3c2d80ec09ff645b}{Visit\+Expr\+\_\+} (const \hyperlink{classtvm_1_1relay_1_1RefReadNode}{Ref\+Read\+Node} $\ast$op) override
+\item 
+\hyperlink{namespacetvm_1_1relay_a5b84e3790f89bb3fad5c7911eeb99531}{Expr} \hyperlink{classtvm_1_1relay_1_1ExprMutator_a03a4b48a2cdcf642f4cf3b9d55064f53}{Visit\+Expr\+\_\+} (const \hyperlink{classtvm_1_1relay_1_1RefWriteNode}{Ref\+Write\+Node} $\ast$op) override
+\item 
+\hyperlink{namespacetvm_1_1relay_a5b84e3790f89bb3fad5c7911eeb99531}{Expr} \hyperlink{classtvm_1_1relay_1_1ExprMutator_ad696a60de733dcaa29fedb963853a510}{Visit\+Expr\+\_\+} (const \hyperlink{namespacetvm_1_1relay_a6b95f70a9b44cc1c96593201594d1345}{Constructor\+Node} $\ast$op) override
+\item 
+\hyperlink{namespacetvm_1_1relay_a5b84e3790f89bb3fad5c7911eeb99531}{Expr} \hyperlink{classtvm_1_1relay_1_1ExprMutator_a927deef048b9b870193117c09567c767}{Visit\+Expr\+\_\+} (const \hyperlink{classtvm_1_1relay_1_1MatchNode}{Match\+Node} $\ast$op) override
+\item 
+virtual \hyperlink{namespacetvm_1_1relay_a661d95f170bca230773914caeef3fe52}{Type} \hyperlink{classtvm_1_1relay_1_1ExprMutator_ab4db31bc25fab94a92283b7291f1c178}{Visit\+Type} (const \hyperlink{namespacetvm_1_1relay_a661d95f170bca230773914caeef3fe52}{Type} \&t)
+\begin{DoxyCompactList}\small\item\em Used to visit the types inside of expressions. \end{DoxyCompactList}\item 
+virtual \hyperlink{classtvm_1_1relay_1_1Clause}{Clause} \hyperlink{classtvm_1_1relay_1_1ExprMutator_ae24134355b0e8c77aaab58c28a94202a}{Visit\+Clause} (const \hyperlink{classtvm_1_1relay_1_1Clause}{Clause} \&c)
+\item 
+virtual \hyperlink{classtvm_1_1relay_1_1Pattern}{Pattern} \hyperlink{classtvm_1_1relay_1_1ExprMutator_a18cefc9bf699954cba7546f914779415}{Visit\+Pattern} (const \hyperlink{classtvm_1_1relay_1_1Pattern}{Pattern} \&c)
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+std\+::unordered\+\_\+map$<$ \hyperlink{namespacetvm_1_1relay_a5b84e3790f89bb3fad5c7911eeb99531}{Expr}, \hyperlink{namespacetvm_1_1relay_a5b84e3790f89bb3fad5c7911eeb99531}{Expr}, Object\+Hash, Object\+Equal $>$ \hyperlink{classtvm_1_1relay_1_1ExprMutator_a68f3d44397b6070a2ed39f8425b36d3b}{memo\+\_\+}
+\begin{DoxyCompactList}\small\item\em Internal map used for memoization. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+A wrapper around \hyperlink{classtvm_1_1relay_1_1ExprFunctor}{Expr\+Functor} which functionally updates the A\+ST. 
+
+\hyperlink{classtvm_1_1relay_1_1ExprMutator}{Expr\+Mutator} treats Expr as dataflow graph, and only Mutate each Expr once. The mutated results are memoized in a map and reused so that local transformation on the dataflow preserves the graph structure. 
+
+\subsection{Member Function Documentation}
+\index{tvm\+::relay\+::\+Expr\+Mutator@{tvm\+::relay\+::\+Expr\+Mutator}!Mutate@{Mutate}}
+\index{Mutate@{Mutate}!tvm\+::relay\+::\+Expr\+Mutator@{tvm\+::relay\+::\+Expr\+Mutator}}
+\subsubsection[{\texorpdfstring{Mutate(const Expr \&expr)}{Mutate(const Expr &expr)}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Expr} tvm\+::relay\+::\+Expr\+Mutator\+::\+Mutate (
+\begin{DoxyParamCaption}
+\item[{const {\bf Expr} \&}]{expr}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classtvm_1_1relay_1_1ExprMutator_ab8d4855c77e09d2274716ca2bbcf0a86}{}\label{classtvm_1_1relay_1_1ExprMutator_ab8d4855c77e09d2274716ca2bbcf0a86}
+
+
+Mutate is alias for Visit\+Expr. 
+
+\begin{DoxyReturn}{Returns}
+expr. 
+\end{DoxyReturn}
+\index{tvm\+::relay\+::\+Expr\+Mutator@{tvm\+::relay\+::\+Expr\+Mutator}!Visit\+Clause@{Visit\+Clause}}
+\index{Visit\+Clause@{Visit\+Clause}!tvm\+::relay\+::\+Expr\+Mutator@{tvm\+::relay\+::\+Expr\+Mutator}}
+\subsubsection[{\texorpdfstring{Visit\+Clause(const Clause \&c)}{VisitClause(const Clause &c)}}]{\setlength{\rightskip}{0pt plus 5cm}virtual {\bf Clause} tvm\+::relay\+::\+Expr\+Mutator\+::\+Visit\+Clause (
+\begin{DoxyParamCaption}
+\item[{const {\bf Clause} \&}]{c}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\hypertarget{classtvm_1_1relay_1_1ExprMutator_ae24134355b0e8c77aaab58c28a94202a}{}\label{classtvm_1_1relay_1_1ExprMutator_ae24134355b0e8c77aaab58c28a94202a}
+\index{tvm\+::relay\+::\+Expr\+Mutator@{tvm\+::relay\+::\+Expr\+Mutator}!Visit\+Expr@{Visit\+Expr}}
+\index{Visit\+Expr@{Visit\+Expr}!tvm\+::relay\+::\+Expr\+Mutator@{tvm\+::relay\+::\+Expr\+Mutator}}
+\subsubsection[{\texorpdfstring{Visit\+Expr(const Expr \&expr) override}{VisitExpr(const Expr &expr) override}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Expr} tvm\+::relay\+::\+Expr\+Mutator\+::\+Visit\+Expr (
+\begin{DoxyParamCaption}
+\item[{const {\bf Expr} \&}]{expr}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [override]}}\hypertarget{classtvm_1_1relay_1_1ExprMutator_af64fcd37bf18a71a7a5f0eb58a9b9eba}{}\label{classtvm_1_1relay_1_1ExprMutator_af64fcd37bf18a71a7a5f0eb58a9b9eba}
+\index{tvm\+::relay\+::\+Expr\+Mutator@{tvm\+::relay\+::\+Expr\+Mutator}!Visit\+Expr\+\_\+@{Visit\+Expr\+\_\+}}
+\index{Visit\+Expr\+\_\+@{Visit\+Expr\+\_\+}!tvm\+::relay\+::\+Expr\+Mutator@{tvm\+::relay\+::\+Expr\+Mutator}}
+\subsubsection[{\texorpdfstring{Visit\+Expr\+\_\+(const Var\+Node $\ast$op) override}{VisitExpr_(const VarNode *op) override}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Expr} tvm\+::relay\+::\+Expr\+Mutator\+::\+Visit\+Expr\+\_\+ (
+\begin{DoxyParamCaption}
+\item[{const {\bf Var\+Node} $\ast$}]{op}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [override]}}\hypertarget{classtvm_1_1relay_1_1ExprMutator_ad84a1bcfeb97ec4816579d2363cd76a1}{}\label{classtvm_1_1relay_1_1ExprMutator_ad84a1bcfeb97ec4816579d2363cd76a1}
+\index{tvm\+::relay\+::\+Expr\+Mutator@{tvm\+::relay\+::\+Expr\+Mutator}!Visit\+Expr\+\_\+@{Visit\+Expr\+\_\+}}
+\index{Visit\+Expr\+\_\+@{Visit\+Expr\+\_\+}!tvm\+::relay\+::\+Expr\+Mutator@{tvm\+::relay\+::\+Expr\+Mutator}}
+\subsubsection[{\texorpdfstring{Visit\+Expr\+\_\+(const Constant\+Node $\ast$op) override}{VisitExpr_(const ConstantNode *op) override}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Expr} tvm\+::relay\+::\+Expr\+Mutator\+::\+Visit\+Expr\+\_\+ (
+\begin{DoxyParamCaption}
+\item[{const {\bf Constant\+Node} $\ast$}]{op}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [override]}}\hypertarget{classtvm_1_1relay_1_1ExprMutator_aa7b993f25c157507d57b9c2718f2621e}{}\label{classtvm_1_1relay_1_1ExprMutator_aa7b993f25c157507d57b9c2718f2621e}
+\index{tvm\+::relay\+::\+Expr\+Mutator@{tvm\+::relay\+::\+Expr\+Mutator}!Visit\+Expr\+\_\+@{Visit\+Expr\+\_\+}}
+\index{Visit\+Expr\+\_\+@{Visit\+Expr\+\_\+}!tvm\+::relay\+::\+Expr\+Mutator@{tvm\+::relay\+::\+Expr\+Mutator}}
+\subsubsection[{\texorpdfstring{Visit\+Expr\+\_\+(const Global\+Var\+Node $\ast$op) override}{VisitExpr_(const GlobalVarNode *op) override}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Expr} tvm\+::relay\+::\+Expr\+Mutator\+::\+Visit\+Expr\+\_\+ (
+\begin{DoxyParamCaption}
+\item[{const {\bf Global\+Var\+Node} $\ast$}]{op}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [override]}}\hypertarget{classtvm_1_1relay_1_1ExprMutator_af5e80e31b1e5cc39176f7e9a14c623e6}{}\label{classtvm_1_1relay_1_1ExprMutator_af5e80e31b1e5cc39176f7e9a14c623e6}
+\index{tvm\+::relay\+::\+Expr\+Mutator@{tvm\+::relay\+::\+Expr\+Mutator}!Visit\+Expr\+\_\+@{Visit\+Expr\+\_\+}}
+\index{Visit\+Expr\+\_\+@{Visit\+Expr\+\_\+}!tvm\+::relay\+::\+Expr\+Mutator@{tvm\+::relay\+::\+Expr\+Mutator}}
+\subsubsection[{\texorpdfstring{Visit\+Expr\+\_\+(const Op\+Node $\ast$op) override}{VisitExpr_(const OpNode *op) override}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Expr} tvm\+::relay\+::\+Expr\+Mutator\+::\+Visit\+Expr\+\_\+ (
+\begin{DoxyParamCaption}
+\item[{const {\bf Op\+Node} $\ast$}]{op}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [override]}}\hypertarget{classtvm_1_1relay_1_1ExprMutator_a07acf48b6c03fdd45f6fee3595358646}{}\label{classtvm_1_1relay_1_1ExprMutator_a07acf48b6c03fdd45f6fee3595358646}
+\index{tvm\+::relay\+::\+Expr\+Mutator@{tvm\+::relay\+::\+Expr\+Mutator}!Visit\+Expr\+\_\+@{Visit\+Expr\+\_\+}}
+\index{Visit\+Expr\+\_\+@{Visit\+Expr\+\_\+}!tvm\+::relay\+::\+Expr\+Mutator@{tvm\+::relay\+::\+Expr\+Mutator}}
+\subsubsection[{\texorpdfstring{Visit\+Expr\+\_\+(const Tuple\+Node $\ast$op) override}{VisitExpr_(const TupleNode *op) override}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Expr} tvm\+::relay\+::\+Expr\+Mutator\+::\+Visit\+Expr\+\_\+ (
+\begin{DoxyParamCaption}
+\item[{const {\bf Tuple\+Node} $\ast$}]{op}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [override]}}\hypertarget{classtvm_1_1relay_1_1ExprMutator_a568baaf4dd295369b950e7bcb248e32f}{}\label{classtvm_1_1relay_1_1ExprMutator_a568baaf4dd295369b950e7bcb248e32f}
+\index{tvm\+::relay\+::\+Expr\+Mutator@{tvm\+::relay\+::\+Expr\+Mutator}!Visit\+Expr\+\_\+@{Visit\+Expr\+\_\+}}
+\index{Visit\+Expr\+\_\+@{Visit\+Expr\+\_\+}!tvm\+::relay\+::\+Expr\+Mutator@{tvm\+::relay\+::\+Expr\+Mutator}}
+\subsubsection[{\texorpdfstring{Visit\+Expr\+\_\+(const Function\+Node $\ast$op) override}{VisitExpr_(const FunctionNode *op) override}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Expr} tvm\+::relay\+::\+Expr\+Mutator\+::\+Visit\+Expr\+\_\+ (
+\begin{DoxyParamCaption}
+\item[{const {\bf Function\+Node} $\ast$}]{op}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [override]}}\hypertarget{classtvm_1_1relay_1_1ExprMutator_ad9e6cf40a15c931b4ad2891528c0e946}{}\label{classtvm_1_1relay_1_1ExprMutator_ad9e6cf40a15c931b4ad2891528c0e946}
+\index{tvm\+::relay\+::\+Expr\+Mutator@{tvm\+::relay\+::\+Expr\+Mutator}!Visit\+Expr\+\_\+@{Visit\+Expr\+\_\+}}
+\index{Visit\+Expr\+\_\+@{Visit\+Expr\+\_\+}!tvm\+::relay\+::\+Expr\+Mutator@{tvm\+::relay\+::\+Expr\+Mutator}}
+\subsubsection[{\texorpdfstring{Visit\+Expr\+\_\+(const Call\+Node $\ast$call\+\_\+node) override}{VisitExpr_(const CallNode *call_node) override}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Expr} tvm\+::relay\+::\+Expr\+Mutator\+::\+Visit\+Expr\+\_\+ (
+\begin{DoxyParamCaption}
+\item[{const {\bf Call\+Node} $\ast$}]{call\+\_\+node}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [override]}}\hypertarget{classtvm_1_1relay_1_1ExprMutator_affe6bbbc8d394c8a0f4c459c6ae09e8f}{}\label{classtvm_1_1relay_1_1ExprMutator_affe6bbbc8d394c8a0f4c459c6ae09e8f}
+\index{tvm\+::relay\+::\+Expr\+Mutator@{tvm\+::relay\+::\+Expr\+Mutator}!Visit\+Expr\+\_\+@{Visit\+Expr\+\_\+}}
+\index{Visit\+Expr\+\_\+@{Visit\+Expr\+\_\+}!tvm\+::relay\+::\+Expr\+Mutator@{tvm\+::relay\+::\+Expr\+Mutator}}
+\subsubsection[{\texorpdfstring{Visit\+Expr\+\_\+(const Let\+Node $\ast$op) override}{VisitExpr_(const LetNode *op) override}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Expr} tvm\+::relay\+::\+Expr\+Mutator\+::\+Visit\+Expr\+\_\+ (
+\begin{DoxyParamCaption}
+\item[{const {\bf Let\+Node} $\ast$}]{op}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [override]}}\hypertarget{classtvm_1_1relay_1_1ExprMutator_ae8e1f8512f277d0e2f0390ccad48b565}{}\label{classtvm_1_1relay_1_1ExprMutator_ae8e1f8512f277d0e2f0390ccad48b565}
+\index{tvm\+::relay\+::\+Expr\+Mutator@{tvm\+::relay\+::\+Expr\+Mutator}!Visit\+Expr\+\_\+@{Visit\+Expr\+\_\+}}
+\index{Visit\+Expr\+\_\+@{Visit\+Expr\+\_\+}!tvm\+::relay\+::\+Expr\+Mutator@{tvm\+::relay\+::\+Expr\+Mutator}}
+\subsubsection[{\texorpdfstring{Visit\+Expr\+\_\+(const If\+Node $\ast$op) override}{VisitExpr_(const IfNode *op) override}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Expr} tvm\+::relay\+::\+Expr\+Mutator\+::\+Visit\+Expr\+\_\+ (
+\begin{DoxyParamCaption}
+\item[{const {\bf If\+Node} $\ast$}]{op}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [override]}}\hypertarget{classtvm_1_1relay_1_1ExprMutator_a8db108ba710993fafaf4c116d17c83af}{}\label{classtvm_1_1relay_1_1ExprMutator_a8db108ba710993fafaf4c116d17c83af}
+\index{tvm\+::relay\+::\+Expr\+Mutator@{tvm\+::relay\+::\+Expr\+Mutator}!Visit\+Expr\+\_\+@{Visit\+Expr\+\_\+}}
+\index{Visit\+Expr\+\_\+@{Visit\+Expr\+\_\+}!tvm\+::relay\+::\+Expr\+Mutator@{tvm\+::relay\+::\+Expr\+Mutator}}
+\subsubsection[{\texorpdfstring{Visit\+Expr\+\_\+(const Tuple\+Get\+Item\+Node $\ast$op) override}{VisitExpr_(const TupleGetItemNode *op) override}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Expr} tvm\+::relay\+::\+Expr\+Mutator\+::\+Visit\+Expr\+\_\+ (
+\begin{DoxyParamCaption}
+\item[{const {\bf Tuple\+Get\+Item\+Node} $\ast$}]{op}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [override]}}\hypertarget{classtvm_1_1relay_1_1ExprMutator_a0e70f362b6aeca9688344e5d135457d5}{}\label{classtvm_1_1relay_1_1ExprMutator_a0e70f362b6aeca9688344e5d135457d5}
+\index{tvm\+::relay\+::\+Expr\+Mutator@{tvm\+::relay\+::\+Expr\+Mutator}!Visit\+Expr\+\_\+@{Visit\+Expr\+\_\+}}
+\index{Visit\+Expr\+\_\+@{Visit\+Expr\+\_\+}!tvm\+::relay\+::\+Expr\+Mutator@{tvm\+::relay\+::\+Expr\+Mutator}}
+\subsubsection[{\texorpdfstring{Visit\+Expr\+\_\+(const Ref\+Create\+Node $\ast$op) override}{VisitExpr_(const RefCreateNode *op) override}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Expr} tvm\+::relay\+::\+Expr\+Mutator\+::\+Visit\+Expr\+\_\+ (
+\begin{DoxyParamCaption}
+\item[{const {\bf Ref\+Create\+Node} $\ast$}]{op}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [override]}}\hypertarget{classtvm_1_1relay_1_1ExprMutator_ac22fb8d0001bb57b4dd4a796f32d4517}{}\label{classtvm_1_1relay_1_1ExprMutator_ac22fb8d0001bb57b4dd4a796f32d4517}
+\index{tvm\+::relay\+::\+Expr\+Mutator@{tvm\+::relay\+::\+Expr\+Mutator}!Visit\+Expr\+\_\+@{Visit\+Expr\+\_\+}}
+\index{Visit\+Expr\+\_\+@{Visit\+Expr\+\_\+}!tvm\+::relay\+::\+Expr\+Mutator@{tvm\+::relay\+::\+Expr\+Mutator}}
+\subsubsection[{\texorpdfstring{Visit\+Expr\+\_\+(const Ref\+Read\+Node $\ast$op) override}{VisitExpr_(const RefReadNode *op) override}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Expr} tvm\+::relay\+::\+Expr\+Mutator\+::\+Visit\+Expr\+\_\+ (
+\begin{DoxyParamCaption}
+\item[{const {\bf Ref\+Read\+Node} $\ast$}]{op}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [override]}}\hypertarget{classtvm_1_1relay_1_1ExprMutator_a139d2a36b9a3b4cb3c2d80ec09ff645b}{}\label{classtvm_1_1relay_1_1ExprMutator_a139d2a36b9a3b4cb3c2d80ec09ff645b}
+\index{tvm\+::relay\+::\+Expr\+Mutator@{tvm\+::relay\+::\+Expr\+Mutator}!Visit\+Expr\+\_\+@{Visit\+Expr\+\_\+}}
+\index{Visit\+Expr\+\_\+@{Visit\+Expr\+\_\+}!tvm\+::relay\+::\+Expr\+Mutator@{tvm\+::relay\+::\+Expr\+Mutator}}
+\subsubsection[{\texorpdfstring{Visit\+Expr\+\_\+(const Ref\+Write\+Node $\ast$op) override}{VisitExpr_(const RefWriteNode *op) override}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Expr} tvm\+::relay\+::\+Expr\+Mutator\+::\+Visit\+Expr\+\_\+ (
+\begin{DoxyParamCaption}
+\item[{const {\bf Ref\+Write\+Node} $\ast$}]{op}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [override]}}\hypertarget{classtvm_1_1relay_1_1ExprMutator_a03a4b48a2cdcf642f4cf3b9d55064f53}{}\label{classtvm_1_1relay_1_1ExprMutator_a03a4b48a2cdcf642f4cf3b9d55064f53}
+\index{tvm\+::relay\+::\+Expr\+Mutator@{tvm\+::relay\+::\+Expr\+Mutator}!Visit\+Expr\+\_\+@{Visit\+Expr\+\_\+}}
+\index{Visit\+Expr\+\_\+@{Visit\+Expr\+\_\+}!tvm\+::relay\+::\+Expr\+Mutator@{tvm\+::relay\+::\+Expr\+Mutator}}
+\subsubsection[{\texorpdfstring{Visit\+Expr\+\_\+(const Constructor\+Node $\ast$op) override}{VisitExpr_(const ConstructorNode *op) override}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Expr} tvm\+::relay\+::\+Expr\+Mutator\+::\+Visit\+Expr\+\_\+ (
+\begin{DoxyParamCaption}
+\item[{const {\bf Constructor\+Node} $\ast$}]{op}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [override]}}\hypertarget{classtvm_1_1relay_1_1ExprMutator_ad696a60de733dcaa29fedb963853a510}{}\label{classtvm_1_1relay_1_1ExprMutator_ad696a60de733dcaa29fedb963853a510}
+\index{tvm\+::relay\+::\+Expr\+Mutator@{tvm\+::relay\+::\+Expr\+Mutator}!Visit\+Expr\+\_\+@{Visit\+Expr\+\_\+}}
+\index{Visit\+Expr\+\_\+@{Visit\+Expr\+\_\+}!tvm\+::relay\+::\+Expr\+Mutator@{tvm\+::relay\+::\+Expr\+Mutator}}
+\subsubsection[{\texorpdfstring{Visit\+Expr\+\_\+(const Match\+Node $\ast$op) override}{VisitExpr_(const MatchNode *op) override}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Expr} tvm\+::relay\+::\+Expr\+Mutator\+::\+Visit\+Expr\+\_\+ (
+\begin{DoxyParamCaption}
+\item[{const {\bf Match\+Node} $\ast$}]{op}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [override]}}\hypertarget{classtvm_1_1relay_1_1ExprMutator_a927deef048b9b870193117c09567c767}{}\label{classtvm_1_1relay_1_1ExprMutator_a927deef048b9b870193117c09567c767}
+\index{tvm\+::relay\+::\+Expr\+Mutator@{tvm\+::relay\+::\+Expr\+Mutator}!Visit\+Pattern@{Visit\+Pattern}}
+\index{Visit\+Pattern@{Visit\+Pattern}!tvm\+::relay\+::\+Expr\+Mutator@{tvm\+::relay\+::\+Expr\+Mutator}}
+\subsubsection[{\texorpdfstring{Visit\+Pattern(const Pattern \&c)}{VisitPattern(const Pattern &c)}}]{\setlength{\rightskip}{0pt plus 5cm}virtual {\bf Pattern} tvm\+::relay\+::\+Expr\+Mutator\+::\+Visit\+Pattern (
+\begin{DoxyParamCaption}
+\item[{const {\bf Pattern} \&}]{c}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\hypertarget{classtvm_1_1relay_1_1ExprMutator_a18cefc9bf699954cba7546f914779415}{}\label{classtvm_1_1relay_1_1ExprMutator_a18cefc9bf699954cba7546f914779415}
+\index{tvm\+::relay\+::\+Expr\+Mutator@{tvm\+::relay\+::\+Expr\+Mutator}!Visit\+Type@{Visit\+Type}}
+\index{Visit\+Type@{Visit\+Type}!tvm\+::relay\+::\+Expr\+Mutator@{tvm\+::relay\+::\+Expr\+Mutator}}
+\subsubsection[{\texorpdfstring{Visit\+Type(const Type \&t)}{VisitType(const Type &t)}}]{\setlength{\rightskip}{0pt plus 5cm}virtual {\bf Type} tvm\+::relay\+::\+Expr\+Mutator\+::\+Visit\+Type (
+\begin{DoxyParamCaption}
+\item[{const {\bf Type} \&}]{t}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\hypertarget{classtvm_1_1relay_1_1ExprMutator_ab4db31bc25fab94a92283b7291f1c178}{}\label{classtvm_1_1relay_1_1ExprMutator_ab4db31bc25fab94a92283b7291f1c178}
+
+
+Used to visit the types inside of expressions. 
+
+Can be overloaded to transform the types in arbitrary ways, one way would be to define a sub-\/class of type visitor for types which transform them appropriately. 
+
+\subsection{Member Data Documentation}
+\index{tvm\+::relay\+::\+Expr\+Mutator@{tvm\+::relay\+::\+Expr\+Mutator}!memo\+\_\+@{memo\+\_\+}}
+\index{memo\+\_\+@{memo\+\_\+}!tvm\+::relay\+::\+Expr\+Mutator@{tvm\+::relay\+::\+Expr\+Mutator}}
+\subsubsection[{\texorpdfstring{memo\+\_\+}{memo_}}]{\setlength{\rightskip}{0pt plus 5cm}std\+::unordered\+\_\+map$<${\bf Expr}, {\bf Expr}, Object\+Hash, Object\+Equal$>$ tvm\+::relay\+::\+Expr\+Mutator\+::memo\+\_\+\hspace{0.3cm}{\ttfamily [protected]}}\hypertarget{classtvm_1_1relay_1_1ExprMutator_a68f3d44397b6070a2ed39f8425b36d3b}{}\label{classtvm_1_1relay_1_1ExprMutator_a68f3d44397b6070a2ed39f8425b36d3b}
+
+
+Internal map used for memoization. 
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+include/tvm/relay/\hyperlink{relay_2expr__functor_8h}{expr\+\_\+functor.\+h}\end{DoxyCompactItemize}

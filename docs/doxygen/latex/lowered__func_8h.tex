@@ -1,0 +1,54 @@
+\hypertarget{lowered__func_8h}{}\section{include/tvm/tir/lowered\+\_\+func.h File Reference}
+\label{lowered__func_8h}\index{include/tvm/tir/lowered\+\_\+func.\+h@{include/tvm/tir/lowered\+\_\+func.\+h}}
+
+
+Information about a lowered T\+VM function. This data structure is final step toward codegen.  
+
+
+{\ttfamily \#include $<$tvm/node/container.\+h$>$}\\*
+{\ttfamily \#include $<$tvm/tir/expr.\+h$>$}\\*
+{\ttfamily \#include $<$tvm/tir/stmt.\+h$>$}\\*
+{\ttfamily \#include $<$string$>$}\\*
+Include dependency graph for lowered\+\_\+func.\+h\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{lowered__func_8h__incl}
+\end{center}
+\end{figure}
+This graph shows which files directly or indirectly include this file\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{lowered__func_8h__dep__incl}
+\end{center}
+\end{figure}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \hyperlink{classtvm_1_1tir_1_1LoweredFunc}{tvm\+::tir\+::\+Lowered\+Func}
+\begin{DoxyCompactList}\small\item\em \hyperlink{classtvm_1_1tir_1_1LoweredFunc}{Lowered\+Func} represents function after lowering. This is the final IR representation before codegen. \end{DoxyCompactList}\item 
+class \hyperlink{classtvm_1_1tir_1_1LoweredFuncNode}{tvm\+::tir\+::\+Lowered\+Func\+Node}
+\begin{DoxyCompactList}\small\item\em Node container of \hyperlink{classtvm_1_1tir_1_1LoweredFunc}{Lowered\+Func}. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Namespaces}
+\begin{DoxyCompactItemize}
+\item 
+ \hyperlink{namespacetvm}{tvm}
+\item 
+ \hyperlink{namespacetvm_1_1tir}{tvm\+::tir}
+\end{DoxyCompactItemize}
+\subsection*{Enumerations}
+\begin{DoxyCompactItemize}
+\item 
+enum \hyperlink{namespacetvm_1_1tir_a69f0089a367b98e377b652186fa7dc66}{tvm\+::tir\+::\+Lowered\+Func\+Type} \+: int \{ \hyperlink{namespacetvm_1_1tir_a69f0089a367b98e377b652186fa7dc66accd368fda1b61f733343349a79cf2ca9}{tvm\+::tir\+::k\+Mixed\+Func} = 0, 
+\hyperlink{namespacetvm_1_1tir_a69f0089a367b98e377b652186fa7dc66acf71d9235254aaaf4856732d6f743858}{tvm\+::tir\+::k\+Host\+Func} = 1, 
+\hyperlink{namespacetvm_1_1tir_a69f0089a367b98e377b652186fa7dc66a6280765ba977e1b1b059d48dd508a628}{tvm\+::tir\+::k\+Device\+Func} = 2
+ \}\begin{DoxyCompactList}\small\item\em specific type of lowered function \end{DoxyCompactList}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Information about a lowered T\+VM function. This data structure is final step toward codegen. 
+

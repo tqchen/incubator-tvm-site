@@ -1,0 +1,50 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="structTVMParallelGroupEnv" kind="struct" language="C++" prot="public">
+    <compoundname>TVMParallelGroupEnv</compoundname>
+    <includes refid="c__backend__api_8h" local="no">c_backend_api.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structTVMParallelGroupEnv_1a0633fa0370c01f1ab38948a53801d90c" prot="public" static="no" mutable="no">
+        <type>void *</type>
+        <definition>void* TVMParallelGroupEnv::sync_handle</definition>
+        <argsstring></argsstring>
+        <name>sync_handle</name>
+        <briefdescription>
+<para>Auxiliary used for synchronization. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/runtime/c_backend_api.h" line="117" column="1" bodyfile="include/tvm/runtime/c_backend_api.h" bodystart="117" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structTVMParallelGroupEnv_1a6ff807972a918ee61dfc158abce825f6" prot="public" static="no" mutable="no">
+        <type>int32_t</type>
+        <definition>int32_t TVMParallelGroupEnv::num_task</definition>
+        <argsstring></argsstring>
+        <name>num_task</name>
+        <briefdescription>
+<para>total amount of task </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/runtime/c_backend_api.h" line="119" column="1" bodyfile="include/tvm/runtime/c_backend_api.h" bodystart="119" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Environment for TVM parallel task. </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="7325">
+        <label>TVMParallelGroupEnv</label>
+        <link refid="structTVMParallelGroupEnv"/>
+      </node>
+    </collaborationgraph>
+    <location file="include/tvm/runtime/c_backend_api.h" line="113" column="1" bodyfile="include/tvm/runtime/c_backend_api.h" bodystart="113" bodyend="120"/>
+    <listofallmembers>
+      <member refid="structTVMParallelGroupEnv_1a6ff807972a918ee61dfc158abce825f6" prot="public" virt="non-virtual"><scope>TVMParallelGroupEnv</scope><name>num_task</name></member>
+      <member refid="structTVMParallelGroupEnv_1a0633fa0370c01f1ab38948a53801d90c" prot="public" virt="non-virtual"><scope>TVMParallelGroupEnv</scope><name>sync_handle</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

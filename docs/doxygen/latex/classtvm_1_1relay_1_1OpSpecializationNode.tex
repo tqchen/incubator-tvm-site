@@ -1,0 +1,96 @@
+\hypertarget{classtvm_1_1relay_1_1OpSpecializationNode}{}\section{tvm\+:\+:relay\+:\+:Op\+Specialization\+Node Class Reference}
+\label{classtvm_1_1relay_1_1OpSpecializationNode}\index{tvm\+::relay\+::\+Op\+Specialization\+Node@{tvm\+::relay\+::\+Op\+Specialization\+Node}}
+
+
+Specialized implementations for operators under certain conditions.  
+
+
+
+
+{\ttfamily \#include $<$op\+\_\+strategy.\+h$>$}
+
+
+
+Inheritance diagram for tvm\+:\+:relay\+:\+:Op\+Specialization\+Node\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=285pt]{classtvm_1_1relay_1_1OpSpecializationNode__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for tvm\+:\+:relay\+:\+:Op\+Specialization\+Node\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classtvm_1_1relay_1_1OpSpecializationNode__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{classtvm_1_1relay_1_1OpSpecializationNode_a3590903d81f746830f5998505714823b}{Visit\+Attrs} (\hyperlink{classtvm_1_1AttrVisitor}{tvm\+::\+Attr\+Visitor} $\ast$v)
+\item 
+\hyperlink{classtvm_1_1relay_1_1OpSpecializationNode_a3b5193281eff0f2143a09e8b51406a55}{T\+V\+M\+\_\+\+D\+E\+C\+L\+A\+R\+E\+\_\+\+F\+I\+N\+A\+L\+\_\+\+O\+B\+J\+E\+C\+T\+\_\+\+I\+N\+FO} (\hyperlink{classtvm_1_1relay_1_1OpSpecializationNode}{Op\+Specialization\+Node}, \hyperlink{namespacetvm_1_1relay_a387f18e050d016c52ea6c4781e7cff6c}{Expr\+Node})
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classtvm_1_1Array}{Array}$<$ \hyperlink{classtvm_1_1relay_1_1OpImplementation}{Op\+Implementation} $>$ \hyperlink{classtvm_1_1relay_1_1OpSpecializationNode_a8d5ffe97532ff7b663d2b7da09bd9042}{implementations}
+\begin{DoxyCompactList}\small\item\em List of implementations. \end{DoxyCompactList}\item 
+\hyperlink{classtvm_1_1te_1_1SpecializedCondition}{te\+::\+Specialized\+Condition} \hyperlink{classtvm_1_1relay_1_1OpSpecializationNode_ad5875014bf3e9ce9ffe49af09bebdb99}{condition}
+\begin{DoxyCompactList}\small\item\em Condition to enable the specialization. Could be undefined to represent generic case. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static constexpr const char $\ast$ \hyperlink{classtvm_1_1relay_1_1OpSpecializationNode_afb3931d103169a872632a7bd949d0573}{\+\_\+type\+\_\+key} = \char`\"{}relay.\+Op\+Specialization\char`\"{}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Specialized implementations for operators under certain conditions. 
+
+\subsection{Member Function Documentation}
+\index{tvm\+::relay\+::\+Op\+Specialization\+Node@{tvm\+::relay\+::\+Op\+Specialization\+Node}!T\+V\+M\+\_\+\+D\+E\+C\+L\+A\+R\+E\+\_\+\+F\+I\+N\+A\+L\+\_\+\+O\+B\+J\+E\+C\+T\+\_\+\+I\+N\+FO@{T\+V\+M\+\_\+\+D\+E\+C\+L\+A\+R\+E\+\_\+\+F\+I\+N\+A\+L\+\_\+\+O\+B\+J\+E\+C\+T\+\_\+\+I\+N\+FO}}
+\index{T\+V\+M\+\_\+\+D\+E\+C\+L\+A\+R\+E\+\_\+\+F\+I\+N\+A\+L\+\_\+\+O\+B\+J\+E\+C\+T\+\_\+\+I\+N\+FO@{T\+V\+M\+\_\+\+D\+E\+C\+L\+A\+R\+E\+\_\+\+F\+I\+N\+A\+L\+\_\+\+O\+B\+J\+E\+C\+T\+\_\+\+I\+N\+FO}!tvm\+::relay\+::\+Op\+Specialization\+Node@{tvm\+::relay\+::\+Op\+Specialization\+Node}}
+\subsubsection[{\texorpdfstring{T\+V\+M\+\_\+\+D\+E\+C\+L\+A\+R\+E\+\_\+\+F\+I\+N\+A\+L\+\_\+\+O\+B\+J\+E\+C\+T\+\_\+\+I\+N\+F\+O(\+Op\+Specialization\+Node, Expr\+Node)}{TVM_DECLARE_FINAL_OBJECT_INFO(OpSpecializationNode, ExprNode)}}]{\setlength{\rightskip}{0pt plus 5cm}tvm\+::relay\+::\+Op\+Specialization\+Node\+::\+T\+V\+M\+\_\+\+D\+E\+C\+L\+A\+R\+E\+\_\+\+F\+I\+N\+A\+L\+\_\+\+O\+B\+J\+E\+C\+T\+\_\+\+I\+N\+FO (
+\begin{DoxyParamCaption}
+\item[{{\bf Op\+Specialization\+Node}}]{, }
+\item[{{\bf Expr\+Node}}]{}
+\end{DoxyParamCaption}
+)}\hypertarget{classtvm_1_1relay_1_1OpSpecializationNode_a3b5193281eff0f2143a09e8b51406a55}{}\label{classtvm_1_1relay_1_1OpSpecializationNode_a3b5193281eff0f2143a09e8b51406a55}
+\index{tvm\+::relay\+::\+Op\+Specialization\+Node@{tvm\+::relay\+::\+Op\+Specialization\+Node}!Visit\+Attrs@{Visit\+Attrs}}
+\index{Visit\+Attrs@{Visit\+Attrs}!tvm\+::relay\+::\+Op\+Specialization\+Node@{tvm\+::relay\+::\+Op\+Specialization\+Node}}
+\subsubsection[{\texorpdfstring{Visit\+Attrs(tvm\+::\+Attr\+Visitor $\ast$v)}{VisitAttrs(tvm::AttrVisitor *v)}}]{\setlength{\rightskip}{0pt plus 5cm}void tvm\+::relay\+::\+Op\+Specialization\+Node\+::\+Visit\+Attrs (
+\begin{DoxyParamCaption}
+\item[{{\bf tvm\+::\+Attr\+Visitor} $\ast$}]{v}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classtvm_1_1relay_1_1OpSpecializationNode_a3590903d81f746830f5998505714823b}{}\label{classtvm_1_1relay_1_1OpSpecializationNode_a3590903d81f746830f5998505714823b}
+
+
+\subsection{Member Data Documentation}
+\index{tvm\+::relay\+::\+Op\+Specialization\+Node@{tvm\+::relay\+::\+Op\+Specialization\+Node}!\+\_\+type\+\_\+key@{\+\_\+type\+\_\+key}}
+\index{\+\_\+type\+\_\+key@{\+\_\+type\+\_\+key}!tvm\+::relay\+::\+Op\+Specialization\+Node@{tvm\+::relay\+::\+Op\+Specialization\+Node}}
+\subsubsection[{\texorpdfstring{\+\_\+type\+\_\+key}{_type_key}}]{\setlength{\rightskip}{0pt plus 5cm}constexpr const char$\ast$ tvm\+::relay\+::\+Op\+Specialization\+Node\+::\+\_\+type\+\_\+key = \char`\"{}relay.\+Op\+Specialization\char`\"{}\hspace{0.3cm}{\ttfamily [static]}}\hypertarget{classtvm_1_1relay_1_1OpSpecializationNode_afb3931d103169a872632a7bd949d0573}{}\label{classtvm_1_1relay_1_1OpSpecializationNode_afb3931d103169a872632a7bd949d0573}
+\index{tvm\+::relay\+::\+Op\+Specialization\+Node@{tvm\+::relay\+::\+Op\+Specialization\+Node}!condition@{condition}}
+\index{condition@{condition}!tvm\+::relay\+::\+Op\+Specialization\+Node@{tvm\+::relay\+::\+Op\+Specialization\+Node}}
+\subsubsection[{\texorpdfstring{condition}{condition}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf te\+::\+Specialized\+Condition} tvm\+::relay\+::\+Op\+Specialization\+Node\+::condition}\hypertarget{classtvm_1_1relay_1_1OpSpecializationNode_ad5875014bf3e9ce9ffe49af09bebdb99}{}\label{classtvm_1_1relay_1_1OpSpecializationNode_ad5875014bf3e9ce9ffe49af09bebdb99}
+
+
+Condition to enable the specialization. Could be undefined to represent generic case. 
+
+\index{tvm\+::relay\+::\+Op\+Specialization\+Node@{tvm\+::relay\+::\+Op\+Specialization\+Node}!implementations@{implementations}}
+\index{implementations@{implementations}!tvm\+::relay\+::\+Op\+Specialization\+Node@{tvm\+::relay\+::\+Op\+Specialization\+Node}}
+\subsubsection[{\texorpdfstring{implementations}{implementations}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Array}$<${\bf Op\+Implementation}$>$ tvm\+::relay\+::\+Op\+Specialization\+Node\+::implementations}\hypertarget{classtvm_1_1relay_1_1OpSpecializationNode_a8d5ffe97532ff7b663d2b7da09bd9042}{}\label{classtvm_1_1relay_1_1OpSpecializationNode_a8d5ffe97532ff7b663d2b7da09bd9042}
+
+
+List of implementations. 
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+include/tvm/relay/\hyperlink{op__strategy_8h}{op\+\_\+strategy.\+h}\end{DoxyCompactItemize}

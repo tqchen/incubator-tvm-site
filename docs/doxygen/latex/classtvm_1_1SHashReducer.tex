@@ -1,0 +1,175 @@
+\hypertarget{classtvm_1_1SHashReducer}{}\section{tvm\+:\+:S\+Hash\+Reducer Class Reference}
+\label{classtvm_1_1SHashReducer}\index{tvm\+::\+S\+Hash\+Reducer@{tvm\+::\+S\+Hash\+Reducer}}
+
+
+A Reducer class to reduce the structural hash value.  
+
+
+
+
+{\ttfamily \#include $<$structural\+\_\+hash.\+h$>$}
+
+
+
+Collaboration diagram for tvm\+:\+:S\+Hash\+Reducer\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=196pt]{classtvm_1_1SHashReducer__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \hyperlink{classtvm_1_1SHashReducer_1_1Handler}{Handler}
+\begin{DoxyCompactList}\small\item\em Internal handler that defines custom behaviors. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classtvm_1_1SHashReducer_af7eb7ccc3e5863fe580f1b8dceac5d88}{S\+Hash\+Reducer} ()=default
+\begin{DoxyCompactList}\small\item\em default constructor \end{DoxyCompactList}\item 
+\hyperlink{classtvm_1_1SHashReducer_acb4d90cb74f617620d0027649adf8f17}{S\+Hash\+Reducer} (\hyperlink{classtvm_1_1SHashReducer_1_1Handler}{Handler} $\ast$handler, bool map\+\_\+free\+\_\+vars)
+\begin{DoxyCompactList}\small\item\em \hyperlink{classtvm_1_1Constructor}{Constructor} with a specific handler. \end{DoxyCompactList}\item 
+{\footnotesize template$<$typename T , typename  = typename std\+::enable\+\_\+if$<$             !std\+::is\+\_\+base\+\_\+of$<$\+Object\+Ref, T$>$\+::value$>$\+::type$>$ }\\void \hyperlink{classtvm_1_1SHashReducer_a22960af2148b4db6efea3e8d5ee96e52}{operator()} (const T \&key) const 
+\begin{DoxyCompactList}\small\item\em Push hash of key to the current sequence of hash values. \end{DoxyCompactList}\item 
+void \hyperlink{classtvm_1_1SHashReducer_aa4a96bd8462b6623f9c551f936623588}{operator()} (const Object\+Ref \&key) const 
+\begin{DoxyCompactList}\small\item\em Push hash of key to the current sequence of hash values. \end{DoxyCompactList}\item 
+void \hyperlink{classtvm_1_1SHashReducer_a86a3513ec9866c77c59231663caa28c9}{Def\+Hash} (const Object\+Ref \&key) const 
+\begin{DoxyCompactList}\small\item\em Push hash of key to the current sequence of hash values. \end{DoxyCompactList}\item 
+void \hyperlink{classtvm_1_1SHashReducer_ab9cf0c638238f55dd5b6f155d65f92ef}{Free\+Var\+Hash\+Impl} (const \hyperlink{classtvm_1_1runtime_1_1Object}{runtime\+::\+Object} $\ast$var) const 
+\begin{DoxyCompactList}\small\item\em Implementation for hash for a free var. \end{DoxyCompactList}\item 
+\hyperlink{classtvm_1_1SHashReducer_1_1Handler}{Handler} $\ast$ \hyperlink{classtvm_1_1SHashReducer_a492c322a6926478d8f0ef38afd57d8b9}{operator-\/$>$} () const 
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+A Reducer class to reduce the structural hash value. 
+
+The reducer will call the S\+Equal\+Hash function of each objects recursively.
+
+A S\+Equal\+Hash function will make a sequence of calls to the reducer to indicate a sequence of child hash values that the reducer need to combine inorder to obtain the hash value of the hash value of the parent object.
+
+Importantly, the reducer may not directly use recursive calls to compute the hash values of child objects directly.
+
+Instead, it can store the necessary hash computing task into a stack and reduce the result later. 
+
+\subsection{Constructor \& Destructor Documentation}
+\index{tvm\+::\+S\+Hash\+Reducer@{tvm\+::\+S\+Hash\+Reducer}!S\+Hash\+Reducer@{S\+Hash\+Reducer}}
+\index{S\+Hash\+Reducer@{S\+Hash\+Reducer}!tvm\+::\+S\+Hash\+Reducer@{tvm\+::\+S\+Hash\+Reducer}}
+\subsubsection[{\texorpdfstring{S\+Hash\+Reducer()=default}{SHashReducer()=default}}]{\setlength{\rightskip}{0pt plus 5cm}tvm\+::\+S\+Hash\+Reducer\+::\+S\+Hash\+Reducer (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [default]}}\hypertarget{classtvm_1_1SHashReducer_af7eb7ccc3e5863fe580f1b8dceac5d88}{}\label{classtvm_1_1SHashReducer_af7eb7ccc3e5863fe580f1b8dceac5d88}
+
+
+default constructor 
+
+\index{tvm\+::\+S\+Hash\+Reducer@{tvm\+::\+S\+Hash\+Reducer}!S\+Hash\+Reducer@{S\+Hash\+Reducer}}
+\index{S\+Hash\+Reducer@{S\+Hash\+Reducer}!tvm\+::\+S\+Hash\+Reducer@{tvm\+::\+S\+Hash\+Reducer}}
+\subsubsection[{\texorpdfstring{S\+Hash\+Reducer(\+Handler $\ast$handler, bool map\+\_\+free\+\_\+vars)}{SHashReducer(Handler *handler, bool map_free_vars)}}]{\setlength{\rightskip}{0pt plus 5cm}tvm\+::\+S\+Hash\+Reducer\+::\+S\+Hash\+Reducer (
+\begin{DoxyParamCaption}
+\item[{{\bf Handler} $\ast$}]{handler, }
+\item[{bool}]{map\+\_\+free\+\_\+vars}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [explicit]}}\hypertarget{classtvm_1_1SHashReducer_acb4d90cb74f617620d0027649adf8f17}{}\label{classtvm_1_1SHashReducer_acb4d90cb74f617620d0027649adf8f17}
+
+
+\hyperlink{classtvm_1_1Constructor}{Constructor} with a specific handler. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em handler} & The equal handler for objects. \\
+\hline
+{\em map\+\_\+free\+\_\+vars} & Whether to map free variables. \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\index{tvm\+::\+S\+Hash\+Reducer@{tvm\+::\+S\+Hash\+Reducer}!Def\+Hash@{Def\+Hash}}
+\index{Def\+Hash@{Def\+Hash}!tvm\+::\+S\+Hash\+Reducer@{tvm\+::\+S\+Hash\+Reducer}}
+\subsubsection[{\texorpdfstring{Def\+Hash(const Object\+Ref \&key) const }{DefHash(const ObjectRef &key) const }}]{\setlength{\rightskip}{0pt plus 5cm}void tvm\+::\+S\+Hash\+Reducer\+::\+Def\+Hash (
+\begin{DoxyParamCaption}
+\item[{const Object\+Ref \&}]{key}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classtvm_1_1SHashReducer_a86a3513ec9866c77c59231663caa28c9}{}\label{classtvm_1_1SHashReducer_a86a3513ec9866c77c59231663caa28c9}
+
+
+Push hash of key to the current sequence of hash values. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em key} & The key to be hashed. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyNote}{Note}
+This function indicate key could contain var defintions. 
+\end{DoxyNote}
+\index{tvm\+::\+S\+Hash\+Reducer@{tvm\+::\+S\+Hash\+Reducer}!Free\+Var\+Hash\+Impl@{Free\+Var\+Hash\+Impl}}
+\index{Free\+Var\+Hash\+Impl@{Free\+Var\+Hash\+Impl}!tvm\+::\+S\+Hash\+Reducer@{tvm\+::\+S\+Hash\+Reducer}}
+\subsubsection[{\texorpdfstring{Free\+Var\+Hash\+Impl(const runtime\+::\+Object $\ast$var) const }{FreeVarHashImpl(const runtime::Object *var) const }}]{\setlength{\rightskip}{0pt plus 5cm}void tvm\+::\+S\+Hash\+Reducer\+::\+Free\+Var\+Hash\+Impl (
+\begin{DoxyParamCaption}
+\item[{const {\bf runtime\+::\+Object} $\ast$}]{var}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classtvm_1_1SHashReducer_ab9cf0c638238f55dd5b6f155d65f92ef}{}\label{classtvm_1_1SHashReducer_ab9cf0c638238f55dd5b6f155d65f92ef}
+
+
+Implementation for hash for a free var. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em var} & The variable. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the result. 
+\end{DoxyReturn}
+\index{tvm\+::\+S\+Hash\+Reducer@{tvm\+::\+S\+Hash\+Reducer}!operator()@{operator()}}
+\index{operator()@{operator()}!tvm\+::\+S\+Hash\+Reducer@{tvm\+::\+S\+Hash\+Reducer}}
+\subsubsection[{\texorpdfstring{operator()(const T \&key) const }{operator()(const T &key) const }}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T , typename  = typename std\+::enable\+\_\+if$<$             !std\+::is\+\_\+base\+\_\+of$<$\+Object\+Ref, T$>$\+::value$>$\+::type$>$ void tvm\+::\+S\+Hash\+Reducer\+::operator() (
+\begin{DoxyParamCaption}
+\item[{const T \&}]{key}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classtvm_1_1SHashReducer_a22960af2148b4db6efea3e8d5ee96e52}{}\label{classtvm_1_1SHashReducer_a22960af2148b4db6efea3e8d5ee96e52}
+
+
+Push hash of key to the current sequence of hash values. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em key} & The key to be hashed. \\
+\hline
+\end{DoxyParams}
+\index{tvm\+::\+S\+Hash\+Reducer@{tvm\+::\+S\+Hash\+Reducer}!operator()@{operator()}}
+\index{operator()@{operator()}!tvm\+::\+S\+Hash\+Reducer@{tvm\+::\+S\+Hash\+Reducer}}
+\subsubsection[{\texorpdfstring{operator()(const Object\+Ref \&key) const }{operator()(const ObjectRef &key) const }}]{\setlength{\rightskip}{0pt plus 5cm}void tvm\+::\+S\+Hash\+Reducer\+::operator() (
+\begin{DoxyParamCaption}
+\item[{const Object\+Ref \&}]{key}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classtvm_1_1SHashReducer_aa4a96bd8462b6623f9c551f936623588}{}\label{classtvm_1_1SHashReducer_aa4a96bd8462b6623f9c551f936623588}
+
+
+Push hash of key to the current sequence of hash values. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em key} & The key to be hashed. \\
+\hline
+\end{DoxyParams}
+\index{tvm\+::\+S\+Hash\+Reducer@{tvm\+::\+S\+Hash\+Reducer}!operator-\/$>$@{operator-\/$>$}}
+\index{operator-\/$>$@{operator-\/$>$}!tvm\+::\+S\+Hash\+Reducer@{tvm\+::\+S\+Hash\+Reducer}}
+\subsubsection[{\texorpdfstring{operator-\/$>$() const }{operator->() const }}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Handler}$\ast$ tvm\+::\+S\+Hash\+Reducer\+::operator-\/$>$ (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classtvm_1_1SHashReducer_a492c322a6926478d8f0ef38afd57d8b9}{}\label{classtvm_1_1SHashReducer_a492c322a6926478d8f0ef38afd57d8b9}
+\begin{DoxyReturn}{Returns}
+Get the internal handler. 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+include/tvm/node/\hyperlink{structural__hash_8h}{structural\+\_\+hash.\+h}\end{DoxyCompactItemize}

@@ -1,0 +1,105 @@
+\hypertarget{relay_2expr_8h}{}\section{include/tvm/relay/expr.h File Reference}
+\label{relay_2expr_8h}\index{include/tvm/relay/expr.\+h@{include/tvm/relay/expr.\+h}}
+
+
+Relay expression language.  
+
+
+{\ttfamily \#include $<$tvm/ir/attrs.\+h$>$}\\*
+{\ttfamily \#include $<$tvm/ir/expr.\+h$>$}\\*
+{\ttfamily \#include $<$tvm/ir/op.\+h$>$}\\*
+{\ttfamily \#include $<$tvm/ir/module.\+h$>$}\\*
+{\ttfamily \#include $<$string$>$}\\*
+{\ttfamily \#include $<$functional$>$}\\*
+{\ttfamily \#include \char`\"{}./base.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}./type.\+h\char`\"{}}\\*
+Include dependency graph for expr.\+h\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{relay_2expr_8h__incl}
+\end{center}
+\end{figure}
+This graph shows which files directly or indirectly include this file\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{relay_2expr_8h__dep__incl}
+\end{center}
+\end{figure}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \hyperlink{classtvm_1_1relay_1_1ConstantNode}{tvm\+::relay\+::\+Constant\+Node}
+\begin{DoxyCompactList}\small\item\em \hyperlink{classtvm_1_1relay_1_1Constant}{Constant} tensor type. \end{DoxyCompactList}\item 
+class \hyperlink{classtvm_1_1relay_1_1Constant}{tvm\+::relay\+::\+Constant}
+\item 
+class \hyperlink{classtvm_1_1relay_1_1TupleNode}{tvm\+::relay\+::\+Tuple\+Node}
+\begin{DoxyCompactList}\small\item\em \hyperlink{classtvm_1_1relay_1_1Tuple}{Tuple} container. \end{DoxyCompactList}\item 
+class \hyperlink{classtvm_1_1relay_1_1Tuple}{tvm\+::relay\+::\+Tuple}
+\item 
+class \hyperlink{classtvm_1_1relay_1_1VarNode}{tvm\+::relay\+::\+Var\+Node}
+\begin{DoxyCompactList}\small\item\em Container for \hyperlink{classtvm_1_1relay_1_1Var}{Var}. \end{DoxyCompactList}\item 
+class \hyperlink{classtvm_1_1relay_1_1Var}{tvm\+::relay\+::\+Var}
+\item 
+class \hyperlink{classtvm_1_1relay_1_1CallNode}{tvm\+::relay\+::\+Call\+Node}
+\begin{DoxyCompactList}\small\item\em \hyperlink{classtvm_1_1relay_1_1Call}{Call} container. \end{DoxyCompactList}\item 
+class \hyperlink{classtvm_1_1relay_1_1Call}{tvm\+::relay\+::\+Call}
+\item 
+class \hyperlink{classtvm_1_1relay_1_1LetNode}{tvm\+::relay\+::\+Let\+Node}
+\begin{DoxyCompactList}\small\item\em A binding of a sub-\/network. \end{DoxyCompactList}\item 
+class \hyperlink{classtvm_1_1relay_1_1Let}{tvm\+::relay\+::\+Let}
+\item 
+class \hyperlink{classtvm_1_1relay_1_1IfNode}{tvm\+::relay\+::\+If\+Node}
+\begin{DoxyCompactList}\small\item\em container of \hyperlink{classtvm_1_1relay_1_1If}{If} \end{DoxyCompactList}\item 
+class \hyperlink{classtvm_1_1relay_1_1If}{tvm\+::relay\+::\+If}
+\item 
+class \hyperlink{classtvm_1_1relay_1_1TupleGetItemNode}{tvm\+::relay\+::\+Tuple\+Get\+Item\+Node}
+\item 
+class \hyperlink{classtvm_1_1relay_1_1TupleGetItem}{tvm\+::relay\+::\+Tuple\+Get\+Item}
+\item 
+class \hyperlink{classtvm_1_1relay_1_1RefCreateNode}{tvm\+::relay\+::\+Ref\+Create\+Node}
+\item 
+class \hyperlink{classtvm_1_1relay_1_1RefCreate}{tvm\+::relay\+::\+Ref\+Create}
+\item 
+class \hyperlink{classtvm_1_1relay_1_1RefReadNode}{tvm\+::relay\+::\+Ref\+Read\+Node}
+\item 
+class \hyperlink{classtvm_1_1relay_1_1RefRead}{tvm\+::relay\+::\+Ref\+Read}
+\item 
+class \hyperlink{classtvm_1_1relay_1_1RefWriteNode}{tvm\+::relay\+::\+Ref\+Write\+Node}
+\item 
+class \hyperlink{classtvm_1_1relay_1_1RefWrite}{tvm\+::relay\+::\+Ref\+Write}
+\item 
+class \hyperlink{classtvm_1_1relay_1_1TempExprNode}{tvm\+::relay\+::\+Temp\+Expr\+Node}
+\begin{DoxyCompactList}\small\item\em Base class of the temporary expression. \end{DoxyCompactList}\item 
+class \hyperlink{classtvm_1_1relay_1_1TempExpr}{tvm\+::relay\+::\+Temp\+Expr}
+\end{DoxyCompactItemize}
+\subsection*{Namespaces}
+\begin{DoxyCompactItemize}
+\item 
+ \hyperlink{namespacetvm}{tvm}
+\item 
+ \hyperlink{namespacetvm_1_1relay}{tvm\+::relay}
+\begin{DoxyCompactList}\small\item\em Relay\+: a high level functional IR for T\+VM. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+using \hyperlink{namespacetvm_1_1relay_a5b84e3790f89bb3fad5c7911eeb99531}{tvm\+::relay\+::\+Expr} = \hyperlink{classtvm_1_1RelayExpr}{tvm\+::\+Relay\+Expr}
+\item 
+using \hyperlink{namespacetvm_1_1relay_a387f18e050d016c52ea6c4781e7cff6c}{tvm\+::relay\+::\+Expr\+Node} = \hyperlink{classtvm_1_1RelayExprNode}{tvm\+::\+Relay\+Expr\+Node}
+\item 
+using \hyperlink{namespacetvm_1_1relay_acbaff2ae7feec23fea55e025a9cc1b76}{tvm\+::relay\+::\+Base\+Func} = \hyperlink{classtvm_1_1BaseFunc}{tvm\+::\+Base\+Func}
+\item 
+using \hyperlink{namespacetvm_1_1relay_a4edf28d1226abc08d28bc2fd90ce7b42}{tvm\+::relay\+::\+Base\+Func\+Node} = \hyperlink{classtvm_1_1BaseFuncNode}{tvm\+::\+Base\+Func\+Node}
+\item 
+using \hyperlink{namespacetvm_1_1relay_a81ac7c3d0824529fddce7849c9c66289}{tvm\+::relay\+::\+Global\+Var} = \hyperlink{classtvm_1_1GlobalVar}{tvm\+::\+Global\+Var}
+\item 
+using \hyperlink{namespacetvm_1_1relay_afe7144195dbbc914183189444ef6a347}{tvm\+::relay\+::\+Global\+Var\+Node} = \hyperlink{classtvm_1_1GlobalVarNode}{tvm\+::\+Global\+Var\+Node}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Relay expression language. 
+

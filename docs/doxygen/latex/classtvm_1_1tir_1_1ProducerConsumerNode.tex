@@ -1,0 +1,138 @@
+\hypertarget{classtvm_1_1tir_1_1ProducerConsumerNode}{}\section{tvm\+:\+:tir\+:\+:Producer\+Consumer\+Node Class Reference}
+\label{classtvm_1_1tir_1_1ProducerConsumerNode}\index{tvm\+::tir\+::\+Producer\+Consumer\+Node@{tvm\+::tir\+::\+Producer\+Consumer\+Node}}
+
+
+annotation node of producer/consumer relation.  
+
+
+
+
+{\ttfamily \#include $<$stmt.\+h$>$}
+
+
+
+Inheritance diagram for tvm\+:\+:tir\+:\+:Producer\+Consumer\+Node\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=285pt]{classtvm_1_1tir_1_1ProducerConsumerNode__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for tvm\+:\+:tir\+:\+:Producer\+Consumer\+Node\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classtvm_1_1tir_1_1ProducerConsumerNode__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{classtvm_1_1tir_1_1ProducerConsumerNode_ab4e6b450d633132a9f0d8c50565fdd8e}{Visit\+Attrs} (\hyperlink{classtvm_1_1AttrVisitor}{Attr\+Visitor} $\ast$v)
+\item 
+bool \hyperlink{classtvm_1_1tir_1_1ProducerConsumerNode_a2ce3ac67db42d9c54729e661f6b5a403}{S\+Equal\+Reduce} (const \hyperlink{classtvm_1_1tir_1_1ProducerConsumerNode}{Producer\+Consumer\+Node} $\ast$other, \hyperlink{classtvm_1_1SEqualReducer}{S\+Equal\+Reducer} equal) const 
+\item 
+void \hyperlink{classtvm_1_1tir_1_1ProducerConsumerNode_acaab529d59e07cc163bb52fb96ce368c}{S\+Hash\+Reduce} (\hyperlink{classtvm_1_1SHashReducer}{S\+Hash\+Reducer} hash\+\_\+reduce) const 
+\item 
+\hyperlink{classtvm_1_1tir_1_1ProducerConsumerNode_ab269d8db81bd3952928675726c64dab4}{T\+V\+M\+\_\+\+D\+E\+C\+L\+A\+R\+E\+\_\+\+F\+I\+N\+A\+L\+\_\+\+O\+B\+J\+E\+C\+T\+\_\+\+I\+N\+FO} (\hyperlink{classtvm_1_1tir_1_1ProducerConsumerNode}{Producer\+Consumer\+Node}, \hyperlink{classtvm_1_1tir_1_1StmtNode}{Stmt\+Node})
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \hyperlink{classtvm_1_1tir_1_1Stmt}{Stmt} \hyperlink{classtvm_1_1tir_1_1ProducerConsumerNode_acb3c6c5bd1be72e5429efe1a4fe51c7b}{make} (\hyperlink{classtvm_1_1tir_1_1FunctionRef}{Function\+Ref} \hyperlink{classtvm_1_1tir_1_1ProducerConsumerNode_afcbaebd57b61574b9c5a5d9484a99141}{func}, bool \hyperlink{classtvm_1_1tir_1_1ProducerConsumerNode_a98b5bfa381b562072ccce2e5c8e68f47}{is\+\_\+producer}, \hyperlink{classtvm_1_1tir_1_1Stmt}{Stmt} \hyperlink{classtvm_1_1tir_1_1ProducerConsumerNode_afcebfca1903bfab9575737ef4e032db8}{body})
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classtvm_1_1tir_1_1FunctionRef}{Function\+Ref} \hyperlink{classtvm_1_1tir_1_1ProducerConsumerNode_afcbaebd57b61574b9c5a5d9484a99141}{func}
+\begin{DoxyCompactList}\small\item\em The corresponding tensor. \end{DoxyCompactList}\item 
+bool \hyperlink{classtvm_1_1tir_1_1ProducerConsumerNode_a98b5bfa381b562072ccce2e5c8e68f47}{is\+\_\+producer}
+\begin{DoxyCompactList}\small\item\em Whether the relation is producer. \end{DoxyCompactList}\item 
+\hyperlink{classtvm_1_1tir_1_1Stmt}{Stmt} \hyperlink{classtvm_1_1tir_1_1ProducerConsumerNode_afcebfca1903bfab9575737ef4e032db8}{body}
+\begin{DoxyCompactList}\small\item\em Body to be executed. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static constexpr const char $\ast$ \hyperlink{classtvm_1_1tir_1_1ProducerConsumerNode_ae1504c476d474369fde0cffd4ef5a789}{\+\_\+type\+\_\+key} = \char`\"{}Producer\+Consumer\char`\"{}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+annotation node of producer/consumer relation. 
+
+\subsection{Member Function Documentation}
+\index{tvm\+::tir\+::\+Producer\+Consumer\+Node@{tvm\+::tir\+::\+Producer\+Consumer\+Node}!make@{make}}
+\index{make@{make}!tvm\+::tir\+::\+Producer\+Consumer\+Node@{tvm\+::tir\+::\+Producer\+Consumer\+Node}}
+\subsubsection[{\texorpdfstring{make(\+Function\+Ref func, bool is\+\_\+producer, Stmt body)}{make(FunctionRef func, bool is_producer, Stmt body)}}]{\setlength{\rightskip}{0pt plus 5cm}static {\bf Stmt} tvm\+::tir\+::\+Producer\+Consumer\+Node\+::make (
+\begin{DoxyParamCaption}
+\item[{{\bf Function\+Ref}}]{func, }
+\item[{bool}]{is\+\_\+producer, }
+\item[{{\bf Stmt}}]{body}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}\hypertarget{classtvm_1_1tir_1_1ProducerConsumerNode_acb3c6c5bd1be72e5429efe1a4fe51c7b}{}\label{classtvm_1_1tir_1_1ProducerConsumerNode_acb3c6c5bd1be72e5429efe1a4fe51c7b}
+\index{tvm\+::tir\+::\+Producer\+Consumer\+Node@{tvm\+::tir\+::\+Producer\+Consumer\+Node}!S\+Equal\+Reduce@{S\+Equal\+Reduce}}
+\index{S\+Equal\+Reduce@{S\+Equal\+Reduce}!tvm\+::tir\+::\+Producer\+Consumer\+Node@{tvm\+::tir\+::\+Producer\+Consumer\+Node}}
+\subsubsection[{\texorpdfstring{S\+Equal\+Reduce(const Producer\+Consumer\+Node $\ast$other, S\+Equal\+Reducer equal) const }{SEqualReduce(const ProducerConsumerNode *other, SEqualReducer equal) const }}]{\setlength{\rightskip}{0pt plus 5cm}bool tvm\+::tir\+::\+Producer\+Consumer\+Node\+::\+S\+Equal\+Reduce (
+\begin{DoxyParamCaption}
+\item[{const {\bf Producer\+Consumer\+Node} $\ast$}]{other, }
+\item[{{\bf S\+Equal\+Reducer}}]{equal}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classtvm_1_1tir_1_1ProducerConsumerNode_a2ce3ac67db42d9c54729e661f6b5a403}{}\label{classtvm_1_1tir_1_1ProducerConsumerNode_a2ce3ac67db42d9c54729e661f6b5a403}
+\index{tvm\+::tir\+::\+Producer\+Consumer\+Node@{tvm\+::tir\+::\+Producer\+Consumer\+Node}!S\+Hash\+Reduce@{S\+Hash\+Reduce}}
+\index{S\+Hash\+Reduce@{S\+Hash\+Reduce}!tvm\+::tir\+::\+Producer\+Consumer\+Node@{tvm\+::tir\+::\+Producer\+Consumer\+Node}}
+\subsubsection[{\texorpdfstring{S\+Hash\+Reduce(\+S\+Hash\+Reducer hash\+\_\+reduce) const }{SHashReduce(SHashReducer hash_reduce) const }}]{\setlength{\rightskip}{0pt plus 5cm}void tvm\+::tir\+::\+Producer\+Consumer\+Node\+::\+S\+Hash\+Reduce (
+\begin{DoxyParamCaption}
+\item[{{\bf S\+Hash\+Reducer}}]{hash\+\_\+reduce}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classtvm_1_1tir_1_1ProducerConsumerNode_acaab529d59e07cc163bb52fb96ce368c}{}\label{classtvm_1_1tir_1_1ProducerConsumerNode_acaab529d59e07cc163bb52fb96ce368c}
+\index{tvm\+::tir\+::\+Producer\+Consumer\+Node@{tvm\+::tir\+::\+Producer\+Consumer\+Node}!T\+V\+M\+\_\+\+D\+E\+C\+L\+A\+R\+E\+\_\+\+F\+I\+N\+A\+L\+\_\+\+O\+B\+J\+E\+C\+T\+\_\+\+I\+N\+FO@{T\+V\+M\+\_\+\+D\+E\+C\+L\+A\+R\+E\+\_\+\+F\+I\+N\+A\+L\+\_\+\+O\+B\+J\+E\+C\+T\+\_\+\+I\+N\+FO}}
+\index{T\+V\+M\+\_\+\+D\+E\+C\+L\+A\+R\+E\+\_\+\+F\+I\+N\+A\+L\+\_\+\+O\+B\+J\+E\+C\+T\+\_\+\+I\+N\+FO@{T\+V\+M\+\_\+\+D\+E\+C\+L\+A\+R\+E\+\_\+\+F\+I\+N\+A\+L\+\_\+\+O\+B\+J\+E\+C\+T\+\_\+\+I\+N\+FO}!tvm\+::tir\+::\+Producer\+Consumer\+Node@{tvm\+::tir\+::\+Producer\+Consumer\+Node}}
+\subsubsection[{\texorpdfstring{T\+V\+M\+\_\+\+D\+E\+C\+L\+A\+R\+E\+\_\+\+F\+I\+N\+A\+L\+\_\+\+O\+B\+J\+E\+C\+T\+\_\+\+I\+N\+F\+O(\+Producer\+Consumer\+Node, Stmt\+Node)}{TVM_DECLARE_FINAL_OBJECT_INFO(ProducerConsumerNode, StmtNode)}}]{\setlength{\rightskip}{0pt plus 5cm}tvm\+::tir\+::\+Producer\+Consumer\+Node\+::\+T\+V\+M\+\_\+\+D\+E\+C\+L\+A\+R\+E\+\_\+\+F\+I\+N\+A\+L\+\_\+\+O\+B\+J\+E\+C\+T\+\_\+\+I\+N\+FO (
+\begin{DoxyParamCaption}
+\item[{{\bf Producer\+Consumer\+Node}}]{, }
+\item[{{\bf Stmt\+Node}}]{}
+\end{DoxyParamCaption}
+)}\hypertarget{classtvm_1_1tir_1_1ProducerConsumerNode_ab269d8db81bd3952928675726c64dab4}{}\label{classtvm_1_1tir_1_1ProducerConsumerNode_ab269d8db81bd3952928675726c64dab4}
+\index{tvm\+::tir\+::\+Producer\+Consumer\+Node@{tvm\+::tir\+::\+Producer\+Consumer\+Node}!Visit\+Attrs@{Visit\+Attrs}}
+\index{Visit\+Attrs@{Visit\+Attrs}!tvm\+::tir\+::\+Producer\+Consumer\+Node@{tvm\+::tir\+::\+Producer\+Consumer\+Node}}
+\subsubsection[{\texorpdfstring{Visit\+Attrs(\+Attr\+Visitor $\ast$v)}{VisitAttrs(AttrVisitor *v)}}]{\setlength{\rightskip}{0pt plus 5cm}void tvm\+::tir\+::\+Producer\+Consumer\+Node\+::\+Visit\+Attrs (
+\begin{DoxyParamCaption}
+\item[{{\bf Attr\+Visitor} $\ast$}]{v}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classtvm_1_1tir_1_1ProducerConsumerNode_ab4e6b450d633132a9f0d8c50565fdd8e}{}\label{classtvm_1_1tir_1_1ProducerConsumerNode_ab4e6b450d633132a9f0d8c50565fdd8e}
+
+
+\subsection{Member Data Documentation}
+\index{tvm\+::tir\+::\+Producer\+Consumer\+Node@{tvm\+::tir\+::\+Producer\+Consumer\+Node}!\+\_\+type\+\_\+key@{\+\_\+type\+\_\+key}}
+\index{\+\_\+type\+\_\+key@{\+\_\+type\+\_\+key}!tvm\+::tir\+::\+Producer\+Consumer\+Node@{tvm\+::tir\+::\+Producer\+Consumer\+Node}}
+\subsubsection[{\texorpdfstring{\+\_\+type\+\_\+key}{_type_key}}]{\setlength{\rightskip}{0pt plus 5cm}constexpr const char$\ast$ tvm\+::tir\+::\+Producer\+Consumer\+Node\+::\+\_\+type\+\_\+key = \char`\"{}Producer\+Consumer\char`\"{}\hspace{0.3cm}{\ttfamily [static]}}\hypertarget{classtvm_1_1tir_1_1ProducerConsumerNode_ae1504c476d474369fde0cffd4ef5a789}{}\label{classtvm_1_1tir_1_1ProducerConsumerNode_ae1504c476d474369fde0cffd4ef5a789}
+\index{tvm\+::tir\+::\+Producer\+Consumer\+Node@{tvm\+::tir\+::\+Producer\+Consumer\+Node}!body@{body}}
+\index{body@{body}!tvm\+::tir\+::\+Producer\+Consumer\+Node@{tvm\+::tir\+::\+Producer\+Consumer\+Node}}
+\subsubsection[{\texorpdfstring{body}{body}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Stmt} tvm\+::tir\+::\+Producer\+Consumer\+Node\+::body}\hypertarget{classtvm_1_1tir_1_1ProducerConsumerNode_afcebfca1903bfab9575737ef4e032db8}{}\label{classtvm_1_1tir_1_1ProducerConsumerNode_afcebfca1903bfab9575737ef4e032db8}
+
+
+Body to be executed. 
+
+\index{tvm\+::tir\+::\+Producer\+Consumer\+Node@{tvm\+::tir\+::\+Producer\+Consumer\+Node}!func@{func}}
+\index{func@{func}!tvm\+::tir\+::\+Producer\+Consumer\+Node@{tvm\+::tir\+::\+Producer\+Consumer\+Node}}
+\subsubsection[{\texorpdfstring{func}{func}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Function\+Ref} tvm\+::tir\+::\+Producer\+Consumer\+Node\+::func}\hypertarget{classtvm_1_1tir_1_1ProducerConsumerNode_afcbaebd57b61574b9c5a5d9484a99141}{}\label{classtvm_1_1tir_1_1ProducerConsumerNode_afcbaebd57b61574b9c5a5d9484a99141}
+
+
+The corresponding tensor. 
+
+\index{tvm\+::tir\+::\+Producer\+Consumer\+Node@{tvm\+::tir\+::\+Producer\+Consumer\+Node}!is\+\_\+producer@{is\+\_\+producer}}
+\index{is\+\_\+producer@{is\+\_\+producer}!tvm\+::tir\+::\+Producer\+Consumer\+Node@{tvm\+::tir\+::\+Producer\+Consumer\+Node}}
+\subsubsection[{\texorpdfstring{is\+\_\+producer}{is_producer}}]{\setlength{\rightskip}{0pt plus 5cm}bool tvm\+::tir\+::\+Producer\+Consumer\+Node\+::is\+\_\+producer}\hypertarget{classtvm_1_1tir_1_1ProducerConsumerNode_a98b5bfa381b562072ccce2e5c8e68f47}{}\label{classtvm_1_1tir_1_1ProducerConsumerNode_a98b5bfa381b562072ccce2e5c8e68f47}
+
+
+Whether the relation is producer. 
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+include/tvm/tir/\hyperlink{stmt_8h}{stmt.\+h}\end{DoxyCompactItemize}

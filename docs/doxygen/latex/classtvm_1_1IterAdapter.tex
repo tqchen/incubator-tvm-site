@@ -1,0 +1,144 @@
+\hypertarget{classtvm_1_1IterAdapter}{}\section{tvm\+:\+:Iter\+Adapter$<$ Converter, T\+Iter $>$ Class Template Reference}
+\label{classtvm_1_1IterAdapter}\index{tvm\+::\+Iter\+Adapter$<$ Converter, T\+Iter $>$@{tvm\+::\+Iter\+Adapter$<$ Converter, T\+Iter $>$}}
+
+
+iterator adapter that adapts T\+Iter to return another type.  
+
+
+
+
+{\ttfamily \#include $<$container.\+h$>$}
+
+
+
+Collaboration diagram for tvm\+:\+:Iter\+Adapter$<$ Converter, T\+Iter $>$\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=237pt]{classtvm_1_1IterAdapter__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+using \hyperlink{classtvm_1_1IterAdapter_a6fcccf32d94242ce3b0613db5bcd53d5}{difference\+\_\+type} = typename std\+::iterator\+\_\+traits$<$ T\+Iter $>$\+::\hyperlink{classtvm_1_1IterAdapter_a6fcccf32d94242ce3b0613db5bcd53d5}{difference\+\_\+type}
+\item 
+using \hyperlink{classtvm_1_1IterAdapter_a920384d7073ed15812199181625d857e}{value\+\_\+type} = typename Converter\+::\+Result\+Type
+\item 
+using \hyperlink{classtvm_1_1IterAdapter_acdd89c4869bbb96d00fafd85ff3a3492}{pointer} = typename Converter\+::\+Result\+Type $\ast$
+\item 
+using \hyperlink{classtvm_1_1IterAdapter_a02187b2d7b029d2f27c4d999b84f958d}{reference} = typename Converter\+::\+Result\+Type \&
+\item 
+using \hyperlink{classtvm_1_1IterAdapter_a2fa322bdb58941c57c6f25ea53678ed7}{iterator\+\_\+category} = typename std\+::iterator\+\_\+traits$<$ T\+Iter $>$\+::\hyperlink{classtvm_1_1IterAdapter_a2fa322bdb58941c57c6f25ea53678ed7}{iterator\+\_\+category}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classtvm_1_1IterAdapter_a5b0e7480919d0179691292f053e8b58a}{Iter\+Adapter} (T\+Iter iter)
+\item 
+\hyperlink{classtvm_1_1IterAdapter}{Iter\+Adapter} \& \hyperlink{classtvm_1_1IterAdapter_a26651fc29c5a8b7d3902cec7c68978c3}{operator++} ()
+\item 
+\hyperlink{classtvm_1_1IterAdapter}{Iter\+Adapter} \hyperlink{classtvm_1_1IterAdapter_a632448e530261af4f8d20cd1c7d6f604}{operator+} (\hyperlink{classtvm_1_1IterAdapter_a6fcccf32d94242ce3b0613db5bcd53d5}{difference\+\_\+type} offset) const 
+\item 
+{\footnotesize template$<$typename T  = Iter\+Adapter$>$ }\\std\+::enable\+\_\+if$<$ std\+::is\+\_\+same$<$ \hyperlink{classtvm_1_1IterAdapter_a2fa322bdb58941c57c6f25ea53678ed7}{iterator\+\_\+category}, std\+::random\+\_\+access\+\_\+iterator\+\_\+tag $>$\+::value, typename T\+::difference\+\_\+type $>$\+::type \hyperlink{classtvm_1_1IterAdapter_a730c42eead8dc1ae5b0d5dd8b6c749a9}{operator-\/} (const \hyperlink{classtvm_1_1IterAdapter}{Iter\+Adapter} \&rhs) const 
+\item 
+bool \hyperlink{classtvm_1_1IterAdapter_a8bb0653979acc063862d800adb846d64}{operator==} (\hyperlink{classtvm_1_1IterAdapter}{Iter\+Adapter} other) const 
+\item 
+bool \hyperlink{classtvm_1_1IterAdapter_adddb09d93d6148a0bd9a7763b5d603f6}{operator!=} (\hyperlink{classtvm_1_1IterAdapter}{Iter\+Adapter} other) const 
+\item 
+const \hyperlink{classtvm_1_1IterAdapter_a920384d7073ed15812199181625d857e}{value\+\_\+type} \hyperlink{classtvm_1_1IterAdapter_a19d48c13586d042b39484bf8bae24aca}{operator$\ast$} () const 
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\subsubsection*{template$<$typename Converter, typename T\+Iter$>$\\*
+class tvm\+::\+Iter\+Adapter$<$ Converter, T\+Iter $>$}
+
+iterator adapter that adapts T\+Iter to return another type. 
+
+
+\begin{DoxyTemplParams}{Template Parameters}
+{\em Converter} & a struct that contains converting function \\
+\hline
+{\em T\+Iter} & the content iterator type. \\
+\hline
+\end{DoxyTemplParams}
+
+
+\subsection{Member Typedef Documentation}
+\index{tvm\+::\+Iter\+Adapter@{tvm\+::\+Iter\+Adapter}!difference\+\_\+type@{difference\+\_\+type}}
+\index{difference\+\_\+type@{difference\+\_\+type}!tvm\+::\+Iter\+Adapter@{tvm\+::\+Iter\+Adapter}}
+\subsubsection[{\texorpdfstring{difference\+\_\+type}{difference_type}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Converter , typename T\+Iter $>$ using {\bf tvm\+::\+Iter\+Adapter}$<$ Converter, T\+Iter $>$\+::{\bf difference\+\_\+type} =  typename std\+::iterator\+\_\+traits$<$T\+Iter$>$\+::{\bf difference\+\_\+type}}\hypertarget{classtvm_1_1IterAdapter_a6fcccf32d94242ce3b0613db5bcd53d5}{}\label{classtvm_1_1IterAdapter_a6fcccf32d94242ce3b0613db5bcd53d5}
+\index{tvm\+::\+Iter\+Adapter@{tvm\+::\+Iter\+Adapter}!iterator\+\_\+category@{iterator\+\_\+category}}
+\index{iterator\+\_\+category@{iterator\+\_\+category}!tvm\+::\+Iter\+Adapter@{tvm\+::\+Iter\+Adapter}}
+\subsubsection[{\texorpdfstring{iterator\+\_\+category}{iterator_category}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Converter , typename T\+Iter $>$ using {\bf tvm\+::\+Iter\+Adapter}$<$ Converter, T\+Iter $>$\+::{\bf iterator\+\_\+category} =  typename std\+::iterator\+\_\+traits$<$T\+Iter$>$\+::{\bf iterator\+\_\+category}}\hypertarget{classtvm_1_1IterAdapter_a2fa322bdb58941c57c6f25ea53678ed7}{}\label{classtvm_1_1IterAdapter_a2fa322bdb58941c57c6f25ea53678ed7}
+\index{tvm\+::\+Iter\+Adapter@{tvm\+::\+Iter\+Adapter}!pointer@{pointer}}
+\index{pointer@{pointer}!tvm\+::\+Iter\+Adapter@{tvm\+::\+Iter\+Adapter}}
+\subsubsection[{\texorpdfstring{pointer}{pointer}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Converter , typename T\+Iter $>$ using {\bf tvm\+::\+Iter\+Adapter}$<$ Converter, T\+Iter $>$\+::{\bf pointer} =  typename Converter\+::\+Result\+Type$\ast$}\hypertarget{classtvm_1_1IterAdapter_acdd89c4869bbb96d00fafd85ff3a3492}{}\label{classtvm_1_1IterAdapter_acdd89c4869bbb96d00fafd85ff3a3492}
+\index{tvm\+::\+Iter\+Adapter@{tvm\+::\+Iter\+Adapter}!reference@{reference}}
+\index{reference@{reference}!tvm\+::\+Iter\+Adapter@{tvm\+::\+Iter\+Adapter}}
+\subsubsection[{\texorpdfstring{reference}{reference}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Converter , typename T\+Iter $>$ using {\bf tvm\+::\+Iter\+Adapter}$<$ Converter, T\+Iter $>$\+::{\bf reference} =  typename Converter\+::\+Result\+Type\&}\hypertarget{classtvm_1_1IterAdapter_a02187b2d7b029d2f27c4d999b84f958d}{}\label{classtvm_1_1IterAdapter_a02187b2d7b029d2f27c4d999b84f958d}
+\index{tvm\+::\+Iter\+Adapter@{tvm\+::\+Iter\+Adapter}!value\+\_\+type@{value\+\_\+type}}
+\index{value\+\_\+type@{value\+\_\+type}!tvm\+::\+Iter\+Adapter@{tvm\+::\+Iter\+Adapter}}
+\subsubsection[{\texorpdfstring{value\+\_\+type}{value_type}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Converter , typename T\+Iter $>$ using {\bf tvm\+::\+Iter\+Adapter}$<$ Converter, T\+Iter $>$\+::{\bf value\+\_\+type} =  typename Converter\+::\+Result\+Type}\hypertarget{classtvm_1_1IterAdapter_a920384d7073ed15812199181625d857e}{}\label{classtvm_1_1IterAdapter_a920384d7073ed15812199181625d857e}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\index{tvm\+::\+Iter\+Adapter@{tvm\+::\+Iter\+Adapter}!Iter\+Adapter@{Iter\+Adapter}}
+\index{Iter\+Adapter@{Iter\+Adapter}!tvm\+::\+Iter\+Adapter@{tvm\+::\+Iter\+Adapter}}
+\subsubsection[{\texorpdfstring{Iter\+Adapter(\+T\+Iter iter)}{IterAdapter(TIter iter)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Converter , typename T\+Iter $>$ {\bf tvm\+::\+Iter\+Adapter}$<$ Converter, T\+Iter $>$\+::{\bf Iter\+Adapter} (
+\begin{DoxyParamCaption}
+\item[{T\+Iter}]{iter}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [explicit]}}\hypertarget{classtvm_1_1IterAdapter_a5b0e7480919d0179691292f053e8b58a}{}\label{classtvm_1_1IterAdapter_a5b0e7480919d0179691292f053e8b58a}
+
+
+\subsection{Member Function Documentation}
+\index{tvm\+::\+Iter\+Adapter@{tvm\+::\+Iter\+Adapter}!operator"!=@{operator"!=}}
+\index{operator"!=@{operator"!=}!tvm\+::\+Iter\+Adapter@{tvm\+::\+Iter\+Adapter}}
+\subsubsection[{\texorpdfstring{operator"!=(\+Iter\+Adapter other) const }{operator!=(IterAdapter other) const }}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Converter , typename T\+Iter $>$ bool {\bf tvm\+::\+Iter\+Adapter}$<$ Converter, T\+Iter $>$\+::{\bf operator!}= (
+\begin{DoxyParamCaption}
+\item[{{\bf Iter\+Adapter}$<$ Converter, T\+Iter $>$}]{other}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classtvm_1_1IterAdapter_adddb09d93d6148a0bd9a7763b5d603f6}{}\label{classtvm_1_1IterAdapter_adddb09d93d6148a0bd9a7763b5d603f6}
+\index{tvm\+::\+Iter\+Adapter@{tvm\+::\+Iter\+Adapter}!operator$\ast$@{operator$\ast$}}
+\index{operator$\ast$@{operator$\ast$}!tvm\+::\+Iter\+Adapter@{tvm\+::\+Iter\+Adapter}}
+\subsubsection[{\texorpdfstring{operator$\ast$() const }{operator*() const }}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Converter , typename T\+Iter $>$ const {\bf value\+\_\+type} {\bf tvm\+::\+Iter\+Adapter}$<$ Converter, T\+Iter $>$\+::operator$\ast$ (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classtvm_1_1IterAdapter_a19d48c13586d042b39484bf8bae24aca}{}\label{classtvm_1_1IterAdapter_a19d48c13586d042b39484bf8bae24aca}
+\index{tvm\+::\+Iter\+Adapter@{tvm\+::\+Iter\+Adapter}!operator+@{operator+}}
+\index{operator+@{operator+}!tvm\+::\+Iter\+Adapter@{tvm\+::\+Iter\+Adapter}}
+\subsubsection[{\texorpdfstring{operator+(difference\+\_\+type offset) const }{operator+(difference_type offset) const }}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Converter , typename T\+Iter $>$ {\bf Iter\+Adapter} {\bf tvm\+::\+Iter\+Adapter}$<$ Converter, T\+Iter $>$\+::operator+ (
+\begin{DoxyParamCaption}
+\item[{{\bf difference\+\_\+type}}]{offset}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classtvm_1_1IterAdapter_a632448e530261af4f8d20cd1c7d6f604}{}\label{classtvm_1_1IterAdapter_a632448e530261af4f8d20cd1c7d6f604}
+\index{tvm\+::\+Iter\+Adapter@{tvm\+::\+Iter\+Adapter}!operator++@{operator++}}
+\index{operator++@{operator++}!tvm\+::\+Iter\+Adapter@{tvm\+::\+Iter\+Adapter}}
+\subsubsection[{\texorpdfstring{operator++()}{operator++()}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Converter , typename T\+Iter $>$ {\bf Iter\+Adapter}\& {\bf tvm\+::\+Iter\+Adapter}$<$ Converter, T\+Iter $>$\+::operator++ (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classtvm_1_1IterAdapter_a26651fc29c5a8b7d3902cec7c68978c3}{}\label{classtvm_1_1IterAdapter_a26651fc29c5a8b7d3902cec7c68978c3}
+\index{tvm\+::\+Iter\+Adapter@{tvm\+::\+Iter\+Adapter}!operator-\/@{operator-\/}}
+\index{operator-\/@{operator-\/}!tvm\+::\+Iter\+Adapter@{tvm\+::\+Iter\+Adapter}}
+\subsubsection[{\texorpdfstring{operator-\/(const Iter\+Adapter \&rhs) const }{operator-(const IterAdapter &rhs) const }}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Converter , typename T\+Iter $>$ template$<$typename T  = Iter\+Adapter$>$ std\+::enable\+\_\+if$<$std\+::is\+\_\+same$<${\bf iterator\+\_\+category}, std\+::random\+\_\+access\+\_\+iterator\+\_\+tag$>$\+::value, typename T\+::difference\+\_\+type$>$\+::type {\bf tvm\+::\+Iter\+Adapter}$<$ Converter, T\+Iter $>$\+::operator-\/ (
+\begin{DoxyParamCaption}
+\item[{const {\bf Iter\+Adapter}$<$ Converter, T\+Iter $>$ \&}]{rhs}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classtvm_1_1IterAdapter_a730c42eead8dc1ae5b0d5dd8b6c749a9}{}\label{classtvm_1_1IterAdapter_a730c42eead8dc1ae5b0d5dd8b6c749a9}
+\index{tvm\+::\+Iter\+Adapter@{tvm\+::\+Iter\+Adapter}!operator==@{operator==}}
+\index{operator==@{operator==}!tvm\+::\+Iter\+Adapter@{tvm\+::\+Iter\+Adapter}}
+\subsubsection[{\texorpdfstring{operator==(\+Iter\+Adapter other) const }{operator==(IterAdapter other) const }}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Converter , typename T\+Iter $>$ bool {\bf tvm\+::\+Iter\+Adapter}$<$ Converter, T\+Iter $>$\+::operator== (
+\begin{DoxyParamCaption}
+\item[{{\bf Iter\+Adapter}$<$ Converter, T\+Iter $>$}]{other}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classtvm_1_1IterAdapter_a8bb0653979acc063862d800adb846d64}{}\label{classtvm_1_1IterAdapter_a8bb0653979acc063862d800adb846d64}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+include/tvm/node/\hyperlink{node_2container_8h}{container.\+h}\end{DoxyCompactItemize}

@@ -1,0 +1,319 @@
+\hypertarget{classtvm_1_1tir_1_1CallNode}{}\section{tvm\+:\+:tir\+:\+:Call\+Node Class Reference}
+\label{classtvm_1_1tir_1_1CallNode}\index{tvm\+::tir\+::\+Call\+Node@{tvm\+::tir\+::\+Call\+Node}}
+
+
+Call node.  
+
+
+
+
+{\ttfamily \#include $<$expr.\+h$>$}
+
+
+
+Inheritance diagram for tvm\+:\+:tir\+:\+:Call\+Node\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{classtvm_1_1tir_1_1CallNode__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for tvm\+:\+:tir\+:\+:Call\+Node\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classtvm_1_1tir_1_1CallNode__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+enum \hyperlink{classtvm_1_1tir_1_1CallNode_a13e1f0f48f488fd085ca2684738fa97a}{Call\+Type} \+: int \{ \\*
+\hyperlink{classtvm_1_1tir_1_1CallNode_a13e1f0f48f488fd085ca2684738fa97aab7045868cb47d7cb16471faab2a04af4}{Extern} = 0, 
+\hyperlink{classtvm_1_1tir_1_1CallNode_a13e1f0f48f488fd085ca2684738fa97aae9b7420c5efa76da58ce83ea64c47a5d}{Extern\+C\+Plus\+Plus} = 1, 
+\hyperlink{classtvm_1_1tir_1_1CallNode_a13e1f0f48f488fd085ca2684738fa97aa28d0e2a1d6e2553b9c0c70151efb9927}{Pure\+Extern} = 2, 
+\hyperlink{classtvm_1_1tir_1_1CallNode_a13e1f0f48f488fd085ca2684738fa97aa57993161c871dc15a052154594845514}{Halide} = 3, 
+\\*
+\hyperlink{classtvm_1_1tir_1_1CallNode_a13e1f0f48f488fd085ca2684738fa97aa53257cce64e712a51504dc56287f9bce}{Intrinsic} = 4, 
+\hyperlink{classtvm_1_1tir_1_1CallNode_a13e1f0f48f488fd085ca2684738fa97aa2403c0f0c0f7bef7f60d06918d8d39ac}{Pure\+Intrinsic} = 5
+ \}\begin{DoxyCompactList}\small\item\em Possible types of calls. \end{DoxyCompactList}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{classtvm_1_1tir_1_1CallNode_ab16f6a3e97ab7e8ec0d2e906fd5a2f71}{Visit\+Attrs} (\hyperlink{classtvm_1_1AttrVisitor}{Attr\+Visitor} $\ast$v)
+\item 
+bool \hyperlink{classtvm_1_1tir_1_1CallNode_a4e631c0b21801e30d92d23a1c3de23bc}{S\+Equal\+Reduce} (const \hyperlink{classtvm_1_1tir_1_1CallNode}{Call\+Node} $\ast$other, \hyperlink{classtvm_1_1SEqualReducer}{S\+Equal\+Reducer} equal) const 
+\item 
+void \hyperlink{classtvm_1_1tir_1_1CallNode_a0e9eb68c0dc275f789e4794b582ad13f}{S\+Hash\+Reduce} (\hyperlink{classtvm_1_1SHashReducer}{S\+Hash\+Reducer} hash\+\_\+reduce) const 
+\item 
+bool \hyperlink{classtvm_1_1tir_1_1CallNode_a2399dd87487b9bbbd6f56cdfd88b15a7}{is\+\_\+pure} () const 
+\item 
+bool \hyperlink{classtvm_1_1tir_1_1CallNode_ab3854cf20af3de0b892f2255ee734239}{is\+\_\+intrinsic} (const char $\ast$intrin\+\_\+name) const 
+\item 
+bool \hyperlink{classtvm_1_1tir_1_1CallNode_ac99b7e0c7a43bbc8ba9fbc341ec91f99}{is\+\_\+vectorizable} () const 
+\item 
+\hyperlink{classtvm_1_1tir_1_1CallNode_a7fc7aec73f8c704f165d3026fa732e07}{T\+V\+M\+\_\+\+D\+E\+C\+L\+A\+R\+E\+\_\+\+F\+I\+N\+A\+L\+\_\+\+O\+B\+J\+E\+C\+T\+\_\+\+I\+N\+FO} (\hyperlink{classtvm_1_1tir_1_1CallNode}{Call\+Node}, \hyperlink{classtvm_1_1PrimExprNode}{Prim\+Expr\+Node})
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \hyperlink{classtvm_1_1PrimExpr}{Prim\+Expr} \hyperlink{classtvm_1_1tir_1_1CallNode_ab08f0f3e992f1adea539deac89f63ada}{make} (\hyperlink{namespacetvm_a41918af1a1dc386388639a9d3ad06c5d}{Data\+Type} \hyperlink{classtvm_1_1PrimExprNode_a95af9234514ec5f11355db41524be7f9}{dtype}, std\+::string \hyperlink{classtvm_1_1tir_1_1CallNode_a3bd9e0b7cdea76a46815d6c175f682e0}{name}, \hyperlink{classtvm_1_1Array}{Array}$<$ \hyperlink{classtvm_1_1PrimExpr}{Prim\+Expr} $>$ \hyperlink{classtvm_1_1tir_1_1CallNode_a7ca077747fdb2bcb63ca1cac4a49017f}{args}, \hyperlink{classtvm_1_1tir_1_1CallNode_a13e1f0f48f488fd085ca2684738fa97a}{Call\+Type} \hyperlink{classtvm_1_1tir_1_1CallNode_aa0fadf83d2540a578ffbc6a673a94fb5}{call\+\_\+type}, \hyperlink{classtvm_1_1tir_1_1FunctionRef}{Function\+Ref} \hyperlink{classtvm_1_1tir_1_1CallNode_afbdbda11e2bc1c47c3bcbaed9a9983e4}{func}=\hyperlink{classtvm_1_1tir_1_1FunctionRef}{Function\+Ref}(), int \hyperlink{classtvm_1_1tir_1_1CallNode_a399d6e07f8a5b8a9b15b8596fb548205}{value\+\_\+index}=0)
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+std\+::string \hyperlink{classtvm_1_1tir_1_1CallNode_a3bd9e0b7cdea76a46815d6c175f682e0}{name}
+\begin{DoxyCompactList}\small\item\em The name of the function/intrinsic. \end{DoxyCompactList}\item 
+\hyperlink{classtvm_1_1Array}{Array}$<$ \hyperlink{classtvm_1_1PrimExpr}{Prim\+Expr} $>$ \hyperlink{classtvm_1_1tir_1_1CallNode_a7ca077747fdb2bcb63ca1cac4a49017f}{args}
+\begin{DoxyCompactList}\small\item\em The arguments. \end{DoxyCompactList}\item 
+\hyperlink{classtvm_1_1tir_1_1CallNode_a13e1f0f48f488fd085ca2684738fa97a}{Call\+Type} \hyperlink{classtvm_1_1tir_1_1CallNode_aa0fadf83d2540a578ffbc6a673a94fb5}{call\+\_\+type}
+\begin{DoxyCompactList}\small\item\em \hyperlink{classtvm_1_1Type}{Type} of calls. \end{DoxyCompactList}\item 
+\hyperlink{classtvm_1_1tir_1_1FunctionRef}{Function\+Ref} \hyperlink{classtvm_1_1tir_1_1CallNode_afbdbda11e2bc1c47c3bcbaed9a9983e4}{func}
+\begin{DoxyCompactList}\small\item\em The function to be called. \end{DoxyCompactList}\item 
+int \hyperlink{classtvm_1_1tir_1_1CallNode_a399d6e07f8a5b8a9b15b8596fb548205}{value\+\_\+index} \{0\}
+\begin{DoxyCompactList}\small\item\em The output value index if func\textquotesingle{}s value is a tuple. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static constexpr const char $\ast$ \hyperlink{classtvm_1_1tir_1_1CallNode_a7b4d801def85ed1955a018cfb655a434}{\+\_\+type\+\_\+key} = \char`\"{}Call\char`\"{}
+\item 
+static constexpr const char $\ast$ \hyperlink{classtvm_1_1tir_1_1CallNode_afd029e12c4b28b7d6fea4a8bf27c6e50}{reinterpret} = \char`\"{}reinterpret\char`\"{}
+\item 
+static constexpr const char $\ast$ \hyperlink{classtvm_1_1tir_1_1CallNode_a45ce5bd93c09588f4961bf0683f8ec17}{bitwise\+\_\+and} = \char`\"{}bitwise\+\_\+and\char`\"{}
+\item 
+static constexpr const char $\ast$ \hyperlink{classtvm_1_1tir_1_1CallNode_a0a1a5c29a08482fe66ff955f35bde07b}{bitwise\+\_\+not} = \char`\"{}bitwise\+\_\+not\char`\"{}
+\item 
+static constexpr const char $\ast$ \hyperlink{classtvm_1_1tir_1_1CallNode_a615ddb84f79dfdf60b2bebba0e9c98fe}{bitwise\+\_\+xor} = \char`\"{}bitwise\+\_\+xor\char`\"{}
+\item 
+static constexpr const char $\ast$ \hyperlink{classtvm_1_1tir_1_1CallNode_abba6095e415d3cfd5006406c0f68758e}{bitwise\+\_\+or} = \char`\"{}bitwise\+\_\+or\char`\"{}
+\item 
+static constexpr const char $\ast$ \hyperlink{classtvm_1_1tir_1_1CallNode_a1a0078e5ee30ba236b8634e9aed8db24}{shift\+\_\+left} = \char`\"{}shift\+\_\+left\char`\"{}
+\item 
+static constexpr const char $\ast$ \hyperlink{classtvm_1_1tir_1_1CallNode_a4e768da713db6bcff8d7e6f51e4468e4}{shift\+\_\+right} = \char`\"{}shift\+\_\+right\char`\"{}
+\item 
+static constexpr const char $\ast$ \hyperlink{classtvm_1_1tir_1_1CallNode_a2fbfd414c61e8d2cf749882789625f16}{popcount} = \char`\"{}popcount\char`\"{}
+\item 
+static constexpr const char $\ast$ \hyperlink{classtvm_1_1tir_1_1CallNode_aa5557c1a8bf82ab81b5e916670583ba3}{likely} = \char`\"{}likely\char`\"{}
+\item 
+static constexpr const char $\ast$ \hyperlink{classtvm_1_1tir_1_1CallNode_adaa0f8782aaa0affe1b98e4353811149}{glsl\+\_\+texture\+\_\+store} = \char`\"{}glsl\+\_\+texture\+\_\+store\char`\"{}
+\item 
+static constexpr const char $\ast$ \hyperlink{classtvm_1_1tir_1_1CallNode_a747a64efc4f4a67067486f047de1c51a}{prefetch} = \char`\"{}prefetch\char`\"{}
+\item 
+static constexpr const char $\ast$ \hyperlink{classtvm_1_1tir_1_1CallNode_af9579b5cc850ea3d2b5d0e5cd88c4c9a}{isnan} = \char`\"{}isnan\char`\"{}
+\item 
+static constexpr const char $\ast$ \hyperlink{classtvm_1_1tir_1_1CallNode_ababe5c5ec515672f90018263dd186cd1}{isfinite} = \char`\"{}isfinite\char`\"{}
+\item 
+static constexpr const char $\ast$ \hyperlink{classtvm_1_1tir_1_1CallNode_ac302718e33b936c727233696982cc52d}{isinf} = \char`\"{}isinf\char`\"{}
+\item 
+static const char $\ast$ \hyperlink{classtvm_1_1tir_1_1CallNode_a33a7c5928493a7206f3efc0e43c7fc88}{vectorizable\+\_\+intrinsics} \mbox{[}$\,$\mbox{]}
+\begin{DoxyCompactList}\small\item\em Vectorizable intrinsic list. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Call node. 
+
+\subsection{Member Enumeration Documentation}
+\index{tvm\+::tir\+::\+Call\+Node@{tvm\+::tir\+::\+Call\+Node}!Call\+Type@{Call\+Type}}
+\index{Call\+Type@{Call\+Type}!tvm\+::tir\+::\+Call\+Node@{tvm\+::tir\+::\+Call\+Node}}
+\subsubsection[{\texorpdfstring{Call\+Type}{CallType}}]{\setlength{\rightskip}{0pt plus 5cm}enum {\bf tvm\+::tir\+::\+Call\+Node\+::\+Call\+Type} \+: int}\hypertarget{classtvm_1_1tir_1_1CallNode_a13e1f0f48f488fd085ca2684738fa97a}{}\label{classtvm_1_1tir_1_1CallNode_a13e1f0f48f488fd085ca2684738fa97a}
+
+
+Possible types of calls. 
+
+\begin{Desc}
+\item[Enumerator]\par
+\begin{description}
+\index{Extern@{Extern}!tvm\+::tir\+::\+Call\+Node@{tvm\+::tir\+::\+Call\+Node}}\index{tvm\+::tir\+::\+Call\+Node@{tvm\+::tir\+::\+Call\+Node}!Extern@{Extern}}\item[{\em 
+Extern\hypertarget{classtvm_1_1tir_1_1CallNode_a13e1f0f48f488fd085ca2684738fa97aab7045868cb47d7cb16471faab2a04af4}{}\label{classtvm_1_1tir_1_1CallNode_a13e1f0f48f488fd085ca2684738fa97aab7045868cb47d7cb16471faab2a04af4}
+}]Extern \char`\"{}\+C\char`\"{} function. \index{Extern\+C\+Plus\+Plus@{Extern\+C\+Plus\+Plus}!tvm\+::tir\+::\+Call\+Node@{tvm\+::tir\+::\+Call\+Node}}\index{tvm\+::tir\+::\+Call\+Node@{tvm\+::tir\+::\+Call\+Node}!Extern\+C\+Plus\+Plus@{Extern\+C\+Plus\+Plus}}\item[{\em 
+Extern\+C\+Plus\+Plus\hypertarget{classtvm_1_1tir_1_1CallNode_a13e1f0f48f488fd085ca2684738fa97aae9b7420c5efa76da58ce83ea64c47a5d}{}\label{classtvm_1_1tir_1_1CallNode_a13e1f0f48f488fd085ca2684738fa97aae9b7420c5efa76da58ce83ea64c47a5d}
+}]Extern C\+XX function. \index{Pure\+Extern@{Pure\+Extern}!tvm\+::tir\+::\+Call\+Node@{tvm\+::tir\+::\+Call\+Node}}\index{tvm\+::tir\+::\+Call\+Node@{tvm\+::tir\+::\+Call\+Node}!Pure\+Extern@{Pure\+Extern}}\item[{\em 
+Pure\+Extern\hypertarget{classtvm_1_1tir_1_1CallNode_a13e1f0f48f488fd085ca2684738fa97aa28d0e2a1d6e2553b9c0c70151efb9927}{}\label{classtvm_1_1tir_1_1CallNode_a13e1f0f48f488fd085ca2684738fa97aa28d0e2a1d6e2553b9c0c70151efb9927}
+}]Extern \char`\"{}\+C\char`\"{} without side-\/effect. \index{Halide@{Halide}!tvm\+::tir\+::\+Call\+Node@{tvm\+::tir\+::\+Call\+Node}}\index{tvm\+::tir\+::\+Call\+Node@{tvm\+::tir\+::\+Call\+Node}!Halide@{Halide}}\item[{\em 
+Halide\hypertarget{classtvm_1_1tir_1_1CallNode_a13e1f0f48f488fd085ca2684738fa97aa57993161c871dc15a052154594845514}{}\label{classtvm_1_1tir_1_1CallNode_a13e1f0f48f488fd085ca2684738fa97aa57993161c871dc15a052154594845514}
+}]Halide-\/style call, evaluates func(args). \index{Intrinsic@{Intrinsic}!tvm\+::tir\+::\+Call\+Node@{tvm\+::tir\+::\+Call\+Node}}\index{tvm\+::tir\+::\+Call\+Node@{tvm\+::tir\+::\+Call\+Node}!Intrinsic@{Intrinsic}}\item[{\em 
+Intrinsic\hypertarget{classtvm_1_1tir_1_1CallNode_a13e1f0f48f488fd085ca2684738fa97aa53257cce64e712a51504dc56287f9bce}{}\label{classtvm_1_1tir_1_1CallNode_a13e1f0f48f488fd085ca2684738fa97aa53257cce64e712a51504dc56287f9bce}
+}]Intrinsic functions. \index{Pure\+Intrinsic@{Pure\+Intrinsic}!tvm\+::tir\+::\+Call\+Node@{tvm\+::tir\+::\+Call\+Node}}\index{tvm\+::tir\+::\+Call\+Node@{tvm\+::tir\+::\+Call\+Node}!Pure\+Intrinsic@{Pure\+Intrinsic}}\item[{\em 
+Pure\+Intrinsic\hypertarget{classtvm_1_1tir_1_1CallNode_a13e1f0f48f488fd085ca2684738fa97aa2403c0f0c0f7bef7f60d06918d8d39ac}{}\label{classtvm_1_1tir_1_1CallNode_a13e1f0f48f488fd085ca2684738fa97aa2403c0f0c0f7bef7f60d06918d8d39ac}
+}]Intrinsic functions that are pure. \end{description}
+\end{Desc}
+
+
+\subsection{Member Function Documentation}
+\index{tvm\+::tir\+::\+Call\+Node@{tvm\+::tir\+::\+Call\+Node}!is\+\_\+intrinsic@{is\+\_\+intrinsic}}
+\index{is\+\_\+intrinsic@{is\+\_\+intrinsic}!tvm\+::tir\+::\+Call\+Node@{tvm\+::tir\+::\+Call\+Node}}
+\subsubsection[{\texorpdfstring{is\+\_\+intrinsic(const char $\ast$intrin\+\_\+name) const }{is_intrinsic(const char *intrin_name) const }}]{\setlength{\rightskip}{0pt plus 5cm}bool tvm\+::tir\+::\+Call\+Node\+::is\+\_\+intrinsic (
+\begin{DoxyParamCaption}
+\item[{const char $\ast$}]{intrin\+\_\+name}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classtvm_1_1tir_1_1CallNode_ab3854cf20af3de0b892f2255ee734239}{}\label{classtvm_1_1tir_1_1CallNode_ab3854cf20af3de0b892f2255ee734239}
+\begin{DoxyReturn}{Returns}
+Whether call node corresponds to a defined intrinsic. 
+\end{DoxyReturn}
+
+\begin{DoxyParams}{Parameters}
+{\em intrin\+\_\+name} & The name of the intrinsic. \\
+\hline
+\end{DoxyParams}
+\index{tvm\+::tir\+::\+Call\+Node@{tvm\+::tir\+::\+Call\+Node}!is\+\_\+pure@{is\+\_\+pure}}
+\index{is\+\_\+pure@{is\+\_\+pure}!tvm\+::tir\+::\+Call\+Node@{tvm\+::tir\+::\+Call\+Node}}
+\subsubsection[{\texorpdfstring{is\+\_\+pure() const }{is_pure() const }}]{\setlength{\rightskip}{0pt plus 5cm}bool tvm\+::tir\+::\+Call\+Node\+::is\+\_\+pure (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classtvm_1_1tir_1_1CallNode_a2399dd87487b9bbbd6f56cdfd88b15a7}{}\label{classtvm_1_1tir_1_1CallNode_a2399dd87487b9bbbd6f56cdfd88b15a7}
+\begin{DoxyReturn}{Returns}
+Whether call node is pure. 
+\end{DoxyReturn}
+\index{tvm\+::tir\+::\+Call\+Node@{tvm\+::tir\+::\+Call\+Node}!is\+\_\+vectorizable@{is\+\_\+vectorizable}}
+\index{is\+\_\+vectorizable@{is\+\_\+vectorizable}!tvm\+::tir\+::\+Call\+Node@{tvm\+::tir\+::\+Call\+Node}}
+\subsubsection[{\texorpdfstring{is\+\_\+vectorizable() const }{is_vectorizable() const }}]{\setlength{\rightskip}{0pt plus 5cm}bool tvm\+::tir\+::\+Call\+Node\+::is\+\_\+vectorizable (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}\hypertarget{classtvm_1_1tir_1_1CallNode_ac99b7e0c7a43bbc8ba9fbc341ec91f99}{}\label{classtvm_1_1tir_1_1CallNode_ac99b7e0c7a43bbc8ba9fbc341ec91f99}
+\begin{DoxyReturn}{Returns}
+Whether call node can be vectorized. 
+\end{DoxyReturn}
+\index{tvm\+::tir\+::\+Call\+Node@{tvm\+::tir\+::\+Call\+Node}!make@{make}}
+\index{make@{make}!tvm\+::tir\+::\+Call\+Node@{tvm\+::tir\+::\+Call\+Node}}
+\subsubsection[{\texorpdfstring{make(\+Data\+Type dtype, std\+::string name, Array$<$ Prim\+Expr $>$ args, Call\+Type call\+\_\+type, Function\+Ref func=\+Function\+Ref(), int value\+\_\+index=0)}{make(DataType dtype, std::string name, Array< PrimExpr > args, CallType call_type, FunctionRef func=FunctionRef(), int value_index=0)}}]{\setlength{\rightskip}{0pt plus 5cm}static {\bf Prim\+Expr} tvm\+::tir\+::\+Call\+Node\+::make (
+\begin{DoxyParamCaption}
+\item[{{\bf Data\+Type}}]{dtype, }
+\item[{std\+::string}]{name, }
+\item[{{\bf Array}$<$ {\bf Prim\+Expr} $>$}]{args, }
+\item[{{\bf Call\+Type}}]{call\+\_\+type, }
+\item[{{\bf Function\+Ref}}]{func = {\ttfamily {\bf Function\+Ref}()}, }
+\item[{int}]{value\+\_\+index = {\ttfamily 0}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}\hypertarget{classtvm_1_1tir_1_1CallNode_ab08f0f3e992f1adea539deac89f63ada}{}\label{classtvm_1_1tir_1_1CallNode_ab08f0f3e992f1adea539deac89f63ada}
+\index{tvm\+::tir\+::\+Call\+Node@{tvm\+::tir\+::\+Call\+Node}!S\+Equal\+Reduce@{S\+Equal\+Reduce}}
+\index{S\+Equal\+Reduce@{S\+Equal\+Reduce}!tvm\+::tir\+::\+Call\+Node@{tvm\+::tir\+::\+Call\+Node}}
+\subsubsection[{\texorpdfstring{S\+Equal\+Reduce(const Call\+Node $\ast$other, S\+Equal\+Reducer equal) const }{SEqualReduce(const CallNode *other, SEqualReducer equal) const }}]{\setlength{\rightskip}{0pt plus 5cm}bool tvm\+::tir\+::\+Call\+Node\+::\+S\+Equal\+Reduce (
+\begin{DoxyParamCaption}
+\item[{const {\bf Call\+Node} $\ast$}]{other, }
+\item[{{\bf S\+Equal\+Reducer}}]{equal}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classtvm_1_1tir_1_1CallNode_a4e631c0b21801e30d92d23a1c3de23bc}{}\label{classtvm_1_1tir_1_1CallNode_a4e631c0b21801e30d92d23a1c3de23bc}
+\index{tvm\+::tir\+::\+Call\+Node@{tvm\+::tir\+::\+Call\+Node}!S\+Hash\+Reduce@{S\+Hash\+Reduce}}
+\index{S\+Hash\+Reduce@{S\+Hash\+Reduce}!tvm\+::tir\+::\+Call\+Node@{tvm\+::tir\+::\+Call\+Node}}
+\subsubsection[{\texorpdfstring{S\+Hash\+Reduce(\+S\+Hash\+Reducer hash\+\_\+reduce) const }{SHashReduce(SHashReducer hash_reduce) const }}]{\setlength{\rightskip}{0pt plus 5cm}void tvm\+::tir\+::\+Call\+Node\+::\+S\+Hash\+Reduce (
+\begin{DoxyParamCaption}
+\item[{{\bf S\+Hash\+Reducer}}]{hash\+\_\+reduce}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classtvm_1_1tir_1_1CallNode_a0e9eb68c0dc275f789e4794b582ad13f}{}\label{classtvm_1_1tir_1_1CallNode_a0e9eb68c0dc275f789e4794b582ad13f}
+\index{tvm\+::tir\+::\+Call\+Node@{tvm\+::tir\+::\+Call\+Node}!T\+V\+M\+\_\+\+D\+E\+C\+L\+A\+R\+E\+\_\+\+F\+I\+N\+A\+L\+\_\+\+O\+B\+J\+E\+C\+T\+\_\+\+I\+N\+FO@{T\+V\+M\+\_\+\+D\+E\+C\+L\+A\+R\+E\+\_\+\+F\+I\+N\+A\+L\+\_\+\+O\+B\+J\+E\+C\+T\+\_\+\+I\+N\+FO}}
+\index{T\+V\+M\+\_\+\+D\+E\+C\+L\+A\+R\+E\+\_\+\+F\+I\+N\+A\+L\+\_\+\+O\+B\+J\+E\+C\+T\+\_\+\+I\+N\+FO@{T\+V\+M\+\_\+\+D\+E\+C\+L\+A\+R\+E\+\_\+\+F\+I\+N\+A\+L\+\_\+\+O\+B\+J\+E\+C\+T\+\_\+\+I\+N\+FO}!tvm\+::tir\+::\+Call\+Node@{tvm\+::tir\+::\+Call\+Node}}
+\subsubsection[{\texorpdfstring{T\+V\+M\+\_\+\+D\+E\+C\+L\+A\+R\+E\+\_\+\+F\+I\+N\+A\+L\+\_\+\+O\+B\+J\+E\+C\+T\+\_\+\+I\+N\+F\+O(\+Call\+Node, Prim\+Expr\+Node)}{TVM_DECLARE_FINAL_OBJECT_INFO(CallNode, PrimExprNode)}}]{\setlength{\rightskip}{0pt plus 5cm}tvm\+::tir\+::\+Call\+Node\+::\+T\+V\+M\+\_\+\+D\+E\+C\+L\+A\+R\+E\+\_\+\+F\+I\+N\+A\+L\+\_\+\+O\+B\+J\+E\+C\+T\+\_\+\+I\+N\+FO (
+\begin{DoxyParamCaption}
+\item[{{\bf Call\+Node}}]{, }
+\item[{{\bf Prim\+Expr\+Node}}]{}
+\end{DoxyParamCaption}
+)}\hypertarget{classtvm_1_1tir_1_1CallNode_a7fc7aec73f8c704f165d3026fa732e07}{}\label{classtvm_1_1tir_1_1CallNode_a7fc7aec73f8c704f165d3026fa732e07}
+\index{tvm\+::tir\+::\+Call\+Node@{tvm\+::tir\+::\+Call\+Node}!Visit\+Attrs@{Visit\+Attrs}}
+\index{Visit\+Attrs@{Visit\+Attrs}!tvm\+::tir\+::\+Call\+Node@{tvm\+::tir\+::\+Call\+Node}}
+\subsubsection[{\texorpdfstring{Visit\+Attrs(\+Attr\+Visitor $\ast$v)}{VisitAttrs(AttrVisitor *v)}}]{\setlength{\rightskip}{0pt plus 5cm}void tvm\+::tir\+::\+Call\+Node\+::\+Visit\+Attrs (
+\begin{DoxyParamCaption}
+\item[{{\bf Attr\+Visitor} $\ast$}]{v}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classtvm_1_1tir_1_1CallNode_ab16f6a3e97ab7e8ec0d2e906fd5a2f71}{}\label{classtvm_1_1tir_1_1CallNode_ab16f6a3e97ab7e8ec0d2e906fd5a2f71}
+
+
+\subsection{Member Data Documentation}
+\index{tvm\+::tir\+::\+Call\+Node@{tvm\+::tir\+::\+Call\+Node}!\+\_\+type\+\_\+key@{\+\_\+type\+\_\+key}}
+\index{\+\_\+type\+\_\+key@{\+\_\+type\+\_\+key}!tvm\+::tir\+::\+Call\+Node@{tvm\+::tir\+::\+Call\+Node}}
+\subsubsection[{\texorpdfstring{\+\_\+type\+\_\+key}{_type_key}}]{\setlength{\rightskip}{0pt plus 5cm}constexpr const char$\ast$ tvm\+::tir\+::\+Call\+Node\+::\+\_\+type\+\_\+key = \char`\"{}Call\char`\"{}\hspace{0.3cm}{\ttfamily [static]}}\hypertarget{classtvm_1_1tir_1_1CallNode_a7b4d801def85ed1955a018cfb655a434}{}\label{classtvm_1_1tir_1_1CallNode_a7b4d801def85ed1955a018cfb655a434}
+\index{tvm\+::tir\+::\+Call\+Node@{tvm\+::tir\+::\+Call\+Node}!args@{args}}
+\index{args@{args}!tvm\+::tir\+::\+Call\+Node@{tvm\+::tir\+::\+Call\+Node}}
+\subsubsection[{\texorpdfstring{args}{args}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Array}$<${\bf Prim\+Expr}$>$ tvm\+::tir\+::\+Call\+Node\+::args}\hypertarget{classtvm_1_1tir_1_1CallNode_a7ca077747fdb2bcb63ca1cac4a49017f}{}\label{classtvm_1_1tir_1_1CallNode_a7ca077747fdb2bcb63ca1cac4a49017f}
+
+
+The arguments. 
+
+\index{tvm\+::tir\+::\+Call\+Node@{tvm\+::tir\+::\+Call\+Node}!bitwise\+\_\+and@{bitwise\+\_\+and}}
+\index{bitwise\+\_\+and@{bitwise\+\_\+and}!tvm\+::tir\+::\+Call\+Node@{tvm\+::tir\+::\+Call\+Node}}
+\subsubsection[{\texorpdfstring{bitwise\+\_\+and}{bitwise_and}}]{\setlength{\rightskip}{0pt plus 5cm}constexpr const char$\ast$ tvm\+::tir\+::\+Call\+Node\+::bitwise\+\_\+and = \char`\"{}bitwise\+\_\+and\char`\"{}\hspace{0.3cm}{\ttfamily [static]}}\hypertarget{classtvm_1_1tir_1_1CallNode_a45ce5bd93c09588f4961bf0683f8ec17}{}\label{classtvm_1_1tir_1_1CallNode_a45ce5bd93c09588f4961bf0683f8ec17}
+\index{tvm\+::tir\+::\+Call\+Node@{tvm\+::tir\+::\+Call\+Node}!bitwise\+\_\+not@{bitwise\+\_\+not}}
+\index{bitwise\+\_\+not@{bitwise\+\_\+not}!tvm\+::tir\+::\+Call\+Node@{tvm\+::tir\+::\+Call\+Node}}
+\subsubsection[{\texorpdfstring{bitwise\+\_\+not}{bitwise_not}}]{\setlength{\rightskip}{0pt plus 5cm}constexpr const char$\ast$ tvm\+::tir\+::\+Call\+Node\+::bitwise\+\_\+not = \char`\"{}bitwise\+\_\+not\char`\"{}\hspace{0.3cm}{\ttfamily [static]}}\hypertarget{classtvm_1_1tir_1_1CallNode_a0a1a5c29a08482fe66ff955f35bde07b}{}\label{classtvm_1_1tir_1_1CallNode_a0a1a5c29a08482fe66ff955f35bde07b}
+\index{tvm\+::tir\+::\+Call\+Node@{tvm\+::tir\+::\+Call\+Node}!bitwise\+\_\+or@{bitwise\+\_\+or}}
+\index{bitwise\+\_\+or@{bitwise\+\_\+or}!tvm\+::tir\+::\+Call\+Node@{tvm\+::tir\+::\+Call\+Node}}
+\subsubsection[{\texorpdfstring{bitwise\+\_\+or}{bitwise_or}}]{\setlength{\rightskip}{0pt plus 5cm}constexpr const char$\ast$ tvm\+::tir\+::\+Call\+Node\+::bitwise\+\_\+or = \char`\"{}bitwise\+\_\+or\char`\"{}\hspace{0.3cm}{\ttfamily [static]}}\hypertarget{classtvm_1_1tir_1_1CallNode_abba6095e415d3cfd5006406c0f68758e}{}\label{classtvm_1_1tir_1_1CallNode_abba6095e415d3cfd5006406c0f68758e}
+\index{tvm\+::tir\+::\+Call\+Node@{tvm\+::tir\+::\+Call\+Node}!bitwise\+\_\+xor@{bitwise\+\_\+xor}}
+\index{bitwise\+\_\+xor@{bitwise\+\_\+xor}!tvm\+::tir\+::\+Call\+Node@{tvm\+::tir\+::\+Call\+Node}}
+\subsubsection[{\texorpdfstring{bitwise\+\_\+xor}{bitwise_xor}}]{\setlength{\rightskip}{0pt plus 5cm}constexpr const char$\ast$ tvm\+::tir\+::\+Call\+Node\+::bitwise\+\_\+xor = \char`\"{}bitwise\+\_\+xor\char`\"{}\hspace{0.3cm}{\ttfamily [static]}}\hypertarget{classtvm_1_1tir_1_1CallNode_a615ddb84f79dfdf60b2bebba0e9c98fe}{}\label{classtvm_1_1tir_1_1CallNode_a615ddb84f79dfdf60b2bebba0e9c98fe}
+\index{tvm\+::tir\+::\+Call\+Node@{tvm\+::tir\+::\+Call\+Node}!call\+\_\+type@{call\+\_\+type}}
+\index{call\+\_\+type@{call\+\_\+type}!tvm\+::tir\+::\+Call\+Node@{tvm\+::tir\+::\+Call\+Node}}
+\subsubsection[{\texorpdfstring{call\+\_\+type}{call_type}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Call\+Type} tvm\+::tir\+::\+Call\+Node\+::call\+\_\+type}\hypertarget{classtvm_1_1tir_1_1CallNode_aa0fadf83d2540a578ffbc6a673a94fb5}{}\label{classtvm_1_1tir_1_1CallNode_aa0fadf83d2540a578ffbc6a673a94fb5}
+
+
+\hyperlink{classtvm_1_1Type}{Type} of calls. 
+
+\index{tvm\+::tir\+::\+Call\+Node@{tvm\+::tir\+::\+Call\+Node}!func@{func}}
+\index{func@{func}!tvm\+::tir\+::\+Call\+Node@{tvm\+::tir\+::\+Call\+Node}}
+\subsubsection[{\texorpdfstring{func}{func}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Function\+Ref} tvm\+::tir\+::\+Call\+Node\+::func}\hypertarget{classtvm_1_1tir_1_1CallNode_afbdbda11e2bc1c47c3bcbaed9a9983e4}{}\label{classtvm_1_1tir_1_1CallNode_afbdbda11e2bc1c47c3bcbaed9a9983e4}
+
+
+The function to be called. 
+
+\index{tvm\+::tir\+::\+Call\+Node@{tvm\+::tir\+::\+Call\+Node}!glsl\+\_\+texture\+\_\+store@{glsl\+\_\+texture\+\_\+store}}
+\index{glsl\+\_\+texture\+\_\+store@{glsl\+\_\+texture\+\_\+store}!tvm\+::tir\+::\+Call\+Node@{tvm\+::tir\+::\+Call\+Node}}
+\subsubsection[{\texorpdfstring{glsl\+\_\+texture\+\_\+store}{glsl_texture_store}}]{\setlength{\rightskip}{0pt plus 5cm}constexpr const char$\ast$ tvm\+::tir\+::\+Call\+Node\+::glsl\+\_\+texture\+\_\+store = \char`\"{}glsl\+\_\+texture\+\_\+store\char`\"{}\hspace{0.3cm}{\ttfamily [static]}}\hypertarget{classtvm_1_1tir_1_1CallNode_adaa0f8782aaa0affe1b98e4353811149}{}\label{classtvm_1_1tir_1_1CallNode_adaa0f8782aaa0affe1b98e4353811149}
+\index{tvm\+::tir\+::\+Call\+Node@{tvm\+::tir\+::\+Call\+Node}!isfinite@{isfinite}}
+\index{isfinite@{isfinite}!tvm\+::tir\+::\+Call\+Node@{tvm\+::tir\+::\+Call\+Node}}
+\subsubsection[{\texorpdfstring{isfinite}{isfinite}}]{\setlength{\rightskip}{0pt plus 5cm}constexpr const char$\ast$ tvm\+::tir\+::\+Call\+Node\+::isfinite = \char`\"{}isfinite\char`\"{}\hspace{0.3cm}{\ttfamily [static]}}\hypertarget{classtvm_1_1tir_1_1CallNode_ababe5c5ec515672f90018263dd186cd1}{}\label{classtvm_1_1tir_1_1CallNode_ababe5c5ec515672f90018263dd186cd1}
+\index{tvm\+::tir\+::\+Call\+Node@{tvm\+::tir\+::\+Call\+Node}!isinf@{isinf}}
+\index{isinf@{isinf}!tvm\+::tir\+::\+Call\+Node@{tvm\+::tir\+::\+Call\+Node}}
+\subsubsection[{\texorpdfstring{isinf}{isinf}}]{\setlength{\rightskip}{0pt plus 5cm}constexpr const char$\ast$ tvm\+::tir\+::\+Call\+Node\+::isinf = \char`\"{}isinf\char`\"{}\hspace{0.3cm}{\ttfamily [static]}}\hypertarget{classtvm_1_1tir_1_1CallNode_ac302718e33b936c727233696982cc52d}{}\label{classtvm_1_1tir_1_1CallNode_ac302718e33b936c727233696982cc52d}
+\index{tvm\+::tir\+::\+Call\+Node@{tvm\+::tir\+::\+Call\+Node}!isnan@{isnan}}
+\index{isnan@{isnan}!tvm\+::tir\+::\+Call\+Node@{tvm\+::tir\+::\+Call\+Node}}
+\subsubsection[{\texorpdfstring{isnan}{isnan}}]{\setlength{\rightskip}{0pt plus 5cm}constexpr const char$\ast$ tvm\+::tir\+::\+Call\+Node\+::isnan = \char`\"{}isnan\char`\"{}\hspace{0.3cm}{\ttfamily [static]}}\hypertarget{classtvm_1_1tir_1_1CallNode_af9579b5cc850ea3d2b5d0e5cd88c4c9a}{}\label{classtvm_1_1tir_1_1CallNode_af9579b5cc850ea3d2b5d0e5cd88c4c9a}
+\index{tvm\+::tir\+::\+Call\+Node@{tvm\+::tir\+::\+Call\+Node}!likely@{likely}}
+\index{likely@{likely}!tvm\+::tir\+::\+Call\+Node@{tvm\+::tir\+::\+Call\+Node}}
+\subsubsection[{\texorpdfstring{likely}{likely}}]{\setlength{\rightskip}{0pt plus 5cm}constexpr const char$\ast$ tvm\+::tir\+::\+Call\+Node\+::likely = \char`\"{}likely\char`\"{}\hspace{0.3cm}{\ttfamily [static]}}\hypertarget{classtvm_1_1tir_1_1CallNode_aa5557c1a8bf82ab81b5e916670583ba3}{}\label{classtvm_1_1tir_1_1CallNode_aa5557c1a8bf82ab81b5e916670583ba3}
+\index{tvm\+::tir\+::\+Call\+Node@{tvm\+::tir\+::\+Call\+Node}!name@{name}}
+\index{name@{name}!tvm\+::tir\+::\+Call\+Node@{tvm\+::tir\+::\+Call\+Node}}
+\subsubsection[{\texorpdfstring{name}{name}}]{\setlength{\rightskip}{0pt plus 5cm}std\+::string tvm\+::tir\+::\+Call\+Node\+::name}\hypertarget{classtvm_1_1tir_1_1CallNode_a3bd9e0b7cdea76a46815d6c175f682e0}{}\label{classtvm_1_1tir_1_1CallNode_a3bd9e0b7cdea76a46815d6c175f682e0}
+
+
+The name of the function/intrinsic. 
+
+\index{tvm\+::tir\+::\+Call\+Node@{tvm\+::tir\+::\+Call\+Node}!popcount@{popcount}}
+\index{popcount@{popcount}!tvm\+::tir\+::\+Call\+Node@{tvm\+::tir\+::\+Call\+Node}}
+\subsubsection[{\texorpdfstring{popcount}{popcount}}]{\setlength{\rightskip}{0pt plus 5cm}constexpr const char$\ast$ tvm\+::tir\+::\+Call\+Node\+::popcount = \char`\"{}popcount\char`\"{}\hspace{0.3cm}{\ttfamily [static]}}\hypertarget{classtvm_1_1tir_1_1CallNode_a2fbfd414c61e8d2cf749882789625f16}{}\label{classtvm_1_1tir_1_1CallNode_a2fbfd414c61e8d2cf749882789625f16}
+\index{tvm\+::tir\+::\+Call\+Node@{tvm\+::tir\+::\+Call\+Node}!prefetch@{prefetch}}
+\index{prefetch@{prefetch}!tvm\+::tir\+::\+Call\+Node@{tvm\+::tir\+::\+Call\+Node}}
+\subsubsection[{\texorpdfstring{prefetch}{prefetch}}]{\setlength{\rightskip}{0pt plus 5cm}constexpr const char$\ast$ tvm\+::tir\+::\+Call\+Node\+::prefetch = \char`\"{}prefetch\char`\"{}\hspace{0.3cm}{\ttfamily [static]}}\hypertarget{classtvm_1_1tir_1_1CallNode_a747a64efc4f4a67067486f047de1c51a}{}\label{classtvm_1_1tir_1_1CallNode_a747a64efc4f4a67067486f047de1c51a}
+\index{tvm\+::tir\+::\+Call\+Node@{tvm\+::tir\+::\+Call\+Node}!reinterpret@{reinterpret}}
+\index{reinterpret@{reinterpret}!tvm\+::tir\+::\+Call\+Node@{tvm\+::tir\+::\+Call\+Node}}
+\subsubsection[{\texorpdfstring{reinterpret}{reinterpret}}]{\setlength{\rightskip}{0pt plus 5cm}constexpr const char$\ast$ tvm\+::tir\+::\+Call\+Node\+::reinterpret = \char`\"{}reinterpret\char`\"{}\hspace{0.3cm}{\ttfamily [static]}}\hypertarget{classtvm_1_1tir_1_1CallNode_afd029e12c4b28b7d6fea4a8bf27c6e50}{}\label{classtvm_1_1tir_1_1CallNode_afd029e12c4b28b7d6fea4a8bf27c6e50}
+\index{tvm\+::tir\+::\+Call\+Node@{tvm\+::tir\+::\+Call\+Node}!shift\+\_\+left@{shift\+\_\+left}}
+\index{shift\+\_\+left@{shift\+\_\+left}!tvm\+::tir\+::\+Call\+Node@{tvm\+::tir\+::\+Call\+Node}}
+\subsubsection[{\texorpdfstring{shift\+\_\+left}{shift_left}}]{\setlength{\rightskip}{0pt plus 5cm}constexpr const char$\ast$ tvm\+::tir\+::\+Call\+Node\+::shift\+\_\+left = \char`\"{}shift\+\_\+left\char`\"{}\hspace{0.3cm}{\ttfamily [static]}}\hypertarget{classtvm_1_1tir_1_1CallNode_a1a0078e5ee30ba236b8634e9aed8db24}{}\label{classtvm_1_1tir_1_1CallNode_a1a0078e5ee30ba236b8634e9aed8db24}
+\index{tvm\+::tir\+::\+Call\+Node@{tvm\+::tir\+::\+Call\+Node}!shift\+\_\+right@{shift\+\_\+right}}
+\index{shift\+\_\+right@{shift\+\_\+right}!tvm\+::tir\+::\+Call\+Node@{tvm\+::tir\+::\+Call\+Node}}
+\subsubsection[{\texorpdfstring{shift\+\_\+right}{shift_right}}]{\setlength{\rightskip}{0pt plus 5cm}constexpr const char$\ast$ tvm\+::tir\+::\+Call\+Node\+::shift\+\_\+right = \char`\"{}shift\+\_\+right\char`\"{}\hspace{0.3cm}{\ttfamily [static]}}\hypertarget{classtvm_1_1tir_1_1CallNode_a4e768da713db6bcff8d7e6f51e4468e4}{}\label{classtvm_1_1tir_1_1CallNode_a4e768da713db6bcff8d7e6f51e4468e4}
+\index{tvm\+::tir\+::\+Call\+Node@{tvm\+::tir\+::\+Call\+Node}!value\+\_\+index@{value\+\_\+index}}
+\index{value\+\_\+index@{value\+\_\+index}!tvm\+::tir\+::\+Call\+Node@{tvm\+::tir\+::\+Call\+Node}}
+\subsubsection[{\texorpdfstring{value\+\_\+index}{value_index}}]{\setlength{\rightskip}{0pt plus 5cm}int tvm\+::tir\+::\+Call\+Node\+::value\+\_\+index \{0\}}\hypertarget{classtvm_1_1tir_1_1CallNode_a399d6e07f8a5b8a9b15b8596fb548205}{}\label{classtvm_1_1tir_1_1CallNode_a399d6e07f8a5b8a9b15b8596fb548205}
+
+
+The output value index if func\textquotesingle{}s value is a tuple. 
+
+\index{tvm\+::tir\+::\+Call\+Node@{tvm\+::tir\+::\+Call\+Node}!vectorizable\+\_\+intrinsics@{vectorizable\+\_\+intrinsics}}
+\index{vectorizable\+\_\+intrinsics@{vectorizable\+\_\+intrinsics}!tvm\+::tir\+::\+Call\+Node@{tvm\+::tir\+::\+Call\+Node}}
+\subsubsection[{\texorpdfstring{vectorizable\+\_\+intrinsics}{vectorizable_intrinsics}}]{\setlength{\rightskip}{0pt plus 5cm}const char$\ast$ tvm\+::tir\+::\+Call\+Node\+::vectorizable\+\_\+intrinsics\mbox{[}$\,$\mbox{]}\hspace{0.3cm}{\ttfamily [static]}}\hypertarget{classtvm_1_1tir_1_1CallNode_a33a7c5928493a7206f3efc0e43c7fc88}{}\label{classtvm_1_1tir_1_1CallNode_a33a7c5928493a7206f3efc0e43c7fc88}
+
+
+Vectorizable intrinsic list. 
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+include/tvm/tir/\hyperlink{tir_2expr_8h}{expr.\+h}\end{DoxyCompactItemize}

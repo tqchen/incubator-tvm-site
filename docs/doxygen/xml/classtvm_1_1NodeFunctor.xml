@@ -1,0 +1,47 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="classtvm_1_1NodeFunctor" kind="class" language="C++" prot="public">
+    <compoundname>tvm::NodeFunctor</compoundname>
+    <includes refid="functor_8h" local="no">functor.h</includes>
+    <templateparamlist>
+      <param>
+        <type>typename FType</type>
+      </param>
+    </templateparamlist>
+    <briefdescription>
+<para>A dynamically dispatched functor on the type of the first argument. </para>    </briefdescription>
+    <detaileddescription>
+<para>This is a class that is useful to construct polymorphic dispatching base on the AST/IR node&apos;s type.</para><para><programlisting><codeline><highlight class="normal">NodeFunctor&lt;std::string<sp/>(const<sp/>ObjectRef&amp;<sp/>n,<sp/>std::string<sp/>prefix)&gt;<sp/>tostr;</highlight></codeline>
+<codeline><highlight class="normal">tostr.set_dispatch&lt;Add&gt;([](const<sp/>ObjectRef&amp;<sp/>op,<sp/>std::string<sp/>prefix)<sp/>{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>return<sp/>prefix<sp/>+<sp/>&quot;Add&quot;;</highlight></codeline>
+<codeline><highlight class="normal">});</highlight></codeline>
+<codeline><highlight class="normal">tostr.set_dispatch&lt;IntImm&gt;([](const<sp/>ObjectRef&amp;<sp/>op,<sp/>std::string<sp/>prefix)<sp/>{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>return<sp/>prefix<sp/>+<sp/>&quot;IntImm&quot;</highlight></codeline>
+<codeline><highlight class="normal">});</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">Expr<sp/>x<sp/>=<sp/>make_const(1);</highlight></codeline>
+<codeline><highlight class="normal">Expr<sp/>y<sp/>=<sp/>x<sp/>+<sp/>x;</highlight></codeline>
+<codeline><highlight class="normal">//<sp/>dispatch<sp/>to<sp/>IntImm,<sp/>outputs<sp/>&quot;MyIntImm&quot;</highlight></codeline>
+<codeline><highlight class="normal">LOG(INFO)<sp/>&lt;&lt;<sp/>tostr(x,<sp/>&quot;My&quot;);</highlight></codeline>
+<codeline><highlight class="normal">//<sp/>dispatch<sp/>to<sp/>IntImm,<sp/>outputs<sp/>&quot;MyAdd&quot;</highlight></codeline>
+<codeline><highlight class="normal">LOG(INFO)<sp/>&lt;&lt;<sp/>tostr(y,<sp/>&quot;My&quot;);</highlight></codeline>
+</programlisting></para><para><parameterlist kind="templateparam"><parameteritem>
+<parameternamelist>
+<parametername>FType</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>function signiture This type if only defined for FType with function signature </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>    </detaileddescription>
+    <collaborationgraph>
+      <node id="5851">
+        <label>tvm::NodeFunctor&lt; FType &gt;</label>
+        <link refid="classtvm_1_1NodeFunctor"/>
+      </node>
+    </collaborationgraph>
+    <location file="include/tvm/node/functor.h" line="64" column="1" bodyfile="include/tvm/node/functor.h" bodystart="64" bodyend="-1"/>
+    <listofallmembers>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

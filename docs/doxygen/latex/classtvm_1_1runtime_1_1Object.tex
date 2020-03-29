@@ -1,0 +1,503 @@
+\hypertarget{classtvm_1_1runtime_1_1Object}{}\section{tvm\+:\+:runtime\+:\+:Object Class Reference}
+\label{classtvm_1_1runtime_1_1Object}\index{tvm\+::runtime\+::\+Object@{tvm\+::runtime\+::\+Object}}
+
+
+base class of all object containers.  
+
+
+
+
+{\ttfamily \#include $<$object.\+h$>$}
+
+
+
+Inheritance diagram for tvm\+:\+:runtime\+:\+:Object\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classtvm_1_1runtime_1_1Object__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for tvm\+:\+:runtime\+:\+:Object\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=326pt]{classtvm_1_1runtime_1_1Object__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+typedef void($\ast$ \hyperlink{classtvm_1_1runtime_1_1Object_a9e84841ca982bff376a978ade0132631}{F\+Deleter}) (\hyperlink{classtvm_1_1runtime_1_1Object}{Object} $\ast$self)
+\begin{DoxyCompactList}\small\item\em \hyperlink{classtvm_1_1runtime_1_1Object}{Object} deleter. \end{DoxyCompactList}\item 
+using \hyperlink{classtvm_1_1runtime_1_1Object_a55549a6c23987890246248682560a03d}{Ref\+Counter\+Type} = std\+::atomic$<$ int32\+\_\+t $>$
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+uint32\+\_\+t \hyperlink{classtvm_1_1runtime_1_1Object_a594c0d786dbc567ff6774ab11b45958a}{type\+\_\+index} () const 
+\item 
+std\+::string \hyperlink{classtvm_1_1runtime_1_1Object_a9581610ea91e0e38f57edc82e264a1b0}{Get\+Type\+Key} () const 
+\item 
+size\+\_\+t \hyperlink{classtvm_1_1runtime_1_1Object_ac9a7d8d3d562803c9cf91271c462b61d}{Get\+Type\+Key\+Hash} () const 
+\item 
+{\footnotesize template$<$typename Target\+Type $>$ }\\bool \hyperlink{classtvm_1_1runtime_1_1Object_af1359ebff2c328ff0bb80083937c95dd}{Is\+Instance} () const 
+\item 
+\hyperlink{classtvm_1_1runtime_1_1Object_a133436a9ec5c4a768b94102bf95a660b}{Object} ()
+\item 
+\hyperlink{classtvm_1_1runtime_1_1Object_ab7968feb6ad38ecaffc320e13819d826}{Object} (const \hyperlink{classtvm_1_1runtime_1_1Object}{Object} \&other)
+\item 
+\hyperlink{classtvm_1_1runtime_1_1Object_aa1612f69ea5b4225d4cda759cd517323}{Object} (\hyperlink{classtvm_1_1runtime_1_1Object}{Object} \&\&other)
+\item 
+\hyperlink{classtvm_1_1runtime_1_1Object}{Object} \& \hyperlink{classtvm_1_1runtime_1_1Object_a69c32fbd96181f5c21d2c878ab285e4f}{operator=} (const \hyperlink{classtvm_1_1runtime_1_1Object}{Object} \&other)
+\item 
+\hyperlink{classtvm_1_1runtime_1_1Object}{Object} \& \hyperlink{classtvm_1_1runtime_1_1Object_ae341e561272ff43cdcbc927bc29ac50d}{operator=} (\hyperlink{classtvm_1_1runtime_1_1Object}{Object} \&\&other)
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static std\+::string \hyperlink{classtvm_1_1runtime_1_1Object_a817ba6c23b7ee1821c48a75edf255a30}{Type\+Index2\+Key} (uint32\+\_\+t tindex)
+\begin{DoxyCompactList}\small\item\em Get the type key of the corresponding index from runtime. \end{DoxyCompactList}\item 
+static size\+\_\+t \hyperlink{classtvm_1_1runtime_1_1Object_a6ee32a02dd44257da105fbbe5d9c8622}{Type\+Index2\+Key\+Hash} (uint32\+\_\+t tindex)
+\begin{DoxyCompactList}\small\item\em Get the type key hash of the corresponding index from runtime. \end{DoxyCompactList}\item 
+static uint32\+\_\+t \hyperlink{classtvm_1_1runtime_1_1Object_a6841f97e06e6614dd7e82c6dd41b818a}{Type\+Key2\+Index} (const std\+::string \&key)
+\begin{DoxyCompactList}\small\item\em Get the type index of the corresponding key from runtime. \end{DoxyCompactList}\item 
+static uint32\+\_\+t \hyperlink{classtvm_1_1runtime_1_1Object_a5fbebc47be111ecc1d5869bcc0476e21}{\+\_\+\+Get\+Or\+Alloc\+Runtime\+Type\+Index} ()
+\item 
+static uint32\+\_\+t \hyperlink{classtvm_1_1runtime_1_1Object_ad94d79729ac85aa7c976e23d39066383}{Runtime\+Type\+Index} ()
+\end{DoxyCompactItemize}
+\subsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static constexpr const char $\ast$ \hyperlink{classtvm_1_1runtime_1_1Object_a43d6bf3191bebb805eced0744d859c1e}{\+\_\+type\+\_\+key} = \char`\"{}Object\char`\"{}
+\item 
+static constexpr bool \hyperlink{classtvm_1_1runtime_1_1Object_a55cb618bd4bbcd49317b35ea8e2996be}{\+\_\+type\+\_\+final} = false
+\item 
+static constexpr uint32\+\_\+t \hyperlink{classtvm_1_1runtime_1_1Object_a14b234a745215da158b2386bbb34bd70}{\+\_\+type\+\_\+child\+\_\+slots} = 0
+\item 
+static constexpr bool \hyperlink{classtvm_1_1runtime_1_1Object_a05ece7bcb6bf73e88765c1f193a489ce}{\+\_\+type\+\_\+child\+\_\+slots\+\_\+can\+\_\+overflow} = true
+\item 
+static constexpr bool \hyperlink{classtvm_1_1runtime_1_1Object_a74e9f076b50b8b335b4a321e9b0bf03c}{\+\_\+type\+\_\+has\+\_\+method\+\_\+visit\+\_\+attrs} = true
+\item 
+static constexpr bool \hyperlink{classtvm_1_1runtime_1_1Object_a92fe62494027b70af1f7696d611c21b6}{\+\_\+type\+\_\+has\+\_\+method\+\_\+sequal\+\_\+reduce} = false
+\item 
+static constexpr bool \hyperlink{classtvm_1_1runtime_1_1Object_ac97054694d03dc5eac58315fb569ef88}{\+\_\+type\+\_\+has\+\_\+method\+\_\+shash\+\_\+reduce} = false
+\item 
+static constexpr uint32\+\_\+t \hyperlink{classtvm_1_1runtime_1_1Object_af6aed95d70af7e44ce376a8d7be6c5f1}{\+\_\+type\+\_\+index} = Type\+Index\+::k\+Dynamic
+\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{classtvm_1_1runtime_1_1Object_ac9e5eed7719e322117bde996a171e33a}{Inc\+Ref} ()
+\begin{DoxyCompactList}\small\item\em developer function, increases reference counter. \end{DoxyCompactList}\item 
+void \hyperlink{classtvm_1_1runtime_1_1Object_a70fb5361147634605d6595bb89381f03}{Dec\+Ref} ()
+\begin{DoxyCompactList}\small\item\em developer function, decrease reference counter. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Static Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static uint32\+\_\+t \hyperlink{classtvm_1_1runtime_1_1Object_a726972ff315c446192df94027ddea032}{Get\+Or\+Alloc\+Runtime\+Type\+Index} (const std\+::string \&key, uint32\+\_\+t static\+\_\+tindex, uint32\+\_\+t parent\+\_\+tindex, uint32\+\_\+t type\+\_\+child\+\_\+slots, bool type\+\_\+child\+\_\+slots\+\_\+can\+\_\+overflow)
+\begin{DoxyCompactList}\small\item\em Get the type index using type key. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+uint32\+\_\+t \hyperlink{classtvm_1_1runtime_1_1Object_a4bfc2586cb55f2af47728187b3256255}{type\+\_\+index\+\_\+} \{0\}
+\begin{DoxyCompactList}\small\item\em \hyperlink{classtvm_1_1Type}{Type} index(tag) that indicates the type of the object. \end{DoxyCompactList}\item 
+\hyperlink{classtvm_1_1runtime_1_1Object_a55549a6c23987890246248682560a03d}{Ref\+Counter\+Type} \hyperlink{classtvm_1_1runtime_1_1Object_a0d492efee331e2239a093f4b2017c10f}{ref\+\_\+counter\+\_\+} \{0\}
+\begin{DoxyCompactList}\small\item\em The internal reference counter. \end{DoxyCompactList}\item 
+\hyperlink{classtvm_1_1runtime_1_1Object_a9e84841ca982bff376a978ade0132631}{F\+Deleter} \hyperlink{classtvm_1_1runtime_1_1Object_af4407d2b59132e803ff791482dbe0145}{deleter\+\_\+} = nullptr
+\begin{DoxyCompactList}\small\item\em deleter of this object to enable customized allocation. If the deleter is nullptr, no deletion will be performed. The creator of the object must always set the deleter field properly. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+{\footnotesize template$<$typename $>$ }\\class \hyperlink{classtvm_1_1runtime_1_1Object_a8fae619f3bd1a2b2f7273d8d6525032a}{Obj\+Allocator\+Base}
+\item 
+{\footnotesize template$<$typename $>$ }\\class \hyperlink{classtvm_1_1runtime_1_1Object_a4193bb155125953e77ded93c0fb46965}{Object\+Ptr}
+\item 
+class \hyperlink{classtvm_1_1runtime_1_1Object_ae0ea8b4adc6dab8c74086bceaef6b3e1}{T\+V\+M\+Ret\+Value}
+\item 
+class \hyperlink{classtvm_1_1runtime_1_1Object_a4a8e2a2ce9dc9267dc18ac8abfd8dd16}{Object\+Internal}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+base class of all object containers. 
+
+Sub-\/class of objects should declare the following static constexpr fields\+:
+
+
+\begin{DoxyItemize}
+\item \+\_\+type\+\_\+index\+: Static type index of the object, if assigned to Type\+Index\+::k\+Dynamic the type index will be assigned during runtime. Runtime type index can be accessed by \hyperlink{namespacetvm_1_1runtime_a7d395cd724f727e86358b73b5cdeb4e4}{Object\+Type\+::\+Type\+Index()};
+\item \+\_\+type\+\_\+key\+: The unique string identifier of tyep type.
+\item \+\_\+type\+\_\+final\+: Whether the type is terminal type(there is no subclass of the type in the object system). This field is automatically set by marco T\+V\+M\+\_\+\+D\+E\+C\+L\+A\+R\+E\+\_\+\+F\+I\+N\+A\+L\+\_\+\+O\+B\+J\+E\+C\+T\+\_\+\+I\+N\+FO It is still OK to sub-\/class a terminal object type T and construct it using make\+\_\+object. But Is\+Instance check will only show that the object type is T(instead of the sub-\/class).
+\end{DoxyItemize}
+
+The following two fields are necessary for base classes that can be sub-\/classed.
+
+
+\begin{DoxyItemize}
+\item \+\_\+type\+\_\+child\+\_\+slots\+: Number of reserved type index slots for child classes. Used for runtime optimization for type checking in Is\+Instance. If an object\textquotesingle{}s type\+\_\+index is within range of \mbox{[}type\+\_\+index, type\+\_\+index + \+\_\+type\+\_\+child\+\_\+slots\mbox{]} Then the object can be quickly decided as sub-\/class of the current object class. If not, a fallback mechanism is used to check the global type table. Recommendation\+: set to estimate number of children needed.
+\item \+\_\+type\+\_\+child\+\_\+slots\+\_\+can\+\_\+overflow\+: Whether we can add additional child classes even if the number of child classes exceeds the \+\_\+type\+\_\+child\+\_\+slots. A fallback mechanism to check global type table will be used. Recommendation\+: set to false for optimal runtime speed if we know exact number of children.
+\end{DoxyItemize}
+
+Two macros are used to declare helper functions in the object\+:
+\begin{DoxyItemize}
+\item Use T\+V\+M\+\_\+\+D\+E\+C\+L\+A\+R\+E\+\_\+\+B\+A\+S\+E\+\_\+\+O\+B\+J\+E\+C\+T\+\_\+\+I\+N\+FO for object classes that can be sub-\/classed.
+\item Use T\+V\+M\+\_\+\+D\+E\+C\+L\+A\+R\+E\+\_\+\+F\+I\+N\+A\+L\+\_\+\+O\+B\+J\+E\+C\+T\+\_\+\+I\+N\+FO for object classes that cannot be sub-\/classed.
+\end{DoxyItemize}
+
+New objects can be created using make\+\_\+object function. Which will automatically populate the type\+\_\+index and deleter of the object.
+
+\begin{DoxySeeAlso}{See also}
+\hyperlink{namespacetvm_1_1runtime_a93466f4543eedc3925c66ed0e7ef2671}{make\+\_\+object} 
+
+\hyperlink{classtvm_1_1runtime_1_1ObjectPtr}{Object\+Ptr} 
+
+\hyperlink{classtvm_1_1runtime_1_1ObjectRef}{Object\+Ref}
+\end{DoxySeeAlso}
+
+\begin{DoxyCode}
+\textcolor{comment}{// Create a base object}
+\textcolor{keyword}{class }BaseObj : \textcolor{keyword}{public} \hyperlink{classtvm_1_1runtime_1_1Object_a133436a9ec5c4a768b94102bf95a660b}{Object} \{
+ \textcolor{keyword}{public}:
+  \textcolor{comment}{// object fields}
+  \textcolor{keywordtype}{int} field0;
+
+  \textcolor{comment}{// object properties}
+  \textcolor{keyword}{static} constexpr \textcolor{keyword}{const} uint32\_t \hyperlink{classtvm_1_1runtime_1_1Object_af6aed95d70af7e44ce376a8d7be6c5f1}{\_type\_index} = \hyperlink{namespacetvm_1_1runtime_a7d395cd724f727e86358b73b5cdeb4e4a633f5947b3a79c577b538cec7528f5aa}{TypeIndex::kDynamic};
+  \textcolor{keyword}{static} constexpr \textcolor{keyword}{const} \textcolor{keywordtype}{char}* \hyperlink{classtvm_1_1runtime_1_1Object_a43d6bf3191bebb805eced0744d859c1e}{\_type\_key} = \textcolor{stringliteral}{"test.BaseObj"};
+  \hyperlink{object_8h_ac2b7418e9549512b5db0126cf2a716f1}{TVM\_DECLARE\_BASE\_OBJECT\_INFO}(BaseObj, \hyperlink{classtvm_1_1runtime_1_1Object_a133436a9ec5c4a768b94102bf95a660b}{Object});
+\};
+
+\textcolor{keyword}{class }ObjLeaf : \textcolor{keyword}{public} ObjBase \{
+ \textcolor{keyword}{public}:
+  \textcolor{comment}{// fields}
+  \textcolor{keywordtype}{int} child\_field0;
+  \textcolor{comment}{// object properties}
+  \textcolor{keyword}{static} constexpr \textcolor{keyword}{const} uint32\_t \hyperlink{classtvm_1_1runtime_1_1Object_af6aed95d70af7e44ce376a8d7be6c5f1}{\_type\_index} = \hyperlink{namespacetvm_1_1runtime_a7d395cd724f727e86358b73b5cdeb4e4a633f5947b3a79c577b538cec7528f5aa}{TypeIndex::kDynamic};
+  \textcolor{keyword}{static} constexpr \textcolor{keyword}{const} \textcolor{keywordtype}{char}* \hyperlink{classtvm_1_1runtime_1_1Object_a43d6bf3191bebb805eced0744d859c1e}{\_type\_key} = \textcolor{stringliteral}{"test.LeafObj"};
+  \hyperlink{object_8h_ac2b7418e9549512b5db0126cf2a716f1}{TVM\_DECLARE\_BASE\_OBJECT\_INFO}(LeaffObj, \hyperlink{classtvm_1_1runtime_1_1Object_a133436a9ec5c4a768b94102bf95a660b}{Object});
+\};
+
+\textcolor{comment}{// The following code should be put into a cc file.}
+\hyperlink{object_8h_ae1029068e5e7608770038906ca30db09}{TVM\_REGISTER\_OBJECT\_TYPE}(ObjBase);
+\hyperlink{object_8h_ae1029068e5e7608770038906ca30db09}{TVM\_REGISTER\_OBJECT\_TYPE}(ObjLeaf);
+
+\textcolor{comment}{// Usage example.}
+\textcolor{keywordtype}{void} TestObjects() \{
+  \textcolor{comment}{// create an object}
+  ObjectRef leaf\_ref(make\_object<LeafObj>());
+  \textcolor{comment}{// cast to a specific instance}
+  \textcolor{keyword}{const} LeafObj* leaf\_ptr = leaf\_ref.as<LeafObj>();
+  CHECK(leaf\_ptr != \textcolor{keyword}{nullptr});
+  \textcolor{comment}{// can also cast to the base class.}
+  CHECK(leaf\_ref.as<BaseObj>() != \textcolor{keyword}{nullptr});
+\}
+\end{DoxyCode}
+ 
+
+\subsection{Member Typedef Documentation}
+\index{tvm\+::runtime\+::\+Object@{tvm\+::runtime\+::\+Object}!F\+Deleter@{F\+Deleter}}
+\index{F\+Deleter@{F\+Deleter}!tvm\+::runtime\+::\+Object@{tvm\+::runtime\+::\+Object}}
+\subsubsection[{\texorpdfstring{F\+Deleter}{FDeleter}}]{\setlength{\rightskip}{0pt plus 5cm}typedef void($\ast$ tvm\+::runtime\+::\+Object\+::\+F\+Deleter) ({\bf Object} $\ast$self)}\hypertarget{classtvm_1_1runtime_1_1Object_a9e84841ca982bff376a978ade0132631}{}\label{classtvm_1_1runtime_1_1Object_a9e84841ca982bff376a978ade0132631}
+
+
+\hyperlink{classtvm_1_1runtime_1_1Object}{Object} deleter. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em self} & pointer to the \hyperlink{classtvm_1_1runtime_1_1Object}{Object}. \\
+\hline
+\end{DoxyParams}
+\index{tvm\+::runtime\+::\+Object@{tvm\+::runtime\+::\+Object}!Ref\+Counter\+Type@{Ref\+Counter\+Type}}
+\index{Ref\+Counter\+Type@{Ref\+Counter\+Type}!tvm\+::runtime\+::\+Object@{tvm\+::runtime\+::\+Object}}
+\subsubsection[{\texorpdfstring{Ref\+Counter\+Type}{RefCounterType}}]{\setlength{\rightskip}{0pt plus 5cm}using {\bf tvm\+::runtime\+::\+Object\+::\+Ref\+Counter\+Type} =  std\+::atomic$<$int32\+\_\+t$>$}\hypertarget{classtvm_1_1runtime_1_1Object_a55549a6c23987890246248682560a03d}{}\label{classtvm_1_1runtime_1_1Object_a55549a6c23987890246248682560a03d}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\index{tvm\+::runtime\+::\+Object@{tvm\+::runtime\+::\+Object}!Object@{Object}}
+\index{Object@{Object}!tvm\+::runtime\+::\+Object@{tvm\+::runtime\+::\+Object}}
+\subsubsection[{\texorpdfstring{Object()}{Object()}}]{\setlength{\rightskip}{0pt plus 5cm}tvm\+::runtime\+::\+Object\+::\+Object (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classtvm_1_1runtime_1_1Object_a133436a9ec5c4a768b94102bf95a660b}{}\label{classtvm_1_1runtime_1_1Object_a133436a9ec5c4a768b94102bf95a660b}
+\index{tvm\+::runtime\+::\+Object@{tvm\+::runtime\+::\+Object}!Object@{Object}}
+\index{Object@{Object}!tvm\+::runtime\+::\+Object@{tvm\+::runtime\+::\+Object}}
+\subsubsection[{\texorpdfstring{Object(const Object \&other)}{Object(const Object &other)}}]{\setlength{\rightskip}{0pt plus 5cm}tvm\+::runtime\+::\+Object\+::\+Object (
+\begin{DoxyParamCaption}
+\item[{const {\bf Object} \&}]{other}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classtvm_1_1runtime_1_1Object_ab7968feb6ad38ecaffc320e13819d826}{}\label{classtvm_1_1runtime_1_1Object_ab7968feb6ad38ecaffc320e13819d826}
+\index{tvm\+::runtime\+::\+Object@{tvm\+::runtime\+::\+Object}!Object@{Object}}
+\index{Object@{Object}!tvm\+::runtime\+::\+Object@{tvm\+::runtime\+::\+Object}}
+\subsubsection[{\texorpdfstring{Object(\+Object \&\&other)}{Object(Object &&other)}}]{\setlength{\rightskip}{0pt plus 5cm}tvm\+::runtime\+::\+Object\+::\+Object (
+\begin{DoxyParamCaption}
+\item[{{\bf Object} \&\&}]{other}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classtvm_1_1runtime_1_1Object_aa1612f69ea5b4225d4cda759cd517323}{}\label{classtvm_1_1runtime_1_1Object_aa1612f69ea5b4225d4cda759cd517323}
+
+
+\subsection{Member Function Documentation}
+\index{tvm\+::runtime\+::\+Object@{tvm\+::runtime\+::\+Object}!\+\_\+\+Get\+Or\+Alloc\+Runtime\+Type\+Index@{\+\_\+\+Get\+Or\+Alloc\+Runtime\+Type\+Index}}
+\index{\+\_\+\+Get\+Or\+Alloc\+Runtime\+Type\+Index@{\+\_\+\+Get\+Or\+Alloc\+Runtime\+Type\+Index}!tvm\+::runtime\+::\+Object@{tvm\+::runtime\+::\+Object}}
+\subsubsection[{\texorpdfstring{\+\_\+\+Get\+Or\+Alloc\+Runtime\+Type\+Index()}{_GetOrAllocRuntimeTypeIndex()}}]{\setlength{\rightskip}{0pt plus 5cm}static uint32\+\_\+t tvm\+::runtime\+::\+Object\+::\+\_\+\+Get\+Or\+Alloc\+Runtime\+Type\+Index (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}\hypertarget{classtvm_1_1runtime_1_1Object_a5fbebc47be111ecc1d5869bcc0476e21}{}\label{classtvm_1_1runtime_1_1Object_a5fbebc47be111ecc1d5869bcc0476e21}
+\index{tvm\+::runtime\+::\+Object@{tvm\+::runtime\+::\+Object}!Dec\+Ref@{Dec\+Ref}}
+\index{Dec\+Ref@{Dec\+Ref}!tvm\+::runtime\+::\+Object@{tvm\+::runtime\+::\+Object}}
+\subsubsection[{\texorpdfstring{Dec\+Ref()}{DecRef()}}]{\setlength{\rightskip}{0pt plus 5cm}void tvm\+::runtime\+::\+Object\+::\+Dec\+Ref (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [protected]}}\hypertarget{classtvm_1_1runtime_1_1Object_a70fb5361147634605d6595bb89381f03}{}\label{classtvm_1_1runtime_1_1Object_a70fb5361147634605d6595bb89381f03}
+
+
+developer function, decrease reference counter. 
+
+\begin{DoxyNote}{Note}
+The deleter will be called when ref\+\_\+counter\+\_\+ becomes zero. 
+\end{DoxyNote}
+\index{tvm\+::runtime\+::\+Object@{tvm\+::runtime\+::\+Object}!Get\+Or\+Alloc\+Runtime\+Type\+Index@{Get\+Or\+Alloc\+Runtime\+Type\+Index}}
+\index{Get\+Or\+Alloc\+Runtime\+Type\+Index@{Get\+Or\+Alloc\+Runtime\+Type\+Index}!tvm\+::runtime\+::\+Object@{tvm\+::runtime\+::\+Object}}
+\subsubsection[{\texorpdfstring{Get\+Or\+Alloc\+Runtime\+Type\+Index(const std\+::string \&key, uint32\+\_\+t static\+\_\+tindex, uint32\+\_\+t parent\+\_\+tindex, uint32\+\_\+t type\+\_\+child\+\_\+slots, bool type\+\_\+child\+\_\+slots\+\_\+can\+\_\+overflow)}{GetOrAllocRuntimeTypeIndex(const std::string &key, uint32_t static_tindex, uint32_t parent_tindex, uint32_t type_child_slots, bool type_child_slots_can_overflow)}}]{\setlength{\rightskip}{0pt plus 5cm}static uint32\+\_\+t tvm\+::runtime\+::\+Object\+::\+Get\+Or\+Alloc\+Runtime\+Type\+Index (
+\begin{DoxyParamCaption}
+\item[{const std\+::string \&}]{key, }
+\item[{uint32\+\_\+t}]{static\+\_\+tindex, }
+\item[{uint32\+\_\+t}]{parent\+\_\+tindex, }
+\item[{uint32\+\_\+t}]{type\+\_\+child\+\_\+slots, }
+\item[{bool}]{type\+\_\+child\+\_\+slots\+\_\+can\+\_\+overflow}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [protected]}}\hypertarget{classtvm_1_1runtime_1_1Object_a726972ff315c446192df94027ddea032}{}\label{classtvm_1_1runtime_1_1Object_a726972ff315c446192df94027ddea032}
+
+
+Get the type index using type key. 
+
+When the function is first time called for a type, it will register the type to the type table in the runtime. If the static\+\_\+tindex is Type\+Index\+::k\+Dynamic, the function will allocate a runtime type index. Otherwise, we will populate the type table and return the static index.
+
+
+\begin{DoxyParams}{Parameters}
+{\em key} & the type key. \\
+\hline
+{\em static\+\_\+tindex} & The current \+\_\+type\+\_\+index field. can be Type\+Index\+::k\+Dynamic. \\
+\hline
+{\em parent\+\_\+tindex} & The index of the parent. \\
+\hline
+{\em type\+\_\+child\+\_\+slots} & Number of slots reserved for its children. \\
+\hline
+{\em type\+\_\+child\+\_\+slots\+\_\+can\+\_\+overflow} & Whether to allow child to overflow the slots. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The allocated type index. 
+\end{DoxyReturn}
+\index{tvm\+::runtime\+::\+Object@{tvm\+::runtime\+::\+Object}!Get\+Type\+Key@{Get\+Type\+Key}}
+\index{Get\+Type\+Key@{Get\+Type\+Key}!tvm\+::runtime\+::\+Object@{tvm\+::runtime\+::\+Object}}
+\subsubsection[{\texorpdfstring{Get\+Type\+Key() const }{GetTypeKey() const }}]{\setlength{\rightskip}{0pt plus 5cm}std\+::string tvm\+::runtime\+::\+Object\+::\+Get\+Type\+Key (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classtvm_1_1runtime_1_1Object_a9581610ea91e0e38f57edc82e264a1b0}{}\label{classtvm_1_1runtime_1_1Object_a9581610ea91e0e38f57edc82e264a1b0}
+\begin{DoxyReturn}{Returns}
+the type key of the object. 
+\end{DoxyReturn}
+\begin{DoxyNote}{Note}
+this operation is expensive, can be used for error reporting. 
+\end{DoxyNote}
+\index{tvm\+::runtime\+::\+Object@{tvm\+::runtime\+::\+Object}!Get\+Type\+Key\+Hash@{Get\+Type\+Key\+Hash}}
+\index{Get\+Type\+Key\+Hash@{Get\+Type\+Key\+Hash}!tvm\+::runtime\+::\+Object@{tvm\+::runtime\+::\+Object}}
+\subsubsection[{\texorpdfstring{Get\+Type\+Key\+Hash() const }{GetTypeKeyHash() const }}]{\setlength{\rightskip}{0pt plus 5cm}size\+\_\+t tvm\+::runtime\+::\+Object\+::\+Get\+Type\+Key\+Hash (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classtvm_1_1runtime_1_1Object_ac9a7d8d3d562803c9cf91271c462b61d}{}\label{classtvm_1_1runtime_1_1Object_ac9a7d8d3d562803c9cf91271c462b61d}
+\begin{DoxyReturn}{Returns}
+A hash value of the return of Get\+Type\+Key. 
+\end{DoxyReturn}
+\index{tvm\+::runtime\+::\+Object@{tvm\+::runtime\+::\+Object}!Inc\+Ref@{Inc\+Ref}}
+\index{Inc\+Ref@{Inc\+Ref}!tvm\+::runtime\+::\+Object@{tvm\+::runtime\+::\+Object}}
+\subsubsection[{\texorpdfstring{Inc\+Ref()}{IncRef()}}]{\setlength{\rightskip}{0pt plus 5cm}void tvm\+::runtime\+::\+Object\+::\+Inc\+Ref (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [protected]}}\hypertarget{classtvm_1_1runtime_1_1Object_ac9e5eed7719e322117bde996a171e33a}{}\label{classtvm_1_1runtime_1_1Object_ac9e5eed7719e322117bde996a171e33a}
+
+
+developer function, increases reference counter. 
+
+\index{tvm\+::runtime\+::\+Object@{tvm\+::runtime\+::\+Object}!Is\+Instance@{Is\+Instance}}
+\index{Is\+Instance@{Is\+Instance}!tvm\+::runtime\+::\+Object@{tvm\+::runtime\+::\+Object}}
+\subsubsection[{\texorpdfstring{Is\+Instance() const }{IsInstance() const }}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Target\+Type $>$ bool tvm\+::runtime\+::\+Object\+::\+Is\+Instance (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classtvm_1_1runtime_1_1Object_af1359ebff2c328ff0bb80083937c95dd}{}\label{classtvm_1_1runtime_1_1Object_af1359ebff2c328ff0bb80083937c95dd}
+Check if the object is an instance of Target\+Type. 
+\begin{DoxyTemplParams}{Template Parameters}
+{\em Target\+Type} & The target type to be checked. \\
+\hline
+\end{DoxyTemplParams}
+\begin{DoxyReturn}{Returns}
+Whether the target type is true. 
+\end{DoxyReturn}
+\index{tvm\+::runtime\+::\+Object@{tvm\+::runtime\+::\+Object}!operator=@{operator=}}
+\index{operator=@{operator=}!tvm\+::runtime\+::\+Object@{tvm\+::runtime\+::\+Object}}
+\subsubsection[{\texorpdfstring{operator=(const Object \&other)}{operator=(const Object &other)}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Object}\& tvm\+::runtime\+::\+Object\+::operator= (
+\begin{DoxyParamCaption}
+\item[{const {\bf Object} \&}]{other}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classtvm_1_1runtime_1_1Object_a69c32fbd96181f5c21d2c878ab285e4f}{}\label{classtvm_1_1runtime_1_1Object_a69c32fbd96181f5c21d2c878ab285e4f}
+\index{tvm\+::runtime\+::\+Object@{tvm\+::runtime\+::\+Object}!operator=@{operator=}}
+\index{operator=@{operator=}!tvm\+::runtime\+::\+Object@{tvm\+::runtime\+::\+Object}}
+\subsubsection[{\texorpdfstring{operator=(\+Object \&\&other)}{operator=(Object &&other)}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Object}\& tvm\+::runtime\+::\+Object\+::operator= (
+\begin{DoxyParamCaption}
+\item[{{\bf Object} \&\&}]{other}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classtvm_1_1runtime_1_1Object_ae341e561272ff43cdcbc927bc29ac50d}{}\label{classtvm_1_1runtime_1_1Object_ae341e561272ff43cdcbc927bc29ac50d}
+\index{tvm\+::runtime\+::\+Object@{tvm\+::runtime\+::\+Object}!Runtime\+Type\+Index@{Runtime\+Type\+Index}}
+\index{Runtime\+Type\+Index@{Runtime\+Type\+Index}!tvm\+::runtime\+::\+Object@{tvm\+::runtime\+::\+Object}}
+\subsubsection[{\texorpdfstring{Runtime\+Type\+Index()}{RuntimeTypeIndex()}}]{\setlength{\rightskip}{0pt plus 5cm}static uint32\+\_\+t tvm\+::runtime\+::\+Object\+::\+Runtime\+Type\+Index (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}\hypertarget{classtvm_1_1runtime_1_1Object_ad94d79729ac85aa7c976e23d39066383}{}\label{classtvm_1_1runtime_1_1Object_ad94d79729ac85aa7c976e23d39066383}
+\index{tvm\+::runtime\+::\+Object@{tvm\+::runtime\+::\+Object}!type\+\_\+index@{type\+\_\+index}}
+\index{type\+\_\+index@{type\+\_\+index}!tvm\+::runtime\+::\+Object@{tvm\+::runtime\+::\+Object}}
+\subsubsection[{\texorpdfstring{type\+\_\+index() const }{type_index() const }}]{\setlength{\rightskip}{0pt plus 5cm}uint32\+\_\+t tvm\+::runtime\+::\+Object\+::type\+\_\+index (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classtvm_1_1runtime_1_1Object_a594c0d786dbc567ff6774ab11b45958a}{}\label{classtvm_1_1runtime_1_1Object_a594c0d786dbc567ff6774ab11b45958a}
+\begin{DoxyReturn}{Returns}
+The internal runtime type index of the object. 
+\end{DoxyReturn}
+\index{tvm\+::runtime\+::\+Object@{tvm\+::runtime\+::\+Object}!Type\+Index2\+Key@{Type\+Index2\+Key}}
+\index{Type\+Index2\+Key@{Type\+Index2\+Key}!tvm\+::runtime\+::\+Object@{tvm\+::runtime\+::\+Object}}
+\subsubsection[{\texorpdfstring{Type\+Index2\+Key(uint32\+\_\+t tindex)}{TypeIndex2Key(uint32_t tindex)}}]{\setlength{\rightskip}{0pt plus 5cm}static std\+::string tvm\+::runtime\+::\+Object\+::\+Type\+Index2\+Key (
+\begin{DoxyParamCaption}
+\item[{uint32\+\_\+t}]{tindex}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}\hypertarget{classtvm_1_1runtime_1_1Object_a817ba6c23b7ee1821c48a75edf255a30}{}\label{classtvm_1_1runtime_1_1Object_a817ba6c23b7ee1821c48a75edf255a30}
+
+
+Get the type key of the corresponding index from runtime. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em tindex} & The type index. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the result. 
+\end{DoxyReturn}
+\index{tvm\+::runtime\+::\+Object@{tvm\+::runtime\+::\+Object}!Type\+Index2\+Key\+Hash@{Type\+Index2\+Key\+Hash}}
+\index{Type\+Index2\+Key\+Hash@{Type\+Index2\+Key\+Hash}!tvm\+::runtime\+::\+Object@{tvm\+::runtime\+::\+Object}}
+\subsubsection[{\texorpdfstring{Type\+Index2\+Key\+Hash(uint32\+\_\+t tindex)}{TypeIndex2KeyHash(uint32_t tindex)}}]{\setlength{\rightskip}{0pt plus 5cm}static size\+\_\+t tvm\+::runtime\+::\+Object\+::\+Type\+Index2\+Key\+Hash (
+\begin{DoxyParamCaption}
+\item[{uint32\+\_\+t}]{tindex}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}\hypertarget{classtvm_1_1runtime_1_1Object_a6ee32a02dd44257da105fbbe5d9c8622}{}\label{classtvm_1_1runtime_1_1Object_a6ee32a02dd44257da105fbbe5d9c8622}
+
+
+Get the type key hash of the corresponding index from runtime. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em tindex} & The type index. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the related key-\/hash. 
+\end{DoxyReturn}
+\index{tvm\+::runtime\+::\+Object@{tvm\+::runtime\+::\+Object}!Type\+Key2\+Index@{Type\+Key2\+Index}}
+\index{Type\+Key2\+Index@{Type\+Key2\+Index}!tvm\+::runtime\+::\+Object@{tvm\+::runtime\+::\+Object}}
+\subsubsection[{\texorpdfstring{Type\+Key2\+Index(const std\+::string \&key)}{TypeKey2Index(const std::string &key)}}]{\setlength{\rightskip}{0pt plus 5cm}static uint32\+\_\+t tvm\+::runtime\+::\+Object\+::\+Type\+Key2\+Index (
+\begin{DoxyParamCaption}
+\item[{const std\+::string \&}]{key}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}\hypertarget{classtvm_1_1runtime_1_1Object_a6841f97e06e6614dd7e82c6dd41b818a}{}\label{classtvm_1_1runtime_1_1Object_a6841f97e06e6614dd7e82c6dd41b818a}
+
+
+Get the type index of the corresponding key from runtime. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em key} & The type key. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the result. 
+\end{DoxyReturn}
+
+
+\subsection{Friends And Related Function Documentation}
+\index{tvm\+::runtime\+::\+Object@{tvm\+::runtime\+::\+Object}!Obj\+Allocator\+Base@{Obj\+Allocator\+Base}}
+\index{Obj\+Allocator\+Base@{Obj\+Allocator\+Base}!tvm\+::runtime\+::\+Object@{tvm\+::runtime\+::\+Object}}
+\subsubsection[{\texorpdfstring{Obj\+Allocator\+Base}{ObjAllocatorBase}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename $>$ friend class {\bf Obj\+Allocator\+Base}\hspace{0.3cm}{\ttfamily [friend]}}\hypertarget{classtvm_1_1runtime_1_1Object_a8fae619f3bd1a2b2f7273d8d6525032a}{}\label{classtvm_1_1runtime_1_1Object_a8fae619f3bd1a2b2f7273d8d6525032a}
+\index{tvm\+::runtime\+::\+Object@{tvm\+::runtime\+::\+Object}!Object\+Internal@{Object\+Internal}}
+\index{Object\+Internal@{Object\+Internal}!tvm\+::runtime\+::\+Object@{tvm\+::runtime\+::\+Object}}
+\subsubsection[{\texorpdfstring{Object\+Internal}{ObjectInternal}}]{\setlength{\rightskip}{0pt plus 5cm}friend class Object\+Internal\hspace{0.3cm}{\ttfamily [friend]}}\hypertarget{classtvm_1_1runtime_1_1Object_a4a8e2a2ce9dc9267dc18ac8abfd8dd16}{}\label{classtvm_1_1runtime_1_1Object_a4a8e2a2ce9dc9267dc18ac8abfd8dd16}
+\index{tvm\+::runtime\+::\+Object@{tvm\+::runtime\+::\+Object}!Object\+Ptr@{Object\+Ptr}}
+\index{Object\+Ptr@{Object\+Ptr}!tvm\+::runtime\+::\+Object@{tvm\+::runtime\+::\+Object}}
+\subsubsection[{\texorpdfstring{Object\+Ptr}{ObjectPtr}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename $>$ friend class {\bf Object\+Ptr}\hspace{0.3cm}{\ttfamily [friend]}}\hypertarget{classtvm_1_1runtime_1_1Object_a4193bb155125953e77ded93c0fb46965}{}\label{classtvm_1_1runtime_1_1Object_a4193bb155125953e77ded93c0fb46965}
+\index{tvm\+::runtime\+::\+Object@{tvm\+::runtime\+::\+Object}!T\+V\+M\+Ret\+Value@{T\+V\+M\+Ret\+Value}}
+\index{T\+V\+M\+Ret\+Value@{T\+V\+M\+Ret\+Value}!tvm\+::runtime\+::\+Object@{tvm\+::runtime\+::\+Object}}
+\subsubsection[{\texorpdfstring{T\+V\+M\+Ret\+Value}{TVMRetValue}}]{\setlength{\rightskip}{0pt plus 5cm}friend class {\bf T\+V\+M\+Ret\+Value}\hspace{0.3cm}{\ttfamily [friend]}}\hypertarget{classtvm_1_1runtime_1_1Object_ae0ea8b4adc6dab8c74086bceaef6b3e1}{}\label{classtvm_1_1runtime_1_1Object_ae0ea8b4adc6dab8c74086bceaef6b3e1}
+
+
+\subsection{Member Data Documentation}
+\index{tvm\+::runtime\+::\+Object@{tvm\+::runtime\+::\+Object}!\+\_\+type\+\_\+child\+\_\+slots@{\+\_\+type\+\_\+child\+\_\+slots}}
+\index{\+\_\+type\+\_\+child\+\_\+slots@{\+\_\+type\+\_\+child\+\_\+slots}!tvm\+::runtime\+::\+Object@{tvm\+::runtime\+::\+Object}}
+\subsubsection[{\texorpdfstring{\+\_\+type\+\_\+child\+\_\+slots}{_type_child_slots}}]{\setlength{\rightskip}{0pt plus 5cm}constexpr uint32\+\_\+t tvm\+::runtime\+::\+Object\+::\+\_\+type\+\_\+child\+\_\+slots = 0\hspace{0.3cm}{\ttfamily [static]}}\hypertarget{classtvm_1_1runtime_1_1Object_a14b234a745215da158b2386bbb34bd70}{}\label{classtvm_1_1runtime_1_1Object_a14b234a745215da158b2386bbb34bd70}
+\index{tvm\+::runtime\+::\+Object@{tvm\+::runtime\+::\+Object}!\+\_\+type\+\_\+child\+\_\+slots\+\_\+can\+\_\+overflow@{\+\_\+type\+\_\+child\+\_\+slots\+\_\+can\+\_\+overflow}}
+\index{\+\_\+type\+\_\+child\+\_\+slots\+\_\+can\+\_\+overflow@{\+\_\+type\+\_\+child\+\_\+slots\+\_\+can\+\_\+overflow}!tvm\+::runtime\+::\+Object@{tvm\+::runtime\+::\+Object}}
+\subsubsection[{\texorpdfstring{\+\_\+type\+\_\+child\+\_\+slots\+\_\+can\+\_\+overflow}{_type_child_slots_can_overflow}}]{\setlength{\rightskip}{0pt plus 5cm}constexpr bool tvm\+::runtime\+::\+Object\+::\+\_\+type\+\_\+child\+\_\+slots\+\_\+can\+\_\+overflow = true\hspace{0.3cm}{\ttfamily [static]}}\hypertarget{classtvm_1_1runtime_1_1Object_a05ece7bcb6bf73e88765c1f193a489ce}{}\label{classtvm_1_1runtime_1_1Object_a05ece7bcb6bf73e88765c1f193a489ce}
+\index{tvm\+::runtime\+::\+Object@{tvm\+::runtime\+::\+Object}!\+\_\+type\+\_\+final@{\+\_\+type\+\_\+final}}
+\index{\+\_\+type\+\_\+final@{\+\_\+type\+\_\+final}!tvm\+::runtime\+::\+Object@{tvm\+::runtime\+::\+Object}}
+\subsubsection[{\texorpdfstring{\+\_\+type\+\_\+final}{_type_final}}]{\setlength{\rightskip}{0pt plus 5cm}constexpr bool tvm\+::runtime\+::\+Object\+::\+\_\+type\+\_\+final = false\hspace{0.3cm}{\ttfamily [static]}}\hypertarget{classtvm_1_1runtime_1_1Object_a55cb618bd4bbcd49317b35ea8e2996be}{}\label{classtvm_1_1runtime_1_1Object_a55cb618bd4bbcd49317b35ea8e2996be}
+\index{tvm\+::runtime\+::\+Object@{tvm\+::runtime\+::\+Object}!\+\_\+type\+\_\+has\+\_\+method\+\_\+sequal\+\_\+reduce@{\+\_\+type\+\_\+has\+\_\+method\+\_\+sequal\+\_\+reduce}}
+\index{\+\_\+type\+\_\+has\+\_\+method\+\_\+sequal\+\_\+reduce@{\+\_\+type\+\_\+has\+\_\+method\+\_\+sequal\+\_\+reduce}!tvm\+::runtime\+::\+Object@{tvm\+::runtime\+::\+Object}}
+\subsubsection[{\texorpdfstring{\+\_\+type\+\_\+has\+\_\+method\+\_\+sequal\+\_\+reduce}{_type_has_method_sequal_reduce}}]{\setlength{\rightskip}{0pt plus 5cm}constexpr bool tvm\+::runtime\+::\+Object\+::\+\_\+type\+\_\+has\+\_\+method\+\_\+sequal\+\_\+reduce = false\hspace{0.3cm}{\ttfamily [static]}}\hypertarget{classtvm_1_1runtime_1_1Object_a92fe62494027b70af1f7696d611c21b6}{}\label{classtvm_1_1runtime_1_1Object_a92fe62494027b70af1f7696d611c21b6}
+\index{tvm\+::runtime\+::\+Object@{tvm\+::runtime\+::\+Object}!\+\_\+type\+\_\+has\+\_\+method\+\_\+shash\+\_\+reduce@{\+\_\+type\+\_\+has\+\_\+method\+\_\+shash\+\_\+reduce}}
+\index{\+\_\+type\+\_\+has\+\_\+method\+\_\+shash\+\_\+reduce@{\+\_\+type\+\_\+has\+\_\+method\+\_\+shash\+\_\+reduce}!tvm\+::runtime\+::\+Object@{tvm\+::runtime\+::\+Object}}
+\subsubsection[{\texorpdfstring{\+\_\+type\+\_\+has\+\_\+method\+\_\+shash\+\_\+reduce}{_type_has_method_shash_reduce}}]{\setlength{\rightskip}{0pt plus 5cm}constexpr bool tvm\+::runtime\+::\+Object\+::\+\_\+type\+\_\+has\+\_\+method\+\_\+shash\+\_\+reduce = false\hspace{0.3cm}{\ttfamily [static]}}\hypertarget{classtvm_1_1runtime_1_1Object_ac97054694d03dc5eac58315fb569ef88}{}\label{classtvm_1_1runtime_1_1Object_ac97054694d03dc5eac58315fb569ef88}
+\index{tvm\+::runtime\+::\+Object@{tvm\+::runtime\+::\+Object}!\+\_\+type\+\_\+has\+\_\+method\+\_\+visit\+\_\+attrs@{\+\_\+type\+\_\+has\+\_\+method\+\_\+visit\+\_\+attrs}}
+\index{\+\_\+type\+\_\+has\+\_\+method\+\_\+visit\+\_\+attrs@{\+\_\+type\+\_\+has\+\_\+method\+\_\+visit\+\_\+attrs}!tvm\+::runtime\+::\+Object@{tvm\+::runtime\+::\+Object}}
+\subsubsection[{\texorpdfstring{\+\_\+type\+\_\+has\+\_\+method\+\_\+visit\+\_\+attrs}{_type_has_method_visit_attrs}}]{\setlength{\rightskip}{0pt plus 5cm}constexpr bool tvm\+::runtime\+::\+Object\+::\+\_\+type\+\_\+has\+\_\+method\+\_\+visit\+\_\+attrs = true\hspace{0.3cm}{\ttfamily [static]}}\hypertarget{classtvm_1_1runtime_1_1Object_a74e9f076b50b8b335b4a321e9b0bf03c}{}\label{classtvm_1_1runtime_1_1Object_a74e9f076b50b8b335b4a321e9b0bf03c}
+\index{tvm\+::runtime\+::\+Object@{tvm\+::runtime\+::\+Object}!\+\_\+type\+\_\+index@{\+\_\+type\+\_\+index}}
+\index{\+\_\+type\+\_\+index@{\+\_\+type\+\_\+index}!tvm\+::runtime\+::\+Object@{tvm\+::runtime\+::\+Object}}
+\subsubsection[{\texorpdfstring{\+\_\+type\+\_\+index}{_type_index}}]{\setlength{\rightskip}{0pt plus 5cm}constexpr uint32\+\_\+t tvm\+::runtime\+::\+Object\+::\+\_\+type\+\_\+index = Type\+Index\+::k\+Dynamic\hspace{0.3cm}{\ttfamily [static]}}\hypertarget{classtvm_1_1runtime_1_1Object_af6aed95d70af7e44ce376a8d7be6c5f1}{}\label{classtvm_1_1runtime_1_1Object_af6aed95d70af7e44ce376a8d7be6c5f1}
+\index{tvm\+::runtime\+::\+Object@{tvm\+::runtime\+::\+Object}!\+\_\+type\+\_\+key@{\+\_\+type\+\_\+key}}
+\index{\+\_\+type\+\_\+key@{\+\_\+type\+\_\+key}!tvm\+::runtime\+::\+Object@{tvm\+::runtime\+::\+Object}}
+\subsubsection[{\texorpdfstring{\+\_\+type\+\_\+key}{_type_key}}]{\setlength{\rightskip}{0pt plus 5cm}constexpr const char$\ast$ tvm\+::runtime\+::\+Object\+::\+\_\+type\+\_\+key = \char`\"{}Object\char`\"{}\hspace{0.3cm}{\ttfamily [static]}}\hypertarget{classtvm_1_1runtime_1_1Object_a43d6bf3191bebb805eced0744d859c1e}{}\label{classtvm_1_1runtime_1_1Object_a43d6bf3191bebb805eced0744d859c1e}
+\index{tvm\+::runtime\+::\+Object@{tvm\+::runtime\+::\+Object}!deleter\+\_\+@{deleter\+\_\+}}
+\index{deleter\+\_\+@{deleter\+\_\+}!tvm\+::runtime\+::\+Object@{tvm\+::runtime\+::\+Object}}
+\subsubsection[{\texorpdfstring{deleter\+\_\+}{deleter_}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf F\+Deleter} tvm\+::runtime\+::\+Object\+::deleter\+\_\+ = nullptr\hspace{0.3cm}{\ttfamily [protected]}}\hypertarget{classtvm_1_1runtime_1_1Object_af4407d2b59132e803ff791482dbe0145}{}\label{classtvm_1_1runtime_1_1Object_af4407d2b59132e803ff791482dbe0145}
+
+
+deleter of this object to enable customized allocation. If the deleter is nullptr, no deletion will be performed. The creator of the object must always set the deleter field properly. 
+
+\index{tvm\+::runtime\+::\+Object@{tvm\+::runtime\+::\+Object}!ref\+\_\+counter\+\_\+@{ref\+\_\+counter\+\_\+}}
+\index{ref\+\_\+counter\+\_\+@{ref\+\_\+counter\+\_\+}!tvm\+::runtime\+::\+Object@{tvm\+::runtime\+::\+Object}}
+\subsubsection[{\texorpdfstring{ref\+\_\+counter\+\_\+}{ref_counter_}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Ref\+Counter\+Type} tvm\+::runtime\+::\+Object\+::ref\+\_\+counter\+\_\+ \{0\}\hspace{0.3cm}{\ttfamily [protected]}}\hypertarget{classtvm_1_1runtime_1_1Object_a0d492efee331e2239a093f4b2017c10f}{}\label{classtvm_1_1runtime_1_1Object_a0d492efee331e2239a093f4b2017c10f}
+
+
+The internal reference counter. 
+
+\index{tvm\+::runtime\+::\+Object@{tvm\+::runtime\+::\+Object}!type\+\_\+index\+\_\+@{type\+\_\+index\+\_\+}}
+\index{type\+\_\+index\+\_\+@{type\+\_\+index\+\_\+}!tvm\+::runtime\+::\+Object@{tvm\+::runtime\+::\+Object}}
+\subsubsection[{\texorpdfstring{type\+\_\+index\+\_\+}{type_index_}}]{\setlength{\rightskip}{0pt plus 5cm}uint32\+\_\+t tvm\+::runtime\+::\+Object\+::type\+\_\+index\+\_\+ \{0\}\hspace{0.3cm}{\ttfamily [protected]}}\hypertarget{classtvm_1_1runtime_1_1Object_a4bfc2586cb55f2af47728187b3256255}{}\label{classtvm_1_1runtime_1_1Object_a4bfc2586cb55f2af47728187b3256255}
+
+
+\hyperlink{classtvm_1_1Type}{Type} index(tag) that indicates the type of the object. 
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+include/tvm/runtime/\hyperlink{object_8h}{object.\+h}\end{DoxyCompactItemize}

@@ -1,0 +1,288 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="classtvm_1_1tir_1_1IterVarNode" kind="class" language="C++" prot="public">
+    <compoundname>tvm::tir::IterVarNode</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">Object</basecompoundref>
+    <includes refid="tir_2expr_8h" local="no">expr.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="classtvm_1_1tir_1_1IterVarNode_1acd6ca5f580e556a2d022e47900f9fe71" prot="public" static="no" mutable="no">
+        <type><ref refid="classtvm_1_1Range" kindref="compound">Range</ref></type>
+        <definition>Range tvm::tir::IterVarNode::dom</definition>
+        <argsstring></argsstring>
+        <name>dom</name>
+        <briefdescription>
+<para>the domain of iteration, if known, can be None For the intermediate schedule node, before schedule. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/tir/expr.h" line="285" column="1" bodyfile="include/tvm/tir/expr.h" bodystart="285" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classtvm_1_1tir_1_1IterVarNode_1a09036ef2df09e7caf21e66dcb62675a6" prot="public" static="no" mutable="no">
+        <type><ref refid="classtvm_1_1tir_1_1Var" kindref="compound">Var</ref></type>
+        <definition>Var tvm::tir::IterVarNode::var</definition>
+        <argsstring></argsstring>
+        <name>var</name>
+        <briefdescription>
+<para>The looping variable. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/tir/expr.h" line="287" column="1" bodyfile="include/tvm/tir/expr.h" bodystart="287" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classtvm_1_1tir_1_1IterVarNode_1af733200a8afd687584ffb8a52fb6a533" prot="public" static="no" mutable="no">
+        <type><ref refid="namespacetvm_1_1tir_1add7d0a6b1dd91f0c3c5dd2f4cf64358e" kindref="member">IterVarType</ref></type>
+        <definition>IterVarType tvm::tir::IterVarNode::iter_type</definition>
+        <argsstring></argsstring>
+        <name>iter_type</name>
+        <briefdescription>
+<para>The type of the <ref refid="classtvm_1_1tir_1_1IterVar" kindref="compound">IterVar</ref>. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/tir/expr.h" line="289" column="1" bodyfile="include/tvm/tir/expr.h" bodystart="289" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classtvm_1_1tir_1_1IterVarNode_1a5557fabe09e48331422c89385cf45966" prot="public" static="no" mutable="no">
+        <type>std::string</type>
+        <definition>std::string tvm::tir::IterVarNode::thread_tag</definition>
+        <argsstring></argsstring>
+        <name>thread_tag</name>
+        <briefdescription>
+<para>additional tag on the iteration variable, set this if this is binded already to a known thread tag. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/tir/expr.h" line="294" column="1" bodyfile="include/tvm/tir/expr.h" bodystart="294" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-attrib">
+      <memberdef kind="variable" id="classtvm_1_1tir_1_1IterVarNode_1aa2b7f338a88722b075667c54c62ab764" prot="public" static="yes" mutable="no">
+        <type>constexpr const char *</type>
+        <definition>constexpr const char* tvm::tir::IterVarNode::_type_key</definition>
+        <argsstring></argsstring>
+        <name>_type_key</name>
+        <initializer>= &quot;IterVar&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/tir/expr.h" line="322" column="1" bodyfile="include/tvm/tir/expr.h" bodystart="322" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classtvm_1_1tir_1_1IterVarNode_1a6d8e20b1469c2f87c44630fbcb7832d0" prot="public" static="yes" mutable="no">
+        <type>constexpr const bool</type>
+        <definition>constexpr const bool tvm::tir::IterVarNode::_type_has_method_sequal_reduce</definition>
+        <argsstring></argsstring>
+        <name>_type_has_method_sequal_reduce</name>
+        <initializer>= true</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/tir/expr.h" line="323" column="1" bodyfile="include/tvm/tir/expr.h" bodystart="323" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classtvm_1_1tir_1_1IterVarNode_1ada29c227bfe34d49e2813a8f86b2686b" prot="public" static="yes" mutable="no">
+        <type>constexpr const bool</type>
+        <definition>constexpr const bool tvm::tir::IterVarNode::_type_has_method_shash_reduce</definition>
+        <argsstring></argsstring>
+        <name>_type_has_method_shash_reduce</name>
+        <initializer>= true</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/tir/expr.h" line="324" column="1" bodyfile="include/tvm/tir/expr.h" bodystart="324" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classtvm_1_1tir_1_1IterVarNode_1adec9071918d696818dc32a6a00e02912" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void tvm::tir::IterVarNode::VisitAttrs</definition>
+        <argsstring>(AttrVisitor *v)</argsstring>
+        <name>VisitAttrs</name>
+        <param>
+          <type><ref refid="classtvm_1_1AttrVisitor" kindref="compound">AttrVisitor</ref> *</type>
+          <declname>v</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/tir/expr.h" line="296" column="1" bodyfile="include/tvm/tir/expr.h" bodystart="296" bodyend="301"/>
+      </memberdef>
+      <memberdef kind="function" id="classtvm_1_1tir_1_1IterVarNode_1a3b209909dba431abf8e3227bdb1d9264" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool tvm::tir::IterVarNode::SEqualReduce</definition>
+        <argsstring>(const IterVarNode *other, SEqualReducer equal) const </argsstring>
+        <name>SEqualReduce</name>
+        <param>
+          <type>const <ref refid="classtvm_1_1tir_1_1IterVarNode" kindref="compound">IterVarNode</ref> *</type>
+          <declname>other</declname>
+        </param>
+        <param>
+          <type><ref refid="classtvm_1_1SEqualReducer" kindref="compound">SEqualReducer</ref></type>
+          <declname>equal</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/tir/expr.h" line="303" column="1" bodyfile="include/tvm/tir/expr.h" bodystart="303" bodyend="309"/>
+      </memberdef>
+      <memberdef kind="function" id="classtvm_1_1tir_1_1IterVarNode_1a9999c87753dd63f5ef156e661fb0b5e8" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void tvm::tir::IterVarNode::SHashReduce</definition>
+        <argsstring>(SHashReducer hash_reduce) const </argsstring>
+        <name>SHashReduce</name>
+        <param>
+          <type><ref refid="classtvm_1_1SHashReducer" kindref="compound">SHashReducer</ref></type>
+          <declname>hash_reduce</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/tir/expr.h" line="311" column="1" bodyfile="include/tvm/tir/expr.h" bodystart="311" bodyend="316"/>
+      </memberdef>
+      <memberdef kind="function" id="classtvm_1_1tir_1_1IterVarNode_1a361e7b4c3504acb0082e355441d4b66e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>tvm::tir::IterVarNode::TVM_DECLARE_FINAL_OBJECT_INFO</definition>
+        <argsstring>(IterVarNode, Object)</argsstring>
+        <name>TVM_DECLARE_FINAL_OBJECT_INFO</name>
+        <param>
+          <type><ref refid="classtvm_1_1tir_1_1IterVarNode" kindref="compound">IterVarNode</ref></type>
+        </param>
+        <param>
+          <type>Object</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/tir/expr.h" line="325" column="1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="classtvm_1_1tir_1_1IterVarNode_1a28086abc1aa0a26a9c171c4bbc99a72e" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classtvm_1_1tir_1_1IterVar" kindref="compound">IterVar</ref></type>
+        <definition>static IterVar tvm::tir::IterVarNode::make</definition>
+        <argsstring>(Range dom, Var var, IterVarType iter_type, std::string thread_tag=&quot;&quot;)</argsstring>
+        <name>make</name>
+        <param>
+          <type><ref refid="classtvm_1_1Range" kindref="compound">Range</ref></type>
+          <declname>dom</declname>
+        </param>
+        <param>
+          <type><ref refid="classtvm_1_1tir_1_1Var" kindref="compound">Var</ref></type>
+          <declname>var</declname>
+        </param>
+        <param>
+          <type><ref refid="namespacetvm_1_1tir_1add7d0a6b1dd91f0c3c5dd2f4cf64358e" kindref="member">IterVarType</ref></type>
+          <declname>iter_type</declname>
+        </param>
+        <param>
+          <type>std::string</type>
+          <declname>thread_tag</declname>
+          <defval>&quot;&quot;</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/tir/expr.h" line="318" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>An iteration variable representing an iteration over a one dimensional interval. </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="5465">
+        <label>Object</label>
+      </node>
+      <node id="5464">
+        <label>tvm::tir::IterVarNode</label>
+        <link refid="classtvm_1_1tir_1_1IterVarNode"/>
+        <childnode refid="5465" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="5469">
+        <label>ObjectRef</label>
+      </node>
+      <node id="5468">
+        <label>tvm::Range</label>
+        <link refid="classtvm_1_1Range"/>
+        <childnode refid="5469" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="5467">
+        <label>Object</label>
+      </node>
+      <node id="5471">
+        <label>tvm::PrimExpr</label>
+        <link refid="classtvm_1_1PrimExpr"/>
+        <childnode refid="5472" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="5472">
+        <label>tvm::BaseExpr</label>
+        <link refid="classtvm_1_1BaseExpr"/>
+        <childnode refid="5469" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="5466">
+        <label>tvm::tir::IterVarNode</label>
+        <link refid="classtvm_1_1tir_1_1IterVarNode"/>
+        <childnode refid="5467" relation="public-inheritance">
+        </childnode>
+        <childnode refid="5468" relation="usage">
+          <edgelabel>+dom</edgelabel>
+        </childnode>
+        <childnode refid="5470" relation="usage">
+          <edgelabel>+var</edgelabel>
+        </childnode>
+      </node>
+      <node id="5470">
+        <label>tvm::tir::Var</label>
+        <link refid="classtvm_1_1tir_1_1Var"/>
+        <childnode refid="5471" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="include/tvm/tir/expr.h" line="279" column="1" bodyfile="include/tvm/tir/expr.h" bodystart="279" bodyend="326"/>
+    <listofallmembers>
+      <member refid="classtvm_1_1tir_1_1IterVarNode_1a6d8e20b1469c2f87c44630fbcb7832d0" prot="public" virt="non-virtual"><scope>tvm::tir::IterVarNode</scope><name>_type_has_method_sequal_reduce</name></member>
+      <member refid="classtvm_1_1tir_1_1IterVarNode_1ada29c227bfe34d49e2813a8f86b2686b" prot="public" virt="non-virtual"><scope>tvm::tir::IterVarNode</scope><name>_type_has_method_shash_reduce</name></member>
+      <member refid="classtvm_1_1tir_1_1IterVarNode_1aa2b7f338a88722b075667c54c62ab764" prot="public" virt="non-virtual"><scope>tvm::tir::IterVarNode</scope><name>_type_key</name></member>
+      <member refid="classtvm_1_1tir_1_1IterVarNode_1acd6ca5f580e556a2d022e47900f9fe71" prot="public" virt="non-virtual"><scope>tvm::tir::IterVarNode</scope><name>dom</name></member>
+      <member refid="classtvm_1_1tir_1_1IterVarNode_1af733200a8afd687584ffb8a52fb6a533" prot="public" virt="non-virtual"><scope>tvm::tir::IterVarNode</scope><name>iter_type</name></member>
+      <member refid="classtvm_1_1tir_1_1IterVarNode_1a28086abc1aa0a26a9c171c4bbc99a72e" prot="public" virt="non-virtual"><scope>tvm::tir::IterVarNode</scope><name>make</name></member>
+      <member refid="classtvm_1_1tir_1_1IterVarNode_1a3b209909dba431abf8e3227bdb1d9264" prot="public" virt="non-virtual"><scope>tvm::tir::IterVarNode</scope><name>SEqualReduce</name></member>
+      <member refid="classtvm_1_1tir_1_1IterVarNode_1a9999c87753dd63f5ef156e661fb0b5e8" prot="public" virt="non-virtual"><scope>tvm::tir::IterVarNode</scope><name>SHashReduce</name></member>
+      <member refid="classtvm_1_1tir_1_1IterVarNode_1a5557fabe09e48331422c89385cf45966" prot="public" virt="non-virtual"><scope>tvm::tir::IterVarNode</scope><name>thread_tag</name></member>
+      <member refid="classtvm_1_1tir_1_1IterVarNode_1a361e7b4c3504acb0082e355441d4b66e" prot="public" virt="non-virtual"><scope>tvm::tir::IterVarNode</scope><name>TVM_DECLARE_FINAL_OBJECT_INFO</name></member>
+      <member refid="classtvm_1_1tir_1_1IterVarNode_1a09036ef2df09e7caf21e66dcb62675a6" prot="public" virt="non-virtual"><scope>tvm::tir::IterVarNode</scope><name>var</name></member>
+      <member refid="classtvm_1_1tir_1_1IterVarNode_1adec9071918d696818dc32a6a00e02912" prot="public" virt="non-virtual"><scope>tvm::tir::IterVarNode</scope><name>VisitAttrs</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

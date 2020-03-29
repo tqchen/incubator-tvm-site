@@ -1,0 +1,83 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="classtvm_1_1runtime_1_1NDArray_1_1ContainerBase" kind="class" language="C++" prot="public">
+    <compoundname>tvm::runtime::NDArray::ContainerBase</compoundname>
+    <derivedcompoundref refid="classtvm_1_1runtime_1_1NDArray_1_1Container" prot="public" virt="non-virtual">tvm::runtime::NDArray::Container</derivedcompoundref>
+    <includes refid="ndarray_8h" local="no">ndarray.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="classtvm_1_1runtime_1_1NDArray_1_1ContainerBase_1a1063a9d01075d5b7b0e8fa31d4d72e0b" prot="public" static="no" mutable="no">
+        <type>DLTensor</type>
+        <definition>DLTensor tvm::runtime::NDArray::ContainerBase::dl_tensor</definition>
+        <argsstring></argsstring>
+        <name>dl_tensor</name>
+        <briefdescription>
+<para>The corresponding dl_tensor field. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="note"><para>it is important that the first field is DLTensor So that this data structure is DLTensor compatible. The head ptr of this struct can be viewed as DLTensor*. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/runtime/ndarray.h" line="225" column="1" bodyfile="include/tvm/runtime/ndarray.h" bodystart="225" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classtvm_1_1runtime_1_1NDArray_1_1ContainerBase_1a56d07e60df973dcf2b99ef6a204bb184" prot="public" static="no" mutable="no">
+        <type>void *</type>
+        <definition>void* tvm::runtime::NDArray::ContainerBase::manager_ctx</definition>
+        <argsstring></argsstring>
+        <name>manager_ctx</name>
+        <initializer>{nullptr}</initializer>
+        <briefdescription>
+<para>additional context, reserved for recycling </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="note"><para>We can attach additional content here which the current container depend on (e.g. reference to original memory when creating views). </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/runtime/ndarray.h" line="233" column="1" bodyfile="include/tvm/runtime/ndarray.h" bodystart="233" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="protected-attrib">
+      <memberdef kind="variable" id="classtvm_1_1runtime_1_1NDArray_1_1ContainerBase_1a852a3d49f916098ea6012237dbd242fc" prot="protected" static="no" mutable="no">
+        <type>std::vector&lt; int64_t &gt;</type>
+        <definition>std::vector&lt;int64_t&gt; tvm::runtime::NDArray::ContainerBase::shape_</definition>
+        <argsstring></argsstring>
+        <name>shape_</name>
+        <briefdescription>
+<para>The shape container, can be used used for shape data. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/runtime/ndarray.h" line="240" column="1" bodyfile="include/tvm/runtime/ndarray.h" bodystart="240" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>The container base structure contains all the fields except for the <ref refid="classtvm_1_1runtime_1_1Object" kindref="compound">Object</ref> header. </para>    </briefdescription>
+    <detaileddescription>
+<para><simplesect kind="note"><para>We explicitly declare this structure in order to pass <ref refid="classtvm_1_1runtime_1_1PackedFunc" kindref="compound">PackedFunc</ref> argument using ContainerBase*. </para></simplesect>
+</para>    </detaileddescription>
+    <inheritancegraph>
+      <node id="4720">
+        <label>tvm::runtime::NDArray::Container</label>
+        <link refid="classtvm_1_1runtime_1_1NDArray_1_1Container"/>
+        <childnode refid="4719" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="4719">
+        <label>tvm::runtime::NDArray::ContainerBase</label>
+        <link refid="classtvm_1_1runtime_1_1NDArray_1_1ContainerBase"/>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="4721">
+        <label>tvm::runtime::NDArray::ContainerBase</label>
+        <link refid="classtvm_1_1runtime_1_1NDArray_1_1ContainerBase"/>
+      </node>
+    </collaborationgraph>
+    <location file="include/tvm/runtime/ndarray.h" line="217" column="1" bodyfile="include/tvm/runtime/ndarray.h" bodystart="217" bodyend="241"/>
+    <listofallmembers>
+      <member refid="classtvm_1_1runtime_1_1NDArray_1_1ContainerBase_1a1063a9d01075d5b7b0e8fa31d4d72e0b" prot="public" virt="non-virtual"><scope>tvm::runtime::NDArray::ContainerBase</scope><name>dl_tensor</name></member>
+      <member refid="classtvm_1_1runtime_1_1NDArray_1_1ContainerBase_1a56d07e60df973dcf2b99ef6a204bb184" prot="public" virt="non-virtual"><scope>tvm::runtime::NDArray::ContainerBase</scope><name>manager_ctx</name></member>
+      <member refid="classtvm_1_1runtime_1_1NDArray_1_1ContainerBase_1a852a3d49f916098ea6012237dbd242fc" prot="protected" virt="non-virtual"><scope>tvm::runtime::NDArray::ContainerBase</scope><name>shape_</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,195 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="classtvm_1_1runtime_1_1threading_1_1ThreadGroup" kind="class" language="C++" prot="public">
+    <compoundname>tvm::runtime::threading::ThreadGroup</compoundname>
+    <includes refid="threading__backend_8h" local="no">threading_backend.h</includes>
+      <sectiondef kind="public-type">
+      <memberdef kind="enum" id="classtvm_1_1runtime_1_1threading_1_1ThreadGroup_1a5230a4c2d7f6c2f73f3d5fb00e9f6acd" prot="public" static="no">
+        <name>AffinityMode</name>
+        <enumvalue id="classtvm_1_1runtime_1_1threading_1_1ThreadGroup_1a5230a4c2d7f6c2f73f3d5fb00e9f6acda5dcdee58295aad729c0ef90cd4d807bf" prot="public">
+          <name>kBig</name>
+          <initializer>= 1</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classtvm_1_1runtime_1_1threading_1_1ThreadGroup_1a5230a4c2d7f6c2f73f3d5fb00e9f6acda618cfa7040dff793381df4c9e6c13b73" prot="public">
+          <name>kLittle</name>
+          <initializer>= -1</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/runtime/threading_backend.h" line="65" column="1" bodyfile="include/tvm/runtime/threading_backend.h" bodystart="65" bodyend="68"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classtvm_1_1runtime_1_1threading_1_1ThreadGroup_1a5976504c758d6609af4eca3cd6f90bf0" prot="private" static="no" mutable="no">
+        <type>Impl *</type>
+        <definition>Impl* tvm::runtime::threading::ThreadGroup::impl_</definition>
+        <argsstring></argsstring>
+        <name>impl_</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/runtime/threading_backend.h" line="85" column="1" bodyfile="include/tvm/runtime/threading_backend.h" bodystart="85" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classtvm_1_1runtime_1_1threading_1_1ThreadGroup_1ac5d6f6fc93271e3627201be7cfcde287" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>tvm::runtime::threading::ThreadGroup::ThreadGroup</definition>
+        <argsstring>(int num_workers, std::function&lt; void(int)&gt; worker_callback, bool exclude_worker0=false)</argsstring>
+        <name>ThreadGroup</name>
+        <param>
+          <type>int</type>
+          <declname>num_workers</declname>
+        </param>
+        <param>
+          <type>std::function&lt; void(int)&gt;</type>
+          <declname>worker_callback</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>exclude_worker0</declname>
+          <defval>false</defval>
+        </param>
+        <briefdescription>
+<para>Creates a collection of threads which run a provided function. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>num_workers</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The total number of worker threads in this group. Includes main thread if <computeroutput>exclude_worker0 = true</computeroutput> </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>worker_callback</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>A callback which is run in its own thread. Receives the worker_id as an argument. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>exclude_worker0</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Whether to use the main thread as a worker. If <computeroutput>true</computeroutput>, worker0 will not be launched in a new thread and <computeroutput>worker_callback</computeroutput> will only be called for values &gt;= 1. This allows use of the main thread as a worker. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/runtime/threading_backend.h" line="55" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classtvm_1_1runtime_1_1threading_1_1ThreadGroup_1aa4342f9c75798111f6354a7806c93254" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>tvm::runtime::threading::ThreadGroup::~ThreadGroup</definition>
+        <argsstring>()</argsstring>
+        <name>~ThreadGroup</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/runtime/threading_backend.h" line="58" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classtvm_1_1runtime_1_1threading_1_1ThreadGroup_1a17a569bc69432bccea02d0cc554ff385" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void tvm::runtime::threading::ThreadGroup::Join</definition>
+        <argsstring>()</argsstring>
+        <name>Join</name>
+        <briefdescription>
+<para>Blocks until all non-main threads in the pool finish. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/runtime/threading_backend.h" line="63" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classtvm_1_1runtime_1_1threading_1_1ThreadGroup_1a458a6479c996dcdfa994ae1231f4635a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int tvm::runtime::threading::ThreadGroup::Configure</definition>
+        <argsstring>(AffinityMode mode, int nthreads, bool exclude_worker0)</argsstring>
+        <name>Configure</name>
+        <param>
+          <type><ref refid="classtvm_1_1runtime_1_1threading_1_1ThreadGroup_1a5230a4c2d7f6c2f73f3d5fb00e9f6acd" kindref="member">AffinityMode</ref></type>
+          <declname>mode</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>nthreads</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>exclude_worker0</declname>
+        </param>
+        <briefdescription>
+<para>configure the CPU id affinity </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>mode</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The preferred CPU type (1 = big, -1 = little). </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>nthreads</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The number of threads to use (0 = use all). </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>exclude_worker0</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Whether to use the main thread as a worker. If <computeroutput>true</computeroutput>, worker0 will not be launched in a new thread and <computeroutput>worker_callback</computeroutput> will only be called for values &gt;= 1. This allows use of the main thread as a worker.</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The number of workers to use. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/runtime/threading_backend.h" line="82" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>A platform-agnostic abstraction for managing a collection of thread pool threads. </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="7226">
+        <label>tvm::runtime::threading::ThreadGroup</label>
+        <link refid="classtvm_1_1runtime_1_1threading_1_1ThreadGroup"/>
+      </node>
+    </collaborationgraph>
+    <location file="include/tvm/runtime/threading_backend.h" line="39" column="1" bodyfile="include/tvm/runtime/threading_backend.h" bodystart="39" bodyend="86"/>
+    <listofallmembers>
+      <member refid="classtvm_1_1runtime_1_1threading_1_1ThreadGroup_1a5230a4c2d7f6c2f73f3d5fb00e9f6acd" prot="public" virt="non-virtual"><scope>tvm::runtime::threading::ThreadGroup</scope><name>AffinityMode</name></member>
+      <member refid="classtvm_1_1runtime_1_1threading_1_1ThreadGroup_1a458a6479c996dcdfa994ae1231f4635a" prot="public" virt="non-virtual"><scope>tvm::runtime::threading::ThreadGroup</scope><name>Configure</name></member>
+      <member refid="classtvm_1_1runtime_1_1threading_1_1ThreadGroup_1a5976504c758d6609af4eca3cd6f90bf0" prot="private" virt="non-virtual"><scope>tvm::runtime::threading::ThreadGroup</scope><name>impl_</name></member>
+      <member refid="classtvm_1_1runtime_1_1threading_1_1ThreadGroup_1a17a569bc69432bccea02d0cc554ff385" prot="public" virt="non-virtual"><scope>tvm::runtime::threading::ThreadGroup</scope><name>Join</name></member>
+      <member refid="classtvm_1_1runtime_1_1threading_1_1ThreadGroup_1a5230a4c2d7f6c2f73f3d5fb00e9f6acda5dcdee58295aad729c0ef90cd4d807bf" prot="public" virt="non-virtual"><scope>tvm::runtime::threading::ThreadGroup</scope><name>kBig</name></member>
+      <member refid="classtvm_1_1runtime_1_1threading_1_1ThreadGroup_1a5230a4c2d7f6c2f73f3d5fb00e9f6acda618cfa7040dff793381df4c9e6c13b73" prot="public" virt="non-virtual"><scope>tvm::runtime::threading::ThreadGroup</scope><name>kLittle</name></member>
+      <member refid="classtvm_1_1runtime_1_1threading_1_1ThreadGroup_1ac5d6f6fc93271e3627201be7cfcde287" prot="public" virt="non-virtual"><scope>tvm::runtime::threading::ThreadGroup</scope><name>ThreadGroup</name></member>
+      <member refid="classtvm_1_1runtime_1_1threading_1_1ThreadGroup_1aa4342f9c75798111f6354a7806c93254" prot="public" virt="non-virtual"><scope>tvm::runtime::threading::ThreadGroup</scope><name>~ThreadGroup</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

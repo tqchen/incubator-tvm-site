@@ -1,0 +1,368 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="namespacetopi_1_1rocm" kind="namespace" language="C++">
+    <compoundname>topi::rocm</compoundname>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="namespacetopi_1_1rocm_1ad31d98789d966de421bb57809fbeb8eb" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classtvm_1_1te_1_1Tensor" kindref="compound">tvm::te::Tensor</ref></type>
+        <definition>tvm::te::Tensor topi::rocm::dense_rocm</definition>
+        <argsstring>(const Target &amp;target, const tvm::te::Tensor &amp;data, const tvm::te::Tensor &amp;weight, const tvm::te::Tensor &amp;bias, const DataType &amp;out_dtype)</argsstring>
+        <name>dense_rocm</name>
+        <param>
+          <type>const <ref refid="classtvm_1_1Target" kindref="compound">Target</ref> &amp;</type>
+          <declname>target</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classtvm_1_1te_1_1Tensor" kindref="compound">tvm::te::Tensor</ref> &amp;</type>
+          <declname>data</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classtvm_1_1te_1_1Tensor" kindref="compound">tvm::te::Tensor</ref> &amp;</type>
+          <declname>weight</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classtvm_1_1te_1_1Tensor" kindref="compound">tvm::te::Tensor</ref> &amp;</type>
+          <declname>bias</declname>
+        </param>
+        <param>
+          <type>const <ref refid="namespacetvm_1a41918af1a1dc386388639a9d3ad06c5d" kindref="member">DataType</ref> &amp;</type>
+          <declname>out_dtype</declname>
+        </param>
+        <briefdescription>
+<para>Implementation of dense for rocm backend. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>target</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The target device </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>data</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Tensor with shape [batch, in_dim] </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>weight</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Tensor with shape [out_dim, in_dim] </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>bias</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Tensor with shape [out_dim]. Optional; to omit bias, pass Tensor() </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>out_dtype</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Output data type. Used for mixed precision.</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Tensor with shape [batch, out_dim] </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="topi/include/topi/rocm/dense.h" line="52" column="1" bodyfile="topi/include/topi/rocm/dense.h" bodystart="52" bodyend="81"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacetopi_1_1rocm_1a3edc082fa687a728d2a00dbf32784c8e" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classtvm_1_1te_1_1Schedule" kindref="compound">Schedule</ref></type>
+        <definition>Schedule topi::rocm::schedule_dense</definition>
+        <argsstring>(const Target &amp;target, const Array&lt; Tensor &gt; &amp;outs)</argsstring>
+        <name>schedule_dense</name>
+        <param>
+          <type>const <ref refid="classtvm_1_1Target" kindref="compound">Target</ref> &amp;</type>
+          <declname>target</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classtvm_1_1Array" kindref="compound">Array</ref>&lt; <ref refid="classtvm_1_1te_1_1Tensor" kindref="compound">Tensor</ref> &gt; &amp;</type>
+          <declname>outs</declname>
+        </param>
+        <briefdescription>
+<para>Create a rocm schedule for dense. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>target</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The target to generate a schedule for. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>outs</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The output tensors.</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>A schedule for the given ops. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="topi/include/topi/rocm/dense.h" line="91" column="1" bodyfile="topi/include/topi/rocm/dense.h" bodystart="91" bodyend="98"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacetopi_1_1rocm_1a7fc2bb96c7301c539e00ef6d6a4c034c" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classtvm_1_1te_1_1Schedule" kindref="compound">Schedule</ref></type>
+        <definition>Schedule topi::rocm::schedule_injective_from_existing</definition>
+        <argsstring>(Schedule sch, const Tensor &amp;out)</argsstring>
+        <name>schedule_injective_from_existing</name>
+        <param>
+          <type><ref refid="classtvm_1_1te_1_1Schedule" kindref="compound">Schedule</ref></type>
+          <declname>sch</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classtvm_1_1te_1_1Tensor" kindref="compound">Tensor</ref> &amp;</type>
+          <declname>out</declname>
+        </param>
+        <briefdescription>
+<para>Updates an existing schedule for the given injective ops. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>sch</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The schedule to update. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>out</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The tensor representing the injective op.</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The updated schedule. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="topi/include/topi/rocm/injective.h" line="48" column="1" bodyfile="topi/include/topi/rocm/injective.h" bodystart="48" bodyend="50"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacetopi_1_1rocm_1accc2eeb3de7b1e472e1415881007720b" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classtvm_1_1te_1_1Schedule" kindref="compound">Schedule</ref></type>
+        <definition>Schedule topi::rocm::schedule_injective</definition>
+        <argsstring>(const Target &amp;target, const Array&lt; Tensor &gt; &amp;outs)</argsstring>
+        <name>schedule_injective</name>
+        <param>
+          <type>const <ref refid="classtvm_1_1Target" kindref="compound">Target</ref> &amp;</type>
+          <declname>target</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classtvm_1_1Array" kindref="compound">Array</ref>&lt; <ref refid="classtvm_1_1te_1_1Tensor" kindref="compound">Tensor</ref> &gt; &amp;</type>
+          <declname>outs</declname>
+        </param>
+        <briefdescription>
+<para>Create a rocm schedule for the given output tensors. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>target</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The target to generate a schedule for. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>outs</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The output tensors.</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>A schedule for the given ops. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="topi/include/topi/rocm/injective.h" line="60" column="1" bodyfile="topi/include/topi/rocm/injective.h" bodystart="60" bodyend="62"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacetopi_1_1rocm_1a59eae2bcfcaab137309bfa39160abe4d" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classtvm_1_1te_1_1Schedule" kindref="compound">Schedule</ref></type>
+        <definition>Schedule topi::rocm::schedule_lrn</definition>
+        <argsstring>(const Array&lt; Tensor &gt; &amp;outs)</argsstring>
+        <name>schedule_lrn</name>
+        <param>
+          <type>const <ref refid="classtvm_1_1Array" kindref="compound">Array</ref>&lt; <ref refid="classtvm_1_1te_1_1Tensor" kindref="compound">Tensor</ref> &gt; &amp;</type>
+          <declname>outs</declname>
+        </param>
+        <briefdescription>
+<para>Create a rocm schedule for LRN. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>outs</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The output tensors. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>A schedule for the given ops. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="topi/include/topi/rocm/normalization.h" line="40" column="1" bodyfile="topi/include/topi/rocm/normalization.h" bodystart="40" bodyend="42"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacetopi_1_1rocm_1aeee58cb226b8c2dd216ea35734015c52" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classtvm_1_1te_1_1Schedule" kindref="compound">Schedule</ref></type>
+        <definition>Schedule topi::rocm::schedule_pool</definition>
+        <argsstring>(const Target &amp;target, const Array&lt; Tensor &gt; &amp;outs)</argsstring>
+        <name>schedule_pool</name>
+        <param>
+          <type>const <ref refid="classtvm_1_1Target" kindref="compound">Target</ref> &amp;</type>
+          <declname>target</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classtvm_1_1Array" kindref="compound">Array</ref>&lt; <ref refid="classtvm_1_1te_1_1Tensor" kindref="compound">Tensor</ref> &gt; &amp;</type>
+          <declname>outs</declname>
+        </param>
+        <briefdescription>
+<para>Create a rocm schedule for pool. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>target</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The target to generate a schedule for. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>outs</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The output tensors.</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>A schedule for the given ops. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="topi/include/topi/rocm/pooling.h" line="48" column="1" bodyfile="topi/include/topi/rocm/pooling.h" bodystart="48" bodyend="50"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacetopi_1_1rocm_1a77d9f533a273599910a7369802d46331" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classtvm_1_1te_1_1Schedule" kindref="compound">Schedule</ref></type>
+        <definition>Schedule topi::rocm::schedule_global_pool</definition>
+        <argsstring>(const Target &amp;target, const Array&lt; Tensor &gt; &amp;outs)</argsstring>
+        <name>schedule_global_pool</name>
+        <param>
+          <type>const <ref refid="classtvm_1_1Target" kindref="compound">Target</ref> &amp;</type>
+          <declname>target</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classtvm_1_1Array" kindref="compound">Array</ref>&lt; <ref refid="classtvm_1_1te_1_1Tensor" kindref="compound">Tensor</ref> &gt; &amp;</type>
+          <declname>outs</declname>
+        </param>
+        <briefdescription>
+<para>Create a rocm schedule for global_pool. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>target</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The target to generate a schedule for. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>outs</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The output tensors.</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>A schedule for the given ops. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="topi/include/topi/rocm/pooling.h" line="60" column="1" bodyfile="topi/include/topi/rocm/pooling.h" bodystart="60" bodyend="62"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacetopi_1_1rocm_1ab723607763d527d439a68a9c6304a4cd" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classtvm_1_1te_1_1Schedule" kindref="compound">Schedule</ref></type>
+        <definition>Schedule topi::rocm::schedule_reduce</definition>
+        <argsstring>(const Target &amp;target, Array&lt; Tensor &gt; outs)</argsstring>
+        <name>schedule_reduce</name>
+        <param>
+          <type>const <ref refid="classtvm_1_1Target" kindref="compound">Target</ref> &amp;</type>
+          <declname>target</declname>
+        </param>
+        <param>
+          <type><ref refid="classtvm_1_1Array" kindref="compound">Array</ref>&lt; <ref refid="classtvm_1_1te_1_1Tensor" kindref="compound">Tensor</ref> &gt;</type>
+          <declname>outs</declname>
+        </param>
+        <briefdescription>
+<para>Create a rocm schedule for a reduce operation. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>target</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The target to generate a schedule for. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>outs</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The output tensors.</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>A schedule for the given ops. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="topi/include/topi/rocm/reduction.h" line="47" column="1" bodyfile="topi/include/topi/rocm/reduction.h" bodystart="47" bodyend="49"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacetopi_1_1rocm_1a7492948479b9832cb5c10610628df529" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classtvm_1_1te_1_1Schedule" kindref="compound">Schedule</ref></type>
+        <definition>Schedule topi::rocm::schedule_softmax</definition>
+        <argsstring>(const Target &amp;target, const Array&lt; Tensor &gt; &amp;outs)</argsstring>
+        <name>schedule_softmax</name>
+        <param>
+          <type>const <ref refid="classtvm_1_1Target" kindref="compound">Target</ref> &amp;</type>
+          <declname>target</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classtvm_1_1Array" kindref="compound">Array</ref>&lt; <ref refid="classtvm_1_1te_1_1Tensor" kindref="compound">Tensor</ref> &gt; &amp;</type>
+          <declname>outs</declname>
+        </param>
+        <briefdescription>
+<para>Create a rocm schedule for the given softmax output tensors. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>target</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The target to generate a schedule for. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>outs</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The output tensors.</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>A schedule for the given ops. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="topi/include/topi/rocm/softmax.h" line="48" column="1" bodyfile="topi/include/topi/rocm/softmax.h" bodystart="48" bodyend="50"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="topi/include/topi/rocm/dense.h" line="40" column="1"/>
+  </compounddef>
+</doxygen>

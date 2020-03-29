@@ -1,0 +1,38 @@
+\hypertarget{dilate_8h}{}\section{topi/include/topi/nn/dilate.h File Reference}
+\label{dilate_8h}\index{topi/include/topi/nn/dilate.\+h@{topi/include/topi/nn/dilate.\+h}}
+
+
+Dilate op constructions.  
+
+
+{\ttfamily \#include $<$tvm/te/operation.\+h$>$}\\*
+{\ttfamily \#include $<$tvm/tir/ir\+\_\+pass.\+h$>$}\\*
+{\ttfamily \#include $<$topi/tags.\+h$>$}\\*
+{\ttfamily \#include $<$string$>$}\\*
+Include dependency graph for dilate.\+h\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{dilate_8h__incl}
+\end{center}
+\end{figure}
+\subsection*{Namespaces}
+\begin{DoxyCompactItemize}
+\item 
+ \hyperlink{namespacetopi}{topi}
+\item 
+ \hyperlink{namespacetopi_1_1nn}{topi\+::nn}
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classtvm_1_1PrimExpr}{Prim\+Expr} \hyperlink{namespacetopi_1_1nn_ad57ccdad6f841aaafa2f64062f249a47}{topi\+::nn\+::all} (\hyperlink{classtvm_1_1Array}{Array}$<$ \hyperlink{classtvm_1_1PrimExpr}{Prim\+Expr} $>$ args)
+\begin{DoxyCompactList}\small\item\em Create a new expression of the logical and of all conditions in the arguments. \end{DoxyCompactList}\item 
+\hyperlink{classtvm_1_1te_1_1Tensor}{Tensor} \hyperlink{namespacetopi_1_1nn_a6ac795264be73287d92fcd7be8943ddc}{topi\+::nn\+::dilate} (const \hyperlink{classtvm_1_1te_1_1Tensor}{Tensor} \&x, \hyperlink{classtvm_1_1Array}{Array}$<$ \hyperlink{classtvm_1_1PrimExpr}{Prim\+Expr} $>$ strides, std\+::string name=\char`\"{}tensor\char`\"{}, std\+::string tag=k\+Injective)
+\begin{DoxyCompactList}\small\item\em Dilate data with zeros. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Dilate op constructions. 
+

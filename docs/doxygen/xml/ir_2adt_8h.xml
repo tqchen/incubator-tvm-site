@@ -1,0 +1,722 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="ir_2adt_8h" kind="file" language="C++">
+    <compoundname>adt.h</compoundname>
+    <includes refid="object_8h" local="no">tvm/runtime/object.h</includes>
+    <includes refid="node_8h" local="no">tvm/node/node.h</includes>
+    <includes refid="node_2container_8h" local="no">tvm/node/container.h</includes>
+    <includes refid="ir_2expr_8h" local="no">tvm/ir/expr.h</includes>
+    <includes refid="ir_2type_8h" local="no">tvm/ir/type.h</includes>
+    <includes local="no">string</includes>
+    <includedby refid="ir_2module_8h" local="no">include/tvm/ir/module.h</includedby>
+    <includedby refid="relay_2adt_8h" local="no">include/tvm/relay/adt.h</includedby>
+    <incdepgraph>
+      <node id="9928">
+        <label>tvm/ir/span.h</label>
+        <link refid="span_8h"/>
+        <childnode refid="9893" relation="include">
+        </childnode>
+        <childnode refid="9903" relation="include">
+        </childnode>
+        <childnode refid="9900" relation="include">
+        </childnode>
+      </node>
+      <node id="9902">
+        <label>atomic</label>
+      </node>
+      <node id="9917">
+        <label>functional</label>
+      </node>
+      <node id="9919">
+        <label>limits</label>
+      </node>
+      <node id="9908">
+        <label>tvm/runtime/module.h</label>
+        <link refid="runtime_2module_8h"/>
+        <childnode refid="9909" relation="include">
+        </childnode>
+        <childnode refid="9895" relation="include">
+        </childnode>
+        <childnode refid="9893" relation="include">
+        </childnode>
+        <childnode refid="9904" relation="include">
+        </childnode>
+        <childnode refid="9910" relation="include">
+        </childnode>
+        <childnode refid="9911" relation="include">
+        </childnode>
+        <childnode refid="9900" relation="include">
+        </childnode>
+        <childnode refid="9912" relation="include">
+        </childnode>
+        <childnode refid="9907" relation="include">
+        </childnode>
+      </node>
+      <node id="9907">
+        <label>tvm/runtime/packed_func.h</label>
+        <link refid="packed__func_8h"/>
+        <childnode refid="9894" relation="include">
+        </childnode>
+        <childnode refid="9895" relation="include">
+        </childnode>
+        <childnode refid="9908" relation="include">
+        </childnode>
+        <childnode refid="9913" relation="include">
+        </childnode>
+        <childnode refid="9916" relation="include">
+        </childnode>
+        <childnode refid="9893" relation="include">
+        </childnode>
+        <childnode refid="9917" relation="include">
+        </childnode>
+        <childnode refid="9918" relation="include">
+        </childnode>
+        <childnode refid="9911" relation="include">
+        </childnode>
+        <childnode refid="9900" relation="include">
+        </childnode>
+        <childnode refid="9919" relation="include">
+        </childnode>
+        <childnode refid="9910" relation="include">
+        </childnode>
+        <childnode refid="9901" relation="include">
+        </childnode>
+        <childnode refid="9899" relation="include">
+        </childnode>
+      </node>
+      <node id="9921">
+        <label>tvm/node/functor.h</label>
+        <link refid="functor_8h"/>
+        <childnode refid="9894" relation="include">
+        </childnode>
+        <childnode refid="9893" relation="include">
+        </childnode>
+        <childnode refid="9911" relation="include">
+        </childnode>
+        <childnode refid="9899" relation="include">
+        </childnode>
+        <childnode refid="9901" relation="include">
+        </childnode>
+      </node>
+      <node id="9893">
+        <label>tvm/runtime/object.h</label>
+        <link refid="object_8h"/>
+        <childnode refid="9894" relation="include">
+        </childnode>
+        <childnode refid="9895" relation="include">
+        </childnode>
+        <childnode refid="9899" relation="include">
+        </childnode>
+        <childnode refid="9900" relation="include">
+        </childnode>
+        <childnode refid="9901" relation="include">
+        </childnode>
+        <childnode refid="9902" relation="include">
+        </childnode>
+      </node>
+      <node id="9897">
+        <label>stdint.h</label>
+      </node>
+      <node id="9913">
+        <label>tvm/runtime/ndarray.h</label>
+        <link refid="ndarray_8h"/>
+        <childnode refid="9895" relation="include">
+        </childnode>
+        <childnode refid="9893" relation="include">
+        </childnode>
+        <childnode refid="9914" relation="include">
+        </childnode>
+        <childnode refid="9902" relation="include">
+        </childnode>
+        <childnode refid="9911" relation="include">
+        </childnode>
+        <childnode refid="9901" relation="include">
+        </childnode>
+      </node>
+      <node id="9924">
+        <label>tvm/node/structural_hash.h</label>
+        <link refid="structural__hash_8h"/>
+        <childnode refid="9916" relation="include">
+        </childnode>
+        <childnode refid="9921" relation="include">
+        </childnode>
+        <childnode refid="9922" relation="include">
+        </childnode>
+        <childnode refid="9900" relation="include">
+        </childnode>
+        <childnode refid="9917" relation="include">
+        </childnode>
+      </node>
+      <node id="9900">
+        <label>string</label>
+      </node>
+      <node id="9925">
+        <label>tvm/node/repr_printer.h</label>
+        <link refid="repr__printer_8h"/>
+        <childnode refid="9921" relation="include">
+        </childnode>
+        <childnode refid="9926" relation="include">
+        </childnode>
+      </node>
+      <node id="9922">
+        <label>tvm/node/container.h</label>
+        <link refid="node_2container_8h"/>
+        <childnode refid="9893" relation="include">
+        </childnode>
+        <childnode refid="9904" relation="include">
+        </childnode>
+        <childnode refid="9907" relation="include">
+        </childnode>
+        <childnode refid="9899" relation="include">
+        </childnode>
+        <childnode refid="9911" relation="include">
+        </childnode>
+        <childnode refid="9923" relation="include">
+        </childnode>
+        <childnode refid="9912" relation="include">
+        </childnode>
+        <childnode refid="9901" relation="include">
+        </childnode>
+        <childnode refid="9900" relation="include">
+        </childnode>
+      </node>
+      <node id="9898">
+        <label>stddef.h</label>
+      </node>
+      <node id="9927">
+        <label>tvm/ir/expr.h</label>
+        <link refid="ir_2expr_8h"/>
+        <childnode refid="9893" relation="include">
+        </childnode>
+        <childnode refid="9903" relation="include">
+        </childnode>
+        <childnode refid="9922" relation="include">
+        </childnode>
+        <childnode refid="9928" relation="include">
+        </childnode>
+        <childnode refid="9929" relation="include">
+        </childnode>
+        <childnode refid="9900" relation="include">
+        </childnode>
+        <childnode refid="9930" relation="include">
+        </childnode>
+        <childnode refid="9919" relation="include">
+        </childnode>
+        <childnode refid="9899" relation="include">
+        </childnode>
+      </node>
+      <node id="9892">
+        <label>include/tvm/ir/adt.h</label>
+        <link refid="ir/adt.h"/>
+        <childnode refid="9893" relation="include">
+        </childnode>
+        <childnode refid="9903" relation="include">
+        </childnode>
+        <childnode refid="9922" relation="include">
+        </childnode>
+        <childnode refid="9927" relation="include">
+        </childnode>
+        <childnode refid="9929" relation="include">
+        </childnode>
+        <childnode refid="9900" relation="include">
+        </childnode>
+      </node>
+      <node id="9918">
+        <label>tuple</label>
+      </node>
+      <node id="9894">
+        <label>dmlc/logging.h</label>
+      </node>
+      <node id="9911">
+        <label>vector</label>
+      </node>
+      <node id="9920">
+        <label>tvm/node/structural_equal.h</label>
+        <link refid="structural__equal_8h"/>
+        <childnode refid="9916" relation="include">
+        </childnode>
+        <childnode refid="9921" relation="include">
+        </childnode>
+        <childnode refid="9922" relation="include">
+        </childnode>
+        <childnode refid="9900" relation="include">
+        </childnode>
+      </node>
+      <node id="9909">
+        <label>dmlc/io.h</label>
+      </node>
+      <node id="9895">
+        <label>tvm/runtime/c_runtime_api.h</label>
+        <link refid="c__runtime__api_8h"/>
+        <childnode refid="9896" relation="include">
+        </childnode>
+        <childnode refid="9897" relation="include">
+        </childnode>
+        <childnode refid="9898" relation="include">
+        </childnode>
+      </node>
+      <node id="9929">
+        <label>tvm/ir/type.h</label>
+        <link refid="ir_2type_8h"/>
+        <childnode refid="9893" relation="include">
+        </childnode>
+        <childnode refid="9916" relation="include">
+        </childnode>
+        <childnode refid="9903" relation="include">
+        </childnode>
+        <childnode refid="9922" relation="include">
+        </childnode>
+        <childnode refid="9928" relation="include">
+        </childnode>
+        <childnode refid="9900" relation="include">
+        </childnode>
+      </node>
+      <node id="9901">
+        <label>utility</label>
+      </node>
+      <node id="9903">
+        <label>tvm/node/node.h</label>
+        <link refid="node_8h"/>
+        <childnode refid="9895" relation="include">
+        </childnode>
+        <childnode refid="9893" relation="include">
+        </childnode>
+        <childnode refid="9904" relation="include">
+        </childnode>
+        <childnode refid="9906" relation="include">
+        </childnode>
+        <childnode refid="9925" relation="include">
+        </childnode>
+        <childnode refid="9922" relation="include">
+        </childnode>
+        <childnode refid="9920" relation="include">
+        </childnode>
+        <childnode refid="9924" relation="include">
+        </childnode>
+        <childnode refid="9900" relation="include">
+        </childnode>
+        <childnode refid="9911" relation="include">
+        </childnode>
+        <childnode refid="9901" relation="include">
+        </childnode>
+        <childnode refid="9899" relation="include">
+        </childnode>
+      </node>
+      <node id="9915">
+        <label>dmlc/serializer.h</label>
+      </node>
+      <node id="9905">
+        <label>cstdlib</label>
+      </node>
+      <node id="9926">
+        <label>iostream</label>
+      </node>
+      <node id="9914">
+        <label>tvm/runtime/serializer.h</label>
+        <link refid="serializer_8h"/>
+        <childnode refid="9909" relation="include">
+        </childnode>
+        <childnode refid="9915" relation="include">
+        </childnode>
+        <childnode refid="9895" relation="include">
+        </childnode>
+        <childnode refid="9913" relation="include">
+        </childnode>
+      </node>
+      <node id="9912">
+        <label>unordered_map</label>
+      </node>
+      <node id="9906">
+        <label>tvm/node/reflection.h</label>
+        <link refid="reflection_8h"/>
+        <childnode refid="9895" relation="include">
+        </childnode>
+        <childnode refid="9893" relation="include">
+        </childnode>
+        <childnode refid="9904" relation="include">
+        </childnode>
+        <childnode refid="9907" relation="include">
+        </childnode>
+        <childnode refid="9913" relation="include">
+        </childnode>
+        <childnode refid="9916" relation="include">
+        </childnode>
+        <childnode refid="9920" relation="include">
+        </childnode>
+        <childnode refid="9924" relation="include">
+        </childnode>
+        <childnode refid="9911" relation="include">
+        </childnode>
+        <childnode refid="9900" relation="include">
+        </childnode>
+        <childnode refid="9899" relation="include">
+        </childnode>
+      </node>
+      <node id="9904">
+        <label>tvm/runtime/memory.h</label>
+        <link refid="runtime_2memory_8h"/>
+        <childnode refid="9893" relation="include">
+        </childnode>
+        <childnode refid="9905" relation="include">
+        </childnode>
+        <childnode refid="9901" relation="include">
+        </childnode>
+        <childnode refid="9899" relation="include">
+        </childnode>
+      </node>
+      <node id="9916">
+        <label>tvm/runtime/data_type.h</label>
+        <link refid="data__type_8h"/>
+        <childnode refid="9895" relation="include">
+        </childnode>
+        <childnode refid="9894" relation="include">
+        </childnode>
+        <childnode refid="9899" relation="include">
+        </childnode>
+      </node>
+      <node id="9899">
+        <label>type_traits</label>
+      </node>
+      <node id="9930">
+        <label>algorithm</label>
+      </node>
+      <node id="9896">
+        <label>dlpack/dlpack.h</label>
+      </node>
+      <node id="9910">
+        <label>memory</label>
+      </node>
+      <node id="9923">
+        <label>initializer_list</label>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="9950">
+        <label>include/tvm/relay/interpreter.h</label>
+        <link refid="interpreter_8h"/>
+      </node>
+      <node id="9944">
+        <label>include/tvm/relay/adt.h</label>
+        <link refid="relay_2adt_8h"/>
+        <childnode refid="9943" relation="include">
+        </childnode>
+        <childnode refid="9945" relation="include">
+        </childnode>
+        <childnode refid="9938" relation="include">
+        </childnode>
+        <childnode refid="9939" relation="include">
+        </childnode>
+      </node>
+      <node id="9940">
+        <label>include/tvm/ir/type_relation.h</label>
+        <link refid="type__relation_8h"/>
+        <childnode refid="9941" relation="include">
+        </childnode>
+        <childnode refid="9954" relation="include">
+        </childnode>
+      </node>
+      <node id="9936">
+        <label>include/tvm/relay/qnn/transform.h</label>
+        <link refid="include_2tvm_2relay_2qnn_2transform_8h"/>
+      </node>
+      <node id="9942">
+        <label>include/tvm/relay/expr.h</label>
+        <link refid="relay_2expr_8h"/>
+        <childnode refid="9943" relation="include">
+        </childnode>
+        <childnode refid="9944" relation="include">
+        </childnode>
+        <childnode refid="9945" relation="include">
+        </childnode>
+        <childnode refid="9946" relation="include">
+        </childnode>
+        <childnode refid="9947" relation="include">
+        </childnode>
+        <childnode refid="9938" relation="include">
+        </childnode>
+        <childnode refid="9948" relation="include">
+        </childnode>
+        <childnode refid="9949" relation="include">
+        </childnode>
+        <childnode refid="9950" relation="include">
+        </childnode>
+        <childnode refid="9951" relation="include">
+        </childnode>
+        <childnode refid="9952" relation="include">
+        </childnode>
+        <childnode refid="9953" relation="include">
+        </childnode>
+        <childnode refid="9939" relation="include">
+        </childnode>
+        <childnode refid="9935" relation="include">
+        </childnode>
+      </node>
+      <node id="9943">
+        <label>include/tvm/ir/type_functor.h</label>
+        <link refid="type__functor_8h"/>
+      </node>
+      <node id="9947">
+        <label>include/tvm/relay/attrs/transform.h</label>
+        <link refid="include_2tvm_2relay_2attrs_2transform_8h"/>
+        <childnode refid="9935" relation="include">
+        </childnode>
+      </node>
+      <node id="9939">
+        <label>include/tvm/relay/pattern_functor.h</label>
+        <link refid="pattern__functor_8h"/>
+      </node>
+      <node id="9933">
+        <label>include/tvm/ir/error.h</label>
+        <link refid="error_8h"/>
+        <childnode refid="9934" relation="include">
+        </childnode>
+        <childnode refid="9938" relation="include">
+        </childnode>
+        <childnode refid="9939" relation="include">
+        </childnode>
+      </node>
+      <node id="9949">
+        <label>include/tvm/relay/function.h</label>
+        <link refid="relay_2function_8h"/>
+        <childnode refid="9945" relation="include">
+        </childnode>
+        <childnode refid="9938" relation="include">
+        </childnode>
+        <childnode refid="9935" relation="include">
+        </childnode>
+      </node>
+      <node id="9934">
+        <label>include/tvm/ir/transform.h</label>
+        <link refid="include_2tvm_2ir_2transform_8h"/>
+        <childnode refid="9935" relation="include">
+        </childnode>
+        <childnode refid="9937" relation="include">
+        </childnode>
+      </node>
+      <node id="9937">
+        <label>include/tvm/tir/transform.h</label>
+        <link refid="include_2tvm_2tir_2transform_8h"/>
+      </node>
+      <node id="9931">
+        <label>include/tvm/ir/adt.h</label>
+        <link refid="ir/adt.h"/>
+        <childnode refid="9932" relation="include">
+        </childnode>
+        <childnode refid="9944" relation="include">
+        </childnode>
+      </node>
+      <node id="9932">
+        <label>include/tvm/ir/module.h</label>
+        <link refid="ir_2module_8h"/>
+        <childnode refid="9933" relation="include">
+        </childnode>
+        <childnode refid="9934" relation="include">
+        </childnode>
+        <childnode refid="9940" relation="include">
+        </childnode>
+        <childnode refid="9945" relation="include">
+        </childnode>
+        <childnode refid="9942" relation="include">
+        </childnode>
+        <childnode refid="9948" relation="include">
+        </childnode>
+        <childnode refid="9950" relation="include">
+        </childnode>
+      </node>
+      <node id="9954">
+        <label>include/tvm/relay/type.h</label>
+        <link refid="relay_2type_8h"/>
+        <childnode refid="9944" relation="include">
+        </childnode>
+        <childnode refid="9945" relation="include">
+        </childnode>
+        <childnode refid="9942" relation="include">
+        </childnode>
+        <childnode refid="9951" relation="include">
+        </childnode>
+        <childnode refid="9952" relation="include">
+        </childnode>
+      </node>
+      <node id="9946">
+        <label>include/tvm/relay/attrs/memory.h</label>
+        <link refid="relay_2attrs_2memory_8h"/>
+      </node>
+      <node id="9948">
+        <label>include/tvm/relay/feature.h</label>
+        <link refid="feature_8h"/>
+      </node>
+      <node id="9935">
+        <label>include/tvm/relay/transform.h</label>
+        <link refid="include_2tvm_2relay_2transform_8h"/>
+        <childnode refid="9936" relation="include">
+        </childnode>
+      </node>
+      <node id="9938">
+        <label>include/tvm/relay/expr_functor.h</label>
+        <link refid="relay_2expr__functor_8h"/>
+      </node>
+      <node id="9941">
+        <label>include/tvm/ir/op.h</label>
+        <link refid="ir_2op_8h"/>
+        <childnode refid="9942" relation="include">
+        </childnode>
+        <childnode refid="9951" relation="include">
+        </childnode>
+      </node>
+      <node id="9952">
+        <label>include/tvm/relay/op_attr_types.h</label>
+        <link refid="op__attr__types_8h"/>
+        <childnode refid="9953" relation="include">
+        </childnode>
+        <childnode refid="9935" relation="include">
+        </childnode>
+      </node>
+      <node id="9945">
+        <label>include/tvm/relay/analysis.h</label>
+        <link refid="analysis_8h"/>
+      </node>
+      <node id="9951">
+        <label>include/tvm/relay/op.h</label>
+        <link refid="relay_2op_8h"/>
+        <childnode refid="9938" relation="include">
+        </childnode>
+        <childnode refid="9939" relation="include">
+        </childnode>
+        <childnode refid="9935" relation="include">
+        </childnode>
+      </node>
+      <node id="9953">
+        <label>include/tvm/relay/op_strategy.h</label>
+        <link refid="op__strategy_8h"/>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="classtvm_1_1ConstructorNode" prot="public">tvm::ConstructorNode</innerclass>
+    <innerclass refid="classtvm_1_1Constructor" prot="public">tvm::Constructor</innerclass>
+    <innerclass refid="classtvm_1_1TypeDataNode" prot="public">tvm::TypeDataNode</innerclass>
+    <innerclass refid="classtvm_1_1TypeData" prot="public">tvm::TypeData</innerclass>
+    <innernamespace refid="namespacetvm">tvm</innernamespace>
+    <briefdescription>
+<para>Algebraic data type definitions. </para>    </briefdescription>
+    <detaileddescription>
+<para>We adopt relay&apos;s ADT definition as a unified class for decripting structured data. </para>    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="2"><highlight class="comment"><sp/>*<sp/>Licensed<sp/>to<sp/>the<sp/>Apache<sp/>Software<sp/>Foundation<sp/>(ASF)<sp/>under<sp/>one</highlight></codeline>
+<codeline lineno="3"><highlight class="comment"><sp/>*<sp/>or<sp/>more<sp/>contributor<sp/>license<sp/>agreements.<sp/><sp/>See<sp/>the<sp/>NOTICE<sp/>file</highlight></codeline>
+<codeline lineno="4"><highlight class="comment"><sp/>*<sp/>distributed<sp/>with<sp/>this<sp/>work<sp/>for<sp/>additional<sp/>information</highlight></codeline>
+<codeline lineno="5"><highlight class="comment"><sp/>*<sp/>regarding<sp/>copyright<sp/>ownership.<sp/><sp/>The<sp/>ASF<sp/>licenses<sp/>this<sp/>file</highlight></codeline>
+<codeline lineno="6"><highlight class="comment"><sp/>*<sp/>to<sp/>you<sp/>under<sp/>the<sp/>Apache<sp/>License,<sp/>Version<sp/>2.0<sp/>(the</highlight></codeline>
+<codeline lineno="7"><highlight class="comment"><sp/>*<sp/>&quot;License&quot;);<sp/>you<sp/>may<sp/>not<sp/>use<sp/>this<sp/>file<sp/>except<sp/>in<sp/>compliance</highlight></codeline>
+<codeline lineno="8"><highlight class="comment"><sp/>*<sp/>with<sp/>the<sp/>License.<sp/><sp/>You<sp/>may<sp/>obtain<sp/>a<sp/>copy<sp/>of<sp/>the<sp/>License<sp/>at</highlight></codeline>
+<codeline lineno="9"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="10"><highlight class="comment"><sp/>*<sp/><sp/><sp/>http://www.apache.org/licenses/LICENSE-2.0</highlight></codeline>
+<codeline lineno="11"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="12"><highlight class="comment"><sp/>*<sp/>Unless<sp/>required<sp/>by<sp/>applicable<sp/>law<sp/>or<sp/>agreed<sp/>to<sp/>in<sp/>writing,</highlight></codeline>
+<codeline lineno="13"><highlight class="comment"><sp/>*<sp/>software<sp/>distributed<sp/>under<sp/>the<sp/>License<sp/>is<sp/>distributed<sp/>on<sp/>an</highlight></codeline>
+<codeline lineno="14"><highlight class="comment"><sp/>*<sp/>&quot;AS<sp/>IS&quot;<sp/>BASIS,<sp/>WITHOUT<sp/>WARRANTIES<sp/>OR<sp/>CONDITIONS<sp/>OF<sp/>ANY</highlight></codeline>
+<codeline lineno="15"><highlight class="comment"><sp/>*<sp/>KIND,<sp/>either<sp/>express<sp/>or<sp/>implied.<sp/><sp/>See<sp/>the<sp/>License<sp/>for<sp/>the</highlight></codeline>
+<codeline lineno="16"><highlight class="comment"><sp/>*<sp/>specific<sp/>language<sp/>governing<sp/>permissions<sp/>and<sp/>limitations</highlight></codeline>
+<codeline lineno="17"><highlight class="comment"><sp/>*<sp/>under<sp/>the<sp/>License.</highlight></codeline>
+<codeline lineno="18"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight></codeline>
+<codeline lineno="27"><highlight class="preprocessor">#ifndef<sp/>TVM_IR_ADT_H_</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="28"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>TVM_IR_ADT_H_</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="29"><highlight class="normal"></highlight></codeline>
+<codeline lineno="30"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;<ref refid="object_8h" kindref="compound">tvm/runtime/object.h</ref>&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="31"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;<ref refid="node_8h" kindref="compound">tvm/node/node.h</ref>&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="32"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;<ref refid="node_2container_8h" kindref="compound">tvm/node/container.h</ref>&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="33"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;<ref refid="ir_2expr_8h" kindref="compound">tvm/ir/expr.h</ref>&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="34"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;<ref refid="ir_2type_8h" kindref="compound">tvm/ir/type.h</ref>&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="35"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;string&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="36"><highlight class="normal"></highlight></codeline>
+<codeline lineno="37"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal"><ref refid="namespacetvm" kindref="compound">tvm</ref><sp/>{</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"></highlight></codeline>
+<codeline lineno="44" refid="classtvm_1_1ConstructorNode" refkind="compound"><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classtvm_1_1ConstructorNode" kindref="compound">ConstructorNode</ref><sp/>:<sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/><ref refid="classtvm_1_1RelayExprNode" kindref="compound">RelayExprNode</ref><sp/>{</highlight></codeline>
+<codeline lineno="45"><highlight class="normal"><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="47" refid="classtvm_1_1ConstructorNode_1a4bc169a07961c92da7ee35a5cebdf209" refkind="member"><highlight class="normal"><sp/><sp/>std::string<sp/><ref refid="classtvm_1_1ConstructorNode_1a4bc169a07961c92da7ee35a5cebdf209" kindref="member">name_hint</ref>;</highlight></codeline>
+<codeline lineno="49" refid="classtvm_1_1ConstructorNode_1a5e999221d27a09f0ae69fd94674349b1" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="classtvm_1_1Array" kindref="compound">Array&lt;Type&gt;</ref><sp/><ref refid="classtvm_1_1ConstructorNode_1a5e999221d27a09f0ae69fd94674349b1" kindref="member">inputs</ref>;</highlight></codeline>
+<codeline lineno="51" refid="classtvm_1_1ConstructorNode_1a671fab9e6add1be16eca6e19efac99c5" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="classtvm_1_1GlobalTypeVar" kindref="compound">GlobalTypeVar</ref><sp/><ref refid="classtvm_1_1ConstructorNode_1a671fab9e6add1be16eca6e19efac99c5" kindref="member">belong_to</ref>;</highlight></codeline>
+<codeline lineno="53" refid="classtvm_1_1ConstructorNode_1a396a76459b3a46eefdfcd952c69c5ee4" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">mutable</highlight><highlight class="normal"><sp/>int32_t<sp/><ref refid="classtvm_1_1ConstructorNode_1a396a76459b3a46eefdfcd952c69c5ee4" kindref="member">tag</ref><sp/>=<sp/>-1;</highlight></codeline>
+<codeline lineno="54"><highlight class="normal"></highlight></codeline>
+<codeline lineno="55" refid="classtvm_1_1ConstructorNode_1ab53a12f5a1ab1d262c49c16d189fe27c" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="classtvm_1_1ConstructorNode_1ab53a12f5a1ab1d262c49c16d189fe27c" kindref="member">ConstructorNode</ref>()<sp/>{}</highlight></codeline>
+<codeline lineno="56"><highlight class="normal"></highlight></codeline>
+<codeline lineno="57" refid="classtvm_1_1ConstructorNode_1a7137fbec25bcaae585f532221402e892" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classtvm_1_1ConstructorNode_1a7137fbec25bcaae585f532221402e892" kindref="member">VisitAttrs</ref>(<ref refid="classtvm_1_1AttrVisitor" kindref="compound">AttrVisitor</ref>*<sp/>v)<sp/>{</highlight></codeline>
+<codeline lineno="58"><highlight class="normal"><sp/><sp/><sp/><sp/>v-&gt;Visit(</highlight><highlight class="stringliteral">&quot;name_hint&quot;</highlight><highlight class="normal">,<sp/>&amp;name_hint);</highlight></codeline>
+<codeline lineno="59"><highlight class="normal"><sp/><sp/><sp/><sp/>v-&gt;Visit(</highlight><highlight class="stringliteral">&quot;inputs&quot;</highlight><highlight class="normal">,<sp/>&amp;inputs);</highlight></codeline>
+<codeline lineno="60"><highlight class="normal"><sp/><sp/><sp/><sp/>v-&gt;Visit(</highlight><highlight class="stringliteral">&quot;belong_to&quot;</highlight><highlight class="normal">,<sp/>&amp;belong_to);</highlight></codeline>
+<codeline lineno="61"><highlight class="normal"><sp/><sp/><sp/><sp/>v-&gt;Visit(</highlight><highlight class="stringliteral">&quot;tag&quot;</highlight><highlight class="normal">,<sp/>&amp;tag);</highlight></codeline>
+<codeline lineno="62"><highlight class="normal"><sp/><sp/><sp/><sp/>v-&gt;Visit(</highlight><highlight class="stringliteral">&quot;span&quot;</highlight><highlight class="normal">,<sp/>&amp;<ref refid="classtvm_1_1RelayExprNode_1a904ae50be0b72eab079bed93829c9563" kindref="member">span</ref>);</highlight></codeline>
+<codeline lineno="63"><highlight class="normal"><sp/><sp/><sp/><sp/>v-&gt;Visit(</highlight><highlight class="stringliteral">&quot;_checked_type_&quot;</highlight><highlight class="normal">,<sp/>&amp;<ref refid="classtvm_1_1RelayExprNode_1ae30ca49a8b84288fbc21d5f312f02929" kindref="member">checked_type_</ref>);</highlight></codeline>
+<codeline lineno="64"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="65"><highlight class="normal"></highlight></codeline>
+<codeline lineno="66" refid="classtvm_1_1ConstructorNode_1a1dbaf14ddf82ff3640cf539962955179" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classtvm_1_1ConstructorNode_1a1dbaf14ddf82ff3640cf539962955179" kindref="member">SEqualReduce</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classtvm_1_1ConstructorNode" kindref="compound">ConstructorNode</ref>*<sp/>other,<sp/><ref refid="classtvm_1_1SEqualReducer" kindref="compound">SEqualReducer</ref><sp/><ref refid="namespacetopi_1ae10e1fb8c765a9ae15c12f45199375b3" kindref="member">equal</ref>)</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="67"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Use<sp/>namehint<sp/>for<sp/>now<sp/>to<sp/>be<sp/>consistent<sp/>with<sp/>the<sp/>legacy<sp/>relay<sp/>impl</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="68"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>TODO(tvm-team)<sp/>revisit,<sp/>need<sp/>to<sp/>check<sp/>the<sp/>type<sp/>var.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="69"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="70"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="namespacetopi_1ae10e1fb8c765a9ae15c12f45199375b3" kindref="member">equal</ref>(name_hint,<sp/>other-&gt;<ref refid="classtvm_1_1ConstructorNode_1a4bc169a07961c92da7ee35a5cebdf209" kindref="member">name_hint</ref>)<sp/>&amp;&amp;</highlight></codeline>
+<codeline lineno="71"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="namespacetopi_1ae10e1fb8c765a9ae15c12f45199375b3" kindref="member">equal</ref>(inputs,<sp/>other-&gt;<ref refid="classtvm_1_1ConstructorNode_1a5e999221d27a09f0ae69fd94674349b1" kindref="member">inputs</ref>);</highlight></codeline>
+<codeline lineno="72"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="73"><highlight class="normal"></highlight></codeline>
+<codeline lineno="74" refid="classtvm_1_1ConstructorNode_1a7172a526b7d29085678fa01fba20fdf4" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classtvm_1_1ConstructorNode_1a7172a526b7d29085678fa01fba20fdf4" kindref="member">SHashReduce</ref>(<ref refid="classtvm_1_1SHashReducer" kindref="compound">SHashReducer</ref><sp/>hash_reduce)</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="75"><highlight class="normal"><sp/><sp/><sp/><sp/>hash_reduce(name_hint);</highlight></codeline>
+<codeline lineno="76"><highlight class="normal"><sp/><sp/><sp/><sp/>hash_reduce(inputs);</highlight></codeline>
+<codeline lineno="77"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="78"><highlight class="normal"></highlight></codeline>
+<codeline lineno="79" refid="classtvm_1_1ConstructorNode_1a41f40e2a99b4f65659a17b62294539fd" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/>constexpr<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*<sp/><ref refid="classtvm_1_1ConstructorNode_1a41f40e2a99b4f65659a17b62294539fd" kindref="member">_type_key</ref><sp/>=<sp/></highlight><highlight class="stringliteral">&quot;relay.Constructor&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="80"><highlight class="normal"><sp/><sp/><ref refid="classtvm_1_1ConstructorNode_1af21463fd4d36fa74261a95bc7700d2c5" kindref="member">TVM_DECLARE_FINAL_OBJECT_INFO</ref>(<ref refid="classtvm_1_1ConstructorNode" kindref="compound">ConstructorNode</ref>,<sp/><ref refid="classtvm_1_1RelayExprNode" kindref="compound">RelayExprNode</ref>);</highlight></codeline>
+<codeline lineno="81"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="82"><highlight class="normal"></highlight></codeline>
+<codeline lineno="87" refid="classtvm_1_1Constructor" refkind="compound"><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classtvm_1_1Constructor" kindref="compound">Constructor</ref><sp/>:<sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/><ref refid="classtvm_1_1RelayExpr" kindref="compound">RelayExpr</ref><sp/>{</highlight></codeline>
+<codeline lineno="88"><highlight class="normal"><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="95"><highlight class="normal"><sp/><sp/>TVM_DLL<sp/><ref refid="namespacetvm_1_1relay_1aec85bf097deda59bd22e88475c9165e9" kindref="member">Constructor</ref>(std::string<sp/><ref refid="classtvm_1_1ConstructorNode_1a4bc169a07961c92da7ee35a5cebdf209" kindref="member">name_hint</ref>,</highlight></codeline>
+<codeline lineno="96"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classtvm_1_1Array" kindref="compound">Array&lt;Type&gt;</ref><sp/><ref refid="classtvm_1_1ConstructorNode_1a5e999221d27a09f0ae69fd94674349b1" kindref="member">inputs</ref>,</highlight></codeline>
+<codeline lineno="97"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classtvm_1_1GlobalTypeVar" kindref="compound">GlobalTypeVar</ref><sp/><ref refid="classtvm_1_1ConstructorNode_1a671fab9e6add1be16eca6e19efac99c5" kindref="member">belong_to</ref>);</highlight></codeline>
+<codeline lineno="98"><highlight class="normal"></highlight></codeline>
+<codeline lineno="99"><highlight class="normal"><sp/><sp/><ref refid="object_8h_1ac6e7295a4999e2c8e4a2c990beca887a" kindref="member">TVM_DEFINE_OBJECT_REF_METHODS</ref>(Constructor,<sp/><ref refid="classtvm_1_1RelayExpr" kindref="compound">RelayExpr</ref>,<sp/><ref refid="classtvm_1_1ConstructorNode" kindref="compound">ConstructorNode</ref>);</highlight></codeline>
+<codeline lineno="100"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="101"><highlight class="normal"></highlight></codeline>
+<codeline lineno="103" refid="classtvm_1_1TypeDataNode" refkind="compound"><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classtvm_1_1TypeDataNode" kindref="compound">TypeDataNode</ref><sp/>:<sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/><ref refid="classtvm_1_1TypeNode" kindref="compound">TypeNode</ref><sp/>{</highlight></codeline>
+<codeline lineno="104"><highlight class="normal"><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="111" refid="classtvm_1_1TypeDataNode_1a2fe297fe22375fbc180deb003d142ab9" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="classtvm_1_1GlobalTypeVar" kindref="compound">GlobalTypeVar</ref><sp/><ref refid="classtvm_1_1TypeDataNode_1a2fe297fe22375fbc180deb003d142ab9" kindref="member">header</ref>;</highlight></codeline>
+<codeline lineno="113" refid="classtvm_1_1TypeDataNode_1a350a23efc88be1def5b93d27ac6fa88b" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="classtvm_1_1Array" kindref="compound">Array&lt;TypeVar&gt;</ref><sp/><ref refid="classtvm_1_1TypeDataNode_1a350a23efc88be1def5b93d27ac6fa88b" kindref="member">type_vars</ref>;</highlight></codeline>
+<codeline lineno="115" refid="classtvm_1_1TypeDataNode_1a4b8e6e09856e514b91586223d48fd117" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="classtvm_1_1Array" kindref="compound">Array&lt;Constructor&gt;</ref><sp/><ref refid="classtvm_1_1TypeDataNode_1a4b8e6e09856e514b91586223d48fd117" kindref="member">constructors</ref>;</highlight></codeline>
+<codeline lineno="116"><highlight class="normal"></highlight></codeline>
+<codeline lineno="117" refid="classtvm_1_1TypeDataNode_1aa8db517fa4778bf6c3f2106133fba7d5" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classtvm_1_1TypeDataNode_1aa8db517fa4778bf6c3f2106133fba7d5" kindref="member">VisitAttrs</ref>(<ref refid="classtvm_1_1AttrVisitor" kindref="compound">AttrVisitor</ref>*<sp/>v)<sp/>{</highlight></codeline>
+<codeline lineno="118"><highlight class="normal"><sp/><sp/><sp/><sp/>v-&gt;Visit(</highlight><highlight class="stringliteral">&quot;header&quot;</highlight><highlight class="normal">,<sp/>&amp;header);</highlight></codeline>
+<codeline lineno="119"><highlight class="normal"><sp/><sp/><sp/><sp/>v-&gt;Visit(</highlight><highlight class="stringliteral">&quot;type_vars&quot;</highlight><highlight class="normal">,<sp/>&amp;type_vars);</highlight></codeline>
+<codeline lineno="120"><highlight class="normal"><sp/><sp/><sp/><sp/>v-&gt;Visit(</highlight><highlight class="stringliteral">&quot;constructors&quot;</highlight><highlight class="normal">,<sp/>&amp;constructors);</highlight></codeline>
+<codeline lineno="121"><highlight class="normal"><sp/><sp/><sp/><sp/>v-&gt;Visit(</highlight><highlight class="stringliteral">&quot;span&quot;</highlight><highlight class="normal">,<sp/>&amp;<ref refid="classtvm_1_1RelayExprNode_1a904ae50be0b72eab079bed93829c9563" kindref="member">span</ref>);</highlight></codeline>
+<codeline lineno="122"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="123"><highlight class="normal"></highlight></codeline>
+<codeline lineno="124" refid="classtvm_1_1TypeDataNode_1ab7ebb91263a4262e63910ae4bfc8deb7" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classtvm_1_1TypeDataNode_1ab7ebb91263a4262e63910ae4bfc8deb7" kindref="member">SEqualReduce</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classtvm_1_1TypeDataNode" kindref="compound">TypeDataNode</ref>*<sp/>other,<sp/><ref refid="classtvm_1_1SEqualReducer" kindref="compound">SEqualReducer</ref><sp/><ref refid="namespacetopi_1ae10e1fb8c765a9ae15c12f45199375b3" kindref="member">equal</ref>)</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="125"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="126"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>equal.<ref refid="classtvm_1_1SEqualReducer_1a62ba4c55928d4886853f9c33f4147340" kindref="member">DefEqual</ref>(header,<sp/>other-&gt;<ref refid="classtvm_1_1TypeDataNode_1a2fe297fe22375fbc180deb003d142ab9" kindref="member">header</ref>)<sp/>&amp;&amp;</highlight></codeline>
+<codeline lineno="127"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>equal.<ref refid="classtvm_1_1SEqualReducer_1a62ba4c55928d4886853f9c33f4147340" kindref="member">DefEqual</ref>(type_vars,<sp/>other-&gt;<ref refid="classtvm_1_1TypeDataNode_1a350a23efc88be1def5b93d27ac6fa88b" kindref="member">type_vars</ref>)<sp/>&amp;&amp;</highlight></codeline>
+<codeline lineno="128"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="namespacetopi_1ae10e1fb8c765a9ae15c12f45199375b3" kindref="member">equal</ref>(constructors,<sp/>other-&gt;<ref refid="classtvm_1_1TypeDataNode_1a4b8e6e09856e514b91586223d48fd117" kindref="member">constructors</ref>);</highlight></codeline>
+<codeline lineno="129"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="130"><highlight class="normal"></highlight></codeline>
+<codeline lineno="131" refid="classtvm_1_1TypeDataNode_1a66e9988584461e9d3d737f32386aeaad" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classtvm_1_1TypeDataNode_1a66e9988584461e9d3d737f32386aeaad" kindref="member">SHashReduce</ref>(<ref refid="classtvm_1_1SHashReducer" kindref="compound">SHashReducer</ref><sp/>hash_reduce)</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="132"><highlight class="normal"><sp/><sp/><sp/><sp/>hash_reduce.<ref refid="classtvm_1_1SHashReducer_1a86a3513ec9866c77c59231663caa28c9" kindref="member">DefHash</ref>(header);</highlight></codeline>
+<codeline lineno="133"><highlight class="normal"><sp/><sp/><sp/><sp/>hash_reduce.<ref refid="classtvm_1_1SHashReducer_1a86a3513ec9866c77c59231663caa28c9" kindref="member">DefHash</ref>(type_vars);</highlight></codeline>
+<codeline lineno="134"><highlight class="normal"><sp/><sp/><sp/><sp/>hash_reduce(constructors);</highlight></codeline>
+<codeline lineno="135"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="136"><highlight class="normal"></highlight></codeline>
+<codeline lineno="137" refid="classtvm_1_1TypeDataNode_1a75183ddef80f36ec7cf91507b858719b" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/>constexpr<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*<sp/><ref refid="classtvm_1_1ConstructorNode_1a41f40e2a99b4f65659a17b62294539fd" kindref="member">_type_key</ref><sp/>=<sp/></highlight><highlight class="stringliteral">&quot;relay.TypeData&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="138"><highlight class="normal"><sp/><sp/><ref refid="classtvm_1_1ConstructorNode_1af21463fd4d36fa74261a95bc7700d2c5" kindref="member">TVM_DECLARE_FINAL_OBJECT_INFO</ref>(<ref refid="classtvm_1_1TypeDataNode" kindref="compound">TypeDataNode</ref>,<sp/><ref refid="classtvm_1_1TypeNode" kindref="compound">TypeNode</ref>);</highlight></codeline>
+<codeline lineno="139"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="140"><highlight class="normal"></highlight></codeline>
+<codeline lineno="152" refid="classtvm_1_1TypeData" refkind="compound"><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classtvm_1_1TypeData" kindref="compound">TypeData</ref><sp/>:<sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/><ref refid="classtvm_1_1Type" kindref="compound">Type</ref><sp/>{</highlight></codeline>
+<codeline lineno="153"><highlight class="normal"><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="160"><highlight class="normal"><sp/><sp/>TVM_DLL<sp/><ref refid="namespacetvm_1_1relay_1a6e725a1cb4c83346e261eac7dc7292a8" kindref="member">TypeData</ref>(<ref refid="classtvm_1_1GlobalTypeVar" kindref="compound">GlobalTypeVar</ref><sp/>header,</highlight></codeline>
+<codeline lineno="161"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classtvm_1_1Array" kindref="compound">Array&lt;TypeVar&gt;</ref><sp/>type_vars,</highlight></codeline>
+<codeline lineno="162"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classtvm_1_1Array" kindref="compound">Array&lt;Constructor&gt;</ref><sp/>constructors);</highlight></codeline>
+<codeline lineno="163"><highlight class="normal"></highlight></codeline>
+<codeline lineno="164"><highlight class="normal"><sp/><sp/><ref refid="object_8h_1ac6e7295a4999e2c8e4a2c990beca887a" kindref="member">TVM_DEFINE_OBJECT_REF_METHODS</ref>(TypeData,<sp/><ref refid="classtvm_1_1Type" kindref="compound">Type</ref>,<sp/><ref refid="classtvm_1_1TypeDataNode" kindref="compound">TypeDataNode</ref>);</highlight></codeline>
+<codeline lineno="165"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="166"><highlight class="normal"></highlight></codeline>
+<codeline lineno="167"><highlight class="normal">}<sp/><sp/></highlight><highlight class="comment">//<sp/>namespace<sp/>tvm</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="168"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/><sp/>//<sp/>TVM_IR_ADT_H_</highlight></codeline>
+    </programlisting>
+    <location file="include/tvm/ir/adt.h"/>
+  </compounddef>
+</doxygen>

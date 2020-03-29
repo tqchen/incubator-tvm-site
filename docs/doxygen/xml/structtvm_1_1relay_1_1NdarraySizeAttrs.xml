@@ -1,0 +1,123 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="structtvm_1_1relay_1_1NdarraySizeAttrs" kind="struct" language="C++" prot="public">
+    <compoundname>tvm::relay::NdarraySizeAttrs</compoundname>
+    <basecompoundref refid="classtvm_1_1AttrsNode" prot="public" virt="non-virtual">tvm::AttrsNode&lt; NdarraySizeAttrs &gt;</basecompoundref>
+    <includes refid="include_2tvm_2relay_2attrs_2transform_8h" local="no">transform.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structtvm_1_1relay_1_1NdarraySizeAttrs_1a58d630300fa3ce26c47a6ba7a7362fab" prot="public" static="no" mutable="no">
+        <type><ref refid="namespacetvm_1a41918af1a1dc386388639a9d3ad06c5d" kindref="member">DataType</ref></type>
+        <definition>DataType tvm::relay::NdarraySizeAttrs::dtype</definition>
+        <argsstring></argsstring>
+        <name>dtype</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/relay/attrs/transform.h" line="293" column="1" bodyfile="include/tvm/relay/attrs/transform.h" bodystart="293" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="structtvm_1_1relay_1_1NdarraySizeAttrs_1a827a1ea4525dba657390f53afe85e4c5" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>tvm::relay::NdarraySizeAttrs::TVM_DECLARE_ATTRS</definition>
+        <argsstring>(NdarraySizeAttrs,&quot;relay.attrs.NdarraySizeAttrs&quot;)</argsstring>
+        <name>TVM_DECLARE_ATTRS</name>
+        <param>
+          <type><ref refid="structtvm_1_1relay_1_1NdarraySizeAttrs" kindref="compound">NdarraySizeAttrs</ref></type>
+        </param>
+        <param>
+          <type>&quot;relay.attrs.NdarraySizeAttrs&quot;</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/relay/attrs/transform.h" line="295" column="1" bodyfile="include/tvm/relay/attrs/transform.h" bodystart="295" bodyend="299"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Attributes for ndarray_size operator. </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="5829">
+        <label>tvm::BaseAttrsNode</label>
+        <link refid="classtvm_1_1BaseAttrsNode"/>
+        <childnode refid="5830" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="5828">
+        <label>tvm::AttrsNode&lt; NdarraySizeAttrs &gt;</label>
+        <link refid="classtvm_1_1AttrsNode"/>
+        <childnode refid="5829" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="5830">
+        <label>Object</label>
+      </node>
+      <node id="5827">
+        <label>tvm::relay::NdarraySizeAttrs</label>
+        <link refid="structtvm_1_1relay_1_1NdarraySizeAttrs"/>
+        <childnode refid="5828" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="5833">
+        <label>tvm::BaseAttrsNode</label>
+        <link refid="classtvm_1_1BaseAttrsNode"/>
+        <childnode refid="5834" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="5832">
+        <label>tvm::AttrsNode&lt; NdarraySizeAttrs &gt;</label>
+        <link refid="classtvm_1_1AttrsNode"/>
+        <childnode refid="5833" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="5834">
+        <label>Object</label>
+      </node>
+      <node id="5835">
+        <label>tvm::runtime::DataType</label>
+        <link refid="classtvm_1_1runtime_1_1DataType"/>
+      </node>
+      <node id="5831">
+        <label>tvm::relay::NdarraySizeAttrs</label>
+        <link refid="structtvm_1_1relay_1_1NdarraySizeAttrs"/>
+        <childnode refid="5832" relation="public-inheritance">
+        </childnode>
+        <childnode refid="5835" relation="usage">
+          <edgelabel>+dtype</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="include/tvm/relay/attrs/transform.h" line="292" column="1" bodyfile="include/tvm/relay/attrs/transform.h" bodystart="292" bodyend="300"/>
+    <listofallmembers>
+      <member refid="classtvm_1_1BaseAttrsNode_1ad812afdb028fe3944a80cd922dceff82" prot="public" virt="non-virtual"><scope>tvm::relay::NdarraySizeAttrs</scope><name>_type_has_method_sequal_reduce</name></member>
+      <member refid="classtvm_1_1BaseAttrsNode_1ad85f4aca5e8840d23851c0c07acd0862" prot="public" virt="non-virtual"><scope>tvm::relay::NdarraySizeAttrs</scope><name>_type_has_method_shash_reduce</name></member>
+      <member refid="classtvm_1_1BaseAttrsNode_1a8e4fd4e728774e0556cda84b0c2b80d6" prot="public" virt="non-virtual"><scope>tvm::relay::NdarraySizeAttrs</scope><name>_type_key</name></member>
+      <member refid="classtvm_1_1AttrsNode_1a7f609d3a1b52df0b442793f043cc49ae" prot="public" virt="virtual"><scope>tvm::relay::NdarraySizeAttrs</scope><name>ContentEqual</name></member>
+      <member refid="classtvm_1_1AttrsNode_1abe3e0fd8559c5d446a136490d4dbee12" prot="public" virt="virtual"><scope>tvm::relay::NdarraySizeAttrs</scope><name>ContentHash</name></member>
+      <member refid="structtvm_1_1relay_1_1NdarraySizeAttrs_1a58d630300fa3ce26c47a6ba7a7362fab" prot="public" virt="non-virtual"><scope>tvm::relay::NdarraySizeAttrs</scope><name>dtype</name></member>
+      <member refid="classtvm_1_1AttrsNode_1acfba199ef906818f35432d2e5532559a" prot="public" virt="virtual"><scope>tvm::relay::NdarraySizeAttrs</scope><name>InitByPackedArgs</name></member>
+      <member refid="classtvm_1_1BaseAttrsNode_1aef9e5266d16e163ccc7b1b16c1ea3269" prot="public" virt="non-virtual"><scope>tvm::relay::NdarraySizeAttrs</scope><name>InitBySeq</name></member>
+      <member refid="classtvm_1_1AttrsNode_1acefe615381b5d881870af9db7ce6a981" prot="public" virt="virtual"><scope>tvm::relay::NdarraySizeAttrs</scope><name>ListFieldInfo</name></member>
+      <member refid="classtvm_1_1BaseAttrsNode_1a118837841487c80b157dbead88f18513" prot="public" virt="non-virtual"><scope>tvm::relay::NdarraySizeAttrs</scope><name>PrintDocString</name></member>
+      <member refid="classtvm_1_1AttrsNode_1af8192054af4e2797953cc7b67625092f" prot="public" virt="non-virtual"><scope>tvm::relay::NdarraySizeAttrs</scope><name>SEqualReduce</name></member>
+      <member refid="classtvm_1_1AttrsNode_1ad6cc4d8a955e30b9f55c0b5367ccce38" prot="public" virt="non-virtual"><scope>tvm::relay::NdarraySizeAttrs</scope><name>SHashReduce</name></member>
+      <member refid="structtvm_1_1relay_1_1NdarraySizeAttrs_1a827a1ea4525dba657390f53afe85e4c5" prot="public" virt="non-virtual"><scope>tvm::relay::NdarraySizeAttrs</scope><name>TVM_DECLARE_ATTRS</name></member>
+      <member refid="classtvm_1_1BaseAttrsNode_1aaca524319f015a18a1385cfea5ba8895" prot="public" virt="non-virtual"><scope>tvm::relay::NdarraySizeAttrs</scope><name>TVM_DECLARE_BASE_OBJECT_INFO</name></member>
+      <member refid="classtvm_1_1BaseAttrsNode_1a257561dad74174cbdc08f6725a45d8ac" prot="public" virt="non-virtual"><scope>tvm::relay::NdarraySizeAttrs</scope><name>TVMArgs</name></member>
+      <member refid="classtvm_1_1BaseAttrsNode_1a1f56f080d0c1fab79d9469029aef8ebb" prot="public" virt="non-virtual"><scope>tvm::relay::NdarraySizeAttrs</scope><name>TVMRetValue</name></member>
+      <member refid="classtvm_1_1AttrsNode_1a5da687ced06b4f2dfa04b142a34a9c72" prot="public" virt="virtual"><scope>tvm::relay::NdarraySizeAttrs</scope><name>VisitAttrs</name></member>
+      <member refid="classtvm_1_1AttrsNode_1acd05137ba529ac7cd07053e3da885205" prot="public" virt="virtual"><scope>tvm::relay::NdarraySizeAttrs</scope><name>VisitNonDefaultAttrs</name></member>
+      <member refid="classtvm_1_1BaseAttrsNode_1a225581a40231b2de219da30fced428a2" prot="public" virt="virtual"><scope>tvm::relay::NdarraySizeAttrs</scope><name>~BaseAttrsNode</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

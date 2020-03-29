@@ -1,0 +1,120 @@
+\hypertarget{classtvm_1_1GlobalTypeVarNode}{}\section{tvm\+:\+:Global\+Type\+Var\+Node Class Reference}
+\label{classtvm_1_1GlobalTypeVarNode}\index{tvm\+::\+Global\+Type\+Var\+Node@{tvm\+::\+Global\+Type\+Var\+Node}}
+
+
+A global type variable that is used for defining new types or type aliases.  
+
+
+
+
+{\ttfamily \#include $<$type.\+h$>$}
+
+
+
+Inheritance diagram for tvm\+:\+:Global\+Type\+Var\+Node\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=285pt]{classtvm_1_1GlobalTypeVarNode__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for tvm\+:\+:Global\+Type\+Var\+Node\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=337pt]{classtvm_1_1GlobalTypeVarNode__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{classtvm_1_1GlobalTypeVarNode_ad0db6587dd6fb6be938680d52d28d9ac}{Visit\+Attrs} (\hyperlink{classtvm_1_1AttrVisitor}{Attr\+Visitor} $\ast$v)
+\item 
+bool \hyperlink{classtvm_1_1GlobalTypeVarNode_a5c1bfa6eb261fff74b4419de27520497}{S\+Equal\+Reduce} (const \hyperlink{classtvm_1_1GlobalTypeVarNode}{Global\+Type\+Var\+Node} $\ast$other, \hyperlink{classtvm_1_1SEqualReducer}{S\+Equal\+Reducer} equal) const 
+\item 
+void \hyperlink{classtvm_1_1GlobalTypeVarNode_aa885581e4b82ff1cb8b0e77372b462f1}{S\+Hash\+Reduce} (\hyperlink{classtvm_1_1SHashReducer}{S\+Hash\+Reducer} hash\+\_\+reduce) const 
+\item 
+\hyperlink{classtvm_1_1GlobalTypeVarNode_aa040d458ec687c7e2fd9b73a2528adc9}{T\+V\+M\+\_\+\+D\+E\+C\+L\+A\+R\+E\+\_\+\+F\+I\+N\+A\+L\+\_\+\+O\+B\+J\+E\+C\+T\+\_\+\+I\+N\+FO} (\hyperlink{classtvm_1_1GlobalTypeVarNode}{Global\+Type\+Var\+Node}, \hyperlink{classtvm_1_1TypeNode}{Type\+Node})
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+std\+::string \hyperlink{classtvm_1_1GlobalTypeVarNode_a9a4ba707c819bf2e29d9b58c72047a1b}{name\+\_\+hint}
+\begin{DoxyCompactList}\small\item\em The name of the variable, this only acts as a hint to the user, and is not used for equality. \end{DoxyCompactList}\item 
+\hyperlink{namespacetvm_acd267f8d7f55da6ac681239831963279}{Type\+Kind} \hyperlink{classtvm_1_1GlobalTypeVarNode_a335e232894a68cc1e0ecb766bf4053c7}{kind}
+\begin{DoxyCompactList}\small\item\em The kind of type parameter. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static constexpr const char $\ast$ \hyperlink{classtvm_1_1GlobalTypeVarNode_af82257e44561e9f8267bacfda2ecc854}{\+\_\+type\+\_\+key} = \char`\"{}Global\+Type\+Var\char`\"{}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+A global type variable that is used for defining new types or type aliases. 
+
+\begin{DoxySeeAlso}{See also}
+\hyperlink{classtvm_1_1GlobalTypeVar}{Global\+Type\+Var} 
+\end{DoxySeeAlso}
+
+
+\subsection{Member Function Documentation}
+\index{tvm\+::\+Global\+Type\+Var\+Node@{tvm\+::\+Global\+Type\+Var\+Node}!S\+Equal\+Reduce@{S\+Equal\+Reduce}}
+\index{S\+Equal\+Reduce@{S\+Equal\+Reduce}!tvm\+::\+Global\+Type\+Var\+Node@{tvm\+::\+Global\+Type\+Var\+Node}}
+\subsubsection[{\texorpdfstring{S\+Equal\+Reduce(const Global\+Type\+Var\+Node $\ast$other, S\+Equal\+Reducer equal) const }{SEqualReduce(const GlobalTypeVarNode *other, SEqualReducer equal) const }}]{\setlength{\rightskip}{0pt plus 5cm}bool tvm\+::\+Global\+Type\+Var\+Node\+::\+S\+Equal\+Reduce (
+\begin{DoxyParamCaption}
+\item[{const {\bf Global\+Type\+Var\+Node} $\ast$}]{other, }
+\item[{{\bf S\+Equal\+Reducer}}]{equal}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classtvm_1_1GlobalTypeVarNode_a5c1bfa6eb261fff74b4419de27520497}{}\label{classtvm_1_1GlobalTypeVarNode_a5c1bfa6eb261fff74b4419de27520497}
+\index{tvm\+::\+Global\+Type\+Var\+Node@{tvm\+::\+Global\+Type\+Var\+Node}!S\+Hash\+Reduce@{S\+Hash\+Reduce}}
+\index{S\+Hash\+Reduce@{S\+Hash\+Reduce}!tvm\+::\+Global\+Type\+Var\+Node@{tvm\+::\+Global\+Type\+Var\+Node}}
+\subsubsection[{\texorpdfstring{S\+Hash\+Reduce(\+S\+Hash\+Reducer hash\+\_\+reduce) const }{SHashReduce(SHashReducer hash_reduce) const }}]{\setlength{\rightskip}{0pt plus 5cm}void tvm\+::\+Global\+Type\+Var\+Node\+::\+S\+Hash\+Reduce (
+\begin{DoxyParamCaption}
+\item[{{\bf S\+Hash\+Reducer}}]{hash\+\_\+reduce}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classtvm_1_1GlobalTypeVarNode_aa885581e4b82ff1cb8b0e77372b462f1}{}\label{classtvm_1_1GlobalTypeVarNode_aa885581e4b82ff1cb8b0e77372b462f1}
+\index{tvm\+::\+Global\+Type\+Var\+Node@{tvm\+::\+Global\+Type\+Var\+Node}!T\+V\+M\+\_\+\+D\+E\+C\+L\+A\+R\+E\+\_\+\+F\+I\+N\+A\+L\+\_\+\+O\+B\+J\+E\+C\+T\+\_\+\+I\+N\+FO@{T\+V\+M\+\_\+\+D\+E\+C\+L\+A\+R\+E\+\_\+\+F\+I\+N\+A\+L\+\_\+\+O\+B\+J\+E\+C\+T\+\_\+\+I\+N\+FO}}
+\index{T\+V\+M\+\_\+\+D\+E\+C\+L\+A\+R\+E\+\_\+\+F\+I\+N\+A\+L\+\_\+\+O\+B\+J\+E\+C\+T\+\_\+\+I\+N\+FO@{T\+V\+M\+\_\+\+D\+E\+C\+L\+A\+R\+E\+\_\+\+F\+I\+N\+A\+L\+\_\+\+O\+B\+J\+E\+C\+T\+\_\+\+I\+N\+FO}!tvm\+::\+Global\+Type\+Var\+Node@{tvm\+::\+Global\+Type\+Var\+Node}}
+\subsubsection[{\texorpdfstring{T\+V\+M\+\_\+\+D\+E\+C\+L\+A\+R\+E\+\_\+\+F\+I\+N\+A\+L\+\_\+\+O\+B\+J\+E\+C\+T\+\_\+\+I\+N\+F\+O(\+Global\+Type\+Var\+Node, Type\+Node)}{TVM_DECLARE_FINAL_OBJECT_INFO(GlobalTypeVarNode, TypeNode)}}]{\setlength{\rightskip}{0pt plus 5cm}tvm\+::\+Global\+Type\+Var\+Node\+::\+T\+V\+M\+\_\+\+D\+E\+C\+L\+A\+R\+E\+\_\+\+F\+I\+N\+A\+L\+\_\+\+O\+B\+J\+E\+C\+T\+\_\+\+I\+N\+FO (
+\begin{DoxyParamCaption}
+\item[{{\bf Global\+Type\+Var\+Node}}]{, }
+\item[{{\bf Type\+Node}}]{}
+\end{DoxyParamCaption}
+)}\hypertarget{classtvm_1_1GlobalTypeVarNode_aa040d458ec687c7e2fd9b73a2528adc9}{}\label{classtvm_1_1GlobalTypeVarNode_aa040d458ec687c7e2fd9b73a2528adc9}
+\index{tvm\+::\+Global\+Type\+Var\+Node@{tvm\+::\+Global\+Type\+Var\+Node}!Visit\+Attrs@{Visit\+Attrs}}
+\index{Visit\+Attrs@{Visit\+Attrs}!tvm\+::\+Global\+Type\+Var\+Node@{tvm\+::\+Global\+Type\+Var\+Node}}
+\subsubsection[{\texorpdfstring{Visit\+Attrs(\+Attr\+Visitor $\ast$v)}{VisitAttrs(AttrVisitor *v)}}]{\setlength{\rightskip}{0pt plus 5cm}void tvm\+::\+Global\+Type\+Var\+Node\+::\+Visit\+Attrs (
+\begin{DoxyParamCaption}
+\item[{{\bf Attr\+Visitor} $\ast$}]{v}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classtvm_1_1GlobalTypeVarNode_ad0db6587dd6fb6be938680d52d28d9ac}{}\label{classtvm_1_1GlobalTypeVarNode_ad0db6587dd6fb6be938680d52d28d9ac}
+
+
+\subsection{Member Data Documentation}
+\index{tvm\+::\+Global\+Type\+Var\+Node@{tvm\+::\+Global\+Type\+Var\+Node}!\+\_\+type\+\_\+key@{\+\_\+type\+\_\+key}}
+\index{\+\_\+type\+\_\+key@{\+\_\+type\+\_\+key}!tvm\+::\+Global\+Type\+Var\+Node@{tvm\+::\+Global\+Type\+Var\+Node}}
+\subsubsection[{\texorpdfstring{\+\_\+type\+\_\+key}{_type_key}}]{\setlength{\rightskip}{0pt plus 5cm}constexpr const char$\ast$ tvm\+::\+Global\+Type\+Var\+Node\+::\+\_\+type\+\_\+key = \char`\"{}Global\+Type\+Var\char`\"{}\hspace{0.3cm}{\ttfamily [static]}}\hypertarget{classtvm_1_1GlobalTypeVarNode_af82257e44561e9f8267bacfda2ecc854}{}\label{classtvm_1_1GlobalTypeVarNode_af82257e44561e9f8267bacfda2ecc854}
+\index{tvm\+::\+Global\+Type\+Var\+Node@{tvm\+::\+Global\+Type\+Var\+Node}!kind@{kind}}
+\index{kind@{kind}!tvm\+::\+Global\+Type\+Var\+Node@{tvm\+::\+Global\+Type\+Var\+Node}}
+\subsubsection[{\texorpdfstring{kind}{kind}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Type\+Kind} tvm\+::\+Global\+Type\+Var\+Node\+::kind}\hypertarget{classtvm_1_1GlobalTypeVarNode_a335e232894a68cc1e0ecb766bf4053c7}{}\label{classtvm_1_1GlobalTypeVarNode_a335e232894a68cc1e0ecb766bf4053c7}
+
+
+The kind of type parameter. 
+
+\index{tvm\+::\+Global\+Type\+Var\+Node@{tvm\+::\+Global\+Type\+Var\+Node}!name\+\_\+hint@{name\+\_\+hint}}
+\index{name\+\_\+hint@{name\+\_\+hint}!tvm\+::\+Global\+Type\+Var\+Node@{tvm\+::\+Global\+Type\+Var\+Node}}
+\subsubsection[{\texorpdfstring{name\+\_\+hint}{name_hint}}]{\setlength{\rightskip}{0pt plus 5cm}std\+::string tvm\+::\+Global\+Type\+Var\+Node\+::name\+\_\+hint}\hypertarget{classtvm_1_1GlobalTypeVarNode_a9a4ba707c819bf2e29d9b58c72047a1b}{}\label{classtvm_1_1GlobalTypeVarNode_a9a4ba707c819bf2e29d9b58c72047a1b}
+
+
+The name of the variable, this only acts as a hint to the user, and is not used for equality. 
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+include/tvm/ir/\hyperlink{ir_2type_8h}{type.\+h}\end{DoxyCompactItemize}

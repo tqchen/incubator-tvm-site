@@ -1,0 +1,125 @@
+\hypertarget{classtvm_1_1tir_1_1SizeVar}{}\section{tvm\+:\+:tir\+:\+:Size\+Var Class Reference}
+\label{classtvm_1_1tir_1_1SizeVar}\index{tvm\+::tir\+::\+Size\+Var@{tvm\+::tir\+::\+Size\+Var}}
+
+
+a named variable represents a tensor index size  
+
+
+
+
+{\ttfamily \#include $<$expr.\+h$>$}
+
+
+
+Inheritance diagram for tvm\+:\+:tir\+:\+:Size\+Var\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{classtvm_1_1tir_1_1SizeVar__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for tvm\+:\+:tir\+:\+:Size\+Var\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{classtvm_1_1tir_1_1SizeVar__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+using \hyperlink{classtvm_1_1tir_1_1SizeVar_a3782dc98fd7c52a22a022ae25d5159a0}{Container\+Type} = \hyperlink{classtvm_1_1tir_1_1SizeVarNode}{Size\+Var\+Node}
+\begin{DoxyCompactList}\small\item\em type indicate the container type \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classtvm_1_1tir_1_1SizeVar_ac470249315d9e395ad581d35dd5dcb05}{Size\+Var} (Object\+Ptr$<$ Object $>$ n)
+\item 
+\hyperlink{classtvm_1_1tir_1_1SizeVar_ab21b06f0b20c25578afc631f061cabe0}{Size\+Var} (std\+::string name\+\_\+hint=\char`\"{}s\char`\"{}, Data\+Type t=\hyperlink{classtvm_1_1runtime_1_1DataType_ab45f13dd70d982d9f977c79b6f7fac98}{Data\+Type\+::\+Int}(32))
+\begin{DoxyCompactList}\small\item\em constructor \end{DoxyCompactList}\item 
+const \hyperlink{classtvm_1_1tir_1_1SizeVarNode}{Size\+Var\+Node} $\ast$ \hyperlink{classtvm_1_1tir_1_1SizeVar_a06c7fc40327fa00ebe625872b8587b0a}{operator-\/$>$} () const 
+\begin{DoxyCompactList}\small\item\em Get pointer to the internal value. \end{DoxyCompactList}\item 
+const \hyperlink{classtvm_1_1tir_1_1SizeVarNode}{Size\+Var\+Node} $\ast$ \hyperlink{classtvm_1_1tir_1_1SizeVar_a0dbc4e08fa1f13432b8e1ca0f4c43cfd}{get} () const 
+\begin{DoxyCompactList}\small\item\em Get pointer to the internal value. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+a named variable represents a tensor index size 
+
+\subsection{Member Typedef Documentation}
+\index{tvm\+::tir\+::\+Size\+Var@{tvm\+::tir\+::\+Size\+Var}!Container\+Type@{Container\+Type}}
+\index{Container\+Type@{Container\+Type}!tvm\+::tir\+::\+Size\+Var@{tvm\+::tir\+::\+Size\+Var}}
+\subsubsection[{\texorpdfstring{Container\+Type}{ContainerType}}]{\setlength{\rightskip}{0pt plus 5cm}using {\bf tvm\+::tir\+::\+Size\+Var\+::\+Container\+Type} =  {\bf Size\+Var\+Node}}\hypertarget{classtvm_1_1tir_1_1SizeVar_a3782dc98fd7c52a22a022ae25d5159a0}{}\label{classtvm_1_1tir_1_1SizeVar_a3782dc98fd7c52a22a022ae25d5159a0}
+
+
+type indicate the container type 
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\index{tvm\+::tir\+::\+Size\+Var@{tvm\+::tir\+::\+Size\+Var}!Size\+Var@{Size\+Var}}
+\index{Size\+Var@{Size\+Var}!tvm\+::tir\+::\+Size\+Var@{tvm\+::tir\+::\+Size\+Var}}
+\subsubsection[{\texorpdfstring{Size\+Var(\+Object\+Ptr$<$ Object $>$ n)}{SizeVar(ObjectPtr< Object > n)}}]{\setlength{\rightskip}{0pt plus 5cm}tvm\+::tir\+::\+Size\+Var\+::\+Size\+Var (
+\begin{DoxyParamCaption}
+\item[{Object\+Ptr$<$ Object $>$}]{n}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [explicit]}}\hypertarget{classtvm_1_1tir_1_1SizeVar_ac470249315d9e395ad581d35dd5dcb05}{}\label{classtvm_1_1tir_1_1SizeVar_ac470249315d9e395ad581d35dd5dcb05}
+\index{tvm\+::tir\+::\+Size\+Var@{tvm\+::tir\+::\+Size\+Var}!Size\+Var@{Size\+Var}}
+\index{Size\+Var@{Size\+Var}!tvm\+::tir\+::\+Size\+Var@{tvm\+::tir\+::\+Size\+Var}}
+\subsubsection[{\texorpdfstring{Size\+Var(std\+::string name\+\_\+hint=""s"", Data\+Type t=\+Data\+Type\+::\+Int(32))}{SizeVar(std::string name_hint="s", DataType t=DataType::Int(32))}}]{\setlength{\rightskip}{0pt plus 5cm}tvm\+::tir\+::\+Size\+Var\+::\+Size\+Var (
+\begin{DoxyParamCaption}
+\item[{std\+::string}]{name\+\_\+hint = {\ttfamily \char`\"{}s\char`\"{}}, }
+\item[{{\bf Data\+Type}}]{t = {\ttfamily {\bf Data\+Type\+::\+Int}(32)}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [explicit]}}\hypertarget{classtvm_1_1tir_1_1SizeVar_ab21b06f0b20c25578afc631f061cabe0}{}\label{classtvm_1_1tir_1_1SizeVar_ab21b06f0b20c25578afc631f061cabe0}
+
+
+constructor 
+
+
+\begin{DoxyParams}{Parameters}
+{\em name\+\_\+hint} & variable name \\
+\hline
+{\em t} & data type \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\index{tvm\+::tir\+::\+Size\+Var@{tvm\+::tir\+::\+Size\+Var}!get@{get}}
+\index{get@{get}!tvm\+::tir\+::\+Size\+Var@{tvm\+::tir\+::\+Size\+Var}}
+\subsubsection[{\texorpdfstring{get() const }{get() const }}]{\setlength{\rightskip}{0pt plus 5cm}const {\bf Size\+Var\+Node}$\ast$ tvm\+::tir\+::\+Size\+Var\+::get (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classtvm_1_1tir_1_1SizeVar_a0dbc4e08fa1f13432b8e1ca0f4c43cfd}{}\label{classtvm_1_1tir_1_1SizeVar_a0dbc4e08fa1f13432b8e1ca0f4c43cfd}
+
+
+Get pointer to the internal value. 
+
+\begin{DoxyReturn}{Returns}
+the corresponding Variable. 
+\end{DoxyReturn}
+\index{tvm\+::tir\+::\+Size\+Var@{tvm\+::tir\+::\+Size\+Var}!operator-\/$>$@{operator-\/$>$}}
+\index{operator-\/$>$@{operator-\/$>$}!tvm\+::tir\+::\+Size\+Var@{tvm\+::tir\+::\+Size\+Var}}
+\subsubsection[{\texorpdfstring{operator-\/$>$() const }{operator->() const }}]{\setlength{\rightskip}{0pt plus 5cm}const {\bf Size\+Var\+Node}$\ast$ tvm\+::tir\+::\+Size\+Var\+::operator-\/$>$ (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classtvm_1_1tir_1_1SizeVar_a06c7fc40327fa00ebe625872b8587b0a}{}\label{classtvm_1_1tir_1_1SizeVar_a06c7fc40327fa00ebe625872b8587b0a}
+
+
+Get pointer to the internal value. 
+
+\begin{DoxyReturn}{Returns}
+the corresponding Variable. 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+include/tvm/tir/\hyperlink{tir_2expr_8h}{expr.\+h}\end{DoxyCompactItemize}

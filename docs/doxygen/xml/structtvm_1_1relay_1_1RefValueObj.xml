@@ -1,0 +1,130 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="structtvm_1_1relay_1_1RefValueObj" kind="struct" language="C++" prot="public">
+    <compoundname>tvm::relay::RefValueObj</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">Object</basecompoundref>
+    <includes refid="interpreter_8h" local="no">interpreter.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structtvm_1_1relay_1_1RefValueObj_1a69b5520ce0105cf0fa082f31660d4245" prot="public" static="no" mutable="yes">
+        <type>ObjectRef</type>
+        <definition>ObjectRef tvm::relay::RefValueObj::value</definition>
+        <argsstring></argsstring>
+        <name>value</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/relay/interpreter.h" line="129" column="1" bodyfile="include/tvm/relay/interpreter.h" bodystart="129" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-attrib">
+      <memberdef kind="variable" id="structtvm_1_1relay_1_1RefValueObj_1af24ec90da8c25eb7e400ab432147deae" prot="public" static="yes" mutable="no">
+        <type>constexpr const char *</type>
+        <definition>constexpr const char* tvm::relay::RefValueObj::_type_key</definition>
+        <argsstring></argsstring>
+        <name>_type_key</name>
+        <initializer>= &quot;relay.RefValue&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/relay/interpreter.h" line="137" column="1" bodyfile="include/tvm/relay/interpreter.h" bodystart="137" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="structtvm_1_1relay_1_1RefValueObj_1ab78c67945509950f453e51c6f9ddeb96" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>tvm::relay::RefValueObj::RefValueObj</definition>
+        <argsstring>()</argsstring>
+        <name>RefValueObj</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/relay/interpreter.h" line="131" column="1" bodyfile="include/tvm/relay/interpreter.h" bodystart="131" bodyend="131"/>
+      </memberdef>
+      <memberdef kind="function" id="structtvm_1_1relay_1_1RefValueObj_1a33d9d47dac60dde31a80e3d6c433fec8" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void tvm::relay::RefValueObj::VisitAttrs</definition>
+        <argsstring>(tvm::AttrVisitor *v)</argsstring>
+        <name>VisitAttrs</name>
+        <param>
+          <type><ref refid="classtvm_1_1AttrVisitor" kindref="compound">tvm::AttrVisitor</ref> *</type>
+          <declname>v</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/relay/interpreter.h" line="133" column="1" bodyfile="include/tvm/relay/interpreter.h" bodystart="133" bodyend="135"/>
+      </memberdef>
+      <memberdef kind="function" id="structtvm_1_1relay_1_1RefValueObj_1a8fafd42269c79f64cf1dbacd01dd73a7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>tvm::relay::RefValueObj::TVM_DECLARE_FINAL_OBJECT_INFO</definition>
+        <argsstring>(RefValueObj, Object)</argsstring>
+        <name>TVM_DECLARE_FINAL_OBJECT_INFO</name>
+        <param>
+          <type><ref refid="structtvm_1_1relay_1_1RefValueObj" kindref="compound">RefValueObj</ref></type>
+        </param>
+        <param>
+          <type>Object</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/relay/interpreter.h" line="138" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="6501">
+        <label>Object</label>
+      </node>
+      <node id="6500">
+        <label>tvm::relay::RefValueObj</label>
+        <link refid="structtvm_1_1relay_1_1RefValueObj"/>
+        <childnode refid="6501" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="6504">
+        <label>ObjectRef</label>
+      </node>
+      <node id="6503">
+        <label>Object</label>
+      </node>
+      <node id="6502">
+        <label>tvm::relay::RefValueObj</label>
+        <link refid="structtvm_1_1relay_1_1RefValueObj"/>
+        <childnode refid="6503" relation="public-inheritance">
+        </childnode>
+        <childnode refid="6504" relation="usage">
+          <edgelabel>+value</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="include/tvm/relay/interpreter.h" line="128" column="1" bodyfile="include/tvm/relay/interpreter.h" bodystart="128" bodyend="139"/>
+    <listofallmembers>
+      <member refid="structtvm_1_1relay_1_1RefValueObj_1af24ec90da8c25eb7e400ab432147deae" prot="public" virt="non-virtual"><scope>tvm::relay::RefValueObj</scope><name>_type_key</name></member>
+      <member refid="structtvm_1_1relay_1_1RefValueObj_1ab78c67945509950f453e51c6f9ddeb96" prot="public" virt="non-virtual"><scope>tvm::relay::RefValueObj</scope><name>RefValueObj</name></member>
+      <member refid="structtvm_1_1relay_1_1RefValueObj_1a8fafd42269c79f64cf1dbacd01dd73a7" prot="public" virt="non-virtual"><scope>tvm::relay::RefValueObj</scope><name>TVM_DECLARE_FINAL_OBJECT_INFO</name></member>
+      <member refid="structtvm_1_1relay_1_1RefValueObj_1a69b5520ce0105cf0fa082f31660d4245" prot="public" virt="non-virtual"><scope>tvm::relay::RefValueObj</scope><name>value</name></member>
+      <member refid="structtvm_1_1relay_1_1RefValueObj_1a33d9d47dac60dde31a80e3d6c433fec8" prot="public" virt="non-virtual"><scope>tvm::relay::RefValueObj</scope><name>VisitAttrs</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

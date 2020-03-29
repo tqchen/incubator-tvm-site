@@ -1,0 +1,221 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="classtvm_1_1BaseExpr" kind="class" language="C++" prot="public">
+    <compoundname>tvm::BaseExpr</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">ObjectRef</basecompoundref>
+    <derivedcompoundref refid="classtvm_1_1PrimExpr" prot="public" virt="non-virtual">tvm::PrimExpr</derivedcompoundref>
+    <derivedcompoundref refid="classtvm_1_1RelayExpr" prot="public" virt="non-virtual">tvm::RelayExpr</derivedcompoundref>
+    <includes refid="ir_2expr_8h" local="no">expr.h</includes>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classtvm_1_1BaseExpr_1aa513c6abed6e5b76c7fc9441649b3e4c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>tvm::BaseExpr::TVM_DEFINE_OBJECT_REF_METHODS</definition>
+        <argsstring>(BaseExpr, ObjectRef, BaseExprNode)</argsstring>
+        <name>TVM_DEFINE_OBJECT_REF_METHODS</name>
+        <param>
+          <type><ref refid="classtvm_1_1BaseExpr" kindref="compound">BaseExpr</ref></type>
+        </param>
+        <param>
+          <type>ObjectRef</type>
+        </param>
+        <param>
+          <type><ref refid="classtvm_1_1BaseExprNode" kindref="compound">BaseExprNode</ref></type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/ir/expr.h" line="57" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Managed reference to <ref refid="classtvm_1_1BaseExprNode" kindref="compound">BaseExprNode</ref>. </para>    </briefdescription>
+    <detaileddescription>
+<para><simplesect kind="see"><para><ref refid="classtvm_1_1BaseExprNode" kindref="compound">BaseExprNode</ref> </para></simplesect>
+</para>    </detaileddescription>
+    <inheritancegraph>
+      <node id="4234">
+        <label>ObjectRef</label>
+      </node>
+      <node id="4239">
+        <label>tvm::tir::StringImm</label>
+        <link refid="classtvm_1_1tir_1_1StringImm"/>
+        <childnode refid="4235" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="4246">
+        <label>tvm::Constructor</label>
+        <link refid="classtvm_1_1Constructor"/>
+        <childnode refid="4242" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="4250">
+        <label>tvm::relay::Constant</label>
+        <link refid="classtvm_1_1relay_1_1Constant"/>
+        <childnode refid="4242" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="4236">
+        <label>tvm::FloatImm</label>
+        <link refid="classtvm_1_1FloatImm"/>
+        <childnode refid="4235" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="4257">
+        <label>tvm::relay::TempExpr</label>
+        <link refid="classtvm_1_1relay_1_1TempExpr"/>
+        <childnode refid="4242" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="4253">
+        <label>tvm::relay::Match</label>
+        <link refid="classtvm_1_1relay_1_1Match"/>
+        <childnode refid="4242" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="4258">
+        <label>tvm::relay::Tuple</label>
+        <link refid="classtvm_1_1relay_1_1Tuple"/>
+        <childnode refid="4242" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="4252">
+        <label>tvm::relay::Let</label>
+        <link refid="classtvm_1_1relay_1_1Let"/>
+        <childnode refid="4242" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="4255">
+        <label>tvm::relay::RefRead</label>
+        <link refid="classtvm_1_1relay_1_1RefRead"/>
+        <childnode refid="4242" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="4251">
+        <label>tvm::relay::If</label>
+        <link refid="classtvm_1_1relay_1_1If"/>
+        <childnode refid="4242" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="4241">
+        <label>tvm::tir::SizeVar</label>
+        <link refid="classtvm_1_1tir_1_1SizeVar"/>
+        <childnode refid="4240" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="4244">
+        <label>tvm::relay::Function</label>
+        <link refid="classtvm_1_1relay_1_1Function"/>
+        <childnode refid="4243" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="4247">
+        <label>tvm::GlobalVar</label>
+        <link refid="classtvm_1_1GlobalVar"/>
+        <childnode refid="4242" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="4235">
+        <label>tvm::PrimExpr</label>
+        <link refid="classtvm_1_1PrimExpr"/>
+        <childnode refid="4233" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="4242">
+        <label>tvm::RelayExpr</label>
+        <link refid="classtvm_1_1RelayExpr"/>
+        <childnode refid="4233" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="4238">
+        <label>tvm::Integer</label>
+        <link refid="classtvm_1_1Integer"/>
+        <childnode refid="4237" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="4233">
+        <label>tvm::BaseExpr</label>
+        <link refid="classtvm_1_1BaseExpr"/>
+        <childnode refid="4234" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="4249">
+        <label>tvm::relay::Call</label>
+        <link refid="classtvm_1_1relay_1_1Call"/>
+        <childnode refid="4242" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="4256">
+        <label>tvm::relay::RefWrite</label>
+        <link refid="classtvm_1_1relay_1_1RefWrite"/>
+        <childnode refid="4242" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="4248">
+        <label>tvm::Op</label>
+        <link refid="classtvm_1_1Op"/>
+        <childnode refid="4242" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="4259">
+        <label>tvm::relay::TupleGetItem</label>
+        <link refid="classtvm_1_1relay_1_1TupleGetItem"/>
+        <childnode refid="4242" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="4260">
+        <label>tvm::relay::Var</label>
+        <link refid="classtvm_1_1relay_1_1Var"/>
+        <childnode refid="4242" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="4240">
+        <label>tvm::tir::Var</label>
+        <link refid="classtvm_1_1tir_1_1Var"/>
+        <childnode refid="4235" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="4243">
+        <label>tvm::BaseFunc</label>
+        <link refid="classtvm_1_1BaseFunc"/>
+        <childnode refid="4242" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="4254">
+        <label>tvm::relay::RefCreate</label>
+        <link refid="classtvm_1_1relay_1_1RefCreate"/>
+        <childnode refid="4242" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="4237">
+        <label>tvm::IntImm</label>
+        <link refid="classtvm_1_1IntImm"/>
+        <childnode refid="4235" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="4245">
+        <label>tvm::tir::PrimFunc</label>
+        <link refid="classtvm_1_1tir_1_1PrimFunc"/>
+        <childnode refid="4243" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="4262">
+        <label>ObjectRef</label>
+      </node>
+      <node id="4261">
+        <label>tvm::BaseExpr</label>
+        <link refid="classtvm_1_1BaseExpr"/>
+        <childnode refid="4262" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="include/tvm/ir/expr.h" line="55" column="1" bodyfile="include/tvm/ir/expr.h" bodystart="55" bodyend="58"/>
+    <listofallmembers>
+      <member refid="classtvm_1_1BaseExpr_1aa513c6abed6e5b76c7fc9441649b3e4c" prot="public" virt="non-virtual"><scope>tvm::BaseExpr</scope><name>TVM_DEFINE_OBJECT_REF_METHODS</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

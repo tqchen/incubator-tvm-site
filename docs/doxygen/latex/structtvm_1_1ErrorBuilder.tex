@@ -1,0 +1,68 @@
+\hypertarget{structtvm_1_1ErrorBuilder}{}\section{tvm\+:\+:Error\+Builder Struct Reference}
+\label{structtvm_1_1ErrorBuilder}\index{tvm\+::\+Error\+Builder@{tvm\+::\+Error\+Builder}}
+
+
+A wrapper around std\+::stringstream to build error.  
+
+
+
+
+{\ttfamily \#include $<$error.\+h$>$}
+
+
+
+Collaboration diagram for tvm\+:\+:Error\+Builder\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=178pt]{structtvm_1_1ErrorBuilder__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\footnotesize template$<$typename T $>$ }\\\hyperlink{structtvm_1_1ErrorBuilder}{Error\+Builder} \& \hyperlink{structtvm_1_1ErrorBuilder_ad40b754d2d8992b65d0bc5b116bd3f71}{operator$<$$<$} (const T \&val)
+\end{DoxyCompactItemize}
+\subsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+class \hyperlink{structtvm_1_1ErrorBuilder_a16d3937baa3679c525821223427be40b}{Error}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+A wrapper around std\+::stringstream to build error. 
+
+Can be consumed by \hyperlink{classtvm_1_1Error}{Error} to construct an error.
+
+
+\begin{DoxyCode}
+\textcolor{keywordtype}{void} ReportError(\textcolor{keyword}{const} \hyperlink{structtvm_1_1ErrorBuilder_a16d3937baa3679c525821223427be40b}{Error}& err);
+
+\textcolor{keywordtype}{void} Test(\textcolor{keywordtype}{int} number) \{
+  \textcolor{comment}{// Use error reporter to construct an error.}
+  ReportError(ErrorBuilder() << \textcolor{stringliteral}{"This is an error number="} << number);
+\}
+\end{DoxyCode}
+ 
+
+\subsection{Member Function Documentation}
+\index{tvm\+::\+Error\+Builder@{tvm\+::\+Error\+Builder}!operator$<$$<$@{operator$<$$<$}}
+\index{operator$<$$<$@{operator$<$$<$}!tvm\+::\+Error\+Builder@{tvm\+::\+Error\+Builder}}
+\subsubsection[{\texorpdfstring{operator$<$$<$(const T \&val)}{operator<<(const T &val)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T $>$ {\bf Error\+Builder}\& tvm\+::\+Error\+Builder\+::operator$<$$<$ (
+\begin{DoxyParamCaption}
+\item[{const T \&}]{val}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{structtvm_1_1ErrorBuilder_ad40b754d2d8992b65d0bc5b116bd3f71}{}\label{structtvm_1_1ErrorBuilder_ad40b754d2d8992b65d0bc5b116bd3f71}
+
+
+\subsection{Friends And Related Function Documentation}
+\index{tvm\+::\+Error\+Builder@{tvm\+::\+Error\+Builder}!Error@{Error}}
+\index{Error@{Error}!tvm\+::\+Error\+Builder@{tvm\+::\+Error\+Builder}}
+\subsubsection[{\texorpdfstring{Error}{Error}}]{\setlength{\rightskip}{0pt plus 5cm}friend class {\bf Error}\hspace{0.3cm}{\ttfamily [friend]}}\hypertarget{structtvm_1_1ErrorBuilder_a16d3937baa3679c525821223427be40b}{}\label{structtvm_1_1ErrorBuilder_a16d3937baa3679c525821223427be40b}
+
+
+The documentation for this struct was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+include/tvm/ir/\hyperlink{error_8h}{error.\+h}\end{DoxyCompactItemize}

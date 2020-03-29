@@ -1,0 +1,186 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="classtvm_1_1relay_1_1TempExprNode" kind="class" language="C++" prot="public" abstract="yes">
+    <compoundname>tvm::relay::TempExprNode</compoundname>
+    <basecompoundref refid="classtvm_1_1RelayExprNode" prot="public" virt="non-virtual">tvm::RelayExprNode</basecompoundref>
+    <includes refid="relay_2expr_8h" local="no">expr.h</includes>
+      <sectiondef kind="public-static-attrib">
+      <memberdef kind="variable" id="classtvm_1_1relay_1_1TempExprNode_1ac084e1c4d6ded06887fb1a2b8837b22c" prot="public" static="yes" mutable="no">
+        <type>constexpr const char *</type>
+        <definition>constexpr const char* tvm::relay::TempExprNode::_type_key</definition>
+        <argsstring></argsstring>
+        <name>_type_key</name>
+        <initializer>= &quot;relay.TempExpr&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/relay/expr.h" line="630" column="1" bodyfile="include/tvm/relay/expr.h" bodystart="630" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classtvm_1_1relay_1_1TempExprNode_1afb013407e0e5b935bd88bb49c23e2d50" prot="public" static="yes" mutable="no">
+        <type>constexpr const bool</type>
+        <definition>constexpr const bool tvm::relay::TempExprNode::_type_has_method_sequal_reduce</definition>
+        <argsstring></argsstring>
+        <name>_type_has_method_sequal_reduce</name>
+        <initializer>= false</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/relay/expr.h" line="631" column="1" bodyfile="include/tvm/relay/expr.h" bodystart="631" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classtvm_1_1relay_1_1TempExprNode_1ad9c7fcdf8928bc7e3ef8ec1f2faf7472" prot="public" static="yes" mutable="no">
+        <type>constexpr const bool</type>
+        <definition>constexpr const bool tvm::relay::TempExprNode::_type_has_method_shash_reduce</definition>
+        <argsstring></argsstring>
+        <name>_type_has_method_shash_reduce</name>
+        <initializer>= false</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/relay/expr.h" line="632" column="1" bodyfile="include/tvm/relay/expr.h" bodystart="632" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classtvm_1_1relay_1_1TempExprNode_1a63fb3788b46327cc15f1cf80bad126ad" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type></type>
+        <definition>virtual tvm::relay::TempExprNode::~TempExprNode</definition>
+        <argsstring>()</argsstring>
+        <name>~TempExprNode</name>
+        <briefdescription>
+<para>virtual destructor </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/relay/expr.h" line="623" column="1" bodyfile="include/tvm/relay/expr.h" bodystart="623" bodyend="623"/>
+      </memberdef>
+      <memberdef kind="function" id="classtvm_1_1relay_1_1TempExprNode_1a96ae81e7b4eac7ff967ff14b43aaba87" prot="public" static="no" const="yes" explicit="no" inline="no" virt="pure-virtual">
+        <type><ref refid="namespacetvm_1_1relay_1a5b84e3790f89bb3fad5c7911eeb99531" kindref="member">Expr</ref></type>
+        <definition>virtual Expr tvm::relay::TempExprNode::Realize</definition>
+        <argsstring>() const =0</argsstring>
+        <name>Realize</name>
+        <briefdescription>
+<para>Convert the expression to a normal(non-temp) Expr. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>The corresponding normal(non-temp) expression. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/relay/expr.h" line="628" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classtvm_1_1relay_1_1TempExprNode_1a96299d26d32ecba0f0975ed531d8ee4b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>tvm::relay::TempExprNode::TVM_DECLARE_BASE_OBJECT_INFO</definition>
+        <argsstring>(TempExprNode, ExprNode)</argsstring>
+        <name>TVM_DECLARE_BASE_OBJECT_INFO</name>
+        <param>
+          <type><ref refid="classtvm_1_1relay_1_1TempExprNode" kindref="compound">TempExprNode</ref></type>
+        </param>
+        <param>
+          <type><ref refid="namespacetvm_1_1relay_1a387f18e050d016c52ea6c4781e7cff6c" kindref="member">ExprNode</ref></type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/relay/expr.h" line="633" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Base class of the temporary expression. </para>    </briefdescription>
+    <detaileddescription>
+<para>TempExprs are pass specific expression that can be useful to define intermediate result in the rewriting pass such as layout or type transformation.</para><para>Subclass <ref refid="classtvm_1_1relay_1_1TempExprNode" kindref="compound">TempExprNode</ref> allows us to pattern match on specific kind of <ref refid="classtvm_1_1relay_1_1TempExpr" kindref="compound">TempExpr</ref> and use them for expression rewriting.</para><para><ref refid="classtvm_1_1relay_1_1TempExpr" kindref="compound">TempExpr</ref> should only be used within a pass, </para>    </detaileddescription>
+    <inheritancegraph>
+      <node id="7133">
+        <label>tvm::BaseExprNode</label>
+        <link refid="classtvm_1_1BaseExprNode"/>
+        <childnode refid="7134" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="7132">
+        <label>ExprNode</label>
+        <link refid="classtvm_1_1RelayExprNode"/>
+        <childnode refid="7133" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="7131">
+        <label>tvm::relay::TempExprNode</label>
+        <link refid="classtvm_1_1relay_1_1TempExprNode"/>
+        <childnode refid="7132" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="7134">
+        <label>Object</label>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="7140">
+        <label>ObjectRef</label>
+      </node>
+      <node id="7137">
+        <label>tvm::BaseExprNode</label>
+        <link refid="classtvm_1_1BaseExprNode"/>
+        <childnode refid="7138" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="7136">
+        <label>ExprNode</label>
+        <link refid="classtvm_1_1RelayExprNode"/>
+        <childnode refid="7137" relation="public-inheritance">
+        </childnode>
+        <childnode refid="7139" relation="usage">
+          <edgelabel>+span</edgelabel>
+        </childnode>
+        <childnode refid="7141" relation="usage">
+          <edgelabel>+checked_type_</edgelabel>
+        </childnode>
+      </node>
+      <node id="7139">
+        <label>tvm::Span</label>
+        <link refid="classtvm_1_1Span"/>
+        <childnode refid="7140" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="7135">
+        <label>tvm::relay::TempExprNode</label>
+        <link refid="classtvm_1_1relay_1_1TempExprNode"/>
+        <childnode refid="7136" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="7138">
+        <label>Object</label>
+      </node>
+      <node id="7141">
+        <label>tvm::Type</label>
+        <link refid="classtvm_1_1Type"/>
+        <childnode refid="7140" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="include/tvm/relay/expr.h" line="620" column="1" bodyfile="include/tvm/relay/expr.h" bodystart="620" bodyend="634"/>
+    <listofallmembers>
+      <member refid="classtvm_1_1relay_1_1TempExprNode_1afb013407e0e5b935bd88bb49c23e2d50" prot="public" virt="non-virtual"><scope>tvm::relay::TempExprNode</scope><name>_type_has_method_sequal_reduce</name></member>
+      <member refid="classtvm_1_1relay_1_1TempExprNode_1ad9c7fcdf8928bc7e3ef8ec1f2faf7472" prot="public" virt="non-virtual"><scope>tvm::relay::TempExprNode</scope><name>_type_has_method_shash_reduce</name></member>
+      <member refid="classtvm_1_1relay_1_1TempExprNode_1ac084e1c4d6ded06887fb1a2b8837b22c" prot="public" virt="non-virtual"><scope>tvm::relay::TempExprNode</scope><name>_type_key</name></member>
+      <member refid="classtvm_1_1RelayExprNode_1a89bfd23e109a842d18240277ffaaa130" prot="public" virt="non-virtual"><scope>tvm::relay::TempExprNode</scope><name>checked_type</name></member>
+      <member refid="classtvm_1_1RelayExprNode_1ae30ca49a8b84288fbc21d5f312f02929" prot="public" virt="non-virtual"><scope>tvm::relay::TempExprNode</scope><name>checked_type_</name></member>
+      <member refid="classtvm_1_1relay_1_1TempExprNode_1a96ae81e7b4eac7ff967ff14b43aaba87" prot="public" virt="pure-virtual"><scope>tvm::relay::TempExprNode</scope><name>Realize</name></member>
+      <member refid="classtvm_1_1RelayExprNode_1a904ae50be0b72eab079bed93829c9563" prot="public" virt="non-virtual"><scope>tvm::relay::TempExprNode</scope><name>span</name></member>
+      <member refid="classtvm_1_1relay_1_1TempExprNode_1a96299d26d32ecba0f0975ed531d8ee4b" prot="public" virt="non-virtual"><scope>tvm::relay::TempExprNode</scope><name>TVM_DECLARE_BASE_OBJECT_INFO</name></member>
+      <member refid="classtvm_1_1RelayExprNode_1a89eb638258551ea1ae2d0e578335474a" prot="public" virt="non-virtual" ambiguityscope="tvm::RelayExprNode::"><scope>tvm::relay::TempExprNode</scope><name>TVM_DECLARE_BASE_OBJECT_INFO</name></member>
+      <member refid="classtvm_1_1BaseExprNode_1a831794c879d47c30cdd9cefd4f05d533" prot="public" virt="non-virtual" ambiguityscope="tvm::BaseExprNode::"><scope>tvm::relay::TempExprNode</scope><name>TVM_DECLARE_BASE_OBJECT_INFO</name></member>
+      <member refid="classtvm_1_1RelayExprNode_1a60c73bac632a728a2a669bb34a1c3008" prot="public" virt="non-virtual"><scope>tvm::relay::TempExprNode</scope><name>type_as</name></member>
+      <member refid="classtvm_1_1relay_1_1TempExprNode_1a63fb3788b46327cc15f1cf80bad126ad" prot="public" virt="virtual"><scope>tvm::relay::TempExprNode</scope><name>~TempExprNode</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

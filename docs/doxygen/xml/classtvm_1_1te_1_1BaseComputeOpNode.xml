@@ -1,0 +1,337 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="classtvm_1_1te_1_1BaseComputeOpNode" kind="class" language="C++" prot="public" abstract="yes">
+    <compoundname>tvm::te::BaseComputeOpNode</compoundname>
+    <basecompoundref refid="classtvm_1_1te_1_1OperationNode" prot="public" virt="non-virtual">tvm::te::OperationNode</basecompoundref>
+    <derivedcompoundref refid="classtvm_1_1te_1_1ComputeOpNode" prot="public" virt="non-virtual">tvm::te::ComputeOpNode</derivedcompoundref>
+    <derivedcompoundref refid="classtvm_1_1te_1_1TensorComputeOpNode" prot="public" virt="non-virtual">tvm::te::TensorComputeOpNode</derivedcompoundref>
+    <includes refid="operation_8h" local="no">operation.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="classtvm_1_1te_1_1BaseComputeOpNode_1a21617a643897727c51ded2b7260df4c3" prot="public" static="no" mutable="no">
+        <type><ref refid="classtvm_1_1Array" kindref="compound">Array</ref>&lt; <ref refid="classtvm_1_1tir_1_1IterVar" kindref="compound">IterVar</ref> &gt;</type>
+        <definition>Array&lt;IterVar&gt; tvm::te::BaseComputeOpNode::axis</definition>
+        <argsstring></argsstring>
+        <name>axis</name>
+        <briefdescription>
+<para>IterVar on each axis. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/te/operation.h" line="216" column="1" bodyfile="include/tvm/te/operation.h" bodystart="216" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classtvm_1_1te_1_1BaseComputeOpNode_1ad0df643468fc148d80afd7116abdd2ac" prot="public" static="no" mutable="no">
+        <type><ref refid="classtvm_1_1Array" kindref="compound">Array</ref>&lt; <ref refid="classtvm_1_1tir_1_1IterVar" kindref="compound">IterVar</ref> &gt;</type>
+        <definition>Array&lt;IterVar&gt; tvm::te::BaseComputeOpNode::reduce_axis</definition>
+        <argsstring></argsstring>
+        <name>reduce_axis</name>
+        <briefdescription>
+<para>IterVar on each reduction axis, if the body is a Reduce. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/te/operation.h" line="218" column="1" bodyfile="include/tvm/te/operation.h" bodystart="218" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-attrib">
+      <memberdef kind="variable" id="classtvm_1_1te_1_1BaseComputeOpNode_1aba03c3b6818ea897ce4f0e544532534a" prot="public" static="yes" mutable="no">
+        <type>constexpr const char *</type>
+        <definition>constexpr const char* tvm::te::BaseComputeOpNode::_type_key</definition>
+        <argsstring></argsstring>
+        <name>_type_key</name>
+        <initializer>= &quot;BaseComputeOp&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/te/operation.h" line="232" column="1" bodyfile="include/tvm/te/operation.h" bodystart="232" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classtvm_1_1te_1_1BaseComputeOpNode_1aab7b5b43122ee14bb00640906267361a" prot="public" static="no" const="yes" explicit="no" inline="no" final="yes" virt="virtual">
+        <type><ref refid="classtvm_1_1Array" kindref="compound">Array</ref>&lt; <ref refid="classtvm_1_1tir_1_1IterVar" kindref="compound">IterVar</ref> &gt;</type>
+        <definition>Array&lt;IterVar&gt; tvm::te::BaseComputeOpNode::root_iter_vars</definition>
+        <argsstring>() const final</argsstring>
+        <name>root_iter_vars</name>
+        <reimplements refid="classtvm_1_1te_1_1OperationNode_1a8d15cfe7d0d721da305c1b36e9f5a914">root_iter_vars</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>The list of iteration variable at root </para></simplesect>
+<simplesect kind="note"><para>root_iter_vars decides the shape of the outputs. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/te/operation.h" line="220" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classtvm_1_1te_1_1BaseComputeOpNode_1acdd22cc7c737d4dc8b6bf86d2f11a0db" prot="public" static="no" const="yes" explicit="no" inline="no" final="yes" virt="virtual">
+        <type><ref refid="classtvm_1_1Array" kindref="compound">Array</ref>&lt; <ref refid="classtvm_1_1PrimExpr" kindref="compound">PrimExpr</ref> &gt;</type>
+        <definition>Array&lt;PrimExpr&gt; tvm::te::BaseComputeOpNode::output_shape</definition>
+        <argsstring>(size_t idx) const final</argsstring>
+        <name>output_shape</name>
+        <reimplements refid="classtvm_1_1te_1_1OperationNode_1a7c4fc476de1543ea65c83e02631bfd09">output_shape</reimplements>
+        <param>
+          <type>size_t</type>
+          <declname>i</declname>
+        </param>
+        <briefdescription>
+<para>Get shape of i-th output tensor. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>i</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The output index. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>shape of i-th output. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/te/operation.h" line="221" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classtvm_1_1te_1_1BaseComputeOpNode_1ad8c5908da3677e4c628f22d3f50c6da1" prot="public" static="no" const="yes" explicit="no" inline="no" final="yes" virt="virtual">
+        <type>void</type>
+        <definition>void tvm::te::BaseComputeOpNode::GatherBound</definition>
+        <argsstring>(const Operation &amp;self, const std::unordered_map&lt; Tensor, TensorDom &gt; &amp;tensor_dom, std::unordered_map&lt; IterVar, Range &gt; *out_dom_map) const final</argsstring>
+        <name>GatherBound</name>
+        <reimplements refid="classtvm_1_1te_1_1OperationNode_1a278d1f242176ff48cc150532a9172aee">GatherBound</reimplements>
+        <param>
+          <type>const <ref refid="classtvm_1_1te_1_1Operation" kindref="compound">Operation</ref> &amp;</type>
+          <declname>self</declname>
+        </param>
+        <param>
+          <type>const std::unordered_map&lt; <ref refid="classtvm_1_1te_1_1Tensor" kindref="compound">Tensor</ref>, <ref refid="structtvm_1_1te_1_1TensorDom" kindref="compound">TensorDom</ref> &gt; &amp;</type>
+          <declname>tensor_dom</declname>
+        </param>
+        <param>
+          <type>std::unordered_map&lt; <ref refid="classtvm_1_1tir_1_1IterVar" kindref="compound">IterVar</ref>, <ref refid="classtvm_1_1Range" kindref="compound">Range</ref> &gt; *</type>
+          <declname>out_dom_map</declname>
+        </param>
+        <briefdescription>
+<para>Gather the bound from output tensor. Set the range of each root_iter_vars in the op to out_dom_map. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>self</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The reference to self. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>tensor_dom</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Domain map of Tensor-&gt;access set of each dimension. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>out_dom_map</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The output domain map of each IterVar to be setted. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/te/operation.h" line="222" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classtvm_1_1te_1_1BaseComputeOpNode_1a0bd84e898355eb941318af78245ca103" prot="public" static="no" const="yes" explicit="no" inline="no" final="yes" virt="virtual">
+        <type><ref refid="classtvm_1_1tir_1_1Stmt" kindref="compound">Stmt</ref></type>
+        <definition>Stmt tvm::te::BaseComputeOpNode::BuildRealize</definition>
+        <argsstring>(const Stage &amp;stage, const std::unordered_map&lt; IterVar, Range &gt; &amp;realize_map, const Stmt &amp;body) const final</argsstring>
+        <name>BuildRealize</name>
+        <reimplements refid="classtvm_1_1te_1_1OperationNode_1afc89a6b2f5e35adf79c3587a95ba283a">BuildRealize</reimplements>
+        <param>
+          <type>const <ref refid="classtvm_1_1te_1_1Stage" kindref="compound">Stage</ref> &amp;</type>
+          <declname>stage</declname>
+        </param>
+        <param>
+          <type>const std::unordered_map&lt; <ref refid="classtvm_1_1tir_1_1IterVar" kindref="compound">IterVar</ref>, <ref refid="classtvm_1_1Range" kindref="compound">Range</ref> &gt; &amp;</type>
+          <declname>realize_map</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classtvm_1_1tir_1_1Stmt" kindref="compound">Stmt</ref> &amp;</type>
+          <declname>body</declname>
+        </param>
+        <briefdescription>
+<para>Build the Realize statement that realizes the op&apos;s output tensors. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>stage</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the op&apos;s stage. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>realize_map</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The realization domain map of the operators. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>body</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The body that is going to get </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>A realization statement that wraps body. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/te/operation.h" line="226" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classtvm_1_1te_1_1BaseComputeOpNode_1afff057b90df28567ab7b2ba19a05b17c" prot="public" static="no" const="yes" explicit="no" inline="no" virt="pure-virtual">
+        <type>size_t</type>
+        <definition>virtual size_t tvm::te::BaseComputeOpNode::num_schedulable_dims</definition>
+        <argsstring>() const =0</argsstring>
+        <name>num_schedulable_dims</name>
+        <reimplementedby refid="classtvm_1_1te_1_1ComputeOpNode_1adafbc09da5da3629aef87a8e5145bdec">num_schedulable_dims</reimplementedby>
+        <reimplementedby refid="classtvm_1_1te_1_1TensorComputeOpNode_1a028a9ae8d9d27abd972b85248c9e3160">num_schedulable_dims</reimplementedby>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/te/operation.h" line="230" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classtvm_1_1te_1_1BaseComputeOpNode_1ae942fa18ddac490a8b5022143b14cf11" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>tvm::te::BaseComputeOpNode::TVM_DECLARE_BASE_OBJECT_INFO</definition>
+        <argsstring>(BaseComputeOpNode, OperationNode)</argsstring>
+        <name>TVM_DECLARE_BASE_OBJECT_INFO</name>
+        <param>
+          <type><ref refid="classtvm_1_1te_1_1BaseComputeOpNode" kindref="compound">BaseComputeOpNode</ref></type>
+        </param>
+        <param>
+          <type><ref refid="classtvm_1_1te_1_1OperationNode" kindref="compound">OperationNode</ref></type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/te/operation.h" line="233" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>A Compute op that compute a tensor on certain domain. This is the base class for ComputeOp (operating on a scalar at a time) and TensorComputeOp (operating on a TensorSlice at a time) </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="4220">
+        <label>tvm::te::BaseComputeOpNode</label>
+        <link refid="classtvm_1_1te_1_1BaseComputeOpNode"/>
+        <childnode refid="4221" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="4223">
+        <label>Object</label>
+      </node>
+      <node id="4221">
+        <label>tvm::te::OperationNode</label>
+        <link refid="classtvm_1_1te_1_1OperationNode"/>
+        <childnode refid="4222" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="4225">
+        <label>tvm::te::TensorComputeOpNode</label>
+        <link refid="classtvm_1_1te_1_1TensorComputeOpNode"/>
+        <childnode refid="4220" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="4224">
+        <label>tvm::te::ComputeOpNode</label>
+        <link refid="classtvm_1_1te_1_1ComputeOpNode"/>
+        <childnode refid="4220" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="4222">
+        <label>tvm::tir::FunctionBaseNode</label>
+        <link refid="classtvm_1_1tir_1_1FunctionBaseNode"/>
+        <childnode refid="4223" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="4231">
+        <label>ObjectRef</label>
+      </node>
+      <node id="4226">
+        <label>tvm::te::BaseComputeOpNode</label>
+        <link refid="classtvm_1_1te_1_1BaseComputeOpNode"/>
+        <childnode refid="4227" relation="public-inheritance">
+        </childnode>
+        <childnode refid="4232" relation="usage">
+          <edgelabel>+axis</edgelabel>
+          <edgelabel>+reduce_axis</edgelabel>
+        </childnode>
+      </node>
+      <node id="4230">
+        <label>tvm::Map&lt; std::string, ObjectRef &gt;</label>
+        <childnode refid="4231" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="4232">
+        <label>tvm::Array&lt; tvm::tir::IterVar &gt;</label>
+        <link refid="classtvm_1_1Array"/>
+        <childnode refid="4231" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="4229">
+        <label>Object</label>
+      </node>
+      <node id="4227">
+        <label>tvm::te::OperationNode</label>
+        <link refid="classtvm_1_1te_1_1OperationNode"/>
+        <childnode refid="4228" relation="public-inheritance">
+        </childnode>
+        <childnode refid="4230" relation="usage">
+          <edgelabel>+attrs</edgelabel>
+        </childnode>
+      </node>
+      <node id="4228">
+        <label>tvm::tir::FunctionBaseNode</label>
+        <link refid="classtvm_1_1tir_1_1FunctionBaseNode"/>
+        <childnode refid="4229" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="include/tvm/te/operation.h" line="213" column="1" bodyfile="include/tvm/te/operation.h" bodystart="213" bodyend="234"/>
+    <listofallmembers>
+      <member refid="classtvm_1_1te_1_1BaseComputeOpNode_1aba03c3b6818ea897ce4f0e544532534a" prot="public" virt="non-virtual"><scope>tvm::te::BaseComputeOpNode</scope><name>_type_key</name></member>
+      <member refid="classtvm_1_1te_1_1OperationNode_1a009ebd67a59953ec9a587f9724afd538" prot="public" virt="non-virtual"><scope>tvm::te::BaseComputeOpNode</scope><name>attrs</name></member>
+      <member refid="classtvm_1_1te_1_1BaseComputeOpNode_1a21617a643897727c51ded2b7260df4c3" prot="public" virt="non-virtual"><scope>tvm::te::BaseComputeOpNode</scope><name>axis</name></member>
+      <member refid="classtvm_1_1te_1_1OperationNode_1a0a4a33f450e0e0890f59af9464c9015f" prot="public" virt="pure-virtual"><scope>tvm::te::BaseComputeOpNode</scope><name>BuildProvide</name></member>
+      <member refid="classtvm_1_1te_1_1BaseComputeOpNode_1a0bd84e898355eb941318af78245ca103" prot="public" virt="virtual"><scope>tvm::te::BaseComputeOpNode</scope><name>BuildRealize</name></member>
+      <member refid="classtvm_1_1te_1_1OperationNode_1a03b4cec709aed13088b1127a5f90c382" prot="public" virt="virtual"><scope>tvm::te::BaseComputeOpNode</scope><name>func_name</name></member>
+      <member refid="classtvm_1_1te_1_1BaseComputeOpNode_1ad8c5908da3677e4c628f22d3f50c6da1" prot="public" virt="virtual"><scope>tvm::te::BaseComputeOpNode</scope><name>GatherBound</name></member>
+      <member refid="classtvm_1_1te_1_1OperationNode_1a9675fbb905d62de5b86624388acec4b1" prot="public" virt="pure-virtual"><scope>tvm::te::BaseComputeOpNode</scope><name>InputTensors</name></member>
+      <member refid="classtvm_1_1te_1_1OperationNode_1ad2fd6f140257f7b3c311f88374fa74d2" prot="public" virt="non-virtual"><scope>tvm::te::BaseComputeOpNode</scope><name>name</name></member>
+      <member refid="classtvm_1_1tir_1_1FunctionBaseNode_1a86d8a47eb472945b01ab508c1ff94930" prot="public" virt="pure-virtual"><scope>tvm::te::BaseComputeOpNode</scope><name>num_outputs</name></member>
+      <member refid="classtvm_1_1te_1_1BaseComputeOpNode_1afff057b90df28567ab7b2ba19a05b17c" prot="public" virt="pure-virtual"><scope>tvm::te::BaseComputeOpNode</scope><name>num_schedulable_dims</name></member>
+      <member refid="classtvm_1_1te_1_1OperationNode_1a6bcb7f0c177c642d82a5a200d13369f0" prot="public" virt="pure-virtual"><scope>tvm::te::BaseComputeOpNode</scope><name>output_dtype</name></member>
+      <member refid="classtvm_1_1te_1_1BaseComputeOpNode_1acdd22cc7c737d4dc8b6bf86d2f11a0db" prot="public" virt="virtual"><scope>tvm::te::BaseComputeOpNode</scope><name>output_shape</name></member>
+      <member refid="classtvm_1_1te_1_1OperationNode_1a3c32a93264e0d627d8389b703edcaf49" prot="public" virt="pure-virtual"><scope>tvm::te::BaseComputeOpNode</scope><name>PropBoundToInputs</name></member>
+      <member refid="classtvm_1_1te_1_1BaseComputeOpNode_1ad0df643468fc148d80afd7116abdd2ac" prot="public" virt="non-virtual"><scope>tvm::te::BaseComputeOpNode</scope><name>reduce_axis</name></member>
+      <member refid="classtvm_1_1te_1_1OperationNode_1a9a876a433cfbe32215c3802ef520016e" prot="public" virt="pure-virtual"><scope>tvm::te::BaseComputeOpNode</scope><name>ReplaceInputs</name></member>
+      <member refid="classtvm_1_1te_1_1BaseComputeOpNode_1aab7b5b43122ee14bb00640906267361a" prot="public" virt="virtual"><scope>tvm::te::BaseComputeOpNode</scope><name>root_iter_vars</name></member>
+      <member refid="classtvm_1_1te_1_1OperationNode_1ae6ac4336e7dc2df84f128fc97a6cdb9b" prot="public" virt="non-virtual"><scope>tvm::te::BaseComputeOpNode</scope><name>tag</name></member>
+      <member refid="classtvm_1_1te_1_1BaseComputeOpNode_1ae942fa18ddac490a8b5022143b14cf11" prot="public" virt="non-virtual"><scope>tvm::te::BaseComputeOpNode</scope><name>TVM_DECLARE_BASE_OBJECT_INFO</name></member>
+      <member refid="classtvm_1_1te_1_1OperationNode_1a281dd659ac061a77c5783bd0e42324df" prot="public" virt="non-virtual" ambiguityscope="tvm::te::OperationNode::"><scope>tvm::te::BaseComputeOpNode</scope><name>TVM_DECLARE_BASE_OBJECT_INFO</name></member>
+      <member refid="classtvm_1_1tir_1_1FunctionBaseNode_1a03b2f3fdfc5ae82ca081cf988dac22e4" prot="public" virt="virtual"><scope>tvm::te::BaseComputeOpNode</scope><name>~FunctionBaseNode</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

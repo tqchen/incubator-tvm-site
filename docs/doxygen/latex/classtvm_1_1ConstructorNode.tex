@@ -1,0 +1,150 @@
+\hypertarget{classtvm_1_1ConstructorNode}{}\section{tvm\+:\+:Constructor\+Node Class Reference}
+\label{classtvm_1_1ConstructorNode}\index{tvm\+::\+Constructor\+Node@{tvm\+::\+Constructor\+Node}}
+
+
+A\+DT constructor. Constructors compare by pointer equality.  
+
+
+
+
+{\ttfamily \#include $<$adt.\+h$>$}
+
+
+
+Inheritance diagram for tvm\+:\+:Constructor\+Node\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{classtvm_1_1ConstructorNode__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for tvm\+:\+:Constructor\+Node\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classtvm_1_1ConstructorNode__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classtvm_1_1ConstructorNode_ab53a12f5a1ab1d262c49c16d189fe27c}{Constructor\+Node} ()
+\item 
+void \hyperlink{classtvm_1_1ConstructorNode_a7137fbec25bcaae585f532221402e892}{Visit\+Attrs} (\hyperlink{classtvm_1_1AttrVisitor}{Attr\+Visitor} $\ast$v)
+\item 
+bool \hyperlink{classtvm_1_1ConstructorNode_a1dbaf14ddf82ff3640cf539962955179}{S\+Equal\+Reduce} (const \hyperlink{classtvm_1_1ConstructorNode}{Constructor\+Node} $\ast$other, \hyperlink{classtvm_1_1SEqualReducer}{S\+Equal\+Reducer} equal) const 
+\item 
+void \hyperlink{classtvm_1_1ConstructorNode_a7172a526b7d29085678fa01fba20fdf4}{S\+Hash\+Reduce} (\hyperlink{classtvm_1_1SHashReducer}{S\+Hash\+Reducer} hash\+\_\+reduce) const 
+\item 
+\hyperlink{classtvm_1_1ConstructorNode_af21463fd4d36fa74261a95bc7700d2c5}{T\+V\+M\+\_\+\+D\+E\+C\+L\+A\+R\+E\+\_\+\+F\+I\+N\+A\+L\+\_\+\+O\+B\+J\+E\+C\+T\+\_\+\+I\+N\+FO} (\hyperlink{classtvm_1_1ConstructorNode}{Constructor\+Node}, \hyperlink{classtvm_1_1RelayExprNode}{Relay\+Expr\+Node})
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+std\+::string \hyperlink{classtvm_1_1ConstructorNode_a4bc169a07961c92da7ee35a5cebdf209}{name\+\_\+hint}
+\begin{DoxyCompactList}\small\item\em The name (only a hint) \end{DoxyCompactList}\item 
+\hyperlink{classtvm_1_1Array}{Array}$<$ \hyperlink{classtvm_1_1Type}{Type} $>$ \hyperlink{classtvm_1_1ConstructorNode_a5e999221d27a09f0ae69fd94674349b1}{inputs}
+\begin{DoxyCompactList}\small\item\em Input to the constructor. \end{DoxyCompactList}\item 
+\hyperlink{classtvm_1_1GlobalTypeVar}{Global\+Type\+Var} \hyperlink{classtvm_1_1ConstructorNode_a671fab9e6add1be16eca6e19efac99c5}{belong\+\_\+to}
+\begin{DoxyCompactList}\small\item\em The datatype the constructor will construct. \end{DoxyCompactList}\item 
+int32\+\_\+t \hyperlink{classtvm_1_1ConstructorNode_a396a76459b3a46eefdfcd952c69c5ee4}{tag} = -\/1
+\begin{DoxyCompactList}\small\item\em Index in the table of constructors (set when the type is registered). \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static constexpr const char $\ast$ \hyperlink{classtvm_1_1ConstructorNode_a41f40e2a99b4f65659a17b62294539fd}{\+\_\+type\+\_\+key} = \char`\"{}relay.\+Constructor\char`\"{}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+A\+DT constructor. Constructors compare by pointer equality. 
+
+\begin{DoxySeeAlso}{See also}
+\hyperlink{classtvm_1_1Constructor}{Constructor} 
+\end{DoxySeeAlso}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\index{tvm\+::\+Constructor\+Node@{tvm\+::\+Constructor\+Node}!Constructor\+Node@{Constructor\+Node}}
+\index{Constructor\+Node@{Constructor\+Node}!tvm\+::\+Constructor\+Node@{tvm\+::\+Constructor\+Node}}
+\subsubsection[{\texorpdfstring{Constructor\+Node()}{ConstructorNode()}}]{\setlength{\rightskip}{0pt plus 5cm}tvm\+::\+Constructor\+Node\+::\+Constructor\+Node (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classtvm_1_1ConstructorNode_ab53a12f5a1ab1d262c49c16d189fe27c}{}\label{classtvm_1_1ConstructorNode_ab53a12f5a1ab1d262c49c16d189fe27c}
+
+
+\subsection{Member Function Documentation}
+\index{tvm\+::\+Constructor\+Node@{tvm\+::\+Constructor\+Node}!S\+Equal\+Reduce@{S\+Equal\+Reduce}}
+\index{S\+Equal\+Reduce@{S\+Equal\+Reduce}!tvm\+::\+Constructor\+Node@{tvm\+::\+Constructor\+Node}}
+\subsubsection[{\texorpdfstring{S\+Equal\+Reduce(const Constructor\+Node $\ast$other, S\+Equal\+Reducer equal) const }{SEqualReduce(const ConstructorNode *other, SEqualReducer equal) const }}]{\setlength{\rightskip}{0pt plus 5cm}bool tvm\+::\+Constructor\+Node\+::\+S\+Equal\+Reduce (
+\begin{DoxyParamCaption}
+\item[{const {\bf Constructor\+Node} $\ast$}]{other, }
+\item[{{\bf S\+Equal\+Reducer}}]{equal}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classtvm_1_1ConstructorNode_a1dbaf14ddf82ff3640cf539962955179}{}\label{classtvm_1_1ConstructorNode_a1dbaf14ddf82ff3640cf539962955179}
+\index{tvm\+::\+Constructor\+Node@{tvm\+::\+Constructor\+Node}!S\+Hash\+Reduce@{S\+Hash\+Reduce}}
+\index{S\+Hash\+Reduce@{S\+Hash\+Reduce}!tvm\+::\+Constructor\+Node@{tvm\+::\+Constructor\+Node}}
+\subsubsection[{\texorpdfstring{S\+Hash\+Reduce(\+S\+Hash\+Reducer hash\+\_\+reduce) const }{SHashReduce(SHashReducer hash_reduce) const }}]{\setlength{\rightskip}{0pt plus 5cm}void tvm\+::\+Constructor\+Node\+::\+S\+Hash\+Reduce (
+\begin{DoxyParamCaption}
+\item[{{\bf S\+Hash\+Reducer}}]{hash\+\_\+reduce}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classtvm_1_1ConstructorNode_a7172a526b7d29085678fa01fba20fdf4}{}\label{classtvm_1_1ConstructorNode_a7172a526b7d29085678fa01fba20fdf4}
+\index{tvm\+::\+Constructor\+Node@{tvm\+::\+Constructor\+Node}!T\+V\+M\+\_\+\+D\+E\+C\+L\+A\+R\+E\+\_\+\+F\+I\+N\+A\+L\+\_\+\+O\+B\+J\+E\+C\+T\+\_\+\+I\+N\+FO@{T\+V\+M\+\_\+\+D\+E\+C\+L\+A\+R\+E\+\_\+\+F\+I\+N\+A\+L\+\_\+\+O\+B\+J\+E\+C\+T\+\_\+\+I\+N\+FO}}
+\index{T\+V\+M\+\_\+\+D\+E\+C\+L\+A\+R\+E\+\_\+\+F\+I\+N\+A\+L\+\_\+\+O\+B\+J\+E\+C\+T\+\_\+\+I\+N\+FO@{T\+V\+M\+\_\+\+D\+E\+C\+L\+A\+R\+E\+\_\+\+F\+I\+N\+A\+L\+\_\+\+O\+B\+J\+E\+C\+T\+\_\+\+I\+N\+FO}!tvm\+::\+Constructor\+Node@{tvm\+::\+Constructor\+Node}}
+\subsubsection[{\texorpdfstring{T\+V\+M\+\_\+\+D\+E\+C\+L\+A\+R\+E\+\_\+\+F\+I\+N\+A\+L\+\_\+\+O\+B\+J\+E\+C\+T\+\_\+\+I\+N\+F\+O(\+Constructor\+Node, Relay\+Expr\+Node)}{TVM_DECLARE_FINAL_OBJECT_INFO(ConstructorNode, RelayExprNode)}}]{\setlength{\rightskip}{0pt plus 5cm}tvm\+::\+Constructor\+Node\+::\+T\+V\+M\+\_\+\+D\+E\+C\+L\+A\+R\+E\+\_\+\+F\+I\+N\+A\+L\+\_\+\+O\+B\+J\+E\+C\+T\+\_\+\+I\+N\+FO (
+\begin{DoxyParamCaption}
+\item[{{\bf Constructor\+Node}}]{, }
+\item[{{\bf Relay\+Expr\+Node}}]{}
+\end{DoxyParamCaption}
+)}\hypertarget{classtvm_1_1ConstructorNode_af21463fd4d36fa74261a95bc7700d2c5}{}\label{classtvm_1_1ConstructorNode_af21463fd4d36fa74261a95bc7700d2c5}
+\index{tvm\+::\+Constructor\+Node@{tvm\+::\+Constructor\+Node}!Visit\+Attrs@{Visit\+Attrs}}
+\index{Visit\+Attrs@{Visit\+Attrs}!tvm\+::\+Constructor\+Node@{tvm\+::\+Constructor\+Node}}
+\subsubsection[{\texorpdfstring{Visit\+Attrs(\+Attr\+Visitor $\ast$v)}{VisitAttrs(AttrVisitor *v)}}]{\setlength{\rightskip}{0pt plus 5cm}void tvm\+::\+Constructor\+Node\+::\+Visit\+Attrs (
+\begin{DoxyParamCaption}
+\item[{{\bf Attr\+Visitor} $\ast$}]{v}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classtvm_1_1ConstructorNode_a7137fbec25bcaae585f532221402e892}{}\label{classtvm_1_1ConstructorNode_a7137fbec25bcaae585f532221402e892}
+
+
+\subsection{Member Data Documentation}
+\index{tvm\+::\+Constructor\+Node@{tvm\+::\+Constructor\+Node}!\+\_\+type\+\_\+key@{\+\_\+type\+\_\+key}}
+\index{\+\_\+type\+\_\+key@{\+\_\+type\+\_\+key}!tvm\+::\+Constructor\+Node@{tvm\+::\+Constructor\+Node}}
+\subsubsection[{\texorpdfstring{\+\_\+type\+\_\+key}{_type_key}}]{\setlength{\rightskip}{0pt plus 5cm}constexpr const char$\ast$ tvm\+::\+Constructor\+Node\+::\+\_\+type\+\_\+key = \char`\"{}relay.\+Constructor\char`\"{}\hspace{0.3cm}{\ttfamily [static]}}\hypertarget{classtvm_1_1ConstructorNode_a41f40e2a99b4f65659a17b62294539fd}{}\label{classtvm_1_1ConstructorNode_a41f40e2a99b4f65659a17b62294539fd}
+\index{tvm\+::\+Constructor\+Node@{tvm\+::\+Constructor\+Node}!belong\+\_\+to@{belong\+\_\+to}}
+\index{belong\+\_\+to@{belong\+\_\+to}!tvm\+::\+Constructor\+Node@{tvm\+::\+Constructor\+Node}}
+\subsubsection[{\texorpdfstring{belong\+\_\+to}{belong_to}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Global\+Type\+Var} tvm\+::\+Constructor\+Node\+::belong\+\_\+to}\hypertarget{classtvm_1_1ConstructorNode_a671fab9e6add1be16eca6e19efac99c5}{}\label{classtvm_1_1ConstructorNode_a671fab9e6add1be16eca6e19efac99c5}
+
+
+The datatype the constructor will construct. 
+
+\index{tvm\+::\+Constructor\+Node@{tvm\+::\+Constructor\+Node}!inputs@{inputs}}
+\index{inputs@{inputs}!tvm\+::\+Constructor\+Node@{tvm\+::\+Constructor\+Node}}
+\subsubsection[{\texorpdfstring{inputs}{inputs}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Array}$<${\bf Type}$>$ tvm\+::\+Constructor\+Node\+::inputs}\hypertarget{classtvm_1_1ConstructorNode_a5e999221d27a09f0ae69fd94674349b1}{}\label{classtvm_1_1ConstructorNode_a5e999221d27a09f0ae69fd94674349b1}
+
+
+Input to the constructor. 
+
+\index{tvm\+::\+Constructor\+Node@{tvm\+::\+Constructor\+Node}!name\+\_\+hint@{name\+\_\+hint}}
+\index{name\+\_\+hint@{name\+\_\+hint}!tvm\+::\+Constructor\+Node@{tvm\+::\+Constructor\+Node}}
+\subsubsection[{\texorpdfstring{name\+\_\+hint}{name_hint}}]{\setlength{\rightskip}{0pt plus 5cm}std\+::string tvm\+::\+Constructor\+Node\+::name\+\_\+hint}\hypertarget{classtvm_1_1ConstructorNode_a4bc169a07961c92da7ee35a5cebdf209}{}\label{classtvm_1_1ConstructorNode_a4bc169a07961c92da7ee35a5cebdf209}
+
+
+The name (only a hint) 
+
+\index{tvm\+::\+Constructor\+Node@{tvm\+::\+Constructor\+Node}!tag@{tag}}
+\index{tag@{tag}!tvm\+::\+Constructor\+Node@{tvm\+::\+Constructor\+Node}}
+\subsubsection[{\texorpdfstring{tag}{tag}}]{\setlength{\rightskip}{0pt plus 5cm}int32\+\_\+t tvm\+::\+Constructor\+Node\+::tag = -\/1\hspace{0.3cm}{\ttfamily [mutable]}}\hypertarget{classtvm_1_1ConstructorNode_a396a76459b3a46eefdfcd952c69c5ee4}{}\label{classtvm_1_1ConstructorNode_a396a76459b3a46eefdfcd952c69c5ee4}
+
+
+Index in the table of constructors (set when the type is registered). 
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+include/tvm/ir/\hyperlink{ir_2adt_8h}{adt.\+h}\end{DoxyCompactItemize}

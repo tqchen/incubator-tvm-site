@@ -1,0 +1,193 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="classtvm_1_1te_1_1FuseNode" kind="class" language="C++" prot="public">
+    <compoundname>tvm::te::FuseNode</compoundname>
+    <basecompoundref refid="classtvm_1_1te_1_1IterVarRelationNode" prot="public" virt="non-virtual">tvm::te::IterVarRelationNode</basecompoundref>
+    <includes refid="schedule_8h" local="no">schedule.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="classtvm_1_1te_1_1FuseNode_1a90efca7f5397eb34989f5d085ae9bab5" prot="public" static="no" mutable="no">
+        <type><ref refid="classtvm_1_1tir_1_1IterVar" kindref="compound">IterVar</ref></type>
+        <definition>IterVar tvm::te::FuseNode::outer</definition>
+        <argsstring></argsstring>
+        <name>outer</name>
+        <briefdescription>
+<para>The outer domain. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/te/schedule.h" line="685" column="1" bodyfile="include/tvm/te/schedule.h" bodystart="685" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classtvm_1_1te_1_1FuseNode_1a5a867854c20179cd32b19fb1eab90616" prot="public" static="no" mutable="no">
+        <type><ref refid="classtvm_1_1tir_1_1IterVar" kindref="compound">IterVar</ref></type>
+        <definition>IterVar tvm::te::FuseNode::inner</definition>
+        <argsstring></argsstring>
+        <name>inner</name>
+        <briefdescription>
+<para>The inner domain. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/te/schedule.h" line="687" column="1" bodyfile="include/tvm/te/schedule.h" bodystart="687" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classtvm_1_1te_1_1FuseNode_1ad5abaac8d77c9c88ec374ae91d68cb88" prot="public" static="no" mutable="no">
+        <type><ref refid="classtvm_1_1tir_1_1IterVar" kindref="compound">IterVar</ref></type>
+        <definition>IterVar tvm::te::FuseNode::fused</definition>
+        <argsstring></argsstring>
+        <name>fused</name>
+        <briefdescription>
+<para>The target domain. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/te/schedule.h" line="689" column="1" bodyfile="include/tvm/te/schedule.h" bodystart="689" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-attrib">
+      <memberdef kind="variable" id="classtvm_1_1te_1_1FuseNode_1aea440c46ab4280ddf181bb88c258d279" prot="public" static="yes" mutable="no">
+        <type>constexpr const char *</type>
+        <definition>constexpr const char* tvm::te::FuseNode::_type_key</definition>
+        <argsstring></argsstring>
+        <name>_type_key</name>
+        <initializer>= &quot;Fuse&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/te/schedule.h" line="700" column="1" bodyfile="include/tvm/te/schedule.h" bodystart="700" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classtvm_1_1te_1_1FuseNode_1a61330fd9eca1277948bd9900c3f91f08" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void tvm::te::FuseNode::VisitAttrs</definition>
+        <argsstring>(AttrVisitor *v)</argsstring>
+        <name>VisitAttrs</name>
+        <param>
+          <type><ref refid="classtvm_1_1AttrVisitor" kindref="compound">AttrVisitor</ref> *</type>
+          <declname>v</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/te/schedule.h" line="691" column="1" bodyfile="include/tvm/te/schedule.h" bodystart="691" bodyend="695"/>
+      </memberdef>
+      <memberdef kind="function" id="classtvm_1_1te_1_1FuseNode_1ad5447bffbfd6ae596bfef3b1234eff1d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>tvm::te::FuseNode::TVM_DECLARE_FINAL_OBJECT_INFO</definition>
+        <argsstring>(FuseNode, IterVarRelationNode)</argsstring>
+        <name>TVM_DECLARE_FINAL_OBJECT_INFO</name>
+        <param>
+          <type><ref refid="classtvm_1_1te_1_1FuseNode" kindref="compound">FuseNode</ref></type>
+        </param>
+        <param>
+          <type><ref refid="classtvm_1_1te_1_1IterVarRelationNode" kindref="compound">IterVarRelationNode</ref></type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/te/schedule.h" line="701" column="1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="classtvm_1_1te_1_1FuseNode_1ae86a4641dfa5d446f078b62a4b213ef3" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classtvm_1_1te_1_1IterVarRelation" kindref="compound">IterVarRelation</ref></type>
+        <definition>static IterVarRelation tvm::te::FuseNode::make</definition>
+        <argsstring>(IterVar outer, IterVar inner, IterVar fused)</argsstring>
+        <name>make</name>
+        <param>
+          <type><ref refid="classtvm_1_1tir_1_1IterVar" kindref="compound">IterVar</ref></type>
+          <declname>outer</declname>
+        </param>
+        <param>
+          <type><ref refid="classtvm_1_1tir_1_1IterVar" kindref="compound">IterVar</ref></type>
+          <declname>inner</declname>
+        </param>
+        <param>
+          <type><ref refid="classtvm_1_1tir_1_1IterVar" kindref="compound">IterVar</ref></type>
+          <declname>fused</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/te/schedule.h" line="697" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Fuse two domains into one domain. </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="5172">
+        <label>Object</label>
+      </node>
+      <node id="5171">
+        <label>tvm::te::IterVarRelationNode</label>
+        <link refid="classtvm_1_1te_1_1IterVarRelationNode"/>
+        <childnode refid="5172" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="5170">
+        <label>tvm::te::FuseNode</label>
+        <link refid="classtvm_1_1te_1_1FuseNode"/>
+        <childnode refid="5171" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="5177">
+        <label>ObjectRef</label>
+      </node>
+      <node id="5176">
+        <label>tvm::tir::IterVar</label>
+        <link refid="classtvm_1_1tir_1_1IterVar"/>
+        <childnode refid="5177" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="5175">
+        <label>Object</label>
+      </node>
+      <node id="5174">
+        <label>tvm::te::IterVarRelationNode</label>
+        <link refid="classtvm_1_1te_1_1IterVarRelationNode"/>
+        <childnode refid="5175" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="5173">
+        <label>tvm::te::FuseNode</label>
+        <link refid="classtvm_1_1te_1_1FuseNode"/>
+        <childnode refid="5174" relation="public-inheritance">
+        </childnode>
+        <childnode refid="5176" relation="usage">
+          <edgelabel>+fused</edgelabel>
+          <edgelabel>+inner</edgelabel>
+          <edgelabel>+outer</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="include/tvm/te/schedule.h" line="682" column="1" bodyfile="include/tvm/te/schedule.h" bodystart="682" bodyend="702"/>
+    <listofallmembers>
+      <member refid="classtvm_1_1te_1_1FuseNode_1aea440c46ab4280ddf181bb88c258d279" prot="public" virt="non-virtual"><scope>tvm::te::FuseNode</scope><name>_type_key</name></member>
+      <member refid="classtvm_1_1te_1_1FuseNode_1ad5abaac8d77c9c88ec374ae91d68cb88" prot="public" virt="non-virtual"><scope>tvm::te::FuseNode</scope><name>fused</name></member>
+      <member refid="classtvm_1_1te_1_1FuseNode_1a5a867854c20179cd32b19fb1eab90616" prot="public" virt="non-virtual"><scope>tvm::te::FuseNode</scope><name>inner</name></member>
+      <member refid="classtvm_1_1te_1_1FuseNode_1ae86a4641dfa5d446f078b62a4b213ef3" prot="public" virt="non-virtual"><scope>tvm::te::FuseNode</scope><name>make</name></member>
+      <member refid="classtvm_1_1te_1_1FuseNode_1a90efca7f5397eb34989f5d085ae9bab5" prot="public" virt="non-virtual"><scope>tvm::te::FuseNode</scope><name>outer</name></member>
+      <member refid="classtvm_1_1te_1_1IterVarRelationNode_1a8ff434b2be862efbab049f0467bfd258" prot="public" virt="non-virtual"><scope>tvm::te::FuseNode</scope><name>TVM_DECLARE_BASE_OBJECT_INFO</name></member>
+      <member refid="classtvm_1_1te_1_1FuseNode_1ad5447bffbfd6ae596bfef3b1234eff1d" prot="public" virt="non-virtual"><scope>tvm::te::FuseNode</scope><name>TVM_DECLARE_FINAL_OBJECT_INFO</name></member>
+      <member refid="classtvm_1_1te_1_1FuseNode_1a61330fd9eca1277948bd9900c3f91f08" prot="public" virt="non-virtual"><scope>tvm::te::FuseNode</scope><name>VisitAttrs</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

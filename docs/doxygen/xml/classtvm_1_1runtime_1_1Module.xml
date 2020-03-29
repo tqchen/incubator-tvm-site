@@ -1,0 +1,265 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="classtvm_1_1runtime_1_1Module" kind="class" language="C++" prot="public">
+    <compoundname>tvm::runtime::Module</compoundname>
+    <basecompoundref refid="classtvm_1_1runtime_1_1ObjectRef" prot="public" virt="non-virtual">tvm::runtime::ObjectRef</basecompoundref>
+    <includes refid="runtime_2module_8h" local="no">module.h</includes>
+      <sectiondef kind="public-type">
+      <memberdef kind="typedef" id="classtvm_1_1runtime_1_1Module_1a2e17df628886ffd624ab5835e85b1a58" prot="public" static="no">
+        <type><ref refid="classtvm_1_1runtime_1_1ModuleNode" kindref="compound">ModuleNode</ref></type>
+        <definition>using tvm::runtime::Module::ContainerType =  ModuleNode</definition>
+        <argsstring></argsstring>
+        <name>ContainerType</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/runtime/module.h" line="88" column="1" bodyfile="include/tvm/runtime/module.h" bodystart="88" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="friend">
+      <memberdef kind="friend" id="classtvm_1_1runtime_1_1Module_1a908d19538a4fcadd6e93f39e4aa5292b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>friend class</type>
+        <definition>friend class ModuleNode</definition>
+        <argsstring></argsstring>
+        <name>ModuleNode</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/runtime/module.h" line="89" column="1" bodyfile="include/tvm/runtime/module.h" bodystart="89" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classtvm_1_1runtime_1_1Module_1abfbc619b3b3166d63ec52e399c24bed9" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>tvm::runtime::Module::Module</definition>
+        <argsstring>()</argsstring>
+        <name>Module</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/runtime/module.h" line="51" column="1" bodyfile="include/tvm/runtime/module.h" bodystart="51" bodyend="51"/>
+      </memberdef>
+      <memberdef kind="function" id="classtvm_1_1runtime_1_1Module_1abd1380b3f813c2b6acefca3aaef425f4" prot="public" static="no" const="no" explicit="yes" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>tvm::runtime::Module::Module</definition>
+        <argsstring>(ObjectPtr&lt; Object &gt; n)</argsstring>
+        <name>Module</name>
+        <param>
+          <type><ref refid="classtvm_1_1runtime_1_1ObjectPtr" kindref="compound">ObjectPtr</ref>&lt; <ref refid="classtvm_1_1runtime_1_1Object" kindref="compound">Object</ref> &gt;</type>
+          <declname>n</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/runtime/module.h" line="53" column="1" bodyfile="include/tvm/runtime/module.h" bodystart="53" bodyend="54"/>
+      </memberdef>
+      <memberdef kind="function" id="classtvm_1_1runtime_1_1Module_1a1233f7b896bb299ef07f9e41a4ffdc17" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classtvm_1_1runtime_1_1PackedFunc" kindref="compound">PackedFunc</ref></type>
+        <definition>PackedFunc tvm::runtime::Module::GetFunction</definition>
+        <argsstring>(const std::string &amp;name, bool query_imports=false)</argsstring>
+        <name>GetFunction</name>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>name</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>query_imports</declname>
+          <defval>false</defval>
+        </param>
+        <briefdescription>
+<para>Get packed function from current module by name. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>name</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The name of the function. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>query_imports</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Whether also query dependency modules. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The result function. This function will return PackedFunc(nullptr) if function do not exist. </para></simplesect>
+<simplesect kind="note"><para>Implemented in packed_func.cc </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/runtime/module.h" line="64" column="1" bodyfile="include/tvm/runtime/packed_func.h" bodystart="1507" bodyend="1509"/>
+      </memberdef>
+      <memberdef kind="function" id="classtvm_1_1runtime_1_1Module_1afb5a6c9b0e0a541245958456ebe39260" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void tvm::runtime::Module::Import</definition>
+        <argsstring>(Module other)</argsstring>
+        <name>Import</name>
+        <param>
+          <type><ref refid="classtvm_1_1runtime_1_1Module" kindref="compound">Module</ref></type>
+          <declname>other</declname>
+        </param>
+        <briefdescription>
+<para>Import another module into this module. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>other</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The module to be imported.</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="note"><para>Cyclic dependency is not allowed among modules, An error will be thrown when cyclic dependency is detected. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/runtime/module.h" line="73" column="1" bodyfile="include/tvm/runtime/module.h" bodystart="241" bodyend="243"/>
+      </memberdef>
+      <memberdef kind="function" id="classtvm_1_1runtime_1_1Module_1a87bcc010c62887a453d49d46854fa354" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classtvm_1_1runtime_1_1ModuleNode" kindref="compound">ModuleNode</ref> *</type>
+        <definition>ModuleNode * tvm::runtime::Module::operator-&gt;</definition>
+        <argsstring>()</argsstring>
+        <name>operator-&gt;</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>internal container </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/runtime/module.h" line="75" column="1" bodyfile="include/tvm/runtime/module.h" bodystart="245" bodyend="247"/>
+      </memberdef>
+      <memberdef kind="function" id="classtvm_1_1runtime_1_1Module_1a814b0e825cb2a4e47a797c22a397582f" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>const <ref refid="classtvm_1_1runtime_1_1ModuleNode" kindref="compound">ModuleNode</ref> *</type>
+        <definition>const ModuleNode * tvm::runtime::Module::operator-&gt;</definition>
+        <argsstring>() const </argsstring>
+        <name>operator-&gt;</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>internal container </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/runtime/module.h" line="77" column="1" bodyfile="include/tvm/runtime/module.h" bodystart="249" bodyend="251"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="classtvm_1_1runtime_1_1Module_1a1927112ff253c1a6150238257cc9d5dd" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classtvm_1_1runtime_1_1Module" kindref="compound">Module</ref></type>
+        <definition>static Module tvm::runtime::Module::LoadFromFile</definition>
+        <argsstring>(const std::string &amp;file_name, const std::string &amp;format=&quot;&quot;)</argsstring>
+        <name>LoadFromFile</name>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>file_name</declname>
+        </param>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>format</declname>
+          <defval>&quot;&quot;</defval>
+        </param>
+        <briefdescription>
+<para>Load a module from file. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>file_name</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The name of the host function module. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>format</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The format of the file. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="note"><para>This function won&apos;t load the import relationship. Re-create import relationship by calling Import. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/runtime/module.h" line="85" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para><ref refid="classtvm_1_1runtime_1_1Module" kindref="compound">Module</ref> container of TVM. </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="5777">
+        <label>tvm::runtime::Module</label>
+        <link refid="classtvm_1_1runtime_1_1Module"/>
+        <childnode refid="5778" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="5778">
+        <label>tvm::runtime::ObjectRef</label>
+        <link refid="classtvm_1_1runtime_1_1ObjectRef"/>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="5779">
+        <label>tvm::runtime::Module</label>
+        <link refid="classtvm_1_1runtime_1_1Module"/>
+        <childnode refid="5780" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="5780">
+        <label>tvm::runtime::ObjectRef</label>
+        <link refid="classtvm_1_1runtime_1_1ObjectRef"/>
+        <childnode refid="5781" relation="usage">
+          <edgelabel>#data_</edgelabel>
+        </childnode>
+      </node>
+      <node id="5781">
+        <label>tvm::runtime::ObjectPtr&lt; tvm::runtime::Object &gt;</label>
+        <link refid="classtvm_1_1runtime_1_1ObjectPtr"/>
+      </node>
+    </collaborationgraph>
+    <location file="include/tvm/runtime/module.h" line="49" column="1" bodyfile="include/tvm/runtime/module.h" bodystart="49" bodyend="90"/>
+    <listofallmembers>
+      <member refid="classtvm_1_1runtime_1_1ObjectRef_1ab51c99a3607ca95884d9efd978998ce8" prot="public" virt="non-virtual"><scope>tvm::runtime::Module</scope><name>as</name></member>
+      <member refid="classtvm_1_1runtime_1_1Module_1a2e17df628886ffd624ab5835e85b1a58" prot="public" virt="non-virtual"><scope>tvm::runtime::Module</scope><name>ContainerType</name></member>
+      <member refid="classtvm_1_1runtime_1_1ObjectRef_1ac261cdb80487fb29ac42b28678f8cbef" prot="protected" virt="non-virtual"><scope>tvm::runtime::Module</scope><name>data_</name></member>
+      <member refid="classtvm_1_1runtime_1_1ObjectRef_1a79d0ae0a887ed5cbfa67de7d43f0ef3a" prot="public" virt="non-virtual"><scope>tvm::runtime::Module</scope><name>defined</name></member>
+      <member refid="classtvm_1_1runtime_1_1ObjectRef_1acd04bb22a6861e9952c344ee8547411f" prot="protected" virt="non-virtual"><scope>tvm::runtime::Module</scope><name>DowncastNoCheck</name></member>
+      <member refid="classtvm_1_1runtime_1_1ObjectRef_1a22e5bb9d64dbc773bb9263b70882239e" prot="protected" virt="non-virtual"><scope>tvm::runtime::Module</scope><name>FFIClearAfterMove</name></member>
+      <member refid="classtvm_1_1runtime_1_1ObjectRef_1a11ad7a277c175ee33e1551bbb77a8694" prot="public" virt="non-virtual"><scope>tvm::runtime::Module</scope><name>get</name></member>
+      <member refid="classtvm_1_1runtime_1_1ObjectRef_1aa4604d96f4a77cc10cc1e0419758fb2c" prot="protected" virt="non-virtual"><scope>tvm::runtime::Module</scope><name>get_mutable</name></member>
+      <member refid="classtvm_1_1runtime_1_1ObjectRef_1aed593996e4076632450de8fde776707c" prot="protected" virt="non-virtual"><scope>tvm::runtime::Module</scope><name>GetDataPtr</name></member>
+      <member refid="classtvm_1_1runtime_1_1Module_1a1233f7b896bb299ef07f9e41a4ffdc17" prot="public" virt="non-virtual"><scope>tvm::runtime::Module</scope><name>GetFunction</name></member>
+      <member refid="classtvm_1_1runtime_1_1Module_1afb5a6c9b0e0a541245958456ebe39260" prot="public" virt="non-virtual"><scope>tvm::runtime::Module</scope><name>Import</name></member>
+      <member refid="classtvm_1_1runtime_1_1Module_1a1927112ff253c1a6150238257cc9d5dd" prot="public" virt="non-virtual"><scope>tvm::runtime::Module</scope><name>LoadFromFile</name></member>
+      <member refid="classtvm_1_1runtime_1_1Module_1abfbc619b3b3166d63ec52e399c24bed9" prot="public" virt="non-virtual"><scope>tvm::runtime::Module</scope><name>Module</name></member>
+      <member refid="classtvm_1_1runtime_1_1Module_1abd1380b3f813c2b6acefca3aaef425f4" prot="public" virt="non-virtual"><scope>tvm::runtime::Module</scope><name>Module</name></member>
+      <member refid="classtvm_1_1runtime_1_1Module_1a908d19538a4fcadd6e93f39e4aa5292b" prot="public" virt="non-virtual"><scope>tvm::runtime::Module</scope><name>ModuleNode</name></member>
+      <member refid="classtvm_1_1runtime_1_1ObjectRef_1aa07c1f6d66a438ea950637d13ed09471" prot="public" virt="non-virtual"><scope>tvm::runtime::Module</scope><name>ObjectRef</name></member>
+      <member refid="classtvm_1_1runtime_1_1ObjectRef_1a6a7dd7404edf1c26f8dbd9bd92d03a02" prot="public" virt="non-virtual"><scope>tvm::runtime::Module</scope><name>ObjectRef</name></member>
+      <member refid="classtvm_1_1runtime_1_1ObjectRef_1a2ae377cc59f98b42339d76bded1c1711" prot="public" virt="non-virtual"><scope>tvm::runtime::Module</scope><name>operator!=</name></member>
+      <member refid="classtvm_1_1runtime_1_1Module_1a87bcc010c62887a453d49d46854fa354" prot="public" virt="non-virtual"><scope>tvm::runtime::Module</scope><name>operator-&gt;</name></member>
+      <member refid="classtvm_1_1runtime_1_1Module_1a814b0e825cb2a4e47a797c22a397582f" prot="public" virt="non-virtual"><scope>tvm::runtime::Module</scope><name>operator-&gt;</name></member>
+      <member refid="classtvm_1_1runtime_1_1ObjectRef_1a17626209947c4a2f302422be451661c5" prot="public" virt="non-virtual"><scope>tvm::runtime::Module</scope><name>operator&lt;</name></member>
+      <member refid="classtvm_1_1runtime_1_1ObjectRef_1ac8c2b78649a428e35e279d085d509e1b" prot="public" virt="non-virtual"><scope>tvm::runtime::Module</scope><name>operator==</name></member>
+      <member refid="classtvm_1_1runtime_1_1ObjectRef_1a62014c9eba5cae2ab5a84963725d6a65" prot="public" virt="non-virtual"><scope>tvm::runtime::Module</scope><name>same_as</name></member>
+      <member refid="classtvm_1_1runtime_1_1ObjectRef_1a4142990fd1959abc95aa0cccca4f6cda" prot="public" virt="non-virtual"><scope>tvm::runtime::Module</scope><name>unique</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

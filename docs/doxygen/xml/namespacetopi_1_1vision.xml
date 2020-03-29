@@ -1,0 +1,75 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="namespacetopi_1_1vision" kind="namespace" language="C++">
+    <compoundname>topi::vision</compoundname>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="namespacetopi_1_1vision_1a69d1202031a377ee81ea05900027113f" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classtvm_1_1te_1_1Tensor" kindref="compound">Tensor</ref></type>
+        <definition>Tensor topi::vision::reorg</definition>
+        <argsstring>(const Tensor &amp;data, int stride=1, std::string name=&quot;tensor&quot;, std::string tag=&quot;reorg_output&quot;)</argsstring>
+        <name>reorg</name>
+        <param>
+          <type>const <ref refid="classtvm_1_1te_1_1Tensor" kindref="compound">Tensor</ref> &amp;</type>
+          <declname>data</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>stride</declname>
+          <defval>1</defval>
+        </param>
+        <param>
+          <type>std::string</type>
+          <declname>name</declname>
+          <defval>&quot;tensor&quot;</defval>
+        </param>
+        <param>
+          <type>std::string</type>
+          <declname>tag</declname>
+          <defval>&quot;reorg_output&quot;</defval>
+        </param>
+        <briefdescription>
+<para>Reorg operation. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>data</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The input tensor. Can be any dimension </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>stride</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The input integer used as stride in reorg operation </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>name</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The name of the operation </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>tag</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The tag to mark the operation</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>A Tensor whose op member is the reorg operation </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="topi/include/topi/vision/reorg.h" line="51" column="1" bodyfile="topi/include/topi/vision/reorg.h" bodystart="51" bodyend="79"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="topi/include/topi/vision/reorg.h" line="37" column="1"/>
+  </compounddef>
+</doxygen>

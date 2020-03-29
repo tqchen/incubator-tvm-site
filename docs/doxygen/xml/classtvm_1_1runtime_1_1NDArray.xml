@@ -1,0 +1,764 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="classtvm_1_1runtime_1_1NDArray" kind="class" language="C++" prot="public">
+    <compoundname>tvm::runtime::NDArray</compoundname>
+    <basecompoundref refid="classtvm_1_1runtime_1_1ObjectRef" prot="public" virt="non-virtual">tvm::runtime::ObjectRef</basecompoundref>
+    <includes refid="ndarray_8h" local="no">ndarray.h</includes>
+    <innerclass refid="classtvm_1_1runtime_1_1NDArray_1_1Container" prot="public">tvm::runtime::NDArray::Container</innerclass>
+    <innerclass refid="classtvm_1_1runtime_1_1NDArray_1_1ContainerBase" prot="public">tvm::runtime::NDArray::ContainerBase</innerclass>
+      <sectiondef kind="public-type">
+      <memberdef kind="typedef" id="classtvm_1_1runtime_1_1NDArray_1abcb2ab5512d146d173e0aab86eee72a9" prot="public" static="no">
+        <type><ref refid="classtvm_1_1runtime_1_1NDArray_1_1Container" kindref="compound">Container</ref></type>
+        <definition>using tvm::runtime::NDArray::ContainerType =  Container</definition>
+        <argsstring></argsstring>
+        <name>ContainerType</name>
+        <briefdescription>
+<para><ref refid="classtvm_1_1runtime_1_1NDArray_1_1Container" kindref="compound">Container</ref> type for <ref refid="classtvm_1_1runtime_1_1Object" kindref="compound">Object</ref> system. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/runtime/ndarray.h" line="49" column="1" bodyfile="include/tvm/runtime/ndarray.h" bodystart="49" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="friend">
+      <memberdef kind="friend" id="classtvm_1_1runtime_1_1NDArray_1a9a9fd94393cfd7d4b6e6029348e3e19a" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>friend class</type>
+        <definition>friend class TVMPODValue_</definition>
+        <argsstring></argsstring>
+        <name>TVMPODValue_</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/runtime/ndarray.h" line="171" column="1" bodyfile="include/tvm/runtime/ndarray.h" bodystart="168" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="friend" id="classtvm_1_1runtime_1_1NDArray_1ae0ea8b4adc6dab8c74086bceaef6b3e1" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>friend class</type>
+        <definition>friend class TVMRetValue</definition>
+        <argsstring></argsstring>
+        <name>TVMRetValue</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/runtime/ndarray.h" line="172" column="1" bodyfile="include/tvm/runtime/ndarray.h" bodystart="172" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="friend" id="classtvm_1_1runtime_1_1NDArray_1a35ae555d4becf356b16aeacd353d41ee" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>friend class</type>
+        <definition>friend class TVMArgsSetter</definition>
+        <argsstring></argsstring>
+        <name>TVMArgsSetter</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/runtime/ndarray.h" line="173" column="1" bodyfile="include/tvm/runtime/ndarray.h" bodystart="173" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classtvm_1_1runtime_1_1NDArray_1a4bbb80e8e36317829dd63e7f44ffbb0f" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>tvm::runtime::NDArray::NDArray</definition>
+        <argsstring>()</argsstring>
+        <name>NDArray</name>
+        <briefdescription>
+<para>default constructor </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/runtime/ndarray.h" line="51" column="1" bodyfile="include/tvm/runtime/ndarray.h" bodystart="51" bodyend="51"/>
+      </memberdef>
+      <memberdef kind="function" id="classtvm_1_1runtime_1_1NDArray_1af5801a105ceb450616a83d19c5c92326" prot="public" static="no" const="no" explicit="yes" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>tvm::runtime::NDArray::NDArray</definition>
+        <argsstring>(ObjectPtr&lt; Object &gt; data)</argsstring>
+        <name>NDArray</name>
+        <param>
+          <type><ref refid="classtvm_1_1runtime_1_1ObjectPtr" kindref="compound">ObjectPtr</ref>&lt; <ref refid="classtvm_1_1runtime_1_1Object" kindref="compound">Object</ref> &gt;</type>
+          <declname>data</declname>
+        </param>
+        <briefdescription>
+<para>constructor. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>data</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><ref refid="classtvm_1_1runtime_1_1ObjectPtr" kindref="compound">ObjectPtr</ref> to the data container. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/runtime/ndarray.h" line="56" column="1" bodyfile="include/tvm/runtime/ndarray.h" bodystart="56" bodyend="57"/>
+      </memberdef>
+      <memberdef kind="function" id="classtvm_1_1runtime_1_1NDArray_1af2a8ccab95d432d1ecad7a389e11bcd3" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void tvm::runtime::NDArray::reset</definition>
+        <argsstring>()</argsstring>
+        <name>reset</name>
+        <briefdescription>
+<para>reset the content of <ref refid="classtvm_1_1runtime_1_1NDArray" kindref="compound">NDArray</ref> to be nullptr </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/runtime/ndarray.h" line="60" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classtvm_1_1runtime_1_1NDArray_1acb2fd06934aac23ba492e78619c7eaa5" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int tvm::runtime::NDArray::use_count</definition>
+        <argsstring>() const </argsstring>
+        <name>use_count</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>the reference counter </para></simplesect>
+<simplesect kind="note"><para>this number is approximate in multi-threaded setting. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/runtime/ndarray.h" line="65" column="1" bodyfile="include/tvm/runtime/ndarray.h" bodystart="369" bodyend="371"/>
+      </memberdef>
+      <memberdef kind="function" id="classtvm_1_1runtime_1_1NDArray_1ae347be13193ee72c6bde285c6ae787ad" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>const DLTensor *</type>
+        <definition>const DLTensor * tvm::runtime::NDArray::operator-&gt;</definition>
+        <argsstring>() const </argsstring>
+        <name>operator-&gt;</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>Pointer to content of DLTensor </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/runtime/ndarray.h" line="67" column="1" bodyfile="include/tvm/runtime/ndarray.h" bodystart="373" bodyend="375"/>
+      </memberdef>
+      <memberdef kind="function" id="classtvm_1_1runtime_1_1NDArray_1ac041c89504299f82baf990c9ad081c44" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool tvm::runtime::NDArray::IsContiguous</definition>
+        <argsstring>() const </argsstring>
+        <name>IsContiguous</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>Whether the tensor is contiguous </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/runtime/ndarray.h" line="69" column="1" bodyfile="include/tvm/runtime/ndarray.h" bodystart="334" bodyend="336"/>
+      </memberdef>
+      <memberdef kind="function" id="classtvm_1_1runtime_1_1NDArray_1a1550151d3616e918d45e047840b81e1e" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void tvm::runtime::NDArray::CopyFrom</definition>
+        <argsstring>(const DLTensor *other)</argsstring>
+        <name>CopyFrom</name>
+        <param>
+          <type>const DLTensor *</type>
+          <declname>other</declname>
+        </param>
+        <briefdescription>
+<para>Copy data content from another array. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>other</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The source array to be copied from. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="note"><para>The copy may happen asynchronously if it involves a GPU context. TVMSynchronize is necessary. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/runtime/ndarray.h" line="76" column="1" bodyfile="include/tvm/runtime/ndarray.h" bodystart="338" bodyend="341"/>
+      </memberdef>
+      <memberdef kind="function" id="classtvm_1_1runtime_1_1NDArray_1a62ceb9ace65922dde15790fff6d04661" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void tvm::runtime::NDArray::CopyFrom</definition>
+        <argsstring>(const NDArray &amp;other)</argsstring>
+        <name>CopyFrom</name>
+        <param>
+          <type>const <ref refid="classtvm_1_1runtime_1_1NDArray" kindref="compound">NDArray</ref> &amp;</type>
+          <declname>other</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/runtime/ndarray.h" line="77" column="1" bodyfile="include/tvm/runtime/ndarray.h" bodystart="343" bodyend="347"/>
+      </memberdef>
+      <memberdef kind="function" id="classtvm_1_1runtime_1_1NDArray_1af4d489a1208be9cc4248b592769bccf2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void tvm::runtime::NDArray::CopyFromBytes</definition>
+        <argsstring>(const void *data, size_t nbytes)</argsstring>
+        <name>CopyFromBytes</name>
+        <param>
+          <type>const void *</type>
+          <declname>data</declname>
+        </param>
+        <param>
+          <type>size_t</type>
+          <declname>nbytes</declname>
+        </param>
+        <briefdescription>
+<para>Copy data content from a byte buffer. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>data</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The source bytes to be copied from. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>nbytes</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The size of the buffer in bytes Must be equal to the size of the <ref refid="classtvm_1_1runtime_1_1NDArray" kindref="compound">NDArray</ref>. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="note"><para>The copy may happen asynchronously if it involves a GPU context. TVMSynchronize is necessary. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/runtime/ndarray.h" line="86" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classtvm_1_1runtime_1_1NDArray_1a9b53b82c11b6eedb4e1f11d6cf769651" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void tvm::runtime::NDArray::CopyTo</definition>
+        <argsstring>(DLTensor *other) const </argsstring>
+        <name>CopyTo</name>
+        <param>
+          <type>DLTensor *</type>
+          <declname>other</declname>
+        </param>
+        <briefdescription>
+<para>Copy data content into another array. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>other</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The source array to be copied from. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="note"><para>The copy may happen asynchronously if it involves a GPU context. TVMSynchronize is necessary. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/runtime/ndarray.h" line="93" column="1" bodyfile="include/tvm/runtime/ndarray.h" bodystart="349" bodyend="352"/>
+      </memberdef>
+      <memberdef kind="function" id="classtvm_1_1runtime_1_1NDArray_1ace36fc5c52063d56e616ba9d4c8671f6" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void tvm::runtime::NDArray::CopyTo</definition>
+        <argsstring>(const NDArray &amp;other) const </argsstring>
+        <name>CopyTo</name>
+        <param>
+          <type>const <ref refid="classtvm_1_1runtime_1_1NDArray" kindref="compound">NDArray</ref> &amp;</type>
+          <declname>other</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/runtime/ndarray.h" line="94" column="1" bodyfile="include/tvm/runtime/ndarray.h" bodystart="354" bodyend="358"/>
+      </memberdef>
+      <memberdef kind="function" id="classtvm_1_1runtime_1_1NDArray_1a69726ab0ad5204fea12960dd43b4f8e2" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void tvm::runtime::NDArray::CopyToBytes</definition>
+        <argsstring>(void *data, size_t nbytes) const </argsstring>
+        <name>CopyToBytes</name>
+        <param>
+          <type>void *</type>
+          <declname>data</declname>
+        </param>
+        <param>
+          <type>size_t</type>
+          <declname>nbytes</declname>
+        </param>
+        <briefdescription>
+<para>Copy data content into another array. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>data</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The source bytes to be copied from. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>nbytes</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The size of the data buffer. Must be equal to the size of the <ref refid="classtvm_1_1runtime_1_1NDArray" kindref="compound">NDArray</ref>. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="note"><para>The copy may happen asynchronously if it involves a GPU context. TVMSynchronize is necessary. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/runtime/ndarray.h" line="103" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classtvm_1_1runtime_1_1NDArray_1a4ce4ee0a7bcbb466c3258a50b5878b07" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classtvm_1_1runtime_1_1NDArray" kindref="compound">NDArray</ref></type>
+        <definition>NDArray tvm::runtime::NDArray::CopyTo</definition>
+        <argsstring>(const DLContext &amp;ctx) const </argsstring>
+        <name>CopyTo</name>
+        <param>
+          <type>const DLContext &amp;</type>
+          <declname>ctx</declname>
+        </param>
+        <briefdescription>
+<para>Copy the data to another context. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>ctx</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The target context. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The array under another context. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/runtime/ndarray.h" line="109" column="1" bodyfile="include/tvm/runtime/ndarray.h" bodystart="360" bodyend="367"/>
+      </memberdef>
+      <memberdef kind="function" id="classtvm_1_1runtime_1_1NDArray_1ad78792a1e1feb160b0be4474a4c13a4c" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool tvm::runtime::NDArray::Load</definition>
+        <argsstring>(dmlc::Stream *stream)</argsstring>
+        <name>Load</name>
+        <param>
+          <type>dmlc::Stream *</type>
+          <declname>stream</declname>
+        </param>
+        <briefdescription>
+<para>Load <ref refid="classtvm_1_1runtime_1_1NDArray" kindref="compound">NDArray</ref> from stream. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>stream</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The input data stream </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Whether load is successful </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/runtime/ndarray.h" line="115" column="1" bodyfile="include/tvm/runtime/ndarray.h" bodystart="461" bodyend="503"/>
+      </memberdef>
+      <memberdef kind="function" id="classtvm_1_1runtime_1_1NDArray_1acc22b8911190353ab1050cccf3d015f2" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void tvm::runtime::NDArray::Save</definition>
+        <argsstring>(dmlc::Stream *stream) const </argsstring>
+        <name>Save</name>
+        <param>
+          <type>dmlc::Stream *</type>
+          <declname>stream</declname>
+        </param>
+        <briefdescription>
+<para>Save <ref refid="classtvm_1_1runtime_1_1NDArray" kindref="compound">NDArray</ref> to stream. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>stream</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The output data stream </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/runtime/ndarray.h" line="120" column="1" bodyfile="include/tvm/runtime/ndarray.h" bodystart="457" bodyend="459"/>
+      </memberdef>
+      <memberdef kind="function" id="classtvm_1_1runtime_1_1NDArray_1a368d0f65ebf07dc2ee5a717a85b3bc60" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classtvm_1_1runtime_1_1NDArray" kindref="compound">NDArray</ref></type>
+        <definition>NDArray tvm::runtime::NDArray::CreateView</definition>
+        <argsstring>(std::vector&lt; int64_t &gt; shape, DLDataType dtype)</argsstring>
+        <name>CreateView</name>
+        <param>
+          <type>std::vector&lt; int64_t &gt;</type>
+          <declname>shape</declname>
+        </param>
+        <param>
+          <type>DLDataType</type>
+          <declname>dtype</declname>
+        </param>
+        <briefdescription>
+<para>Create a <ref refid="classtvm_1_1runtime_1_1NDArray" kindref="compound">NDArray</ref> that shares the data memory with the current one. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>shape</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The shape of the new array. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>dtype</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The data type of the new array. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="note"><para>The memory size of new array must be smaller than the current one. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/runtime/ndarray.h" line="127" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classtvm_1_1runtime_1_1NDArray_1ada8b2d6986e62b733f2c6c9c03df2dfe" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>DLManagedTensor *</type>
+        <definition>DLManagedTensor* tvm::runtime::NDArray::ToDLPack</definition>
+        <argsstring>() const </argsstring>
+        <name>ToDLPack</name>
+        <briefdescription>
+<para>Create a reference view of <ref refid="classtvm_1_1runtime_1_1NDArray" kindref="compound">NDArray</ref> that represents as DLManagedTensor. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>A DLManagedTensor </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/runtime/ndarray.h" line="134" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classtvm_1_1runtime_1_1NDArray_1a04129f44f5d17ab63a10e107a939f282" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>std::vector&lt; int64_t &gt;</type>
+        <definition>std::vector&lt;int64_t&gt; tvm::runtime::NDArray::Shape</definition>
+        <argsstring>() const </argsstring>
+        <name>Shape</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/runtime/ndarray.h" line="166" column="1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="classtvm_1_1runtime_1_1NDArray_1a2ca068cfab0b928e5809631c1bec64e7" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classtvm_1_1runtime_1_1NDArray" kindref="compound">NDArray</ref></type>
+        <definition>static NDArray tvm::runtime::NDArray::Empty</definition>
+        <argsstring>(std::vector&lt; int64_t &gt; shape, DLDataType dtype, DLContext ctx)</argsstring>
+        <name>Empty</name>
+        <param>
+          <type>std::vector&lt; int64_t &gt;</type>
+          <declname>shape</declname>
+        </param>
+        <param>
+          <type>DLDataType</type>
+          <declname>dtype</declname>
+        </param>
+        <param>
+          <type>DLContext</type>
+          <declname>ctx</declname>
+        </param>
+        <briefdescription>
+<para>Create an empty <ref refid="classtvm_1_1runtime_1_1NDArray" kindref="compound">NDArray</ref>. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>shape</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The shape of the new array. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>dtype</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The data type of the new array. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>ctx</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The context of the <ref refid="classtvm_1_1Array" kindref="compound">Array</ref>. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The created <ref refid="classtvm_1_1Array" kindref="compound">Array</ref> </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/runtime/ndarray.h" line="142" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classtvm_1_1runtime_1_1NDArray_1abec485628a0ca451b668c42fd8fa691a" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classtvm_1_1runtime_1_1NDArray" kindref="compound">NDArray</ref></type>
+        <definition>static NDArray tvm::runtime::NDArray::FromDLPack</definition>
+        <argsstring>(DLManagedTensor *tensor)</argsstring>
+        <name>FromDLPack</name>
+        <param>
+          <type>DLManagedTensor *</type>
+          <declname>tensor</declname>
+        </param>
+        <briefdescription>
+<para>Create a <ref refid="classtvm_1_1runtime_1_1NDArray" kindref="compound">NDArray</ref> backed by a dlpack tensor. </para>        </briefdescription>
+        <detaileddescription>
+<para>This allows us to create a <ref refid="classtvm_1_1runtime_1_1NDArray" kindref="compound">NDArray</ref> using the memory allocated by an external deep learning framework that is DLPack compatible.</para><para>The memory is retained until the <ref refid="classtvm_1_1runtime_1_1NDArray" kindref="compound">NDArray</ref> went out of scope. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>tensor</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The DLPack tensor to copy from. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The created <ref refid="classtvm_1_1runtime_1_1NDArray" kindref="compound">NDArray</ref> view. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/runtime/ndarray.h" line="156" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classtvm_1_1runtime_1_1NDArray_1ae2a878fb8c847666d2318b979714cefa" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>static void tvm::runtime::NDArray::CopyFromTo</definition>
+        <argsstring>(const DLTensor *from, DLTensor *to, TVMStreamHandle stream=nullptr)</argsstring>
+        <name>CopyFromTo</name>
+        <param>
+          <type>const DLTensor *</type>
+          <declname>from</declname>
+        </param>
+        <param>
+          <type>DLTensor *</type>
+          <declname>to</declname>
+        </param>
+        <param>
+          <type><ref refid="c__runtime__api_8h_1ab1d5f6b7945e1410602a8a057fda5757" kindref="member">TVMStreamHandle</ref></type>
+          <declname>stream</declname>
+          <defval>nullptr</defval>
+        </param>
+        <briefdescription>
+<para>Function to copy data from one array to another. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>from</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The source array. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>to</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The target array. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>stream</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The stream used in copy. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/runtime/ndarray.h" line="163" column="1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="protected-func">
+      <memberdef kind="function" id="classtvm_1_1runtime_1_1NDArray_1a87268f39e0b14b18fee24d30c0f0ad95" prot="protected" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classtvm_1_1runtime_1_1NDArray_1_1Container" kindref="compound">Container</ref> *</type>
+        <definition>NDArray::Container * tvm::runtime::NDArray::get_mutable</definition>
+        <argsstring>() const </argsstring>
+        <name>get_mutable</name>
+        <briefdescription>
+<para>Get mutable internal container pointer. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>a mutable container pointer. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/runtime/ndarray.h" line="178" column="1" bodyfile="include/tvm/runtime/ndarray.h" bodystart="377" bodyend="379"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="protected-static-func">
+      <memberdef kind="function" id="classtvm_1_1runtime_1_1NDArray_1ab76ba9c638e1d6db8d6f0ba8c4d38670" prot="protected" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classtvm_1_1runtime_1_1ObjectPtr" kindref="compound">ObjectPtr</ref>&lt; <ref refid="classtvm_1_1runtime_1_1Object" kindref="compound">Object</ref> &gt;</type>
+        <definition>ObjectPtr&lt; Object &gt; tvm::runtime::NDArray::FFIDataFromHandle</definition>
+        <argsstring>(TVMArrayHandle handle)</argsstring>
+        <name>FFIDataFromHandle</name>
+        <param>
+          <type><ref refid="c__runtime__api_8h_1a73ca58cb32f4a4adf71d274dc1e27be4" kindref="member">TVMArrayHandle</ref></type>
+          <declname>handle</declname>
+        </param>
+        <briefdescription>
+<para>Construct <ref refid="classtvm_1_1runtime_1_1NDArray" kindref="compound">NDArray</ref>&apos;s Data field from array handle in FFI. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>handle</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The array handle. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The corresponding <ref refid="classtvm_1_1runtime_1_1ObjectPtr" kindref="compound">ObjectPtr</ref> to the constructed container object.</para></simplesect>
+<simplesect kind="note"><para>We keep a special calling convention for <ref refid="classtvm_1_1runtime_1_1NDArray" kindref="compound">NDArray</ref> by passing <ref refid="classtvm_1_1runtime_1_1NDArray_1_1ContainerBase" kindref="compound">ContainerBase</ref> pointer in FFI. As a result, the argument is compatible to DLTensor*. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/runtime/ndarray.h" line="189" column="1" bodyfile="include/tvm/runtime/ndarray.h" bodystart="381" bodyend="384"/>
+      </memberdef>
+      <memberdef kind="function" id="classtvm_1_1runtime_1_1NDArray_1ade0e2757904f4f5ba5c667ae01793a47" prot="protected" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void tvm::runtime::NDArray::FFIDecRef</definition>
+        <argsstring>(TVMArrayHandle handle)</argsstring>
+        <name>FFIDecRef</name>
+        <param>
+          <type><ref refid="c__runtime__api_8h_1a73ca58cb32f4a4adf71d274dc1e27be4" kindref="member">TVMArrayHandle</ref></type>
+          <declname>handle</declname>
+        </param>
+        <briefdescription>
+<para>DecRef resource managed by an FFI array handle. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>handle</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The array handle. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/runtime/ndarray.h" line="194" column="1" bodyfile="include/tvm/runtime/ndarray.h" bodystart="395" bodyend="398"/>
+      </memberdef>
+      <memberdef kind="function" id="classtvm_1_1runtime_1_1NDArray_1a141e032d848c60f8261046304bdc8c4c" prot="protected" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="c__runtime__api_8h_1a73ca58cb32f4a4adf71d274dc1e27be4" kindref="member">TVMArrayHandle</ref></type>
+        <definition>TVMArrayHandle tvm::runtime::NDArray::FFIGetHandle</definition>
+        <argsstring>(const ObjectRef &amp;nd)</argsstring>
+        <name>FFIGetHandle</name>
+        <param>
+          <type>const <ref refid="classtvm_1_1runtime_1_1ObjectRef" kindref="compound">ObjectRef</ref> &amp;</type>
+          <declname>nd</declname>
+        </param>
+        <briefdescription>
+<para>Get FFI <ref refid="classtvm_1_1Array" kindref="compound">Array</ref> handle from ndarray. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>nd</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The object with ndarray type. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The result array handle. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/runtime/ndarray.h" line="200" column="1" bodyfile="include/tvm/runtime/ndarray.h" bodystart="386" bodyend="393"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Managed <ref refid="classtvm_1_1runtime_1_1NDArray" kindref="compound">NDArray</ref>. The array is backed by reference counted blocks. </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="5823">
+        <label>tvm::runtime::ObjectRef</label>
+        <link refid="classtvm_1_1runtime_1_1ObjectRef"/>
+      </node>
+      <node id="5822">
+        <label>tvm::runtime::NDArray</label>
+        <link refid="classtvm_1_1runtime_1_1NDArray"/>
+        <childnode refid="5823" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="5825">
+        <label>tvm::runtime::ObjectRef</label>
+        <link refid="classtvm_1_1runtime_1_1ObjectRef"/>
+        <childnode refid="5826" relation="usage">
+          <edgelabel>#data_</edgelabel>
+        </childnode>
+      </node>
+      <node id="5824">
+        <label>tvm::runtime::NDArray</label>
+        <link refid="classtvm_1_1runtime_1_1NDArray"/>
+        <childnode refid="5825" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="5826">
+        <label>tvm::runtime::ObjectPtr&lt; tvm::runtime::Object &gt;</label>
+        <link refid="classtvm_1_1runtime_1_1ObjectPtr"/>
+      </node>
+    </collaborationgraph>
+    <location file="include/tvm/runtime/ndarray.h" line="42" column="1" bodyfile="include/tvm/runtime/ndarray.h" bodystart="42" bodyend="201"/>
+    <listofallmembers>
+      <member refid="classtvm_1_1runtime_1_1ObjectRef_1ab51c99a3607ca95884d9efd978998ce8" prot="public" virt="non-virtual"><scope>tvm::runtime::NDArray</scope><name>as</name></member>
+      <member refid="classtvm_1_1runtime_1_1NDArray_1abcb2ab5512d146d173e0aab86eee72a9" prot="public" virt="non-virtual"><scope>tvm::runtime::NDArray</scope><name>ContainerType</name></member>
+      <member refid="classtvm_1_1runtime_1_1NDArray_1a1550151d3616e918d45e047840b81e1e" prot="public" virt="non-virtual"><scope>tvm::runtime::NDArray</scope><name>CopyFrom</name></member>
+      <member refid="classtvm_1_1runtime_1_1NDArray_1a62ceb9ace65922dde15790fff6d04661" prot="public" virt="non-virtual"><scope>tvm::runtime::NDArray</scope><name>CopyFrom</name></member>
+      <member refid="classtvm_1_1runtime_1_1NDArray_1af4d489a1208be9cc4248b592769bccf2" prot="public" virt="non-virtual"><scope>tvm::runtime::NDArray</scope><name>CopyFromBytes</name></member>
+      <member refid="classtvm_1_1runtime_1_1NDArray_1ae2a878fb8c847666d2318b979714cefa" prot="public" virt="non-virtual"><scope>tvm::runtime::NDArray</scope><name>CopyFromTo</name></member>
+      <member refid="classtvm_1_1runtime_1_1NDArray_1a9b53b82c11b6eedb4e1f11d6cf769651" prot="public" virt="non-virtual"><scope>tvm::runtime::NDArray</scope><name>CopyTo</name></member>
+      <member refid="classtvm_1_1runtime_1_1NDArray_1ace36fc5c52063d56e616ba9d4c8671f6" prot="public" virt="non-virtual"><scope>tvm::runtime::NDArray</scope><name>CopyTo</name></member>
+      <member refid="classtvm_1_1runtime_1_1NDArray_1a4ce4ee0a7bcbb466c3258a50b5878b07" prot="public" virt="non-virtual"><scope>tvm::runtime::NDArray</scope><name>CopyTo</name></member>
+      <member refid="classtvm_1_1runtime_1_1NDArray_1a69726ab0ad5204fea12960dd43b4f8e2" prot="public" virt="non-virtual"><scope>tvm::runtime::NDArray</scope><name>CopyToBytes</name></member>
+      <member refid="classtvm_1_1runtime_1_1NDArray_1a368d0f65ebf07dc2ee5a717a85b3bc60" prot="public" virt="non-virtual"><scope>tvm::runtime::NDArray</scope><name>CreateView</name></member>
+      <member refid="classtvm_1_1runtime_1_1ObjectRef_1ac261cdb80487fb29ac42b28678f8cbef" prot="protected" virt="non-virtual"><scope>tvm::runtime::NDArray</scope><name>data_</name></member>
+      <member refid="classtvm_1_1runtime_1_1ObjectRef_1a79d0ae0a887ed5cbfa67de7d43f0ef3a" prot="public" virt="non-virtual"><scope>tvm::runtime::NDArray</scope><name>defined</name></member>
+      <member refid="classtvm_1_1runtime_1_1ObjectRef_1acd04bb22a6861e9952c344ee8547411f" prot="protected" virt="non-virtual"><scope>tvm::runtime::NDArray</scope><name>DowncastNoCheck</name></member>
+      <member refid="classtvm_1_1runtime_1_1NDArray_1a2ca068cfab0b928e5809631c1bec64e7" prot="public" virt="non-virtual"><scope>tvm::runtime::NDArray</scope><name>Empty</name></member>
+      <member refid="classtvm_1_1runtime_1_1ObjectRef_1a22e5bb9d64dbc773bb9263b70882239e" prot="protected" virt="non-virtual"><scope>tvm::runtime::NDArray</scope><name>FFIClearAfterMove</name></member>
+      <member refid="classtvm_1_1runtime_1_1NDArray_1ab76ba9c638e1d6db8d6f0ba8c4d38670" prot="protected" virt="non-virtual"><scope>tvm::runtime::NDArray</scope><name>FFIDataFromHandle</name></member>
+      <member refid="classtvm_1_1runtime_1_1NDArray_1ade0e2757904f4f5ba5c667ae01793a47" prot="protected" virt="non-virtual"><scope>tvm::runtime::NDArray</scope><name>FFIDecRef</name></member>
+      <member refid="classtvm_1_1runtime_1_1NDArray_1a141e032d848c60f8261046304bdc8c4c" prot="protected" virt="non-virtual"><scope>tvm::runtime::NDArray</scope><name>FFIGetHandle</name></member>
+      <member refid="classtvm_1_1runtime_1_1NDArray_1abec485628a0ca451b668c42fd8fa691a" prot="public" virt="non-virtual"><scope>tvm::runtime::NDArray</scope><name>FromDLPack</name></member>
+      <member refid="classtvm_1_1runtime_1_1ObjectRef_1a11ad7a277c175ee33e1551bbb77a8694" prot="public" virt="non-virtual"><scope>tvm::runtime::NDArray</scope><name>get</name></member>
+      <member refid="classtvm_1_1runtime_1_1NDArray_1a87268f39e0b14b18fee24d30c0f0ad95" prot="protected" virt="non-virtual"><scope>tvm::runtime::NDArray</scope><name>get_mutable</name></member>
+      <member refid="classtvm_1_1runtime_1_1ObjectRef_1aed593996e4076632450de8fde776707c" prot="protected" virt="non-virtual"><scope>tvm::runtime::NDArray</scope><name>GetDataPtr</name></member>
+      <member refid="classtvm_1_1runtime_1_1NDArray_1ac041c89504299f82baf990c9ad081c44" prot="public" virt="non-virtual"><scope>tvm::runtime::NDArray</scope><name>IsContiguous</name></member>
+      <member refid="classtvm_1_1runtime_1_1NDArray_1ad78792a1e1feb160b0be4474a4c13a4c" prot="public" virt="non-virtual"><scope>tvm::runtime::NDArray</scope><name>Load</name></member>
+      <member refid="classtvm_1_1runtime_1_1NDArray_1a4bbb80e8e36317829dd63e7f44ffbb0f" prot="public" virt="non-virtual"><scope>tvm::runtime::NDArray</scope><name>NDArray</name></member>
+      <member refid="classtvm_1_1runtime_1_1NDArray_1af5801a105ceb450616a83d19c5c92326" prot="public" virt="non-virtual"><scope>tvm::runtime::NDArray</scope><name>NDArray</name></member>
+      <member refid="classtvm_1_1runtime_1_1ObjectRef_1aa07c1f6d66a438ea950637d13ed09471" prot="public" virt="non-virtual"><scope>tvm::runtime::NDArray</scope><name>ObjectRef</name></member>
+      <member refid="classtvm_1_1runtime_1_1ObjectRef_1a6a7dd7404edf1c26f8dbd9bd92d03a02" prot="public" virt="non-virtual"><scope>tvm::runtime::NDArray</scope><name>ObjectRef</name></member>
+      <member refid="classtvm_1_1runtime_1_1ObjectRef_1a2ae377cc59f98b42339d76bded1c1711" prot="public" virt="non-virtual"><scope>tvm::runtime::NDArray</scope><name>operator!=</name></member>
+      <member refid="classtvm_1_1runtime_1_1NDArray_1ae347be13193ee72c6bde285c6ae787ad" prot="public" virt="non-virtual"><scope>tvm::runtime::NDArray</scope><name>operator-&gt;</name></member>
+      <member refid="classtvm_1_1runtime_1_1ObjectRef_1a17626209947c4a2f302422be451661c5" prot="public" virt="non-virtual"><scope>tvm::runtime::NDArray</scope><name>operator&lt;</name></member>
+      <member refid="classtvm_1_1runtime_1_1ObjectRef_1ac8c2b78649a428e35e279d085d509e1b" prot="public" virt="non-virtual"><scope>tvm::runtime::NDArray</scope><name>operator==</name></member>
+      <member refid="classtvm_1_1runtime_1_1NDArray_1af2a8ccab95d432d1ecad7a389e11bcd3" prot="public" virt="non-virtual"><scope>tvm::runtime::NDArray</scope><name>reset</name></member>
+      <member refid="classtvm_1_1runtime_1_1ObjectRef_1a62014c9eba5cae2ab5a84963725d6a65" prot="public" virt="non-virtual"><scope>tvm::runtime::NDArray</scope><name>same_as</name></member>
+      <member refid="classtvm_1_1runtime_1_1NDArray_1acc22b8911190353ab1050cccf3d015f2" prot="public" virt="non-virtual"><scope>tvm::runtime::NDArray</scope><name>Save</name></member>
+      <member refid="classtvm_1_1runtime_1_1NDArray_1a04129f44f5d17ab63a10e107a939f282" prot="public" virt="non-virtual"><scope>tvm::runtime::NDArray</scope><name>Shape</name></member>
+      <member refid="classtvm_1_1runtime_1_1NDArray_1ada8b2d6986e62b733f2c6c9c03df2dfe" prot="public" virt="non-virtual"><scope>tvm::runtime::NDArray</scope><name>ToDLPack</name></member>
+      <member refid="classtvm_1_1runtime_1_1NDArray_1a35ae555d4becf356b16aeacd353d41ee" prot="protected" virt="non-virtual"><scope>tvm::runtime::NDArray</scope><name>TVMArgsSetter</name></member>
+      <member refid="classtvm_1_1runtime_1_1NDArray_1a9a9fd94393cfd7d4b6e6029348e3e19a" prot="protected" virt="non-virtual"><scope>tvm::runtime::NDArray</scope><name>TVMPODValue_</name></member>
+      <member refid="classtvm_1_1runtime_1_1NDArray_1ae0ea8b4adc6dab8c74086bceaef6b3e1" prot="protected" virt="non-virtual"><scope>tvm::runtime::NDArray</scope><name>TVMRetValue</name></member>
+      <member refid="classtvm_1_1runtime_1_1ObjectRef_1a4142990fd1959abc95aa0cccca4f6cda" prot="public" virt="non-virtual"><scope>tvm::runtime::NDArray</scope><name>unique</name></member>
+      <member refid="classtvm_1_1runtime_1_1NDArray_1acb2fd06934aac23ba492e78619c7eaa5" prot="public" virt="non-virtual"><scope>tvm::runtime::NDArray</scope><name>use_count</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

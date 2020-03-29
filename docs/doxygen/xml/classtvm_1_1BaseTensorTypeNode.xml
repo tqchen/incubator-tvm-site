@@ -1,0 +1,112 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="classtvm_1_1BaseTensorTypeNode" kind="class" language="C++" prot="public">
+    <compoundname>tvm::BaseTensorTypeNode</compoundname>
+    <basecompoundref refid="classtvm_1_1TypeNode" prot="public" virt="non-virtual">tvm::TypeNode</basecompoundref>
+    <derivedcompoundref refid="classtvm_1_1TensorTypeNode" prot="public" virt="non-virtual">tvm::TensorTypeNode</derivedcompoundref>
+    <includes refid="tensor__type_8h" local="no">tensor_type.h</includes>
+      <sectiondef kind="public-static-attrib">
+      <memberdef kind="variable" id="classtvm_1_1BaseTensorTypeNode_1a206bc6500bcacd821703cf8a5db2541b" prot="public" static="yes" mutable="no">
+        <type>constexpr const char *</type>
+        <definition>constexpr const char* tvm::BaseTensorTypeNode::_type_key</definition>
+        <argsstring></argsstring>
+        <name>_type_key</name>
+        <initializer>= &quot;relay.BaseTensorType&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/ir/tensor_type.h" line="38" column="1" bodyfile="include/tvm/ir/tensor_type.h" bodystart="38" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classtvm_1_1BaseTensorTypeNode_1afc675db92c700532b65fe819b1a37eb5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>tvm::BaseTensorTypeNode::TVM_DECLARE_BASE_OBJECT_INFO</definition>
+        <argsstring>(BaseTensorTypeNode, TypeNode)</argsstring>
+        <name>TVM_DECLARE_BASE_OBJECT_INFO</name>
+        <param>
+          <type><ref refid="classtvm_1_1BaseTensorTypeNode" kindref="compound">BaseTensorTypeNode</ref></type>
+        </param>
+        <param>
+          <type><ref refid="classtvm_1_1TypeNode" kindref="compound">TypeNode</ref></type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/ir/tensor_type.h" line="39" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Base of all Tensor types This container can hold <ref refid="classtvm_1_1TensorType" kindref="compound">TensorType</ref> or GenericTensorType. </para>    </briefdescription>
+    <detaileddescription>
+<para><simplesect kind="see"><para><ref refid="classtvm_1_1BaseTensorType" kindref="compound">BaseTensorType</ref>, <ref refid="classtvm_1_1TensorTypeNode" kindref="compound">TensorTypeNode</ref> </para></simplesect>
+</para>    </detaileddescription>
+    <inheritancegraph>
+      <node id="4369">
+        <label>tvm::TypeNode</label>
+        <link refid="classtvm_1_1TypeNode"/>
+        <childnode refid="4370" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="4370">
+        <label>Object</label>
+      </node>
+      <node id="4368">
+        <label>tvm::BaseTensorTypeNode</label>
+        <link refid="classtvm_1_1BaseTensorTypeNode"/>
+        <childnode refid="4369" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="4371">
+        <label>tvm::TensorTypeNode</label>
+        <link refid="classtvm_1_1TensorTypeNode"/>
+        <childnode refid="4368" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="4376">
+        <label>ObjectRef</label>
+      </node>
+      <node id="4375">
+        <label>tvm::Span</label>
+        <link refid="classtvm_1_1Span"/>
+        <childnode refid="4376" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="4373">
+        <label>tvm::TypeNode</label>
+        <link refid="classtvm_1_1TypeNode"/>
+        <childnode refid="4374" relation="public-inheritance">
+        </childnode>
+        <childnode refid="4375" relation="usage">
+          <edgelabel>+span</edgelabel>
+        </childnode>
+      </node>
+      <node id="4374">
+        <label>Object</label>
+      </node>
+      <node id="4372">
+        <label>tvm::BaseTensorTypeNode</label>
+        <link refid="classtvm_1_1BaseTensorTypeNode"/>
+        <childnode refid="4373" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="include/tvm/ir/tensor_type.h" line="36" column="1" bodyfile="include/tvm/ir/tensor_type.h" bodystart="36" bodyend="40"/>
+    <listofallmembers>
+      <member refid="classtvm_1_1TypeNode_1ab02f7d165755f57689f986aca467a7e5" prot="public" virt="non-virtual"><scope>tvm::BaseTensorTypeNode</scope><name>_type_has_method_sequal_reduce</name></member>
+      <member refid="classtvm_1_1TypeNode_1a4179c7d7d55d1141cadfd19547fb1344" prot="public" virt="non-virtual"><scope>tvm::BaseTensorTypeNode</scope><name>_type_has_method_shash_reduce</name></member>
+      <member refid="classtvm_1_1BaseTensorTypeNode_1a206bc6500bcacd821703cf8a5db2541b" prot="public" virt="non-virtual"><scope>tvm::BaseTensorTypeNode</scope><name>_type_key</name></member>
+      <member refid="classtvm_1_1TypeNode_1a7b06d502a5162d51bb205691bbb95bb5" prot="public" virt="non-virtual"><scope>tvm::BaseTensorTypeNode</scope><name>span</name></member>
+      <member refid="classtvm_1_1BaseTensorTypeNode_1afc675db92c700532b65fe819b1a37eb5" prot="public" virt="non-virtual"><scope>tvm::BaseTensorTypeNode</scope><name>TVM_DECLARE_BASE_OBJECT_INFO</name></member>
+      <member refid="classtvm_1_1TypeNode_1abadff70e220806f889e81a0ad3bca0da" prot="public" virt="non-virtual" ambiguityscope="tvm::TypeNode::"><scope>tvm::BaseTensorTypeNode</scope><name>TVM_DECLARE_BASE_OBJECT_INFO</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,565 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="env__func_8h" kind="file" language="C++">
+    <compoundname>env_func.h</compoundname>
+    <includes refid="reflection_8h" local="no">tvm/node/reflection.h</includes>
+    <includes local="no">string</includes>
+    <includes local="no">utility</includes>
+    <includedby refid="type__relation_8h" local="no">include/tvm/ir/type_relation.h</includedby>
+    <includedby refid="relay_2type_8h" local="no">include/tvm/relay/type.h</includedby>
+    <incdepgraph>
+      <node id="10159">
+        <label>atomic</label>
+      </node>
+      <node id="10172">
+        <label>functional</label>
+      </node>
+      <node id="10174">
+        <label>limits</label>
+      </node>
+      <node id="10163">
+        <label>tvm/runtime/module.h</label>
+        <link refid="runtime_2module_8h"/>
+        <childnode refid="10164" relation="include">
+        </childnode>
+        <childnode refid="10150" relation="include">
+        </childnode>
+        <childnode refid="10154" relation="include">
+        </childnode>
+        <childnode refid="10160" relation="include">
+        </childnode>
+        <childnode refid="10165" relation="include">
+        </childnode>
+        <childnode refid="10166" relation="include">
+        </childnode>
+        <childnode refid="10157" relation="include">
+        </childnode>
+        <childnode refid="10167" relation="include">
+        </childnode>
+        <childnode refid="10162" relation="include">
+        </childnode>
+      </node>
+      <node id="10162">
+        <label>tvm/runtime/packed_func.h</label>
+        <link refid="packed__func_8h"/>
+        <childnode refid="10155" relation="include">
+        </childnode>
+        <childnode refid="10150" relation="include">
+        </childnode>
+        <childnode refid="10163" relation="include">
+        </childnode>
+        <childnode refid="10168" relation="include">
+        </childnode>
+        <childnode refid="10171" relation="include">
+        </childnode>
+        <childnode refid="10154" relation="include">
+        </childnode>
+        <childnode refid="10172" relation="include">
+        </childnode>
+        <childnode refid="10173" relation="include">
+        </childnode>
+        <childnode refid="10166" relation="include">
+        </childnode>
+        <childnode refid="10157" relation="include">
+        </childnode>
+        <childnode refid="10174" relation="include">
+        </childnode>
+        <childnode refid="10165" relation="include">
+        </childnode>
+        <childnode refid="10158" relation="include">
+        </childnode>
+        <childnode refid="10156" relation="include">
+        </childnode>
+      </node>
+      <node id="10176">
+        <label>tvm/node/functor.h</label>
+        <link refid="functor_8h"/>
+        <childnode refid="10155" relation="include">
+        </childnode>
+        <childnode refid="10154" relation="include">
+        </childnode>
+        <childnode refid="10166" relation="include">
+        </childnode>
+        <childnode refid="10156" relation="include">
+        </childnode>
+        <childnode refid="10158" relation="include">
+        </childnode>
+      </node>
+      <node id="10148">
+        <label>include/tvm/ir/env_func.h</label>
+        <link refid="env_func.h"/>
+        <childnode refid="10149" relation="include">
+        </childnode>
+        <childnode refid="10157" relation="include">
+        </childnode>
+        <childnode refid="10158" relation="include">
+        </childnode>
+      </node>
+      <node id="10154">
+        <label>tvm/runtime/object.h</label>
+        <link refid="object_8h"/>
+        <childnode refid="10155" relation="include">
+        </childnode>
+        <childnode refid="10150" relation="include">
+        </childnode>
+        <childnode refid="10156" relation="include">
+        </childnode>
+        <childnode refid="10157" relation="include">
+        </childnode>
+        <childnode refid="10158" relation="include">
+        </childnode>
+        <childnode refid="10159" relation="include">
+        </childnode>
+      </node>
+      <node id="10152">
+        <label>stdint.h</label>
+      </node>
+      <node id="10168">
+        <label>tvm/runtime/ndarray.h</label>
+        <link refid="ndarray_8h"/>
+        <childnode refid="10150" relation="include">
+        </childnode>
+        <childnode refid="10154" relation="include">
+        </childnode>
+        <childnode refid="10169" relation="include">
+        </childnode>
+        <childnode refid="10159" relation="include">
+        </childnode>
+        <childnode refid="10166" relation="include">
+        </childnode>
+        <childnode refid="10158" relation="include">
+        </childnode>
+      </node>
+      <node id="10179">
+        <label>tvm/node/structural_hash.h</label>
+        <link refid="structural__hash_8h"/>
+        <childnode refid="10171" relation="include">
+        </childnode>
+        <childnode refid="10176" relation="include">
+        </childnode>
+        <childnode refid="10177" relation="include">
+        </childnode>
+        <childnode refid="10157" relation="include">
+        </childnode>
+        <childnode refid="10172" relation="include">
+        </childnode>
+      </node>
+      <node id="10157">
+        <label>string</label>
+      </node>
+      <node id="10177">
+        <label>tvm/node/container.h</label>
+        <link refid="node_2container_8h"/>
+        <childnode refid="10154" relation="include">
+        </childnode>
+        <childnode refid="10160" relation="include">
+        </childnode>
+        <childnode refid="10162" relation="include">
+        </childnode>
+        <childnode refid="10156" relation="include">
+        </childnode>
+        <childnode refid="10166" relation="include">
+        </childnode>
+        <childnode refid="10178" relation="include">
+        </childnode>
+        <childnode refid="10167" relation="include">
+        </childnode>
+        <childnode refid="10158" relation="include">
+        </childnode>
+        <childnode refid="10157" relation="include">
+        </childnode>
+      </node>
+      <node id="10153">
+        <label>stddef.h</label>
+      </node>
+      <node id="10173">
+        <label>tuple</label>
+      </node>
+      <node id="10155">
+        <label>dmlc/logging.h</label>
+      </node>
+      <node id="10166">
+        <label>vector</label>
+      </node>
+      <node id="10175">
+        <label>tvm/node/structural_equal.h</label>
+        <link refid="structural__equal_8h"/>
+        <childnode refid="10171" relation="include">
+        </childnode>
+        <childnode refid="10176" relation="include">
+        </childnode>
+        <childnode refid="10177" relation="include">
+        </childnode>
+        <childnode refid="10157" relation="include">
+        </childnode>
+      </node>
+      <node id="10164">
+        <label>dmlc/io.h</label>
+      </node>
+      <node id="10150">
+        <label>tvm/runtime/c_runtime_api.h</label>
+        <link refid="c__runtime__api_8h"/>
+        <childnode refid="10151" relation="include">
+        </childnode>
+        <childnode refid="10152" relation="include">
+        </childnode>
+        <childnode refid="10153" relation="include">
+        </childnode>
+      </node>
+      <node id="10158">
+        <label>utility</label>
+      </node>
+      <node id="10170">
+        <label>dmlc/serializer.h</label>
+      </node>
+      <node id="10161">
+        <label>cstdlib</label>
+      </node>
+      <node id="10169">
+        <label>tvm/runtime/serializer.h</label>
+        <link refid="serializer_8h"/>
+        <childnode refid="10164" relation="include">
+        </childnode>
+        <childnode refid="10170" relation="include">
+        </childnode>
+        <childnode refid="10150" relation="include">
+        </childnode>
+        <childnode refid="10168" relation="include">
+        </childnode>
+      </node>
+      <node id="10167">
+        <label>unordered_map</label>
+      </node>
+      <node id="10149">
+        <label>tvm/node/reflection.h</label>
+        <link refid="reflection_8h"/>
+        <childnode refid="10150" relation="include">
+        </childnode>
+        <childnode refid="10154" relation="include">
+        </childnode>
+        <childnode refid="10160" relation="include">
+        </childnode>
+        <childnode refid="10162" relation="include">
+        </childnode>
+        <childnode refid="10168" relation="include">
+        </childnode>
+        <childnode refid="10171" relation="include">
+        </childnode>
+        <childnode refid="10175" relation="include">
+        </childnode>
+        <childnode refid="10179" relation="include">
+        </childnode>
+        <childnode refid="10166" relation="include">
+        </childnode>
+        <childnode refid="10157" relation="include">
+        </childnode>
+        <childnode refid="10156" relation="include">
+        </childnode>
+      </node>
+      <node id="10160">
+        <label>tvm/runtime/memory.h</label>
+        <link refid="runtime_2memory_8h"/>
+        <childnode refid="10154" relation="include">
+        </childnode>
+        <childnode refid="10161" relation="include">
+        </childnode>
+        <childnode refid="10158" relation="include">
+        </childnode>
+        <childnode refid="10156" relation="include">
+        </childnode>
+      </node>
+      <node id="10171">
+        <label>tvm/runtime/data_type.h</label>
+        <link refid="data__type_8h"/>
+        <childnode refid="10150" relation="include">
+        </childnode>
+        <childnode refid="10155" relation="include">
+        </childnode>
+        <childnode refid="10156" relation="include">
+        </childnode>
+      </node>
+      <node id="10156">
+        <label>type_traits</label>
+      </node>
+      <node id="10151">
+        <label>dlpack/dlpack.h</label>
+      </node>
+      <node id="10165">
+        <label>memory</label>
+      </node>
+      <node id="10178">
+        <label>initializer_list</label>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="10195">
+        <label>include/tvm/relay/interpreter.h</label>
+        <link refid="interpreter_8h"/>
+      </node>
+      <node id="10185">
+        <label>include/tvm/relay/adt.h</label>
+        <link refid="relay_2adt_8h"/>
+        <childnode refid="10184" relation="include">
+        </childnode>
+        <childnode refid="10186" relation="include">
+        </childnode>
+        <childnode refid="10187" relation="include">
+        </childnode>
+        <childnode refid="10188" relation="include">
+        </childnode>
+      </node>
+      <node id="10180">
+        <label>include/tvm/ir/env_func.h</label>
+        <link refid="env_func.h"/>
+        <childnode refid="10181" relation="include">
+        </childnode>
+        <childnode refid="10199" relation="include">
+        </childnode>
+      </node>
+      <node id="10181">
+        <label>include/tvm/ir/type_relation.h</label>
+        <link refid="type__relation_8h"/>
+        <childnode refid="10182" relation="include">
+        </childnode>
+        <childnode refid="10199" relation="include">
+        </childnode>
+      </node>
+      <node id="10192">
+        <label>include/tvm/relay/qnn/transform.h</label>
+        <link refid="include_2tvm_2relay_2qnn_2transform_8h"/>
+      </node>
+      <node id="10183">
+        <label>include/tvm/relay/expr.h</label>
+        <link refid="relay_2expr_8h"/>
+        <childnode refid="10184" relation="include">
+        </childnode>
+        <childnode refid="10185" relation="include">
+        </childnode>
+        <childnode refid="10186" relation="include">
+        </childnode>
+        <childnode refid="10189" relation="include">
+        </childnode>
+        <childnode refid="10190" relation="include">
+        </childnode>
+        <childnode refid="10187" relation="include">
+        </childnode>
+        <childnode refid="10193" relation="include">
+        </childnode>
+        <childnode refid="10194" relation="include">
+        </childnode>
+        <childnode refid="10195" relation="include">
+        </childnode>
+        <childnode refid="10196" relation="include">
+        </childnode>
+        <childnode refid="10197" relation="include">
+        </childnode>
+        <childnode refid="10198" relation="include">
+        </childnode>
+        <childnode refid="10188" relation="include">
+        </childnode>
+        <childnode refid="10191" relation="include">
+        </childnode>
+      </node>
+      <node id="10184">
+        <label>include/tvm/ir/type_functor.h</label>
+        <link refid="type__functor_8h"/>
+      </node>
+      <node id="10190">
+        <label>include/tvm/relay/attrs/transform.h</label>
+        <link refid="include_2tvm_2relay_2attrs_2transform_8h"/>
+        <childnode refid="10191" relation="include">
+        </childnode>
+      </node>
+      <node id="10188">
+        <label>include/tvm/relay/pattern_functor.h</label>
+        <link refid="pattern__functor_8h"/>
+      </node>
+      <node id="10194">
+        <label>include/tvm/relay/function.h</label>
+        <link refid="relay_2function_8h"/>
+        <childnode refid="10186" relation="include">
+        </childnode>
+        <childnode refid="10187" relation="include">
+        </childnode>
+        <childnode refid="10191" relation="include">
+        </childnode>
+      </node>
+      <node id="10199">
+        <label>include/tvm/relay/type.h</label>
+        <link refid="relay_2type_8h"/>
+        <childnode refid="10185" relation="include">
+        </childnode>
+        <childnode refid="10186" relation="include">
+        </childnode>
+        <childnode refid="10183" relation="include">
+        </childnode>
+        <childnode refid="10196" relation="include">
+        </childnode>
+        <childnode refid="10197" relation="include">
+        </childnode>
+      </node>
+      <node id="10189">
+        <label>include/tvm/relay/attrs/memory.h</label>
+        <link refid="relay_2attrs_2memory_8h"/>
+      </node>
+      <node id="10193">
+        <label>include/tvm/relay/feature.h</label>
+        <link refid="feature_8h"/>
+      </node>
+      <node id="10191">
+        <label>include/tvm/relay/transform.h</label>
+        <link refid="include_2tvm_2relay_2transform_8h"/>
+        <childnode refid="10192" relation="include">
+        </childnode>
+      </node>
+      <node id="10187">
+        <label>include/tvm/relay/expr_functor.h</label>
+        <link refid="relay_2expr__functor_8h"/>
+      </node>
+      <node id="10182">
+        <label>include/tvm/ir/op.h</label>
+        <link refid="ir_2op_8h"/>
+        <childnode refid="10183" relation="include">
+        </childnode>
+        <childnode refid="10196" relation="include">
+        </childnode>
+      </node>
+      <node id="10197">
+        <label>include/tvm/relay/op_attr_types.h</label>
+        <link refid="op__attr__types_8h"/>
+        <childnode refid="10198" relation="include">
+        </childnode>
+        <childnode refid="10191" relation="include">
+        </childnode>
+      </node>
+      <node id="10186">
+        <label>include/tvm/relay/analysis.h</label>
+        <link refid="analysis_8h"/>
+      </node>
+      <node id="10196">
+        <label>include/tvm/relay/op.h</label>
+        <link refid="relay_2op_8h"/>
+        <childnode refid="10187" relation="include">
+        </childnode>
+        <childnode refid="10188" relation="include">
+        </childnode>
+        <childnode refid="10191" relation="include">
+        </childnode>
+      </node>
+      <node id="10198">
+        <label>include/tvm/relay/op_strategy.h</label>
+        <link refid="op__strategy_8h"/>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="classtvm_1_1EnvFuncNode" prot="public">tvm::EnvFuncNode</innerclass>
+    <innerclass refid="classtvm_1_1EnvFunc" prot="public">tvm::EnvFunc</innerclass>
+    <innerclass refid="classtvm_1_1TypedEnvFunc" prot="public">tvm::TypedEnvFunc</innerclass>
+    <innerclass refid="classtvm_1_1TypedEnvFunc_3_01R_07Args_8_8_8_08_4" prot="public">tvm::TypedEnvFunc&lt; R(Args...)&gt;</innerclass>
+    <innernamespace refid="namespacetvm">tvm</innernamespace>
+    <briefdescription>
+<para>Serializable global function used in IR. </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="2"><highlight class="comment"><sp/>*<sp/>Licensed<sp/>to<sp/>the<sp/>Apache<sp/>Software<sp/>Foundation<sp/>(ASF)<sp/>under<sp/>one</highlight></codeline>
+<codeline lineno="3"><highlight class="comment"><sp/>*<sp/>or<sp/>more<sp/>contributor<sp/>license<sp/>agreements.<sp/><sp/>See<sp/>the<sp/>NOTICE<sp/>file</highlight></codeline>
+<codeline lineno="4"><highlight class="comment"><sp/>*<sp/>distributed<sp/>with<sp/>this<sp/>work<sp/>for<sp/>additional<sp/>information</highlight></codeline>
+<codeline lineno="5"><highlight class="comment"><sp/>*<sp/>regarding<sp/>copyright<sp/>ownership.<sp/><sp/>The<sp/>ASF<sp/>licenses<sp/>this<sp/>file</highlight></codeline>
+<codeline lineno="6"><highlight class="comment"><sp/>*<sp/>to<sp/>you<sp/>under<sp/>the<sp/>Apache<sp/>License,<sp/>Version<sp/>2.0<sp/>(the</highlight></codeline>
+<codeline lineno="7"><highlight class="comment"><sp/>*<sp/>&quot;License&quot;);<sp/>you<sp/>may<sp/>not<sp/>use<sp/>this<sp/>file<sp/>except<sp/>in<sp/>compliance</highlight></codeline>
+<codeline lineno="8"><highlight class="comment"><sp/>*<sp/>with<sp/>the<sp/>License.<sp/><sp/>You<sp/>may<sp/>obtain<sp/>a<sp/>copy<sp/>of<sp/>the<sp/>License<sp/>at</highlight></codeline>
+<codeline lineno="9"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="10"><highlight class="comment"><sp/>*<sp/><sp/><sp/>http://www.apache.org/licenses/LICENSE-2.0</highlight></codeline>
+<codeline lineno="11"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="12"><highlight class="comment"><sp/>*<sp/>Unless<sp/>required<sp/>by<sp/>applicable<sp/>law<sp/>or<sp/>agreed<sp/>to<sp/>in<sp/>writing,</highlight></codeline>
+<codeline lineno="13"><highlight class="comment"><sp/>*<sp/>software<sp/>distributed<sp/>under<sp/>the<sp/>License<sp/>is<sp/>distributed<sp/>on<sp/>an</highlight></codeline>
+<codeline lineno="14"><highlight class="comment"><sp/>*<sp/>&quot;AS<sp/>IS&quot;<sp/>BASIS,<sp/>WITHOUT<sp/>WARRANTIES<sp/>OR<sp/>CONDITIONS<sp/>OF<sp/>ANY</highlight></codeline>
+<codeline lineno="15"><highlight class="comment"><sp/>*<sp/>KIND,<sp/>either<sp/>express<sp/>or<sp/>implied.<sp/><sp/>See<sp/>the<sp/>License<sp/>for<sp/>the</highlight></codeline>
+<codeline lineno="16"><highlight class="comment"><sp/>*<sp/>specific<sp/>language<sp/>governing<sp/>permissions<sp/>and<sp/>limitations</highlight></codeline>
+<codeline lineno="17"><highlight class="comment"><sp/>*<sp/>under<sp/>the<sp/>License.</highlight></codeline>
+<codeline lineno="18"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight></codeline>
+<codeline lineno="24"><highlight class="preprocessor">#ifndef<sp/>TVM_IR_ENV_FUNC_H_</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>TVM_IR_ENV_FUNC_H_</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;<ref refid="reflection_8h" kindref="compound">tvm/node/reflection.h</ref>&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="28"><highlight class="normal"></highlight></codeline>
+<codeline lineno="29"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;string&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="30"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;utility&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="31"><highlight class="normal"></highlight></codeline>
+<codeline lineno="32"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal"><ref refid="namespacetvm" kindref="compound">tvm</ref><sp/>{</highlight></codeline>
+<codeline lineno="41" refid="classtvm_1_1EnvFuncNode" refkind="compound"><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classtvm_1_1EnvFuncNode" kindref="compound">EnvFuncNode</ref><sp/>:<sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/>Object<sp/>{</highlight></codeline>
+<codeline lineno="42"><highlight class="normal"><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="44" refid="classtvm_1_1EnvFuncNode_1a03b61a3ac22549e110ef2369686f16ea" refkind="member"><highlight class="normal"><sp/><sp/>std::string<sp/><ref refid="classtvm_1_1EnvFuncNode_1a03b61a3ac22549e110ef2369686f16ea" kindref="member">name</ref>;</highlight></codeline>
+<codeline lineno="46" refid="classtvm_1_1EnvFuncNode_1a83cd0f272d6f3551630480229b18ff05" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="classtvm_1_1runtime_1_1PackedFunc" kindref="compound">runtime::PackedFunc</ref><sp/><ref refid="classtvm_1_1EnvFuncNode_1a83cd0f272d6f3551630480229b18ff05" kindref="member">func</ref>;</highlight></codeline>
+<codeline lineno="48" refid="classtvm_1_1EnvFuncNode_1a808b81ced7b01c4955b4994a89bc71a4" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="classtvm_1_1EnvFuncNode_1a808b81ced7b01c4955b4994a89bc71a4" kindref="member">EnvFuncNode</ref>()<sp/>{}</highlight></codeline>
+<codeline lineno="49"><highlight class="normal"></highlight></codeline>
+<codeline lineno="50" refid="classtvm_1_1EnvFuncNode_1adab1a481f01261dfaab5414dce4afc10" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classtvm_1_1EnvFuncNode_1adab1a481f01261dfaab5414dce4afc10" kindref="member">VisitAttrs</ref>(<ref refid="classtvm_1_1AttrVisitor" kindref="compound">AttrVisitor</ref>*<sp/>v)<sp/>{</highlight></codeline>
+<codeline lineno="51"><highlight class="normal"><sp/><sp/><sp/><sp/>v-&gt;Visit(</highlight><highlight class="stringliteral">&quot;name&quot;</highlight><highlight class="normal">,<sp/>&amp;name);</highlight></codeline>
+<codeline lineno="52"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="53"><highlight class="normal"></highlight></codeline>
+<codeline lineno="54" refid="classtvm_1_1EnvFuncNode_1a1b15e905003c230e45013a922d7d7e37" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classtvm_1_1EnvFuncNode_1a1b15e905003c230e45013a922d7d7e37" kindref="member">SEqualReduce</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classtvm_1_1EnvFuncNode" kindref="compound">EnvFuncNode</ref>*<sp/>other,<sp/><ref refid="classtvm_1_1SEqualReducer" kindref="compound">SEqualReducer</ref><sp/><ref refid="namespacetopi_1ae10e1fb8c765a9ae15c12f45199375b3" kindref="member">equal</ref>)</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="55"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>name<sp/>uniquely<sp/>identifies<sp/>the<sp/>env<sp/>function.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="56"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>name<sp/>==<sp/>other-&gt;<ref refid="classtvm_1_1EnvFuncNode_1a03b61a3ac22549e110ef2369686f16ea" kindref="member">name</ref>;</highlight></codeline>
+<codeline lineno="57"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="58"><highlight class="normal"></highlight></codeline>
+<codeline lineno="59" refid="classtvm_1_1EnvFuncNode_1af8522e9ab96eb5570f1c9f2d9ed0eac2" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classtvm_1_1EnvFuncNode_1af8522e9ab96eb5570f1c9f2d9ed0eac2" kindref="member">SHashReduce</ref>(<ref refid="classtvm_1_1SHashReducer" kindref="compound">SHashReducer</ref><sp/>hash_reduce)</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="60"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Name<sp/>uniquely<sp/>identifies<sp/>the<sp/>env<sp/>function.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="61"><highlight class="normal"><sp/><sp/><sp/><sp/>hash_reduce(name);</highlight></codeline>
+<codeline lineno="62"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="63"><highlight class="normal"></highlight></codeline>
+<codeline lineno="64" refid="classtvm_1_1EnvFuncNode_1a202ae30915b0d728ee73eaba5f3919e4" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/>constexpr<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*<sp/><ref refid="classtvm_1_1EnvFuncNode_1a202ae30915b0d728ee73eaba5f3919e4" kindref="member">_type_key</ref><sp/>=<sp/></highlight><highlight class="stringliteral">&quot;EnvFunc&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="65" refid="classtvm_1_1EnvFuncNode_1a876e3cfce49b83fb62d9143136dfe5b8" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/>constexpr<sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classtvm_1_1EnvFuncNode_1a876e3cfce49b83fb62d9143136dfe5b8" kindref="member">_type_has_method_sequal_reduce</ref><sp/>=<sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="66" refid="classtvm_1_1EnvFuncNode_1af9c25500c1ef7491607f8c40c28c3063" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/>constexpr<sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classtvm_1_1EnvFuncNode_1af9c25500c1ef7491607f8c40c28c3063" kindref="member">_type_has_method_shash_reduce</ref><sp/>=<sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="67"><highlight class="normal"><sp/><sp/><ref refid="classtvm_1_1EnvFuncNode_1a5f8074cd3210ba959a2463896acab3be" kindref="member">TVM_DECLARE_FINAL_OBJECT_INFO</ref>(<ref refid="classtvm_1_1EnvFuncNode" kindref="compound">EnvFuncNode</ref>,<sp/>Object);</highlight></codeline>
+<codeline lineno="68"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="69"><highlight class="normal"></highlight></codeline>
+<codeline lineno="74" refid="classtvm_1_1EnvFunc" refkind="compound"><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classtvm_1_1EnvFunc" kindref="compound">EnvFunc</ref><sp/>:<sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/>ObjectRef<sp/>{</highlight></codeline>
+<codeline lineno="75"><highlight class="normal"><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="76" refid="classtvm_1_1EnvFunc_1aae6100a3a2f84f79fa8314c24fd516bc" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="classtvm_1_1EnvFunc_1aae6100a3a2f84f79fa8314c24fd516bc" kindref="member">EnvFunc</ref>()<sp/>{}</highlight></codeline>
+<codeline lineno="77" refid="classtvm_1_1EnvFunc_1a1c210b670d3f990b6b8383a4abb7e6d6" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">explicit</highlight><highlight class="normal"><sp/><ref refid="classtvm_1_1EnvFunc_1a1c210b670d3f990b6b8383a4abb7e6d6" kindref="member">EnvFunc</ref>(ObjectPtr&lt;Object&gt;<sp/>n)<sp/>:<sp/>ObjectRef(n)<sp/>{}</highlight></codeline>
+<codeline lineno="79" refid="classtvm_1_1EnvFunc_1a4a8bfbfc8a923d8febc531173b3d213f" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classtvm_1_1EnvFuncNode" kindref="compound">EnvFuncNode</ref>*<sp/><ref refid="classtvm_1_1EnvFunc_1a4a8bfbfc8a923d8febc531173b3d213f" kindref="member">operator-&gt;</ref>()</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="80"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">static_cast&lt;</highlight><highlight class="keyword">const<sp/></highlight><highlight class="normal"><ref refid="classtvm_1_1EnvFuncNode" kindref="compound">EnvFuncNode</ref>*</highlight><highlight class="keyword">&gt;</highlight><highlight class="normal">(</highlight><highlight class="keyword">get</highlight><highlight class="normal">());</highlight></codeline>
+<codeline lineno="81"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="87"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">template</highlight><highlight class="normal">&lt;</highlight><highlight class="keyword">typename</highlight><highlight class="normal">...<sp/>Args&gt;</highlight></codeline>
+<codeline lineno="88" refid="classtvm_1_1EnvFunc_1a80e24e1342c276b1dfecf073b5be45f1" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="classtvm_1_1runtime_1_1TVMRetValue" kindref="compound">runtime::TVMRetValue</ref><sp/><ref refid="classtvm_1_1EnvFunc_1a80e24e1342c276b1dfecf073b5be45f1" kindref="member">operator()</ref>(Args&amp;&amp;...<sp/>args)</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="89"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classtvm_1_1EnvFuncNode" kindref="compound">EnvFuncNode</ref>*<sp/>n<sp/>=<sp/>operator-&gt;();</highlight></codeline>
+<codeline lineno="90"><highlight class="normal"><sp/><sp/><sp/><sp/>CHECK(n<sp/>!=<sp/></highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="91"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>n-&gt;<ref refid="classtvm_1_1EnvFuncNode_1a83cd0f272d6f3551630480229b18ff05" kindref="member">func</ref>(std::forward&lt;Args&gt;(args)...);</highlight></codeline>
+<codeline lineno="92"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="99"><highlight class="normal"><sp/><sp/>TVM_DLL<sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/><ref refid="classtvm_1_1EnvFunc" kindref="compound">EnvFunc</ref><sp/>Get(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::string&amp;<sp/><ref refid="classtvm_1_1EnvFuncNode_1a03b61a3ac22549e110ef2369686f16ea" kindref="member">name</ref>);</highlight></codeline>
+<codeline lineno="101" refid="classtvm_1_1EnvFunc_1aa40f838af3c55fe6ca8ecf2a256c8550" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">using</highlight><highlight class="normal"><sp/><ref refid="classtvm_1_1EnvFuncNode" kindref="compound">ContainerType</ref><sp/>=<sp/><ref refid="classtvm_1_1EnvFuncNode_1a808b81ced7b01c4955b4994a89bc71a4" kindref="member">EnvFuncNode</ref>;</highlight></codeline>
+<codeline lineno="102"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="103"><highlight class="normal"></highlight></codeline>
+<codeline lineno="107"><highlight class="keyword">template</highlight><highlight class="normal">&lt;</highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>FType&gt;</highlight></codeline>
+<codeline lineno="108" refid="classtvm_1_1TypedEnvFunc" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classtvm_1_1TypedEnvFunc" kindref="compound">TypedEnvFunc</ref>;</highlight></codeline>
+<codeline lineno="109"><highlight class="normal"></highlight></codeline>
+<codeline lineno="119"><highlight class="keyword">template</highlight><highlight class="normal">&lt;</highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>R,<sp/></highlight><highlight class="keyword">typename</highlight><highlight class="normal">...<sp/>Args&gt;</highlight></codeline>
+<codeline lineno="120" refid="classtvm_1_1TypedEnvFunc_3_01R_07Args_8_8_8_08_4" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classtvm_1_1TypedEnvFunc" kindref="compound">TypedEnvFunc</ref>&lt;R(Args...)&gt;<sp/>:<sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/>ObjectRef<sp/>{</highlight></codeline>
+<codeline lineno="121"><highlight class="normal"><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="123" refid="classtvm_1_1TypedEnvFunc_3_01R_07Args_8_8_8_08_4_1a29adf4db79c99318db779a71f26acc0f" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">using</highlight><highlight class="normal"><sp/><ref refid="classtvm_1_1TypedEnvFunc_3_01R_07Args_8_8_8_08_4" kindref="compound">TSelf</ref><sp/>=<sp/><ref refid="classtvm_1_1TypedEnvFunc" kindref="compound">TypedEnvFunc</ref>&lt;R(Args...)&gt;;</highlight></codeline>
+<codeline lineno="124" refid="classtvm_1_1TypedEnvFunc_3_01R_07Args_8_8_8_08_4_1a41a6b9014d0feeb628ca7edfd0d26f0b" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="classtvm_1_1TypedEnvFunc_3_01R_07Args_8_8_8_08_4_1a41a6b9014d0feeb628ca7edfd0d26f0b" kindref="member">TypedEnvFunc</ref>()<sp/>{}</highlight></codeline>
+<codeline lineno="125" refid="classtvm_1_1TypedEnvFunc_3_01R_07Args_8_8_8_08_4_1a0d72a6fa7263821c14bcd37837998ed9" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">explicit</highlight><highlight class="normal"><sp/><ref refid="classtvm_1_1TypedEnvFunc_3_01R_07Args_8_8_8_08_4_1a0d72a6fa7263821c14bcd37837998ed9" kindref="member">TypedEnvFunc</ref>(ObjectPtr&lt;Object&gt;<sp/>n)<sp/>:<sp/>ObjectRef(n)<sp/>{}</highlight></codeline>
+<codeline lineno="131" refid="classtvm_1_1TypedEnvFunc_3_01R_07Args_8_8_8_08_4_1aab332907b9f98876f441f6403b801187" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="classtvm_1_1TypedEnvFunc_3_01R_07Args_8_8_8_08_4" kindref="compound">TSelf</ref>&amp;<sp/><ref refid="classtvm_1_1TypedEnvFunc_3_01R_07Args_8_8_8_08_4_1aab332907b9f98876f441f6403b801187" kindref="member">operator=</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classtvm_1_1EnvFunc" kindref="compound">EnvFunc</ref>&amp;<sp/>other)<sp/>{</highlight></codeline>
+<codeline lineno="132"><highlight class="normal"><sp/><sp/><sp/><sp/>ObjectRef::operator=(other);</highlight></codeline>
+<codeline lineno="133"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>*</highlight><highlight class="keyword">this</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="134"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="136" refid="classtvm_1_1TypedEnvFunc_3_01R_07Args_8_8_8_08_4_1a5d9623ecced817c2d56deddfdc2f761b" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classtvm_1_1EnvFuncNode" kindref="compound">EnvFuncNode</ref>*<sp/><ref refid="classtvm_1_1TypedEnvFunc_3_01R_07Args_8_8_8_08_4_1a5d9623ecced817c2d56deddfdc2f761b" kindref="member">operator-&gt;</ref>()</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="137"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">static_cast&lt;</highlight><highlight class="keyword">const<sp/></highlight><highlight class="normal"><ref refid="classtvm_1_1EnvFuncNode" kindref="compound">EnvFuncNode</ref>*</highlight><highlight class="keyword">&gt;</highlight><highlight class="normal">(</highlight><highlight class="keyword">get</highlight><highlight class="normal">());</highlight></codeline>
+<codeline lineno="138"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="144" refid="classtvm_1_1TypedEnvFunc_3_01R_07Args_8_8_8_08_4_1a2c756d14682b41d9b733673443b782f1" refkind="member"><highlight class="normal"><sp/><sp/>R<sp/><ref refid="classtvm_1_1TypedEnvFunc_3_01R_07Args_8_8_8_08_4_1a2c756d14682b41d9b733673443b782f1" kindref="member">operator()</ref>(Args...<sp/>args)</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="145"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classtvm_1_1EnvFuncNode" kindref="compound">EnvFuncNode</ref>*<sp/>n<sp/>=<sp/>operator-&gt;();</highlight></codeline>
+<codeline lineno="146"><highlight class="normal"><sp/><sp/><sp/><sp/>CHECK(n<sp/>!=<sp/></highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="147"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>runtime::detail::typed_packed_call_dispatcher&lt;R&gt;</highlight></codeline>
+<codeline lineno="148"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>::run(n-&gt;<ref refid="classtvm_1_1EnvFuncNode_1a83cd0f272d6f3551630480229b18ff05" kindref="member">func</ref>,<sp/>std::forward&lt;Args&gt;(args)...);</highlight></codeline>
+<codeline lineno="149"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="151" refid="classtvm_1_1TypedEnvFunc_3_01R_07Args_8_8_8_08_4_1a5ab2d64bd5e6a0d5dbce945a0d5f8b30" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">using</highlight><highlight class="normal"><sp/><ref refid="classtvm_1_1EnvFuncNode" kindref="compound">ContainerType</ref><sp/>=<sp/><ref refid="classtvm_1_1EnvFuncNode_1a808b81ced7b01c4955b4994a89bc71a4" kindref="member">EnvFuncNode</ref>;</highlight></codeline>
+<codeline lineno="152"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="153"><highlight class="normal"></highlight></codeline>
+<codeline lineno="154"><highlight class="normal">}<sp/><sp/></highlight><highlight class="comment">//<sp/>namespace<sp/>tvm</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="155"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/><sp/>//<sp/>TVM_IR_ENV_FUNC_H_</highlight></codeline>
+    </programlisting>
+    <location file="include/tvm/ir/env_func.h"/>
+  </compounddef>
+</doxygen>

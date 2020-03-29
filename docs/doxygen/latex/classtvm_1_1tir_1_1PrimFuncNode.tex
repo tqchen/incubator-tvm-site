@@ -1,0 +1,195 @@
+\hypertarget{classtvm_1_1tir_1_1PrimFuncNode}{}\section{tvm\+:\+:tir\+:\+:Prim\+Func\+Node Class Reference}
+\label{classtvm_1_1tir_1_1PrimFuncNode}\index{tvm\+::tir\+::\+Prim\+Func\+Node@{tvm\+::tir\+::\+Prim\+Func\+Node}}
+
+
+Primitive functions that contains T\+IR statements.  
+
+
+
+
+{\ttfamily \#include $<$function.\+h$>$}
+
+
+
+Inheritance diagram for tvm\+:\+:tir\+:\+:Prim\+Func\+Node\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{classtvm_1_1tir_1_1PrimFuncNode__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for tvm\+:\+:tir\+:\+:Prim\+Func\+Node\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classtvm_1_1tir_1_1PrimFuncNode__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{classtvm_1_1tir_1_1PrimFuncNode_add7c60c29895497221750e01e54f5023}{Visit\+Attrs} (\hyperlink{classtvm_1_1AttrVisitor}{tvm\+::\+Attr\+Visitor} $\ast$v)
+\item 
+bool \hyperlink{classtvm_1_1tir_1_1PrimFuncNode_a424c7818ec81111ec8dc2bff6b0d62e1}{S\+Equal\+Reduce} (const \hyperlink{classtvm_1_1tir_1_1PrimFuncNode}{Prim\+Func\+Node} $\ast$other, \hyperlink{classtvm_1_1SEqualReducer}{S\+Equal\+Reducer} equal) const 
+\item 
+void \hyperlink{classtvm_1_1tir_1_1PrimFuncNode_a82faf0ae143826287ecf4b48da4d904f}{S\+Hash\+Reduce} (\hyperlink{classtvm_1_1SHashReducer}{S\+Hash\+Reducer} hash\+\_\+reduce) const 
+\item 
+\hyperlink{classtvm_1_1FuncType}{Func\+Type} \hyperlink{classtvm_1_1tir_1_1PrimFuncNode_a63f4bba334dff54fee2097d17804c045}{func\+\_\+type\+\_\+annotation} () const 
+\begin{DoxyCompactList}\small\item\em Return the derived function annotation of this function. \end{DoxyCompactList}\item 
+\hyperlink{classtvm_1_1tir_1_1PrimFuncNode_a612a3bbaa9418eb629180e80084a9d69}{T\+V\+M\+\_\+\+D\+E\+C\+L\+A\+R\+E\+\_\+\+F\+I\+N\+A\+L\+\_\+\+O\+B\+J\+E\+C\+T\+\_\+\+I\+N\+FO} (\hyperlink{classtvm_1_1tir_1_1PrimFuncNode}{Prim\+Func\+Node}, \hyperlink{classtvm_1_1BaseFuncNode}{Base\+Func\+Node})
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classtvm_1_1Array}{Array}$<$ \hyperlink{classtvm_1_1tir_1_1Var}{tir\+::\+Var} $>$ \hyperlink{classtvm_1_1tir_1_1PrimFuncNode_a4ea77411935e78d975414f31e153fc78}{params}
+\begin{DoxyCompactList}\small\item\em Function parameters. \end{DoxyCompactList}\item 
+\hyperlink{classtvm_1_1tir_1_1Stmt}{tir\+::\+Stmt} \hyperlink{classtvm_1_1tir_1_1PrimFuncNode_a9fce10a00a4a34c1fa52f7cca25b7e3b}{body}
+\begin{DoxyCompactList}\small\item\em The body of the function. \end{DoxyCompactList}\item 
+\hyperlink{classtvm_1_1Type}{Type} \hyperlink{classtvm_1_1tir_1_1PrimFuncNode_aa325068615c301abec6656416cab8e09}{ret\+\_\+type}
+\begin{DoxyCompactList}\small\item\em The return type of the function. \end{DoxyCompactList}\item 
+\hyperlink{classtvm_1_1Map}{Map}$<$ \hyperlink{classtvm_1_1tir_1_1Var}{tir\+::\+Var}, \hyperlink{classtvm_1_1tir_1_1Buffer}{Buffer} $>$ \hyperlink{classtvm_1_1tir_1_1PrimFuncNode_aeb1f162516e09122852496f2a945d100}{buffer\+\_\+map}
+\begin{DoxyCompactList}\small\item\em Maps some parameters to specific \hyperlink{classtvm_1_1tir_1_1Buffer}{Buffer} data structures. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static constexpr const char $\ast$ \hyperlink{classtvm_1_1tir_1_1PrimFuncNode_a27c7c172dade911d5292dfbfdca033f5}{\+\_\+type\+\_\+key} = \char`\"{}tir.\+Prim\+Func\char`\"{}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Primitive functions that contains T\+IR statements. 
+
+The \hyperlink{classtvm_1_1tir_1_1PrimFunc}{Prim\+Func} provides low-\/level code representation does not automatically manage
+
+\begin{DoxySeeAlso}{See also}
+\hyperlink{classtvm_1_1tir_1_1PrimFunc}{Prim\+Func} 
+\end{DoxySeeAlso}
+
+
+\subsection{Member Function Documentation}
+\index{tvm\+::tir\+::\+Prim\+Func\+Node@{tvm\+::tir\+::\+Prim\+Func\+Node}!func\+\_\+type\+\_\+annotation@{func\+\_\+type\+\_\+annotation}}
+\index{func\+\_\+type\+\_\+annotation@{func\+\_\+type\+\_\+annotation}!tvm\+::tir\+::\+Prim\+Func\+Node@{tvm\+::tir\+::\+Prim\+Func\+Node}}
+\subsubsection[{\texorpdfstring{func\+\_\+type\+\_\+annotation() const }{func_type_annotation() const }}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Func\+Type} tvm\+::tir\+::\+Prim\+Func\+Node\+::func\+\_\+type\+\_\+annotation (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}\hypertarget{classtvm_1_1tir_1_1PrimFuncNode_a63f4bba334dff54fee2097d17804c045}{}\label{classtvm_1_1tir_1_1PrimFuncNode_a63f4bba334dff54fee2097d17804c045}
+
+
+Return the derived function annotation of this function. 
+
+\begin{DoxyReturn}{Returns}
+The function type annotation. 
+\end{DoxyReturn}
+\begin{DoxyNote}{Note}
+The function type annotation of \hyperlink{classtvm_1_1PrimExpr}{Prim\+Expr} is directly derived from the Vars without the need of type inference. 
+\end{DoxyNote}
+\index{tvm\+::tir\+::\+Prim\+Func\+Node@{tvm\+::tir\+::\+Prim\+Func\+Node}!S\+Equal\+Reduce@{S\+Equal\+Reduce}}
+\index{S\+Equal\+Reduce@{S\+Equal\+Reduce}!tvm\+::tir\+::\+Prim\+Func\+Node@{tvm\+::tir\+::\+Prim\+Func\+Node}}
+\subsubsection[{\texorpdfstring{S\+Equal\+Reduce(const Prim\+Func\+Node $\ast$other, S\+Equal\+Reducer equal) const }{SEqualReduce(const PrimFuncNode *other, SEqualReducer equal) const }}]{\setlength{\rightskip}{0pt plus 5cm}bool tvm\+::tir\+::\+Prim\+Func\+Node\+::\+S\+Equal\+Reduce (
+\begin{DoxyParamCaption}
+\item[{const {\bf Prim\+Func\+Node} $\ast$}]{other, }
+\item[{{\bf S\+Equal\+Reducer}}]{equal}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classtvm_1_1tir_1_1PrimFuncNode_a424c7818ec81111ec8dc2bff6b0d62e1}{}\label{classtvm_1_1tir_1_1PrimFuncNode_a424c7818ec81111ec8dc2bff6b0d62e1}
+\index{tvm\+::tir\+::\+Prim\+Func\+Node@{tvm\+::tir\+::\+Prim\+Func\+Node}!S\+Hash\+Reduce@{S\+Hash\+Reduce}}
+\index{S\+Hash\+Reduce@{S\+Hash\+Reduce}!tvm\+::tir\+::\+Prim\+Func\+Node@{tvm\+::tir\+::\+Prim\+Func\+Node}}
+\subsubsection[{\texorpdfstring{S\+Hash\+Reduce(\+S\+Hash\+Reducer hash\+\_\+reduce) const }{SHashReduce(SHashReducer hash_reduce) const }}]{\setlength{\rightskip}{0pt plus 5cm}void tvm\+::tir\+::\+Prim\+Func\+Node\+::\+S\+Hash\+Reduce (
+\begin{DoxyParamCaption}
+\item[{{\bf S\+Hash\+Reducer}}]{hash\+\_\+reduce}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classtvm_1_1tir_1_1PrimFuncNode_a82faf0ae143826287ecf4b48da4d904f}{}\label{classtvm_1_1tir_1_1PrimFuncNode_a82faf0ae143826287ecf4b48da4d904f}
+\index{tvm\+::tir\+::\+Prim\+Func\+Node@{tvm\+::tir\+::\+Prim\+Func\+Node}!T\+V\+M\+\_\+\+D\+E\+C\+L\+A\+R\+E\+\_\+\+F\+I\+N\+A\+L\+\_\+\+O\+B\+J\+E\+C\+T\+\_\+\+I\+N\+FO@{T\+V\+M\+\_\+\+D\+E\+C\+L\+A\+R\+E\+\_\+\+F\+I\+N\+A\+L\+\_\+\+O\+B\+J\+E\+C\+T\+\_\+\+I\+N\+FO}}
+\index{T\+V\+M\+\_\+\+D\+E\+C\+L\+A\+R\+E\+\_\+\+F\+I\+N\+A\+L\+\_\+\+O\+B\+J\+E\+C\+T\+\_\+\+I\+N\+FO@{T\+V\+M\+\_\+\+D\+E\+C\+L\+A\+R\+E\+\_\+\+F\+I\+N\+A\+L\+\_\+\+O\+B\+J\+E\+C\+T\+\_\+\+I\+N\+FO}!tvm\+::tir\+::\+Prim\+Func\+Node@{tvm\+::tir\+::\+Prim\+Func\+Node}}
+\subsubsection[{\texorpdfstring{T\+V\+M\+\_\+\+D\+E\+C\+L\+A\+R\+E\+\_\+\+F\+I\+N\+A\+L\+\_\+\+O\+B\+J\+E\+C\+T\+\_\+\+I\+N\+F\+O(\+Prim\+Func\+Node, Base\+Func\+Node)}{TVM_DECLARE_FINAL_OBJECT_INFO(PrimFuncNode, BaseFuncNode)}}]{\setlength{\rightskip}{0pt plus 5cm}tvm\+::tir\+::\+Prim\+Func\+Node\+::\+T\+V\+M\+\_\+\+D\+E\+C\+L\+A\+R\+E\+\_\+\+F\+I\+N\+A\+L\+\_\+\+O\+B\+J\+E\+C\+T\+\_\+\+I\+N\+FO (
+\begin{DoxyParamCaption}
+\item[{{\bf Prim\+Func\+Node}}]{, }
+\item[{{\bf Base\+Func\+Node}}]{}
+\end{DoxyParamCaption}
+)}\hypertarget{classtvm_1_1tir_1_1PrimFuncNode_a612a3bbaa9418eb629180e80084a9d69}{}\label{classtvm_1_1tir_1_1PrimFuncNode_a612a3bbaa9418eb629180e80084a9d69}
+\index{tvm\+::tir\+::\+Prim\+Func\+Node@{tvm\+::tir\+::\+Prim\+Func\+Node}!Visit\+Attrs@{Visit\+Attrs}}
+\index{Visit\+Attrs@{Visit\+Attrs}!tvm\+::tir\+::\+Prim\+Func\+Node@{tvm\+::tir\+::\+Prim\+Func\+Node}}
+\subsubsection[{\texorpdfstring{Visit\+Attrs(tvm\+::\+Attr\+Visitor $\ast$v)}{VisitAttrs(tvm::AttrVisitor *v)}}]{\setlength{\rightskip}{0pt plus 5cm}void tvm\+::tir\+::\+Prim\+Func\+Node\+::\+Visit\+Attrs (
+\begin{DoxyParamCaption}
+\item[{{\bf tvm\+::\+Attr\+Visitor} $\ast$}]{v}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classtvm_1_1tir_1_1PrimFuncNode_add7c60c29895497221750e01e54f5023}{}\label{classtvm_1_1tir_1_1PrimFuncNode_add7c60c29895497221750e01e54f5023}
+
+
+\subsection{Member Data Documentation}
+\index{tvm\+::tir\+::\+Prim\+Func\+Node@{tvm\+::tir\+::\+Prim\+Func\+Node}!\+\_\+type\+\_\+key@{\+\_\+type\+\_\+key}}
+\index{\+\_\+type\+\_\+key@{\+\_\+type\+\_\+key}!tvm\+::tir\+::\+Prim\+Func\+Node@{tvm\+::tir\+::\+Prim\+Func\+Node}}
+\subsubsection[{\texorpdfstring{\+\_\+type\+\_\+key}{_type_key}}]{\setlength{\rightskip}{0pt plus 5cm}constexpr const char$\ast$ tvm\+::tir\+::\+Prim\+Func\+Node\+::\+\_\+type\+\_\+key = \char`\"{}tir.\+Prim\+Func\char`\"{}\hspace{0.3cm}{\ttfamily [static]}}\hypertarget{classtvm_1_1tir_1_1PrimFuncNode_a27c7c172dade911d5292dfbfdca033f5}{}\label{classtvm_1_1tir_1_1PrimFuncNode_a27c7c172dade911d5292dfbfdca033f5}
+\index{tvm\+::tir\+::\+Prim\+Func\+Node@{tvm\+::tir\+::\+Prim\+Func\+Node}!body@{body}}
+\index{body@{body}!tvm\+::tir\+::\+Prim\+Func\+Node@{tvm\+::tir\+::\+Prim\+Func\+Node}}
+\subsubsection[{\texorpdfstring{body}{body}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf tir\+::\+Stmt} tvm\+::tir\+::\+Prim\+Func\+Node\+::body}\hypertarget{classtvm_1_1tir_1_1PrimFuncNode_a9fce10a00a4a34c1fa52f7cca25b7e3b}{}\label{classtvm_1_1tir_1_1PrimFuncNode_a9fce10a00a4a34c1fa52f7cca25b7e3b}
+
+
+The body of the function. 
+
+\index{tvm\+::tir\+::\+Prim\+Func\+Node@{tvm\+::tir\+::\+Prim\+Func\+Node}!buffer\+\_\+map@{buffer\+\_\+map}}
+\index{buffer\+\_\+map@{buffer\+\_\+map}!tvm\+::tir\+::\+Prim\+Func\+Node@{tvm\+::tir\+::\+Prim\+Func\+Node}}
+\subsubsection[{\texorpdfstring{buffer\+\_\+map}{buffer_map}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Map}$<${\bf tir\+::\+Var}, {\bf Buffer}$>$ tvm\+::tir\+::\+Prim\+Func\+Node\+::buffer\+\_\+map}\hypertarget{classtvm_1_1tir_1_1PrimFuncNode_aeb1f162516e09122852496f2a945d100}{}\label{classtvm_1_1tir_1_1PrimFuncNode_aeb1f162516e09122852496f2a945d100}
+
+
+Maps some parameters to specific \hyperlink{classtvm_1_1tir_1_1Buffer}{Buffer} data structures. 
+
+buffer\+\_\+map provides a way to express data structure\textquotesingle{}s field and shape constraints. The provided information is used in the program analysis and the code generation.
+
+
+\begin{DoxyItemize}
+\item It defines the vars in the \hyperlink{classtvm_1_1tir_1_1Buffer}{Buffer} (m, n) in the cases below when they appears in the buffer\+\_\+map for the first time.
+\item When a var appears multiple times, they translate into runtime assertion to check the field constraint.
+\end{DoxyItemize}
+
+
+\begin{DoxyCode}
+\textcolor{preprocessor}{# The corresponding fields of f are as follows}
+\textcolor{preprocessor}{#}
+\textcolor{preprocessor}{# - f.params = [a, b]}
+\textcolor{preprocessor}{# - f.buffer\_map = \{a: A, b: B\}}
+\textcolor{preprocessor}{# - A = decl\_buffer(shape=[m, n])}
+\textcolor{preprocessor}{# - B = decl\_buffer(shape=[m, n])}
+
+def f(a, b):
+    m, n = \hyperlink{namespacetvm_1_1te_ae0c71f84710b436cbe0b32289d0838f4}{var}(), \hyperlink{namespacetvm_1_1te_ae0c71f84710b436cbe0b32289d0838f4}{var}()
+    A = bind\_buffer(a, \hyperlink{namespacetopi_a649c66231bc50f3ed98ac8bb6b6e2518}{shape}=[m, n])
+    B = bind\_buffer(b, \hyperlink{namespacetopi_a649c66231bc50f3ed98ac8bb6b6e2518}{shape}=[m, n])
+    # \hyperlink{classtvm_1_1tir_1_1PrimFuncNode_a9fce10a00a4a34c1fa52f7cca25b7e3b}{body}
+\end{DoxyCode}
+
+
+buffer\+\_\+map is a sugar to express\+:
+\begin{DoxyItemize}
+\item Parameter unpacking\+: e.\+g. I can load a.\+shape\mbox{[}0\mbox{]} to get value of m
+\item Constraint checking\+: a.\+shape\mbox{[}0\mbox{]} must equal b.\+shape\mbox{[}0\mbox{]} because they both corresponds to m.
+\end{DoxyItemize}
+
+While we could have express parameter unpacking and constraint using normal statements, making buffer\+\_\+map as first class citizen of \hyperlink{classtvm_1_1tir_1_1PrimFunc}{Prim\+Func} will make program analysis much easier.
+
+\begin{DoxyNote}{Note}
+This field can be nullptr 
+\end{DoxyNote}
+\index{tvm\+::tir\+::\+Prim\+Func\+Node@{tvm\+::tir\+::\+Prim\+Func\+Node}!params@{params}}
+\index{params@{params}!tvm\+::tir\+::\+Prim\+Func\+Node@{tvm\+::tir\+::\+Prim\+Func\+Node}}
+\subsubsection[{\texorpdfstring{params}{params}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Array}$<${\bf tir\+::\+Var}$>$ tvm\+::tir\+::\+Prim\+Func\+Node\+::params}\hypertarget{classtvm_1_1tir_1_1PrimFuncNode_a4ea77411935e78d975414f31e153fc78}{}\label{classtvm_1_1tir_1_1PrimFuncNode_a4ea77411935e78d975414f31e153fc78}
+
+
+Function parameters. 
+
+\index{tvm\+::tir\+::\+Prim\+Func\+Node@{tvm\+::tir\+::\+Prim\+Func\+Node}!ret\+\_\+type@{ret\+\_\+type}}
+\index{ret\+\_\+type@{ret\+\_\+type}!tvm\+::tir\+::\+Prim\+Func\+Node@{tvm\+::tir\+::\+Prim\+Func\+Node}}
+\subsubsection[{\texorpdfstring{ret\+\_\+type}{ret_type}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Type} tvm\+::tir\+::\+Prim\+Func\+Node\+::ret\+\_\+type}\hypertarget{classtvm_1_1tir_1_1PrimFuncNode_aa325068615c301abec6656416cab8e09}{}\label{classtvm_1_1tir_1_1PrimFuncNode_aa325068615c301abec6656416cab8e09}
+
+
+The return type of the function. 
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+include/tvm/tir/\hyperlink{tir_2function_8h}{function.\+h}\end{DoxyCompactItemize}

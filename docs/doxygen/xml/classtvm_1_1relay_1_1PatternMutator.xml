@@ -1,0 +1,201 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="classtvm_1_1relay_1_1PatternMutator" kind="class" language="C++" prot="public">
+    <compoundname>tvm::relay::PatternMutator</compoundname>
+    <basecompoundref refid="classtvm_1_1relay_1_1PatternFunctor" prot="public" virt="non-virtual">tvm::relay::PatternFunctor&lt; Pattern(const Pattern &amp;)&gt;</basecompoundref>
+    <includes refid="pattern__functor_8h" local="no">pattern_functor.h</includes>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classtvm_1_1relay_1_1PatternMutator_1ac35b129c46e4b8f19aa27dc6c66e3870" prot="private" static="no" mutable="no">
+        <type>std::unordered_map&lt; <ref refid="classtvm_1_1relay_1_1Var" kindref="compound">Var</ref>, <ref refid="classtvm_1_1relay_1_1Var" kindref="compound">Var</ref>, ObjectHash, ObjectEqual &gt;</type>
+        <definition>std::unordered_map&lt;Var, Var, ObjectHash, ObjectEqual&gt; tvm::relay::PatternMutator::var_map_</definition>
+        <argsstring></argsstring>
+        <name>var_map_</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/relay/pattern_functor.h" line="167" column="1" bodyfile="include/tvm/relay/pattern_functor.h" bodystart="167" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classtvm_1_1relay_1_1PatternMutator_1afd5ae4d9caeaae89c339e1377962b51f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classtvm_1_1relay_1_1Pattern" kindref="compound">Pattern</ref></type>
+        <definition>Pattern tvm::relay::PatternMutator::Mutate</definition>
+        <argsstring>(const Pattern &amp;pat)</argsstring>
+        <name>Mutate</name>
+        <param>
+          <type>const <ref refid="classtvm_1_1relay_1_1Pattern" kindref="compound">Pattern</ref> &amp;</type>
+          <declname>pat</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/relay/pattern_functor.h" line="150" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classtvm_1_1relay_1_1PatternMutator_1aedeb370baf4bca6018153d01d2594a84" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classtvm_1_1relay_1_1Pattern" kindref="compound">Pattern</ref></type>
+        <definition>Pattern tvm::relay::PatternMutator::VisitPattern_</definition>
+        <argsstring>(const PatternWildcardNode *op) override</argsstring>
+        <name>VisitPattern_</name>
+        <param>
+          <type>const <ref refid="classtvm_1_1relay_1_1PatternWildcardNode" kindref="compound">PatternWildcardNode</ref> *</type>
+          <declname>op</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/relay/pattern_functor.h" line="151" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classtvm_1_1relay_1_1PatternMutator_1a45f7cdfa9d72a3ab0ce2cb4ea04fec5b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classtvm_1_1relay_1_1Pattern" kindref="compound">Pattern</ref></type>
+        <definition>Pattern tvm::relay::PatternMutator::VisitPattern_</definition>
+        <argsstring>(const PatternVarNode *op) override</argsstring>
+        <name>VisitPattern_</name>
+        <param>
+          <type>const <ref refid="classtvm_1_1relay_1_1PatternVarNode" kindref="compound">PatternVarNode</ref> *</type>
+          <declname>op</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/relay/pattern_functor.h" line="152" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classtvm_1_1relay_1_1PatternMutator_1a5c4cdc5bd1b1929edf9afa3cf85b9857" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classtvm_1_1relay_1_1Pattern" kindref="compound">Pattern</ref></type>
+        <definition>Pattern tvm::relay::PatternMutator::VisitPattern_</definition>
+        <argsstring>(const PatternConstructorNode *op) override</argsstring>
+        <name>VisitPattern_</name>
+        <param>
+          <type>const <ref refid="classtvm_1_1relay_1_1PatternConstructorNode" kindref="compound">PatternConstructorNode</ref> *</type>
+          <declname>op</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/relay/pattern_functor.h" line="153" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classtvm_1_1relay_1_1PatternMutator_1af8ea941a20a51cba2dc5e9e21f0ffc88" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classtvm_1_1relay_1_1Pattern" kindref="compound">Pattern</ref></type>
+        <definition>Pattern tvm::relay::PatternMutator::VisitPattern_</definition>
+        <argsstring>(const PatternTupleNode *op) override</argsstring>
+        <name>VisitPattern_</name>
+        <param>
+          <type>const <ref refid="classtvm_1_1relay_1_1PatternTupleNode" kindref="compound">PatternTupleNode</ref> *</type>
+          <declname>op</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/relay/pattern_functor.h" line="154" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classtvm_1_1relay_1_1PatternMutator_1a2ec9a680c63665b3c6087b67c638dce7" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="namespacetvm_1_1relay_1a661d95f170bca230773914caeef3fe52" kindref="member">Type</ref></type>
+        <definition>virtual Type tvm::relay::PatternMutator::VisitType</definition>
+        <argsstring>(const Type &amp;t)</argsstring>
+        <name>VisitType</name>
+        <param>
+          <type>const <ref refid="namespacetvm_1_1relay_1a661d95f170bca230773914caeef3fe52" kindref="member">Type</ref> &amp;</type>
+          <declname>t</declname>
+        </param>
+        <briefdescription>
+<para>Used to visit the types inside of patterns. </para>        </briefdescription>
+        <detaileddescription>
+<para>Can be overloaded to transform the types in arbitrary ways, one way would be to define a sub-class of type visitor for types which transform them appropriately. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/relay/pattern_functor.h" line="161" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classtvm_1_1relay_1_1PatternMutator_1a8e3887d5d34d9c2df16743492d3c3e7d" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="classtvm_1_1relay_1_1Var" kindref="compound">Var</ref></type>
+        <definition>virtual Var tvm::relay::PatternMutator::VisitVar</definition>
+        <argsstring>(const Var &amp;v)</argsstring>
+        <name>VisitVar</name>
+        <param>
+          <type>const <ref refid="classtvm_1_1relay_1_1Var" kindref="compound">Var</ref> &amp;</type>
+          <declname>v</declname>
+        </param>
+        <briefdescription>
+<para>Used to visit the vars inside of patterns. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/relay/pattern_functor.h" line="163" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classtvm_1_1relay_1_1PatternMutator_1a03cf1d4afb8443e2f1decb4512d7c4ad" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="namespacetvm_1_1relay_1aec85bf097deda59bd22e88475c9165e9" kindref="member">Constructor</ref></type>
+        <definition>virtual Constructor tvm::relay::PatternMutator::VisitConstructor</definition>
+        <argsstring>(const Constructor &amp;c)</argsstring>
+        <name>VisitConstructor</name>
+        <param>
+          <type>const <ref refid="namespacetvm_1_1relay_1aec85bf097deda59bd22e88475c9165e9" kindref="member">Constructor</ref> &amp;</type>
+          <declname>c</declname>
+        </param>
+        <briefdescription>
+<para>Used to visit the vars inside of patterns. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/relay/pattern_functor.h" line="165" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>A wrapper around <ref refid="classtvm_1_1relay_1_1ExprFunctor" kindref="compound">ExprFunctor</ref> which functionally updates the AST. </para>    </briefdescription>
+    <detaileddescription>
+<para><ref refid="classtvm_1_1relay_1_1ExprMutator" kindref="compound">ExprMutator</ref> uses memoization and self return in order to amortize the cost of using functional updates. </para>    </detaileddescription>
+    <inheritancegraph>
+      <node id="6091">
+        <label>tvm::relay::PatternMutator</label>
+        <link refid="classtvm_1_1relay_1_1PatternMutator"/>
+        <childnode refid="6092" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="6092">
+        <label>tvm::relay::PatternFunctor&lt; Pattern(const Pattern &amp;)&gt;</label>
+        <link refid="classtvm_1_1relay_1_1PatternFunctor"/>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="6093">
+        <label>tvm::relay::PatternMutator</label>
+        <link refid="classtvm_1_1relay_1_1PatternMutator"/>
+        <childnode refid="6094" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="6094">
+        <label>tvm::relay::PatternFunctor&lt; Pattern(const Pattern &amp;)&gt;</label>
+        <link refid="classtvm_1_1relay_1_1PatternFunctor"/>
+      </node>
+    </collaborationgraph>
+    <location file="include/tvm/relay/pattern_functor.h" line="148" column="1" bodyfile="include/tvm/relay/pattern_functor.h" bodystart="147" bodyend="168"/>
+    <listofallmembers>
+      <member refid="classtvm_1_1relay_1_1PatternMutator_1afd5ae4d9caeaae89c339e1377962b51f" prot="public" virt="non-virtual"><scope>tvm::relay::PatternMutator</scope><name>Mutate</name></member>
+      <member refid="classtvm_1_1relay_1_1PatternMutator_1ac35b129c46e4b8f19aa27dc6c66e3870" prot="private" virt="non-virtual"><scope>tvm::relay::PatternMutator</scope><name>var_map_</name></member>
+      <member refid="classtvm_1_1relay_1_1PatternMutator_1a03cf1d4afb8443e2f1decb4512d7c4ad" prot="public" virt="virtual"><scope>tvm::relay::PatternMutator</scope><name>VisitConstructor</name></member>
+      <member refid="classtvm_1_1relay_1_1PatternMutator_1aedeb370baf4bca6018153d01d2594a84" prot="public" virt="non-virtual"><scope>tvm::relay::PatternMutator</scope><name>VisitPattern_</name></member>
+      <member refid="classtvm_1_1relay_1_1PatternMutator_1a45f7cdfa9d72a3ab0ce2cb4ea04fec5b" prot="public" virt="non-virtual"><scope>tvm::relay::PatternMutator</scope><name>VisitPattern_</name></member>
+      <member refid="classtvm_1_1relay_1_1PatternMutator_1a5c4cdc5bd1b1929edf9afa3cf85b9857" prot="public" virt="non-virtual"><scope>tvm::relay::PatternMutator</scope><name>VisitPattern_</name></member>
+      <member refid="classtvm_1_1relay_1_1PatternMutator_1af8ea941a20a51cba2dc5e9e21f0ffc88" prot="public" virt="non-virtual"><scope>tvm::relay::PatternMutator</scope><name>VisitPattern_</name></member>
+      <member refid="classtvm_1_1relay_1_1PatternMutator_1a2ec9a680c63665b3c6087b67c638dce7" prot="public" virt="virtual"><scope>tvm::relay::PatternMutator</scope><name>VisitType</name></member>
+      <member refid="classtvm_1_1relay_1_1PatternMutator_1a8e3887d5d34d9c2df16743492d3c3e7d" prot="public" virt="virtual"><scope>tvm::relay::PatternMutator</scope><name>VisitVar</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

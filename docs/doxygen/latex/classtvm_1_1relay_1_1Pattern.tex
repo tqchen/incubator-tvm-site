@@ -1,0 +1,78 @@
+\hypertarget{classtvm_1_1relay_1_1Pattern}{}\section{tvm\+:\+:relay\+:\+:Pattern Class Reference}
+\label{classtvm_1_1relay_1_1Pattern}\index{tvm\+::relay\+::\+Pattern@{tvm\+::relay\+::\+Pattern}}
+
+
+\hyperlink{classtvm_1_1relay_1_1Pattern}{Pattern} is the base type for an A\+DT match pattern in Relay.  
+
+
+
+
+{\ttfamily \#include $<$adt.\+h$>$}
+
+
+
+Inheritance diagram for tvm\+:\+:relay\+:\+:Pattern\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classtvm_1_1relay_1_1Pattern__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for tvm\+:\+:relay\+:\+:Pattern\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=184pt]{classtvm_1_1relay_1_1Pattern__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+using \hyperlink{classtvm_1_1relay_1_1Pattern_affbbf40e45c1f0fff2c97ee871c38fdf}{Container\+Type} = \hyperlink{classtvm_1_1relay_1_1PatternNode}{Pattern\+Node}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classtvm_1_1relay_1_1Pattern_aba2fe5ab04ab0b56ff855cfc572b16ff}{Pattern} ()
+\item 
+\hyperlink{classtvm_1_1relay_1_1Pattern_ad2eae0030bb557fbee1b85517cd9c31e}{Pattern} (Object\+Ptr$<$ tvm\+::\+Object $>$ p)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\hyperlink{classtvm_1_1relay_1_1Pattern}{Pattern} is the base type for an A\+DT match pattern in Relay. 
+
+Given an A\+DT value, a pattern might accept it and bind the pattern variable to some value (typically a subnode of the input or the input). Otherwise, the pattern rejects the value.
+
+A\+DT pattern matching thus takes a list of values and binds to the first that accepts the value. 
+
+\subsection{Member Typedef Documentation}
+\index{tvm\+::relay\+::\+Pattern@{tvm\+::relay\+::\+Pattern}!Container\+Type@{Container\+Type}}
+\index{Container\+Type@{Container\+Type}!tvm\+::relay\+::\+Pattern@{tvm\+::relay\+::\+Pattern}}
+\subsubsection[{\texorpdfstring{Container\+Type}{ContainerType}}]{\setlength{\rightskip}{0pt plus 5cm}using {\bf tvm\+::relay\+::\+Pattern\+::\+Container\+Type} =  {\bf Pattern\+Node}}\hypertarget{classtvm_1_1relay_1_1Pattern_affbbf40e45c1f0fff2c97ee871c38fdf}{}\label{classtvm_1_1relay_1_1Pattern_affbbf40e45c1f0fff2c97ee871c38fdf}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\index{tvm\+::relay\+::\+Pattern@{tvm\+::relay\+::\+Pattern}!Pattern@{Pattern}}
+\index{Pattern@{Pattern}!tvm\+::relay\+::\+Pattern@{tvm\+::relay\+::\+Pattern}}
+\subsubsection[{\texorpdfstring{Pattern()}{Pattern()}}]{\setlength{\rightskip}{0pt plus 5cm}tvm\+::relay\+::\+Pattern\+::\+Pattern (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classtvm_1_1relay_1_1Pattern_aba2fe5ab04ab0b56ff855cfc572b16ff}{}\label{classtvm_1_1relay_1_1Pattern_aba2fe5ab04ab0b56ff855cfc572b16ff}
+\index{tvm\+::relay\+::\+Pattern@{tvm\+::relay\+::\+Pattern}!Pattern@{Pattern}}
+\index{Pattern@{Pattern}!tvm\+::relay\+::\+Pattern@{tvm\+::relay\+::\+Pattern}}
+\subsubsection[{\texorpdfstring{Pattern(\+Object\+Ptr$<$ tvm\+::\+Object $>$ p)}{Pattern(ObjectPtr< tvm::Object > p)}}]{\setlength{\rightskip}{0pt plus 5cm}tvm\+::relay\+::\+Pattern\+::\+Pattern (
+\begin{DoxyParamCaption}
+\item[{Object\+Ptr$<$ tvm\+::\+Object $>$}]{p}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [explicit]}}\hypertarget{classtvm_1_1relay_1_1Pattern_ad2eae0030bb557fbee1b85517cd9c31e}{}\label{classtvm_1_1relay_1_1Pattern_ad2eae0030bb557fbee1b85517cd9c31e}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+include/tvm/relay/\hyperlink{relay_2adt_8h}{adt.\+h}\end{DoxyCompactItemize}

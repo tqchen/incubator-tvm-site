@@ -1,0 +1,14 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="dir_919d148e3bc0d2ada10274b170555243" kind="dir">
+    <compoundname>topi/include/topi/generic</compoundname>
+    <innerfile refid="generic_2default_8h">default.h</innerfile>
+    <innerfile refid="generic_2extern_8h">extern.h</innerfile>
+    <innerfile refid="generic_2injective_8h">injective.h</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="topi/include/topi/generic/"/>
+  </compounddef>
+</doxygen>

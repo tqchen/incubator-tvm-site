@@ -1,0 +1,91 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="classtvm_1_1StructuralEqual" kind="class" language="C++" prot="public">
+    <compoundname>tvm::StructuralEqual</compoundname>
+    <basecompoundref refid="classtvm_1_1BaseValueEqual" prot="public" virt="non-virtual">tvm::BaseValueEqual</basecompoundref>
+    <includes refid="structural__equal_8h" local="no">structural_equal.h</includes>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classtvm_1_1StructuralEqual_1a39de30452ef65634ccc510e3507d7f20" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool tvm::StructuralEqual::operator()</definition>
+        <argsstring>(const ObjectRef &amp;lhs, const ObjectRef &amp;rhs) const </argsstring>
+        <name>operator()</name>
+        <param>
+          <type>const ObjectRef &amp;</type>
+          <declname>lhs</declname>
+        </param>
+        <param>
+          <type>const ObjectRef &amp;</type>
+          <declname>rhs</declname>
+        </param>
+        <briefdescription>
+<para>Compare objects via strutural equal. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>lhs</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The left operand. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>rhs</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The right operand. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The comparison result. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/node/structural_equal.h" line="103" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Content-aware structural equality comparator for objects. </para>    </briefdescription>
+    <detaileddescription>
+<para>The structural equality is recursively defined in the DAG of IR nodes via SEqual. There are two kinds of nodes:</para><para><itemizedlist>
+<listitem><para>Graph node: a graph node in lhs can only be mapped as equal to one and only one graph node in rhs.</para></listitem><listitem><para>Normal node: equality is recursively defined without the restriction of graph nodes.</para></listitem></itemizedlist>
+</para><para>Vars(tir::Var, TypeVar) and non-constant relay expression nodes are graph nodes. For example, it means that <computeroutput>%1 = x + y; %1 + %1</computeroutput> is not structurally equal to <computeroutput>%1 = x + y; %2 = x + y; %1 + %2</computeroutput> in relay.</para><para>A var-type node(e.g. <ref refid="classtvm_1_1tir_1_1Var" kindref="compound">tir::Var</ref>, <ref refid="classtvm_1_1TypeVar" kindref="compound">TypeVar</ref>) can be mapped as equal to another var with the same type if one of the following condition holds:</para><para><itemizedlist>
+<listitem><para>They appear in a same definition point(e.g. function argument).</para></listitem><listitem><para>They points to the same VarNode via the same_as relation.</para></listitem><listitem><para>They appear in a same usage point, and map_free_vars is set to be True. </para></listitem></itemizedlist>
+</para>    </detaileddescription>
+    <inheritancegraph>
+      <node id="7069">
+        <label>tvm::BaseValueEqual</label>
+        <link refid="classtvm_1_1BaseValueEqual"/>
+      </node>
+      <node id="7068">
+        <label>tvm::StructuralEqual</label>
+        <link refid="classtvm_1_1StructuralEqual"/>
+        <childnode refid="7069" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="7071">
+        <label>tvm::BaseValueEqual</label>
+        <link refid="classtvm_1_1BaseValueEqual"/>
+      </node>
+      <node id="7070">
+        <label>tvm::StructuralEqual</label>
+        <link refid="classtvm_1_1StructuralEqual"/>
+        <childnode refid="7071" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="include/tvm/node/structural_equal.h" line="93" column="1" bodyfile="include/tvm/node/structural_equal.h" bodystart="93" bodyend="104"/>
+    <listofallmembers>
+      <member refid="classtvm_1_1StructuralEqual_1a39de30452ef65634ccc510e3507d7f20" prot="public" virt="non-virtual"><scope>tvm::StructuralEqual</scope><name>operator()</name></member>
+      <member refid="classtvm_1_1BaseValueEqual_1a5bcd390efea36f5ea22ea88c2b49d0e4" prot="public" virt="non-virtual" ambiguityscope="tvm::BaseValueEqual::"><scope>tvm::StructuralEqual</scope><name>operator()</name></member>
+      <member refid="classtvm_1_1BaseValueEqual_1a64a27662996232361171c0b83ef64efc" prot="public" virt="non-virtual" ambiguityscope="tvm::BaseValueEqual::"><scope>tvm::StructuralEqual</scope><name>operator()</name></member>
+      <member refid="classtvm_1_1BaseValueEqual_1aa073e7b407abe9736f3dfc82b1d17dfe" prot="public" virt="non-virtual" ambiguityscope="tvm::BaseValueEqual::"><scope>tvm::StructuralEqual</scope><name>operator()</name></member>
+      <member refid="classtvm_1_1BaseValueEqual_1a2d2542641197aa4f5d6e00dd826c41fa" prot="public" virt="non-virtual" ambiguityscope="tvm::BaseValueEqual::"><scope>tvm::StructuralEqual</scope><name>operator()</name></member>
+      <member refid="classtvm_1_1BaseValueEqual_1ad3272aa40535658ca5dd8658e392ba91" prot="public" virt="non-virtual" ambiguityscope="tvm::BaseValueEqual::"><scope>tvm::StructuralEqual</scope><name>operator()</name></member>
+      <member refid="classtvm_1_1BaseValueEqual_1a70b32b6f7a8c60f754ed8dd945030bbb" prot="public" virt="non-virtual" ambiguityscope="tvm::BaseValueEqual::"><scope>tvm::StructuralEqual</scope><name>operator()</name></member>
+      <member refid="classtvm_1_1BaseValueEqual_1a76b682e3ea647fae4e0da9651674417a" prot="public" virt="non-virtual" ambiguityscope="tvm::BaseValueEqual::"><scope>tvm::StructuralEqual</scope><name>operator()</name></member>
+      <member refid="classtvm_1_1BaseValueEqual_1a384fdf8cfd26188b4ec6febae8e698df" prot="public" virt="non-virtual" ambiguityscope="tvm::BaseValueEqual::"><scope>tvm::StructuralEqual</scope><name>operator()</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

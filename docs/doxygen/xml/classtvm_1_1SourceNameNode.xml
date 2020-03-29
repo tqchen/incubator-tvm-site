@@ -1,0 +1,132 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="classtvm_1_1SourceNameNode" kind="class" language="C++" prot="public">
+    <compoundname>tvm::SourceNameNode</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">Object</basecompoundref>
+    <includes refid="span_8h" local="no">span.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="classtvm_1_1SourceNameNode_1a92e5e928cfdb8d7f4efd09f63d6632c7" prot="public" static="no" mutable="no">
+        <type>std::string</type>
+        <definition>std::string tvm::SourceNameNode::name</definition>
+        <argsstring></argsstring>
+        <name>name</name>
+        <briefdescription>
+<para>The source name. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/ir/span.h" line="43" column="1" bodyfile="include/tvm/ir/span.h" bodystart="43" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-attrib">
+      <memberdef kind="variable" id="classtvm_1_1SourceNameNode_1a5a950f6576d6e5e4de7b0adc1cac260c" prot="public" static="yes" mutable="no">
+        <type>constexpr const char *</type>
+        <definition>constexpr const char* tvm::SourceNameNode::_type_key</definition>
+        <argsstring></argsstring>
+        <name>_type_key</name>
+        <initializer>= &quot;SourceName&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/ir/span.h" line="51" column="1" bodyfile="include/tvm/ir/span.h" bodystart="51" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classtvm_1_1SourceNameNode_1acbea8729c55af6e2451338e2be5a84ce" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void tvm::SourceNameNode::VisitAttrs</definition>
+        <argsstring>(AttrVisitor *v)</argsstring>
+        <name>VisitAttrs</name>
+        <param>
+          <type><ref refid="classtvm_1_1AttrVisitor" kindref="compound">AttrVisitor</ref> *</type>
+          <declname>v</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/ir/span.h" line="45" column="1" bodyfile="include/tvm/ir/span.h" bodystart="45" bodyend="45"/>
+      </memberdef>
+      <memberdef kind="function" id="classtvm_1_1SourceNameNode_1a1ab3c95ef12535d40584098af7488673" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool tvm::SourceNameNode::SEqualReduce</definition>
+        <argsstring>(const SourceNameNode *other, SEqualReducer equal) const </argsstring>
+        <name>SEqualReduce</name>
+        <param>
+          <type>const <ref refid="classtvm_1_1SourceNameNode" kindref="compound">SourceNameNode</ref> *</type>
+          <declname>other</declname>
+        </param>
+        <param>
+          <type><ref refid="classtvm_1_1SEqualReducer" kindref="compound">SEqualReducer</ref></type>
+          <declname>equal</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/ir/span.h" line="47" column="1" bodyfile="include/tvm/ir/span.h" bodystart="47" bodyend="49"/>
+      </memberdef>
+      <memberdef kind="function" id="classtvm_1_1SourceNameNode_1a61a9f7923b7dd684274e9ce4045ffa13" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>tvm::SourceNameNode::TVM_DECLARE_FINAL_OBJECT_INFO</definition>
+        <argsstring>(SourceNameNode, Object)</argsstring>
+        <name>TVM_DECLARE_FINAL_OBJECT_INFO</name>
+        <param>
+          <type><ref refid="classtvm_1_1SourceNameNode" kindref="compound">SourceNameNode</ref></type>
+        </param>
+        <param>
+          <type>Object</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/ir/span.h" line="52" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>The name of a source fragment. </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="6860">
+        <label>tvm::SourceNameNode</label>
+        <link refid="classtvm_1_1SourceNameNode"/>
+        <childnode refid="6861" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="6861">
+        <label>Object</label>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="6862">
+        <label>tvm::SourceNameNode</label>
+        <link refid="classtvm_1_1SourceNameNode"/>
+        <childnode refid="6863" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="6863">
+        <label>Object</label>
+      </node>
+    </collaborationgraph>
+    <location file="include/tvm/ir/span.h" line="40" column="1" bodyfile="include/tvm/ir/span.h" bodystart="40" bodyend="53"/>
+    <listofallmembers>
+      <member refid="classtvm_1_1SourceNameNode_1a5a950f6576d6e5e4de7b0adc1cac260c" prot="public" virt="non-virtual"><scope>tvm::SourceNameNode</scope><name>_type_key</name></member>
+      <member refid="classtvm_1_1SourceNameNode_1a92e5e928cfdb8d7f4efd09f63d6632c7" prot="public" virt="non-virtual"><scope>tvm::SourceNameNode</scope><name>name</name></member>
+      <member refid="classtvm_1_1SourceNameNode_1a1ab3c95ef12535d40584098af7488673" prot="public" virt="non-virtual"><scope>tvm::SourceNameNode</scope><name>SEqualReduce</name></member>
+      <member refid="classtvm_1_1SourceNameNode_1a61a9f7923b7dd684274e9ce4045ffa13" prot="public" virt="non-virtual"><scope>tvm::SourceNameNode</scope><name>TVM_DECLARE_FINAL_OBJECT_INFO</name></member>
+      <member refid="classtvm_1_1SourceNameNode_1acbea8729c55af6e2451338e2be5a84ce" prot="public" virt="non-virtual"><scope>tvm::SourceNameNode</scope><name>VisitAttrs</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

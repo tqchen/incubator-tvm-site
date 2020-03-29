@@ -1,0 +1,150 @@
+\hypertarget{classtvm_1_1relay_1_1VarNode}{}\section{tvm\+:\+:relay\+:\+:Var\+Node Class Reference}
+\label{classtvm_1_1relay_1_1VarNode}\index{tvm\+::relay\+::\+Var\+Node@{tvm\+::relay\+::\+Var\+Node}}
+
+
+Container for \hyperlink{classtvm_1_1relay_1_1Var}{Var}.  
+
+
+
+
+{\ttfamily \#include $<$expr.\+h$>$}
+
+
+
+Inheritance diagram for tvm\+:\+:relay\+:\+:Var\+Node\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{classtvm_1_1relay_1_1VarNode__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for tvm\+:\+:relay\+:\+:Var\+Node\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classtvm_1_1relay_1_1VarNode__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+const std\+::string \& \hyperlink{classtvm_1_1relay_1_1VarNode_aa9a3d5f1c750ab4e34f23bf21daeb53d}{name\+\_\+hint} () const 
+\item 
+void \hyperlink{classtvm_1_1relay_1_1VarNode_a9b43f30f77f1696e11f423f4834b42af}{Visit\+Attrs} (\hyperlink{classtvm_1_1AttrVisitor}{tvm\+::\+Attr\+Visitor} $\ast$v)
+\item 
+bool \hyperlink{classtvm_1_1relay_1_1VarNode_abc18494ecd63c935ba379de302db95e0}{S\+Equal\+Reduce} (const \hyperlink{classtvm_1_1relay_1_1VarNode}{Var\+Node} $\ast$other, \hyperlink{classtvm_1_1SEqualReducer}{S\+Equal\+Reducer} equal) const 
+\item 
+void \hyperlink{classtvm_1_1relay_1_1VarNode_a79ca8344a35daed052ca91a282c58cdb}{S\+Hash\+Reduce} (\hyperlink{classtvm_1_1SHashReducer}{S\+Hash\+Reducer} hash\+\_\+reduce) const 
+\item 
+\hyperlink{classtvm_1_1relay_1_1VarNode_a9fc5bd45ca5ccdd0f88f3ebb7c8aebb5}{T\+V\+M\+\_\+\+D\+E\+C\+L\+A\+R\+E\+\_\+\+F\+I\+N\+A\+L\+\_\+\+O\+B\+J\+E\+C\+T\+\_\+\+I\+N\+FO} (\hyperlink{classtvm_1_1relay_1_1VarNode}{Var\+Node}, \hyperlink{namespacetvm_1_1relay_a387f18e050d016c52ea6c4781e7cff6c}{Expr\+Node})
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \hyperlink{classtvm_1_1relay_1_1Var}{Var} \hyperlink{classtvm_1_1relay_1_1VarNode_aa2051e62113c0479c948a2f191ab09f1}{make} (std\+::string \hyperlink{classtvm_1_1relay_1_1VarNode_aa9a3d5f1c750ab4e34f23bf21daeb53d}{name\+\_\+hint}, \hyperlink{namespacetvm_1_1relay_a661d95f170bca230773914caeef3fe52}{Type} \hyperlink{classtvm_1_1relay_1_1VarNode_a79a56885eaf2a9326ff490164a5c1f0e}{type\+\_\+annotation})
+\item 
+static \hyperlink{classtvm_1_1relay_1_1Var}{Var} \hyperlink{classtvm_1_1relay_1_1VarNode_a3db693e18bb0da26eb51d6d71e12f419}{make} (\hyperlink{classtvm_1_1relay_1_1Id}{Id} \hyperlink{classtvm_1_1relay_1_1VarNode_af191a8eedf3575d626771c9c820ddb63}{vid}, \hyperlink{namespacetvm_1_1relay_a661d95f170bca230773914caeef3fe52}{Type} \hyperlink{classtvm_1_1relay_1_1VarNode_a79a56885eaf2a9326ff490164a5c1f0e}{type\+\_\+annotation})
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classtvm_1_1relay_1_1Id}{Id} \hyperlink{classtvm_1_1relay_1_1VarNode_af191a8eedf3575d626771c9c820ddb63}{vid}
+\begin{DoxyCompactList}\small\item\em The unique identifier of the \hyperlink{classtvm_1_1relay_1_1Var}{Var}. \end{DoxyCompactList}\item 
+\hyperlink{namespacetvm_1_1relay_a661d95f170bca230773914caeef3fe52}{Type} \hyperlink{classtvm_1_1relay_1_1VarNode_a79a56885eaf2a9326ff490164a5c1f0e}{type\+\_\+annotation}
+\begin{DoxyCompactList}\small\item\em type annotaion of the variable. This field records user provided type annotation of the \hyperlink{classtvm_1_1relay_1_1Var}{Var}. This field is optional and can be None. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static constexpr const char $\ast$ \hyperlink{classtvm_1_1relay_1_1VarNode_a8f636ca6173977176ebee6fed7820669}{\+\_\+type\+\_\+key} = \char`\"{}relay.\+Var\char`\"{}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Container for \hyperlink{classtvm_1_1relay_1_1Var}{Var}. 
+
+\subsection{Member Function Documentation}
+\index{tvm\+::relay\+::\+Var\+Node@{tvm\+::relay\+::\+Var\+Node}!make@{make}}
+\index{make@{make}!tvm\+::relay\+::\+Var\+Node@{tvm\+::relay\+::\+Var\+Node}}
+\subsubsection[{\texorpdfstring{make(std\+::string name\+\_\+hint, Type type\+\_\+annotation)}{make(std::string name_hint, Type type_annotation)}}]{\setlength{\rightskip}{0pt plus 5cm}static {\bf Var} tvm\+::relay\+::\+Var\+Node\+::make (
+\begin{DoxyParamCaption}
+\item[{std\+::string}]{name\+\_\+hint, }
+\item[{{\bf Type}}]{type\+\_\+annotation}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}\hypertarget{classtvm_1_1relay_1_1VarNode_aa2051e62113c0479c948a2f191ab09f1}{}\label{classtvm_1_1relay_1_1VarNode_aa2051e62113c0479c948a2f191ab09f1}
+\index{tvm\+::relay\+::\+Var\+Node@{tvm\+::relay\+::\+Var\+Node}!make@{make}}
+\index{make@{make}!tvm\+::relay\+::\+Var\+Node@{tvm\+::relay\+::\+Var\+Node}}
+\subsubsection[{\texorpdfstring{make(\+Id vid, Type type\+\_\+annotation)}{make(Id vid, Type type_annotation)}}]{\setlength{\rightskip}{0pt plus 5cm}static {\bf Var} tvm\+::relay\+::\+Var\+Node\+::make (
+\begin{DoxyParamCaption}
+\item[{{\bf Id}}]{vid, }
+\item[{{\bf Type}}]{type\+\_\+annotation}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}\hypertarget{classtvm_1_1relay_1_1VarNode_a3db693e18bb0da26eb51d6d71e12f419}{}\label{classtvm_1_1relay_1_1VarNode_a3db693e18bb0da26eb51d6d71e12f419}
+\index{tvm\+::relay\+::\+Var\+Node@{tvm\+::relay\+::\+Var\+Node}!name\+\_\+hint@{name\+\_\+hint}}
+\index{name\+\_\+hint@{name\+\_\+hint}!tvm\+::relay\+::\+Var\+Node@{tvm\+::relay\+::\+Var\+Node}}
+\subsubsection[{\texorpdfstring{name\+\_\+hint() const }{name_hint() const }}]{\setlength{\rightskip}{0pt plus 5cm}const std\+::string\& tvm\+::relay\+::\+Var\+Node\+::name\+\_\+hint (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classtvm_1_1relay_1_1VarNode_aa9a3d5f1c750ab4e34f23bf21daeb53d}{}\label{classtvm_1_1relay_1_1VarNode_aa9a3d5f1c750ab4e34f23bf21daeb53d}
+\begin{DoxyReturn}{Returns}
+The name hint of the variable 
+\end{DoxyReturn}
+\index{tvm\+::relay\+::\+Var\+Node@{tvm\+::relay\+::\+Var\+Node}!S\+Equal\+Reduce@{S\+Equal\+Reduce}}
+\index{S\+Equal\+Reduce@{S\+Equal\+Reduce}!tvm\+::relay\+::\+Var\+Node@{tvm\+::relay\+::\+Var\+Node}}
+\subsubsection[{\texorpdfstring{S\+Equal\+Reduce(const Var\+Node $\ast$other, S\+Equal\+Reducer equal) const }{SEqualReduce(const VarNode *other, SEqualReducer equal) const }}]{\setlength{\rightskip}{0pt plus 5cm}bool tvm\+::relay\+::\+Var\+Node\+::\+S\+Equal\+Reduce (
+\begin{DoxyParamCaption}
+\item[{const {\bf Var\+Node} $\ast$}]{other, }
+\item[{{\bf S\+Equal\+Reducer}}]{equal}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classtvm_1_1relay_1_1VarNode_abc18494ecd63c935ba379de302db95e0}{}\label{classtvm_1_1relay_1_1VarNode_abc18494ecd63c935ba379de302db95e0}
+\index{tvm\+::relay\+::\+Var\+Node@{tvm\+::relay\+::\+Var\+Node}!S\+Hash\+Reduce@{S\+Hash\+Reduce}}
+\index{S\+Hash\+Reduce@{S\+Hash\+Reduce}!tvm\+::relay\+::\+Var\+Node@{tvm\+::relay\+::\+Var\+Node}}
+\subsubsection[{\texorpdfstring{S\+Hash\+Reduce(\+S\+Hash\+Reducer hash\+\_\+reduce) const }{SHashReduce(SHashReducer hash_reduce) const }}]{\setlength{\rightskip}{0pt plus 5cm}void tvm\+::relay\+::\+Var\+Node\+::\+S\+Hash\+Reduce (
+\begin{DoxyParamCaption}
+\item[{{\bf S\+Hash\+Reducer}}]{hash\+\_\+reduce}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classtvm_1_1relay_1_1VarNode_a79ca8344a35daed052ca91a282c58cdb}{}\label{classtvm_1_1relay_1_1VarNode_a79ca8344a35daed052ca91a282c58cdb}
+\index{tvm\+::relay\+::\+Var\+Node@{tvm\+::relay\+::\+Var\+Node}!T\+V\+M\+\_\+\+D\+E\+C\+L\+A\+R\+E\+\_\+\+F\+I\+N\+A\+L\+\_\+\+O\+B\+J\+E\+C\+T\+\_\+\+I\+N\+FO@{T\+V\+M\+\_\+\+D\+E\+C\+L\+A\+R\+E\+\_\+\+F\+I\+N\+A\+L\+\_\+\+O\+B\+J\+E\+C\+T\+\_\+\+I\+N\+FO}}
+\index{T\+V\+M\+\_\+\+D\+E\+C\+L\+A\+R\+E\+\_\+\+F\+I\+N\+A\+L\+\_\+\+O\+B\+J\+E\+C\+T\+\_\+\+I\+N\+FO@{T\+V\+M\+\_\+\+D\+E\+C\+L\+A\+R\+E\+\_\+\+F\+I\+N\+A\+L\+\_\+\+O\+B\+J\+E\+C\+T\+\_\+\+I\+N\+FO}!tvm\+::relay\+::\+Var\+Node@{tvm\+::relay\+::\+Var\+Node}}
+\subsubsection[{\texorpdfstring{T\+V\+M\+\_\+\+D\+E\+C\+L\+A\+R\+E\+\_\+\+F\+I\+N\+A\+L\+\_\+\+O\+B\+J\+E\+C\+T\+\_\+\+I\+N\+F\+O(\+Var\+Node, Expr\+Node)}{TVM_DECLARE_FINAL_OBJECT_INFO(VarNode, ExprNode)}}]{\setlength{\rightskip}{0pt plus 5cm}tvm\+::relay\+::\+Var\+Node\+::\+T\+V\+M\+\_\+\+D\+E\+C\+L\+A\+R\+E\+\_\+\+F\+I\+N\+A\+L\+\_\+\+O\+B\+J\+E\+C\+T\+\_\+\+I\+N\+FO (
+\begin{DoxyParamCaption}
+\item[{{\bf Var\+Node}}]{, }
+\item[{{\bf Expr\+Node}}]{}
+\end{DoxyParamCaption}
+)}\hypertarget{classtvm_1_1relay_1_1VarNode_a9fc5bd45ca5ccdd0f88f3ebb7c8aebb5}{}\label{classtvm_1_1relay_1_1VarNode_a9fc5bd45ca5ccdd0f88f3ebb7c8aebb5}
+\index{tvm\+::relay\+::\+Var\+Node@{tvm\+::relay\+::\+Var\+Node}!Visit\+Attrs@{Visit\+Attrs}}
+\index{Visit\+Attrs@{Visit\+Attrs}!tvm\+::relay\+::\+Var\+Node@{tvm\+::relay\+::\+Var\+Node}}
+\subsubsection[{\texorpdfstring{Visit\+Attrs(tvm\+::\+Attr\+Visitor $\ast$v)}{VisitAttrs(tvm::AttrVisitor *v)}}]{\setlength{\rightskip}{0pt plus 5cm}void tvm\+::relay\+::\+Var\+Node\+::\+Visit\+Attrs (
+\begin{DoxyParamCaption}
+\item[{{\bf tvm\+::\+Attr\+Visitor} $\ast$}]{v}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classtvm_1_1relay_1_1VarNode_a9b43f30f77f1696e11f423f4834b42af}{}\label{classtvm_1_1relay_1_1VarNode_a9b43f30f77f1696e11f423f4834b42af}
+
+
+\subsection{Member Data Documentation}
+\index{tvm\+::relay\+::\+Var\+Node@{tvm\+::relay\+::\+Var\+Node}!\+\_\+type\+\_\+key@{\+\_\+type\+\_\+key}}
+\index{\+\_\+type\+\_\+key@{\+\_\+type\+\_\+key}!tvm\+::relay\+::\+Var\+Node@{tvm\+::relay\+::\+Var\+Node}}
+\subsubsection[{\texorpdfstring{\+\_\+type\+\_\+key}{_type_key}}]{\setlength{\rightskip}{0pt plus 5cm}constexpr const char$\ast$ tvm\+::relay\+::\+Var\+Node\+::\+\_\+type\+\_\+key = \char`\"{}relay.\+Var\char`\"{}\hspace{0.3cm}{\ttfamily [static]}}\hypertarget{classtvm_1_1relay_1_1VarNode_a8f636ca6173977176ebee6fed7820669}{}\label{classtvm_1_1relay_1_1VarNode_a8f636ca6173977176ebee6fed7820669}
+\index{tvm\+::relay\+::\+Var\+Node@{tvm\+::relay\+::\+Var\+Node}!type\+\_\+annotation@{type\+\_\+annotation}}
+\index{type\+\_\+annotation@{type\+\_\+annotation}!tvm\+::relay\+::\+Var\+Node@{tvm\+::relay\+::\+Var\+Node}}
+\subsubsection[{\texorpdfstring{type\+\_\+annotation}{type_annotation}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Type} tvm\+::relay\+::\+Var\+Node\+::type\+\_\+annotation}\hypertarget{classtvm_1_1relay_1_1VarNode_a79a56885eaf2a9326ff490164a5c1f0e}{}\label{classtvm_1_1relay_1_1VarNode_a79a56885eaf2a9326ff490164a5c1f0e}
+
+
+type annotaion of the variable. This field records user provided type annotation of the \hyperlink{classtvm_1_1relay_1_1Var}{Var}. This field is optional and can be None. 
+
+\index{tvm\+::relay\+::\+Var\+Node@{tvm\+::relay\+::\+Var\+Node}!vid@{vid}}
+\index{vid@{vid}!tvm\+::relay\+::\+Var\+Node@{tvm\+::relay\+::\+Var\+Node}}
+\subsubsection[{\texorpdfstring{vid}{vid}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Id} tvm\+::relay\+::\+Var\+Node\+::vid}\hypertarget{classtvm_1_1relay_1_1VarNode_af191a8eedf3575d626771c9c820ddb63}{}\label{classtvm_1_1relay_1_1VarNode_af191a8eedf3575d626771c9c820ddb63}
+
+
+The unique identifier of the \hyperlink{classtvm_1_1relay_1_1Var}{Var}. 
+
+vid will be preserved for the same \hyperlink{classtvm_1_1relay_1_1Var}{Var} during type inference and other rewritings, while the \hyperlink{classtvm_1_1relay_1_1VarNode}{Var\+Node} might be recreated to attach additional information. This property can be used to keep track of parameter \hyperlink{classtvm_1_1relay_1_1Var}{Var} information across passes. 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+include/tvm/relay/\hyperlink{relay_2expr_8h}{expr.\+h}\end{DoxyCompactItemize}

@@ -1,0 +1,167 @@
+\hypertarget{classtvm_1_1tir_1_1Var}{}\section{tvm\+:\+:tir\+:\+:Var Class Reference}
+\label{classtvm_1_1tir_1_1Var}\index{tvm\+::tir\+::\+Var@{tvm\+::tir\+::\+Var}}
+
+
+a named variable in T\+VM  
+
+
+
+
+{\ttfamily \#include $<$expr.\+h$>$}
+
+
+
+Inheritance diagram for tvm\+:\+:tir\+:\+:Var\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{classtvm_1_1tir_1_1Var__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for tvm\+:\+:tir\+:\+:Var\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=230pt]{classtvm_1_1tir_1_1Var__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+using \hyperlink{classtvm_1_1tir_1_1Var_a4b52ee26bf893b70e12087eb5700da6a}{Container\+Type} = \hyperlink{classtvm_1_1tir_1_1VarNode}{Var\+Node}
+\begin{DoxyCompactList}\small\item\em type indicate the container type \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classtvm_1_1tir_1_1Var_a21ba7568a83bfc2a5896f9e0ff181129}{Var} (Object\+Ptr$<$ Object $>$ n)
+\item 
+\hyperlink{classtvm_1_1tir_1_1Var_a04d3346f5887ed96b8ba1c130d9393eb}{Var} (std\+::string name\+\_\+hint=\char`\"{}v\char`\"{}, Data\+Type \hyperlink{classtvm_1_1PrimExpr_a1098008618699c33adfbd19e582f9ffd}{dtype}=\hyperlink{classtvm_1_1runtime_1_1DataType_ab45f13dd70d982d9f977c79b6f7fac98}{Data\+Type\+::\+Int}(32))
+\begin{DoxyCompactList}\small\item\em \hyperlink{classtvm_1_1Constructor}{Constructor}. \end{DoxyCompactList}\item 
+\hyperlink{classtvm_1_1tir_1_1Var_a435e58da4d11329d9cb70ce77a15f78d}{Var} (std\+::string name\+\_\+hint, \hyperlink{classtvm_1_1Type}{Type} type\+\_\+annotation)
+\begin{DoxyCompactList}\small\item\em \hyperlink{classtvm_1_1Constructor}{Constructor} which provides a more detailed type annotation. \end{DoxyCompactList}\item 
+\hyperlink{classtvm_1_1tir_1_1Var}{Var} \hyperlink{classtvm_1_1tir_1_1Var_a614c7820e199ca7251bc64cac4210465}{copy\+\_\+with\+\_\+suffix} (const std\+::string \&suffix) const 
+\begin{DoxyCompactList}\small\item\em Make a new copy of var with same type, append suffix. \end{DoxyCompactList}\item 
+const \hyperlink{classtvm_1_1tir_1_1VarNode}{Var\+Node} $\ast$ \hyperlink{classtvm_1_1tir_1_1Var_a15138d962c7fee302e1024cafe05b15a}{operator-\/$>$} () const 
+\begin{DoxyCompactList}\small\item\em Get pointer to the internal value. \end{DoxyCompactList}\item 
+const \hyperlink{classtvm_1_1tir_1_1VarNode}{Var\+Node} $\ast$ \hyperlink{classtvm_1_1tir_1_1Var_a73a8df326077f135e3d97ea428bbe785}{get} () const 
+\begin{DoxyCompactList}\small\item\em Get pointer to the internal value. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+a named variable in T\+VM 
+
+\subsection{Member Typedef Documentation}
+\index{tvm\+::tir\+::\+Var@{tvm\+::tir\+::\+Var}!Container\+Type@{Container\+Type}}
+\index{Container\+Type@{Container\+Type}!tvm\+::tir\+::\+Var@{tvm\+::tir\+::\+Var}}
+\subsubsection[{\texorpdfstring{Container\+Type}{ContainerType}}]{\setlength{\rightskip}{0pt plus 5cm}using {\bf tvm\+::tir\+::\+Var\+::\+Container\+Type} =  {\bf Var\+Node}}\hypertarget{classtvm_1_1tir_1_1Var_a4b52ee26bf893b70e12087eb5700da6a}{}\label{classtvm_1_1tir_1_1Var_a4b52ee26bf893b70e12087eb5700da6a}
+
+
+type indicate the container type 
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\index{tvm\+::tir\+::\+Var@{tvm\+::tir\+::\+Var}!Var@{Var}}
+\index{Var@{Var}!tvm\+::tir\+::\+Var@{tvm\+::tir\+::\+Var}}
+\subsubsection[{\texorpdfstring{Var(\+Object\+Ptr$<$ Object $>$ n)}{Var(ObjectPtr< Object > n)}}]{\setlength{\rightskip}{0pt plus 5cm}tvm\+::tir\+::\+Var\+::\+Var (
+\begin{DoxyParamCaption}
+\item[{Object\+Ptr$<$ Object $>$}]{n}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [explicit]}}\hypertarget{classtvm_1_1tir_1_1Var_a21ba7568a83bfc2a5896f9e0ff181129}{}\label{classtvm_1_1tir_1_1Var_a21ba7568a83bfc2a5896f9e0ff181129}
+\index{tvm\+::tir\+::\+Var@{tvm\+::tir\+::\+Var}!Var@{Var}}
+\index{Var@{Var}!tvm\+::tir\+::\+Var@{tvm\+::tir\+::\+Var}}
+\subsubsection[{\texorpdfstring{Var(std\+::string name\+\_\+hint=""v"", Data\+Type dtype=\+Data\+Type\+::\+Int(32))}{Var(std::string name_hint="v", DataType dtype=DataType::Int(32))}}]{\setlength{\rightskip}{0pt plus 5cm}tvm\+::tir\+::\+Var\+::\+Var (
+\begin{DoxyParamCaption}
+\item[{std\+::string}]{name\+\_\+hint = {\ttfamily \char`\"{}v\char`\"{}}, }
+\item[{{\bf Data\+Type}}]{dtype = {\ttfamily {\bf Data\+Type\+::\+Int}(32)}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [explicit]}}\hypertarget{classtvm_1_1tir_1_1Var_a04d3346f5887ed96b8ba1c130d9393eb}{}\label{classtvm_1_1tir_1_1Var_a04d3346f5887ed96b8ba1c130d9393eb}
+
+
+\hyperlink{classtvm_1_1Constructor}{Constructor}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em name\+\_\+hint} & variable name \\
+\hline
+{\em dtype} & data type \\
+\hline
+\end{DoxyParams}
+\index{tvm\+::tir\+::\+Var@{tvm\+::tir\+::\+Var}!Var@{Var}}
+\index{Var@{Var}!tvm\+::tir\+::\+Var@{tvm\+::tir\+::\+Var}}
+\subsubsection[{\texorpdfstring{Var(std\+::string name\+\_\+hint, Type type\+\_\+annotation)}{Var(std::string name_hint, Type type_annotation)}}]{\setlength{\rightskip}{0pt plus 5cm}tvm\+::tir\+::\+Var\+::\+Var (
+\begin{DoxyParamCaption}
+\item[{std\+::string}]{name\+\_\+hint, }
+\item[{{\bf Type}}]{type\+\_\+annotation}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [explicit]}}\hypertarget{classtvm_1_1tir_1_1Var_a435e58da4d11329d9cb70ce77a15f78d}{}\label{classtvm_1_1tir_1_1Var_a435e58da4d11329d9cb70ce77a15f78d}
+
+
+\hyperlink{classtvm_1_1Constructor}{Constructor} which provides a more detailed type annotation. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em name\+\_\+hint} & variable name. \\
+\hline
+{\em type\+\_\+annotation} & The type annotation. \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\index{tvm\+::tir\+::\+Var@{tvm\+::tir\+::\+Var}!copy\+\_\+with\+\_\+suffix@{copy\+\_\+with\+\_\+suffix}}
+\index{copy\+\_\+with\+\_\+suffix@{copy\+\_\+with\+\_\+suffix}!tvm\+::tir\+::\+Var@{tvm\+::tir\+::\+Var}}
+\subsubsection[{\texorpdfstring{copy\+\_\+with\+\_\+suffix(const std\+::string \&suffix) const }{copy_with_suffix(const std::string &suffix) const }}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Var} tvm\+::tir\+::\+Var\+::copy\+\_\+with\+\_\+suffix (
+\begin{DoxyParamCaption}
+\item[{const std\+::string \&}]{suffix}
+\end{DoxyParamCaption}
+) const}\hypertarget{classtvm_1_1tir_1_1Var_a614c7820e199ca7251bc64cac4210465}{}\label{classtvm_1_1tir_1_1Var_a614c7820e199ca7251bc64cac4210465}
+
+
+Make a new copy of var with same type, append suffix. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em suffix} & The suffix to be appended. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the new \hyperlink{classtvm_1_1tir_1_1Var}{Var} copy 
+\end{DoxyReturn}
+\index{tvm\+::tir\+::\+Var@{tvm\+::tir\+::\+Var}!get@{get}}
+\index{get@{get}!tvm\+::tir\+::\+Var@{tvm\+::tir\+::\+Var}}
+\subsubsection[{\texorpdfstring{get() const }{get() const }}]{\setlength{\rightskip}{0pt plus 5cm}const {\bf Var\+Node}$\ast$ tvm\+::tir\+::\+Var\+::get (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classtvm_1_1tir_1_1Var_a73a8df326077f135e3d97ea428bbe785}{}\label{classtvm_1_1tir_1_1Var_a73a8df326077f135e3d97ea428bbe785}
+
+
+Get pointer to the internal value. 
+
+\begin{DoxyReturn}{Returns}
+the corresponding Variable. 
+\end{DoxyReturn}
+\index{tvm\+::tir\+::\+Var@{tvm\+::tir\+::\+Var}!operator-\/$>$@{operator-\/$>$}}
+\index{operator-\/$>$@{operator-\/$>$}!tvm\+::tir\+::\+Var@{tvm\+::tir\+::\+Var}}
+\subsubsection[{\texorpdfstring{operator-\/$>$() const }{operator->() const }}]{\setlength{\rightskip}{0pt plus 5cm}const {\bf Var\+Node}$\ast$ tvm\+::tir\+::\+Var\+::operator-\/$>$ (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classtvm_1_1tir_1_1Var_a15138d962c7fee302e1024cafe05b15a}{}\label{classtvm_1_1tir_1_1Var_a15138d962c7fee302e1024cafe05b15a}
+
+
+Get pointer to the internal value. 
+
+\begin{DoxyReturn}{Returns}
+the corresponding Variable. 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+include/tvm/tir/\hyperlink{tir_2expr_8h}{expr.\+h}\end{DoxyCompactItemize}

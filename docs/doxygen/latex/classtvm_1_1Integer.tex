@@ -1,0 +1,162 @@
+\hypertarget{classtvm_1_1Integer}{}\section{tvm\+:\+:Integer Class Reference}
+\label{classtvm_1_1Integer}\index{tvm\+::\+Integer@{tvm\+::\+Integer}}
+
+
+Container of constant int that adds more constructors.  
+
+
+
+
+{\ttfamily \#include $<$expr.\+h$>$}
+
+
+
+Inheritance diagram for tvm\+:\+:Integer\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{classtvm_1_1Integer__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for tvm\+:\+:Integer\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{classtvm_1_1Integer__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classtvm_1_1Integer_a2d3969d98441b5b2ee5d8a986a56c410}{Integer} ()
+\item 
+\hyperlink{classtvm_1_1Integer_a262bc171fdf52db5f34e3c8446fb81aa}{Integer} (Object\+Ptr$<$ Object $>$ node)
+\begin{DoxyCompactList}\small\item\em constructor from node. \end{DoxyCompactList}\item 
+\hyperlink{classtvm_1_1Integer_a1f58cf3c6dab32f1822b9cbccb5569e8}{Integer} (int value)
+\begin{DoxyCompactList}\small\item\em Construct integer from int value. \end{DoxyCompactList}\item 
+\hyperlink{classtvm_1_1Integer_a962f080ada680921fbfff0846553ec33}{Integer} (\hyperlink{classtvm_1_1IntImm}{Int\+Imm} other)
+\begin{DoxyCompactList}\small\item\em Construct integer from int imm. \end{DoxyCompactList}\item 
+{\footnotesize template$<$typename E\+Num , typename  = typename std\+::enable\+\_\+if$<$std\+::is\+\_\+enum$<$\+E\+Num$>$\+::value$>$\+::type$>$ }\\\hyperlink{classtvm_1_1Integer_abddd0de9406285ff558cc83111ae37bd}{Integer} (E\+Num value)
+\begin{DoxyCompactList}\small\item\em \hyperlink{classtvm_1_1Constructor}{Constructor} from enum. \end{DoxyCompactList}\item 
+\hyperlink{classtvm_1_1Integer}{Integer} \& \hyperlink{classtvm_1_1Integer_ad538a2ae6f636b3ce38fb4162b1c2549}{operator=} (const \hyperlink{classtvm_1_1IntImm}{Int\+Imm} \&other)
+\begin{DoxyCompactList}\small\item\em Assign an expression to integer. \end{DoxyCompactList}\item 
+\hyperlink{classtvm_1_1Integer_ab12102b4412b34faa459408d1fc8ba0e}{operator int64\+\_\+t} () const 
+\begin{DoxyCompactList}\small\item\em convert to int64\+\_\+t \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Container of constant int that adds more constructors. 
+
+This is used to store and automate type check attributes that must be constant integer.
+
+\begin{DoxySeeAlso}{See also}
+\hyperlink{classtvm_1_1IntImm}{Int\+Imm} 
+\end{DoxySeeAlso}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\index{tvm\+::\+Integer@{tvm\+::\+Integer}!Integer@{Integer}}
+\index{Integer@{Integer}!tvm\+::\+Integer@{tvm\+::\+Integer}}
+\subsubsection[{\texorpdfstring{Integer()}{Integer()}}]{\setlength{\rightskip}{0pt plus 5cm}tvm\+::\+Integer\+::\+Integer (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classtvm_1_1Integer_a2d3969d98441b5b2ee5d8a986a56c410}{}\label{classtvm_1_1Integer_a2d3969d98441b5b2ee5d8a986a56c410}
+\index{tvm\+::\+Integer@{tvm\+::\+Integer}!Integer@{Integer}}
+\index{Integer@{Integer}!tvm\+::\+Integer@{tvm\+::\+Integer}}
+\subsubsection[{\texorpdfstring{Integer(\+Object\+Ptr$<$ Object $>$ node)}{Integer(ObjectPtr< Object > node)}}]{\setlength{\rightskip}{0pt plus 5cm}tvm\+::\+Integer\+::\+Integer (
+\begin{DoxyParamCaption}
+\item[{Object\+Ptr$<$ Object $>$}]{node}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [explicit]}}\hypertarget{classtvm_1_1Integer_a262bc171fdf52db5f34e3c8446fb81aa}{}\label{classtvm_1_1Integer_a262bc171fdf52db5f34e3c8446fb81aa}
+
+
+constructor from node. 
+
+\index{tvm\+::\+Integer@{tvm\+::\+Integer}!Integer@{Integer}}
+\index{Integer@{Integer}!tvm\+::\+Integer@{tvm\+::\+Integer}}
+\subsubsection[{\texorpdfstring{Integer(int value)}{Integer(int value)}}]{\setlength{\rightskip}{0pt plus 5cm}tvm\+::\+Integer\+::\+Integer (
+\begin{DoxyParamCaption}
+\item[{int}]{value}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classtvm_1_1Integer_a1f58cf3c6dab32f1822b9cbccb5569e8}{}\label{classtvm_1_1Integer_a1f58cf3c6dab32f1822b9cbccb5569e8}
+
+
+Construct integer from int value. 
+
+\index{tvm\+::\+Integer@{tvm\+::\+Integer}!Integer@{Integer}}
+\index{Integer@{Integer}!tvm\+::\+Integer@{tvm\+::\+Integer}}
+\subsubsection[{\texorpdfstring{Integer(\+Int\+Imm other)}{Integer(IntImm other)}}]{\setlength{\rightskip}{0pt plus 5cm}tvm\+::\+Integer\+::\+Integer (
+\begin{DoxyParamCaption}
+\item[{{\bf Int\+Imm}}]{other}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classtvm_1_1Integer_a962f080ada680921fbfff0846553ec33}{}\label{classtvm_1_1Integer_a962f080ada680921fbfff0846553ec33}
+
+
+Construct integer from int imm. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em other} & The other value. \\
+\hline
+\end{DoxyParams}
+\index{tvm\+::\+Integer@{tvm\+::\+Integer}!Integer@{Integer}}
+\index{Integer@{Integer}!tvm\+::\+Integer@{tvm\+::\+Integer}}
+\subsubsection[{\texorpdfstring{Integer(\+E\+Num value)}{Integer(ENum value)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename E\+Num , typename  = typename std\+::enable\+\_\+if$<$std\+::is\+\_\+enum$<$\+E\+Num$>$\+::value$>$\+::type$>$ tvm\+::\+Integer\+::\+Integer (
+\begin{DoxyParamCaption}
+\item[{E\+Num}]{value}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [explicit]}}\hypertarget{classtvm_1_1Integer_abddd0de9406285ff558cc83111ae37bd}{}\label{classtvm_1_1Integer_abddd0de9406285ff558cc83111ae37bd}
+
+
+\hyperlink{classtvm_1_1Constructor}{Constructor} from enum. 
+
+
+\begin{DoxyTemplParams}{Template Parameters}
+{\em Enum} & The enum type. \\
+\hline
+\end{DoxyTemplParams}
+
+\begin{DoxyParams}{Parameters}
+{\em value} & The enum value. \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\index{tvm\+::\+Integer@{tvm\+::\+Integer}!operator int64\+\_\+t@{operator int64\+\_\+t}}
+\index{operator int64\+\_\+t@{operator int64\+\_\+t}!tvm\+::\+Integer@{tvm\+::\+Integer}}
+\subsubsection[{\texorpdfstring{operator int64\+\_\+t() const }{operator int64_t() const }}]{\setlength{\rightskip}{0pt plus 5cm}tvm\+::\+Integer\+::operator int64\+\_\+t (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classtvm_1_1Integer_ab12102b4412b34faa459408d1fc8ba0e}{}\label{classtvm_1_1Integer_ab12102b4412b34faa459408d1fc8ba0e}
+
+
+convert to int64\+\_\+t 
+
+\index{tvm\+::\+Integer@{tvm\+::\+Integer}!operator=@{operator=}}
+\index{operator=@{operator=}!tvm\+::\+Integer@{tvm\+::\+Integer}}
+\subsubsection[{\texorpdfstring{operator=(const Int\+Imm \&other)}{operator=(const IntImm &other)}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Integer}\& tvm\+::\+Integer\+::operator= (
+\begin{DoxyParamCaption}
+\item[{const {\bf Int\+Imm} \&}]{other}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classtvm_1_1Integer_ad538a2ae6f636b3ce38fb4162b1c2549}{}\label{classtvm_1_1Integer_ad538a2ae6f636b3ce38fb4162b1c2549}
+
+
+Assign an expression to integer. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em other} & another expression. \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+include/tvm/ir/\hyperlink{ir_2expr_8h}{expr.\+h}\end{DoxyCompactItemize}

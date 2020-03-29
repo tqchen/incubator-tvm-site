@@ -1,0 +1,145 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="classtvm_1_1relay_1_1OpSpecializationNode" kind="class" language="C++" prot="public">
+    <compoundname>tvm::relay::OpSpecializationNode</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">Object</basecompoundref>
+    <includes refid="op__strategy_8h" local="no">op_strategy.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="classtvm_1_1relay_1_1OpSpecializationNode_1a8d5ffe97532ff7b663d2b7da09bd9042" prot="public" static="no" mutable="no">
+        <type><ref refid="classtvm_1_1Array" kindref="compound">Array</ref>&lt; <ref refid="classtvm_1_1relay_1_1OpImplementation" kindref="compound">OpImplementation</ref> &gt;</type>
+        <definition>Array&lt;OpImplementation&gt; tvm::relay::OpSpecializationNode::implementations</definition>
+        <argsstring></argsstring>
+        <name>implementations</name>
+        <briefdescription>
+<para>List of implementations. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/relay/op_strategy.h" line="96" column="1" bodyfile="include/tvm/relay/op_strategy.h" bodystart="96" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classtvm_1_1relay_1_1OpSpecializationNode_1ad5875014bf3e9ce9ffe49af09bebdb99" prot="public" static="no" mutable="no">
+        <type><ref refid="classtvm_1_1te_1_1SpecializedCondition" kindref="compound">te::SpecializedCondition</ref></type>
+        <definition>te::SpecializedCondition tvm::relay::OpSpecializationNode::condition</definition>
+        <argsstring></argsstring>
+        <name>condition</name>
+        <briefdescription>
+<para>Condition to enable the specialization. Could be undefined to represent generic case. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/relay/op_strategy.h" line="99" column="1" bodyfile="include/tvm/relay/op_strategy.h" bodystart="99" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-attrib">
+      <memberdef kind="variable" id="classtvm_1_1relay_1_1OpSpecializationNode_1afb3931d103169a872632a7bd949d0573" prot="public" static="yes" mutable="no">
+        <type>constexpr const char *</type>
+        <definition>constexpr const char* tvm::relay::OpSpecializationNode::_type_key</definition>
+        <argsstring></argsstring>
+        <name>_type_key</name>
+        <initializer>= &quot;relay.OpSpecialization&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/relay/op_strategy.h" line="106" column="1" bodyfile="include/tvm/relay/op_strategy.h" bodystart="106" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classtvm_1_1relay_1_1OpSpecializationNode_1a3590903d81f746830f5998505714823b" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void tvm::relay::OpSpecializationNode::VisitAttrs</definition>
+        <argsstring>(tvm::AttrVisitor *v)</argsstring>
+        <name>VisitAttrs</name>
+        <param>
+          <type><ref refid="classtvm_1_1AttrVisitor" kindref="compound">tvm::AttrVisitor</ref> *</type>
+          <declname>v</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/relay/op_strategy.h" line="101" column="1" bodyfile="include/tvm/relay/op_strategy.h" bodystart="101" bodyend="104"/>
+      </memberdef>
+      <memberdef kind="function" id="classtvm_1_1relay_1_1OpSpecializationNode_1a3b5193281eff0f2143a09e8b51406a55" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>tvm::relay::OpSpecializationNode::TVM_DECLARE_FINAL_OBJECT_INFO</definition>
+        <argsstring>(OpSpecializationNode, ExprNode)</argsstring>
+        <name>TVM_DECLARE_FINAL_OBJECT_INFO</name>
+        <param>
+          <type><ref refid="classtvm_1_1relay_1_1OpSpecializationNode" kindref="compound">OpSpecializationNode</ref></type>
+        </param>
+        <param>
+          <type><ref refid="namespacetvm_1_1relay_1a387f18e050d016c52ea6c4781e7cff6c" kindref="member">ExprNode</ref></type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/relay/op_strategy.h" line="107" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Specialized implementations for operators under certain conditions. </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="5988">
+        <label>Object</label>
+      </node>
+      <node id="5987">
+        <label>tvm::relay::OpSpecializationNode</label>
+        <link refid="classtvm_1_1relay_1_1OpSpecializationNode"/>
+        <childnode refid="5988" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="5992">
+        <label>ObjectRef</label>
+      </node>
+      <node id="5993">
+        <label>tvm::te::SpecializedCondition</label>
+        <link refid="classtvm_1_1te_1_1SpecializedCondition"/>
+        <childnode refid="5992" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="5990">
+        <label>Object</label>
+      </node>
+      <node id="5991">
+        <label>tvm::Array&lt; tvm::relay::OpImplementation &gt;</label>
+        <link refid="classtvm_1_1Array"/>
+        <childnode refid="5992" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="5989">
+        <label>tvm::relay::OpSpecializationNode</label>
+        <link refid="classtvm_1_1relay_1_1OpSpecializationNode"/>
+        <childnode refid="5990" relation="public-inheritance">
+        </childnode>
+        <childnode refid="5991" relation="usage">
+          <edgelabel>+implementations</edgelabel>
+        </childnode>
+        <childnode refid="5993" relation="usage">
+          <edgelabel>+condition</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="include/tvm/relay/op_strategy.h" line="93" column="1" bodyfile="include/tvm/relay/op_strategy.h" bodystart="93" bodyend="108"/>
+    <listofallmembers>
+      <member refid="classtvm_1_1relay_1_1OpSpecializationNode_1afb3931d103169a872632a7bd949d0573" prot="public" virt="non-virtual"><scope>tvm::relay::OpSpecializationNode</scope><name>_type_key</name></member>
+      <member refid="classtvm_1_1relay_1_1OpSpecializationNode_1ad5875014bf3e9ce9ffe49af09bebdb99" prot="public" virt="non-virtual"><scope>tvm::relay::OpSpecializationNode</scope><name>condition</name></member>
+      <member refid="classtvm_1_1relay_1_1OpSpecializationNode_1a8d5ffe97532ff7b663d2b7da09bd9042" prot="public" virt="non-virtual"><scope>tvm::relay::OpSpecializationNode</scope><name>implementations</name></member>
+      <member refid="classtvm_1_1relay_1_1OpSpecializationNode_1a3b5193281eff0f2143a09e8b51406a55" prot="public" virt="non-virtual"><scope>tvm::relay::OpSpecializationNode</scope><name>TVM_DECLARE_FINAL_OBJECT_INFO</name></member>
+      <member refid="classtvm_1_1relay_1_1OpSpecializationNode_1a3590903d81f746830f5998505714823b" prot="public" virt="non-virtual"><scope>tvm::relay::OpSpecializationNode</scope><name>VisitAttrs</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

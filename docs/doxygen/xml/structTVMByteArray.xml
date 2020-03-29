@@ -1,0 +1,50 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="structTVMByteArray" kind="struct" language="C++" prot="public">
+    <compoundname>TVMByteArray</compoundname>
+    <includes refid="c__runtime__api_8h" local="no">c_runtime_api.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structTVMByteArray_1ab124e3227a75e0e4d55452f675f4fde1" prot="public" static="no" mutable="no">
+        <type>const char *</type>
+        <definition>const char* TVMByteArray::data</definition>
+        <argsstring></argsstring>
+        <name>data</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/runtime/c_runtime_api.h" line="146" column="1" bodyfile="include/tvm/runtime/c_runtime_api.h" bodystart="146" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structTVMByteArray_1a86d8e8341ce407b7d9374d887143e476" prot="public" static="no" mutable="no">
+        <type>size_t</type>
+        <definition>size_t TVMByteArray::size</definition>
+        <argsstring></argsstring>
+        <name>size</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/runtime/c_runtime_api.h" line="147" column="1" bodyfile="include/tvm/runtime/c_runtime_api.h" bodystart="147" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Byte array type used to pass in byte array When kTVMBytes is used as data type. </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="7323">
+        <label>TVMByteArray</label>
+        <link refid="structTVMByteArray"/>
+      </node>
+    </collaborationgraph>
+    <location file="include/tvm/runtime/c_runtime_api.h" line="145" column="1" bodyfile="include/tvm/runtime/c_runtime_api.h" bodystart="145" bodyend="148"/>
+    <listofallmembers>
+      <member refid="structTVMByteArray_1ab124e3227a75e0e4d55452f675f4fde1" prot="public" virt="non-virtual"><scope>TVMByteArray</scope><name>data</name></member>
+      <member refid="structTVMByteArray_1a86d8e8341ce407b7d9374d887143e476" prot="public" virt="non-virtual"><scope>TVMByteArray</scope><name>size</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

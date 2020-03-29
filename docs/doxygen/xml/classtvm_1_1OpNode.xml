@@ -1,0 +1,442 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="classtvm_1_1OpNode" kind="class" language="C++" prot="public">
+    <compoundname>tvm::OpNode</compoundname>
+    <basecompoundref refid="classtvm_1_1RelayExprNode" prot="public" virt="non-virtual">tvm::RelayExprNode</basecompoundref>
+    <includes refid="ir_2op_8h" local="no">op.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="classtvm_1_1OpNode_1ae8810815c68a55b8b6ab00dfb7d7778d" prot="public" static="no" mutable="no">
+        <type>std::string</type>
+        <definition>std::string tvm::OpNode::name</definition>
+        <argsstring></argsstring>
+        <name>name</name>
+        <briefdescription>
+<para>name of the operator </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/ir/op.h" line="62" column="1" bodyfile="include/tvm/ir/op.h" bodystart="62" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classtvm_1_1OpNode_1adff89c1e3f0aa6798a97fc4461293f7c" prot="public" static="no" mutable="yes">
+        <type><ref refid="classtvm_1_1FuncType" kindref="compound">FuncType</ref></type>
+        <definition>FuncType tvm::OpNode::op_type</definition>
+        <argsstring></argsstring>
+        <name>op_type</name>
+        <briefdescription>
+<para>the type of the operator </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/ir/op.h" line="64" column="1" bodyfile="include/tvm/ir/op.h" bodystart="64" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classtvm_1_1OpNode_1a95d402556bd6c710a0b38f50c8e5e3bc" prot="public" static="no" mutable="no">
+        <type>std::string</type>
+        <definition>std::string tvm::OpNode::description</definition>
+        <argsstring></argsstring>
+        <name>description</name>
+        <briefdescription>
+<para>detailed description of the operator This can be used to generate docstring automatically for the operator. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/ir/op.h" line="69" column="1" bodyfile="include/tvm/ir/op.h" bodystart="69" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classtvm_1_1OpNode_1af753e9ea21f09017bb61d5722b2ce181" prot="public" static="no" mutable="no">
+        <type><ref refid="classtvm_1_1Array" kindref="compound">Array</ref>&lt; <ref refid="classtvm_1_1AttrFieldInfo" kindref="compound">AttrFieldInfo</ref> &gt;</type>
+        <definition>Array&lt;AttrFieldInfo&gt; tvm::OpNode::arguments</definition>
+        <argsstring></argsstring>
+        <name>arguments</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/ir/op.h" line="71" column="1" bodyfile="include/tvm/ir/op.h" bodystart="71" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classtvm_1_1OpNode_1aedeeca81655fb2bba9e1de79dcd539d1" prot="public" static="no" mutable="no">
+        <type>std::string</type>
+        <definition>std::string tvm::OpNode::attrs_type_key</definition>
+        <argsstring></argsstring>
+        <name>attrs_type_key</name>
+        <briefdescription>
+<para>The type key of the attribute field This can be empty, in which case it defaults to anything. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/ir/op.h" line="76" column="1" bodyfile="include/tvm/ir/op.h" bodystart="76" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classtvm_1_1OpNode_1a4b7f1c6f18ede931328377bb8794c1bc" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t tvm::OpNode::attrs_type_index</definition>
+        <argsstring></argsstring>
+        <name>attrs_type_index</name>
+        <initializer>{0}</initializer>
+        <briefdescription>
+<para>attribute type index, this field varies in each run and is not exposed to frontend. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/ir/op.h" line="81" column="1" bodyfile="include/tvm/ir/op.h" bodystart="81" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classtvm_1_1OpNode_1aa13505588162bc5448bd03f02f5c545b" prot="public" static="no" mutable="no">
+        <type>int32_t</type>
+        <definition>int32_t tvm::OpNode::num_inputs</definition>
+        <argsstring></argsstring>
+        <name>num_inputs</name>
+        <initializer>= -1</initializer>
+        <briefdescription>
+<para>number of input arguments to the operator, -1 means it is variable length </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/ir/op.h" line="86" column="1" bodyfile="include/tvm/ir/op.h" bodystart="86" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classtvm_1_1OpNode_1a68a34098b5a111dec5f381cc4a80cb78" prot="public" static="no" mutable="no">
+        <type>int32_t</type>
+        <definition>int32_t tvm::OpNode::support_level</definition>
+        <argsstring></argsstring>
+        <name>support_level</name>
+        <initializer>= 10</initializer>
+        <briefdescription>
+<para>support level of the operator, The lower the more priority it contains. This is in analogies to BLAS levels. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/ir/op.h" line="92" column="1" bodyfile="include/tvm/ir/op.h" bodystart="92" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-attrib">
+      <memberdef kind="variable" id="classtvm_1_1OpNode_1a2c50dc0d1b84d52d6da19a6fa3fcabac" prot="public" static="yes" mutable="no">
+        <type>constexpr const char *</type>
+        <definition>constexpr const char* tvm::OpNode::_type_key</definition>
+        <argsstring></argsstring>
+        <name>_type_key</name>
+        <initializer>= &quot;relay.Op&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/ir/op.h" line="125" column="1" bodyfile="include/tvm/ir/op.h" bodystart="125" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="friend">
+      <memberdef kind="friend" id="classtvm_1_1OpNode_1a296d487cd2e3438353e759571270be97" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>friend class</type>
+        <definition>friend class GenericOpMap</definition>
+        <argsstring></argsstring>
+        <name>GenericOpMap</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/ir/op.h" line="130" column="1" bodyfile="include/tvm/ir/op.h" bodystart="130" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="friend" id="classtvm_1_1OpNode_1af7ebaf5af32d51226208f533e6d5cb1d" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>friend class</type>
+        <definition>friend class OpRegistry</definition>
+        <argsstring></argsstring>
+        <name>OpRegistry</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/ir/op.h" line="131" column="1" bodyfile="include/tvm/ir/op.h" bodystart="131" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="friend" id="classtvm_1_1OpNode_1aee9090e54dff3e72ed272b981e036ae6" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>friend bool</type>
+        <definition>bool IsPrimitiveOp</definition>
+        <argsstring>(const RelayExpr &amp;)</argsstring>
+        <name>IsPrimitiveOp</name>
+        <param>
+          <type>const <ref refid="classtvm_1_1RelayExpr" kindref="compound">RelayExpr</ref> &amp;</type>
+          <defname>expr</defname>
+        </param>
+        <briefdescription>
+<para>Check that an expression is a &quot;primitive operator&quot;. </para>        </briefdescription>
+        <detaileddescription>
+<para>Will return true if the expression is an operator which matches the form of primitive operators registered directly by the Relay codebase.</para><para>That is the arguments are all type variables, and there is a single type relation applied to the input and output types.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>expr</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>An expression. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Whether the expression is primitive op. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/ir/op.h" line="132" column="1" bodyfile="include/tvm/ir/op.h" bodystart="641" bodyend="644"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classtvm_1_1OpNode_1afa6fb03d66f7c494de7d642d4ba1e3c9" prot="private" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t tvm::OpNode::index_</definition>
+        <argsstring></argsstring>
+        <name>index_</name>
+        <initializer>{0}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/ir/op.h" line="135" column="1" bodyfile="include/tvm/ir/op.h" bodystart="135" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classtvm_1_1OpNode_1af86124e5a8442977183be1d91f1f8b81" prot="private" static="no" mutable="yes">
+        <type>int</type>
+        <definition>int tvm::OpNode::is_primitive_</definition>
+        <argsstring></argsstring>
+        <name>is_primitive_</name>
+        <initializer>{-1}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/ir/op.h" line="137" column="1" bodyfile="include/tvm/ir/op.h" bodystart="137" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classtvm_1_1OpNode_1a9a5aacb190b2c4ead60b2810bd9053f4" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void tvm::OpNode::VisitAttrs</definition>
+        <argsstring>(AttrVisitor *v)</argsstring>
+        <name>VisitAttrs</name>
+        <param>
+          <type><ref refid="classtvm_1_1AttrVisitor" kindref="compound">AttrVisitor</ref> *</type>
+          <declname>v</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/ir/op.h" line="94" column="1" bodyfile="include/tvm/ir/op.h" bodystart="94" bodyend="102"/>
+      </memberdef>
+      <memberdef kind="function" id="classtvm_1_1OpNode_1a23237d4a1ca4e21371d5ed0ac3520725" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool tvm::OpNode::SEqualReduce</definition>
+        <argsstring>(const OpNode *other, SEqualReducer equal) const </argsstring>
+        <name>SEqualReduce</name>
+        <param>
+          <type>const <ref refid="classtvm_1_1OpNode" kindref="compound">OpNode</ref> *</type>
+          <declname>other</declname>
+        </param>
+        <param>
+          <type><ref refid="classtvm_1_1SEqualReducer" kindref="compound">SEqualReducer</ref></type>
+          <declname>equal</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/ir/op.h" line="104" column="1" bodyfile="include/tvm/ir/op.h" bodystart="104" bodyend="107"/>
+      </memberdef>
+      <memberdef kind="function" id="classtvm_1_1OpNode_1abe8c1e8f86a4b62187a233174edce575" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void tvm::OpNode::SHashReduce</definition>
+        <argsstring>(SHashReducer hash_reduce) const </argsstring>
+        <name>SHashReduce</name>
+        <param>
+          <type><ref refid="classtvm_1_1SHashReducer" kindref="compound">SHashReducer</ref></type>
+          <declname>hash_reduce</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/ir/op.h" line="109" column="1" bodyfile="include/tvm/ir/op.h" bodystart="109" bodyend="112"/>
+      </memberdef>
+      <memberdef kind="function" id="classtvm_1_1OpNode_1a285c8dc0ccec2ca34386271d1b338506" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool tvm::OpNode::IsPrimitiveOp</definition>
+        <argsstring>() const </argsstring>
+        <name>IsPrimitiveOp</name>
+        <briefdescription>
+<para>Check that if current op is a &quot;primtive operator&quot;. That is the arguments are all type variables, and there is a single type relation applied to the input and output types. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/ir/op.h" line="119" column="1" bodyfile="include/tvm/ir/op.h" bodystart="119" bodyend="123"/>
+      </memberdef>
+      <memberdef kind="function" id="classtvm_1_1OpNode_1ade027d3176f48e7127be6ff08c723306" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>tvm::OpNode::TVM_DECLARE_FINAL_OBJECT_INFO</definition>
+        <argsstring>(OpNode, RelayExprNode)</argsstring>
+        <name>TVM_DECLARE_FINAL_OBJECT_INFO</name>
+        <param>
+          <type><ref refid="classtvm_1_1OpNode" kindref="compound">OpNode</ref></type>
+        </param>
+        <param>
+          <type><ref refid="classtvm_1_1RelayExprNode" kindref="compound">RelayExprNode</ref></type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/ir/op.h" line="126" column="1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="classtvm_1_1OpNode_1ab95000dfc4d48498cb97e88d4e507353" prot="private" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool tvm::OpNode::IsPrimitiveOp_</definition>
+        <argsstring>() const </argsstring>
+        <name>IsPrimitiveOp_</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/ir/op.h" line="139" column="1" bodyfile="include/tvm/ir/op.h" bodystart="139" bodyend="149"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Primitive Op(builtin intrinsics) </para>    </briefdescription>
+    <detaileddescription>
+<para>This data structure stores the meta-data about primitive operators that can be invoked via Call.</para><para>Low-level IR intrinsics(such as libc.expf) are also implemented via <ref refid="classtvm_1_1Op" kindref="compound">Op</ref>.</para><para><simplesect kind="see"><para><ref refid="classtvm_1_1Op" kindref="compound">Op</ref> </para></simplesect>
+</para>    </detaileddescription>
+    <inheritancegraph>
+      <node id="5969">
+        <label>tvm::RelayExprNode</label>
+        <link refid="classtvm_1_1RelayExprNode"/>
+        <childnode refid="5970" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="5970">
+        <label>tvm::BaseExprNode</label>
+        <link refid="classtvm_1_1BaseExprNode"/>
+        <childnode refid="5971" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="5971">
+        <label>Object</label>
+      </node>
+      <node id="5968">
+        <label>tvm::OpNode</label>
+        <link refid="classtvm_1_1OpNode"/>
+        <childnode refid="5969" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="5977">
+        <label>ObjectRef</label>
+      </node>
+      <node id="5973">
+        <label>tvm::RelayExprNode</label>
+        <link refid="classtvm_1_1RelayExprNode"/>
+        <childnode refid="5974" relation="public-inheritance">
+        </childnode>
+        <childnode refid="5976" relation="usage">
+          <edgelabel>+span</edgelabel>
+        </childnode>
+        <childnode refid="5978" relation="usage">
+          <edgelabel>+checked_type_</edgelabel>
+        </childnode>
+      </node>
+      <node id="5974">
+        <label>tvm::BaseExprNode</label>
+        <link refid="classtvm_1_1BaseExprNode"/>
+        <childnode refid="5975" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="5979">
+        <label>tvm::FuncType</label>
+        <link refid="classtvm_1_1FuncType"/>
+        <childnode refid="5978" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="5976">
+        <label>tvm::Span</label>
+        <link refid="classtvm_1_1Span"/>
+        <childnode refid="5977" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="5975">
+        <label>Object</label>
+      </node>
+      <node id="5980">
+        <label>tvm::Array&lt; tvm::AttrFieldInfo &gt;</label>
+        <link refid="classtvm_1_1Array"/>
+        <childnode refid="5977" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="5978">
+        <label>tvm::Type</label>
+        <link refid="classtvm_1_1Type"/>
+        <childnode refid="5977" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="5972">
+        <label>tvm::OpNode</label>
+        <link refid="classtvm_1_1OpNode"/>
+        <childnode refid="5973" relation="public-inheritance">
+        </childnode>
+        <childnode refid="5979" relation="usage">
+          <edgelabel>+op_type</edgelabel>
+        </childnode>
+        <childnode refid="5980" relation="usage">
+          <edgelabel>+arguments</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="include/tvm/ir/op.h" line="59" column="1" bodyfile="include/tvm/ir/op.h" bodystart="59" bodyend="150"/>
+    <listofallmembers>
+      <member refid="classtvm_1_1BaseExprNode_1a905dcf65204e877b6ccb977cf375f2a0" prot="public" virt="non-virtual"><scope>tvm::OpNode</scope><name>_type_has_method_sequal_reduce</name></member>
+      <member refid="classtvm_1_1BaseExprNode_1a13d7d1f1e6f790951caf200cd59c3620" prot="public" virt="non-virtual"><scope>tvm::OpNode</scope><name>_type_has_method_shash_reduce</name></member>
+      <member refid="classtvm_1_1OpNode_1a2c50dc0d1b84d52d6da19a6fa3fcabac" prot="public" virt="non-virtual"><scope>tvm::OpNode</scope><name>_type_key</name></member>
+      <member refid="classtvm_1_1OpNode_1af753e9ea21f09017bb61d5722b2ce181" prot="public" virt="non-virtual"><scope>tvm::OpNode</scope><name>arguments</name></member>
+      <member refid="classtvm_1_1OpNode_1a4b7f1c6f18ede931328377bb8794c1bc" prot="public" virt="non-virtual"><scope>tvm::OpNode</scope><name>attrs_type_index</name></member>
+      <member refid="classtvm_1_1OpNode_1aedeeca81655fb2bba9e1de79dcd539d1" prot="public" virt="non-virtual"><scope>tvm::OpNode</scope><name>attrs_type_key</name></member>
+      <member refid="classtvm_1_1RelayExprNode_1a89bfd23e109a842d18240277ffaaa130" prot="public" virt="non-virtual"><scope>tvm::OpNode</scope><name>checked_type</name></member>
+      <member refid="classtvm_1_1RelayExprNode_1ae30ca49a8b84288fbc21d5f312f02929" prot="public" virt="non-virtual"><scope>tvm::OpNode</scope><name>checked_type_</name></member>
+      <member refid="classtvm_1_1OpNode_1a95d402556bd6c710a0b38f50c8e5e3bc" prot="public" virt="non-virtual"><scope>tvm::OpNode</scope><name>description</name></member>
+      <member refid="classtvm_1_1OpNode_1a296d487cd2e3438353e759571270be97" prot="private" virt="non-virtual"><scope>tvm::OpNode</scope><name>GenericOpMap</name></member>
+      <member refid="classtvm_1_1OpNode_1afa6fb03d66f7c494de7d642d4ba1e3c9" prot="private" virt="non-virtual"><scope>tvm::OpNode</scope><name>index_</name></member>
+      <member refid="classtvm_1_1OpNode_1af86124e5a8442977183be1d91f1f8b81" prot="private" virt="non-virtual"><scope>tvm::OpNode</scope><name>is_primitive_</name></member>
+      <member refid="classtvm_1_1OpNode_1a285c8dc0ccec2ca34386271d1b338506" prot="public" virt="non-virtual"><scope>tvm::OpNode</scope><name>IsPrimitiveOp</name></member>
+      <member refid="classtvm_1_1OpNode_1aee9090e54dff3e72ed272b981e036ae6" prot="private" virt="non-virtual"><scope>tvm::OpNode</scope><name>IsPrimitiveOp</name></member>
+      <member refid="classtvm_1_1OpNode_1ab95000dfc4d48498cb97e88d4e507353" prot="private" virt="non-virtual"><scope>tvm::OpNode</scope><name>IsPrimitiveOp_</name></member>
+      <member refid="classtvm_1_1OpNode_1ae8810815c68a55b8b6ab00dfb7d7778d" prot="public" virt="non-virtual"><scope>tvm::OpNode</scope><name>name</name></member>
+      <member refid="classtvm_1_1OpNode_1aa13505588162bc5448bd03f02f5c545b" prot="public" virt="non-virtual"><scope>tvm::OpNode</scope><name>num_inputs</name></member>
+      <member refid="classtvm_1_1OpNode_1adff89c1e3f0aa6798a97fc4461293f7c" prot="public" virt="non-virtual"><scope>tvm::OpNode</scope><name>op_type</name></member>
+      <member refid="classtvm_1_1OpNode_1af7ebaf5af32d51226208f533e6d5cb1d" prot="private" virt="non-virtual"><scope>tvm::OpNode</scope><name>OpRegistry</name></member>
+      <member refid="classtvm_1_1OpNode_1a23237d4a1ca4e21371d5ed0ac3520725" prot="public" virt="non-virtual"><scope>tvm::OpNode</scope><name>SEqualReduce</name></member>
+      <member refid="classtvm_1_1OpNode_1abe8c1e8f86a4b62187a233174edce575" prot="public" virt="non-virtual"><scope>tvm::OpNode</scope><name>SHashReduce</name></member>
+      <member refid="classtvm_1_1RelayExprNode_1a904ae50be0b72eab079bed93829c9563" prot="public" virt="non-virtual"><scope>tvm::OpNode</scope><name>span</name></member>
+      <member refid="classtvm_1_1OpNode_1a68a34098b5a111dec5f381cc4a80cb78" prot="public" virt="non-virtual"><scope>tvm::OpNode</scope><name>support_level</name></member>
+      <member refid="classtvm_1_1RelayExprNode_1a89eb638258551ea1ae2d0e578335474a" prot="public" virt="non-virtual"><scope>tvm::OpNode</scope><name>TVM_DECLARE_BASE_OBJECT_INFO</name></member>
+      <member refid="classtvm_1_1BaseExprNode_1a831794c879d47c30cdd9cefd4f05d533" prot="public" virt="non-virtual" ambiguityscope="tvm::BaseExprNode::"><scope>tvm::OpNode</scope><name>TVM_DECLARE_BASE_OBJECT_INFO</name></member>
+      <member refid="classtvm_1_1OpNode_1ade027d3176f48e7127be6ff08c723306" prot="public" virt="non-virtual"><scope>tvm::OpNode</scope><name>TVM_DECLARE_FINAL_OBJECT_INFO</name></member>
+      <member refid="classtvm_1_1RelayExprNode_1a60c73bac632a728a2a669bb34a1c3008" prot="public" virt="non-virtual"><scope>tvm::OpNode</scope><name>type_as</name></member>
+      <member refid="classtvm_1_1OpNode_1a9a5aacb190b2c4ead60b2810bd9053f4" prot="public" virt="non-virtual"><scope>tvm::OpNode</scope><name>VisitAttrs</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

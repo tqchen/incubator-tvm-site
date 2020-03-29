@@ -1,0 +1,103 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="classtvm_1_1With" kind="class" language="C++" prot="public">
+    <compoundname>tvm::With</compoundname>
+    <includes refid="with_8h" local="no">with.h</includes>
+    <templateparamlist>
+      <param>
+        <type>typename ContextType</type>
+      </param>
+    </templateparamlist>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classtvm_1_1With_1a23b0a6539dcdd28476c1d96e05677b73" prot="private" static="no" mutable="no">
+        <type>ContextType</type>
+        <definition>ContextType tvm::With&lt; ContextType &gt;::ctx_</definition>
+        <argsstring></argsstring>
+        <name>ctx_</name>
+        <briefdescription>
+<para>internal context type. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/support/with.h" line="74" column="1" bodyfile="include/tvm/support/with.h" bodystart="74" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classtvm_1_1With_1a6546ddcfe91125f25b794e6145b870ed" prot="public" static="no" const="no" explicit="yes" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename...</type>
+            <declname>Args</declname>
+            <defname>Args</defname>
+          </param>
+        </templateparamlist>
+        <type></type>
+        <definition>tvm::With&lt; ContextType &gt;::With</definition>
+        <argsstring>(Args &amp;&amp;...args)</argsstring>
+        <name>With</name>
+        <param>
+          <type>Args &amp;&amp;...</type>
+          <declname>args</declname>
+        </param>
+        <briefdescription>
+<para>constructor. Enter the scope of the context. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/support/with.h" line="63" column="1" bodyfile="include/tvm/support/with.h" bodystart="63" bodyend="66"/>
+      </memberdef>
+      <memberdef kind="function" id="classtvm_1_1With_1adc3aab8dafb5d3afebc82733e3893a4f" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>tvm::With&lt; ContextType &gt;::~With</definition>
+        <argsstring>() DMLC_THROW_EXCEPTION</argsstring>
+        <name>~With</name>
+        <briefdescription>
+<para>destructor, leaves the scope of the context. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/support/with.h" line="68" column="1" bodyfile="include/tvm/support/with.h" bodystart="68" bodyend="70"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>RAII wrapper function to enter and exit a context object similar to python&apos;s with syntax. </para>    </briefdescription>
+    <detaileddescription>
+<para><programlisting><codeline><highlight class="normal">//<sp/>context<sp/>class</highlight></codeline>
+<codeline><highlight class="normal">class<sp/>MyContext<sp/>{</highlight></codeline>
+<codeline><highlight class="normal"><sp/>private:</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/>friend<sp/>class<sp/>With&lt;MyContext&gt;;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/>MyContext(arguments);</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/>void<sp/>EnterWithScope();</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/>void<sp/>ExitWithScope();</highlight></codeline>
+<codeline><highlight class="normal">};</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>With&lt;MyContext&gt;<sp/>scope(arguments);</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>//<sp/>effect<sp/>take<sp/>place.</highlight></codeline>
+<codeline><highlight class="normal">}</highlight></codeline>
+</programlisting></para><para><parameterlist kind="templateparam"><parameteritem>
+<parameternamelist>
+<parametername>ContextType</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><ref refid="classtvm_1_1Type" kindref="compound">Type</ref> of the context object. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>    </detaileddescription>
+    <collaborationgraph>
+      <node id="7598">
+        <label>tvm::With&lt; ContextType &gt;</label>
+        <link refid="classtvm_1_1With"/>
+      </node>
+    </collaborationgraph>
+    <location file="include/tvm/support/with.h" line="56" column="1" bodyfile="include/tvm/support/with.h" bodystart="56" bodyend="75"/>
+    <listofallmembers>
+      <member refid="classtvm_1_1With_1a23b0a6539dcdd28476c1d96e05677b73" prot="private" virt="non-virtual"><scope>tvm::With</scope><name>ctx_</name></member>
+      <member refid="classtvm_1_1With_1a6546ddcfe91125f25b794e6145b870ed" prot="public" virt="non-virtual"><scope>tvm::With</scope><name>With</name></member>
+      <member refid="classtvm_1_1With_1adc3aab8dafb5d3afebc82733e3893a4f" prot="public" virt="non-virtual"><scope>tvm::With</scope><name>~With</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

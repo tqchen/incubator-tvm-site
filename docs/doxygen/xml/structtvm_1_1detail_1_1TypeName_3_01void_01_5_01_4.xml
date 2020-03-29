@@ -1,0 +1,39 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="structtvm_1_1detail_1_1TypeName_3_01void_01_5_01_4" kind="struct" language="C++" prot="public">
+    <compoundname>tvm::detail::TypeName&lt; void * &gt;</compoundname>
+    <includes refid="ir_2attrs_8h" local="no">attrs.h</includes>
+    <templateparamlist>
+    </templateparamlist>
+      <sectiondef kind="public-static-attrib">
+      <memberdef kind="variable" id="structtvm_1_1detail_1_1TypeName_3_01void_01_5_01_4_1a05dde8e9fdc15287aa0b1bf8d2e4b584" prot="public" static="yes" mutable="no">
+        <type>constexpr const char *</type>
+        <definition>constexpr const char* tvm::detail::TypeName&lt; void * &gt;::value</definition>
+        <argsstring></argsstring>
+        <name>value</name>
+        <initializer>= &quot;handle&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/ir/attrs.h" line="679" column="1" bodyfile="include/tvm/ir/attrs.h" bodystart="679" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="7439">
+        <label>tvm::detail::TypeName&lt; void * &gt;</label>
+        <link refid="structtvm_1_1detail_1_1TypeName_3_01void_01_5_01_4"/>
+      </node>
+    </collaborationgraph>
+    <location file="include/tvm/ir/attrs.h" line="678" column="1" bodyfile="include/tvm/ir/attrs.h" bodystart="678" bodyend="680"/>
+    <listofallmembers>
+      <member refid="structtvm_1_1detail_1_1TypeName_3_01void_01_5_01_4_1a05dde8e9fdc15287aa0b1bf8d2e4b584" prot="public" virt="non-virtual"><scope>tvm::detail::TypeName&lt; void * &gt;</scope><name>value</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

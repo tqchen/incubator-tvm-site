@@ -1,0 +1,180 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="classtvm_1_1transform_1_1PassInfoNode" kind="class" language="C++" prot="public">
+    <compoundname>tvm::transform::PassInfoNode</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">Object</basecompoundref>
+    <includes refid="include_2tvm_2ir_2transform_8h" local="no">transform.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="classtvm_1_1transform_1_1PassInfoNode_1a8e22e5767cd899bb9aef1ee1c529a2a7" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int tvm::transform::PassInfoNode::opt_level</definition>
+        <argsstring></argsstring>
+        <name>opt_level</name>
+        <briefdescription>
+<para>The minimal optimization level that this pass will be enabled. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/ir/transform.h" line="194" column="1" bodyfile="include/tvm/ir/transform.h" bodystart="194" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classtvm_1_1transform_1_1PassInfoNode_1a29ef9f45e08c32e691cef46eb858dbe7" prot="public" static="no" mutable="no">
+        <type>std::string</type>
+        <definition>std::string tvm::transform::PassInfoNode::name</definition>
+        <argsstring></argsstring>
+        <name>name</name>
+        <briefdescription>
+<para>The name of an optimization/analysis pass. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/ir/transform.h" line="197" column="1" bodyfile="include/tvm/ir/transform.h" bodystart="197" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classtvm_1_1transform_1_1PassInfoNode_1a9af9278b785b3c11b90b00640f68dc87" prot="public" static="no" mutable="no">
+        <type><ref refid="classtvm_1_1Array" kindref="compound">Array</ref>&lt; <ref refid="classtvm_1_1PrimExpr" kindref="compound">PrimExpr</ref> &gt;</type>
+        <definition>Array&lt;PrimExpr&gt; tvm::transform::PassInfoNode::required</definition>
+        <argsstring></argsstring>
+        <name>required</name>
+        <briefdescription>
+<para>The passes that are required to perform the current pass. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/ir/transform.h" line="200" column="1" bodyfile="include/tvm/ir/transform.h" bodystart="200" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-attrib">
+      <memberdef kind="variable" id="classtvm_1_1transform_1_1PassInfoNode_1a78c9eca9534883355d96eb0cd1fb8816" prot="public" static="yes" mutable="no">
+        <type>constexpr const char *</type>
+        <definition>constexpr const char* tvm::transform::PassInfoNode::_type_key</definition>
+        <argsstring></argsstring>
+        <name>_type_key</name>
+        <initializer>= &quot;transform.PassInfo&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/ir/transform.h" line="210" column="1" bodyfile="include/tvm/ir/transform.h" bodystart="210" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classtvm_1_1transform_1_1PassInfoNode_1a41087cffcece669d267f137ad30a5404" prot="public" static="yes" mutable="no">
+        <type>constexpr bool</type>
+        <definition>constexpr bool tvm::transform::PassInfoNode::_type_has_method_sequal_reduce</definition>
+        <argsstring></argsstring>
+        <name>_type_has_method_sequal_reduce</name>
+        <initializer>= false</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/ir/transform.h" line="211" column="1" bodyfile="include/tvm/ir/transform.h" bodystart="211" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classtvm_1_1transform_1_1PassInfoNode_1a2b9533e2f517d5c1a5e6bb1eb703d8aa" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>tvm::transform::PassInfoNode::PassInfoNode</definition>
+        <argsstring>()=default</argsstring>
+        <name>PassInfoNode</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/ir/transform.h" line="202" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classtvm_1_1transform_1_1PassInfoNode_1a09fd26c53f74228763943f519c7d3277" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void tvm::transform::PassInfoNode::VisitAttrs</definition>
+        <argsstring>(AttrVisitor *v)</argsstring>
+        <name>VisitAttrs</name>
+        <param>
+          <type><ref refid="classtvm_1_1AttrVisitor" kindref="compound">AttrVisitor</ref> *</type>
+          <declname>v</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/ir/transform.h" line="204" column="1" bodyfile="include/tvm/ir/transform.h" bodystart="204" bodyend="208"/>
+      </memberdef>
+      <memberdef kind="function" id="classtvm_1_1transform_1_1PassInfoNode_1a96b397a026358e744938176dc91c71d0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>tvm::transform::PassInfoNode::TVM_DECLARE_FINAL_OBJECT_INFO</definition>
+        <argsstring>(PassInfoNode, Object)</argsstring>
+        <name>TVM_DECLARE_FINAL_OBJECT_INFO</name>
+        <param>
+          <type><ref refid="classtvm_1_1transform_1_1PassInfoNode" kindref="compound">PassInfoNode</ref></type>
+        </param>
+        <param>
+          <type>Object</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/ir/transform.h" line="212" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Meta data that will be used to help optimization and analysis. </para>    </briefdescription>
+    <detaileddescription>
+<para><simplesect kind="see"><para><ref refid="classtvm_1_1transform_1_1PassInfo" kindref="compound">PassInfo</ref> </para></simplesect>
+</para>    </detaileddescription>
+    <inheritancegraph>
+      <node id="6049">
+        <label>tvm::transform::PassInfoNode</label>
+        <link refid="classtvm_1_1transform_1_1PassInfoNode"/>
+        <childnode refid="6050" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="6050">
+        <label>Object</label>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="6054">
+        <label>ObjectRef</label>
+      </node>
+      <node id="6051">
+        <label>tvm::transform::PassInfoNode</label>
+        <link refid="classtvm_1_1transform_1_1PassInfoNode"/>
+        <childnode refid="6052" relation="public-inheritance">
+        </childnode>
+        <childnode refid="6053" relation="usage">
+          <edgelabel>+required</edgelabel>
+        </childnode>
+      </node>
+      <node id="6052">
+        <label>Object</label>
+      </node>
+      <node id="6053">
+        <label>tvm::Array&lt; tvm::PrimExpr &gt;</label>
+        <link refid="classtvm_1_1Array"/>
+        <childnode refid="6054" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="include/tvm/ir/transform.h" line="191" column="1" bodyfile="include/tvm/ir/transform.h" bodystart="191" bodyend="213"/>
+    <listofallmembers>
+      <member refid="classtvm_1_1transform_1_1PassInfoNode_1a41087cffcece669d267f137ad30a5404" prot="public" virt="non-virtual"><scope>tvm::transform::PassInfoNode</scope><name>_type_has_method_sequal_reduce</name></member>
+      <member refid="classtvm_1_1transform_1_1PassInfoNode_1a78c9eca9534883355d96eb0cd1fb8816" prot="public" virt="non-virtual"><scope>tvm::transform::PassInfoNode</scope><name>_type_key</name></member>
+      <member refid="classtvm_1_1transform_1_1PassInfoNode_1a29ef9f45e08c32e691cef46eb858dbe7" prot="public" virt="non-virtual"><scope>tvm::transform::PassInfoNode</scope><name>name</name></member>
+      <member refid="classtvm_1_1transform_1_1PassInfoNode_1a8e22e5767cd899bb9aef1ee1c529a2a7" prot="public" virt="non-virtual"><scope>tvm::transform::PassInfoNode</scope><name>opt_level</name></member>
+      <member refid="classtvm_1_1transform_1_1PassInfoNode_1a2b9533e2f517d5c1a5e6bb1eb703d8aa" prot="public" virt="non-virtual"><scope>tvm::transform::PassInfoNode</scope><name>PassInfoNode</name></member>
+      <member refid="classtvm_1_1transform_1_1PassInfoNode_1a9af9278b785b3c11b90b00640f68dc87" prot="public" virt="non-virtual"><scope>tvm::transform::PassInfoNode</scope><name>required</name></member>
+      <member refid="classtvm_1_1transform_1_1PassInfoNode_1a96b397a026358e744938176dc91c71d0" prot="public" virt="non-virtual"><scope>tvm::transform::PassInfoNode</scope><name>TVM_DECLARE_FINAL_OBJECT_INFO</name></member>
+      <member refid="classtvm_1_1transform_1_1PassInfoNode_1a09fd26c53f74228763943f519c7d3277" prot="public" virt="non-virtual"><scope>tvm::transform::PassInfoNode</scope><name>VisitAttrs</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

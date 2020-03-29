@@ -1,0 +1,335 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="classtvm_1_1BuildConfigNode" kind="class" language="C++" prot="public">
+    <compoundname>tvm::BuildConfigNode</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">Object</basecompoundref>
+    <includes refid="target_8h" local="no">target.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="classtvm_1_1BuildConfigNode_1a5e2c8350cb1a96b35bc383a23c1fd397" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int tvm::BuildConfigNode::data_alignment</definition>
+        <argsstring></argsstring>
+        <name>data_alignment</name>
+        <initializer>= -1</initializer>
+        <briefdescription>
+<para>The data alignment to use when constructing buffers. If this is set to -1, then TVM&apos;s internal default will be used. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/target/target.h" line="191" column="1" bodyfile="include/tvm/target/target.h" bodystart="191" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classtvm_1_1BuildConfigNode_1ab846adeceeb4f6b9b00410b2ce66a4a2" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int tvm::BuildConfigNode::offset_factor</definition>
+        <argsstring></argsstring>
+        <name>offset_factor</name>
+        <initializer>= 0</initializer>
+        <briefdescription>
+<para>The offset factor to use when constructing buffers. If this is set to 0, then the offset field is not used. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/target/target.h" line="196" column="1" bodyfile="include/tvm/target/target.h" bodystart="196" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classtvm_1_1BuildConfigNode_1a86e454b099b0da8bf58b0116ac052241" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int tvm::BuildConfigNode::double_buffer_split_loop</definition>
+        <argsstring></argsstring>
+        <name>double_buffer_split_loop</name>
+        <initializer>= 1</initializer>
+        <briefdescription>
+<para>Splitting factor for loop splitting. If this is set to zero, no splitting will be done. Otherwise, a split will be done with this factor and the inner loop will be unrolled. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/target/target.h" line="202" column="1" bodyfile="include/tvm/target/target.h" bodystart="202" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classtvm_1_1BuildConfigNode_1a906d69e936afa01fa60a816acc66e095" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int tvm::BuildConfigNode::auto_unroll_max_step</definition>
+        <argsstring></argsstring>
+        <name>auto_unroll_max_step</name>
+        <initializer>= 0</initializer>
+        <briefdescription>
+<para>Threshold of number of steps in the loop to be automatically unrolled. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/target/target.h" line="204" column="1" bodyfile="include/tvm/target/target.h" bodystart="204" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classtvm_1_1BuildConfigNode_1ae1e3ea8be3710e8e91dcb691ea75c460" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int tvm::BuildConfigNode::auto_unroll_max_depth</definition>
+        <argsstring></argsstring>
+        <name>auto_unroll_max_depth</name>
+        <initializer>= 8</initializer>
+        <briefdescription>
+<para>The maximum nested level of loops that can be automatically unrolled. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/target/target.h" line="206" column="1" bodyfile="include/tvm/target/target.h" bodystart="206" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classtvm_1_1BuildConfigNode_1ac2bd9a11784fb5908cff6760e80a2534" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int tvm::BuildConfigNode::auto_unroll_max_extent</definition>
+        <argsstring></argsstring>
+        <name>auto_unroll_max_extent</name>
+        <initializer>= 0</initializer>
+        <briefdescription>
+<para>The maximum extent of loop that will be unrolled. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/target/target.h" line="208" column="1" bodyfile="include/tvm/target/target.h" bodystart="208" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classtvm_1_1BuildConfigNode_1ab0e01cf0180f09e0e3f3184cc1c01228" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool tvm::BuildConfigNode::unroll_explicit</definition>
+        <argsstring></argsstring>
+        <name>unroll_explicit</name>
+        <initializer>= true</initializer>
+        <briefdescription>
+<para>Whether to explicitly unroll the loop. If set to false, the unroll hint will be passed to the CodeGen phase. Set to true if CodeGen supports unroll pragma. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/target/target.h" line="213" column="1" bodyfile="include/tvm/target/target.h" bodystart="213" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classtvm_1_1BuildConfigNode_1a12ea43d3ae7856db884409e74f4451b6" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool tvm::BuildConfigNode::restricted_func</definition>
+        <argsstring></argsstring>
+        <name>restricted_func</name>
+        <initializer>= true</initializer>
+        <briefdescription>
+<para>Set to true if buffer arguments do not overlap. This enables more optimization. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/target/target.h" line="216" column="1" bodyfile="include/tvm/target/target.h" bodystart="216" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classtvm_1_1BuildConfigNode_1ae3f6cb045e5b3d85bdd39224444cb94d" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool tvm::BuildConfigNode::detect_global_barrier</definition>
+        <argsstring></argsstring>
+        <name>detect_global_barrier</name>
+        <initializer>= false</initializer>
+        <briefdescription>
+<para>Whether to detect global barrier. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/target/target.h" line="219" column="1" bodyfile="include/tvm/target/target.h" bodystart="219" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classtvm_1_1BuildConfigNode_1a1ace63c2704b6bd7cb11b41775ed9697" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool tvm::BuildConfigNode::partition_const_loop</definition>
+        <argsstring></argsstring>
+        <name>partition_const_loop</name>
+        <initializer>= false</initializer>
+        <briefdescription>
+<para>Whether to partition const loop. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/target/target.h" line="222" column="1" bodyfile="include/tvm/target/target.h" bodystart="222" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classtvm_1_1BuildConfigNode_1a766fcbcd64c2f2183c423e42f1bffb7f" prot="public" static="no" mutable="no">
+        <type>std::vector&lt; std::pair&lt; int, <ref refid="classtvm_1_1runtime_1_1PackedFunc" kindref="compound">runtime::PackedFunc</ref> &gt; &gt;</type>
+        <definition>std::vector&lt; std::pair&lt;int, runtime::PackedFunc&gt; &gt; tvm::BuildConfigNode::add_lower_pass</definition>
+        <argsstring></argsstring>
+        <name>add_lower_pass</name>
+        <briefdescription>
+<para>Whether to dump the IR of each pass (only when building from python) </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/target/target.h" line="225" column="1" bodyfile="include/tvm/target/target.h" bodystart="225" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classtvm_1_1BuildConfigNode_1a63ece2a7d9dd4ffdfc2116ed9eee12a3" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool tvm::BuildConfigNode::dump_pass_ir</definition>
+        <argsstring></argsstring>
+        <name>dump_pass_ir</name>
+        <initializer>= false</initializer>
+        <briefdescription>
+<para>Whether to dump the IR of each pass (only when building from python) </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/target/target.h" line="228" column="1" bodyfile="include/tvm/target/target.h" bodystart="228" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classtvm_1_1BuildConfigNode_1a01df805ead94051622f60457e916e9cc" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool tvm::BuildConfigNode::instrument_bound_checkers</definition>
+        <argsstring></argsstring>
+        <name>instrument_bound_checkers</name>
+        <initializer>= false</initializer>
+        <briefdescription>
+<para>Whether to instrument loads and stores with check for out of the bounds. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/target/target.h" line="231" column="1" bodyfile="include/tvm/target/target.h" bodystart="231" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classtvm_1_1BuildConfigNode_1a2a8903e47165c194c23b99873e8e7e5d" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool tvm::BuildConfigNode::disable_select_rewriting</definition>
+        <argsstring></argsstring>
+        <name>disable_select_rewriting</name>
+        <initializer>= false</initializer>
+        <briefdescription>
+<para>Whether to disable select rewriting. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/target/target.h" line="234" column="1" bodyfile="include/tvm/target/target.h" bodystart="234" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classtvm_1_1BuildConfigNode_1ae8af930ce70dbe693f088293bf4fadce" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool tvm::BuildConfigNode::disable_vectorize</definition>
+        <argsstring></argsstring>
+        <name>disable_vectorize</name>
+        <initializer>= false</initializer>
+        <briefdescription>
+<para>Whether to disable loop vectorization. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/target/target.h" line="237" column="1" bodyfile="include/tvm/target/target.h" bodystart="237" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classtvm_1_1BuildConfigNode_1ab44ea7dd076903dafb212210ef5f71a6" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool tvm::BuildConfigNode::disable_assert</definition>
+        <argsstring></argsstring>
+        <name>disable_assert</name>
+        <initializer>= false</initializer>
+        <briefdescription>
+<para>Whether to disable assert stmt generation. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/target/target.h" line="240" column="1" bodyfile="include/tvm/target/target.h" bodystart="240" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-attrib">
+      <memberdef kind="variable" id="classtvm_1_1BuildConfigNode_1ab4090aa9a1db3a0ce85d1664e77f2a1c" prot="public" static="yes" mutable="no">
+        <type>constexpr const char *</type>
+        <definition>constexpr const char* tvm::BuildConfigNode::_type_key</definition>
+        <argsstring></argsstring>
+        <name>_type_key</name>
+        <initializer>= &quot;BuildConfig&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/target/target.h" line="260" column="1" bodyfile="include/tvm/target/target.h" bodystart="260" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classtvm_1_1BuildConfigNode_1a5514cee791fd035addad8caf89b73bde" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void tvm::BuildConfigNode::VisitAttrs</definition>
+        <argsstring>(AttrVisitor *v)</argsstring>
+        <name>VisitAttrs</name>
+        <param>
+          <type><ref refid="classtvm_1_1AttrVisitor" kindref="compound">AttrVisitor</ref> *</type>
+          <declname>v</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/target/target.h" line="242" column="1" bodyfile="include/tvm/target/target.h" bodystart="242" bodyend="258"/>
+      </memberdef>
+      <memberdef kind="function" id="classtvm_1_1BuildConfigNode_1a03301ebe2141ae95117e8f15e411f199" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>tvm::BuildConfigNode::TVM_DECLARE_FINAL_OBJECT_INFO</definition>
+        <argsstring>(BuildConfigNode, Object)</argsstring>
+        <name>TVM_DECLARE_FINAL_OBJECT_INFO</name>
+        <param>
+          <type><ref refid="classtvm_1_1BuildConfigNode" kindref="compound">BuildConfigNode</ref></type>
+        </param>
+        <param>
+          <type>Object</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/target/target.h" line="261" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Container for build configuration options. </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="4488">
+        <label>Object</label>
+      </node>
+      <node id="4487">
+        <label>tvm::BuildConfigNode</label>
+        <link refid="classtvm_1_1BuildConfigNode"/>
+        <childnode refid="4488" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="4490">
+        <label>Object</label>
+      </node>
+      <node id="4489">
+        <label>tvm::BuildConfigNode</label>
+        <link refid="classtvm_1_1BuildConfigNode"/>
+        <childnode refid="4490" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="include/tvm/target/target.h" line="185" column="1" bodyfile="include/tvm/target/target.h" bodystart="185" bodyend="262"/>
+    <listofallmembers>
+      <member refid="classtvm_1_1BuildConfigNode_1ab4090aa9a1db3a0ce85d1664e77f2a1c" prot="public" virt="non-virtual"><scope>tvm::BuildConfigNode</scope><name>_type_key</name></member>
+      <member refid="classtvm_1_1BuildConfigNode_1a766fcbcd64c2f2183c423e42f1bffb7f" prot="public" virt="non-virtual"><scope>tvm::BuildConfigNode</scope><name>add_lower_pass</name></member>
+      <member refid="classtvm_1_1BuildConfigNode_1ae1e3ea8be3710e8e91dcb691ea75c460" prot="public" virt="non-virtual"><scope>tvm::BuildConfigNode</scope><name>auto_unroll_max_depth</name></member>
+      <member refid="classtvm_1_1BuildConfigNode_1ac2bd9a11784fb5908cff6760e80a2534" prot="public" virt="non-virtual"><scope>tvm::BuildConfigNode</scope><name>auto_unroll_max_extent</name></member>
+      <member refid="classtvm_1_1BuildConfigNode_1a906d69e936afa01fa60a816acc66e095" prot="public" virt="non-virtual"><scope>tvm::BuildConfigNode</scope><name>auto_unroll_max_step</name></member>
+      <member refid="classtvm_1_1BuildConfigNode_1a5e2c8350cb1a96b35bc383a23c1fd397" prot="public" virt="non-virtual"><scope>tvm::BuildConfigNode</scope><name>data_alignment</name></member>
+      <member refid="classtvm_1_1BuildConfigNode_1ae3f6cb045e5b3d85bdd39224444cb94d" prot="public" virt="non-virtual"><scope>tvm::BuildConfigNode</scope><name>detect_global_barrier</name></member>
+      <member refid="classtvm_1_1BuildConfigNode_1ab44ea7dd076903dafb212210ef5f71a6" prot="public" virt="non-virtual"><scope>tvm::BuildConfigNode</scope><name>disable_assert</name></member>
+      <member refid="classtvm_1_1BuildConfigNode_1a2a8903e47165c194c23b99873e8e7e5d" prot="public" virt="non-virtual"><scope>tvm::BuildConfigNode</scope><name>disable_select_rewriting</name></member>
+      <member refid="classtvm_1_1BuildConfigNode_1ae8af930ce70dbe693f088293bf4fadce" prot="public" virt="non-virtual"><scope>tvm::BuildConfigNode</scope><name>disable_vectorize</name></member>
+      <member refid="classtvm_1_1BuildConfigNode_1a86e454b099b0da8bf58b0116ac052241" prot="public" virt="non-virtual"><scope>tvm::BuildConfigNode</scope><name>double_buffer_split_loop</name></member>
+      <member refid="classtvm_1_1BuildConfigNode_1a63ece2a7d9dd4ffdfc2116ed9eee12a3" prot="public" virt="non-virtual"><scope>tvm::BuildConfigNode</scope><name>dump_pass_ir</name></member>
+      <member refid="classtvm_1_1BuildConfigNode_1a01df805ead94051622f60457e916e9cc" prot="public" virt="non-virtual"><scope>tvm::BuildConfigNode</scope><name>instrument_bound_checkers</name></member>
+      <member refid="classtvm_1_1BuildConfigNode_1ab846adeceeb4f6b9b00410b2ce66a4a2" prot="public" virt="non-virtual"><scope>tvm::BuildConfigNode</scope><name>offset_factor</name></member>
+      <member refid="classtvm_1_1BuildConfigNode_1a1ace63c2704b6bd7cb11b41775ed9697" prot="public" virt="non-virtual"><scope>tvm::BuildConfigNode</scope><name>partition_const_loop</name></member>
+      <member refid="classtvm_1_1BuildConfigNode_1a12ea43d3ae7856db884409e74f4451b6" prot="public" virt="non-virtual"><scope>tvm::BuildConfigNode</scope><name>restricted_func</name></member>
+      <member refid="classtvm_1_1BuildConfigNode_1a03301ebe2141ae95117e8f15e411f199" prot="public" virt="non-virtual"><scope>tvm::BuildConfigNode</scope><name>TVM_DECLARE_FINAL_OBJECT_INFO</name></member>
+      <member refid="classtvm_1_1BuildConfigNode_1ab0e01cf0180f09e0e3f3184cc1c01228" prot="public" virt="non-virtual"><scope>tvm::BuildConfigNode</scope><name>unroll_explicit</name></member>
+      <member refid="classtvm_1_1BuildConfigNode_1a5514cee791fd035addad8caf89b73bde" prot="public" virt="non-virtual"><scope>tvm::BuildConfigNode</scope><name>VisitAttrs</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

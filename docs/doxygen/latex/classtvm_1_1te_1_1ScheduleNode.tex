@@ -1,0 +1,215 @@
+\hypertarget{classtvm_1_1te_1_1ScheduleNode}{}\section{tvm\+:\+:te\+:\+:Schedule\+Node Class Reference}
+\label{classtvm_1_1te_1_1ScheduleNode}\index{tvm\+::te\+::\+Schedule\+Node@{tvm\+::te\+::\+Schedule\+Node}}
+
+
+node container for schedule  
+
+
+
+
+{\ttfamily \#include $<$schedule.\+h$>$}
+
+
+
+Inheritance diagram for tvm\+:\+:te\+:\+:Schedule\+Node\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=285pt]{classtvm_1_1te_1_1ScheduleNode__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for tvm\+:\+:te\+:\+:Schedule\+Node\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classtvm_1_1te_1_1ScheduleNode__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{classtvm_1_1te_1_1ScheduleNode_a77fbc73cef9265d8ae817903564a6e44}{Visit\+Attrs} (\hyperlink{classtvm_1_1AttrVisitor}{Attr\+Visitor} $\ast$v)
+\item 
+void \hyperlink{classtvm_1_1te_1_1ScheduleNode_a2c2472f9cbb1d42bec661149fe801179}{Init\+Cache} ()
+\begin{DoxyCompactList}\small\item\em Initialize temp cache. \end{DoxyCompactList}\item 
+void \hyperlink{classtvm_1_1te_1_1ScheduleNode_a2b6a92ec4b1c295604b55ff8e8c365e7}{Invalidate\+Cache} ()
+\begin{DoxyCompactList}\small\item\em Invalidate temp cache. \end{DoxyCompactList}\item 
+bool \hyperlink{classtvm_1_1te_1_1ScheduleNode_a54bbdb82a87a597007f82751ffdf11c2}{Contain} (const \hyperlink{classtvm_1_1te_1_1Operation}{Operation} \&op) const 
+\begin{DoxyCompactList}\small\item\em Check if the schedule contains an \hyperlink{classtvm_1_1te_1_1Operation}{Operation}. \end{DoxyCompactList}\item 
+bool \hyperlink{classtvm_1_1te_1_1ScheduleNode_a2b30ce9ba2e0d6a174825bbfa8fc7e4d}{Contain} (const \hyperlink{classtvm_1_1te_1_1Tensor}{Tensor} \&tensor) const 
+\begin{DoxyCompactList}\small\item\em Check if the schedule contains a \hyperlink{classtvm_1_1te_1_1Tensor}{Tensor}. \end{DoxyCompactList}\item 
+\hyperlink{classtvm_1_1te_1_1ScheduleNode_a6ded7c6c5dfc7b8525c8048fdd9475ad}{T\+V\+M\+\_\+\+D\+E\+C\+L\+A\+R\+E\+\_\+\+F\+I\+N\+A\+L\+\_\+\+O\+B\+J\+E\+C\+T\+\_\+\+I\+N\+FO} (\hyperlink{classtvm_1_1te_1_1ScheduleNode}{Schedule\+Node}, Object)
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \hyperlink{classtvm_1_1te_1_1Schedule}{Schedule} \hyperlink{classtvm_1_1te_1_1ScheduleNode_a5cc8e941bb4b977e6bd909c501025688}{make} (\hyperlink{classtvm_1_1Array}{Array}$<$ \hyperlink{classtvm_1_1te_1_1Operation}{Operation} $>$ ops)
+\begin{DoxyCompactList}\small\item\em Create a schedule for array of ops(and their dependencies). \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classtvm_1_1Array}{Array}$<$ \hyperlink{classtvm_1_1te_1_1Operation}{Operation} $>$ \hyperlink{classtvm_1_1te_1_1ScheduleNode_a27b0f687f7b20fcc6416a49e041712d8}{outputs}
+\begin{DoxyCompactList}\small\item\em The output operations in original data flow graph. \end{DoxyCompactList}\item 
+\hyperlink{classtvm_1_1Array}{Array}$<$ \hyperlink{classtvm_1_1te_1_1Stage}{Stage} $>$ \hyperlink{classtvm_1_1te_1_1ScheduleNode_ab5649969db603d6b7b4d155c0d09cdd5}{stages}
+\begin{DoxyCompactList}\small\item\em list of all stages for ops. The stages are sorted in dependency order. \end{DoxyCompactList}\item 
+\hyperlink{classtvm_1_1Array}{Array}$<$ \hyperlink{classtvm_1_1te_1_1Stage}{Stage} $>$ \hyperlink{classtvm_1_1te_1_1ScheduleNode_ab2020fcfbb6fd3c216bb09455697452f}{groups}
+\begin{DoxyCompactList}\small\item\em List of all stage groups. \end{DoxyCompactList}\item 
+\hyperlink{classtvm_1_1Map}{Map}$<$ \hyperlink{classtvm_1_1te_1_1Operation}{Operation}, \hyperlink{classtvm_1_1te_1_1Stage}{Stage} $>$ \hyperlink{classtvm_1_1te_1_1ScheduleNode_a612223aec2751cbd035a18c9e5453085}{stage\+\_\+map}
+\begin{DoxyCompactList}\small\item\em map of original operation to the stages \end{DoxyCompactList}\item 
+std\+::unordered\+\_\+map$<$ const Object $\ast$, \hyperlink{classtvm_1_1te_1_1Stage}{Stage} $>$ \hyperlink{classtvm_1_1te_1_1ScheduleNode_adbc8bfb6812add2173dcc7a6adb85d5c}{op2stage\+\_\+cache\+\_\+}
+\begin{DoxyCompactList}\small\item\em Internal stage map to map internal ops to stages. This is created on demand and can be invalidated. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static constexpr const char $\ast$ \hyperlink{classtvm_1_1te_1_1ScheduleNode_a92364be62c19b302a10e74147b4f5dc1}{\+\_\+type\+\_\+key} = \char`\"{}Schedule\char`\"{}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+node container for schedule 
+
+\subsection{Member Function Documentation}
+\index{tvm\+::te\+::\+Schedule\+Node@{tvm\+::te\+::\+Schedule\+Node}!Contain@{Contain}}
+\index{Contain@{Contain}!tvm\+::te\+::\+Schedule\+Node@{tvm\+::te\+::\+Schedule\+Node}}
+\subsubsection[{\texorpdfstring{Contain(const Operation \&op) const }{Contain(const Operation &op) const }}]{\setlength{\rightskip}{0pt plus 5cm}bool tvm\+::te\+::\+Schedule\+Node\+::\+Contain (
+\begin{DoxyParamCaption}
+\item[{const {\bf Operation} \&}]{op}
+\end{DoxyParamCaption}
+) const}\hypertarget{classtvm_1_1te_1_1ScheduleNode_a54bbdb82a87a597007f82751ffdf11c2}{}\label{classtvm_1_1te_1_1ScheduleNode_a54bbdb82a87a597007f82751ffdf11c2}
+
+
+Check if the schedule contains an \hyperlink{classtvm_1_1te_1_1Operation}{Operation}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em op} & The candidate \hyperlink{classtvm_1_1te_1_1Operation}{Operation}. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true if the schedule has the \hyperlink{classtvm_1_1te_1_1Operation}{Operation}. Otherwise, false. 
+\end{DoxyReturn}
+\index{tvm\+::te\+::\+Schedule\+Node@{tvm\+::te\+::\+Schedule\+Node}!Contain@{Contain}}
+\index{Contain@{Contain}!tvm\+::te\+::\+Schedule\+Node@{tvm\+::te\+::\+Schedule\+Node}}
+\subsubsection[{\texorpdfstring{Contain(const Tensor \&tensor) const }{Contain(const Tensor &tensor) const }}]{\setlength{\rightskip}{0pt plus 5cm}bool tvm\+::te\+::\+Schedule\+Node\+::\+Contain (
+\begin{DoxyParamCaption}
+\item[{const {\bf Tensor} \&}]{tensor}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classtvm_1_1te_1_1ScheduleNode_a2b30ce9ba2e0d6a174825bbfa8fc7e4d}{}\label{classtvm_1_1te_1_1ScheduleNode_a2b30ce9ba2e0d6a174825bbfa8fc7e4d}
+
+
+Check if the schedule contains a \hyperlink{classtvm_1_1te_1_1Tensor}{Tensor}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em tensor} & The candidate tensor. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true if the schedule has the tensor. Otherwise, false. 
+\end{DoxyReturn}
+\index{tvm\+::te\+::\+Schedule\+Node@{tvm\+::te\+::\+Schedule\+Node}!Init\+Cache@{Init\+Cache}}
+\index{Init\+Cache@{Init\+Cache}!tvm\+::te\+::\+Schedule\+Node@{tvm\+::te\+::\+Schedule\+Node}}
+\subsubsection[{\texorpdfstring{Init\+Cache()}{InitCache()}}]{\setlength{\rightskip}{0pt plus 5cm}void tvm\+::te\+::\+Schedule\+Node\+::\+Init\+Cache (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{classtvm_1_1te_1_1ScheduleNode_a2c2472f9cbb1d42bec661149fe801179}{}\label{classtvm_1_1te_1_1ScheduleNode_a2c2472f9cbb1d42bec661149fe801179}
+
+
+Initialize temp cache. 
+
+\index{tvm\+::te\+::\+Schedule\+Node@{tvm\+::te\+::\+Schedule\+Node}!Invalidate\+Cache@{Invalidate\+Cache}}
+\index{Invalidate\+Cache@{Invalidate\+Cache}!tvm\+::te\+::\+Schedule\+Node@{tvm\+::te\+::\+Schedule\+Node}}
+\subsubsection[{\texorpdfstring{Invalidate\+Cache()}{InvalidateCache()}}]{\setlength{\rightskip}{0pt plus 5cm}void tvm\+::te\+::\+Schedule\+Node\+::\+Invalidate\+Cache (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{classtvm_1_1te_1_1ScheduleNode_a2b6a92ec4b1c295604b55ff8e8c365e7}{}\label{classtvm_1_1te_1_1ScheduleNode_a2b6a92ec4b1c295604b55ff8e8c365e7}
+
+
+Invalidate temp cache. 
+
+\index{tvm\+::te\+::\+Schedule\+Node@{tvm\+::te\+::\+Schedule\+Node}!make@{make}}
+\index{make@{make}!tvm\+::te\+::\+Schedule\+Node@{tvm\+::te\+::\+Schedule\+Node}}
+\subsubsection[{\texorpdfstring{make(\+Array$<$ Operation $>$ ops)}{make(Array< Operation > ops)}}]{\setlength{\rightskip}{0pt plus 5cm}static {\bf Schedule} tvm\+::te\+::\+Schedule\+Node\+::make (
+\begin{DoxyParamCaption}
+\item[{{\bf Array}$<$ {\bf Operation} $>$}]{ops}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}\hypertarget{classtvm_1_1te_1_1ScheduleNode_a5cc8e941bb4b977e6bd909c501025688}{}\label{classtvm_1_1te_1_1ScheduleNode_a5cc8e941bb4b977e6bd909c501025688}
+
+
+Create a schedule for array of ops(and their dependencies). 
+
+
+\begin{DoxyParams}{Parameters}
+{\em ops} & The ops to be scheduled. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+sch The created \hyperlink{classtvm_1_1te_1_1Schedule}{Schedule}. 
+\end{DoxyReturn}
+\index{tvm\+::te\+::\+Schedule\+Node@{tvm\+::te\+::\+Schedule\+Node}!T\+V\+M\+\_\+\+D\+E\+C\+L\+A\+R\+E\+\_\+\+F\+I\+N\+A\+L\+\_\+\+O\+B\+J\+E\+C\+T\+\_\+\+I\+N\+FO@{T\+V\+M\+\_\+\+D\+E\+C\+L\+A\+R\+E\+\_\+\+F\+I\+N\+A\+L\+\_\+\+O\+B\+J\+E\+C\+T\+\_\+\+I\+N\+FO}}
+\index{T\+V\+M\+\_\+\+D\+E\+C\+L\+A\+R\+E\+\_\+\+F\+I\+N\+A\+L\+\_\+\+O\+B\+J\+E\+C\+T\+\_\+\+I\+N\+FO@{T\+V\+M\+\_\+\+D\+E\+C\+L\+A\+R\+E\+\_\+\+F\+I\+N\+A\+L\+\_\+\+O\+B\+J\+E\+C\+T\+\_\+\+I\+N\+FO}!tvm\+::te\+::\+Schedule\+Node@{tvm\+::te\+::\+Schedule\+Node}}
+\subsubsection[{\texorpdfstring{T\+V\+M\+\_\+\+D\+E\+C\+L\+A\+R\+E\+\_\+\+F\+I\+N\+A\+L\+\_\+\+O\+B\+J\+E\+C\+T\+\_\+\+I\+N\+F\+O(\+Schedule\+Node, Object)}{TVM_DECLARE_FINAL_OBJECT_INFO(ScheduleNode, Object)}}]{\setlength{\rightskip}{0pt plus 5cm}tvm\+::te\+::\+Schedule\+Node\+::\+T\+V\+M\+\_\+\+D\+E\+C\+L\+A\+R\+E\+\_\+\+F\+I\+N\+A\+L\+\_\+\+O\+B\+J\+E\+C\+T\+\_\+\+I\+N\+FO (
+\begin{DoxyParamCaption}
+\item[{{\bf Schedule\+Node}}]{, }
+\item[{Object}]{}
+\end{DoxyParamCaption}
+)}\hypertarget{classtvm_1_1te_1_1ScheduleNode_a6ded7c6c5dfc7b8525c8048fdd9475ad}{}\label{classtvm_1_1te_1_1ScheduleNode_a6ded7c6c5dfc7b8525c8048fdd9475ad}
+\index{tvm\+::te\+::\+Schedule\+Node@{tvm\+::te\+::\+Schedule\+Node}!Visit\+Attrs@{Visit\+Attrs}}
+\index{Visit\+Attrs@{Visit\+Attrs}!tvm\+::te\+::\+Schedule\+Node@{tvm\+::te\+::\+Schedule\+Node}}
+\subsubsection[{\texorpdfstring{Visit\+Attrs(\+Attr\+Visitor $\ast$v)}{VisitAttrs(AttrVisitor *v)}}]{\setlength{\rightskip}{0pt plus 5cm}void tvm\+::te\+::\+Schedule\+Node\+::\+Visit\+Attrs (
+\begin{DoxyParamCaption}
+\item[{{\bf Attr\+Visitor} $\ast$}]{v}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classtvm_1_1te_1_1ScheduleNode_a77fbc73cef9265d8ae817903564a6e44}{}\label{classtvm_1_1te_1_1ScheduleNode_a77fbc73cef9265d8ae817903564a6e44}
+
+
+\subsection{Member Data Documentation}
+\index{tvm\+::te\+::\+Schedule\+Node@{tvm\+::te\+::\+Schedule\+Node}!\+\_\+type\+\_\+key@{\+\_\+type\+\_\+key}}
+\index{\+\_\+type\+\_\+key@{\+\_\+type\+\_\+key}!tvm\+::te\+::\+Schedule\+Node@{tvm\+::te\+::\+Schedule\+Node}}
+\subsubsection[{\texorpdfstring{\+\_\+type\+\_\+key}{_type_key}}]{\setlength{\rightskip}{0pt plus 5cm}constexpr const char$\ast$ tvm\+::te\+::\+Schedule\+Node\+::\+\_\+type\+\_\+key = \char`\"{}Schedule\char`\"{}\hspace{0.3cm}{\ttfamily [static]}}\hypertarget{classtvm_1_1te_1_1ScheduleNode_a92364be62c19b302a10e74147b4f5dc1}{}\label{classtvm_1_1te_1_1ScheduleNode_a92364be62c19b302a10e74147b4f5dc1}
+\index{tvm\+::te\+::\+Schedule\+Node@{tvm\+::te\+::\+Schedule\+Node}!groups@{groups}}
+\index{groups@{groups}!tvm\+::te\+::\+Schedule\+Node@{tvm\+::te\+::\+Schedule\+Node}}
+\subsubsection[{\texorpdfstring{groups}{groups}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Array}$<${\bf Stage}$>$ tvm\+::te\+::\+Schedule\+Node\+::groups}\hypertarget{classtvm_1_1te_1_1ScheduleNode_ab2020fcfbb6fd3c216bb09455697452f}{}\label{classtvm_1_1te_1_1ScheduleNode_ab2020fcfbb6fd3c216bb09455697452f}
+
+
+List of all stage groups. 
+
+\index{tvm\+::te\+::\+Schedule\+Node@{tvm\+::te\+::\+Schedule\+Node}!op2stage\+\_\+cache\+\_\+@{op2stage\+\_\+cache\+\_\+}}
+\index{op2stage\+\_\+cache\+\_\+@{op2stage\+\_\+cache\+\_\+}!tvm\+::te\+::\+Schedule\+Node@{tvm\+::te\+::\+Schedule\+Node}}
+\subsubsection[{\texorpdfstring{op2stage\+\_\+cache\+\_\+}{op2stage_cache_}}]{\setlength{\rightskip}{0pt plus 5cm}std\+::unordered\+\_\+map$<$const Object$\ast$, {\bf Stage}$>$ tvm\+::te\+::\+Schedule\+Node\+::op2stage\+\_\+cache\+\_\+}\hypertarget{classtvm_1_1te_1_1ScheduleNode_adbc8bfb6812add2173dcc7a6adb85d5c}{}\label{classtvm_1_1te_1_1ScheduleNode_adbc8bfb6812add2173dcc7a6adb85d5c}
+
+
+Internal stage map to map internal ops to stages. This is created on demand and can be invalidated. 
+
+\index{tvm\+::te\+::\+Schedule\+Node@{tvm\+::te\+::\+Schedule\+Node}!outputs@{outputs}}
+\index{outputs@{outputs}!tvm\+::te\+::\+Schedule\+Node@{tvm\+::te\+::\+Schedule\+Node}}
+\subsubsection[{\texorpdfstring{outputs}{outputs}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Array}$<${\bf Operation}$>$ tvm\+::te\+::\+Schedule\+Node\+::outputs}\hypertarget{classtvm_1_1te_1_1ScheduleNode_a27b0f687f7b20fcc6416a49e041712d8}{}\label{classtvm_1_1te_1_1ScheduleNode_a27b0f687f7b20fcc6416a49e041712d8}
+
+
+The output operations in original data flow graph. 
+
+\index{tvm\+::te\+::\+Schedule\+Node@{tvm\+::te\+::\+Schedule\+Node}!stage\+\_\+map@{stage\+\_\+map}}
+\index{stage\+\_\+map@{stage\+\_\+map}!tvm\+::te\+::\+Schedule\+Node@{tvm\+::te\+::\+Schedule\+Node}}
+\subsubsection[{\texorpdfstring{stage\+\_\+map}{stage_map}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Map}$<${\bf Operation}, {\bf Stage}$>$ tvm\+::te\+::\+Schedule\+Node\+::stage\+\_\+map}\hypertarget{classtvm_1_1te_1_1ScheduleNode_a612223aec2751cbd035a18c9e5453085}{}\label{classtvm_1_1te_1_1ScheduleNode_a612223aec2751cbd035a18c9e5453085}
+
+
+map of original operation to the stages 
+
+\index{tvm\+::te\+::\+Schedule\+Node@{tvm\+::te\+::\+Schedule\+Node}!stages@{stages}}
+\index{stages@{stages}!tvm\+::te\+::\+Schedule\+Node@{tvm\+::te\+::\+Schedule\+Node}}
+\subsubsection[{\texorpdfstring{stages}{stages}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Array}$<${\bf Stage}$>$ tvm\+::te\+::\+Schedule\+Node\+::stages}\hypertarget{classtvm_1_1te_1_1ScheduleNode_ab5649969db603d6b7b4d155c0d09cdd5}{}\label{classtvm_1_1te_1_1ScheduleNode_ab5649969db603d6b7b4d155c0d09cdd5}
+
+
+list of all stages for ops. The stages are sorted in dependency order. 
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+include/tvm/te/\hyperlink{schedule_8h}{schedule.\+h}\end{DoxyCompactItemize}

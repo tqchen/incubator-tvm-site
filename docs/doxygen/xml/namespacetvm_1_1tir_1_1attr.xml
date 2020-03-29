@@ -1,0 +1,576 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="namespacetvm_1_1tir_1_1attr" kind="namespace" language="C++">
+    <compoundname>tvm::tir::attr</compoundname>
+      <sectiondef kind="var">
+      <memberdef kind="variable" id="namespacetvm_1_1tir_1_1attr_1a4933845b75cf4f08fb66f55fdd94986f" prot="public" static="no" mutable="no">
+        <type>constexpr const char *</type>
+        <definition>constexpr const char* tvm::tir::attr::kDeviceThreadAxis</definition>
+        <argsstring></argsstring>
+        <name>kDeviceThreadAxis</name>
+        <initializer>= &quot;tir.device_thread_axis&quot;</initializer>
+        <briefdescription>
+<para>List of thread <ref refid="classtvm_1_1tir_1_1IterVar" kindref="compound">IterVar</ref> that a DeviceLaunch function corresponds to. </para>        </briefdescription>
+        <detaileddescription>
+<para><ref refid="classtvm_1_1Type" kindref="compound">Type</ref>: Array&lt;tir::IterVar&gt;</para><para>We call a device kernel launch function f using the following convention:</para><para>Call(f, [arg1, arg2, ..., arg_n, work_size_1, work_size_2, ... work_size_m])</para><para>Here n = len(arg), m = len(work_size) = len(device_thread_axis).</para><para>The list of device_thread_axis indicates how can be bind the work_size arguments to the corresponding threads.</para><para><simplesect kind="see"><para><ref refid="namespacetvm_1a85e4536ea4e1c8d3d48c61135f0a8ff0aea7c0ea92da6200bb14ea17a6094e2bc" kindref="member">tvm::CallingConv::kDeviceKernelLaunch</ref> </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/tir/function.h" line="183" column="1" bodyfile="include/tvm/tir/function.h" bodystart="183" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespacetvm_1_1tir_1_1attr_1ac74386674da85bc4b4dd1ee28a97ff63" prot="public" static="no" mutable="no">
+        <type>constexpr const char *</type>
+        <definition>constexpr const char* tvm::tir::attr::kNoAlias</definition>
+        <argsstring></argsstring>
+        <name>kNoAlias</name>
+        <initializer>= &quot;tir.noalias&quot;</initializer>
+        <briefdescription>
+<para>Whether to set noalias rule on the function arguments. </para>        </briefdescription>
+        <detaileddescription>
+<para><ref refid="classtvm_1_1Type" kindref="compound">Type</ref>: <ref refid="classtvm_1_1Integer" kindref="compound">Integer</ref> </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/tir/function.h" line="190" column="1" bodyfile="include/tvm/tir/function.h" bodystart="190" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespacetvm_1_1tir_1_1attr_1a489d0cebd2820025bc3d6c5a9011cdd4" prot="public" static="no" mutable="no">
+        <type>constexpr const char *</type>
+        <definition>constexpr const char* tvm::tir::attr::kIsEntryFunc</definition>
+        <argsstring></argsstring>
+        <name>kIsEntryFunc</name>
+        <initializer>= &quot;tir.is_entry_func&quot;</initializer>
+        <briefdescription>
+<para>Mark the function as the entry function of the final generated runtime module. </para>        </briefdescription>
+        <detaileddescription>
+<para><ref refid="classtvm_1_1Type" kindref="compound">Type</ref>: <ref refid="classtvm_1_1Integer" kindref="compound">Integer</ref></para><para><simplesect kind="note"><para>There can only be one entry function per module. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/tir/function.h" line="200" column="1" bodyfile="include/tvm/tir/function.h" bodystart="200" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespacetvm_1_1tir_1_1attr_1a399eed804ecc482a607f0f65f07b78dd" prot="public" static="no" mutable="no">
+        <type>constexpr const char *</type>
+        <definition>constexpr const char* tvm::tir::attr::thread_extent</definition>
+        <argsstring></argsstring>
+        <name>thread_extent</name>
+        <initializer>= &quot;thread_extent&quot;</initializer>
+        <briefdescription>
+<para>Mark launching extent of thread, used by device API. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/tir/stmt.h" line="816" column="1" bodyfile="include/tvm/tir/stmt.h" bodystart="816" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespacetvm_1_1tir_1_1attr_1a464533c1560ace5e0b5071ba6902482e" prot="public" static="no" mutable="no">
+        <type>constexpr const char *</type>
+        <definition>constexpr const char* tvm::tir::attr::virtual_thread</definition>
+        <argsstring></argsstring>
+        <name>virtual_thread</name>
+        <initializer>= &quot;virtual_thread&quot;</initializer>
+        <briefdescription>
+<para>Mark launching of a virtual thread. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/tir/stmt.h" line="818" column="1" bodyfile="include/tvm/tir/stmt.h" bodystart="818" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespacetvm_1_1tir_1_1attr_1ac62a341bfebe5448f290aa54b0f84cac" prot="public" static="no" mutable="no">
+        <type>constexpr const char *</type>
+        <definition>constexpr const char* tvm::tir::attr::coproc_scope</definition>
+        <argsstring></argsstring>
+        <name>coproc_scope</name>
+        <initializer>= &quot;coproc_scope&quot;</initializer>
+        <briefdescription>
+<para>Mark region is processed by a co-proccesor. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/tir/stmt.h" line="820" column="1" bodyfile="include/tvm/tir/stmt.h" bodystart="820" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespacetvm_1_1tir_1_1attr_1ae1d3379e8d6486e79853e254ea9a724e" prot="public" static="no" mutable="no">
+        <type>constexpr const char *</type>
+        <definition>constexpr const char* tvm::tir::attr::coproc_uop_scope</definition>
+        <argsstring></argsstring>
+        <name>coproc_uop_scope</name>
+        <initializer>= &quot;coproc_uop_scope&quot;</initializer>
+        <briefdescription>
+<para>Mark region creates coprocessor micro ops, can be reused if corresponding variable is independent. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/tir/stmt.h" line="825" column="1" bodyfile="include/tvm/tir/stmt.h" bodystart="825" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespacetvm_1_1tir_1_1attr_1a14c2370f3a08792a6aaf70d7a3c773e4" prot="public" static="no" mutable="no">
+        <type>constexpr const char *</type>
+        <definition>constexpr const char* tvm::tir::attr::volatile_scope</definition>
+        <argsstring></argsstring>
+        <name>volatile_scope</name>
+        <initializer>= &quot;volatile_scope&quot;</initializer>
+        <briefdescription>
+<para>Mark the scope as volatile access for certain handle. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/tir/stmt.h" line="827" column="1" bodyfile="include/tvm/tir/stmt.h" bodystart="827" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespacetvm_1_1tir_1_1attr_1a4bd38b620e1e9907216f3e583839dea3" prot="public" static="no" mutable="no">
+        <type>constexpr const char *</type>
+        <definition>constexpr const char* tvm::tir::attr::extern_scope</definition>
+        <argsstring></argsstring>
+        <name>extern_scope</name>
+        <initializer>= &quot;extern_scope&quot;</initializer>
+        <briefdescription>
+<para>Mark the scope as generated by extern primitive. such scope can contain arbitrary ir program and we need to be careful when make certain assumptions about the structure of the program. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/tir/stmt.h" line="833" column="1" bodyfile="include/tvm/tir/stmt.h" bodystart="833" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespacetvm_1_1tir_1_1attr_1a00a6b89838348f152d844cead81b5016" prot="public" static="no" mutable="no">
+        <type>constexpr const char *</type>
+        <definition>constexpr const char* tvm::tir::attr::compute_scope</definition>
+        <argsstring></argsstring>
+        <name>compute_scope</name>
+        <initializer>= &quot;compute_scope&quot;</initializer>
+        <briefdescription>
+<para>Mark the scope as when computation start to happen This can hint some code generator to create a new function for compute. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/tir/stmt.h" line="838" column="1" bodyfile="include/tvm/tir/stmt.h" bodystart="838" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespacetvm_1_1tir_1_1attr_1a04f015503117e6b781ade61e103b074a" prot="public" static="no" mutable="no">
+        <type>constexpr const char *</type>
+        <definition>constexpr const char* tvm::tir::attr::storage_scope</definition>
+        <argsstring></argsstring>
+        <name>storage_scope</name>
+        <initializer>= &quot;storage_scope&quot;</initializer>
+        <briefdescription>
+<para>Mark storage scope of buffers. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/tir/stmt.h" line="840" column="1" bodyfile="include/tvm/tir/stmt.h" bodystart="840" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespacetvm_1_1tir_1_1attr_1af27d464f2065dc5f77408df7b94d4bb6" prot="public" static="no" mutable="no">
+        <type>constexpr const char *</type>
+        <definition>constexpr const char* tvm::tir::attr::storage_alignment</definition>
+        <argsstring></argsstring>
+        <name>storage_alignment</name>
+        <initializer>= &quot;storage_alignment&quot;</initializer>
+        <briefdescription>
+<para>Mark storage alignement requirement of buffers. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/tir/stmt.h" line="842" column="1" bodyfile="include/tvm/tir/stmt.h" bodystart="842" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespacetvm_1_1tir_1_1attr_1acf70bbdafa7344811d336422bf95cdc5" prot="public" static="no" mutable="no">
+        <type>constexpr const char *</type>
+        <definition>constexpr const char* tvm::tir::attr::realize_scope</definition>
+        <argsstring></argsstring>
+        <name>realize_scope</name>
+        <initializer>= &quot;realize_scope&quot;</initializer>
+        <briefdescription>
+<para>Mark storage scope of realization. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/tir/stmt.h" line="844" column="1" bodyfile="include/tvm/tir/stmt.h" bodystart="844" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespacetvm_1_1tir_1_1attr_1a5f3aac4e433fcd6d93f8982540960263" prot="public" static="no" mutable="no">
+        <type>constexpr const char *</type>
+        <definition>constexpr const char* tvm::tir::attr::device_context_id</definition>
+        <argsstring></argsstring>
+        <name>device_context_id</name>
+        <initializer>= &quot;device_context_id&quot;</initializer>
+        <briefdescription>
+<para>The allocation context for global malloc in host. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/tir/stmt.h" line="846" column="1" bodyfile="include/tvm/tir/stmt.h" bodystart="846" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespacetvm_1_1tir_1_1attr_1a9e64432b8b1b9323c5ad18957ba88b23" prot="public" static="no" mutable="no">
+        <type>constexpr const char *</type>
+        <definition>constexpr const char* tvm::tir::attr::device_context_type</definition>
+        <argsstring></argsstring>
+        <name>device_context_type</name>
+        <initializer>= &quot;device_context_type&quot;</initializer>
+        <briefdescription>
+<para>The device type. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/tir/stmt.h" line="848" column="1" bodyfile="include/tvm/tir/stmt.h" bodystart="848" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespacetvm_1_1tir_1_1attr_1a9125ab905a93924ee79269aa808ed517" prot="public" static="no" mutable="no">
+        <type>constexpr const char *</type>
+        <definition>constexpr const char* tvm::tir::attr::loop_scope</definition>
+        <argsstring></argsstring>
+        <name>loop_scope</name>
+        <initializer>= &quot;loop_scope&quot;</initializer>
+        <briefdescription>
+<para>Mark of loop scope. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/tir/stmt.h" line="850" column="1" bodyfile="include/tvm/tir/stmt.h" bodystart="850" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespacetvm_1_1tir_1_1attr_1a50fc9633b9cfbcefa2393dbb2ece1846" prot="public" static="no" mutable="no">
+        <type>constexpr const char *</type>
+        <definition>constexpr const char* tvm::tir::attr::reduce_scope</definition>
+        <argsstring></argsstring>
+        <name>reduce_scope</name>
+        <initializer>= &quot;reduce_scope&quot;</initializer>
+        <briefdescription>
+<para>Mark of reduce scope. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/tir/stmt.h" line="852" column="1" bodyfile="include/tvm/tir/stmt.h" bodystart="852" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespacetvm_1_1tir_1_1attr_1af08d3d2b645a914f1a64d81e45f3b86a" prot="public" static="no" mutable="no">
+        <type>constexpr const char *</type>
+        <definition>constexpr const char* tvm::tir::attr::pragma_scope_prefix</definition>
+        <argsstring></argsstring>
+        <name>pragma_scope_prefix</name>
+        <initializer>= &quot;pragma_&quot;</initializer>
+        <briefdescription>
+<para>Mark region is guarded by the pragma extension. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/tir/stmt.h" line="854" column="1" bodyfile="include/tvm/tir/stmt.h" bodystart="854" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespacetvm_1_1tir_1_1attr_1af00ba402645b1def7c543af3c48be80d" prot="public" static="no" mutable="no">
+        <type>constexpr const char *</type>
+        <definition>constexpr const char* tvm::tir::attr::pragma_import_llvm</definition>
+        <argsstring></argsstring>
+        <name>pragma_import_llvm</name>
+        <initializer>= &quot;pragma_import_llvm&quot;</initializer>
+        <briefdescription>
+<para>Import llvm source or file into the final code gen module. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/tir/stmt.h" line="856" column="1" bodyfile="include/tvm/tir/stmt.h" bodystart="856" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespacetvm_1_1tir_1_1attr_1a96774004fd5b6411f6c37b8923b71834" prot="public" static="no" mutable="no">
+        <type>constexpr const char *</type>
+        <definition>constexpr const char* tvm::tir::attr::pragma_tensor_core</definition>
+        <argsstring></argsstring>
+        <name>pragma_tensor_core</name>
+        <initializer>= &quot;pragma_tensor_core&quot;</initializer>
+        <briefdescription>
+<para>Try to modify the AST to support Tensor Core. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/tir/stmt.h" line="858" column="1" bodyfile="include/tvm/tir/stmt.h" bodystart="858" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespacetvm_1_1tir_1_1attr_1ac95fbd1c09a60b10c7a5d07f6c4b68a6" prot="public" static="no" mutable="no">
+        <type>constexpr const char *</type>
+        <definition>constexpr const char* tvm::tir::attr::prefetch_scope</definition>
+        <argsstring></argsstring>
+        <name>prefetch_scope</name>
+        <initializer>= &quot;prefetch_scope&quot;</initializer>
+        <briefdescription>
+<para>Mark of prefetch scope, value=offset, run prefetch of Tensor on the current loop scope. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/tir/stmt.h" line="863" column="1" bodyfile="include/tvm/tir/stmt.h" bodystart="863" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespacetvm_1_1tir_1_1attr_1a9231fc0afe37a8d46a90a1c5fdf522bb" prot="public" static="no" mutable="no">
+        <type>constexpr const char *</type>
+        <definition>constexpr const char* tvm::tir::attr::double_buffer_scope</definition>
+        <argsstring></argsstring>
+        <name>double_buffer_scope</name>
+        <initializer>= &quot;double_buffer_scope&quot;</initializer>
+        <briefdescription>
+<para>Marks production of double buffer data. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/tir/stmt.h" line="867" column="1" bodyfile="include/tvm/tir/stmt.h" bodystart="867" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespacetvm_1_1tir_1_1attr_1af84871a6d841168f8501f141676dfaeb" prot="public" static="no" mutable="no">
+        <type>constexpr const char *</type>
+        <definition>constexpr const char* tvm::tir::attr::double_buffer_write</definition>
+        <argsstring></argsstring>
+        <name>double_buffer_write</name>
+        <initializer>= &quot;double_buffer_write&quot;</initializer>
+        <briefdescription>
+<para>Marks region used by double buffer write. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/tir/stmt.h" line="871" column="1" bodyfile="include/tvm/tir/stmt.h" bodystart="871" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespacetvm_1_1tir_1_1attr_1a84f5d42e968fd8f4cdd7a4aac7ba2137" prot="public" static="no" mutable="no">
+        <type>constexpr const char *</type>
+        <definition>constexpr const char* tvm::tir::attr::scan_update_scope</definition>
+        <argsstring></argsstring>
+        <name>scan_update_scope</name>
+        <initializer>= &quot;scan_update_scope&quot;</initializer>
+        <briefdescription>
+<para>Mark of scan update scope. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/tir/stmt.h" line="873" column="1" bodyfile="include/tvm/tir/stmt.h" bodystart="873" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespacetvm_1_1tir_1_1attr_1af18e3a9ba11d436e02b55e420647b22b" prot="public" static="no" mutable="no">
+        <type>constexpr const char *</type>
+        <definition>constexpr const char* tvm::tir::attr::scan_init_scope</definition>
+        <argsstring></argsstring>
+        <name>scan_init_scope</name>
+        <initializer>= &quot;scan_init_scope&quot;</initializer>
+        <briefdescription>
+<para>Mark of scan init scope. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/tir/stmt.h" line="875" column="1" bodyfile="include/tvm/tir/stmt.h" bodystart="875" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespacetvm_1_1tir_1_1attr_1a0ff3c4642eebe20842b1c26e98288a5d" prot="public" static="no" mutable="no">
+        <type>constexpr const char *</type>
+        <definition>constexpr const char* tvm::tir::attr::buffer_dim_align</definition>
+        <argsstring></argsstring>
+        <name>buffer_dim_align</name>
+        <initializer>= &quot;buffer_dim_align&quot;</initializer>
+        <briefdescription>
+<para>Mark alignment of buffer dimension stmt.node is Tensor stmt.value is tvm_tuple(dim, align, offset) This gives hint to require stride of dim to be k * align + offset. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/tir/stmt.h" line="882" column="1" bodyfile="include/tvm/tir/stmt.h" bodystart="882" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespacetvm_1_1tir_1_1attr_1ac76fd8d0227265617e2f2bb8402d1e19" prot="public" static="no" mutable="no">
+        <type>constexpr const char *</type>
+        <definition>constexpr const char* tvm::tir::attr::buffer_bound</definition>
+        <argsstring></argsstring>
+        <name>buffer_bound</name>
+        <initializer>= &quot;buffer_bound&quot;</initializer>
+        <briefdescription>
+<para>Mark stores/loads with theirs bounds. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/tir/stmt.h" line="884" column="1" bodyfile="include/tvm/tir/stmt.h" bodystart="884" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespacetvm_1_1tir_1_1attr_1a0497d7cff1d672920c2fbd4d92869e62" prot="public" static="no" mutable="no">
+        <type>constexpr const char *</type>
+        <definition>constexpr const char* tvm::tir::attr::buffer_bind_scope</definition>
+        <argsstring></argsstring>
+        <name>buffer_bind_scope</name>
+        <initializer>= &quot;buffer_bind_scope&quot;</initializer>
+        <briefdescription>
+<para>Bind the buffer specification to the region of the op When this scope occurs, the stmt.node is a Array&lt;NodeRef&gt; = [buffer, tensor] stmt.value is a tvm_tuple(min0, extent0, min1, extent1, ...). The scope represents that we need to bind the storage region of tensor to buffer. This will affect replacement of some variables inside the scope that corresponds to field of buffer to be the actual expressions of tensor during storage flattening phase. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/tir/stmt.h" line="894" column="1" bodyfile="include/tvm/tir/stmt.h" bodystart="894" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespacetvm_1_1tir_1_1attr_1ad39d05bd13aeed7af51e9f8e323d263b" prot="public" static="no" mutable="no">
+        <type>constexpr const char *</type>
+        <definition>constexpr const char* tvm::tir::attr::channel_read_scope</definition>
+        <argsstring></argsstring>
+        <name>channel_read_scope</name>
+        <initializer>= &quot;channel_read_scope&quot;</initializer>
+        <briefdescription>
+<para>channel read scope </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/tir/stmt.h" line="897" column="1" bodyfile="include/tvm/tir/stmt.h" bodystart="897" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespacetvm_1_1tir_1_1attr_1a14632ed9597f1c21a0dbd23949e5916e" prot="public" static="no" mutable="no">
+        <type>constexpr const char *</type>
+        <definition>constexpr const char* tvm::tir::attr::channel_read_advance</definition>
+        <argsstring></argsstring>
+        <name>channel_read_advance</name>
+        <initializer>= &quot;channel_read_advance&quot;</initializer>
+        <briefdescription>
+<para>Advance step of channel after end of scope. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/tir/stmt.h" line="899" column="1" bodyfile="include/tvm/tir/stmt.h" bodystart="899" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespacetvm_1_1tir_1_1attr_1a52f378fc437bd4f7f6508c8e2e9b3e05" prot="public" static="no" mutable="no">
+        <type>constexpr const char *</type>
+        <definition>constexpr const char* tvm::tir::attr::channel_write_scope</definition>
+        <argsstring></argsstring>
+        <name>channel_write_scope</name>
+        <initializer>= &quot;channel_write_scope&quot;</initializer>
+        <briefdescription>
+<para>channel write scope </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/tir/stmt.h" line="901" column="1" bodyfile="include/tvm/tir/stmt.h" bodystart="901" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespacetvm_1_1tir_1_1attr_1ad8886f0bca07d9fa56db9edea67b1a8d" prot="public" static="no" mutable="no">
+        <type>constexpr const char *</type>
+        <definition>constexpr const char* tvm::tir::attr::channel_write_advance</definition>
+        <argsstring></argsstring>
+        <name>channel_write_advance</name>
+        <initializer>= &quot;channel_write_advance&quot;</initializer>
+        <briefdescription>
+<para>Advance step of channel after end of scope. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/tir/stmt.h" line="903" column="1" bodyfile="include/tvm/tir/stmt.h" bodystart="903" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespacetvm_1_1tir_1_1attr_1a19ecbf068afc115a2282e533c0fe518d" prot="public" static="no" mutable="no">
+        <type>constexpr const char *</type>
+        <definition>constexpr const char* tvm::tir::attr::pipeline_stage_scope</definition>
+        <argsstring></argsstring>
+        <name>pipeline_stage_scope</name>
+        <initializer>= &quot;pipeline_stage_scope&quot;</initializer>
+        <briefdescription>
+<para>pipeline stage scope, implies always execution </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/tir/stmt.h" line="905" column="1" bodyfile="include/tvm/tir/stmt.h" bodystart="905" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespacetvm_1_1tir_1_1attr_1aee14d4d24b86179fd19938a02bc15512" prot="public" static="no" mutable="no">
+        <type>constexpr const char *</type>
+        <definition>constexpr const char* tvm::tir::attr::pipeline_exec_scope</definition>
+        <argsstring></argsstring>
+        <name>pipeline_exec_scope</name>
+        <initializer>= &quot;pipeline_exec_scope&quot;</initializer>
+        <briefdescription>
+<para>pipeline execution scope, implies the scope can be pipelined. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/tir/stmt.h" line="907" column="1" bodyfile="include/tvm/tir/stmt.h" bodystart="907" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespacetvm_1_1tir_1_1attr_1ae486f902462321bf26244a9c5b19098c" prot="public" static="no" mutable="no">
+        <type>constexpr const char *</type>
+        <definition>constexpr const char* tvm::tir::attr::opengl_stage_scope</definition>
+        <argsstring></argsstring>
+        <name>opengl_stage_scope</name>
+        <initializer>= &quot;opengl_stage_scope&quot;</initializer>
+        <briefdescription>
+<para>Mark that this stage is an OpenGL shader. Since OpenGL shader only allows writing out to one element of the output texture, the Provide node gets translated to a special Call::glsl_texture_store statement instead of a Store statement. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/tir/stmt.h" line="914" column="1" bodyfile="include/tvm/tir/stmt.h" bodystart="914" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespacetvm_1_1tir_1_1attr_1a36db026f638ad3d951c302796ddcae24" prot="public" static="no" mutable="no">
+        <type>constexpr const char *</type>
+        <definition>constexpr const char* tvm::tir::attr::device_scope</definition>
+        <argsstring></argsstring>
+        <name>device_scope</name>
+        <initializer>= &quot;device_scope&quot;</initializer>
+        <briefdescription>
+<para>Mark that it is in the device scope. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/tir/stmt.h" line="919" column="1" bodyfile="include/tvm/tir/stmt.h" bodystart="919" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespacetvm_1_1tir_1_1attr_1a93d76d80fd7252d66991dc650693c0ef" prot="public" static="no" mutable="no">
+        <type>constexpr const char *</type>
+        <definition>constexpr const char* tvm::tir::attr::fragment_shape</definition>
+        <argsstring></argsstring>
+        <name>fragment_shape</name>
+        <initializer>= &quot;fragment_shape&quot;</initializer>
+        <briefdescription>
+<para>Mark that the shape of TensorCore fragment. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/tir/stmt.h" line="924" column="1" bodyfile="include/tvm/tir/stmt.h" bodystart="924" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespacetvm_1_1tir_1_1attr_1a9b33cc65f756817e691b49782ee103bd" prot="public" static="no" mutable="no">
+        <type>constexpr const char *</type>
+        <definition>constexpr const char* tvm::tir::attr::fragment_layout</definition>
+        <argsstring></argsstring>
+        <name>fragment_layout</name>
+        <initializer>= &quot;fragment_layout&quot;</initializer>
+        <briefdescription>
+<para>Mark that the layout of TensorCore fragment. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/tir/stmt.h" line="929" column="1" bodyfile="include/tvm/tir/stmt.h" bodystart="929" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="namespacetvm_1_1tir_1_1attr_1a385e883a7cecc309d063786e5fdf2c4b" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool tvm::tir::attr::IsPragmaKey</definition>
+        <argsstring>(const std::string &amp;attr_key)</argsstring>
+        <name>IsPragmaKey</name>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>attr_key</declname>
+        </param>
+        <briefdescription>
+<para>Check if attr_key is a pragma key extension. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>attr_key</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The attr key to be compared </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>true if it is a pragma key </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/tir/stmt.h" line="936" column="1" bodyfile="include/tvm/tir/stmt.h" bodystart="936" bodyend="938"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para><ref refid="classtvm_1_1tir_1_1PrimFunc" kindref="compound">PrimFunc</ref> specific attribute names. </para>    </briefdescription>
+    <detaileddescription>
+<para>namespace of possible attribute sin AttrStmt.attr_key</para><para><simplesect kind="see"><para><ref refid="namespacetvm_1_1attr" kindref="compound">tvm::attr</ref> </para></simplesect>
+</para>    </detaileddescription>
+    <location file="include/tvm/tir/function.h" line="164" column="1"/>
+  </compounddef>
+</doxygen>

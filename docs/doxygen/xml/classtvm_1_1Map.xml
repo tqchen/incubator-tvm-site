@@ -1,0 +1,615 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="classtvm_1_1Map" kind="class" language="C++" prot="public">
+    <compoundname>tvm::Map</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">ObjectRef</basecompoundref>
+    <includes refid="node_2container_8h" local="no">container.h</includes>
+    <innerclass refid="structtvm_1_1Map_1_1ValueConverter" prot="public">tvm::Map::ValueConverter</innerclass>
+    <templateparamlist>
+      <param>
+        <type>typename</type>
+        <declname>K</declname>
+        <defname>K</defname>
+      </param>
+      <param>
+        <type>typename</type>
+        <declname>V</declname>
+        <defname>V</defname>
+      </param>
+      <param>
+        <type>typename</type>
+        <defval>typename std::enable_if&lt;           std::is_base_of&lt;ObjectRef, K&gt;::value ||           std::is_base_of&lt;std::string, K&gt;::value &gt;::type</defval>
+      </param>
+      <param>
+        <type>typename</type>
+        <defval>typename std::enable_if&lt;std::is_base_of&lt;ObjectRef, V&gt;::value&gt;::type</defval>
+      </param>
+    </templateparamlist>
+      <sectiondef kind="public-type">
+      <memberdef kind="typedef" id="classtvm_1_1Map_1a032205a9ae4e6f2d945837e7185b3d1a" prot="public" static="no">
+        <type><ref refid="classtvm_1_1MapNode" kindref="compound">MapNode</ref></type>
+        <definition>using tvm::Map&lt; K, V, typename, typename &gt;::ContainerType =  MapNode</definition>
+        <argsstring></argsstring>
+        <name>ContainerType</name>
+        <briefdescription>
+<para>specify container node </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/node/container.h" line="528" column="1" bodyfile="include/tvm/node/container.h" bodystart="528" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="classtvm_1_1Map_1ac692b6c03df9de0b1d49f719bf659ee1" prot="public" static="no">
+        <type><ref refid="classtvm_1_1IterAdapter" kindref="compound">IterAdapter</ref>&lt; <ref refid="structtvm_1_1Map_1_1ValueConverter" kindref="compound">ValueConverter</ref>, MapNode::ContainerType::const_iterator &gt;</type>
+        <definition>using tvm::Map&lt; K, V, typename, typename &gt;::iterator =  IterAdapter&lt; ValueConverter, MapNode::ContainerType::const_iterator&gt;</definition>
+        <argsstring></argsstring>
+        <name>iterator</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/node/container.h" line="540" column="1" bodyfile="include/tvm/node/container.h" bodystart="541" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classtvm_1_1Map_1a3c4b1ad987313584daca3c58724dddf5" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>tvm::Map&lt; K, V, typename, typename &gt;::Map</definition>
+        <argsstring>()</argsstring>
+        <name>Map</name>
+        <briefdescription>
+<para>default constructor </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/node/container.h" line="391" column="1" bodyfile="include/tvm/node/container.h" bodystart="391" bodyend="393"/>
+      </memberdef>
+      <memberdef kind="function" id="classtvm_1_1Map_1a58ada92864cf1d2cf8cb57444feaed9b" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>tvm::Map&lt; K, V, typename, typename &gt;::Map</definition>
+        <argsstring>(Map&lt; K, V &gt; &amp;&amp;other)</argsstring>
+        <name>Map</name>
+        <param>
+          <type><ref refid="classtvm_1_1Map" kindref="compound">Map</ref>&lt; K, V &gt; &amp;&amp;</type>
+          <declname>other</declname>
+        </param>
+        <briefdescription>
+<para>move constructor </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>other</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>source </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/node/container.h" line="398" column="1" bodyfile="include/tvm/node/container.h" bodystart="398" bodyend="400"/>
+      </memberdef>
+      <memberdef kind="function" id="classtvm_1_1Map_1aa552c0ed42255384f95f341871458d7a" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>tvm::Map&lt; K, V, typename, typename &gt;::Map</definition>
+        <argsstring>(const Map&lt; K, V &gt; &amp;other)</argsstring>
+        <name>Map</name>
+        <param>
+          <type>const <ref refid="classtvm_1_1Map" kindref="compound">Map</ref>&lt; K, V &gt; &amp;</type>
+          <declname>other</declname>
+        </param>
+        <briefdescription>
+<para>copy constructor </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>other</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>source </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/node/container.h" line="405" column="1" bodyfile="include/tvm/node/container.h" bodystart="405" bodyend="406"/>
+      </memberdef>
+      <memberdef kind="function" id="classtvm_1_1Map_1ad2f79c81a070cd75a1dc934bafd59916" prot="public" static="no" const="no" explicit="yes" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>tvm::Map&lt; K, V, typename, typename &gt;::Map</definition>
+        <argsstring>(ObjectPtr&lt; Object &gt; n)</argsstring>
+        <name>Map</name>
+        <param>
+          <type>ObjectPtr&lt; Object &gt;</type>
+          <declname>n</declname>
+        </param>
+        <briefdescription>
+<para>constructor from pointer </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>n</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the container pointer </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/node/container.h" line="411" column="1" bodyfile="include/tvm/node/container.h" bodystart="411" bodyend="411"/>
+      </memberdef>
+      <memberdef kind="function" id="classtvm_1_1Map_1a37cda7c1e644cba140276d8b8690655e" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename IterType</type>
+          </param>
+        </templateparamlist>
+        <type></type>
+        <definition>tvm::Map&lt; K, V, typename, typename &gt;::Map</definition>
+        <argsstring>(IterType begin, IterType end)</argsstring>
+        <name>Map</name>
+        <param>
+          <type>IterType</type>
+          <declname>begin</declname>
+        </param>
+        <param>
+          <type>IterType</type>
+          <declname>end</declname>
+        </param>
+        <briefdescription>
+<para>constructor from iterator </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>begin</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>begin of iterator </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>end</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>end of iterator </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="templateparam"><parameteritem>
+<parameternamelist>
+<parametername>IterType</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The type of iterator </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/node/container.h" line="419" column="1" bodyfile="include/tvm/node/container.h" bodystart="419" bodyend="421"/>
+      </memberdef>
+      <memberdef kind="function" id="classtvm_1_1Map_1ae56d036579f1bc05367f511ecb1e95da" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>tvm::Map&lt; K, V, typename, typename &gt;::Map</definition>
+        <argsstring>(std::initializer_list&lt; std::pair&lt; K, V &gt; &gt; init)</argsstring>
+        <name>Map</name>
+        <param>
+          <type>std::initializer_list&lt; std::pair&lt; K, V &gt; &gt;</type>
+          <declname>init</declname>
+        </param>
+        <briefdescription>
+<para>constructor from initializer list </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>init</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The initalizer list </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/node/container.h" line="426" column="1" bodyfile="include/tvm/node/container.h" bodystart="426" bodyend="428"/>
+      </memberdef>
+      <memberdef kind="function" id="classtvm_1_1Map_1a13a270f095bad489247edf8e0d15f9c9" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename Hash</type>
+          </param>
+          <param>
+            <type>typename Equal</type>
+          </param>
+        </templateparamlist>
+        <type></type>
+        <definition>tvm::Map&lt; K, V, typename, typename &gt;::Map</definition>
+        <argsstring>(const std::unordered_map&lt; K, V, Hash, Equal &gt; &amp;init)</argsstring>
+        <name>Map</name>
+        <param>
+          <type>const std::unordered_map&lt; K, V, Hash, Equal &gt; &amp;</type>
+          <declname>init</declname>
+        </param>
+        <briefdescription>
+<para>constructor from vector </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>init</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The vector </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/node/container.h" line="434" column="1" bodyfile="include/tvm/node/container.h" bodystart="434" bodyend="436"/>
+      </memberdef>
+      <memberdef kind="function" id="classtvm_1_1Map_1acf11920f50d9a6283cd2f1ed9985bfca" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classtvm_1_1Map" kindref="compound">Map</ref>&lt; K, V &gt; &amp;</type>
+        <definition>Map&lt;K, V&gt;&amp; tvm::Map&lt; K, V, typename, typename &gt;::operator=</definition>
+        <argsstring>(Map&lt; K, V &gt; &amp;&amp;other)</argsstring>
+        <name>operator=</name>
+        <param>
+          <type><ref refid="classtvm_1_1Map" kindref="compound">Map</ref>&lt; K, V &gt; &amp;&amp;</type>
+          <declname>other</declname>
+        </param>
+        <briefdescription>
+<para>move assign operator </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>other</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The source of assignment </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>reference to self. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/node/container.h" line="442" column="1" bodyfile="include/tvm/node/container.h" bodystart="442" bodyend="445"/>
+      </memberdef>
+      <memberdef kind="function" id="classtvm_1_1Map_1a4572b0679e99399dc42e139d3d773349" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classtvm_1_1Map" kindref="compound">Map</ref>&lt; K, V &gt; &amp;</type>
+        <definition>Map&lt;K, V&gt;&amp; tvm::Map&lt; K, V, typename, typename &gt;::operator=</definition>
+        <argsstring>(const Map&lt; K, V &gt; &amp;other)</argsstring>
+        <name>operator=</name>
+        <param>
+          <type>const <ref refid="classtvm_1_1Map" kindref="compound">Map</ref>&lt; K, V &gt; &amp;</type>
+          <declname>other</declname>
+        </param>
+        <briefdescription>
+<para>copy assign operator </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>other</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The source of assignment </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>reference to self. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/node/container.h" line="451" column="1" bodyfile="include/tvm/node/container.h" bodystart="451" bodyend="454"/>
+      </memberdef>
+      <memberdef kind="function" id="classtvm_1_1Map_1a7733c37bc18f3df529e3b2fdc01a072f" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename IterType</type>
+          </param>
+        </templateparamlist>
+        <type>void</type>
+        <definition>void tvm::Map&lt; K, V, typename, typename &gt;::assign</definition>
+        <argsstring>(IterType begin, IterType end)</argsstring>
+        <name>assign</name>
+        <param>
+          <type>IterType</type>
+          <declname>begin</declname>
+        </param>
+        <param>
+          <type>IterType</type>
+          <declname>end</declname>
+        </param>
+        <briefdescription>
+<para>reset the array to content from iterator. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>begin</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>begin of iterator </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>end</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>end of iterator </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="templateparam"><parameteritem>
+<parameternamelist>
+<parametername>IterType</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The type of iterator </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/node/container.h" line="462" column="1" bodyfile="include/tvm/node/container.h" bodystart="462" bodyend="468"/>
+      </memberdef>
+      <memberdef kind="function" id="classtvm_1_1Map_1ac12a408b9dad9e7309aa12002b217fce" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>const V</type>
+        <definition>const V tvm::Map&lt; K, V, typename, typename &gt;::operator[]</definition>
+        <argsstring>(const K &amp;key) const </argsstring>
+        <name>operator[]</name>
+        <param>
+          <type>const K &amp;</type>
+          <declname>key</declname>
+        </param>
+        <briefdescription>
+<para>Read element from map. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>key</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The key </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>the corresonding element. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/node/container.h" line="474" column="1" bodyfile="include/tvm/node/container.h" bodystart="474" bodyend="477"/>
+      </memberdef>
+      <memberdef kind="function" id="classtvm_1_1Map_1aa95a8fa173498e69eceba1aec8e49aba" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>const V</type>
+        <definition>const V tvm::Map&lt; K, V, typename, typename &gt;::at</definition>
+        <argsstring>(const K &amp;key) const </argsstring>
+        <name>at</name>
+        <param>
+          <type>const K &amp;</type>
+          <declname>key</declname>
+        </param>
+        <briefdescription>
+<para>Read element from map. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>key</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The key </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>the corresonding element. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/node/container.h" line="483" column="1" bodyfile="include/tvm/node/container.h" bodystart="483" bodyend="486"/>
+      </memberdef>
+      <memberdef kind="function" id="classtvm_1_1Map_1aef62a3d36a718533366951bec5b64880" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>size_t</type>
+        <definition>size_t tvm::Map&lt; K, V, typename, typename &gt;::size</definition>
+        <argsstring>() const </argsstring>
+        <name>size</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>The size of the array </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/node/container.h" line="488" column="1" bodyfile="include/tvm/node/container.h" bodystart="488" bodyend="491"/>
+      </memberdef>
+      <memberdef kind="function" id="classtvm_1_1Map_1a0e225214f7d7b360f2e73796abe7992a" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>size_t</type>
+        <definition>size_t tvm::Map&lt; K, V, typename, typename &gt;::count</definition>
+        <argsstring>(const K &amp;key) const </argsstring>
+        <name>count</name>
+        <param>
+          <type>const K &amp;</type>
+          <declname>key</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>The number of elements of the key </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/node/container.h" line="493" column="1" bodyfile="include/tvm/node/container.h" bodystart="493" bodyend="496"/>
+      </memberdef>
+      <memberdef kind="function" id="classtvm_1_1Map_1a0398bb9f0d33835a07f187d7e052b34d" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classtvm_1_1MapNode" kindref="compound">MapNode</ref> *</type>
+        <definition>MapNode* tvm::Map&lt; K, V, typename, typename &gt;::CopyOnWrite</definition>
+        <argsstring>()</argsstring>
+        <name>CopyOnWrite</name>
+        <briefdescription>
+<para>copy on write semantics Do nothing if current handle is the unique copy of the array. Otherwise make a new copy of the array to ensure the current handle hold a unique copy. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>Handle to the internal node container(which ganrantees to be unique) </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/node/container.h" line="505" column="1" bodyfile="include/tvm/node/container.h" bodystart="505" bodyend="512"/>
+      </memberdef>
+      <memberdef kind="function" id="classtvm_1_1Map_1a01b57ff1ef565738f8ab391a5e4d5f7d" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void tvm::Map&lt; K, V, typename, typename &gt;::Set</definition>
+        <argsstring>(const K &amp;key, const V &amp;value)</argsstring>
+        <name>Set</name>
+        <param>
+          <type>const K &amp;</type>
+          <declname>key</declname>
+        </param>
+        <param>
+          <type>const V &amp;</type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+<para>set the <ref refid="classtvm_1_1Map" kindref="compound">Map</ref>. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>key</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The index key. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>value</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The value to be setted. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/node/container.h" line="518" column="1" bodyfile="include/tvm/node/container.h" bodystart="518" bodyend="521"/>
+      </memberdef>
+      <memberdef kind="function" id="classtvm_1_1Map_1a7f5b744e65b40aca81a167cec715ec2a" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool tvm::Map&lt; K, V, typename, typename &gt;::empty</definition>
+        <argsstring>() const </argsstring>
+        <name>empty</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>whether array is empty </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/node/container.h" line="524" column="1" bodyfile="include/tvm/node/container.h" bodystart="524" bodyend="526"/>
+      </memberdef>
+      <memberdef kind="function" id="classtvm_1_1Map_1abd05e398b026981426bce7c45c51e0aa" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classtvm_1_1Map_1ac692b6c03df9de0b1d49f719bf659ee1" kindref="member">iterator</ref></type>
+        <definition>iterator tvm::Map&lt; K, V, typename, typename &gt;::begin</definition>
+        <argsstring>() const </argsstring>
+        <name>begin</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>begin iterator </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/node/container.h" line="544" column="1" bodyfile="include/tvm/node/container.h" bodystart="544" bodyend="546"/>
+      </memberdef>
+      <memberdef kind="function" id="classtvm_1_1Map_1a0b475776d062f8fc32842e054d5674bd" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classtvm_1_1Map_1ac692b6c03df9de0b1d49f719bf659ee1" kindref="member">iterator</ref></type>
+        <definition>iterator tvm::Map&lt; K, V, typename, typename &gt;::end</definition>
+        <argsstring>() const </argsstring>
+        <name>end</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>end iterator </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/node/container.h" line="548" column="1" bodyfile="include/tvm/node/container.h" bodystart="548" bodyend="550"/>
+      </memberdef>
+      <memberdef kind="function" id="classtvm_1_1Map_1a73c0a4bda4da7adceebe743274a9d7a8" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classtvm_1_1Map_1ac692b6c03df9de0b1d49f719bf659ee1" kindref="member">iterator</ref></type>
+        <definition>iterator tvm::Map&lt; K, V, typename, typename &gt;::find</definition>
+        <argsstring>(const K &amp;key) const </argsstring>
+        <name>find</name>
+        <param>
+          <type>const K &amp;</type>
+          <declname>key</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>begin iterator </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/node/container.h" line="552" column="1" bodyfile="include/tvm/node/container.h" bodystart="552" bodyend="555"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para><ref refid="classtvm_1_1Map" kindref="compound">Map</ref> container of NodeRef-&gt;NodeRef in DSL graph. <ref refid="classtvm_1_1Map" kindref="compound">Map</ref> implements copy on write semantics, which means map is mutable but copy will happen when array is referenced in more than two places. </para>    </briefdescription>
+    <detaileddescription>
+<para>operator[] only provide const acces, use Set to mutate the content. <parameterlist kind="templateparam"><parameteritem>
+<parameternamelist>
+<parametername>K</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The key NodeRef type. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>V</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The value NodeRef type. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>    </detaileddescription>
+    <inheritancegraph>
+      <node id="5645">
+        <label>ObjectRef</label>
+      </node>
+      <node id="5644">
+        <label>tvm::Map&lt; K, V, typename, typename &gt;</label>
+        <link refid="classtvm_1_1Map"/>
+        <childnode refid="5645" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="5647">
+        <label>ObjectRef</label>
+      </node>
+      <node id="5646">
+        <label>tvm::Map&lt; K, V, typename, typename &gt;</label>
+        <link refid="classtvm_1_1Map"/>
+        <childnode refid="5647" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="include/tvm/node/container.h" line="386" column="1" bodyfile="include/tvm/node/container.h" bodystart="386" bodyend="556"/>
+    <listofallmembers>
+      <member refid="classtvm_1_1Map_1a7733c37bc18f3df529e3b2fdc01a072f" prot="public" virt="non-virtual"><scope>tvm::Map</scope><name>assign</name></member>
+      <member refid="classtvm_1_1Map_1aa95a8fa173498e69eceba1aec8e49aba" prot="public" virt="non-virtual"><scope>tvm::Map</scope><name>at</name></member>
+      <member refid="classtvm_1_1Map_1abd05e398b026981426bce7c45c51e0aa" prot="public" virt="non-virtual"><scope>tvm::Map</scope><name>begin</name></member>
+      <member refid="classtvm_1_1Map_1a032205a9ae4e6f2d945837e7185b3d1a" prot="public" virt="non-virtual"><scope>tvm::Map</scope><name>ContainerType</name></member>
+      <member refid="classtvm_1_1Map_1a0398bb9f0d33835a07f187d7e052b34d" prot="public" virt="non-virtual"><scope>tvm::Map</scope><name>CopyOnWrite</name></member>
+      <member refid="classtvm_1_1Map_1a0e225214f7d7b360f2e73796abe7992a" prot="public" virt="non-virtual"><scope>tvm::Map</scope><name>count</name></member>
+      <member refid="classtvm_1_1Map_1a7f5b744e65b40aca81a167cec715ec2a" prot="public" virt="non-virtual"><scope>tvm::Map</scope><name>empty</name></member>
+      <member refid="classtvm_1_1Map_1a0b475776d062f8fc32842e054d5674bd" prot="public" virt="non-virtual"><scope>tvm::Map</scope><name>end</name></member>
+      <member refid="classtvm_1_1Map_1a73c0a4bda4da7adceebe743274a9d7a8" prot="public" virt="non-virtual"><scope>tvm::Map</scope><name>find</name></member>
+      <member refid="classtvm_1_1Map_1ac692b6c03df9de0b1d49f719bf659ee1" prot="public" virt="non-virtual"><scope>tvm::Map</scope><name>iterator</name></member>
+      <member refid="classtvm_1_1Map_1a3c4b1ad987313584daca3c58724dddf5" prot="public" virt="non-virtual"><scope>tvm::Map</scope><name>Map</name></member>
+      <member refid="classtvm_1_1Map_1a58ada92864cf1d2cf8cb57444feaed9b" prot="public" virt="non-virtual"><scope>tvm::Map</scope><name>Map</name></member>
+      <member refid="classtvm_1_1Map_1aa552c0ed42255384f95f341871458d7a" prot="public" virt="non-virtual"><scope>tvm::Map</scope><name>Map</name></member>
+      <member refid="classtvm_1_1Map_1ad2f79c81a070cd75a1dc934bafd59916" prot="public" virt="non-virtual"><scope>tvm::Map</scope><name>Map</name></member>
+      <member refid="classtvm_1_1Map_1a37cda7c1e644cba140276d8b8690655e" prot="public" virt="non-virtual"><scope>tvm::Map</scope><name>Map</name></member>
+      <member refid="classtvm_1_1Map_1ae56d036579f1bc05367f511ecb1e95da" prot="public" virt="non-virtual"><scope>tvm::Map</scope><name>Map</name></member>
+      <member refid="classtvm_1_1Map_1a13a270f095bad489247edf8e0d15f9c9" prot="public" virt="non-virtual"><scope>tvm::Map</scope><name>Map</name></member>
+      <member refid="classtvm_1_1Map_1acf11920f50d9a6283cd2f1ed9985bfca" prot="public" virt="non-virtual"><scope>tvm::Map</scope><name>operator=</name></member>
+      <member refid="classtvm_1_1Map_1a4572b0679e99399dc42e139d3d773349" prot="public" virt="non-virtual"><scope>tvm::Map</scope><name>operator=</name></member>
+      <member refid="classtvm_1_1Map_1ac12a408b9dad9e7309aa12002b217fce" prot="public" virt="non-virtual"><scope>tvm::Map</scope><name>operator[]</name></member>
+      <member refid="classtvm_1_1Map_1a01b57ff1ef565738f8ab391a5e4d5f7d" prot="public" virt="non-virtual"><scope>tvm::Map</scope><name>Set</name></member>
+      <member refid="classtvm_1_1Map_1aef62a3d36a718533366951bec5b64880" prot="public" virt="non-virtual"><scope>tvm::Map</scope><name>size</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

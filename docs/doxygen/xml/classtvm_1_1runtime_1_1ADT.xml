@@ -1,0 +1,317 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="classtvm_1_1runtime_1_1ADT" kind="class" language="C++" prot="public">
+    <compoundname>tvm::runtime::ADT</compoundname>
+    <basecompoundref refid="classtvm_1_1runtime_1_1ObjectRef" prot="public" virt="non-virtual">tvm::runtime::ObjectRef</basecompoundref>
+    <includes refid="runtime_2container_8h" local="no">container.h</includes>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classtvm_1_1runtime_1_1ADT_1a204397cb319fdb83a72b1d9112a09caa" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>tvm::runtime::ADT::ADT</definition>
+        <argsstring>(int32_t tag, std::vector&lt; ObjectRef &gt; fields)</argsstring>
+        <name>ADT</name>
+        <param>
+          <type>int32_t</type>
+          <declname>tag</declname>
+        </param>
+        <param>
+          <type>std::vector&lt; <ref refid="classtvm_1_1runtime_1_1ObjectRef" kindref="compound">ObjectRef</ref> &gt;</type>
+          <declname>fields</declname>
+        </param>
+        <briefdescription>
+<para>construct an <ref refid="classtvm_1_1runtime_1_1ADT" kindref="compound">ADT</ref> object reference. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>tag</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The tag of the <ref refid="classtvm_1_1runtime_1_1ADT" kindref="compound">ADT</ref> object. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>fields</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The fields of the <ref refid="classtvm_1_1runtime_1_1ADT" kindref="compound">ADT</ref> object. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The constructed <ref refid="classtvm_1_1runtime_1_1ADT" kindref="compound">ADT</ref> object reference. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/runtime/container.h" line="244" column="1" bodyfile="include/tvm/runtime/container.h" bodystart="244" bodyend="245"/>
+      </memberdef>
+      <memberdef kind="function" id="classtvm_1_1runtime_1_1ADT_1aea0665ed087095ed39354064e5071d4f" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename Iterator</type>
+          </param>
+        </templateparamlist>
+        <type></type>
+        <definition>tvm::runtime::ADT::ADT</definition>
+        <argsstring>(int32_t tag, Iterator begin, Iterator end)</argsstring>
+        <name>ADT</name>
+        <param>
+          <type>int32_t</type>
+          <declname>tag</declname>
+        </param>
+        <param>
+          <type>Iterator</type>
+          <declname>begin</declname>
+        </param>
+        <param>
+          <type>Iterator</type>
+          <declname>end</declname>
+        </param>
+        <briefdescription>
+<para>construct an <ref refid="classtvm_1_1runtime_1_1ADT" kindref="compound">ADT</ref> object reference. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>tag</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The tag of the <ref refid="classtvm_1_1runtime_1_1ADT" kindref="compound">ADT</ref> object. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>begin</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The begin iterator to the start of the fields array. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>end</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The end iterator to the end of the fields array. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The constructed <ref refid="classtvm_1_1runtime_1_1ADT" kindref="compound">ADT</ref> object reference. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/runtime/container.h" line="255" column="1" bodyfile="include/tvm/runtime/container.h" bodystart="255" bodyend="261"/>
+      </memberdef>
+      <memberdef kind="function" id="classtvm_1_1runtime_1_1ADT_1a9ebe228980db0256d72fc01ba5c7ae89" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>tvm::runtime::ADT::ADT</definition>
+        <argsstring>(int32_t tag, std::initializer_list&lt; ObjectRef &gt; init)</argsstring>
+        <name>ADT</name>
+        <param>
+          <type>int32_t</type>
+          <declname>tag</declname>
+        </param>
+        <param>
+          <type>std::initializer_list&lt; <ref refid="classtvm_1_1runtime_1_1ObjectRef" kindref="compound">ObjectRef</ref> &gt;</type>
+          <declname>init</declname>
+        </param>
+        <briefdescription>
+<para>construct an <ref refid="classtvm_1_1runtime_1_1ADT" kindref="compound">ADT</ref> object reference. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>tag</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The tag of the <ref refid="classtvm_1_1runtime_1_1ADT" kindref="compound">ADT</ref> object. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>init</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The initializer list of fields. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The constructed <ref refid="classtvm_1_1runtime_1_1ADT" kindref="compound">ADT</ref> object reference. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/runtime/container.h" line="269" column="1" bodyfile="include/tvm/runtime/container.h" bodystart="269" bodyend="270"/>
+      </memberdef>
+      <memberdef kind="function" id="classtvm_1_1runtime_1_1ADT_1a6a1dba101b18cffbd307f7c0f92a39b2" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>const <ref refid="classtvm_1_1runtime_1_1ObjectRef" kindref="compound">ObjectRef</ref> &amp;</type>
+        <definition>const ObjectRef&amp; tvm::runtime::ADT::operator[]</definition>
+        <argsstring>(size_t idx) const </argsstring>
+        <name>operator[]</name>
+        <param>
+          <type>size_t</type>
+          <declname>idx</declname>
+        </param>
+        <briefdescription>
+<para>Access element at index. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>idx</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The array index </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>const <ref refid="classtvm_1_1runtime_1_1ObjectRef" kindref="compound">ObjectRef</ref> </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/runtime/container.h" line="278" column="1" bodyfile="include/tvm/runtime/container.h" bodystart="278" bodyend="280"/>
+      </memberdef>
+      <memberdef kind="function" id="classtvm_1_1runtime_1_1ADT_1a1a631df56a143132d60076c8038a9a97" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>int32_t</type>
+        <definition>int32_t tvm::runtime::ADT::tag</definition>
+        <argsstring>() const </argsstring>
+        <name>tag</name>
+        <briefdescription>
+<para>Return the <ref refid="classtvm_1_1runtime_1_1ADT" kindref="compound">ADT</ref> tag. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/runtime/container.h" line="285" column="1" bodyfile="include/tvm/runtime/container.h" bodystart="285" bodyend="285"/>
+      </memberdef>
+      <memberdef kind="function" id="classtvm_1_1runtime_1_1ADT_1af8cf2f61fa9b7737718f15a018d12b84" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>size_t</type>
+        <definition>size_t tvm::runtime::ADT::size</definition>
+        <argsstring>() const </argsstring>
+        <name>size</name>
+        <briefdescription>
+<para>Return the number of fields. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/runtime/container.h" line="290" column="1" bodyfile="include/tvm/runtime/container.h" bodystart="290" bodyend="290"/>
+      </memberdef>
+      <memberdef kind="function" id="classtvm_1_1runtime_1_1ADT_1a5367ea22b4dab8c73d06031cd4c72dec" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>tvm::runtime::ADT::TVM_DEFINE_OBJECT_REF_METHODS</definition>
+        <argsstring>(ADT, ObjectRef, ADTObj)</argsstring>
+        <name>TVM_DEFINE_OBJECT_REF_METHODS</name>
+        <param>
+          <type><ref refid="classtvm_1_1runtime_1_1ADT" kindref="compound">ADT</ref></type>
+        </param>
+        <param>
+          <type><ref refid="classtvm_1_1runtime_1_1ObjectRef" kindref="compound">ObjectRef</ref></type>
+        </param>
+        <param>
+          <type><ref refid="classtvm_1_1runtime_1_1ADTObj" kindref="compound">ADTObj</ref></type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/runtime/container.h" line="304" column="1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="classtvm_1_1runtime_1_1ADT_1a9952c0be3e79a57cf80a3c01fd7bbe87" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename...</type>
+            <declname>Args</declname>
+            <defname>Args</defname>
+          </param>
+        </templateparamlist>
+        <type><ref refid="classtvm_1_1runtime_1_1ADT" kindref="compound">ADT</ref></type>
+        <definition>static ADT tvm::runtime::ADT::Tuple</definition>
+        <argsstring>(Args &amp;&amp;...args)</argsstring>
+        <name>Tuple</name>
+        <param>
+          <type>Args &amp;&amp;...</type>
+          <declname>args</declname>
+        </param>
+        <briefdescription>
+<para>Construct a tuple object. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="templateparam"><parameteritem>
+<parameternamelist>
+<parametername>Args</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><ref refid="classtvm_1_1Type" kindref="compound">Type</ref> params of tuple feilds. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>args</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Tuple fields. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para><ref refid="classtvm_1_1runtime_1_1ADT" kindref="compound">ADT</ref> The tuple object reference. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/runtime/container.h" line="300" column="1" bodyfile="include/tvm/runtime/container.h" bodystart="300" bodyend="302"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>reference to algebraic data type objects. </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="3840">
+        <label>tvm::runtime::ADT</label>
+        <link refid="classtvm_1_1runtime_1_1ADT"/>
+        <childnode refid="3841" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="3841">
+        <label>tvm::runtime::ObjectRef</label>
+        <link refid="classtvm_1_1runtime_1_1ObjectRef"/>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="3842">
+        <label>tvm::runtime::ADT</label>
+        <link refid="classtvm_1_1runtime_1_1ADT"/>
+        <childnode refid="3843" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="3843">
+        <label>tvm::runtime::ObjectRef</label>
+        <link refid="classtvm_1_1runtime_1_1ObjectRef"/>
+        <childnode refid="3844" relation="usage">
+          <edgelabel>#data_</edgelabel>
+        </childnode>
+      </node>
+      <node id="3844">
+        <label>tvm::runtime::ObjectPtr&lt; tvm::runtime::Object &gt;</label>
+        <link refid="classtvm_1_1runtime_1_1ObjectPtr"/>
+      </node>
+    </collaborationgraph>
+    <location file="include/tvm/runtime/container.h" line="236" column="1" bodyfile="include/tvm/runtime/container.h" bodystart="236" bodyend="305"/>
+    <listofallmembers>
+      <member refid="classtvm_1_1runtime_1_1ADT_1a204397cb319fdb83a72b1d9112a09caa" prot="public" virt="non-virtual"><scope>tvm::runtime::ADT</scope><name>ADT</name></member>
+      <member refid="classtvm_1_1runtime_1_1ADT_1aea0665ed087095ed39354064e5071d4f" prot="public" virt="non-virtual"><scope>tvm::runtime::ADT</scope><name>ADT</name></member>
+      <member refid="classtvm_1_1runtime_1_1ADT_1a9ebe228980db0256d72fc01ba5c7ae89" prot="public" virt="non-virtual"><scope>tvm::runtime::ADT</scope><name>ADT</name></member>
+      <member refid="classtvm_1_1runtime_1_1ObjectRef_1ab51c99a3607ca95884d9efd978998ce8" prot="public" virt="non-virtual"><scope>tvm::runtime::ADT</scope><name>as</name></member>
+      <member refid="classtvm_1_1runtime_1_1ObjectRef_1aa5c355fbb7d2f7402ee360dba8a52cdd" prot="public" virt="non-virtual"><scope>tvm::runtime::ADT</scope><name>ContainerType</name></member>
+      <member refid="classtvm_1_1runtime_1_1ObjectRef_1ac261cdb80487fb29ac42b28678f8cbef" prot="protected" virt="non-virtual"><scope>tvm::runtime::ADT</scope><name>data_</name></member>
+      <member refid="classtvm_1_1runtime_1_1ObjectRef_1a79d0ae0a887ed5cbfa67de7d43f0ef3a" prot="public" virt="non-virtual"><scope>tvm::runtime::ADT</scope><name>defined</name></member>
+      <member refid="classtvm_1_1runtime_1_1ObjectRef_1acd04bb22a6861e9952c344ee8547411f" prot="protected" virt="non-virtual"><scope>tvm::runtime::ADT</scope><name>DowncastNoCheck</name></member>
+      <member refid="classtvm_1_1runtime_1_1ObjectRef_1a22e5bb9d64dbc773bb9263b70882239e" prot="protected" virt="non-virtual"><scope>tvm::runtime::ADT</scope><name>FFIClearAfterMove</name></member>
+      <member refid="classtvm_1_1runtime_1_1ObjectRef_1a11ad7a277c175ee33e1551bbb77a8694" prot="public" virt="non-virtual"><scope>tvm::runtime::ADT</scope><name>get</name></member>
+      <member refid="classtvm_1_1runtime_1_1ObjectRef_1aa4604d96f4a77cc10cc1e0419758fb2c" prot="protected" virt="non-virtual"><scope>tvm::runtime::ADT</scope><name>get_mutable</name></member>
+      <member refid="classtvm_1_1runtime_1_1ObjectRef_1aed593996e4076632450de8fde776707c" prot="protected" virt="non-virtual"><scope>tvm::runtime::ADT</scope><name>GetDataPtr</name></member>
+      <member refid="classtvm_1_1runtime_1_1ObjectRef_1aa07c1f6d66a438ea950637d13ed09471" prot="public" virt="non-virtual"><scope>tvm::runtime::ADT</scope><name>ObjectRef</name></member>
+      <member refid="classtvm_1_1runtime_1_1ObjectRef_1a6a7dd7404edf1c26f8dbd9bd92d03a02" prot="public" virt="non-virtual"><scope>tvm::runtime::ADT</scope><name>ObjectRef</name></member>
+      <member refid="classtvm_1_1runtime_1_1ObjectRef_1a2ae377cc59f98b42339d76bded1c1711" prot="public" virt="non-virtual"><scope>tvm::runtime::ADT</scope><name>operator!=</name></member>
+      <member refid="classtvm_1_1runtime_1_1ObjectRef_1ab9b1ac131656be45db88e69c04bb16af" prot="public" virt="non-virtual"><scope>tvm::runtime::ADT</scope><name>operator-&gt;</name></member>
+      <member refid="classtvm_1_1runtime_1_1ObjectRef_1a17626209947c4a2f302422be451661c5" prot="public" virt="non-virtual"><scope>tvm::runtime::ADT</scope><name>operator&lt;</name></member>
+      <member refid="classtvm_1_1runtime_1_1ObjectRef_1ac8c2b78649a428e35e279d085d509e1b" prot="public" virt="non-virtual"><scope>tvm::runtime::ADT</scope><name>operator==</name></member>
+      <member refid="classtvm_1_1runtime_1_1ADT_1a6a1dba101b18cffbd307f7c0f92a39b2" prot="public" virt="non-virtual"><scope>tvm::runtime::ADT</scope><name>operator[]</name></member>
+      <member refid="classtvm_1_1runtime_1_1ObjectRef_1a62014c9eba5cae2ab5a84963725d6a65" prot="public" virt="non-virtual"><scope>tvm::runtime::ADT</scope><name>same_as</name></member>
+      <member refid="classtvm_1_1runtime_1_1ADT_1af8cf2f61fa9b7737718f15a018d12b84" prot="public" virt="non-virtual"><scope>tvm::runtime::ADT</scope><name>size</name></member>
+      <member refid="classtvm_1_1runtime_1_1ADT_1a1a631df56a143132d60076c8038a9a97" prot="public" virt="non-virtual"><scope>tvm::runtime::ADT</scope><name>tag</name></member>
+      <member refid="classtvm_1_1runtime_1_1ADT_1a9952c0be3e79a57cf80a3c01fd7bbe87" prot="public" virt="non-virtual"><scope>tvm::runtime::ADT</scope><name>Tuple</name></member>
+      <member refid="classtvm_1_1runtime_1_1ADT_1a5367ea22b4dab8c73d06031cd4c72dec" prot="public" virt="non-virtual"><scope>tvm::runtime::ADT</scope><name>TVM_DEFINE_OBJECT_REF_METHODS</name></member>
+      <member refid="classtvm_1_1runtime_1_1ObjectRef_1a4142990fd1959abc95aa0cccca4f6cda" prot="public" virt="non-virtual"><scope>tvm::runtime::ADT</scope><name>unique</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

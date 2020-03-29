@@ -1,0 +1,44 @@
+\hypertarget{cublas_8h}{}\section{topi/include/topi/contrib/cublas.h File Reference}
+\label{cublas_8h}\index{topi/include/topi/contrib/cublas.\+h@{topi/include/topi/contrib/cublas.\+h}}
+
+
+External function interface to cu\+B\+L\+AS libraries.  
+
+
+{\ttfamily \#include $<$tvm/te/operation.\+h$>$}\\*
+{\ttfamily \#include $<$topi/detail/extern.\+h$>$}\\*
+Include dependency graph for cublas.\+h\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{cublas_8h__incl}
+\end{center}
+\end{figure}
+This graph shows which files directly or indirectly include this file\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=208pt]{cublas_8h__dep__incl}
+\end{center}
+\end{figure}
+\subsection*{Namespaces}
+\begin{DoxyCompactItemize}
+\item 
+ \hyperlink{namespacetopi}{topi}
+\item 
+ \hyperlink{namespacetopi_1_1contrib}{topi\+::contrib}
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classtvm_1_1te_1_1Tensor}{Tensor} \hyperlink{namespacetopi_1_1contrib_ac8dd65fd0460aa0e6045940fd22849df}{topi\+::contrib\+::cublas\+\_\+matmul} (const \hyperlink{classtvm_1_1te_1_1Tensor}{Tensor} \&lhs, const \hyperlink{classtvm_1_1te_1_1Tensor}{Tensor} \&rhs, bool transa, bool transb)
+\begin{DoxyCompactList}\small\item\em Create an op that multiplies lhs and rhs with cu\+B\+L\+AS. \end{DoxyCompactList}\item 
+\hyperlink{classtvm_1_1te_1_1Tensor}{Tensor} \hyperlink{namespacetopi_1_1contrib_ae4f4c081cd2c1efa544752edcad0a3a1}{topi\+::contrib\+::cublas\+\_\+batch\+\_\+matmul} (const \hyperlink{classtvm_1_1te_1_1Tensor}{Tensor} \&lhs, const \hyperlink{classtvm_1_1te_1_1Tensor}{Tensor} \&rhs, bool transa, bool transb)
+\begin{DoxyCompactList}\small\item\em Create an op that multiplies batch matrices lhs and rhs with cu\+B\+L\+AS. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+External function interface to cu\+B\+L\+AS libraries. 
+

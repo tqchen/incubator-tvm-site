@@ -1,0 +1,55 @@
+\hypertarget{data__layout_8h}{}\section{include/tvm/tir/data\+\_\+layout.h File Reference}
+\label{data__layout_8h}\index{include/tvm/tir/data\+\_\+layout.\+h@{include/tvm/tir/data\+\_\+layout.\+h}}
+
+
+Layout expression to describe the data organization of a tensor. And Bijective\+Layout to mapping two data layouts between each other.  
+
+
+{\ttfamily \#include $<$tvm/tir/expr.\+h$>$}\\*
+{\ttfamily \#include $<$tvm/tir/op.\+h$>$}\\*
+{\ttfamily \#include $<$string$>$}\\*
+{\ttfamily \#include $<$sstream$>$}\\*
+{\ttfamily \#include $<$vector$>$}\\*
+{\ttfamily \#include $<$utility$>$}\\*
+{\ttfamily \#include $<$algorithm$>$}\\*
+Include dependency graph for data\+\_\+layout.\+h\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{data__layout_8h__incl}
+\end{center}
+\end{figure}
+This graph shows which files directly or indirectly include this file\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{data__layout_8h__dep__incl}
+\end{center}
+\end{figure}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \hyperlink{classtvm_1_1tir_1_1LayoutAxis}{tvm\+::tir\+::\+Layout\+Axis}
+\item 
+class \hyperlink{classtvm_1_1tir_1_1LayoutNode}{tvm\+::tir\+::\+Layout\+Node}
+\item 
+class \hyperlink{classtvm_1_1tir_1_1Layout}{tvm\+::tir\+::\+Layout}
+\begin{DoxyCompactList}\small\item\em \hyperlink{classtvm_1_1tir_1_1Layout}{Layout} is to describe how data is organized within an N-\/dimention tensor. It is composed of upper cases, lower cases and numbers, where upper case indicates a primal axis and the corresponding lower case with factor size indicates the subordinate axis. For example, N\+C\+H\+W16c can describe a 5-\/D tensor of \mbox{[}batch\+\_\+size, channel, height, width, channel\+\_\+block\mbox{]}. Here subordinate axis channel\+\_\+block=16 is the factor size of the primal axis C (channel). \hyperlink{classtvm_1_1tir_1_1Layout}{Layout} for scalar is defined, while both its name and axes have size 0. \end{DoxyCompactList}\item 
+class \hyperlink{classtvm_1_1tir_1_1BijectiveLayoutNode}{tvm\+::tir\+::\+Bijective\+Layout\+Node}
+\item 
+class \hyperlink{classtvm_1_1tir_1_1BijectiveLayout}{tvm\+::tir\+::\+Bijective\+Layout}
+\begin{DoxyCompactList}\small\item\em Bijective function mapping for data layout transformation. Given two \hyperlink{classtvm_1_1tir_1_1Layout}{Layout}, \hyperlink{classtvm_1_1tir_1_1BijectiveLayout}{Bijective\+Layout} build and store the mapping rules, provides A\+PI to transform N-\/dimention tensor from the source indices (i0, i1, …, im) to the destination indices (j0, j1, … jm). \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Namespaces}
+\begin{DoxyCompactItemize}
+\item 
+ \hyperlink{namespacetvm}{tvm}
+\item 
+ \hyperlink{namespacetvm_1_1tir}{tvm\+::tir}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Layout expression to describe the data organization of a tensor. And Bijective\+Layout to mapping two data layouts between each other. 
+

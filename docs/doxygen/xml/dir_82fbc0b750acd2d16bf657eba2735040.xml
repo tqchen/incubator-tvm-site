@@ -1,0 +1,13 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="dir_82fbc0b750acd2d16bf657eba2735040" kind="dir">
+    <compoundname>topi/include/topi/contrib</compoundname>
+    <innerfile refid="cublas_8h">cublas.h</innerfile>
+    <innerfile refid="rocblas_8h">rocblas.h</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="topi/include/topi/contrib/"/>
+  </compounddef>
+</doxygen>

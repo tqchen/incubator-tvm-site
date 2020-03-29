@@ -1,0 +1,74 @@
+\hypertarget{classtvm_1_1StructuralHash}{}\section{tvm\+:\+:Structural\+Hash Class Reference}
+\label{classtvm_1_1StructuralHash}\index{tvm\+::\+Structural\+Hash@{tvm\+::\+Structural\+Hash}}
+
+
+Content-\/aware structural hasing.  
+
+
+
+
+{\ttfamily \#include $<$structural\+\_\+hash.\+h$>$}
+
+
+
+Inheritance diagram for tvm\+:\+:Structural\+Hash\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=196pt]{classtvm_1_1StructuralHash__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for tvm\+:\+:Structural\+Hash\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=196pt]{classtvm_1_1StructuralHash__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+size\+\_\+t \hyperlink{classtvm_1_1StructuralHash_a9854ccfc7f91fc98094accac82edaf26}{operator()} (const Object\+Ref \&key) const 
+\begin{DoxyCompactList}\small\item\em Compute structural hashing value for an object. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Content-\/aware structural hasing. 
+
+The structural hash value is recursively defined in the D\+AG of I\+R\+Nodes. There are two kinds of nodes\+:
+
+
+\begin{DoxyItemize}
+\item Normal node\+: the hash value is defined by its content and type only.
+\item Graph node\+: each graph node will be assigned a unique index ordered by the first occurence during the visit. The hash value of a graph node is combined from the hash values of its contents and the index. 
+\end{DoxyItemize}
+
+\subsection{Member Function Documentation}
+\index{tvm\+::\+Structural\+Hash@{tvm\+::\+Structural\+Hash}!operator()@{operator()}}
+\index{operator()@{operator()}!tvm\+::\+Structural\+Hash@{tvm\+::\+Structural\+Hash}}
+\subsubsection[{\texorpdfstring{operator()(const Object\+Ref \&key) const }{operator()(const ObjectRef &key) const }}]{\setlength{\rightskip}{0pt plus 5cm}size\+\_\+t tvm\+::\+Structural\+Hash\+::operator() (
+\begin{DoxyParamCaption}
+\item[{const Object\+Ref \&}]{key}
+\end{DoxyParamCaption}
+) const}\hypertarget{classtvm_1_1StructuralHash_a9854ccfc7f91fc98094accac82edaf26}{}\label{classtvm_1_1StructuralHash_a9854ccfc7f91fc98094accac82edaf26}
+
+
+Compute structural hashing value for an object. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em key} & The left operand. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The hash value. 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+include/tvm/node/\hyperlink{structural__hash_8h}{structural\+\_\+hash.\+h}\end{DoxyCompactItemize}

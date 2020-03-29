@@ -1,0 +1,399 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="classtvm_1_1relay_1_1ExprVisitor" kind="class" language="C++" prot="public">
+    <compoundname>tvm::relay::ExprVisitor</compoundname>
+    <basecompoundref refid="classtvm_1_1relay_1_1ExprFunctor" prot="public" virt="non-virtual">tvm::relay::ExprFunctor&lt; void(const Expr &amp;n)&gt;</basecompoundref>
+    <includes refid="relay_2expr__functor_8h" local="no">expr_functor.h</includes>
+      <sectiondef kind="protected-attrib">
+      <memberdef kind="variable" id="classtvm_1_1relay_1_1ExprVisitor_1a27e6d787cccbf7ae04fe53b7b8a62d60" prot="protected" static="no" mutable="no">
+        <type>std::unordered_map&lt; const Object *, size_t &gt;</type>
+        <definition>std::unordered_map&lt;const Object*, size_t&gt; tvm::relay::ExprVisitor::visit_counter_</definition>
+        <argsstring></argsstring>
+        <name>visit_counter_</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/relay/expr_functor.h" line="182" column="1" bodyfile="include/tvm/relay/expr_functor.h" bodystart="182" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classtvm_1_1relay_1_1ExprVisitor_1a4f3e1694dd33f3cbe1ae8d933de6f181" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void tvm::relay::ExprVisitor::VisitExpr</definition>
+        <argsstring>(const Expr &amp;expr) override</argsstring>
+        <name>VisitExpr</name>
+        <param>
+          <type>const <ref refid="namespacetvm_1_1relay_1a5b84e3790f89bb3fad5c7911eeb99531" kindref="member">Expr</ref> &amp;</type>
+          <declname>expr</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/relay/expr_functor.h" line="160" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classtvm_1_1relay_1_1ExprVisitor_1a4e019eac736a8cad9c3effededbf5a15" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void tvm::relay::ExprVisitor::VisitExpr_</definition>
+        <argsstring>(const VarNode *op) override</argsstring>
+        <name>VisitExpr_</name>
+        <param>
+          <type>const <ref refid="classtvm_1_1relay_1_1VarNode" kindref="compound">VarNode</ref> *</type>
+          <declname>op</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/relay/expr_functor.h" line="161" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classtvm_1_1relay_1_1ExprVisitor_1a0b12fa32cf9c1a6d617f03e21dcb429e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void tvm::relay::ExprVisitor::VisitExpr_</definition>
+        <argsstring>(const GlobalVarNode *op) override</argsstring>
+        <name>VisitExpr_</name>
+        <param>
+          <type>const <ref refid="namespacetvm_1_1relay_1afe7144195dbbc914183189444ef6a347" kindref="member">GlobalVarNode</ref> *</type>
+          <declname>op</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/relay/expr_functor.h" line="162" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classtvm_1_1relay_1_1ExprVisitor_1a0b5a349c65dfc3f7271459a7d1f25518" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void tvm::relay::ExprVisitor::VisitExpr_</definition>
+        <argsstring>(const ConstantNode *op) override</argsstring>
+        <name>VisitExpr_</name>
+        <param>
+          <type>const <ref refid="classtvm_1_1relay_1_1ConstantNode" kindref="compound">ConstantNode</ref> *</type>
+          <declname>op</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/relay/expr_functor.h" line="163" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classtvm_1_1relay_1_1ExprVisitor_1a32944ecc47f7d8cfaf34b3044a934f99" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void tvm::relay::ExprVisitor::VisitExpr_</definition>
+        <argsstring>(const TupleNode *op) override</argsstring>
+        <name>VisitExpr_</name>
+        <param>
+          <type>const <ref refid="classtvm_1_1relay_1_1TupleNode" kindref="compound">TupleNode</ref> *</type>
+          <declname>op</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/relay/expr_functor.h" line="164" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classtvm_1_1relay_1_1ExprVisitor_1a0e93c7cb8e57dfcf332023f17779086b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void tvm::relay::ExprVisitor::VisitExpr_</definition>
+        <argsstring>(const FunctionNode *op) override</argsstring>
+        <name>VisitExpr_</name>
+        <param>
+          <type>const <ref refid="classtvm_1_1relay_1_1FunctionNode" kindref="compound">FunctionNode</ref> *</type>
+          <declname>op</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/relay/expr_functor.h" line="165" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classtvm_1_1relay_1_1ExprVisitor_1a823064b9583097958d53dd41a9d15be8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void tvm::relay::ExprVisitor::VisitExpr_</definition>
+        <argsstring>(const CallNode *op) override</argsstring>
+        <name>VisitExpr_</name>
+        <param>
+          <type>const <ref refid="classtvm_1_1relay_1_1CallNode" kindref="compound">CallNode</ref> *</type>
+          <declname>op</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/relay/expr_functor.h" line="166" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classtvm_1_1relay_1_1ExprVisitor_1af31cf8bd7db777ac3a521f5ea12ddd00" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void tvm::relay::ExprVisitor::VisitExpr_</definition>
+        <argsstring>(const LetNode *op) override</argsstring>
+        <name>VisitExpr_</name>
+        <param>
+          <type>const <ref refid="classtvm_1_1relay_1_1LetNode" kindref="compound">LetNode</ref> *</type>
+          <declname>op</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/relay/expr_functor.h" line="167" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classtvm_1_1relay_1_1ExprVisitor_1a2bcd0d66b18c47332d4b95b2122e55b3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void tvm::relay::ExprVisitor::VisitExpr_</definition>
+        <argsstring>(const IfNode *op) override</argsstring>
+        <name>VisitExpr_</name>
+        <param>
+          <type>const <ref refid="classtvm_1_1relay_1_1IfNode" kindref="compound">IfNode</ref> *</type>
+          <declname>op</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/relay/expr_functor.h" line="168" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classtvm_1_1relay_1_1ExprVisitor_1ad906cf488b87cc034c13486f32223386" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void tvm::relay::ExprVisitor::VisitExpr_</definition>
+        <argsstring>(const OpNode *op) override</argsstring>
+        <name>VisitExpr_</name>
+        <param>
+          <type>const <ref refid="namespacetvm_1_1relay_1ac9d4f2cf78a48659817a88d890e1d142" kindref="member">OpNode</ref> *</type>
+          <declname>op</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/relay/expr_functor.h" line="169" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classtvm_1_1relay_1_1ExprVisitor_1a72b3aeee22ea51f39c36d028d109cddc" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void tvm::relay::ExprVisitor::VisitExpr_</definition>
+        <argsstring>(const TupleGetItemNode *op) override</argsstring>
+        <name>VisitExpr_</name>
+        <param>
+          <type>const <ref refid="classtvm_1_1relay_1_1TupleGetItemNode" kindref="compound">TupleGetItemNode</ref> *</type>
+          <declname>op</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/relay/expr_functor.h" line="170" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classtvm_1_1relay_1_1ExprVisitor_1a52cec47d5e4792dd1cf0f5635ab14fa8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void tvm::relay::ExprVisitor::VisitExpr_</definition>
+        <argsstring>(const RefCreateNode *op) override</argsstring>
+        <name>VisitExpr_</name>
+        <param>
+          <type>const <ref refid="classtvm_1_1relay_1_1RefCreateNode" kindref="compound">RefCreateNode</ref> *</type>
+          <declname>op</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/relay/expr_functor.h" line="171" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classtvm_1_1relay_1_1ExprVisitor_1a8b1ef43d965026767385fb3ee5791928" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void tvm::relay::ExprVisitor::VisitExpr_</definition>
+        <argsstring>(const RefReadNode *op) override</argsstring>
+        <name>VisitExpr_</name>
+        <param>
+          <type>const <ref refid="classtvm_1_1relay_1_1RefReadNode" kindref="compound">RefReadNode</ref> *</type>
+          <declname>op</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/relay/expr_functor.h" line="172" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classtvm_1_1relay_1_1ExprVisitor_1adeee39855d750554b0e29fdf060a2373" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void tvm::relay::ExprVisitor::VisitExpr_</definition>
+        <argsstring>(const RefWriteNode *op) override</argsstring>
+        <name>VisitExpr_</name>
+        <param>
+          <type>const <ref refid="classtvm_1_1relay_1_1RefWriteNode" kindref="compound">RefWriteNode</ref> *</type>
+          <declname>op</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/relay/expr_functor.h" line="173" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classtvm_1_1relay_1_1ExprVisitor_1ab35bcfc19e95fbf444317fae7268f2fd" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void tvm::relay::ExprVisitor::VisitExpr_</definition>
+        <argsstring>(const ConstructorNode *op) override</argsstring>
+        <name>VisitExpr_</name>
+        <param>
+          <type>const <ref refid="namespacetvm_1_1relay_1a6b95f70a9b44cc1c96593201594d1345" kindref="member">ConstructorNode</ref> *</type>
+          <declname>op</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/relay/expr_functor.h" line="174" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classtvm_1_1relay_1_1ExprVisitor_1ac0d16449bf87222c9737589d445dd081" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void tvm::relay::ExprVisitor::VisitExpr_</definition>
+        <argsstring>(const MatchNode *op) override</argsstring>
+        <name>VisitExpr_</name>
+        <param>
+          <type>const <ref refid="classtvm_1_1relay_1_1MatchNode" kindref="compound">MatchNode</ref> *</type>
+          <declname>op</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/relay/expr_functor.h" line="175" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classtvm_1_1relay_1_1ExprVisitor_1aedb15f15752e61bce9e289ac6f2fdace" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>virtual void tvm::relay::ExprVisitor::VisitType</definition>
+        <argsstring>(const Type &amp;t)</argsstring>
+        <name>VisitType</name>
+        <param>
+          <type>const <ref refid="namespacetvm_1_1relay_1a661d95f170bca230773914caeef3fe52" kindref="member">Type</ref> &amp;</type>
+          <declname>t</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/relay/expr_functor.h" line="176" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classtvm_1_1relay_1_1ExprVisitor_1ab109b327586181cecf76f7b5c562e91b" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>virtual void tvm::relay::ExprVisitor::VisitClause</definition>
+        <argsstring>(const Clause &amp;c)</argsstring>
+        <name>VisitClause</name>
+        <param>
+          <type>const <ref refid="classtvm_1_1relay_1_1Clause" kindref="compound">Clause</ref> &amp;</type>
+          <declname>c</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/relay/expr_functor.h" line="177" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classtvm_1_1relay_1_1ExprVisitor_1a8fda55f01b88a56b25770a66ea988152" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>virtual void tvm::relay::ExprVisitor::VisitPattern</definition>
+        <argsstring>(const Pattern &amp;c)</argsstring>
+        <name>VisitPattern</name>
+        <param>
+          <type>const <ref refid="classtvm_1_1relay_1_1Pattern" kindref="compound">Pattern</ref> &amp;</type>
+          <declname>c</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/relay/expr_functor.h" line="178" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>A simple visitor wrapper around <ref refid="classtvm_1_1relay_1_1ExprFunctor" kindref="compound">ExprFunctor</ref>. Recursively visit the content. </para>    </briefdescription>
+    <detaileddescription>
+<para><ref refid="classtvm_1_1relay_1_1ExprVisitor" kindref="compound">ExprVisitor</ref> treats Expr as dataflow graph, and only visit each Expr node once. </para>    </detaileddescription>
+    <inheritancegraph>
+      <node id="5003">
+        <label>tvm::relay::ExprVisitor</label>
+        <link refid="classtvm_1_1relay_1_1ExprVisitor"/>
+        <childnode refid="5004" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="5004">
+        <label>tvm::relay::ExprFunctor&lt; void(const Expr &amp;n)&gt;</label>
+        <link refid="classtvm_1_1relay_1_1ExprFunctor"/>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="5005">
+        <label>tvm::relay::ExprVisitor</label>
+        <link refid="classtvm_1_1relay_1_1ExprVisitor"/>
+        <childnode refid="5006" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="5006">
+        <label>tvm::relay::ExprFunctor&lt; void(const Expr &amp;n)&gt;</label>
+        <link refid="classtvm_1_1relay_1_1ExprFunctor"/>
+      </node>
+    </collaborationgraph>
+    <location file="include/tvm/relay/expr_functor.h" line="158" column="1" bodyfile="include/tvm/relay/expr_functor.h" bodystart="157" bodyend="183"/>
+    <listofallmembers>
+      <member refid="classtvm_1_1relay_1_1ExprVisitor_1a27e6d787cccbf7ae04fe53b7b8a62d60" prot="protected" virt="non-virtual"><scope>tvm::relay::ExprVisitor</scope><name>visit_counter_</name></member>
+      <member refid="classtvm_1_1relay_1_1ExprVisitor_1ab109b327586181cecf76f7b5c562e91b" prot="public" virt="virtual"><scope>tvm::relay::ExprVisitor</scope><name>VisitClause</name></member>
+      <member refid="classtvm_1_1relay_1_1ExprVisitor_1a4f3e1694dd33f3cbe1ae8d933de6f181" prot="public" virt="non-virtual"><scope>tvm::relay::ExprVisitor</scope><name>VisitExpr</name></member>
+      <member refid="classtvm_1_1relay_1_1ExprVisitor_1a4e019eac736a8cad9c3effededbf5a15" prot="public" virt="non-virtual"><scope>tvm::relay::ExprVisitor</scope><name>VisitExpr_</name></member>
+      <member refid="classtvm_1_1relay_1_1ExprVisitor_1a0b12fa32cf9c1a6d617f03e21dcb429e" prot="public" virt="non-virtual"><scope>tvm::relay::ExprVisitor</scope><name>VisitExpr_</name></member>
+      <member refid="classtvm_1_1relay_1_1ExprVisitor_1a0b5a349c65dfc3f7271459a7d1f25518" prot="public" virt="non-virtual"><scope>tvm::relay::ExprVisitor</scope><name>VisitExpr_</name></member>
+      <member refid="classtvm_1_1relay_1_1ExprVisitor_1a32944ecc47f7d8cfaf34b3044a934f99" prot="public" virt="non-virtual"><scope>tvm::relay::ExprVisitor</scope><name>VisitExpr_</name></member>
+      <member refid="classtvm_1_1relay_1_1ExprVisitor_1a0e93c7cb8e57dfcf332023f17779086b" prot="public" virt="non-virtual"><scope>tvm::relay::ExprVisitor</scope><name>VisitExpr_</name></member>
+      <member refid="classtvm_1_1relay_1_1ExprVisitor_1a823064b9583097958d53dd41a9d15be8" prot="public" virt="non-virtual"><scope>tvm::relay::ExprVisitor</scope><name>VisitExpr_</name></member>
+      <member refid="classtvm_1_1relay_1_1ExprVisitor_1af31cf8bd7db777ac3a521f5ea12ddd00" prot="public" virt="non-virtual"><scope>tvm::relay::ExprVisitor</scope><name>VisitExpr_</name></member>
+      <member refid="classtvm_1_1relay_1_1ExprVisitor_1a2bcd0d66b18c47332d4b95b2122e55b3" prot="public" virt="non-virtual"><scope>tvm::relay::ExprVisitor</scope><name>VisitExpr_</name></member>
+      <member refid="classtvm_1_1relay_1_1ExprVisitor_1ad906cf488b87cc034c13486f32223386" prot="public" virt="non-virtual"><scope>tvm::relay::ExprVisitor</scope><name>VisitExpr_</name></member>
+      <member refid="classtvm_1_1relay_1_1ExprVisitor_1a72b3aeee22ea51f39c36d028d109cddc" prot="public" virt="non-virtual"><scope>tvm::relay::ExprVisitor</scope><name>VisitExpr_</name></member>
+      <member refid="classtvm_1_1relay_1_1ExprVisitor_1a52cec47d5e4792dd1cf0f5635ab14fa8" prot="public" virt="non-virtual"><scope>tvm::relay::ExprVisitor</scope><name>VisitExpr_</name></member>
+      <member refid="classtvm_1_1relay_1_1ExprVisitor_1a8b1ef43d965026767385fb3ee5791928" prot="public" virt="non-virtual"><scope>tvm::relay::ExprVisitor</scope><name>VisitExpr_</name></member>
+      <member refid="classtvm_1_1relay_1_1ExprVisitor_1adeee39855d750554b0e29fdf060a2373" prot="public" virt="non-virtual"><scope>tvm::relay::ExprVisitor</scope><name>VisitExpr_</name></member>
+      <member refid="classtvm_1_1relay_1_1ExprVisitor_1ab35bcfc19e95fbf444317fae7268f2fd" prot="public" virt="non-virtual"><scope>tvm::relay::ExprVisitor</scope><name>VisitExpr_</name></member>
+      <member refid="classtvm_1_1relay_1_1ExprVisitor_1ac0d16449bf87222c9737589d445dd081" prot="public" virt="non-virtual"><scope>tvm::relay::ExprVisitor</scope><name>VisitExpr_</name></member>
+      <member refid="classtvm_1_1relay_1_1ExprVisitor_1a8fda55f01b88a56b25770a66ea988152" prot="public" virt="virtual"><scope>tvm::relay::ExprVisitor</scope><name>VisitPattern</name></member>
+      <member refid="classtvm_1_1relay_1_1ExprVisitor_1aedb15f15752e61bce9e289ac6f2fdace" prot="public" virt="virtual"><scope>tvm::relay::ExprVisitor</scope><name>VisitType</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,193 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="classtvm_1_1BuildConfig" kind="class" language="C++" prot="public">
+    <compoundname>tvm::BuildConfig</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">ObjectRef</basecompoundref>
+    <includes refid="target_8h" local="no">target.h</includes>
+      <sectiondef kind="public-type">
+      <memberdef kind="typedef" id="classtvm_1_1BuildConfig_1a19731750cf38b14cfe9359d17b018010" prot="public" static="no">
+        <type><ref refid="classtvm_1_1BuildConfigNode" kindref="compound">BuildConfigNode</ref></type>
+        <definition>using tvm::BuildConfig::ContainerType =  BuildConfigNode</definition>
+        <argsstring></argsstring>
+        <name>ContainerType</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/target/target.h" line="289" column="1" bodyfile="include/tvm/target/target.h" bodystart="289" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="friend">
+      <memberdef kind="friend" id="classtvm_1_1BuildConfig_1abef0c5d8f6549fa44cbedd7d0ceb72e5" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>friend class</type>
+        <definition>friend class With&lt; BuildConfig &gt;</definition>
+        <argsstring></argsstring>
+        <name>With&lt; BuildConfig &gt;</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/target/target.h" line="287" column="1" bodyfile="include/tvm/target/target.h" bodystart="290" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classtvm_1_1BuildConfig_1aebc73ce62d891917e153b34649f2c01a" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>tvm::BuildConfig::BuildConfig</definition>
+        <argsstring>()</argsstring>
+        <name>BuildConfig</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/target/target.h" line="269" column="1" bodyfile="include/tvm/target/target.h" bodystart="269" bodyend="269"/>
+      </memberdef>
+      <memberdef kind="function" id="classtvm_1_1BuildConfig_1a574080dbfa73e8ca69b0ad9ff09cd1ec" prot="public" static="no" const="no" explicit="yes" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>tvm::BuildConfig::BuildConfig</definition>
+        <argsstring>(ObjectPtr&lt; Object &gt; n)</argsstring>
+        <name>BuildConfig</name>
+        <param>
+          <type>ObjectPtr&lt; Object &gt;</type>
+          <declname>n</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/target/target.h" line="270" column="1" bodyfile="include/tvm/target/target.h" bodystart="270" bodyend="270"/>
+      </memberdef>
+      <memberdef kind="function" id="classtvm_1_1BuildConfig_1a6a644909a873a746d5501561e97d01a7" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>const <ref refid="classtvm_1_1BuildConfigNode" kindref="compound">BuildConfigNode</ref> *</type>
+        <definition>const BuildConfigNode* tvm::BuildConfig::operator-&gt;</definition>
+        <argsstring>() const </argsstring>
+        <name>operator-&gt;</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/target/target.h" line="271" column="1" bodyfile="include/tvm/target/target.h" bodystart="271" bodyend="273"/>
+      </memberdef>
+      <memberdef kind="function" id="classtvm_1_1BuildConfig_1ada70f5f8be779e6e3b306fb6282673b0" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classtvm_1_1BuildConfigNode" kindref="compound">BuildConfigNode</ref> *</type>
+        <definition>BuildConfigNode* tvm::BuildConfig::operator-&gt;</definition>
+        <argsstring>()</argsstring>
+        <name>operator-&gt;</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/target/target.h" line="274" column="1" bodyfile="include/tvm/target/target.h" bodystart="274" bodyend="276"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="classtvm_1_1BuildConfig_1a21604a1a651be45187c101936b9b42f0" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classtvm_1_1BuildConfig" kindref="compound">BuildConfig</ref></type>
+        <definition>static BuildConfig tvm::BuildConfig::Create</definition>
+        <argsstring>()</argsstring>
+        <name>Create</name>
+        <briefdescription>
+<para>Construct a <ref refid="classtvm_1_1BuildConfig" kindref="compound">BuildConfig</ref> containing a empty build config node. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>The new <ref refid="classtvm_1_1BuildConfig" kindref="compound">BuildConfig</ref> </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/target/target.h" line="281" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classtvm_1_1BuildConfig_1acf91cba15c6989af01133a85711a794f" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classtvm_1_1BuildConfig" kindref="compound">BuildConfig</ref></type>
+        <definition>static BuildConfig tvm::BuildConfig::Current</definition>
+        <argsstring>()</argsstring>
+        <name>Current</name>
+        <briefdescription>
+<para>Get the current <ref refid="classtvm_1_1BuildConfig" kindref="compound">BuildConfig</ref> context from thread local storage, or a default configuration if a <ref refid="classtvm_1_1BuildConfig" kindref="compound">BuildConfig</ref> scope has not been entered. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>The configuration that is the current context. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/target/target.h" line="287" column="1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="classtvm_1_1BuildConfig_1a7075efb9f2d9695494057daf36067b6b" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void tvm::BuildConfig::EnterWithScope</definition>
+        <argsstring>()</argsstring>
+        <name>EnterWithScope</name>
+        <briefdescription>
+<para>Push a new <ref refid="classtvm_1_1BuildConfig" kindref="compound">BuildConfig</ref> context onto the thread local stack. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/target/target.h" line="298" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classtvm_1_1BuildConfig_1a2a684e0434e41ecfe3dc2ef98ab695e0" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void tvm::BuildConfig::ExitWithScope</definition>
+        <argsstring>()</argsstring>
+        <name>ExitWithScope</name>
+        <briefdescription>
+<para>Pop a build config off the thread local context stack, restoring the previous configuration as the current context. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/target/target.h" line="304" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Build configuration for compilations. </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="4484">
+        <label>ObjectRef</label>
+      </node>
+      <node id="4483">
+        <label>tvm::BuildConfig</label>
+        <link refid="classtvm_1_1BuildConfig"/>
+        <childnode refid="4484" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="4486">
+        <label>ObjectRef</label>
+      </node>
+      <node id="4485">
+        <label>tvm::BuildConfig</label>
+        <link refid="classtvm_1_1BuildConfig"/>
+        <childnode refid="4486" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="include/tvm/target/target.h" line="267" column="1" bodyfile="include/tvm/target/target.h" bodystart="267" bodyend="305"/>
+    <listofallmembers>
+      <member refid="classtvm_1_1BuildConfig_1aebc73ce62d891917e153b34649f2c01a" prot="public" virt="non-virtual"><scope>tvm::BuildConfig</scope><name>BuildConfig</name></member>
+      <member refid="classtvm_1_1BuildConfig_1a574080dbfa73e8ca69b0ad9ff09cd1ec" prot="public" virt="non-virtual"><scope>tvm::BuildConfig</scope><name>BuildConfig</name></member>
+      <member refid="classtvm_1_1BuildConfig_1a19731750cf38b14cfe9359d17b018010" prot="public" virt="non-virtual"><scope>tvm::BuildConfig</scope><name>ContainerType</name></member>
+      <member refid="classtvm_1_1BuildConfig_1a21604a1a651be45187c101936b9b42f0" prot="public" virt="non-virtual"><scope>tvm::BuildConfig</scope><name>Create</name></member>
+      <member refid="classtvm_1_1BuildConfig_1acf91cba15c6989af01133a85711a794f" prot="public" virt="non-virtual"><scope>tvm::BuildConfig</scope><name>Current</name></member>
+      <member refid="classtvm_1_1BuildConfig_1a7075efb9f2d9695494057daf36067b6b" prot="private" virt="non-virtual"><scope>tvm::BuildConfig</scope><name>EnterWithScope</name></member>
+      <member refid="classtvm_1_1BuildConfig_1a2a684e0434e41ecfe3dc2ef98ab695e0" prot="private" virt="non-virtual"><scope>tvm::BuildConfig</scope><name>ExitWithScope</name></member>
+      <member refid="classtvm_1_1BuildConfig_1a6a644909a873a746d5501561e97d01a7" prot="public" virt="non-virtual"><scope>tvm::BuildConfig</scope><name>operator-&gt;</name></member>
+      <member refid="classtvm_1_1BuildConfig_1ada70f5f8be779e6e3b306fb6282673b0" prot="public" virt="non-virtual"><scope>tvm::BuildConfig</scope><name>operator-&gt;</name></member>
+      <member refid="classtvm_1_1BuildConfig_1abef0c5d8f6549fa44cbedd7d0ceb72e5" prot="private" virt="non-virtual"><scope>tvm::BuildConfig</scope><name>With&lt; BuildConfig &gt;</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

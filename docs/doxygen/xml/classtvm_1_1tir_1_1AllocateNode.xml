@@ -1,0 +1,390 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="classtvm_1_1tir_1_1AllocateNode" kind="class" language="C++" prot="public">
+    <compoundname>tvm::tir::AllocateNode</compoundname>
+    <basecompoundref refid="classtvm_1_1tir_1_1StmtNode" prot="public" virt="non-virtual">tvm::tir::StmtNode</basecompoundref>
+    <includes refid="stmt_8h" local="no">stmt.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="classtvm_1_1tir_1_1AllocateNode_1acc0828bc8173ba2d46f90ddd2a329ae0" prot="public" static="no" mutable="no">
+        <type><ref refid="classtvm_1_1tir_1_1Var" kindref="compound">Var</ref></type>
+        <definition>Var tvm::tir::AllocateNode::buffer_var</definition>
+        <argsstring></argsstring>
+        <name>buffer_var</name>
+        <briefdescription>
+<para>The buffer variable. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/tir/stmt.h" line="328" column="1" bodyfile="include/tvm/tir/stmt.h" bodystart="328" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classtvm_1_1tir_1_1AllocateNode_1aba885cfd49a10c594320d0e84a9a4c90" prot="public" static="no" mutable="no">
+        <type><ref refid="namespacetvm_1a41918af1a1dc386388639a9d3ad06c5d" kindref="member">DataType</ref></type>
+        <definition>DataType tvm::tir::AllocateNode::dtype</definition>
+        <argsstring></argsstring>
+        <name>dtype</name>
+        <briefdescription>
+<para>The type of the buffer. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/tir/stmt.h" line="330" column="1" bodyfile="include/tvm/tir/stmt.h" bodystart="330" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classtvm_1_1tir_1_1AllocateNode_1a0f6d59cffc5fda07450e0fdab6b66bcb" prot="public" static="no" mutable="no">
+        <type><ref refid="classtvm_1_1Array" kindref="compound">Array</ref>&lt; <ref refid="classtvm_1_1PrimExpr" kindref="compound">PrimExpr</ref> &gt;</type>
+        <definition>Array&lt;PrimExpr&gt; tvm::tir::AllocateNode::extents</definition>
+        <argsstring></argsstring>
+        <name>extents</name>
+        <briefdescription>
+<para>The extents of the buffer. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/tir/stmt.h" line="332" column="1" bodyfile="include/tvm/tir/stmt.h" bodystart="332" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classtvm_1_1tir_1_1AllocateNode_1a6b855ad51d1fcb4e21e9afe657f77ba5" prot="public" static="no" mutable="no">
+        <type><ref refid="classtvm_1_1PrimExpr" kindref="compound">PrimExpr</ref></type>
+        <definition>PrimExpr tvm::tir::AllocateNode::condition</definition>
+        <argsstring></argsstring>
+        <name>condition</name>
+        <briefdescription>
+<para>Only allocate buffer when condition is satisfied. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/tir/stmt.h" line="334" column="1" bodyfile="include/tvm/tir/stmt.h" bodystart="334" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classtvm_1_1tir_1_1AllocateNode_1a797e50c85f4bc016bcf3a3a22737980e" prot="public" static="no" mutable="no">
+        <type><ref refid="classtvm_1_1tir_1_1Stmt" kindref="compound">Stmt</ref></type>
+        <definition>Stmt tvm::tir::AllocateNode::body</definition>
+        <argsstring></argsstring>
+        <name>body</name>
+        <briefdescription>
+<para>The body to be executed. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/tir/stmt.h" line="336" column="1" bodyfile="include/tvm/tir/stmt.h" bodystart="336" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classtvm_1_1tir_1_1AllocateNode_1a52b31635e23aeb6e18e83aa3cc9f8d00" prot="public" static="no" mutable="no">
+        <type><ref refid="classtvm_1_1PrimExpr" kindref="compound">PrimExpr</ref></type>
+        <definition>PrimExpr tvm::tir::AllocateNode::new_expr</definition>
+        <argsstring></argsstring>
+        <name>new_expr</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/tir/stmt.h" line="339" column="1" bodyfile="include/tvm/tir/stmt.h" bodystart="339" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classtvm_1_1tir_1_1AllocateNode_1ac2c84aa70f243d933c0480331910de52" prot="public" static="no" mutable="no">
+        <type>std::string</type>
+        <definition>std::string tvm::tir::AllocateNode::free_function</definition>
+        <argsstring></argsstring>
+        <name>free_function</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/tir/stmt.h" line="340" column="1" bodyfile="include/tvm/tir/stmt.h" bodystart="340" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-attrib">
+      <memberdef kind="variable" id="classtvm_1_1tir_1_1AllocateNode_1abfc8c658a61830c646b7773e213ce004" prot="public" static="yes" mutable="no">
+        <type>constexpr const char *</type>
+        <definition>constexpr const char* tvm::tir::AllocateNode::_type_key</definition>
+        <argsstring></argsstring>
+        <name>_type_key</name>
+        <initializer>= &quot;Allocate&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/tir/stmt.h" line="392" column="1" bodyfile="include/tvm/tir/stmt.h" bodystart="392" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classtvm_1_1tir_1_1AllocateNode_1ab476a2f1664e28a6da78dfa1d7bc2889" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void tvm::tir::AllocateNode::VisitAttrs</definition>
+        <argsstring>(AttrVisitor *v)</argsstring>
+        <name>VisitAttrs</name>
+        <param>
+          <type><ref refid="classtvm_1_1AttrVisitor" kindref="compound">AttrVisitor</ref> *</type>
+          <declname>v</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/tir/stmt.h" line="342" column="1" bodyfile="include/tvm/tir/stmt.h" bodystart="342" bodyend="348"/>
+      </memberdef>
+      <memberdef kind="function" id="classtvm_1_1tir_1_1AllocateNode_1af666f784cf57e890d16a326912955075" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool tvm::tir::AllocateNode::SEqualReduce</definition>
+        <argsstring>(const AllocateNode *other, SEqualReducer equal) const </argsstring>
+        <name>SEqualReduce</name>
+        <param>
+          <type>const <ref refid="classtvm_1_1tir_1_1AllocateNode" kindref="compound">AllocateNode</ref> *</type>
+          <declname>other</declname>
+        </param>
+        <param>
+          <type><ref refid="classtvm_1_1SEqualReducer" kindref="compound">SEqualReducer</ref></type>
+          <declname>equal</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/tir/stmt.h" line="350" column="1" bodyfile="include/tvm/tir/stmt.h" bodystart="350" bodyend="357"/>
+      </memberdef>
+      <memberdef kind="function" id="classtvm_1_1tir_1_1AllocateNode_1aa8b61783e619cc9be13115ca7dfe10b2" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void tvm::tir::AllocateNode::SHashReduce</definition>
+        <argsstring>(SHashReducer hash_reduce) const </argsstring>
+        <name>SHashReduce</name>
+        <param>
+          <type><ref refid="classtvm_1_1SHashReducer" kindref="compound">SHashReducer</ref></type>
+          <declname>hash_reduce</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/tir/stmt.h" line="359" column="1" bodyfile="include/tvm/tir/stmt.h" bodystart="359" bodyend="365"/>
+      </memberdef>
+      <memberdef kind="function" id="classtvm_1_1tir_1_1AllocateNode_1a7e72bb427a2c945d5eb6bec22bd96f82" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>int32_t</type>
+        <definition>int32_t tvm::tir::AllocateNode::constant_allocation_size</definition>
+        <argsstring>() const </argsstring>
+        <name>constant_allocation_size</name>
+        <briefdescription>
+<para>If the buffer size is constant, return the size. Otherwise return 0. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>The result. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/tir/stmt.h" line="380" column="1" bodyfile="include/tvm/tir/stmt.h" bodystart="380" bodyend="382"/>
+      </memberdef>
+      <memberdef kind="function" id="classtvm_1_1tir_1_1AllocateNode_1a8df9749b7cd4db25d5de52572be1ba34" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>tvm::tir::AllocateNode::TVM_DECLARE_FINAL_OBJECT_INFO</definition>
+        <argsstring>(AllocateNode, StmtNode)</argsstring>
+        <name>TVM_DECLARE_FINAL_OBJECT_INFO</name>
+        <param>
+          <type><ref refid="classtvm_1_1tir_1_1AllocateNode" kindref="compound">AllocateNode</ref></type>
+        </param>
+        <param>
+          <type><ref refid="classtvm_1_1tir_1_1StmtNode" kindref="compound">StmtNode</ref></type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/tir/stmt.h" line="393" column="1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="classtvm_1_1tir_1_1AllocateNode_1a0e3c6c493843b0e96cdbeedb7992b695" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classtvm_1_1tir_1_1Stmt" kindref="compound">Stmt</ref></type>
+        <definition>static Stmt tvm::tir::AllocateNode::make</definition>
+        <argsstring>(Var buffer_var, DataType dtype, Array&lt; PrimExpr &gt; extents, PrimExpr condition, Stmt body, PrimExpr new_expr=PrimExpr(), std::string free_function=std::string())</argsstring>
+        <name>make</name>
+        <param>
+          <type><ref refid="classtvm_1_1tir_1_1Var" kindref="compound">Var</ref></type>
+          <declname>buffer_var</declname>
+        </param>
+        <param>
+          <type><ref refid="namespacetvm_1a41918af1a1dc386388639a9d3ad06c5d" kindref="member">DataType</ref></type>
+          <declname>dtype</declname>
+        </param>
+        <param>
+          <type><ref refid="classtvm_1_1Array" kindref="compound">Array</ref>&lt; <ref refid="classtvm_1_1PrimExpr" kindref="compound">PrimExpr</ref> &gt;</type>
+          <declname>extents</declname>
+        </param>
+        <param>
+          <type><ref refid="classtvm_1_1PrimExpr" kindref="compound">PrimExpr</ref></type>
+          <declname>condition</declname>
+        </param>
+        <param>
+          <type><ref refid="classtvm_1_1tir_1_1Stmt" kindref="compound">Stmt</ref></type>
+          <declname>body</declname>
+        </param>
+        <param>
+          <type><ref refid="classtvm_1_1PrimExpr" kindref="compound">PrimExpr</ref></type>
+          <declname>new_expr</declname>
+          <defval><ref refid="classtvm_1_1PrimExpr" kindref="compound">PrimExpr</ref>()</defval>
+        </param>
+        <param>
+          <type>std::string</type>
+          <declname>free_function</declname>
+          <defval>std::string()</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/tir/stmt.h" line="367" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classtvm_1_1tir_1_1AllocateNode_1ac30c52ef2a4d9f728026f4f7188094ce" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int32_t</type>
+        <definition>static int32_t tvm::tir::AllocateNode::constant_allocation_size</definition>
+        <argsstring>(const Array&lt; PrimExpr &gt; &amp;extents)</argsstring>
+        <name>constant_allocation_size</name>
+        <param>
+          <type>const <ref refid="classtvm_1_1Array" kindref="compound">Array</ref>&lt; <ref refid="classtvm_1_1PrimExpr" kindref="compound">PrimExpr</ref> &gt; &amp;</type>
+          <declname>extents</declname>
+        </param>
+        <briefdescription>
+<para>If the buffer size is constant, return the size. Otherwise return 0. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>extents</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The extents of the buffer. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The result. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/tir/stmt.h" line="389" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Allocate a buffer that can be used in body. </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="3851">
+        <label>tvm::tir::AllocateNode</label>
+        <link refid="classtvm_1_1tir_1_1AllocateNode"/>
+        <childnode refid="3852" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="3853">
+        <label>Object</label>
+      </node>
+      <node id="3852">
+        <label>tvm::tir::StmtNode</label>
+        <link refid="classtvm_1_1tir_1_1StmtNode"/>
+        <childnode refid="3853" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="3860">
+        <label>ObjectRef</label>
+      </node>
+      <node id="3854">
+        <label>tvm::tir::AllocateNode</label>
+        <link refid="classtvm_1_1tir_1_1AllocateNode"/>
+        <childnode refid="3855" relation="public-inheritance">
+        </childnode>
+        <childnode refid="3857" relation="usage">
+          <edgelabel>+buffer_var</edgelabel>
+        </childnode>
+        <childnode refid="3861" relation="usage">
+          <edgelabel>+extents</edgelabel>
+        </childnode>
+        <childnode refid="3858" relation="usage">
+          <edgelabel>+new_expr</edgelabel>
+          <edgelabel>+condition</edgelabel>
+        </childnode>
+        <childnode refid="3862" relation="usage">
+          <edgelabel>+body</edgelabel>
+        </childnode>
+        <childnode refid="3863" relation="usage">
+          <edgelabel>+dtype</edgelabel>
+        </childnode>
+      </node>
+      <node id="3856">
+        <label>Object</label>
+      </node>
+      <node id="3858">
+        <label>tvm::PrimExpr</label>
+        <link refid="classtvm_1_1PrimExpr"/>
+        <childnode refid="3859" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="3862">
+        <label>tvm::tir::Stmt</label>
+        <link refid="classtvm_1_1tir_1_1Stmt"/>
+        <childnode refid="3860" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="3863">
+        <label>tvm::runtime::DataType</label>
+        <link refid="classtvm_1_1runtime_1_1DataType"/>
+      </node>
+      <node id="3859">
+        <label>tvm::BaseExpr</label>
+        <link refid="classtvm_1_1BaseExpr"/>
+        <childnode refid="3860" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="3855">
+        <label>tvm::tir::StmtNode</label>
+        <link refid="classtvm_1_1tir_1_1StmtNode"/>
+        <childnode refid="3856" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="3857">
+        <label>tvm::tir::Var</label>
+        <link refid="classtvm_1_1tir_1_1Var"/>
+        <childnode refid="3858" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="3861">
+        <label>tvm::Array&lt; tvm::PrimExpr &gt;</label>
+        <link refid="classtvm_1_1Array"/>
+        <childnode refid="3860" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="include/tvm/tir/stmt.h" line="325" column="1" bodyfile="include/tvm/tir/stmt.h" bodystart="325" bodyend="394"/>
+    <listofallmembers>
+      <member refid="classtvm_1_1tir_1_1StmtNode_1a463ce5a124a6c222706888122bb44865" prot="public" virt="non-virtual"><scope>tvm::tir::AllocateNode</scope><name>_type_has_method_sequal_reduce</name></member>
+      <member refid="classtvm_1_1tir_1_1StmtNode_1ab7e026e32383e67e620719b025e00056" prot="public" virt="non-virtual"><scope>tvm::tir::AllocateNode</scope><name>_type_has_method_shash_reduce</name></member>
+      <member refid="classtvm_1_1tir_1_1AllocateNode_1abfc8c658a61830c646b7773e213ce004" prot="public" virt="non-virtual"><scope>tvm::tir::AllocateNode</scope><name>_type_key</name></member>
+      <member refid="classtvm_1_1tir_1_1AllocateNode_1a797e50c85f4bc016bcf3a3a22737980e" prot="public" virt="non-virtual"><scope>tvm::tir::AllocateNode</scope><name>body</name></member>
+      <member refid="classtvm_1_1tir_1_1AllocateNode_1acc0828bc8173ba2d46f90ddd2a329ae0" prot="public" virt="non-virtual"><scope>tvm::tir::AllocateNode</scope><name>buffer_var</name></member>
+      <member refid="classtvm_1_1tir_1_1AllocateNode_1a6b855ad51d1fcb4e21e9afe657f77ba5" prot="public" virt="non-virtual"><scope>tvm::tir::AllocateNode</scope><name>condition</name></member>
+      <member refid="classtvm_1_1tir_1_1AllocateNode_1a7e72bb427a2c945d5eb6bec22bd96f82" prot="public" virt="non-virtual"><scope>tvm::tir::AllocateNode</scope><name>constant_allocation_size</name></member>
+      <member refid="classtvm_1_1tir_1_1AllocateNode_1ac30c52ef2a4d9f728026f4f7188094ce" prot="public" virt="non-virtual"><scope>tvm::tir::AllocateNode</scope><name>constant_allocation_size</name></member>
+      <member refid="classtvm_1_1tir_1_1AllocateNode_1aba885cfd49a10c594320d0e84a9a4c90" prot="public" virt="non-virtual"><scope>tvm::tir::AllocateNode</scope><name>dtype</name></member>
+      <member refid="classtvm_1_1tir_1_1AllocateNode_1a0f6d59cffc5fda07450e0fdab6b66bcb" prot="public" virt="non-virtual"><scope>tvm::tir::AllocateNode</scope><name>extents</name></member>
+      <member refid="classtvm_1_1tir_1_1AllocateNode_1ac2c84aa70f243d933c0480331910de52" prot="public" virt="non-virtual"><scope>tvm::tir::AllocateNode</scope><name>free_function</name></member>
+      <member refid="classtvm_1_1tir_1_1AllocateNode_1a0e3c6c493843b0e96cdbeedb7992b695" prot="public" virt="non-virtual"><scope>tvm::tir::AllocateNode</scope><name>make</name></member>
+      <member refid="classtvm_1_1tir_1_1AllocateNode_1a52b31635e23aeb6e18e83aa3cc9f8d00" prot="public" virt="non-virtual"><scope>tvm::tir::AllocateNode</scope><name>new_expr</name></member>
+      <member refid="classtvm_1_1tir_1_1AllocateNode_1af666f784cf57e890d16a326912955075" prot="public" virt="non-virtual"><scope>tvm::tir::AllocateNode</scope><name>SEqualReduce</name></member>
+      <member refid="classtvm_1_1tir_1_1AllocateNode_1aa8b61783e619cc9be13115ca7dfe10b2" prot="public" virt="non-virtual"><scope>tvm::tir::AllocateNode</scope><name>SHashReduce</name></member>
+      <member refid="classtvm_1_1tir_1_1StmtNode_1ab4627fb1adbea88d4fe3a33679569421" prot="public" virt="non-virtual"><scope>tvm::tir::AllocateNode</scope><name>TVM_DECLARE_BASE_OBJECT_INFO</name></member>
+      <member refid="classtvm_1_1tir_1_1AllocateNode_1a8df9749b7cd4db25d5de52572be1ba34" prot="public" virt="non-virtual"><scope>tvm::tir::AllocateNode</scope><name>TVM_DECLARE_FINAL_OBJECT_INFO</name></member>
+      <member refid="classtvm_1_1tir_1_1AllocateNode_1ab476a2f1664e28a6da78dfa1d7bc2889" prot="public" virt="non-virtual"><scope>tvm::tir::AllocateNode</scope><name>VisitAttrs</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

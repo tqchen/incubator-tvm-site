@@ -1,0 +1,52 @@
+\hypertarget{bound_8h}{}\section{include/tvm/arith/bound.h File Reference}
+\label{bound_8h}\index{include/tvm/arith/bound.\+h@{include/tvm/arith/bound.\+h}}
+
+
+Bound deducers.  
+
+
+{\ttfamily \#include $<$tvm/node/container.\+h$>$}\\*
+{\ttfamily \#include $<$tvm/ir/expr.\+h$>$}\\*
+{\ttfamily \#include $<$tvm/arith/int\+\_\+set.\+h$>$}\\*
+{\ttfamily \#include $<$tvm/tir/expr.\+h$>$}\\*
+{\ttfamily \#include $<$tvm/tir/stmt.\+h$>$}\\*
+{\ttfamily \#include $<$unordered\+\_\+map$>$}\\*
+Include dependency graph for bound.\+h\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{bound_8h__incl}
+\end{center}
+\end{figure}
+This graph shows which files directly or indirectly include this file\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{bound_8h__dep__incl}
+\end{center}
+\end{figure}
+\subsection*{Namespaces}
+\begin{DoxyCompactItemize}
+\item 
+ \hyperlink{namespacetvm}{tvm}
+\item 
+ \hyperlink{namespacetvm_1_1te}{tvm\+::te}
+\begin{DoxyCompactList}\small\item\em \hyperlink{classtvm_1_1te_1_1Tensor}{Tensor} expression language D\+SL. \end{DoxyCompactList}\item 
+ \hyperlink{namespacetvm_1_1arith}{tvm\+::arith}
+\begin{DoxyCompactList}\small\item\em namespace of arithmetic analysis. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+Int\+Set \hyperlink{namespacetvm_1_1arith_af0860828b70ea8ff0d2f7c036c37afd5}{tvm\+::arith\+::\+Deduce\+Bound} (Prim\+Expr v, Prim\+Expr cond, const Map$<$ Var, Int\+Set $>$ \&hint\+\_\+map, const Map$<$ Var, Int\+Set $>$ \&relax\+\_\+map)
+\begin{DoxyCompactList}\small\item\em Deduce the bound of the target variable in a expression, give the domain of each variables. Return undefined \hyperlink{classtvm_1_1arith_1_1IntSet}{Int\+Set} to represent failure. \end{DoxyCompactList}\item 
+Int\+Set \hyperlink{namespacetvm_1_1arith_a3658d391f2333f405abdd54a9f174c9f}{tvm\+::arith\+::\+Deduce\+Bound} (Prim\+Expr v, Prim\+Expr cond, const std\+::unordered\+\_\+map$<$ const Var\+Node $\ast$, Int\+Set $>$ \&hint\+\_\+map, const std\+::unordered\+\_\+map$<$ const Var\+Node $\ast$, Int\+Set $>$ \&relax\+\_\+map)
+\begin{DoxyCompactList}\small\item\em Same as Deduce\+Bound with unordered\+\_\+map signature. \end{DoxyCompactList}\item 
+Domain \hyperlink{namespacetvm_1_1arith_a7f55bb82049e1b5f3a22fbd7b7ef3570}{tvm\+::arith\+::\+Domain\+Touched} (Stmt body, const te\+::\+Tensor \&tensor, bool consider\+\_\+calls, bool consider\+\_\+provides)
+\begin{DoxyCompactList}\small\item\em Infer a regular domain that covers all the calls or provides within the given statement. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Bound deducers. 
+

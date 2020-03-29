@@ -1,0 +1,488 @@
+\hypertarget{tir_2op_8h}{}\section{include/tvm/tir/op.h File Reference}
+\label{tir_2op_8h}\index{include/tvm/tir/op.\+h@{include/tvm/tir/op.\+h}}
+
+
+Common operators defined for Expr.  
+
+
+{\ttfamily \#include $<$tvm/ir/type.\+h$>$}\\*
+{\ttfamily \#include $<$tvm/tir/expr.\+h$>$}\\*
+{\ttfamily \#include $<$tvm/tir/stmt.\+h$>$}\\*
+{\ttfamily \#include $<$algorithm$>$}\\*
+{\ttfamily \#include $<$type\+\_\+traits$>$}\\*
+{\ttfamily \#include $<$limits$>$}\\*
+Include dependency graph for op.\+h\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{tir_2op_8h__incl}
+\end{center}
+\end{figure}
+This graph shows which files directly or indirectly include this file\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{tir_2op_8h__dep__incl}
+\end{center}
+\end{figure}
+\subsection*{Namespaces}
+\begin{DoxyCompactItemize}
+\item 
+ \hyperlink{namespacetvm}{tvm}
+\item 
+ \hyperlink{namespacetvm_1_1tir}{tvm\+::tir}
+\end{DoxyCompactItemize}
+\subsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \hyperlink{tir_2op_8h_a032e3ae6824990aad98b8992f90a83c9}{T\+V\+M\+\_\+\+D\+E\+C\+L\+A\+R\+E\+\_\+\+I\+N\+T\+R\+I\+N\+\_\+\+U\+N\+A\+RY}(Op\+Name)
+\item 
+\#define \hyperlink{tir_2op_8h_a34c733b88658efba336e09ccd85e576c}{T\+V\+M\+\_\+\+D\+E\+F\+I\+N\+E\+\_\+\+A\+S\+S\+I\+G\+N\+\_\+\+O\+P\+\_\+\+O\+V\+E\+R\+L\+O\+AD}(Name,  Op\+Func)
+\item 
+\#define \hyperlink{tir_2op_8h_aabcf618a12e97c38fccecf7351392154}{T\+V\+M\+\_\+\+D\+E\+F\+I\+N\+E\+\_\+\+B\+I\+N\+O\+P\+\_\+\+C\+O\+N\+S\+T\+\_\+\+V\+A\+L\+\_\+\+O\+V\+E\+R\+L\+O\+AD}(Name)
+\item 
+\#define \hyperlink{tir_2op_8h_ab6a17993efa67183ba992dac29284c80}{T\+V\+M\+\_\+\+D\+E\+F\+I\+N\+E\+\_\+\+L\+O\+G\+I\+C\+A\+L\+\_\+\+O\+P\+\_\+\+C\+O\+N\+S\+T\+\_\+\+V\+A\+L\+\_\+\+O\+V\+E\+R\+L\+O\+AD}(Name)
+\item 
+\#define \hyperlink{tir_2op_8h_a0ad19625381aae20ca7a930260089c47}{T\+V\+M\+\_\+\+D\+E\+F\+I\+N\+E\+\_\+\+I\+N\+T\+\_\+\+O\+P\+\_\+\+C\+O\+N\+S\+T\+\_\+\+V\+A\+L\+\_\+\+O\+V\+E\+R\+L\+O\+AD}(Name)
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+Type \hyperlink{namespacetvm_a48fb9755f38ffcfcd03592a47ffbbd14}{tvm\+::\+Get\+Type} (const Prim\+Expr \&expr)
+\begin{DoxyCompactList}\small\item\em Get the type of the expression under the unified type system. \end{DoxyCompactList}\item 
+runtime\+::\+Data\+Type \hyperlink{namespacetvm_a0447e9aa45f6cab707f6dc9f9281b3f5}{tvm\+::\+Get\+Runtime\+Data\+Type} (const Type \&type)
+\begin{DoxyCompactList}\small\item\em Get the implied Data\+Type for storing values with type during runtime. \end{DoxyCompactList}\item 
+Prim\+Expr \hyperlink{namespacetvm_a2741c5a48b50bf369026a1bbdf02017f}{tvm\+::max\+\_\+value} (const Data\+Type \&dtype)
+\item 
+Prim\+Expr \hyperlink{namespacetvm_a9c126a8dde0d4079713969ca574f172e}{tvm\+::min\+\_\+value} (const Data\+Type \&dtype)
+\item 
+Prim\+Expr \hyperlink{namespacetvm_a9bf1977e7bc6f0424f4e87d77d0008ed}{tvm\+::infinity} (const Data\+Type \&dtype)
+\item 
+Prim\+Expr \hyperlink{namespacetvm_aa058caeda9deceda3d6ffeda347be442}{tvm\+::cast} (const Data\+Type \&t, Prim\+Expr value)
+\begin{DoxyCompactList}\small\item\em cast value to type. \end{DoxyCompactList}\item 
+Prim\+Expr \hyperlink{namespacetvm_a2acd72f0adb3d9ae5eede7497b32c139}{tvm\+::reinterpret} (const Data\+Type \&t, Prim\+Expr value)
+\begin{DoxyCompactList}\small\item\em perform reinterpret cast value to type. \end{DoxyCompactList}\item 
+Prim\+Expr \hyperlink{namespacetvm_af246f441d4ac21b110185b77240b2dcc}{tvm\+::operator+} (Prim\+Expr a, Prim\+Expr b)
+\begin{DoxyCompactList}\small\item\em add operator \end{DoxyCompactList}\item 
+Prim\+Expr \hyperlink{namespacetvm_abde487c0197942c4ebb1b47277b89dac}{tvm\+::operator-\/} (Prim\+Expr a, Prim\+Expr b)
+\begin{DoxyCompactList}\small\item\em subtraction operator \end{DoxyCompactList}\item 
+Prim\+Expr \hyperlink{namespacetvm_abc417454badf61b154d6a8d87cd8f171}{tvm\+::operator-\/} (Prim\+Expr a)
+\begin{DoxyCompactList}\small\item\em negation. \end{DoxyCompactList}\item 
+Prim\+Expr \hyperlink{namespacetvm_a5c5034de2993b9130b7bd9d593a11bb5}{tvm\+::operator$\ast$} (Prim\+Expr a, Prim\+Expr b)
+\begin{DoxyCompactList}\small\item\em multiplication operator \end{DoxyCompactList}\item 
+Prim\+Expr \hyperlink{namespacetvm_a18256ba1213ce5ff3cf8037a314354b7}{tvm\+::operator/} (Prim\+Expr a, Prim\+Expr b)
+\begin{DoxyCompactList}\small\item\em division operator \end{DoxyCompactList}\item 
+Prim\+Expr \hyperlink{namespacetvm_af682776c3609284f1bc3ea436e21a67a}{tvm\+::operator$<$$<$} (Prim\+Expr a, Prim\+Expr b)
+\begin{DoxyCompactList}\small\item\em left shift operator \end{DoxyCompactList}\item 
+Prim\+Expr \hyperlink{namespacetvm_a1ce1eb32fc9d76ebe5a6b8d185024d41}{tvm\+::operator$>$$>$} (Prim\+Expr a, Prim\+Expr b)
+\begin{DoxyCompactList}\small\item\em right shift operator \end{DoxyCompactList}\item 
+Prim\+Expr \hyperlink{namespacetvm_ad93d00f7b080dc3f905f5c34c170a041}{tvm\+::operator$>$} (Prim\+Expr a, Prim\+Expr b)
+\begin{DoxyCompactList}\small\item\em greater \end{DoxyCompactList}\item 
+Prim\+Expr \hyperlink{namespacetvm_a5530417da455bd46f5dc55f27d69bcdf}{tvm\+::operator$>$=} (Prim\+Expr a, Prim\+Expr b)
+\begin{DoxyCompactList}\small\item\em greater\+\_\+equal \end{DoxyCompactList}\item 
+Prim\+Expr \hyperlink{namespacetvm_a1f98476c3a413f6cdfc7b7e490f3221b}{tvm\+::operator$<$} (Prim\+Expr a, Prim\+Expr b)
+\begin{DoxyCompactList}\small\item\em less \end{DoxyCompactList}\item 
+Prim\+Expr \hyperlink{namespacetvm_a598f8139c469abc4066dbdd0a0a0845d}{tvm\+::operator$<$=} (Prim\+Expr a, Prim\+Expr b)
+\begin{DoxyCompactList}\small\item\em less\+\_\+equal \end{DoxyCompactList}\item 
+Prim\+Expr \hyperlink{namespacetvm_a2ea3b45c96d3980227e418f7158ce5c3}{tvm\+::operator==} (Prim\+Expr a, Prim\+Expr b)
+\begin{DoxyCompactList}\small\item\em equal \end{DoxyCompactList}\item 
+Prim\+Expr \hyperlink{namespacetvm_a03983cf66713724c138f9697bb8e0e97}{tvm\+::operator!=} (Prim\+Expr a, Prim\+Expr b)
+\begin{DoxyCompactList}\small\item\em not\+\_\+equal \end{DoxyCompactList}\item 
+Prim\+Expr \hyperlink{namespacetvm_afc83b50366be0862a6c8f88c9a4e62d5}{tvm\+::operator\&\&} (Prim\+Expr a, Prim\+Expr b)
+\begin{DoxyCompactList}\small\item\em and \end{DoxyCompactList}\item 
+Prim\+Expr \hyperlink{namespacetvm_ac3bf2ef3556c995846dddcd84e5db8a6}{tvm\+::operator$\vert$$\vert$} (Prim\+Expr a, Prim\+Expr b)
+\begin{DoxyCompactList}\small\item\em or \end{DoxyCompactList}\item 
+Prim\+Expr \hyperlink{namespacetvm_ab354bf1270121abea71fade83f13b0b0}{tvm\+::operator!} (Prim\+Expr a)
+\begin{DoxyCompactList}\small\item\em not \end{DoxyCompactList}\item 
+Prim\+Expr \hyperlink{namespacetvm_a40fcc9952e1ff01a76f3b75dbd368fc1}{tvm\+::div} (Prim\+Expr a, Prim\+Expr b)
+\begin{DoxyCompactList}\small\item\em compute division in C semantics. \end{DoxyCompactList}\item 
+Prim\+Expr \hyperlink{namespacetvm_a7bcbff6b886a4fa59b65e7cf05714b49}{tvm\+::truncdiv} (Prim\+Expr a, Prim\+Expr b)
+\begin{DoxyCompactList}\small\item\em compute trunc(a / b) \end{DoxyCompactList}\item 
+Prim\+Expr \hyperlink{namespacetvm_ae3fd62ca6008d6f20e4845426ec47aa6}{tvm\+::truncmod} (Prim\+Expr a, Prim\+Expr b)
+\begin{DoxyCompactList}\small\item\em compute the remainder of truncdiv \end{DoxyCompactList}\item 
+Prim\+Expr \hyperlink{namespacetvm_a8203d70a5ebf3532370264b000d0d276}{tvm\+::indexdiv} (Prim\+Expr a, Prim\+Expr b)
+\begin{DoxyCompactList}\small\item\em compute floor(a / b) where a and b are non-\/negative. \end{DoxyCompactList}\item 
+Prim\+Expr \hyperlink{namespacetvm_a857781b7243b2f90018f7fe6baf9c30e}{tvm\+::indexmod} (Prim\+Expr a, Prim\+Expr b)
+\begin{DoxyCompactList}\small\item\em compute the remainder floor(a / b) where a and b are non-\/negative. \end{DoxyCompactList}\item 
+Prim\+Expr \hyperlink{namespacetvm_a25cb3bf64427a16a93529d0a5c40b6de}{tvm\+::floordiv} (Prim\+Expr a, Prim\+Expr b)
+\begin{DoxyCompactList}\small\item\em compute floor(a / b) \end{DoxyCompactList}\item 
+Prim\+Expr \hyperlink{namespacetvm_a74b2e0fb912a82f974e2b652f7de8d34}{tvm\+::floormod} (Prim\+Expr a, Prim\+Expr b)
+\begin{DoxyCompactList}\small\item\em compute the remainder of floordiv \end{DoxyCompactList}\item 
+Prim\+Expr \hyperlink{namespacetvm_ab49bad0808ba033343e72ba37b39af2e}{tvm\+::max} (Prim\+Expr a, Prim\+Expr b)
+\begin{DoxyCompactList}\small\item\em take maximum of two values \end{DoxyCompactList}\item 
+Prim\+Expr \hyperlink{namespacetvm_a9da780393e228969f77aa7550520a582}{tvm\+::min} (Prim\+Expr a, Prim\+Expr b)
+\begin{DoxyCompactList}\small\item\em take minimum of two values \end{DoxyCompactList}\item 
+Prim\+Expr \hyperlink{namespacetvm_a92e2cae35b1e48f130b76f42c6ee3106}{tvm\+::operator\&} (Prim\+Expr a, Prim\+Expr b)
+\begin{DoxyCompactList}\small\item\em take bitwise and of two values \end{DoxyCompactList}\item 
+Prim\+Expr \hyperlink{namespacetvm_a236d9aae385e6697874f75e4c8a69f8d}{tvm\+::operator$\vert$} (Prim\+Expr a, Prim\+Expr b)
+\begin{DoxyCompactList}\small\item\em take bitwise or of two values \end{DoxyCompactList}\item 
+Prim\+Expr \hyperlink{namespacetvm_abd7d1b3232218b25e2e0cf6ef699a65f}{tvm\+::operator$^\wedge$} (Prim\+Expr a, Prim\+Expr b)
+\begin{DoxyCompactList}\small\item\em take bitwise xor of two values \end{DoxyCompactList}\item 
+Prim\+Expr \hyperlink{namespacetvm_a354b9954ff25dd819a51d856fdd38827}{tvm\+::operator$\sim$} (Prim\+Expr a)
+\begin{DoxyCompactList}\small\item\em take bitwise negation of two values \end{DoxyCompactList}\item 
+Prim\+Expr \hyperlink{namespacetvm_ad400409d87dc337f8b5fe13e18d363f9}{tvm\+::if\+\_\+then\+\_\+else} (Prim\+Expr cond, Prim\+Expr true\+\_\+value, Prim\+Expr false\+\_\+value)
+\begin{DoxyCompactList}\small\item\em Conditional expression. \end{DoxyCompactList}\item 
+Prim\+Expr \hyperlink{namespacetvm_ad6ee4c2d41e7e226d1995112cd12e3f1}{tvm\+::likely} (Prim\+Expr cond)
+\begin{DoxyCompactList}\small\item\em Mark condition as likely. \end{DoxyCompactList}\item 
+Prim\+Expr \hyperlink{namespacetvm_a880f0cd15891153430b669f0b4eca2fe}{tvm\+::pow} (Prim\+Expr x, Prim\+Expr y)
+\begin{DoxyCompactList}\small\item\em Calculate power(x, y) \end{DoxyCompactList}\item 
+Prim\+Expr \hyperlink{namespacetvm_a84d274191adb24d2acb39064c1fbec52}{tvm\+::abs} (Prim\+Expr x)
+\begin{DoxyCompactList}\small\item\em Calculate absolute value of x. \end{DoxyCompactList}\item 
+Prim\+Expr \hyperlink{namespacetvm_a8f98d60fdc4526b07c8858d6b0b8d1ee}{tvm\+::isnan} (Prim\+Expr x)
+\begin{DoxyCompactList}\small\item\em Check if x is NaN. \end{DoxyCompactList}\item 
+Prim\+Expr \hyperlink{namespacetvm_a6a48a2b96c995f412390db3ea3b38bd9}{tvm\+::isfinite} (Prim\+Expr x)
+\begin{DoxyCompactList}\small\item\em Check if x is finite. \end{DoxyCompactList}\item 
+Prim\+Expr \hyperlink{namespacetvm_a30e728d87aa70f76d7f4a09316c9746d}{tvm\+::isinf} (Prim\+Expr x)
+\begin{DoxyCompactList}\small\item\em Check if x is infinite. \end{DoxyCompactList}\item 
+Prim\+Expr \hyperlink{namespacetvm_a5cea5eb708bfbfa08e285092e5afdc33}{tvm\+::sum} (Prim\+Expr source, Array$<$ tir\+::\+Iter\+Var $>$ axis)
+\begin{DoxyCompactList}\small\item\em sum of of source expression over axis \end{DoxyCompactList}\item 
+Prim\+Expr \hyperlink{namespacetvm_a78bab31ca3c44dbd5e6801e1e223d475}{tvm\+::all} (Prim\+Expr source, Array$<$ tir\+::\+Iter\+Var $>$ axis)
+\begin{DoxyCompactList}\small\item\em logical And of of source expression over axis \end{DoxyCompactList}\item 
+Prim\+Expr \hyperlink{namespacetvm_a48629d1a87dfe0b51260defe79c82a60}{tvm\+::any} (Prim\+Expr source, Array$<$ tir\+::\+Iter\+Var $>$ axis)
+\begin{DoxyCompactList}\small\item\em logical Or of of source expression over axis \end{DoxyCompactList}\item 
+Prim\+Expr \hyperlink{namespacetvm_a80f15d31bf89ba7654442d9ca9a91a18}{tvm\+::max} (Prim\+Expr source, Array$<$ tir\+::\+Iter\+Var $>$ axis)
+\begin{DoxyCompactList}\small\item\em max of of source expression over axis \end{DoxyCompactList}\item 
+Prim\+Expr \hyperlink{namespacetvm_a2028eb350061871512cf50fed0e6fa6b}{tvm\+::min} (Prim\+Expr source, Array$<$ tir\+::\+Iter\+Var $>$ axis)
+\begin{DoxyCompactList}\small\item\em max of of source expression over axis \end{DoxyCompactList}\item 
+Prim\+Expr \hyperlink{namespacetvm_afd8718fe1f413ab2850cdbb66adfbecc}{tvm\+::prod} (Prim\+Expr source, Array$<$ tir\+::\+Iter\+Var $>$ axis)
+\begin{DoxyCompactList}\small\item\em product of of source expression over axis \end{DoxyCompactList}\item 
+Prim\+Expr \hyperlink{namespacetvm_a45896c89bce01ea68b5a8f3ea37f3079}{tvm\+::floor} (Prim\+Expr x)
+\begin{DoxyCompactList}\small\item\em Calculate floor(x) \end{DoxyCompactList}\item 
+Prim\+Expr \hyperlink{namespacetvm_a530307f2fad9f6d196c441309af777b9}{tvm\+::ceil} (Prim\+Expr x)
+\begin{DoxyCompactList}\small\item\em Calculate ceil(x) \end{DoxyCompactList}\item 
+Prim\+Expr \hyperlink{namespacetvm_a660170263d6864b1caa60728619971be}{tvm\+::round} (Prim\+Expr x)
+\begin{DoxyCompactList}\small\item\em Calculate round(x) \end{DoxyCompactList}\item 
+Prim\+Expr \hyperlink{namespacetvm_a8472b5c842e840063564d4280428ce23}{tvm\+::nearbyint} (Prim\+Expr x)
+\begin{DoxyCompactList}\small\item\em Calculates std\+::nearbyint(x) \end{DoxyCompactList}\item 
+Prim\+Expr \hyperlink{namespacetvm_ae17d5a4cdf12b4da457d4929030592cf}{tvm\+::trunc} (Prim\+Expr x)
+\begin{DoxyCompactList}\small\item\em Calculate trunc(x) \end{DoxyCompactList}\item 
+Prim\+Expr \hyperlink{namespacetvm_a1b6f1345a0ac2506132b15ec4cbf3599}{tvm\+::\+Large\+U\+Int\+Imm} (Data\+Type dtype, int64\+\_\+t low, int64\+\_\+t high)
+\begin{DoxyCompactList}\small\item\em Construct a large uint constant by its low 32 bits and high 32bits. \end{DoxyCompactList}\item 
+Prim\+Expr \hyperlink{namespacetvm_aa21f5c2f67c944561ae4a260a2ed14d2}{tvm\+::exp} (Prim\+Expr x)
+\item 
+Prim\+Expr \hyperlink{namespacetvm_a21e3a5d7327cf37c6a682525665a0a28}{tvm\+::exp2} (Prim\+Expr x)
+\item 
+Prim\+Expr \hyperlink{namespacetvm_ac760569fe43a52f3f8997461b2ef438a}{tvm\+::exp10} (Prim\+Expr x)
+\item 
+Prim\+Expr \hyperlink{namespacetvm_a78ebcdb32def4b349b37423884a6417a}{tvm\+::erf} (Prim\+Expr x)
+\item 
+Prim\+Expr \hyperlink{namespacetvm_ad8a570f4008eb8869504544d7a1cd8ce}{tvm\+::tanh} (Prim\+Expr x)
+\item 
+Prim\+Expr \hyperlink{namespacetvm_a1bf7732939d615e08d0d991e2f271c42}{tvm\+::sigmoid} (Prim\+Expr x)
+\item 
+Prim\+Expr \hyperlink{namespacetvm_a0a4fcbbd8d9db345d4d7e8bb0a76671a}{tvm\+::sqrt} (Prim\+Expr x)
+\item 
+Prim\+Expr \hyperlink{namespacetvm_ae77bc5dc1c2f4bcafcac8ad698b089a5}{tvm\+::rsqrt} (Prim\+Expr x)
+\item 
+Prim\+Expr \hyperlink{namespacetvm_aed9236feb2ab21523cb2dcb0257fe8da}{tvm\+::log} (Prim\+Expr x)
+\item 
+Prim\+Expr \hyperlink{namespacetvm_aae5edd83ffa099868f2d58a9def0b2b4}{tvm\+::log2} (Prim\+Expr x)
+\item 
+Prim\+Expr \hyperlink{namespacetvm_a04657a6242778fd95b77df057385e398}{tvm\+::log10} (Prim\+Expr x)
+\item 
+Prim\+Expr \hyperlink{namespacetvm_a04551919927933a4265c87809d889577}{tvm\+::popcount} (Prim\+Expr x)
+\item 
+Prim\+Expr \hyperlink{namespacetvm_aaabcd438dbdc57aa6866fde3edaf2d83}{tvm\+::tan} (Prim\+Expr x)
+\item 
+Prim\+Expr \hyperlink{namespacetvm_a66fb538aa75f90efb6f5c948920f8f95}{tvm\+::cos} (Prim\+Expr x)
+\item 
+Prim\+Expr \hyperlink{namespacetvm_a581c9279a40694ab7a5defa179bcad67}{tvm\+::cosh} (Prim\+Expr x)
+\item 
+Prim\+Expr \hyperlink{namespacetvm_aeb9b0d266628cfa6c4d254c4e719249a}{tvm\+::sin} (Prim\+Expr x)
+\item 
+Prim\+Expr \hyperlink{namespacetvm_a8c17ac9dc5cd2be44dd2c3ef23e0e4c9}{tvm\+::sinh} (Prim\+Expr x)
+\item 
+Prim\+Expr \hyperlink{namespacetvm_a0a4e38b4b6d9f7396f2eafa680f98bd8}{tvm\+::atan} (Prim\+Expr x)
+\item 
+{\footnotesize template$<$typename Value\+Type , typename  = typename std\+::enable\+\_\+if$<$std\+::is\+\_\+pod$<$\+Value\+Type$>$\+::value$>$\+::type$>$ }\\Prim\+Expr \hyperlink{namespacetvm_1_1tir_a4ea566597880d04bd62fbec687e338b5}{tvm\+::tir\+::make\+\_\+const} (Data\+Type t, Value\+Type value)
+\begin{DoxyCompactList}\small\item\em Make a const value with certain data type. \end{DoxyCompactList}\item 
+Prim\+Expr \hyperlink{namespacetvm_1_1tir_adc4408508a413fb7f3b2567f8d847dbb}{tvm\+::tir\+::make\+\_\+zero} (Data\+Type t)
+\begin{DoxyCompactList}\small\item\em Make a const zero expr. \end{DoxyCompactList}\item 
+Prim\+Expr \hyperlink{namespacetvm_1_1tir_ac40c127b53bca09d4c39f806a98dfdf8}{tvm\+::tir\+::const\+\_\+true} (int lanes=1)
+\begin{DoxyCompactList}\small\item\em Make a constant true expression. \end{DoxyCompactList}\item 
+Prim\+Expr \hyperlink{namespacetvm_1_1tir_ae11cb5c6f810546e5aa4e08a0684071a}{tvm\+::tir\+::const\+\_\+false} (int lanes=1)
+\begin{DoxyCompactList}\small\item\em Make a constant false expression. \end{DoxyCompactList}\item 
+const int64\+\_\+t $\ast$ \hyperlink{namespacetvm_1_1tir_acbe8f225faaf34c540194921a7ee6a66}{tvm\+::tir\+::as\+\_\+const\+\_\+int} (const Prim\+Expr \&x)
+\begin{DoxyCompactList}\small\item\em Get x as constant int expression. \end{DoxyCompactList}\item 
+bool \hyperlink{namespacetvm_1_1tir_a5c414d5e54c099ad7287be302aac8f02}{tvm\+::tir\+::is\+\_\+const\+\_\+int} (const Prim\+Expr \&x, int64\+\_\+t value)
+\begin{DoxyCompactList}\small\item\em Check whether x is a constant integer expression. \end{DoxyCompactList}\item 
+bool \hyperlink{namespacetvm_1_1tir_a8de8f843c6eb433b6ddfbf34e24099ef}{tvm\+::tir\+::is\+\_\+no\+\_\+op} (const tir\+::\+Stmt \&stmt)
+\begin{DoxyCompactList}\small\item\em Check whether stmt is nop. \end{DoxyCompactList}\item 
+bool \hyperlink{namespacetvm_1_1tir_a9b5104dcf0933da31329bb0b2580a947}{tvm\+::tir\+::is\+\_\+one} (const Prim\+Expr \&x)
+\begin{DoxyCompactList}\small\item\em Check whether x is a constant integer 1. \end{DoxyCompactList}\item 
+bool \hyperlink{namespacetvm_1_1tir_a48bad3db162b334837716bf8e7ba9285}{tvm\+::tir\+::is\+\_\+zero} (const Prim\+Expr \&x)
+\begin{DoxyCompactList}\small\item\em Check whether x is a constant integer 0. \end{DoxyCompactList}\item 
+bool \hyperlink{namespacetvm_1_1tir_ab706ef9860459b25068f3440d88a7193}{tvm\+::tir\+::is\+\_\+const} (const Prim\+Expr \&x)
+\begin{DoxyCompactList}\small\item\em Check whether x is a constant. \end{DoxyCompactList}\item 
+bool \hyperlink{namespacetvm_1_1tir_a246623a4a0c9cd8f8a209ec952a8d1c3}{tvm\+::tir\+::is\+\_\+const\+\_\+power\+\_\+of\+\_\+two\+\_\+integer} (const Prim\+Expr \&x, int $\ast$shift)
+\begin{DoxyCompactList}\small\item\em Check whether x is a constant power of two If x is power of two, write the power to the shift. \end{DoxyCompactList}\item 
+bool \hyperlink{namespacetvm_1_1tir_a782dc226f8b2b537efdc56b1f76351d1}{tvm\+::tir\+::is\+\_\+positive\+\_\+const} (const Prim\+Expr \&a)
+\item 
+bool \hyperlink{namespacetvm_1_1tir_a51d552441331effb387b7c8fb241c454}{tvm\+::tir\+::is\+\_\+negative\+\_\+const} (const Prim\+Expr \&a)
+\item 
+{\footnotesize template$<$typename Value\+Type $>$ }\\Prim\+Expr \hyperlink{namespacetvm_1_1tir_af2ca71170aca9d397c2125eb4f55c197}{tvm\+::tir\+::\+Make\+Const\+Scalar} (Data\+Type t, Value\+Type value)
+\item 
+Prim\+Expr \hyperlink{namespacetvm_a96061840d12f84eeecc8fae11e245242}{tvm\+::operator+=} (Prim\+Expr \&a, Prim\+Expr b)
+\item 
+Prim\+Expr \hyperlink{namespacetvm_a164d454c519fecaa5611c86b65469acc}{tvm\+::operator-\/=} (Prim\+Expr \&a, Prim\+Expr b)
+\item 
+Prim\+Expr \hyperlink{namespacetvm_a9233d7b436ae52ac070442ba19caed18}{tvm\+::operator$\ast$=} (Prim\+Expr \&a, Prim\+Expr b)
+\item 
+Prim\+Expr \hyperlink{namespacetvm_a2725c044e8067299c3dccbd453ce614f}{tvm\+::operator+} (const Prim\+Expr \&a, float b)
+\item 
+Prim\+Expr \hyperlink{namespacetvm_ac86d7f61b9f0899a08685145f6bb5051}{tvm\+::operator+} (float a, const Prim\+Expr \&b)
+\item 
+Prim\+Expr \hyperlink{namespacetvm_ad728a6c2c3d21242a4df808aadb722eb}{tvm\+::operator+} (int a, const Prim\+Expr \&b)
+\item 
+Prim\+Expr \hyperlink{namespacetvm_a50bfde26f015ed64e1c0341dd65d3fad}{tvm\+::operator+} (const Prim\+Expr \&a, int b)
+\item 
+Prim\+Expr \hyperlink{namespacetvm_ac225d9ad74343d0e97a5e943e7f6a7d1}{tvm\+::operator+} (const Prim\+Expr \&a, double b)
+\item 
+Prim\+Expr \hyperlink{namespacetvm_a679ff94dec26779d8769231abb229647}{tvm\+::operator-\/} (const Prim\+Expr \&a, float b)
+\item 
+Prim\+Expr \hyperlink{namespacetvm_aef861fe5325bc0b415a905a24c42f10a}{tvm\+::operator-\/} (float a, const Prim\+Expr \&b)
+\item 
+Prim\+Expr \hyperlink{namespacetvm_a4f40ad3340a853d58664bc864dc10d47}{tvm\+::operator-\/} (int a, const Prim\+Expr \&b)
+\item 
+Prim\+Expr \hyperlink{namespacetvm_af7c46ff33a2727f48b10d7d563f4a746}{tvm\+::operator-\/} (const Prim\+Expr \&a, int b)
+\item 
+Prim\+Expr \hyperlink{namespacetvm_a028ba217f99b6cb1592a6a56b2bc9ee5}{tvm\+::operator-\/} (const Prim\+Expr \&a, double b)
+\item 
+Prim\+Expr \hyperlink{namespacetvm_af70bb4a982810d795dbd17ce73c6b124}{tvm\+::operator$\ast$} (const Prim\+Expr \&a, float b)
+\item 
+Prim\+Expr \hyperlink{namespacetvm_ace5dbde3bde1ba48d14a3f9064a45aee}{tvm\+::operator$\ast$} (float a, const Prim\+Expr \&b)
+\item 
+Prim\+Expr \hyperlink{namespacetvm_aca621e1d2df8562819bc021c1410b741}{tvm\+::operator$\ast$} (int a, const Prim\+Expr \&b)
+\item 
+Prim\+Expr \hyperlink{namespacetvm_a6823188ec16be854223bbffe349c975d}{tvm\+::operator$\ast$} (const Prim\+Expr \&a, int b)
+\item 
+Prim\+Expr \hyperlink{namespacetvm_a1815d8b152819885a5733554f374a9ca}{tvm\+::operator$\ast$} (const Prim\+Expr \&a, double b)
+\item 
+Prim\+Expr \hyperlink{namespacetvm_a7134c7ce44fbedab5990f19428ceb5c4}{tvm\+::max} (const Prim\+Expr \&a, float b)
+\item 
+Prim\+Expr \hyperlink{namespacetvm_abc6aa5a903c9a71faece2f5dfbc8218c}{tvm\+::max} (float a, const Prim\+Expr \&b)
+\item 
+Prim\+Expr \hyperlink{namespacetvm_a7bd1dc5f6d10420562d216bb3660270d}{tvm\+::max} (int a, const Prim\+Expr \&b)
+\item 
+Prim\+Expr \hyperlink{namespacetvm_ac0dc60ecafe41384d28baf92f6943680}{tvm\+::max} (const Prim\+Expr \&a, int b)
+\item 
+Prim\+Expr \hyperlink{namespacetvm_aa26bf5f7b12b17f87400c63c63663c60}{tvm\+::max} (const Prim\+Expr \&a, double b)
+\item 
+Prim\+Expr \hyperlink{namespacetvm_a1a8d2a9b2868033477024d551f779d61}{tvm\+::min} (const Prim\+Expr \&a, float b)
+\item 
+Prim\+Expr \hyperlink{namespacetvm_a6ebe9e5428f481f683f89f59440dde2a}{tvm\+::min} (float a, const Prim\+Expr \&b)
+\item 
+Prim\+Expr \hyperlink{namespacetvm_a3b4b479c377151a9d64dc67d1105421e}{tvm\+::min} (int a, const Prim\+Expr \&b)
+\item 
+Prim\+Expr \hyperlink{namespacetvm_a7fe0dbe362aac3d4f9c204eeba803d8e}{tvm\+::min} (const Prim\+Expr \&a, int b)
+\item 
+Prim\+Expr \hyperlink{namespacetvm_a468d959980234ccc84c319810d787219}{tvm\+::min} (const Prim\+Expr \&a, double b)
+\item 
+Prim\+Expr \hyperlink{namespacetvm_ae2d70142d842bb07be508adb2d4f7447}{tvm\+::div} (const Prim\+Expr \&a, float b)
+\item 
+Prim\+Expr \hyperlink{namespacetvm_a85c28d529a26976f3d5f67511f2aef8b}{tvm\+::div} (float a, const Prim\+Expr \&b)
+\item 
+Prim\+Expr \hyperlink{namespacetvm_a8a958cb2612b58e6464f5421bb8ab74b}{tvm\+::div} (int a, const Prim\+Expr \&b)
+\item 
+Prim\+Expr \hyperlink{namespacetvm_ac9f587b864957447e3d0c64ac9159633}{tvm\+::div} (const Prim\+Expr \&a, int b)
+\item 
+Prim\+Expr \hyperlink{namespacetvm_a1180d1f0ef1d427bad98a89c66d84c0f}{tvm\+::div} (const Prim\+Expr \&a, double b)
+\item 
+Prim\+Expr \hyperlink{namespacetvm_a9cea8f3789d8f3dc78acae43e9a6aad6}{tvm\+::operator$>$} (const Prim\+Expr \&a, float b)
+\item 
+Prim\+Expr \hyperlink{namespacetvm_a6d0ad14c882c11311836138a2c164cf3}{tvm\+::operator$>$} (float a, const Prim\+Expr \&b)
+\item 
+Prim\+Expr \hyperlink{namespacetvm_a6aeb6ed068c5de8ab908ff234337aeeb}{tvm\+::operator$>$} (int a, const Prim\+Expr \&b)
+\item 
+Prim\+Expr \hyperlink{namespacetvm_acc92dcd3d81981e983ddf05347bc9371}{tvm\+::operator$>$} (const Prim\+Expr \&a, int b)
+\item 
+Prim\+Expr \hyperlink{namespacetvm_a7e2181bca182f90533ec35537714d09d}{tvm\+::operator$>$} (const Prim\+Expr \&a, double b)
+\item 
+Prim\+Expr \hyperlink{namespacetvm_a35961a6074b72fae0dfc48ee395e0673}{tvm\+::operator$>$=} (const Prim\+Expr \&a, float b)
+\item 
+Prim\+Expr \hyperlink{namespacetvm_a7a94a354cd62137652e09fa887a96100}{tvm\+::operator$>$=} (float a, const Prim\+Expr \&b)
+\item 
+Prim\+Expr \hyperlink{namespacetvm_af7dee311b945dfc5a821a119c1db9ad1}{tvm\+::operator$>$=} (int a, const Prim\+Expr \&b)
+\item 
+Prim\+Expr \hyperlink{namespacetvm_ac194836fc11a8ba34e44738da17fd116}{tvm\+::operator$>$=} (const Prim\+Expr \&a, int b)
+\item 
+Prim\+Expr \hyperlink{namespacetvm_aae1dcfef78728c5490d3c107b4abac5a}{tvm\+::operator$>$=} (const Prim\+Expr \&a, double b)
+\item 
+Prim\+Expr \hyperlink{namespacetvm_a4c5092e248ab7daa5de5c22717670d8e}{tvm\+::operator$<$} (const Prim\+Expr \&a, float b)
+\item 
+Prim\+Expr \hyperlink{namespacetvm_abc5d3aba4f3f15098d5ac2fb0c3dfd39}{tvm\+::operator$<$} (float a, const Prim\+Expr \&b)
+\item 
+Prim\+Expr \hyperlink{namespacetvm_a46877235265ab97544ec2e561f521b0f}{tvm\+::operator$<$} (int a, const Prim\+Expr \&b)
+\item 
+Prim\+Expr \hyperlink{namespacetvm_aa672271dbd566a0e7b9e4c87664bccb4}{tvm\+::operator$<$} (const Prim\+Expr \&a, int b)
+\item 
+Prim\+Expr \hyperlink{namespacetvm_a0854363590c38f5479b1da5e70c4f002}{tvm\+::operator$<$} (const Prim\+Expr \&a, double b)
+\item 
+Prim\+Expr \hyperlink{namespacetvm_a06d97bd5ee2c12e8547be0cc42f6b300}{tvm\+::operator$<$=} (const Prim\+Expr \&a, float b)
+\item 
+Prim\+Expr \hyperlink{namespacetvm_a872f50bd7175eccf440865311aa75232}{tvm\+::operator$<$=} (float a, const Prim\+Expr \&b)
+\item 
+Prim\+Expr \hyperlink{namespacetvm_ad5dbec0c48b8644c5c6e9d773ddc106b}{tvm\+::operator$<$=} (int a, const Prim\+Expr \&b)
+\item 
+Prim\+Expr \hyperlink{namespacetvm_af94a56db543e741a23bbf2f51c49091a}{tvm\+::operator$<$=} (const Prim\+Expr \&a, int b)
+\item 
+Prim\+Expr \hyperlink{namespacetvm_a6eea8276bcc178425bc14f3d878970ff}{tvm\+::operator$<$=} (const Prim\+Expr \&a, double b)
+\item 
+Prim\+Expr \hyperlink{namespacetvm_af9a4e8a59397e5778c38356129c06110}{tvm\+::indexdiv} (const Prim\+Expr \&a, int b)
+\item 
+Prim\+Expr \hyperlink{namespacetvm_a9d88aa90642838c6bc41c4cbead148fd}{tvm\+::indexdiv} (int a, const Prim\+Expr \&b)
+\item 
+Prim\+Expr \hyperlink{namespacetvm_ac4d2991113bb8e0b634e4c83183eb5c1}{tvm\+::indexmod} (const Prim\+Expr \&a, int b)
+\item 
+Prim\+Expr \hyperlink{namespacetvm_abd2345bc3cd37ab4f762c0f971042daa}{tvm\+::indexmod} (int a, const Prim\+Expr \&b)
+\item 
+Prim\+Expr \hyperlink{namespacetvm_ae50afd0565c00f594ee188bab7323372}{tvm\+::truncdiv} (const Prim\+Expr \&a, int b)
+\item 
+Prim\+Expr \hyperlink{namespacetvm_a5b5bb91649c681b0ea799689be9647bf}{tvm\+::truncdiv} (int a, const Prim\+Expr \&b)
+\item 
+Prim\+Expr \hyperlink{namespacetvm_a4c2633a4e92785dd73834bfff282699c}{tvm\+::truncmod} (const Prim\+Expr \&a, int b)
+\item 
+Prim\+Expr \hyperlink{namespacetvm_ad6c6dbf136b1086695780fd695df350b}{tvm\+::truncmod} (int a, const Prim\+Expr \&b)
+\item 
+Prim\+Expr \hyperlink{namespacetvm_a83e68dc71a05711a9c94123af2a3fdbf}{tvm\+::floordiv} (const Prim\+Expr \&a, int b)
+\item 
+Prim\+Expr \hyperlink{namespacetvm_ad3b659d13dd33e7a027b9d082315a776}{tvm\+::floordiv} (int a, const Prim\+Expr \&b)
+\item 
+Prim\+Expr \hyperlink{namespacetvm_a6993f628929a88cf563461c9dcafb2ae}{tvm\+::floormod} (const Prim\+Expr \&a, int b)
+\item 
+Prim\+Expr \hyperlink{namespacetvm_a08a5224a973dc893665ab543c116854d}{tvm\+::floormod} (int a, const Prim\+Expr \&b)
+\item 
+Prim\+Expr \hyperlink{namespacetvm_abccc3d3e96ee608022b148ffa05034eb}{tvm\+::operator$>$$>$} (const Prim\+Expr \&a, int b)
+\item 
+Prim\+Expr \hyperlink{namespacetvm_a550c2a251b2a6fd2a72172fe3db75d40}{tvm\+::operator$>$$>$} (int a, const Prim\+Expr \&b)
+\item 
+Prim\+Expr \hyperlink{namespacetvm_a9d8412e5f401f59f5ca85ed556d70810}{tvm\+::operator$<$$<$} (const Prim\+Expr \&a, int b)
+\item 
+Prim\+Expr \hyperlink{namespacetvm_ad0449d28f23318cc5163159a58c80ba3}{tvm\+::operator$<$$<$} (int a, const Prim\+Expr \&b)
+\item 
+Prim\+Expr \hyperlink{namespacetvm_a4ff6afc90cabb820cf2f2fda6daefd92}{tvm\+::operator\&} (const Prim\+Expr \&a, int b)
+\item 
+Prim\+Expr \hyperlink{namespacetvm_acb2697d9f746f0377975893eb080288e}{tvm\+::operator\&} (int a, const Prim\+Expr \&b)
+\item 
+Prim\+Expr \hyperlink{namespacetvm_a7c7fc3c45e6f6b52b2a1064deabd0797}{tvm\+::operator$\vert$} (const Prim\+Expr \&a, int b)
+\item 
+Prim\+Expr \hyperlink{namespacetvm_ad5ba71021b167b0a6ca2138b2c8bbace}{tvm\+::operator$\vert$} (int a, const Prim\+Expr \&b)
+\item 
+Prim\+Expr \hyperlink{namespacetvm_a82dc2fe21e7a64be5a1b11c2a8775d31}{tvm\+::operator$^\wedge$} (const Prim\+Expr \&a, int b)
+\item 
+Prim\+Expr \hyperlink{namespacetvm_a6f638564e5e4d1023096523800f2579e}{tvm\+::operator$^\wedge$} (int a, const Prim\+Expr \&b)
+\item 
+Prim\+Expr \hyperlink{namespacetvm_aca62d5095a23e0e24db1d6611d118eab}{tvm\+::operator\&\&} (const Prim\+Expr \&a, bool b)
+\item 
+Prim\+Expr \hyperlink{namespacetvm_a3fc66f0c6cd2135365cd24917d931abe}{tvm\+::operator\&\&} (bool a, const Prim\+Expr \&b)
+\item 
+Prim\+Expr \hyperlink{namespacetvm_a873bb60c71f37cbb743e21797a53ba06}{tvm\+::operator$\vert$$\vert$} (const Prim\+Expr \&a, bool b)
+\item 
+Prim\+Expr \hyperlink{namespacetvm_a1a3f9ad4d0e25eee9c0b3a9c83114bc0}{tvm\+::operator$\vert$$\vert$} (bool a, const Prim\+Expr \&b)
+\item 
+{\footnotesize template$<$typename TA $>$ }\\void \hyperlink{namespacetvm_a31e7a3e4a160a1d048e3ba741966f1a8}{tvm\+::\+Div\+Ambiguity\+Error} (const TA \&a)
+\begin{DoxyCompactList}\small\item\em Helper function to raise a compiler error about division ambiguity. \end{DoxyCompactList}\item 
+{\footnotesize template$<$typename TB $>$ }\\Prim\+Expr \hyperlink{namespacetvm_a136427374941fbf8e50f53b1cab39e38}{tvm\+::operator/} (const Prim\+Expr \&a, const TB \&b)
+\item 
+{\footnotesize template$<$typename TB $>$ }\\Prim\+Expr \hyperlink{namespacetvm_a51dc569142bf8ce8ea55f73029d3807d}{tvm\+::operator/=} (const Prim\+Expr \&a, const TB \&b)
+\item 
+{\footnotesize template$<$typename TB $>$ }\\Prim\+Expr \hyperlink{namespacetvm_ab25738e50b37cd07b2d171ca74ba9321}{tvm\+::operator\%} (const Prim\+Expr \&a, const TB \&b)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Common operators defined for Expr. 
+
+\begin{DoxyNote}{Note}
+Most of the operator defined here perform simple constant folding when the type is int32 or int64 for simplifying the index expressions. 
+\end{DoxyNote}
+
+
+\subsection{Macro Definition Documentation}
+\index{tir/op.\+h@{tir/op.\+h}!T\+V\+M\+\_\+\+D\+E\+C\+L\+A\+R\+E\+\_\+\+I\+N\+T\+R\+I\+N\+\_\+\+U\+N\+A\+RY@{T\+V\+M\+\_\+\+D\+E\+C\+L\+A\+R\+E\+\_\+\+I\+N\+T\+R\+I\+N\+\_\+\+U\+N\+A\+RY}}
+\index{T\+V\+M\+\_\+\+D\+E\+C\+L\+A\+R\+E\+\_\+\+I\+N\+T\+R\+I\+N\+\_\+\+U\+N\+A\+RY@{T\+V\+M\+\_\+\+D\+E\+C\+L\+A\+R\+E\+\_\+\+I\+N\+T\+R\+I\+N\+\_\+\+U\+N\+A\+RY}!tir/op.\+h@{tir/op.\+h}}
+\subsubsection[{\texorpdfstring{T\+V\+M\+\_\+\+D\+E\+C\+L\+A\+R\+E\+\_\+\+I\+N\+T\+R\+I\+N\+\_\+\+U\+N\+A\+RY}{TVM_DECLARE_INTRIN_UNARY}}]{\setlength{\rightskip}{0pt plus 5cm}\#define T\+V\+M\+\_\+\+D\+E\+C\+L\+A\+R\+E\+\_\+\+I\+N\+T\+R\+I\+N\+\_\+\+U\+N\+A\+RY(
+\begin{DoxyParamCaption}
+\item[{}]{Op\+Name}
+\end{DoxyParamCaption}
+)}\hypertarget{tir_2op_8h_a032e3ae6824990aad98b8992f90a83c9}{}\label{tir_2op_8h_a032e3ae6824990aad98b8992f90a83c9}
+{\bfseries Value\+:}
+\begin{DoxyCode}
+\textcolor{keyword}{inline} PrimExpr OpName(PrimExpr x) \{                                                 \(\backslash\)
+    return tir::CallNode::make(x.dtype(), #OpName, \{x\}, tir::CallNode::PureIntrinsic); \(\backslash\)
+  \}                                                                                    \(\backslash\)
+\end{DoxyCode}
+\index{tir/op.\+h@{tir/op.\+h}!T\+V\+M\+\_\+\+D\+E\+F\+I\+N\+E\+\_\+\+A\+S\+S\+I\+G\+N\+\_\+\+O\+P\+\_\+\+O\+V\+E\+R\+L\+O\+AD@{T\+V\+M\+\_\+\+D\+E\+F\+I\+N\+E\+\_\+\+A\+S\+S\+I\+G\+N\+\_\+\+O\+P\+\_\+\+O\+V\+E\+R\+L\+O\+AD}}
+\index{T\+V\+M\+\_\+\+D\+E\+F\+I\+N\+E\+\_\+\+A\+S\+S\+I\+G\+N\+\_\+\+O\+P\+\_\+\+O\+V\+E\+R\+L\+O\+AD@{T\+V\+M\+\_\+\+D\+E\+F\+I\+N\+E\+\_\+\+A\+S\+S\+I\+G\+N\+\_\+\+O\+P\+\_\+\+O\+V\+E\+R\+L\+O\+AD}!tir/op.\+h@{tir/op.\+h}}
+\subsubsection[{\texorpdfstring{T\+V\+M\+\_\+\+D\+E\+F\+I\+N\+E\+\_\+\+A\+S\+S\+I\+G\+N\+\_\+\+O\+P\+\_\+\+O\+V\+E\+R\+L\+O\+AD}{TVM_DEFINE_ASSIGN_OP_OVERLOAD}}]{\setlength{\rightskip}{0pt plus 5cm}\#define T\+V\+M\+\_\+\+D\+E\+F\+I\+N\+E\+\_\+\+A\+S\+S\+I\+G\+N\+\_\+\+O\+P\+\_\+\+O\+V\+E\+R\+L\+O\+AD(
+\begin{DoxyParamCaption}
+\item[{}]{Name, }
+\item[{}]{Op\+Func}
+\end{DoxyParamCaption}
+)}\hypertarget{tir_2op_8h_a34c733b88658efba336e09ccd85e576c}{}\label{tir_2op_8h_a34c733b88658efba336e09ccd85e576c}
+{\bfseries Value\+:}
+\begin{DoxyCode}
+\textcolor{keyword}{inline} PrimExpr Name(PrimExpr& a, PrimExpr b) \{\(\backslash\)
+    a = OpFunc(a, b);                                           \(\backslash\)
+    return a;                                                   \(\backslash\)
+  \}
+\end{DoxyCode}
+\index{tir/op.\+h@{tir/op.\+h}!T\+V\+M\+\_\+\+D\+E\+F\+I\+N\+E\+\_\+\+B\+I\+N\+O\+P\+\_\+\+C\+O\+N\+S\+T\+\_\+\+V\+A\+L\+\_\+\+O\+V\+E\+R\+L\+O\+AD@{T\+V\+M\+\_\+\+D\+E\+F\+I\+N\+E\+\_\+\+B\+I\+N\+O\+P\+\_\+\+C\+O\+N\+S\+T\+\_\+\+V\+A\+L\+\_\+\+O\+V\+E\+R\+L\+O\+AD}}
+\index{T\+V\+M\+\_\+\+D\+E\+F\+I\+N\+E\+\_\+\+B\+I\+N\+O\+P\+\_\+\+C\+O\+N\+S\+T\+\_\+\+V\+A\+L\+\_\+\+O\+V\+E\+R\+L\+O\+AD@{T\+V\+M\+\_\+\+D\+E\+F\+I\+N\+E\+\_\+\+B\+I\+N\+O\+P\+\_\+\+C\+O\+N\+S\+T\+\_\+\+V\+A\+L\+\_\+\+O\+V\+E\+R\+L\+O\+AD}!tir/op.\+h@{tir/op.\+h}}
+\subsubsection[{\texorpdfstring{T\+V\+M\+\_\+\+D\+E\+F\+I\+N\+E\+\_\+\+B\+I\+N\+O\+P\+\_\+\+C\+O\+N\+S\+T\+\_\+\+V\+A\+L\+\_\+\+O\+V\+E\+R\+L\+O\+AD}{TVM_DEFINE_BINOP_CONST_VAL_OVERLOAD}}]{\setlength{\rightskip}{0pt plus 5cm}\#define T\+V\+M\+\_\+\+D\+E\+F\+I\+N\+E\+\_\+\+B\+I\+N\+O\+P\+\_\+\+C\+O\+N\+S\+T\+\_\+\+V\+A\+L\+\_\+\+O\+V\+E\+R\+L\+O\+AD(
+\begin{DoxyParamCaption}
+\item[{}]{Name}
+\end{DoxyParamCaption}
+)}\hypertarget{tir_2op_8h_aabcf618a12e97c38fccecf7351392154}{}\label{tir_2op_8h_aabcf618a12e97c38fccecf7351392154}
+{\bfseries Value\+:}
+\begin{DoxyCode}
+\textcolor{keyword}{inline} PrimExpr Name(\textcolor{keyword}{const} PrimExpr& a, \textcolor{keywordtype}{float} b) \{           \(\backslash\)
+    return Name(a, PrimExpr(b));                               \(\backslash\)
+  \}                                                            \(\backslash\)
+  inline PrimExpr Name(\textcolor{keywordtype}{float} a, \textcolor{keyword}{const} PrimExpr& b) \{           \(\backslash\)
+    return Name(PrimExpr(a), b);                               \(\backslash\)
+  \}                                                            \(\backslash\)
+  inline PrimExpr Name(\textcolor{keywordtype}{int} a, \textcolor{keyword}{const} PrimExpr& b) \{             \(\backslash\)
+    return Name(\hyperlink{namespacetvm_1_1tir_a4ea566597880d04bd62fbec687e338b5}{tir::make\_const}(b.dtype(), a), b);             \(\backslash\)
+  \}                                                            \(\backslash\)
+  inline PrimExpr Name(\textcolor{keyword}{const} PrimExpr& a, \textcolor{keywordtype}{int} b) \{             \(\backslash\)
+    return Name(a, \hyperlink{namespacetvm_1_1tir_a4ea566597880d04bd62fbec687e338b5}{tir::make\_const}(a.dtype(), b));             \(\backslash\)
+  \}                                                            \(\backslash\)
+  inline PrimExpr Name(\textcolor{keyword}{const} PrimExpr& a, \textcolor{keywordtype}{double} b) \{          \(\backslash\)
+    return Name(a, \hyperlink{namespacetvm_1_1tir_a4ea566597880d04bd62fbec687e338b5}{tir::make\_const}(DataType::Float(64), b));   \(\backslash\)
+  \}
+\end{DoxyCode}
+\index{tir/op.\+h@{tir/op.\+h}!T\+V\+M\+\_\+\+D\+E\+F\+I\+N\+E\+\_\+\+I\+N\+T\+\_\+\+O\+P\+\_\+\+C\+O\+N\+S\+T\+\_\+\+V\+A\+L\+\_\+\+O\+V\+E\+R\+L\+O\+AD@{T\+V\+M\+\_\+\+D\+E\+F\+I\+N\+E\+\_\+\+I\+N\+T\+\_\+\+O\+P\+\_\+\+C\+O\+N\+S\+T\+\_\+\+V\+A\+L\+\_\+\+O\+V\+E\+R\+L\+O\+AD}}
+\index{T\+V\+M\+\_\+\+D\+E\+F\+I\+N\+E\+\_\+\+I\+N\+T\+\_\+\+O\+P\+\_\+\+C\+O\+N\+S\+T\+\_\+\+V\+A\+L\+\_\+\+O\+V\+E\+R\+L\+O\+AD@{T\+V\+M\+\_\+\+D\+E\+F\+I\+N\+E\+\_\+\+I\+N\+T\+\_\+\+O\+P\+\_\+\+C\+O\+N\+S\+T\+\_\+\+V\+A\+L\+\_\+\+O\+V\+E\+R\+L\+O\+AD}!tir/op.\+h@{tir/op.\+h}}
+\subsubsection[{\texorpdfstring{T\+V\+M\+\_\+\+D\+E\+F\+I\+N\+E\+\_\+\+I\+N\+T\+\_\+\+O\+P\+\_\+\+C\+O\+N\+S\+T\+\_\+\+V\+A\+L\+\_\+\+O\+V\+E\+R\+L\+O\+AD}{TVM_DEFINE_INT_OP_CONST_VAL_OVERLOAD}}]{\setlength{\rightskip}{0pt plus 5cm}\#define T\+V\+M\+\_\+\+D\+E\+F\+I\+N\+E\+\_\+\+I\+N\+T\+\_\+\+O\+P\+\_\+\+C\+O\+N\+S\+T\+\_\+\+V\+A\+L\+\_\+\+O\+V\+E\+R\+L\+O\+AD(
+\begin{DoxyParamCaption}
+\item[{}]{Name}
+\end{DoxyParamCaption}
+)}\hypertarget{tir_2op_8h_a0ad19625381aae20ca7a930260089c47}{}\label{tir_2op_8h_a0ad19625381aae20ca7a930260089c47}
+{\bfseries Value\+:}
+\begin{DoxyCode}
+\textcolor{keyword}{inline} PrimExpr Name(\textcolor{keyword}{const} PrimExpr& a, \textcolor{keywordtype}{int} b) \{            \(\backslash\)
+    return Name(a, \hyperlink{namespacetvm_1_1tir_a4ea566597880d04bd62fbec687e338b5}{tir::make\_const}(a.dtype(), b));            \(\backslash\)
+  \}                                                           \(\backslash\)
+  inline PrimExpr Name(\textcolor{keywordtype}{int} a, \textcolor{keyword}{const} PrimExpr& b) \{            \(\backslash\)
+    return Name(\hyperlink{namespacetvm_1_1tir_a4ea566597880d04bd62fbec687e338b5}{tir::make\_const}(b.dtype(), a), b);            \(\backslash\)
+  \}
+\end{DoxyCode}
+\index{tir/op.\+h@{tir/op.\+h}!T\+V\+M\+\_\+\+D\+E\+F\+I\+N\+E\+\_\+\+L\+O\+G\+I\+C\+A\+L\+\_\+\+O\+P\+\_\+\+C\+O\+N\+S\+T\+\_\+\+V\+A\+L\+\_\+\+O\+V\+E\+R\+L\+O\+AD@{T\+V\+M\+\_\+\+D\+E\+F\+I\+N\+E\+\_\+\+L\+O\+G\+I\+C\+A\+L\+\_\+\+O\+P\+\_\+\+C\+O\+N\+S\+T\+\_\+\+V\+A\+L\+\_\+\+O\+V\+E\+R\+L\+O\+AD}}
+\index{T\+V\+M\+\_\+\+D\+E\+F\+I\+N\+E\+\_\+\+L\+O\+G\+I\+C\+A\+L\+\_\+\+O\+P\+\_\+\+C\+O\+N\+S\+T\+\_\+\+V\+A\+L\+\_\+\+O\+V\+E\+R\+L\+O\+AD@{T\+V\+M\+\_\+\+D\+E\+F\+I\+N\+E\+\_\+\+L\+O\+G\+I\+C\+A\+L\+\_\+\+O\+P\+\_\+\+C\+O\+N\+S\+T\+\_\+\+V\+A\+L\+\_\+\+O\+V\+E\+R\+L\+O\+AD}!tir/op.\+h@{tir/op.\+h}}
+\subsubsection[{\texorpdfstring{T\+V\+M\+\_\+\+D\+E\+F\+I\+N\+E\+\_\+\+L\+O\+G\+I\+C\+A\+L\+\_\+\+O\+P\+\_\+\+C\+O\+N\+S\+T\+\_\+\+V\+A\+L\+\_\+\+O\+V\+E\+R\+L\+O\+AD}{TVM_DEFINE_LOGICAL_OP_CONST_VAL_OVERLOAD}}]{\setlength{\rightskip}{0pt plus 5cm}\#define T\+V\+M\+\_\+\+D\+E\+F\+I\+N\+E\+\_\+\+L\+O\+G\+I\+C\+A\+L\+\_\+\+O\+P\+\_\+\+C\+O\+N\+S\+T\+\_\+\+V\+A\+L\+\_\+\+O\+V\+E\+R\+L\+O\+AD(
+\begin{DoxyParamCaption}
+\item[{}]{Name}
+\end{DoxyParamCaption}
+)}\hypertarget{tir_2op_8h_ab6a17993efa67183ba992dac29284c80}{}\label{tir_2op_8h_ab6a17993efa67183ba992dac29284c80}
+{\bfseries Value\+:}
+\begin{DoxyCode}
+\textcolor{keyword}{inline} PrimExpr Name(\textcolor{keyword}{const} PrimExpr& a, \textcolor{keywordtype}{bool} b) \{            \(\backslash\)
+    return Name(a, PrimExpr(b));                               \(\backslash\)
+  \}                                                            \(\backslash\)
+  inline PrimExpr Name(\textcolor{keywordtype}{bool} a, \textcolor{keyword}{const} PrimExpr& b) \{            \(\backslash\)
+    return Name(PrimExpr(a), b);                               \(\backslash\)
+  \}
+\end{DoxyCode}

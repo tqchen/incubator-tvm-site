@@ -1,0 +1,50 @@
+\hypertarget{cuda_2dense_8h}{}\section{topi/include/topi/cuda/dense.h File Reference}
+\label{cuda_2dense_8h}\index{topi/include/topi/cuda/dense.\+h@{topi/include/topi/cuda/dense.\+h}}
+
+
+C\+U\+DA schedule for dense operation.  
+
+
+{\ttfamily \#include $<$tvm/te/operation.\+h$>$}\\*
+{\ttfamily \#include $<$tvm/te/schedule\+\_\+pass.\+h$>$}\\*
+{\ttfamily \#include $<$tvm/target/generic\+\_\+func.\+h$>$}\\*
+{\ttfamily \#include $<$topi/tags.\+h$>$}\\*
+{\ttfamily \#include $<$topi/detail/array\+\_\+utils.\+h$>$}\\*
+{\ttfamily \#include $<$topi/nn/dense.\+h$>$}\\*
+{\ttfamily \#include $<$topi/contrib/cublas.\+h$>$}\\*
+{\ttfamily \#include $<$topi/generic/extern.\+h$>$}\\*
+Include dependency graph for dense.\+h\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{cuda_2dense_8h__incl}
+\end{center}
+\end{figure}
+This graph shows which files directly or indirectly include this file\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=200pt]{cuda_2dense_8h__dep__incl}
+\end{center}
+\end{figure}
+\subsection*{Namespaces}
+\begin{DoxyCompactItemize}
+\item 
+ \hyperlink{namespacetopi}{topi}
+\item 
+ \hyperlink{namespacetopi_1_1cuda}{topi\+::cuda}
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classtvm_1_1te_1_1Tensor}{tvm\+::te\+::\+Tensor} \hyperlink{namespacetopi_1_1cuda_adf9851df7c1a1e8e847d2e13b2946d4e}{topi\+::cuda\+::dense\+\_\+cuda} (const \hyperlink{classtvm_1_1Target}{Target} \&target, const \hyperlink{classtvm_1_1te_1_1Tensor}{tvm\+::te\+::\+Tensor} \&data, const \hyperlink{classtvm_1_1te_1_1Tensor}{tvm\+::te\+::\+Tensor} \&weight, const \hyperlink{classtvm_1_1te_1_1Tensor}{tvm\+::te\+::\+Tensor} \&bias, const \hyperlink{namespacetvm_a41918af1a1dc386388639a9d3ad06c5d}{Data\+Type} \&out\+\_\+dtype)
+\begin{DoxyCompactList}\small\item\em Implementation of dense for C\+U\+DA backend. \end{DoxyCompactList}\item 
+\hyperlink{classtvm_1_1te_1_1Schedule}{Schedule} \hyperlink{namespacetopi_1_1cuda_ac4a8c5cd447bc5d71956173b247b3237}{topi\+::cuda\+::schedule\+\_\+dense} (const \hyperlink{classtvm_1_1Target}{Target} \&target, const \hyperlink{classtvm_1_1Array}{Array}$<$ \hyperlink{classtvm_1_1te_1_1Tensor}{Tensor} $>$ \&outs)
+\begin{DoxyCompactList}\small\item\em Create a C\+U\+DA schedule for dense. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+C\+U\+DA schedule for dense operation. 
+

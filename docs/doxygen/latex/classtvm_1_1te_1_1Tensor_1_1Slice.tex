@@ -1,0 +1,85 @@
+\hypertarget{classtvm_1_1te_1_1Tensor_1_1Slice}{}\section{tvm\+:\+:te\+:\+:Tensor\+:\+:Slice Class Reference}
+\label{classtvm_1_1te_1_1Tensor_1_1Slice}\index{tvm\+::te\+::\+Tensor\+::\+Slice@{tvm\+::te\+::\+Tensor\+::\+Slice}}
+
+
+data structure to represent a slice that fixes first k coordinates. This is used to enable syntax sugar of \hyperlink{classtvm_1_1te_1_1Tensor}{Tensor}\mbox{[}x\mbox{]}\mbox{[}y\mbox{]}\mbox{[}z\mbox{]} to get the element.  
+
+
+
+
+{\ttfamily \#include $<$tensor.\+h$>$}
+
+
+
+Collaboration diagram for tvm\+:\+:te\+:\+:Tensor\+:\+:Slice\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=202pt]{classtvm_1_1te_1_1Tensor_1_1Slice__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classtvm_1_1te_1_1Tensor_1_1Slice_ab314819e8bcca6421e9a4f33e48578c3}{Slice} (const \hyperlink{classtvm_1_1te_1_1Tensor}{Tensor} \&tensor, std\+::vector$<$ \hyperlink{classtvm_1_1PrimExpr}{Prim\+Expr} $>$ indices)
+\item 
+\hyperlink{classtvm_1_1te_1_1Tensor_1_1Slice}{Slice} \hyperlink{classtvm_1_1te_1_1Tensor_1_1Slice_a1a00e3ec5f80973c337b0e7ab9c0974d}{operator\mbox{[}$\,$\mbox{]}} (\hyperlink{classtvm_1_1PrimExpr}{Prim\+Expr} i)
+\begin{DoxyCompactList}\small\item\em get i-\/th slice from the current slice. \end{DoxyCompactList}\item 
+\hyperlink{classtvm_1_1te_1_1Tensor_1_1Slice_a52250a6adf8e78cde22dd34d1d5baaee}{operator Prim\+Expr} () const 
+\begin{DoxyCompactList}\small\item\em Convert slice to expression. This is only valid when all the coordinates are fully specified. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+data structure to represent a slice that fixes first k coordinates. This is used to enable syntax sugar of \hyperlink{classtvm_1_1te_1_1Tensor}{Tensor}\mbox{[}x\mbox{]}\mbox{[}y\mbox{]}\mbox{[}z\mbox{]} to get the element. 
+
+\subsection{Constructor \& Destructor Documentation}
+\index{tvm\+::te\+::\+Tensor\+::\+Slice@{tvm\+::te\+::\+Tensor\+::\+Slice}!Slice@{Slice}}
+\index{Slice@{Slice}!tvm\+::te\+::\+Tensor\+::\+Slice@{tvm\+::te\+::\+Tensor\+::\+Slice}}
+\subsubsection[{\texorpdfstring{Slice(const Tensor \&tensor, std\+::vector$<$ Prim\+Expr $>$ indices)}{Slice(const Tensor &tensor, std::vector< PrimExpr > indices)}}]{\setlength{\rightskip}{0pt plus 5cm}tvm\+::te\+::\+Tensor\+::\+Slice\+::\+Slice (
+\begin{DoxyParamCaption}
+\item[{const {\bf Tensor} \&}]{tensor, }
+\item[{std\+::vector$<$ {\bf Prim\+Expr} $>$}]{indices}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classtvm_1_1te_1_1Tensor_1_1Slice_ab314819e8bcca6421e9a4f33e48578c3}{}\label{classtvm_1_1te_1_1Tensor_1_1Slice_ab314819e8bcca6421e9a4f33e48578c3}
+
+
+\subsection{Member Function Documentation}
+\index{tvm\+::te\+::\+Tensor\+::\+Slice@{tvm\+::te\+::\+Tensor\+::\+Slice}!operator Prim\+Expr@{operator Prim\+Expr}}
+\index{operator Prim\+Expr@{operator Prim\+Expr}!tvm\+::te\+::\+Tensor\+::\+Slice@{tvm\+::te\+::\+Tensor\+::\+Slice}}
+\subsubsection[{\texorpdfstring{operator Prim\+Expr() const }{operator PrimExpr() const }}]{\setlength{\rightskip}{0pt plus 5cm}tvm\+::te\+::\+Tensor\+::\+Slice\+::operator {\bf Prim\+Expr} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classtvm_1_1te_1_1Tensor_1_1Slice_a52250a6adf8e78cde22dd34d1d5baaee}{}\label{classtvm_1_1te_1_1Tensor_1_1Slice_a52250a6adf8e78cde22dd34d1d5baaee}
+
+
+Convert slice to expression. This is only valid when all the coordinates are fully specified. 
+
+\begin{DoxyReturn}{Returns}
+the corresponding expression of this slice. 
+\end{DoxyReturn}
+\index{tvm\+::te\+::\+Tensor\+::\+Slice@{tvm\+::te\+::\+Tensor\+::\+Slice}!operator\mbox{[}$\,$\mbox{]}@{operator[]}}
+\index{operator\mbox{[}$\,$\mbox{]}@{operator[]}!tvm\+::te\+::\+Tensor\+::\+Slice@{tvm\+::te\+::\+Tensor\+::\+Slice}}
+\subsubsection[{\texorpdfstring{operator[](\+Prim\+Expr i)}{operator[](PrimExpr i)}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Slice} tvm\+::te\+::\+Tensor\+::\+Slice\+::operator\mbox{[}$\,$\mbox{]} (
+\begin{DoxyParamCaption}
+\item[{{\bf Prim\+Expr}}]{i}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classtvm_1_1te_1_1Tensor_1_1Slice_a1a00e3ec5f80973c337b0e7ab9c0974d}{}\label{classtvm_1_1te_1_1Tensor_1_1Slice_a1a00e3ec5f80973c337b0e7ab9c0974d}
+
+
+get i-\/th slice from the current slice. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em i} & the index of the coordinate \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the subsequent slice. 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+include/tvm/te/\hyperlink{tensor_8h}{tensor.\+h}\end{DoxyCompactItemize}

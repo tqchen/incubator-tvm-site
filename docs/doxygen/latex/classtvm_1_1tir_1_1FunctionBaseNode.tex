@@ -1,0 +1,93 @@
+\hypertarget{classtvm_1_1tir_1_1FunctionBaseNode}{}\section{tvm\+:\+:tir\+:\+:Function\+Base\+Node Class Reference}
+\label{classtvm_1_1tir_1_1FunctionBaseNode}\index{tvm\+::tir\+::\+Function\+Base\+Node@{tvm\+::tir\+::\+Function\+Base\+Node}}
+
+
+Base node of internal functions.  
+
+
+
+
+{\ttfamily \#include $<$expr.\+h$>$}
+
+
+
+Inheritance diagram for tvm\+:\+:tir\+:\+:Function\+Base\+Node\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classtvm_1_1tir_1_1FunctionBaseNode__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for tvm\+:\+:tir\+:\+:Function\+Base\+Node\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=226pt]{classtvm_1_1tir_1_1FunctionBaseNode__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual \hyperlink{classtvm_1_1tir_1_1FunctionBaseNode_a03b2f3fdfc5ae82ca081cf988dac22e4}{$\sim$\+Function\+Base\+Node} ()
+\begin{DoxyCompactList}\small\item\em virtual destructor \end{DoxyCompactList}\item 
+virtual const std\+::string \& \hyperlink{classtvm_1_1tir_1_1FunctionBaseNode_aef4781fcdee32ca1b19929fd6a2fa090}{func\+\_\+name} () const =0
+\item 
+virtual int \hyperlink{classtvm_1_1tir_1_1FunctionBaseNode_a86d8a47eb472945b01ab508c1ff94930}{num\+\_\+outputs} () const =0
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Base node of internal functions. 
+
+\subsection{Constructor \& Destructor Documentation}
+\index{tvm\+::tir\+::\+Function\+Base\+Node@{tvm\+::tir\+::\+Function\+Base\+Node}!````~Function\+Base\+Node@{$\sim$\+Function\+Base\+Node}}
+\index{````~Function\+Base\+Node@{$\sim$\+Function\+Base\+Node}!tvm\+::tir\+::\+Function\+Base\+Node@{tvm\+::tir\+::\+Function\+Base\+Node}}
+\subsubsection[{\texorpdfstring{$\sim$\+Function\+Base\+Node()}{~FunctionBaseNode()}}]{\setlength{\rightskip}{0pt plus 5cm}virtual tvm\+::tir\+::\+Function\+Base\+Node\+::$\sim$\+Function\+Base\+Node (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}\hypertarget{classtvm_1_1tir_1_1FunctionBaseNode_a03b2f3fdfc5ae82ca081cf988dac22e4}{}\label{classtvm_1_1tir_1_1FunctionBaseNode_a03b2f3fdfc5ae82ca081cf988dac22e4}
+
+
+virtual destructor 
+
+
+
+\subsection{Member Function Documentation}
+\index{tvm\+::tir\+::\+Function\+Base\+Node@{tvm\+::tir\+::\+Function\+Base\+Node}!func\+\_\+name@{func\+\_\+name}}
+\index{func\+\_\+name@{func\+\_\+name}!tvm\+::tir\+::\+Function\+Base\+Node@{tvm\+::tir\+::\+Function\+Base\+Node}}
+\subsubsection[{\texorpdfstring{func\+\_\+name() const =0}{func_name() const =0}}]{\setlength{\rightskip}{0pt plus 5cm}virtual const std\+::string\& tvm\+::tir\+::\+Function\+Base\+Node\+::func\+\_\+name (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [pure virtual]}}\hypertarget{classtvm_1_1tir_1_1FunctionBaseNode_aef4781fcdee32ca1b19929fd6a2fa090}{}\label{classtvm_1_1tir_1_1FunctionBaseNode_aef4781fcdee32ca1b19929fd6a2fa090}
+\begin{DoxyReturn}{Returns}
+the name of the function 
+\end{DoxyReturn}
+
+
+Implemented in \hyperlink{classtvm_1_1tir_1_1LoweredFuncNode_adea0c3a6dee4e102714d23340586fc2b}{tvm\+::tir\+::\+Lowered\+Func\+Node}, and \hyperlink{classtvm_1_1te_1_1OperationNode_a03b4cec709aed13088b1127a5f90c382}{tvm\+::te\+::\+Operation\+Node}.
+
+\index{tvm\+::tir\+::\+Function\+Base\+Node@{tvm\+::tir\+::\+Function\+Base\+Node}!num\+\_\+outputs@{num\+\_\+outputs}}
+\index{num\+\_\+outputs@{num\+\_\+outputs}!tvm\+::tir\+::\+Function\+Base\+Node@{tvm\+::tir\+::\+Function\+Base\+Node}}
+\subsubsection[{\texorpdfstring{num\+\_\+outputs() const =0}{num_outputs() const =0}}]{\setlength{\rightskip}{0pt plus 5cm}virtual int tvm\+::tir\+::\+Function\+Base\+Node\+::num\+\_\+outputs (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [pure virtual]}}\hypertarget{classtvm_1_1tir_1_1FunctionBaseNode_a86d8a47eb472945b01ab508c1ff94930}{}\label{classtvm_1_1tir_1_1FunctionBaseNode_a86d8a47eb472945b01ab508c1ff94930}
+\begin{DoxyReturn}{Returns}
+the number of outputs of this function 
+\end{DoxyReturn}
+
+
+Implemented in \hyperlink{classtvm_1_1te_1_1HybridOpNode_aa0ad4d918a2da7686be57ffacaff971c}{tvm\+::te\+::\+Hybrid\+Op\+Node}, \hyperlink{classtvm_1_1te_1_1ExternOpNode_a1a0ce8401e57d9c66ece44dd59b3fb7d}{tvm\+::te\+::\+Extern\+Op\+Node}, \hyperlink{classtvm_1_1te_1_1ScanOpNode_a1c3059f01aa644a41a6fbfec16538d1e}{tvm\+::te\+::\+Scan\+Op\+Node}, \hyperlink{classtvm_1_1te_1_1TensorComputeOpNode_afccdc3ad7b735d87f93dfecfc6f4021b}{tvm\+::te\+::\+Tensor\+Compute\+Op\+Node}, \hyperlink{classtvm_1_1te_1_1ComputeOpNode_ac4b034b11601367864722954c1b7c7fe}{tvm\+::te\+::\+Compute\+Op\+Node}, \hyperlink{classtvm_1_1te_1_1PlaceholderOpNode_a777ce9b0843eaaa37d0667b14d50059a}{tvm\+::te\+::\+Placeholder\+Op\+Node}, and \hyperlink{classtvm_1_1tir_1_1LoweredFuncNode_a00ac40b83b414dfa2af245f7a5117d38}{tvm\+::tir\+::\+Lowered\+Func\+Node}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+include/tvm/tir/\hyperlink{tir_2expr_8h}{expr.\+h}\end{DoxyCompactItemize}

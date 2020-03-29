@@ -1,0 +1,94 @@
+\hypertarget{namespacetvm_1_1codegen}{}\section{tvm\+:\+:codegen Namespace Reference}
+\label{namespacetvm_1_1codegen}\index{tvm\+::codegen@{tvm\+::codegen}}
+
+
+namespace for target translation and codegen.  
+
+
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classtvm_1_1runtime_1_1Module}{runtime\+::\+Module} \hyperlink{namespacetvm_1_1codegen_ad59f6371549d077dbd0c291b90f5cdf3}{Build} (const \hyperlink{classtvm_1_1Array}{Array}$<$ \hyperlink{classtvm_1_1tir_1_1LoweredFunc}{tir\+::\+Lowered\+Func} $>$ \&funcs, const std\+::string \&target)
+\begin{DoxyCompactList}\small\item\em Build a module from array of lowered function. \end{DoxyCompactList}\item 
+std\+::string \hyperlink{namespacetvm_1_1codegen_abf02059ebadcdb8bbbe5c840b646d67b}{Pack\+Imports\+ToC} (const \hyperlink{classtvm_1_1runtime_1_1Module}{runtime\+::\+Module} \&m, bool system\+\_\+lib)
+\begin{DoxyCompactList}\small\item\em Pack imported device library to a C file. Compile the C file and link with the host library will allow the D\+SO loader to automatically discover and import the dependency from the shared library. \end{DoxyCompactList}\item 
+\hyperlink{classtvm_1_1runtime_1_1Module}{runtime\+::\+Module} \hyperlink{namespacetvm_1_1codegen_ab2cd2a65bac4b26427a8ca0abe4e0bd6}{Pack\+Imports\+To\+L\+L\+VM} (const \hyperlink{classtvm_1_1runtime_1_1Module}{runtime\+::\+Module} \&m, bool system\+\_\+lib, const std\+::string \&target\+\_\+triple)
+\begin{DoxyCompactList}\small\item\em Pack imported device library to a L\+L\+VM module. Compile the L\+L\+VM module and link with the host library will allow the D\+SO loader to automatically discover and import the dependency from the shared library. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+namespace for target translation and codegen. 
+
+\subsection{Function Documentation}
+\index{tvm\+::codegen@{tvm\+::codegen}!Build@{Build}}
+\index{Build@{Build}!tvm\+::codegen@{tvm\+::codegen}}
+\subsubsection[{\texorpdfstring{Build(const Array$<$ tir\+::\+Lowered\+Func $>$ \&funcs, const std\+::string \&target)}{Build(const Array< tir::LoweredFunc > &funcs, const std::string &target)}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf runtime\+::\+Module} tvm\+::codegen\+::\+Build (
+\begin{DoxyParamCaption}
+\item[{const {\bf Array}$<$ {\bf tir\+::\+Lowered\+Func} $>$ \&}]{funcs, }
+\item[{const std\+::string \&}]{target}
+\end{DoxyParamCaption}
+)}\hypertarget{namespacetvm_1_1codegen_ad59f6371549d077dbd0c291b90f5cdf3}{}\label{namespacetvm_1_1codegen_ad59f6371549d077dbd0c291b90f5cdf3}
+
+
+Build a module from array of lowered function. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em funcs} & The functions to be built. \\
+\hline
+{\em target} & The target to be built. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The builded module.
+\end{DoxyReturn}
+\begin{DoxyNote}{Note}
+Calls global A\+PI function \char`\"{}\+\_\+codegen\+\_\+build\+\_\+\char`\"{} + target 
+\end{DoxyNote}
+\index{tvm\+::codegen@{tvm\+::codegen}!Pack\+Imports\+ToC@{Pack\+Imports\+ToC}}
+\index{Pack\+Imports\+ToC@{Pack\+Imports\+ToC}!tvm\+::codegen@{tvm\+::codegen}}
+\subsubsection[{\texorpdfstring{Pack\+Imports\+To\+C(const runtime\+::\+Module \&m, bool system\+\_\+lib)}{PackImportsToC(const runtime::Module &m, bool system_lib)}}]{\setlength{\rightskip}{0pt plus 5cm}std\+::string tvm\+::codegen\+::\+Pack\+Imports\+ToC (
+\begin{DoxyParamCaption}
+\item[{const {\bf runtime\+::\+Module} \&}]{m, }
+\item[{bool}]{system\+\_\+lib}
+\end{DoxyParamCaption}
+)}\hypertarget{namespacetvm_1_1codegen_abf02059ebadcdb8bbbe5c840b646d67b}{}\label{namespacetvm_1_1codegen_abf02059ebadcdb8bbbe5c840b646d67b}
+
+
+Pack imported device library to a C file. Compile the C file and link with the host library will allow the D\+SO loader to automatically discover and import the dependency from the shared library. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em m} & The host module with the imports. \\
+\hline
+{\em system\+\_\+lib} & Whether expose as system library. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+cstr The C string representation of the file. 
+\end{DoxyReturn}
+\index{tvm\+::codegen@{tvm\+::codegen}!Pack\+Imports\+To\+L\+L\+VM@{Pack\+Imports\+To\+L\+L\+VM}}
+\index{Pack\+Imports\+To\+L\+L\+VM@{Pack\+Imports\+To\+L\+L\+VM}!tvm\+::codegen@{tvm\+::codegen}}
+\subsubsection[{\texorpdfstring{Pack\+Imports\+To\+L\+L\+V\+M(const runtime\+::\+Module \&m, bool system\+\_\+lib, const std\+::string \&target\+\_\+triple)}{PackImportsToLLVM(const runtime::Module &m, bool system_lib, const std::string &target_triple)}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf runtime\+::\+Module} tvm\+::codegen\+::\+Pack\+Imports\+To\+L\+L\+VM (
+\begin{DoxyParamCaption}
+\item[{const {\bf runtime\+::\+Module} \&}]{m, }
+\item[{bool}]{system\+\_\+lib, }
+\item[{const std\+::string \&}]{target\+\_\+triple}
+\end{DoxyParamCaption}
+)}\hypertarget{namespacetvm_1_1codegen_ab2cd2a65bac4b26427a8ca0abe4e0bd6}{}\label{namespacetvm_1_1codegen_ab2cd2a65bac4b26427a8ca0abe4e0bd6}
+
+
+Pack imported device library to a L\+L\+VM module. Compile the L\+L\+VM module and link with the host library will allow the D\+SO loader to automatically discover and import the dependency from the shared library. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em m} & The host module with the imports. \\
+\hline
+{\em system\+\_\+lib} & Whether expose as system library. \\
+\hline
+{\em target\+\_\+triple} & L\+L\+VM target triple \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\hyperlink{classtvm_1_1runtime_1_1Module}{runtime\+::\+Module} The generated L\+L\+VM module. 
+\end{DoxyReturn}

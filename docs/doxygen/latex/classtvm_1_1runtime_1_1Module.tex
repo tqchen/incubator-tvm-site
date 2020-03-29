@@ -1,0 +1,189 @@
+\hypertarget{classtvm_1_1runtime_1_1Module}{}\section{tvm\+:\+:runtime\+:\+:Module Class Reference}
+\label{classtvm_1_1runtime_1_1Module}\index{tvm\+::runtime\+::\+Module@{tvm\+::runtime\+::\+Module}}
+
+
+\hyperlink{classtvm_1_1runtime_1_1Module}{Module} container of T\+VM.  
+
+
+
+
+{\ttfamily \#include $<$module.\+h$>$}
+
+
+
+Inheritance diagram for tvm\+:\+:runtime\+:\+:Module\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=210pt]{classtvm_1_1runtime_1_1Module__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for tvm\+:\+:runtime\+:\+:Module\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{classtvm_1_1runtime_1_1Module__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+using \hyperlink{classtvm_1_1runtime_1_1Module_a2e17df628886ffd624ab5835e85b1a58}{Container\+Type} = \hyperlink{classtvm_1_1runtime_1_1ModuleNode}{Module\+Node}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classtvm_1_1runtime_1_1Module_abfbc619b3b3166d63ec52e399c24bed9}{Module} ()
+\item 
+\hyperlink{classtvm_1_1runtime_1_1Module_abd1380b3f813c2b6acefca3aaef425f4}{Module} (\hyperlink{classtvm_1_1runtime_1_1ObjectPtr}{Object\+Ptr}$<$ \hyperlink{classtvm_1_1runtime_1_1Object}{Object} $>$ n)
+\item 
+\hyperlink{classtvm_1_1runtime_1_1PackedFunc}{Packed\+Func} \hyperlink{classtvm_1_1runtime_1_1Module_a1233f7b896bb299ef07f9e41a4ffdc17}{Get\+Function} (const std\+::string \&name, bool query\+\_\+imports=false)
+\begin{DoxyCompactList}\small\item\em Get packed function from current module by name. \end{DoxyCompactList}\item 
+void \hyperlink{classtvm_1_1runtime_1_1Module_afb5a6c9b0e0a541245958456ebe39260}{Import} (\hyperlink{classtvm_1_1runtime_1_1Module}{Module} other)
+\begin{DoxyCompactList}\small\item\em Import another module into this module. \end{DoxyCompactList}\item 
+\hyperlink{classtvm_1_1runtime_1_1ModuleNode}{Module\+Node} $\ast$ \hyperlink{classtvm_1_1runtime_1_1Module_a87bcc010c62887a453d49d46854fa354}{operator-\/$>$} ()
+\item 
+const \hyperlink{classtvm_1_1runtime_1_1ModuleNode}{Module\+Node} $\ast$ \hyperlink{classtvm_1_1runtime_1_1Module_a814b0e825cb2a4e47a797c22a397582f}{operator-\/$>$} () const 
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \hyperlink{classtvm_1_1runtime_1_1Module}{Module} \hyperlink{classtvm_1_1runtime_1_1Module_a1927112ff253c1a6150238257cc9d5dd}{Load\+From\+File} (const std\+::string \&file\+\_\+name, const std\+::string \&format=\char`\"{}\char`\"{})
+\begin{DoxyCompactList}\small\item\em Load a module from file. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+class \hyperlink{classtvm_1_1runtime_1_1Module_a908d19538a4fcadd6e93f39e4aa5292b}{Module\+Node}
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+\hyperlink{classtvm_1_1runtime_1_1Module}{Module} container of T\+VM. 
+
+\subsection{Member Typedef Documentation}
+\index{tvm\+::runtime\+::\+Module@{tvm\+::runtime\+::\+Module}!Container\+Type@{Container\+Type}}
+\index{Container\+Type@{Container\+Type}!tvm\+::runtime\+::\+Module@{tvm\+::runtime\+::\+Module}}
+\subsubsection[{\texorpdfstring{Container\+Type}{ContainerType}}]{\setlength{\rightskip}{0pt plus 5cm}using {\bf tvm\+::runtime\+::\+Module\+::\+Container\+Type} =  {\bf Module\+Node}}\hypertarget{classtvm_1_1runtime_1_1Module_a2e17df628886ffd624ab5835e85b1a58}{}\label{classtvm_1_1runtime_1_1Module_a2e17df628886ffd624ab5835e85b1a58}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\index{tvm\+::runtime\+::\+Module@{tvm\+::runtime\+::\+Module}!Module@{Module}}
+\index{Module@{Module}!tvm\+::runtime\+::\+Module@{tvm\+::runtime\+::\+Module}}
+\subsubsection[{\texorpdfstring{Module()}{Module()}}]{\setlength{\rightskip}{0pt plus 5cm}tvm\+::runtime\+::\+Module\+::\+Module (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classtvm_1_1runtime_1_1Module_abfbc619b3b3166d63ec52e399c24bed9}{}\label{classtvm_1_1runtime_1_1Module_abfbc619b3b3166d63ec52e399c24bed9}
+\index{tvm\+::runtime\+::\+Module@{tvm\+::runtime\+::\+Module}!Module@{Module}}
+\index{Module@{Module}!tvm\+::runtime\+::\+Module@{tvm\+::runtime\+::\+Module}}
+\subsubsection[{\texorpdfstring{Module(\+Object\+Ptr$<$ Object $>$ n)}{Module(ObjectPtr< Object > n)}}]{\setlength{\rightskip}{0pt plus 5cm}tvm\+::runtime\+::\+Module\+::\+Module (
+\begin{DoxyParamCaption}
+\item[{{\bf Object\+Ptr}$<$ {\bf Object} $>$}]{n}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [explicit]}}\hypertarget{classtvm_1_1runtime_1_1Module_abd1380b3f813c2b6acefca3aaef425f4}{}\label{classtvm_1_1runtime_1_1Module_abd1380b3f813c2b6acefca3aaef425f4}
+
+
+\subsection{Member Function Documentation}
+\index{tvm\+::runtime\+::\+Module@{tvm\+::runtime\+::\+Module}!Get\+Function@{Get\+Function}}
+\index{Get\+Function@{Get\+Function}!tvm\+::runtime\+::\+Module@{tvm\+::runtime\+::\+Module}}
+\subsubsection[{\texorpdfstring{Get\+Function(const std\+::string \&name, bool query\+\_\+imports=false)}{GetFunction(const std::string &name, bool query_imports=false)}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Packed\+Func} tvm\+::runtime\+::\+Module\+::\+Get\+Function (
+\begin{DoxyParamCaption}
+\item[{const std\+::string \&}]{name, }
+\item[{bool}]{query\+\_\+imports = {\ttfamily false}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classtvm_1_1runtime_1_1Module_a1233f7b896bb299ef07f9e41a4ffdc17}{}\label{classtvm_1_1runtime_1_1Module_a1233f7b896bb299ef07f9e41a4ffdc17}
+
+
+Get packed function from current module by name. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em name} & The name of the function. \\
+\hline
+{\em query\+\_\+imports} & Whether also query dependency modules. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The result function. This function will return Packed\+Func(nullptr) if function do not exist. 
+\end{DoxyReturn}
+\begin{DoxyNote}{Note}
+Implemented in packed\+\_\+func.\+cc 
+\end{DoxyNote}
+\index{tvm\+::runtime\+::\+Module@{tvm\+::runtime\+::\+Module}!Import@{Import}}
+\index{Import@{Import}!tvm\+::runtime\+::\+Module@{tvm\+::runtime\+::\+Module}}
+\subsubsection[{\texorpdfstring{Import(\+Module other)}{Import(Module other)}}]{\setlength{\rightskip}{0pt plus 5cm}void tvm\+::runtime\+::\+Module\+::\+Import (
+\begin{DoxyParamCaption}
+\item[{{\bf Module}}]{other}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classtvm_1_1runtime_1_1Module_afb5a6c9b0e0a541245958456ebe39260}{}\label{classtvm_1_1runtime_1_1Module_afb5a6c9b0e0a541245958456ebe39260}
+
+
+Import another module into this module. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em other} & The module to be imported.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyNote}{Note}
+Cyclic dependency is not allowed among modules, An error will be thrown when cyclic dependency is detected. 
+\end{DoxyNote}
+\index{tvm\+::runtime\+::\+Module@{tvm\+::runtime\+::\+Module}!Load\+From\+File@{Load\+From\+File}}
+\index{Load\+From\+File@{Load\+From\+File}!tvm\+::runtime\+::\+Module@{tvm\+::runtime\+::\+Module}}
+\subsubsection[{\texorpdfstring{Load\+From\+File(const std\+::string \&file\+\_\+name, const std\+::string \&format="""")}{LoadFromFile(const std::string &file_name, const std::string &format="")}}]{\setlength{\rightskip}{0pt plus 5cm}static {\bf Module} tvm\+::runtime\+::\+Module\+::\+Load\+From\+File (
+\begin{DoxyParamCaption}
+\item[{const std\+::string \&}]{file\+\_\+name, }
+\item[{const std\+::string \&}]{format = {\ttfamily \char`\"{}\char`\"{}}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}\hypertarget{classtvm_1_1runtime_1_1Module_a1927112ff253c1a6150238257cc9d5dd}{}\label{classtvm_1_1runtime_1_1Module_a1927112ff253c1a6150238257cc9d5dd}
+
+
+Load a module from file. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em file\+\_\+name} & The name of the host function module. \\
+\hline
+{\em format} & The format of the file. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyNote}{Note}
+This function won\textquotesingle{}t load the import relationship. Re-\/create import relationship by calling Import. 
+\end{DoxyNote}
+\index{tvm\+::runtime\+::\+Module@{tvm\+::runtime\+::\+Module}!operator-\/$>$@{operator-\/$>$}}
+\index{operator-\/$>$@{operator-\/$>$}!tvm\+::runtime\+::\+Module@{tvm\+::runtime\+::\+Module}}
+\subsubsection[{\texorpdfstring{operator-\/$>$()}{operator->()}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Module\+Node} $\ast$ tvm\+::runtime\+::\+Module\+::operator-\/$>$ (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classtvm_1_1runtime_1_1Module_a87bcc010c62887a453d49d46854fa354}{}\label{classtvm_1_1runtime_1_1Module_a87bcc010c62887a453d49d46854fa354}
+\begin{DoxyReturn}{Returns}
+internal container 
+\end{DoxyReturn}
+\index{tvm\+::runtime\+::\+Module@{tvm\+::runtime\+::\+Module}!operator-\/$>$@{operator-\/$>$}}
+\index{operator-\/$>$@{operator-\/$>$}!tvm\+::runtime\+::\+Module@{tvm\+::runtime\+::\+Module}}
+\subsubsection[{\texorpdfstring{operator-\/$>$() const }{operator->() const }}]{\setlength{\rightskip}{0pt plus 5cm}const {\bf Module\+Node} $\ast$ tvm\+::runtime\+::\+Module\+::operator-\/$>$ (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classtvm_1_1runtime_1_1Module_a814b0e825cb2a4e47a797c22a397582f}{}\label{classtvm_1_1runtime_1_1Module_a814b0e825cb2a4e47a797c22a397582f}
+\begin{DoxyReturn}{Returns}
+internal container 
+\end{DoxyReturn}
+
+
+\subsection{Friends And Related Function Documentation}
+\index{tvm\+::runtime\+::\+Module@{tvm\+::runtime\+::\+Module}!Module\+Node@{Module\+Node}}
+\index{Module\+Node@{Module\+Node}!tvm\+::runtime\+::\+Module@{tvm\+::runtime\+::\+Module}}
+\subsubsection[{\texorpdfstring{Module\+Node}{ModuleNode}}]{\setlength{\rightskip}{0pt plus 5cm}friend class {\bf Module\+Node}\hspace{0.3cm}{\ttfamily [friend]}}\hypertarget{classtvm_1_1runtime_1_1Module_a908d19538a4fcadd6e93f39e4aa5292b}{}\label{classtvm_1_1runtime_1_1Module_a908d19538a4fcadd6e93f39e4aa5292b}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+include/tvm/runtime/\hyperlink{runtime_2module_8h}{module.\+h}\item 
+include/tvm/runtime/\hyperlink{packed__func_8h}{packed\+\_\+func.\+h}\end{DoxyCompactItemize}

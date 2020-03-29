@@ -1,0 +1,113 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="classtvm_1_1GlobalTypeVar" kind="class" language="C++" prot="public">
+    <compoundname>tvm::GlobalTypeVar</compoundname>
+    <basecompoundref refid="classtvm_1_1Type" prot="public" virt="non-virtual">tvm::Type</basecompoundref>
+    <includes refid="ir_2type_8h" local="no">type.h</includes>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classtvm_1_1GlobalTypeVar_1a40e071918aaa0c43b2ef84fdf9ea567c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>tvm::GlobalTypeVar::GlobalTypeVar</definition>
+        <argsstring>(std::string name_hint, TypeKind kind)</argsstring>
+        <name>GlobalTypeVar</name>
+        <param>
+          <type>std::string</type>
+          <declname>name_hint</declname>
+        </param>
+        <param>
+          <type><ref refid="namespacetvm_1acd267f8d7f55da6ac681239831963279" kindref="member">TypeKind</ref></type>
+          <declname>kind</declname>
+        </param>
+        <briefdescription>
+<para><ref refid="classtvm_1_1Constructor" kindref="compound">Constructor</ref>. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>name_hint</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The name of the type var. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>kind</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The kind of the type var. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/ir/type.h" line="317" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classtvm_1_1GlobalTypeVar_1a2c7ca980cffbbe9fbb1c24be59ba3b79" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>tvm::GlobalTypeVar::TVM_DEFINE_OBJECT_REF_METHODS</definition>
+        <argsstring>(GlobalTypeVar, Type, GlobalTypeVarNode)</argsstring>
+        <name>TVM_DEFINE_OBJECT_REF_METHODS</name>
+        <param>
+          <type><ref refid="classtvm_1_1GlobalTypeVar" kindref="compound">GlobalTypeVar</ref></type>
+        </param>
+        <param>
+          <type><ref refid="classtvm_1_1Type" kindref="compound">Type</ref></type>
+        </param>
+        <param>
+          <type><ref refid="classtvm_1_1GlobalTypeVarNode" kindref="compound">GlobalTypeVarNode</ref></type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/ir/type.h" line="319" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Managed reference to <ref refid="classtvm_1_1GlobalTypeVarNode" kindref="compound">GlobalTypeVarNode</ref>. </para>    </briefdescription>
+    <detaileddescription>
+<para><simplesect kind="see"><para><ref refid="classtvm_1_1GlobalTypeVarNode" kindref="compound">GlobalTypeVarNode</ref> </para></simplesect>
+</para>    </detaileddescription>
+    <inheritancegraph>
+      <node id="5221">
+        <label>ObjectRef</label>
+      </node>
+      <node id="5219">
+        <label>tvm::GlobalTypeVar</label>
+        <link refid="classtvm_1_1GlobalTypeVar"/>
+        <childnode refid="5220" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="5220">
+        <label>tvm::Type</label>
+        <link refid="classtvm_1_1Type"/>
+        <childnode refid="5221" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="5224">
+        <label>ObjectRef</label>
+      </node>
+      <node id="5222">
+        <label>tvm::GlobalTypeVar</label>
+        <link refid="classtvm_1_1GlobalTypeVar"/>
+        <childnode refid="5223" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="5223">
+        <label>tvm::Type</label>
+        <link refid="classtvm_1_1Type"/>
+        <childnode refid="5224" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="include/tvm/ir/type.h" line="310" column="1" bodyfile="include/tvm/ir/type.h" bodystart="310" bodyend="320"/>
+    <listofallmembers>
+      <member refid="classtvm_1_1GlobalTypeVar_1a40e071918aaa0c43b2ef84fdf9ea567c" prot="public" virt="non-virtual"><scope>tvm::GlobalTypeVar</scope><name>GlobalTypeVar</name></member>
+      <member refid="classtvm_1_1GlobalTypeVar_1a2c7ca980cffbbe9fbb1c24be59ba3b79" prot="public" virt="non-virtual"><scope>tvm::GlobalTypeVar</scope><name>TVM_DEFINE_OBJECT_REF_METHODS</name></member>
+      <member refid="classtvm_1_1Type_1a1188605b5afd297c39e614872a608a35" prot="public" virt="non-virtual" ambiguityscope="tvm::Type::"><scope>tvm::GlobalTypeVar</scope><name>TVM_DEFINE_OBJECT_REF_METHODS</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

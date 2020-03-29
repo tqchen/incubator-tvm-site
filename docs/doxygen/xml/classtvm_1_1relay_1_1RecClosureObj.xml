@@ -1,0 +1,188 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="classtvm_1_1relay_1_1RecClosureObj" kind="class" language="C++" prot="public">
+    <compoundname>tvm::relay::RecClosureObj</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">Object</basecompoundref>
+    <includes refid="interpreter_8h" local="no">interpreter.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="classtvm_1_1relay_1_1RecClosureObj_1a7a56c67a71f2d6d6621cdb0747b9dce0" prot="public" static="no" mutable="no">
+        <type><ref refid="classtvm_1_1relay_1_1InterpreterClosure" kindref="compound">InterpreterClosure</ref></type>
+        <definition>InterpreterClosure tvm::relay::RecClosureObj::clos</definition>
+        <argsstring></argsstring>
+        <name>clos</name>
+        <briefdescription>
+<para>The closure. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/relay/interpreter.h" line="107" column="1" bodyfile="include/tvm/relay/interpreter.h" bodystart="107" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classtvm_1_1relay_1_1RecClosureObj_1ac275a8446970b548e574370b6795316f" prot="public" static="no" mutable="no">
+        <type><ref refid="classtvm_1_1relay_1_1Var" kindref="compound">Var</ref></type>
+        <definition>Var tvm::relay::RecClosureObj::bind</definition>
+        <argsstring></argsstring>
+        <name>bind</name>
+        <briefdescription>
+<para>variable the closure bind to. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/relay/interpreter.h" line="109" column="1" bodyfile="include/tvm/relay/interpreter.h" bodystart="109" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-attrib">
+      <memberdef kind="variable" id="classtvm_1_1relay_1_1RecClosureObj_1a7781e8be19a1df8072a94fba6594da6e" prot="public" static="yes" mutable="no">
+        <type>constexpr const char *</type>
+        <definition>constexpr const char* tvm::relay::RecClosureObj::_type_key</definition>
+        <argsstring></argsstring>
+        <name>_type_key</name>
+        <initializer>= &quot;interpreter.RecClosure&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/relay/interpreter.h" line="118" column="1" bodyfile="include/tvm/relay/interpreter.h" bodystart="118" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classtvm_1_1relay_1_1RecClosureObj_1a8dded0ea6f2775cd75b697e11497c29d" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>tvm::relay::RecClosureObj::RecClosureObj</definition>
+        <argsstring>()</argsstring>
+        <name>RecClosureObj</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/relay/interpreter.h" line="111" column="1" bodyfile="include/tvm/relay/interpreter.h" bodystart="111" bodyend="111"/>
+      </memberdef>
+      <memberdef kind="function" id="classtvm_1_1relay_1_1RecClosureObj_1a352f57e3fda160d51855c046b877e244" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void tvm::relay::RecClosureObj::VisitAttrs</definition>
+        <argsstring>(tvm::AttrVisitor *v)</argsstring>
+        <name>VisitAttrs</name>
+        <param>
+          <type><ref refid="classtvm_1_1AttrVisitor" kindref="compound">tvm::AttrVisitor</ref> *</type>
+          <declname>v</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/relay/interpreter.h" line="113" column="1" bodyfile="include/tvm/relay/interpreter.h" bodystart="113" bodyend="116"/>
+      </memberdef>
+      <memberdef kind="function" id="classtvm_1_1relay_1_1RecClosureObj_1a72a5a3b08813ae5655ea77d9099429b4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>tvm::relay::RecClosureObj::TVM_DECLARE_FINAL_OBJECT_INFO</definition>
+        <argsstring>(RecClosureObj, Object)</argsstring>
+        <name>TVM_DECLARE_FINAL_OBJECT_INFO</name>
+        <param>
+          <type><ref refid="classtvm_1_1relay_1_1RecClosureObj" kindref="compound">RecClosureObj</ref></type>
+        </param>
+        <param>
+          <type>Object</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/relay/interpreter.h" line="119" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>The container type of <ref refid="classtvm_1_1relay_1_1RecClosure" kindref="compound">RecClosure</ref>. </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="6407">
+        <label>tvm::relay::RecClosureObj</label>
+        <link refid="classtvm_1_1relay_1_1RecClosureObj"/>
+        <childnode refid="6408" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="6408">
+        <label>Object</label>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="6414">
+        <label>ObjectRef</label>
+      </node>
+      <node id="6415">
+        <label>tvm::relay::InterpreterClosure</label>
+        <link refid="classtvm_1_1relay_1_1InterpreterClosure"/>
+        <childnode refid="6416" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="6409">
+        <label>tvm::relay::RecClosureObj</label>
+        <link refid="classtvm_1_1relay_1_1RecClosureObj"/>
+        <childnode refid="6410" relation="public-inheritance">
+        </childnode>
+        <childnode refid="6411" relation="usage">
+          <edgelabel>+bind</edgelabel>
+        </childnode>
+        <childnode refid="6415" relation="usage">
+          <edgelabel>+clos</edgelabel>
+        </childnode>
+      </node>
+      <node id="6417">
+        <label>tvm::runtime::ObjectRef</label>
+        <link refid="classtvm_1_1runtime_1_1ObjectRef"/>
+        <childnode refid="6418" relation="usage">
+          <edgelabel>#data_</edgelabel>
+        </childnode>
+      </node>
+      <node id="6412">
+        <label>Expr</label>
+        <link refid="classtvm_1_1RelayExpr"/>
+        <childnode refid="6413" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="6410">
+        <label>Object</label>
+      </node>
+      <node id="6413">
+        <label>tvm::BaseExpr</label>
+        <link refid="classtvm_1_1BaseExpr"/>
+        <childnode refid="6414" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="6418">
+        <label>tvm::runtime::ObjectPtr&lt; tvm::runtime::Object &gt;</label>
+        <link refid="classtvm_1_1runtime_1_1ObjectPtr"/>
+      </node>
+      <node id="6416">
+        <label>tvm::runtime::vm::Closure</label>
+        <link refid="classtvm_1_1runtime_1_1vm_1_1Closure"/>
+        <childnode refid="6417" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="6411">
+        <label>tvm::relay::Var</label>
+        <link refid="classtvm_1_1relay_1_1Var"/>
+        <childnode refid="6412" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="include/tvm/relay/interpreter.h" line="104" column="1" bodyfile="include/tvm/relay/interpreter.h" bodystart="104" bodyend="120"/>
+    <listofallmembers>
+      <member refid="classtvm_1_1relay_1_1RecClosureObj_1a7781e8be19a1df8072a94fba6594da6e" prot="public" virt="non-virtual"><scope>tvm::relay::RecClosureObj</scope><name>_type_key</name></member>
+      <member refid="classtvm_1_1relay_1_1RecClosureObj_1ac275a8446970b548e574370b6795316f" prot="public" virt="non-virtual"><scope>tvm::relay::RecClosureObj</scope><name>bind</name></member>
+      <member refid="classtvm_1_1relay_1_1RecClosureObj_1a7a56c67a71f2d6d6621cdb0747b9dce0" prot="public" virt="non-virtual"><scope>tvm::relay::RecClosureObj</scope><name>clos</name></member>
+      <member refid="classtvm_1_1relay_1_1RecClosureObj_1a8dded0ea6f2775cd75b697e11497c29d" prot="public" virt="non-virtual"><scope>tvm::relay::RecClosureObj</scope><name>RecClosureObj</name></member>
+      <member refid="classtvm_1_1relay_1_1RecClosureObj_1a72a5a3b08813ae5655ea77d9099429b4" prot="public" virt="non-virtual"><scope>tvm::relay::RecClosureObj</scope><name>TVM_DECLARE_FINAL_OBJECT_INFO</name></member>
+      <member refid="classtvm_1_1relay_1_1RecClosureObj_1a352f57e3fda160d51855c046b877e244" prot="public" virt="non-virtual"><scope>tvm::relay::RecClosureObj</scope><name>VisitAttrs</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

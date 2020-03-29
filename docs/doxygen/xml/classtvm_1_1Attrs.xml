@@ -1,0 +1,70 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="classtvm_1_1Attrs" kind="class" language="C++" prot="public">
+    <compoundname>tvm::Attrs</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">ObjectRef</basecompoundref>
+    <derivedcompoundref refid="classtvm_1_1DictAttrs" prot="public" virt="non-virtual">tvm::DictAttrs</derivedcompoundref>
+    <includes refid="ir_2attrs_8h" local="no">attrs.h</includes>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classtvm_1_1Attrs_1a1bf8ffc23955fe9b066d838ca41819e1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>tvm::Attrs::TVM_DEFINE_OBJECT_REF_METHODS</definition>
+        <argsstring>(Attrs, ObjectRef, BaseAttrsNode)</argsstring>
+        <name>TVM_DEFINE_OBJECT_REF_METHODS</name>
+        <param>
+          <type><ref refid="classtvm_1_1Attrs" kindref="compound">Attrs</ref></type>
+        </param>
+        <param>
+          <type>ObjectRef</type>
+        </param>
+        <param>
+          <type><ref refid="classtvm_1_1BaseAttrsNode" kindref="compound">BaseAttrsNode</ref></type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/ir/attrs.h" line="296" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Managed reference to <ref refid="classtvm_1_1BaseAttrsNode" kindref="compound">BaseAttrsNode</ref>. </para>    </briefdescription>
+    <detaileddescription>
+<para><simplesect kind="see"><para><ref refid="classtvm_1_1AttrsNode" kindref="compound">AttrsNode</ref>, <ref refid="classtvm_1_1BaseAttrsNode" kindref="compound">BaseAttrsNode</ref> </para></simplesect>
+</para>    </detaileddescription>
+    <inheritancegraph>
+      <node id="3978">
+        <label>ObjectRef</label>
+      </node>
+      <node id="3977">
+        <label>tvm::Attrs</label>
+        <link refid="classtvm_1_1Attrs"/>
+        <childnode refid="3978" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="3979">
+        <label>tvm::DictAttrs</label>
+        <link refid="classtvm_1_1DictAttrs"/>
+        <childnode refid="3977" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="3981">
+        <label>ObjectRef</label>
+      </node>
+      <node id="3980">
+        <label>tvm::Attrs</label>
+        <link refid="classtvm_1_1Attrs"/>
+        <childnode refid="3981" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="include/tvm/ir/attrs.h" line="294" column="1" bodyfile="include/tvm/ir/attrs.h" bodystart="294" bodyend="297"/>
+    <listofallmembers>
+      <member refid="classtvm_1_1Attrs_1a1bf8ffc23955fe9b066d838ca41819e1" prot="public" virt="non-virtual"><scope>tvm::Attrs</scope><name>TVM_DEFINE_OBJECT_REF_METHODS</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

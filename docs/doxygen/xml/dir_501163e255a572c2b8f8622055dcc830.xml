@@ -1,0 +1,21 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="dir_501163e255a572c2b8f8622055dcc830" kind="dir">
+    <compoundname>topi/include/topi/nn</compoundname>
+    <innerfile refid="batch__matmul_8h">batch_matmul.h</innerfile>
+    <innerfile refid="bias__add_8h">bias_add.h</innerfile>
+    <innerfile refid="nn_2bnn_8h">bnn.h</innerfile>
+    <innerfile refid="nn_2dense_8h">dense.h</innerfile>
+    <innerfile refid="dilate_8h">dilate.h</innerfile>
+    <innerfile refid="flatten_8h">flatten.h</innerfile>
+    <innerfile refid="local__response__norm_8h">local_response_norm.h</innerfile>
+    <innerfile refid="mapping_8h">mapping.h</innerfile>
+    <innerfile refid="nn_2pooling_8h">pooling.h</innerfile>
+    <innerfile refid="nn_2softmax_8h">softmax.h</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="topi/include/topi/nn/"/>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,66 @@
+\hypertarget{classtvm_1_1tir_1_1StmtExprMutator}{}\section{tvm\+:\+:tir\+:\+:Stmt\+Expr\+Mutator Class Reference}
+\label{classtvm_1_1tir_1_1StmtExprMutator}\index{tvm\+::tir\+::\+Stmt\+Expr\+Mutator@{tvm\+::tir\+::\+Stmt\+Expr\+Mutator}}
+
+
+Mutator that recursively mutates stmts and exprs on them.  
+
+
+
+
+{\ttfamily \#include $<$stmt\+\_\+functor.\+h$>$}
+
+
+
+Inheritance diagram for tvm\+:\+:tir\+:\+:Stmt\+Expr\+Mutator\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classtvm_1_1tir_1_1StmtExprMutator__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for tvm\+:\+:tir\+:\+:Stmt\+Expr\+Mutator\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classtvm_1_1tir_1_1StmtExprMutator__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classtvm_1_1PrimExpr}{Prim\+Expr} \hyperlink{classtvm_1_1tir_1_1StmtExprMutator_afc4dedb17cb5f2057fc8200e6c298fab}{Visit\+Expr} (const \hyperlink{classtvm_1_1PrimExpr}{Prim\+Expr} \&e) override
+\begin{DoxyCompactList}\small\item\em Visitor to Exprs, can be overriden to do recursive changes to Exprs. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+Mutator that recursively mutates stmts and exprs on them. 
+
+\subsection{Member Function Documentation}
+\index{tvm\+::tir\+::\+Stmt\+Expr\+Mutator@{tvm\+::tir\+::\+Stmt\+Expr\+Mutator}!Visit\+Expr@{Visit\+Expr}}
+\index{Visit\+Expr@{Visit\+Expr}!tvm\+::tir\+::\+Stmt\+Expr\+Mutator@{tvm\+::tir\+::\+Stmt\+Expr\+Mutator}}
+\subsubsection[{\texorpdfstring{Visit\+Expr(const Prim\+Expr \&e) override}{VisitExpr(const PrimExpr &e) override}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Prim\+Expr} tvm\+::tir\+::\+Stmt\+Expr\+Mutator\+::\+Visit\+Expr (
+\begin{DoxyParamCaption}
+\item[{const {\bf Prim\+Expr} \&}]{e}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [override]}, {\ttfamily [protected]}, {\ttfamily [virtual]}}\hypertarget{classtvm_1_1tir_1_1StmtExprMutator_afc4dedb17cb5f2057fc8200e6c298fab}{}\label{classtvm_1_1tir_1_1StmtExprMutator_afc4dedb17cb5f2057fc8200e6c298fab}
+
+
+Visitor to Exprs, can be overriden to do recursive changes to Exprs. 
+
+\begin{DoxyNote}{Note}
+A common pattern is to call \hyperlink{classtvm_1_1tir_1_1ExprMutator}{Expr\+Mutator} here, or have a class sub-\/class both \hyperlink{classtvm_1_1tir_1_1StmtMutator}{Stmt\+Mutator} and \hyperlink{classtvm_1_1tir_1_1ExprMutator}{Expr\+Mutator} and redirect Mutate to Expr\+Mutator\+::\+Mutate(\+Expr) 
+\end{DoxyNote}
+
+
+Reimplemented from \hyperlink{classtvm_1_1tir_1_1StmtMutator_ad7864f64476c846a8023fdba1188b74e}{tvm\+::tir\+::\+Stmt\+Mutator}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+include/tvm/tir/\hyperlink{stmt__functor_8h}{stmt\+\_\+functor.\+h}\end{DoxyCompactItemize}

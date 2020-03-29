@@ -1,0 +1,242 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="classtvm_1_1tir_1_1ProducerConsumerNode" kind="class" language="C++" prot="public">
+    <compoundname>tvm::tir::ProducerConsumerNode</compoundname>
+    <basecompoundref refid="classtvm_1_1tir_1_1StmtNode" prot="public" virt="non-virtual">tvm::tir::StmtNode</basecompoundref>
+    <includes refid="stmt_8h" local="no">stmt.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="classtvm_1_1tir_1_1ProducerConsumerNode_1afcbaebd57b61574b9c5a5d9484a99141" prot="public" static="no" mutable="no">
+        <type><ref refid="classtvm_1_1tir_1_1FunctionRef" kindref="compound">FunctionRef</ref></type>
+        <definition>FunctionRef tvm::tir::ProducerConsumerNode::func</definition>
+        <argsstring></argsstring>
+        <name>func</name>
+        <briefdescription>
+<para>The corresponding tensor. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/tir/stmt.h" line="186" column="1" bodyfile="include/tvm/tir/stmt.h" bodystart="186" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classtvm_1_1tir_1_1ProducerConsumerNode_1a98b5bfa381b562072ccce2e5c8e68f47" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool tvm::tir::ProducerConsumerNode::is_producer</definition>
+        <argsstring></argsstring>
+        <name>is_producer</name>
+        <briefdescription>
+<para>Whether the relation is producer. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/tir/stmt.h" line="188" column="1" bodyfile="include/tvm/tir/stmt.h" bodystart="188" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classtvm_1_1tir_1_1ProducerConsumerNode_1afcebfca1903bfab9575737ef4e032db8" prot="public" static="no" mutable="no">
+        <type><ref refid="classtvm_1_1tir_1_1Stmt" kindref="compound">Stmt</ref></type>
+        <definition>Stmt tvm::tir::ProducerConsumerNode::body</definition>
+        <argsstring></argsstring>
+        <name>body</name>
+        <briefdescription>
+<para>Body to be executed. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/tir/stmt.h" line="190" column="1" bodyfile="include/tvm/tir/stmt.h" bodystart="190" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-attrib">
+      <memberdef kind="variable" id="classtvm_1_1tir_1_1ProducerConsumerNode_1ae1504c476d474369fde0cffd4ef5a789" prot="public" static="yes" mutable="no">
+        <type>constexpr const char *</type>
+        <definition>constexpr const char* tvm::tir::ProducerConsumerNode::_type_key</definition>
+        <argsstring></argsstring>
+        <name>_type_key</name>
+        <initializer>= &quot;ProducerConsumer&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/tir/stmt.h" line="213" column="1" bodyfile="include/tvm/tir/stmt.h" bodystart="213" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classtvm_1_1tir_1_1ProducerConsumerNode_1ab4e6b450d633132a9f0d8c50565fdd8e" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void tvm::tir::ProducerConsumerNode::VisitAttrs</definition>
+        <argsstring>(AttrVisitor *v)</argsstring>
+        <name>VisitAttrs</name>
+        <param>
+          <type><ref refid="classtvm_1_1AttrVisitor" kindref="compound">AttrVisitor</ref> *</type>
+          <declname>v</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/tir/stmt.h" line="192" column="1" bodyfile="include/tvm/tir/stmt.h" bodystart="192" bodyend="196"/>
+      </memberdef>
+      <memberdef kind="function" id="classtvm_1_1tir_1_1ProducerConsumerNode_1a2ce3ac67db42d9c54729e661f6b5a403" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool tvm::tir::ProducerConsumerNode::SEqualReduce</definition>
+        <argsstring>(const ProducerConsumerNode *other, SEqualReducer equal) const </argsstring>
+        <name>SEqualReduce</name>
+        <param>
+          <type>const <ref refid="classtvm_1_1tir_1_1ProducerConsumerNode" kindref="compound">ProducerConsumerNode</ref> *</type>
+          <declname>other</declname>
+        </param>
+        <param>
+          <type><ref refid="classtvm_1_1SEqualReducer" kindref="compound">SEqualReducer</ref></type>
+          <declname>equal</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/tir/stmt.h" line="198" column="1" bodyfile="include/tvm/tir/stmt.h" bodystart="198" bodyend="203"/>
+      </memberdef>
+      <memberdef kind="function" id="classtvm_1_1tir_1_1ProducerConsumerNode_1acaab529d59e07cc163bb52fb96ce368c" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void tvm::tir::ProducerConsumerNode::SHashReduce</definition>
+        <argsstring>(SHashReducer hash_reduce) const </argsstring>
+        <name>SHashReduce</name>
+        <param>
+          <type><ref refid="classtvm_1_1SHashReducer" kindref="compound">SHashReducer</ref></type>
+          <declname>hash_reduce</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/tir/stmt.h" line="205" column="1" bodyfile="include/tvm/tir/stmt.h" bodystart="205" bodyend="209"/>
+      </memberdef>
+      <memberdef kind="function" id="classtvm_1_1tir_1_1ProducerConsumerNode_1ab269d8db81bd3952928675726c64dab4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>tvm::tir::ProducerConsumerNode::TVM_DECLARE_FINAL_OBJECT_INFO</definition>
+        <argsstring>(ProducerConsumerNode, StmtNode)</argsstring>
+        <name>TVM_DECLARE_FINAL_OBJECT_INFO</name>
+        <param>
+          <type><ref refid="classtvm_1_1tir_1_1ProducerConsumerNode" kindref="compound">ProducerConsumerNode</ref></type>
+        </param>
+        <param>
+          <type><ref refid="classtvm_1_1tir_1_1StmtNode" kindref="compound">StmtNode</ref></type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/tir/stmt.h" line="214" column="1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="classtvm_1_1tir_1_1ProducerConsumerNode_1acb3c6c5bd1be72e5429efe1a4fe51c7b" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classtvm_1_1tir_1_1Stmt" kindref="compound">Stmt</ref></type>
+        <definition>static Stmt tvm::tir::ProducerConsumerNode::make</definition>
+        <argsstring>(FunctionRef func, bool is_producer, Stmt body)</argsstring>
+        <name>make</name>
+        <param>
+          <type><ref refid="classtvm_1_1tir_1_1FunctionRef" kindref="compound">FunctionRef</ref></type>
+          <declname>func</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>is_producer</declname>
+        </param>
+        <param>
+          <type><ref refid="classtvm_1_1tir_1_1Stmt" kindref="compound">Stmt</ref></type>
+          <declname>body</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/tir/stmt.h" line="211" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>annotation node of producer/consumer relation. </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="6320">
+        <label>tvm::tir::ProducerConsumerNode</label>
+        <link refid="classtvm_1_1tir_1_1ProducerConsumerNode"/>
+        <childnode refid="6321" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="6322">
+        <label>Object</label>
+      </node>
+      <node id="6321">
+        <label>tvm::tir::StmtNode</label>
+        <link refid="classtvm_1_1tir_1_1StmtNode"/>
+        <childnode refid="6322" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="6327">
+        <label>ObjectRef</label>
+      </node>
+      <node id="6326">
+        <label>tvm::tir::FunctionRef</label>
+        <link refid="classtvm_1_1tir_1_1FunctionRef"/>
+        <childnode refid="6327" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="6323">
+        <label>tvm::tir::ProducerConsumerNode</label>
+        <link refid="classtvm_1_1tir_1_1ProducerConsumerNode"/>
+        <childnode refid="6324" relation="public-inheritance">
+        </childnode>
+        <childnode refid="6326" relation="usage">
+          <edgelabel>+func</edgelabel>
+        </childnode>
+        <childnode refid="6328" relation="usage">
+          <edgelabel>+body</edgelabel>
+        </childnode>
+      </node>
+      <node id="6325">
+        <label>Object</label>
+      </node>
+      <node id="6328">
+        <label>tvm::tir::Stmt</label>
+        <link refid="classtvm_1_1tir_1_1Stmt"/>
+        <childnode refid="6327" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="6324">
+        <label>tvm::tir::StmtNode</label>
+        <link refid="classtvm_1_1tir_1_1StmtNode"/>
+        <childnode refid="6325" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="include/tvm/tir/stmt.h" line="183" column="1" bodyfile="include/tvm/tir/stmt.h" bodystart="183" bodyend="215"/>
+    <listofallmembers>
+      <member refid="classtvm_1_1tir_1_1StmtNode_1a463ce5a124a6c222706888122bb44865" prot="public" virt="non-virtual"><scope>tvm::tir::ProducerConsumerNode</scope><name>_type_has_method_sequal_reduce</name></member>
+      <member refid="classtvm_1_1tir_1_1StmtNode_1ab7e026e32383e67e620719b025e00056" prot="public" virt="non-virtual"><scope>tvm::tir::ProducerConsumerNode</scope><name>_type_has_method_shash_reduce</name></member>
+      <member refid="classtvm_1_1tir_1_1ProducerConsumerNode_1ae1504c476d474369fde0cffd4ef5a789" prot="public" virt="non-virtual"><scope>tvm::tir::ProducerConsumerNode</scope><name>_type_key</name></member>
+      <member refid="classtvm_1_1tir_1_1ProducerConsumerNode_1afcebfca1903bfab9575737ef4e032db8" prot="public" virt="non-virtual"><scope>tvm::tir::ProducerConsumerNode</scope><name>body</name></member>
+      <member refid="classtvm_1_1tir_1_1ProducerConsumerNode_1afcbaebd57b61574b9c5a5d9484a99141" prot="public" virt="non-virtual"><scope>tvm::tir::ProducerConsumerNode</scope><name>func</name></member>
+      <member refid="classtvm_1_1tir_1_1ProducerConsumerNode_1a98b5bfa381b562072ccce2e5c8e68f47" prot="public" virt="non-virtual"><scope>tvm::tir::ProducerConsumerNode</scope><name>is_producer</name></member>
+      <member refid="classtvm_1_1tir_1_1ProducerConsumerNode_1acb3c6c5bd1be72e5429efe1a4fe51c7b" prot="public" virt="non-virtual"><scope>tvm::tir::ProducerConsumerNode</scope><name>make</name></member>
+      <member refid="classtvm_1_1tir_1_1ProducerConsumerNode_1a2ce3ac67db42d9c54729e661f6b5a403" prot="public" virt="non-virtual"><scope>tvm::tir::ProducerConsumerNode</scope><name>SEqualReduce</name></member>
+      <member refid="classtvm_1_1tir_1_1ProducerConsumerNode_1acaab529d59e07cc163bb52fb96ce368c" prot="public" virt="non-virtual"><scope>tvm::tir::ProducerConsumerNode</scope><name>SHashReduce</name></member>
+      <member refid="classtvm_1_1tir_1_1StmtNode_1ab4627fb1adbea88d4fe3a33679569421" prot="public" virt="non-virtual"><scope>tvm::tir::ProducerConsumerNode</scope><name>TVM_DECLARE_BASE_OBJECT_INFO</name></member>
+      <member refid="classtvm_1_1tir_1_1ProducerConsumerNode_1ab269d8db81bd3952928675726c64dab4" prot="public" virt="non-virtual"><scope>tvm::tir::ProducerConsumerNode</scope><name>TVM_DECLARE_FINAL_OBJECT_INFO</name></member>
+      <member refid="classtvm_1_1tir_1_1ProducerConsumerNode_1ab4e6b450d633132a9f0d8c50565fdd8e" prot="public" virt="non-virtual"><scope>tvm::tir::ProducerConsumerNode</scope><name>VisitAttrs</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

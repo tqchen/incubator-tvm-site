@@ -1,0 +1,149 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="classtvm_1_1tir_1_1StmtExprMutator" kind="class" language="C++" prot="public">
+    <compoundname>tvm::tir::StmtExprMutator</compoundname>
+    <basecompoundref refid="classtvm_1_1tir_1_1StmtMutator" prot="public" virt="non-virtual">tvm::tir::StmtMutator</basecompoundref>
+    <basecompoundref refid="classtvm_1_1tir_1_1ExprMutator" prot="public" virt="non-virtual">tvm::tir::ExprMutator</basecompoundref>
+    <includes refid="stmt__functor_8h" local="no">stmt_functor.h</includes>
+      <sectiondef kind="protected-func">
+      <memberdef kind="function" id="classtvm_1_1tir_1_1StmtExprMutator_1afc4dedb17cb5f2057fc8200e6c298fab" prot="protected" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type><ref refid="classtvm_1_1PrimExpr" kindref="compound">PrimExpr</ref></type>
+        <definition>PrimExpr tvm::tir::StmtExprMutator::VisitExpr</definition>
+        <argsstring>(const PrimExpr &amp;e) override</argsstring>
+        <name>VisitExpr</name>
+        <reimplements refid="classtvm_1_1tir_1_1StmtMutator_1ad7864f64476c846a8023fdba1188b74e">VisitExpr</reimplements>
+        <param>
+          <type>const <ref refid="classtvm_1_1PrimExpr" kindref="compound">PrimExpr</ref> &amp;</type>
+          <declname>e</declname>
+        </param>
+        <briefdescription>
+<para>Visitor to Exprs, can be overriden to do recursive changes to Exprs. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="note"><para>A common pattern is to call <ref refid="classtvm_1_1tir_1_1ExprMutator" kindref="compound">ExprMutator</ref> here, or have a class sub-class both <ref refid="classtvm_1_1tir_1_1StmtMutator" kindref="compound">StmtMutator</ref> and <ref refid="classtvm_1_1tir_1_1ExprMutator" kindref="compound">ExprMutator</ref> and redirect Mutate to ExprMutator::Mutate(Expr) </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/tir/stmt_functor.h" line="311" column="1" bodyfile="include/tvm/tir/stmt_functor.h" bodystart="311" bodyend="313"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Mutator that recursively mutates stmts and exprs on them. </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="6966">
+        <label>tvm::tir::StmtMutator</label>
+        <link refid="classtvm_1_1tir_1_1StmtMutator"/>
+        <childnode refid="6967" relation="protected-inheritance">
+        </childnode>
+      </node>
+      <node id="6965">
+        <label>tvm::tir::StmtExprMutator</label>
+        <link refid="classtvm_1_1tir_1_1StmtExprMutator"/>
+        <childnode refid="6966" relation="public-inheritance">
+        </childnode>
+        <childnode refid="6968" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="6969">
+        <label>tvm::tir::ExprFunctor&lt; PrimExpr(const PrimExpr &amp;)&gt;</label>
+        <link refid="classtvm_1_1tir_1_1ExprFunctor"/>
+      </node>
+      <node id="6967">
+        <label>tvm::tir::StmtFunctor&lt; Stmt(const Stmt &amp;)&gt;</label>
+        <link refid="classtvm_1_1tir_1_1StmtFunctor"/>
+      </node>
+      <node id="6968">
+        <label>tvm::tir::ExprMutator</label>
+        <link refid="classtvm_1_1tir_1_1ExprMutator"/>
+        <childnode refid="6969" relation="protected-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="6971">
+        <label>tvm::tir::StmtMutator</label>
+        <link refid="classtvm_1_1tir_1_1StmtMutator"/>
+        <childnode refid="6972" relation="protected-inheritance">
+        </childnode>
+      </node>
+      <node id="6970">
+        <label>tvm::tir::StmtExprMutator</label>
+        <link refid="classtvm_1_1tir_1_1StmtExprMutator"/>
+        <childnode refid="6971" relation="public-inheritance">
+        </childnode>
+        <childnode refid="6973" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="6974">
+        <label>tvm::tir::ExprFunctor&lt; PrimExpr(const PrimExpr &amp;)&gt;</label>
+        <link refid="classtvm_1_1tir_1_1ExprFunctor"/>
+      </node>
+      <node id="6972">
+        <label>tvm::tir::StmtFunctor&lt; Stmt(const Stmt &amp;)&gt;</label>
+        <link refid="classtvm_1_1tir_1_1StmtFunctor"/>
+      </node>
+      <node id="6973">
+        <label>tvm::tir::ExprMutator</label>
+        <link refid="classtvm_1_1tir_1_1ExprMutator"/>
+        <childnode refid="6974" relation="protected-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="include/tvm/tir/stmt_functor.h" line="302" column="1" bodyfile="include/tvm/tir/stmt_functor.h" bodystart="300" bodyend="314"/>
+    <listofallmembers>
+      <member refid="classtvm_1_1tir_1_1StmtMutator_1a620e6041832441d25ee4f4d65921231f" prot="protected" virt="non-virtual"><scope>tvm::tir::StmtExprMutator</scope><name>allow_copy_on_write_</name></member>
+      <member refid="classtvm_1_1tir_1_1StmtMutator_1a8dfe0e96ba9d3b4cd08e57c20c1eb414" prot="protected" virt="non-virtual"><scope>tvm::tir::StmtExprMutator</scope><name>CopyOnWrite</name></member>
+      <member refid="classtvm_1_1tir_1_1StmtMutator_1a18e378023df3122893ffaf50bb89464e" prot="public" virt="non-virtual"><scope>tvm::tir::StmtExprMutator</scope><name>operator()</name></member>
+      <member refid="classtvm_1_1tir_1_1StmtExprMutator_1afc4dedb17cb5f2057fc8200e6c298fab" prot="protected" virt="virtual"><scope>tvm::tir::StmtExprMutator</scope><name>VisitExpr</name></member>
+      <member refid="classtvm_1_1tir_1_1ExprMutator_1af6e722273818f70d0894aeecd1b55615" prot="protected" virt="non-virtual"><scope>tvm::tir::StmtExprMutator</scope><name>VisitExpr_</name></member>
+      <member refid="classtvm_1_1tir_1_1ExprMutator_1ade08e1786bce8d1cb220d3f54f3fbfeb" prot="protected" virt="non-virtual"><scope>tvm::tir::StmtExprMutator</scope><name>VisitExpr_</name></member>
+      <member refid="classtvm_1_1tir_1_1ExprMutator_1af195e0234cba3ed03d36b04a03d3e0e0" prot="protected" virt="non-virtual"><scope>tvm::tir::StmtExprMutator</scope><name>VisitExpr_</name></member>
+      <member refid="classtvm_1_1tir_1_1ExprMutator_1ae1c5c9652137783b1d0636b2837143aa" prot="protected" virt="non-virtual"><scope>tvm::tir::StmtExprMutator</scope><name>VisitExpr_</name></member>
+      <member refid="classtvm_1_1tir_1_1ExprMutator_1a7fd8ced88ccf3bc75447d27154596962" prot="protected" virt="non-virtual"><scope>tvm::tir::StmtExprMutator</scope><name>VisitExpr_</name></member>
+      <member refid="classtvm_1_1tir_1_1ExprMutator_1a74b0abe37c0d7c5829744219274e9b98" prot="protected" virt="non-virtual"><scope>tvm::tir::StmtExprMutator</scope><name>VisitExpr_</name></member>
+      <member refid="classtvm_1_1tir_1_1ExprMutator_1a9818e8f5c5e9e438e826b68adc0da578" prot="protected" virt="non-virtual"><scope>tvm::tir::StmtExprMutator</scope><name>VisitExpr_</name></member>
+      <member refid="classtvm_1_1tir_1_1ExprMutator_1ab65cea9aab1ba22666e48e4fe3bc26e1" prot="protected" virt="non-virtual"><scope>tvm::tir::StmtExprMutator</scope><name>VisitExpr_</name></member>
+      <member refid="classtvm_1_1tir_1_1ExprMutator_1a6c9481c2567c16e9dc7ca0a9551cc5ae" prot="protected" virt="non-virtual"><scope>tvm::tir::StmtExprMutator</scope><name>VisitExpr_</name></member>
+      <member refid="classtvm_1_1tir_1_1ExprMutator_1abef01921a361e7f5277611c7fcc090a3" prot="protected" virt="non-virtual"><scope>tvm::tir::StmtExprMutator</scope><name>VisitExpr_</name></member>
+      <member refid="classtvm_1_1tir_1_1ExprMutator_1a043a4dd18fa1f63ab32a714a5c2a8fae" prot="protected" virt="non-virtual"><scope>tvm::tir::StmtExprMutator</scope><name>VisitExpr_</name></member>
+      <member refid="classtvm_1_1tir_1_1ExprMutator_1a68b5c138ad08c2b490cde5b0dafae044" prot="protected" virt="non-virtual"><scope>tvm::tir::StmtExprMutator</scope><name>VisitExpr_</name></member>
+      <member refid="classtvm_1_1tir_1_1ExprMutator_1a44047f3394527b92a7b9b2c09c3d1383" prot="protected" virt="non-virtual"><scope>tvm::tir::StmtExprMutator</scope><name>VisitExpr_</name></member>
+      <member refid="classtvm_1_1tir_1_1ExprMutator_1aef327502870481ce2d92592b03c5e130" prot="protected" virt="non-virtual"><scope>tvm::tir::StmtExprMutator</scope><name>VisitExpr_</name></member>
+      <member refid="classtvm_1_1tir_1_1ExprMutator_1aa03b672865f654dd5f1c78fb012f1061" prot="protected" virt="non-virtual"><scope>tvm::tir::StmtExprMutator</scope><name>VisitExpr_</name></member>
+      <member refid="classtvm_1_1tir_1_1ExprMutator_1aa587c243decbe1667b93050e7e6128ff" prot="protected" virt="non-virtual"><scope>tvm::tir::StmtExprMutator</scope><name>VisitExpr_</name></member>
+      <member refid="classtvm_1_1tir_1_1ExprMutator_1abba3fcf085a7be3337ef56765c7ed935" prot="protected" virt="non-virtual"><scope>tvm::tir::StmtExprMutator</scope><name>VisitExpr_</name></member>
+      <member refid="classtvm_1_1tir_1_1ExprMutator_1a0e9280d0c56c074e4bc67a207dfc0721" prot="protected" virt="non-virtual"><scope>tvm::tir::StmtExprMutator</scope><name>VisitExpr_</name></member>
+      <member refid="classtvm_1_1tir_1_1ExprMutator_1a03165c7d449104444daf8fb2329ed3f3" prot="protected" virt="non-virtual"><scope>tvm::tir::StmtExprMutator</scope><name>VisitExpr_</name></member>
+      <member refid="classtvm_1_1tir_1_1ExprMutator_1aabb9f6232b3ab527bd34293bb2c9d047" prot="protected" virt="non-virtual"><scope>tvm::tir::StmtExprMutator</scope><name>VisitExpr_</name></member>
+      <member refid="classtvm_1_1tir_1_1ExprMutator_1ac8f8e578e5a375dc472b822736e5a78b" prot="protected" virt="non-virtual"><scope>tvm::tir::StmtExprMutator</scope><name>VisitExpr_</name></member>
+      <member refid="classtvm_1_1tir_1_1ExprMutator_1a67c6648dbec499b4c3bb825b6610b2c7" prot="protected" virt="non-virtual"><scope>tvm::tir::StmtExprMutator</scope><name>VisitExpr_</name></member>
+      <member refid="classtvm_1_1tir_1_1ExprMutator_1a54677bf1b2cec622c781ba6ed4e03af9" prot="protected" virt="non-virtual"><scope>tvm::tir::StmtExprMutator</scope><name>VisitExpr_</name></member>
+      <member refid="classtvm_1_1tir_1_1ExprMutator_1a0fc3e6d6e34c31aa132f697a3d1be7d4" prot="protected" virt="non-virtual"><scope>tvm::tir::StmtExprMutator</scope><name>VisitExpr_</name></member>
+      <member refid="classtvm_1_1tir_1_1ExprMutator_1afbd5d1454529710c5ab5ddb17eca75ab" prot="protected" virt="non-virtual"><scope>tvm::tir::StmtExprMutator</scope><name>VisitExpr_</name></member>
+      <member refid="classtvm_1_1tir_1_1ExprMutator_1a3bc473fd37451c435cc46d1191446951" prot="protected" virt="non-virtual"><scope>tvm::tir::StmtExprMutator</scope><name>VisitExpr_</name></member>
+      <member refid="classtvm_1_1tir_1_1ExprMutator_1a4c2ba005e353a9cbf171c7fa019ef727" prot="protected" virt="non-virtual"><scope>tvm::tir::StmtExprMutator</scope><name>VisitExpr_</name></member>
+      <member refid="classtvm_1_1tir_1_1ExprMutator_1a26ea1a3a8efcf9319349533ba3e69456" prot="protected" virt="non-virtual"><scope>tvm::tir::StmtExprMutator</scope><name>VisitExpr_</name></member>
+      <member refid="classtvm_1_1tir_1_1ExprMutator_1a8e7e4d5ed12604f8c6019dd6d7cf93b8" prot="protected" virt="non-virtual"><scope>tvm::tir::StmtExprMutator</scope><name>VisitExpr_</name></member>
+      <member refid="classtvm_1_1tir_1_1ExprMutator_1a46b43325d9ad8cfe09818ba1dda4b46f" prot="protected" virt="non-virtual"><scope>tvm::tir::StmtExprMutator</scope><name>VisitExpr_</name></member>
+      <member refid="classtvm_1_1tir_1_1ExprMutator_1aa0156d62a4bf1cf57ffab381125bfd6b" prot="protected" virt="non-virtual"><scope>tvm::tir::StmtExprMutator</scope><name>VisitExpr_</name></member>
+      <member refid="classtvm_1_1tir_1_1ExprMutator_1abe827bb16d1930225186627791cea131" prot="protected" virt="non-virtual"><scope>tvm::tir::StmtExprMutator</scope><name>VisitExpr_</name></member>
+      <member refid="classtvm_1_1tir_1_1StmtMutator_1a1e24adea3e49d9381246b376349db51f" prot="protected" virt="non-virtual"><scope>tvm::tir::StmtExprMutator</scope><name>VisitSeqStmt_</name></member>
+      <member refid="classtvm_1_1tir_1_1StmtMutator_1a4306d1beba05fa1ac582503498a6d7ce" prot="protected" virt="non-virtual"><scope>tvm::tir::StmtExprMutator</scope><name>VisitStmt</name></member>
+      <member refid="classtvm_1_1tir_1_1StmtMutator_1ac22f8d85fc78d756b8e11e53eb1bf2df" prot="protected" virt="non-virtual"><scope>tvm::tir::StmtExprMutator</scope><name>VisitStmt_</name></member>
+      <member refid="classtvm_1_1tir_1_1StmtMutator_1a7bc8fad1381862ce012819bd4762a1b6" prot="protected" virt="non-virtual"><scope>tvm::tir::StmtExprMutator</scope><name>VisitStmt_</name></member>
+      <member refid="classtvm_1_1tir_1_1StmtMutator_1a51d66e88ec3779c117bab5ba9406091c" prot="protected" virt="non-virtual"><scope>tvm::tir::StmtExprMutator</scope><name>VisitStmt_</name></member>
+      <member refid="classtvm_1_1tir_1_1StmtMutator_1afad3009a7d05a345ca868a980f58b9ca" prot="protected" virt="non-virtual"><scope>tvm::tir::StmtExprMutator</scope><name>VisitStmt_</name></member>
+      <member refid="classtvm_1_1tir_1_1StmtMutator_1ab094e88d4bda5882756d136c15db6260" prot="protected" virt="non-virtual"><scope>tvm::tir::StmtExprMutator</scope><name>VisitStmt_</name></member>
+      <member refid="classtvm_1_1tir_1_1StmtMutator_1a3b116212aaf79bc898f3446a35f7fd3e" prot="protected" virt="non-virtual"><scope>tvm::tir::StmtExprMutator</scope><name>VisitStmt_</name></member>
+      <member refid="classtvm_1_1tir_1_1StmtMutator_1a0cb470550bb15df90ced3e95961ad3d7" prot="protected" virt="non-virtual"><scope>tvm::tir::StmtExprMutator</scope><name>VisitStmt_</name></member>
+      <member refid="classtvm_1_1tir_1_1StmtMutator_1aa3a94c8b418881f10d855592b847c2e7" prot="protected" virt="non-virtual"><scope>tvm::tir::StmtExprMutator</scope><name>VisitStmt_</name></member>
+      <member refid="classtvm_1_1tir_1_1StmtMutator_1a4474981a7a3ff050b0013e7249a99a04" prot="protected" virt="non-virtual"><scope>tvm::tir::StmtExprMutator</scope><name>VisitStmt_</name></member>
+      <member refid="classtvm_1_1tir_1_1StmtMutator_1abcdd396a82232cb6a1e2031f28be380e" prot="protected" virt="non-virtual"><scope>tvm::tir::StmtExprMutator</scope><name>VisitStmt_</name></member>
+      <member refid="classtvm_1_1tir_1_1StmtMutator_1a83bc8d9f6cb1137ee1de48164329969c" prot="protected" virt="non-virtual"><scope>tvm::tir::StmtExprMutator</scope><name>VisitStmt_</name></member>
+      <member refid="classtvm_1_1tir_1_1StmtMutator_1aecd16bf1a6715ea36f6c30e5dc2ceae7" prot="protected" virt="non-virtual"><scope>tvm::tir::StmtExprMutator</scope><name>VisitStmt_</name></member>
+      <member refid="classtvm_1_1tir_1_1StmtMutator_1a60b18d6d6bfcb692ab4a369465a175a3" prot="protected" virt="non-virtual"><scope>tvm::tir::StmtExprMutator</scope><name>VisitStmt_</name></member>
+      <member refid="classtvm_1_1tir_1_1StmtMutator_1a2ec423a8f109916abf02ac463308f58a" prot="protected" virt="non-virtual"><scope>tvm::tir::StmtExprMutator</scope><name>VisitStmt_</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

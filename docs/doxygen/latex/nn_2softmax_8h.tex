@@ -1,0 +1,39 @@
+\hypertarget{nn_2softmax_8h}{}\section{topi/include/topi/nn/softmax.h File Reference}
+\label{nn_2softmax_8h}\index{topi/include/topi/nn/softmax.\+h@{topi/include/topi/nn/softmax.\+h}}
+
+
+Softmax op constructions.  
+
+
+{\ttfamily \#include $<$tvm/te/operation.\+h$>$}\\*
+{\ttfamily \#include $<$topi/reduction.\+h$>$}\\*
+{\ttfamily \#include $<$topi/tags.\+h$>$}\\*
+{\ttfamily \#include $<$algorithm$>$}\\*
+{\ttfamily \#include $<$string$>$}\\*
+Include dependency graph for softmax.\+h\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{nn_2softmax_8h__incl}
+\end{center}
+\end{figure}
+\subsection*{Namespaces}
+\begin{DoxyCompactItemize}
+\item 
+ \hyperlink{namespacetopi}{topi}
+\item 
+ \hyperlink{namespacetopi_1_1nn}{topi\+::nn}
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classtvm_1_1te_1_1Tensor}{Tensor} \hyperlink{namespacetopi_1_1nn_a1c845f2e02a677c556929d41a399e729}{topi\+::nn\+::softmax} (const \hyperlink{classtvm_1_1te_1_1Tensor}{Tensor} \&x, int axis=-\/1, std\+::string name=\char`\"{}tensor\char`\"{}, std\+::string tag=\char`\"{}softmax\+\_\+output\char`\"{})
+\begin{DoxyCompactList}\small\item\em Softmax activation. \end{DoxyCompactList}\item 
+\hyperlink{classtvm_1_1te_1_1Tensor}{Tensor} \hyperlink{namespacetopi_1_1nn_a667b9b98da3fd9a918a603d1b8aad5d7}{topi\+::nn\+::log\+\_\+softmax} (const \hyperlink{classtvm_1_1te_1_1Tensor}{Tensor} \&x, std\+::string name=\char`\"{}tensor\char`\"{}, std\+::string tag=\char`\"{}log\+\_\+softmax\+\_\+output\char`\"{})
+\begin{DoxyCompactList}\small\item\em Log softmax activation. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Softmax op constructions. 
+

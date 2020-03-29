@@ -1,0 +1,34 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="classtvm_1_1relay_1_1ExprFunctor" kind="class" language="C++" prot="public">
+    <compoundname>tvm::relay::ExprFunctor</compoundname>
+    <includes refid="relay_2expr__functor_8h" local="no">expr_functor.h</includes>
+    <templateparamlist>
+      <param>
+        <type>typename FType</type>
+      </param>
+    </templateparamlist>
+    <briefdescription>
+<para>A dynamical functor that dispatches on in the first Expr argument. You can use this as a more powerful Visitor, since it allows you to define function signatures of Visit <ref refid="classtvm_1_1relay_1_1Function" kindref="compound">Function</ref>. </para>    </briefdescription>
+    <detaileddescription>
+<para><simplesect kind="see"><para>tvm/ir_functor.h</para></simplesect>
+<parameterlist kind="templateparam"><parameteritem>
+<parameternamelist>
+<parametername>FType</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>function signiture This type is only defined for FType with function signature R(const Expr&amp;, Args...) </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>    </detaileddescription>
+    <collaborationgraph>
+      <node id="4982">
+        <label>tvm::relay::ExprFunctor&lt; FType &gt;</label>
+        <link refid="classtvm_1_1relay_1_1ExprFunctor"/>
+      </node>
+    </collaborationgraph>
+    <location file="include/tvm/relay/expr_functor.h" line="54" column="1" bodyfile="include/tvm/relay/expr_functor.h" bodystart="54" bodyend="-1"/>
+    <listofallmembers>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

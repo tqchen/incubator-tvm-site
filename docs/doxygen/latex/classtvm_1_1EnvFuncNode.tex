@@ -1,0 +1,146 @@
+\hypertarget{classtvm_1_1EnvFuncNode}{}\section{tvm\+:\+:Env\+Func\+Node Class Reference}
+\label{classtvm_1_1EnvFuncNode}\index{tvm\+::\+Env\+Func\+Node@{tvm\+::\+Env\+Func\+Node}}
+
+
+A serializable function backed by T\+VM\textquotesingle{}s global environment.  
+
+
+
+
+{\ttfamily \#include $<$env\+\_\+func.\+h$>$}
+
+
+
+Inheritance diagram for tvm\+:\+:Env\+Func\+Node\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=285pt]{classtvm_1_1EnvFuncNode__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for tvm\+:\+:Env\+Func\+Node\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=309pt]{classtvm_1_1EnvFuncNode__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classtvm_1_1EnvFuncNode_a808b81ced7b01c4955b4994a89bc71a4}{Env\+Func\+Node} ()
+\begin{DoxyCompactList}\small\item\em constructor \end{DoxyCompactList}\item 
+void \hyperlink{classtvm_1_1EnvFuncNode_adab1a481f01261dfaab5414dce4afc10}{Visit\+Attrs} (\hyperlink{classtvm_1_1AttrVisitor}{Attr\+Visitor} $\ast$v)
+\item 
+bool \hyperlink{classtvm_1_1EnvFuncNode_a1b15e905003c230e45013a922d7d7e37}{S\+Equal\+Reduce} (const \hyperlink{classtvm_1_1EnvFuncNode}{Env\+Func\+Node} $\ast$other, \hyperlink{classtvm_1_1SEqualReducer}{S\+Equal\+Reducer} equal) const 
+\item 
+void \hyperlink{classtvm_1_1EnvFuncNode_af8522e9ab96eb5570f1c9f2d9ed0eac2}{S\+Hash\+Reduce} (\hyperlink{classtvm_1_1SHashReducer}{S\+Hash\+Reducer} hash\+\_\+reduce) const 
+\item 
+\hyperlink{classtvm_1_1EnvFuncNode_a5f8074cd3210ba959a2463896acab3be}{T\+V\+M\+\_\+\+D\+E\+C\+L\+A\+R\+E\+\_\+\+F\+I\+N\+A\+L\+\_\+\+O\+B\+J\+E\+C\+T\+\_\+\+I\+N\+FO} (\hyperlink{classtvm_1_1EnvFuncNode}{Env\+Func\+Node}, Object)
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+std\+::string \hyperlink{classtvm_1_1EnvFuncNode_a03b61a3ac22549e110ef2369686f16ea}{name}
+\begin{DoxyCompactList}\small\item\em Unique name of the global function. \end{DoxyCompactList}\item 
+\hyperlink{classtvm_1_1runtime_1_1PackedFunc}{runtime\+::\+Packed\+Func} \hyperlink{classtvm_1_1EnvFuncNode_a83cd0f272d6f3551630480229b18ff05}{func}
+\begin{DoxyCompactList}\small\item\em The internal packed function. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static constexpr const char $\ast$ \hyperlink{classtvm_1_1EnvFuncNode_a202ae30915b0d728ee73eaba5f3919e4}{\+\_\+type\+\_\+key} = \char`\"{}Env\+Func\char`\"{}
+\item 
+static constexpr bool \hyperlink{classtvm_1_1EnvFuncNode_a876e3cfce49b83fb62d9143136dfe5b8}{\+\_\+type\+\_\+has\+\_\+method\+\_\+sequal\+\_\+reduce} = true
+\item 
+static constexpr bool \hyperlink{classtvm_1_1EnvFuncNode_af9c25500c1ef7491607f8c40c28c3063}{\+\_\+type\+\_\+has\+\_\+method\+\_\+shash\+\_\+reduce} = true
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+A serializable function backed by T\+VM\textquotesingle{}s global environment. 
+
+This is a wrapper to enable serializable global Packed\+Func. An \hyperlink{classtvm_1_1EnvFunc}{Env\+Func} is saved by its name in the global registry under the assumption that the same function is registered during load. \begin{DoxySeeAlso}{See also}
+\hyperlink{classtvm_1_1EnvFunc}{Env\+Func} 
+\end{DoxySeeAlso}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\index{tvm\+::\+Env\+Func\+Node@{tvm\+::\+Env\+Func\+Node}!Env\+Func\+Node@{Env\+Func\+Node}}
+\index{Env\+Func\+Node@{Env\+Func\+Node}!tvm\+::\+Env\+Func\+Node@{tvm\+::\+Env\+Func\+Node}}
+\subsubsection[{\texorpdfstring{Env\+Func\+Node()}{EnvFuncNode()}}]{\setlength{\rightskip}{0pt plus 5cm}tvm\+::\+Env\+Func\+Node\+::\+Env\+Func\+Node (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classtvm_1_1EnvFuncNode_a808b81ced7b01c4955b4994a89bc71a4}{}\label{classtvm_1_1EnvFuncNode_a808b81ced7b01c4955b4994a89bc71a4}
+
+
+constructor 
+
+
+
+\subsection{Member Function Documentation}
+\index{tvm\+::\+Env\+Func\+Node@{tvm\+::\+Env\+Func\+Node}!S\+Equal\+Reduce@{S\+Equal\+Reduce}}
+\index{S\+Equal\+Reduce@{S\+Equal\+Reduce}!tvm\+::\+Env\+Func\+Node@{tvm\+::\+Env\+Func\+Node}}
+\subsubsection[{\texorpdfstring{S\+Equal\+Reduce(const Env\+Func\+Node $\ast$other, S\+Equal\+Reducer equal) const }{SEqualReduce(const EnvFuncNode *other, SEqualReducer equal) const }}]{\setlength{\rightskip}{0pt plus 5cm}bool tvm\+::\+Env\+Func\+Node\+::\+S\+Equal\+Reduce (
+\begin{DoxyParamCaption}
+\item[{const {\bf Env\+Func\+Node} $\ast$}]{other, }
+\item[{{\bf S\+Equal\+Reducer}}]{equal}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classtvm_1_1EnvFuncNode_a1b15e905003c230e45013a922d7d7e37}{}\label{classtvm_1_1EnvFuncNode_a1b15e905003c230e45013a922d7d7e37}
+\index{tvm\+::\+Env\+Func\+Node@{tvm\+::\+Env\+Func\+Node}!S\+Hash\+Reduce@{S\+Hash\+Reduce}}
+\index{S\+Hash\+Reduce@{S\+Hash\+Reduce}!tvm\+::\+Env\+Func\+Node@{tvm\+::\+Env\+Func\+Node}}
+\subsubsection[{\texorpdfstring{S\+Hash\+Reduce(\+S\+Hash\+Reducer hash\+\_\+reduce) const }{SHashReduce(SHashReducer hash_reduce) const }}]{\setlength{\rightskip}{0pt plus 5cm}void tvm\+::\+Env\+Func\+Node\+::\+S\+Hash\+Reduce (
+\begin{DoxyParamCaption}
+\item[{{\bf S\+Hash\+Reducer}}]{hash\+\_\+reduce}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classtvm_1_1EnvFuncNode_af8522e9ab96eb5570f1c9f2d9ed0eac2}{}\label{classtvm_1_1EnvFuncNode_af8522e9ab96eb5570f1c9f2d9ed0eac2}
+\index{tvm\+::\+Env\+Func\+Node@{tvm\+::\+Env\+Func\+Node}!T\+V\+M\+\_\+\+D\+E\+C\+L\+A\+R\+E\+\_\+\+F\+I\+N\+A\+L\+\_\+\+O\+B\+J\+E\+C\+T\+\_\+\+I\+N\+FO@{T\+V\+M\+\_\+\+D\+E\+C\+L\+A\+R\+E\+\_\+\+F\+I\+N\+A\+L\+\_\+\+O\+B\+J\+E\+C\+T\+\_\+\+I\+N\+FO}}
+\index{T\+V\+M\+\_\+\+D\+E\+C\+L\+A\+R\+E\+\_\+\+F\+I\+N\+A\+L\+\_\+\+O\+B\+J\+E\+C\+T\+\_\+\+I\+N\+FO@{T\+V\+M\+\_\+\+D\+E\+C\+L\+A\+R\+E\+\_\+\+F\+I\+N\+A\+L\+\_\+\+O\+B\+J\+E\+C\+T\+\_\+\+I\+N\+FO}!tvm\+::\+Env\+Func\+Node@{tvm\+::\+Env\+Func\+Node}}
+\subsubsection[{\texorpdfstring{T\+V\+M\+\_\+\+D\+E\+C\+L\+A\+R\+E\+\_\+\+F\+I\+N\+A\+L\+\_\+\+O\+B\+J\+E\+C\+T\+\_\+\+I\+N\+F\+O(\+Env\+Func\+Node, Object)}{TVM_DECLARE_FINAL_OBJECT_INFO(EnvFuncNode, Object)}}]{\setlength{\rightskip}{0pt plus 5cm}tvm\+::\+Env\+Func\+Node\+::\+T\+V\+M\+\_\+\+D\+E\+C\+L\+A\+R\+E\+\_\+\+F\+I\+N\+A\+L\+\_\+\+O\+B\+J\+E\+C\+T\+\_\+\+I\+N\+FO (
+\begin{DoxyParamCaption}
+\item[{{\bf Env\+Func\+Node}}]{, }
+\item[{Object}]{}
+\end{DoxyParamCaption}
+)}\hypertarget{classtvm_1_1EnvFuncNode_a5f8074cd3210ba959a2463896acab3be}{}\label{classtvm_1_1EnvFuncNode_a5f8074cd3210ba959a2463896acab3be}
+\index{tvm\+::\+Env\+Func\+Node@{tvm\+::\+Env\+Func\+Node}!Visit\+Attrs@{Visit\+Attrs}}
+\index{Visit\+Attrs@{Visit\+Attrs}!tvm\+::\+Env\+Func\+Node@{tvm\+::\+Env\+Func\+Node}}
+\subsubsection[{\texorpdfstring{Visit\+Attrs(\+Attr\+Visitor $\ast$v)}{VisitAttrs(AttrVisitor *v)}}]{\setlength{\rightskip}{0pt plus 5cm}void tvm\+::\+Env\+Func\+Node\+::\+Visit\+Attrs (
+\begin{DoxyParamCaption}
+\item[{{\bf Attr\+Visitor} $\ast$}]{v}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classtvm_1_1EnvFuncNode_adab1a481f01261dfaab5414dce4afc10}{}\label{classtvm_1_1EnvFuncNode_adab1a481f01261dfaab5414dce4afc10}
+
+
+\subsection{Member Data Documentation}
+\index{tvm\+::\+Env\+Func\+Node@{tvm\+::\+Env\+Func\+Node}!\+\_\+type\+\_\+has\+\_\+method\+\_\+sequal\+\_\+reduce@{\+\_\+type\+\_\+has\+\_\+method\+\_\+sequal\+\_\+reduce}}
+\index{\+\_\+type\+\_\+has\+\_\+method\+\_\+sequal\+\_\+reduce@{\+\_\+type\+\_\+has\+\_\+method\+\_\+sequal\+\_\+reduce}!tvm\+::\+Env\+Func\+Node@{tvm\+::\+Env\+Func\+Node}}
+\subsubsection[{\texorpdfstring{\+\_\+type\+\_\+has\+\_\+method\+\_\+sequal\+\_\+reduce}{_type_has_method_sequal_reduce}}]{\setlength{\rightskip}{0pt plus 5cm}constexpr bool tvm\+::\+Env\+Func\+Node\+::\+\_\+type\+\_\+has\+\_\+method\+\_\+sequal\+\_\+reduce = true\hspace{0.3cm}{\ttfamily [static]}}\hypertarget{classtvm_1_1EnvFuncNode_a876e3cfce49b83fb62d9143136dfe5b8}{}\label{classtvm_1_1EnvFuncNode_a876e3cfce49b83fb62d9143136dfe5b8}
+\index{tvm\+::\+Env\+Func\+Node@{tvm\+::\+Env\+Func\+Node}!\+\_\+type\+\_\+has\+\_\+method\+\_\+shash\+\_\+reduce@{\+\_\+type\+\_\+has\+\_\+method\+\_\+shash\+\_\+reduce}}
+\index{\+\_\+type\+\_\+has\+\_\+method\+\_\+shash\+\_\+reduce@{\+\_\+type\+\_\+has\+\_\+method\+\_\+shash\+\_\+reduce}!tvm\+::\+Env\+Func\+Node@{tvm\+::\+Env\+Func\+Node}}
+\subsubsection[{\texorpdfstring{\+\_\+type\+\_\+has\+\_\+method\+\_\+shash\+\_\+reduce}{_type_has_method_shash_reduce}}]{\setlength{\rightskip}{0pt plus 5cm}constexpr bool tvm\+::\+Env\+Func\+Node\+::\+\_\+type\+\_\+has\+\_\+method\+\_\+shash\+\_\+reduce = true\hspace{0.3cm}{\ttfamily [static]}}\hypertarget{classtvm_1_1EnvFuncNode_af9c25500c1ef7491607f8c40c28c3063}{}\label{classtvm_1_1EnvFuncNode_af9c25500c1ef7491607f8c40c28c3063}
+\index{tvm\+::\+Env\+Func\+Node@{tvm\+::\+Env\+Func\+Node}!\+\_\+type\+\_\+key@{\+\_\+type\+\_\+key}}
+\index{\+\_\+type\+\_\+key@{\+\_\+type\+\_\+key}!tvm\+::\+Env\+Func\+Node@{tvm\+::\+Env\+Func\+Node}}
+\subsubsection[{\texorpdfstring{\+\_\+type\+\_\+key}{_type_key}}]{\setlength{\rightskip}{0pt plus 5cm}constexpr const char$\ast$ tvm\+::\+Env\+Func\+Node\+::\+\_\+type\+\_\+key = \char`\"{}Env\+Func\char`\"{}\hspace{0.3cm}{\ttfamily [static]}}\hypertarget{classtvm_1_1EnvFuncNode_a202ae30915b0d728ee73eaba5f3919e4}{}\label{classtvm_1_1EnvFuncNode_a202ae30915b0d728ee73eaba5f3919e4}
+\index{tvm\+::\+Env\+Func\+Node@{tvm\+::\+Env\+Func\+Node}!func@{func}}
+\index{func@{func}!tvm\+::\+Env\+Func\+Node@{tvm\+::\+Env\+Func\+Node}}
+\subsubsection[{\texorpdfstring{func}{func}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf runtime\+::\+Packed\+Func} tvm\+::\+Env\+Func\+Node\+::func}\hypertarget{classtvm_1_1EnvFuncNode_a83cd0f272d6f3551630480229b18ff05}{}\label{classtvm_1_1EnvFuncNode_a83cd0f272d6f3551630480229b18ff05}
+
+
+The internal packed function. 
+
+\index{tvm\+::\+Env\+Func\+Node@{tvm\+::\+Env\+Func\+Node}!name@{name}}
+\index{name@{name}!tvm\+::\+Env\+Func\+Node@{tvm\+::\+Env\+Func\+Node}}
+\subsubsection[{\texorpdfstring{name}{name}}]{\setlength{\rightskip}{0pt plus 5cm}std\+::string tvm\+::\+Env\+Func\+Node\+::name}\hypertarget{classtvm_1_1EnvFuncNode_a03b61a3ac22549e110ef2369686f16ea}{}\label{classtvm_1_1EnvFuncNode_a03b61a3ac22549e110ef2369686f16ea}
+
+
+Unique name of the global function. 
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+include/tvm/ir/\hyperlink{env__func_8h}{env\+\_\+func.\+h}\end{DoxyCompactItemize}

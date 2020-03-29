@@ -1,0 +1,69 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="classtvm_1_1tir_1_1Stmt" kind="class" language="C++" prot="public">
+    <compoundname>tvm::tir::Stmt</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">ObjectRef</basecompoundref>
+    <derivedcompoundref refid="classtvm_1_1tir_1_1SeqStmt" prot="public" virt="non-virtual">tvm::tir::SeqStmt</derivedcompoundref>
+    <includes refid="stmt_8h" local="no">stmt.h</includes>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classtvm_1_1tir_1_1Stmt_1aaca2f7bd4110028470b82825bcbb87ac" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>tvm::tir::Stmt::TVM_DEFINE_OBJECT_REF_METHODS</definition>
+        <argsstring>(Stmt, ObjectRef, StmtNode)</argsstring>
+        <name>TVM_DEFINE_OBJECT_REF_METHODS</name>
+        <param>
+          <type><ref refid="classtvm_1_1tir_1_1Stmt" kindref="compound">Stmt</ref></type>
+        </param>
+        <param>
+          <type>ObjectRef</type>
+        </param>
+        <param>
+          <type><ref refid="classtvm_1_1tir_1_1StmtNode" kindref="compound">StmtNode</ref></type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/tir/stmt.h" line="49" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Container of all statements. </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="6961">
+        <label>ObjectRef</label>
+      </node>
+      <node id="6960">
+        <label>tvm::tir::Stmt</label>
+        <link refid="classtvm_1_1tir_1_1Stmt"/>
+        <childnode refid="6961" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="6962">
+        <label>tvm::tir::SeqStmt</label>
+        <link refid="classtvm_1_1tir_1_1SeqStmt"/>
+        <childnode refid="6960" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="6964">
+        <label>ObjectRef</label>
+      </node>
+      <node id="6963">
+        <label>tvm::tir::Stmt</label>
+        <link refid="classtvm_1_1tir_1_1Stmt"/>
+        <childnode refid="6964" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="include/tvm/tir/stmt.h" line="47" column="1" bodyfile="include/tvm/tir/stmt.h" bodystart="47" bodyend="50"/>
+    <listofallmembers>
+      <member refid="classtvm_1_1tir_1_1Stmt_1aaca2f7bd4110028470b82825bcbb87ac" prot="public" virt="non-virtual"><scope>tvm::tir::Stmt</scope><name>TVM_DEFINE_OBJECT_REF_METHODS</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

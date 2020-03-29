@@ -1,0 +1,14 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="namespacetvm_1_1relay_1_1qnn" kind="namespace" language="C++">
+    <compoundname>tvm::relay::qnn</compoundname>
+    <innerclass refid="structtvm_1_1relay_1_1qnn_1_1QuantizeAttrs" prot="public">tvm::relay::qnn::QuantizeAttrs</innerclass>
+    <innerclass refid="structtvm_1_1relay_1_1qnn_1_1RequantizeAttrs" prot="public">tvm::relay::qnn::RequantizeAttrs</innerclass>
+    <innernamespace refid="namespacetvm_1_1relay_1_1qnn_1_1transform">tvm::relay::qnn::transform</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="include/tvm/relay/qnn/attrs.h" line="32" column="1"/>
+  </compounddef>
+</doxygen>

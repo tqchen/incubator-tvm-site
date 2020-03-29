@@ -1,0 +1,1077 @@
+\hypertarget{c__runtime__api_8h}{}\section{include/tvm/runtime/c\+\_\+runtime\+\_\+api.h File Reference}
+\label{c__runtime__api_8h}\index{include/tvm/runtime/c\+\_\+runtime\+\_\+api.\+h@{include/tvm/runtime/c\+\_\+runtime\+\_\+api.\+h}}
+{\ttfamily \#include $<$dlpack/dlpack.\+h$>$}\\*
+{\ttfamily \#include $<$stdint.\+h$>$}\\*
+{\ttfamily \#include $<$stddef.\+h$>$}\\*
+Include dependency graph for c\+\_\+runtime\+\_\+api.\+h\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=315pt]{c__runtime__api_8h__incl}
+\end{center}
+\end{figure}
+This graph shows which files directly or indirectly include this file\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{c__runtime__api_8h__dep__incl}
+\end{center}
+\end{figure}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+union \hyperlink{unionTVMValue}{T\+V\+M\+Value}
+\begin{DoxyCompactList}\small\item\em Union type of values being passed through A\+PI and function calls. \end{DoxyCompactList}\item 
+struct \hyperlink{structTVMByteArray}{T\+V\+M\+Byte\+Array}
+\begin{DoxyCompactList}\small\item\em Byte array type used to pass in byte array When k\+T\+V\+M\+Bytes is used as data type. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \hyperlink{c__runtime__api_8h_a4d6bcd569c115f7ae4ddc455b14ca395}{T\+V\+M\+\_\+\+W\+E\+AK}~\+\_\+\+\_\+attribute\+\_\+\+\_\+((weak))
+\item 
+\#define \hyperlink{c__runtime__api_8h_a429515e9851601ec44c8ed421521ab6d}{T\+V\+M\+\_\+\+V\+E\+R\+S\+I\+ON}~\char`\"{}0.\+7.dev1\char`\"{}
+\end{DoxyCompactItemize}
+\subsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+typedef int64\+\_\+t \hyperlink{c__runtime__api_8h_ace8007daffd9f2c6d954c24d870bfcc4}{tvm\+\_\+index\+\_\+t}
+\begin{DoxyCompactList}\small\item\em type of array index. \end{DoxyCompactList}\item 
+typedef D\+L\+Context \hyperlink{c__runtime__api_8h_a9363bb701f16ce5bbb381f2a013d25b4}{T\+V\+M\+Context}
+\begin{DoxyCompactList}\small\item\em The Device information, abstract away common device types. \end{DoxyCompactList}\item 
+typedef D\+L\+Tensor $\ast$ \hyperlink{c__runtime__api_8h_a73ca58cb32f4a4adf71d274dc1e27be4}{T\+V\+M\+Array\+Handle}
+\begin{DoxyCompactList}\small\item\em the array handle \end{DoxyCompactList}\item 
+typedef void $\ast$ \hyperlink{c__runtime__api_8h_ac4b0321c489287dcf4637e15328298ce}{T\+V\+M\+Module\+Handle}
+\begin{DoxyCompactList}\small\item\em Handle to T\+VM runtime modules. \end{DoxyCompactList}\item 
+typedef void $\ast$ \hyperlink{c__runtime__api_8h_acf57d257a6e0841d84ebbd2a339d183e}{T\+V\+M\+Function\+Handle}
+\begin{DoxyCompactList}\small\item\em Handle to packed function handle. \end{DoxyCompactList}\item 
+typedef void $\ast$ \hyperlink{c__runtime__api_8h_a6cd1076476117e74454f67931c2da1d4}{T\+V\+M\+Ret\+Value\+Handle}
+\begin{DoxyCompactList}\small\item\em Handle to hold return value. \end{DoxyCompactList}\item 
+typedef void $\ast$ \hyperlink{c__runtime__api_8h_ab1d5f6b7945e1410602a8a057fda5757}{T\+V\+M\+Stream\+Handle}
+\begin{DoxyCompactList}\small\item\em The stream that is specific to device can be N\+U\+LL, which indicates the default one. \end{DoxyCompactList}\item 
+typedef void $\ast$ \hyperlink{c__runtime__api_8h_aff795d001e3761c75b2b8f422465d5a0}{T\+V\+M\+Object\+Handle}
+\begin{DoxyCompactList}\small\item\em Handle to Object. \end{DoxyCompactList}\item 
+typedef int($\ast$ \hyperlink{c__runtime__api_8h_a07954203342f2787acf988c4c351d9c3}{T\+V\+M\+Packed\+C\+Func}) (\hyperlink{unionTVMValue}{T\+V\+M\+Value} $\ast$args, int $\ast$type\+\_\+codes, int num\+\_\+args, \hyperlink{c__runtime__api_8h_a6cd1076476117e74454f67931c2da1d4}{T\+V\+M\+Ret\+Value\+Handle} ret, void $\ast$resource\+\_\+handle)
+\begin{DoxyCompactList}\small\item\em C type of packed function. \end{DoxyCompactList}\item 
+typedef void($\ast$ \hyperlink{c__runtime__api_8h_ac035a1354f2e5d7f8613af73cc735742}{T\+V\+M\+Packed\+C\+Func\+Finalizer}) (void $\ast$resource\+\_\+handle)
+\begin{DoxyCompactList}\small\item\em C callback to free the resource handle in C packed function. \end{DoxyCompactList}\item 
+typedef int($\ast$ \hyperlink{c__runtime__api_8h_a3980ab80477e57fc6045c12ea8b9e48d}{T\+V\+M\+Extension\+Func\+Declarer}) (\hyperlink{c__runtime__api_8h_acf57d257a6e0841d84ebbd2a339d183e}{T\+V\+M\+Function\+Handle} register\+\_\+func\+\_\+handle)
+\begin{DoxyCompactList}\small\item\em Signature for extension function declarer. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Enumerations}
+\begin{DoxyCompactItemize}
+\item 
+enum \hyperlink{c__runtime__api_8h_a57cbccb14c35a0e62dbc1b911188fcef}{T\+V\+M\+Device\+Ext\+Type} \{ \hyperlink{c__runtime__api_8h_a57cbccb14c35a0e62dbc1b911188fcefad77aa5af5411ed9f3719f48af1f04b02}{k\+D\+L\+A\+O\+CL} = 5, 
+\hyperlink{c__runtime__api_8h_a57cbccb14c35a0e62dbc1b911188fcefacdc33f5efa9ddabe89e886c28d1ff65b}{k\+D\+L\+S\+D\+Accel} = 6, 
+\hyperlink{c__runtime__api_8h_a57cbccb14c35a0e62dbc1b911188fcefa72361be679c1aca1c1be5f9b500a3315}{k\+Open\+GL} = 11, 
+\hyperlink{c__runtime__api_8h_a57cbccb14c35a0e62dbc1b911188fcefa3357ff71d095bc9bdbe5116599bade5f}{k\+D\+L\+Micro\+Dev} = 13
+ \}\begin{DoxyCompactList}\small\item\em Extension device types in T\+VM. \end{DoxyCompactList}
+\item 
+enum \hyperlink{c__runtime__api_8h_ad3cce90e23260e30424e9878d9798d33}{T\+V\+M\+Type\+Code} \{ \\*
+\hyperlink{c__runtime__api_8h_ad3cce90e23260e30424e9878d9798d33a9387f774bc8453afe4aa4cd17789a405}{k\+T\+V\+M\+Opaque\+Handle} = 3U, 
+\hyperlink{c__runtime__api_8h_ad3cce90e23260e30424e9878d9798d33ada22c3d9c62fa8f40d46e80ce83b96a1}{k\+T\+V\+M\+Nullptr} = 4U, 
+\hyperlink{c__runtime__api_8h_ad3cce90e23260e30424e9878d9798d33a6ee930a6be374837d4d85dbe1abeb842}{k\+T\+V\+M\+Data\+Type} = 5U, 
+\hyperlink{c__runtime__api_8h_ad3cce90e23260e30424e9878d9798d33a5f6f9decf7207118e282b20a874e84e7}{k\+T\+V\+M\+Context} = 6U, 
+\\*
+\hyperlink{c__runtime__api_8h_ad3cce90e23260e30424e9878d9798d33a8bd637c4caa55b04490fe26b250e3d86}{k\+T\+V\+M\+D\+L\+Tensor\+Handle} = 7U, 
+\hyperlink{c__runtime__api_8h_ad3cce90e23260e30424e9878d9798d33abe76912731a3c65bd7cdd9ab9a462c66}{k\+T\+V\+M\+Object\+Handle} = 8U, 
+\hyperlink{c__runtime__api_8h_ad3cce90e23260e30424e9878d9798d33a41343a05e42d08053d9fa1da85f70af6}{k\+T\+V\+M\+Module\+Handle} = 9U, 
+\hyperlink{c__runtime__api_8h_ad3cce90e23260e30424e9878d9798d33a396e8ab64a9b33d46bcbedb84819f194}{k\+T\+V\+M\+Packed\+Func\+Handle} = 10U, 
+\\*
+\hyperlink{c__runtime__api_8h_ad3cce90e23260e30424e9878d9798d33af2b95de1a09ed39055edfe8ef5ea484d}{k\+T\+V\+M\+Str} = 11U, 
+\hyperlink{c__runtime__api_8h_ad3cce90e23260e30424e9878d9798d33a4b2f3688d719f6e7c20ab00659e2383e}{k\+T\+V\+M\+Bytes} = 12U, 
+\hyperlink{c__runtime__api_8h_ad3cce90e23260e30424e9878d9798d33a3bab8c80e57b1ab2d7ab95962be4d2ec}{k\+T\+V\+M\+N\+D\+Array\+Handle} = 13U, 
+\hyperlink{c__runtime__api_8h_ad3cce90e23260e30424e9878d9798d33a2bea0a5b50b0e24384610059bf1cbdc9}{k\+T\+V\+M\+Ext\+Begin} = 15U, 
+\\*
+\hyperlink{c__runtime__api_8h_ad3cce90e23260e30424e9878d9798d33a6aa6b0afb212bea097b2c71eb366214c}{k\+T\+V\+M\+N\+N\+V\+M\+First} = 16U, 
+\hyperlink{c__runtime__api_8h_ad3cce90e23260e30424e9878d9798d33a3b2e1234b4f579630a5a936e042912b6}{k\+T\+V\+M\+N\+N\+V\+M\+Last} = 20U, 
+\hyperlink{c__runtime__api_8h_ad3cce90e23260e30424e9878d9798d33a2a80307d3075829e12d14ba6ec52a6ee}{k\+T\+V\+M\+Ext\+Reserve\+End} = 64U, 
+\hyperlink{c__runtime__api_8h_ad3cce90e23260e30424e9878d9798d33a463445886242b0357db59f74241ce028}{k\+T\+V\+M\+Ext\+End} = 128U, 
+\\*
+\hyperlink{c__runtime__api_8h_ad3cce90e23260e30424e9878d9798d33ab568bfefd0ad6b172868caeb964b038a}{k\+T\+V\+M\+Custom\+Begin} = 129U
+ \}\begin{DoxyCompactList}\small\item\em The type code in used in the T\+VM F\+FI. \end{DoxyCompactList}
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{c__runtime__api_8h_a477111f9accd70633dc5f2e7139b6cf4}{T\+V\+M\+A\+P\+I\+Set\+Last\+Error} (const char $\ast$msg)
+\begin{DoxyCompactList}\small\item\em Used for implementing C A\+PI function. Set last error message before return. \end{DoxyCompactList}\item 
+const char $\ast$ \hyperlink{c__runtime__api_8h_a775383bcd8c0237e36bdf0c9654d62c3}{T\+V\+M\+Get\+Last\+Error} (void)
+\begin{DoxyCompactList}\small\item\em return str message of the last error all function in this file will return 0 when success and -\/1 when an error occurred, T\+V\+M\+Get\+Last\+Error can be called to retrieve the error \end{DoxyCompactList}\item 
+int \hyperlink{c__runtime__api_8h_a47f79bb2004573a8e36a175d1b73fc64}{T\+V\+M\+Mod\+Load\+From\+File} (const char $\ast$file\+\_\+name, const char $\ast$format, \hyperlink{c__runtime__api_8h_ac4b0321c489287dcf4637e15328298ce}{T\+V\+M\+Module\+Handle} $\ast$out)
+\begin{DoxyCompactList}\small\item\em Load module from file. \end{DoxyCompactList}\item 
+int \hyperlink{c__runtime__api_8h_aaeb0d67f6d7e90e671dd5a53b1d6b81a}{T\+V\+M\+Mod\+Import} (\hyperlink{c__runtime__api_8h_ac4b0321c489287dcf4637e15328298ce}{T\+V\+M\+Module\+Handle} mod, \hyperlink{c__runtime__api_8h_ac4b0321c489287dcf4637e15328298ce}{T\+V\+M\+Module\+Handle} dep)
+\begin{DoxyCompactList}\small\item\em Add dep to mod\textquotesingle{}s dependency. This allows functions in this module to use modules. \end{DoxyCompactList}\item 
+int \hyperlink{c__runtime__api_8h_a5a19a18084c94396a673efa309405a6c}{T\+V\+M\+Mod\+Get\+Function} (\hyperlink{c__runtime__api_8h_ac4b0321c489287dcf4637e15328298ce}{T\+V\+M\+Module\+Handle} mod, const char $\ast$func\+\_\+name, int query\+\_\+imports, \hyperlink{c__runtime__api_8h_acf57d257a6e0841d84ebbd2a339d183e}{T\+V\+M\+Function\+Handle} $\ast$out)
+\begin{DoxyCompactList}\small\item\em Get function from the module. \end{DoxyCompactList}\item 
+int \hyperlink{c__runtime__api_8h_ac16764609b45ac911a5c9971e195e377}{T\+V\+M\+Mod\+Free} (\hyperlink{c__runtime__api_8h_ac4b0321c489287dcf4637e15328298ce}{T\+V\+M\+Module\+Handle} mod)
+\begin{DoxyCompactList}\small\item\em Free the Module. \end{DoxyCompactList}\item 
+int \hyperlink{c__runtime__api_8h_af420f0d74004615c03bb40270ad5d489}{T\+V\+M\+Func\+Free} (\hyperlink{c__runtime__api_8h_acf57d257a6e0841d84ebbd2a339d183e}{T\+V\+M\+Function\+Handle} func)
+\begin{DoxyCompactList}\small\item\em Free the function when it is no longer needed. \end{DoxyCompactList}\item 
+int \hyperlink{c__runtime__api_8h_a8a01e20ffd5784465df0759c950154b5}{T\+V\+M\+Func\+Call} (\hyperlink{c__runtime__api_8h_acf57d257a6e0841d84ebbd2a339d183e}{T\+V\+M\+Function\+Handle} func, \hyperlink{unionTVMValue}{T\+V\+M\+Value} $\ast$arg\+\_\+values, int $\ast$type\+\_\+codes, int num\+\_\+args, \hyperlink{unionTVMValue}{T\+V\+M\+Value} $\ast$ret\+\_\+val, int $\ast$ret\+\_\+type\+\_\+code)
+\begin{DoxyCompactList}\small\item\em Call a Packed T\+VM Function. \end{DoxyCompactList}\item 
+int \hyperlink{c__runtime__api_8h_ad0c98ff469bd844546a71f61d2e164f3}{T\+V\+M\+C\+Func\+Set\+Return} (\hyperlink{c__runtime__api_8h_a6cd1076476117e74454f67931c2da1d4}{T\+V\+M\+Ret\+Value\+Handle} ret, \hyperlink{unionTVMValue}{T\+V\+M\+Value} $\ast$value, int $\ast$type\+\_\+code, int num\+\_\+ret)
+\begin{DoxyCompactList}\small\item\em Set the return value of T\+V\+M\+Packed\+C\+Func. \end{DoxyCompactList}\item 
+int \hyperlink{c__runtime__api_8h_a9ed74b4237a8cb8438bd621d028250e2}{T\+V\+M\+Cb\+Arg\+To\+Return} (\hyperlink{unionTVMValue}{T\+V\+M\+Value} $\ast$value, int code)
+\begin{DoxyCompactList}\small\item\em Inplace translate callback argument value to return value. This is only needed for non-\/\+P\+OD arguments. \end{DoxyCompactList}\item 
+int \hyperlink{c__runtime__api_8h_adfd8d1f9e7229625d4acd7da3b10287c}{T\+V\+M\+Func\+Create\+From\+C\+Func} (\hyperlink{c__runtime__api_8h_a07954203342f2787acf988c4c351d9c3}{T\+V\+M\+Packed\+C\+Func} func, void $\ast$resource\+\_\+handle, \hyperlink{c__runtime__api_8h_ac035a1354f2e5d7f8613af73cc735742}{T\+V\+M\+Packed\+C\+Func\+Finalizer} fin, \hyperlink{c__runtime__api_8h_acf57d257a6e0841d84ebbd2a339d183e}{T\+V\+M\+Function\+Handle} $\ast$out)
+\begin{DoxyCompactList}\small\item\em Wrap a T\+V\+M\+Packed\+C\+Func to become a Function\+Handle. \end{DoxyCompactList}\item 
+int \hyperlink{c__runtime__api_8h_a9642167d9a76bfe7e81174e8776d504b}{T\+V\+M\+Func\+Register\+Global} (const char $\ast$name, \hyperlink{c__runtime__api_8h_acf57d257a6e0841d84ebbd2a339d183e}{T\+V\+M\+Function\+Handle} f, int override)
+\begin{DoxyCompactList}\small\item\em Register the function to runtime\textquotesingle{}s global table. \end{DoxyCompactList}\item 
+int \hyperlink{c__runtime__api_8h_ad3bd42da244a0e32ac82d7428e01a010}{T\+V\+M\+Func\+Get\+Global} (const char $\ast$name, \hyperlink{c__runtime__api_8h_acf57d257a6e0841d84ebbd2a339d183e}{T\+V\+M\+Function\+Handle} $\ast$out)
+\begin{DoxyCompactList}\small\item\em Get a global function. \end{DoxyCompactList}\item 
+int \hyperlink{c__runtime__api_8h_a392740d028710fcd356b2b63ab90fd01}{T\+V\+M\+Func\+List\+Global\+Names} (int $\ast$out\+\_\+size, const char $\ast$$\ast$$\ast$out\+\_\+array)
+\begin{DoxyCompactList}\small\item\em List all the globally registered function name. \end{DoxyCompactList}\item 
+int \hyperlink{c__runtime__api_8h_a014b89c1a3b17473d82cb3973eeedba7}{T\+V\+M\+Array\+Alloc} (const \hyperlink{c__runtime__api_8h_ace8007daffd9f2c6d954c24d870bfcc4}{tvm\+\_\+index\+\_\+t} $\ast$shape, int ndim, int dtype\+\_\+code, int dtype\+\_\+bits, int dtype\+\_\+lanes, int device\+\_\+type, int device\+\_\+id, \hyperlink{c__runtime__api_8h_a73ca58cb32f4a4adf71d274dc1e27be4}{T\+V\+M\+Array\+Handle} $\ast$out)
+\begin{DoxyCompactList}\small\item\em Allocate a nd-\/array\textquotesingle{}s memory, including space of shape, of given spec. \end{DoxyCompactList}\item 
+int \hyperlink{c__runtime__api_8h_a591e48e52098965e235657dab56bc096}{T\+V\+M\+Array\+Free} (\hyperlink{c__runtime__api_8h_a73ca58cb32f4a4adf71d274dc1e27be4}{T\+V\+M\+Array\+Handle} handle)
+\begin{DoxyCompactList}\small\item\em Free the T\+VM Array. \end{DoxyCompactList}\item 
+int \hyperlink{c__runtime__api_8h_a50e9b3dfdc1f4228bf52a26da14456a1}{T\+V\+M\+Array\+Copy\+From\+Bytes} (\hyperlink{c__runtime__api_8h_a73ca58cb32f4a4adf71d274dc1e27be4}{T\+V\+M\+Array\+Handle} handle, void $\ast$data, size\+\_\+t nbytes)
+\begin{DoxyCompactList}\small\item\em Copy array data from C\+PU byte array. \end{DoxyCompactList}\item 
+int \hyperlink{c__runtime__api_8h_ae246eaa00342c042f3f194605ad9bc7a}{T\+V\+M\+Array\+Copy\+To\+Bytes} (\hyperlink{c__runtime__api_8h_a73ca58cb32f4a4adf71d274dc1e27be4}{T\+V\+M\+Array\+Handle} handle, void $\ast$data, size\+\_\+t nbytes)
+\begin{DoxyCompactList}\small\item\em Copy array data to C\+PU byte array. \end{DoxyCompactList}\item 
+int \hyperlink{c__runtime__api_8h_a120628b5226af6deee4010c5a512f618}{T\+V\+M\+Array\+Copy\+From\+To} (\hyperlink{c__runtime__api_8h_a73ca58cb32f4a4adf71d274dc1e27be4}{T\+V\+M\+Array\+Handle} from, \hyperlink{c__runtime__api_8h_a73ca58cb32f4a4adf71d274dc1e27be4}{T\+V\+M\+Array\+Handle} to, \hyperlink{c__runtime__api_8h_ab1d5f6b7945e1410602a8a057fda5757}{T\+V\+M\+Stream\+Handle} stream)
+\begin{DoxyCompactList}\small\item\em Copy the array, both from and to must be valid during the copy. \end{DoxyCompactList}\item 
+int \hyperlink{c__runtime__api_8h_ad67b8f8766fce6b62c82a458e3c9b053}{T\+V\+M\+Array\+From\+D\+L\+Pack} (D\+L\+Managed\+Tensor $\ast$from, \hyperlink{c__runtime__api_8h_a73ca58cb32f4a4adf71d274dc1e27be4}{T\+V\+M\+Array\+Handle} $\ast$out)
+\begin{DoxyCompactList}\small\item\em Produce an array from the D\+L\+Managed\+Tensor that shares data memory with the D\+L\+Managed\+Tensor. \end{DoxyCompactList}\item 
+int \hyperlink{c__runtime__api_8h_ae690840d1af9c7b0fe5b9b457456f60d}{T\+V\+M\+Array\+To\+D\+L\+Pack} (\hyperlink{c__runtime__api_8h_a73ca58cb32f4a4adf71d274dc1e27be4}{T\+V\+M\+Array\+Handle} from, D\+L\+Managed\+Tensor $\ast$$\ast$out)
+\begin{DoxyCompactList}\small\item\em Produce a D\+L\+Manged\+Tensor from the array that shares data memory with the array. \end{DoxyCompactList}\item 
+void \hyperlink{c__runtime__api_8h_a6483791fc218022e690b6e0d81a095b0}{T\+V\+M\+D\+L\+Managed\+Tensor\+Call\+Deleter} (D\+L\+Managed\+Tensor $\ast$dltensor)
+\begin{DoxyCompactList}\small\item\em Delete (free) a D\+L\+Managed\+Tensor\textquotesingle{}s data. \end{DoxyCompactList}\item 
+int \hyperlink{c__runtime__api_8h_a71d0c47cca9068b17cf0a1f4c58d8ca9}{T\+V\+M\+Stream\+Create} (int device\+\_\+type, int device\+\_\+id, \hyperlink{c__runtime__api_8h_ab1d5f6b7945e1410602a8a057fda5757}{T\+V\+M\+Stream\+Handle} $\ast$out)
+\begin{DoxyCompactList}\small\item\em Create a new runtime stream. \end{DoxyCompactList}\item 
+int \hyperlink{c__runtime__api_8h_a9dd0545318bfee4e2f4ccce7d7008e01}{T\+V\+M\+Stream\+Free} (int device\+\_\+type, int device\+\_\+id, \hyperlink{c__runtime__api_8h_ab1d5f6b7945e1410602a8a057fda5757}{T\+V\+M\+Stream\+Handle} stream)
+\begin{DoxyCompactList}\small\item\em Free a created stream handle. \end{DoxyCompactList}\item 
+int \hyperlink{c__runtime__api_8h_ac414ed248ddb1bfb561685bba3de5e89}{T\+V\+M\+Set\+Stream} (int device\+\_\+type, int device\+\_\+id, \hyperlink{c__runtime__api_8h_ab1d5f6b7945e1410602a8a057fda5757}{T\+V\+M\+Stream\+Handle} handle)
+\begin{DoxyCompactList}\small\item\em Set the runtime stream of current thread to be stream. The subsequent calls to the same device\+\_\+type will use the setted stream handle. The specific type of stream is runtime device dependent. \end{DoxyCompactList}\item 
+int \hyperlink{c__runtime__api_8h_a386d7efd946bc750af8bf109f93f6ce2}{T\+V\+M\+Synchronize} (int device\+\_\+type, int device\+\_\+id, \hyperlink{c__runtime__api_8h_ab1d5f6b7945e1410602a8a057fda5757}{T\+V\+M\+Stream\+Handle} stream)
+\begin{DoxyCompactList}\small\item\em Wait until all computations on stream completes. \end{DoxyCompactList}\item 
+int \hyperlink{c__runtime__api_8h_aa91f776ed41a36790409f78725f81419}{T\+V\+M\+Stream\+Stream\+Synchronize} (int device\+\_\+type, int device\+\_\+id, \hyperlink{c__runtime__api_8h_ab1d5f6b7945e1410602a8a057fda5757}{T\+V\+M\+Stream\+Handle} src, \hyperlink{c__runtime__api_8h_ab1d5f6b7945e1410602a8a057fda5757}{T\+V\+M\+Stream\+Handle} dst)
+\begin{DoxyCompactList}\small\item\em Synchronize two streams of execution. \end{DoxyCompactList}\item 
+int \hyperlink{c__runtime__api_8h_ab9ddee6cf53918337cd4ca68d8bfc8b1}{T\+V\+M\+Object\+Get\+Type\+Index} (\hyperlink{c__runtime__api_8h_aff795d001e3761c75b2b8f422465d5a0}{T\+V\+M\+Object\+Handle} obj, unsigned $\ast$out\+\_\+tindex)
+\begin{DoxyCompactList}\small\item\em Get the type\+\_\+index from an object. \end{DoxyCompactList}\item 
+int \hyperlink{c__runtime__api_8h_a77d84581b6d0d78c77d88139c6adbf81}{T\+V\+M\+Object\+Type\+Key2\+Index} (const char $\ast$type\+\_\+key, unsigned $\ast$out\+\_\+tindex)
+\begin{DoxyCompactList}\small\item\em Convert type key to type index. \end{DoxyCompactList}\item 
+int \hyperlink{c__runtime__api_8h_a660b709e0d509be7909fc31e3690d3f9}{T\+V\+M\+Object\+Free} (\hyperlink{c__runtime__api_8h_aff795d001e3761c75b2b8f422465d5a0}{T\+V\+M\+Object\+Handle} obj)
+\begin{DoxyCompactList}\small\item\em Free the object. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Macro Definition Documentation}
+\index{c\+\_\+runtime\+\_\+api.\+h@{c\+\_\+runtime\+\_\+api.\+h}!T\+V\+M\+\_\+\+V\+E\+R\+S\+I\+ON@{T\+V\+M\+\_\+\+V\+E\+R\+S\+I\+ON}}
+\index{T\+V\+M\+\_\+\+V\+E\+R\+S\+I\+ON@{T\+V\+M\+\_\+\+V\+E\+R\+S\+I\+ON}!c\+\_\+runtime\+\_\+api.\+h@{c\+\_\+runtime\+\_\+api.\+h}}
+\subsubsection[{\texorpdfstring{T\+V\+M\+\_\+\+V\+E\+R\+S\+I\+ON}{TVM_VERSION}}]{\setlength{\rightskip}{0pt plus 5cm}\#define T\+V\+M\+\_\+\+V\+E\+R\+S\+I\+ON~\char`\"{}0.\+7.dev1\char`\"{}}\hypertarget{c__runtime__api_8h_a429515e9851601ec44c8ed421521ab6d}{}\label{c__runtime__api_8h_a429515e9851601ec44c8ed421521ab6d}
+\index{c\+\_\+runtime\+\_\+api.\+h@{c\+\_\+runtime\+\_\+api.\+h}!T\+V\+M\+\_\+\+W\+E\+AK@{T\+V\+M\+\_\+\+W\+E\+AK}}
+\index{T\+V\+M\+\_\+\+W\+E\+AK@{T\+V\+M\+\_\+\+W\+E\+AK}!c\+\_\+runtime\+\_\+api.\+h@{c\+\_\+runtime\+\_\+api.\+h}}
+\subsubsection[{\texorpdfstring{T\+V\+M\+\_\+\+W\+E\+AK}{TVM_WEAK}}]{\setlength{\rightskip}{0pt plus 5cm}\#define T\+V\+M\+\_\+\+W\+E\+AK~\+\_\+\+\_\+attribute\+\_\+\+\_\+((weak))}\hypertarget{c__runtime__api_8h_a4d6bcd569c115f7ae4ddc455b14ca395}{}\label{c__runtime__api_8h_a4d6bcd569c115f7ae4ddc455b14ca395}
+
+
+\subsection{Typedef Documentation}
+\index{c\+\_\+runtime\+\_\+api.\+h@{c\+\_\+runtime\+\_\+api.\+h}!tvm\+\_\+index\+\_\+t@{tvm\+\_\+index\+\_\+t}}
+\index{tvm\+\_\+index\+\_\+t@{tvm\+\_\+index\+\_\+t}!c\+\_\+runtime\+\_\+api.\+h@{c\+\_\+runtime\+\_\+api.\+h}}
+\subsubsection[{\texorpdfstring{tvm\+\_\+index\+\_\+t}{tvm_index_t}}]{\setlength{\rightskip}{0pt plus 5cm}typedef int64\+\_\+t {\bf tvm\+\_\+index\+\_\+t}}\hypertarget{c__runtime__api_8h_ace8007daffd9f2c6d954c24d870bfcc4}{}\label{c__runtime__api_8h_ace8007daffd9f2c6d954c24d870bfcc4}
+
+
+type of array index. 
+
+\index{c\+\_\+runtime\+\_\+api.\+h@{c\+\_\+runtime\+\_\+api.\+h}!T\+V\+M\+Array\+Handle@{T\+V\+M\+Array\+Handle}}
+\index{T\+V\+M\+Array\+Handle@{T\+V\+M\+Array\+Handle}!c\+\_\+runtime\+\_\+api.\+h@{c\+\_\+runtime\+\_\+api.\+h}}
+\subsubsection[{\texorpdfstring{T\+V\+M\+Array\+Handle}{TVMArrayHandle}}]{\setlength{\rightskip}{0pt plus 5cm}typedef D\+L\+Tensor$\ast$ {\bf T\+V\+M\+Array\+Handle}}\hypertarget{c__runtime__api_8h_a73ca58cb32f4a4adf71d274dc1e27be4}{}\label{c__runtime__api_8h_a73ca58cb32f4a4adf71d274dc1e27be4}
+
+
+the array handle 
+
+\index{c\+\_\+runtime\+\_\+api.\+h@{c\+\_\+runtime\+\_\+api.\+h}!T\+V\+M\+Context@{T\+V\+M\+Context}}
+\index{T\+V\+M\+Context@{T\+V\+M\+Context}!c\+\_\+runtime\+\_\+api.\+h@{c\+\_\+runtime\+\_\+api.\+h}}
+\subsubsection[{\texorpdfstring{T\+V\+M\+Context}{TVMContext}}]{\setlength{\rightskip}{0pt plus 5cm}typedef D\+L\+Context {\bf T\+V\+M\+Context}}\hypertarget{c__runtime__api_8h_a9363bb701f16ce5bbb381f2a013d25b4}{}\label{c__runtime__api_8h_a9363bb701f16ce5bbb381f2a013d25b4}
+
+
+The Device information, abstract away common device types. 
+
+\index{c\+\_\+runtime\+\_\+api.\+h@{c\+\_\+runtime\+\_\+api.\+h}!T\+V\+M\+Extension\+Func\+Declarer@{T\+V\+M\+Extension\+Func\+Declarer}}
+\index{T\+V\+M\+Extension\+Func\+Declarer@{T\+V\+M\+Extension\+Func\+Declarer}!c\+\_\+runtime\+\_\+api.\+h@{c\+\_\+runtime\+\_\+api.\+h}}
+\subsubsection[{\texorpdfstring{T\+V\+M\+Extension\+Func\+Declarer}{TVMExtensionFuncDeclarer}}]{\setlength{\rightskip}{0pt plus 5cm}typedef int($\ast$ T\+V\+M\+Extension\+Func\+Declarer) ({\bf T\+V\+M\+Function\+Handle} register\+\_\+func\+\_\+handle)}\hypertarget{c__runtime__api_8h_a3980ab80477e57fc6045c12ea8b9e48d}{}\label{c__runtime__api_8h_a3980ab80477e57fc6045c12ea8b9e48d}
+
+
+Signature for extension function declarer. 
+
+T\+VM call this function to get the extension functions The declarer will call register\+\_\+func to register function and their name.
+
+
+\begin{DoxyParams}{Parameters}
+{\em register\+\_\+func\+\_\+handle} & The register function \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+0 if success, -\/1 if failure happens 
+\end{DoxyReturn}
+\index{c\+\_\+runtime\+\_\+api.\+h@{c\+\_\+runtime\+\_\+api.\+h}!T\+V\+M\+Function\+Handle@{T\+V\+M\+Function\+Handle}}
+\index{T\+V\+M\+Function\+Handle@{T\+V\+M\+Function\+Handle}!c\+\_\+runtime\+\_\+api.\+h@{c\+\_\+runtime\+\_\+api.\+h}}
+\subsubsection[{\texorpdfstring{T\+V\+M\+Function\+Handle}{TVMFunctionHandle}}]{\setlength{\rightskip}{0pt plus 5cm}typedef void$\ast$ {\bf T\+V\+M\+Function\+Handle}}\hypertarget{c__runtime__api_8h_acf57d257a6e0841d84ebbd2a339d183e}{}\label{c__runtime__api_8h_acf57d257a6e0841d84ebbd2a339d183e}
+
+
+Handle to packed function handle. 
+
+\index{c\+\_\+runtime\+\_\+api.\+h@{c\+\_\+runtime\+\_\+api.\+h}!T\+V\+M\+Module\+Handle@{T\+V\+M\+Module\+Handle}}
+\index{T\+V\+M\+Module\+Handle@{T\+V\+M\+Module\+Handle}!c\+\_\+runtime\+\_\+api.\+h@{c\+\_\+runtime\+\_\+api.\+h}}
+\subsubsection[{\texorpdfstring{T\+V\+M\+Module\+Handle}{TVMModuleHandle}}]{\setlength{\rightskip}{0pt plus 5cm}typedef void$\ast$ {\bf T\+V\+M\+Module\+Handle}}\hypertarget{c__runtime__api_8h_ac4b0321c489287dcf4637e15328298ce}{}\label{c__runtime__api_8h_ac4b0321c489287dcf4637e15328298ce}
+
+
+Handle to T\+VM runtime modules. 
+
+\index{c\+\_\+runtime\+\_\+api.\+h@{c\+\_\+runtime\+\_\+api.\+h}!T\+V\+M\+Object\+Handle@{T\+V\+M\+Object\+Handle}}
+\index{T\+V\+M\+Object\+Handle@{T\+V\+M\+Object\+Handle}!c\+\_\+runtime\+\_\+api.\+h@{c\+\_\+runtime\+\_\+api.\+h}}
+\subsubsection[{\texorpdfstring{T\+V\+M\+Object\+Handle}{TVMObjectHandle}}]{\setlength{\rightskip}{0pt plus 5cm}typedef void$\ast$ {\bf T\+V\+M\+Object\+Handle}}\hypertarget{c__runtime__api_8h_aff795d001e3761c75b2b8f422465d5a0}{}\label{c__runtime__api_8h_aff795d001e3761c75b2b8f422465d5a0}
+
+
+Handle to Object. 
+
+\index{c\+\_\+runtime\+\_\+api.\+h@{c\+\_\+runtime\+\_\+api.\+h}!T\+V\+M\+Packed\+C\+Func@{T\+V\+M\+Packed\+C\+Func}}
+\index{T\+V\+M\+Packed\+C\+Func@{T\+V\+M\+Packed\+C\+Func}!c\+\_\+runtime\+\_\+api.\+h@{c\+\_\+runtime\+\_\+api.\+h}}
+\subsubsection[{\texorpdfstring{T\+V\+M\+Packed\+C\+Func}{TVMPackedCFunc}}]{\setlength{\rightskip}{0pt plus 5cm}typedef int($\ast$ T\+V\+M\+Packed\+C\+Func) ({\bf T\+V\+M\+Value} $\ast$args, int $\ast$type\+\_\+codes, int num\+\_\+args, {\bf T\+V\+M\+Ret\+Value\+Handle} ret, void $\ast$resource\+\_\+handle)}\hypertarget{c__runtime__api_8h_a07954203342f2787acf988c4c351d9c3}{}\label{c__runtime__api_8h_a07954203342f2787acf988c4c351d9c3}
+
+
+C type of packed function. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em args} & The arguments \\
+\hline
+{\em type\+\_\+codes} & The type codes of the arguments \\
+\hline
+{\em num\+\_\+args} & Number of arguments. \\
+\hline
+{\em ret} & The return value handle. \\
+\hline
+{\em resource\+\_\+handle} & The handle additional resouce handle from fron-\/end. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+0 if success, -\/1 if failure happens, set error via T\+V\+M\+A\+P\+I\+Set\+Last\+Error. 
+\end{DoxyReturn}
+\begin{DoxySeeAlso}{See also}
+\hyperlink{c__runtime__api_8h_ad0c98ff469bd844546a71f61d2e164f3}{T\+V\+M\+C\+Func\+Set\+Return} 
+\end{DoxySeeAlso}
+\index{c\+\_\+runtime\+\_\+api.\+h@{c\+\_\+runtime\+\_\+api.\+h}!T\+V\+M\+Packed\+C\+Func\+Finalizer@{T\+V\+M\+Packed\+C\+Func\+Finalizer}}
+\index{T\+V\+M\+Packed\+C\+Func\+Finalizer@{T\+V\+M\+Packed\+C\+Func\+Finalizer}!c\+\_\+runtime\+\_\+api.\+h@{c\+\_\+runtime\+\_\+api.\+h}}
+\subsubsection[{\texorpdfstring{T\+V\+M\+Packed\+C\+Func\+Finalizer}{TVMPackedCFuncFinalizer}}]{\setlength{\rightskip}{0pt plus 5cm}typedef void($\ast$ T\+V\+M\+Packed\+C\+Func\+Finalizer) (void $\ast$resource\+\_\+handle)}\hypertarget{c__runtime__api_8h_ac035a1354f2e5d7f8613af73cc735742}{}\label{c__runtime__api_8h_ac035a1354f2e5d7f8613af73cc735742}
+
+
+C callback to free the resource handle in C packed function. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em resource\+\_\+handle} & The handle additional resouce handle from fron-\/end. \\
+\hline
+\end{DoxyParams}
+\index{c\+\_\+runtime\+\_\+api.\+h@{c\+\_\+runtime\+\_\+api.\+h}!T\+V\+M\+Ret\+Value\+Handle@{T\+V\+M\+Ret\+Value\+Handle}}
+\index{T\+V\+M\+Ret\+Value\+Handle@{T\+V\+M\+Ret\+Value\+Handle}!c\+\_\+runtime\+\_\+api.\+h@{c\+\_\+runtime\+\_\+api.\+h}}
+\subsubsection[{\texorpdfstring{T\+V\+M\+Ret\+Value\+Handle}{TVMRetValueHandle}}]{\setlength{\rightskip}{0pt plus 5cm}typedef void$\ast$ {\bf T\+V\+M\+Ret\+Value\+Handle}}\hypertarget{c__runtime__api_8h_a6cd1076476117e74454f67931c2da1d4}{}\label{c__runtime__api_8h_a6cd1076476117e74454f67931c2da1d4}
+
+
+Handle to hold return value. 
+
+\index{c\+\_\+runtime\+\_\+api.\+h@{c\+\_\+runtime\+\_\+api.\+h}!T\+V\+M\+Stream\+Handle@{T\+V\+M\+Stream\+Handle}}
+\index{T\+V\+M\+Stream\+Handle@{T\+V\+M\+Stream\+Handle}!c\+\_\+runtime\+\_\+api.\+h@{c\+\_\+runtime\+\_\+api.\+h}}
+\subsubsection[{\texorpdfstring{T\+V\+M\+Stream\+Handle}{TVMStreamHandle}}]{\setlength{\rightskip}{0pt plus 5cm}typedef void$\ast$ {\bf T\+V\+M\+Stream\+Handle}}\hypertarget{c__runtime__api_8h_ab1d5f6b7945e1410602a8a057fda5757}{}\label{c__runtime__api_8h_ab1d5f6b7945e1410602a8a057fda5757}
+
+
+The stream that is specific to device can be N\+U\+LL, which indicates the default one. 
+
+
+
+\subsection{Enumeration Type Documentation}
+\index{c\+\_\+runtime\+\_\+api.\+h@{c\+\_\+runtime\+\_\+api.\+h}!T\+V\+M\+Device\+Ext\+Type@{T\+V\+M\+Device\+Ext\+Type}}
+\index{T\+V\+M\+Device\+Ext\+Type@{T\+V\+M\+Device\+Ext\+Type}!c\+\_\+runtime\+\_\+api.\+h@{c\+\_\+runtime\+\_\+api.\+h}}
+\subsubsection[{\texorpdfstring{T\+V\+M\+Device\+Ext\+Type}{TVMDeviceExtType}}]{\setlength{\rightskip}{0pt plus 5cm}enum {\bf T\+V\+M\+Device\+Ext\+Type}}\hypertarget{c__runtime__api_8h_a57cbccb14c35a0e62dbc1b911188fcef}{}\label{c__runtime__api_8h_a57cbccb14c35a0e62dbc1b911188fcef}
+
+
+Extension device types in T\+VM. 
+
+\begin{Desc}
+\item[Enumerator]\par
+\begin{description}
+\index{k\+D\+L\+A\+O\+CL@{k\+D\+L\+A\+O\+CL}!c\+\_\+runtime\+\_\+api.\+h@{c\+\_\+runtime\+\_\+api.\+h}}\index{c\+\_\+runtime\+\_\+api.\+h@{c\+\_\+runtime\+\_\+api.\+h}!k\+D\+L\+A\+O\+CL@{k\+D\+L\+A\+O\+CL}}\item[{\em 
+k\+D\+L\+A\+O\+CL\hypertarget{c__runtime__api_8h_a57cbccb14c35a0e62dbc1b911188fcefad77aa5af5411ed9f3719f48af1f04b02}{}\label{c__runtime__api_8h_a57cbccb14c35a0e62dbc1b911188fcefad77aa5af5411ed9f3719f48af1f04b02}
+}]\index{k\+D\+L\+S\+D\+Accel@{k\+D\+L\+S\+D\+Accel}!c\+\_\+runtime\+\_\+api.\+h@{c\+\_\+runtime\+\_\+api.\+h}}\index{c\+\_\+runtime\+\_\+api.\+h@{c\+\_\+runtime\+\_\+api.\+h}!k\+D\+L\+S\+D\+Accel@{k\+D\+L\+S\+D\+Accel}}\item[{\em 
+k\+D\+L\+S\+D\+Accel\hypertarget{c__runtime__api_8h_a57cbccb14c35a0e62dbc1b911188fcefacdc33f5efa9ddabe89e886c28d1ff65b}{}\label{c__runtime__api_8h_a57cbccb14c35a0e62dbc1b911188fcefacdc33f5efa9ddabe89e886c28d1ff65b}
+}]\index{k\+Open\+GL@{k\+Open\+GL}!c\+\_\+runtime\+\_\+api.\+h@{c\+\_\+runtime\+\_\+api.\+h}}\index{c\+\_\+runtime\+\_\+api.\+h@{c\+\_\+runtime\+\_\+api.\+h}!k\+Open\+GL@{k\+Open\+GL}}\item[{\em 
+k\+Open\+GL\hypertarget{c__runtime__api_8h_a57cbccb14c35a0e62dbc1b911188fcefa72361be679c1aca1c1be5f9b500a3315}{}\label{c__runtime__api_8h_a57cbccb14c35a0e62dbc1b911188fcefa72361be679c1aca1c1be5f9b500a3315}
+}]\index{k\+D\+L\+Micro\+Dev@{k\+D\+L\+Micro\+Dev}!c\+\_\+runtime\+\_\+api.\+h@{c\+\_\+runtime\+\_\+api.\+h}}\index{c\+\_\+runtime\+\_\+api.\+h@{c\+\_\+runtime\+\_\+api.\+h}!k\+D\+L\+Micro\+Dev@{k\+D\+L\+Micro\+Dev}}\item[{\em 
+k\+D\+L\+Micro\+Dev\hypertarget{c__runtime__api_8h_a57cbccb14c35a0e62dbc1b911188fcefa3357ff71d095bc9bdbe5116599bade5f}{}\label{c__runtime__api_8h_a57cbccb14c35a0e62dbc1b911188fcefa3357ff71d095bc9bdbe5116599bade5f}
+}]\end{description}
+\end{Desc}
+\index{c\+\_\+runtime\+\_\+api.\+h@{c\+\_\+runtime\+\_\+api.\+h}!T\+V\+M\+Type\+Code@{T\+V\+M\+Type\+Code}}
+\index{T\+V\+M\+Type\+Code@{T\+V\+M\+Type\+Code}!c\+\_\+runtime\+\_\+api.\+h@{c\+\_\+runtime\+\_\+api.\+h}}
+\subsubsection[{\texorpdfstring{T\+V\+M\+Type\+Code}{TVMTypeCode}}]{\setlength{\rightskip}{0pt plus 5cm}enum {\bf T\+V\+M\+Type\+Code}}\hypertarget{c__runtime__api_8h_ad3cce90e23260e30424e9878d9798d33}{}\label{c__runtime__api_8h_ad3cce90e23260e30424e9878d9798d33}
+
+
+The type code in used in the T\+VM F\+FI. 
+
+\begin{Desc}
+\item[Enumerator]\par
+\begin{description}
+\index{k\+T\+V\+M\+Opaque\+Handle@{k\+T\+V\+M\+Opaque\+Handle}!c\+\_\+runtime\+\_\+api.\+h@{c\+\_\+runtime\+\_\+api.\+h}}\index{c\+\_\+runtime\+\_\+api.\+h@{c\+\_\+runtime\+\_\+api.\+h}!k\+T\+V\+M\+Opaque\+Handle@{k\+T\+V\+M\+Opaque\+Handle}}\item[{\em 
+k\+T\+V\+M\+Opaque\+Handle\hypertarget{c__runtime__api_8h_ad3cce90e23260e30424e9878d9798d33a9387f774bc8453afe4aa4cd17789a405}{}\label{c__runtime__api_8h_ad3cce90e23260e30424e9878d9798d33a9387f774bc8453afe4aa4cd17789a405}
+}]\index{k\+T\+V\+M\+Nullptr@{k\+T\+V\+M\+Nullptr}!c\+\_\+runtime\+\_\+api.\+h@{c\+\_\+runtime\+\_\+api.\+h}}\index{c\+\_\+runtime\+\_\+api.\+h@{c\+\_\+runtime\+\_\+api.\+h}!k\+T\+V\+M\+Nullptr@{k\+T\+V\+M\+Nullptr}}\item[{\em 
+k\+T\+V\+M\+Nullptr\hypertarget{c__runtime__api_8h_ad3cce90e23260e30424e9878d9798d33ada22c3d9c62fa8f40d46e80ce83b96a1}{}\label{c__runtime__api_8h_ad3cce90e23260e30424e9878d9798d33ada22c3d9c62fa8f40d46e80ce83b96a1}
+}]\index{k\+T\+V\+M\+Data\+Type@{k\+T\+V\+M\+Data\+Type}!c\+\_\+runtime\+\_\+api.\+h@{c\+\_\+runtime\+\_\+api.\+h}}\index{c\+\_\+runtime\+\_\+api.\+h@{c\+\_\+runtime\+\_\+api.\+h}!k\+T\+V\+M\+Data\+Type@{k\+T\+V\+M\+Data\+Type}}\item[{\em 
+k\+T\+V\+M\+Data\+Type\hypertarget{c__runtime__api_8h_ad3cce90e23260e30424e9878d9798d33a6ee930a6be374837d4d85dbe1abeb842}{}\label{c__runtime__api_8h_ad3cce90e23260e30424e9878d9798d33a6ee930a6be374837d4d85dbe1abeb842}
+}]\index{k\+T\+V\+M\+Context@{k\+T\+V\+M\+Context}!c\+\_\+runtime\+\_\+api.\+h@{c\+\_\+runtime\+\_\+api.\+h}}\index{c\+\_\+runtime\+\_\+api.\+h@{c\+\_\+runtime\+\_\+api.\+h}!k\+T\+V\+M\+Context@{k\+T\+V\+M\+Context}}\item[{\em 
+k\+T\+V\+M\+Context\hypertarget{c__runtime__api_8h_ad3cce90e23260e30424e9878d9798d33a5f6f9decf7207118e282b20a874e84e7}{}\label{c__runtime__api_8h_ad3cce90e23260e30424e9878d9798d33a5f6f9decf7207118e282b20a874e84e7}
+}]\index{k\+T\+V\+M\+D\+L\+Tensor\+Handle@{k\+T\+V\+M\+D\+L\+Tensor\+Handle}!c\+\_\+runtime\+\_\+api.\+h@{c\+\_\+runtime\+\_\+api.\+h}}\index{c\+\_\+runtime\+\_\+api.\+h@{c\+\_\+runtime\+\_\+api.\+h}!k\+T\+V\+M\+D\+L\+Tensor\+Handle@{k\+T\+V\+M\+D\+L\+Tensor\+Handle}}\item[{\em 
+k\+T\+V\+M\+D\+L\+Tensor\+Handle\hypertarget{c__runtime__api_8h_ad3cce90e23260e30424e9878d9798d33a8bd637c4caa55b04490fe26b250e3d86}{}\label{c__runtime__api_8h_ad3cce90e23260e30424e9878d9798d33a8bd637c4caa55b04490fe26b250e3d86}
+}]\index{k\+T\+V\+M\+Object\+Handle@{k\+T\+V\+M\+Object\+Handle}!c\+\_\+runtime\+\_\+api.\+h@{c\+\_\+runtime\+\_\+api.\+h}}\index{c\+\_\+runtime\+\_\+api.\+h@{c\+\_\+runtime\+\_\+api.\+h}!k\+T\+V\+M\+Object\+Handle@{k\+T\+V\+M\+Object\+Handle}}\item[{\em 
+k\+T\+V\+M\+Object\+Handle\hypertarget{c__runtime__api_8h_ad3cce90e23260e30424e9878d9798d33abe76912731a3c65bd7cdd9ab9a462c66}{}\label{c__runtime__api_8h_ad3cce90e23260e30424e9878d9798d33abe76912731a3c65bd7cdd9ab9a462c66}
+}]\index{k\+T\+V\+M\+Module\+Handle@{k\+T\+V\+M\+Module\+Handle}!c\+\_\+runtime\+\_\+api.\+h@{c\+\_\+runtime\+\_\+api.\+h}}\index{c\+\_\+runtime\+\_\+api.\+h@{c\+\_\+runtime\+\_\+api.\+h}!k\+T\+V\+M\+Module\+Handle@{k\+T\+V\+M\+Module\+Handle}}\item[{\em 
+k\+T\+V\+M\+Module\+Handle\hypertarget{c__runtime__api_8h_ad3cce90e23260e30424e9878d9798d33a41343a05e42d08053d9fa1da85f70af6}{}\label{c__runtime__api_8h_ad3cce90e23260e30424e9878d9798d33a41343a05e42d08053d9fa1da85f70af6}
+}]\index{k\+T\+V\+M\+Packed\+Func\+Handle@{k\+T\+V\+M\+Packed\+Func\+Handle}!c\+\_\+runtime\+\_\+api.\+h@{c\+\_\+runtime\+\_\+api.\+h}}\index{c\+\_\+runtime\+\_\+api.\+h@{c\+\_\+runtime\+\_\+api.\+h}!k\+T\+V\+M\+Packed\+Func\+Handle@{k\+T\+V\+M\+Packed\+Func\+Handle}}\item[{\em 
+k\+T\+V\+M\+Packed\+Func\+Handle\hypertarget{c__runtime__api_8h_ad3cce90e23260e30424e9878d9798d33a396e8ab64a9b33d46bcbedb84819f194}{}\label{c__runtime__api_8h_ad3cce90e23260e30424e9878d9798d33a396e8ab64a9b33d46bcbedb84819f194}
+}]\index{k\+T\+V\+M\+Str@{k\+T\+V\+M\+Str}!c\+\_\+runtime\+\_\+api.\+h@{c\+\_\+runtime\+\_\+api.\+h}}\index{c\+\_\+runtime\+\_\+api.\+h@{c\+\_\+runtime\+\_\+api.\+h}!k\+T\+V\+M\+Str@{k\+T\+V\+M\+Str}}\item[{\em 
+k\+T\+V\+M\+Str\hypertarget{c__runtime__api_8h_ad3cce90e23260e30424e9878d9798d33af2b95de1a09ed39055edfe8ef5ea484d}{}\label{c__runtime__api_8h_ad3cce90e23260e30424e9878d9798d33af2b95de1a09ed39055edfe8ef5ea484d}
+}]\index{k\+T\+V\+M\+Bytes@{k\+T\+V\+M\+Bytes}!c\+\_\+runtime\+\_\+api.\+h@{c\+\_\+runtime\+\_\+api.\+h}}\index{c\+\_\+runtime\+\_\+api.\+h@{c\+\_\+runtime\+\_\+api.\+h}!k\+T\+V\+M\+Bytes@{k\+T\+V\+M\+Bytes}}\item[{\em 
+k\+T\+V\+M\+Bytes\hypertarget{c__runtime__api_8h_ad3cce90e23260e30424e9878d9798d33a4b2f3688d719f6e7c20ab00659e2383e}{}\label{c__runtime__api_8h_ad3cce90e23260e30424e9878d9798d33a4b2f3688d719f6e7c20ab00659e2383e}
+}]\index{k\+T\+V\+M\+N\+D\+Array\+Handle@{k\+T\+V\+M\+N\+D\+Array\+Handle}!c\+\_\+runtime\+\_\+api.\+h@{c\+\_\+runtime\+\_\+api.\+h}}\index{c\+\_\+runtime\+\_\+api.\+h@{c\+\_\+runtime\+\_\+api.\+h}!k\+T\+V\+M\+N\+D\+Array\+Handle@{k\+T\+V\+M\+N\+D\+Array\+Handle}}\item[{\em 
+k\+T\+V\+M\+N\+D\+Array\+Handle\hypertarget{c__runtime__api_8h_ad3cce90e23260e30424e9878d9798d33a3bab8c80e57b1ab2d7ab95962be4d2ec}{}\label{c__runtime__api_8h_ad3cce90e23260e30424e9878d9798d33a3bab8c80e57b1ab2d7ab95962be4d2ec}
+}]\index{k\+T\+V\+M\+Ext\+Begin@{k\+T\+V\+M\+Ext\+Begin}!c\+\_\+runtime\+\_\+api.\+h@{c\+\_\+runtime\+\_\+api.\+h}}\index{c\+\_\+runtime\+\_\+api.\+h@{c\+\_\+runtime\+\_\+api.\+h}!k\+T\+V\+M\+Ext\+Begin@{k\+T\+V\+M\+Ext\+Begin}}\item[{\em 
+k\+T\+V\+M\+Ext\+Begin\hypertarget{c__runtime__api_8h_ad3cce90e23260e30424e9878d9798d33a2bea0a5b50b0e24384610059bf1cbdc9}{}\label{c__runtime__api_8h_ad3cce90e23260e30424e9878d9798d33a2bea0a5b50b0e24384610059bf1cbdc9}
+}]\index{k\+T\+V\+M\+N\+N\+V\+M\+First@{k\+T\+V\+M\+N\+N\+V\+M\+First}!c\+\_\+runtime\+\_\+api.\+h@{c\+\_\+runtime\+\_\+api.\+h}}\index{c\+\_\+runtime\+\_\+api.\+h@{c\+\_\+runtime\+\_\+api.\+h}!k\+T\+V\+M\+N\+N\+V\+M\+First@{k\+T\+V\+M\+N\+N\+V\+M\+First}}\item[{\em 
+k\+T\+V\+M\+N\+N\+V\+M\+First\hypertarget{c__runtime__api_8h_ad3cce90e23260e30424e9878d9798d33a6aa6b0afb212bea097b2c71eb366214c}{}\label{c__runtime__api_8h_ad3cce90e23260e30424e9878d9798d33a6aa6b0afb212bea097b2c71eb366214c}
+}]\index{k\+T\+V\+M\+N\+N\+V\+M\+Last@{k\+T\+V\+M\+N\+N\+V\+M\+Last}!c\+\_\+runtime\+\_\+api.\+h@{c\+\_\+runtime\+\_\+api.\+h}}\index{c\+\_\+runtime\+\_\+api.\+h@{c\+\_\+runtime\+\_\+api.\+h}!k\+T\+V\+M\+N\+N\+V\+M\+Last@{k\+T\+V\+M\+N\+N\+V\+M\+Last}}\item[{\em 
+k\+T\+V\+M\+N\+N\+V\+M\+Last\hypertarget{c__runtime__api_8h_ad3cce90e23260e30424e9878d9798d33a3b2e1234b4f579630a5a936e042912b6}{}\label{c__runtime__api_8h_ad3cce90e23260e30424e9878d9798d33a3b2e1234b4f579630a5a936e042912b6}
+}]\index{k\+T\+V\+M\+Ext\+Reserve\+End@{k\+T\+V\+M\+Ext\+Reserve\+End}!c\+\_\+runtime\+\_\+api.\+h@{c\+\_\+runtime\+\_\+api.\+h}}\index{c\+\_\+runtime\+\_\+api.\+h@{c\+\_\+runtime\+\_\+api.\+h}!k\+T\+V\+M\+Ext\+Reserve\+End@{k\+T\+V\+M\+Ext\+Reserve\+End}}\item[{\em 
+k\+T\+V\+M\+Ext\+Reserve\+End\hypertarget{c__runtime__api_8h_ad3cce90e23260e30424e9878d9798d33a2a80307d3075829e12d14ba6ec52a6ee}{}\label{c__runtime__api_8h_ad3cce90e23260e30424e9878d9798d33a2a80307d3075829e12d14ba6ec52a6ee}
+}]\index{k\+T\+V\+M\+Ext\+End@{k\+T\+V\+M\+Ext\+End}!c\+\_\+runtime\+\_\+api.\+h@{c\+\_\+runtime\+\_\+api.\+h}}\index{c\+\_\+runtime\+\_\+api.\+h@{c\+\_\+runtime\+\_\+api.\+h}!k\+T\+V\+M\+Ext\+End@{k\+T\+V\+M\+Ext\+End}}\item[{\em 
+k\+T\+V\+M\+Ext\+End\hypertarget{c__runtime__api_8h_ad3cce90e23260e30424e9878d9798d33a463445886242b0357db59f74241ce028}{}\label{c__runtime__api_8h_ad3cce90e23260e30424e9878d9798d33a463445886242b0357db59f74241ce028}
+}]\index{k\+T\+V\+M\+Custom\+Begin@{k\+T\+V\+M\+Custom\+Begin}!c\+\_\+runtime\+\_\+api.\+h@{c\+\_\+runtime\+\_\+api.\+h}}\index{c\+\_\+runtime\+\_\+api.\+h@{c\+\_\+runtime\+\_\+api.\+h}!k\+T\+V\+M\+Custom\+Begin@{k\+T\+V\+M\+Custom\+Begin}}\item[{\em 
+k\+T\+V\+M\+Custom\+Begin\hypertarget{c__runtime__api_8h_ad3cce90e23260e30424e9878d9798d33ab568bfefd0ad6b172868caeb964b038a}{}\label{c__runtime__api_8h_ad3cce90e23260e30424e9878d9798d33ab568bfefd0ad6b172868caeb964b038a}
+}]\end{description}
+\end{Desc}
+
+
+\subsection{Function Documentation}
+\index{c\+\_\+runtime\+\_\+api.\+h@{c\+\_\+runtime\+\_\+api.\+h}!T\+V\+M\+A\+P\+I\+Set\+Last\+Error@{T\+V\+M\+A\+P\+I\+Set\+Last\+Error}}
+\index{T\+V\+M\+A\+P\+I\+Set\+Last\+Error@{T\+V\+M\+A\+P\+I\+Set\+Last\+Error}!c\+\_\+runtime\+\_\+api.\+h@{c\+\_\+runtime\+\_\+api.\+h}}
+\subsubsection[{\texorpdfstring{T\+V\+M\+A\+P\+I\+Set\+Last\+Error(const char $\ast$msg)}{TVMAPISetLastError(const char *msg)}}]{\setlength{\rightskip}{0pt plus 5cm}void T\+V\+M\+A\+P\+I\+Set\+Last\+Error (
+\begin{DoxyParamCaption}
+\item[{const char $\ast$}]{msg}
+\end{DoxyParamCaption}
+)}\hypertarget{c__runtime__api_8h_a477111f9accd70633dc5f2e7139b6cf4}{}\label{c__runtime__api_8h_a477111f9accd70633dc5f2e7139b6cf4}
+
+
+Used for implementing C A\+PI function. Set last error message before return. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em msg} & The error message to be set. \\
+\hline
+\end{DoxyParams}
+\index{c\+\_\+runtime\+\_\+api.\+h@{c\+\_\+runtime\+\_\+api.\+h}!T\+V\+M\+Array\+Alloc@{T\+V\+M\+Array\+Alloc}}
+\index{T\+V\+M\+Array\+Alloc@{T\+V\+M\+Array\+Alloc}!c\+\_\+runtime\+\_\+api.\+h@{c\+\_\+runtime\+\_\+api.\+h}}
+\subsubsection[{\texorpdfstring{T\+V\+M\+Array\+Alloc(const tvm\+\_\+index\+\_\+t $\ast$shape, int ndim, int dtype\+\_\+code, int dtype\+\_\+bits, int dtype\+\_\+lanes, int device\+\_\+type, int device\+\_\+id, T\+V\+M\+Array\+Handle $\ast$out)}{TVMArrayAlloc(const tvm_index_t *shape, int ndim, int dtype_code, int dtype_bits, int dtype_lanes, int device_type, int device_id, TVMArrayHandle *out)}}]{\setlength{\rightskip}{0pt plus 5cm}int T\+V\+M\+Array\+Alloc (
+\begin{DoxyParamCaption}
+\item[{const {\bf tvm\+\_\+index\+\_\+t} $\ast$}]{shape, }
+\item[{int}]{ndim, }
+\item[{int}]{dtype\+\_\+code, }
+\item[{int}]{dtype\+\_\+bits, }
+\item[{int}]{dtype\+\_\+lanes, }
+\item[{int}]{device\+\_\+type, }
+\item[{int}]{device\+\_\+id, }
+\item[{{\bf T\+V\+M\+Array\+Handle} $\ast$}]{out}
+\end{DoxyParamCaption}
+)}\hypertarget{c__runtime__api_8h_a014b89c1a3b17473d82cb3973eeedba7}{}\label{c__runtime__api_8h_a014b89c1a3b17473d82cb3973eeedba7}
+
+
+Allocate a nd-\/array\textquotesingle{}s memory, including space of shape, of given spec. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em shape} & The shape of the array, the data content will be copied to out \\
+\hline
+{\em ndim} & The number of dimension of the array. \\
+\hline
+{\em dtype\+\_\+code} & The type code of the dtype \\
+\hline
+{\em dtype\+\_\+bits} & The number of bits of dtype \\
+\hline
+{\em dtype\+\_\+lanes} & The number of lanes in the dtype. \\
+\hline
+{\em device\+\_\+type} & The device type of context \\
+\hline
+{\em device\+\_\+id} & The device id of context. \\
+\hline
+{\em out} & The output handle. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+0 when success, -\/1 when failure happens 
+\end{DoxyReturn}
+\index{c\+\_\+runtime\+\_\+api.\+h@{c\+\_\+runtime\+\_\+api.\+h}!T\+V\+M\+Array\+Copy\+From\+Bytes@{T\+V\+M\+Array\+Copy\+From\+Bytes}}
+\index{T\+V\+M\+Array\+Copy\+From\+Bytes@{T\+V\+M\+Array\+Copy\+From\+Bytes}!c\+\_\+runtime\+\_\+api.\+h@{c\+\_\+runtime\+\_\+api.\+h}}
+\subsubsection[{\texorpdfstring{T\+V\+M\+Array\+Copy\+From\+Bytes(\+T\+V\+M\+Array\+Handle handle, void $\ast$data, size\+\_\+t nbytes)}{TVMArrayCopyFromBytes(TVMArrayHandle handle, void *data, size_t nbytes)}}]{\setlength{\rightskip}{0pt plus 5cm}int T\+V\+M\+Array\+Copy\+From\+Bytes (
+\begin{DoxyParamCaption}
+\item[{{\bf T\+V\+M\+Array\+Handle}}]{handle, }
+\item[{void $\ast$}]{data, }
+\item[{size\+\_\+t}]{nbytes}
+\end{DoxyParamCaption}
+)}\hypertarget{c__runtime__api_8h_a50e9b3dfdc1f4228bf52a26da14456a1}{}\label{c__runtime__api_8h_a50e9b3dfdc1f4228bf52a26da14456a1}
+
+
+Copy array data from C\+PU byte array. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em handle} & The array handle. \\
+\hline
+{\em data} & the data pointer \\
+\hline
+{\em nbytes} & The number of bytes to copy. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+0 when success, -\/1 when failure happens 
+\end{DoxyReturn}
+\index{c\+\_\+runtime\+\_\+api.\+h@{c\+\_\+runtime\+\_\+api.\+h}!T\+V\+M\+Array\+Copy\+From\+To@{T\+V\+M\+Array\+Copy\+From\+To}}
+\index{T\+V\+M\+Array\+Copy\+From\+To@{T\+V\+M\+Array\+Copy\+From\+To}!c\+\_\+runtime\+\_\+api.\+h@{c\+\_\+runtime\+\_\+api.\+h}}
+\subsubsection[{\texorpdfstring{T\+V\+M\+Array\+Copy\+From\+To(\+T\+V\+M\+Array\+Handle from, T\+V\+M\+Array\+Handle to, T\+V\+M\+Stream\+Handle stream)}{TVMArrayCopyFromTo(TVMArrayHandle from, TVMArrayHandle to, TVMStreamHandle stream)}}]{\setlength{\rightskip}{0pt plus 5cm}int T\+V\+M\+Array\+Copy\+From\+To (
+\begin{DoxyParamCaption}
+\item[{{\bf T\+V\+M\+Array\+Handle}}]{from, }
+\item[{{\bf T\+V\+M\+Array\+Handle}}]{to, }
+\item[{{\bf T\+V\+M\+Stream\+Handle}}]{stream}
+\end{DoxyParamCaption}
+)}\hypertarget{c__runtime__api_8h_a120628b5226af6deee4010c5a512f618}{}\label{c__runtime__api_8h_a120628b5226af6deee4010c5a512f618}
+
+
+Copy the array, both from and to must be valid during the copy. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em from} & The array to be copied from. \\
+\hline
+{\em to} & The target space. \\
+\hline
+{\em stream} & The stream where the copy happens, can be N\+U\+LL. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+0 when success, -\/1 when failure happens 
+\end{DoxyReturn}
+\index{c\+\_\+runtime\+\_\+api.\+h@{c\+\_\+runtime\+\_\+api.\+h}!T\+V\+M\+Array\+Copy\+To\+Bytes@{T\+V\+M\+Array\+Copy\+To\+Bytes}}
+\index{T\+V\+M\+Array\+Copy\+To\+Bytes@{T\+V\+M\+Array\+Copy\+To\+Bytes}!c\+\_\+runtime\+\_\+api.\+h@{c\+\_\+runtime\+\_\+api.\+h}}
+\subsubsection[{\texorpdfstring{T\+V\+M\+Array\+Copy\+To\+Bytes(\+T\+V\+M\+Array\+Handle handle, void $\ast$data, size\+\_\+t nbytes)}{TVMArrayCopyToBytes(TVMArrayHandle handle, void *data, size_t nbytes)}}]{\setlength{\rightskip}{0pt plus 5cm}int T\+V\+M\+Array\+Copy\+To\+Bytes (
+\begin{DoxyParamCaption}
+\item[{{\bf T\+V\+M\+Array\+Handle}}]{handle, }
+\item[{void $\ast$}]{data, }
+\item[{size\+\_\+t}]{nbytes}
+\end{DoxyParamCaption}
+)}\hypertarget{c__runtime__api_8h_ae246eaa00342c042f3f194605ad9bc7a}{}\label{c__runtime__api_8h_ae246eaa00342c042f3f194605ad9bc7a}
+
+
+Copy array data to C\+PU byte array. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em handle} & The array handle. \\
+\hline
+{\em data} & the data pointer \\
+\hline
+{\em nbytes} & The number of bytes to copy. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+0 when success, -\/1 when failure happens 
+\end{DoxyReturn}
+\index{c\+\_\+runtime\+\_\+api.\+h@{c\+\_\+runtime\+\_\+api.\+h}!T\+V\+M\+Array\+Free@{T\+V\+M\+Array\+Free}}
+\index{T\+V\+M\+Array\+Free@{T\+V\+M\+Array\+Free}!c\+\_\+runtime\+\_\+api.\+h@{c\+\_\+runtime\+\_\+api.\+h}}
+\subsubsection[{\texorpdfstring{T\+V\+M\+Array\+Free(\+T\+V\+M\+Array\+Handle handle)}{TVMArrayFree(TVMArrayHandle handle)}}]{\setlength{\rightskip}{0pt plus 5cm}int T\+V\+M\+Array\+Free (
+\begin{DoxyParamCaption}
+\item[{{\bf T\+V\+M\+Array\+Handle}}]{handle}
+\end{DoxyParamCaption}
+)}\hypertarget{c__runtime__api_8h_a591e48e52098965e235657dab56bc096}{}\label{c__runtime__api_8h_a591e48e52098965e235657dab56bc096}
+
+
+Free the T\+VM Array. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em handle} & The array handle to be freed. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+0 when success, -\/1 when failure happens 
+\end{DoxyReturn}
+\index{c\+\_\+runtime\+\_\+api.\+h@{c\+\_\+runtime\+\_\+api.\+h}!T\+V\+M\+Array\+From\+D\+L\+Pack@{T\+V\+M\+Array\+From\+D\+L\+Pack}}
+\index{T\+V\+M\+Array\+From\+D\+L\+Pack@{T\+V\+M\+Array\+From\+D\+L\+Pack}!c\+\_\+runtime\+\_\+api.\+h@{c\+\_\+runtime\+\_\+api.\+h}}
+\subsubsection[{\texorpdfstring{T\+V\+M\+Array\+From\+D\+L\+Pack(\+D\+L\+Managed\+Tensor $\ast$from, T\+V\+M\+Array\+Handle $\ast$out)}{TVMArrayFromDLPack(DLManagedTensor *from, TVMArrayHandle *out)}}]{\setlength{\rightskip}{0pt plus 5cm}int T\+V\+M\+Array\+From\+D\+L\+Pack (
+\begin{DoxyParamCaption}
+\item[{D\+L\+Managed\+Tensor $\ast$}]{from, }
+\item[{{\bf T\+V\+M\+Array\+Handle} $\ast$}]{out}
+\end{DoxyParamCaption}
+)}\hypertarget{c__runtime__api_8h_ad67b8f8766fce6b62c82a458e3c9b053}{}\label{c__runtime__api_8h_ad67b8f8766fce6b62c82a458e3c9b053}
+
+
+Produce an array from the D\+L\+Managed\+Tensor that shares data memory with the D\+L\+Managed\+Tensor. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em from} & The source D\+L\+Managed\+Tensor. \\
+\hline
+{\em out} & The output array handle. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+0 when success, -\/1 when failure happens 
+\end{DoxyReturn}
+\index{c\+\_\+runtime\+\_\+api.\+h@{c\+\_\+runtime\+\_\+api.\+h}!T\+V\+M\+Array\+To\+D\+L\+Pack@{T\+V\+M\+Array\+To\+D\+L\+Pack}}
+\index{T\+V\+M\+Array\+To\+D\+L\+Pack@{T\+V\+M\+Array\+To\+D\+L\+Pack}!c\+\_\+runtime\+\_\+api.\+h@{c\+\_\+runtime\+\_\+api.\+h}}
+\subsubsection[{\texorpdfstring{T\+V\+M\+Array\+To\+D\+L\+Pack(\+T\+V\+M\+Array\+Handle from, D\+L\+Managed\+Tensor $\ast$$\ast$out)}{TVMArrayToDLPack(TVMArrayHandle from, DLManagedTensor **out)}}]{\setlength{\rightskip}{0pt plus 5cm}int T\+V\+M\+Array\+To\+D\+L\+Pack (
+\begin{DoxyParamCaption}
+\item[{{\bf T\+V\+M\+Array\+Handle}}]{from, }
+\item[{D\+L\+Managed\+Tensor $\ast$$\ast$}]{out}
+\end{DoxyParamCaption}
+)}\hypertarget{c__runtime__api_8h_ae690840d1af9c7b0fe5b9b457456f60d}{}\label{c__runtime__api_8h_ae690840d1af9c7b0fe5b9b457456f60d}
+
+
+Produce a D\+L\+Manged\+Tensor from the array that shares data memory with the array. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em from} & The source array. \\
+\hline
+{\em out} & The D\+L\+Managed\+Tensor handle. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+0 when success, -\/1 when failure happens 
+\end{DoxyReturn}
+\index{c\+\_\+runtime\+\_\+api.\+h@{c\+\_\+runtime\+\_\+api.\+h}!T\+V\+M\+Cb\+Arg\+To\+Return@{T\+V\+M\+Cb\+Arg\+To\+Return}}
+\index{T\+V\+M\+Cb\+Arg\+To\+Return@{T\+V\+M\+Cb\+Arg\+To\+Return}!c\+\_\+runtime\+\_\+api.\+h@{c\+\_\+runtime\+\_\+api.\+h}}
+\subsubsection[{\texorpdfstring{T\+V\+M\+Cb\+Arg\+To\+Return(\+T\+V\+M\+Value $\ast$value, int code)}{TVMCbArgToReturn(TVMValue *value, int code)}}]{\setlength{\rightskip}{0pt plus 5cm}int T\+V\+M\+Cb\+Arg\+To\+Return (
+\begin{DoxyParamCaption}
+\item[{{\bf T\+V\+M\+Value} $\ast$}]{value, }
+\item[{int}]{code}
+\end{DoxyParamCaption}
+)}\hypertarget{c__runtime__api_8h_a9ed74b4237a8cb8438bd621d028250e2}{}\label{c__runtime__api_8h_a9ed74b4237a8cb8438bd621d028250e2}
+
+
+Inplace translate callback argument value to return value. This is only needed for non-\/\+P\+OD arguments. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em value} & The value to be translated. \\
+\hline
+{\em code} & The type code to be translated. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyNote}{Note}
+This function will do a shallow copy when necessary.
+\end{DoxyNote}
+\begin{DoxyReturn}{Returns}
+0 when success, -\/1 when failure happens. 
+\end{DoxyReturn}
+\index{c\+\_\+runtime\+\_\+api.\+h@{c\+\_\+runtime\+\_\+api.\+h}!T\+V\+M\+C\+Func\+Set\+Return@{T\+V\+M\+C\+Func\+Set\+Return}}
+\index{T\+V\+M\+C\+Func\+Set\+Return@{T\+V\+M\+C\+Func\+Set\+Return}!c\+\_\+runtime\+\_\+api.\+h@{c\+\_\+runtime\+\_\+api.\+h}}
+\subsubsection[{\texorpdfstring{T\+V\+M\+C\+Func\+Set\+Return(\+T\+V\+M\+Ret\+Value\+Handle ret, T\+V\+M\+Value $\ast$value, int $\ast$type\+\_\+code, int num\+\_\+ret)}{TVMCFuncSetReturn(TVMRetValueHandle ret, TVMValue *value, int *type_code, int num_ret)}}]{\setlength{\rightskip}{0pt plus 5cm}int T\+V\+M\+C\+Func\+Set\+Return (
+\begin{DoxyParamCaption}
+\item[{{\bf T\+V\+M\+Ret\+Value\+Handle}}]{ret, }
+\item[{{\bf T\+V\+M\+Value} $\ast$}]{value, }
+\item[{int $\ast$}]{type\+\_\+code, }
+\item[{int}]{num\+\_\+ret}
+\end{DoxyParamCaption}
+)}\hypertarget{c__runtime__api_8h_ad0c98ff469bd844546a71f61d2e164f3}{}\label{c__runtime__api_8h_ad0c98ff469bd844546a71f61d2e164f3}
+
+
+Set the return value of T\+V\+M\+Packed\+C\+Func. 
+
+This function is called by T\+V\+M\+Packed\+C\+Func to set the return value. When this function is not called, the function returns null by default.
+
+
+\begin{DoxyParams}{Parameters}
+{\em ret} & The return value handle, pass by ret in T\+V\+M\+Packed\+C\+Func \\
+\hline
+{\em value} & The value to be returned. \\
+\hline
+{\em type\+\_\+code} & The type of the value to be returned. \\
+\hline
+{\em num\+\_\+ret} & Number of return values, for now only 1 is supported. \\
+\hline
+\end{DoxyParams}
+\index{c\+\_\+runtime\+\_\+api.\+h@{c\+\_\+runtime\+\_\+api.\+h}!T\+V\+M\+D\+L\+Managed\+Tensor\+Call\+Deleter@{T\+V\+M\+D\+L\+Managed\+Tensor\+Call\+Deleter}}
+\index{T\+V\+M\+D\+L\+Managed\+Tensor\+Call\+Deleter@{T\+V\+M\+D\+L\+Managed\+Tensor\+Call\+Deleter}!c\+\_\+runtime\+\_\+api.\+h@{c\+\_\+runtime\+\_\+api.\+h}}
+\subsubsection[{\texorpdfstring{T\+V\+M\+D\+L\+Managed\+Tensor\+Call\+Deleter(\+D\+L\+Managed\+Tensor $\ast$dltensor)}{TVMDLManagedTensorCallDeleter(DLManagedTensor *dltensor)}}]{\setlength{\rightskip}{0pt plus 5cm}void T\+V\+M\+D\+L\+Managed\+Tensor\+Call\+Deleter (
+\begin{DoxyParamCaption}
+\item[{D\+L\+Managed\+Tensor $\ast$}]{dltensor}
+\end{DoxyParamCaption}
+)}\hypertarget{c__runtime__api_8h_a6483791fc218022e690b6e0d81a095b0}{}\label{c__runtime__api_8h_a6483791fc218022e690b6e0d81a095b0}
+
+
+Delete (free) a D\+L\+Managed\+Tensor\textquotesingle{}s data. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em dltensor} & Pointer to the D\+L\+Managed\+Tensor. \\
+\hline
+\end{DoxyParams}
+\index{c\+\_\+runtime\+\_\+api.\+h@{c\+\_\+runtime\+\_\+api.\+h}!T\+V\+M\+Func\+Call@{T\+V\+M\+Func\+Call}}
+\index{T\+V\+M\+Func\+Call@{T\+V\+M\+Func\+Call}!c\+\_\+runtime\+\_\+api.\+h@{c\+\_\+runtime\+\_\+api.\+h}}
+\subsubsection[{\texorpdfstring{T\+V\+M\+Func\+Call(\+T\+V\+M\+Function\+Handle func, T\+V\+M\+Value $\ast$arg\+\_\+values, int $\ast$type\+\_\+codes, int num\+\_\+args, T\+V\+M\+Value $\ast$ret\+\_\+val, int $\ast$ret\+\_\+type\+\_\+code)}{TVMFuncCall(TVMFunctionHandle func, TVMValue *arg_values, int *type_codes, int num_args, TVMValue *ret_val, int *ret_type_code)}}]{\setlength{\rightskip}{0pt plus 5cm}int T\+V\+M\+Func\+Call (
+\begin{DoxyParamCaption}
+\item[{{\bf T\+V\+M\+Function\+Handle}}]{func, }
+\item[{{\bf T\+V\+M\+Value} $\ast$}]{arg\+\_\+values, }
+\item[{int $\ast$}]{type\+\_\+codes, }
+\item[{int}]{num\+\_\+args, }
+\item[{{\bf T\+V\+M\+Value} $\ast$}]{ret\+\_\+val, }
+\item[{int $\ast$}]{ret\+\_\+type\+\_\+code}
+\end{DoxyParamCaption}
+)}\hypertarget{c__runtime__api_8h_a8a01e20ffd5784465df0759c950154b5}{}\label{c__runtime__api_8h_a8a01e20ffd5784465df0759c950154b5}
+
+
+Call a Packed T\+VM Function. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em func} & node handle of the function. \\
+\hline
+{\em arg\+\_\+values} & The arguments \\
+\hline
+{\em type\+\_\+codes} & The type codes of the arguments \\
+\hline
+{\em num\+\_\+args} & Number of arguments.\\
+\hline
+{\em ret\+\_\+val} & The return value. \\
+\hline
+{\em ret\+\_\+type\+\_\+code} & the type code of return value.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+0 when success, -\/1 when failure happens 
+\end{DoxyReturn}
+\begin{DoxyNote}{Note}
+T\+VM calls always exchanges with type bits=64, lanes=1
+
+A\+PI calls always exchanges with type bits=64, lanes=1 If A\+PI call returns container handles (e.\+g. Function\+Handle) these handles should be managed by the front-\/end. The front-\/end need to call free function (e.\+g. T\+V\+M\+Func\+Free) to free these handles. 
+\end{DoxyNote}
+\index{c\+\_\+runtime\+\_\+api.\+h@{c\+\_\+runtime\+\_\+api.\+h}!T\+V\+M\+Func\+Create\+From\+C\+Func@{T\+V\+M\+Func\+Create\+From\+C\+Func}}
+\index{T\+V\+M\+Func\+Create\+From\+C\+Func@{T\+V\+M\+Func\+Create\+From\+C\+Func}!c\+\_\+runtime\+\_\+api.\+h@{c\+\_\+runtime\+\_\+api.\+h}}
+\subsubsection[{\texorpdfstring{T\+V\+M\+Func\+Create\+From\+C\+Func(\+T\+V\+M\+Packed\+C\+Func func, void $\ast$resource\+\_\+handle, T\+V\+M\+Packed\+C\+Func\+Finalizer fin, T\+V\+M\+Function\+Handle $\ast$out)}{TVMFuncCreateFromCFunc(TVMPackedCFunc func, void *resource_handle, TVMPackedCFuncFinalizer fin, TVMFunctionHandle *out)}}]{\setlength{\rightskip}{0pt plus 5cm}int T\+V\+M\+Func\+Create\+From\+C\+Func (
+\begin{DoxyParamCaption}
+\item[{{\bf T\+V\+M\+Packed\+C\+Func}}]{func, }
+\item[{void $\ast$}]{resource\+\_\+handle, }
+\item[{{\bf T\+V\+M\+Packed\+C\+Func\+Finalizer}}]{fin, }
+\item[{{\bf T\+V\+M\+Function\+Handle} $\ast$}]{out}
+\end{DoxyParamCaption}
+)}\hypertarget{c__runtime__api_8h_adfd8d1f9e7229625d4acd7da3b10287c}{}\label{c__runtime__api_8h_adfd8d1f9e7229625d4acd7da3b10287c}
+
+
+Wrap a T\+V\+M\+Packed\+C\+Func to become a Function\+Handle. 
+
+The resource\+\_\+handle will be managed by T\+VM A\+PI, until the function is no longer used.
+
+
+\begin{DoxyParams}{Parameters}
+{\em func} & The packed C function. \\
+\hline
+{\em resource\+\_\+handle} & The resource handle from front-\/end, can be N\+U\+LL. \\
+\hline
+{\em fin} & The finalizer on resource handle when the Function\+Handle get freed, can be N\+U\+LL \\
+\hline
+{\em out} & the result function handle. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+0 when success, -\/1 when failure happens 
+\end{DoxyReturn}
+\index{c\+\_\+runtime\+\_\+api.\+h@{c\+\_\+runtime\+\_\+api.\+h}!T\+V\+M\+Func\+Free@{T\+V\+M\+Func\+Free}}
+\index{T\+V\+M\+Func\+Free@{T\+V\+M\+Func\+Free}!c\+\_\+runtime\+\_\+api.\+h@{c\+\_\+runtime\+\_\+api.\+h}}
+\subsubsection[{\texorpdfstring{T\+V\+M\+Func\+Free(\+T\+V\+M\+Function\+Handle func)}{TVMFuncFree(TVMFunctionHandle func)}}]{\setlength{\rightskip}{0pt plus 5cm}int T\+V\+M\+Func\+Free (
+\begin{DoxyParamCaption}
+\item[{{\bf T\+V\+M\+Function\+Handle}}]{func}
+\end{DoxyParamCaption}
+)}\hypertarget{c__runtime__api_8h_af420f0d74004615c03bb40270ad5d489}{}\label{c__runtime__api_8h_af420f0d74004615c03bb40270ad5d489}
+
+
+Free the function when it is no longer needed. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em func} & The function handle \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+0 when success, -\/1 when failure happens 
+\end{DoxyReturn}
+\index{c\+\_\+runtime\+\_\+api.\+h@{c\+\_\+runtime\+\_\+api.\+h}!T\+V\+M\+Func\+Get\+Global@{T\+V\+M\+Func\+Get\+Global}}
+\index{T\+V\+M\+Func\+Get\+Global@{T\+V\+M\+Func\+Get\+Global}!c\+\_\+runtime\+\_\+api.\+h@{c\+\_\+runtime\+\_\+api.\+h}}
+\subsubsection[{\texorpdfstring{T\+V\+M\+Func\+Get\+Global(const char $\ast$name, T\+V\+M\+Function\+Handle $\ast$out)}{TVMFuncGetGlobal(const char *name, TVMFunctionHandle *out)}}]{\setlength{\rightskip}{0pt plus 5cm}int T\+V\+M\+Func\+Get\+Global (
+\begin{DoxyParamCaption}
+\item[{const char $\ast$}]{name, }
+\item[{{\bf T\+V\+M\+Function\+Handle} $\ast$}]{out}
+\end{DoxyParamCaption}
+)}\hypertarget{c__runtime__api_8h_ad3bd42da244a0e32ac82d7428e01a010}{}\label{c__runtime__api_8h_ad3bd42da244a0e32ac82d7428e01a010}
+
+
+Get a global function. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em name} & The name of the function. \\
+\hline
+{\em out} & the result function pointer, N\+U\+LL if it does not exist.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyNote}{Note}
+The function handle of global function is managed by T\+VM runtime, So T\+V\+M\+Func\+Free is should not be called when it get deleted. 
+\end{DoxyNote}
+\index{c\+\_\+runtime\+\_\+api.\+h@{c\+\_\+runtime\+\_\+api.\+h}!T\+V\+M\+Func\+List\+Global\+Names@{T\+V\+M\+Func\+List\+Global\+Names}}
+\index{T\+V\+M\+Func\+List\+Global\+Names@{T\+V\+M\+Func\+List\+Global\+Names}!c\+\_\+runtime\+\_\+api.\+h@{c\+\_\+runtime\+\_\+api.\+h}}
+\subsubsection[{\texorpdfstring{T\+V\+M\+Func\+List\+Global\+Names(int $\ast$out\+\_\+size, const char $\ast$$\ast$$\ast$out\+\_\+array)}{TVMFuncListGlobalNames(int *out_size, const char ***out_array)}}]{\setlength{\rightskip}{0pt plus 5cm}int T\+V\+M\+Func\+List\+Global\+Names (
+\begin{DoxyParamCaption}
+\item[{int $\ast$}]{out\+\_\+size, }
+\item[{const char $\ast$$\ast$$\ast$}]{out\+\_\+array}
+\end{DoxyParamCaption}
+)}\hypertarget{c__runtime__api_8h_a392740d028710fcd356b2b63ab90fd01}{}\label{c__runtime__api_8h_a392740d028710fcd356b2b63ab90fd01}
+
+
+List all the globally registered function name. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em out\+\_\+size} & The number of functions \\
+\hline
+{\em out\+\_\+array} & The array of function names. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+0 when success, -\/1 when failure happens 
+\end{DoxyReturn}
+\index{c\+\_\+runtime\+\_\+api.\+h@{c\+\_\+runtime\+\_\+api.\+h}!T\+V\+M\+Func\+Register\+Global@{T\+V\+M\+Func\+Register\+Global}}
+\index{T\+V\+M\+Func\+Register\+Global@{T\+V\+M\+Func\+Register\+Global}!c\+\_\+runtime\+\_\+api.\+h@{c\+\_\+runtime\+\_\+api.\+h}}
+\subsubsection[{\texorpdfstring{T\+V\+M\+Func\+Register\+Global(const char $\ast$name, T\+V\+M\+Function\+Handle f, int override)}{TVMFuncRegisterGlobal(const char *name, TVMFunctionHandle f, int override)}}]{\setlength{\rightskip}{0pt plus 5cm}int T\+V\+M\+Func\+Register\+Global (
+\begin{DoxyParamCaption}
+\item[{const char $\ast$}]{name, }
+\item[{{\bf T\+V\+M\+Function\+Handle}}]{f, }
+\item[{int}]{override}
+\end{DoxyParamCaption}
+)}\hypertarget{c__runtime__api_8h_a9642167d9a76bfe7e81174e8776d504b}{}\label{c__runtime__api_8h_a9642167d9a76bfe7e81174e8776d504b}
+
+
+Register the function to runtime\textquotesingle{}s global table. 
+
+The registered function then can be pulled by the backend by the name.
+
+
+\begin{DoxyParams}{Parameters}
+{\em name} & The name of the function. \\
+\hline
+{\em f} & The function to be registered. \\
+\hline
+{\em override} & Whether allow override already registered function. \\
+\hline
+\end{DoxyParams}
+\index{c\+\_\+runtime\+\_\+api.\+h@{c\+\_\+runtime\+\_\+api.\+h}!T\+V\+M\+Get\+Last\+Error@{T\+V\+M\+Get\+Last\+Error}}
+\index{T\+V\+M\+Get\+Last\+Error@{T\+V\+M\+Get\+Last\+Error}!c\+\_\+runtime\+\_\+api.\+h@{c\+\_\+runtime\+\_\+api.\+h}}
+\subsubsection[{\texorpdfstring{T\+V\+M\+Get\+Last\+Error(void)}{TVMGetLastError(void)}}]{\setlength{\rightskip}{0pt plus 5cm}const char$\ast$ T\+V\+M\+Get\+Last\+Error (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}\hypertarget{c__runtime__api_8h_a775383bcd8c0237e36bdf0c9654d62c3}{}\label{c__runtime__api_8h_a775383bcd8c0237e36bdf0c9654d62c3}
+
+
+return str message of the last error all function in this file will return 0 when success and -\/1 when an error occurred, T\+V\+M\+Get\+Last\+Error can be called to retrieve the error 
+
+this function is threadsafe and can be called by different thread \begin{DoxyReturn}{Returns}
+error info 
+\end{DoxyReturn}
+\index{c\+\_\+runtime\+\_\+api.\+h@{c\+\_\+runtime\+\_\+api.\+h}!T\+V\+M\+Mod\+Free@{T\+V\+M\+Mod\+Free}}
+\index{T\+V\+M\+Mod\+Free@{T\+V\+M\+Mod\+Free}!c\+\_\+runtime\+\_\+api.\+h@{c\+\_\+runtime\+\_\+api.\+h}}
+\subsubsection[{\texorpdfstring{T\+V\+M\+Mod\+Free(\+T\+V\+M\+Module\+Handle mod)}{TVMModFree(TVMModuleHandle mod)}}]{\setlength{\rightskip}{0pt plus 5cm}int T\+V\+M\+Mod\+Free (
+\begin{DoxyParamCaption}
+\item[{{\bf T\+V\+M\+Module\+Handle}}]{mod}
+\end{DoxyParamCaption}
+)}\hypertarget{c__runtime__api_8h_ac16764609b45ac911a5c9971e195e377}{}\label{c__runtime__api_8h_ac16764609b45ac911a5c9971e195e377}
+
+
+Free the Module. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em mod} & The module to be freed.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyNote}{Note}
+This may not free up the module\textquotesingle{}s resources. If there is active T\+V\+M\+Function\+Handle uses the module Or if this module is imported by another active module.
+\end{DoxyNote}
+The all functions remains valid until T\+V\+M\+Func\+Free is called. \begin{DoxyReturn}{Returns}
+0 when success, -\/1 when failure happens 
+\end{DoxyReturn}
+\index{c\+\_\+runtime\+\_\+api.\+h@{c\+\_\+runtime\+\_\+api.\+h}!T\+V\+M\+Mod\+Get\+Function@{T\+V\+M\+Mod\+Get\+Function}}
+\index{T\+V\+M\+Mod\+Get\+Function@{T\+V\+M\+Mod\+Get\+Function}!c\+\_\+runtime\+\_\+api.\+h@{c\+\_\+runtime\+\_\+api.\+h}}
+\subsubsection[{\texorpdfstring{T\+V\+M\+Mod\+Get\+Function(\+T\+V\+M\+Module\+Handle mod, const char $\ast$func\+\_\+name, int query\+\_\+imports, T\+V\+M\+Function\+Handle $\ast$out)}{TVMModGetFunction(TVMModuleHandle mod, const char *func_name, int query_imports, TVMFunctionHandle *out)}}]{\setlength{\rightskip}{0pt plus 5cm}int T\+V\+M\+Mod\+Get\+Function (
+\begin{DoxyParamCaption}
+\item[{{\bf T\+V\+M\+Module\+Handle}}]{mod, }
+\item[{const char $\ast$}]{func\+\_\+name, }
+\item[{int}]{query\+\_\+imports, }
+\item[{{\bf T\+V\+M\+Function\+Handle} $\ast$}]{out}
+\end{DoxyParamCaption}
+)}\hypertarget{c__runtime__api_8h_a5a19a18084c94396a673efa309405a6c}{}\label{c__runtime__api_8h_a5a19a18084c94396a673efa309405a6c}
+
+
+Get function from the module. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em mod} & The module handle. \\
+\hline
+{\em func\+\_\+name} & The name of the function. \\
+\hline
+{\em query\+\_\+imports} & Whether to query imported modules \\
+\hline
+{\em out} & The result function, can be N\+U\+LL if it is not available. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+0 when no error is thrown, -\/1 when failure happens 
+\end{DoxyReturn}
+\index{c\+\_\+runtime\+\_\+api.\+h@{c\+\_\+runtime\+\_\+api.\+h}!T\+V\+M\+Mod\+Import@{T\+V\+M\+Mod\+Import}}
+\index{T\+V\+M\+Mod\+Import@{T\+V\+M\+Mod\+Import}!c\+\_\+runtime\+\_\+api.\+h@{c\+\_\+runtime\+\_\+api.\+h}}
+\subsubsection[{\texorpdfstring{T\+V\+M\+Mod\+Import(\+T\+V\+M\+Module\+Handle mod, T\+V\+M\+Module\+Handle dep)}{TVMModImport(TVMModuleHandle mod, TVMModuleHandle dep)}}]{\setlength{\rightskip}{0pt plus 5cm}int T\+V\+M\+Mod\+Import (
+\begin{DoxyParamCaption}
+\item[{{\bf T\+V\+M\+Module\+Handle}}]{mod, }
+\item[{{\bf T\+V\+M\+Module\+Handle}}]{dep}
+\end{DoxyParamCaption}
+)}\hypertarget{c__runtime__api_8h_aaeb0d67f6d7e90e671dd5a53b1d6b81a}{}\label{c__runtime__api_8h_aaeb0d67f6d7e90e671dd5a53b1d6b81a}
+
+
+Add dep to mod\textquotesingle{}s dependency. This allows functions in this module to use modules. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em mod} & The module handle. \\
+\hline
+{\em dep} & The dependent module to be imported. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+0 when success, -\/1 when failure happens 
+\end{DoxyReturn}
+\index{c\+\_\+runtime\+\_\+api.\+h@{c\+\_\+runtime\+\_\+api.\+h}!T\+V\+M\+Mod\+Load\+From\+File@{T\+V\+M\+Mod\+Load\+From\+File}}
+\index{T\+V\+M\+Mod\+Load\+From\+File@{T\+V\+M\+Mod\+Load\+From\+File}!c\+\_\+runtime\+\_\+api.\+h@{c\+\_\+runtime\+\_\+api.\+h}}
+\subsubsection[{\texorpdfstring{T\+V\+M\+Mod\+Load\+From\+File(const char $\ast$file\+\_\+name, const char $\ast$format, T\+V\+M\+Module\+Handle $\ast$out)}{TVMModLoadFromFile(const char *file_name, const char *format, TVMModuleHandle *out)}}]{\setlength{\rightskip}{0pt plus 5cm}int T\+V\+M\+Mod\+Load\+From\+File (
+\begin{DoxyParamCaption}
+\item[{const char $\ast$}]{file\+\_\+name, }
+\item[{const char $\ast$}]{format, }
+\item[{{\bf T\+V\+M\+Module\+Handle} $\ast$}]{out}
+\end{DoxyParamCaption}
+)}\hypertarget{c__runtime__api_8h_a47f79bb2004573a8e36a175d1b73fc64}{}\label{c__runtime__api_8h_a47f79bb2004573a8e36a175d1b73fc64}
+
+
+Load module from file. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em file\+\_\+name} & The file name to load the module from. \\
+\hline
+{\em format} & The format of the module. \\
+\hline
+{\em out} & The result module\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+0 when success, -\/1 when failure happens 
+\end{DoxyReturn}
+\begin{DoxyNote}{Note}
+The resulting module do not contain import relation. It can be reconstructed by T\+V\+M\+Mod\+Import. 
+\end{DoxyNote}
+\index{c\+\_\+runtime\+\_\+api.\+h@{c\+\_\+runtime\+\_\+api.\+h}!T\+V\+M\+Object\+Free@{T\+V\+M\+Object\+Free}}
+\index{T\+V\+M\+Object\+Free@{T\+V\+M\+Object\+Free}!c\+\_\+runtime\+\_\+api.\+h@{c\+\_\+runtime\+\_\+api.\+h}}
+\subsubsection[{\texorpdfstring{T\+V\+M\+Object\+Free(\+T\+V\+M\+Object\+Handle obj)}{TVMObjectFree(TVMObjectHandle obj)}}]{\setlength{\rightskip}{0pt plus 5cm}int T\+V\+M\+Object\+Free (
+\begin{DoxyParamCaption}
+\item[{{\bf T\+V\+M\+Object\+Handle}}]{obj}
+\end{DoxyParamCaption}
+)}\hypertarget{c__runtime__api_8h_a660b709e0d509be7909fc31e3690d3f9}{}\label{c__runtime__api_8h_a660b709e0d509be7909fc31e3690d3f9}
+
+
+Free the object. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em obj} & The object handle. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyNote}{Note}
+Internally we decrease the reference counter of the object. The object will be freed when every reference to the object are removed. 
+\end{DoxyNote}
+\begin{DoxyReturn}{Returns}
+0 when success, -\/1 when failure happens 
+\end{DoxyReturn}
+\index{c\+\_\+runtime\+\_\+api.\+h@{c\+\_\+runtime\+\_\+api.\+h}!T\+V\+M\+Object\+Get\+Type\+Index@{T\+V\+M\+Object\+Get\+Type\+Index}}
+\index{T\+V\+M\+Object\+Get\+Type\+Index@{T\+V\+M\+Object\+Get\+Type\+Index}!c\+\_\+runtime\+\_\+api.\+h@{c\+\_\+runtime\+\_\+api.\+h}}
+\subsubsection[{\texorpdfstring{T\+V\+M\+Object\+Get\+Type\+Index(\+T\+V\+M\+Object\+Handle obj, unsigned $\ast$out\+\_\+tindex)}{TVMObjectGetTypeIndex(TVMObjectHandle obj, unsigned *out_tindex)}}]{\setlength{\rightskip}{0pt plus 5cm}int T\+V\+M\+Object\+Get\+Type\+Index (
+\begin{DoxyParamCaption}
+\item[{{\bf T\+V\+M\+Object\+Handle}}]{obj, }
+\item[{unsigned $\ast$}]{out\+\_\+tindex}
+\end{DoxyParamCaption}
+)}\hypertarget{c__runtime__api_8h_ab9ddee6cf53918337cd4ca68d8bfc8b1}{}\label{c__runtime__api_8h_ab9ddee6cf53918337cd4ca68d8bfc8b1}
+
+
+Get the type\+\_\+index from an object. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em obj} & The object handle. \\
+\hline
+{\em out\+\_\+tindex} & the output type index. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+0 when success, -\/1 when failure happens 
+\end{DoxyReturn}
+\index{c\+\_\+runtime\+\_\+api.\+h@{c\+\_\+runtime\+\_\+api.\+h}!T\+V\+M\+Object\+Type\+Key2\+Index@{T\+V\+M\+Object\+Type\+Key2\+Index}}
+\index{T\+V\+M\+Object\+Type\+Key2\+Index@{T\+V\+M\+Object\+Type\+Key2\+Index}!c\+\_\+runtime\+\_\+api.\+h@{c\+\_\+runtime\+\_\+api.\+h}}
+\subsubsection[{\texorpdfstring{T\+V\+M\+Object\+Type\+Key2\+Index(const char $\ast$type\+\_\+key, unsigned $\ast$out\+\_\+tindex)}{TVMObjectTypeKey2Index(const char *type_key, unsigned *out_tindex)}}]{\setlength{\rightskip}{0pt plus 5cm}int T\+V\+M\+Object\+Type\+Key2\+Index (
+\begin{DoxyParamCaption}
+\item[{const char $\ast$}]{type\+\_\+key, }
+\item[{unsigned $\ast$}]{out\+\_\+tindex}
+\end{DoxyParamCaption}
+)}\hypertarget{c__runtime__api_8h_a77d84581b6d0d78c77d88139c6adbf81}{}\label{c__runtime__api_8h_a77d84581b6d0d78c77d88139c6adbf81}
+
+
+Convert type key to type index. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em type\+\_\+key} & The key of the type. \\
+\hline
+{\em out\+\_\+tindex} & the corresponding type index. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+0 when success, -\/1 when failure happens 
+\end{DoxyReturn}
+\index{c\+\_\+runtime\+\_\+api.\+h@{c\+\_\+runtime\+\_\+api.\+h}!T\+V\+M\+Set\+Stream@{T\+V\+M\+Set\+Stream}}
+\index{T\+V\+M\+Set\+Stream@{T\+V\+M\+Set\+Stream}!c\+\_\+runtime\+\_\+api.\+h@{c\+\_\+runtime\+\_\+api.\+h}}
+\subsubsection[{\texorpdfstring{T\+V\+M\+Set\+Stream(int device\+\_\+type, int device\+\_\+id, T\+V\+M\+Stream\+Handle handle)}{TVMSetStream(int device_type, int device_id, TVMStreamHandle handle)}}]{\setlength{\rightskip}{0pt plus 5cm}int T\+V\+M\+Set\+Stream (
+\begin{DoxyParamCaption}
+\item[{int}]{device\+\_\+type, }
+\item[{int}]{device\+\_\+id, }
+\item[{{\bf T\+V\+M\+Stream\+Handle}}]{handle}
+\end{DoxyParamCaption}
+)}\hypertarget{c__runtime__api_8h_ac414ed248ddb1bfb561685bba3de5e89}{}\label{c__runtime__api_8h_ac414ed248ddb1bfb561685bba3de5e89}
+
+
+Set the runtime stream of current thread to be stream. The subsequent calls to the same device\+\_\+type will use the setted stream handle. The specific type of stream is runtime device dependent. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em device\+\_\+type} & The device type of context \\
+\hline
+{\em device\+\_\+id} & The device id of context. \\
+\hline
+{\em handle} & The stream handle. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+0 when success, -\/1 when failure happens 
+\end{DoxyReturn}
+\index{c\+\_\+runtime\+\_\+api.\+h@{c\+\_\+runtime\+\_\+api.\+h}!T\+V\+M\+Stream\+Create@{T\+V\+M\+Stream\+Create}}
+\index{T\+V\+M\+Stream\+Create@{T\+V\+M\+Stream\+Create}!c\+\_\+runtime\+\_\+api.\+h@{c\+\_\+runtime\+\_\+api.\+h}}
+\subsubsection[{\texorpdfstring{T\+V\+M\+Stream\+Create(int device\+\_\+type, int device\+\_\+id, T\+V\+M\+Stream\+Handle $\ast$out)}{TVMStreamCreate(int device_type, int device_id, TVMStreamHandle *out)}}]{\setlength{\rightskip}{0pt plus 5cm}int T\+V\+M\+Stream\+Create (
+\begin{DoxyParamCaption}
+\item[{int}]{device\+\_\+type, }
+\item[{int}]{device\+\_\+id, }
+\item[{{\bf T\+V\+M\+Stream\+Handle} $\ast$}]{out}
+\end{DoxyParamCaption}
+)}\hypertarget{c__runtime__api_8h_a71d0c47cca9068b17cf0a1f4c58d8ca9}{}\label{c__runtime__api_8h_a71d0c47cca9068b17cf0a1f4c58d8ca9}
+
+
+Create a new runtime stream. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em device\+\_\+type} & The device type of context \\
+\hline
+{\em device\+\_\+id} & The device id of context \\
+\hline
+{\em out} & The new stream handle \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+0 when success, -\/1 when failure happens 
+\end{DoxyReturn}
+\index{c\+\_\+runtime\+\_\+api.\+h@{c\+\_\+runtime\+\_\+api.\+h}!T\+V\+M\+Stream\+Free@{T\+V\+M\+Stream\+Free}}
+\index{T\+V\+M\+Stream\+Free@{T\+V\+M\+Stream\+Free}!c\+\_\+runtime\+\_\+api.\+h@{c\+\_\+runtime\+\_\+api.\+h}}
+\subsubsection[{\texorpdfstring{T\+V\+M\+Stream\+Free(int device\+\_\+type, int device\+\_\+id, T\+V\+M\+Stream\+Handle stream)}{TVMStreamFree(int device_type, int device_id, TVMStreamHandle stream)}}]{\setlength{\rightskip}{0pt plus 5cm}int T\+V\+M\+Stream\+Free (
+\begin{DoxyParamCaption}
+\item[{int}]{device\+\_\+type, }
+\item[{int}]{device\+\_\+id, }
+\item[{{\bf T\+V\+M\+Stream\+Handle}}]{stream}
+\end{DoxyParamCaption}
+)}\hypertarget{c__runtime__api_8h_a9dd0545318bfee4e2f4ccce7d7008e01}{}\label{c__runtime__api_8h_a9dd0545318bfee4e2f4ccce7d7008e01}
+
+
+Free a created stream handle. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em device\+\_\+type} & The device type of context \\
+\hline
+{\em device\+\_\+id} & The device id of context \\
+\hline
+{\em stream} & The stream to be freed \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+0 when success, -\/1 when failure happens 
+\end{DoxyReturn}
+\index{c\+\_\+runtime\+\_\+api.\+h@{c\+\_\+runtime\+\_\+api.\+h}!T\+V\+M\+Stream\+Stream\+Synchronize@{T\+V\+M\+Stream\+Stream\+Synchronize}}
+\index{T\+V\+M\+Stream\+Stream\+Synchronize@{T\+V\+M\+Stream\+Stream\+Synchronize}!c\+\_\+runtime\+\_\+api.\+h@{c\+\_\+runtime\+\_\+api.\+h}}
+\subsubsection[{\texorpdfstring{T\+V\+M\+Stream\+Stream\+Synchronize(int device\+\_\+type, int device\+\_\+id, T\+V\+M\+Stream\+Handle src, T\+V\+M\+Stream\+Handle dst)}{TVMStreamStreamSynchronize(int device_type, int device_id, TVMStreamHandle src, TVMStreamHandle dst)}}]{\setlength{\rightskip}{0pt plus 5cm}int T\+V\+M\+Stream\+Stream\+Synchronize (
+\begin{DoxyParamCaption}
+\item[{int}]{device\+\_\+type, }
+\item[{int}]{device\+\_\+id, }
+\item[{{\bf T\+V\+M\+Stream\+Handle}}]{src, }
+\item[{{\bf T\+V\+M\+Stream\+Handle}}]{dst}
+\end{DoxyParamCaption}
+)}\hypertarget{c__runtime__api_8h_aa91f776ed41a36790409f78725f81419}{}\label{c__runtime__api_8h_aa91f776ed41a36790409f78725f81419}
+
+
+Synchronize two streams of execution. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em device\+\_\+type} & The device type of context \\
+\hline
+{\em device\+\_\+id} & The device id of context \\
+\hline
+{\em src} & The source stream to synchronize. \\
+\hline
+{\em dst} & The destination stream to synchronize. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+0 when success, -\/1 when failure happens 
+\end{DoxyReturn}
+\index{c\+\_\+runtime\+\_\+api.\+h@{c\+\_\+runtime\+\_\+api.\+h}!T\+V\+M\+Synchronize@{T\+V\+M\+Synchronize}}
+\index{T\+V\+M\+Synchronize@{T\+V\+M\+Synchronize}!c\+\_\+runtime\+\_\+api.\+h@{c\+\_\+runtime\+\_\+api.\+h}}
+\subsubsection[{\texorpdfstring{T\+V\+M\+Synchronize(int device\+\_\+type, int device\+\_\+id, T\+V\+M\+Stream\+Handle stream)}{TVMSynchronize(int device_type, int device_id, TVMStreamHandle stream)}}]{\setlength{\rightskip}{0pt plus 5cm}int T\+V\+M\+Synchronize (
+\begin{DoxyParamCaption}
+\item[{int}]{device\+\_\+type, }
+\item[{int}]{device\+\_\+id, }
+\item[{{\bf T\+V\+M\+Stream\+Handle}}]{stream}
+\end{DoxyParamCaption}
+)}\hypertarget{c__runtime__api_8h_a386d7efd946bc750af8bf109f93f6ce2}{}\label{c__runtime__api_8h_a386d7efd946bc750af8bf109f93f6ce2}
+
+
+Wait until all computations on stream completes. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em device\+\_\+type} & The device type of context \\
+\hline
+{\em device\+\_\+id} & The device id of context. \\
+\hline
+{\em stream} & The stream to be synchronized. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+0 when success, -\/1 when failure happens 
+\end{DoxyReturn}

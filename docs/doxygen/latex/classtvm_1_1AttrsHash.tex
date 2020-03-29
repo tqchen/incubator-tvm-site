@@ -1,0 +1,120 @@
+\hypertarget{classtvm_1_1AttrsHash}{}\section{tvm\+:\+:Attrs\+Hash Class Reference}
+\label{classtvm_1_1AttrsHash}\index{tvm\+::\+Attrs\+Hash@{tvm\+::\+Attrs\+Hash}}
+
+
+Content-\/aware hash function.  
+
+
+
+
+{\ttfamily \#include $<$attrs.\+h$>$}
+
+
+
+Collaboration diagram for tvm\+:\+:Attrs\+Hash\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=169pt]{classtvm_1_1AttrsHash__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+size\+\_\+t \hyperlink{classtvm_1_1AttrsHash_a17271e9215dcc670fd82b6f54dcdd160}{operator()} (const double \&value) const 
+\item 
+size\+\_\+t \hyperlink{classtvm_1_1AttrsHash_aa2bccb3fda57c4b96f14f2d77564382b}{operator()} (const int64\+\_\+t \&value) const 
+\item 
+size\+\_\+t \hyperlink{classtvm_1_1AttrsHash_a164a440cd00993b74fb74644d3cb234a}{operator()} (const uint64\+\_\+t \&value) const 
+\item 
+size\+\_\+t \hyperlink{classtvm_1_1AttrsHash_aa69c6ed1824bd0818e2dd49384faaa8f}{operator()} (const int \&value) const 
+\item 
+size\+\_\+t \hyperlink{classtvm_1_1AttrsHash_adfbed9e31f46503bc792ba0fa9c1dd5e}{operator()} (const bool \&value) const 
+\item 
+size\+\_\+t \hyperlink{classtvm_1_1AttrsHash_aa2e71ac14e2fb6eec6e510e95e6e4709}{operator()} (const std\+::string \&value) const 
+\item 
+size\+\_\+t \hyperlink{classtvm_1_1AttrsHash_a194e030739814e7419cc71575efad949}{operator()} (const \hyperlink{namespacetvm_a41918af1a1dc386388639a9d3ad06c5d}{Data\+Type} \&value) const 
+\item 
+size\+\_\+t \hyperlink{classtvm_1_1AttrsHash_a76a5eedbe7802765bdbe75492e4a77bc}{operator()} (const Object\+Ref \&value) const 
+\end{DoxyCompactItemize}
+\subsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+class \hyperlink{classtvm_1_1AttrsHash_a1070cab2b30682fe2945c7b68f461036}{Attrs\+Hash\+Handler}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Content-\/aware hash function. 
+
+This hash functor will recursively hash the content of the Attributes. It is guaranteed that if Attrs\+Equal(a, b) == true, then Attrs\+Hash(a) == Attrs\+Hash(b); 
+
+\subsection{Member Function Documentation}
+\index{tvm\+::\+Attrs\+Hash@{tvm\+::\+Attrs\+Hash}!operator()@{operator()}}
+\index{operator()@{operator()}!tvm\+::\+Attrs\+Hash@{tvm\+::\+Attrs\+Hash}}
+\subsubsection[{\texorpdfstring{operator()(const double \&value) const }{operator()(const double &value) const }}]{\setlength{\rightskip}{0pt plus 5cm}size\+\_\+t tvm\+::\+Attrs\+Hash\+::operator() (
+\begin{DoxyParamCaption}
+\item[{const double \&}]{value}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classtvm_1_1AttrsHash_a17271e9215dcc670fd82b6f54dcdd160}{}\label{classtvm_1_1AttrsHash_a17271e9215dcc670fd82b6f54dcdd160}
+\index{tvm\+::\+Attrs\+Hash@{tvm\+::\+Attrs\+Hash}!operator()@{operator()}}
+\index{operator()@{operator()}!tvm\+::\+Attrs\+Hash@{tvm\+::\+Attrs\+Hash}}
+\subsubsection[{\texorpdfstring{operator()(const int64\+\_\+t \&value) const }{operator()(const int64_t &value) const }}]{\setlength{\rightskip}{0pt plus 5cm}size\+\_\+t tvm\+::\+Attrs\+Hash\+::operator() (
+\begin{DoxyParamCaption}
+\item[{const int64\+\_\+t \&}]{value}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classtvm_1_1AttrsHash_aa2bccb3fda57c4b96f14f2d77564382b}{}\label{classtvm_1_1AttrsHash_aa2bccb3fda57c4b96f14f2d77564382b}
+\index{tvm\+::\+Attrs\+Hash@{tvm\+::\+Attrs\+Hash}!operator()@{operator()}}
+\index{operator()@{operator()}!tvm\+::\+Attrs\+Hash@{tvm\+::\+Attrs\+Hash}}
+\subsubsection[{\texorpdfstring{operator()(const uint64\+\_\+t \&value) const }{operator()(const uint64_t &value) const }}]{\setlength{\rightskip}{0pt plus 5cm}size\+\_\+t tvm\+::\+Attrs\+Hash\+::operator() (
+\begin{DoxyParamCaption}
+\item[{const uint64\+\_\+t \&}]{value}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classtvm_1_1AttrsHash_a164a440cd00993b74fb74644d3cb234a}{}\label{classtvm_1_1AttrsHash_a164a440cd00993b74fb74644d3cb234a}
+\index{tvm\+::\+Attrs\+Hash@{tvm\+::\+Attrs\+Hash}!operator()@{operator()}}
+\index{operator()@{operator()}!tvm\+::\+Attrs\+Hash@{tvm\+::\+Attrs\+Hash}}
+\subsubsection[{\texorpdfstring{operator()(const int \&value) const }{operator()(const int &value) const }}]{\setlength{\rightskip}{0pt plus 5cm}size\+\_\+t tvm\+::\+Attrs\+Hash\+::operator() (
+\begin{DoxyParamCaption}
+\item[{const int \&}]{value}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classtvm_1_1AttrsHash_aa69c6ed1824bd0818e2dd49384faaa8f}{}\label{classtvm_1_1AttrsHash_aa69c6ed1824bd0818e2dd49384faaa8f}
+\index{tvm\+::\+Attrs\+Hash@{tvm\+::\+Attrs\+Hash}!operator()@{operator()}}
+\index{operator()@{operator()}!tvm\+::\+Attrs\+Hash@{tvm\+::\+Attrs\+Hash}}
+\subsubsection[{\texorpdfstring{operator()(const bool \&value) const }{operator()(const bool &value) const }}]{\setlength{\rightskip}{0pt plus 5cm}size\+\_\+t tvm\+::\+Attrs\+Hash\+::operator() (
+\begin{DoxyParamCaption}
+\item[{const bool \&}]{value}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classtvm_1_1AttrsHash_adfbed9e31f46503bc792ba0fa9c1dd5e}{}\label{classtvm_1_1AttrsHash_adfbed9e31f46503bc792ba0fa9c1dd5e}
+\index{tvm\+::\+Attrs\+Hash@{tvm\+::\+Attrs\+Hash}!operator()@{operator()}}
+\index{operator()@{operator()}!tvm\+::\+Attrs\+Hash@{tvm\+::\+Attrs\+Hash}}
+\subsubsection[{\texorpdfstring{operator()(const std\+::string \&value) const }{operator()(const std::string &value) const }}]{\setlength{\rightskip}{0pt plus 5cm}size\+\_\+t tvm\+::\+Attrs\+Hash\+::operator() (
+\begin{DoxyParamCaption}
+\item[{const std\+::string \&}]{value}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classtvm_1_1AttrsHash_aa2e71ac14e2fb6eec6e510e95e6e4709}{}\label{classtvm_1_1AttrsHash_aa2e71ac14e2fb6eec6e510e95e6e4709}
+\index{tvm\+::\+Attrs\+Hash@{tvm\+::\+Attrs\+Hash}!operator()@{operator()}}
+\index{operator()@{operator()}!tvm\+::\+Attrs\+Hash@{tvm\+::\+Attrs\+Hash}}
+\subsubsection[{\texorpdfstring{operator()(const Data\+Type \&value) const }{operator()(const DataType &value) const }}]{\setlength{\rightskip}{0pt plus 5cm}size\+\_\+t tvm\+::\+Attrs\+Hash\+::operator() (
+\begin{DoxyParamCaption}
+\item[{const {\bf Data\+Type} \&}]{value}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classtvm_1_1AttrsHash_a194e030739814e7419cc71575efad949}{}\label{classtvm_1_1AttrsHash_a194e030739814e7419cc71575efad949}
+\index{tvm\+::\+Attrs\+Hash@{tvm\+::\+Attrs\+Hash}!operator()@{operator()}}
+\index{operator()@{operator()}!tvm\+::\+Attrs\+Hash@{tvm\+::\+Attrs\+Hash}}
+\subsubsection[{\texorpdfstring{operator()(const Object\+Ref \&value) const }{operator()(const ObjectRef &value) const }}]{\setlength{\rightskip}{0pt plus 5cm}size\+\_\+t tvm\+::\+Attrs\+Hash\+::operator() (
+\begin{DoxyParamCaption}
+\item[{const Object\+Ref \&}]{value}
+\end{DoxyParamCaption}
+) const}\hypertarget{classtvm_1_1AttrsHash_a76a5eedbe7802765bdbe75492e4a77bc}{}\label{classtvm_1_1AttrsHash_a76a5eedbe7802765bdbe75492e4a77bc}
+
+
+\subsection{Friends And Related Function Documentation}
+\index{tvm\+::\+Attrs\+Hash@{tvm\+::\+Attrs\+Hash}!Attrs\+Hash\+Handler@{Attrs\+Hash\+Handler}}
+\index{Attrs\+Hash\+Handler@{Attrs\+Hash\+Handler}!tvm\+::\+Attrs\+Hash@{tvm\+::\+Attrs\+Hash}}
+\subsubsection[{\texorpdfstring{Attrs\+Hash\+Handler}{AttrsHashHandler}}]{\setlength{\rightskip}{0pt plus 5cm}friend class Attrs\+Hash\+Handler\hspace{0.3cm}{\ttfamily [friend]}}\hypertarget{classtvm_1_1AttrsHash_a1070cab2b30682fe2945c7b68f461036}{}\label{classtvm_1_1AttrsHash_a1070cab2b30682fe2945c7b68f461036}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+include/tvm/ir/\hyperlink{ir_2attrs_8h}{attrs.\+h}\end{DoxyCompactItemize}

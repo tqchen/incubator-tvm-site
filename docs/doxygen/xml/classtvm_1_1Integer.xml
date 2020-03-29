@@ -1,0 +1,243 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="classtvm_1_1Integer" kind="class" language="C++" prot="public">
+    <compoundname>tvm::Integer</compoundname>
+    <basecompoundref refid="classtvm_1_1IntImm" prot="public" virt="non-virtual">tvm::IntImm</basecompoundref>
+    <includes refid="ir_2expr_8h" local="no">expr.h</includes>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classtvm_1_1Integer_1a2d3969d98441b5b2ee5d8a986a56c410" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>tvm::Integer::Integer</definition>
+        <argsstring>()</argsstring>
+        <name>Integer</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/ir/expr.h" line="329" column="1" bodyfile="include/tvm/ir/expr.h" bodystart="329" bodyend="329"/>
+      </memberdef>
+      <memberdef kind="function" id="classtvm_1_1Integer_1a262bc171fdf52db5f34e3c8446fb81aa" prot="public" static="no" const="no" explicit="yes" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>tvm::Integer::Integer</definition>
+        <argsstring>(ObjectPtr&lt; Object &gt; node)</argsstring>
+        <name>Integer</name>
+        <param>
+          <type>ObjectPtr&lt; Object &gt;</type>
+          <declname>node</declname>
+        </param>
+        <briefdescription>
+<para>constructor from node. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/ir/expr.h" line="333" column="1" bodyfile="include/tvm/ir/expr.h" bodystart="333" bodyend="333"/>
+      </memberdef>
+      <memberdef kind="function" id="classtvm_1_1Integer_1a1f58cf3c6dab32f1822b9cbccb5569e8" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>tvm::Integer::Integer</definition>
+        <argsstring>(int value)</argsstring>
+        <name>Integer</name>
+        <param>
+          <type>int</type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+<para>Construct integer from int value. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/ir/expr.h" line="337" column="1" bodyfile="include/tvm/ir/expr.h" bodystart="337" bodyend="337"/>
+      </memberdef>
+      <memberdef kind="function" id="classtvm_1_1Integer_1a962f080ada680921fbfff0846553ec33" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>tvm::Integer::Integer</definition>
+        <argsstring>(IntImm other)</argsstring>
+        <name>Integer</name>
+        <param>
+          <type><ref refid="classtvm_1_1IntImm" kindref="compound">IntImm</ref></type>
+          <declname>other</declname>
+        </param>
+        <briefdescription>
+<para>Construct integer from int imm. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>other</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The other value. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/ir/expr.h" line="342" column="1" bodyfile="include/tvm/ir/expr.h" bodystart="342" bodyend="342"/>
+      </memberdef>
+      <memberdef kind="function" id="classtvm_1_1Integer_1abddd0de9406285ff558cc83111ae37bd" prot="public" static="no" const="no" explicit="yes" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename ENum</type>
+          </param>
+          <param>
+            <type>typename</type>
+            <defval>typename std::enable_if&lt;std::is_enum&lt;ENum&gt;::value&gt;::type</defval>
+          </param>
+        </templateparamlist>
+        <type></type>
+        <definition>tvm::Integer::Integer</definition>
+        <argsstring>(ENum value)</argsstring>
+        <name>Integer</name>
+        <param>
+          <type>ENum</type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+<para><ref refid="classtvm_1_1Constructor" kindref="compound">Constructor</ref> from enum. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="templateparam"><parameteritem>
+<parameternamelist>
+<parametername>Enum</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The enum type. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>value</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The enum value. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/ir/expr.h" line="350" column="1" bodyfile="include/tvm/ir/expr.h" bodystart="350" bodyend="353"/>
+      </memberdef>
+      <memberdef kind="function" id="classtvm_1_1Integer_1ad538a2ae6f636b3ce38fb4162b1c2549" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classtvm_1_1Integer" kindref="compound">Integer</ref> &amp;</type>
+        <definition>Integer&amp; tvm::Integer::operator=</definition>
+        <argsstring>(const IntImm &amp;other)</argsstring>
+        <name>operator=</name>
+        <param>
+          <type>const <ref refid="classtvm_1_1IntImm" kindref="compound">IntImm</ref> &amp;</type>
+          <declname>other</declname>
+        </param>
+        <briefdescription>
+<para>Assign an expression to integer. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>other</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>another expression. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/ir/expr.h" line="358" column="1" bodyfile="include/tvm/ir/expr.h" bodystart="358" bodyend="361"/>
+      </memberdef>
+      <memberdef kind="function" id="classtvm_1_1Integer_1ab12102b4412b34faa459408d1fc8ba0e" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>tvm::Integer::operator int64_t</definition>
+        <argsstring>() const </argsstring>
+        <name>operator int64_t</name>
+        <briefdescription>
+<para>convert to int64_t </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/ir/expr.h" line="365" column="1" bodyfile="include/tvm/ir/expr.h" bodystart="365" bodyend="369"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Container of constant int that adds more constructors. </para>    </briefdescription>
+    <detaileddescription>
+<para>This is used to store and automate type check attributes that must be constant integer.</para><para><simplesect kind="see"><para><ref refid="classtvm_1_1IntImm" kindref="compound">IntImm</ref> </para></simplesect>
+</para>    </detaileddescription>
+    <inheritancegraph>
+      <node id="5381">
+        <label>ObjectRef</label>
+      </node>
+      <node id="5379">
+        <label>tvm::PrimExpr</label>
+        <link refid="classtvm_1_1PrimExpr"/>
+        <childnode refid="5380" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="5377">
+        <label>tvm::Integer</label>
+        <link refid="classtvm_1_1Integer"/>
+        <childnode refid="5378" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="5380">
+        <label>tvm::BaseExpr</label>
+        <link refid="classtvm_1_1BaseExpr"/>
+        <childnode refid="5381" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="5378">
+        <label>tvm::IntImm</label>
+        <link refid="classtvm_1_1IntImm"/>
+        <childnode refid="5379" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="5386">
+        <label>ObjectRef</label>
+      </node>
+      <node id="5384">
+        <label>tvm::PrimExpr</label>
+        <link refid="classtvm_1_1PrimExpr"/>
+        <childnode refid="5385" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="5382">
+        <label>tvm::Integer</label>
+        <link refid="classtvm_1_1Integer"/>
+        <childnode refid="5383" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="5385">
+        <label>tvm::BaseExpr</label>
+        <link refid="classtvm_1_1BaseExpr"/>
+        <childnode refid="5386" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="5383">
+        <label>tvm::IntImm</label>
+        <link refid="classtvm_1_1IntImm"/>
+        <childnode refid="5384" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="include/tvm/ir/expr.h" line="327" column="1" bodyfile="include/tvm/ir/expr.h" bodystart="327" bodyend="370"/>
+    <listofallmembers>
+      <member refid="classtvm_1_1PrimExpr_1a1098008618699c33adfbd19e582f9ffd" prot="public" virt="non-virtual"><scope>tvm::Integer</scope><name>dtype</name></member>
+      <member refid="classtvm_1_1Integer_1a2d3969d98441b5b2ee5d8a986a56c410" prot="public" virt="non-virtual"><scope>tvm::Integer</scope><name>Integer</name></member>
+      <member refid="classtvm_1_1Integer_1a262bc171fdf52db5f34e3c8446fb81aa" prot="public" virt="non-virtual"><scope>tvm::Integer</scope><name>Integer</name></member>
+      <member refid="classtvm_1_1Integer_1a1f58cf3c6dab32f1822b9cbccb5569e8" prot="public" virt="non-virtual"><scope>tvm::Integer</scope><name>Integer</name></member>
+      <member refid="classtvm_1_1Integer_1a962f080ada680921fbfff0846553ec33" prot="public" virt="non-virtual"><scope>tvm::Integer</scope><name>Integer</name></member>
+      <member refid="classtvm_1_1Integer_1abddd0de9406285ff558cc83111ae37bd" prot="public" virt="non-virtual"><scope>tvm::Integer</scope><name>Integer</name></member>
+      <member refid="classtvm_1_1IntImm_1ac168017343d2153f801adb31338fafce" prot="public" virt="non-virtual"><scope>tvm::Integer</scope><name>IntImm</name></member>
+      <member refid="classtvm_1_1Integer_1ab12102b4412b34faa459408d1fc8ba0e" prot="public" virt="non-virtual"><scope>tvm::Integer</scope><name>operator int64_t</name></member>
+      <member refid="classtvm_1_1Integer_1ad538a2ae6f636b3ce38fb4162b1c2549" prot="public" virt="non-virtual"><scope>tvm::Integer</scope><name>operator=</name></member>
+      <member refid="classtvm_1_1PrimExpr_1a7f0ca30e951608a0b36a77a66d4d19e0" prot="public" virt="non-virtual"><scope>tvm::Integer</scope><name>PrimExpr</name></member>
+      <member refid="classtvm_1_1PrimExpr_1a756d3f8b17b019560946524951ae6118" prot="public" virt="non-virtual"><scope>tvm::Integer</scope><name>PrimExpr</name></member>
+      <member refid="classtvm_1_1PrimExpr_1aa7ef79a97755173304b89581e79d485a" prot="public" virt="non-virtual"><scope>tvm::Integer</scope><name>PrimExpr</name></member>
+      <member refid="classtvm_1_1IntImm_1a9ce59db1a112fb10b7f384b68a3afc9f" prot="public" virt="non-virtual"><scope>tvm::Integer</scope><name>TVM_DEFINE_OBJECT_REF_METHODS</name></member>
+      <member refid="classtvm_1_1PrimExpr_1a3ad47a31c4ce693077a93f154b2b1e12" prot="public" virt="non-virtual" ambiguityscope="tvm::PrimExpr::"><scope>tvm::Integer</scope><name>TVM_DEFINE_OBJECT_REF_METHODS</name></member>
+      <member refid="classtvm_1_1BaseExpr_1aa513c6abed6e5b76c7fc9441649b3e4c" prot="public" virt="non-virtual" ambiguityscope="tvm::BaseExpr::"><scope>tvm::Integer</scope><name>TVM_DEFINE_OBJECT_REF_METHODS</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

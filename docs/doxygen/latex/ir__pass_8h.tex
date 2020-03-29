@@ -1,0 +1,160 @@
+\hypertarget{ir__pass_8h}{}\section{include/tvm/tir/ir\+\_\+pass.h File Reference}
+\label{ir__pass_8h}\index{include/tvm/tir/ir\+\_\+pass.\+h@{include/tvm/tir/ir\+\_\+pass.\+h}}
+
+
+Collection of IR pass functions.  
+
+
+{\ttfamily \#include $<$tvm/te/schedule.\+h$>$}\\*
+{\ttfamily \#include $<$tvm/tir/expr.\+h$>$}\\*
+{\ttfamily \#include $<$tvm/tir/buffer.\+h$>$}\\*
+{\ttfamily \#include $<$tvm/tir/function.\+h$>$}\\*
+{\ttfamily \#include $<$tvm/tir/lowered\+\_\+func.\+h$>$}\\*
+{\ttfamily \#include $<$unordered\+\_\+map$>$}\\*
+{\ttfamily \#include $<$unordered\+\_\+set$>$}\\*
+{\ttfamily \#include $<$vector$>$}\\*
+{\ttfamily \#include $<$string$>$}\\*
+Include dependency graph for ir\+\_\+pass.\+h\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{ir__pass_8h__incl}
+\end{center}
+\end{figure}
+This graph shows which files directly or indirectly include this file\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{ir__pass_8h__dep__incl}
+\end{center}
+\end{figure}
+\subsection*{Namespaces}
+\begin{DoxyCompactItemize}
+\item 
+ \hyperlink{namespacetvm}{tvm}
+\item 
+ \hyperlink{namespacetvm_1_1tir}{tvm\+::tir}
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+Prim\+Expr \hyperlink{namespacetvm_1_1tir_a923d1bb833c984008772782e90cda37a}{tvm\+::tir\+::\+Simplify} (Prim\+Expr expr, Map$<$ Var, Range $>$ vrange=Map$<$ Var, Range $>$())
+\begin{DoxyCompactList}\small\item\em Simplify the expression. \end{DoxyCompactList}\item 
+Stmt \hyperlink{namespacetvm_1_1tir_a49287db98b766f8900dbbfcc466cb596}{tvm\+::tir\+::\+Simplify} (Stmt stmt, Map$<$ Var, Range $>$ vrange=Map$<$ Var, Range $>$())
+\begin{DoxyCompactList}\small\item\em Simplify the statement. \end{DoxyCompactList}\item 
+Stmt \hyperlink{namespacetvm_1_1tir_ae3f7ea11fa82b0cb4a990f51beaa5203}{tvm\+::tir\+::\+Canonical\+Simplify} (Stmt stmt, Map$<$ Var, Range $>$ vrange=Map$<$ Var, Range $>$())
+\begin{DoxyCompactList}\small\item\em Simplify by applying canonical form. \end{DoxyCompactList}\item 
+Prim\+Expr \hyperlink{namespacetvm_1_1tir_a6a22160396635ce8b681f3aaed32df5b}{tvm\+::tir\+::\+Canonical\+Simplify} (Prim\+Expr expr, Map$<$ Var, Range $>$ vrange=Map$<$ Var, Range $>$())
+\begin{DoxyCompactList}\small\item\em Simplify by applying canonical form. \end{DoxyCompactList}\item 
+bool \hyperlink{namespacetvm_1_1tir_ae9b75fe00e0f29e2cc8e2b3ffe541ff4}{tvm\+::tir\+::\+Equal} (const Prim\+Expr \&lhs, const Prim\+Expr \&rhs)
+\begin{DoxyCompactList}\small\item\em Deep compare lhs and rhs. \end{DoxyCompactList}\item 
+bool \hyperlink{namespacetvm_1_1tir_af7135e786c567aacc96fa95bac4dae4b}{tvm\+::tir\+::\+Equal} (const Stmt \&lhs, const Stmt \&rhs)
+\begin{DoxyCompactList}\small\item\em Deep compare lhs and rhs. \end{DoxyCompactList}\item 
+int \hyperlink{namespacetvm_1_1tir_a388b768f462e6699d061b5ea3ca87616}{tvm\+::tir\+::\+Compare} (const Prim\+Expr \&lhs, const Prim\+Expr \&rhs)
+\begin{DoxyCompactList}\small\item\em Deep compare lhs and rhs. \end{DoxyCompactList}\item 
+bool \hyperlink{namespacetvm_1_1tir_ae4506ebe76b8f44653dafdf0aef263f1}{tvm\+::tir\+::\+Verify\+S\+SA} (const Stmt \&ir)
+\begin{DoxyCompactList}\small\item\em verifies whether the IR stmt or Expr is in S\+SA form. That is\+: each Var\+Expr is defined and assigned once(in Let/\+For) \end{DoxyCompactList}\item 
+bool \hyperlink{namespacetvm_1_1tir_a93a2b6c1ea585d4cfd12539e65f48fdb}{tvm\+::tir\+::\+Has\+Side\+Effect} (const Prim\+Expr \&e)
+\begin{DoxyCompactList}\small\item\em Whether the expression have side effect. \end{DoxyCompactList}\item 
+bool \hyperlink{namespacetvm_1_1tir_a2a95f59679b6acbb47ab488a1e2c6b09}{tvm\+::tir\+::\+Expr\+Use\+Var} (const Prim\+Expr \&e, const Var \&v)
+\begin{DoxyCompactList}\small\item\em Whether e expression used var. \end{DoxyCompactList}\item 
+bool \hyperlink{namespacetvm_1_1tir_ae82ce8b3c5f0cd3a8213b90153637177}{tvm\+::tir\+::\+Expr\+Use\+Var} (const Prim\+Expr \&e, const std\+::unordered\+\_\+set$<$ const Var\+Node $\ast$ $>$ \&vset)
+\begin{DoxyCompactList}\small\item\em Whether e expression used any var in variable set.. \end{DoxyCompactList}\item 
+Stmt \hyperlink{namespacetvm_1_1tir_afdbcd71b66872684f3dc873b9380520f}{tvm\+::tir\+::\+Convert\+S\+SA} (Stmt stmt)
+\begin{DoxyCompactList}\small\item\em Convert a IR node to be S\+SA form. \end{DoxyCompactList}\item 
+Stmt \hyperlink{namespacetvm_1_1tir_a4b122873fd63b721684ffb4cd9913bb4}{tvm\+::tir\+::\+Substitute} (Stmt stmt, const std\+::unordered\+\_\+map$<$ const Var\+Node $\ast$, Prim\+Expr $>$ \&value\+\_\+map)
+\begin{DoxyCompactList}\small\item\em Substitute the var specified in key-\/$>$var to be value. \end{DoxyCompactList}\item 
+Prim\+Expr \hyperlink{namespacetvm_1_1tir_a1753495736a7c0ab703ed01c673ec5d0}{tvm\+::tir\+::\+Substitute} (Prim\+Expr expr, const std\+::unordered\+\_\+map$<$ const Var\+Node $\ast$, Prim\+Expr $>$ \&value\+\_\+map)
+\begin{DoxyCompactList}\small\item\em Substitute the var specified in key-\/$>$var to be value. \end{DoxyCompactList}\item 
+Stmt \hyperlink{namespacetvm_1_1tir_abc79c4131e8b95c4ae4be56d4ab3c494}{tvm\+::tir\+::\+Substitute} (Stmt stmt, const Map$<$ Var, Prim\+Expr $>$ \&value\+\_\+map)
+\begin{DoxyCompactList}\small\item\em Substitute the var specified in key-\/$>$var to be value. \end{DoxyCompactList}\item 
+Prim\+Expr \hyperlink{namespacetvm_1_1tir_a34e6a1e27339fcc255f664dd14e7c6cc}{tvm\+::tir\+::\+Substitute} (Prim\+Expr expr, const Map$<$ Var, Prim\+Expr $>$ \&value\+\_\+map)
+\begin{DoxyCompactList}\small\item\em Substitute the var specified in key-\/$>$var to be value. \end{DoxyCompactList}\item 
+Stmt \hyperlink{namespacetvm_1_1tir_a96379de32bcde10449bdb01b9b816e99}{tvm\+::tir\+::\+Inline} (Stmt stmt, Function\+Ref f, Array$<$ Var $>$ args, Prim\+Expr body)
+\begin{DoxyCompactList}\small\item\em inline all calls of f in stmt. \end{DoxyCompactList}\item 
+Stmt \hyperlink{namespacetvm_1_1tir_a2c63e0decac1e98ee375d32dee15526e}{tvm\+::tir\+::\+Storage\+Flatten} (Stmt stmt, Map$<$ te\+::\+Tensor, Buffer $>$ extern\+\_\+buffer, int cache\+\_\+line\+\_\+size, bool create\+\_\+bound\+\_\+attribute=false)
+\begin{DoxyCompactList}\small\item\em Flatten the multi-\/dimensional read/write to single dimensional Load/\+Store. \end{DoxyCompactList}\item 
+Stmt \hyperlink{namespacetvm_1_1tir_a00e711fe4801fd2d11f85cb64bc64d56}{tvm\+::tir\+::\+Rewrite\+For\+Tensor\+Core} (Stmt stmt, te\+::\+Schedule schedule, Map$<$ te\+::\+Tensor, Buffer $>$ extern\+\_\+buffer)
+\begin{DoxyCompactList}\small\item\em Try to modify the A\+ST to support Tensor\+Core. \end{DoxyCompactList}\item 
+bool \hyperlink{namespacetvm_1_1tir_ae892521d99d9475a59e2d01df9413b49}{tvm\+::tir\+::\+Verify\+Compact\+Buffer} (Stmt stmt)
+\begin{DoxyCompactList}\small\item\em Verify if there is any argument bound to compact buffer. \end{DoxyCompactList}\item 
+Stmt \hyperlink{namespacetvm_1_1tir_a64dd52c904c2944a4771b81a2cf8f08a}{tvm\+::tir\+::\+Remove\+No\+Op} (Stmt stmt)
+\begin{DoxyCompactList}\small\item\em Remove No \hyperlink{classtvm_1_1Op}{Op} from the \hyperlink{classtvm_1_1tir_1_1Stmt}{Stmt}. \end{DoxyCompactList}\item 
+Stmt \hyperlink{namespacetvm_1_1tir_a319c8f6b65c8c053c87b429d6d791343}{tvm\+::tir\+::\+Unroll\+Loop} (Stmt stmt, int auto\+\_\+max\+\_\+step, int auto\+\_\+max\+\_\+depth, int auto\+\_\+max\+\_\+extent, bool explicit\+\_\+unroll)
+\begin{DoxyCompactList}\small\item\em unroll the constant loop marked by unroll. This pass also automatically attach pragma unroll tag to loops which meets the standard. \end{DoxyCompactList}\item 
+Stmt \hyperlink{namespacetvm_1_1tir_abdd6d56877b9dd03803f433352b09060}{tvm\+::tir\+::\+Vectorize\+Loop} (Stmt stmt)
+\begin{DoxyCompactList}\small\item\em vectorize the constant loops \end{DoxyCompactList}\item 
+Stmt \hyperlink{namespacetvm_1_1tir_a2f8fc7370ebc9a6b0de19ae9e597576f}{tvm\+::tir\+::\+Skip\+Vectorize} (Stmt stmt)
+\begin{DoxyCompactList}\small\item\em convert vectorized loops into serialized loops \end{DoxyCompactList}\item 
+Stmt \hyperlink{namespacetvm_1_1tir_a604c5a3e5e7fad62a912b1d3bb41c3fa}{tvm\+::tir\+::\+Instrument\+Bound\+Checkers} (Stmt stmt)
+\begin{DoxyCompactList}\small\item\em instruments bound checkers. \end{DoxyCompactList}\item 
+Stmt \hyperlink{namespacetvm_1_1tir_a8c9c2135e4a2a674c7ffe1f414d9b362}{tvm\+::tir\+::\+Inject\+Virtual\+Thread} (Stmt stmt)
+\begin{DoxyCompactList}\small\item\em Inject virtual thread loops into stmt. \end{DoxyCompactList}\item 
+Stmt \hyperlink{namespacetvm_1_1tir_a1d45de8cf5b6053ab16dde307a00238d}{tvm\+::tir\+::\+Inject\+Prefetch} (Stmt stmt)
+\begin{DoxyCompactList}\small\item\em Inject prefetch instructions into stmt. \end{DoxyCompactList}\item 
+Stmt \hyperlink{namespacetvm_1_1tir_abde051e07d9c7ba41d5676ce64208766}{tvm\+::tir\+::\+Inject\+Double\+Buffer} (Stmt stmt, int split\+\_\+loop)
+\begin{DoxyCompactList}\small\item\em Inject double buffer into stmt. \end{DoxyCompactList}\item 
+Stmt \hyperlink{namespacetvm_1_1tir_a3550907081d6332c5a4b0849e1948c79}{tvm\+::tir\+::\+Inject\+Copy\+Intrin} (Stmt stmt, const std\+::string \&pragma\+\_\+key, const runtime\+::\+Packed\+Func \&fintrin)
+\begin{DoxyCompactList}\small\item\em Inject copy intrinsics with optional pad. \end{DoxyCompactList}\item 
+Stmt \hyperlink{namespacetvm_1_1tir_a5b70ca88f988211332570160c82e3026}{tvm\+::tir\+::\+Storage\+Rewrite} (Stmt stmt)
+\begin{DoxyCompactList}\small\item\em Rewrite storage allocation pattern. Moves the allocation to outer most possible scope. Trying to share space between allocations to make a static allocation plan when possible. \end{DoxyCompactList}\item 
+Stmt \hyperlink{namespacetvm_1_1tir_ae0606ab38faf2f31d42759f217fdec93}{tvm\+::tir\+::\+Loop\+Partition} (Stmt stmt, bool split\+\_\+const\+\_\+loop)
+\begin{DoxyCompactList}\small\item\em partition loops in the stmt \end{DoxyCompactList}\item 
+Stmt \hyperlink{namespacetvm_1_1tir_a9a890acc3681867fe74ad2207d17278f}{tvm\+::tir\+::\+Co\+Proc\+Sync} (Stmt stmt)
+\begin{DoxyCompactList}\small\item\em Detect and insert sync points to co-\/processor. \end{DoxyCompactList}\item 
+Stmt \hyperlink{namespacetvm_1_1tir_a799dff4f3a280576d6838694c151e657}{tvm\+::tir\+::\+Lift\+Attr\+Scope} (Stmt stmt, std\+::string attr\+\_\+key)
+\begin{DoxyCompactList}\small\item\em Lift common attrs with attr\+\_\+key to outer scope. \end{DoxyCompactList}\item 
+Stmt \hyperlink{namespacetvm_1_1tir_a2c3a142f48991df5a96ee1791685ca64}{tvm\+::tir\+::\+Rewrite\+Unsafe\+Select} (Stmt stmt)
+\begin{DoxyCompactList}\small\item\em Detect and rewrite unsafe select that contains memory access. \end{DoxyCompactList}\item 
+Stmt \hyperlink{namespacetvm_1_1tir_a3b6c7e53cce5184e897b0bd24adb06b6}{tvm\+::tir\+::\+Lower\+Storage\+Access\+Info} (Stmt stmt)
+\begin{DoxyCompactList}\small\item\em Lower attached storage access information. Do this pass after all storage access analysis finish. \end{DoxyCompactList}\item 
+Stmt \hyperlink{namespacetvm_1_1tir_a1f89ddc934004f9e58b2e6ac3a260e3d}{tvm\+::tir\+::\+Decorate\+Device\+Scope} (Stmt stmt)
+\begin{DoxyCompactList}\small\item\em Decorate the stmt with a device scope, this is helpful for hardware accelerator without thread blocks. \end{DoxyCompactList}\item 
+Stmt \hyperlink{namespacetvm_1_1tir_a803eaac5980c445a9ff8e38fb2c595fa}{tvm\+::tir\+::\+Hoist\+If\+Then\+Else} (Stmt stmt)
+\begin{DoxyCompactList}\small\item\em Loop invariant code motion which locates and hoists if statements. \end{DoxyCompactList}\item 
+Lowered\+Func \hyperlink{namespacetvm_1_1tir_ab2d44994c14f11c500586a007c782c84}{tvm\+::tir\+::\+Make\+A\+PI} (Stmt body, std\+::string name, Array$<$ Object\+Ref $>$ api\+\_\+args, int num\+\_\+unpacked\+\_\+args, bool is\+\_\+restricted)
+\begin{DoxyCompactList}\small\item\em Make an user callable A\+PI \hyperlink{classtvm_1_1tir_1_1LoweredFunc}{Lowered\+Func}. \end{DoxyCompactList}\item 
+Lowered\+Func \hyperlink{namespacetvm_1_1tir_a1ac3af6813bf02262470992a3980a25a}{tvm\+::tir\+::\+Bind\+Device\+Type} (Lowered\+Func func, int device\+\_\+type)
+\begin{DoxyCompactList}\small\item\em Bind the device type of host function to be device\+\_\+type. \end{DoxyCompactList}\item 
+Array$<$ Var $>$ \hyperlink{namespacetvm_1_1tir_ae110e02855d8bc12eb8b6f92ed391844}{tvm\+::tir\+::\+Undefined\+Vars} (const Stmt \&stmt, const Array$<$ Var $>$ \&defs)
+\begin{DoxyCompactList}\small\item\em Find undefined vars in the statment. \end{DoxyCompactList}\item 
+Array$<$ Lowered\+Func $>$ \hyperlink{namespacetvm_1_1tir_ac7f5e04aea66d87ad42baf957768c451}{tvm\+::tir\+::\+Split\+Host\+Device} (Lowered\+Func func)
+\begin{DoxyCompactList}\small\item\em Split the function into a host function and device functions. \end{DoxyCompactList}\item 
+Lowered\+Func \hyperlink{namespacetvm_1_1tir_ab0df6d882d69f4ec8e1b146a0d8728f9}{tvm\+::tir\+::\+Thread\+Sync} (Lowered\+Func stmt, std\+::string storage\+\_\+scope)
+\begin{DoxyCompactList}\small\item\em Insert sync between parallel read/write of shared buffers. \end{DoxyCompactList}\item 
+Lowered\+Func \hyperlink{namespacetvm_1_1tir_a438729b72b0e38a28289d763b48995b1}{tvm\+::tir\+::\+Lower\+Thread\+Allreduce} (Lowered\+Func f, int warp\+\_\+size)
+\begin{DoxyCompactList}\small\item\em Lower cross thread alleduce in the stmt. \end{DoxyCompactList}\item 
+Lowered\+Func \hyperlink{namespacetvm_1_1tir_af5111eb3e9b9d2f52998c5db4b4e3ae9}{tvm\+::tir\+::\+Lower\+Warp\+Memory} (Lowered\+Func f, int warp\+\_\+size)
+\begin{DoxyCompactList}\small\item\em Lower warp memory in stmt. \end{DoxyCompactList}\item 
+Lowered\+Func \hyperlink{namespacetvm_1_1tir_ad55f17f026155f1424b3d0fdd3f86435}{tvm\+::tir\+::\+Remap\+Thread\+Axis} (Lowered\+Func f, Map$<$ Prim\+Expr, Iter\+Var $>$ axis\+\_\+map)
+\begin{DoxyCompactList}\small\item\em Remap the thread axis. \end{DoxyCompactList}\item 
+Lowered\+Func \hyperlink{namespacetvm_1_1tir_a9d59ba0cb48da1661593b7eeb2e96821}{tvm\+::tir\+::\+Lower\+T\+V\+M\+Builtin} (Lowered\+Func f)
+\begin{DoxyCompactList}\small\item\em Lower packed function call. \end{DoxyCompactList}\item 
+Lowered\+Func \hyperlink{namespacetvm_1_1tir_a5c2b224ff5bb292b1b7e677d50576b38}{tvm\+::tir\+::\+Combine\+Context\+Call} (Lowered\+Func f)
+\begin{DoxyCompactList}\small\item\em Combine context function calls. \end{DoxyCompactList}\item 
+Lowered\+Func \hyperlink{namespacetvm_1_1tir_ad2814a5568d2e1329a5c5aab2e35091e}{tvm\+::tir\+::\+Pointer\+Value\+Type\+Rewrite} (Lowered\+Func f)
+\begin{DoxyCompactList}\small\item\em Rewrite the pointer content type of arguments, as well as Alloc internal to the function to use the most frequently accessed type for load/store to avoid pointer casting in backend when possible. \end{DoxyCompactList}\item 
+Prim\+Func \hyperlink{namespacetvm_1_1tir_abbf2681c6850628b3c9b213298f056b3}{tvm\+::tir\+::\+Pointer\+Value\+Type\+Rewrite} (Prim\+Func f)
+\begin{DoxyCompactList}\small\item\em Rewrite the pointer content type of arguments, as well as Alloc internal to the function to use the most frequently accessed type for load/store to avoid pointer casting in backend when possible. \end{DoxyCompactList}\item 
+Lowered\+Func \hyperlink{namespacetvm_1_1tir_afcbd367b40fe2cd31d101c88a63a0b25}{tvm\+::tir\+::\+Lower\+Device\+Storage\+Access\+Info} (Lowered\+Func func)
+\begin{DoxyCompactList}\small\item\em Lower attached storage access information on device. Do this pass after all storage access analysis finish. \end{DoxyCompactList}\item 
+Lowered\+Func \hyperlink{namespacetvm_1_1tir_adb8b5d13c11411299808c564adda2713}{tvm\+::tir\+::\+Lower\+Intrin} (Lowered\+Func f, const std\+::string \&target)
+\begin{DoxyCompactList}\small\item\em Lower intrinsic function calls. \end{DoxyCompactList}\item 
+Lowered\+Func \hyperlink{namespacetvm_1_1tir_ac8725d2ad12962353ec11b6285cc6b3d}{tvm\+::tir\+::\+Lower\+Custom\+Datatypes} (Lowered\+Func f, const std\+::string \&target)
+\begin{DoxyCompactList}\small\item\em Lower custom datatypes. \end{DoxyCompactList}\item 
+Lowered\+Func \hyperlink{namespacetvm_1_1tir_acd928ded601486ae3a3b787df3f09688}{tvm\+::tir\+::\+Infer\+Fragment} (Lowered\+Func f)
+\begin{DoxyCompactList}\small\item\em Infer the Tensor\+Core fragment infomation using tensor intrinsics. \end{DoxyCompactList}\item 
+Lowered\+Func \hyperlink{namespacetvm_1_1tir_a9968b6563c42117a9a1cd4576054400f}{tvm\+::tir\+::\+Skip\+Assert} (Lowered\+Func f)
+\begin{DoxyCompactList}\small\item\em skip assert stmt generation \end{DoxyCompactList}\item 
+bool \hyperlink{namespacetvm_1_1tir_aa649448c69d8324ba1fd7ec5e3e54731}{tvm\+::tir\+::\+Verify\+Memory} (Lowered\+Func func, int device\+\_\+type)
+\begin{DoxyCompactList}\small\item\em Verify if memory accesses are legal for a specific target device type. \end{DoxyCompactList}\item 
+bool \hyperlink{namespacetvm_1_1tir_a705b3e58180a12eba5297cb2442fd1a2}{tvm\+::tir\+::\+Verify\+G\+P\+U\+Code} (Stmt stmt, Map$<$ std\+::string, Prim\+Expr $>$ constraints)
+\begin{DoxyCompactList}\small\item\em Verify the correctness of a G\+PU code It will check the whether the amount of memory usage or the number of threads in a block exceeds the limit. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Collection of IR pass functions. 
+
+When the pass functions in this file are for Stmt, we can use Pass\+Function(\+Evaluate(expr)) to apply it to Expr 

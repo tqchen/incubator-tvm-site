@@ -1,0 +1,277 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="classtvm_1_1tir_1_1ShuffleNode" kind="class" language="C++" prot="public">
+    <compoundname>tvm::tir::ShuffleNode</compoundname>
+    <basecompoundref refid="classtvm_1_1PrimExprNode" prot="public" virt="non-virtual">tvm::PrimExprNode</basecompoundref>
+    <includes refid="tir_2expr_8h" local="no">expr.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="classtvm_1_1tir_1_1ShuffleNode_1aa444b61cf671ef31060535c61746ab6c" prot="public" static="no" mutable="no">
+        <type><ref refid="classtvm_1_1Array" kindref="compound">Array</ref>&lt; <ref refid="classtvm_1_1PrimExpr" kindref="compound">PrimExpr</ref> &gt;</type>
+        <definition>Array&lt;PrimExpr&gt; tvm::tir::ShuffleNode::vectors</definition>
+        <argsstring></argsstring>
+        <name>vectors</name>
+        <briefdescription>
+<para>the input vectors. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/tir/expr.h" line="1049" column="1" bodyfile="include/tvm/tir/expr.h" bodystart="1049" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classtvm_1_1tir_1_1ShuffleNode_1a3e4a328452a531b67642117f023e8a0e" prot="public" static="no" mutable="no">
+        <type><ref refid="classtvm_1_1Array" kindref="compound">Array</ref>&lt; <ref refid="classtvm_1_1PrimExpr" kindref="compound">PrimExpr</ref> &gt;</type>
+        <definition>Array&lt;PrimExpr&gt; tvm::tir::ShuffleNode::indices</definition>
+        <argsstring></argsstring>
+        <name>indices</name>
+        <briefdescription>
+<para>The indices of each element. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/tir/expr.h" line="1051" column="1" bodyfile="include/tvm/tir/expr.h" bodystart="1051" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-attrib">
+      <memberdef kind="variable" id="classtvm_1_1tir_1_1ShuffleNode_1a401554050461c44b5cf4f94e420c4c79" prot="public" static="yes" mutable="no">
+        <type>constexpr const char *</type>
+        <definition>constexpr const char* tvm::tir::ShuffleNode::_type_key</definition>
+        <argsstring></argsstring>
+        <name>_type_key</name>
+        <initializer>= &quot;Shuffle&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/tir/expr.h" line="1075" column="1" bodyfile="include/tvm/tir/expr.h" bodystart="1075" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classtvm_1_1tir_1_1ShuffleNode_1af764cbab54a79f4f7f3d5e1ddd9e1e5f" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void tvm::tir::ShuffleNode::VisitAttrs</definition>
+        <argsstring>(AttrVisitor *v)</argsstring>
+        <name>VisitAttrs</name>
+        <param>
+          <type><ref refid="classtvm_1_1AttrVisitor" kindref="compound">AttrVisitor</ref> *</type>
+          <declname>v</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/tir/expr.h" line="1053" column="1" bodyfile="include/tvm/tir/expr.h" bodystart="1053" bodyend="1056"/>
+      </memberdef>
+      <memberdef kind="function" id="classtvm_1_1tir_1_1ShuffleNode_1a2e6ed6e12430264b802e5a86d7833080" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool tvm::tir::ShuffleNode::SEqualReduce</definition>
+        <argsstring>(const ShuffleNode *other, SEqualReducer equal) const </argsstring>
+        <name>SEqualReduce</name>
+        <param>
+          <type>const <ref refid="classtvm_1_1tir_1_1ShuffleNode" kindref="compound">ShuffleNode</ref> *</type>
+          <declname>other</declname>
+        </param>
+        <param>
+          <type><ref refid="classtvm_1_1SEqualReducer" kindref="compound">SEqualReducer</ref></type>
+          <declname>equal</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/tir/expr.h" line="1058" column="1" bodyfile="include/tvm/tir/expr.h" bodystart="1058" bodyend="1063"/>
+      </memberdef>
+      <memberdef kind="function" id="classtvm_1_1tir_1_1ShuffleNode_1ad9b879bb15015dccc8fc93918ba41e29" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void tvm::tir::ShuffleNode::SHashReduce</definition>
+        <argsstring>(SHashReducer hash_reduce) const </argsstring>
+        <name>SHashReduce</name>
+        <param>
+          <type><ref refid="classtvm_1_1SHashReducer" kindref="compound">SHashReducer</ref></type>
+          <declname>hash_reduce</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/tir/expr.h" line="1065" column="1" bodyfile="include/tvm/tir/expr.h" bodystart="1065" bodyend="1069"/>
+      </memberdef>
+      <memberdef kind="function" id="classtvm_1_1tir_1_1ShuffleNode_1a980a4e844989e3325200c7d0a5303f9d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>tvm::tir::ShuffleNode::TVM_DECLARE_FINAL_OBJECT_INFO</definition>
+        <argsstring>(ShuffleNode, PrimExprNode)</argsstring>
+        <name>TVM_DECLARE_FINAL_OBJECT_INFO</name>
+        <param>
+          <type><ref refid="classtvm_1_1tir_1_1ShuffleNode" kindref="compound">ShuffleNode</ref></type>
+        </param>
+        <param>
+          <type><ref refid="classtvm_1_1PrimExprNode" kindref="compound">PrimExprNode</ref></type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/tir/expr.h" line="1076" column="1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="classtvm_1_1tir_1_1ShuffleNode_1a7e8f0acfc91e59f25d5c054576a95c85" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classtvm_1_1PrimExpr" kindref="compound">PrimExpr</ref></type>
+        <definition>static PrimExpr tvm::tir::ShuffleNode::make</definition>
+        <argsstring>(Array&lt; PrimExpr &gt; vectors, Array&lt; PrimExpr &gt; indices)</argsstring>
+        <name>make</name>
+        <param>
+          <type><ref refid="classtvm_1_1Array" kindref="compound">Array</ref>&lt; <ref refid="classtvm_1_1PrimExpr" kindref="compound">PrimExpr</ref> &gt;</type>
+          <declname>vectors</declname>
+        </param>
+        <param>
+          <type><ref refid="classtvm_1_1Array" kindref="compound">Array</ref>&lt; <ref refid="classtvm_1_1PrimExpr" kindref="compound">PrimExpr</ref> &gt;</type>
+          <declname>indices</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/tir/expr.h" line="1071" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classtvm_1_1tir_1_1ShuffleNode_1aff50804874dfea17238bfcb84660fe4b" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classtvm_1_1PrimExpr" kindref="compound">PrimExpr</ref></type>
+        <definition>static PrimExpr tvm::tir::ShuffleNode::make_concat</definition>
+        <argsstring>(Array&lt; PrimExpr &gt; vectors)</argsstring>
+        <name>make_concat</name>
+        <param>
+          <type><ref refid="classtvm_1_1Array" kindref="compound">Array</ref>&lt; <ref refid="classtvm_1_1PrimExpr" kindref="compound">PrimExpr</ref> &gt;</type>
+          <declname>vectors</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/tir/expr.h" line="1072" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classtvm_1_1tir_1_1ShuffleNode_1ae4523770814267bf73788ef9ecaf6417" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classtvm_1_1PrimExpr" kindref="compound">PrimExpr</ref></type>
+        <definition>static PrimExpr tvm::tir::ShuffleNode::make_extract_element</definition>
+        <argsstring>(PrimExpr vector, int index)</argsstring>
+        <name>make_extract_element</name>
+        <param>
+          <type><ref refid="classtvm_1_1PrimExpr" kindref="compound">PrimExpr</ref></type>
+          <declname>vector</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>index</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/tir/expr.h" line="1073" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Shuffle instruction. vec = concat(vectors) result = (vec[indices[0]], vec[indices[1]] ...) </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="6792">
+        <label>tvm::BaseExprNode</label>
+        <link refid="classtvm_1_1BaseExprNode"/>
+        <childnode refid="6793" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="6793">
+        <label>Object</label>
+      </node>
+      <node id="6790">
+        <label>tvm::tir::ShuffleNode</label>
+        <link refid="classtvm_1_1tir_1_1ShuffleNode"/>
+        <childnode refid="6791" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="6791">
+        <label>tvm::PrimExprNode</label>
+        <link refid="classtvm_1_1PrimExprNode"/>
+        <childnode refid="6792" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="6800">
+        <label>ObjectRef</label>
+      </node>
+      <node id="6796">
+        <label>tvm::BaseExprNode</label>
+        <link refid="classtvm_1_1BaseExprNode"/>
+        <childnode refid="6797" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="6797">
+        <label>Object</label>
+      </node>
+      <node id="6794">
+        <label>tvm::tir::ShuffleNode</label>
+        <link refid="classtvm_1_1tir_1_1ShuffleNode"/>
+        <childnode refid="6795" relation="public-inheritance">
+        </childnode>
+        <childnode refid="6799" relation="usage">
+          <edgelabel>+indices</edgelabel>
+          <edgelabel>+vectors</edgelabel>
+        </childnode>
+      </node>
+      <node id="6798">
+        <label>tvm::runtime::DataType</label>
+        <link refid="classtvm_1_1runtime_1_1DataType"/>
+      </node>
+      <node id="6795">
+        <label>tvm::PrimExprNode</label>
+        <link refid="classtvm_1_1PrimExprNode"/>
+        <childnode refid="6796" relation="public-inheritance">
+        </childnode>
+        <childnode refid="6798" relation="usage">
+          <edgelabel>+dtype</edgelabel>
+        </childnode>
+      </node>
+      <node id="6799">
+        <label>tvm::Array&lt; tvm::PrimExpr &gt;</label>
+        <link refid="classtvm_1_1Array"/>
+        <childnode refid="6800" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="include/tvm/tir/expr.h" line="1046" column="1" bodyfile="include/tvm/tir/expr.h" bodystart="1046" bodyend="1077"/>
+    <listofallmembers>
+      <member refid="classtvm_1_1BaseExprNode_1a905dcf65204e877b6ccb977cf375f2a0" prot="public" virt="non-virtual"><scope>tvm::tir::ShuffleNode</scope><name>_type_has_method_sequal_reduce</name></member>
+      <member refid="classtvm_1_1BaseExprNode_1a13d7d1f1e6f790951caf200cd59c3620" prot="public" virt="non-virtual"><scope>tvm::tir::ShuffleNode</scope><name>_type_has_method_shash_reduce</name></member>
+      <member refid="classtvm_1_1tir_1_1ShuffleNode_1a401554050461c44b5cf4f94e420c4c79" prot="public" virt="non-virtual"><scope>tvm::tir::ShuffleNode</scope><name>_type_key</name></member>
+      <member refid="classtvm_1_1PrimExprNode_1a95af9234514ec5f11355db41524be7f9" prot="public" virt="non-virtual"><scope>tvm::tir::ShuffleNode</scope><name>dtype</name></member>
+      <member refid="classtvm_1_1tir_1_1ShuffleNode_1a3e4a328452a531b67642117f023e8a0e" prot="public" virt="non-virtual"><scope>tvm::tir::ShuffleNode</scope><name>indices</name></member>
+      <member refid="classtvm_1_1tir_1_1ShuffleNode_1a7e8f0acfc91e59f25d5c054576a95c85" prot="public" virt="non-virtual"><scope>tvm::tir::ShuffleNode</scope><name>make</name></member>
+      <member refid="classtvm_1_1tir_1_1ShuffleNode_1aff50804874dfea17238bfcb84660fe4b" prot="public" virt="non-virtual"><scope>tvm::tir::ShuffleNode</scope><name>make_concat</name></member>
+      <member refid="classtvm_1_1tir_1_1ShuffleNode_1ae4523770814267bf73788ef9ecaf6417" prot="public" virt="non-virtual"><scope>tvm::tir::ShuffleNode</scope><name>make_extract_element</name></member>
+      <member refid="classtvm_1_1tir_1_1ShuffleNode_1a2e6ed6e12430264b802e5a86d7833080" prot="public" virt="non-virtual"><scope>tvm::tir::ShuffleNode</scope><name>SEqualReduce</name></member>
+      <member refid="classtvm_1_1tir_1_1ShuffleNode_1ad9b879bb15015dccc8fc93918ba41e29" prot="public" virt="non-virtual"><scope>tvm::tir::ShuffleNode</scope><name>SHashReduce</name></member>
+      <member refid="classtvm_1_1PrimExprNode_1afcf4654378d65e0200b33e43194d0490" prot="public" virt="non-virtual"><scope>tvm::tir::ShuffleNode</scope><name>TVM_DECLARE_BASE_OBJECT_INFO</name></member>
+      <member refid="classtvm_1_1BaseExprNode_1a831794c879d47c30cdd9cefd4f05d533" prot="public" virt="non-virtual" ambiguityscope="tvm::BaseExprNode::"><scope>tvm::tir::ShuffleNode</scope><name>TVM_DECLARE_BASE_OBJECT_INFO</name></member>
+      <member refid="classtvm_1_1tir_1_1ShuffleNode_1a980a4e844989e3325200c7d0a5303f9d" prot="public" virt="non-virtual"><scope>tvm::tir::ShuffleNode</scope><name>TVM_DECLARE_FINAL_OBJECT_INFO</name></member>
+      <member refid="classtvm_1_1tir_1_1ShuffleNode_1aa444b61cf671ef31060535c61746ab6c" prot="public" virt="non-virtual"><scope>tvm::tir::ShuffleNode</scope><name>vectors</name></member>
+      <member refid="classtvm_1_1tir_1_1ShuffleNode_1af764cbab54a79f4f7f3d5e1ddd9e1e5f" prot="public" virt="non-virtual"><scope>tvm::tir::ShuffleNode</scope><name>VisitAttrs</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

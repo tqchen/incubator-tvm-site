@@ -1,0 +1,88 @@
+\hypertarget{stmt__functor_8h}{}\section{include/tvm/tir/stmt\+\_\+functor.h File Reference}
+\label{stmt__functor_8h}\index{include/tvm/tir/stmt\+\_\+functor.\+h@{include/tvm/tir/stmt\+\_\+functor.\+h}}
+
+
+Functors for tir stmts.  
+
+
+{\ttfamily \#include $<$tvm/node/functor.\+h$>$}\\*
+{\ttfamily \#include $<$tvm/tir/expr.\+h$>$}\\*
+{\ttfamily \#include $<$tvm/tir/stmt.\+h$>$}\\*
+{\ttfamily \#include $<$tvm/tir/expr\+\_\+functor.\+h$>$}\\*
+{\ttfamily \#include $<$utility$>$}\\*
+Include dependency graph for stmt\+\_\+functor.\+h\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{stmt__functor_8h__incl}
+\end{center}
+\end{figure}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \hyperlink{classtvm_1_1tir_1_1StmtFunctor}{tvm\+::tir\+::\+Stmt\+Functor$<$ F\+Type $>$}
+\begin{DoxyCompactList}\small\item\em Same as \hyperlink{classtvm_1_1tir_1_1ExprFunctor}{Expr\+Functor} except it is applied on statements. \end{DoxyCompactList}\item 
+class \hyperlink{classtvm_1_1tir_1_1StmtFunctor_3_01R_07const_01Stmt_01_6n_00_01Args_8_8_8args_08_4}{tvm\+::tir\+::\+Stmt\+Functor$<$ R(const Stmt \&n, Args...\+args)$>$}
+\item 
+class \hyperlink{classtvm_1_1tir_1_1StmtVisitor}{tvm\+::tir\+::\+Stmt\+Visitor}
+\begin{DoxyCompactList}\small\item\em \hyperlink{classtvm_1_1tir_1_1StmtVisitor}{Stmt\+Visitor}. \end{DoxyCompactList}\item 
+class \hyperlink{classtvm_1_1tir_1_1StmtMutator}{tvm\+::tir\+::\+Stmt\+Mutator}
+\begin{DoxyCompactList}\small\item\em \hyperlink{classtvm_1_1tir_1_1StmtMutator}{Stmt\+Mutator} that mutates the statements. \end{DoxyCompactList}\item 
+class \hyperlink{classtvm_1_1tir_1_1StmtExprVisitor}{tvm\+::tir\+::\+Stmt\+Expr\+Visitor}
+\begin{DoxyCompactList}\small\item\em Visitor that recursively visit stmts and exprs on them. \end{DoxyCompactList}\item 
+class \hyperlink{classtvm_1_1tir_1_1StmtExprMutator}{tvm\+::tir\+::\+Stmt\+Expr\+Mutator}
+\begin{DoxyCompactList}\small\item\em Mutator that recursively mutates stmts and exprs on them. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Namespaces}
+\begin{DoxyCompactItemize}
+\item 
+ \hyperlink{namespacetvm}{tvm}
+\item 
+ \hyperlink{namespacetvm_1_1tir}{tvm\+::tir}
+\end{DoxyCompactItemize}
+\subsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \hyperlink{stmt__functor_8h_ac18c66d877e6a00a4da0d8d7d2b2b6ae}{S\+T\+M\+T\+\_\+\+F\+U\+N\+C\+T\+O\+R\+\_\+\+D\+E\+F\+A\+U\+LT}
+\item 
+\#define \hyperlink{stmt__functor_8h_a57fa0234da58c69003bb980f5405a279}{I\+R\+\_\+\+S\+T\+M\+T\+\_\+\+F\+U\+N\+C\+T\+O\+R\+\_\+\+D\+I\+S\+P\+A\+T\+CH}(OP)
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+Stmt \hyperlink{namespacetvm_1_1tir_a1217dd1b57e84b5901cf755251b9e164}{tvm\+::tir\+::\+I\+R\+Transform} (Stmt node, const runtime\+::\+Packed\+Func \&preorder, const runtime\+::\+Packed\+Func \&postorder, const Array$<$ Prim\+Expr $>$ \&only\+\_\+enable=\{\})
+\begin{DoxyCompactList}\small\item\em recursively visit the ir in post D\+FS order node, and transform it \end{DoxyCompactList}\item 
+void \hyperlink{namespacetvm_1_1tir_a4b5067fa233d111c9db9cc402ed599c3}{tvm\+::tir\+::\+Post\+Order\+Visit} (const Object\+Ref \&node, std\+::function$<$ void(const Object\+Ref \&)$>$ fvisit)
+\begin{DoxyCompactList}\small\item\em recursively visit the ir in post D\+FS order node, apply fvisit Each node is guaranteed to be visited only once. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Functors for tir stmts. 
+
+
+
+\subsection{Macro Definition Documentation}
+\index{stmt\+\_\+functor.\+h@{stmt\+\_\+functor.\+h}!I\+R\+\_\+\+S\+T\+M\+T\+\_\+\+F\+U\+N\+C\+T\+O\+R\+\_\+\+D\+I\+S\+P\+A\+T\+CH@{I\+R\+\_\+\+S\+T\+M\+T\+\_\+\+F\+U\+N\+C\+T\+O\+R\+\_\+\+D\+I\+S\+P\+A\+T\+CH}}
+\index{I\+R\+\_\+\+S\+T\+M\+T\+\_\+\+F\+U\+N\+C\+T\+O\+R\+\_\+\+D\+I\+S\+P\+A\+T\+CH@{I\+R\+\_\+\+S\+T\+M\+T\+\_\+\+F\+U\+N\+C\+T\+O\+R\+\_\+\+D\+I\+S\+P\+A\+T\+CH}!stmt\+\_\+functor.\+h@{stmt\+\_\+functor.\+h}}
+\subsubsection[{\texorpdfstring{I\+R\+\_\+\+S\+T\+M\+T\+\_\+\+F\+U\+N\+C\+T\+O\+R\+\_\+\+D\+I\+S\+P\+A\+T\+CH}{IR_STMT_FUNCTOR_DISPATCH}}]{\setlength{\rightskip}{0pt plus 5cm}\#define I\+R\+\_\+\+S\+T\+M\+T\+\_\+\+F\+U\+N\+C\+T\+O\+R\+\_\+\+D\+I\+S\+P\+A\+T\+CH(
+\begin{DoxyParamCaption}
+\item[{}]{OP}
+\end{DoxyParamCaption}
+)}\hypertarget{stmt__functor_8h_a57fa0234da58c69003bb980f5405a279}{}\label{stmt__functor_8h_a57fa0234da58c69003bb980f5405a279}
+{\bfseries Value\+:}
+\begin{DoxyCode}
+vtable.template set\_dispatch<OP>(                                     \(\backslash\)
+      [](\textcolor{keyword}{const} ObjectRef& n, TSelf* \textcolor{keyword}{self}, Args... args) \{               \(\backslash\)
+        return \textcolor{keyword}{self}->VisitStmt\_(static\_cast<const OP*>(n.get()),        \(\backslash\)
+                                std::forward<Args>(args)...);           \(\backslash\)
+      \});                                                               \(\backslash\)
+\end{DoxyCode}
+\index{stmt\+\_\+functor.\+h@{stmt\+\_\+functor.\+h}!S\+T\+M\+T\+\_\+\+F\+U\+N\+C\+T\+O\+R\+\_\+\+D\+E\+F\+A\+U\+LT@{S\+T\+M\+T\+\_\+\+F\+U\+N\+C\+T\+O\+R\+\_\+\+D\+E\+F\+A\+U\+LT}}
+\index{S\+T\+M\+T\+\_\+\+F\+U\+N\+C\+T\+O\+R\+\_\+\+D\+E\+F\+A\+U\+LT@{S\+T\+M\+T\+\_\+\+F\+U\+N\+C\+T\+O\+R\+\_\+\+D\+E\+F\+A\+U\+LT}!stmt\+\_\+functor.\+h@{stmt\+\_\+functor.\+h}}
+\subsubsection[{\texorpdfstring{S\+T\+M\+T\+\_\+\+F\+U\+N\+C\+T\+O\+R\+\_\+\+D\+E\+F\+A\+U\+LT}{STMT_FUNCTOR_DEFAULT}}]{\setlength{\rightskip}{0pt plus 5cm}\#define S\+T\+M\+T\+\_\+\+F\+U\+N\+C\+T\+O\+R\+\_\+\+D\+E\+F\+A\+U\+LT}\hypertarget{stmt__functor_8h_ac18c66d877e6a00a4da0d8d7d2b2b6ae}{}\label{stmt__functor_8h_ac18c66d877e6a00a4da0d8d7d2b2b6ae}
+{\bfseries Value\+:}
+\begin{DoxyCode}
+\{                                      \(\backslash\)
+    return VisitStmtDefault\_(op, std::forward<Args>(args)...);      \(\backslash\)
+  \}
+\end{DoxyCode}

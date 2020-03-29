@@ -1,0 +1,146 @@
+\hypertarget{classtvm_1_1EnvFunc}{}\section{tvm\+:\+:Env\+Func Class Reference}
+\label{classtvm_1_1EnvFunc}\index{tvm\+::\+Env\+Func@{tvm\+::\+Env\+Func}}
+
+
+Managed reference to \hyperlink{classtvm_1_1EnvFuncNode}{Env\+Func\+Node}.  
+
+
+
+
+{\ttfamily \#include $<$env\+\_\+func.\+h$>$}
+
+
+
+Inheritance diagram for tvm\+:\+:Env\+Func\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=168pt]{classtvm_1_1EnvFunc__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for tvm\+:\+:Env\+Func\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=168pt]{classtvm_1_1EnvFunc__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+using \hyperlink{classtvm_1_1EnvFunc_aa40f838af3c55fe6ca8ecf2a256c8550}{Container\+Type} = \hyperlink{classtvm_1_1EnvFuncNode}{Env\+Func\+Node}
+\begin{DoxyCompactList}\small\item\em specify container node \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classtvm_1_1EnvFunc_aae6100a3a2f84f79fa8314c24fd516bc}{Env\+Func} ()
+\item 
+\hyperlink{classtvm_1_1EnvFunc_a1c210b670d3f990b6b8383a4abb7e6d6}{Env\+Func} (Object\+Ptr$<$ Object $>$ n)
+\item 
+const \hyperlink{classtvm_1_1EnvFuncNode}{Env\+Func\+Node} $\ast$ \hyperlink{classtvm_1_1EnvFunc_a4a8bfbfc8a923d8febc531173b3d213f}{operator-\/$>$} () const 
+\item 
+{\footnotesize template$<$typename... Args$>$ }\\\hyperlink{classtvm_1_1runtime_1_1TVMRetValue}{runtime\+::\+T\+V\+M\+Ret\+Value} \hyperlink{classtvm_1_1EnvFunc_a80e24e1342c276b1dfecf073b5be45f1}{operator()} (Args \&\&...args) const 
+\begin{DoxyCompactList}\small\item\em Invoke the function. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \hyperlink{classtvm_1_1EnvFunc}{Env\+Func} \hyperlink{classtvm_1_1EnvFunc_a44b694c40d5ff79319ba02afa89fe5ab}{Get} (const std\+::string \&name)
+\begin{DoxyCompactList}\small\item\em Get a global function based on the name. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Managed reference to \hyperlink{classtvm_1_1EnvFuncNode}{Env\+Func\+Node}. 
+
+\begin{DoxySeeAlso}{See also}
+\hyperlink{classtvm_1_1EnvFuncNode}{Env\+Func\+Node} 
+\end{DoxySeeAlso}
+
+
+\subsection{Member Typedef Documentation}
+\index{tvm\+::\+Env\+Func@{tvm\+::\+Env\+Func}!Container\+Type@{Container\+Type}}
+\index{Container\+Type@{Container\+Type}!tvm\+::\+Env\+Func@{tvm\+::\+Env\+Func}}
+\subsubsection[{\texorpdfstring{Container\+Type}{ContainerType}}]{\setlength{\rightskip}{0pt plus 5cm}using {\bf tvm\+::\+Env\+Func\+::\+Container\+Type} =  {\bf Env\+Func\+Node}}\hypertarget{classtvm_1_1EnvFunc_aa40f838af3c55fe6ca8ecf2a256c8550}{}\label{classtvm_1_1EnvFunc_aa40f838af3c55fe6ca8ecf2a256c8550}
+
+
+specify container node 
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\index{tvm\+::\+Env\+Func@{tvm\+::\+Env\+Func}!Env\+Func@{Env\+Func}}
+\index{Env\+Func@{Env\+Func}!tvm\+::\+Env\+Func@{tvm\+::\+Env\+Func}}
+\subsubsection[{\texorpdfstring{Env\+Func()}{EnvFunc()}}]{\setlength{\rightskip}{0pt plus 5cm}tvm\+::\+Env\+Func\+::\+Env\+Func (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classtvm_1_1EnvFunc_aae6100a3a2f84f79fa8314c24fd516bc}{}\label{classtvm_1_1EnvFunc_aae6100a3a2f84f79fa8314c24fd516bc}
+\index{tvm\+::\+Env\+Func@{tvm\+::\+Env\+Func}!Env\+Func@{Env\+Func}}
+\index{Env\+Func@{Env\+Func}!tvm\+::\+Env\+Func@{tvm\+::\+Env\+Func}}
+\subsubsection[{\texorpdfstring{Env\+Func(\+Object\+Ptr$<$ Object $>$ n)}{EnvFunc(ObjectPtr< Object > n)}}]{\setlength{\rightskip}{0pt plus 5cm}tvm\+::\+Env\+Func\+::\+Env\+Func (
+\begin{DoxyParamCaption}
+\item[{Object\+Ptr$<$ Object $>$}]{n}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [explicit]}}\hypertarget{classtvm_1_1EnvFunc_a1c210b670d3f990b6b8383a4abb7e6d6}{}\label{classtvm_1_1EnvFunc_a1c210b670d3f990b6b8383a4abb7e6d6}
+
+
+\subsection{Member Function Documentation}
+\index{tvm\+::\+Env\+Func@{tvm\+::\+Env\+Func}!Get@{Get}}
+\index{Get@{Get}!tvm\+::\+Env\+Func@{tvm\+::\+Env\+Func}}
+\subsubsection[{\texorpdfstring{Get(const std\+::string \&name)}{Get(const std::string &name)}}]{\setlength{\rightskip}{0pt plus 5cm}static {\bf Env\+Func} tvm\+::\+Env\+Func\+::\+Get (
+\begin{DoxyParamCaption}
+\item[{const std\+::string \&}]{name}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}\hypertarget{classtvm_1_1EnvFunc_a44b694c40d5ff79319ba02afa89fe5ab}{}\label{classtvm_1_1EnvFunc_a44b694c40d5ff79319ba02afa89fe5ab}
+
+
+Get a global function based on the name. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em name} & The name of the global function. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The created global function. 
+\end{DoxyReturn}
+\begin{DoxyNote}{Note}
+The function can be unique 
+\end{DoxyNote}
+\index{tvm\+::\+Env\+Func@{tvm\+::\+Env\+Func}!operator()@{operator()}}
+\index{operator()@{operator()}!tvm\+::\+Env\+Func@{tvm\+::\+Env\+Func}}
+\subsubsection[{\texorpdfstring{operator()(\+Args \&\&...\+args) const }{operator()(Args &&...args) const }}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename... Args$>$ {\bf runtime\+::\+T\+V\+M\+Ret\+Value} tvm\+::\+Env\+Func\+::operator() (
+\begin{DoxyParamCaption}
+\item[{Args \&\&...}]{args}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classtvm_1_1EnvFunc_a80e24e1342c276b1dfecf073b5be45f1}{}\label{classtvm_1_1EnvFunc_a80e24e1342c276b1dfecf073b5be45f1}
+
+
+Invoke the function. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em args} & The arguments \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The return value. 
+\end{DoxyReturn}
+\index{tvm\+::\+Env\+Func@{tvm\+::\+Env\+Func}!operator-\/$>$@{operator-\/$>$}}
+\index{operator-\/$>$@{operator-\/$>$}!tvm\+::\+Env\+Func@{tvm\+::\+Env\+Func}}
+\subsubsection[{\texorpdfstring{operator-\/$>$() const }{operator->() const }}]{\setlength{\rightskip}{0pt plus 5cm}const {\bf Env\+Func\+Node}$\ast$ tvm\+::\+Env\+Func\+::operator-\/$>$ (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classtvm_1_1EnvFunc_a4a8bfbfc8a923d8febc531173b3d213f}{}\label{classtvm_1_1EnvFunc_a4a8bfbfc8a923d8febc531173b3d213f}
+\begin{DoxyReturn}{Returns}
+The internal global function pointer 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+include/tvm/ir/\hyperlink{env__func_8h}{env\+\_\+func.\+h}\end{DoxyCompactItemize}

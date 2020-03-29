@@ -1,0 +1,288 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="classtvm_1_1relay_1_1FeatureSet" kind="class" language="C++" prot="public">
+    <compoundname>tvm::relay::FeatureSet</compoundname>
+    <includes refid="feature_8h" local="no">feature.h</includes>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classtvm_1_1relay_1_1FeatureSet_1a684afd507306394de757a930c8c6e68d" prot="private" static="no" mutable="no">
+        <type>std::bitset&lt; <ref refid="namespacetvm_1_1relay_1ac3a576d7d192ce78bafb169c9aa882d1" kindref="member">feature_count</ref> &gt;</type>
+        <definition>std::bitset&lt;feature_count&gt; tvm::relay::FeatureSet::bs_</definition>
+        <argsstring></argsstring>
+        <name>bs_</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/relay/feature.h" line="132" column="1" bodyfile="include/tvm/relay/feature.h" bodystart="132" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classtvm_1_1relay_1_1FeatureSet_1a268c7544d97aeb7ef3ac19778c23b577" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>tvm::relay::FeatureSet::FeatureSet</definition>
+        <argsstring>(const FeatureSet &amp;)=default</argsstring>
+        <name>FeatureSet</name>
+        <param>
+          <type>const <ref refid="classtvm_1_1relay_1_1FeatureSet" kindref="compound">FeatureSet</ref> &amp;</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/relay/feature.h" line="66" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classtvm_1_1relay_1_1FeatureSet_1a7fe9317883438c23defc65d12532387a" prot="public" static="no" const="no" explicit="yes" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>tvm::relay::FeatureSet::FeatureSet</definition>
+        <argsstring>(Feature ft)</argsstring>
+        <name>FeatureSet</name>
+        <param>
+          <type><ref refid="namespacetvm_1_1relay_1a926750aeda977340aa82bceac863fc9e" kindref="member">Feature</ref></type>
+          <declname>ft</declname>
+        </param>
+        <briefdescription>
+<para>A singleton set containing a single Feature. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/relay/feature.h" line="68" column="1" bodyfile="include/tvm/relay/feature.h" bodystart="68" bodyend="70"/>
+      </memberdef>
+      <memberdef kind="function" id="classtvm_1_1relay_1_1FeatureSet_1a2b85e65f7b1de12a3ae87b8201427d51" prot="public" static="no" const="no" explicit="yes" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>tvm::relay::FeatureSet::FeatureSet</definition>
+        <argsstring>(const tvm::Array&lt; tvm::Integer &gt; &amp;ft)</argsstring>
+        <name>FeatureSet</name>
+        <param>
+          <type>const <ref refid="classtvm_1_1Array" kindref="compound">tvm::Array</ref>&lt; <ref refid="classtvm_1_1Integer" kindref="compound">tvm::Integer</ref> &gt; &amp;</type>
+          <declname>ft</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/relay/feature.h" line="71" column="1" bodyfile="include/tvm/relay/feature.h" bodystart="71" bodyend="75"/>
+      </memberdef>
+      <memberdef kind="function" id="classtvm_1_1relay_1_1FeatureSet_1a103023c45ee24a93a895fd0b78fcce7a" prot="public" static="no" const="yes" explicit="yes" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>tvm::relay::FeatureSet::operator Array&lt; Integer &gt;</definition>
+        <argsstring>() const </argsstring>
+        <name>operator Array&lt; Integer &gt;</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/relay/feature.h" line="76" column="1" bodyfile="include/tvm/relay/feature.h" bodystart="76" bodyend="84"/>
+      </memberdef>
+      <memberdef kind="function" id="classtvm_1_1relay_1_1FeatureSet_1a73e4e0de2e58ef67a88d27a48b3c3fc0" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename T</type>
+          </param>
+        </templateparamlist>
+        <type><ref refid="classtvm_1_1relay_1_1FeatureSet" kindref="compound">FeatureSet</ref> &amp;</type>
+        <definition>FeatureSet&amp; tvm::relay::FeatureSet::operator+=</definition>
+        <argsstring>(const T &amp;rhs)</argsstring>
+        <name>operator+=</name>
+        <param>
+          <type>const T &amp;</type>
+          <declname>rhs</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/relay/feature.h" line="97" column="1" bodyfile="include/tvm/relay/feature.h" bodystart="97" bodyend="100"/>
+      </memberdef>
+      <memberdef kind="function" id="classtvm_1_1relay_1_1FeatureSet_1a2de909bb66c16b2ed7ae76cc4bb843eb" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename T</type>
+          </param>
+        </templateparamlist>
+        <type><ref refid="classtvm_1_1relay_1_1FeatureSet" kindref="compound">FeatureSet</ref></type>
+        <definition>FeatureSet tvm::relay::FeatureSet::operator+</definition>
+        <argsstring>(const T &amp;rhs) const </argsstring>
+        <name>operator+</name>
+        <param>
+          <type>const T &amp;</type>
+          <declname>rhs</declname>
+        </param>
+        <briefdescription>
+<para>Set union. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/relay/feature.h" line="103" column="1" bodyfile="include/tvm/relay/feature.h" bodystart="103" bodyend="107"/>
+      </memberdef>
+      <memberdef kind="function" id="classtvm_1_1relay_1_1FeatureSet_1ad90ce4d929774c0feb92c3eb56bea338" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename T</type>
+          </param>
+        </templateparamlist>
+        <type><ref refid="classtvm_1_1relay_1_1FeatureSet" kindref="compound">FeatureSet</ref> &amp;</type>
+        <definition>FeatureSet&amp; tvm::relay::FeatureSet::operator-=</definition>
+        <argsstring>(const T &amp;rhs)</argsstring>
+        <name>operator-=</name>
+        <param>
+          <type>const T &amp;</type>
+          <declname>rhs</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/relay/feature.h" line="109" column="1" bodyfile="include/tvm/relay/feature.h" bodystart="109" bodyend="112"/>
+      </memberdef>
+      <memberdef kind="function" id="classtvm_1_1relay_1_1FeatureSet_1a122b67229c2281d4138fcb41ccab13f0" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename T</type>
+          </param>
+        </templateparamlist>
+        <type><ref refid="classtvm_1_1relay_1_1FeatureSet" kindref="compound">FeatureSet</ref></type>
+        <definition>FeatureSet tvm::relay::FeatureSet::operator-</definition>
+        <argsstring>(const T &amp;rhs) const </argsstring>
+        <name>operator-</name>
+        <param>
+          <type>const T &amp;</type>
+          <declname>rhs</declname>
+        </param>
+        <briefdescription>
+<para>Set difference. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/relay/feature.h" line="115" column="1" bodyfile="include/tvm/relay/feature.h" bodystart="115" bodyend="119"/>
+      </memberdef>
+      <memberdef kind="function" id="classtvm_1_1relay_1_1FeatureSet_1a1024f586b1b0ea8d78274f8066876af3" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool tvm::relay::FeatureSet::is_subset_of</definition>
+        <argsstring>(const FeatureSet &amp;rhs) const </argsstring>
+        <name>is_subset_of</name>
+        <param>
+          <type>const <ref refid="classtvm_1_1relay_1_1FeatureSet" kindref="compound">FeatureSet</ref> &amp;</type>
+          <declname>rhs</declname>
+        </param>
+        <briefdescription>
+<para>Is this a subset of rhs? </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>rhs</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>another <ref refid="classtvm_1_1relay_1_1FeatureSet" kindref="compound">FeatureSet</ref>.</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>true only if this is a subset of rhs. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/relay/feature.h" line="127" column="1" bodyfile="include/tvm/relay/feature.h" bodystart="127" bodyend="129"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="classtvm_1_1relay_1_1FeatureSet_1abbedfbde4f544c66e6129181b3c29c2a" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classtvm_1_1relay_1_1FeatureSet" kindref="compound">FeatureSet</ref></type>
+        <definition>static FeatureSet tvm::relay::FeatureSet::All</definition>
+        <argsstring>()</argsstring>
+        <name>All</name>
+        <briefdescription>
+<para>A set that contain all the Feature. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/relay/feature.h" line="86" column="1" bodyfile="include/tvm/relay/feature.h" bodystart="86" bodyend="90"/>
+      </memberdef>
+      <memberdef kind="function" id="classtvm_1_1relay_1_1FeatureSet_1a68c408c752ef58b2c27802491165adbb" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classtvm_1_1relay_1_1FeatureSet" kindref="compound">FeatureSet</ref></type>
+        <definition>static FeatureSet tvm::relay::FeatureSet::No</definition>
+        <argsstring>()</argsstring>
+        <name>No</name>
+        <briefdescription>
+<para>The empty set. Contain no Feature. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/relay/feature.h" line="92" column="1" bodyfile="include/tvm/relay/feature.h" bodystart="92" bodyend="95"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="classtvm_1_1relay_1_1FeatureSet_1a50108befbd2e7a4cf70bcb4673bce23d" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>tvm::relay::FeatureSet::FeatureSet</definition>
+        <argsstring>()=default</argsstring>
+        <name>FeatureSet</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/relay/feature.h" line="133" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classtvm_1_1relay_1_1FeatureSet_1a9e02c10f8a2a9f64662b8b049a807449" prot="private" static="no" const="no" explicit="yes" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>tvm::relay::FeatureSet::FeatureSet</definition>
+        <argsstring>(const std::bitset&lt; feature_count &gt; &amp;bs)</argsstring>
+        <name>FeatureSet</name>
+        <param>
+          <type>const std::bitset&lt; <ref refid="namespacetvm_1_1relay_1ac3a576d7d192ce78bafb169c9aa882d1" kindref="member">feature_count</ref> &gt; &amp;</type>
+          <declname>bs</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/relay/feature.h" line="134" column="1" bodyfile="include/tvm/relay/feature.h" bodystart="134" bodyend="134"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>A finite set of Feature. </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="5021">
+        <label>tvm::relay::FeatureSet</label>
+        <link refid="classtvm_1_1relay_1_1FeatureSet"/>
+      </node>
+    </collaborationgraph>
+    <location file="include/tvm/relay/feature.h" line="64" column="1" bodyfile="include/tvm/relay/feature.h" bodystart="64" bodyend="135"/>
+    <listofallmembers>
+      <member refid="classtvm_1_1relay_1_1FeatureSet_1abbedfbde4f544c66e6129181b3c29c2a" prot="public" virt="non-virtual"><scope>tvm::relay::FeatureSet</scope><name>All</name></member>
+      <member refid="classtvm_1_1relay_1_1FeatureSet_1a684afd507306394de757a930c8c6e68d" prot="private" virt="non-virtual"><scope>tvm::relay::FeatureSet</scope><name>bs_</name></member>
+      <member refid="classtvm_1_1relay_1_1FeatureSet_1a268c7544d97aeb7ef3ac19778c23b577" prot="public" virt="non-virtual"><scope>tvm::relay::FeatureSet</scope><name>FeatureSet</name></member>
+      <member refid="classtvm_1_1relay_1_1FeatureSet_1a7fe9317883438c23defc65d12532387a" prot="public" virt="non-virtual"><scope>tvm::relay::FeatureSet</scope><name>FeatureSet</name></member>
+      <member refid="classtvm_1_1relay_1_1FeatureSet_1a2b85e65f7b1de12a3ae87b8201427d51" prot="public" virt="non-virtual"><scope>tvm::relay::FeatureSet</scope><name>FeatureSet</name></member>
+      <member refid="classtvm_1_1relay_1_1FeatureSet_1a50108befbd2e7a4cf70bcb4673bce23d" prot="private" virt="non-virtual"><scope>tvm::relay::FeatureSet</scope><name>FeatureSet</name></member>
+      <member refid="classtvm_1_1relay_1_1FeatureSet_1a9e02c10f8a2a9f64662b8b049a807449" prot="private" virt="non-virtual"><scope>tvm::relay::FeatureSet</scope><name>FeatureSet</name></member>
+      <member refid="classtvm_1_1relay_1_1FeatureSet_1a1024f586b1b0ea8d78274f8066876af3" prot="public" virt="non-virtual"><scope>tvm::relay::FeatureSet</scope><name>is_subset_of</name></member>
+      <member refid="classtvm_1_1relay_1_1FeatureSet_1a68c408c752ef58b2c27802491165adbb" prot="public" virt="non-virtual"><scope>tvm::relay::FeatureSet</scope><name>No</name></member>
+      <member refid="classtvm_1_1relay_1_1FeatureSet_1a103023c45ee24a93a895fd0b78fcce7a" prot="public" virt="non-virtual"><scope>tvm::relay::FeatureSet</scope><name>operator Array&lt; Integer &gt;</name></member>
+      <member refid="classtvm_1_1relay_1_1FeatureSet_1a2de909bb66c16b2ed7ae76cc4bb843eb" prot="public" virt="non-virtual"><scope>tvm::relay::FeatureSet</scope><name>operator+</name></member>
+      <member refid="classtvm_1_1relay_1_1FeatureSet_1a73e4e0de2e58ef67a88d27a48b3c3fc0" prot="public" virt="non-virtual"><scope>tvm::relay::FeatureSet</scope><name>operator+=</name></member>
+      <member refid="classtvm_1_1relay_1_1FeatureSet_1a122b67229c2281d4138fcb41ccab13f0" prot="public" virt="non-virtual"><scope>tvm::relay::FeatureSet</scope><name>operator-</name></member>
+      <member refid="classtvm_1_1relay_1_1FeatureSet_1ad90ce4d929774c0feb92c3eb56bea338" prot="public" virt="non-virtual"><scope>tvm::relay::FeatureSet</scope><name>operator-=</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

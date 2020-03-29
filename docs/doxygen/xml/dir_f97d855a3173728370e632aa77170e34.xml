@@ -1,0 +1,16 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="dir_f97d855a3173728370e632aa77170e34" kind="dir">
+    <compoundname>include/tvm/te</compoundname>
+    <innerfile refid="operation_8h">operation.h</innerfile>
+    <innerfile refid="schedule_8h">schedule.h</innerfile>
+    <innerfile refid="schedule__pass_8h">schedule_pass.h</innerfile>
+    <innerfile refid="tensor_8h">tensor.h</innerfile>
+    <innerfile refid="tensor__intrin_8h">tensor_intrin.h</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="include/tvm/te/"/>
+  </compounddef>
+</doxygen>

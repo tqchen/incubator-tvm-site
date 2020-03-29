@@ -1,0 +1,379 @@
+\hypertarget{classtvm_1_1runtime_1_1DeviceAPI}{}\section{tvm\+:\+:runtime\+:\+:Device\+A\+PI Class Reference}
+\label{classtvm_1_1runtime_1_1DeviceAPI}\index{tvm\+::runtime\+::\+Device\+A\+PI@{tvm\+::runtime\+::\+Device\+A\+PI}}
+
+
+T\+VM Runtime Device A\+PI, abstracts the device specific interface for memory management.  
+
+
+
+
+{\ttfamily \#include $<$device\+\_\+api.\+h$>$}
+
+
+
+Collaboration diagram for tvm\+:\+:runtime\+:\+:Device\+A\+PI\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=212pt]{classtvm_1_1runtime_1_1DeviceAPI__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual \hyperlink{classtvm_1_1runtime_1_1DeviceAPI_af3fe69d9823d7c67c86ecf247d894f27}{$\sim$\+Device\+A\+PI} ()
+\begin{DoxyCompactList}\small\item\em virtual destructor \end{DoxyCompactList}\item 
+virtual void \hyperlink{classtvm_1_1runtime_1_1DeviceAPI_a507f3514110b06bb60cb1f2906f8dcf8}{Set\+Device} (\hyperlink{c__runtime__api_8h_a9363bb701f16ce5bbb381f2a013d25b4}{T\+V\+M\+Context} ctx)=0
+\begin{DoxyCompactList}\small\item\em Set the environment device id to ctx. \end{DoxyCompactList}\item 
+virtual void \hyperlink{classtvm_1_1runtime_1_1DeviceAPI_a2b9effd4264a7e68f12958738d5c676a}{Get\+Attr} (\hyperlink{c__runtime__api_8h_a9363bb701f16ce5bbb381f2a013d25b4}{T\+V\+M\+Context} ctx, \hyperlink{namespacetvm_1_1runtime_a46fef1ca0ccc05473e9bb0a8c6b66619}{Device\+Attr\+Kind} kind, \hyperlink{classtvm_1_1runtime_1_1TVMRetValue}{T\+V\+M\+Ret\+Value} $\ast$rv)=0
+\begin{DoxyCompactList}\small\item\em Get attribute of specified device. \end{DoxyCompactList}\item 
+virtual void $\ast$ \hyperlink{classtvm_1_1runtime_1_1DeviceAPI_acb8898ee955260b6c4ba0e5bdc4ef124}{Alloc\+Data\+Space} (\hyperlink{c__runtime__api_8h_a9363bb701f16ce5bbb381f2a013d25b4}{T\+V\+M\+Context} ctx, size\+\_\+t nbytes, size\+\_\+t alignment, D\+L\+Data\+Type type\+\_\+hint)=0
+\begin{DoxyCompactList}\small\item\em Allocate a data space on device. \end{DoxyCompactList}\item 
+virtual void \hyperlink{classtvm_1_1runtime_1_1DeviceAPI_af547b5ab8be9b0f2616aed7e453e067f}{Free\+Data\+Space} (\hyperlink{c__runtime__api_8h_a9363bb701f16ce5bbb381f2a013d25b4}{T\+V\+M\+Context} ctx, void $\ast$ptr)=0
+\begin{DoxyCompactList}\small\item\em Free a data space on device. \end{DoxyCompactList}\item 
+virtual void \hyperlink{classtvm_1_1runtime_1_1DeviceAPI_a0cdbc58366129d3d6185bf7ae20a3226}{Copy\+Data\+From\+To} (const void $\ast$from, size\+\_\+t from\+\_\+offset, void $\ast$to, size\+\_\+t to\+\_\+offset, size\+\_\+t num\+\_\+bytes, \hyperlink{c__runtime__api_8h_a9363bb701f16ce5bbb381f2a013d25b4}{T\+V\+M\+Context} ctx\+\_\+from, \hyperlink{c__runtime__api_8h_a9363bb701f16ce5bbb381f2a013d25b4}{T\+V\+M\+Context} ctx\+\_\+to, D\+L\+Data\+Type type\+\_\+hint, \hyperlink{c__runtime__api_8h_ab1d5f6b7945e1410602a8a057fda5757}{T\+V\+M\+Stream\+Handle} stream)=0
+\begin{DoxyCompactList}\small\item\em copy data from one place to another \end{DoxyCompactList}\item 
+virtual \hyperlink{c__runtime__api_8h_ab1d5f6b7945e1410602a8a057fda5757}{T\+V\+M\+Stream\+Handle} \hyperlink{classtvm_1_1runtime_1_1DeviceAPI_a67cf0799e8c50432379769022adafe66}{Create\+Stream} (\hyperlink{c__runtime__api_8h_a9363bb701f16ce5bbb381f2a013d25b4}{T\+V\+M\+Context} ctx)
+\begin{DoxyCompactList}\small\item\em Create a new stream of execution. \end{DoxyCompactList}\item 
+virtual void \hyperlink{classtvm_1_1runtime_1_1DeviceAPI_a8a4d70bbe1db295e42126835bf7f19df}{Free\+Stream} (\hyperlink{c__runtime__api_8h_a9363bb701f16ce5bbb381f2a013d25b4}{T\+V\+M\+Context} ctx, \hyperlink{c__runtime__api_8h_ab1d5f6b7945e1410602a8a057fda5757}{T\+V\+M\+Stream\+Handle} stream)
+\begin{DoxyCompactList}\small\item\em Free a stream of execution. \end{DoxyCompactList}\item 
+virtual void \hyperlink{classtvm_1_1runtime_1_1DeviceAPI_a359964ae5ad0fbdba18da1a0db1a7ad6}{Stream\+Sync} (\hyperlink{c__runtime__api_8h_a9363bb701f16ce5bbb381f2a013d25b4}{T\+V\+M\+Context} ctx, \hyperlink{c__runtime__api_8h_ab1d5f6b7945e1410602a8a057fda5757}{T\+V\+M\+Stream\+Handle} stream)=0
+\begin{DoxyCompactList}\small\item\em Synchronize the stream. \end{DoxyCompactList}\item 
+virtual void \hyperlink{classtvm_1_1runtime_1_1DeviceAPI_a2bf972e88ccbb2f896b061730655cf46}{Set\+Stream} (\hyperlink{c__runtime__api_8h_a9363bb701f16ce5bbb381f2a013d25b4}{T\+V\+M\+Context} ctx, \hyperlink{c__runtime__api_8h_ab1d5f6b7945e1410602a8a057fda5757}{T\+V\+M\+Stream\+Handle} stream)
+\begin{DoxyCompactList}\small\item\em Set the stream. \end{DoxyCompactList}\item 
+virtual void \hyperlink{classtvm_1_1runtime_1_1DeviceAPI_ac913e53e874729157e560efc7bc32420}{Sync\+Stream\+From\+To} (\hyperlink{c__runtime__api_8h_a9363bb701f16ce5bbb381f2a013d25b4}{T\+V\+M\+Context} ctx, \hyperlink{c__runtime__api_8h_ab1d5f6b7945e1410602a8a057fda5757}{T\+V\+M\+Stream\+Handle} event\+\_\+src, \hyperlink{c__runtime__api_8h_ab1d5f6b7945e1410602a8a057fda5757}{T\+V\+M\+Stream\+Handle} event\+\_\+dst)
+\begin{DoxyCompactList}\small\item\em Synchronize 2 streams of execution. \end{DoxyCompactList}\item 
+virtual void $\ast$ \hyperlink{classtvm_1_1runtime_1_1DeviceAPI_a1294018fb28de0f67754d8df98c1e0bd}{Alloc\+Workspace} (\hyperlink{c__runtime__api_8h_a9363bb701f16ce5bbb381f2a013d25b4}{T\+V\+M\+Context} ctx, size\+\_\+t nbytes, D\+L\+Data\+Type type\+\_\+hint=\{\})
+\begin{DoxyCompactList}\small\item\em Allocate temporal workspace for backend execution. \end{DoxyCompactList}\item 
+virtual void \hyperlink{classtvm_1_1runtime_1_1DeviceAPI_af096fadcf68d2fad804fc8a00a4f4311}{Free\+Workspace} (\hyperlink{c__runtime__api_8h_a9363bb701f16ce5bbb381f2a013d25b4}{T\+V\+M\+Context} ctx, void $\ast$ptr)
+\begin{DoxyCompactList}\small\item\em Free temporal workspace in backend execution. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \hyperlink{classtvm_1_1runtime_1_1DeviceAPI}{Device\+A\+PI} $\ast$ \hyperlink{classtvm_1_1runtime_1_1DeviceAPI_a50365326f6a7cd2f975f72d6503933d8}{Get} (\hyperlink{c__runtime__api_8h_a9363bb701f16ce5bbb381f2a013d25b4}{T\+V\+M\+Context} ctx, bool allow\+\_\+missing=false)
+\begin{DoxyCompactList}\small\item\em Get device A\+PI base don context. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+T\+VM Runtime Device A\+PI, abstracts the device specific interface for memory management. 
+
+\subsection{Constructor \& Destructor Documentation}
+\index{tvm\+::runtime\+::\+Device\+A\+PI@{tvm\+::runtime\+::\+Device\+A\+PI}!````~Device\+A\+PI@{$\sim$\+Device\+A\+PI}}
+\index{````~Device\+A\+PI@{$\sim$\+Device\+A\+PI}!tvm\+::runtime\+::\+Device\+A\+PI@{tvm\+::runtime\+::\+Device\+A\+PI}}
+\subsubsection[{\texorpdfstring{$\sim$\+Device\+A\+P\+I()}{~DeviceAPI()}}]{\setlength{\rightskip}{0pt plus 5cm}virtual tvm\+::runtime\+::\+Device\+A\+P\+I\+::$\sim$\+Device\+A\+PI (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}\hypertarget{classtvm_1_1runtime_1_1DeviceAPI_af3fe69d9823d7c67c86ecf247d894f27}{}\label{classtvm_1_1runtime_1_1DeviceAPI_af3fe69d9823d7c67c86ecf247d894f27}
+
+
+virtual destructor 
+
+
+
+\subsection{Member Function Documentation}
+\index{tvm\+::runtime\+::\+Device\+A\+PI@{tvm\+::runtime\+::\+Device\+A\+PI}!Alloc\+Data\+Space@{Alloc\+Data\+Space}}
+\index{Alloc\+Data\+Space@{Alloc\+Data\+Space}!tvm\+::runtime\+::\+Device\+A\+PI@{tvm\+::runtime\+::\+Device\+A\+PI}}
+\subsubsection[{\texorpdfstring{Alloc\+Data\+Space(\+T\+V\+M\+Context ctx, size\+\_\+t nbytes, size\+\_\+t alignment, D\+L\+Data\+Type type\+\_\+hint)=0}{AllocDataSpace(TVMContext ctx, size_t nbytes, size_t alignment, DLDataType type_hint)=0}}]{\setlength{\rightskip}{0pt plus 5cm}virtual void$\ast$ tvm\+::runtime\+::\+Device\+A\+P\+I\+::\+Alloc\+Data\+Space (
+\begin{DoxyParamCaption}
+\item[{{\bf T\+V\+M\+Context}}]{ctx, }
+\item[{size\+\_\+t}]{nbytes, }
+\item[{size\+\_\+t}]{alignment, }
+\item[{D\+L\+Data\+Type}]{type\+\_\+hint}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [pure virtual]}}\hypertarget{classtvm_1_1runtime_1_1DeviceAPI_acb8898ee955260b6c4ba0e5bdc4ef124}{}\label{classtvm_1_1runtime_1_1DeviceAPI_acb8898ee955260b6c4ba0e5bdc4ef124}
+
+
+Allocate a data space on device. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em ctx} & The device context to perform operation. \\
+\hline
+{\em nbytes} & The number of bytes in memory. \\
+\hline
+{\em alignment} & The alignment of the memory. \\
+\hline
+{\em type\+\_\+hint} & The type of elements. Only needed by certain backends such as Open\+GL, as nbytes \& alignment are sufficient for most backends. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The allocated device pointer. 
+\end{DoxyReturn}
+\index{tvm\+::runtime\+::\+Device\+A\+PI@{tvm\+::runtime\+::\+Device\+A\+PI}!Alloc\+Workspace@{Alloc\+Workspace}}
+\index{Alloc\+Workspace@{Alloc\+Workspace}!tvm\+::runtime\+::\+Device\+A\+PI@{tvm\+::runtime\+::\+Device\+A\+PI}}
+\subsubsection[{\texorpdfstring{Alloc\+Workspace(\+T\+V\+M\+Context ctx, size\+\_\+t nbytes, D\+L\+Data\+Type type\+\_\+hint=\lcurly{}\rcurly{})}{AllocWorkspace(TVMContext ctx, size_t nbytes, DLDataType type_hint=\{\})}}]{\setlength{\rightskip}{0pt plus 5cm}virtual void$\ast$ tvm\+::runtime\+::\+Device\+A\+P\+I\+::\+Alloc\+Workspace (
+\begin{DoxyParamCaption}
+\item[{{\bf T\+V\+M\+Context}}]{ctx, }
+\item[{size\+\_\+t}]{nbytes, }
+\item[{D\+L\+Data\+Type}]{type\+\_\+hint = {\ttfamily \{\}}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\hypertarget{classtvm_1_1runtime_1_1DeviceAPI_a1294018fb28de0f67754d8df98c1e0bd}{}\label{classtvm_1_1runtime_1_1DeviceAPI_a1294018fb28de0f67754d8df98c1e0bd}
+
+
+Allocate temporal workspace for backend execution. 
+
+\begin{DoxyNote}{Note}
+We have the following assumption about backend temporal workspace allocation, and backend will optimize for such assumption\+:
+\end{DoxyNote}
+
+\begin{DoxyItemize}
+\item Only a few allocation will happen, and space will be released after use.
+\item The release order is usually in reverse order of allocate (stack style).
+\item Repeative pattern of same allocations over different runs.
+\item Workspace should not overlap between different threads(i.\+e. be threadlocal)
+\end{DoxyItemize}
+
+
+\begin{DoxyParams}{Parameters}
+{\em ctx} & The context of allocation. \\
+\hline
+{\em nbytes} & The size to be allocated. \\
+\hline
+{\em type\+\_\+hint} & The type of elements. Only needed by certain backends such as Open\+GL, as nbytes is sufficient for most backends. \\
+\hline
+\end{DoxyParams}
+\index{tvm\+::runtime\+::\+Device\+A\+PI@{tvm\+::runtime\+::\+Device\+A\+PI}!Copy\+Data\+From\+To@{Copy\+Data\+From\+To}}
+\index{Copy\+Data\+From\+To@{Copy\+Data\+From\+To}!tvm\+::runtime\+::\+Device\+A\+PI@{tvm\+::runtime\+::\+Device\+A\+PI}}
+\subsubsection[{\texorpdfstring{Copy\+Data\+From\+To(const void $\ast$from, size\+\_\+t from\+\_\+offset, void $\ast$to, size\+\_\+t to\+\_\+offset, size\+\_\+t num\+\_\+bytes, T\+V\+M\+Context ctx\+\_\+from, T\+V\+M\+Context ctx\+\_\+to, D\+L\+Data\+Type type\+\_\+hint, T\+V\+M\+Stream\+Handle stream)=0}{CopyDataFromTo(const void *from, size_t from_offset, void *to, size_t to_offset, size_t num_bytes, TVMContext ctx_from, TVMContext ctx_to, DLDataType type_hint, TVMStreamHandle stream)=0}}]{\setlength{\rightskip}{0pt plus 5cm}virtual void tvm\+::runtime\+::\+Device\+A\+P\+I\+::\+Copy\+Data\+From\+To (
+\begin{DoxyParamCaption}
+\item[{const void $\ast$}]{from, }
+\item[{size\+\_\+t}]{from\+\_\+offset, }
+\item[{void $\ast$}]{to, }
+\item[{size\+\_\+t}]{to\+\_\+offset, }
+\item[{size\+\_\+t}]{num\+\_\+bytes, }
+\item[{{\bf T\+V\+M\+Context}}]{ctx\+\_\+from, }
+\item[{{\bf T\+V\+M\+Context}}]{ctx\+\_\+to, }
+\item[{D\+L\+Data\+Type}]{type\+\_\+hint, }
+\item[{{\bf T\+V\+M\+Stream\+Handle}}]{stream}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [pure virtual]}}\hypertarget{classtvm_1_1runtime_1_1DeviceAPI_a0cdbc58366129d3d6185bf7ae20a3226}{}\label{classtvm_1_1runtime_1_1DeviceAPI_a0cdbc58366129d3d6185bf7ae20a3226}
+
+
+copy data from one place to another 
+
+
+\begin{DoxyParams}{Parameters}
+{\em from} & The source array. \\
+\hline
+{\em from\+\_\+offset} & The byte offeset in the from. \\
+\hline
+{\em to} & The target array. \\
+\hline
+{\em to\+\_\+offset} & The byte offset in the to. \\
+\hline
+{\em num\+\_\+bytes} & The size of the memory in bytes \\
+\hline
+{\em ctx\+\_\+from} & The source context \\
+\hline
+{\em ctx\+\_\+to} & The target context \\
+\hline
+{\em type\+\_\+hint} & The type of elements, only neded by certain backends. can be useful for cross device endian converison. \\
+\hline
+{\em stream} & Optional stream object. \\
+\hline
+\end{DoxyParams}
+\index{tvm\+::runtime\+::\+Device\+A\+PI@{tvm\+::runtime\+::\+Device\+A\+PI}!Create\+Stream@{Create\+Stream}}
+\index{Create\+Stream@{Create\+Stream}!tvm\+::runtime\+::\+Device\+A\+PI@{tvm\+::runtime\+::\+Device\+A\+PI}}
+\subsubsection[{\texorpdfstring{Create\+Stream(\+T\+V\+M\+Context ctx)}{CreateStream(TVMContext ctx)}}]{\setlength{\rightskip}{0pt plus 5cm}virtual {\bf T\+V\+M\+Stream\+Handle} tvm\+::runtime\+::\+Device\+A\+P\+I\+::\+Create\+Stream (
+\begin{DoxyParamCaption}
+\item[{{\bf T\+V\+M\+Context}}]{ctx}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\hypertarget{classtvm_1_1runtime_1_1DeviceAPI_a67cf0799e8c50432379769022adafe66}{}\label{classtvm_1_1runtime_1_1DeviceAPI_a67cf0799e8c50432379769022adafe66}
+
+
+Create a new stream of execution. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em ctx} & The context of allocation. \\
+\hline
+\end{DoxyParams}
+\index{tvm\+::runtime\+::\+Device\+A\+PI@{tvm\+::runtime\+::\+Device\+A\+PI}!Free\+Data\+Space@{Free\+Data\+Space}}
+\index{Free\+Data\+Space@{Free\+Data\+Space}!tvm\+::runtime\+::\+Device\+A\+PI@{tvm\+::runtime\+::\+Device\+A\+PI}}
+\subsubsection[{\texorpdfstring{Free\+Data\+Space(\+T\+V\+M\+Context ctx, void $\ast$ptr)=0}{FreeDataSpace(TVMContext ctx, void *ptr)=0}}]{\setlength{\rightskip}{0pt plus 5cm}virtual void tvm\+::runtime\+::\+Device\+A\+P\+I\+::\+Free\+Data\+Space (
+\begin{DoxyParamCaption}
+\item[{{\bf T\+V\+M\+Context}}]{ctx, }
+\item[{void $\ast$}]{ptr}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [pure virtual]}}\hypertarget{classtvm_1_1runtime_1_1DeviceAPI_af547b5ab8be9b0f2616aed7e453e067f}{}\label{classtvm_1_1runtime_1_1DeviceAPI_af547b5ab8be9b0f2616aed7e453e067f}
+
+
+Free a data space on device. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em ctx} & The device context to perform operation. \\
+\hline
+{\em ptr} & The data space. \\
+\hline
+\end{DoxyParams}
+\index{tvm\+::runtime\+::\+Device\+A\+PI@{tvm\+::runtime\+::\+Device\+A\+PI}!Free\+Stream@{Free\+Stream}}
+\index{Free\+Stream@{Free\+Stream}!tvm\+::runtime\+::\+Device\+A\+PI@{tvm\+::runtime\+::\+Device\+A\+PI}}
+\subsubsection[{\texorpdfstring{Free\+Stream(\+T\+V\+M\+Context ctx, T\+V\+M\+Stream\+Handle stream)}{FreeStream(TVMContext ctx, TVMStreamHandle stream)}}]{\setlength{\rightskip}{0pt plus 5cm}virtual void tvm\+::runtime\+::\+Device\+A\+P\+I\+::\+Free\+Stream (
+\begin{DoxyParamCaption}
+\item[{{\bf T\+V\+M\+Context}}]{ctx, }
+\item[{{\bf T\+V\+M\+Stream\+Handle}}]{stream}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\hypertarget{classtvm_1_1runtime_1_1DeviceAPI_a8a4d70bbe1db295e42126835bf7f19df}{}\label{classtvm_1_1runtime_1_1DeviceAPI_a8a4d70bbe1db295e42126835bf7f19df}
+
+
+Free a stream of execution. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em ctx} & The context of the stream \\
+\hline
+{\em stream} & The pointer to be freed. \\
+\hline
+\end{DoxyParams}
+\index{tvm\+::runtime\+::\+Device\+A\+PI@{tvm\+::runtime\+::\+Device\+A\+PI}!Free\+Workspace@{Free\+Workspace}}
+\index{Free\+Workspace@{Free\+Workspace}!tvm\+::runtime\+::\+Device\+A\+PI@{tvm\+::runtime\+::\+Device\+A\+PI}}
+\subsubsection[{\texorpdfstring{Free\+Workspace(\+T\+V\+M\+Context ctx, void $\ast$ptr)}{FreeWorkspace(TVMContext ctx, void *ptr)}}]{\setlength{\rightskip}{0pt plus 5cm}virtual void tvm\+::runtime\+::\+Device\+A\+P\+I\+::\+Free\+Workspace (
+\begin{DoxyParamCaption}
+\item[{{\bf T\+V\+M\+Context}}]{ctx, }
+\item[{void $\ast$}]{ptr}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\hypertarget{classtvm_1_1runtime_1_1DeviceAPI_af096fadcf68d2fad804fc8a00a4f4311}{}\label{classtvm_1_1runtime_1_1DeviceAPI_af096fadcf68d2fad804fc8a00a4f4311}
+
+
+Free temporal workspace in backend execution. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em ctx} & The context of allocation. \\
+\hline
+{\em ptr} & The pointer to be freed. \\
+\hline
+\end{DoxyParams}
+\index{tvm\+::runtime\+::\+Device\+A\+PI@{tvm\+::runtime\+::\+Device\+A\+PI}!Get@{Get}}
+\index{Get@{Get}!tvm\+::runtime\+::\+Device\+A\+PI@{tvm\+::runtime\+::\+Device\+A\+PI}}
+\subsubsection[{\texorpdfstring{Get(\+T\+V\+M\+Context ctx, bool allow\+\_\+missing=false)}{Get(TVMContext ctx, bool allow_missing=false)}}]{\setlength{\rightskip}{0pt plus 5cm}static {\bf Device\+A\+PI}$\ast$ tvm\+::runtime\+::\+Device\+A\+P\+I\+::\+Get (
+\begin{DoxyParamCaption}
+\item[{{\bf T\+V\+M\+Context}}]{ctx, }
+\item[{bool}]{allow\+\_\+missing = {\ttfamily false}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}\hypertarget{classtvm_1_1runtime_1_1DeviceAPI_a50365326f6a7cd2f975f72d6503933d8}{}\label{classtvm_1_1runtime_1_1DeviceAPI_a50365326f6a7cd2f975f72d6503933d8}
+
+
+Get device A\+PI base don context. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em ctx} & The context \\
+\hline
+{\em allow\+\_\+missing} & Whether allow missing \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The corresponding device A\+PI. 
+\end{DoxyReturn}
+\index{tvm\+::runtime\+::\+Device\+A\+PI@{tvm\+::runtime\+::\+Device\+A\+PI}!Get\+Attr@{Get\+Attr}}
+\index{Get\+Attr@{Get\+Attr}!tvm\+::runtime\+::\+Device\+A\+PI@{tvm\+::runtime\+::\+Device\+A\+PI}}
+\subsubsection[{\texorpdfstring{Get\+Attr(\+T\+V\+M\+Context ctx, Device\+Attr\+Kind kind, T\+V\+M\+Ret\+Value $\ast$rv)=0}{GetAttr(TVMContext ctx, DeviceAttrKind kind, TVMRetValue *rv)=0}}]{\setlength{\rightskip}{0pt plus 5cm}virtual void tvm\+::runtime\+::\+Device\+A\+P\+I\+::\+Get\+Attr (
+\begin{DoxyParamCaption}
+\item[{{\bf T\+V\+M\+Context}}]{ctx, }
+\item[{{\bf Device\+Attr\+Kind}}]{kind, }
+\item[{{\bf T\+V\+M\+Ret\+Value} $\ast$}]{rv}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [pure virtual]}}\hypertarget{classtvm_1_1runtime_1_1DeviceAPI_a2b9effd4264a7e68f12958738d5c676a}{}\label{classtvm_1_1runtime_1_1DeviceAPI_a2b9effd4264a7e68f12958738d5c676a}
+
+
+Get attribute of specified device. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em ctx} & The device context \\
+\hline
+{\em kind} & The result kind \\
+\hline
+{\em rv} & The return value. \\
+\hline
+\end{DoxyParams}
+\begin{DoxySeeAlso}{See also}
+\hyperlink{namespacetvm_1_1runtime_a46fef1ca0ccc05473e9bb0a8c6b66619}{Device\+Attr\+Kind} 
+\end{DoxySeeAlso}
+\index{tvm\+::runtime\+::\+Device\+A\+PI@{tvm\+::runtime\+::\+Device\+A\+PI}!Set\+Device@{Set\+Device}}
+\index{Set\+Device@{Set\+Device}!tvm\+::runtime\+::\+Device\+A\+PI@{tvm\+::runtime\+::\+Device\+A\+PI}}
+\subsubsection[{\texorpdfstring{Set\+Device(\+T\+V\+M\+Context ctx)=0}{SetDevice(TVMContext ctx)=0}}]{\setlength{\rightskip}{0pt plus 5cm}virtual void tvm\+::runtime\+::\+Device\+A\+P\+I\+::\+Set\+Device (
+\begin{DoxyParamCaption}
+\item[{{\bf T\+V\+M\+Context}}]{ctx}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [pure virtual]}}\hypertarget{classtvm_1_1runtime_1_1DeviceAPI_a507f3514110b06bb60cb1f2906f8dcf8}{}\label{classtvm_1_1runtime_1_1DeviceAPI_a507f3514110b06bb60cb1f2906f8dcf8}
+
+
+Set the environment device id to ctx. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em ctx} & The context to be set. \\
+\hline
+\end{DoxyParams}
+\index{tvm\+::runtime\+::\+Device\+A\+PI@{tvm\+::runtime\+::\+Device\+A\+PI}!Set\+Stream@{Set\+Stream}}
+\index{Set\+Stream@{Set\+Stream}!tvm\+::runtime\+::\+Device\+A\+PI@{tvm\+::runtime\+::\+Device\+A\+PI}}
+\subsubsection[{\texorpdfstring{Set\+Stream(\+T\+V\+M\+Context ctx, T\+V\+M\+Stream\+Handle stream)}{SetStream(TVMContext ctx, TVMStreamHandle stream)}}]{\setlength{\rightskip}{0pt plus 5cm}virtual void tvm\+::runtime\+::\+Device\+A\+P\+I\+::\+Set\+Stream (
+\begin{DoxyParamCaption}
+\item[{{\bf T\+V\+M\+Context}}]{ctx, }
+\item[{{\bf T\+V\+M\+Stream\+Handle}}]{stream}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}\hypertarget{classtvm_1_1runtime_1_1DeviceAPI_a2bf972e88ccbb2f896b061730655cf46}{}\label{classtvm_1_1runtime_1_1DeviceAPI_a2bf972e88ccbb2f896b061730655cf46}
+
+
+Set the stream. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em ctx} & The context to set stream. \\
+\hline
+{\em stream} & The stream to be set. \\
+\hline
+\end{DoxyParams}
+\index{tvm\+::runtime\+::\+Device\+A\+PI@{tvm\+::runtime\+::\+Device\+A\+PI}!Stream\+Sync@{Stream\+Sync}}
+\index{Stream\+Sync@{Stream\+Sync}!tvm\+::runtime\+::\+Device\+A\+PI@{tvm\+::runtime\+::\+Device\+A\+PI}}
+\subsubsection[{\texorpdfstring{Stream\+Sync(\+T\+V\+M\+Context ctx, T\+V\+M\+Stream\+Handle stream)=0}{StreamSync(TVMContext ctx, TVMStreamHandle stream)=0}}]{\setlength{\rightskip}{0pt plus 5cm}virtual void tvm\+::runtime\+::\+Device\+A\+P\+I\+::\+Stream\+Sync (
+\begin{DoxyParamCaption}
+\item[{{\bf T\+V\+M\+Context}}]{ctx, }
+\item[{{\bf T\+V\+M\+Stream\+Handle}}]{stream}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [pure virtual]}}\hypertarget{classtvm_1_1runtime_1_1DeviceAPI_a359964ae5ad0fbdba18da1a0db1a7ad6}{}\label{classtvm_1_1runtime_1_1DeviceAPI_a359964ae5ad0fbdba18da1a0db1a7ad6}
+
+
+Synchronize the stream. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em ctx} & The context to perform operation. \\
+\hline
+{\em stream} & The stream to be sync. \\
+\hline
+\end{DoxyParams}
+\index{tvm\+::runtime\+::\+Device\+A\+PI@{tvm\+::runtime\+::\+Device\+A\+PI}!Sync\+Stream\+From\+To@{Sync\+Stream\+From\+To}}
+\index{Sync\+Stream\+From\+To@{Sync\+Stream\+From\+To}!tvm\+::runtime\+::\+Device\+A\+PI@{tvm\+::runtime\+::\+Device\+A\+PI}}
+\subsubsection[{\texorpdfstring{Sync\+Stream\+From\+To(\+T\+V\+M\+Context ctx, T\+V\+M\+Stream\+Handle event\+\_\+src, T\+V\+M\+Stream\+Handle event\+\_\+dst)}{SyncStreamFromTo(TVMContext ctx, TVMStreamHandle event_src, TVMStreamHandle event_dst)}}]{\setlength{\rightskip}{0pt plus 5cm}virtual void tvm\+::runtime\+::\+Device\+A\+P\+I\+::\+Sync\+Stream\+From\+To (
+\begin{DoxyParamCaption}
+\item[{{\bf T\+V\+M\+Context}}]{ctx, }
+\item[{{\bf T\+V\+M\+Stream\+Handle}}]{event\+\_\+src, }
+\item[{{\bf T\+V\+M\+Stream\+Handle}}]{event\+\_\+dst}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\hypertarget{classtvm_1_1runtime_1_1DeviceAPI_ac913e53e874729157e560efc7bc32420}{}\label{classtvm_1_1runtime_1_1DeviceAPI_ac913e53e874729157e560efc7bc32420}
+
+
+Synchronize 2 streams of execution. 
+
+An event is created in event\+\_\+src stream that the second then stream waits on. Neither event\+\_\+src or event\+\_\+dst need to be of the same device ID as the context, but they must be of the same device type.
+
+
+\begin{DoxyParams}{Parameters}
+{\em ctx} & The context of the streams. \\
+\hline
+{\em event\+\_\+src} & The source stream to synchronize. \\
+\hline
+{\em event\+\_\+dst} & The destination stream to synchronize. \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+include/tvm/runtime/\hyperlink{device__api_8h}{device\+\_\+api.\+h}\end{DoxyCompactItemize}

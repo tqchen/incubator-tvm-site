@@ -1,0 +1,212 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="namespacetvm_1_1runtime_1_1vm" kind="namespace" language="C++">
+    <compoundname>tvm::runtime::vm</compoundname>
+    <innerclass refid="classtvm_1_1runtime_1_1vm_1_1Closure" prot="public">tvm::runtime::vm::Closure</innerclass>
+    <innerclass refid="classtvm_1_1runtime_1_1vm_1_1ClosureObj" prot="public">tvm::runtime::vm::ClosureObj</innerclass>
+    <innerclass refid="classtvm_1_1runtime_1_1vm_1_1Executable" prot="public">tvm::runtime::vm::Executable</innerclass>
+    <innerclass refid="structtvm_1_1runtime_1_1vm_1_1Instruction" prot="public">tvm::runtime::vm::Instruction</innerclass>
+    <innerclass refid="classtvm_1_1runtime_1_1vm_1_1VirtualMachine" prot="public">tvm::runtime::vm::VirtualMachine</innerclass>
+    <innerclass refid="classtvm_1_1runtime_1_1vm_1_1VMClosure" prot="public">tvm::runtime::vm::VMClosure</innerclass>
+    <innerclass refid="classtvm_1_1runtime_1_1vm_1_1VMClosureObj" prot="public">tvm::runtime::vm::VMClosureObj</innerclass>
+    <innerclass refid="structtvm_1_1runtime_1_1vm_1_1VMFrame" prot="public">tvm::runtime::vm::VMFrame</innerclass>
+    <innerclass refid="structtvm_1_1runtime_1_1vm_1_1VMFunction" prot="public">tvm::runtime::vm::VMFunction</innerclass>
+      <sectiondef kind="enum">
+      <memberdef kind="enum" id="namespacetvm_1_1runtime_1_1vm_1a8d8d95ce8d629c7213f2f595917870ec" prot="public" static="no">
+        <name>Opcode</name>
+        <enumvalue id="namespacetvm_1_1runtime_1_1vm_1a8d8d95ce8d629c7213f2f595917870eca6bc362dbf494c61ea117fe3c71ca48a5" prot="public">
+          <name>Move</name>
+          <initializer>= 0U</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacetvm_1_1runtime_1_1vm_1a8d8d95ce8d629c7213f2f595917870ecaa4228a09dd66155de8e93a39245768bd" prot="public">
+          <name>Ret</name>
+          <initializer>= 1U</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacetvm_1_1runtime_1_1vm_1a8d8d95ce8d629c7213f2f595917870ecab9376e9e3c4d48f5e35a3f355ae1f74a" prot="public">
+          <name>Invoke</name>
+          <initializer>= 2U</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacetvm_1_1runtime_1_1vm_1a8d8d95ce8d629c7213f2f595917870eca46990b57941483ce17bb07e3af6da59c" prot="public">
+          <name>InvokeClosure</name>
+          <initializer>= 3U</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacetvm_1_1runtime_1_1vm_1a8d8d95ce8d629c7213f2f595917870eca97ad0208b167666da31720813abe1174" prot="public">
+          <name>InvokePacked</name>
+          <initializer>= 4U</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacetvm_1_1runtime_1_1vm_1a8d8d95ce8d629c7213f2f595917870eca2bcae1ed3af462c3c4533a22377a75ea" prot="public">
+          <name>AllocTensor</name>
+          <initializer>= 5U</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacetvm_1_1runtime_1_1vm_1a8d8d95ce8d629c7213f2f595917870ecac8086b44868c71384cfec25bf1f1a6e6" prot="public">
+          <name>AllocTensorReg</name>
+          <initializer>= 6U</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacetvm_1_1runtime_1_1vm_1a8d8d95ce8d629c7213f2f595917870ecaee7bac5c7a1354c4d644508d4d82380e" prot="public">
+          <name>AllocADT</name>
+          <initializer>= 7U</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacetvm_1_1runtime_1_1vm_1a8d8d95ce8d629c7213f2f595917870eca564a5812fad1ae9a2db0d77614c5d8bc" prot="public">
+          <name>AllocClosure</name>
+          <initializer>= 8U</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacetvm_1_1runtime_1_1vm_1a8d8d95ce8d629c7213f2f595917870ecad3e2f43779da90565fa9c24f9175dc04" prot="public">
+          <name>GetField</name>
+          <initializer>= 9U</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacetvm_1_1runtime_1_1vm_1a8d8d95ce8d629c7213f2f595917870eca786887572f6ef1c20f2d8177cb2f1639" prot="public">
+          <name>If</name>
+          <initializer>= 10U</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacetvm_1_1runtime_1_1vm_1a8d8d95ce8d629c7213f2f595917870eca68b393c7b4c9e1672b7a1a05161390f7" prot="public">
+          <name>LoadConst</name>
+          <initializer>= 11U</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacetvm_1_1runtime_1_1vm_1a8d8d95ce8d629c7213f2f595917870ecaae8fae3d74fdc80ef40995c3c6ca152e" prot="public">
+          <name>Goto</name>
+          <initializer>= 12U</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacetvm_1_1runtime_1_1vm_1a8d8d95ce8d629c7213f2f595917870ecabbfa589e414211911a8254ba7896b127" prot="public">
+          <name>GetTag</name>
+          <initializer>= 13U</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacetvm_1_1runtime_1_1vm_1a8d8d95ce8d629c7213f2f595917870eca9558cee150d88040130f7b86d8d5dc58" prot="public">
+          <name>LoadConsti</name>
+          <initializer>= 14U</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacetvm_1_1runtime_1_1vm_1a8d8d95ce8d629c7213f2f595917870eca882384ec38ce8d9582b57e70861730e4" prot="public">
+          <name>Fatal</name>
+          <initializer>= 15U</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacetvm_1_1runtime_1_1vm_1a8d8d95ce8d629c7213f2f595917870ecaa15cc1ca91f763a268e85bbc298987d7" prot="public">
+          <name>AllocStorage</name>
+          <initializer>= 16U</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para>An enumeration of Relay&apos;s opcodes. </para>        </briefdescription>
+        <detaileddescription>
+<para>The opcode is used to implement instruction as a tagged union. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/runtime/vm.h" line="98" column="1" bodyfile="include/tvm/runtime/vm.h" bodystart="98" bodyend="116"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="typedef">
+      <memberdef kind="typedef" id="namespacetvm_1_1runtime_1_1vm_1a3bbbf700719e9dc3dda2bc25210c18ae" prot="public" static="no">
+        <type>int64_t</type>
+        <definition>using tvm::runtime::vm::RegName = typedef int64_t</definition>
+        <argsstring></argsstring>
+        <name>RegName</name>
+        <briefdescription>
+<para>A register name. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/runtime/vm.h" line="86" column="1" bodyfile="include/tvm/runtime/vm.h" bodystart="86" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="namespacetvm_1_1runtime_1_1vm_1a3597867d2db714bf760876a23d6b7d3d" prot="public" static="no">
+        <type>int64_t</type>
+        <definition>using tvm::runtime::vm::Index = typedef int64_t</definition>
+        <argsstring></argsstring>
+        <name>Index</name>
+        <briefdescription>
+<para>An alias for the integer type used ubiquitously in the VM. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/runtime/vm.h" line="91" column="1" bodyfile="include/tvm/runtime/vm.h" bodystart="91" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="var">
+      <memberdef kind="variable" id="namespacetvm_1_1runtime_1_1vm_1a29161815faff1b5a221c0dae1c87bb4e" prot="public" static="no" mutable="no">
+        <type>constexpr uint64_t</type>
+        <definition>constexpr uint64_t tvm::runtime::vm::kTVMNDArrayListMagic</definition>
+        <argsstring></argsstring>
+        <name>kTVMNDArrayListMagic</name>
+        <initializer>= 0xF7E58D4F05049CB7</initializer>
+        <briefdescription>
+<para>Magic number for <ref refid="classtvm_1_1runtime_1_1NDArray" kindref="compound">NDArray</ref> list file. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/runtime/vm.h" line="83" column="1" bodyfile="include/tvm/runtime/vm.h" bodystart="83" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="include/tvm/runtime/vm.h" line="39" column="1"/>
+  </compounddef>
+</doxygen>

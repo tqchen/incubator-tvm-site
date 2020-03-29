@@ -1,0 +1,106 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="unionTVMValue" kind="union" language="C++" prot="public">
+    <compoundname>TVMValue</compoundname>
+    <includes refid="c__runtime__api_8h" local="no">c_runtime_api.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="unionTVMValue_1aa1c40fa9e74fbf97541fd9735062c4cc" prot="public" static="no" mutable="no">
+        <type>int64_t</type>
+        <definition>int64_t TVMValue::v_int64</definition>
+        <argsstring></argsstring>
+        <name>v_int64</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/runtime/c_runtime_api.h" line="133" column="1" bodyfile="include/tvm/runtime/c_runtime_api.h" bodystart="133" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="unionTVMValue_1abefae93ebafe8818c0060df2bf31e6e5" prot="public" static="no" mutable="no">
+        <type>double</type>
+        <definition>double TVMValue::v_float64</definition>
+        <argsstring></argsstring>
+        <name>v_float64</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/runtime/c_runtime_api.h" line="134" column="1" bodyfile="include/tvm/runtime/c_runtime_api.h" bodystart="134" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="unionTVMValue_1a3b172297f9f7bf2f5391f7d87309cd44" prot="public" static="no" mutable="no">
+        <type>void *</type>
+        <definition>void* TVMValue::v_handle</definition>
+        <argsstring></argsstring>
+        <name>v_handle</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/runtime/c_runtime_api.h" line="135" column="1" bodyfile="include/tvm/runtime/c_runtime_api.h" bodystart="135" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="unionTVMValue_1ab0e4dea6ca370fe7a7d22f4fc23a4f47" prot="public" static="no" mutable="no">
+        <type>const char *</type>
+        <definition>const char* TVMValue::v_str</definition>
+        <argsstring></argsstring>
+        <name>v_str</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/runtime/c_runtime_api.h" line="136" column="1" bodyfile="include/tvm/runtime/c_runtime_api.h" bodystart="136" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="unionTVMValue_1a75af73d1e39bc5de7073a008d44b0d16" prot="public" static="no" mutable="no">
+        <type>DLDataType</type>
+        <definition>DLDataType TVMValue::v_type</definition>
+        <argsstring></argsstring>
+        <name>v_type</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/runtime/c_runtime_api.h" line="137" column="1" bodyfile="include/tvm/runtime/c_runtime_api.h" bodystart="137" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="unionTVMValue_1a93e4b1809f77d08e5fb68384cd4c9088" prot="public" static="no" mutable="no">
+        <type><ref refid="c__runtime__api_8h_1a9363bb701f16ce5bbb381f2a013d25b4" kindref="member">TVMContext</ref></type>
+        <definition>TVMContext TVMValue::v_ctx</definition>
+        <argsstring></argsstring>
+        <name>v_ctx</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/runtime/c_runtime_api.h" line="138" column="1" bodyfile="include/tvm/runtime/c_runtime_api.h" bodystart="138" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Union type of values being passed through API and function calls. </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="7337">
+        <label>TVMValue</label>
+        <link refid="unionTVMValue"/>
+      </node>
+    </collaborationgraph>
+    <location file="include/tvm/runtime/c_runtime_api.h" line="132" column="1" bodyfile="include/tvm/runtime/c_runtime_api.h" bodystart="132" bodyend="139"/>
+    <listofallmembers>
+      <member refid="unionTVMValue_1a93e4b1809f77d08e5fb68384cd4c9088" prot="public" virt="non-virtual"><scope>TVMValue</scope><name>v_ctx</name></member>
+      <member refid="unionTVMValue_1abefae93ebafe8818c0060df2bf31e6e5" prot="public" virt="non-virtual"><scope>TVMValue</scope><name>v_float64</name></member>
+      <member refid="unionTVMValue_1a3b172297f9f7bf2f5391f7d87309cd44" prot="public" virt="non-virtual"><scope>TVMValue</scope><name>v_handle</name></member>
+      <member refid="unionTVMValue_1aa1c40fa9e74fbf97541fd9735062c4cc" prot="public" virt="non-virtual"><scope>TVMValue</scope><name>v_int64</name></member>
+      <member refid="unionTVMValue_1ab0e4dea6ca370fe7a7d22f4fc23a4f47" prot="public" virt="non-virtual"><scope>TVMValue</scope><name>v_str</name></member>
+      <member refid="unionTVMValue_1a75af73d1e39bc5de7073a008d44b0d16" prot="public" virt="non-virtual"><scope>TVMValue</scope><name>v_type</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

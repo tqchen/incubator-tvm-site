@@ -1,0 +1,283 @@
+\hypertarget{classtvm_1_1te_1_1ComputeOpNode}{}\section{tvm\+:\+:te\+:\+:Compute\+Op\+Node Class Reference}
+\label{classtvm_1_1te_1_1ComputeOpNode}\index{tvm\+::te\+::\+Compute\+Op\+Node@{tvm\+::te\+::\+Compute\+Op\+Node}}
+
+
+A Compute op that compute a tensor on certain domain.  
+
+
+
+
+{\ttfamily \#include $<$operation.\+h$>$}
+
+
+
+Inheritance diagram for tvm\+:\+:te\+:\+:Compute\+Op\+Node\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{classtvm_1_1te_1_1ComputeOpNode__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for tvm\+:\+:te\+:\+:Compute\+Op\+Node\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{classtvm_1_1te_1_1ComputeOpNode__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classtvm_1_1te_1_1ComputeOpNode_a45e42c63bd2ba62b6f85b9b79e0b9361}{Compute\+Op\+Node} ()
+\begin{DoxyCompactList}\small\item\em constructor \end{DoxyCompactList}\item 
+int \hyperlink{classtvm_1_1te_1_1ComputeOpNode_ac4b034b11601367864722954c1b7c7fe}{num\+\_\+outputs} () const final
+\item 
+\hyperlink{namespacetvm_a41918af1a1dc386388639a9d3ad06c5d}{Data\+Type} \hyperlink{classtvm_1_1te_1_1ComputeOpNode_a308edf04ade47c1365c9f8460858fdd6}{output\+\_\+dtype} (size\+\_\+t i) const final
+\begin{DoxyCompactList}\small\item\em Get data type. i-\/th output tensor. \end{DoxyCompactList}\item 
+\hyperlink{classtvm_1_1Array}{Array}$<$ \hyperlink{classtvm_1_1te_1_1Tensor}{Tensor} $>$ \hyperlink{classtvm_1_1te_1_1ComputeOpNode_a9a2ce85d831b05fd11a525647132b81f}{Input\+Tensors} () const final
+\begin{DoxyCompactList}\small\item\em List all the input Tensors. \end{DoxyCompactList}\item 
+\hyperlink{classtvm_1_1te_1_1Operation}{Operation} \hyperlink{classtvm_1_1te_1_1ComputeOpNode_abd13cd58b1d9754ad708fe47e9379b33}{Replace\+Inputs} (const \hyperlink{classtvm_1_1te_1_1Operation}{Operation} \&self, const std\+::unordered\+\_\+map$<$ \hyperlink{classtvm_1_1te_1_1Tensor}{Tensor}, \hyperlink{classtvm_1_1te_1_1Tensor}{Tensor} $>$ \&rmap) const final
+\begin{DoxyCompactList}\small\item\em Replace the input of the operation by pattern specified by rmap. \end{DoxyCompactList}\item 
+void \hyperlink{classtvm_1_1te_1_1ComputeOpNode_a316aeec37888f4f4e0906743b1a7f0b5}{Prop\+Bound\+To\+Inputs} (const \hyperlink{classtvm_1_1te_1_1Operation}{Operation} \&self, \hyperlink{classtvm_1_1arith_1_1Analyzer}{arith\+::\+Analyzer} $\ast$analyzer, const std\+::unordered\+\_\+map$<$ const \hyperlink{classtvm_1_1tir_1_1VarNode}{Var\+Node} $\ast$, Int\+Set $>$ \&dom\+\_\+map, std\+::unordered\+\_\+map$<$ \hyperlink{classtvm_1_1te_1_1Tensor}{Tensor}, \hyperlink{structtvm_1_1te_1_1TensorDom}{Tensor\+Dom} $>$ $\ast$out\+\_\+dom\+\_\+map) const final
+\begin{DoxyCompactList}\small\item\em Propagate the bounds to inputs. \end{DoxyCompactList}\item 
+\hyperlink{classtvm_1_1tir_1_1Stmt}{Stmt} \hyperlink{classtvm_1_1te_1_1ComputeOpNode_aac1774ef277c75bfdd8f6fdfe2aab4ab}{Build\+Provide} (const \hyperlink{classtvm_1_1te_1_1Stage}{Stage} \&stage, const std\+::unordered\+\_\+map$<$ \hyperlink{classtvm_1_1tir_1_1IterVar}{Iter\+Var}, \hyperlink{classtvm_1_1Range}{Range} $>$ \&dom\+\_\+map, bool debug\+\_\+keep\+\_\+trivial\+\_\+loop) const final
+\begin{DoxyCompactList}\small\item\em Build the statement that provide the output tensors. \end{DoxyCompactList}\item 
+size\+\_\+t \hyperlink{classtvm_1_1te_1_1ComputeOpNode_adafbc09da5da3629aef87a8e5145bdec}{num\+\_\+schedulable\+\_\+dims} () const final
+\item 
+void \hyperlink{classtvm_1_1te_1_1ComputeOpNode_a76272ae11403d194fb01121f26680fd0}{Visit\+Attrs} (\hyperlink{classtvm_1_1AttrVisitor}{Attr\+Visitor} $\ast$v)
+\item 
+\hyperlink{classtvm_1_1te_1_1ComputeOpNode_a2788e8b3cfe7863f6fe44711e92bfd34}{T\+V\+M\+\_\+\+D\+E\+C\+L\+A\+R\+E\+\_\+\+F\+I\+N\+A\+L\+\_\+\+O\+B\+J\+E\+C\+T\+\_\+\+I\+N\+FO} (\hyperlink{classtvm_1_1te_1_1ComputeOpNode}{Compute\+Op\+Node}, \hyperlink{classtvm_1_1te_1_1BaseComputeOpNode}{Base\+Compute\+Op\+Node})
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \hyperlink{classtvm_1_1te_1_1Operation}{Operation} \hyperlink{classtvm_1_1te_1_1ComputeOpNode_a1e2b9193508377af45861422c6045ad8}{make} (std\+::string \hyperlink{classtvm_1_1te_1_1OperationNode_ad2fd6f140257f7b3c311f88374fa74d2}{name}, std\+::string \hyperlink{classtvm_1_1te_1_1OperationNode_ae6ac4336e7dc2df84f128fc97a6cdb9b}{tag}, \hyperlink{classtvm_1_1Map}{Map}$<$ std\+::string, Object\+Ref $>$ \hyperlink{classtvm_1_1te_1_1OperationNode_a009ebd67a59953ec9a587f9724afd538}{attrs}, \hyperlink{classtvm_1_1Array}{Array}$<$ \hyperlink{classtvm_1_1tir_1_1IterVar}{Iter\+Var} $>$ \hyperlink{classtvm_1_1te_1_1BaseComputeOpNode_a21617a643897727c51ded2b7260df4c3}{axis}, \hyperlink{classtvm_1_1Array}{Array}$<$ \hyperlink{classtvm_1_1PrimExpr}{Prim\+Expr} $>$ \hyperlink{classtvm_1_1te_1_1ComputeOpNode_a1486068943f10fbf785ede621c15ed74}{body})
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classtvm_1_1Array}{Array}$<$ \hyperlink{classtvm_1_1PrimExpr}{Prim\+Expr} $>$ \hyperlink{classtvm_1_1te_1_1ComputeOpNode_a1486068943f10fbf785ede621c15ed74}{body}
+\begin{DoxyCompactList}\small\item\em the compute expression \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static constexpr const char $\ast$ \hyperlink{classtvm_1_1te_1_1ComputeOpNode_a6191241d4f2f2838ec1dfed9a1a7b7f5}{\+\_\+type\+\_\+key} = \char`\"{}Compute\+Op\char`\"{}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+A Compute op that compute a tensor on certain domain. 
+
+\subsection{Constructor \& Destructor Documentation}
+\index{tvm\+::te\+::\+Compute\+Op\+Node@{tvm\+::te\+::\+Compute\+Op\+Node}!Compute\+Op\+Node@{Compute\+Op\+Node}}
+\index{Compute\+Op\+Node@{Compute\+Op\+Node}!tvm\+::te\+::\+Compute\+Op\+Node@{tvm\+::te\+::\+Compute\+Op\+Node}}
+\subsubsection[{\texorpdfstring{Compute\+Op\+Node()}{ComputeOpNode()}}]{\setlength{\rightskip}{0pt plus 5cm}tvm\+::te\+::\+Compute\+Op\+Node\+::\+Compute\+Op\+Node (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classtvm_1_1te_1_1ComputeOpNode_a45e42c63bd2ba62b6f85b9b79e0b9361}{}\label{classtvm_1_1te_1_1ComputeOpNode_a45e42c63bd2ba62b6f85b9b79e0b9361}
+
+
+constructor 
+
+
+
+\subsection{Member Function Documentation}
+\index{tvm\+::te\+::\+Compute\+Op\+Node@{tvm\+::te\+::\+Compute\+Op\+Node}!Build\+Provide@{Build\+Provide}}
+\index{Build\+Provide@{Build\+Provide}!tvm\+::te\+::\+Compute\+Op\+Node@{tvm\+::te\+::\+Compute\+Op\+Node}}
+\subsubsection[{\texorpdfstring{Build\+Provide(const Stage \&stage, const std\+::unordered\+\_\+map$<$ Iter\+Var, Range $>$ \&dom\+\_\+map, bool debug\+\_\+keep\+\_\+trivial\+\_\+loop) const final}{BuildProvide(const Stage &stage, const std::unordered_map< IterVar, Range > &dom_map, bool debug_keep_trivial_loop) const final}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Stmt} tvm\+::te\+::\+Compute\+Op\+Node\+::\+Build\+Provide (
+\begin{DoxyParamCaption}
+\item[{const {\bf Stage} \&}]{stage, }
+\item[{const std\+::unordered\+\_\+map$<$ {\bf Iter\+Var}, {\bf Range} $>$ \&}]{dom\+\_\+map, }
+\item[{bool}]{debug\+\_\+keep\+\_\+trivial\+\_\+loop}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [final]}, {\ttfamily [virtual]}}\hypertarget{classtvm_1_1te_1_1ComputeOpNode_aac1774ef277c75bfdd8f6fdfe2aab4ab}{}\label{classtvm_1_1te_1_1ComputeOpNode_aac1774ef277c75bfdd8f6fdfe2aab4ab}
+
+
+Build the statement that provide the output tensors. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em stage} & The schedule stage of the op. \\
+\hline
+{\em dom\+\_\+map} & The domain map of all iteration domains. \\
+\hline
+{\em debug\+\_\+keep\+\_\+trivial\+\_\+loop} & Whether keep trivial loops with extent of 1 \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A statement that add production and wraps consumer. 
+\end{DoxyReturn}
+
+
+Implements \hyperlink{classtvm_1_1te_1_1OperationNode_a0a4a33f450e0e0890f59af9464c9015f}{tvm\+::te\+::\+Operation\+Node}.
+
+\index{tvm\+::te\+::\+Compute\+Op\+Node@{tvm\+::te\+::\+Compute\+Op\+Node}!Input\+Tensors@{Input\+Tensors}}
+\index{Input\+Tensors@{Input\+Tensors}!tvm\+::te\+::\+Compute\+Op\+Node@{tvm\+::te\+::\+Compute\+Op\+Node}}
+\subsubsection[{\texorpdfstring{Input\+Tensors() const final}{InputTensors() const final}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Array}$<${\bf Tensor}$>$ tvm\+::te\+::\+Compute\+Op\+Node\+::\+Input\+Tensors (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [final]}, {\ttfamily [virtual]}}\hypertarget{classtvm_1_1te_1_1ComputeOpNode_a9a2ce85d831b05fd11a525647132b81f}{}\label{classtvm_1_1te_1_1ComputeOpNode_a9a2ce85d831b05fd11a525647132b81f}
+
+
+List all the input Tensors. 
+
+\begin{DoxyReturn}{Returns}
+List of input tensors. 
+\end{DoxyReturn}
+
+
+Implements \hyperlink{classtvm_1_1te_1_1OperationNode_a9675fbb905d62de5b86624388acec4b1}{tvm\+::te\+::\+Operation\+Node}.
+
+\index{tvm\+::te\+::\+Compute\+Op\+Node@{tvm\+::te\+::\+Compute\+Op\+Node}!make@{make}}
+\index{make@{make}!tvm\+::te\+::\+Compute\+Op\+Node@{tvm\+::te\+::\+Compute\+Op\+Node}}
+\subsubsection[{\texorpdfstring{make(std\+::string name, std\+::string tag, Map$<$ std\+::string, Object\+Ref $>$ attrs, Array$<$ Iter\+Var $>$ axis, Array$<$ Prim\+Expr $>$ body)}{make(std::string name, std::string tag, Map< std::string, ObjectRef > attrs, Array< IterVar > axis, Array< PrimExpr > body)}}]{\setlength{\rightskip}{0pt plus 5cm}static {\bf Operation} tvm\+::te\+::\+Compute\+Op\+Node\+::make (
+\begin{DoxyParamCaption}
+\item[{std\+::string}]{name, }
+\item[{std\+::string}]{tag, }
+\item[{{\bf Map}$<$ std\+::string, Object\+Ref $>$}]{attrs, }
+\item[{{\bf Array}$<$ {\bf Iter\+Var} $>$}]{axis, }
+\item[{{\bf Array}$<$ {\bf Prim\+Expr} $>$}]{body}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}\hypertarget{classtvm_1_1te_1_1ComputeOpNode_a1e2b9193508377af45861422c6045ad8}{}\label{classtvm_1_1te_1_1ComputeOpNode_a1e2b9193508377af45861422c6045ad8}
+\index{tvm\+::te\+::\+Compute\+Op\+Node@{tvm\+::te\+::\+Compute\+Op\+Node}!num\+\_\+outputs@{num\+\_\+outputs}}
+\index{num\+\_\+outputs@{num\+\_\+outputs}!tvm\+::te\+::\+Compute\+Op\+Node@{tvm\+::te\+::\+Compute\+Op\+Node}}
+\subsubsection[{\texorpdfstring{num\+\_\+outputs() const final}{num_outputs() const final}}]{\setlength{\rightskip}{0pt plus 5cm}int tvm\+::te\+::\+Compute\+Op\+Node\+::num\+\_\+outputs (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [final]}, {\ttfamily [virtual]}}\hypertarget{classtvm_1_1te_1_1ComputeOpNode_ac4b034b11601367864722954c1b7c7fe}{}\label{classtvm_1_1te_1_1ComputeOpNode_ac4b034b11601367864722954c1b7c7fe}
+\begin{DoxyReturn}{Returns}
+the number of outputs of this function 
+\end{DoxyReturn}
+
+
+Implements \hyperlink{classtvm_1_1tir_1_1FunctionBaseNode_a86d8a47eb472945b01ab508c1ff94930}{tvm\+::tir\+::\+Function\+Base\+Node}.
+
+\index{tvm\+::te\+::\+Compute\+Op\+Node@{tvm\+::te\+::\+Compute\+Op\+Node}!num\+\_\+schedulable\+\_\+dims@{num\+\_\+schedulable\+\_\+dims}}
+\index{num\+\_\+schedulable\+\_\+dims@{num\+\_\+schedulable\+\_\+dims}!tvm\+::te\+::\+Compute\+Op\+Node@{tvm\+::te\+::\+Compute\+Op\+Node}}
+\subsubsection[{\texorpdfstring{num\+\_\+schedulable\+\_\+dims() const final}{num_schedulable_dims() const final}}]{\setlength{\rightskip}{0pt plus 5cm}size\+\_\+t tvm\+::te\+::\+Compute\+Op\+Node\+::num\+\_\+schedulable\+\_\+dims (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [final]}, {\ttfamily [virtual]}}\hypertarget{classtvm_1_1te_1_1ComputeOpNode_adafbc09da5da3629aef87a8e5145bdec}{}\label{classtvm_1_1te_1_1ComputeOpNode_adafbc09da5da3629aef87a8e5145bdec}
+
+
+Implements \hyperlink{classtvm_1_1te_1_1BaseComputeOpNode_afff057b90df28567ab7b2ba19a05b17c}{tvm\+::te\+::\+Base\+Compute\+Op\+Node}.
+
+\index{tvm\+::te\+::\+Compute\+Op\+Node@{tvm\+::te\+::\+Compute\+Op\+Node}!output\+\_\+dtype@{output\+\_\+dtype}}
+\index{output\+\_\+dtype@{output\+\_\+dtype}!tvm\+::te\+::\+Compute\+Op\+Node@{tvm\+::te\+::\+Compute\+Op\+Node}}
+\subsubsection[{\texorpdfstring{output\+\_\+dtype(size\+\_\+t i) const final}{output_dtype(size_t i) const final}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Data\+Type} tvm\+::te\+::\+Compute\+Op\+Node\+::output\+\_\+dtype (
+\begin{DoxyParamCaption}
+\item[{size\+\_\+t}]{i}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [final]}, {\ttfamily [virtual]}}\hypertarget{classtvm_1_1te_1_1ComputeOpNode_a308edf04ade47c1365c9f8460858fdd6}{}\label{classtvm_1_1te_1_1ComputeOpNode_a308edf04ade47c1365c9f8460858fdd6}
+
+
+Get data type. i-\/th output tensor. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em i} & The output index. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+type of i-\/th output. 
+\end{DoxyReturn}
+
+
+Implements \hyperlink{classtvm_1_1te_1_1OperationNode_a6bcb7f0c177c642d82a5a200d13369f0}{tvm\+::te\+::\+Operation\+Node}.
+
+\index{tvm\+::te\+::\+Compute\+Op\+Node@{tvm\+::te\+::\+Compute\+Op\+Node}!Prop\+Bound\+To\+Inputs@{Prop\+Bound\+To\+Inputs}}
+\index{Prop\+Bound\+To\+Inputs@{Prop\+Bound\+To\+Inputs}!tvm\+::te\+::\+Compute\+Op\+Node@{tvm\+::te\+::\+Compute\+Op\+Node}}
+\subsubsection[{\texorpdfstring{Prop\+Bound\+To\+Inputs(const Operation \&self, arith\+::\+Analyzer $\ast$analyzer, const std\+::unordered\+\_\+map$<$ const Var\+Node $\ast$, Int\+Set $>$ \&dom\+\_\+map, std\+::unordered\+\_\+map$<$ Tensor, Tensor\+Dom $>$ $\ast$out\+\_\+dom\+\_\+map) const final}{PropBoundToInputs(const Operation &self, arith::Analyzer *analyzer, const std::unordered_map< const VarNode *, IntSet > &dom_map, std::unordered_map< Tensor, TensorDom > *out_dom_map) const final}}]{\setlength{\rightskip}{0pt plus 5cm}void tvm\+::te\+::\+Compute\+Op\+Node\+::\+Prop\+Bound\+To\+Inputs (
+\begin{DoxyParamCaption}
+\item[{const {\bf Operation} \&}]{self, }
+\item[{{\bf arith\+::\+Analyzer} $\ast$}]{analyzer, }
+\item[{const std\+::unordered\+\_\+map$<$ const {\bf Var\+Node} $\ast$, Int\+Set $>$ \&}]{dom\+\_\+map, }
+\item[{std\+::unordered\+\_\+map$<$ {\bf Tensor}, {\bf Tensor\+Dom} $>$ $\ast$}]{out\+\_\+dom\+\_\+map}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [final]}, {\ttfamily [virtual]}}\hypertarget{classtvm_1_1te_1_1ComputeOpNode_a316aeec37888f4f4e0906743b1a7f0b5}{}\label{classtvm_1_1te_1_1ComputeOpNode_a316aeec37888f4f4e0906743b1a7f0b5}
+
+
+Propagate the bounds to inputs. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em self} & The reference to self. \\
+\hline
+{\em analyzer} & The analyzer to be used in the function. \\
+\hline
+{\em dom\+\_\+map} & the domain map of Variables(corresponds to root\+\_\+iter\+\_\+vars) \\
+\hline
+{\em out\+\_\+dom\+\_\+map} & The output domain. The function is only asked to fill the bounds for Tensors that is already in the out\+\_\+dom\+\_\+map \\
+\hline
+\end{DoxyParams}
+
+
+Implements \hyperlink{classtvm_1_1te_1_1OperationNode_a3c32a93264e0d627d8389b703edcaf49}{tvm\+::te\+::\+Operation\+Node}.
+
+\index{tvm\+::te\+::\+Compute\+Op\+Node@{tvm\+::te\+::\+Compute\+Op\+Node}!Replace\+Inputs@{Replace\+Inputs}}
+\index{Replace\+Inputs@{Replace\+Inputs}!tvm\+::te\+::\+Compute\+Op\+Node@{tvm\+::te\+::\+Compute\+Op\+Node}}
+\subsubsection[{\texorpdfstring{Replace\+Inputs(const Operation \&self, const std\+::unordered\+\_\+map$<$ Tensor, Tensor $>$ \&rmap) const final}{ReplaceInputs(const Operation &self, const std::unordered_map< Tensor, Tensor > &rmap) const final}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Operation} tvm\+::te\+::\+Compute\+Op\+Node\+::\+Replace\+Inputs (
+\begin{DoxyParamCaption}
+\item[{const {\bf Operation} \&}]{self, }
+\item[{const std\+::unordered\+\_\+map$<$ {\bf Tensor}, {\bf Tensor} $>$ \&}]{rmap}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [final]}, {\ttfamily [virtual]}}\hypertarget{classtvm_1_1te_1_1ComputeOpNode_abd13cd58b1d9754ad708fe47e9379b33}{}\label{classtvm_1_1te_1_1ComputeOpNode_abd13cd58b1d9754ad708fe47e9379b33}
+
+
+Replace the input of the operation by pattern specified by rmap. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em self} & The reference to self. \\
+\hline
+{\em rmap} & The replacement map. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+self if nothing is replaced, otherwise return replaced op. 
+\end{DoxyReturn}
+
+
+Implements \hyperlink{classtvm_1_1te_1_1OperationNode_a9a876a433cfbe32215c3802ef520016e}{tvm\+::te\+::\+Operation\+Node}.
+
+\index{tvm\+::te\+::\+Compute\+Op\+Node@{tvm\+::te\+::\+Compute\+Op\+Node}!T\+V\+M\+\_\+\+D\+E\+C\+L\+A\+R\+E\+\_\+\+F\+I\+N\+A\+L\+\_\+\+O\+B\+J\+E\+C\+T\+\_\+\+I\+N\+FO@{T\+V\+M\+\_\+\+D\+E\+C\+L\+A\+R\+E\+\_\+\+F\+I\+N\+A\+L\+\_\+\+O\+B\+J\+E\+C\+T\+\_\+\+I\+N\+FO}}
+\index{T\+V\+M\+\_\+\+D\+E\+C\+L\+A\+R\+E\+\_\+\+F\+I\+N\+A\+L\+\_\+\+O\+B\+J\+E\+C\+T\+\_\+\+I\+N\+FO@{T\+V\+M\+\_\+\+D\+E\+C\+L\+A\+R\+E\+\_\+\+F\+I\+N\+A\+L\+\_\+\+O\+B\+J\+E\+C\+T\+\_\+\+I\+N\+FO}!tvm\+::te\+::\+Compute\+Op\+Node@{tvm\+::te\+::\+Compute\+Op\+Node}}
+\subsubsection[{\texorpdfstring{T\+V\+M\+\_\+\+D\+E\+C\+L\+A\+R\+E\+\_\+\+F\+I\+N\+A\+L\+\_\+\+O\+B\+J\+E\+C\+T\+\_\+\+I\+N\+F\+O(\+Compute\+Op\+Node, Base\+Compute\+Op\+Node)}{TVM_DECLARE_FINAL_OBJECT_INFO(ComputeOpNode, BaseComputeOpNode)}}]{\setlength{\rightskip}{0pt plus 5cm}tvm\+::te\+::\+Compute\+Op\+Node\+::\+T\+V\+M\+\_\+\+D\+E\+C\+L\+A\+R\+E\+\_\+\+F\+I\+N\+A\+L\+\_\+\+O\+B\+J\+E\+C\+T\+\_\+\+I\+N\+FO (
+\begin{DoxyParamCaption}
+\item[{{\bf Compute\+Op\+Node}}]{, }
+\item[{{\bf Base\+Compute\+Op\+Node}}]{}
+\end{DoxyParamCaption}
+)}\hypertarget{classtvm_1_1te_1_1ComputeOpNode_a2788e8b3cfe7863f6fe44711e92bfd34}{}\label{classtvm_1_1te_1_1ComputeOpNode_a2788e8b3cfe7863f6fe44711e92bfd34}
+\index{tvm\+::te\+::\+Compute\+Op\+Node@{tvm\+::te\+::\+Compute\+Op\+Node}!Visit\+Attrs@{Visit\+Attrs}}
+\index{Visit\+Attrs@{Visit\+Attrs}!tvm\+::te\+::\+Compute\+Op\+Node@{tvm\+::te\+::\+Compute\+Op\+Node}}
+\subsubsection[{\texorpdfstring{Visit\+Attrs(\+Attr\+Visitor $\ast$v)}{VisitAttrs(AttrVisitor *v)}}]{\setlength{\rightskip}{0pt plus 5cm}void tvm\+::te\+::\+Compute\+Op\+Node\+::\+Visit\+Attrs (
+\begin{DoxyParamCaption}
+\item[{{\bf Attr\+Visitor} $\ast$}]{v}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classtvm_1_1te_1_1ComputeOpNode_a76272ae11403d194fb01121f26680fd0}{}\label{classtvm_1_1te_1_1ComputeOpNode_a76272ae11403d194fb01121f26680fd0}
+
+
+\subsection{Member Data Documentation}
+\index{tvm\+::te\+::\+Compute\+Op\+Node@{tvm\+::te\+::\+Compute\+Op\+Node}!\+\_\+type\+\_\+key@{\+\_\+type\+\_\+key}}
+\index{\+\_\+type\+\_\+key@{\+\_\+type\+\_\+key}!tvm\+::te\+::\+Compute\+Op\+Node@{tvm\+::te\+::\+Compute\+Op\+Node}}
+\subsubsection[{\texorpdfstring{\+\_\+type\+\_\+key}{_type_key}}]{\setlength{\rightskip}{0pt plus 5cm}constexpr const char$\ast$ tvm\+::te\+::\+Compute\+Op\+Node\+::\+\_\+type\+\_\+key = \char`\"{}Compute\+Op\char`\"{}\hspace{0.3cm}{\ttfamily [static]}}\hypertarget{classtvm_1_1te_1_1ComputeOpNode_a6191241d4f2f2838ec1dfed9a1a7b7f5}{}\label{classtvm_1_1te_1_1ComputeOpNode_a6191241d4f2f2838ec1dfed9a1a7b7f5}
+\index{tvm\+::te\+::\+Compute\+Op\+Node@{tvm\+::te\+::\+Compute\+Op\+Node}!body@{body}}
+\index{body@{body}!tvm\+::te\+::\+Compute\+Op\+Node@{tvm\+::te\+::\+Compute\+Op\+Node}}
+\subsubsection[{\texorpdfstring{body}{body}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Array}$<${\bf Prim\+Expr}$>$ tvm\+::te\+::\+Compute\+Op\+Node\+::body}\hypertarget{classtvm_1_1te_1_1ComputeOpNode_a1486068943f10fbf785ede621c15ed74}{}\label{classtvm_1_1te_1_1ComputeOpNode_a1486068943f10fbf785ede621c15ed74}
+
+
+the compute expression 
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+include/tvm/te/\hyperlink{operation_8h}{operation.\+h}\end{DoxyCompactItemize}

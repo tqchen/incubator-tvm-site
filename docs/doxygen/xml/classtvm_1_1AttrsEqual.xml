@@ -1,0 +1,233 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="classtvm_1_1AttrsEqual" kind="class" language="C++" prot="public">
+    <compoundname>tvm::AttrsEqual</compoundname>
+    <includes refid="ir_2attrs_8h" local="no">attrs.h</includes>
+      <sectiondef kind="friend">
+      <memberdef kind="friend" id="classtvm_1_1AttrsEqual_1a82543680d85e663c8085c06ccc229827" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>friend class</type>
+        <definition>friend class AttrsEqualHandler</definition>
+        <argsstring></argsstring>
+        <name>AttrsEqualHandler</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/ir/attrs.h" line="178" column="1" bodyfile="include/tvm/ir/attrs.h" bodystart="178" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="protected-attrib">
+      <memberdef kind="variable" id="classtvm_1_1AttrsEqual_1a8296ba912da1568dca506f079f0ab6c9" prot="protected" static="no" mutable="no">
+        <type><ref refid="classtvm_1_1AttrsEqual_1a82543680d85e663c8085c06ccc229827" kindref="member">AttrsEqualHandler</ref> *</type>
+        <definition>AttrsEqualHandler* tvm::AttrsEqual::handler_</definition>
+        <argsstring></argsstring>
+        <name>handler_</name>
+        <initializer>{nullptr}</initializer>
+        <briefdescription>
+<para>internal handle. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/ir/attrs.h" line="180" column="1" bodyfile="include/tvm/ir/attrs.h" bodystart="180" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classtvm_1_1AttrsEqual_1af65f9cf21d8c4355388d7e54d0bdb1ef" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool tvm::AttrsEqual::operator()</definition>
+        <argsstring>(const double &amp;lhs, const double &amp;rhs) const </argsstring>
+        <name>operator()</name>
+        <param>
+          <type>const double &amp;</type>
+          <declname>lhs</declname>
+        </param>
+        <param>
+          <type>const double &amp;</type>
+          <declname>rhs</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/ir/attrs.h" line="148" column="1" bodyfile="include/tvm/ir/attrs.h" bodystart="148" bodyend="154"/>
+      </memberdef>
+      <memberdef kind="function" id="classtvm_1_1AttrsEqual_1a93b456b86566cac5b319db9eea0ea7f1" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool tvm::AttrsEqual::operator()</definition>
+        <argsstring>(const int64_t &amp;lhs, const int64_t &amp;rhs) const </argsstring>
+        <name>operator()</name>
+        <param>
+          <type>const int64_t &amp;</type>
+          <declname>lhs</declname>
+        </param>
+        <param>
+          <type>const int64_t &amp;</type>
+          <declname>rhs</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/ir/attrs.h" line="156" column="1" bodyfile="include/tvm/ir/attrs.h" bodystart="156" bodyend="158"/>
+      </memberdef>
+      <memberdef kind="function" id="classtvm_1_1AttrsEqual_1a644f5e9603108f79b65cdb4753e38b6a" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool tvm::AttrsEqual::operator()</definition>
+        <argsstring>(const uint64_t &amp;lhs, const uint64_t &amp;rhs) const </argsstring>
+        <name>operator()</name>
+        <param>
+          <type>const uint64_t &amp;</type>
+          <declname>lhs</declname>
+        </param>
+        <param>
+          <type>const uint64_t &amp;</type>
+          <declname>rhs</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/ir/attrs.h" line="159" column="1" bodyfile="include/tvm/ir/attrs.h" bodystart="159" bodyend="161"/>
+      </memberdef>
+      <memberdef kind="function" id="classtvm_1_1AttrsEqual_1a9038da9b1c4cc4216de13dc30e45a2f7" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool tvm::AttrsEqual::operator()</definition>
+        <argsstring>(const int &amp;lhs, const int &amp;rhs) const </argsstring>
+        <name>operator()</name>
+        <param>
+          <type>const int &amp;</type>
+          <declname>lhs</declname>
+        </param>
+        <param>
+          <type>const int &amp;</type>
+          <declname>rhs</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/ir/attrs.h" line="162" column="1" bodyfile="include/tvm/ir/attrs.h" bodystart="162" bodyend="164"/>
+      </memberdef>
+      <memberdef kind="function" id="classtvm_1_1AttrsEqual_1abf0d990a522127ceb3d0b0badd5e4dc8" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool tvm::AttrsEqual::operator()</definition>
+        <argsstring>(const bool &amp;lhs, const bool &amp;rhs) const </argsstring>
+        <name>operator()</name>
+        <param>
+          <type>const bool &amp;</type>
+          <declname>lhs</declname>
+        </param>
+        <param>
+          <type>const bool &amp;</type>
+          <declname>rhs</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/ir/attrs.h" line="165" column="1" bodyfile="include/tvm/ir/attrs.h" bodystart="165" bodyend="167"/>
+      </memberdef>
+      <memberdef kind="function" id="classtvm_1_1AttrsEqual_1a39fd9bc47e3055367f216445a679255e" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool tvm::AttrsEqual::operator()</definition>
+        <argsstring>(const std::string &amp;lhs, const std::string &amp;rhs) const </argsstring>
+        <name>operator()</name>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>lhs</declname>
+        </param>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>rhs</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/ir/attrs.h" line="168" column="1" bodyfile="include/tvm/ir/attrs.h" bodystart="168" bodyend="170"/>
+      </memberdef>
+      <memberdef kind="function" id="classtvm_1_1AttrsEqual_1aab0d53b8bc5dfb6b833f0a4b59266ff6" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool tvm::AttrsEqual::operator()</definition>
+        <argsstring>(const DataType &amp;lhs, const DataType &amp;rhs) const </argsstring>
+        <name>operator()</name>
+        <param>
+          <type>const <ref refid="namespacetvm_1a41918af1a1dc386388639a9d3ad06c5d" kindref="member">DataType</ref> &amp;</type>
+          <declname>lhs</declname>
+        </param>
+        <param>
+          <type>const <ref refid="namespacetvm_1a41918af1a1dc386388639a9d3ad06c5d" kindref="member">DataType</ref> &amp;</type>
+          <declname>rhs</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/ir/attrs.h" line="171" column="1" bodyfile="include/tvm/ir/attrs.h" bodystart="171" bodyend="173"/>
+      </memberdef>
+      <memberdef kind="function" id="classtvm_1_1AttrsEqual_1ac5279a5f1c09f5986c842a69899d0fa6" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool tvm::AttrsEqual::operator()</definition>
+        <argsstring>(const ObjectRef &amp;lhs, const ObjectRef &amp;rhs) const </argsstring>
+        <name>operator()</name>
+        <param>
+          <type>const ObjectRef &amp;</type>
+          <declname>lhs</declname>
+        </param>
+        <param>
+          <type>const ObjectRef &amp;</type>
+          <declname>rhs</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/ir/attrs.h" line="175" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Content-aware Equality comparator for attrs. </para>    </briefdescription>
+    <detaileddescription>
+<para>This comparator will recursively deep compare the following Attributes.</para><para><itemizedlist>
+<listitem><para><ref refid="classtvm_1_1IntImm" kindref="compound">IntImm</ref>, UIntImm, <ref refid="classtvm_1_1FloatImm" kindref="compound">FloatImm</ref>, StringImm</para></listitem><listitem><para>Any subclass of <ref refid="classtvm_1_1BaseAttrsNode" kindref="compound">BaseAttrsNode</ref></para></listitem><listitem><para><ref refid="classtvm_1_1Array" kindref="compound">Array</ref> of Attributes.</para></listitem><listitem><para><ref refid="classtvm_1_1Map" kindref="compound">Map</ref> from string to Attributes. </para></listitem></itemizedlist>
+</para>    </detaileddescription>
+    <collaborationgraph>
+      <node id="3983">
+        <label>tvm::AttrsEqual</label>
+        <link refid="classtvm_1_1AttrsEqual"/>
+      </node>
+    </collaborationgraph>
+    <location file="include/tvm/ir/attrs.h" line="146" column="1" bodyfile="include/tvm/ir/attrs.h" bodystart="146" bodyend="181"/>
+    <listofallmembers>
+      <member refid="classtvm_1_1AttrsEqual_1a82543680d85e663c8085c06ccc229827" prot="protected" virt="non-virtual"><scope>tvm::AttrsEqual</scope><name>AttrsEqualHandler</name></member>
+      <member refid="classtvm_1_1AttrsEqual_1a8296ba912da1568dca506f079f0ab6c9" prot="protected" virt="non-virtual"><scope>tvm::AttrsEqual</scope><name>handler_</name></member>
+      <member refid="classtvm_1_1AttrsEqual_1af65f9cf21d8c4355388d7e54d0bdb1ef" prot="public" virt="non-virtual"><scope>tvm::AttrsEqual</scope><name>operator()</name></member>
+      <member refid="classtvm_1_1AttrsEqual_1a93b456b86566cac5b319db9eea0ea7f1" prot="public" virt="non-virtual"><scope>tvm::AttrsEqual</scope><name>operator()</name></member>
+      <member refid="classtvm_1_1AttrsEqual_1a644f5e9603108f79b65cdb4753e38b6a" prot="public" virt="non-virtual"><scope>tvm::AttrsEqual</scope><name>operator()</name></member>
+      <member refid="classtvm_1_1AttrsEqual_1a9038da9b1c4cc4216de13dc30e45a2f7" prot="public" virt="non-virtual"><scope>tvm::AttrsEqual</scope><name>operator()</name></member>
+      <member refid="classtvm_1_1AttrsEqual_1abf0d990a522127ceb3d0b0badd5e4dc8" prot="public" virt="non-virtual"><scope>tvm::AttrsEqual</scope><name>operator()</name></member>
+      <member refid="classtvm_1_1AttrsEqual_1a39fd9bc47e3055367f216445a679255e" prot="public" virt="non-virtual"><scope>tvm::AttrsEqual</scope><name>operator()</name></member>
+      <member refid="classtvm_1_1AttrsEqual_1aab0d53b8bc5dfb6b833f0a4b59266ff6" prot="public" virt="non-virtual"><scope>tvm::AttrsEqual</scope><name>operator()</name></member>
+      <member refid="classtvm_1_1AttrsEqual_1ac5279a5f1c09f5986c842a69899d0fa6" prot="public" virt="non-virtual"><scope>tvm::AttrsEqual</scope><name>operator()</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

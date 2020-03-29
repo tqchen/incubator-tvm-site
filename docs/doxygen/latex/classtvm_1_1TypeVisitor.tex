@@ -1,0 +1,153 @@
+\hypertarget{classtvm_1_1TypeVisitor}{}\section{tvm\+:\+:Type\+Visitor Class Reference}
+\label{classtvm_1_1TypeVisitor}\index{tvm\+::\+Type\+Visitor@{tvm\+::\+Type\+Visitor}}
+
+
+A type visitor that recursively visit types.  
+
+
+
+
+{\ttfamily \#include $<$type\+\_\+functor.\+h$>$}
+
+
+
+Inheritance diagram for tvm\+:\+:Type\+Visitor\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=208pt]{classtvm_1_1TypeVisitor__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for tvm\+:\+:Type\+Visitor\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=208pt]{classtvm_1_1TypeVisitor__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{classtvm_1_1TypeVisitor_a1e33da035ed09ba49e2cc254f8a033c4}{Visit\+Type\+\_\+} (const \hyperlink{classtvm_1_1TypeVarNode}{Type\+Var\+Node} $\ast$op) override
+\item 
+void \hyperlink{classtvm_1_1TypeVisitor_ae699be9a6ed94a635c315506e0c2a6d2}{Visit\+Type\+\_\+} (const \hyperlink{classtvm_1_1IncompleteTypeNode}{Incomplete\+Type\+Node} $\ast$op) override
+\item 
+void \hyperlink{classtvm_1_1TypeVisitor_adb2f5c5f8e3fbe5b62ce8527cd59a30b}{Visit\+Type\+\_\+} (const \hyperlink{classtvm_1_1TensorTypeNode}{Tensor\+Type\+Node} $\ast$op) override
+\item 
+void \hyperlink{classtvm_1_1TypeVisitor_a063b7b1705ffabb92e58093032686e90}{Visit\+Type\+\_\+} (const \hyperlink{classtvm_1_1FuncTypeNode}{Func\+Type\+Node} $\ast$op) override
+\item 
+void \hyperlink{classtvm_1_1TypeVisitor_a82c83b1524502579f56d194138badd3e}{Visit\+Type\+\_\+} (const \hyperlink{classtvm_1_1TupleTypeNode}{Tuple\+Type\+Node} $\ast$op) override
+\item 
+void \hyperlink{classtvm_1_1TypeVisitor_a3ed59cee793514b568fa0e9cb0ca437c}{Visit\+Type\+\_\+} (const \hyperlink{classtvm_1_1TypeRelationNode}{Type\+Relation\+Node} $\ast$op) override
+\item 
+void \hyperlink{classtvm_1_1TypeVisitor_a11378b4db6f704c04a97bec1c8ea8261}{Visit\+Type\+\_\+} (const \hyperlink{classtvm_1_1RelayRefTypeNode}{Relay\+Ref\+Type\+Node} $\ast$op) override
+\item 
+void \hyperlink{classtvm_1_1TypeVisitor_af92188034706eec6c1ce5c8240f65cc0}{Visit\+Type\+\_\+} (const \hyperlink{classtvm_1_1GlobalTypeVarNode}{Global\+Type\+Var\+Node} $\ast$op) override
+\item 
+void \hyperlink{classtvm_1_1TypeVisitor_a8f548b8def48ea4f11a3eafa04d74d96}{Visit\+Type\+\_\+} (const \hyperlink{classtvm_1_1TypeCallNode}{Type\+Call\+Node} $\ast$op) override
+\item 
+void \hyperlink{classtvm_1_1TypeVisitor_a292b19b578526ea74b1434dc50514a18}{Visit\+Type\+\_\+} (const \hyperlink{classtvm_1_1TypeDataNode}{Type\+Data\+Node} $\ast$op) override
+\item 
+void \hyperlink{classtvm_1_1TypeVisitor_a2d6a319537d4d3dba04054f3ef8f32f9}{Visit\+Type\+\_\+} (const \hyperlink{classtvm_1_1PrimTypeNode}{Prim\+Type\+Node} $\ast$op) override
+\item 
+void \hyperlink{classtvm_1_1TypeVisitor_ac8845fbf58c1a1f0ebc23c7ee403aaab}{Visit\+Type\+\_\+} (const \hyperlink{classtvm_1_1PointerTypeNode}{Pointer\+Type\+Node} $\ast$op) override
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+A type visitor that recursively visit types. 
+
+\subsection{Member Function Documentation}
+\index{tvm\+::\+Type\+Visitor@{tvm\+::\+Type\+Visitor}!Visit\+Type\+\_\+@{Visit\+Type\+\_\+}}
+\index{Visit\+Type\+\_\+@{Visit\+Type\+\_\+}!tvm\+::\+Type\+Visitor@{tvm\+::\+Type\+Visitor}}
+\subsubsection[{\texorpdfstring{Visit\+Type\+\_\+(const Type\+Var\+Node $\ast$op) override}{VisitType_(const TypeVarNode *op) override}}]{\setlength{\rightskip}{0pt plus 5cm}void tvm\+::\+Type\+Visitor\+::\+Visit\+Type\+\_\+ (
+\begin{DoxyParamCaption}
+\item[{const {\bf Type\+Var\+Node} $\ast$}]{op}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [override]}}\hypertarget{classtvm_1_1TypeVisitor_a1e33da035ed09ba49e2cc254f8a033c4}{}\label{classtvm_1_1TypeVisitor_a1e33da035ed09ba49e2cc254f8a033c4}
+\index{tvm\+::\+Type\+Visitor@{tvm\+::\+Type\+Visitor}!Visit\+Type\+\_\+@{Visit\+Type\+\_\+}}
+\index{Visit\+Type\+\_\+@{Visit\+Type\+\_\+}!tvm\+::\+Type\+Visitor@{tvm\+::\+Type\+Visitor}}
+\subsubsection[{\texorpdfstring{Visit\+Type\+\_\+(const Incomplete\+Type\+Node $\ast$op) override}{VisitType_(const IncompleteTypeNode *op) override}}]{\setlength{\rightskip}{0pt plus 5cm}void tvm\+::\+Type\+Visitor\+::\+Visit\+Type\+\_\+ (
+\begin{DoxyParamCaption}
+\item[{const {\bf Incomplete\+Type\+Node} $\ast$}]{op}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [override]}}\hypertarget{classtvm_1_1TypeVisitor_ae699be9a6ed94a635c315506e0c2a6d2}{}\label{classtvm_1_1TypeVisitor_ae699be9a6ed94a635c315506e0c2a6d2}
+\index{tvm\+::\+Type\+Visitor@{tvm\+::\+Type\+Visitor}!Visit\+Type\+\_\+@{Visit\+Type\+\_\+}}
+\index{Visit\+Type\+\_\+@{Visit\+Type\+\_\+}!tvm\+::\+Type\+Visitor@{tvm\+::\+Type\+Visitor}}
+\subsubsection[{\texorpdfstring{Visit\+Type\+\_\+(const Tensor\+Type\+Node $\ast$op) override}{VisitType_(const TensorTypeNode *op) override}}]{\setlength{\rightskip}{0pt plus 5cm}void tvm\+::\+Type\+Visitor\+::\+Visit\+Type\+\_\+ (
+\begin{DoxyParamCaption}
+\item[{const {\bf Tensor\+Type\+Node} $\ast$}]{op}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [override]}}\hypertarget{classtvm_1_1TypeVisitor_adb2f5c5f8e3fbe5b62ce8527cd59a30b}{}\label{classtvm_1_1TypeVisitor_adb2f5c5f8e3fbe5b62ce8527cd59a30b}
+\index{tvm\+::\+Type\+Visitor@{tvm\+::\+Type\+Visitor}!Visit\+Type\+\_\+@{Visit\+Type\+\_\+}}
+\index{Visit\+Type\+\_\+@{Visit\+Type\+\_\+}!tvm\+::\+Type\+Visitor@{tvm\+::\+Type\+Visitor}}
+\subsubsection[{\texorpdfstring{Visit\+Type\+\_\+(const Func\+Type\+Node $\ast$op) override}{VisitType_(const FuncTypeNode *op) override}}]{\setlength{\rightskip}{0pt plus 5cm}void tvm\+::\+Type\+Visitor\+::\+Visit\+Type\+\_\+ (
+\begin{DoxyParamCaption}
+\item[{const {\bf Func\+Type\+Node} $\ast$}]{op}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [override]}}\hypertarget{classtvm_1_1TypeVisitor_a063b7b1705ffabb92e58093032686e90}{}\label{classtvm_1_1TypeVisitor_a063b7b1705ffabb92e58093032686e90}
+\index{tvm\+::\+Type\+Visitor@{tvm\+::\+Type\+Visitor}!Visit\+Type\+\_\+@{Visit\+Type\+\_\+}}
+\index{Visit\+Type\+\_\+@{Visit\+Type\+\_\+}!tvm\+::\+Type\+Visitor@{tvm\+::\+Type\+Visitor}}
+\subsubsection[{\texorpdfstring{Visit\+Type\+\_\+(const Tuple\+Type\+Node $\ast$op) override}{VisitType_(const TupleTypeNode *op) override}}]{\setlength{\rightskip}{0pt plus 5cm}void tvm\+::\+Type\+Visitor\+::\+Visit\+Type\+\_\+ (
+\begin{DoxyParamCaption}
+\item[{const {\bf Tuple\+Type\+Node} $\ast$}]{op}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [override]}}\hypertarget{classtvm_1_1TypeVisitor_a82c83b1524502579f56d194138badd3e}{}\label{classtvm_1_1TypeVisitor_a82c83b1524502579f56d194138badd3e}
+\index{tvm\+::\+Type\+Visitor@{tvm\+::\+Type\+Visitor}!Visit\+Type\+\_\+@{Visit\+Type\+\_\+}}
+\index{Visit\+Type\+\_\+@{Visit\+Type\+\_\+}!tvm\+::\+Type\+Visitor@{tvm\+::\+Type\+Visitor}}
+\subsubsection[{\texorpdfstring{Visit\+Type\+\_\+(const Type\+Relation\+Node $\ast$op) override}{VisitType_(const TypeRelationNode *op) override}}]{\setlength{\rightskip}{0pt plus 5cm}void tvm\+::\+Type\+Visitor\+::\+Visit\+Type\+\_\+ (
+\begin{DoxyParamCaption}
+\item[{const {\bf Type\+Relation\+Node} $\ast$}]{op}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [override]}}\hypertarget{classtvm_1_1TypeVisitor_a3ed59cee793514b568fa0e9cb0ca437c}{}\label{classtvm_1_1TypeVisitor_a3ed59cee793514b568fa0e9cb0ca437c}
+\index{tvm\+::\+Type\+Visitor@{tvm\+::\+Type\+Visitor}!Visit\+Type\+\_\+@{Visit\+Type\+\_\+}}
+\index{Visit\+Type\+\_\+@{Visit\+Type\+\_\+}!tvm\+::\+Type\+Visitor@{tvm\+::\+Type\+Visitor}}
+\subsubsection[{\texorpdfstring{Visit\+Type\+\_\+(const Relay\+Ref\+Type\+Node $\ast$op) override}{VisitType_(const RelayRefTypeNode *op) override}}]{\setlength{\rightskip}{0pt plus 5cm}void tvm\+::\+Type\+Visitor\+::\+Visit\+Type\+\_\+ (
+\begin{DoxyParamCaption}
+\item[{const {\bf Relay\+Ref\+Type\+Node} $\ast$}]{op}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [override]}}\hypertarget{classtvm_1_1TypeVisitor_a11378b4db6f704c04a97bec1c8ea8261}{}\label{classtvm_1_1TypeVisitor_a11378b4db6f704c04a97bec1c8ea8261}
+\index{tvm\+::\+Type\+Visitor@{tvm\+::\+Type\+Visitor}!Visit\+Type\+\_\+@{Visit\+Type\+\_\+}}
+\index{Visit\+Type\+\_\+@{Visit\+Type\+\_\+}!tvm\+::\+Type\+Visitor@{tvm\+::\+Type\+Visitor}}
+\subsubsection[{\texorpdfstring{Visit\+Type\+\_\+(const Global\+Type\+Var\+Node $\ast$op) override}{VisitType_(const GlobalTypeVarNode *op) override}}]{\setlength{\rightskip}{0pt plus 5cm}void tvm\+::\+Type\+Visitor\+::\+Visit\+Type\+\_\+ (
+\begin{DoxyParamCaption}
+\item[{const {\bf Global\+Type\+Var\+Node} $\ast$}]{op}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [override]}}\hypertarget{classtvm_1_1TypeVisitor_af92188034706eec6c1ce5c8240f65cc0}{}\label{classtvm_1_1TypeVisitor_af92188034706eec6c1ce5c8240f65cc0}
+\index{tvm\+::\+Type\+Visitor@{tvm\+::\+Type\+Visitor}!Visit\+Type\+\_\+@{Visit\+Type\+\_\+}}
+\index{Visit\+Type\+\_\+@{Visit\+Type\+\_\+}!tvm\+::\+Type\+Visitor@{tvm\+::\+Type\+Visitor}}
+\subsubsection[{\texorpdfstring{Visit\+Type\+\_\+(const Type\+Call\+Node $\ast$op) override}{VisitType_(const TypeCallNode *op) override}}]{\setlength{\rightskip}{0pt plus 5cm}void tvm\+::\+Type\+Visitor\+::\+Visit\+Type\+\_\+ (
+\begin{DoxyParamCaption}
+\item[{const {\bf Type\+Call\+Node} $\ast$}]{op}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [override]}}\hypertarget{classtvm_1_1TypeVisitor_a8f548b8def48ea4f11a3eafa04d74d96}{}\label{classtvm_1_1TypeVisitor_a8f548b8def48ea4f11a3eafa04d74d96}
+\index{tvm\+::\+Type\+Visitor@{tvm\+::\+Type\+Visitor}!Visit\+Type\+\_\+@{Visit\+Type\+\_\+}}
+\index{Visit\+Type\+\_\+@{Visit\+Type\+\_\+}!tvm\+::\+Type\+Visitor@{tvm\+::\+Type\+Visitor}}
+\subsubsection[{\texorpdfstring{Visit\+Type\+\_\+(const Type\+Data\+Node $\ast$op) override}{VisitType_(const TypeDataNode *op) override}}]{\setlength{\rightskip}{0pt plus 5cm}void tvm\+::\+Type\+Visitor\+::\+Visit\+Type\+\_\+ (
+\begin{DoxyParamCaption}
+\item[{const {\bf Type\+Data\+Node} $\ast$}]{op}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [override]}}\hypertarget{classtvm_1_1TypeVisitor_a292b19b578526ea74b1434dc50514a18}{}\label{classtvm_1_1TypeVisitor_a292b19b578526ea74b1434dc50514a18}
+\index{tvm\+::\+Type\+Visitor@{tvm\+::\+Type\+Visitor}!Visit\+Type\+\_\+@{Visit\+Type\+\_\+}}
+\index{Visit\+Type\+\_\+@{Visit\+Type\+\_\+}!tvm\+::\+Type\+Visitor@{tvm\+::\+Type\+Visitor}}
+\subsubsection[{\texorpdfstring{Visit\+Type\+\_\+(const Prim\+Type\+Node $\ast$op) override}{VisitType_(const PrimTypeNode *op) override}}]{\setlength{\rightskip}{0pt plus 5cm}void tvm\+::\+Type\+Visitor\+::\+Visit\+Type\+\_\+ (
+\begin{DoxyParamCaption}
+\item[{const {\bf Prim\+Type\+Node} $\ast$}]{op}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [override]}}\hypertarget{classtvm_1_1TypeVisitor_a2d6a319537d4d3dba04054f3ef8f32f9}{}\label{classtvm_1_1TypeVisitor_a2d6a319537d4d3dba04054f3ef8f32f9}
+\index{tvm\+::\+Type\+Visitor@{tvm\+::\+Type\+Visitor}!Visit\+Type\+\_\+@{Visit\+Type\+\_\+}}
+\index{Visit\+Type\+\_\+@{Visit\+Type\+\_\+}!tvm\+::\+Type\+Visitor@{tvm\+::\+Type\+Visitor}}
+\subsubsection[{\texorpdfstring{Visit\+Type\+\_\+(const Pointer\+Type\+Node $\ast$op) override}{VisitType_(const PointerTypeNode *op) override}}]{\setlength{\rightskip}{0pt plus 5cm}void tvm\+::\+Type\+Visitor\+::\+Visit\+Type\+\_\+ (
+\begin{DoxyParamCaption}
+\item[{const {\bf Pointer\+Type\+Node} $\ast$}]{op}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [override]}}\hypertarget{classtvm_1_1TypeVisitor_ac8845fbf58c1a1f0ebc23c7ee403aaab}{}\label{classtvm_1_1TypeVisitor_ac8845fbf58c1a1f0ebc23c7ee403aaab}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+include/tvm/ir/\hyperlink{type__functor_8h}{type\+\_\+functor.\+h}\end{DoxyCompactItemize}

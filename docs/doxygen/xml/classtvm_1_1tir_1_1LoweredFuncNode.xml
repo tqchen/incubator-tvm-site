@@ -1,0 +1,297 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="classtvm_1_1tir_1_1LoweredFuncNode" kind="class" language="C++" prot="public">
+    <compoundname>tvm::tir::LoweredFuncNode</compoundname>
+    <basecompoundref refid="classtvm_1_1tir_1_1FunctionBaseNode" prot="public" virt="non-virtual">tvm::tir::FunctionBaseNode</basecompoundref>
+    <includes refid="lowered__func_8h" local="no">lowered_func.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="classtvm_1_1tir_1_1LoweredFuncNode_1afdd73b0418a0e703e755046836aef3d6" prot="public" static="no" mutable="no">
+        <type>std::string</type>
+        <definition>std::string tvm::tir::LoweredFuncNode::name</definition>
+        <argsstring></argsstring>
+        <name>name</name>
+        <briefdescription>
+<para>The name of the function. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/tir/lowered_func.h" line="70" column="1" bodyfile="include/tvm/tir/lowered_func.h" bodystart="70" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classtvm_1_1tir_1_1LoweredFuncNode_1aef9d2a7ee866a22b3bd65f8c29a6016e" prot="public" static="no" mutable="no">
+        <type><ref refid="classtvm_1_1Array" kindref="compound">Array</ref>&lt; <ref refid="classtvm_1_1tir_1_1Var" kindref="compound">Var</ref> &gt;</type>
+        <definition>Array&lt;Var&gt; tvm::tir::LoweredFuncNode::args</definition>
+        <argsstring></argsstring>
+        <name>args</name>
+        <briefdescription>
+<para>The arguments of the function This function can only take pod type(int, float) and void* as arguments. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/tir/lowered_func.h" line="75" column="1" bodyfile="include/tvm/tir/lowered_func.h" bodystart="75" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classtvm_1_1tir_1_1LoweredFuncNode_1a844230451f80a6bea09bb81527d032df" prot="public" static="no" mutable="no">
+        <type><ref refid="classtvm_1_1Array" kindref="compound">Array</ref>&lt; <ref refid="classtvm_1_1tir_1_1IterVar" kindref="compound">IterVar</ref> &gt;</type>
+        <definition>Array&lt;IterVar&gt; tvm::tir::LoweredFuncNode::thread_axis</definition>
+        <argsstring></argsstring>
+        <name>thread_axis</name>
+        <briefdescription>
+<para>The <ref refid="classtvm_1_1tir_1_1IterVar" kindref="compound">IterVar</ref> axis of threads Each axis need host function to specify a size. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="note"><para>Calling convention into <ref refid="classtvm_1_1tir_1_1LoweredFunc" kindref="compound">LoweredFunc</ref></para></simplesect>
+Assume we have a <ref refid="classtvm_1_1tir_1_1LoweredFunc" kindref="compound">LoweredFunc</ref> f, a call into f Call(f, arg1, arg2, ..., arg_n, size_axis_1, size_axis_2, ... size_axis_m)</para><para>Here n = len(args), m = len(thread_axis)</para><para>The CodeGen should take this and translate this call to corresponding API specific kernel launchs or function calls. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/tir/lowered_func.h" line="90" column="1" bodyfile="include/tvm/tir/lowered_func.h" bodystart="90" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classtvm_1_1tir_1_1LoweredFuncNode_1a95a0481bbb70cdedde6b73717f49c1bc" prot="public" static="no" mutable="no">
+        <type><ref refid="classtvm_1_1Map" kindref="compound">Map</ref>&lt; <ref refid="classtvm_1_1tir_1_1Var" kindref="compound">Var</ref>, <ref refid="classtvm_1_1PrimExpr" kindref="compound">PrimExpr</ref> &gt;</type>
+        <definition>Map&lt;Var, PrimExpr&gt; tvm::tir::LoweredFuncNode::handle_data_type</definition>
+        <argsstring></argsstring>
+        <name>handle_data_type</name>
+        <briefdescription>
+<para>The hint data type of <ref refid="classtvm_1_1tir_1_1Var" kindref="compound">Var</ref> handles defined in LetStmt Can be used as hint when generating type signiture. The creation rule is given by handle_data_type[var_handle] = make_const(the_type, 0);. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="note"><para>Expr is used instead <ref refid="classtvm_1_1Type" kindref="compound">Type</ref>, because <ref refid="classtvm_1_1Type" kindref="compound">Type</ref> cannot be hold by <ref refid="classtvm_1_1Map" kindref="compound">Map</ref>. constant Expr of given type is used. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/tir/lowered_func.h" line="100" column="1" bodyfile="include/tvm/tir/lowered_func.h" bodystart="100" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classtvm_1_1tir_1_1LoweredFuncNode_1aa59a716bf8a2ca84fb2b20a0fa1e25a4" prot="public" static="no" mutable="no">
+        <type><ref refid="namespacetvm_1_1tir_1a69f0089a367b98e377b652186fa7dc66" kindref="member">LoweredFuncType</ref></type>
+        <definition>LoweredFuncType tvm::tir::LoweredFuncNode::func_type</definition>
+        <argsstring></argsstring>
+        <name>func_type</name>
+        <initializer>{<ref refid="namespacetvm_1_1tir_1a69f0089a367b98e377b652186fa7dc66accd368fda1b61f733343349a79cf2ca9" kindref="member">kMixedFunc</ref>}</initializer>
+        <briefdescription>
+<para>The type of the function. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/tir/lowered_func.h" line="102" column="1" bodyfile="include/tvm/tir/lowered_func.h" bodystart="102" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classtvm_1_1tir_1_1LoweredFuncNode_1abfe5c1806998239b88c001e335200f82" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool tvm::tir::LoweredFuncNode::is_packed_func</definition>
+        <argsstring></argsstring>
+        <name>is_packed_func</name>
+        <initializer>{true}</initializer>
+        <briefdescription>
+<para>Whether this function is packed function. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/tir/lowered_func.h" line="104" column="1" bodyfile="include/tvm/tir/lowered_func.h" bodystart="104" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classtvm_1_1tir_1_1LoweredFuncNode_1af5b31c9e4cf7a0f2064385a93e19e816" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool tvm::tir::LoweredFuncNode::is_restricted</definition>
+        <argsstring></argsstring>
+        <name>is_restricted</name>
+        <initializer>{true}</initializer>
+        <briefdescription>
+<para>Whether function ensures that argument pointers do not alias. This corresponds to restrict keyword in C. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/tir/lowered_func.h" line="109" column="1" bodyfile="include/tvm/tir/lowered_func.h" bodystart="109" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classtvm_1_1tir_1_1LoweredFuncNode_1a9cc563727ba34c90efb647195be90f8d" prot="public" static="no" mutable="no">
+        <type><ref refid="classtvm_1_1tir_1_1Stmt" kindref="compound">Stmt</ref></type>
+        <definition>Stmt tvm::tir::LoweredFuncNode::body</definition>
+        <argsstring></argsstring>
+        <name>body</name>
+        <briefdescription>
+<para>The body statment of the function. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/tir/lowered_func.h" line="111" column="1" bodyfile="include/tvm/tir/lowered_func.h" bodystart="111" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-attrib">
+      <memberdef kind="variable" id="classtvm_1_1tir_1_1LoweredFuncNode_1a1d9db20221331f0000d32809da908d74" prot="public" static="yes" mutable="no">
+        <type>constexpr const char *</type>
+        <definition>constexpr const char* tvm::tir::LoweredFuncNode::_type_key</definition>
+        <argsstring></argsstring>
+        <name>_type_key</name>
+        <initializer>= &quot;LoweredFunc&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/tir/lowered_func.h" line="132" column="1" bodyfile="include/tvm/tir/lowered_func.h" bodystart="132" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classtvm_1_1tir_1_1LoweredFuncNode_1adea0c3a6dee4e102714d23340586fc2b" prot="public" static="no" const="yes" explicit="no" inline="yes" final="yes" virt="virtual">
+        <type>const std::string &amp;</type>
+        <definition>const std::string&amp; tvm::tir::LoweredFuncNode::func_name</definition>
+        <argsstring>() const final</argsstring>
+        <name>func_name</name>
+        <reimplements refid="classtvm_1_1tir_1_1FunctionBaseNode_1aef4781fcdee32ca1b19929fd6a2fa090">func_name</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>name of the operation </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/tir/lowered_func.h" line="113" column="1" bodyfile="include/tvm/tir/lowered_func.h" bodystart="113" bodyend="115"/>
+      </memberdef>
+      <memberdef kind="function" id="classtvm_1_1tir_1_1LoweredFuncNode_1a00ac40b83b414dfa2af245f7a5117d38" prot="public" static="no" const="yes" explicit="no" inline="yes" final="yes" virt="virtual">
+        <type>int</type>
+        <definition>int tvm::tir::LoweredFuncNode::num_outputs</definition>
+        <argsstring>() const final</argsstring>
+        <name>num_outputs</name>
+        <reimplements refid="classtvm_1_1tir_1_1FunctionBaseNode_1a86d8a47eb472945b01ab508c1ff94930">num_outputs</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>the number of outputs of this function </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/tir/lowered_func.h" line="118" column="1" bodyfile="include/tvm/tir/lowered_func.h" bodystart="118" bodyend="120"/>
+      </memberdef>
+      <memberdef kind="function" id="classtvm_1_1tir_1_1LoweredFuncNode_1a7a73f0bf8f7c13d1b48caaffd607677f" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void tvm::tir::LoweredFuncNode::VisitAttrs</definition>
+        <argsstring>(AttrVisitor *v)</argsstring>
+        <name>VisitAttrs</name>
+        <param>
+          <type><ref refid="classtvm_1_1AttrVisitor" kindref="compound">AttrVisitor</ref> *</type>
+          <declname>v</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/tir/lowered_func.h" line="121" column="1" bodyfile="include/tvm/tir/lowered_func.h" bodystart="121" bodyend="130"/>
+      </memberdef>
+      <memberdef kind="function" id="classtvm_1_1tir_1_1LoweredFuncNode_1a818db7493833f0942640fae168c9ff8a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>tvm::tir::LoweredFuncNode::TVM_DECLARE_FINAL_OBJECT_INFO</definition>
+        <argsstring>(LoweredFuncNode, Object)</argsstring>
+        <name>TVM_DECLARE_FINAL_OBJECT_INFO</name>
+        <param>
+          <type><ref refid="classtvm_1_1tir_1_1LoweredFuncNode" kindref="compound">LoweredFuncNode</ref></type>
+        </param>
+        <param>
+          <type>Object</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/tir/lowered_func.h" line="133" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Node container of <ref refid="classtvm_1_1tir_1_1LoweredFunc" kindref="compound">LoweredFunc</ref>. </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="5611">
+        <label>tvm::tir::LoweredFuncNode</label>
+        <link refid="classtvm_1_1tir_1_1LoweredFuncNode"/>
+        <childnode refid="5612" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="5613">
+        <label>Object</label>
+      </node>
+      <node id="5612">
+        <label>tvm::tir::FunctionBaseNode</label>
+        <link refid="classtvm_1_1tir_1_1FunctionBaseNode"/>
+        <childnode refid="5613" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="5618">
+        <label>ObjectRef</label>
+      </node>
+      <node id="5614">
+        <label>tvm::tir::LoweredFuncNode</label>
+        <link refid="classtvm_1_1tir_1_1LoweredFuncNode"/>
+        <childnode refid="5615" relation="public-inheritance">
+        </childnode>
+        <childnode refid="5617" relation="usage">
+          <edgelabel>+handle_data_type</edgelabel>
+        </childnode>
+        <childnode refid="5619" relation="usage">
+          <edgelabel>+args</edgelabel>
+        </childnode>
+        <childnode refid="5620" relation="usage">
+          <edgelabel>+thread_axis</edgelabel>
+        </childnode>
+        <childnode refid="5621" relation="usage">
+          <edgelabel>+body</edgelabel>
+        </childnode>
+      </node>
+      <node id="5620">
+        <label>tvm::Array&lt; tvm::tir::IterVar &gt;</label>
+        <link refid="classtvm_1_1Array"/>
+        <childnode refid="5618" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="5616">
+        <label>Object</label>
+      </node>
+      <node id="5621">
+        <label>tvm::tir::Stmt</label>
+        <link refid="classtvm_1_1tir_1_1Stmt"/>
+        <childnode refid="5618" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="5615">
+        <label>tvm::tir::FunctionBaseNode</label>
+        <link refid="classtvm_1_1tir_1_1FunctionBaseNode"/>
+        <childnode refid="5616" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="5619">
+        <label>tvm::Array&lt; tvm::tir::Var &gt;</label>
+        <link refid="classtvm_1_1Array"/>
+        <childnode refid="5618" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="5617">
+        <label>tvm::Map&lt; tvm::tir::Var, tvm::PrimExpr &gt;</label>
+        <link refid="classtvm_1_1Map"/>
+        <childnode refid="5618" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="include/tvm/tir/lowered_func.h" line="67" column="1" bodyfile="include/tvm/tir/lowered_func.h" bodystart="67" bodyend="134"/>
+    <listofallmembers>
+      <member refid="classtvm_1_1tir_1_1LoweredFuncNode_1a1d9db20221331f0000d32809da908d74" prot="public" virt="non-virtual"><scope>tvm::tir::LoweredFuncNode</scope><name>_type_key</name></member>
+      <member refid="classtvm_1_1tir_1_1LoweredFuncNode_1aef9d2a7ee866a22b3bd65f8c29a6016e" prot="public" virt="non-virtual"><scope>tvm::tir::LoweredFuncNode</scope><name>args</name></member>
+      <member refid="classtvm_1_1tir_1_1LoweredFuncNode_1a9cc563727ba34c90efb647195be90f8d" prot="public" virt="non-virtual"><scope>tvm::tir::LoweredFuncNode</scope><name>body</name></member>
+      <member refid="classtvm_1_1tir_1_1LoweredFuncNode_1adea0c3a6dee4e102714d23340586fc2b" prot="public" virt="virtual"><scope>tvm::tir::LoweredFuncNode</scope><name>func_name</name></member>
+      <member refid="classtvm_1_1tir_1_1LoweredFuncNode_1aa59a716bf8a2ca84fb2b20a0fa1e25a4" prot="public" virt="non-virtual"><scope>tvm::tir::LoweredFuncNode</scope><name>func_type</name></member>
+      <member refid="classtvm_1_1tir_1_1LoweredFuncNode_1a95a0481bbb70cdedde6b73717f49c1bc" prot="public" virt="non-virtual"><scope>tvm::tir::LoweredFuncNode</scope><name>handle_data_type</name></member>
+      <member refid="classtvm_1_1tir_1_1LoweredFuncNode_1abfe5c1806998239b88c001e335200f82" prot="public" virt="non-virtual"><scope>tvm::tir::LoweredFuncNode</scope><name>is_packed_func</name></member>
+      <member refid="classtvm_1_1tir_1_1LoweredFuncNode_1af5b31c9e4cf7a0f2064385a93e19e816" prot="public" virt="non-virtual"><scope>tvm::tir::LoweredFuncNode</scope><name>is_restricted</name></member>
+      <member refid="classtvm_1_1tir_1_1LoweredFuncNode_1afdd73b0418a0e703e755046836aef3d6" prot="public" virt="non-virtual"><scope>tvm::tir::LoweredFuncNode</scope><name>name</name></member>
+      <member refid="classtvm_1_1tir_1_1LoweredFuncNode_1a00ac40b83b414dfa2af245f7a5117d38" prot="public" virt="virtual"><scope>tvm::tir::LoweredFuncNode</scope><name>num_outputs</name></member>
+      <member refid="classtvm_1_1tir_1_1LoweredFuncNode_1a844230451f80a6bea09bb81527d032df" prot="public" virt="non-virtual"><scope>tvm::tir::LoweredFuncNode</scope><name>thread_axis</name></member>
+      <member refid="classtvm_1_1tir_1_1LoweredFuncNode_1a818db7493833f0942640fae168c9ff8a" prot="public" virt="non-virtual"><scope>tvm::tir::LoweredFuncNode</scope><name>TVM_DECLARE_FINAL_OBJECT_INFO</name></member>
+      <member refid="classtvm_1_1tir_1_1LoweredFuncNode_1a7a73f0bf8f7c13d1b48caaffd607677f" prot="public" virt="non-virtual"><scope>tvm::tir::LoweredFuncNode</scope><name>VisitAttrs</name></member>
+      <member refid="classtvm_1_1tir_1_1FunctionBaseNode_1a03b2f3fdfc5ae82ca081cf988dac22e4" prot="public" virt="virtual"><scope>tvm::tir::LoweredFuncNode</scope><name>~FunctionBaseNode</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

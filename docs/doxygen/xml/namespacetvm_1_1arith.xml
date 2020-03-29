@@ -1,0 +1,607 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="namespacetvm_1_1arith" kind="namespace" language="C++">
+    <compoundname>tvm::arith</compoundname>
+    <innerclass refid="classtvm_1_1arith_1_1Analyzer" prot="public">tvm::arith::Analyzer</innerclass>
+    <innerclass refid="classtvm_1_1arith_1_1CanonicalSimplifier" prot="public">tvm::arith::CanonicalSimplifier</innerclass>
+    <innerclass refid="classtvm_1_1arith_1_1ConstIntBound" prot="public">tvm::arith::ConstIntBound</innerclass>
+    <innerclass refid="classtvm_1_1arith_1_1ConstIntBoundAnalyzer" prot="public">tvm::arith::ConstIntBoundAnalyzer</innerclass>
+    <innerclass refid="classtvm_1_1arith_1_1ConstIntBoundNode" prot="public">tvm::arith::ConstIntBoundNode</innerclass>
+    <innerclass refid="classtvm_1_1arith_1_1ConstraintContext" prot="public">tvm::arith::ConstraintContext</innerclass>
+    <innerclass refid="classtvm_1_1arith_1_1IntSet" prot="public">tvm::arith::IntSet</innerclass>
+    <innerclass refid="classtvm_1_1arith_1_1IntSetAnalyzer" prot="public">tvm::arith::IntSetAnalyzer</innerclass>
+    <innerclass refid="classtvm_1_1arith_1_1IntSetNode" prot="public">tvm::arith::IntSetNode</innerclass>
+    <innerclass refid="classtvm_1_1arith_1_1ModularSet" prot="public">tvm::arith::ModularSet</innerclass>
+    <innerclass refid="classtvm_1_1arith_1_1ModularSetAnalyzer" prot="public">tvm::arith::ModularSetAnalyzer</innerclass>
+    <innerclass refid="classtvm_1_1arith_1_1ModularSetNode" prot="public">tvm::arith::ModularSetNode</innerclass>
+    <innerclass refid="classtvm_1_1arith_1_1RewriteSimplifier" prot="public">tvm::arith::RewriteSimplifier</innerclass>
+      <sectiondef kind="enum">
+      <memberdef kind="enum" id="namespacetvm_1_1arith_1aca8806e355ad3dd5f1df9c1eca9aac9d" prot="public" static="no">
+        <name>SignType</name>
+        <enumvalue id="namespacetvm_1_1arith_1aca8806e355ad3dd5f1df9c1eca9aac9da5eb70f55e8952b4484fe6c652138ae00" prot="public">
+          <name>kPositive</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacetvm_1_1arith_1aca8806e355ad3dd5f1df9c1eca9aac9da56331fd0b2625f7ce83b369b8a0a6f2a" prot="public">
+          <name>kNegative</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacetvm_1_1arith_1aca8806e355ad3dd5f1df9c1eca9aac9dab2f22d68a809adead1caf5ec7c61bf67" prot="public">
+          <name>kZero</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacetvm_1_1arith_1aca8806e355ad3dd5f1df9c1eca9aac9da8812c1a077255594d23bc1c2f3af3979" prot="public">
+          <name>kUnknown</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para>Sign type of an integer expression. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/arith/int_set.h" line="47" column="1" bodyfile="include/tvm/arith/int_set.h" bodystart="47" bodyend="52"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="typedef">
+      <memberdef kind="typedef" id="namespacetvm_1_1arith_1a94daf21fa21c1f7dd83081248f26d9eb" prot="public" static="no">
+        <type>std::unordered_map&lt; <ref refid="classtvm_1_1PrimExpr" kindref="compound">PrimExpr</ref>, <ref refid="classtvm_1_1arith_1_1IntSet" kindref="compound">IntSet</ref>, ObjectHash, ObjectEqual &gt;</type>
+        <definition>using tvm::arith::ExprIntSetMap = typedef std::unordered_map&lt;PrimExpr, IntSet, ObjectHash, ObjectEqual&gt;</definition>
+        <argsstring></argsstring>
+        <name>ExprIntSetMap</name>
+        <briefdescription>
+<para><ref refid="classtvm_1_1Map" kindref="compound">Map</ref> from Expr to <ref refid="classtvm_1_1arith_1_1IntSet" kindref="compound">IntSet</ref>. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/arith/int_set.h" line="207" column="1" bodyfile="include/tvm/arith/int_set.h" bodystart="207" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="namespacetvm_1_1arith_1af0860828b70ea8ff0d2f7c036c37afd5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classtvm_1_1arith_1_1IntSet" kindref="compound">IntSet</ref></type>
+        <definition>IntSet tvm::arith::DeduceBound</definition>
+        <argsstring>(PrimExpr v, PrimExpr cond, const Map&lt; Var, IntSet &gt; &amp;hint_map, const Map&lt; Var, IntSet &gt; &amp;relax_map)</argsstring>
+        <name>DeduceBound</name>
+        <param>
+          <type><ref refid="classtvm_1_1PrimExpr" kindref="compound">PrimExpr</ref></type>
+          <declname>v</declname>
+        </param>
+        <param>
+          <type><ref refid="classtvm_1_1PrimExpr" kindref="compound">PrimExpr</ref></type>
+          <declname>cond</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classtvm_1_1Map" kindref="compound">Map</ref>&lt; Var, <ref refid="classtvm_1_1arith_1_1IntSet" kindref="compound">IntSet</ref> &gt; &amp;</type>
+          <declname>hint_map</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classtvm_1_1Map" kindref="compound">Map</ref>&lt; Var, <ref refid="classtvm_1_1arith_1_1IntSet" kindref="compound">IntSet</ref> &gt; &amp;</type>
+          <declname>relax_map</declname>
+        </param>
+        <briefdescription>
+<para>Deduce the bound of the target variable in a expression, give the domain of each variables. Return undefined <ref refid="classtvm_1_1arith_1_1IntSet" kindref="compound">IntSet</ref> to represent failure. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="note"><para>The returned set may be smaller than set that contains all possible values of v that satisfies the bound.</para></simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>v</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The target variable to be deduced. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>cond</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The conditional expression. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>hint_map</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The domain of variable, used to help deduce. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>relax_map</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The domain of each variable, used to relax the domain, The deduce bound must implies e for all value in relax_map </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>An integer set that always satisfies the condition. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/arith/bound.h" line="61" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacetvm_1_1arith_1a3658d391f2333f405abdd54a9f174c9f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classtvm_1_1arith_1_1IntSet" kindref="compound">IntSet</ref></type>
+        <definition>IntSet tvm::arith::DeduceBound</definition>
+        <argsstring>(PrimExpr v, PrimExpr cond, const std::unordered_map&lt; const VarNode *, IntSet &gt; &amp;hint_map, const std::unordered_map&lt; const VarNode *, IntSet &gt; &amp;relax_map)</argsstring>
+        <name>DeduceBound</name>
+        <param>
+          <type><ref refid="classtvm_1_1PrimExpr" kindref="compound">PrimExpr</ref></type>
+          <declname>v</declname>
+        </param>
+        <param>
+          <type><ref refid="classtvm_1_1PrimExpr" kindref="compound">PrimExpr</ref></type>
+          <declname>cond</declname>
+        </param>
+        <param>
+          <type>const std::unordered_map&lt; const VarNode *, <ref refid="classtvm_1_1arith_1_1IntSet" kindref="compound">IntSet</ref> &gt; &amp;</type>
+          <declname>hint_map</declname>
+        </param>
+        <param>
+          <type>const std::unordered_map&lt; const VarNode *, <ref refid="classtvm_1_1arith_1_1IntSet" kindref="compound">IntSet</ref> &gt; &amp;</type>
+          <declname>relax_map</declname>
+        </param>
+        <briefdescription>
+<para>Same as DeduceBound with unordered_map signature. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>v</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The target variable to be deduced. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>cond</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The conditional expression. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>hint_map</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The domain of variable, used to help deduce. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>relax_map</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The domain of each variable, used to relax the domain, The deduce bound mush implies e for all value in relax_map </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>An integer set that always satisfies the condition. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/arith/bound.h" line="74" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacetvm_1_1arith_1a7f55bb82049e1b5f3a22fbd7b7ef3570" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>Domain</type>
+        <definition>Domain tvm::arith::DomainTouched</definition>
+        <argsstring>(Stmt body, const te::Tensor &amp;tensor, bool consider_calls, bool consider_provides)</argsstring>
+        <name>DomainTouched</name>
+        <param>
+          <type>Stmt</type>
+          <declname>body</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classtvm_1_1te_1_1Tensor" kindref="compound">te::Tensor</ref> &amp;</type>
+          <declname>tensor</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>consider_calls</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>consider_provides</declname>
+        </param>
+        <briefdescription>
+<para>Infer a regular domain that covers all the calls or provides within the given statement. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>body</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The given statement. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>tensor</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The name of the calls or provides. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>consider_calls</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>If calls (read) are considered. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>consider_provides</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>If provides (write) are considered. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The domain that covers all the calls or provides within the given statement. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/arith/bound.h" line="86" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacetvm_1_1arith_1a73160d1f944121ad2ef22205dd496fdc" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classtvm_1_1arith_1_1IntSet" kindref="compound">IntSet</ref></type>
+        <definition>IntSet tvm::arith::EvalSet</definition>
+        <argsstring>(PrimExpr e, const Map&lt; IterVar, IntSet &gt; &amp;dom_map)</argsstring>
+        <name>EvalSet</name>
+        <param>
+          <type><ref refid="classtvm_1_1PrimExpr" kindref="compound">PrimExpr</ref></type>
+          <declname>e</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classtvm_1_1Map" kindref="compound">Map</ref>&lt; IterVar, <ref refid="classtvm_1_1arith_1_1IntSet" kindref="compound">IntSet</ref> &gt; &amp;</type>
+          <declname>dom_map</declname>
+        </param>
+        <briefdescription>
+<para>Find an symbolic integer set that contains all possible values of e given the domain of each iteration variables. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>e</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The expression to be evaluated. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>dom_map</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The domain of each variable. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>An integer set that can cover all the possible values of e. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/arith/int_set.h" line="163" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacetvm_1_1arith_1a9d0d0f69e5f98e935d2bd4058d74bcfa" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classtvm_1_1arith_1_1IntSet" kindref="compound">IntSet</ref></type>
+        <definition>IntSet tvm::arith::EvalSet</definition>
+        <argsstring>(PrimExpr e, const std::unordered_map&lt; const tir::VarNode *, IntSet &gt; &amp;dom_map)</argsstring>
+        <name>EvalSet</name>
+        <param>
+          <type><ref refid="classtvm_1_1PrimExpr" kindref="compound">PrimExpr</ref></type>
+          <declname>e</declname>
+        </param>
+        <param>
+          <type>const std::unordered_map&lt; const <ref refid="classtvm_1_1tir_1_1VarNode" kindref="compound">tir::VarNode</ref> *, <ref refid="classtvm_1_1arith_1_1IntSet" kindref="compound">IntSet</ref> &gt; &amp;</type>
+          <declname>dom_map</declname>
+        </param>
+        <briefdescription>
+<para>Same as EvalSet, but takes unordered_map. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>e</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The expression to be evaluated. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>dom_map</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The domain of each variable. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>An integer set that can cover all the possible values of e. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/arith/int_set.h" line="172" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacetvm_1_1arith_1a74234ce6f7733b3d8055d781cc782df7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classtvm_1_1arith_1_1IntSet" kindref="compound">IntSet</ref></type>
+        <definition>IntSet tvm::arith::EvalSet</definition>
+        <argsstring>(Range r, const Map&lt; IterVar, IntSet &gt; &amp;dom_map)</argsstring>
+        <name>EvalSet</name>
+        <param>
+          <type><ref refid="classtvm_1_1Range" kindref="compound">Range</ref></type>
+          <declname>r</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classtvm_1_1Map" kindref="compound">Map</ref>&lt; IterVar, <ref refid="classtvm_1_1arith_1_1IntSet" kindref="compound">IntSet</ref> &gt; &amp;</type>
+          <declname>dom_map</declname>
+        </param>
+        <briefdescription>
+<para>Find an symbolic integer set that contains is union over all the possible conditional values in dom_map. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>r</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The initial range. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>dom_map</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The domain of each variable. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>An integer set that can cover all the possible values. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/arith/int_set.h" line="183" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacetvm_1_1arith_1aa30b03ba03ff9cad2cad7320194dfcbe" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classtvm_1_1arith_1_1IntSet" kindref="compound">IntSet</ref></type>
+        <definition>IntSet tvm::arith::EvalSet</definition>
+        <argsstring>(IntSet s, const std::unordered_map&lt; const VarNode *, IntSet &gt; &amp;dom_map)</argsstring>
+        <name>EvalSet</name>
+        <param>
+          <type><ref refid="classtvm_1_1arith_1_1IntSet" kindref="compound">IntSet</ref></type>
+          <declname>s</declname>
+        </param>
+        <param>
+          <type>const std::unordered_map&lt; const VarNode *, <ref refid="classtvm_1_1arith_1_1IntSet" kindref="compound">IntSet</ref> &gt; &amp;</type>
+          <declname>dom_map</declname>
+        </param>
+        <briefdescription>
+<para>Find an symbolic integer set that contains is union over all the possible conditional values in dom_map. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>s</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The initial set. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>dom_map</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The domain of each variable. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>An integer set that can cover all the possible values. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/arith/int_set.h" line="194" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacetvm_1_1arith_1a4bf945fe43afafbedffad6d5633efad7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classtvm_1_1arith_1_1IntSet" kindref="compound">IntSet</ref></type>
+        <definition>IntSet tvm::arith::EvalSet</definition>
+        <argsstring>(Range r, const std::unordered_map&lt; const VarNode *, IntSet &gt; &amp;dom_map)</argsstring>
+        <name>EvalSet</name>
+        <param>
+          <type><ref refid="classtvm_1_1Range" kindref="compound">Range</ref></type>
+          <declname>r</declname>
+        </param>
+        <param>
+          <type>const std::unordered_map&lt; const VarNode *, <ref refid="classtvm_1_1arith_1_1IntSet" kindref="compound">IntSet</ref> &gt; &amp;</type>
+          <declname>dom_map</declname>
+        </param>
+        <briefdescription>
+<para>Same as EvalSet, but takes unordered_map. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>r</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The range to be evaluated. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>dom_map</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The domain of each variable. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>An integer set that can cover all the possible values of e. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/arith/int_set.h" line="203" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacetvm_1_1arith_1a8a112f07411c5e1237b0c045ff276ac6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="namespacetvm_1_1arith_1a94daf21fa21c1f7dd83081248f26d9eb" kindref="member">ExprIntSetMap</ref></type>
+        <definition>ExprIntSetMap tvm::arith::EvalSetForEachSubExpr</definition>
+        <argsstring>(PrimExpr e, const std::unordered_map&lt; const VarNode *, IntSet &gt; &amp;dom_map)</argsstring>
+        <name>EvalSetForEachSubExpr</name>
+        <param>
+          <type><ref refid="classtvm_1_1PrimExpr" kindref="compound">PrimExpr</ref></type>
+          <declname>e</declname>
+        </param>
+        <param>
+          <type>const std::unordered_map&lt; const VarNode *, <ref refid="classtvm_1_1arith_1_1IntSet" kindref="compound">IntSet</ref> &gt; &amp;</type>
+          <declname>dom_map</declname>
+        </param>
+        <briefdescription>
+<para>Find the integer set of every sub-expression, given the domain of each iteration variables. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>e</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The expression to be evaluated. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>dom_map</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The domain of each variable. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>the map from the expression to its possible value. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/arith/int_set.h" line="216" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacetvm_1_1arith_1a68a0523bf0384e492ab222d30be9160e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classtvm_1_1arith_1_1IntSet" kindref="compound">IntSet</ref></type>
+        <definition>IntSet tvm::arith::Union</definition>
+        <argsstring>(const Array&lt; IntSet &gt; &amp;sets)</argsstring>
+        <name>Union</name>
+        <param>
+          <type>const <ref refid="classtvm_1_1Array" kindref="compound">Array</ref>&lt; <ref refid="classtvm_1_1arith_1_1IntSet" kindref="compound">IntSet</ref> &gt; &amp;</type>
+          <declname>sets</declname>
+        </param>
+        <briefdescription>
+<para>Create an union set of all sets. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>sets</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The sets to be unioned </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>the set after union </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/arith/int_set.h" line="225" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacetvm_1_1arith_1ad66a987ddb3d8aee69f9175bf412eb8a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classtvm_1_1arith_1_1IntSet" kindref="compound">IntSet</ref></type>
+        <definition>IntSet tvm::arith::Intersect</definition>
+        <argsstring>(const Array&lt; IntSet &gt; &amp;sets)</argsstring>
+        <name>Intersect</name>
+        <param>
+          <type>const <ref refid="classtvm_1_1Array" kindref="compound">Array</ref>&lt; <ref refid="classtvm_1_1arith_1_1IntSet" kindref="compound">IntSet</ref> &gt; &amp;</type>
+          <declname>sets</declname>
+        </param>
+        <briefdescription>
+<para>Create an union set of all sets. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>sets</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The sets to be intersected </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>the set after intersected </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/arith/int_set.h" line="232" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacetvm_1_1arith_1a87a12ee0854469b04329a961ef261559" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classtvm_1_1Array" kindref="compound">Array</ref>&lt; <ref refid="classtvm_1_1PrimExpr" kindref="compound">PrimExpr</ref> &gt;</type>
+        <definition>Array&lt;PrimExpr&gt; tvm::arith::DetectLinearEquation</definition>
+        <argsstring>(const PrimExpr &amp;e, const Array&lt; tir::Var &gt; &amp;vars)</argsstring>
+        <name>DetectLinearEquation</name>
+        <param>
+          <type>const <ref refid="classtvm_1_1PrimExpr" kindref="compound">PrimExpr</ref> &amp;</type>
+          <declname>e</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classtvm_1_1Array" kindref="compound">Array</ref>&lt; <ref refid="classtvm_1_1tir_1_1Var" kindref="compound">tir::Var</ref> &gt; &amp;</type>
+          <declname>vars</declname>
+        </param>
+        <briefdescription>
+<para>Detect if e can be rewritten as e = sum_{i=0}^{n-1} var[i] * coeff[i] + coeff[n] Where coeff[i] and base are invariant of var[j] for all i and j. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>e</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The expression to be detected. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>vars</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>List of variables to be used in detection. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>[coeff[i]] if it is possible, empty array if it is not. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/arith/pattern.h" line="41" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacetvm_1_1arith_1a739616342876c2633b87ed16c649bc91" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classtvm_1_1Array" kindref="compound">Array</ref>&lt; <ref refid="classtvm_1_1PrimExpr" kindref="compound">PrimExpr</ref> &gt;</type>
+        <definition>Array&lt;PrimExpr&gt; tvm::arith::DetectClipBound</definition>
+        <argsstring>(const PrimExpr &amp;e, const Array&lt; tir::Var &gt; &amp;vars)</argsstring>
+        <name>DetectClipBound</name>
+        <param>
+          <type>const <ref refid="classtvm_1_1PrimExpr" kindref="compound">PrimExpr</ref> &amp;</type>
+          <declname>e</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classtvm_1_1Array" kindref="compound">Array</ref>&lt; <ref refid="classtvm_1_1tir_1_1Var" kindref="compound">tir::Var</ref> &gt; &amp;</type>
+          <declname>vars</declname>
+        </param>
+        <briefdescription>
+<para>Detect if expression corresponds to clip bound of the vars. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>e</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The expression to be detected. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>vars</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>List of variables to be used in detection. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>concat([min_value[i], max_value[i]]), None is returned if there is no min or max value return empty if the e does not match the pattern. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/arith/pattern.h" line="52" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>namespace of arithmetic analysis. </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="include/tvm/arith/analyzer.h" line="38" column="1"/>
+  </compounddef>
+</doxygen>

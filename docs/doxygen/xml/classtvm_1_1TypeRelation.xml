@@ -1,0 +1,149 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="classtvm_1_1TypeRelation" kind="class" language="C++" prot="public">
+    <compoundname>tvm::TypeRelation</compoundname>
+    <basecompoundref refid="classtvm_1_1TypeConstraint" prot="public" virt="non-virtual">tvm::TypeConstraint</basecompoundref>
+    <includes refid="type__relation_8h" local="no">type_relation.h</includes>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classtvm_1_1TypeRelation_1ac26b1897eab8197ed26606ab81b7403b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>tvm::TypeRelation::TypeRelation</definition>
+        <argsstring>(TypeRelationFn func, Array&lt; Type &gt; args, int num_inputs, Attrs attrs)</argsstring>
+        <name>TypeRelation</name>
+        <param>
+          <type><ref refid="namespacetvm_1a72dcba4493adfcd8908663898ece3514" kindref="member">TypeRelationFn</ref></type>
+          <declname>func</declname>
+        </param>
+        <param>
+          <type><ref refid="classtvm_1_1Array" kindref="compound">Array</ref>&lt; <ref refid="classtvm_1_1Type" kindref="compound">Type</ref> &gt;</type>
+          <declname>args</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>num_inputs</declname>
+        </param>
+        <param>
+          <type><ref refid="classtvm_1_1Attrs" kindref="compound">Attrs</ref></type>
+          <declname>attrs</declname>
+        </param>
+        <briefdescription>
+<para><ref refid="classtvm_1_1Constructor" kindref="compound">Constructor</ref>. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>func</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The relation function. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>args</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The arguments to the type relation. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>num_inputs</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Number of inputs. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>attrs</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Attributes to the relation function. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="see"><para><ref refid="classtvm_1_1TypeRelationNode" kindref="compound">TypeRelationNode</ref> for more docs about these fields. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/ir/type_relation.h" line="242" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classtvm_1_1TypeRelation_1ad93ef54a0be61d0aa5eeb5752efb8772" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>tvm::TypeRelation::TVM_DEFINE_OBJECT_REF_METHODS</definition>
+        <argsstring>(TypeRelation, TypeConstraint, TypeRelationNode)</argsstring>
+        <name>TVM_DEFINE_OBJECT_REF_METHODS</name>
+        <param>
+          <type><ref refid="classtvm_1_1TypeRelation" kindref="compound">TypeRelation</ref></type>
+        </param>
+        <param>
+          <type><ref refid="classtvm_1_1TypeConstraint" kindref="compound">TypeConstraint</ref></type>
+        </param>
+        <param>
+          <type><ref refid="classtvm_1_1TypeRelationNode" kindref="compound">TypeRelationNode</ref></type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/ir/type_relation.h" line="247" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Managed reference to <ref refid="classtvm_1_1TypeRelationNode" kindref="compound">TypeRelationNode</ref>. </para>    </briefdescription>
+    <detaileddescription>
+<para><simplesect kind="see"><para><ref refid="classtvm_1_1TypeRelationNode" kindref="compound">TypeRelationNode</ref> </para></simplesect>
+</para>    </detaileddescription>
+    <inheritancegraph>
+      <node id="7463">
+        <label>ObjectRef</label>
+      </node>
+      <node id="7461">
+        <label>tvm::TypeConstraint</label>
+        <link refid="classtvm_1_1TypeConstraint"/>
+        <childnode refid="7462" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="7460">
+        <label>tvm::TypeRelation</label>
+        <link refid="classtvm_1_1TypeRelation"/>
+        <childnode refid="7461" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="7462">
+        <label>tvm::Type</label>
+        <link refid="classtvm_1_1Type"/>
+        <childnode refid="7463" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="7467">
+        <label>ObjectRef</label>
+      </node>
+      <node id="7465">
+        <label>tvm::TypeConstraint</label>
+        <link refid="classtvm_1_1TypeConstraint"/>
+        <childnode refid="7466" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="7464">
+        <label>tvm::TypeRelation</label>
+        <link refid="classtvm_1_1TypeRelation"/>
+        <childnode refid="7465" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="7466">
+        <label>tvm::Type</label>
+        <link refid="classtvm_1_1Type"/>
+        <childnode refid="7467" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="include/tvm/ir/type_relation.h" line="232" column="1" bodyfile="include/tvm/ir/type_relation.h" bodystart="232" bodyend="248"/>
+    <listofallmembers>
+      <member refid="classtvm_1_1TypeRelation_1ad93ef54a0be61d0aa5eeb5752efb8772" prot="public" virt="non-virtual"><scope>tvm::TypeRelation</scope><name>TVM_DEFINE_OBJECT_REF_METHODS</name></member>
+      <member refid="classtvm_1_1TypeConstraint_1a4aa7caa008e2810f5b999c85b5e3b62c" prot="public" virt="non-virtual" ambiguityscope="tvm::TypeConstraint::"><scope>tvm::TypeRelation</scope><name>TVM_DEFINE_OBJECT_REF_METHODS</name></member>
+      <member refid="classtvm_1_1Type_1a1188605b5afd297c39e614872a608a35" prot="public" virt="non-virtual" ambiguityscope="tvm::Type::"><scope>tvm::TypeRelation</scope><name>TVM_DEFINE_OBJECT_REF_METHODS</name></member>
+      <member refid="classtvm_1_1TypeRelation_1ac26b1897eab8197ed26606ab81b7403b" prot="public" virt="non-virtual"><scope>tvm::TypeRelation</scope><name>TypeRelation</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

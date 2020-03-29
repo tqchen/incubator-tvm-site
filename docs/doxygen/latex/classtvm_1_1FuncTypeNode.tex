@@ -1,0 +1,143 @@
+\hypertarget{classtvm_1_1FuncTypeNode}{}\section{tvm\+:\+:Func\+Type\+Node Class Reference}
+\label{classtvm_1_1FuncTypeNode}\index{tvm\+::\+Func\+Type\+Node@{tvm\+::\+Func\+Type\+Node}}
+
+
+Function type.  
+
+
+
+
+{\ttfamily \#include $<$type.\+h$>$}
+
+
+
+Inheritance diagram for tvm\+:\+:Func\+Type\+Node\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=285pt]{classtvm_1_1FuncTypeNode__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for tvm\+:\+:Func\+Type\+Node\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classtvm_1_1FuncTypeNode__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{classtvm_1_1FuncTypeNode_af24e0e62007ea125a1150e18d8b3009e}{Visit\+Attrs} (\hyperlink{classtvm_1_1AttrVisitor}{Attr\+Visitor} $\ast$v)
+\item 
+bool \hyperlink{classtvm_1_1FuncTypeNode_a948d4107485982ea371fae189f7f0d2e}{S\+Equal\+Reduce} (const \hyperlink{classtvm_1_1FuncTypeNode}{Func\+Type\+Node} $\ast$other, \hyperlink{classtvm_1_1SEqualReducer}{S\+Equal\+Reducer} equal) const 
+\item 
+void \hyperlink{classtvm_1_1FuncTypeNode_a854174cec06c0d4f3fdb5c621d533193}{S\+Hash\+Reduce} (\hyperlink{classtvm_1_1SHashReducer}{S\+Hash\+Reducer} hash\+\_\+reduce) const 
+\item 
+\hyperlink{classtvm_1_1FuncTypeNode_a71a9ad8adac8816aa61c3c8851765d04}{T\+V\+M\+\_\+\+D\+E\+C\+L\+A\+R\+E\+\_\+\+F\+I\+N\+A\+L\+\_\+\+O\+B\+J\+E\+C\+T\+\_\+\+I\+N\+FO} (\hyperlink{classtvm_1_1FuncTypeNode}{Func\+Type\+Node}, \hyperlink{classtvm_1_1TypeNode}{Type\+Node})
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classtvm_1_1Array}{Array}$<$ \hyperlink{classtvm_1_1Type}{Type} $>$ \hyperlink{classtvm_1_1FuncTypeNode_abffc654ce18e472ce19725dbaf5c7316}{arg\+\_\+types}
+\begin{DoxyCompactList}\small\item\em type type of arguments \end{DoxyCompactList}\item 
+\hyperlink{classtvm_1_1Type}{Type} \hyperlink{classtvm_1_1FuncTypeNode_a4d30bd05ee4751f963daf10f0c69036d}{ret\+\_\+type}
+\begin{DoxyCompactList}\small\item\em The type of return value. \end{DoxyCompactList}\item 
+\hyperlink{classtvm_1_1Array}{Array}$<$ \hyperlink{classtvm_1_1TypeVar}{Type\+Var} $>$ \hyperlink{classtvm_1_1FuncTypeNode_acc1bb373c5851f6cec016a874f304d05}{type\+\_\+params}
+\begin{DoxyCompactList}\small\item\em The type parameters of the function. \end{DoxyCompactList}\item 
+\hyperlink{classtvm_1_1Array}{Array}$<$ \hyperlink{classtvm_1_1TypeConstraint}{Type\+Constraint} $>$ \hyperlink{classtvm_1_1FuncTypeNode_a6dd6e8ed07019caa87943ec47d065499}{type\+\_\+constraints}
+\begin{DoxyCompactList}\small\item\em potential constraint the type need to obey \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static constexpr const char $\ast$ \hyperlink{classtvm_1_1FuncTypeNode_a1c1454430a69a07b9f32ca06db81f29e}{\+\_\+type\+\_\+key} = \char`\"{}Func\+Type\char`\"{}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Function type. 
+
+We support polymorphic function type. This can be roughly viewed as template function in C++.
+
+\begin{DoxySeeAlso}{See also}
+\hyperlink{classtvm_1_1FuncType}{Func\+Type}, \hyperlink{classtvm_1_1TypeVar}{Type\+Var}, \hyperlink{classtvm_1_1TypeConstraint}{Type\+Constraint} 
+\end{DoxySeeAlso}
+
+
+\subsection{Member Function Documentation}
+\index{tvm\+::\+Func\+Type\+Node@{tvm\+::\+Func\+Type\+Node}!S\+Equal\+Reduce@{S\+Equal\+Reduce}}
+\index{S\+Equal\+Reduce@{S\+Equal\+Reduce}!tvm\+::\+Func\+Type\+Node@{tvm\+::\+Func\+Type\+Node}}
+\subsubsection[{\texorpdfstring{S\+Equal\+Reduce(const Func\+Type\+Node $\ast$other, S\+Equal\+Reducer equal) const }{SEqualReduce(const FuncTypeNode *other, SEqualReducer equal) const }}]{\setlength{\rightskip}{0pt plus 5cm}bool tvm\+::\+Func\+Type\+Node\+::\+S\+Equal\+Reduce (
+\begin{DoxyParamCaption}
+\item[{const {\bf Func\+Type\+Node} $\ast$}]{other, }
+\item[{{\bf S\+Equal\+Reducer}}]{equal}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classtvm_1_1FuncTypeNode_a948d4107485982ea371fae189f7f0d2e}{}\label{classtvm_1_1FuncTypeNode_a948d4107485982ea371fae189f7f0d2e}
+\index{tvm\+::\+Func\+Type\+Node@{tvm\+::\+Func\+Type\+Node}!S\+Hash\+Reduce@{S\+Hash\+Reduce}}
+\index{S\+Hash\+Reduce@{S\+Hash\+Reduce}!tvm\+::\+Func\+Type\+Node@{tvm\+::\+Func\+Type\+Node}}
+\subsubsection[{\texorpdfstring{S\+Hash\+Reduce(\+S\+Hash\+Reducer hash\+\_\+reduce) const }{SHashReduce(SHashReducer hash_reduce) const }}]{\setlength{\rightskip}{0pt plus 5cm}void tvm\+::\+Func\+Type\+Node\+::\+S\+Hash\+Reduce (
+\begin{DoxyParamCaption}
+\item[{{\bf S\+Hash\+Reducer}}]{hash\+\_\+reduce}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classtvm_1_1FuncTypeNode_a854174cec06c0d4f3fdb5c621d533193}{}\label{classtvm_1_1FuncTypeNode_a854174cec06c0d4f3fdb5c621d533193}
+\index{tvm\+::\+Func\+Type\+Node@{tvm\+::\+Func\+Type\+Node}!T\+V\+M\+\_\+\+D\+E\+C\+L\+A\+R\+E\+\_\+\+F\+I\+N\+A\+L\+\_\+\+O\+B\+J\+E\+C\+T\+\_\+\+I\+N\+FO@{T\+V\+M\+\_\+\+D\+E\+C\+L\+A\+R\+E\+\_\+\+F\+I\+N\+A\+L\+\_\+\+O\+B\+J\+E\+C\+T\+\_\+\+I\+N\+FO}}
+\index{T\+V\+M\+\_\+\+D\+E\+C\+L\+A\+R\+E\+\_\+\+F\+I\+N\+A\+L\+\_\+\+O\+B\+J\+E\+C\+T\+\_\+\+I\+N\+FO@{T\+V\+M\+\_\+\+D\+E\+C\+L\+A\+R\+E\+\_\+\+F\+I\+N\+A\+L\+\_\+\+O\+B\+J\+E\+C\+T\+\_\+\+I\+N\+FO}!tvm\+::\+Func\+Type\+Node@{tvm\+::\+Func\+Type\+Node}}
+\subsubsection[{\texorpdfstring{T\+V\+M\+\_\+\+D\+E\+C\+L\+A\+R\+E\+\_\+\+F\+I\+N\+A\+L\+\_\+\+O\+B\+J\+E\+C\+T\+\_\+\+I\+N\+F\+O(\+Func\+Type\+Node, Type\+Node)}{TVM_DECLARE_FINAL_OBJECT_INFO(FuncTypeNode, TypeNode)}}]{\setlength{\rightskip}{0pt plus 5cm}tvm\+::\+Func\+Type\+Node\+::\+T\+V\+M\+\_\+\+D\+E\+C\+L\+A\+R\+E\+\_\+\+F\+I\+N\+A\+L\+\_\+\+O\+B\+J\+E\+C\+T\+\_\+\+I\+N\+FO (
+\begin{DoxyParamCaption}
+\item[{{\bf Func\+Type\+Node}}]{, }
+\item[{{\bf Type\+Node}}]{}
+\end{DoxyParamCaption}
+)}\hypertarget{classtvm_1_1FuncTypeNode_a71a9ad8adac8816aa61c3c8851765d04}{}\label{classtvm_1_1FuncTypeNode_a71a9ad8adac8816aa61c3c8851765d04}
+\index{tvm\+::\+Func\+Type\+Node@{tvm\+::\+Func\+Type\+Node}!Visit\+Attrs@{Visit\+Attrs}}
+\index{Visit\+Attrs@{Visit\+Attrs}!tvm\+::\+Func\+Type\+Node@{tvm\+::\+Func\+Type\+Node}}
+\subsubsection[{\texorpdfstring{Visit\+Attrs(\+Attr\+Visitor $\ast$v)}{VisitAttrs(AttrVisitor *v)}}]{\setlength{\rightskip}{0pt plus 5cm}void tvm\+::\+Func\+Type\+Node\+::\+Visit\+Attrs (
+\begin{DoxyParamCaption}
+\item[{{\bf Attr\+Visitor} $\ast$}]{v}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classtvm_1_1FuncTypeNode_af24e0e62007ea125a1150e18d8b3009e}{}\label{classtvm_1_1FuncTypeNode_af24e0e62007ea125a1150e18d8b3009e}
+
+
+\subsection{Member Data Documentation}
+\index{tvm\+::\+Func\+Type\+Node@{tvm\+::\+Func\+Type\+Node}!\+\_\+type\+\_\+key@{\+\_\+type\+\_\+key}}
+\index{\+\_\+type\+\_\+key@{\+\_\+type\+\_\+key}!tvm\+::\+Func\+Type\+Node@{tvm\+::\+Func\+Type\+Node}}
+\subsubsection[{\texorpdfstring{\+\_\+type\+\_\+key}{_type_key}}]{\setlength{\rightskip}{0pt plus 5cm}constexpr const char$\ast$ tvm\+::\+Func\+Type\+Node\+::\+\_\+type\+\_\+key = \char`\"{}Func\+Type\char`\"{}\hspace{0.3cm}{\ttfamily [static]}}\hypertarget{classtvm_1_1FuncTypeNode_a1c1454430a69a07b9f32ca06db81f29e}{}\label{classtvm_1_1FuncTypeNode_a1c1454430a69a07b9f32ca06db81f29e}
+\index{tvm\+::\+Func\+Type\+Node@{tvm\+::\+Func\+Type\+Node}!arg\+\_\+types@{arg\+\_\+types}}
+\index{arg\+\_\+types@{arg\+\_\+types}!tvm\+::\+Func\+Type\+Node@{tvm\+::\+Func\+Type\+Node}}
+\subsubsection[{\texorpdfstring{arg\+\_\+types}{arg_types}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Array}$<${\bf Type}$>$ tvm\+::\+Func\+Type\+Node\+::arg\+\_\+types}\hypertarget{classtvm_1_1FuncTypeNode_abffc654ce18e472ce19725dbaf5c7316}{}\label{classtvm_1_1FuncTypeNode_abffc654ce18e472ce19725dbaf5c7316}
+
+
+type type of arguments 
+
+\index{tvm\+::\+Func\+Type\+Node@{tvm\+::\+Func\+Type\+Node}!ret\+\_\+type@{ret\+\_\+type}}
+\index{ret\+\_\+type@{ret\+\_\+type}!tvm\+::\+Func\+Type\+Node@{tvm\+::\+Func\+Type\+Node}}
+\subsubsection[{\texorpdfstring{ret\+\_\+type}{ret_type}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Type} tvm\+::\+Func\+Type\+Node\+::ret\+\_\+type}\hypertarget{classtvm_1_1FuncTypeNode_a4d30bd05ee4751f963daf10f0c69036d}{}\label{classtvm_1_1FuncTypeNode_a4d30bd05ee4751f963daf10f0c69036d}
+
+
+The type of return value. 
+
+\index{tvm\+::\+Func\+Type\+Node@{tvm\+::\+Func\+Type\+Node}!type\+\_\+constraints@{type\+\_\+constraints}}
+\index{type\+\_\+constraints@{type\+\_\+constraints}!tvm\+::\+Func\+Type\+Node@{tvm\+::\+Func\+Type\+Node}}
+\subsubsection[{\texorpdfstring{type\+\_\+constraints}{type_constraints}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Array}$<${\bf Type\+Constraint}$>$ tvm\+::\+Func\+Type\+Node\+::type\+\_\+constraints}\hypertarget{classtvm_1_1FuncTypeNode_a6dd6e8ed07019caa87943ec47d065499}{}\label{classtvm_1_1FuncTypeNode_a6dd6e8ed07019caa87943ec47d065499}
+
+
+potential constraint the type need to obey 
+
+\begin{DoxyNote}{Note}
+this field is reserved for futher purposes. 
+\end{DoxyNote}
+\index{tvm\+::\+Func\+Type\+Node@{tvm\+::\+Func\+Type\+Node}!type\+\_\+params@{type\+\_\+params}}
+\index{type\+\_\+params@{type\+\_\+params}!tvm\+::\+Func\+Type\+Node@{tvm\+::\+Func\+Type\+Node}}
+\subsubsection[{\texorpdfstring{type\+\_\+params}{type_params}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Array}$<${\bf Type\+Var}$>$ tvm\+::\+Func\+Type\+Node\+::type\+\_\+params}\hypertarget{classtvm_1_1FuncTypeNode_acc1bb373c5851f6cec016a874f304d05}{}\label{classtvm_1_1FuncTypeNode_acc1bb373c5851f6cec016a874f304d05}
+
+
+The type parameters of the function. 
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+include/tvm/ir/\hyperlink{ir_2type_8h}{type.\+h}\end{DoxyCompactItemize}

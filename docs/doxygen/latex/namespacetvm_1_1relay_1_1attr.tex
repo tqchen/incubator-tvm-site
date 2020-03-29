@@ -1,0 +1,88 @@
+\hypertarget{namespacetvm_1_1relay_1_1attr}{}\section{tvm\+:\+:relay\+:\+:attr Namespace Reference}
+\label{namespacetvm_1_1relay_1_1attr}\index{tvm\+::relay\+::attr@{tvm\+::relay\+::attr}}
+
+
+namespace of the attributes that can be attached to a \hyperlink{classtvm_1_1relay_1_1Function}{relay\+::\+Function}.  
+
+
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+constexpr const char $\ast$ \hyperlink{namespacetvm_1_1relay_1_1attr_ac3c86a7b4b9e64aed0da4b8294278484}{k\+Primitive} = \char`\"{}Primitive\char`\"{}
+\begin{DoxyCompactList}\small\item\em Mark the function as a primitive function. \end{DoxyCompactList}\item 
+constexpr const char $\ast$ \hyperlink{namespacetvm_1_1relay_1_1attr_a0cc8498ce2c4e0ffd3b2814f65799148}{k\+Compiler} = \char`\"{}Compiler\char`\"{}
+\begin{DoxyCompactList}\small\item\em Indicate the compiler that should be used for builing this function. When this is unset or set to \char`\"{}default\char`\"{}, the default compilation pipeline will be used. \end{DoxyCompactList}\item 
+constexpr const char $\ast$ \hyperlink{namespacetvm_1_1relay_1_1attr_aef553198f20f8cd26b73cdfa61baec2a}{k\+Closure} = \char`\"{}Closure\char`\"{}
+\begin{DoxyCompactList}\small\item\em Indicate if the function is a closure. \end{DoxyCompactList}\item 
+constexpr const char $\ast$ \hyperlink{namespacetvm_1_1relay_1_1attr_a3cd72e0efb5bcba623c8af8cf0f5314d}{k\+Params} = \char`\"{}\+\_\+\+\_\+params\+\_\+\+\_\+\char`\"{}
+\begin{DoxyCompactList}\small\item\em Store a \hyperlink{classtvm_1_1relay_1_1Var}{Var} to parameter/\+Constant mapping on a \hyperlink{classtvm_1_1relay_1_1Function}{Function}. \end{DoxyCompactList}\item 
+constexpr const char $\ast$ \hyperlink{namespacetvm_1_1relay_1_1attr_ae61f67fa7105e9ef262770ccc840cdb4}{k\+External\+Symbol} = \char`\"{}External\+Symbol\char`\"{}
+\begin{DoxyCompactList}\small\item\em Store the unique external symbol for external compilers. \end{DoxyCompactList}\item 
+constexpr const char $\ast$ \hyperlink{namespacetvm_1_1relay_1_1attr_aed3671df7e12d228b8070806d07f7c62}{k\+Skip\+Optimization} = \char`\"{}Skip\+Optimization\char`\"{}
+\begin{DoxyCompactList}\small\item\em Mark if the function should be avoided being optimized. \end{DoxyCompactList}\item 
+constexpr const char $\ast$ \hyperlink{namespacetvm_1_1relay_1_1attr_a04f8f1b117293d37651f8c81135802a2}{k\+Composite} = \char`\"{}Composite\char`\"{}
+\begin{DoxyCompactList}\small\item\em Treat the function as a composite operator. \end{DoxyCompactList}\item 
+constexpr const char $\ast$ \hyperlink{namespacetvm_1_1relay_1_1attr_ad294262b6b1ca1b7bf3924a139f17562}{k\+Inline} = \char`\"{}Inline\char`\"{}
+\begin{DoxyCompactList}\small\item\em Mark the function to be inlined. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+namespace of the attributes that can be attached to a \hyperlink{classtvm_1_1relay_1_1Function}{relay\+::\+Function}. 
+
+\subsection{Variable Documentation}
+\index{tvm\+::relay\+::attr@{tvm\+::relay\+::attr}!k\+Closure@{k\+Closure}}
+\index{k\+Closure@{k\+Closure}!tvm\+::relay\+::attr@{tvm\+::relay\+::attr}}
+\subsubsection[{\texorpdfstring{k\+Closure}{kClosure}}]{\setlength{\rightskip}{0pt plus 5cm}constexpr const char$\ast$ tvm\+::relay\+::attr\+::k\+Closure = \char`\"{}Closure\char`\"{}}\hypertarget{namespacetvm_1_1relay_1_1attr_aef553198f20f8cd26b73cdfa61baec2a}{}\label{namespacetvm_1_1relay_1_1attr_aef553198f20f8cd26b73cdfa61baec2a}
+
+
+Indicate if the function is a closure. 
+
+\index{tvm\+::relay\+::attr@{tvm\+::relay\+::attr}!k\+Compiler@{k\+Compiler}}
+\index{k\+Compiler@{k\+Compiler}!tvm\+::relay\+::attr@{tvm\+::relay\+::attr}}
+\subsubsection[{\texorpdfstring{k\+Compiler}{kCompiler}}]{\setlength{\rightskip}{0pt plus 5cm}constexpr const char$\ast$ tvm\+::relay\+::attr\+::k\+Compiler = \char`\"{}Compiler\char`\"{}}\hypertarget{namespacetvm_1_1relay_1_1attr_a0cc8498ce2c4e0ffd3b2814f65799148}{}\label{namespacetvm_1_1relay_1_1attr_a0cc8498ce2c4e0ffd3b2814f65799148}
+
+
+Indicate the compiler that should be used for builing this function. When this is unset or set to \char`\"{}default\char`\"{}, the default compilation pipeline will be used. 
+
+\index{tvm\+::relay\+::attr@{tvm\+::relay\+::attr}!k\+Composite@{k\+Composite}}
+\index{k\+Composite@{k\+Composite}!tvm\+::relay\+::attr@{tvm\+::relay\+::attr}}
+\subsubsection[{\texorpdfstring{k\+Composite}{kComposite}}]{\setlength{\rightskip}{0pt plus 5cm}constexpr const char$\ast$ tvm\+::relay\+::attr\+::k\+Composite = \char`\"{}Composite\char`\"{}}\hypertarget{namespacetvm_1_1relay_1_1attr_a04f8f1b117293d37651f8c81135802a2}{}\label{namespacetvm_1_1relay_1_1attr_a04f8f1b117293d37651f8c81135802a2}
+
+
+Treat the function as a composite operator. 
+
+\index{tvm\+::relay\+::attr@{tvm\+::relay\+::attr}!k\+External\+Symbol@{k\+External\+Symbol}}
+\index{k\+External\+Symbol@{k\+External\+Symbol}!tvm\+::relay\+::attr@{tvm\+::relay\+::attr}}
+\subsubsection[{\texorpdfstring{k\+External\+Symbol}{kExternalSymbol}}]{\setlength{\rightskip}{0pt plus 5cm}constexpr const char$\ast$ tvm\+::relay\+::attr\+::k\+External\+Symbol = \char`\"{}External\+Symbol\char`\"{}}\hypertarget{namespacetvm_1_1relay_1_1attr_ae61f67fa7105e9ef262770ccc840cdb4}{}\label{namespacetvm_1_1relay_1_1attr_ae61f67fa7105e9ef262770ccc840cdb4}
+
+
+Store the unique external symbol for external compilers. 
+
+\index{tvm\+::relay\+::attr@{tvm\+::relay\+::attr}!k\+Inline@{k\+Inline}}
+\index{k\+Inline@{k\+Inline}!tvm\+::relay\+::attr@{tvm\+::relay\+::attr}}
+\subsubsection[{\texorpdfstring{k\+Inline}{kInline}}]{\setlength{\rightskip}{0pt plus 5cm}constexpr const char$\ast$ tvm\+::relay\+::attr\+::k\+Inline = \char`\"{}Inline\char`\"{}}\hypertarget{namespacetvm_1_1relay_1_1attr_ad294262b6b1ca1b7bf3924a139f17562}{}\label{namespacetvm_1_1relay_1_1attr_ad294262b6b1ca1b7bf3924a139f17562}
+
+
+Mark the function to be inlined. 
+
+\index{tvm\+::relay\+::attr@{tvm\+::relay\+::attr}!k\+Params@{k\+Params}}
+\index{k\+Params@{k\+Params}!tvm\+::relay\+::attr@{tvm\+::relay\+::attr}}
+\subsubsection[{\texorpdfstring{k\+Params}{kParams}}]{\setlength{\rightskip}{0pt plus 5cm}constexpr const char$\ast$ tvm\+::relay\+::attr\+::k\+Params = \char`\"{}\+\_\+\+\_\+params\+\_\+\+\_\+\char`\"{}}\hypertarget{namespacetvm_1_1relay_1_1attr_a3cd72e0efb5bcba623c8af8cf0f5314d}{}\label{namespacetvm_1_1relay_1_1attr_a3cd72e0efb5bcba623c8af8cf0f5314d}
+
+
+Store a \hyperlink{classtvm_1_1relay_1_1Var}{Var} to parameter/\+Constant mapping on a \hyperlink{classtvm_1_1relay_1_1Function}{Function}. 
+
+\index{tvm\+::relay\+::attr@{tvm\+::relay\+::attr}!k\+Primitive@{k\+Primitive}}
+\index{k\+Primitive@{k\+Primitive}!tvm\+::relay\+::attr@{tvm\+::relay\+::attr}}
+\subsubsection[{\texorpdfstring{k\+Primitive}{kPrimitive}}]{\setlength{\rightskip}{0pt plus 5cm}constexpr const char$\ast$ tvm\+::relay\+::attr\+::k\+Primitive = \char`\"{}Primitive\char`\"{}}\hypertarget{namespacetvm_1_1relay_1_1attr_ac3c86a7b4b9e64aed0da4b8294278484}{}\label{namespacetvm_1_1relay_1_1attr_ac3c86a7b4b9e64aed0da4b8294278484}
+
+
+Mark the function as a primitive function. 
+
+\index{tvm\+::relay\+::attr@{tvm\+::relay\+::attr}!k\+Skip\+Optimization@{k\+Skip\+Optimization}}
+\index{k\+Skip\+Optimization@{k\+Skip\+Optimization}!tvm\+::relay\+::attr@{tvm\+::relay\+::attr}}
+\subsubsection[{\texorpdfstring{k\+Skip\+Optimization}{kSkipOptimization}}]{\setlength{\rightskip}{0pt plus 5cm}constexpr const char$\ast$ tvm\+::relay\+::attr\+::k\+Skip\+Optimization = \char`\"{}Skip\+Optimization\char`\"{}}\hypertarget{namespacetvm_1_1relay_1_1attr_aed3671df7e12d228b8070806d07f7c62}{}\label{namespacetvm_1_1relay_1_1attr_aed3671df7e12d228b8070806d07f7c62}
+
+
+Mark if the function should be avoided being optimized. 
+

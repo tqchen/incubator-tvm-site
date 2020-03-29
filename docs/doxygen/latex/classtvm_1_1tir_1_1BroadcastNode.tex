@@ -1,0 +1,128 @@
+\hypertarget{classtvm_1_1tir_1_1BroadcastNode}{}\section{tvm\+:\+:tir\+:\+:Broadcast\+Node Class Reference}
+\label{classtvm_1_1tir_1_1BroadcastNode}\index{tvm\+::tir\+::\+Broadcast\+Node@{tvm\+::tir\+::\+Broadcast\+Node}}
+
+
+Create a vector where all the elements are value.  
+
+
+
+
+{\ttfamily \#include $<$expr.\+h$>$}
+
+
+
+Inheritance diagram for tvm\+:\+:tir\+:\+:Broadcast\+Node\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=285pt]{classtvm_1_1tir_1_1BroadcastNode__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for tvm\+:\+:tir\+:\+:Broadcast\+Node\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classtvm_1_1tir_1_1BroadcastNode__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{classtvm_1_1tir_1_1BroadcastNode_a026e3fc65aa96093332df829def152f1}{Visit\+Attrs} (\hyperlink{classtvm_1_1AttrVisitor}{Attr\+Visitor} $\ast$v)
+\item 
+bool \hyperlink{classtvm_1_1tir_1_1BroadcastNode_ac2a82fc08ca7841339b4bf7330a36580}{S\+Equal\+Reduce} (const \hyperlink{classtvm_1_1tir_1_1BroadcastNode}{Broadcast\+Node} $\ast$other, \hyperlink{classtvm_1_1SEqualReducer}{S\+Equal\+Reducer} equal) const 
+\item 
+void \hyperlink{classtvm_1_1tir_1_1BroadcastNode_a1c04c5319f89fca5fd60ed7f84726c11}{S\+Hash\+Reduce} (\hyperlink{classtvm_1_1SHashReducer}{S\+Hash\+Reducer} hash\+\_\+reduce) const 
+\item 
+\hyperlink{classtvm_1_1tir_1_1BroadcastNode_a92870dff9a0739ddb0dbe773f6ba796b}{T\+V\+M\+\_\+\+D\+E\+C\+L\+A\+R\+E\+\_\+\+F\+I\+N\+A\+L\+\_\+\+O\+B\+J\+E\+C\+T\+\_\+\+I\+N\+FO} (\hyperlink{classtvm_1_1tir_1_1BroadcastNode}{Broadcast\+Node}, \hyperlink{classtvm_1_1PrimExprNode}{Prim\+Expr\+Node})
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \hyperlink{classtvm_1_1PrimExpr}{Prim\+Expr} \hyperlink{classtvm_1_1tir_1_1BroadcastNode_a6763d63d93677c038763d1f985f877e0}{make} (\hyperlink{classtvm_1_1PrimExpr}{Prim\+Expr} \hyperlink{classtvm_1_1tir_1_1BroadcastNode_ac57a290b1c990251951305769d340bdd}{value}, int \hyperlink{classtvm_1_1tir_1_1BroadcastNode_a2190fc3b4957c2307e8de59e1bd3f025}{lanes})
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classtvm_1_1PrimExpr}{Prim\+Expr} \hyperlink{classtvm_1_1tir_1_1BroadcastNode_ac57a290b1c990251951305769d340bdd}{value}
+\begin{DoxyCompactList}\small\item\em The base value. \end{DoxyCompactList}\item 
+int \hyperlink{classtvm_1_1tir_1_1BroadcastNode_a2190fc3b4957c2307e8de59e1bd3f025}{lanes}
+\begin{DoxyCompactList}\small\item\em The number of lanes. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static constexpr const char $\ast$ \hyperlink{classtvm_1_1tir_1_1BroadcastNode_a10f5924649cdeb463daaebaceb09c6b6}{\+\_\+type\+\_\+key} = \char`\"{}Broadcast\char`\"{}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Create a vector where all the elements are value. 
+
+\subsection{Member Function Documentation}
+\index{tvm\+::tir\+::\+Broadcast\+Node@{tvm\+::tir\+::\+Broadcast\+Node}!make@{make}}
+\index{make@{make}!tvm\+::tir\+::\+Broadcast\+Node@{tvm\+::tir\+::\+Broadcast\+Node}}
+\subsubsection[{\texorpdfstring{make(\+Prim\+Expr value, int lanes)}{make(PrimExpr value, int lanes)}}]{\setlength{\rightskip}{0pt plus 5cm}static {\bf Prim\+Expr} tvm\+::tir\+::\+Broadcast\+Node\+::make (
+\begin{DoxyParamCaption}
+\item[{{\bf Prim\+Expr}}]{value, }
+\item[{int}]{lanes}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}\hypertarget{classtvm_1_1tir_1_1BroadcastNode_a6763d63d93677c038763d1f985f877e0}{}\label{classtvm_1_1tir_1_1BroadcastNode_a6763d63d93677c038763d1f985f877e0}
+\index{tvm\+::tir\+::\+Broadcast\+Node@{tvm\+::tir\+::\+Broadcast\+Node}!S\+Equal\+Reduce@{S\+Equal\+Reduce}}
+\index{S\+Equal\+Reduce@{S\+Equal\+Reduce}!tvm\+::tir\+::\+Broadcast\+Node@{tvm\+::tir\+::\+Broadcast\+Node}}
+\subsubsection[{\texorpdfstring{S\+Equal\+Reduce(const Broadcast\+Node $\ast$other, S\+Equal\+Reducer equal) const }{SEqualReduce(const BroadcastNode *other, SEqualReducer equal) const }}]{\setlength{\rightskip}{0pt plus 5cm}bool tvm\+::tir\+::\+Broadcast\+Node\+::\+S\+Equal\+Reduce (
+\begin{DoxyParamCaption}
+\item[{const {\bf Broadcast\+Node} $\ast$}]{other, }
+\item[{{\bf S\+Equal\+Reducer}}]{equal}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classtvm_1_1tir_1_1BroadcastNode_ac2a82fc08ca7841339b4bf7330a36580}{}\label{classtvm_1_1tir_1_1BroadcastNode_ac2a82fc08ca7841339b4bf7330a36580}
+\index{tvm\+::tir\+::\+Broadcast\+Node@{tvm\+::tir\+::\+Broadcast\+Node}!S\+Hash\+Reduce@{S\+Hash\+Reduce}}
+\index{S\+Hash\+Reduce@{S\+Hash\+Reduce}!tvm\+::tir\+::\+Broadcast\+Node@{tvm\+::tir\+::\+Broadcast\+Node}}
+\subsubsection[{\texorpdfstring{S\+Hash\+Reduce(\+S\+Hash\+Reducer hash\+\_\+reduce) const }{SHashReduce(SHashReducer hash_reduce) const }}]{\setlength{\rightskip}{0pt plus 5cm}void tvm\+::tir\+::\+Broadcast\+Node\+::\+S\+Hash\+Reduce (
+\begin{DoxyParamCaption}
+\item[{{\bf S\+Hash\+Reducer}}]{hash\+\_\+reduce}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classtvm_1_1tir_1_1BroadcastNode_a1c04c5319f89fca5fd60ed7f84726c11}{}\label{classtvm_1_1tir_1_1BroadcastNode_a1c04c5319f89fca5fd60ed7f84726c11}
+\index{tvm\+::tir\+::\+Broadcast\+Node@{tvm\+::tir\+::\+Broadcast\+Node}!T\+V\+M\+\_\+\+D\+E\+C\+L\+A\+R\+E\+\_\+\+F\+I\+N\+A\+L\+\_\+\+O\+B\+J\+E\+C\+T\+\_\+\+I\+N\+FO@{T\+V\+M\+\_\+\+D\+E\+C\+L\+A\+R\+E\+\_\+\+F\+I\+N\+A\+L\+\_\+\+O\+B\+J\+E\+C\+T\+\_\+\+I\+N\+FO}}
+\index{T\+V\+M\+\_\+\+D\+E\+C\+L\+A\+R\+E\+\_\+\+F\+I\+N\+A\+L\+\_\+\+O\+B\+J\+E\+C\+T\+\_\+\+I\+N\+FO@{T\+V\+M\+\_\+\+D\+E\+C\+L\+A\+R\+E\+\_\+\+F\+I\+N\+A\+L\+\_\+\+O\+B\+J\+E\+C\+T\+\_\+\+I\+N\+FO}!tvm\+::tir\+::\+Broadcast\+Node@{tvm\+::tir\+::\+Broadcast\+Node}}
+\subsubsection[{\texorpdfstring{T\+V\+M\+\_\+\+D\+E\+C\+L\+A\+R\+E\+\_\+\+F\+I\+N\+A\+L\+\_\+\+O\+B\+J\+E\+C\+T\+\_\+\+I\+N\+F\+O(\+Broadcast\+Node, Prim\+Expr\+Node)}{TVM_DECLARE_FINAL_OBJECT_INFO(BroadcastNode, PrimExprNode)}}]{\setlength{\rightskip}{0pt plus 5cm}tvm\+::tir\+::\+Broadcast\+Node\+::\+T\+V\+M\+\_\+\+D\+E\+C\+L\+A\+R\+E\+\_\+\+F\+I\+N\+A\+L\+\_\+\+O\+B\+J\+E\+C\+T\+\_\+\+I\+N\+FO (
+\begin{DoxyParamCaption}
+\item[{{\bf Broadcast\+Node}}]{, }
+\item[{{\bf Prim\+Expr\+Node}}]{}
+\end{DoxyParamCaption}
+)}\hypertarget{classtvm_1_1tir_1_1BroadcastNode_a92870dff9a0739ddb0dbe773f6ba796b}{}\label{classtvm_1_1tir_1_1BroadcastNode_a92870dff9a0739ddb0dbe773f6ba796b}
+\index{tvm\+::tir\+::\+Broadcast\+Node@{tvm\+::tir\+::\+Broadcast\+Node}!Visit\+Attrs@{Visit\+Attrs}}
+\index{Visit\+Attrs@{Visit\+Attrs}!tvm\+::tir\+::\+Broadcast\+Node@{tvm\+::tir\+::\+Broadcast\+Node}}
+\subsubsection[{\texorpdfstring{Visit\+Attrs(\+Attr\+Visitor $\ast$v)}{VisitAttrs(AttrVisitor *v)}}]{\setlength{\rightskip}{0pt plus 5cm}void tvm\+::tir\+::\+Broadcast\+Node\+::\+Visit\+Attrs (
+\begin{DoxyParamCaption}
+\item[{{\bf Attr\+Visitor} $\ast$}]{v}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classtvm_1_1tir_1_1BroadcastNode_a026e3fc65aa96093332df829def152f1}{}\label{classtvm_1_1tir_1_1BroadcastNode_a026e3fc65aa96093332df829def152f1}
+
+
+\subsection{Member Data Documentation}
+\index{tvm\+::tir\+::\+Broadcast\+Node@{tvm\+::tir\+::\+Broadcast\+Node}!\+\_\+type\+\_\+key@{\+\_\+type\+\_\+key}}
+\index{\+\_\+type\+\_\+key@{\+\_\+type\+\_\+key}!tvm\+::tir\+::\+Broadcast\+Node@{tvm\+::tir\+::\+Broadcast\+Node}}
+\subsubsection[{\texorpdfstring{\+\_\+type\+\_\+key}{_type_key}}]{\setlength{\rightskip}{0pt plus 5cm}constexpr const char$\ast$ tvm\+::tir\+::\+Broadcast\+Node\+::\+\_\+type\+\_\+key = \char`\"{}Broadcast\char`\"{}\hspace{0.3cm}{\ttfamily [static]}}\hypertarget{classtvm_1_1tir_1_1BroadcastNode_a10f5924649cdeb463daaebaceb09c6b6}{}\label{classtvm_1_1tir_1_1BroadcastNode_a10f5924649cdeb463daaebaceb09c6b6}
+\index{tvm\+::tir\+::\+Broadcast\+Node@{tvm\+::tir\+::\+Broadcast\+Node}!lanes@{lanes}}
+\index{lanes@{lanes}!tvm\+::tir\+::\+Broadcast\+Node@{tvm\+::tir\+::\+Broadcast\+Node}}
+\subsubsection[{\texorpdfstring{lanes}{lanes}}]{\setlength{\rightskip}{0pt plus 5cm}int tvm\+::tir\+::\+Broadcast\+Node\+::lanes}\hypertarget{classtvm_1_1tir_1_1BroadcastNode_a2190fc3b4957c2307e8de59e1bd3f025}{}\label{classtvm_1_1tir_1_1BroadcastNode_a2190fc3b4957c2307e8de59e1bd3f025}
+
+
+The number of lanes. 
+
+\index{tvm\+::tir\+::\+Broadcast\+Node@{tvm\+::tir\+::\+Broadcast\+Node}!value@{value}}
+\index{value@{value}!tvm\+::tir\+::\+Broadcast\+Node@{tvm\+::tir\+::\+Broadcast\+Node}}
+\subsubsection[{\texorpdfstring{value}{value}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Prim\+Expr} tvm\+::tir\+::\+Broadcast\+Node\+::value}\hypertarget{classtvm_1_1tir_1_1BroadcastNode_ac57a290b1c990251951305769d340bdd}{}\label{classtvm_1_1tir_1_1BroadcastNode_ac57a290b1c990251951305769d340bdd}
+
+
+The base value. 
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+include/tvm/tir/\hyperlink{tir_2expr_8h}{expr.\+h}\end{DoxyCompactItemize}

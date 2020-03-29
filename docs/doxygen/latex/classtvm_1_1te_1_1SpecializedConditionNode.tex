@@ -1,0 +1,87 @@
+\hypertarget{classtvm_1_1te_1_1SpecializedConditionNode}{}\section{tvm\+:\+:te\+:\+:Specialized\+Condition\+Node Class Reference}
+\label{classtvm_1_1te_1_1SpecializedConditionNode}\index{tvm\+::te\+::\+Specialized\+Condition\+Node@{tvm\+::te\+::\+Specialized\+Condition\+Node}}
+
+
+Container for specialization conditions.  
+
+
+
+
+{\ttfamily \#include $<$schedule.\+h$>$}
+
+
+
+Inheritance diagram for tvm\+:\+:te\+:\+:Specialized\+Condition\+Node\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=285pt]{classtvm_1_1te_1_1SpecializedConditionNode__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for tvm\+:\+:te\+:\+:Specialized\+Condition\+Node\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=343pt]{classtvm_1_1te_1_1SpecializedConditionNode__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{classtvm_1_1te_1_1SpecializedConditionNode_a75987b8fdad0073de0234446e9c30b24}{Visit\+Attrs} (\hyperlink{classtvm_1_1AttrVisitor}{Attr\+Visitor} $\ast$v)
+\item 
+\hyperlink{classtvm_1_1te_1_1SpecializedConditionNode_ae1d3f3c1cd0996e18af453ff20b02048}{T\+V\+M\+\_\+\+D\+E\+C\+L\+A\+R\+E\+\_\+\+F\+I\+N\+A\+L\+\_\+\+O\+B\+J\+E\+C\+T\+\_\+\+I\+N\+FO} (\hyperlink{classtvm_1_1te_1_1SpecializedConditionNode}{Specialized\+Condition\+Node}, Object)
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classtvm_1_1Array}{Array}$<$ \hyperlink{classtvm_1_1PrimExpr}{Prim\+Expr} $>$ \hyperlink{classtvm_1_1te_1_1SpecializedConditionNode_a8121936069bdc150f53c6c116100b8ad}{clauses}
+\begin{DoxyCompactList}\small\item\em List of conditions in conjunctive joint form (C\+NF). Each condition should be a simple expression, e.\+g., n $>$ 16, m \% 8 == 0, etc., where n, m are tvm\+::\+Var that represents a dimension in the tensor shape. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static constexpr const char $\ast$ \hyperlink{classtvm_1_1te_1_1SpecializedConditionNode_a1772ec154d41ff8c2f4bfb692eee327d}{\+\_\+type\+\_\+key} = \char`\"{}Specialized\+Condition\char`\"{}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Container for specialization conditions. 
+
+\subsection{Member Function Documentation}
+\index{tvm\+::te\+::\+Specialized\+Condition\+Node@{tvm\+::te\+::\+Specialized\+Condition\+Node}!T\+V\+M\+\_\+\+D\+E\+C\+L\+A\+R\+E\+\_\+\+F\+I\+N\+A\+L\+\_\+\+O\+B\+J\+E\+C\+T\+\_\+\+I\+N\+FO@{T\+V\+M\+\_\+\+D\+E\+C\+L\+A\+R\+E\+\_\+\+F\+I\+N\+A\+L\+\_\+\+O\+B\+J\+E\+C\+T\+\_\+\+I\+N\+FO}}
+\index{T\+V\+M\+\_\+\+D\+E\+C\+L\+A\+R\+E\+\_\+\+F\+I\+N\+A\+L\+\_\+\+O\+B\+J\+E\+C\+T\+\_\+\+I\+N\+FO@{T\+V\+M\+\_\+\+D\+E\+C\+L\+A\+R\+E\+\_\+\+F\+I\+N\+A\+L\+\_\+\+O\+B\+J\+E\+C\+T\+\_\+\+I\+N\+FO}!tvm\+::te\+::\+Specialized\+Condition\+Node@{tvm\+::te\+::\+Specialized\+Condition\+Node}}
+\subsubsection[{\texorpdfstring{T\+V\+M\+\_\+\+D\+E\+C\+L\+A\+R\+E\+\_\+\+F\+I\+N\+A\+L\+\_\+\+O\+B\+J\+E\+C\+T\+\_\+\+I\+N\+F\+O(\+Specialized\+Condition\+Node, Object)}{TVM_DECLARE_FINAL_OBJECT_INFO(SpecializedConditionNode, Object)}}]{\setlength{\rightskip}{0pt plus 5cm}tvm\+::te\+::\+Specialized\+Condition\+Node\+::\+T\+V\+M\+\_\+\+D\+E\+C\+L\+A\+R\+E\+\_\+\+F\+I\+N\+A\+L\+\_\+\+O\+B\+J\+E\+C\+T\+\_\+\+I\+N\+FO (
+\begin{DoxyParamCaption}
+\item[{{\bf Specialized\+Condition\+Node}}]{, }
+\item[{Object}]{}
+\end{DoxyParamCaption}
+)}\hypertarget{classtvm_1_1te_1_1SpecializedConditionNode_ae1d3f3c1cd0996e18af453ff20b02048}{}\label{classtvm_1_1te_1_1SpecializedConditionNode_ae1d3f3c1cd0996e18af453ff20b02048}
+\index{tvm\+::te\+::\+Specialized\+Condition\+Node@{tvm\+::te\+::\+Specialized\+Condition\+Node}!Visit\+Attrs@{Visit\+Attrs}}
+\index{Visit\+Attrs@{Visit\+Attrs}!tvm\+::te\+::\+Specialized\+Condition\+Node@{tvm\+::te\+::\+Specialized\+Condition\+Node}}
+\subsubsection[{\texorpdfstring{Visit\+Attrs(\+Attr\+Visitor $\ast$v)}{VisitAttrs(AttrVisitor *v)}}]{\setlength{\rightskip}{0pt plus 5cm}void tvm\+::te\+::\+Specialized\+Condition\+Node\+::\+Visit\+Attrs (
+\begin{DoxyParamCaption}
+\item[{{\bf Attr\+Visitor} $\ast$}]{v}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classtvm_1_1te_1_1SpecializedConditionNode_a75987b8fdad0073de0234446e9c30b24}{}\label{classtvm_1_1te_1_1SpecializedConditionNode_a75987b8fdad0073de0234446e9c30b24}
+
+
+\subsection{Member Data Documentation}
+\index{tvm\+::te\+::\+Specialized\+Condition\+Node@{tvm\+::te\+::\+Specialized\+Condition\+Node}!\+\_\+type\+\_\+key@{\+\_\+type\+\_\+key}}
+\index{\+\_\+type\+\_\+key@{\+\_\+type\+\_\+key}!tvm\+::te\+::\+Specialized\+Condition\+Node@{tvm\+::te\+::\+Specialized\+Condition\+Node}}
+\subsubsection[{\texorpdfstring{\+\_\+type\+\_\+key}{_type_key}}]{\setlength{\rightskip}{0pt plus 5cm}constexpr const char$\ast$ tvm\+::te\+::\+Specialized\+Condition\+Node\+::\+\_\+type\+\_\+key = \char`\"{}Specialized\+Condition\char`\"{}\hspace{0.3cm}{\ttfamily [static]}}\hypertarget{classtvm_1_1te_1_1SpecializedConditionNode_a1772ec154d41ff8c2f4bfb692eee327d}{}\label{classtvm_1_1te_1_1SpecializedConditionNode_a1772ec154d41ff8c2f4bfb692eee327d}
+\index{tvm\+::te\+::\+Specialized\+Condition\+Node@{tvm\+::te\+::\+Specialized\+Condition\+Node}!clauses@{clauses}}
+\index{clauses@{clauses}!tvm\+::te\+::\+Specialized\+Condition\+Node@{tvm\+::te\+::\+Specialized\+Condition\+Node}}
+\subsubsection[{\texorpdfstring{clauses}{clauses}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Array}$<${\bf Prim\+Expr}$>$ tvm\+::te\+::\+Specialized\+Condition\+Node\+::clauses}\hypertarget{classtvm_1_1te_1_1SpecializedConditionNode_a8121936069bdc150f53c6c116100b8ad}{}\label{classtvm_1_1te_1_1SpecializedConditionNode_a8121936069bdc150f53c6c116100b8ad}
+
+
+List of conditions in conjunctive joint form (C\+NF). Each condition should be a simple expression, e.\+g., n $>$ 16, m \% 8 == 0, etc., where n, m are tvm\+::\+Var that represents a dimension in the tensor shape. 
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+include/tvm/te/\hyperlink{schedule_8h}{schedule.\+h}\end{DoxyCompactItemize}

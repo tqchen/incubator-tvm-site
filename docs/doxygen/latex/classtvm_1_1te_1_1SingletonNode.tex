@@ -1,0 +1,99 @@
+\hypertarget{classtvm_1_1te_1_1SingletonNode}{}\section{tvm\+:\+:te\+:\+:Singleton\+Node Class Reference}
+\label{classtvm_1_1te_1_1SingletonNode}\index{tvm\+::te\+::\+Singleton\+Node@{tvm\+::te\+::\+Singleton\+Node}}
+
+
+Singleton iterator \mbox{[}0, 1)  
+
+
+
+
+{\ttfamily \#include $<$schedule.\+h$>$}
+
+
+
+Inheritance diagram for tvm\+:\+:te\+:\+:Singleton\+Node\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=285pt]{classtvm_1_1te_1_1SingletonNode__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for tvm\+:\+:te\+:\+:Singleton\+Node\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classtvm_1_1te_1_1SingletonNode__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{classtvm_1_1te_1_1SingletonNode_a224061c98cfd22f25435e5ac9b0f8228}{Visit\+Attrs} (\hyperlink{classtvm_1_1AttrVisitor}{Attr\+Visitor} $\ast$v)
+\item 
+\hyperlink{classtvm_1_1te_1_1SingletonNode_aa1bc95f455d8579cd48a0264f90d1774}{T\+V\+M\+\_\+\+D\+E\+C\+L\+A\+R\+E\+\_\+\+F\+I\+N\+A\+L\+\_\+\+O\+B\+J\+E\+C\+T\+\_\+\+I\+N\+FO} (\hyperlink{classtvm_1_1te_1_1SingletonNode}{Singleton\+Node}, \hyperlink{classtvm_1_1te_1_1IterVarRelationNode}{Iter\+Var\+Relation\+Node})
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \hyperlink{classtvm_1_1te_1_1IterVarRelation}{Iter\+Var\+Relation} \hyperlink{classtvm_1_1te_1_1SingletonNode_aa9a0a30449bb325fa59310880e3f1510}{make} (\hyperlink{classtvm_1_1tir_1_1IterVar}{Iter\+Var} \hyperlink{classtvm_1_1te_1_1SingletonNode_a4a33beb28fc1394654684ad92aca226d}{iter})
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classtvm_1_1tir_1_1IterVar}{Iter\+Var} \hyperlink{classtvm_1_1te_1_1SingletonNode_a4a33beb28fc1394654684ad92aca226d}{iter}
+\begin{DoxyCompactList}\small\item\em The singleton iterator. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static constexpr const char $\ast$ \hyperlink{classtvm_1_1te_1_1SingletonNode_a943dcb03cc28079b6d2d2374e64dfbb3}{\+\_\+type\+\_\+key} = \char`\"{}Singleton\char`\"{}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Singleton iterator \mbox{[}0, 1) 
+
+\subsection{Member Function Documentation}
+\index{tvm\+::te\+::\+Singleton\+Node@{tvm\+::te\+::\+Singleton\+Node}!make@{make}}
+\index{make@{make}!tvm\+::te\+::\+Singleton\+Node@{tvm\+::te\+::\+Singleton\+Node}}
+\subsubsection[{\texorpdfstring{make(\+Iter\+Var iter)}{make(IterVar iter)}}]{\setlength{\rightskip}{0pt plus 5cm}static {\bf Iter\+Var\+Relation} tvm\+::te\+::\+Singleton\+Node\+::make (
+\begin{DoxyParamCaption}
+\item[{{\bf Iter\+Var}}]{iter}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}\hypertarget{classtvm_1_1te_1_1SingletonNode_aa9a0a30449bb325fa59310880e3f1510}{}\label{classtvm_1_1te_1_1SingletonNode_aa9a0a30449bb325fa59310880e3f1510}
+\index{tvm\+::te\+::\+Singleton\+Node@{tvm\+::te\+::\+Singleton\+Node}!T\+V\+M\+\_\+\+D\+E\+C\+L\+A\+R\+E\+\_\+\+F\+I\+N\+A\+L\+\_\+\+O\+B\+J\+E\+C\+T\+\_\+\+I\+N\+FO@{T\+V\+M\+\_\+\+D\+E\+C\+L\+A\+R\+E\+\_\+\+F\+I\+N\+A\+L\+\_\+\+O\+B\+J\+E\+C\+T\+\_\+\+I\+N\+FO}}
+\index{T\+V\+M\+\_\+\+D\+E\+C\+L\+A\+R\+E\+\_\+\+F\+I\+N\+A\+L\+\_\+\+O\+B\+J\+E\+C\+T\+\_\+\+I\+N\+FO@{T\+V\+M\+\_\+\+D\+E\+C\+L\+A\+R\+E\+\_\+\+F\+I\+N\+A\+L\+\_\+\+O\+B\+J\+E\+C\+T\+\_\+\+I\+N\+FO}!tvm\+::te\+::\+Singleton\+Node@{tvm\+::te\+::\+Singleton\+Node}}
+\subsubsection[{\texorpdfstring{T\+V\+M\+\_\+\+D\+E\+C\+L\+A\+R\+E\+\_\+\+F\+I\+N\+A\+L\+\_\+\+O\+B\+J\+E\+C\+T\+\_\+\+I\+N\+F\+O(\+Singleton\+Node, Iter\+Var\+Relation\+Node)}{TVM_DECLARE_FINAL_OBJECT_INFO(SingletonNode, IterVarRelationNode)}}]{\setlength{\rightskip}{0pt plus 5cm}tvm\+::te\+::\+Singleton\+Node\+::\+T\+V\+M\+\_\+\+D\+E\+C\+L\+A\+R\+E\+\_\+\+F\+I\+N\+A\+L\+\_\+\+O\+B\+J\+E\+C\+T\+\_\+\+I\+N\+FO (
+\begin{DoxyParamCaption}
+\item[{{\bf Singleton\+Node}}]{, }
+\item[{{\bf Iter\+Var\+Relation\+Node}}]{}
+\end{DoxyParamCaption}
+)}\hypertarget{classtvm_1_1te_1_1SingletonNode_aa1bc95f455d8579cd48a0264f90d1774}{}\label{classtvm_1_1te_1_1SingletonNode_aa1bc95f455d8579cd48a0264f90d1774}
+\index{tvm\+::te\+::\+Singleton\+Node@{tvm\+::te\+::\+Singleton\+Node}!Visit\+Attrs@{Visit\+Attrs}}
+\index{Visit\+Attrs@{Visit\+Attrs}!tvm\+::te\+::\+Singleton\+Node@{tvm\+::te\+::\+Singleton\+Node}}
+\subsubsection[{\texorpdfstring{Visit\+Attrs(\+Attr\+Visitor $\ast$v)}{VisitAttrs(AttrVisitor *v)}}]{\setlength{\rightskip}{0pt plus 5cm}void tvm\+::te\+::\+Singleton\+Node\+::\+Visit\+Attrs (
+\begin{DoxyParamCaption}
+\item[{{\bf Attr\+Visitor} $\ast$}]{v}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classtvm_1_1te_1_1SingletonNode_a224061c98cfd22f25435e5ac9b0f8228}{}\label{classtvm_1_1te_1_1SingletonNode_a224061c98cfd22f25435e5ac9b0f8228}
+
+
+\subsection{Member Data Documentation}
+\index{tvm\+::te\+::\+Singleton\+Node@{tvm\+::te\+::\+Singleton\+Node}!\+\_\+type\+\_\+key@{\+\_\+type\+\_\+key}}
+\index{\+\_\+type\+\_\+key@{\+\_\+type\+\_\+key}!tvm\+::te\+::\+Singleton\+Node@{tvm\+::te\+::\+Singleton\+Node}}
+\subsubsection[{\texorpdfstring{\+\_\+type\+\_\+key}{_type_key}}]{\setlength{\rightskip}{0pt plus 5cm}constexpr const char$\ast$ tvm\+::te\+::\+Singleton\+Node\+::\+\_\+type\+\_\+key = \char`\"{}Singleton\char`\"{}\hspace{0.3cm}{\ttfamily [static]}}\hypertarget{classtvm_1_1te_1_1SingletonNode_a943dcb03cc28079b6d2d2374e64dfbb3}{}\label{classtvm_1_1te_1_1SingletonNode_a943dcb03cc28079b6d2d2374e64dfbb3}
+\index{tvm\+::te\+::\+Singleton\+Node@{tvm\+::te\+::\+Singleton\+Node}!iter@{iter}}
+\index{iter@{iter}!tvm\+::te\+::\+Singleton\+Node@{tvm\+::te\+::\+Singleton\+Node}}
+\subsubsection[{\texorpdfstring{iter}{iter}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Iter\+Var} tvm\+::te\+::\+Singleton\+Node\+::iter}\hypertarget{classtvm_1_1te_1_1SingletonNode_a4a33beb28fc1394654684ad92aca226d}{}\label{classtvm_1_1te_1_1SingletonNode_a4a33beb28fc1394654684ad92aca226d}
+
+
+The singleton iterator. 
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+include/tvm/te/\hyperlink{schedule_8h}{schedule.\+h}\end{DoxyCompactItemize}

@@ -1,0 +1,257 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="classtvm_1_1TypeVisitor" kind="class" language="C++" prot="public">
+    <compoundname>tvm::TypeVisitor</compoundname>
+    <basecompoundref refid="classtvm_1_1TypeFunctor" prot="public" virt="non-virtual">tvm::TypeFunctor&lt; void(const Type &amp;n)&gt;</basecompoundref>
+    <includes refid="type__functor_8h" local="no">type_functor.h</includes>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classtvm_1_1TypeVisitor_1a1e33da035ed09ba49e2cc254f8a033c4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void tvm::TypeVisitor::VisitType_</definition>
+        <argsstring>(const TypeVarNode *op) override</argsstring>
+        <name>VisitType_</name>
+        <param>
+          <type>const <ref refid="classtvm_1_1TypeVarNode" kindref="compound">TypeVarNode</ref> *</type>
+          <declname>op</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/ir/type_functor.h" line="132" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classtvm_1_1TypeVisitor_1ae699be9a6ed94a635c315506e0c2a6d2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void tvm::TypeVisitor::VisitType_</definition>
+        <argsstring>(const IncompleteTypeNode *op) override</argsstring>
+        <name>VisitType_</name>
+        <param>
+          <type>const <ref refid="classtvm_1_1IncompleteTypeNode" kindref="compound">IncompleteTypeNode</ref> *</type>
+          <declname>op</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/ir/type_functor.h" line="133" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classtvm_1_1TypeVisitor_1adb2f5c5f8e3fbe5b62ce8527cd59a30b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void tvm::TypeVisitor::VisitType_</definition>
+        <argsstring>(const TensorTypeNode *op) override</argsstring>
+        <name>VisitType_</name>
+        <param>
+          <type>const <ref refid="classtvm_1_1TensorTypeNode" kindref="compound">TensorTypeNode</ref> *</type>
+          <declname>op</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/ir/type_functor.h" line="134" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classtvm_1_1TypeVisitor_1a063b7b1705ffabb92e58093032686e90" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void tvm::TypeVisitor::VisitType_</definition>
+        <argsstring>(const FuncTypeNode *op) override</argsstring>
+        <name>VisitType_</name>
+        <param>
+          <type>const <ref refid="classtvm_1_1FuncTypeNode" kindref="compound">FuncTypeNode</ref> *</type>
+          <declname>op</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/ir/type_functor.h" line="135" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classtvm_1_1TypeVisitor_1a82c83b1524502579f56d194138badd3e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void tvm::TypeVisitor::VisitType_</definition>
+        <argsstring>(const TupleTypeNode *op) override</argsstring>
+        <name>VisitType_</name>
+        <param>
+          <type>const <ref refid="classtvm_1_1TupleTypeNode" kindref="compound">TupleTypeNode</ref> *</type>
+          <declname>op</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/ir/type_functor.h" line="136" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classtvm_1_1TypeVisitor_1a3ed59cee793514b568fa0e9cb0ca437c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void tvm::TypeVisitor::VisitType_</definition>
+        <argsstring>(const TypeRelationNode *op) override</argsstring>
+        <name>VisitType_</name>
+        <param>
+          <type>const <ref refid="classtvm_1_1TypeRelationNode" kindref="compound">TypeRelationNode</ref> *</type>
+          <declname>op</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/ir/type_functor.h" line="137" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classtvm_1_1TypeVisitor_1a11378b4db6f704c04a97bec1c8ea8261" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void tvm::TypeVisitor::VisitType_</definition>
+        <argsstring>(const RelayRefTypeNode *op) override</argsstring>
+        <name>VisitType_</name>
+        <param>
+          <type>const <ref refid="classtvm_1_1RelayRefTypeNode" kindref="compound">RelayRefTypeNode</ref> *</type>
+          <declname>op</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/ir/type_functor.h" line="138" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classtvm_1_1TypeVisitor_1af92188034706eec6c1ce5c8240f65cc0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void tvm::TypeVisitor::VisitType_</definition>
+        <argsstring>(const GlobalTypeVarNode *op) override</argsstring>
+        <name>VisitType_</name>
+        <param>
+          <type>const <ref refid="classtvm_1_1GlobalTypeVarNode" kindref="compound">GlobalTypeVarNode</ref> *</type>
+          <declname>op</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/ir/type_functor.h" line="139" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classtvm_1_1TypeVisitor_1a8f548b8def48ea4f11a3eafa04d74d96" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void tvm::TypeVisitor::VisitType_</definition>
+        <argsstring>(const TypeCallNode *op) override</argsstring>
+        <name>VisitType_</name>
+        <param>
+          <type>const <ref refid="classtvm_1_1TypeCallNode" kindref="compound">TypeCallNode</ref> *</type>
+          <declname>op</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/ir/type_functor.h" line="140" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classtvm_1_1TypeVisitor_1a292b19b578526ea74b1434dc50514a18" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void tvm::TypeVisitor::VisitType_</definition>
+        <argsstring>(const TypeDataNode *op) override</argsstring>
+        <name>VisitType_</name>
+        <param>
+          <type>const <ref refid="classtvm_1_1TypeDataNode" kindref="compound">TypeDataNode</ref> *</type>
+          <declname>op</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/ir/type_functor.h" line="141" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classtvm_1_1TypeVisitor_1a2d6a319537d4d3dba04054f3ef8f32f9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void tvm::TypeVisitor::VisitType_</definition>
+        <argsstring>(const PrimTypeNode *op) override</argsstring>
+        <name>VisitType_</name>
+        <param>
+          <type>const <ref refid="classtvm_1_1PrimTypeNode" kindref="compound">PrimTypeNode</ref> *</type>
+          <declname>op</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/ir/type_functor.h" line="142" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classtvm_1_1TypeVisitor_1ac8845fbf58c1a1f0ebc23c7ee403aaab" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void tvm::TypeVisitor::VisitType_</definition>
+        <argsstring>(const PointerTypeNode *op) override</argsstring>
+        <name>VisitType_</name>
+        <param>
+          <type>const <ref refid="classtvm_1_1PointerTypeNode" kindref="compound">PointerTypeNode</ref> *</type>
+          <declname>op</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/ir/type_functor.h" line="143" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>A type visitor that recursively visit types. </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="7503">
+        <label>tvm::TypeVisitor</label>
+        <link refid="classtvm_1_1TypeVisitor"/>
+        <childnode refid="7504" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="7504">
+        <label>tvm::TypeFunctor&lt; void(const Type &amp;n)&gt;</label>
+        <link refid="classtvm_1_1TypeFunctor"/>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="7505">
+        <label>tvm::TypeVisitor</label>
+        <link refid="classtvm_1_1TypeVisitor"/>
+        <childnode refid="7506" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="7506">
+        <label>tvm::TypeFunctor&lt; void(const Type &amp;n)&gt;</label>
+        <link refid="classtvm_1_1TypeFunctor"/>
+      </node>
+    </collaborationgraph>
+    <location file="include/tvm/ir/type_functor.h" line="130" column="1" bodyfile="include/tvm/ir/type_functor.h" bodystart="129" bodyend="144"/>
+    <listofallmembers>
+      <member refid="classtvm_1_1TypeVisitor_1a1e33da035ed09ba49e2cc254f8a033c4" prot="public" virt="non-virtual"><scope>tvm::TypeVisitor</scope><name>VisitType_</name></member>
+      <member refid="classtvm_1_1TypeVisitor_1ae699be9a6ed94a635c315506e0c2a6d2" prot="public" virt="non-virtual"><scope>tvm::TypeVisitor</scope><name>VisitType_</name></member>
+      <member refid="classtvm_1_1TypeVisitor_1adb2f5c5f8e3fbe5b62ce8527cd59a30b" prot="public" virt="non-virtual"><scope>tvm::TypeVisitor</scope><name>VisitType_</name></member>
+      <member refid="classtvm_1_1TypeVisitor_1a063b7b1705ffabb92e58093032686e90" prot="public" virt="non-virtual"><scope>tvm::TypeVisitor</scope><name>VisitType_</name></member>
+      <member refid="classtvm_1_1TypeVisitor_1a82c83b1524502579f56d194138badd3e" prot="public" virt="non-virtual"><scope>tvm::TypeVisitor</scope><name>VisitType_</name></member>
+      <member refid="classtvm_1_1TypeVisitor_1a3ed59cee793514b568fa0e9cb0ca437c" prot="public" virt="non-virtual"><scope>tvm::TypeVisitor</scope><name>VisitType_</name></member>
+      <member refid="classtvm_1_1TypeVisitor_1a11378b4db6f704c04a97bec1c8ea8261" prot="public" virt="non-virtual"><scope>tvm::TypeVisitor</scope><name>VisitType_</name></member>
+      <member refid="classtvm_1_1TypeVisitor_1af92188034706eec6c1ce5c8240f65cc0" prot="public" virt="non-virtual"><scope>tvm::TypeVisitor</scope><name>VisitType_</name></member>
+      <member refid="classtvm_1_1TypeVisitor_1a8f548b8def48ea4f11a3eafa04d74d96" prot="public" virt="non-virtual"><scope>tvm::TypeVisitor</scope><name>VisitType_</name></member>
+      <member refid="classtvm_1_1TypeVisitor_1a292b19b578526ea74b1434dc50514a18" prot="public" virt="non-virtual"><scope>tvm::TypeVisitor</scope><name>VisitType_</name></member>
+      <member refid="classtvm_1_1TypeVisitor_1a2d6a319537d4d3dba04054f3ef8f32f9" prot="public" virt="non-virtual"><scope>tvm::TypeVisitor</scope><name>VisitType_</name></member>
+      <member refid="classtvm_1_1TypeVisitor_1ac8845fbf58c1a1f0ebc23c7ee403aaab" prot="public" virt="non-virtual"><scope>tvm::TypeVisitor</scope><name>VisitType_</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

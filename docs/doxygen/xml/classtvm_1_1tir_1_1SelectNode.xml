@@ -1,0 +1,263 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="classtvm_1_1tir_1_1SelectNode" kind="class" language="C++" prot="public">
+    <compoundname>tvm::tir::SelectNode</compoundname>
+    <basecompoundref refid="classtvm_1_1PrimExprNode" prot="public" virt="non-virtual">tvm::PrimExprNode</basecompoundref>
+    <includes refid="tir_2expr_8h" local="no">expr.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="classtvm_1_1tir_1_1SelectNode_1a1f737b98d39e78cb59d10ce6db585d20" prot="public" static="no" mutable="no">
+        <type><ref refid="classtvm_1_1PrimExpr" kindref="compound">PrimExpr</ref></type>
+        <definition>PrimExpr tvm::tir::SelectNode::condition</definition>
+        <argsstring></argsstring>
+        <name>condition</name>
+        <briefdescription>
+<para>The condition. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/tir/expr.h" line="702" column="1" bodyfile="include/tvm/tir/expr.h" bodystart="702" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classtvm_1_1tir_1_1SelectNode_1a35e913f542bd1231b92adfc2d58938ef" prot="public" static="no" mutable="no">
+        <type><ref refid="classtvm_1_1PrimExpr" kindref="compound">PrimExpr</ref></type>
+        <definition>PrimExpr tvm::tir::SelectNode::true_value</definition>
+        <argsstring></argsstring>
+        <name>true_value</name>
+        <briefdescription>
+<para>value to be returned when condition is true. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/tir/expr.h" line="704" column="1" bodyfile="include/tvm/tir/expr.h" bodystart="704" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classtvm_1_1tir_1_1SelectNode_1ac1b3f0f013b6a41a483c6d81397a6dac" prot="public" static="no" mutable="no">
+        <type><ref refid="classtvm_1_1PrimExpr" kindref="compound">PrimExpr</ref></type>
+        <definition>PrimExpr tvm::tir::SelectNode::false_value</definition>
+        <argsstring></argsstring>
+        <name>false_value</name>
+        <briefdescription>
+<para>value to be returned when condition is false. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/tir/expr.h" line="706" column="1" bodyfile="include/tvm/tir/expr.h" bodystart="706" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-attrib">
+      <memberdef kind="variable" id="classtvm_1_1tir_1_1SelectNode_1a5477e636bc4c0a26627cc9fc76c87cff" prot="public" static="yes" mutable="no">
+        <type>constexpr const char *</type>
+        <definition>constexpr const char* tvm::tir::SelectNode::_type_key</definition>
+        <argsstring></argsstring>
+        <name>_type_key</name>
+        <initializer>= &quot;Select&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/tir/expr.h" line="732" column="1" bodyfile="include/tvm/tir/expr.h" bodystart="732" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classtvm_1_1tir_1_1SelectNode_1aefaaf9f769543346665096278c20171f" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void tvm::tir::SelectNode::VisitAttrs</definition>
+        <argsstring>(AttrVisitor *v)</argsstring>
+        <name>VisitAttrs</name>
+        <param>
+          <type><ref refid="classtvm_1_1AttrVisitor" kindref="compound">AttrVisitor</ref> *</type>
+          <declname>v</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/tir/expr.h" line="708" column="1" bodyfile="include/tvm/tir/expr.h" bodystart="708" bodyend="713"/>
+      </memberdef>
+      <memberdef kind="function" id="classtvm_1_1tir_1_1SelectNode_1a59b1d0afce6d531401689e068bd1dc57" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool tvm::tir::SelectNode::SEqualReduce</definition>
+        <argsstring>(const SelectNode *other, SEqualReducer equal) const </argsstring>
+        <name>SEqualReduce</name>
+        <param>
+          <type>const <ref refid="classtvm_1_1tir_1_1SelectNode" kindref="compound">SelectNode</ref> *</type>
+          <declname>other</declname>
+        </param>
+        <param>
+          <type><ref refid="classtvm_1_1SEqualReducer" kindref="compound">SEqualReducer</ref></type>
+          <declname>equal</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/tir/expr.h" line="715" column="1" bodyfile="include/tvm/tir/expr.h" bodystart="715" bodyend="721"/>
+      </memberdef>
+      <memberdef kind="function" id="classtvm_1_1tir_1_1SelectNode_1a09494cfb4b80374aed26cc5d4d4c65a7" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void tvm::tir::SelectNode::SHashReduce</definition>
+        <argsstring>(SHashReducer hash_reduce) const </argsstring>
+        <name>SHashReduce</name>
+        <param>
+          <type><ref refid="classtvm_1_1SHashReducer" kindref="compound">SHashReducer</ref></type>
+          <declname>hash_reduce</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/tir/expr.h" line="723" column="1" bodyfile="include/tvm/tir/expr.h" bodystart="723" bodyend="728"/>
+      </memberdef>
+      <memberdef kind="function" id="classtvm_1_1tir_1_1SelectNode_1a9d41cb89402fac92e634efe10daa1057" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>tvm::tir::SelectNode::TVM_DECLARE_FINAL_OBJECT_INFO</definition>
+        <argsstring>(SelectNode, PrimExprNode)</argsstring>
+        <name>TVM_DECLARE_FINAL_OBJECT_INFO</name>
+        <param>
+          <type><ref refid="classtvm_1_1tir_1_1SelectNode" kindref="compound">SelectNode</ref></type>
+        </param>
+        <param>
+          <type><ref refid="classtvm_1_1PrimExprNode" kindref="compound">PrimExprNode</ref></type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/tir/expr.h" line="733" column="1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="classtvm_1_1tir_1_1SelectNode_1ae0809a88c56d20faceba05184b6e793b" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classtvm_1_1PrimExpr" kindref="compound">PrimExpr</ref></type>
+        <definition>static PrimExpr tvm::tir::SelectNode::make</definition>
+        <argsstring>(PrimExpr condition, PrimExpr true_value, PrimExpr false_value)</argsstring>
+        <name>make</name>
+        <param>
+          <type><ref refid="classtvm_1_1PrimExpr" kindref="compound">PrimExpr</ref></type>
+          <declname>condition</declname>
+        </param>
+        <param>
+          <type><ref refid="classtvm_1_1PrimExpr" kindref="compound">PrimExpr</ref></type>
+          <declname>true_value</declname>
+        </param>
+        <param>
+          <type><ref refid="classtvm_1_1PrimExpr" kindref="compound">PrimExpr</ref></type>
+          <declname>false_value</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/tir/expr.h" line="730" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>return true_value if condition is true, otherwise return false_value. </para>    </briefdescription>
+    <detaileddescription>
+<para><simplesect kind="note"><para>Both true_value and false_value could be evaluated regardless of the condition value. Do not use it to guard against out of bound access, please use if_then_else instead. </para></simplesect>
+</para>    </detaileddescription>
+    <inheritancegraph>
+      <node id="6715">
+        <label>tvm::BaseExprNode</label>
+        <link refid="classtvm_1_1BaseExprNode"/>
+        <childnode refid="6716" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="6713">
+        <label>tvm::tir::SelectNode</label>
+        <link refid="classtvm_1_1tir_1_1SelectNode"/>
+        <childnode refid="6714" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="6716">
+        <label>Object</label>
+      </node>
+      <node id="6714">
+        <label>tvm::PrimExprNode</label>
+        <link refid="classtvm_1_1PrimExprNode"/>
+        <childnode refid="6715" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="6724">
+        <label>ObjectRef</label>
+      </node>
+      <node id="6719">
+        <label>tvm::BaseExprNode</label>
+        <link refid="classtvm_1_1BaseExprNode"/>
+        <childnode refid="6720" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="6717">
+        <label>tvm::tir::SelectNode</label>
+        <link refid="classtvm_1_1tir_1_1SelectNode"/>
+        <childnode refid="6718" relation="public-inheritance">
+        </childnode>
+        <childnode refid="6722" relation="usage">
+          <edgelabel>+condition</edgelabel>
+          <edgelabel>+true_value</edgelabel>
+          <edgelabel>+false_value</edgelabel>
+        </childnode>
+      </node>
+      <node id="6720">
+        <label>Object</label>
+      </node>
+      <node id="6722">
+        <label>tvm::PrimExpr</label>
+        <link refid="classtvm_1_1PrimExpr"/>
+        <childnode refid="6723" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="6721">
+        <label>tvm::runtime::DataType</label>
+        <link refid="classtvm_1_1runtime_1_1DataType"/>
+      </node>
+      <node id="6723">
+        <label>tvm::BaseExpr</label>
+        <link refid="classtvm_1_1BaseExpr"/>
+        <childnode refid="6724" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="6718">
+        <label>tvm::PrimExprNode</label>
+        <link refid="classtvm_1_1PrimExprNode"/>
+        <childnode refid="6719" relation="public-inheritance">
+        </childnode>
+        <childnode refid="6721" relation="usage">
+          <edgelabel>+dtype</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="include/tvm/tir/expr.h" line="699" column="1" bodyfile="include/tvm/tir/expr.h" bodystart="699" bodyend="734"/>
+    <listofallmembers>
+      <member refid="classtvm_1_1BaseExprNode_1a905dcf65204e877b6ccb977cf375f2a0" prot="public" virt="non-virtual"><scope>tvm::tir::SelectNode</scope><name>_type_has_method_sequal_reduce</name></member>
+      <member refid="classtvm_1_1BaseExprNode_1a13d7d1f1e6f790951caf200cd59c3620" prot="public" virt="non-virtual"><scope>tvm::tir::SelectNode</scope><name>_type_has_method_shash_reduce</name></member>
+      <member refid="classtvm_1_1tir_1_1SelectNode_1a5477e636bc4c0a26627cc9fc76c87cff" prot="public" virt="non-virtual"><scope>tvm::tir::SelectNode</scope><name>_type_key</name></member>
+      <member refid="classtvm_1_1tir_1_1SelectNode_1a1f737b98d39e78cb59d10ce6db585d20" prot="public" virt="non-virtual"><scope>tvm::tir::SelectNode</scope><name>condition</name></member>
+      <member refid="classtvm_1_1PrimExprNode_1a95af9234514ec5f11355db41524be7f9" prot="public" virt="non-virtual"><scope>tvm::tir::SelectNode</scope><name>dtype</name></member>
+      <member refid="classtvm_1_1tir_1_1SelectNode_1ac1b3f0f013b6a41a483c6d81397a6dac" prot="public" virt="non-virtual"><scope>tvm::tir::SelectNode</scope><name>false_value</name></member>
+      <member refid="classtvm_1_1tir_1_1SelectNode_1ae0809a88c56d20faceba05184b6e793b" prot="public" virt="non-virtual"><scope>tvm::tir::SelectNode</scope><name>make</name></member>
+      <member refid="classtvm_1_1tir_1_1SelectNode_1a59b1d0afce6d531401689e068bd1dc57" prot="public" virt="non-virtual"><scope>tvm::tir::SelectNode</scope><name>SEqualReduce</name></member>
+      <member refid="classtvm_1_1tir_1_1SelectNode_1a09494cfb4b80374aed26cc5d4d4c65a7" prot="public" virt="non-virtual"><scope>tvm::tir::SelectNode</scope><name>SHashReduce</name></member>
+      <member refid="classtvm_1_1tir_1_1SelectNode_1a35e913f542bd1231b92adfc2d58938ef" prot="public" virt="non-virtual"><scope>tvm::tir::SelectNode</scope><name>true_value</name></member>
+      <member refid="classtvm_1_1PrimExprNode_1afcf4654378d65e0200b33e43194d0490" prot="public" virt="non-virtual"><scope>tvm::tir::SelectNode</scope><name>TVM_DECLARE_BASE_OBJECT_INFO</name></member>
+      <member refid="classtvm_1_1BaseExprNode_1a831794c879d47c30cdd9cefd4f05d533" prot="public" virt="non-virtual" ambiguityscope="tvm::BaseExprNode::"><scope>tvm::tir::SelectNode</scope><name>TVM_DECLARE_BASE_OBJECT_INFO</name></member>
+      <member refid="classtvm_1_1tir_1_1SelectNode_1a9d41cb89402fac92e634efe10daa1057" prot="public" virt="non-virtual"><scope>tvm::tir::SelectNode</scope><name>TVM_DECLARE_FINAL_OBJECT_INFO</name></member>
+      <member refid="classtvm_1_1tir_1_1SelectNode_1aefaaf9f769543346665096278c20171f" prot="public" virt="non-virtual"><scope>tvm::tir::SelectNode</scope><name>VisitAttrs</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

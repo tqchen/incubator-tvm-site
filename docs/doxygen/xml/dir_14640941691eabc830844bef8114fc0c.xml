@@ -1,0 +1,19 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="dir_14640941691eabc830844bef8114fc0c" kind="dir">
+    <compoundname>topi/include/topi/detail</compoundname>
+    <innerfile refid="array__utils_8h">array_utils.h</innerfile>
+    <innerfile refid="detail_2broadcast_8h">broadcast.h</innerfile>
+    <innerfile refid="constant__utils_8h">constant_utils.h</innerfile>
+    <innerfile refid="detail_2extern_8h">extern.h</innerfile>
+    <innerfile refid="fuse_8h">fuse.h</innerfile>
+    <innerfile refid="pad__utils_8h">pad_utils.h</innerfile>
+    <innerfile refid="ravel__unravel_8h">ravel_unravel.h</innerfile>
+    <innerfile refid="tensor__utils_8h">tensor_utils.h</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="topi/include/topi/detail/"/>
+  </compounddef>
+</doxygen>

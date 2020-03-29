@@ -1,0 +1,182 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="classtvm_1_1tir_1_1SeqStmt" kind="class" language="C++" prot="public">
+    <compoundname>tvm::tir::SeqStmt</compoundname>
+    <basecompoundref refid="classtvm_1_1tir_1_1Stmt" prot="public" virt="non-virtual">tvm::tir::Stmt</basecompoundref>
+    <includes refid="stmt_8h" local="no">stmt.h</includes>
+    <innerclass refid="classtvm_1_1tir_1_1SeqStmt_1_1Flattener" prot="public">tvm::tir::SeqStmt::Flattener</innerclass>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classtvm_1_1tir_1_1SeqStmt_1a195b9e5e7b1ac5e3b4369ecf0fe507ef" prot="public" static="no" const="no" explicit="yes" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>tvm::tir::SeqStmt::SeqStmt</definition>
+        <argsstring>(Array&lt; Stmt &gt; seq)</argsstring>
+        <name>SeqStmt</name>
+        <param>
+          <type><ref refid="classtvm_1_1Array" kindref="compound">Array</ref>&lt; <ref refid="classtvm_1_1tir_1_1Stmt" kindref="compound">Stmt</ref> &gt;</type>
+          <declname>seq</declname>
+        </param>
+        <briefdescription>
+<para>Construct <ref refid="classtvm_1_1tir_1_1SeqStmt" kindref="compound">SeqStmt</ref>. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>seq</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The sequence. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/tir/stmt.h" line="522" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classtvm_1_1tir_1_1SeqStmt_1acef74f73785a3c87b06b5f54f04434c5" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>size_t</type>
+        <definition>size_t tvm::tir::SeqStmt::size</definition>
+        <argsstring>() const </argsstring>
+        <name>size</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>get the size of the sequence </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/tir/stmt.h" line="525" column="1" bodyfile="include/tvm/tir/stmt.h" bodystart="525" bodyend="527"/>
+      </memberdef>
+      <memberdef kind="function" id="classtvm_1_1tir_1_1SeqStmt_1a524c9780854c9957a3a1ea5f6e08a492" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classtvm_1_1tir_1_1Stmt" kindref="compound">Stmt</ref></type>
+        <definition>Stmt tvm::tir::SeqStmt::operator[]</definition>
+        <argsstring>(size_t index) const </argsstring>
+        <name>operator[]</name>
+        <param>
+          <type>size_t</type>
+          <declname>index</declname>
+        </param>
+        <briefdescription>
+<para>Get the index-th element in the sequence. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/tir/stmt.h" line="531" column="1" bodyfile="include/tvm/tir/stmt.h" bodystart="531" bodyend="533"/>
+      </memberdef>
+      <memberdef kind="function" id="classtvm_1_1tir_1_1SeqStmt_1a49bd1ec442b841a84e01d7c2a1db85ea" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>tvm::tir::SeqStmt::TVM_DEFINE_OBJECT_REF_METHODS</definition>
+        <argsstring>(SeqStmt, Stmt, SeqStmtNode)</argsstring>
+        <name>TVM_DEFINE_OBJECT_REF_METHODS</name>
+        <param>
+          <type><ref refid="classtvm_1_1tir_1_1SeqStmt" kindref="compound">SeqStmt</ref></type>
+        </param>
+        <param>
+          <type><ref refid="classtvm_1_1tir_1_1Stmt" kindref="compound">Stmt</ref></type>
+        </param>
+        <param>
+          <type><ref refid="classtvm_1_1tir_1_1SeqStmtNode" kindref="compound">SeqStmtNode</ref></type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/tir/stmt.h" line="593" column="1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="classtvm_1_1tir_1_1SeqStmt_1a89a52de7cbea6a0aea4de70cebbe220c" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename...</type>
+            <declname>Args</declname>
+            <defname>Args</defname>
+          </param>
+        </templateparamlist>
+        <type><ref refid="classtvm_1_1tir_1_1Stmt" kindref="compound">Stmt</ref></type>
+        <definition>static Stmt tvm::tir::SeqStmt::Flatten</definition>
+        <argsstring>(Args &amp;&amp;...seq_args)</argsstring>
+        <name>Flatten</name>
+        <param>
+          <type>Args &amp;&amp;...</type>
+          <declname>seq_args</declname>
+        </param>
+        <briefdescription>
+<para>Construct a sequence statement by flattening all the arrays and sequences in the arguments recursively. </para>        </briefdescription>
+        <detaileddescription>
+<para><itemizedlist>
+<listitem><para>When an argument is nullptr, it will be ignored.</para></listitem><listitem><para>When an argument is an array or a <ref refid="classtvm_1_1tir_1_1SeqStmt" kindref="compound">SeqStmt</ref>, it will be flattened recursively.</para></listitem><listitem><para>When an argument is a consumer block in ProducerConsumer, the consumer tag will be dropped as such information is not useful in lowering.</para></listitem><listitem><para>A normal <ref refid="classtvm_1_1tir_1_1Stmt" kindref="compound">Stmt</ref> will be appended to the end of the sequence.</para></listitem></itemizedlist>
+</para><para><simplesect kind="note"><para>This function can directly return an element if it is the only element in the sequence.</para></simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>seq_args</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The list of arguments to be flattened. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="templateparam"><parameteritem>
+<parameternamelist>
+<parametername>Args</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>arguments </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The constructed statement </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/tir/stmt.h" line="553" column="1" bodyfile="include/tvm/tir/stmt.h" bodystart="553" bodyend="559"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Sequence statement. </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="6739">
+        <label>ObjectRef</label>
+      </node>
+      <node id="6738">
+        <label>tvm::tir::Stmt</label>
+        <link refid="classtvm_1_1tir_1_1Stmt"/>
+        <childnode refid="6739" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="6737">
+        <label>tvm::tir::SeqStmt</label>
+        <link refid="classtvm_1_1tir_1_1SeqStmt"/>
+        <childnode refid="6738" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="6742">
+        <label>ObjectRef</label>
+      </node>
+      <node id="6741">
+        <label>tvm::tir::Stmt</label>
+        <link refid="classtvm_1_1tir_1_1Stmt"/>
+        <childnode refid="6742" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="6740">
+        <label>tvm::tir::SeqStmt</label>
+        <link refid="classtvm_1_1tir_1_1SeqStmt"/>
+        <childnode refid="6741" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="include/tvm/tir/stmt.h" line="516" column="1" bodyfile="include/tvm/tir/stmt.h" bodystart="516" bodyend="594"/>
+    <listofallmembers>
+      <member refid="classtvm_1_1tir_1_1SeqStmt_1a89a52de7cbea6a0aea4de70cebbe220c" prot="public" virt="non-virtual"><scope>tvm::tir::SeqStmt</scope><name>Flatten</name></member>
+      <member refid="classtvm_1_1tir_1_1SeqStmt_1a524c9780854c9957a3a1ea5f6e08a492" prot="public" virt="non-virtual"><scope>tvm::tir::SeqStmt</scope><name>operator[]</name></member>
+      <member refid="classtvm_1_1tir_1_1SeqStmt_1a195b9e5e7b1ac5e3b4369ecf0fe507ef" prot="public" virt="non-virtual"><scope>tvm::tir::SeqStmt</scope><name>SeqStmt</name></member>
+      <member refid="classtvm_1_1tir_1_1SeqStmt_1acef74f73785a3c87b06b5f54f04434c5" prot="public" virt="non-virtual"><scope>tvm::tir::SeqStmt</scope><name>size</name></member>
+      <member refid="classtvm_1_1tir_1_1SeqStmt_1a49bd1ec442b841a84e01d7c2a1db85ea" prot="public" virt="non-virtual"><scope>tvm::tir::SeqStmt</scope><name>TVM_DEFINE_OBJECT_REF_METHODS</name></member>
+      <member refid="classtvm_1_1tir_1_1Stmt_1aaca2f7bd4110028470b82825bcbb87ac" prot="public" virt="non-virtual" ambiguityscope="tvm::tir::Stmt::"><scope>tvm::tir::SeqStmt</scope><name>TVM_DEFINE_OBJECT_REF_METHODS</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

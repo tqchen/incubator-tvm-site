@@ -1,0 +1,160 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="classtvm_1_1runtime_1_1ObjAllocatorBase" kind="class" language="C++" prot="public">
+    <compoundname>tvm::runtime::ObjAllocatorBase</compoundname>
+    <includes refid="runtime_2memory_8h" local="no">memory.h</includes>
+    <templateparamlist>
+      <param>
+        <type>typename</type>
+        <declname>Derived</declname>
+        <defname>Derived</defname>
+      </param>
+    </templateparamlist>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classtvm_1_1runtime_1_1ObjAllocatorBase_1ae42e75290cbdb2363f6391be2234c03b" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename T</type>
+          </param>
+          <param>
+            <type>typename...</type>
+            <declname>Args</declname>
+            <defname>Args</defname>
+          </param>
+        </templateparamlist>
+        <type><ref refid="classtvm_1_1runtime_1_1ObjectPtr" kindref="compound">ObjectPtr</ref>&lt; T &gt;</type>
+        <definition>ObjectPtr&lt;T&gt; tvm::runtime::ObjAllocatorBase&lt; Derived &gt;::make_object</definition>
+        <argsstring>(Args &amp;&amp;...args)</argsstring>
+        <name>make_object</name>
+        <param>
+          <type>Args &amp;&amp;...</type>
+          <declname>args</declname>
+        </param>
+        <briefdescription>
+<para>Make a new object using the allocator. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="templateparam"><parameteritem>
+<parameternamelist>
+<parametername>T</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The type to be allocated. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>Args</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The constructor signature. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>args</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The arguments. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/runtime/memory.h" line="68" column="1" bodyfile="include/tvm/runtime/memory.h" bodystart="68" bodyend="77"/>
+      </memberdef>
+      <memberdef kind="function" id="classtvm_1_1runtime_1_1ObjAllocatorBase_1a42e4146e6b03664deeb918948935c30c" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename ArrayType</type>
+          </param>
+          <param>
+            <type>typename ElemType</type>
+          </param>
+          <param>
+            <type>typename...</type>
+            <declname>Args</declname>
+            <defname>Args</defname>
+          </param>
+        </templateparamlist>
+        <type><ref refid="classtvm_1_1runtime_1_1ObjectPtr" kindref="compound">ObjectPtr</ref>&lt; ArrayType &gt;</type>
+        <definition>ObjectPtr&lt;ArrayType&gt; tvm::runtime::ObjAllocatorBase&lt; Derived &gt;::make_inplace_array</definition>
+        <argsstring>(size_t num_elems, Args &amp;&amp;...args)</argsstring>
+        <name>make_inplace_array</name>
+        <param>
+          <type>size_t</type>
+          <declname>num_elems</declname>
+        </param>
+        <param>
+          <type>Args &amp;&amp;...</type>
+          <declname>args</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="templateparam"><parameteritem>
+<parameternamelist>
+<parametername>ArrayType</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The type to be allocated. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>ElemType</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The type of array element. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>Args</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The constructor signature. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>num_elems</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The number of array elements. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>args</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The arguments. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/runtime/memory.h" line="87" column="1" bodyfile="include/tvm/runtime/memory.h" bodystart="87" bodyend="97"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Base class of object allocators that implements make. Use curiously recurring template pattern. </para>    </briefdescription>
+    <detaileddescription>
+<para><parameterlist kind="templateparam"><parameteritem>
+<parameternamelist>
+<parametername>Derived</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The derived class. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>    </detaileddescription>
+    <collaborationgraph>
+      <node id="5875">
+        <label>tvm::runtime::ObjAllocatorBase&lt; Derived &gt;</label>
+        <link refid="classtvm_1_1runtime_1_1ObjAllocatorBase"/>
+      </node>
+    </collaborationgraph>
+    <location file="include/tvm/runtime/memory.h" line="59" column="1" bodyfile="include/tvm/runtime/memory.h" bodystart="59" bodyend="98"/>
+    <listofallmembers>
+      <member refid="classtvm_1_1runtime_1_1ObjAllocatorBase_1a42e4146e6b03664deeb918948935c30c" prot="public" virt="non-virtual"><scope>tvm::runtime::ObjAllocatorBase</scope><name>make_inplace_array</name></member>
+      <member refid="classtvm_1_1runtime_1_1ObjAllocatorBase_1ae42e75290cbdb2363f6391be2234c03b" prot="public" virt="non-virtual"><scope>tvm::runtime::ObjAllocatorBase</scope><name>make_object</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

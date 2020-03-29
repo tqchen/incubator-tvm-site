@@ -1,0 +1,96 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="structtvm_1_1tir_1_1TensorKey" kind="struct" language="C++" prot="public">
+    <compoundname>tvm::tir::TensorKey</compoundname>
+    <includes refid="stmt_8h" local="no">stmt.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structtvm_1_1tir_1_1TensorKey_1a9d56077c3df0c3e5f17c1c68b443c731" prot="public" static="no" mutable="no">
+        <type><ref refid="classtvm_1_1tir_1_1FunctionRef" kindref="compound">FunctionRef</ref></type>
+        <definition>FunctionRef tvm::tir::TensorKey::f</definition>
+        <argsstring></argsstring>
+        <name>f</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/tir/stmt.h" line="798" column="1" bodyfile="include/tvm/tir/stmt.h" bodystart="798" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structtvm_1_1tir_1_1TensorKey_1a3c59c45fbf5331aafcb0be4c824eae0c" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int tvm::tir::TensorKey::value_index</definition>
+        <argsstring></argsstring>
+        <name>value_index</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/tir/stmt.h" line="799" column="1" bodyfile="include/tvm/tir/stmt.h" bodystart="799" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="structtvm_1_1tir_1_1TensorKey_1af94f8de8da447ed38398388169cca8f3" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool tvm::tir::TensorKey::operator==</definition>
+        <argsstring>(const TensorKey &amp;other) const </argsstring>
+        <name>operator==</name>
+        <param>
+          <type>const <ref refid="structtvm_1_1tir_1_1TensorKey" kindref="compound">TensorKey</ref> &amp;</type>
+          <declname>other</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/tir/stmt.h" line="801" column="1" bodyfile="include/tvm/tir/stmt.h" bodystart="801" bodyend="803"/>
+      </memberdef>
+      <memberdef kind="function" id="structtvm_1_1tir_1_1TensorKey_1abed90ed178cababfff1ffd90c63f51c4" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>std::string</type>
+        <definition>std::string tvm::tir::TensorKey::GetName</definition>
+        <argsstring>() const </argsstring>
+        <name>GetName</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/tir/stmt.h" line="804" column="1" bodyfile="include/tvm/tir/stmt.h" bodystart="804" bodyend="809"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Auxiliary data structure used in IR Pass to indicate a tensor. </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="7197">
+        <label>ObjectRef</label>
+      </node>
+      <node id="7195">
+        <label>tvm::tir::TensorKey</label>
+        <link refid="structtvm_1_1tir_1_1TensorKey"/>
+        <childnode refid="7196" relation="usage">
+          <edgelabel>+f</edgelabel>
+        </childnode>
+      </node>
+      <node id="7196">
+        <label>tvm::tir::FunctionRef</label>
+        <link refid="classtvm_1_1tir_1_1FunctionRef"/>
+        <childnode refid="7197" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="include/tvm/tir/stmt.h" line="797" column="1" bodyfile="include/tvm/tir/stmt.h" bodystart="797" bodyend="810"/>
+    <listofallmembers>
+      <member refid="structtvm_1_1tir_1_1TensorKey_1a9d56077c3df0c3e5f17c1c68b443c731" prot="public" virt="non-virtual"><scope>tvm::tir::TensorKey</scope><name>f</name></member>
+      <member refid="structtvm_1_1tir_1_1TensorKey_1abed90ed178cababfff1ffd90c63f51c4" prot="public" virt="non-virtual"><scope>tvm::tir::TensorKey</scope><name>GetName</name></member>
+      <member refid="structtvm_1_1tir_1_1TensorKey_1af94f8de8da447ed38398388169cca8f3" prot="public" virt="non-virtual"><scope>tvm::tir::TensorKey</scope><name>operator==</name></member>
+      <member refid="structtvm_1_1tir_1_1TensorKey_1a3c59c45fbf5331aafcb0be4c824eae0c" prot="public" virt="non-virtual"><scope>tvm::tir::TensorKey</scope><name>value_index</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,139 @@
+\hypertarget{classtvm_1_1runtime_1_1TVMArgValue}{}\section{tvm\+:\+:runtime\+:\+:T\+V\+M\+Arg\+Value Class Reference}
+\label{classtvm_1_1runtime_1_1TVMArgValue}\index{tvm\+::runtime\+::\+T\+V\+M\+Arg\+Value@{tvm\+::runtime\+::\+T\+V\+M\+Arg\+Value}}
+
+
+A single argument value to \hyperlink{classtvm_1_1runtime_1_1PackedFunc}{Packed\+Func}. Containing both type\+\_\+code and \hyperlink{unionTVMValue}{T\+V\+M\+Value}.  
+
+
+
+
+{\ttfamily \#include $<$packed\+\_\+func.\+h$>$}
+
+
+
+Inheritance diagram for tvm\+:\+:runtime\+:\+:T\+V\+M\+Arg\+Value\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=238pt]{classtvm_1_1runtime_1_1TVMArgValue__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for tvm\+:\+:runtime\+:\+:T\+V\+M\+Arg\+Value\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{classtvm_1_1runtime_1_1TVMArgValue__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classtvm_1_1runtime_1_1TVMArgValue_a987b2fb283cea5484d4655e3f711c046}{T\+V\+M\+Arg\+Value} ()
+\begin{DoxyCompactList}\small\item\em default constructor \end{DoxyCompactList}\item 
+\hyperlink{classtvm_1_1runtime_1_1TVMArgValue_a5fbd71750e5bbba6edc9094178af9276}{T\+V\+M\+Arg\+Value} (\hyperlink{unionTVMValue}{T\+V\+M\+Value} \hyperlink{classtvm_1_1runtime_1_1TVMArgValue_abb35e686e66c7af341584ba78a956270}{value}, int \hyperlink{classtvm_1_1runtime_1_1TVMPODValue___a5a799e4197f227549cd641b0e753f9b8}{type\+\_\+code})
+\begin{DoxyCompactList}\small\item\em constructor \end{DoxyCompactList}\item 
+\hyperlink{classtvm_1_1runtime_1_1TVMArgValue_a42023de967d37a0ff1a6dd0b6cdf9660}{operator D\+L\+Data\+Type} () const 
+\item 
+\hyperlink{classtvm_1_1runtime_1_1TVMArgValue_a07ea2b6deccadcc2a49597cfc241c278}{operator Data\+Type} () const 
+\item 
+\hyperlink{classtvm_1_1runtime_1_1TVMArgValue_abffc8b37686cc5e79f5029b1a86e04eb}{operator Packed\+Func} () const 
+\item 
+{\footnotesize template$<$typename F\+Type $>$ }\\\hyperlink{classtvm_1_1runtime_1_1TVMArgValue_a3248024ad6150cac8911c60259c3ffbd}{operator Typed\+Packed\+Func$<$ F\+Type $>$} () const 
+\item 
+const \hyperlink{unionTVMValue}{T\+V\+M\+Value} \& \hyperlink{classtvm_1_1runtime_1_1TVMArgValue_abb35e686e66c7af341584ba78a956270}{value} () const 
+\item 
+{\footnotesize template$<$typename T , typename  = typename std\+::enable\+\_\+if$<$             std\+::is\+\_\+class$<$\+T$>$\+::value$>$\+::type$>$ }\\\hyperlink{classtvm_1_1runtime_1_1TVMArgValue_a1621744e7148fee07fdc623e25961000}{operator T} () const 
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+A single argument value to \hyperlink{classtvm_1_1runtime_1_1PackedFunc}{Packed\+Func}. Containing both type\+\_\+code and \hyperlink{unionTVMValue}{T\+V\+M\+Value}. 
+
+Provides utilities to do type cast into other types. 
+
+\subsection{Constructor \& Destructor Documentation}
+\index{tvm\+::runtime\+::\+T\+V\+M\+Arg\+Value@{tvm\+::runtime\+::\+T\+V\+M\+Arg\+Value}!T\+V\+M\+Arg\+Value@{T\+V\+M\+Arg\+Value}}
+\index{T\+V\+M\+Arg\+Value@{T\+V\+M\+Arg\+Value}!tvm\+::runtime\+::\+T\+V\+M\+Arg\+Value@{tvm\+::runtime\+::\+T\+V\+M\+Arg\+Value}}
+\subsubsection[{\texorpdfstring{T\+V\+M\+Arg\+Value()}{TVMArgValue()}}]{\setlength{\rightskip}{0pt plus 5cm}tvm\+::runtime\+::\+T\+V\+M\+Arg\+Value\+::\+T\+V\+M\+Arg\+Value (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classtvm_1_1runtime_1_1TVMArgValue_a987b2fb283cea5484d4655e3f711c046}{}\label{classtvm_1_1runtime_1_1TVMArgValue_a987b2fb283cea5484d4655e3f711c046}
+
+
+default constructor 
+
+\index{tvm\+::runtime\+::\+T\+V\+M\+Arg\+Value@{tvm\+::runtime\+::\+T\+V\+M\+Arg\+Value}!T\+V\+M\+Arg\+Value@{T\+V\+M\+Arg\+Value}}
+\index{T\+V\+M\+Arg\+Value@{T\+V\+M\+Arg\+Value}!tvm\+::runtime\+::\+T\+V\+M\+Arg\+Value@{tvm\+::runtime\+::\+T\+V\+M\+Arg\+Value}}
+\subsubsection[{\texorpdfstring{T\+V\+M\+Arg\+Value(\+T\+V\+M\+Value value, int type\+\_\+code)}{TVMArgValue(TVMValue value, int type_code)}}]{\setlength{\rightskip}{0pt plus 5cm}tvm\+::runtime\+::\+T\+V\+M\+Arg\+Value\+::\+T\+V\+M\+Arg\+Value (
+\begin{DoxyParamCaption}
+\item[{{\bf T\+V\+M\+Value}}]{value, }
+\item[{int}]{type\+\_\+code}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classtvm_1_1runtime_1_1TVMArgValue_a5fbd71750e5bbba6edc9094178af9276}{}\label{classtvm_1_1runtime_1_1TVMArgValue_a5fbd71750e5bbba6edc9094178af9276}
+
+
+constructor 
+
+
+\begin{DoxyParams}{Parameters}
+{\em value} & of the function \\
+\hline
+{\em type\+\_\+code} & The type code. \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\index{tvm\+::runtime\+::\+T\+V\+M\+Arg\+Value@{tvm\+::runtime\+::\+T\+V\+M\+Arg\+Value}!operator Data\+Type@{operator Data\+Type}}
+\index{operator Data\+Type@{operator Data\+Type}!tvm\+::runtime\+::\+T\+V\+M\+Arg\+Value@{tvm\+::runtime\+::\+T\+V\+M\+Arg\+Value}}
+\subsubsection[{\texorpdfstring{operator Data\+Type() const }{operator DataType() const }}]{\setlength{\rightskip}{0pt plus 5cm}tvm\+::runtime\+::\+T\+V\+M\+Arg\+Value\+::operator {\bf Data\+Type} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classtvm_1_1runtime_1_1TVMArgValue_a07ea2b6deccadcc2a49597cfc241c278}{}\label{classtvm_1_1runtime_1_1TVMArgValue_a07ea2b6deccadcc2a49597cfc241c278}
+\index{tvm\+::runtime\+::\+T\+V\+M\+Arg\+Value@{tvm\+::runtime\+::\+T\+V\+M\+Arg\+Value}!operator D\+L\+Data\+Type@{operator D\+L\+Data\+Type}}
+\index{operator D\+L\+Data\+Type@{operator D\+L\+Data\+Type}!tvm\+::runtime\+::\+T\+V\+M\+Arg\+Value@{tvm\+::runtime\+::\+T\+V\+M\+Arg\+Value}}
+\subsubsection[{\texorpdfstring{operator D\+L\+Data\+Type() const }{operator DLDataType() const }}]{\setlength{\rightskip}{0pt plus 5cm}tvm\+::runtime\+::\+T\+V\+M\+Arg\+Value\+::operator D\+L\+Data\+Type (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classtvm_1_1runtime_1_1TVMArgValue_a42023de967d37a0ff1a6dd0b6cdf9660}{}\label{classtvm_1_1runtime_1_1TVMArgValue_a42023de967d37a0ff1a6dd0b6cdf9660}
+\index{tvm\+::runtime\+::\+T\+V\+M\+Arg\+Value@{tvm\+::runtime\+::\+T\+V\+M\+Arg\+Value}!operator Packed\+Func@{operator Packed\+Func}}
+\index{operator Packed\+Func@{operator Packed\+Func}!tvm\+::runtime\+::\+T\+V\+M\+Arg\+Value@{tvm\+::runtime\+::\+T\+V\+M\+Arg\+Value}}
+\subsubsection[{\texorpdfstring{operator Packed\+Func() const }{operator PackedFunc() const }}]{\setlength{\rightskip}{0pt plus 5cm}tvm\+::runtime\+::\+T\+V\+M\+Arg\+Value\+::operator {\bf Packed\+Func} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classtvm_1_1runtime_1_1TVMArgValue_abffc8b37686cc5e79f5029b1a86e04eb}{}\label{classtvm_1_1runtime_1_1TVMArgValue_abffc8b37686cc5e79f5029b1a86e04eb}
+\index{tvm\+::runtime\+::\+T\+V\+M\+Arg\+Value@{tvm\+::runtime\+::\+T\+V\+M\+Arg\+Value}!operator T@{operator T}}
+\index{operator T@{operator T}!tvm\+::runtime\+::\+T\+V\+M\+Arg\+Value@{tvm\+::runtime\+::\+T\+V\+M\+Arg\+Value}}
+\subsubsection[{\texorpdfstring{operator T() const }{operator T() const }}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T , typename $>$ tvm\+::runtime\+::\+T\+V\+M\+Arg\+Value\+::operator T (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classtvm_1_1runtime_1_1TVMArgValue_a1621744e7148fee07fdc623e25961000}{}\label{classtvm_1_1runtime_1_1TVMArgValue_a1621744e7148fee07fdc623e25961000}
+\index{tvm\+::runtime\+::\+T\+V\+M\+Arg\+Value@{tvm\+::runtime\+::\+T\+V\+M\+Arg\+Value}!operator Typed\+Packed\+Func$<$ F\+Type $>$@{operator Typed\+Packed\+Func$<$ F\+Type $>$}}
+\index{operator Typed\+Packed\+Func$<$ F\+Type $>$@{operator Typed\+Packed\+Func$<$ F\+Type $>$}!tvm\+::runtime\+::\+T\+V\+M\+Arg\+Value@{tvm\+::runtime\+::\+T\+V\+M\+Arg\+Value}}
+\subsubsection[{\texorpdfstring{operator Typed\+Packed\+Func$<$ F\+Type $>$() const }{operator TypedPackedFunc< FType >() const }}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename F\+Type $>$ tvm\+::runtime\+::\+T\+V\+M\+Arg\+Value\+::operator {\bf Typed\+Packed\+Func}$<$ F\+Type $>$ (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classtvm_1_1runtime_1_1TVMArgValue_a3248024ad6150cac8911c60259c3ffbd}{}\label{classtvm_1_1runtime_1_1TVMArgValue_a3248024ad6150cac8911c60259c3ffbd}
+\index{tvm\+::runtime\+::\+T\+V\+M\+Arg\+Value@{tvm\+::runtime\+::\+T\+V\+M\+Arg\+Value}!value@{value}}
+\index{value@{value}!tvm\+::runtime\+::\+T\+V\+M\+Arg\+Value@{tvm\+::runtime\+::\+T\+V\+M\+Arg\+Value}}
+\subsubsection[{\texorpdfstring{value() const }{value() const }}]{\setlength{\rightskip}{0pt plus 5cm}const {\bf T\+V\+M\+Value}\& tvm\+::runtime\+::\+T\+V\+M\+Arg\+Value\+::value (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classtvm_1_1runtime_1_1TVMArgValue_abb35e686e66c7af341584ba78a956270}{}\label{classtvm_1_1runtime_1_1TVMArgValue_abb35e686e66c7af341584ba78a956270}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+include/tvm/runtime/\hyperlink{packed__func_8h}{packed\+\_\+func.\+h}\end{DoxyCompactItemize}

@@ -1,0 +1,140 @@
+\hypertarget{classtvm_1_1TypeRelationNode}{}\section{tvm\+:\+:Type\+Relation\+Node Class Reference}
+\label{classtvm_1_1TypeRelationNode}\index{tvm\+::\+Type\+Relation\+Node@{tvm\+::\+Type\+Relation\+Node}}
+
+
+User defined type relation, it is an input-\/output relation on types.  
+
+
+
+
+{\ttfamily \#include $<$type\+\_\+relation.\+h$>$}
+
+
+
+Inheritance diagram for tvm\+:\+:Type\+Relation\+Node\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{classtvm_1_1TypeRelationNode__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for tvm\+:\+:Type\+Relation\+Node\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{classtvm_1_1TypeRelationNode__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{classtvm_1_1TypeRelationNode_af6546e6843f43431258a68f2ac933146}{Visit\+Attrs} (\hyperlink{classtvm_1_1AttrVisitor}{Attr\+Visitor} $\ast$v)
+\item 
+bool \hyperlink{classtvm_1_1TypeRelationNode_a9aa8c552275b3a65fffdef92e9f655cd}{S\+Equal\+Reduce} (const \hyperlink{classtvm_1_1TypeRelationNode}{Type\+Relation\+Node} $\ast$other, \hyperlink{classtvm_1_1SEqualReducer}{S\+Equal\+Reducer} equal) const 
+\item 
+void \hyperlink{classtvm_1_1TypeRelationNode_a782c2d917afb155569b9e074101cebac}{S\+Hash\+Reduce} (\hyperlink{classtvm_1_1SHashReducer}{S\+Hash\+Reducer} hash\+\_\+reduce) const 
+\item 
+\hyperlink{classtvm_1_1TypeRelationNode_a3362daa2e1b72c6ee60207fa493532f2}{T\+V\+M\+\_\+\+D\+E\+C\+L\+A\+R\+E\+\_\+\+F\+I\+N\+A\+L\+\_\+\+O\+B\+J\+E\+C\+T\+\_\+\+I\+N\+FO} (\hyperlink{classtvm_1_1TypeRelationNode}{Type\+Relation\+Node}, \hyperlink{classtvm_1_1TypeConstraintNode}{Type\+Constraint\+Node})
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{namespacetvm_a72dcba4493adfcd8908663898ece3514}{Type\+Relation\+Fn} \hyperlink{classtvm_1_1TypeRelationNode_a2f243e89c5f192eb8c006313fa0c7c5a}{func}
+\begin{DoxyCompactList}\small\item\em The function on input and output variables which this is not directly serializable, need to be looked-\/up in the module. \end{DoxyCompactList}\item 
+\hyperlink{classtvm_1_1Array}{Array}$<$ \hyperlink{classtvm_1_1Type}{Type} $>$ \hyperlink{classtvm_1_1TypeRelationNode_a4ae12e1df74b0b93404db6a762ef9f3f}{args}
+\begin{DoxyCompactList}\small\item\em The type arguments to the type function. \end{DoxyCompactList}\item 
+int \hyperlink{classtvm_1_1TypeRelationNode_aacb622dd257962ccb4ddfca4c89e09b4}{num\+\_\+inputs}
+\begin{DoxyCompactList}\small\item\em Number of inputs arguments. \end{DoxyCompactList}\item 
+\hyperlink{classtvm_1_1Attrs}{Attrs} \hyperlink{classtvm_1_1TypeRelationNode_a4398ffaf2402c479157ca5cbf05c5a7e}{attrs}
+\begin{DoxyCompactList}\small\item\em Attributes to the relation function. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static constexpr const char $\ast$ \hyperlink{classtvm_1_1TypeRelationNode_ad85a7f34df123d090000bc0a9687cf8b}{\+\_\+type\+\_\+key} = \char`\"{}Type\+Relation\char`\"{}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+User defined type relation, it is an input-\/output relation on types. 
+
+\hyperlink{classtvm_1_1TypeRelation}{Type\+Relation} is more generalized than type call as it allows inference of both inputs and outputs.
+
+\begin{DoxySeeAlso}{See also}
+\hyperlink{classtvm_1_1TypeRelation}{Type\+Relation} 
+\end{DoxySeeAlso}
+
+
+\subsection{Member Function Documentation}
+\index{tvm\+::\+Type\+Relation\+Node@{tvm\+::\+Type\+Relation\+Node}!S\+Equal\+Reduce@{S\+Equal\+Reduce}}
+\index{S\+Equal\+Reduce@{S\+Equal\+Reduce}!tvm\+::\+Type\+Relation\+Node@{tvm\+::\+Type\+Relation\+Node}}
+\subsubsection[{\texorpdfstring{S\+Equal\+Reduce(const Type\+Relation\+Node $\ast$other, S\+Equal\+Reducer equal) const }{SEqualReduce(const TypeRelationNode *other, SEqualReducer equal) const }}]{\setlength{\rightskip}{0pt plus 5cm}bool tvm\+::\+Type\+Relation\+Node\+::\+S\+Equal\+Reduce (
+\begin{DoxyParamCaption}
+\item[{const {\bf Type\+Relation\+Node} $\ast$}]{other, }
+\item[{{\bf S\+Equal\+Reducer}}]{equal}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classtvm_1_1TypeRelationNode_a9aa8c552275b3a65fffdef92e9f655cd}{}\label{classtvm_1_1TypeRelationNode_a9aa8c552275b3a65fffdef92e9f655cd}
+\index{tvm\+::\+Type\+Relation\+Node@{tvm\+::\+Type\+Relation\+Node}!S\+Hash\+Reduce@{S\+Hash\+Reduce}}
+\index{S\+Hash\+Reduce@{S\+Hash\+Reduce}!tvm\+::\+Type\+Relation\+Node@{tvm\+::\+Type\+Relation\+Node}}
+\subsubsection[{\texorpdfstring{S\+Hash\+Reduce(\+S\+Hash\+Reducer hash\+\_\+reduce) const }{SHashReduce(SHashReducer hash_reduce) const }}]{\setlength{\rightskip}{0pt plus 5cm}void tvm\+::\+Type\+Relation\+Node\+::\+S\+Hash\+Reduce (
+\begin{DoxyParamCaption}
+\item[{{\bf S\+Hash\+Reducer}}]{hash\+\_\+reduce}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classtvm_1_1TypeRelationNode_a782c2d917afb155569b9e074101cebac}{}\label{classtvm_1_1TypeRelationNode_a782c2d917afb155569b9e074101cebac}
+\index{tvm\+::\+Type\+Relation\+Node@{tvm\+::\+Type\+Relation\+Node}!T\+V\+M\+\_\+\+D\+E\+C\+L\+A\+R\+E\+\_\+\+F\+I\+N\+A\+L\+\_\+\+O\+B\+J\+E\+C\+T\+\_\+\+I\+N\+FO@{T\+V\+M\+\_\+\+D\+E\+C\+L\+A\+R\+E\+\_\+\+F\+I\+N\+A\+L\+\_\+\+O\+B\+J\+E\+C\+T\+\_\+\+I\+N\+FO}}
+\index{T\+V\+M\+\_\+\+D\+E\+C\+L\+A\+R\+E\+\_\+\+F\+I\+N\+A\+L\+\_\+\+O\+B\+J\+E\+C\+T\+\_\+\+I\+N\+FO@{T\+V\+M\+\_\+\+D\+E\+C\+L\+A\+R\+E\+\_\+\+F\+I\+N\+A\+L\+\_\+\+O\+B\+J\+E\+C\+T\+\_\+\+I\+N\+FO}!tvm\+::\+Type\+Relation\+Node@{tvm\+::\+Type\+Relation\+Node}}
+\subsubsection[{\texorpdfstring{T\+V\+M\+\_\+\+D\+E\+C\+L\+A\+R\+E\+\_\+\+F\+I\+N\+A\+L\+\_\+\+O\+B\+J\+E\+C\+T\+\_\+\+I\+N\+F\+O(\+Type\+Relation\+Node, Type\+Constraint\+Node)}{TVM_DECLARE_FINAL_OBJECT_INFO(TypeRelationNode, TypeConstraintNode)}}]{\setlength{\rightskip}{0pt plus 5cm}tvm\+::\+Type\+Relation\+Node\+::\+T\+V\+M\+\_\+\+D\+E\+C\+L\+A\+R\+E\+\_\+\+F\+I\+N\+A\+L\+\_\+\+O\+B\+J\+E\+C\+T\+\_\+\+I\+N\+FO (
+\begin{DoxyParamCaption}
+\item[{{\bf Type\+Relation\+Node}}]{, }
+\item[{{\bf Type\+Constraint\+Node}}]{}
+\end{DoxyParamCaption}
+)}\hypertarget{classtvm_1_1TypeRelationNode_a3362daa2e1b72c6ee60207fa493532f2}{}\label{classtvm_1_1TypeRelationNode_a3362daa2e1b72c6ee60207fa493532f2}
+\index{tvm\+::\+Type\+Relation\+Node@{tvm\+::\+Type\+Relation\+Node}!Visit\+Attrs@{Visit\+Attrs}}
+\index{Visit\+Attrs@{Visit\+Attrs}!tvm\+::\+Type\+Relation\+Node@{tvm\+::\+Type\+Relation\+Node}}
+\subsubsection[{\texorpdfstring{Visit\+Attrs(\+Attr\+Visitor $\ast$v)}{VisitAttrs(AttrVisitor *v)}}]{\setlength{\rightskip}{0pt plus 5cm}void tvm\+::\+Type\+Relation\+Node\+::\+Visit\+Attrs (
+\begin{DoxyParamCaption}
+\item[{{\bf Attr\+Visitor} $\ast$}]{v}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classtvm_1_1TypeRelationNode_af6546e6843f43431258a68f2ac933146}{}\label{classtvm_1_1TypeRelationNode_af6546e6843f43431258a68f2ac933146}
+
+
+\subsection{Member Data Documentation}
+\index{tvm\+::\+Type\+Relation\+Node@{tvm\+::\+Type\+Relation\+Node}!\+\_\+type\+\_\+key@{\+\_\+type\+\_\+key}}
+\index{\+\_\+type\+\_\+key@{\+\_\+type\+\_\+key}!tvm\+::\+Type\+Relation\+Node@{tvm\+::\+Type\+Relation\+Node}}
+\subsubsection[{\texorpdfstring{\+\_\+type\+\_\+key}{_type_key}}]{\setlength{\rightskip}{0pt plus 5cm}constexpr const char$\ast$ tvm\+::\+Type\+Relation\+Node\+::\+\_\+type\+\_\+key = \char`\"{}Type\+Relation\char`\"{}\hspace{0.3cm}{\ttfamily [static]}}\hypertarget{classtvm_1_1TypeRelationNode_ad85a7f34df123d090000bc0a9687cf8b}{}\label{classtvm_1_1TypeRelationNode_ad85a7f34df123d090000bc0a9687cf8b}
+\index{tvm\+::\+Type\+Relation\+Node@{tvm\+::\+Type\+Relation\+Node}!args@{args}}
+\index{args@{args}!tvm\+::\+Type\+Relation\+Node@{tvm\+::\+Type\+Relation\+Node}}
+\subsubsection[{\texorpdfstring{args}{args}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Array}$<${\bf Type}$>$ tvm\+::\+Type\+Relation\+Node\+::args}\hypertarget{classtvm_1_1TypeRelationNode_a4ae12e1df74b0b93404db6a762ef9f3f}{}\label{classtvm_1_1TypeRelationNode_a4ae12e1df74b0b93404db6a762ef9f3f}
+
+
+The type arguments to the type function. 
+
+\index{tvm\+::\+Type\+Relation\+Node@{tvm\+::\+Type\+Relation\+Node}!attrs@{attrs}}
+\index{attrs@{attrs}!tvm\+::\+Type\+Relation\+Node@{tvm\+::\+Type\+Relation\+Node}}
+\subsubsection[{\texorpdfstring{attrs}{attrs}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Attrs} tvm\+::\+Type\+Relation\+Node\+::attrs}\hypertarget{classtvm_1_1TypeRelationNode_a4398ffaf2402c479157ca5cbf05c5a7e}{}\label{classtvm_1_1TypeRelationNode_a4398ffaf2402c479157ca5cbf05c5a7e}
+
+
+Attributes to the relation function. 
+
+\index{tvm\+::\+Type\+Relation\+Node@{tvm\+::\+Type\+Relation\+Node}!func@{func}}
+\index{func@{func}!tvm\+::\+Type\+Relation\+Node@{tvm\+::\+Type\+Relation\+Node}}
+\subsubsection[{\texorpdfstring{func}{func}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Type\+Relation\+Fn} tvm\+::\+Type\+Relation\+Node\+::func}\hypertarget{classtvm_1_1TypeRelationNode_a2f243e89c5f192eb8c006313fa0c7c5a}{}\label{classtvm_1_1TypeRelationNode_a2f243e89c5f192eb8c006313fa0c7c5a}
+
+
+The function on input and output variables which this is not directly serializable, need to be looked-\/up in the module. 
+
+\index{tvm\+::\+Type\+Relation\+Node@{tvm\+::\+Type\+Relation\+Node}!num\+\_\+inputs@{num\+\_\+inputs}}
+\index{num\+\_\+inputs@{num\+\_\+inputs}!tvm\+::\+Type\+Relation\+Node@{tvm\+::\+Type\+Relation\+Node}}
+\subsubsection[{\texorpdfstring{num\+\_\+inputs}{num_inputs}}]{\setlength{\rightskip}{0pt plus 5cm}int tvm\+::\+Type\+Relation\+Node\+::num\+\_\+inputs}\hypertarget{classtvm_1_1TypeRelationNode_aacb622dd257962ccb4ddfca4c89e09b4}{}\label{classtvm_1_1TypeRelationNode_aacb622dd257962ccb4ddfca4c89e09b4}
+
+
+Number of inputs arguments. 
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+include/tvm/ir/\hyperlink{type__relation_8h}{type\+\_\+relation.\+h}\end{DoxyCompactItemize}

@@ -1,0 +1,150 @@
+\hypertarget{classtvm_1_1transform_1_1PassContextNode}{}\section{tvm\+:\+:transform\+:\+:Pass\+Context\+Node Class Reference}
+\label{classtvm_1_1transform_1_1PassContextNode}\index{tvm\+::transform\+::\+Pass\+Context\+Node@{tvm\+::transform\+::\+Pass\+Context\+Node}}
+
+
+\hyperlink{classtvm_1_1transform_1_1PassContextNode}{Pass\+Context\+Node} contains the information that a pass can rely on, such as analysis results.  
+
+
+
+
+{\ttfamily \#include $<$transform.\+h$>$}
+
+
+
+Inheritance diagram for tvm\+:\+:transform\+:\+:Pass\+Context\+Node\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=285pt]{classtvm_1_1transform_1_1PassContextNode__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for tvm\+:\+:transform\+:\+:Pass\+Context\+Node\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classtvm_1_1transform_1_1PassContextNode__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classtvm_1_1transform_1_1PassContextNode_aa91df8069b6573e72305ab57e9bc620f}{Pass\+Context\+Node} ()=default
+\item 
+void \hyperlink{classtvm_1_1transform_1_1PassContextNode_acc5e97af0ff79af8ab2d6745745e8c63}{Visit\+Attrs} (\hyperlink{classtvm_1_1AttrVisitor}{Attr\+Visitor} $\ast$v)
+\item 
+\hyperlink{classtvm_1_1transform_1_1PassContextNode_a613725ab055b022ae84d7cabb755533d}{T\+V\+M\+\_\+\+D\+E\+C\+L\+A\+R\+E\+\_\+\+F\+I\+N\+A\+L\+\_\+\+O\+B\+J\+E\+C\+T\+\_\+\+I\+N\+FO} (\hyperlink{classtvm_1_1transform_1_1PassContextNode}{Pass\+Context\+Node}, Object)
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classtvm_1_1ErrorReporter}{Error\+Reporter} \hyperlink{classtvm_1_1transform_1_1PassContextNode_aaa3ce0ad4b706d1a38ea953e52941c12}{err\+\_\+reporter}
+\begin{DoxyCompactList}\small\item\em The error reporter used to notify users why an optimization fails. \end{DoxyCompactList}\item 
+int \hyperlink{classtvm_1_1transform_1_1PassContextNode_af166034a8746d65044eea0a2673de991}{opt\+\_\+level} \{2\}
+\begin{DoxyCompactList}\small\item\em The default optimization level. \end{DoxyCompactList}\item 
+int \hyperlink{classtvm_1_1transform_1_1PassContextNode_a0b98ed8aa5bbb660801a9608759a00a9}{fallback\+\_\+device} \{static\+\_\+cast$<$int$>$(k\+D\+L\+C\+PU)\}
+\begin{DoxyCompactList}\small\item\em C\+PU is the default fallback device for heterogeneous execution. \end{DoxyCompactList}\item 
+\hyperlink{classtvm_1_1Array}{Array}$<$ \hyperlink{classtvm_1_1PrimExpr}{Prim\+Expr} $>$ \hyperlink{classtvm_1_1transform_1_1PassContextNode_ac8928bc4c5bfe3a1b2c7805da35f707a}{required\+\_\+pass}
+\begin{DoxyCompactList}\small\item\em The list of required passes. \end{DoxyCompactList}\item 
+\hyperlink{classtvm_1_1Array}{Array}$<$ \hyperlink{classtvm_1_1PrimExpr}{Prim\+Expr} $>$ \hyperlink{classtvm_1_1transform_1_1PassContextNode_ada6069e057832107b112acfd7df1383a}{disabled\+\_\+pass}
+\begin{DoxyCompactList}\small\item\em The list of disabled passes. \end{DoxyCompactList}\item 
+\hyperlink{namespacetvm_1_1transform_a0904052a95bd90a669cba07770694652}{Trace\+Func} \hyperlink{classtvm_1_1transform_1_1PassContextNode_a84242480dd92b11637881d8313524481}{trace\+\_\+func}
+\end{DoxyCompactItemize}
+\subsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static constexpr const char $\ast$ \hyperlink{classtvm_1_1transform_1_1PassContextNode_ae786553a00ae1f29e0bdb93d7c5c3088}{\+\_\+type\+\_\+key} = \char`\"{}transform.\+Pass\+Context\char`\"{}
+\item 
+static constexpr bool \hyperlink{classtvm_1_1transform_1_1PassContextNode_a24b97a15e18bdad2338c71741f5b615e}{\+\_\+type\+\_\+has\+\_\+method\+\_\+sequal\+\_\+reduce} = false
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\hyperlink{classtvm_1_1transform_1_1PassContextNode}{Pass\+Context\+Node} contains the information that a pass can rely on, such as analysis results. 
+
+\begin{DoxySeeAlso}{See also}
+\hyperlink{classtvm_1_1transform_1_1PassContext}{Pass\+Context} 
+\end{DoxySeeAlso}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\index{tvm\+::transform\+::\+Pass\+Context\+Node@{tvm\+::transform\+::\+Pass\+Context\+Node}!Pass\+Context\+Node@{Pass\+Context\+Node}}
+\index{Pass\+Context\+Node@{Pass\+Context\+Node}!tvm\+::transform\+::\+Pass\+Context\+Node@{tvm\+::transform\+::\+Pass\+Context\+Node}}
+\subsubsection[{\texorpdfstring{Pass\+Context\+Node()=default}{PassContextNode()=default}}]{\setlength{\rightskip}{0pt plus 5cm}tvm\+::transform\+::\+Pass\+Context\+Node\+::\+Pass\+Context\+Node (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [default]}}\hypertarget{classtvm_1_1transform_1_1PassContextNode_aa91df8069b6573e72305ab57e9bc620f}{}\label{classtvm_1_1transform_1_1PassContextNode_aa91df8069b6573e72305ab57e9bc620f}
+
+
+\subsection{Member Function Documentation}
+\index{tvm\+::transform\+::\+Pass\+Context\+Node@{tvm\+::transform\+::\+Pass\+Context\+Node}!T\+V\+M\+\_\+\+D\+E\+C\+L\+A\+R\+E\+\_\+\+F\+I\+N\+A\+L\+\_\+\+O\+B\+J\+E\+C\+T\+\_\+\+I\+N\+FO@{T\+V\+M\+\_\+\+D\+E\+C\+L\+A\+R\+E\+\_\+\+F\+I\+N\+A\+L\+\_\+\+O\+B\+J\+E\+C\+T\+\_\+\+I\+N\+FO}}
+\index{T\+V\+M\+\_\+\+D\+E\+C\+L\+A\+R\+E\+\_\+\+F\+I\+N\+A\+L\+\_\+\+O\+B\+J\+E\+C\+T\+\_\+\+I\+N\+FO@{T\+V\+M\+\_\+\+D\+E\+C\+L\+A\+R\+E\+\_\+\+F\+I\+N\+A\+L\+\_\+\+O\+B\+J\+E\+C\+T\+\_\+\+I\+N\+FO}!tvm\+::transform\+::\+Pass\+Context\+Node@{tvm\+::transform\+::\+Pass\+Context\+Node}}
+\subsubsection[{\texorpdfstring{T\+V\+M\+\_\+\+D\+E\+C\+L\+A\+R\+E\+\_\+\+F\+I\+N\+A\+L\+\_\+\+O\+B\+J\+E\+C\+T\+\_\+\+I\+N\+F\+O(\+Pass\+Context\+Node, Object)}{TVM_DECLARE_FINAL_OBJECT_INFO(PassContextNode, Object)}}]{\setlength{\rightskip}{0pt plus 5cm}tvm\+::transform\+::\+Pass\+Context\+Node\+::\+T\+V\+M\+\_\+\+D\+E\+C\+L\+A\+R\+E\+\_\+\+F\+I\+N\+A\+L\+\_\+\+O\+B\+J\+E\+C\+T\+\_\+\+I\+N\+FO (
+\begin{DoxyParamCaption}
+\item[{{\bf Pass\+Context\+Node}}]{, }
+\item[{Object}]{}
+\end{DoxyParamCaption}
+)}\hypertarget{classtvm_1_1transform_1_1PassContextNode_a613725ab055b022ae84d7cabb755533d}{}\label{classtvm_1_1transform_1_1PassContextNode_a613725ab055b022ae84d7cabb755533d}
+\index{tvm\+::transform\+::\+Pass\+Context\+Node@{tvm\+::transform\+::\+Pass\+Context\+Node}!Visit\+Attrs@{Visit\+Attrs}}
+\index{Visit\+Attrs@{Visit\+Attrs}!tvm\+::transform\+::\+Pass\+Context\+Node@{tvm\+::transform\+::\+Pass\+Context\+Node}}
+\subsubsection[{\texorpdfstring{Visit\+Attrs(\+Attr\+Visitor $\ast$v)}{VisitAttrs(AttrVisitor *v)}}]{\setlength{\rightskip}{0pt plus 5cm}void tvm\+::transform\+::\+Pass\+Context\+Node\+::\+Visit\+Attrs (
+\begin{DoxyParamCaption}
+\item[{{\bf Attr\+Visitor} $\ast$}]{v}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classtvm_1_1transform_1_1PassContextNode_acc5e97af0ff79af8ab2d6745745e8c63}{}\label{classtvm_1_1transform_1_1PassContextNode_acc5e97af0ff79af8ab2d6745745e8c63}
+
+
+\subsection{Member Data Documentation}
+\index{tvm\+::transform\+::\+Pass\+Context\+Node@{tvm\+::transform\+::\+Pass\+Context\+Node}!\+\_\+type\+\_\+has\+\_\+method\+\_\+sequal\+\_\+reduce@{\+\_\+type\+\_\+has\+\_\+method\+\_\+sequal\+\_\+reduce}}
+\index{\+\_\+type\+\_\+has\+\_\+method\+\_\+sequal\+\_\+reduce@{\+\_\+type\+\_\+has\+\_\+method\+\_\+sequal\+\_\+reduce}!tvm\+::transform\+::\+Pass\+Context\+Node@{tvm\+::transform\+::\+Pass\+Context\+Node}}
+\subsubsection[{\texorpdfstring{\+\_\+type\+\_\+has\+\_\+method\+\_\+sequal\+\_\+reduce}{_type_has_method_sequal_reduce}}]{\setlength{\rightskip}{0pt plus 5cm}constexpr bool tvm\+::transform\+::\+Pass\+Context\+Node\+::\+\_\+type\+\_\+has\+\_\+method\+\_\+sequal\+\_\+reduce = false\hspace{0.3cm}{\ttfamily [static]}}\hypertarget{classtvm_1_1transform_1_1PassContextNode_a24b97a15e18bdad2338c71741f5b615e}{}\label{classtvm_1_1transform_1_1PassContextNode_a24b97a15e18bdad2338c71741f5b615e}
+\index{tvm\+::transform\+::\+Pass\+Context\+Node@{tvm\+::transform\+::\+Pass\+Context\+Node}!\+\_\+type\+\_\+key@{\+\_\+type\+\_\+key}}
+\index{\+\_\+type\+\_\+key@{\+\_\+type\+\_\+key}!tvm\+::transform\+::\+Pass\+Context\+Node@{tvm\+::transform\+::\+Pass\+Context\+Node}}
+\subsubsection[{\texorpdfstring{\+\_\+type\+\_\+key}{_type_key}}]{\setlength{\rightskip}{0pt plus 5cm}constexpr const char$\ast$ tvm\+::transform\+::\+Pass\+Context\+Node\+::\+\_\+type\+\_\+key = \char`\"{}transform.\+Pass\+Context\char`\"{}\hspace{0.3cm}{\ttfamily [static]}}\hypertarget{classtvm_1_1transform_1_1PassContextNode_ae786553a00ae1f29e0bdb93d7c5c3088}{}\label{classtvm_1_1transform_1_1PassContextNode_ae786553a00ae1f29e0bdb93d7c5c3088}
+\index{tvm\+::transform\+::\+Pass\+Context\+Node@{tvm\+::transform\+::\+Pass\+Context\+Node}!disabled\+\_\+pass@{disabled\+\_\+pass}}
+\index{disabled\+\_\+pass@{disabled\+\_\+pass}!tvm\+::transform\+::\+Pass\+Context\+Node@{tvm\+::transform\+::\+Pass\+Context\+Node}}
+\subsubsection[{\texorpdfstring{disabled\+\_\+pass}{disabled_pass}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Array}$<${\bf Prim\+Expr}$>$ tvm\+::transform\+::\+Pass\+Context\+Node\+::disabled\+\_\+pass}\hypertarget{classtvm_1_1transform_1_1PassContextNode_ada6069e057832107b112acfd7df1383a}{}\label{classtvm_1_1transform_1_1PassContextNode_ada6069e057832107b112acfd7df1383a}
+
+
+The list of disabled passes. 
+
+\index{tvm\+::transform\+::\+Pass\+Context\+Node@{tvm\+::transform\+::\+Pass\+Context\+Node}!err\+\_\+reporter@{err\+\_\+reporter}}
+\index{err\+\_\+reporter@{err\+\_\+reporter}!tvm\+::transform\+::\+Pass\+Context\+Node@{tvm\+::transform\+::\+Pass\+Context\+Node}}
+\subsubsection[{\texorpdfstring{err\+\_\+reporter}{err_reporter}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Error\+Reporter} tvm\+::transform\+::\+Pass\+Context\+Node\+::err\+\_\+reporter}\hypertarget{classtvm_1_1transform_1_1PassContextNode_aaa3ce0ad4b706d1a38ea953e52941c12}{}\label{classtvm_1_1transform_1_1PassContextNode_aaa3ce0ad4b706d1a38ea953e52941c12}
+
+
+The error reporter used to notify users why an optimization fails. 
+
+\index{tvm\+::transform\+::\+Pass\+Context\+Node@{tvm\+::transform\+::\+Pass\+Context\+Node}!fallback\+\_\+device@{fallback\+\_\+device}}
+\index{fallback\+\_\+device@{fallback\+\_\+device}!tvm\+::transform\+::\+Pass\+Context\+Node@{tvm\+::transform\+::\+Pass\+Context\+Node}}
+\subsubsection[{\texorpdfstring{fallback\+\_\+device}{fallback_device}}]{\setlength{\rightskip}{0pt plus 5cm}int tvm\+::transform\+::\+Pass\+Context\+Node\+::fallback\+\_\+device \{static\+\_\+cast$<$int$>$(k\+D\+L\+C\+PU)\}}\hypertarget{classtvm_1_1transform_1_1PassContextNode_a0b98ed8aa5bbb660801a9608759a00a9}{}\label{classtvm_1_1transform_1_1PassContextNode_a0b98ed8aa5bbb660801a9608759a00a9}
+
+
+C\+PU is the default fallback device for heterogeneous execution. 
+
+\index{tvm\+::transform\+::\+Pass\+Context\+Node@{tvm\+::transform\+::\+Pass\+Context\+Node}!opt\+\_\+level@{opt\+\_\+level}}
+\index{opt\+\_\+level@{opt\+\_\+level}!tvm\+::transform\+::\+Pass\+Context\+Node@{tvm\+::transform\+::\+Pass\+Context\+Node}}
+\subsubsection[{\texorpdfstring{opt\+\_\+level}{opt_level}}]{\setlength{\rightskip}{0pt plus 5cm}int tvm\+::transform\+::\+Pass\+Context\+Node\+::opt\+\_\+level \{2\}}\hypertarget{classtvm_1_1transform_1_1PassContextNode_af166034a8746d65044eea0a2673de991}{}\label{classtvm_1_1transform_1_1PassContextNode_af166034a8746d65044eea0a2673de991}
+
+
+The default optimization level. 
+
+\index{tvm\+::transform\+::\+Pass\+Context\+Node@{tvm\+::transform\+::\+Pass\+Context\+Node}!required\+\_\+pass@{required\+\_\+pass}}
+\index{required\+\_\+pass@{required\+\_\+pass}!tvm\+::transform\+::\+Pass\+Context\+Node@{tvm\+::transform\+::\+Pass\+Context\+Node}}
+\subsubsection[{\texorpdfstring{required\+\_\+pass}{required_pass}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Array}$<${\bf Prim\+Expr}$>$ tvm\+::transform\+::\+Pass\+Context\+Node\+::required\+\_\+pass}\hypertarget{classtvm_1_1transform_1_1PassContextNode_ac8928bc4c5bfe3a1b2c7805da35f707a}{}\label{classtvm_1_1transform_1_1PassContextNode_ac8928bc4c5bfe3a1b2c7805da35f707a}
+
+
+The list of required passes. 
+
+\index{tvm\+::transform\+::\+Pass\+Context\+Node@{tvm\+::transform\+::\+Pass\+Context\+Node}!trace\+\_\+func@{trace\+\_\+func}}
+\index{trace\+\_\+func@{trace\+\_\+func}!tvm\+::transform\+::\+Pass\+Context\+Node@{tvm\+::transform\+::\+Pass\+Context\+Node}}
+\subsubsection[{\texorpdfstring{trace\+\_\+func}{trace_func}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Trace\+Func} tvm\+::transform\+::\+Pass\+Context\+Node\+::trace\+\_\+func}\hypertarget{classtvm_1_1transform_1_1PassContextNode_a84242480dd92b11637881d8313524481}{}\label{classtvm_1_1transform_1_1PassContextNode_a84242480dd92b11637881d8313524481}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+include/tvm/ir/\hyperlink{include_2tvm_2ir_2transform_8h}{transform.\+h}\end{DoxyCompactItemize}

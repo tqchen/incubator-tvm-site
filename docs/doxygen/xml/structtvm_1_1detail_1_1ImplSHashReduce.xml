@@ -1,0 +1,48 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="structtvm_1_1detail_1_1ImplSHashReduce" kind="struct" language="C++" prot="public">
+    <compoundname>tvm::detail::ImplSHashReduce</compoundname>
+    <includes refid="reflection_8h" local="no">reflection.h</includes>
+    <templateparamlist>
+      <param>
+        <type>typename</type>
+        <declname>T</declname>
+        <defname>T</defname>
+      </param>
+      <param>
+        <type>bool</type>
+        <defval>T::_type_has_method_shash_reduce</defval>
+      </param>
+    </templateparamlist>
+      <sectiondef kind="public-static-attrib">
+      <memberdef kind="variable" id="structtvm_1_1detail_1_1ImplSHashReduce_1a52b81cd95647e6f528636cfc25c48310" prot="public" static="yes" mutable="no">
+        <type>constexpr const std::nullptr_t</type>
+        <definition>constexpr const std::nullptr_t tvm::detail::ImplSHashReduce&lt; T, bool &gt;::SHashReduce</definition>
+        <argsstring></argsstring>
+        <name>SHashReduce</name>
+        <initializer>= nullptr</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/node/reflection.h" line="297" column="1" bodyfile="include/tvm/node/reflection.h" bodystart="297" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="5333">
+        <label>tvm::detail::ImplSHashReduce&lt; T, bool &gt;</label>
+        <link refid="structtvm_1_1detail_1_1ImplSHashReduce"/>
+      </node>
+    </collaborationgraph>
+    <location file="include/tvm/node/reflection.h" line="296" column="1" bodyfile="include/tvm/node/reflection.h" bodystart="296" bodyend="298"/>
+    <listofallmembers>
+      <member refid="structtvm_1_1detail_1_1ImplSHashReduce_1a52b81cd95647e6f528636cfc25c48310" prot="public" virt="non-virtual"><scope>tvm::detail::ImplSHashReduce</scope><name>SHashReduce</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

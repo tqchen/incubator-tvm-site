@@ -1,0 +1,146 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="classtvm_1_1arith_1_1ModularSetNode" kind="class" language="C++" prot="public">
+    <compoundname>tvm::arith::ModularSetNode</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">Object</basecompoundref>
+    <includes refid="analyzer_8h" local="no">analyzer.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="classtvm_1_1arith_1_1ModularSetNode_1a0531d08d8529454c726a9a20a2002ee6" prot="public" static="no" mutable="no">
+        <type>int64_t</type>
+        <definition>int64_t tvm::arith::ModularSetNode::coeff</definition>
+        <argsstring></argsstring>
+        <name>coeff</name>
+        <briefdescription>
+<para>linear co-efficient </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/arith/analyzer.h" line="168" column="1" bodyfile="include/tvm/arith/analyzer.h" bodystart="168" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classtvm_1_1arith_1_1ModularSetNode_1afe63e5586712774be5935e86121431ad" prot="public" static="no" mutable="no">
+        <type>int64_t</type>
+        <definition>int64_t tvm::arith::ModularSetNode::base</definition>
+        <argsstring></argsstring>
+        <name>base</name>
+        <briefdescription>
+<para>The base. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/arith/analyzer.h" line="170" column="1" bodyfile="include/tvm/arith/analyzer.h" bodystart="170" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-attrib">
+      <memberdef kind="variable" id="classtvm_1_1arith_1_1ModularSetNode_1aabf5ea254b6e5252f95aadbe35f6e889" prot="public" static="yes" mutable="no">
+        <type>constexpr const char *</type>
+        <definition>constexpr const char* tvm::arith::ModularSetNode::_type_key</definition>
+        <argsstring></argsstring>
+        <name>_type_key</name>
+        <initializer>= &quot;arith.ModularSet&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/arith/analyzer.h" line="181" column="1" bodyfile="include/tvm/arith/analyzer.h" bodystart="181" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classtvm_1_1arith_1_1ModularSetNode_1a5b5bf53e26881ec83777f2a3c41a4031" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void tvm::arith::ModularSetNode::VisitAttrs</definition>
+        <argsstring>(tvm::AttrVisitor *v)</argsstring>
+        <name>VisitAttrs</name>
+        <param>
+          <type><ref refid="classtvm_1_1AttrVisitor" kindref="compound">tvm::AttrVisitor</ref> *</type>
+          <declname>v</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/arith/analyzer.h" line="172" column="1" bodyfile="include/tvm/arith/analyzer.h" bodystart="172" bodyend="175"/>
+      </memberdef>
+      <memberdef kind="function" id="classtvm_1_1arith_1_1ModularSetNode_1a04a38e5207637fda175b031e3b569349" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool tvm::arith::ModularSetNode::SEqualReduce</definition>
+        <argsstring>(const ModularSetNode *other, SEqualReducer equal) const </argsstring>
+        <name>SEqualReduce</name>
+        <param>
+          <type>const <ref refid="classtvm_1_1arith_1_1ModularSetNode" kindref="compound">ModularSetNode</ref> *</type>
+          <declname>other</declname>
+        </param>
+        <param>
+          <type><ref refid="classtvm_1_1SEqualReducer" kindref="compound">SEqualReducer</ref></type>
+          <declname>equal</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/arith/analyzer.h" line="177" column="1" bodyfile="include/tvm/arith/analyzer.h" bodystart="177" bodyend="179"/>
+      </memberdef>
+      <memberdef kind="function" id="classtvm_1_1arith_1_1ModularSetNode_1aaf398fe14003c53e0452dfde19fd1404" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>tvm::arith::ModularSetNode::TVM_DECLARE_FINAL_OBJECT_INFO</definition>
+        <argsstring>(ModularSetNode, Object)</argsstring>
+        <name>TVM_DECLARE_FINAL_OBJECT_INFO</name>
+        <param>
+          <type><ref refid="classtvm_1_1arith_1_1ModularSetNode" kindref="compound">ModularSetNode</ref></type>
+        </param>
+        <param>
+          <type>Object</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tvm/arith/analyzer.h" line="182" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para><ref refid="classtvm_1_1Range" kindref="compound">Range</ref> of a linear integer function. Use to do specify the possible index values. </para>    </briefdescription>
+    <detaileddescription>
+<para>set = { coeff * x + base | x in Z }</para><para>When coeff != 0, it can also be written as set = { n | n % coeff == base }</para><para>This is useful to decide if the index is dividable by certain value. For example, if index = 0 + 4 x, then we know it can be divided by 4. </para>    </detaileddescription>
+    <inheritancegraph>
+      <node id="5774">
+        <label>Object</label>
+      </node>
+      <node id="5773">
+        <label>tvm::arith::ModularSetNode</label>
+        <link refid="classtvm_1_1arith_1_1ModularSetNode"/>
+        <childnode refid="5774" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="5776">
+        <label>Object</label>
+      </node>
+      <node id="5775">
+        <label>tvm::arith::ModularSetNode</label>
+        <link refid="classtvm_1_1arith_1_1ModularSetNode"/>
+        <childnode refid="5776" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="include/tvm/arith/analyzer.h" line="165" column="1" bodyfile="include/tvm/arith/analyzer.h" bodystart="165" bodyend="183"/>
+    <listofallmembers>
+      <member refid="classtvm_1_1arith_1_1ModularSetNode_1aabf5ea254b6e5252f95aadbe35f6e889" prot="public" virt="non-virtual"><scope>tvm::arith::ModularSetNode</scope><name>_type_key</name></member>
+      <member refid="classtvm_1_1arith_1_1ModularSetNode_1afe63e5586712774be5935e86121431ad" prot="public" virt="non-virtual"><scope>tvm::arith::ModularSetNode</scope><name>base</name></member>
+      <member refid="classtvm_1_1arith_1_1ModularSetNode_1a0531d08d8529454c726a9a20a2002ee6" prot="public" virt="non-virtual"><scope>tvm::arith::ModularSetNode</scope><name>coeff</name></member>
+      <member refid="classtvm_1_1arith_1_1ModularSetNode_1a04a38e5207637fda175b031e3b569349" prot="public" virt="non-virtual"><scope>tvm::arith::ModularSetNode</scope><name>SEqualReduce</name></member>
+      <member refid="classtvm_1_1arith_1_1ModularSetNode_1aaf398fe14003c53e0452dfde19fd1404" prot="public" virt="non-virtual"><scope>tvm::arith::ModularSetNode</scope><name>TVM_DECLARE_FINAL_OBJECT_INFO</name></member>
+      <member refid="classtvm_1_1arith_1_1ModularSetNode_1a5b5bf53e26881ec83777f2a3c41a4031" prot="public" virt="non-virtual"><scope>tvm::arith::ModularSetNode</scope><name>VisitAttrs</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>
