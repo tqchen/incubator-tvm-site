@@ -211,11 +211,12 @@
 execute them and maintain their dependencies manually. Therefore, we have
 introduced an infrastructure to manage the optimization passes.</p>
 <p>The optimizations of a Relay program could be applied at various granularity,
-namely function-level and module-level using <a class="reference external" href="https://docs.tvm.ai/api/python/relay/transform.html#tvm.relay.transform.FunctionPass">FunctionPass</a> and <a class="reference external" href="https://docs.tvm.ai/api/python/relay/transform.html#tvm.relay.transform.ModulePass">ModulePass</a>
-respectively. Or users can rely on <a class="reference external" href="https://docs.tvm.ai/api/python/relay/transform.html#tvm.relay.transform.Sequential">Sequential</a> to apply a sequence of passes
+namely function-level and module-level using <a class="reference internal" href="../../api/python/relay/transform.html#tvm.relay.transform.FunctionPass" title="tvm.relay.transform.FunctionPass"><code class="xref py py-class docutils literal notranslate"><span class="pre">tvm.relay.transform.FunctionPass</span></code></a>
+and py:class:<cite>tvm.relay.transform.ModulePass</cite>
+respectively. Or users can rely on py:class:<cite>tvm.relay.transform.Sequential</cite> to apply a sequence of passes
 on a Relay program where the dependencies between passes can be resolved by the
 pass infra. For more details about each type of these passes, please refer to
-the <a class="reference external" href="https://docs.tvm.ai/dev/relay_pass_infra.html">pass infra doc</a>.</p>
+the <a class="reference internal" href="../../dev/relay_pass_infra.html#relay-pass-infra"><span class="std std-ref">Relay Pass Infrastructure</span></a></p>
 <p>This tutorial demostrates how developers can use the Relay pass infra to perform
 a certain optimization and create an optimization pipeline.</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
@@ -345,24 +346,24 @@ opt level 0 will not allow operators to be fused together. Users can pass the
 </div>
 </div>
 <div class="section" id="use-sequential-to-apply-a-sequence-of-passes">
-<h3>Use <a class="reference external" href="https://docs.tvm.ai/api/python/relay/transform.html#tvm.relay.transform.Sequential">Sequential</a> to Apply a Sequence of Passes<a class="headerlink" href="#use-sequential-to-apply-a-sequence-of-passes" title="Permalink to this headline">¶</a></h3>
+<h3>Use Sequential to Apply a Sequence of Passes<a class="headerlink" href="#use-sequential-to-apply-a-sequence-of-passes" title="Permalink to this headline">¶</a></h3>
 <p>Applying passes as above is actually tedious and it may require users to have
 better understanding about the dependencies between them. For example, fusion
 currently doesn’t work well on let bindings. Therefore, we would not be able
-to fuse operators that were fusable if <a class="reference external" href="https://docs.tvm.ai/api/python/relay/transform.html#tvm.relay.transform.ToANormalForm">ToANormalForm</a> is applied before
+to fuse operators that were fusable if <code class="xref py py-func docutils literal notranslate"><span class="pre">relay.transform.ToANormalForm()</span></code> is applied before
 fusion, as this pass generates let bindings for each expression to
 canonicalize a Relay program.</p>
-<p>Relay, hence, provides <a class="reference external" href="https://docs.tvm.ai/api/python/relay/transform.html#tvm.relay.transform.Sequential">Sequential</a> to alleviate developers from handling
+<p>Relay, hence, provides <a class="reference internal" href="../../api/python/relay/transform.html#tvm.relay.transform.Sequential" title="tvm.relay.transform.Sequential"><code class="xref py py-class docutils literal notranslate"><span class="pre">tvm.relay.transform.Sequential</span></code></a> to alleviate developers from handling
 these issues explicitly by specifying the required passes of each pass and
 packing them as a whole to execute. For example, the same passes can now be
-applied using the sequential style as the following. <a class="reference external" href="https://docs.tvm.ai/api/python/relay/transform.html#tvm.relay.transform.Sequential">Sequential</a> is
+applied using the sequential style as the following. <a class="reference internal" href="../../api/python/relay/transform.html#tvm.relay.transform.Sequential" title="tvm.relay.transform.Sequential"><code class="xref py py-class docutils literal notranslate"><span class="pre">tvm.relay.transform.Sequential</span></code></a> is
 similiar to <a class="reference external" href="https://pytorch.org/docs/stable/nn.html#torch.nn.Sequential">torch.nn.sequential</a>
 and <a class="reference external" href="https://mxnet.incubator.apache.org/api/python/docs/_modules/mxnet/gluon/block.html">mxnet.gluon.block</a>.
 For example, <cite>torch.nn.sequential</cite> is used to contain a sequence of PyTorch
 <cite>Modules</cite> that will be added to build a network. It focuses on the network
-layers. Instead, the <a class="reference external" href="https://docs.tvm.ai/api/python/relay/transform.html#tvm.relay.transform.Sequential">Sequential</a> in our pass infra works on the optimizing
+layers. Instead, the <a class="reference internal" href="../../api/python/relay/transform.html#tvm.relay.transform.Sequential" title="tvm.relay.transform.Sequential"><code class="xref py py-class docutils literal notranslate"><span class="pre">tvm.relay.transform.Sequential</span></code></a> in our pass infra works on the optimizing
 pass.</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span class="c1"># Now let&#39;s execute some passes through `Sequential`_</span>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span class="c1"># Now let&#39;s execute some passes through :py:class:`tvm.relay.transform.Sequential`</span>
 <span class="n">f</span> <span class="o">=</span> <span class="n">example</span><span class="p">()</span>
 <span class="n">mod</span> <span class="o">=</span> <span class="n">tvm</span><span class="o">.</span><span class="n">IRModule</span><span class="o">.</span><span class="n">from_expr</span><span class="p">(</span><span class="n">f</span><span class="p">)</span>
 <span class="c1"># Glob the interested passes.</span>
@@ -392,7 +393,8 @@ pass.</p>
 identical addition operations. This is because <cite>EliminateCommonSubexpr</cite>
 was not actually performed. The reason is because only the passes that have
 optimization level less or equal to 2 will be executed by default under
-<a class="reference external" href="https://docs.tvm.ai/api/python/relay/transform.html#tvm.relay.transform.Sequential">Sequential</a>. The pass infra, however, provides a configuration interface
+<a class="reference internal" href="../../api/python/relay/transform.html#tvm.relay.transform.Sequential" title="tvm.relay.transform.Sequential"><code class="xref py py-class docutils literal notranslate"><span class="pre">tvm.relay.transform.Sequential</span></code></a>. The pass infra,
+however, provides a configuration interface
 for users to customize the optimization level that they want to execute.</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span class="k">with</span> <a href="../../api/python/relay/index.html#tvm.relay.build_config" title="View documentation for tvm.relay.build_config"><span class="n">relay</span><span class="o">.</span><span class="n">build_config</span></a><span class="p">(</span><span class="n">opt_level</span><span class="o">=</span><span class="mi">3</span><span class="p">):</span>
     <span class="n">mod2</span> <span class="o">=</span> <span class="n">seq</span><span class="p">(</span><span class="n">mod</span><span class="p">)</span>
@@ -556,7 +558,7 @@ them.</p>
 <div class="sphx-glr-script-out highlight-none notranslate"><div class="highlight"><pre>done
 </pre></div>
 </div>
-<p class="sphx-glr-timing"><strong>Total running time of the script:</strong> ( 0 minutes  0.323 seconds)</p>
+<p class="sphx-glr-timing"><strong>Total running time of the script:</strong> ( 0 minutes  0.395 seconds)</p>
 <div class="sphx-glr-footer class sphx-glr-footer-example docutils container" id="sphx-glr-download-tutorials-dev-relay-pass-infra-py">
 <div class="sphx-glr-download docutils container">
 <p><a class="reference download internal" download="" href="../../_downloads/52b04835c256bb81bbf4187f18950a0a/relay_pass_infra.py"><code class="xref download docutils literal notranslate"><span class="pre">Download</span> <span class="pre">Python</span> <span class="pre">source</span> <span class="pre">code:</span> <span class="pre">relay_pass_infra.py</span></code></a></p>

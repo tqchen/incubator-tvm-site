@@ -235,7 +235,7 @@ device and returns the measured cost. Network overhead is excluded.
 
  .. code-block:: none
 
-    1.733e-07 secs/op
+    1.723e-07 secs/op
 
 
 
@@ -314,7 +314,7 @@ features in TVM.
 
 .. rst-class:: sphx-glr-timing
 
-   **Total running time of the script:** ( 0 minutes  0.147 seconds)
+   **Total running time of the script:** ( 0 minutes  0.133 seconds)
 
 
 .. _sphx_glr_download_tutorials_cross_compilation_and_rpc.py:

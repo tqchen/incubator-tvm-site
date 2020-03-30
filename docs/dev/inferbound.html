@@ -220,7 +220,7 @@
            <div itemprop="articleBody">
             
   <div class="section" id="inferbound-pass">
-<h1>InferBound Pass<a class="headerlink" href="#inferbound-pass" title="Permalink to this headline">¶</a></h1>
+<span id="dev-inferbound-pass"></span><h1>InferBound Pass<a class="headerlink" href="#inferbound-pass" title="Permalink to this headline">¶</a></h1>
 <p>The InferBound pass is run after normalize, and before ScheduleOps <a class="reference external" href="https://github.com/apache/incubator-tvm/blob/master/python/tvm/build_module.py">build_module.py</a>. The main job of InferBound is to create the bounds map, which specifies a Range for each IterVar in the program. These bounds are then passed to ScheduleOps, where they are used to set the extents of For loops, see <a class="reference external" href="https://github.com/apache/incubator-tvm/blob/master/src/op/op_util.cc">MakeLoopNest</a>, and to set the sizes of allocated buffers (<a class="reference external" href="https://github.com/apache/incubator-tvm/blob/master/src/op/compute_op.cc">BuildRealize</a>), among other uses.</p>
 <p>The output of InferBound is a map from IterVar to Range:</p>
 <div class="highlight-cpp notranslate"><div class="highlight"><pre><span class="n">Map</span><span class="o">&lt;</span><span class="n">IterVar</span><span class="p">,</span> <span class="n">Range</span><span class="o">&gt;</span> <span class="n">InferBound</span><span class="p">(</span><span class="k">const</span> <span class="n">Schedule</span><span class="o">&amp;</span> <span class="n">sch</span><span class="p">);</span>

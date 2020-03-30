@@ -567,7 +567,7 @@ be able to run on our build server
 
  .. code-block:: none
 
-    conv2d with tensor core: 6.366476 ms
+    conv2d with tensor core: 6.304654 ms
 
 
 
@@ -579,7 +579,7 @@ call TensorCores on specific GPUs.
 
 .. rst-class:: sphx-glr-timing
 
-   **Total running time of the script:** ( 0 minutes  0.920 seconds)
+   **Total running time of the script:** ( 0 minutes  0.892 seconds)
 
 
 .. _sphx_glr_download_tutorials_optimize_opt_conv_tensorcore.py:

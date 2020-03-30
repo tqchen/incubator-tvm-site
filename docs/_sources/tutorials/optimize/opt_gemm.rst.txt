@@ -118,8 +118,8 @@ Then we write a baseline implementation, the simplest way to write a matrix mult
 
  .. code-block:: none
 
-    Numpy running time: 0.007530
-    Baseline: 6.108083
+    Numpy running time: 0.007367
+    Baseline: 6.090805
 
 
 
@@ -200,7 +200,7 @@ fill 32 * 32 * sizeof(float) which is 4KB in the cache whose total size is 32KB 
 
  .. code-block:: none
 
-    Opt1: 0.117995
+    Opt1: 0.112883
 
 
 
@@ -288,7 +288,7 @@ In this tutorial, we chose to vectorize the inner loop row data since it is cach
 
  .. code-block:: none
 
-    Opt2: 0.125186
+    Opt2: 0.119189
 
 
 
@@ -371,7 +371,7 @@ the access pattern for A matrix is more cache friendly.
 
  .. code-block:: none
 
-    Opt3: 0.063008
+    Opt3: 0.060986
 
 
 
@@ -473,7 +473,7 @@ the corresponding value from the packed array.
 
  .. code-block:: none
 
-    Opt4: 0.064867
+    Opt4: 0.068338
 
 
 
@@ -578,7 +578,7 @@ write to C when all the block results are ready.
 
  .. code-block:: none
 
-    Opt5: 0.066504
+    Opt5: 0.080476
 
 
 
@@ -691,7 +691,7 @@ Futhermore, we can also utilize multi-core processors to do the thread-level par
 
  .. code-block:: none
 
-    Opt6: 0.015953
+    Opt6: 0.015324
 
 
 
@@ -763,7 +763,7 @@ tutorial by yourself to observe the performance gain acheived by TVM.
 
 .. rst-class:: sphx-glr-timing
 
-   **Total running time of the script:** ( 0 minutes  25.960 seconds)
+   **Total running time of the script:** ( 0 minutes  25.764 seconds)
 
 
 .. _sphx_glr_download_tutorials_optimize_opt_gemm.py:

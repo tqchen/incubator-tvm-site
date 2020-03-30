@@ -439,7 +439,7 @@ and dense layer which will both be executed in fp32 on the CPU.</p></li>
 </pre></div>
 </div>
 <p class="sphx-glr-script-out">Out:</p>
-<div class="sphx-glr-script-out highlight-none notranslate"><div class="highlight"><pre>yolov3-tiny inference graph built in 5.74s!
+<div class="sphx-glr-script-out highlight-none notranslate"><div class="highlight"><pre>yolov3-tiny inference graph built in 6.96s!
 </pre></div>
 </div>
 </div>
@@ -465,7 +465,7 @@ Download test image</p>
 <span class="n">m</span><span class="o">.</span><span class="n">set_input</span><span class="p">(</span><span class="o">**</span><span class="n">params</span><span class="p">)</span>
 
 <span class="c1"># Perform inference and gather execution statistics</span>
-<span class="c1"># More on: https://docs.tvm.ai/api/python/module.html#tvm.runtime.Module.time_evaluator</span>
+<span class="c1"># More on: :py:method:`tvm.runtime.Module.time_evaluator`</span>
 <span class="n">num</span> <span class="o">=</span> <span class="mi">4</span> <span class="c1"># number of times we run module for a single measurement</span>
 <span class="n">rep</span> <span class="o">=</span> <span class="mi">3</span> <span class="c1"># number of measurements (we derive std dev from this)</span>
 <span class="n">timer</span> <span class="o">=</span> <span class="n">m</span><span class="o">.</span><span class="n">module</span><span class="o">.</span><span class="n">time_evaluator</span><span class="p">(</span><span class="s2">&quot;run&quot;</span><span class="p">,</span> <span class="n">ctx</span><span class="p">,</span> <span class="n">number</span><span class="o">=</span><span class="n">num</span><span class="p">,</span> <span class="n">repeat</span><span class="o">=</span><span class="n">rep</span><span class="p">)</span>
@@ -539,7 +539,7 @@ Execution statistics:
         alu_counter     :          1061320
 </pre></div>
 </div>
-<p class="sphx-glr-timing"><strong>Total running time of the script:</strong> ( 0 minutes  33.332 seconds)</p>
+<p class="sphx-glr-timing"><strong>Total running time of the script:</strong> ( 0 minutes  34.708 seconds)</p>
 <div class="sphx-glr-footer class sphx-glr-footer-example docutils container" id="sphx-glr-download-vta-tutorials-frontend-deploy-detection-py">
 <div class="sphx-glr-download docutils container">
 <p><a class="reference download internal" download="" href="../../../_downloads/ed4fcfc19b39f91a14d817676480a454/deploy_detection.py"><code class="xref download docutils literal notranslate"><span class="pre">Download</span> <span class="pre">Python</span> <span class="pre">source</span> <span class="pre">code:</span> <span class="pre">deploy_detection.py</span></code></a></p>

@@ -315,7 +315,7 @@ The compilation steps are:
 
  .. code-block:: none
 
-    yolov3-tiny inference graph built in 5.74s!
+    yolov3-tiny inference graph built in 6.96s!
 
 
 
@@ -345,7 +345,7 @@ Download test image
     m.set_input(**params)
 
     # Perform inference and gather execution statistics
-    # More on: https://docs.tvm.ai/api/python/module.html#tvm.runtime.Module.time_evaluator
+    # More on: :py:method:`tvm.runtime.Module.time_evaluator`
     num = 4 # number of times we run module for a single measurement
     rep = 3 # number of measurements (we derive std dev from this)
     timer = m.module.time_evaluator("run", ctx, number=num, repeat=rep)
@@ -432,7 +432,7 @@ Download test image
 
 .. rst-class:: sphx-glr-timing
 
-   **Total running time of the script:** ( 0 minutes  33.332 seconds)
+   **Total running time of the script:** ( 0 minutes  34.708 seconds)
 
 
 .. _sphx_glr_download_vta_tutorials_frontend_deploy_detection.py:

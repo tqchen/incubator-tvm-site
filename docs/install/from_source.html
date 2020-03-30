@@ -95,6 +95,7 @@
               <ul class="current">
 <li class="toctree-l1 current"><a class="reference internal" href="index.html">Installation</a><ul class="current">
 <li class="toctree-l2 current"><a class="current reference internal" href="#">Install from Source</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#developers-get-source-from-github">Developers: Get Source from Github</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#build-the-shared-library">Build the Shared Library</a><ul>
 <li class="toctree-l4"><a class="reference internal" href="#building-on-windows">Building on Windows</a></li>
 <li class="toctree-l4"><a class="reference internal" href="#building-rocm-support">Building ROCm support</a></li>
@@ -208,7 +209,11 @@ scratch on various systems. It consists of two steps:</p>
 <li><p>First build the shared library from the C++ codes (<cite>libtvm.so</cite> for linux, <cite>libtvm.dylib</cite> for macOS and <cite>libtvm.dll</cite> for windows).</p></li>
 <li><p>Setup for the language packages (e.g. Python Package).</p></li>
 </ol>
-<p>To get started, clone TVM repo from github. It is important to clone the submodules along, with <code class="docutils literal notranslate"><span class="pre">--recursive</span></code> option.</p>
+<p>To get started, download tvm source code from the <a class="reference external" href="https://tvm.apache.org/download">Download Page</a>.</p>
+<div class="section" id="developers-get-source-from-github">
+<h2>Developers: Get Source from Github<a class="headerlink" href="#developers-get-source-from-github" title="Permalink to this headline">¶</a></h2>
+<p>You can also choose to clone the source repo from github.
+It is important to clone the submodules along, with <code class="docutils literal notranslate"><span class="pre">--recursive</span></code> option.</p>
 <div class="highlight-bash notranslate"><div class="highlight"><pre>git clone --recursive https://github.com/apache/incubator-tvm tvm
 </pre></div>
 </div>
@@ -216,6 +221,7 @@ scratch on various systems. It consists of two steps:</p>
 <div class="highlight-bash notranslate"><div class="highlight"><pre>git submodule init
 git submodule update
 </pre></div>
+</div>
 </div>
 <div class="section" id="build-the-shared-library">
 <span id="build-shared-library"></span><h2>Build the Shared Library<a class="headerlink" href="#build-the-shared-library" title="Permalink to this headline">¶</a></h2>

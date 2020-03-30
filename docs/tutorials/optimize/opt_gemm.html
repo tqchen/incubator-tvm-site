@@ -304,8 +304,8 @@ Then we write a baseline implementation, the simplest way to write a matrix mult
 </pre></div>
 </div>
 <p class="sphx-glr-script-out">Out:</p>
-<div class="sphx-glr-script-out highlight-none notranslate"><div class="highlight"><pre>Numpy running time: 0.007530
-Baseline: 6.108083
+<div class="sphx-glr-script-out highlight-none notranslate"><div class="highlight"><pre>Numpy running time: 0.007367
+Baseline: 6.090805
 </pre></div>
 </div>
 <p>In TVM, we can always inspect lower level IR to debug or optimize our schedule.
@@ -358,7 +358,7 @@ fill 32 * 32 * sizeof(float) which is 4KB in the cache whose total size is 32KB 
 </pre></div>
 </div>
 <p class="sphx-glr-script-out">Out:</p>
-<div class="sphx-glr-script-out highlight-none notranslate"><div class="highlight"><pre>Opt1: 0.117995
+<div class="sphx-glr-script-out highlight-none notranslate"><div class="highlight"><pre>Opt1: 0.112883
 </pre></div>
 </div>
 <p>Here is the generated IR after blocking.</p>
@@ -417,7 +417,7 @@ we can use <cite>vectorize</cite> interface to hint the compiler this pattern, s
 </pre></div>
 </div>
 <p class="sphx-glr-script-out">Out:</p>
-<div class="sphx-glr-script-out highlight-none notranslate"><div class="highlight"><pre>Opt2: 0.125186
+<div class="sphx-glr-script-out highlight-none notranslate"><div class="highlight"><pre>Opt2: 0.119189
 </pre></div>
 </div>
 <p>Here is the generated IR after vectorization.</p>
@@ -472,7 +472,7 @@ the access pattern for A matrix is more cache friendly.</p>
 </pre></div>
 </div>
 <p class="sphx-glr-script-out">Out:</p>
-<div class="sphx-glr-script-out highlight-none notranslate"><div class="highlight"><pre>Opt3: 0.063008
+<div class="sphx-glr-script-out highlight-none notranslate"><div class="highlight"><pre>Opt3: 0.060986
 </pre></div>
 </div>
 <p>Here is the generated IR after loop permutation.</p>
@@ -541,7 +541,7 @@ the corresponding value from the packed array.</p>
 </pre></div>
 </div>
 <p class="sphx-glr-script-out">Out:</p>
-<div class="sphx-glr-script-out highlight-none notranslate"><div class="highlight"><pre>Opt4: 0.064867
+<div class="sphx-glr-script-out highlight-none notranslate"><div class="highlight"><pre>Opt4: 0.068338
 </pre></div>
 </div>
 <p>Here is the generated IR after array packing.</p>
@@ -617,7 +617,7 @@ write to C when all the block results are ready.</p>
 </pre></div>
 </div>
 <p class="sphx-glr-script-out">Out:</p>
-<div class="sphx-glr-script-out highlight-none notranslate"><div class="highlight"><pre>Opt5: 0.066504
+<div class="sphx-glr-script-out highlight-none notranslate"><div class="highlight"><pre>Opt5: 0.080476
 </pre></div>
 </div>
 <p>Here is the generated IR after blocking.</p>
@@ -702,7 +702,7 @@ produce C {
 </pre></div>
 </div>
 <p class="sphx-glr-script-out">Out:</p>
-<div class="sphx-glr-script-out highlight-none notranslate"><div class="highlight"><pre>Opt6: 0.015953
+<div class="sphx-glr-script-out highlight-none notranslate"><div class="highlight"><pre>Opt6: 0.015324
 </pre></div>
 </div>
 <p>Here is the generated IR after parallelization.</p>
@@ -755,7 +755,7 @@ our generated code can achieve 60% of the <cite>numpy</cite> performance with MK
 Note that the outputs on the web page reflect the running times on a non-exclusive
 Docker container, thereby they are <em>unreliable</em>. It is highly encouraged to run the
 tutorial by yourself to observe the performance gain acheived by TVM.</p>
-<p class="sphx-glr-timing"><strong>Total running time of the script:</strong> ( 0 minutes  25.960 seconds)</p>
+<p class="sphx-glr-timing"><strong>Total running time of the script:</strong> ( 0 minutes  25.764 seconds)</p>
 <div class="sphx-glr-footer class sphx-glr-footer-example docutils container" id="sphx-glr-download-tutorials-optimize-opt-gemm-py">
 <div class="sphx-glr-download docutils container">
 <p><a class="reference download internal" download="" href="../../_downloads/836dc3852acf09662e9eb37c4c5e1e1b/opt_gemm.py"><code class="xref download docutils literal notranslate"><span class="pre">Download</span> <span class="pre">Python</span> <span class="pre">source</span> <span class="pre">code:</span> <span class="pre">opt_gemm.py</span></code></a></p>

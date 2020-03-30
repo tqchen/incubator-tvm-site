@@ -431,7 +431,7 @@ It takes about 2 hours on a 32T AMD Ryzen Threadripper.
 
 .. rst-class:: sphx-glr-timing
 
-   **Total running time of the script:** ( 0 minutes  0.150 seconds)
+   **Total running time of the script:** ( 0 minutes  0.151 seconds)
 
 
 .. _sphx_glr_download_tutorials_autotvm_tune_relay_arm.py:

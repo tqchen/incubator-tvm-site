@@ -338,13 +338,13 @@ contains several virtual methods that must be implemented by the
 subclasses at the level of modules, functions, or sequences of passes..</p>
 <div class="highlight-c++ notranslate"><div class="highlight"><pre><span class="k">class</span> <span class="nc">PassNode</span> <span class="o">:</span> <span class="n">RelayNode</span> <span class="p">{</span>
   <span class="k">virtual</span> <span class="n">PassInfo</span> <span class="n">Info</span><span class="p">()</span> <span class="k">const</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>
-  <span class="k">virtual</span> <span class="n">Module</span> <span class="nf">operator</span><span class="p">()(</span><span class="k">const</span> <span class="n">Module</span><span class="o">&amp;</span> <span class="n">mod</span>
+  <span class="k">virtual</span> <span class="n">Module</span> <span class="nf">operator</span><span class="p">()(</span><span class="k">const</span> <span class="n">IRModule</span><span class="o">&amp;</span> <span class="n">mod</span>
                             <span class="k">const</span> <span class="n">PassContext</span><span class="o">&amp;</span> <span class="n">pass_ctx</span><span class="p">)</span> <span class="k">const</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>
 <span class="p">};</span>
 </pre></div>
 </div>
-<p>The functor shows how a pass must be realized, i.e. it always works on a <a class="reference external" href="https://docs.tvm.ai/langref/relay_expr.html#module-and-global-functions">Relay
-module</a> under a certain context. All passes are designed in a <code class="docutils literal notranslate"><span class="pre">Module</span></code> to <code class="docutils literal notranslate"><span class="pre">Module</span></code>
+<p>The functor shows how a pass must be realized, i.e. it always works on a
+<code class="xref py py-class docutils literal notranslate"><span class="pre">IRModule</span></code> under a certain context. All passes are designed in a <code class="docutils literal notranslate"><span class="pre">Module</span></code> to <code class="docutils literal notranslate"><span class="pre">Module</span></code>
 manner. Therefore, optimizations governed by the pass infra will
 always update the whole module.</p>
 <p>Several subclasses have been created to implement different types of

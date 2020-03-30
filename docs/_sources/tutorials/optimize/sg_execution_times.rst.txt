@@ -5,9 +5,9 @@
 
 Computation times
 =================
-**00:27.775** total execution time for **tutorials_optimize** files:
+**00:27.482** total execution time for **tutorials_optimize** files:
 
-- **00:25.960**: :ref:`sphx_glr_tutorials_optimize_opt_gemm.py` (``opt_gemm.py``)
-- **00:00.920**: :ref:`sphx_glr_tutorials_optimize_opt_conv_tensorcore.py` (``opt_conv_tensorcore.py``)
-- **00:00.732**: :ref:`sphx_glr_tutorials_optimize_opt_conv_cuda.py` (``opt_conv_cuda.py``)
-- **00:00.163**: :ref:`sphx_glr_tutorials_optimize_opt_matmul_auto_tensorcore.py` (``opt_matmul_auto_tensorcore.py``)
+- **00:25.764**: :ref:`sphx_glr_tutorials_optimize_opt_gemm.py` (``opt_gemm.py``)
+- **00:00.892**: :ref:`sphx_glr_tutorials_optimize_opt_conv_tensorcore.py` (``opt_conv_tensorcore.py``)
+- **00:00.664**: :ref:`sphx_glr_tutorials_optimize_opt_conv_cuda.py` (``opt_conv_cuda.py``)
+- **00:00.162**: :ref:`sphx_glr_tutorials_optimize_opt_matmul_auto_tensorcore.py` (``opt_matmul_auto_tensorcore.py``)

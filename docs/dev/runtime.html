@@ -221,7 +221,7 @@ In this note, we explain the key elements of the TVM runtime.</p>
 <p>We want to be able to define a function from any language and call from another.
 We also want the runtime core to be minimal to deploy to embedded devices.</p>
 <div class="section" id="packedfunc">
-<h2>PackedFunc<a class="headerlink" href="#packedfunc" title="Permalink to this headline">¶</a></h2>
+<span id="tvm-runtime-system-packed-func"></span><h2>PackedFunc<a class="headerlink" href="#packedfunc" title="Permalink to this headline">¶</a></h2>
 <p><a class="reference external" href="https://github.com/apache/incubator-tvm/blob/master/include/tvm/runtime/packed_func.h">PackedFunc</a> is a simple but elegant solution
 we find to solve the challenges listed. The following code block provides an example in C++</p>
 <div class="highlight-c notranslate"><div class="highlight"><pre><span class="cp">#include</span> <span class="cpf">&lt;tvm/runtime/packed_func.h&gt;</span><span class="cp"></span>
@@ -329,7 +329,7 @@ Under the hood, we have an RPCModule that serializes the arguments to do the dat
 <img alt="http://www.tvm.ai/images/release/tvm_rpc.png" src="http://www.tvm.ai/images/release/tvm_rpc.png" />
 <p>The RPC server itself is minimum and can be bundled into the runtime. We can start a minimum TVM
 RPC server on iPhone/android/raspberry pi or even the browser. The cross compilation on server and shipping of the module for testing can be done in the same script. Checkout
-<a class="reference external" href="https://docs.tvm.ai/tutorials/cross_compilation_and_rpc.html#sphx-glr-tutorials-cross-compilation-and-rpc-py">Cross compilation and RPC tutorial</a> for more details.</p>
+<a class="reference internal" href="../tutorials/cross_compilation_and_rpc.html#tutorial-cross-compilation-and-rpc"><span class="std std-ref">Cross Compilation and RPC</span></a> for more details.</p>
 <p>This instant feedback gives us a lot of advantages. For example, to test the correctness of generated code on iPhone, we no longer have to write test-cases in swift/objective-c from scratch – We can use RPC to execute on iPhone, copy the result back and do verification on the host via numpy. We can also do the profiling using the same script.</p>
 </div>
 <div class="section" id="tvm-object-and-compiler-stack">

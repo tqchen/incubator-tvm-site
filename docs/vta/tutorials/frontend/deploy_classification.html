@@ -394,15 +394,15 @@ and dense layer which will both be executed in fp32 on the CPU.</p></li>
 </pre></div>
 </div>
 <p class="sphx-glr-script-out">Out:</p>
-<div class="sphx-glr-script-out highlight-none notranslate"><div class="highlight"><pre>...12%, 0.01 MB, 49 KB/s, 0 seconds passed
-...25%, 0.02 MB, 97 KB/s, 0 seconds passed
-...38%, 0.02 MB, 146 KB/s, 0 seconds passed
-...51%, 0.03 MB, 194 KB/s, 0 seconds passed
-...64%, 0.04 MB, 242 KB/s, 0 seconds passed
-...77%, 0.05 MB, 290 KB/s, 0 seconds passed
-...90%, 0.05 MB, 338 KB/s, 0 seconds passed
-...100%, 0.06 MB, 386 KB/s, 0 seconds passed
-resnet18_v1 inference graph built in 5.19s!
+<div class="sphx-glr-script-out highlight-none notranslate"><div class="highlight"><pre>...12%, 0.01 MB, 19 KB/s, 0 seconds passed
+...25%, 0.02 MB, 39 KB/s, 0 seconds passed
+...38%, 0.02 MB, 59 KB/s, 0 seconds passed
+...51%, 0.03 MB, 78 KB/s, 0 seconds passed
+...64%, 0.04 MB, 98 KB/s, 0 seconds passed
+...77%, 0.05 MB, 117 KB/s, 0 seconds passed
+...90%, 0.05 MB, 137 KB/s, 0 seconds passed
+...100%, 0.06 MB, 156 KB/s, 0 seconds passed
+resnet18_v1 inference graph built in 5.76s!
 </pre></div>
 </div>
 </div>
@@ -437,7 +437,7 @@ and an input test image.</p>
 <span class="n">m</span><span class="o">.</span><span class="n">set_input</span><span class="p">(</span><span class="s1">&#39;data&#39;</span><span class="p">,</span> <span class="n">image</span><span class="p">)</span>
 
 <span class="c1"># Perform inference and gather execution statistics</span>
-<span class="c1"># More on: https://docs.tvm.ai/api/python/module.html#tvm.runtime.Module.time_evaluator</span>
+<span class="c1"># More on: :py:method:`tvm.runtime.Module.time_evaluator`</span>
 <span class="n">num</span> <span class="o">=</span> <span class="mi">4</span> <span class="c1"># number of times we run module for a single measurement</span>
 <span class="n">rep</span> <span class="o">=</span> <span class="mi">3</span> <span class="c1"># number of measurements (we derive std dev from this)</span>
 <span class="n">timer</span> <span class="o">=</span> <span class="n">m</span><span class="o">.</span><span class="n">module</span><span class="o">.</span><span class="n">time_evaluator</span><span class="p">(</span><span class="s2">&quot;run&quot;</span><span class="p">,</span> <span class="n">ctx</span><span class="p">,</span> <span class="n">number</span><span class="o">=</span><span class="n">num</span><span class="p">,</span> <span class="n">repeat</span><span class="o">=</span><span class="n">rep</span><span class="p">)</span>
@@ -504,7 +504,7 @@ resnet18_v1 prediction for sample 0
         #5: weasel
 </pre></div>
 </div>
-<p class="sphx-glr-timing"><strong>Total running time of the script:</strong> ( 0 minutes  25.909 seconds)</p>
+<p class="sphx-glr-timing"><strong>Total running time of the script:</strong> ( 0 minutes  27.929 seconds)</p>
 <div class="sphx-glr-footer class sphx-glr-footer-example docutils container" id="sphx-glr-download-vta-tutorials-frontend-deploy-classification-py">
 <div class="sphx-glr-download docutils container">
 <p><a class="reference download internal" download="" href="../../../_downloads/ef2454f5c8b007c53ff214943df808ad/deploy_classification.py"><code class="xref download docutils literal notranslate"><span class="pre">Download</span> <span class="pre">Python</span> <span class="pre">source</span> <span class="pre">code:</span> <span class="pre">deploy_classification.py</span></code></a></p>

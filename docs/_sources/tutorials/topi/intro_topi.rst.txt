@@ -218,7 +218,7 @@ As you can see, scheduled stages of computation have been accumulated and we can
 
  .. code-block:: none
 
-    [stage(a, 0x1055e92a0), stage(b, 0x1055df910), stage(T_add, 0x10577a220), stage(T_multiply, 0x100cb3d30), stage(T_elemwise_sum, 0x1059a0ba0), stage(T_divide, 0x10567b580), stage(T_divide_red.rf, 0x1138491c0), stage(T_divide_red, 0xf5d477e0)]
+    [stage(a, 0x103c1c890), stage(b, 0x105cf1aa0), stage(T_add, 0xf30add10), stage(T_multiply, 0xf6cfb5a0), stage(T_elemwise_sum, 0xf30aa600), stage(T_divide, 0x106619d90), stage(T_divide_red.rf, 0x105cf6550), stage(T_divide_red, 0x126faa7a0)]
 
 
 
@@ -643,7 +643,7 @@ In this tutorial, we have seen
 
 .. rst-class:: sphx-glr-timing
 
-   **Total running time of the script:** ( 0 minutes  0.500 seconds)
+   **Total running time of the script:** ( 0 minutes  0.492 seconds)
 
 
 .. _sphx_glr_download_tutorials_topi_intro_topi.py:
